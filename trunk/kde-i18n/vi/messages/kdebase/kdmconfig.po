@@ -5,20 +5,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdmconfig VERSION\n"
-"POT-Creation-Date: 2002-02-10 02:37+0100\n"
-"PO-Revision-Date: 2002-03-12 16:16GMT+0900\n"
-"Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
-"Language-Team: Vietnamese <vi@i18n.kde.org>\n"
+"POT-Creation-Date: 2002-11-15 02:47+0100\n"
+"PO-Revision-Date: 2002-04-26 01:13GMT+0900\n"
+"Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
+"Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 0.8\n"
+"X-Generator: KBabel 0.9.6\n"
 
-#: kdm-appear.cpp:71
+#: background.cpp:50
+#, fuzzy
+msgid "E&nable background"
+msgstr "&Hình nền"
+
+#: background.cpp:52
+msgid ""
+"If this is checked, KDM will use the settings below for the background. If "
+"it is disabled, you have to look after the background yourself. This is done "
+"by running some program (possibly xsetroot) in the script specified in the "
+"Setup= option in kdmrc (usually Xsetup)."
+msgstr ""
+
+#: kdm-appear.cpp:72
 msgid "&Greeting:"
 msgstr "&Chào :"
 
-#: kdm-appear.cpp:76
+#: kdm-appear.cpp:77
 #, c-format
 msgid ""
 "This is the string KDM will display in the login window. You may want to put "
@@ -32,23 +45,23 @@ msgstr ""
 "<p>KDMsẽ thay thế chuối '%n' bằng tên host thật của máy tính "
 "chạy X server .Trong network, đây là một ý tưởng tốt "
 
-#: kdm-appear.cpp:90
+#: kdm-appear.cpp:91
 msgid "Logo area:"
 msgstr "Khu vực đăng nhập :"
 
-#: kdm-appear.cpp:95 kdm-conv.cpp:79 kdm-users.cpp:150
+#: kdm-appear.cpp:96 kdm-conv.cpp:76 kdm-users.cpp:110
 msgid "&None"
 msgstr "&không"
 
-#: kdm-appear.cpp:96
+#: kdm-appear.cpp:97
 msgid "Show cloc&k"
 msgstr "Hiện đồng &hồ"
 
-#: kdm-appear.cpp:97
+#: kdm-appear.cpp:98
 msgid "Sho&w logo"
 msgstr "&Hiện logo"
 
-#: kdm-appear.cpp:109
+#: kdm-appear.cpp:110
 msgid ""
 "You can choose to display a custom logo (see below), a clock or no logo at "
 "all."
@@ -56,11 +69,11 @@ msgstr ""
 "Bạn có thểchọn để hiển thị một logo tuỳ biến ( xem "
 "dưới đây),một đồng hồ không có logo ."
 
-#: kdm-appear.cpp:115
+#: kdm-appear.cpp:116
 msgid "&Logo:"
 msgstr "&Logo:"
 
-#: kdm-appear.cpp:127
+#: kdm-appear.cpp:128
 msgid ""
 "Click here to choose an image that KDM will display. You can also drag and "
 "drop an image onto this button (e.g. from Konqueror)."
@@ -68,19 +81,19 @@ msgstr ""
 "Nhấn vào đây để chọn một ảnh mà KDM sẽ hiển thị .Bạn "
 "cũng có thể kéo thả ảnh vào nút này . (ẹg từ Konqueror)."
 
-#: kdm-appear.cpp:140
+#: kdm-appear.cpp:141
 msgid "Position:"
 msgstr "Vị trí:"
 
-#: kdm-appear.cpp:145
+#: kdm-appear.cpp:146
 msgid "Cente&red"
 msgstr "Trung &tâm"
 
-#: kdm-appear.cpp:146
+#: kdm-appear.cpp:147
 msgid "Spec&ify"
 msgstr "&Chỉ định"
 
-#: kdm-appear.cpp:156
+#: kdm-appear.cpp:157
 msgid ""
 "You can choose whether the login dialog should be centered or placed at "
 "specified coordinates."
@@ -88,59 +101,75 @@ msgstr ""
 "Bạn có thể chọn hộp thoại đăng nhập có được đặt vào "
 "trung tâmhay ở toạ độ xác định ."
 
-#: kdm-appear.cpp:165
-msgid "&X"
+#: kdm-appear.cpp:166
+#, fuzzy
+msgid "&X:"
 msgstr "&X"
 
-#: kdm-appear.cpp:171
-msgid "&Y"
+#: kdm-appear.cpp:173
+#, fuzzy
+msgid "&Y:"
 msgstr "&Y"
 
-#: kdm-appear.cpp:177
+#: kdm-appear.cpp:180
 msgid "Here you specify the coordinates of the login dialog's <em>center</em>."
 msgstr ""
 "Bạn có thể chỉ định toạ độ của hộp thoại đăng nhập "
 "<em> Trung tâm </em>"
 
-#: kdm-appear.cpp:193
-msgid "GUI S&tyle:"
+#: kdm-appear.cpp:196
+#, fuzzy
+msgid "GUI s&tyle:"
 msgstr "&Kiểu GUI:"
 
-#: kdm-appear.cpp:197
+#: kdm-appear.cpp:200
 msgid "You can choose a basic GUI style here that will be used by KDM only."
 msgstr ""
 "Bạn có thể chọn một kiểu GUI cơ bản sẽ được dùng bởi "
 "chỉ KDM ở đây ."
 
-#: kdm-appear.cpp:202
+#: kdm-appear.cpp:207
+#, fuzzy
+msgid "&Color scheme:"
+msgstr "Màu &1:"
+
+#: kdm-appear.cpp:211
+#, fuzzy
+msgid "You can choose a basic Color Scheme here that will be used by KDM only."
+msgstr ""
+"Bạn có thể chọn một kiểu GUI cơ bản sẽ được dùng bởi "
+"chỉ KDM ở đây ."
+
+#: kdm-appear.cpp:216
 msgid "Echo &mode:"
 msgstr "&Chế độ echo:"
 
-#: kdm-appear.cpp:205
-msgid "No echo"
+#: kdm-appear.cpp:219
+#, fuzzy
+msgid "No Echo"
 msgstr "Không echo"
 
-#: kdm-appear.cpp:206
+#: kdm-appear.cpp:220
 msgid "One Star"
 msgstr "Một sao"
 
-#: kdm-appear.cpp:207
+#: kdm-appear.cpp:221
 msgid "Three Stars"
 msgstr "Ba sao"
 
-#: kdm-appear.cpp:211
+#: kdm-appear.cpp:225
 msgid "You can choose whether and how KDM shows your password when you type it."
 msgstr "Bạn có thể chọn cách mà KDE sẽ hiện mật khẩu khi bạn gõ ."
 
-#: kdm-appear.cpp:217
+#: kdm-appear.cpp:231
 msgid "Locale"
 msgstr "Locale"
 
-#: kdm-appear.cpp:223
+#: kdm-appear.cpp:238
 msgid "Languag&e:"
 msgstr "&Ngôn ngữ:"
 
-#: kdm-appear.cpp:232
+#: kdm-appear.cpp:245
 msgid ""
 "Here you can choose the language used by KDM. This setting doesn't affect a "
 "user's personal settings that will take effect after login."
@@ -149,11 +178,11 @@ msgstr ""
 ".Thiết lập này không ảnh hưởng đến các thiết lậpcá nhân "
 "của người dùng mà chỉ có tác dụng lúc đăng nhập ."
 
-#: kdm-appear.cpp:276
+#: kdm-appear.cpp:289
 msgid "without name"
 msgstr "Không có tên"
 
-#: kdm-appear.cpp:371
+#: kdm-appear.cpp:406
 msgid ""
 "There was an error loading the image:\n"
 "%1\n"
@@ -163,12 +192,12 @@ msgstr ""
 "%1\n"
 "Nó sẽ không được cất ."
 
-#: kdm-appear.cpp:413 kdm-appear.cpp:460
+#: kdm-appear.cpp:450 kdm-appear.cpp:500
 #, c-format
 msgid "Welcome to %s at %n"
 msgstr "Chào mừng bạn đến với %s ở %n"
 
-#: kdm-appear.cpp:474
+#: kdm-appear.cpp:514
 msgid ""
 "<h1>KDM - Appearance</h1>"
 " Here you can configure the basic appearance of the KDM login manager, i.e. "
@@ -183,7 +212,8 @@ msgstr ""
 "dùng các tab \"Font\" và \"Nền\" ."
 
 #: kdm-font.cpp:46
-msgid "Select fonts"
+#, fuzzy
+msgid "Select Fonts"
 msgstr "Chọn font"
 
 #: kdm-font.cpp:49
@@ -234,7 +264,8 @@ msgid "Shows a preview of the selected font."
 msgstr "Hiển thị xem trước của font đã chọn ."
 
 #: kdm-font.cpp:76
-msgid "Use Anti-Aliasing for fonts"
+#, fuzzy
+msgid "Use anti-aliasing for fonts"
 msgstr "Dùng anti-aliasinng cho font"
 
 #: kdm-font.cpp:77
@@ -245,20 +276,21 @@ msgstr ""
 "Nếu bạn chọn hộp này và X server của bạn có  Xft mở rộng, "
 "fontsẽ được antialias (mịn hơn) trong hộp thoại đăng nhập ."
 
-#: kdm-font.cpp:185
+#: kdm-font.cpp:178
 msgid "Greeting font"
 msgstr "Font chào hỏi"
 
-#: kdm-font.cpp:189
+#: kdm-font.cpp:182
 msgid "Fail font"
 msgstr "Font Fail "
 
-#: kdm-font.cpp:193
+#: kdm-font.cpp:186
 msgid "Standard font"
 msgstr "Font tiêu chuẩn"
 
 #: kdm-sess.cpp:50
-msgid "Allow shutdown"
+#, fuzzy
+msgid "Allow Shutdown"
 msgstr "Cho phép tắt máy"
 
 #: kdm-sess.cpp:53
@@ -307,7 +339,8 @@ msgid "Commands"
 msgstr "Lệnh"
 
 #: kdm-sess.cpp:75
-msgid "Ha&lt"
+#, fuzzy
+msgid "Ha&lt:"
 msgstr "&Tắt máy"
 
 #: kdm-sess.cpp:78
@@ -317,7 +350,8 @@ msgstr ""
 "/sbin/halt"
 
 #: kdm-sess.cpp:83
-msgid "&Reboot"
+#, fuzzy
+msgid "&Reboot:"
 msgstr "&Khởi động lại"
 
 #: kdm-sess.cpp:86
@@ -327,19 +361,21 @@ msgstr ""
 "tiêu biểu: /sbin/reboot"
 
 #: kdm-sess.cpp:91
-msgid "Lilo"
-msgstr "Lilo"
+msgid "LILO"
+msgstr ""
 
 #: kdm-sess.cpp:93
 msgid "Show boot opt&ions"
 msgstr "Hiện &tuỳ chọn boot"
 
 #: kdm-sess.cpp:98
-msgid "Enable Lilo boot options in the \"Shutdown ...\" dialog."
+#, fuzzy
+msgid "Enable Lilo boot options in the \"Shutdown...\" dialog."
 msgstr "Cho phép các tuỳ chọn boot LiLo trong hộp thoại \"Shutdown\" ."
 
 #: kdm-sess.cpp:102
-msgid "Lilo command"
+#, fuzzy
+msgid "LILO command:"
 msgstr "Lệnh lilo"
 
 #: kdm-sess.cpp:105
@@ -347,7 +383,8 @@ msgid "Command to run Lilo. Typical value: /sbin/lilo"
 msgstr "Lệnh sẽ chạy LiLo . Giá trị tiêu biểu là /sbin/lilo "
 
 #: kdm-sess.cpp:110
-msgid "Lilo map file"
+#, fuzzy
+msgid "LILO map file:"
 msgstr "file map Lilo"
 
 #: kdm-sess.cpp:113
@@ -355,11 +392,13 @@ msgid "Position of Lilo's map file. Typical value: /boot/map"
 msgstr "Vị trí của file map Lilo . Giá trị tiêu biểu là /boot/map"
 
 #: kdm-sess.cpp:118
-msgid "Session types"
+#, fuzzy
+msgid "Session Types"
 msgstr "Kiểu session"
 
 #: kdm-sess.cpp:121
-msgid "New t&ype"
+#, fuzzy
+msgid "New t&ype:"
 msgstr "&Kiểu mới"
 
 #: kdm-sess.cpp:128
@@ -383,7 +422,8 @@ msgstr ""
 "<em>Kiểu mới</em>vào danh sách các session có thể dùng ."
 
 #: kdm-sess.cpp:139
-msgid "Available &types"
+#, fuzzy
+msgid "Available &types:"
 msgstr "Các &kiểu có thể dùng"
 
 #: kdm-sess.cpp:142
@@ -415,270 +455,49 @@ msgstr ""
 "sesssion mà`các kiểu session có thể dùng sẽ được hiện ra cho "
 "người dùng"
 
-#: backgnd.cpp:90
-msgid "abcdefgh"
-msgstr "abcdefgh"
-
-#: backgnd.cpp:104
-msgid ""
-"Here you can see a preview of how KDM's background will look like using the "
-"current settings. You can even set a background picture by dragging it onto "
-"the preview (e.g. from Konqueror)."
-msgstr ""
-"Bạn có thể nhìn thấy xem trước nền KDM sẽ ra sao nếu "
-"dùngthiết lập nàỵ Bạn thậm chí có thể đặt hình nền "
-"bằng cách kéovào thả vào xem trước ( ẹg từ Konqueror)."
-
-#: backgnd.cpp:114
-msgid "Back&ground"
-msgstr "&Hình nền"
-
-#: backgnd.cpp:123 backgnd.cpp:189 bgdialogs.cpp:683
-msgid "&Mode:"
-msgstr "&Chế độ:"
-
-#: backgnd.cpp:132
-msgid ""
-"Here you can change the way colors are applied to KDM's background. Apart of "
-"just a plain color you can choose gradients, custom patterns or a background "
-"program (e.g. xearth)."
-msgstr ""
-"Bạn có thể thay đổi cách mà màu được áp dụng vào nền "
-"củaKDM . FIXME!!!!!"
-
-#: backgnd.cpp:138
-msgid "Color &1:"
-msgstr "Màu &1:"
-
-#: backgnd.cpp:148
-msgid ""
-"By clicking on these buttons you can choose the colors KDM will use to paint "
-"the background. If you selected a gradient or a pattern, you can choose two "
-"colors."
-msgstr ""
-"Bằng việc nhấn vào các nút này, bạn có thể chọn màu KDM "
-"sẽ vẽ nền .Nếu bạn chọn gradient hay pattern, bạn có thể "
-"chọn 2 màu ."
-
-#: backgnd.cpp:154
-msgid "Color &2:"
-msgstr "Màu &2:"
-
-#: backgnd.cpp:169 backgnd.cpp:236
-msgid "S&etup"
-msgstr "&Cài đặt"
-
-#: backgnd.cpp:175
-msgid "Click here to setup a pattern or a background program."
-msgstr "Nhấn vào đây để cài đặt chương trình pattern hay nền"
-
-#: backgnd.cpp:180
-msgid "Wa&llpaper"
-msgstr "&Hình nền"
-
-#: backgnd.cpp:198
-msgid ""
-"Here you can choose the way the selected picture will be used to cover KDM's "
-"background. If you select \"No Wallpaper\", the colors settings will be used."
-msgstr ""
-"Bạn có thể chọn cách mà hình đã chọn được sẽ được "
-"bọctrong hình nền KDM . Nếu bạn chọn \"Không hình nền\", các "
-"thiếtlập màu sẽ được dùng ."
-
-#: backgnd.cpp:203
-msgid "&Wallpaper"
-msgstr "&Hình nền"
-
-#: backgnd.cpp:213
-msgid ""
-"Here you can choose from several wallpaper pictures, i.e. pictures that have "
-"been installed in the system's or your wallpaper directory. If you want to "
-"use other pictures, you can either click on the \"Browse\" button or drag a "
-"picture (e.g. from Konqueror) onto the preview."
-msgstr ""
-"Bạn có thể chọn nhiều hình nền, ịe các hình đã được "
-"càiđặt vào hệ thống của bạn hay thư mục hình nền . Nếu "
-"bạn muốn dùnghình nền khác, bạn có thể nhấn vào nút  "
-"\"Duyệt\"  hay thả mộthình (ẹg từ Konqueror) vào trong xem "
-"trước ."
-
-#: backgnd.cpp:222
-msgid "B&rowse"
-msgstr "&Duyệt"
-
-#: backgnd.cpp:228
-msgid "Click here to choose a wallpaper using a file dialog."
-msgstr "Nhấn vào đây để chọn một hình nền dùng hộp thoại file ."
-
-#: backgnd.cpp:230
-msgid "Mul&tiple:"
-msgstr "&Nhiều :"
-
-#: backgnd.cpp:281
-msgid "Flat"
-msgstr "Phẳng"
-
-#: backgnd.cpp:282 bgdialogs.cpp:367
-msgid "Pattern"
-msgstr "Pattern"
-
-#: backgnd.cpp:283
-msgid "Background Program"
-msgstr "Chương trình nền"
-
-#: backgnd.cpp:284
-msgid "Horizontal Gradient"
-msgstr "Gradient ngang"
-
-#: backgnd.cpp:285
-msgid "Vertical Gradient"
-msgstr "Gradient thẳng đứng "
-
-#: backgnd.cpp:286
-msgid "Pyramid Gradient"
-msgstr "Gradient hình kim tự tháp"
-
-#: backgnd.cpp:287
-msgid "Pipecross Gradient"
-msgstr "Gradient hình ống"
-
-#: backgnd.cpp:288
-msgid "Elliptic Gradient"
-msgstr "Gradient hình elip"
-
-#: backgnd.cpp:300
-msgid "No Wallpaper"
-msgstr "Không hình nền"
-
-#: backgnd.cpp:301
-msgid "Centred"
-msgstr "Trung tâm"
-
-#: backgnd.cpp:302
-msgid "Tiled"
-msgstr "Trải rộng"
-
-#: backgnd.cpp:303
-msgid "Center Tiled"
-msgstr "Trải rộng trung tâm"
-
-#: backgnd.cpp:304
-msgid "Centred Maxpect"
-msgstr "Trải rộng maxpect"
-
-#: backgnd.cpp:305
-msgid "Scaled"
-msgstr "Scaled"
-
-#: backgnd.cpp:569
-msgid "Currently only local wallpapers are allowed."
-msgstr "Hiện tại, chỉ các hình nền địa phương là cho phép ."
-
-#: kdm-users.cpp:51 kdm-users.cpp:58
+#: kdm-users.cpp:73 kdm-users.cpp:79
 #, c-format
 msgid "Couldn't create directory %1"
 msgstr "Không thể tạo thư mục %1"
 
-#: kdm-users.cpp:61
+#: kdm-users.cpp:82
 msgid "<default>"
 msgstr "<mặc định>"
 
-#: kdm-users.cpp:65
-msgid "&Remaining users"
-msgstr "Người dùng &còn lại"
+#: kdm-users.cpp:86
+#, fuzzy
+msgid "System U&IDs"
+msgstr "U&IDs ẩn"
 
-#: kdm-users.cpp:67
-msgid "S&elected users"
-msgstr "Người dùng đã &chọn"
-
-#: kdm-users.cpp:69
-msgid "No-sho&w users"
-msgstr "Người dùng không &hiện"
-
-#: kdm-users.cpp:77
+#: kdm-users.cpp:87
 msgid ""
-"Click here to add the highlighted user on the left to the list of selected "
-"users on the right, i.e. users that should in any case be shown in KDM's "
-"user list."
+"Users with a UID (numerical user identification) outside this range will not "
+"be listed by KDM and this setup dialog. Note that users with the UID 0 "
+"(typically root) are not affected by this and must be explicitly hidden in "
+"\"Not hidden\" mode."
 msgstr ""
-"Nhấn vào đây để thêm các người dùng đã chọn vào danh "
-"sáchnhững người dùng ở bên phải, ịe những người dùng "
-"sẽ hiện ratrong danh sách người dùng của KDM ."
 
-#: kdm-conv.cpp:145 kdm-users.cpp:84
-msgid "Click here to remove the highlighted user from the list of selected users."
-msgstr ""
-"Nhấn vào đây để gỡ bỏ những người dùng đã chọn từ "
-"khỏi danh sách ."
+#: kdm-users.cpp:92
+#, fuzzy
+msgid "Below:"
+msgstr "dưới"
 
-#: kdm-users.cpp:91
-msgid ""
-"Click here to add the highlighted user on the left to the list of users "
-"explicitly not shown by KDM."
-msgstr ""
-"Nhấn vào đây để thêm những người dùng đã chọn vào danh "
-"sáchnhững người dùng hoàn toàn không được hiển thị trong "
-"KDM ."
+#: kdm-users.cpp:99
+#, fuzzy
+msgid "Above:"
+msgstr "trên"
 
-#: kdm-users.cpp:98
-msgid ""
-"Click here to remove the highlighted user from the list of users explicitly "
-"not shown by KDM."
-msgstr ""
-"Nhấn vào đây để gỡ bỏ các người dùng đã chọn từ danh "
-"sách những người dùng hoàn toàn không hiện bởi KDE ."
-
-#: kdm-users.cpp:103
-msgid ""
-"This is the list of users for which no explicit show policy has been set, "
-"i.e. they will only be shown by KDM if \"Show users\" is \"all but no-show\"."
-msgstr ""
-"Đây là danh sách những người dùng mà không chính sách hiể "
-"thịnào được đặt , ịe họ sẽ chỉ bị hiển thị bởi KDM "
-"khi \"Hiển thị người dùng\" lá \"mọi trừ không-hiện\" ."
-
-#: kdm-users.cpp:110
-msgid "This is the list of users KDM will show in its login dialog in any case."
-msgstr ""
-"Đây là danh sách những người dùng KDE sẽ hiển thị trong "
-"hộp thoại đăng nhập của nó trongmọi trường hợp ."
-
-#: kdm-users.cpp:116
-msgid ""
-"This is the list of users KDM will not show in its login dialog. Users "
-"(except for root) with a user ID less than the one specified in the \"Hide "
-"UIDs\" fields will not be shown, too."
-msgstr ""
-"Đây là danh sách những người dùng mà KDM sẽ không hiểnthị "
-"trong hộp thoại đăng nhập . Người dùng ( trừ root) với ID "
-"người dùng nhỏ hơn một số nhất định được chỉ "
-"địnhtrong  trường \"UIDS ẩn\" sẽ cũng không bị hiện"
-
-#: kdm-users.cpp:140
-msgid "Click or drop an image here"
-msgstr "Nhấn hay thả ảnh vào đây "
-
-#: kdm-users.cpp:141
-msgid ""
-"Here you can see the username of the currently selected user and the image "
-"assigned to this user. Click on the image button to select from a list of "
-"images or drag and drop your own image onto the button (e.g. from Konqueror)."
-msgstr ""
-"Bạn có thể nhìn thấy tên người dùng trong những người "
-"dùngđã chọn gần đây và ảnh được chỉ định cho người "
-"dùng đó .Nhấn vào nút này để chọn ảnh từ danh sách hay "
-"kéo thả ảnh củariêng bạn vào nút này ( ẹg từ Konqueror) ."
-
-#: kdm-users.cpp:147
-msgid "Show users"
+#: kdm-users.cpp:107
+#, fuzzy
+msgid "Show Users"
 msgstr "Hiển thị người dùng"
 
-#: kdm-users.cpp:151
+#: kdm-users.cpp:111
+#, fuzzy
 msgid ""
 "If this option is selected, KDM will not show any users. If one of the "
-"alternative radio buttons is selected, KDM will show a list of users in its "
-"login dialog, so users can click on their name and image rather than typing "
-"in their login."
+"alternative radio buttons is selected, KDM will show a list of users, so "
+"users can click on their name or image rather than typing in their login."
 msgstr ""
 "Nếu tuỳ chọn này được nhận, KDM sẽ không hiển thị "
 "bấtkì người dùng nào . Nếu một trong các nút radio loại "
@@ -686,98 +505,179 @@ msgstr ""
 "trong hộpthoại đăng nhập, vì vậy người dùng có thể nhấn "
 "vào tên hay ảnhcủa họ ."
 
-#: kdm-users.cpp:155
-msgid "Selected onl&y"
+#: kdm-users.cpp:114
+#, fuzzy
+msgid ""
+"_: selected users\n"
+"Selected onl&y"
 msgstr "&Chỉ chọn"
 
-#: kdm-users.cpp:156
+#: kdm-users.cpp:115
+#, fuzzy
 msgid ""
-"If this option is selected, KDM will only show the users listed in the "
-"\"selected users\" listbox in its login dialog."
+"If this option is selected, KDM will only show the users checked in the "
+"\"Select users\" list."
 msgstr ""
 "Nếu tuỳ chọn này được nhận, KDM sẽ chỉ hiển thị "
 "nhữngngười dùng được liệt kê trong listbox \"Người dùng "
 "đã chọn\""
 
-#: kdm-users.cpp:158
-msgid "A&ll but no-show"
-msgstr "&Mọi trừ không - hiện"
-
-#: kdm-users.cpp:159
+#: kdm-users.cpp:117
 msgid ""
-"If this option is selected, KDM will show all users but those who are listed "
-"in the \"no-show users\" listbox or have user ID less then the one specified "
-"in the \"Hide UIDs\" fields (except root)."
+"_: not hidden users\n"
+"Not hidden"
 msgstr ""
-"Nếu tuỳ chọn này được nhận, KDM chỉ hiển thị mọi "
-"người dùngtrừ những người được liệt kê trong \"người "
-"dùng không hiện\" hoặccó ID nhỏ hơn một số đã chỉ định "
-"trong trường \"UIDs không hiện\"  (trừ root) ."
 
-#: kdm-users.cpp:162
+#: kdm-users.cpp:118
+#, fuzzy
+msgid ""
+"If this option is selected, KDM will show all non-system users, except those "
+"checked in the \"Select users\" list."
+msgstr ""
+"Nếu tuỳ chọn này được nhận, KDM sẽ chỉ hiển thị "
+"nhữngngười dùng được liệt kê trong listbox \"Người dùng "
+"đã chọn\""
+
+#: kdm-users.cpp:120
 msgid "Sor&t users"
 msgstr "&Sắp xếp người dùng"
 
-#: kdm-users.cpp:164
+#: kdm-users.cpp:122
+#, fuzzy
 msgid ""
-"This option tells KDM to alphabetically sort the users shown in its login "
-"dialog."
-msgstr "Tuỳ chọn này bảo KDM sắp xếp người dùng theo thứ tự abc"
+"If this is checked, KDM will alphabetically sort the user list. Otherwise "
+"users are listed in the order they appear in the password file."
+msgstr ""
+"Nếu tuỳ chọn này được nhận, KDM sẽ chỉ hiển thị "
+"nhữngngười dùng được liệt kê trong listbox \"Người dùng "
+"đã chọn\""
 
-#: kdm-users.cpp:167
-msgid "Hide U&IDs"
+#: kdm-users.cpp:126
+#, fuzzy
+msgid "S&elect users:"
+msgstr "Người dùng đã &chọn"
+
+#: kdm-users.cpp:128
+#, fuzzy
+msgid "Selected Users"
+msgstr "Người dùng đã &chọn"
+
+#: kdm-users.cpp:130
+msgid "KDM will show all checked users."
+msgstr ""
+
+#: kdm-users.cpp:135
+#, fuzzy
+msgid "Hidden Users"
 msgstr "U&IDs ẩn"
 
-#: kdm-users.cpp:168
-msgid ""
-"In \"All but no-show\"-mode all users with a user ID less/greater than these "
-"numbers are hidden. Note, that the root user is not affected by this and "
-"must be explicitly listed in \"No-show users\" to be hidden."
+#: kdm-users.cpp:137
+msgid "KDM will show all non-checked non-system users."
 msgstr ""
-"Trong chế độ \"Mọi trừ không hiện\", mọi người dùng với "
-"IDnhỏ hơn / lớn hơn một số nào đó sẽ bị  ẩn . Chú ý "
-"rằng, rootkhông bị ảnh hưởng bởi cái này trừ khi nó không "
-"được liệt kêtrong \"Người dùng không hiện\""
 
-#: kdm-users.cpp:173
-msgid "below"
-msgstr "dưới"
+#: kdm-users.cpp:142
+msgid "User Image Source"
+msgstr ""
 
-#: kdm-users.cpp:179
-msgid "above"
-msgstr "trên"
+#: kdm-users.cpp:143
+msgid ""
+"Here you can specify where KDM will obtain the images that represent users. "
+"\"Admin\" represents the global directory; these are the pictures you can "
+"set below. \"User\" means that KDM should read the user's $HOME/.face.icon "
+"file. The two selections in the middle define the order of preference if "
+"both sources are available."
+msgstr ""
 
-#: kdm-users.cpp:247
+#: kdm-users.cpp:149
+msgid "Admin"
+msgstr ""
+
+#: kdm-users.cpp:150
+msgid "Admin, user"
+msgstr ""
+
+#: kdm-users.cpp:151
+msgid "User, admin"
+msgstr ""
+
+#: kdm-users.cpp:152
+#, fuzzy
+msgid "User"
+msgstr "Người &dùng:"
+
+#: kdm-users.cpp:154
+msgid "User Images"
+msgstr ""
+
+#: kdm-users.cpp:157
+msgid "The user the image below belongs to."
+msgstr ""
+
+#: kdm-users.cpp:160
+#, fuzzy
+msgid "User:"
+msgstr "&Nguoời dùng:"
+
+#: kdm-users.cpp:167
+msgid "Click or drop an image here"
+msgstr "Nhấn hay thả ảnh vào đây "
+
+#: kdm-users.cpp:168
+#, fuzzy
+msgid ""
+"Here you can see the image assigned to the user selected in the combo box "
+"above. Click on the image button to select from a list of images or drag and "
+"drop your own image on to the button (e.g. from Konqueror)."
+msgstr ""
+"Bạn có thể nhìn thấy tên người dùng trong những người "
+"dùngđã chọn gần đây và ảnh được chỉ định cho người "
+"dùng đó .Nhấn vào nút này để chọn ảnh từ danh sách hay "
+"kéo thả ảnh củariêng bạn vào nút này ( ẹg từ Konqueror) ."
+
+#: kdm-users.cpp:170
+msgid "Unset"
+msgstr ""
+
+#: kdm-users.cpp:171
+msgid "Click this button to make KDM use the default image for the selected user."
+msgstr ""
+
+#: kdm-users.cpp:263
 msgid "Save image as default image?"
 msgstr "Cất ảnh làm mặc định ?"
 
-#: kdm-users.cpp:257
+#: kdm-users.cpp:271
+#, fuzzy, c-format
 msgid ""
-"There was an error saving the image:\n"
-"%1\n"
+"There was an error loading the image\n"
+"%1"
 msgstr ""
 "Có lỗi khi cất ảnh : \n"
 "%1\n"
 
-#: kdm-users.cpp:301
+#: kdm-users.cpp:279
+#, fuzzy, c-format
 msgid ""
-"There was an error loading the image:\n"
-"%1\n"
-"It will not be saved..."
+"There was an error saving the image:\n"
+"%1"
 msgstr ""
-"Có lỗi khi tải vào ảnh:\n"
+"Có lỗi khi cất ảnh : \n"
 "%1\n"
-"Nó sẽ không được cất ..."
 
-#: kdm-conv.cpp:47
-msgid "Automatic login"
+#: kdm-users.cpp:291
+msgid "Choose Image"
+msgstr ""
+
+#: kdm-conv.cpp:48
+#, fuzzy
+msgid "Automatic Login"
 msgstr "Tự động đăng nhập"
 
-#: kdm-conv.cpp:49
+#: kdm-conv.cpp:51
 msgid "Enable au&to-login"
 msgstr "Cho phép &tự động - đăng nhập"
 
-#: kdm-conv.cpp:50
+#: kdm-conv.cpp:52
 msgid ""
 "Turn on the auto-login feature. This applies only to KDM's graphical login. "
 "Think twice before enabling this!"
@@ -786,130 +686,108 @@ msgstr ""
 "chỉvới đăng nhập đồ hoạ KDM . Nghĩ lại trước khi bạn "
 "làm !!!!!"
 
-#: kdm-conv.cpp:56
-msgid "Truly automatic lo&gin"
-msgstr "Thực sự đăng &nhập tự động"
-
-#: kdm-conv.cpp:57
-msgid ""
-"When this option is on, the auto-login will be carried out immediately when "
-"KDM starts (i.e., when your computer comes up). When this is off, you will "
-"need to initiate the auto-login by crashing the X server (by pressing "
-"alt-ctrl-backspace)."
-msgstr ""
-"Khi tuỳ chọn này được bât, tự - động - đăng - nhập sẽ "
-"từđộng tiến hành lập tức khi KDM bắt đầu ( ịe khi máy "
-"tính của bạnbật lên). Khi nó bị tắt, bạn sẽ cần phải "
-"khởi động tự - động -đăng - nhập bằng cách crash X server ( "
-"nhấn ctrl + alt + backspace)"
-
-#: kdm-conv.cpp:65
+#: kdm-conv.cpp:60
 msgid "Use&r:"
 msgstr "Người &dùng:"
 
-#: kdm-conv.cpp:67
-msgid "Select the user to be logged in automatically from this list."
+#: kdm-conv.cpp:62
+#, fuzzy
+msgid "Select the user to be logged in automatically."
 msgstr ""
 "Chọn người dùng sẽ được tự động đăng nhập từ danh "
 "sách ."
 
-#: kdm-conv.cpp:76
+#: kdm-conv.cpp:71
 msgid "Preselect User"
 msgstr "Người dùng chọn trước"
 
-#: kdm-conv.cpp:80
+#: kdm-conv.cpp:77
 msgid "Prev&ious"
 msgstr "&Trước"
 
-#: kdm-conv.cpp:81
+#: kdm-conv.cpp:78
+msgid ""
+"Preselect the user that logged in previously. Use this if this computer is "
+"usually used several consecutive times by one user."
+msgstr ""
+
+#: kdm-conv.cpp:80
 msgid "Specif&y"
 msgstr "&Chỉ định"
 
-#: kdm-conv.cpp:84
+#: kdm-conv.cpp:81
+msgid ""
+"Preselect the user specified in the combo box below. Use this if this "
+"computer is predominantly used by a certain user."
+msgstr ""
+
+#: kdm-conv.cpp:85
 msgid "Us&er:"
 msgstr "&Nguoời dùng:"
 
-#: kdm-conv.cpp:86
-msgid "Select the user to be preselected for login from this list."
+#: kdm-conv.cpp:87
+msgid ""
+"Select the user to be preselected for login. This box is editable, so you "
+"can specify an arbitrary non-existent user to mislead possible attackers."
 msgstr ""
-"Chọn người dùng sẽ được họn để đăng nhập từ danh "
-"sách ."
 
-#: kdm-conv.cpp:93
+#: kdm-conv.cpp:96
 msgid "Focus pass&word"
 msgstr "Focus &mật khẩu"
 
-#: kdm-conv.cpp:94
+#: kdm-conv.cpp:97
+#, fuzzy
 msgid ""
 "When this option is on, KDM will place the cursor in the password field "
-"instead of the login field after preselecting a user. This will save one key "
-"press per login, if the user name is very seldom changed."
+"instead of the user field after preselecting a user. Use this to save one "
+"key press per login, if the preselection usually does not need to be changed."
 msgstr ""
 "Khi tuỳ chọn này được bật, KDM sẽ thay thế con trỏ trong "
 "trườngmật khẩu bằng trường đăng nhập sau khi đã chọn "
 "trướcngười dùng . Cái này sẽ tiết kiệm một phím cho một "
 "lần đăng nhập , nếu tên người dùng ít thay đổi ."
 
-#: kdm-conv.cpp:100
-msgid "Password-less login"
+#: kdm-conv.cpp:103
+#, fuzzy
+msgid "Password-less Login"
 msgstr "Đăng nhập không-mật-khẩu"
 
-#: kdm-conv.cpp:104
+#: kdm-conv.cpp:105
 msgid "Enable password-&less logins"
 msgstr "Cho phép đăng nhập không-mật-&khẩu"
 
-#: kdm-conv.cpp:105
+#: kdm-conv.cpp:106
+#, fuzzy
 msgid ""
-"When this option is checked, the users from the right list will be allowed "
-"to log in without entering their password. This applies only to KDM's "
-"graphical login. Think twice before enabling this!"
+"When this option is checked, the checked users from the list below will be "
+"allowed to log in without entering their password. This applies only to "
+"KDM's graphical login. Think twice before enabling this!"
 msgstr ""
 "Khi tuỳ chọn này duược nhận, người dùng từ danh sách bên "
 "phải sẽđược phép đăng nhập mà không cần nhập mật khẩu "
 ".Cái này chỉ áp dụng cho đăng nhập đồ hoạ KDM . Nghĩ lại "
 "1 lần trướckhi bạn chọn cái này !! Cẩn thận !!"
 
-#: kdm-conv.cpp:113
-msgid "Password re&quired"
+#: kdm-conv.cpp:114
+#, fuzzy
+msgid "No password re&quired for:"
 msgstr "Đòi &hỏi mật khẩu"
 
-#: kdm-conv.cpp:118
-msgid "This is the list of users which need to type their password to log in."
+#: kdm-conv.cpp:120
+msgid "Check all users you want to allow a password-less login for."
 msgstr ""
-"Đây là danh sách các người dùng cần phải nhập mật khẩu "
-"khi đăng nhập ."
 
-#: kdm-conv.cpp:122
-msgid "S&kip password check"
-msgstr "&Bỏ qua kiểm tra mật khẩu"
-
-#: kdm-conv.cpp:127
-msgid "This is the list of users which are allowed in without typing their password."
-msgstr ""
-"Đây là danh sách người dùng được phép đăng nhập không "
-"cầnmật khẩu ."
-
-#: kdm-conv.cpp:137
-msgid ""
-"Click here to add the highlighted user on the left to the list of selected "
-"users on the right, i.e. users that are allowed in without entering their "
-"password."
-msgstr ""
-"Nhấn vào đây để thêm những người dùng đã chọn ởbên "
-"trái vào danh sách những người dùng đã chọn ở bên "
-"phải,.ịe người dùng được phép đăng nhập không cần "
-"password ."
-
-#: kdm-conv.cpp:153
+#: kdm-conv.cpp:124
 msgid "Automatically log in again after &X server crash"
 msgstr "Tự động đăng nhập lại sau khi &X server bị crash "
 
-#: kdm-conv.cpp:154
+#: kdm-conv.cpp:125
+#, fuzzy
 msgid ""
 "When this option is on, a user will be logged in again automatically, when "
 "his session is interrupted by an X server crash. Note, that this can open a "
-"security hole: if you use another screen locker than kdesktop's integrated "
-"one, this will make circumventing a password-secured screen lock possible."
+"security hole: if you use another screen locker than KDE's integrated one, "
+"this will make circumventing a password-secured screen lock possible."
 msgstr ""
 "Khi tuỳ chọn này được nhận, một người dùng sẽ tự "
 "động đăngnhập lại khi session của anh tại bị gián đoạn "
@@ -917,9 +795,10 @@ msgstr ""
 "lỗ hổng bảo mật: Nếu bạndùng một screen locker khác cái "
 "của kdesktop, sẽ không có cáchnào để bảo vệ 'khoá màn hình'"
 
-#: main.cpp:64
+#: main.cpp:67
+#, fuzzy
 msgid ""
-"Sorry, but %1 does not seem to be an image file.\n"
+"%1 does not appear to be an image file.\n"
 "Please use files with these extensions:\n"
 "%2"
 msgstr ""
@@ -927,31 +806,31 @@ msgstr ""
 "xin dùng file với các đuôi sau :\n"
 "%2"
 
-#: main.cpp:89
+#: main.cpp:101
 msgid "A&ppearance"
 msgstr "&Diện mạo"
 
-#: main.cpp:93
+#: main.cpp:105
 msgid "&Font"
 msgstr "&Font"
 
-#: main.cpp:97
+#: main.cpp:109
 msgid "&Background"
 msgstr "&Hình nền"
 
-#: main.cpp:101
+#: main.cpp:113
 msgid "&Sessions"
 msgstr "&Sessions"
 
-#: main.cpp:105
+#: main.cpp:117
 msgid "&Users"
 msgstr "&Người dùng"
 
-#: main.cpp:110
+#: main.cpp:125
 msgid "Con&venience"
 msgstr "&Tiện lợi"
 
-#: main.cpp:125
+#: main.cpp:150
 msgid ""
 "<h1>Login Manager</h1> In this module you can configure the various aspects "
 "of the KDE Login Manager. This includes the look and feel as well as the "
@@ -1009,234 +888,26 @@ msgstr ""
 "<br>Note, that these settings are security holes by their nature, so use "
 "them very carefullỵ"
 
-#: main.cpp:155
+#: main.cpp:180
 msgid "kcmkdm"
 msgstr "kcmkdm"
 
-#: main.cpp:155
+#: main.cpp:180
 msgid "KDE Login Manager Config Module"
 msgstr "Module cầu hình quản lí đăng nhập KDE "
 
-#: main.cpp:157
-msgid "(c) 1996 - 2001 The KDM Authors"
+#: main.cpp:182
+#, fuzzy
+msgid "(c) 1996 - 2002 The KDM Authors"
 msgstr "(c) 1996 - 2001 The KDM Authors"
 
-#: main.cpp:159
+#: main.cpp:184
 msgid "Original author"
 msgstr "Tác giả gốc"
 
-#: main.cpp:161
+#: main.cpp:186
 msgid "Current maintainer"
 msgstr "Người bảo trì hiện tại"
-
-#: bgdialogs.cpp:37
-msgid "Select Background Program"
-msgstr "Chọn chương trình nền"
-
-#: bgdialogs.cpp:43
-msgid "Select Background Program:"
-msgstr "Chọn chương trình nền:"
-
-#: bgdialogs.cpp:50
-msgid "Program"
-msgstr "Chương trình"
-
-#: bgdialogs.cpp:51 bgdialogs.cpp:368
-msgid "Comment"
-msgstr "Lời bình"
-
-#: bgdialogs.cpp:52
-msgid "Refresh"
-msgstr "Refresh"
-
-#: bgdialogs.cpp:78 bgdialogs.cpp:391 bgdialogs.cpp:706
-msgid "&Add..."
-msgstr "&Thêm..."
-
-#: bgdialogs.cpp:85 bgdialogs.cpp:397
-msgid "&Modify..."
-msgstr "&Sửạ.."
-
-#: bgdialogs.cpp:138
-msgid "%1 min."
-msgstr "%1 phút ..."
-
-#: bgdialogs.cpp:173
-msgid ""
-"Unable to remove the program! The program is global and can only be removed "
-"by the System Administrator."
-msgstr ""
-"Không thể gỡ bỏ chương trình! Chương trình này là toàn "
-"cầuvà chỉ có thể được gỡ bỏ bởi Người quản lí hệ "
-"thống ."
-
-#: bgdialogs.cpp:175
-msgid "Cannot remove program"
-msgstr "Không thể gỡ bỏ chương trình "
-
-#: bgdialogs.cpp:179
-msgid "Are you sure you want to remove the program `%1'?"
-msgstr "Bạn có chắc muốn gỡ bỏ chương trình '%1' ?"
-
-#: bgdialogs.cpp:233
-msgid "Configure Background Program"
-msgstr "Cấu hình chương trình nền"
-
-#: bgdialogs.cpp:241 bgdialogs.cpp:546
-msgid "&Name:"
-msgstr "&Tên: "
-
-#: bgdialogs.cpp:247 bgdialogs.cpp:552
-msgid "&Comment:"
-msgstr "&Lời binh :"
-
-#: bgdialogs.cpp:253
-msgid "&Command:"
-msgstr "&Lệnh :"
-
-#: bgdialogs.cpp:259
-msgid "&Preview cmd:"
-msgstr "&Xem trước cmd :"
-
-#: bgdialogs.cpp:265
-msgid "&Executable:"
-msgstr "&Thực hiện được :"
-
-#: bgdialogs.cpp:271
-msgid "&Refresh time:"
-msgstr "Thời gian &refresh: "
-
-#: bgdialogs.cpp:276 bgdialogs.cpp:679
-msgid " minutes"
-msgstr "phút"
-
-#: bgdialogs.cpp:283
-msgid "New Command"
-msgstr "Lệnh mới"
-
-#: bgdialogs.cpp:286
-msgid "New Command <%1>"
-msgstr "Lệnh mới <%1>"
-
-#: bgdialogs.cpp:313 bgdialogs.cpp:607
-msgid ""
-"You did not fill in the `Name' field.\n"
-"This is a required field."
-msgstr ""
-"Bạn chưa điền trường 'tên' .\n"
-"Cái này bắt buộc ."
-
-#: bgdialogs.cpp:321
-msgid ""
-"There is already a program with the name `%1'.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Đã có một chương trình tên là '%1'' . \n"
-"Bạn có muốn ghi đè nó không ?"
-
-#: bgdialogs.cpp:328
-msgid ""
-"You did not fill in the `Executable' field.\n"
-"This is a required field."
-msgstr ""
-"Bạn chưa điền trường 'Thực hiện được' . \n"
-"Cái này bắt buộc ."
-
-#: bgdialogs.cpp:333
-msgid ""
-"You did not fill in the `Command' field.\n"
-"This is a required field."
-msgstr ""
-"Bạn chưa điền trường 'Lệnh' . \n"
-"Cái này bắt buộc .B"
-
-#: bgdialogs.cpp:354
-msgid "Select Background Pattern"
-msgstr "Chọn pattern nền"
-
-#: bgdialogs.cpp:360
-msgid "Select Pattern:"
-msgstr "Chọn pattern :"
-
-#: bgdialogs.cpp:369
-msgid "Preview"
-msgstr "Xem trước"
-
-#: bgdialogs.cpp:486
-msgid ""
-"Unable to remove the pattern! The pattern is global and can only be removed "
-"by the System Administrator.\n"
-msgstr ""
-"Không thể gỡ bỏ patterrn ! Pattern là toàn cục và chỉ có "
-"thể gỡ bỏbởi người quản lí chương trình . \n"
-
-#: bgdialogs.cpp:488
-msgid "Cannot remove pattern"
-msgstr "Không thể gỡ bỏ pattern"
-
-#: bgdialogs.cpp:492
-msgid "Are you sure you want to remove the pattern `%1'?"
-msgstr "Bạn có muốn gỡ bỏ pattern '%1' không ?"
-
-#: bgdialogs.cpp:539
-msgid "Configure Background Pattern"
-msgstr "Cấu hình pattern nền"
-
-#: bgdialogs.cpp:558
-msgid "&Image:"
-msgstr "&ảnh: "
-
-#: bgdialogs.cpp:565
-msgid "&Browse..."
-msgstr "&Duyệt..."
-
-#: bgdialogs.cpp:571
-msgid "New Pattern"
-msgstr "Pattern mới"
-
-#: bgdialogs.cpp:574
-msgid "New Pattern <%1>"
-msgstr "Pattern mới <%1>"
-
-#: bgdialogs.cpp:615
-msgid ""
-"There is already a pattern with the name `%1'.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"Đã có một pattern tên là '%1'. \n"
-"Bạn có muốn ghi đè nó không ?"
-
-#: bgdialogs.cpp:622
-msgid ""
-"You did not fill in the `Image' field.\n"
-"This is a required field."
-msgstr ""
-"Bạn chưa điền trường 'A?nh . \n"
-"Cái này bắt buộc ."
-
-#: bgdialogs.cpp:662
-msgid "Configure Wallpapers"
-msgstr "Cấu hình hình nền"
-
-#: bgdialogs.cpp:674
-msgid "&Interval:"
-msgstr "&Khoảng thời gian :"
-
-#: bgdialogs.cpp:685
-msgid "In Order"
-msgstr "Theo thứ tự"
-
-#: bgdialogs.cpp:686
-msgid "Random"
-msgstr "Ngẫu nhiên"
-
-#: bgdialogs.cpp:692
-msgid "You can select files and directories below:"
-msgstr "Bạn có thể chọn file hay thư mục dưới đây:"
-
-#: bgdialogs.cpp:717
-msgid "Select"
-msgstr "Chọn"
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -1248,4 +919,450 @@ msgstr "Nguyen Hung Vu"
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr "VụHung@techviet.com"
+msgstr "vuhung@fedu.uec.ac.jp"
+
+#, fuzzy
+#~ msgid ""
+#~ "Here you can see a preview of how KDM's background will look using the "
+#~ "current settings. You can even set a background picture by dragging it on "
+#~ "to the preview (e.g. from Konqueror)."
+#~ msgstr ""
+#~ "Bạn có thể nhìn thấy xem trước nền KDM sẽ ra sao nếu dùngthiết lập nàỵ "
+#~ "Bạn thậm chí có thể đặt hình nền bằng cách kéovào thả vào xem trước ( ẹg "
+#~ "từ Konqueror)."
+
+#~ msgid "Back&ground"
+#~ msgstr "&Hình nền"
+
+#~ msgid "&Mode:"
+#~ msgstr "&Chế độ:"
+
+#~ msgid ""
+#~ "Here you can change the way colors are applied to KDM's background. Apart "
+#~ "of just a plain color you can choose gradients, custom patterns or a "
+#~ "background program (e.g. xearth)."
+#~ msgstr ""
+#~ "Bạn có thể thay đổi cách mà màu được áp dụng vào nền củaKDM . FIXME!!!!!"
+
+#~ msgid "Color &1:"
+#~ msgstr "Màu &1:"
+
+#~ msgid ""
+#~ "By clicking on these buttons you can choose the colors KDM will use to "
+#~ "paint the background. If you selected a gradient or a pattern, you can "
+#~ "choose two colors."
+#~ msgstr ""
+#~ "Bằng việc nhấn vào các nút này, bạn có thể chọn màu KDM sẽ vẽ nền .Nếu "
+#~ "bạn chọn gradient hay pattern, bạn có thể chọn 2 màu ."
+
+#~ msgid "Color &2:"
+#~ msgstr "Màu &2:"
+
+#, fuzzy
+#~ msgid "S&etup..."
+#~ msgstr "&Cài đặt"
+
+#~ msgid "Click here to setup a pattern or a background program."
+#~ msgstr "Nhấn vào đây để cài đặt chương trình pattern hay nền"
+
+#~ msgid "Wa&llpaper"
+#~ msgstr "&Hình nền"
+
+#~ msgid ""
+#~ "Here you can choose the way the selected picture will be used to cover "
+#~ "KDM's background. If you select \"No Wallpaper\", the colors settings "
+#~ "will be used."
+#~ msgstr ""
+#~ "Bạn có thể chọn cách mà hình đã chọn được sẽ được bọctrong hình nền KDM . "
+#~ "Nếu bạn chọn \"Không hình nền\", các thiếtlập màu sẽ được dùng ."
+
+#, fuzzy
+#~ msgid "&Wallpaper:"
+#~ msgstr "&Hình nền"
+
+#~ msgid ""
+#~ "Here you can choose from several wallpaper pictures, i.e. pictures that "
+#~ "have been installed in the system's or your wallpaper directory. If you "
+#~ "want to use other pictures, you can either click on the \"Browse\" button "
+#~ "or drag a picture (e.g. from Konqueror) onto the preview."
+#~ msgstr ""
+#~ "Bạn có thể chọn nhiều hình nền, ịe các hình đã được càiđặt vào hệ thống "
+#~ "của bạn hay thư mục hình nền . Nếu bạn muốn dùnghình nền khác, bạn có thể "
+#~ "nhấn vào nút  \"Duyệt\"  hay thả mộthình (ẹg từ Konqueror) vào trong xem "
+#~ "trước ."
+
+#, fuzzy
+#~ msgid "B&rowse..."
+#~ msgstr "&Duyệt..."
+
+#~ msgid "Click here to choose a wallpaper using a file dialog."
+#~ msgstr "Nhấn vào đây để chọn một hình nền dùng hộp thoại file ."
+
+#~ msgid "Mul&tiple:"
+#~ msgstr "&Nhiều :"
+
+#~ msgid "S&etup"
+#~ msgstr "&Cài đặt"
+
+#~ msgid "Flat"
+#~ msgstr "Phẳng"
+
+#~ msgid "Horizontal Gradient"
+#~ msgstr "Gradient ngang"
+
+#~ msgid "Vertical Gradient"
+#~ msgstr "Gradient thẳng đứng "
+
+#~ msgid "Pyramid Gradient"
+#~ msgstr "Gradient hình kim tự tháp"
+
+#~ msgid "Pipecross Gradient"
+#~ msgstr "Gradient hình ống"
+
+#~ msgid "Elliptic Gradient"
+#~ msgstr "Gradient hình elip"
+
+#~ msgid "Pattern"
+#~ msgstr "Pattern"
+
+#~ msgid "Background Program"
+#~ msgstr "Chương trình nền"
+
+#~ msgid "No Wallpaper"
+#~ msgstr "Không hình nền"
+
+#, fuzzy
+#~ msgid "Centered"
+#~ msgstr "Trung &tâm"
+
+#~ msgid "Tiled"
+#~ msgstr "Trải rộng"
+
+#~ msgid "Center Tiled"
+#~ msgstr "Trải rộng trung tâm"
+
+#, fuzzy
+#~ msgid "Centered Maxpect"
+#~ msgstr "Trải rộng maxpect"
+
+#, fuzzy
+#~ msgid "Tiled Maxpect"
+#~ msgstr "Trải rộng maxpect"
+
+#~ msgid "Scaled"
+#~ msgstr "Scaled"
+
+#~ msgid "Currently only local wallpapers are allowed."
+#~ msgstr "Hiện tại, chỉ các hình nền địa phương là cho phép ."
+
+#~ msgid "Select Background Program"
+#~ msgstr "Chọn chương trình nền"
+
+#, fuzzy
+#~ msgid "Select background program:"
+#~ msgstr "Chọn chương trình nền:"
+
+#~ msgid "Program"
+#~ msgstr "Chương trình"
+
+#~ msgid "Comment"
+#~ msgstr "Lời bình"
+
+#~ msgid "Refresh"
+#~ msgstr "Refresh"
+
+#~ msgid "&Add..."
+#~ msgstr "&Thêm..."
+
+#~ msgid "&Modify..."
+#~ msgstr "&Sửạ.."
+
+#~ msgid "%1 min."
+#~ msgstr "%1 phút ..."
+
+#~ msgid ""
+#~ "Unable to remove the program! The program is global and can only be "
+#~ "removed by the System Administrator."
+#~ msgstr ""
+#~ "Không thể gỡ bỏ chương trình! Chương trình này là toàn cầuvà chỉ có thể "
+#~ "được gỡ bỏ bởi Người quản lí hệ thống ."
+
+#~ msgid "Cannot remove program"
+#~ msgstr "Không thể gỡ bỏ chương trình "
+
+#~ msgid "Are you sure you want to remove the program `%1'?"
+#~ msgstr "Bạn có chắc muốn gỡ bỏ chương trình '%1' ?"
+
+#~ msgid "Configure Background Program"
+#~ msgstr "Cấu hình chương trình nền"
+
+#~ msgid "&Name:"
+#~ msgstr "&Tên: "
+
+#~ msgid "&Comment:"
+#~ msgstr "&Lời binh :"
+
+#~ msgid "&Command:"
+#~ msgstr "&Lệnh :"
+
+#~ msgid "&Preview cmd:"
+#~ msgstr "&Xem trước cmd :"
+
+#~ msgid "&Executable:"
+#~ msgstr "&Thực hiện được :"
+
+#~ msgid "&Refresh time:"
+#~ msgstr "Thời gian &refresh: "
+
+#~ msgid " minutes"
+#~ msgstr "phút"
+
+#~ msgid "New Command"
+#~ msgstr "Lệnh mới"
+
+#~ msgid "New Command <%1>"
+#~ msgstr "Lệnh mới <%1>"
+
+#~ msgid ""
+#~ "You did not fill in the `Name' field.\n"
+#~ "This is a required field."
+#~ msgstr ""
+#~ "Bạn chưa điền trường 'tên' .\n"
+#~ "Cái này bắt buộc ."
+
+#~ msgid ""
+#~ "There is already a program with the name `%1'.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Đã có một chương trình tên là '%1'' . \n"
+#~ "Bạn có muốn ghi đè nó không ?"
+
+#~ msgid ""
+#~ "You did not fill in the `Executable' field.\n"
+#~ "This is a required field."
+#~ msgstr ""
+#~ "Bạn chưa điền trường 'Thực hiện được' . \n"
+#~ "Cái này bắt buộc ."
+
+#~ msgid ""
+#~ "You did not fill in the `Command' field.\n"
+#~ "This is a required field."
+#~ msgstr ""
+#~ "Bạn chưa điền trường 'Lệnh' . \n"
+#~ "Cái này bắt buộc .B"
+
+#~ msgid "Select Background Pattern"
+#~ msgstr "Chọn pattern nền"
+
+#, fuzzy
+#~ msgid "Select pattern:"
+#~ msgstr "Chọn pattern :"
+
+#~ msgid "Preview"
+#~ msgstr "Xem trước"
+
+#~ msgid ""
+#~ "Unable to remove the pattern! The pattern is global and can only be "
+#~ "removed by the System Administrator.\n"
+#~ msgstr ""
+#~ "Không thể gỡ bỏ patterrn ! Pattern là toàn cục và chỉ có thể gỡ bỏbởi "
+#~ "người quản lí chương trình . \n"
+
+#~ msgid "Cannot remove pattern"
+#~ msgstr "Không thể gỡ bỏ pattern"
+
+#~ msgid "Are you sure you want to remove the pattern `%1'?"
+#~ msgstr "Bạn có muốn gỡ bỏ pattern '%1' không ?"
+
+#~ msgid "Configure Background Pattern"
+#~ msgstr "Cấu hình pattern nền"
+
+#~ msgid "&Image:"
+#~ msgstr "&ảnh: "
+
+#~ msgid "&Browse..."
+#~ msgstr "&Duyệt..."
+
+#~ msgid "New Pattern"
+#~ msgstr "Pattern mới"
+
+#~ msgid "New Pattern <%1>"
+#~ msgstr "Pattern mới <%1>"
+
+#~ msgid ""
+#~ "There is already a pattern with the name `%1'.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Đã có một pattern tên là '%1'. \n"
+#~ "Bạn có muốn ghi đè nó không ?"
+
+#~ msgid ""
+#~ "You did not fill in the `Image' field.\n"
+#~ "This is a required field."
+#~ msgstr ""
+#~ "Bạn chưa điền trường 'A?nh . \n"
+#~ "Cái này bắt buộc ."
+
+#~ msgid "Configure Wallpapers"
+#~ msgstr "Cấu hình hình nền"
+
+#~ msgid "&Interval:"
+#~ msgstr "&Khoảng thời gian :"
+
+#~ msgid "In Order"
+#~ msgstr "Theo thứ tự"
+
+#~ msgid "Random"
+#~ msgstr "Ngẫu nhiên"
+
+#~ msgid "You can select files and directories below:"
+#~ msgstr "Bạn có thể chọn file hay thư mục dưới đây:"
+
+#~ msgid "Select"
+#~ msgstr "Chọn"
+
+#~ msgid "abcdefgh"
+#~ msgstr "abcdefgh"
+
+#, fuzzy
+#~ msgid "&Remaining users:"
+#~ msgstr "Người dùng &còn lại"
+
+#, fuzzy
+#~ msgid "No-sho&w users:"
+#~ msgstr "Người dùng không &hiện"
+
+#~ msgid ""
+#~ "Click here to add the highlighted user on the left to the list of "
+#~ "selected users on the right, i.e. users that should in any case be shown "
+#~ "in KDM's user list."
+#~ msgstr ""
+#~ "Nhấn vào đây để thêm các người dùng đã chọn vào danh sáchnhững người dùng "
+#~ "ở bên phải, ịe những người dùng sẽ hiện ratrong danh sách người dùng của "
+#~ "KDM ."
+
+#~ msgid ""
+#~ "Click here to remove the highlighted user from the list of selected users."
+#~ msgstr "Nhấn vào đây để gỡ bỏ những người dùng đã chọn từ khỏi danh sách ."
+
+#~ msgid ""
+#~ "Click here to add the highlighted user on the left to the list of users "
+#~ "explicitly not shown by KDM."
+#~ msgstr ""
+#~ "Nhấn vào đây để thêm những người dùng đã chọn vào danh sáchnhững người "
+#~ "dùng hoàn toàn không được hiển thị trong KDM ."
+
+#~ msgid ""
+#~ "Click here to remove the highlighted user from the list of users "
+#~ "explicitly not shown by KDM."
+#~ msgstr ""
+#~ "Nhấn vào đây để gỡ bỏ các người dùng đã chọn từ danh sách những người "
+#~ "dùng hoàn toàn không hiện bởi KDE ."
+
+#~ msgid ""
+#~ "This is the list of users for which no explicit show policy has been set, "
+#~ "i.e. they will only be shown by KDM if \"Show users\" is \"all but no-show"
+#~ "\"."
+#~ msgstr ""
+#~ "Đây là danh sách những người dùng mà không chính sách hiể thịnào được "
+#~ "đặt , ịe họ sẽ chỉ bị hiển thị bởi KDM khi \"Hiển thị người dùng\" lá "
+#~ "\"mọi trừ không-hiện\" ."
+
+#~ msgid ""
+#~ "This is the list of users KDM will show in its login dialog in any case."
+#~ msgstr ""
+#~ "Đây là danh sách những người dùng KDE sẽ hiển thị trong hộp thoại đăng "
+#~ "nhập của nó trongmọi trường hợp ."
+
+#~ msgid ""
+#~ "This is the list of users KDM will not show in its login dialog. Users "
+#~ "(except for root) with a user ID less than the one specified in the "
+#~ "\"Hide UIDs\" fields will not be shown, too."
+#~ msgstr ""
+#~ "Đây là danh sách những người dùng mà KDM sẽ không hiểnthị trong hộp thoại "
+#~ "đăng nhập . Người dùng ( trừ root) với ID người dùng nhỏ hơn một số nhất "
+#~ "định được chỉ địnhtrong  trường \"UIDS ẩn\" sẽ cũng không bị hiện"
+
+#~ msgid "A&ll but no-show"
+#~ msgstr "&Mọi trừ không - hiện"
+
+#~ msgid ""
+#~ "If this option is selected, KDM will show all users but those who are "
+#~ "listed in the \"no-show users\" listbox or have user ID less then the one "
+#~ "specified in the \"Hide UIDs\" fields (except root)."
+#~ msgstr ""
+#~ "Nếu tuỳ chọn này được nhận, KDM chỉ hiển thị mọi người dùngtrừ những "
+#~ "người được liệt kê trong \"người dùng không hiện\" hoặccó ID nhỏ hơn một "
+#~ "số đã chỉ định trong trường \"UIDs không hiện\"  (trừ root) ."
+
+#~ msgid ""
+#~ "This option tells KDM to alphabetically sort the users shown in its login "
+#~ "dialog."
+#~ msgstr "Tuỳ chọn này bảo KDM sắp xếp người dùng theo thứ tự abc"
+
+#~ msgid ""
+#~ "In \"All but no-show\"-mode all users with a user ID less/greater than "
+#~ "these numbers are hidden. Note, that the root user is not affected by "
+#~ "this and must be explicitly listed in \"No-show users\" to be hidden."
+#~ msgstr ""
+#~ "Trong chế độ \"Mọi trừ không hiện\", mọi người dùng với IDnhỏ hơn / lớn "
+#~ "hơn một số nào đó sẽ bị  ẩn . Chú ý rằng, rootkhông bị ảnh hưởng bởi cái "
+#~ "này trừ khi nó không được liệt kêtrong \"Người dùng không hiện\""
+
+#~ msgid ""
+#~ "There was an error loading the image:\n"
+#~ "%1\n"
+#~ "It will not be saved..."
+#~ msgstr ""
+#~ "Có lỗi khi tải vào ảnh:\n"
+#~ "%1\n"
+#~ "Nó sẽ không được cất ..."
+
+#~ msgid "Truly automatic lo&gin"
+#~ msgstr "Thực sự đăng &nhập tự động"
+
+#~ msgid ""
+#~ "When this option is on, the auto-login will be carried out immediately "
+#~ "when KDM starts (i.e., when your computer comes up). When this is off, "
+#~ "you will need to initiate the auto-login by crashing the X server (by "
+#~ "pressing alt-ctrl-backspace)."
+#~ msgstr ""
+#~ "Khi tuỳ chọn này được bât, tự - động - đăng - nhập sẽ từđộng tiến hành "
+#~ "lập tức khi KDM bắt đầu ( ịe khi máy tính của bạnbật lên). Khi nó bị tắt, "
+#~ "bạn sẽ cần phải khởi động tự - động -đăng - nhập bằng cách crash X server "
+#~ "( nhấn ctrl + alt + backspace)"
+
+#~ msgid "Select the user to be preselected for login from this list."
+#~ msgstr "Chọn người dùng sẽ được họn để đăng nhập từ danh sách ."
+
+#~ msgid ""
+#~ "This is the list of users which need to type their password to log in."
+#~ msgstr ""
+#~ "Đây là danh sách các người dùng cần phải nhập mật khẩu khi đăng nhập ."
+
+#, fuzzy
+#~ msgid "S&kip password check:"
+#~ msgstr "&Bỏ qua kiểm tra mật khẩu"
+
+#~ msgid ""
+#~ "This is the list of users which are allowed in without typing their "
+#~ "password."
+#~ msgstr "Đây là danh sách người dùng được phép đăng nhập không cầnmật khẩu ."
+
+#~ msgid ""
+#~ "Click here to add the highlighted user on the left to the list of "
+#~ "selected users on the right, i.e. users that are allowed in without "
+#~ "entering their password."
+#~ msgstr ""
+#~ "Nhấn vào đây để thêm những người dùng đã chọn ởbên trái vào danh sách "
+#~ "những người dùng đã chọn ở bên phải,.ịe người dùng được phép đăng nhập "
+#~ "không cần password ."
+
+#~ msgid "Lilo"
+#~ msgstr "Lilo"
+
+#~ msgid "B&rowse"
+#~ msgstr "&Duyệt"
+
+#~ msgid "Centred"
+#~ msgstr "Trung tâm"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard \n"
-"POT-Creation-Date: 2004-08-04 01:18+0200\n"
+"POT-Creation-Date: 2004-12-11 01:18+0100\n"
 "PO-Revision-Date: 2002-04-26 01:19GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -10,12 +10,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: KSysGuardApplet.cc:304 WorkSheet.cc:93
+#: KSysGuardApplet.cc:313 WorkSheet.cc:93
 #, fuzzy, c-format
 msgid "Cannot open the file %1."
 msgstr "Không thể mở file %1 ."
 
-#: KSysGuardApplet.cc:313 WorkSheet.cc:101
+#: KSysGuardApplet.cc:322 WorkSheet.cc:101
 msgid "The file %1 does not contain valid XML."
 msgstr "File %1 không chứa XML hợp lệ ."
 
@@ -33,7 +33,7 @@ msgstr ""
 msgid "The file %1 has an invalid worksheet size."
 msgstr "File %1 không có cỡ work sheet hợp lệ"
 
-#: KSysGuardApplet.cc:448 WorkSheet.cc:221
+#: KSysGuardApplet.cc:460 WorkSheet.cc:221
 #, fuzzy, c-format
 msgid "Cannot save file %1"
 msgstr "Không thể cất file %1"
@@ -47,16 +47,16 @@ msgstr "Clipboard không chứa các mô tả hiển thị hợp lệ"
 msgid "It is impossible to connect to '%1'."
 msgstr "Không thể nối tới '%1'"
 
-#: KSysGuardApplet.cc:194 WorkSheet.cc:322
+#: KSysGuardApplet.cc:200 WorkSheet.cc:322
 #, fuzzy
 msgid "Select Display Type"
 msgstr "Chọn kiểu hiển thị"
 
-#: KSysGuardApplet.cc:195 WorkSheet.cc:323
+#: KSysGuardApplet.cc:201 WorkSheet.cc:323
 msgid "&Signal Plotter"
 msgstr "Trình vẽ &tín hiệu"
 
-#: KSysGuardApplet.cc:196 WorkSheet.cc:324
+#: KSysGuardApplet.cc:202 WorkSheet.cc:324
 msgid "&Multimeter"
 msgstr "&Multimeter"
 
@@ -68,11 +68,11 @@ msgstr "&BarGraph"
 msgid "S&ensorLogger"
 msgstr "Trình log Cảm &Biến"
 
-#: KSysGuardApplet.cc:243 WorkSheet.cc:457
+#: KSysGuardApplet.cc:252 WorkSheet.cc:457
 msgid "Do you really want to delete the display?"
 msgstr "Bạn có muốn xoá các hiển thị ?"
 
-#: KSysGuardApplet.cc:243 WorkSheet.cc:458
+#: KSysGuardApplet.cc:252 WorkSheet.cc:458
 #, fuzzy
 msgid "Delete Display"
 msgstr "Chọn kiểu hiển thị"
@@ -99,8 +99,9 @@ msgstr "Dùng khoảng cập nhật cho worksheet"
 msgid "Update interval:"
 msgstr "Khoảng cập nhật "
 
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 68
 #: KSGAppletSettings.cc:67 WorkSheetSettings.cc:91 ksgrd/TimerSettings.cc:51
-#: rc.cpp:14
+#: rc.cpp:21
 #, no-c-format
 msgid " sec"
 msgstr ""
@@ -218,13 +219,15 @@ msgstr "Màu tiền cảnh &1"
 msgid "Second foreground color:"
 msgstr "Màu tiền cảnh &1"
 
-#: ksgrd/StyleSettings.cc:61 rc.cpp:84
+#. i18n: file ./SensorDisplayLib/SensorLoggerSettingsWidget.ui line 107
+#: ksgrd/StyleSettings.cc:61 rc.cpp:132
 #, fuzzy, no-c-format
 msgid "Alarm color:"
 msgstr "Màu a&larm"
 
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 241
 #: SensorDisplayLib/DancingBarsSettings.cc:143 SensorDisplayLib/LogFile.cc:90
-#: ksgrd/StyleSettings.cc:68 rc.cpp:62 rc.cpp:74 rc.cpp:82
+#: ksgrd/StyleSettings.cc:68 rc.cpp:96 rc.cpp:114 rc.cpp:129
 #, fuzzy, no-c-format
 msgid "Background color:"
 msgstr "Màu nền"
@@ -239,7 +242,7 @@ msgstr "Cỡ &font"
 msgid "Sensor Colors"
 msgstr "Màu cảm biến"
 
-#: ksgrd/ColorPicker.cc:50 ksgrd/StyleSettings.cc:91
+#: ksgrd/StyleSettings.cc:91
 #, fuzzy
 msgid "Change Color..."
 msgstr "Sửa màu"
@@ -258,7 +261,7 @@ msgstr "Tải người dùng"
 msgid "Idle Load"
 msgstr "Idle Load"
 
-#: Workspace.cc:96 Workspace.cc:105 ksgrd/SensorManager.cc:52 ksysguard.cc:153
+#: Workspace.cc:96 Workspace.cc:105 ksgrd/SensorManager.cc:52 ksysguard.cc:155
 msgid "System Load"
 msgstr "Tải hệ thống"
 
@@ -306,7 +309,7 @@ msgstr "Bộ nhớ trống"
 msgid "Process Count"
 msgstr "Đếm tiến trình"
 
-#: ksgrd/SensorManager.cc:64 ksgrd/SensorManager.cc:143
+#: ksgrd/SensorManager.cc:64 ksgrd/SensorManager.cc:144
 msgid "Process Controller"
 msgstr "Quản lí tiến trình"
 
@@ -416,7 +419,7 @@ msgstr "Sockets"
 msgid "Total Number"
 msgstr "Tổng số"
 
-#: ksgrd/SensorManager.cc:91 ksgrd/SensorManager.cc:144
+#: ksgrd/SensorManager.cc:91 ksgrd/SensorManager.cc:145
 msgid "Table"
 msgstr "Bảng"
 
@@ -438,109 +441,114 @@ msgid "Battery Charge"
 msgstr "Nạp pin"
 
 #: ksgrd/SensorManager.cc:96
+#, fuzzy
+msgid "Battery Usage"
+msgstr "Nạp pin"
+
+#: ksgrd/SensorManager.cc:97
 msgid "Remaining Time"
 msgstr "Thời gian còn lại"
 
-#: ksgrd/SensorManager.cc:97
+#: ksgrd/SensorManager.cc:98
 msgid "Interrupts"
 msgstr "Ngắt"
 
-#: ksgrd/SensorManager.cc:98
+#: ksgrd/SensorManager.cc:99
 msgid "Load Average (1 min)"
 msgstr "Tải trung bình ( 1 phút)"
 
-#: ksgrd/SensorManager.cc:99
+#: ksgrd/SensorManager.cc:100
 msgid "Load Average (5 min)"
 msgstr "Tải trung bình ( 5 phút)"
 
-#: ksgrd/SensorManager.cc:100
+#: ksgrd/SensorManager.cc:101
 msgid "Load Average (15 min)"
 msgstr "Tải trung bình ( 15 phút)"
 
-#: ksgrd/SensorManager.cc:101
+#: ksgrd/SensorManager.cc:102
 msgid "Clock Frequency"
 msgstr "Tần số khoá"
 
-#: ksgrd/SensorManager.cc:102
+#: ksgrd/SensorManager.cc:103
 msgid "Hardware Sensors"
 msgstr "Cảm biến phần cứng"
 
-#: ksgrd/SensorManager.cc:103
+#: ksgrd/SensorManager.cc:104
 msgid "Partition Usage"
 msgstr "Cách dùng phân vùng"
 
-#: ksgrd/SensorManager.cc:104
+#: ksgrd/SensorManager.cc:105
 msgid "Used Space"
 msgstr "Không gian đã dùng"
 
-#: ksgrd/SensorManager.cc:105
+#: ksgrd/SensorManager.cc:106
 msgid "Free Space"
 msgstr "Không gian trống"
 
-#: ksgrd/SensorManager.cc:106
+#: ksgrd/SensorManager.cc:107
 msgid "Fill Level"
 msgstr "Mức fill"
 
-#: ksgrd/SensorManager.cc:110
+#: ksgrd/SensorManager.cc:111
 #, c-format
 msgid "CPU%1"
 msgstr "CPU%1"
 
-#: ksgrd/SensorManager.cc:112
+#: ksgrd/SensorManager.cc:113
 #, c-format
 msgid "Disk%1"
 msgstr "đĩa %1"
 
-#: ksgrd/SensorManager.cc:117
+#: ksgrd/SensorManager.cc:118
 #, c-format
 msgid "Fan%1"
 msgstr "Quạt %1"
 
-#: ksgrd/SensorManager.cc:119
+#: ksgrd/SensorManager.cc:120
 #, c-format
 msgid "Temperature%1"
 msgstr "Nhiệt độ %1"
 
-#: ksgrd/SensorManager.cc:122
+#: ksgrd/SensorManager.cc:123
 msgid "Total"
 msgstr "Tổng"
 
-#: ksgrd/SensorManager.cc:128
+#: ksgrd/SensorManager.cc:129
 #, c-format
 msgid "Int%1"
 msgstr "Int%1"
 
-#: ksgrd/SensorManager.cc:135
+#: ksgrd/SensorManager.cc:136
 msgid ""
 "_: the unit 1 per second\n"
 "1/s"
 msgstr "1/s"
 
-#: ksgrd/SensorManager.cc:136
+#: ksgrd/SensorManager.cc:137
 msgid "kBytes"
 msgstr "kBytes"
 
-#: ksgrd/SensorManager.cc:137
+#: ksgrd/SensorManager.cc:138
 msgid ""
 "_: the unit minutes\n"
 "min"
 msgstr "phút"
 
-#: ksgrd/SensorManager.cc:138
+#: ksgrd/SensorManager.cc:139
 msgid ""
 "_: the frequency unit\n"
 "MHz"
 msgstr "MHz"
 
-#: ksgrd/SensorManager.cc:141
+#: ksgrd/SensorManager.cc:142
 msgid "Integer Value"
 msgstr "Giá trị nguyên"
 
-#: ksgrd/SensorManager.cc:142
+#: ksgrd/SensorManager.cc:143
 msgid "Floating Point Value"
 msgstr "Giá trị floating point"
 
-#: ksgrd/SensorManager.cc:279
+#: ksgrd/SensorManager.cc:280
 #, fuzzy
 msgid "Connection to %1 has been lost."
 msgstr "Kết nối tới %1 bị mất !"
@@ -580,7 +588,7 @@ msgstr ""
 "sheet của bạn .Bạn cần tạo một work sheet mới ( Thực đơn "
 "file -> Mới) trước khi bạn kéocác cảm biến vào đây ."
 
-#: Workspace.cc:101 ksysguard.cc:158
+#: Workspace.cc:101 ksysguard.cc:160
 msgid "Process Table"
 msgstr "Bảng tiến trình"
 
@@ -835,14 +843,16 @@ msgstr "Sửa tham khảo biểu đồ"
 msgid "Range"
 msgstr "Khoảng"
 
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 25
 #: SensorDisplayLib/DancingBarsSettings.cc:50 WorkSheetSettings.cc:48
-#: rc.cpp:32 rc.cpp:66 rc.cpp:76 rc.cpp:90
+#: rc.cpp:48 rc.cpp:102 rc.cpp:120 rc.cpp:144
 #, no-c-format
 msgid "Title"
 msgstr "Đầu đề"
 
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 36
 #: SensorDisplayLib/DancingBarsSettings.cc:54
-#: SensorDisplayLib/FancyPlotterSettings.cc:63 rc.cpp:34
+#: SensorDisplayLib/FancyPlotterSettings.cc:63 rc.cpp:51
 #, no-c-format
 msgid "Enter the title of the display here."
 msgstr "Nhập đầu đề của màn hình vào đây ."
@@ -881,12 +891,14 @@ msgstr ""
 "Nhập giá trị cực đại của màn hình vào đây . Nếu cả hai "
 "giá trịlà 0, sẽ tự động dò .Nhập gia"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:84 rc.cpp:40
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 61
+#: SensorDisplayLib/DancingBarsSettings.cc:84 rc.cpp:60
 #, no-c-format
 msgid "Alarms"
 msgstr "Chuông"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:87 rc.cpp:16 rc.cpp:50
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 78
+#: SensorDisplayLib/DancingBarsSettings.cc:87 rc.cpp:24 rc.cpp:75
 #, fuzzy, no-c-format
 msgid "Alarm for Minimum Value"
 msgstr "Chuông cho giá trị cực tiểu"
@@ -897,27 +909,32 @@ msgstr "Chuông cho giá trị cực tiểu"
 msgid "Enable alarm"
 msgstr "&Cho phép chuông"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:92 rc.cpp:20 rc.cpp:54
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 92
+#: SensorDisplayLib/DancingBarsSettings.cc:92 rc.cpp:30 rc.cpp:81
 #, no-c-format
 msgid "Enable the minimum value alarm."
 msgstr "Cho phép giá trị cực tiểu chuông."
 
-#: SensorDisplayLib/DancingBarsSettings.cc:95 rc.cpp:22 rc.cpp:56
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 120
+#: SensorDisplayLib/DancingBarsSettings.cc:95 rc.cpp:33 rc.cpp:84
 #, fuzzy, no-c-format
 msgid "Lower limit:"
 msgstr "Cận dưới"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:105 rc.cpp:24 rc.cpp:42
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 144
+#: SensorDisplayLib/DancingBarsSettings.cc:105 rc.cpp:36 rc.cpp:63
 #, fuzzy, no-c-format
 msgid "Alarm for Maximum Value"
 msgstr "Chuông cho giá trị lớn nhất"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:110 rc.cpp:28 rc.cpp:46
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 158
+#: SensorDisplayLib/DancingBarsSettings.cc:110 rc.cpp:42 rc.cpp:69
 #, no-c-format
 msgid "Enable the maximum value alarm."
 msgstr "Cho phép giá trị chuông lớn nhất"
 
-#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:30 rc.cpp:48
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 186
+#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:45 rc.cpp:72
 #, fuzzy, no-c-format
 msgid "Upper limit:"
 msgstr "Cận trên"
@@ -1108,7 +1125,8 @@ msgstr "Đếm"
 msgid "Enter the number of horizontal lines here."
 msgstr "Nhập số các đường ngang ."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:167 rc.cpp:88
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 35
+#: SensorDisplayLib/FancyPlotterSettings.cc:167 rc.cpp:141
 #, no-c-format
 msgid "Text"
 msgstr "Text"
@@ -1139,8 +1157,9 @@ msgstr ""
 "này có thể rất hũư ích khi hiển thị applet . Thanh này sẽ "
 "chỉ nhìnthấy khi display quá lớn ."
 
-#: SensorDisplayLib/FancyPlotterSettings.cc:192 rc.cpp:58 rc.cpp:68 rc.cpp:78
-#: rc.cpp:92
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 206
+#: SensorDisplayLib/FancyPlotterSettings.cc:192 rc.cpp:87 rc.cpp:105
+#: rc.cpp:123 rc.cpp:147
 #, no-c-format
 msgid "Colors"
 msgstr "Màu"
@@ -1185,15 +1204,15 @@ msgstr "Lên &trên"
 msgid "Move Down"
 msgstr "Xuống &dưới"
 
-#: SensorDisplayLib/SensorLogger.cc:153 SensorDisplayLib/SensorLoggerDlg.cc:28
+#: SensorDisplayLib/SensorLogger.cc:152 SensorDisplayLib/SensorLoggerDlg.cc:28
 msgid "Sensor Logger"
 msgstr "Trình log cảm biến"
 
-#: SensorDisplayLib/SensorDisplay.cc:154 SensorDisplayLib/SensorLogger.cc:382
+#: SensorDisplayLib/SensorDisplay.cc:154 SensorDisplayLib/SensorLogger.cc:381
 msgid "&Properties"
 msgstr "&Tính chất"
 
-#: SensorDisplayLib/SensorDisplay.cc:155 SensorDisplayLib/SensorLogger.cc:383
+#: SensorDisplayLib/SensorDisplay.cc:155 SensorDisplayLib/SensorLogger.cc:382
 msgid "&Remove Display"
 msgstr "&Gỡ bỏ hiển thị"
 
@@ -1225,44 +1244,45 @@ msgstr ""
 "thịvà chọn <i> Tính chất </i>từ thực đơn popup . Chọn <i> "
 "Gỡ bỏ </i>để xoá hiển thị từ worksheet </p>%1</qt>"
 
-#: SensorDisplayLib/SensorLogger.cc:138
+#: SensorDisplayLib/SensorLogger.cc:137
 msgid "Logging"
 msgstr "Đăng nhập "
 
-#: SensorDisplayLib/SensorLogger.cc:139 rc.cpp:12
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 48
+#: SensorDisplayLib/SensorLogger.cc:138 rc.cpp:18
 #, no-c-format
 msgid "Timer Interval"
 msgstr "Khoảng thời gian"
 
-#: SensorDisplayLib/SensorLogger.cc:140
+#: SensorDisplayLib/SensorLogger.cc:139
 #, fuzzy
 msgid "Sensor Name"
 msgstr "Tên cảm biến"
 
-#: SensorDisplayLib/SensorLogger.cc:141
+#: SensorDisplayLib/SensorLogger.cc:140
 #, fuzzy
 msgid "Host Name"
 msgstr "Tên Host"
 
-#: SensorDisplayLib/SensorLogger.cc:142
+#: SensorDisplayLib/SensorLogger.cc:141
 #, fuzzy
 msgid "Log File"
 msgstr "File nhật kí"
 
-#: SensorDisplayLib/SensorLogger.cc:385
+#: SensorDisplayLib/SensorLogger.cc:384
 msgid "&Remove Sensor"
 msgstr "&Gỡ bỏ cảm biến"
 
-#: SensorDisplayLib/SensorLogger.cc:386
+#: SensorDisplayLib/SensorLogger.cc:385
 #, fuzzy
 msgid "&Edit Sensor..."
 msgstr "&Sửa cảm biến"
 
-#: SensorDisplayLib/SensorLogger.cc:398
+#: SensorDisplayLib/SensorLogger.cc:397
 msgid "St&op Logging"
 msgstr "&Dừng cảm biến"
 
-#: SensorDisplayLib/SensorLogger.cc:400
+#: SensorDisplayLib/SensorLogger.cc:399
 msgid "S&tart Logging"
 msgstr "&Bắt đầu cảm biến"
 
@@ -1458,67 +1478,92 @@ msgstr "Không đủ quyền để renice tiến trình %1 !"
 msgid "Invalid argument."
 msgstr "Đối số sai !"
 
-#: rc.cpp:18 rc.cpp:52
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 89
+#: rc.cpp:27 rc.cpp:78
 #, fuzzy, no-c-format
 msgid "&Enable alarm"
 msgstr "&Cho phép chuông"
 
-#: rc.cpp:26 rc.cpp:44
+#. i18n: file ./SensorDisplayLib/SensorLoggerDlgWidget.ui line 155
+#: rc.cpp:39 rc.cpp:66
 #, fuzzy, no-c-format
 msgid "E&nable alarm"
 msgstr "&Cho phép chuông"
 
-#: rc.cpp:36
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 44
+#: rc.cpp:54
 #, fuzzy, no-c-format
 msgid "&Show unit"
 msgstr "&Hiện đơn vị"
 
-#: rc.cpp:38
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 47
+#: rc.cpp:57
 #, no-c-format
 msgid "Enable this to append the unit to the title of the display."
 msgstr "Cho phép cái này để thêm đơn vị vào đầu đề của display ."
 
-#: rc.cpp:60
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 225
+#: rc.cpp:90
 #, fuzzy, no-c-format
 msgid "Normal digit color:"
 msgstr "Màu số bình thường"
 
-#: rc.cpp:64
+#. i18n: file ./SensorDisplayLib/MultiMeterSettingsWidget.ui line 233
+#: rc.cpp:93
 #, fuzzy, no-c-format
 msgid "Alarm digit color:"
 msgstr "Màu số alarm"
 
-#: rc.cpp:70 rc.cpp:80
+#. i18n: file ./SensorDisplayLib/ListViewSettingsWidget.ui line 82
+#: rc.cpp:108 rc.cpp:126
 #, fuzzy, no-c-format
 msgid "Text color:"
 msgstr "Màu text"
 
-#: rc.cpp:72
+#. i18n: file ./SensorDisplayLib/ListViewSettingsWidget.ui line 90
+#: rc.cpp:111
 #, fuzzy, no-c-format
 msgid "Grid color:"
 msgstr "Màu đường kẻ"
 
-#: rc.cpp:86
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 17
+#: rc.cpp:138
 #, no-c-format
 msgid "Log File Settings"
 msgstr "Thiết lập file log"
 
-#: rc.cpp:96
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 94
+#: rc.cpp:150
+#, fuzzy, no-c-format
+msgid "Foreground Color:"
+msgstr "Màu tiền cảnh "
+
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 102
+#: rc.cpp:153
+#, fuzzy, no-c-format
+msgid "Background Color:"
+msgstr "Màu nền"
+
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 187
+#: rc.cpp:161
 #, fuzzy, no-c-format
 msgid "Select Font..."
 msgstr "&Kết nối host ..."
 
-#: rc.cpp:98
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 199
+#: rc.cpp:164
 #, no-c-format
 msgid "Filter"
 msgstr "Bộ lọc"
 
-#: rc.cpp:100
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 238
+#: rc.cpp:167
 #, no-c-format
 msgid "&Add"
 msgstr "&Thêm"
 
-#: rc.cpp:104
+#. i18n: file ./SensorDisplayLib/LogFileSettings.ui line 254
+#: rc.cpp:173
 #, no-c-format
 msgid "&Change"
 msgstr "&Thay đổi"
@@ -1551,11 +1596,11 @@ msgstr "Nhập số các cột mà sheet cần có ."
 msgid "Enter the title of the worksheet here."
 msgstr "Nhập đầu đề của work sheet ."
 
-#: KSysGuardApplet.cc:197
+#: KSysGuardApplet.cc:203
 msgid "&Dancing Bars"
 msgstr "&Dancing Bars"
 
-#: KSysGuardApplet.cc:224 KSysGuardApplet.cc:377
+#: KSysGuardApplet.cc:233 KSysGuardApplet.cc:386
 msgid ""
 "The KSysGuard applet does not support displaying of this type of sensor. "
 "Please choose another sensor."
@@ -1563,7 +1608,7 @@ msgstr ""
 "KSysGuard applet không hỗ trợ hiển thị loại cảm biến này "
 ".Xin chọn loại cảm biến khác ."
 
-#: KSysGuardApplet.cc:320
+#: KSysGuardApplet.cc:329
 msgid ""
 "The file %1 does not contain a valid applet definition, which must have a "
 "document type 'KSysGuardApplet'."
@@ -1571,7 +1616,7 @@ msgstr ""
 "File %1 không chứa các định nghĩa applet hợp lệ kiểu KSysGuard "
 "."
 
-#: KSysGuardApplet.cc:465
+#: KSysGuardApplet.cc:477
 msgid "Drag sensors from the KDE System Guard into this cell."
 msgstr "Kéo cảm biến từ KDE System Guard vào ngăn này ."
 
@@ -1583,12 +1628,12 @@ msgstr "Trình duyệt cảm biến"
 msgid "Sensor Type"
 msgstr "Kiểu cảm biến"
 
-#: SensorBrowser.cc:79
+#: SensorBrowser.cc:81
 #, fuzzy
 msgid "Drag sensors to empty cells of a worksheet or the panel applet."
 msgstr "Kéo cảm biến tới ngăn rỗng của work sheet hay panel applet ."
 
-#: SensorBrowser.cc:88
+#: SensorBrowser.cc:90
 #, fuzzy
 msgid ""
 "The sensor browser lists the connected hosts and the sensors that they "
@@ -1605,7 +1650,7 @@ msgstr ""
 "cảm biến .Đơn giản chỉ cần kéo các cảm biến khác vào "
 "display và thêm nhiều cảm biến ."
 
-#: SensorBrowser.cc:149
+#: SensorBrowser.cc:151
 #, fuzzy
 msgid "Drag sensors to empty fields in a worksheet."
 msgstr "Kéo cảm biến tới trường trong một work sheet "
@@ -1615,7 +1660,7 @@ msgstr "Kéo cảm biến tới trường trong một work sheet "
 msgid "KDE system guard"
 msgstr "KDE System Guard"
 
-#: ksysguard.cc:71 ksysguard.cc:527
+#: ksysguard.cc:71 ksysguard.cc:531
 msgid "KDE System Guard"
 msgstr "KDE System Guard"
 
@@ -1646,51 +1691,59 @@ msgstr "&Ngắt kết nối từ hót"
 msgid "&Worksheet Properties"
 msgstr "Tính chất Work Sheet"
 
-#: ksysguard.cc:124
+#: ksysguard.cc:122
+msgid "Load Standard Sheets"
+msgstr ""
+
+#: ksysguard.cc:126
 msgid "Configure &Style..."
 msgstr "Cấu hình &kiểu ..."
 
-#: ksysguard.cc:139
+#: ksysguard.cc:141
 #, fuzzy
 msgid "Do you really want to restore the default worksheets?"
 msgstr "Bạn có muốn xoá các hiển thị ?"
 
-#: ksysguard.cc:140
+#: ksysguard.cc:142
 #, fuzzy
 msgid "Reset All Worksheets"
 msgstr "Chọn work sheet để tải"
 
-#: ksysguard.cc:422
+#: ksysguard.cc:411
 #, c-format
 msgid ""
 "_n: 1 Process\n"
 "%n Processes"
 msgstr ""
 
-#: ksysguard.cc:432
+#: ksysguard.cc:421
 msgid "Memory: %1 %2 used, %3 %4 free"
 msgstr "Memory: %1 %2 đã dùng, %3 %4 trống"
 
-#: ksysguard.cc:440
+#: ksysguard.cc:479
+msgid "No swap space available"
+msgstr ""
+
+#: ksysguard.cc:481
 msgid "Swap: %1 %2 used, %3 %4 free"
 msgstr "Swap: %1 %2 đã dùng, %3 %4 trống"
 
-#: ksysguard.cc:486
+#: ksysguard.cc:490
 msgid "Show only process list of local host"
 msgstr "HIển thị chỉ các tiến trình liệt kê trên local host "
 
-#: ksysguard.cc:487
+#: ksysguard.cc:491
 msgid "Optional worksheet files to load"
 msgstr "file work sheet phụ sẽ tải"
 
-#: ksysguard.cc:529
+#: ksysguard.cc:533
 #, fuzzy
 msgid "(c) 1996-2002 The KSysGuard Developers"
 msgstr ""
 "(c) 1996, 1997, 1998, 1999, 2000, 2001, 2002\n"
 "The KSysGuard Developers"
 
-#: ksysguard.cc:537
+#: ksysguard.cc:541
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1801,12 +1854,6 @@ msgstr ""
 #~ msgid "Ok"
 #~ msgstr "Ok"
 
-#~ msgid "Foreground Color"
-#~ msgstr "Màu tiền cảnh "
-
-#~ msgid "Background Color"
-#~ msgstr "Màu nền"
-
 #~ msgid "Alarm Color"
 #~ msgstr "Màu alarm"
 
@@ -1823,16 +1870,8 @@ msgstr ""
 #~ msgid "Enter here the number of displays you want to embed into the panel."
 #~ msgstr "Nhập vào đây số các hiển thị bạn muốn embed trong khung ."
 
-#~ msgid ""
-#~ "This setting controls the width/height ratio for horizontal panels and "
-#~ "the height/width ratio for vertical panels (e.g. To have the displays in "
-#~ "a horizontal panel twice as wide as their height enter 200%. To have them "
-#~ "half as wide enter 50%)."
-#~ msgstr ""
-#~ "Thiết lập này điều khiển tỉ lệ chiều cao / chiều rộng khung và tỉ lệ "
-#~ "chiều cao / chiều rộng cho khung thẳng đứng ( .e . g Để cóhiển thị trong "
-#~ "khung thẳng đứng bằng 2 lấn rộng so với chiều cao của nó,nhập 200% . Để "
-#~ "nó bằ ng một nửa , nhập 50% )"
+#~ msgid "This setting controls the width/height ratio for horizontal panels and the height/width ratio for vertical panels (e.g. To have the displays in a horizontal panel twice as wide as their height enter 200%. To have them half as wide enter 50%)."
+#~ msgstr "Thiết lập này điều khiển tỉ lệ chiều cao / chiều rộng khung và tỉ lệ chiều cao / chiều rộng cho khung thẳng đứng ( .e . g Để cóhiển thị trong khung thẳng đứng bằng 2 lấn rộng so với chiều cao của nó,nhập 200% . Để nó bằ ng một nửa , nhập 50% )"
 
 #~ msgid "Update Interval [seconds]"
 #~ msgstr "Cập nhật khoảng [giây]"

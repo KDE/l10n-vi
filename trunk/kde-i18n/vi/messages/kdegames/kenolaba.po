@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kenobala.pot\n"
-"POT-Creation-Date: 2002-08-15 03:03+0200\n"
+"POT-Creation-Date: 2003-11-25 01:29+0100\n"
 "PO-Revision-Date: 2002-09-01 08:57+0700\n"
 "Last-Translator: Nguyễn Ngọc Tuấn <scorpionfirevn@operamail.com>\n"
 "Language-Team: Vietnamese <KDE-i18n-VN@yahoogroups.com>\n"
@@ -14,171 +14,139 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: rc.cpp:4
-msgid "&Level"
-msgstr "&Vòng"
+#: AbTop.cpp:38
+msgid "&Easy"
+msgstr "&Dễ"
 
-#: rc.cpp:5
-msgid "&Computer Plays"
+#: AbTop.cpp:39
+msgid "&Normal"
+msgstr "&Bình thường"
+
+#: AbTop.cpp:40
+msgid "&Hard"
+msgstr "&Khó"
+
+#: AbTop.cpp:41
+msgid "&Challenge"
+msgstr "&Thách thức"
+
+#: AbTop.cpp:45
+msgid "&Red"
+msgstr "Đỏ &D"
+
+#: AbTop.cpp:46
+msgid "&Yellow"
+msgstr "&Vàng"
+
+#: AbTop.cpp:47
+msgid "&Both"
+msgstr "&Cả hai"
+
+#: AbTop.cpp:48
+msgid "&None"
+msgstr "&Không"
+
+#: AbTop.cpp:141
+msgid "&Stop Search"
+msgstr "&Dừng tìm kiếm"
+
+#: AbTop.cpp:144
+msgid "Take &Back"
+msgstr "&Lui"
+
+#: AbTop.cpp:148
+msgid "&Forward"
+msgstr "&Tiếp tục"
+
+#: AbTop.cpp:157
+msgid "&Restore Position"
+msgstr "Trả lại &vị trí cũ"
+
+#: AbTop.cpp:162
+msgid "&Save Position"
+msgstr "Lưu vị t&rí"
+
+#: AbTop.cpp:169
+msgid "&Network Play"
+msgstr "Chơi trên &mạng"
+
+#: AbTop.cpp:186
+msgid "&Move Slow"
+msgstr "&Di chuyển chậm"
+
+#: AbTop.cpp:190
+msgid "&Render Balls"
+msgstr ""
+
+#: AbTop.cpp:194
+msgid "&Spy"
+msgstr "&Theo dõi"
+
+#: AbTop.cpp:206
+#, fuzzy
+msgid "&Computer Play"
 msgstr "&Máy chơi"
 
-#: AbTop.cpp:267 rc.cpp:8
+#: AbTop.cpp:225 rc.cpp:7
 #, fuzzy
 msgid "Configure Evaluation"
 msgstr "Xác lập hệ số ước lượng..."
 
-#: rc.cpp:9
-msgid "Moves"
-msgstr "Chuyển"
+#: AbTop.cpp:416 AbTop.cpp:519
+msgid "Press %1 for a new game"
+msgstr "Nhấn %1 để chơi"
 
-#: rc.cpp:10
-msgid "Push Out"
-msgstr "Đẩy ra ngoài"
+#: AbTop.cpp:440 AbTop.cpp:499 AbTop.cpp:503
+#, c-format
+msgid "Move %1"
+msgstr "Nước %1"
 
-#: Move.cpp:85 rc.cpp:11
-msgid "Push"
-msgstr "Đẩy"
+#: AbTop.cpp:459 Spy.cpp:79
+msgid "Spy"
+msgstr "Theo dõi"
 
-#: rc.cpp:12
-msgid "Normal"
-msgstr "Bình thường"
+#: AbTop.cpp:512 AbTop.cpp:531
+msgid "Red"
+msgstr "Đỏ"
 
-#: rc.cpp:13
-msgid "For every move possible the given points are added to the Evaluation."
-msgstr ""
-"Với mỗi nước có khả năng đi điểm số sẽ được thêm "
-"vào hệ số ước lượng."
+#: AbTop.cpp:513 AbTop.cpp:531
+msgid "Yellow"
+msgstr "Vàng"
 
-#: rc.cpp:14
-msgid "Position"
-msgstr "Vị trí"
+#: AbTop.cpp:524
+msgid "Red won"
+msgstr "Đỏ thắng"
 
-#: rc.cpp:15
+#: AbTop.cpp:524
+msgid "Yellow won"
+msgstr "Vàng thắng"
+
+#: AbTop.cpp:533
+msgid "I am thinking..."
+msgstr "Tui đang suy nghĩ..."
+
+#: AbTop.cpp:533
+msgid "It's your turn!"
+msgstr "Đến lượt bạn!"
+
+#: BoardWidget.cpp:892 BoardWidget.cpp:933 BoardWidget.cpp:964
+#, c-format
+msgid "Board value: %1"
+msgstr "Bảng điểm: %1"
+
+#: EvalDlgImpl.cpp:36
+msgid "Current"
+msgstr "Hiện tại"
+
+#: EvalDlgImpl.cpp:249
 #, fuzzy
-msgid "Inner ring 3:"
-msgstr "Bên trong vòng 3"
+msgid "Name for scheme:"
+msgstr "Tên của bảng hệ số"
 
-#: rc.cpp:16
+#: EvalDlgImpl.cpp:250
 #, fuzzy
-msgid "Outermost ring:"
-msgstr "Bên ngoài hầu hết các vòng"
-
-#: rc.cpp:17
-#, fuzzy
-msgid "Middle position:"
-msgstr "Vị trí giữa"
-
-#: rc.cpp:18
-#, fuzzy
-msgid "Inner ring 2:"
-msgstr "Bên trong vòng 2"
-
-#: rc.cpp:19 rc.cpp:20 rc.cpp:21 rc.cpp:23
-msgid "+/-"
-msgstr "+/-"
-
-#: rc.cpp:22
-#, fuzzy
-msgid "Innermost ring:"
-msgstr "Bên trong hầu hết các vòng"
-
-#: rc.cpp:24
-msgid ""
-"For every ball, the given points are added to the evaluation depending on "
-"the balls position. The bonus for a given position is changed randomly in "
-"the +/- range."
-msgstr ""
-"Với mỗi trái banh, điểm được thêm vào hệ số ước "
-"lượng dựa trên vị trí của những trái banh. Điểm thưởng "
-"cho mỗi vị trí đã cho thì thay đổi ngẫu nhiên theo khoảng "
-"+/-."
-
-#: rc.cpp:25
-msgid "In-A-Row"
-msgstr "Trên cùng hàng"
-
-#: rc.cpp:26
-#, fuzzy
-msgid "Three in-a-row:"
-msgstr "Cả ba đều cùng hàng"
-
-#: rc.cpp:27
-#, fuzzy
-msgid "Two in-a-row:"
-msgstr "Cả hai cùng hàng "
-
-#: rc.cpp:28
-#, fuzzy
-msgid "Four in-a-row:"
-msgstr "Cả bốn đều cùng hàng"
-
-#: rc.cpp:29
-#, fuzzy
-msgid "Five in-a-row:"
-msgstr "Cả năm đều cùng hàng"
-
-#: rc.cpp:30
-msgid "For a number of balls In-a-Row, the given points are added to the evaluation"
-msgstr ""
-"Với số banh cùng hàng, điểm được cho sẽ được cộng vào "
-"hệ số ước lượng"
-
-#: rc.cpp:31
-msgid "Count"
-msgstr "Đếm"
-
-#: rc.cpp:32
-#, fuzzy
-msgid "4 Balls more:"
-msgstr "Hơn 4 banh"
-
-#: rc.cpp:33
-#, fuzzy
-msgid "3 Balls more:"
-msgstr "Hơn 3 banh"
-
-#: rc.cpp:34
-#, fuzzy
-msgid "5 Balls more:"
-msgstr "Hơn 5 banh"
-
-#: rc.cpp:35
-#, fuzzy
-msgid "2 Balls more:"
-msgstr "Hơn 2 banh"
-
-#: rc.cpp:36
-#, fuzzy
-msgid "1 Ball more:"
-msgstr "Hơn 1 banh"
-
-#: rc.cpp:37
-msgid ""
-"For a difference in the number of balls, the given points are added to the "
-"evaluation. A difference of 6 only can be a lost/won game."
-msgstr ""
-"Điểm được cho sẽ được cộng vào hệ số ước lượng cho "
-"số banh khác nhau. Sự chênh lệch 6 trái banh chỉ có thể là "
-"thắng hay thua."
-
-#: rc.cpp:38
-msgid "Evaluation Schemes"
-msgstr "Bảng các hệ số ước lượng"
-
-#: rc.cpp:41
-#, fuzzy
-msgid ""
-"Your evaluation scheme, defined in all other tabs of this dialog, can be "
-"stored here."
-msgstr ""
-"Đây là bảng hệ số ước lượng của bạn, mà nó được "
-"xác định trong tất cả thẻ khác của hộp thoại này, có "
-"thể lưu trữ được."
-
-#: rc.cpp:42
-#, fuzzy
-msgid "Evaluation of actual position:"
-msgstr "Hệ số ước lượng hiện tại:"
+msgid "Save Scheme"
+msgstr "Lưu bảng hệ số như..."
 
 #: Move.cpp:22
 msgid "RightDown"
@@ -200,135 +168,9 @@ msgstr "Lên phải"
 msgid "Out"
 msgstr "Ngoài"
 
-#: BoardWidget.cpp:892 BoardWidget.cpp:933 BoardWidget.cpp:964
-#, c-format
-msgid "Board value: %1"
-msgstr "Bảng điểm: %1"
-
-#: AbTop.cpp:128
-msgid "&Stop Search"
-msgstr "&Dừng tìm kiếm"
-
-#: AbTop.cpp:131
-msgid "Take &Back"
-msgstr "&Lui"
-
-#: AbTop.cpp:135
-msgid "&Forward"
-msgstr "&Tiếp tục"
-
-#: AbTop.cpp:139
-msgid "&Hint"
-msgstr "&Hướng dẫn"
-
-#: AbTop.cpp:145
-msgid "&Restore Position"
-msgstr "Trả lại &vị trí cũ"
-
-#: AbTop.cpp:150
-msgid "&Save Position"
-msgstr "Lưu vị t&rí"
-
-#: AbTop.cpp:157
-msgid "&Network Play"
-msgstr "Chơi trên &mạng"
-
-#: AbTop.cpp:175
-msgid "&Move Slow"
-msgstr "&Di chuyển chậm"
-
-#: AbTop.cpp:179
-msgid "&Render Balls"
-msgstr ""
-
-#: AbTop.cpp:183
-msgid "&Spy"
-msgstr "&Theo dõi"
-
-#: AbTop.cpp:190
-msgid "&Easy"
-msgstr "&Dễ"
-
-#: AbTop.cpp:196
-msgid "&Normal"
-msgstr "&Bình thường"
-
-#: AbTop.cpp:202
-msgid "&Hard"
-msgstr "&Khó"
-
-#: AbTop.cpp:208
-msgid "&Challenge"
-msgstr "&Thách thức"
-
-#: AbTop.cpp:214
-msgid "&Red"
-msgstr "Đỏ &D"
-
-#: AbTop.cpp:220
-msgid "&Yellow"
-msgstr "&Vàng"
-
-#: AbTop.cpp:226
-msgid "&Both"
-msgstr "&Cả hai"
-
-#: AbTop.cpp:232
-msgid "&None"
-msgstr "&Không"
-
-#: AbTop.cpp:566 AbTop.cpp:670
-msgid "Press %1 for a new game"
-msgstr "Nhấn %1 để chơi"
-
-#: AbTop.cpp:591 AbTop.cpp:650 AbTop.cpp:654
-#, c-format
-msgid "Move %1"
-msgstr "Nước %1"
-
-#: AbTop.cpp:610 Spy.cpp:79
-msgid "Spy"
-msgstr "Theo dõi"
-
-#: AbTop.cpp:663 AbTop.cpp:683
-msgid "Red"
-msgstr "Đỏ"
-
-#: AbTop.cpp:664 AbTop.cpp:683
-msgid "Yellow"
-msgstr "Vàng"
-
-#: AbTop.cpp:676
-msgid "Red won"
-msgstr "Đỏ thắng"
-
-#: AbTop.cpp:676
-msgid "Yellow won"
-msgstr "Vàng thắng"
-
-#: AbTop.cpp:685
-msgid "I am thinking..."
-msgstr "Tui đang suy nghĩ..."
-
-#: AbTop.cpp:685
-msgid "It's your turn!"
-msgstr "Đến lượt bạn!"
-
-#: kenolaba.cpp:17
-msgid "Board Game inspired by Abalone"
-msgstr "Ý tưởng chính của trò chơi là của Abalone"
-
-#: kenolaba.cpp:22
-msgid "Use 'host' for network game"
-msgstr "Sử dụng 'host' để chơi mạng"
-
-#: kenolaba.cpp:24
-msgid "Use 'port' for network game"
-msgstr "Chọn cổng để chơi mạng"
-
-#: kenolaba.cpp:30
-msgid "Kenolaba"
-msgstr ""
+#: Move.cpp:85 rc.cpp:10
+msgid "Push"
+msgstr "Đẩy"
 
 #: Spy.cpp:25
 msgid "Actual examined position:"
@@ -337,20 +179,6 @@ msgstr "Vị trí đang xét hiện tại:"
 #: Spy.cpp:50
 msgid "Best move so far:"
 msgstr "Nước đi tốt nhất còn cách:"
-
-#: EvalDlgImpl.cpp:36
-msgid "Current"
-msgstr "Hiện tại"
-
-#: EvalDlgImpl.cpp:249
-#, fuzzy
-msgid "Name for scheme:"
-msgstr "Tên của bảng hệ số"
-
-#: EvalDlgImpl.cpp:250
-#, fuzzy
-msgid "Save Scheme"
-msgstr "Lưu bảng hệ số như..."
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -367,6 +195,182 @@ msgid ""
 msgstr ""
 "Email của người dịch\n"
 "scorpionfirevn@operamail.com"
+
+#: kenolaba.cpp:17
+msgid "Board Game inspired by Abalone"
+msgstr "Ý tưởng chính của trò chơi là của Abalone"
+
+#: kenolaba.cpp:22
+msgid "Use 'host' for network game"
+msgstr "Sử dụng 'host' để chơi mạng"
+
+#: kenolaba.cpp:24
+msgid "Use 'port' for network game"
+msgstr "Chọn cổng để chơi mạng"
+
+#: kenolaba.cpp:41
+msgid "Kenolaba"
+msgstr ""
+
+#: rc.cpp:2
+#, fuzzy
+msgid "&Move"
+msgstr "Chuyển"
+
+#: rc.cpp:8
+msgid "Moves"
+msgstr "Chuyển"
+
+#: rc.cpp:9
+msgid "Push Out"
+msgstr "Đẩy ra ngoài"
+
+#: rc.cpp:11
+msgid "Normal"
+msgstr "Bình thường"
+
+#: rc.cpp:12
+msgid "For every move possible the given points are added to the Evaluation."
+msgstr ""
+"Với mỗi nước có khả năng đi điểm số sẽ được thêm "
+"vào hệ số ước lượng."
+
+#: rc.cpp:13
+msgid "Position"
+msgstr "Vị trí"
+
+#: rc.cpp:14
+#, fuzzy
+msgid "Inner ring 3:"
+msgstr "Bên trong vòng 3"
+
+#: rc.cpp:15
+#, fuzzy
+msgid "Outermost ring:"
+msgstr "Bên ngoài hầu hết các vòng"
+
+#: rc.cpp:16
+#, fuzzy
+msgid "Middle position:"
+msgstr "Vị trí giữa"
+
+#: rc.cpp:17
+#, fuzzy
+msgid "Inner ring 2:"
+msgstr "Bên trong vòng 2"
+
+#: rc.cpp:18 rc.cpp:19 rc.cpp:20 rc.cpp:22
+msgid "+/-"
+msgstr "+/-"
+
+#: rc.cpp:21
+#, fuzzy
+msgid "Innermost ring:"
+msgstr "Bên trong hầu hết các vòng"
+
+#: rc.cpp:23
+msgid ""
+"For every ball, the given points are added to the evaluation depending on "
+"the balls position. The bonus for a given position is changed randomly in "
+"the +/- range."
+msgstr ""
+"Với mỗi trái banh, điểm được thêm vào hệ số ước "
+"lượng dựa trên vị trí của những trái banh. Điểm thưởng "
+"cho mỗi vị trí đã cho thì thay đổi ngẫu nhiên theo khoảng "
+"+/-."
+
+#: rc.cpp:24
+msgid "In-A-Row"
+msgstr "Trên cùng hàng"
+
+#: rc.cpp:25
+#, fuzzy
+msgid "Three in-a-row:"
+msgstr "Cả ba đều cùng hàng"
+
+#: rc.cpp:26
+#, fuzzy
+msgid "Two in-a-row:"
+msgstr "Cả hai cùng hàng "
+
+#: rc.cpp:27
+#, fuzzy
+msgid "Four in-a-row:"
+msgstr "Cả bốn đều cùng hàng"
+
+#: rc.cpp:28
+#, fuzzy
+msgid "Five in-a-row:"
+msgstr "Cả năm đều cùng hàng"
+
+#: rc.cpp:29
+msgid "For a number of balls In-a-Row, the given points are added to the evaluation"
+msgstr ""
+"Với số banh cùng hàng, điểm được cho sẽ được cộng vào "
+"hệ số ước lượng"
+
+#: rc.cpp:30
+msgid "Count"
+msgstr "Đếm"
+
+#: rc.cpp:31
+#, fuzzy
+msgid "4 Balls more:"
+msgstr "Hơn 4 banh"
+
+#: rc.cpp:32
+#, fuzzy
+msgid "3 Balls more:"
+msgstr "Hơn 3 banh"
+
+#: rc.cpp:33
+#, fuzzy
+msgid "5 Balls more:"
+msgstr "Hơn 5 banh"
+
+#: rc.cpp:34
+#, fuzzy
+msgid "2 Balls more:"
+msgstr "Hơn 2 banh"
+
+#: rc.cpp:35
+#, fuzzy
+msgid "1 Ball more:"
+msgstr "Hơn 1 banh"
+
+#: rc.cpp:36
+msgid ""
+"For a difference in the number of balls, the given points are added to the "
+"evaluation. A difference of 6 only can be a lost/won game."
+msgstr ""
+"Điểm được cho sẽ được cộng vào hệ số ước lượng cho "
+"số banh khác nhau. Sự chênh lệch 6 trái banh chỉ có thể là "
+"thắng hay thua."
+
+#: rc.cpp:37
+msgid "Evaluation Schemes"
+msgstr "Bảng các hệ số ước lượng"
+
+#: rc.cpp:40
+#, fuzzy
+msgid ""
+"Your evaluation scheme, defined in all other tabs of this dialog, can be "
+"stored here."
+msgstr ""
+"Đây là bảng hệ số ước lượng của bạn, mà nó được "
+"xác định trong tất cả thẻ khác của hộp thoại này, có "
+"thể lưu trữ được."
+
+#: rc.cpp:41
+#, fuzzy
+msgid "Evaluation of actual position:"
+msgstr "Hệ số ước lượng hiện tại:"
+
+#~ msgid "&Level"
+#~ msgstr "&Vòng"
+
+#~ msgid "&Hint"
+#~ msgstr "&Hướng dẫn"
 
 #~ msgid "Save as ..."
 #~ msgstr "Lưu với tên..."

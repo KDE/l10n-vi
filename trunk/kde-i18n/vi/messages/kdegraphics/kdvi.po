@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2002-09-24 03:03+0200\n"
+"POT-Creation-Date: 2003-11-25 01:30+0100\n"
 "PO-Revision-Date: 2002-08-10 21:23GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Vũ Hưng) <vuhung@fedu.uec.ac.jp, "
 "vuhung@kde.org>\n"
@@ -14,6 +14,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
+
+#: TeXFontDefinition.cpp:102
+msgid "Can't find font "
+msgstr "Không tìm thấy fonts"
+
+#: TeXFontDefinition.cpp:115
+#, fuzzy, c-format
+msgid "Checksum mismatch for font file %1"
+msgstr "Không nhận dạng được định dạng file font %1"
+
+#: TeXFontDefinition.cpp:124
+#, fuzzy
+msgid "TeX virtual"
+msgstr "ảo"
+
+#: TeXFontDefinition.cpp:133
+msgid "TeX Font Metric"
+msgstr ""
+
+#: TeXFontDefinition.cpp:158
+msgid "FreeType"
+msgstr ""
+
+#: TeXFontDefinition.cpp:163
+#, c-format
+msgid "Cannot recognize format for font file %1"
+msgstr "Không nhận dạng được định dạng file font %1"
+
+#: TeXFont_PFB.cpp:42
+msgid ""
+"The font file %1 could be opened and read, but its font format is "
+"unsupported."
+msgstr ""
+
+#: TeXFont_PFB.cpp:48
+msgid "The font file %1 is broken, or it could not be opened or read."
+msgstr ""
+
+#: TeXFont_PFB.cpp:148
+#, c-format
+msgid "FreeType reported an error when setting the character size for font file %1."
+msgstr ""
+
+#: TeXFont_PFB.cpp:164
+msgid "FreeType is unable to load glyph #%1 from font file %2."
+msgstr ""
+
+#: TeXFont_PFB.cpp:176
+msgid "FreeType is unable to render glyph #%1 from font file %2."
+msgstr ""
+
+#: TeXFont_PFB.cpp:189
+msgid "Glyph #%1 is empty."
+msgstr ""
+
+#: TeXFont_PFB.cpp:190
+msgid "Glyph #%1 from font file %2 is empty."
+msgstr ""
+
+#: TeXFont_PFB.cpp:259
+msgid "FreeType is unable to load metric for glyph #%1 from font file %2."
+msgstr ""
+
+#: TeXFont_PK.cpp:92
+#, fuzzy, c-format
+msgid "Cannot open font file %1."
+msgstr "Không nhận dạng được định dạng file font %1"
+
+#: TeXFont_PK.cpp:137
+#, fuzzy
+msgid "TexFont_PK::operator[]: Character %1 not defined in font %2"
+msgstr "Kí tự %1 chưa được định nghĩa trong file font %2"
+
+#: TeXFont_PK.cpp:455
+msgid "Unexpected %1 in PK file %2"
+msgstr ""
+
+#: TeXFont_PK.cpp:522
+msgid "The character %1 is too large in file %2"
+msgstr ""
+
+#: TeXFont_PK.cpp:627 TeXFont_PK.cpp:713
+msgid "Wrong number of bits stored:  char. %1, font %2"
+msgstr ""
+
+#: TeXFont_PK.cpp:629 TeXFont_PK.cpp:715
+msgid "Bad pk file (%1), too many bits"
+msgstr ""
+
+#: TeXFont_PK.cpp:746
+msgid "Font has non-square aspect ratio "
+msgstr ""
 
 #: _translatorinfo.cpp:1
 msgid ""
@@ -27,11 +119,11 @@ msgid ""
 "Your emails"
 msgstr "vuhung@fedu.uec.ac.jp"
 
-#: dvi_init.cpp:81
+#: dviFile.cpp:77
 msgid "The DVI file does not start with the preamble."
 msgstr "File DVI không bắt đầu bằng preamble."
 
-#: dvi_init.cpp:86
+#: dviFile.cpp:82
 msgid ""
 "The DVI file contains the wrong version of DVI output for this program. "
 "Hint: If you use the typesetting system Omega, you have to use a special "
@@ -41,39 +133,31 @@ msgstr ""
 "này. Gợi ý: Nếu bạn dùng Hệ thống typesetting Omega, bạn "
 "phải dugnf một chương trình đặc biệt là oxdvi "
 
-#: dvi_init.cpp:120
+#: dviFile.cpp:120
 msgid "The DVI file is badly corrupted. KDVI was not able to find the postamble."
 msgstr "File DVI bị hỏng nặng. KDVI không thể tìm thấy postamble."
 
-#: dvi_init.cpp:135
+#: dviFile.cpp:135
 msgid "The postamble does not begin with the POST command."
 msgstr "Postamble không bắt đầu bằng lệnh POST"
 
-#: dvi_init.cpp:182
+#: dviFile.cpp:188
 msgid "The postamble contained a command other than FNTDEF."
 msgstr "Postamble chứa lệnh không phải là FNTDEF."
 
-#: dvi_init.cpp:213
+#: dviFile.cpp:222
 msgid "The page %1 does not start with the BOP command."
 msgstr "Trang %1 không bắt đầu bằng lệnh BOP."
 
-#: dvi_init.cpp:245
+#: dviFile.cpp:258
 msgid "Not enough memory to load the DVI-file."
 msgstr "Không đủ bộ nhớ để tải file DVI."
 
-#: dvi_init.cpp:251
+#: dviFile.cpp:264
 msgid "Could not load the DVI-file."
 msgstr "Không thể tải file DVI."
 
-#: dviwin.cpp:248
-msgid ""
-"The change in Metafont mode will be effective only after you start kdvi "
-"again!"
-msgstr ""
-"Thay đổi trong chế độ Metafont sẽ có hiệu lực sau khi bạn "
-"khởi động lại kdvi."
-
-#: dviwin.cpp:319
+#: dviwin.cpp:289
 msgid ""
 "<qt><strong>File corruption!</strong>"
 " KDVI had trouble interpreting your DVI file. Most likely this means that "
@@ -83,15 +167,16 @@ msgstr ""
 "biên dịch file DVI của bạn . Rất có khả năng file DVI bị "
 "hỏng.</qt>"
 
-#: dviwin.cpp:321
-msgid "DVI File error"
+#: dviwin.cpp:291 dviwin.cpp:582
+#, fuzzy
+msgid "DVI File Error"
 msgstr "Lỗi file DVI"
 
-#: dviwin.cpp:339
+#: dviwin.cpp:310
 msgid "KDVI: Information"
 msgstr "KDVI: Thông tin"
 
-#: dviwin.cpp:354
+#: dviwin.cpp:325
 msgid ""
 "<qt>This DVI file contains source file information. You may click into the "
 "text with the middle mouse button, and an editor will open the TeX-source "
@@ -101,11 +186,25 @@ msgstr ""
 "nhấn vào text bằng chuột giữa và một trình biên soạn TeX "
 "sẽ được mở tức thời.</qt>"
 
-#: dviwin.cpp:363
+#: dviwin.cpp:334
 msgid "Explain in more detail..."
 msgstr "Giải thích cụ thể hơn..."
 
-#: dviwin.cpp:459
+#: dviwin.cpp:392
+msgid "Embedding PostScript Files"
+msgstr ""
+
+#: dviwin.cpp:423
+msgid "Not all PostScript files could be embedded into your document."
+msgstr ""
+
+#: dviwin.cpp:426
+msgid ""
+"All external PostScript files were embedded into your document. You will "
+"probably want to save the DVI file now."
+msgstr ""
+
+#: dviwin.cpp:554
 msgid ""
 "<qt><strong>File error!</strong> The specified file '%1' does not exist. "
 "KDVI already tried to add the ending '.dvi'</qt>"
@@ -113,12 +212,12 @@ msgstr ""
 "<qt><strong>Lỗi File !</strong> File đã chỉ định '%1' không tồn "
 "tại. KDVI đã thử thêm '.dvi' vào cuối</qt> "
 
-#: dviwin.cpp:461
+#: dviwin.cpp:556
 #, fuzzy
 msgid "File Error!"
 msgstr "Lỗi file!"
 
-#: dviwin.cpp:472
+#: dviwin.cpp:567
 msgid ""
 "<qt>Could not open file <nobr><strong>%1</strong></nobr> which has type "
 "<strong>%2</strong>. KDVI can only load DVI (.dvi) files.</qt>"
@@ -126,7 +225,7 @@ msgstr ""
 "<qt>Không thể mở file <nobr><strong>%1</strong></nobr> có kiểu "
 "<strong>%2</strong>. KDVI chỉ có thể mở file  DVI (.dvi) .</qt>"
 
-#: dviwin.cpp:485
+#: dviwin.cpp:580
 msgid ""
 "<qt>File corruption! KDVI had trouble interpreting your DVI file. Most "
 "likely this means that the DVI file is broken.</qt>"
@@ -134,21 +233,7 @@ msgstr ""
 "<qt>File hỏng! KDVI gặp vấn đề khi dịch file dvi của bạn "
 "Rất có khả năng file DVI bị hỏng.</qt>"
 
-#: dviwin.cpp:487
-#, fuzzy
-msgid "DVI File Error"
-msgstr "Lỗi file DVI"
-
-#: dviwin.cpp:583
-msgid "Searching for position corresponding to line %1 in %2."
-msgstr "Tìm vị trí tương ứng với dòng %1 trong %2."
-
-#: dviwin.cpp:584 dviwin_export.cpp:88 dviwin_textsearch.cpp:82
-#: dviwin_textsearch.cpp:170 fontprogress.cpp:30
-msgid "Abort"
-msgstr "Bỏ qua"
-
-#: dviwin.cpp:636
+#: dviwin.cpp:774
 msgid ""
 "<qt>You have asked KDVI to locate the place in the DVI file which "
 "corresponds to line %1 in the TeX-file <strong>%2</strong>. It seems, "
@@ -162,12 +247,12 @@ msgstr ""
 "là, tuy  file DVI không chứa thông tin cần thiết về file nguồn. "
 "Xin xem manul của KDVI để có thêm thông tin. "
 
-#: dviwin.cpp:641 dviwin.cpp:649
+#: dviwin.cpp:779 dviwin.cpp:800
 #, fuzzy
-msgid "Could not Find Reference"
+msgid "Could Not Find Reference"
 msgstr "Không tìm thấy tham chiếu"
 
-#: dviwin.cpp:647
+#: dviwin.cpp:798
 msgid ""
 "<qt>KDVI was not able to locate the place in the DVI file which corresponds "
 "to line %1 in the TeX-file <strong>%2</strong>.</qt>"
@@ -175,7 +260,16 @@ msgstr ""
 "<qt>KDVI không thể định vị trí của file DVI tương ứng với "
 "dòng %1 trong file TeX < <strong>%2</strong>.</qt>"
 
-#: dviwin.cpp:908
+#: dviwin.cpp:933
+#, c-format
+msgid "Link to %1"
+msgstr ""
+
+#: dviwin.cpp:956
+msgid "line %1 of %2"
+msgstr ""
+
+#: dviwin.cpp:1116
 msgid ""
 "The DVI-file refers to the TeX-file <strong>%1</strong> which could not be "
 "found."
@@ -183,15 +277,16 @@ msgstr ""
 "Không tìm thầy fil  DVI mà file TeX tham khảo đến "
 "<strong>%1</strong>"
 
-#: dviwin.cpp:910
+#: dviwin.cpp:1118
 #, fuzzy
-msgid "Could not Find File"
+msgid "Could Not Find File"
 msgstr "Không tìm thấy file"
 
-#: dviwin.cpp:917
+#: dviwin.cpp:1125
+#, fuzzy
 msgid ""
 "You have not yet specified an editor for inverse search. Please choose your "
-"favourite editor in the <strong>DVI options dialog</strong> which you will "
+"favorite editor in the <strong>DVI options dialog</strong> which you will "
 "find in the <strong>Settings</strong>-menu."
 msgstr ""
 "Bạn chư chỉ định trình biên soạn  cho việc tìm kiếm "
@@ -199,17 +294,17 @@ msgstr ""
 "<strong> hộp thoại tuỳ chọn DVI</strong>.Tìm tuỳ chọn này "
 "trong thực đơn <strong> Thiết lập</strong> "
 
-#: dviwin.cpp:921
+#: dviwin.cpp:1129
 #, fuzzy
 msgid "Need to Specify Editor"
 msgstr "Cần phải  chỉ định trình biên soạn"
 
-#: dviwin.cpp:922
+#: dviwin.cpp:1130
 #, fuzzy
 msgid "Use KDE's Editor Kate for Now"
 msgstr "Dùng Kate bây giờ"
 
-#: dviwin.cpp:954
+#: dviwin.cpp:1162
 #, fuzzy
 msgid ""
 "<qt>The external program"
@@ -231,35 +326,36 @@ msgstr ""
 "dialog</strong>  Ngoài ra, bạn cũng nên xem trang manual của "
 "KDVI.</qt>"
 
-#: dviwin.cpp:961
+#: dviwin.cpp:1169
 msgid "Starting the editor..."
 msgstr "Khởi động trình biên soạn..."
 
 #: dviwin_draw.cpp:267
-msgid "The DVI code set a character of unknown font"
+#, fuzzy
+msgid "The DVI code set a character of an unknown font"
 msgstr "Code DVI đặt 1 kí tự có font không biết"
 
-#: dviwin_draw.cpp:303
+#: dviwin_draw.cpp:292 dviwin_prescan.cpp:598
 msgid "The DVI code referred to font #%1, which was not previously defined."
 msgstr "Mã nguồn DVI tham khảo đến font #%1 đã được định nghĩa."
 
-#: dviwin_draw.cpp:370
+#: dviwin_draw.cpp:368
 msgid "The stack was not empty when the EOP command was encountered."
 msgstr "Stack không rỗng khi lệnh EOP được thực hiện."
 
-#: dviwin_draw.cpp:382
+#: dviwin_draw.cpp:380
 msgid "The stack was empty when a POP command was encountered."
 msgstr "Stack không rỗng khi lệnh POP được thực hiện."
 
-#: dviwin_draw.cpp:506 dviwin_draw.cpp:515
+#: dviwin_draw.cpp:504 dviwin_draw.cpp:513
 msgid "The DVI code referred to a font which was not previously defined."
 msgstr "Mã nguồn DVI tham khảo đến font chưa được định nghĩa."
 
-#: dviwin_draw.cpp:551
+#: dviwin_draw.cpp:549
 msgid "An illegal command was encountered."
 msgstr "Gặp lệnh không hợp lệ"
 
-#: dviwin_draw.cpp:556
+#: dviwin_draw.cpp:554
 msgid "The unknown op-code %1 was encountered."
 msgstr "Gặp op-code chưa biết %1"
 
@@ -275,7 +371,7 @@ msgstr ""
 "công thức toán, text không phải là tiếng Anh như Russian hay "
 "Korean, sẽ có thể bị hỏng hoàn toàn.</qt>"
 
-#: dviwin_export.cpp:61 dviwin_textsearch.cpp:31
+#: dviwin_export.cpp:61 dviwin_textsearch.cpp:51
 msgid "Function May Not Work as Expected"
 msgstr "Hàm có có thể sẽ không hoạt động như bạn đã dự đoán"
 
@@ -293,18 +389,27 @@ msgid "Export File As"
 msgstr "Xuất file thành"
 
 #: dviwin_export.cpp:75 dviwin_export.cpp:179 dviwin_export.cpp:268
+#: kdvi_multipage.cpp:175
+#, fuzzy
 msgid ""
 "The file %1\n"
-"exists. Shall I overwrite that file?"
+"exists. Do you want to overwrite that file?"
 msgstr "File %1 đã tồn tại. Tôi có thể viết đè không?"
 
-#: dviwin_export.cpp:76 dviwin_export.cpp:180
-msgid "Overwrite file"
+#: dviwin_export.cpp:76 dviwin_export.cpp:180 dviwin_export.cpp:269
+#: kdvi_multipage.cpp:176
+#, fuzzy
+msgid "Overwrite File"
 msgstr "Viết đè"
 
 #: dviwin_export.cpp:88
 msgid "Exporting to text..."
 msgstr "Xuất thành text..."
+
+#: dviwin_export.cpp:88 dviwin_textsearch.cpp:102 dviwin_textsearch.cpp:190
+#: fontprogress.cpp:30
+msgid "Abort"
+msgstr "Bỏ qua"
 
 #: dviwin_export.cpp:159
 #, fuzzy
@@ -372,11 +477,6 @@ msgstr "Xuất: %1 thành PDF"
 msgid "*.ps|PostScript (*.ps)"
 msgstr "PostScript"
 
-#: dviwin_export.cpp:269
-#, fuzzy
-msgid "Overwrite File"
-msgstr "Viết đè"
-
 #: dviwin_export.cpp:280
 msgid "Using dvips to export the file to PostScript"
 msgstr "Dùng dvips để xuất file PostScript"
@@ -419,7 +519,21 @@ msgstr ""
 msgid "Export: %1 to PostScript"
 msgstr "Xuất %1 thành PostScript"
 
-#: dviwin_textsearch.cpp:27
+#: dviwin_prescan.cpp:71
+#, c-format
+msgid "Embedding %1"
+msgstr ""
+
+#: dviwin_prescan.cpp:101
+#, fuzzy
+msgid "Page %1: The PostScript file <strong>%2</strong> could not be found.<br>"
+msgstr "<qt> Không tìm thấy chuỗi <strong> %1  </strong></qt>"
+
+#: dviwin_prescan.cpp:242
+msgid "The papersize data '%1' could not be parsed."
+msgstr ""
+
+#: dviwin_textsearch.cpp:47
 msgid ""
 "<qt>This function searches the DVI file for plain text. Unfortunately, this "
 "version of KDVI treats only plain ASCII characters properly. Symbols, "
@@ -433,11 +547,11 @@ msgstr ""
 "dấu, các kí tự non-english như Tiếng Nga, Hàn Quốc, sẽ có "
 "thể bị hỏng hoàn toàn. Bạn có muốn tiếp tục không?</qt>"
 
-#: dviwin_textsearch.cpp:82 dviwin_textsearch.cpp:170
+#: dviwin_textsearch.cpp:102 dviwin_textsearch.cpp:190
 msgid "Searching for '%1'..."
 msgstr "Tìm '%1'..."
 
-#: dviwin_textsearch.cpp:115
+#: dviwin_textsearch.cpp:135
 msgid ""
 "<qt>The search string <strong>%1</strong>"
 " could not be found till the end of the document. Should the search be "
@@ -446,15 +560,16 @@ msgstr ""
 "<qt>Không tìm thấy chuỗi  <strong>%1</strong> Tìm lại từ đầu "
 "văn bản?</qt>"
 
-#: dviwin_textsearch.cpp:118 dviwin_textsearch.cpp:200
-msgid "Text not found"
+#: dviwin_textsearch.cpp:138 dviwin_textsearch.cpp:220
+#, fuzzy
+msgid "Text Not Found"
 msgstr "Không tìm thấy text"
 
-#: dviwin_textsearch.cpp:133 dviwin_textsearch.cpp:244
+#: dviwin_textsearch.cpp:153 dviwin_textsearch.cpp:263
 msgid "<qt>The search string <strong>%1</strong> could not be found.</qt>"
 msgstr "<qt> Không tìm thấy chuỗi <strong> %1  </strong></qt>"
 
-#: dviwin_textsearch.cpp:197
+#: dviwin_textsearch.cpp:217
 msgid ""
 "<qt>The search string <strong>%1</strong> could not be found till the "
 "beginning of the document. Should the search be restarted from the end of "
@@ -463,37 +578,15 @@ msgstr ""
 "<qt>Tìm đến đầu văn bản nhưng không tìm thấy chuỗi "
 "<strong>%1</strong> .Tìm lại từ cuối văn bản?</qt>"
 
-#: font.cpp:59
-msgid "Can't find font "
-msgstr "Không tìm thấy fonts"
-
-#: font.cpp:72
-msgid "The GF format for font file %1 is no longer supported"
-msgstr "Định dạng GF của file font %1 không còn được hỗ trợ"
-
-#: font.cpp:78
-#, c-format
-msgid "Cannot recognize format for font file %1"
-msgstr "Không nhận dạng được định dạng file font %1"
-
-#: font.cpp:165
-msgid "Character %1 not defined in font %2"
-msgstr "Kí tự %1 chưa được định nghĩa trong file font %2"
-
-#: font.cpp:175
-#, c-format
-msgid "Font file disappeared: %1"
-msgstr "File font biến mất: %1"
-
-#: fontpool.cpp:36
+#: fontpool.cpp:72
 msgid "KDVI is currently generating bitmap fonts..."
 msgstr "DVI đang sinh font bitmap..."
 
-#: fontpool.cpp:37
+#: fontpool.cpp:73
 msgid "Aborts the font generation. Don't do this."
 msgstr "Bỏ qua quá trình sinh font? Không nên làm vậy"
 
-#: fontpool.cpp:38
+#: fontpool.cpp:74
 msgid ""
 "KDVI is currently generating bitmap fonts which are needed to display your "
 "document. For this, KDVI uses a number of external programs, such as "
@@ -506,39 +599,56 @@ msgstr ""
 "danh sách các chương trình này trong hộp thoại thông tin về "
 "tài liệu."
 
-#: fontpool.cpp:41
+#: fontpool.cpp:77
 msgid "KDVI is generating fonts. Please wait."
 msgstr "KDVI đang sinh font.  Xin chờ đợi."
 
-#: fontpool.cpp:112
+#: fontpool.cpp:216
 msgid "Could not allocate memory for a font structure!"
 msgstr "Không thể cấp phát bộ nhớ cho cấu trúc font!"
 
-#: fontpool.cpp:128
+#: fontpool.cpp:241
 msgid "The fontlist is currently empty."
 msgstr "Danh sách font hiện đang trống."
 
-#: fontpool.cpp:138
-msgid "virtual"
-msgstr "ảo"
+#: fontpool.cpp:245
+msgid "TeX Name"
+msgstr ""
 
-#: fontpool.cpp:140
-msgid "regular"
-msgstr "chính quy"
+#: fontpool.cpp:246
+msgid "Family"
+msgstr ""
 
-#: fontpool.cpp:201
+#: fontpool.cpp:248
+msgid "Type"
+msgstr ""
+
+#: fontpool.cpp:249
+msgid "Encoding"
+msgstr ""
+
+#: fontpool.cpp:250
+msgid "Comment"
+msgstr ""
+
+#: fontpool.cpp:263
+#, fuzzy
+msgid "Font file not found"
+msgstr "Không tìm thấy text"
+
+#: fontpool.cpp:352
 msgid "Locating fonts..."
 msgstr "Định vị font..."
 
-#: fontpool.cpp:214
+#: fontpool.cpp:370
 msgid "Font Generation"
 msgstr "Sinh Font"
 
-#: fontpool.cpp:344
+#: fontpool.cpp:588
 msgid "Font not found - KDVI"
 msgstr "Không tìm thấy font - KDVI"
 
-#: fontpool.cpp:345
+#: fontpool.cpp:589
 msgid ""
 "There were problems running the kpsewhich program. KDVI will not work if TeX "
 "is not installed on your system or if the kpsewhich program cannot be found "
@@ -548,46 +658,46 @@ msgstr ""
 "động nếu TeX chưa được cài đặt trên hệ thống của bạn "
 "hay nếu kpsewhich không được tìm thấy trong $PATH\n"
 
-#: fontpool.cpp:349
+#: fontpool.cpp:593
+#, fuzzy
 msgid ""
 "KDVI was not able to locate all the font files which are necessary to "
-"display the current DVI file. Some characters are therefore left blank, and "
-"your document might be unreadable."
+"display the current DVI file. Your document might be unreadable."
 msgstr ""
 "KDVI không thể định vị được tất cả các font cần cho "
 "việc hiển thị file DVI hiện tại. Vì vậy, một số kí tự "
 "sẽ bị bỏ trắng và tài liệu của bạn sẽ không đọc "
 "được hoàn hảo."
 
-#: fontpool.cpp:353
+#: fontpool.cpp:596
+#, fuzzy
 msgid ""
 "\n"
-"Experts will find helpful information in the 'MetaFont'-section of the "
-"document info dialog"
+"Experts will find helpful information in the 'Fonts'-section of the document "
+"info dialog"
 msgstr ""
 "\n"
 "Các cao thủ sẽ tìm thấy những thông tin hữu dụng trong phần "
 "MetaFont của hộp thoại thông tin tài liệu"
 
-#: fontpool.cpp:360
+#: fontpool.cpp:603
 msgid ""
 "\n"
-"Automatic font generation is switched off."
+"Automatic font generation is switched off. You might want to switch it on "
+"now and generate the missing fonts."
 msgstr ""
-"\n"
-"Hiện tại không tự động sinh font"
 
-#: fontpool.cpp:361
+#: fontpool.cpp:605
 #, fuzzy
 msgid "Generate Fonts Now"
 msgstr "Sinh font"
 
-#: fontpool.cpp:361
+#: fontpool.cpp:605
 #, fuzzy
 msgid "Continue Without"
 msgstr "Tiếp tục mà không có"
 
-#: fontpool.cpp:468
+#: fontpool.cpp:736
 msgid "Currently generating %1 at %2 dpi"
 msgstr "Hiện đang sinh %1 ở %2 dpi"
 
@@ -668,68 +778,72 @@ msgstr "#Trang"
 msgid "Generator/Date"
 msgstr "Sinh/Ngày"
 
-#: kdvi_multipage.cpp:76
+#: kdvi_multipage.cpp:91
 msgid "Document &Info"
 msgstr "&Thông tin về tài liệu"
 
-#: kdvi_multipage.cpp:91
+#: kdvi_multipage.cpp:98
+msgid "Embed External PostScript Files..."
+msgstr ""
+
+#: kdvi_multipage.cpp:108
 #, fuzzy
 msgid "Enable All Warnings && Messages"
 msgstr "Cho phép mọi cảnh cáo và Thông điệp"
 
-#: kdvi_multipage.cpp:92
+#: kdvi_multipage.cpp:109
 #, fuzzy
 msgid "PostScript..."
 msgstr "PostScript"
 
-#: kdvi_multipage.cpp:93
+#: kdvi_multipage.cpp:110
 #, fuzzy
 msgid "PDF..."
 msgstr "PDF"
 
-#: kdvi_multipage.cpp:94
+#: kdvi_multipage.cpp:111
 #, fuzzy
 msgid "Text..."
 msgstr "Text"
 
-#: kdvi_multipage.cpp:96
+#: kdvi_multipage.cpp:113
 #, fuzzy
 msgid "&DVI Options..."
 msgstr "Tuỳ  chọn &DVI"
 
-#: kdvi_multipage.cpp:97
+#: kdvi_multipage.cpp:115
 #, fuzzy
-msgid "&Tip of the Day"
-msgstr "&Mẹo vặt trong ngày..."
-
-#: kdvi_multipage.cpp:98
-#, fuzzy
-msgid "About the KDVI plugin"
+msgid "About KDVI"
 msgstr "Về KDVI plugin..."
 
-#: kdvi_multipage.cpp:99
-#, fuzzy
-msgid "Help on the KDVI plugin"
-msgstr "Trợ giúp cho KDVI plugin..."
+#: kdvi_multipage.cpp:116
+msgid "KDVI Handbook"
+msgstr ""
 
-#: kdvi_multipage.cpp:100
-msgid "Report Bug in the KDVI plugin..."
+#: kdvi_multipage.cpp:117
+#, fuzzy
+msgid "Report Bug in KDVI..."
 msgstr "Báo cáo lỗi của KDVI plugin..."
 
-#: kdvi_multipage.cpp:130
+#: kdvi_multipage.cpp:164
+#, fuzzy
+msgid "Save File As"
+msgstr "Xuất file thành"
+
+#: kdvi_multipage.cpp:231
 #, c-format
 msgid "Loading file %1"
 msgstr "Tải file %1"
 
-#: kdvi_multipage.cpp:169
+#: kdvi_multipage.cpp:269
 msgid "*.dvi *.DVI|TeX Device Independent files (*.dvi)"
 msgstr "*.dvi *.DVI|TeX Device Independent files (*.dvi)"
 
-#: kdvi_multipage.cpp:276
+#: kdvi_multipage.cpp:376
 msgid "the KDVI plugin"
 msgstr "KDVI plugin"
 
-#: kdvi_multipage.cpp:281
+#: kdvi_multipage.cpp:381
 msgid ""
 "A previewer for Device Independent files (DVI files) produced by the TeX "
 "typesetting system."
@@ -739,11 +853,11 @@ msgid ""
 "href=\"http://devel-home.kde.org/~kdvi\">KDVI's Homepage</a>."
 msgstr ""
 
-#: kdvi_multipage.cpp:287
+#: kdvi_multipage.cpp:387
 msgid "Authors"
 msgstr "Tác giả"
 
-#: kdvi_multipage.cpp:288
+#: kdvi_multipage.cpp:388
 msgid ""
 "Stefan Kebekus"
 "<br><a "
@@ -785,209 +899,80 @@ msgstr ""
 "xdvi. I apologize to those who I did not mention here. Please send me an "
 "email if you think your name belongs here."
 
-#: kdvi_multipage.cpp:314
+#: kdvi_multipage.cpp:414 kdvi_multipage.cpp:671
 msgid "KDVI"
 msgstr "KDVI"
 
-#: kdvi_multipage.cpp:416
+#: kdvi_multipage.cpp:511
+#, c-format
+msgid "Print %1"
+msgstr ""
+
+#: kdvi_multipage.cpp:515
 msgid ""
 "The list of pages you selected was empty.\n"
 "Maybe you made an error in selecting the pages, e.g. by giving an invalid "
 "range like '7-2'."
 msgstr ""
 
-#: kdvi_multipage.cpp:552
+#: kdvi_multipage.cpp:652
 msgid "All messages and warnings will now be shown."
 msgstr ""
 
-#: optiondialog.cpp:50
-msgid "Preferences"
+#: optionDialogFontsWidget.cpp:51
+msgid "This version of KDVI does not support type 1 fonts."
 msgstr ""
 
-#: optiondialog.cpp:57
+#: optionDialogFontsWidget.cpp:52
+msgid ""
+"KDVI needs the FreeType library to access type 1 fonts. This library was not "
+"present when KDVI was compiled. If you want to use type 1 fonts, you must "
+"either install the FreeType library and recompile KDVI yourself, or find a "
+"precompiled software package for your operating system."
+msgstr ""
+
+#: optionDialogSpecialWidget.cpp:37
 msgid "User-Defined Editor"
 msgstr ""
 
-#: optiondialog.cpp:59
+#: optionDialogSpecialWidget.cpp:39
 msgid "Enter the command line below."
 msgstr ""
 
-#: optiondialog.cpp:63
+#: optionDialogSpecialWidget.cpp:43
 msgid "Click 'Help' to learn how to set up Emacs."
 msgstr ""
 
-#: optiondialog.cpp:67
+#: optionDialogSpecialWidget.cpp:47
 msgid "Kate does not jump to line"
 msgstr ""
 
-#: optiondialog.cpp:71
+#: optionDialogSpecialWidget.cpp:51
+msgid "Kile works very well"
+msgstr ""
+
+#: optionDialogSpecialWidget.cpp:55
 msgid "NEdit perfectly supports inverse search."
 msgstr ""
 
-#: optiondialog.cpp:75
+#: optionDialogSpecialWidget.cpp:59
 msgid "VIM version 6.0 or greater works just fine."
 msgstr ""
 
-#: optiondialog.cpp:79
+#: optionDialogSpecialWidget.cpp:63
 msgid "Click 'Help' to learn how to set up XEmacs."
 msgstr ""
 
-#: optiondialog.cpp:191
-msgid "Metafont mode:"
+#: optiondialog.cpp:26
+msgid "TeX Fonts"
 msgstr ""
 
-#: optiondialog.cpp:193
-msgid "LaserJet 4 is usually a good choice."
-msgstr ""
-
-#: optiondialog.cpp:194
-msgid ""
-"Chooses the type of bitmap fonts used for the display. As a general rule, "
-"the higher the dpi value, the better quality of the output. On the other "
-"hand, large dpi fonts use more resources and make KDVI slower. \n"
-"If you are low on hard disk space, or have a slow machine, you may want to "
-"choose the same setting that is also used by dvips. That way you avoid to "
-"generate several bitmap versions of the same font."
-msgstr ""
-
-#: optiondialog.cpp:196
-msgid "Generate missing fonts"
-msgstr ""
-
-#: optiondialog.cpp:197 optiondialog.cpp:206 optiondialog.cpp:210
-msgid "If in doubt, switch on!"
-msgstr ""
-
-#: optiondialog.cpp:198
-msgid ""
-"Allows KDVI to use MetaFont to produce bitmap fonts. Unless you have a very "
-"specific reason, you probably want to switch this on."
-msgstr ""
-
-#: optiondialog.cpp:203
+#: optiondialog.cpp:30
 #, fuzzy
 msgid "DVI Specials"
 msgstr "File DVI "
 
-#: optiondialog.cpp:205
-msgid "Show PostScript specials"
-msgstr ""
-
-#: optiondialog.cpp:207
-msgid ""
-"Some DVI files contain PostScript graphics. If switched on, KDVI will use "
-"the ghostview PostScript interpreter to display these. You probably want to "
-"switch this option on, unless you have a DVI-file whose PostScript part is "
-"broken, or too large for your machine."
-msgstr ""
-
-#: optiondialog.cpp:209
-msgid "Show hyperlinks"
-msgstr ""
-
-#: optiondialog.cpp:211
-msgid ""
-"For your convenience, some DVI files contain hyperlinks which are "
-"cross-references or point to external documents. You probably want to switch "
-"this option on, unless you don't want the blue underlines which KDVI uses to "
-"mark the hyperlinks."
-msgstr ""
-
-#: optiondialog.cpp:213
-msgid "Editor for Inverse Search"
-msgstr ""
-
-#: optiondialog.cpp:216
-msgid "What is 'inverse search'?"
-msgstr ""
-
-#: optiondialog.cpp:220
-msgid "Editor:"
-msgstr ""
-
-#: optiondialog.cpp:223
-msgid "Choose an editor which is used in inverse search."
-msgstr ""
-
-#: optiondialog.cpp:224
-msgid ""
-"Some DVI-files contain 'inverse search' information. If such a DVI-file is "
-"loaded, you can click with the right mouse into KDVI, an editor opens, loads "
-"the TeX-file and jumps to the proper position. You can select you favourite "
-"editor here. If in doubt, 'nedit' is usually a good choice.\n"
-"Check the KDVI manual to see how to prepare DVI-files which support the "
-"inverse search."
-msgstr ""
-
-#: optiondialog.cpp:229
-msgid "Description:"
-msgstr ""
-
-#: optiondialog.cpp:238
-msgid "Explains about the editor's capabilities in conjunction with inverse search."
-msgstr ""
-
-#: optiondialog.cpp:239
-msgid ""
-"Not all editors are well-suited for inverse search. For instance, many "
-"editors have no command like 'If the file is not yet loaded, load it. "
-"Otherwise, bring the window with the file to the front'. If you are using an "
-"editor like this, clicking into the DVI file will always open a new editor, "
-"even if the TeX-file is already open. Likewise, many editors have no command "
-"line argument that would allow KDVI to specify the exact line which you wish "
-"to edit.\n"
-"If you feel that KDVI's support for a certain editor is not well-done, "
-"please write to kebekus@kde.org."
-msgstr ""
-
-#: optiondialog.cpp:241
-msgid "Shell command:"
-msgstr ""
-
-#: optiondialog.cpp:245
-msgid "Shell-command line used to start the editor."
-msgstr ""
-
-#: optiondialog.cpp:246
-msgid ""
-"If you are using inverse search, KDVI uses this command line to start the "
-"editor. The field '%f' is replaced with the filename, and '%l' is replaced "
-"with the line number."
-msgstr ""
-
-#: pk.cpp:202
-msgid "Unexpected %1 in PK file %2"
-msgstr ""
-
-#: pk.cpp:266
-msgid "The character %1 is too large in file %2"
-msgstr ""
-
-#: pk.cpp:366 pk.cpp:453
-msgid "Wrong number of bits stored:  char. %1, font %2"
-msgstr ""
-
-#: pk.cpp:368 pk.cpp:455
-msgid "Bad pk file (%1), too many bits"
-msgstr ""
-
-#: pk.cpp:471 vf.cpp:84
-msgid "Checksum mismatch"
-msgstr ""
-
-#: pk.cpp:472
-msgid "in font file "
-msgstr ""
-
-#: pk.cpp:477
-msgid "Font has non-square aspect ratio "
-msgstr ""
-
-#: pk.cpp:482
-msgid "Could not allocate memory for a glyph table."
-msgstr ""
-
-#: psgs.cpp:84
+#: psgs.cpp:117
 msgid "Generating PostScript graphics..."
 msgstr ""
 
@@ -1000,36 +985,208 @@ msgstr "Xuất file thành"
 msgid "Go"
 msgstr ""
 
-#: rc.cpp:5
-msgid "Settings"
+#: rc.cpp:7
+msgid "PostScript Type1 Fonts"
 msgstr ""
 
-#: special.cpp:106
+#: rc.cpp:8
+msgid "Use Type 1 fonts if available"
+msgstr ""
+
+#: rc.cpp:9 rc.cpp:16 rc.cpp:22 rc.cpp:25
+msgid "If in doubt, enable this option."
+msgstr ""
+
+#: rc.cpp:10
+msgid ""
+"On many modern TeX installations, the typical fonts used in a TeX document "
+"are included both in the traditional MetaFont- and in the PostScript Type 1 "
+"format. If this box is checked, Type 1 fonts will be used if they are found. "
+"This will usually save some time and disk space because it is then no longer "
+"necessary to run MetaFont and turn the MetaFont fonts into bitmap files. You "
+"probably want to enable this option, unless you experience difficulties with "
+"the PostScript fonts, such as missing or wrong characters, etc."
+msgstr ""
+
+#: rc.cpp:11
+msgid "Use font hinting"
+msgstr ""
+
+#: rc.cpp:12
+msgid ""
+"You should enable this, if the use of font hinting improves readability on "
+"your machine."
+msgstr ""
+
+#: rc.cpp:13
+msgid ""
+"Many modern fonts contain \"font hinting\" information which can be used to "
+"improve the appearance of a font on low-resolution displays, such as a "
+"computer monitor, or a notebook screen. However, many people find the "
+"\"improved\" fonts quite ugly and prefer to have this option disabled."
+msgstr ""
+
+#: rc.cpp:14
+msgid "PK Fonts"
+msgstr ""
+
+#: rc.cpp:15
+#, fuzzy
+msgid "Generate missing fonts"
+msgstr "Sinh font"
+
+#: rc.cpp:17
+msgid ""
+"Allows KDVI to use MetaFont to produce bitmap fonts. Unless you have a very "
+"specific reason, you probably want to enable this option."
+msgstr ""
+
+#: rc.cpp:18
+msgid "Metafont mode:"
+msgstr ""
+
+#: rc.cpp:19
+msgid "LaserJet 4 is usually a good choice."
+msgstr ""
+
+#: rc.cpp:20
+msgid ""
+"<p>"
+"Chooses the type of bitmap fonts used for the display. As a general rule, "
+"the higher the dpi value, the better quality of the output. On the other "
+"hand, large dpi fonts use more resources and make KDVI slower.</p>\n"
+"<p>If you are low on hard disk space, or have a slow machine, you may want "
+"to choose the same setting that is also used by dvips. That way you avoid "
+"generating several bitmap versions of the same font.</p>"
+msgstr ""
+
+#: rc.cpp:21
+msgid "Show PostScript specials"
+msgstr ""
+
+#: rc.cpp:23
+msgid ""
+"Some DVI files contain PostScript graphics. If enabled, KDVI will use the "
+"Ghostview PostScript interpreter to display these. You probably want to "
+"enable this option, unless you have a DVI-file whose PostScript part is "
+"broken, or too large for your machine."
+msgstr ""
+
+#: rc.cpp:24
+msgid "Show hyperlinks"
+msgstr ""
+
+#: rc.cpp:26
+msgid ""
+"For your convenience, some DVI files contain hyperlinks which are "
+"cross-references or point to external documents. You probably want to enable "
+"this option, unless you don't want the blue underlines which KDVI uses to "
+"mark the hyperlinks."
+msgstr ""
+
+#: rc.cpp:27
+msgid "Editor for Inverse Search"
+msgstr ""
+
+#: rc.cpp:28
+msgid "What is 'inverse search'? "
+msgstr ""
+
+#: rc.cpp:29
+msgid "inv-search"
+msgstr ""
+
+#: rc.cpp:30
+msgid "Choose an editor which is used in inverse search."
+msgstr ""
+
+#: rc.cpp:31
+msgid ""
+"<p>Some DVI files contain 'inverse search' information. If such a DVI file "
+"is loaded, you can right-click into KDVI and an editor will open, load the "
+"TeX file and jump to the correct position. You can select your favorite "
+"editor here. If in doubt, 'nedit' is usually a good choice.</p>\n"
+"<p>Check the KDVI manual to see how to prepare DVI files which support the "
+"inverse search.</p>"
+msgstr ""
+
+#: rc.cpp:32
+msgid "Description:"
+msgstr ""
+
+#: rc.cpp:33
+msgid "Shell command:"
+msgstr ""
+
+#: rc.cpp:35
+msgid "Explains about the editor's capabilities in conjunction with inverse search."
+msgstr ""
+
+#: rc.cpp:36
+msgid ""
+"<p>Not all editors are well suited for inverse search. For instance, many "
+"editors have no command like 'If the file is not yet loaded, load it. "
+"Otherwise, bring the window with the file to the front'. If you are using an "
+"editor like this, clicking into the DVI file will always open a new editor, "
+"even if the TeX file is already open. Likewise, many editors have no command "
+"line argument that would allow KDVI to specify the exact line which you wish "
+"to edit.</p>\n"
+"<p>If you feel that KDVI's support for a certain editor is inadequate, "
+"please write to kebekus@kde.org.</p>"
+msgstr ""
+
+#: rc.cpp:37
+msgid "Shell-command line used to start the editor."
+msgstr ""
+
+#: rc.cpp:38
+msgid ""
+"If you are using inverse search, KDVI uses this command line to start the "
+"editor. The field '%f' is replaced with the filename, and '%l' is replaced "
+"with the line number."
+msgstr ""
+
+#: rc.cpp:39
+msgid "Editor:"
+msgstr ""
+
+#: special.cpp:33
+msgid "That makes 25 errors. Further error messages will not be printed."
+msgstr ""
+
+#: special.cpp:141
+msgid ""
+"Error in DVIfile '%1', page %2. Color pop command issued when the color "
+"stack is empty."
+msgstr ""
+
+#: special.cpp:222
 msgid "Malformed parameter in the epsf special command."
 msgstr ""
 
-#: special.cpp:237
-#, c-format
+#: special.cpp:319
+#, fuzzy, c-format
 msgid ""
-"File not found:\n"
+"File not found: \n"
 " %1"
-msgstr ""
+msgstr "Không tìm thấy text"
 
-#: special.cpp:363
-msgid "The special command \""
-msgstr ""
-
-#: special.cpp:363
-msgid "\" is not implemented."
+#: special.cpp:558
+msgid "The special command '%1' is not implemented."
 msgstr ""
 
 #: tips.cpp:3
+msgid ""
+"<p>...that KDVI can also load compressed DVI-files? \n"
+msgstr ""
+
+#: tips.cpp:7
 msgid ""
 "<p>...that you can mark text with the right mouse button and paste it\n"
 "into any application?\n"
 msgstr ""
 
-#: tips.cpp:8
+#: tips.cpp:12
 msgid ""
 "<p>...that KDVI now supports inverse search? You can click into your DVI "
 "file \n"
@@ -1038,7 +1195,7 @@ msgid ""
 "manual explains how to set up your editor for this.</a> \n"
 msgstr ""
 
-#: tips.cpp:15
+#: tips.cpp:19
 msgid ""
 "<p>"
 "...that KDVI supports forward search? If you use Emacs or XEmacs, you can \n"
@@ -1048,28 +1205,28 @@ msgid ""
 "your editor for this.</a> \n"
 msgstr ""
 
-#: tips.cpp:22
+#: tips.cpp:26
 msgid ""
 "<p>...that KDVI now offers full text search? \n"
 msgstr ""
 
-#: tips.cpp:26
+#: tips.cpp:30
 msgid ""
 "<p>...that KDVI can save your DVI file as PostScript, PDF, and even plain "
 "text? \n"
 msgstr ""
 
-#: util.cpp:77
+#: util.cpp:71
 msgid "Fatal Error! "
 msgstr ""
 
-#: util.cpp:80
+#: util.cpp:74
 msgid ""
 "Fatal Error!\n"
 "\n"
 msgstr ""
 
-#: util.cpp:82
+#: util.cpp:76
 msgid ""
 "\n"
 "\n"
@@ -1082,26 +1239,70 @@ msgid ""
 msgstr ""
 
 #: vf.cpp:85
+msgid "Checksum mismatch"
+msgstr ""
+
+#: vf.cpp:86
 msgid " in font file "
 msgstr ""
 
-#: vf.cpp:127
+#: vf.cpp:130
 msgid "Could not allocate memory for a macro table."
 msgstr ""
 
-#: vf.cpp:144
+#: vf.cpp:147
 msgid "Virtual character "
 msgstr ""
 
-#: vf.cpp:144
+#: vf.cpp:147
 msgid " in font "
 msgstr ""
 
-#: vf.cpp:145
+#: vf.cpp:148
 msgid " ignored."
 msgstr ""
 
-#: vf.cpp:174
+#: vf.cpp:178
 #, c-format
 msgid "Wrong command byte found in VF macro list: %1"
 msgstr ""
+
+#~ msgid "DVI File error"
+#~ msgstr "Lỗi file DVI"
+
+#~ msgid "Overwrite file"
+#~ msgstr "Viết đè"
+
+#~ msgid "regular"
+#~ msgstr "chính quy"
+
+#, fuzzy
+#~ msgid "Help on the KDVI Plugin"
+#~ msgstr "Trợ giúp cho KDVI plugin..."
+
+#, fuzzy
+#~ msgid "&Tip of the Day"
+#~ msgstr "&Mẹo vặt trong ngày..."
+
+#~ msgid ""
+#~ "\n"
+#~ "Automatic font generation is switched off."
+#~ msgstr ""
+#~ "\n"
+#~ "Hiện tại không tự động sinh font"
+
+#~ msgid "The GF format for font file %1 is no longer supported"
+#~ msgstr "Định dạng GF của file font %1 không còn được hỗ trợ"
+
+#~ msgid "Font file disappeared: %1"
+#~ msgstr "File font biến mất: %1"
+
+#~ msgid ""
+#~ "The change in Metafont mode will be effective only after you start kdvi "
+#~ "again!"
+#~ msgstr ""
+#~ "Thay đổi trong chế độ Metafont sẽ có hiệu lực sau khi bạn khởi động lại "
+#~ "kdvi."
+
+#~ msgid "Searching for position corresponding to line %1 in %2."
+#~ msgstr "Tìm vị trí tương ứng với dòng %1 trong %2."

@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR Free Software Foundation, Inc.
 # Nguyen Hung.Vu <Vu.Hung@techviet.com>, 2002.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_sftp VERSION\n"
-"POT-Creation-Date: 2002-03-01 03:01+0100\n"
+"POT-Creation-Date: 2002-10-03 02:48+0200\n"
 "PO-Revision-Date: 2002-03-12 16:21GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -14,75 +14,236 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.8\n"
 
-#: kio_sftp.cpp:294
-msgid "Opening connection to host <b>%1:%2</b>"
+#: kio_sftp.cpp:268 kio_sftp.cpp:828
+msgid "SFTP slave unexpectedly killed"
+msgstr ""
+
+#: kio_sftp.cpp:318
+#, fuzzy
+msgid "Opening SFTP connection to host <b>%1:%2</b>"
 msgstr "Mở kết nối tời host <b>%1:%2</b>"
 
-#: kio_sftp.cpp:355
-msgid "Sftp Login"
+#: kio_sftp.cpp:323
+msgid "No hostname specified"
+msgstr ""
+
+#: kio_sftp.cpp:335 kio_sftp.cpp:447
+#, fuzzy
+msgid "SFTP Login"
 msgstr "Đăng nhập Sftp"
 
-#: kio_sftp.cpp:357
+#: kio_sftp.cpp:337 kio_sftp.cpp:448
 msgid "site:"
 msgstr "site:"
 
-#: kio_sftp.cpp:369
-msgid "Login failed. Retrying..."
-msgstr "Đăng nhập thất bại . Thử lại ...."
+#: kio_sftp.cpp:439
+#, fuzzy
+msgid "Please enter your username and key passphrase."
+msgstr "Hãy nhập tên người dùng và mật khẩu ."
 
-#: kio_sftp.cpp:391
+#: kio_sftp.cpp:444
 msgid "Please enter your username and password."
 msgstr "Hãy nhập tên người dùng và mật khẩu ."
 
-#: kio_sftp.cpp:394
-msgid ""
-"Login failed.\n"
-"Please confirm your username and password, and enter them again."
-msgstr ""
-"Đăng nhập thất bại . \n"
-"Xãy xác nhận lại tên người dùng và mật khẩu và thử lại "
-"một lần nữa ."
+#: kio_sftp.cpp:458
+#, fuzzy
+msgid "Incorrect username or password"
+msgstr "Hãy nhập tên người dùng và mật khẩu ."
 
-#: kio_sftp.cpp:399
+#: kio_sftp.cpp:464
 msgid "Please enter a username and password"
 msgstr "Xin nhập tên người dùng và mật khẩu ."
 
-#: kio_sftp.cpp:419
+#: kio_sftp.cpp:523
+msgid "Warning: Cannot verify host's identity!"
+msgstr ""
+
+#: kio_sftp.cpp:534
+#, fuzzy
+msgid "Warning: Host's identity changed!"
+msgstr "Cảnh báo : Khóa host đã bị thay đổi !"
+
+#: kio_sftp.cpp:545 kio_sftp.cpp:546
+#, fuzzy
+msgid "Authentication failed."
+msgstr "Kết nối thất bại ."
+
+#: kio_sftp.cpp:560 kio_sftp.cpp:575
 msgid "Connection failed."
 msgstr "Kết nối thất bại ."
 
-#: kio_sftp.cpp:425
-msgid "Warning: Host key not found!"
-msgstr "Cảnh báo : Không tìm thấy khoá Host !"
-
-#: kio_sftp.cpp:429
-msgid "Warning: Host key has changed!"
-msgstr "Cảnh báo : Khóa host đã bị thay đổi !"
-
-#: kio_sftp.cpp:440
-msgid "Shall we continue connecting to %1?"
-msgstr "Chúng ta có thể tiếp tục nối tới %1 không ? "
-
-#: kio_sftp.cpp:457
-msgid "Connected to "
-msgstr "Đã nối tới"
-
-#: kio_sftp.cpp:488
-msgid "Timed out waiting for a response from the server."
-msgstr "Hết giờ đợi trả lời từ server ."
-
-#: kio_sftp.cpp:501
-msgid "Login failed."
-msgstr "Đăng nhập thất bại ."
-
-#: kio_sftp.cpp:503
-msgid ""
-"Could not login to %1.\n"
-"Maximum number of retries exceeded."
+#: kio_sftp.cpp:561 ksshprocess.cpp:767 ksshprocess.cpp:914
+msgid "Connection closed by remote host."
 msgstr ""
-"Không thể nối tới %1 .\n"
-"Đã quá số tối  đa lần thử lại cho phép ."
 
-#: kio_sftp.cpp:531
-msgid "Login OK"
-msgstr "Đăng nhập OK "
+#: kio_sftp.cpp:576
+#, c-format
+msgid "Unexpected SFTP error: %1"
+msgstr ""
+
+#: kio_sftp.cpp:615
+#, c-format
+msgid "SFTP version %1"
+msgstr ""
+
+#: kio_sftp.cpp:621
+msgid "Protocol error."
+msgstr ""
+
+#: kio_sftp.cpp:627
+#, c-format
+msgid "Successfully connected to %1"
+msgstr ""
+
+#: kio_sftp.cpp:1251
+msgid "Could not allocate memory for SFTP packet."
+msgstr ""
+
+#: kio_sftp.cpp:1262
+#, fuzzy
+msgid "Connection closed"
+msgstr "Kết nối thất bại ."
+
+#: kio_sftp.cpp:1269
+msgid "Could not read SFTP packet"
+msgstr ""
+
+#: kio_sftp.cpp:1366
+msgid "SFTP command failed for an unknown reason."
+msgstr ""
+
+#: kio_sftp.cpp:1369
+msgid "The SFTP server received a bad message."
+msgstr ""
+
+#: kio_sftp.cpp:1372
+msgid "You attempted an operation unsupported by the SFTP server."
+msgstr ""
+
+#: kio_sftp.cpp:1377
+msgid "Error code: "
+msgstr ""
+
+#: ksshprocess.cpp:356
+msgid "Cannot specify a subsystem and command at the same time."
+msgstr ""
+
+#: ksshprocess.cpp:702
+msgid "No options provided for ssh execution."
+msgstr ""
+
+#: ksshprocess.cpp:710
+msgid "Failed to execute ssh process."
+msgstr ""
+
+#: ksshprocess.cpp:733 ksshprocess.cpp:762 ksshprocess.cpp:881
+#: ksshprocess.cpp:953
+msgid "Error encountered while talking to ssh."
+msgstr ""
+
+#: ksshprocess.cpp:813
+#, fuzzy
+msgid "Please supply a password."
+msgstr "Xin nhập tên người dùng và mật khẩu ."
+
+#: ksshprocess.cpp:852
+msgid "Please supply the passphrase for your SSH private key."
+msgstr ""
+
+#: ksshprocess.cpp:866
+msgid "Authentication to %1 failed"
+msgstr ""
+
+#: ksshprocess.cpp:889
+msgid ""
+"The identity of the remote host '%1' could not be verified because the "
+"host's key is not in the \"known hosts\" file."
+msgstr ""
+
+#: ksshprocess.cpp:895
+msgid ""
+" Manually, add the host's key to the \"known hosts\" file or contact your "
+"administrator."
+msgstr ""
+
+#: ksshprocess.cpp:901
+msgid " Manually, add the host's key to %1 or contact your administrator."
+msgstr ""
+
+#: ksshprocess.cpp:933
+msgid ""
+"The identity of the remote host '%1' could not be verified. The host's key "
+"fingerprint is:\n"
+"%2\n"
+"You should verify the fingerprint with the host's administrator before "
+"connecting.\n"
+"\n"
+"Would you like to accept the host's key and connect anyway? "
+msgstr ""
+
+#: ksshprocess.cpp:961
+msgid ""
+"WARNING: The identity of the remote host '%1' has changed!\n"
+"\n"
+"Someone could be eavesdropping on your connection, or the administrator may "
+"have just changed the host's key. Either way, you should verify the host's "
+"key fingerprint with the host's administrator. The key fingerprint is:\n"
+"%2\n"
+"Add the correct host key to \"%3\" to get rid of this message."
+msgstr ""
+
+#: ksshprocess.cpp:996
+msgid ""
+"WARNING: The identity of the remote host '%1' has changed!\n"
+"\n"
+"Someone could be eavesdropping on your connection, or the administrator may "
+"have just changed the host's key. Either way, you should verify the host's "
+"key fingerprint with the host's administrator before connecting. The key "
+"fingerprint is:\n"
+"%2\n"
+"\n"
+"Would you like to accept the host's new key and connect anyway?"
+msgstr ""
+
+#: ksshprocess.cpp:1020
+msgid "Host key was rejected."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Sftp Login"
+#~ msgstr "Đăng nhập Sftp"
+
+#~ msgid "Shall we continue connecting to %1?"
+#~ msgstr "Chúng ta có thể tiếp tục nối tới %1 không ? "
+
+#~ msgid "Timed out waiting for a response from the server."
+#~ msgstr "Hết giờ đợi trả lời từ server ."
+
+#~ msgid "Login failed."
+#~ msgstr "Đăng nhập thất bại ."
+
+#~ msgid ""
+#~ "Could not login to %1.\n"
+#~ "Maximum number of retries exceeded."
+#~ msgstr ""
+#~ "Không thể nối tới %1 .\n"
+#~ "Đã quá số tối  đa lần thử lại cho phép ."
+
+#~ msgid "Login failed. Retrying..."
+#~ msgstr "Đăng nhập thất bại . Thử lại ...."
+
+#~ msgid ""
+#~ "Login failed.\n"
+#~ "Please confirm your username and password, and enter them again."
+#~ msgstr ""
+#~ "Đăng nhập thất bại . \n"
+#~ "Xãy xác nhận lại tên người dùng và mật khẩu và thử lại một lần nữa ."
+
+#~ msgid "Warning: Host key not found!"
+#~ msgstr "Cảnh báo : Không tìm thấy khoá Host !"
+
+#~ msgid "Connected to "
+#~ msgstr "Đã nối tới"
+
+#~ msgid "Login OK"
+#~ msgstr "Đăng nhập OK "

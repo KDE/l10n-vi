@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kicker VERSION\n"
-"POT-Creation-Date: 2004-01-07 01:28+0100\n"
+"POT-Creation-Date: 2004-06-28 01:56+0200\n"
 "PO-Revision-Date: 2002-03-12 16:19GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -44,21 +44,23 @@ msgstr "Duyệt: %1"
 msgid "Show desktop"
 msgstr "Hiển desktop"
 
-#: buttons/desktopbutton.cpp:44
-msgid "Show Desktop"
-msgstr "Hiển desktop"
+#: buttons/desktopbutton.cpp:44 ui/addspecialbutton_mnu.cpp:54
+#: ui/removespecialbutton_mnu.cpp:77
+msgid "Desktop Access"
+msgstr "Truy cập desktop"
 
 #: buttons/kbutton.cpp:50
 msgid "Click here to browse and start applications"
 msgstr ""
 
-#: buttons/kbutton.cpp:51
-#, fuzzy
-msgid "Start Applications"
-msgstr "Khởi động chương trình"
+#: buttons/kbutton.cpp:51 ui/addspecialbutton_mnu.cpp:48 ui/k_mnu.cpp:73
+#: ui/removespecialbutton_mnu.cpp:62
+msgid "K Menu"
+msgstr "Thực đơn K"
 
 #: buttons/nonkdeappbutton.cpp:125 buttons/nonkdeappbutton.cpp:145
-msgid "Cannot execute non-KDE application!"
+#, fuzzy
+msgid "Cannot execute non-KDE application."
 msgstr "Không thực thi được chương trình non-KDE"
 
 #: buttons/nonkdeappbutton.cpp:126 buttons/nonkdeappbutton.cpp:146
@@ -71,8 +73,9 @@ msgstr "Lỗi kicker !"
 msgid "Applications"
 msgstr "Khởi động chương trình"
 
-#: buttons/urlbutton.cpp:194
-msgid "The file %1 doesn't exist"
+#: buttons/urlbutton.cpp:217
+#, fuzzy
+msgid "The file %1 does not exist"
 msgstr "File %1 không tồn tại ."
 
 #: buttons/windowlistbutton.cpp:39
@@ -80,7 +83,7 @@ msgstr "File %1 không tồn tại ."
 msgid "Window list"
 msgstr "Danh sách cửa sổ"
 
-#: buttons/windowlistbutton.cpp:41
+#: buttons/windowlistbutton.cpp:41 ui/addspecialbutton_mnu.cpp:49
 msgid "Window List"
 msgstr "Danh sách cửa sổ"
 
@@ -93,25 +96,25 @@ msgstr ""
 msgid "%1 menu"
 msgstr "Thực đơn K"
 
-#: core/container_applet.cpp:251
+#: core/container_applet.cpp:252
 msgid "The %1 applet could not be loaded. Please check your installation."
 msgstr ""
 
-#: core/container_applet.cpp:252
+#: core/container_applet.cpp:253
 msgid "Applet Loading Error"
 msgstr ""
 
-#: core/container_panel.cpp:434 core/container_panel.cpp:435
+#: core/container_panel.cpp:448 core/container_panel.cpp:449
 #, fuzzy
 msgid "Show panel"
 msgstr "Hiện khung"
 
-#: core/container_panel.cpp:437 core/container_panel.cpp:438
+#: core/container_panel.cpp:451 core/container_panel.cpp:452
 #, fuzzy
 msgid "Hide panel"
 msgstr "Â?n khung"
 
-#: core/kicker.cpp:237 core/kickerbindings.cpp:16 ui/addcontainer_mnu.cpp:47
+#: core/kicker.cpp:279 core/kickerbindings.cpp:16 ui/addcontainer_mnu.cpp:47
 #: ui/removecontainer_mnu.cpp:48
 msgid "Panel"
 msgstr "Khung"
@@ -124,20 +127,21 @@ msgstr "Thực đơn khởi động popup"
 msgid "Toggle Showing Desktop"
 msgstr "Chuyển hiển thị desktop"
 
-#: core/main.cpp:109
+#: core/main.cpp:45
+#, fuzzy
+msgid "The KDE panel"
+msgstr "Khung deskop KDE ."
+
+#: core/main.cpp:115
 msgid "KDE Panel"
 msgstr "Khung KDE"
 
-#: core/main.cpp:111
-msgid "The KDE desktop panel."
-msgstr "Khung deskop KDE ."
-
-#: core/main.cpp:113
+#: core/main.cpp:117
 #, fuzzy
-msgid "(c) 1999-2002, The KDE Team"
+msgid "(c) 1999-2004, The KDE Team"
 msgstr "(c) 1999-2000, The KDE Team"
 
-#: core/main.cpp:122
+#: core/main.cpp:126
 msgid "Kiosk mode"
 msgstr ""
 
@@ -154,20 +158,7 @@ msgstr "Khởi động chương trình"
 msgid "Special Button"
 msgstr "Nút đặc biệt"
 
-#: ui/addspecialbutton_mnu.cpp:48 ui/k_mnu.cpp:73
-#: ui/removespecialbutton_mnu.cpp:62
-msgid "K Menu"
-msgstr "Thực đơn K"
-
-#: ui/addspecialbutton_mnu.cpp:49 ui/removespecialbutton_mnu.cpp:67
-msgid "Windowlist"
-msgstr "Danh sách cửa sổ"
-
-#: ui/addspecialbutton_mnu.cpp:54 ui/removespecialbutton_mnu.cpp:77
-msgid "Desktop Access"
-msgstr "Truy cập desktop"
-
-#: ui/addspecialbutton_mnu.cpp:55 ui/k_mnu.cpp:235
+#: ui/addspecialbutton_mnu.cpp:55 ui/k_mnu.cpp:238
 #: ui/removespecialbutton_mnu.cpp:82
 msgid "Quick Browser"
 msgstr "Trình duyệt nhanh"
@@ -287,8 +278,9 @@ msgstr "Mở trình quản lí file "
 msgid "Open in Terminal"
 msgstr "Mở trong đầu cuối"
 
-#: ui/browser_mnu.cpp:299
-msgid "More..."
+#: ui/browser_mnu.cpp:300
+#, fuzzy
+msgid "More"
 msgstr "Hơn nữa ..."
 
 #: ui/customSize_dlg.cpp:33 ui/customSize_dlg.cpp:41
@@ -356,40 +348,51 @@ msgstr ""
 "file đã chọn không thực thi được .\n"
 "Bạn có muốn chọn file khác không ?"
 
-#: ui/k_mnu.cpp:204
+#: ui/k_mnu.cpp:207
 #, fuzzy
 msgid "All Applications"
 msgstr "Khởi động chương trình"
 
-#: ui/k_mnu.cpp:206
+#: ui/k_mnu.cpp:209
 #, fuzzy
 msgid "Actions"
 msgstr "Khởi động chương trình"
 
-#: ui/k_mnu.cpp:282
+#: ui/k_mnu.cpp:285
 msgid "Run Command..."
 msgstr "Chạy lệnh ..."
 
-#: ui/k_mnu.cpp:299
+#: ui/k_mnu.cpp:302
 #, fuzzy
-msgid "Start New Session"
+msgid "Start New Session..."
 msgstr "Session đầu cuối"
 
-#: ui/k_mnu.cpp:309
+#: ui/k_mnu.cpp:312
 #, fuzzy
 msgid "Save Session"
 msgstr "Session đầu cuối"
 
-#: ui/k_mnu.cpp:312
-msgid "Lock Screen"
+#: ui/k_mnu.cpp:315
+#, fuzzy
+msgid "Lock Session"
 msgstr "Khoá màn hình"
 
-#: ui/k_mnu.cpp:315
+#: ui/k_mnu.cpp:318
 #, fuzzy
 msgid "Logout..."
 msgstr "Thoát ra"
 
-#: ui/k_mnu.cpp:362
+#: ui/k_mnu.cpp:364
+#, fuzzy
+msgid "Warning - New Session"
+msgstr "Session đầu cuối"
+
+#: ui/k_mnu.cpp:369
+#, fuzzy
+msgid "&Start New Session"
+msgstr "Session đầu cuối"
+
+#: ui/k_mnu.cpp:372
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
@@ -399,6 +402,11 @@ msgid ""
 "sessions by pressing CTRL, ALT and the appropriate F-key at the same "
 "time.</p>"
 msgstr ""
+
+#: ui/k_mnu.cpp:384
+#, fuzzy
+msgid "&Lock current session"
+msgstr "Khoá màn hình"
 
 #: ui/panelop_mnu.cpp:111
 msgid "Tiny"
@@ -486,14 +494,25 @@ msgstr ""
 msgid "%1 (Left)"
 msgstr ""
 
-#: ui/service_mnu.cpp:248
+#: ui/removespecialbutton_mnu.cpp:67
+msgid "Windowlist"
+msgstr "Danh sách cửa sổ"
+
+#: ui/service_mnu.cpp:252
 msgid "No Entries"
 msgstr "Không có hạng mục"
 
-#: ui/service_mnu.cpp:255
+#: ui/service_mnu.cpp:259
 #, fuzzy
 msgid "Add This Menu"
 msgstr "Thêm thực đơn này"
+
+#~ msgid "Show Desktop"
+#~ msgstr "Hiển desktop"
+
+#, fuzzy
+#~ msgid "Start Applications"
+#~ msgstr "Khởi động chương trình"
 
 #~ msgid "Extension"
 #~ msgstr "Mở rộng"

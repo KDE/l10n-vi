@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kate 1.0 \n"
-"POT-Creation-Date: 2004-01-11 01:36+0100\n"
+"POT-Creation-Date: 2004-07-25 01:16+0200\n"
 "PO-Revision-Date: 2002-04-26 01:04GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -14,225 +14,319 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: app/kateviewspace.cpp:283
-#, fuzzy
-msgid " Line: 1 Col: 0 "
-msgstr " Dòng: %1 Cột: %2"
+#: app/kateexternaltools.cpp:268
+msgid "Edit External Tool"
+msgstr ""
 
-#: app/kateviewspace.cpp:293 app/kateviewspace.cpp:332
+#: app/kateexternaltools.cpp:282
+#, fuzzy
+msgid "&Name:"
+msgstr "Tên:"
+
+#: app/kateexternaltools.cpp:287
+msgid "The name will be displayed in the 'Tools->External' menu"
+msgstr ""
+
+#: app/kateexternaltools.cpp:291
+#, fuzzy
+msgid "Co&mmand:"
+msgstr "&Lời bình"
+
+#: app/kateexternaltools.cpp:296
+msgid ""
+"<p>The command to execute to invoke the tool. The following macros will be "
+"expanded:</p>"
+"<ul>"
+"<li><code>%URL</code> - the URL of the current "
+"document."
+"<li><code>%URLs</code> - a list of the URLs of all open "
+"documents."
+"<li><code>%directory</code> - the URL of the directory containing the "
+"current document."
+"<li><code>filename</code> - the filename of the current "
+"document."
+"<li><code>%line</code> - the current line of the text cursor in the current "
+"view."
+"<li><code>%column</code> - the column of the text cursor in the current "
+"view."
+"<li><code>%selection</code> - the selected text in the current "
+"view.<li><code>%text</code> - the text of the current document.</ul>"
+msgstr ""
+
+#: app/kateexternaltools.cpp:319
+msgid "&Executable:"
+msgstr ""
+
+#: app/kateexternaltools.cpp:324
+msgid ""
+"The executable used by the command. This is used to check if a tool should "
+"be displayed; if not set, the first word of <em>command</em> will be used."
+msgstr ""
+
+#: app/kateexternaltools.cpp:330
+msgid "&Mime types:"
+msgstr ""
+
+#: app/kateexternaltools.cpp:335
+msgid ""
+"A semicolon-separated list of mime types for which this tool should be "
+"available; if this is left empty, the tool is always available.To choose "
+"from known mimetypes, press the button on the right."
+msgstr ""
+
+#: app/kateexternaltools.cpp:345
+msgid "You must specify at least a name and a command"
+msgstr ""
+
+#: app/kateexternaltools.cpp:363
+#, fuzzy
+msgid "&New..."
+msgstr "Tắt cài hiện &tại"
+
+#: app/kateexternaltools.cpp:371
+msgid "&Edit..."
+msgstr ""
+
+#: app/kateexternaltools.cpp:375
+msgid "Insert &Separator"
+msgstr ""
+
+#: app/kateexternaltools.cpp:395
+msgid "This list shows all the configured tools, represented by their menu text."
+msgstr ""
+
+#: app/kateviewspace.cpp:315 app/kateviewspace.cpp:354
 msgid " INS "
 msgstr " INS "
 
-#: app/kateviewspace.cpp:298 app/kateviewspace.cpp:336
+#: app/kateviewspace.cpp:320 app/kateviewspace.cpp:358
 msgid " NORM "
 msgstr " NORM "
 
-#: app/kateviewspace.cpp:324
+#: app/kateviewspace.cpp:346
 #, fuzzy
 msgid " Line: %1 Col: %2 "
 msgstr " Dòng: %1 Cột: %2"
 
-#: app/kateviewspace.cpp:328
+#: app/kateviewspace.cpp:350
 msgid " R/O "
 msgstr " R/O "
 
-#: app/kateviewspace.cpp:330
+#: app/kateviewspace.cpp:352
 msgid " OVR "
 msgstr " OVR "
 
-#: app/kateviewspace.cpp:336
+#: app/kateviewspace.cpp:358
 msgid " BLK "
 msgstr " BLK "
 
-#: app/katemainwindow.cpp:195
+#: app/katemainwindow.cpp:206
+#, fuzzy
 msgid "Projects"
-msgstr ""
+msgstr "Trình biên dịch dự án"
 
-#: app/katemainwindow.cpp:204
+#: app/katemainwindow.cpp:215
 #, fuzzy
 msgid "Selector"
 msgstr "Hiển thị trình chọn file"
 
-#: app/kategrepdialog.cpp:73 app/katemainwindow.cpp:207
+#: app/kategrepdialog.cpp:73 app/katemainwindow.cpp:218
 #, fuzzy
 msgid "Find in Files"
 msgstr "Tìm trong file ..."
 
-#: app/katemainwindow.cpp:212
+#: app/katemainwindow.cpp:223
 msgid "Terminal"
 msgstr ""
 
-#: app/katemainwindow.cpp:223
+#: app/katemainwindow.cpp:234
 #, fuzzy
 msgid "KDE Scri&pts"
 msgstr "Kịch bản KDE"
 
-#: app/katemainwindow.cpp:224
+#: app/katemainwindow.cpp:235
 msgid "This shows all available scripts and allows them to be executed."
 msgstr ""
 
-#: app/katemainwindow.cpp:228
+#: app/katemainwindow.cpp:239
+#, fuzzy
 msgid "Create a new document"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:229
+#: app/katemainwindow.cpp:240
 msgid "Open an existing document for editing"
 msgstr ""
 
-#: app/katemainwindow.cpp:232 app/kwritemain.cpp:150
+#: app/katemainwindow.cpp:243 app/kwritemain.cpp:150
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
 msgstr ""
 
-#: app/katemainwindow.cpp:234
+#: app/katemainwindow.cpp:245
 msgid "Save A&ll"
 msgstr "Cất &tất cả"
 
-#: app/katemainwindow.cpp:235
+#: app/katemainwindow.cpp:246
+#, fuzzy
 msgid "Save all open, modified documents to disc."
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:237
+#: app/katemainwindow.cpp:248
 #, fuzzy
 msgid "Close the current document."
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:239
+#: app/katemainwindow.cpp:250
 msgid "Clos&e All"
 msgstr "&Tắt tất cả"
 
-#: app/katemainwindow.cpp:240
+#: app/katemainwindow.cpp:251
 #, fuzzy
 msgid "Close all open documents."
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:242
-msgid "Send one or more of the open documents as email attachments."
-msgstr ""
-
-#: app/katemainwindow.cpp:244
-#, fuzzy
-msgid "Close this window"
-msgstr "Bật một Kate mới( mặc định là không)"
-
-#: app/katemainwindow.cpp:247
-msgid "Create a new Kate view (a new window with the same document list)."
-msgstr ""
-
-#: app/katemainwindow.cpp:249
-msgid "Split &Vertical"
-msgstr "Xẻ &dọc"
-
-#: app/katemainwindow.cpp:250
-msgid "Split the currently active view vertically into two views."
-msgstr ""
-
-#: app/katemainwindow.cpp:252
-msgid "Split &Horizontal"
-msgstr "Xẻ đứn&g"
-
 #: app/katemainwindow.cpp:253
-msgid "Split the currently active view horizontally into two views."
+msgid "Send one or more of the open documents as email attachments."
 msgstr ""
 
 #: app/katemainwindow.cpp:255
 #, fuzzy
+msgid "Close this window"
+msgstr "Bật một Kate mới( mặc định là không)"
+
+#: app/katemainwindow.cpp:258
+msgid "Create a new Kate view (a new window with the same document list)."
+msgstr ""
+
+#: app/katemainwindow.cpp:260
+msgid "Split &Vertical"
+msgstr "Xẻ &dọc"
+
+#: app/katemainwindow.cpp:261
+msgid "Split the currently active view vertically into two views."
+msgstr ""
+
+#: app/katemainwindow.cpp:263
+msgid "Split &Horizontal"
+msgstr "Xẻ đứn&g"
+
+#: app/katemainwindow.cpp:264
+msgid "Split the currently active view horizontally into two views."
+msgstr ""
+
+#: app/katemainwindow.cpp:266
+#, fuzzy
 msgid "Close &Current View"
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:256
+#: app/katemainwindow.cpp:267
+#, fuzzy
 msgid "Close the currently active splitted view"
-msgstr ""
+msgstr "Thư mục tài liệu hiện tại"
 
-#: app/katemainwindow.cpp:261
-msgid "Next View"
-msgstr "Xem tiếp "
-
-#: app/katemainwindow.cpp:262
-msgid "Make the next split view the active one."
-msgstr ""
-
-#: app/katemainwindow.cpp:264
-msgid "Previous View"
-msgstr "Xem trước"
-
-#: app/katemainwindow.cpp:265
-msgid "Make the previous split view the active one."
+#: app/kateconfigdialog.cpp:278 app/kateconfigdialog.cpp:279
+#: app/katemainwindow.cpp:269 app/katemainwindow.cpp:547
+msgid "External Tools"
 msgstr ""
 
 #: app/katemainwindow.cpp:270
+msgid "Launch external helper applications"
+msgstr ""
+
+#: app/katemainwindow.cpp:275
+msgid "Next View"
+msgstr "Xem tiếp "
+
+#: app/katemainwindow.cpp:276
+msgid "Make the next split view the active one."
+msgstr ""
+
+#: app/katemainwindow.cpp:278
+msgid "Previous View"
+msgstr "Xem trước"
+
+#: app/katemainwindow.cpp:279
+msgid "Make the previous split view the active one."
+msgstr ""
+
+#: app/katemainwindow.cpp:284
 msgid "Open W&ith"
 msgstr "&Mở bằng"
 
-#: app/katemainwindow.cpp:271
+#: app/katemainwindow.cpp:285
 msgid ""
 "Open the current document using another application registered for its file "
 "type, or an application of your choice."
 msgstr ""
 
-#: app/katemainwindow.cpp:276 app/kwritemain.cpp:172
+#: app/katemainwindow.cpp:290 app/kwritemain.cpp:173
 msgid "Configure the application's keyboard shortcut assignments."
 msgstr ""
 
-#: app/katemainwindow.cpp:279 app/kwritemain.cpp:175
+#: app/katemainwindow.cpp:293 app/kwritemain.cpp:176
 msgid "Configure which items should appear in the toolbar(s)."
 msgstr ""
 
-#: app/katemainwindow.cpp:283
+#: app/katemainwindow.cpp:297
 #, fuzzy
 msgid "&New Project..."
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:284
+#: app/katemainwindow.cpp:298
 #, fuzzy
 msgid "&Open Project..."
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:285
+#: app/katemainwindow.cpp:299
+#, fuzzy
 msgid "&Save Project"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:286
+#: app/katemainwindow.cpp:300
 #, fuzzy
 msgid "&Close Project"
 msgstr "Tắt cài hiện &tại"
 
-#: app/katemainwindow.cpp:291
+#: app/katemainwindow.cpp:305
 msgid "Configure various aspects of this application and the editing component."
 msgstr ""
 
-#: app/katemainwindow.cpp:294
+#: app/katemainwindow.cpp:309
+msgid "&Pipe to Console"
+msgstr ""
+
+#: app/katemainwindow.cpp:312
 msgid "This shows useful tips on the use of this application."
 msgstr ""
 
-#: app/katemainwindow.cpp:298
+#: app/katemainwindow.cpp:316
 msgid "Contents &Plugins"
 msgstr "Nội dung &Plugin"
 
-#: app/katemainwindow.cpp:299
+#: app/katemainwindow.cpp:317
 msgid "This shows help files for various available plugins."
 msgstr ""
 
-#: app/katemainwindow.cpp:619 app/katemainwindow.cpp:627
+#: app/katemainwindow.cpp:640 app/katemainwindow.cpp:648
 msgid "&Other..."
 msgstr "&Khác..."
 
-#: app/katemainwindow.cpp:683
+#: app/katemainwindow.cpp:704
 msgid ""
 "<p>The current document has not been saved, and cannot be attached to an "
 "email message.<p>Do you want to save it and proceed?"
 msgstr ""
 
-#: app/katemainwindow.cpp:686
+#: app/katemainwindow.cpp:707
 msgid "Cannot Send Unsaved File"
 msgstr ""
 
-#: app/katemainwindow.cpp:694 app/katemainwindow.cpp:715
+#: app/katemainwindow.cpp:715 app/katemainwindow.cpp:736
 msgid "The file could not be saved. Please check if you have write permission."
 msgstr "Không cất được filẹ Kiểm tra phân quyền của filẹ"
 
-#: app/katemainwindow.cpp:705
+#: app/katemainwindow.cpp:726
 msgid ""
 "<p>The current file:"
 "<br><strong>%1</strong>"
@@ -240,18 +334,19 @@ msgid ""
 "attachment.<p>Do you want to save it before sending it?"
 msgstr ""
 
-#: app/katemainwindow.cpp:708
+#: app/katemainwindow.cpp:729
 msgid "Save Before Sending?"
 msgstr ""
 
-#: app/katemainwindow.cpp:809 app/kateprojectmanager.cpp:309
+#: app/katemainwindow.cpp:861 app/kateprojectmanager.cpp:314
 #, fuzzy
 msgid "Kate Project Files"
 msgstr "Trình biên dịch dự án"
 
-#: app/katemainwindow.cpp:809
+#: app/katemainwindow.cpp:861
+#, fuzzy
 msgid "Open Kate Project"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
 #: app/katemailfilesdialog.cpp:47
 #, fuzzy
@@ -290,37 +385,37 @@ msgstr ""
 msgid "Press <strong>Mail...</strong> to send selected documents"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:92 app/kateconfigdialog.cpp:98
-#: app/kateconfigdialog.cpp:234 app/kateconfigdialog.cpp:243
-#: app/kateconfigdialog.cpp:290
+#: app/kateconfigdialog.cpp:93 app/kateconfigdialog.cpp:99
+#: app/kateconfigdialog.cpp:261 app/kateconfigdialog.cpp:270
+#: app/kateconfigdialog.cpp:278 app/kateconfigdialog.cpp:325
 #, fuzzy
 msgid "Application"
 msgstr "Mode chương trình"
 
-#: app/kateconfigdialog.cpp:98
+#: app/kateconfigdialog.cpp:99
 msgid "General"
 msgstr "Chung"
 
-#: app/kateconfigdialog.cpp:99
+#: app/kateconfigdialog.cpp:100
 msgid "General Options"
 msgstr "Các tuỳ chọn chung"
 
-#: app/kateconfigdialog.cpp:106
+#: app/kateconfigdialog.cpp:107
 #, fuzzy
 msgid "Startup"
 msgstr "Vào lúc khởi động"
 
-#: app/kateconfigdialog.cpp:111
+#: app/kateconfigdialog.cpp:112
 #, fuzzy
 msgid "Reopen &projects at startup"
 msgstr "Mở lại &file"
 
-#: app/kateconfigdialog.cpp:119
+#: app/kateconfigdialog.cpp:120
 #, fuzzy
 msgid "Reopen &files at startup"
 msgstr "Mở lại &file"
 
-#: app/kateconfigdialog.cpp:123
+#: app/kateconfigdialog.cpp:124
 msgid ""
 "If this is enabled Kate will attempt to reopen files that were open when you "
 "closed last time. Cursor position will be recovered if possible. "
@@ -331,12 +426,12 @@ msgstr ""
 "cũng đượccố gắng khôi phục. File không tồn tại sẽ không "
 "được mở."
 
-#: app/kateconfigdialog.cpp:131
+#: app/kateconfigdialog.cpp:132
 #, fuzzy
 msgid "Restore &window configuration"
 msgstr "Khôi phục cấu hình &Xem"
 
-#: app/kateconfigdialog.cpp:134
+#: app/kateconfigdialog.cpp:135
 msgid ""
 "Check this if you want all your views and frames restored each time you open "
 "Kate"
@@ -344,56 +439,56 @@ msgstr ""
 "Kiểm tra xem bạn có muốn mọi view và khung được khôi phục "
 "mỗi lần bạn mở lại Kate"
 
-#: app/kateconfigdialog.cpp:142
+#: app/kateconfigdialog.cpp:143
 msgid "Default GUI mode for new windows:"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:146
+#: app/kateconfigdialog.cpp:147
 msgid "Toplevel Mode"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:146
+#: app/kateconfigdialog.cpp:147
 msgid "Childframe Mode"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:146 app/kateconfigdialog.cpp:149
+#: app/kateconfigdialog.cpp:147 app/kateconfigdialog.cpp:150
 msgid "Tab Page Mode"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:146 app/kateconfigdialog.cpp:149
+#: app/kateconfigdialog.cpp:147 app/kateconfigdialog.cpp:150
 msgid "IDEAL Mode"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:166
+#: app/kateconfigdialog.cpp:167
 #, fuzzy
 msgid "Show full &path in title"
 msgstr "Hiển thị đường &dẫn đầy đủ trong đầu đề"
 
-#: app/kateconfigdialog.cpp:168
+#: app/kateconfigdialog.cpp:169
 msgid ""
 "If this option is checked, the full document path will be shown in the "
 "window caption."
 msgstr ""
 
-#: app/kateconfigdialog.cpp:173
-msgid "Sort &files alphabetically in the file list."
+#: app/kateconfigdialog.cpp:174
+msgid "Sort &files alphabetically in the file list"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:176
+#: app/kateconfigdialog.cpp:177
 msgid "If this is checked, the files in the file list will be sorted alphabetically."
 msgstr ""
 
-#: app/kateconfigdialog.cpp:180
+#: app/kateconfigdialog.cpp:181
 #, fuzzy
 msgid "Behavior"
 msgstr "Cư xử chọn"
 
-#: app/kateconfigdialog.cpp:185
+#: app/kateconfigdialog.cpp:186
 #, fuzzy
 msgid "&Number of recent files:"
 msgstr "&Số của các tài liệu gần đây"
 
-#: app/kateconfigdialog.cpp:190
+#: app/kateconfigdialog.cpp:191
 msgid ""
 "<qt>Sets the number of recent files remembered by Kate."
 "<p><strong>NOTE: </strong>If you set this lower than the current value, the "
@@ -404,11 +499,11 @@ msgstr ""
 "cáctài liệu gần đây, danh sách sẽ bị cắt và một số "
 "hạng mụcsẽ bị quên.</qt>"
 
-#: app/kateconfigdialog.cpp:199
+#: app/kateconfigdialog.cpp:200
 msgid "Allow Kate to use more than one UN&IX process"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:203
+#: app/kateconfigdialog.cpp:204
 #, fuzzy
 msgid ""
 "If this is unchecked, Kate will only use one UNIX process. If you try "
@@ -420,12 +515,12 @@ msgstr ""
 "instance của KatẹNếu bạn thử, instance hiện tại sẽ được "
 "lấy làm tiêu điểm vàmở mọi file bạn yêu cầụ"
 
-#: app/kateconfigdialog.cpp:210
+#: app/kateconfigdialog.cpp:211
 #, fuzzy
 msgid "Sync &terminal emulator with active document"
 msgstr "Đồng bộ hoá &Konsole với tài liệu kích hoạt"
 
-#: app/kateconfigdialog.cpp:213
+#: app/kateconfigdialog.cpp:214
 msgid ""
 "If this is checked, the built in Konsole will <code>cd</code> to the "
 "directory of the active document when started and whenever the active "
@@ -436,36 +531,63 @@ msgstr ""
 "hoạt khi được bắt đầụvà bất kì khi nào tài liệu kích "
 "hoạt thay đổi nếu như tài liệu là file địa phương ."
 
-#: app/kateconfigdialog.cpp:220
+#: app/kateconfigdialog.cpp:221
 msgid "Wa&rn about files modified by foreign processes"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:223
+#: app/kateconfigdialog.cpp:224
 msgid ""
 "If enabled, a passive popup message will be displayed whenever a local file "
 "is modified, created or deleted by another process."
 msgstr ""
 
-#: app/kateconfigdialog.cpp:234
+#: app/kateconfigdialog.cpp:230
+msgid "Meta-Information"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:235
+msgid "Keep &meta-information past sessions"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:238
+msgid ""
+"Check this if you want document configuration like for example bookmarks to "
+"be saved past editor sessions. The configuration will be restored if the "
+"document has not changed when reopened."
+msgstr ""
+
+#: app/kateconfigdialog.cpp:246
+msgid "&Delete unused meta-information after:"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:248
+msgid "(never)"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:249
+msgid " day(s)"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:261
 #, fuzzy
 msgid "File Selector"
 msgstr "Hiển thị trình chọn file"
 
-#: app/kateconfigdialog.cpp:236
+#: app/kateconfigdialog.cpp:263
 #, fuzzy
 msgid "File Selector Settings"
 msgstr "Hiển thị trình chọn file"
 
-#: app/kateconfigdialog.cpp:243 app/kateconfigdialog.cpp:290
+#: app/kateconfigdialog.cpp:270 app/kateconfigdialog.cpp:325
 msgid "Plugins"
 msgstr "Plugin"
 
-#: app/kateconfigdialog.cpp:244
+#: app/kateconfigdialog.cpp:271
 #, fuzzy
 msgid "Plugin Manager"
 msgstr "Trình quản lí"
 
-#: app/kateconfigdialog.cpp:251 app/kateconfigdialog.cpp:257
+#: app/kateconfigdialog.cpp:286 app/kateconfigdialog.cpp:292
 msgid "Editor"
 msgstr "Trình biên tập"
 
@@ -474,42 +596,51 @@ msgstr "Trình biên tập"
 msgid "Pattern:"
 msgstr "&Pattern:"
 
-#: app/kategrepdialog.cpp:106
+#: app/kategrepdialog.cpp:108
+msgid "Case sensitive"
+msgstr ""
+
+#: app/kategrepdialog.cpp:113
+msgid "Regular expression"
+msgstr ""
+
+#: app/kategrepdialog.cpp:119
 #, fuzzy
 msgid "Template:"
 msgstr "&Mẫu"
 
-#: app/kategrepdialog.cpp:125
+#: app/kategrepdialog.cpp:138
 #, fuzzy
 msgid "Files:"
 msgstr "&File:"
 
-#: app/kategrepdialog.cpp:138
+#: app/kategrepdialog.cpp:151
 #, fuzzy
 msgid "Directory:"
 msgstr "&Thư mục:"
 
-#: app/kategrepdialog.cpp:152
+#: app/kategrepdialog.cpp:167
 #, fuzzy
 msgid "Recursive"
 msgstr "Đệ &quy"
 
-#: app/kategrepdialog.cpp:161 app/kategrepdialog.cpp:396
-#, fuzzy
-msgid "Search"
-msgstr "&Tìm kiếm"
+#: app/kategrepdialog.cpp:175 app/kategrepdialog.cpp:430
+msgid "Find"
+msgstr ""
 
-#: app/kategrepdialog.cpp:176
+#: app/kategrepdialog.cpp:190
+#, fuzzy
 msgid ""
-"Enter the regular expression you want to search for here."
-"<br>Possible meta characters are:"
+"<p>Enter the expression you want to search for here."
+"<p>If 'regular expression' is unchecked, any non-space letters in your "
+"expression will be escaped with a backslash character."
+"<p>Possible meta characters are:"
 "<br><b>.</b> - Matches any character"
 "<br><b>^</b> - Matches the beginning of a line"
 "<br><b>$</b> - Matches the end of a line"
-"<br><b>\\\\\\&lt;</b> - Matches the beginning of a word"
-"<br><b>\\\\\\&gt;</b> - Matches the end of a word"
-"<br>"
-"<br>The following repetition operators exist:"
+"<br><b>\\&lt;</b> - Matches the beginning of a word"
+"<br><b>\\&gt;</b> - Matches the end of a word"
+"<p>The following repetition operators exist:"
 "<br><b>?</b> - The preceding item is matched at most once"
 "<br><b>*</b> - The preceding item is matched zero or more times"
 "<br><b>+</b> - The preceding item is matched one or more "
@@ -521,11 +652,11 @@ msgid ""
 "<br><b>{,<i>n</i>}</b> - The preceding item is matched at most <i>n</i> "
 "times"
 "<br><b>{<i>n</i>,<i>m</i>}</b> - The preceding item is matched at least "
-"<i>n</i>,"
-"<br>   but at most <i>m</i> times."
-"<br>"
-"<br>Furthermore, backreferences to bracketed subexpressions are"
-"<br>available via the notation \\\\<i>n</i>."
+"<i>n</i>, but at most <i>m</i> times."
+"<p>"
+"Furthermore, backreferences to bracketed subexpressions are available via "
+"the notation <code>\\#</code>."
+"<p>See the grep(1) documentation for the full documentation."
 msgstr ""
 "Enter the regular expression you want to search for herẹ"
 "<br>Possible meta characters are:<br><b>.</b> - Matches any character\n"
@@ -552,15 +683,16 @@ msgstr ""
 "<br>Furthermore, backreferences to bracketed subexpressions are"
 "<br>available via the notation \\\\<i>n</i>."
 
-#: app/kategrepdialog.cpp:198
+#: app/kategrepdialog.cpp:213
+#, fuzzy
 msgid ""
 "Enter the file name pattern of the files to search here.\n"
-"You may give several patterns separated by commas"
+"You may give several patterns separated by commas."
 msgstr ""
 "Nhập vào tên pattern của tên file sẽ được tìm.\n"
 "Bạn có thể nhập nhiều biểu thức cách nhau bằng dấu phảy"
 
-#: app/kategrepdialog.cpp:201
+#: app/kategrepdialog.cpp:216
 #, c-format
 msgid ""
 "You can choose a template for the pattern from the combo box\n"
@@ -574,15 +706,28 @@ msgstr ""
 "biểu thức \n"
 "chính quy sẽ tìm."
 
-#: app/kategrepdialog.cpp:206
+#: app/kategrepdialog.cpp:221
 msgid "Enter the directory which contains the files you want to search in."
 msgstr "Nhập thư mục chứa file bạn cần tìm."
 
-#: app/kategrepdialog.cpp:208
+#: app/kategrepdialog.cpp:223
 msgid "Check this box to search in all subdirectories."
 msgstr "Chọn hộp này để tìm trong cả các thư mục con."
 
-#: app/kategrepdialog.cpp:210
+#: app/kategrepdialog.cpp:225
+msgid "If this option is enabled (the default), the search will be case sensitive."
+msgstr ""
+
+#: app/kategrepdialog.cpp:227
+msgid ""
+"<p>If this is enabled, your pattern will be passed unmodified to "
+"<em>grep(1)</em>. Otherwise, all characters that are not letters will be "
+"escaped using a backslash character to prevent grep from interpreting them "
+"as part of the expression."
+msgstr ""
+
+#: app/kategrepdialog.cpp:232
+#, fuzzy
 msgid ""
 "The results of the grep run are listed here. Select a\n"
 "filename/line number combination and press Enter or doubleclick\n"
@@ -594,12 +739,12 @@ msgstr ""
 "vào hạng mục để hiển thị dòng tương ứng trong trình biên "
 "soạn."
 
-#: app/kategrepdialog.cpp:400
+#: app/kategrepdialog.cpp:434
 msgid "<strong>Error:</strong><p>"
 msgstr ""
 
-#: app/kategrepdialog.cpp:400
-msgid "Grep tool error"
+#: app/kategrepdialog.cpp:434
+msgid "Grep Tool Error"
 msgstr ""
 
 #: app/katemain.cpp:32
@@ -640,148 +785,137 @@ msgstr "Kate"
 msgid "Kate - Advanced Text Editor"
 msgstr "Kate - KDE Advanced Text Editor"
 
-#: app/katemain.cpp:47 app/kwritemain.cpp:544
+#: app/katemain.cpp:47 app/kwritemain.cpp:545
 #, fuzzy
-msgid "(c) 2000-2003 The Kate Authors"
+msgid "(c) 2000-2004 The Kate Authors"
 msgstr "(c) 2000-2001 The Kate Authors"
 
-#: app/katemain.cpp:49 app/kwritemain.cpp:546
+#: app/katemain.cpp:49 app/kwritemain.cpp:547
 msgid "Maintainer"
 msgstr ""
 
 #: app/katemain.cpp:50 app/katemain.cpp:51 app/katemain.cpp:52
-#: app/katemain.cpp:57 app/kwritemain.cpp:547 app/kwritemain.cpp:548
-#: app/kwritemain.cpp:549 app/kwritemain.cpp:554
+#: app/katemain.cpp:57 app/kwritemain.cpp:548 app/kwritemain.cpp:549
+#: app/kwritemain.cpp:550 app/kwritemain.cpp:555
 msgid "Core Developer"
 msgstr "Các nhà phát triển chính"
 
-#: app/katemain.cpp:53 app/kwritemain.cpp:550
+#: app/katemain.cpp:53 app/kwritemain.cpp:551
 msgid "The cool buffersystem"
 msgstr "Hệ thống đệm tuyệt diệu"
 
-#: app/katemain.cpp:54 app/kwritemain.cpp:551
+#: app/katemain.cpp:54 app/kwritemain.cpp:552
 #, fuzzy
 msgid "The Editing Commands"
 msgstr "Sửa &lệnh ..."
 
-#: app/katemain.cpp:55 app/kwritemain.cpp:552
+#: app/katemain.cpp:55 app/kwritemain.cpp:553
 msgid "Testing, ..."
 msgstr "Thử..."
 
-#: app/katemain.cpp:56 app/kwritemain.cpp:553
+#: app/katemain.cpp:56 app/kwritemain.cpp:554
 #, fuzzy
 msgid "Former Core Developer"
 msgstr "Các nhà phát triển chính"
 
-#: app/katemain.cpp:58 app/kwritemain.cpp:555
+#: app/katemain.cpp:58 app/kwritemain.cpp:556
 msgid "KWrite Author"
 msgstr "Tác giả Kwrite"
 
-#: app/katemain.cpp:59 app/kwritemain.cpp:556
+#: app/katemain.cpp:59 app/kwritemain.cpp:557
 msgid "KWrite port to KParts"
 msgstr "KWrite port thành Parts"
 
-#: app/katemain.cpp:62 app/kwritemain.cpp:559
+#: app/katemain.cpp:62 app/kwritemain.cpp:560
 msgid "KWrite Undo History, Kspell integration"
 msgstr "KWrite Undo History, Kspell integration"
 
-#: app/katemain.cpp:63 app/kwritemain.cpp:560
+#: app/katemain.cpp:63 app/kwritemain.cpp:561
 msgid "KWrite XML Syntax highlighting support"
 msgstr "Hỗ trợ highligh cú pháp cho XML của Kwrite"
 
-#: app/katemain.cpp:64 app/kwritemain.cpp:561
+#: app/katemain.cpp:64 app/kwritemain.cpp:562
 msgid "Patches and more"
 msgstr "Các miếng vá và..."
 
-#: app/katemain.cpp:66 app/kwritemain.cpp:563
+#: app/katemain.cpp:65
+msgid "Developer & Highlight wizard"
+msgstr ""
+
+#: app/katemain.cpp:67 app/kwritemain.cpp:564
 msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
 msgstr "Highlight cho file RPM spec,Perl, Diff vv..."
 
-#: app/katemain.cpp:67 app/kwritemain.cpp:564
+#: app/katemain.cpp:68 app/kwritemain.cpp:565
 msgid "Highlighting for VHDL"
 msgstr "Highlighti cho VHDL"
 
-#: app/katemain.cpp:68 app/kwritemain.cpp:565
+#: app/katemain.cpp:69 app/kwritemain.cpp:566
 msgid "Highlighting for SQL"
 msgstr "Highlight cho SQL"
 
-#: app/katemain.cpp:69 app/kwritemain.cpp:566
+#: app/katemain.cpp:70 app/kwritemain.cpp:567
 msgid "Highlighting for Ferite"
 msgstr "Highlight cho Ferite"
 
-#: app/katemain.cpp:70 app/kwritemain.cpp:567
+#: app/katemain.cpp:71 app/kwritemain.cpp:568
 msgid "Highlighting for ILERPG"
 msgstr "Highlight cho ILERPG"
 
-#: app/katemain.cpp:71 app/kwritemain.cpp:568
+#: app/katemain.cpp:72 app/kwritemain.cpp:569
 msgid "Highlighting for LaTeX"
 msgstr "Highlight cho LaTeX"
 
-#: app/katemain.cpp:72 app/kwritemain.cpp:569
+#: app/katemain.cpp:73 app/kwritemain.cpp:570
 msgid "Highlighting for Makefiles, Python"
 msgstr "Highlight cho Makefiles, Python"
 
-#: app/katemain.cpp:73 app/kwritemain.cpp:570
+#: app/katemain.cpp:74 app/kwritemain.cpp:571
 msgid "Highlighting for Python"
 msgstr "Highlight cho Python"
 
-#: app/katemain.cpp:75 app/kwritemain.cpp:572
+#: app/katemain.cpp:76 app/kwritemain.cpp:573
 msgid "Highlighting for Scheme"
 msgstr "Highlight cho Scheme"
 
-#: app/katemain.cpp:76 app/kwritemain.cpp:573
+#: app/katemain.cpp:77 app/kwritemain.cpp:574
 msgid "PHP Keyword/Datatype list"
 msgstr "Danh sách  từ khoá/kiểu dữ liệu của PHP"
 
-#: app/katemain.cpp:77 app/katemain.cpp:78 app/kwritemain.cpp:574
-#: app/kwritemain.cpp:575
-msgid "Betatest"
-msgstr "Thử bản thử nghiệm beta"
-
-#: app/katemain.cpp:79 app/kwritemain.cpp:576
+#: app/katemain.cpp:78 app/kwritemain.cpp:575
 msgid "Very nice help"
 msgstr "Trợ giúp rất hũư dụng"
 
-#: app/katemain.cpp:80 app/kwritemain.cpp:577
+#: app/katemain.cpp:79 app/kwritemain.cpp:576
 msgid "All people who have contributed and I have forgotten to mention"
 msgstr ""
 "Mọi người đều đã đóng góp và tôi đã quên không đề "
 "cập đến"
 
-#: app/katemain.cpp:82 app/kwritemain.cpp:579
+#: app/katemain.cpp:81 app/kwritemain.cpp:578
 msgid ""
 "_: NAME OF TRANSLATORS\n"
 "Your names"
 msgstr "Nguyen Hung Vu"
 
-#: app/katemain.cpp:82 app/kwritemain.cpp:579
+#: app/katemain.cpp:81 app/kwritemain.cpp:578
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "vuhung@fedu.uec.ac.jp"
 
-#: app/kactionselector.cpp:69
-#, fuzzy
-msgid "&Available:"
-msgstr "Các plugin hiện có"
-
-#: app/kactionselector.cpp:84
-#, fuzzy
-msgid "&Selected:"
-msgstr "Chọn"
-
-#: app/katedocmanager.cpp:273
+#: app/katedocmanager.cpp:311
 msgid ""
 "<p>The document '%1' has been modified, but not saved."
-"<p>Do you want to keep it?"
+"<p>Do you want to save your changes or discard them?"
 msgstr ""
 
-#: app/katedocmanager.cpp:275
+#: app/katedocmanager.cpp:313
 #, fuzzy
-msgid "Unsaved Document"
+msgid "Close Document"
 msgstr "&Tài liệu"
 
-#: app/katedocmanager.cpp:339
+#: app/katedocmanager.cpp:377
 msgid "Reopening files from the last session..."
 msgstr ""
 
@@ -789,43 +923,45 @@ msgstr ""
 msgid "Add Directories/Files to Project"
 msgstr ""
 
-#: app/katefilelist.cpp:161
+#: app/katefilelist.cpp:173
 msgid "The document<br><code>%1</code><br>was changed on disk by another process."
 msgstr ""
 
-#: app/katefilelist.cpp:163
+#: app/katefilelist.cpp:175
 msgid "The document<br><code>%1</code><br>was created on disk by another process."
 msgstr ""
 
-#: app/katefilelist.cpp:165
+#: app/katefilelist.cpp:177
 msgid "The document<br><code>%1</code><br>was deleted from disk by another process"
 msgstr ""
 
-#: app/katefilelist.cpp:249
-msgid "<b>This file was changed (modified) on disc by another program!</b><br />"
+#: app/katefilelist.cpp:261
+msgid "<b>This file was changed (modified) on disc by another program.</b><br />"
 msgstr ""
 
-#: app/katefilelist.cpp:251
-msgid "<b>This file was changed (created) on disc by another program!</b><br />"
+#: app/katefilelist.cpp:263
+msgid "<b>This file was changed (created) on disc by another program.</b><br />"
 msgstr ""
 
-#: app/katefilelist.cpp:253
-msgid "<b>This file was changed (deleted) on disc by another program!</b><br />"
+#: app/katefilelist.cpp:265
+msgid "<b>This file was changed (deleted) on disc by another program.</b><br />"
 msgstr ""
 
 #: app/kwritemain.cpp:82
 msgid ""
-"A KDE text editor component could not be found!\n"
-"Please check your KDE installation."
+"A KDE text-editor component could not be found;\n"
+"please check your KDE installation."
 msgstr ""
 
 #: app/kwritemain.cpp:141
+#, fuzzy
 msgid "Use this to close the current document"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
 #: app/kwritemain.cpp:144
+#, fuzzy
 msgid "Use this command to print the current document"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
 #: app/kwritemain.cpp:145
 msgid "Use this command to create a new document"
@@ -836,8 +972,9 @@ msgid "Use this command to open an existing document for editing"
 msgstr ""
 
 #: app/kwritemain.cpp:154
+#, fuzzy
 msgid "Create another view containing the current document"
-msgstr ""
+msgstr "Tắt cài hiện &tại"
 
 #: app/kwritemain.cpp:156
 msgid "Choose Editor..."
@@ -861,65 +998,70 @@ msgid "Sho&w Path"
 msgstr "Hiển &thị đường dẫn"
 
 #: app/kwritemain.cpp:170
+msgid "Hide Path"
+msgstr ""
+
+#: app/kwritemain.cpp:171
 msgid "Show the complete document path in the window caption"
 msgstr ""
 
-#: app/kateviewmanager.cpp:447 app/kwritemain.cpp:231
+#: app/kateviewmanager.cpp:449 app/kwritemain.cpp:232
 msgid "Open File"
 msgstr "Mở file"
 
-#: app/kwritemain.cpp:255
+#: app/kwritemain.cpp:256
 msgid ""
 "The given file could not be read, check if it exists or if it is readable "
 "for the current user."
 msgstr ""
 
-#: app/kwritemain.cpp:531
-msgid "Read the contents of stdin."
+#: app/kwritemain.cpp:532
+msgid "Read the contents of stdin"
 msgstr ""
 
-#: app/kwritemain.cpp:532
-msgid "Document to open."
+#: app/kwritemain.cpp:533
+#, fuzzy
+msgid "Document to open"
 msgstr "Tài liệu sẽ được mở."
 
-#: app/kwritemain.cpp:542
+#: app/kwritemain.cpp:543
 msgid "KWrite"
 msgstr "KWrite"
 
-#: app/kwritemain.cpp:543
+#: app/kwritemain.cpp:544
 #, fuzzy
 msgid "KWrite - Text Editor"
 msgstr "Kate - KDE Advanced Text Editor"
 
-#: app/kateapp.cpp:246 app/kwritemain.cpp:642
-msgid "The file '%1' could not be opened, it is not a normal file, it is a folder!"
+#: app/kateapp.cpp:268 app/kwritemain.cpp:641
+msgid "The file '%1' could not be opened: it is not a normal file, it is a folder."
 msgstr ""
 
-#: app/kwritemain.cpp:651
+#: app/kwritemain.cpp:655
 msgid "Choose Editor Component"
 msgstr ""
 
-#: app/kateprojectmanager.cpp:282
+#: app/kateprojectmanager.cpp:287
 #, fuzzy
 msgid "New Project"
 msgstr "Tắt cài hiện &tại"
 
-#: app/kateprojectmanager.cpp:291
+#: app/kateprojectmanager.cpp:296
 #, fuzzy
 msgid "Project type:"
 msgstr "Trình biên dịch dự án"
 
-#: app/kateprojectmanager.cpp:297
+#: app/kateprojectmanager.cpp:302
 #, fuzzy
 msgid "Project name:"
 msgstr "Trình biên dịch dự án"
 
-#: app/kateprojectmanager.cpp:301
+#: app/kateprojectmanager.cpp:306
 #, fuzzy
 msgid "Project file:"
 msgstr "Trình biên dịch dự án"
 
-#: app/kateprojectmanager.cpp:336
+#: app/kateprojectmanager.cpp:341
 msgid "You must enter a project name and file"
 msgstr ""
 
@@ -962,12 +1104,12 @@ msgid ""
 "loaded, and will be loaded again the next time Kate is started."
 msgstr ""
 
-#: app/katefileselector.cpp:178
+#: app/katefileselector.cpp:179
 #, fuzzy
 msgid "Current Document Folder"
 msgstr "Thư mục tài liệu hiện tại"
 
-#: app/katefileselector.cpp:206
+#: app/katefileselector.cpp:207
 msgid ""
 "<p>Here you can enter a path for a folder to display."
 "<p>To go to a folder previously entered, press the arrow on the right and "
@@ -976,88 +1118,90 @@ msgid ""
 "should behave."
 msgstr ""
 
-#: app/katefileselector.cpp:211
+#: app/katefileselector.cpp:212
 msgid ""
 "<p>Here you can enter a name filter to limit which files are displayed."
 "<p>To clear the filter, toggle off the filter button to the left."
 "<p>To reapply the last filter used, toggle on the filter button."
 msgstr ""
 
-#: app/katefileselector.cpp:215
+#: app/katefileselector.cpp:216
 msgid ""
 "<p>This button clears the name filter when toggled off, or reapplies the "
 "last filter used when toggled on."
 msgstr ""
 
-#: app/katefileselector.cpp:327
+#: app/katefileselector.cpp:330
 msgid "Apply last filter (\"%1\")"
 msgstr ""
 
-#: app/katefileselector.cpp:332
+#: app/katefileselector.cpp:335
 #, fuzzy
 msgid "Clear filter"
 msgstr "Mở lại &file"
 
-#: app/katefileselector.cpp:531
+#: app/katefileselector.cpp:536
 msgid "Toolbar"
 msgstr ""
 
-#: app/katefileselector.cpp:533
+#: app/katefileselector.cpp:538
 #, fuzzy
 msgid "A&vailable actions:"
 msgstr "Các plugin hiện có"
 
-#: app/katefileselector.cpp:534
+#: app/katefileselector.cpp:539
 #, fuzzy
 msgid "S&elected actions:"
 msgstr "Chọn"
 
-#: app/katefileselector.cpp:542
+#: app/katefileselector.cpp:547
 msgid "Auto Synchronization"
 msgstr ""
 
-#: app/katefileselector.cpp:543
+#: app/katefileselector.cpp:548
+#, fuzzy
 msgid "When a docu&ment becomes active"
-msgstr ""
+msgstr "Tài liệu sẽ được mở."
 
-#: app/katefileselector.cpp:544
+#: app/katefileselector.cpp:549
 msgid "When the file selector becomes visible"
 msgstr ""
 
-#: app/katefileselector.cpp:551
+#: app/katefileselector.cpp:556
 #, fuzzy
 msgid "Remember &locations:"
 msgstr "Khôi phục cấu hình &Xem"
 
-#: app/katefileselector.cpp:558
+#: app/katefileselector.cpp:563
 #, fuzzy
 msgid "Remember &filters:"
 msgstr "Mở lại &file"
 
-#: app/katefileselector.cpp:565
+#: app/katefileselector.cpp:570
 msgid "Session"
 msgstr ""
 
-#: app/katefileselector.cpp:566
+#: app/katefileselector.cpp:571
 #, fuzzy
 msgid "Restore loca&tion"
 msgstr "Khôi phục cấu hình &Xem"
 
-#: app/katefileselector.cpp:567
+#: app/katefileselector.cpp:572
+#, fuzzy
 msgid "Restore last f&ilter"
-msgstr ""
-
-#: app/katefileselector.cpp:587
-msgid ""
-"<p>Decides how many locations to keep in the history of the location combo "
-"box"
-msgstr ""
+msgstr "Khôi phục cấu hình &Xem"
 
 #: app/katefileselector.cpp:592
-msgid "<p>Decides how many filters to keep in the history of the filter combo box"
+msgid ""
+"<p>Decides how many locations to keep in the history of the location combo "
+"box."
 msgstr ""
 
 #: app/katefileselector.cpp:597
+msgid "<p>Decides how many filters to keep in the history of the filter combo box."
+msgstr ""
+
+#: app/katefileselector.cpp:602
 msgid ""
 "<p>These options allow you to have the File Selector automatically change "
 "location to the folder of the active document on certain events."
@@ -1067,7 +1211,7 @@ msgid ""
 "location by pressing the sync button in the toolbar."
 msgstr ""
 
-#: app/katefileselector.cpp:606
+#: app/katefileselector.cpp:611
 msgid ""
 "<p>If this option is enabled (default), the location will be restored when "
 "you start Kate."
@@ -1075,7 +1219,7 @@ msgid ""
 "manager, the location is always restored."
 msgstr ""
 
-#: app/katefileselector.cpp:610
+#: app/katefileselector.cpp:615
 msgid ""
 "<p>If this option is enabled (default), the current filter will be restored "
 "when you start Kate."
@@ -1085,11 +1229,13 @@ msgid ""
 " that some of the autosync settings may override the restored location if on."
 msgstr ""
 
-#: rc.cpp:3
+#: rc.cpp:6
+#, fuzzy, no-c-format
 msgid "&Project"
-msgstr ""
+msgstr "Trình biên dịch dự án"
 
-#: rc.cpp:4
+#: rc.cpp:8
+#, no-c-format
 msgid "&Document"
 msgstr "&Tài liệu"
 
@@ -1237,15 +1383,30 @@ msgid ""
 "next/previous frame.</p>\n"
 msgstr ""
 
+#, fuzzy
+#~ msgid " Line: 1 Col: 0 "
+#~ msgstr " Dòng: %1 Cột: %2"
+
+#, fuzzy
+#~ msgid "Search"
+#~ msgstr "&Tìm kiếm"
+
+#~ msgid "Betatest"
+#~ msgstr "Thử bản thử nghiệm beta"
+
+#, fuzzy
+#~ msgid "&Available:"
+#~ msgstr "Các plugin hiện có"
+
+#, fuzzy
+#~ msgid "&Selected:"
+#~ msgstr "Chọn"
+
 #~ msgid "Untitled %1"
 #~ msgstr "Vô đề %1"
 
 #~ msgid " - Modified"
 #~ msgstr "- Đã sửa"
-
-#, fuzzy
-#~ msgid "When a document is o&pened"
-#~ msgstr "Tài liệu sẽ được mở."
 
 #, fuzzy
 #~ msgid "Bookmarks"

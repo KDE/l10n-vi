@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesu VERSION\n"
-"POT-Creation-Date: 2003-07-31 01:32+0200\n"
+"POT-Creation-Date: 2004-06-22 01:19+0200\n"
 "PO-Revision-Date: 2002-04-26 01:12GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -14,43 +14,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: kdesu.cpp:57 kdesu.cpp:58
-msgid "Specifies the command to run."
+#: kdesu.cpp:55 kdesu.cpp:56
+#, fuzzy
+msgid "Specifies the command to run"
 msgstr "Chỉ định lệnh sẽ chạy ."
+
+#: kdesu.cpp:57
+#, fuzzy
+msgid "Run command under target uid if <file> is not writable"
+msgstr "Chạy lệnh dưới uid đích nều <file> không viết được ."
+
+#: kdesu.cpp:58
+#, fuzzy
+msgid "Specifies the target uid"
+msgstr "Chỉ định uid đích"
 
 #: kdesu.cpp:59
 #, fuzzy
-msgid "Run command under target uid if <file> is not writable."
-msgstr "Chạy lệnh dưới uid đích nều <file> không viết được ."
+msgid "Do not keep password"
+msgstr "Không giữ mật khẩu ."
 
 #: kdesu.cpp:60
 #, fuzzy
-msgid "Specifies the target uid."
-msgstr "Chỉ định uid đích"
-
-#: kdesu.cpp:61
-msgid "Do not keep password."
-msgstr "Không giữ mật khẩu ."
-
-#: kdesu.cpp:62
-msgid "Stop the daemon (forgets all passwords)."
+msgid "Stop the daemon (forgets all passwords)"
 msgstr "Dừng daemon ( quên mọi mật khẩu) ."
 
-#: kdesu.cpp:63
-msgid "Enable terminal output (no password keeping)."
+#: kdesu.cpp:61
+#, fuzzy
+msgid "Enable terminal output (no password keeping)"
 msgstr "Cho phép xuất ra đầu cuối ( không giữ mật khẩu)."
 
-#: kdesu.cpp:64
-msgid "Set priority value: 0 <= prio <= 100, 0 is lowest."
+#: kdesu.cpp:62
+#, fuzzy
+msgid "Set priority value: 0 <= prio <= 100, 0 is lowest"
 msgstr "Đặt độ ưu tiên : 0 <= prio <= 100, 0 là nhỏ nhất ."
 
-#: kdesu.cpp:65
-msgid "Use realtime scheduling."
+#: kdesu.cpp:63
+#, fuzzy
+msgid "Use realtime scheduling"
 msgstr "Dùng kế hoạch thời gian thực ."
 
-#: kdesu.cpp:66
-msgid "Let command use existing dcopserver."
+#: kdesu.cpp:64
+#, fuzzy
+msgid "Let command use existing dcopserver"
 msgstr "Cho lệnh dùng dcop server đã tồn tại ."
+
+#: kdesu.cpp:65
+msgid "Specify icon to use in the password dialog"
+msgstr ""
+
+#: kdesu.cpp:66
+msgid "Do not show the command to be run in the dialog"
+msgstr ""
 
 #: kdesu.cpp:97
 msgid "KDE su"
@@ -72,39 +87,41 @@ msgstr "Tác giả gốc"
 msgid "Command '%1' not found."
 msgstr ""
 
-#: kdesu.cpp:190
+#: kdesu.cpp:198
 #, c-format
 msgid "Illegal priority: %1"
 msgstr "Mức độ ưu tiên không hợp lệ : %1"
 
-#: kdesu.cpp:218
-msgid "No command specified!"
+#: kdesu.cpp:226
+#, fuzzy
+msgid "No command specified."
 msgstr "Không có lệnh được chỉ định !"
 
-#: kdesu.cpp:323
+#: kdesu.cpp:331
+#, fuzzy
 msgid ""
-"Su returned with an error!\n"
+"Su returned with an error.\n"
 msgstr ""
 "Sư trả lại lỗi !\n"
 
-#: kdesu.cpp:343
+#: kdesu.cpp:352
 msgid "Command:"
 msgstr "Lệnh :"
 
-#: kdesu.cpp:348
+#: kdesu.cpp:357
 msgid "realtime: "
 msgstr "thời gian thực :"
 
-#: kdesu.cpp:350
+#: kdesu.cpp:360
 msgid "Priority:"
 msgstr "Mức độ ưu tiên :"
 
-#: sudlg.cpp:21
+#: sudlg.cpp:19
 #, c-format
 msgid "Run as %1"
 msgstr "Chạy dưới %1"
 
-#: sudlg.cpp:25
+#: sudlg.cpp:23
 msgid ""
 "The action you requested needs root privileges. Please enter root's password "
 "below or click Ignore to continue with your current privileges."
@@ -113,7 +130,7 @@ msgstr ""
 "mậtkhẩu root dưới đây hoặc nhấn bỏ qua để tiếp "
 "tụcvới quyền hiện tại ."
 
-#: sudlg.cpp:29
+#: sudlg.cpp:27
 msgid ""
 "The action you requested needs additional privileges. Please enter the "
 "password for \"%1\" below or click Ignore to continue with your current "
@@ -123,37 +140,40 @@ msgstr ""
 "nhập mật khẩu cho \"%1\" vào đây hay nhân bỏ qua để "
 "tiếptục với quyền hiện tại ."
 
-#: sudlg.cpp:34
+#: sudlg.cpp:32
 msgid "&Ignore"
 msgstr "&Bỏ qua"
 
-#: sudlg.cpp:50
+#: sudlg.cpp:48
 msgid "Conversation with su failed."
 msgstr "Giao tiếp với su thất bại ."
 
-#: sudlg.cpp:59
+#: sudlg.cpp:57
+#, fuzzy
 msgid ""
-"The program 'su' is not found!\n"
-"Make sure your PATH is set correctly."
+"The program 'su' is not found;\n"
+"make sure your PATH is set correctly."
 msgstr ""
 "Chương trình 'sú không được tìm thấy !\n"
 "Kiểm tra lại đường dẫn"
 
-#: sudlg.cpp:66
+#: sudlg.cpp:64
+#, fuzzy
 msgid ""
-"You are not allowed to use 'su'!\n"
-"On some systems, you need to be in a special group (often: wheel) to use "
+"You are not allowed to use 'su';\n"
+"on some systems, you need to be in a special group (often: wheel) to use "
 "this program."
 msgstr ""
 "Bạn không được phép dùng 'sú! \n"
 "Trong một vài hệ thống, bạn cần nằm trong một nhóm đặc "
 "biệt (thường là wheel) để có thể dùng chương trình này ."
 
-#: sudlg.cpp:73
-msgid "Incorrect password! Please try again."
+#: sudlg.cpp:71
+#, fuzzy
+msgid "Incorrect password; please try again."
 msgstr "Mật khẩu sai ! Xin thử lại ."
 
-#: sudlg.cpp:77
+#: sudlg.cpp:75
 msgid "Internal error: Illegal return from SuProcess::checkInstall()"
 msgstr ""
 "Lỗi nội bộ : Giá trị trả về không hợp lệ từ "

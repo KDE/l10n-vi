@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkonq VERSION\n"
-"POT-Creation-Date: 2002-11-16 02:57+0100\n"
+"POT-Creation-Date: 2003-11-14 01:27+0100\n"
 "PO-Revision-Date: 2002-02-15 16:46GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vn@yahoogroups.com>\n"
@@ -14,29 +14,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.8\n"
 
-#: behaviour.cpp:57 rootopts.cpp:125
+#: behaviour.cpp:46
 msgid "Misc Options"
 msgstr "Tuỳ chọn linh tinh"
 
-#: behaviour.cpp:73
-msgid "&Open directories in separate windows"
+#: behaviour.cpp:62
+#, fuzzy
+msgid "Open folders in separate &windows"
 msgstr "&Mở thư mục trên các cửa sổ riêng biệt "
 
-#: behaviour.cpp:74
+#: behaviour.cpp:63
+#, fuzzy
 msgid ""
 "If this option is checked, Konqueror will open a new window when you open a "
-"directory, rather than showing that directory's contents in the current "
-"window."
+"folder, rather than showing that folders's contents in the current window."
 msgstr ""
 "Nếu tuỳ chọn này được nhận, Konqueror sẽ mở một cửa "
 "sổ mới  khibạn mở một thư mục thay vì hiển thị nội dung "
 "của thư mục đó trongcửa sổ hiện tại ."
 
-#: behaviour.cpp:81
+#: behaviour.cpp:70
 msgid "&Show network operations in a single window"
 msgstr "&Hiển thị thao tác mạng trên 1 cửa sổ đơn"
 
-#: behaviour.cpp:84
+#: behaviour.cpp:73
 msgid ""
 "Checking this option will group the progress information for all network "
 "file transfers into a single window with a list. When the option is not "
@@ -47,11 +48,12 @@ msgstr ""
 "danh sách . Khi tuỳchọn này không được nhận, mội truyền "
 "tải sẽ hiện ra trên các cửa sổ khác nhau ."
 
-#: behaviour.cpp:92
-msgid "&Show file tips"
+#: behaviour.cpp:81
+#, fuzzy
+msgid "Show file &tips"
 msgstr "&Hiện file tip"
 
-#: behaviour.cpp:95
+#: behaviour.cpp:84
 msgid ""
 "Here you can control if, when moving the mouse over a file, you want to see "
 "a small popup window with additional information about that file"
@@ -60,12 +62,12 @@ msgstr ""
 "bạn muốnnhìn thấy một pop-up nhỏ với một và thông tin phụ "
 "trợ về file ."
 
-#: behaviour.cpp:109
+#: behaviour.cpp:104
 #, fuzzy
-msgid "&Show previews in file tips"
+msgid "Show &previews in file tips"
 msgstr "&Hiện file tip"
 
-#: behaviour.cpp:112
+#: behaviour.cpp:107
 #, fuzzy
 msgid ""
 "Here you can control if you want the popup window to contain a larger "
@@ -75,19 +77,29 @@ msgstr ""
 "bạn muốnnhìn thấy một pop-up nhỏ với một và thông tin phụ "
 "trợ về file ."
 
+#: behaviour.cpp:110
+msgid "Rename icons in&line"
+msgstr ""
+
+#: behaviour.cpp:111
+msgid ""
+"Checking this option will allow files to be renamed by clicking directly on "
+"the icon name. "
+msgstr ""
+
 #: behaviour.cpp:117
 msgid "Home &URL:"
 msgstr "&URL Nhà: "
 
 #: behaviour.cpp:122
-msgid "Select Home Directory"
+msgid "Select Home Folder"
 msgstr ""
 
 #: behaviour.cpp:127
 #, fuzzy
 msgid ""
-"This is the URL (e.g. a directory or a web page) where Konqueror will jump "
-"to when the \"Home\" button is pressed. This usually is your home dirctory, "
+"This is the URL (e.g. a folder or a web page) where Konqueror will jump to "
+"when the \"Home\" button is pressed. This is usually your home folder, "
 "symbolized by a 'tilde' (~)."
 msgstr ""
 "Đây là URL (ẹg một thư mục hay trang web) nơi mà Konqueror sẽ "
@@ -100,17 +112,14 @@ msgid "Ask Confirmation For"
 msgstr "Hởi xác nhận cho :"
 
 #: behaviour.cpp:136
+#, fuzzy
 msgid ""
 "This option tells Konqueror whether to ask for a confirmation when you "
 "\"delete\" a file. "
 "<ul>"
-"<li><em>Move To Trash:</em> moves the file to your trash directory, from "
-"where it can be recovered very easily.</li> "
-"<li><em>Delete:</em> simply deletes the file.</li> "
-"<li><em>Shred:</em> not only deletes the file, but overwrites the area on "
-"the disk where the file is stored, making recovery impossible. You should "
-"not remove confirmation for this method unless you routinely work with very "
-"confidential information.</li></ul>"
+"<li><em>Move To Trash:</em> moves the file to your trash folder, from where "
+"it can be recovered very easily.</li> "
+"<li><em>Delete:</em> simply deletes the file.</li> </li></ul>"
 msgstr ""
 "This option tells Konqueror whether to ask for a confirmation when you "
 "\"delete\" a filẹ "
@@ -123,124 +132,44 @@ msgstr ""
 "not remove confirmation for this method unless you routinely work with very "
 "confidential information.</li></ul>"
 
-#: behaviour.cpp:148
+#: behaviour.cpp:145
 #, fuzzy
-msgid "Move to trash"
+msgid "&Move to trash"
 msgstr "Chuyển tới thùng rác "
 
-#: behaviour.cpp:152
-msgid "Shred"
-msgstr "Phá huỷ"
-
-#: behaviour.cpp:157
-msgid ""
-"With this option activated, only one instance of Konqueror will exist in the "
-"memory of your computer at any moment, no matter how many browsing windows "
-"you open, thus reducing resource requirements."
-"<p>Be aware that this also means that, if something goes wrong, all your "
-"browsing windows will be closed simultaneously."
+#: behaviour.cpp:147
+msgid "D&elete"
 msgstr ""
-"Nếu tuỳ chọn này được kích hoạt, chỉ một instance của "
-"Konqueror sẽ tồn tại trong bộ nhớ của bạn tại bất kì "
-"thời điểm nào, bất kể bạnmở bao nhiêu cửa sổ và làm "
-"giảm yêu cầu về tài nguyên ."
-"<p>Cẩn thận với tuỳ chọn này, nếu có chuyện gì xảy ra, "
-"tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
-"bị mấ t."
 
-#: behaviour.cpp:163
-msgid ""
-"With this option activated, only one instance of Konqueror will exist in the "
-"memory of your computer at any moment, no matter how many local browsing "
-"windows you open, thus reducing resource requirements."
-"<p>Be aware that this also means that, if something goes wrong, all your "
-"local browsing windows will be closed simultaneously"
-msgstr ""
-"Nếu tuỳ chọn này được kích hoạt, chỉ một instance của "
-"Konqueror sẽ tồn tại trong bộ nhớ của bạn tại bất kì "
-"thời điểm nào, bất kể bạnmở bao nhiêu cửa sổ và làm "
-"giảm yêu cầu về tài nguyên ."
-"<p>Cẩn thận với tuỳ chọn này, nếu có chuyện gì xảy ra, "
-"tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
-"bị mấ t.Nếu"
-
-#: behaviour.cpp:169
-msgid ""
-"With this option activated, only one instance of Konqueror will exist in the "
-"memory of your computer at any moment, no matter how many web browsing "
-"windows you open, thus reducing resource requirements."
-"<p>"
-"Be aware that this also means that, if something goes wrong, all your web "
-"browsing windows will be closed simultaneously"
-msgstr ""
-"Nếu tuỳ chọn này được kích hoạt, chỉ một instance của "
-"Konqueror sẽ tồn tại trong bộ nhớ của bạn tại bất kì "
-"thời điểm nào, bất kể bạnmở bao nhiêu cửa sổ và làm "
-"giảm yêu cầu về tài nguyên ."
-"<p>Cẩn thận với tuỳ chọn này, nếu có chuyện gì xảy ra, "
-"tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
-"bị mấ t."
-
-#: behaviour.cpp:176
-#, fuzzy
-msgid "Minimize Memory Usage"
-msgstr "Tối thiểu hoá sử dụng bộ nhớ"
-
-#: behaviour.cpp:180
-msgid "&Never"
-msgstr "&Không bao giờ"
-
-#: behaviour.cpp:181
-msgid ""
-"Disables the minimization of memory usage and allows you to make each "
-"browsing activity independent from the others"
-msgstr ""
-"Việc không cho phép tối thiểu hoá sử dụng bộ nhớ cho phép "
-"bạn làm chomối trang duyệt tồn tại độc lập với nhau"
-
-#: behaviour.cpp:184
-msgid "For &local browsing only (recommended)"
-msgstr "Chỉ duyệt loca&l ( Khuyến khích)"
-
-#: behaviour.cpp:187
-#, fuzzy
-msgid "For &Web browsing only"
-msgstr "Chỉ cho việc duyệt &web"
-
-#: behaviour.cpp:190
-msgid "Alwa&ys (use with care)"
-msgstr "Luôn &luôn ( dùng cẩn thận)"
-
-#: behaviour.cpp:342
+#: behaviour.cpp:270
 msgid ""
 "<h1>Konqueror Behavior</h1> You can configure how Konqueror behaves as a "
 "file manager here."
 msgstr ""
 
-#: browser.cpp:109
+#: browser.cpp:50
 #, fuzzy
 msgid "&Appearance"
 msgstr "&Dáng điệu"
 
-#: browser.cpp:110
+#: browser.cpp:51
 msgid "&Behavior"
 msgstr "&Cư xử"
 
-#: browser.cpp:111
-#, fuzzy
-msgid "&Previews"
-msgstr "Xem t&rước"
+#: browser.cpp:52
+msgid "&Previews && Meta-Data"
+msgstr ""
 
-#: browser.cpp:113
+#: browser.cpp:56
 msgid "&Quick Copy && Move"
 msgstr ""
 
-#: desktop.cpp:66
+#: desktop.cpp:69
 #, fuzzy
 msgid "N&umber of desktops: "
 msgstr "Số các &desktop:"
 
-#: desktop.cpp:71
+#: desktop.cpp:75
 msgid ""
 "Here you can set how many virtual desktops you want on your KDE desktop. "
 "Move the slider to change the value."
@@ -248,295 +177,50 @@ msgstr ""
 "Bạn có thể đặt  số các desktop ảo bạn muốn có trên KDE "
 "desktop .Di thanh trượt để thay đổi giá trị ."
 
-#: desktop.cpp:81
+#: desktop.cpp:86
 #, fuzzy
 msgid "Desktop &Names"
 msgstr "Thực đơn menu"
 
-#: desktop.cpp:87 desktop.cpp:89
+#: desktop.cpp:92 desktop.cpp:94
 msgid "Desktop %1:"
 msgstr "Desktop %1:"
 
-#: desktop.cpp:91 desktop.cpp:92 desktop.cpp:93 desktop.cpp:94
+#: desktop.cpp:96 desktop.cpp:97 desktop.cpp:98 desktop.cpp:99
 #, c-format
 msgid "Here you can enter the name for desktop %1"
 msgstr "Bạn có thể nhập tên của desktop  %1"
 
-#: desktop.cpp:165 desktop.cpp:183
+#: desktop.cpp:112
+msgid "Mouse wheel over desktop switches desktop"
+msgstr ""
+
+#: desktop.cpp:220 desktop.cpp:241
 #, c-format
 msgid "Desktop %1"
 msgstr "Desktop %1"
 
-#: desktop.cpp:174
+#: desktop.cpp:232
+#, fuzzy
 msgid ""
-"<h1>Desktop Number & Names</h1>In this module, you can configure how many "
-"virtual desktops you want and how these should be labelled."
+"<h1>Multiple Desktops</h1>"
+"In this module, you can configure how many virtual desktops you want and how "
+"these should be labeled."
 msgstr ""
 "<h1> Số và tên Desktop </h1> Trong module này, bạn có thể cấu "
 "hình bao nhiêu desktop ảo bạn muốn có và chúng sẽ được "
 "đánh số ra sao ."
 
-#: fontopts.cpp:60
-#, fuzzy
-msgid "&Standard font:"
-msgstr "Font &Chuẩn:"
-
-#: fontopts.cpp:64
-msgid "This is the font used to display text in Konqueror windows."
-msgstr ""
-"Đây là font sẽ được dùng để hiển thị text trong cửa sổ "
-"Konqueror ."
-
-#: fontopts.cpp:75
-#, fuzzy
-msgid "Font si&ze:"
-msgstr "&Cỡ font:"
-
-#: fontopts.cpp:83
-msgid "This is the font size used to display text in Konqueror windows."
-msgstr ""
-"Đây là cỡ của font sẽ được hiển thị trong cửa sổ "
-"Konqueror ."
-
-#: fontopts.cpp:91
-#, fuzzy
-msgid "Normal te&xt color:"
-msgstr "Màu Te&xt thông thường :"
-
-#: fontopts.cpp:95
-msgid "This is the color used to display text in Konqueror windows."
-msgstr ""
-"Đây là màu sẽ được dùng để hiển thị text trong cửa sổ "
-"Konqueror"
-
-#: fontopts.cpp:122
-#, fuzzy
-msgid "&Text background color:"
-msgstr "Màu &Text nền :"
-
-#: fontopts.cpp:130
-msgid "This is the color used behind the text for the icons on the desktop."
-msgstr ""
-"Đây là màu sẽ được dùng phía sau của text cho các icon trên "
-"Desktop ."
-
-#: fontopts.cpp:141
-msgid "&Word-wrap icon text"
-msgstr "&Word-wrap icon text"
-
-#: fontopts.cpp:145
-msgid ""
-"Checking this option will wrap long filenames to multiple lines, rather than "
-"showing only the part of the filename that fits on a single line."
-"<p> Hint: if you uncheck this option, you can still see the word-wrapped "
-"filename by pausing the mouse pointer over the icon."
-msgstr ""
-"Nhận tuỳ chọn này để cuốn tên file dài thành nhiều dòng "
-"thay vì hiểnthị nó chỉ trong một phần của trang trên một "
-"dòng . "
-"<p> Gợi ý:Nếu bạn bỏ tuỳ chọn này, bạn vẫn có thể xem "
-"tên file có tên bị cuốn bằngcách di chuột lên trên nó ."
-
-#: fontopts.cpp:154
-msgid "&Underline filenames"
-msgstr "&Gạch chân tên file"
-
-#: fontopts.cpp:158
-msgid ""
-"Checking this option will result in filenames being underlined, so that they "
-"look like links on a web page. Note: to complete the analogy, make sure that "
-"single click activation is enabled in the mouse control module."
-msgstr ""
-"Nhận tuỳ chọn này sẽ làm cho tên file bị gạch chân, bởi "
-"vậy trong nó sẽ giống như là một trang web . Chú ý:Để cho "
-"giống nhau hoàn toàn, kiểm tra lại rằng bạn kích "
-"hoạtclick-đơn đã được bật lên trong Module điều khiển "
-"chuột ."
-
-#: fontopts.cpp:167
-#, fuzzy
-msgid "Display file sizes in b&ytes"
-msgstr "Hiển thị cỡ file bằng B&ytes"
-
-#: fontopts.cpp:171
-#, fuzzy
-msgid ""
-"Checking this option will result in file sizes being displayed in bytes. "
-"Otherwise file sizes are being displayed in kilobytes or megabytes if "
-"appropriate."
-msgstr ""
-"Nhận tuỳ chọn này sẽ làm cho cỡ file được hiển thị "
-"bằng byte .Nếu không, cỡ file sẽ bị hoán chuyển thành "
-"kilobyte hay megabytesao cho thích hợp ."
-
-#: fontopts.cpp:361
-msgid ""
-"<h1>Konqueror Appearance</h1> You can configure how Konqueror looks as a "
-"file manager here."
-msgstr ""
-
-#: previews.cpp:49
-#, fuzzy
-msgid "Allow previews and \"Folder Icons Reflect Contents\" on protocols:"
-msgstr "Cho phép xem trước trên mọi giao thức :"
-
-#: previews.cpp:80
-#, fuzzy
-msgid ""
-"This option makes it possible to choose when the file previews and smart "
-"folder icons in the File Manager should be activated.\n"
-"In the list of protocols that appear, select which ones are fast enough for "
-"you to allow previews to be generated."
-msgstr ""
-"Tuỳ chọn này làm cho bạn có thể chọn khi xem trước của "
-"file trong Trình Quản Lí File được kích hoạt . \n"
-"Trong danh sách các giao thức xuất hiện, chọn các mà đủ nhanh "
-"đối với bạn để cho phép xem trước được sinh ra ."
-
-#: previews.cpp:85
-msgid "Maximum file size:"
-msgstr "Cỡ file lớn nhất :"
-
-#: previews.cpp:88
-#, fuzzy
-msgid " MB"
-msgstr "MB"
-
-#: previews.cpp:94
-msgid "Increase size of previews relative to icons"
-msgstr ""
-
-#: previews.cpp:97
-msgid "Use thumbnails embedded in files"
-msgstr ""
-
-#: previews.cpp:101
-msgid ""
-"Select this to use thumbnails that are found inside some file types (e.g. "
-"JPEG). This will increase speed and reduce disk usage. Deselect it if you "
-"have files that have been processed by programs which create inaccurate "
-"thumbnails, such as ImageMagick."
-msgstr ""
-
-#: previews.cpp:164
-msgid ""
-"<h1>Preview Options</h1> Here you can modify the behavior of Konqueror when "
-"it shows the files in a directory."
-"<h2>The list of protocols:</h2> check the protocols over which previews "
-"should be shown, uncheck those over which they shouldn't. For instance, you "
-"might want to show previews over SMB if the local network is fast enough, "
-"but you might disable it for FTP if you often visit very slow FTP sites with "
-"large images."
-"<h2>Maximum File Size:</h2> select the maximum file size for which previews "
-"should be generated. For instance, if set to 1 MB (the default), no preview "
-"will be generated for files bigger than 1 MB, for speed reasons."
-msgstr ""
-"<h1>Preview Options</h1> Here you can modify the behavior of Konqueror when "
-"it shows the files in a directorỵ"
-"<h2>The list of protocols:</h2> check the protocols over which previews "
-"should be shown, uncheck those over which they shouldn't. For instance, you "
-"might want to show previews over SMB if the local network is fast enough, "
-"but you might disable it for FTP if you often visit very slow FTP sites with "
-"large images."
-"<h2>Maximum File Size:</h2> select the maximum file size for which previews "
-"should be generated. For instance, if set to 1 MB (the default), no preview "
-"will be generated for files bigger than 1 MB, for speed reasons."
-
-#: rootopts.cpp:68
+#: desktopbehavior_impl.cpp:72
 msgid "Sound Files"
 msgstr "File âm thanh"
 
-#: rootopts.cpp:136
-#, fuzzy
-msgid "Enable desktop &menu"
-msgstr "Cho phép thự&c đơn desktop"
-
-#: rootopts.cpp:138
-msgid ""
-"Check this option if you want the desktop popup menus to appear at the top "
-"of the screen in the style of Macintosh. This setting is independent of the "
-"global top-level menu setting that applies to KDE applications."
-msgstr ""
-"Nhận tuỳ chọn này nếu bạn muốn thực đơn popup desktop "
-"xuất hiện ở phía trên màn hình giống như Macintosh . Thiết "
-"lập này là độc lập với thiết lập thực đơn top-level toàn "
-"cục mà được áp dụng cho các ứngdụng KDE ."
-
-#: rootopts.cpp:143
-#, fuzzy
-msgid "E&nable icons on desktop"
-msgstr "Cho phép &Icon trên Desktop"
-
-#: rootopts.cpp:145
-msgid ""
-"Uncheck this option if you do not want to have icons on the desktop. Without "
-"icons the desktop will be somewhat faster but you will no longer be able to "
-"drag files to the desktop."
-msgstr ""
-"Bỏ tuỳ chọn này nếu bạn không muốn có Icon trên Desktop . "
-"Không cóicon trên desktop thì có vẻ nhanh hơn nhưng bạn sẽ "
-"mất khả năng kéo / thảtừ / vào desktop ."
-
-#: rootopts.cpp:150
-#, fuzzy
-msgid "&Show hidden files on desktop"
-msgstr "Hiện các file ẩ&n trên Desktop "
-
-#: rootopts.cpp:152
-msgid ""
-"If you check this option, any files in your desktop directory that begin "
-"with a period (.) will be shown. Usually, such files contain configuration "
-"information, and remain hidden from view."
-"<p> For example, files which are named \".directory\" are plain text files "
-"which contain information for Konqueror, such as the icon to use in "
-"displaying a directory, the order in which files should be sorted, etc. You "
-"should not change or delete these files unless you know what you are doing!"
-msgstr ""
-"If you check this option, any files in your desktop directory that begin "
-"with a period (.) will be shown. Usually, such files contain configuration "
-"information, and remain hiđen from view."
-"<p> For example, files which are named \".directory\" are plain text files "
-"which contain information for Konqueror, such as the icon to use in "
-"displaying a directory, the order in which files should be sorted, etc. You "
-"should not change or delete these files unless you know what you are doing!"
-
-#: rootopts.cpp:162
-#, fuzzy
-msgid "Pro&grams in desktop window"
-msgstr "&Chương trình trên Cửa sổ desktop"
-
-#: rootopts.cpp:164
-msgid ""
-"Check this option if you want to run X11 programs that draw into the desktop "
-"such as xsnow, xpenguin or xmountain. If you have problems with applications "
-"like netscape that check the root window for running instances, disable this "
-"option."
-msgstr ""
-"Nhận tuỳ chọn này nếu bạn muốn chạy 1 chương trình X11 có "
-"chức năngvẽ desktop như xsnow, xpenguin hay xmountain . Nếu bạn "
-"có vấn về với những chương trình kiểm tra cửa sổ gốc cho "
-"running instance như netscape ,hãy bỏ tuỳ chọn này ."
-
-#: rootopts.cpp:171
-#, fuzzy
-msgid "Show Previews For"
-msgstr "Hiển thị xem trước cho:"
-
-#: rootopts.cpp:172
-msgid "Select for which types of files you want to enable preview images"
-msgstr "Chọn loại file nào bạn muốn xem trước"
-
-#: rootopts.cpp:178
-#, fuzzy
-msgid "Clicks on Desktop"
-msgstr "Nhấn vào desktop"
-
-#: rootopts.cpp:183
+#: desktopbehavior_impl.cpp:130
 #, fuzzy
 msgid "&Left button:"
 msgstr "Nút trái :"
 
-#: rootopts.cpp:184
+#: desktopbehavior_impl.cpp:131
 msgid ""
 "You can choose what happens when you click the left button of your pointing "
 "device on the desktop:"
@@ -544,12 +228,12 @@ msgstr ""
 "Bạn có thể xác định điều gì sẽ xảy ra khi bạn click trái "
 "vào desktop ."
 
-#: rootopts.cpp:187
+#: desktopbehavior_impl.cpp:134
 #, fuzzy
 msgid "Right b&utton:"
 msgstr "Nút phải:"
 
-#: rootopts.cpp:188
+#: desktopbehavior_impl.cpp:135
 msgid ""
 "You can choose what happens when you click the right button of your pointing "
 "device on the desktop:"
@@ -557,11 +241,7 @@ msgstr ""
 "Bạn có thể xác định điều gì sẽ xảy ra khi bạn click "
 "phải vào desktop ."
 
-#: rootopts.cpp:199 rootopts.cpp:224
-msgid "Edit..."
-msgstr ""
-
-#: rootopts.cpp:206 rootopts.cpp:257
+#: desktopbehavior_impl.cpp:151 desktopbehavior_impl.cpp:197
 msgid ""
 " "
 "<ul>"
@@ -593,12 +273,7 @@ msgstr ""
 "for quickly accessing applications if you like to keep the panel (also known "
 "as \"Kicker\") hiđen from view.</li></ul>"
 
-#: rootopts.cpp:222
-#, fuzzy
-msgid "Middle &button:"
-msgstr "Nút giữa :"
-
-#: rootopts.cpp:230
+#: desktopbehavior_impl.cpp:172
 msgid ""
 "You can choose what happens when you click the middle button of your "
 "pointing device on the desktop: "
@@ -632,55 +307,34 @@ msgstr ""
 "for quickly accessing applications if you like to keep the panel (also known "
 "as \"Kicker\") hiđen from view.</li></ul>"
 
-#: rootopts.cpp:250
-msgid "Edi&t..."
-msgstr ""
-
-#: rootopts.cpp:291
-#, fuzzy
-msgid "Devices"
-msgstr "Xem t&rước"
-
-#: rootopts.cpp:294
-#, fuzzy
-msgid "Displa&y devices on desktop"
-msgstr "Nhấn vào desktop"
-
-#: rootopts.cpp:299
-msgid "Types to Display"
-msgstr ""
-
-#: rootopts.cpp:300
-msgid "Deselect the device types which you do not want to see on the desktop"
-msgstr ""
-
-#: rootopts.cpp:349
+#: desktopbehavior_impl.cpp:261
 msgid "No Action"
 msgstr "Không hành động "
 
-#: rootopts.cpp:350
+#: desktopbehavior_impl.cpp:262
 msgid "Window List Menu"
 msgstr "Thực đơn danh sách cửa sổ"
 
-#: rootopts.cpp:351
+#: desktopbehavior_impl.cpp:263
 msgid "Desktop Menu"
 msgstr "Thực đơn menu"
 
-#: rootopts.cpp:352
+#: desktopbehavior_impl.cpp:264
 msgid "Application Menu"
 msgstr "Thực đnơ ứng dụng"
 
-#: rootopts.cpp:353
+#: desktopbehavior_impl.cpp:265
 msgid "Custom Menu 1"
 msgstr "Thực đơn tuỳ biến 1 "
 
-#: rootopts.cpp:354
+#: desktopbehavior_impl.cpp:266
 msgid "Custom Menu 2"
 msgstr "Thực đơn tuỳ biến 2"
 
-#: rootopts.cpp:530
+#: desktopbehavior_impl.cpp:472
+#, fuzzy
 msgid ""
-"<h1>Desktop</h1>\n"
+"<h1>Behavior</h1>\n"
 "This module allows you to choose various options\n"
 "for your desktop, including the way in which icons are arranged and\n"
 "the pop-up menus associated with clicks of the middle and right mouse\n"
@@ -694,73 +348,425 @@ msgstr ""
 "with clicks of the miđle and right mouse buttons on the desktop.\n"
 "Use the \"Whats This?\" (Shift+F1) to get help on specific options."
 
-#: rootopts.cpp:559
+#: fontopts.cpp:57
+#, fuzzy
+msgid "&Standard font:"
+msgstr "Font &Chuẩn:"
+
+#: fontopts.cpp:61
+msgid "This is the font used to display text in Konqueror windows."
+msgstr ""
+"Đây là font sẽ được dùng để hiển thị text trong cửa sổ "
+"Konqueror ."
+
+#: fontopts.cpp:76
+#, fuzzy
+msgid "Font si&ze:"
+msgstr "&Cỡ font:"
+
+#: fontopts.cpp:84
+msgid "This is the font size used to display text in Konqueror windows."
+msgstr ""
+"Đây là cỡ của font sẽ được hiển thị trong cửa sổ "
+"Konqueror ."
+
+#: fontopts.cpp:92
+#, fuzzy
+msgid "Normal te&xt color:"
+msgstr "Màu Te&xt thông thường :"
+
+#: fontopts.cpp:96
+msgid "This is the color used to display text in Konqueror windows."
+msgstr ""
+"Đây là màu sẽ được dùng để hiển thị text trong cửa sổ "
+"Konqueror"
+
+#: fontopts.cpp:123
+#, fuzzy
+msgid "&Text background color:"
+msgstr "Màu &Text nền :"
+
+#: fontopts.cpp:131
+msgid "This is the color used behind the text for the icons on the desktop."
+msgstr ""
+"Đây là màu sẽ được dùng phía sau của text cho các icon trên "
+"Desktop ."
+
+#: fontopts.cpp:142
+msgid "&Word-wrap icon text"
+msgstr "&Word-wrap icon text"
+
+#: fontopts.cpp:146
+msgid ""
+"Checking this option will wrap long filenames to multiple lines, rather than "
+"showing only the part of the filename that fits on a single line."
+"<p> Hint: if you uncheck this option, you can still see the word-wrapped "
+"filename by pausing the mouse pointer over the icon."
+msgstr ""
+"Nhận tuỳ chọn này để cuốn tên file dài thành nhiều dòng "
+"thay vì hiểnthị nó chỉ trong một phần của trang trên một "
+"dòng . "
+"<p> Gợi ý:Nếu bạn bỏ tuỳ chọn này, bạn vẫn có thể xem "
+"tên file có tên bị cuốn bằngcách di chuột lên trên nó ."
+
+#: fontopts.cpp:155
+msgid "&Underline filenames"
+msgstr "&Gạch chân tên file"
+
+#: fontopts.cpp:159
+msgid ""
+"Checking this option will result in filenames being underlined, so that they "
+"look like links on a web page. Note: to complete the analogy, make sure that "
+"single click activation is enabled in the mouse control module."
+msgstr ""
+"Nhận tuỳ chọn này sẽ làm cho tên file bị gạch chân, bởi "
+"vậy trong nó sẽ giống như là một trang web . Chú ý:Để cho "
+"giống nhau hoàn toàn, kiểm tra lại rằng bạn kích "
+"hoạtclick-đơn đã được bật lên trong Module điều khiển "
+"chuột ."
+
+#: fontopts.cpp:168
+#, fuzzy
+msgid "Display file sizes in b&ytes"
+msgstr "Hiển thị cỡ file bằng B&ytes"
+
+#: fontopts.cpp:172
+#, fuzzy
+msgid ""
+"Checking this option will result in file sizes being displayed in bytes. "
+"Otherwise file sizes are being displayed in kilobytes or megabytes if "
+"appropriate."
+msgstr ""
+"Nhận tuỳ chọn này sẽ làm cho cỡ file được hiển thị "
+"bằng byte .Nếu không, cỡ file sẽ bị hoán chuyển thành "
+"kilobyte hay megabytesao cho thích hợp ."
+
+#: fontopts.cpp:362
+msgid ""
+"<h1>Appearance</h1> You can configure how Konqueror looks as a file manager "
+"here."
+msgstr ""
+
+#: previews.cpp:65
+#, fuzzy
+msgid ""
+"<p>Allow previews, \"Folder Icons Reflect Contents\", and retrieval of "
+"meta-data on protocols:</p>"
+msgstr "Cho phép xem trước trên mọi giao thức :"
+
+#: previews.cpp:70
+msgid "Select Protocols"
+msgstr ""
+
+#: previews.cpp:78
+msgid "Local Protocols"
+msgstr ""
+
+#: previews.cpp:80
+msgid "Internet Protocols"
+msgstr ""
+
+#: previews.cpp:108
+#, fuzzy
+msgid ""
+"This option makes it possible to choose when the file previews, smart folder "
+"icons, and meta-data in the File Manager should be activated.\n"
+"In the list of protocols that appear, select which ones are fast enough for "
+"you to allow previews to be generated."
+msgstr ""
+"Tuỳ chọn này làm cho bạn có thể chọn khi xem trước của "
+"file trong Trình Quản Lí File được kích hoạt . \n"
+"Trong danh sách các giao thức xuất hiện, chọn các mà đủ nhanh "
+"đối với bạn để cho phép xem trước được sinh ra ."
+
+#: previews.cpp:113
+#, fuzzy
+msgid "&Maximum file size:"
+msgstr "Cỡ file lớn nhất :"
+
+#: previews.cpp:117
+#, fuzzy
+msgid " MB"
+msgstr "MB"
+
+#: previews.cpp:124
+msgid "&Increase size of previews relative to icons"
+msgstr ""
+
+#: previews.cpp:128
+msgid "&Use thumbnails embedded in files"
+msgstr ""
+
+#: previews.cpp:134
+msgid ""
+"Select this to use thumbnails that are found inside some file types (e.g. "
+"JPEG). This will increase speed and reduce disk usage. Deselect it if you "
+"have files that have been processed by programs which create inaccurate "
+"thumbnails, such as ImageMagick."
+msgstr ""
+
+#: previews.cpp:200
+#, fuzzy
+msgid ""
+"<h1>Preview Options</h1> Here you can modify the behavior of Konqueror when "
+"it shows the files in a folder."
+"<h2>The list of protocols:</h2> check the protocols over which previews "
+"should be shown, uncheck those over which they shouldn't. For instance, you "
+"might want to show previews over SMB if the local network is fast enough, "
+"but you might disable it for FTP if you often visit very slow FTP sites with "
+"large images."
+"<h2>Maximum File Size:</h2> select the maximum file size for which previews "
+"should be generated. For instance, if set to 1 MB (the default), no preview "
+"will be generated for files bigger than 1 MB, for speed reasons."
+msgstr ""
+"<h1>Preview Options</h1> Here you can modify the behavior of Konqueror when "
+"it shows the files in a directorỵ"
+"<h2>The list of protocols:</h2> check the protocols over which previews "
+"should be shown, uncheck those over which they shouldn't. For instance, you "
+"might want to show previews over SMB if the local network is fast enough, "
+"but you might disable it for FTP if you often visit very slow FTP sites with "
+"large images."
+"<h2>Maximum File Size:</h2> select the maximum file size for which previews "
+"should be generated. For instance, if set to 1 MB (the default), no preview "
+"will be generated for files bigger than 1 MB, for speed reasons."
+
+#: rc.cpp:1
+msgid "General"
+msgstr ""
+
+#: rc.cpp:2
+#, fuzzy
+msgid "&Show icons on desktop"
+msgstr "Hiện các file ẩ&n trên Desktop "
+
+#: rc.cpp:3
+msgid ""
+"Uncheck this option if you do not want to have icons on the desktop. Without "
+"icons the desktop will be somewhat faster but you will no longer be able to "
+"drag files to the desktop."
+msgstr ""
+"Bỏ tuỳ chọn này nếu bạn không muốn có Icon trên Desktop . "
+"Không cóicon trên desktop thì có vẻ nhanh hơn nhưng bạn sẽ "
+"mất khả năng kéo / thảtừ / vào desktop ."
+
+#: rc.cpp:4
+#, fuzzy
+msgid "Allow pro&grams in desktop window"
+msgstr "&Chương trình trên Cửa sổ desktop"
+
+#: rc.cpp:5
+msgid ""
+"Check this option if you want to run X11 programs that draw into the desktop "
+"such as xsnow, xpenguin or xmountain. If you have problems with applications "
+"like netscape that check the root window for running instances, disable this "
+"option."
+msgstr ""
+"Nhận tuỳ chọn này nếu bạn muốn chạy 1 chương trình X11 có "
+"chức năngvẽ desktop như xsnow, xpenguin hay xmountain . Nếu bạn "
+"có vấn về với những chương trình kiểm tra cửa sổ gốc cho "
+"running instance như netscape ,hãy bỏ tuỳ chọn này ."
+
+#: rc.cpp:6
+#, fuzzy
+msgid "Show &tooltips"
+msgstr "&Hiện file tip"
+
+#: rc.cpp:7
+msgid "Menu Bar at Top of Screen"
+msgstr ""
+
+#: rc.cpp:8
+msgid "&None"
+msgstr ""
+
+#: rc.cpp:9
+msgid "If this option is selected, there is no menu bar at the top of the screen."
+msgstr ""
+
+#: rc.cpp:10
+#, fuzzy
+msgid "&Desktop menu bar"
+msgstr "Thực đơn menu"
+
+#: rc.cpp:11
+msgid ""
+"If this option is selected, there is one menu bar at the top of the screen "
+"which shows the desktop menus."
+msgstr ""
+
+#: rc.cpp:12
+msgid "&Current application's menu bar (Mac OS-style)"
+msgstr ""
+
+#: rc.cpp:13
+msgid ""
+"If this option is selected, applications won't have their menu bar attached "
+"to their own window anymore. Instead, there is one menu bar at the top of "
+"the screen which shows the menus of the currently active application. You "
+"might recognize this behavior from Mac OS."
+msgstr ""
+
+#: rc.cpp:14
+msgid "Mouse Button Actions"
+msgstr ""
+
+#: rc.cpp:15
+#, fuzzy
+msgid "Middle button:"
+msgstr "Nút giữa :"
+
+#: rc.cpp:16
+#, fuzzy
+msgid "Left button:"
+msgstr "Nút trái :"
+
+#: rc.cpp:17
+#, fuzzy
+msgid "Right button:"
+msgstr "Nút phải:"
+
+#: rc.cpp:18 rc.cpp:19 rc.cpp:20
+msgid "Edit..."
+msgstr ""
+
+#: rc.cpp:21
+msgid "File Icons"
+msgstr ""
+
+#: rc.cpp:22
+msgid "Automatically &line up icons"
+msgstr ""
+
+#: rc.cpp:23
+msgid ""
+"Check this option if you want to see your icons automatically aligned to the "
+"grid when you move them."
+msgstr ""
+
+#: rc.cpp:24
+#, fuzzy
+msgid "Show &hidden files"
+msgstr "Hiện các file ẩ&n trên Desktop "
+
+#: rc.cpp:25
+#, fuzzy
+msgid ""
+"<p>If you check this option, any files in your desktop directory that begin "
+"with a period (.) will be shown. Usually, such files contain configuration "
+"information, and remain hidden from view.</p>\n"
+"<p>For example, files which are named \".directory\" are plain text files "
+"which contain information for Konqueror, such as the icon to use in "
+"displaying a directory, the order in which files should be sorted, etc. You "
+"should not change or delete these files unless you know what you are "
+"doing!</p>"
+msgstr ""
+"If you check this option, any files in your desktop directory that begin "
+"with a period (.) will be shown. Usually, such files contain configuration "
+"information, and remain hiđen from view."
+"<p> For example, files which are named \".directory\" are plain text files "
+"which contain information for Konqueror, such as the icon to use in "
+"displaying a directory, the order in which files should be sorted, etc. You "
+"should not change or delete these files unless you know what you are doing!"
+
+#: rc.cpp:26
+#, fuzzy
+msgid "Show Icon Previews For"
+msgstr "Hiển thị xem trước cho:"
+
+#: rc.cpp:27
+#, fuzzy
+msgid "Select for which types of files you want to enable preview images."
+msgstr "Chọn loại file nào bạn muốn xem trước"
+
+#: rc.cpp:28
+#, fuzzy
+msgid "Device Icons"
+msgstr "Xem t&rước"
+
+#: rc.cpp:29
+#, fuzzy
+msgid "&Show device icons:"
+msgstr "Nhấn vào desktop"
+
+#: rc.cpp:30
+msgid "Device Types to Display"
+msgstr ""
+
+#: rc.cpp:31
+msgid "Deselect the device types which you do not want to see on the desktop."
+msgstr ""
+
+#: rootopts.cpp:70
 msgid "Des&ktop path:"
 msgstr "Đường dẫn des&ktop:"
 
-#: rootopts.cpp:566
+#: rootopts.cpp:77
+#, fuzzy
 msgid ""
-"This directory contains all the files which you see on your desktop. You can "
-"change the location of this directory if you want to, and the contents will "
+"This folder contains all the files which you see on your desktop. You can "
+"change the location of this folder if you want to, and the contents will "
 "move automatically to the new location as well."
 msgstr ""
 "Thư mục này chứa các file mà bạn có thể nhìn thấy trên "
 "desktop . Bạn có thể thay đổi vị trí của nó nếu muốn và "
 "no ^.i dung củanó sẽ tự động chuyể tới vị trí mới luôn ."
 
-#: rootopts.cpp:572
+#: rootopts.cpp:85
 msgid "&Trash path:"
 msgstr "Đường dẫn &thùng rác:"
 
-#: rootopts.cpp:579
+#: rootopts.cpp:92
+#, fuzzy
 msgid ""
-"This directory contains deleted files (until you empty the trashcan). You "
-"can change the location of this directory if you want to, and the contents "
-"will move automatically to the new location as well."
+"This folder contains deleted files (until you empty the trashcan). You can "
+"change the location of this folder if you want to, and the contents will "
+"move automatically to the new location as well."
 msgstr ""
 "Thư mục này chứa các file đã xoá ( cho khi bạn làm rỗng "
 "thùng rác ).Bạn có thể thay đổi vị trí của nó  và no ^.i "
 "dung củanó sẽ tự động chuyể tới vị trí mới luôn ."
 
-#: rootopts.cpp:587
+#: rootopts.cpp:100
 msgid "A&utostart path:"
 msgstr "Đường dẫn Au&tostart:"
 
-#: rootopts.cpp:594
+#: rootopts.cpp:107
+#, fuzzy
 msgid ""
-"This directory contains applications or links to applications (shortcuts) "
-"that you want to have started automatically whenever KDE starts. You can "
-"change the location of this directory if you want to, and the contents will "
-"move automatically to the new location as well."
+"This folder contains applications or links to applications (shortcuts) that "
+"you want to have started automatically whenever KDE starts. You can change "
+"the location of this folder if you want to, and the contents will move "
+"automatically to the new location as well."
 msgstr ""
 "Thư mục này chứa các chương trình hay links tới các chương "
 "trình (shortcut) mà bạn muốn nó tự khởi động  khi KDE khởi "
 "động.Bạn có thể thay đổi vị trí của nó nếu muốn và no "
 "^.i dung củanó sẽ tự động chuyể tới vị trí mới luôn ."
 
-#: rootopts.cpp:603
+#: rootopts.cpp:116
 msgid "D&ocuments path:"
 msgstr "Đường dẫn &tài liệu :"
 
-#: rootopts.cpp:610
-msgid "This directory will be used by default to load or save documents from or to."
+#: rootopts.cpp:123
+#, fuzzy
+msgid "This folder will be used by default to load or save documents from or to."
 msgstr ""
 "Thư mục này sẽ được dùng để tải và cất các tài liệu "
 "theo mặc định "
 
-#: rootopts.cpp:635 rootopts.cpp:698 rootopts.cpp:737
+#: rootopts.cpp:148 rootopts.cpp:215 rootopts.cpp:254
 msgid "Trash"
 msgstr "Thùng rác"
 
-#: rootopts.cpp:722 rootopts.cpp:749
+#: rootopts.cpp:239 rootopts.cpp:266
 msgid "Autostart"
 msgstr "Autostart"
 
-#: rootopts.cpp:726
+#: rootopts.cpp:243
 msgid "Desktop"
 msgstr "Desktop"
 
-#: rootopts.cpp:796
+#: rootopts.cpp:310
 msgid ""
 "The path for '%1' has been changed.\n"
 "Do you want me to move the files from '%2' to '%3'?"
@@ -768,11 +774,11 @@ msgstr ""
 "Đường dẫn tới '%1' đã bị thay đổi . \n"
 "Bạn có muốn tôi di chuyển file từ '%2' tời '%3' không ?"
 
-#: rootopts.cpp:797
+#: rootopts.cpp:311
 msgid "Confirmation required"
 msgstr "Cần xác nhận"
 
-#: rootopts.cpp:831
+#: rootopts.cpp:388
 #, fuzzy
 msgid ""
 "<h1>Paths</h1>\n"
@@ -784,6 +790,98 @@ msgstr ""
 "desktop của bạn sẽ đượcgiữ . \n"
 "Dùng \"Cài này là gì ? \" (Shift + F1) để có trợ giúp cụ thể "
 "hơn ."
+
+#, fuzzy
+#~ msgid "Sh&red"
+#~ msgstr "Phá huỷ"
+
+#, fuzzy
+#~ msgid "Enable desktop &menu"
+#~ msgstr "Cho phép thự&c đơn desktop"
+
+#~ msgid ""
+#~ "Check this option if you want the desktop popup menus to appear at the "
+#~ "top of the screen in the style of Macintosh. This setting is independent "
+#~ "of the global top-level menu setting that applies to KDE applications."
+#~ msgstr ""
+#~ "Nhận tuỳ chọn này nếu bạn muốn thực đơn popup desktop xuất hiện ở phía "
+#~ "trên màn hình giống như Macintosh . Thiết lập này là độc lập với thiết "
+#~ "lập thực đơn top-level toàn cục mà được áp dụng cho các ứngdụng KDE ."
+
+#, fuzzy
+#~ msgid "E&nable icons on desktop"
+#~ msgstr "Cho phép &Icon trên Desktop"
+
+#, fuzzy
+#~ msgid "Clicks on Desktop"
+#~ msgstr "Nhấn vào desktop"
+
+#, fuzzy
+#~ msgid "&Previews"
+#~ msgstr "Xem t&rước"
+
+#~ msgid ""
+#~ "With this option activated, only one instance of Konqueror will exist in "
+#~ "the memory of your computer at any moment, no matter how many browsing "
+#~ "windows you open, thus reducing resource requirements.<p>Be aware that "
+#~ "this also means that, if something goes wrong, all your browsing windows "
+#~ "will be closed simultaneously."
+#~ msgstr ""
+#~ "Nếu tuỳ chọn này được kích hoạt, chỉ một instance của Konqueror sẽ tồn "
+#~ "tại trong bộ nhớ của bạn tại bất kì thời điểm nào, bất kể bạnmở bao nhiêu "
+#~ "cửa sổ và làm giảm yêu cầu về tài nguyên .<p>Cẩn thận với tuỳ chọn này, "
+#~ "nếu có chuyện gì xảy ra, tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
+#~ "bị mấ t."
+
+#~ msgid ""
+#~ "With this option activated, only one instance of Konqueror will exist in "
+#~ "the memory of your computer at any moment, no matter how many local "
+#~ "browsing windows you open, thus reducing resource requirements.<p>Be "
+#~ "aware that this also means that, if something goes wrong, all your local "
+#~ "browsing windows will be closed simultaneously"
+#~ msgstr ""
+#~ "Nếu tuỳ chọn này được kích hoạt, chỉ một instance của Konqueror sẽ tồn "
+#~ "tại trong bộ nhớ của bạn tại bất kì thời điểm nào, bất kể bạnmở bao nhiêu "
+#~ "cửa sổ và làm giảm yêu cầu về tài nguyên .<p>Cẩn thận với tuỳ chọn này, "
+#~ "nếu có chuyện gì xảy ra, tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
+#~ "bị mấ t.Nếu"
+
+#~ msgid ""
+#~ "With this option activated, only one instance of Konqueror will exist in "
+#~ "the memory of your computer at any moment, no matter how many web "
+#~ "browsing windows you open, thus reducing resource requirements.<p>Be "
+#~ "aware that this also means that, if something goes wrong, all your web "
+#~ "browsing windows will be closed simultaneously"
+#~ msgstr ""
+#~ "Nếu tuỳ chọn này được kích hoạt, chỉ một instance của Konqueror sẽ tồn "
+#~ "tại trong bộ nhớ của bạn tại bất kì thời điểm nào, bất kể bạnmở bao nhiêu "
+#~ "cửa sổ và làm giảm yêu cầu về tài nguyên .<p>Cẩn thận với tuỳ chọn này, "
+#~ "nếu có chuyện gì xảy ra, tất cả mọi cửasổ sẽ bị đóng đồng thời, dữ liệ u "
+#~ "bị mấ t."
+
+#, fuzzy
+#~ msgid "Minimize Memory Usage"
+#~ msgstr "Tối thiểu hoá sử dụng bộ nhớ"
+
+#~ msgid "&Never"
+#~ msgstr "&Không bao giờ"
+
+#~ msgid ""
+#~ "Disables the minimization of memory usage and allows you to make each "
+#~ "browsing activity independent from the others"
+#~ msgstr ""
+#~ "Việc không cho phép tối thiểu hoá sử dụng bộ nhớ cho phép bạn làm chomối "
+#~ "trang duyệt tồn tại độc lập với nhau"
+
+#~ msgid "For &local browsing only (recommended)"
+#~ msgstr "Chỉ duyệt loca&l ( Khuyến khích)"
+
+#, fuzzy
+#~ msgid "For &Web browsing only"
+#~ msgstr "Chỉ cho việc duyệt &web"
+
+#~ msgid "Alwa&ys (use with care)"
+#~ msgstr "Luôn &luôn ( dùng cẩn thận)"
 
 #, fuzzy
 #~ msgid ""

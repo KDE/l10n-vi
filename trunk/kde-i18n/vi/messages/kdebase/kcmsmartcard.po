@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmsmartcard VERSION\n"
-"POT-Creation-Date: 2002-02-10 02:37+0100\n"
-"PO-Revision-Date: 2002-02-16 19:57GMT+0900\n"
+"POT-Creation-Date: 2002-03-19 12:37+0100\n"
+"PO-Revision-Date: 2002-03-12 16:10GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Nguyen Hung Vu"
 msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
-msgstr "Vu.Hung@techviet.com"
+msgstr "VụHung@techviet.com"
 
 #: rc.cpp:1
 msgid "Form2"
@@ -32,11 +32,11 @@ msgstr "Form2"
 
 #: rc.cpp:2
 msgid "<b>Unable to contact the KDE smartcard service!</b>"
-msgstr "<b>Kho^ng the^? lie^n he^. vo+'i di.ch vu. smartcard KDE ! </b>"
+msgstr "<b>Không thể liên hệ với dịch vụ smartcard KDE ! </b>"
 
 #: rc.cpp:3
 msgid "Possible Reasons"
-msgstr "Li' do co' the^? "
+msgstr "Lí do có thể "
 
 #: rc.cpp:4
 msgid ""
@@ -49,13 +49,14 @@ msgid ""
 "need to recompile the kdelibs package with libpcsclite installed."
 msgstr ""
 "\n"
-"1)KDE daemon, 'kded' chu+a cha.y . Ba.n co' the^? kho+?i ddo^.ng la.i no'"
-"ba(`ng ca'ch cha.y le^.nh kdeinit va` thu+? ta?i la.i Trung Ta^m DDie^`u Khie^?n"
-"KDE dde^? xem tho^ng ddie^.p na`y co' ma^'t ddi hay kho^ng . \n"
+"1)KDE daemon, 'kded' chưa chạy . Bạn có thể khởi động lại "
+"nóbằng cách chạy lệnh kdeinit và thử tải lại Trung Tâm "
+"Điều KhiểnKDE để xem thông điệp này có mất đi hay không . "
 "\n"
-"2) Ba.n co' ve? nhu+ kho^ng co' smartcard ddu+o+.c ho^~ tro+. bo+?i ca'c"
-"thu+ vie^.n cu?a KDE . Ba.n co' the^? ca^`n pha?i bie^n di.ch la.i go'i kdelibs"
-"co' libpcscte ddu+o+.c ca`i dda(.t cu`ng ."
+"\n"
+"2) Bạn có vẻ như không có smartcard được hỗ trợ bởi "
+"cácthư viện của KDE . Bạn có thể cần phải biên dịch lại "
+"gói kdelibscó libpcscte được cài đặt cùng ."
 
 #: rc.cpp:5
 msgid "SmartcardBase"
@@ -67,37 +68,39 @@ msgstr "Tab 1"
 
 #: rc.cpp:7
 msgid "&Enable smartcard support"
-msgstr "&Cho phe'p ho^~ tro+. smartcard"
+msgstr "&Cho phép hỗ trợ smartcard"
 
 #: rc.cpp:8
 msgid "Enable &polling to autodetect card events"
-msgstr "Cho phe'p &ba^`u cu+? (polling) dde^? tu+. ddo^.ng do` ti`m su+. kie^.n card"
+msgstr "Cho phép &bầu cử (polling) để tự động dò tìm sự kiện card"
 
 #: rc.cpp:9
 msgid ""
 "In most cases you should have this enabled. It allows KDE to automatically "
 "detect card insertion and reader hotplug events."
 msgstr ""
-"Trong dda so^' tru+o+`ng ho+.p, ba.n ne^n cho phe'p ca'i na`y . No' cho phe'p KDE"
-"tu+. ddo^.ng do` ti`m ca'c ddu+o+.c ca('m va`o va` ddo.c ca'c hotplug ."
+"Trong đa số trường hợp, bạn nên cho phép cái này . Nó cho "
+"phép KDEtự động dò tìm các được cắm vào và đọc các "
+"hotplug ."
 
 #: rc.cpp:10
 msgid "Automatically &launch card manager if inserted card is unclaimed"
 msgstr ""
-"Tu+. ddo^.ng &kho+?i ddo^.ng tri`nh qua?n li' card ne^'u card ddu+o+.c ca('m"
-"va`o la` kho^ng ddo`i ho?i (unclaimed)"
+"Tự động &khởi động trình quản lí card nếu card được "
+"cắmvào là không đòi hỏi (unclaimed)"
 
 #: rc.cpp:11
 msgid ""
 "When you insert a smartcard, KDE can automatically launch a management tool "
 "if no other application attempts to use the card."
 msgstr ""
-"Khi ba.n ca('m va`o smartcard, KDE se~ tu+. ddo^.ng kho+?i ta.o mo^.t co^ng"
-"cu. qua?n li' ne^'u kho^ng mo^.t chu+o+ng tri`nh na`o kha'c co^' ga('ng du`ng card ."
+"Khi bạn cắm vào smartcard, KDE sẽ tự động khởi tạo một "
+"côngcụ quản lí nếu không một chương trình nào khác cố "
+"gắng dùng card ."
 
 #: rc.cpp:12
 msgid "&Beep on card insert and removal"
-msgstr "&Beep khi card ca('m va`o hay ru't ra"
+msgstr "&Beep khi card cắm vào hay rút ra"
 
 #: rc.cpp:13
 msgid "Tab 2"
@@ -105,75 +108,81 @@ msgstr "Tab 2"
 
 #: rc.cpp:14
 msgid "PCSCLite configuration"
-msgstr "Ca^'u hi`nh PCSCLite"
+msgstr "Cấu hình PCSCLite"
 
 #: rc.cpp:15
 msgid ""
 "To add new readers you have to modify /etc/readers.conf file and re-start "
 "pcscd"
 msgstr ""
-"DDE^? the^m tri`nh ddo.c mo+'i, ba.n pha?i thay ddo^?i  file "
-"/etc/ readers.conf va` kho+?i ddo^.ng li.a pcscd ."
+"ĐÊ? thêm trình đọc mới, bạn phải thay đổi  file /etc/ "
+"readers.conf và khởi động lịa pcscd ."
 
 #: rc.cpp:16
 msgid "Slot name"
-msgstr "Te^n slot"
+msgstr "Tên slot"
 
 #: rc.cpp:17
 msgid "Type"
-msgstr "Kie^?u"
+msgstr "Kiểu"
 
 #: rc.cpp:18
 msgid "SubType"
-msgstr "Kie^?u con (sub type)"
+msgstr "Kiểu con (sub type)"
 
 #: rc.cpp:19
 msgid "SubsubType"
-msgstr "Kie^?u con-con (subsub type)"
+msgstr "Kiểu con-con (subsub type)"
 
-#: smartcard.cpp:62
+#: smartcard.cpp:65
 msgid "Change module"
-msgstr "DDo^?i module"
+msgstr "Đổi module"
 
-#: smartcard.cpp:100
+#: smartcard.cpp:106
 msgid "Unable to launch KCardChooser"
-msgstr "Kho^ng the^? ta?i KCardChooser"
+msgstr "Không thể tải KCardChooser"
 
-#: smartcard.cpp:147
+#: smartcard.cpp:146
+msgid "Smart card support disabled"
+msgstr "Cho phép hỗ trợ smartcard"
+
+#: smartcard.cpp:161
 msgid "No readers found.Check 'pcscd' is running"
-msgstr "Kho^ng ti`m tha^'y tri`nh ddo.c na`o . Kie^?m tra xem 'pcscd' dda~ cha.y chu+a "
+msgstr ""
+"Không tìm thấy trình đọc nào . Kiểm tra xem 'pcscd' đã chạy "
+"chưa "
 
-#: smartcard.cpp:170
+#: smartcard.cpp:184
 msgid "No card inserted"
-msgstr "Kho^ng co' card na`o ddu+o+.c ca('m va`o"
+msgstr "Không có card nào được cắm vào"
 
-#: smartcard.cpp:182
+#: smartcard.cpp:196
 msgid "Managed by: "
-msgstr "Qua?n li' bo+?i: "
+msgstr "Quản lí bởi: "
 
-#: smartcard.cpp:192
+#: smartcard.cpp:206
 msgid "No module managing this card"
-msgstr "Kho^ng co' module na`o qua?n li' card na`y"
+msgstr "Không có module nào quản lí card này"
 
-#: smartcard.cpp:260
+#: smartcard.cpp:274
 msgid ""
 "<h1>smartcard</h1> This module allows you to configure KDE support for "
 "smartcards. These can be used for various tasks such as storing SSL "
 "certificates and logging in to the system."
 msgstr ""
-"<h1>smartcard</h1> Module na`y cho phe'p ba.n ca^'u hi`nh ho^~ tro+. KDE "
-"cho smartcard . Nhu+~ng ca'i na`y co' the^? ddu+o+.c du`ng trong nhie^`u"
-"ta'c vu. kha'c nhau nhu+ lu+u tru+~ gia^'y chu+'ng nha^.n SSL va` log va`o he^. tho^'ng ."
+"<h1>smartcard</h1> Module này cho phép bạn cấu hình hỗ trợ KDE "
+"cho smartcard . Những cái này có thể được dùng trong nhiềutác "
+"vụ khác nhau như lưu trữ giấy chứng nhận SSL và log vào hệ "
+"thống ."
 
-#: smartcard.cpp:269
+#: smartcard.cpp:283
 msgid "kcmsmartcard"
 msgstr "kcmsmartcard"
 
-#: smartcard.cpp:269
+#: smartcard.cpp:283
 msgid "KDE Smartcard Control Module"
-msgstr "Module ddie^`u khie^?n smartcard KDE"
+msgstr "Module điều khiển smartcard KDE"
 
-#: smartcard.cpp:271
+#: smartcard.cpp:285
 msgid "(c) 2001 George Staikos"
 msgstr "(c) 2001 George Staikos"
-

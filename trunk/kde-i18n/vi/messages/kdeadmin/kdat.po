@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2002-02-16 02:36+0100\n"
+"POT-Creation-Date: 2003-10-27 01:45+0100\n"
 "PO-Revision-Date: 2003-01-08 07:49\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: Vietnamese <vi@vi.i18n.kde.org>\n"
@@ -74,12 +74,13 @@ msgstr "0"
 msgid "Backup log:"
 msgstr "Backup log:"
 
-#: BackupDlg.cpp:135 IndexDlg.cpp:114 VerifyDlg.cpp:143
+#: BackupDlg.cpp:135 IndexDlg.cpp:114
 msgid "Save Log..."
 msgstr "Cất Log ..."
 
-#: BackupDlg.cpp:140 IndexDlg.cpp:119 VerifyDlg.cpp:148
-msgid "Abort"
+#: BackupDlg.cpp:140 VerifyDlg.cpp:148
+#, fuzzy
+msgid "&Abort"
 msgstr "Bỏ qua"
 
 #: BackupDlg.cpp:276
@@ -116,12 +117,13 @@ msgstr "Files >>"
 msgid "<< Files"
 msgstr "<< Files"
 
-#: BackupProfileWidget.cpp:40 KDat.cpp:162 KDat.cpp:487
+#: BackupProfileWidget.cpp:40 KDat.cpp:162 KDat.cpp:496
 msgid "Backup"
 msgstr "Backup"
 
 #: BackupProfileWidget.cpp:48
-msgid "Working directory:"
+#, fuzzy
+msgid "Working folder:"
 msgstr "Thư mục làm việc:"
 
 #: BackupProfileWidget.cpp:54
@@ -149,12 +151,20 @@ msgid "Remove snapshot file before backup"
 msgstr "Xoá file snapshot sau khi backup xong"
 
 #: ErrorHandler.cpp:51
-msgid " caught.\nExit the program from File->Quit or do \"kill -9 <pid>\" if you like.\n"
-msgstr " caught.\nExit the program from File->Quit or do \"kill -9 <pid>\" if you like.\n"
+msgid ""
+" caught.\n"
+"Exit the program from File->Quit or do \"kill -9 <pid>\" if you like.\n"
+msgstr ""
+" caught.\n"
+"Exit the program from File->Quit or do \"kill -9 <pid>\" if you like.\n"
 
 #: ErrorHandler.cpp:55
-msgid "You can dump core by selecting the \"Abort\" button.\nPlease notify the maintainer (see Help->About KDat)."
-msgstr "Bạn có thể dump core bằng cách chọn \"Abort\"( Bỏ qua). \n. Xin thông báo cho người quản lí( xem Help -> About KDat)"
+msgid ""
+"You can dump core by selecting the \"Abort\" button.\n"
+"Please notify the maintainer (see Help->About KDat)."
+msgstr ""
+"Bạn có thể dump core bằng cách chọn \"Abort\"( Bỏ qua). \n"
+". Xin thông báo cho người quản lí( xem Help -> About KDat)"
 
 #: ErrorHandler.cpp:62
 msgid "An Error Signal was Received"
@@ -220,6 +230,10 @@ msgstr "Tổng file:"
 msgid "Index log:"
 msgstr "Mục lục LOg:"
 
+#: IndexDlg.cpp:119
+msgid "Abort"
+msgstr "Bỏ qua"
+
 #: IndexDlg.cpp:232
 msgid "Rewinding tape."
 msgstr "Quay lại tape."
@@ -254,11 +268,11 @@ msgstr "Archive %1"
 msgid "Reindexed Tape"
 msgstr "Làm lại mục lục Tape"
 
-#: KDat.cpp:94 KDat.cpp:95 KDat.cpp:1234
+#: KDat.cpp:94 KDat.cpp:95 KDat.cpp:1243
 msgid "KDat: <no tape>"
 msgstr "KDat: <không có tape>"
 
-#: KDat.cpp:99 KDat.cpp:135 KDat.cpp:246 KDat.cpp:1288
+#: KDat.cpp:99 KDat.cpp:135 KDat.cpp:255 KDat.cpp:1297
 msgid "Mount Tape"
 msgstr "Mount Tape"
 
@@ -270,7 +284,7 @@ msgstr "Tạo lại mục lục tape."
 msgid "Format Tape..."
 msgstr "Định dạng tape..."
 
-#: KDat.cpp:105 KDat.cpp:111 KDat.cpp:139 KDat.cpp:776 KDat.cpp:790
+#: KDat.cpp:105 KDat.cpp:111 KDat.cpp:139 KDat.cpp:785 KDat.cpp:799
 msgid "Delete Archive"
 msgstr "Xoá Archive"
 
@@ -286,7 +300,7 @@ msgstr "Khôi phục( restore)..."
 msgid "Backup..."
 msgstr "Backup..."
 
-#: KDat.cpp:121 KDat.cpp:824
+#: KDat.cpp:121 KDat.cpp:833
 msgid "Delete Tape Index"
 msgstr "Xoá mục lục Tape"
 
@@ -294,7 +308,7 @@ msgstr "Xoá mục lục Tape"
 msgid "Create Backup Profile"
 msgstr "Tạo Backup Profile"
 
-#: KDat.cpp:129 KDat.cpp:141
+#: KDat.cpp:129 KDat.cpp:141 KDat.cpp:955
 msgid "Delete Backup Profile"
 msgstr "Xoá Backup Profile"
 
@@ -303,12 +317,26 @@ msgid "Delete Index"
 msgstr "Xoá Mục lục"
 
 #: KDat.cpp:147
-msgid "Preferences..."
-msgstr "Tham chiếu..."
+msgid "Configure KDat..."
+msgstr ""
 
 #: KDat.cpp:153
-msgid "KDat Version %1\n\nKDat is a tar-based tape archiver.\n\nCopyright (c) 1998-2000 Sean Vyain\nCopyright (c) 2001-2002 Lawrence Widman\nkdat@cardiothink.com"
-msgstr "KDat Version %1\n\nKDat is a tar-based tape archiver.\n\nCopyright (c) 1998-2000 Sean Vyain\nCopyright (c) 2001-2002 Lawrence Widman\nkdat@cardiothink.com"
+msgid ""
+"KDat Version %1\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998-2000 Sean Vyain\n"
+"Copyright (c) 2001-2002 Lawrence Widman\n"
+"kdat@cardiothink.com"
+msgstr ""
+"KDat Version %1\n"
+"\n"
+"KDat is a tar-based tape archiver.\n"
+"\n"
+"Copyright (c) 1998-2000 Sean Vyain\n"
+"Copyright (c) 2001-2002 Lawrence Widman\n"
+"kdat@cardiothink.com"
 
 #: KDat.cpp:158
 msgid "Mount/unmount tape"
@@ -322,267 +350,363 @@ msgstr "Kiểm tra"
 msgid "Ready."
 msgstr "Sẵn sàng."
 
-#: KDat.cpp:243 KDat.cpp:1285
+#: KDat.cpp:252 KDat.cpp:1294
 msgid "Unmount Tape"
 msgstr "Unmount Tape"
 
-#: KDat.cpp:414
-msgid "KDat will dump your files properly to tape, but may not be able\nto restore them. To restore your files by hand, you need to know\nthe name of the *non-rewinding* version of your tape device %1.\n"
-msgstr "KDat sẽ dump file của bạn ra tape, nhưng không thể khôi phục  lại chúng.\n. Để khôi phục lại files bằng tay, bạn cần phải biết tên của phiên bản *non-rewinding* của thiết bị tape %1.\n"
-
-#: KDat.cpp:418
-msgid "For example, if your device is /dev/st0, the non-rewinding version\nis /dev/nst0. If your device name doesn't look like that, type\n\"ls -l %2\" in a terminal window to see the real name of your\ntape drive. Substitute that name for /dev/nst0 below.\nOpen a terminal window and type the following:\n  tar tfv /dev/nst0; tar tfv /dev/nst0\n  tar xfv /dev/nst0\nThe third call to \"tar\" will retrieve your data into your\ncurrent directory. Please let us know if this happens to you!\n - KDat Maintenance Team\n"
+#: KDat.cpp:423
+msgid ""
+"KDat will dump your files properly to tape, but may not be able\n"
+"to restore them. To restore your files by hand, you need to know\n"
+"the name of the *non-rewinding* version of your tape device %1.\n"
 msgstr ""
-"Ví dụ, nếu thiết bị của bạn là /dev/st0, phiên bản non-rewinding \n l "
-"à /dev/nst0. Nếu tên thiết bị của bạn không có dạng vậy, gõ \n \"ls -l %2\" "
-"trong terminal để xem tên thật của tape driver. Thay thể tên đó bằng /dev/nst0 ở dưới đây.\n. "
-" Mở một cửa sổ terminal và gõ  lệnh sau : \"tar tfv /dev/nst0; tar /dev/nst0 \n  "
-"tar xfv /dev/nts0\n Lệnh gọi \"tar\" thứ ba sẽ nhận dữ liệu về thư mục hiện tại của bạn. "
-"Hãy cho chúng tôi biết điều gì đã xảy ra với bạn!\n "
-"KDat Maintenance Team\n"
+"KDat sẽ dump file của bạn ra tape, nhưng không thể khôi phục  "
+"lại chúng.\n"
+". Để khôi phục lại files bằng tay, bạn cần phải biết tên "
+"của phiên bản *non-rewinding* của thiết bị tape %1.\n"
 
-#: KDat.cpp:444
+#: KDat.cpp:427
+msgid ""
+"For example, if your device is /dev/st0, the non-rewinding version\n"
+"is /dev/nst0. If your device name doesn't look like that, type\n"
+"\"ls -l %2\" in a terminal window to see the real name of your\n"
+"tape drive. Substitute that name for /dev/nst0 below.\n"
+"Open a terminal window and type the following:\n"
+"  tar tfv /dev/nst0; tar tfv /dev/nst0\n"
+"  tar xfv /dev/nst0\n"
+"The third call to \"tar\" will retrieve your data into your\n"
+"current directory. Please let us know if this happens to you!\n"
+" - KDat Maintenance Team\n"
+msgstr ""
+"Ví dụ, nếu thiết bị của bạn là /dev/st0, phiên bản "
+"non-rewinding \n"
+" l à /dev/nst0. Nếu tên thiết bị của bạn không có dạng "
+"vậy, gõ \n"
+" \"ls -l %2\" trong terminal để xem tên thật của tape driver. Thay "
+"thể tên đó bằng /dev/nst0 ở dưới đây.\n"
+".  Mở một cửa sổ terminal và gõ  lệnh sau : \"tar tfv /dev/nst0; "
+"tar /dev/nst0 \n"
+"  tar xfv /dev/nts0\n"
+" Lệnh gọi \"tar\" thứ ba sẽ nhận dữ liệu về thư mục "
+"hiện tại của bạn. Hãy cho chúng tôi biết điều gì đã xảy "
+"ra với bạn!\n"
+" KDat Maintenance Team\n"
+
+#: KDat.cpp:453
 #, c-format
 msgid "Archive created on %1"
 msgstr "Tạo archive vào lúc %1"
 
-#: KDat.cpp:462
+#: KDat.cpp:471
 msgid "Performing backup..."
 msgstr "Tiến hành backup..."
 
-#: KDat.cpp:467 KDat.cpp:489
+#: KDat.cpp:476 KDat.cpp:498
 msgid "Backup canceled."
 msgstr "Bỏ qua backup."
 
-#: KDat.cpp:481
-msgid "WARNING: The estimated archive size is %1 KB but the tape has only %2 KB of space!\nBack up anyway?"
-msgstr "CẢNH CÁO: Cỡ của archive được dự đoán là %1 KB nhưng tape chỉ có %2KB trống!\n Bạn có muốn backup không?"
+#: KDat.cpp:490
+msgid ""
+"WARNING: The estimated archive size is %1 KB but the tape has only %2 KB of "
+"space!\n"
+"Back up anyway?"
+msgstr ""
+"CẢNH CÁO: Cỡ của archive được dự đoán là %1 KB nhưng tape "
+"chỉ có %2KB trống!\n"
+" Bạn có muốn backup không?"
 
-#: KDat.cpp:496 TapeDrive.cpp:525 TapeDrive.cpp:546
+#: KDat.cpp:505 TapeDrive.cpp:525 TapeDrive.cpp:546
 msgid "Rewinding tape..."
 msgstr "Quay ngược lại tape..."
 
-#: KDat.cpp:499
-msgid "Cannot rewind tape.\nBackup aborted."
-msgstr "Không thể quay ngược tape. \n Bỏ qua backup."
+#: KDat.cpp:508
+msgid ""
+"Cannot rewind tape.\n"
+"Backup aborted."
+msgstr ""
+"Không thể quay ngược tape. \n"
+" Bỏ qua backup."
 
-#: KDat.cpp:500 KDat.cpp:511
+#: KDat.cpp:509 KDat.cpp:520
 msgid "Backup Error"
 msgstr "Lỗi backup"
 
-#: KDat.cpp:501 KDat.cpp:512 KDat.cpp:532
+#: KDat.cpp:510 KDat.cpp:521 KDat.cpp:541
 msgid "Backup aborted."
 msgstr "Bỏ qua backup"
 
-#: KDat.cpp:507
+#: KDat.cpp:516
 msgid "Skipping to end of tape..."
 msgstr "Nhảy đến  cuối của tape..."
 
-#: KDat.cpp:510
-msgid "Cannot get to end of tape.\nBackup aborted."
-msgstr "Không thể nhảy đến cuối của tape. \n Bỏ qua backup."
+#: KDat.cpp:519
+msgid ""
+"Cannot get to end of tape.\n"
+"Backup aborted."
+msgstr ""
+"Không thể nhảy đến cuối của tape. \n"
+" Bỏ qua backup."
 
-#: KDat.cpp:516
+#: KDat.cpp:525
 msgid "Backup in progress..."
 msgstr "Đang backup..."
 
-#: KDat.cpp:530
+#: KDat.cpp:539
 msgid "Backup complete."
 msgstr "Backup hoàn thành."
 
-#: KDat.cpp:662
+#: KDat.cpp:671
 msgid "Restore in progress..."
 msgstr "Đang khôi phục( restore)..."
 
-#: KDat.cpp:664
+#: KDat.cpp:673
 msgid "Verify in progress..."
 msgstr "Đang kiểm tra..."
 
-#: KDat.cpp:671
+#: KDat.cpp:680
 msgid "Restore complete."
 msgstr "Không  phục( restore) xong."
 
-#: KDat.cpp:673
+#: KDat.cpp:682
 msgid "Verify complete."
 msgstr "Kiểm tra xong."
 
-#: KDat.cpp:677
+#: KDat.cpp:686
 msgid "Restore aborted."
 msgstr "Bỏ qua Khôi Phục."
 
-#: KDat.cpp:679
+#: KDat.cpp:688
 msgid "Verify aborted."
 msgstr "Bỏ qua kiểm tra."
 
-#: KDat.cpp:690 KDat.cpp:840
-msgid "There appears to be no tape in the drive %1. Please\ncheck \"Edit->Preferences\" to make sure the\ncorrect device is selected as the tape drive (e.g.\n/dev/st0). If you hear the tape drive moving, wait\nuntil it stops and then try mounting it again."
-msgstr "There appears to be no tape in the drive %1. Please\ncheck \"Edit->Preferences\" to make sure the\ncorrect device is selected as the tape drive (e.g.\n/dev/st0). If you hear the tape drive moving, wait\nuntil it stops and then try mounting it again."
+#: KDat.cpp:699 KDat.cpp:849
+msgid ""
+"There appears to be no tape in the drive %1. Please\n"
+"check \"Edit->Preferences\" to make sure the\n"
+"correct device is selected as the tape drive (e.g.\n"
+"/dev/st0). If you hear the tape drive moving, wait\n"
+"until it stops and then try mounting it again."
+msgstr ""
+"There appears to be no tape in the drive %1. Please\n"
+"check \"Edit->Preferences\" to make sure the\n"
+"correct device is selected as the tape drive (e.g.\n"
+"/dev/st0). If you hear the tape drive moving, wait\n"
+"until it stops and then try mounting it again."
 
-#: KDat.cpp:718
+#: KDat.cpp:727
 msgid "The current tape index will be overwritten, continue?"
-msgstr "Mục lục của tape hiện tại sẽ bị ghi đè, bạn có muốn tiếp tục không?"
+msgstr ""
+"Mục lục của tape hiện tại sẽ bị ghi đè, bạn có muốn "
+"tiếp tục không?"
 
-#: KDat.cpp:719
+#: KDat.cpp:728
 msgid "Index Tape"
 msgstr "Mục lục tape"
 
-#: KDat.cpp:719
+#: KDat.cpp:728
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: KDat.cpp:725 KDat.cpp:1230
+#: KDat.cpp:734 KDat.cpp:1239
 #, c-format
 msgid "KDat: %1"
 msgstr "KDat: %1"
 
-#: KDat.cpp:729
+#: KDat.cpp:738
 msgid "Index complete."
 msgstr "Hoàn thành mục lục"
 
-#: KDat.cpp:731
+#: KDat.cpp:740
 msgid "Index aborted."
 msgstr "Bỏ qua mục lục"
 
-#: KDat.cpp:740
-msgid "No archive is selected.\nIn order to delete an archive, the archive to be deleted must be selected in the tree first."
-msgstr "Chưa có  archive nào được chọn. \n Để có thể xoá một archive, archive đó phải được chọn từ danh sách."
+#: KDat.cpp:749
+msgid ""
+"No archive is selected.\n"
+"In order to delete an archive, the archive to be deleted must be selected in "
+"the tree first."
+msgstr ""
+"Chưa có  archive nào được chọn. \n"
+" Để có thể xoá một archive, archive đó phải được chọn "
+"từ danh sách."
 
-#: KDat.cpp:774
-msgid "An archive cannot be removed from the middle of the tape. If\nthe archive '%1' is deleted then\nthe following archives will also be deleted:\n%2\n\nDelete all listed archives?"
-msgstr "An archive cannot be removed from the middle of the tape. If\nthe archive '%1' is deleted then\nthe following archives will also be deleted:\n%2\n\nDelete all listed archives?"
+#: KDat.cpp:783
+msgid ""
+"An archive cannot be removed from the middle of the tape. If\n"
+"the archive '%1' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%2\n"
+"\n"
+"Delete all listed archives?"
+msgstr ""
+"An archive cannot be removed from the middle of the tape. If\n"
+"the archive '%1' is deleted then\n"
+"the following archives will also be deleted:\n"
+"%2\n"
+"\n"
+"Delete all listed archives?"
 
-#: KDat.cpp:776
-msgid "Delete All"
-msgstr "Xoá tất cả"
-
-#: KDat.cpp:779
+#: KDat.cpp:788
 msgid "Archives deleted."
 msgstr "Đã xoá archive."
 
-#: KDat.cpp:788
+#: KDat.cpp:797
 msgid "Really delete the archive '%1'?"
 msgstr "Bạn có thực sự muốn xoá archive '%1'?"
 
-#: KDat.cpp:793
+#: KDat.cpp:802
 msgid "Archive deleted."
 msgstr "Đã xoá archvie."
 
-#: KDat.cpp:806
-msgid "No tape index is selected.\nIn order to delete a tape index, the tape index to be deleted must be selected in the tree first."
-msgstr "Chưa có mục lục tape nào được chọn.\n Đêr có thể xoá một mục lục tape, mục lục tape phải được chọn trong danh sách trước."
-
 #: KDat.cpp:815
-msgid "Tape is still mounted. The index for a mounted tape cannot be deleted.\nUnmount the tape and try again."
-msgstr "Tape vẫn đang bị mount. Vì vậy mục lục tape không thể bị xoá. \n Hãy umount tape trước và thử lại."
+msgid ""
+"No tape index is selected.\n"
+"In order to delete a tape index, the tape index to be deleted must be "
+"selected in the tree first."
+msgstr ""
+"Chưa có mục lục tape nào được chọn.\n"
+" Đêr có thể xoá một mục lục tape, mục lục tape phải "
+"được chọn trong danh sách trước."
 
-#: KDat.cpp:822
+#: KDat.cpp:824
+msgid ""
+"Tape is still mounted. The index for a mounted tape cannot be deleted.\n"
+"Unmount the tape and try again."
+msgstr ""
+"Tape vẫn đang bị mount. Vì vậy mục lục tape không thể bị "
+"xoá. \n"
+" Hãy umount tape trước và thử lại."
+
+#: KDat.cpp:831
 msgid "Really delete the index for '%1'?"
 msgstr "Thực sự xoá mục lục cho '%1'?"
 
-#: KDat.cpp:827
+#: KDat.cpp:836
 msgid "Tape index deleted."
 msgstr "Mục lục tape đã được xoá."
 
-#: KDat.cpp:853
-msgid "The tape in the drive is write protected.\nPlease disable write protection and try again."
-msgstr "Tape hiện trong ổ là write-protected. \n Xin bỏ tuỳ chọn chỉ - đọc và thử lại."
+#: KDat.cpp:862
+msgid ""
+"The tape in the drive is write protected.\n"
+"Please disable write protection and try again."
+msgstr ""
+"Tape hiện trong ổ là write-protected. \n"
+" Xin bỏ tuỳ chọn chỉ - đọc và thử lại."
 
-#: KDat.cpp:858
-msgid "All data currently on the tape will be lost.\nAre you sure you want to continue?"
-msgstr "Mọi dữ liệu hiện có trên tape sẽ bị mất. \n Bạn có chắc chắn muốn tiếp tục không?"
+#: KDat.cpp:867
+msgid ""
+"All data currently on the tape will be lost.\n"
+"Are you sure you want to continue?"
+msgstr ""
+"Mọi dữ liệu hiện có trên tape sẽ bị mất. \n"
+" Bạn có chắc chắn muốn tiếp tục không?"
 
-#: KDat.cpp:860
+#: KDat.cpp:869
 msgid "Format Tape"
 msgstr "Định dạng tape"
 
-#: KDat.cpp:860
+#: KDat.cpp:869
 msgid "Format"
 msgstr "Định dạng"
 
-#: KDat.cpp:863
+#: KDat.cpp:872
 #, c-format
 msgid "Tape created on %1"
 msgstr "Tape tạo vào %1"
 
-#: KDat.cpp:879
+#: KDat.cpp:888
 msgid "Formatting tape..."
 msgstr "Định dạng tape..."
 
-#: KDat.cpp:882
+#: KDat.cpp:891
 msgid "Format complete."
 msgstr "Định dạng xong."
 
-#: KDat.cpp:896
+#: KDat.cpp:905
 #, c-format
 msgid "Backup Profile %1"
 msgstr "Backup Profile %1"
 
-#: KDat.cpp:914
+#: KDat.cpp:923
 msgid "Archive"
 msgstr "Archive"
 
-#: KDat.cpp:935
-msgid "In order to delete a backup profile, the backup profile to be deleted must be selected in the tree first."
-msgstr "Để xoá backup profile, backup profile sẽ được xoá phải được chọn trước."
-
 #: KDat.cpp:944
+msgid ""
+"In order to delete a backup profile, the backup profile to be deleted must "
+"be selected in the tree first."
+msgstr ""
+"Để xoá backup profile, backup profile sẽ được xoá phải được "
+"chọn trước."
+
+#: KDat.cpp:953
 msgid "Really delete backup profile '%1'?"
 msgstr "Thực sự xoá backup profile '%1'?"
 
-#: KDat.cpp:946
-msgid "Delete backup profile"
-msgstr "Xoá backup profile"
-
-#: KDat.cpp:949
+#: KDat.cpp:958
 msgid "Backup profile deleted."
 msgstr "Đã xoá backup profile."
 
-#: KDat.cpp:987
+#: KDat.cpp:996
 msgid "Tape unmounted."
 msgstr "Đã umount tape"
 
-#: KDat.cpp:991
+#: KDat.cpp:1000
 msgid "Reading tape header..."
 msgstr "Đọc tap header..."
 
-#: KDat.cpp:998
+#: KDat.cpp:1007
 msgid "This tape has not been formatted by KDat."
 msgstr "Tape này đã không được định dạng bởi Kdate."
 
-#: KDat.cpp:1001
-msgid "This tape has not been formatted by KDat.\n\nWould you like to format it now?"
+#: KDat.cpp:1010
+msgid ""
+"This tape has not been formatted by KDat.\n"
+"\n"
+"Would you like to format it now?"
 msgstr ""
-"Tape này đã không được định dạng bởi KDat.\n\n"
+"Tape này đã không được định dạng bởi KDat.\n"
+"\n"
 "Bạn có muốn định dạng nó bây giờ không?"
 
-#: KDat.cpp:1013
+#: KDat.cpp:1022
 msgid "Tape mounted."
 msgstr "Đã mount tape."
 
-#: KDat.cpp:1100
+#: KDat.cpp:1109
 msgid "Estimating backup size: %1, %2"
 msgstr "Ước lượng cỡ backup: %1, %2"
 
-#: KDat.cpp:1235
+#: KDat.cpp:1244
 msgid "KDat: <no tape >"
 msgstr "KDat: <no tape >"
 
-#: KDat.cpp:1325
-msgid "Click \"CANCEL\" to stop the backup process.\nFor example, you may quickly see that the size of\nthe files you selected will exceed the size of the\nbackup tape, and may then decide to stop and remove\nsome files from your list of files to backup.\n\nClick \"Continue\" to remove this message while\ncontinuing the backup."
+#: KDat.cpp:1334
+msgid ""
+"Click \"CANCEL\" to stop the backup process.\n"
+"For example, you may quickly see that the size of\n"
+"the files you selected will exceed the size of the\n"
+"backup tape, and may then decide to stop and remove\n"
+"some files from your list of files to backup.\n"
+"\n"
+"Click \"Continue\" to remove this message while\n"
+"continuing the backup."
 msgstr ""
 "Nhấn vào \" Bỏ Qua\" để bỏ qua tiến trình backup.\n"
 "Ví dụ, bạn có thể nhìn nhanh cỡ của\n"
-"file bạn đã chọn xem nó có vượt quá giá trị của tape, "
-"hay bạn muốn dừng hay gỡ bỏ file từ danh sách backup.\n\n"
-"Nhấn vào \" Tiếp tục\" để bỏ qua thông điệp này và tiếp tục backup."
+"file bạn đã chọn xem nó có vượt quá giá trị của tape, hay "
+"bạn muốn dừng hay gỡ bỏ file từ danh sách backup.\n"
+"\n"
+"Nhấn vào \" Tiếp tục\" để bỏ qua thông điệp này và tiếp "
+"tục backup."
 
-#: KDat.cpp:1332
+#: KDat.cpp:1341
 msgid "Stop estimating backup size"
 msgstr "Dừng ước lượng size backup"
 
-#: KDat.cpp:1345
-msgid "CANCEL"
-msgstr "Bỏ Qua"
+#: KDat.cpp:1363
+msgid "C&ontinue"
+msgstr ""
 
 #: LoggerWidget.cpp:63
 msgid "Log file exists, overwrite?"
@@ -620,47 +744,48 @@ msgstr "Cỡ tape mặc định:"
 msgid "Tape block size:"
 msgstr "Cỡ Tape block:"
 
-#: OptionsDlg.cpp:76
+#: OptionsDlg.cpp:79
 msgid "bytes"
 msgstr "byte"
 
-#: OptionsDlg.cpp:87
+#: OptionsDlg.cpp:90
 msgid "Tape device:"
 msgstr "Thiết bị tape:"
 
-#: OptionsDlg.cpp:90
+#: OptionsDlg.cpp:93
 msgid "Tar command:"
 msgstr "lệnh tar:"
 
-#: OptionsDlg.cpp:99 OptionsDlg.cpp:102 VerifyOptDlg.cpp:59
+#: OptionsDlg.cpp:104 OptionsDlg.cpp:107 VerifyOptDlg.cpp:59
 msgid "..."
 msgstr "..."
 
-#: OptionsDlg.cpp:107
-msgid "Tape drive options"
+#: OptionsDlg.cpp:112
+#, fuzzy
+msgid "Tape Drive Options"
 msgstr "Tuỳ chọn ổ tape"
 
-#: OptionsDlg.cpp:113
+#: OptionsDlg.cpp:118
 msgid "Load tape on mount"
 msgstr "Tải tape khi mount"
 
-#: OptionsDlg.cpp:116
+#: OptionsDlg.cpp:122
 msgid "Lock tape drive on mount"
 msgstr "Khoá tape khi mount"
 
-#: OptionsDlg.cpp:119
+#: OptionsDlg.cpp:126
 msgid "Eject tape on unmount"
 msgstr "Eject tape khi umount"
 
-#: OptionsDlg.cpp:122
+#: OptionsDlg.cpp:130
 msgid "Variable block size"
 msgstr "Variable block size"
 
-#: OptionsDlg.cpp:186
+#: OptionsDlg.cpp:194
 msgid "Only local files are supported"
 msgstr "Chỉ hỗ trợ các file địa phương"
 
-#: OptionsDlg.cpp:203
+#: OptionsDlg.cpp:211
 msgid "Only local files are currently supported"
 msgstr "Chỉ hỗ trợ các file địa phương"
 
@@ -697,7 +822,9 @@ msgid "Writing tape ID failed."
 msgstr "Viết tape ID không thành công."
 
 #: Tape.cpp:154
-msgid "No index file was found for this tape.\nRecreate the index from tape?"
+msgid ""
+"No index file was found for this tape.\n"
+"Recreate the index from tape?"
 msgstr ""
 "Không tìm thấy file mục lục trên tape.\n"
 "Tạo lại mục lục từ  tape?"
@@ -725,10 +852,14 @@ msgstr "Lỗi file Mục lục"
 
 #: Tape.cpp:219
 #, c-format
-msgid "The tape index file format is version %d. The index cannot be read by this version of KDat. Perhaps the tape index file was created by a newer version of KDat?"
+msgid ""
+"The tape index file format is version %d. The index cannot be read by this "
+"version of KDat. Perhaps the tape index file was created by a newer version "
+"of KDat?"
 msgstr ""
-"Phiên bản của file mục lục tape là %d. Mục lục này không thể đọc bởi KDat.Có thể tape đã được tạo bởi một phiên "
-"bản khác của KDat?"
+"Phiên bản của file mục lục tape là %d. Mục lục này không "
+"thể đọc bởi KDat.Có thể tape đã được tạo bởi một "
+"phiên bản khác của KDat?"
 
 #: Tape.cpp:380
 msgid "Error during fseek #1 while accessing archive: \""
@@ -841,8 +972,8 @@ msgstr "Đọc số phiên bản..."
 #: TapeDrive.cpp:251
 msgid "Tape was formatted by a more recent version of KDat. Consider upgrading."
 msgstr ""
-"Tape được định dạng dưới một phiên bản mới hơn của KDat. "
-"Xin Upgrade."
+"Tape được định dạng dưới một phiên bản mới hơn của "
+"KDat. Xin Upgrade."
 
 #: TapeDrive.cpp:255
 msgid "Reading tape ID..."
@@ -912,9 +1043,16 @@ msgstr "Khôi phục log:"
 msgid "Verify log:"
 msgstr "Kiểm tra log:"
 
+#: VerifyDlg.cpp:143
+#, fuzzy
+msgid "&Save Log..."
+msgstr "Cất Log ..."
+
 #: VerifyDlg.cpp:343
-msgid "failed while reading tape data.\n"
-msgstr "Đọc dữ liệu tape không thành công.\n"
+msgid ""
+"failed while reading tape data.\n"
+msgstr ""
+"Đọc dữ liệu tape không thành công.\n"
 
 #: VerifyOptDlg.cpp:40 VerifyOptDlg.cpp:41
 msgid "KDat: Restore Options"
@@ -925,11 +1063,13 @@ msgid "KDat: Verify Options"
 msgstr "KDat: Tuỳ chọn khôi phục"
 
 #: VerifyOptDlg.cpp:49
-msgid "Restore to directory:"
+#, fuzzy
+msgid "Restore to folder:"
 msgstr "Khôi phục tới  thư mục:"
 
 #: VerifyOptDlg.cpp:51
-msgid "Verify in directory:"
+#, fuzzy
+msgid "Verify in folder:"
 msgstr "Kiểm tra trong thư mục:"
 
 #: VerifyOptDlg.cpp:64
@@ -953,10 +1093,25 @@ msgid "Can't allocate memory in kdat"
 msgstr "Không thể allocate bộ nhớ trong kdat."
 
 #: _translatorinfo.cpp:1
-msgid "_: NAME OF TRANSLATORS\nYour names"
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
 msgstr "Nguyen Hung Vu"
 
 #: _translatorinfo.cpp:3
-msgid "_: EMAIL OF TRANSLATORS\nYour emails"
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
 msgstr "vuhung@fedu.uec.ac.jp"
 
+#~ msgid "Preferences..."
+#~ msgstr "Tham chiếu..."
+
+#~ msgid "Delete All"
+#~ msgstr "Xoá tất cả"
+
+#~ msgid "Delete backup profile"
+#~ msgstr "Xoá backup profile"
+
+#~ msgid "CANCEL"
+#~ msgstr "Bỏ Qua"

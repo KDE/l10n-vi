@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdmgreet VERSION\n"
-"POT-Creation-Date: 2004-01-10 01:27+0100\n"
+"POT-Creation-Date: 2004-08-03 01:18+0200\n"
 "PO-Revision-Date: 2002-03-12 16:16GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.8\n"
 
-#: kdmconfig.cpp:184
+#: kdmconfig.cpp:133
 msgid "[fix kdmrc!]"
 msgstr "[fix kdmrc!]"
 
@@ -22,7 +22,7 @@ msgstr "[fix kdmrc!]"
 msgid "Cannot open console"
 msgstr ""
 
-#: kconsole.cpp:156
+#: kconsole.cpp:159
 msgid ""
 "\n"
 "*** Cannot open console log source ***"
@@ -90,47 +90,58 @@ msgstr ""
 msgid "Unknown host %1"
 msgstr ""
 
-#: kgverify.cpp:131
+#: kgverify.cpp:133
 msgid "No greeter widget plugin loaded. Check the configuration."
 msgstr ""
 
-#: kgverify.cpp:317
+#: kgverify.cpp:327
 msgid ""
 "Authenticating %1 ...\n"
 "\n"
 msgstr ""
 
-#: kgverify.cpp:347
+#: kgverify.cpp:331
 msgid "You are required to change your password immediately (password aged)."
 msgstr ""
 
-#: kgverify.cpp:352
+#: kgverify.cpp:332
 msgid "You are required to change your password immediately (root enforced)."
 msgstr ""
 
-#: kgverify.cpp:360
-#, fuzzy, c-format
+#: kgverify.cpp:333
+#, fuzzy
+msgid "You are not allowed to login at the moment."
+msgstr ""
+"Bạn không được phép đăng nhâ .p\n"
+"vào lúc này ."
+
+#: kgverify.cpp:334
+#, fuzzy
+msgid "Home folder not available."
+msgstr "Không có thư mục nhà ( home) ."
+
+#: kgverify.cpp:335
 msgid ""
-"_n: Your account expires tomorrow.\n"
-"Your account expires in %n days."
-msgstr "Tài khoản của bạn hết hàn trong %1 ngày ."
+"Logins are not allowed at the moment.\n"
+"Try again later."
+msgstr ""
+"Không đươc. phép đăng nhập vào lúc này . \n"
+"Hãy thử lại ."
 
-#: kgverify.cpp:361
-msgid "Your account expires today."
-msgstr "Tài khoản của bạn hết hạn vào hôm nay ."
+#: kgverify.cpp:336
+msgid "Your login shell is not listed in /etc/shells."
+msgstr "hệ vỏ đăng nhập của bạn không có trong /etc/shells ."
 
-#: kgverify.cpp:369
-#, fuzzy, c-format
-msgid ""
-"_n: Your password expires tomorrow.\n"
-"Your password expires in %n days."
-msgstr "Mật khẩu của bạn hết hạn trong %1 ngày . "
+#: kgverify.cpp:337
+msgid "Root logins are not allowed."
+msgstr "Root không được phép đăng nhập ."
 
-#: kgverify.cpp:370
-msgid "Your password expires today."
-msgstr "Mật khẩu của bạn hết hạn vào hôm nay ."
+#: kgverify.cpp:338
+#, fuzzy
+msgid "Your account has expired; please contact your system administrator."
+msgstr "Tài khoản của bạn đã hết hạn ."
 
-#: kgverify.cpp:390
+#: kgverify.cpp:348
 #, fuzzy
 msgid ""
 "A critical error occurred.\n"
@@ -141,67 +152,52 @@ msgstr ""
 "Xin xem file nhật kí của KDM để có thêm thông tin \n"
 "hay liên hệ người quản lí hệ thống ."
 
-#: kgverify.cpp:397
-#, fuzzy
-msgid "Home folder not available."
-msgstr "Không có thư mục nhà ( home) ."
-
-#: kgverify.cpp:402
-msgid "Root logins are not allowed."
-msgstr "Root không được phép đăng nhập ."
-
-#: kgverify.cpp:407
-msgid "Your login shell is not listed in /etc/shells."
-msgstr "hệ vỏ đăng nhập của bạn không có trong /etc/shells ."
-
-#: kgverify.cpp:412
-msgid "Your account has expired."
-msgstr "Tài khoản của bạn đã hết hạn ."
-
-#: kgverify.cpp:417
-#, fuzzy
-msgid "Your account has expired (failed to change password)."
-msgstr "Tài khoản của bạn đã hết hạn ."
-
-#: kgverify.cpp:422
-#, fuzzy
-msgid "You are not allowed to login at the moment."
-msgstr ""
-"Bạn không được phép đăng nhâ .p\n"
-"vào lúc này ."
-
-#: kgverify.cpp:439
+#: kgverify.cpp:374
+#, fuzzy, c-format
 msgid ""
-"Logins are not allowed at the moment.\n"
-"Try again later."
-msgstr ""
-"Không đươc. phép đăng nhập vào lúc này . \n"
-"Hãy thử lại ."
+"_n: Your account expires tomorrow.\n"
+"Your account expires in %n days."
+msgstr "Tài khoản của bạn hết hàn trong %1 ngày ."
 
-#: kgverify.cpp:498 kgverify.cpp:801
+#: kgverify.cpp:375
+msgid "Your account expires today."
+msgstr "Tài khoản của bạn hết hạn vào hôm nay ."
+
+#: kgverify.cpp:382
+#, fuzzy, c-format
+msgid ""
+"_n: Your password expires tomorrow.\n"
+"Your password expires in %n days."
+msgstr "Mật khẩu của bạn hết hạn trong %1 ngày . "
+
+#: kgverify.cpp:383
+msgid "Your password expires today."
+msgstr "Mật khẩu của bạn hết hạn vào hôm nay ."
+
+#: kgverify.cpp:450 kgverify.cpp:736
 msgid "Authentication failed"
 msgstr ""
 
-#: kgverify.cpp:643
+#: kgverify.cpp:580
 msgid ""
 "Authenticated user (%1) does not match requested user (%2).\n"
 msgstr ""
 
-#: kgverify.cpp:795
+#: kgverify.cpp:730
 #, fuzzy
 msgid "Warning: Caps Lock on"
 msgstr "Cảnh báo : Caps bị khoá"
 
-#: kgverify.cpp:799
+#: kgverify.cpp:734
 #, fuzzy
 msgid "Change failed"
 msgstr "Đăng nhập thất bại"
 
-#: kgverify.cpp:801
+#: kgverify.cpp:736
 msgid "Login failed"
 msgstr "Đăng nhập thất bại"
 
-#: kgverify.cpp:905
+#: kgverify.cpp:840
 msgid "Changing authentication token"
 msgstr ""
 
@@ -239,6 +235,17 @@ msgstr "Bây giờ &cưỡng chế"
 msgid "Try &now"
 msgstr "Bây giờ &thử"
 
+#: kgreeter.cpp:135
+msgid "Warning: this is an unsecured session"
+msgstr ""
+
+#: kgreeter.cpp:137
+msgid ""
+"This display requires no X authorization.\n"
+"This means that anybody can connect to it,\n"
+"open windows on it or intercept your input."
+msgstr ""
+
 #: kgreeter.cpp:187
 #, fuzzy
 msgid "L&ogin"
@@ -248,37 +255,40 @@ msgstr "Đăng &nhập: "
 msgid "&Clear"
 msgstr "&Xoá"
 
-#: kgreeter.cpp:228
+#: kgreeter.cpp:229
 #, fuzzy
 msgid "Session &Type"
 msgstr "&Kiểu session :"
 
-#: kgreeter.cpp:234
+#: kgreeter.cpp:235
 msgid "&Authentication Method"
 msgstr ""
 
-#: kgreeter.cpp:239
+#: kgreeter.cpp:240
 #, fuzzy
 msgid "&Remote Login"
 msgstr "Đăng nhập co&nsole"
 
-#: kgreeter.cpp:390
+#: kgreeter.cpp:460
 msgid "Custom"
 msgstr ""
 
-#: kgreeter.cpp:391
+#: kgreeter.cpp:461
 msgid "Failsafe"
 msgstr ""
 
-#: kgreeter.cpp:486
+#: kgreeter.cpp:556
 msgid " (previous)"
 msgstr ""
 
-#: kgreeter.cpp:544
+#: kgreeter.cpp:615
 msgid ""
 "Your saved session type '%1' is not valid any more.\n"
 "Please select a new one, otherwise 'default' will be used."
 msgstr ""
+
+#~ msgid "Your account has expired."
+#~ msgstr "Tài khoản của bạn đã hết hạn ."
 
 #, fuzzy
 #~ msgid "Root &password:"

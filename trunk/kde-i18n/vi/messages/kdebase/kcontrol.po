@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcontrol VERSION\n"
-"POT-Creation-Date: 2004-07-20 01:20+0200\n"
+"POT-Creation-Date: 2004-12-14 01:21+0100\n"
 "PO-Revision-Date: 2002-04-26 01:12GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -49,6 +49,10 @@ msgstr ""
 #, fuzzy
 msgid "KDE Info Center"
 msgstr "Trung tâm điều khiển KDE"
+
+#: aboutwidget.cpp:50
+msgid "Get system and desktop environment information"
+msgstr ""
 
 #: aboutwidget.cpp:52
 msgid ""
@@ -165,54 +169,6 @@ msgstr ""
 " để đọc tài liệu hướng dẫn chungvề trung tâm điều "
 "khiển ."
 
-#: kcmshell.cpp:55
-msgid "List all possible modules"
-msgstr "Liệt hết tất cả các module có thể "
-
-#: kcmshell.cpp:56
-#, fuzzy
-msgid "Configuration module to open"
-msgstr "Module cấu hình sẽ mở ."
-
-#: kcmshell.cpp:57
-msgid "Specify a particular language"
-msgstr ""
-
-#: kcmshell.cpp:58
-#, fuzzy
-msgid "Window ID to embed into"
-msgstr "ID của cửa sổ sẽ được embed vào ."
-
-#: kcmshell.cpp:59
-#, fuzzy
-msgid "Do not display main window"
-msgstr "Không hiển thị cửa sổ chính ."
-
-#: kcmshell.cpp:146 kcmshell.cpp:236
-msgid "KDE Control Module"
-msgstr "Trung Tâm điều khiển KDE "
-
-#: kcmshell.cpp:148
-msgid "A tool to start single KDE control modules"
-msgstr "Một công cụ để bắt đầu module điều khiển KDE "
-
-#: kcmshell.cpp:152 main.cpp:115 main.cpp:117
-msgid "Current Maintainer"
-msgstr "Người bảo trì hiện tại"
-
-#: kcmshell.cpp:173
-msgid "The following modules are available:"
-msgstr ""
-
-#: kcmshell.cpp:194
-msgid "No description available"
-msgstr ""
-
-#: kcmshell.cpp:242 kcmshell.cpp:317
-#, c-format
-msgid "Configure - %1"
-msgstr ""
-
 #: kcrootonly.cpp:30
 msgid ""
 "<big>You need super user privileges to run this control "
@@ -235,6 +191,10 @@ msgstr "(c) 1998-2002, The KDE Control Center Developers"
 #, fuzzy
 msgid "The KDE Info Center"
 msgstr "Trung tâm Điều khiển KDE"
+
+#: main.cpp:115 main.cpp:117
+msgid "Current Maintainer"
+msgstr "Người bảo trì hiện tại"
 
 #: modules.cpp:153
 #, fuzzy
@@ -290,12 +250,14 @@ msgstr "&Reset"
 msgid "&Administrator Mode"
 msgstr "Chế độ &Người Quản Lí"
 
-#: rc.cpp:4 rc.cpp:10
+#. i18n: file kcontrolui.rc line 5
+#: rc.cpp:6 rc.cpp:15
 #, no-c-format
 msgid "&Mode"
 msgstr "&Chế độ"
 
-#: rc.cpp:6 rc.cpp:12
+#. i18n: file kcontrolui.rc line 9
+#: rc.cpp:9 rc.cpp:18
 #, no-c-format
 msgid "Icon &Size"
 msgstr "&Cỡ Icon"
@@ -373,6 +335,27 @@ msgid ""
 "About %1"
 msgstr "Về %1"
 
+#~ msgid "List all possible modules"
+#~ msgstr "Liệt hết tất cả các module có thể "
+
+#, fuzzy
+#~ msgid "Configuration module to open"
+#~ msgstr "Module cấu hình sẽ mở ."
+
+#, fuzzy
+#~ msgid "Window ID to embed into"
+#~ msgstr "ID của cửa sổ sẽ được embed vào ."
+
+#, fuzzy
+#~ msgid "Do not display main window"
+#~ msgstr "Không hiển thị cửa sổ chính ."
+
+#~ msgid "KDE Control Module"
+#~ msgstr "Trung Tâm điều khiển KDE "
+
+#~ msgid "A tool to start single KDE control modules"
+#~ msgstr "Một công cụ để bắt đầu module điều khiển KDE "
+
 #, fuzzy
 #~ msgid "Configuration module to run."
 #~ msgstr "Module cấu hình sẽ mở ."
@@ -392,19 +375,8 @@ msgstr "Về %1"
 #~ msgid "There was an error loading the module."
 #~ msgstr "Có lỗi khi tải module"
 
-#~ msgid ""
-#~ "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
-#~ "occurred during your last KDE upgrade leaving an orphaned control "
-#~ "module<li>You have old third party modules lying around.</ul><p>Check "
-#~ "these points carefully and try to remove the module mentioned in the "
-#~ "error message. If this fails, consider contacting your distributor or "
-#~ "packager.</p></qt>"
-#~ msgstr ""
-#~ "<qt><p>Chẩn đoán là:<br>%1<p>Lí do có thể:</p><ul><li>Một lỗixảy ra khi "
-#~ "nâng cấp KDE lần cuối bỏ lại các module điều khiển mồ côi(orphaned)."
-#~ "<li>Bạn có các module  thứ ba cũ nằm đâu đó</ul><p>Kiểm tra các điểm này "
-#~ "thật kĩ và thử gỡ bỏ các module đãđề cập trong thông điệp lỗi . Nếu cái "
-#~ "này thất bại, xem xétlại nguồn cung cấp gói của bạn .</p></qt>"
+#~ msgid "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error occurred during your last KDE upgrade leaving an orphaned control module<li>You have old third party modules lying around.</ul><p>Check these points carefully and try to remove the module mentioned in the error message. If this fails, consider contacting your distributor or packager.</p></qt>"
+#~ msgstr "<qt><p>Chẩn đoán là:<br>%1<p>Lí do có thể:</p><ul><li>Một lỗixảy ra khi nâng cấp KDE lần cuối bỏ lại các module điều khiển mồ côi(orphaned).<li>Bạn có các module  thứ ba cũ nằm đâu đó</ul><p>Kiểm tra các điểm này thật kĩ và thử gỡ bỏ các module đãđề cập trong thông điệp lỗi . Nếu cái này thất bại, xem xétlại nguồn cung cấp gói của bạn .</p></qt>"
 
 #~ msgid ""
 #~ "There was an error loading module\n"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdesktop VERSION\n"
-"POT-Creation-Date: 2004-07-16 01:18+0200\n"
+"POT-Creation-Date: 2004-12-29 14:53+0100\n"
 "PO-Revision-Date: 2002-04-26 01:12GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -14,38 +14,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#: lock/lockdlg.cc:76
+#: lock/autologout.cc:39
+msgid "<nobr><qt><b>Automatic Log Out</b></qt><nobr>"
+msgstr ""
+
+#: lock/autologout.cc:40
+msgid ""
+"<qt>To prevent being logged out, resume using this session by moving the "
+"mouse or pressing a key.</qt>"
+msgstr ""
+
+#: lock/autologout.cc:74
+#, c-format
+msgid ""
+"_n: <nobr><qt>You will be automatically logged out in 1 second</qt></nobr>\n"
+"<nobr><qt>You will be automatically logged out in %n seconds</qt></nobr>"
+msgstr ""
+
+#: lock/lockdlg.cc:82
 msgid "<nobr><b>The session is locked</b><br>"
 msgstr ""
 
-#: lock/lockdlg.cc:77
-msgid "<nobr><b>The session is locked by %1</b><br>"
+#: lock/lockdlg.cc:83
+msgid "<nobr><b>The session was locked by %1</b><br>"
 msgstr ""
 
-#: lock/lockdlg.cc:87
-#, fuzzy
-msgid "&Start New Session..."
-msgstr "Cảnh báo - Chạy lệnh"
+#: lock/lockdlg.cc:93
+msgid "Sw&itch User..."
+msgstr ""
 
-#: lock/lockdlg.cc:88
+#: lock/lockdlg.cc:94
 msgid "Unl&ock"
 msgstr ""
 
-#: lock/lockdlg.cc:188
+#: lock/lockdlg.cc:194
 msgid "<b>Unlocking failed</b>"
 msgstr ""
 
-#: lock/lockdlg.cc:194
+#: lock/lockdlg.cc:200
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr ""
 
-#: lock/lockdlg.cc:420
+#: lock/lockdlg.cc:426
 msgid ""
-"Cannot unlock the session because the authentication system failed to work.\n"
-"You must kill kdesktop_lock (pid %1) manually."
+"Cannot unlock the session because the authentication system failed to work;\n"
+"you must kill kdesktop_lock (pid %1) manually."
 msgstr ""
 
-#: lock/lockdlg.cc:518
+#: lock/lockdlg.cc:529
 msgid ""
 "You have chosen to open another desktop session instead of resuming the "
 "current one."
@@ -53,27 +69,74 @@ msgid ""
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing CTRL, ALT and the appropriate F-key at the same time."
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions."
 msgstr ""
 
-#: krootwm.cc:748 lock/lockdlg.cc:529
+#: krootwm.cc:829 lock/lockdlg.cc:542
 msgid "&Start New Session"
 msgstr ""
 
-#: lock/lockprocess.cc:659
+#: lock/lockdlg.cc:554
+msgid "&Do not ask again"
+msgstr ""
+
+#: lock/lockdlg.cc:654
+#, fuzzy
+msgid "Session"
+msgstr "Khoá màn hình"
+
+#: lock/lockdlg.cc:655
+#, fuzzy
+msgid "Location"
+msgstr "Khoá màn hình"
+
+#: krootwm.cc:784 lock/lockdlg.cc:662
+msgid "Unused"
+msgstr ""
+
+#: krootwm.cc:785 lock/lockdlg.cc:663
+msgid "Remote Login"
+msgstr ""
+
+#: krootwm.cc:786 lock/lockdlg.cc:664
+msgid ""
+"_: user: session type\n"
+"%1: %2"
+msgstr ""
+
+#: krootwm.cc:788 lock/lockdlg.cc:666
+msgid ""
+"_: display, virtual terminal\n"
+"%1, vt%2"
+msgstr ""
+
+#: lock/lockdlg.cc:685
+msgid ""
+"_: session\n"
+"&Activate"
+msgstr ""
+
+#: lock/lockdlg.cc:694
+#, fuzzy
+msgid "Start &New Session"
+msgstr "Cảnh báo - Chạy lệnh"
+
+#: lock/lockprocess.cc:675
 msgid ""
 "Will not lock the session, as unlocking would be impossible:\n"
 msgstr ""
 
-#: lock/lockprocess.cc:663
+#: lock/lockprocess.cc:679
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr ""
 
-#: lock/lockprocess.cc:664
+#: lock/lockprocess.cc:680
 msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
 msgstr ""
 
-#: lock/lockprocess.cc:708
+#: lock/lockprocess.cc:724
 msgid "No appropriate greeter plugin configured."
 msgstr ""
 
@@ -101,39 +164,39 @@ msgstr "KDesktop"
 msgid "Session Locker for KDesktop"
 msgstr "Khoá màn hình cho KDesktop"
 
-#: desktop.cc:666
+#: desktop.cc:686
 #, fuzzy
 msgid "Set as Primary Background Color"
 msgstr "Đặt màu nền chính"
 
-#: desktop.cc:667
+#: desktop.cc:687
 #, fuzzy
 msgid "Set as Secondary Background Color"
 msgstr "Đặt màu nền thứ câp"
 
-#: desktop.cc:683
+#: desktop.cc:703
 #, fuzzy
 msgid "&Save to Desktop..."
 msgstr "Trợ giúp về desktop"
 
-#: desktop.cc:685
+#: desktop.cc:705
 msgid "Set as &Wallpaper"
 msgstr "Đặt làm hình &nền"
 
-#: desktop.cc:693
+#: desktop.cc:713
 msgid "Enter a name for the image below:"
 msgstr ""
 
-#: desktop.cc:702
+#: desktop.cc:722
 msgid "image.png"
 msgstr ""
 
-#: desktop.cc:754
+#: desktop.cc:774
 #, fuzzy
 msgid ""
-"Could not logout properly.\n"
+"Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
-"pressing Ctrl+Alt+Backspace. Note, however, that your current session will "
+"pressing Ctrl+Alt+Backspace; note, however, that your current session will "
 "not be saved with a forced shutdown."
 msgstr ""
 "Không thể thoát ra hợp lệ .\n"
@@ -142,140 +205,169 @@ msgstr ""
 "đồng thời .chú ý là tuy vậy session hiện tại của bạn sẽ "
 "không được cất nếucưỡng chế shutdown ."
 
-#: kdiconview.cc:395
+#: init.cc:68
+msgid ""
+"%1 is a file, but KDE needs it to be a directory; move it to %2.orig and "
+"create directory?"
+msgstr ""
+
+#: init.cc:82
+msgid ""
+"Could not create directory %1; check for permissions or reconfigure the "
+"desktop to use another path."
+msgstr ""
+
+#: kdiconview.cc:424
 msgid "&Rename"
 msgstr "&Thay tên"
 
-#: kdiconview.cc:396
+#: kdiconview.cc:425
 msgid "&Move to Trash"
 msgstr "&Dời tới thùng rác "
 
-#: krootwm.cc:129
+#: krootwm.cc:132
 msgid "Run Command..."
 msgstr "Chạy lệnh ..."
 
-#: krootwm.cc:133
+#: krootwm.cc:136
 msgid "Configure Desktop..."
 msgstr "Cấu hình desktop..."
 
-#: krootwm.cc:135 krootwm.cc:350
+#: krootwm.cc:138 krootwm.cc:355
 msgid "Disable Desktop Menu"
 msgstr "Không dùng thực đơn desktop"
 
-#: krootwm.cc:139
+#: krootwm.cc:142
 msgid "Unclutter Windows"
 msgstr "Cửa sổ có trật tự"
 
-#: krootwm.cc:141
+#: krootwm.cc:144
 msgid "Cascade Windows"
 msgstr "Cửa sổ tầng"
 
-#: krootwm.cc:147
+#: krootwm.cc:150
 msgid "By Name (Case Sensitive)"
 msgstr "Theo tên (phân biệt hoa - thường)"
 
-#: krootwm.cc:149
+#: krootwm.cc:152
 msgid "By Name (Case Insensitive)"
 msgstr "Theo tên ( không phân biệt hoa - thường)"
 
-#: krootwm.cc:151
+#: krootwm.cc:154
 msgid "By Size"
 msgstr "Theo cỡ"
 
-#: krootwm.cc:153
+#: krootwm.cc:156
 msgid "By Type"
 msgstr "Theo kiểu"
 
-#: krootwm.cc:155
+#: krootwm.cc:158
 msgid "By Date"
 msgstr ""
 
-#: krootwm.cc:158
+#: krootwm.cc:161
 msgid "Directories First"
 msgstr "Thư mục trước"
 
-#: krootwm.cc:161
+#: krootwm.cc:164
 #, fuzzy
 msgid "Line Up Horizontally"
 msgstr "Xếp hàng icon"
 
-#: krootwm.cc:164
+#: krootwm.cc:167
 msgid "Line Up Vertically"
 msgstr ""
 
-#: krootwm.cc:167
+#: krootwm.cc:170
 msgid "Align to Grid"
 msgstr ""
 
-#: krootwm.cc:174
+#: krootwm.cc:177
 msgid "Refresh Desktop"
 msgstr "Refresh Desktop"
 
-#: kdesktopbindings.cpp:30 krootwm.cc:180
+#: kdesktopbindings.cpp:31 krootwm.cc:183
 #, fuzzy
 msgid "Lock Session"
 msgstr "Khoá màn hình"
 
-#: krootwm.cc:185
+#: krootwm.cc:188
 #, fuzzy
-msgid "Logout \"%1\"..."
+msgid "Log Out \"%1\"..."
 msgstr "Thoát ra"
 
-#: krootwm.cc:196
-msgid "Start New Session..."
-msgstr ""
+#: krootwm.cc:194
+#, fuzzy
+msgid "Start New Session"
+msgstr "Cảnh báo - Chạy lệnh"
 
-#: krootwm.cc:328 krootwm.cc:406
+#: krootwm.cc:198
+#, fuzzy
+msgid "Lock Current && Start New Session"
+msgstr "Khoá màn hình"
+
+#: krootwm.cc:333 krootwm.cc:411
 #, fuzzy
 msgid "Sort Icons"
 msgstr "Bày lại icon"
 
-#: krootwm.cc:330
+#: krootwm.cc:335
 #, fuzzy
 msgid "Line Up Icons"
 msgstr "Xếp hàng icon"
 
-#: krootwm.cc:357
+#: krootwm.cc:362
 msgid "Enable Desktop Menu"
 msgstr "Cho phép dùng thực đơn desktop "
 
-#: krootwm.cc:413
+#: krootwm.cc:418
 #, fuzzy
 msgid "Icons"
 msgstr "Bày lại icon"
 
-#: krootwm.cc:419 krootwm.cc:473
+#: krootwm.cc:424 krootwm.cc:480
 msgid "Windows"
 msgstr "Cửa sổ"
 
-#: krootwm.cc:466
+#: kdesktopbindings.cpp:26 krootwm.cc:440
+msgid "Switch User"
+msgstr ""
+
+#: krootwm.cc:469
+#, fuzzy
+msgid "Sessions"
+msgstr "Khoá màn hình"
+
+#: krootwm.cc:473
 msgid "New"
 msgstr "Mới"
 
-#: kdesktopbindings.cpp:14 krootwm.cc:472 krootwm.cc:679
+#: kdesktopbindings.cpp:14 krootwm.cc:479 krootwm.cc:700
 msgid "Desktop"
 msgstr "Desktop"
 
-#: krootwm.cc:743
-#, fuzzy
-msgid "Warning - New Session"
-msgstr "Cảnh báo - Chạy lệnh"
+#: krootwm.cc:783
+msgid ""
+"_: session (location)\n"
+"%1 (%2)"
+msgstr ""
 
-#: krootwm.cc:751
+#: krootwm.cc:817
 msgid ""
 "<p>You have chosen to open another desktop session."
 "<br>The current session will be hidden and a new login screen will be "
 "displayed."
 "<br>An F-key is assigned to each session; F%1 is usually assigned to the "
 "first session, F%2 to the second session and so on. You can switch between "
-"sessions by pressing Ctrl, Alt and the appropriate F-key at the same "
-"time.</p>"
+"sessions by pressing Ctrl, Alt and the appropriate F-key at the same time. "
+"Additionally, the KDE Panel and Desktop menus have actions for switching "
+"between sessions.</p>"
 msgstr ""
 
-#: krootwm.cc:763
+#: krootwm.cc:828
 #, fuzzy
-msgid "&Lock current session"
-msgstr "Khoá màn hình"
+msgid "Warning - New Session"
+msgstr "Cảnh báo - Chạy lệnh"
 
 #: main.cc:43
 #, fuzzy
@@ -312,7 +404,7 @@ msgid ""
 "Your emails"
 msgstr "vuhung@fedu.uec.ac.jp"
 
-#: kdesktopbindings.cpp:20 minicli.cpp:76
+#: kdesktopbindings.cpp:20 minicli.cpp:77
 msgid "Run Command"
 msgstr "Chạy lệnh"
 
@@ -324,47 +416,49 @@ msgstr "Hiển thị trình quản lí tác vụ"
 msgid "Show Window List"
 msgstr "Hiển thị danh sách cửa sổ"
 
-#: kdesktopbindings.cpp:36
-msgid "Logout"
+#: kdesktopbindings.cpp:37
+#, fuzzy
+msgid "Log Out"
 msgstr "Thoát ra"
 
-#: kdesktopbindings.cpp:37
-msgid "Logout without Confirmation"
+#: kdesktopbindings.cpp:38
+#, fuzzy
+msgid "Log Out Without Confirmation"
 msgstr "Thoát ra không xác nhận"
 
-#: kdesktopbindings.cpp:38
+#: kdesktopbindings.cpp:39
 msgid "Halt without Confirmation"
 msgstr "Tắt máy tính không xác nhận lại"
 
-#: kdesktopbindings.cpp:39
+#: kdesktopbindings.cpp:40
 msgid "Reboot without Confirmation"
 msgstr "Reboot không xác nhận lại"
 
-#: minicli.cpp:90 minicli.cpp:624
+#: minicli.cpp:91 minicli.cpp:622
 msgid "&Options >>"
 msgstr "&Tuỳ chọn >>"
 
-#: minicli.cpp:93
+#: minicli.cpp:94
 msgid "&Run"
 msgstr "&Chạy"
 
-#: minicli.cpp:394
+#: minicli.cpp:392
 msgid "<qt>The user <b>%1</b> does not exist on this system.</qt>"
 msgstr "<qt>Người dùng <b>%1</b> không tồn tại trong hệ thống này </qt>"
 
-#: minicli.cpp:404
+#: minicli.cpp:402
 #, fuzzy
 msgid ""
 "You do not exist.\n"
 msgstr ""
 "Bạn không thoát ! \n"
 
-#: minicli.cpp:429
+#: minicli.cpp:427
 #, fuzzy
 msgid "Incorrect password; please try again."
 msgstr "Mật khẩu sai ! Xin thử lại ."
 
-#: minicli.cpp:537
+#: minicli.cpp:535
 #, fuzzy
 msgid ""
 "<center><b>%1</b></center>\n"
@@ -373,7 +467,7 @@ msgstr ""
 "<center> <b>%1</b></center>\n"
 "Không thể chạy được lệnh đã chỉ định !"
 
-#: minicli.cpp:563
+#: minicli.cpp:561
 #, fuzzy
 msgid ""
 "<center><b>%1</b></center>\n"
@@ -382,7 +476,7 @@ msgstr ""
 "<center> <b>%1</b></center>\n"
 "Không thể chạy được lệnh đã chỉ định !"
 
-#: minicli.cpp:575
+#: minicli.cpp:573
 #, fuzzy
 msgid ""
 "<center><b>%1</b></center>\n"
@@ -391,11 +485,11 @@ msgstr ""
 "<center><b>%1</b></center>\n"
 "Lệnh đã chỉ định không tồn tại !"
 
-#: minicli.cpp:612
+#: minicli.cpp:610
 msgid "&Options <<"
 msgstr "&Tuỳ chọn <<"
 
-#: minicli.cpp:817
+#: minicli.cpp:815
 msgid ""
 "Running a realtime application can be very dangerous. If the application "
 "misbehaves, the system might hang unrecoverably.\n"
@@ -406,21 +500,23 @@ msgstr ""
 "cứu chữa được . \n"
 "Bạn có chắc không ?"
 
-#: minicli.cpp:820
+#: minicli.cpp:818
 msgid "Warning - Run Command"
 msgstr "Cảnh báo - Chạy lệnh"
 
-#: minicli.cpp:820
+#: minicli.cpp:818
 #, fuzzy
 msgid "&Run Realtime"
 msgstr "Thời gian thực"
 
-#: rc.cpp:5
+#. i18n: file minicli_ui.ui line 169
+#: rc.cpp:6
 #, no-c-format
 msgid "Run with realtime &scheduling"
 msgstr ""
 
-#: rc.cpp:7
+#. i18n: file minicli_ui.ui line 177
+#: rc.cpp:9
 #, fuzzy, no-c-format
 msgid ""
 "<qt>Select whether realtime scheduling should be enabled for the "
@@ -449,32 +545,38 @@ msgstr ""
 "application that does not give up the processor might hang the system. You "
 "need root's password to use the scheduler."
 
-#: rc.cpp:14
+#. i18n: file minicli_ui.ui line 196
+#: rc.cpp:17
 #, fuzzy, no-c-format
 msgid "User&name:"
 msgstr "Tên &người dùng:"
 
-#: rc.cpp:16 rc.cpp:36
+#. i18n: file minicli_ui.ui line 202
+#: rc.cpp:20 rc.cpp:50
 #, fuzzy, no-c-format
 msgid "Enter the user you want to run the application as here."
 msgstr "Nhập tên chương trình bạn muốn chạý ."
 
-#: rc.cpp:18 rc.cpp:22
+#. i18n: file minicli_ui.ui line 221
+#: rc.cpp:23 rc.cpp:29
 #, fuzzy, no-c-format
 msgid "Enter the password here for the user you specified above."
 msgstr "Nhận mật khẩu đã bị hỏi vào đây ."
 
-#: rc.cpp:20
+#. i18n: file minicli_ui.ui line 240
+#: rc.cpp:26
 #, no-c-format
 msgid "Pass&word:"
 msgstr "&Mật khẩu :"
 
-#: rc.cpp:24
+#. i18n: file minicli_ui.ui line 254
+#: rc.cpp:32
 #, fuzzy, no-c-format
 msgid "Run in &terminal window"
 msgstr "Chạy trong đầu &cuối"
 
-#: rc.cpp:26
+#. i18n: file minicli_ui.ui line 257
+#: rc.cpp:35
 #, no-c-format
 msgid ""
 "Check this option if the application you want to run is a text mode "
@@ -484,12 +586,14 @@ msgstr ""
 "làchương trình chạy ở chế độ text . Chương trình sẽ chạy "
 "trong mộtcửa sổ emulate ."
 
-#: rc.cpp:28
+#. i18n: file minicli_ui.ui line 276
+#: rc.cpp:38
 #, fuzzy, no-c-format
 msgid "&Priority:"
 msgstr "Độ ưu &tiên: "
 
-#: rc.cpp:30 rc.cpp:40 rc.cpp:44 rc.cpp:46
+#. i18n: file minicli_ui.ui line 282
+#: rc.cpp:41 rc.cpp:56 rc.cpp:62 rc.cpp:65
 #, fuzzy, no-c-format
 msgid ""
 "The priority that the command will be run with can be set here. From left to "
@@ -502,12 +606,14 @@ msgstr ""
 ". Với nhữngmức độ ưu tiên cao hơn mặc định, bạn cần "
 "mật khẩu root ."
 
-#: rc.cpp:32
+#. i18n: file minicli_ui.ui line 309
+#: rc.cpp:44
 #, fuzzy, no-c-format
 msgid "Run with a &different priority"
 msgstr "Chạy chương trình dưới một mức độ ưu &tiên khác"
 
-#: rc.cpp:34
+#. i18n: file minicli_ui.ui line 312
+#: rc.cpp:47
 #, no-c-format
 msgid ""
 "Check this option if you want to run the application with a different "
@@ -519,22 +625,26 @@ msgstr ""
 "hệ điềuhành dành nhiều tiến trình cho chương trình của "
 "bạn "
 
-#: rc.cpp:38
+#. i18n: file minicli_ui.ui line 353
+#: rc.cpp:53
 #, no-c-format
 msgid "Low"
 msgstr ""
 
-#: rc.cpp:42
+#. i18n: file minicli_ui.ui line 367
+#: rc.cpp:59
 #, no-c-format
 msgid "High"
 msgstr "Cao"
 
-#: rc.cpp:48
+#. i18n: file minicli_ui.ui line 408
+#: rc.cpp:68
 #, no-c-format
 msgid "Run as a different &user"
 msgstr "Chạy dưới một &user khác"
 
-#: rc.cpp:50
+#. i18n: file minicli_ui.ui line 411
+#: rc.cpp:71
 #, no-c-format
 msgid ""
 "Check this option if you want to run the application with a different user "
@@ -547,12 +657,14 @@ msgstr ""
 "IDngười dùng này . ID code xác định truy cập file và các "
 "phânquyến khác . Mật khẩu của người dùng sẽ bị hỏi ."
 
-#: rc.cpp:52
+#. i18n: file minicli_ui.ui line 459
+#: rc.cpp:74
 #, fuzzy, no-c-format
 msgid "Com&mand:"
 msgstr "&Lệnh :"
 
-#: rc.cpp:54 rc.cpp:57
+#. i18n: file minicli_ui.ui line 465
+#: rc.cpp:77 rc.cpp:81
 #, fuzzy, no-c-format
 msgid ""
 "Enter the command you wish to execute or the address of the resource you "
@@ -562,12 +674,17 @@ msgstr ""
 "Nhập lệnh mà bạn muốn thực hiện hay URL bạn muốn mở .Nó "
 "có thể là URL như 'kdẹorg' hay file địa phương như \"~/.kderc\""
 
-#: rc.cpp:59
+#. i18n: file minicli_ui.ui line 508
+#: rc.cpp:84
 #, fuzzy, no-c-format
 msgid "Enter the name of the application you want to run or the URL you want to view"
 msgstr ""
 "Nhập tên của chương trình bạn muốn chạy hay URL bạn muốn "
 "xem ."
+
+#, fuzzy
+#~ msgid "&Start New Session..."
+#~ msgstr "Cảnh báo - Chạy lệnh"
 
 #~ msgid "Lock Screen"
 #~ msgstr "Khoá màn hình"
@@ -625,18 +742,8 @@ msgstr ""
 #~ msgid "Enter Password"
 #~ msgstr "Nhập mật khẩu"
 
-#~ msgid ""
-#~ "<h1>Screen Locking Failed!</h1>Your screen was not locked because the "
-#~ "<i>kcheckpass</i> program was not able to check your password. This is "
-#~ "usually the result of kcheckpass not being installed correctly. If you "
-#~ "installed KDE yourself, reinstall kcheckpass as root. If you are using a "
-#~ "pre-compiled package, contact the packager."
-#~ msgstr ""
-#~ "<h1>Không khoá được màn hình </h1>Màn hình của bạn khôngbị khoá vì chương "
-#~ "trình <i>kcheckpass</i> không thể kiểm tra mật khẩu của bạn .Nguyên nhân "
-#~ "thường là do kcheckpass không được cài đặt đúng .Nếu bạn tự cài đặt KDE, "
-#~ "hãy cài lại kcheckpass bằng root . Nếu bạn dùnggói đã biên dịch, hãy liên "
-#~ "hệ người làm gói đó ."
+#~ msgid "<h1>Screen Locking Failed!</h1>Your screen was not locked because the <i>kcheckpass</i> program was not able to check your password. This is usually the result of kcheckpass not being installed correctly. If you installed KDE yourself, reinstall kcheckpass as root. If you are using a pre-compiled package, contact the packager."
+#~ msgstr "<h1>Không khoá được màn hình </h1>Màn hình của bạn khôngbị khoá vì chương trình <i>kcheckpass</i> không thể kiểm tra mật khẩu của bạn .Nguyên nhân thường là do kcheckpass không được cài đặt đúng .Nếu bạn tự cài đặt KDE, hãy cài lại kcheckpass bằng root . Nếu bạn dùnggói đã biên dịch, hãy liên hệ người làm gói đó ."
 
 #~ msgid "Screen Locking Failed"
 #~ msgstr "Khoá màn hính thất bại"

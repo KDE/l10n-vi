@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2004-07-16 01:25+0200\n"
+"POT-Creation-Date: 2004-12-31 10:52+0100\n"
 "PO-Revision-Date: 2003-01-08 07:58\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: Vietnamese <vi@vi.i18n.kde.org>\n"
@@ -104,42 +104,46 @@ msgstr "Thử( không uninstall)"
 msgid "Purge Config Files"
 msgstr "Purge file cấu hình"
 
-#: debAptInterface.cpp:104
+#: debAptInterface.cpp:105
 msgid "U&pgrade"
 msgstr "Nâng &cấp"
 
-#: debAptInterface.cpp:108
+#: debAptInterface.cpp:109
 msgid "&Fixup"
 msgstr "&Fixup"
 
-#: debAptInterface.cpp:166
+#: debAptInterface.cpp:113
+msgid "&Apt-file update"
+msgstr ""
+
+#: debAptInterface.cpp:179
 #, c-format
 msgid "Querying DEB APT remote package list: %1"
 msgstr "Truy vấn danh sách DEB APT từ xa: %1"
 
-#: debAptInterface.cpp:172
+#: debAptInterface.cpp:185
 #, c-format
 msgid "Processing DEB APT remote package list: %1"
 msgstr "Xử lí danh sách gói DEB APT từ xa: %1"
 
-#: debAptInterface.cpp:209 debAptInterface.cpp:265 rpmInterface.cpp:192
+#: debAptInterface.cpp:222 debAptInterface.cpp:278 rpmInterface.cpp:194
 msgid "DEB APT"
 msgstr "DEB APT"
 
-#: debAptInterface.cpp:222
+#: debAptInterface.cpp:235
 msgid "Querying DEB APT available list"
 msgstr "Truy vấn danh sách DEB APT hiện có"
 
-#: debAptInterface.cpp:224
+#: debAptInterface.cpp:237
 #, c-format
 msgid "Querying DEB APT available list: %1"
 msgstr "Truy vấn danh sách DEB APT hiện có: %1"
 
-#: debAptInterface.cpp:229
+#: debAptInterface.cpp:242
 msgid "Processing DEB APT available list"
 msgstr "Xử lí danh sách DEB APT hiện có"
 
-#: debAptInterface.cpp:231
+#: debAptInterface.cpp:244
 #, c-format
 msgid "Processing DEB APT available list: %1"
 msgstr "Xử lí danh sách DEB APT hiện có: %1"
@@ -249,6 +253,7 @@ msgstr "Lấy thông tin về gói"
 
 #: fbsdInterface.cpp:204 fbsdInterface.cpp:205 fbsdInterface.cpp:432
 #: fbsdInterface.cpp:433 fbsdInterface.cpp:571 fbsdInterface.cpp:572
+#: packageProperties.cpp:176
 msgid "none"
 msgstr "none"
 
@@ -303,36 +308,48 @@ msgstr "Unexpected EOF từ pkg_info (tìm dòng comment)"
 msgid "Warning: invalid INDEX file entry for %1"
 msgstr "Cảnh cáo: entry của file INDEX không hợp lệ : %1"
 
-#: findf.cpp:45
+#: findf.cpp:49
 msgid "Find File"
 msgstr "Tìm file"
 
-#: findf.cpp:47 search.cpp:43
+#: findf.cpp:51 search.cpp:43
 msgid "&Find"
 msgstr "&Tìm"
 
-#: findf.cpp:61
+#: findf.cpp:60 search.cpp:41 search.cpp:51
+msgid "Find Package"
+msgstr ""
+
+#: findf.cpp:71
 #, fuzzy
 msgid "Find:"
 msgstr "&Tìm"
 
-#: findf.cpp:66
+#: findf.cpp:77 managementWidget.cpp:84
+msgid "Installed"
+msgstr "Cài đặt xong"
+
+#: findf.cpp:78
 msgid "Type"
 msgstr "Kiểu"
 
-#: findf.cpp:67 managementWidget.cpp:110
+#: findf.cpp:80 kplview.cpp:57
 msgid "Package"
 msgstr "Gói"
 
-#: findf.cpp:68
+#: findf.cpp:81
 msgid "File Name"
 msgstr "Tên file"
 
-#: findf.cpp:132
+#: findf.cpp:85
+msgid "Also search uninstalled packages"
+msgstr ""
+
+#: findf.cpp:171
 msgid "--Nothing found--"
 msgstr "--không tìm thấy gì--"
 
-#: findf.cpp:182
+#: findf.cpp:221
 msgid "Incorrect URL type"
 msgstr "Kiểu URL sai"
 
@@ -372,7 +389,7 @@ msgstr "Vị trí cảu gói KISS"
 msgid "KPackage: Waiting on KISS"
 msgstr "Kpackage: Đợi KISS"
 
-#: kpPty.cpp:137
+#: kpPty.cpp:139
 msgid "ROOT Login"
 msgstr "ROOT Login"
 
@@ -471,6 +488,27 @@ msgstr "Kio thất bại"
 msgid "Open location:"
 msgstr "Mở vị trí:"
 
+#: kplview.cpp:59
+msgid "Mark"
+msgstr "Đánh dấu"
+
+#: kplview.cpp:61
+#, fuzzy
+msgid "Summary"
+msgstr "tổng kết"
+
+#: kplview.cpp:63
+msgid "Size"
+msgstr "Cỡ"
+
+#: kplview.cpp:65
+msgid "Version"
+msgstr "Phiên bản"
+
+#: kplview.cpp:67
+msgid "Old Version"
+msgstr "Phiên bản cũ"
+
 #: main.cpp:60
 msgid "KDE Package installer"
 msgstr "Trình cài đặt gói KDE"
@@ -487,316 +525,313 @@ msgstr "gói sẽ cài đặt"
 msgid "KPackage"
 msgstr "KPackage"
 
-#: managementWidget.cpp:61
-msgid "Installed"
-msgstr "Cài đặt xong"
-
-#: managementWidget.cpp:62
+#: managementWidget.cpp:85
 msgid "Updated"
 msgstr "Cập nhật"
 
-#: managementWidget.cpp:63
+#: managementWidget.cpp:86
 msgid "New"
 msgstr "Mới"
 
-#: managementWidget.cpp:64
+#: managementWidget.cpp:87
 msgid "All"
 msgstr "Tất cả"
 
-#: managementWidget.cpp:112
-msgid "Mark"
-msgstr "Đánh dấu"
+#: managementWidget.cpp:139
+#, fuzzy
+msgid "Clear Search"
+msgstr "Xoá những cái đã đánh &dấu"
 
-#: managementWidget.cpp:114
-msgid "Size"
-msgstr "Cỡ"
+#: managementWidget.cpp:142
+msgid "Search: "
+msgstr ""
 
-#: managementWidget.cpp:116
-msgid "Version"
-msgstr "Phiên bản"
-
-#: managementWidget.cpp:118
-msgid "Old Version"
-msgstr "Phiên bản cũ"
-
-#: managementWidget.cpp:143
+#: managementWidget.cpp:165
 msgid "Uninstall Marked"
 msgstr "Xoá những gói đã đánh dấu"
 
-#: managementWidget.cpp:147
+#: managementWidget.cpp:169
 msgid "Install Marked"
 msgstr "Cài các gói đã đánh dấu"
 
-#: managementWidget.cpp:172 pkgOptions.cpp:359 pkgOptions.cpp:361
+#: managementWidget.cpp:194 pkgOptions.cpp:359 pkgOptions.cpp:361
 msgid "Uninstall"
 msgstr "Gỡ bỏ"
 
-#: managementWidget.cpp:176 managementWidget.cpp:263 pkgOptions.cpp:344
+#: managementWidget.cpp:198 managementWidget.cpp:269 pkgOptions.cpp:344
 #: pkgOptions.cpp:346
 msgid "Install"
 msgstr "Cài đặt"
 
-#: managementWidget.cpp:265
+#: managementWidget.cpp:271
 msgid "Fetch"
 msgstr "Fetch"
 
-#: managementWidget.cpp:350
+#: managementWidget.cpp:356
 msgid "Building package tree"
 msgstr "Xây dựng cây gói ( package tree)"
 
-#: managementWidget.cpp:465
+#: managementWidget.cpp:443
 #, fuzzy
 msgid ""
 "Filename not available\n"
 msgstr ""
 "Tên file không available\n"
 
-#: options.cpp:71
+#: options.cpp:73
 #, fuzzy
 msgid "&Types"
 msgstr "Kiểu"
 
-#: options.cpp:73
+#: options.cpp:75
 #, fuzzy
 msgid "Handle Package Type"
 msgstr "Handle kiểu gói"
 
-#: options.cpp:75
+#: options.cpp:77
 msgid "Remote Host"
 msgstr "Host ở xa"
 
-#: options.cpp:76
+#: options.cpp:78
 #, fuzzy
 msgid "Use remote host (Debian APT only):"
 msgstr "Dùng host ở xa( Chỉ cho Debian APT)"
 
-#: options.cpp:92
+#: options.cpp:94
 msgid "Enable"
 msgstr "Cho phép"
 
-#: options.cpp:94
+#: options.cpp:96
 #, fuzzy
 msgid "Location of Packages..."
 msgstr "Vị trí gói"
 
-#: options.cpp:103
+#: options.cpp:105
 #, fuzzy
 msgid "Cac&he"
 msgstr "Cache"
 
-#: options.cpp:106
+#: options.cpp:108
 #, fuzzy
 msgid "Cache Remote Package Folders"
 msgstr "Cache  file gói ở xa"
 
-#: options.cpp:112 options.cpp:128
+#: options.cpp:114 options.cpp:130
 msgid "Always"
 msgstr "Luôn luôn"
 
-#: options.cpp:115 options.cpp:131
+#: options.cpp:117 options.cpp:133
 msgid "During a session"
 msgstr "Trong session"
 
-#: options.cpp:118 options.cpp:134
+#: options.cpp:120 options.cpp:136
 msgid "Never"
 msgstr "Không bao giờ"
 
-#: options.cpp:122
+#: options.cpp:124
 #, fuzzy
 msgid "Cache Remote Package Files"
 msgstr "Cache  file gói ở xa"
 
-#: options.cpp:137
+#: options.cpp:139
 msgid "Cache Folder"
 msgstr ""
 
-#: options.cpp:144
+#: options.cpp:146
 #, fuzzy
 msgid "&Misc"
 msgstr "Linh tinh"
 
-#: options.cpp:150
+#: options.cpp:152
 msgid "Use SSH for privileged commands"
 msgstr "Dùng ssh cho các lệnh đã có thẩm quyền"
 
-#: options.cpp:153
+#: options.cpp:155
 msgid "Verify file list"
 msgstr "Kiểm tra danh sách file"
 
-#: options.cpp:156
+#: options.cpp:158
 msgid "Read information from all local package files"
 msgstr "Đọc thông tin từ  mọi file gói ở địa phương"
 
-#: packageDisplay.cpp:100
+#: packageDisplay.cpp:98
 msgid "File List"
 msgstr "Danh sách file"
 
-#: packageDisplay.cpp:101
+#: packageDisplay.cpp:99
 msgid "Change Log"
 msgstr ""
 
-#: packageDisplay.cpp:262
+#: packageDisplay.cpp:266
 msgid " - No change log -"
 msgstr ""
 
-#: packageDisplay.cpp:280 packageDisplay.cpp:306
+#: packageDisplay.cpp:284 packageDisplay.cpp:310
 msgid "Updating File List"
 msgstr "Cập nhật danh sách file"
 
-#: packageDisplay.cpp:313
+#: packageDisplay.cpp:317
 #, fuzzy
 msgid " Files"
 msgstr " files"
+
+#: packageDisplay.cpp:374
+msgid "&Open With..."
+msgstr ""
 
 #: packageInfo.cpp:122 slackInterface.cpp:341
 msgid "OTHER"
 msgstr "KHÁC"
 
-#: packageProperties.cpp:67
+#: packageProperties.cpp:69
 msgid "name"
 msgstr "tên"
 
-#: packageProperties.cpp:68
+#: packageProperties.cpp:70
 msgid "summary"
 msgstr "tổng kết"
 
-#: packageProperties.cpp:69
+#: packageProperties.cpp:71
 msgid "version"
 msgstr "phiên bản"
 
-#: packageProperties.cpp:70
+#: packageProperties.cpp:72
 msgid "old-version"
 msgstr "phiên bản cũ"
 
-#: packageProperties.cpp:71
+#: packageProperties.cpp:73
 msgid "status"
 msgstr "trạng thái"
 
-#: packageProperties.cpp:72
+#: packageProperties.cpp:74
 msgid "group"
 msgstr "nhóm"
 
-#: packageProperties.cpp:73
+#: packageProperties.cpp:75
 msgid "size"
 msgstr "cỡ"
 
-#: packageProperties.cpp:74
+#: packageProperties.cpp:76
 msgid "file-size"
 msgstr "cỡ file"
 
-#: packageProperties.cpp:75
+#: packageProperties.cpp:77
 msgid "description"
 msgstr "mô tả"
 
-#: packageProperties.cpp:76
+#: packageProperties.cpp:78
+msgid "url"
+msgstr ""
+
+#: packageProperties.cpp:79
 msgid "architecture"
 msgstr "architecture"
 
-#: packageProperties.cpp:78
+#: packageProperties.cpp:81
 msgid "unsatisfied dependencies"
 msgstr "unsatisfied dependencies"
 
-#: packageProperties.cpp:79
+#: packageProperties.cpp:82
 msgid "pre-depends"
 msgstr "pre-depends"
 
-#: packageProperties.cpp:80
+#: packageProperties.cpp:83
 msgid "dependencies"
 msgstr "dependencies"
 
-#: packageProperties.cpp:81
+#: packageProperties.cpp:84
 msgid "depends"
 msgstr "phụ thuộc"
 
-#: packageProperties.cpp:82
+#: packageProperties.cpp:85
 msgid "conflicts"
 msgstr "xung đột"
 
-#: packageProperties.cpp:83
+#: packageProperties.cpp:86
 msgid "provides"
 msgstr "cung cấp"
 
-#: packageProperties.cpp:84
+#: packageProperties.cpp:87
 msgid "recommends"
 msgstr ""
 
-#: packageProperties.cpp:85
+#: packageProperties.cpp:88
 msgid "replaces"
 msgstr "thay thế"
 
-#: packageProperties.cpp:86
+#: packageProperties.cpp:89
 msgid "suggests"
 msgstr "nhắc nhở"
 
-#: packageProperties.cpp:87
+#: packageProperties.cpp:90
 msgid "priority"
 msgstr "mức ưu tiên"
 
-#: packageProperties.cpp:89
+#: packageProperties.cpp:92
 msgid "essential"
 msgstr "cần thiết"
 
-#: packageProperties.cpp:90
+#: packageProperties.cpp:93
 msgid "install time"
 msgstr "thời gian cài đặt"
 
-#: packageProperties.cpp:91
+#: packageProperties.cpp:94
 msgid "config-version"
 msgstr "config-version"
 
-#: packageProperties.cpp:92
+#: packageProperties.cpp:95
 msgid "distribution"
 msgstr "phân phối"
 
-#: packageProperties.cpp:93
+#: packageProperties.cpp:96
 msgid "vendor"
 msgstr "nhà cung cấp"
 
-#: packageProperties.cpp:94
+#: packageProperties.cpp:97
 msgid "maintainer"
 msgstr "người quản lí"
 
-#: packageProperties.cpp:95
+#: packageProperties.cpp:98
 msgid "packager"
 msgstr "người làm gói"
 
-#: packageProperties.cpp:96
+#: packageProperties.cpp:99
 msgid "source"
 msgstr "nguồn"
 
-#: packageProperties.cpp:97
+#: packageProperties.cpp:100
 msgid "build-time"
 msgstr "build-time"
 
-#: packageProperties.cpp:98
+#: packageProperties.cpp:101
 msgid "build-host"
 msgstr "build-host"
 
-#: packageProperties.cpp:99
+#: packageProperties.cpp:102
 msgid "base"
 msgstr "base"
 
-#: packageProperties.cpp:100
+#: packageProperties.cpp:103
 msgid "filename"
 msgstr "filename"
 
-#: packageProperties.cpp:101
+#: packageProperties.cpp:104
 msgid "serial"
 msgstr "serial"
 
-#: packageProperties.cpp:103
+#: packageProperties.cpp:106
 msgid "also in"
 msgstr "also in"
 
-#: packageProperties.cpp:104
+#: packageProperties.cpp:107
 msgid "run depends"
 msgstr "chạy depends"
 
-#: packageProperties.cpp:105
+#: packageProperties.cpp:108
 msgid "build depends"
 msgstr "xây dựng depends"
 
-#: packageProperties.cpp:106
+#: packageProperties.cpp:109
 msgid "available as"
 msgstr "available as"
 
@@ -804,24 +839,24 @@ msgstr "available as"
 msgid "'Delete this window to continue'"
 msgstr ""
 
-#: pkgInterface.cpp:250
+#: pkgInterface.cpp:251
 msgid "Starting Kio"
 msgstr "Bắt đầu Kio"
 
-#: pkgInterface.cpp:255
+#: pkgInterface.cpp:256
 msgid "Kio finished"
 msgstr "Xong kio"
 
-#: pkgInterface.cpp:265
+#: pkgInterface.cpp:266
 msgid "Kio failed"
 msgstr "Kio thất bại"
 
-#: pkgInterface.cpp:290
+#: pkgInterface.cpp:291
 #, fuzzy, c-format
 msgid "Cannot read folder %1"
 msgstr "Không thể tạo thư mục %1"
 
-#: pkgInterface.cpp:320
+#: pkgInterface.cpp:321
 msgid "Verifying"
 msgstr ""
 
@@ -859,22 +894,26 @@ msgstr ""
 msgid "Kprocess error:%1"
 msgstr ""
 
-#: rc.cpp:4
+#. i18n: file kpackageui.rc line 13
+#: rc.cpp:6
 #, no-c-format
 msgid "&Packages"
 msgstr ""
 
-#: rc.cpp:6
+#. i18n: file kpackageui.rc line 30
+#: rc.cpp:9
 #, no-c-format
 msgid "&Cache"
 msgstr ""
 
-#: rc.cpp:8
+#. i18n: file kpackageui.rc line 36
+#: rc.cpp:12
 #, no-c-format
 msgid "Spe&cial"
 msgstr ""
 
-#: rc.cpp:10
+#. i18n: file kpackageui.rc line 38
+#: rc.cpp:15
 #, no-c-format
 msgid "&APT: Debian"
 msgstr ""
@@ -918,19 +957,15 @@ msgstr ""
 msgid "Querying RPM package list: "
 msgstr ""
 
-#: rpmInterface.cpp:155
+#: rpmInterface.cpp:157
 #, fuzzy
 msgid "Querying RPM package list"
 msgstr "Truy vấn dách gói:"
 
-#: rpmInterface.cpp:159
+#: rpmInterface.cpp:161
 #, fuzzy
 msgid "Processing RPM package list"
 msgstr "Xử lí danh sách gói DEB APT từ xa: %1"
-
-#: search.cpp:41 search.cpp:51
-msgid "Find Package"
-msgstr ""
 
 #: search.cpp:65
 msgid "Sub string"

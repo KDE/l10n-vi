@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm VERSION\n"
-"POT-Creation-Date: 2003-12-10 01:37+0100\n"
+"POT-Creation-Date: 2004-07-20 01:19+0200\n"
 "PO-Revision-Date: 2002-04-26 01:08GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -44,14 +44,26 @@ msgstr "&Di chuyển"
 msgid "Ad&vanced"
 msgstr "&Cao cấp"
 
-#: main.cpp:151
+#: main.cpp:109
+msgid "kcmkwinoptions"
+msgstr "kcmkwinoptions"
+
+#: main.cpp:109
+msgid "Window Behavior Configuration Module"
+msgstr "Mdule cấu hình ứng xử của cửa sổ"
+
+#: main.cpp:111
+msgid "(c) 1997 - 2002 KWin and KControl Authors"
+msgstr "(c) 1997 - 2002 KWin and KControl Authors"
+
+#: main.cpp:167
+#, fuzzy
 msgid ""
 "<h1>Window Behavior</h1> Here you can customize the way windows behave when "
 "being moved, resized or clicked on. You can also specify a focus policy as "
 "well as a placement policy for new windows. "
-"<p>"
-"Please note that this configuration will not take effect if you don't use "
-"KWin as your window manager. If you do use a different window manager, "
+"<p>Please note that this configuration will not take effect if you do not "
+"use KWin as your window manager. If you do use a different window manager, "
 "please refer to its documentation for how to customize window behavior."
 msgstr ""
 "<h1>Window Behavior</h1> Here you can customize the way windows behave when "
@@ -61,18 +73,6 @@ msgstr ""
 "Please note that this configuration will not take effect if you don't use "
 "KWin as your window manager. If you do use a different window manager, "
 "please refer to its documentation for how to customize window behavior."
-
-#: main.cpp:162
-msgid "kcmkwinoptions"
-msgstr "kcmkwinoptions"
-
-#: main.cpp:162
-msgid "Window Behavior Configuration Module"
-msgstr "Mdule cấu hình ứng xử của cửa sổ"
-
-#: main.cpp:164
-msgid "(c) 1997 - 2002 KWin and KControl Authors"
-msgstr "(c) 1997 - 2002 KWin and KControl Authors"
 
 #: mouse.cpp:63
 msgid "&Titlebar double-click:"
@@ -392,36 +392,37 @@ msgstr "Kích hoạt và nâng"
 msgid "Resize"
 msgstr "Thay cỡ"
 
-#: windows.cpp:113
+#: windows.cpp:115
 #, fuzzy
 msgid "Focus"
 msgstr "&Trọng tâm"
 
-#: windows.cpp:120
+#: windows.cpp:122
 msgid "&Policy:"
 msgstr ""
 
-#: windows.cpp:123
+#: windows.cpp:125
 #, fuzzy
 msgid "Click to Focus"
 msgstr "Nhấn để trọng tâm"
 
-#: windows.cpp:124
+#: windows.cpp:126
 #, fuzzy
 msgid "Focus Follows Mouse"
 msgstr "Trọng tâm đi theo chuột "
 
-#: windows.cpp:125
+#: windows.cpp:127
 #, fuzzy
 msgid "Focus Under Mouse"
 msgstr "Trọng tâm dưới chuột"
 
-#: windows.cpp:126
+#: windows.cpp:128
 #, fuzzy
 msgid "Focus Strictly Under Mouse"
 msgstr "Trọng tâm dưới chuột nghiêm ngặt"
 
-#: windows.cpp:131
+#: windows.cpp:133
+#, fuzzy
 msgid ""
 "The focus policy is used to determine the active window, i.e. the window you "
 "can work in. "
@@ -430,17 +431,18 @@ msgid ""
 " A window becomes active when you click into it. This is the behavior you "
 "might know from other operating systems.</li> "
 "<li><em>Focus follows mouse:</em> Moving the mouse pointer actively on to a "
-"normal window activates it. Very practical if you are using the mouse a "
-"lot.</li> "
+"normal window activates it. New windows will receive the focus, without you "
+"having to point the mouse at them explicitly. Very practical if you are "
+"using the mouse a lot.</li> "
 "<li><em>Focus under mouse:</em> The window that happens to be under the "
-"mouse pointer becomes active. If the mouse points nowhere, the last window "
-"that was under the mouse has focus. </li> "
-"<li><em>Focus strictly under mouse:</em> This is even worse than 'Focus "
-"under mouse'. Only the window under the mouse pointer is active. If the "
-"mouse points nowhere, nothing has focus. </ul>"
-" Note that 'Focus under mouse' and 'Focus strictly under mouse' are not "
-"particularly useful. They are only provided for old-fashioned die-hard UNIX "
-"people ;-)"
+"mouse pointer is active. If the mouse points nowhere, the last window that "
+"was under the mouse has focus. New windows will not automatically receive "
+"the focus.</li> "
+"<li><em>Focus strictly under mouse:</em> Only the window under the mouse "
+"pointer is active. If the mouse points nowhere, nothing has focus. </ul>"
+"Note that 'Focus under mouse' and 'Focus strictly under mouse' prevent "
+"certain features such as the Alt+Tab walk through windows dialog in the KDE "
+"mode from working properly."
 msgstr ""
 "The focus policy is used to determine the active window, ịẹ the window "
 "you can work in. "
@@ -461,25 +463,30 @@ msgstr ""
 "particularly useful. They are only provided for old-fashioned die-hard UNIX "
 "people ;-)"
 
-#: windows.cpp:154
+#: windows.cpp:158
 #, fuzzy
 msgid "Auto &raise"
 msgstr "Tự nâng"
 
-#: windows.cpp:159 windows.cpp:471
+#: windows.cpp:163 windows.cpp:176 windows.cpp:531
 msgid "Dela&y:"
 msgstr ""
 
-#: windows.cpp:162 windows.cpp:474 windows.cpp:502
+#: windows.cpp:166 windows.cpp:179 windows.cpp:534 windows.cpp:562
 msgid " msec"
 msgstr ""
 
-#: windows.cpp:165
+#: windows.cpp:171
+#, fuzzy
+msgid "Delay focus"
+msgstr "Trễ (ms)"
+
+#: windows.cpp:182
 #, fuzzy
 msgid "C&lick raise active window"
 msgstr "Click nâng"
 
-#: windows.cpp:172
+#: windows.cpp:189
 #, fuzzy
 msgid ""
 "When this option is enabled, a window in the background will automatically "
@@ -489,7 +496,7 @@ msgstr ""
 "sẽ tự động tới phía trước khi chuột bị di tới đó trong "
 "một khoảng thời gian ."
 
-#: windows.cpp:174
+#: windows.cpp:191
 msgid ""
 "This is the delay after which the window that the mouse pointer is over will "
 "automatically come to the front."
@@ -497,7 +504,7 @@ msgstr ""
 "Đây là trễ sau khi cửa sổ mà nếu chuột nằm phía trên thì "
 "sẽ tựđộng bị đẩy ra phía trước ."
 
-#: windows.cpp:178
+#: windows.cpp:195
 #, fuzzy
 msgid ""
 "When this option is enabled, the active window will be brought to the front "
@@ -508,35 +515,45 @@ msgstr ""
 "tớiphí trước khi bạn nhấn vào một nơi nào đó ở phía "
 "trong của cửa sổ ."
 
-#: windows.cpp:185
+#: windows.cpp:200
+#, fuzzy
+msgid ""
+"When this option is enabled, there will be a delay after which the window "
+"the mouse pointer is over will become active (receive focus)."
+msgstr ""
+"Đây là trễ sau khi cửa sổ mà nếu chuột nằm phía trên thì "
+"sẽ tựđộng bị đẩy ra phía trước ."
+
+#: windows.cpp:202
+#, fuzzy
+msgid ""
+"This is the delay after which the window the mouse pointer is over will "
+"automatically receive focus."
+msgstr ""
+"Đây là trễ sau khi cửa sổ mà nếu chuột nằm phía trên thì "
+"sẽ tựđộng bị đẩy ra phía trước ."
+
+#: windows.cpp:207
 msgid "Navigation"
 msgstr ""
 
-#: windows.cpp:189
-msgid "Walk through windows mode:"
-msgstr "Đi qua chế độ cửa sổ :"
+#: windows.cpp:211
+msgid "Show window list while switching windows"
+msgstr ""
 
-#: windows.cpp:191
-#, fuzzy
-msgid "&KDE"
-msgstr "KDE"
-
-#: windows.cpp:193
-#, fuzzy
-msgid "CD&E"
-msgstr "CDE"
-
-#: windows.cpp:196
+#: windows.cpp:214
 #, fuzzy
 msgid ""
 "Hold down the Alt key and press the Tab key repeatedly to walk through the "
 "windows on the current desktop (the Alt+Tab combination can be "
-"reconfigured). The two different modes mean:"
-"<ul>"
-"<li><b>KDE</b>: a nice widget is shown, displaying the icons of all windows "
-"to walk through and the title of the currently selected one;"
-"<li><b>CDE</b>: the focus is passed to a new window each time Tab is "
-"pressed. No fancy widget.</li></ul>"
+"reconfigured).\n"
+"\n"
+"If this checkbox is checked a popup widget is shown, displaying the icons of "
+"all windows to walk through and the title of the currently selected one.\n"
+"\n"
+"Otherwise, the focus is passed to a new window each time Tab is pressed, "
+"with no popup widget.  In addition, the previously activated window will be "
+"sent to the back in this mode."
 msgstr ""
 "Keep the Alt key pressed and hit the Tab key repeatedly to walk through the "
 "windows on the current desktop (the Alt+Tab combination can be "
@@ -548,12 +565,12 @@ msgstr ""
 ": the focus is passed to a new window each time Tab is hit. No fancy "
 "widget.</li></ul>"
 
-#: windows.cpp:207
+#: windows.cpp:225
 #, fuzzy
 msgid "&Traverse windows on all desktops"
 msgstr "Duyệt cửa sổ trên mọi desktop"
 
-#: windows.cpp:210
+#: windows.cpp:228
 msgid ""
 "Leave this option disabled if you want to limit walking through windows to "
 "the current desktop."
@@ -561,48 +578,48 @@ msgstr ""
 "Bỏ tuỳ chọn này nếu bạn muốn giới hạn đi hết cửa sổ "
 "trên desktop hiện tại "
 
-#: windows.cpp:214
+#: windows.cpp:232
 msgid "Desktop navi&gation wraps around"
 msgstr ""
 
-#: windows.cpp:217
+#: windows.cpp:235
 msgid ""
 "Enable this option if you want keyboard or active desktop border navigation "
 "beyond the edge of a desktop to take you to the opposite edge of the new "
 "desktop."
 msgstr ""
 
-#: windows.cpp:221
+#: windows.cpp:239
 msgid "Popup desktop name on desktop &switch"
 msgstr ""
 
-#: windows.cpp:224
+#: windows.cpp:242
 msgid ""
 "Enable this option if you wish to see the current desktop name popup "
 "whenever the current desktop is changed."
 msgstr ""
 
-#: windows.cpp:460
+#: windows.cpp:520
 msgid "Shading"
 msgstr "Cuốn"
 
-#: windows.cpp:462
+#: windows.cpp:522
 #, fuzzy
 msgid "Anima&te"
 msgstr "Hoạt họa"
 
-#: windows.cpp:463
+#: windows.cpp:523
 msgid ""
 "Animate the action of reducing the window to its titlebar (shading) as well "
 "as the expansion of a shaded window"
 msgstr "Hoạt hoạ hoá hành động  FIXME"
 
-#: windows.cpp:466
+#: windows.cpp:526
 #, fuzzy
 msgid "&Enable hover"
 msgstr "Cho phép hover"
 
-#: windows.cpp:476
+#: windows.cpp:536
 msgid ""
 "If Shade Hover is enabled, a shaded window will un-shade automatically when "
 "the mouse pointer has been over the title bar for some time."
@@ -611,7 +628,7 @@ msgstr ""
 "lật lên tự động khi di chuột lên trên trên nó trong "
 "mộtthời gian ."
 
-#: windows.cpp:479
+#: windows.cpp:539
 msgid ""
 "Sets the time in milliseconds before the window unshades when the mouse "
 "pointer goes over the shaded window."
@@ -619,11 +636,11 @@ msgstr ""
 "Đặt thời gian tính bằng mili giây trước khi cửa cổ lậtkhi "
 "có chuột di lên 1 cửa sổ bị gập ."
 
-#: windows.cpp:490
+#: windows.cpp:550
 msgid "Active Desktop Borders"
 msgstr "Viền desktop hoạt động"
 
-#: windows.cpp:493
+#: windows.cpp:553
 msgid ""
 "If this option is enabled, moving the mouse to a screen border will change "
 "your desktop. This is e.g. useful if you want to drag windows from one "
@@ -634,26 +651,26 @@ msgstr ""
 "hữu ích nếu bạn muốnthả 1 cửa sổ từ desktop này sang "
 "desktop khác ."
 
-#: windows.cpp:496
+#: windows.cpp:556
 #, fuzzy
 msgid "D&isabled"
 msgstr "&Không cho phép"
 
-#: windows.cpp:497
+#: windows.cpp:557
 #, fuzzy
 msgid "Only &when moving windows"
 msgstr "Chỉ khi &di chuyển cửa sổ"
 
-#: windows.cpp:498
+#: windows.cpp:558
 #, fuzzy
 msgid "A&lways enabled"
 msgstr "&Luôn cho phép"
 
-#: windows.cpp:503
+#: windows.cpp:563
 msgid "Desktop &switch delay:"
 msgstr "Trễ khi &chuyển desktop:"
 
-#: windows.cpp:504
+#: windows.cpp:564
 msgid ""
 "Here you can set a delay for switching desktops using the active borders "
 "feature. Desktops will be switched after the mouse has been pushed against a "
@@ -664,55 +681,55 @@ msgstr ""
 "bật sau khi chuột đã bị nhấn vào viền màn hình trong một "
 "thờigian chỉ định trước tính bằng mili giây ."
 
-#: windows.cpp:517
+#: windows.cpp:577
 msgid "Focus stealing prevention level:"
 msgstr ""
 
-#: windows.cpp:519
+#: windows.cpp:579
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "None"
 msgstr ""
 
-#: windows.cpp:520
+#: windows.cpp:580
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Low"
 msgstr ""
 
-#: windows.cpp:521
+#: windows.cpp:581
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Normal"
 msgstr ""
 
-#: windows.cpp:522
+#: windows.cpp:582
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "High"
 msgstr ""
 
-#: windows.cpp:523
+#: windows.cpp:583
 msgid ""
 "_: Focus Stealing Prevention Level\n"
 "Extreme"
 msgstr ""
 
-#: windows.cpp:527
+#: windows.cpp:587
 msgid ""
 "This option specifies how much KWin will try to prevent unwanted focus "
-"stealing caused by unexpected activation of new "
-"windows."
+"stealing caused by unexpected activation of new windows. (Note: This feature "
+"does not work with the Focus Under Mouse or Focus Strictly Under Mouse focus "
+"policies.)"
 "<ul>"
-"<li><em>None:</em> The standard old behavior - prevention is turned off and "
-"new windows always become activated.</li>"
-"<li><em>Low:</em> Prevention is enabled; when some window doesn't have "
+"<li><em>None:</em> Prevention is turned off and new windows always become "
+"activated.</li>"
+"<li><em>Low:</em> Prevention is enabled; when some window does not have "
 "support for the underlying mechanism and KWin cannot reliably decide whether "
 "to activate the window or not, it will be activated. This setting may have "
 "both worse and better results than normal level, depending on the "
 "applications.</li>"
-"<li><em>Normal:</em> Prevention is enabled; the default "
-"setting.</li>"
+"<li><em>Normal:</em> Prevention is enabled.</li>"
 "<li><em>High:</em> New windows get activated only if no window is currently "
 "active or if they belong to the currently active application. This setting "
 "is probably not really usable when not using mouse focus "
@@ -721,16 +738,16 @@ msgid ""
 "user.</li></ul>"
 msgstr ""
 
-#: windows.cpp:688
+#: windows.cpp:748
 msgid "Windows"
 msgstr "Cửa sổ"
 
-#: windows.cpp:696
+#: windows.cpp:756
 #, fuzzy
 msgid "Di&splay content in moving windows"
 msgstr "Hiển thị nội dung khi di chuyển cửa sổ"
 
-#: windows.cpp:698
+#: windows.cpp:758
 msgid ""
 "Enable this option if you want a window's content to be fully shown while "
 "moving it, instead of just showing a window 'skeleton'. The result may not "
@@ -741,12 +758,12 @@ msgstr ""
 "hiển thị 'xương' của nó .Kết quả này có thể không làm "
 "thoả mãn các mày cũ không có chức nănggia tốc đồ hoạ ."
 
-#: windows.cpp:702
+#: windows.cpp:762
 #, fuzzy
 msgid "Display content in &resizing windows"
 msgstr "Hiển thị nội dung khi  thay đổi cỡ cửa sổ"
 
-#: windows.cpp:704
+#: windows.cpp:764
 msgid ""
 "Enable this option if you want a window's content to be shown while resizing "
 "it, instead of just showing a window 'skeleton'. The result may not be "
@@ -757,23 +774,23 @@ msgstr ""
 "hiển thị 'xương' của cửa sổ .Kết quả này có thể sẽ "
 "không làm hài lòng các máy chậm ."
 
-#: windows.cpp:708
+#: windows.cpp:768
 msgid "Display window &geometry when moving or resizing"
 msgstr ""
 
-#: windows.cpp:710
+#: windows.cpp:770
 msgid ""
 "Enable this option if you want a window's geometry to be displayed while it "
 "is being moved or resized. The window position relative to the top-left "
 "corner of the screen is displayed together with its size."
 msgstr ""
 
-#: windows.cpp:720
+#: windows.cpp:780
 #, fuzzy
 msgid "Animate minimi&ze and restore"
 msgstr "Hoạt hoá cực tiểu và khôi phục"
 
-#: windows.cpp:722
+#: windows.cpp:782
 msgid ""
 "Enable this option if you want an animation shown when windows are minimized "
 "or restored."
@@ -781,15 +798,15 @@ msgstr ""
 "Nhận tuỳ chọn này nếu bạn muốn một animation hiện ra khi "
 "cửasổ được cực tiểu hay khôi phục ."
 
-#: windows.cpp:736
+#: windows.cpp:796
 msgid "Slow"
 msgstr "Chậm"
 
-#: windows.cpp:740
+#: windows.cpp:800
 msgid "Fast"
 msgstr "Nhanh"
 
-#: windows.cpp:744
+#: windows.cpp:804
 msgid ""
 "Here you can set the speed of the animation shown when windows are minimized "
 "and restored. "
@@ -797,12 +814,12 @@ msgstr ""
 "Bạn có thể đặt tốc độ của hoạt họa được hiển thị "
 "khicửa sổ bị cực tiểu hoá hay khôi phục ."
 
-#: windows.cpp:750
+#: windows.cpp:810
 #, fuzzy
 msgid "Allow moving and resizing o&f maximized windows"
 msgstr "Cho phép di chuyển và thay đổi cỡ của màn hình cực đại "
 
-#: windows.cpp:752
+#: windows.cpp:812
 msgid ""
 "When enabled, this feature activates the border of maximized windows and "
 "allows you to move or resize them, just like for normal windows"
@@ -811,32 +828,32 @@ msgstr ""
 "sổcực đại và cho phép bạn chuyển hay thay đổi cỡ của "
 "chúng, giống như là cửa sổ bình thường ."
 
-#: windows.cpp:758
+#: windows.cpp:818
 #, fuzzy
 msgid "&Placement:"
 msgstr "Sắp xếp :"
 
-#: windows.cpp:761
+#: windows.cpp:821
 msgid "Smart"
 msgstr "Thông minh"
 
-#: windows.cpp:762
+#: windows.cpp:822
 msgid "Cascade"
 msgstr "Cascade"
 
-#: windows.cpp:763
+#: windows.cpp:823
 msgid "Random"
 msgstr "Ngẫu nhiên"
 
-#: windows.cpp:764
+#: windows.cpp:824
 msgid "Centered"
 msgstr ""
 
-#: windows.cpp:765
+#: windows.cpp:825
 msgid "Zero-Cornered"
 msgstr ""
 
-#: windows.cpp:772
+#: windows.cpp:832
 msgid ""
 "The placement policy determines where a new window will appear on the "
 "desktop. For now, there are three different policies: "
@@ -852,23 +869,23 @@ msgstr ""
 "<li><em>Cascade</em> will cascade the windows</li> "
 "<li><em>Random</em> will use a random position</li></ul>"
 
-#: windows.cpp:804
+#: windows.cpp:864
 msgid "Snap Zones"
 msgstr "Snap Zones"
 
-#: windows.cpp:808 windows.cpp:818
+#: windows.cpp:868 windows.cpp:878
 msgid "none"
 msgstr "không"
 
-#: windows.cpp:810
+#: windows.cpp:870
 msgid "&Border snap zone:"
 msgstr "&Border snap zone:"
 
-#: windows.cpp:811 windows.cpp:821
+#: windows.cpp:871 windows.cpp:881
 msgid " pixels"
 msgstr " pixels"
 
-#: windows.cpp:813
+#: windows.cpp:873
 msgid ""
 "Here you can set the snap zone for screen borders, i.e. the 'strength' of "
 "the magnetic field which will make windows snap to the border when moved "
@@ -878,11 +895,11 @@ msgstr ""
 "củatừ trường sẽ làm cho cửa sổ snap vào viền khi chuyển "
 "chúng ."
 
-#: windows.cpp:820
+#: windows.cpp:880
 msgid "&Window snap zone:"
 msgstr "&Window snap zone:"
 
-#: windows.cpp:823
+#: windows.cpp:883
 msgid ""
 "Here you can set the snap zone for windows, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to each other when they're moved "
@@ -892,20 +909,32 @@ msgstr ""
 "củatừ trường mà cửa sổ sẽ snap vào mỗi chúng khi bạn di "
 "chuyển tới gầncửa sổ khác ."
 
-#: windows.cpp:827
+#: windows.cpp:887
 #, fuzzy
 msgid "Snap windows onl&y when overlapping"
 msgstr "Snap cửa sổ khi  bị &gối lên nhau"
 
-#: windows.cpp:828
+#: windows.cpp:888
+#, fuzzy
 msgid ""
 "Here you can set that windows will be only snapped if you try to overlap "
-"them, i.e. they won't be snapped if the windows comes only near another "
+"them, i.e. they will not be snapped if the windows comes only near another "
 "window or border."
 msgstr ""
 "Bạn có thể đặt sao cho cửa sổ sẽ chỉ bị snap khi bạn "
 "thửgối lên chúng, ịe chúng sẽ không bị snap nếu cửa sổ "
 "đền chỉ gần viền của cửa sổ khác ."
+
+#~ msgid "Walk through windows mode:"
+#~ msgstr "Đi qua chế độ cửa sổ :"
+
+#, fuzzy
+#~ msgid "&KDE"
+#~ msgstr "KDE"
+
+#, fuzzy
+#~ msgid "CD&E"
+#~ msgstr "CDE"
 
 #, fuzzy
 #~ msgid "Multiple Monitor Support"
@@ -960,9 +989,6 @@ msgstr ""
 
 #~ msgid "Focus policy"
 #~ msgstr "Chính xác trọng tâm"
-
-#~ msgid "Delay (ms)"
-#~ msgstr "Trễ (ms)"
 
 #~ msgid "Keyboard"
 #~ msgstr "Bàn phím "

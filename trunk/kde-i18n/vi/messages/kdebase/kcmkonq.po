@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkonq VERSION\n"
-"POT-Creation-Date: 2003-11-14 01:27+0100\n"
+"POT-Creation-Date: 2004-08-02 01:40+0200\n"
 "PO-Revision-Date: 2002-02-15 16:46GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vn@yahoogroups.com>\n"
@@ -106,12 +106,22 @@ msgstr ""
 "nhảytới khi nút \"Nhà\" được ấn . Thường là một dấu ngã "
 "(~)."
 
-#: behaviour.cpp:134
+#: behaviour.cpp:133
+msgid "Show 'Delete' me&nu entries which bypass the trashcan"
+msgstr ""
+
+#: behaviour.cpp:137
+msgid ""
+"Uncheck this if you do not want 'Delete' menu commands to be displayed on "
+"the desktop and in the file manager's menus and context menus."
+msgstr ""
+
+#: behaviour.cpp:140
 #, fuzzy
 msgid "Ask Confirmation For"
 msgstr "Hởi xác nhận cho :"
 
-#: behaviour.cpp:136
+#: behaviour.cpp:142
 #, fuzzy
 msgid ""
 "This option tells Konqueror whether to ask for a confirmation when you "
@@ -132,16 +142,16 @@ msgstr ""
 "not remove confirmation for this method unless you routinely work with very "
 "confidential information.</li></ul>"
 
-#: behaviour.cpp:145
+#: behaviour.cpp:151
 #, fuzzy
 msgid "&Move to trash"
 msgstr "Chuyển tới thùng rác "
 
-#: behaviour.cpp:147
+#: behaviour.cpp:153
 msgid "D&elete"
 msgstr ""
 
-#: behaviour.cpp:270
+#: behaviour.cpp:283
 msgid ""
 "<h1>Konqueror Behavior</h1> You can configure how Konqueror behaves as a "
 "file manager here."
@@ -192,15 +202,15 @@ msgid "Here you can enter the name for desktop %1"
 msgstr "Bạn có thể nhập tên của desktop  %1"
 
 #: desktop.cpp:112
-msgid "Mouse wheel over desktop switches desktop"
+msgid "Mouse wheel over desktop background switches desktop"
 msgstr ""
 
-#: desktop.cpp:220 desktop.cpp:241
+#: desktop.cpp:222 desktop.cpp:245
 #, c-format
 msgid "Desktop %1"
 msgstr "Desktop %1"
 
-#: desktop.cpp:232
+#: desktop.cpp:236
 #, fuzzy
 msgid ""
 "<h1>Multiple Desktops</h1>"
@@ -331,7 +341,7 @@ msgstr "Thực đơn tuỳ biến 1 "
 msgid "Custom Menu 2"
 msgstr "Thực đơn tuỳ biến 2"
 
-#: desktopbehavior_impl.cpp:472
+#: desktopbehavior_impl.cpp:469
 #, fuzzy
 msgid ""
 "<h1>Behavior</h1>\n"
@@ -392,28 +402,32 @@ msgstr ""
 "Đây là màu sẽ được dùng phía sau của text cho các icon trên "
 "Desktop ."
 
-#: fontopts.cpp:142
-msgid "&Word-wrap icon text"
+#: fontopts.cpp:143
+msgid " lines"
+msgstr ""
+
+#: fontopts.cpp:144
+msgid "1 line"
+msgstr ""
+
+#: fontopts.cpp:145
+#, fuzzy
+msgid "H&eight for icon text:"
 msgstr "&Word-wrap icon text"
 
-#: fontopts.cpp:146
+#: fontopts.cpp:151
 msgid ""
-"Checking this option will wrap long filenames to multiple lines, rather than "
-"showing only the part of the filename that fits on a single line."
-"<p> Hint: if you uncheck this option, you can still see the word-wrapped "
-"filename by pausing the mouse pointer over the icon."
+"This is the maximum number of lines that can be used to draw icon text. Long "
+"file names are truncated at the end of the last line."
 msgstr ""
-"Nhận tuỳ chọn này để cuốn tên file dài thành nhiều dòng "
-"thay vì hiểnthị nó chỉ trong một phần của trang trên một "
-"dòng . "
-"<p> Gợi ý:Nếu bạn bỏ tuỳ chọn này, bạn vẫn có thể xem "
-"tên file có tên bị cuốn bằngcách di chuột lên trên nó ."
 
-#: fontopts.cpp:155
+#: fontopts.cpp:160
+#, fuzzy
 msgid "&Underline filenames"
 msgstr "&Gạch chân tên file"
 
-#: fontopts.cpp:159
+#: fontopts.cpp:164
+#, fuzzy
 msgid ""
 "Checking this option will result in filenames being underlined, so that they "
 "look like links on a web page. Note: to complete the analogy, make sure that "
@@ -425,12 +439,12 @@ msgstr ""
 "hoạtclick-đơn đã được bật lên trong Module điều khiển "
 "chuột ."
 
-#: fontopts.cpp:168
+#: fontopts.cpp:173
 #, fuzzy
 msgid "Display file sizes in b&ytes"
 msgstr "Hiển thị cỡ file bằng B&ytes"
 
-#: fontopts.cpp:172
+#: fontopts.cpp:177
 #, fuzzy
 msgid ""
 "Checking this option will result in file sizes being displayed in bytes. "
@@ -441,7 +455,7 @@ msgstr ""
 "bằng byte .Nếu không, cỡ file sẽ bị hoán chuyển thành "
 "kilobyte hay megabytesao cho thích hợp ."
 
-#: fontopts.cpp:362
+#: fontopts.cpp:374
 msgid ""
 "<h1>Appearance</h1> You can configure how Konqueror looks as a file manager "
 "here."
@@ -530,16 +544,18 @@ msgstr ""
 "should be generated. For instance, if set to 1 MB (the default), no preview "
 "will be generated for files bigger than 1 MB, for speed reasons."
 
-#: rc.cpp:1
+#: rc.cpp:2
+#, no-c-format
 msgid "General"
 msgstr ""
 
-#: rc.cpp:2
-#, fuzzy
+#: rc.cpp:4
+#, fuzzy, no-c-format
 msgid "&Show icons on desktop"
 msgstr "Hiện các file ẩ&n trên Desktop "
 
-#: rc.cpp:3
+#: rc.cpp:6
+#, no-c-format
 msgid ""
 "Uncheck this option if you do not want to have icons on the desktop. Without "
 "icons the desktop will be somewhat faster but you will no longer be able to "
@@ -549,12 +565,13 @@ msgstr ""
 "Không cóicon trên desktop thì có vẻ nhanh hơn nhưng bạn sẽ "
 "mất khả năng kéo / thảtừ / vào desktop ."
 
-#: rc.cpp:4
-#, fuzzy
+#: rc.cpp:8
+#, fuzzy, no-c-format
 msgid "Allow pro&grams in desktop window"
 msgstr "&Chương trình trên Cửa sổ desktop"
 
-#: rc.cpp:5
+#: rc.cpp:10
+#, no-c-format
 msgid ""
 "Check this option if you want to run X11 programs that draw into the desktop "
 "such as xsnow, xpenguin or xmountain. If you have problems with applications "
@@ -566,90 +583,101 @@ msgstr ""
 "có vấn về với những chương trình kiểm tra cửa sổ gốc cho "
 "running instance như netscape ,hãy bỏ tuỳ chọn này ."
 
-#: rc.cpp:6
-#, fuzzy
+#: rc.cpp:12
+#, fuzzy, no-c-format
 msgid "Show &tooltips"
 msgstr "&Hiện file tip"
 
-#: rc.cpp:7
+#: rc.cpp:14
+#, no-c-format
 msgid "Menu Bar at Top of Screen"
 msgstr ""
 
-#: rc.cpp:8
+#: rc.cpp:16
+#, no-c-format
 msgid "&None"
 msgstr ""
 
-#: rc.cpp:9
+#: rc.cpp:18
+#, no-c-format
 msgid "If this option is selected, there is no menu bar at the top of the screen."
 msgstr ""
 
-#: rc.cpp:10
-#, fuzzy
+#: rc.cpp:20
+#, fuzzy, no-c-format
 msgid "&Desktop menu bar"
 msgstr "Thực đơn menu"
 
-#: rc.cpp:11
+#: rc.cpp:22
+#, no-c-format
 msgid ""
 "If this option is selected, there is one menu bar at the top of the screen "
 "which shows the desktop menus."
 msgstr ""
 
-#: rc.cpp:12
+#: rc.cpp:24
+#, no-c-format
 msgid "&Current application's menu bar (Mac OS-style)"
 msgstr ""
 
-#: rc.cpp:13
+#: rc.cpp:26
+#, no-c-format
 msgid ""
-"If this option is selected, applications won't have their menu bar attached "
-"to their own window anymore. Instead, there is one menu bar at the top of "
-"the screen which shows the menus of the currently active application. You "
-"might recognize this behavior from Mac OS."
+"If this option is selected, applications will not have their menu bar "
+"attached to their own window anymore. Instead, there is one menu bar at the "
+"top of the screen which shows the menus of the currently active application. "
+"You might recognize this behavior from Mac OS."
 msgstr ""
 
-#: rc.cpp:14
+#: rc.cpp:28
+#, no-c-format
 msgid "Mouse Button Actions"
 msgstr ""
 
-#: rc.cpp:15
-#, fuzzy
+#: rc.cpp:30
+#, fuzzy, no-c-format
 msgid "Middle button:"
 msgstr "Nút giữa :"
 
-#: rc.cpp:16
-#, fuzzy
+#: rc.cpp:32
+#, fuzzy, no-c-format
 msgid "Left button:"
 msgstr "Nút trái :"
 
-#: rc.cpp:17
-#, fuzzy
+#: rc.cpp:34
+#, fuzzy, no-c-format
 msgid "Right button:"
 msgstr "Nút phải:"
 
-#: rc.cpp:18 rc.cpp:19 rc.cpp:20
+#: rc.cpp:36 rc.cpp:38 rc.cpp:40
+#, no-c-format
 msgid "Edit..."
 msgstr ""
 
-#: rc.cpp:21
+#: rc.cpp:42
+#, fuzzy, no-c-format
 msgid "File Icons"
-msgstr ""
+msgstr "Xem t&rước"
 
-#: rc.cpp:22
+#: rc.cpp:44
+#, no-c-format
 msgid "Automatically &line up icons"
 msgstr ""
 
-#: rc.cpp:23
+#: rc.cpp:46
+#, no-c-format
 msgid ""
 "Check this option if you want to see your icons automatically aligned to the "
 "grid when you move them."
 msgstr ""
 
-#: rc.cpp:24
-#, fuzzy
+#: rc.cpp:48
+#, fuzzy, no-c-format
 msgid "Show &hidden files"
 msgstr "Hiện các file ẩ&n trên Desktop "
 
-#: rc.cpp:25
-#, fuzzy
+#: rc.cpp:50
+#, fuzzy, no-c-format
 msgid ""
 "<p>If you check this option, any files in your desktop directory that begin "
 "with a period (.) will be shown. Usually, such files contain configuration "
@@ -658,7 +686,7 @@ msgid ""
 "which contain information for Konqueror, such as the icon to use in "
 "displaying a directory, the order in which files should be sorted, etc. You "
 "should not change or delete these files unless you know what you are "
-"doing!</p>"
+"doing.</p>"
 msgstr ""
 "If you check this option, any files in your desktop directory that begin "
 "with a period (.) will be shown. Usually, such files contain configuration "
@@ -668,31 +696,33 @@ msgstr ""
 "displaying a directory, the order in which files should be sorted, etc. You "
 "should not change or delete these files unless you know what you are doing!"
 
-#: rc.cpp:26
-#, fuzzy
+#: rc.cpp:53
+#, fuzzy, no-c-format
 msgid "Show Icon Previews For"
 msgstr "Hiển thị xem trước cho:"
 
-#: rc.cpp:27
-#, fuzzy
+#: rc.cpp:55
+#, fuzzy, no-c-format
 msgid "Select for which types of files you want to enable preview images."
 msgstr "Chọn loại file nào bạn muốn xem trước"
 
-#: rc.cpp:28
-#, fuzzy
+#: rc.cpp:57
+#, fuzzy, no-c-format
 msgid "Device Icons"
 msgstr "Xem t&rước"
 
-#: rc.cpp:29
-#, fuzzy
+#: rc.cpp:59
+#, fuzzy, no-c-format
 msgid "&Show device icons:"
 msgstr "Nhấn vào desktop"
 
-#: rc.cpp:30
+#: rc.cpp:61
+#, no-c-format
 msgid "Device Types to Display"
 msgstr ""
 
-#: rc.cpp:31
+#: rc.cpp:63
+#, no-c-format
 msgid "Deselect the device types which you do not want to see on the desktop."
 msgstr ""
 
@@ -766,19 +796,21 @@ msgstr "Autostart"
 msgid "Desktop"
 msgstr "Desktop"
 
-#: rootopts.cpp:310
+#: rootopts.cpp:324
+#, fuzzy
 msgid ""
-"The path for '%1' has been changed.\n"
-"Do you want me to move the files from '%2' to '%3'?"
+"The path for '%1' has been changed;\n"
+"do you want the files to be moved from '%2' to '%3'?"
 msgstr ""
 "Đường dẫn tới '%1' đã bị thay đổi . \n"
 "Bạn có muốn tôi di chuyển file từ '%2' tời '%3' không ?"
 
-#: rootopts.cpp:311
-msgid "Confirmation required"
+#: rootopts.cpp:325
+#, fuzzy
+msgid "Confirmation Required"
 msgstr "Cần xác nhận"
 
-#: rootopts.cpp:388
+#: rootopts.cpp:402
 #, fuzzy
 msgid ""
 "<h1>Paths</h1>\n"
@@ -790,6 +822,17 @@ msgstr ""
 "desktop của bạn sẽ đượcgiữ . \n"
 "Dùng \"Cài này là gì ? \" (Shift + F1) để có trợ giúp cụ thể "
 "hơn ."
+
+#~ msgid ""
+#~ "Checking this option will wrap long filenames to multiple lines, rather "
+#~ "than showing only the part of the filename that fits on a single line.<p> "
+#~ "Hint: if you uncheck this option, you can still see the word-wrapped "
+#~ "filename by pausing the mouse pointer over the icon."
+#~ msgstr ""
+#~ "Nhận tuỳ chọn này để cuốn tên file dài thành nhiều dòng thay vì hiểnthị "
+#~ "nó chỉ trong một phần của trang trên một dòng . <p> Gợi ý:Nếu bạn bỏ tuỳ "
+#~ "chọn này, bạn vẫn có thể xem tên file có tên bị cuốn bằngcách di chuột "
+#~ "lên trên nó ."
 
 #, fuzzy
 #~ msgid "Sh&red"

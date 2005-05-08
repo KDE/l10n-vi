@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
-"POT-Creation-Date: 2005-04-20 15:08+0200\n"
+"POT-Creation-Date: 2005-05-08 01:20+0200\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -83,7 +83,7 @@ msgid "Transformation Tools"
 msgstr "Công cụ &xoá"
 
 #. i18n: file krita_readonly.rc line 18
-#: core/kis_docker_manager.cc:334 rc.cpp:57 rc.cpp:709 rc.cpp:1293 rc.cpp:1410
+#: core/kis_docker_manager.cc:336 rc.cpp:57 rc.cpp:709 rc.cpp:1293 rc.cpp:1410
 #: rc.cpp:1449
 #, no-c-format
 msgid "Layer"
@@ -234,7 +234,8 @@ msgid "&Color space:"
 msgstr "Trình chọn &màu"
 
 #. i18n: file ./ui/wdgnewimage.ui line 162
-#: tools/kis_tool_gradient.cc:277 ui/kis_dlg_apply_profile.cc:85
+#: plugins/colorspaceconversion/dlg_colorspaceconversion.cc:93
+#: tools/kis_tool_gradient.cc:254 ui/kis_dlg_apply_profile.cc:85
 #: ui/kis_dlg_create_img.cc:155 ui/kis_dlg_image_properties.cc:151
 #: ui/kis_dlg_preferences.cc:196 ui/kis_dlg_preferences.cc:212
 #: ui/kis_dlg_preferences.cc:228 rc.cpp:138 rc.cpp:226 rc.cpp:229 rc.cpp:232
@@ -280,9 +281,8 @@ msgid "Opacity of the background color."
 msgstr "Nền"
 
 #. i18n: file ./ui/wdgnewimage.ui line 277
-#: tools/kis_tool_gradient.cc:242 ui/kis_channelview.cc:404
-#: ui/kis_dlg_new_layer.cc:59 ui/kis_dlg_paint_properties.cc:65 rc.cpp:162
-#: rc.cpp:325 rc.cpp:415
+#: ui/kis_channelview.cc:404 ui/kis_dlg_new_layer.cc:60
+#: ui/kis_dlg_paint_properties.cc:67 rc.cpp:162 rc.cpp:325 rc.cpp:415
 #, no-c-format
 msgid "Opacity:"
 msgstr "Độ đậm đặc:"
@@ -561,7 +561,7 @@ msgid "Geometry options"
 msgstr "Tuỳ chọn Gradient"
 
 #. i18n: file ./ui/wdgshapeoptions.ui line 41
-#: tools/kis_tool_gradient.cc:248 rc.cpp:328
+#: rc.cpp:328
 #, fuzzy, no-c-format
 msgid "Mode:"
 msgstr "Phương thức"
@@ -597,7 +597,7 @@ msgid "Pattern"
 msgstr "Patterns"
 
 #. i18n: file ./ui/wdgshapeoptions.ui line 91
-#: tools/kis_tool_gradient.cc:148 tools/kis_tool_gradient.cc:240 rc.cpp:349
+#: tools/kis_tool_gradient.cc:49 tools/kis_tool_gradient.cc:145 rc.cpp:349
 #, fuzzy, no-c-format
 msgid "Gradient"
 msgstr "Gradients"
@@ -662,7 +662,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 111
-#: ui/kis_cmb_composite.cc:61 rc.cpp:386 rc.cpp:766
+#: core/kis_composite_op.cc:123 rc.cpp:386 rc.cpp:766
 #, fuzzy, no-c-format
 msgid "Saturation"
 msgstr "Bão hoà"
@@ -726,7 +726,7 @@ msgid "Right:"
 msgstr "Chỉ làm sáng"
 
 #. i18n: file ./ui/widgets/kis_wdg_autogradient.ui line 317
-#: tools/kis_tool_gradient.cc:268 rc.cpp:424
+#: tools/kis_tool_gradient.cc:245 rc.cpp:424
 #, fuzzy, no-c-format
 msgid "Linear"
 msgstr "Layer"
@@ -756,7 +756,7 @@ msgid "Sphere Dec."
 msgstr ""
 
 #. i18n: file ./ui/widgets/kis_wdg_autogradient.ui line 351
-#: core/kis_docker_manager.cc:505 rc.cpp:439 rc.cpp:904
+#: core/kis_docker_manager.cc:507 rc.cpp:439 rc.cpp:904
 #, no-c-format
 msgid "RGB"
 msgstr "RGB"
@@ -774,7 +774,7 @@ msgid "HSV CCW"
 msgstr "HSV"
 
 #. i18n: file ./ui/widgets/kis_wdg_text_brush.ui line 16
-#: tools/kis_tool_text.cc:126 rc.cpp:448
+#: tools/kis_tool_text.cc:49 rc.cpp:448
 #, no-c-format
 msgid "Text"
 msgstr ""
@@ -810,7 +810,7 @@ msgid "Circle"
 msgstr ""
 
 #. i18n: file ./ui/kis_wdg_autobrush.ui line 83
-#: tools/kis_tool_gradient.cc:271 rc.cpp:470
+#: tools/kis_tool_gradient.cc:248 rc.cpp:470
 #, no-c-format
 msgid "Square"
 msgstr ""
@@ -840,7 +840,7 @@ msgid "Action:"
 msgstr "Chọn"
 
 #. i18n: file ./ui/wdgselectionoptions.ui line 57
-#: ui/kis_cmb_composite.cc:38 rc.cpp:497
+#: core/kis_composite_op.cc:100 rc.cpp:497
 #, no-c-format
 msgid "Subtract"
 msgstr "Trừ"
@@ -852,7 +852,7 @@ msgid "Invert mask"
 msgstr ""
 
 #. i18n: file ./ui/wdgbirdeye.ui line 24
-#: core/kis_docker_manager.cc:321 rc.cpp:505
+#: core/kis_docker_manager.cc:323 rc.cpp:505
 #, fuzzy, no-c-format
 msgid "Overview"
 msgstr "Phủ"
@@ -1176,8 +1176,8 @@ msgid "Offset:"
 msgstr "Offset"
 
 #. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 16
-#: plugins/tool_crop/kis_tool_crop.cc:334
-#: plugins/tool_crop/kis_tool_crop.cc:387 rc.cpp:694
+#: plugins/tool_crop/kis_tool_crop.cc:377
+#: plugins/tool_crop/kis_tool_crop.cc:558 rc.cpp:694
 #, no-c-format
 msgid "Crop"
 msgstr ""
@@ -1206,19 +1206,20 @@ msgstr ""
 msgid "End Y:"
 msgstr ""
 
-#. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 198
+#. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 201
 #: rc.cpp:712 rc.cpp:1404 rc.cpp:1446 rc.cpp:1461
 #, fuzzy, no-c-format
 msgid "Image"
 msgstr "ảnh "
 
-#. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 213
+#. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 216
 #: rc.cpp:715
 #, no-c-format
 msgid "&Crop"
 msgstr ""
 
 #. i18n: file ./plugins/tool_star/wdg_tool_star.ui line 16
+#: plugins/tool_star/kis_tool_star.cc:48
 #: plugins/tool_star/kis_tool_star.cc:122 rc.cpp:718
 #, fuzzy, no-c-format
 msgid "Star"
@@ -1292,7 +1293,7 @@ msgstr ""
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 16
 #: plugins/colorspaceconversion/dlg_colorspaceconversion.cc:41
-#: plugins/imagesize/dlg_imagesize.cc:47 plugins/imagesize/imagesize.cc:96
+#: plugins/imagesize/dlg_imagesize.cc:47 plugins/imagesize/imagesize.cc:95
 #: rc.cpp:829 rc.cpp:997
 #, fuzzy, no-c-format
 msgid "Image Size"
@@ -1317,14 +1318,14 @@ msgid "bitBlt"
 msgstr ""
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 60
-#: tools/kis_tool_fill.cc:127 rc.cpp:841
+#: tools/kis_tool_fill.cc:52 rc.cpp:841
 #, no-c-format
 msgid "Fill"
 msgstr ""
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 71
-#: core/kis_docker_manager.cc:456 core/kis_docker_manager.cc:462
-#: core/kis_docker_manager.cc:467 rc.cpp:844
+#: core/kis_docker_manager.cc:458 core/kis_docker_manager.cc:464
+#: core/kis_docker_manager.cc:469 rc.cpp:844
 #, no-c-format
 msgid "Gradients"
 msgstr "Gradients"
@@ -1342,8 +1343,8 @@ msgid "Shapes"
 msgstr "Độ sắc:"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 104
-#: core/kis_docker_manager.cc:230 core/kis_docker_manager.cc:280
-#: core/kis_docker_manager.cc:335 rc.cpp:853
+#: core/kis_docker_manager.cc:232 core/kis_docker_manager.cc:282
+#: core/kis_docker_manager.cc:337 rc.cpp:853
 #, no-c-format
 msgid "Layers"
 msgstr "Layers"
@@ -1367,7 +1368,7 @@ msgid "Rendering"
 msgstr ""
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 148
-#: ui/kis_layerbox.cc:91 rc.cpp:865
+#: ui/kis_layerbox.cc:92 rc.cpp:865
 #, no-c-format
 msgid "Selection"
 msgstr "Chọn"
@@ -1621,7 +1622,7 @@ msgid "B-Spline"
 msgstr "kết nối"
 
 #. i18n: file ./plugins/imagesize/wdg_imagesize.ui line 337
-#: plugins/tool_filter/kis_tool_filter.cc:99 rc.cpp:1054
+#: rc.cpp:1054
 #, fuzzy, no-c-format
 msgid "Filter"
 msgstr "&Trắng"
@@ -1795,7 +1796,7 @@ msgid "Out of Gamut"
 msgstr ""
 
 #. i18n: file ./plugins/colorrange/wdg_colorrange.ui line 101
-#: core/kis_selection_manager.cc:132 plugins/example/example.cc:71 rc.cpp:1141
+#: core/kis_selection_manager.cc:131 plugins/example/example.cc:71 rc.cpp:1141
 #, no-c-format
 msgid "&Invert"
 msgstr ""
@@ -2045,7 +2046,7 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./modules/colorspace_ws/filter/kritawsenginefilter.rc line 4
-#: plugins/tool_filter/kis_tool_filter.cc:69 rc.cpp:1320 rc.cpp:1383
+#: plugins/tool_filter/kis_tool_filter.cc:68 rc.cpp:1320 rc.cpp:1383
 #: rc.cpp:1389 rc.cpp:1416 rc.cpp:1422 rc.cpp:1440 rc.cpp:1470 rc.cpp:1479
 #, fuzzy, no-c-format
 msgid "&Filter"
@@ -2105,98 +2106,98 @@ msgstr "Chọn"
 msgid "&Rotate Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: ui/kis_layerbox.cc:67
+#: ui/kis_layerbox.cc:68
 #, fuzzy, c-format
 msgid "Create new %1"
 msgstr "Tạo layer mới"
 
-#: ui/kis_layerbox.cc:69
+#: ui/kis_layerbox.cc:70
 #, fuzzy, c-format
 msgid "Remove current %1"
 msgstr "Gỡ bỏ Layer hiện tại"
 
-#: ui/kis_layerbox.cc:71
+#: ui/kis_layerbox.cc:72
 #, fuzzy, c-format
 msgid "Upper current %1"
 msgstr "Cho layer hiện tại lên trên"
 
-#: ui/kis_layerbox.cc:75
+#: ui/kis_layerbox.cc:76
 #, fuzzy, c-format
 msgid "Lower current %1"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: ui/kis_layerbox.cc:77
+#: ui/kis_layerbox.cc:78
 #, fuzzy, c-format
 msgid "Properties for %1"
 msgstr "Tính chất Layer..."
 
-#: ui/kis_layerbox.cc:80
+#: ui/kis_layerbox.cc:81
 #, fuzzy, c-format
 msgid "Raise %1"
 msgstr "ảnh %1"
 
-#: ui/kis_layerbox.cc:81
+#: ui/kis_layerbox.cc:82
 #, fuzzy, c-format
 msgid "Lower %1"
 msgstr "Làm thấp"
 
-#: ui/kis_layerbox.cc:82
+#: ui/kis_layerbox.cc:83
 #, fuzzy, c-format
 msgid "Foremost %1"
 msgstr "Trước nhất"
 
-#: ui/kis_layerbox.cc:83
+#: ui/kis_layerbox.cc:84
 #, fuzzy, c-format
 msgid "Hindmost %1"
 msgstr "Hindmost"
 
-#: ui/kis_channelview.cc:199 ui/kis_layerbox.cc:89
+#: ui/kis_channelview.cc:199 ui/kis_layerbox.cc:90
 msgid "Visible"
 msgstr "Nhìn thấy"
 
-#: ui/kis_channelview.cc:200 ui/kis_layerbox.cc:92
+#: ui/kis_channelview.cc:200 ui/kis_layerbox.cc:93
 msgid "Level"
 msgstr "Mức độ"
 
-#: ui/kis_layerbox.cc:95
+#: ui/kis_layerbox.cc:96
 msgid "Linked"
 msgstr "kết nối"
 
-#: ui/kis_layerbox.cc:98
+#: ui/kis_layerbox.cc:99
 #, fuzzy
 msgid "Locked"
 msgstr "kết nối"
 
-#: ui/kis_layerbox.cc:102
+#: ui/kis_layerbox.cc:103
 #, fuzzy
 msgid "Add %1..."
 msgstr "&Thêm Layer..."
 
-#: ui/kis_layerbox.cc:103
+#: ui/kis_layerbox.cc:104
 #, fuzzy, c-format
 msgid "Remove %1"
 msgstr "Gỡ bỏ Mask"
 
-#: ui/kis_layerbox.cc:106
+#: ui/kis_layerbox.cc:107
 msgid "Add Mask"
 msgstr "Thêm Mask"
 
-#: ui/kis_layerbox.cc:107
+#: ui/kis_layerbox.cc:108
 msgid "Remove Mask"
 msgstr "Gỡ bỏ Mask"
 
-#: ui/kis_layerbox.cc:464
+#: ui/kis_layerbox.cc:471
 #, fuzzy, c-format
 msgid "Can't find %1"
 msgstr "Tạo layer mới"
 
 #: ui/kis_channelview.cc:160 ui/kis_channelview.cc:168
-#: ui/kis_channelview.cc:173 ui/kis_channelview.cc:180 ui/kis_layerbox.cc:465
+#: ui/kis_channelview.cc:173 ui/kis_channelview.cc:180 ui/kis_layerbox.cc:472
 #, fuzzy
 msgid "Canvas"
 msgstr "Tải lại Canvas"
 
-#: core/kis_view.cc:484 ui/kis_dlg_image_properties.cc:51
+#: core/kis_view.cc:481 ui/kis_dlg_image_properties.cc:51
 #, fuzzy
 msgid "Image Properties"
 msgstr "Tính chất Layer..."
@@ -2239,35 +2240,35 @@ msgstr "Undo depth trong bộ nhớ"
 msgid "Preferences"
 msgstr "Thao chiếu"
 
-#: core/kis_docker_manager.cc:299 ui/kis_dlg_preferences.cc:244
+#: core/kis_docker_manager.cc:301 ui/kis_dlg_preferences.cc:244
 msgid "General"
 msgstr "Chung "
 
-#: core/kis_view.cc:501 ui/kis_dlg_paint_properties.cc:54
+#: core/kis_view.cc:498 ui/kis_dlg_paint_properties.cc:56
 #, fuzzy
 msgid "Layer Properties"
 msgstr "Tính chất Layer..."
 
-#: ui/kis_channelview.cc:396 ui/kis_dlg_new_layer.cc:53
-#: ui/kis_dlg_paint_properties.cc:60
+#: ui/kis_channelview.cc:396 ui/kis_dlg_new_layer.cc:54
+#: ui/kis_dlg_paint_properties.cc:62
 #, fuzzy
 msgid "Name:"
 msgstr "Tên "
 
-#: ui/kis_dlg_new_layer.cc:67 ui/kis_dlg_paint_properties.cc:75
+#: ui/kis_dlg_new_layer.cc:69 ui/kis_dlg_paint_properties.cc:78
 msgid "Composite mode:"
 msgstr ""
 
-#: ui/kis_dlg_paint_properties.cc:81
+#: ui/kis_dlg_paint_properties.cc:85
 #, fuzzy
 msgid "Position"
 msgstr "Cộng"
 
-#: ui/kis_dlg_paint_properties.cc:85
+#: ui/kis_dlg_paint_properties.cc:89
 msgid "X axis:"
 msgstr ""
 
-#: ui/kis_dlg_paint_properties.cc:90
+#: ui/kis_dlg_paint_properties.cc:94
 msgid "Y axis:"
 msgstr ""
 
@@ -2311,12 +2312,12 @@ msgstr "Xanh nước biển"
 msgid "Alpha"
 msgstr "Alpha"
 
-#: ui/kis_dlg_new_layer.cc:47
+#: ui/kis_dlg_new_layer.cc:48
 #, fuzzy
 msgid "New Layer"
 msgstr "Tạo layer mới"
 
-#: ui/kis_dlg_new_layer.cc:74
+#: ui/kis_dlg_new_layer.cc:75
 #, fuzzy
 msgid "Layer type:"
 msgstr "Nhập ảnh"
@@ -2332,171 +2333,6 @@ msgstr "Để cách:"
 
 #: ui/kis_brush_chooser.cc:38
 msgid "Use color as mask"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:30
-msgid "Normal"
-msgstr "Thông thường "
-
-#: ui/kis_cmb_composite.cc:31
-msgid "In"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:32
-msgid "Out"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:33
-msgid "Atop"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:34
-msgid "Xor"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:35
-msgid "Plus"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:36
-msgid "Minus"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:39
-msgid "Diff"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:40
-#, fuzzy
-msgid "Multiply"
-msgstr "Nhân"
-
-#: ui/kis_cmb_composite.cc:41
-msgid "Divide"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:42
-#, fuzzy
-msgid "Dodge"
-msgstr "Phương thức"
-
-#: ui/kis_cmb_composite.cc:43
-#, fuzzy
-msgid "Burn"
-msgstr "Xanh nước biển"
-
-#: ui/kis_cmb_composite.cc:44
-msgid "Bumpmap"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:46
-#, fuzzy
-msgid "Copy Red"
-msgstr "xanh da trời"
-
-#: ui/kis_cmb_composite.cc:47
-#, fuzzy
-msgid "Copy Green"
-msgstr "xanh nước biển"
-
-#: ui/kis_cmb_composite.cc:48
-#, fuzzy
-msgid "Copy Blue"
-msgstr "xanh da trời"
-
-#: ui/kis_cmb_composite.cc:49
-#, fuzzy
-msgid "Copy Opacity"
-msgstr "Mật độ"
-
-#: ui/kis_cmb_composite.cc:51
-msgid "Dissolve"
-msgstr "Dissolve"
-
-#: ui/kis_cmb_composite.cc:52
-#, fuzzy
-msgid "Displace"
-msgstr "Dissolve"
-
-#: ui/kis_cmb_composite.cc:54
-#, fuzzy
-msgid "Modulate"
-msgstr "Phương thức"
-
-#: ui/kis_cmb_composite.cc:55
-#, fuzzy
-msgid "Threshold"
-msgstr "Ngưỡng vẽ :"
-
-#: ui/kis_cmb_composite.cc:57
-#, fuzzy
-msgid "No Composition"
-msgstr "Cộng"
-
-#: ui/kis_cmb_composite.cc:58
-#, fuzzy
-msgid "Darken"
-msgstr "Chỉ làm tối"
-
-#: ui/kis_cmb_composite.cc:59
-#, fuzzy
-msgid "Lighten"
-msgstr "Chỉ làm sáng"
-
-#: ui/kis_cmb_composite.cc:60
-msgid "Hue"
-msgstr "Hue"
-
-#: ui/kis_cmb_composite.cc:62
-#, fuzzy
-msgid "Value"
-msgstr "Xanh nước biển"
-
-#: ui/kis_cmb_composite.cc:63
-#, fuzzy
-msgid "Color"
-msgstr "Màu"
-
-#: ui/kis_cmb_composite.cc:64
-#, fuzzy
-msgid "Colorize"
-msgstr "Màu"
-
-#: ui/kis_cmb_composite.cc:65
-msgid "Luminize"
-msgstr ""
-
-#: ui/kis_cmb_composite.cc:66
-msgid "Screen"
-msgstr "Màn hình"
-
-#: ui/kis_cmb_composite.cc:67
-#, fuzzy
-msgid "Overlay"
-msgstr "Phủ"
-
-#: ui/kis_cmb_composite.cc:68
-#, fuzzy
-msgid "Copy Cyan"
-msgstr "Mật độ"
-
-#: ui/kis_cmb_composite.cc:69
-#, fuzzy
-msgid "Copy Magenta"
-msgstr "tím"
-
-#: ui/kis_cmb_composite.cc:70
-#, fuzzy
-msgid "Copy Yellow"
-msgstr "vàng"
-
-#: ui/kis_cmb_composite.cc:71
-#, fuzzy
-msgid "Copy Black"
-msgstr "xanh da trời"
-
-#: tools/kis_tool_eraser.cc:39 ui/kis_cmb_composite.cc:72
-msgid "Erase"
 msgstr ""
 
 #: ui/widgets/kis_gradient_slider_widget.cc:47
@@ -2561,165 +2397,165 @@ msgstr "ảnh %1"
 msgid "Abstract Tool"
 msgstr "Gradients"
 
-#: core/tool/kis_tool_freehand.cc:220
+#: core/tool/kis_tool_paint.cc:115
 #, fuzzy
 msgid "Opacity: "
 msgstr "Độ đậm đặc:"
 
-#: core/tool/kis_tool_freehand.cc:226 tools/kis_tool_fill.cc:135
+#: core/tool/kis_tool_paint.cc:122
 #, fuzzy
 msgid "Mode: "
 msgstr "Phương thức"
 
-#: core/kis_docker_manager.cc:222 core/kis_docker_manager.cc:274
+#: core/kis_docker_manager.cc:224 core/kis_docker_manager.cc:276
 #, fuzzy
 msgid "Navigator/Info/Options"
 msgstr "Navigation"
 
-#: core/kis_docker_manager.cc:223
+#: core/kis_docker_manager.cc:225
 #, fuzzy
 msgid "&Navigator/Info/Tool Options"
 msgstr "Navigation"
 
-#: core/kis_docker_manager.cc:231
+#: core/kis_docker_manager.cc:233
 #, fuzzy
 msgid "&Layers"
 msgstr "Layers"
 
-#: core/kis_docker_manager.cc:237 core/kis_docker_manager.cc:262
+#: core/kis_docker_manager.cc:239 core/kis_docker_manager.cc:264
 #, fuzzy
 msgid "Brush Shapes"
 msgstr "Chổi"
 
-#: core/kis_docker_manager.cc:238
+#: core/kis_docker_manager.cc:240
 #, fuzzy
 msgid "&Shapes"
 msgstr "Độ sắc:"
 
-#: core/kis_docker_manager.cc:244 core/kis_docker_manager.cc:265
+#: core/kis_docker_manager.cc:246 core/kis_docker_manager.cc:267
 msgid "Fills"
 msgstr ""
 
-#: core/kis_docker_manager.cc:246
+#: core/kis_docker_manager.cc:248
 #, fuzzy
 msgid "&Fills"
 msgstr "&Trắng"
 
-#: core/kis_docker_manager.cc:252 core/kis_docker_manager.cc:277
+#: core/kis_docker_manager.cc:254 core/kis_docker_manager.cc:279
 #, fuzzy
 msgid "Color Manager"
 msgstr "Trình đổi màu"
 
-#: core/kis_docker_manager.cc:253
+#: core/kis_docker_manager.cc:255
 #, fuzzy
 msgid "&Colors"
 msgstr "Màu"
 
-#: core/kis_docker_manager.cc:267 core/kis_docker_manager.cc:664
+#: core/kis_docker_manager.cc:269 core/kis_docker_manager.cc:666
 #, fuzzy
 msgid "Hide &Shapes"
 msgstr "Độ sắc:"
 
-#: core/kis_docker_manager.cc:268 core/kis_docker_manager.cc:650
+#: core/kis_docker_manager.cc:270 core/kis_docker_manager.cc:652
 #, fuzzy
 msgid "Hide &Fills"
 msgstr "&Trắng"
 
-#: core/kis_docker_manager.cc:283 core/kis_docker_manager.cc:637
+#: core/kis_docker_manager.cc:285 core/kis_docker_manager.cc:639
 #, fuzzy
 msgid "Hide &Layers"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_docker_manager.cc:284 core/kis_docker_manager.cc:610
+#: core/kis_docker_manager.cc:286 core/kis_docker_manager.cc:612
 #, fuzzy
 msgid "Hide &Color Manager"
 msgstr "Trình đổi màu"
 
-#: core/kis_docker_manager.cc:285 core/kis_docker_manager.cc:622
+#: core/kis_docker_manager.cc:287 core/kis_docker_manager.cc:624
 #, fuzzy
 msgid "Hide &Tool Properties"
 msgstr "Tính chát công cụ &hiện tại ..."
 
-#: core/kis_docker_manager.cc:291
+#: core/kis_docker_manager.cc:293
 #, fuzzy
 msgid "Tools"
 msgstr "Chổi"
 
-#: core/kis_docker_manager.cc:292 core/kis_docker_manager.cc:677
+#: core/kis_docker_manager.cc:294 core/kis_docker_manager.cc:679
 #, fuzzy
 msgid "Hide &Tools"
 msgstr "Chổi"
 
-#: core/kis_docker_manager.cc:366
+#: core/kis_docker_manager.cc:368
 msgid "Channels"
 msgstr "Kênh"
 
-#: core/kis_docker_manager.cc:379 core/kis_docker_manager.cc:385
-#: core/kis_docker_manager.cc:390
+#: core/kis_docker_manager.cc:381 core/kis_docker_manager.cc:387
+#: core/kis_docker_manager.cc:392
 msgid "Brushes"
 msgstr "Chổi"
 
-#: core/kis_docker_manager.cc:401 core/kis_docker_manager.cc:405
-#: core/kis_docker_manager.cc:409
+#: core/kis_docker_manager.cc:403 core/kis_docker_manager.cc:407
+#: core/kis_docker_manager.cc:411
 #, fuzzy
 msgid "Autobrush"
 msgstr "Chổi"
 
-#: core/kis_docker_manager.cc:416 core/kis_docker_manager.cc:420
-#: core/kis_docker_manager.cc:424
+#: core/kis_docker_manager.cc:418 core/kis_docker_manager.cc:422
+#: core/kis_docker_manager.cc:426
 #, fuzzy
 msgid "Text Brush"
 msgstr "Chọn"
 
-#: core/kis_docker_manager.cc:435 core/kis_docker_manager.cc:440
-#: core/kis_docker_manager.cc:446
+#: core/kis_docker_manager.cc:437 core/kis_docker_manager.cc:442
+#: core/kis_docker_manager.cc:448
 msgid "Patterns"
 msgstr "Patterns"
 
-#: core/kis_docker_manager.cc:476 core/kis_docker_manager.cc:480
-#: core/kis_docker_manager.cc:484
+#: core/kis_docker_manager.cc:478 core/kis_docker_manager.cc:482
+#: core/kis_docker_manager.cc:486
 #, fuzzy
 msgid "Autogradient"
 msgstr "Gradients"
 
-#: core/kis_docker_manager.cc:495
+#: core/kis_docker_manager.cc:497
 msgid "HSV"
 msgstr "HSV"
 
-#: core/kis_docker_manager.cc:515
+#: core/kis_docker_manager.cc:517
 msgid "Gray"
 msgstr "Xám"
 
-#: core/kis_docker_manager.cc:525
+#: core/kis_docker_manager.cc:527
 msgid "Palettes"
 msgstr "Palettes"
 
-#: core/kis_docker_manager.cc:614
+#: core/kis_docker_manager.cc:616
 #, fuzzy
 msgid "Show &Color Manager"
 msgstr "Trình đổi màu"
 
-#: core/kis_docker_manager.cc:627
+#: core/kis_docker_manager.cc:629
 #, fuzzy
 msgid "Show &Tool Properties"
 msgstr "Tính chát công cụ &hiện tại ..."
 
-#: core/kis_docker_manager.cc:641
+#: core/kis_docker_manager.cc:643
 #, fuzzy
 msgid "Show &Layers"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_docker_manager.cc:654
+#: core/kis_docker_manager.cc:656
 #, fuzzy
 msgid "Show &Fills"
 msgstr "&Trắng"
 
-#: core/kis_docker_manager.cc:668
+#: core/kis_docker_manager.cc:670
 #, fuzzy
 msgid "Show &Shapes"
 msgstr "Độ sắc:"
 
-#: core/kis_docker_manager.cc:681
+#: core/kis_docker_manager.cc:683
 #, fuzzy
 msgid "Show &Tools"
 msgstr "Chổi"
@@ -2738,7 +2574,7 @@ msgid ""
 "(c) 1999-2004 The Krita team.\n"
 msgstr ""
 
-#: core/kis_fill_painter.cc:206
+#: core/kis_fill_painter.cc:247
 msgid "Making fill outline..."
 msgstr ""
 
@@ -2762,341 +2598,512 @@ msgstr "Alpha"
 msgid "Moved Layer"
 msgstr "Layer đã gỡ bỏ"
 
-#: core/kis_rotate_visitor.cc:47 core/kis_rotate_visitor.cc:159
+#: core/kis_paint_device.cc:103
+#: plugins/colorspaceconversion/colorspaceconversion.cc:66
+#, fuzzy
+msgid "&Convert Layer Type..."
+msgstr "&Chèn ảnh như là layer..."
+
+#: core/kis_composite_op.cc:92
+msgid "Normal"
+msgstr "Thông thường "
+
+#: core/kis_composite_op.cc:93
+msgid "In"
+msgstr ""
+
+#: core/kis_composite_op.cc:94
+msgid "Out"
+msgstr ""
+
+#: core/kis_composite_op.cc:95
+msgid "Atop"
+msgstr ""
+
+#: core/kis_composite_op.cc:96
+msgid "Xor"
+msgstr ""
+
+#: core/kis_composite_op.cc:97
+msgid "Plus"
+msgstr ""
+
+#: core/kis_composite_op.cc:98
+msgid "Minus"
+msgstr ""
+
+#: core/kis_composite_op.cc:101
+msgid "Diff"
+msgstr ""
+
+#: core/kis_composite_op.cc:102
+#, fuzzy
+msgid "Multiply"
+msgstr "Nhân"
+
+#: core/kis_composite_op.cc:103
+msgid "Divide"
+msgstr ""
+
+#: core/kis_composite_op.cc:104
+#, fuzzy
+msgid "Dodge"
+msgstr "Phương thức"
+
+#: core/kis_composite_op.cc:105
+#, fuzzy
+msgid "Burn"
+msgstr "Xanh nước biển"
+
+#: core/kis_composite_op.cc:106
+msgid "Bumpmap"
+msgstr ""
+
+#: core/kis_composite_op.cc:108
+#, fuzzy
+msgid "Copy Red"
+msgstr "xanh da trời"
+
+#: core/kis_composite_op.cc:109
+#, fuzzy
+msgid "Copy Green"
+msgstr "xanh nước biển"
+
+#: core/kis_composite_op.cc:110
+#, fuzzy
+msgid "Copy Blue"
+msgstr "xanh da trời"
+
+#: core/kis_composite_op.cc:111
+#, fuzzy
+msgid "Copy Opacity"
+msgstr "Mật độ"
+
+#: core/kis_composite_op.cc:113
+msgid "Dissolve"
+msgstr "Dissolve"
+
+#: core/kis_composite_op.cc:114
+#, fuzzy
+msgid "Displace"
+msgstr "Dissolve"
+
+#: core/kis_composite_op.cc:116
+#, fuzzy
+msgid "Modulate"
+msgstr "Phương thức"
+
+#: core/kis_composite_op.cc:117
+#, fuzzy
+msgid "Threshold"
+msgstr "Ngưỡng vẽ :"
+
+#: core/kis_composite_op.cc:119
+#, fuzzy
+msgid "No Composition"
+msgstr "Cộng"
+
+#: core/kis_composite_op.cc:120
+#, fuzzy
+msgid "Darken"
+msgstr "Chỉ làm tối"
+
+#: core/kis_composite_op.cc:121
+#, fuzzy
+msgid "Lighten"
+msgstr "Chỉ làm sáng"
+
+#: core/kis_composite_op.cc:122
+msgid "Hue"
+msgstr "Hue"
+
+#: core/kis_composite_op.cc:124
+#, fuzzy
+msgid "Value"
+msgstr "Xanh nước biển"
+
+#: core/kis_composite_op.cc:125
+#, fuzzy
+msgid "Color"
+msgstr "Màu"
+
+#: core/kis_composite_op.cc:126
+#, fuzzy
+msgid "Colorize"
+msgstr "Màu"
+
+#: core/kis_composite_op.cc:127
+msgid "Luminize"
+msgstr ""
+
+#: core/kis_composite_op.cc:128
+msgid "Screen"
+msgstr "Màn hình"
+
+#: core/kis_composite_op.cc:129
+#, fuzzy
+msgid "Overlay"
+msgstr "Phủ"
+
+#: core/kis_composite_op.cc:130
+#, fuzzy
+msgid "Copy Cyan"
+msgstr "Mật độ"
+
+#: core/kis_composite_op.cc:131
+#, fuzzy
+msgid "Copy Magenta"
+msgstr "tím"
+
+#: core/kis_composite_op.cc:132
+#, fuzzy
+msgid "Copy Yellow"
+msgstr "vàng"
+
+#: core/kis_composite_op.cc:133
+#, fuzzy
+msgid "Copy Black"
+msgstr "xanh da trời"
+
+#: core/kis_composite_op.cc:134 tools/kis_tool_eraser.cc:39
+msgid "Erase"
+msgstr ""
+
+#: core/kis_rotate_visitor.cc:50 core/kis_rotate_visitor.cc:170
 #, fuzzy
 msgid "Rotating Image..."
 msgstr "Đổi tên ảnh"
 
-#: core/kis_view.cc:334
+#: core/kis_view.cc:331
 msgid "Image Name"
 msgstr "Tên ảnh"
 
-#: core/kis_view.cc:334
+#: core/kis_view.cc:331
 msgid "Enter name:"
 msgstr ""
 
-#: core/kis_view.cc:342
+#: core/kis_view.cc:339
 msgid "Image name cannot be empty."
 msgstr "Tên ảnh hiện tại không thể là rỗng."
 
-#: core/kis_view.cc:342 core/kis_view.cc:352
+#: core/kis_view.cc:339 core/kis_view.cc:349
 #, fuzzy
 msgid "Change Image Name"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_view.cc:352
+#: core/kis_view.cc:349
 msgid "This name is already used."
 msgstr "Tên này đã bị dùng"
 
-#: core/kis_view.cc:366
+#: core/kis_view.cc:363
 msgid "Zoom %1:1"
 msgstr ""
 
-#: core/kis_view.cc:368
+#: core/kis_view.cc:365
 #, c-format
 msgid "Zoom 1:%1"
 msgstr ""
 
-#: core/kis_view.cc:387
+#: core/kis_view.cc:384
 #, fuzzy
 msgid "Selection Active"
 msgstr "Chọn"
 
-#: core/kis_view.cc:393
+#: core/kis_view.cc:390
 #, fuzzy
 msgid "No selection"
 msgstr "Bỏ chọn"
 
-#: core/kis_view.cc:406
+#: core/kis_view.cc:403
 msgid "No profile"
 msgstr ""
 
-#: core/kis_view.cc:482
+#: core/kis_view.cc:479
 #, fuzzy
 msgid "Import Image..."
 msgstr "Nhập ảnh"
 
-#: core/kis_view.cc:483
+#: core/kis_view.cc:480
 #, fuzzy
 msgid "Export Image..."
 msgstr "Xuất ảnh"
 
-#: core/kis_view.cc:486
+#: core/kis_view.cc:483
 #, fuzzy
 msgid "Extend Image to Size of Current Layer"
 msgstr "Gỡ bỏ Layer hiện tại"
 
-#: core/kis_view.cc:492
+#: core/kis_view.cc:489
 #, fuzzy
 msgid "&Add Layer..."
 msgstr "&Thêm Layer..."
 
-#: core/kis_view.cc:493
+#: core/kis_view.cc:490
 #, fuzzy
 msgid "&Remove Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:494
+#: core/kis_view.cc:491
 msgid "Duplicate Layer"
 msgstr ""
 
-#: core/kis_view.cc:495
+#: core/kis_view.cc:492
 #, fuzzy
 msgid "&Link/Unlink Layer"
 msgstr "&Link/Unlink layer..."
 
-#: core/kis_view.cc:496
+#: core/kis_view.cc:493
 #, fuzzy
 msgid "&Hide/Show Layer"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_view.cc:497
+#: core/kis_view.cc:494
 #, fuzzy
 msgid "Raise Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:498
+#: core/kis_view.cc:495
 #, fuzzy
 msgid "Lower Layer"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:499
+#: core/kis_view.cc:496
 msgid "Layer to Top"
 msgstr ""
 
-#: core/kis_view.cc:500
+#: core/kis_view.cc:497
 msgid "Layer to Bottom"
 msgstr ""
 
-#: core/kis_view.cc:502
+#: core/kis_view.cc:499
 #, fuzzy
 msgid "I&nsert Image as Layer..."
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:503
+#: core/kis_view.cc:500
 #, fuzzy
 msgid "Save Layer as Image..."
 msgstr "Cất Layer thành ảnh..."
 
-#: core/kis_view.cc:504
+#: core/kis_view.cc:501
 #, fuzzy
 msgid "Layer to Image"
 msgstr "Nhập ảnh"
 
-#: core/kis_view.cc:506
+#: core/kis_view.cc:503
 #, fuzzy
 msgid "Mirror Along &X Axis"
 msgstr "Đối xứng gương &X"
 
-#: core/kis_view.cc:507
+#: core/kis_view.cc:504
 #, fuzzy
 msgid "Mirror Along &Y Axis"
 msgstr "Đối xứng gương &Y"
 
-#: core/kis_view.cc:510
+#: core/kis_view.cc:507
 msgid "Select Foreground Color..."
 msgstr ""
 
-#: core/kis_view.cc:511
+#: core/kis_view.cc:508
 msgid "Select Background Color..."
 msgstr ""
 
-#: core/kis_view.cc:512
+#: core/kis_view.cc:509
 msgid "Reverse Foreground/Background Colors"
 msgstr ""
 
-#: core/kis_view.cc:515
+#: core/kis_view.cc:512
 #, fuzzy
 msgid "Rename Current Image..."
 msgstr "Gỡ bỏ ảnh hiện tại"
 
-#: core/kis_view.cc:516
+#: core/kis_view.cc:513
 #, fuzzy
 msgid "Add New Image..."
 msgstr "Thêm ảnh mới"
 
-#: core/kis_view.cc:517
+#: core/kis_view.cc:514
 #, fuzzy
 msgid "Remove Current Image"
 msgstr "Gỡ bỏ ảnh hiện tại"
 
-#: core/kis_view.cc:518
+#: core/kis_view.cc:515
 msgid "Duplicate Image"
 msgstr ""
 
-#: core/kis_image.cc:897 core/kis_view.cc:519 core/kis_view.cc:1565
-#: core/kis_view.cc:1566
+#: core/kis_image.cc:974 core/kis_view.cc:516 core/kis_view.cc:1558
+#: core/kis_view.cc:1559
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_view.cc:520
+#: core/kis_view.cc:517
 #, fuzzy
 msgid "Merge &Visible Layers"
 msgstr "Trọn mọi layer &nhìn thấy"
 
-#: core/kis_view.cc:521
+#: core/kis_view.cc:518
 #, fuzzy
 msgid "Merge &Linked Layers"
 msgstr "Trộn mọi layer liên kết"
 
-#: core/kis_view.cc:522
+#: core/kis_view.cc:519
 #, fuzzy
 msgid "&Merge Layer"
 msgstr "Trộn Layer"
 
-#: core/kis_view.cc:527
+#: core/kis_view.cc:524
 msgid "Show Rulers"
 msgstr ""
 
-#: core/kis_view.cc:1169
+#: core/kis_view.cc:1161
 msgid "Export Image"
 msgstr "Xuất ảnh"
 
-#: core/kis_view.cc:1193 core/kis_view.cc:1256
+#: core/kis_view.cc:1185 core/kis_view.cc:1248
 msgid "No coder for this type of file."
 msgstr ""
 
-#: core/kis_view.cc:1193 core/kis_view.cc:1196 core/kis_view.cc:1200
-#: core/kis_view.cc:1203 core/kis_view.cc:1206 core/kis_view.cc:1209
-#: core/kis_view.cc:1256 core/kis_view.cc:1259 core/kis_view.cc:1263
-#: core/kis_view.cc:1266 core/kis_view.cc:1269 core/kis_view.cc:1272
+#: core/kis_view.cc:1185 core/kis_view.cc:1188 core/kis_view.cc:1192
+#: core/kis_view.cc:1195 core/kis_view.cc:1198 core/kis_view.cc:1201
+#: core/kis_view.cc:1248 core/kis_view.cc:1251 core/kis_view.cc:1255
+#: core/kis_view.cc:1258 core/kis_view.cc:1261 core/kis_view.cc:1264
 #, fuzzy
 msgid "Error Saving File"
 msgstr "Lỗi tải file"
 
-#: core/kis_view.cc:1196 core/kis_view.cc:1259
+#: core/kis_view.cc:1188 core/kis_view.cc:1251
 msgid "Invalid argument."
 msgstr ""
 
-#: core/kis_view.cc:1200 core/kis_view.cc:1263
+#: core/kis_view.cc:1192 core/kis_view.cc:1255
 msgid "Unable to locate file."
 msgstr ""
 
-#: core/kis_view.cc:1203 core/kis_view.cc:1266
+#: core/kis_view.cc:1195 core/kis_view.cc:1258
 msgid "Unable to upload file."
 msgstr ""
 
-#: core/kis_view.cc:1206 core/kis_view.cc:1269
+#: core/kis_view.cc:1198 core/kis_view.cc:1261
 msgid "Empty file."
 msgstr ""
 
-#: core/kis_view.cc:1209 core/kis_view.cc:1272
+#: core/kis_view.cc:1201 core/kis_view.cc:1264
 #, fuzzy
 msgid "Error saving file."
 msgstr "Lỗi tải file"
 
-#: core/kis_view.cc:1240
+#: core/kis_view.cc:1232
 #, fuzzy
 msgid "Export Layer"
 msgstr "Xuất ảnh"
 
-#: core/kis_view.cc:1292
+#: core/kis_view.cc:1284
 msgid "Import Image"
 msgstr "Nhập ảnh"
 
-#: core/kis_view.cc:1315
+#: core/kis_view.cc:1307
 #, c-format
 msgid "No coder for the type of file %1."
 msgstr ""
 
-#: core/kis_view.cc:1315 core/kis_view.cc:1322 core/kis_view.cc:1326
-#: core/kis_view.cc:1330 core/kis_view.cc:1335
+#: core/kis_view.cc:1307 core/kis_view.cc:1314 core/kis_view.cc:1318
+#: core/kis_view.cc:1322 core/kis_view.cc:1327
 #, fuzzy
 msgid "Error Importing File"
 msgstr "Lỗi tải file"
 
-#: core/kis_view.cc:1322
+#: core/kis_view.cc:1314
 msgid "File %1 does not exist."
 msgstr ""
 
-#: core/kis_view.cc:1326
+#: core/kis_view.cc:1318
 #, c-format
 msgid "Unable to download file %1."
 msgstr ""
 
-#: core/kis_view.cc:1330
+#: core/kis_view.cc:1322
 #, c-format
 msgid "Empty file: %1"
 msgstr ""
 
-#: core/kis_view.cc:1335
+#: core/kis_view.cc:1327
 #, fuzzy, c-format
 msgid "Error loading file %1."
 msgstr "Lỗi tải file"
 
-#: core/kis_view.cc:1402
+#: core/kis_view.cc:1394
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:1424 core/kis_view.cc:1522
+#: core/kis_view.cc:1416 core/kis_view.cc:1515
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:1447
+#: core/kis_view.cc:1439
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Layer &kế..."
 
-#: core/kis_view.cc:1472
+#: core/kis_view.cc:1464
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:1497
+#: core/kis_view.cc:1490
 #, fuzzy
 msgid "Shear layer"
 msgstr "Layer &kế..."
 
-#: core/kis_view.cc:1564
+#: core/kis_view.cc:1557
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: core/kis_view.cc:2029
+#: core/kis_view.cc:2036
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:2032
+#: core/kis_view.cc:2039
 #, fuzzy
 msgid "Insert as New Image"
 msgstr "Ảnh mới"
 
-#: core/kis_view.cc:2034
+#: core/kis_view.cc:2041
 msgid "Open in New Document"
 msgstr ""
 
-#: core/kis_view.cc:2038
+#: core/kis_view.cc:2045
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:2041
+#: core/kis_view.cc:2048
 #, fuzzy
 msgid "Insert as New Images"
 msgstr "Ảnh mới"
 
-#: core/kis_view.cc:2043
+#: core/kis_view.cc:2050
 msgid "Open in New Documents"
 msgstr ""
 
-#: core/kis_view.cc:2172
+#: core/kis_view.cc:2181
 #, fuzzy
 msgid "Property changes"
 msgstr "Trình đổi màu"
 
-#: core/kis_view.cc:2210 core/kis_view.cc:2257
+#: core/kis_view.cc:2219 core/kis_view.cc:2266
 msgid "Could not add layer to image."
 msgstr ""
 
-#: core/kis_view.cc:2210 core/kis_view.cc:2257
+#: core/kis_view.cc:2219 core/kis_view.cc:2266
 #, fuzzy
 msgid "Layer Error"
 msgstr "Layer"
 
-#: core/kis_view.cc:2249
+#: core/kis_view.cc:2258
 #, fuzzy
 msgid "Duplicate of '%1'"
 msgstr "Công cụ &trình lọc"
@@ -3106,21 +3113,27 @@ msgstr "Công cụ &trình lọc"
 msgid "Resize Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_image.cc:221 core/kis_image.cc:289
+#: core/kis_image.cc:174 core/kis_image.cc:567
+#: plugins/colorspaceconversion/colorspaceconversion.cc:65
+#, fuzzy
+msgid "&Convert Image Type..."
+msgstr "&Chèn ảnh như là layer..."
+
+#: core/kis_image.cc:276 core/kis_image.cc:344
 #, fuzzy, c-format
 msgid "Layer %1"
 msgstr "layer %1"
 
-#: core/kis_image.cc:277
+#: core/kis_image.cc:332
 msgid "background"
 msgstr "nền"
 
-#: core/kis_image.cc:927
+#: core/kis_image.cc:1004
 #, fuzzy
 msgid "Merge Visible Layers"
 msgstr "Trọn mọi layer &nhìn thấy"
 
-#: core/kis_image.cc:958 core/kis_image.cc:995
+#: core/kis_image.cc:1035 core/kis_image.cc:1072
 #, fuzzy
 msgid "Merge Linked Layers"
 msgstr "Trộn mọi layer liên kết"
@@ -3142,7 +3155,7 @@ msgstr ""
 msgid "&Reselect"
 msgstr "Chọn"
 
-#: core/kis_selection_manager.cc:139
+#: core/kis_selection_manager.cc:138
 #, fuzzy
 msgid "Copy Selection to New Layer"
 msgstr "Copy chọn tới layer mới"
@@ -3208,13 +3221,13 @@ msgstr ""
 msgid "Loading..."
 msgstr ""
 
-#: core/builder/kis_image_magick_converter.cc:574
-#: core/builder/kis_image_magick_converter.cc:615
+#: core/builder/kis_image_magick_converter.cc:609
+#: core/builder/kis_image_magick_converter.cc:689
 #, fuzzy
 msgid "All Images"
 msgstr "ảnh"
 
-#: tools/kis_tool_line.h:98
+#: tools/kis_tool_line.h:88
 #, fuzzy
 msgid "Line tool"
 msgstr "Công cụ đườn&g"
@@ -3243,7 +3256,7 @@ msgstr "Pattern"
 msgid "Airbrush tool"
 msgstr "Công cụ &Airbrush"
 
-#: tools/kis_tool_ellipse.cc:132
+#: tools/kis_tool_ellipse.cc:42 tools/kis_tool_ellipse.cc:132
 #, fuzzy
 msgid "Ellipse"
 msgstr "Công cụ &Ellipse"
@@ -3258,7 +3271,7 @@ msgstr "Công cụ &Ellipse"
 msgid "Color picker"
 msgstr "Trình chọn &màu"
 
-#: tools/kis_tool_text.h:73
+#: tools/kis_tool_text.h:71
 #, fuzzy
 msgid "Text tool"
 msgstr "Công cụ &di chuyển"
@@ -3273,12 +3286,12 @@ msgstr "Chổi"
 msgid "Tool &Brush"
 msgstr "Chổi"
 
-#: tools/kis_tool_line.cc:139
+#: tools/kis_tool_line.cc:41 tools/kis_tool_line.cc:137
 #, fuzzy
 msgid "Line"
 msgstr "Layer"
 
-#: tools/kis_tool_line.cc:232
+#: tools/kis_tool_line.cc:230
 #, fuzzy
 msgid "Tool &Line"
 msgstr "Phóng &to"
@@ -3298,22 +3311,22 @@ msgstr "Chổi"
 msgid "Zoom tool"
 msgstr "Công cụ &Zoom"
 
-#: tools/kis_tool_rectangle.h:95
+#: tools/kis_tool_rectangle.h:91
 #, fuzzy
 msgid "Rectangle tool"
 msgstr "Công cụ hình chữ &nhật"
 
-#: tools/kis_tool_colorpicker.cc:89
+#: tools/kis_tool_colorpicker.cc:93
 #, fuzzy
 msgid "Tool &Color Picker"
 msgstr "Trình chọn &màu"
 
-#: tools/kis_tool_colorpicker.cc:104
+#: tools/kis_tool_colorpicker.cc:108
 #, fuzzy
 msgid "Color Picker"
 msgstr "Trình chọn &màu"
 
-#: tools/kis_tool_colorpicker.cc:107
+#: tools/kis_tool_colorpicker.cc:111
 #, fuzzy
 msgid "Update current color"
 msgstr "Cho layer hiện tại lên trên"
@@ -3327,7 +3340,7 @@ msgstr ""
 msgid "Pan tool"
 msgstr "Công cụ &bút vẽ"
 
-#: tools/kis_tool_rectangle.cc:132
+#: tools/kis_tool_rectangle.cc:42 tools/kis_tool_rectangle.cc:132
 msgid "Rectangle"
 msgstr "Hình chữ nhật"
 
@@ -3341,7 +3354,7 @@ msgstr "Hình chữ nhật"
 msgid "Pen tool"
 msgstr "Công cụ &bút vẽ"
 
-#: tools/kis_tool_fill.cc:84
+#: tools/kis_tool_fill.cc:82
 msgid "Floodfill"
 msgstr ""
 
@@ -3350,11 +3363,11 @@ msgstr ""
 msgid "Threshold: "
 msgstr "Ngưỡng vẽ :"
 
-#: tools/kis_tool_fill.cc:183
+#: tools/kis_tool_fill.cc:167
 msgid "Tool &Fill"
 msgstr ""
 
-#: tools/kis_tool_ellipse.h:98
+#: tools/kis_tool_ellipse.h:94
 #, fuzzy
 msgid "Ellipse tool"
 msgstr "Elliptical"
@@ -3369,7 +3382,7 @@ msgstr "Gradients"
 msgid "Enter text:"
 msgstr "Góc:"
 
-#: tools/kis_tool_text.cc:128
+#: tools/kis_tool_text.cc:130
 msgid "Font: "
 msgstr ""
 
@@ -3377,11 +3390,11 @@ msgstr ""
 msgid "Tool T&ext"
 msgstr ""
 
-#: tools/kis_tool_stamp.h:99
+#: tools/kis_tool_stamp.h:97
 msgid "Stamp tool"
 msgstr ""
 
-#: tools/kis_tool_colorchanger.cc:232
+#: tools/kis_tool_colorchanger.cc:35 tools/kis_tool_colorchanger.cc:232
 #, fuzzy
 msgid "Tool Color Changer"
 msgstr "Trình đổi màu"
@@ -3418,56 +3431,56 @@ msgstr ""
 msgid "Duplicate tool"
 msgstr "Công cụ &trình lọc"
 
-#: tools/kis_tool_gradient.h:126
+#: tools/kis_tool_gradient.h:115
 #, fuzzy
 msgid "Gradient Tool"
 msgstr "Gradients"
 
-#: tools/kis_tool_gradient.cc:260
+#: tools/kis_tool_gradient.cc:237
 #, fuzzy
 msgid "Shape:"
 msgstr "Độ sắc:"
 
-#: tools/kis_tool_gradient.cc:261
+#: tools/kis_tool_gradient.cc:238
 #, fuzzy
 msgid "Repeat:"
 msgstr "Lặp lại"
 
-#: tools/kis_tool_gradient.cc:263
+#: tools/kis_tool_gradient.cc:240
 msgid "Reverse"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:269
+#: tools/kis_tool_gradient.cc:246
 #, fuzzy
 msgid "Bi-Linear"
 msgstr "Layer"
 
-#: tools/kis_tool_gradient.cc:270
+#: tools/kis_tool_gradient.cc:247
 msgid "Radial"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:272
+#: tools/kis_tool_gradient.cc:249
 msgid "Conical"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:273
+#: tools/kis_tool_gradient.cc:250
 msgid "Conical Symmetric"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:278
+#: tools/kis_tool_gradient.cc:255
 msgid "Forwards"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:279
+#: tools/kis_tool_gradient.cc:256
 msgid "Alternating"
 msgstr ""
 
-#: tools/kis_tool_gradient.cc:289
+#: tools/kis_tool_gradient.cc:269
 #, fuzzy
 msgid "Anti-alias threshold:"
 msgstr "Ngưỡng vẽ :"
 
-#: tools/kis_tool_gradient.cc:342
+#: tools/kis_tool_gradient.cc:307
 #, fuzzy
 msgid "Tool &Gradient"
 msgstr "Gradients"
@@ -3477,7 +3490,7 @@ msgstr "Gradients"
 msgid "Brush tool"
 msgstr "Công cụ &chổi"
 
-#: tools/kis_tool_fill.h:97
+#: tools/kis_tool_fill.h:90
 #, fuzzy
 msgid "Fill tool"
 msgstr "Công cụ &trình lọc"
@@ -3907,17 +3920,17 @@ msgstr "Bỏ chọn"
 msgid "Refresh Preview"
 msgstr ""
 
-#: plugins/tool_crop/kis_tool_crop.h:121
+#: plugins/tool_crop/kis_tool_crop.h:126
 #, fuzzy
 msgid "Crop tool"
 msgstr "Công cụ &di chuyển"
 
-#: plugins/tool_crop/kis_tool_crop.cc:417
+#: plugins/tool_crop/kis_tool_crop.cc:592
 #, fuzzy
 msgid "Tool &Crop"
 msgstr "Phương thức"
 
-#: plugins/tool_star/kis_tool_star.h:100
+#: plugins/tool_star/kis_tool_star.h:99
 #, fuzzy
 msgid "Star tool"
 msgstr "Công cụ &bút vẽ"
@@ -3926,16 +3939,6 @@ msgstr "Công cụ &bút vẽ"
 #, fuzzy
 msgid "Tool &Star"
 msgstr "Phương thức"
-
-#: plugins/colorspaceconversion/colorspaceconversion.cc:65
-#, fuzzy
-msgid "&Convert Image Type..."
-msgstr "&Chèn ảnh như là layer..."
-
-#: plugins/colorspaceconversion/colorspaceconversion.cc:66
-#, fuzzy
-msgid "&Convert Layer Type..."
-msgstr "&Chèn ảnh như là layer..."
 
 #: plugins/colorspaceconversion/colorspaceconversion.cc:90
 #, fuzzy
@@ -4059,17 +4062,18 @@ msgstr "Góc:"
 msgid "Invert"
 msgstr ""
 
-#: plugins/tool_polygon/kis_tool_polygon.h:96
+#: plugins/tool_polygon/kis_tool_polygon.h:94
 #, fuzzy
 msgid "Polygon tool"
 msgstr "Công cụ đa &Sgiác"
 
-#: plugins/tool_polygon/kis_tool_polygon.cc:107
+#: plugins/tool_polygon/kis_tool_polygon.cc:46
+#: plugins/tool_polygon/kis_tool_polygon.cc:96
 #, fuzzy
 msgid "Polygon"
 msgstr "Công cụ đa &Sgiác"
 
-#: plugins/tool_polygon/kis_tool_polygon.cc:202
+#: plugins/tool_polygon/kis_tool_polygon.cc:230
 #, fuzzy
 msgid "Tool &Polygon"
 msgstr "Đa giác"
@@ -4084,42 +4088,43 @@ msgstr "Đổi tên ảnh"
 msgid "&Shear Layer..."
 msgstr "Layer &kế..."
 
-#: plugins/imagesize/imagesize.cc:67
+#: plugins/imagesize/imagesize.cc:66
 #, fuzzy
 msgid "Change &Image Size..."
 msgstr "ảnh "
 
-#: plugins/imagesize/imagesize.cc:68
+#: plugins/imagesize/imagesize.cc:67
 #, fuzzy
 msgid "Change &Layer Size..."
 msgstr "ảnh "
 
-#: plugins/imagesize/imagesize.cc:76
+#: plugins/imagesize/imagesize.cc:75
 #, fuzzy
 msgid "&Layer Size..."
 msgstr "ảnh "
 
-#: plugins/imagesize/imagesize.cc:136
+#: plugins/imagesize/imagesize.cc:135
 #, fuzzy
 msgid "Layer Size"
 msgstr "ảnh "
 
-#: plugins/imagesize/imagesize.cc:183
+#: plugins/imagesize/imagesize.cc:182
 #, fuzzy
 msgid "Scale Selection"
 msgstr "Chọn"
 
-#: plugins/tool_polyline/kis_tool_polyline.cc:106
+#: plugins/tool_polyline/kis_tool_polyline.cc:46
+#: plugins/tool_polyline/kis_tool_polyline.cc:96
 #, fuzzy
 msgid "Polyline"
 msgstr "Công cụ đa &Sgiác"
 
-#: plugins/tool_polyline/kis_tool_polyline.cc:199
+#: plugins/tool_polyline/kis_tool_polyline.cc:226
 #, fuzzy
 msgid "Tool &Polyline"
 msgstr "Công cụ đa &tuyến"
 
-#: plugins/tool_polyline/kis_tool_polyline.h:96
+#: plugins/tool_polyline/kis_tool_polyline.h:94
 #, fuzzy
 msgid "Polyline tool"
 msgstr "Công cụ đa &Sgiác"
@@ -4134,22 +4139,22 @@ msgstr "Trình đổi màu"
 msgid "&Color Range..."
 msgstr "Trình đổi màu"
 
-#: plugins/colorrange/kis_tool_selectpicker.cc:162
+#: plugins/colorrange/kis_tool_selectpicker.cc:215
 #, fuzzy
 msgid "Tool &Selection Picker"
 msgstr "Trình chọn &màu"
 
-#: plugins/colorrange/kis_tool_selectpicker.cc:201
+#: plugins/colorrange/kis_tool_selectpicker.cc:243
 #, fuzzy
 msgid "Selection Picker"
 msgstr "Chọn"
 
-#: plugins/colorrange/kis_tool_selectpicker.cc:215
-#: plugins/selectiontools/kis_tool_select_contiguous.cc:163
+#: plugins/colorrange/kis_tool_selectpicker.cc:257
+#: plugins/selectiontools/kis_tool_select_contiguous.cc:184
 msgid "Fuzziness: "
 msgstr ""
 
-#: plugins/colorrange/kis_tool_selectpicker.h:83
+#: plugins/colorrange/kis_tool_selectpicker.h:90
 #, fuzzy
 msgid "Selection picker"
 msgstr "Chọn"
@@ -4191,12 +4196,12 @@ msgid "Smooth"
 msgstr ""
 
 #: plugins/tool_filter/kis_tool_filter.cc:52
-#: plugins/tool_filter/kis_tool_filter.h:77
+#: plugins/tool_filter/kis_tool_filter.h:75
 #, fuzzy
 msgid "Filter tool"
 msgstr "Công cụ &trình lọc"
 
-#: plugins/tool_filter/kis_tool_filter.cc:107
+#: plugins/tool_filter/kis_tool_filter.cc:101
 #, fuzzy
 msgid "Filter:"
 msgstr "&Trắng"
@@ -4226,14 +4231,14 @@ msgstr "Chọn &Freehand"
 msgid "Eraser select tool"
 msgstr "Công cụ &xoá"
 
-#: plugins/selectiontools/kis_tool_select_elliptical.cc:57
-#: plugins/selectiontools/kis_tool_select_elliptical.cc:261
+#: plugins/selectiontools/kis_tool_select_elliptical.cc:59
+#: plugins/selectiontools/kis_tool_select_elliptical.cc:284
 #: plugins/selectiontools/kis_tool_select_polygonal.cc:60
 #, fuzzy
 msgid "Elliptical Selection"
 msgstr "Chọn &Elip"
 
-#: plugins/selectiontools/kis_tool_select_elliptical.cc:244
+#: plugins/selectiontools/kis_tool_select_elliptical.cc:267
 #, fuzzy
 msgid "Tool &Elliptical Select"
 msgstr "Chọn &Elip"
@@ -4243,12 +4248,12 @@ msgstr "Chọn &Elip"
 msgid "Brush select tool"
 msgstr "Công cụ &chổi"
 
-#: plugins/selectiontools/kis_tool_select_contiguous.cc:103
+#: plugins/selectiontools/kis_tool_select_contiguous.cc:123
 #, fuzzy
 msgid "Tool &Contiguous Select"
 msgstr "Chọn &Tiếp liền"
 
-#: plugins/selectiontools/kis_tool_select_contiguous.cc:149
+#: plugins/selectiontools/kis_tool_select_contiguous.cc:170
 #, fuzzy
 msgid "Select Contiguous Areas"
 msgstr "Chọn"
@@ -4258,17 +4263,17 @@ msgstr "Chọn"
 msgid "Rectangular Selection"
 msgstr "Chọn hình chữ &nhật"
 
-#: plugins/selectiontools/kis_tool_select_rectangular.cc:252
+#: plugins/selectiontools/kis_tool_select_rectangular.cc:275
 #, fuzzy
 msgid "Tool &Rectangular Select"
 msgstr "Chọn hình chữ &nhật"
 
-#: plugins/selectiontools/kis_tool_select_rectangular.cc:269
+#: plugins/selectiontools/kis_tool_select_rectangular.cc:292
 #, fuzzy
 msgid "Select Rectangles"
 msgstr "Hình chữ nhật"
 
-#: plugins/selectiontools/kis_tool_select_rectangular.h:78
+#: plugins/selectiontools/kis_tool_select_rectangular.h:79
 #, fuzzy
 msgid "Rectangular select tool"
 msgstr "Chọn hình chữ &nhật"
@@ -4294,7 +4299,7 @@ msgstr "Chọn"
 msgid "Tool &Eraser Select"
 msgstr "Chọn &Tiếp liền"
 
-#: plugins/selectiontools/kis_tool_select_contiguous.h:112
+#: plugins/selectiontools/kis_tool_select_contiguous.h:83
 #, fuzzy
 msgid "Contiguous select tool"
 msgstr "Chọn &Tiếp liền"
@@ -4325,7 +4330,7 @@ msgstr "Chọn đa &giác"
 msgid "Selection Polygons"
 msgstr "Công cụ chọn"
 
-#: plugins/selectiontools/kis_tool_select_elliptical.h:80
+#: plugins/selectiontools/kis_tool_select_elliptical.h:81
 #, fuzzy
 msgid "Elliptical select tool"
 msgstr "Chọn &Elip"
@@ -4356,18 +4361,6 @@ msgstr ""
 #, fuzzy
 msgid "Tool &Transform"
 msgstr "Phương thức"
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr ""
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr ""
 
 #, fuzzy
 #~ msgid "Layer Actions"

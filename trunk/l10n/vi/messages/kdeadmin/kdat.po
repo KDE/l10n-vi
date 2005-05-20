@@ -388,16 +388,16 @@ msgid ""
 msgstr ""
 "Ví dụ, nếu thiết bị của bạn là /dev/st0, phiên bản "
 "non-rewinding \n"
-" l à /dev/nst0. Nếu tên thiết bị của bạn không có dạng "
-"vậy, gõ \n"
+" l à /dev/nst0. Nếu tên thiết bị của bạn không có dạng vậy, "
+"gõ \n"
 " \"ls -l %2\" trong terminal để xem tên thật của tape driver. Thay "
 "thể tên đó bằng /dev/nst0 ở dưới đây.\n"
 ".  Mở một cửa sổ terminal và gõ  lệnh sau : \"tar tfv /dev/nst0; "
 "tar /dev/nst0 \n"
 "  tar xfv /dev/nts0\n"
-" Lệnh gọi \"tar\" thứ ba sẽ nhận dữ liệu về thư mục "
-"hiện tại của bạn. Hãy cho chúng tôi biết điều gì đã xảy "
-"ra với bạn!\n"
+" Lệnh gọi \"tar\" thứ ba sẽ nhận dữ liệu về thư mục hiện "
+"tại của bạn. Hãy cho chúng tôi biết điều gì đã xảy ra với "
+"bạn!\n"
 " KDat Maintenance Team\n"
 
 #: KDat.cpp:449
@@ -504,8 +504,8 @@ msgstr ""
 #: KDat.cpp:723
 msgid "The current tape index will be overwritten, continue?"
 msgstr ""
-"Mục lục của tape hiện tại sẽ bị ghi đè, bạn có muốn "
-"tiếp tục không?"
+"Mục lục của tape hiện tại sẽ bị ghi đè, bạn có muốn tiếp "
+"tục không?"
 
 #: KDat.cpp:724
 msgid "Index Tape"
@@ -535,8 +535,8 @@ msgid ""
 "the tree first."
 msgstr ""
 "Chưa có  archive nào được chọn. \n"
-" Để có thể xoá một archive, archive đó phải được chọn "
-"từ danh sách."
+" Để có thể xoá một archive, archive đó phải được chọn từ "
+"danh sách."
 
 #: KDat.cpp:779
 msgid ""
@@ -569,20 +569,20 @@ msgstr "Đã xoá archvie."
 #: KDat.cpp:811
 msgid ""
 "No tape index is selected.\n"
-"In order to delete a tape index, the tape index to be deleted must be "
-"selected in the tree first."
+"In order to delete a tape index, the tape index to be deleted must be selected "
+"in the tree first."
 msgstr ""
 "Chưa có mục lục tape nào được chọn.\n"
-" Đêr có thể xoá một mục lục tape, mục lục tape phải "
-"được chọn trong danh sách trước."
+" Đêr có thể xoá một mục lục tape, mục lục tape phải được "
+"chọn trong danh sách trước."
 
 #: KDat.cpp:820
 msgid ""
 "Tape is still mounted. The index for a mounted tape cannot be deleted.\n"
 "Unmount the tape and try again."
 msgstr ""
-"Tape vẫn đang bị mount. Vì vậy mục lục tape không thể bị "
-"xoá. \n"
+"Tape vẫn đang bị mount. Vì vậy mục lục tape không thể bị xoá. "
+"\n"
 " Hãy umount tape trước và thử lại."
 
 #: KDat.cpp:827
@@ -641,8 +641,8 @@ msgstr "Archive"
 
 #: KDat.cpp:940
 msgid ""
-"In order to delete a backup profile, the backup profile to be deleted must "
-"be selected in the tree first."
+"In order to delete a backup profile, the backup profile to be deleted must be "
+"selected in the tree first."
 msgstr ""
 "Để xoá backup profile, backup profile sẽ được xoá phải được "
 "chọn trước."
@@ -801,12 +801,12 @@ msgstr "Lỗi file Mục lục"
 #, c-format
 msgid ""
 "The tape index file format is version %d. The index cannot be read by this "
-"version of KDat. Perhaps the tape index file was created by a newer version "
-"of KDat?"
+"version of KDat. Perhaps the tape index file was created by a newer version of "
+"KDat?"
 msgstr ""
-"Phiên bản của file mục lục tape là %d. Mục lục này không "
-"thể đọc bởi KDat.Có thể tape đã được tạo bởi một "
-"phiên bản khác của KDat?"
+"Phiên bản của file mục lục tape là %d. Mục lục này không thể "
+"đọc bởi KDat.Có thể tape đã được tạo bởi một phiên bản "
+"khác của KDat?"
 
 #: Tape.cpp:380
 msgid "Error during fseek #1 while accessing archive: \""
@@ -917,10 +917,11 @@ msgid "Reading version number..."
 msgstr "Đọc số phiên bản..."
 
 #: TapeDrive.cpp:251
-msgid "Tape was formatted by a more recent version of KDat. Consider upgrading."
+msgid ""
+"Tape was formatted by a more recent version of KDat. Consider upgrading."
 msgstr ""
-"Tape được định dạng dưới một phiên bản mới hơn của "
-"KDat. Xin Upgrade."
+"Tape được định dạng dưới một phiên bản mới hơn của KDat. "
+"Xin Upgrade."
 
 #: TapeDrive.cpp:255
 msgid "Reading tape ID..."
@@ -1060,8 +1061,8 @@ msgstr ""
 #: rc.cpp:6
 #, no-c-format
 msgid ""
-"This setting determines the capacity that KDat assumes your backup tapes to "
-"be.  This is used when formatting the tapes."
+"This setting determines the capacity that KDat assumes your backup tapes to be. "
+" This is used when formatting the tapes."
 msgstr ""
 
 #. i18n: file OptionsDlgWidget.ui line 67
@@ -1069,8 +1070,8 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Tape drives read and write data in individual blocks.  This setting controls "
-"the size of each block, and should be set to your tape drive's block size.  "
-"For floppy tape drives this should be set to <b>10240</b> bytes."
+"the size of each block, and should be set to your tape drive's block size.  For "
+"floppy tape drives this should be set to <b>10240</b> bytes."
 msgstr ""
 
 #. i18n: file OptionsDlgWidget.ui line 73
@@ -1089,8 +1090,8 @@ msgstr ""
 #: rc.cpp:19
 #, no-c-format
 msgid ""
-"This option chooses whether the default tape size to the left is in "
-"megabytes (MB) or gigabytes (GB)."
+"This option chooses whether the default tape size to the left is in megabytes "
+"(MB) or gigabytes (GB)."
 msgstr ""
 
 #. i18n: file OptionsDlgWidget.ui line 96
@@ -1121,8 +1122,8 @@ msgstr ""
 #: rc.cpp:37
 #, no-c-format
 msgid ""
-"The location in the filesystem of the <em>non-rewinding</em> tape device.  "
-"The default is <b>/dev/tape</b>."
+"The location in the filesystem of the <em>non-rewinding</em> "
+"tape device.  The default is <b>/dev/tape</b>."
 msgstr ""
 
 #. i18n: file OptionsDlgWidget.ui line 155
@@ -1141,8 +1142,8 @@ msgstr ""
 #: rc.cpp:49
 #, no-c-format
 msgid ""
-"This setting controls the command that KDat uses to perform the tape backup. "
-" The full path should be given.  The default is <b>tar</b>."
+"This setting controls the command that KDat uses to perform the tape backup.  "
+"The full path should be given.  The default is <b>tar</b>."
 msgstr ""
 
 #. i18n: file OptionsDlgWidget.ui line 185
@@ -1173,8 +1174,8 @@ msgstr ""
 #: rc.cpp:64
 #, no-c-format
 msgid ""
-"This command issues an <tt>mtload</tt> command to the tape device before "
-"trying to mount it.\n"
+"This command issues an <tt>mtload</tt> command to the tape device before trying "
+"to mount it.\n"
 "\n"
 "This is required by some tape drives."
 msgstr ""
@@ -1195,8 +1196,8 @@ msgstr ""
 #: rc.cpp:75
 #, no-c-format
 msgid ""
-"This option makes KDat try to disable the eject button on the tape drive "
-"after the tape has been mounted.\n"
+"This option makes KDat try to disable the eject button on the tape drive after "
+"the tape has been mounted.\n"
 "\n"
 "This doesn't work for all tape drives."
 msgstr ""
@@ -1238,8 +1239,8 @@ msgstr ""
 #: rc.cpp:97
 #, no-c-format
 msgid ""
-"Some tape drives support different sizes of the data block.  With this "
-"option, KDat will attempt to enable that support.\n"
+"Some tape drives support different sizes of the data block.  With this option, "
+"KDat will attempt to enable that support.\n"
 "\n"
 "You must still specify the block size."
 msgstr ""

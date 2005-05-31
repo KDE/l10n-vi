@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm VERSION\n"
-"POT-Creation-Date: 2005-05-12 01:18+0200\n"
+"POT-Creation-Date: 2005-05-31 01:24+0200\n"
 "PO-Revision-Date: 2002-04-26 01:08GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -781,9 +781,9 @@ msgstr ""
 
 #: windows.cpp:594
 msgid ""
-"This option specifies how much KWin will try to prevent unwanted focus stealing "
-"caused by unexpected activation of new windows. (Note: This feature does not "
-"work with the Focus Under Mouse or Focus Strictly Under Mouse focus "
+"<p>This option specifies how much KWin will try to prevent unwanted focus "
+"stealing caused by unexpected activation of new windows. (Note: This feature "
+"does not work with the Focus Under Mouse or Focus Strictly Under Mouse focus "
 "policies.)<ul><li><em>None:</em> Prevention is turned off and new windows "
 "always become activated.</li><li><em>Low:</em> Prevention is enabled; when some "
 "window does not have support for the underlying mechanism and KWin cannot "
@@ -794,14 +794,17 @@ msgid ""
 "no window is currently active or if they belong to the currently active "
 "application. This setting is probably not really usable when not using mouse "
 "focus policy.</li><li><em>Extreme:</em> All windows must be explicitly "
-"activated by the user.</li></ul>"
+"activated by the user.</li></ul></p><p>Windows that are prevented from stealing "
+"focus are marked as demanding attention, which by default means their taskbar "
+"entry will be highlighted. This can be changed in the Notifications control "
+"module.</p>"
 msgstr ""
 
-#: windows.cpp:614
+#: windows.cpp:617
 msgid "Hide utility windows for inactive applications"
 msgstr ""
 
-#: windows.cpp:616
+#: windows.cpp:619
 msgid ""
 "When turned on, utility windows (tool windows, torn-off menus,...) of inactive "
 "applications will be hidden and will be shown only when the application becomes "
@@ -809,16 +812,16 @@ msgid ""
 "type for this feature to work."
 msgstr ""
 
-#: windows.cpp:769
+#: windows.cpp:772
 msgid "Windows"
 msgstr "Cửa sổ"
 
-#: windows.cpp:777
+#: windows.cpp:780
 #, fuzzy
 msgid "Di&splay content in moving windows"
 msgstr "Hiển thị nội dung khi di chuyển cửa sổ"
 
-#: windows.cpp:779
+#: windows.cpp:782
 msgid ""
 "Enable this option if you want a window's content to be fully shown while "
 "moving it, instead of just showing a window 'skeleton'. The result may not be "
@@ -828,12 +831,12 @@ msgstr ""
 "bị di chuyển, thay vì chỉ hiển thị 'xương' của nó .Kết quả này có thể không làm "
 "thoả mãn các mày cũ không có chức nănggia tốc đồ hoạ ."
 
-#: windows.cpp:783
+#: windows.cpp:786
 #, fuzzy
 msgid "Display content in &resizing windows"
 msgstr "Hiển thị nội dung khi  thay đổi cỡ cửa sổ"
 
-#: windows.cpp:785
+#: windows.cpp:788
 msgid ""
 "Enable this option if you want a window's content to be shown while resizing "
 "it, instead of just showing a window 'skeleton'. The result may not be "
@@ -843,23 +846,23 @@ msgstr ""
 "đổi cỡ của nó, thay vì chỉ hiển thị 'xương' của cửa sổ .Kết quả này có thể sẽ "
 "không làm hài lòng các máy chậm ."
 
-#: windows.cpp:789
+#: windows.cpp:792
 msgid "Display window &geometry when moving or resizing"
 msgstr ""
 
-#: windows.cpp:791
+#: windows.cpp:794
 msgid ""
 "Enable this option if you want a window's geometry to be displayed while it is "
 "being moved or resized. The window position relative to the top-left corner of "
 "the screen is displayed together with its size."
 msgstr ""
 
-#: windows.cpp:801
+#: windows.cpp:804
 #, fuzzy
 msgid "Animate minimi&ze and restore"
 msgstr "Hoạt hoá cực tiểu và khôi phục"
 
-#: windows.cpp:803
+#: windows.cpp:806
 msgid ""
 "Enable this option if you want an animation shown when windows are minimized or "
 "restored."
@@ -867,15 +870,15 @@ msgstr ""
 "Nhận tuỳ chọn này nếu bạn muốn một animation hiện ra khi cửasổ được cực tiểu "
 "hay khôi phục ."
 
-#: windows.cpp:817
+#: windows.cpp:820
 msgid "Slow"
 msgstr "Chậm"
 
-#: windows.cpp:821
+#: windows.cpp:824
 msgid "Fast"
 msgstr "Nhanh"
 
-#: windows.cpp:825
+#: windows.cpp:828
 msgid ""
 "Here you can set the speed of the animation shown when windows are minimized "
 "and restored. "
@@ -883,12 +886,12 @@ msgstr ""
 "Bạn có thể đặt tốc độ của hoạt họa được hiển thị khicửa sổ bị cực tiểu hoá hay "
 "khôi phục ."
 
-#: windows.cpp:831
+#: windows.cpp:834
 #, fuzzy
 msgid "Allow moving and resizing o&f maximized windows"
 msgstr "Cho phép di chuyển và thay đổi cỡ của màn hình cực đại "
 
-#: windows.cpp:833
+#: windows.cpp:836
 msgid ""
 "When enabled, this feature activates the border of maximized windows and allows "
 "you to move or resize them, just like for normal windows"
@@ -896,32 +899,32 @@ msgstr ""
 "Khi cho phép, chức năng này sẽ kích hoạt viền của cửa sổcực đại và cho phép bạn "
 "chuyển hay thay đổi cỡ của chúng, giống như là cửa sổ bình thường ."
 
-#: windows.cpp:839
+#: windows.cpp:842
 #, fuzzy
 msgid "&Placement:"
 msgstr "Sắp xếp :"
 
-#: windows.cpp:842
+#: windows.cpp:845
 msgid "Smart"
 msgstr "Thông minh"
 
-#: windows.cpp:843
+#: windows.cpp:846
 msgid "Cascade"
 msgstr "Cascade"
 
-#: windows.cpp:844
+#: windows.cpp:847
 msgid "Random"
 msgstr "Ngẫu nhiên"
 
-#: windows.cpp:845
+#: windows.cpp:848
 msgid "Centered"
 msgstr ""
 
-#: windows.cpp:846
+#: windows.cpp:849
 msgid "Zero-Cornered"
 msgstr ""
 
-#: windows.cpp:853
+#: windows.cpp:856
 #, fuzzy
 msgid ""
 "The placement policy determines where a new window will appear on the desktop. "
@@ -937,23 +940,23 @@ msgstr ""
 "will cascade the windows</li> <li><em>Random</em> will use a random "
 "position</li></ul>"
 
-#: windows.cpp:889
+#: windows.cpp:892
 msgid "Snap Zones"
 msgstr "Snap Zones"
 
-#: windows.cpp:893 windows.cpp:903
+#: windows.cpp:896 windows.cpp:906
 msgid "none"
 msgstr "không"
 
-#: windows.cpp:895
+#: windows.cpp:898
 msgid "&Border snap zone:"
 msgstr "&Border snap zone:"
 
-#: windows.cpp:896 windows.cpp:906
+#: windows.cpp:899 windows.cpp:909
 msgid " pixels"
 msgstr " pixels"
 
-#: windows.cpp:898
+#: windows.cpp:901
 msgid ""
 "Here you can set the snap zone for screen borders, i.e. the 'strength' of the "
 "magnetic field which will make windows snap to the border when moved near it."
@@ -961,11 +964,11 @@ msgstr ""
 "Bạn có thể đặt snap zone cho viền cửa sổ, ịe 'chiều dàí củatừ trường sẽ làm cho "
 "cửa sổ snap vào viền khi chuyển chúng ."
 
-#: windows.cpp:905
+#: windows.cpp:908
 msgid "&Window snap zone:"
 msgstr "&Window snap zone:"
 
-#: windows.cpp:908
+#: windows.cpp:911
 msgid ""
 "Here you can set the snap zone for windows, i.e. the 'strength' of the magnetic "
 "field which will make windows snap to each other when they're moved near "
@@ -974,12 +977,12 @@ msgstr ""
 "Bạn có thể đặt snap zone cho cửa sổ, nghĩa là 'chiều dài ' củatừ trường mà cửa "
 "sổ sẽ snap vào mỗi chúng khi bạn di chuyển tới gầncửa sổ khác ."
 
-#: windows.cpp:912
+#: windows.cpp:915
 #, fuzzy
 msgid "Snap windows onl&y when overlapping"
 msgstr "Snap cửa sổ khi  bị &gối lên nhau"
 
-#: windows.cpp:913
+#: windows.cpp:916
 #, fuzzy
 msgid ""
 "Here you can set that windows will be only snapped if you try to overlap them, "
@@ -989,7 +992,7 @@ msgstr ""
 "Bạn có thể đặt sao cho cửa sổ sẽ chỉ bị snap khi bạn thửgối lên chúng, ịe chúng "
 "sẽ không bị snap nếu cửa sổ đền chỉ gần viền của cửa sổ khác ."
 
-#: windows.cpp:1196
+#: windows.cpp:1199
 msgid ""
 "<qt><b>It seems that alpha channel support is not available.</b><br><br>"
 "Please make sure you have <a href=\"http://www.freedesktop.org/\">"
@@ -1002,117 +1005,117 @@ msgid ""
 "Section \"Device\"</i></qt>"
 msgstr ""
 
-#: windows.cpp:1217
+#: windows.cpp:1220
 msgid "Apply translucency on"
 msgstr ""
 
-#: windows.cpp:1220
+#: windows.cpp:1223
 msgid "The whole window"
 msgstr ""
 
-#: windows.cpp:1221
+#: windows.cpp:1224
 msgid "The titlebar only"
 msgstr ""
 
-#: windows.cpp:1222
+#: windows.cpp:1225
 msgid "The content only"
 msgstr ""
 
-#: windows.cpp:1231
+#: windows.cpp:1234
 #, fuzzy
 msgid "Active windows:"
 msgstr "Phi kích hoạt cửa sổ trong"
 
-#: windows.cpp:1238
+#: windows.cpp:1241
 #, fuzzy
 msgid "Inactive windows:"
 msgstr "Phi kích hoạt cửa sổ trong"
 
-#: windows.cpp:1245
+#: windows.cpp:1248
 #, fuzzy
 msgid "Moving windows:"
 msgstr "Cửa sổ"
 
-#: windows.cpp:1252
+#: windows.cpp:1255
 #, fuzzy
 msgid "Dock windows:"
 msgstr "Cửa sổ"
 
-#: windows.cpp:1261
+#: windows.cpp:1264
 msgid "Treat 'keep above' windows as active ones"
 msgstr ""
 
-#: windows.cpp:1264
+#: windows.cpp:1267
 msgid "Disable ARGB windows (ignores window alpha maps, fixes gtk1 apps)"
 msgstr ""
 
-#: windows.cpp:1268
+#: windows.cpp:1271
 msgid "Opacity"
 msgstr ""
 
-#: windows.cpp:1274
+#: windows.cpp:1277
 #, fuzzy
 msgid "Use shadows"
 msgstr "Cuốn"
 
-#: windows.cpp:1282
+#: windows.cpp:1285
 #, fuzzy
 msgid "Active window size:"
 msgstr "Phi kích hoạt cửa sổ trong"
 
-#: windows.cpp:1289
+#: windows.cpp:1292
 #, fuzzy
 msgid "Inactive window size:"
 msgstr "Phi kích hoạt cửa sổ trong"
 
-#: windows.cpp:1296
+#: windows.cpp:1299
 #, fuzzy
 msgid "Dock window size:"
 msgstr "Cửa sổ"
 
-#: windows.cpp:1303
+#: windows.cpp:1306
 msgid "Vertical offset:"
 msgstr ""
 
-#: windows.cpp:1310
+#: windows.cpp:1313
 msgid "Horizontal offset:"
 msgstr ""
 
-#: windows.cpp:1317
+#: windows.cpp:1320
 #, fuzzy
 msgid "Shadow color:"
 msgstr "Cuốn"
 
-#: windows.cpp:1323
+#: windows.cpp:1326
 msgid "Remove shadows on move"
 msgstr ""
 
-#: windows.cpp:1325
+#: windows.cpp:1328
 msgid "Remove shadows on resize"
 msgstr ""
 
-#: windows.cpp:1328
+#: windows.cpp:1331
 #, fuzzy
 msgid "Shadows"
 msgstr "Cuốn"
 
-#: windows.cpp:1333
+#: windows.cpp:1336
 msgid "Fade-in windows (including popups)"
 msgstr ""
 
-#: windows.cpp:1334
+#: windows.cpp:1337
 msgid "Fade between opacity changes"
 msgstr ""
 
-#: windows.cpp:1347
+#: windows.cpp:1350
 msgid "Effects"
 msgstr ""
 
-#: windows.cpp:1349
+#: windows.cpp:1352
 msgid "Use translucency/shadows"
 msgstr ""
 
-#: windows.cpp:1602
+#: windows.cpp:1605
 msgid ""
 "<qt>Translucency support is new and may cause problems<br> "
 "including crashes (sometimes the translucency engine, seldom even X).</qt>"

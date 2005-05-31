@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kfmclient VERSION\n"
-"POT-Creation-Date: 2004-11-11 01:20+0100\n"
+"POT-Creation-Date: 2005-05-18 21:24+0200\n"
 "PO-Revision-Date: 2002-02-17 23:02GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <Vu.Hung@techviet.com>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -22,22 +22,26 @@ msgstr ""
 msgid "KDE tool for opening URLs from the command line"
 msgstr "Công cụ KDE để mở các URL từ dòng lệnh"
 
-#: kfmclient.cc:63
+#: kfmclient.cc:64
+msgid "Non interactive use: no message boxes"
+msgstr ""
+
+#: kfmclient.cc:65
 #, fuzzy
 msgid "Show available commands"
 msgstr "Hiển thị các lệnh dùng được ."
 
-#: kfmclient.cc:64
+#: kfmclient.cc:66
 #, fuzzy
 msgid "Command (see --commands)"
 msgstr "Lệnh ( xem --commands)."
 
-#: kfmclient.cc:65
+#: kfmclient.cc:67
 #, fuzzy
 msgid "Arguments for command"
 msgstr "Đối số cho lệnh ."
 
-#: kfmclient.cc:81
+#: kfmclient.cc:83
 msgid ""
 "\n"
 "Syntax:\n"
@@ -45,7 +49,7 @@ msgstr ""
 "\n"
 "Cú pháp:\n"
 
-#: kfmclient.cc:82
+#: kfmclient.cc:84
 msgid ""
 "  kfmclient openURL 'url' ['mimetype']\n"
 "            # Opens a window showing 'url'.\n"
@@ -61,7 +65,7 @@ msgstr ""
 "            #   If 'url' is omitted, $HOME is used instead.\n"
 "\n"
 
-#: kfmclient.cc:87
+#: kfmclient.cc:89
 #, fuzzy
 msgid ""
 "            # If 'mimetype' is specified, it will be used to determine the\n"
@@ -74,7 +78,7 @@ msgstr ""
 "            #   text/html for a web page, to make it appear faster\n"
 "\n"
 
-#: kfmclient.cc:91
+#: kfmclient.cc:93
 msgid ""
 "  kfmclient newTab 'url' ['mimetype']\n"
 "            # Same as above but opens a new tab with 'url' in an existing "
@@ -83,7 +87,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: kfmclient.cc:95
+#: kfmclient.cc:97
 msgid ""
 "  kfmclient openProfile 'profile' ['url']\n"
 "            # Opens a window using the given profile.\n"
@@ -98,18 +102,18 @@ msgstr ""
 "            #   'url' is an optional URL to open.\n"
 "\n"
 
-#: kfmclient.cc:100
-msgid ""
-"  kfmclient openProperties 'url'\n"
-"            # Opens a properties menu\n"
-"\n"
-msgstr ""
-"  kfmclient openProperties 'url'\n"
-"            # Opens a properties menu\n"
-"\n"
-
 #: kfmclient.cc:102
 msgid ""
+"  kfmclient openProperties 'url'\n"
+"            # Opens a properties menu\n"
+"\n"
+msgstr ""
+"  kfmclient openProperties 'url'\n"
+"            # Opens a properties menu\n"
+"\n"
+
+#: kfmclient.cc:104
+msgid ""
 "  kfmclient exec ['url' ['binding']]\n"
 "            # Tries to execute 'url'. 'url' may be a usual\n"
 "            #   URL, this URL will be opened. You may omit\n"
@@ -120,7 +124,7 @@ msgstr ""
 "            #   URL, this URL will be opened. You may omit\n"
 "            #   'binding'. In this case the default binding\n"
 
-#: kfmclient.cc:106
+#: kfmclient.cc:108
 msgid ""
 "            #   is tried. Of course URL may be the URL of a\n"
 "            #   document, or it may be a *.desktop file.\n"
@@ -128,7 +132,7 @@ msgstr ""
 "            #   is tried. Of course URL may be the URL of a\n"
 "            #   document, or it may be a *.desktop filẹ\n"
 
-#: kfmclient.cc:108
+#: kfmclient.cc:110
 msgid ""
 "            #   This way you could for example mount a device\n"
 "            #   by passing 'Mount default' as binding to \n"
@@ -140,7 +144,7 @@ msgstr ""
 "            #   'cdrom.desktop'\n"
 "\n"
 
-#: kfmclient.cc:111
+#: kfmclient.cc:113
 msgid ""
 "  kfmclient move 'src' 'dest'\n"
 "            # Moves the URL 'src' to 'dest'.\n"
@@ -150,7 +154,7 @@ msgstr ""
 "            # Moves the URL 'src' to 'dest'.\n"
 "            #   'src' may be a list of URLs.\n"
 
-#: kfmclient.cc:116
+#: kfmclient.cc:118
 #, fuzzy
 msgid ""
 "  kfmclient download ['src']\n"
@@ -164,7 +168,7 @@ msgstr ""
 "            #   'src' may be a list of URLs.\n"
 "\n"
 
-#: kfmclient.cc:120
+#: kfmclient.cc:122
 msgid ""
 "  kfmclient copy 'src' 'dest'\n"
 "            # Copies the URL 'src' to 'dest'.\n"
@@ -174,19 +178,19 @@ msgstr ""
 "  kfmclient copy 'src' 'dest'\n"
 "            # Copies the URL 'src' to 'dest'.\n"
 "            #   'src' may be a list of URLs.\n"
-"\n"
-
-#: kfmclient.cc:123
-msgid ""
-"  kfmclient sortDesktop\n"
-"            # Rearranges all icons on the desktop.\n"
-"\n"
-msgstr ""
-"  kfmclient sortDesktop\n"
-"            # Rearranges all icons on the desktop.\n"
 "\n"
 
 #: kfmclient.cc:125
+msgid ""
+"  kfmclient sortDesktop\n"
+"            # Rearranges all icons on the desktop.\n"
+"\n"
+msgstr ""
+"  kfmclient sortDesktop\n"
+"            # Rearranges all icons on the desktop.\n"
+"\n"
+
+#: kfmclient.cc:127
 #, fuzzy
 msgid ""
 "  kfmclient configure\n"
@@ -197,7 +201,7 @@ msgstr ""
 "            # Re-read konqueror's configuration.\n"
 "\n"
 
-#: kfmclient.cc:127
+#: kfmclient.cc:129
 msgid ""
 "  kfmclient configureDesktop\n"
 "            # Re-read kdesktop's configuration.\n"
@@ -207,7 +211,7 @@ msgstr ""
 "            # Re-read kdesktop's configuration.\n"
 "\n"
 
-#: kfmclient.cc:130
+#: kfmclient.cc:132
 #, fuzzy
 msgid ""
 "*** Examples:\n"
@@ -220,38 +224,38 @@ msgstr ""
 "             // Mounts the CDROM\n"
 "\n"
 
-#: kfmclient.cc:133
-msgid ""
-"  kfmclient exec file:/home/weis/data/test.html\n"
-"             // Opens the file with default binding\n"
-"\n"
-msgstr ""
-"  kfmclient exec file:/home/weis/data/test.html\n"
-"             // Opens the file with default binding\n"
-"\n"
-
 #: kfmclient.cc:135
 msgid ""
-"  kfmclient exec file:/home/weis/data/test.html Netscape\n"
-"             // Opens the file with netscape\n"
+"  kfmclient exec file:/home/weis/data/test.html\n"
+"             // Opens the file with default binding\n"
 "\n"
 msgstr ""
-"  kfmclient exec file:/home/weis/data/test.html Netscape\n"
-"             // Opens the file with netscape\n"
+"  kfmclient exec file:/home/weis/data/test.html\n"
+"             // Opens the file with default binding\n"
 "\n"
 
 #: kfmclient.cc:137
 msgid ""
-"  kfmclient exec ftp://localhost/\n"
-"             // Opens new window with URL\n"
+"  kfmclient exec file:/home/weis/data/test.html Netscape\n"
+"             // Opens the file with netscape\n"
 "\n"
 msgstr ""
-"  kfmclient exec ftp://localhost/\n"
-"             // Opens new window with URL\n"
+"  kfmclient exec file:/home/weis/data/test.html Netscape\n"
+"             // Opens the file with netscape\n"
 "\n"
 
 #: kfmclient.cc:139
 msgid ""
+"  kfmclient exec ftp://localhost/\n"
+"             // Opens new window with URL\n"
+"\n"
+msgstr ""
+"  kfmclient exec ftp://localhost/\n"
+"             // Opens new window with URL\n"
+"\n"
+
+#: kfmclient.cc:141
+msgid ""
 "  kfmclient exec file:/root/Desktop/emacs.desktop\n"
 "             // Starts emacs\n"
 "\n"
@@ -260,7 +264,7 @@ msgstr ""
 "             // Starts emacs\n"
 "\n"
 
-#: kfmclient.cc:141
+#: kfmclient.cc:143
 msgid ""
 "  kfmclient exec file:/root/Desktop/cdrom.desktop\n"
 "             // Opens the CD-ROM's mount directory\n"
@@ -270,7 +274,7 @@ msgstr ""
 "             // Opens the CD-ROM's mount directory\n"
 "\n"
 
-#: kfmclient.cc:143
+#: kfmclient.cc:145
 msgid ""
 "  kfmclient exec .\n"
 "             // Opens the current directory. Very convenient.\n"
@@ -280,29 +284,29 @@ msgstr ""
 "             // Opens the current directorỵ Very convenient.\n"
 "\n"
 
-#: kfmclient.cc:396
+#: kfmclient.cc:398
 msgid ""
 "Profile %1 not found\n"
 msgstr ""
 "Không tìm thấy hồ sơ %1 \n"
 
-#: kfmclient.cc:433
+#: kfmclient.cc:435
 msgid ""
 "Syntax Error: Not enough arguments\n"
 msgstr ""
 "Lỗi cú pháp : Không đủ đối số \n"
 
-#: kfmclient.cc:438
+#: kfmclient.cc:440
 msgid ""
 "Syntax Error: Too many arguments\n"
 msgstr ""
 "Lỗi cú pháp : Quá nhiều đối số \n"
 
-#: kfmclient.cc:553
+#: kfmclient.cc:560
 msgid "Unable to download from an invalid URL."
 msgstr ""
 
-#: kfmclient.cc:613
+#: kfmclient.cc:624
 msgid ""
 "Syntax Error: Unknown command '%1'\n"
 msgstr ""

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-05-25 08:15+0200\n"
+"POT-Creation-Date: 2005-06-03 01:25+0200\n"
 "PO-Revision-Date: 2002-08-10 21:23GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Vũ Hưng) <vuhung@fedu.uec.ac.jp, "
 "vuhung@kde.org>\n"
@@ -159,11 +159,7 @@ msgstr "Không đủ bộ nhớ để tải file DVI."
 msgid "Could not load the DVI-file."
 msgstr "Không thể tải file DVI."
 
-#: dviWidget.cpp:94
-msgid "line %1 of %2"
-msgstr ""
-
-#: dviwin.cpp:202
+#: dviRenderer.cpp:202
 msgid ""
 "<qt><strong>File corruption!</strong> KDVI had trouble interpreting your DVI "
 "file. Most likely this means that the DVI file is broken.</qt>"
@@ -171,16 +167,16 @@ msgstr ""
 "<qt><strong>File bị hỏng!</strong> KDVI có vấn đề với việc biên dịch file DVI "
 "của bạn . Rất có khả năng file DVI bị hỏng.</qt>"
 
-#: dviwin.cpp:204 dviwin.cpp:455
+#: dviRenderer.cpp:204 dviRenderer.cpp:455
 #, fuzzy
 msgid "DVI File Error"
 msgstr "Lỗi file DVI"
 
-#: dviwin.cpp:242
+#: dviRenderer.cpp:242
 msgid "KDVI: Information"
 msgstr "KDVI: Thông tin"
 
-#: dviwin.cpp:257
+#: dviRenderer.cpp:257
 msgid ""
 "<qt>This DVI file contains source file information. You may click into the text "
 "with the middle mouse button, and an editor will open the TeX-source file "
@@ -189,25 +185,25 @@ msgstr ""
 "<qt>File DVI này chứa thông tin về file nguồn. Bạn có thể  nhấn vào text bằng "
 "chuột giữa và một trình biên soạn TeX sẽ được mở tức thời.</qt>"
 
-#: dviwin.cpp:266
+#: dviRenderer.cpp:266
 msgid "Explain in more detail..."
 msgstr "Giải thích cụ thể hơn..."
 
-#: dviwin.cpp:295
+#: dviRenderer.cpp:295
 msgid "Embedding PostScript Files"
 msgstr ""
 
-#: dviwin.cpp:326
+#: dviRenderer.cpp:326
 msgid "Not all PostScript files could be embedded into your document."
 msgstr ""
 
-#: dviwin.cpp:329
+#: dviRenderer.cpp:329
 msgid ""
 "All external PostScript files were embedded into your document. You will "
 "probably want to save the DVI file now."
 msgstr ""
 
-#: dviwin.cpp:418
+#: dviRenderer.cpp:418
 #, fuzzy
 msgid ""
 "<qt><strong>File error.</strong> The specified file '%1' does not exist. KDVI "
@@ -216,12 +212,12 @@ msgstr ""
 "<qt><strong>Lỗi File !</strong> File đã chỉ định '%1' không tồn tại. KDVI đã "
 "thử thêm '.dvi' vào cuối</qt> "
 
-#: dviwin.cpp:420
+#: dviRenderer.cpp:420
 #, fuzzy
 msgid "File Error!"
 msgstr "Lỗi file!"
 
-#: dviwin.cpp:432
+#: dviRenderer.cpp:432
 msgid ""
 "<qt>Could not open file <nobr><strong>%1</strong></nobr> which has type <strong>"
 "%2</strong>. KDVI can only load DVI (.dvi) files.</qt>"
@@ -229,7 +225,7 @@ msgstr ""
 "<qt>Không thể mở file <nobr><strong>%1</strong></nobr> có kiểu <strong>"
 "%2</strong>. KDVI chỉ có thể mở file  DVI (.dvi) .</qt>"
 
-#: dviwin.cpp:453
+#: dviRenderer.cpp:453
 msgid ""
 "<qt>File corruption! KDVI had trouble interpreting your DVI file. Most likely "
 "this means that the DVI file is broken.</qt>"
@@ -237,7 +233,7 @@ msgstr ""
 "<qt>File hỏng! KDVI gặp vấn đề khi dịch file dvi của bạn Rất có khả năng file "
 "DVI bị hỏng.</qt>"
 
-#: dviwin.cpp:603
+#: dviRenderer.cpp:603
 msgid ""
 "<qt>You have asked KDVI to locate the place in the DVI file which corresponds "
 "to line %1 in the TeX-file <strong>%2</strong>. It seems, however, that the DVI "
@@ -249,12 +245,12 @@ msgstr ""
 "file TeX <strong> %2 </strong>. Có vẻ như là, tuy  file DVI không chứa thông "
 "tin cần thiết về file nguồn. Xin xem manul của KDVI để có thêm thông tin. "
 
-#: dviwin.cpp:608 dviwin.cpp:648
+#: dviRenderer.cpp:608 dviRenderer.cpp:648
 #, fuzzy
 msgid "Could Not Find Reference"
 msgstr "Không tìm thấy tham chiếu"
 
-#: dviwin.cpp:646
+#: dviRenderer.cpp:646
 msgid ""
 "<qt>KDVI was not able to locate the place in the DVI file which corresponds to "
 "line %1 in the TeX-file <strong>%2</strong>.</qt>"
@@ -262,19 +258,19 @@ msgstr ""
 "<qt>KDVI không thể định vị trí của file DVI tương ứng với dòng %1 trong file "
 "TeX < <strong>%2</strong>.</qt>"
 
-#: dviwin.cpp:718
+#: dviRenderer.cpp:718
 #, fuzzy
 msgid ""
 "The DVI-file refers to the TeX-file <strong>%1</strong> "
 "which could not be found."
 msgstr "Không tìm thầy fil  DVI mà file TeX tham khảo đến <strong>%1</strong>"
 
-#: dviwin.cpp:721
+#: dviRenderer.cpp:721
 #, fuzzy
 msgid "Could Not Find File"
 msgstr "Không tìm thấy file"
 
-#: dviwin.cpp:728
+#: dviRenderer.cpp:728
 #, fuzzy
 msgid ""
 "You have not yet specified an editor for inverse search. Please choose your "
@@ -285,17 +281,17 @@ msgstr ""
 "biên soạn(text) và bạn yêu thích trong <strong> hộp thoại tuỳ chọn DVI</strong>"
 ".Tìm tuỳ chọn này trong thực đơn <strong> Thiết lập</strong> "
 
-#: dviwin.cpp:733
+#: dviRenderer.cpp:733
 #, fuzzy
 msgid "Need to Specify Editor"
 msgstr "Cần phải  chỉ định trình biên soạn"
 
-#: dviwin.cpp:734
+#: dviRenderer.cpp:734
 #, fuzzy
 msgid "Use KDE's Editor Kate for Now"
 msgstr "Dùng Kate bây giờ"
 
-#: dviwin.cpp:766
+#: dviRenderer.cpp:766
 #, fuzzy
 msgid ""
 "<qt>The external program<br><br><tt><strong>%1</strong></tt><br/><br/>"
@@ -310,40 +306,40 @@ msgstr ""
 "tìm trong <strong>document info dialog</strong>  Ngoài ra, bạn cũng nên xem "
 "trang manual của KDVI.</qt>"
 
-#: dviwin.cpp:772
+#: dviRenderer.cpp:772
 msgid "Starting the editor..."
 msgstr "Khởi động trình biên soạn..."
 
-#: dviwin_draw.cpp:263
+#: dviRenderer_draw.cpp:263
 #, fuzzy
 msgid "The DVI code set a character of an unknown font."
 msgstr "Code DVI đặt 1 kí tự có font không biết"
 
-#: dviwin_draw.cpp:288 dviwin_prescan.cpp:605
+#: dviRenderer_draw.cpp:288 dviRenderer_prescan.cpp:605
 msgid "The DVI code referred to font #%1, which was not previously defined."
 msgstr "Mã nguồn DVI tham khảo đến font #%1 đã được định nghĩa."
 
-#: dviwin_draw.cpp:373
+#: dviRenderer_draw.cpp:373
 msgid "The stack was not empty when the EOP command was encountered."
 msgstr "Stack không rỗng khi lệnh EOP được thực hiện."
 
-#: dviwin_draw.cpp:385
+#: dviRenderer_draw.cpp:385
 msgid "The stack was empty when a POP command was encountered."
 msgstr "Stack không rỗng khi lệnh POP được thực hiện."
 
-#: dviwin_draw.cpp:509 dviwin_draw.cpp:518
+#: dviRenderer_draw.cpp:509 dviRenderer_draw.cpp:518
 msgid "The DVI code referred to a font which was not previously defined."
 msgstr "Mã nguồn DVI tham khảo đến font chưa được định nghĩa."
 
-#: dviwin_draw.cpp:554
+#: dviRenderer_draw.cpp:554
 msgid "An illegal command was encountered."
 msgstr "Gặp lệnh không hợp lệ"
 
-#: dviwin_draw.cpp:559
+#: dviRenderer_draw.cpp:559
 msgid "The unknown op-code %1 was encountered."
 msgstr "Gặp op-code chưa biết %1"
 
-#: dviwin_export.cpp:80
+#: dviRenderer_export.cpp:80
 #, fuzzy
 msgid ""
 "KDVI could not locate the program 'dvipdfm' on your computer. That program is "
@@ -362,34 +358,34 @@ msgstr ""
 "trình 'dvipdfm'.\n"
 "Gợi ý cho các sysadmin: KDVI dùng biến môi trường PATH để tìm chương trình "
 
-#: dviwin_export.cpp:95
+#: dviRenderer_export.cpp:95
 msgid "*.pdf|Portable Document Format (*.pdf)"
 msgstr ""
 
-#: dviwin_export.cpp:95 dviwin_export.cpp:194
+#: dviRenderer_export.cpp:95 dviRenderer_export.cpp:194
 #: kdvi_multipage_texthandling.cpp:71
 msgid "Export File As"
 msgstr "Xuất file thành"
 
-#: dviwin_export.cpp:100 dviwin_export.cpp:199 kdvi_multipage.cpp:152
-#: kdvi_multipage_texthandling.cpp:76
+#: dviRenderer_export.cpp:100 dviRenderer_export.cpp:199
+#: kdvi_multipage.cpp:152 kdvi_multipage_texthandling.cpp:76
 #, fuzzy
 msgid ""
 "The file %1\n"
 "exists. Do you want to overwrite that file?"
 msgstr "File %1 đã tồn tại. Tôi có thể viết đè không?"
 
-#: dviwin_export.cpp:101 dviwin_export.cpp:200 kdvi_multipage.cpp:153
-#: kdvi_multipage_texthandling.cpp:77
+#: dviRenderer_export.cpp:101 dviRenderer_export.cpp:200
+#: kdvi_multipage.cpp:153 kdvi_multipage_texthandling.cpp:77
 #, fuzzy
 msgid "Overwrite File"
 msgstr "Viết đè"
 
-#: dviwin_export.cpp:108
+#: dviRenderer_export.cpp:108
 msgid "Using dvipdfm to export the file to PDF"
 msgstr "Dùng dvipdfm để hoán chuyển file thành PDF"
 
-#: dviwin_export.cpp:110
+#: dviRenderer_export.cpp:110
 msgid ""
 "KDVI is currently using the external program 'dvipdfm' to convert your DVI-file "
 "to PDF. Sometimes that can take a while because dvipdfm needs to generate its "
@@ -399,19 +395,19 @@ msgstr ""
 "PDF. Đôi lúc nó sẽ khá mất thời gian nếu dvipdfm cần sinh nhiều font bitmap. "
 "Hãy kiên nhẫn ;)"
 
-#: dviwin_export.cpp:114
+#: dviRenderer_export.cpp:114
 msgid "Waiting for dvipdfm to finish..."
 msgstr "Đợi đến khi dvipdfm kết thúc..."
 
-#: dviwin_export.cpp:115
+#: dviRenderer_export.cpp:115
 msgid "dvipdfm progress dialog"
 msgstr ""
 
-#: dviwin_export.cpp:117 dviwin_export.cpp:220
+#: dviRenderer_export.cpp:117 dviRenderer_export.cpp:220
 msgid "Please be patient"
 msgstr "Hãy kiên nhẫn."
 
-#: dviwin_export.cpp:133
+#: dviRenderer_export.cpp:133
 msgid ""
 "<qt>The external program 'dvipdf', which was used to export the file, reported "
 "an error. You might wish to look at the <strong>document info dialog</strong> "
@@ -420,11 +416,11 @@ msgstr ""
 "<qt> 'dvipdf' báo về lỗi. Bán có thể xem  <strong>document info dialog</strong> "
 "để có thêm thông tin cụ thể hơn về lỗi.</qt>"
 
-#: dviwin_export.cpp:136
+#: dviRenderer_export.cpp:136
 msgid "Export: %1 to PDF"
 msgstr "Xuất: %1 thành PDF"
 
-#: dviwin_export.cpp:177
+#: dviRenderer_export.cpp:177
 msgid ""
 "<qt><P>This DVI file refers to external graphic files which are not in "
 "PostScript format, and cannot be handled by the <strong>dvips</strong> "
@@ -436,20 +432,20 @@ msgid ""
 "the missing functionality might later be added.</p></qt>"
 msgstr ""
 
-#: dviwin_export.cpp:184
+#: dviRenderer_export.cpp:184
 msgid "Functionality Unavailable"
 msgstr ""
 
-#: dviwin_export.cpp:194
+#: dviRenderer_export.cpp:194
 #, fuzzy
 msgid "*.ps|PostScript (*.ps)"
 msgstr "PostScript"
 
-#: dviwin_export.cpp:211
+#: dviRenderer_export.cpp:211
 msgid "Using dvips to export the file to PostScript"
 msgstr "Dùng dvips để xuất file PostScript"
 
-#: dviwin_export.cpp:213
+#: dviRenderer_export.cpp:213
 msgid ""
 "KDVI is currently using the external program 'dvips' to convert your DVI-file "
 "to PostScript. Sometimes that can take a while because dvips needs to generate "
@@ -458,15 +454,15 @@ msgstr ""
 "KDVI hiện tại dùng 'dvips' để hoán chuyển file dvi thành ps. Đôi khi việc làm "
 "này sẽ rất mất thời gian nếu file dvi dùng font bitmap. Hãy kiên nhẫn."
 
-#: dviwin_export.cpp:217
+#: dviRenderer_export.cpp:217
 msgid "Waiting for dvips to finish..."
 msgstr "Đợi cho đến khi dvips kết thúc..."
 
-#: dviwin_export.cpp:218
+#: dviRenderer_export.cpp:218
 msgid "dvips progress dialog"
 msgstr ""
 
-#: dviwin_export.cpp:296
+#: dviRenderer_export.cpp:296
 msgid ""
 "<qt>The external program 'dvips', which was used to export the file, reported "
 "an error. You might wish to look at the <strong>document info dialog</strong> "
@@ -475,23 +471,27 @@ msgstr ""
 "<qt>Chương trình ngoài 'dvips' trả về lỗi, Bạn nên  xem  <strong>"
 "document info dialog </strong>  ở File-Menu để có thông tin chi tiết hơnt.</qt>"
 
-#: dviwin_export.cpp:299
+#: dviRenderer_export.cpp:299
 msgid "Export: %1 to PostScript"
 msgstr "Xuất %1 thành PostScript"
 
-#: dviwin_prescan.cpp:79
+#: dviRenderer_prescan.cpp:79
 #, c-format
 msgid "Embedding %1"
 msgstr ""
 
-#: dviwin_prescan.cpp:93
+#: dviRenderer_prescan.cpp:93
 #, fuzzy
 msgid ""
 "Page %1: The PostScript file <strong>%2</strong> could not be found.<br>"
 msgstr "<qt> Không tìm thấy chuỗi <strong> %1  </strong></qt>"
 
-#: dviwin_prescan.cpp:245
+#: dviRenderer_prescan.cpp:245
 msgid "The papersize data '%1' could not be parsed."
+msgstr ""
+
+#: dviWidget.cpp:94
+msgid "line %1 of %2"
 msgstr ""
 
 #: fontpool.cpp:45

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-06-17 01:30+0200\n"
+"POT-Creation-Date: 2005-06-18 01:30+0200\n"
 "PO-Revision-Date: 2002-05-27 00:44+0900\n"
 "Last-Translator: Nguyen Hung Vu (Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -78,31 +78,32 @@ msgstr ""
 msgid " Grid Size: "
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:188 kudesigner_lib/reportheader.cpp:48
+#: kudesigner/kudesigner_view.cpp:188 kudesigner_lib/reportheader.cpp:49
 msgid "Report Header"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:190 kudesigner_lib/reportfooter.cpp:50
+#: kudesigner/kudesigner_view.cpp:190 kudesigner_lib/reportfooter.cpp:51
 msgid "Report Footer"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/pageheader.cpp:49
+#: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/pageheader.cpp:50
 msgid "Page Header"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/pagefooter.cpp:48
+#: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/pagefooter.cpp:49
 msgid "Page Footer"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/detailheader.cpp:42
+#: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/detailheader.cpp:43
 msgid "Detail Header"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/detail.cpp:44
+#: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/detail.cpp:45
+#: kudesigner_lib/detailbase.cpp:29
 msgid "Detail"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailfooter.cpp:42
+#: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailfooter.cpp:43
 msgid "Detail Footer"
 msgstr ""
 
@@ -114,11 +115,11 @@ msgstr ""
 msgid "Label"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:210
+#: kudesigner/kudesigner_view.cpp:210 kudesigner_lib/field.cpp:41
 msgid "Field"
 msgstr ""
 
-#: kudesigner/kudesigner_view.cpp:213
+#: kudesigner/kudesigner_view.cpp:213 kudesigner_lib/specialfield.cpp:37
 msgid "Special Field"
 msgstr ""
 
@@ -127,6 +128,7 @@ msgid "Calculated Field"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:219 kudesigner_lib/label.cpp:67
+#: kudesigner_lib/line.cpp:39
 msgid "Line"
 msgstr ""
 
@@ -138,202 +140,247 @@ msgstr ""
 msgid "Grid Size"
 msgstr ""
 
-#: kudesigner_lib/calcfield.cpp:39
-msgid "Count"
-msgstr ""
-
 #: kudesigner_lib/calcfield.cpp:40
-msgid "Sum"
+msgid "Calculation"
 msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:41
-msgid "Average"
+msgid "Count"
 msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:42
-msgid "Variance"
+msgid "Sum"
 msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:43
-msgid "StandardDeviation"
+msgid "Average"
 msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:44
-msgid "Calculation type"
+msgid "Variance"
 msgstr ""
 
-#: kudesigner_lib/commdefs.cpp:35
-msgid "Insert Label"
+#: kudesigner_lib/calcfield.cpp:45
+msgid "StandardDeviation"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:46 kudesigner_lib/field.cpp:49
+#: kudesigner_lib/specialfield.cpp:41
+msgid "Type"
+msgstr ""
+
+#: kudesigner_lib/calcfield.cpp:46
+msgid "Calculation Type"
 msgstr ""
 
 #: kudesigner_lib/commdefs.cpp:37
-msgid "Insert Field"
+msgid "Insert Label"
 msgstr ""
 
 #: kudesigner_lib/commdefs.cpp:39
-msgid "Insert Special"
+msgid "Insert Field"
 msgstr ""
 
 #: kudesigner_lib/commdefs.cpp:41
-msgid "Insert Calculated Field"
+msgid "Insert Special"
 msgstr ""
 
 #: kudesigner_lib/commdefs.cpp:43
+msgid "Insert Calculated Field"
+msgstr ""
+
+#: kudesigner_lib/commdefs.cpp:45
 msgid "Insert Line"
 msgstr ""
 
-#: kudesigner_lib/commdefs.cpp:46
+#: kudesigner_lib/commdefs.cpp:48
 msgid "Insert Report Item"
 msgstr ""
 
-#: kudesigner_lib/detail.cpp:37 kudesigner_lib/detailfooter.cpp:37
-#: kudesigner_lib/detailheader.cpp:37
+#: kudesigner_lib/detail.cpp:38 kudesigner_lib/detailfooter.cpp:38
+#: kudesigner_lib/detailheader.cpp:38
 msgid "Level"
 msgstr ""
 
-#: kudesigner_lib/detail.cpp:37 kudesigner_lib/detailfooter.cpp:37
-#: kudesigner_lib/detailheader.cpp:37
+#: kudesigner_lib/detail.cpp:38 kudesigner_lib/detailfooter.cpp:38
+#: kudesigner_lib/detailheader.cpp:38
 msgid "Detail Level"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:43
-msgid "String"
+#: kudesigner_lib/field.cpp:42
+msgid "Name"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:42
+msgid "Field Name"
 msgstr ""
 
 #: kudesigner_lib/field.cpp:44
-msgid "Integer"
+msgid "String"
 msgstr ""
 
 #: kudesigner_lib/field.cpp:45
+msgid "Integer"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:46
 msgid "Float"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:46 kudesigner_lib/specialfield.cpp:36
-#: kudesigner_lib/specialfield.cpp:60
+#: kudesigner_lib/field.cpp:47 kudesigner_lib/specialfield.cpp:39
+#: kudesigner_lib/specialfield.cpp:63
 msgid "Date"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:47
+#: kudesigner_lib/field.cpp:48 kudesigner_lib/field.cpp:72
 msgid "Currency"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:51 kudesigner_lib/specialfield.cpp:41
+#: kudesigner_lib/field.cpp:52 kudesigner_lib/specialfield.cpp:44
 msgid "m/d/y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:52 kudesigner_lib/specialfield.cpp:42
+#: kudesigner_lib/field.cpp:53 kudesigner_lib/specialfield.cpp:45
 msgid "m-d-y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:53 kudesigner_lib/specialfield.cpp:43
+#: kudesigner_lib/field.cpp:54 kudesigner_lib/specialfield.cpp:46
 msgid "mm/dd/y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:54 kudesigner_lib/specialfield.cpp:44
+#: kudesigner_lib/field.cpp:55 kudesigner_lib/specialfield.cpp:47
 msgid "mm-dd-y"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:55 kudesigner_lib/specialfield.cpp:45
+#: kudesigner_lib/field.cpp:56 kudesigner_lib/specialfield.cpp:48
 msgid "m/d/yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:56 kudesigner_lib/specialfield.cpp:46
+#: kudesigner_lib/field.cpp:57 kudesigner_lib/specialfield.cpp:49
 msgid "m-d-yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:57 kudesigner_lib/specialfield.cpp:47
+#: kudesigner_lib/field.cpp:58 kudesigner_lib/specialfield.cpp:50
 msgid "mm/dd/yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:58 kudesigner_lib/specialfield.cpp:48
+#: kudesigner_lib/field.cpp:59 kudesigner_lib/specialfield.cpp:51
 msgid "mm-dd-yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:59 kudesigner_lib/specialfield.cpp:49
+#: kudesigner_lib/field.cpp:60 kudesigner_lib/specialfield.cpp:52
 msgid "yyyy/m/d"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:60 kudesigner_lib/specialfield.cpp:50
+#: kudesigner_lib/field.cpp:61 kudesigner_lib/specialfield.cpp:53
 msgid "yyyy-m-d"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:61 kudesigner_lib/specialfield.cpp:51
+#: kudesigner_lib/field.cpp:62 kudesigner_lib/specialfield.cpp:54
 msgid "dd.mm.yy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:62 kudesigner_lib/specialfield.cpp:52
+#: kudesigner_lib/field.cpp:63 kudesigner_lib/specialfield.cpp:55
 msgid "dd.mm.yyyy"
 msgstr ""
 
-#: kudesigner_lib/field.cpp:98 kudesigner_lib/field.cpp:101
+#: kudesigner_lib/field.cpp:66 kudesigner_lib/specialfield.cpp:57
+msgid "Date Format"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:69
+msgid "Precision"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:69
+msgid "Number of Digits After Comma"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:72
+msgid "Currency Symbol"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:74
+msgid "Negative Value Color"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:76
+msgid "Comma Separator"
+msgstr ""
+
+#: kudesigner_lib/field.cpp:101 kudesigner_lib/field.cpp:105
 msgid "Change Field"
 msgstr ""
 
-#: kudesigner_lib/kugartemplate.cpp:94
-msgid "Page Size"
+#: kudesigner_lib/kugartemplate.cpp:65
+msgid "Document Settings"
 msgstr ""
 
 #: kudesigner_lib/kugartemplate.cpp:99
-msgid "Page Orientation"
-msgstr ""
-
-#: kudesigner_lib/kugartemplate.cpp:102
-msgid "Top Margin"
-msgstr ""
-
-#: kudesigner_lib/kugartemplate.cpp:103
-msgid "Bottom Margin"
+msgid "Page Size"
 msgstr ""
 
 #: kudesigner_lib/kugartemplate.cpp:104
+msgid "Page Orientation"
+msgstr ""
+
+#: kudesigner_lib/kugartemplate.cpp:107
+msgid "Top Margin"
+msgstr ""
+
+#: kudesigner_lib/kugartemplate.cpp:108
+msgid "Bottom Margin"
+msgstr ""
+
+#: kudesigner_lib/kugartemplate.cpp:109
 msgid "Left Margin"
 msgstr ""
 
-#: kudesigner_lib/kugartemplate.cpp:105
+#: kudesigner_lib/kugartemplate.cpp:110
 msgid "Right Margin"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:46
+#: kudesigner_lib/label.cpp:47
 msgid "Text"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:46
+#: kudesigner_lib/label.cpp:47
 msgid "Text to Display"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:48
-msgid "Background Color"
-msgstr ""
-
-#: kudesigner_lib/label.cpp:50
-msgid "Foreground Color"
-msgstr ""
-
-#: kudesigner_lib/label.cpp:52
+#: kudesigner_lib/label.cpp:49
 msgid "Geometry"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:53
+#: kudesigner_lib/label.cpp:50
 msgid "X"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:53
+#: kudesigner_lib/label.cpp:50
 msgid "X value"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:55
+#: kudesigner_lib/label.cpp:52
 msgid "Y"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:55
+#: kudesigner_lib/label.cpp:52
 msgid "Y value"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:58
+msgid "Background Color"
+msgstr ""
+
+#: kudesigner_lib/label.cpp:60
+msgid "Foreground Color"
 msgstr ""
 
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/label.cpp:67
 msgid "Border Style"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:63 kudesigner_lib/line.cpp:46
+#: kudesigner_lib/label.cpp:63 kudesigner_lib/line.cpp:48
 msgid "Color"
 msgstr ""
 
@@ -358,10 +405,6 @@ msgid "Draw Left Border"
 msgstr ""
 
 #: kudesigner_lib/label.cpp:73
-msgid "Rightr"
-msgstr ""
-
-#: kudesigner_lib/label.cpp:73
 msgid "Draw Right Border"
 msgstr ""
 
@@ -377,115 +420,115 @@ msgstr ""
 msgid "Size"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:83
+#: kudesigner_lib/label.cpp:81
 msgid "Light"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:84
+#: kudesigner_lib/label.cpp:82
 msgid "Normal"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:85
+#: kudesigner_lib/label.cpp:83
 msgid "DemiBold"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:86
+#: kudesigner_lib/label.cpp:84
 msgid "Bold"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:87
+#: kudesigner_lib/label.cpp:85
 msgid "Black"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:88
+#: kudesigner_lib/label.cpp:86
 msgid "Weight"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:91
+#: kudesigner_lib/label.cpp:89
 msgid "Regular"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:99
+#: kudesigner_lib/label.cpp:97
 msgid "HAlignment"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:104
+#: kudesigner_lib/label.cpp:102
 msgid "Middle"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:106
+#: kudesigner_lib/label.cpp:104
 msgid "VAlignment"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:109
+#: kudesigner_lib/label.cpp:107
 msgid "False"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:110
+#: kudesigner_lib/label.cpp:108
 msgid "True"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:111
+#: kudesigner_lib/label.cpp:109
 msgid "Word wrap"
 msgstr ""
 
-#: kudesigner_lib/label.cpp:238 kudesigner_lib/label.cpp:241
+#: kudesigner_lib/label.cpp:255 kudesigner_lib/label.cpp:259
 msgid "Change Label"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:38
+#: kudesigner_lib/line.cpp:40
 msgid "X1"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:40
+#: kudesigner_lib/line.cpp:42
 msgid "Y1"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:42
+#: kudesigner_lib/line.cpp:44
 msgid "X2"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:44
+#: kudesigner_lib/line.cpp:46
 msgid "Y2"
 msgstr ""
 
-#: kudesigner_lib/line.cpp:50
+#: kudesigner_lib/line.cpp:52
 msgid "Line Style"
-msgstr ""
-
-#: kudesigner_lib/pagefooter.cpp:39 kudesigner_lib/pageheader.cpp:39
-#: kudesigner_lib/reportfooter.cpp:40 kudesigner_lib/reportheader.cpp:39
-msgid "First Page"
 msgstr ""
 
 #: kudesigner_lib/pagefooter.cpp:40 kudesigner_lib/pageheader.cpp:40
 #: kudesigner_lib/reportfooter.cpp:41 kudesigner_lib/reportheader.cpp:40
-msgid "Every Page"
+msgid "First Page"
 msgstr ""
 
 #: kudesigner_lib/pagefooter.cpp:41 kudesigner_lib/pageheader.cpp:41
 #: kudesigner_lib/reportfooter.cpp:42 kudesigner_lib/reportheader.cpp:41
+msgid "Every Page"
+msgstr ""
+
+#: kudesigner_lib/pagefooter.cpp:42 kudesigner_lib/pageheader.cpp:42
+#: kudesigner_lib/reportfooter.cpp:43 kudesigner_lib/reportheader.cpp:42
 msgid "Last Page"
 msgstr ""
 
-#: kudesigner_lib/pagefooter.cpp:43 kudesigner_lib/pageheader.cpp:43
-#: kudesigner_lib/reportfooter.cpp:44 kudesigner_lib/reportheader.cpp:43
+#: kudesigner_lib/pagefooter.cpp:44 kudesigner_lib/pageheader.cpp:44
+#: kudesigner_lib/reportfooter.cpp:45 kudesigner_lib/reportheader.cpp:44
 msgid "Print Frequency"
 msgstr ""
 
-#: kudesigner_lib/specialfield.cpp:37
+#: kudesigner_lib/section.cpp:29
+msgid "Section"
+msgstr ""
+
+#: kudesigner_lib/specialfield.cpp:40
 msgid "PageNumber"
 msgstr ""
 
-#: kudesigner_lib/specialfield.cpp:38
+#: kudesigner_lib/specialfield.cpp:41
 msgid "Special Field Type"
 msgstr ""
 
-#: kudesigner_lib/specialfield.cpp:54
-msgid "Date format"
-msgstr ""
-
-#: kudesigner_lib/specialfield.cpp:60
+#: kudesigner_lib/specialfield.cpp:63
 msgid "PageNo"
 msgstr ""
 

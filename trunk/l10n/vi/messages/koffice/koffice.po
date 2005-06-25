@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-06-23 01:31+0200\n"
+"POT-Creation-Date: 2005-06-25 01:30+0200\n"
 "PO-Revision-Date: 2002-06-08 00:18+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -325,7 +325,7 @@ msgid "Symbol Names"
 msgstr "Tên biểu tượng"
 
 #: kformula/kformuladocument.cc:646 kotext/koSearchDia.cc:629
-#: kotext/kotextformat.cc:1560
+#: kotext/kotextformat.cc:1561
 msgid "Normal"
 msgstr ""
 
@@ -2786,7 +2786,7 @@ msgid "Autoinclude"
 msgstr ""
 
 #: kotext/koAutoFormatDia.cc:180 kotext/koAutoFormatDia.cc:1162
-#: kotext/koFontDia.cc:1157
+#: kotext/koFontDia.cc:53
 #, fuzzy
 msgid "&Reset"
 msgstr "&Có "
@@ -3139,113 +3139,31 @@ msgstr ""
 msgid "Name already exists! Please choose another name"
 msgstr ""
 
-#: kotext/koFontDia.cc:56
-msgid ""
-"_: Test string for shadow dialog\n"
-"KOffice"
-msgstr ""
-
-#: kotext/koFontDia.cc:80
-msgid "Shadow"
-msgstr ""
-
-#: kotext/koFontDia.cc:85 kotext/koParagDia.cc:1307
+#: kotext/kfontdialog_local.cpp:752 kotext/koFontDia.cc:50
 #, fuzzy
-msgid "Co&lor:"
-msgstr "Chọn"
+msgid "Select Font"
+msgstr "Text đã &chọn"
 
-#: kotext/koFontDia.cc:94
-msgid "&Distance (pt):"
-msgstr ""
-
-#: kotext/koFontDia.cc:99
-msgid "pt"
-msgstr "pt"
-
-#: kotext/koFontDia.cc:104
+#: kotext/koFontDia.cc:71 kotext/koStylist.cc:683
 #, fuzzy
-msgid "Di&rection:"
+msgid "Highlighting"
+msgstr "Syntax highlighting"
+
+#: kotext/koFontDia.cc:83 kotext/koStylist.cc:682
+#, fuzzy
+msgid "Decoration"
 msgstr ""
 "\n"
 " Định hướng:"
 
-#: kotext/koFontDia.cc:289
-msgid "S&hadow"
-msgstr ""
-
-#: kotext/koFontDia.cc:392
+#: kotext/koFontDia.cc:93 kotext/koStylist.cc:684
 #, fuzzy
-msgid "Colors"
-msgstr "Chọn"
+msgid "Layout"
+msgstr "Kiểu Trang"
 
-#: kotext/koFontDia.cc:395 kotext/koFontDia.cc:437
-#, fuzzy
-msgid "Change Co&lor..."
-msgstr "Màu dòng khác ..."
-
-#: kotext/koFontDia.cc:398
-#, fuzzy
-msgid "Change Bac&kground Color..."
-msgstr "Màu dòng khác ..."
-
-#: kotext/koFontDia.cc:413
-msgid "Font &Effects"
+#: kotext/koFontDia.cc:101 kotext/koStylist.cc:685
+msgid "Language"
 msgstr ""
-
-#: kotext/koFontDia.cc:423
-#, fuzzy
-msgid "&Underlining:"
-msgstr "Đường Head:"
-
-#: kotext/koFontDia.cc:441
-#, fuzzy
-msgid "&Strikethrough:"
-msgstr "Phố:"
-
-#: kotext/koFontDia.cc:453
-msgid "&Word by word"
-msgstr ""
-
-#: kotext/koFontDia.cc:456 kotext/kovariable.cc:2295
-msgid "Position"
-msgstr ""
-
-#: kotext/koFontDia.cc:464
-msgid "Su&perscript"
-msgstr ""
-
-#: kotext/koFontDia.cc:467
-msgid "Su&bscript"
-msgstr ""
-
-#: kotext/koFontDia.cc:470
-msgid "Relative &size:"
-msgstr ""
-
-#: kotext/koFontDia.cc:482
-msgid "Offse&t from baseline:"
-msgstr ""
-
-#: kotext/koFontDia.cc:503
-msgid "A&ttribute:"
-msgstr ""
-
-#: kotext/koFontDia.cc:513
-msgid "Capitalization"
-msgstr ""
-
-#: kotext/koFontDia.cc:522
-msgid "La&nguage:"
-msgstr ""
-
-#: kotext/koFontDia.cc:546
-msgid "Auto h&yphenation"
-msgstr ""
-
-#: kotext/koFontDia.cc:1133 kotext/koFontDia.cc:1146
-#, fuzzy
-msgid "Select Font"
-msgstr "Text đã &chọn"
 
 #: kotext/koParagDia.cc:56
 #, fuzzy
@@ -3481,6 +3399,11 @@ msgstr "Kiểu Trang"
 msgid "St&yle:"
 msgstr "Đầu đề:"
 
+#: kotext/koParagDia.cc:1307
+#, fuzzy
+msgid "Co&lor:"
+msgstr "Chọn"
+
 #: kotext/koParagDia.cc:1333
 msgid "Merge with next paragraph"
 msgstr ""
@@ -3594,7 +3517,7 @@ msgstr "Thay thế Text"
 msgid "Family:"
 msgstr ""
 
-#: kotext/koSearchDia.cc:554
+#: kotext/kfontdialog_local.cpp:188 kotext/koSearchDia.cc:554
 msgid "Size:"
 msgstr ""
 
@@ -3737,6 +3660,14 @@ msgstr "Thêm kí tự vào kí hiệu"
 msgid "Change Variable Format"
 msgstr "Định dạng trang"
 
+#: kotext/kofontdiapreview.cc:40 kotext/kofontdiapreview.cc:41
+msgid "The quick brown dog jumps over the lazy cat."
+msgstr ""
+
+#: kotext/kofontdiapreview.cc:196
+msgid "Font too large for the preview pane"
+msgstr ""
+
 #: kotext/koimportstyledia.cc:34
 #, fuzzy
 msgid "Import Styles"
@@ -3761,43 +3692,43 @@ msgstr ""
 msgid "Numbering Style for %1"
 msgstr ""
 
-#: kotext/kotextformat.cc:1539
+#: kotext/kotextformat.cc:1540
 msgid ""
 "_: Underline Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1540 kotext/kotextformat.cc:1551
-msgid "Single"
-msgstr ""
-
 #: kotext/kotextformat.cc:1541 kotext/kotextformat.cc:1552
-msgid "Simple Bold"
+msgid "Single"
 msgstr ""
 
 #: kotext/kotextformat.cc:1542 kotext/kotextformat.cc:1553
 msgid "Double"
 msgstr ""
 
-#: kotext/kotextformat.cc:1543
+#: kotext/kotextformat.cc:1543 kotext/kotextformat.cc:1554
+msgid "Simple Bold"
+msgstr ""
+
+#: kotext/kotextformat.cc:1544
 msgid "Wave"
 msgstr ""
 
-#: kotext/kotextformat.cc:1550
+#: kotext/kotextformat.cc:1551
 msgid ""
 "_: Strikeout Style\n"
 "None"
 msgstr ""
 
-#: kotext/kotextformat.cc:1561
+#: kotext/kotextformat.cc:1562
 msgid "Uppercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1562
+#: kotext/kotextformat.cc:1563
 msgid "Lowercase"
 msgstr ""
 
-#: kotext/kotextformat.cc:1563
+#: kotext/kotextformat.cc:1564
 msgid "Small Caps"
 msgstr ""
 
@@ -4178,6 +4109,10 @@ msgstr "Đơn vị:"
 #, fuzzy
 msgid "Field"
 msgstr "Tìm kiếm "
+
+#: kotext/kovariable.cc:2295
+msgid "Position"
+msgstr ""
 
 #: kotext/kovariable.cc:2296
 #, fuzzy
@@ -4650,6 +4585,119 @@ msgstr ""
 msgid "Name"
 msgstr "Tên: "
 
+#: kotext/kfontdialog_local.cpp:106
+msgid "Here you can choose the font to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:118
+#, fuzzy
+msgid "Requested Font"
+msgstr "Text đã &chọn"
+
+#: kotext/kfontdialog_local.cpp:141
+#, fuzzy
+msgid "Change font family?"
+msgstr "Thêm kí tự vào kí hiệu"
+
+#: kotext/kfontdialog_local.cpp:143
+msgid "Enable this checkbox to change the font family settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:149
+#, fuzzy
+msgid "Font:"
+msgstr "Nước :"
+
+#: kotext/kfontdialog_local.cpp:156
+#, fuzzy
+msgid "Font style"
+msgstr "Nhập trình lọc thất bại"
+
+#: kotext/kfontdialog_local.cpp:160
+#, fuzzy
+msgid "Change font style?"
+msgstr "Thêm kí tự vào kí hiệu"
+
+#: kotext/kfontdialog_local.cpp:162
+msgid "Enable this checkbox to change the font style settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:168
+#, fuzzy
+msgid "Font style:"
+msgstr "Nhập trình lọc thất bại"
+
+#: kotext/kfontdialog_local.cpp:176
+#, fuzzy
+msgid "Size"
+msgstr "Xem trước Trang"
+
+#: kotext/kfontdialog_local.cpp:180
+#, fuzzy
+msgid "Change font size?"
+msgstr "Viền Trang"
+
+#: kotext/kfontdialog_local.cpp:182
+msgid "Enable this checkbox to change the font size settings."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:204
+msgid "Here you can choose the font family to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:226
+msgid "Here you can choose the font style to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:229 kotext/kfontdialog_local.cpp:484
+#: kotext/kfontdialog_local.cpp:486 kotext/kfontdialog_local.cpp:495
+#: kotext/kfontdialog_local.cpp:496
+msgid "Regular"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:231
+msgid "Bold"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:232
+msgid "Bold Italic"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:249
+#, fuzzy
+msgid "Relative"
+msgstr "Thay thế bằng"
+
+#: kotext/kfontdialog_local.cpp:251
+msgid "Font size<br><i>fixed</i> or <i>relative</i><br>to environment"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:253
+msgid ""
+"Here you can switch between fixed font size and font size to be calculated "
+"dynamically and adjusted to changing environment (e.g. widget dimensions, paper "
+"size)."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:277
+msgid "Here you can choose the font size to be used."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:300
+msgid "The Quick Brown Fox Jumps Over The Lazy Dog"
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:305
+msgid ""
+"This sample text illustrates the current settings. You may edit it to test "
+"special characters."
+msgstr ""
+
+#: kotext/kfontdialog_local.cpp:314 kotext/kfontdialog_local.cpp:324
+#, fuzzy
+msgid "Actual Font"
+msgstr "Text đã &chọn"
+
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
@@ -4661,6 +4709,35 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#~ msgid "pt"
+#~ msgstr "pt"
+
+#, fuzzy
+#~ msgid "Di&rection:"
+#~ msgstr ""
+#~ "\n"
+#~ " Định hướng:"
+
+#, fuzzy
+#~ msgid "Colors"
+#~ msgstr "Chọn"
+
+#, fuzzy
+#~ msgid "Change Co&lor..."
+#~ msgstr "Màu dòng khác ..."
+
+#, fuzzy
+#~ msgid "Change Bac&kground Color..."
+#~ msgstr "Màu dòng khác ..."
+
+#, fuzzy
+#~ msgid "&Underlining:"
+#~ msgstr "Đường Head:"
+
+#, fuzzy
+#~ msgid "&Strikethrough:"
+#~ msgstr "Phố:"
 
 #, fuzzy
 #~ msgid "Select Picture"
@@ -4767,10 +4844,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Replacement:"
 #~ msgstr "&Thay thế Text"
-
-#, fuzzy
-#~ msgid "&Replace"
-#~ msgstr "Thay thế bằng"
 
 #, fuzzy
 #~ msgid "Replace &All"

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
-"POT-Creation-Date: 2005-07-11 01:33+0200\n"
+"POT-Creation-Date: 2005-07-12 01:33+0200\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1125,7 +1125,7 @@ msgid "dy:"
 msgstr ""
 
 #. i18n: file ./ui/wdgnewimage.ui line 16
-#: core/kis_doc.cc:792 ui/kis_dlg_create_img.cc:53 rc.cpp:120
+#: core/kis_doc.cc:799 ui/kis_dlg_create_img.cc:53 rc.cpp:120
 #, no-c-format
 msgid "New Image"
 msgstr "Ảnh mới"
@@ -3469,7 +3469,7 @@ msgstr "Mật độ"
 msgid "Rename Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_doc.cc:238
+#: core/kis_doc.cc:243
 #, fuzzy, c-format
 msgid "Image %1"
 msgstr "ảnh %1"
@@ -3729,7 +3729,7 @@ msgstr "vàng"
 msgid "Copy Black"
 msgstr "xanh da trời"
 
-#: core/kis_composite_op.cc:134 tools/kis_tool_eraser.cc:39
+#: core/kis_composite_op.cc:134
 msgid "Erase"
 msgstr ""
 
@@ -4018,7 +4018,7 @@ msgstr ""
 msgid "Anti-aliasing gradient..."
 msgstr ""
 
-#: core/paintop/kis_paintop.h:81
+#: core/paintop/kis_paintop.h:83
 msgid "Abstract PaintOp"
 msgstr ""
 
@@ -4108,21 +4108,6 @@ msgstr "Công cụ &di chuyển"
 msgid "&Pan"
 msgstr "Gradient"
 
-#: tools/kis_tool_pen.cc:42
-#, fuzzy
-msgid "Pen"
-msgstr "Pattern"
-
-#: tools/kis_tool_pen.cc:64
-#, fuzzy
-msgid "&Pen"
-msgstr "Pattern"
-
-#: tools/kis_tool_airbrush.h:70
-#, fuzzy
-msgid "Airbrush tool"
-msgstr "Công cụ &Airbrush"
-
 #: tools/kis_tool_ellipse.cc:42 tools/kis_tool_ellipse.cc:129
 #, fuzzy
 msgid "Ellipse"
@@ -4143,12 +4128,12 @@ msgstr "Trình chọn &màu"
 msgid "Text tool"
 msgstr "Công cụ &di chuyển"
 
-#: tools/kis_tool_brush.cc:42
+#: tools/kis_tool_brush.cc:43
 #, fuzzy
 msgid "Brush"
 msgstr "Chổi"
 
-#: tools/kis_tool_brush.cc:72
+#: tools/kis_tool_brush.cc:102
 #, fuzzy
 msgid "&Brush"
 msgstr "Chổi"
@@ -4162,16 +4147,6 @@ msgstr "Layer"
 #, fuzzy
 msgid "&Line"
 msgstr "Layer"
-
-#: tools/kis_tool_airbrush.cc:44
-#, fuzzy
-msgid "Airbrush"
-msgstr "Chổi"
-
-#: tools/kis_tool_airbrush.cc:88
-#, fuzzy
-msgid "&Airbrush"
-msgstr "Chổi"
 
 #: tools/kis_tool_zoom.h:74
 #, fuzzy
@@ -4205,11 +4180,6 @@ msgstr "Hình chữ nhật"
 #, fuzzy
 msgid "&Rectangle"
 msgstr "Hình chữ nhật"
-
-#: tools/kis_tool_pen.h:63
-#, fuzzy
-msgid "Pen tool"
-msgstr "Công cụ &bút vẽ"
 
 #: tools/kis_tool_fill.cc:82
 msgid "Floodfill"
@@ -4281,16 +4251,6 @@ msgstr "Phương thức"
 #, fuzzy
 msgid "&Stamp (Pattern)"
 msgstr "Công cụ &Stamp (Pattern)"
-
-#: tools/kis_tool_eraser.cc:62
-#, fuzzy
-msgid "&Eraser"
-msgstr "Chọn"
-
-#: tools/kis_tool_eraser.h:60
-#, fuzzy
-msgid "Eraser tool"
-msgstr "Công cụ &xoá"
 
 #: tools/kis_tool_duplicate.cc:43
 msgid "Duplicate"
@@ -4365,7 +4325,7 @@ msgstr "Ngưỡng vẽ :"
 msgid "&Gradient"
 msgstr "Gradients"
 
-#: tools/kis_tool_brush.h:58
+#: tools/kis_tool_brush.h:69
 #, fuzzy
 msgid "Brush tool"
 msgstr "Công cụ &chổi"
@@ -4426,8 +4386,8 @@ msgstr "Phương thức"
 
 #: modules/colorspace_rgb/kis_strategy_colorspace_rgb.cc:47
 #, fuzzy
-msgid "RGB/Alpha"
-msgstr "RGB + kênh &alpha "
+msgid "RGB/Alpha (8 bits/channel)"
+msgstr "Thêm kênh"
 
 #: modules/colorspace_rgb/kis_strategy_colorspace_rgb.cc:49
 #: modules/colorspace_rgb_u16/kis_strategy_colorspace_rgb_u16.cc:49
@@ -4558,6 +4518,7 @@ msgid "&Wet Brush"
 msgstr "Chọn"
 
 #: modules/colorspace_wet/kis_colorspace_wet.cc:121
+#: modules/colorspace_wet/wet_plugin.cc:101
 msgid "Watercolors"
 msgstr ""
 
@@ -4635,20 +4596,15 @@ msgstr ""
 msgid "Adsorbed Paper Height"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:101
-#, fuzzy
-msgid "Paints"
-msgstr "Gradient"
-
-#: modules/colorspace_wet/wet_plugin.cc:110
+#: modules/colorspace_wet/wet_plugin.cc:111
 msgid "Wetness Visualisation"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:114
+#: modules/colorspace_wet/wet_plugin.cc:115
 msgid "Initialize Texture"
 msgstr ""
 
-#: modules/colorspace_wet/wet_plugin.cc:119
+#: modules/colorspace_wet/wet_plugin.cc:120
 msgid "Dry the paint (25 times)"
 msgstr ""
 
@@ -4661,7 +4617,7 @@ msgid "Watercolor physics simulation filter"
 msgstr ""
 
 #: modules/colorspace_rgb_u16/kis_strategy_colorspace_rgb_u16.cc:47
-msgid "RGB/Alpha (16-bit integer)"
+msgid "RGB/Alpha (16-bit integer/channel)"
 msgstr ""
 
 #: modules/colorspace_ws/filter/kis_ws_engine_filter.h:56
@@ -5465,6 +5421,46 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~ msgid "Pen"
+#~ msgstr "Pattern"
+
+#, fuzzy
+#~ msgid "&Pen"
+#~ msgstr "Pattern"
+
+#, fuzzy
+#~ msgid "Airbrush tool"
+#~ msgstr "Công cụ &Airbrush"
+
+#, fuzzy
+#~ msgid "Airbrush"
+#~ msgstr "Chổi"
+
+#, fuzzy
+#~ msgid "&Airbrush"
+#~ msgstr "Chổi"
+
+#, fuzzy
+#~ msgid "Pen tool"
+#~ msgstr "Công cụ &bút vẽ"
+
+#, fuzzy
+#~ msgid "&Eraser"
+#~ msgstr "Chọn"
+
+#, fuzzy
+#~ msgid "Eraser tool"
+#~ msgstr "Công cụ &xoá"
+
+#, fuzzy
+#~ msgid "RGB/Alpha"
+#~ msgstr "RGB + kênh &alpha "
+
+#, fuzzy
+#~ msgid "Paints"
+#~ msgstr "Gradient"
+
+#, fuzzy
 #~ msgid "8 Bits/Channel"
 #~ msgstr "Thêm kênh"
 
@@ -5859,10 +5855,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Color mode:"
 #~ msgstr "Phương thức màu"
-
-#, fuzzy
-#~ msgid "&Alpha channel"
-#~ msgstr "Thêm kênh"
 
 #, fuzzy
 #~ msgid "Background:"

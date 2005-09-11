@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
-"POT-Creation-Date: 2005-09-08 02:50+0200\n"
+"POT-Creation-Date: 2005-09-10 22:17+0200\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -998,7 +998,7 @@ msgid "Navigation"
 msgstr "Navigation"
 
 #. i18n: file krita.rc line 147
-#: rc.cpp:42 rc.cpp:1602 rc.cpp:1650
+#: rc.cpp:42 rc.cpp:1602 rc.cpp:1653
 #, fuzzy, no-c-format
 msgid "Transformation Tools"
 msgstr "Công cụ &xoá"
@@ -2248,7 +2248,7 @@ msgid "End Y:"
 msgstr ""
 
 #. i18n: file ./plugins/tool_crop/wdg_tool_crop.ui line 201
-#: rc.cpp:761 rc.cpp:1614 rc.cpp:1635 rc.cpp:1644 rc.cpp:1653
+#: rc.cpp:761 rc.cpp:1614 rc.cpp:1635 rc.cpp:1644 rc.cpp:1656
 #, fuzzy, no-c-format
 msgid "Image"
 msgstr "ảnh "
@@ -2828,7 +2828,7 @@ msgstr "Chọn"
 
 #. i18n: file ./plugins/rotateimage/wdg_rotateimage.ui line 16
 #: plugins/rotateimage/dlg_rotateimage.cc:44
-#: plugins/rotateimage/rotateimage.cc:95 rc.cpp:1239
+#: plugins/rotateimage/rotateimage.cc:98 rc.cpp:1239
 #, fuzzy, no-c-format
 msgid "Rotate Image"
 msgstr "Đổi tên ảnh"
@@ -3329,11 +3329,11 @@ msgstr "Layer"
 msgid "Select"
 msgstr "Chọn"
 
-#. i18n: file ./plugins/rotateimage/rotateimage.rc line 11
-#: rc.cpp:1647
+#. i18n: file ./plugins/rotateimage/rotateimage.rc line 5
+#: rc.cpp:1647 rc.cpp:1650
 #, fuzzy, no-c-format
-msgid "&Rotate Layer"
-msgstr "Gỡ bỏ Layer"
+msgid "&Rotate"
+msgstr "Quay &90"
 
 #: ui/kis_layerbox.cc:68
 #, fuzzy, c-format
@@ -3371,14 +3371,14 @@ msgid "Lower %1"
 msgstr "Làm thấp"
 
 #: ui/kis_layerbox.cc:83
-#, fuzzy, c-format
-msgid "Foremost %1"
-msgstr "Trước nhất"
+#, c-format
+msgid "Top %1"
+msgstr ""
 
 #: ui/kis_layerbox.cc:84
-#, fuzzy, c-format
-msgid "Hindmost %1"
-msgstr "Hindmost"
+#, c-format
+msgid "Bottom %1"
+msgstr ""
 
 #: ui/kis_layerbox.cc:90
 msgid "Visible"
@@ -3941,12 +3941,12 @@ msgstr "&Link/Unlink layer..."
 msgid "&Hide/Show Layer"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_image.cc:1291 core/kis_view.cc:478
+#: core/kis_image.cc:1292 core/kis_view.cc:478
 #, fuzzy
 msgid "Raise Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_image.cc:1313 core/kis_view.cc:479
+#: core/kis_image.cc:1314 core/kis_view.cc:479
 #, fuzzy
 msgid "Lower Layer"
 msgstr "Cho layer hiện tại xuống dưới"
@@ -4057,7 +4057,7 @@ msgstr "Layer &kế..."
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
-#: core/kis_image.cc:1455 core/kis_view.cc:1307 core/kis_view.cc:1308
+#: core/kis_image.cc:1456 core/kis_view.cc:1307 core/kis_view.cc:1308
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Đổi tên ảnh"
@@ -4104,7 +4104,7 @@ msgstr "Công cụ &trình lọc"
 msgid "Resize Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_image.cc:185 core/kis_image.cc:818
+#: core/kis_image.cc:185 core/kis_image.cc:819
 #, fuzzy
 msgid "Convert Image Type"
 msgstr "&Chèn ảnh như là layer..."
@@ -4131,27 +4131,27 @@ msgstr "layer %1"
 msgid "background"
 msgstr "nền"
 
-#: core/kis_image.cc:1333
+#: core/kis_image.cc:1334
 #, fuzzy
 msgid "Layer Top"
 msgstr "Layer"
 
-#: core/kis_image.cc:1355
+#: core/kis_image.cc:1356
 #, fuzzy
 msgid "Layer Bottom"
 msgstr "Nhập ảnh"
 
-#: core/kis_image.cc:1484
+#: core/kis_image.cc:1485
 #, fuzzy
 msgid "Merge Visible Layers"
 msgstr "Trọn mọi layer &nhìn thấy"
 
-#: core/kis_image.cc:1513
+#: core/kis_image.cc:1514
 #, fuzzy
 msgid "Merge Linked Layers"
 msgstr "Trộn mọi layer liên kết"
 
-#: core/kis_image.cc:1543
+#: core/kis_image.cc:1544
 #, fuzzy
 msgid "&Merge Layers"
 msgstr "Trộn Layer"
@@ -5377,20 +5377,35 @@ msgstr ""
 msgid "&Rotate Image..."
 msgstr "Đổi tên ảnh"
 
+#: plugins/rotateimage/rotateimage.cc:72
+#, fuzzy
+msgid "&Rotate Image &90"
+msgstr "Gỡ bỏ Layer"
+
 #: plugins/rotateimage/rotateimage.cc:73
+#, fuzzy
+msgid "&Rotate Image &180"
+msgstr "Gỡ bỏ Layer"
+
+#: plugins/rotateimage/rotateimage.cc:74
+#, fuzzy
+msgid "&Rotate Image &270"
+msgstr "Gỡ bỏ Layer"
+
+#: plugins/rotateimage/rotateimage.cc:76
 #, fuzzy
 msgid "&Rotate Layer..."
 msgstr "Gỡ bỏ Layer"
 
-#: plugins/rotateimage/rotateimage.cc:75
+#: plugins/rotateimage/rotateimage.cc:78
 msgid "Rotate &180"
 msgstr "Quay &180"
 
-#: plugins/rotateimage/rotateimage.cc:76
+#: plugins/rotateimage/rotateimage.cc:79
 msgid "Rotate &270"
 msgstr "Quay &270"
 
-#: plugins/rotateimage/rotateimage.cc:77
+#: plugins/rotateimage/rotateimage.cc:80
 msgid "Rotate &90"
 msgstr "Quay &90"
 
@@ -5661,6 +5676,18 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "&Rotate Layer"
+#~ msgstr "Gỡ bỏ Layer"
+
+#, fuzzy
+#~ msgid "Foremost %1"
+#~ msgstr "Trước nhất"
+
+#, fuzzy
+#~ msgid "Hindmost %1"
+#~ msgstr "Hindmost"
 
 #, fuzzy
 #~ msgid "Directory for temporary files:"
@@ -6207,10 +6234,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "selectioneraser"
 #~ msgstr "Chọn"
-
-#, fuzzy
-#~ msgid "&Rotate Image"
-#~ msgstr "Gỡ bỏ Layer"
 
 #, fuzzy
 #~ msgid "Rotate &Custom..."

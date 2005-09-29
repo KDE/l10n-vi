@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
-"POT-Creation-Date: 2005-09-28 02:35+0200\n"
+"POT-Creation-Date: 2005-09-29 02:37+0200\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1016,8 +1016,8 @@ msgid "Brushes and stuff"
 msgstr ""
 
 #. i18n: file krita_readonly.rc line 18
-#: core/kis_view.cc:308 rc.cpp:57 rc.cpp:762 rc.cpp:1510 rc.cpp:1618
-#: rc.cpp:1639
+#: core/kis_view.cc:308 kritapart/kis_view.cc:308 rc.cpp:57 rc.cpp:762
+#: rc.cpp:1510 rc.cpp:1618 rc.cpp:1639
 #, no-c-format
 msgid "Layer"
 msgstr "Layer"
@@ -1233,7 +1233,8 @@ msgid "dy:"
 msgstr ""
 
 #. i18n: file ./ui/wdgnewimage.ui line 16
-#: core/kis_doc.cc:804 ui/kis_dlg_create_img.cc:52 rc.cpp:171
+#: core/kis_doc.cc:804 kritapart/kis_doc.cc:804 ui/kis_dlg_create_img.cc:52
+#: rc.cpp:171
 #, no-c-format
 msgid "New Image"
 msgstr "Ảnh mới"
@@ -1290,7 +1291,7 @@ msgstr "Trình chọn &màu"
 #: tools/kis_tool_gradient.cc:254 ui/kis_dlg_apply_profile.cc:83
 #: ui/kis_dlg_preferences.cc:163 ui/kis_dlg_preferences.cc:181
 #: ui/kis_dlg_preferences.cc:197 rc.cpp:201 rc.cpp:336 rc.cpp:339 rc.cpp:342
-#: rc.cpp:497
+#: rc.cpp:500
 #, no-c-format
 msgid "None"
 msgstr "None"
@@ -1447,7 +1448,7 @@ msgid "Sphere Dec."
 msgstr ""
 
 #. i18n: file ./ui/wdgautogradient.ui line 342
-#: core/kis_view.cc:2696 rc.cpp:300 rc.cpp:948
+#: core/kis_view.cc:2696 kritapart/kis_view.cc:2696 rc.cpp:300 rc.cpp:948
 #, no-c-format
 msgid "RGB"
 msgstr "RGB"
@@ -1521,7 +1522,7 @@ msgid "The icm profile for your calibrated printer"
 msgstr ""
 
 #. i18n: file ./ui/wdgcolorsettings.ui line 161
-#: rc.cpp:345 rc.cpp:503 rc.cpp:789
+#: rc.cpp:345 rc.cpp:506 rc.cpp:789
 #, no-c-format
 msgid "&Rendering Intent"
 msgstr ""
@@ -1776,20 +1777,26 @@ msgid ""
 "going on."
 msgstr ""
 
-#. i18n: file ./ui/wdgapplyprofile.ui line 32
+#. i18n: file ./ui/kis_matrix_widget.ui line 16
 #: rc.cpp:491
+#, no-c-format
+msgid "Matrix Widget"
+msgstr ""
+
+#. i18n: file ./ui/wdgapplyprofile.ui line 32
+#: rc.cpp:494
 #, no-c-format
 msgid "Apply Profile"
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 43
-#: rc.cpp:494
+#: rc.cpp:497
 #, no-c-format
 msgid "&Profiles:"
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 72
-#: rc.cpp:500
+#: rc.cpp:503
 #, no-c-format
 msgid ""
 "The image data you want to paste does not have an ICM profile associated with "
@@ -1798,19 +1805,19 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 89
-#: rc.cpp:507
+#: rc.cpp:510
 #, no-c-format
 msgid "Rendering intent determines the bias in the color conversion."
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 100
-#: rc.cpp:510 rc.cpp:806
+#: rc.cpp:513 rc.cpp:806
 #, no-c-format
 msgid "Relative colorimetric"
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 103
-#: rc.cpp:513
+#: rc.cpp:516
 #, no-c-format
 msgid ""
 "Within and outside gamut; same as Absolute Colorimetric. White point changed to "
@@ -1819,13 +1826,13 @@ msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 111
 #: modules/wetsticky/kis_wet_sticky_colorspace.cc:74
-#: sdk/kis_composite_op.cc:123 rc.cpp:516 rc.cpp:819
+#: sdk/kis_composite_op.cc:123 rc.cpp:519 rc.cpp:819
 #, fuzzy, no-c-format
 msgid "Saturation"
 msgstr "Bão hoà"
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 114
-#: rc.cpp:519
+#: rc.cpp:522
 #, no-c-format
 msgid ""
 "Hue and saturation maintained with lightness sacrificed to maintain saturation. "
@@ -1834,13 +1841,13 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 122
-#: rc.cpp:522 rc.cpp:837
+#: rc.cpp:525 rc.cpp:837
 #, no-c-format
 msgid "Absolute colorimetric"
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 125
-#: rc.cpp:525
+#: rc.cpp:528
 #, no-c-format
 msgid ""
 "Within the destination device gamut; hue, lightness and saturation are "
@@ -1850,24 +1857,18 @@ msgid ""
 msgstr ""
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 133
-#: rc.cpp:528 rc.cpp:793
+#: rc.cpp:531 rc.cpp:793
 #, fuzzy, no-c-format
 msgid "Perceptual"
 msgstr "Cho layer hiện tại lên trên"
 
 #. i18n: file ./ui/wdgapplyprofile.ui line 136
-#: rc.cpp:531
+#: rc.cpp:534
 #, no-c-format
 msgid ""
 "Hue hopefully maintained (but not required), lightness and saturation "
 "sacrificed to maintain the perceived color. White point changed to result in "
 "neutral grays. Intended for images."
-msgstr ""
-
-#. i18n: file ./ui/widgets/kis_matrix_widget.ui line 16
-#: rc.cpp:534
-#, no-c-format
-msgid "Matrix Widget"
 msgstr ""
 
 #. i18n: file ./ui/wdgselectionoptions.ui line 38
@@ -1883,7 +1884,7 @@ msgid "Subtract"
 msgstr "Trừ"
 
 #. i18n: file ./ui/wdgbirdeye.ui line 24
-#: core/kis_view.cc:2687 rc.cpp:546
+#: core/kis_view.cc:2687 kritapart/kis_view.cc:2687 rc.cpp:546
 #, fuzzy, no-c-format
 msgid "Overview"
 msgstr "Phủ"
@@ -2369,7 +2370,8 @@ msgid "Shapes"
 msgstr "Độ sắc:"
 
 #. i18n: file ./plugins/performancetest/wdg_perftest.ui line 104
-#: core/kis_view.cc:212 core/kis_view.cc:309 rc.cpp:885
+#: core/kis_view.cc:212 core/kis_view.cc:309 kritapart/kis_view.cc:212
+#: kritapart/kis_view.cc:309 rc.cpp:885
 #, no-c-format
 msgid "Layers"
 msgstr "Layers"
@@ -2788,7 +2790,7 @@ msgid "Out of Gamut"
 msgstr ""
 
 #. i18n: file ./plugins/colorrange/wdg_colorrange.ui line 101
-#: core/kis_selection_manager.cc:141 core/kis_selection_manager.cc:652
+#: core/kis_selection_manager.cc:141 core/kis_selection_manager.cc:655
 #: rc.cpp:1215
 #, no-c-format
 msgid "&Invert"
@@ -2819,7 +2821,7 @@ msgid "&Select"
 msgstr "Chọn"
 
 #. i18n: file ./plugins/colorrange/wdg_colorrange.ui line 226
-#: core/kis_selection_manager.cc:532 rc.cpp:1231
+#: core/kis_selection_manager.cc:535 rc.cpp:1231
 #, fuzzy, no-c-format
 msgid "&Deselect"
 msgstr "Chọn"
@@ -3419,7 +3421,8 @@ msgstr "Tạo layer mới"
 msgid "Canvas"
 msgstr "Tải lại Canvas"
 
-#: core/kis_view.cc:491 ui/kis_dlg_image_properties.cc:49
+#: core/kis_view.cc:491 kritapart/kis_view.cc:491
+#: ui/kis_dlg_image_properties.cc:49
 #, fuzzy
 msgid "Image Properties"
 msgstr "Tính chất Layer..."
@@ -3476,10 +3479,30 @@ msgstr "Thiết lập"
 msgid "Painter's Toolchest"
 msgstr "Công cụ vẽ"
 
-#: core/kis_view.cc:517 ui/kis_dlg_layer_properties.cc:48
+#: core/kis_view.cc:517 kritapart/kis_view.cc:517
+#: ui/kis_dlg_layer_properties.cc:48
 #, fuzzy
 msgid "Layer Properties"
 msgstr "Tính chất Layer..."
+
+#: ui/kis_gradient_slider_widget.cc:42
+msgid "Split Segment"
+msgstr ""
+
+#: ui/kis_gradient_slider_widget.cc:43
+#, fuzzy
+msgid "Duplicate Segment"
+msgstr "Công cụ &trình lọc"
+
+#: ui/kis_gradient_slider_widget.cc:44
+#, fuzzy
+msgid "Mirror Segment"
+msgstr "tím"
+
+#: ui/kis_gradient_slider_widget.cc:45
+#, fuzzy
+msgid "Remove Segment"
+msgstr "Bỏ chọn"
 
 #: ui/kis_dlg_new_layer.cc:47
 #, fuzzy
@@ -3556,25 +3579,6 @@ msgstr "Chổi"
 #: ui/kis_controlframe.cc:266
 msgid "Patterns"
 msgstr "Patterns"
-
-#: ui/widgets/kis_gradient_slider_widget.cc:42
-msgid "Split Segment"
-msgstr ""
-
-#: ui/widgets/kis_gradient_slider_widget.cc:43
-#, fuzzy
-msgid "Duplicate Segment"
-msgstr "Công cụ &trình lọc"
-
-#: ui/widgets/kis_gradient_slider_widget.cc:44
-#, fuzzy
-msgid "Mirror Segment"
-msgstr "tím"
-
-#: ui/widgets/kis_gradient_slider_widget.cc:45
-#, fuzzy
-msgid "Remove Segment"
-msgstr "Bỏ chọn"
 
 #: ui/kis_dlg_transform.cc:40
 #, fuzzy
@@ -3757,12 +3761,12 @@ msgstr "Cho layer hiện tại xuống dưới"
 msgid "Layer Opacity"
 msgstr "Mật độ"
 
-#: core/kis_doc.cc:85
+#: core/kis_doc.cc:85 kritapart/kis_doc.cc:85
 #, fuzzy
 msgid "Rename Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_doc.cc:243
+#: core/kis_doc.cc:243 kritapart/kis_doc.cc:243
 #, fuzzy, c-format
 msgid "Image %1"
 msgstr "ảnh %1"
@@ -3801,6 +3805,7 @@ msgid "Blur"
 msgstr "Xanh nước biển"
 
 #: core/kis_filter_manager.cc:84 core/kis_view.cc:211
+#: kritapart/kis_view.cc:211
 #, fuzzy
 msgid "Colors"
 msgstr "Màu"
@@ -3835,7 +3840,7 @@ msgstr "Layer"
 msgid "Apply filter again"
 msgstr ""
 
-#: core/kis_aboutdata.h:31 core/kis_view.cc:274
+#: core/kis_aboutdata.h:31 core/kis_view.cc:274 kritapart/kis_view.cc:274
 msgid "Krita"
 msgstr "Krita"
 
@@ -3945,239 +3950,243 @@ msgstr ""
 msgid "Z"
 msgstr ""
 
-#: core/kis_view.cc:210
+#: core/kis_view.cc:210 kritapart/kis_view.cc:210
 msgid "Control box"
 msgstr ""
 
-#: core/kis_view.cc:377
+#: core/kis_view.cc:377 kritapart/kis_view.cc:377
 msgid "Zoom %1:1"
 msgstr ""
 
-#: core/kis_view.cc:379
+#: core/kis_view.cc:379 kritapart/kis_view.cc:379
 #, c-format
 msgid "Zoom 1:%1"
 msgstr ""
 
-#: core/kis_view.cc:398
+#: core/kis_view.cc:398 kritapart/kis_view.cc:398
 #, fuzzy
 msgid "Selection Active"
 msgstr "Chọn"
 
-#: core/kis_view.cc:404
+#: core/kis_view.cc:404 kritapart/kis_view.cc:404
 #, fuzzy
 msgid "No selection"
 msgstr "Bỏ chọn"
 
-#: core/kis_view.cc:417
+#: core/kis_view.cc:417 kritapart/kis_view.cc:417
 msgid "No profile"
 msgstr ""
 
-#: core/kis_view.cc:493
+#: core/kis_view.cc:493 kritapart/kis_view.cc:493
 #, fuzzy
 msgid "Resize Image to Size of Current Layer"
 msgstr "Gỡ bỏ Layer hiện tại"
 
-#: core/kis_view.cc:498
+#: core/kis_view.cc:498 kritapart/kis_view.cc:498
 msgid "Actual Pixels"
 msgstr ""
 
-#: core/kis_view.cc:503
+#: core/kis_view.cc:503 kritapart/kis_view.cc:503
 #, fuzzy
 msgid "&Add Layer..."
 msgstr "&Thêm Layer..."
 
-#: core/kis_view.cc:505
+#: core/kis_view.cc:505 kritapart/kis_view.cc:505
 #, fuzzy
 msgid "&Object layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:509
+#: core/kis_view.cc:509 kritapart/kis_view.cc:509
 #, fuzzy
 msgid "&Remove Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:510
+#: core/kis_view.cc:510 kritapart/kis_view.cc:510
 msgid "Duplicate Layer"
 msgstr ""
 
-#: core/kis_view.cc:511
+#: core/kis_view.cc:511 kritapart/kis_view.cc:511
 #, fuzzy
 msgid "&Link/Unlink Layer"
 msgstr "&Link/Unlink layer..."
 
-#: core/kis_view.cc:512
+#: core/kis_view.cc:512 kritapart/kis_view.cc:512
 #, fuzzy
 msgid "&Hide/Show Layer"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_image.cc:1261 core/kis_view.cc:513
+#: core/kis_image.cc:1261 core/kis_view.cc:513 kritapart/kis_view.cc:513
 #, fuzzy
 msgid "Raise Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_image.cc:1283 core/kis_view.cc:514
+#: core/kis_image.cc:1283 core/kis_view.cc:514 kritapart/kis_view.cc:514
 #, fuzzy
 msgid "Lower Layer"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:515
+#: core/kis_view.cc:515 kritapart/kis_view.cc:515
 msgid "Layer to Top"
 msgstr ""
 
-#: core/kis_view.cc:516
+#: core/kis_view.cc:516 kritapart/kis_view.cc:516
 msgid "Layer to Bottom"
 msgstr ""
 
-#: core/kis_view.cc:518
+#: core/kis_view.cc:518 kritapart/kis_view.cc:518
 #, fuzzy
 msgid "I&nsert Image as Layer..."
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:519
+#: core/kis_view.cc:519 kritapart/kis_view.cc:519
 #, fuzzy
 msgid "Save Layer as Image..."
 msgstr "Cất Layer thành ảnh..."
 
-#: core/kis_view.cc:520
+#: core/kis_view.cc:520 kritapart/kis_view.cc:520
 #, fuzzy
 msgid "Flip on &X Axis"
 msgstr "Đối xứng gương &X"
 
-#: core/kis_view.cc:521
+#: core/kis_view.cc:521 kritapart/kis_view.cc:521
 #, fuzzy
 msgid "Flip on &Y Axis"
 msgstr "Đối xứng gương &Y"
 
-#: core/kis_view.cc:524
+#: core/kis_view.cc:524 kritapart/kis_view.cc:524
 #, fuzzy
 msgid "Merge &Visible Layers"
 msgstr "Trọn mọi layer &nhìn thấy"
 
-#: core/kis_view.cc:525
+#: core/kis_view.cc:525 kritapart/kis_view.cc:525
 #, fuzzy
 msgid "Merge &Linked Layers"
 msgstr "Trộn mọi layer liên kết"
 
-#: core/kis_view.cc:526
+#: core/kis_view.cc:526 kritapart/kis_view.cc:526
 #, fuzzy
 msgid "&Merge Layer"
 msgstr "Trộn Layer"
 
-#: core/kis_view.cc:527
+#: core/kis_view.cc:527 kritapart/kis_view.cc:527
 #, fuzzy
 msgid "Merge &All Layers"
 msgstr "Trộn &mọi layer"
 
-#: core/kis_view.cc:532
+#: core/kis_view.cc:532 kritapart/kis_view.cc:532
 msgid "Show Rulers"
 msgstr ""
 
-#: core/kis_view.cc:534
+#: core/kis_view.cc:534 kritapart/kis_view.cc:534
 #, fuzzy
 msgid "Hide Rulers"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: core/kis_view.cc:535
+#: core/kis_view.cc:535 kritapart/kis_view.cc:535
 msgid "Shows or hides rulers."
 msgstr ""
 
-#: core/kis_view.cc:536
+#: core/kis_view.cc:536 kritapart/kis_view.cc:536
 msgid ""
 "The rulers show the position and width of pages and of frames and can be used "
 "to position tabulators among others."
 "<p>Uncheck this to disable the rulers from being displayed."
 msgstr ""
 
-#: core/kis_view.cc:1065
+#: core/kis_view.cc:1065 kritapart/kis_view.cc:1065
 #, fuzzy
 msgid "Export Layer"
 msgstr "Xuất ảnh"
 
-#: core/kis_view.cc:1111
+#: core/kis_view.cc:1111 kritapart/kis_view.cc:1111
 msgid "Import Image"
 msgstr "Nhập ảnh"
 
-#: core/kis_view.cc:1176
+#: core/kis_view.cc:1176 kritapart/kis_view.cc:1176
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:1198
+#: core/kis_view.cc:1198 kritapart/kis_view.cc:1198
 #, fuzzy
 msgid "Mirror Layer Y"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: core/kis_view.cc:1221
+#: core/kis_view.cc:1221 kritapart/kis_view.cc:1221
 #, fuzzy
 msgid "Scale Layer"
 msgstr "Layer &kế..."
 
-#: core/kis_view.cc:1246
+#: core/kis_view.cc:1246 kritapart/kis_view.cc:1246
 #, fuzzy
 msgid "Rotate Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: core/kis_view.cc:1272
+#: core/kis_view.cc:1272 kritapart/kis_view.cc:1272
 #, fuzzy
 msgid "Shear layer"
 msgstr "Layer &kế..."
 
-#: core/kis_view.cc:1296
+#: core/kis_view.cc:1296 kritapart/kis_view.cc:1296
 msgid "The image contains hidden layers that will be lost."
 msgstr ""
 
 #: core/kis_image.cc:1425 core/kis_view.cc:1297 core/kis_view.cc:1298
+#: kritapart/kis_view.cc:1297 kritapart/kis_view.cc:1298
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Đổi tên ảnh"
 
-#: core/kis_view.cc:1799
+#: core/kis_view.cc:1799 kritapart/kis_view.cc:1799
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:1801
+#: core/kis_view.cc:1801 kritapart/kis_view.cc:1801
 msgid "Open in New Document"
 msgstr ""
 
-#: core/kis_view.cc:1805
+#: core/kis_view.cc:1805 kritapart/kis_view.cc:1805
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: core/kis_view.cc:1807
+#: core/kis_view.cc:1807 kritapart/kis_view.cc:1807
 msgid "Open in New Documents"
 msgstr ""
 
-#: core/kis_view.cc:1883
+#: core/kis_view.cc:1883 kritapart/kis_view.cc:1883
 #, fuzzy
 msgid "Property changes"
 msgstr "Trình đổi màu"
 
-#: core/kis_view.cc:1913 core/kis_view.cc:1986
+#: core/kis_view.cc:1913 core/kis_view.cc:1986 kritapart/kis_view.cc:1913
+#: kritapart/kis_view.cc:1986
 msgid "Could not add layer to image."
 msgstr ""
 
-#: core/kis_view.cc:1913 core/kis_view.cc:1986
+#: core/kis_view.cc:1913 core/kis_view.cc:1986 kritapart/kis_view.cc:1913
+#: kritapart/kis_view.cc:1986
 #, fuzzy
 msgid "Layer Error"
 msgstr "Layer"
 
-#: core/kis_view.cc:1978
+#: core/kis_view.cc:1978 kritapart/kis_view.cc:1978
 #, fuzzy
 msgid "Duplicate of '%1'"
 msgstr "Công cụ &trình lọc"
 
-#: core/kis_view.cc:2691
+#: core/kis_view.cc:2691 kritapart/kis_view.cc:2691
 msgid "HSV"
 msgstr "HSV"
 
-#: core/kis_view.cc:2701 modules/gray_u16/kis_gray_u16_colorspace.cc:46
+#: core/kis_view.cc:2701 kritapart/kis_view.cc:2701
+#: modules/gray_u16/kis_gray_u16_colorspace.cc:46
 #: modules/gray_u8/kis_gray_colorspace.cc:50
 msgid "Gray"
 msgstr "Xám"
 
-#: core/kis_view.cc:2706
+#: core/kis_view.cc:2706 kritapart/kis_view.cc:2706
 msgid "Palettes"
 msgstr "Palettes"
 
@@ -4273,7 +4282,7 @@ msgstr "&Chèn ảnh như là layer..."
 msgid "Paste into &New Image"
 msgstr "Ảnh mới"
 
-#: core/kis_selection_manager.cc:136 core/kis_selection_manager.cc:626
+#: core/kis_selection_manager.cc:136 core/kis_selection_manager.cc:629
 #, fuzzy
 msgid "&Reselect"
 msgstr "Chọn"
@@ -4288,21 +4297,21 @@ msgstr "Copy chọn tới layer mới"
 msgid "Cut Selection to New Layer"
 msgstr "Copy chọn tới layer mới"
 
-#: core/kis_selection_manager.cc:158 core/kis_selection_manager.cc:707
+#: core/kis_selection_manager.cc:158 core/kis_selection_manager.cc:710
 msgid "Feather..."
 msgstr ""
 
-#: core/kis_selection_manager.cc:163 core/kis_selection_manager.cc:605
+#: core/kis_selection_manager.cc:163 core/kis_selection_manager.cc:608
 #, fuzzy
 msgid "Fill with Foreground Color"
 msgstr "Fill bằng Pattern"
 
-#: core/kis_selection_manager.cc:168 core/kis_selection_manager.cc:610
+#: core/kis_selection_manager.cc:168 core/kis_selection_manager.cc:613
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Fill bằng Pattern"
 
-#: core/kis_selection_manager.cc:173 core/kis_selection_manager.cc:615
+#: core/kis_selection_manager.cc:173 core/kis_selection_manager.cc:618
 #, fuzzy
 msgid "Fill with Pattern"
 msgstr "Fill bằng Gradient"
@@ -4340,7 +4349,7 @@ msgstr ""
 msgid "Load..."
 msgstr ""
 
-#: core/kis_selection_manager.cc:512
+#: core/kis_selection_manager.cc:515
 #, fuzzy
 msgid "Select &All"
 msgstr "Chọn"
@@ -5066,7 +5075,7 @@ msgstr ""
 msgid "template paintop"
 msgstr "Phương thức"
 
-#: plugins/histogram/dlg_histogram.cc:44 plugins/histogram/dlg_histogram.cc:49
+#: plugins/histogram/dlg_histogram.cc:43 plugins/histogram/dlg_histogram.cc:48
 #: plugins/histogram_docker/histogramdocker.cc:67
 msgid "Histogram"
 msgstr ""
@@ -5472,18 +5481,18 @@ msgstr "Đổi tên ảnh"
 
 #: plugins/rotateimage/rotateimage.cc:72
 #, fuzzy
-msgid "&Rotate Image &90"
-msgstr "Gỡ bỏ Layer"
+msgid "Rotate Image CW"
+msgstr "Đổi tên ảnh"
 
 #: plugins/rotateimage/rotateimage.cc:73
 #, fuzzy
-msgid "&Rotate Image &180"
+msgid "Rotate Image 1&80"
 msgstr "Gỡ bỏ Layer"
 
 #: plugins/rotateimage/rotateimage.cc:74
 #, fuzzy
-msgid "&Rotate Image &270"
-msgstr "Gỡ bỏ Layer"
+msgid "Rotate Image CCW"
+msgstr "Đổi tên ảnh"
 
 #: plugins/rotateimage/rotateimage.cc:76
 #, fuzzy
@@ -5491,15 +5500,18 @@ msgid "&Rotate Layer..."
 msgstr "Gỡ bỏ Layer"
 
 #: plugins/rotateimage/rotateimage.cc:78
-msgid "Rotate &180"
+#, fuzzy
+msgid "Rotate 1&80"
 msgstr "Quay &180"
 
 #: plugins/rotateimage/rotateimage.cc:79
-msgid "Rotate &270"
-msgstr "Quay &270"
+#, fuzzy
+msgid "Rotate CCW"
+msgstr "Quay &90"
 
 #: plugins/rotateimage/rotateimage.cc:80
-msgid "Rotate &90"
+#, fuzzy
+msgid "Rotate CW"
 msgstr "Quay &90"
 
 #: plugins/oilpaintfilter/kis_oilpaint_filter.h:46
@@ -5773,6 +5785,20 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr ""
+
+#, fuzzy
+#~ msgid "&Rotate Image &90"
+#~ msgstr "Gỡ bỏ Layer"
+
+#, fuzzy
+#~ msgid "&Rotate Image &270"
+#~ msgstr "Gỡ bỏ Layer"
+
+#~ msgid "Rotate &270"
+#~ msgstr "Quay &270"
+
+#~ msgid "Rotate &90"
+#~ msgstr "Quay &90"
 
 #, fuzzy
 #~ msgid "&Position"

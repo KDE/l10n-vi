@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2005-08-11 07:49+0200\n"
+"POT-Creation-Date: 2006-02-27 10:41+0100\n"
 "PO-Revision-Date: 2002-05-30 22:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
 
-#. i18n: file kchart.rc line 9
+#. i18n: file kchart.rc line 10
 #: rc.cpp:9
 #, fuzzy, no-c-format
-msgid "&Chart"
-msgstr "Chart"
+msgid "F&ormat"
+msgstr "Định dạng trục - Y"
 
 #. i18n: file kchart.rc line 27
 #: rc.cpp:15
@@ -33,7 +33,7 @@ msgid "Types"
 msgstr ""
 
 #. i18n: file csvimportdialogui.ui line 67
-#: kchartBackgroundPixmapConfigPage.cc:191 rc.cpp:21
+#: kchartBackgroundPixmapConfigPage.cc:191 kchartWizard.cc:31 rc.cpp:21
 #, no-c-format
 msgid "Data"
 msgstr ""
@@ -164,7 +164,7 @@ msgstr "#Dòng:"
 msgid "Update"
 msgstr ""
 
-#: csvimportdialog.cc:59 kchart_view.cc:659
+#: csvimportdialog.cc:59 kchart_view.cc:671
 msgid "Import Data"
 msgstr ""
 
@@ -369,9 +369,8 @@ msgstr ""
 msgid "Data+Axes"
 msgstr ""
 
-#: kchartBackgroundPixmapConfigPage.cc:192 kchartConfigDialog.cc:106
-#: kchartConfigDialog.cc:150 kchartParameterConfigPage.cc:80
-#: kdchart/KDChartParams.cpp:328
+#: kchartBackgroundPixmapConfigPage.cc:192 kchartConfigDialog.cc:104
+#: kchartConfigDialog.cc:152 kchartParameterConfigPage.cc:84
 msgid "Legend"
 msgstr "Legend"
 
@@ -462,7 +461,7 @@ msgstr ""
 msgid "Footer 3 C"
 msgstr ""
 
-#: kchartColorConfigPage.cc:46
+#: kchartColorConfigPage.cc:47
 msgid ""
 "This page lets you configure the colors in which your chart is displayed. Each "
 "part of the chart can be assigned a different color."
@@ -470,25 +469,25 @@ msgstr ""
 "Trang này cho phép bạn cấu hình màu mà  chart sẽ hiển thị. Mỗi phần của chart "
 "sẽ được chỉ định một màu khác nhaụ"
 
-#: kchartColorConfigPage.cc:52
+#: kchartColorConfigPage.cc:53
 msgid "Colors"
 msgstr "Màu"
 
-#: kchartColorConfigPage.cc:59
+#: kchartColorConfigPage.cc:60
 #, fuzzy
 msgid "&Line color:"
 msgstr "Màu đườn&g"
 
-#: kchartColorConfigPage.cc:65
+#: kchartColorConfigPage.cc:66
 msgid "This is the color that is used for drawing lines like axes."
 msgstr "Đây là màu sẽ được dùng để vẽ đường trục .(fix me)"
 
-#: kchartColorConfigPage.cc:69
+#: kchartColorConfigPage.cc:70
 #, fuzzy
 msgid "&Grid color:"
 msgstr "Màu &grid"
 
-#: kchartColorConfigPage.cc:75
+#: kchartColorConfigPage.cc:76
 msgid ""
 "Here you can configure the color that is used for the chart grid. Of course, "
 "this setting will only take effect if grid drawing is turned on."
@@ -496,12 +495,12 @@ msgstr ""
 "Bạn có thể cấu hình màu sẽ được dùng cho chart grid. Tất nhiên, thiết lập này "
 "chỉ có tác dụng nếu Chế Độ Vẽ grid được bật."
 
-#: kchartColorConfigPage.cc:81
+#: kchartColorConfigPage.cc:82
 #, fuzzy
 msgid "&X-title color:"
 msgstr "Màu tiêu đề &X"
 
-#: kchartColorConfigPage.cc:87
+#: kchartColorConfigPage.cc:88
 #, fuzzy
 msgid ""
 "This color is used for displaying titles for the X (horizontal) axis. This "
@@ -510,12 +509,12 @@ msgstr ""
 "Màu này sẽ được dùng cho việc hiển thị tiêu đề của trục X( Ngang). Thiết lập "
 "này sẽ ghi đè thiết lập <i> Màu tiêu đề </i>"
 
-#: kchartColorConfigPage.cc:93
+#: kchartColorConfigPage.cc:94
 #, fuzzy
 msgid "&Y-title color:"
 msgstr "Màu tiêu đề &Y"
 
-#: kchartColorConfigPage.cc:99
+#: kchartColorConfigPage.cc:100
 #, fuzzy
 msgid ""
 "This color is used for displaying titles for the Y (vertical) axis. This "
@@ -524,12 +523,12 @@ msgstr ""
 "Màu này sẽ được dùng cho việc hiển thị tiêu đề của trục Y( Dọc). Thiết lập này "
 "sẽ ghi đè thiết lập <i> Màu tiêu đề </i>"
 
-#: kchartColorConfigPage.cc:106
+#: kchartColorConfigPage.cc:107
 #, fuzzy
 msgid "Y-title color (2nd axis):"
 msgstr "Màu tiêu đề Y( trục thứ 2)"
 
-#: kchartColorConfigPage.cc:112
+#: kchartColorConfigPage.cc:113
 #, fuzzy
 msgid ""
 "This color is used for displaying titles for the second Y (vertical) axis. It "
@@ -540,36 +539,36 @@ msgstr ""
 "nghiệm nếu chart được cấu hình có trục thứ hai Y. Thiết lập này sẽ ghi đè thiết "
 "lập <i> Màu Tiêu Đề </i>"
 
-#: kchartColorConfigPage.cc:120
+#: kchartColorConfigPage.cc:121
 #, fuzzy
 msgid "X-label color:"
 msgstr "Màu nhãn X"
 
-#: kchartColorConfigPage.cc:126
+#: kchartColorConfigPage.cc:127
 #, fuzzy
 msgid ""
 "Here you can configure the color that is used for labeling the X (horizontal) "
 "axis"
 msgstr "Bạn có thể cấu hình màu sẽ được dùng cho nhãn trục X( ngang)."
 
-#: kchartColorConfigPage.cc:131
+#: kchartColorConfigPage.cc:132
 #, fuzzy
 msgid "Y-label color:"
 msgstr "Màu nhãn Y"
 
-#: kchartColorConfigPage.cc:137
+#: kchartColorConfigPage.cc:138
 #, fuzzy
 msgid ""
 "Here you can configure the color that is used for labeling the Y (vertical) "
 "axis"
 msgstr "Bạn có thể cấu hình màu sẽ được dùng cho nhãn trục Y( dọc)."
 
-#: kchartColorConfigPage.cc:143
+#: kchartColorConfigPage.cc:144
 #, fuzzy
 msgid "Y-label color (2nd axis):"
 msgstr "Màu nhãn Y( trục thứ 2)"
 
-#: kchartColorConfigPage.cc:149
+#: kchartColorConfigPage.cc:150
 #, fuzzy
 msgid ""
 "Here you can configure the color that is used for labeling the second Y "
@@ -579,9 +578,13 @@ msgstr ""
 "Bạn có thể cấu hình màu sẽ được dùng cho nhãn của trục thứ hai Y( dọc). Tất "
 "nhiên, thiết lập này sẽ chỉ hiệu nghiệm nếu chart có cả hai trục."
 
-#: kchartColorConfigPage.cc:220 kdchart/KDChartAxesPainter.cpp:2192
-#: kdchart/KDChartBWPainter.cpp:213 kdchart/KDChartPainter.cpp:2179
-#: kdchart/KDChartPolarPainter.cpp:786
+#: kchartColorConfigPage.cc:162
+msgid ""
+"Choose a row/column in the list on the left and change its color using this "
+"button."
+msgstr ""
+
+#: kchartColorConfigPage.cc:222
 #, c-format
 msgid "Series %1"
 msgstr "Chuỗi %1"
@@ -590,9 +593,7 @@ msgstr "Chuỗi %1"
 msgid "HLC Style"
 msgstr "Kiểu HLC"
 
-#: kchartComboConfigPage.cc:49 kdchart/KDChartParams_io.cpp:2596
-#: kdchart/KDChartParams_io.cpp:2652 kdchart/KDChartParams_io.cpp:2816
-#: kdchart/KDChartParams_io.cpp:2854
+#: kchartComboConfigPage.cc:49
 msgid "Diamond"
 msgstr "Kim Cương"
 
@@ -608,115 +609,160 @@ msgstr "Nối"
 msgid "Icap"
 msgstr "Icap"
 
-#: kchartConfigDialog.cc:79
+#: kchartConfigDialog.cc:77
 #, fuzzy
-msgid "Chart Config Dialog"
-msgstr "Hộp thoại cấu hình Chart"
+msgid "Chart Setup"
+msgstr "Kiểu con của Chart"
 
-#: kchartConfigDialog.cc:83 kchartConfigDialog.cc:111
+#: kchartConfigDialog.cc:81 kchartConfigDialog.cc:109
 msgid "&Data"
 msgstr ""
 
-#: kchartConfigDialog.cc:90 kchartConfigDialog.cc:146
-#: kchartHeaderFooterConfigPage.cc:46
+#: kchartConfigDialog.cc:88 kchartConfigDialog.cc:148
 msgid "Header/Footer"
 msgstr ""
 
-#: kchartConfigDialog.cc:94 kchartConfigDialog.cc:161
+#: kchartConfigDialog.cc:92 kchartConfigDialog.cc:163
 msgid "&Colors"
 msgstr "&Màu"
 
-#: kchartConfigDialog.cc:98 kchartConfigDialog.cc:164
+#: kchartConfigDialog.cc:96 kchartConfigDialog.cc:166
 msgid "&Font"
 msgstr "&Font"
 
-#: kchartConfigDialog.cc:102 kchartConfigDialog.cc:168
+#: kchartConfigDialog.cc:100 kchartConfigDialog.cc:170
 #, fuzzy
 msgid "&Background"
 msgstr "Màu &nền"
 
-#: kchartConfigDialog.cc:119 kchartWizardSelectChartTypePage.cc:67
+#: kchartConfigDialog.cc:117 kchartWizardSelectChartTypePage.cc:60
 msgid "Bar"
 msgstr "Thanh"
 
-#: kchartConfigDialog.cc:124
+#: kchartConfigDialog.cc:121 kchartConfigDialog.cc:126
 #, fuzzy
 msgid "Line"
 msgstr "&Dòng"
 
-#: kchartConfigDialog.cc:131 kchart_view.cc:109
+#: kchartConfigDialog.cc:133 kchart_view.cc:116
 msgid "&Pie"
 msgstr "&Pie"
 
-#: kchartConfigDialog.cc:135
+#: kchartConfigDialog.cc:137
 #, fuzzy
 msgid "&Piedata"
 msgstr "&Pie"
 
-#: kchartConfigDialog.cc:140 kchart_view.cc:119
+#: kchartConfigDialog.cc:142 kchart_view.cc:126
 msgid "&Polar"
 msgstr "&Polar"
 
-#: kchartConfigDialog.cc:157
+#: kchartConfigDialog.cc:159
 #, fuzzy
 msgid "&Axes"
 msgstr "&Vùng"
 
-#: kchartConfigDialog.cc:396
-msgid "Chart &Subtype"
+#: kchartConfigDialog.cc:404
+#, fuzzy
+msgid "Chart &Sub-type"
 msgstr "Kiểu &con Chart"
 
-#: kchartDataConfigPage.cc:61
+#: kchartDataConfigPage.cc:64 kchartWizardSelectDataFormatPage.cc:39
+#, fuzzy
+msgid "Data Area"
+msgstr "Định dạng trục - Y"
+
+#: kchartDataConfigPage.cc:69 kchartWizardSelectDataFormatPage.cc:42
+#, fuzzy
+msgid "Area: "
+msgstr "Vùng"
+
+#: kchartDataConfigPage.cc:74 kchartWizardSelectDataFormatPage.cc:47
+msgid "First row as label"
+msgstr ""
+
+#: kchartDataConfigPage.cc:75 kchartWizardSelectDataFormatPage.cc:48
+#, fuzzy
+msgid "First column as label"
+msgstr "Dùng cột đầu làm mô tả"
+
+#: kchartDataConfigPage.cc:80 kchartWizardSelectDataFormatPage.cc:51
 #, fuzzy
 msgid "Data Format"
 msgstr "Định dạng trục - Y"
 
-#: kchartDataConfigPage.cc:65
+#: kchartDataConfigPage.cc:82 kchartWizardSelectDataFormatPage.cc:53
 #, fuzzy
 msgid "Data in rows"
 msgstr "Dữ liệu trong:"
 
-#: kchartDataConfigPage.cc:69
+#: kchartDataConfigPage.cc:85 kchartWizardSelectDataFormatPage.cc:56
 #, fuzzy
 msgid "Data in columns"
 msgstr "Dữ liệu trong:"
 
-#: kchartDataConfigPage.cc:85 kchartFontConfigPage.cc:96
-#: kchartHeaderFooterConfigPage.cc:60 kchartHeaderFooterConfigPage.cc:73
-#: kchartHeaderFooterConfigPage.cc:86 kchartWizardLabelsLegendPage.cc:52
-#: kchartWizardLabelsLegendPage.cc:71 kchartWizardLabelsLegendPage.cc:95
-#: kchartWizardLabelsLegendPage.cc:119 kchartWizardLabelsLegendPage.cc:145
-#: kchartWizardLabelsLegendPage.cc:160 kchartWizardSetupAxesPage.cc:158
-#, fuzzy
-msgid "Font..."
-msgstr "&Font"
+#: kchartDataConfigPage.cc:90
+msgid ""
+"This configuration page can be used to swap the interpretation of rows and "
+"columns."
+msgstr ""
 
-#: kchartDataEditor.cc:159
+#: kchartDataConfigPage.cc:91
+msgid ""
+"By default one row is considered to be a data set and each column holds the "
+"individual values of the data series. This sets the data in rows on your chart."
+msgstr ""
+
+#: kchartDataConfigPage.cc:93
+msgid ""
+"Here you can choose to have each column hold one data set. Note that the values "
+"are not really swapped but only their interpretation."
+msgstr ""
+
+#: kchartDataEditor.cc:164
 msgid "KChart Data Editor"
 msgstr "Trình biên soạn Dữ Liệu KChart"
 
-#: kchartDataEditor.cc:174
+#: kchartDataEditor.cc:179
 #, fuzzy
 msgid "# Rows:"
 msgstr "# Cột:"
 
-#: kchartDataEditor.cc:181
+#: kchartDataEditor.cc:186
 #, fuzzy
 msgid "# Columns:"
 msgstr "#Dòng:"
 
-#: kchartDataEditor.cc:235
+#: kchartDataEditor.cc:193
+msgid "Insert Row"
+msgstr ""
+
+#: kchartDataEditor.cc:197
+#, fuzzy
+msgid "Insert Column"
+msgstr "#Dòng:"
+
+#: kchartDataEditor.cc:201
+msgid "Remove Row"
+msgstr ""
+
+#: kchartDataEditor.cc:205
+#, fuzzy
+msgid "Remove Column"
+msgstr "#Dòng:"
+
+#: kchartDataEditor.cc:282
 msgid ""
 "<p><b>Sets the number of rows in the data table.</b>"
 "<br>"
 "<br>Each row represents one data set.</p>"
 msgstr ""
 
-#: kchartDataEditor.cc:237
+#: kchartDataEditor.cc:284
 msgid "Number of active data rows"
 msgstr ""
 
-#: kchartDataEditor.cc:242
+#: kchartDataEditor.cc:289
 msgid ""
 "<p><b>Sets the number of columns in the data table.</b>"
 "<br>"
@@ -724,18 +770,18 @@ msgid ""
 "(row).</p>"
 msgstr ""
 
-#: kchartDataEditor.cc:244
+#: kchartDataEditor.cc:291
 msgid "Number of active data columns"
 msgstr ""
 
-#: kchartDataEditor.cc:249
-msgid ""
-"Chart data, each row is a data set. Headers can be changed by clicking on them."
-msgstr ""
+#: kchartDataEditor.cc:296
+#, fuzzy
+msgid "Chart data table."
+msgstr "Trình biên soạn Dữ Liệu KChart"
 
-#: kchartDataEditor.cc:251
+#: kchartDataEditor.cc:318
 msgid ""
-"<p>This table represents the complete data for the chart."
+"<p>This table contains the data for the chart."
 "<br>"
 "<br> Each row is one data set of values. The name of such a data set can be "
 "changed in the column header (on the left) of the table. In a line diagram each "
@@ -747,7 +793,7 @@ msgid ""
 "sets.  In a ring diagram each column is one ring.</p>"
 msgstr ""
 
-#: kchartDataEditor.cc:446
+#: kchartDataEditor.cc:617
 msgid ""
 "You are about to shrink the data table and remove some values. This will lead "
 "to loss of existing data in the table and/or the headers.\n"
@@ -755,146 +801,266 @@ msgid ""
 "This message will not be shown again if you click Continue"
 msgstr ""
 
-#: kchartDataEditor.cc:573
+#: kchartDataEditor.cc:742
 #, fuzzy
 msgid "Column Name"
 msgstr "Cột kích hoạt"
 
-#: kchartDataEditor.cc:574
+#: kchartDataEditor.cc:743
 msgid "Type a new column name:"
 msgstr ""
 
-#: kchartDataEditor.cc:591
+#: kchartDataEditor.cc:760
 msgid "Row Name"
 msgstr ""
 
-#: kchartDataEditor.cc:592
+#: kchartDataEditor.cc:761
 msgid "Type a new row name:"
 msgstr ""
 
-#: kchartFontConfigPage.cc:123 kchartFontConfigPage.cc:142
+#: kchartFontConfigPage.cc:98 kchartHeaderFooterConfigPage.cc:58
+#: kchartHeaderFooterConfigPage.cc:75 kchartHeaderFooterConfigPage.cc:92
+#: kchartWizardLabelsLegendPage.cc:54 kchartWizardLabelsLegendPage.cc:72
+#: kchartWizardLabelsLegendPage.cc:95 kchartWizardLabelsLegendPage.cc:119
+#: kchartWizardLabelsLegendPage.cc:145 kchartWizardLabelsLegendPage.cc:160
+#: kchartWizardSetupAxesPage.cc:164
+#, fuzzy
+msgid "Font..."
+msgstr "&Font"
+
+#: kchartFontConfigPage.cc:99
+msgid ""
+"Select an item in the list above and click on this button to display the KDE "
+"font dialog in order to choose a new font for this item."
+msgstr ""
+
+#: kchartFontConfigPage.cc:126 kchartFontConfigPage.cc:145
 msgid "X-Title"
 msgstr "Tiêu đề - X"
 
-#: kchartFontConfigPage.cc:124 kchartFontConfigPage.cc:145
+#: kchartFontConfigPage.cc:127 kchartFontConfigPage.cc:148
 msgid "Y-Title"
 msgstr "Tiêu đề - Y"
 
-#: kchartFontConfigPage.cc:125 kchartFontConfigPage.cc:148
+#: kchartFontConfigPage.cc:128 kchartFontConfigPage.cc:151
 msgid "X-Axis"
 msgstr "Trục X"
 
-#: kchartFontConfigPage.cc:126 kchartFontConfigPage.cc:151
+#: kchartFontConfigPage.cc:129 kchartFontConfigPage.cc:154
 msgid "Y-Axis"
 msgstr "Trục Y"
 
-#: kchartFontConfigPage.cc:127 kchartFontConfigPage.cc:154
+#: kchartFontConfigPage.cc:130 kchartFontConfigPage.cc:157
 msgid "All Axes"
 msgstr ""
 
-#: kchartFontConfigPage.cc:130 kchartFontConfigPage.cc:156
+#: kchartFontConfigPage.cc:133 kchartFontConfigPage.cc:159
 msgid "Label"
 msgstr "Nhãn"
 
-#: kchartHeaderFooterConfigPage.cc:51 kchartLegendConfigPage.cc:57
-#: kchartWizardLabelsLegendPage.cc:43
+#: kchartHeaderFooterConfigPage.cc:46 kchartLegendConfigPage.cc:58
+#: kchartWizardLabelsLegendPage.cc:45
 msgid "Title:"
 msgstr "Tiêu đề:"
 
-#: kchartHeaderFooterConfigPage.cc:64
+#: kchartHeaderFooterConfigPage.cc:47 kchartHeaderFooterConfigPage.cc:51
+msgid ""
+"Write here the title of your chart if you want one. The title will be centered "
+"on top above your chart."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:55
+msgid "Click on this button to choose the color for the title font."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:59
+msgid ""
+"Click on this button to choose the font family, style and size for the title."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:63
 #, fuzzy
 msgid "Subtitle:"
 msgstr "Tiêu đề:"
 
-#: kchartHeaderFooterConfigPage.cc:77
+#: kchartHeaderFooterConfigPage.cc:64 kchartHeaderFooterConfigPage.cc:68
+#: kchartHeaderFooterConfigPage.cc:85
+msgid ""
+"Write here the subtitle of your chart if you want one. The subtitle will be "
+"centered on top just below the title."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:72
+msgid "Click on this button to choose the color for the subtitle font."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:76
+msgid ""
+"Click on this button to choose the font family, style and size for the "
+"subtitle."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:80
 msgid "Footer:"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:50
+#: kchartHeaderFooterConfigPage.cc:81
+msgid ""
+"Write here the footer of your chart if you want one. The footer will be "
+"centered at the bottom just below your chart."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:89
+msgid "Click on this button to choose the color for the footer font."
+msgstr ""
+
+#: kchartHeaderFooterConfigPage.cc:93
+msgid ""
+"Click on this button to choose the font family, style and size for the footer."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:51
 msgid "General"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:64
+#: kchartLegendConfigPage.cc:59
+msgid ""
+"Write here the title of the legend, which is displayed at the top of the legend "
+"box."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:66
 #, fuzzy
 msgid "Legend Position"
 msgstr "Vị trí "
 
-#: kchartLegendConfigPage.cc:71
+#: kchartLegendConfigPage.cc:67
+msgid ""
+"<qt>Choose the location of the legend on the chart by clicking a location "
+"button.\n"
+"Use the central button to <b>hide</b> the legend.</qt>"
+msgstr ""
+
+#: kchartLegendConfigPage.cc:74
 msgid "Top-Left"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:73
+#: kchartLegendConfigPage.cc:76
 #, fuzzy
 msgid "Top-Right"
 msgstr "Vòng"
 
-#: kchartLegendConfigPage.cc:76
+#: kchartLegendConfigPage.cc:79
 #, fuzzy
 msgid "No Legend"
 msgstr "Legend"
 
-#: kchartLegendConfigPage.cc:79
+#: kchartLegendConfigPage.cc:82
 msgid "Bottom-Left"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:81
+#: kchartLegendConfigPage.cc:84
 msgid "Bottom-Right"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:95
+#: kchartLegendConfigPage.cc:91
+msgid ""
+"This Font box can be used to set different fonts for the legend title and the "
+"individual entries."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:99
 msgid "Legend title font:"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:98 kchartLegendConfigPage.cc:104
+#: kchartLegendConfigPage.cc:102 kchartLegendConfigPage.cc:109
 #, fuzzy
 msgid "Select Font..."
 msgstr "&Font"
 
-#: kchartLegendConfigPage.cc:101
+#: kchartLegendConfigPage.cc:103
+msgid ""
+"Click here to display the KDE font chooser dialog. You will be able to change "
+"the font family, style and size for the legend title."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:106
 msgid "Legend text font:"
 msgstr ""
 
-#: kchartLegendConfigPage.cc:113
+#: kchartLegendConfigPage.cc:110
+msgid ""
+"Click here to display the KDE font chooser dialog. You will be able to change "
+"the font family, style and size for the legend text."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:119
 msgid "Color"
 msgstr "Màu"
 
 #: kchartLegendConfigPage.cc:120
+msgid ""
+"This Color box can be used to set different colors for the legend title and "
+"text."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:127
 #, fuzzy
 msgid "Legend title color:"
 msgstr "Màu tiêu đề &X"
 
-#: kchartLegendConfigPage.cc:127
+#: kchartLegendConfigPage.cc:131
+msgid ""
+"Click here to display the KDE Select Color dialog. You will be able to change "
+"the color for the legend title."
+msgstr ""
+
+#: kchartLegendConfigPage.cc:135
 #, fuzzy
 msgid "Legend text color:"
 msgstr "Màu đườn&g"
 
-#: kchartLine3dConfigPage.cc:44
+#: kchartLegendConfigPage.cc:139
+msgid ""
+"Click here to display the KDE Select Color dialog. You will be able to change "
+"the color for the legend text."
+msgstr ""
+
+#: kchartLine3dConfigPage.cc:45
 #, fuzzy
 msgid "3D lines"
 msgstr "Đường thẳng"
 
-#: kchartLine3dConfigPage.cc:52 kchartParameterPolarConfigPage.cc:57
+#: kchartLine3dConfigPage.cc:53 kchartParameterPolarConfigPage.cc:61
 msgid "Line width:"
 msgstr ""
 
-#: kchartLine3dConfigPage.cc:57
+#: kchartLine3dConfigPage.cc:56
+msgid "You can set here the line width for your chart. Default is 1."
+msgstr ""
+
+#: kchartLine3dConfigPage.cc:59
 #, fuzzy
 msgid "Line markers"
 msgstr "Nhãn dòng"
 
-#: kchartLine3dConfigPage.cc:62 kchartParameterPieConfigPage.cc:55
+#: kchartLine3dConfigPage.cc:60
+msgid "Check this option if you want to add dots on your chart as markers."
+msgstr ""
+
+#: kchartLine3dConfigPage.cc:65 kchartParameterPieConfigPage.cc:57
 msgid "Draw shadow color"
 msgstr ""
 
-#: kchartLine3dConfigPage.cc:65
+#: kchartLine3dConfigPage.cc:68
 msgid "Rotation around the X-axis in degrees:"
 msgstr ""
 
-#: kchartLine3dConfigPage.cc:74
+#: kchartLine3dConfigPage.cc:77
 msgid "Rotation around the Y-axis in degrees:"
 msgstr ""
 
-#: kchartLine3dConfigPage.cc:83 kchartParameter3dConfigPage.cc:71
+#: kchartLine3dConfigPage.cc:86 kchartParameter3dConfigPage.cc:75
 #, fuzzy
 msgid "Depth:"
 msgstr "Chiều sâu"
@@ -928,144 +1094,268 @@ msgstr ""
 msgid "Bottom:"
 msgstr ""
 
-#: kchartParameter3dConfigPage.cc:44
+#: kchartParameter3dConfigPage.cc:45
 msgid "3D Parameters"
 msgstr "Tham số 3D"
 
-#: kchartParameter3dConfigPage.cc:53
+#: kchartParameter3dConfigPage.cc:54
 msgid "3D bar"
 msgstr ""
 
-#: kchartParameter3dConfigPage.cc:60
+#: kchartParameter3dConfigPage.cc:55
+msgid ""
+"If checked, this will enable 3D mode for viewing the bars. You can then add a "
+"shadow and set the angle and depth for 3D."
+msgstr ""
+
+#: kchartParameter3dConfigPage.cc:62
 msgid "Draw dark shadow"
 msgstr ""
 
 #: kchartParameter3dConfigPage.cc:63
+msgid "If checked, this will add a dark shadow on the 3D bars."
+msgstr ""
+
+#: kchartParameter3dConfigPage.cc:66
 #, fuzzy
 msgid "Angle:"
 msgstr "Góc"
 
-#: kchartParameterConfigPage.cc:51
+#: kchartParameter3dConfigPage.cc:71
+msgid ""
+"You can set here the angle for the 3D effect from 0 to 90. 90 will give you "
+"flat bars without any 3D effect.\n"
+"Default is 45."
+msgstr ""
+
+#: kchartParameter3dConfigPage.cc:80
+msgid ""
+"You can set here the depth of the 3D effect from 0 to 2. 0 will give you no "
+"depth at all.\n"
+"Default is 1."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:52
 msgid "Parameters"
 msgstr "Tham số"
 
-#: kchartParameterConfigPage.cc:56
+#: kchartParameterConfigPage.cc:57
 msgid "Grid"
 msgstr "Grid"
 
-#: kchartParameterConfigPage.cc:59
+#: kchartParameterConfigPage.cc:58
+msgid ""
+"If this is checked, the grid is shown. If you uncheck this option, the grid "
+"will not be displayed anymore."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:61
 #, fuzzy
 msgid "Y-axis"
 msgstr "Trục Y"
 
-#: kchartParameterConfigPage.cc:63
+#: kchartParameterConfigPage.cc:62
+msgid ""
+"If this is checked, the Y-axis is shown. If you uncheck this option, the Y-axis "
+"and the Y grid lines will not be displayed anymore."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:66
 #, fuzzy
 msgid "X-axis"
 msgstr "Trục X"
 
-#: kchartParameterConfigPage.cc:68
+#: kchartParameterConfigPage.cc:67
+msgid ""
+"If this is checked, the X-axis is shown. If you uncheck this option, the X-axis "
+"and the X grid lines will not be displayed anymore."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:72
 #, fuzzy
 msgid "Has X-label"
 msgstr "Có Nhãn - X"
 
-#: kchartParameterConfigPage.cc:71
+#: kchartParameterConfigPage.cc:75
 #, fuzzy
 msgid "Y-axis 2"
 msgstr "Y-Axis2"
 
-#: kchartParameterConfigPage.cc:76
+#: kchartParameterConfigPage.cc:80
 #, fuzzy
 msgid "Line marker"
 msgstr "Nhãn dòng"
 
-#: kchartParameterConfigPage.cc:85
+#: kchartParameterConfigPage.cc:89
 msgid "Settings"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:92 kchartWizardLabelsLegendPage.cc:60
+#: kchartParameterConfigPage.cc:96 kchartWizardLabelsLegendPage.cc:62
 #, fuzzy
 msgid "X-title:"
 msgstr "Tiêu đề - X:"
 
-#: kchartParameterConfigPage.cc:95 kchartWizardLabelsLegendPage.cc:83
+#: kchartParameterConfigPage.cc:99 kchartWizardLabelsLegendPage.cc:84
 #, fuzzy
 msgid "Y-title:"
 msgstr "Tiêu đề - Y:"
 
-#: kchartParameterConfigPage.cc:110
+#: kchartParameterConfigPage.cc:104
+msgid ""
+"Write the title for the X-axis here, if you want a title. The color for this "
+"title is set in the Colors tab, in the same dialog, and the font is set in the "
+"Font tab."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:108
+msgid ""
+"Write the title for the Y-axis here, if you want a title. The color for this "
+"title is set in the Colors tab, in the same dialog, and the font is set in the "
+"Font tab."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:116
 msgid "Scale Types"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:111
+#: kchartParameterConfigPage.cc:117
 #, fuzzy
 msgid "Linear scale"
 msgstr "Nhãn dòng"
 
-#: kchartParameterConfigPage.cc:112
+#: kchartParameterConfigPage.cc:118
+msgid "This sets the Y-axis to be linear. This is default."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:119
 msgid "Logarithmic scale"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:116
+#: kchartParameterConfigPage.cc:120
+msgid "This sets the Y-axis to be logarithmic."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:124
 msgid "Precision for Numerical Left Axis"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:118
+#: kchartParameterConfigPage.cc:126
 msgid "Automatic precision"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:120
+#: kchartParameterConfigPage.cc:127
+msgid ""
+"This sets the precision as automatic which means that KChart decides what "
+"precision to apply."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:129
 msgid "Decimal precision:"
 msgstr ""
 
-#: kchartParameterConfigPage.cc:127 kchartWizardSetupAxesPage.cc:146
+#: kchartParameterConfigPage.cc:130
+msgid ""
+"This sets the Y-axis precision. For example, if you choose a precision of 2, "
+"the value 5 will be displayed as 5.00 alongside the Y-axis."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:134
+msgid ""
+"Set the precision you want to display for the Y-axis, if you choose Decimal "
+"precision. The range is 0 to 15; 2 being the default."
+msgstr ""
+
+#: kchartParameterConfigPage.cc:138 kchartWizardSetupAxesPage.cc:152
 #, fuzzy
 msgid "Y-label format:"
 msgstr "Định dạng trục - Y"
 
-#: kchartParameterConfigPage.cc:135 kchartWizardLabelsLegendPage.cc:108
+#: kchartParameterConfigPage.cc:146 kchartWizardLabelsLegendPage.cc:108
 #, fuzzy
 msgid "Y-title 2:"
 msgstr "Tiêu đề Y 2:"
 
-#: kchartParameterConfigPage.cc:142
+#: kchartParameterConfigPage.cc:153
 #, fuzzy
 msgid "Y-label format 2:"
 msgstr "Định dạng trục Y 2"
 
-#: kchartParameterPieConfigPage.cc:51 kchartParameterPolarConfigPage.cc:48
+#: kchartParameterPieConfigPage.cc:52 kchartParameterPolarConfigPage.cc:49
 #, fuzzy
 msgid "Parameter"
 msgstr "Tham số"
 
-#: kchartParameterPieConfigPage.cc:54
+#: kchartParameterPieConfigPage.cc:55
 #, fuzzy
 msgid "Pie 3D"
 msgstr "Pie"
 
-#: kchartParameterPieConfigPage.cc:58 kchartPieConfigPage.cc:76
+#: kchartParameterPieConfigPage.cc:56
+msgid "Uncheck this option if you do not want a 3D effect for your pie."
+msgstr ""
+
+#: kchartParameterPieConfigPage.cc:58
+msgid "Uncheck this option if you do not want a shadow color on a 3D pie."
+msgstr ""
+
+#: kchartParameterPieConfigPage.cc:60 kchartPieConfigPage.cc:76
 msgid "Explode factor (%):"
 msgstr ""
 
-#: kchartParameterPieConfigPage.cc:61
+#: kchartParameterPieConfigPage.cc:62
+msgid ""
+"This will place gaps between the segments of your pie. Default is 0 which means "
+"the pie is a whole."
+msgstr ""
+
+#: kchartParameterPieConfigPage.cc:64
 #, fuzzy
 msgid "Start angle:"
 msgstr "Bắt đầu"
 
-#: kchartParameterPieConfigPage.cc:64
+#: kchartParameterPieConfigPage.cc:66
+msgid "This will set the orientation of your pie. Default is 0."
+msgstr ""
+
+#: kchartParameterPieConfigPage.cc:68
 #, fuzzy
 msgid "3D-depth:"
 msgstr "3D-Depth"
 
-#: kchartParameterPolarConfigPage.cc:51
-msgid "Polar marker"
+#: kchartParameterPieConfigPage.cc:70
+msgid ""
+"Set the depth from 0 to 40 of the 3D effect, if you have checked Pie 3D. "
+"Default is 20."
 msgstr ""
 
 #: kchartParameterPolarConfigPage.cc:52
-msgid "Show circular label"
+msgid "Polar marker"
+msgstr ""
+
+#: kchartParameterPolarConfigPage.cc:53
+msgid ""
+"If this is checked, the polar markers are shown; otherwise they are not."
 msgstr ""
 
 #: kchartParameterPolarConfigPage.cc:54
+msgid "Show circular label"
+msgstr ""
+
+#: kchartParameterPolarConfigPage.cc:55
+msgid "Toggle the circular label display."
+msgstr ""
+
+#: kchartParameterPolarConfigPage.cc:57
 msgid "Zero degree position:"
+msgstr ""
+
+#: kchartParameterPolarConfigPage.cc:59
+msgid ""
+"Set the position for the X axis (horizontal) from -359 to 359. Default is 0."
+msgstr ""
+
+#: kchartParameterPolarConfigPage.cc:63
+msgid "Set the width for the chart lines. 0 is default and is the thinnest."
 msgstr ""
 
 #: kchartPieConfigPage.cc:55
@@ -1083,82 +1373,102 @@ msgstr "Cột kích hoạt"
 msgid "Move piece to:"
 msgstr "Dời mảnh( piece) tới"
 
-#: kchartPrinterDlg.cc:38
+#: kchartPrinterDlg.cc:39
 #, fuzzy
 msgid "KChart Options"
 msgstr "Trình biên soạn Dữ Liệu KChart"
 
-#: kchartPrinterDlg.cc:53
+#: kchartPrinterDlg.cc:54
 msgid "Print Size"
 msgstr ""
 
-#: kchartPrinterDlg.cc:54
+#: kchartPrinterDlg.cc:55
 msgid "Width: "
 msgstr ""
 
-#: kchartPrinterDlg.cc:56
+#: kchartPrinterDlg.cc:57
 #, fuzzy
 msgid "Height: "
 msgstr "Vòng"
 
-#: kchartSubTypeChartPage.cc:46 kchartSubTypeChartPage.cc:123
-#: kchartSubTypeChartPage.cc:201 kchartSubTypeChartPage.cc:279
-#: kchartSubTypeChartPage.cc:356
-msgid "Subtype"
+#: kchartSubTypeChartPage.cc:50 kchartSubTypeChartPage.cc:129
+#: kchartSubTypeChartPage.cc:210 kchartSubTypeChartPage.cc:303
+#: kchartSubTypeChartPage.cc:382
+#, fuzzy
+msgid "Sub-type"
 msgstr "Kiểu con"
 
-#: kchartSubTypeChartPage.cc:48 kchartSubTypeChartPage.cc:125
-#: kchartSubTypeChartPage.cc:204 kchartSubTypeChartPage.cc:281
-#: kchartSubTypeChartPage.cc:358 kchartWizardSelectChartSubTypePage.cc:42
+#: kchartSubTypeChartPage.cc:51 kchartSubTypeChartPage.cc:130
+#: kchartSubTypeChartPage.cc:211 kchartSubTypeChartPage.cc:304
+#: kchartSubTypeChartPage.cc:383
+msgid ""
+"Select the desired sub-type of a chart. The available sub-types depend on the "
+"chart type. Some chart types have no sub-type at all, in which case this "
+"configuration page is not shown."
+msgstr ""
+
+#: kchartSubTypeChartPage.cc:53 kchartSubTypeChartPage.cc:132
+#: kchartSubTypeChartPage.cc:215 kchartSubTypeChartPage.cc:306
+#: kchartSubTypeChartPage.cc:385 kchartWizardSelectChartSubTypePage.cc:49
 msgid "Normal"
 msgstr "Thông thường"
 
-#: kchartSubTypeChartPage.cc:50 kchartWizardSelectChartSubTypePage.cc:167
+#: kchartSubTypeChartPage.cc:55 kchartWizardSelectChartSubTypePage.cc:179
 #, fuzzy
 msgid "HiLoClose"
 msgstr "Hi-Lo-Close"
 
-#: kchartSubTypeChartPage.cc:52 kchartWizardSelectChartSubTypePage.cc:168
+#: kchartSubTypeChartPage.cc:57 kchartWizardSelectChartSubTypePage.cc:180
 #, fuzzy
 msgid "HiLoOpenClose"
 msgstr "Hi-Lo-Close"
 
-#: kchartSubTypeChartPage.cc:58 kchartSubTypeChartPage.cc:135
-#: kchartSubTypeChartPage.cc:215 kchartSubTypeChartPage.cc:291
-#: kchartSubTypeChartPage.cc:368
+#: kchartSubTypeChartPage.cc:63 kchartSubTypeChartPage.cc:142
+#: kchartSubTypeChartPage.cc:233 kchartSubTypeChartPage.cc:316
+#: kchartSubTypeChartPage.cc:395
 msgid "Example"
 msgstr "Ví dụ"
 
-#: kchartSubTypeChartPage.cc:127 kchartSubTypeChartPage.cc:206
-#: kchartSubTypeChartPage.cc:283 kchartSubTypeChartPage.cc:360
-#: kchartWizardSelectChartSubTypePage.cc:43
-#: kchartWizardSelectChartSubTypePage.cc:172
+#: kchartSubTypeChartPage.cc:64 kchartSubTypeChartPage.cc:143
+#: kchartSubTypeChartPage.cc:234 kchartSubTypeChartPage.cc:317
+#: kchartSubTypeChartPage.cc:396
+msgid "Preview the sub-type you choose."
+msgstr ""
+
+#: kchartSubTypeChartPage.cc:134 kchartSubTypeChartPage.cc:217
+#: kchartSubTypeChartPage.cc:308 kchartSubTypeChartPage.cc:387
+#: kchartWizardSelectChartSubTypePage.cc:50
+#: kchartWizardSelectChartSubTypePage.cc:184
 msgid "Stacked"
 msgstr "Stacked"
 
-#: kchartSubTypeChartPage.cc:129 kchartSubTypeChartPage.cc:208
-#: kchartSubTypeChartPage.cc:285 kchartSubTypeChartPage.cc:362
-#: kchartWizardSelectChartSubTypePage.cc:44
-#: kchartWizardSelectChartSubTypePage.cc:173
+#: kchartSubTypeChartPage.cc:136 kchartSubTypeChartPage.cc:219
+#: kchartSubTypeChartPage.cc:310 kchartSubTypeChartPage.cc:389
+#: kchartWizardSelectChartSubTypePage.cc:51
+#: kchartWizardSelectChartSubTypePage.cc:185
 msgid "Percent"
 msgstr "Phần trăm"
 
-#: kchartWizard.cc:38
+#: kchartSubTypeChartPage.cc:227 kchartWizardSelectChartSubTypePage.cc:54
+msgid "Number of lines: "
+msgstr ""
+
+#: kchartWizard.cc:37
 #, fuzzy
 msgid "Select Chart Type"
 msgstr "Chọn kiểu Chart"
 
-#: kchartWizard.cc:45
+#: kchartWizard.cc:44
 #, fuzzy
-msgid "Select Chart Subtype"
+msgid "Select Chart Sub-type"
 msgstr "Chọn kiểu con của Chart"
 
-#: kchartWizard.cc:55
+#: kchartWizard.cc:50
 #, fuzzy
 msgid "Labels & Legend"
 msgstr "Nhãn và legend"
 
-#: kchartWizard.cc:61
+#: kchartWizard.cc:56
 #, fuzzy
 msgid "Setup Axes"
 msgstr "Cài đặt trục"
@@ -1173,23 +1483,27 @@ msgstr "Legend"
 msgid "Legend text:"
 msgstr "Legend"
 
-#: kchartWizardSelectChartSubTypePage.cc:38
+#: kchartWizardSelectChartSubTypePage.cc:45
 msgid "Chart Sub Type"
 msgstr "Kiểu con của Chart"
 
-#: kchartWizardSelectChartTypePage.cc:68
+#: kchartWizardSelectChartTypePage.cc:61
 msgid "Lines"
 msgstr "Đường thẳng"
 
-#: kchartWizardSelectChartTypePage.cc:69
+#: kchartWizardSelectChartTypePage.cc:62
 msgid "Area"
 msgstr "Vùng"
 
-#: kchartWizardSelectChartTypePage.cc:70
+#: kchartWizardSelectChartTypePage.cc:64
+msgid "Bars and Lines"
+msgstr ""
+
+#: kchartWizardSelectChartTypePage.cc:67
 msgid "Hi-Lo-Close"
 msgstr "Hi-Lo-Close"
 
-#: kchartWizardSelectChartTypePage.cc:71
+#: kchartWizardSelectChartTypePage.cc:68
 msgid "Box & Whisker "
 msgstr ""
 
@@ -1197,8 +1511,7 @@ msgstr ""
 msgid "Pie"
 msgstr "Pie"
 
-#: kchartWizardSelectChartTypePage.cc:73 kdchart/KDChartParams_io.cpp:2604
-#: kdchart/KDChartParams_io.cpp:2660
+#: kchartWizardSelectChartTypePage.cc:73
 msgid "Ring"
 msgstr "Vòng"
 
@@ -1206,41 +1519,61 @@ msgstr "Vòng"
 msgid "Polar"
 msgstr "Polar"
 
-#: kchartWizardSetupAxesPage.cc:42
-#, fuzzy
-msgid "Has grid:"
-msgstr "Có grid"
+#: kchartWizardSelectDataFormatPage.cc:62
+msgid ""
+"\n"
+"If the selected data area does not match the data you want,\n"
+"select the data now.\n"
+"\n"
+"Include cells that you want to use as row and column labels,\n"
+"if you want them in the chart.\n"
+msgstr ""
 
-#: kchartWizardSetupAxesPage.cc:53
+#: kchartWizardSetupAxesPage.cc:44
+#, fuzzy
+msgid "Grid Lines"
+msgstr "Đường thẳng"
+
+#: kchartWizardSetupAxesPage.cc:45
+#, fuzzy
+msgid "X axis:"
+msgstr "Trục X"
+
+#: kchartWizardSetupAxesPage.cc:46
+#, fuzzy
+msgid "Y axis:"
+msgstr "Trục Y"
+
+#: kchartWizardSetupAxesPage.cc:59
 msgid "Border:"
 msgstr ""
 
-#: kchartWizardSetupAxesPage.cc:76
+#: kchartWizardSetupAxesPage.cc:82
 #, fuzzy
 msgid "Angle 3D:"
 msgstr "Góc 3D:"
 
-#: kchartWizardSetupAxesPage.cc:83
+#: kchartWizardSetupAxesPage.cc:89
 #, fuzzy
 msgid "Depth 3D:"
 msgstr "Chiều sâu 3D:"
 
-#: kchartWizardSetupAxesPage.cc:106
+#: kchartWizardSetupAxesPage.cc:112
 #, fuzzy
 msgid "Y interval:"
 msgstr "Khoảng Y"
 
-#: kchartWizardSetupAxesPage.cc:118
+#: kchartWizardSetupAxesPage.cc:124
 #, fuzzy
 msgid "Y min:"
 msgstr "Y min : "
 
-#: kchartWizardSetupAxesPage.cc:128
+#: kchartWizardSetupAxesPage.cc:134
 #, fuzzy
 msgid "Y max:"
 msgstr "Y max : "
 
-#: kchartWizardSetupAxesPage.cc:170
+#: kchartWizardSetupAxesPage.cc:176
 #, fuzzy
 msgid "Y-label 2 format:"
 msgstr "Định dạng trục - Y"
@@ -1265,100 +1598,128 @@ msgstr "Dòng dòng đầu làm mô tả"
 msgid "Use first column as description"
 msgstr "Dùng cột đầu làm mô tả"
 
-#: kchart_part.cc:197
+#: kchart_params.cc:188
+#, c-format
+msgid "Unknown chart type %1"
+msgstr ""
+
+#: kchart_part.cc:216
 #, fuzzy, c-format
 msgid "Column %1"
 msgstr "Cột"
 
-#: kchart_part.cc:202
+#: kchart_part.cc:221
 #, fuzzy, c-format
 msgid "Row %1"
 msgstr "Dòng"
 
-#: kchart_view.cc:61
+#: kchart_part.cc:914
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+
+#: kchart_part.cc:930
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+
+#: kchart_part.cc:932
+msgid ""
+"This document is not a chart, but %1. Please try opening it with the "
+"appropriate application."
+msgstr ""
+
+#: kchart_part.cc:940
+msgid "Invalid OASIS OpenDocument file. No chart:chart tag found."
+msgstr ""
+
+#: kchart_view.cc:67
 #, fuzzy
 msgid "Import Data..."
 msgstr "&Sửa dữ liệu"
 
-#: kchart_view.cc:67
+#: kchart_view.cc:73
 msgid "&Create Template From Document..."
 msgstr ""
 
-#: kchart_view.cc:71
+#: kchart_view.cc:77
 #, fuzzy
 msgid "Customize with &Wizard..."
 msgstr "Tuỳ biến với &Wizard"
 
-#: kchart_view.cc:75
+#: kchart_view.cc:81
 #, fuzzy
 msgid "Edit &Data..."
 msgstr "&Sửa dữ liệu"
 
-#: kchart_view.cc:78
+#: kchart_view.cc:84
 #, fuzzy
-msgid "&Configure Chart..."
-msgstr "&Cấu hình"
+msgid "&Chart..."
+msgstr "Chart"
 
-#: kchart_view.cc:83
+#: kchart_view.cc:90
 #, fuzzy
 msgid "&Bar"
 msgstr "&Thanh"
 
-#: kchart_view.cc:89
+#: kchart_view.cc:96
 msgid "&Line"
 msgstr "&Dòng"
 
-#: kchart_view.cc:94
+#: kchart_view.cc:101
 #, fuzzy
 msgid "&Area"
 msgstr "&Vùng"
 
-#: kchart_view.cc:99
+#: kchart_view.cc:106
 msgid "&HiLo"
 msgstr "&HiLo"
 
-#: kchart_view.cc:104
+#: kchart_view.cc:111
 msgid "Bo&x && Whiskers"
 msgstr ""
 
-#: kchart_view.cc:114
+#: kchart_view.cc:121
 msgid "&Ring"
 msgstr "&Vòng"
 
-#: kchart_view.cc:125
-msgid "&Configure Colors..."
-msgstr ""
-
-#: kchart_view.cc:129
-msgid "&Configure Font..."
-msgstr ""
-
-#: kchart_view.cc:133
-msgid "&Configure Background..."
-msgstr ""
-
-#: kchart_view.cc:137
-msgid "&Configure Legend..."
-msgstr ""
-
-#: kchart_view.cc:141
-msgid "&Configure Sub Type Chart..."
-msgstr ""
-
-#: kchart_view.cc:145
+#: kchart_view.cc:132
 #, fuzzy
-msgid "&Configure Data Format..."
-msgstr "&Cấu hình"
+msgid "&Colors..."
+msgstr "&Màu"
 
-#: kchart_view.cc:149
-msgid "&Configure Header Footer..."
+#: kchart_view.cc:136
+#, fuzzy
+msgid "&Font..."
+msgstr "&Font"
+
+#: kchart_view.cc:140
+#, fuzzy
+msgid "&Background..."
+msgstr "Màu &nền"
+
+#: kchart_view.cc:144
+#, fuzzy
+msgid "&Legend..."
+msgstr "Legend"
+
+#: kchart_view.cc:148
+#, fuzzy
+msgid "Chart &Sub-type..."
+msgstr "Kiểu &con Chart"
+
+#: kchart_view.cc:152
+#, fuzzy
+msgid "&Data Format..."
+msgstr "Định dạng trục - Y"
+
+#: kchart_view.cc:156
+msgid "&Header && Footer..."
 msgstr ""
 
-#: kchart_view.cc:153
+#: kchart_view.cc:160
 msgid "Page Layout..."
 msgstr ""
 
-#: kchart_view.cc:667
+#: kchart_view.cc:679
 msgid "The file %1 could not be read."
 msgstr ""
 
@@ -1377,7 +1738,7 @@ msgstr "KChart"
 
 #: kchart_aboutdata.h:38
 #, fuzzy
-msgid "(c) 1998-2004, Kalle Dalheimer and Klarälvdalens Datakonsult AB"
+msgid "(c) 1998-2006, Kalle Dalheimer and Klarälvdalens Datakonsult AB"
 msgstr "(c) 1998-2001, Kalle Dalheimer and Klaralvdalens Datakonsult AB"
 
 #: kchart_aboutdata.h:39
@@ -1399,43 +1760,6 @@ msgstr ""
 msgid "Created chart preview images, toolbar icons"
 msgstr ""
 
-#: kdchart/KDChartAxesPainter.cpp:3150
-msgid "Item "
-msgstr ""
-
-#: kdchart/KDChartHiLoPainter.cpp:82
-#, c-format
-msgid "Value %1"
-msgstr ""
-
-#: kdchart/KDChartParams_io.cpp:2594 kdchart/KDChartParams_io.cpp:2650
-#: kdchart/KDChartParams_io.cpp:2814 kdchart/KDChartParams_io.cpp:2852
-msgid "Square"
-msgstr ""
-
-#: kdchart/KDChartParams_io.cpp:2598 kdchart/KDChartParams_io.cpp:2609
-#: kdchart/KDChartParams_io.cpp:2654 kdchart/KDChartParams_io.cpp:2818
-#: kdchart/KDChartParams_io.cpp:2821 kdchart/KDChartParams_io.cpp:2856
-msgid "Circle"
-msgstr ""
-
-#: kdchart/KDChartParams_io.cpp:2600 kdchart/KDChartParams_io.cpp:2656
-msgid "One pixel"
-msgstr ""
-
-#: kdchart/KDChartParams_io.cpp:2602 kdchart/KDChartParams_io.cpp:2658
-msgid "Four pixels"
-msgstr ""
-
-#: kdchart/KDChartParams_io.cpp:2606 kdchart/KDChartParams_io.cpp:2662
-msgid "Cross"
-msgstr "Chéo( Cross)"
-
-#: kdchart/KDChartPiePainter.cpp:786 kdchart/KDChartRingPainter.cpp:384
-#, c-format
-msgid "Item %1"
-msgstr ""
-
 #: _translatorinfo.cpp:1
 msgid ""
 "_: NAME OF TRANSLATORS\n"
@@ -1447,6 +1771,25 @@ msgid ""
 "_: EMAIL OF TRANSLATORS\n"
 "Your emails"
 msgstr "vuhung@fedụuec.ac.jp"
+
+#, fuzzy
+#~ msgid "Chart Config Dialog"
+#~ msgstr "Hộp thoại cấu hình Chart"
+
+#, fuzzy
+#~ msgid "Has grid:"
+#~ msgstr "Có grid"
+
+#, fuzzy
+#~ msgid "&Configure Chart..."
+#~ msgstr "&Cấu hình"
+
+#, fuzzy
+#~ msgid "&Configure Data Format..."
+#~ msgstr "&Cấu hình"
+
+#~ msgid "Cross"
+#~ msgstr "Chéo( Cross)"
 
 #, fuzzy
 #~ msgid "Tiled"
@@ -1510,10 +1853,6 @@ msgstr "vuhung@fedụuec.ac.jp"
 
 #~ msgid "Beside"
 #~ msgstr "Bên cạnh"
-
-#, fuzzy
-#~ msgid "Legend..."
-#~ msgstr "Legend"
 
 #, fuzzy
 #~ msgid "Text Legend..."

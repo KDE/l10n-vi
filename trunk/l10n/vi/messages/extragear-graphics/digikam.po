@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-08 08:39+0200\n"
+"POT-Creation-Date: 2006-09-09 08:27+0200\n"
 "PO-Revision-Date: 2006-06-16 21:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -155,7 +155,7 @@ msgstr "<i>không sẵn sàng</i>"
 msgid "RAW Image"
 msgstr "Ảnh RAW"
 
-#: digikam/albumiconview.cpp:576 imageplugins/imageeffect_ratiocrop.cpp:100
+#: digikam/albumiconview.cpp:578 imageplugins/imageeffect_ratiocrop.cpp:100
 #: imageplugins/imageeffect_ratiocrop.cpp:199
 #: imageplugins/imageeffect_ratiocrop.cpp:200
 #: libs/imageproperties/imagepropertiestab.cpp:390
@@ -267,7 +267,7 @@ msgstr "Tìm kiếm:"
 msgid "Recent Tags"
 msgstr "Thẻ gần đầy"
 
-#: digikam/digikamview.cpp:153 libs/imageproperties/imagedescedittab.cpp:208
+#: digikam/digikamview.cpp:154 libs/imageproperties/imagedescedittab.cpp:208
 #: libs/imageproperties/imagedescedittab.cpp:569
 msgid "Tags"
 msgstr "Thẻ"
@@ -1605,26 +1605,26 @@ msgstr ""
 "mục cần dùng là thư viện tập ảnh."
 
 #: digikam/albumfolderview.cpp:829 digikam/albumfolderview.cpp:958
-#: digikam/albumfolderview.cpp:1031 digikam/albumiconview.cpp:1099
+#: digikam/albumfolderview.cpp:1031 digikam/albumiconview.cpp:1107
 #: digikam/tagfolderview.cpp:663
 msgid "&Move Here"
 msgstr "Chu&yển vào đây"
 
 #: digikam/albumfolderview.cpp:831 digikam/albumfolderview.cpp:927
 #: digikam/albumfolderview.cpp:961 digikam/albumfolderview.cpp:1034
-#: digikam/albumiconview.cpp:1102 digikam/albumiconview.cpp:1142
-#: digikam/albumiconview.cpp:1184 digikam/tagfilterview.cpp:323
+#: digikam/albumiconview.cpp:1110 digikam/albumiconview.cpp:1150
+#: digikam/albumiconview.cpp:1192 digikam/tagfilterview.cpp:323
 #: digikam/tagfolderview.cpp:665 digikam/tagfolderview.cpp:746
 #: digikam/tagfolderview.cpp:776 utilities/cameragui/cameraiconview.cpp:539
 msgid "C&ancel"
 msgstr "&Thôi"
 
-#: digikam/albumfolderview.cpp:925 digikam/albumiconview.cpp:515
+#: digikam/albumfolderview.cpp:925 digikam/albumiconview.cpp:517
 msgid "Set as Album Thumbnail"
 msgstr "Đặt là hỉnh thu nhỏ tập ảnh"
 
 #: digikam/albumfolderview.cpp:959 digikam/albumfolderview.cpp:1032
-#: digikam/albumiconview.cpp:1100
+#: digikam/albumiconview.cpp:1108
 msgid "&Copy Here"
 msgstr "&Chép vào đây"
 
@@ -1740,26 +1740,21 @@ msgstr "Cần làm"
 msgid "Back to Album"
 msgstr "Chọn tập ảnh"
 
-#: digikam/albumiconview.cpp:508 digikam/albumwidgetstack.cpp:84
+#: digikam/albumiconview.cpp:510 digikam/albumwidgetstack.cpp:84
 #: digikam/digikamapp.cpp:535
 #, fuzzy
 msgid "Edit..."
 msgstr "&Sửa..."
 
-#: digikam/imagepreviewwidget.cpp:200
-msgid "Cannot display image preview!"
-msgstr ""
-
-#: digikam/imagepreviewwidget.cpp:210
+#: digikam/imagepreviewwidget.cpp:181
 #, fuzzy
-msgid "Preview extraction in progress..."
-msgstr ""
-"Đang trong\n"
-"tiến trình tính\n"
-"biểu đồ tần xuất..."
+msgid ""
+"Cannot display preview for\n"
+"\"%1\""
+msgstr "Không thể tạo hình thu nhỏ cho %1"
 
-#: digikam/imagepreviewwidget.cpp:220
-msgid "No item to preview."
+#: digikam/imagepreviewwidget.cpp:192
+msgid "No item to preview in this album."
 msgstr ""
 
 #: digikam/searchadvanceddialog.cpp:186 digikam/searchfolderview.cpp:76
@@ -1857,7 +1852,7 @@ msgstr ""
 "Thẻ « %1 » có %n thẻ phụ. Việc xoá bỏ thẻ này sẽ cũng xoá bỏ thẻ phụ đó. Bạn có "
 "chắc muốn tiếp tục không?"
 
-#: digikam/albumiconview.cpp:517 digikam/tagfilterview.cpp:321
+#: digikam/albumiconview.cpp:519 digikam/tagfilterview.cpp:321
 #: digikam/tagfolderview.cpp:744
 msgid "Set as Tag Thumbnail"
 msgstr "Đặt là hình thu nhỏ thẻ"
@@ -2225,58 +2220,63 @@ msgstr ""
 msgid "Duration: %1"
 msgstr "Độ bão hoà:"
 
-#: digikam/albumiconview.cpp:509
+#: digikam/albumiconview.cpp:509 digikam/digikamapp.cpp:527
+#, fuzzy
+msgid "View..."
+msgstr "Xem/Sửa..."
+
+#: digikam/albumiconview.cpp:511
 msgid "Open With"
 msgstr "Mở bằng"
 
-#: digikam/albumiconview.cpp:556
+#: digikam/albumiconview.cpp:558
 #: utilities/imageeditor/editor/imagewindow.cpp:527
 msgid "Assign Tag"
 msgstr "Gán thẻ"
 
-#: digikam/albumiconview.cpp:558
+#: digikam/albumiconview.cpp:560
 #: utilities/imageeditor/editor/imagewindow.cpp:528
 msgid "Remove Tag"
 msgstr "Gỡ bỏ thẻ"
 
-#: digikam/albumiconview.cpp:593
+#: digikam/albumiconview.cpp:595
 msgid "Assign Rating"
 msgstr "Gán đánh giá"
 
-#: digikam/albumiconview.cpp:628 digikam/digikamapp.cpp:545
+#: digikam/albumiconview.cpp:630 digikam/digikamapp.cpp:545
 msgid "Rename..."
 msgstr "Thay tên..."
 
-#: digikam/albumiconview.cpp:631
+#: digikam/albumiconview.cpp:633
 #, c-format
 msgid ""
 "_n: Move to Trash\n"
 "Move %n Files to Trash"
 msgstr ""
 
-#: digikam/albumiconview.cpp:785 digikam/albumiconview.cpp:789
+#: digikam/albumiconview.cpp:793 digikam/albumiconview.cpp:797
 #, fuzzy
 msgid "Rename Item (%1)"
 msgstr "Thay tên mục"
 
-#: digikam/albumiconview.cpp:786 digikam/albumiconview.cpp:790
+#: digikam/albumiconview.cpp:794 digikam/albumiconview.cpp:798
 #, fuzzy
 msgid "Enter new name (without extension):"
 msgstr "Hãy nhập tên mới:"
 
-#: digikam/albumiconview.cpp:952
+#: digikam/albumiconview.cpp:960
 msgid "Album \"%1\""
 msgstr "Tập « %1 »"
 
-#: digikam/albumiconview.cpp:1139
+#: digikam/albumiconview.cpp:1147
 msgid "&Assign Tag '%1' to Selected Images"
 msgstr "&Gán thẻ « %1 » cho các ảnh đã chọn"
 
-#: digikam/albumiconview.cpp:1182
+#: digikam/albumiconview.cpp:1190
 msgid "&Assign Tags to Selected Images"
 msgstr "&Gán thẻ cho các ảnh đã chọn"
 
-#: digikam/albumiconview.cpp:1353
+#: digikam/albumiconview.cpp:1361
 #, c-format
 msgid "Failed to correct Exif orientation for file %1."
 msgstr "Lỗi sửa chữa hướng EXIF cho tập tin %1."
@@ -2285,7 +2285,7 @@ msgstr "Lỗi sửa chữa hướng EXIF cho tập tin %1."
 msgid "Not Tagged"
 msgstr "Chưa có thẻ"
 
-#: digikam/digikamview.cpp:158 digikam/tagfilterview.cpp:164
+#: digikam/digikamview.cpp:159 digikam/tagfilterview.cpp:164
 #: digikam/tagfilterview.cpp:318 digikam/tagfilterview.cpp:532
 msgid "Tag Filters"
 msgstr "Bộ lọc thẻ"
@@ -2548,11 +2548,6 @@ msgstr "Mở bằng Konqueror"
 #: digikam/digikamapp.cpp:513
 msgid "New &Tag..."
 msgstr "&Thẻ mới..."
-
-#: digikam/digikamapp.cpp:527
-#, fuzzy
-msgid "View..."
-msgstr "Xem/Sửa..."
 
 #: digikam/digikamapp.cpp:542
 msgid ""
@@ -2892,19 +2887,19 @@ msgstr ""
 msgid "Save search as:"
 msgstr "Lưu tìm kiếm dạng:"
 
-#: digikam/digikamview.cpp:151 utilities/setup/setup.cpp:134
+#: digikam/digikamview.cpp:152 utilities/setup/setup.cpp:134
 msgid "Albums"
 msgstr "Tập"
 
-#: digikam/digikamview.cpp:152
+#: digikam/digikamview.cpp:153
 msgid "Dates"
 msgstr "Ngày"
 
-#: digikam/digikamview.cpp:154
+#: digikam/digikamview.cpp:155
 msgid "Searches"
 msgstr "Việc tìm kiếm"
 
-#: digikam/digikamview.cpp:767
+#: digikam/digikamview.cpp:771
 #, fuzzy
 msgid "Select Image to Add"
 msgstr "Xoá bỏ ảnh"
@@ -6950,15 +6945,15 @@ msgid ""
 "pictures.</p>"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:95
+#: utilities/cameragui/renamecustomizer.cpp:109
 msgid "Renaming Options"
 msgstr "Tùy chọn thay tên"
 
-#: utilities/cameragui/renamecustomizer.cpp:102
+#: utilities/cameragui/renamecustomizer.cpp:116
 msgid "Camera filenames"
 msgstr "Tên tập tin máy ảnh"
 
-#: utilities/cameragui/renamecustomizer.cpp:103
+#: utilities/cameragui/renamecustomizer.cpp:117
 msgid ""
 "<p>Toogle on this option to use camera provided image filenames without "
 "modifications."
@@ -6966,83 +6961,99 @@ msgstr ""
 "<p>Bật/tắt tùy chọn này để dùng tên tập tin ảnh được cung cấp bởi máy ảnh mà "
 "không được sửa đổi."
 
-#: utilities/cameragui/renamecustomizer.cpp:112
+#: utilities/cameragui/renamecustomizer.cpp:126
 msgid "Change case to:"
 msgstr "Đổi chữ sang:"
 
-#: utilities/cameragui/renamecustomizer.cpp:116
+#: utilities/cameragui/renamecustomizer.cpp:130
 msgid "Leave as Is"
 msgstr "Để lại"
 
-#: utilities/cameragui/renamecustomizer.cpp:117
+#: utilities/cameragui/renamecustomizer.cpp:131
 msgid "Upper"
 msgstr "Chữ hoa"
 
-#: utilities/cameragui/renamecustomizer.cpp:118
+#: utilities/cameragui/renamecustomizer.cpp:132
 msgid "Lower"
 msgstr "Chữ thường"
 
-#: utilities/cameragui/renamecustomizer.cpp:120
+#: utilities/cameragui/renamecustomizer.cpp:134
 msgid "<p>Set here the method to use to change case of image filenames."
 msgstr "<p>Ở đây hãy đặt cách thay đổi chữ hoa/thường trong tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:132
+#: utilities/cameragui/renamecustomizer.cpp:146
 msgid "Customize"
 msgstr "Tùy chỉnh"
 
-#: utilities/cameragui/renamecustomizer.cpp:134
+#: utilities/cameragui/renamecustomizer.cpp:148
 msgid "<p>Toogle on this option to customize image filenames during download."
 msgstr "<p>Bật/tắt tùy chọn này để tùy chỉnh tên tập tin ảnh trong khi tải về."
 
-#: utilities/cameragui/renamecustomizer.cpp:145
+#: utilities/cameragui/renamecustomizer.cpp:160
 msgid "Prefix:"
 msgstr "Tiền tố :"
 
-#: utilities/cameragui/renamecustomizer.cpp:150
+#: utilities/cameragui/renamecustomizer.cpp:165
 msgid "<p>Set here the string to use like a prefix of image filenames."
 msgstr "<p>Ở đây hãy đặt chuỗi sẽ là tiền tố của tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:153
-msgid "Add:"
-msgstr "Thêm:"
+#: utilities/cameragui/renamecustomizer.cpp:168
+#, fuzzy
+msgid "Postfix:"
+msgstr "Tiền tố :"
 
-#: utilities/cameragui/renamecustomizer.cpp:158
-msgid "Date and time"
-msgstr "Ngày và giờ"
+#: utilities/cameragui/renamecustomizer.cpp:172
+#, fuzzy
+msgid "<p>Set here the string to use like a postfix of image filenames."
+msgstr "<p>Ở đây hãy đặt chuỗi sẽ là tiền tố của tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:159
-msgid "Sequence number"
+#: utilities/cameragui/renamecustomizer.cpp:175
+#, fuzzy
+msgid "Add Date && Time"
+msgstr "Ngày và Giờ"
+
+#: utilities/cameragui/renamecustomizer.cpp:177
+#, fuzzy
+msgid "<p>Set this option to add the camera provided date and time."
+msgstr ""
+"<p>Hãy đặt tùy chọn này để hiển thị thông tin về ảnh khi con chuột di chuyển "
+"bên dưới mục trong tập ảnh."
+
+#: utilities/cameragui/renamecustomizer.cpp:179
+#, fuzzy
+msgid "Add Camera Name"
+msgstr "Thêm máy ảnh.."
+
+#: utilities/cameragui/renamecustomizer.cpp:181
+#, fuzzy
+msgid "<p>Set this option to add the camera name."
+msgstr ""
+"<p>Hãy đặt tùy chọn này để hiển thị thẻ digiKam ở sau hình thu nhỏ của ảnh."
+
+#: utilities/cameragui/renamecustomizer.cpp:183
+#, fuzzy
+msgid "Add Sequence Number"
 msgstr "Số hiệu dây"
 
-#: utilities/cameragui/renamecustomizer.cpp:160
-msgid "Time stamp & number"
-msgstr "Ghi giờ và số"
-
-#: utilities/cameragui/renamecustomizer.cpp:161
+#: utilities/cameragui/renamecustomizer.cpp:185
+#, fuzzy
 msgid ""
-"<p>Set here the information to add to filename:"
-"<p><b>Date and time</b>: add the camera provided date and time."
-"<p><b>Sequence number</b>: add a sequence number."
-"<p><b>Time stamp & number</b>: add both camera provided date and time and a "
-"sequence number."
+"<p>Set this option to add a sequence number starting with the index set below."
 msgstr ""
-"<p>Ở đây hãy đặt thông tin cần thêm vào tên tập tin:"
-"<p><b>Ngày và giờ</b>: thêm ngày th áng và giờ được cung cấp bởi máy ảnh."
-"<p><b>Số hiệu dây </b>: thêm số hiệu dây."
-"<p><b>Ghi giờ và số </b>: thêm cả ngày th áng và giờ được cung cấp bởi máy ảnh "
-"lẫn số hiệu dây."
+"<p>Hãy đặt tùy chọn này để hiển thị thông tin về ảnh khi con chuột di chuyển "
+"bên dưới mục trong tập ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:168
+#: utilities/cameragui/renamecustomizer.cpp:187
 msgid "Start Index:"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:171
+#: utilities/cameragui/renamecustomizer.cpp:190
 msgid ""
 "<p>Set here the start index value used to rename picture files with a sequence "
 "number."
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:314
+#: utilities/cameragui/renamecustomizer.cpp:331
 msgid "photo"
 msgstr "ảnh"
 
@@ -7542,6 +7553,25 @@ msgstr "Đang tải về %i tập tin %1..."
 #, fuzzy
 msgid "&Upload into camera"
 msgstr "Đang tải máy ảnh..."
+
+#, fuzzy
+#~ msgid "Preview extraction in progress..."
+#~ msgstr ""
+#~ "Đang trong\n"
+#~ "tiến trình tính\n"
+#~ "biểu đồ tần xuất..."
+
+#~ msgid "Add:"
+#~ msgstr "Thêm:"
+
+#~ msgid "Date and time"
+#~ msgstr "Ngày và giờ"
+
+#~ msgid "Time stamp & number"
+#~ msgstr "Ghi giờ và số"
+
+#~ msgid "<p>Set here the information to add to filename:<p><b>Date and time</b>: add the camera provided date and time.<p><b>Sequence number</b>: add a sequence number.<p><b>Time stamp & number</b>: add both camera provided date and time and a sequence number."
+#~ msgstr "<p>Ở đây hãy đặt thông tin cần thêm vào tên tập tin:<p><b>Ngày và giờ</b>: thêm ngày th áng và giờ được cung cấp bởi máy ảnh.<p><b>Số hiệu dây </b>: thêm số hiệu dây.<p><b>Ghi giờ và số </b>: thêm cả ngày th áng và giờ được cung cấp bởi máy ảnh lẫn số hiệu dây."
 
 #~ msgid "Tooltips Settings"
 #~ msgstr "Thiết lập mẹo công cụ"

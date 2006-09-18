@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmfonts\n"
-"POT-Creation-Date: 2006-08-22 02:34+0200\n"
+"POT-Creation-Date: 2006-09-18 02:35+0200\n"
 "PO-Revision-Date: 2006-04-25 09:49+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,27 +16,27 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: KBabel 1.10\n"
 
-#: fonts.cpp:208
+#: fonts.cpp:209
 msgid "Configure Anti-Alias Settings"
 msgstr "Cấu hình thiết lập làm mịn"
 
-#: fonts.cpp:214
+#: fonts.cpp:215
 msgid "E&xclude range:"
 msgstr "&Vùng loại trừ:"
 
-#: fonts.cpp:217 fonts.cpp:222
+#: fonts.cpp:218 fonts.cpp:223
 msgid " pt"
 msgstr " điểm"
 
-#: fonts.cpp:219
+#: fonts.cpp:220
 msgid " to "
 msgstr " tới "
 
-#: fonts.cpp:225
+#: fonts.cpp:226
 msgid "&Use sub-pixel hinting:"
 msgstr "&Dùng vết điểm con:"
 
-#: fonts.cpp:228
+#: fonts.cpp:229
 msgid ""
 "If you have a TFT or LCD screen you can further improve the quality of "
 "displayed fonts by selecting this option."
@@ -50,7 +50,7 @@ msgstr ""
 "<br>"
 "<br><b>Tính năng sẽ không làm việc với các màn hình CRT.</b>"
 
-#: fonts.cpp:236
+#: fonts.cpp:237
 msgid ""
 "In order for sub-pixel hinting to work correctly you need to know how the "
 "sub-pixels of your display are aligned."
@@ -64,85 +64,85 @@ msgstr ""
 "và xanh lá cây. Hầu hết các màn hình có một tuyến các điểm con RGB, một số có "
 "BGR."
 
-#: fonts.cpp:247
+#: fonts.cpp:248
 msgid "Hinting style: "
 msgstr "Kiểu vết: "
 
-#: fonts.cpp:254
+#: fonts.cpp:255
 msgid ""
 "Hinting is a process used to enhance the quality of fonts at small sizes."
 msgstr ""
 "Vết là tiến trình dùng để tăng chất lượng của phông chữ kích thước nhỏ."
 
-#: fonts.cpp:491
+#: fonts.cpp:492
 msgid "General"
 msgstr "Chung"
 
-#: fonts.cpp:492
+#: fonts.cpp:493
 msgid "Fixed width"
 msgstr "Bề ngang cố định"
 
-#: fonts.cpp:493
+#: fonts.cpp:494
 msgid "Toolbar"
 msgstr "Thanh công cụ"
 
-#: fonts.cpp:494
+#: fonts.cpp:495
 msgid "Menu"
 msgstr "Thực đơn"
 
-#: fonts.cpp:495
+#: fonts.cpp:496
 msgid "Window title"
 msgstr "Tiêu đề cửa sổ"
 
-#: fonts.cpp:496
+#: fonts.cpp:497
 msgid "Taskbar"
 msgstr "Thanh tác vụ"
 
-#: fonts.cpp:497
+#: fonts.cpp:498
 msgid "Desktop"
 msgstr "Màn hình"
 
-#: fonts.cpp:531
+#: fonts.cpp:532
 msgid "Used for normal text (e.g. button labels, list items)."
 msgstr "Dùng cho chữ thông thường (ví dụ, nhãn nút, mục danh sách)."
 
-#: fonts.cpp:532
+#: fonts.cpp:533
 msgid "A non-proportional font (i.e. typewriter font)."
 msgstr "Phông chữ không tỷ lệ (như phông máy chữ)."
 
-#: fonts.cpp:533
+#: fonts.cpp:534
 msgid "Used to display text beside toolbar icons."
 msgstr "Dùng để hiển thị chữ bên cạnh biểu tượng thanh công cụ."
 
-#: fonts.cpp:534
+#: fonts.cpp:535
 msgid "Used by menu bars and popup menus."
 msgstr "Dùng bởi thanh thực đơn và thực đơn chuột phải."
 
-#: fonts.cpp:535
+#: fonts.cpp:536
 msgid "Used by the window titlebar."
 msgstr "Dùng bởi thanh tiêu đề của cửa sổ."
 
-#: fonts.cpp:536
+#: fonts.cpp:537
 msgid "Used by the taskbar."
 msgstr "Dùng bởi thanh tác vụ."
 
-#: fonts.cpp:537
+#: fonts.cpp:538
 msgid "Used for desktop icons."
 msgstr "Dùng cho biểu tượng màn hình."
 
-#: fonts.cpp:588
+#: fonts.cpp:589
 msgid "Ad&just All Fonts..."
 msgstr "Chỉnh tất cả các &phông..."
 
-#: fonts.cpp:589
+#: fonts.cpp:590
 msgid "Click to change all fonts"
 msgstr "Nhấn để thay đổi mọi phông"
 
-#: fonts.cpp:596
+#: fonts.cpp:597
 msgid "Use a&nti-aliasing for fonts"
 msgstr "Dùng làm mị&n cho phông"
 
-#: fonts.cpp:597
+#: fonts.cpp:598
 msgid ""
 "If this option is selected, KDE will smooth the edges of curves in fonts."
 msgstr ""
@@ -152,16 +152,44 @@ msgstr ""
 msgid "Configure..."
 msgstr "Cấu hình..."
 
-#: fonts.cpp:676
+#: fonts.cpp:608
+msgid "Force fonts DPI"
+msgstr ""
+
+#: fonts.cpp:611
+msgid "96 DPI"
+msgstr ""
+
+#: fonts.cpp:612
+msgid "120 DPI"
+msgstr ""
+
+#: fonts.cpp:615
 msgid ""
-"<p>You have changed anti-aliasing related settings. This change will only "
-"affect newly started applications.</p>"
+"<p>This option forces a specific DPI value for fonts. It may be useful when the "
+"real DPI of the hardware is not detected properly and it is also often misused "
+"when poor quality fonts are used that do not look well with DPI values other "
+"than 96 or 120 DPI.</p>"
+"<p>The use of this option is generally discouraged. For selecting proper DPI "
+"value a better option is explicitly configuring it for the whole X server if "
+"possible (e.g. DisplaySize in xorg.conf or adding <i>-dpi value</i> "
+"to ServerLocalArgs= in $KDEDIR/share/config/kdm/kdmrc). When fonts do not "
+"render properly with real DPI value better fonts should be used or "
+"configuration of font hinting should be checked.</p>"
+msgstr ""
+
+#: fonts.cpp:728
+#, fuzzy
+msgid ""
+"<p>Some changes such as anti-aliasing will only affect newly started "
+"applications.</p>"
 msgstr ""
 "<p>Bạn đã thay đổi  các thiết lập liên quan đến làm mịn. Những thay đổi này chỉ "
 "có hiệu lực đối với các chương trình sẽ chạy.</p>"
 
-#: fonts.cpp:677
-msgid "Anti-Aliasing Settings Changed"
+#: fonts.cpp:729
+#, fuzzy
+msgid "Font Settings Changed"
 msgstr "Thiết lập làm mịn đã thay đổi"
 
 #: kxftconfig.cpp:876 kxftconfig.cpp:917

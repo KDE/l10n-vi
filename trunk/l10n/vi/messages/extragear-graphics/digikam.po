@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-20 08:35+0200\n"
+"POT-Creation-Date: 2006-09-21 08:38+0200\n"
 "PO-Revision-Date: 2006-06-16 21:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -497,6 +497,7 @@ msgid "<p>This is the histogram drawing of the selected image channel"
 msgstr "<p>Đây là bản vẽ biểu đồ tần xuất của kênh ảnh đã chọn"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:265
+#: utilities/setup/dcrawsettingswidget.cpp:251
 msgid "Range:"
 msgstr "Phạm vị:"
 
@@ -3931,6 +3932,7 @@ msgstr ""
 "màu trên ảnh, biểu đồ tần xuất sẽ hiển thị lớp màu tương ứng."
 
 #: imageplugins/imageeffect_bcg.cpp:144
+#: utilities/setup/dcrawsettingswidget.cpp:189
 msgid "Brightness:"
 msgstr "Độ sáng:"
 
@@ -5476,208 +5478,15 @@ msgid ""
 "using \"Tools\" menu."
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:111
-msgid "RAW Image Decoding Options"
-msgstr "Tùy chọn giải mã ảnh RAW"
-
-#: utilities/setup/setupiofiles.cpp:115
-#, fuzzy
-msgid "16 bits color depth"
-msgstr "Độ sâu màu :"
-
-#: utilities/setup/setupiofiles.cpp:116
-msgid ""
-"<p>If enable, all RAW files will be decoded to 16-bit color depth using a "
-"linear gamma curve. To prevent black picture rendering on editor, it's "
-"recommended to use Color Management in this mode."
-"<p>If disable, all RAW files will be decoded to 8-bit color depth with a BT.709 "
-"gamma curve and a 99th-percentile white point. This mode is more faster than "
-"16-bit decoding."
-msgstr ""
-
-#: utilities/setup/setupiofiles.cpp:125
-msgid "Interpolate RGB as four colors"
-msgstr "Nội suy RGB là bốn màu"
-
-#: utilities/setup/setupiofiles.cpp:126
-msgid ""
-"<p>Interpolate RGB as four colors. This blurs the image a little, but it "
-"eliminates false 2x2 mesh patterns."
-"<p>"
-msgstr ""
-"<p>Nội suy RGB là bốn màu. Tính năng này che mờ ảnh một ít, nhưng loại ra mẫu "
-"mắc lưới 2×2 giả."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:130
-msgid "Automatic color balance"
-msgstr "Cán cân màu tự động"
-
-#: utilities/setup/setupiofiles.cpp:131
-msgid ""
-"<p>Automatic color balance. The default is to use a fixed color balance based "
-"on a white card photographed in sunlight."
-"<p>"
-msgstr ""
-"<p>Cán cân màu tự động. Mặc định là dùng một cán cân màu cố định đựa vào thẻ "
-"trắng được chụp ảnh dưới ánh mặt trời."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:136
-msgid "Camera color balance"
-msgstr "Cán cân màu máy ảnh"
-
-#: utilities/setup/setupiofiles.cpp:137
-msgid ""
-"<p>Use the color balance specified by the camera. If this can't be found, "
-"reverts to the default."
-"<p>"
-msgstr ""
-"<p>Dùng cán cân màu được xác định bởi máy ảnh. Nếu không thể tìm nó, hoàn "
-"nguyên giá trị mặc định."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:141
-msgid "Unclip colors"
-msgstr "Hủy xén màu"
-
-#: utilities/setup/setupiofiles.cpp:142
-msgid ""
-"<p>Enabled this option to leave the image color completely unclipped else all "
-"colors will be cliped to prevent pink highlights."
-"<p>"
-msgstr ""
-"<p>Hãy bật tùy chọn này để làm cho màu ảnh hoàn toàn chưa được xén, nếu không "
-"thì mọi màu sẽ được xén để ngăn cản chỗ sáng màu hồng."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:146
-msgid "Using Super CCD secondary sensors (Fuji cameras only)"
-msgstr "Dùng bộ nhạy phụ Super CCD (chỉ máy ảnh Fuji)"
-
-#: utilities/setup/setupiofiles.cpp:147
-msgid ""
-"<p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect "
-"underexposing the image by four stops to reveal detail in the highlights. For "
-"all other camera types this option is ignored."
-"<p>"
-msgstr ""
-"<p>Đối với máy ảnh SR Super CCD Fuji, hãy dùng bộ nhạy phụ, kết quả là chụp non "
-"ảnh theo bốn bước để hiển thị chi tiết trong những chỗ sáng. Đối với các máy "
-"ảnh khác, tùy chọn này bị bỏ qua."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:152
-msgid "Enable RAW decoding quality"
-msgstr "Bật chất lượng giải mã RAW"
-
-#: utilities/setup/setupiofiles.cpp:153
-msgid ""
-"<p>Toggle quality decoding option for RAW images using a setting value."
-"<p>Enable this option if you use dcraw version >= 0.8.0 in your system."
-"<p>"
-msgstr ""
-"<p>Bật/tắt tùy chọn giải mã chất lượng cho ảnh RAW, dùng giá trị đặt."
-"<p>Bật tùy chọn này nếu bạn dùng trình dcraw phiên bản ≥ 0.8.0 trên hệ thống "
-"mình."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:158
-msgid "Bilinear interpolation"
-msgstr ""
-
-#: utilities/setup/setupiofiles.cpp:159
-msgid "VNG interpolation"
-msgstr ""
-
-#: utilities/setup/setupiofiles.cpp:160
-msgid "AHD interpolation"
-msgstr ""
-
-#: utilities/setup/setupiofiles.cpp:161
-msgid ""
-"<p>Select here the demosaicing RAW images decoding interpolation method. A "
-"demosaicing algorithm is a digital image process used to interpolate a complete "
-"image from the partial raw data received from the color-filtered image sensor "
-"internal to many digital cameras in form of a matrix of colored pixels. Also "
-"known as CFA interpolation or color reconstruction, another common spelling is "
-"demosaicing. There are 3 methods to demosaicing RAW images:"
-"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
-"(default - for slow computer). In this method, the red value of a non-red pixel "
-"is computed as the average of the adjacent red pixels, and similar for blue and "
-"green."
-"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
-"computes gradients near the pixel of interest and uses the lower gradients "
-"(representing smoother and more similar parts of the image) to make an "
-"estimate."
-"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
-"selects the direction of interpolation so as to maximize a homogeneity metric, "
-"thus typically minimizing color artifacts."
-"<p>"
-msgstr ""
-
-#: utilities/setup/setupiofiles.cpp:181
-msgid "Enable noise reduction during decoding (warning: slow)"
-msgstr "Bật giảm ồn trong khi giải mã (cảnh báo : chạy chậm)"
-
-#: utilities/setup/setupiofiles.cpp:183
-msgid ""
-"<p>Toggle bilateral filter to smooth noise while preserving edges. This option "
-"can be use to reduce low noise. The pictures edges are preserved because it is "
-"applied in CIELab color space instead of RGB."
-"<p><b>Warnings</b>:"
-"<p>This filter isn't adapted if your RAW picture have been taken using hight "
-"sensitivity (over 1600 ISO). Its recommended to use the noise reduction filter "
-"from image editor instead."
-"<p>This filter can take a while. Do not use if your computer is slow."
-"<p>This option require dcraw version >= 0.8.0."
-"<p>"
-msgstr ""
-"<p>Bật/tắt bộ lọc hai bên để làm mịn ồn còn bảo tồn cạnh. Tùy chọn này có thể "
-"được dùng để giảm ồn thấp. Các cạnh của ảnh được bảo tồn vì nó được áp dụng "
-"trong miền màu CIELab thay vào RGB."
-"<p><b>Cảnh báo </b>:"
-"<p>Bộ lọc này không thích hợp nếu ảnh RAW của bạn đã được chụp dùng độ nhạy cao "
-"hơn (trên 1600 ISO). Khuyên bạn dùng bộ lọc giảm ồn từ bộ sửa đổi thay thế."
-"<p>Việc chạy bộ lọc này có thể hơi lâu. Đừng dùng nó trên máy tính chạy chậm."
-"<p>Tùy chọn này cần thiết phần mềm dcraw phiên bản ≥ 0.8.0."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:198
-msgid "Sigma domain:"
-msgstr "Miền Sigma Σ:"
-
-#: utilities/setup/setupiofiles.cpp:199
-msgid ""
-"<p>The noise reduction Sigma Domain in units of pixels. The default value is "
-"2.0."
-"<p>"
-msgstr ""
-"<p>Miền Sigma giảm ồn theo đơn vị là điểm ảnh. Giá trị mặc định là 2.0."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:208
-msgid "Sigma range:"
-msgstr "Phạm vi Sigma:"
-
-#: utilities/setup/setupiofiles.cpp:209
-msgid ""
-"<p>The noise reduction Sigma Range in units of CIELab colorspace. The default "
-"value is 4.0."
-"<p>"
-msgstr ""
-"<p>Miền Sigma giảm ồn theo đơn vị là miền màu CIELab. Giá trị mặc định là 4.0."
-"<p>"
-
-#: utilities/setup/setupiofiles.cpp:236
+#: utilities/setup/setupiofiles.cpp:91
 msgid "Saving Images Options"
 msgstr "Tùy chọn lưu ảnh"
 
-#: utilities/setup/setupiofiles.cpp:242
+#: utilities/setup/setupiofiles.cpp:97
 msgid "JPEG quality:"
 msgstr "Chất lượng JPEG:"
 
-#: utilities/setup/setupiofiles.cpp:244
+#: utilities/setup/setupiofiles.cpp:99
 msgid ""
 "<p>The quality value for JPEG images:"
 "<p><b>1</b>: low quality (high compression and small file size)"
@@ -5693,11 +5502,11 @@ msgstr ""
 "<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ tập tin lớn)"
 "<p><b>Ghi chú : JPEG không phải là dạng thức nén ảnh không mất gì.</b>"
 
-#: utilities/setup/setupiofiles.cpp:258
+#: utilities/setup/setupiofiles.cpp:113
 msgid "PNG compression:"
 msgstr "Nén PNG:"
 
-#: utilities/setup/setupiofiles.cpp:260
+#: utilities/setup/setupiofiles.cpp:115
 msgid ""
 "<p>The compression value for PNG images:"
 "<p><b>1</b>: low compression (large file size but short compression duration - "
@@ -5712,11 +5521,11 @@ msgstr ""
 "<p><b>9</b>: cấp nén cao (kích cỡ tập tin nhỏ còn tiến trình nén dài)"
 "<p><b>Ghi chú : PNG luôn luôn là dạng thức nén ảnh không mất gì.</b>"
 
-#: utilities/setup/setupiofiles.cpp:271
+#: utilities/setup/setupiofiles.cpp:126
 msgid "Compress TIFF files"
 msgstr "Nén tập tin TIFF"
 
-#: utilities/setup/setupiofiles.cpp:274
+#: utilities/setup/setupiofiles.cpp:129
 msgid ""
 "<p>Toggle compression for TIFF images."
 "<p>If you enable this option, you can reduce the final file size of the TIFF "
@@ -5839,6 +5648,212 @@ msgstr ""
 #: utilities/setup/setupgeneral.cpp:226
 msgid "Sorry; cannot use home directory as albums library."
 msgstr "Tiếc là không thể dùng thư mục chính là thư viện tập ảnh."
+
+#: utilities/setup/dcrawsettingswidget.cpp:100
+msgid "RAW Decoding Settings (dcraw %1)"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:108
+#, fuzzy
+msgid "16 bits color depth"
+msgstr "Độ sâu màu :"
+
+#: utilities/setup/dcrawsettingswidget.cpp:109
+msgid ""
+"<p>If enable, all RAW files will be decoded to 16-bit color depth using a "
+"linear gamma curve. To prevent black picture rendering on editor, it's "
+"recommended to use Color Management in this mode."
+"<p>If disable, all RAW files will be decoded to 8-bit color depth with a BT.709 "
+"gamma curve and a 99th-percentile white point. This mode is more faster than "
+"16-bit decoding."
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:118
+msgid "Interpolate RGB as four colors"
+msgstr "Nội suy RGB là bốn màu"
+
+#: utilities/setup/dcrawsettingswidget.cpp:119
+msgid ""
+"<p><b>Interpolate RGB as four colors</b>"
+"<p>The default is to assume that all green pixels are the same. If even-row "
+"green pixels are more sensitive to ultraviolet light than odd-row this "
+"difference causes a mesh pattern in the output; using this option solves this "
+"problem with minimal loss of detail."
+"<p>To resume, this option blurs the image a little, but it eliminates false 2x2 "
+"mesh patterns with VNG quality method or mazes with AHD quality method."
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:133
+#, fuzzy
+msgid "Use camera white balance"
+msgstr "Cán cân màu máy ảnh"
+
+#: utilities/setup/dcrawsettingswidget.cpp:134
+msgid ""
+"<p><b>Use camera white balance</b>"
+"<p>Use the camera's custom white-balance settings. The default is to use fixed "
+"daylight values, calculated from sample images. If this can't be found, reverts "
+"to the default."
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:143
+msgid "Automatic color balance"
+msgstr "Cán cân màu tự động"
+
+#: utilities/setup/dcrawsettingswidget.cpp:144
+#, fuzzy
+msgid ""
+"<p><b>Automatic color balance</b>"
+"<p>The default is to use a fixed color balance based on a white card "
+"photographed in sunlight."
+"<p>"
+msgstr ""
+"<p>Cán cân màu tự động. Mặc định là dùng một cán cân màu cố định đựa vào thẻ "
+"trắng được chụp ảnh dưới ánh mặt trời."
+"<p>"
+
+#: utilities/setup/dcrawsettingswidget.cpp:152
+#, fuzzy
+msgid "Use Super-CCD secondary sensors"
+msgstr "Dùng bộ nhạy phụ Super CCD (chỉ máy ảnh Fuji)"
+
+#: utilities/setup/dcrawsettingswidget.cpp:153
+#, fuzzy
+msgid ""
+"<p><b>Use Super CCD secondary sensors</b>"
+"<p>For Fuji Super CCD SR cameras, use the secondary sensors, in effect "
+"underexposing the image by four stops to reveal detail in the highlights. For "
+"all other camera types this option is ignored."
+"<p>"
+msgstr ""
+"<p>Đối với máy ảnh SR Super CCD Fuji, hãy dùng bộ nhạy phụ, kết quả là chụp non "
+"ảnh theo bốn bước để hiển thị chi tiết trong những chỗ sáng. Đối với các máy "
+"ảnh khác, tùy chọn này bị bỏ qua."
+"<p>"
+
+#: utilities/setup/dcrawsettingswidget.cpp:163
+#, fuzzy
+msgid "Highlights:"
+msgstr "Cao :"
+
+#: utilities/setup/dcrawsettingswidget.cpp:165
+msgid "Solid white"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:166
+#, fuzzy
+msgid "Unclip"
+msgstr "Hủy xén màu"
+
+#: utilities/setup/dcrawsettingswidget.cpp:167
+msgid "Reconstruct"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:168
+msgid ""
+"<p><b>Highlights</b>"
+"<p>Select here the highlight cliping method:"
+"<p><b>Solid white</b>: clip all highlights to solid white"
+"<p><b>Unclip</b>: leave highlights unclipped in various shades of pink"
+"<p><b>Reconstruct</b>: reconstruct highlights using a level value."
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:178
+msgid "Level:"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:181
+msgid ""
+"<p><b>Level</b>"
+"<p>Specify the reconstruct highlights level of ouput image. Low value favor "
+"whites and high value favor colors."
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:193
+msgid ""
+"<p><b>Brighness</b>"
+"<p>Specify the brightness level of ouput image.The default value is 1.0."
+"<p>"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:201
+msgid "Quality:"
+msgstr "Chất lượng:"
+
+#: utilities/setup/dcrawsettingswidget.cpp:203
+msgid "Bilinear interpolation"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:204
+msgid "VNG interpolation"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:205
+msgid "AHD interpolation"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:206
+msgid ""
+"<p><b>Quality</b>"
+"<p>Select here the demosaicing RAW images decoding interpolation method. A "
+"demosaicing algorithm is a digital image process used to interpolate a complete "
+"image from the partial raw data received from the color-filtered image sensor "
+"internal to many digital cameras in form of a matrix of colored pixels. Also "
+"known as CFA interpolation or color reconstruction, another common spelling is "
+"demosaicing. There are 3 methods to demosaicing RAW images:"
+"<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation "
+"(default - for slow computer). In this method, the red value of a non-red pixel "
+"is computed as the average of the adjacent red pixels, and similar for blue and "
+"green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate."
+"<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method "
+"selects the direction of interpolation so as to maximize a homogeneity metric, "
+"thus typically minimizing color artifacts."
+"<p>"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:229
+msgid "Enable noise reduction"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:230
+msgid ""
+"<p><b>Enable Noise Reduction</b>"
+"<p>Toggle bilateral filter to smooth noise while preserving edges. This option "
+"can be use to reduce low noise. The pictures edges are preserved because it is "
+"applied in CIELab color space instead of RGB."
+"<p>"
+msgstr ""
+
+#: utilities/setup/dcrawsettingswidget.cpp:240
+#, fuzzy
+msgid "Domain:"
+msgstr "Đang tải: "
+
+#: utilities/setup/dcrawsettingswidget.cpp:241
+#, fuzzy
+msgid ""
+"<p><b>Domain</b>"
+"<p>Set here the noise reduction Sigma Domain in units of pixels. The default "
+"value is 2.0."
+"<p>"
+msgstr ""
+"<p>Miền Sigma giảm ồn theo đơn vị là điểm ảnh. Giá trị mặc định là 2.0."
+"<p>"
+
+#: utilities/setup/dcrawsettingswidget.cpp:252
+#, fuzzy
+msgid ""
+"<p><b>Range</b>"
+"<p>Set here the noise reduction Sigma Range in units of CIELab colorspace. The "
+"default value is 4.0."
+"<p>"
+msgstr ""
+"<p>Miền Sigma giảm ồn theo đơn vị là miền màu CIELab. Giá trị mặc định là 4.0."
+"<p>"
 
 #: utilities/setup/setupimgplugins.cpp:84
 msgid ""
@@ -6958,15 +6973,15 @@ msgid ""
 "pictures.</p>"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:109
+#: utilities/cameragui/renamecustomizer.cpp:133
 msgid "Renaming Options"
 msgstr "Tùy chọn thay tên"
 
-#: utilities/cameragui/renamecustomizer.cpp:116
+#: utilities/cameragui/renamecustomizer.cpp:140
 msgid "Camera filenames"
 msgstr "Tên tập tin máy ảnh"
 
-#: utilities/cameragui/renamecustomizer.cpp:117
+#: utilities/cameragui/renamecustomizer.cpp:141
 msgid ""
 "<p>Toogle on this option to use camera provided image filenames without "
 "modifications."
@@ -6974,81 +6989,130 @@ msgstr ""
 "<p>Bật/tắt tùy chọn này để dùng tên tập tin ảnh được cung cấp bởi máy ảnh mà "
 "không được sửa đổi."
 
-#: utilities/cameragui/renamecustomizer.cpp:126
+#: utilities/cameragui/renamecustomizer.cpp:150
 msgid "Change case to:"
 msgstr "Đổi chữ sang:"
 
-#: utilities/cameragui/renamecustomizer.cpp:130
+#: utilities/cameragui/renamecustomizer.cpp:154
 msgid "Leave as Is"
 msgstr "Để lại"
 
-#: utilities/cameragui/renamecustomizer.cpp:131
+#: utilities/cameragui/renamecustomizer.cpp:155
 msgid "Upper"
 msgstr "Chữ hoa"
 
-#: utilities/cameragui/renamecustomizer.cpp:132
+#: utilities/cameragui/renamecustomizer.cpp:156
 msgid "Lower"
 msgstr "Chữ thường"
 
-#: utilities/cameragui/renamecustomizer.cpp:134
+#: utilities/cameragui/renamecustomizer.cpp:158
 msgid "<p>Set here the method to use to change case of image filenames."
 msgstr "<p>Ở đây hãy đặt cách thay đổi chữ hoa/thường trong tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:146
+#: utilities/cameragui/renamecustomizer.cpp:170
 msgid "Customize"
 msgstr "Tùy chỉnh"
 
-#: utilities/cameragui/renamecustomizer.cpp:148
+#: utilities/cameragui/renamecustomizer.cpp:172
 msgid "<p>Toogle on this option to customize image filenames during download."
 msgstr "<p>Bật/tắt tùy chọn này để tùy chỉnh tên tập tin ảnh trong khi tải về."
 
-#: utilities/cameragui/renamecustomizer.cpp:160
+#: utilities/cameragui/renamecustomizer.cpp:184
 msgid "Prefix:"
 msgstr "Tiền tố :"
 
-#: utilities/cameragui/renamecustomizer.cpp:165
+#: utilities/cameragui/renamecustomizer.cpp:189
 #, fuzzy
 msgid "<p>Set the prefix which will be prepended to image filenames."
 msgstr "<p>Ở đây hãy đặt chuỗi sẽ là tiền tố của tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:168
+#: utilities/cameragui/renamecustomizer.cpp:192
 msgid "Suffix:"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:172
+#: utilities/cameragui/renamecustomizer.cpp:196
 #, fuzzy
 msgid "<p>Set the suffix which will be added to image filenames."
 msgstr "<p>Ở đây hãy đặt chuỗi sẽ là tiền tố của tên tập tin ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:175
+#: utilities/cameragui/renamecustomizer.cpp:199
 #, fuzzy
 msgid "Add Date && Time"
 msgstr "Ngày và Giờ"
 
-#: utilities/cameragui/renamecustomizer.cpp:177
+#: utilities/cameragui/renamecustomizer.cpp:201
 #, fuzzy
 msgid "<p>Set this option to add the camera provided date and time."
 msgstr ""
 "<p>Hãy đặt tùy chọn này để hiển thị thông tin về ảnh khi con chuột di chuyển "
 "bên dưới mục trong tập ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:179
+#: utilities/cameragui/cameraui.cpp:263
+#: utilities/cameragui/renamecustomizer.cpp:204
+#, fuzzy
+msgid "Date format:"
+msgstr "Thông tin ảnh"
+
+#: utilities/cameragui/renamecustomizer.cpp:206
+#, fuzzy
+msgid "Standard"
+msgstr "Thẻ EXIF chuẩn"
+
+#: utilities/cameragui/cameraui.cpp:265
+#: utilities/cameragui/renamecustomizer.cpp:207
+#, fuzzy
+msgid "ISO"
+msgstr "%1 ISO"
+
+#: utilities/cameragui/cameraui.cpp:266
+#: utilities/cameragui/renamecustomizer.cpp:208
+#, fuzzy
+msgid "Full Text"
+msgstr "Đầy"
+
+#: utilities/cameragui/cameraui.cpp:267
+#: utilities/cameragui/renamecustomizer.cpp:209
+#, fuzzy
+msgid "Local Settings"
+msgstr "Thiết lập chung"
+
+#: utilities/cameragui/renamecustomizer.cpp:210
+#, fuzzy
+msgid "Advanced..."
+msgstr "Tìm kiếm cấp cao..."
+
+#: utilities/cameragui/renamecustomizer.cpp:211
+msgid ""
+"<p>Select here your preferred date format used to create new albums. The "
+"options available are:</p>"
+"<p><b>Standard</b>: the date format that has been used as a standard by "
+"digiKam.Ex.: <i>20060824T142618</i></p><p/><b>ISO</b>"
+": the date format is in accordance with ISO 8601 (YYYY-MM-DD). Ex.: <i>"
+"2006-08-24T14:26:18</i></p>"
+"<p><b>Full Text</b>: the date format is in a user-readable string. Ex.: <i>"
+"Thu Aug 24 14:26:18 2006</i></p>"
+"<p><b>Local Settings</b>: the date format depending on KDE control panel "
+"settings.</p>"
+"<p><b>Advanced:</b> allows to specify a custom date format.</p>"
+msgstr ""
+
+#: utilities/cameragui/renamecustomizer.cpp:231
 #, fuzzy
 msgid "Add Camera Name"
 msgstr "Thêm máy ảnh.."
 
-#: utilities/cameragui/renamecustomizer.cpp:181
+#: utilities/cameragui/renamecustomizer.cpp:233
 #, fuzzy
 msgid "<p>Set this option to add the camera name."
 msgstr ""
 "<p>Hãy đặt tùy chọn này để hiển thị thẻ digiKam ở sau hình thu nhỏ của ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:183
+#: utilities/cameragui/renamecustomizer.cpp:235
 #, fuzzy
 msgid "Add Sequence Number"
 msgstr "Số hiệu dây"
 
-#: utilities/cameragui/renamecustomizer.cpp:185
+#: utilities/cameragui/renamecustomizer.cpp:237
 #, fuzzy
 msgid ""
 "<p>Set this option to add a sequence number starting with the index set below."
@@ -7056,17 +7120,33 @@ msgstr ""
 "<p>Hãy đặt tùy chọn này để hiển thị thông tin về ảnh khi con chuột di chuyển "
 "bên dưới mục trong tập ảnh."
 
-#: utilities/cameragui/renamecustomizer.cpp:187
+#: utilities/cameragui/renamecustomizer.cpp:239
 msgid "Start Index:"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:190
+#: utilities/cameragui/renamecustomizer.cpp:242
 msgid ""
 "<p>Set here the start index value used to rename picture files with a sequence "
 "number."
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:331
+#: utilities/cameragui/renamecustomizer.cpp:433
+#: utilities/cameragui/renamecustomizer.cpp:441
+msgid "Change Date & Time Format"
+msgstr ""
+
+#: utilities/cameragui/renamecustomizer.cpp:434
+#: utilities/cameragui/renamecustomizer.cpp:442
+msgid ""
+"<p>Enter the format for date and time.</p>"
+"<p>Use <i>dd</i> for the day, <i>MM</i> for the month, <i>yyyy</i> "
+"for the year, <i>hh</i> for the hour, <i>mm</i> for the minute, <i>ss</i> "
+"for the second.</p>"
+"<p>Examples: <i>yyyyMMddThhmmss</i> for 20060824T142418,"
+"<br><i>yyyy-MM-dd hh:mm:ss</i> for 2006-08-24 14:24:18.</p>"
+msgstr ""
+
+#: utilities/cameragui/renamecustomizer.cpp:467
 msgid "photo"
 msgstr "ảnh"
 
@@ -7247,26 +7327,6 @@ msgstr "Tập ảnh phụ đựa vào ngày tháng"
 #: utilities/cameragui/cameraui.cpp:261
 msgid "Date-based sub-albums"
 msgstr "Tập ảnh phụ đựa vào ngày tháng"
-
-#: utilities/cameragui/cameraui.cpp:263
-#, fuzzy
-msgid "Date format:"
-msgstr "Thông tin ảnh"
-
-#: utilities/cameragui/cameraui.cpp:265
-#, fuzzy
-msgid "ISO"
-msgstr "%1 ISO"
-
-#: utilities/cameragui/cameraui.cpp:266
-#, fuzzy
-msgid "Full Text"
-msgstr "Đầy"
-
-#: utilities/cameragui/cameraui.cpp:267
-#, fuzzy
-msgid "Local Settings"
-msgstr "Thiết lập chung"
 
 #: utilities/cameragui/cameraui.cpp:269
 #, fuzzy
@@ -7568,6 +7628,36 @@ msgstr "Đang tải về %i tập tin %1..."
 msgid "&Upload into camera"
 msgstr "Đang tải máy ảnh..."
 
+#~ msgid "RAW Image Decoding Options"
+#~ msgstr "Tùy chọn giải mã ảnh RAW"
+
+#~ msgid "<p>Interpolate RGB as four colors. This blurs the image a little, but it eliminates false 2x2 mesh patterns.<p>"
+#~ msgstr "<p>Nội suy RGB là bốn màu. Tính năng này che mờ ảnh một ít, nhưng loại ra mẫu mắc lưới 2×2 giả.<p>"
+
+#~ msgid "<p>Use the color balance specified by the camera. If this can't be found, reverts to the default.<p>"
+#~ msgstr "<p>Dùng cán cân màu được xác định bởi máy ảnh. Nếu không thể tìm nó, hoàn nguyên giá trị mặc định.<p>"
+
+#~ msgid "<p>Enabled this option to leave the image color completely unclipped else all colors will be cliped to prevent pink highlights.<p>"
+#~ msgstr "<p>Hãy bật tùy chọn này để làm cho màu ảnh hoàn toàn chưa được xén, nếu không thì mọi màu sẽ được xén để ngăn cản chỗ sáng màu hồng.<p>"
+
+#~ msgid "Enable RAW decoding quality"
+#~ msgstr "Bật chất lượng giải mã RAW"
+
+#~ msgid "<p>Toggle quality decoding option for RAW images using a setting value.<p>Enable this option if you use dcraw version >= 0.8.0 in your system.<p>"
+#~ msgstr "<p>Bật/tắt tùy chọn giải mã chất lượng cho ảnh RAW, dùng giá trị đặt.<p>Bật tùy chọn này nếu bạn dùng trình dcraw phiên bản ≥ 0.8.0 trên hệ thống mình.<p>"
+
+#~ msgid "Enable noise reduction during decoding (warning: slow)"
+#~ msgstr "Bật giảm ồn trong khi giải mã (cảnh báo : chạy chậm)"
+
+#~ msgid "<p>Toggle bilateral filter to smooth noise while preserving edges. This option can be use to reduce low noise. The pictures edges are preserved because it is applied in CIELab color space instead of RGB.<p><b>Warnings</b>:<p>This filter isn't adapted if your RAW picture have been taken using hight sensitivity (over 1600 ISO). Its recommended to use the noise reduction filter from image editor instead.<p>This filter can take a while. Do not use if your computer is slow.<p>This option require dcraw version >= 0.8.0.<p>"
+#~ msgstr "<p>Bật/tắt bộ lọc hai bên để làm mịn ồn còn bảo tồn cạnh. Tùy chọn này có thể được dùng để giảm ồn thấp. Các cạnh của ảnh được bảo tồn vì nó được áp dụng trong miền màu CIELab thay vào RGB.<p><b>Cảnh báo </b>:<p>Bộ lọc này không thích hợp nếu ảnh RAW của bạn đã được chụp dùng độ nhạy cao hơn (trên 1600 ISO). Khuyên bạn dùng bộ lọc giảm ồn từ bộ sửa đổi thay thế.<p>Việc chạy bộ lọc này có thể hơi lâu. Đừng dùng nó trên máy tính chạy chậm.<p>Tùy chọn này cần thiết phần mềm dcraw phiên bản ≥ 0.8.0.<p>"
+
+#~ msgid "Sigma domain:"
+#~ msgstr "Miền Sigma Σ:"
+
+#~ msgid "Sigma range:"
+#~ msgstr "Phạm vi Sigma:"
+
 #, fuzzy
 #~ msgid "Postfix:"
 #~ msgstr "Tiền tố :"
@@ -7789,9 +7879,6 @@ msgstr "Đang tải máy ảnh..."
 
 #~ msgid "&Sunday"
 #~ msgstr "&Chủ Nhật"
-
-#~ msgid "Quality:"
-#~ msgstr "Chất lượng:"
 
 #~ msgid "<p>The decoding quality value for RAW images:<p><b>0</b>: medium quality (default - for slow computer)<p><b>1</b>: good quality<p><b>2</b>: high quality<p><b>3</b>: very high quality (for speed computer)<p>"
 #~ msgstr "<p>Giá trị chất lượng giải mã cho ảnh RAW:<p><b>0</b>: chất lượng vừa(mặc định — cho máy tính chạy chậm)<p><b>1</b>: chất lượng tốt<p><b>2</b>: chất lượng cao<p><b>3</b>: chất lượng rất cao (cho máy tính chạy rất nhanh)<p>"

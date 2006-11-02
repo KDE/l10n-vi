@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2006-03-29 04:03+0200\n"
+"POT-Creation-Date: 2006-11-02 02:46+0100\n"
 "PO-Revision-Date: 2002-05-27 00:44+0900\n"
 "Last-Translator: Nguyen Hung Vu (Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: Vietnamese <vi@i18n.kde.org>\n"
@@ -13,6 +13,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 0.9.6\n"
+
+#: lib/mfieldobject.cpp:233
+msgid ","
+msgstr ""
 
 #: lib/mreportviewer.cpp:155 lib/mreportviewer.cpp:293
 msgid ""
@@ -82,31 +86,37 @@ msgid "Grid size:"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:192 kudesigner_lib/reportheader.cpp:45
+#: kudesigner_lib/structurewidget.cpp:123
 msgid "Report Header"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:194 kudesigner_lib/reportfooter.cpp:47
+#: kudesigner_lib/structurewidget.cpp:126
 msgid "Report Footer"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:196 kudesigner_lib/pageheader.cpp:46
+#: kudesigner_lib/structurewidget.cpp:132
 msgid "Page Header"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:198 kudesigner_lib/pagefooter.cpp:45
+#: kudesigner_lib/structurewidget.cpp:129
 msgid "Page Footer"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:200 kudesigner_lib/detailheader.cpp:39
+#: kudesigner_lib/structurewidget.cpp:138
 msgid "Detail Header"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:202 kudesigner_lib/detail.cpp:42
-#: kudesigner_lib/detailbase.cpp:29
+#: kudesigner_lib/detailbase.cpp:29 kudesigner_lib/structurewidget.cpp:135
 msgid "Detail"
 msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:204 kudesigner_lib/detailfooter.cpp:39
+#: kudesigner_lib/structurewidget.cpp:141
 msgid "Detail Footer"
 msgstr ""
 
@@ -133,6 +143,7 @@ msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:223 kudesigner_lib/commdefs.cpp:42
 #: kudesigner_lib/label.cpp:62 kudesigner_lib/line.cpp:35
+#: kudesigner_lib/structurewidget.cpp:182
 msgid "Line"
 msgstr ""
 
@@ -142,6 +153,23 @@ msgstr ""
 
 #: kudesigner/kudesigner_view.cpp:230
 msgid "Grid Size"
+msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:312
+msgid "Add Detail Header"
+msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:312 kudesigner/kudesigner_view.cpp:325
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Enter detail level:"
+msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:325
+msgid "Add Detail"
+msgstr ""
+
+#: kudesigner/kudesigner_view.cpp:339
+msgid "Add Detail Footer"
 msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:35
@@ -175,6 +203,42 @@ msgstr ""
 
 #: kudesigner_lib/calcfield.cpp:41
 msgid "Calculation Type"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:54
+msgid "Insert Detail Footer Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:78
+msgid "Insert Detail Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:102
+msgid "Insert Detail Header Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:126
+msgid "Insert Page Footer Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:149
+msgid "Insert Page Header Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:172
+msgid "Insert Report Footer Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:195
+msgid "Insert Report Header Section"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:218
+msgid "Insert Report Item"
+msgstr ""
+
+#: kudesigner_lib/command.cpp:273
+msgid "Delete Report Item(s)"
 msgstr ""
 
 #: kudesigner_lib/commdefs.cpp:38
@@ -536,6 +600,104 @@ msgstr ""
 msgid "PageNo"
 msgstr ""
 
+#: kudesigner_lib/structurewidget.cpp:82
+msgid "Report Structure"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:94
+msgid "Report Template"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:145
+msgid " (level %1)"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:163
+msgid "<unknown>"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:168
+#, c-format
+msgid "Label: %1"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:171
+#, c-format
+msgid "Field: %1"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:174
+#, c-format
+msgid "Calculated Field: %1"
+msgstr ""
+
+#: kudesigner_lib/structurewidget.cpp:179
+#, c-format
+msgid "Special Field: %1"
+msgstr ""
+
+#: part/kugar_about.h:31
+msgid "Kugar"
+msgstr "Kugar"
+
+#: part/kugar_about.h:32
+msgid "Report viewer(generator)"
+msgstr ""
+
+#: part/kugar_about.h:33
+msgid "(c) 1999-2006, The Kugar Team"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:40 part/kugar_about.h:36
+msgid "Maintainer, Report Designer, Kugar library enhancements"
+msgstr ""
+
+#: part/kugar_about.h:39
+msgid "Smaller fixes and Kexi integration"
+msgstr ""
+
+#: part/kugar_about.h:42
+msgid "Direct database support"
+msgstr ""
+
+#: part/kugar_about.h:45
+msgid "Former maintainer"
+msgstr ""
+
+#: part/kugar_about.h:48
+msgid "Original author of Metaphrast"
+msgstr ""
+
+#: _translatorinfo.cpp:1 kudesigner/kudesigner_aboutdata.h:51
+#: part/kugar_about.h:50
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr ""
+
+#: _translatorinfo.cpp:3 kudesigner/kudesigner_aboutdata.h:52
+#: part/kugar_about.h:50
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:27
+msgid "GUI report template designer for Kugar report engine"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:36
+msgid "Kugar Report Designer"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:44
+msgid "Major bugfixes, additional features and Kexi integration"
+msgstr ""
+
+#: kudesigner/kudesigner_aboutdata.h:48
+msgid "Fast property editing for report items"
+msgstr ""
+
 #. i18n: file kudesigner/kudesignerui.rc line 16
 #: rc.cpp:9
 #, no-c-format
@@ -559,21 +721,6 @@ msgstr ""
 #, no-c-format
 msgid "Items"
 msgstr ""
-
-#: _translatorinfo.cpp:1
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr ""
-
-#: _translatorinfo.cpp:3
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
-msgstr ""
-
-#~ msgid "Kugar"
-#~ msgstr "Kugar"
 
 #~ msgid "A template driven report viewer for XML data."
 #~ msgstr "Một trình xem mẫu driven report cho dữ liệu XML"

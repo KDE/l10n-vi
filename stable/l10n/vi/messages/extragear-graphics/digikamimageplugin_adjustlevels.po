@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikamimageplugin_adjustlevels\n"
-"POT-Creation-Date: 2005-12-16 03:16+0100\n"
+"POT-Creation-Date: 2006-12-21 02:47+0100\n"
 "PO-Revision-Date: 2006-06-30 22:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -27,43 +27,52 @@ msgid ""
 "Your emails"
 msgstr "kde-l10n-vi@kde.org"
 
-#: adjustlevels.cpp:78 adjustlevels.cpp:87
+#: adjustlevels.cpp:91 imageplugin_adjustlevels.cpp:63
 msgid "Adjust Color Levels"
 msgstr "Điều chỉnh cấp màu"
 
-#: adjustlevels.cpp:89
+#: adjustlevels.cpp:93
 msgid "An image-histogram-levels adjustment plugin for digiKam."
 msgstr "Bổ sung điều chỉnh cấp biểu đồ tần xuất ảnh cho digiKam."
 
-#: adjustlevels.cpp:95
+#: adjustlevels.cpp:99
 msgid "Author and maintainer"
 msgstr "Tác giả và nhà duy trì"
 
-#: adjustlevels.cpp:105
+#: adjustlevels.cpp:107
+msgid ""
+"<p>Here you can see the image's level-adjustments preview. You can pick color "
+"on image to see the color level corresponding on histogram."
+msgstr ""
+"<p>Ở đây có ô xem thử cách điều chỉnh cấp của ảnh. Bạn có thể kén màu trên ảnh "
+"để xem cấp màu tương ứng trong biểu đồ tần xuất."
+
+#: adjustlevels.cpp:117
 msgid "Channel:"
 msgstr "Kênh:"
 
-#: adjustlevels.cpp:108 adjustlevels.cpp:113
+#: adjustlevels.cpp:120 adjustlevels.cpp:125
 msgid "Luminosity"
 msgstr "Độ trưng"
 
-#: adjustlevels.cpp:109
+#: adjustlevels.cpp:121
 msgid "Red"
 msgstr "Đỏ"
 
-#: adjustlevels.cpp:110
+#: adjustlevels.cpp:122
 msgid "Green"
 msgstr "Xanh lá cây"
 
-#: adjustlevels.cpp:111
+#: adjustlevels.cpp:123
 msgid "Blue"
 msgstr "Xanh dương"
 
-#: adjustlevels.cpp:112
+#: adjustlevels.cpp:124
 msgid "Alpha"
 msgstr "Anfa"
 
-#: adjustlevels.cpp:114
+#: adjustlevels.cpp:126
+#, fuzzy
 msgid ""
 "<p>Select here the histogram channel to display:"
 "<p><b>Luminosity</b>: display the image's luminosity values."
@@ -72,7 +81,7 @@ msgid ""
 "<p><b>Blue</b>: display the blue image-channel values."
 "<p><b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image formats, "
-"such as PNG or GIF."
+"such as PNG or TIF."
 msgstr ""
 "<p>Ở đây hãy chọn kênh biểu đồ tần xuất cần hiển thị:"
 "<p><b>Độ trưng</b>: hiển thị giá trị độ trưng của ảnh."
@@ -82,7 +91,7 @@ msgstr ""
 "<p><b>Anfa</b>: hiển thị giá trị kênh ảnh anfa. Kênh này tương ứng với giá trị "
 "độ trong suốt và được hỗ trợ bởi một số dạng thức ảnh nào đó, như PNG hay GIF."
 
-#: adjustlevels.cpp:127
+#: adjustlevels.cpp:139
 msgid ""
 "<p>Select here the histogram scale."
 "<p>If the image's maximal counts are small, you can use the linear scale."
@@ -94,68 +103,78 @@ msgstr ""
 "<p>Tỷ lệ loga có thể được dùng khi số đếm tối đa là lớn; khi được dùng, mọi giá "
 "trị (cả nhỏ lẫn lớn) sẽ được hiển thị trên đồ thị."
 
-#: adjustlevels.cpp:133
+#: adjustlevels.cpp:145
 msgid "<p>Linear"
 msgstr "<p>Tuyến"
 
-#: adjustlevels.cpp:141
+#: adjustlevels.cpp:153
 msgid "<p>Logarithmic"
 msgstr "<p>Loga"
 
-#: adjustlevels.cpp:162
-msgid "<p>This is the histogram drawing of the selected image channel"
+#: adjustlevels.cpp:171
+msgid ""
+"<p>Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any levels settings changes."
+msgstr ""
+"<p>Ở đây có bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh ảnh được chọn. "
+"Bản vẽ này được tính lại khi nào thay đổi thiết lập cấp."
+
+#: adjustlevels.cpp:181
+#, fuzzy
+msgid ""
+"<p>This is the histogram drawing of the selected channel from original image"
 msgstr "<p>Đây là bản vẽ biểu đồ tần xuất của kênh ảnh được chọn"
 
-#: adjustlevels.cpp:172 adjustlevels.cpp:188
+#: adjustlevels.cpp:190 adjustlevels.cpp:206
 msgid "<p>Select here the minimal intensity input value of the histogram."
 msgstr ""
 "<p>Ở đây hãy chọn giá trị nhập cường độ tối thiểu của biểu đồ tần xuất."
 
-#: adjustlevels.cpp:173 adjustlevels.cpp:189
+#: adjustlevels.cpp:191 adjustlevels.cpp:207
 msgid "Minimal intensity input."
 msgstr "Nhập cường độ tối thiểu."
 
-#: adjustlevels.cpp:181 adjustlevels.cpp:199
+#: adjustlevels.cpp:199 adjustlevels.cpp:217
 msgid "<p>Select here the maximal intensity input value of the histogram."
 msgstr "<p>Ở đây hãy chọn giá trị nhập cường độ tối đa của biểu đồ tần xuất."
 
-#: adjustlevels.cpp:182 adjustlevels.cpp:198
+#: adjustlevels.cpp:200 adjustlevels.cpp:216
 msgid "Maximal intensity input."
 msgstr "Nhập cường độ tối đa."
 
-#: adjustlevels.cpp:194
+#: adjustlevels.cpp:212
 msgid "Gamma input value."
 msgstr "Giá trị nhập Gamma."
 
-#: adjustlevels.cpp:195
+#: adjustlevels.cpp:213
 msgid "<p>Select here the gamma input value."
 msgstr "<p>Ở đây hãy chọn giá trị nhập Gamma."
 
-#: adjustlevels.cpp:206 adjustlevels.cpp:225
+#: adjustlevels.cpp:224 adjustlevels.cpp:243
 msgid "<p>Select here the minimal intensity output value of the histogram."
 msgstr ""
 "<p>"
 "<p>Ở đây hãy chọn giá trị xuất cường độ tối thiểu của biểu đồ tần xuất."
 
-#: adjustlevels.cpp:207 adjustlevels.cpp:224
+#: adjustlevels.cpp:225 adjustlevels.cpp:242
 msgid "Minimal intensity output."
 msgstr "Xuất cường độ tối thiểu."
 
-#: adjustlevels.cpp:215 adjustlevels.cpp:229
+#: adjustlevels.cpp:233 adjustlevels.cpp:247
 msgid "<p>Select here the maximal intensity output value of the histogram."
 msgstr ""
 "<p>"
 "<p>Ở đây hãy chọn giá trị xuất cường độ tối đa của biểu đồ tần xuất."
 
-#: adjustlevels.cpp:216 adjustlevels.cpp:228
+#: adjustlevels.cpp:234 adjustlevels.cpp:246
 msgid "Maximal intensity output."
 msgstr "Xuất cường độ tối đa."
 
-#: adjustlevels.cpp:243
+#: adjustlevels.cpp:261
 msgid "All channels shadow tone color picker"
 msgstr "Bộ kén màu sắc bóng mọi kênh"
 
-#: adjustlevels.cpp:244
+#: adjustlevels.cpp:262
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Shadow Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -164,11 +183,11 @@ msgstr ""
 "trị nhập cấp <b>Sắc bóng</b> trên kênh độ trưng màu Đỏ, Xanh lá cây, Xanh dương "
 "và Độ trưng."
 
-#: adjustlevels.cpp:253
+#: adjustlevels.cpp:271
 msgid "All channels middle tone color picker"
 msgstr "Bộ kén màu sắc vừa mọi kênh"
 
-#: adjustlevels.cpp:254
+#: adjustlevels.cpp:272
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Middle Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -177,11 +196,11 @@ msgstr ""
 "trị nhập cấp <b>Sắc vừa</b> trên kênh độ trưng màu Đỏ, Xanh lá cây, Xanh dương "
 "và Độ trưng."
 
-#: adjustlevels.cpp:263
+#: adjustlevels.cpp:281
 msgid "All channels highlight tone color picker"
 msgstr "Bộ kén màu sắc chỗ sáng mọi kênh"
 
-#: adjustlevels.cpp:264
+#: adjustlevels.cpp:282
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Highlight Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -190,27 +209,36 @@ msgstr ""
 "trị nhập cấp <b>Sắc chỗ sáng</b> trên kênh độ trưng màu Đỏ, Xanh lá cây, Xanh "
 "dương và Độ trưng."
 
-#: adjustlevels.cpp:269
-msgid "&Auto"
-msgstr "&Tự động"
-
-#: adjustlevels.cpp:270
-msgid "<p>Adjust all levels automatically."
+#: adjustlevels.cpp:289
+#, fuzzy
+msgid "Adjust all levels automatically."
 msgstr "<p>Tự động điều chỉnh mọi cấp."
 
-#: adjustlevels.cpp:271
+#: adjustlevels.cpp:290
+msgid ""
+"<p>If you press this button, all channel levels will be adjusted automatically."
+msgstr "<p>Nếu bạn bấm cái nút này, mọi cấp kênh sẽ được điều chỉnh tự động."
+
+#: adjustlevels.cpp:293
 msgid "&Reset"
 msgstr "Đặt &lại"
 
-#: adjustlevels.cpp:272
-msgid "<p>Reset levels values from the current selected channel."
+#: adjustlevels.cpp:295
+msgid "Reset current channel levels' values."
+msgstr "Đặ lại giá trị của các cấp kênh hiện có."
+
+#: adjustlevels.cpp:296
+#, fuzzy
+msgid ""
+"<p>If you press this button, all levels' values from the current selected "
+"channel will be reset to the default values."
 msgstr "<p>Đặt lại giá trị cấp từ kênh được chọn hiện thời."
 
-#: adjustlevels.cpp:284
+#: adjustlevels.cpp:310
 msgid "Over exposure indicator"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: adjustlevels.cpp:285
+#: adjustlevels.cpp:311
 msgid ""
 "<p>If you enable this option, over-exposed pixels from the target image preview "
 "will be over-colored. This will not have an effect on the final rendering."
@@ -218,41 +246,27 @@ msgstr ""
 "<p>Nếu bạn bật tùy chọn này, điểm ảnh nào trên ảnh đích có sự phơi quá lâu sẽ "
 "có quá màu. Cách hiển thị này sẽ không có tác động khi vẽ cuối cùng."
 
-#: adjustlevels.cpp:296
-msgid ""
-"<p>Here you can see the original image. You can pick a color from the image "
-"using the color picker tools to select shadow, middle, and highlight tones to "
-"adjust the curves' points in the Red, Green, Blue, and Luminosity Channels."
-msgstr ""
-"<p>Ở đây bạn có thể xem ảnh gốc. Bạn có khả năng kén màu trên ảnh gốc, dùng "
-"những công cụ kén màu để chọn sắc màu bóng, vừa và chỗ sáng để điều chỉnh những "
-"đỉnh của đường cong trong kênh màu Đỏ, Xanh lá cây, Xanh dương và Độ trưng."
-
-#: adjustlevels.cpp:302
-msgid "<p>Here you can see the image's level-adjustments preview."
-msgstr "<p>Ở đây có ô xem thử cách điều chỉnh cấp của ảnh."
-
-#: adjustlevels.cpp:551
+#: adjustlevels.cpp:600
 msgid "Adjust Level"
 msgstr "Điều chỉnh cấp"
 
-#: adjustlevels.cpp:639
+#: adjustlevels.cpp:696
 msgid "Select Gimp Levels File to Load"
 msgstr "Chọn tập tin cấp GIMP cần tải"
 
-#: adjustlevels.cpp:645
+#: adjustlevels.cpp:702
 msgid "Cannot load from the Gimp levels text file."
 msgstr "Không thể tải từ tập tin văn bản cấp GIMP."
 
-#: adjustlevels.cpp:660
+#: adjustlevels.cpp:717
 msgid "Gimp Levels File to Save"
 msgstr "Tập tin cấp GIMP cần lưu"
 
-#: adjustlevels.cpp:666
+#: adjustlevels.cpp:723
 msgid "Cannot save to the Gimp levels text file."
 msgstr "Không thể lưu vào tập tin văn bản cấp GIMP."
 
-#: imageplugin_adjustlevels.cpp:44
+#: imageplugin_adjustlevels.cpp:43
 msgid "Levels Adjust..."
 msgstr "Điều chỉnh cấp..."
 
@@ -268,14 +282,11 @@ msgstr "&Sửa chữa"
 msgid "&Colors"
 msgstr "&Màu sắc"
 
-#~ msgid "<p>Here you can see the image's level-adjustments preview. You can pick color on image to see the color level corresponding on histogram."
-#~ msgstr "<p>Ở đây có ô xem thử cách điều chỉnh cấp của ảnh. Bạn có thể kén màu trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
+#~ msgid "&Auto"
+#~ msgstr "&Tự động"
 
-#~ msgid "<p>Here you can see the target preview image histogram drawing of the selected image channel. This one is re-computed at any levels settings changes."
-#~ msgstr "<p>Ở đây có bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh ảnh được chọn. Bản vẽ này được tính lại khi nào thay đổi thiết lập cấp."
+#~ msgid "<p>Here you can see the original image. You can pick a color from the image using the color picker tools to select shadow, middle, and highlight tones to adjust the curves' points in the Red, Green, Blue, and Luminosity Channels."
+#~ msgstr "<p>Ở đây bạn có thể xem ảnh gốc. Bạn có khả năng kén màu trên ảnh gốc, dùng những công cụ kén màu để chọn sắc màu bóng, vừa và chỗ sáng để điều chỉnh những đỉnh của đường cong trong kênh màu Đỏ, Xanh lá cây, Xanh dương và Độ trưng."
 
-#~ msgid "<p>If you press this button, all channel levels will be adjusted automatically."
-#~ msgstr "<p>Nếu bạn bấm cái nút này, mọi cấp kênh sẽ được điều chỉnh tự động."
-
-#~ msgid "Reset current channel levels' values."
-#~ msgstr "Đặ lại giá trị của các cấp kênh hiện có."
+#~ msgid "<p>Here you can see the image's level-adjustments preview."
+#~ msgstr "<p>Ở đây có ô xem thử cách điều chỉnh cấp của ảnh."

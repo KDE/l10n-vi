@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-12-21 09:46+0100\n"
+"POT-Creation-Date: 2006-12-22 09:05+0100\n"
 "PO-Revision-Date: 2006-06-16 21:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -365,8 +365,7 @@ msgstr "Chu&yển vào đây"
 
 #: digikam/albumfolderview.cpp:902 digikam/albumfolderview.cpp:998
 #: digikam/albumfolderview.cpp:1034 digikam/albumfolderview.cpp:1116
-#: digikam/albumiconview.cpp:1116 digikam/albumiconview.cpp:1156
-#: digikam/albumiconview.cpp:1198 digikam/tagfilterview.cpp:338
+#: digikam/albumiconview.cpp:1116 digikam/tagfilterview.cpp:338
 #: digikam/tagfolderview.cpp:671 digikam/tagfolderview.cpp:752
 #: digikam/tagfolderview.cpp:782 libs/imageproperties/talbumlistview.cpp:240
 #: libs/imageproperties/talbumlistview.cpp:321
@@ -1810,16 +1809,81 @@ msgstr "Tiệc"
 msgid "Todo"
 msgstr "Cần làm"
 
-#: digikam/albumwidgetstack.cpp:89
-#, fuzzy
-msgid "Back to Album"
-msgstr "Chọn tập ảnh"
+#: digikam/main.cpp:72 digikam/welcomepageview.cpp:66
+msgid "digiKam"
+msgstr "digiKam"
 
-#: digikam/albumiconview.cpp:512 digikam/albumwidgetstack.cpp:90
-#: digikam/digikamapp.cpp:544
+#: digikam/main.cpp:66 digikam/welcomepageview.cpp:68
+msgid "A Photo-Management Application for KDE"
+msgstr "Ứng dụng quản lý ảnh chụp cho KDE"
+
+#: digikam/welcomepageview.cpp:96
+msgid ""
+"_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior KMail "
+"version; %5: prior KDE version; %6: generated list of new features; %7: "
+"First-time user text (only shown on first start); %8: generated list of "
+"important changes; --- end of comment ---\n"
+"<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2>"
+"<p>digiKam is a photo-management program for the K Desktop Environment. It is "
+"designed to organize your digital photograhs on your computer.</p>\n"
+"<ul>"
+"<li>digiKam has many powerful features which are described in the <a "
+"href=\"%2\">documentation</a></li>\n"
+"<li>The <a href=\"%3\">digiKam homepage</A> offers information about new "
+"versions of digiKam</li></ul>\n"
+"%8\n"
+"<p>Some of the new features in this release of digiKam include (compared to "
+"digiKam %4):</p>\n"
+"<ul>\n"
+"%5</ul>\n"
+"%6\n"
+"<p>We hope that you will enjoy digiKam.</p>\n"
+"<p>Thank you,</p>\n"
+"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam Team</p>"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:118
 #, fuzzy
-msgid "Edit..."
-msgstr "&Sửa..."
+msgid "16 bits/color/pixels image support"
+msgstr "Độ sâu màu :"
+
+#: digikam/welcomepageview.cpp:119
+#, fuzzy
+msgid "Full color management support"
+msgstr "Quản lý màu"
+
+#: digikam/welcomepageview.cpp:120
+msgid "Makernote and IPTC metadata support"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:121
+msgid "Geolocalization of photograph"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:122
+msgid "Sidebar used everywhere"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:123
+msgid "Advanced RAW pictures decoding settings"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:124
+msgid "Fast preview of RAW pictures"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:125
+msgid "Metadata support for RAW pictures"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:126
+msgid "New advanced options to download pictures from camera"
+msgstr ""
+
+#: digikam/welcomepageview.cpp:130
+msgid ""
+"<li>%1</li>\n"
+msgstr ""
 
 #: digikam/imagepreviewwidget.cpp:175
 #, fuzzy
@@ -1959,18 +2023,10 @@ msgstr "Tự động phát hiện và mở máy ảnh"
 msgid "Open camera dialog at <path>"
 msgstr "Mở hộp thoại máy ảnh tại <đường dẫn>"
 
-#: digikam/main.cpp:66 digikam/welcomepage.cpp:68
-msgid "A Photo-Management Application for KDE"
-msgstr "Ứng dụng quản lý ảnh chụp cho KDE"
-
 #: digikam/main.cpp:68
 #, c-format
 msgid "Using Kipi library version %1"
 msgstr "Dùng thư viện Kipi phiên bản %1"
-
-#: digikam/main.cpp:72 digikam/welcomepage.cpp:66
-msgid "digiKam"
-msgstr "digiKam"
 
 #: digikam/main.cpp:76
 msgid "(c) 2002-2006, digiKam developers team"
@@ -2275,6 +2331,12 @@ msgstr "Độ bão hoà:"
 msgid "View..."
 msgstr "Xem/Sửa..."
 
+#: digikam/albumiconview.cpp:512 digikam/digikamapp.cpp:544
+#: digikam/imagepreviewview.cpp:71
+#, fuzzy
+msgid "Edit..."
+msgstr "&Sửa..."
+
 #: digikam/albumiconview.cpp:513
 msgid "Open With"
 msgstr "Mở bằng"
@@ -2309,15 +2371,37 @@ msgstr "Hãy nhập tên mới:"
 msgid "Album \"%1\""
 msgstr "Tập « %1 »"
 
-#: digikam/albumiconview.cpp:1153
-msgid "&Assign Tag '%1' to Selected Images"
+#: digikam/albumiconview.cpp:1165
+#, fuzzy
+msgid "Assign '%1' to &All Items"
+msgstr "Gán thẻ <b>%1</b> cho Mục đã Thả"
+
+#: digikam/albumiconview.cpp:1169
+#, fuzzy
+msgid "Assign '%1' to &Selected Items"
 msgstr "&Gán thẻ « %1 » cho các ảnh đã chọn"
 
-#: digikam/albumiconview.cpp:1196
-msgid "&Assign Tags to Selected Images"
+#: digikam/albumiconview.cpp:1173
+#, fuzzy
+msgid "Assign '%1' to &Dropped Item"
+msgstr "Gán thẻ <b>%1</b> cho Mục đã Thả"
+
+#: digikam/albumiconview.cpp:1247
+#, fuzzy
+msgid "Assign Tags to &All Items"
 msgstr "&Gán thẻ cho các ảnh đã chọn"
 
-#: digikam/albumiconview.cpp:1369
+#: digikam/albumiconview.cpp:1250
+#, fuzzy
+msgid "Assign Tags to &Selected Items"
+msgstr "&Gán thẻ cho các ảnh đã chọn"
+
+#: digikam/albumiconview.cpp:1253
+#, fuzzy
+msgid "Assign Tags to &Dropped Item"
+msgstr "Gán thẻ <b>%1</b> cho Mục đã Thả"
+
+#: digikam/albumiconview.cpp:1459
 #, c-format
 msgid "Failed to correct Exif orientation for file %1."
 msgstr "Lỗi sửa chữa hướng EXIF cho tập tin %1."
@@ -2357,6 +2441,11 @@ msgstr "URL đích %1 không hợp lệ"
 #: digikam/kipiinterface.cpp:674
 msgid "Target album is not in the albums library."
 msgstr "Tập ảnh đích không nằm trong thư viện tập ảnh."
+
+#: digikam/imagepreviewview.cpp:70 digikam/mediaplayerview.cpp:74
+#, fuzzy
+msgid "Back to Album"
+msgstr "Chọn tập ảnh"
 
 #: digikam/datefolderview.cpp:119
 msgid "My Dates"
@@ -2965,7 +3054,7 @@ msgstr "Ngày"
 msgid "Searches"
 msgstr "Việc tìm kiếm"
 
-#: digikam/digikamview.cpp:773
+#: digikam/digikamview.cpp:776
 #, fuzzy
 msgid "Select Image to Add"
 msgstr "Xoá bỏ ảnh"
@@ -2973,74 +3062,6 @@ msgstr "Xoá bỏ ảnh"
 #: digikam/tagspopupmenu.cpp:181 digikam/tagspopupmenu.cpp:268
 msgid "Add New Tag..."
 msgstr "Thêm thẻ mới..."
-
-#: digikam/welcomepage.cpp:96
-msgid ""
-"_: %1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior KMail "
-"version; %5: prior KDE version; %6: generated list of new features; %7: "
-"First-time user text (only shown on first start); %8: generated list of "
-"important changes; --- end of comment ---\n"
-"<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2>"
-"<p>digiKam is a photo-management program for the K Desktop Environment. It is "
-"designed to organize your digital photograhs on your computer.</p>\n"
-"<ul>"
-"<li>digiKam has many powerful features which are described in the <a "
-"href=\"%2\">documentation</a></li>\n"
-"<li>The <a href=\"%3\">digiKam homepage</A> offers information about new "
-"versions of digiKam</li></ul>\n"
-"%8\n"
-"<p>Some of the new features in this release of digiKam include (compared to "
-"digiKam %4):</p>\n"
-"<ul>\n"
-"%5</ul>\n"
-"%6\n"
-"<p>We hope that you will enjoy digiKam.</p>\n"
-"<p>Thank you,</p>\n"
-"<p style='margin-bottom: 0px'>&nbsp; &nbsp; The digiKam Team</p>"
-msgstr ""
-
-#: digikam/welcomepage.cpp:118
-#, fuzzy
-msgid "16 bits/color/pixels image support"
-msgstr "Độ sâu màu :"
-
-#: digikam/welcomepage.cpp:119
-#, fuzzy
-msgid "Full color management support"
-msgstr "Quản lý màu"
-
-#: digikam/welcomepage.cpp:120
-msgid "Makernote and IPTC metadata support"
-msgstr ""
-
-#: digikam/welcomepage.cpp:121
-msgid "Geolocalization of photograph"
-msgstr ""
-
-#: digikam/welcomepage.cpp:122
-msgid "Sidebar used everywhere"
-msgstr ""
-
-#: digikam/welcomepage.cpp:123
-msgid "Advanced RAW pictures decoding settings"
-msgstr ""
-
-#: digikam/welcomepage.cpp:124
-msgid "Fast preview of RAW pictures"
-msgstr ""
-
-#: digikam/welcomepage.cpp:125
-msgid "Metadata support for RAW pictures"
-msgstr ""
-
-#: digikam/welcomepage.cpp:126
-msgid "New advanced options to download pictures from camera"
-msgstr ""
-
-#: digikam/welcomepage.cpp:130
-msgid ""
-"<li>%1</li>\n"
-msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:84 utilities/setup/setupeditor.cpp:76
 msgid "Interface Options"

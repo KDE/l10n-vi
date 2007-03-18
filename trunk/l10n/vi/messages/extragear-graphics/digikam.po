@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-03-16 08:38+0100\n"
+"POT-Creation-Date: 2007-03-18 11:52+0100\n"
 "PO-Revision-Date: 2007-01-02 18:27+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -296,14 +296,14 @@ msgstr "Chất lượng JPEG %1"
 #: libs/widgets/metadata/gpswidget.cpp:348
 #: libs/widgets/metadata/makernotewidget.cpp:232 showfoto/showfoto.cpp:651
 #: utilities/imageeditor/canvas/undoaction.h:132
-#: utilities/imageeditor/editor/imagewindow.cpp:598
+#: utilities/imageeditor/editor/imagewindow.cpp:597
 msgid "Unknown"
 msgstr "Không rõ"
 
 #: digikam/albumfiletip.cpp:399 digikam/albumiconitem.cpp:320
 #: libs/imageproperties/cameraitempropertiestab.cpp:389
 #: libs/imageproperties/imagepropertiestab.cpp:435 showfoto/showfoto.cpp:651
-#: utilities/imageeditor/editor/imagewindow.cpp:598
+#: utilities/imageeditor/editor/imagewindow.cpp:597
 msgid "%1x%2 (%3Mpx)"
 msgstr "%1x%2 (%3Mpx)"
 
@@ -990,16 +990,19 @@ msgstr "&Hủy bỏ"
 
 #: libs/dialogs/ctrlpaneldlg.cpp:98 libs/dialogs/imagedlgbase.cpp:100
 #: libs/dialogs/imageguidedlg.cpp:133
+#: utilities/imageeditor/tools/imageresize.cpp:82
 msgid "&Save As..."
 msgstr "&Lưu dạng..."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:99 libs/dialogs/imagedlgbase.cpp:101
 #: libs/dialogs/imageguidedlg.cpp:134
+#: utilities/imageeditor/tools/imageresize.cpp:83
 msgid "&Load..."
 msgstr "&Tải..."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:112 libs/dialogs/imagedlgbase.cpp:112
 #: libs/dialogs/imageguidedlg.cpp:147
+#: utilities/imageeditor/tools/imageresize.cpp:88
 msgid "<p>Reset all filter parameters to their default values."
 msgstr "<p>Đặt lại mọi tham số lọc thành giá trị mặc định."
 
@@ -1009,11 +1012,13 @@ msgstr "<p>Hủy bỏ vẽ ảnh hiện thời."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:114 libs/dialogs/imagedlgbase.cpp:113
 #: libs/dialogs/imageguidedlg.cpp:149
+#: utilities/imageeditor/tools/imageresize.cpp:89
 msgid "<p>Load all filter parameters from settings text file."
 msgstr "<p>Tải mọi tham số lọc từ tập tin văn bản thiết lập."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:115 libs/dialogs/imagedlgbase.cpp:114
 #: libs/dialogs/imageguidedlg.cpp:150
+#: utilities/imageeditor/tools/imageresize.cpp:90
 msgid "<p>Save all filter parameters to settings text file."
 msgstr "<p>Lưu mọi tham số lọc vào tập tin văn bản thiết lập."
 
@@ -1068,6 +1073,156 @@ msgstr "Sổ tay bổ sung"
 #: libs/dialogs/iccprofileinfodlg.cpp:36
 msgid "Color Profile Info"
 msgstr "Thông tin hồ sơ màu"
+
+#: digikam/digikamapp.cpp:1497
+#: libs/greycstoration/greycstorationwidget.cpp:128
+#: showfoto/setup/setup.cpp:91
+#: utilities/imageeditor/editor/editorwindow.cpp:544
+msgid "General"
+msgstr "Chung"
+
+#: libs/greycstoration/greycstorationwidget.cpp:130
+msgid "Detail preservation:"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:134
+msgid ""
+"<p>Preservation of details to set the sharpening level of the small features in "
+"the target image. Higher values leave details sharp."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:140
+msgid "Anisotropy:"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:144
+msgid ""
+"<p>Anisotropic (directional) modifier of the details. Keep it small for "
+"Gaussian noise."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:149
+#, fuzzy
+msgid "Smoothing:"
+msgstr "Độ mịn:"
+
+#: libs/greycstoration/greycstorationwidget.cpp:153
+msgid ""
+"<p>Total smoothing power: if Detail Factor sets the relative smoothing and "
+"Anisotropy Factor the direction, Smoothing Factor sets the overall effect."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:159
+#, fuzzy
+msgid "Regularity:"
+msgstr "Chất lượng:"
+
+#: libs/greycstoration/greycstorationwidget.cpp:163
+msgid ""
+"<p>This value controls the smoothing regularity of the picture. Do not use a "
+"high value here, or the target image will be completely blurred."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:169
+#, fuzzy
+msgid "Iterations:"
+msgstr "Độ bão hoà:"
+
+#: libs/greycstoration/greycstorationwidget.cpp:172
+msgid "<p>Sets the number of times the filter is applied over the picture."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:177
+#, fuzzy
+msgid "Noise:"
+msgstr "Không có"
+
+#: libs/greycstoration/greycstorationwidget.cpp:181
+msgid "<p>Sets the noise scale."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:190
+#: utilities/setup/setupicc.cpp:303
+msgid "Advanced Settings"
+msgstr "Thiết lập cấp cao"
+
+#: libs/greycstoration/greycstorationwidget.cpp:192
+msgid "Angular step:"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:196
+msgid ""
+"<p>Set here the angular integration step in degrees in analogy to anisotropy."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:201
+#, fuzzy
+msgid "Integral step:"
+msgstr "Độ tương phản:"
+
+#: libs/greycstoration/greycstorationwidget.cpp:205
+#, fuzzy
+msgid "<p>Set here the spatial integral step."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ bão hoà của ảnh."
+
+#: libs/greycstoration/greycstorationwidget.cpp:209
+#, fuzzy
+msgid "Gaussian:"
+msgstr "Cảnh mờ kiểu Gauss"
+
+#: libs/greycstoration/greycstorationwidget.cpp:213
+#, fuzzy
+msgid "<p>Set here the precision of the Gaussian function."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh sắc màu của ảnh."
+
+#: libs/greycstoration/greycstorationwidget.cpp:217
+#, fuzzy
+msgid "Tile size:"
+msgstr "Hiện kích cỡ tập tin"
+
+#: libs/greycstoration/greycstorationwidget.cpp:220
+#, fuzzy
+msgid "<p>Sets the size of tile."
+msgstr "<p>Đặt vị trí độ rộng thành trung tâm."
+
+#: libs/greycstoration/greycstorationwidget.cpp:224
+msgid "Tile border:"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:227
+msgid "<p>Sets the size of tile borders."
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:231
+#, fuzzy
+msgid "Interpolation:"
+msgstr "Nội suy AHD"
+
+#: libs/greycstoration/greycstorationwidget.cpp:233
+msgid "Nearest Neighbor"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:234
+#, fuzzy
+msgid "Linear"
+msgstr "<p>Tuyến"
+
+#: libs/greycstoration/greycstorationwidget.cpp:235
+msgid "Runge-Kutta"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:236
+#, fuzzy
+msgid "<p>Select the right interpolation method to set the picture quality."
+msgstr "<p>Hãy đặt tùy chọn này để hiển thị đánh giá ảnh."
+
+#: libs/greycstoration/greycstorationwidget.cpp:241
+msgid "Fast approximation"
+msgstr ""
+
+#: libs/greycstoration/greycstorationwidget.cpp:242
+msgid "<p>Enable fast approximation to render picture."
+msgstr ""
 
 #: digikam/albumfiletip.cpp:346 libs/thumbbar/thumbbar.cpp:776
 msgid "Name:"
@@ -1207,7 +1362,7 @@ msgid "No profile available..."
 msgstr "Không có hồ sơ sẵn sàng..."
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:125
-#: utilities/setup/setupimgplugins.cpp:83
+#: utilities/setup/setupimgplugins.cpp:84
 msgid "Name"
 msgstr "Tên"
 
@@ -1216,7 +1371,7 @@ msgid "The ICC profile product name"
 msgstr "Tên sản phẩm hồ sơ ICC"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:127
-#: utilities/setup/setupimgplugins.cpp:86
+#: utilities/setup/setupimgplugins.cpp:87
 msgid "Description"
 msgstr "Mô tả"
 
@@ -2607,17 +2762,17 @@ msgid ""
 msgstr "Chuyển %n tập tin vào Sọt Rác"
 
 #: digikam/albumiconview.cpp:619 digikam/imagepreviewview.cpp:241
-#: utilities/imageeditor/editor/imagewindow.cpp:555
+#: utilities/imageeditor/editor/imagewindow.cpp:554
 msgid "Assign Tag"
 msgstr "Gán thẻ"
 
 #: digikam/albumiconview.cpp:621 digikam/imagepreviewview.cpp:242
-#: utilities/imageeditor/editor/imagewindow.cpp:556
+#: utilities/imageeditor/editor/imagewindow.cpp:555
 msgid "Remove Tag"
 msgstr "Gỡ bỏ thẻ"
 
 #: digikam/albumiconview.cpp:639 digikam/imagepreviewview.cpp:263
-#: utilities/imageeditor/editor/imagewindow.cpp:577
+#: utilities/imageeditor/editor/imagewindow.cpp:576
 msgid "Assign Rating"
 msgstr "Gán đánh giá"
 
@@ -2729,7 +2884,7 @@ msgid "SlideShow"
 msgstr "Chiếu ảnh"
 
 #: digikam/imagepreviewview.cpp:228 showfoto/showfoto.cpp:491
-#: utilities/imageeditor/editor/editorwindow.cpp:271
+#: utilities/imageeditor/editor/editorwindow.cpp:270
 msgid "Move to Trash"
 msgstr "Chuyển vào Sọt rác"
 
@@ -2870,15 +3025,15 @@ msgstr "Thoát khỏi chế độ xem thử"
 
 #: digikam/digikamapp.cpp:373 digikam/digikamapp.cpp:374
 #: digikam/digikamapp.cpp:383 digikam/digikamapp.cpp:384
-#: utilities/imageeditor/editor/editorwindow.cpp:431
-#: utilities/imageeditor/editor/editorwindow.cpp:441
+#: utilities/imageeditor/editor/editorwindow.cpp:430
+#: utilities/imageeditor/editor/editorwindow.cpp:440
 msgid "Next Image"
 msgstr "Ảnh kế"
 
 #: digikam/digikamapp.cpp:378 digikam/digikamapp.cpp:379
 #: digikam/digikamapp.cpp:388 digikam/digikamapp.cpp:389
-#: utilities/imageeditor/editor/editorwindow.cpp:436
-#: utilities/imageeditor/editor/editorwindow.cpp:446
+#: utilities/imageeditor/editor/editorwindow.cpp:435
+#: utilities/imageeditor/editor/editorwindow.cpp:445
 msgid "Previous Image"
 msgstr "Ảnh trước"
 
@@ -3002,11 +3157,11 @@ msgstr ""
 msgid "Delete Permanently"
 msgstr "Xoá hoàn toàn"
 
-#: digikam/digikamapp.cpp:613 utilities/imageeditor/editor/imagewindow.cpp:334
+#: digikam/digikamapp.cpp:613 utilities/imageeditor/editor/imagewindow.cpp:333
 msgid "Delete Permanently without Confirmation"
 msgstr "Xoá hoàn toàn không cần xác nhận"
 
-#: digikam/digikamapp.cpp:621 utilities/imageeditor/editor/imagewindow.cpp:342
+#: digikam/digikamapp.cpp:621 utilities/imageeditor/editor/imagewindow.cpp:341
 msgid "Move to Trash without Confirmation"
 msgstr "Chuyển vào Sọt Rạc không cần xác nhận"
 
@@ -3100,7 +3255,7 @@ msgstr ""
 "Tùy chọn nàt cho bạn khả năng bật/tắt chế độ toàn màn hình cho cửa sổ chính."
 
 #: digikam/digikamapp.cpp:774 showfoto/setup/setup.cpp:111
-#: utilities/imageeditor/editor/editorwindow.cpp:331
+#: utilities/imageeditor/editor/editorwindow.cpp:330
 #: utilities/setup/setup.cpp:188
 msgid "Slide Show"
 msgstr "Chiếu ảnh"
@@ -3123,31 +3278,31 @@ msgid "Kipi Plugins Handbook"
 msgstr "Sổ tay Bổ sung Kipi"
 
 #: digikam/digikamapp.cpp:816
-#: utilities/imageeditor/editor/editorwindow.cpp:415
+#: utilities/imageeditor/editor/editorwindow.cpp:414
 msgid "Donate Money..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:826 utilities/imageeditor/editor/imagewindow.cpp:302
+#: digikam/digikamapp.cpp:826 utilities/imageeditor/editor/imagewindow.cpp:301
 msgid "Assign Rating \"No Star\""
 msgstr "Gán đánh giá « Không gì »"
 
-#: digikam/digikamapp.cpp:829 utilities/imageeditor/editor/imagewindow.cpp:305
+#: digikam/digikamapp.cpp:829 utilities/imageeditor/editor/imagewindow.cpp:304
 msgid "Assign Rating \"One Star\""
 msgstr "Gán đánh giá « Một sao »"
 
-#: digikam/digikamapp.cpp:832 utilities/imageeditor/editor/imagewindow.cpp:308
+#: digikam/digikamapp.cpp:832 utilities/imageeditor/editor/imagewindow.cpp:307
 msgid "Assign Rating \"Two Stars\""
 msgstr "Gán đánh giá « Hai sao »"
 
-#: digikam/digikamapp.cpp:835 utilities/imageeditor/editor/imagewindow.cpp:311
+#: digikam/digikamapp.cpp:835 utilities/imageeditor/editor/imagewindow.cpp:310
 msgid "Assign Rating \"Three Stars\""
 msgstr "Gán đánh giá « Ba sao »"
 
-#: digikam/digikamapp.cpp:838 utilities/imageeditor/editor/imagewindow.cpp:314
+#: digikam/digikamapp.cpp:838 utilities/imageeditor/editor/imagewindow.cpp:313
 msgid "Assign Rating \"Four Stars\""
 msgstr "Gán đánh giá « Bốn sao »"
 
-#: digikam/digikamapp.cpp:841 utilities/imageeditor/editor/imagewindow.cpp:317
+#: digikam/digikamapp.cpp:841 utilities/imageeditor/editor/imagewindow.cpp:316
 msgid "Assign Rating \"Five Stars\""
 msgstr "Gán đánh giá « Năm sao »"
 
@@ -3199,14 +3354,9 @@ msgstr "Ảnh được tìm trong %1"
 msgid "No Media Devices Found"
 msgstr "Không tìm thấy thiết bị phương tiện"
 
-#: digikam/digikamapp.cpp:1497 showfoto/setup/setup.cpp:91
-#: utilities/imageeditor/editor/editorwindow.cpp:545
-msgid "General"
-msgstr "Chung"
-
 #: digikam/digikamapp.cpp:1645
-#: utilities/imageeditor/canvas/imagepluginloader.cpp:138
-#: utilities/imageeditor/canvas/imagepluginloader.cpp:186
+#: utilities/imageeditor/canvas/imagepluginloader.cpp:162
+#: utilities/imageeditor/canvas/imagepluginloader.cpp:210
 #, c-format
 msgid "Loading: %1"
 msgstr "Đang tải %1..."
@@ -3607,7 +3757,7 @@ msgstr ""
 msgid "Open Images"
 msgstr "Mở ảnh"
 
-#: showfoto/showfoto.cpp:736 utilities/imageeditor/editor/imagewindow.cpp:676
+#: showfoto/showfoto.cpp:736 utilities/imageeditor/editor/imagewindow.cpp:675
 msgid " (%2 of %3)"
 msgstr " (%2 trên %3)"
 
@@ -3628,8 +3778,8 @@ msgstr ""
 "Bạn có chắc chưa?"
 
 #: showfoto/showfoto.cpp:1108
-#: utilities/imageeditor/editor/imagewindow.cpp:1016
-#: utilities/imageeditor/editor/imagewindow.cpp:1047
+#: utilities/imageeditor/editor/imagewindow.cpp:1015
+#: utilities/imageeditor/editor/imagewindow.cpp:1046
 #, fuzzy
 msgid "Prepare slideshow. Please wait..."
 msgstr "Lỗi thêm thẻ vào co sở dữ liệu"
@@ -4684,7 +4834,7 @@ msgid "X:"
 msgstr "X:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:161
-#: utilities/imageeditor/tools/imageresizedlg.cpp:92
+#: utilities/imageeditor/tools/imageresize.cpp:113
 msgid "Width:"
 msgstr "Rộng:"
 
@@ -4701,7 +4851,7 @@ msgid "Y:"
 msgstr "Y:"
 
 #: imageplugins/imageeffect_ratiocrop.cpp:181
-#: utilities/imageeditor/tools/imageresizedlg.cpp:98
+#: utilities/imageeditor/tools/imageresize.cpp:119
 msgid "Height:"
 msgstr "Cao :"
 
@@ -6525,12 +6675,12 @@ msgstr ""
 msgid "Sorry; cannot use home directory as albums library."
 msgstr "Tiếc là không thể dùng thư mục chính là thư viện tập ảnh."
 
-#: utilities/setup/setupimgplugins.cpp:79
+#: utilities/setup/setupimgplugins.cpp:80
 #, fuzzy
 msgid "Toggle All"
 msgstr "Bật/tắt khoá"
 
-#: utilities/setup/setupimgplugins.cpp:89
+#: utilities/setup/setupimgplugins.cpp:90
 #, fuzzy
 msgid ""
 "<p>You can set here the list of plugins which must be enabled/disabled for the "
@@ -6541,7 +6691,7 @@ msgstr ""
 "trình bộ sửa đổi ảnh digiKam chạy sau."
 "<p>Ghi chú : không thể tắt bổ sung ảnh lõi."
 
-#: utilities/setup/setupimgplugins.cpp:133
+#: utilities/setup/setupimgplugins.cpp:139
 #, c-format
 msgid "Plugins found: %1"
 msgstr "Tìm thấy bổ sung: %1"
@@ -6725,10 +6875,6 @@ msgid ""
 msgstr ""
 "<p>Bạn có thể bấm cái nút này để xem thông tin chi tiết hơn về hồ sơ kiểm lỗi "
 "mềm được chọn.</p>"
-
-#: utilities/setup/setupicc.cpp:303
-msgid "Advanced Settings"
-msgstr "Thiết lập cấp cao"
 
 #: utilities/setup/setupicc.cpp:306
 msgid "Use black point compensation"
@@ -7283,21 +7429,101 @@ msgstr ""
 "<p>Khả năng quản lý màu bị tắt</p>"
 "<p>Có thể bật nó ngay bây giờ bằng cách nhấn vào cái nút « Thiết lập ».</p>"
 
-#: utilities/imageeditor/tools/imageresizedlg.cpp:73
+#: utilities/imageeditor/tools/imageresize.cpp:78
 msgid "Resize Image"
 msgstr "Đổi cỡ ảnh"
 
-#: utilities/imageeditor/tools/imageresizedlg.cpp:104
+#: utilities/imageeditor/tools/imageresize.cpp:111
+#, fuzzy
+msgid "New Size"
+msgstr "Cỡ :"
+
+#: utilities/imageeditor/tools/imageresize.cpp:117
+#, fuzzy
+msgid "<p>Set here the new image width in pixels."
+msgstr "<p>Ở đây hãy đặt độ rộng chọn để xén."
+
+#: utilities/imageeditor/tools/imageresize.cpp:123
+#, fuzzy
+msgid "<p>Set here the new image height in pixels."
+msgstr "<p>Ở đây hãy đặt độ cao chọn để xén."
+
+#: utilities/imageeditor/tools/imageresize.cpp:125
 msgid "Width (%):"
 msgstr "Rộng (%):"
 
-#: utilities/imageeditor/tools/imageresizedlg.cpp:110
+#: utilities/imageeditor/tools/imageresize.cpp:129
+#, fuzzy
+msgid "<p>Set here the new image width in percents."
+msgstr "<p>Ở đây hãy đặt độ rộng chọn để xén."
+
+#: utilities/imageeditor/tools/imageresize.cpp:131
 msgid "Height (%):"
 msgstr "Cao (%):"
 
-#: utilities/imageeditor/tools/imageresizedlg.cpp:116
+#: utilities/imageeditor/tools/imageresize.cpp:135
+#, fuzzy
+msgid "<p>Set here the new image height in percents."
+msgstr "<p>Ở đây hãy đặt độ cao chọn để xén."
+
+#: utilities/imageeditor/tools/imageresize.cpp:137
 msgid "Maintain aspect ratio"
 msgstr "Duy trì tỷ lệ hình thể"
+
+#: utilities/imageeditor/tools/imageresize.cpp:138
+#, fuzzy
+msgid "<p>Enable this option to maintain aspect ratio with new image sizes."
+msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần vàng."
+
+#: utilities/imageeditor/tools/imageresize.cpp:148
+#, fuzzy
+msgid "Visit CImg library website"
+msgstr "Thăm nơi Mạng của dự án digiKam"
+
+#: utilities/imageeditor/tools/imageresize.cpp:150
+msgid "Restore photograph (slow)"
+msgstr ""
+
+#: utilities/imageeditor/tools/imageresize.cpp:151
+msgid ""
+"<p>Enable this option to restore photograph content. Warning: this process can "
+"take a while."
+msgstr ""
+
+#: utilities/imageeditor/tools/imageresize.cpp:156
+#, fuzzy
+msgid "<p>This is the current progress when you use Restoration mode."
+msgstr "<p>Đây là phần trăm hoàn tất của công việc."
+
+#: utilities/imageeditor/tools/imageresize.cpp:481
+#, fuzzy
+msgid "Resize"
+msgstr "Đổi &cỡ..."
+
+#: utilities/imageeditor/tools/imageresize.cpp:506
+#, fuzzy
+msgid "Photograph Resizing Settings File to Load"
+msgstr "Tập tin thiết lập quản lý màu cần nạp"
+
+#: utilities/imageeditor/tools/imageresize.cpp:517
+#, fuzzy
+msgid "\"%1\" is not a Photograph Resizing settings text file."
+msgstr "« %1 » không phải tập tin văn bản thiết lập quản lý màu"
+
+#: utilities/imageeditor/tools/imageresize.cpp:524
+#, fuzzy
+msgid "Cannot load settings from the Photograph Resizing text file."
+msgstr "Không thể nạp thiết lập từ tập tin văn bản quản lý màu."
+
+#: utilities/imageeditor/tools/imageresize.cpp:533
+#, fuzzy
+msgid "Photograph Resizing Settings File to Save"
+msgstr "Tập tin thiết lập quản lý màu cần lưu"
+
+#: utilities/imageeditor/tools/imageresize.cpp:542
+#, fuzzy
+msgid "Cannot save settings to the Photograph Resizing text file."
+msgstr "Không thể lưu thiết lập vào tập tin văn bản thiết lập quản lý màu."
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:59
 #, fuzzy
@@ -7398,57 +7624,57 @@ msgstr ""
 "hợp lệ. Vì thế sẽ không áp dụng việc chuyển dạng màu nào. Hãy kiểm tra lại cấu "
 "hình quản lý màu trong thiết lập digiKam để thẩm tra đường dẫn ICC."
 
-#: utilities/imageeditor/canvas/imagepluginloader.cpp:199
+#: utilities/imageeditor/canvas/imagepluginloader.cpp:223
 #, c-format
 msgid ""
 "_n: 1 Image Plugin Loaded\n"
 "%n Image Plugins Loaded"
 msgstr "%n bổ sung ảnh đã được tải"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:243
+#: utilities/imageeditor/editor/editorwindow.cpp:242
 msgid "&First"
 msgstr "Đầ&u"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:248
+#: utilities/imageeditor/editor/editorwindow.cpp:247
 msgid "&Last"
 msgstr "&Cuối"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:266
+#: utilities/imageeditor/editor/editorwindow.cpp:265
 msgid "Print Image..."
 msgstr "In ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:317
+#: utilities/imageeditor/editor/editorwindow.cpp:316
 msgid "Zoom &AutoFit"
 msgstr "Thu phóng vừ&a khít tự động"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:325
+#: utilities/imageeditor/editor/editorwindow.cpp:324
 msgid "Fullscreen"
 msgstr "Toàn màn hình"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:335
+#: utilities/imageeditor/editor/editorwindow.cpp:334
 #, fuzzy
 msgid "Under-Exposure Indicator"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:340
+#: utilities/imageeditor/editor/editorwindow.cpp:339
 #, fuzzy
 msgid "Over-Exposure Indicator"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:345
+#: utilities/imageeditor/editor/editorwindow.cpp:344
 #, fuzzy
 msgid "Color Managed View"
 msgstr "Quản lý màu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:352
+#: utilities/imageeditor/editor/editorwindow.cpp:351
 msgid "&Resize..."
 msgstr "Đổi &cỡ..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:356
+#: utilities/imageeditor/editor/editorwindow.cpp:355
 msgid "Crop"
 msgstr "Xén"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:362
+#: utilities/imageeditor/editor/editorwindow.cpp:361
 msgid ""
 "This option can be used to crop the image. Select a region of the image to "
 "enable this action."
@@ -7456,74 +7682,74 @@ msgstr ""
 "Tùy chọn này có thể được dùng để xén ảnh. Hãy chọn một vùng trên ảnh để bật "
 "hành động này."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:367
+#: utilities/imageeditor/editor/editorwindow.cpp:366
 msgid "Flip"
 msgstr "Lật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:370
+#: utilities/imageeditor/editor/editorwindow.cpp:369
 msgid "Horizontally"
 msgstr "Ngang"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:374
+#: utilities/imageeditor/editor/editorwindow.cpp:373
 msgid "Vertically"
 msgstr "Dọc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:383
+#: utilities/imageeditor/editor/editorwindow.cpp:382
 msgid "&Rotate"
 msgstr "&Xoay"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:409
+#: utilities/imageeditor/editor/editorwindow.cpp:408
 msgid "Image Plugins Handbooks"
 msgstr "Sổ tay bổ sung ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:426
+#: utilities/imageeditor/editor/editorwindow.cpp:425
 msgid "Exit Fullscreen mode"
 msgstr "Thoát chế độ toàn màn hình"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:427
+#: utilities/imageeditor/editor/editorwindow.cpp:426
 msgid "Exit out of the fullscreen mode"
 msgstr "Thoát khỏi chế độ toàn màn hình"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:432
-#: utilities/imageeditor/editor/editorwindow.cpp:442
+#: utilities/imageeditor/editor/editorwindow.cpp:431
+#: utilities/imageeditor/editor/editorwindow.cpp:441
 msgid "Load Next Image"
 msgstr "Tải ảnh kế tiếp"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:437
-#: utilities/imageeditor/editor/editorwindow.cpp:447
+#: utilities/imageeditor/editor/editorwindow.cpp:436
+#: utilities/imageeditor/editor/editorwindow.cpp:446
 msgid "Load Previous Image"
 msgstr "Tải ảnh trước đó"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:451
+#: utilities/imageeditor/editor/editorwindow.cpp:450
 msgid "Zoom In"
 msgstr "Phóng to"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:452
+#: utilities/imageeditor/editor/editorwindow.cpp:451
 msgid "Zoom in on Image"
 msgstr "Phóng to ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:456
+#: utilities/imageeditor/editor/editorwindow.cpp:455
 msgid "Zoom Out"
 msgstr "Thu nhỏ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:457
+#: utilities/imageeditor/editor/editorwindow.cpp:456
 msgid "Zoom out of Image"
 msgstr "Thu nhỏ ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:526
+#: utilities/imageeditor/editor/editorwindow.cpp:525
 #, c-format
 msgid "Print %1"
 msgstr "In %1"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:531
+#: utilities/imageeditor/editor/editorwindow.cpp:530
 msgid "Failed to print file: '%1'"
 msgstr "Lỗi in tập tin: « %1 »"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:636
+#: utilities/imageeditor/editor/editorwindow.cpp:628
 msgid "Zoom: "
 msgstr "Thu phóng: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1017
+#: utilities/imageeditor/editor/editorwindow.cpp:1009
 msgid ""
 "The image '%1' has been modified.\n"
 "Do you want to save it?"
@@ -7531,24 +7757,24 @@ msgstr ""
 "Ảnh « %1 » đã bị sửa đổi.\n"
 "Bạn có muốn lưu nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1074
+#: utilities/imageeditor/editor/editorwindow.cpp:1066
 msgid "Please wait while the image is being saved..."
 msgstr "Hãy đợi trong khi lưu ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1149
+#: utilities/imageeditor/editor/editorwindow.cpp:1141
 msgid "Loading: "
 msgstr "Đang tải: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1167
+#: utilities/imageeditor/editor/editorwindow.cpp:1159
 msgid "Failed to load image \"%1\""
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1201
+#: utilities/imageeditor/editor/editorwindow.cpp:1193
 msgid "Saving: "
 msgstr "Đang lưu: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1215
-#: utilities/imageeditor/editor/editorwindow.cpp:1256
+#: utilities/imageeditor/editor/editorwindow.cpp:1207
+#: utilities/imageeditor/editor/editorwindow.cpp:1248
 msgid ""
 "Failed to save file\n"
 "\"%1\"\n"
@@ -7560,15 +7786,15 @@ msgstr ""
 "vào\n"
 "« %2 »."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1362
+#: utilities/imageeditor/editor/editorwindow.cpp:1354
 msgid "New Image File Name"
 msgstr "Tên tập tin ảnh mới"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1418
+#: utilities/imageeditor/editor/editorwindow.cpp:1410
 msgid "Target image file format \"%1\" unsupported."
 msgstr "Dạng thức tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1428
+#: utilities/imageeditor/editor/editorwindow.cpp:1420
 msgid ""
 "Failed to save file\n"
 "\"%1\" to\n"
@@ -7579,22 +7805,22 @@ msgstr ""
 "vào\n"
 "« %2 »."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1455
+#: utilities/imageeditor/editor/editorwindow.cpp:1447
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Tập tin tên « %1 » đã có. Bạn có chắc muốn ghi đè lên nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1459
-#: utilities/imageeditor/editor/editorwindow.cpp:1505
+#: utilities/imageeditor/editor/editorwindow.cpp:1451
+#: utilities/imageeditor/editor/editorwindow.cpp:1497
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1460
-#: utilities/imageeditor/editor/editorwindow.cpp:1506
+#: utilities/imageeditor/editor/editorwindow.cpp:1452
+#: utilities/imageeditor/editor/editorwindow.cpp:1498
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1500
+#: utilities/imageeditor/editor/editorwindow.cpp:1492
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure you "
 "want to overwrite it?"
@@ -7602,59 +7828,59 @@ msgstr ""
 "Bạn không có quyền ghi tập tin tên « %1 ». Bạn có chắc muốn ghi đè lên nó "
 "không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1534
+#: utilities/imageeditor/editor/editorwindow.cpp:1526
 msgid "Failed to overwrite original file"
 msgstr "Lỗi ghi đè lên tập tin gốc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1535
+#: utilities/imageeditor/editor/editorwindow.cpp:1527
 msgid "Error Saving File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1584
+#: utilities/imageeditor/editor/editorwindow.cpp:1576
 #, fuzzy
 msgid "Color Managed View is enabled"
 msgstr "Hồ sơ quản lý màu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1586
+#: utilities/imageeditor/editor/editorwindow.cpp:1578
 #, fuzzy
 msgid "Color Managed View is disabled"
 msgstr "Hồ sơ quản lý màu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1590
+#: utilities/imageeditor/editor/editorwindow.cpp:1582
 msgid ""
 "Color Management is not configured, so the Color Managed View is not available"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1613
+#: utilities/imageeditor/editor/editorwindow.cpp:1605
 #, fuzzy
 msgid "Under-Exposure indicator is enabled"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1614
+#: utilities/imageeditor/editor/editorwindow.cpp:1606
 #, fuzzy
 msgid "Under-Exposure indicator is disabled"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1635
+#: utilities/imageeditor/editor/editorwindow.cpp:1627
 #, fuzzy
 msgid "Over-Exposure indicator is enabled"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1636
+#: utilities/imageeditor/editor/editorwindow.cpp:1628
 #, fuzzy
 msgid "Over-Exposure indicator is disabled"
 msgstr "Cái chỉ sự phơi quá lâu"
 
-#: utilities/imageeditor/editor/imagewindow.cpp:324
+#: utilities/imageeditor/editor/imagewindow.cpp:323
 msgid "Delete File Permanently"
 msgstr "Xoá hoàn toàn tập tin"
 
-#: utilities/imageeditor/editor/imagewindow.cpp:436
+#: utilities/imageeditor/editor/imagewindow.cpp:435
 #, c-format
 msgid "digiKam Image Editor - %1"
 msgstr "Bộ sửa đổi ảnh digiKam — %1"
 
-#: utilities/imageeditor/editor/imagewindow.cpp:979
+#: utilities/imageeditor/editor/imagewindow.cpp:978
 msgid ""
 "There is no image to show in the current album.\n"
 "The image editor will be closed."
@@ -7662,7 +7888,7 @@ msgstr ""
 "Không có ảnh cần hiển thị trong tập ảnh hiện có.\n"
 "Như thế thì bộ sửa đổi ảnh sẽ đóng."
 
-#: utilities/imageeditor/editor/imagewindow.cpp:981
+#: utilities/imageeditor/editor/imagewindow.cpp:980
 msgid "No Image in Current Album"
 msgstr "Không có ảnh trong tập ảnh hiện có"
 
@@ -8562,17 +8788,11 @@ msgstr "Đen trắng..."
 #~ msgid "<p><b>Brightness</b><p>Specify the brightness level of output image.The default value is 1.0.<p>"
 #~ msgstr "<p><b>Độ sáng</b><p>Hãy xác định độ sãng của ảnh xuất. Giá trị mặc định là 1.0.<p>"
 
-#~ msgid "Quality:"
-#~ msgstr "Chất lượng:"
-
 #~ msgid "Bilinear interpolation"
 #~ msgstr "Nội suy tuyến kép"
 
 #~ msgid "VNG interpolation"
 #~ msgstr "Nội suy VNG"
-
-#~ msgid "AHD interpolation"
-#~ msgstr "Nội suy AHD"
 
 #~ msgid "<p><b>Quality</b><p>Select here the demosaicing RAW images decoding interpolation method. A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction, another common spelling is demosaicking. There are 3 methods to demosaic RAW images:<p><b>Bilinear</b>: use high-speed but low-quality bilinear interpolation (default - for a slow computer). In this method, the red value of a non-red pixel is computed as the average of the adjacent red pixels, and similar for blue and green.<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method computes gradients near the pixel of interest and uses the lower gradients (representing smoother and more similar parts of the image) to make an estimate.<p><b>AHD</b>: use Adaptive Homogeneity-Directed interpolation. This method selects the direction of interpolation so as to maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
 #~ msgstr "<p><b>Chất lượng</b><p>Ở đây hãy chọn phương pháp nội suy giải mã RAW demosaicing. Thuật toán demosaic là tiến trình ảnh điện số dùng để nội suy một ảnh hoàn toàn từ dữ liệu thô bộ phận được nhận từ bộ nhạy ảnh đã lọc màu bên ngoài rất nhiều máy ảnh điện số, kết quả có dạng ma trận các điểm ảnh có màu sắc. Cũng được biết như là sự nội suy CFA hay sự cấu tạo màu; cách chính tả thường khác là « demosaicking ».<p><b>Tuyến kép</b>: dùng khả năng nội suy tuyến kép có tốc độ cao còn chất lượng thấp (mặc định cho máy tính chạy chậm hơn). Phương pháp này tính giá trị màu đỏ của một điểm ảnh khác màu đỏ nào đó bằng giá trị trung bình của các điểm ảnh màu đỏ kề nhau; tương tự với màu lục và xanh.<p><b>VNG</b>: dùng khả năng nội suy kiểu Số Dốc Biến. Phương pháp này tính các dốc gần điểm quan tâm và dùng những dốc thấp hơn (đại diện các phần ảnh mịn hơn và tương tự hơn) để tính số lượng ước đoán.<p><b>AHD</b>: dùng khả năng nội suy Hướng Đồng Nhất Mang Tính Thích Nghi. Phương pháp này chọn hướng nội suy để tối ưu hoá số đo độ đồng nhất thì thường tối thiểu hoá các đồ tạo tác màu.<p>"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam TRUNK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-04-15 07:14+0200\n"
+"POT-Creation-Date: 2007-04-16 07:23+0200\n"
 "PO-Revision-Date: 2007-01-02 18:27+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -527,7 +527,7 @@ msgstr "Thẻ mới..."
 msgid "Create Tag From AddressBook"
 msgstr "Tạo thẻ từ Sổ địa chỉ"
 
-#: digikam/digikamapp.cpp:603 digikam/tagfilterview.cpp:772
+#: digikam/digikamapp.cpp:586 digikam/tagfilterview.cpp:772
 #: digikam/tagfolderview.cpp:412 libs/imageproperties/imagedescedittab.cpp:808
 msgid "Edit Tag Properties..."
 msgstr "Sửa tài sản thẻ..."
@@ -537,7 +537,7 @@ msgstr "Sửa tài sản thẻ..."
 msgid "Reset Tag Icon"
 msgstr "Đặt lại biểu tượng thẻ"
 
-#: digikam/digikamapp.cpp:607 digikam/tagfilterview.cpp:775
+#: digikam/digikamapp.cpp:590 digikam/tagfilterview.cpp:775
 #: digikam/tagfilterview.cpp:1115 digikam/tagfilterview.cpp:1128
 #: digikam/tagfolderview.cpp:415 digikam/tagfolderview.cpp:595
 #: digikam/tagfolderview.cpp:609 libs/imageproperties/imagedescedittab.cpp:811
@@ -576,7 +576,7 @@ msgstr "&Chọn"
 msgid "Deselect"
 msgstr "Hủy chọn"
 
-#: digikam/digikamapp.cpp:771 digikam/tagfilterview.cpp:800
+#: digikam/digikamapp.cpp:754 digikam/tagfilterview.cpp:800
 #: libs/imageproperties/imagedescedittab.cpp:836
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
@@ -1128,7 +1128,7 @@ msgstr "Sổ tay bổ sung"
 msgid "Color Profile Info"
 msgstr "Thông tin hồ sơ màu"
 
-#: digikam/digikamapp.cpp:1545
+#: digikam/digikamapp.cpp:1525
 #: libs/greycstoration/greycstorationwidget.cpp:128
 #: showfoto/setup/setup.cpp:86
 #: utilities/imageeditor/editor/editorwindow.cpp:589
@@ -1687,6 +1687,20 @@ msgstr "Phần trăm:"
 msgid "None options available"
 msgstr "Không có mô tả sẵn sàng"
 
+#: digikam/digikamapp.cpp:778
+#: imageplugins/superimpose/imageeffect_superimpose.cpp:125
+#: libs/widgets/common/statuszoombar.cpp:75
+#, fuzzy
+msgid "Zoom out"
+msgstr "Thu nhỏ"
+
+#: digikam/digikamapp.cpp:770
+#: imageplugins/superimpose/imageeffect_superimpose.cpp:119
+#: libs/widgets/common/statuszoombar.cpp:87
+#, fuzzy
+msgid "Zoom in"
+msgstr "Phóng to"
+
 #: libs/widgets/common/statusnavigatebar.cpp:72
 msgid "Go to the first item"
 msgstr "Tới mục đầu"
@@ -2094,11 +2108,11 @@ msgid "New Album..."
 msgstr "Tập ảnh mới..."
 
 #: digikam/albumfolderview.cpp:454 digikam/albumiconview.cpp:561
-#: digikam/digikamapp.cpp:631
+#: digikam/digikamapp.cpp:614
 msgid "Rename..."
 msgstr "Thay tên..."
 
-#: digikam/albumfolderview.cpp:455 digikam/digikamapp.cpp:560
+#: digikam/albumfolderview.cpp:455 digikam/digikamapp.cpp:543
 msgid "Edit Album Properties..."
 msgstr "Sửa tài sản tập ảnh..."
 
@@ -2110,7 +2124,7 @@ msgstr "Đặt lại biểu tượng tập ảnh"
 msgid "Move Album to Trash"
 msgstr "Chuyển tập ảnh vào Sọt rác"
 
-#: digikam/albumfolderview.cpp:525 digikam/digikamapp.cpp:535
+#: digikam/albumfolderview.cpp:525 digikam/digikamapp.cpp:518
 msgid "Delete Album"
 msgstr "Xoá tập ảnh"
 
@@ -2807,11 +2821,11 @@ msgstr "Tập:"
 msgid "Tags:"
 msgstr "Thẻ:"
 
-#: digikam/albumiconview.cpp:525 digikam/digikamapp.cpp:613
+#: digikam/albumiconview.cpp:525 digikam/digikamapp.cpp:596
 msgid "View..."
 msgstr "Xem..."
 
-#: digikam/albumiconview.cpp:526 digikam/digikamapp.cpp:621
+#: digikam/albumiconview.cpp:526 digikam/digikamapp.cpp:604
 #: digikam/imagepreviewview.cpp:335
 msgid "Edit..."
 msgstr "Sửa..."
@@ -2949,7 +2963,7 @@ msgstr ""
 "Không thể hiển thị ô xem thử cho\n"
 "« %1 »"
 
-#: digikam/digikamapp.cpp:495 digikam/imagepreviewview.cpp:326
+#: digikam/digikamapp.cpp:478 digikam/imagepreviewview.cpp:326
 msgid "Forward"
 msgstr "Tới"
 
@@ -3069,7 +3083,7 @@ msgstr "Đang kiểm tra phiên bản dcraw"
 msgid "Reading database"
 msgstr "Đang đọc cơ sở dữ liệu..."
 
-#: digikam/digikamapp.cpp:228
+#: digikam/digikamapp.cpp:227
 msgid ""
 "<qt>"
 "<p>ICC profiles path seems to be invalid.</p>"
@@ -3083,137 +3097,125 @@ msgstr ""
 "trường hợp này, tính năng « Quản lý màu » sẽ bị tắt đến khi bạn giải quyết vấn "
 "đề này.</p></qt>"
 
-#: digikam/digikamapp.cpp:289
+#: digikam/digikamapp.cpp:292
 msgid "Auto-detect camera"
 msgstr "Phát hiện tự động máy ảnh"
 
-#: digikam/digikamapp.cpp:303
+#: digikam/digikamapp.cpp:306
 msgid "Opening Download Dialog"
 msgstr "Đang mở hộp thoại tải về..."
 
-#: digikam/digikamapp.cpp:322
+#: digikam/digikamapp.cpp:325
 msgid "Initializing Main View"
 msgstr "Đang sở khởi ô xem chính..."
 
-#: digikam/digikamapp.cpp:352 digikam/digikamapp.cpp:795
-#: imageplugins/superimpose/imageeffect_superimpose.cpp:125
-#, fuzzy
-msgid "Zoom out"
-msgstr "Thu nhỏ"
-
-#: digikam/digikamapp.cpp:364 digikam/digikamapp.cpp:787
-#: imageplugins/superimpose/imageeffect_superimpose.cpp:119
-#, fuzzy
-msgid "Zoom in"
-msgstr "Phóng to"
-
-#: digikam/digikamapp.cpp:416
+#: digikam/digikamapp.cpp:399
 msgid "Exit Preview"
 msgstr "Thoát khỏi ô xem thử"
 
-#: digikam/digikamapp.cpp:417
+#: digikam/digikamapp.cpp:400
 msgid "Exit out of the preview mode"
 msgstr "Thoát khỏi chế độ xem thử"
 
-#: digikam/digikamapp.cpp:421 digikam/digikamapp.cpp:422
-#: digikam/digikamapp.cpp:431 digikam/digikamapp.cpp:432
+#: digikam/digikamapp.cpp:404 digikam/digikamapp.cpp:405
+#: digikam/digikamapp.cpp:414 digikam/digikamapp.cpp:415
 #: utilities/imageeditor/editor/editorwindow.cpp:472
 #: utilities/imageeditor/editor/editorwindow.cpp:482
 msgid "Next Image"
 msgstr "Ảnh kế"
 
-#: digikam/digikamapp.cpp:426 digikam/digikamapp.cpp:427
-#: digikam/digikamapp.cpp:436 digikam/digikamapp.cpp:437
+#: digikam/digikamapp.cpp:409 digikam/digikamapp.cpp:410
+#: digikam/digikamapp.cpp:419 digikam/digikamapp.cpp:420
 #: utilities/imageeditor/editor/editorwindow.cpp:477
 #: utilities/imageeditor/editor/editorwindow.cpp:487
 msgid "Previous Image"
 msgstr "Ảnh trước"
 
-#: digikam/digikamapp.cpp:441 digikam/digikamapp.cpp:442
+#: digikam/digikamapp.cpp:424 digikam/digikamapp.cpp:425
 msgid "First Image"
 msgstr "Ảnh đầu"
 
-#: digikam/digikamapp.cpp:446 digikam/digikamapp.cpp:447
+#: digikam/digikamapp.cpp:429 digikam/digikamapp.cpp:430
 msgid "Last Image"
 msgstr "Ảnh cuối"
 
-#: digikam/digikamapp.cpp:451 digikam/digikamapp.cpp:452
+#: digikam/digikamapp.cpp:434 digikam/digikamapp.cpp:435
 msgid "Copy Album Items Selection"
 msgstr "Chép vùng chọn mục tập ảnh"
 
-#: digikam/digikamapp.cpp:456 digikam/digikamapp.cpp:457
+#: digikam/digikamapp.cpp:439 digikam/digikamapp.cpp:440
 msgid "Paste Album Items Selection"
 msgstr "Dán vùng chọn mục tập ảnh"
 
-#: digikam/digikamapp.cpp:466
+#: digikam/digikamapp.cpp:449
 msgid "&Camera"
 msgstr "&Máy ảnh"
 
-#: digikam/digikamapp.cpp:474
+#: digikam/digikamapp.cpp:457
 msgid "&Themes"
 msgstr "&Sắc thái"
 
-#: digikam/digikamapp.cpp:480
+#: digikam/digikamapp.cpp:463
 msgid "&Back"
 msgstr "&Lùi"
 
-#: digikam/digikamapp.cpp:510
+#: digikam/digikamapp.cpp:493
 msgid "&New Album..."
 msgstr "Tập ả&nh mới..."
 
-#: digikam/digikamapp.cpp:517
+#: digikam/digikamapp.cpp:500
 msgid "This option creates a new empty Album in the database."
 msgstr "Tùy chọn này tạo một tập ảnh rỗng mới trong co sở dữ liệu."
 
-#: digikam/digikamapp.cpp:519
+#: digikam/digikamapp.cpp:502
 msgid "&Sort Albums"
 msgstr "&Sắp xếp tập ảnh"
 
-#: digikam/digikamapp.cpp:530
+#: digikam/digikamapp.cpp:513
 msgid "By Folder"
 msgstr "Theo thư mục"
 
-#: digikam/digikamapp.cpp:531
+#: digikam/digikamapp.cpp:514
 msgid "By Collection"
 msgstr "Theo tập hợp"
 
-#: digikam/digikamapp.cpp:532 digikam/digikamapp.cpp:690
+#: digikam/digikamapp.cpp:515 digikam/digikamapp.cpp:673
 msgid "By Date"
 msgstr "Theo ngày"
 
-#: digikam/digikamapp.cpp:543
+#: digikam/digikamapp.cpp:526
 msgid "Add Images..."
 msgstr "Thêm ảnh..."
 
-#: digikam/digikamapp.cpp:550
+#: digikam/digikamapp.cpp:533
 #, fuzzy
 msgid "This option adds new items to the current Album."
 msgstr "Tùy chọn này thêm ảnh mới vào tập ảnh hiện thời."
 
-#: digikam/digikamapp.cpp:552
+#: digikam/digikamapp.cpp:535
 msgid "Import Folders..."
 msgstr "Nhập thư mục..."
 
-#: digikam/digikamapp.cpp:567
+#: digikam/digikamapp.cpp:550
 msgid ""
 "This option allows you to set the Album Properties information about the "
 "Collection."
 msgstr ""
 "Tùy chọn này cho bán khả năng đặt thông tin Tài sản Tập ảnh về Tập hợp đó."
 
-#: digikam/digikamapp.cpp:570
+#: digikam/digikamapp.cpp:553
 msgid "Refresh"
 msgstr "Cập nhật"
 
-#: digikam/digikamapp.cpp:577
+#: digikam/digikamapp.cpp:560
 msgid "This option refresh all album content."
 msgstr "Tùy chọn này cập nhật toàn bộ nội dung của tập ảnh."
 
-#: digikam/digikamapp.cpp:579
+#: digikam/digikamapp.cpp:562
 msgid "Sync Pictures Metadata"
 msgstr ""
 
-#: digikam/digikamapp.cpp:586
+#: digikam/digikamapp.cpp:569
 #, fuzzy
 msgid ""
 "This option sync pictures metadata from current album with digiKam database "
@@ -3222,22 +3224,22 @@ msgstr ""
 "Việc xây dựng mọi hình thu nhỏ mục tập ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:589
+#: digikam/digikamapp.cpp:572
 msgid "Open in Konqueror"
 msgstr "Mở bằng Konqueror"
 
-#: digikam/digikamapp.cpp:599
+#: digikam/digikamapp.cpp:582
 msgid "New &Tag..."
 msgstr "&Thẻ mới..."
 
-#: digikam/digikamapp.cpp:628
+#: digikam/digikamapp.cpp:611
 #, fuzzy
 msgid ""
 "This option allows you to open the editor with the current selected item."
 msgstr ""
 "Tùy chọn nàt cho bạn khả năng mở Bộ Sửa Đổi Ảnh với ảnh được chọn hiện thời."
 
-#: digikam/digikamapp.cpp:638
+#: digikam/digikamapp.cpp:621
 #, fuzzy
 msgid ""
 "This option allows you to rename the filename of the current selected item"
@@ -3245,218 +3247,218 @@ msgstr ""
 "Tùy chọn nàt cho bạn khả năng thay đổi tên của tập tin của ảnh được chọn hiện "
 "thời."
 
-#: digikam/digikamapp.cpp:651
+#: digikam/digikamapp.cpp:634
 msgid "Delete Permanently"
 msgstr "Xoá hoàn toàn"
 
-#: digikam/digikamapp.cpp:661 utilities/imageeditor/editor/imagewindow.cpp:334
+#: digikam/digikamapp.cpp:644 utilities/imageeditor/editor/imagewindow.cpp:334
 msgid "Delete Permanently without Confirmation"
 msgstr "Xoá hoàn toàn không cần xác nhận"
 
-#: digikam/digikamapp.cpp:669 utilities/imageeditor/editor/imagewindow.cpp:342
+#: digikam/digikamapp.cpp:652 utilities/imageeditor/editor/imagewindow.cpp:342
 msgid "Move to Trash without Confirmation"
 msgstr "Chuyển vào Sọt Rạc không cần xác nhận"
 
-#: digikam/digikamapp.cpp:677
+#: digikam/digikamapp.cpp:660
 msgid "&Sort Images"
 msgstr "&Sắp xếp ảnh"
 
-#: digikam/digikamapp.cpp:688
+#: digikam/digikamapp.cpp:671
 msgid "By Name"
 msgstr "Theo tên"
 
-#: digikam/digikamapp.cpp:689
+#: digikam/digikamapp.cpp:672
 msgid "By Path"
 msgstr "Theo đường dẫn"
 
-#: digikam/digikamapp.cpp:691
+#: digikam/digikamapp.cpp:674
 msgid "By File Size"
 msgstr "Theo kích cỡ tập tin"
 
-#: digikam/digikamapp.cpp:692
+#: digikam/digikamapp.cpp:675
 msgid "By Rating"
 msgstr "Theo đánh giá"
 
-#: digikam/digikamapp.cpp:702
+#: digikam/digikamapp.cpp:685
 msgid "Correct Exif Orientation Tag"
 msgstr "Sửa thẻ hướng EXIF"
 
-#: digikam/digikamapp.cpp:708
+#: digikam/digikamapp.cpp:691
 msgid "Normal"
 msgstr "Chuẩn"
 
-#: digikam/digikamapp.cpp:710
+#: digikam/digikamapp.cpp:693
 msgid "Flipped Horizontally"
 msgstr "Lật ngang"
 
-#: digikam/digikamapp.cpp:712
+#: digikam/digikamapp.cpp:695
 msgid "Rotated 180 Degrees"
 msgstr "Xoay 180°"
 
-#: digikam/digikamapp.cpp:714
+#: digikam/digikamapp.cpp:697
 msgid "Flipped Vertically"
 msgstr "Lật dọc"
 
-#: digikam/digikamapp.cpp:716
+#: digikam/digikamapp.cpp:699
 msgid "Rotated 90 Degrees / Horiz. Flipped"
 msgstr "Xoay 90°/Lật ngang"
 
-#: digikam/digikamapp.cpp:719
+#: digikam/digikamapp.cpp:702
 msgid "Rotated 90 Degrees"
 msgstr "Xoay 90°"
 
-#: digikam/digikamapp.cpp:721
+#: digikam/digikamapp.cpp:704
 msgid "Rotated 90 Degrees / Vert. Flipped"
 msgstr "Xoay 90°/Lật dọc"
 
-#: digikam/digikamapp.cpp:724
+#: digikam/digikamapp.cpp:707
 msgid "Rotated 270 Degrees"
 msgstr "Xoay 270°"
 
-#: digikam/digikamapp.cpp:763
+#: digikam/digikamapp.cpp:746
 msgid "Select None"
 msgstr "Chọn Không gì"
 
-#: digikam/digikamapp.cpp:803
+#: digikam/digikamapp.cpp:786
 #: utilities/imageeditor/editor/editorwindow.cpp:328
 #, fuzzy
 msgid "Zoom to 1:1"
 msgstr "Thu nhỏ"
 
-#: digikam/digikamapp.cpp:811
+#: digikam/digikamapp.cpp:794
 #: utilities/imageeditor/editor/editorwindow.cpp:333
 msgid "Fit to &Window"
 msgstr ""
 
-#: digikam/digikamapp.cpp:823
+#: digikam/digikamapp.cpp:806
 #, fuzzy
 msgid "Full Screen Mode"
 msgstr "Chế độ toàn màn hình"
 
-#: digikam/digikamapp.cpp:830
+#: digikam/digikamapp.cpp:813
 #, fuzzy
 msgid "This option allows you to toggle the main window in full screen mode."
 msgstr ""
 "Tùy chọn nàt cho bạn khả năng bật/tắt chế độ toàn màn hình cho cửa sổ chính."
 
-#: digikam/digikamapp.cpp:834 showfoto/setup/setup.cpp:102
+#: digikam/digikamapp.cpp:817 showfoto/setup/setup.cpp:102
 #: utilities/imageeditor/editor/editorwindow.cpp:381
 #: utilities/setup/setup.cpp:179
 msgid "Slide Show"
 msgstr "Chiếu ảnh"
 
-#: digikam/digikamapp.cpp:839
+#: digikam/digikamapp.cpp:822
 msgid "All"
 msgstr ""
 
-#: digikam/digikamapp.cpp:844
+#: digikam/digikamapp.cpp:827
 #, fuzzy
 msgid "Selection"
 msgstr "<p>Vùng chọn"
 
-#: digikam/digikamapp.cpp:851
+#: digikam/digikamapp.cpp:834
 msgid "Recursive"
 msgstr ""
 
-#: digikam/digikamapp.cpp:863
+#: digikam/digikamapp.cpp:846
 msgid "Kipi Plugins Handbook"
 msgstr "Sổ tay Bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:876
+#: digikam/digikamapp.cpp:859
 #: utilities/imageeditor/editor/editorwindow.cpp:456
 msgid "Donate Money..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:886 utilities/imageeditor/editor/imagewindow.cpp:302
+#: digikam/digikamapp.cpp:869 utilities/imageeditor/editor/imagewindow.cpp:302
 msgid "Assign Rating \"No Star\""
 msgstr "Gán đánh giá « Không gì »"
 
-#: digikam/digikamapp.cpp:889 utilities/imageeditor/editor/imagewindow.cpp:305
+#: digikam/digikamapp.cpp:872 utilities/imageeditor/editor/imagewindow.cpp:305
 msgid "Assign Rating \"One Star\""
 msgstr "Gán đánh giá « Một sao »"
 
-#: digikam/digikamapp.cpp:892 utilities/imageeditor/editor/imagewindow.cpp:308
+#: digikam/digikamapp.cpp:875 utilities/imageeditor/editor/imagewindow.cpp:308
 msgid "Assign Rating \"Two Stars\""
 msgstr "Gán đánh giá « Hai sao »"
 
-#: digikam/digikamapp.cpp:895 utilities/imageeditor/editor/imagewindow.cpp:311
+#: digikam/digikamapp.cpp:878 utilities/imageeditor/editor/imagewindow.cpp:311
 msgid "Assign Rating \"Three Stars\""
 msgstr "Gán đánh giá « Ba sao »"
 
-#: digikam/digikamapp.cpp:898 utilities/imageeditor/editor/imagewindow.cpp:314
+#: digikam/digikamapp.cpp:881 utilities/imageeditor/editor/imagewindow.cpp:314
 msgid "Assign Rating \"Four Stars\""
 msgstr "Gán đánh giá « Bốn sao »"
 
-#: digikam/digikamapp.cpp:901 utilities/imageeditor/editor/imagewindow.cpp:317
+#: digikam/digikamapp.cpp:884 utilities/imageeditor/editor/imagewindow.cpp:317
 msgid "Assign Rating \"Five Stars\""
 msgstr "Gán đánh giá « Năm sao »"
 
-#: digikam/digikamapp.cpp:909
+#: digikam/digikamapp.cpp:892
 msgid "Quick Search..."
 msgstr "Tìm kiếm nhanh..."
 
-#: digikam/digikamapp.cpp:914
+#: digikam/digikamapp.cpp:897
 msgid "Advanced Search..."
 msgstr "Tìm kiếm cấp cao..."
 
-#: digikam/digikamapp.cpp:917
+#: digikam/digikamapp.cpp:900
 msgid "Scan for New Images"
 msgstr "Quét tìm ảnh mới"
 
-#: digikam/digikamapp.cpp:921
+#: digikam/digikamapp.cpp:904
 msgid "Rebuild all Thumbnails..."
 msgstr "Xây dựng mọi hình thu nhỏ..."
 
-#: digikam/digikamapp.cpp:925
+#: digikam/digikamapp.cpp:908
 msgid "Sync all Pictures Metadata..."
 msgstr ""
 
-#: digikam/digikamapp.cpp:940
+#: digikam/digikamapp.cpp:923
 msgid "Loading cameras"
 msgstr "Đang tải máy ảnh..."
 
-#: digikam/digikamapp.cpp:1180
+#: digikam/digikamapp.cpp:1160
 #, fuzzy
 msgid "No item selected"
 msgstr "Xoá các điều chọn"
 
-#: digikam/digikamapp.cpp:1186
+#: digikam/digikamapp.cpp:1166
 #, fuzzy
 msgid "%1 items selected"
 msgstr "Xoá các điều chọn"
 
-#: digikam/digikamapp.cpp:1329
+#: digikam/digikamapp.cpp:1309
 #, c-format
 msgid "Browse %1"
 msgstr "Duyệt %1"
 
-#: digikam/digikamapp.cpp:1342
+#: digikam/digikamapp.cpp:1322
 #, c-format
 msgid "Images found in %1"
 msgstr "Ảnh được tìm trong %1"
 
-#: digikam/digikamapp.cpp:1403
+#: digikam/digikamapp.cpp:1383
 msgid "No Media Devices Found"
 msgstr "Không tìm thấy thiết bị phương tiện"
 
-#: digikam/digikamapp.cpp:1646
+#: digikam/digikamapp.cpp:1626
 #, fuzzy
 msgid "Loading Kipi Plugins"
 msgstr "Bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:1758
+#: digikam/digikamapp.cpp:1738
 msgid "Media Browse"
 msgstr "Duyệt phương tiện"
 
-#: digikam/digikamapp.cpp:1762
+#: digikam/digikamapp.cpp:1742
 msgid "Add Camera..."
 msgstr "Thêm máy ảnh.."
 
-#: digikam/digikamapp.cpp:1771
+#: digikam/digikamapp.cpp:1751
 msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
-#: digikam/digikamapp.cpp:1800
+#: digikam/digikamapp.cpp:1780
 msgid ""
 "Rebuild all albums items thumbnails can take a while.\n"
 "Do you want to continue?"
@@ -3464,7 +3466,7 @@ msgstr ""
 "Việc xây dựng mọi hình thu nhỏ mục tập ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:1821
+#: digikam/digikamapp.cpp:1801
 #, fuzzy
 msgid ""
 "Sync all pictures metadata from all albums with digiKam database can take a "
@@ -3474,12 +3476,12 @@ msgstr ""
 "Việc xây dựng mọi hình thu nhỏ mục tập ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:1854
+#: digikam/digikamapp.cpp:1833
 #, fuzzy, c-format
 msgid "Size: %1"
 msgstr "Cỡ :"
 
-#: digikam/digikamapp.cpp:1862
+#: digikam/digikamapp.cpp:1839
 msgid "zoom: %1%"
 msgstr ""
 

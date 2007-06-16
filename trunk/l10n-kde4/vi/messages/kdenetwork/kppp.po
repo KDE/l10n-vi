@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kppp.po\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2007-05-19 05:50+0200\n"
-"PO-Revision-Date: 2007-06-16 16:29+0930\n"
+"PO-Revision-Date: 2007-06-16 23:12+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -504,7 +504,7 @@ msgstr "Đang khởi chạy trình nền pppd..."
 #: connect.cpp:1029
 #, qt-format
 msgid "Scan Var: %1"
-msgstr "Biến quét: %1
+msgstr "Biến quét: %1"
 
 #: connect.cpp:1039
 #, qt-format
@@ -532,7 +532,7 @@ msgstr "Đang quét: %1"
 #: connect.cpp:1152
 #, qt-format
 msgid "Expecting: %1"
-msgstr "Mong đợi: %1
+msgstr "Mong đợi: %1"
 
 #: connect.cpp:1187
 msgid "Logging on to network..."
@@ -600,6 +600,7 @@ msgid ""
 "Session Bill: %1\n"
 "Total Bill: %2"
 msgstr ""
+"\n"
 "Cước phiên chạy: %1\n"
 "Tổng cước: %2"
 
@@ -673,7 +674,7 @@ msgstr "&Xác thực:"
 
 #: edit.cpp:123
 msgid "Script-based"
-msgstr "Dựa vào văn lệnh
+msgstr "Dựa vào văn lệnh"
 
 #: edit.cpp:124
 msgid "PAP"
@@ -681,7 +682,7 @@ msgstr "PAP"
 
 #: edit.cpp:125
 msgid "Terminal-based"
-msgstr "Dựa vào thiết bị cuối
+msgstr "Dựa vào thiết bị cuối"
 
 #: edit.cpp:126
 msgid "CHAP"
@@ -762,7 +763,7 @@ msgstr "&Số gọi ngược:"
 
 #: edit.cpp:178
 msgid "Callback phone number"
-msgstr "Số điện thoại gọi ngược
+msgstr "Số điện thoại gọi ngược"
 
 #: edit.cpp:183
 msgid "Customize &pppd Arguments..."
@@ -782,6 +783,9 @@ msgstr ""
 "giải đoạn kết nối. Những lệnh được chạy dưới UID thật của bạn,\n"
 "vì thế bạn không thể chạy lệnh nào cần thiết quyền người chủ\n"
 "(nếu bạn không phải người chủ).\n"
+"\n"
+"Đảm bảo bạn cung cấp toàn bộ đường dẫn cho chương trình;\n"
+"không thì nó có thể không tìm được."
 
 #: edit.cpp:342
 msgid "&Before connect:"
@@ -1064,7 +1068,7 @@ msgstr ""
 "<p>Khi tùy chọn này được bật, tất cả các\n"
 "máy phục vụ đã xác định trong tập tin cấu hình\n"
 "<tt>/etc/resolv.conf</tt> bị tắt tạm thời trong\n"
-"khi thiết lập kết nối quay số. Sau khi đóng kết nối,\n
+"khi thiết lập kết nối quay số. Sau khi đóng kết nối,\n"
 "các máy phục vụ sẽ được bật lại.\n"
 "\n"
 "Bình thường, tùy chọn này không có ích,\n"
@@ -1160,11 +1164,13 @@ msgid ""
 "If no connection is made in this time frame,\n"
 "<i>kppp</i> will give up and kill pppd."
 msgstr ""
+"<i>kppp</i> sẽ đợi số giây này phát hiện\n"
+"kết nối PPP được thiết lập chưa. Chưa thì\n"
+"<i>kppp</i> sẽ chịu thua và giết pppd."
 
 #: general.cpp:93
-#, fuzzy
 msgid "Doc&k into panel on connect"
-msgstr "&Liệt kê khi kết nối"
+msgstr "Thả vào bảng khi &kết nối"
 
 #: general.cpp:95
 msgid ""
@@ -1176,11 +1182,16 @@ msgid ""
 "window to its original location and\n"
 "size."
 msgstr ""
+"<p>Một khi thiết lập kết nối, cửa sổ bị thu nhỏ\n"
+"thành một biểu tượng nhỏ trên bảng điều khiển\n"
+"KDE.\n"
+"\n"
+"Việc nhấn vào biểu tượng này sẽ phục hồi\n"
+"cửa sổ có kích cỡ và vị trí gốc."
 
 #: general.cpp:108
-#, fuzzy
 msgid "A&utomatic redial on disconnect"
-msgstr "Tự động kết nối nếu bị ngắt kết nối"
+msgstr "Tự động quay số lại nếu bị ngắt kết nối"
 
 #: general.cpp:114
 msgid ""
@@ -1190,11 +1201,15 @@ msgid ""
 "\n"
 "See <a href=\"#redial\">here</a> for more on this topic."
 msgstr ""
+"<p>Một khi thiết lập kết nối, khi nào bị ngắt kết nối\n"
+"<i>kppp</i> sẽ thử tái kết nối tới cùng tài khoản.\n"
+"\n"
+"Xem <a href=\"#redial\">mục này</a> tìm thêm\n"
+"thông tin về chủ đề này."
 
 #: general.cpp:120
-#, fuzzy
 msgid "Automatic redial on NO &CARRIER"
-msgstr "Tự động tạo"
+msgstr "NO &CARRIER thì tự động quay số lại"
 
 #: general.cpp:126
 msgid ""
@@ -1203,11 +1218,14 @@ msgid ""
 "instead of waiting for user to click <CANCEL>\n"
 "button."
 msgstr ""
+"<p>Khi quay số, nếu bộ điều giải trả lời NO CARRIER\n"
+"(không có nhà mang dịch vụ điện thoại), chương\n"
+"trình này sẽ thử quay số lại, thay vào đợi người dùng\n"
+"nhấn vào nút <CANCEL>."
 
 #: general.cpp:131
-#, fuzzy
 msgid "&Show clock on caption"
-msgstr "Hiển thị các kết nối đã đóng"
+msgstr "&Hiện đồng hồ trên phụ đề"
 
 #: general.cpp:137
 msgid ""
@@ -1216,11 +1234,13 @@ msgid ""
 "was established. Very useful, so you \n"
 "should turn this on"
 msgstr ""
+"Bật tùy chọn này thì thanh tựa của cửa sổ\n"
+"hiển thị thời gian sau khi thiết lập kết nối.\n"
+"Rất hữu ích: khuyên bạn kích hoạt nó."
 
 #: general.cpp:142
-#, fuzzy
 msgid "Disco&nnect on X server shutdown"
-msgstr "Ngắt kết nối đến máy phục vụ"
+msgstr "&Ngắt kết nối khi máy phục vụ X tắt"
 
 #: general.cpp:148
 msgid ""
@@ -1231,44 +1251,49 @@ msgid ""
 "\n"
 "See <a href=\"#disxserver\">here</a> for more on this."
 msgstr ""
+"<p>Việc bật tùy chọn này sẽ đóng kết nối\n"
+"nào còn mở khi trình phục vụ X tắt. Khuyen\n"
+"bạn bật tùy chọn này nếu bạn không hiểu được\n"
+"kết quả tắt no.\n"
+"\n"
+"Xem <a href=\"#disxserver\">mục này</a> tìm thêm\n"
+"thông tin về chủ đề này."
 
 #: general.cpp:155
-#, fuzzy
 msgid "&Quit on disconnect"
-msgstr "Tự động ngắt kết nối: bật."
+msgstr "T&hoát khi ngắt kết nối"
 
 #: general.cpp:161
-#, fuzzy
 msgid ""
 "When this option is turned on, <i>kppp</i>\n"
 "will be closed when you disconnect"
-msgstr "Khi tùy chọn này bật, thanh panel sẽ trở thành giả trong suốt"
+msgstr ""
+"Bật tùy chọn này thì trình <i>kppp</i>\n"
+"được đóng khi bạn ngắt kết nối."
 
 #: general.cpp:164
-#, fuzzy
 msgid "Minimi&ze window on connect"
-msgstr "Thu nhỏ cửa sổ"
+msgstr "Th&u nhỏ cửa sổ khi kết nối"
 
 #: general.cpp:170
 msgid ""
 "Iconifies <i>kppp</i>'s window when a\n"
 "connection is established"
 msgstr ""
+"Thu cửa sổ <i>kppp</i> thành biểu tượng\n"
+"một khi thiết lập kết nối."
 
 #: general.cpp:223
-#, fuzzy
 msgid "Modem &name:"
-msgstr "Tê&n nút:"
+msgstr "Tê&n bộ điều giải:"
 
 #: general.cpp:231
-#, fuzzy
 msgid "Type in a unique name for this modem"
-msgstr "Tên duy nhất cho hành động này."
+msgstr "Gõ một tên duy nhất cho bộ điều giải này"
 
 #: general.cpp:236
-#, fuzzy
 msgid "Modem de&vice:"
-msgstr "Thiết &bị điện thư/điều giải:"
+msgstr "Thiết &bị điều giải:"
 
 #: general.cpp:256
 msgid ""
@@ -1280,18 +1305,24 @@ msgid ""
 "emulation (most cards under Linux support this), you\n"
 "should select one of the /dev/ttyIx devices."
 msgstr ""
+"Tùy chọn này xác định cổng nối tiếp đến đó bộ điều giải\n"
+"của bạn có kết nối. Trên hệ điều hành Linux/x86, thường\n"
+"dùng cổng hoặc « /dev/ttyS0 » (COM1 dưới DOS) hoặc\n"
+"« /dev/ttyS1 » (COM2 dưới DOS).\n"
+"\n"
+"Nếu bạn có thẻ ISDN nội bộ có khả năng mô phỏng\n"
+"lệnh AT (phần lớn thẻ dưới Linux có phải hỗ trợ),\n"
+"bạn nên chọn một của những thiết bị kiểu « /dev/ttyIx »."
 
 #: general.cpp:268
-#, fuzzy
 msgid "&Flow control:"
-msgstr "Hiện điều khiển"
+msgstr "Điều khiển &luồng:"
 
 #: general.cpp:275
 msgid "Software [XON/XOFF]"
-msgstr ""
+msgstr "[XON/XOFF] phần mềm"
 
 #: general.cpp:286
-#, fuzzy
 msgid ""
 "<p>Specifies how the serial port and modem\n"
 "communicate. You should not change this unless\n"
@@ -1299,13 +1330,15 @@ msgid ""
 "\n"
 "<b>Default</b>: CRTSCTS"
 msgstr ""
-"Điều khiển ứng xử của mô phỏng thiết bị cuối. Đừng thay đổi giá trị nếu bạn "
-"không hiểu được trường hợp này."
+"<p>Xác định phương pháp liên lạc giữa cổng nối tiếp\n"
+"và bộ điều giải. Đừng thay đổi giá trị này nếu bạn "
+"không hiểu được trường hợp đó.\n"
+"\n"
+"<b>Mặc định</b>: CRTSCTS"
 
 #: general.cpp:295
-#, fuzzy
 msgid "&Line termination:"
-msgstr "Ðích:"
+msgstr "Kết thúc &dòng:"
 
 #: general.cpp:306
 msgid ""
@@ -1317,11 +1350,17 @@ msgid ""
 "\n"
 "<b>Default</b>: CR/LF"
 msgstr ""
+"<p>Xác định phương pháp gửi lệnh kiểu AT cho\n"
+"bộ điều giải. Phần lớn bộ điều giải hoạt động được\n"
+"với giá trị mặc định <i>CR/LF</i>. Nếu bộ điều giải\n"
+"của bạn không đáp ứng cho chuỗi sở khởi,\n"
+"bạn nên thử thiết lập khác ở đây."
+"\n"
+"<b>Mặc định</b>: CR/LF"
 
 #: general.cpp:317
-#, fuzzy
 msgid "Co&nnection speed:"
-msgstr "Tố_c độ kết nối: "
+msgstr "Tốc độ kết &nối: "
 
 #: general.cpp:354
 msgid ""
@@ -1332,11 +1371,14 @@ msgid ""
 "If you have connection problems, try to reduce\n"
 "this value."
 msgstr ""
+"Xác định tốc độ liên lạc giữa bộ điều giải và cổng\n"
+"nối tiếp. Bạn nên bắt đầu với ít nhất 115200 bit/giây\n"
+"(lớn hơn nếu cổng nối tiếp hỗ trợ). Gặp khó khăn\n"
+"kết nối thì thử giảm giá trị này."
 
 #: general.cpp:372
-#, fuzzy
 msgid "&Use lock file"
-msgstr "tập tin khoá cũ"
+msgstr "&Dùng tập tin khoá"
 
 #: general.cpp:380
 msgid ""
@@ -1350,11 +1392,18 @@ msgid ""
 "\n"
 "<b>Default</b>: On"
 msgstr ""
+"<p>Để ngăn cản chương trình khác truy cập\n"
+"bộ điều giải trong khi thiết lập kết nối, có thể\n"
+"tạo một tập tin ngụ ý bộ điều giải đang bận.\n"
+"Trên Linux, tập tin thí dụ là:\n"
+"<tt>/var/lock/LCK..ttyS1</tt>\n"
+"Ở đây bạn có khả năng chọn khoá hay không.\n"
+"\n"
+"<b>Mặc định</b>: Bật"
 
 #: general.cpp:393
-#, fuzzy
 msgid "Modem &timeout:"
-msgstr "Thời hạn duyệt:"
+msgstr "&Thời hạn điều giải:"
 
 #: general.cpp:401
 msgid ""
@@ -1362,11 +1411,13 @@ msgid ""
 "<i>CONNECT</i> response from your modem. The\n"
 "recommended value is 30 seconds."
 msgstr ""
+"Tùy chọn này xác định bao lâu <i>kppp</i> đợi\n"
+"đáp ứng <i>CONNECT</i> từ bộ điều giải.\n"
+"Giá trị khuyến khích là 30 giây."
 
 #: general.cpp:469
-#, fuzzy
 msgid "&Wait for dial tone before dialing"
-msgstr "yêu cầu xác nhận trước khi sửa chữa"
+msgstr "Đợi tiếng chuông gọi trước khi quay số"
 
 #: general.cpp:474
 msgid ""
@@ -1378,10 +1429,18 @@ msgid ""
 "\n"
 "<b>Default:</b>: On"
 msgstr ""
+"Bình thường, bộ điều giải đợi phát hiện tiếng\n"
+"chuông gọi trên đường dây điện thoại, ngụ ý\n"
+"rằng nó có khả năng quay số. Nếu bộ điều giải\n"
+"của bạn không nhận ra tiếng đó, hoặc hệ thống\n"
+"điện thoại cục bộ không phát ra tiếng như vậy,\n"
+"tắt tùy chọn này.\n"
+"\n"
+"<b>Mặc định:</b>: Bật"
 
 #: general.cpp:483
 msgid "B&usy wait:"
-msgstr ""
+msgstr "Đợi &bận:"
 
 #: general.cpp:490
 msgid ""
@@ -1393,11 +1452,17 @@ msgid ""
 "The default is 0 seconds, you should not change\n"
 "this unless you need to."
 msgstr ""
+"Xác định số giây cần đợi trước khi quay số lại,\n"
+"nếu các số đã gọi còn bận. Tùy chọn này cần thiết\n"
+"vì một số bộ điều giải bị treo nếu gặp tín hiệu bận\n"
+"quá nhiều lần khi gọi cùng một số.\n"
+"\n"
+"Giá trị mặc định là 0 giây: chỉ thay đổi nó\n"
+"nếu cần thiết."
 
 #: general.cpp:503
-#, fuzzy
 msgid "Modem &volume:"
-msgstr "Âm lương âm thanh"
+msgstr "Âm lương điề&u giải:"
 
 #: general.cpp:518
 msgid ""
@@ -1409,11 +1474,17 @@ msgid ""
 "If this does not work for your modem,\n"
 "you must modify the modem volume command."
 msgstr ""
+"Phần lớn bộ điều giải có loa làm ồn nhiều\n"
+"khi quay số. Ở đây bạn có thể tắt nó hoàn toàn,\n"
+"hoặc chọn cấp âm lượng thấp hơn.\n"
+"\n"
+"Nếu tùy chọn này không điều khiển bộ điều giải,\n"
+"bạn cần phải sửa đổi lệnh âm lượng bộ điều giải\n"
+"(trong chuỗi sở khởi: xem sổ tay về bộ điều giải.)."
 
 #: general.cpp:532
-#, fuzzy
 msgid "Modem asserts CD line"
-msgstr " R - Bộ điều giải có tuyến DCD ..."
+msgstr "Bộ điều giải xác nhận dòng CD"
 
 #: general.cpp:540
 msgid ""
@@ -1423,22 +1494,25 @@ msgid ""
 "\n"
 "<b>Default</b>: Off"
 msgstr ""
+"Tùy chọn này điều khiển phương pháp <i>kppp</i>\n"
+"phát hiện bộ điều giải đáp ứng không. Chỉ sửa đổi\n"
+"giá trị này khi cần thiết.\n"
+"\n"
+"<b>Mặc định</b>: Tắt"
 
 #: general.cpp:547
-#, fuzzy
 msgid "Mod&em Commands..."
-msgstr "Lệnh người dùng..."
+msgstr "&Lệnh điều giải..."
 
 #: general.cpp:549
-#, fuzzy
 msgid ""
 "Allows you to change the AT command for\n"
 "your modem."
-msgstr "Cho bạn khả năng thay đổi ứng xử của mọi sự kiện cùng lúc"
+msgstr "Cho bạn khả năng thay đổi lệnh AT cho bộ điều giải."
 
 #: general.cpp:552
 msgid "&Query Modem..."
-msgstr ""
+msgstr "&Yêu cầu bộ điều giải..."
 
 #: general.cpp:554
 msgid ""
@@ -1449,11 +1523,17 @@ msgid ""
 "this information. It can be useful to help\n"
 "you set up the modem"
 msgstr ""
+"Phần lớn bộ điều giải hỗ trợ bộ lệnh ATI,\n"
+"để tìm biết nhà sản xuất và bản sửa đổi\n"
+"của bộ điều giải.\n"
+"\n"
+"Bấm nút này để yêu cầu bộ điều giải\n"
+"cung cấp thông tin này, mà có ích để\n"
+"giúp đỡ bạn thiết lập bộ điều giải đó."
 
 #: general.cpp:561
-#, fuzzy
 msgid "&Terminal..."
-msgstr "Thiết bị cuối"
+msgstr "&Thiết bị cuối..."
 
 #: general.cpp:563
 msgid ""
@@ -1461,51 +1541,45 @@ msgid ""
 "can use this if you want to play around\n"
 "with your modem's AT command set"
 msgstr ""
+"Mở chương trình thiết bị cuối có sẵn.\n"
+"Bạn có thể sử dụng nó để thao tác\n"
+"bộ lệnh AT của bộ điều giải."
 
 #: general.cpp:638
-#, fuzzy
 msgid "&Enable throughput graph"
-msgstr "Bật đồ thị trọng tải mạng"
+msgstr "&Bật đồ thị tốc độ truyền"
 
 #: general.cpp:642
-#, fuzzy
 msgid "Graph Colors"
-msgstr "Trao _đổi màu sắc"
+msgstr "Màu sắc đồ thị"
 
 #: general.cpp:647
-#, fuzzy
 msgid "Bac&kground:"
-msgstr "&Nền"
+msgstr "&Nền:"
 
 #: general.cpp:652
-#, fuzzy
 msgid "&Text:"
-msgstr "Đoạn:"
+msgstr "&Văn bản:"
 
 #: general.cpp:657
-#, fuzzy
 msgid "I&nput bytes:"
-msgstr "Chuỗi hộp nhập:"
+msgstr "Byte &vào :"
 
 #: general.cpp:662
-#, fuzzy
 msgid "O&utput bytes:"
-msgstr "Tập tin &xuất:"
+msgstr "Byte &ra:"
 
 #: kpppwidget.cpp:123
-#, fuzzy
 msgid "C&onnect to: "
-msgstr "Kết nối đến:"
+msgstr "Kết nối &tới:"
 
 #: kpppwidget.cpp:134
-#, fuzzy
 msgid "Use &modem: "
-msgstr "Dùng bộ điều giải"
+msgstr "Dùng bộ điề&u giải:"
 
 #: kpppwidget.cpp:145
-#, fuzzy
 msgid "&Login ID:"
-msgstr "I_D đăng nhập:"
+msgstr "&ID đăng nhập:"
 
 #: kpppwidget.cpp:154
 msgid ""
@@ -1517,6 +1591,13 @@ msgid ""
 "<b>Important</b>: case is important here:\n"
 "<i>myusername</i> is not the same as <i>MyUserName</i>."
 msgstr ""
+"<p>Gõ vào tên người dùng được cung cấp bởi ISP.\n"
+"Giá trị này quan trọng chính cho PAP và CHAP.\n"
+"Có thể bỏ đi nó khi sử dụng chức năng xác thực\n"
+"dựa vào thiết bị cuối hay văn lệnh.\n"
+"\n"
+"<b>Quan trọng</b>: phân biệt chữ hoa/thường:\n"
+"<i>nguyenvan</i> khác với <i>NguyenVan</i>."
 
 #: kpppwidget.cpp:165
 msgid "&Password:"
@@ -1532,11 +1613,17 @@ msgid ""
 "<b>Important</b>: case is important here:\n"
 "<i>mypassword</i> is not the same as <i>MyPassword</i>."
 msgstr ""
+"<p>Gõ vào mật khẩu được cung cấp bởi ISP.\n"
+"Giá trị này quan trọng chính cho PAP và CHAP.\n"
+"Có thể bỏ đi nó khi sử dụng chức năng xác thực\n"
+"dựa vào thiết bị cuối hay văn lệnh.\n"
+"\n"
+"<b>Quan trọng</b>: phân biệt chữ hoa/thường:\n"
+"<i>matkhautoi</i> khác với <i>MatKhauToi</i>."
 
 #: kpppwidget.cpp:191
-#, fuzzy
 msgid "Show lo&g window"
-msgstr "Hiển thị mọi &cửa sổ"
+msgstr "Hiện cửa sổ &ghi lưu"
 
 #: kpppwidget.cpp:198
 msgid ""
@@ -1548,16 +1635,20 @@ msgid ""
 "Turn it off if <i>kppp</i> routinely connects without\n"
 "problems"
 msgstr ""
+"Tùy chọn này điều khiển có nên hiển thị cửa sổ ghi lưu\n"
+"hay không. Cửa sổ ghi lưu thì hiển thị giao thông giữa\n"
+"<i>kppp</i> và bộ điều giải của bạn. Nó sẽ giúp đỡ\n"
+"bạn giải quyết vấn đề.\n"
+"\n"
+"Tắt nó nếu <i>kppp</i> thường kết nối được."
 
 #: kpppwidget.cpp:218
-#, fuzzy
 msgid "Co&nfigure..."
-msgstr "Cấu hình..."
+msgstr "Cấu hì&nh..."
 
 #: kpppwidget.cpp:237
-#, fuzzy
 msgid "&Connect"
-msgstr "Kết nối"
+msgstr "&Kết nối"
 
 #: kpppwidget.cpp:334
 #, qt-format
@@ -1566,77 +1657,74 @@ msgid ""
 "%1\n"
 "Falling back to default"
 msgstr ""
+"Không có bộ điều giải như vậy:\n"
+"%1\n"
+"nên dùng giá trị mặc định."
 
 #: kpppwidget.cpp:344
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "No such Account:\n"
 "%1"
-msgstr "Không có lệnh như vậy: « %1 »"
+msgstr ""
+"Không có tài khoản như vậy:\n"
+"%1"
 
 #: kpppwidget.cpp:414
-#, fuzzy
 msgid "KPPP Configuration"
-msgstr "Cấu hình"
+msgstr "Cấu hình KPPP"
 
 #: kpppwidget.cpp:424
-#, fuzzy
 msgid "&Accounts"
-msgstr "Tài khoản"
+msgstr "Tài kh&oản"
 
 #: kpppwidget.cpp:425
-#, fuzzy
 msgid "Account Setup"
-msgstr "Thiết lập tài khoản Hula"
+msgstr "Thiết lập Tài khoản"
 
 #: kpppwidget.cpp:437
-#, fuzzy
 msgid "&Modems"
-msgstr "Bộ điều giải"
+msgstr "&Bộ điều giải"
 
 #: kpppwidget.cpp:438
-#, fuzzy
 msgid "Modems Setup"
-msgstr "Thiết lập phát âm thanh"
+msgstr "Thiết lập Bộ điều giải"
 
 #: kpppwidget.cpp:445
-#, fuzzy
 msgid "&Graph"
-msgstr "Đồ thị"
+msgstr "Đồ t&hị"
 
 #: kpppwidget.cpp:446
-#, fuzzy
 msgid "Throughput Graph"
-msgstr "Tốc độ truyền dữ liệu"
+msgstr "Đồ thị tốc độ truyền"
 
 #: kpppwidget.cpp:452
 msgid "M&isc"
-msgstr ""
+msgstr "Lặt &vặt"
 
 #: kpppwidget.cpp:453
 msgid "Miscellaneous Settings"
 msgstr "Thiết lập lặt vặt"
 
 #: kpppwidget.cpp:664
-#, fuzzy
 msgid "Timeout expired while waiting for the PPP interface to come up."
-msgstr "Quá giờ trong khi đợi máy phục vụ tương tác."
+msgstr "Quá giờ trong khi đợi giao diện PPP trở thành hoạt động."
 
 #: kpppwidget.cpp:667
-#, fuzzy
 msgid "<p>The pppd daemon died unexpectedly!</p>"
-msgstr "Bitmap kết thúc bất thường."
+msgstr "<p>Trình nền pppd đã kết thúc bất thường.</p>"
 
 #: kpppwidget.cpp:670
-#, fuzzy, qt-format
+#, qt-format
 msgid "<p>Exit status: %1"
-msgstr "Đang thoát với trạng thái %s\n"
+msgstr "<p>Trạng thái thoát: %1"
 
 #: kpppwidget.cpp:671
 msgid ""
 "</p><p>See 'man pppd' for an explanation of the error codes or take a look "
 "at the kppp FAQ on   <a href=\"%1\">%1</a></p>"
 msgstr ""
+"</p><p>Xem « man pppd » để tìm thêm thông tin về các mã lỗi, hoặc đọc Hỏi Đáp KPPP ở <a href=\"%1\">%1</a></p>"
 
 #: kpppwidget.cpp:678 main.cpp:287
 msgid "Error"
@@ -1651,12 +1739,15 @@ msgid ""
 "kppp's helper process just died.\n"
 "Since further execution would be pointless, kppp will shut down now."
 msgstr ""
+"Tiến trình bổ trợ của kppp mới chết nên kppp thoát ngay bây giờ."
 
 #: kpppwidget.cpp:753
 msgid ""
 "Cannot find the PPP daemon!\n"
 "Make sure that pppd is installed and that you have entered the correct path."
 msgstr ""
+"Không tìm thấy trình nền PPP.\n"
+"Hãy kiểm tra xem pppd đã được cài đặt chưa, và bạn đã nhập vào đường dẫn đúng."
 
 #: kpppwidget.cpp:762
 #, qt-format
@@ -1666,6 +1757,9 @@ msgid ""
 "Please make sure that you have given kppp setuid permission and that pppd is "
 "executable."
 msgstr ""
+"kppp không thể thực hiện:\n"
+" %1\n"
+"Hãy kiểm tra xem bạn đã ủy cho kppp quyền setuid và khả năng thực hiện."
 
 #: kpppwidget.cpp:783
 #, qt-format
@@ -1675,57 +1769,58 @@ msgid ""
 "Please make sure you have setup your modem device properly and/or adjust the "
 "location of the modem device on the modem tab of the setup dialog."
 msgstr ""
+"kppp không tìm thấy:\n"
+" %1\n"
+"Hãy kiểm tra xem bạn đã thiết lập đúng thiết bị điều giải và/hay điều chỉnh vị trí của thiết bị điều giải dưới thẻ bộ điều giải của hộp thoại thiết lập."
 
 #: kpppwidget.cpp:800
 msgid ""
 "You have selected the authentication method PAP or CHAP. This requires that "
 "you supply a username and a password."
 msgstr ""
+"Bạn đã chọn phương pháp xác thực PAP hay CHAP. Nó cần thiết bạn cung cấp tên người dùng và mật khẩu."
 
 #: kpppwidget.cpp:809
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "Cannot create PAP/CHAP authentication\n"
 "file \"%1\""
-msgstr "không thể tạo tập tin xuất « %s »"
+msgstr ""
+"Không thể tạo tập tin xác thực PAP/CHAP\n"
+"« %1 »"
 
 #: kpppwidget.cpp:818
-#, fuzzy
 msgid "You must specify a telephone number."
-msgstr "Bạn phải xác định tên tập tin."
+msgstr "Bạn phải xác định số điện thoại."
 
 #: kpppwidget.cpp:852
 msgid "Disconnecting..."
 msgstr "Đang ngắt kết nối..."
 
 #: kpppwidget.cpp:855
-#, fuzzy
 msgid "Executing command before disconnection."
-msgstr "Đang thực hiện lệnh"
+msgstr "Đang thực hiện lệnh trước khi ngắt kết nối."
 
 #: kpppwidget.cpp:869
-#, fuzzy
 msgid "Announcing disconnection."
-msgstr "Tự động ngắt kết nối: bật."
+msgstr "Đang thông báo sự ngắt kết nối."
 
 #: kpppwidget.cpp:921
 msgid "Exiting kPPP will close your PPP Session."
-msgstr ""
+msgstr "Thoát khỏi KPPP cũng đóng phiên chạy PPP."
 
 #: kpppwidget.cpp:922
-#, fuzzy
 msgid "Quit kPPP?"
-msgstr "Thoát khỏi GIMP"
+msgstr "Thoát khỏi KPPP không?"
 
 #: kpppwidget.cpp:971
-#, fuzzy, qt-format
+#, qt-format
 msgid "Can not load the accounting ruleset \"%1\"."
-msgstr "Không nạp được tập tin cấu hình sắc thái."
+msgstr "Không thể nạp tập quy tắc kế toán « %1 »."
 
 #: kpppwidget.cpp:1061
-#, fuzzy
 msgid "Recent Changes in KPPP"
-msgstr "Thay đổi Gần đầy"
+msgstr "Thay đổi gần đầy trong KPPP"
 
 #: kpppwidget.cpp:1076
 msgid ""
@@ -1740,11 +1835,20 @@ msgid ""
 "\n"
 "To test it, right-click somewhere in this text."
 msgstr ""
+"Kể từ phiên bản 1.4.8, kppp chứa một tính năng\n"
+"mới được gọi như là « Trợ giúp nhanh ». Nó\n"
+"tương tự với mẹo công cụ, nhưng cũng sẵn sàng\n"
+"khi nào bạn muốn.\n"
+"\n"
+"Để mở nó, đơn giản hãy nhấn-phải vào mục như\n"
+"cái nút hay nhãn. Nếu mục đó hỗ trợ Trợ Giúp Nhanh,\n"
+"một trình đơn bật lên chỉ tới Trợ Giúp Nhanh.\n"
+"\n"
+"Để thử ra, nhấn-phải trong văn bản này."
 
 #: kpppwidget.cpp:1088
-#, fuzzy
 msgid "Do not show this hint again"
-msgstr "Đừn_g hiện cảnh báo này lần nữa"
+msgstr "Đừng hiện mẹo này lần nữa"
 
 #: kpppwidget.cpp:1096
 msgid ""
@@ -1752,80 +1856,70 @@ msgid ""
 "This window will stay open until you\n"
 "click a mouse button or a press a key.\n"
 msgstr ""
+"Mục này minh hoạ <b>Trợ giúp nhanh</b>.\n"
+"Cửa sổ này còn lại mở đến khi bạn nhấn nút chuột\n"
+"hay bấm phím nào.\n"
 
 #: loginterm.cpp:108
-#, fuzzy
 msgid "Login Terminal Window"
-msgstr "Cửa sổ đăng nhập"
+msgstr "Cửa sổ thiết bị cuối đăng nhập"
 
 #: main.cpp:68
 msgid "A dialer and front-end to pppd"
-msgstr ""
+msgstr "Giao diện và bộ quay số cho pppd"
 
 #: main.cpp:72
-#, fuzzy
 msgid "Connect using 'account_name'"
-msgstr "Kết nối bằng giao thông hồng ngoại"
+msgstr "Kết nối bằng « account_name »"
 
 #: main.cpp:73
-#, fuzzy
 msgid "Connect using 'modem_name'"
-msgstr "Kết nối bằng _SSL:"
+msgstr "Kết nối bằng « modem_name »"
 
 #: main.cpp:74
-#, fuzzy
 msgid "Terminate an existing connection"
-msgstr "Ngừng kết nối đã chọn."
+msgstr "Kết thúc kết nối đang hoạt động"
 
 #: main.cpp:75
-#, fuzzy
 msgid "Quit after end of connection"
-msgstr "Danh sách kết nối"
+msgstr "Thoát sau khi kết thúc kết nối"
 
 #: main.cpp:76
 msgid "Check syntax of rule_file"
-msgstr ""
+msgstr "Kiểm tra cú pháp của « rule_file »"
 
 #: main.cpp:77
-#, fuzzy
 msgid "Enable test-mode"
-msgstr "Bật ghi giờ"
+msgstr "Bật chế độ thử ra"
 
 #: main.cpp:78
-#, fuzzy
 msgid "Use the specified device"
-msgstr "Dùng thiết bị gõ xác định"
+msgstr "Dùng thiết bị đã xác định"
 
 #: main.cpp:205
-#, fuzzy
 msgid "KPPP"
-msgstr "Name=KPPP"
+msgstr "KPPP"
 
 #: main.cpp:207
 msgid "(c) 1999-2002, The KPPP Developers"
-msgstr "(c) 1999-2002, Các nhà phát triển KPPP"
+msgstr "© năm 1999-2002 của Các nhà phát triển KPPP"
 
 #: main.cpp:208
-#, fuzzy
 msgid "Current maintainer"
-msgstr ""
-"#-#-#-#-#  kdialog.po (kdialog)  #-#-#-#-#\n"
-"Nhà duy trình hiện thời\n"
-"#-#-#-#-#  kdmconfig.po (kdmconfig)  #-#-#-#-#\n"
-"Nhà duy trì hiện có\n"
-"#-#-#-#-#  kicker.po (kicker)  #-#-#-#-#\n"
-"Nhà duy trì hiện có"
+msgstr "Nhà duy trì hiện thời"
 
 #: main.cpp:209
 msgid "Original author"
 msgstr "Tác giả gốc"
 
 #: main.cpp:246
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "kppp can not create or read from\n"
 "%1."
-msgstr "Không thể tạo mạch"
+msgstr ""
+"kppp không thể tạo hay đọc từ\n"
+"%1."
 
 #: main.cpp:277
 #, qt-format
@@ -1837,25 +1931,22 @@ msgid ""
 "Alternatively, if you have determined that there is no other kppp running, "
 "please click Continue to begin."
 msgstr ""
+"kppp đã phát hiện một tập tin kiểu %1.\n"
+"Có vẻ là một tiến trình kppp khác đang chạy dưới PID %2.\n"
+"Hãy nhấn vào « Thoát », kiểm tra xem bạn không có tiến trình kppp đang chạy, xoá tập tin PID, rồi khởi chạy lại kppp.\n"
+"Hoặc nếu bạn đã biết không có tiến trình kppp đang chạy, nhấn vào « Tiếp tục » để bắt đầu."
 
 #: main.cpp:288
-#, fuzzy
 msgid "Exit"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Thoát\n"
-"#-#-#-#-#  p6.po (Development/Revision: 68521)  #-#-#-#-#\n"
-"Ra khỏi"
+msgstr "Thoát"
 
 #: miniterm.cpp:62
-#, fuzzy
 msgid "Kppp Mini-Terminal"
-msgstr "Mở trong thiết bị cuối"
+msgstr "Thiết bị cuối nhỏ KPPP"
 
 #: miniterm.cpp:68
-#, fuzzy
 msgid "&Reset Modem"
-msgstr "Đang đặt lại bộ điều giải..."
+msgstr "Đặt &lại bộ điều giải"
 
 #: miniterm.cpp:71
 msgid ""
@@ -1868,25 +1959,31 @@ msgid ""
 "This program is published under the GNU GPL\n"
 "(GNU General Public License)"
 msgstr ""
+"MiniTerm — một trình mô phỏng thiết bị cuối cho KPPP.\n"
+"\n"
+"© năm 1997 của Bernd Johannes Wuebben <wuebben@kde.org>\n"
+"© năm 1998 của Harri Porten <porten@kde.org>\n"
+"© năm 1998 của Mario Weilguni <mweilguni@kde.org>\n"
+"\n"
+"Chương trình này được xuất bản dưới Giấy Phép Công Cộng GNU\n"
+"(GPL: <http://vi.wikisource.org/wiki/GPL>)."
+
 
 #: miniterm.cpp:80
 msgid "&File"
 msgstr "&Tập tin"
 
 #: miniterm.cpp:82 modems.cpp:239
-#, fuzzy
 msgid "&Modem"
-msgstr "Bộ điều giải"
+msgstr "&Bộ điều giải"
 
 #: miniterm.cpp:117
-#, fuzzy
 msgid "Close MiniTerm"
-msgstr "Đóng sơ đồ"
+msgstr "Đóng MiniTerm"
 
 #: miniterm.cpp:118
-#, fuzzy
 msgid "Reset Modem"
-msgstr "Đang đặt lại bộ điều giải..."
+msgstr "Đặt lại bộ điều giải"
 
 #: miniterm.cpp:119
 msgid "Help"
@@ -1894,170 +1991,144 @@ msgstr "Trợ giúp"
 
 #: miniterm.cpp:127
 msgid "Initializing Modem"
-msgstr "Đang sở khởi bộ điều giải..."
+msgstr "Đang sở khởi bộ điều giải"
 
 #: miniterm.cpp:153 miniterm.cpp:215 modeminfo.cpp:158
-#, fuzzy
 msgid "Modem Ready"
-msgstr "Tôi sẵn sàng"
+msgstr "Bộ điều giải sẵn sàng"
 
 #: miniterm.cpp:194
-#, fuzzy
 msgid "Hanging up..."
-msgstr "Đang ngừng nói..."
+msgstr "Đang ngừng gọi..."
 
 #: miniterm.cpp:208
 msgid "Resetting Modem"
-msgstr "Đang đặt lại bộ điều giải..."
+msgstr "Đang đặt lại bộ điều giải"
 
 #: modem.cpp:126
-#, fuzzy
 msgid "Unable to open modem."
-msgstr "Không thể mở Tập tin."
+msgstr "Không thể mở bộ điều giải."
 
 #: modem.cpp:133
-#, fuzzy
 msgid "Unable to detect state of CD line."
-msgstr "Không thể sửa đổi tình trạng của máy %1."
+msgstr "Không thể phát hiện tình trạng của dòng CD."
 
 #: modem.cpp:139
-#, fuzzy
 msgid "The modem is not ready."
-msgstr "Thư mục không rỗng"
+msgstr "Bộ điều giải chưa sẵn sàng."
 
 #: modem.cpp:155 modem.cpp:203
-#, fuzzy
 msgid "The modem is busy."
-msgstr "Thiết bị âm thanh đang bận."
+msgstr "Bộ điều giải còn bận."
 
 #: modem.cpp:209
-#, fuzzy
 msgid "Modem Ready."
-msgstr "Sẵn sàng."
+msgstr "Bộ điều giải sẵn sàng."
 
 #: modem.cpp:221
 msgid "Can not restore tty settings: tcsetattr()\n"
-msgstr ""
+msgstr "Không thể phục hồi thiết lập tty: tcsetattr()\n"
 
 #: modem.cpp:373
-#, fuzzy
 msgid "The modem does not respond."
-msgstr "Thư mục không tồn tại."
+msgstr "Bộ điều giải không đáp ứng."
 
 #: modem.cpp:511
-#, fuzzy
 msgid "Unknown speed"
-msgstr "Không biết kích thước"
+msgstr "Tốc độ không rõ"
 
 #: modemcmds.cpp:56
-#, fuzzy
 msgid "Edit Modem Commands"
-msgstr "Sửa/Tạo lệnh"
+msgstr "Sửa lệnh bộ điều giải"
 
 #: modemcmds.cpp:96
 msgid "Pre-init delay (sec/100):"
-msgstr ""
+msgstr "Trễ sở khởi (giây/100):"
 
 #: modemcmds.cpp:101
-#, fuzzy, qt-format
+#, qt-format
 msgid "Initialization string %1:"
-msgstr "Cách khởi động"
+msgstr "Chuỗi sở khởi %1:"
 
 #: modemcmds.cpp:124
 msgid "Post-init delay (sec/100):"
-msgstr ""
+msgstr "Trễ sau khi sở khởi (giây/100):"
 
 #: modemcmds.cpp:144
 msgid "Dialing speed (sec/100):"
-msgstr ""
+msgstr "Tốc độ quay số (giây/100):"
 
 #: modemcmds.cpp:149
-#, fuzzy
 msgid "Init &response:"
-msgstr "Đáp ứng không hợp lệ"
+msgstr "Đá&p ứng sở khởi:"
 
 #: modemcmds.cpp:156
-#, fuzzy
 msgid "No di&al tone detection:"
-msgstr "Phát hiện cạnh"
+msgstr "Không phát hiện tiếng ch&uông gọi:"
 
 #: modemcmds.cpp:163
-#, fuzzy
 msgid "Dial &string:"
-msgstr "  chuỗi: "
+msgstr "Chuỗi &quay số :"
 
 #: modemcmds.cpp:170
-#, fuzzy
 msgid "Co&nnect response:"
-msgstr "%s Trả lời kết nối"
+msgstr "Đáp ứ&ng kết nối:"
 
 #: modemcmds.cpp:177
-#, fuzzy
 msgid "Busy response:"
-msgstr "Lấy đáp ứng\n"
+msgstr "Đáp ứng bận:"
 
 #: modemcmds.cpp:183
-#, fuzzy
 msgid "No carr&ier response:"
-msgstr "Đáp ứng máy &phục vụ :"
+msgstr "Đáp ứng không có nhà &mang:"
 
 #: modemcmds.cpp:190
-#, fuzzy
 msgid "No dial tone response:"
-msgstr "%s Trả lời kết nối"
+msgstr "Đáp ứng không có tiếng chuông gọi:"
 
 #: modemcmds.cpp:196
-#, fuzzy
 msgid "&Hangup string:"
-msgstr "  chuỗi: "
+msgstr "C&huỗi ngừng gọi:"
 
 #: modemcmds.cpp:203
-#, fuzzy
 msgid "Hangup response:"
-msgstr "Đáp ứng không hợp lệ"
+msgstr "Đáp ứng ngừng gọi:"
 
 #: modemcmds.cpp:209
-#, fuzzy
 msgid "Answ&er string:"
-msgstr "chuỗi tìm kiếm"
+msgstr "Chuỗi t&rả lời:"
 
 #: modemcmds.cpp:216
-#, fuzzy
 msgid "Ring response:"
-msgstr "Trả lời"
+msgstr "Đáp ứng gọi:"
 
 #: modemcmds.cpp:222
-#, fuzzy
 msgid "Ans&wer response:"
-msgstr "Đáp ứng máy &phục vụ :"
+msgstr "Đáp ứng trả &lời:"
 
 #: modemcmds.cpp:229
-#, fuzzy
 msgid "DLP response:"
-msgstr "Lấy đáp ứng\n"
+msgstr "Đáp ứng DLP:"
 
 #: modemcmds.cpp:235
-#, fuzzy
 msgid "Escape strin&g:"
-msgstr "Chuỗi thay thế:"
+msgstr "Chuỗi th&oát:"
 
 #: modemcmds.cpp:242
-#, fuzzy
 msgid "Escape response:"
-msgstr "Lấy đáp ứng\n"
+msgstr "Đáp ứng thoát:"
 
 #: modemcmds.cpp:264
 msgid "Guard time (sec/50):"
-msgstr ""
+msgstr "Thời gian bảo vệ (giây/50):"
 
 #: modemcmds.cpp:267
 msgid "Volume off/low/high:"
-msgstr ""
+msgstr "Âm lượng tắt/thấp/cao :"
 
 #: modemdb.cpp:51
-#, fuzzy
 msgid "Select Modem Type"
-msgstr "Chọn kiểu MIME"
+msgstr "Chọn kiểu bộ điều giải"
 
 #: modemdb.cpp:55
 msgid ""
@@ -2065,90 +2136,80 @@ msgid ""
 "then select the model from the right list. If you don't know which modem you "
 "have, you can try out one of the \"Generic\" modems."
 msgstr ""
+"Để thiết lập bộ điều giải, trước tiên chọn nhà sản xuất nó trong danh sách bên trái, rồi chọn mô hình trong danh sách bên phải. Chưa biết bộ điều giải nào thì thử một của những bsg « Giống loại » (Generic)."
 
 #: modemdb.cpp:147 modemdb.cpp:149 modemdb.cpp:220 modemdb.cpp:235
-#, fuzzy
 msgid "<Generic>"
-msgstr "Giống loài"
+msgstr "<Generic>"
 
 #: modemdb.cpp:217
-#, fuzzy
 msgid "Hayes(tm) compatible modem"
-msgstr "Dùng &chế độ gọn"
+msgstr "Bộ điều giải tương thích với Hayes™"
 
 #: modeminfo.cpp:50
-#, fuzzy
 msgid "ATI Query"
-msgstr "Truy vấn LDAP"
+msgstr "Truy vấn ATI"
 
 #: modeminfo.cpp:130
-#, fuzzy
 msgid "Modem query timed out."
-msgstr "Quá hạn truyền tập tin."
+msgstr "Truy vấn bộ điều giải đã quá giờ."
 
 #: modeminfo.cpp:264
-#, fuzzy
 msgid "Modem Query Results"
-msgstr "Trộn kết quả"
+msgstr "Kết quả truy vấn bộ điều giải"
 
 #: modems.cpp:154 modems.cpp:178
-#, fuzzy
 msgid "Maximum number of modems reached."
-msgstr "Số tối đa tên là %d\n"
+msgstr "Số tối đa bộ điều giải được tới."
 
 #: modems.cpp:183
-#, fuzzy
 msgid "No modem selected."
-msgstr "Chưa chọn nhà cung cấp."
+msgstr "Chưa chọn bộ điều giải."
 
 #: modems.cpp:197
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "Are you sure you want to delete\n"
 "the modem \"%1\"?"
-msgstr "Bạn có chắc muốn xoá bỏ « %s » không?"
+msgstr ""
+"Bạn có chắc muốn xoá\n"
+"bộ điều giải « %1 » không?"
 
 #: modems.cpp:224
-#, fuzzy
 msgid "New Modem"
-msgstr "Chế độ &xem"
+msgstr "Bộ điều giải mới"
 
 #: modems.cpp:227
-#, fuzzy
 msgid "Edit Modem: "
-msgstr "Chế độ sửa đổi :"
+msgstr "Sửa bộ điều giải:"
 
 #: modems.cpp:233
-#, fuzzy
 msgid "&Device"
-msgstr "Thiết bị"
+msgstr "Thiết &bị"
 
 #: modems.cpp:234
-#, fuzzy
 msgid "Serial Device"
-msgstr "Thiết bị điện thư nối tiếp"
+msgstr "Thiết bị nối tiếp"
 
 #: modems.cpp:240
-#, fuzzy
 msgid "Modem Settings"
-msgstr "Tùy thích chuột"
+msgstr "Thiết lập bộ điều giải"
 
 #: modems.cpp:258
-#, fuzzy
 msgid ""
 "You must enter a unique\n"
 "modem name"
-msgstr "Trước tiên bạn phải nhập một tên miền."
+msgstr ""
+"Bạn phải nhập vào một\n"
+"tên bộ điều giải duy nhất."
 
 #: pppdargs.cpp:51
-#, fuzzy
 msgid "Customize pppd Arguments"
-msgstr "Tùy chỉnh Định dạng đầu ra"
+msgstr "Tùy chỉnh các đối số pppd"
 
 #: pppdargs.cpp:70
-#, fuzzy
 msgid "Arg&ument:"
-msgstr "Đối số :"
+msgstr "Đối &số :"
 
 #: pppdata.cpp:64
 msgid ""
@@ -2158,16 +2219,18 @@ msgid ""
 "command in your home directory:\n"
 "chown {YourUsername} .kde/share/config/kppprc"
 msgstr ""
+"Tập tin đặc trưng cho ứng cụng không thể được mở theo chế độ hoặc đọc-ghi hay chỉ-đọc.\n"
+"Siêu người dùng có thể cần phải thay đổi tình sở hữu nó, bằng cách chạy lệnh theo đây trong thư mục chính của bạn:\n"
+"chown {tên_người_dùng_của_bạn} .kde/share/config/kppprc"
 
 #: pppdata.cpp:496 pppdata.cpp:1024
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1_copy"
-msgstr "bản sao"
+msgstr "bản_sao_%1"
 
 #: ppplog.cpp:62
-#, fuzzy
 msgid "Cannot open any of the following logfiles:"
-msgstr "[tùy_chọn] có thể:"
+msgstr "Không thể mở bắt cứ điều nào trong những tập tin ghi lưu này:"
 
 #: ppplog.cpp:136
 msgid ""
@@ -2175,33 +2238,38 @@ msgid ""
 "connection.\n"
 "Please use the terminal-based login to verify"
 msgstr ""
+"Bạn đã khởi chạy trình nền pppd trước khi máy phục vụ ở xa sẵn sàng để thiết lập kết nối PPP.\n"
+"Hãy sử dụng khả năng đăng nhập dựa vào thiết bị cuối để thẩm tra"
 
 #: ppplog.cpp:141
 msgid "You have not started the PPP software on the peer system."
-msgstr ""
+msgstr "Bạn chưa khởi chạy phần mềm PPP trên hệ thống ngang hàng."
 
 #: ppplog.cpp:144
-#, fuzzy
 msgid "Check that you supplied the correct username and password."
-msgstr "Hãy gõ cẩn thận tên người dùng và mật khẩu đúng."
+msgstr "Hãy kiểm tra xem bạn đã cung cấp tên người dùng và mật khẩu đúng."
 
 #: ppplog.cpp:147
 msgid ""
 "You should not pass 'lock' as an argument to pppd. Check /etc/ppp/options "
 "and ~/.ppprc"
 msgstr ""
+"Bạn không nên gửi « lock » (khoá) làm đối số cho pppd. Kiểm tra « /etc/ppp/options » và « ~/.ppprc »."
 
 #: ppplog.cpp:151
 msgid ""
 "The remote system does not seem to answer to\n"
 "configuration request. Contact your provider."
 msgstr ""
+"Có vẻ là hệ thống ở xa không đáp ứng cho yêu cầu\n"
+"cấu hình của bạn. Liên lạc với nhà cung cấp dịch vụ."
 
 #: ppplog.cpp:155
 msgid ""
 "You have passed an invalid option to pppd. See 'man pppd' for a complete "
 "list of valid arguments."
 msgstr ""
+"Bạn đã gửi một tùy chọn không hợp lệ cho pppd. Xem « man pppd » để thấy danh sách các đối số hợp lệ."
 
 #: ppplog.cpp:173
 #, qt-format
@@ -2210,11 +2278,13 @@ msgid ""
 "\"%1\"\n"
 "This may give you a hint why the the connection has failed."
 msgstr ""
+"Ghi chú rằng hệ thống ở xa đã gửi thông điệp này:\n"
+"« %1 »\n"
+"Nó có thể giúp đỡ bạn hiểu tại sao kết nối bị lỗi."
 
 #: ppplog.cpp:192
-#, fuzzy
 msgid "Unable to provide help."
-msgstr "Không thể phân tách mục"
+msgstr "Không thể cung cấp trợ giúp."
 
 #: ppplog.cpp:216
 msgid ""
@@ -2224,16 +2294,17 @@ msgid ""
 "turn on the debug option.\n"
 "Shall I turn it on now?"
 msgstr ""
+"KPPP không thể chuẩn bị bản ghi PPP. Rất có thể là trình nền pppd đã được khởi chạy không có tùy chọn « gỡ lỗi » (debug).\n"
+"Không có tùy chọn này, khó tìm biết vấn đề PPP, vậy bạn nên kích hoạt tùy chọn gỡ lỗi.\n"
+"Có nên bật nó ngay bây giờ không?"
 
 #: ppplog.cpp:220
-#, fuzzy
 msgid "Restart pppd"
-msgstr "Khởi chạy lại smbd"
+msgstr "Khởi chạy lại pppd"
 
 #: ppplog.cpp:220
-#, fuzzy
 msgid "Do Not Restart"
-msgstr "Không chạy"
+msgstr "Không khởi chạy lại"
 
 #: ppplog.cpp:225
 msgid ""
@@ -2241,20 +2312,19 @@ msgid ""
 "that fails again, you will get a PPP log that may help you to track down the "
 "connection problem."
 msgstr ""
+"Tùy chọn « gỡ lỗi » (debug) đã được thêm. Bạn nên thử tái kết nối. Nếu kết nối bị lỗi lại, bạn sẽ nhận bản ghi PPP có thể giúp đỡ giải quyết vấn đề kết nối."
 
 #: ppplog.cpp:239
-#, fuzzy
 msgid "PPP Log"
-msgstr "Đang nhập PPP:"
+msgstr "Bản ghi PPP"
 
 #: ppplog.cpp:240
-#, fuzzy
 msgid "Write to File"
-msgstr "In vào tập tin"
+msgstr "Ghi vào tập tin"
 
 #: ppplog.cpp:246
 msgid "kppp's diagnosis (just guessing):"
-msgstr ""
+msgstr "Chẩn đoán của kppp (chỉ đoán)"
 
 #: ppplog.cpp:274
 #, qt-format
@@ -2267,74 +2337,73 @@ msgid ""
 "attach this file. It will help the maintainers\n"
 "to find the bug and to improve KPPP"
 msgstr ""
+"Bản ghi PPP đã được lưu dạng\n"
+"« %1 ».\n"
+"Muốn gửi báo cáo lỗi, hoặc gặp khó khăn\n"
+"trong việc kết nối tới Mạng, hãy đính kèm\n"
+"tập tin này. Nó sẽ giúp đỡ những nhà duy trì\n"
+"tìm lỗi và cải tiến KPPP."
 
 #: pppstatdlg.cpp:66
-#, fuzzy
 msgid "kppp Statistics"
-msgstr "Thống kê"
+msgstr "Thống kê kppp"
 
 #: pppstatdlg.cpp:73
 msgid "Statistics"
 msgstr "Thống kê"
 
 #: pppstatdlg.cpp:101
-#, fuzzy
 msgid "Local Addr:"
-msgstr "Địa chỉ cục bộ"
+msgstr "Địa chỉ cục bộ :"
 
 #: pppstatdlg.cpp:107
-#, fuzzy
 msgid "Remote Addr:"
-msgstr "Từ &xa:"
+msgstr "Địa chỉ ở xa:"
 
 #: pppstatdlg.cpp:134
-#, fuzzy
 msgid "bytes in"
-msgstr "byte"
+msgstr "byte vào"
 
 #: pppstatdlg.cpp:135
-#, fuzzy
 msgid "bytes out"
-msgstr "byte"
+msgstr "byte ra"
 
 #: pppstatdlg.cpp:137
-#, fuzzy
 msgid "packets in"
-msgstr "gói tin"
+msgstr "gói tin vào"
 
 #: pppstatdlg.cpp:138
-#, fuzzy
 msgid "packets out"
-msgstr "gói tin"
+msgstr "gói tin ra"
 
 #: pppstatdlg.cpp:140
 msgid "vjcomp in"
-msgstr ""
+msgstr "vjcomp vào"
 
 #: pppstatdlg.cpp:141
 msgid "vjcomp out"
-msgstr ""
+msgstr "vjcomp ra"
 
 #: pppstatdlg.cpp:143
 msgid "vjunc in"
-msgstr ""
+msgstr "vjunc vào"
 
 #: pppstatdlg.cpp:144
 msgid "vjunc out"
-msgstr ""
+msgstr "vjunc ra"
 
 #: pppstatdlg.cpp:146
 msgid "vjerr"
-msgstr ""
+msgstr "vjerr"
 
 #: pppstatdlg.cpp:147
 msgid "non-vj"
-msgstr ""
+msgstr "khác vj"
 
 #: pppstatdlg.cpp:304
 #, qt-format
 msgid "%1 (max. %2) kb/sec"
-msgstr ""
+msgstr "%1 (tối đa %2) kb/giây"
 
 #: pppstatdlg.cpp:420 pppstatdlg.cpp:427
 msgid "unavailable"
@@ -2351,6 +2420,13 @@ msgid ""
 "help first. If any information is missing, contact\n"
 "your ISP."
 msgstr ""
+"Bạn cần trả lời vài câu hỏi về thông tin cần thiết\n"
+"để thiết lập kết nối Mạng với Nhà cung cấp dịch vụ\n"
+"Mạng (ISP) của bạn.\n"
+"\n"
+"Kiểm tra xem bạn có sẵn sàng biểu mẫu đăng ký với ISP.\n"
+"Nếu bạn gặp khó khăn nào, thử trợ giúp trực tuyến\n"
+"trước tiên. Thiếu thông tin nào thì liên lạc với ISP."
 
 #: providerdb.cpp:192
 msgid ""
@@ -2362,6 +2438,14 @@ msgid ""
 "If you click \"Cancel\", the dialog based setup\n"
 "will start."
 msgstr ""
+"Trong danh sách bên dưới, hãy chọn địa điểm\n"
+"ở đó bạn định sử dụng tài khoản này.\n"
+"Nếu quốc gia hay chỗ bạn không có trong\n"
+"danh sách thì bạn cần phải tạo tài khoản\n"
+"bằng thiết lập chuẩn dựa vào hộp thoại.\n"
+"\n"
+"Nhấn vào « Thôi » thì khởi chạy thiết lập\n"
+"dưa vào hộp thoại. "
 
 #: providerdb.cpp:275
 msgid ""
@@ -2373,6 +2457,12 @@ msgid ""
 "Click on \"Next\" when you have finished your\n"
 "selection."
 msgstr ""
+"Trong danh sách bên dưới, hãy chọn Nhà cung cấp\n"
+"dịch vụ Mạng (ISP) của bạn. Nếu ISP không có trong\n"
+"danh sách này, nhấn vào « Thôi » và tạo tài khoản\n"
+"này bằng thiết lập chuẩn dựa vào hộp thoại.\n"
+"\n"
+"Chọn xong thì nhấn vào « Kế »."
 
 #: providerdb.cpp:354
 msgid ""
@@ -2382,6 +2472,11 @@ msgid ""
 "\n"
 "Word case is important here."
 msgstr ""
+"Để đăng nhập vào ISP của bạn, kppp cần\n"
+"tên người dùng và mật khẩu bạn đã nhận từ ISP.\n"
+"Gõ thông tin này vào những trường bên dưới.\n"
+"\n"
+"Phân biệt chữ hoa/thường."
 
 #: providerdb.cpp:363
 msgid "Username:"
@@ -2401,11 +2496,18 @@ msgid ""
 "If you have a telephone switch, you probably need\n"
 "to write \"0\" or \"0,\" here."
 msgstr ""
+"Nếu bạn cần phải sử dụng tiền tố quay số đặc biệt\n"
+"(v.d. nếu bạn sử dụng cái chuyển điện thoại hay PABX),\n"
+"hãy xác định nó ở đây. Tiền tố này được quay số\n"
+"đúng trước số điện thoại.\n"
+"\n"
+"Có cái chuyển điện thoại thì rất có thể cần phải gõ\n"
+"vào đây số « 0 », hay số không và dấu phẩy « 0, »\n"
+"(để đợi một chút sau số không)."
 
 #: providerdb.cpp:421
-#, fuzzy
 msgid "Dial prefix:"
-msgstr "Tiền tố _quay số :"
+msgstr "Tiền tố quay số :"
 
 #: providerdb.cpp:448
 msgid ""
@@ -2416,83 +2518,80 @@ msgid ""
 "check the settings of the newly created account,\n"
 "you can use \"Edit\" in the setup dialog."
 msgstr ""
+"Hoàn tất.\n"
+"\n"
+"Một tài khoản mới đã được tạo. Nhấn vào « kết thúc »\n"
+"để trở về hộp thoại thiết lập. Muốn kiểm tra thiết lập\n"
+"cua tài khoản mới tạo thì sử dụng mục « Sửa » trong\n"
+"hộp thoại thiết lập."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Phan Vĩnh Thịnh"
+msgstr "Nhóm Việt hoá KDE"
 
 #: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "teppi82@gmail.com"
+msgstr "kde-l10n-vi@kde.org"
 
 #: ruleset.cpp:539
-#, fuzzy
 msgid "kppp: no rulefile specified\n"
-msgstr "chưa ghi rõ tập tin nhập"
+msgstr "kppp: chưa ghi rõ tập tin quy tắc\n"
 
 #: ruleset.cpp:545
-#, fuzzy, c-format
+#, c-format
 msgid "kppp: rulefile \"%s\" not found\n"
-msgstr "Không tìm thấy xác lập %1\n"
+msgstr "kppp: không tìm thấy tập tin quy tắc « %s »\n"
 
 #: ruleset.cpp:550
 msgid "kppp: rulefiles must have the extension \".rst\"\n"
-msgstr ""
+msgstr "kppp: tập tin quy tắc phải có phần mở rộng « .rst ».\n"
 
 #: ruleset.cpp:559
-#, fuzzy
 msgid "kppp: error parsing the ruleset\n"
-msgstr "%s: gặp lỗi khi phân tách dòng \"%s\".\n"
+msgstr "kppp: gặp lỗi khi phân tách tập quy tắc\n"
 
 #: ruleset.cpp:564
-#, fuzzy, c-format
+#, c-format
 msgid "kppp: parse error in line %d\n"
-msgstr ""
-"lỗi trên dòng %d\n"
-"%s"
+msgstr "kppp: lỗi phân tách trên dòng %d\n"
 
 #: ruleset.cpp:570
-#, fuzzy
 msgid "kppp: rulefile does not contain a default rule\n"
-msgstr "Tập tin « %filter:1 » không có bộ lọc nào."
+msgstr "kppp: tập tin quy tắc không chứa quy tắc mặc định\n"
 
 #: ruleset.cpp:575
-#, fuzzy
 msgid "kppp: rulefile does not contain a \"name=...\" line\n"
-msgstr "tập tin nguồn không kết thúc với dòng mới"
+msgstr "kppp: tập tin quy tắc không chứa dòng « name=... »\n"
 
 #: ruleset.cpp:579
 msgid "kppp: rulefile is ok\n"
-msgstr ""
+msgstr "kppp: tập tin quy tắc đúng\n"
 
 #: runtests.cpp:219
-#, fuzzy
 msgid ""
 "You are not allowed to dial out with kppp.\n"
 "Contact your system administrator."
 msgstr ""
-"Không tìm thấy phần mềm VPN thích hợp nào trong hệ thống của bạn. Hãy liên "
-"lạc với quản trị hệ thống."
+"Không cho phép bạn quay số ra bằng kppp.\n"
+"Hãy liên lạc với quản trị hệ thống."
 
 #: runtests.cpp:230
-#, fuzzy
 msgid ""
 "Cannot find the PPP daemon.\n"
 "Make sure that pppd is installed."
 msgstr ""
-"Không thể tải tập tin Glade.\n"
-"Hãy bảo đảm trình nền này được cài đặt đúng."
+"Không tìm thấy trình nền PPP.\n"
+"Hãy kiểm tra xem trình nền pppd đã được cài đặt đúng chưa."
 
 #: runtests.cpp:240
-#, fuzzy
 msgid ""
 "You do not have the permission to start pppd.\n"
 "Contact your system administrator and ask to get access to pppd."
 msgstr ""
-"Bạn không có quyền ghi vào « %s  », nên không thể định dạng.\n"
-"Hãy liên lạc quản trị hệ thống về phương pháp được quyền ghi."
+"Bạn không có quyền khởi chạy trình nền pppd.\n"
+"Hãy liên lạc quản trị hệ thống, yêu cầu quyền truy cập pppd."
 
 #: runtests.cpp:253
 #, qt-format
@@ -2501,6 +2600,9 @@ msgid ""
 "%1\n"
 ".Please make sure that kppp is owned by root and has the SUID bit set."
 msgstr ""
+"Bạn không có đủ quyền để chạy\n"
+"%1\n"
+"Hãy kiểm tra xem kppp do người chủ sở hữu và có bit SUID được bật."
 
 #: runtests.cpp:265
 #, qt-format
@@ -2509,3 +2611,5 @@ msgid ""
 "Ask your system administrator to create this file (can be empty) with "
 "appropriate read and write permissions."
 msgstr ""
+"%1 còn thiết hay không thể đọc được.\n"
+"Hãy yêu cầu quản trị hệ thống tạo tập tin này (có thể rỗng) với quyền đọc và ghi thích hợp."

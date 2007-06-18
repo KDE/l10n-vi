@@ -4960,7 +4960,7 @@ msgid ""
 "window edit area."
 msgstr ""
 "Dứt khoát thông qua\n"
-"« Công cụ > Gửi thông tin vật chứa »,\n
+"« Công cụ > Gửi thông tin vật chứa »,\n"
 "hoặc bằng cách gõ « /media »\n"
 "vào vùng sửa của cửa sổ trò chuyện."
 
@@ -5275,7 +5275,7 @@ msgid ""
 "identifier, '/'). Do not include the '/' (it will be stripped off if you do "
 "anyway)."
 msgstr ""
-Đây là bí danh bạn đang thêm (điều bạn sẽ gõ vào sau dấu nhận diện lệnh « / »). "Đừng gồm dấu xuyệc « / » trong lệnh: nó vẫn bị tước."
+"Đây là bí danh bạn đang thêm (điều bạn sẽ gõ vào sau dấu nhận diện lệnh « / »). Đừng gồm dấu xuyệc « / » trong lệnh: nó vẫn bị tước."
 
 #. i18n: tag string
 #. i18n: file ./plugins/alias/aliasdialog.ui line 72
@@ -5422,7 +5422,7 @@ msgid ""
 "your web server serves it out with the correct mime type, such as "
 "application/xhtml+xml."
 msgstr ""
-"Trang kết quả sẽ được định dạng bằng Lời khuyên W3C XHTML 1.0 Strict. Bộ ký tự là UTF-8.\n
+"Trang kết quả sẽ được định dạng bằng Lời khuyên W3C XHTML 1.0 Strict. Bộ ký tự là UTF-8.\n"
 "\n"
 "Ghi chú rằng một số trình duyệt Mạng riêng chưa hỗ trợ XHTML. Bạn cũng nên kiểm tra xem trình phục vụ Mạng cung cấp nó với kiểu MIME đúng, như « application/xhtml+xml »."
 
@@ -5659,7 +5659,7 @@ msgid ""
 "Some scripts have a configuration GUI available. This button launches that "
 "UI, allowing you to configure the script's options visually."
 msgstr ""
-"Một số văn lệnh riêng cũng có sẵn giao diện cấu hình. Cái nút này khởi chạy giao diện đó, cho phép bạn cấu hình dễ dàng các tùy chọn cho văn lệnh.
+"Một số văn lệnh riêng cũng có sẵn giao diện cấu hình. Cái nút này khởi chạy giao diện đó, cho phép bạn cấu hình dễ dàng các tùy chọn cho văn lệnh."
 
 #. i18n: tag string
 #. i18n: file ./plugins/javascript/javascriptprefsbase.ui line 192
@@ -5818,6 +5818,7 @@ msgid ""
 "in order to make it 'trusted'. Checking this box enables you to use any key, "
 "even if it has not be signed."
 msgstr ""
+"<b>Cho phép xác thực bằng khoá không đáng tin</b>: khi bạn nhập khẩu một khoá công cộng, nó thường có nhãn « Không đáng tin » thì bạn không thể sử dụng nó nếu bạn không ký nó để làm cho nó « Đáng tin ». Bật tùy chọn này để sử dụng bất cứ khoá nào, thậm chí nếu nó chưa được ký."
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/popuppublicbase.ui line 67
@@ -5846,9 +5847,8 @@ msgstr "Chọn..."
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyuserkey_ui.ui line 69
 #: rc.cpp:1506
-#, fuzzy
 msgid "TextLabel2"
-msgstr "Nhãn"
+msgstr "Nhãn_văn_bản_2"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 36
@@ -5859,20 +5859,20 @@ msgid ""
 "<b>Warning:</b> This can increase the size of messages, and some protocols "
 "will refuse to send your messages because they are too large."
 msgstr ""
+"<qt>Bật tùy chọn này nếu bạn muốn mật mã hoá các tin nhẳn gửi đi bằng khoá này, để có khả năng giải mật mã về sau.<br>\n"
+"<b>Cảnh báo</b> : việc mật mã hoá có thể tăng kích cỡ của tin nhẳn thì một số giao thức riêng từ chối gửi tin nhẳn quá lớn."
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 39
 #: rc.cpp:1519
-#, fuzzy
 msgid "Encrypt outgoing messages with this key"
-msgstr "_Mật mã mọi thư cần gửi đi (theo mặc định)"
+msgstr "Mật mã hoá tin nhẳn gửi đi bằng khoá này"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 46
 #: rc.cpp:1522
-#, fuzzy
 msgid "Cache Passphrase"
-msgstr "Đổi cụm từ mật khẩu"
+msgstr "Nhớ tạm cụm từ mật khẩu"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 70
@@ -5902,42 +5902,37 @@ msgstr "phút"
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 121
 #: rc.cpp:1531
 msgid "For"
-msgstr "Cho"
+msgstr "Trong"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 128
 #: rc.cpp:1534
-#, fuzzy
 msgid "Until Kopete closes"
-msgstr "Đến khi đã đóng"
+msgstr "Đến khi Kopete đóng"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 141
 #: rc.cpp:1537
-#, fuzzy
 msgid "Your private PGP key:"
-msgstr "Khoá riêng PGP"
+msgstr "Khoá riêng PGP của bạn:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/cryptography/cryptographyprefsbase.ui line 178
 #: rc.cpp:1543
-#, fuzzy
 msgid "Do not ask for the passphrase"
-msgstr "Cách gõ tắt cho đoạn văn:"
+msgstr "Đừng yêu cầu cụm từ mật khẩu"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 16
 #: rc.cpp:1549
-#, fuzzy
 msgid "HistoryPrefsWidget"
-msgstr "Sức nặng lịch sử"
+msgstr "HistoryPrefsWidget"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 28
 #: rc.cpp:1552
-#, fuzzy
 msgid "Chat History"
-msgstr "Lược sử sạc pin"
+msgstr "Lịch sử trò chuyện"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 56
@@ -5946,13 +5941,13 @@ msgid ""
 "The number of messages that are shown when browsing history in the chat "
 "window"
 msgstr ""
+"Tổng số tin nhẳn được hiển thị khi duyệt qua lịch sử trong cửa sổ trò chuyện"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 59
 #: rc.cpp:1558
-#, fuzzy
 msgid "Number of messages per page:"
-msgstr "Số dấu cách trong mỗi tab."
+msgstr "Số tin nhẳn trên mỗi trang:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 66
@@ -5963,16 +5958,14 @@ msgstr "Số dấu cách trong mỗi tab."
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 92
 #: rc.cpp:1561 rc.cpp:1573
-#, fuzzy
 msgid "Color of history messages in the chat window"
-msgstr "Ẩn nhãn thời gian trong cửa sổ trò chuyện."
+msgstr "Màu của các tin nhẳn lịch sử trong cửa sổ trò chuyện"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 69
 #: rc.cpp:1564
-#, fuzzy
 msgid "Color of messages:"
-msgstr "Không có tin nhẳn bên ngoài"
+msgstr "Màu tin nhẳn:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 79
@@ -5983,20 +5976,17 @@ msgstr "Không có tin nhẳn bên ngoài"
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 109
 #: rc.cpp:1567 rc.cpp:1576
-#, fuzzy
 msgid ""
 "This is the number of messages that will be added automatically in the chat "
 "window when opening a new chat."
 msgstr ""
-"Khoá này xác định số khung hình trong hoạt cảnh sẽ được hiển thị trong hoạt "
-"cảnh con cá."
+"Đây là số các tin nhẳn sẽ tự động được thêm vào cửa sổ trò chuyện khi mở cuộc trò chuyện mới."
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 82
 #: rc.cpp:1570
-#, fuzzy
 msgid "Number of messages to show:"
-msgstr "Kiểu thông điệp cần ghi lưu :"
+msgstr "Số tin nhẳn cần hiển thị:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 125
@@ -6004,6 +5994,7 @@ msgstr "Kiểu thông điệp cần ghi lưu :"
 msgid ""
 "The number of message that are shown when borwsing history in the chat window"
 msgstr ""
+"Tổng số tin nhẳn được hiển thị khi duyệt qua lịch sử trong cửa sổ trò chuyện"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 141
@@ -6012,13 +6003,13 @@ msgid ""
 "When a new chat is opened, automatically add the last few messages between "
 "you and that contact."
 msgstr ""
+"Khi mở cuộc trò chuyện mới, tự động thêm vài tin nhẳn cuối cùng giữa bạn và liên lạc đó."
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyprefsui.ui line 144
 #: rc.cpp:1585
-#, fuzzy
 msgid "Show chat history in new chats"
-msgstr "Hiện Ô Địa điểm trong cửa sổ mới"
+msgstr "Hiện lịch sử trò chuyện trong trò chuyện mới"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 53
@@ -6029,9 +6020,8 @@ msgstr "Sẵn sàng"
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 120
 #: rc.cpp:1597
-#, fuzzy
 msgid "Se&arch"
-msgstr "Tìm &kiếm:"
+msgstr "Tìm &kiếm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 193
@@ -6048,37 +6038,32 @@ msgstr "Liên lạc:"
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 267
 #: rc.cpp:1609
-#, fuzzy
 msgid "Message Filter:"
-msgstr "Bộ _lọc thư"
+msgstr "Lọc tin nhẳn:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 289
 #: rc.cpp:1612
-#, fuzzy
 msgid "All messages"
-msgstr "tin nhẳn mới"
+msgstr "Mọi tin nhẳn"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 294
 #: rc.cpp:1615
-#, fuzzy
 msgid "Only incoming"
-msgstr "gửi đến"
+msgstr "Chỉ gửi đến"
 
 #. i18n: tag string
 #. i18n: file ./plugins/history/historyviewer.ui line 299
 #: rc.cpp:1618
-#, fuzzy
 msgid "Only outgoing"
-msgstr "gửi đi"
+msgstr "Chỉ gửi đi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 34
 #: rc.cpp:1621
-#, fuzzy
 msgid "Ask &Database"
-msgstr "Tất cả cơ sở dữ liệu"
+msgstr "Hỏi cơ sở &dữ liệu"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 46
@@ -6089,95 +6074,74 @@ msgstr "Ngày và Giờ"
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 110
 #: rc.cpp:1627
-#, fuzzy
 msgid "Time :"
 msgstr "Giờ :"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 161
 #: rc.cpp:1630
-#, fuzzy
 msgid "Question"
-msgstr ""
-"#-#-#-#-#  Compendium8.po (geany 0.11)  #-#-#-#-#\n"
-"Hỏi\n"
-"#-#-#-#-#  gpe-calendar-0.73rc2.vi.po (gpe-calendar 0.73rc2)  #-#-#-#-#\n"
-"Câu hỏi"
+msgstr "Hỏi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 190
 #: rc.cpp:1633
-#, fuzzy
 msgid "Contact Status at Date & Time"
-msgstr "_Chỉnh ngày giờ"
+msgstr "Trạng thái liên lạc ở ngày và giờ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 195
 #: rc.cpp:1636
-#, fuzzy
 msgid "Most Used Status at Date"
-msgstr "Trạng thái Chuột"
+msgstr "Trạng thái dùng nhất ở ngày"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 203
 #: rc.cpp:1639
 msgid "&Ask"
-msgstr ""
+msgstr "&Hỏi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/statistics/statisticswidget.ui line 215
 #: rc.cpp:1642
 msgid "Answer"
-msgstr "Trả lời"
+msgstr "Đáp"
 
 #. i18n: tag string
 #. i18n: file ./plugins/addbookmarks/addbookmarksprefsui.ui line 25
 #: rc.cpp:1648
-#, fuzzy
 msgid "Use Subfolder for Each Contact"
-msgstr ""
-"\n"
-"\n"
-"Tìm kiếm liên lạc."
+msgstr "Dùng thư mục con cho mỗi liên lạc"
 
 #. i18n: tag string
 #. i18n: file ./plugins/addbookmarks/addbookmarksprefsui.ui line 40
 #: rc.cpp:1651
-#, fuzzy
 msgid "Always"
-msgstr ""
-"#-#-#-#-#  Compendium8.po (geany 0.11)  #-#-#-#-#\n"
-"Luôn luôn\n"
-"#-#-#-#-#  xchat-2.8.1.vi.po (xchat 2.8.1)  #-#-#-#-#\n"
-"Luôn"
+msgstr "Luôn luôn"
 
 #. i18n: tag string
 #. i18n: file ./plugins/addbookmarks/addbookmarksprefsui.ui line 63
 #: rc.cpp:1657
-#, fuzzy
 msgid "Only the selected contacts"
-msgstr "Xoá các liên lạc được chọn"
+msgstr "Chỉ những liên lạc đã chọn"
 
 #. i18n: tag string
 #. i18n: file ./plugins/addbookmarks/addbookmarksprefsui.ui line 76
 #: rc.cpp:1660
-#, fuzzy
 msgid "Not the selected contacts"
-msgstr "Xoá các liên lạc được chọn"
+msgstr "Không phải những liên lạc đã chọn"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 16
 #: rc.cpp:1663
-#, fuzzy
 msgid "SMPPPDLocation"
-msgstr "Địa điểm"
+msgstr "SMPPPDLocation"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 44
 #: rc.cpp:1666
-#, fuzzy
 msgid "The password to authenticate with the smpppd"
-msgstr "Mật khẩu cần dùng khi xác thực tới trình phục vụ ủy nhiệm HTTP."
+msgstr "Mật khẩu cần dùng khi xác thực với smpppd"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 54
@@ -6188,27 +6152,20 @@ msgstr "Mật khẩu cần dùng khi xác thực tới trình phục vụ ủy n
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabberregisteraccount.ui line 84
 #: rc.cpp:1669 rc.cpp:4918
-#, fuzzy
 msgid "Pass&word:"
-msgstr ""
-"#-#-#-#-#  Compendium5.po (geany 0.11)  #-#-#-#-#\n"
-"&Mật khẩu :\n"
-"#-#-#-#-#  kcm_krfb.po (kcm_kfrb)  #-#-#-#-#\n"
-"&Mật khẩu:"
+msgstr "Mật &khẩu :"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 75
 #: rc.cpp:1672
-#, fuzzy
 msgid "The port on which the SMPPPD is running on"
-msgstr "Cổng nơi máy phục vụ đang chạy cơ sở dữ liệu"
+msgstr "Cổng nơi SMPPD đang chạy "
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 88
 #: rc.cpp:1675
-#, fuzzy
 msgid "Default: 3185"
-msgstr "Mặc định: "
+msgstr "Mặc định:3185"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 113
@@ -6226,7 +6183,7 @@ msgstr "Cổn&g:"
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 126
 #: rc.cpp:1681
 msgid "The server on which the SMPPPD is running"
-msgstr ""
+msgstr "Máy phục vụ có chạy SMPPD"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdlocationui.ui line 129
@@ -6259,34 +6216,26 @@ msgstr "localhost"
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/ui/gwaccountpreferences.ui line 143
 #: rc.cpp:1687 rc.cpp:3576 rc.cpp:4554 rc.cpp:4659 rc.cpp:5023 rc.cpp:5562
-#, fuzzy
 msgid "Ser&ver:"
-msgstr "Má&y chủ"
+msgstr "Má&y phục vụ :"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 16
 #: rc.cpp:1690
-#, fuzzy
 msgid "SMPPPDCS Preferences"
-msgstr "Tùy thích Pan"
+msgstr "Tùy thích SMPPPDCS"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 29
 #: rc.cpp:1693
-#, fuzzy
 msgid "&Connection"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Kết nối\n"
-"#-#-#-#-#  update060107.vi.po (BitTorrent 4.2)  #-#-#-#-#\n"
-"Sự kết nối"
+msgstr "&Kết nối"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 41
 #: rc.cpp:1696
-#, fuzzy
 msgid "Method of Connection Status Detection"
-msgstr "Cho phép Các kết nối đến Đích"
+msgstr "Phương pháp phát hiện trạng thái kết nối"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 53
@@ -6294,12 +6243,13 @@ msgstr "Cho phép Các kết nối đến Đích"
 msgid ""
 "Uses the netstat command to find a gateway; suitable on dial-up computers"
 msgstr ""
+"Dùng lệnh netstat để tìm cổng ra; thích hợp với máy tính quay số"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 56
 #: rc.cpp:1702
 msgid "&netstat - Standard method of connection status detection"
-msgstr ""
+msgstr "&netstat — phương pháp chuẩn phát hiện trạng thái kết nối"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 66
@@ -6307,46 +6257,43 @@ msgstr ""
 msgid ""
 "Uses the smpppd on a gateway; suitable for a computer in a private network"
 msgstr ""
+"Dùng smpppd trên cổng ra; thích hợp với máy tính chạy trên mạng riêng"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 69
 #: rc.cpp:1708
 msgid "smpppd - Ad&vanced method of connection status detection"
-msgstr ""
+msgstr "smpppd — phương pháp cấp cao phát hiện trạng thái kết nối"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 97
 #: rc.cpp:1711
 msgid "Tries to find an appropriate connection method"
-msgstr ""
+msgstr "Thử tìm phương pháp kết nối thích hợp"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 100
 #: rc.cpp:1714
-#, fuzzy
 msgid "&Try to Detect Automatically"
-msgstr "tự động chọn"
+msgstr "&Thử tự động phát hiện"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 128
 #: rc.cpp:1717
-#, fuzzy
 msgid "Location of the SMPPPD"
-msgstr "Vị trí của ô cửa sổ."
+msgstr "Địa điểm của SMPPPD"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 163
 #: rc.cpp:1720
-#, fuzzy
 msgid "Acco&unts"
-msgstr "Tài khoản"
+msgstr "Tài kh&oản"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 191
 #: rc.cpp:1723
-#, fuzzy
 msgid "Choose the accounts to ignore:"
-msgstr "Chọn tập tin kết xuất"
+msgstr "Chọn những tài khoản cần bỏ qua:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/smpppdcs/smpppdcsprefs.ui line 205
@@ -6357,29 +6304,26 @@ msgstr "Tài khoản"
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 25
 #: rc.cpp:1729
-#, fuzzy
 msgid "Sentence Options"
-msgstr "Tuy chọn giao diện"
+msgstr "Tuy chọn câu viết"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 37
 #: rc.cpp:1732
-#, fuzzy
 msgid "Add a dot at the end of each sent line"
-msgstr "Tới cuối dòng"
+msgstr "Thêm dấu chấm ở kết thúc mỗi dòng được gửi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 44
 #: rc.cpp:1735
 msgid "Start each sent line with a capital letter"
-msgstr ""
+msgstr "Bắt đầu mỗi dòng đã ghi bằng chữ hoa"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 54
 #: rc.cpp:1738
-#, fuzzy
 msgid "Replacements List"
-msgstr "Thay thế"
+msgstr "Danh sách thay thế"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 90
@@ -6392,42 +6336,37 @@ msgstr "Thay thế"
 #: rc.cpp:1741 rc.cpp:5604 plugins/alias/aliaspreferences.cpp:321
 #: protocols/oscar/oscarlistnonservercontacts.cpp:38
 msgid "&Add"
-msgstr "Th&êm"
+msgstr "Thê&m"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 143
 #: rc.cpp:1750
-#, fuzzy
 msgid "&Text:"
-msgstr "Đoạn:"
+msgstr "&Văn bản:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 156
 #: rc.cpp:1753
-#, fuzzy
 msgid "Re&placement:"
-msgstr "Sự thay thế : "
+msgstr "Tha&y thế bằng: "
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 174
 #: rc.cpp:1756
-#, fuzzy
 msgid "Replacement Options"
-msgstr "Thay thế"
+msgstr "Tùy chọn thay thế"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 186
 #: rc.cpp:1759
-#, fuzzy
 msgid "Auto replace on incoming messages"
-msgstr "hiện số tin nhẳn đang đến"
+msgstr "Tự động thay thế khi tin nhẳn gửi đến"
 
 #. i18n: tag string
 #. i18n: file ./plugins/autoreplace/autoreplaceprefs.ui line 193
 #: rc.cpp:1762
-#, fuzzy
 msgid "Auto replace on outgoing messages"
-msgstr "Bật mọi thông báo gỡ lỗi"
+msgstr "Tự động thay thế khi tin nhẳn gửi đi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 33
@@ -6437,125 +6376,115 @@ msgid ""
 "detect motion from your webcam or any video4linux device.</p> <p>It will put "
 "you online again when it detects you moving in front of the camera.</p>"
 msgstr ""
+"<p><b>Chuyển động tự động vắng mặt</b>: có thể tự động đặt bạn <b>Vắng mặt</b> khi nó không còn phát hiện lại sự chuyển động từ máy ảnh Mạng hay thiết bị video4linux nào của bạn.</p><p>Nó sẽ đặt bạn trực tuyến lại khi nó nhạy bạn di chuyển trước mặt máy ảnh.</p>"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 53
 #: rc.cpp:1768
-#, fuzzy
 msgid "Video Settings"
-msgstr "Cài đặt Giọng nói"
+msgstr "Thiết lập ảnh động"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 73
 #: rc.cpp:1771
-#, fuzzy
 msgid "&Video4Linux device:"
-msgstr "Name=Video4Linux Setup"
+msgstr "Thiết bị &Video4Linux:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 83
 #: rc.cpp:1774
-#, fuzzy
 msgid "/dev/video0"
-msgstr "/dev/pilot"
+msgstr "/dev/video0"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 111
 #: rc.cpp:1777
-#, fuzzy
 msgid "Away Settings"
-msgstr "Thiết lập vùng"
+msgstr "Thiết lập Vắng mặt"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 131
 #: rc.cpp:1780
 msgid "Become available when &detecting activity again"
-msgstr ""
+msgstr "Trở thành sẵn sàng khi &phát hiện lại hoạt động"
 
 #. i18n: tag string
 #. i18n: file ./plugins/motionautoaway/motionawayprefs.ui line 167
 #: rc.cpp:1783
 msgid "&Become away after this many minutes of inactivity:"
-msgstr ""
+msgstr "T&rở thành Vắng mặt sau số phút nghỉ này:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/contactselectorwidget_base.ui line 33
 #: rc.cpp:1792
-#, fuzzy
 msgid "Add an existing Metacontact"
-msgstr "Thêm địa chỉ vào liên lạc đã có « %s »"
+msgstr "Thêm siêu liên lạc đã có"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/contactselectorwidget_base.ui line 46
 #: rc.cpp:1795
-#, fuzzy
 msgid "Specify another contact"
-msgstr "Thêm liên lạc nữa"
+msgstr "Xác định liên lạc thêm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 25
 #: rc.cpp:1801
-#, fuzzy
 msgid "Filter by sender"
-msgstr "Lọc theo _Người gửi"
+msgstr "Lọc theo Người gửi"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 37
 #: rc.cpp:1804
 msgid "Allow messages only from contacts on the whitelist"
-msgstr ""
+msgstr "Cho phép tin nhẳn chỉ từ liên lạc trong danh sách chấp nhận"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 66
 #: rc.cpp:1813
-#, fuzzy
 msgid "Blacklist:"
-msgstr "Đen:"
+msgstr "Danh sách cấm:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 92
 #: rc.cpp:1819
-#, fuzzy
 msgid "Allow all messages"
-msgstr "mọi thư đã giữ lại"
+msgstr "Cho phép mọi tin nhẳn"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 102
 #: rc.cpp:1822
 msgid "Allow messages only from contacts on my contactlist"
-msgstr ""
+msgstr "Cho phép tin nhẳn chỉ từ liên lạc trong danh sách liên lạc"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 109
 #: rc.cpp:1825
 msgid "Allow all messages but messages from contacts on the blacklist"
-msgstr ""
+msgstr "Cho phép mọi tin nhẳn, trừ tin nhẳn từ liên lạc trong danh sách cấm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 124
 #: rc.cpp:1828
-#, fuzzy
 msgid "Whitelist:"
-msgstr "Sườn trắng"
+msgstr "Danh sách chấp nhận:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 167
 #: rc.cpp:1840
 msgid "Filter by content (seperate word lists by commas)"
-msgstr ""
+msgstr "Lọc theo nội dung (định giới bằng dấu phẩy danh sách từ)"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 185
 #: rc.cpp:1843
 msgid "Drop messages that contain all of the following words:"
-msgstr ""
+msgstr "Bỏ tin nhẳn chứa tất cả các từ này:"
 
 #. i18n: tag string
 #. i18n: file ./plugins/privacy/privacydialog.ui line 192
 #: rc.cpp:1846
-#, fuzzy
 msgid "Drop messages that contain at least one of the following words:"
-msgstr "Lệnh không hợp lệ: hãy gõ một của những lệnh theo đây:"
+msgstr "Bỏ tin nhẳn chứa ít nhất một của những từ này:"
 
 #. i18n: tag Text
 #. i18n: file ./plugins/privacy/privacyui.rc line 5
@@ -6611,16 +6540,14 @@ msgstr "Riêng tư"
 #. i18n: file ./protocols/groupwise/gwaddui.ui line 58
 #: rc.cpp:1861 rc.cpp:1864 rc.cpp:1870 rc.cpp:1873 rc.cpp:5817 rc.cpp:5820
 #: rc.cpp:5823 rc.cpp:5826
-#, fuzzy
 msgid "The account name of the account you would like to add."
-msgstr "Nhập địa điểm (_URI) của tập tin cần thêm:"
+msgstr "Tên tài khoản của tài khoản bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqaddui.ui line 39
 #: rc.cpp:1867
-#, fuzzy
 msgid "&Contact name:"
-msgstr "Giờ liên lạc"
+msgstr "Tên liên lạ&c:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqaddui.ui line 61
@@ -6631,9 +6558,8 @@ msgstr "Giờ liên lạc"
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/gwaddui.ui line 68
 #: rc.cpp:1876 rc.cpp:5829
-#, fuzzy
 msgid "Contact Type"
-msgstr "Liên lạc: "
+msgstr "Kiểu liên lạc"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqaddui.ui line 73
@@ -6655,7 +6581,7 @@ msgstr "Liên lạc: "
 msgid ""
 "Hey look!  Only one option.  Could you please make this a dropdown and add "
 "Null?"
-msgstr ""
+msgstr "Chỉ có một tùy chọn: hãy thêm « Null » (vô giá trị) để làm trình đơn thả xuống."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqaddui.ui line 79
@@ -6666,18 +6592,12 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/gwaddui.ui line 79
 #: rc.cpp:1885 rc.cpp:5832
-#, fuzzy
 msgid "&Echo"
-msgstr ""
-"#-#-#-#-#  Compendium1.po (geany 0.11)  #-#-#-#-#\n"
-"Vọng\n"
-"#-#-#-#-#  klock.po (klock)  #-#-#-#-#\n"
-"Tiếng vọng"
+msgstr "&Vọng"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 79
 #: rc.cpp:1894
-#, fuzzy
 msgid "Picture"
 msgstr "Ảnh"
 
@@ -6700,9 +6620,8 @@ msgstr "Tên hiệu :"
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 117
 #: rc.cpp:1900
-#, fuzzy
 msgid "QQ ID:"
-msgstr "ID khoá :"
+msgstr "ID QQ:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 134
@@ -6713,9 +6632,8 @@ msgstr "ID khoá :"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 208
 #: rc.cpp:1903 rc.cpp:4798
-#, fuzzy
 msgid "Full name:"
-msgstr "_Họ tên:"
+msgstr "Họ tên:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 156
@@ -6808,9 +6726,8 @@ msgstr "Đường:"
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 311
 #: rc.cpp:1933
-#, fuzzy
 msgid "Zip code:"
-msgstr "Mã _bưu điện:"
+msgstr "Mã bưu điện:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 318
@@ -6837,13 +6754,8 @@ msgstr "Mã _bưu điện:"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 616
 #: rc.cpp:1936 rc.cpp:3750 rc.cpp:4197 rc.cpp:4446 rc.cpp:4825 rc.cpp:4846
-#, fuzzy
 msgid "Country:"
-msgstr ""
-"#-#-#-#-#  Compendium8.po (geany 0.11)  #-#-#-#-#\n"
-"Quốc gia :\n"
-"#-#-#-#-#  xchat-2.8.1.vi.po (xchat 2.8.1)  #-#-#-#-#\n"
-"Quốc gia:"
+msgstr "Quốc gia:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 331
@@ -6863,7 +6775,7 @@ msgstr ""
 #. i18n: file ./protocols/yahoo/ui/yahooworkinfowidget.ui line 60
 #: rc.cpp:1939 rc.cpp:3744 rc.cpp:4194 rc.cpp:4443
 msgid "State:"
-msgstr "Tình trạng"
+msgstr "Tỉnh:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 338
@@ -6900,12 +6812,11 @@ msgstr "Tình trạng"
 #: rc.cpp:1942 rc.cpp:3411 rc.cpp:3456 rc.cpp:3741 rc.cpp:4191 rc.cpp:4455
 #: rc.cpp:4822 rc.cpp:4837
 msgid "City:"
-msgstr "Phố :"
+msgstr "TP:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 353
 #: rc.cpp:1945
-#, fuzzy
 msgid "Phone numbers"
 msgstr "Số điện thoại"
 
@@ -6923,7 +6834,7 @@ msgstr "Số điện thoại"
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 851
 #: rc.cpp:1948 rc.cpp:2814 rc.cpp:4882
 msgid "Home:"
-msgstr "Chính:"
+msgstr "Ở nhà:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 380
@@ -6934,15 +6845,14 @@ msgstr "Chính:"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 834
 #: rc.cpp:1951 rc.cpp:4876
-#, fuzzy
 msgid "Cell:"
-msgstr "Ô"
+msgstr "Di động:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 387
 #: rc.cpp:1954
 msgid "QQ:"
-msgstr ""
+msgstr "QQ:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 422
@@ -6953,93 +6863,74 @@ msgstr "Giới thiệu"
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 443
 #: rc.cpp:1960
-#, fuzzy
 msgid "Rat"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Tỷ lệ\n"
-"#-#-#-#-#  kttsd.po (kttsd)  #-#-#-#-#\n"
-"Tốc độ"
+msgstr "Tý"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 448
 #: rc.cpp:1963
-#, fuzzy
 msgid "Ox"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"T\n"
-"#-#-#-#-#  mediacontrol.po (mediacontrol)  #-#-#-#-#\n"
-"O"
+msgstr "Sừu"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 453
 #: rc.cpp:1966
-#, fuzzy
 msgid "Tiger"
-msgstr "Ni-giê"
+msgstr "Đân"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 458
 #: rc.cpp:1969
 msgid "Rabbit"
-msgstr ""
+msgstr "Mão"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 463
 #: rc.cpp:1972
-#, fuzzy
 msgid "Dragon"
-msgstr "Con rồng đỏ"
+msgstr "Thìn"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 468
 #: rc.cpp:1975
-#, fuzzy
 msgid "Snake"
-msgstr "Rắn GI"
+msgstr "Ty"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 473
 #: rc.cpp:1978
-#, fuzzy
 msgid "Horse"
-msgstr "Móng ngựa"
+msgstr "Ngọ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 478
 #: rc.cpp:1981
-#, fuzzy
 msgid "Ram"
-msgstr "sáng"
+msgstr "Mùi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 483
 #: rc.cpp:1984
-#, fuzzy
 msgid "Monkey"
-msgstr "Giao diện MLDonkey"
+msgstr "Thân"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 488
 #: rc.cpp:1987
-#, fuzzy
 msgid "Rooster"
-msgstr "Bản liệt kê"
+msgstr "Dậu"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 493
 #: rc.cpp:1990
-#, fuzzy
 msgid "Dog"
-msgstr "Né tránh"
+msgstr "Tuất"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 498
 #: rc.cpp:1993
-#, fuzzy
 msgid "Pig"
-msgstr "Ping"
+msgstr "Hợi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 511
@@ -7058,132 +6949,116 @@ msgstr "Ping"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 75
 #: rc.cpp:1996 rc.cpp:3735 rc.cpp:4458 rc.cpp:4789
-#, fuzzy
 msgid "Homepage:"
-msgstr "Tr&ang chủ:"
+msgstr "Trang chủ :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 518
 #: rc.cpp:1999
-#, fuzzy
 msgid "Ocupation:"
 msgstr "Nghề nghiệp:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 525
 #: rc.cpp:2002
-#, fuzzy
 msgid "Graduate:"
-msgstr "ngày:"
+msgstr "Tốt nghiệp:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 532
 #: rc.cpp:2005
 msgid "Zodiac:"
-msgstr ""
+msgstr "Hoàng đạo :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 562
 #: rc.cpp:2011
-#, fuzzy
 msgid "Aries"
-msgstr "mục"
+msgstr "Aries"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 567
 #: rc.cpp:2014
-#, fuzzy
 msgid "Taurus"
-msgstr "Nau-ru"
+msgstr "Taurus"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 572
 #: rc.cpp:2017
-#, fuzzy
 msgid "Gemini"
-msgstr "Nhắc nhở"
+msgstr "Gemini"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 577
 #: rc.cpp:2020
-#, fuzzy
 msgid "Cancer"
-msgstr "Thôi"
+msgstr "Cancer"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 582
 #: rc.cpp:2023
-#, fuzzy
 msgid "Leo"
-msgstr "Chanh"
+msgstr "Leo"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 587
 #: rc.cpp:2026
 msgid "Virgo"
-msgstr ""
+msgstr "Virgo"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 592
 #: rc.cpp:2029
-#, fuzzy
 msgid "Libra"
-msgstr "Thư viện"
+msgstr "Libra"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 597
 #: rc.cpp:2032
-#, fuzzy
 msgid "Scorpius"
-msgstr "Con bọ cạp"
+msgstr "Scorpio"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 602
 #: rc.cpp:2035
-#, fuzzy
 msgid "Sagittarius"
-msgstr "atari-us"
+msgstr "Sagittarius"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 607
 #: rc.cpp:2038
 msgid "Capricornus"
-msgstr ""
+msgstr "Capricorn"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 612
 #: rc.cpp:2041
-#, fuzzy
 msgid "Aquarius"
-msgstr "Vuông"
+msgstr "Aquarius"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 617
 #: rc.cpp:2044
-#, fuzzy
 msgid "Pisces"
-msgstr "Nhận thức"
+msgstr "Pisces"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 625
 #: rc.cpp:2047
-#, fuzzy
 msgid "Horoscope:"
-msgstr "Xem mờ"
+msgstr "Số tử vi:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqvcard.ui line 703
 #: rc.cpp:2050
-#, fuzzy
 msgid "Introduction:"
-msgstr "Giới thiệu"
+msgstr "Giới thiệu :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 14
 #: rc.cpp:2053
-#, fuzzy
 msgid "Account Preferences - QQ"
-msgstr "Tủy thích phông chữ"
+msgstr "Tủy thích tài khoản — QQ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 33
@@ -7210,9 +7085,8 @@ msgstr "Tủy thích phông chữ"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 35
 #: rc.cpp:2056 rc.cpp:2521 rc.cpp:3522 rc.cpp:3875 rc.cpp:4494 rc.cpp:4942
-#, fuzzy
 msgid "&Basic Setup"
-msgstr "Cấu trúc cơ sở"
+msgstr "Thiết lập cơ &bản"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 45
@@ -7272,9 +7146,8 @@ msgstr "Thông tin tài liệu"
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 89
 #: rc.cpp:2062 rc.cpp:2071
-#, fuzzy
 msgid "The user ID of the QQ contact you would like to use."
-msgstr "Hãy nhập địa chỉ của tập tin bạn muốn mở :"
+msgstr "ID người dùng của liên lạc QQ bạn muốn sử dụng."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 76
@@ -7289,12 +7162,13 @@ msgid ""
 "The user ID of the QQ contact you would like to use.  This should be in the "
 "form of a valid E-mail address."
 msgstr ""
+"ID người dùng của liên lạc QQ bạn muốn sử dụng. Nó nên theo định dạng đia chỉ thư điện tử hợp lệ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 79
 #: rc.cpp:2068
 msgid "&QQ ID:"
-msgstr ""
+msgstr "ID &QQ:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 123
@@ -7310,6 +7184,7 @@ msgid ""
 "the \"Connect All\" button, or at startup when automatic connection at "
 "startup is enabled."
 msgstr ""
+"Bật tùy chọn này thì tài khoản này sẽ không được kết nối khi bạn bấm cái nút « Kết nối tất cả », hoặc khi việc khởi chạy hiệu lực khả năng tự động kết nối."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 126
@@ -7354,7 +7229,7 @@ msgstr ""
 #: rc.cpp:2080 rc.cpp:2317 rc.cpp:2545 rc.cpp:3314 rc.cpp:3555 rc.cpp:3899
 #: rc.cpp:4518 rc.cpp:4647 rc.cpp:4966 rc.cpp:5553
 msgid "E&xclude from connect all"
-msgstr ""
+msgstr "L&oại trừ ra Kết nối tất cả"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 136
@@ -7378,13 +7253,13 @@ msgstr ""
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 120
 #: rc.cpp:2083 rc.cpp:2548 rc.cpp:3558 rc.cpp:3902 rc.cpp:4969
 msgid "Exclu&de from Global Identity"
-msgstr ""
+msgstr "Loại trừ ra Chứng &minh toàn cục"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 158
 #: rc.cpp:2086
 msgid "View && Update my vCard"
-msgstr ""
+msgstr "Xem và cập nhật vCard tôi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 170
@@ -7427,6 +7302,9 @@ msgid ""
 "\n"
 "If you do not currently have an ID, please create one."
 msgstr ""
+"Để kết nối tới mạng QQ, bạn cần một ID QQ.\n"
+"\n"
+"Chưa có thì hãy tạo nó."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 208
@@ -7453,9 +7331,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 174
 #: rc.cpp:2097 rc.cpp:2557 rc.cpp:3330 rc.cpp:3528 rc.cpp:3912 rc.cpp:4981
-#, fuzzy
 msgid "Re&gister New Account"
-msgstr "_Đăng ký tài khoản mới"
+msgstr "Đăn&g ký tài khoản mới"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 235
@@ -7474,9 +7351,8 @@ msgstr "_Đăng ký tài khoản mới"
 #. i18n: tag string
 #. i18n: file ./protocols/oscar/icq/ui/icqeditaccountui.ui line 230
 #: rc.cpp:2100 rc.cpp:2560 rc.cpp:3561 rc.cpp:3924
-#, fuzzy
 msgid "Accou&nt Preferences"
-msgstr "Tủy thích phông chữ"
+msgstr "Tủy thích tài khoả&n"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 247
@@ -7516,9 +7392,8 @@ msgstr "Tủy thích phông chữ"
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 306
 #: rc.cpp:2103 rc.cpp:2308 rc.cpp:2563 rc.cpp:3336 rc.cpp:3564 rc.cpp:3927
 #: rc.cpp:4542 rc.cpp:4656 rc.cpp:4999
-#, fuzzy
 msgid "Connection Preferences"
-msgstr "Tuỳ chọn trong Nối mạng"
+msgstr "Tùy thích kết nối"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 259
@@ -7545,9 +7420,8 @@ msgstr "Tuỳ chọn trong Nối mạng"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 341
 #: rc.cpp:2106 rc.cpp:2566 rc.cpp:2755 rc.cpp:3567 rc.cpp:3930 rc.cpp:5014
-#, fuzzy
 msgid "&Override default server information"
-msgstr "Đè lên thiết lập mặc định"
+msgstr "Có quyền ca&o hơn thông tin máy phục vụ mặc định"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 285
@@ -7566,9 +7440,8 @@ msgstr "Đè lên thiết lập mặc định"
 #. i18n: tag string
 #. i18n: file ./protocols/oscar/icq/ui/icqeditaccountui.ui line 294
 #: rc.cpp:2109 rc.cpp:2569 rc.cpp:2758 rc.cpp:3939
-#, fuzzy
 msgid "Ser&ver /"
-msgstr "Má&y chủ"
+msgstr "Má&y phục vụ /"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 298
@@ -7588,7 +7461,7 @@ msgstr "Má&y chủ"
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 753
 #: rc.cpp:2112 rc.cpp:2572 rc.cpp:2761 rc.cpp:3435
 msgid "po&rt:"
-msgstr ""
+msgstr "&cổng:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 329
@@ -7644,25 +7517,25 @@ msgid ""
 "Only modify these values if you want to use a special IM proxy server, like "
 "SIMP"
 msgstr ""
+"Chỉ sửa đổi các giá trị này nếu bạn muốn sử dụng máy phục vụ tin nhắn đặc biệt, như SIMP."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 365
 #: rc.cpp:2127
 msgid "tcpconn.tencent.com"
-msgstr ""
+msgstr "tcpconn.tencent.com"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 377
 #: rc.cpp:2130
-#, fuzzy
 msgid "Global QQ Options"
-msgstr "Tùy chọn toàn cục"
+msgstr "Tùy chọn QQ toàn cục"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 389
 #: rc.cpp:2133
 msgid "<qt><b>Note:</b> These settings are applicable to all QQ accounts"
-msgstr ""
+msgstr "<qt><b>Ghi chú</b> : thiết lập này có thể áp dụng cho mọi tài khoản QQ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 407
@@ -7677,6 +7550,7 @@ msgid ""
 "This option will notify you when a contact starts typing their message, "
 "before the message is sent or finished."
 msgstr ""
+"Tùy chọn này sẽ thông báo bạn biết khi liên lạc bắt đầu gõ tin nhẳn, trước khi tin nhẳn được gõ xong hay gửi."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 410
@@ -7688,7 +7562,7 @@ msgstr ""
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 433
 #: rc.cpp:2139 rc.cpp:2602
 msgid "Au&tomatically open a chat window when someone starts a conversation"
-msgstr ""
+msgstr "&Tự động mở cửa sổ trò chuyện khi người nào bắt đầu nói chuyện"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 428
@@ -7710,13 +7584,17 @@ msgid ""
 "has one.  <b>Note:</b> this will open a socket, and let the user know you "
 "are downloading their picture.</dd></dl>"
 msgstr ""
+"<qt><p>Ngụ ý khi Kopete sẽ tải về ảnh hiển thị của liên lạc:</"
+"p>\n"
+"<dl><dt>chỉ thủ công</dt><dd>ảnh không được tải về tự động; chỉ được tải về khi người dùng yêu cầu</dd>\n"
+"<dt>khi mở trò chuyện</dt><dd>ảnh được tải về khi ổ cắm đối thoại được mở, tức là khi bạn mở cửa sổ trò chuyện</dd>\n"
+"<dt>tự động</dt><dd>luôn luôn thử tải về ảnh nếu liên lạc có (<b>ghi chú :</b> việc này sẻ mở ổ cắm thì cho người dùng biết bạn đang tải về ảnh của họ).</dd></dl>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 431
 #: rc.cpp:2148
-#, fuzzy
 msgid "Download the qq picture:"
-msgstr "Đang tải về các hình người dùng..."
+msgstr "Tải về ảnh qq:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 449
@@ -7737,6 +7615,12 @@ msgid ""
 "has one.  <b>Note:</b> this will open a socket, and let the user know you "
 "are downloading their picture.</dd></dl>"
 msgstr ""
+"<qt><p>Ngụ ý khi Kopete sẽ tải về ảnh của liên lạc:</"
+"p>\n"
+"<dl><dt>chỉ thủ công</dt><dd>ảnh không được tải về tự động; chỉ được tải về khi người dùng yêu cầu</dd>\n"
+"<dt>khi mở trò chuyện</dt><dd>ảnh được tải về khi ổ cắm đối thoại được mở, tức là khi bạn mở cửa sổ trò chuyện</dd>\n"
+"<dt>tự động</dt><dd>luôn luôn thử tải về ảnh nếu liên lạc có (<b>ghi chú :</b> việc này sẻ mở ổ cắm thì cho người dùng biết bạn đang tải về ảnh của họ).</dd></dl>"
+
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 456
@@ -7747,9 +7631,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 486
 #: rc.cpp:2157 rc.cpp:2620
-#, fuzzy
 msgid "Only Manually"
-msgstr "Thủ công"
+msgstr "Chỉ thủ công"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 461
@@ -7761,7 +7644,7 @@ msgstr "Thủ công"
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 491
 #: rc.cpp:2160 rc.cpp:2623
 msgid "When a Chat is Open (default)"
-msgstr ""
+msgstr "Khi mở trò chuyện (mặc định)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 466
@@ -7772,9 +7655,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 496
 #: rc.cpp:2163 rc.cpp:2626
-#, fuzzy
 msgid "Automatically (read help)"
-msgstr "Tự động đánh giá"
+msgstr "Tự động (đọc trợ giúp)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 476
@@ -7783,6 +7665,7 @@ msgid ""
 "QQ Messenger allows users to download and use custom emoticons. If this "
 "option is enabled, Kopete will download these emoticons and show them."
 msgstr ""
+"Trình QQ Messenger cho người dùng có khả năng tải về và sử dụng biểu tượng xúc cảm riêng. Bật tùy chọn này thì Kopete sẽ tải về và hiển thị biểu tượng xúc cảm như vậy."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 479
@@ -7793,9 +7676,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 509
 #: rc.cpp:2169 rc.cpp:2632
-#, fuzzy
 msgid "&Download and show custom emoticons"
-msgstr "Tải về vào thư mục tự chọn:"
+msgstr "Tải &về và hiển thị biểu tượng xúc cảm riêng"
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 490
@@ -7810,6 +7692,8 @@ msgid ""
 "Export all the emoticon themes as custom emoticons.\n"
 "Only works for emoticons in the PNG format."
 msgstr ""
+"Xuất khẩu mọi sắc thái biểu tượng xúc cảm dạng biểu tượng xúc cảm riêng.\n"
+"Chỉ hoạt động được cho biểu tượng xúc cảm theo định dạng PNG."
 
 #. i18n: tag string
 #. i18n: file ./protocols/qq/ui/qqeditaccountui.ui line 493
@@ -7820,23 +7704,20 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 523
 #: rc.cpp:2176 rc.cpp:2639
-#, fuzzy
 msgid "E&xport the current emoticon theme to users"
-msgstr "Vị trí hiện thời trên thước"
+msgstr "&Xuất sắc thái biểu tượng xúc cảm hiện thời tới các người dùng"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 16
 #: rc.cpp:2182
-#, fuzzy
 msgid "Network Configuration"
-msgstr "Công cụ cấu hình mạng"
+msgstr "Cấu hình mạng"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 36
 #: rc.cpp:2185
-#, fuzzy
 msgid "Hosts Con&figurations"
-msgstr "Cấu hình phông chữ"
+msgstr "Cấu hình &máy"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 56
@@ -7853,23 +7734,20 @@ msgstr "&Mới..."
 #. i18n: tag string
 #. i18n: file ./protocols/yahoo/ui/yahoostealthsetting.ui line 78
 #: rc.cpp:2191 rc.cpp:4431
-#, fuzzy
 msgid "Alt+N"
-msgstr "Alt+1"
+msgstr "Alt+M"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 77
 #: rc.cpp:2197
-#, fuzzy
 msgid "Alt+R"
-msgstr "Alt+1"
+msgstr "Alt+R"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 108
 #: rc.cpp:2200
-#, fuzzy
 msgid "The IRC servers associated with this network"
-msgstr "Không có dấu tương ứng với hạng neo này"
+msgstr "Các máy phục vụ IRC liên quan đến mạng này"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 111
@@ -7878,20 +7756,19 @@ msgid ""
 "The IRC servers associated with this network. Use the up and down buttons to "
 "alter the order in which connections are attempted."
 msgstr ""
+"Những máy phục vụ IRC liên quan đến mạng này. Hãy sử dụng cái nút Lên và Xuống để thay đổi thứ tự thử kết nối."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 121
 #: rc.cpp:2206
-#, fuzzy
 msgid "Move this server down"
-msgstr "Chuyển bộ lọc được chọn xuống"
+msgstr "Đem xuống máy phục vụ này"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 124
 #: rc.cpp:2209
-#, fuzzy
 msgid "Move this server down in connection attempt priority"
-msgstr "Hỏi người dùng khi cố kết nối"
+msgstr "Đem máy phục vụ này xuống thấp hơn trong danh sách ưu tiên thử kết nối"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 127
@@ -7912,16 +7789,14 @@ msgstr "Xuống"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 137
 #: rc.cpp:2215
-#, fuzzy
 msgid "Move this server up"
-msgstr "Thêm máy phục vụ này"
+msgstr "Đem lên máy phục vụ này"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 140
 #: rc.cpp:2218
-#, fuzzy
 msgid "Move this server up in connection attempt priority"
-msgstr "Hỏi người dùng khi cố kết nối"
+msgstr "Đem máy phục vụ này lên cao hơn trong danh sách ưu tiên thử kết nối"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 143
@@ -7942,16 +7817,14 @@ msgstr "Lên"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 171
 #: rc.cpp:2224
-#, fuzzy
 msgid "Check this to enable SSL for this connection"
-msgstr "Hãy chọn giao thức cần dùng cho sự kết nối này."
+msgstr "Đánh dấu để bật SSL cho kết nối này"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 174
 #: rc.cpp:2227
-#, fuzzy
 msgid "Use SS&L"
-msgstr "Dùng _SSL"
+msgstr "Dùng SS&L"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 181
@@ -7969,7 +7842,7 @@ msgstr "&Máy:"
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 689
 #: rc.cpp:2233 rc.cpp:5091
 msgid "Por&t:"
-msgstr ""
+msgstr "Cổn&g:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 237
@@ -7981,7 +7854,7 @@ msgstr "&Mô tả:"
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 261
 #: rc.cpp:2245
 msgid "Ne&w"
-msgstr "&Mới"
+msgstr "Mớ&i"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 264
@@ -7992,28 +7865,20 @@ msgstr "&Mới"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 898
 #: rc.cpp:2248 rc.cpp:5140
-#, fuzzy
 msgid "Alt+W"
-msgstr "Alt+1"
+msgstr "Alt+I"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 299
 #: rc.cpp:2251
-#, fuzzy
 msgid "Rena&me..."
-msgstr ""
-"#-#-#-#-#  Compendium2.po (geany 0.11)  #-#-#-#-#\n"
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Thay tên...\n"
-"#-#-#-#-#  ksayit.po (ksayit)  #-#-#-#-#\n"
-"Đổi tên...\n"
-"#-#-#-#-#  kfontinst.po (kfontinst)  #-#-#-#-#\n"
+msgstr "Tha&y tên..."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/networkconfig.ui line 306
 #: rc.cpp:2254
 msgid "Remo&ve"
-msgstr "&Gỡ bỏ"
+msgstr "&Bỏ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 34
@@ -8036,9 +7901,8 @@ msgstr "&Gỡ bỏ"
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/ui/gwaccountpreferences.ui line 29
 #: rc.cpp:2257 rc.cpp:2879 rc.cpp:3290 rc.cpp:4626 rc.cpp:5529
-#, fuzzy
 msgid "B&asic Setup"
-msgstr "Cấu trúc cơ sở"
+msgstr "Thiết lậ&p cơ bản"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 77
@@ -8049,24 +7913,20 @@ msgstr "Cấu trúc cơ sở"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 163
 #: rc.cpp:2263 rc.cpp:2290
-#, fuzzy
 msgid "This is the name that everyone will see everytime you say something"
-msgstr ""
-"Điều này là tên sẽ được dùng trên bản liệt kê của bạn cho liên lạc này."
+msgstr "Đây là tên mọi người sẽ thấy mỗi lần bạn nói gì"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 80
 #: rc.cpp:2266
-#, fuzzy
 msgid "N&icknames:"
-msgstr "Tên hiệu :"
+msgstr "Tên h&iệu :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 90
 #: rc.cpp:2269
-#, fuzzy
 msgid "&Real name:"
-msgstr "Tên thật:"
+msgstr "&Tên thật:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 100
@@ -8089,12 +7949,13 @@ msgid ""
 "The username you would prefer to use on IRC, if your system does not have "
 "identd support.  Leave blank to use your system account name."
 msgstr ""
+"Tên người dùng bạn muốn sử dụng trên IRC, nếu hệ thống của bạn không hỗ trợ identd. Bỏ rỗng để sử dụng tên của tài khoản hệ thống."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 103
 #: rc.cpp:2275
 msgid "&Username:"
-msgstr "T&ên người dùng:"
+msgstr "Tên người &dùng:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 142
@@ -8103,6 +7964,7 @@ msgid ""
 "The username you would prefer to use on IRC, if your system does not have "
 "identd support."
 msgstr ""
+"Tên người dùng bạn muốn sử dụng trên IRC, nếu hệ thống của bạn không hỗ trợ identd."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 166
@@ -8111,12 +7973,13 @@ msgid ""
 "The alias you would like to use on IRC.  You may change this once online "
 "with the /nick command."
 msgstr ""
+"Tên người dùng bạn muốn sử dụng trên IRC. Cũng có thể thay đổi nó một khi trực tuyến, bằng lệnh « /nick »."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 173
 #: rc.cpp:2296
 msgid "Network:"
-msgstr "mạng:"
+msgstr "Mạng:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 183
@@ -8131,24 +7994,19 @@ msgid ""
 "<p><b>Note:</b> Most IRC servers do not require a password, and only a "
 "nickname is required to connect</p>"
 msgstr ""
+"<p><b>Ghi chú :</b> phần lớn máy phục vụ IRC không cần thiết mật khẩu, chỉ cần nhập vào tên hiệu để kết nối.</p>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 264
 #: rc.cpp:2305
-#, fuzzy
 msgid "C&onnection"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Kết nối\n"
-"#-#-#-#-#  update060107.vi.po (BitTorrent 4.2)  #-#-#-#-#\n"
-"Sự kết nối"
+msgstr "Kết nố&i"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 304
 #: rc.cpp:2311
-#, fuzzy
 msgid "Default &charset:"
-msgstr "Bộ _ký tự mặc định:"
+msgstr "Bộ ký tự mặ&c định:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 335
@@ -8168,20 +8026,19 @@ msgid ""
 "\"Connect All\" button, or at startup even if you selected to automatically "
 "connect at startup"
 msgstr ""
+"Bật thì tài khoản này sẽ không được kết nối khi bạn bấm cái nút « Kết nối tất cả », hoặc khi việc khởi chạy hiệu lực khả năng tự động kết nối."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 345
 #: rc.cpp:2320
-#, fuzzy
 msgid "&Prefer SSL-based connections"
-msgstr "Kết nối hồng ngoại"
+msgstr "Thích kết nối dựa vào &SSL"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 369
 #: rc.cpp:2323
-#, fuzzy
 msgid "Run Following Commands on Connect"
-msgstr "Không thể chạy lệnh này:"
+msgstr "Chạy các lệnh này khi kết nối"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 389
@@ -8192,32 +8049,28 @@ msgstr "Không thể chạy lệnh này:"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 392
 #: rc.cpp:2326 rc.cpp:2329
-#, fuzzy
 msgid ""
 "Any commands added here will be run as soon as you are connected to the IRC "
 "server."
-msgstr "Bạn không thể gửi tin nhẳn khi ngoại tuyến."
+msgstr "Lệnh nào được thêm vào đây sẽ được chạy một khi kết nối tới máy phục vụ IRC."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 419
 #: rc.cpp:2332
-#, fuzzy
 msgid "Add Co&mmand"
-msgstr "Thêm lệnh"
+msgstr "Thê&m lệnh"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 432
 #: rc.cpp:2335
-#, fuzzy
 msgid "A&dvanced Configuration"
-msgstr "Cấu hình nâng cao"
+msgstr "Cấu hình cấp c&ao"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 458
 #: rc.cpp:2338
-#, fuzzy
 msgid "Custom CTCP Replies"
-msgstr "XChat: Trả lời CTCP"
+msgstr "Trả lời CTCP tự chọn"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 478
@@ -8227,27 +8080,25 @@ msgid ""
 "requests to you. You can also use this dialog to override the built-in "
 "replies for VERSION, USERINFO, and CLIENTINFO."
 msgstr ""
+"Bạn có thể sử dụng hộp thoại này để thêm trả lời riêng cho trường hợp người khác gửi yêu cầu kiểu CTCP. Cũng có thể đặt quyền cao hơn trả lời có sẵn cho VERSION (phiên bản), USERINFO (thông tin về người dùng), và CLIENTINFO (thông tin về ứng dụng khách)."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 493
 #: rc.cpp:2344
-#, fuzzy
 msgid "&CTCP:"
-msgstr "CTCP:"
+msgstr "&CTCP:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 506
 #: rc.cpp:2347
-#, fuzzy
 msgid "&Reply:"
-msgstr "Trả lời"
+msgstr "T&rả lời:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 519
 #: rc.cpp:2350
-#, fuzzy
 msgid "Add Repl&y"
-msgstr "Thêm Tương ứng"
+msgstr "Thêm trả lờ&i"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 531
@@ -8268,6 +8119,7 @@ msgid ""
 "The message you want people to see when you disconnect from IRC without "
 "giving a reason. Leave this field blank to use the Kopete default message."
 msgstr ""
+"Thông điệp bạn muốn người khác thấy khi bạn ngắt kết nối ra IRC, không cung cấp lý do. Bỏ rỗng để sử dụng tin nhẳn mặc định của Kopete."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 553
@@ -8282,47 +8134,43 @@ msgid ""
 "The message you want people to see when you part a channel without giving a "
 "reason. Leave this field blank to use the Kopete default message."
 msgstr ""
+"Thông điệp bạn muốn người khác thấy khi bạn rời kênh, không cung cấp lý do. Bỏ rỗng để sử dụng tin nhẳn mặc định của Kopete."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 563
 #: rc.cpp:2368
-#, fuzzy
 msgid "&Quit message:"
-msgstr "Thông điệp thoát:"
+msgstr "T&hông điệp thoát:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 573
 #: rc.cpp:2371
-#, fuzzy
 msgid "&Part message:"
-msgstr "In thư"
+msgstr "Thông điệ&p rời:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 587
 #: rc.cpp:2374
-#, fuzzy
 msgid "Windowing"
 msgstr "Cửa sổ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 612
 #: rc.cpp:2377
-#, fuzzy
 msgid "Message Destinations"
-msgstr "Thông tin tin nhẳn"
+msgstr "Đích tin nhẳn"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 624
 #: rc.cpp:2380
 msgid "Auto-show anonymous windows"
-msgstr ""
+msgstr "Tự động hiển thị cửa sổ vô danh"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 631
 #: rc.cpp:2383
-#, fuzzy
 msgid "Auto-show the server window"
-msgstr "Hiện cửa sổ chính"
+msgstr "Tự động hiển thị cửa sổ máy phục vụ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 646
@@ -8333,9 +8181,8 @@ msgstr "Thông điệp máy phục vụ :"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 656
 #: rc.cpp:2389
-#, fuzzy
 msgid "Server notices:"
-msgstr "Tập tin máy phục vụ :"
+msgstr "Thông báo máy phục vụ :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 670
@@ -8374,9 +8221,8 @@ msgstr "Cửa sổ hoạt động"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 795
 #: rc.cpp:2395 rc.cpp:2410 rc.cpp:2428 rc.cpp:2446
-#, fuzzy
 msgid "Server Window"
-msgstr "Cửa sổ máy phục vụ..."
+msgstr "Cửa sổ máy phục vụ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 680
@@ -8395,9 +8241,8 @@ msgstr "Cửa sổ máy phục vụ..."
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 800
 #: rc.cpp:2398 rc.cpp:2413 rc.cpp:2431 rc.cpp:2449
-#, fuzzy
 msgid "Anonymous Window"
-msgstr "Cảnh báo &nặc danh"
+msgstr "Cảnh báo vô danh"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 685
@@ -8422,16 +8267,14 @@ msgstr "KNotify"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 740
 #: rc.cpp:2422
-#, fuzzy
 msgid "Error messages:"
-msgstr "Thông điệp lỗi"
+msgstr "Thông điệp lỗi:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/irceditaccount.ui line 779
 #: rc.cpp:2440
-#, fuzzy
 msgid "Information replies:"
-msgstr "Yêu cầu thông tin"
+msgstr "Đáp ứng thông tin:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 43
@@ -8442,9 +8285,8 @@ msgstr "Yêu cầu thông tin"
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 59
 #: rc.cpp:2461 rc.cpp:2470
-#, fuzzy
 msgid "The name of the IRC contact or channel you would like to add."
-msgstr "Nhập địa điểm (_URI) của tập tin cần thêm:"
+msgstr "Tên của liên lạc hay kênh IRC bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 46
@@ -8454,17 +8296,13 @@ msgid ""
 "simply the text of a person's nickname, or you may type a channel name, "
 "preceded by a pound sign ('#')."
 msgstr ""
+"Tên của liên lạc hay kênh kiểu IRC bạn muốn thêm. Có thể gõ đơn giản tên hiệu của người dùng, hoặc gõ tên kênh (với dấu băm # đi trước)."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 49
 #: rc.cpp:2467
-#, fuzzy
 msgid "N&ickname/channel to add:"
-msgstr ""
-"#-#-#-#-#  Compendium8.po (geany 0.11)  #-#-#-#-#\n"
-"Hãy gõ tên hiệu cần thêm\n"
-"#-#-#-#-#  xchat-2.8.1.vi.po (xchat 2.8.1)  #-#-#-#-#\n"
-"Hãy nhập tên hiệu cần thêm:"
+msgstr "Tên hiệu/kênh cần thêm:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 62
@@ -8474,19 +8312,19 @@ msgid ""
 "simply the text of a person's nickname, or you may type a channel name, "
 "preceded by a pound sign ('#')"
 msgstr ""
+"Tên của liên lạc hay kênh kiểu IRC bạn muốn thêm. Có thể gõ đơn giản tên hiệu của người dùng, hoặc gõ tên kênh (với dấu băm # đi trước)."
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 71
 #: rc.cpp:2476
 msgid "<i>(for example: joe_bob or #somechannel)</i>"
-msgstr ""
+msgstr "<i> v.d.: « nguyen_van » hay « #vnoss »</i>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/irc/ui/ircadd.ui line 98
 #: rc.cpp:2479
-#, fuzzy
 msgid "&Search Channels"
-msgstr "Tìm kiếm kênh"
+msgstr "&Tìm kiếm kênh"
 
 #. i18n: tag text
 #. i18n: file ./protocols/irc/ircchatui.rc line 5
@@ -8497,9 +8335,8 @@ msgstr "IRC"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msndebugrawcommand_base.ui line 25
 #: rc.cpp:2485
-#, fuzzy
 msgid "&Parameters:"
-msgstr "Tham số :"
+msgstr "Tham &số :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msndebugrawcommand_base.ui line 38
@@ -8510,16 +8347,14 @@ msgstr "&Lệnh:"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msndebugrawcommand_base.ui line 51
 #: rc.cpp:2491
-#, fuzzy
 msgid "Add &ID"
-msgstr "Th_êm "
+msgstr "Thêm &ID"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msndebugrawcommand_base.ui line 61
 #: rc.cpp:2494
-#, fuzzy
 msgid "Add &new line"
-msgstr "dòng mới"
+msgstr "Thêm dò&ng mới"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msndebugrawcommand_base.ui line 74
@@ -8531,7 +8366,7 @@ msgstr "dòng mới"
 #. i18n: file ./protocols/oscar/icq/ui/xtrazicqstatusui.ui line 79
 #: rc.cpp:2497 rc.cpp:4224
 msgid "Message:"
-msgstr "Thông điệp:"
+msgstr "Tin nhẳn:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msnadd.ui line 33
@@ -8542,9 +8377,8 @@ msgstr "Thông điệp:"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msnadd.ui line 52
 #: rc.cpp:2500 rc.cpp:2509
-#, fuzzy
 msgid "The user ID of the MSN contact you would like to add."
-msgstr "Nhập địa điểm (_URI) của tập tin cần thêm:"
+msgstr "ID người dùng của liên lạc MSN bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msnadd.ui line 36
@@ -8559,6 +8393,7 @@ msgid ""
 "The user ID of the MSN contact you would like to add.  This should be in the "
 "form of a valid E-mail address."
 msgstr ""
+"ID người dùng của liên lạc MSN bạn muốn thêm. Nó nên theo định dạng địa chỉ thư điện tử hợp lệ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msnadd.ui line 39
@@ -8569,23 +8404,20 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 95
 #: rc.cpp:2506 rc.cpp:2533
-#, fuzzy
 msgid "&MSN Passport ID:"
-msgstr "Truyền tải MSN"
+msgstr "&MSN Passport ID:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msnadd.ui line 64
 #: rc.cpp:2515
-#, fuzzy
 msgid "<i>(for example: joe@hotmail.com)</i>"
-msgstr "(ví dụ : www.miền.com)"
+msgstr "<i>(ví dụ : nguyen_văn@vnoss.org)</i>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 14
 #: rc.cpp:2518
-#, fuzzy
 msgid "Account Preferences - MSN"
-msgstr "Tủy thích phông chữ"
+msgstr "Tủy thích tài khoản — MSN"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 89
@@ -8596,9 +8428,8 @@ msgstr "Tủy thích phông chữ"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 105
 #: rc.cpp:2527 rc.cpp:2536
-#, fuzzy
 msgid "The user ID of the MSN contact you would like to use."
-msgstr "Hãy nhập địa chỉ của tập tin bạn muốn mở :"
+msgstr "ID người dùng của liên lạc MSN bạn muốn sử dụng."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 92
@@ -8613,6 +8444,7 @@ msgid ""
 "The user ID of the MSN contact you would like to use.  This should be in the "
 "form of a valid E-mail address."
 msgstr ""
+"ID người dùng của liên lạc MSN bạn muốn sử dụng. Nó nên theo định dạng địa chỉ thư điện tử hợp lệ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 179
@@ -8622,13 +8454,13 @@ msgid ""
 "<br><br>If you do not currently have a Passport, please click the button to "
 "create one."
 msgstr ""
+"Để kết nối tới mạng Microsoft™, bạn cần một Microsoft Passport.<br><br> Không có thì bấm cái nút để tạo nó."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 356
 #: rc.cpp:2581
-#, fuzzy
 msgid "Use HTTP method"
-msgstr "Dùng ủy nhiệm HTTP"
+msgstr "Dùng phương pháp HTTP"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 381
@@ -8640,27 +8472,25 @@ msgstr "Dùng ủy nhiệm HTTP"
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1465
 #: rc.cpp:2590 rc.cpp:2770
 msgid "messenger.hotmail.com"
-msgstr ""
+msgstr "messenger.hotmail.com"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 393
 #: rc.cpp:2593
-#, fuzzy
 msgid "Global MSN Options"
-msgstr "Tùy chọn toàn cục"
+msgstr "Tùy chọn MSN toàn cục"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 414
 #: rc.cpp:2596
 msgid "<qt><b>Note:</b> These settings are applicable to all MSN accounts"
-msgstr ""
+msgstr "<qt><b>Ghi chú :</b> thiết lập này có thể áp dụng cho mọi tài khoản MSN"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 463
 #: rc.cpp:2611
-#, fuzzy
 msgid "Download the msn picture:"
-msgstr "Đang tải về các hình người dùng..."
+msgstr "Tải về ảnh MSN:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 506
@@ -8669,6 +8499,7 @@ msgid ""
 "MSN Messenger allows users to download and use custom emoticons. If this "
 "option is enabled, Kopete will download these emoticons and show them."
 msgstr ""
+"Trình MSN Messenger cho phép người dùng tải về và sử dụng biểu tượng xúc cảm riêng. Bật tùy chọn này thì Kopete sẽ tải về và hiển thị biểu tượng xúc cảm như vậy."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 557
@@ -8677,6 +8508,8 @@ msgid ""
 "<qt>Make it possible for your contacts to detect if you are using Kopete."
 "<br>We recommend leaving this checked.</qt>"
 msgstr ""
+"<qt>Cho phép liên lạc phát hiện bạn nếu bạn đang sử dụng Kopete."
+"<br>Khuyên bạn bật tùy chọn này.</qt>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 560
@@ -8686,13 +8519,13 @@ msgid ""
 "third party clients guess which client they are using. We recommend leaving "
 "this checkbox checked."
 msgstr ""
+"Ứng dụng khách MSN nhóm ba, như Kopete, cho người dùng có khả năng cho ứng dụng khách nhóm ba khác đoán khách nào được dùng. Khuyên bạn để lại hộp chọn này được bật."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 563
 #: rc.cpp:2651
-#, fuzzy
 msgid "Send client information"
-msgstr "Đang gửi thông tin đăng nhập..."
+msgstr "Gửi thông tin khách"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 579
@@ -8702,13 +8535,13 @@ msgid ""
 "When you are composing a message, you might want your contact to know that "
 "you are typing so that he knows you are answering.</qt>"
 msgstr ""
+"<qt>Bật để gửi <b>Thông báo đang gõ</b> cho các liên lạc. Khi bạn đang gõ tin nhẳn, bạn có thể muốn Kopete thông báo cho liên lạc, để họ biết bạn đang trả lời.</qt>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 582
 #: rc.cpp:2657
-#, fuzzy
 msgid "Send &typing notifications"
-msgstr "Thông báo Zenity"
+msgstr "Gửi &thông báo gõ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 609
@@ -8723,25 +8556,25 @@ msgid ""
 "If you have a Jabber account, you may let Jabber users on an MSN gateway "
 "know that you are also using Jabber."
 msgstr ""
+"Nếu bạn có tài khoản Jabber, bạn có thể cho các người dùng Jabber khác trên cổng ra MSN biết bạn cũng sử dụng mạng Jabber."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 612
 #: rc.cpp:2663
 msgid "Expose my Jabber account to Jabber users"
-msgstr ""
+msgstr "Cho người dùng Jabber thấy tài khoản Jabber tôi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 666
 #: rc.cpp:2669
 msgid "There are also privacy options in the \"Contacts\" tab"
-msgstr ""
+msgstr "Cũng có tùy chọn riêng tư dưới thẻ « Liên lạc »"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 696
 #: rc.cpp:2672
-#, fuzzy
 msgid "U&ser Info"
-msgstr "Thông tin người dùng"
+msgstr "Thông tin người &dùng"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 725
@@ -8756,6 +8589,7 @@ msgid ""
 "The alias you would like to use on MSN.  You may change this at any time you "
 "wish."
 msgstr ""
+"Bí danh bạn muốn sử dụng trên mạng MSN. Bạn lúc nào cũng có thể thay đổi nó."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 728
@@ -8766,80 +8600,68 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 156
 #: rc.cpp:2678 rc.cpp:3162
-#, fuzzy
 msgid "N&ickname:"
-msgstr "Tên hiệu :"
+msgstr "Tên h&iệu :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 750
 #: rc.cpp:2684
-#, fuzzy
 msgid "Phone Numbers"
 msgstr "Số điện thoại"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 774
 #: rc.cpp:2687
-#, fuzzy
 msgid "&Mobile:"
-msgstr "_Di động:"
+msgstr "&Di động:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 784
 #: rc.cpp:2690
 msgid "Hom&e:"
-msgstr ""
+msgstr "Ở &nhà:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 797
 #: rc.cpp:2693
-#, fuzzy
 msgid "&Work:"
-msgstr "Chỗ _làm:"
+msgstr "Chỗ &làm:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 816
 #: rc.cpp:2696
-#, fuzzy
 msgid "Display Picture"
-msgstr "Thiết bị hiển thị"
+msgstr "Hiển thị ảnh"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 896
 #: rc.cpp:2699
-#, fuzzy
 msgid "&Select Image..."
-msgstr ""
-"#-#-#-#-#  Compendium2.po (geany 0.11)  #-#-#-#-#\n"
-"Chọn ảnh\n"
-"#-#-#-#-#  kcmbackground.po (kcmbackground)  #-#-#-#-#\n"
-"Chọn hình ảnh"
+msgstr "&Chọn ảnh..."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 930
 #: rc.cpp:2702
 msgid "Please select a square image. The image will be scaled to 96x96."
-msgstr ""
+msgstr "Háy chọn một ảnh hình vuông. Nó cũng bị co dãn thành 96×96 điểm ảnh."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 958
 #: rc.cpp:2705
 msgid "E&xport a display picture"
-msgstr ""
+msgstr "&Xuất ảnh hiển thị"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1058
 #: rc.cpp:2708
-#, fuzzy
 msgid "WARNING: You need to be connected to modify this page."
-msgstr "Phải là người chủ để chạy chương trình này."
+msgstr "CẢNH BÁO : bạn cần phải có kết nối để sửa đổi trang này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1069
 #: rc.cpp:2711
-#, fuzzy
 msgid "Con&tacts"
-msgstr "Liên lạc"
+msgstr "&Liên lạc"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1077
@@ -8850,34 +8672,33 @@ msgid ""
 "<b>Bold</b> contacts are in your contact list but you are not in their "
 "contact list."
 msgstr ""
+"Liên lạc in <i>nghiêng</i> không nằm trong danh sách liên lạc của bạn..<br>\n"
+"<br>\n"
+"Liên lạc in <b>đậm</b> có phải nằm trong danh sách liên lạc của bạn, nhưng bạn chưa nằm trong danh sách liên lạc của họ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1104
 #: rc.cpp:2719
-#, fuzzy
 msgid "Bloc&ked contacts:"
-msgstr "Không có liên lạc"
+msgstr "Liên lạc &bị chặn:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1134
 #: rc.cpp:2722
-#, fuzzy
 msgid "&>"
-msgstr ">"
+msgstr "&>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1141
 #: rc.cpp:2725
-#, fuzzy
 msgid "&<"
-msgstr "<"
+msgstr "&<"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1166
 #: rc.cpp:2728
-#, fuzzy
 msgid "Allo&wed contacts:"
-msgstr "Mọi liên lạc"
+msgstr "Liên lạc được &phép:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1214
@@ -8886,12 +8707,13 @@ msgid ""
 "Checking this box will block all users not explicitly shown in the allowed "
 "list here, including any contacts not on your contact list."
 msgstr ""
+"Bật để chặn mọi người dùng không phải được hiển thị dứt khoát trong danh sách cho phép ở đây, gồm liên lạc nào không nằm trong danh sách liên lạc của bạn."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1217
 #: rc.cpp:2734
 msgid "Block all users not in 'Allowed' &list"
-msgstr ""
+msgstr "Chặn &mọi người dùng không trong danh sách cho phép"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1281
@@ -8902,26 +8724,23 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1284
 #: rc.cpp:2737 rc.cpp:2740
-#, fuzzy
 msgid ""
 "The reverse list is the list of contacts who added you to their own contact "
 "list."
 msgstr ""
-"Bật/tắt hiển thị các liên lác đang ngoại tuyến trong danh sách liên lạc."
+"Danh sách đảo ngược là danh sách các liên lạc đã thêm bạn vào danh sách liên lạc của họ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1287
 #: rc.cpp:2743
-#, fuzzy
 msgid "View &Reverse List"
-msgstr "Xem kiểu danh sách"
+msgstr "Xem danh sách đả&o"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1323
 #: rc.cpp:2746
-#, fuzzy
 msgid "WARNING: You need to be connected to modify this page"
-msgstr "Phải là người chủ để chạy chương trình này."
+msgstr "CẢNH BÁO : bạn cần phải có kết nối để sửa đổi trang này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1334
@@ -8932,20 +8751,14 @@ msgstr "Phải là người chủ để chạy chương trình này."
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 294
 #: rc.cpp:2749 rc.cpp:4996
-#, fuzzy
 msgid "Co&nnection"
-msgstr ""
-"#-#-#-#-#  Compendium9.po (geany 0.11)  #-#-#-#-#\n"
-"Kết nối\n"
-"#-#-#-#-#  update060107.vi.po (BitTorrent 4.2)  #-#-#-#-#\n"
-"Sự kết nối"
+msgstr "Kết &nối"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1340
 #: rc.cpp:2752
-#, fuzzy
 msgid "Connection Preferences (for advanced users)"
-msgstr "Tuỳ chọn trong Nối mạng"
+msgstr "Tùy thích Kết nối (cho người dùng cấp cao)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1517
@@ -8955,13 +8768,15 @@ msgid ""
 "This may be used to connect on a network with a restrictive firewall.\n"
 "Only check this option if the normal connection doesn't work."
 msgstr ""
+"Kết nối tới MSN Messenger bằng giao thức giống HTTP trên cổng 80.\n"
+"Có thể sử dụng tùy chọn này để kết nối trên mạng có bức tường lửa giới hạn.\n"
+"Chỉ bật tùy chọn này nếu kết nối chuẩn không hoạt động được."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1520
 #: rc.cpp:2784
-#, fuzzy
 msgid "Use &HTTP method"
-msgstr "Dùng ủy nhiệm HTTP"
+msgstr "Dùng phương pháp &HTTP"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1547
@@ -8980,13 +8795,13 @@ msgid ""
 "choose an available port for you. It is recommended to leave the checkbox "
 "unchecked."
 msgstr ""
+"Nếu bạn nằm sau tường lửa, bạn có thể xác định một cổng cơ bản để sử dụng cho kết nối gửi đến, và cấu hình tường lửa để chấp nhận kết nối trên một phạm vị 10 cổng, bắt đầu ở điều này. Knn gửi đến được dùng cho máy ảnh Mạng. Không xác định cổng thì hệ điều hành sẽ chọn một cổng sẵn sàng cho bạn. Khuyên bạn để lại hộp chọn này không có dấu."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msneditaccountui.ui line 1550
 #: rc.cpp:2790
-#, fuzzy
 msgid "S&pecify a base port for incoming webcam connections:"
-msgstr "Các giao diện nhận kết nối:"
+msgstr "Xác định cổng cơ &bản cho kết nối máy ảnh Mạng gửi đến:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 41
@@ -8997,14 +8812,12 @@ msgstr "Địa chỉ thư :"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 97
 #: rc.cpp:2802
-#, fuzzy
 msgid "Personal message:"
-msgstr "Tổng số thư :"
+msgstr "Thông điệp cá nhân:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 113
 #: rc.cpp:2805
-#, fuzzy
 msgid "Phones"
 msgstr "Điện thoại"
 
@@ -9017,22 +8830,20 @@ msgstr "Điện thoại"
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgvcard.ui line 844
 #: rc.cpp:2808 rc.cpp:4879
-#, fuzzy
 msgid "Work:"
-msgstr "Chỗ _làm:"
+msgstr "Chỗ làm:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 132
 #: rc.cpp:2811
-#, fuzzy
 msgid "Mobile:"
-msgstr "_Di động:"
+msgstr "Di động:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 170
 #: rc.cpp:2817
 msgid "Show whether you are on the contact list of this user"
-msgstr ""
+msgstr "Hiển thị nếu bạn nằm trong danh sách liên lạc của người dùng này không"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 174
@@ -9041,38 +8852,38 @@ msgid ""
 "If this box is checked, you are on this user's contact list.\n"
 "If not, the user has not added you to their list, or has removed you."
 msgstr ""
+"Hộp này được chọn thì bạn có phải nằm trong danh sách liên lạc của người dùng này.\n"
+"Không thì người dùng chưa thêm bạn vào danh sách, hoặc họ đã gỡ bỏ bạn."
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/ui/msninfo.ui line 177
 #: rc.cpp:2824
 msgid "I am on &the contact list of this contact"
-msgstr ""
+msgstr "&Tôi nằm trong danh sách liên lạc của liên lạc này"
 
 #. i18n: tag text
 #. i18n: file ./protocols/msn/msnchatui.rc line 13
 #: rc.cpp:2830
-#, fuzzy
 msgid "&Debug"
-msgstr "Gỡ lỗi"
+msgstr "Gỡ &lỗi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 57
 #: rc.cpp:2836
 msgid "&Automatically open a chat window when someone starts a conversation"
-msgstr ""
+msgstr "Tự động mở cử&a sổ trò chuyện khi người nào bắt đầu nói chuyện"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 65
 #: rc.cpp:2839
-#, fuzzy
 msgid "&Automatically download the display picture if possible"
-msgstr "_Tự động tải về và mở tập tin"
+msgstr "Tự động tả&i về ảnh hiển thị nếu có thể"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 76
 #: rc.cpp:2842
 msgid "Download and show custom emoticons (experimental)"
-msgstr ""
+msgstr "Tải về và hiển thị biểu tượng xúc cảm tự chọn (thực nghiệm)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 97
@@ -9083,16 +8894,14 @@ msgstr "Thông báo vắng mặt"
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 132
 #: rc.cpp:2849
-#, fuzzy
 msgid "Send &away messages"
-msgstr "lập thông điệp vắng mặt"
+msgstr "Gửi thông điệp &vắng mặt"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 151
 #: rc.cpp:2852
-#, fuzzy
 msgid "Do not send more than one away message every"
-msgstr "Nhập tên cho thông báo vắng mặt mới"
+msgstr "Chỉ gửi một thông điệp vắng mặt mỗi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/msn/config/msnprefs.ui line 170
@@ -9103,9 +8912,8 @@ msgstr "giây"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsuserprefs.ui line 40
 #: rc.cpp:2858
-#, fuzzy
 msgid "Some One"
-msgstr "Một số tập tin"
+msgstr "Người nào"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsuserprefs.ui line 70
@@ -9120,9 +8928,8 @@ msgstr "Một số tập tin"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 210
 #: rc.cpp:2861 rc.cpp:2988 rc.cpp:3180
-#, fuzzy
 msgid "&Telephone number:"
-msgstr "_Số điện thoại:"
+msgstr "&Số điện thoại:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsuserprefs.ui line 76
@@ -9133,9 +8940,8 @@ msgstr "_Số điện thoại:"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsuserprefs.ui line 87
 #: rc.cpp:2864 rc.cpp:2870
-#, fuzzy
 msgid "The telephone number of the contact."
-msgstr "Số điện thoại (chuỗi dạng tự do)"
+msgstr "Số điện thoại của liên lạc đó."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsuserprefs.ui line 79
@@ -9150,13 +8956,13 @@ msgid ""
 "The telephone number of the contact.  This should be a number with SMS "
 "service available."
 msgstr ""
+"Số điện thoại của liên lạc đó. Nó nên là con số cũng có dịch vụ SMS."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 25
 #: rc.cpp:2876
-#, fuzzy
 msgid "Account Preferences - SMS"
-msgstr "Tủy thích phông chữ"
+msgstr "Tủy thích tài khoản — SMS"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 82
@@ -9167,9 +8973,8 @@ msgstr "Tủy thích phông chữ"
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/gwaddui.ui line 38
 #: rc.cpp:2885 rc.cpp:5814
-#, fuzzy
 msgid "&Account name:"
-msgstr "Tên tài khoản:"
+msgstr "&Tên tài khoản:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 88
@@ -9201,16 +9006,14 @@ msgstr "Tên tài khoản:"
 #. i18n: file ./protocols/sms/ui/smsadd.ui line 112
 #: rc.cpp:2888 rc.cpp:2891 rc.cpp:2903 rc.cpp:3000 rc.cpp:3003 rc.cpp:3012
 #: rc.cpp:3015
-#, fuzzy
 msgid "A unique name for this SMS account."
-msgstr "Tên duy nhất cho hành động này."
+msgstr "Tên duy nhất cho tài khoản SMS này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 99
 #: rc.cpp:2894
-#, fuzzy
 msgid "&SMS delivery service:"
-msgstr "Chọn dịch vụ:"
+msgstr "Dịch vụ phát &SMS:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 105
@@ -9221,9 +9024,8 @@ msgstr "Chọn dịch vụ:"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 140
 #: rc.cpp:2897 rc.cpp:2906
-#, fuzzy
 msgid "The delivery service that you would like to use."
-msgstr "Hãy chọn thông tin bạn muốn nhập:"
+msgstr "Dịch vụ phát bạn muốn sử dụng."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 108
@@ -9238,26 +9040,25 @@ msgid ""
 "The delivery service that you would like to use.  Note that you will need to "
 "have this software installed prior to using this account."
 msgstr ""
+"Dịch vụ phát bạn muốn sử dụng. Ghi chú rằng bạn cũng cần phải cài đặt phần mềm này trước khi sử dụng tài khoản này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 151
 #: rc.cpp:2912
-#, fuzzy
 msgid "&Description"
-msgstr "&Mô tả:"
+msgstr "&Mô tả"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 154
 #: rc.cpp:2915
-#, fuzzy
 msgid "Description of the SMS delivery service."
-msgstr "Mô tả của mục nhập này"
+msgstr "Mô tả của dịch vụ phát SMS."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 157
 #: rc.cpp:2918
 msgid "Description of the SMS delivery service, including download locations."
-msgstr ""
+msgstr "Mô tả của dịch vụ phát SMS, gồm các địa điểm tải xuống."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 169
@@ -9279,7 +9080,7 @@ msgstr "Thông tin"
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 188
 #: rc.cpp:2924
 msgid "To use SMS, you will need an account with a delivery service."
-msgstr ""
+msgstr "Để sử dụng SMS, bạn cần một tài khoản có dịch vụ phát."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 223
@@ -9290,27 +9091,20 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 257
 #: rc.cpp:2927 rc.cpp:3333
-#, fuzzy
 msgid "A&ccount Preferences"
-msgstr "Tủy thích phông chữ"
+msgstr "Tù&y thích tài khoản"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 234
 #: rc.cpp:2930
-#, fuzzy
 msgid "Messaging Preferences"
-msgstr ""
-"#-#-#-#-#  Compendium5.po (geany 0.11)  #-#-#-#-#\n"
-"Tùy thích phiên chạy\n"
-"#-#-#-#-#  kcm_krfb.po (kcm_kfrb)  #-#-#-#-#\n"
-"Cấu hình buổi làm việc"
+msgstr "Tùy thích tin nhẳn"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 253
 #: rc.cpp:2933
-#, fuzzy
 msgid "If the message is too &long:"
-msgstr "Nhãn quá dài cho ảnh."
+msgstr "Nếu tin nhẳn quá &dài:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 259
@@ -9325,6 +9119,7 @@ msgid ""
 "What should happen if you type a message that is too long to fit in a single "
 "SMS message."
 msgstr ""
+"Cái gì nên hiện ra nếu bạn gõ vào một tin nhẳn quá dài để vừa trong một thông điệp SMS riêng lẻ?"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 262
@@ -9341,41 +9136,37 @@ msgid ""
 "automatically, cancel the message from being sent entirely, or have Kopete "
 "prompt you each time you enter a message that is too long."
 msgstr ""
+"Cái gì nên hiện ra nếu bạn gõ vào một tin nhẳn quá dài để vừa trong một thông điệp SMS riêng lẻ? Bạn có thể chọn hoặc tự động chia thông điệp dài ra nhiều thông điệp ngắn hơn, hoặc thôi gửi thông điệp, hoặc do Kopete nhắc mỗi lần bạn gõ vào thông điệp quá dài."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 268
 #: rc.cpp:2942
-#, fuzzy
 msgid "Prompt (recommended)"
-msgstr "Mặc định (khuyến khích)"
+msgstr "Nhắc (khuyến khích)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 273
 #: rc.cpp:2945
-#, fuzzy
 msgid "Break Into Multiple"
-msgstr "Bội số độ cao"
+msgstr "Chia ra nhiều"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 278
 #: rc.cpp:2948
-#, fuzzy
 msgid "Cancel Sending"
-msgstr "Thôi hợp nhau"
+msgstr "Thôi gửi"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 298
 #: rc.cpp:2957
-#, fuzzy
 msgid "&Enable phone number internationalization"
-msgstr "Các tùy chọn về ngôn ngữ tự nhiên (quốc tế hoá)."
+msgstr "Bật &quốc tế hoá số điện thoại"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 301
 #: rc.cpp:2960
-#, fuzzy
 msgid "Check if you would like to enable phone number internationalization."
-msgstr "Chọn để thêm phụ đề vào bảng."
+msgstr "Chọn để bật khả năng quốc tế hoá số điện thoại."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 304
@@ -9385,12 +9176,13 @@ msgid ""
 "Without this option, you will only be able to use SMS for accounts within "
 "your country."
 msgstr ""
+"Bật nếu bạn muốn hiệu lực khả năng quốc tế hoá số điện thoại. Không thì bạn chỉ có thể sử dụng dịch vụ SMS cho tài khoản cùng quốc gia."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 331
 #: rc.cpp:2966
 msgid "Substitute leading &zero with code:"
-msgstr ""
+msgstr "Thay thế số không đi trước bằng mã:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 337
@@ -9409,9 +9201,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 368
 #: rc.cpp:2969 rc.cpp:2972 rc.cpp:2981 rc.cpp:2984
-#, fuzzy
 msgid "What you would like to substitute a leading zero with."
-msgstr "Nếu bạn muốn cung cấp nó, hãy nhập bên dưới."
+msgstr "Bạn có muốn thay thế số không đi trước bằng gì?"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 359
@@ -9422,9 +9213,8 @@ msgstr "+"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 362
 #: rc.cpp:2978
-#, fuzzy
 msgid "1234567890+"
-msgstr "0123456789"
+msgstr "1234567890+"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsadd.ui line 60
@@ -9435,9 +9225,8 @@ msgstr "0123456789"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsadd.ui line 98
 #: rc.cpp:2991 rc.cpp:3006
-#, fuzzy
 msgid "The telephone number of the contact you would like to add."
-msgstr "Nhập địa điểm (_URI) của tập tin cần thêm:"
+msgstr "Số điện thoại của liên lạc bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsadd.ui line 63
@@ -9452,27 +9241,25 @@ msgid ""
 "The telephone number of the contact you would like to add.  This should be a "
 "number with SMS service available."
 msgstr ""
+"Số điện thoại của liên lạc bạn muốn thêm. Nó nên là con số cũng có dịch vụ SMS."
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsadd.ui line 71
 #: rc.cpp:2997
-#, fuzzy
 msgid "Contact na&me:"
-msgstr "Giờ liên lạc"
+msgstr "&Tên liên lạc:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smsclientprefs.ui line 49
 #: rc.cpp:3018
-#, fuzzy
 msgid "SMSClient Settings"
-msgstr "Thiết lập Chia tách"
+msgstr "Thiết lập SMSClient"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smsclientprefs.ui line 79
 #: rc.cpp:3021
-#, fuzzy
 msgid "SMSClient &program:"
-msgstr "Trình trò chuyện:"
+msgstr "Chương trình SMSClient:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smsclientprefs.ui line 90
@@ -9483,54 +9270,44 @@ msgstr "Trình trò chuyện:"
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smssendprefs.ui line 105
 #: rc.cpp:3024 rc.cpp:3039
-#, fuzzy
 msgid "Pro&vider:"
-msgstr "Bộ _cung cấp:"
+msgstr "Nhà c&ung cấp:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smsclientprefs.ui line 116
 #: rc.cpp:3027
 msgid "SMSClient &config path:"
-msgstr ""
+msgstr "Đường dẫn &cấu hình SMSClient:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/gsmlibprefs.ui line 49
 #: rc.cpp:3030
-#, fuzzy
 msgid "GSMLib Settings"
-msgstr "Thiết lập lưới"
+msgstr "Thiết lập GSMLib"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smssendprefs.ui line 49
 #: rc.cpp:3036
-#, fuzzy
 msgid "SMSSend Options"
-msgstr ""
-"#-#-#-#-#  Compendium8.po (geany 0.11)  #-#-#-#-#\n"
-"Tùy chọn gửi\n"
-"#-#-#-#-#  vi.po (gerstensaft)  #-#-#-#-#\n"
-"Tùy chọn gửi"
+msgstr "Tùy chọn SMSSend"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smssendprefs.ui line 124
 #: rc.cpp:3042
-#, fuzzy
 msgid "SMSSend prefi&x:"
-msgstr "Tiền tố tên tập tin:"
+msgstr "T&iền tố SMSSend:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/sms/services/smssendprefs.ui line 159
 #: rc.cpp:3045
-#, fuzzy
 msgid "Provider Options"
-msgstr "Tùy chọn nét hiện trạng"
+msgstr "Tùy chọn nhà cung cấp"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 16
 #: rc.cpp:3048
-#, fuzzy
 msgid "Register Account - Gadu-Gadu"
-msgstr "Đăng ký tài khoản"
+msgstr "Đăng ký tài khoản — Gadu-Gadu"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 66
@@ -9541,9 +9318,8 @@ msgstr "Đăng ký tài khoản"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 247
 #: rc.cpp:3051 rc.cpp:3105
-#, fuzzy
 msgid "A confirmation of the password you would like to use."
-msgstr "Nhập địa điểm (URI) của tập tin cần mở :"
+msgstr "Xác nhận mật khẩu bạn muốn sử dụng."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 69
@@ -9554,14 +9330,12 @@ msgstr "Nhập địa điểm (URI) của tập tin cần mở :"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 250
 #: rc.cpp:3054 rc.cpp:3108
-#, fuzzy
 msgid "A confirmation of the password you would like to use for this account."
-msgstr "Hãy nhập vào đây tên nên xuất hiện cho cái nút này."
+msgstr "Việc xác nhận mật khẩu bạn muốn sử dụng cho tài khoản này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 72
 #: rc.cpp:3057
-#, fuzzy
 msgid "Repeat pass&word:"
 msgstr "Gõ &lại mật khẩu :"
 
@@ -9574,9 +9348,8 @@ msgstr "Gõ &lại mật khẩu :"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 231
 #: rc.cpp:3060 rc.cpp:3096
-#, fuzzy
 msgid "The password you would like to use."
-msgstr "Bạn có muốn sử dụng mật khẩu nào?"
+msgstr "Mật khẩu bạn muốn sử dụng."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 85
@@ -9587,9 +9360,8 @@ msgstr "Bạn có muốn sử dụng mật khẩu nào?"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 234
 #: rc.cpp:3063 rc.cpp:3099
-#, fuzzy
 msgid "The password you would like to use for this account."
-msgstr "Hãy nhập vào đây tên nên xuất hiện cho cái nút này."
+msgstr "Mật khẩu bạn muốn sử dụng cho tài khoản này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 95
@@ -9600,9 +9372,8 @@ msgstr "Hãy nhập vào đây tên nên xuất hiện cho cái nút này."
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 132
 #: rc.cpp:3066 rc.cpp:3072
-#, fuzzy
 msgid "Your E-mail address."
-msgstr "Địa chỉ thư điện tử của bạn"
+msgstr "Địa chỉ thư điện tử của bạn."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 98
@@ -9614,14 +9385,13 @@ msgstr "Địa chỉ thư điện tử của bạn"
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 135
 #: rc.cpp:3069 rc.cpp:3075
 msgid "The E-mail address you would like to use to register this account."
-msgstr ""
+msgstr "Địa chỉ thư điện tử bạn muốn sử dụng để đăng ký tài khoản này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 138
 #: rc.cpp:3078
-#, fuzzy
 msgid "&E-Mail address:"
-msgstr "Địa &chỉ mail:"
+msgstr "Đị&a chỉ thư :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 178
@@ -9632,9 +9402,8 @@ msgstr "Địa &chỉ mail:"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 194
 #: rc.cpp:3081 rc.cpp:3090
-#, fuzzy
 msgid "The text from the image below."
-msgstr "Nhập tên cho ảnh bên dưới:"
+msgstr "Văn bản từ ảnh bên dưới."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 181
@@ -9649,13 +9418,13 @@ msgid ""
 "The text from the image below.  This is used to prevent abusive automated "
 "registration scripts."
 msgstr ""
+"Văn bản từ ảnh bên dưới. Nó được dùng để ngăn cản văn lệnh tự động đăng ký gây tai hại."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 184
 #: rc.cpp:3087
-#, fuzzy
 msgid "&Verification sequence:"
-msgstr "URL thẩm tra"
+msgstr "Dã&y thẩm tra:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 237
@@ -9666,9 +9435,8 @@ msgstr "&Mật khẩu :"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 306
 #: rc.cpp:3111
-#, fuzzy
 msgid "Gadu-Gadu registration token."
-msgstr "Khoá đăng ký"
+msgstr "Hiệu bài đăng ký Gadu-Gadu."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 309
@@ -9677,6 +9445,7 @@ msgid ""
 "This field contains an image with number that you need to type into the "
 "<b>Verification Sequence</b> field above."
 msgstr ""
+"Trường nảy chứa một ảnh có con số bạn cần gõ vào trường <b>Dãy thẩm tra</b> bên trên."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduregisteraccountui.ui line 351
@@ -9686,6 +9455,7 @@ msgid ""
 "<b>Verification Sequence</b> field.  This is used to prevent automated "
 "registration abuse.</i>"
 msgstr ""
+"<i>Hãy gõ vào trường <b>Dãy thẩm tra</b> chuỗi chữ/số được hiển thị trong ảnh bên trên. Tiến trình này ngăn cản sự lạm dụng kiểu tự động đăng ký.</i>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 41
@@ -9697,7 +9467,7 @@ msgstr ""
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 66
 #: rc.cpp:3120 rc.cpp:3129
 msgid "The user ID of the Gadu-Gadu account you would like to add."
-msgstr ""
+msgstr "ID người dùng của tài khoản Gadu-Gadu bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 44
@@ -9712,6 +9482,7 @@ msgid ""
 "The user ID of the Gadu-Gadu account you would like to add.  This should be "
 "in the form of a number (no decimals, no spaces).  This field is mandatory."
 msgstr ""
+"ID người dùng của tài khoản Gadu-Gadu bạn muốn thêm. Nó nên có dạng con số nguyên (không có thập phân, không có dấu cách). Phải điền vào trường này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 47
@@ -9722,15 +9493,14 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 88
 #: rc.cpp:3126 rc.cpp:3302
-#, fuzzy
 msgid "Gadu-Gadu &UIN:"
-msgstr "Name=Gadu-Gadu"
+msgstr "Gadu-Gadu &UIN:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 78
 #: rc.cpp:3135
 msgid "<i>(for example: 1234567)</i>"
-msgstr ""
+msgstr "<i>(v.d.: 1234567)</i>"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 107
@@ -9741,9 +9511,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 233
 #: rc.cpp:3138 rc.cpp:3183
-#, fuzzy
 msgid "The forename of the contact you wish to add."
-msgstr "Tên tập tin sắc thái cần dùng."
+msgstr "Tên của liên lạc bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 110
@@ -9758,13 +9527,13 @@ msgid ""
 "The forename (first name) of the contact you wish to add.  Optionally this "
 "may include a middle name."
 msgstr ""
+"Tên của liên lạc bạn muốn thêm. Tên này cũng có thể chứa tên đệm, v.d. « Mình » hay « Văn Mình »."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 113
 #: rc.cpp:3144
-#, fuzzy
 msgid "&Forename:"
-msgstr "&Tên tập tin:"
+msgstr "&Tên:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 126
@@ -9775,9 +9544,8 @@ msgstr "&Tên tập tin:"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 246
 #: rc.cpp:3147 rc.cpp:3189
-#, fuzzy
 msgid "The surname of the contact you wish to add."
-msgstr "Nhập tên của nhóm sẽ thêm:"
+msgstr "Họ của liên lạc bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 129
@@ -9789,14 +9557,13 @@ msgstr "Nhập tên của nhóm sẽ thêm:"
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 249
 #: rc.cpp:3150 rc.cpp:3192
 msgid "The surname (last name) of the contact you wish to add."
-msgstr ""
+msgstr "Họ của liên lạc bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 132
 #: rc.cpp:3153
-#, fuzzy
 msgid "&Surname:"
-msgstr "không tên"
+msgstr "&Họ :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 150
@@ -9816,7 +9583,7 @@ msgstr "không tên"
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 259
 #: rc.cpp:3156 rc.cpp:3159 rc.cpp:3195 rc.cpp:3198
 msgid "A nickname for the contact you wish to add."
-msgstr ""
+msgstr "Tên hiệu cho liên lạc bạn muốn thêm."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 177
@@ -9852,15 +9619,14 @@ msgstr ""
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 285
 #: rc.cpp:3165 rc.cpp:3168 rc.cpp:3174 rc.cpp:3177 rc.cpp:3201 rc.cpp:3204
 #: rc.cpp:3207 rc.cpp:3210
-#, fuzzy
 msgid "E-Mail address for this contact."
-msgstr "Địa chỉ thư của liên lạc"
+msgstr "Địa chỉ thư điện tử cho liên lạc này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 183
 #: rc.cpp:3171
 msgid "&Email address:"
-msgstr "Địa chỉ &email:"
+msgstr "Đị&a chỉ thư :"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 299
@@ -9871,17 +9637,16 @@ msgstr "Địa chỉ &email:"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 302
 #: rc.cpp:3213 rc.cpp:3216
-#, fuzzy
 msgid ""
 "Check if you want to exclude this contact from the \"Just for friends\" "
 "status mode."
-msgstr "Bạn có muốn gỡ bỏ liên lạc này ra bản liệt kê không?"
+msgstr "Bật nếu bạn muốn loại trừ liên lạc này ra chế độ trạng thái « Chỉ bạn bè »."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 305
 #: rc.cpp:3219
 msgid "Offline to contact when you set \"&Just for friends\""
-msgstr ""
+msgstr "Ngoại tuyến với liên lạc khi bạn đặt « Chỉ &bạn bè »"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduadd.ui line 313
@@ -9892,9 +9657,8 @@ msgstr "Nhóm"
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 19
 #: rc.cpp:3225 protocols/gadu/gaduaway.cpp:39
-#, fuzzy
 msgid "Away Dialog"
-msgstr "Mở hộp thoại mới"
+msgstr "Hộp thoại Vắng mặt"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 41
@@ -9904,12 +9668,15 @@ msgid ""
 "So all you need to do is just to type in your description. \n"
 "Choosing Offline status will disconnect you, with given description."
 msgstr ""
+"Cn trạng thái: mặc định là trạng thái hiện thời được chọn.\n"
+"Vậy bạn chỉ cần gõ vào mô tả.\n"
+"Việc chọn trạng thái « Ngoại tuyến » sẽ ngắt kết nối, với mô tả đã xác định."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 67
 #: rc.cpp:3236
 msgid "Set your status to Online."
-msgstr ""
+msgstr "Đặt trạng thái thành Trực tuyến."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 70
@@ -9918,21 +9685,21 @@ msgid ""
 "Set your status to Online, indicating that you are available to chat with "
 "anyone who wishes."
 msgstr ""
+"Đặt trạng thái của bạn thành « Trực tuyến », ngụ ý rằng bạn hiện thời sẵn sàng để trò chuyện với người khác."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 73
 #: rc.cpp:3242 protocols/qq/qqprotocol.cpp:35 protocols/msn/msnprotocol.cpp:51
 #: protocols/oscar/aim/aimstatusmanager.cpp:79
 #: protocols/oscar/icq/icqstatusmanager.cpp:86
-#, fuzzy
 msgid "O&nline"
-msgstr "Trực tuyến"
+msgstr "Trực tuyế&n"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 80
 #: rc.cpp:3245
 msgid "Set your status to busy."
-msgstr ""
+msgstr "Đặt trạng thái thành Bận."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 83
@@ -9941,6 +9708,7 @@ msgid ""
 "Set your status to busy, indicating that you may should not be bothered with "
 "trivial chat, and may not be able to reply immediately."
 msgstr ""
+"Đặt trạng thái của bạn thành « Bận », ngụ ý rằng bạn không có rảnh trò chuyện không đáng kể, cũng không thể trả lời ngay."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 93
@@ -9948,6 +9716,7 @@ msgstr ""
 msgid ""
 "Set status to invisible, which will hide your presence from other users."
 msgstr ""
+"Đặt trạng thái thành Vô hình, ẩn mặt"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 96
@@ -9957,6 +9726,7 @@ msgid ""
 "will see you as offline).  However you may still chat, and see the online "
 "presence of others."
 msgstr ""
+"Đặt trạng thái của bạn thành « Vô hình » thì ẩn mặt (người khác sẽ thấy bạn ngoại tuyến). Tuy nhiên, bạn vẫn còn có khả năng trò chuyện và thấy sự có mặt trực tuyến của người khác."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 106
@@ -9968,7 +9738,7 @@ msgstr ""
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 109
 #: rc.cpp:3263 rc.cpp:3266
 msgid "Choose this status to disconnect with description entered below."
-msgstr ""
+msgstr "Chọn trạng thái này để ngắt kết nối với mô tả được nhập vào bên dưới."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 132
@@ -9979,9 +9749,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 151
 #: rc.cpp:3272 rc.cpp:3281
-#, fuzzy
 msgid "Description of your status."
-msgstr "Mô tả sở thích."
+msgstr "Mô tả trạng thái của bạn."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 135
@@ -9993,21 +9762,19 @@ msgstr "Mô tả sở thích."
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 154
 #: rc.cpp:3275 rc.cpp:3284
 msgid "Description of your status (up to 70 characters)."
-msgstr ""
+msgstr "Mô tả của trạng thái của bạn (đến 70 ký tự)."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 138
 #: rc.cpp:3278
-#, fuzzy
 msgid "&Message:"
-msgstr "Thông điệp:"
+msgstr "&Thông điệp:"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 24
 #: rc.cpp:3287
-#, fuzzy
 msgid "Account Preferences - Gadu-Gadu"
-msgstr "Tủy thích phông chữ"
+msgstr "Tủy thích tài khoản — Gadu-Gadu"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 82
@@ -10019,7 +9786,7 @@ msgstr "Tủy thích phông chữ"
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 101
 #: rc.cpp:3296 rc.cpp:3305
 msgid "The user ID of your Gadu-Gadu account."
-msgstr ""
+msgstr "ID người dùng của tài khoản Gadu-Gadu của bạn."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 85
@@ -10034,6 +9801,7 @@ msgid ""
 "The user ID of your Gadu-Gadu account.  This should be in the form of a "
 "number (no decimals, no spaces)."
 msgstr ""
+"ID người dùng của tài khoản Gadu-Gadu của bạn. Nó nên là con số nguyên (không có thập phân, không có dấu cách)."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 137
@@ -10042,6 +9810,7 @@ msgid ""
 "Check to disable automatic connection.  If checked, you may connect to this "
 "account manually using the icon in the bottom of the main Kopete window."
 msgstr ""
+"Nhấn vào để tắt khả năng tự động kết nối. Vì thế bạn có thể tự kết nối đến tài khoản này bằng biểu tượng ở dưới cửa sổ Kopete chính."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 177
@@ -10052,6 +9821,8 @@ msgid ""
 "If you do not currently have an account, please click the button to create "
 "one."
 msgstr ""
+"Để kết nối tới mạng Gadu-Gadu, bạn cần một tài khoản Gadu-Gadu.<br><br>\n"
+"Không có thì nhấn vào cái nút này để tạo tài khoản."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 198
@@ -10078,9 +9849,8 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./protocols/jabber/ui/dlgjabbereditaccountwidget.ui line 171
 #: rc.cpp:3324 rc.cpp:3327 rc.cpp:4530 rc.cpp:4533 rc.cpp:4975 rc.cpp:4978
-#, fuzzy
 msgid "Register a new account on this network."
-msgstr "_Đăng ký tài khoản mới"
+msgstr "Đăng ký tài khoản mới trên mạng này."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 284
@@ -10089,6 +9859,7 @@ msgid ""
 "Cache connection information for each server connected to in case the main "
 "load-balancing server fails."
 msgstr ""
+"Nhớ tạm thông tin kết nối cho mỗi máy phục vụ được kết nối, trong trường hợp máy phục vụ cán cân trọng tải chính thất bại."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 287
@@ -10100,27 +9871,25 @@ msgid ""
 "errors when the main load-balancing server does not answer. In practice it "
 "only helps very rarely."
 msgstr ""
+"Tùy chọn này được dùng khi nào máy phục vụ cán cân trọng tải Gadu-Gadu chính thất bại. Bật thì Kopete sẽ thử kết nối trực tiếp tới những máy phục vụ thật, dùng thông tin đã nhớ tạm về chúng. Vì thế ngăn cản lỗi kết nối khi máy phục vụ cán cân trọng tải chính không đáp ứng. Trong thực tế nó rất ít giúp đỡ."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 290
 #: rc.cpp:3345
-#, fuzzy
 msgid "C&ache server information"
-msgstr "Thông tin máy phục vụ"
+msgstr "Nhớ tạm thông tin máy phục &vụ"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 303
 #: rc.cpp:3348
-#, fuzzy
 msgid "&Use direct connections (DCC)"
-msgstr "Dùng kết nối _an toàn:"
+msgstr "&Dùng kết nối trực tiếp (DCC)"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 316
 #: rc.cpp:3351
-#, fuzzy
 msgid "Ignore people off your contact list"
-msgstr "%s muốn được thêm vào danh sách liên lạc của bạn."
+msgstr "Bỏ qua người không trong danh sách liên lạc"
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 337
@@ -10131,11 +9900,10 @@ msgstr "%s muốn được thêm vào danh sách liên lạc của bạn."
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 353
 #: rc.cpp:3354 rc.cpp:3363
-#, fuzzy
 msgid ""
 "Whether or not you want to enable SSL encrypted communication with the "
 "server."
-msgstr "Có nên đóng các kết nối đang mở khi trình phục vụ được đóng."
+msgstr "Có nên hiệu lực khả năng liên lạc đã mật mã SSL với máy phục vụ hay không."
 
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gadueditaccountui.ui line 340

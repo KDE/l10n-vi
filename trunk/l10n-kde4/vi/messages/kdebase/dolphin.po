@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-12 04:47+0200\n"
+"POT-Creation-Date: 2007-07-13 05:26+0200\n"
 "PO-Revision-Date: 2007-06-25 16:30+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -141,7 +141,9 @@ msgctxt "@action:inmenu"
 msgid "Bookmark Folder..."
 msgstr "Thư mục Liên kết lưu..."
 
-#: dolphincontextmenu.cpp:225
+#. i18n: tag text
+#. i18n: file ./dolphinui.rc line 20
+#: dolphincontextmenu.cpp:225 rc.cpp:3
 #, fuzzy
 #| msgid "View Mode"
 msgctxt "@title:menu"
@@ -688,6 +690,7 @@ msgstr "Chia ra"
 #: dolphinpart.cpp:97
 #, fuzzy
 #| msgid "Dolphin"
+msgctxt "@info"
 msgid "Dolphin Part"
 msgstr "Dolphin"
 
@@ -739,7 +742,7 @@ msgstr "Địa điểm « %1 » không hợp lệ."
 #: dolphinviewcontainer.cpp:282
 #, fuzzy
 #| msgid "Loading folder..."
-msgctxt "@status:progress"
+msgctxt "@info:progress"
 msgid "Loading folder..."
 msgstr "Đang nạp thư mục..."
 
@@ -905,7 +908,7 @@ msgstr "Đổi cỡ biểu tượng và ô xem thử"
 #, fuzzy
 #| msgctxt "Size"
 #| msgid "Small"
-msgctxt "@label:inrange Size"
+msgctxt "@item:inrange Size"
 msgid "Small"
 msgstr "Nhỏ"
 
@@ -913,7 +916,7 @@ msgstr "Nhỏ"
 #, fuzzy
 #| msgctxt "Size"
 #| msgid "Large"
-msgctxt "@label:inrange Size"
+msgctxt "@item:inrange Size"
 msgid "Large"
 msgstr "Lớn"
 
@@ -946,17 +949,26 @@ msgid "Text width:"
 msgstr "Rộng văn bản:"
 
 #: iconsviewsettingspage.cpp:79
-msgctxt "Text width"
+#, fuzzy
+#| msgctxt "Size"
+#| msgid "Small"
+msgctxt "@item:inlistbox Text width"
 msgid "Small"
 msgstr "Nhỏ"
 
 #: iconsviewsettingspage.cpp:80
-msgctxt "Text width"
+#, fuzzy
+#| msgctxt "Size"
+#| msgid "Medium"
+msgctxt "@item:inlistbox Text width"
 msgid "Medium"
 msgstr "Vừa"
 
 #: iconsviewsettingspage.cpp:81
-msgctxt "Text width"
+#, fuzzy
+#| msgctxt "Size"
+#| msgid "Large"
+msgctxt "@item:inlistbox Text width"
 msgid "Large"
 msgstr "Lớn"
 
@@ -1020,7 +1032,10 @@ msgid "Large"
 msgstr "Lớn"
 
 #: infosidebarpage.cpp:181
-#, qt-format
+#, fuzzy, qt-format
+#| msgid "%1 item selected"
+#| msgid_plural "%1 items selected"
+msgctxt "@info"
 msgid "%1 item selected"
 msgid_plural "%1 items selected"
 msgstr[0] "%1 mục đã chọn"
@@ -1035,7 +1050,7 @@ msgstr "Kiểu :"
 #: infosidebarpage.cpp:275
 #, fuzzy
 #| msgid "Folder"
-msgctxt "@info"
+msgctxt "@label"
 msgid "Folder"
 msgstr "Thư mục"
 
@@ -1190,38 +1205,47 @@ msgid "Tags:"
 msgstr "Thẻ:"
 
 #. i18n: tag text
-#. i18n: file ./dolphinui.rc line 20
-#: rc.cpp:3
-msgid "View Mode"
-msgstr "Chế độ xem"
-
-#. i18n: tag text
 #. i18n: file ./dolphinui.rc line 26
 #: rc.cpp:6
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@title:menu"
 msgid "Sort"
 msgstr "Sắp xếp"
 
 #. i18n: tag text
 #. i18n: file ./dolphinui.rc line 40
 #: rc.cpp:9
+#, fuzzy
+#| msgid "Additional Information"
+msgctxt "@title:menu"
 msgid "Additional Information"
 msgstr "Thông tin thêm"
 
 #. i18n: tag text
 #. i18n: file ./dolphinui.rc line 55
 #: rc.cpp:12
+#, fuzzy
+#| msgid "Panels"
+msgctxt "@title:menu"
 msgid "Panels"
 msgstr "Bảng"
 
 #. i18n: tag text
 #. i18n: file ./dolphinui.rc line 62
 #: rc.cpp:15
+#, fuzzy
+#| msgid "Navigation Bar"
+msgctxt "@title:menu"
 msgid "Navigation Bar"
 msgstr "Thanh duyệt qua"
 
 #. i18n: tag text
 #. i18n: file ./dolphinui.rc line 113
 #: rc.cpp:18
+#, fuzzy
+#| msgid "Main Toolbar"
+msgctxt "@title:menu"
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
 
@@ -1260,20 +1284,23 @@ msgctxt "@info:status"
 msgid "New name #"
 msgstr "Tên mới #"
 
-#: renamedialog.cpp:61
-#, qt-format
+#: renamedialog.cpp:62
+#, fuzzy, qt-format
+#| msgid "Rename the %1 selected item to:"
+#| msgid_plural "Rename the %1 selected items to:"
+msgctxt "@label:textbox"
 msgid "Rename the %1 selected item to:"
 msgid_plural "Rename the %1 selected items to:"
 msgstr[0] "Thay đổi %1 mục đã chọn thành:"
 
-#: renamedialog.cpp:103
+#: renamedialog.cpp:104
 #, fuzzy
 #| msgid "(# will be replaced by ascending numbers)"
 msgctxt "@info"
 msgid "(# will be replaced by ascending numbers)"
 msgstr "(# bị thay thế bằng số tăng dần)"
 
-#: renamedialog.cpp:117
+#: renamedialog.cpp:118
 #, fuzzy
 #| msgid ""
 #| "The new name is empty. A name with at least one character must be entered."
@@ -1282,7 +1309,7 @@ msgid ""
 "The new name is empty. A name with at least one character must be entered."
 msgstr "Tên mới rỗng. Cần phải nhập vào tên chứa ít nhất một ký tự."
 
-#: renamedialog.cpp:120
+#: renamedialog.cpp:121
 #, fuzzy
 #| msgid "The name must contain exactly one # character."
 msgctxt "@info:status"
@@ -1635,6 +1662,35 @@ msgstr "Chi tiết"
 msgctxt "@title:tab"
 msgid "Column"
 msgstr "Cột"
+
+#, fuzzy
+#~| msgctxt "Size"
+#~| msgid "Small"
+#~ msgctxt "@label:inrange Size"
+#~ msgid "Small"
+#~ msgstr "Nhỏ"
+
+#, fuzzy
+#~| msgctxt "Size"
+#~| msgid "Large"
+#~ msgctxt "@label:inrange Size"
+#~ msgid "Large"
+#~ msgstr "Lớn"
+
+#~ msgctxt "Text width"
+#~ msgid "Small"
+#~ msgstr "Nhỏ"
+
+#~ msgctxt "Text width"
+#~ msgid "Medium"
+#~ msgstr "Vừa"
+
+#~ msgctxt "Text width"
+#~ msgid "Large"
+#~ msgstr "Lớn"
+
+#~ msgid "View Mode"
+#~ msgstr "Chế độ xem"
 
 #~ msgctxt "Size"
 #~ msgid "Small"

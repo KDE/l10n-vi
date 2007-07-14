@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-07-11 07:35+0200\n"
+"POT-Creation-Date: 2007-07-14 08:21+0200\n"
 "PO-Revision-Date: 2007-07-07 21:07+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -1097,7 +1097,7 @@ msgstr "Sổ tay digiKam"
 msgid "Color Profile Info"
 msgstr "Thông tin hồ sơ màu"
 
-#: digikam/digikamapp.cpp:1551
+#: digikam/digikamapp.cpp:1577
 #: libs/greycstoration/greycstorationwidget.cpp:131
 #: showfoto/setup/setup.cpp:94
 #: utilities/imageeditor/editor/editorwindow.cpp:611
@@ -1801,7 +1801,7 @@ msgstr ""
 "<p>Nhấn và kéo con trỏ chuột trong hình chữ nhật màu đỏ để thay đổi tiêu điểm "
 "trích."
 
-#: digikam/digikamapp.cpp:1861
+#: digikam/digikamapp.cpp:1887
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:344
 #: utilities/lighttable/lighttablewindow.cpp:1202
 #: utilities/lighttable/lighttablewindow.cpp:1225
@@ -3400,45 +3400,52 @@ msgstr "Cập nhật cơ sở dữ liệu siêu dữ liệu..."
 msgid "Loading cameras"
 msgstr "Đang tải máy ảnh..."
 
-#: digikam/digikamapp.cpp:1186
-msgid "No item selected"
+#: digikam/digikamapp.cpp:1192
+#, fuzzy
+msgid "No item selected (out of %1)"
 msgstr "Chưa chọn mục"
 
-#: digikam/digikamapp.cpp:1192
-msgid "%1 items selected"
+#: digikam/digikamapp.cpp:1209 showfoto/showfoto.cpp:787
+#: utilities/imageeditor/editor/imagewindow.cpp:684
+msgid " (%2 of %3)"
+msgstr " (%2 trên %3)"
+
+#: digikam/digikamapp.cpp:1216
+#, fuzzy
+msgid "%1 items selected (out of %2)"
 msgstr "%1 mục đã chọn"
 
-#: digikam/digikamapp.cpp:1335
+#: digikam/digikamapp.cpp:1361
 #, c-format
 msgid "Browse %1"
 msgstr "Duyệt %1"
 
-#: digikam/digikamapp.cpp:1348
+#: digikam/digikamapp.cpp:1374
 #, c-format
 msgid "Images found in %1"
 msgstr "Ảnh được tìm trong %1"
 
-#: digikam/digikamapp.cpp:1409
+#: digikam/digikamapp.cpp:1435
 msgid "No media devices found"
 msgstr "Không tìm thấy thiết bị ảnh/nhạc"
 
-#: digikam/digikamapp.cpp:1649
+#: digikam/digikamapp.cpp:1675
 msgid "Loading Kipi Plugins"
 msgstr "Đang nạp các phần bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:1761
+#: digikam/digikamapp.cpp:1787
 msgid "Browse Media"
 msgstr "Duyệt qua vật chứa"
 
-#: digikam/digikamapp.cpp:1765
+#: digikam/digikamapp.cpp:1791
 msgid "Add Camera..."
 msgstr "Thêm máy ảnh.."
 
-#: digikam/digikamapp.cpp:1774
+#: digikam/digikamapp.cpp:1800
 msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
-#: digikam/digikamapp.cpp:1803
+#: digikam/digikamapp.cpp:1829
 msgid ""
 "Rebuilding all image thumbnails can take some time.\n"
 "Do you want to continue?"
@@ -3446,7 +3453,7 @@ msgstr ""
 "Tiến trình xây dựng lại mọi ảnh mẫu của ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:1824
+#: digikam/digikamapp.cpp:1850
 msgid ""
 "Updating the metadata database can take some time. \n"
 "Do you want to continue?"
@@ -3454,7 +3461,7 @@ msgstr ""
 "Tiến trình cập nhật cơ sở dữ liệu siêu dữ liệu có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:1855
+#: digikam/digikamapp.cpp:1881
 #, c-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
@@ -3936,10 +3943,6 @@ msgstr ""
 #: showfoto/showfoto.cpp:593
 msgid "Open Images"
 msgstr "Mở ảnh"
-
-#: showfoto/showfoto.cpp:787 utilities/imageeditor/editor/imagewindow.cpp:684
-msgid " (%2 of %3)"
-msgstr " (%2 trên %3)"
 
 #: showfoto/showfoto.cpp:871
 msgid "There are no pictures in this folder."

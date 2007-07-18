@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-17 06:01+0200\n"
+"POT-Creation-Date: 2007-07-18 05:32+0200\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -523,11 +523,11 @@ msgstr "Bạn không có quyền thực hiện lệnh « %1 »."
 msgid "Command Error"
 msgstr "Lỗi lệnh"
 
-#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1023
+#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1027
 msgid "No Message"
 msgstr "Không có thông điệp"
 
-#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1017
+#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1021
 msgid "New Message..."
 msgstr "Thông điệp mới..."
 
@@ -1036,7 +1036,7 @@ msgstr "Trực tuyến kể từ"
 msgid "Last Seen"
 msgstr "Gặp cuối"
 
-#: libkopete/kopeteglobal.cpp:139 kopete/kopetewindow.cpp:1000
+#: libkopete/kopeteglobal.cpp:139 kopete/kopetewindow.cpp:1004
 #: protocols/meanwhile/meanwhileprotocol.cpp:62
 msgid "Status Message"
 msgstr "Thông điệp trạng thái"
@@ -1262,7 +1262,7 @@ msgstr "Hiển thị hay giấu danh sách liên lạc"
 msgid "Set Away/Back"
 msgstr "Đặt Vắng mặt/Trở về"
 
-#: kopete/kopetewindow.cpp:665
+#: kopete/kopetewindow.cpp:669
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
@@ -1270,11 +1270,11 @@ msgstr ""
 "<qt>Việc đóng cửa sổ chính sẽ để lại trình Kopete chạy trên khay hệ thống. "
 "Dùng mục « Thoát » trong trình đơn « Tập tin » để thoát khỏi ứng dụng.</qt>"
 
-#: kopete/kopetewindow.cpp:667
+#: kopete/kopetewindow.cpp:671
 msgid "Docking in System Tray"
 msgstr "Thả neo trên khay hệ thống"
 
-#: kopete/kopetewindow.cpp:887
+#: kopete/kopetewindow.cpp:891
 #, qt-format
 msgctxt ""
 "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</i>)"
@@ -1284,11 +1284,11 @@ msgid ""
 msgstr ""
 "<nobr><img src=\"kopete-account-icon:%3:%4\"> <b>%1:</b> %2 (<i>%5</i>)<br/>"
 
-#: kopete/kopetewindow.cpp:1006
+#: kopete/kopetewindow.cpp:1010
 msgid "Add "
 msgstr "Thêm "
 
-#: kopete/kopetewindow.cpp:1081
+#: kopete/kopetewindow.cpp:1085
 #: kopete/contactlist/kopetecontactlistview.cpp:1772
 msgid "Add Contact"
 msgstr "Thêm liên lạc"
@@ -1845,8 +1845,12 @@ msgstr "Mới cài đặt."
 
 #: kopete/config/chatwindow/chatwindowconfig.cpp:118
 #: kopete/config/chatwindow/chatwindowconfig.cpp:348
+#, fuzzy
+#| msgid ""
+#| "The specified archive cannot be openned.\n"
+#| "Make sure that the archive is valid ZIP or TAR archive."
 msgid ""
-"The specified archive cannot be openned.\n"
+"The specified archive cannot be opened.\n"
 "Make sure that the archive is valid ZIP or TAR archive."
 msgstr ""
 "Không thể mở kho nén đã xác định.\n"
@@ -1904,7 +1908,9 @@ msgid "Choose Chat Window style to install."
 msgstr "Chọn kiểu dáng Cửa sổ Trò chuyện cần cài đặt."
 
 #: kopete/config/chatwindow/chatwindowconfig.cpp:361
-msgid "The Chat Window style was successfully installed !"
+#, fuzzy
+#| msgid "The Chat Window style was successfully installed !"
+msgid "The Chat Window style was successfully installed!"
 msgstr "Kiểu dáng Cửa sổ Trò chuyện đã được cài đặt."
 
 #: kopete/config/chatwindow/chatwindowconfig.cpp:461
@@ -2716,8 +2722,20 @@ msgstr "Canh &phải"
 msgid "&Justify"
 msgstr "&Canh đều"
 
-#: kopete/chatwindow/sidebarwidget.cpp:52
-msgid "Informations"
+#. i18n: tag string
+#. i18n: file ./protocols/sms/ui/smsactprefs.ui line 169
+#. i18n: tag string
+#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 118
+#. i18n: tag string
+#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 325
+#. i18n: tag string
+#. i18n: file ./protocols/sms/ui/smsactprefs.ui line 169
+#. i18n: tag string
+#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 118
+#. i18n: tag string
+#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 325
+#: kopete/chatwindow/sidebarwidget.cpp:52 rc.cpp:2917 rc.cpp:5334 rc.cpp:5363
+msgid "Information"
 msgstr "Thông tin"
 
 #: kopete/chatwindow/sidebarwidget.cpp:56
@@ -9443,22 +9461,6 @@ msgid "Description of the SMS delivery service, including download locations."
 msgstr "Mô tả của dịch vụ phát SMS, gồm các địa điểm tải xuống."
 
 #. i18n: tag string
-#. i18n: file ./protocols/sms/ui/smsactprefs.ui line 169
-#. i18n: tag string
-#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 118
-#. i18n: tag string
-#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 325
-#. i18n: tag string
-#. i18n: file ./protocols/sms/ui/smsactprefs.ui line 169
-#. i18n: tag string
-#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 118
-#. i18n: tag string
-#. i18n: file ./protocols/winpopup/ui/wpeditaccountbase.ui line 325
-#: rc.cpp:2917 rc.cpp:5334 rc.cpp:5363
-msgid "Information"
-msgstr "Thông tin"
-
-#. i18n: tag string
 #. i18n: file ./protocols/sms/ui/smsactprefs.ui line 188
 #: rc.cpp:2920
 msgid "To use SMS, you will need an account with a delivery service."
@@ -14303,7 +14305,9 @@ msgstr "Mô tả chung của phòng trò chuyện"
 #. i18n: tag string
 #. i18n: file ./protocols/groupwise/ui/gwchatpropswidget.ui line 186
 #: rc.cpp:5717
-msgid "Maximum simiultaneous users allowed in the chatroom"
+#, fuzzy
+#| msgid "Maximum simiultaneous users allowed in the chatroom"
+msgid "Maximum simultaneous users allowed in the chatroom"
 msgstr "Số tối đa các người dùng được phép trong phòng trò chuyện cùng lúc"
 
 #. i18n: tag string
@@ -14745,7 +14749,7 @@ msgstr ""
 #: plugins/cryptography/cryptographypreferences.cpp:51
 #, fuzzy
 #| msgid "Ask for the passphrase every time"
-msgid "Ask for passphrase every time"
+msgid "Ask for passphrase on Kopete startup"
 msgstr "Yêu cầu mật khẩu mỗi lần"
 
 #: plugins/cryptography/popuppublic.cpp:38
@@ -14760,30 +14764,33 @@ msgstr "Tới khoá &mặc định:"
 msgid "Unlimited"
 msgstr "Vô hạn"
 
-#: plugins/cryptography/cryptographyplugin.cpp:57
+#: plugins/cryptography/cryptographyplugin.cpp:58
 msgid "Cryptography"
 msgstr "Mật mã thuật"
 
-#: plugins/cryptography/cryptographyplugin.cpp:78
+#: plugins/cryptography/cryptographyplugin.cpp:79
 #, fuzzy
 #| msgid "Select Public Key"
 msgid "&Select Public Key..."
 msgstr "Chọn khoá công"
 
-#: plugins/cryptography/cryptographyplugin.cpp:192
+#: plugins/cryptography/cryptographyplugin.cpp:191
 msgid "You have not chosen an encryption key for one or more recipients"
 msgstr ""
 
-#: plugins/cryptography/gpginterface.cpp:203
-#, fuzzy, qt-format
+#: plugins/cryptography/cryptographyplugin.cpp:256
+#, fuzzy
 #| msgid "Enter passphrase for <b>%1</b>:"
-msgid "Enter passphrase for secret key %1:"
+msgid "Enter password for GPG private key"
 msgstr "Hãy nhập cụm từ mật khẩu cho <b>%1</b>:"
 
 #: plugins/cryptography/gpginterface.cpp:205
-#, qt-format
-msgid "<b>Bad passphrase</b><br> You have %1 tries left.<br>"
-msgstr "<b>Cụm từ mật khẩu sai</b><br> Chỉ có %1 lần thử còn lại.<br>"
+#, fuzzy, qt-format
+#| msgid "Enter passphrase for <b>%1</b>:"
+msgid ""
+"Enter passphrase for secret key %1:\n"
+"You have %2 tries left."
+msgstr "Hãy nhập cụm từ mật khẩu cho <b>%1</b>:"
 
 #: plugins/cryptography/cryptographyguiclient.cpp:70
 msgid "Encrypt Messages"
@@ -20210,7 +20217,9 @@ msgid "Timestamp"
 msgstr "Ghi giờ"
 
 #: protocols/jabber/jabberbasecontact.cpp:644
-msgid "Downloading of Jabber contact photo failed !"
+#, fuzzy
+#| msgid "Downloading of Jabber contact photo failed !"
+msgid "Downloading of Jabber contact photo failed!"
 msgstr "Lỗi tải về ảnh chụp liên lạc Jabber."
 
 #: protocols/jabber/jabbergroupcontact.cpp:118
@@ -20676,6 +20685,12 @@ msgid ""
 msgstr ""
 "Hãy nhập vào một thông điệp Tự động Trả lời mà sẽ được hiển thị cho người "
 "dùng thử liên lạc với bạn khi bạn còn Vắng mặt hay Bận."
+
+#~ msgid "Informations"
+#~ msgstr "Thông tin"
+
+#~ msgid "<b>Bad passphrase</b><br> You have %1 tries left.<br>"
+#~ msgstr "<b>Cụm từ mật khẩu sai</b><br> Chỉ có %1 lần thử còn lại.<br>"
 
 #~ msgid "&Select Cryptography Public Key..."
 #~ msgstr "Chọn khoá công có &mật mã..."

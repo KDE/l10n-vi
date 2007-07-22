@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-07 04:59+0200\n"
+"POT-Creation-Date: 2007-07-22 05:31+0200\n"
 "PO-Revision-Date: 2007-06-22 17:25+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,12 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
 
-#: kio/netaccess.cpp:82
+#: kio/netaccess.cpp:105
 #, qt-format
 msgid "File '%1' is not readable"
 msgstr "Tập tin « %1 » không có khả năng đọc."
 
-#: kio/netaccess.cpp:407
+#: kio/netaccess.cpp:430
 #, qt-format
 msgid "ERROR: Unknown protocol '%1'"
 msgstr "LỖI: giao thức không rõ « %1 »."
@@ -82,7 +82,7 @@ msgstr "Điểm lắp"
 msgid "Unmounting"
 msgstr "Đang tháo gắn kết"
 
-#: kio/job.cpp:1831 kio/paste.cpp:62 kio/copyjob.cpp:1036 kio/copyjob.cpp:1540
+#: kio/job.cpp:1831 kio/paste.cpp:62 kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
 #: kio/global.cpp:698
 msgid "File Already Exists"
 msgstr "Tập tin đã có"
@@ -95,11 +95,11 @@ msgstr "Mọi ảnh"
 msgid "Data format:"
 msgstr "Dạng thức dữ liệu :"
 
-#: kio/slaveinterface.cpp:522
+#: kio/slaveinterface.cpp:499
 msgid "The peer SSL certificate appears to be corrupt."
 msgstr "Chứng nhận SSL ngang hàng có vẻ bị hỏng."
 
-#: kio/slaveinterface.cpp:522 kio/tcpslavebase.cpp:753
+#: kio/slaveinterface.cpp:499 kio/tcpslavebase.cpp:753
 msgid "SSL"
 msgstr "SSL"
 
@@ -255,7 +255,7 @@ msgstr "Tập tin nguồn là « %1 »"
 msgid "The desktop is offline"
 msgstr ""
 
-#: kio/chmodjob.cpp:157
+#: kio/chmodjob.cpp:200
 #, qt-format
 msgid ""
 "<qt>Could not modify the ownership of file <b>%1</b>. You have insufficient "
@@ -264,15 +264,15 @@ msgstr ""
 "<qt>Không thể sửa đổi tình trạng sở hữu của tập tin <b>%1</b>. Bạn không có "
 "đủ quyền.</qt>"
 
-#: kio/chmodjob.cpp:157
+#: kio/chmodjob.cpp:200
 msgid "&Skip File"
 msgstr "&Bỏ qua tập tin"
 
-#: kio/kbuildsycocaprogressdialog.cpp:26
+#: kio/kbuildsycocaprogressdialog.cpp:33
 msgid "Updating System Configuration"
 msgstr "Đang cập nhật cấu hình hệ thống"
 
-#: kio/kbuildsycocaprogressdialog.cpp:27
+#: kio/kbuildsycocaprogressdialog.cpp:34
 msgid "Updating system configuration."
 msgstr "Đang cập nhật cấu hình hệ thống của bạn."
 
@@ -411,19 +411,19 @@ msgstr "Bỏ qua"
 msgid "AutoSkip"
 msgstr "Tự động bỏ qua"
 
-#: kio/copyjob.cpp:763 kio/global.cpp:708
+#: kio/copyjob.cpp:828 kio/global.cpp:708
 msgid "Folder Already Exists"
 msgstr "Thư mục đã có"
 
-#: kio/copyjob.cpp:1036 kio/copyjob.cpp:1540
+#: kio/copyjob.cpp:1101 kio/copyjob.cpp:1605
 msgid "Already Exists as Folder"
 msgstr "Đã có, là thư mục."
 
-#: kio/kscan.cpp:42
+#: kio/kscan.cpp:50
 msgid "Acquire Image"
 msgstr "Lấy ảnh"
 
-#: kio/kscan.cpp:83
+#: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Ảnh OCR"
 
@@ -2256,7 +2256,7 @@ msgstr ""
 "%1."
 
 #: kio/kdesktopfileactions.cpp:81 kio/kdesktopfileactions.cpp:159
-#: kio/kdesktopfileactions.cpp:304
+#: kio/kdesktopfileactions.cpp:311
 #, qt-format
 msgid ""
 "The desktop entry file\n"
@@ -2291,7 +2291,21 @@ msgstr "Đẩy ra"
 msgid "Unmount"
 msgstr "Tháo gắn kết"
 
-#: kio/kdesktopfileactions.cpp:276
+#: kio/kdesktopfileactions.cpp:228
+#, fuzzy, qt-format
+#| msgid ""
+#| "The desktop entry file\n"
+#| "%1\n"
+#| " has an invalid menu entry\n"
+#| "%2."
+msgid "The desktop menu %1 has an invalid X-KDE-GetActionMenu entry."
+msgstr ""
+"Tập tin mục nhập môi trường\n"
+"%1\n"
+"có mục nhập trình đơn không hợp lệ\n"
+"%2."
+
+#: kio/kdesktopfileactions.cpp:283
 #, qt-format
 msgid ""
 "The desktop entry file\n"
@@ -2319,7 +2333,7 @@ msgstr "(%1, Liên kết tới %2)"
 msgid "Name:"
 msgstr "Tên:"
 
-#: kio/kfileitem.cpp:939 kfile/kpropertiesdialog.cpp:958
+#: kio/kfileitem.cpp:939 kfile/kpropertiesdialog.cpp:973
 msgid "Type:"
 msgstr "Kiểu :"
 
@@ -2328,11 +2342,11 @@ msgstr "Kiểu :"
 msgid "Link to %1 (%2)"
 msgstr "Liên kết tới %1 (%2)"
 
-#: kio/kfileitem.cpp:948 kfile/kpropertiesdialog.cpp:1006
+#: kio/kfileitem.cpp:948 kfile/kpropertiesdialog.cpp:1021
 msgid "Size:"
 msgstr "Cỡ :"
 
-#: kio/kfileitem.cpp:953 kfile/kpropertiesdialog.cpp:1069
+#: kio/kfileitem.cpp:953 kfile/kpropertiesdialog.cpp:1084
 msgid "Modified:"
 msgstr "Sửa đổi :"
 
@@ -2349,27 +2363,22 @@ msgstr "Quyền hạn:"
 msgid "No service implementing %1"
 msgstr "Không có dịch vụ thi hành %1"
 
-#: kio/slave.cpp:392
-#, qt-format
-msgid "Unable to create io-slave: %1"
-msgstr "Không thể tạo io-slave: %1"
-
-#: kio/slave.cpp:432
+#: kio/slave.cpp:406
 #, qt-format
 msgid "Unknown protocol '%1'."
 msgstr "Không biết giao thức « %1 »."
 
-#: kio/slave.cpp:440
+#: kio/slave.cpp:414
 #, qt-format
 msgid "Can not find io-slave for protocol '%1'."
 msgstr "Không tìm thấy io-slave cho giao thức « %1 »."
 
-#: kio/slave.cpp:459
+#: kio/slave.cpp:433
 #, qt-format
 msgid "Cannot talk to klauncher: %1"
 msgstr "Không thể liên lạc với klauncher (bộ khởi chạy): %1"
 
-#: kio/slave.cpp:467
+#: kio/slave.cpp:441
 #, qt-format
 msgid ""
 "Unable to create io-slave:\n"
@@ -2378,11 +2387,11 @@ msgstr ""
 "Không thể tạo io-slave:\n"
 "klauncher (bộ khởi chạy) nói : %1"
 
-#: kio/kmimetypechooser.cpp:73 kfile/kpropertiesdialog.cpp:2700
+#: kio/kmimetypechooser.cpp:73 kfile/kpropertiesdialog.cpp:2734
 msgid "Mime Type"
 msgstr "Kiểu MIME"
 
-#: kio/kmimetypechooser.cpp:77 kfile/kpropertiesdialog.cpp:2712
+#: kio/kmimetypechooser.cpp:77 kfile/kpropertiesdialog.cpp:2747
 msgid "Comment"
 msgstr "Ghi chú"
 
@@ -2398,34 +2407,39 @@ msgstr "&Sửa..."
 msgid "Click this button to display the familiar KDE mime type editor."
 msgstr "Nhấn nút này để hiển thị bộ soạn thảo kiểu MIME thường của KDE."
 
-#: kio/kdirmodel.cpp:554 kfile/kacleditwidget.cpp:626
+#: kio/connection.cpp:192
+#, qt-format
+msgid "Unable to create io-slave: %1"
+msgstr "Không thể tạo io-slave: %1"
+
+#: kio/kdirmodel.cpp:559 kfile/kacleditwidget.cpp:626
 #: ../kfile/k3filedetailview.cpp:65
 msgid "Name"
 msgstr "Tên"
 
-#: kio/kdirmodel.cpp:556 ../kfile/k3filedetailview.cpp:66
+#: kio/kdirmodel.cpp:561 ../kfile/k3filedetailview.cpp:66
 msgid "Size"
 msgstr "Cỡ"
 
-#: kio/kdirmodel.cpp:558
+#: kio/kdirmodel.cpp:563
 msgid "Modified"
 msgstr "Sửa đổi"
 
-#: kio/kdirmodel.cpp:560 ../kfile/k3filedetailview.cpp:68
+#: kio/kdirmodel.cpp:565 ../kfile/k3filedetailview.cpp:68
 msgid "Permissions"
 msgstr "Quyền hạn"
 
-#: kio/kdirmodel.cpp:562 kfile/kacleditwidget.cpp:61
+#: kio/kdirmodel.cpp:567 kfile/kacleditwidget.cpp:61
 #: kfile/kacleditwidget.cpp:454 ../kfile/k3filedetailview.cpp:69
 msgid "Owner"
 msgstr "Sở hữu"
 
-#: kio/kdirmodel.cpp:564 kfile/kpropertiesdialog.cpp:1988
+#: kio/kdirmodel.cpp:569 kfile/kpropertiesdialog.cpp:2015
 #: ../kfile/k3filedetailview.cpp:70
 msgid "Group"
 msgstr "Nhóm"
 
-#: kio/kdirmodel.cpp:566 kfile/kacleditwidget.cpp:625
+#: kio/kdirmodel.cpp:571 kfile/kacleditwidget.cpp:625
 msgid "Type"
 msgstr "Kiểu"
 
@@ -2483,7 +2497,7 @@ msgstr "Nhà phát hành:"
 msgid "IP address:"
 msgstr "Địa chỉ IP:"
 
-#: kssl/ksslinfodialog.cpp:236 kfile/kpropertiesdialog.cpp:2575
+#: kssl/ksslinfodialog.cpp:236 kfile/kpropertiesdialog.cpp:2604
 msgid "URL:"
 msgstr "Địa chỉ Mạng:"
 
@@ -2776,7 +2790,7 @@ msgstr ""
 msgid "Could not download the proxy configuration script"
 msgstr "Không thể tải về tập lệnh cấu hình ủy nhiệm"
 
-#: misc/kpac/discovery.cpp:118
+#: misc/kpac/discovery.cpp:117
 msgid "Could not find a usable proxy configuration script"
 msgstr "Không tìm thấy một tập lệnh cấu hình ủy nhiệm có khả năng dùng"
 
@@ -2798,7 +2812,7 @@ msgstr ""
 "Ứng dụng « <b>%1</b> » đã yêu cầu mở ví « <b>%2</b> ». Vui lòng gõ mật khẩu "
 "cho ví này bên dưới."
 
-#: misc/kwalletd/kwalletd.cpp:395 ../kfile/kfilewidget.cpp:1509
+#: misc/kwalletd/kwalletd.cpp:395 ../kfile/kfilewidget.cpp:1501
 msgid "&Open"
 msgstr "&Mở"
 
@@ -2991,7 +3005,7 @@ msgstr "Xem thử t&ự động"
 msgid "&Preview"
 msgstr "&Xem thử"
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:998
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:1013
 #: bookmarks/kbookmarkmenu.cc:650
 msgid "Location:"
 msgstr "Địa điểm:"
@@ -3117,7 +3131,7 @@ msgid "Owning Group"
 msgstr "Nhóm sở hữu"
 
 #: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
-#: kfile/kpropertiesdialog.cpp:1992
+#: kfile/kpropertiesdialog.cpp:2019
 msgid "Others"
 msgstr "Khác"
 
@@ -3307,73 +3321,73 @@ msgid "Properties for 1 item"
 msgid_plural "Properties for %1 Selected Items"
 msgstr[0] "Thuộc tính cho %1 mục đã chọn"
 
-#: kfile/kpropertiesdialog.cpp:773
+#: kfile/kpropertiesdialog.cpp:788
 msgid "&General"
 msgstr "&Chung"
 
-#: kfile/kpropertiesdialog.cpp:974
+#: kfile/kpropertiesdialog.cpp:989
 msgid "Create new file type"
 msgstr "Tạo kiểu tập tin mới"
 
-#: kfile/kpropertiesdialog.cpp:976
+#: kfile/kpropertiesdialog.cpp:991
 msgid "Edit file type"
 msgstr "Sửa kiểu tập tin"
 
-#: kfile/kpropertiesdialog.cpp:989
+#: kfile/kpropertiesdialog.cpp:1004
 msgid "Contents:"
 msgstr "Nội dung:"
 
-#: kfile/kpropertiesdialog.cpp:1026
+#: kfile/kpropertiesdialog.cpp:1041
 msgid "Calculate"
 msgstr "Tính"
 
-#: kfile/kpropertiesdialog.cpp:1027
+#: kfile/kpropertiesdialog.cpp:1042
 msgid "Stop"
 msgstr "Dừng"
 
-#: kfile/kpropertiesdialog.cpp:1037 kfile/kpropertiesdialog.cpp:1244
+#: kfile/kpropertiesdialog.cpp:1052 kfile/kpropertiesdialog.cpp:1259
 msgid "Refresh"
 msgstr "Cập nhật"
 
-#: kfile/kpropertiesdialog.cpp:1045
+#: kfile/kpropertiesdialog.cpp:1060
 msgid "Points to:"
 msgstr "Chỉ tới :"
 
-#: kfile/kpropertiesdialog.cpp:1058
+#: kfile/kpropertiesdialog.cpp:1073
 msgid "Created:"
 msgstr "Tạo :"
 
-#: kfile/kpropertiesdialog.cpp:1080
+#: kfile/kpropertiesdialog.cpp:1095
 msgid "Accessed:"
 msgstr "Truy cập:"
 
-#: kfile/kpropertiesdialog.cpp:1099
+#: kfile/kpropertiesdialog.cpp:1114
 msgid "Mounted on:"
 msgstr "Đã gắn kết vào :"
 
-#: kfile/kpropertiesdialog.cpp:1106 kfile/kpropertiesdialog.cpp:2910
+#: kfile/kpropertiesdialog.cpp:1121 kfile/kpropertiesdialog.cpp:2953
 msgid "Free disk space:"
 msgstr "Chỗ còn rảnh trên đĩa :"
 
-#: kfile/kpropertiesdialog.cpp:1209 kfile/kpropertiesdialog.cpp:3051
+#: kfile/kpropertiesdialog.cpp:1224 kfile/kpropertiesdialog.cpp:3094
 #, qt-format
 msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 out of %2 (%3% used)"
 msgstr "%1 trên %2 (%3% đã dùng)"
 
-#: kfile/kpropertiesdialog.cpp:1223 kfile/kpropertiesdialog.cpp:1239
+#: kfile/kpropertiesdialog.cpp:1238 kfile/kpropertiesdialog.cpp:1254
 #, qt-format
 msgid "1 file"
 msgid_plural "%1 files"
 msgstr[0] "%1 tập tin"
 
-#: kfile/kpropertiesdialog.cpp:1224 kfile/kpropertiesdialog.cpp:1240
+#: kfile/kpropertiesdialog.cpp:1239 kfile/kpropertiesdialog.cpp:1255
 #, qt-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
 msgstr[0] "%1 thư mục con"
 
-#: kfile/kpropertiesdialog.cpp:1220
+#: kfile/kpropertiesdialog.cpp:1235
 #, qt-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -3382,21 +3396,21 @@ msgstr ""
 "Đang tính... %1 (%2)\n"
 "%3, %4"
 
-#: kfile/kpropertiesdialog.cpp:1253
+#: kfile/kpropertiesdialog.cpp:1268
 msgid "Calculating..."
 msgstr "Đang tính..."
 
-#: kfile/kpropertiesdialog.cpp:1292
+#: kfile/kpropertiesdialog.cpp:1307
 msgid "Stopped"
 msgstr "Bị ngừng"
 
-#: kfile/kpropertiesdialog.cpp:1328
+#: kfile/kpropertiesdialog.cpp:1343
 msgid "The new file name is empty."
 msgstr "Tên tập tin mới là rỗng."
 
-#: kfile/kpropertiesdialog.cpp:1467 kfile/kpropertiesdialog.cpp:2631
-#: kfile/kpropertiesdialog.cpp:2794 kfile/kpropertiesdialog.cpp:3080
-#: kfile/kpropertiesdialog.cpp:3295
+#: kfile/kpropertiesdialog.cpp:1482 kfile/kpropertiesdialog.cpp:2660
+#: kfile/kpropertiesdialog.cpp:2830 kfile/kpropertiesdialog.cpp:3123
+#: kfile/kpropertiesdialog.cpp:3360
 #, qt-format
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
@@ -3404,73 +3418,73 @@ msgid ""
 msgstr ""
 "<qt>Không thể lưu thuộc tính vì bạn không có quyền ghi vào <b>%1</b>.</qt>"
 
-#: kfile/kpropertiesdialog.cpp:1538 kfile/kpropertiesdialog.cpp:1542
-#: kfile/kpropertiesdialog.cpp:1547
+#: kfile/kpropertiesdialog.cpp:1565 kfile/kpropertiesdialog.cpp:1569
+#: kfile/kpropertiesdialog.cpp:1574
 msgid "Forbidden"
 msgstr "Bị cấm"
 
-#: kfile/kpropertiesdialog.cpp:1539
+#: kfile/kpropertiesdialog.cpp:1566
 msgid "Can Read"
 msgstr "Có thể đọc"
 
-#: kfile/kpropertiesdialog.cpp:1540
+#: kfile/kpropertiesdialog.cpp:1567
 msgid "Can Read & Write"
 msgstr "Có thể đọc/ghi"
 
-#: kfile/kpropertiesdialog.cpp:1543
+#: kfile/kpropertiesdialog.cpp:1570
 msgid "Can View Content"
 msgstr "Có thể xem nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1544
+#: kfile/kpropertiesdialog.cpp:1571
 msgid "Can View & Modify Content"
 msgstr "Có thể xem/sửa đổi nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1548
+#: kfile/kpropertiesdialog.cpp:1575
 msgid "Can View Content & Read"
 msgstr "Có thể xem/đọc nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1549
+#: kfile/kpropertiesdialog.cpp:1576
 msgid "Can View/Read & Modify/Write"
 msgstr "Có thể xem/đọc/sửa đổi/ghi nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1645
+#: kfile/kpropertiesdialog.cpp:1672
 msgid "&Permissions"
 msgstr "&Quyền hạn"
 
-#: kfile/kpropertiesdialog.cpp:1658 kfile/kpropertiesdialog.cpp:1915
+#: kfile/kpropertiesdialog.cpp:1685 kfile/kpropertiesdialog.cpp:1942
 msgid "Access Permissions"
 msgstr "Quyền truy cập"
 
-#: kfile/kpropertiesdialog.cpp:1668
+#: kfile/kpropertiesdialog.cpp:1695
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "Tập tin là liên kết, không có quyền hạn."
 
-#: kfile/kpropertiesdialog.cpp:1672
+#: kfile/kpropertiesdialog.cpp:1699
 msgid "Only the owner can change permissions."
 msgstr "Chỉ người sở hữu có khả năng thay đổi các quyền truy cập."
 
-#: kfile/kpropertiesdialog.cpp:1675
+#: kfile/kpropertiesdialog.cpp:1702
 msgid "O&wner:"
 msgstr "&Sở hữu :"
 
-#: kfile/kpropertiesdialog.cpp:1681
+#: kfile/kpropertiesdialog.cpp:1708
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Ghi rõ những hành động người sở hữu có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1683
+#: kfile/kpropertiesdialog.cpp:1710
 msgid "Gro&up:"
 msgstr "&Nhóm:"
 
-#: kfile/kpropertiesdialog.cpp:1689
+#: kfile/kpropertiesdialog.cpp:1716
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Ghi rõ những hành động thành viên nhóm có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1691
+#: kfile/kpropertiesdialog.cpp:1718
 msgid "O&thers:"
 msgstr "Người &khác:"
 
-#: kfile/kpropertiesdialog.cpp:1697
+#: kfile/kpropertiesdialog.cpp:1724
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -3478,17 +3492,17 @@ msgstr ""
 "Ghi rõ những hành động mọi người không phải là người sở hữu, cũng không phải "
 "là thành viên của nhóm, có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1702
+#: kfile/kpropertiesdialog.cpp:1729
 msgid "Only own&er can rename and delete folder content"
 msgstr ""
 "Chỉ người &sở hữu có khả năng thay đổi tên của thư mục và xoá nội dung của "
 "thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1703
+#: kfile/kpropertiesdialog.cpp:1730
 msgid "Is &executable"
 msgstr "Thực hi&ện được"
 
-#: kfile/kpropertiesdialog.cpp:1707
+#: kfile/kpropertiesdialog.cpp:1734
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -3498,7 +3512,7 @@ msgstr ""
 "thay đổi tên của các tập tin và thư mục đã chứa. Người dùng khác chỉ có thể "
 "thêm tập tin mới, việc mà cần thiết quyền « Sửa đổi nội dung »."
 
-#: kfile/kpropertiesdialog.cpp:1711
+#: kfile/kpropertiesdialog.cpp:1738
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -3507,35 +3521,35 @@ msgstr ""
 "chỉ có ích với chương trình và tập lệnh. Nó cần thiết khi bạn muốn thực hiện "
 "nó."
 
-#: kfile/kpropertiesdialog.cpp:1718
+#: kfile/kpropertiesdialog.cpp:1745
 msgid "A&dvanced Permissions"
 msgstr "Quyền hạn cấp c&ao"
 
-#: kfile/kpropertiesdialog.cpp:1727
+#: kfile/kpropertiesdialog.cpp:1754
 msgid "Ownership"
 msgstr "Sở hữu"
 
-#: kfile/kpropertiesdialog.cpp:1736
+#: kfile/kpropertiesdialog.cpp:1763
 msgid "User:"
 msgstr "Người dùng:"
 
-#: kfile/kpropertiesdialog.cpp:1822
+#: kfile/kpropertiesdialog.cpp:1849
 msgid "Group:"
 msgstr "Nhóm:"
 
-#: kfile/kpropertiesdialog.cpp:1865
+#: kfile/kpropertiesdialog.cpp:1892
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Áp dụng các thay đổi vào mọi thư mục con (gồm nội dung)"
 
-#: kfile/kpropertiesdialog.cpp:1905
+#: kfile/kpropertiesdialog.cpp:1932
 msgid "Advanced Permissions"
 msgstr "Quyền hạn cấp cao"
 
-#: kfile/kpropertiesdialog.cpp:1925
+#: kfile/kpropertiesdialog.cpp:1952
 msgid "Class"
 msgstr "Hạng"
 
-#: kfile/kpropertiesdialog.cpp:1930
+#: kfile/kpropertiesdialog.cpp:1957
 msgid ""
 "Show\n"
 "Entries"
@@ -3543,19 +3557,19 @@ msgstr ""
 "HIện\n"
 "mục"
 
-#: kfile/kpropertiesdialog.cpp:1932
+#: kfile/kpropertiesdialog.cpp:1959
 msgid "Read"
 msgstr "Đọc"
 
-#: kfile/kpropertiesdialog.cpp:1937
+#: kfile/kpropertiesdialog.cpp:1964
 msgid "This flag allows viewing the content of the folder."
 msgstr "Cờ này cho khả năng xem nội dung của thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1939
+#: kfile/kpropertiesdialog.cpp:1966
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Cờ Đọc cho khả năng xem nội dung của tập tin."
 
-#: kfile/kpropertiesdialog.cpp:1943
+#: kfile/kpropertiesdialog.cpp:1970
 msgid ""
 "Write\n"
 "Entries"
@@ -3563,11 +3577,11 @@ msgstr ""
 "Ghi\n"
 "mục"
 
-#: kfile/kpropertiesdialog.cpp:1945
+#: kfile/kpropertiesdialog.cpp:1972
 msgid "Write"
 msgstr "Ghi"
 
-#: kfile/kpropertiesdialog.cpp:1950
+#: kfile/kpropertiesdialog.cpp:1977
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -3575,32 +3589,32 @@ msgstr ""
 "Cờ này cho khả năng thêm, thay đổi tên và xoá tập tin. Ghi chú rằng việc xoá "
 "và thay đổi tên của tập tin có thể được hạn chế bằng cờ Dính."
 
-#: kfile/kpropertiesdialog.cpp:1953
+#: kfile/kpropertiesdialog.cpp:1980
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Cờ Ghi cho khả năng sửa đổi nội dung của tập tin."
 
-#: kfile/kpropertiesdialog.cpp:1958
+#: kfile/kpropertiesdialog.cpp:1985
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "Vào"
 
-#: kfile/kpropertiesdialog.cpp:1959
+#: kfile/kpropertiesdialog.cpp:1986
 msgid "Enable this flag to allow entering the folder."
 msgstr "Bật cờ này để có khả năng vào thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1962
+#: kfile/kpropertiesdialog.cpp:1989
 msgid "Exec"
 msgstr "Chạy"
 
-#: kfile/kpropertiesdialog.cpp:1963
+#: kfile/kpropertiesdialog.cpp:1990
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "Bật cờ này để có khả năng thực hiện tập tin như là chương trình."
 
-#: kfile/kpropertiesdialog.cpp:1973
+#: kfile/kpropertiesdialog.cpp:2000
 msgid "Special"
 msgstr "Đặc biệt"
 
-#: kfile/kpropertiesdialog.cpp:1977
+#: kfile/kpropertiesdialog.cpp:2004
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
@@ -3608,7 +3622,7 @@ msgstr ""
 "Cờ đặc biệt: hợp lệ cho toàn bộ thư mục. Sự nghĩa chính xác của cờ này xuất "
 "hiện trong cột bên phải."
 
-#: kfile/kpropertiesdialog.cpp:1980
+#: kfile/kpropertiesdialog.cpp:2007
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
@@ -3617,22 +3631,22 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kfile/kpropertiesdesktopadvbase.ui line 89
-#: kfile/kpropertiesdialog.cpp:1984 rc.cpp:83
+#: kfile/kpropertiesdialog.cpp:2011 rc.cpp:83
 msgid "User"
 msgstr "Người dùng"
 
-#: kfile/kpropertiesdialog.cpp:1996
+#: kfile/kpropertiesdialog.cpp:2023
 msgid "Set UID"
 msgstr "Đặt UID (nhận diện người dùng)"
 
-#: kfile/kpropertiesdialog.cpp:2000
+#: kfile/kpropertiesdialog.cpp:2027
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
 msgstr ""
 "Nếu cờ này được bật, người sở hữu thư mục này cũng sẽ sở hưu mọi tập tin mới."
 
-#: kfile/kpropertiesdialog.cpp:2003
+#: kfile/kpropertiesdialog.cpp:2030
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -3640,17 +3654,17 @@ msgstr ""
 "Nếu tập tin này có khả năng thực hiện với cờ đã bật, nó sẽ được thực hiện "
 "bằng quyền hạn của người sở hữu."
 
-#: kfile/kpropertiesdialog.cpp:2007
+#: kfile/kpropertiesdialog.cpp:2034
 msgid "Set GID"
 msgstr "Đặt GID (nhận diện nhóm)"
 
-#: kfile/kpropertiesdialog.cpp:2011
+#: kfile/kpropertiesdialog.cpp:2038
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Nếu cờ này đã bật, nhóm của thư mục này sẽ cũng là nhóm của mọi tập tin mới."
 
-#: kfile/kpropertiesdialog.cpp:2014
+#: kfile/kpropertiesdialog.cpp:2041
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
@@ -3658,12 +3672,12 @@ msgstr ""
 "Nếu tập tin này có khả năng thực hiện với cờ đã bật, nó sẽ được thực hiện "
 "bằng quyền hạn của nhóm."
 
-#: kfile/kpropertiesdialog.cpp:2018
+#: kfile/kpropertiesdialog.cpp:2045
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Dính"
 
-#: kfile/kpropertiesdialog.cpp:2022
+#: kfile/kpropertiesdialog.cpp:2049
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -3672,7 +3686,7 @@ msgstr ""
 "năng xoá hay thay đổi tên của tập tin. Không thì mọi người có quyền ghi có "
 "thể làm như thế."
 
-#: kfile/kpropertiesdialog.cpp:2026
+#: kfile/kpropertiesdialog.cpp:2053
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
@@ -3680,115 +3694,115 @@ msgstr ""
 "Cờ Dính trên tập tin bị bỏ qua trên hệ thống Linux, nhưng có thể được dùng "
 "trên một số hệ thống khác."
 
-#: kfile/kpropertiesdialog.cpp:2200
+#: kfile/kpropertiesdialog.cpp:2227
 msgid "Link"
 msgstr "Liên kết"
 
-#: kfile/kpropertiesdialog.cpp:2216
+#: kfile/kpropertiesdialog.cpp:2243
 msgid "Varying (No Change)"
 msgstr "Thay đổi (Chưa thay đổi)"
 
-#: kfile/kpropertiesdialog.cpp:2314
+#: kfile/kpropertiesdialog.cpp:2341
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Tập tin này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2335
+#: kfile/kpropertiesdialog.cpp:2362
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Thư mục này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2351
+#: kfile/kpropertiesdialog.cpp:2378
 msgid "These files use advanced permissions."
 msgstr "Những tập tin này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2567
+#: kfile/kpropertiesdialog.cpp:2596
 msgid "U&RL"
 msgstr "&Địa chỉ Mạng"
 
-#: kfile/kpropertiesdialog.cpp:2675
+#: kfile/kpropertiesdialog.cpp:2711
 msgid "A&ssociation"
 msgstr "T&ương ứng"
 
-#: kfile/kpropertiesdialog.cpp:2687
+#: kfile/kpropertiesdialog.cpp:2720
 msgid "Pattern ( example: *.html;*.htm )"
 msgstr "Mẫu (v.d. *.html;*.htm)"
 
-#: kfile/kpropertiesdialog.cpp:2722
+#: kfile/kpropertiesdialog.cpp:2758
 msgid "Left click previews"
 msgstr "Nhắp-trái xem thử"
 
-#: kfile/kpropertiesdialog.cpp:2842
+#: kfile/kpropertiesdialog.cpp:2885
 msgid "De&vice"
 msgstr "Thiết &bị"
 
-#: kfile/kpropertiesdialog.cpp:2874
+#: kfile/kpropertiesdialog.cpp:2917
 msgid "Device (/dev/fd0):"
 msgstr "Thiết bị (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2875
+#: kfile/kpropertiesdialog.cpp:2918
 msgid "Device:"
 msgstr "Thiết bị :"
 
-#: kfile/kpropertiesdialog.cpp:2888
+#: kfile/kpropertiesdialog.cpp:2931
 msgid "Read only"
 msgstr "Chỉ đọc"
 
-#: kfile/kpropertiesdialog.cpp:2892
+#: kfile/kpropertiesdialog.cpp:2935
 msgid "File system:"
 msgstr "Hê thống tập tin:"
 
-#: kfile/kpropertiesdialog.cpp:2900
+#: kfile/kpropertiesdialog.cpp:2943
 msgid "Mount point (/mnt/floppy):"
 msgstr "Điểm lắp (/mnt/floppy):"
 
-#: kfile/kpropertiesdialog.cpp:2901
+#: kfile/kpropertiesdialog.cpp:2944
 msgid "Mount point:"
 msgstr "Điểm lắp:"
 
-#: kfile/kpropertiesdialog.cpp:2934
+#: kfile/kpropertiesdialog.cpp:2977
 msgid "Unmounted Icon"
 msgstr "Biểu tượng không gắn kết"
 
-#: kfile/kpropertiesdialog.cpp:3113
+#: kfile/kpropertiesdialog.cpp:3179
 msgid "&Application"
 msgstr "&Ứng dụng"
 
-#: kfile/kpropertiesdialog.cpp:3233
+#: kfile/kpropertiesdialog.cpp:3298
 #, qt-format
 msgid "Add File Type for %1"
 msgstr "Thêm kiểu tập tin cho %1"
 
-#: kfile/kpropertiesdialog.cpp:3234
+#: kfile/kpropertiesdialog.cpp:3299
 msgid "Select one or more file types to add:"
 msgstr "Hãy chọn một hoặc nhiều kiểu tập tin cần thêm:"
 
-#: kfile/kpropertiesdialog.cpp:3368
+#: kfile/kpropertiesdialog.cpp:3433
 msgid "Only executables on local file systems are supported."
 msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống cục bộ thôi."
 
-#: kfile/kpropertiesdialog.cpp:3382
+#: kfile/kpropertiesdialog.cpp:3447
 #, qt-format
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
 
-#: kfile/kfilesharedialog.cpp:55
+#: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
 msgstr "Chia &sẻ"
 
-#: kfile/kfilesharedialog.cpp:129
+#: kfile/kfilesharedialog.cpp:133
 msgid "Only folders in your home folder can be shared."
 msgstr "Có thể chia sẻ chỉ thư mục trong thư mục chính của bạn thôi."
 
-#: kfile/kfilesharedialog.cpp:139
+#: kfile/kfilesharedialog.cpp:143
 msgid "Not shared"
 msgstr "Không được chia sẻ"
 
-#: kfile/kfilesharedialog.cpp:144
+#: kfile/kfilesharedialog.cpp:148
 msgid "Shared"
 msgstr "Đã chia sẻ"
 
-#: kfile/kfilesharedialog.cpp:156
+#: kfile/kfilesharedialog.cpp:160
 msgid ""
 "Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
 "(Samba)."
@@ -3796,35 +3810,35 @@ msgstr ""
 "Việc chia sẻ thư mục này làm cho nó công bố dưới Linux/UNIX (NFS) và Windows "
 "(Samba)."
 
-#: kfile/kfilesharedialog.cpp:163
+#: kfile/kfilesharedialog.cpp:167
 msgid "You can also reconfigure file sharing authorization."
 msgstr "Bạn cũng có khả năng cấu hình lại cách cho phép chia sẻ tập tin."
 
-#: kfile/kfilesharedialog.cpp:167 kfile/kfilesharedialog.cpp:191
+#: kfile/kfilesharedialog.cpp:171 kfile/kfilesharedialog.cpp:195
 msgid "Configure File Sharing..."
 msgstr "Cấu hình chia sẻ tập tin..."
 
-#: kfile/kfilesharedialog.cpp:176
+#: kfile/kfilesharedialog.cpp:180
 msgid ""
 "Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
 msgstr ""
 "Gặp lỗi khi chạy « filesharelist » (danh sách tập tin chia sẻ). Hãy kiểm tra "
 "xem nó đã được cài đặt và nằm trong đường dẫn thực hiện $PATH hay </usr/bin>."
 
-#: kfile/kfilesharedialog.cpp:183
+#: kfile/kfilesharedialog.cpp:187
 msgid "You need to be authorized to share folders."
 msgstr "Để chia sẻ thư mục, bạn cần phải được phép."
 
-#: kfile/kfilesharedialog.cpp:186
+#: kfile/kfilesharedialog.cpp:190
 msgid "File sharing is disabled."
 msgstr "Khả năng chia sẻ tập tin bị tắt."
 
-#: kfile/kfilesharedialog.cpp:253
+#: kfile/kfilesharedialog.cpp:257
 #, qt-format
 msgid "Sharing folder '%1' failed."
 msgstr "Việc chia sẻ thư mục « %1 » bị lỗi."
 
-#: kfile/kfilesharedialog.cpp:254
+#: kfile/kfilesharedialog.cpp:258
 #, qt-format
 msgid ""
 "An error occurred while trying to share folder '%1'. Make sure that the Perl "
@@ -3833,12 +3847,12 @@ msgstr ""
 "Gặp lỗi khi cố chia sẻ thư mục « %1 ». Hãy kiểm tra xem tập lệnh Perl « "
 "fileshareset » (đặt chia sẻ tập tin) đã được đặt « suid root »."
 
-#: kfile/kfilesharedialog.cpp:259
+#: kfile/kfilesharedialog.cpp:263
 #, qt-format
 msgid "Unsharing folder '%1' failed."
 msgstr "Việc bỏ chia sẻ thư mục « %1 » bị lỗi."
 
-#: kfile/kfilesharedialog.cpp:260
+#: kfile/kfilesharedialog.cpp:264
 #, qt-format
 msgid ""
 "An error occurred while trying to unshare folder '%1'. Make sure that the "
@@ -4605,7 +4619,7 @@ msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Tập tin này bị Konqueror tạo ra. -->"
 
 #: bookmarks/kbookmarkimporter_ns.cc:198 bookmarks/kbookmarkimporter_ns.cc:199
-#: bookmarks/kbookmarkmenu.cc:679 ../kfile/kfilewidget.cpp:1937
+#: bookmarks/kbookmarkmenu.cc:679 ../kfile/kfilewidget.cpp:1929
 msgid "Bookmarks"
 msgstr "Liên kết lưu"
 
@@ -4778,12 +4792,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:462 ../kioslave/http/http.cpp:5049
+#: ../kioslave/ftp/ftp.cpp:462 ../kioslave/http/http.cpp:5047
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu để truy cập nơi Mạng này."
 
-#: ../kioslave/ftp/ftp.cpp:464 ../kioslave/http/http.cpp:5057
+#: ../kioslave/ftp/ftp.cpp:464 ../kioslave/http/http.cpp:5055
 msgid "Site:"
 msgstr "Nơi:"
 
@@ -4801,12 +4815,12 @@ msgstr "Đăng nhập được"
 msgid "Could not login to %1."
 msgstr "Không thể đăng nhập vào %1."
 
-#: ../kioslave/file/file.cpp:216
+#: ../kioslave/file/file.cpp:214
 #, qt-format
 msgid "Setting ACL for %1"
 msgstr "Đang đặt ACL cho %1"
 
-#: ../kioslave/file/file.cpp:758 ../kioslave/file/file.cpp:992
+#: ../kioslave/file/file.cpp:760 ../kioslave/file/file.cpp:994
 #, qt-format
 msgid ""
 "Could not change permissions for\n"
@@ -4815,115 +4829,115 @@ msgstr ""
 "Không thể thay đổi quyền hạn về\n"
 "%1"
 
-#: ../kioslave/file/file.cpp:923
+#: ../kioslave/file/file.cpp:925
 #, qt-format
 msgid "Cannot copy file from %1 to %2. (Errno: %3)"
 msgstr "Không thể sao chép tập tin từ %1 sang %2. (Lỗi : %3)"
 
-#: ../kioslave/file/file.cpp:1366
+#: ../kioslave/file/file.cpp:1368
 #, qt-format
 msgid "No media in device for %1"
 msgstr "Không có vật chứa trong thiết bị cho %1"
 
-#: ../kioslave/file/file.cpp:1518
+#: ../kioslave/file/file.cpp:1520
 msgid "No Media inserted or Media not recognized."
 msgstr "Chưa chèn vật chứa, hoặc không nhận diện vật chứa."
 
-#: ../kioslave/file/file.cpp:1528 ../kioslave/file/file.cpp:1729
+#: ../kioslave/file/file.cpp:1530 ../kioslave/file/file.cpp:1731
 msgid "\"vold\" is not running."
 msgstr "« vold » không đang chạy."
 
-#: ../kioslave/file/file.cpp:1563
+#: ../kioslave/file/file.cpp:1565
 msgid "Could not find program \"mount\""
 msgstr "Không tìm thấy chương trình « mount »"
 
-#: ../kioslave/file/file.cpp:1742
+#: ../kioslave/file/file.cpp:1744
 msgid "Could not find program \"umount\""
 msgstr "Không tìm thấy chương trình « umount »"
 
-#: ../kioslave/file/file.cpp:1830
+#: ../kioslave/file/file.cpp:1832
 #, qt-format
 msgid "Could not read %1"
 msgstr "Không thể đọc %1"
 
-#: ../kioslave/http/http.cpp:455
+#: ../kioslave/http/http.cpp:453
 msgid "No host specified."
 msgstr "Chưa ghi rõ máy"
 
-#: ../kioslave/http/http.cpp:1480
+#: ../kioslave/http/http.cpp:1478
 msgid "Otherwise, the request would have succeeded."
 msgstr "Không thì yêu cầu thành công."
 
-#: ../kioslave/http/http.cpp:1484
+#: ../kioslave/http/http.cpp:1482
 msgid "retrieve property values"
 msgstr "lấy giá trị tài sản"
 
-#: ../kioslave/http/http.cpp:1487
+#: ../kioslave/http/http.cpp:1485
 msgid "set property values"
 msgstr "Đặt giá trị tài sản"
 
-#: ../kioslave/http/http.cpp:1490
+#: ../kioslave/http/http.cpp:1488
 msgid "create the requested folder"
 msgstr "tạo thư mục đã yêu cầu"
 
-#: ../kioslave/http/http.cpp:1493
+#: ../kioslave/http/http.cpp:1491
 msgid "copy the specified file or folder"
 msgstr "chép tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1496
+#: ../kioslave/http/http.cpp:1494
 msgid "move the specified file or folder"
 msgstr "chuyển tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1499
+#: ../kioslave/http/http.cpp:1497
 msgid "search in the specified folder"
 msgstr "tìm kiếm qua thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1502
+#: ../kioslave/http/http.cpp:1500
 msgid "lock the specified file or folder"
 msgstr "khoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1505
+#: ../kioslave/http/http.cpp:1503
 msgid "unlock the specified file or folder"
 msgstr "bỏ khoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1508
+#: ../kioslave/http/http.cpp:1506
 msgid "delete the specified file or folder"
 msgstr "xoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1511
+#: ../kioslave/http/http.cpp:1509
 msgid "query the server's capabilities"
 msgstr "truy vấn khả năng của máy phục vụ"
 
-#: ../kioslave/http/http.cpp:1514
+#: ../kioslave/http/http.cpp:1512
 msgid "retrieve the contents of the specified file or folder"
 msgstr "lấy nội dung của tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1526 ../kioslave/http/http.cpp:1679
+#: ../kioslave/http/http.cpp:1524 ../kioslave/http/http.cpp:1677
 #, qt-format
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Gặp lỗi lạ (%1) khi cố %2."
 
-#: ../kioslave/http/http.cpp:1534
+#: ../kioslave/http/http.cpp:1532
 msgid "The server does not support the WebDAV protocol."
 msgstr "Máy phục vụ này không hỗ trợ giao thức WebDAV."
 
-#: ../kioslave/http/http.cpp:1575
+#: ../kioslave/http/http.cpp:1573
 #, qt-format
 msgid ""
 "An error occurred while attempting to %1, %2. A summary of the reasons is "
 "below.<ul>"
 msgstr "Gặp lỗi khi cố %1, %2. Bên dưới có lời tóm tắt các lý do.<ul>"
 
-#: ../kioslave/http/http.cpp:1587 ../kioslave/http/http.cpp:1690
+#: ../kioslave/http/http.cpp:1585 ../kioslave/http/http.cpp:1688
 #, qt-format
 msgid "Access was denied while attempting to %1."
 msgstr "Truy cập bị từ chối trong khi cố %1."
 
-#: ../kioslave/http/http.cpp:1594
+#: ../kioslave/http/http.cpp:1592
 msgid "The specified folder already exists."
 msgstr "Thư mục đã ghi rõ tồn tại."
 
-#: ../kioslave/http/http.cpp:1600 ../kioslave/http/http.cpp:1695
+#: ../kioslave/http/http.cpp:1598 ../kioslave/http/http.cpp:1693
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -4931,7 +4945,7 @@ msgstr ""
 "Không thể tạo một tài nguyên tại đích, cho đến khi một hay nhiều tập hợp "
 "trung cấp (thư mục) đã được tạo."
 
-#: ../kioslave/http/http.cpp:1609
+#: ../kioslave/http/http.cpp:1607
 #, qt-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -4942,25 +4956,25 @@ msgstr ""
 "trong yếu tố XML tài sản / ứng xử, hoặc bạn đã cố ghi đè lên tập tin trong "
 "khi yêu cầu tập tin không bị ghi đè. %1"
 
-#: ../kioslave/http/http.cpp:1619
+#: ../kioslave/http/http.cpp:1617
 #, qt-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Không thể cung cấp khoá đã yêu cầu. %1"
 
-#: ../kioslave/http/http.cpp:1625
+#: ../kioslave/http/http.cpp:1623
 msgid "The server does not support the request type of the body."
 msgstr "Máy phục vụ không hỗ trợ kiểu yêu cầu của thân."
 
-#: ../kioslave/http/http.cpp:1630 ../kioslave/http/http.cpp:1702
+#: ../kioslave/http/http.cpp:1628 ../kioslave/http/http.cpp:1700
 #, qt-format
 msgid "Unable to %1 because the resource is locked."
 msgstr "Không thể %1, vì tài nguyên bị khoá."
 
-#: ../kioslave/http/http.cpp:1634
+#: ../kioslave/http/http.cpp:1632
 msgid "This action was prevented by another error."
 msgstr "Hành động này bị lỗi khác ngăn cản."
 
-#: ../kioslave/http/http.cpp:1641 ../kioslave/http/http.cpp:1707
+#: ../kioslave/http/http.cpp:1639 ../kioslave/http/http.cpp:1705
 #, qt-format
 msgid ""
 "Unable to %1 because the destination server refuses to accept the file or "
@@ -4968,7 +4982,7 @@ msgid ""
 msgstr ""
 "Không thể %1 vì máy phục vụ đích từ chối chấp nhận tập tin hay thư mục."
 
-#: ../kioslave/http/http.cpp:1648 ../kioslave/http/http.cpp:1713
+#: ../kioslave/http/http.cpp:1646 ../kioslave/http/http.cpp:1711
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -4976,76 +4990,76 @@ msgstr ""
 "Tài nguyên đích không có đủ sức chứa để ghi lưu tình trạng của tài nguyên "
 "sau khi thực hiện phương pháp này."
 
-#: ../kioslave/http/http.cpp:1670
+#: ../kioslave/http/http.cpp:1668
 #, qt-format
 msgid "upload %1"
 msgstr "tải lên %1"
 
-#: ../kioslave/http/http.cpp:1991
+#: ../kioslave/http/http.cpp:1989
 #, qt-format
 msgid "Connecting to %1..."
 msgstr "Đang kết nối đến %1..."
 
-#: ../kioslave/http/http.cpp:2009 ../kioslave/http/http.cpp:2013
+#: ../kioslave/http/http.cpp:2007 ../kioslave/http/http.cpp:2011
 #, qt-format
 msgid "Proxy %1 at port %2"
 msgstr "Ủy nhiệm %1, cổng %2"
 
-#: ../kioslave/http/http.cpp:2045
+#: ../kioslave/http/http.cpp:2043
 #, qt-format
 msgid "%1 (port %2)"
 msgstr "%1 (cổng %2)"
 
-#: ../kioslave/http/http.cpp:2580
+#: ../kioslave/http/http.cpp:2578
 #, qt-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "Đã liên lạc %1. Đang chờ trả lời..."
 
-#: ../kioslave/http/http.cpp:2946
+#: ../kioslave/http/http.cpp:2944
 msgid "Server processing request, please wait..."
 msgstr "Máy phục vụ đang xử lý yêu cầu, hãy đợi..."
 
-#: ../kioslave/http/http.cpp:3789
+#: ../kioslave/http/http.cpp:3787
 msgid "Requesting data to send"
 msgstr "Đang yêu cầu dữ liệu cần gởi..."
 
-#: ../kioslave/http/http.cpp:3830
+#: ../kioslave/http/http.cpp:3828
 #, qt-format
 msgid "Sending data to %1"
 msgstr "Đang gởi dữ liệu cho %1..."
 
-#: ../kioslave/http/http.cpp:4237
+#: ../kioslave/http/http.cpp:4235
 #, qt-format
 msgid "Retrieving %1 from %2..."
 msgstr "Đang lấy %1 từ %2..."
 
-#: ../kioslave/http/http.cpp:4246
+#: ../kioslave/http/http.cpp:4244
 #, qt-format
 msgid "Retrieving from %1..."
 msgstr "Đang lấy từ %1..."
 
-#: ../kioslave/http/http.cpp:5029 ../kioslave/http/http.cpp:5177
+#: ../kioslave/http/http.cpp:5027 ../kioslave/http/http.cpp:5175
 msgid "Authentication Failed."
 msgstr "Xác thực thất bại."
 
-#: ../kioslave/http/http.cpp:5032 ../kioslave/http/http.cpp:5180
+#: ../kioslave/http/http.cpp:5030 ../kioslave/http/http.cpp:5178
 msgid "Proxy Authentication Failed."
 msgstr "Xác thực ủy nhiệm thất bại."
 
-#: ../kioslave/http/http.cpp:5037
+#: ../kioslave/http/http.cpp:5035
 msgid "  Do you want to retry?"
 msgstr "  Bạn có muốn thử lại không?"
 
-#: ../kioslave/http/http.cpp:5038
+#: ../kioslave/http/http.cpp:5036
 msgid "Authentication"
 msgstr "Xác thực"
 
-#: ../kioslave/http/http.cpp:5058 ../kioslave/http/http.cpp:5075
+#: ../kioslave/http/http.cpp:5056 ../kioslave/http/http.cpp:5073
 #, qt-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> tại <b>%2</b>"
 
-#: ../kioslave/http/http.cpp:5065
+#: ../kioslave/http/http.cpp:5063
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5053,16 +5067,16 @@ msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu cho máy phục vụ ủy nhiệm "
 "được liệt kê dưới này, trước khi bạn có quyền truy cập nơi Mạng nào."
 
-#: ../kioslave/http/http.cpp:5074
+#: ../kioslave/http/http.cpp:5072
 msgid "Proxy:"
 msgstr "Ủy nhiệm:"
 
-#: ../kioslave/http/http.cpp:5096
+#: ../kioslave/http/http.cpp:5094
 #, qt-format
 msgid "Authentication needed for %1 but authentication is disabled."
 msgstr "Cần thiết xác thực với %1 nhưng khả năng xác thực bị tắt."
 
-#: ../kioslave/http/http.cpp:5715
+#: ../kioslave/http/http.cpp:5713
 msgid ""
 "Unsupported method: authentication will fail. Please submit a bug report."
 msgstr ""
@@ -5324,7 +5338,7 @@ msgstr "Khung xem chi tiết"
 msgid "Date"
 msgstr "Ngày"
 
-#: ../kfile/kfilefiltercombo.cpp:33 ../kfile/kfilewidget.cpp:1385
+#: ../kfile/kfilefiltercombo.cpp:33 ../kfile/kfilewidget.cpp:1377
 msgid "*|All Files"
 msgstr "*|Mọi tập tin"
 
@@ -5340,7 +5354,7 @@ msgstr "Xem thử"
 msgid "No preview available."
 msgstr "Không có sẵn khung xem thử."
 
-#: ../kfile/kfilewidget.cpp:181
+#: ../kfile/kfilewidget.cpp:175
 msgid ""
 "<p>While typing in the text area, you may be presented with possible "
 "matches. This feature can be controlled by clicking with the right mouse "
@@ -5350,11 +5364,11 @@ msgstr ""
 "điều khiển tính năng này bằng cách nhắp cái nút phải trên chuột rồi chọn chế "
 "độ ưa thích trong trình đơn <b>Gõ xong từ</b>."
 
-#: ../kfile/kfilewidget.cpp:215
+#: ../kfile/kfilewidget.cpp:207
 msgid "Current location"
 msgstr "Địa điểm hiện có"
 
-#: ../kfile/kfilewidget.cpp:216
+#: ../kfile/kfilewidget.cpp:208
 msgid ""
 "This is the currently listed location. The drop-down list also lists "
 "commonly used locations. This includes standard locations, such as your home "
@@ -5364,32 +5378,32 @@ msgstr ""
 "địa điểm đã dùng thường. Gồm có địa điểm chuẩn, như thư mục chính, cùng với "
 "các địa điểm đã thăm gần đây."
 
-#: ../kfile/kfilewidget.cpp:226
+#: ../kfile/kfilewidget.cpp:218
 #, qt-format
 msgid "Drive: %1"
 msgstr "Ổ : %1"
 
-#: ../kfile/kfilewidget.cpp:233
+#: ../kfile/kfilewidget.cpp:225
 #, qt-format
 msgid "Root Folder: %1"
 msgstr "Thư mục gốc : %1"
 
-#: ../kfile/kfilewidget.cpp:240
+#: ../kfile/kfilewidget.cpp:232
 #, qt-format
 msgid "Home Folder: %1"
 msgstr "Thư mục chính: %1"
 
-#: ../kfile/kfilewidget.cpp:249
+#: ../kfile/kfilewidget.cpp:241
 #, qt-format
 msgid "Documents: %1"
 msgstr "Tài liệu : %1"
 
-#: ../kfile/kfilewidget.cpp:256
+#: ../kfile/kfilewidget.cpp:248
 #, qt-format
 msgid "Desktop: %1"
 msgstr "Môi trường: %1"
 
-#: ../kfile/kfilewidget.cpp:298
+#: ../kfile/kfilewidget.cpp:290
 #, qt-format
 msgid ""
 "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -5400,35 +5414,35 @@ msgstr ""
 "có là &lt;file:/home/%1&gt;, nhắp vào nút này sẽ hiển thị &lt;file:/home&gt;."
 "</qt>"
 
-#: ../kfile/kfilewidget.cpp:302
+#: ../kfile/kfilewidget.cpp:294
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Nhắp vào nút này để lùi lại một bước trong lược sử duyệt."
 
-#: ../kfile/kfilewidget.cpp:304
+#: ../kfile/kfilewidget.cpp:296
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Nhắp vào nút này để tiếp lại một bước trong lược sử duyệt."
 
-#: ../kfile/kfilewidget.cpp:306
+#: ../kfile/kfilewidget.cpp:298
 msgid "Click this button to reload the contents of the current location."
 msgstr "Nhắp vào nút này để tải lại nội dung của địa điểm hiện có."
 
-#: ../kfile/kfilewidget.cpp:309
+#: ../kfile/kfilewidget.cpp:301
 msgid "Click this button to create a new folder."
 msgstr "Nhắp vào nút này để tạo một thư mục mới."
 
-#: ../kfile/kfilewidget.cpp:312
+#: ../kfile/kfilewidget.cpp:304
 msgid "Show Quick Access Navigation Panel"
 msgstr "Hiện bảng duyệt truy cập nhanh"
 
-#: ../kfile/kfilewidget.cpp:319
+#: ../kfile/kfilewidget.cpp:311
 msgid "Show Bookmarks"
 msgstr "Hiện Đánh dấu"
 
-#: ../kfile/kfilewidget.cpp:324
+#: ../kfile/kfilewidget.cpp:316
 msgid "Configure"
 msgstr "Cấu hình"
 
-#: ../kfile/kfilewidget.cpp:326
+#: ../kfile/kfilewidget.cpp:318
 msgid ""
 "<qt>This is the configuration menu for the file dialog. Various options can "
 "be accessed from this menu including: <ul><li>how files are sorted in the "
@@ -5442,11 +5456,11 @@ msgstr ""
 "li><li>hiển thị các tập tin bị ẩn</li><li>bảng duyệt Truy cập Nhanh</"
 "li><li>khung xem tập tin</li><li>phân cách thư mục ra tập tin</li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:377
+#: ../kfile/kfilewidget.cpp:369
 msgid "&Location:"
 msgstr "&Địa điểm:"
 
-#: ../kfile/kfilewidget.cpp:399
+#: ../kfile/kfilewidget.cpp:391
 msgid ""
 "<qt>This is the filter to apply to the file list. File names that do not "
 "match the filter will not be shown.<p>You may select from one of the preset "
@@ -5458,29 +5472,29 @@ msgstr ""
 "bộ lọc có sẵn trong trình đơn thả xuống, hoặc gõ trực tiếp vào trường chữ "
 "một bộ lọc tự chọn.<p>Cho phép dùng ký tự đại diện như « * » và « ? ».</qt>"
 
-#: ../kfile/kfilewidget.cpp:405
+#: ../kfile/kfilewidget.cpp:397
 msgid "&Filter:"
 msgstr "&Lọc:"
 
-#: ../kfile/kfilewidget.cpp:567
+#: ../kfile/kfilewidget.cpp:559
 msgid "Please specify the filename to save to."
 msgstr "Hãy ghi rõ tên tập tin nơi cần lưu."
 
-#: ../kfile/kfilewidget.cpp:569
+#: ../kfile/kfilewidget.cpp:561
 msgid "Please select the file to open."
 msgstr "Hãy chọn tập tin cần mở."
 
-#: ../kfile/kfilewidget.cpp:626 ../kfile/kfilewidget.cpp:669
-#: ../kfile/kfilewidget.cpp:1330
+#: ../kfile/kfilewidget.cpp:618 ../kfile/kfilewidget.cpp:661
+#: ../kfile/kfilewidget.cpp:1322
 msgid "You can only select local files."
 msgstr "Bạn có khả năng chọn chỉ tập tin cục bộ thôi."
 
-#: ../kfile/kfilewidget.cpp:627 ../kfile/kfilewidget.cpp:670
-#: ../kfile/kfilewidget.cpp:1331
+#: ../kfile/kfilewidget.cpp:619 ../kfile/kfilewidget.cpp:662
+#: ../kfile/kfilewidget.cpp:1323
 msgid "Remote Files Not Accepted"
 msgstr "Không chấp nhận tập tin từ xa"
 
-#: ../kfile/kfilewidget.cpp:661
+#: ../kfile/kfilewidget.cpp:653
 #, qt-format
 msgid ""
 "%1\n"
@@ -5489,15 +5503,15 @@ msgstr ""
 "%1\n"
 "không có vẻ là địa chỉ Mạng hợp lệ.\n"
 
-#: ../kfile/kfilewidget.cpp:661
+#: ../kfile/kfilewidget.cpp:653
 msgid "Invalid URL"
 msgstr "Địa chỉ Mạng không hợp lệ"
 
-#: ../kfile/kfilewidget.cpp:981
+#: ../kfile/kfilewidget.cpp:973
 msgid "This is the name to save the file as."
 msgstr "Đây là tên cho tập tin đang lưu."
 
-#: ../kfile/kfilewidget.cpp:986
+#: ../kfile/kfilewidget.cpp:978
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5505,11 +5519,11 @@ msgstr ""
 "Đây là danh sách những tập tin cần mở. Có thể ghi rõ nhiều tập tin, định "
 "giới bằng dấu cách."
 
-#: ../kfile/kfilewidget.cpp:993
+#: ../kfile/kfilewidget.cpp:985
 msgid "This is the name of the file to open."
 msgstr "Đây là tên của tập tin cần mở."
 
-#: ../kfile/kfilewidget.cpp:1262
+#: ../kfile/kfilewidget.cpp:1254
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -5517,11 +5531,11 @@ msgstr ""
 "Những tên tập tin đã chọn\n"
 "có vẻ không phải là hợp lệ."
 
-#: ../kfile/kfilewidget.cpp:1264
+#: ../kfile/kfilewidget.cpp:1256
 msgid "Invalid Filenames"
 msgstr "Tên tập tin không hợp lệ"
 
-#: ../kfile/kfilewidget.cpp:1293
+#: ../kfile/kfilewidget.cpp:1285
 #, qt-format
 msgid ""
 "The requested filenames\n"
@@ -5534,33 +5548,33 @@ msgstr ""
 "có vẻ không phải là hợp lệ.\n"
 "Hãy kiểm tra xem mỗi tên tập tin nằm bên trong dấu trích dẫn đôi."
 
-#: ../kfile/kfilewidget.cpp:1297
+#: ../kfile/kfilewidget.cpp:1289
 msgid "Filename Error"
 msgstr "Lỗi tên tập tin"
 
-#: ../kfile/kfilewidget.cpp:1382
+#: ../kfile/kfilewidget.cpp:1374
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: ../kfile/kfilewidget.cpp:1649
+#: ../kfile/kfilewidget.cpp:1641
 #, qt-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Chọn tự động phần mở &rộng tên tập tin (%1)"
 
-#: ../kfile/kfilewidget.cpp:1650
+#: ../kfile/kfilewidget.cpp:1642
 #, qt-format
 msgid "the extension <b>%1</b>"
 msgstr "phần mở rộng <b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1658
+#: ../kfile/kfilewidget.cpp:1650
 msgid "Automatically select filename e&xtension"
 msgstr "Chọn tự động phần mở &rộng tên tập tin"
 
-#: ../kfile/kfilewidget.cpp:1659
+#: ../kfile/kfilewidget.cpp:1651
 msgid "a suitable extension"
 msgstr "là một phần mở rộng thích hợp"
 
-#: ../kfile/kfilewidget.cpp:1669
+#: ../kfile/kfilewidget.cpp:1661
 #, qt-format
 msgid ""
 "This option enables some convenient features for saving files with "
@@ -5586,7 +5600,7 @@ msgstr ""
 "của tên tập tin (dấu chấm này sẽ được gỡ bỏ tự động).</li></ol>Nếu chưa "
 "chắc, hãy cứ bật tùy chọn này, vì nó làm cho các tập tin dễ hơn quản lý."
 
-#: ../kfile/kfilewidget.cpp:1940
+#: ../kfile/kfilewidget.cpp:1932
 msgid ""
 "<qt>This button allows you to bookmark specific locations. Click on this "
 "button to open the bookmark menu where you may add, edit or select a "
@@ -5598,35 +5612,35 @@ msgstr ""
 "<p>Những đánh dấu này đặc trưng cho hộp thoại tập tin, nhưng về mặt khác có "
 "cùng hoạt động với các đánh dấu khác trong KDE.</qt>"
 
-#: ../kfile/kfileplacesmodel.cpp:79
+#: ../kfile/kfileplacesmodel.cpp:80
 msgid "Home"
 msgstr "Nhà"
 
-#: ../kfile/kfileplacesmodel.cpp:80
+#: ../kfile/kfileplacesmodel.cpp:81
 msgid "Network"
 msgstr "Mạng"
 
-#: ../kfile/kfileplacesmodel.cpp:81
+#: ../kfile/kfileplacesmodel.cpp:84 ../kfile/kfileplacesmodel.cpp:86
 msgid "Root"
 msgstr "Gốc"
 
-#: ../kfile/kfileplacesmodel.cpp:82
+#: ../kfile/kfileplacesmodel.cpp:88
 msgid "Trash"
 msgstr "Rác"
 
 # msgid "Eject"
-#: ../kfile/kfileplacesmodel.cpp:632
+#: ../kfile/kfileplacesmodel.cpp:638
 #, qt-format
 msgid "&Eject '%1'"
 msgstr "Đẩy &ra « %1 »"
 
-#: ../kfile/kfileplacesmodel.cpp:634
+#: ../kfile/kfileplacesmodel.cpp:640
 #, qt-format
 msgid "&Safely remove '%1'"
 msgstr "Bỏ &an toàn « %1 »"
 
 # msgid "Unmount"
-#: ../kfile/kfileplacesmodel.cpp:636
+#: ../kfile/kfileplacesmodel.cpp:642
 #, qt-format
 msgid "&Unmount '%1'"
 msgstr "&Bỏ lắp « %1 »"
@@ -5634,18 +5648,18 @@ msgstr "&Bỏ lắp « %1 »"
 # msgid ""
 # An error occurred while attempting to %1, %2. A summary of the reasons is 
 # below.<ul>
-#: ../kfile/kfileplacesmodel.cpp:689
+#: ../kfile/kfileplacesmodel.cpp:700
 #, qt-format
 msgid "An error occurred while accessing '%1', the system said: %2"
 msgstr "Gặp lỗi khi truy cập « %1 »: thông điệp hệ thống: %2"
 
 # msgid "An unexpected error (%1) occurred while attempting to %2."
-#: ../kfile/kfileplacesmodel.cpp:693
+#: ../kfile/kfileplacesmodel.cpp:704
 #, qt-format
 msgid "An error occurred while accessing '%1'"
 msgstr "Gặp lỗi khi truy cập « %1 »."
 
-#: ../kfile/kurlnavigator.cpp:550
+#: ../kfile/kurlnavigator.cpp:539
 msgid "Custom Path"
 msgstr "Đường dẫn riêng"
 

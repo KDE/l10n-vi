@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-26 05:31+0200\n"
+"POT-Creation-Date: 2007-07-27 05:45+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -88,6 +88,12 @@ msgid "Start KGet with drop target"
 msgstr "Hiện cửa sổ thả xuống khi chạy KGet"
 
 #: main.cpp:128
+#, fuzzy
+#| msgid "Start KGet with drop target"
+msgid "Start KGet with hidden main window"
+msgstr "Hiện cửa sổ thả xuống khi chạy KGet"
+
+#: main.cpp:129
 msgid "URL(s) to download"
 msgstr "URL để tải về"
 
@@ -107,16 +113,14 @@ msgstr "&Xuất danh sách truyền..."
 msgid "Edit Groups..."
 msgstr "Sửa nhóm..."
 
-#: mainwindow.cpp:120
-#, fuzzy
-#| msgid "Delete Group"
-msgid "Delete Group."
+#: mainwindow.cpp:120 ui/groupseditdialog.cpp:37
+msgid "Delete Group"
 msgstr "Xoá nhóm"
 
 #: mainwindow.cpp:125
 #, fuzzy
 #| msgid "Delete Group"
-msgid "Rename Group."
+msgid "Rename Group"
 msgstr "Xoá nhóm"
 
 #: mainwindow.cpp:130
@@ -177,36 +181,40 @@ msgstr "Hiện chi tiết"
 msgid "Copy URL to Clipboard"
 msgstr "Chép URL vào bảng nháp"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:250
+#, fuzzy
+#| msgid ""
+#| "This is the first time you have run KGet.\n"
+#| "Would you like to use KGet as the download manager for Konqueror?"
 msgid ""
 "This is the first time you have run KGet.\n"
-"Would you like to use KGet as the download manager for Konqueror?"
+"Would you like to enable KGet as the download manager for Konqueror?"
 msgstr ""
 "Đây là lần đầu tiên bạn chạy KGet.\n"
 "Bạn có muốn gán KGet là bộ quản lý việc tải về của trình duyệt Konqueror "
 "không?"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Konqueror Integration"
 msgstr "Hợp nhất với Konqueror"
 
-#: mainwindow.cpp:255
+#: mainwindow.cpp:252
 msgid "Enable"
 msgstr "Bật"
 
-#: mainwindow.cpp:256
+#: mainwindow.cpp:253
 msgid "Do Not Enable"
 msgstr "Không bật"
 
-#: mainwindow.cpp:282
+#: mainwindow.cpp:284
 msgid "All Openable Files"
 msgstr "Mọi tập tin mở được"
 
-#: mainwindow.cpp:283
+#: mainwindow.cpp:285
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: mainwindow.cpp:299
+#: mainwindow.cpp:301
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -214,27 +222,27 @@ msgstr ""
 "Một vài truyền tải vẫn đang chạy.\n"
 "Bạn có chắc muốn đóng KGet không?"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:303
 msgid "Confirm Quit"
 msgstr "Xác nhận Thoát"
 
-#: mainwindow.cpp:334
+#: mainwindow.cpp:336
 msgid "KGet Transfer List"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:338
 msgid "Export Transfers"
 msgstr "Xuất truyền"
 
-#: mainwindow.cpp:366 ui/groupseditdialog.cpp:65
+#: mainwindow.cpp:368 ui/groupseditdialog.cpp:65
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:367 ui/groupseditdialog.cpp:66
+#: mainwindow.cpp:369 ui/groupseditdialog.cpp:66
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:545
+#: mainwindow.cpp:547
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -244,7 +252,7 @@ msgstr ""
 "Konqueror. Muốn tắt luôn thì tới « Thiết lập > Cấp cao » rồi tắt mục « Dùng "
 "làm bộ quản lý việc tải về cho Konqueror »."
 
-#: mainwindow.cpp:548
+#: mainwindow.cpp:550
 msgid "Konqueror Integration disabled"
 msgstr "Khả năng hợp nhất với Konqueror bị tắt"
 
@@ -754,23 +762,35 @@ msgstr "Tiến hành"
 msgid "Speed"
 msgstr "Tốc độ"
 
-#: ui/droptarget.cpp:82
-msgid "Hide Me"
-msgstr "Ẩn tôi"
-
 #: ui/droptarget.cpp:83
+#, fuzzy
+#| msgid "Hiding drop target"
+msgid "Hide Drop Target"
+msgstr "Đang ẩn đĩch thả"
+
+#: ui/droptarget.cpp:84
 msgid "Sticky"
 msgstr "Dính"
 
-#: ui/droptarget.cpp:254
+#: ui/droptarget.cpp:260
 msgid "Show Main Window"
 msgstr "Hiện cửa sổ chính"
 
-#: ui/droptarget.cpp:255
+#: ui/droptarget.cpp:261
 msgid "Hide Main Window"
 msgstr "Ẩn cửa sổ chính"
 
-#: ui/droptarget.cpp:375
+#: ui/droptarget.cpp:338
+#, fuzzy
+#| msgid "Show drop target"
+msgid "Drop Target"
+msgstr "Hiện đích thả"
+
+#: ui/droptarget.cpp:339
+msgid "You can drag download links into the drop target."
+msgstr ""
+
+#: ui/droptarget.cpp:385
 msgid ""
 "Drop target has been hidden. If you want to show it again, go to Settings-"
 ">Configure KGet->Look & Feel."
@@ -778,7 +798,7 @@ msgstr ""
 "Đích thả đã bị ẩn. Muốn hiển thị lại thì tới « Thiết lập > Cấu hình KGet > "
 "Diện mạo và Cảm nhận »."
 
-#: ui/droptarget.cpp:377
+#: ui/droptarget.cpp:387
 msgid "Hiding drop target"
 msgstr "Đang ẩn đĩch thả"
 
@@ -789,10 +809,6 @@ msgstr "Sửa nhóm"
 #: ui/groupseditdialog.cpp:32
 msgid "Add Group..."
 msgstr "Thêm nhóm..."
-
-#: ui/groupseditdialog.cpp:37
-msgid "Delete Group"
-msgstr "Xoá nhóm"
 
 #: ui/groupseditdialog.cpp:74
 msgid ""
@@ -847,6 +863,14 @@ msgstr "Truyền:"
 #: ui/viewscontainer.cpp:186
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
+
+#, fuzzy
+#~| msgid "Delete Group"
+#~ msgid "Delete Group."
+#~ msgstr "Xoá nhóm"
+
+#~ msgid "Hide Me"
+#~ msgstr "Ẩn tôi"
 
 #~ msgctxt "%1 is the name of the group"
 #~ msgid "%1 Group"

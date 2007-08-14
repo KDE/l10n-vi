@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-12 05:39+0200\n"
+"POT-Creation-Date: 2007-08-14 05:37+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1083,7 +1083,13 @@ msgstr "Sổ tay digiKam"
 msgid "Color Profile Info"
 msgstr "Thông tin hồ sơ màu"
 
-#: libs/database/databaseaccess.cpp:170
+#: libs/database/databaseaccess.cpp:157
+msgid ""
+"The driver \"SQLITE\" for SQLite3 databases is not available.\n"
+"digiKam depends on the drivers provided by the SQL module of Qt4."
+msgstr ""
+
+#: libs/database/databaseaccess.cpp:180
 msgid ""
 "Error opening database backend.\n"
 " "
@@ -2166,7 +2172,7 @@ msgstr ""
 #: digikam/albumfolderview.cpp:212 digikam/albumfolderview.cpp:437
 #: digikam/albumfolderview.cpp:900 digikam/albumfolderview.cpp:988
 #: digikam/albumfolderview.cpp:1021 digikam/albumfolderview.cpp:1098
-#: digikam/albummanager.cpp:329 digikam/kipiinterface.cpp:498
+#: digikam/albummanager.cpp:330 digikam/kipiinterface.cpp:498
 #: digikam/album.cpp:344
 msgid "My Albums"
 msgstr "Tập ảnh tôi"
@@ -2251,7 +2257,7 @@ msgstr "tạo : %1"
 msgid "modified : %1"
 msgstr "sửa đổi : %1"
 
-#: digikam/albumpropsedit.cpp:96 digikam/albumpropsedit.cpp:206
+#: digikam/albumpropsedit.cpp:96 digikam/albumpropsedit.cpp:207
 msgid "New Album"
 msgstr "Tập ảnh mới"
 
@@ -2269,51 +2275,51 @@ msgstr "<qt><b>Tạo tập ảnh mới trong « <i>%1</i> »</b></qt>"
 msgid "<qt><b>\"<i>%1</i>\" Album Properties</b></qt>"
 msgstr "<qt><b>Thuộc tính tập ảnh « <i>%1</i> »</b></qt>"
 
-#: digikam/albumpropsedit.cpp:130 digikam/tagcreatedlg.cpp:119
+#: digikam/albumpropsedit.cpp:131 digikam/tagcreatedlg.cpp:119
 #: digikam/tagcreatedlg.cpp:288
 msgid "&Title:"
 msgstr "&Tựa:"
 
-#: digikam/albumpropsedit.cpp:136
+#: digikam/albumpropsedit.cpp:137
 msgid "Co&llection:"
 msgstr "Tập &hợp:"
 
-#: digikam/albumpropsedit.cpp:143
+#: digikam/albumpropsedit.cpp:144
 msgid "Co&mments:"
 msgstr "&Ghi chú :"
 
-#: digikam/albumpropsedit.cpp:151
+#: digikam/albumpropsedit.cpp:152
 msgid "Album &date:"
 msgstr "&Ngày tập ảnh:"
 
-#: digikam/albumpropsedit.cpp:158
+#: digikam/albumpropsedit.cpp:159
 #, fuzzy
 #| msgid "&Reset"
 msgctxt "Selects the date of the oldest image"
 msgid "&Oldest"
 msgstr "Đặt &lại"
 
-#: digikam/albumpropsedit.cpp:160
+#: digikam/albumpropsedit.cpp:161
 #, fuzzy
 #| msgid "Average"
 msgctxt "Calculates the average date"
 msgid "&Average"
 msgstr "Trung bình"
 
-#: digikam/albumpropsedit.cpp:162
+#: digikam/albumpropsedit.cpp:163
 msgctxt "Selects the date of the newest image"
 msgid "Newest"
 msgstr ""
 
-#: digikam/albumpropsedit.cpp:259
+#: digikam/albumpropsedit.cpp:260
 msgid "Uncategorized Album"
 msgstr "Tập ảnh chưa phân loại"
 
-#: digikam/albumpropsedit.cpp:358
+#: digikam/albumpropsedit.cpp:359
 msgid "Could not calculate an average."
 msgstr "Không thể tính số trung bình."
 
-#: digikam/albumpropsedit.cpp:359
+#: digikam/albumpropsedit.cpp:360
 msgid "Could Not Calculate Average"
 msgstr "Không thể tính trung bình"
 
@@ -2548,7 +2554,7 @@ msgstr "Đặt lại"
 
 #: digikam/tagfolderview.cpp:141 digikam/tagfolderview.cpp:404
 #: digikam/tagfolderview.cpp:706 digikam/tagfolderview.cpp:781
-#: digikam/tagfolderview.cpp:811 digikam/albummanager.cpp:332
+#: digikam/tagfolderview.cpp:811 digikam/albummanager.cpp:333
 #: digikam/album.cpp:403
 msgid "My Tags"
 msgstr "Thẻ tôi"
@@ -2901,17 +2907,22 @@ msgid "Start digikam with the album root <path>"
 msgstr "Khởi chạy digiKam với <đường dẫn> gốc của tập ảnh"
 
 #: digikam/albummanager.cpp:225
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "<qt><p>Failed to open the database.  Error message from database: %1 </"
+#| "p><p>You cannot use digiKam without a working database.Please check the "
+#| "database settings in the configuration menu.</p></qt>"
 msgid ""
 "<qt><p>Failed to open the database.  Error message from database: %1 </"
-"p><p>You cannot use digiKam without a working database.Please check the "
-"database settings in the configuration menu.</p></qt>"
+"p><p>You cannot use digiKam without a working database. digiKam will attempt "
+"to start now, but it will <b>not</b> be functional. Please check the "
+"database settings in the <b>configuration menu</b>.</p></qt>"
 msgstr ""
 "<qt><p>Lỗi mở cơ sở dữ liệu. Thông điệp lỗi từ cơ sở dữ liệu : %1 </"
 "p><p>Không có cơ sở dữ liệu hoạt động được thì không thể sử dụng digiKam. "
 "Hãy kiểm tra lại thiết lập cơ sở dữ liệu trong trình đơn cấu hình.</p></qt>"
 
-#: digikam/albummanager.cpp:288
+#: digikam/albummanager.cpp:289
 #, qt-format
 msgid ""
 "Your locale has changed from the previous time this album was opened.\n"
@@ -2926,61 +2937,61 @@ msgstr ""
 "nhấn vào « Có » để làm việc với tập ảnh này. Không thì nhấn vào « Không » và "
 "sửa chữa thiết lập miền địa phương trước khi khởi chạy lại trình digiKam."
 
-#: digikam/albummanager.cpp:786
+#: digikam/albummanager.cpp:787
 msgid "No parent found for album."
 msgstr "Không tìm thấy điều mẹ cho tập ảnh."
 
-#: digikam/albummanager.cpp:793
+#: digikam/albummanager.cpp:794
 msgid "Album name cannot be empty."
 msgstr "Không cho phép tên tập ảnh rỗng."
 
-#: digikam/albummanager.cpp:799
+#: digikam/albummanager.cpp:800
 msgid "Album name cannot contain '/'."
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:808
+#: digikam/albummanager.cpp:809
 msgid "No album root path supplied"
 msgstr "Chưa cung cấp đường dẫn gốc của tập ảnh"
 
-#: digikam/albummanager.cpp:824
+#: digikam/albummanager.cpp:825
 msgid "An existing album has the same name."
 msgstr "Một tập ảnh cùng tên đã có."
 
-#: digikam/albummanager.cpp:840
+#: digikam/albummanager.cpp:841
 msgid "Another file or folder with same name exists"
 msgstr "Một tập tin hay thư mục cùng tên đã có."
 
-#: digikam/albummanager.cpp:842
+#: digikam/albummanager.cpp:843
 msgid "Access denied to path"
 msgstr "Truy cập vào đường dẫn bị từ chối"
 
-#: digikam/albummanager.cpp:844
+#: digikam/albummanager.cpp:845
 msgid "Disk is full"
 msgstr "Đĩa đầy"
 
-#: digikam/albummanager.cpp:846
+#: digikam/albummanager.cpp:847
 msgid "Unknown error"
 msgstr "Lỗi không rõ"
 
-#: digikam/albummanager.cpp:855
+#: digikam/albummanager.cpp:856
 msgid "Failed to add album to database"
 msgstr "Lỗi thêm tập ảnh vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:878 digikam/albummanager.cpp:962
-#: digikam/albummanager.cpp:1055 digikam/albummanager.cpp:1091
-#: digikam/albummanager.cpp:1131
+#: digikam/albummanager.cpp:879 digikam/albummanager.cpp:963
+#: digikam/albummanager.cpp:1056 digikam/albummanager.cpp:1092
+#: digikam/albummanager.cpp:1132
 msgid "No such album"
 msgstr "Không có tập ảnh như vậy"
 
-#: digikam/albummanager.cpp:884
+#: digikam/albummanager.cpp:885
 msgid "Cannot rename root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: digikam/albummanager.cpp:890
+#: digikam/albummanager.cpp:891
 msgid "Album name cannot contain '/'"
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:900
+#: digikam/albummanager.cpp:901
 msgid ""
 "Another album with same name exists\n"
 "Please choose another name"
@@ -2988,43 +2999,43 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:916
+#: digikam/albummanager.cpp:917
 msgid "Failed to rename Album"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: digikam/albummanager.cpp:968
+#: digikam/albummanager.cpp:969
 msgid "Cannot edit root album"
 msgstr "Không thể sửa đổi tập ảnh gốc"
 
-#: digikam/albummanager.cpp:988
+#: digikam/albummanager.cpp:989
 msgid "No parent found for tag"
 msgstr "Không tìm thấy điều mẹ cho thẻ"
 
-#: digikam/albummanager.cpp:995
+#: digikam/albummanager.cpp:996
 msgid "Tag name cannot be empty"
 msgstr "Không cho phép tên thẻ rỗng."
 
-#: digikam/albummanager.cpp:1001 digikam/albummanager.cpp:1103
+#: digikam/albummanager.cpp:1002 digikam/albummanager.cpp:1104
 msgid "Tag name cannot contain '/'"
 msgstr "Không cho phép tên thẻ chứa « / »"
 
-#: digikam/albummanager.cpp:1011
+#: digikam/albummanager.cpp:1012
 msgid "Tag name already exists"
 msgstr "Tên thẻ đã có."
 
-#: digikam/albummanager.cpp:1020
+#: digikam/albummanager.cpp:1021
 msgid "Failed to add tag to database"
 msgstr "Lỗi thêm thẻ vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:1061
+#: digikam/albummanager.cpp:1062
 msgid "Cannot delete Root Tag"
 msgstr "Không thể xoá thẻ gốc"
 
-#: digikam/albummanager.cpp:1097 digikam/albummanager.cpp:1161
+#: digikam/albummanager.cpp:1098 digikam/albummanager.cpp:1162
 msgid "Cannot edit root tag"
 msgstr "Không thể sửa đổi thẻ gốc"
 
-#: digikam/albummanager.cpp:1113
+#: digikam/albummanager.cpp:1114
 msgid ""
 "Another tag with same name exists\n"
 "Please choose another name"
@@ -3032,11 +3043,11 @@ msgstr ""
 "Một thẻ cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:1137
+#: digikam/albummanager.cpp:1138
 msgid "Cannot move root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: digikam/albummanager.cpp:1155
+#: digikam/albummanager.cpp:1156
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
@@ -4269,19 +4280,19 @@ msgstr "Cảnh báo"
 msgid "Prepare slideshow. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
 
-#: kioslave/digikamalbums.cpp:145 kioslave/digikamalbums.cpp:267
-#: kioslave/digikamalbums.cpp:277 kioslave/digikamalbums.cpp:366
-#: kioslave/digikamalbums.cpp:377
+#: kioslave/digikamalbums.cpp:146 kioslave/digikamalbums.cpp:268
+#: kioslave/digikamalbums.cpp:278 kioslave/digikamalbums.cpp:367
+#: kioslave/digikamalbums.cpp:378
 #, qt-format
 msgid "Source album %1 not found in database"
 msgstr "Không tìm thấy tập ảnh nguồn %1 trong cơ sở dữ liệu"
 
-#: kioslave/digikamalbums.cpp:208
+#: kioslave/digikamalbums.cpp:209
 #, qt-format
 msgid "Source image %1 not found in database"
 msgstr "Không tìm thấy ảnh nguồn %1 trong cơ sở dữ liệu"
 
-#: kioslave/digikamalbums.cpp:285
+#: kioslave/digikamalbums.cpp:286
 #, qt-format
 msgid "Destination album %1 not found in database"
 msgstr "Không tìm thấy tập ảnh đích %1 trong cơ sở dữ liệu"

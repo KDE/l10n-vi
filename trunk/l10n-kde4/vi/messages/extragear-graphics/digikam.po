@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-19 05:38+0200\n"
+"POT-Creation-Date: 2007-08-22 05:44+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -105,21 +105,25 @@ msgstr ""
 msgid "Comments/Tags"
 msgstr "Ghi chú/Thẻ"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:102
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:107
 msgid "EXIF"
 msgstr "EXIF"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:107
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:112
 msgid "Makernote"
 msgstr "Ghi chú nhà tạo"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:112
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:117
 msgid "IPTC"
 msgstr "IPTC"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:117
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:122
 msgid "GPS"
 msgstr "GPS"
+
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:128
+msgid "XMP"
+msgstr ""
 
 #: libs/imageproperties/imagepropertiestab.cpp:179
 msgid "<big><b>File Properties</b></big>"
@@ -267,14 +271,15 @@ msgid "JPEG quality %1"
 msgstr "Chất lượng JPEG %1"
 
 #: libs/imageproperties/imagepropertiestab.cpp:507
-#: libs/thumbbar/thumbbar.cpp:978 libs/widgets/metadata/exifwidget.cpp:159
-#: libs/widgets/metadata/makernotewidget.cpp:183
-#: libs/widgets/metadata/iptcwidget.cpp:141
-#: libs/widgets/metadata/gpswidget.cpp:303
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:311
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:344
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:374
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:395
+#: libs/thumbbar/thumbbar.cpp:978 libs/widgets/metadata/xmpwidget.cpp:151
+#: libs/widgets/metadata/exifwidget.cpp:157
+#: libs/widgets/metadata/makernotewidget.cpp:181
+#: libs/widgets/metadata/iptcwidget.cpp:139
+#: libs/widgets/metadata/gpswidget.cpp:302
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:348
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:381
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:411
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:432
 #: digikam/albumiconitem.cpp:322 digikam/albumfiletip.cpp:412
 #: showfoto/showfoto.cpp:742 utilities/imageeditor/canvas/undoaction.h:135
 #: utilities/imageeditor/editor/imagewindow.cpp:608
@@ -1382,55 +1387,72 @@ msgstr "Nháy:"
 msgid "White Balance:"
 msgstr "Cán cân trắng:"
 
+#: libs/widgets/metadata/xmpwidget.cpp:95
+msgid "XMP Schema"
+msgstr ""
+
+#: libs/widgets/metadata/xmpwidget.cpp:161
+#: libs/widgets/metadata/exifwidget.cpp:167
+#: libs/widgets/metadata/makernotewidget.cpp:191
+#: libs/widgets/metadata/iptcwidget.cpp:149
+#: libs/widgets/metadata/gpswidget.cpp:312
+msgid "No description available"
+msgstr "Không có mô tả"
+
+#: libs/widgets/metadata/xmpwidget.cpp:168
+#, fuzzy
+#| msgid "EXIF File to Save"
+msgid "XMP File to Save"
+msgstr "Tập tin EXIF cần lưu"
+
+#: libs/widgets/metadata/xmpwidget.cpp:169
+#, fuzzy
+#| msgid "EXIF binary Files (*.dat)"
+msgid "XMP binary Files (*.dat)"
+msgstr "Tập tin nhị phân EXIF (*.dat)"
+
 #: libs/widgets/metadata/exifwidget.cpp:100
 msgid "Standard EXIF Tags"
 msgstr "Thẻ EXIF chuẩn"
 
-#: libs/widgets/metadata/exifwidget.cpp:169
-#: libs/widgets/metadata/makernotewidget.cpp:193
-#: libs/widgets/metadata/iptcwidget.cpp:151
-#: libs/widgets/metadata/gpswidget.cpp:313
-msgid "No description available"
-msgstr "Không có mô tả"
-
-#: libs/widgets/metadata/exifwidget.cpp:176
-#: libs/widgets/metadata/makernotewidget.cpp:200
-#: libs/widgets/metadata/gpswidget.cpp:335
+#: libs/widgets/metadata/exifwidget.cpp:174
+#: libs/widgets/metadata/makernotewidget.cpp:198
+#: libs/widgets/metadata/gpswidget.cpp:333
 msgid "EXIF File to Save"
 msgstr "Tập tin EXIF cần lưu"
 
-#: libs/widgets/metadata/exifwidget.cpp:177
-#: libs/widgets/metadata/makernotewidget.cpp:201
-#: libs/widgets/metadata/gpswidget.cpp:336
+#: libs/widgets/metadata/exifwidget.cpp:175
+#: libs/widgets/metadata/makernotewidget.cpp:199
+#: libs/widgets/metadata/gpswidget.cpp:334
 msgid "EXIF binary Files (*.dat)"
 msgstr "Tập tin nhị phân EXIF (*.dat)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:119
+#: libs/widgets/metadata/metadatawidget.cpp:118
 msgid "Toggle tags view to a simple human-readable list"
 msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
 
-#: libs/widgets/metadata/metadatawidget.cpp:126
+#: libs/widgets/metadata/metadatawidget.cpp:125
 msgid "Toggle tags view to a full list"
 msgstr "Bật/tắt ô xem thẻ thành danh sách đầy đủ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:141
+#: libs/widgets/metadata/metadatawidget.cpp:140
 msgid "Save meta-data to a binary file"
 msgstr "Lưu siêu dữ liệu vào tập tin nhị phân"
 
-#: libs/widgets/metadata/metadatawidget.cpp:146
+#: libs/widgets/metadata/metadatawidget.cpp:145
 msgid "Print meta-data to printer"
 msgstr "In siêu dữ liệu vào máy in"
 
-#: libs/widgets/metadata/metadatawidget.cpp:151
+#: libs/widgets/metadata/metadatawidget.cpp:150
 msgid "Copy meta-data to clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: libs/widgets/metadata/metadatawidget.cpp:280
+#: libs/widgets/metadata/metadatawidget.cpp:279
 #, qt-format
 msgid "File name: %1 (%2)"
 msgstr "Tên tập tin: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:311
+#: libs/widgets/metadata/metadatawidget.cpp:310
 #, qt-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>Tên tập tin: %1 (%2)</b></big></big>"
@@ -1443,11 +1465,11 @@ msgstr "Thẻ EXIF MakerNote"
 msgid "IPTC Records"
 msgstr "Mục ghi IPTC"
 
-#: libs/widgets/metadata/iptcwidget.cpp:158
+#: libs/widgets/metadata/iptcwidget.cpp:156
 msgid "IPTC File to Save"
 msgstr "Tập tin IPTC cần lưu"
 
-#: libs/widgets/metadata/iptcwidget.cpp:159
+#: libs/widgets/metadata/iptcwidget.cpp:157
 msgid "IPTC binary Files (*.dat)"
 msgstr "Tập tin nhị phân IPTC (*.dat)"
 
@@ -1502,113 +1524,113 @@ msgstr "Đang tải ảnh..."
 msgid "No profile available..."
 msgstr "Không có sẵn hồ sơ..."
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:125
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:127
 msgid "Name"
 msgstr "Tên"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:126
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:128
 msgid "The ICC profile product name"
 msgstr "Tên sẩn phẩm hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:127
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:129
 msgid "Description"
 msgstr "Mô tả"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:128
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:130
 msgid "The ICC profile product description"
 msgstr "Mô tả sản phẩm hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:129
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
 #: utilities/cameragui/cameraui.cpp:1380 utilities/cameragui/cameraui.cpp:1447
 msgid "Information"
 msgstr "Thông tin"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:130
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:132
 msgid "The additional ICC profile information"
 msgstr "Thông tin hồ sơ ICC thêm"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:133
 msgid "Manufacturer"
 msgstr "Hãng chế tạo"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:132
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
 msgid "The raw information about ICC profile manufacturer"
 msgstr "Thông tin thô về hãng chế tạo hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:133
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:135
 #: utilities/setup/setupcamera.cpp:88
 msgid "Model"
 msgstr "Mô hình"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:136
 msgid "The raw information about ICC profile model"
 msgstr "Thông tin thô về mô hình hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:135
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:137
 msgid "Copyright"
 msgstr "Bản quyền"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:136
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:138
 msgid "The raw information about ICC profile copyright"
 msgstr "Thông tin thô về tác quyền hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:137
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:139
 msgid "Profile ID"
 msgstr "ID hồ sơ :"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:138
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:140
 msgid "The ICC profile ID number"
 msgstr "Mã nhận diện hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:139
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:141
 msgid "Color Space"
 msgstr "Miền màu"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:140
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:142
 msgid "The color space used by the ICC profile"
 msgstr "Miền màu dùng bởi hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:141
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:143
 msgid "Connection Space"
 msgstr "Miền kết nối"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:142
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:144
 msgid "The connection space used by the ICC profile"
 msgstr "Miền kết nối dùng bởi hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:143
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:145
 msgid "Device Class"
 msgstr "Hạng thiết bị"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:144
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:146
 msgid "The ICC profile device class"
 msgstr "Hạng thiết bị hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:145
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:147
 msgid "Rendering Intent"
 msgstr "Định vẽ"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:146
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:148
 msgid "The ICC profile rendering intent"
 msgstr "Mục đích vẽ hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:147
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:149
 msgid "Profile Version"
 msgstr "Phiên bản Hồ sơ"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:148
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:150
 msgid "The ICC version used to record the profile"
 msgstr "Phiên bản ICC dùng để thu hồ sơ"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:149
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:151
 msgid "CMM Flags"
 msgstr "Cờ CMM"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:150
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:152
 msgid "The ICC profile color management flags"
 msgstr "Các cờ quản lý màu sắc hồ sơ ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:162
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:164
 msgid ""
 "<p>This area contains a CIE or chromaticity diagram. A CIE diagram is a "
 "representation of all the colors that a person with normal vision can see. "
@@ -1630,17 +1652,17 @@ msgstr ""
 "một của những điểm đo dùng để tạo hồ sơ này. Đường vàng đại diện số lượng hồ "
 "sơ sửa chữa mỗi điểm, và hướng sửa chữa."
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:197
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:228
 msgid "ICC Color Profile Information"
 msgstr "Thông tin hồ sơ màu ICC"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:287
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:320
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:324
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:357
 msgid "Lab"
 msgstr "Lab"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:290
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:323
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:327
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:360
 msgid "Luv"
 msgstr "Luv"
 
@@ -1650,85 +1672,85 @@ msgstr "Luv"
 # Literal: don't translate / Nghĩa chữ: đừng dịch
 # #-#-#-#-#  vi.po (inkscape TRUNK)  #-#-#-#-#
 # Literal: don't translate / Nghĩa chữ: đừng dịch
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:293
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:326
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:330
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:363
 msgid "RGB"
 msgstr "RGB"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:296
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:329
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:333
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:366
 msgid "GRAY"
 msgstr "GRAY"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:299
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:332
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:336
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:369
 msgid "HSV"
 msgstr "HSV"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:302
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:335
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:339
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:372
 msgid "HLS"
 msgstr "HLS"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:305
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:338
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:342
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:375
 msgid "CMYK"
 msgstr "CMYK"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:308
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:341
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:345
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:378
 msgid "CMY"
 msgstr "CMY"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:353
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:390
 msgid "Input device"
 msgstr "Thiết bị nhập"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:356
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:393
 msgid "Display device"
 msgstr "Thiết bị hiển thị"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:359
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:396
 msgid "Output device"
 msgstr "Thiết bị xuất"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:362
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:399
 msgid "Color space"
 msgstr "Miền màu"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:365
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:402
 msgid "Link device"
 msgstr "Thiết bị liên kết"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:368
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:405
 msgid "Abstract"
 msgstr "Trừu tượng"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:371
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:408
 msgid "Named color"
 msgstr "Màu có tên"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:383
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:420
 msgid "Perceptual"
 msgstr "Dựa vào nhận thức"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:386
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:423
 msgid "Relative Colorimetric"
 msgstr "Đo màu tương đối"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:389
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:426
 msgid "Saturation"
 msgstr "Độ bão hòa"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:392
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:429
 msgid "Absolute Colorimetric"
 msgstr "Đo màu tuyệt đối"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:430
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:467
 msgid "ICC color profile File to Save"
 msgstr "Tập tin hồ sơ màu ICC cần lưu"
 
-#: libs/widgets/iccprofiles/iccprofilewidget.cpp:431
+#: libs/widgets/iccprofiles/iccprofilewidget.cpp:468
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:310
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:371
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:414

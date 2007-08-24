@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-23 05:40+0200\n"
+"POT-Creation-Date: 2007-08-24 05:35+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -169,7 +169,7 @@ msgstr "Ngừng mục đã chọn"
 msgid "Start / Resume"
 msgstr "Chạy/Tiếp tục"
 
-#: mainwindow.cpp:195 core/transfergrouphandler.cpp:320
+#: mainwindow.cpp:195 core/transfergrouphandler.cpp:321
 msgid "Stop"
 msgstr "Ngừng"
 
@@ -185,7 +185,19 @@ msgstr "Hiện chi tiết"
 msgid "Copy URL to Clipboard"
 msgstr "Chép URL vào bảng nháp"
 
-#: mainwindow.cpp:250
+#. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 37
+#: mainwindow.cpp:219 mainwindow.cpp:288 rc.cpp:27
+msgid "Show drop target"
+msgstr "Hiện đích thả"
+
+#: mainwindow.cpp:220 mainwindow.cpp:289
+#, fuzzy
+#| msgid "Hiding drop target"
+msgid "Hide drop target"
+msgstr "Đang ẩn đĩch thả"
+
+#: mainwindow.cpp:259
 #, fuzzy
 #| msgid ""
 #| "This is the first time you have run KGet.\n"
@@ -198,27 +210,27 @@ msgstr ""
 "Bạn có muốn gán KGet là bộ quản lý việc tải về của trình duyệt Konqueror "
 "không?"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Konqueror Integration"
 msgstr "Hợp nhất với Konqueror"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:261
 msgid "Enable"
 msgstr "Bật"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:262
 msgid "Do Not Enable"
 msgstr "Không bật"
 
-#: mainwindow.cpp:284
+#: mainwindow.cpp:303
 msgid "All Openable Files"
 msgstr "Mọi tập tin mở được"
 
-#: mainwindow.cpp:285
+#: mainwindow.cpp:304
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: mainwindow.cpp:301
+#: mainwindow.cpp:320
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -226,27 +238,27 @@ msgstr ""
 "Một vài truyền tải vẫn đang chạy.\n"
 "Bạn có chắc muốn đóng KGet không?"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:322
 msgid "Confirm Quit"
 msgstr "Xác nhận Thoát"
 
-#: mainwindow.cpp:336
+#: mainwindow.cpp:355
 msgid "KGet Transfer List"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:338
+#: mainwindow.cpp:357
 msgid "Export Transfers"
 msgstr "Xuất truyền"
 
-#: mainwindow.cpp:361 conf/transfersgroupwidget.cpp:70
+#: mainwindow.cpp:380 conf/transfersgroupwidget.cpp:70
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:362 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:381 conf/transfersgroupwidget.cpp:71
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:540
+#: mainwindow.cpp:559
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -256,7 +268,7 @@ msgstr ""
 "Konqueror. Muốn tắt luôn thì tới « Thiết lập > Cấp cao » rồi tắt mục « Dùng "
 "làm bộ quản lý việc tải về cho Konqueror »."
 
-#: mainwindow.cpp:543
+#: mainwindow.cpp:562
 msgid "Konqueror Integration disabled"
 msgstr "Khả năng hợp nhất với Konqueror bị tắt"
 
@@ -310,12 +322,6 @@ msgstr "Hiện màn hình chào mừng"
 #, fuzzy
 #| msgid "Show drop target"
 msgid "Drop Target"
-msgstr "Hiện đích thả"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 37
-#: rc.cpp:27
-msgid "Show drop target"
 msgstr "Hiện đích thả"
 
 #. i18n: tag string
@@ -535,7 +541,6 @@ msgid "Folder and extension can not be empty."
 msgstr "Thư mục và phần mở rộng không thể rỗng."
 
 #: conf/dlgdirectories.cpp:120 core/kget.cpp:416 core/kget.cpp:636
-#: core/kget.cpp:663
 msgid "Error"
 msgstr "Lỗi"
 
@@ -599,6 +604,7 @@ msgstr ""
 "Hãy thay đổi tên nhóm."
 
 #: conf/transfersgroupwidget.cpp:99 core/kget.cpp:481
+#: core/transfergrouphandler.cpp:186
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
@@ -675,16 +681,7 @@ msgstr ""
 msgid "Download URL again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:662
-#, qt-format
-msgid ""
-"Already saving URL\n"
-"%1"
-msgstr ""
-"Đang lưu URL\n"
-"%1"
-
-#: core/kget.cpp:681
+#: core/kget.cpp:678
 #, qt-format
 msgid ""
 "Destination file \n"
@@ -697,7 +694,7 @@ msgstr ""
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:809
+#: core/kget.cpp:806
 #, qt-format
 msgid ""
 "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error message:"
@@ -706,7 +703,7 @@ msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:834
+#: core/kget.cpp:831
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -717,11 +714,11 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:836 core/kget.cpp:847
+#: core/kget.cpp:833 core/kget.cpp:844
 msgid "Not Deleted"
 msgstr "Chưa xóa"
 
-#: core/kget.cpp:845
+#: core/kget.cpp:842
 #, qt-format
 msgid ""
 "Not deleting\n"
@@ -761,7 +758,7 @@ msgstr "Dừng lại"
 msgid "%1/s"
 msgstr "%1/giây"
 
-#: core/transfergrouphandler.cpp:314
+#: core/transfergrouphandler.cpp:315
 msgid "Start"
 msgstr "Chạy"
 
@@ -858,6 +855,13 @@ msgstr "Tải về"
 #: ui/viewscontainer.cpp:186
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
+
+#~ msgid ""
+#~ "Already saving URL\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Đang lưu URL\n"
+#~ "%1"
 
 #~ msgid "Edit Groups..."
 #~ msgstr "Sửa nhóm..."

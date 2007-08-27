@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-26 05:29+0200\n"
+"POT-Creation-Date: 2007-08-27 05:28+0200\n"
 "PO-Revision-Date: 2007-06-25 20:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -1880,7 +1880,10 @@ msgstr "Bộ Quản lý Cấu hình KDE"
 msgid "Do you want to reload KDE configuration?"
 msgstr "Bạn có muốn tải lại cấu hình KDE không?"
 
-#: kded/kbuildsycoca.cpp:749 kfile/kdiroperator.cpp:1377
+#: kded/kbuildsycoca.cpp:749
+#, fuzzy
+#| msgid "Reload"
+msgctxt "Reload KDE configuration messagebox"
 msgid "Reload"
 msgstr "Tải lại"
 
@@ -5124,7 +5127,7 @@ msgstr ""
 #| "</i>:</qt>"
 msgid ""
 "<qt>Enter passphrase for key <b>0x%1</b>, belonging to<br /><i>%2&lt;%3&gt;</"
-"i></br />:</qt>"
+"i><br />:</qt>"
 msgstr ""
 "<qt>Hãy nhập cụm từ mật khẩu cho khóa <b>0x%1</b>, thuộc về <br><i>%2&lt;%"
 "3&gt;</i>:</qt>"
@@ -5796,9 +5799,9 @@ msgstr ""
 #| "www.kde.org/support/\">http://www.kde.org/support/</a>.<br><br>Thank you "
 #| "very much in advance for your support."
 msgid ""
-"KDE is available free of charge, but making it is not free.<br><br>Thus, the "
-"KDE team formed the KDE e.V., a non-profit organization legally founded in "
-"Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
+"KDE is available free of charge, but making it is not free.<br /><br />Thus, "
+"the KDE team formed the KDE e.V., a non-profit organization legally founded "
+"in Tuebingen, Germany. The KDE e.V. represents the KDE project in legal and "
 "financial matters. See <a href=\"http://www.kde-ev.org/\">http://www.kde-ev."
 "org</a> for information on the KDE e.V.<br /><br />The KDE team does need "
 "financial support. Most of the money is used to reimburse members and others "
@@ -6011,7 +6014,7 @@ msgid "About %1"
 msgstr "Giới thiệu về %1"
 
 #: kdeui/dialogs/kconfigdialog.cpp:60 kdeui/actions/kcodecaction.cpp:120
-#: kfile/kfilewidget.cpp:316 kutils/kcmultidialog.cpp:99
+#: kfile/kfilewidget.cpp:318 kutils/kcmultidialog.cpp:99
 msgid "Configure"
 msgstr "Cấu hình"
 
@@ -6111,8 +6114,7 @@ msgstr ""
 #, fuzzy, qt-format
 #| msgid ""
 #| "<font size=\"5\">%1</font><br><b>Version %2</b><br>Using KDE %3</html>"
-msgid ""
-"<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3</html>"
+msgid "<font size=\"5\">%1</font><br /><b>Version %2</b><br />Using KDE %3"
 msgstr ""
 "<font size=\"5\">%1</font><br><b>Phiên bản %2</b><br>Chạy KDE %3</html>"
 
@@ -8638,7 +8640,7 @@ msgstr "Dấu phân cách khoảng cách"
 msgid "Unknown"
 msgstr "Không rõ"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:311
+#: kdeui/widgets/kkeysequencewidget.cpp:269
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Gõ"
@@ -8871,7 +8873,7 @@ msgstr "Sở hữu"
 msgid "Group"
 msgstr "Nhóm"
 
-#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1377
+#: kfile/kfilefiltercombo.cpp:33 kfile/kfilewidget.cpp:1406
 msgid "*|All Files"
 msgstr "*|Mọi tập tin"
 
@@ -8887,7 +8889,7 @@ msgstr "Xem thử"
 msgid "No preview available."
 msgstr "Không có sẵn ô xem thử."
 
-#: kfile/kfilewidget.cpp:175
+#: kfile/kfilewidget.cpp:179
 #, fuzzy
 #| msgid ""
 #| "<p>While typing in the text area, you may be presented with possible "
@@ -8904,46 +8906,32 @@ msgstr ""
 "bên phải trên con chuột) rồi chọn chế độ đã muốn trong trình đơn <b>Gõ xong "
 "văn bản</b>."
 
-#: kfile/kfilewidget.cpp:207
-msgid "Current location"
-msgstr "Địa điểm hiện có"
-
-#: kfile/kfilewidget.cpp:208
-msgid ""
-"This is the currently listed location. The drop-down list also lists "
-"commonly used locations. This includes standard locations, such as your home "
-"folder, as well as locations that have been visited recently."
-msgstr ""
-"Đây là địa điểm được liệt kê hiện thời. Danh sách thả xuống cũng liệt kê các "
-"địa điểm thường dùng. Gồm có các địa điểm chuẩn, v.d. thư mục chính của bạn "
-"(thư mục Nhà), cũng như các địa điểm vừa thăm."
-
-#: kfile/kfilewidget.cpp:218
+#: kfile/kfilewidget.cpp:220
 #, qt-format
 msgid "Drive: %1"
 msgstr "Ổ : %1"
 
-#: kfile/kfilewidget.cpp:225
+#: kfile/kfilewidget.cpp:227
 #, qt-format
 msgid "Root Folder: %1"
 msgstr "Thư mục gốc: %1"
 
-#: kfile/kfilewidget.cpp:232
+#: kfile/kfilewidget.cpp:234
 #, qt-format
 msgid "Home Folder: %1"
 msgstr "Thư mục Nhà: %1"
 
-#: kfile/kfilewidget.cpp:241
+#: kfile/kfilewidget.cpp:243
 #, qt-format
 msgid "Documents: %1"
 msgstr "Tài liệu : %1"
 
-#: kfile/kfilewidget.cpp:248
+#: kfile/kfilewidget.cpp:250
 #, qt-format
 msgid "Desktop: %1"
 msgstr "Màn hình nền: %1"
 
-#: kfile/kfilewidget.cpp:290
+#: kfile/kfilewidget.cpp:292
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -8958,31 +8946,31 @@ msgstr ""
 "thời là « file:/home/%1 », việc nhấn vào nút này sẽ lên thư mục cha « file:/"
 "home »."
 
-#: kfile/kfilewidget.cpp:294
+#: kfile/kfilewidget.cpp:296
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Nhấn vào cái nút này để lùi lại một bước trong lịch sử duyệt."
 
-#: kfile/kfilewidget.cpp:296
+#: kfile/kfilewidget.cpp:298
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Nhấn vào cái nút này để tiếp tới một bước trong lịch sử duyệt."
 
-#: kfile/kfilewidget.cpp:298
+#: kfile/kfilewidget.cpp:300
 msgid "Click this button to reload the contents of the current location."
 msgstr "Nhấn vào cái nút này để nạp lại nội dung của địa điểm hiện thời."
 
-#: kfile/kfilewidget.cpp:301
+#: kfile/kfilewidget.cpp:303
 msgid "Click this button to create a new folder."
 msgstr "Nhấn vào cái nút này để tạo một thư mục mới."
 
-#: kfile/kfilewidget.cpp:304
+#: kfile/kfilewidget.cpp:306
 msgid "Show Quick Access Navigation Panel"
 msgstr "Hiện Bảng Duyệt qua Truy cập Nhanh"
 
-#: kfile/kfilewidget.cpp:311
+#: kfile/kfilewidget.cpp:313
 msgid "Show Bookmarks"
 msgstr "Hiện Liên kết đã Lưu"
 
-#: kfile/kfilewidget.cpp:318
+#: kfile/kfilewidget.cpp:320
 msgid ""
 "<qt>This is the configuration menu for the file dialog. Various options can "
 "be accessed from this menu including: <ul><li>how files are sorted in the "
@@ -8996,11 +8984,11 @@ msgstr ""
 "li><li>khả năng hiển thị tập tin ẩn</li><li>Bảng Duyệt qua Truy cập Nhanh</"
 "li><li>ô xem thử tập tin</li><li>phân biệt tập tin ra thư mục</li></ul></qt>"
 
-#: kfile/kfilewidget.cpp:369
+#: kfile/kfilewidget.cpp:366
 msgid "&Location:"
 msgstr "Đị&a điểm:"
 
-#: kfile/kfilewidget.cpp:391
+#: kfile/kfilewidget.cpp:390
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -9018,29 +9006,29 @@ msgstr ""
 "lọc trong trình đơn thả xuống, hoặc gõ trực tiếp vào vùng văn bản một bộ lọc "
 "riêng.<p>Cho phép sử dụng ký tự đại diện như « * » và « ? ».</qt>"
 
-#: kfile/kfilewidget.cpp:397
+#: kfile/kfilewidget.cpp:396
 msgid "&Filter:"
 msgstr "&Lọc:"
 
-#: kfile/kfilewidget.cpp:559
+#: kfile/kfilewidget.cpp:558
 msgid "Please specify the filename to save to."
 msgstr "Hãy xác định tên tập tin vào đó cần lưu."
 
-#: kfile/kfilewidget.cpp:561
+#: kfile/kfilewidget.cpp:560
 msgid "Please select the file to open."
 msgstr "Hãy chọn tập tin cần mở."
 
-#: kfile/kfilewidget.cpp:618 kfile/kfilewidget.cpp:661
-#: kfile/kfilewidget.cpp:1322
+#: kfile/kfilewidget.cpp:617 kfile/kfilewidget.cpp:660
+#: kfile/kfilewidget.cpp:1340
 msgid "You can only select local files."
 msgstr "Chỉ có thể chọn tập tin cục bộ."
 
-#: kfile/kfilewidget.cpp:619 kfile/kfilewidget.cpp:662
-#: kfile/kfilewidget.cpp:1323
+#: kfile/kfilewidget.cpp:618 kfile/kfilewidget.cpp:661
+#: kfile/kfilewidget.cpp:1341
 msgid "Remote Files Not Accepted"
 msgstr "Không chấp nhận tập tin ở xa"
 
-#: kfile/kfilewidget.cpp:653
+#: kfile/kfilewidget.cpp:652
 #, qt-format
 msgid ""
 "%1\n"
@@ -9049,15 +9037,15 @@ msgstr ""
 "%1\n"
 "có vẻ là không phải địa chỉ URL hợp lệ.\n"
 
-#: kfile/kfilewidget.cpp:653
+#: kfile/kfilewidget.cpp:652
 msgid "Invalid URL"
 msgstr "URL không hợp lệ"
 
-#: kfile/kfilewidget.cpp:973
+#: kfile/kfilewidget.cpp:979
 msgid "This is the name to save the file as."
 msgstr "Đây là tên dưới đó cần lưu tập tin."
 
-#: kfile/kfilewidget.cpp:978
+#: kfile/kfilewidget.cpp:984
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -9065,11 +9053,11 @@ msgstr ""
 "Đây là danh sách những tập tin cần mở. Cũng có thể xác định nhiều tập tin "
 "bằng cách liệt kê vài tập tin định giới bằng dấu cách."
 
-#: kfile/kfilewidget.cpp:985
+#: kfile/kfilewidget.cpp:991
 msgid "This is the name of the file to open."
 msgstr "Đây là tên của tập tin cần mở."
 
-#: kfile/kfilewidget.cpp:1254
+#: kfile/kfilewidget.cpp:1272
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -9077,11 +9065,11 @@ msgstr ""
 "Có vẻ là những tên tập tin\n"
 " đã chọn không phải hợp lệ."
 
-#: kfile/kfilewidget.cpp:1256
+#: kfile/kfilewidget.cpp:1274
 msgid "Invalid Filenames"
 msgstr "Tên tập tin không hợp lệ"
 
-#: kfile/kfilewidget.cpp:1285
+#: kfile/kfilewidget.cpp:1303
 #, qt-format
 msgid ""
 "The requested filenames\n"
@@ -9094,37 +9082,37 @@ msgstr ""
 "có vẻ là không phải hợp lệ;\n"
 "hãy kiểm tra xem mỗi tên tập tin nằm giữa hai dấu trích dẫn đôi."
 
-#: kfile/kfilewidget.cpp:1289
+#: kfile/kfilewidget.cpp:1307
 msgid "Filename Error"
 msgstr "Lỗi tên tập tin"
 
-#: kfile/kfilewidget.cpp:1374
+#: kfile/kfilewidget.cpp:1403
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: kfile/kfilewidget.cpp:1501 kparts/browserrun.cpp:370
+#: kfile/kfilewidget.cpp:1545 kparts/browserrun.cpp:370
 msgid "&Open"
 msgstr "&Mở"
 
-#: kfile/kfilewidget.cpp:1644
+#: kfile/kfilewidget.cpp:1688
 #, qt-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Tự động chọn &phần mở rộng tên tập tin (%1)"
 
-#: kfile/kfilewidget.cpp:1645
+#: kfile/kfilewidget.cpp:1689
 #, qt-format
 msgid "the extension <b>%1</b>"
 msgstr "phần mở rộng <b>%1</b>"
 
-#: kfile/kfilewidget.cpp:1653
+#: kfile/kfilewidget.cpp:1697
 msgid "Automatically select filename e&xtension"
 msgstr "Tự động chọn &phần mở rộng tên tập tin"
 
-#: kfile/kfilewidget.cpp:1654
+#: kfile/kfilewidget.cpp:1698
 msgid "a suitable extension"
 msgstr "một phần mở rộng thích hợp"
 
-#: kfile/kfilewidget.cpp:1664
+#: kfile/kfilewidget.cpp:1708
 #, fuzzy, qt-format
 #| msgid ""
 #| "This option enables some convenient features for saving files with "
@@ -9162,11 +9150,11 @@ msgstr ""
 "cuối tên tập tin (dấu chấm tự động bị gỡ bỏ).</li></ol>Chưa chắc thì bật tùy "
 "chọn này, vì nó giúp đỡ bạn quản lý tập tin."
 
-#: kfile/kfilewidget.cpp:1932
+#: kfile/kfilewidget.cpp:1976
 msgid "Bookmarks"
 msgstr "Đánh dấu"
 
-#: kfile/kfilewidget.cpp:1935
+#: kfile/kfilewidget.cpp:1979
 #, fuzzy
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "
@@ -9226,7 +9214,7 @@ msgstr "Gặp lỗi khi truy cập « %1 », thông điệp hệ thống: %2"
 msgid "An error occurred while accessing '%1'"
 msgstr "Gặp lỗi khi truy cập « %1 »"
 
-#: kfile/kurlnavigator.cpp:582
+#: kfile/kurlnavigator.cpp:585
 msgid "Custom Path"
 msgstr "Đường dẫn riêng"
 
@@ -9448,6 +9436,10 @@ msgstr "Thư mục cha"
 msgid "Home Folder"
 msgstr "Thư mục Nhà"
 
+#: kfile/kdiroperator.cpp:1377
+msgid "Reload"
+msgstr "Tải lại"
+
 #: kfile/kdiroperator.cpp:1390
 msgid "Move to Trash"
 msgstr "Chuyển vào Rác"
@@ -9496,11 +9488,11 @@ msgstr "Thư mục riêng"
 msgid "Show Preview"
 msgstr "Hiện ô xem thử"
 
-#: kfile/kurltogglebutton.cpp:77
+#: kfile/kurltogglebutton.cpp:81
 msgid "Click for Location Navigation"
 msgstr "Nhấn để duyệt tới địa điểm"
 
-#: kfile/kurltogglebutton.cpp:79
+#: kfile/kurltogglebutton.cpp:83
 msgid "Click to Edit Location"
 msgstr "Nhấn để sửa địa điểm"
 
@@ -10111,7 +10103,7 @@ msgstr " • BCC: "
 #| "the link?"
 msgid ""
 "<qt>This untrusted page links to<br /><b>%1</b>.<br />Do you want to follow "
-"the link?"
+"the link?</qt>"
 msgstr ""
 "<qt>Trang không tin cây này có liên kết tới<BR><B>%1</B>.<BR>Bạn có muốn "
 "theo liên kết này không?"
@@ -10194,7 +10186,7 @@ msgstr "&Gởi thư"
 #| "filesystem.<BR>Do you want to submit the form?"
 msgid ""
 "<qt>The form will be submitted to <br /><b>%1</b><br />on your local "
-"filesystem.<br />Do you want to submit the form?"
+"filesystem.<br />Do you want to submit the form?</qt>"
 msgstr ""
 "<qt>Đơn sẽ được gởi cho <BR><B>%1</B><BR> trong hệ thống tập tin cục bộ của "
 "bạn.<br>Bạn có muốn gởi đơn này không?"
@@ -10224,7 +10216,7 @@ msgstr "Cảnh báo bảo mật"
 #: khtml/khtml_part.cpp:6875
 #, fuzzy, qt-format
 #| msgid "<qt>Access by untrusted page to<BR><B>%1</B><BR> denied."
-msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied."
+msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>Trang không tin cây truy cập<BR><B>%1</B><BR>bị từ chối."
 
 #: khtml/khtml_part.cpp:6876 khtml/java/kjavaappletserver.cpp:823
@@ -11358,7 +11350,8 @@ msgstr "Không tìm thấy mô-đun %1."
 #| msgid ""
 #| "<qt><p>The diagnostics is:<br>The desktop file %1 could not be found.</qt>"
 msgid ""
-"<qt><p>The diagnostics is:<br />The desktop file %1 could not be found.</qt>"
+"<qt><p>The diagnostics is:<br />The desktop file %1 could not be found.</p></"
+"qt>"
 msgstr ""
 "<qt><p>Kết quả chẩn đoán:<br>Không tìm thấy tập tin môi trường %1.</qt>"
 
@@ -11397,11 +11390,11 @@ msgstr ""
 "<qt><p>Kết quả chẩn đoán:<br>Tập tin môi trường %1 không ghi rõ thư viện.</"
 "qt>"
 
-#: kutils/kcmoduleloader.cpp:190
+#: kutils/kcmoduleloader.cpp:189
 msgid "There was an error loading the module."
 msgstr "Gặp lỗi khi tải mô-đun."
 
-#: kutils/kcmoduleloader.cpp:190
+#: kutils/kcmoduleloader.cpp:189
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
@@ -11425,7 +11418,7 @@ msgstr ""
 "làm như thế không sửa lỗi này, khuyên bạn liên lạc nhà phát hành hay nhà "
 "đóng gói này.</p></qt>"
 
-#: kutils/kcmoduleloader.cpp:205
+#: kutils/kcmoduleloader.cpp:204
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt><p>The diagnostics is:<br>%1<p>Possible reasons:</p><ul><li>An error "
@@ -11437,9 +11430,10 @@ msgstr ""
 msgid ""
 "<qt>The diagnostics is:<br />%1<p>Possible reasons:<ul><li>An error occurred "
 "during your last KDE upgrade leaving an orphaned control module</li><li>You "
-"have old third party modules lying around.</li></ul><p>Check these points "
-"carefully and try to remove the module mentioned in the error message. If "
-"this fails, consider contacting your distributor or packager.</p></qt>"
+"have old third party modules lying around.</li></ul></p><p>Check these "
+"points carefully and try to remove the module mentioned in the error "
+"message. If this fails, consider contacting your distributor or packager.</"
+"p></qt>"
 msgstr ""
 "<qt><p>Kết quả chẩn đoán:<br>%1<p>Lý do có thể :</p><ul><li>Gặp lỗi trong "
 "khi nâng cấp KDE lần cuối cùng, mà để lại một mô-đun điều khiển mồ côi."
@@ -11557,7 +11551,7 @@ msgstr ""
 "Giấy phép:\n"
 "\t%1"
 
-#: kutils/kcmoduleproxy.cpp:131
+#: kutils/kcmoduleproxy.cpp:133
 msgid ""
 "<b>Changes in this section requires root access.</b><br />On applying your "
 "changes you will have to supply your root password."
@@ -11565,7 +11559,7 @@ msgstr ""
 "<b>Thay đổi trong phần này cần thiết quyền của người chủ.</b><br />Khi áp "
 "dụng thay đổi thì bạn cần phải cung cấp mật khẩu chủ."
 
-#: kutils/kcmoduleproxy.cpp:138
+#: kutils/kcmoduleproxy.cpp:140
 msgid ""
 "This section requires special permissions, probably for system-wide changes; "
 "therefore, it is required that you provide the root password to be able to "
@@ -11577,7 +11571,7 @@ msgstr ""
 "thay đổi thuộc tính của mô-đun đó. Không thể cung cấp mật khẩu chủ thì không "
 "thể lưu thay đổi trong mô-đun."
 
-#: kutils/kcmoduleproxy.cpp:159
+#: kutils/kcmoduleproxy.cpp:161
 #, qt-format
 msgctxt "Argument is application name"
 msgid "This configuration section is already opened in %1"
@@ -12601,6 +12595,18 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Điểm mã Unicode: %4<br>"
 "(In decimal: %5)</qt>"
+
+#~ msgid "Current location"
+#~ msgstr "Địa điểm hiện có"
+
+#~ msgid ""
+#~ "This is the currently listed location. The drop-down list also lists "
+#~ "commonly used locations. This includes standard locations, such as your "
+#~ "home folder, as well as locations that have been visited recently."
+#~ msgstr ""
+#~ "Đây là địa điểm được liệt kê hiện thời. Danh sách thả xuống cũng liệt kê "
+#~ "các địa điểm thường dùng. Gồm có các địa điểm chuẩn, v.d. thư mục chính "
+#~ "của bạn (thư mục Nhà), cũng như các địa điểm vừa thăm."
 
 #~ msgid "More Options"
 #~ msgstr "Tùy chọn thêm"

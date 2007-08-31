@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-28 05:42+0200\n"
+"POT-Creation-Date: 2007-08-31 05:51+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -185,19 +185,13 @@ msgstr "Hiện chi tiết"
 msgid "Copy URL to Clipboard"
 msgstr "Chép URL vào bảng nháp"
 
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 37
-#: mainwindow.cpp:219 mainwindow.cpp:288 rc.cpp:27
-msgid "Show drop target"
+#: mainwindow.cpp:219
+#, fuzzy
+#| msgid "Show drop target"
+msgid "Show Drop Target"
 msgstr "Hiện đích thả"
 
-#: mainwindow.cpp:220 mainwindow.cpp:289
-#, fuzzy
-#| msgid "Hiding drop target"
-msgid "Hide drop target"
-msgstr "Đang ẩn đĩch thả"
-
-#: mainwindow.cpp:259
+#: mainwindow.cpp:256
 #, fuzzy
 #| msgid ""
 #| "This is the first time you have run KGet.\n"
@@ -210,27 +204,27 @@ msgstr ""
 "Bạn có muốn gán KGet là bộ quản lý việc tải về của trình duyệt Konqueror "
 "không?"
 
-#: mainwindow.cpp:261
+#: mainwindow.cpp:258
 msgid "Konqueror Integration"
 msgstr "Hợp nhất với Konqueror"
 
-#: mainwindow.cpp:261
+#: mainwindow.cpp:258
 msgid "Enable"
 msgstr "Bật"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:259
 msgid "Do Not Enable"
 msgstr "Không bật"
 
-#: mainwindow.cpp:303
+#: mainwindow.cpp:297
 msgid "All Openable Files"
 msgstr "Mọi tập tin mở được"
 
-#: mainwindow.cpp:304
+#: mainwindow.cpp:298
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: mainwindow.cpp:320
+#: mainwindow.cpp:314
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -238,27 +232,27 @@ msgstr ""
 "Một vài truyền tải vẫn đang chạy.\n"
 "Bạn có chắc muốn đóng KGet không?"
 
-#: mainwindow.cpp:322
+#: mainwindow.cpp:316
 msgid "Confirm Quit"
 msgstr "Xác nhận Thoát"
 
-#: mainwindow.cpp:355
+#: mainwindow.cpp:349
 msgid "KGet Transfer List"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:357
+#: mainwindow.cpp:351
 msgid "Export Transfers"
 msgstr "Xuất truyền"
 
-#: mainwindow.cpp:380 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:374 conf/transfersgroupwidget.cpp:71
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:381 conf/transfersgroupwidget.cpp:72
+#: mainwindow.cpp:375 conf/transfersgroupwidget.cpp:72
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:559
+#: mainwindow.cpp:553
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -268,7 +262,7 @@ msgstr ""
 "Konqueror. Muốn tắt luôn thì tới « Thiết lập > Cấp cao » rồi tắt mục « Dùng "
 "làm bộ quản lý việc tải về cho Konqueror »."
 
-#: mainwindow.cpp:562
+#: mainwindow.cpp:556
 msgid "Konqueror Integration disabled"
 msgstr "Khả năng hợp nhất với Konqueror bị tắt"
 
@@ -325,6 +319,12 @@ msgid "Drop Target"
 msgstr "Hiện đích thả"
 
 #. i18n: tag string
+#. i18n: file conf/dlgappearance.ui line 37
+#: rc.cpp:27
+msgid "Show drop target"
+msgstr "Hiện đích thả"
+
+#. i18n: tag string
 #. i18n: file conf/dlgappearance.ui line 44
 #: rc.cpp:30
 msgid "Enable animations"
@@ -357,190 +357,178 @@ msgid "Specify extension and target folder:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 80
+#. i18n: file conf/dlgdirectories.ui line 92
 #: rc.cpp:45
 msgid "Extension"
 msgstr "Mở rộng"
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 85
+#. i18n: file conf/dlgdirectories.ui line 97
 #: rc.cpp:48
 msgid "Default Folder"
 msgstr "Thư mục mặc định"
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 110
+#. i18n: file conf/dlgdirectories.ui line 105
 #: rc.cpp:51
-msgid "Extension:"
-msgstr "Mở rộng:"
-
-#. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 127
-#: rc.cpp:54
-msgid "Folder:"
-msgstr "Thư mục:"
-
-#. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 146
-#: rc.cpp:57
 msgid "Use a regexp expression for the extension. Example: *.tar.gz"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 173
-#: rc.cpp:60 conf/transfersgroupwidget.cpp:130
+#. i18n: file conf/dlgdirectories.ui line 132
+#: rc.cpp:54 conf/transfersgroupwidget.cpp:130
 msgid "Add"
 msgstr "Thêm"
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 180
-#: rc.cpp:63
+#. i18n: file conf/dlgdirectories.ui line 139
+#: rc.cpp:57
 msgid "Remove"
 msgstr "Bỏ"
 
 #. i18n: tag string
-#. i18n: file conf/dlgdirectories.ui line 190
-#: rc.cpp:66
+#. i18n: file conf/dlgdirectories.ui line 149
+#: rc.cpp:60
 msgid "Change"
 msgstr "Đổi"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 11
-#: rc.cpp:69
+#: rc.cpp:63
 msgid "Start downloading files immediately after startup"
 msgstr "Bắt đầu tải về tập tin đúng sau khi khởi chạy"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 18
-#: rc.cpp:72
+#: rc.cpp:66
 msgid "Limit maximum downloads per group"
 msgstr "Giới hạn số tối đa việc tải về cho mỗi nhóm"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 30
-#: rc.cpp:75
+#: rc.cpp:69
 msgid "Downloads from the same server:"
 msgstr "Tải xuống cùng máy phục vụ :"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 37
-#: rc.cpp:78
+#: rc.cpp:72
 msgid "Downloads number:"
 msgstr "Số tải về:"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 74
-#: rc.cpp:81
+#: rc.cpp:75
 msgid "Reconnect on error or broken connection"
 msgstr "Tái kết nối khi gặp lỗi hay kết nối bị ngắt"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 83
-#: rc.cpp:84
+#: rc.cpp:78
 msgid "Retry after:"
 msgstr "Thử lại sau :"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 93
-#: rc.cpp:87
+#: rc.cpp:81
 msgid "Number of retries:"
 msgstr "Số lần thử lại:"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 139
-#: rc.cpp:90
+#: rc.cpp:84
 msgid "After Completing Downloads"
 msgstr "Sau khi tải về xong"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 145
-#: rc.cpp:93
+#: rc.cpp:87
 msgid "Auto shutdown"
 msgstr "Tự động thoát"
 
 #. i18n: tag string
 #. i18n: file conf/dlgnetwork.ui line 152
-#: rc.cpp:96
+#: rc.cpp:90
 msgid "Auto disconnect"
 msgstr "Tự động ngắt kết nối"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 37
-#: rc.cpp:99 ui/transferdetails.cpp:36
+#: rc.cpp:93 ui/transferdetails.cpp:36
 msgid "Saving to:"
 msgstr "Lưu vào :"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 44
-#: rc.cpp:102 ui/transferdetails.cpp:35
+#: rc.cpp:96 ui/transferdetails.cpp:35
 msgid "Source:"
 msgstr "Nguồn:"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 87
-#: rc.cpp:105
+#: rc.cpp:99
 msgid "<done> MiB of <todo> MiB"
 msgstr "<done> MiB trên <todo> MiB"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 107
-#: rc.cpp:108 ui/transferdetails.cpp:37
+#: rc.cpp:102 ui/transferdetails.cpp:37
 msgid "Status:"
 msgstr "Tráng thái:"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 114
-#: rc.cpp:111
+#: rc.cpp:105
 msgid "<icon>"
 msgstr "<icon>"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 121
-#: rc.cpp:114
+#: rc.cpp:108
 msgid "<status>"
 msgstr "<status>"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 138
-#: rc.cpp:117
+#: rc.cpp:111
 msgid "<speed>"
 msgstr "<speed>"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:120
+#: rc.cpp:114
 msgid "&File"
 msgstr "&Tập tin"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 12
-#: rc.cpp:123
+#: rc.cpp:117
 msgid "&Downloads"
 msgstr "Tải &về"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 21
-#: rc.cpp:126
+#: rc.cpp:120
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 33
-#: rc.cpp:129
+#: rc.cpp:123
 msgid "&Help"
 msgstr "Trợ g&iúp"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 36
-#: rc.cpp:132
+#: rc.cpp:126
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
 
-#: conf/dlgdirectories.cpp:120
+#: conf/dlgdirectories.cpp:140
 msgid "Folder and extension can not be empty."
 msgstr "Thư mục và phần mở rộng không thể rỗng."
 
-#: conf/dlgdirectories.cpp:120 core/kget.cpp:416 core/kget.cpp:636
+#: conf/dlgdirectories.cpp:140 core/kget.cpp:416 core/kget.cpp:636
 msgid "Error"
 msgstr "Lỗi"
 
@@ -861,6 +849,17 @@ msgstr "Tải về"
 #: ui/viewscontainer.cpp:186
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
+
+#, fuzzy
+#~| msgid "Hiding drop target"
+#~ msgid "Hide drop target"
+#~ msgstr "Đang ẩn đĩch thả"
+
+#~ msgid "Extension:"
+#~ msgstr "Mở rộng:"
+
+#~ msgid "Folder:"
+#~ msgstr "Thư mục:"
 
 #~ msgid ""
 #~ "Already saving URL\n"

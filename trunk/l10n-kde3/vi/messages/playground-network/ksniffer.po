@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksniffer\n"
-"POT-Creation-Date: 2007-07-30 07:21+0200\n"
+"POT-Creation-Date: 2007-09-01 08:51+0200\n"
 "PO-Revision-Date: 2007-06-14 21:29+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -141,9 +141,9 @@ msgstr "Truyền một-nhiều"
 msgid "Loopback"
 msgstr "Vòng lặp"
 
-#: frames/frameheader.cpp:51 frames/frameheader.cpp:69
-#: frames/frameheader.cpp:89 networkdevice.cpp:152 networkdevice.cpp:164
-#: networkdevice.cpp:211
+#: frames/frameheadermanager.cpp:51 frames/frameheadermanager.cpp:69
+#: frames/frameheadermanager.cpp:89 networkdevice.cpp:152
+#: networkdevice.cpp:164 networkdevice.cpp:211
 msgid "Unknown"
 msgstr "Không rõ"
 
@@ -159,32 +159,32 @@ msgid ""
 "Your emails"
 msgstr "kde-l10n-vi@kde.org"
 
-#: main.cpp:37
+#: main.cpp:34
 msgid "A KDE application for sniffing your computer network"
 msgstr "Ứng dụng KDE để hít mạng máy tính"
 
-#: main.cpp:52
+#: main.cpp:49
 msgid "Original author and core developer"
 msgstr "Tác giả gốc và nhà phát triển lõi"
 
-#: main.cpp:53
+#: main.cpp:50
 msgid "The code for detecting network devices"
 msgstr "Mã phát hiện thiết bị mạng"
 
-#: main.cpp:54
+#: main.cpp:51
 msgid "Gerald Combs and all Ethereal authors"
 msgstr "Gerald Combs và tất cả tác giả Ethereal"
 
-#: main.cpp:55
+#: main.cpp:52
 msgid ""
 "A good sniffer application has to take a look at this great huge application"
 msgstr "Ứng dụng hít tốt phải thẩm tra ứng dụng rất lớn này"
 
-#: main.cpp:56
+#: main.cpp:53
 msgid "KSniffer icon and splash screen"
 msgstr "Biểu tương và màn hình chào mừng của KSniffer"
 
-#: main.cpp:67
+#: main.cpp:64
 msgid ""
 "<p>The 'ksniff' executable was not found in your PATH"
 "<br>environment. You need it to capture packets."
@@ -192,26 +192,28 @@ msgid ""
 "<br>Your installation is not correct.</p>"
 msgstr ""
 
-#: main.cpp:75
+#: main.cpp:72
 msgid ""
 "<p>Cannot determine the 'ksniff' executable properties."
 "<br>Your installation is not correct.</p>"
 msgstr ""
 
-#: main.cpp:84
+#: main.cpp:82
 msgid ""
-"<p>The 'ksniff' executable needs root privileges to capture packets."
+"<p>The 'ksniff' executable needs super user (root) privileges to capture "
+"packets."
 "<br>Your installation is not correct.</p>"
+"<p>Do you really want to continue?</p>"
 msgstr ""
 
-#: packetmanager.cpp:287
+#: packetmanager.cpp:310
 msgid ""
 "_: Concatenation of date and time. Translate it according to your kdelibs.po.\n"
 "%1, %2"
 msgstr "%1, %2"
 
-#: packetmanager.cpp:307 packetmanager.cpp:336 packetmanager.cpp:359
-#: packetmanager.cpp:382
+#: packetmanager.cpp:330 packetmanager.cpp:359 packetmanager.cpp:382
+#: packetmanager.cpp:406
 msgid ""
 "_: not available\n"
 "n/a"
@@ -313,69 +315,57 @@ msgstr "Vùng này hiển thị chi tiết về gói tin đã bất được ch�
 msgid "More details about the captured packets"
 msgstr "Chi tiết thêm về gói tin đã bắt."
 
-#: ksniffermainwidget.cpp:443
+#: ksniffermainwidget.cpp:438
 #, c-format
 msgid "Frame number: %1"
 msgstr "Số khung: %1"
 
-#: ksniffermainwidget.cpp:444
+#: ksniffermainwidget.cpp:439
 #, c-format
 msgid ""
 "_: general field for the frame header\n"
 "Capture time: %1"
 msgstr "Thời gian bắt: %1"
 
-#: ksniffermainwidget.cpp:447
+#: ksniffermainwidget.cpp:442
 msgid ""
 "_: general field for the frame header\n"
 "Delay from the previous packet: %1 s"
 msgstr "Trễ sau gói tin trước: %1 giây"
 
-#: ksniffermainwidget.cpp:450
+#: ksniffermainwidget.cpp:445
 msgid ""
 "_: general field for the frame header\n"
 "Delay from the first packet: %1 s"
 msgstr "Trễ sau gói tin đầu : %1 giây"
 
-#: ksniffermainwidget.cpp:452
+#: ksniffermainwidget.cpp:447
 msgid ""
 "_: general field for the frame header\n"
 "Packet length: %1 bytes"
 msgstr "Cỡ gói tin: %1 byte"
 
-#: ksniffermainwidget.cpp:455
+#: ksniffermainwidget.cpp:450
 msgid ""
 "_: general field for the frame header\n"
 "Captured packet length: %1 bytes"
 msgstr "Cỡ gói tin đã bắt: %1 byte"
 
-#: ksniffermainwidget.cpp:463
+#: ksniffermainwidget.cpp:458
 #, c-format
 msgid "Frame header: %1"
 msgstr "Phần đầu khung: %1"
 
-#: ksniffermainwidget.cpp:475
+#: ksniffermainwidget.cpp:470
 #, c-format
 msgid "Protocol information: %1"
 msgstr "Thông tin giao thức: %1"
 
-#: ksniffermainwidget.cpp:496
+#: ksniffermainwidget.cpp:491
 msgid ""
 "_: specific protocol information\n"
 "%1 information:"
 msgstr "Thông tin %1:"
-
-#: frames/frameheader.cpp:45
-msgid ""
-"_: type of frame\n"
-"Ethernet"
-msgstr "Ethernet"
-
-#: frames/frameheader.cpp:48
-msgid ""
-"_: type of frame\n"
-"Linux Cooked Capture"
-msgstr "Bắt Linux Cooked"
 
 #: frames/lcc.cpp:46
 #, c-format
@@ -426,22 +416,34 @@ msgid ""
 "Protocol Type: 0x%1"
 msgstr "Kiểu giao thức: 0x%1"
 
-#: ksniffer.cpp:127 ksniffer.cpp:559 ksniffer.cpp:570 ksniffer.cpp:944
-#: ksniffer.cpp:968
+#: frames/frameheadermanager.cpp:45
+msgid ""
+"_: type of frame\n"
+"Ethernet"
+msgstr "Ethernet"
+
+#: frames/frameheadermanager.cpp:48
+msgid ""
+"_: type of frame\n"
+"Linux Cooked Capture"
+msgstr "Bắt Linux Cooked"
+
+#: ksniffer.cpp:125 ksniffer.cpp:560 ksniffer.cpp:571 ksniffer.cpp:962
+#: ksniffer.cpp:986
 msgid "KSniffer - The KDE Network Sniffer"
 msgstr "KSniffer — Bộ Hít Mạng KDE"
 
-#: ksniffer.cpp:131 ksniffer.cpp:1323
+#: ksniffer.cpp:129 ksniffer.cpp:1340
 msgid "Ready."
 msgstr "Sẵn sàng."
 
 #. i18n: file ./ksnifferui.rc line 5
-#: ksniffer.cpp:178 rc.cpp:13
+#: ksniffer.cpp:176 rc.cpp:13
 #, no-c-format
 msgid "&Capture"
 msgstr "&Bắt"
 
-#: ksniffer.cpp:265
+#: ksniffer.cpp:263
 msgid ""
 "<p>Packet-capture session data available. If you want to drop the dragged file "
 "you are going to lose all captured data.</p>"
@@ -451,37 +453,37 @@ msgstr ""
 "mất toàn bộ dữ liệu đã bắt.</p>"
 "<p>Bạn có thật sự muốn tiếp tục không?</p>"
 
-#: ksniffer.cpp:317 ksniffer.cpp:761
+#: ksniffer.cpp:315 ksniffer.cpp:776
 msgid "Getting packets from file."
 msgstr "Đang lấy các gói tin từ tập tin."
 
-#: ksniffer.cpp:324
+#: ksniffer.cpp:322
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "The file you choose to drag & drop is not in libpcap format!"
 msgstr "Bạn đã chọn kéo và thả một tập tin không có định dạng libpcap."
 
-#: ksniffer.cpp:325
+#: ksniffer.cpp:323
 msgid "Format Error"
 msgstr "Lỗi định dạng"
 
-#: ksniffer.cpp:333
+#: ksniffer.cpp:331
 msgid "<b>New Capture</b><br>Start a new packet-capture session."
 msgstr "<b>Bắt mới</b><br>Sở khởi phiên chạy bắt gói tin."
 
-#: ksniffer.cpp:334
+#: ksniffer.cpp:332
 msgid "New Capture..."
 msgstr "Bắt mới..."
 
-#: ksniffer.cpp:338
+#: ksniffer.cpp:336
 msgid "<b>Open</b><br>Open a previous packet-capture session file."
 msgstr "<b>Mở</b><br>Mở tập tin phiên chạy bắt gói tin đã lưu."
 
-#: ksniffer.cpp:345
+#: ksniffer.cpp:343
 msgid "<b>Save</b><br>Save the current packet-capture session."
 msgstr "<b>Lưu</b><br>Lưu phiên chạy bắt gói tin hiện thời."
 
-#: ksniffer.cpp:350
+#: ksniffer.cpp:348
 msgid ""
 "<b>Save As...</b>"
 "<br>Save into a file the current packet-capture session."
@@ -489,12 +491,12 @@ msgstr ""
 "<b>Lưu dạng...</b>"
 "<br>Lưu phiên chạy bắt gói tin hiện thời dạng tập tin."
 
-#: ksniffer.cpp:354 ksniffer.cpp:874 ksniffer.cpp:937 ksniffer.cpp:994
-#: ksniffer.cpp:1101
+#: ksniffer.cpp:352 ksniffer.cpp:889 ksniffer.cpp:955 ksniffer.cpp:1012
+#: ksniffer.cpp:1117
 msgid "&Pause Capture"
 msgstr "Tạm &dừng bắt"
 
-#: ksniffer.cpp:357
+#: ksniffer.cpp:355
 msgid ""
 "<b>Pause Capture</b>"
 "<br>Pause the packet-capture. With this command you will not capture any packet "
@@ -503,23 +505,23 @@ msgstr ""
 "<b>Tạm dừng bắt</b>"
 "<br>Tạm dừng việc bắt gói tin. Lệnh này cho bạn có khả năng bắt gói tin riêng."
 
-#: ksniffer.cpp:364
+#: ksniffer.cpp:362
 msgid "S&top"
 msgstr "&Ngừng"
 
-#: ksniffer.cpp:368
+#: ksniffer.cpp:366
 msgid "<b>Stop</b><br>Stop the packet-capture session."
 msgstr "<b>Ngừng</b><br>Ngừng chạy phiên bắt gói tin."
 
-#: ksniffer.cpp:373
+#: ksniffer.cpp:371
 msgid "<b>Print...</b><br>Print the packet-capture session."
 msgstr "<b>In...</b><br>In ra phiên chạy bắt gói tin."
 
-#: ksniffer.cpp:378
+#: ksniffer.cpp:376
 msgid "<b>Quit</b><br>Stop the packet-capture session and quit from KSniffer."
 msgstr "<b>Thoát</b><br>Ngừng chạy phiên bắt gói tin rồi thoát khỏi KSniffer."
 
-#: ksniffer.cpp:417 ksniffer.cpp:429
+#: ksniffer.cpp:415 ksniffer.cpp:430
 msgid ""
 "Click to open a file\n"
 "Click and hold to open a recent file"
@@ -527,7 +529,7 @@ msgstr ""
 "Nhấn để mở tập tin.\n"
 "Nhấn giữ để mở tập tin vừa dùng."
 
-#: ksniffer.cpp:494
+#: ksniffer.cpp:495
 msgid ""
 "<qt>Closing the main window will keep KSniffer running in the system tray. Use "
 "'Quit' from the system tray menu to quit the application.</qt>"
@@ -535,15 +537,15 @@ msgstr ""
 "<qt>Việc đóng cửa sổ chính sẽ vẫn còn tiếp tục chạy KSniffer trên khay hệ "
 "thống. Hãy dùng mục Thoát trên khay hệ thống để thoát khỏi ứng dụng.</qt>"
 
-#: ksniffer.cpp:496
+#: ksniffer.cpp:497
 msgid "Docking in System Tray"
 msgstr "Cụ neo trên khay hệ thống"
 
-#: ksniffer.cpp:535
+#: ksniffer.cpp:536
 msgid "New Capture: select the network interface to start sniffing packets."
 msgstr "Bắt mới: chọn giao diện mạng trên đó cần bắt đầu hít gói tin."
 
-#: ksniffer.cpp:543
+#: ksniffer.cpp:544
 msgid ""
 "<p>Packet-capture session data available. If you want to start a new capture "
 "session you are going to lose all captured data.</p>"
@@ -553,44 +555,52 @@ msgstr ""
 "gói tin mới thì cũng mất toàn bộ dữ liệu đã bắt.</p>"
 "<p>Bạn có thật sự muốn tiếp tục không?</p>"
 
-#: ksniffer.cpp:572
+#: ksniffer.cpp:573
 msgid "Sniffing network by \"%1\" interface."
 msgstr "Đang hít mạng qua giao diện « %1 »."
 
-#: ksniffer.cpp:601
+#: ksniffer.cpp:602
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "Select the libpcap format file to open."
 msgstr "Chọn tập tin định dạng libpcap cần mở"
 
-#: ksniffer.cpp:602
+#: ksniffer.cpp:603
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: ksniffer.cpp:636
+#: ksniffer.cpp:619
+msgid "<b>%1</b> not found."
+msgstr ""
+
+#: ksniffer.cpp:625
+msgid "<b>%1</b> is empty. I cannot manage it."
+msgstr ""
+
+#: ksniffer.cpp:650
 msgid "Unable to access to the temporary file '%1': %2."
 msgstr "Không thể truy cập tập tin tạm thời « %1 »: %2"
 
-#: ksniffer.cpp:637 ksniffer.cpp:645 ksniffer.cpp:653
+#: ksniffer.cpp:651 ksniffer.cpp:659 ksniffer.cpp:667
 msgid "Load Failed"
 msgstr "Lỗi nạp"
 
-#: ksniffer.cpp:644
+#: ksniffer.cpp:658
 msgid "Error during loading. Could not open '%1' temporary file for writing."
 msgstr "Gặp lỗi trong khi nạp. Không thể mở tập tin tạm thời « %1 » để ghi."
 
-#: ksniffer.cpp:652
+#: ksniffer.cpp:666
 #, c-format
 msgid "Loading error. Could not create temporary file: %1."
 msgstr "Lỗi nạp. Không thể tạo tập tin tạm thời: %1."
 
-#: ksniffer.cpp:664
+#: ksniffer.cpp:678
 msgid ""
 "_: libpcap format is a standard format used by a lot of sniffer programs\n"
 "<b>%1</b> is not a libpcap format file."
 msgstr "<b>%1</b> không phải tập tin định dạng ibpcap."
 
-#: ksniffer.cpp:678
+#: ksniffer.cpp:692
 msgid ""
 "<p>Packet-capture session data available. If you want to load afile captured "
 "session you are going to lose all captured data.</p>"
@@ -600,101 +610,101 @@ msgstr ""
 "chạy đã bắt thì cũng mất toàn bộ dữ liệu đã bắt.</p>"
 "<p>Bạn có thật sự muốn tiếp tục không?</p>"
 
-#: ksniffer.cpp:760 ksniffer.cpp:948 ksniffer.cpp:972 ksniffer.cpp:1009
-#: ksniffer.cpp:1063 ksniffer.cpp:1475
+#: ksniffer.cpp:775 ksniffer.cpp:966 ksniffer.cpp:990 ksniffer.cpp:1027
+#: ksniffer.cpp:1079 ksniffer.cpp:1492
 msgid "Capturing"
 msgstr "Đang bắt"
 
-#: ksniffer.cpp:760
+#: ksniffer.cpp:775
 msgid "<p>Now starting to get the packets from the file.</p>"
 msgstr "<p>Mới bắt đầu lấy gói tin từ tập tin.</p>"
 
-#: ksniffer.cpp:799
+#: ksniffer.cpp:814
 msgid "Save captured-packets as..."
 msgstr "Lưu gói tin đã bắt dạng..."
 
-#: displaydata.cpp:120 displaydata.cpp:124 ksniffer.cpp:824
+#: displaydata.cpp:120 displaydata.cpp:124 ksniffer.cpp:839
 #, fuzzy
 msgid "%1 not saved!"
 msgstr "%s chưa được lưu."
 
-#: displaydata.cpp:120 displaydata.cpp:124 ksniffer.cpp:824
+#: displaydata.cpp:120 displaydata.cpp:124 ksniffer.cpp:839
 msgid "Save Failed"
 msgstr "Lỗi lưu"
 
-#: ksniffer.cpp:888
+#: ksniffer.cpp:903
 msgid "<b>Continue Capture</b><br>Continue the paused packet-capture."
 msgstr "<b>Tiếp tục bắt</b><br>Tiếp tục lại việc bắt gói tin bị tạm dừng."
 
-#: ksniffer.cpp:889
+#: ksniffer.cpp:904
 msgid "&Continue Capture"
 msgstr "Tiếp tụ&c bắt"
 
-#: ksniffer.cpp:906
+#: ksniffer.cpp:923
 msgid "<p>A network error occurred.<br>Cannot continue capturing packets.</p>"
 msgstr "<p>Gặp lỗi mạng nên không thể tiếp tục bắt gói tin.</p>"
 
-#: ksniffer.cpp:940
+#: ksniffer.cpp:958
 msgid "Stopped capturing. Now, ready again."
 msgstr "Đã ngừng bắt. Bây giờ sẵn sàng lại."
 
-#: ksniffer.cpp:948 ksniffer.cpp:972
+#: ksniffer.cpp:966 ksniffer.cpp:990
 msgid "<p>You got no packets.</p>"
 msgstr "<p>Chưa bắt gói tin nào.</p>"
 
-#: ksniffer.cpp:950 ksniffer.cpp:974
+#: ksniffer.cpp:968 ksniffer.cpp:992
 msgid "You got no packets."
 msgstr "Chưa bắt gói tin nào."
 
-#: ksniffer.cpp:957 ksniffer.cpp:1078
+#: ksniffer.cpp:975 ksniffer.cpp:1094
 msgid "KSniffer - Unsaved Packets"
 msgstr "KSniffer — gói tin chưa lưu"
 
-#: ksniffer.cpp:1009
+#: ksniffer.cpp:1027
 msgid "<p>Captured <b>%1</b> packets for a total of <b>%2</b> bytes.</p>"
 msgstr "<p>Bắt <b>%1</b> gói tin làm tổng <b>%2</b> byte.</p>"
 
-#: ksniffer.cpp:1063
+#: ksniffer.cpp:1079
 msgid "<p>Now starting to display the captured packets.</p>"
 msgstr "<p>Mới bắt đầu hiển thị các gói tin đã bắt.</p>"
 
-#: ksniffer.cpp:1064
+#: ksniffer.cpp:1080
 msgid "Displaying captured packets."
 msgstr "Đang hiển thị gói tin đã bắt."
 
-#: ksniffer.cpp:1120
+#: ksniffer.cpp:1136
 msgid "Loading file"
 msgstr "Đang nạp tập tin"
 
-#: ksniffer.cpp:1120
+#: ksniffer.cpp:1136
 msgid "<p>Ok, the packets has gotten from the file.</p>"
 msgstr "<p>Các gói tin đã được lấy từ tập tin.</p>"
 
-#: ksniffer.cpp:1121
+#: ksniffer.cpp:1137
 msgid "Packets captured from file. Now, ready again."
 msgstr "Các gói tin đã được bắt từ tập tin. Bây giờ sẵn sàng lại."
 
-#: ksniffer.cpp:1126
+#: ksniffer.cpp:1142
 msgid "Displaying captured packets"
 msgstr "Đang hiển thị gói tin đã bắt"
 
-#: ksniffer.cpp:1127
+#: ksniffer.cpp:1143
 msgid "<p>Ok, the captured packets are all in the list.</p>"
 msgstr "<p>Các gói tin đã bắt cũng hiển thị trong danh sách.</p>"
 
-#: ksniffer.cpp:1146
+#: ksniffer.cpp:1163
 msgid "Getting packets from file: %1%"
 msgstr "Đang lấy gói tin từ tập tin: %1%"
 
-#: ksniffer.cpp:1148
+#: ksniffer.cpp:1165
 msgid "Displaying captured packets: %1%"
 msgstr "Đang hiển thị gói tin đã bắt: %1%"
 
-#: ksniffer.cpp:1167
+#: ksniffer.cpp:1184
 msgid "You have got data, maybe you want to save them."
 msgstr "Có dữ liệu nên lưu."
 
-#: ksniffer.cpp:1170
+#: ksniffer.cpp:1187
 msgid ""
 "<p>Quitting KSniffer will cause the current packets to be lost."
 "<br>Do you want to save them now?</p>"
@@ -702,29 +712,29 @@ msgstr ""
 "<p>Việc thoát khỏi KSniffer sẽ gây ra những gói tin hiện thời bị mất."
 "<br>Bạn có muốn lưu chúng ngay bây giờ không?</p>"
 
-#: ksniffer.cpp:1171
+#: ksniffer.cpp:1188
 msgid "Unsaved Captured Packets"
 msgstr "Gói tin đã bắt chưa lưu"
 
-#: ksniffer.cpp:1226
+#: ksniffer.cpp:1243
 msgid "Saved captured-packets."
 msgstr "Các gói tin đã bắt đã được lưu."
 
-#: ksniffer.cpp:1448
+#: ksniffer.cpp:1465
 msgid "Could not open temporary file '%1' for writing"
 msgstr "Không thể mở tập tin tạm thời « %1 » để ghi."
 
-#: ksniffer.cpp:1449
+#: ksniffer.cpp:1466
 msgid "Writing Error"
 msgstr "Lỗi ghi"
 
-#: ksniffer.cpp:1476
+#: ksniffer.cpp:1493
 msgid ""
 "<p>You selected <b>%1</b> interface."
 "<br>Now starting to capture packets.</p>"
 msgstr "<p>Bạn đã chọn giao diện <b>%1</b>.<br>Mới bắt đầu bắt gói tin.</p>"
 
-#: ksniffer.cpp:1479
+#: ksniffer.cpp:1496
 msgid "KSniffer - Capturing on %1 interface"
 msgstr "KSniffer — Đang bắt trên giao diện %1"
 
@@ -1115,292 +1125,304 @@ msgid ""
 "Target IP address: %1"
 msgstr "Địa chỉ IP đích: %1"
 
-#: protocols/icmp-protocol.cpp:69
+#: protocols/icmp-protocol.cpp:68
 msgid ""
 "_: ICMP type\n"
 "Echo Reply"
 msgstr "Trả lời phản hồi"
 
-#: protocols/icmp-protocol.cpp:72
+#: protocols/icmp-protocol.cpp:71
 msgid ""
 "_: ICMP type\n"
 "Destination Unreachable"
 msgstr "Không thể tới đích"
 
-#: protocols/icmp-protocol.cpp:75
+#: protocols/icmp-protocol.cpp:74
 msgid ""
 "_: ICMP type\n"
 "Source Quench"
 msgstr "Dập tắt nguồn"
 
-#: protocols/icmp-protocol.cpp:78
+#: protocols/icmp-protocol.cpp:77
 msgid ""
 "_: ICMP type\n"
 "Redirect"
 msgstr "Chuyển tiếp"
 
-#: protocols/icmp-protocol.cpp:81
+#: protocols/icmp-protocol.cpp:80
 msgid ""
 "_: ICMP type\n"
 "Echo"
 msgstr "Phản hồi"
 
-#: protocols/icmp-protocol.cpp:84
+#: protocols/icmp-protocol.cpp:83
 msgid ""
 "_: ICMP type\n"
 "Time Exceeded"
 msgstr "Quá thời"
 
-#: protocols/icmp-protocol.cpp:87
+#: protocols/icmp-protocol.cpp:86
 msgid ""
 "_: ICMP type\n"
 "Parameter Problem"
 msgstr "Vấn đề tham số"
 
-#: protocols/icmp-protocol.cpp:90
+#: protocols/icmp-protocol.cpp:89
 msgid ""
 "_: ICMP type\n"
 "Timestamp"
 msgstr "Nhãn giờ"
 
-#: protocols/icmp-protocol.cpp:93
+#: protocols/icmp-protocol.cpp:92
 msgid ""
 "_: ICMP type\n"
 "Timestamp Reply"
 msgstr "Trả lời nhãn giờ"
 
-#: protocols/icmp-protocol.cpp:96
+#: protocols/icmp-protocol.cpp:95
 msgid ""
 "_: ICMP type\n"
 "Information Request"
 msgstr "Yêu cầu thông tin"
 
-#: protocols/icmp-protocol.cpp:99
+#: protocols/icmp-protocol.cpp:98
 msgid ""
 "_: ICMP type\n"
 "Information Reply"
 msgstr "Trả lời thông tin"
 
-#: protocols/icmp-protocol.cpp:102
+#: protocols/icmp-protocol.cpp:101
 msgid "Unknown type for ICMP packet"
 msgstr "Không biết kiểu cho gói tin ICMP"
 
-#: protocols/icmp-protocol.cpp:146
+#: protocols/icmp-protocol.cpp:113
+#, fuzzy
+msgid ""
+"_: ICMP code type\n"
+"Host Unreachable"
+msgstr "Không thể tới đích"
+
+#: protocols/icmp-protocol.cpp:116
+#, fuzzy
+msgid "Unknown code type for ICMP packet"
+msgstr "Không biết kiểu cho gói tin ICMP"
+
+#: protocols/icmp-protocol.cpp:158
 msgid ""
 "_: ICMP protocol field\n"
 "Type: %1 (%2)"
 msgstr "Kiểu : %1 (%2)"
 
-#: protocols/icmp-protocol.cpp:147
-#, c-format
+#: protocols/icmp-protocol.cpp:159
+#, fuzzy
 msgid ""
 "_: ICMP protocol field\n"
-"Code: %1"
+"Code: %1 (%2)"
 msgstr "Mã: %1"
 
-#: protocols/icmp-protocol.cpp:148
+#: protocols/icmp-protocol.cpp:160
 #, c-format
 msgid ""
 "_: ICMP protocol field\n"
 "Checksum: 0x%1"
 msgstr "Tổng kiểm: 0x%1"
 
-#: protocols/icmp-protocol.cpp:152
+#: protocols/icmp-protocol.cpp:164
 msgid "IP information:"
 msgstr "Thông tin IP:"
 
-#: protocols/ip-protocol.cpp:121 protocols/ip-protocol.cpp:137
-#: protocols/ip-protocol.cpp:153
+#: protocols/ip-protocol.cpp:97 protocols/ip-protocol.cpp:111
+#: protocols/ip-protocol.cpp:125
 msgid "Set"
 msgstr "Đã đặt"
 
-#: protocols/ip-protocol.cpp:123 protocols/ip-protocol.cpp:139
-#: protocols/ip-protocol.cpp:155
+#: protocols/ip-protocol.cpp:99 protocols/ip-protocol.cpp:113
+#: protocols/ip-protocol.cpp:127
 msgid "Not set"
 msgstr "Chưa đặt"
 
-#: protocols/ip-protocol.cpp:249
+#: protocols/ip-protocol.cpp:238
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Version: %1"
 msgstr "Phiên bản: %1"
 
-#: protocols/ip-protocol.cpp:250
+#: protocols/ip-protocol.cpp:239
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Header length: %1"
 msgstr "Độ dài phần đầu : %1"
 
-#: protocols/ip-protocol.cpp:251
+#: protocols/ip-protocol.cpp:240
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Total length: %1"
 msgstr "Độ dài tổng: %1"
 
-#: protocols/ip-protocol.cpp:252
+#: protocols/ip-protocol.cpp:241
 msgid ""
 "_: IP protocol field\n"
 "Identification: 0x%1 (%2)"
 msgstr "Nhận diện: 0x%1 (%2)"
 
-#: protocols/ip-protocol.cpp:254
+#: protocols/ip-protocol.cpp:243
 msgid ""
 "_: IP protocol field: flags\n"
 "Flags:"
 msgstr "Cờ :"
 
-#: protocols/ip-protocol.cpp:255
+#: protocols/ip-protocol.cpp:244
 #, c-format
 msgid ""
 "_: IP protocol field: flags (R)\n"
 "Reserved bit: %1"
 msgstr "Bit dành riêng: %1"
 
-#: protocols/ip-protocol.cpp:256
+#: protocols/ip-protocol.cpp:245
 #, c-format
 msgid ""
 "_: IP protocol field: flags (DF)\n"
 "Don't fragment: %1"
 msgstr "Đừng tế phân: %1"
 
-#: protocols/ip-protocol.cpp:257
+#: protocols/ip-protocol.cpp:246
 #, c-format
 msgid ""
 "_: IP protocol field: flags (MF)\n"
 "More fragments: %1"
 msgstr "Đoạn thêm: %1"
 
-#: protocols/ip-protocol.cpp:259
+#: protocols/ip-protocol.cpp:248
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Fragment offset: %1"
 msgstr "Hiệu đoạn: %1"
 
-#: protocols/ip-protocol.cpp:260
+#: protocols/ip-protocol.cpp:249
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Time to live: %1"
 msgstr "Thời gian sống: %1"
 
-#: protocols/ip-protocol.cpp:261
+#: protocols/ip-protocol.cpp:250
 msgid ""
 "_: IP protocol field\n"
 "Protocol: %1 (0x%2)"
 msgstr "Giao thức: %1 (0x%2)"
 
-#: protocols/ip-protocol.cpp:262
+#: protocols/ip-protocol.cpp:251
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Header checksum: 0x%1"
 msgstr "Tổng kiểm phần đầu: 0x%1"
 
-#: protocols/ip-protocol.cpp:263
+#: protocols/ip-protocol.cpp:252
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Source address: %1"
 msgstr "Địa chỉ nguồn: %1"
 
-#: protocols/ip-protocol.cpp:264
+#: protocols/ip-protocol.cpp:253
 #, c-format
 msgid ""
 "_: IP protocol field\n"
 "Destination address: %1"
 msgstr "Địa chỉ đích: %1"
 
-#: protocols/udp-protocol.cpp:78
+#: protocols/udp-protocol.cpp:71
 #, c-format
 msgid ""
 "_: UDP protocol field\n"
 "Source port: %1"
 msgstr "Cổng nguồn: %1"
 
-#: protocols/udp-protocol.cpp:80
+#: protocols/udp-protocol.cpp:73
 msgid ""
 "_: UDP protocol field\n"
 "Source port: %1 (%2)"
 msgstr "Cổng nguồn: %1 (%2)"
 
-#: protocols/udp-protocol.cpp:84
+#: protocols/udp-protocol.cpp:77
 #, c-format
 msgid ""
 "_: UDP protocol field\n"
 "Destination port: %1"
 msgstr "Cổng đích: %1"
 
-#: protocols/udp-protocol.cpp:86
+#: protocols/udp-protocol.cpp:79
 msgid ""
 "_: UDP protocol field\n"
 "Destination port: %1 (%2)"
 msgstr "Cổng đích: %1 (%2)"
 
-#: protocols/udp-protocol.cpp:88
+#: protocols/udp-protocol.cpp:81
 #, c-format
 msgid ""
 "_: UDP protocol field\n"
 "Length: %1"
 msgstr "Dài: %1"
 
-#: protocols/udp-protocol.cpp:89
+#: protocols/udp-protocol.cpp:82
 #, c-format
 msgid ""
 "_: UDP protocol field\n"
 "Checksum: 0x%1"
 msgstr "Tổng kiểm: 0x%1"
 
-#: protocols/tcp-protocol.cpp:128
+#: protocols/tcp-protocol.cpp:118
 #, c-format
 msgid ""
 "_: TCP protocol field\n"
 "Source port: %1"
 msgstr "Cổng nguồn: %1"
 
-#: protocols/tcp-protocol.cpp:130
+#: protocols/tcp-protocol.cpp:120
 msgid ""
 "_: TCP protocol field\n"
 "Source port: %1 (%2)"
 msgstr "Cổng nguồn: %1 (%2)"
 
-#: protocols/tcp-protocol.cpp:134
+#: protocols/tcp-protocol.cpp:124
 #, c-format
 msgid ""
 "_: TCP protocol field\n"
 "Destination port: %1"
 msgstr "Cổng đích: %1"
 
-#: protocols/tcp-protocol.cpp:136
+#: protocols/tcp-protocol.cpp:126
 msgid ""
 "_: TCP protocol field\n"
 "Destination port: %1 (%2)"
 msgstr "Cổng đích: %1 (%2)"
 
-#: protocols/tcp-protocol.cpp:138
+#: protocols/tcp-protocol.cpp:128
 #, c-format
 msgid ""
 "_: TCP protocol field\n"
 "Window size: %1"
 msgstr "Cỡ cửa sổ: %1"
 
-#: protocols/tcp-protocol.cpp:139
+#: protocols/tcp-protocol.cpp:129
 #, c-format
 msgid ""
 "_: TCP protocol field\n"
 "Sequence number: %1"
 msgstr "Số hiệu dãy: %1"
 
-#: protocols/tcp-protocol.cpp:140
+#: protocols/tcp-protocol.cpp:130
 msgid ""
 "_: TCP protocol field\n"
 "Header length: %1 bytes"
 msgstr "Độ dài phần đầu: %1 byte"
 
-#: protocols/tcp-protocol.cpp:141
+#: protocols/tcp-protocol.cpp:131
 #, c-format
 msgid ""
 "_: TCP protocol field\n"

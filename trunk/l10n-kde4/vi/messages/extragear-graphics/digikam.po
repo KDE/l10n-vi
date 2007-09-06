@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-05 05:36+0200\n"
+"POT-Creation-Date: 2007-09-06 05:40+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -596,7 +596,7 @@ msgstr "Xoá thẻ « %1 » không?"
 #: digikam/searchfolderview.cpp:269 digikam/tagfolderview.cpp:601
 #: digikam/tagfolderview.cpp:616 digikam/tagfilterview.cpp:1127
 #: digikam/tagfilterview.cpp:1141 digikam/digikamapp.cpp:641
-#: utilities/cameragui/cameraui.cpp:1428 utilities/cameragui/cameraui.cpp:1495
+#: utilities/cameragui/cameraui.cpp:1437 utilities/cameragui/cameraui.cpp:1504
 #: utilities/cameragui/cameraiconview.cpp:459
 msgid "Delete"
 msgstr "Xoá"
@@ -1154,7 +1154,7 @@ msgstr ""
 #: digikam/digikamapp.cpp:1805 showfoto/setup/setup.cpp:96
 #: utilities/imageeditor/editor/editorwindow.cpp:597
 #: utilities/lighttable/lighttablewindow.cpp:1165
-#: utilities/cameragui/cameraui.cpp:1726
+#: utilities/cameragui/cameraui.cpp:1735
 msgid "General"
 msgstr "Chung"
 
@@ -1543,7 +1543,7 @@ msgid "The ICC profile product description"
 msgstr "Mô tả sản phẩm hồ sơ ICC"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
-#: utilities/cameragui/cameraui.cpp:1412 utilities/cameragui/cameraui.cpp:1479
+#: utilities/cameragui/cameraui.cpp:1421 utilities/cameragui/cameraui.cpp:1488
 msgid "Information"
 msgstr "Thông tin"
 
@@ -3793,7 +3793,7 @@ msgstr ""
 "Tiến trình cập nhật cơ sở dữ liệu siêu dữ liệu có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2091 utilities/cameragui/cameraui.cpp:872
+#: digikam/digikamapp.cpp:2091 utilities/cameragui/cameraui.cpp:880
 #, qt-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
@@ -4322,7 +4322,7 @@ msgstr ""
 
 #: showfoto/showfoto.cpp:1109
 #: utilities/imageeditor/editor/editorwindow.cpp:1228
-#: utilities/cameragui/cameraui.cpp:1427 utilities/cameragui/cameraui.cpp:1494
+#: utilities/cameragui/cameraui.cpp:1436 utilities/cameragui/cameraui.cpp:1503
 msgid "Warning"
 msgstr "Cảnh báo"
 
@@ -11404,7 +11404,7 @@ msgstr "Giới thiệu"
 msgid "About Driver"
 msgstr "Giới thiệu về trình điều khiển"
 
-#: utilities/cameragui/umscamera.cpp:460
+#: utilities/cameragui/umscamera.cpp:462
 msgid ""
 "<b>Mounted Camera</b> driver for USB/IEEE1394 mass storage cameras and Flash "
 "disk card readers.<br><br>"
@@ -11412,12 +11412,12 @@ msgstr ""
 "Trình điều khiển <b>máy ảnh đã lắp</b> cho các máy ảnh cất giữ hàng loạt USB/"
 "IEEE1394 và máy đọc thẻ Flash.<br><br>"
 
-#: utilities/cameragui/umscamera.cpp:463
+#: utilities/cameragui/umscamera.cpp:465
 #, qt-format
 msgid "Title: %1<br>Model: %2<br>Port: %3<br>Path: %4<br>"
 msgstr "Tên: %1<br>Mô hình: %2<br>Cổng: %3<br>Đường dẫn: %4<br>"
 
-#: utilities/cameragui/umscamera.cpp:476
+#: utilities/cameragui/umscamera.cpp:478
 msgid ""
 "For more information about the <b>Mounted Camera</b> driver, please read the "
 "digiKam manual on <b>Supported Digital Still Cameras</b> section."
@@ -11426,7 +11426,7 @@ msgstr ""
 "digiKam, phần <b>Supported Digital Still Cameras</b> (các máy ảnh tĩnh số đã "
 "hỗ trợ)."
 
-#: utilities/cameragui/umscamera.cpp:484
+#: utilities/cameragui/umscamera.cpp:486
 msgid ""
 "The <b>Mounted Camera</b> driver is a simple interface to a camera disk "
 "mounted locally on your system.<br><br>It doesn't use any libgphoto2 drivers."
@@ -11443,15 +11443,35 @@ msgstr ""
 msgid "Camera Folders"
 msgstr "Thư mục máy ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:193
-#, qt-format
-msgid "<p>Capacity: <b>%1</b><p>Available: <b>%2</b><p>Require: <b>%3</b>"
+#: utilities/cameragui/freespacewidget.cpp:234
+#, fuzzy
+#| msgid "Camera Manual"
+msgid "Camera Media"
+msgstr "Sổ tay máy ảnh"
+
+#: utilities/cameragui/freespacewidget.cpp:235
+#, fuzzy
+#| msgid "Album Library Path"
+msgid "Album Library"
+msgstr "Đường dẫn thư viện tập ảnh"
+
+#: utilities/cameragui/freespacewidget.cpp:247
+#: utilities/cameragui/freespacewidget.cpp:258
+msgid "Capacity:"
 msgstr ""
 
-#: utilities/cameragui/freespacewidget.cpp:202
-#, qt-format
-msgid "<p>Capacity: <b>%1</b><p>Available: <b>%2</b>"
-msgstr ""
+#: utilities/cameragui/freespacewidget.cpp:250
+#: utilities/cameragui/freespacewidget.cpp:261
+#, fuzzy
+#| msgid "unavailable"
+msgid "Available:"
+msgstr "không sẵn sàng"
+
+#: utilities/cameragui/freespacewidget.cpp:253
+#, fuzzy
+#| msgid "Relief:"
+msgid "Require:"
+msgstr "Nổi bật:"
 
 #: utilities/cameragui/camerafolderdialog.cpp:55
 #, qt-format
@@ -11661,139 +11681,145 @@ msgstr ""
 "Đang tạo tập ảnh mới trong « %1 »\n"
 "Hãy nhập tên tập ảnh:"
 
-#: utilities/cameragui/cameracontroller.cpp:258
+#: utilities/cameragui/cameracontroller.cpp:254
 msgid "Connecting to camera..."
 msgstr "Đang kết nối tới máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:265
+#: utilities/cameragui/cameracontroller.cpp:261
 msgid "Connection established"
 msgstr "Sự kết nối đã được thiết lập"
 
-#: utilities/cameragui/cameracontroller.cpp:267
+#: utilities/cameragui/cameracontroller.cpp:263
 msgid "Connection failed"
 msgstr "Lỗi kết nối"
 
-#: utilities/cameragui/cameracontroller.cpp:273
+#: utilities/cameragui/cameracontroller.cpp:269
 msgid "Getting camera information..."
 msgstr "Đang lấy thông tin về máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:286
+#: utilities/cameragui/cameracontroller.cpp:282
+#, fuzzy
+#| msgid "Getting camera information..."
+msgid "Getting camera freespace available..."
+msgstr "Đang lấy thông tin về máy ảnh..."
+
+#: utilities/cameragui/cameracontroller.cpp:291
 msgid "Listing folders..."
 msgstr "Đang liệt kê các thư mục..."
 
-#: utilities/cameragui/cameracontroller.cpp:293
+#: utilities/cameragui/cameracontroller.cpp:298
 msgid "Listing folders is complete..."
 msgstr "Tiến trình liệt kê các thư mục đã chạy xong."
 
-#: utilities/cameragui/cameracontroller.cpp:301
+#: utilities/cameragui/cameracontroller.cpp:306
 #, qt-format
 msgid "Listing files in %1..."
 msgstr "Đang liệt kê các tập tin nằm trong %1 ..."
 
-#: utilities/cameragui/cameracontroller.cpp:307
+#: utilities/cameragui/cameracontroller.cpp:312
 #, qt-format
 msgid "Failed to list files in %1"
 msgstr "Lỗi liệt kê tập tin nằm trong %1"
 
-#: utilities/cameragui/cameracontroller.cpp:315
+#: utilities/cameragui/cameracontroller.cpp:320
 #, qt-format
 msgid "Listing files in %1 is complete"
 msgstr "Tiến trình liệt kê các tập tin trong %1 đã chạy xong."
 
-#: utilities/cameragui/cameracontroller.cpp:324
-#, fuzzy, qt-format
+#: utilities/cameragui/cameracontroller.cpp:329
+#, fuzzy
 #| msgid "Getting thumbnail for %1/%2..."
-msgid "Getting thumbnail for %1..."
+msgid "Getting thumbnail in progress..."
 msgstr "Đang lấy ảnh mẫu cho %1/%2..."
 
-#: utilities/cameragui/cameracontroller.cpp:350
+#: utilities/cameragui/cameracontroller.cpp:355
 #, fuzzy, qt-format
 #| msgid "Getting EXIF information for %1/%2..."
 msgid "Getting EXIF information for %1..."
 msgstr "Đang lấy thông tin EXIF cho %1/%2..."
 
-#: utilities/cameragui/cameracontroller.cpp:388
+#: utilities/cameragui/cameracontroller.cpp:393
 #, qt-format
 msgid "Downloading file %1..."
 msgstr "Đang tải về tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:406
+#: utilities/cameragui/cameracontroller.cpp:411
 #, qt-format
 msgid "EXIF rotating file %1..."
 msgstr "Đang xoay EXIF tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:412
+#: utilities/cameragui/cameracontroller.cpp:417
 #, qt-format
 msgid "Setting Metadata tags to file %1..."
 msgstr "Đang đặt thẻ siêu dữ liệu đối với tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:432
+#: utilities/cameragui/cameracontroller.cpp:437
 #, qt-format
 msgid "Converting %1 to lossless file format..."
 msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
 
-#: utilities/cameragui/cameracontroller.cpp:463
+#: utilities/cameragui/cameracontroller.cpp:468
 #, qt-format
 msgid "Retrieving file %1 from camera..."
 msgstr "Đang lấy tập tin %1 từ máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:473
+#: utilities/cameragui/cameracontroller.cpp:478
 #, qt-format
 msgid "Failed to retrieve file %1 from camera"
 msgstr "Lỗi lấy tập tin %1 từ máy ảnh"
 
-#: utilities/cameragui/cameracontroller.cpp:488
+#: utilities/cameragui/cameracontroller.cpp:493
 #, qt-format
 msgid "Uploading file %1 to camera..."
 msgstr "Đang tải tập tin %1 lên máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:509
+#: utilities/cameragui/cameracontroller.cpp:514
 #, qt-format
 msgid "Deleting file %1..."
 msgstr "Đang xoá tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:529
+#: utilities/cameragui/cameracontroller.cpp:534
 #, qt-format
 msgid "Toggle lock file %1..."
 msgstr "Bật/tắt tập tin khoá %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:586
+#: utilities/cameragui/cameracontroller.cpp:591
 msgid "Rename File"
 msgstr "Thay tên tập tin"
 
-#: utilities/cameragui/cameracontroller.cpp:641
+#: utilities/cameragui/cameracontroller.cpp:646
 #, qt-format
 msgid "Skipped file %1"
 msgstr "Đã bỏ qua tập tin %1"
 
-#: utilities/cameragui/cameracontroller.cpp:662
+#: utilities/cameragui/cameracontroller.cpp:667
 #, qt-format
 msgid "Failed to download file \"%1\"."
 msgstr "Lỗi tải xuống tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:672
-#: utilities/cameragui/cameracontroller.cpp:695
-#: utilities/cameragui/cameracontroller.cpp:717
-#: utilities/cameragui/cameracontroller.cpp:739
+#: utilities/cameragui/cameracontroller.cpp:677
+#: utilities/cameragui/cameracontroller.cpp:700
+#: utilities/cameragui/cameracontroller.cpp:722
+#: utilities/cameragui/cameracontroller.cpp:744
 msgid " Do you want to continue?"
 msgstr " Bạn có muốn tiếp tục không?"
 
-#: utilities/cameragui/cameracontroller.cpp:685
+#: utilities/cameragui/cameracontroller.cpp:690
 #, qt-format
 msgid "Failed to upload file \"%1\"."
 msgstr "Lỗi tải lên tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:707
+#: utilities/cameragui/cameracontroller.cpp:712
 #, qt-format
 msgid "Failed to delete file \"%1\"."
 msgstr "Lỗi xoá tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:729
+#: utilities/cameragui/cameracontroller.cpp:734
 #, qt-format
 msgid "Failed to toggle lock file \"%1\"."
 msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:757
+#: utilities/cameragui/cameracontroller.cpp:762
 #, qt-format
 msgid "Camera \"%1\""
 msgstr "Máy ảnh « %1 »"
@@ -12000,27 +12026,27 @@ msgstr "Xoá các điều chọn"
 msgid "Delete All"
 msgstr "Xoá tất cả"
 
-#: utilities/cameragui/cameraui.cpp:692
+#: utilities/cameragui/cameraui.cpp:700
 msgid "Cancelling current operation, please wait..."
 msgstr "Đang thôi thao tác hiện thời, xin hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:719
+#: utilities/cameragui/cameraui.cpp:727
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr "Bạn có muốn đóng hộp thoại này và thôi thao tác đang chạy không?"
 
-#: utilities/cameragui/cameraui.cpp:726
+#: utilities/cameragui/cameraui.cpp:734
 msgid "Disconnecting from camera, please wait..."
 msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:762
+#: utilities/cameragui/cameraui.cpp:770
 msgid "Scanning for new files, please wait..."
 msgstr "Đang quét tìm tập tin mới. Hãy đời..."
 
-#: utilities/cameragui/cameraui.cpp:812
+#: utilities/cameragui/cameraui.cpp:820
 msgid "Ready"
 msgstr "Sẵn sàng"
 
-#: utilities/cameragui/cameraui.cpp:897
+#: utilities/cameragui/cameraui.cpp:905
 msgid ""
 "Failed to connect to the camera. Please make sure it is connected properly "
 "and turned on. Would you like to try again?"
@@ -12028,23 +12054,23 @@ msgstr ""
 "Lỗi kết nối tới máy ảnh. Hãy kiểm tra xem nó đã được kết nối và bật. Bạn có "
 "muốn thử lại không?"
 
-#: utilities/cameragui/cameraui.cpp:901
+#: utilities/cameragui/cameraui.cpp:909
 msgid "Connection Failed"
 msgstr "Lỗi kết nối"
 
-#: utilities/cameragui/cameraui.cpp:902
+#: utilities/cameragui/cameraui.cpp:910
 msgid "Retry"
 msgstr "Thử lại"
 
-#: utilities/cameragui/cameraui.cpp:903
+#: utilities/cameragui/cameraui.cpp:911
 msgid "Abort"
 msgstr "Hủy bỏ"
 
-#: utilities/cameragui/cameraui.cpp:1009
+#: utilities/cameragui/cameraui.cpp:1018
 msgid "Select Image to Upload"
 msgstr "Chọn ảnh cần tải lên"
 
-#: utilities/cameragui/cameraui.cpp:1044
+#: utilities/cameragui/cameraui.cpp:1053
 #, qt-format
 msgid ""
 "Camera Folder <b>%1</b> already contains item <b>%2</b><br>Please enter a "
@@ -12053,11 +12079,11 @@ msgstr ""
 "Thư mục máy ảnh <b>%1</b> đã chứa mục <b>%2</b><br>Hãy nhập vào tên tập tin "
 "mới (không có phần mở rộng):"
 
-#: utilities/cameragui/cameraui.cpp:1047
+#: utilities/cameragui/cameraui.cpp:1056
 msgid "File already exists"
 msgstr "Tập tin đã có"
 
-#: utilities/cameragui/cameraui.cpp:1102
+#: utilities/cameragui/cameraui.cpp:1111
 #, qt-format
 msgid ""
 "There is no enough free space on Album Library Path to download and process "
@@ -12067,7 +12093,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1144
+#: utilities/cameragui/cameraui.cpp:1153
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "the camera pictures into.</p>"
@@ -12075,7 +12101,7 @@ msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: utilities/cameragui/cameraui.cpp:1409
+#: utilities/cameragui/cameraui.cpp:1418
 msgid ""
 "The items listed below are locked by the camera (read-only). These items "
 "will not be deleted. If you really want to delete these items, please unlock "
@@ -12085,7 +12111,7 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/cameraui.cpp:1418 utilities/cameragui/cameraui.cpp:1485
+#: utilities/cameragui/cameraui.cpp:1427 utilities/cameragui/cameraui.cpp:1494
 #, fuzzy, qt-format
 #| msgid ""
 #| "About to delete this image. Deleted files are unrecoverable. Are you sure?"
@@ -12097,7 +12123,7 @@ msgid_plural ""
 msgstr[0] ""
 "Sắp xoá ảnh này. Tập tin bị xoá không thể được phục hồi. Bạn có chắc chưa?"
 
-#: utilities/cameragui/cameraui.cpp:1476
+#: utilities/cameragui/cameraui.cpp:1485
 msgid ""
 "The items listed below are locked by camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
@@ -12107,29 +12133,29 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/cameraui.cpp:1645
+#: utilities/cameragui/cameraui.cpp:1654
 #, qt-format
 msgid "A file with same name (%1) exists in folder %2"
 msgstr "Một tập tin cùng tên (%1) đã có trong thư mục %2"
 
-#: utilities/cameragui/cameraui.cpp:1657
+#: utilities/cameragui/cameraui.cpp:1666
 #, qt-format
 msgid "Failed to find Album for path '%1'"
 msgstr "Không tìm thấy tập ảnh qua đường dẫn « %1 »"
 
-#: utilities/cameragui/gpcamera.cpp:975 utilities/cameragui/gpcamera.cpp:976
-#: utilities/cameragui/gpcamera.cpp:977 utilities/cameragui/gpcamera.cpp:978
-#: utilities/cameragui/gpcamera.cpp:979
+#: utilities/cameragui/gpcamera.cpp:1088 utilities/cameragui/gpcamera.cpp:1089
+#: utilities/cameragui/gpcamera.cpp:1090 utilities/cameragui/gpcamera.cpp:1091
+#: utilities/cameragui/gpcamera.cpp:1092
 msgid "yes"
 msgstr "có"
 
-#: utilities/cameragui/gpcamera.cpp:975 utilities/cameragui/gpcamera.cpp:976
-#: utilities/cameragui/gpcamera.cpp:977 utilities/cameragui/gpcamera.cpp:978
-#: utilities/cameragui/gpcamera.cpp:979
+#: utilities/cameragui/gpcamera.cpp:1088 utilities/cameragui/gpcamera.cpp:1089
+#: utilities/cameragui/gpcamera.cpp:1090 utilities/cameragui/gpcamera.cpp:1091
+#: utilities/cameragui/gpcamera.cpp:1092
 msgid "no"
 msgstr "không"
 
-#: utilities/cameragui/gpcamera.cpp:962
+#: utilities/cameragui/gpcamera.cpp:1075
 #, qt-format
 msgid ""
 "Title: %1\n"
@@ -12157,7 +12183,7 @@ msgstr ""
 " • xoá thư mục: %9\n"
 "\n"
 
-#: utilities/cameragui/gpcamera.cpp:1042
+#: utilities/cameragui/gpcamera.cpp:1155
 msgid ""
 "\n"
 "\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-05 05:30+0200\n"
+"POT-Creation-Date: 2007-09-06 05:36+0200\n"
 "PO-Revision-Date: 2007-06-22 17:23+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -3080,6 +3080,60 @@ msgstr "Thiết lập ủy nhiệm"
 msgid "&Use proxy server"
 msgstr "Dùng máy phục vụ ủ&y nhiệm"
 
+#: kdeprintd/kprintprocess.cpp:79
+msgid "File transfer failed."
+msgstr "Việc truyền tập tin bị lỗi."
+
+#: kdeprintd/kprintprocess.cpp:86
+#, qt-format
+msgid "Abnormal process termination (<b>%1</b>)."
+msgstr "Kết thúc tiến trình bất thường (<b>%1</b>)."
+
+#: kdeprintd/kprintprocess.cpp:88
+#, qt-format
+msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
+msgstr "<b>%1</b>: việc thực hiện bị lỗi với thông điệp:<p>%2</p>"
+
+#: kdeprintd/kdeprintd.cpp:169 kprinter.cpp:807
+#, fuzzy, qt-format
+#| msgid ""
+#| "<p><nobr>A print error occurred. Error message received from system:</"
+#| "nobr></p><br>%1"
+msgid ""
+"<p><nobr>A print error occurred. Error message received from system:</nobr></"
+"p><br />%1"
+msgstr ""
+"<p><nobr>Gặp lỗi in. Thông điệp lỗi được nhận từ hệ thống:</nobr></p><br>%1"
+
+#: kdeprintd/kdeprintd.cpp:190
+msgid ""
+"Some of the files to printed are not readable by the KDE print daemon. This "
+"may happen if you are trying to print as a different user to the one "
+"currently logged in. To continue printing, you need to provide root's "
+"password."
+msgstr ""
+"Trình nền in KDE không thể đọc một số tập tin cần in. Trường hợp này có thể "
+"xảy ra nếu bạn thử in dưới người dùng khác với người đã đặng nhập. Để tiếp "
+"tục in, bạn cần phải nhập vào mật khẩu của người chủ (root)."
+
+#: kdeprintd/kdeprintd.cpp:195
+msgid "Enter the root password"
+msgstr "Nhập mật khẩu chủ"
+
+#: kdeprintd/kdeprintd.cpp:214 kdeprintd/kdeprintd.cpp:216
+#, qt-format
+msgid "Printing Status - %1"
+msgstr "Trạng thái in - %1"
+
+#: kdeprintd/kdeprintd.cpp:277
+msgid "Printing system"
+msgstr "Hệ thống in"
+
+#: kdeprintd/kdeprintd.cpp:283
+#, qt-format
+msgid "Authentication failed (user name=%1)"
+msgstr "Việc xác thực bị lỗi (tên người dùng = %1)"
+
 #: kmjob.cpp:115
 msgid "Queued"
 msgstr "Đã sắp hàng"
@@ -4423,11 +4477,11 @@ msgstr "Thêm tùy chọn"
 msgid "Delete item"
 msgstr "Bỏ mục"
 
-#: management/kxmlcommanddlg.cpp:157 kfilelist.cpp:128
+#: management/kxmlcommanddlg.cpp:157 kfilelist.cpp:129
 msgid "Move up"
 msgstr "Đem lên"
 
-#: management/kxmlcommanddlg.cpp:158 kfilelist.cpp:135
+#: management/kxmlcommanddlg.cpp:158 kfilelist.cpp:136
 msgid "Move down"
 msgstr "Đem xuống"
 
@@ -5253,19 +5307,19 @@ msgstr ""
 msgid "Path"
 msgstr "Đường dẫn"
 
-#: kfilelist.cpp:108
+#: kfilelist.cpp:109
 msgid "Add file"
 msgstr "Thêm tập tin"
 
-#: kfilelist.cpp:114
+#: kfilelist.cpp:115
 msgid "Remove file"
 msgstr "Bỏ tập tin"
 
-#: kfilelist.cpp:121
+#: kfilelist.cpp:122
 msgid "Open file"
 msgstr "Mở tập tin"
 
-#: kfilelist.cpp:142
+#: kfilelist.cpp:143
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
 "<b>&lt;STDIN&gt;</b>."
@@ -5461,17 +5515,6 @@ msgstr "Đang tạo ra dữ liệu in: trang %1"
 #: kprinter.cpp:536
 msgid "Previewing..."
 msgstr "Đang xem thử..."
-
-#: kprinter.cpp:807 kdeprintd.cpp:168
-#, fuzzy, qt-format
-#| msgid ""
-#| "<p><nobr>A print error occurred. Error message received from system:</"
-#| "nobr></p><br>%1"
-msgid ""
-"<p><nobr>A print error occurred. Error message received from system:</nobr></"
-"p><br />%1"
-msgstr ""
-"<p><nobr>Gặp lỗi in. Thông điệp lỗi được nhận từ hệ thống:</nobr></p><br>%1"
 
 #: foomatic/kfoomaticprinterimpl.cpp:51 lpdunix/klpdunixprinterimpl.cpp:73
 msgid ""
@@ -6158,49 +6201,6 @@ msgstr "(đang từ chối công việc)"
 msgid "(accepting jobs)"
 msgstr "(đang chấp nhận công việc)"
 
-#: kprintprocess.cpp:73
-msgid "File transfer failed."
-msgstr "Việc truyền tập tin bị lỗi."
-
-#: kprintprocess.cpp:81
-#, qt-format
-msgid "Abnormal process termination (<b>%1</b>)."
-msgstr "Kết thúc tiến trình bất thường (<b>%1</b>)."
-
-#: kprintprocess.cpp:83
-#, qt-format
-msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
-msgstr "<b>%1</b>: việc thực hiện bị lỗi với thông điệp:<p>%2</p>"
-
-#: kdeprintd.cpp:189
-msgid ""
-"Some of the files to printed are not readable by the KDE print daemon. This "
-"may happen if you are trying to print as a different user to the one "
-"currently logged in. To continue printing, you need to provide root's "
-"password."
-msgstr ""
-"Trình nền in KDE không thể đọc một số tập tin cần in. Trường hợp này có thể "
-"xảy ra nếu bạn thử in dưới người dùng khác với người đã đặng nhập. Để tiếp "
-"tục in, bạn cần phải nhập vào mật khẩu của người chủ (root)."
-
-#: kdeprintd.cpp:194
-msgid "Enter the root password"
-msgstr "Nhập mật khẩu chủ"
-
-#: kdeprintd.cpp:213 kdeprintd.cpp:215
-#, qt-format
-msgid "Printing Status - %1"
-msgstr "Trạng thái in - %1"
-
-#: kdeprintd.cpp:276
-msgid "Printing system"
-msgstr "Hệ thống in"
-
-#: kdeprintd.cpp:282
-#, qt-format
-msgid "Authentication failed (user name=%1)"
-msgstr "Việc xác thực bị lỗi (tên người dùng = %1)"
-
 #. i18n: tag text
 #. i18n: file kprintpreviewui.rc line 4
 #. i18n: tag text
@@ -6606,11 +6606,11 @@ msgstr ""
 "<b>poster</b> chưa được cài đặt cho đúng, hoặc bạn chưa có phiên bản cần "
 "thiết (công bố tại &lt;http://printing.kde.org/downloads/&gt;)."
 
-#: kprinterpropertydialog.cpp:87 kprinterpropertydialog.cpp:147
+#: kprinterpropertydialog.cpp:84 kprinterpropertydialog.cpp:144
 msgid "Printer Configuration"
 msgstr "Cấu hình máy in"
 
-#: kprinterpropertydialog.cpp:147
+#: kprinterpropertydialog.cpp:144
 msgid "No configurable options for that printer."
 msgstr "Không có tùy chọn cấu hình được cho máy in đó."
 

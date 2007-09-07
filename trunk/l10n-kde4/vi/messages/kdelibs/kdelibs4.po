@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-06 05:35+0200\n"
+"POT-Creation-Date: 2007-09-07 05:32+0200\n"
 "PO-Revision-Date: 2007-06-25 20:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -93,7 +93,7 @@ msgstr "Chu&yển"
 #. i18n: file ./kdeui/ui_standards.rc line 100
 #. i18n: tag text
 #. i18n: file ./khtml/khtml_browser.rc line 20
-#: rc.cpp:29 rc.cpp:375 kfile/kdiroperator.cpp:1677
+#: rc.cpp:29 rc.cpp:375 kfile/kdiroperator.cpp:1597
 msgid "&View"
 msgstr "&Xem"
 
@@ -249,7 +249,7 @@ msgstr "Nhớ mật khẩu"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/sonnet/configui.ui line 28
-#: rc.cpp:104 kdeui/findreplace/kfinddialog.cpp:131
+#: rc.cpp:104 kdeui/findreplace/kfinddialog.cpp:131 kfile/kfilewidget.cpp:318
 msgid "Options"
 msgstr "Tùy chọn"
 
@@ -5541,7 +5541,7 @@ msgstr "Bỏ"
 msgid "Test"
 msgstr "Thử ra"
 
-#: kdeui/util/kstandardguiitem.cpp:285 kfile/kdiroperator.cpp:1713
+#: kdeui/util/kstandardguiitem.cpp:285 kfile/kdiroperator.cpp:1591
 msgid "Properties"
 msgstr "Thuộc tính"
 
@@ -6038,7 +6038,7 @@ msgid "About %1"
 msgstr "Giới thiệu về %1"
 
 #: kdeui/dialogs/kconfigdialog.cpp:60 kdeui/actions/kcodecaction.cpp:120
-#: kfile/kfilewidget.cpp:318 kutils/kcmultidialog.cpp:99
+#: kutils/kcmultidialog.cpp:99
 msgid "Configure"
 msgstr "Cấu hình"
 
@@ -8881,7 +8881,7 @@ msgstr "&Hiện mọi mục nhập"
 msgid "&Remove '%1'"
 msgstr "&Bỏ « %1 »"
 
-#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:1686
+#: kfile/k3filedetailview.cpp:63 kfile/kdiroperator.cpp:1572
 msgid "Detailed View"
 msgstr "Xem chi tiết"
 
@@ -8995,7 +8995,9 @@ msgid "Click this button to create a new folder."
 msgstr "Nhấn vào cái nút này để tạo một thư mục mới."
 
 #: kfile/kfilewidget.cpp:306
-msgid "Show Quick Access Navigation Panel"
+#, fuzzy
+#| msgid "Show Quick Access Navigation Panel"
+msgid "Show Places Navigation Panel"
 msgstr "Hiện Bảng Duyệt qua Truy cập Nhanh"
 
 #: kfile/kfilewidget.cpp:313
@@ -9003,12 +9005,19 @@ msgid "Show Bookmarks"
 msgstr "Hiện Liên kết đã Lưu"
 
 #: kfile/kfilewidget.cpp:320
+#, fuzzy
+#| msgid ""
+#| "<qt>This is the configuration menu for the file dialog. Various options "
+#| "can be accessed from this menu including: <ul><li>how files are sorted in "
+#| "the list</li><li>types of view, including icon and list</li><li>showing "
+#| "of hidden files</li><li>the Quick Access navigation panel</li><li>file "
+#| "previews</li><li>separating folders from files</li></ul></qt>"
 msgid ""
-"<qt>This is the configuration menu for the file dialog. Various options can "
-"be accessed from this menu including: <ul><li>how files are sorted in the "
-"list</li><li>types of view, including icon and list</li><li>showing of "
-"hidden files</li><li>the Quick Access navigation panel</li><li>file "
-"previews</li><li>separating folders from files</li></ul></qt>"
+"<qt>This is the preferences menu for the file dialog. Various options can be "
+"accessed from this menu including: <ul><li>how files are sorted in the list</"
+"li><li>types of view, including icon and list</li><li>showing of hidden "
+"files</li><li>the Places navigation panel</li><li>file previews</"
+"li><li>separating folders from files</li></ul></qt>"
 msgstr ""
 "<qt>Đây là trình đơn cấu hình cho hộp thoại tập tin. Trình đơn này cho bạn "
 "truy cập một số tùy chọn khác nhau, gồm có : <ul><li>phương pháp sắp xếp tập "
@@ -9016,7 +9025,7 @@ msgstr ""
 "li><li>khả năng hiển thị tập tin ẩn</li><li>Bảng Duyệt qua Truy cập Nhanh</"
 "li><li>ô xem thử tập tin</li><li>phân biệt tập tin ra thư mục</li></ul></qt>"
 
-#: kfile/kfilewidget.cpp:364
+#: kfile/kfilewidget.cpp:364 kfile/kfileplaceeditdialog.cpp:110
 msgid "&Location:"
 msgstr "Đị&a điểm:"
 
@@ -9254,25 +9263,25 @@ msgstr "Đường dẫn riêng"
 msgid "Select Folder"
 msgstr "Chọn thư mục"
 
-#: kfile/kdirselectdialog.cpp:104 kfile/kdirselectdialog.cpp:142
-#: kfile/kdiroperator.cpp:1629
+#: kfile/kdirselectdialog.cpp:104 kfile/kdirselectdialog.cpp:143
+#: kfile/kdiroperator.cpp:1520
 msgid "New Folder..."
 msgstr "Thư mục mới..."
 
-#: kfile/kdirselectdialog.cpp:126
+#: kfile/kdirselectdialog.cpp:127
 msgid "Folders"
 msgstr "Thư mục"
 
-#: kfile/kdirselectdialog.cpp:148
+#: kfile/kdirselectdialog.cpp:149
 msgid "Show Hidden Folders"
 msgstr "Hiện thư mục ẩn"
 
-#: kfile/kdirselectdialog.cpp:428 kfile/kdirselectdialog.cpp:432
-#: kfile/kdiroperator.cpp:671 kfile/kdiroperator.cpp:679
+#: kfile/kdirselectdialog.cpp:429 kfile/kdirselectdialog.cpp:433
+#: kfile/kdiroperator.cpp:607 kfile/kdiroperator.cpp:615
 msgid "New Folder"
 msgstr "Thư mục mới"
 
-#: kfile/kdirselectdialog.cpp:433 kfile/kdiroperator.cpp:680
+#: kfile/kdirselectdialog.cpp:434 kfile/kdiroperator.cpp:616
 #, qt-format
 msgid ""
 "Create new folder in:\n"
@@ -9281,50 +9290,40 @@ msgstr ""
 "Tạo thư mục mới trong:\n"
 "%1"
 
-#: kfile/kdirselectdialog.cpp:456 kfile/kdiroperator.cpp:706
+#: kfile/kdirselectdialog.cpp:457 kfile/kdiroperator.cpp:642
 #, qt-format
 msgid "A file or folder named %1 already exists."
 msgstr "Một tập tin hay thư mục tên %1 đã có."
 
-#: kfile/kdirselectdialog.cpp:460 kfile/kdiroperator.cpp:709
+#: kfile/kdirselectdialog.cpp:461 kfile/kdiroperator.cpp:645
 msgid "You do not have permission to create that folder."
 msgstr "Bạn không có quyền tạo thư mục đó."
 
 #: kfile/kfileplaceeditdialog.cpp:85
-msgid "Edit Quick Access Entry"
+#, fuzzy
+#| msgid "Edit Quick Access Entry"
+msgid "Edit Places Entry"
 msgstr "Sửa mục Truy cập Nhanh"
 
-#: kfile/kfileplaceeditdialog.cpp:91
-#, fuzzy
-#| msgid ""
-#| "<qt><b>Please provide a description, URL and icon for this Quick Access "
-#| "entry.</b></br></qt>"
-msgid ""
-"<qt><b>Please provide a description, URL and icon for this Quick Access "
-"entry.</b><br /></qt>"
-msgstr ""
-"<qt><b>Hãy cung cấp mô tả, địa chỉ URL và biểu tượng cho mục nhập Truy Cập "
-"Nhanh này.</b></br></qt>"
-
-#: kfile/kfileplaceeditdialog.cpp:99
+#: kfile/kfileplaceeditdialog.cpp:96
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the text that will appear in the Quick Access panel.<p>The "
 #| "description should consist of one or two words that will help you "
 #| "remember what this entry refers to.</qt>"
 msgid ""
-"<qt>This is the text that will appear in the Quick Access panel.<br /><br /"
-">The description should consist of one or two words that will help you "
-"remember what this entry refers to.</qt>"
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"description should consist of one or two words that will help you remember "
+"what this entry refers to.</qt>"
 msgstr ""
 "<qt>Đây là văn bản sẽ hiển thị trong bảng Truy Cập Nhanh.<p>Mô tả nên chứa "
 "một hai từ sẽ nhắc bạn nhớ mục nhập này tham chiếu đến gì.</qt>"
 
-#: kfile/kfileplaceeditdialog.cpp:102
+#: kfile/kfileplaceeditdialog.cpp:99
 msgid "&Description:"
 msgstr "&Mô tả :"
 
-#: kfile/kfileplaceeditdialog.cpp:109
+#: kfile/kfileplaceeditdialog.cpp:106
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>This is the location associated with the entry. Any valid URL may be "
@@ -9342,32 +9341,28 @@ msgstr ""
 "stable<p>Bằng cách nhấn vào cái nút bên cạnh hộp sửa văn bản, bạn cũng có "
 "thể duyệt tới URL thích hợp.</qt>"
 
-#: kfile/kfileplaceeditdialog.cpp:113
-msgid "&URL:"
-msgstr "&URL:"
-
-#: kfile/kfileplaceeditdialog.cpp:120
+#: kfile/kfileplaceeditdialog.cpp:117
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the icon that will appear in the Quick Access panel.<p>Click "
 #| "on the button to select a different icon.</qt>"
 msgid ""
-"<qt>This is the icon that will appear in the Quick Access panel.<br /><br /"
-">Click on the button to select a different icon.</qt>"
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
 msgstr ""
 "<qt>Đây là biểu tượng sẽ hiển thị trong bảng Truy Cập Nhanh.<p>Nhấn vào nút "
 "này để chọn biểu tượng khác.</qt>"
 
-#: kfile/kfileplaceeditdialog.cpp:122
+#: kfile/kfileplaceeditdialog.cpp:119
 msgid "Choose an &icon:"
 msgstr "Chọn b&iểu tượng:"
 
-#: kfile/kfileplaceeditdialog.cpp:140
+#: kfile/kfileplaceeditdialog.cpp:137
 #, qt-format
 msgid "&Only show when using this application (%1)"
 msgstr "&Chỉ hiện khi dùng ứng dụng này (%1)"
 
-#: kfile/kfileplaceeditdialog.cpp:142
+#: kfile/kfileplaceeditdialog.cpp:139
 #, fuzzy, qt-format
 #| msgid ""
 #| "<qt>Select this setting if you want this entry to show only when using "
@@ -9381,15 +9376,15 @@ msgstr ""
 "<qt>Bật tùy chọn này nếu bạn muốn mục nhập này hiển thị chỉ khi sử dụng ứng "
 "dụng hiện thời (%1).<p>Không bật thì mục nhập có sẵn trong mọi ứng dụng.</qt>"
 
-#: kfile/kdiroperator.cpp:730
+#: kfile/kdiroperator.cpp:666
 msgid "You did not select a file to delete."
 msgstr "Bạn chưa chọn tập tin cần xoá."
 
-#: kfile/kdiroperator.cpp:731
+#: kfile/kdiroperator.cpp:667
 msgid "Nothing to Delete"
 msgstr "Không có gì cần xoá"
 
-#: kfile/kdiroperator.cpp:745
+#: kfile/kdiroperator.cpp:681
 #, qt-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -9398,29 +9393,29 @@ msgstr ""
 "<qt>Bạn có thực sự muốn xoá\n"
 "<b>« %1 »</b> không?</qt>"
 
-#: kfile/kdiroperator.cpp:747
+#: kfile/kdiroperator.cpp:683
 msgid "Delete File"
 msgstr "Xoá tập tin"
 
-#: kfile/kdiroperator.cpp:752
+#: kfile/kdiroperator.cpp:688
 #, qt-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Bạn thực sự muốn xoá %1 mục này không?"
 
-#: kfile/kdiroperator.cpp:754
+#: kfile/kdiroperator.cpp:690
 msgid "Delete Files"
 msgstr "Xoá tập tin"
 
-#: kfile/kdiroperator.cpp:787
+#: kfile/kdiroperator.cpp:723
 msgid "You did not select a file to trash."
 msgstr "Bạn chưa chọn tập tin cần kéo vào Rác."
 
-#: kfile/kdiroperator.cpp:788
+#: kfile/kdiroperator.cpp:724
 msgid "Nothing to Trash"
 msgstr "Không có gì cần kéo vào Rác."
 
-#: kfile/kdiroperator.cpp:802
+#: kfile/kdiroperator.cpp:738
 #, qt-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -9429,86 +9424,86 @@ msgstr ""
 "<qt>Bạn có thực sự muốn kéo\n"
 " <b>« %1 »</b> vào Rác không?</qt>"
 
-#: kfile/kdiroperator.cpp:804
+#: kfile/kdiroperator.cpp:740
 msgid "Trash File"
 msgstr "Kéo tập tin vào Rác"
 
-#: kfile/kdiroperator.cpp:805 kfile/kdiroperator.cpp:812
+#: kfile/kdiroperator.cpp:741 kfile/kdiroperator.cpp:748
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "&Rác"
 
-#: kfile/kdiroperator.cpp:809
+#: kfile/kdiroperator.cpp:745
 #, qt-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Bạn có thực sự muốn kéo những %1 mục này vào Rác không?"
 
-#: kfile/kdiroperator.cpp:811
+#: kfile/kdiroperator.cpp:747
 msgid "Trash Files"
 msgstr "Kéo tập tin vào Rác"
 
-#: kfile/kdiroperator.cpp:932 kfile/kdiroperator.cpp:1022
+#: kfile/kdiroperator.cpp:868 kfile/kdiroperator.cpp:958
 msgid "The specified folder does not exist or was not readable."
 msgstr "Bạn đã xác định một thư mục không tồn tại hay không thể đọc."
 
-#: kfile/kdiroperator.cpp:1612
+#: kfile/kdiroperator.cpp:1503
 msgid "Menu"
 msgstr "Trình đơn"
 
-#: kfile/kdiroperator.cpp:1616
+#: kfile/kdiroperator.cpp:1507
 msgid "Parent Folder"
 msgstr "Thư mục cha"
 
-#: kfile/kdiroperator.cpp:1623
+#: kfile/kdiroperator.cpp:1514
 msgid "Home Folder"
 msgstr "Thư mục Nhà"
 
-#: kfile/kdiroperator.cpp:1626
+#: kfile/kdiroperator.cpp:1517
 msgid "Reload"
 msgstr "Tải lại"
 
-#: kfile/kdiroperator.cpp:1634
+#: kfile/kdiroperator.cpp:1525
 msgid "Move to Trash"
 msgstr "Chuyển vào Rác"
 
-#: kfile/kdiroperator.cpp:1640
+#: kfile/kdiroperator.cpp:1531
 msgid "Delete"
 msgstr "Xoá bỏ"
 
-#: kfile/kdiroperator.cpp:1647
+#: kfile/kdiroperator.cpp:1538
 msgid "Sorting"
 msgstr "Sắp xếp"
 
-#: kfile/kdiroperator.cpp:1650
+#: kfile/kdiroperator.cpp:1541
 msgid "By Name"
 msgstr "Theo tên"
 
-#: kfile/kdiroperator.cpp:1654
+#: kfile/kdiroperator.cpp:1545
 msgid "By Date"
 msgstr "Theo ngày"
 
-#: kfile/kdiroperator.cpp:1658
+#: kfile/kdiroperator.cpp:1549
 msgid "By Size"
 msgstr "Theo cỡ"
 
-#: kfile/kdiroperator.cpp:1662
+#: kfile/kdiroperator.cpp:1553
 msgid "By Type"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:1666
+#: kfile/kdiroperator.cpp:1557
 msgid "Descending"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:1681
+#: kfile/kdiroperator.cpp:1567
 msgid "Short View"
 msgstr "Xem ngắn"
 
-#: kfile/kdiroperator.cpp:1695
+#: kfile/kdiroperator.cpp:1581
 msgid "Show Hidden Files"
 msgstr "Hiện tập tin ẩn"
 
-#: kfile/kdiroperator.cpp:1703
+#: kfile/kdiroperator.cpp:1585
 msgid "Show Preview"
 msgstr "Hiện ô xem thử"
 
@@ -10958,38 +10953,35 @@ msgstr ""
 "klauncher: Bạn không nên tự khởi chạy chương trình này.\n"
 "klauncher: Nó bị kdeinit khởi chạy tự động.\n"
 
-#: kinit/klauncher_win.cpp:500 kinit/klauncher.cpp:475
+#: kinit/klauncher.cpp:490
 #, qt-format
 msgid "KDEInit could not launch '%1'."
 msgstr "KDEinit không thể khởi chạy « %1 »."
 
-#: kinit/klauncher_win.cpp:637 kinit/klauncher_win.cpp:663
-#: kinit/klauncher_win.cpp:679 kinit/klauncher.cpp:607 kinit/klauncher.cpp:632
-#: kinit/klauncher.cpp:647
+#: kinit/klauncher.cpp:655 kinit/klauncher.cpp:680 kinit/klauncher.cpp:695
 #, qt-format
 msgid "Could not find service '%1'."
 msgstr "Không tìm thấy dịch vụ « %1 »."
 
-#: kinit/klauncher_win.cpp:696 kinit/klauncher_win.cpp:732
-#: kinit/klauncher.cpp:663 kinit/klauncher.cpp:699
+#: kinit/klauncher.cpp:711 kinit/klauncher.cpp:747
 #, qt-format
 msgid "Service '%1' is malformatted."
 msgstr "Dịch vụ « %1 » dạng sai."
 
-#: kinit/klauncher_win.cpp:934 kinit/klauncher.cpp:975
+#: kinit/klauncher.cpp:819
+#, qt-format
+msgid "Launching %1"
+msgstr "Đang khởi chạy %1..."
+
+#: kinit/klauncher.cpp:1023
 #, qt-format
 msgid "Unknown protocol '%1'.\n"
 msgstr "Giao thức lạ « %1 ».\n"
 
-#: kinit/klauncher_win.cpp:970 kinit/klauncher.cpp:1026
+#: kinit/klauncher.cpp:1084
 #, qt-format
 msgid "Error loading '%1'.\n"
 msgstr "Gặp lỗi khi tải « %1 ».\n"
-
-#: kinit/klauncher.cpp:771
-#, qt-format
-msgid "Launching %1"
-msgstr "Đang khởi chạy %1..."
 
 #: kross/ui/view.cpp:158
 msgid "Text:"
@@ -12591,6 +12583,20 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Điểm mã Unicode: %4<br>"
 "(In decimal: %5)</qt>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt><b>Please provide a description, URL and icon for this Quick Access "
+#~| "entry.</b></br></qt>"
+#~ msgid ""
+#~ "<qt><b>Please provide a description, URL and icon for this Quick Access "
+#~ "entry.</b><br /></qt>"
+#~ msgstr ""
+#~ "<qt><b>Hãy cung cấp mô tả, địa chỉ URL và biểu tượng cho mục nhập Truy "
+#~ "Cập Nhanh này.</b></br></qt>"
+
+#~ msgid "&URL:"
+#~ msgstr "&URL:"
 
 #~ msgid "Reverse"
 #~ msgstr "Đảo"

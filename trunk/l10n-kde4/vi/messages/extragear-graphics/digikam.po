@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:37+0200\n"
+"POT-Creation-Date: 2007-09-08 05:36+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -77,11 +77,11 @@ msgstr ""
 "kích cỡ tập tin lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không "
 "phải là định dạng nén ảnh không mất gì.</b>"
 
-#: libs/dimg/loaders/jpegsettings.cpp:77
+#: libs/dimg/loaders/jpegsettings.cpp:82
 msgid "JPEG quality:"
 msgstr "Chất lượng JPEG:"
 
-#: libs/dimg/loaders/jpegsettings.cpp:79
+#: libs/dimg/loaders/jpegsettings.cpp:84
 msgid ""
 "<p>The quality value for JPEG images:<p><b>1</b>: low quality (high "
 "compression and small file size)<p><b>50</b>: medium quality<p><b>75</b>: "
@@ -93,13 +93,54 @@ msgstr ""
 "tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ tập "
 "tin lớn)<p><b>Ghi chú : JPEG sử dụng một thuật toán nén ảnh mất gì.</b>"
 
-#: libs/dimg/loaders/jpegsettings.cpp:88
+#: libs/dimg/loaders/jpegsettings.cpp:93
 msgid ""
 "<qt><font size=-1 color=\"red\"><i>Warning: <a href='http://en.wikipedia.org/"
 "wiki/JPEG'>JPEG</a> is a<br>lossy compression<br>image format!</p></i></qt>"
 msgstr ""
 "<qt><font size=-1 color=\"red\"><i>Cảnh báo : <a href='http://en.wikipedia."
 "org/wiki/JPEG'>JPEG</a> là một định dạng ảnh <br>nén mất gì.</p></i></qt>"
+
+#: libs/dimg/loaders/jpegsettings.cpp:104
+msgid "Chroma subsampling:"
+msgstr ""
+
+#: libs/dimg/loaders/jpegsettings.cpp:107
+#: libs/imageproperties/imagepropertiestab.cpp:434
+#: libs/imageproperties/imagedescedittab.cpp:869 digikam/tagfilterview.cpp:826
+#: digikam/ratingpopupmenu.cpp:134
+#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:212
+#: imageplugins/inserttext/imageeffect_inserttext.cpp:170
+#: imageplugins/restoration/imageeffect_restoration.cpp:109
+#: imageplugins/freerotation/imageeffect_freerotation.cpp:135
+#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:111
+#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:202
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:175
+msgid "None"
+msgstr "Không có"
+
+#: libs/dimg/loaders/jpegsettings.cpp:108
+#, fuzzy
+#| msgid "Median:"
+msgid "Medium"
+msgstr "Trung vị:"
+
+#: libs/dimg/loaders/jpegsettings.cpp:109
+#, fuzzy
+#| msgid "Height:"
+msgid "High"
+msgstr "Cao :"
+
+#: libs/dimg/loaders/jpegsettings.cpp:110
+msgid ""
+"<p>The level of chroma subsampling for JPEG images:<p><b>None</b>: use 4:4:4 "
+"ratio. It does not have any chroma subsampling at all. This preserves "
+"borders and contrasting colors, but compression is less<p><b>Medium</b>: use "
+"4:2:2 ratio. Medium compression; reduces the bandwidth for the picture by "
+"one-third with little to no visual difference<p><b>High</b>: use 4:1:1 "
+"ratio. Important compression; suits images with weak borders but tends to "
+"denature colors<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+msgstr ""
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:92
 msgid "Comments/Tags"
@@ -238,28 +279,15 @@ msgid "<nobr><b>White balance</b></nobr>:"
 msgstr "<nobr><b>Cán cân trắng</b></nobr>:"
 
 #: libs/imageproperties/imagepropertiestab.cpp:402
-#: libs/imageproperties/cameraitempropertiestab.cpp:465
+#: libs/imageproperties/cameraitempropertiestab.cpp:467
 msgid "<i>unavailable</i>"
 msgstr "<i>không sẵn sàng</i>"
 
 #: libs/imageproperties/imagepropertiestab.cpp:433
-#: libs/imageproperties/cameraitempropertiestab.cpp:404
+#: libs/imageproperties/cameraitempropertiestab.cpp:406
 #: libs/thumbbar/thumbbar.cpp:941 digikam/albumfiletip.cpp:375
 msgid "RAW Image"
 msgstr "Ảnh RAW"
-
-#: libs/imageproperties/imagepropertiestab.cpp:434
-#: libs/imageproperties/imagedescedittab.cpp:869 digikam/tagfilterview.cpp:826
-#: digikam/ratingpopupmenu.cpp:134
-#: imageplugins/whitebalance/imageeffect_whitebalance.cpp:212
-#: imageplugins/inserttext/imageeffect_inserttext.cpp:170
-#: imageplugins/restoration/imageeffect_restoration.cpp:109
-#: imageplugins/freerotation/imageeffect_freerotation.cpp:135
-#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:111
-#: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:202
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:175
-msgid "None"
-msgstr "Không có"
 
 #: libs/imageproperties/imagepropertiestab.cpp:437
 msgid "Uncalibrated"
@@ -287,7 +315,7 @@ msgid "Unknown"
 msgstr "Không rõ"
 
 #: libs/imageproperties/imagepropertiestab.cpp:507
-#: libs/imageproperties/cameraitempropertiestab.cpp:445
+#: libs/imageproperties/cameraitempropertiestab.cpp:447
 #: libs/thumbbar/thumbbar.cpp:978 digikam/albumiconitem.cpp:322
 #: digikam/albumfiletip.cpp:412 showfoto/showfoto.cpp:742
 #: utilities/imageeditor/editor/imagewindow.cpp:611
@@ -301,14 +329,14 @@ msgid "%1 bpp"
 msgstr "%1 bpp"
 
 #: libs/imageproperties/imagepropertiestab.cpp:585
-#: libs/imageproperties/cameraitempropertiestab.cpp:536
+#: libs/imageproperties/cameraitempropertiestab.cpp:538
 #: libs/thumbbar/thumbbar.cpp:1028 digikam/albumfiletip.cpp:463
 #, qt-format
 msgid "%1 (35mm: %2)"
 msgstr "%1 (35mm: %2)"
 
 #: libs/imageproperties/imagepropertiestab.cpp:590
-#: libs/imageproperties/cameraitempropertiestab.cpp:542
+#: libs/imageproperties/cameraitempropertiestab.cpp:544
 #: libs/thumbbar/thumbbar.cpp:1040 digikam/albumfiletip.cpp:472
 #: utilities/slideshow/slideshow.cpp:370
 #, qt-format
@@ -345,25 +373,25 @@ msgstr "<i>không rõ</i>"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:378
 #: libs/imageproperties/cameraitempropertiestab.cpp:387
-#: libs/imageproperties/cameraitempropertiestab.cpp:456
+#: libs/imageproperties/cameraitempropertiestab.cpp:458
 #: libs/imageproperties/imagepropertiescolorstab.cpp:791
 msgid "No"
 msgstr "Không"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:380
 #: libs/imageproperties/cameraitempropertiestab.cpp:389
-#: libs/imageproperties/cameraitempropertiestab.cpp:458
+#: libs/imageproperties/cameraitempropertiestab.cpp:460
 #: libs/imageproperties/imagepropertiescolorstab.cpp:791
 msgid "Yes"
 msgstr "Có"
 
-#: libs/imageproperties/cameraitempropertiestab.cpp:397
+#: libs/imageproperties/cameraitempropertiestab.cpp:399
 #: libs/thumbbar/thumbbar.cpp:929 digikam/albumfiletip.cpp:364
 #, qt-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: libs/imageproperties/cameraitempropertiestab.cpp:451
+#: libs/imageproperties/cameraitempropertiestab.cpp:453
 msgid "<i>unchanged</i>"
 msgstr "<i>chưa đổi</i>"
 
@@ -547,7 +575,7 @@ msgid "Deselect"
 msgstr "Bỏ chọn"
 
 #: libs/imageproperties/imagedescedittab.cpp:864 digikam/tagfilterview.cpp:821
-#: digikam/digikamapp.cpp:758 utilities/cameragui/cameraui.cpp:324
+#: digikam/digikamapp.cpp:766 utilities/cameragui/cameraui.cpp:324
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
 
@@ -595,9 +623,9 @@ msgstr "Xoá thẻ « %1 » không?"
 #: libs/imageproperties/imagedescedittab.cpp:1110
 #: digikam/searchfolderview.cpp:269 digikam/tagfolderview.cpp:601
 #: digikam/tagfolderview.cpp:616 digikam/tagfilterview.cpp:1127
-#: digikam/tagfilterview.cpp:1141 digikam/digikamapp.cpp:641
-#: utilities/cameragui/cameraui.cpp:1478 utilities/cameragui/cameraui.cpp:1545
-#: utilities/cameragui/cameraiconview.cpp:459
+#: digikam/tagfilterview.cpp:1141 digikam/digikamapp.cpp:649
+#: utilities/cameragui/cameraui.cpp:1485 utilities/cameragui/cameraui.cpp:1552
+#: utilities/cameragui/cameraiconview.cpp:467
 msgid "Delete"
 msgstr "Xoá"
 
@@ -626,7 +654,7 @@ msgstr "Siêu dữ liệu"
 
 #: libs/imageproperties/talbumlistview.cpp:299 digikam/albumfolderview.cpp:898
 #: digikam/albumfolderview.cpp:1019 digikam/albumfolderview.cpp:1126
-#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1202
+#: digikam/tagfolderview.cpp:708 digikam/albumiconview.cpp:1206
 #: digikam/tagfilterview.cpp:461
 msgid "&Move Here"
 msgstr "&Chuyển vào đây"
@@ -637,9 +665,9 @@ msgstr "&Chuyển vào đây"
 #: digikam/albumfolderview.cpp:988 digikam/albumfolderview.cpp:1025
 #: digikam/albumfolderview.cpp:1077 digikam/albumfolderview.cpp:1129
 #: digikam/tagfolderview.cpp:710 digikam/tagfolderview.cpp:784
-#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1205
-#: digikam/albumiconview.cpp:1389 digikam/tagfilterview.cpp:463
-#: digikam/tagfilterview.cpp:526 utilities/cameragui/cameraiconview.cpp:620
+#: digikam/tagfolderview.cpp:815 digikam/albumiconview.cpp:1209
+#: digikam/albumiconview.cpp:1393 digikam/tagfilterview.cpp:463
+#: digikam/tagfilterview.cpp:526 utilities/cameragui/cameraiconview.cpp:628
 msgid "C&ancel"
 msgstr "T&hôi"
 
@@ -1153,10 +1181,10 @@ msgstr ""
 "thử lại, bắt đầu với cơ sở dữ liệu trống."
 
 #: libs/greycstoration/greycstorationwidget.cpp:131
-#: digikam/digikamapp.cpp:1805 showfoto/setup/setup.cpp:96
+#: digikam/digikamapp.cpp:1815 showfoto/setup/setup.cpp:96
 #: utilities/imageeditor/editor/editorwindow.cpp:597
-#: utilities/lighttable/lighttablewindow.cpp:1165
-#: utilities/cameragui/cameraui.cpp:1776
+#: utilities/lighttable/lighttablewindow.cpp:1174
+#: utilities/cameragui/cameraui.cpp:1788
 msgid "General"
 msgstr "Chung"
 
@@ -1321,7 +1349,7 @@ msgstr "Khi nhấn vào ảnh mẫu :"
 
 #: libs/themeengine/themeengine.cpp:91 libs/themeengine/themeengine.cpp:93
 #: libs/themeengine/themeengine.cpp:202 digikam/albumsettings.cpp:280
-#: digikam/digikamapp.cpp:2016
+#: digikam/digikamapp.cpp:2026
 msgid "Default"
 msgstr "Mặc định"
 
@@ -1545,8 +1573,8 @@ msgid "The ICC profile product description"
 msgstr "Mô tả sản phẩm hồ sơ ICC"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:131
-#: utilities/cameragui/cameraui.cpp:293 utilities/cameragui/cameraui.cpp:1462
-#: utilities/cameragui/cameraui.cpp:1529
+#: utilities/cameragui/cameraui.cpp:293 utilities/cameragui/cameraui.cpp:1469
+#: utilities/cameragui/cameraui.cpp:1536
 msgid "Information"
 msgstr "Thông tin"
 
@@ -1907,8 +1935,8 @@ msgstr ""
 "tiêu điểm trích."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:360
-#: digikam/digikamapp.cpp:2097 utilities/lighttable/lighttablewindow.cpp:1208
-#: utilities/lighttable/lighttablewindow.cpp:1231
+#: digikam/digikamapp.cpp:2107 utilities/lighttable/lighttablewindow.cpp:1217
+#: utilities/lighttable/lighttablewindow.cpp:1240
 #, qt-format
 msgid "zoom: %1%"
 msgstr "thu phóng: %1%"
@@ -2204,7 +2232,7 @@ msgstr ""
 #: digikam/albumfolderview.cpp:897 digikam/albumfolderview.cpp:985
 #: digikam/albumfolderview.cpp:1018 digikam/albumfolderview.cpp:1071
 #: digikam/albumfolderview.cpp:1125 digikam/albummanager.cpp:327
-#: digikam/albumiconview.cpp:1383 digikam/kipiinterface.cpp:498
+#: digikam/albumiconview.cpp:1387 digikam/kipiinterface.cpp:498
 #: digikam/album.cpp:344
 msgid "My Albums"
 msgstr "Tập ảnh tôi"
@@ -2226,7 +2254,7 @@ msgid "New Album..."
 msgstr "Tập ảnh mới..."
 
 #: digikam/albumfolderview.cpp:443 digikam/albumiconview.cpp:574
-#: digikam/digikamapp.cpp:632
+#: digikam/digikamapp.cpp:640
 msgid "Rename..."
 msgstr "Thay tên..."
 
@@ -2261,17 +2289,17 @@ msgid "Set as Album Thumbnail"
 msgstr "Đặt là hỉnh thu nhỏ tập ảnh"
 
 #: digikam/albumfolderview.cpp:1020 digikam/albumfolderview.cpp:1127
-#: digikam/albumiconview.cpp:1203
+#: digikam/albumiconview.cpp:1207
 msgid "&Copy Here"
 msgstr "&Chép vào đây"
 
-#: digikam/albumfolderview.cpp:1073 digikam/albumiconview.cpp:1385
+#: digikam/albumfolderview.cpp:1073 digikam/albumiconview.cpp:1389
 #, fuzzy
 #| msgid "&Upload into camera"
 msgid "Download from camera"
 msgstr "Tải &lên máy ảnh"
 
-#: digikam/albumfolderview.cpp:1075 digikam/albumiconview.cpp:1387
+#: digikam/albumfolderview.cpp:1075 digikam/albumiconview.cpp:1391
 msgid "Download && Delete from camera"
 msgstr ""
 
@@ -2598,9 +2626,9 @@ msgstr[0] ""
 "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
 "muốn tiếp tục không?"
 
-#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1275
-#: digikam/albumiconview.cpp:1285 digikam/albumiconview.cpp:1350
-#: digikam/albumiconview.cpp:1359 digikam/albumiconview.cpp:2003
+#: digikam/tagfolderview.cpp:825 digikam/albumiconview.cpp:1279
+#: digikam/albumiconview.cpp:1289 digikam/albumiconview.cpp:1354
+#: digikam/albumiconview.cpp:1363 digikam/albumiconview.cpp:2007
 #: digikam/tagfilterview.cpp:537
 msgid "Assigning image tags. Please wait..."
 msgstr "Đang gán các thẻ ảnh. Hãy đời..."
@@ -3105,6 +3133,7 @@ msgid "Edit..."
 msgstr "Sửa..."
 
 #: digikam/albumiconview.cpp:539 digikam/imagepreviewview.cpp:374
+#: digikam/digikamapp.cpp:632
 msgid "Add to Light Table"
 msgstr "Thêm vào Bảng ánh sáng"
 
@@ -3141,16 +3170,16 @@ msgstr "Bỏ thẻ"
 msgid "Assign Rating"
 msgstr "Gán đánh giá"
 
-#: digikam/albumiconview.cpp:818
+#: digikam/albumiconview.cpp:819
 #, qt-format
 msgid "Rename Item (%1)"
 msgstr "Thay tên mục (%1)"
 
-#: digikam/albumiconview.cpp:819
+#: digikam/albumiconview.cpp:820
 msgid "Enter new name (without extension):"
 msgstr "Nhập vào tên mới (không có phần mở rộng):"
 
-#: digikam/albumiconview.cpp:1014
+#: digikam/albumiconview.cpp:1015
 #: utilities/imageeditor/editor/imagewindow.cpp:1150
 #: utilities/imageeditor/editor/imagewindow.cpp:1177
 #: utilities/imageeditor/editor/imagewindow.cpp:1209
@@ -3158,51 +3187,51 @@ msgstr "Nhập vào tên mới (không có phần mở rộng):"
 msgid "Album \"%1\""
 msgstr "Tập « %1 »"
 
-#: digikam/albumiconview.cpp:1255
+#: digikam/albumiconview.cpp:1259
 #, qt-format
 msgid "Assign '%1' to &Selected Items"
 msgstr "&Gán « %1 » cho các mục đã chọn"
 
-#: digikam/albumiconview.cpp:1260
+#: digikam/albumiconview.cpp:1264
 #, qt-format
 msgid "Assign '%1' to &This Item"
 msgstr "Gán « %1 » cho mục nà&y"
 
-#: digikam/albumiconview.cpp:1263
+#: digikam/albumiconview.cpp:1267
 #, qt-format
 msgid "Assign '%1' to &All Items"
 msgstr "Gán « %1 » cho &mọi mục"
 
-#: digikam/albumiconview.cpp:1266 digikam/albumiconview.cpp:1341
+#: digikam/albumiconview.cpp:1270 digikam/albumiconview.cpp:1345
 msgid "&Cancel"
 msgstr "T&hôi"
 
-#: digikam/albumiconview.cpp:1331
+#: digikam/albumiconview.cpp:1335
 msgid "Assign Tags to &Selected Items"
 msgstr "&Gán thẻ cho các mục đã chọn"
 
-#: digikam/albumiconview.cpp:1335
+#: digikam/albumiconview.cpp:1339
 msgid "Assign Tags to &This Item"
 msgstr "Gán thẻ cho mục nà&y"
 
-#: digikam/albumiconview.cpp:1338
+#: digikam/albumiconview.cpp:1342
 msgid "Assign Tags to &All Items"
 msgstr "Gán thẻ cho &mọi mục"
 
-#: digikam/albumiconview.cpp:1603
+#: digikam/albumiconview.cpp:1607
 msgid "Revising Exif Orientation tags. Please wait..."
 msgstr "Đang xem lại các thẻ hướng EXIF. Hãy đời..."
 
-#: digikam/albumiconview.cpp:1615
+#: digikam/albumiconview.cpp:1619
 #, qt-format
 msgid "Failed to revise Exif orientation for file %1."
 msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
 
-#: digikam/albumiconview.cpp:2013
+#: digikam/albumiconview.cpp:2017
 msgid "Removing image tags. Please wait..."
 msgstr "Đang gỡ bỏ các thẻ ảnh. Hãy đời..."
 
-#: digikam/albumiconview.cpp:2023
+#: digikam/albumiconview.cpp:2027
 msgid "Assigning image ratings. Please wait..."
 msgstr "Đang gán các đánh giá ảnh. Hãy đời..."
 
@@ -3457,7 +3486,7 @@ msgstr "Theo thư mục"
 msgid "By Collection"
 msgstr "Theo tập hợp"
 
-#: digikam/digikamapp.cpp:535 digikam/digikamapp.cpp:682
+#: digikam/digikamapp.cpp:535 digikam/digikamapp.cpp:690
 msgid "By Date"
 msgstr "Theo ngày"
 
@@ -3517,274 +3546,282 @@ msgid "Place onto Light Table"
 msgstr "Để trên Bảng ánh sáng"
 
 #: digikam/digikamapp.cpp:626
-msgid "Insert the selected items into the light table thumbbar."
+#, fuzzy
+#| msgid "Insert the selected items into the light table thumbbar."
+msgid "Put the selected items into the light table thumbbar."
 msgstr "Chèn các mục đã chọn vào thanh trượt của bảng ánh sáng."
 
 #: digikam/digikamapp.cpp:634
+#, fuzzy
+#| msgid "Insert the selected items into the light table thumbbar."
+msgid "Add selected items to the light table thumbbar."
+msgstr "Chèn các mục đã chọn vào thanh trượt của bảng ánh sáng."
+
+#: digikam/digikamapp.cpp:642
 msgid "Rename the filename of the currently selected item."
 msgstr "Thay đổi tên tập của mục được chọn hiện thời."
 
-#: digikam/digikamapp.cpp:649
+#: digikam/digikamapp.cpp:657
 msgid "Delete permanently"
 msgstr "Xoá hoàn toàn"
 
-#: digikam/digikamapp.cpp:659
+#: digikam/digikamapp.cpp:667
 msgid "Delete permanently without confirmation"
 msgstr "Xoá hoàn toàn, không cần xác nhận"
 
-#: digikam/digikamapp.cpp:667
+#: digikam/digikamapp.cpp:675
 msgid "Move to trash without confirmation"
 msgstr "Chuyển vào Sọt Rác, không cần xác nhận"
 
-#: digikam/digikamapp.cpp:674
+#: digikam/digikamapp.cpp:682
 msgid "&Sort Images"
 msgstr "&Sắp xếp ảnh"
 
-#: digikam/digikamapp.cpp:680
+#: digikam/digikamapp.cpp:688
 msgid "By Name"
 msgstr "Theo tên"
 
-#: digikam/digikamapp.cpp:681
+#: digikam/digikamapp.cpp:689
 msgid "By Path"
 msgstr "Theo đường dẫn"
 
-#: digikam/digikamapp.cpp:683
+#: digikam/digikamapp.cpp:691
 msgid "By File Size"
 msgstr "Theo kích cỡ tập tin"
 
-#: digikam/digikamapp.cpp:684
+#: digikam/digikamapp.cpp:692
 msgid "By Rating"
 msgstr "Theo đánh giá"
 
-#: digikam/digikamapp.cpp:694
+#: digikam/digikamapp.cpp:702
 msgid "Adjust Exif orientation tag"
 msgstr "Chỉnh thẻ hướng EXIF"
 
-#: digikam/digikamapp.cpp:699
+#: digikam/digikamapp.cpp:707
 msgid "Normal"
 msgstr "Chuẩn"
 
-#: digikam/digikamapp.cpp:701
+#: digikam/digikamapp.cpp:709
 msgid "Flipped Horizontally"
 msgstr "Lật ngang"
 
-#: digikam/digikamapp.cpp:703
+#: digikam/digikamapp.cpp:711
 msgid "Rotated upside down"
 msgstr "Xoay từ trên xuống"
 
-#: digikam/digikamapp.cpp:705
+#: digikam/digikamapp.cpp:713
 msgid "Flipped Vertically"
 msgstr "Lật dọc"
 
-#: digikam/digikamapp.cpp:707
+#: digikam/digikamapp.cpp:715
 msgid "Rotated right / Horiz. Flipped"
 msgstr "Xoay phải/Lật ngang"
 
-#: digikam/digikamapp.cpp:709
+#: digikam/digikamapp.cpp:717
 msgid "Rotated right"
 msgstr "Xoay phải"
 
-#: digikam/digikamapp.cpp:711
+#: digikam/digikamapp.cpp:719
 msgid "Rotated right / Vert. Flipped"
 msgstr "Xoay phải/Lật dọc"
 
-#: digikam/digikamapp.cpp:713
+#: digikam/digikamapp.cpp:721
 msgid "Rotated left"
 msgstr "Xoay trái"
 
-#: digikam/digikamapp.cpp:744
+#: digikam/digikamapp.cpp:752
 #: utilities/imageeditor/editor/editorwindow.cpp:359
 #: utilities/cameragui/cameraui.cpp:310
 msgid "Select All"
 msgstr "Chọn tất cả"
 
-#: digikam/digikamapp.cpp:751
+#: digikam/digikamapp.cpp:759
 #: utilities/imageeditor/editor/editorwindow.cpp:364
 #: utilities/cameragui/cameraui.cpp:317
 msgid "Select None"
 msgstr "Chọn Không gì"
 
-#: digikam/digikamapp.cpp:781
+#: digikam/digikamapp.cpp:789
 #: utilities/imageeditor/editor/editorwindow.cpp:379
 #: utilities/lighttable/lighttablewindow.cpp:418
 msgid "Zoom to 1:1"
 msgstr "Phóng to 1:1 (không thay đổi)"
 
-#: digikam/digikamapp.cpp:788
+#: digikam/digikamapp.cpp:796
 #: utilities/imageeditor/editor/editorwindow.cpp:384
 #: utilities/lighttable/lighttablepreview.cpp:386
 #: utilities/lighttable/lighttablewindow.cpp:423
 msgid "Fit to &Window"
 msgstr "Vừa khít cửa &sổ"
 
-#: digikam/digikamapp.cpp:800 showfoto/setup/setup.cpp:121
+#: digikam/digikamapp.cpp:808 showfoto/setup/setup.cpp:121
 #: utilities/setup/setup.cpp:204
 #: utilities/imageeditor/editor/editorwindow.cpp:428
 #: utilities/lighttable/lighttablewindow.cpp:431
 msgid "Slide Show"
 msgstr "Chiếu ảnh"
 
-#: digikam/digikamapp.cpp:804
+#: digikam/digikamapp.cpp:812
 msgid "All"
 msgstr "Tất cả"
 
-#: digikam/digikamapp.cpp:810
+#: digikam/digikamapp.cpp:818
 msgid "Selection"
 msgstr "Vùng chọn"
 
-#: digikam/digikamapp.cpp:816
+#: digikam/digikamapp.cpp:824
 msgid "With all sub-albums"
 msgstr "Với mọi tập ảnh phụ"
 
-#: digikam/digikamapp.cpp:829
+#: digikam/digikamapp.cpp:837
 msgid "Kipi Plugins Handbook"
 msgstr "Sổ tay phần bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:840
+#: digikam/digikamapp.cpp:848
 msgid "Make a donation..."
 msgstr "Tặng tiền..."
 
-#: digikam/digikamapp.cpp:850 utilities/imageeditor/editor/imagewindow.cpp:321
+#: digikam/digikamapp.cpp:858 utilities/imageeditor/editor/imagewindow.cpp:321
 #: utilities/lighttable/lighttablewindow.cpp:456
 msgid "Assign Rating \"No Star\""
 msgstr "Gán đánh giá « 0 sao »"
 
-#: digikam/digikamapp.cpp:855 utilities/imageeditor/editor/imagewindow.cpp:326
+#: digikam/digikamapp.cpp:863 utilities/imageeditor/editor/imagewindow.cpp:326
 #: utilities/lighttable/lighttablewindow.cpp:461
 msgid "Assign Rating \"One Star\""
 msgstr "Gán đánh giá « 1 sao »"
 
-#: digikam/digikamapp.cpp:860 utilities/imageeditor/editor/imagewindow.cpp:331
+#: digikam/digikamapp.cpp:868 utilities/imageeditor/editor/imagewindow.cpp:331
 #: utilities/lighttable/lighttablewindow.cpp:466
 msgid "Assign Rating \"Two Stars\""
 msgstr "Gán đánh giá « 2 sao »"
 
-#: digikam/digikamapp.cpp:865 utilities/imageeditor/editor/imagewindow.cpp:336
+#: digikam/digikamapp.cpp:873 utilities/imageeditor/editor/imagewindow.cpp:336
 #: utilities/lighttable/lighttablewindow.cpp:471
 msgid "Assign Rating \"Three Stars\""
 msgstr "Gán đánh giá « 3 sao »"
 
-#: digikam/digikamapp.cpp:870 utilities/imageeditor/editor/imagewindow.cpp:341
+#: digikam/digikamapp.cpp:878 utilities/imageeditor/editor/imagewindow.cpp:341
 #: utilities/lighttable/lighttablewindow.cpp:476
 msgid "Assign Rating \"Four Stars\""
 msgstr "Gán đánh giá « 4 sao »"
 
-#: digikam/digikamapp.cpp:875 utilities/imageeditor/editor/imagewindow.cpp:346
+#: digikam/digikamapp.cpp:883 utilities/imageeditor/editor/imagewindow.cpp:346
 #: utilities/lighttable/lighttablewindow.cpp:481
 msgid "Assign Rating \"Five Stars\""
 msgstr "Gán đánh giá « 5 sao »"
 
-#: digikam/digikamapp.cpp:884
+#: digikam/digikamapp.cpp:892
 msgid "Quick Search..."
 msgstr "Tìm kiếm nhanh..."
 
-#: digikam/digikamapp.cpp:891
+#: digikam/digikamapp.cpp:899
 msgid "Advanced Search..."
 msgstr "Tìm kiếm cấp cao..."
 
-#: digikam/digikamapp.cpp:896 utilities/setup/setup.cpp:174
+#: digikam/digikamapp.cpp:904 utilities/setup/setup.cpp:174
 #: utilities/lighttable/lighttablewindow.cpp:102
-#: utilities/lighttable/lighttablewindow.cpp:964
+#: utilities/lighttable/lighttablewindow.cpp:973
 msgid "Light Table"
 msgstr "Bảng ánh sáng"
 
-#: digikam/digikamapp.cpp:903
+#: digikam/digikamapp.cpp:911
 msgid "Scan for New Images"
 msgstr "Quét tìm ảnh mới"
 
-#: digikam/digikamapp.cpp:909
+#: digikam/digikamapp.cpp:917
 msgid "Rebuild all Thumbnails..."
 msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
-#: digikam/digikamapp.cpp:916
+#: digikam/digikamapp.cpp:924
 msgid "Update Metadata Database..."
 msgstr "Cập nhật cơ sở dữ liệu siêu dữ liệu..."
 
-#: digikam/digikamapp.cpp:931
+#: digikam/digikamapp.cpp:939
 msgid "Loading cameras"
 msgstr "Đang tải máy ảnh..."
 
-#: digikam/digikamapp.cpp:1157
+#: digikam/digikamapp.cpp:1167
 msgid "No item selected"
 msgstr "Chưa chọn mục"
 
-#: digikam/digikamapp.cpp:1173
+#: digikam/digikamapp.cpp:1183
 #, fuzzy, qt-format
 #| msgctxt "(<Image number> of <Images in album>"
 #| msgid " (%1 of %2)"
 msgid " (%1 of %2)"
 msgstr " (%1 of %2)"
 
-#: digikam/digikamapp.cpp:1179
+#: digikam/digikamapp.cpp:1189
 #, fuzzy, qt-format
 #| msgid "%1 items selected"
 msgid "%1/%2 items selected"
 msgstr "%1 mục đã chọn"
 
-#: digikam/digikamapp.cpp:1229
+#: digikam/digikamapp.cpp:1239
 #, fuzzy
 #| msgid "Cameras"
 msgid "Digital Cameras"
 msgstr "Máy ảnh"
 
-#: digikam/digikamapp.cpp:1232
+#: digikam/digikamapp.cpp:1242
 msgid "USB Storage Devices"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1235
+#: digikam/digikamapp.cpp:1245
 #, fuzzy
 #| msgid "Camera Folders"
 msgid "Card Readers"
 msgstr "Thư mục máy ảnh"
 
-#: digikam/digikamapp.cpp:1238
+#: digikam/digikamapp.cpp:1248
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Cameras Added Manually"
 msgstr "Sổ tay máy ảnh"
 
-#: digikam/digikamapp.cpp:1240
+#: digikam/digikamapp.cpp:1250
 msgid "Add Camera..."
 msgstr "Thêm máy ảnh.."
 
-#: digikam/digikamapp.cpp:1306 digikam/digikamapp.cpp:1463
+#: digikam/digikamapp.cpp:1316 digikam/digikamapp.cpp:1473
 #, qt-format
 msgid "Images found in %1"
 msgstr "Ảnh được tìm trong %1"
 
-#: digikam/digikamapp.cpp:1487
+#: digikam/digikamapp.cpp:1497
 msgid "Cannot access the storage device.\n"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1592
+#: digikam/digikamapp.cpp:1602
 msgid "CompactFlash Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1595
+#: digikam/digikamapp.cpp:1605
 msgid "Memory Stick Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1598
+#: digikam/digikamapp.cpp:1608
 msgid "SmartMedia Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1601
+#: digikam/digikamapp.cpp:1611
 msgid "SD / MMC Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1604
+#: digikam/digikamapp.cpp:1614
 msgid "xD-Picture Card Reader"
 msgstr ""
 
-#: digikam/digikamapp.cpp:1902
+#: digikam/digikamapp.cpp:1912
 msgid "Loading Kipi Plugins"
 msgstr "Đang nạp các phần bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:2007
+#: digikam/digikamapp.cpp:2017
 msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
-#: digikam/digikamapp.cpp:2039
+#: digikam/digikamapp.cpp:2049
 msgid ""
 "Rebuilding all image thumbnails can take some time.\n"
 "Do you want to continue?"
@@ -3792,7 +3829,7 @@ msgstr ""
 "Tiến trình xây dựng lại mọi ảnh mẫu của ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2060
+#: digikam/digikamapp.cpp:2070
 msgid ""
 "Updating the metadata database can take some time. \n"
 "Do you want to continue?"
@@ -3800,12 +3837,12 @@ msgstr ""
 "Tiến trình cập nhật cơ sở dữ liệu siêu dữ liệu có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2091 utilities/cameragui/cameraui.cpp:889
+#: digikam/digikamapp.cpp:2101 utilities/cameragui/cameraui.cpp:898
 #, qt-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
 
-#: digikam/digikamapp.cpp:2125
+#: digikam/digikamapp.cpp:2135
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
@@ -3940,7 +3977,7 @@ msgstr "Ngày"
 msgid "Searches"
 msgstr "Việc tìm kiếm"
 
-#: digikam/digikamview.cpp:1195
+#: digikam/digikamview.cpp:1214
 #, qt-format
 msgid "Preparing slideshow from %1 pictures. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh từ %1 ảnh. Hãy đời..."
@@ -4328,8 +4365,8 @@ msgstr ""
 "Bạn có chắc chưa?"
 
 #: showfoto/showfoto.cpp:1109
-#: utilities/imageeditor/editor/editorwindow.cpp:1228
-#: utilities/cameragui/cameraui.cpp:1477 utilities/cameragui/cameraui.cpp:1544
+#: utilities/imageeditor/editor/editorwindow.cpp:1230
+#: utilities/cameragui/cameraui.cpp:1484 utilities/cameragui/cameraui.cpp:1551
 msgid "Warning"
 msgstr "Cảnh báo"
 
@@ -4422,7 +4459,7 @@ msgid "&Image"
 msgstr "Ản&h"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 55
+#. i18n: file ./digikam/digikamui.rc line 56
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 27
 #. i18n: tag text
@@ -4434,7 +4471,7 @@ msgid "&Edit"
 msgstr "&Sửa"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 62
+#. i18n: file ./digikam/digikamui.rc line 63
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 37
 #. i18n: tag text
@@ -4444,24 +4481,24 @@ msgstr "&Sửa"
 #. i18n: tag text
 #. i18n: file ./utilities/cameragui/cameraui.rc line 41
 #: rc.cpp:21 rc.cpp:45 rc.cpp:252 rc.cpp:282 rc.cpp:303
-#: utilities/cameragui/cameraiconview.cpp:453
+#: utilities/cameragui/cameraiconview.cpp:461
 msgid "&View"
 msgstr "&Xem"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 75
+#. i18n: file ./digikam/digikamui.rc line 76
 #: rc.cpp:24
 msgid "&Tools"
 msgstr "&Công cụ"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 88
+#. i18n: file ./digikam/digikamui.rc line 89
 #: rc.cpp:27
 msgid "&Batch Process"
 msgstr "Tiến trình &bó"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 95
+#. i18n: file ./digikam/digikamui.rc line 96
 #. i18n: tag Text
 #. i18n: file ./showfoto/showfotoui.rc line 84
 #. i18n: tag Text
@@ -4475,7 +4512,7 @@ msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag Text
-#. i18n: file ./digikam/digikamui.rc line 106
+#. i18n: file ./digikam/digikamui.rc line 107
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 78
 #. i18n: tag text
@@ -4489,7 +4526,7 @@ msgid "&Help"
 msgstr "Trợ g&iúp"
 
 #. i18n: tag text
-#. i18n: file ./digikam/digikamui.rc line 118
+#. i18n: file ./digikam/digikamui.rc line 119
 #. i18n: tag text
 #. i18n: file ./showfoto/showfotoui.rc line 96
 #. i18n: tag text
@@ -11112,7 +11149,7 @@ msgid "Exit Fullscreen mode"
 msgstr "Thoát khỏi chế độ toàn màn hình"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:520
-#: utilities/imageeditor/editor/editorwindow.cpp:1152
+#: utilities/imageeditor/editor/editorwindow.cpp:1154
 msgid "No selection"
 msgstr "Chưa chọn gì"
 
@@ -11134,7 +11171,7 @@ msgstr "In %1"
 msgid "Failed to print file: '%1'"
 msgstr "Lỗi in tập tin: « %1 »"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1053
+#: utilities/imageeditor/editor/editorwindow.cpp:1055
 #, qt-format
 msgid ""
 "The image '%1' has been modified.\n"
@@ -11143,20 +11180,20 @@ msgstr ""
 "Ảnh « %1 » đã bị sửa đổi.\n"
 "Bạn có muốn lưu nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1110
+#: utilities/imageeditor/editor/editorwindow.cpp:1112
 msgid "Please wait while the image is being saved..."
 msgstr "Hãy đời trong khi lưu ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1181
+#: utilities/imageeditor/editor/editorwindow.cpp:1183
 msgid "Loading: "
 msgstr "Đang tải: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1199
+#: utilities/imageeditor/editor/editorwindow.cpp:1201
 #, qt-format
 msgid "Failed to load image \"%1\""
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1227
+#: utilities/imageeditor/editor/editorwindow.cpp:1229
 #, fuzzy, qt-format
 #| msgid ""
 #| "About to delete file \"%1\"\n"
@@ -11168,16 +11205,16 @@ msgstr ""
 "Sắp xoá tập tin « %1 »\n"
 "Bạn có chắc chưa?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1228
+#: utilities/imageeditor/editor/editorwindow.cpp:1230
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1243
+#: utilities/imageeditor/editor/editorwindow.cpp:1245
 msgid "Saving: "
 msgstr "Đang lưu: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1257
-#: utilities/imageeditor/editor/editorwindow.cpp:1298
+#: utilities/imageeditor/editor/editorwindow.cpp:1259
+#: utilities/imageeditor/editor/editorwindow.cpp:1300
 #, qt-format
 msgid ""
 "Failed to save file\n"
@@ -11190,16 +11227,16 @@ msgstr ""
 "vào\n"
 "« %2 » ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1431
+#: utilities/imageeditor/editor/editorwindow.cpp:1433
 msgid "New Image File Name"
 msgstr "Tên tập tin ảnh mới"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1483
+#: utilities/imageeditor/editor/editorwindow.cpp:1485
 #, qt-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "Định dạng tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1492
+#: utilities/imageeditor/editor/editorwindow.cpp:1494
 #, qt-format
 msgid ""
 "Failed to save file\n"
@@ -11211,18 +11248,18 @@ msgstr ""
 "vào\n"
 "« %2 »."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1519
+#: utilities/imageeditor/editor/editorwindow.cpp:1521
 #, qt-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Tập tin tên « %1 » đã có. Bạn có chắc muốn ghi đè lên nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1523
-#: utilities/imageeditor/editor/editorwindow.cpp:1572
+#: utilities/imageeditor/editor/editorwindow.cpp:1525
+#: utilities/imageeditor/editor/editorwindow.cpp:1574
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1567
+#: utilities/imageeditor/editor/editorwindow.cpp:1569
 #, qt-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -11231,42 +11268,42 @@ msgstr ""
 "Bạn không có quyền ghi tập tin tên « %1 ». Bạn có chắc muốn ghi đè lên nó "
 "không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1601
+#: utilities/imageeditor/editor/editorwindow.cpp:1603
 msgid "Failed to overwrite original file"
 msgstr "Lỗi ghi đè lên tập tin gốc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1602
+#: utilities/imageeditor/editor/editorwindow.cpp:1604
 msgid "Error Saving File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1650
+#: utilities/imageeditor/editor/editorwindow.cpp:1652
 msgid "Color Managed View is enabled"
 msgstr "Ô xem đả quản lý màu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1652
+#: utilities/imageeditor/editor/editorwindow.cpp:1654
 msgid "Color Managed View is disabled"
 msgstr "Ô xem đả quản lý màu bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1656
+#: utilities/imageeditor/editor/editorwindow.cpp:1658
 msgid ""
 "Color Management is not configured, so the Color Managed View is not "
 "available"
 msgstr ""
 "Chưa cấu hình khả năng Quản lý Màu, vì vậy không có sẵn Ô xem đã Quản lý Màu."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1678
+#: utilities/imageeditor/editor/editorwindow.cpp:1680
 msgid "Under-Exposure indicator is enabled"
 msgstr "Cái chỉ chụp non đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1679
+#: utilities/imageeditor/editor/editorwindow.cpp:1681
 msgid "Under-Exposure indicator is disabled"
 msgstr "Cái chỉ chụp non bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1699
+#: utilities/imageeditor/editor/editorwindow.cpp:1701
 msgid "Over-Exposure indicator is enabled"
 msgstr "Cái chỉ phơi quá lâu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1700
+#: utilities/imageeditor/editor/editorwindow.cpp:1702
 msgid "Over-Exposure indicator is disabled"
 msgstr "Cái chỉ phơi quá lâu bị tắt"
 
@@ -11365,20 +11402,20 @@ msgstr "Xem thử đồng bộ"
 msgid "Navigate by Pair"
 msgstr "Duyệt qua theo cặp"
 
-#: utilities/lighttable/lighttablewindow.cpp:566
+#: utilities/lighttable/lighttablewindow.cpp:573
 msgid "No item on Light Table"
 msgstr "Không có mục trên bảng ánh sáng"
 
-#: utilities/lighttable/lighttablewindow.cpp:570
+#: utilities/lighttable/lighttablewindow.cpp:577
 msgid "1 item on Light Table"
 msgstr "1 mục trên bảng ánh sáng"
 
-#: utilities/lighttable/lighttablewindow.cpp:574
+#: utilities/lighttable/lighttablewindow.cpp:581
 #, qt-format
 msgid "%1 items on Light Table"
 msgstr "%1 mục trên bảng ánh sáng"
 
-#: utilities/lighttable/lighttablewindow.cpp:1010
+#: utilities/lighttable/lighttablewindow.cpp:1019
 msgid "Preparing slideshow. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
 
@@ -11418,7 +11455,7 @@ msgstr ""
 "Trình điều khiển <b>máy ảnh đã lắp</b> cho các máy ảnh cất giữ hàng loạt USB/"
 "IEEE1394 và máy đọc thẻ Flash.<br><br>"
 
-#: utilities/cameragui/umscamera.cpp:490 utilities/cameragui/gpcamera.cpp:1160
+#: utilities/cameragui/umscamera.cpp:490 utilities/cameragui/gpcamera.cpp:1161
 #, fuzzy, qt-format
 #| msgid "Title: %1<br>Model: %2<br>Port: %3<br>Path: %4<br>"
 msgid ""
@@ -11429,22 +11466,22 @@ msgstr "Tên: %1<br>Mô hình: %2<br>Cổng: %3<br>Đường dẫn: %4<br>"
 #: utilities/cameragui/umscamera.cpp:505 utilities/cameragui/umscamera.cpp:506
 #: utilities/cameragui/umscamera.cpp:507 utilities/cameragui/umscamera.cpp:508
 #: utilities/cameragui/umscamera.cpp:509 utilities/cameragui/umscamera.cpp:510
-#: utilities/cameragui/gpcamera.cpp:1175 utilities/cameragui/gpcamera.cpp:1176
-#: utilities/cameragui/gpcamera.cpp:1177 utilities/cameragui/gpcamera.cpp:1178
-#: utilities/cameragui/gpcamera.cpp:1179 utilities/cameragui/gpcamera.cpp:1180
+#: utilities/cameragui/gpcamera.cpp:1176 utilities/cameragui/gpcamera.cpp:1177
+#: utilities/cameragui/gpcamera.cpp:1178 utilities/cameragui/gpcamera.cpp:1179
+#: utilities/cameragui/gpcamera.cpp:1180 utilities/cameragui/gpcamera.cpp:1181
 msgid "yes"
 msgstr "có"
 
 #: utilities/cameragui/umscamera.cpp:505 utilities/cameragui/umscamera.cpp:506
 #: utilities/cameragui/umscamera.cpp:507 utilities/cameragui/umscamera.cpp:508
 #: utilities/cameragui/umscamera.cpp:509 utilities/cameragui/umscamera.cpp:510
-#: utilities/cameragui/gpcamera.cpp:1175 utilities/cameragui/gpcamera.cpp:1176
-#: utilities/cameragui/gpcamera.cpp:1177 utilities/cameragui/gpcamera.cpp:1178
-#: utilities/cameragui/gpcamera.cpp:1179 utilities/cameragui/gpcamera.cpp:1180
+#: utilities/cameragui/gpcamera.cpp:1176 utilities/cameragui/gpcamera.cpp:1177
+#: utilities/cameragui/gpcamera.cpp:1178 utilities/cameragui/gpcamera.cpp:1179
+#: utilities/cameragui/gpcamera.cpp:1180 utilities/cameragui/gpcamera.cpp:1181
 msgid "no"
 msgstr "không"
 
-#: utilities/cameragui/umscamera.cpp:499 utilities/cameragui/gpcamera.cpp:1169
+#: utilities/cameragui/umscamera.cpp:499 utilities/cameragui/gpcamera.cpp:1170
 #, fuzzy, qt-format
 #| msgid ""
 #| "Title: %1\n"
@@ -11502,31 +11539,43 @@ msgstr ""
 msgid "Camera Folders"
 msgstr "Thư mục máy ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:234
+#: utilities/cameragui/capturedlg.cpp:72
+#, fuzzy, qt-format
+#| msgid "Nature"
+msgid "Capture from %1"
+msgstr "Tự nhiên"
+
+#: utilities/cameragui/capturedlg.cpp:75 utilities/cameragui/cameraui.cpp:299
+#, fuzzy
+#| msgid "Nature"
+msgid "Capture"
+msgstr "Tự nhiên"
+
+#: utilities/cameragui/freespacewidget.cpp:239
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Camera Media"
 msgstr "Sổ tay máy ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:235
+#: utilities/cameragui/freespacewidget.cpp:240
 #, fuzzy
 #| msgid "Album Library Path"
 msgid "Album Library"
 msgstr "Đường dẫn thư viện tập ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:247
-#: utilities/cameragui/freespacewidget.cpp:258
+#: utilities/cameragui/freespacewidget.cpp:252
+#: utilities/cameragui/freespacewidget.cpp:263
 msgid "Capacity:"
 msgstr ""
 
-#: utilities/cameragui/freespacewidget.cpp:250
-#: utilities/cameragui/freespacewidget.cpp:261
+#: utilities/cameragui/freespacewidget.cpp:255
+#: utilities/cameragui/freespacewidget.cpp:266
 #, fuzzy
 #| msgid "unavailable"
 msgid "Available:"
 msgstr "không sẵn sàng"
 
-#: utilities/cameragui/freespacewidget.cpp:253
+#: utilities/cameragui/freespacewidget.cpp:258
 #, fuzzy
 #| msgid "Relief:"
 msgid "Require:"
@@ -11711,6 +11760,14 @@ msgstr "Đổi định dạng Ngày Giờ"
 msgid "photo"
 msgstr "ảnh"
 
+#: utilities/cameragui/gpconfigdlg.cpp:262
+msgid "Button (not supported by KControl)"
+msgstr ""
+
+#: utilities/cameragui/gpconfigdlg.cpp:270
+msgid "Date (not supported by KControl)"
+msgstr ""
+
 #: utilities/cameragui/albumselectdialog.cpp:87
 msgid "Select Album"
 msgstr "Chọn tập ảnh"
@@ -11740,157 +11797,157 @@ msgstr ""
 "Đang tạo tập ảnh mới trong « %1 »\n"
 "Hãy nhập tên tập ảnh:"
 
-#: utilities/cameragui/cameracontroller.cpp:302
+#: utilities/cameragui/cameracontroller.cpp:311
 msgid "Connecting to camera..."
 msgstr "Đang kết nối tới máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:309
+#: utilities/cameragui/cameracontroller.cpp:318
 msgid "Connection established"
 msgstr "Sự kết nối đã được thiết lập"
 
-#: utilities/cameragui/cameracontroller.cpp:311
+#: utilities/cameragui/cameracontroller.cpp:320
 msgid "Connection failed"
 msgstr "Lỗi kết nối"
 
-#: utilities/cameragui/cameracontroller.cpp:317
+#: utilities/cameragui/cameracontroller.cpp:326
 msgid "Getting camera information..."
 msgstr "Đang lấy thông tin về máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:330
+#: utilities/cameragui/cameracontroller.cpp:339
 #, fuzzy
 #| msgid "Getting camera information..."
 msgid "Getting camera freespace available..."
 msgstr "Đang lấy thông tin về máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:339
+#: utilities/cameragui/cameracontroller.cpp:348
 #, fuzzy
 #| msgid "Settings..."
 msgid "Getting preview..."
 msgstr "Thiết lập..."
 
-#: utilities/cameragui/cameracontroller.cpp:347
+#: utilities/cameragui/cameracontroller.cpp:356
 #, fuzzy
 #| msgid "Caricature"
 msgid "Capture picture..."
 msgstr "Vẽ biếm hoạ"
 
-#: utilities/cameragui/cameracontroller.cpp:355
+#: utilities/cameragui/cameracontroller.cpp:364
 msgid "Listing folders..."
 msgstr "Đang liệt kê các thư mục..."
 
-#: utilities/cameragui/cameracontroller.cpp:362
+#: utilities/cameragui/cameracontroller.cpp:371
 msgid "Listing folders is complete..."
 msgstr "Tiến trình liệt kê các thư mục đã chạy xong."
 
-#: utilities/cameragui/cameracontroller.cpp:370
+#: utilities/cameragui/cameracontroller.cpp:379
 #, qt-format
 msgid "Listing files in %1..."
 msgstr "Đang liệt kê các tập tin nằm trong %1 ..."
 
-#: utilities/cameragui/cameracontroller.cpp:376
+#: utilities/cameragui/cameracontroller.cpp:385
 #, qt-format
 msgid "Failed to list files in %1"
 msgstr "Lỗi liệt kê tập tin nằm trong %1"
 
-#: utilities/cameragui/cameracontroller.cpp:384
+#: utilities/cameragui/cameracontroller.cpp:393
 #, qt-format
 msgid "Listing files in %1 is complete"
 msgstr "Tiến trình liệt kê các tập tin trong %1 đã chạy xong."
 
-#: utilities/cameragui/cameracontroller.cpp:393
+#: utilities/cameragui/cameracontroller.cpp:402
 #, fuzzy
 #| msgid "Getting thumbnail for %1/%2..."
 msgid "Getting thumbnail in progress..."
 msgstr "Đang lấy ảnh mẫu cho %1/%2..."
 
-#: utilities/cameragui/cameracontroller.cpp:419
+#: utilities/cameragui/cameracontroller.cpp:428
 #, fuzzy, qt-format
 #| msgid "Getting EXIF information for %1/%2..."
 msgid "Getting EXIF information for %1..."
 msgstr "Đang lấy thông tin EXIF cho %1/%2..."
 
-#: utilities/cameragui/cameracontroller.cpp:457
+#: utilities/cameragui/cameracontroller.cpp:466
 #, qt-format
 msgid "Downloading file %1..."
 msgstr "Đang tải về tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:475
+#: utilities/cameragui/cameracontroller.cpp:484
 #, qt-format
 msgid "EXIF rotating file %1..."
 msgstr "Đang xoay EXIF tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:481
+#: utilities/cameragui/cameracontroller.cpp:490
 #, qt-format
 msgid "Setting Metadata tags to file %1..."
 msgstr "Đang đặt thẻ siêu dữ liệu đối với tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:501
+#: utilities/cameragui/cameracontroller.cpp:510
 #, qt-format
 msgid "Converting %1 to lossless file format..."
 msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
 
-#: utilities/cameragui/cameracontroller.cpp:532
+#: utilities/cameragui/cameracontroller.cpp:541
 #, qt-format
 msgid "Retrieving file %1 from camera..."
 msgstr "Đang lấy tập tin %1 từ máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:542
+#: utilities/cameragui/cameracontroller.cpp:551
 #, qt-format
 msgid "Failed to retrieve file %1 from camera"
 msgstr "Lỗi lấy tập tin %1 từ máy ảnh"
 
-#: utilities/cameragui/cameracontroller.cpp:557
+#: utilities/cameragui/cameracontroller.cpp:566
 #, qt-format
 msgid "Uploading file %1 to camera..."
 msgstr "Đang tải tập tin %1 lên máy ảnh..."
 
-#: utilities/cameragui/cameracontroller.cpp:578
+#: utilities/cameragui/cameracontroller.cpp:587
 #, qt-format
 msgid "Deleting file %1..."
 msgstr "Đang xoá tập tin %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:598
+#: utilities/cameragui/cameracontroller.cpp:607
 #, qt-format
 msgid "Toggle lock file %1..."
 msgstr "Bật/tắt tập tin khoá %1..."
 
-#: utilities/cameragui/cameracontroller.cpp:655
+#: utilities/cameragui/cameracontroller.cpp:664
 msgid "Rename File"
 msgstr "Thay tên tập tin"
 
-#: utilities/cameragui/cameracontroller.cpp:710
+#: utilities/cameragui/cameracontroller.cpp:719
 #, qt-format
 msgid "Skipped file %1"
 msgstr "Đã bỏ qua tập tin %1"
 
-#: utilities/cameragui/cameracontroller.cpp:731
+#: utilities/cameragui/cameracontroller.cpp:740
 #, qt-format
 msgid "Failed to download file \"%1\"."
 msgstr "Lỗi tải xuống tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:741
-#: utilities/cameragui/cameracontroller.cpp:764
-#: utilities/cameragui/cameracontroller.cpp:786
-#: utilities/cameragui/cameracontroller.cpp:808
+#: utilities/cameragui/cameracontroller.cpp:750
+#: utilities/cameragui/cameracontroller.cpp:773
+#: utilities/cameragui/cameracontroller.cpp:795
+#: utilities/cameragui/cameracontroller.cpp:817
 msgid " Do you want to continue?"
 msgstr " Bạn có muốn tiếp tục không?"
 
-#: utilities/cameragui/cameracontroller.cpp:754
+#: utilities/cameragui/cameracontroller.cpp:763
 #, qt-format
 msgid "Failed to upload file \"%1\"."
 msgstr "Lỗi tải lên tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:776
+#: utilities/cameragui/cameracontroller.cpp:785
 #, qt-format
 msgid "Failed to delete file \"%1\"."
 msgstr "Lỗi xoá tập tin « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:798
+#: utilities/cameragui/cameracontroller.cpp:807
 #, qt-format
 msgid "Failed to toggle lock file \"%1\"."
 msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
 
-#: utilities/cameragui/cameracontroller.cpp:826
+#: utilities/cameragui/cameracontroller.cpp:835
 #, qt-format
 msgid "Camera \"%1\""
 msgstr "Máy ảnh « %1 »"
@@ -12049,12 +12106,6 @@ msgstr "Thao tác khi yêu cầu (chỉ JPEG)"
 msgid "Cancel"
 msgstr "T&hôi"
 
-#: utilities/cameragui/cameraui.cpp:299
-#, fuzzy
-#| msgid "Nature"
-msgid "Capture"
-msgstr "Tự nhiên"
-
 #: utilities/cameragui/cameraui.cpp:331
 #, fuzzy
 #| msgid "Select &New Items"
@@ -12107,23 +12158,23 @@ msgstr "Xoá tất cả"
 msgid "Cancelling current operation, please wait..."
 msgstr "Đang thôi thao tác hiện thời, xin hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:734
+#: utilities/cameragui/cameraui.cpp:743
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr "Bạn có muốn đóng hộp thoại này và thôi thao tác đang chạy không?"
 
-#: utilities/cameragui/cameraui.cpp:741
+#: utilities/cameragui/cameraui.cpp:750
 msgid "Disconnecting from camera, please wait..."
 msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:777
+#: utilities/cameragui/cameraui.cpp:786
 msgid "Scanning for new files, please wait..."
 msgstr "Đang quét tìm tập tin mới. Hãy đời..."
 
-#: utilities/cameragui/cameraui.cpp:828
+#: utilities/cameragui/cameraui.cpp:837
 msgid "Ready"
 msgstr "Sẵn sàng"
 
-#: utilities/cameragui/cameraui.cpp:914
+#: utilities/cameragui/cameraui.cpp:923
 msgid ""
 "Failed to connect to the camera. Please make sure it is connected properly "
 "and turned on. Would you like to try again?"
@@ -12131,23 +12182,23 @@ msgstr ""
 "Lỗi kết nối tới máy ảnh. Hãy kiểm tra xem nó đã được kết nối và bật. Bạn có "
 "muốn thử lại không?"
 
-#: utilities/cameragui/cameraui.cpp:918
+#: utilities/cameragui/cameraui.cpp:927
 msgid "Connection Failed"
 msgstr "Lỗi kết nối"
 
-#: utilities/cameragui/cameraui.cpp:919
+#: utilities/cameragui/cameraui.cpp:928
 msgid "Retry"
 msgstr "Thử lại"
 
-#: utilities/cameragui/cameraui.cpp:920
+#: utilities/cameragui/cameraui.cpp:929
 msgid "Abort"
 msgstr "Hủy bỏ"
 
-#: utilities/cameragui/cameraui.cpp:1036
+#: utilities/cameragui/cameraui.cpp:1045
 msgid "Select Image to Upload"
 msgstr "Chọn ảnh cần tải lên"
 
-#: utilities/cameragui/cameraui.cpp:1061
+#: utilities/cameragui/cameraui.cpp:1070
 #, qt-format
 msgid ""
 "There is no enough free space on Camera Media to upload pictures.\n"
@@ -12156,7 +12207,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1094
+#: utilities/cameragui/cameraui.cpp:1103
 #, qt-format
 msgid ""
 "Camera Folder <b>%1</b> already contains item <b>%2</b><br>Please enter a "
@@ -12165,11 +12216,11 @@ msgstr ""
 "Thư mục máy ảnh <b>%1</b> đã chứa mục <b>%2</b><br>Hãy nhập vào tên tập tin "
 "mới (không có phần mở rộng):"
 
-#: utilities/cameragui/cameraui.cpp:1097
+#: utilities/cameragui/cameraui.cpp:1106
 msgid "File already exists"
 msgstr "Tập tin đã có"
 
-#: utilities/cameragui/cameraui.cpp:1152
+#: utilities/cameragui/cameraui.cpp:1162
 #, qt-format
 msgid ""
 "There is no enough free space on Album Library Path to download and process "
@@ -12179,7 +12230,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1194
+#: utilities/cameragui/cameraui.cpp:1203
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "the camera pictures into.</p>"
@@ -12187,7 +12238,7 @@ msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: utilities/cameragui/cameraui.cpp:1459
+#: utilities/cameragui/cameraui.cpp:1466
 msgid ""
 "The items listed below are locked by the camera (read-only). These items "
 "will not be deleted. If you really want to delete these items, please unlock "
@@ -12197,7 +12248,7 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/cameraui.cpp:1468 utilities/cameragui/cameraui.cpp:1535
+#: utilities/cameragui/cameraui.cpp:1475 utilities/cameragui/cameraui.cpp:1542
 #, fuzzy, qt-format
 #| msgid ""
 #| "About to delete this image. Deleted files are unrecoverable. Are you sure?"
@@ -12209,7 +12260,7 @@ msgid_plural ""
 msgstr[0] ""
 "Sắp xoá ảnh này. Tập tin bị xoá không thể được phục hồi. Bạn có chắc chưa?"
 
-#: utilities/cameragui/cameraui.cpp:1526
+#: utilities/cameragui/cameraui.cpp:1533
 msgid ""
 "The items listed below are locked by camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
@@ -12219,17 +12270,17 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/cameraui.cpp:1695
+#: utilities/cameragui/cameraui.cpp:1707
 #, qt-format
 msgid "A file with same name (%1) exists in folder %2"
 msgstr "Một tập tin cùng tên (%1) đã có trong thư mục %2"
 
-#: utilities/cameragui/cameraui.cpp:1707
+#: utilities/cameragui/cameraui.cpp:1719
 #, qt-format
 msgid "Failed to find Album for path '%1'"
 msgstr "Không tìm thấy tập ảnh qua đường dẫn « %1 »"
 
-#: utilities/cameragui/gpcamera.cpp:1243
+#: utilities/cameragui/gpcamera.cpp:1244
 msgid ""
 "\n"
 "\n"
@@ -12243,23 +12294,33 @@ msgstr ""
 "\n"
 "http://gphoto.org/bugs"
 
-#: utilities/cameragui/cameraiconview.cpp:455
+#: utilities/cameragui/cameraiconview.cpp:463
 msgid "Download"
 msgstr "Tải về"
 
-#: utilities/cameragui/cameraiconview.cpp:456
+#: utilities/cameragui/cameraiconview.cpp:464
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download && Delete"
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/cameraiconview.cpp:457
+#: utilities/cameragui/cameraiconview.cpp:465
 msgid "Toggle lock"
 msgstr "Bật/tắt khoá"
 
-#: utilities/cameragui/cameraiconview.cpp:618
+#: utilities/cameragui/cameraiconview.cpp:626
 msgid "&Upload into camera"
 msgstr "Tải &lên máy ảnh"
+
+#: utilities/cameragui/capturewidget.cpp:98
+#, fuzzy
+#| msgid ""
+#| "Cannot display preview for\n"
+#| "\"%1\""
+msgid "Cannot display camera preview"
+msgstr ""
+"Không thể hiển thị ô xem thử cho\n"
+"« %1 »"
 
 #: utilities/slideshow/slideshow.cpp:438
 #, qt-format

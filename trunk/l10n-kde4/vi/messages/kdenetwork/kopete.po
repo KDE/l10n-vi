@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-07 05:34+0200\n"
+"POT-Creation-Date: 2007-09-10 05:33+0200\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -231,7 +231,7 @@ msgid "Invisible"
 msgstr "Vô hình"
 
 #: libkopete/kopeteonlinestatus.cpp:122 libkopete/kopetemetacontact.cpp:473
-#: libkopete/kopeteidentity.cpp:128
+#: libkopete/kopeteidentity.cpp:128 kopete/kopetewindow.cpp:310
 #: kopete/identity/identitystatuswidget.cpp:151
 #: plugins/statistics/statisticscontact.cpp:262
 #: plugins/statistics/statisticsdialog.cpp:354 protocols/qq/qqprotocol.cpp:39
@@ -558,11 +558,11 @@ msgstr "Bạn không có quyền thực hiện lệnh « %1 »."
 msgid "Command Error"
 msgstr "Lỗi lệnh"
 
-#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1029
+#: libkopete/kopeteawayaction.cpp:75 kopete/kopetewindow.cpp:1013
 msgid "No Message"
 msgstr "Không có thông điệp"
 
-#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1023
+#: libkopete/kopeteawayaction.cpp:76 kopete/kopetewindow.cpp:1007
 msgid "New Message..."
 msgstr "Thông điệp mới..."
 
@@ -988,18 +988,23 @@ msgstr "Bỏ liên lạc"
 msgid "Remove"
 msgstr "Bỏ"
 
-#: libkopete/kopetecontact.cpp:555
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid "<b>DISPLAY NAME</b><br /><img src=\"%2\">&nbsp;CONTACT STATUS"
-msgstr ""
+#: libkopete/kopetecontact.cpp:556
+#, fuzzy, qt-format
+#| msgctxt "<b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
+#| msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
+msgctxt "@label:textbox %3 is contact-display-name, %1 is its status"
+msgid "<b><nobr>%3</nobr></b><br /><img src=\"%2\">&nbsp;%1"
+msgstr "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:562
-#, qt-format
-msgctxt "@label:textbox display name"
-msgid ""
-"<b>DISPLAY NAME</b> (CONTACT ID)<br /><img src=\"%2\">&nbsp;CONTACT STATUS"
-msgstr ""
+#: libkopete/kopetecontact.cpp:563
+#, fuzzy, qt-format
+#| msgctxt ""
+#| "<b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;CONTACT STATUS"
+#| msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
+msgctxt ""
+"@label:textbox %4 is contact-display-name, %3 is contact-id, %1 is its status"
+msgid "<nobr><b>%4</b> (%3)</nobr><br /><img src=\"%2\">&nbsp;%1"
+msgstr "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
 
 #: libkopete/kopetecontact.cpp:581
 #, fuzzy, qt-format
@@ -1033,10 +1038,13 @@ msgctxt "@label:textbox formatted status message"
 msgid "<br /><b>Status&nbsp;Message:</b>&nbsp;%1"
 msgstr "<br><b>Thông&nbsp;điệp&nbsp;trạng&nbsp;thái:</b>&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:645
-msgctxt "@label:textbox property label"
-msgid "<br /><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-msgstr ""
+#: libkopete/kopetecontact.cpp:646
+#, fuzzy, qt-format
+#| msgctxt "<br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
+#| msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
+msgctxt "@label:textbox property label %2 is name, %1 is value"
+msgid "<br /><nobr><b>%2:</b></nobr>&nbsp;%1"
+msgstr "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
 
 #: libkopete/kopetecontact.cpp:669
 #, qt-format
@@ -1118,7 +1126,7 @@ msgstr "Trực tuyến kể từ"
 msgid "Last Seen"
 msgstr "Gặp cuối"
 
-#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:1006
+#: libkopete/kopeteglobal.cpp:153 kopete/kopetewindow.cpp:990
 #: protocols/meanwhile/meanwhileprotocol.cpp:62
 msgid "Status Message"
 msgstr "Thông điệp trạng thái"
@@ -1224,16 +1232,6 @@ msgstr "Thông điệp trạng thái toàn cục"
 msgid "&Add Contact"
 msgstr "Thê&m liên lạc"
 
-#. i18n: tag string
-#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
-#: kopete/kopetewindow.cpp:310 rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
-#: protocols/gadu/gaduprotocol.cpp:60
-#: protocols/oscar/aim/aimstatusmanager.cpp:67
-#: protocols/oscar/icq/icqstatusmanager.cpp:74
-#: protocols/groupwise/gwprotocol.cpp:52
-msgid "O&ffline"
-msgstr "&Ngoại tuyến"
-
 #: kopete/kopetewindow.cpp:315
 msgid "&Export Contacts..."
 msgstr "X&uất liên lạc..."
@@ -1334,7 +1332,7 @@ msgstr "Hiển thị hay giấu danh sách liên lạc"
 msgid "Set Away/Back"
 msgstr "Đặt Vắng mặt/Trở về"
 
-#: kopete/kopetewindow.cpp:677
+#: kopete/kopetewindow.cpp:661
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
@@ -1342,11 +1340,11 @@ msgstr ""
 "<qt>Việc đóng cửa sổ chính sẽ để lại trình Kopete chạy trên khay hệ thống. "
 "Dùng mục « Thoát » trong trình đơn « Tập tin » để thoát khỏi ứng dụng.</qt>"
 
-#: kopete/kopetewindow.cpp:679
+#: kopete/kopetewindow.cpp:663
 msgid "Docking in System Tray"
 msgstr "Thả neo trên khay hệ thống"
 
-#: kopete/kopetewindow.cpp:841
+#: kopete/kopetewindow.cpp:825
 #, fuzzy, qt-format
 #| msgctxt ""
 #| "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</"
@@ -1363,11 +1361,11 @@ msgid ""
 msgstr ""
 "<nobr><img src=\"kopete-account-icon:%3:%4\"> <b>%1:</b> %2 (<i>%5</i>)<br/>"
 
-#: kopete/kopetewindow.cpp:1012
+#: kopete/kopetewindow.cpp:996
 msgid "Add "
 msgstr "Thêm "
 
-#: kopete/kopetewindow.cpp:1087
+#: kopete/kopetewindow.cpp:1071
 #: kopete/contactlist/kopetecontactlistview.cpp:1772
 msgid "Add Contact"
 msgstr "Thêm liên lạc"
@@ -2559,134 +2557,141 @@ msgstr "Trò chuyện"
 msgid "<qt><i>%1</i> is now %2.</qt>"
 msgstr "<qt><i>%1</i> giờ %2.</qt>"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:223
-#: kopete/chatwindow/kopeteemailwindow.cpp:501
-#: kopete/chatwindow/kopeteemailwindow.cpp:519
+#: kopete/chatwindow/kopetechatwindow.cpp:225
+#, fuzzy
+#| msgid "Send"
+msgctxt "@action:button"
 msgid "Send"
 msgstr "Gửi"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:234
+#: kopete/chatwindow/kopetechatwindow.cpp:236
+#, fuzzy
+#| msgid "Ready."
+msgctxt "@info:status"
 msgid "Ready."
 msgstr "Sẵn sàng."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:340
+#: kopete/chatwindow/kopetechatwindow.cpp:339
 #: kopete/chatwindow/kopeteemailwindow.cpp:225
 msgid "&Send Message"
 msgstr "&Gửi tin nhẳn"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:350
+#: kopete/chatwindow/kopetechatwindow.cpp:349
 msgid "Close All Chats"
 msgstr "Đóng mọi trò chuyện"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:355
+#: kopete/chatwindow/kopetechatwindow.cpp:354
 msgid "&Activate Next Tab"
 msgstr "&Bật thẻ kế"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:361
+#: kopete/chatwindow/kopetechatwindow.cpp:360
 msgid "&Activate Previous Tab"
 msgstr "&Bật thẻ trước"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:367
+#: kopete/chatwindow/kopetechatwindow.cpp:366
 msgid "Nic&k Completion"
 msgstr "Gõ &xong tên hiệu"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:372
+#: kopete/chatwindow/kopetechatwindow.cpp:371
 msgid "&Detach Chat"
 msgstr "Tách &rời trò chuyện"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:377
+#: kopete/chatwindow/kopetechatwindow.cpp:376
 msgid "&Move Tab to Window"
 msgstr "Chu&yển thẻ sang cửa sổ"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:384
+#: kopete/chatwindow/kopetechatwindow.cpp:383
 msgid "&Tab Placement"
 msgstr "Vị trí &thẻ"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:396
+#: kopete/chatwindow/kopetechatwindow.cpp:395
 msgid "Set Default &Font..."
 msgstr "Đặt &phông mặc định..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:400
+#: kopete/chatwindow/kopetechatwindow.cpp:399
 msgid "Set Default Text &Color..."
 msgstr "Đặt màu &văn bản mặc định..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:404
+#: kopete/chatwindow/kopetechatwindow.cpp:403
 #: kopete/chatwindow/kopeteemailwindow.cpp:246
 msgid "Set &Background Color..."
 msgstr "Đặt màu &nền..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:408
+#: kopete/chatwindow/kopetechatwindow.cpp:407
 msgid "Previous History"
 msgstr "Lịch sử trước"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:413
+#: kopete/chatwindow/kopetechatwindow.cpp:412
 msgid "Next History"
 msgstr "Lịch sử kế"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:425
+#: kopete/chatwindow/kopetechatwindow.cpp:424
 msgid "Place to Left of Chat Area"
 msgstr "Để bên trái vùng trò chuyện"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:429
+#: kopete/chatwindow/kopetechatwindow.cpp:428
 msgid "Place to Right of Chat Area"
 msgstr "Để bên phải vùng trò chuyện"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:433
+#: kopete/chatwindow/kopetechatwindow.cpp:432
 msgid "Show"
 msgstr "Hiện"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:435
+#: kopete/chatwindow/kopetechatwindow.cpp:434
 msgid "Hide"
 msgstr "Ẩn"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:438
+#: kopete/chatwindow/kopetechatwindow.cpp:437
 msgid "Automatic Spell Checking"
 msgstr "Tự động bắt lỗi chính tả"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:448
+#: kopete/chatwindow/kopetechatwindow.cpp:447
 msgid "Co&ntacts"
 msgstr "Liê&n lạc"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:472
+#: kopete/chatwindow/kopetechatwindow.cpp:471
 #: kopete/chatwindow/kopeteemailwindow.cpp:274
 msgid "Toolbar Animation"
 msgstr "Hoạt họa thanh công cụ"
 
 #: kopete/chatwindow/kopetechatwindow.cpp:626
+#, fuzzy
+#| msgid "Close the current tab"
+msgctxt "@info:tooltip"
 msgid "Close the current tab"
 msgstr "Đóng thẻ hiện thời"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1036
+#: kopete/chatwindow/kopetechatwindow.cpp:1033
 msgid "More..."
 msgstr "Thêm..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1052
+#: kopete/chatwindow/kopetechatwindow.cpp:1049
 msgid "Top"
 msgstr "Trên"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1055
+#: kopete/chatwindow/kopetechatwindow.cpp:1052
 msgid "Bottom"
 msgstr "Dưới"
 
-#: kopete/chatwindow/chatmessagepart.cpp:244
+#: kopete/chatwindow/chatmessagepart.cpp:243
 #: plugins/history/historydialog.cpp:186
 msgid "Copy Link Address"
 msgstr "Chép địa chỉ liên kết"
 
-#: kopete/chatwindow/chatmessagepart.cpp:271
+#: kopete/chatwindow/chatmessagepart.cpp:267
 msgid "Save Conversation"
 msgstr "Lưu cuộc đối thoại"
 
-#: kopete/chatwindow/chatmessagepart.cpp:313
+#: kopete/chatwindow/chatmessagepart.cpp:309
 #, qt-format
 msgid "<qt>Could not open <b>%1</b> for writing.</qt>"
 msgstr "<qt>Không thể mở <b>%1</b> để ghi.</qt>"
 
-#: kopete/chatwindow/chatmessagepart.cpp:314
+#: kopete/chatwindow/chatmessagepart.cpp:310
 msgid "Error While Saving"
 msgstr "Lỗi khi lưu"
 
-#: kopete/chatwindow/chatmessagepart.cpp:652
+#: kopete/chatwindow/chatmessagepart.cpp:648
 msgid "User Has Left"
 msgstr "Người dùng đã rời"
 
@@ -2732,8 +2737,6 @@ msgstr "Đang đóng trò chuyện nhóm"
 #: kopete/chatwindow/kopeteemailwindow.cpp:462
 #: kopete/chatwindow/kopeteemailwindow.cpp:469
 #: kopete/chatwindow/kopeteemailwindow.cpp:476
-#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
-#: kopete/chatwindow/chatview.cpp:361
 msgid "Cl&ose Chat"
 msgstr "Đón&g trò chuyện"
 
@@ -2765,6 +2768,11 @@ msgstr ""
 #: kopete/chatwindow/chatview.cpp:360
 msgid "Message in Transit"
 msgstr "Tin nhẳn dọc đường"
+
+#: kopete/chatwindow/kopeteemailwindow.cpp:501
+#: kopete/chatwindow/kopeteemailwindow.cpp:519
+msgid "Send"
+msgstr "Gửi"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:508
 msgid "Reply"
@@ -2841,6 +2849,14 @@ msgstr "&Canh đều"
 #: kopete/chatwindow/sidebarwidget.cpp:57
 msgid "Chat members list"
 msgstr "Danh sách thành viên trò chuyện"
+
+#: kopete/chatwindow/chatview.cpp:347 kopete/chatwindow/chatview.cpp:354
+#: kopete/chatwindow/chatview.cpp:361
+#, fuzzy
+#| msgid "Cl&ose Chat"
+msgctxt "@action:button"
+msgid "Close Chat"
+msgstr "Đón&g trò chuyện"
 
 #: kopete/chatwindow/chatview.cpp:396
 #, qt-format
@@ -10094,6 +10110,16 @@ msgid "Choose this status to disconnect with description entered below."
 msgstr "Chọn trạng thái này để ngắt kết nối với mô tả được nhập vào bên dưới."
 
 #. i18n: tag string
+#. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 112
+#: rc.cpp:3192 protocols/qq/qqprotocol.cpp:39
+#: protocols/gadu/gaduprotocol.cpp:60
+#: protocols/oscar/aim/aimstatusmanager.cpp:67
+#: protocols/oscar/icq/icqstatusmanager.cpp:74
+#: protocols/groupwise/gwprotocol.cpp:52
+msgid "O&ffline"
+msgstr "&Ngoại tuyến"
+
+#. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 132
 #. i18n: tag string
 #. i18n: file ./protocols/gadu/ui/gaduawayui.ui line 151
@@ -14589,11 +14615,6 @@ msgstr ""
 msgid "Select public key for %1"
 msgstr "Chọn khoá công cho %1"
 
-#: plugins/cryptography/cryptographyselectuserkey.cpp:84
-#: plugins/cryptography/cryptographyguiclient.cpp:143
-msgid "Public Keys Found"
-msgstr ""
-
 #: plugins/cryptography/cryptographypreferences.cpp:48
 #: plugins/cryptography/cryptographypreferences.cpp:49
 #, fuzzy
@@ -14658,61 +14679,53 @@ msgstr "Chọn khoá công"
 msgid "Export checked keys to address book"
 msgstr "Xuất vào Sổ địa chỉ"
 
-#: plugins/cryptography/exportkeys.cpp:71
+#: plugins/cryptography/exportkeys.cpp:69
 #, fuzzy
 #| msgid "No Contacts with Photo Support"
 msgid "<No meta-contacts with keys to export>"
 msgstr "Không có liên lạc có khả năng hỗ trợ ảnh chụp"
 
-#: plugins/cryptography/cryptographyplugin.cpp:70
+#: plugins/cryptography/kabckeyselector.cpp:29
+#, fuzzy
+#| msgid "Select Public Key"
+msgid "Public Key Found"
+msgstr "Chọn khoá công"
+
+#: plugins/cryptography/kabckeyselector.cpp:40
+msgid "Public Keys Found"
+msgstr ""
+
+#: plugins/cryptography/cryptographyplugin.cpp:69
 #, fuzzy
 #| msgid "Select Public Key"
 msgid "&Select Public Key..."
 msgstr "Chọn khoá công"
 
-#: plugins/cryptography/cryptographyplugin.cpp:76
+#: plugins/cryptography/cryptographyplugin.cpp:75
 #, fuzzy
 #| msgid "Export to Address Book"
-msgid "&Export Public Key To Address Book..."
+msgid "&Export Public Keys To Address Book..."
 msgstr "Xuất vào Sổ địa chỉ"
 
-#: plugins/cryptography/cryptographyplugin.cpp:153
-#: plugins/cryptography/cryptographyplugin.cpp:166
+#: plugins/cryptography/cryptographyplugin.cpp:154
+#: plugins/cryptography/cryptographyplugin.cpp:167
 msgid ""
 "Cryptography plugin refuses to show the most recent message because it "
 "contains an attempt to forge an encrypted or signed message"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:212
+#: plugins/cryptography/cryptographyplugin.cpp:211
 msgid "You have not chosen an encryption key for one or more recipients"
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-#| msgid "Create a new metacontact for this contact"
-msgid "No key has been set for this meta-contact"
-msgstr "Tạo siêu liên lạc mới cho liên lạc này"
-
-#: plugins/cryptography/cryptographyplugin.cpp:267
-#, fuzzy
-#| msgid "Node"
-msgid "No Key"
-msgstr "Nút"
-
-#: plugins/cryptography/cryptographyplugin.cpp:278
-#, fuzzy
-#| msgid "Select Public Key"
-msgid "Export Public Key"
-msgstr "Chọn khoá công"
-
-#: plugins/cryptography/cryptographyplugin.cpp:295
+#: plugins/cryptography/cryptographyplugin.cpp:272
 #, fuzzy
 #| msgid "Enter passphrase for <b>%1</b>:"
 msgid "Enter password for GPG encryption and signing key"
 msgstr "Hãy nhập cụm từ mật khẩu cho <b>%1</b>:"
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 msgid ""
 "This protocol may not work with messages that are encrypted. This is because "
 "encrypted messages are very long, and the server or peer may reject them due "
@@ -14720,8 +14733,8 @@ msgid ""
 "temporarily suspended, turn off encryption."
 msgstr ""
 
-#: plugins/cryptography/cryptographyplugin.cpp:309
-#: plugins/cryptography/cryptographyguiclient.cpp:164
+#: plugins/cryptography/cryptographyplugin.cpp:288
+#: plugins/cryptography/cryptographyguiclient.cpp:153
 #, fuzzy
 #| msgid "Unsupported protocol version."
 msgid "Cryptography Unsupported Protocol"
@@ -14735,29 +14748,27 @@ msgid ""
 "You have %2 tries left."
 msgstr "Hãy nhập cụm từ mật khẩu cho <b>%1</b>:"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:78
+#: plugins/cryptography/cryptographyguiclient.cpp:56
+msgid "Cryptography"
+msgstr "Mật mã thuật"
+
+#: plugins/cryptography/cryptographyguiclient.cpp:80
 msgid "Encrypt Messages"
 msgstr "Mật mã hoá tin nhẳn"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:80
+#: plugins/cryptography/cryptographyguiclient.cpp:82
 #, fuzzy
 #| msgid "&Send Message"
 msgid "Sign Messages"
 msgstr "&Gửi tin nhẳn"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:82
+#: plugins/cryptography/cryptographyguiclient.cpp:84
 #, fuzzy
 #| msgid "Export contact's details to the KDE Address Book"
-msgid "Export Contact's Key to Address Book"
+msgid "Export Contacts' Keys to Address Book"
 msgstr "Xuất khẩu chi tiết về liên lạc vào Sổ địa chỉ KDE"
 
-#: plugins/cryptography/cryptographyguiclient.cpp:132
-#, fuzzy
-#| msgid "Select Public Key"
-msgid "Public Key Found"
-msgstr "Chọn khoá công"
-
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 #, qt-format
 msgid ""
 "To send encrypted messages to %2, you still need to select a public key for "
@@ -14770,7 +14781,7 @@ msgstr[0] ""
 "Để gửi tin nhẳn đã mật mã cho %2, bạn vẫn còn cần phải chọn một khoá công "
 "cộng cho mỗi liên lạc."
 
-#: plugins/cryptography/cryptographyguiclient.cpp:174
+#: plugins/cryptography/cryptographyguiclient.cpp:164
 msgid "Missing public key"
 msgid_plural "Missing public keys"
 msgstr[0] "Thiếu khoá công"
@@ -20628,33 +20639,20 @@ msgstr ""
 "Hãy nhập vào một thông điệp Tự động Trả lời mà sẽ được hiển thị cho người "
 "dùng thử liên lạc với bạn khi bạn còn Vắng mặt hay Bận."
 
-#~ msgid "Cryptography"
-#~ msgstr "Mật mã thuật"
+#, fuzzy
+#~| msgid "Create a new metacontact for this contact"
+#~ msgid "No key has been set for this meta-contact"
+#~ msgstr "Tạo siêu liên lạc mới cho liên lạc này"
 
 #, fuzzy
-#~| msgctxt "<b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~| msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b><br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~ msgid "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr "<b><nobr>%3</nobr></b><br><img src=\"%2\">&nbsp;%1"
+#~| msgid "Node"
+#~ msgid "No Key"
+#~ msgstr "Nút"
 
 #, fuzzy
-#~| msgctxt ""
-#~| "<b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;CONTACT STATUS"
-#~| msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-#~ msgctxt ""
-#~ "@label:textbox <b>DISPLAY NAME</b> (CONTACT ID)<br><img src=\"%2\">&nbsp;"
-#~ "CONTACT STATUS"
-#~ msgid "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-#~ msgstr "<nobr><b>%4</b> (%3)</nobr><br><img src=\"%2\">&nbsp;%1"
-
-#, fuzzy
-#~| msgctxt "<br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-#~| msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
-#~ msgctxt "@label:textbox <br><b>PROPERTY LABEL:</b>&nbsp;PROPERTY VALUE"
-#~ msgid "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
-#~ msgstr "<br><nobr><b>%2:</b></nobr>&nbsp;%1"
+#~| msgid "Select Public Key"
+#~ msgid "Export Public Key"
+#~ msgstr "Chọn khoá công"
 
 #~ msgid "The list of accounts"
 #~ msgstr "Danh sách tài khoản"

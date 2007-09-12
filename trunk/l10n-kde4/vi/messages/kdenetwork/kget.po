@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-10 05:33+0200\n"
+"POT-Creation-Date: 2007-09-12 05:41+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -244,11 +244,11 @@ msgstr "Danh sách truyền KGet"
 msgid "Export Transfers"
 msgstr "Xuất truyền"
 
-#: mainwindow.cpp:375 conf/transfersgroupwidget.cpp:71
+#: mainwindow.cpp:375
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:376 conf/transfersgroupwidget.cpp:72
+#: mainwindow.cpp:376
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
@@ -370,21 +370,23 @@ msgstr "Thư mục mặc định"
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 122
-#: rc.cpp:51 conf/transfersgroupwidget.cpp:130
+#: rc.cpp:51 conf/transfersgroupwidget.cpp:118
 msgid "Add"
 msgstr "Thêm"
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 132
-#: rc.cpp:54
+#: rc.cpp:54 conf/transfersgroupwidget.cpp:123
 msgid "Edit"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 139
-#: rc.cpp:57
-msgid "Remove"
-msgstr "Bỏ"
+#: rc.cpp:57 conf/transfersgroupwidget.cpp:120
+#, fuzzy
+#| msgid "Not Deleted"
+msgid "Delete"
+msgstr "Chưa xóa"
 
 #. i18n: tag string
 #. i18n: file conf/dlgdirectories.ui line 149
@@ -653,28 +655,20 @@ msgstr "Bổ sung"
 msgid "Transfer Plugin Options"
 msgstr "Tùy chọn bổ sung truyền"
 
-#: conf/transfersgroupwidget.cpp:81
-msgid ""
-"A group with that name already exists!\n"
-"Please change the group name."
-msgstr ""
-"Một nhóm tên đó đã có.\n"
-"Hãy thay đổi tên nhóm."
-
-#: conf/transfersgroupwidget.cpp:111 core/kget.cpp:492
+#: conf/transfersgroupwidget.cpp:99 core/kget.cpp:492
 #: core/transfergrouphandler.cpp:186
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
 msgstr "Tải về"
 
-#: conf/transfersgroupwidget.cpp:113
+#: conf/transfersgroupwidget.cpp:101
 #, fuzzy
 #| msgid "You can not delete the default group!"
 msgid "You can not delete this group!"
 msgstr "Bạn không thể xoá nhóm mặc định."
 
-#: conf/transfersgroupwidget.cpp:118
+#: conf/transfersgroupwidget.cpp:106
 #, qt-format
 msgid ""
 "Are you sure that you want to remove\n"
@@ -682,18 +676,6 @@ msgid ""
 msgstr ""
 "Bạn có chắc muốn gỡ bỏ\n"
 "nhóm tên %1 không?"
-
-#: conf/transfersgroupwidget.cpp:132
-#, fuzzy
-#| msgid "Not Deleted"
-msgid "Delete"
-msgstr "Chưa xóa"
-
-#: conf/transfersgroupwidget.cpp:135
-#, fuzzy
-#| msgid "Delete Group"
-msgid "Rename"
-msgstr "Xoá nhóm"
 
 #: core/kget.cpp:399
 #, qt-format
@@ -919,6 +901,21 @@ msgstr "Tải về"
 #: ui/viewscontainer.cpp:186
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
+
+#~ msgid "Remove"
+#~ msgstr "Bỏ"
+
+#~ msgid ""
+#~ "A group with that name already exists!\n"
+#~ "Please change the group name."
+#~ msgstr ""
+#~ "Một nhóm tên đó đã có.\n"
+#~ "Hãy thay đổi tên nhóm."
+
+#, fuzzy
+#~| msgid "Delete Group"
+#~ msgid "Rename"
+#~ msgstr "Xoá nhóm"
 
 #~ msgid "Change"
 #~ msgstr "Đổi"

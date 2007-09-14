@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-13 05:39+0200\n"
+"POT-Creation-Date: 2007-09-14 05:38+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -82,11 +82,18 @@ msgid "JPEG quality:"
 msgstr "Chất lượng JPEG:"
 
 #: libs/dimg/loaders/jpegsettings.cpp:84
+#, fuzzy
+#| msgid ""
+#| "<p>The quality value for JPEG images:<p><b>1</b>: low quality (high "
+#| "compression and small file size)<p><b>50</b>: medium quality<p><b>75</b>: "
+#| "good quality (default)<p><b>100</b>: high quality (no compression and "
+#| "large file size)<p><b>Note: JPEG use a lossy compression image algorithm."
+#| "</b>"
 msgid ""
-"<p>The quality value for JPEG images:<p><b>1</b>: low quality (high "
-"compression and small file size)<p><b>50</b>: medium quality<p><b>75</b>: "
-"good quality (default)<p><b>100</b>: high quality (no compression and large "
-"file size)<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+"<p>The JPEG image quality:<p><b>1</b>: low quality (high compression and "
+"small file size)<p><b>50</b>: medium quality<p><b>75</b>: good quality "
+"(default)<p><b>100</b>: high quality (no compression and large file size)"
+"<p><b>Note: JPEG always uses lossy compression.</b>"
 msgstr ""
 "<p>Giá trị chất lương cho ảnh JPEG:<p><b>1</b>: chất lượng thấp (cấp nén cao "
 "thì kích cỡ tập tin nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất lượng "
@@ -133,13 +140,15 @@ msgstr "Cao :"
 
 #: libs/dimg/loaders/jpegsettings.cpp:110
 msgid ""
-"<p>The level of chroma subsampling for JPEG images:<p><b>None</b>: use 4:4:4 "
-"ratio. It does not have any chroma subsampling at all. This preserves "
-"borders and contrasting colors, but compression is less<p><b>Medium</b>: use "
-"4:2:2 ratio. Medium compression; reduces the bandwidth for the picture by "
-"one-third with little to no visual difference<p><b>High</b>: use 4:1:1 "
-"ratio. Important compression; suits images with weak borders but tends to "
-"denature colors<p><b>Note: JPEG use a lossy compression image algorithm.</b>"
+"<p>JPEG Chroma subsampling level \n"
+"(color is saved with less resolution than luminance):<p><b>None</b>=best: "
+"uses 4:4:4 ratio. Does not employ chroma subsampling at all. This preserves "
+"edges and contrasting colors, whilst adding no additional "
+"compression<p><b>Medium</b>: uses 4:2:2 ratio. Medium compression: reduces "
+"the color resolution by one-third with little to no visual "
+"difference<p><b>High</b>: use 4:1:1 ratio. High compression: suits images "
+"with soft edges but tends to alter colors<p><b>Note: JPEG always uses lossy "
+"compression.</b>"
 msgstr ""
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:92
@@ -431,7 +440,9 @@ msgid "Apply"
 msgstr "Áp dụng"
 
 #: libs/imageproperties/imagedescedittab.cpp:217
-msgid "Apply all changes to pictures"
+#, fuzzy
+#| msgid "Apply all changes to pictures"
+msgid "Apply all changes to images"
 msgstr "Áp dụng mọi thay đổi cho các ảnh"
 
 #: libs/imageproperties/imagedescedittab.cpp:220
@@ -444,25 +455,25 @@ msgstr "Áp dụng thay đổi ?"
 
 #: libs/imageproperties/imagedescedittab.cpp:405
 #, fuzzy, c-format
-msgid "<qt><p>You have edited the comment of the picture. "
+msgid "<qt><p>You have edited the comment of the image. "
 msgid_plural "<qt><p>You have edited the comment of %n pictures. "
 msgstr[0] "<qt><p>Bạn đã sửa ghi chú của ảnh. "
 
 #: libs/imageproperties/imagedescedittab.cpp:409
 #, fuzzy, c-format
-msgid "<qt><p>You have edited the date of the picture. "
+msgid "<qt><p>You have edited the date of the image. "
 msgid_plural "<qt><p>You have edited the date of %n pictures. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
 #: libs/imageproperties/imagedescedittab.cpp:413
 #, fuzzy, c-format
-msgid "<qt><p>You have edited the rating of the picture. "
+msgid "<qt><p>You have edited the rating of the image. "
 msgid_plural "<qt><p>You have edited the rating of %n pictures. "
 msgstr[0] "<qt><p>Bạn đã sửa đánh giá của ảnh. "
 
 #: libs/imageproperties/imagedescedittab.cpp:417
 #, fuzzy, c-format
-msgid "<qt><p>You have edited the tags of the picture. "
+msgid "<qt><p>You have edited the tags of the image. "
 msgid_plural "<qt><p>You have edited the tags of %n pictures. "
 msgstr[0] "<qt><p>Bạn đã sửa thẻ của ảnh. "
 
@@ -473,7 +484,7 @@ msgstr "Bạn có muốn áp dụng các thay đổi không?</p></qt>"
 
 #: libs/imageproperties/imagedescedittab.cpp:425
 #, fuzzy, c-format
-msgid "<qt><p>You have edited the metadata of the picture: </p><ul>"
+msgid "<qt><p>You have edited the metadata of the image: </p><ul>"
 msgid_plural "<qt><p>You have edited the metadata of %n pictures: </p><ul>"
 msgstr[0] "<qt><p>Bạn đã sửa siêu dữ liệu của ảnh:</p></ul>"
 
@@ -498,7 +509,9 @@ msgid "Always apply changes without confirmation"
 msgstr "Luôn luôn áp dụng thay đổi, không cần xác nhận"
 
 #: libs/imageproperties/imagedescedittab.cpp:471
-msgid "Applying changes to pictures. Please wait..."
+#, fuzzy
+#| msgid "Applying changes to pictures. Please wait..."
+msgid "Applying changes to images. Please wait..."
 msgstr "Đang áp dụng các thay đổi cho ảnh. Hãy đời..."
 
 #: libs/imageproperties/imagedescedittab.cpp:570
@@ -683,7 +696,9 @@ msgid "Assign Tag '%1' to Items"
 msgstr "Gán thẻ « %1 » cho mục"
 
 #: libs/imageproperties/talbumlistview.cpp:416
-msgid "Assign tag to pictures. Please wait..."
+#, fuzzy
+#| msgid "Assign tag to pictures. Please wait..."
+msgid "Assign tag to images. Please wait..."
 msgstr "Gán thẻ vào ảnh. Hãy đời..."
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:161
@@ -1229,8 +1244,12 @@ msgid "Regularity:"
 msgstr "Độ đều đặn:"
 
 #: libs/greycstoration/greycstorationwidget.cpp:160
+#, fuzzy
+#| msgid ""
+#| "<p>This value controls the smoothing regularity of the picture. Do not "
+#| "use a high value here, or the target image will be completely blurred."
 msgid ""
-"<p>This value controls the smoothing regularity of the picture. Do not use a "
+"<p>This value controls the evenness of smoothing to the image. Do not use a "
 "high value here, or the target image will be completely blurred."
 msgstr ""
 "<p>Giá trị này điều khiển độ đều đặn làm mịn của ảnh. Đừng dùng giá trị cao "
@@ -1241,7 +1260,9 @@ msgid "Iterations:"
 msgstr "Lần lặp lại:"
 
 #: libs/greycstoration/greycstorationwidget.cpp:167
-msgid "<p>Sets the number of times the filter is applied over the picture."
+#, fuzzy
+#| msgid "<p>Sets the number of times the filter is applied over the picture."
+msgid "<p>Sets the number of times the filter is applied over the image."
 msgstr "<p>Đặt số lần bộ lọc này được áp dụng cho ảnh đích."
 
 #: libs/greycstoration/greycstorationwidget.cpp:170
@@ -1317,7 +1338,9 @@ msgid "Runge-Kutta"
 msgstr "Runge-Kutta"
 
 #: libs/greycstoration/greycstorationwidget.cpp:232
-msgid "<p>Select the right interpolation method to set the picture quality."
+#, fuzzy
+#| msgid "<p>Select the right interpolation method to set the picture quality."
+msgid "<p>Select the right interpolation method to set the image quality."
 msgstr "<p>Chọn phương pháp nội suy thích hợp với độ chất lượng ảnh."
 
 #: libs/greycstoration/greycstorationwidget.cpp:235
@@ -1325,7 +1348,9 @@ msgid "Fast approximation"
 msgstr "Ước lượng nhanh"
 
 #: libs/greycstoration/greycstorationwidget.cpp:236
-msgid "<p>Enable fast approximation to render picture."
+#, fuzzy
+#| msgid "<p>Enable fast approximation to render picture."
+msgid "<p>Enable fast approximation to render image."
 msgstr "<p>Bật khả năng ước lượng nhanh để vẽ ảnh."
 
 #: libs/threadimageio/thumbnailcreator.cpp:139
@@ -1831,7 +1856,9 @@ msgid "Visit digiKam project website"
 msgstr "Thăm nơi Mạng của dự án digiKam"
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:97
-msgid "None options available"
+#, fuzzy
+#| msgid "None options available"
+msgid "No options available"
 msgstr "Không có sẵn tùy chọn"
 
 #: libs/widgets/common/statuszoombar.cpp:82
@@ -1877,7 +1904,10 @@ msgstr ""
 "<p>Nhấn và kéo con trỏ chuột trên ảnh để thay đổi tiêu điểm trích."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:149
-msgid "<p>Set here the zoom factor used to render picture in the preview area."
+#, fuzzy
+#| msgid ""
+#| "<p>Set here the zoom factor used to render picture in the preview area."
+msgid "<p>Here set the zoom factor of the preview area."
 msgstr "<p>Ở đây hãy đặt hệ số phóng/thu dùng để vẽ ảnh trong ô xem thử."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:168
@@ -2442,7 +2472,7 @@ msgid "A new camera interface"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:109
-msgid "A new tool to capture pictures from Camera"
+msgid "A new tool to capture photographss from Camera"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:110
@@ -4023,8 +4053,9 @@ msgid "Searches"
 msgstr "Việc tìm kiếm"
 
 #: digikam/digikamview.cpp:1209
-#, qt-format
-msgid "Preparing slideshow from %1 pictures. Please wait..."
+#, fuzzy, qt-format
+#| msgid "Preparing slideshow from %1 pictures. Please wait..."
+msgid "Preparing slideshow of %1 images. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh từ %1 ảnh. Hãy đời..."
 
 #: digikam/tagspopupmenu.cpp:452 digikam/tagspopupmenu.cpp:542
@@ -4236,9 +4267,13 @@ msgid "Show camera make and model"
 msgstr "Hiển thị nhà chế tạo và mô hình của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:142 utilities/setup/setuptooltip.cpp:147
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display the camera make and model with which the "
+#| "picture has been taken."
 msgid ""
-"<p>Set this option to display the camera make and model with which the "
-"picture has been taken."
+"<p>Set this option to display the camera make and model with which the image "
+"has been taken."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị nhà chế tạo và mô hình của máy ảnh đã chụp "
 "ảnh."
@@ -4248,7 +4283,9 @@ msgid "Show camera date"
 msgstr "Hiện ngày máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:146 utilities/setup/setuptooltip.cpp:151
-msgid "<p>Set this option to display the date when the picture was taken."
+#, fuzzy
+#| msgid "<p>Set this option to display the date when the picture was taken."
+msgid "<p>Set this option to display the date when the image was taken."
 msgstr "<p>Bật tùy chọn này để hiển thị ngày tháng chụp ảnh."
 
 #: showfoto/setup/setuptooltip.cpp:148 utilities/setup/setuptooltip.cpp:153
@@ -4256,9 +4293,13 @@ msgid "Show camera aperture and focal"
 msgstr "Hiện độ mở và tiêu cự của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:149 utilities/setup/setuptooltip.cpp:154
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display camera aperture and focal settings used to "
+#| "take the picture."
 msgid ""
 "<p>Set this option to display camera aperture and focal settings used to "
-"take the picture."
+"take the image."
 msgstr "<p>Bật tùy chọn này để hiển thị độ mở và tiêu cự của máy ảnh chụp ảnh."
 
 #: showfoto/setup/setuptooltip.cpp:152 utilities/setup/setuptooltip.cpp:157
@@ -4266,9 +4307,13 @@ msgid "Show camera exposure and sensitivity"
 msgstr "Hiện phơi nắng và độ nhạy của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:153 utilities/setup/setuptooltip.cpp:158
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display camera exposure and sensitivity used to "
+#| "take the picture."
 msgid ""
 "<p>Set this option to display camera exposure and sensitivity used to take "
-"the picture."
+"the image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị phơi nắng và độ nhạy của máy ảnh chụp ảnh."
 
@@ -4277,9 +4322,12 @@ msgid "Show camera mode and program"
 msgstr "Hiện chế độ và chương trình của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:157 utilities/setup/setuptooltip.cpp:162
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display camera mode and program used to take the "
+#| "picture."
 msgid ""
-"<p>Set this option to display camera mode and program used to take the "
-"picture."
+"<p>Set this option to display camera mode and program used to take the image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị chế độ và chương trình của máy ảnh chụp ảnh."
 
@@ -4288,8 +4336,12 @@ msgid "Show camera flash settings"
 msgstr "Hiện thiết lập đèn nháy của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:161 utilities/setup/setuptooltip.cpp:166
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display camera flash settings used to take the "
+#| "picture."
 msgid ""
-"<p>Set this option to display camera flash settings used to take the picture."
+"<p>Set this option to display camera flash settings used to take the image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị thiết lập đèn nháy của máy ảnh chụp ảnh."
 
@@ -4298,9 +4350,13 @@ msgid "Show camera white balance settings"
 msgstr "Hiện thiết lập cán cân trắng của máy ảnh"
 
 #: showfoto/setup/setuptooltip.cpp:165 utilities/setup/setuptooltip.cpp:170
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to display camera white balance settings used to take "
+#| "the picture."
 msgid ""
 "<p>Set this option to display camera white balance settings used to take the "
-"picture."
+"image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị thiết lập cán cân màu trắng của máy ảnh chụp "
 "ảnh."
@@ -4393,7 +4449,9 @@ msgid "%1 (%2 of %3)"
 msgstr " (%2 trên %3)"
 
 #: showfoto/showfoto.cpp:907
-msgid "There are no pictures in this folder."
+#, fuzzy
+#| msgid "There are no pictures in this folder."
+msgid "There are no images in this folder."
 msgstr "Không có ảnh nào trong thư mục này."
 
 #: showfoto/showfoto.cpp:927
@@ -5308,7 +5366,9 @@ msgid "Color Effects"
 msgstr "Hiệu ứng màu"
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:83
-msgid "A digiKam plugin to apply special color effects on a picture."
+#, fuzzy
+#| msgid "A digiKam plugin to apply special color effects on a picture."
+msgid "A digiKam plugin to apply special color effects on an image."
 msgstr "Một phần bổ sung digiKam để áp dụng hiệu ứng màu cho ảnh."
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:85
@@ -7463,7 +7523,9 @@ msgid "Aspect Ratio Crop..."
 msgstr "Xén tỷ lệ hình thể..."
 
 #: imageplugins/coreplugin/imageplugin_core.cpp:202
-msgid "This picture is already using a depth of 8 bits / color / pixel."
+#, fuzzy
+#| msgid "This picture is already using a depth of 8 bits / color / pixel."
+msgid "This image is already using a depth of 8 bits / color / pixel."
 msgstr "Ảnh này đã dùng độ sâu 8 bit/màu/điểm ảnh."
 
 #: imageplugins/coreplugin/imageplugin_core.cpp:208
@@ -7475,7 +7537,9 @@ msgstr ""
 "không?"
 
 #: imageplugins/coreplugin/imageplugin_core.cpp:224
-msgid "This picture is already using a depth of 16 bits / color / pixel."
+#, fuzzy
+#| msgid "This picture is already using a depth of 16 bits / color / pixel."
+msgid "This image is already using a depth of 16 bits / color / pixel."
 msgstr "Ảnh này đã dùng độ sâu 16 bit/màu/điểm ảnh."
 
 #: imageplugins/coreplugin/imageplugin_core.cpp:265
@@ -7842,31 +7906,58 @@ msgid "Rendering Intent:"
 msgstr "Ý định vẽ:"
 
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:229
+#, fuzzy
+#| msgid ""
+#| "<ul><li>Perceptual intent causes the full gamut of the image to be "
+#| "compressed or expanded to fill the gamut of the destination media, so "
+#| "that gray balance is preserved but colorimetric accuracy may not be "
+#| "preserved.<br>In other words, if certain colors in an image fall outside "
+#| "of the range of colors that the output device can render, the picture "
+#| "intent will cause all the colors in the image to be adjusted so that the "
+#| "every color in the image falls within the range that can be rendered and "
+#| "so that the relationship between colors is preserved as much as possible."
+#| "<br>This intent is most suitable for display of photographs and images, "
+#| "and is the default intent.</li><li> Absolute Colorimetric intent causes "
+#| "any colors that fall outside the range that the output device can render "
+#| "are adjusted to the closest color that can be rendered, while all other "
+#| "colors are left unchanged.<br>This intent preserves the white point and "
+#| "is most suitable for spot colors (Pantone, TruMatch, logo colors, ...).</"
+#| "li><li>Relative Colorimetric intent is defined such that any colors that "
+#| "fall outside the range that the output device can render are adjusted to "
+#| "the closest color that can be rendered, while all other colors are left "
+#| "unchanged. Proof intent does not preserve the white point.</"
+#| "li><li>Saturation intent preserves the saturation of colors in the image "
+#| "at the possible expense of hue and lightness.<br>Implementation of this "
+#| "intent remains somewhat problematic, and the ICC is still working on "
+#| "methods to achieve the desired effects.<br>This intent is most suitable "
+#| "for business graphics such as charts, where it is more important that the "
+#| "colors be vivid and contrast well with each other rather than a specific "
+#| "color.</li></ul>"
 msgid ""
 "<ul><li>Perceptual intent causes the full gamut of the image to be "
 "compressed or expanded to fill the gamut of the destination media, so that "
 "gray balance is preserved but colorimetric accuracy may not be preserved."
 "<br>In other words, if certain colors in an image fall outside of the range "
-"of colors that the output device can render, the picture intent will cause "
-"all the colors in the image to be adjusted so that the every color in the "
-"image falls within the range that can be rendered and so that the "
-"relationship between colors is preserved as much as possible.<br>This intent "
-"is most suitable for display of photographs and images, and is the default "
-"intent.</li><li> Absolute Colorimetric intent causes any colors that fall "
-"outside the range that the output device can render are adjusted to the "
-"closest color that can be rendered, while all other colors are left "
-"unchanged.<br>This intent preserves the white point and is most suitable for "
-"spot colors (Pantone, TruMatch, logo colors, ...).</li><li>Relative "
-"Colorimetric intent is defined such that any colors that fall outside the "
+"of colors that the output device can render, the image intent will cause all "
+"the colors in the image to be adjusted so that the every color in the image "
+"falls within the range that can be rendered and so that the relationship "
+"between colors is preserved as much as possible.<br>This intent is most "
+"suitable for display of photographs and images, and is the default intent.</"
+"li><li> Absolute Colorimetric intent causes any colors that fall outside the "
 "range that the output device can render are adjusted to the closest color "
-"that can be rendered, while all other colors are left unchanged. Proof "
-"intent does not preserve the white point.</li><li>Saturation intent "
-"preserves the saturation of colors in the image at the possible expense of "
-"hue and lightness.<br>Implementation of this intent remains somewhat "
-"problematic, and the ICC is still working on methods to achieve the desired "
-"effects.<br>This intent is most suitable for business graphics such as "
-"charts, where it is more important that the colors be vivid and contrast "
-"well with each other rather than a specific color.</li></ul>"
+"that can be rendered, while all other colors are left unchanged.<br>This "
+"intent preserves the white point and is most suitable for spot colors "
+"(Pantone, TruMatch, logo colors, ...).</li><li>Relative Colorimetric intent "
+"is defined such that any colors that fall outside the range that the output "
+"device can render are adjusted to the closest color that can be rendered, "
+"while all other colors are left unchanged. Proof intent does not preserve "
+"the white point.</li><li>Saturation intent preserves the saturation of "
+"colors in the image at the possible expense of hue and lightness."
+"<br>Implementation of this intent remains somewhat problematic, and the ICC "
+"is still working on methods to achieve the desired effects.<br>This intent "
+"is most suitable for business graphics such as charts, where it is more "
+"important that the colors be vivid and contrast well with each other rather "
+"than a specific color.</li></ul>"
 msgstr ""
 "<ul><li>Ý định dựa vào nhận thức gây ra toàn bộ phạm vi của ảnh được nén hay "
 "mở rộng để chiếm toàn bộ phạm vi của thiết bị đích, để bảo tồn cán cân màu "
@@ -7930,13 +8021,14 @@ msgid "Info..."
 msgstr "Thông tin..."
 
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:317
-msgid "Picture Information"
-msgstr "Thông tin ảnh"
+#, fuzzy
+#| msgid "Camera Information"
+msgid "Camera information"
+msgstr "Thông tin máy ảnh"
 
-# Name: don't translate/Tên: đừng dịch
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:320
-msgid "Make:"
-msgstr "Make:"
+msgid "Brand:"
+msgstr ""
 
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:322
 msgid "Model:"
@@ -8544,9 +8636,12 @@ msgid "No Lens Filter"
 msgstr "Không lọc kính"
 
 #: imageplugins/coreplugin/imageeffect_bwsepia.cpp:352
+#, fuzzy
+#| msgid ""
+#| "<b>No Lens Filter</b>:<p>Do not apply a lens filter to render the picture."
+#| "</p>"
 msgid ""
-"<b>No Lens Filter</b>:<p>Do not apply a lens filter to render the picture.</"
-"p>"
+"<b>No Lens Filter</b>:<p>Do not apply a lens filter to render the image.</p>"
 msgstr "<b>Không lọc kính</b>:<p>đừng áp dụng bộ lọc kính để vẽ ảnh.</p>"
 
 #: imageplugins/coreplugin/imageeffect_bwsepia.cpp:356
@@ -9568,7 +9663,9 @@ msgstr ""
 "</p>\n"
 
 #: utilities/batch/batchsyncmetadata.cpp:118
-msgid "Sync pictures Metadata with database. Please wait..."
+#, fuzzy
+#| msgid "Sync pictures Metadata with database. Please wait..."
+msgid "Synchonize images Metadata with database. Please wait..."
 msgstr "Đang đồng bộ hoá siêu dữ liệu của ảnh với cơ sở dữ liệu. Hãy đợi..."
 
 #: utilities/batch/batchthumbsgenerator.cpp:86
@@ -9603,11 +9700,16 @@ msgid "&Close"
 msgstr "Đón&g"
 
 #: utilities/batch/batchalbumssyncmetadata.cpp:80
-msgid "Sync All Pictures Metadata"
+#, fuzzy
+#| msgid "Sync All Pictures Metadata"
+msgid "Sync All Images Metadata"
 msgstr "Đồng bộ hoá siêu dữ liệu của mọi ảnh"
 
 #: utilities/batch/batchalbumssyncmetadata.cpp:81
-msgid "<b>Sync all pictures metadata with digiKam database. Please wait...</b>"
+#, fuzzy
+#| msgid ""
+#| "<b>Sync all pictures metadata with digiKam database. Please wait...</b>"
+msgid "<b>Sync all images metadata with digiKam database. Please wait...</b>"
 msgstr ""
 "<b>Đang đồng bộ hoá siêu dữ liệu của mọi ảnh với cơ sở dữ liệu digiKam. Hãy "
 "đợi...</b>"
@@ -9617,7 +9719,9 @@ msgid "Parsing all albums"
 msgstr "Đang phân tách mọi tập ảnh"
 
 #: utilities/batch/batchalbumssyncmetadata.cpp:113
-msgid "<b>Sync all pictures metadata with digiKam database done</b>"
+#, fuzzy
+#| msgid "<b>Sync all pictures metadata with digiKam database done</b>"
+msgid "<b>Sync all images metadata with digiKam database done</b>"
 msgstr ""
 "<b>Tiến trình đồng bộ hoá siêu dữ liệu của mọi ảnh với cơ sở dữ liệu digiKam "
 "đã chạy xong</b>"
@@ -9970,9 +10074,14 @@ msgid "Credit:"
 msgstr "Công trạng:"
 
 #: utilities/setup/setupidentity.cpp:116
+#, fuzzy
+#| msgid ""
+#| "<p>Set the default provider identification of the picture, not "
+#| "necessarily the owner/creator. This field is limited to 32 ASCII "
+#| "characters."
 msgid ""
-"<p>Set the default provider identification of the picture, not necessarily "
-"the owner/creator. This field is limited to 32 ASCII characters."
+"<p>Set the default provider identification of the image, not necessarily the "
+"owner/creator. This field is limited to 32 ASCII characters."
 msgstr ""
 "<p>Ở đây hãy đặt sự giống hệt nhà cung cấp mặc định của ảnh, không nhất "
 "thiết là người sở hữu/tạo nó. Trường này bị hạn chế thành 32 ký tự ASCII."
@@ -9982,9 +10091,15 @@ msgid "Source:"
 msgstr "Nguồn:"
 
 #: utilities/setup/setupidentity.cpp:125
+#, fuzzy
+#| msgid ""
+#| "<p>Set the default original owner identification of the intellectual "
+#| "content of the picture. This could be an agency, a member of an agency or "
+#| "an individual photographer name. This field is limited to 32 ASCII "
+#| "characters."
 msgid ""
 "<p>Set the default original owner identification of the intellectual content "
-"of the picture. This could be an agency, a member of an agency or an "
+"of the image. This could be an agency, a member of an agency or an "
 "individual photographer name. This field is limited to 32 ASCII characters."
 msgstr ""
 "<p>Ở đây hãy đặt sự giống hệt của người sở hữu gốc mặc định của nội dung trí "
@@ -9996,9 +10111,13 @@ msgid "Copyright:"
 msgstr "Tác quyền:"
 
 #: utilities/setup/setupidentity.cpp:135
+#, fuzzy
+#| msgid ""
+#| "<p>Set the default copyright notice of the pictures. This field is "
+#| "limited to 128 ASCII characters."
 msgid ""
-"<p>Set the default copyright notice of the pictures. This field is limited "
-"to 128 ASCII characters."
+"<p>Set the default copyright notice of the images. This field is limited to "
+"128 ASCII characters."
 msgstr ""
 "<p>Ở đây hãy đặt thông báo tác quyền mặc định của ảnh. Trường này bị hạn chế "
 "thành 128 ký tự ASCII."
@@ -10280,8 +10399,10 @@ msgid "Show ima&ge dimensions (warning: slow)"
 msgstr "Hiện các chiề&u ảnh (cảnh báo : chậm)"
 
 #: utilities/setup/setupgeneral.cpp:159
-msgid ""
-"<p>Set this option to show picture size in pixels below image thumbnail."
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option to show picture size in pixels below image thumbnail."
+msgid "<p>Set this option to show image size in pixels below image thumbnail."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị kích cỡ của ảnh bên dưới ảnh mẫu của ảnh."
 
@@ -10532,21 +10653,49 @@ msgid "Rendering Intents:"
 msgstr "Ý định vẽ:"
 
 #: utilities/setup/setupicc.cpp:344
+#, fuzzy
+#| msgid ""
+#| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
+#| "be compressed or expanded to fill the gamut of the destination device, so "
+#| "that gray balance is preserved but colorimetric accuracy may not be "
+#| "preserved.</p><p>In other words, if certain colors in an image fall "
+#| "outside of the range of colors that the output device can render, the "
+#| "picture intent will cause all the colors in the image to be adjusted so "
+#| "that the every color in the image falls within the range that can be "
+#| "rendered and so that the relationship between colors is preserved as much "
+#| "as possible.</p><p>This intent is most suitable for display of "
+#| "photographs and images, and is the default intent.</p></"
+#| "li><li><p><b>Absolute Colorimetric intent</b> causes any colors that fall "
+#| "outside the range that the output device can render are adjusted to the "
+#| "closest color that can be rendered, while all other colors are left "
+#| "unchanged.</p><p>This intent preserves the white point and is most "
+#| "suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
+#| "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
+#| "colors that fall outside the range that the output device can render are "
+#| "adjusted to the closest color that can be rendered, while all other "
+#| "colors are left unchanged. Proof intent does not preserve the white point."
+#| "</p></li><li><p><b>Saturation intent</b> preserves the saturation of "
+#| "colors in the image at the possible expense of hue and lightness.</"
+#| "p><p>Implementation of this intent remains somewhat problematic, and the "
+#| "ICC is still working on methods to achieve the desired effects.</"
+#| "p><p>This intent is most suitable for business graphics such as charts, "
+#| "where it is more important that the colors be vivid and contrast well "
+#| "with each other rather than a specific color.</p></li></ul>"
 msgid ""
 "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
 "compressed or expanded to fill the gamut of the destination device, so that "
 "gray balance is preserved but colorimetric accuracy may not be preserved.</"
 "p><p>In other words, if certain colors in an image fall outside of the range "
-"of colors that the output device can render, the picture intent will cause "
-"all the colors in the image to be adjusted so that the every color in the "
-"image falls within the range that can be rendered and so that the "
-"relationship between colors is preserved as much as possible.</p><p>This "
-"intent is most suitable for display of photographs and images, and is the "
-"default intent.</p></li><li><p><b>Absolute Colorimetric intent</b> causes "
-"any colors that fall outside the range that the output device can render are "
-"adjusted to the closest color that can be rendered, while all other colors "
-"are left unchanged.</p><p>This intent preserves the white point and is most "
-"suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
+"of colors that the output device can render, the image intent will cause all "
+"the colors in the image to be adjusted so that the every color in the image "
+"falls within the range that can be rendered and so that the relationship "
+"between colors is preserved as much as possible.</p><p>This intent is most "
+"suitable for display of photographs and images, and is the default intent.</"
+"p></li><li><p><b>Absolute Colorimetric intent</b> causes any colors that "
+"fall outside the range that the output device can render are adjusted to the "
+"closest color that can be rendered, while all other colors are left "
+"unchanged.</p><p>This intent preserves the white point and is most suitable "
+"for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
 "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
 "colors that fall outside the range that the output device can render are "
 "adjusted to the closest color that can be rendered, while all other colors "
@@ -10645,27 +10794,39 @@ msgid "<p>Set this option to display the album name."
 msgstr "<p>Bật tùy chọn này để hiển thị tên của tập ảnh."
 
 #: utilities/setup/setuptooltip.cpp:191
-msgid "Show picture comments"
+#, fuzzy
+#| msgid "Show picture comments"
+msgid "Show image comments"
 msgstr "Hiện chú thích về ảnh"
 
 #: utilities/setup/setuptooltip.cpp:192
-msgid "<p>Set this option to display picture comments."
+#, fuzzy
+#| msgid "<p>Set this option to display picture comments."
+msgid "<p>Set this option to display image comments."
 msgstr "<p>Bật tùy chọn này để hiển thị chú thích về ảnh."
 
 #: utilities/setup/setuptooltip.cpp:194
-msgid "Show picture tags"
-msgstr "Hiện thẻ của ảnh"
+#, fuzzy
+#| msgid "Show image type"
+msgid "Show image tags"
+msgstr "Hiện kiểu ảnh"
 
 #: utilities/setup/setuptooltip.cpp:195
-msgid "<p>Set this option to display picture tags."
-msgstr "<p>Bật tùy chọn này để hiển thị các thẻ của ảnh."
+#, fuzzy
+#| msgid "<p>Set this option to display image type."
+msgid "<p>Set this option to display image tags."
+msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
 
 #: utilities/setup/setuptooltip.cpp:197
-msgid "Show picture rating"
+#, fuzzy
+#| msgid "Show picture rating"
+msgid "Show image rating"
 msgstr "Hiện đánh giá ảnh"
 
 #: utilities/setup/setuptooltip.cpp:198
-msgid "<p>Set this option to display the picture rating."
+#, fuzzy
+#| msgid "<p>Set this option to display the picture rating."
+msgid "<p>Set this option to display the image rating."
 msgstr "<p>Bật tùy chọn này để hiển thị đánh giá của ảnh."
 
 #: utilities/setup/cameraselection.cpp:101
@@ -11027,11 +11188,15 @@ msgid ""
 msgstr "Nhúng chỉ hồ sơ vùng làm việc màu vào ảnh, cũng không thay đổi ảnh."
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:83
-msgid "Original Picture:"
-msgstr "Ảnh gốc:"
+#, fuzzy
+#| msgid "Original"
+msgid "Original Image:"
+msgstr "Gốc"
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:85
-msgid "Corrected Picture:"
+#, fuzzy
+#| msgid "Corrected Picture:"
+msgid "Corrected Image:"
 msgstr "Ảnh được sửa chữa:"
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:89
@@ -11043,16 +11208,25 @@ msgid "Embedded color profile:"
 msgstr "Hồ sơ màu nhúng:"
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:99
+#, fuzzy
+#| msgid ""
+#| "<p>This picture has not been assigned any color profile.</p><p>Do you "
+#| "want to convert it to your workspace color profile?</p>"
 msgid ""
-"<p>This picture has not been assigned any color profile.</p><p>Do you want "
-"to convert it to your workspace color profile?</p>"
+"<p>This image has not been assigned any color profile.</p><p>Do you want to "
+"convert it to your workspace color profile?</p>"
 msgstr ""
 "<p>Ảnh này chưa có hồ sơ màu được gán.</p><p>Bạn có muốn chuyển đổi nó sang "
 "hồ sơ màu vùng làm việc của bạn không?</p>"
 
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:109
+#, fuzzy
+#| msgid ""
+#| "<p>This picture has been assigned a color profile that does not match "
+#| "with your default workspace color profile.</p><p>Do you want to convert "
+#| "it to your workspace color profile?</p>"
 msgid ""
-"<p>This picture has been assigned a color profile that does not match with "
+"<p>This image has been assigned a color profile that does not match with "
 "your default workspace color profile.</p><p>Do you want to convert it to "
 "your workspace color profile?</p>"
 msgstr ""
@@ -11644,8 +11818,12 @@ msgid "%1 - Select Camera Folder"
 msgstr "%1 — Chọn thư mục máy ảnh"
 
 #: utilities/cameragui/camerafolderdialog.cpp:73
+#, fuzzy
+#| msgid ""
+#| "<p>Please select the camera folder where you want to upload the pictures."
+#| "</p>"
 msgid ""
-"<p>Please select the camera folder where you want to upload the pictures.</p>"
+"<p>Please select the camera folder where you want to upload the images.</p>"
 msgstr "<p>Hãy chọn thư mục máy ảnh lên đó bạn muốn tải các ảnh.</p>"
 
 #: utilities/cameragui/renamecustomizer.cpp:145
@@ -11788,8 +11966,12 @@ msgid "Start Index:"
 msgstr "Chỉ mục bắt đầu :"
 
 #: utilities/cameragui/renamecustomizer.cpp:235
+#, fuzzy
+#| msgid ""
+#| "<p>Set the starting index value used to rename picture files with a "
+#| "sequence number."
 msgid ""
-"<p>Set the starting index value used to rename picture files with a sequence "
+"<p>Set the starting index value used to rename file files with a sequence "
 "number."
 msgstr ""
 "<p>Đặt giá trị của chỉ mục bắt đầu dùng để thay đổi tên của tập tin ảnh bằng "
@@ -11856,7 +12038,7 @@ msgstr "Thiết lập..."
 #: utilities/cameragui/cameracontroller.cpp:356
 #, fuzzy
 #| msgid "Caricature"
-msgid "Capture picture..."
+msgid "Capture image..."
 msgstr "Vẽ biếm hoạ"
 
 #: utilities/cameragui/cameracontroller.cpp:364
@@ -11981,7 +12163,9 @@ msgid "Camera \"%1\""
 msgstr "Máy ảnh « %1 »"
 
 #: utilities/cameragui/cameraui.cpp:184
-msgid "<p>Set how digiKam will rename picture files as they are downloaded."
+#, fuzzy
+#| msgid "<p>Set how digiKam will rename picture files as they are downloaded."
+msgid "<p>Set how digiKam will rename file files as they are downloaded."
 msgstr "<p>Đặt phương pháp digiKam thay đổi tên của tập tin một khi tải về"
 
 #: utilities/cameragui/cameraui.cpp:187
@@ -12351,9 +12535,12 @@ msgstr ""
 "« %1 »"
 
 #: utilities/slideshow/slideshow.cpp:438
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Cannot display picture\n"
+#| "\"%1\""
 msgid ""
-"Cannot display picture\n"
+"Cannot display image\n"
 "\"%1\""
 msgstr ""
 "Không thể hiển thị ảnh\n"
@@ -12366,6 +12553,22 @@ msgstr "Chiếu ảnh đã chạy xong."
 #: utilities/slideshow/slideshow.cpp:456
 msgid "Click To Exit..."
 msgstr "Nhấn để thoát..."
+
+#~ msgid "Picture Information"
+#~ msgstr "Thông tin ảnh"
+
+# Name: don't translate/Tên: đừng dịch
+#~ msgid "Make:"
+#~ msgstr "Make:"
+
+#~ msgid "Show picture tags"
+#~ msgstr "Hiện thẻ của ảnh"
+
+#~ msgid "<p>Set this option to display picture tags."
+#~ msgstr "<p>Bật tùy chọn này để hiển thị các thẻ của ảnh."
+
+#~ msgid "Original Picture:"
+#~ msgstr "Ảnh gốc:"
 
 #~ msgid ""
 #~ "The album library has not been set correctly.\n"
@@ -12389,9 +12592,6 @@ msgstr "Nhấn để thoát..."
 
 #~ msgid "&Camera"
 #~ msgstr "&Máy ảnh"
-
-#~ msgid "Camera Information"
-#~ msgstr "Thông tin máy ảnh"
 
 #~ msgid "Camera Summary"
 #~ msgstr "Tóm tắt máy ảnh"

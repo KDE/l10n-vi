@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kbattleship.pot \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-24 05:31+0200\n"
+"POT-Creation-Date: 2007-09-27 05:41+0200\n"
 "PO-Revision-Date: 2002-09-01 08:53+0700\n"
 "Last-Translator: Nguyễn Ngọc Tuấn <scorpionfirevn@operamail.com>\n"
 "Language-Team: Vietnamese <KDE-i18n-VN@yahoogroups.com>\n"
@@ -44,111 +44,131 @@ msgstr ""
 msgid "Connect to network game"
 msgstr "Kết nối tới máy chủ"
 
-#: networkdialog.cpp:34
-#, fuzzy
+#. i18n: tag string
+#. i18n: file preferences.ui line 25
+#: networkdialog.cpp:50 rc.cpp:32
+#, fuzzy, no-c-format
 msgid "&Nickname:"
 msgstr "Biệt danh:"
 
-#: networkdialog.cpp:47
+#: networkdialog.cpp:63
 msgid "&Hostname:"
 msgstr ""
 
-#: networkdialog.cpp:63
+#: networkdialog.cpp:79
 #, fuzzy
 msgid "&Port:"
 msgstr "Cổng:"
 
-#: playfield.cpp:67
+#: networkdialog.cpp:141
+#, fuzzy
+msgid "Connecting to remote host..."
+msgstr "Kết nối bị từ chối bởi người điều hành trận đấu khác!"
+
+#: networkdialog.cpp:148
+#, fuzzy
+#| msgid "Waiting for an answer..."
+msgid "Waiting for an incoming connection..."
+msgstr "Đang đợi trả lời..."
+
+#: networkdialog.cpp:169
+#, fuzzy
+msgid "Could not connect to host"
+msgstr "Không thể kết nối tới máy chủ!"
+
+#: playfield.cpp:69
 msgid "Shots"
 msgstr "Số lần bắn"
 
-#: playfield.cpp:68
+#: playfield.cpp:70
 msgid "Hits"
 msgstr "Trúng"
 
-#: playfield.cpp:69
+#: playfield.cpp:71
 msgid "Misses"
 msgstr ""
 
-#: playfield.cpp:147
+#: playfield.cpp:149
 msgid "You win!"
 msgstr ""
 
-#: playfield.cpp:150
+#: playfield.cpp:152
 #, fuzzy
 msgid "You lose."
 msgstr "Bạn thua rồi :("
 
 #. i18n: tag label
 #. i18n: file kbattleship.kcfg line 9
-#: rc.cpp:3
+#: rc.cpp:4
+#, no-c-format
 msgid "Default hostname for multiplayer games."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kbattleship.kcfg line 13
-#: rc.cpp:6
+#: rc.cpp:8
+#, no-c-format
 msgid "Default port for multiplayer games."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kbattleship.kcfg line 19
-#: rc.cpp:9
+#: rc.cpp:12
+#, no-c-format
 msgid "User nickname."
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file kbattleship.kcfg line 22
+#: rc.cpp:16
+#, no-c-format
+msgid "Wheter sound effects should be played."
 msgstr ""
 
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 6
-#: rc.cpp:12
-#, fuzzy
+#: rc.cpp:20
+#, fuzzy, no-c-format
 msgid "&Game"
 msgstr "Tên"
 
 #. i18n: tag text
 #. i18n: file kbattleshipui.rc line 10
-#: rc.cpp:15
+#: rc.cpp:24
+#, no-c-format
 msgid "&Settings"
 msgstr ""
 
-#: rc.cpp:16
+#. i18n: tag string
+#. i18n: file preferences.ui line 16
+#: rc.cpp:28
+#, no-c-format
+msgid "Enable &sounds"
+msgstr ""
+
+#: rc.cpp:33
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr ""
 "Tên người dịch:\n"
 "Nguyễn Ngọc Tuấn"
 
-#: rc.cpp:17
+#: rc.cpp:34
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "Email của người dịch\n"
 "scorpionfirevn@operamail.com"
 
-#: kwelcomescreen/test.cpp:32
-msgid "KWelcomeScreenTest"
-msgstr ""
-
-#: kwelcomescreen/test.cpp:33
-msgid "Test class for KWelcomeScreen"
-msgstr ""
-
-#: kwelcomescreen/test.cpp:34
-msgid "(c) 2007, Riccardo Iaconelli"
-msgstr ""
-
-#: kwelcomescreen/test.cpp:35
-msgid "Riccardo Iaconelli"
-msgstr ""
-
-#: kwelcomescreen/test.cpp:41
-msgid "Fill in the fildes to speed up testing. Just for development purpose."
-msgstr ""
-
 #: controller.cpp:47
 #, fuzzy
 #| msgid "Computer Player"
 msgid "Computer"
 msgstr "Máy chơi"
+
+#: mainwindow.cpp:77
+msgid "Main page"
+msgstr ""
 
 #: playerentity.cpp:86
 #, fuzzy
@@ -275,9 +295,6 @@ msgstr ""
 #~ msgid "Do you want to ask the server restarting the game?"
 #~ msgstr "Bạn có yêu cầu máy chủ bắt đầu chơi lại không?"
 
-#~ msgid "Waiting for an answer..."
-#~ msgstr "Đang đợi trả lời..."
-
 #~ msgid "Loading Start-Server dialog..."
 #~ msgstr "Đang nạp hộp thoại Kết nối máy chủ.."
 
@@ -352,10 +369,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "You can shoot now."
 #~ msgstr "Bây giờ bạn có thể bắn"
-
-#, fuzzy
-#~ msgid "Connection refused by other host."
-#~ msgstr "Kết nối bị từ chối bởi người điều hành trận đấu khác!"
 
 #, fuzzy
 #~ msgid "Could not lookup host."
@@ -481,7 +494,3 @@ msgstr ""
 
 #~ msgid "S&ingle game"
 #~ msgstr "C&hơi đơn"
-
-#, fuzzy
-#~ msgid "Couldn't connect to server."
-#~ msgstr "Không thể kết nối tới máy chủ!"

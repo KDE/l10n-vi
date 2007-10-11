@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-10 08:47+0200\n"
+"POT-Creation-Date: 2007-10-11 10:43+0200\n"
 "PO-Revision-Date: 2007-07-06 17:14+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -539,6 +539,10 @@ msgstr "Không tìm thấy trình điều khiển cơ sở dữ liệu SQL nào.
 #: SQLDB/SQLSettingsWidget.cpp:303
 msgid "Invalid driver."
 msgstr "Trình điều khiển không hợp lệ."
+
+#: SQLDB/DatabaseInitialization.cpp:120
+msgid "Database schema is incompatible."
+msgstr "Giản đồ cơ sở dữ liệu không tương thích."
 
 #: XMLDB/Database.cpp:439
 msgid ""
@@ -1508,38 +1512,38 @@ msgstr "Thư mục phải là thư mục con của %1"
 msgid "Match Categories"
 msgstr "Khớp phân loại"
 
-#: ImportExport/Import.cpp:418
+#: ImportExport/Import.cpp:415
 msgid "Directory %1 does not exists. Should it be created?"
 msgstr "Thư mục %1 không tồn tại. Có nên tạo nó không?"
 
-#: ImportExport/Import.cpp:422
+#: ImportExport/Import.cpp:419
 #, c-format
 msgid "Error creating directory %1"
 msgstr "Gặp lỗi khi tạo thư mục %1"
 
-#: ImportExport/Import.cpp:471
+#: ImportExport/Import.cpp:457 ImportExport/Import.cpp:497
+msgid "Copying Images"
+msgstr "Đang sao chép ảnh"
+
+#: ImportExport/Import.cpp:474
 #, c-format
 msgid "Error when writing image %s"
 msgstr "Găp lỗi khi ghi ảnh %s"
 
-#: ImportExport/Import.cpp:484
-msgid "Copying Images"
-msgstr "Đang sao chép ảnh"
-
-#: ImportExport/Import.cpp:526
+#: ImportExport/Import.cpp:539
 msgid "Can't copy file from any of the following locations:"
 msgstr ""
 
-#: ImportExport/Import.cpp:527
+#: ImportExport/Import.cpp:540
 msgid "Continue without Asking"
 msgstr ""
 
-#: ImportExport/Import.cpp:593
+#: ImportExport/Import.cpp:607
 #, fuzzy
 msgid "Updating Database"
 msgstr "Đang nạp cơ sở dữ liệu"
 
-#: ImportExport/Import.cpp:645
+#: ImportExport/Import.cpp:659
 msgid ""
 "Thumbnail item in export file was not a directory, this indicates that the file "
 "is broken."
@@ -1547,19 +1551,19 @@ msgstr ""
 "Mục ảnh mẫu trong tập tin xuất khẩu không phải là thư mục thì ngụ ý tập tin bị "
 "hỏng."
 
-#: ImportExport/Import.cpp:655
+#: ImportExport/Import.cpp:669
 #, c-format
 msgid "No thumbnail existed in export file for %1"
 msgstr "Không có ảnh mẫu tồn tại trong tập tin xuất khẩu cho %1"
 
-#: ImportExport/Import.cpp:685
+#: ImportExport/Import.cpp:699
 msgid ""
 "export file did not contain a Images subdirectory, this indicates that the file "
 "is broken"
 msgstr ""
 "tập tin xuất khẩu không chứa thư mục con ảnh thì ngụ ý tập tin bị hỏng."
 
-#: ImportExport/Import.cpp:690
+#: ImportExport/Import.cpp:704
 msgid ""
 "Images item in export file was not a directory, this indicates that the file is "
 "broken"
@@ -1567,7 +1571,7 @@ msgstr ""
 "Mục ảnh trong tập tin xuất khẩu không phải là thư mục thì ngụ ý tập tin bị "
 "hỏng."
 
-#: ImportExport/Import.cpp:698
+#: ImportExport/Import.cpp:712
 #, c-format
 msgid "No image existed in export file for %1"
 msgstr "Không có ảnh tồn tại trong tập tin xuất khẩu cho %1"
@@ -3690,12 +3694,12 @@ msgstr ""
 "<p>Thực sự hiệu lực mọi hộp thông điệp khi bạn đã đánh dấu trong hộp ở cạnh « "
 "Đừng hiện lần nữa » không?</p>"
 
-#: MainWindow/Window.cpp:1437
+#: MainWindow/Window.cpp:1438
 msgid "Database conversion from SQL database is not yet supported."
 msgstr ""
 "Chưa hỗ trợ khả năng chuyển đổi cơ sở dữ liệu từ cơ sở dữ liệu kiểu SQL."
 
-#: MainWindow/Window.cpp:1444
+#: MainWindow/Window.cpp:1445
 msgid ""
 "You should set SQL database settings before the conversion. Do you want to do "
 "this now?"
@@ -3703,23 +3707,23 @@ msgstr ""
 "Bạn nên thiết lập cơ sở dữ liệu SQL trước khi chuyển đổi. Bạn có muốn làm như "
 "thế ngay bây giờ không?"
 
-#: MainWindow/Window.cpp:1465
+#: MainWindow/Window.cpp:1466
 msgid "Converting database"
 msgstr "Đang chuyển đổi cơ sở dữ liệu"
 
-#: MainWindow/Window.cpp:1467
+#: MainWindow/Window.cpp:1468
 msgid "Converting database to SQL."
 msgstr "Đang chuyển đổi cơ sở dữ liệu sang SQL..."
 
-#: MainWindow/Window.cpp:1468
+#: MainWindow/Window.cpp:1469
 msgid "Please wait."
 msgstr "Hãy đợi."
 
-#: MainWindow/Window.cpp:1477
+#: MainWindow/Window.cpp:1478
 msgid "Database conversion is ready."
 msgstr "Việc chuyển đổi cơ sở dữ liệu sẵn sàng."
 
-#: MainWindow/Window.cpp:1480
+#: MainWindow/Window.cpp:1481
 #, c-format
 msgid ""
 "Database conversion failed, because following error occurred:\n"
@@ -3728,7 +3732,7 @@ msgstr ""
 "Việc chuyển đổi cơ sở dữ liệu bị lỗi do:\n"
 "%1"
 
-#: MainWindow/Window.cpp:1554
+#: MainWindow/Window.cpp:1555
 msgid ""
 "<p>To get a quick start with KPhotoAlbum, it might be worthwhile to spent 10 "
 "minutes watching a few introduction videos.</p>"
@@ -3736,19 +3740,19 @@ msgstr ""
 "<p>Để bắt đầu nhanh khi sử dụng trình KPhotoAlbum, hãy mất 10 phút khi xem ảnh "
 "động giới thiệu.</p>"
 
-#: MainWindow/Window.cpp:1557
+#: MainWindow/Window.cpp:1558
 msgid "KPhotoAlbum quick start"
 msgstr "Bắt đầu nhanh KPhotoAlbum"
 
-#: MainWindow/Window.cpp:1558
+#: MainWindow/Window.cpp:1559
 msgid "Show Videos"
 msgstr "Hiện ảnh động"
 
-#: MainWindow/Window.cpp:1558
+#: MainWindow/Window.cpp:1559
 msgid "Don't Show Videos"
 msgstr "Đừng hiện ảnh động"
 
-#: MainWindow/Window.cpp:1568
+#: MainWindow/Window.cpp:1569
 msgid ""
 "<p>KPhotoAlbum does not seem to be build with support for all its features. The "
 "following is a list indicating to you what you may miss:"
@@ -3762,7 +3766,7 @@ msgstr ""
 "<p>Để xem chi tiết về cách giải quyết vấn đề này, hãy chọn <b>Trợ giúp > "
 "Trạng thái tính năng KPhotoAlbum</b> trong trình đơn.</p>"
 
-#: MainWindow/Window.cpp:1573
+#: MainWindow/Window.cpp:1574
 msgid "Feature Check"
 msgstr "Kiểm tra tính năng"
 
@@ -4001,9 +4005,6 @@ msgstr "Đang tạo ra các ảnh mẫu"
 
 #~ msgid "Could not open file %1."
 #~ msgstr "Không thể mở tập tin %1."
-
-#~ msgid "Database schema is incompatible."
-#~ msgstr "Giản đồ cơ sở dữ liệu không tương thích."
 
 #~ msgid "Database version is incompatible."
 #~ msgstr "Phiên bản cơ sở dữ liệu không tương thích."

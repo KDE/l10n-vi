@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-13 08:20+0200\n"
+"POT-Creation-Date: 2007-10-14 08:21+0200\n"
 "PO-Revision-Date: 2007-07-06 17:14+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -484,15 +484,15 @@ msgstr ""
 msgid "EXIF Information"
 msgstr "Thông tin EXIF"
 
-#: Exif/InfoDialog.cpp:61
+#: Exif/InfoDialog.cpp:66
 msgid "Current EXIF Label Search: "
 msgstr "Tìm nhãn EXIF hiện thời: "
 
-#: Exif/InfoDialog.cpp:73
-msgid "IPTC character set:"
+#: Exif/InfoDialog.cpp:78
+msgid "EXIF/IPTC character set:"
 msgstr ""
 
-#: Exif/InfoDialog.cpp:88
+#: Exif/InfoDialog.cpp:93
 msgid "<No Search>"
 msgstr "<Không tìm>"
 
@@ -683,8 +683,8 @@ msgstr "Không tìm thấy tập tin thiết lập mặc định"
 msgid "Unable to open '%1' for reading"
 msgstr "Không thể mở « %1 » để đọc"
 
-#: Utilities/Util.cpp:224 Utilities/Util.cpp:238 Utilities/Util.cpp:256
-#: Utilities/Util.cpp:279 XMLDB/FileReader.cpp:352
+#: Utilities/Util.cpp:230 Utilities/Util.cpp:244 Utilities/Util.cpp:262
+#: Utilities/Util.cpp:285 XMLDB/FileReader.cpp:352
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy minh hoạ"
 
@@ -2398,24 +2398,6 @@ msgstr "Thông tin EXIF cần hiện trong hộp thoại EXIF"
 msgid "Character set for image metadata:"
 msgstr ""
 
-#: Settings/SettingsDialog.cpp:1014
-#, fuzzy
-msgid "Local encoding"
-msgstr "Bảng mã văn bản:"
-
-#: Settings/SettingsDialog.cpp:1014 Utilities/Util.cpp:766
-msgid "UTF-8"
-msgstr ""
-
-#: Settings/SettingsDialog.cpp:1014 Utilities/Util.cpp:766
-#, fuzzy
-msgid "ISO 8859-2"
-msgstr "ISO A5"
-
-#: Settings/SettingsDialog.cpp:1014 Utilities/Util.cpp:766
-msgid "CP 1250"
-msgstr ""
-
 #: Settings/SettingsDialog.cpp:1015
 msgid ""
 "<p>Which character set to use for reading/writing of EXIF and IPTC data</p>"
@@ -2615,67 +2597,68 @@ msgstr "Khởi chạy trên toàn màn hình"
 msgid "Size:"
 msgstr "Cỡ :"
 
-#: Utilities/Util.cpp:79
+#: Utilities/Util.cpp:62
+#, fuzzy
+msgid "Local encoding"
+msgstr "Bảng mã văn bản:"
+
+#: Utilities/Util.cpp:85
 msgid "<b>File Name: </b> "
 msgstr "<b>Tên tập tin:</b> "
 
-#: Utilities/Util.cpp:85
+#: Utilities/Util.cpp:91
 msgid "<b>Date: </b> "
 msgstr "<b>Ngày:</b> "
 
-#: Utilities/Util.cpp:94
+#: Utilities/Util.cpp:100
 msgid "<b>Image Size: </b> "
 msgstr "<b>Cỡ ảnh:</b> "
 
-#: Utilities/Util.cpp:95
+#: Utilities/Util.cpp:101
 msgid "x"
 msgstr "×"
 
-#: Utilities/Util.cpp:100
+#: Utilities/Util.cpp:106
 msgid ""
 "_: Short for Mega Pixels\n"
 "MP"
 msgstr "MP"
 
-#: Utilities/Util.cpp:137
+#: Utilities/Util.cpp:143
 #, fuzzy
 msgid "<b>Label: </b> "
 msgstr "<b>Ngày:</b> "
 
-#: Utilities/Util.cpp:142
+#: Utilities/Util.cpp:148
 msgid "<b>Description: </b> "
 msgstr "<b>Mô tả: </b> "
 
-#: Utilities/Util.cpp:190
+#: Utilities/Util.cpp:196
 msgid ""
 "Backup file '%1' exists and is newer than '%2'. Should I use the backup file?"
 msgstr ""
 "Tập tin sao lưu « %1 » đã có : nó mới hơn « %2 ». Trình này nên dùng tập tin "
 "sao lưu này không?"
 
-#: Utilities/Util.cpp:193
+#: Utilities/Util.cpp:199
 msgid "Found Backup File"
 msgstr "Tìm thấy tập tin sao lưu"
 
-#: Utilities/Util.cpp:224
+#: Utilities/Util.cpp:230
 msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
-#: Utilities/Util.cpp:238 Utilities/Util.cpp:279
+#: Utilities/Util.cpp:244 Utilities/Util.cpp:285
 msgid "Unable to create directory '%1' needed for demo."
 msgstr "Không thể tạo thư mục %1 cần thiết để minh hoạ."
 
-#: Utilities/Util.cpp:256
+#: Utilities/Util.cpp:262
 msgid "Unable to open '%1' for writing."
 msgstr "Không thể mở « %1 » để ghi."
 
-#: Utilities/Util.cpp:371
+#: Utilities/Util.cpp:377
 msgid "<p>Unable to find file %1</p>"
 msgstr "<p>Không tìm thấy tập tin %1</p>"
-
-#: Utilities/Util.cpp:766
-msgid "Local 8-bit"
-msgstr ""
 
 #: AnnotationDialog/ListSelect.cpp:271
 msgid "No Item Selected"
@@ -3969,6 +3952,10 @@ msgstr "Sắp xếp lại ảnh mẫu"
 #: ThumbnailView/ThumbnailBuilder.cpp:37
 msgid "Generating thumbnails"
 msgstr "Đang tạo ra các ảnh mẫu"
+
+#, fuzzy
+#~ msgid "ISO 8859-2"
+#~ msgstr "ISO A5"
 
 #~ msgid "Use modification date if EXIF not found"
 #~ msgstr "Dùng ngày sửa đổi nếu không tìm EXIF"

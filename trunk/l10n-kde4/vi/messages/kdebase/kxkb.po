@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kxkb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-11 05:40+0200\n"
+"POT-Creation-Date: 2007-10-17 05:38+0200\n"
 "PO-Revision-Date: 2007-06-24 14:17+0930\n"
 "Last-Translator: Trần Thế Trung <tttrung@hotmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,45 +16,57 @@ msgstr ""
 "X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: kcmlayout.cpp:153 kcmlayout.cpp:212
+#: kcmlayout.cpp:113 kcmlayout.cpp:172
 #, fuzzy
 #| msgid "Layout"
 msgid "Layout Name"
 msgstr "Bố trí"
 
-#: kcmlayout.cpp:153 kcmlayout.cpp:212
+#: kcmlayout.cpp:113 kcmlayout.cpp:172 kcmlayout.cpp:352
 msgid "Map"
 msgstr ""
 
-#: kcmlayout.cpp:212
+#: kcmlayout.cpp:172
 msgid "Variant"
 msgstr "Biến thế"
 
-#: kcmlayout.cpp:212
-msgid "Display Name"
+#: kcmlayout.cpp:172
+msgid "Label"
+msgstr "Nhãn"
+
+#: kcmlayout.cpp:351
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout name"
+msgstr "Bố trí"
+
+#: kcmlayout.cpp:567
+msgid "Defined"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 298
+#. i18n: file kcmlayoutwidget.ui line 620
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 601
-#: kcmlayout.cpp:648 rc.cpp:50 rc.cpp:134
-msgid "Options"
-msgstr "Tùy chọn"
+#. i18n: file kcmlayoutwidget.ui line 672
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 711
+#: kcmlayout.cpp:569 kcmlayout.cpp:586 rc.cpp:104 rc.cpp:116 rc.cpp:125
+msgid "Not defined"
+msgstr ""
 
-#: kcmlayout.cpp:669
-msgid "None"
-msgstr "Không có"
+#: kcmlayout.cpp:581 kxkbbindings.cpp:16
+msgid "Switch to Next Keyboard Layout"
+msgstr "Chuyển sang Bố trí Bàn phím Tiếp theo"
 
-#: kxkbapp.cpp:91
+#: kxkbapp.cpp:90
 msgid "A utility to switch keyboard maps"
 msgstr "Một công cụ để thay đổi bố trí bàn phím"
 
-#: kxkbapp.cpp:95
+#: kxkbapp.cpp:94
 msgid "KDE Keyboard Layout Switcher"
 msgstr "Bộ Chuyển đổi Bố trí Bàn phím KDE"
 
-#: kxkbapp.cpp:97
+#: kxkbapp.cpp:96
 msgid "Copyright (C) 2006-2007 Andriy Rysin"
 msgstr ""
 
@@ -62,8 +74,10 @@ msgstr ""
 msgid "Keyboard"
 msgstr "Bàn phím"
 
-#: kxkbbindings.cpp:16
-msgid "Switch to Next Keyboard Layout"
+#: kxkbcore.cpp:130 kxkbcore.cpp:131
+#, fuzzy
+#| msgid "Switch to Next Keyboard Layout"
+msgid "Switch keyboard layout"
 msgstr "Chuyển sang Bố trí Bàn phím Tiếp theo"
 
 #: kxkbwidget.cpp:56
@@ -86,14 +100,8 @@ msgid "Layout"
 msgstr "Bố trí"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 38
+#. i18n: file kcmlayoutwidget.ui line 44
 #: rc.cpp:6
-msgid "&Enable keyboard layouts"
-msgstr "&Bật bố trí bàn phím"
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 48
-#: rc.cpp:9
 msgid ""
 "<h1>Keyboard Layout</h1> Here you can choose your keyboard layout and model. "
 "The 'model' refers to the type of keyboard that is connected to your "
@@ -106,60 +114,58 @@ msgstr ""
 "tiếng Việt)."
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 60
-#: rc.cpp:12
-msgid "Keyboard &model:"
-msgstr "&Mô hình bàn phím:"
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 77
-#: rc.cpp:15
-msgid ""
-"Here you can choose a keyboard model. This setting is independent of your "
-"keyboard layout and refers to the \"hardware\" model, i.e. the way your "
-"keyboard is manufactured. Modern keyboards that come with your computer "
-"usually have two extra keys and are referred to as \"104-key\" models, which "
-"is probably what you want if you do not know what kind of keyboard you "
-"have.\n"
-msgstr ""
-"Ở đây bạn có thể chọn mô hình bàn phím. Thiết lập này riêng với bố trí bàn "
-"phím, chỉ đại diện mô hình « phần cứng », tức là cách chế tạo bàn phím. Bàn "
-"phím hiện tại thường có hai phím thêm thì được diễn tả như là mô hình « 104 "
-"phím », mà rất có thể thích hợp với như cầu của bạn.\n"
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 84
-#: rc.cpp:19
+#. i18n: file kcmlayoutwidget.ui line 59
+#: rc.cpp:9
 msgid "Available layouts:"
 msgstr "Bố trí sẵn sàng:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 91
-#: rc.cpp:22
+#. i18n: file kcmlayoutwidget.ui line 72
+#: rc.cpp:12
 msgid "Active layouts:"
 msgstr "Bố trí hoạt động:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 144
-#: rc.cpp:25
+#. i18n: file kcmlayoutwidget.ui line 126
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 760
+#: rc.cpp:15 rc.cpp:143
+msgid "Command:"
+msgstr "Lệnh:"
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 142
+#: rc.cpp:18
+msgid ""
+"This is the command which is executed when switching to the selected layout. "
+"It may help you if you want to debug layout switching, or if you want to "
+"switch layouts without the help of KDE."
+msgstr ""
+"Đây là lệnh được thực hiện khi chuyển đổi vào bố trí đã chọn. Nó có ích nếu "
+"bạn cần phải gỡ lỗi việc chuyển đổi bố trí, hoặc nếu bạn muốn tự chuyển đổi "
+"bố trí (không có KDE)."
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 189
+#: rc.cpp:21
 msgid "Add >>"
 msgstr "Thêm >>"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 151
-#: rc.cpp:28
+#. i18n: file kcmlayoutwidget.ui line 196
+#: rc.cpp:24
 msgid "<< Remove"
 msgstr "<< Bỏ"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 186
-#: rc.cpp:31
+#. i18n: file kcmlayoutwidget.ui line 241
+#: rc.cpp:27
 msgid "Layout variant:"
 msgstr "Biến thế bố trí:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 197
-#: rc.cpp:34
+#. i18n: file kcmlayoutwidget.ui line 252
+#: rc.cpp:30
 msgid ""
 "Here you can choose a variant of selected keyboard layout. Layout variants "
 "usually represent different key maps for the same language. For example, "
@@ -175,64 +181,86 @@ msgstr ""
 "Thường người dùng quen với chỉ một biến thế nên nhờ nó.\n"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 220
-#: rc.cpp:38
+#. i18n: file kcmlayoutwidget.ui line 287
+#: rc.cpp:34
 msgid "Label:"
 msgstr "Nhãn:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 256
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 586
-#: rc.cpp:41 rc.cpp:131
-msgid "Command:"
-msgstr "Lệnh:"
+#. i18n: file kcmlayoutwidget.ui line 344
+#: rc.cpp:37
+msgid "Keyboard &model:"
+msgstr "&Mô hình bàn phím:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 266
-#: rc.cpp:44
+#. i18n: file kcmlayoutwidget.ui line 367
+#: rc.cpp:40
 msgid ""
-"This is the command which is executed when switching to the selected layout. "
-"It may help you if you want to debug layout switching, or if you want to "
-"switch layouts without the help of KDE."
+"Here you can choose a keyboard model. This setting is independent of your "
+"keyboard layout and refers to the \"hardware\" model, i.e. the way your "
+"keyboard is manufactured. Modern keyboards that come with your computer "
+"usually have two extra keys and are referred to as \"104-key\" models, which "
+"is probably what you want if you do not know what kind of keyboard you "
+"have.\n"
 msgstr ""
-"Đây là lệnh được thực hiện khi chuyển đổi vào bố trí đã chọn. Nó có ích nếu "
-"bạn cần phải gỡ lỗi việc chuyển đổi bố trí, hoặc nếu bạn muốn tự chuyển đổi "
-"bố trí (không có KDE)."
+"Ở đây bạn có thể chọn mô hình bàn phím. Thiết lập này riêng với bố trí bàn "
+"phím, chỉ đại diện mô hình « phần cứng », tức là cách chế tạo bàn phím. Bàn "
+"phím hiện tại thường có hai phím thêm thì được diễn tả như là mô hình « 104 "
+"phím », mà rất có thể thích hợp với như cầu của bạn.\n"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 280
+#. i18n: file kcmlayoutwidget.ui line 381
+#: rc.cpp:44
+msgid "Indicator Options"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 393
 #: rc.cpp:47
-msgid "Switching Options"
-msgstr "Chuyển đổi tùy chọn"
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 310
-#: rc.cpp:53
 msgid "Shows country flag on background of layout name in tray icon"
 msgstr "Hiển thị cờ quốc gia làm nền của tên bố trí trên biểu tượng khay"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 313
-#: rc.cpp:56
+#. i18n: file kcmlayoutwidget.ui line 396
+#: rc.cpp:50
 msgid "Show country flag"
 msgstr "Hiện cờ quốc gia"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 329
+#. i18n: file kcmlayoutwidget.ui line 412
+#: rc.cpp:53
+msgid "Show indicator for single layout"
+msgstr "Hiện chỉ thị cho bố trí đơn"
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 430
+#: rc.cpp:56
+msgid "&Enable keyboard layouts"
+msgstr "&Bật bố trí bàn phím"
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 437
 #: rc.cpp:59
 msgid "Indicator only"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 342
+#. i18n: file kcmlayoutwidget.ui line 444
 #: rc.cpp:62
-msgid "Show indicator for single layout"
-msgstr "Hiện chỉ thị cho bố trí đơn"
+#, fuzzy
+#| msgid "&Enable keyboard layouts"
+msgid "Disable keyboard layouts"
+msgstr "&Bật bố trí bàn phím"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 350
+#. i18n: file kcmlayoutwidget.ui line 453
 #: rc.cpp:65
+msgid "Switching Options"
+msgstr "Chuyển đổi tùy chọn"
+
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 477
+#: rc.cpp:68
 msgid ""
 "If you select \"Application\" or \"Window\" switching policy, changing the "
 "keyboard layout will only affect the current application or window."
@@ -241,44 +269,44 @@ msgstr ""
 "trí bàn phím chỉ có tác động ứng dụng hay cửa sổ đang dùng."
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 353
-#: rc.cpp:68
+#. i18n: file kcmlayoutwidget.ui line 480
+#: rc.cpp:71
 msgid "Switching Policy"
 msgstr "Chính sách chuyển đổi"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 365
-#: rc.cpp:71
+#. i18n: file kcmlayoutwidget.ui line 486
+#: rc.cpp:74
 msgid "&Global"
 msgstr "T&oàn cục"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 375
-#: rc.cpp:74
+#. i18n: file kcmlayoutwidget.ui line 496
+#: rc.cpp:77
 msgid "Desktop"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 382
-#: rc.cpp:77
+#. i18n: file kcmlayoutwidget.ui line 503
+#: rc.cpp:80
 msgid "Application"
 msgstr "Ứng dụng"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 389
-#: rc.cpp:80
+#. i18n: file kcmlayoutwidget.ui line 510
+#: rc.cpp:83
 msgid "&Window"
 msgstr "Cửa &sổ"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 399
-#: rc.cpp:83
+#. i18n: file kcmlayoutwidget.ui line 526
+#: rc.cpp:86
 msgid "Sticky Switching"
 msgstr "Chuyển đổi dính"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 423
-#: rc.cpp:86
+#. i18n: file kcmlayoutwidget.ui line 550
+#: rc.cpp:89
 msgid ""
 "If you have more than two layouts and turn this option on, switching with "
 "the keyboard shortcut or clicking on the kxkb indicator will only cycle "
@@ -292,74 +320,68 @@ msgstr ""
 "trí bằng cách nhấn-phải vào chỉ thị kxkb."
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 426
-#: rc.cpp:89
+#. i18n: file kcmlayoutwidget.ui line 553
+#: rc.cpp:92
 msgid "Enable sticky switching"
 msgstr "Bật chuyển đổi dính"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 436
-#: rc.cpp:92
+#. i18n: file kcmlayoutwidget.ui line 563
+#: rc.cpp:95
 msgid "Number of layouts to rotate:"
 msgstr "Số bố trí cần quay qua:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 462
-#: rc.cpp:95
-msgid "Shortcuts"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 474
+#. i18n: file kcmlayoutwidget.ui line 595
 #: rc.cpp:98
-msgid "Ctrl+Shift"
-msgstr ""
+#, fuzzy
+#| msgid "Show indicator for single layout"
+msgid "Shortcuts for switching layout"
+msgstr "Hiện chỉ thị cho bố trí đơn"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 487
+#. i18n: file kcmlayoutwidget.ui line 607
 #: rc.cpp:101
-msgid "Alt+Shift"
+msgid "X.org"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 500
-#: rc.cpp:104
-msgid "Ctrl+Ctrl"
+#. i18n: file kcmlayoutwidget.ui line 633
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 659
+#. i18n: tag string
+#. i18n: file kcmlayoutwidget.ui line 685
+#: rc.cpp:107 rc.cpp:113 rc.cpp:119
+msgid "..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 513
-#: rc.cpp:107
-msgid "Shift+Shift"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 526
+#. i18n: file kcmlayoutwidget.ui line 646
 #: rc.cpp:110
-msgid "Alt+Alt"
+msgid "KDE"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 539
-#: rc.cpp:113
-msgid "Alt+Ctrl"
+#. i18n: file kcmlayoutwidget.ui line 698
+#: rc.cpp:122
+msgid "3d level"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 551
-#: rc.cpp:116
+#. i18n: file kcmlayoutwidget.ui line 721
+#: rc.cpp:128
 msgid "Advanced"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 557
-#: rc.cpp:119
+#. i18n: file kcmlayoutwidget.ui line 727
+#: rc.cpp:131
 msgid "&Enable xkb options"
 msgstr "&Bật tùy chọn XKB"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 567
-#: rc.cpp:122
+#. i18n: file kcmlayoutwidget.ui line 737
+#: rc.cpp:134
 msgid ""
 "Here you can set xkb extension options instead of, or in addition to, "
 "specifying them in the X11 configuration file."
@@ -368,26 +390,32 @@ msgstr ""
 "vào ghi rõ trong tập tin cấu hình X11."
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 570
-#: rc.cpp:125
+#. i18n: file kcmlayoutwidget.ui line 740
+#: rc.cpp:137
 msgid "Xkb Options"
 msgstr "Tùy chọn XKB:"
 
 #. i18n: tag string
-#. i18n: file kcmlayoutwidget.ui line 579
-#: rc.cpp:128
+#. i18n: file kcmlayoutwidget.ui line 746
+#: rc.cpp:140
 msgid "&Reset old options"
 msgstr "Đặt &lại tùy chọn cũ"
 
-#: rc.cpp:135
+#: rc.cpp:144
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Trần Thế Trung"
 
-#: rc.cpp:136
+#: rc.cpp:145
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tttrung@hotmail.com"
+
+#~ msgid "Options"
+#~ msgstr "Tùy chọn"
+
+#~ msgid "None"
+#~ msgstr "Không có"
 
 #~ msgid ""
 #~ "If more than one layout is present in this list, the KDE panel will offer "
@@ -403,9 +431,6 @@ msgstr "tttrung@hotmail.com"
 
 #~ msgid "Keymap"
 #~ msgstr "Sơ đồ phím"
-
-#~ msgid "Label"
-#~ msgstr "Nhãn"
 
 #~ msgid ""
 #~ "This is the list of available keyboard layouts in your system. You can "

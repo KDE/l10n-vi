@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-20 05:39+0200\n"
+"POT-Creation-Date: 2007-10-23 05:44+0200\n"
 "PO-Revision-Date: 2007-06-22 17:23+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -2426,28 +2426,23 @@ msgstr "<b>Mô hình</b>: %1<br>"
 #: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
 #, fuzzy
 #| msgid "Idle"
-msgctxt "@item:intext Printer state"
 msgid "Idle"
 msgstr "Nghỉ"
 
 #: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
 #, fuzzy
 #| msgid "Stopped"
-msgctxt "@item:intext Printer state"
 msgid "Stopped"
 msgstr "Bị ngừng"
 
-#: cups/kmwippprinter.cpp:182 kmprinter.cpp:136
+#: cups/kmwippprinter.cpp:182 kmjob.cpp:110 kmprinter.cpp:136
 #, fuzzy
 #| msgid "Processing..."
-msgctxt "@item:intext Printer state"
 msgid "Processing..."
 msgstr "Đang xử lý..."
 
-#: cups/kmwippprinter.cpp:183 kmprinter.cpp:138
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@item:intext Printer state"
+#: cups/kmwippprinter.cpp:183 kmjob.cpp:131 kmprinter.cpp:138
+msgctxt "Unknown State"
 msgid "Unknown"
 msgstr "Không rõ"
 
@@ -3145,61 +3140,39 @@ msgstr "Hệ thống in"
 msgid "Authentication failed (user name=%1)"
 msgstr "Việc xác thực bị lỗi (tên người dùng = %1)"
 
-#: kmjob.cpp:110
-#, fuzzy
-#| msgid "Processing..."
-msgctxt "@item:intext Job state"
-msgid "Processing..."
-msgstr "Đang xử lý..."
-
 #: kmjob.cpp:113
 #, fuzzy
 #| msgid "Queued"
-msgctxt "@item:intext Job state"
 msgid "Queued"
 msgstr "Đã sắp hàng"
 
 #: kmjob.cpp:116
 #, fuzzy
 #| msgid "Held"
-msgctxt "@item:intext Job state"
 msgid "Held"
 msgstr "Đã giữ lại"
 
-#: kmjob.cpp:119
-#, fuzzy
-#| msgid "Error"
-msgctxt "@item:intext Job state"
+#: kmjob.cpp:119 tools/escputil/escpwidget.cpp:228
 msgid "Error"
 msgstr "Lỗi"
 
 #: kmjob.cpp:122
 #, fuzzy
 #| msgid "Canceled"
-msgctxt "@item:intext Job state"
 msgid "Canceled"
 msgstr "Bị thôi"
 
 #: kmjob.cpp:125
 #, fuzzy
 #| msgid "Aborted"
-msgctxt "@item:intext Job state"
 msgid "Aborted"
 msgstr "Bị hủy bỏ"
 
 #: kmjob.cpp:128
 #, fuzzy
 #| msgid "Completed"
-msgctxt "@item:intext Job state"
 msgid "Completed"
 msgstr "Hoàn tất"
-
-#: kmjob.cpp:131
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@item:intext Job state"
-msgid "Unknown"
-msgstr "Không rõ"
 
 #: tests/main.cpp:18
 msgid "helpviewer"
@@ -3283,10 +3256,6 @@ msgstr "Thao tác đã kết thúc với lỗi."
 #: tools/escputil/escpwidget.cpp:226 kpfilterpage.cpp:399
 msgid "Output"
 msgstr "Xuất"
-
-#: tools/escputil/escpwidget.cpp:228
-msgid "Error"
-msgstr "Lỗi"
 
 #: management/kmmainview.cpp:73
 #, kde-format
@@ -7637,6 +7606,26 @@ msgstr "Mức &xám"
 msgid "Ot&her"
 msgstr "&Khác"
 
-#~ msgctxt "Unknown State"
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "@item:intext Printer state"
+#~ msgid "Unknown"
+#~ msgstr "Không rõ"
+
+#, fuzzy
+#~| msgid "Processing..."
+#~ msgctxt "@item:intext Job state"
+#~ msgid "Processing..."
+#~ msgstr "Đang xử lý..."
+
+#, fuzzy
+#~| msgid "Error"
+#~ msgctxt "@item:intext Job state"
+#~ msgid "Error"
+#~ msgstr "Lỗi"
+
+#, fuzzy
+#~| msgid "Unknown"
+#~ msgctxt "@item:intext Job state"
 #~ msgid "Unknown"
 #~ msgstr "Không rõ"

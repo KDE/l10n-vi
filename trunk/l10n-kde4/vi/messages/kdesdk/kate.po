@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-10-24 06:11+0200\n"
+"POT-Creation-Date: 2007-10-25 06:18+0200\n"
 "PO-Revision-Date: 2006-04-15 22:24+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -621,11 +621,11 @@ msgstr "&Quản lý..."
 msgid "&Quick Open"
 msgstr "Mở &nhanh"
 
-#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:437
+#: app/katemainwindow.cpp:422 app/katedocmanager.cpp:445
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "Mở tập tin mới khi đóng Kate, không đóng."
 
-#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:438
+#: app/katemainwindow.cpp:423 app/katedocmanager.cpp:446
 msgid "Closing Aborted"
 msgstr "Dừng đóng"
 
@@ -900,20 +900,20 @@ msgstr "Danh sách tài liệu"
 msgid "Document List Settings"
 msgstr "Thiết lập danh sách tài liệu"
 
-#: app/kateconfigdialog.cpp:242
+#: app/kateconfigdialog.cpp:243
 msgid "Plugins"
 msgstr "Bổ sung"
 
-#: app/kateconfigdialog.cpp:243
+#: app/kateconfigdialog.cpp:244
 msgid "Plugin Manager"
 msgstr "Trình quản lí bổ sung"
 
-#: app/kateconfigdialog.cpp:257
+#: app/kateconfigdialog.cpp:258
 #, fuzzy
 msgid "Editor Component"
 msgstr "Chọn thành phần soạn thảo"
 
-#: app/kateconfigdialog.cpp:259
+#: app/kateconfigdialog.cpp:260
 #, fuzzy
 msgid "Editor Component Options"
 msgstr "Chọn thành phần soạn thảo"
@@ -1176,19 +1176,19 @@ msgstr "Đọc nội dung của thiết bị nhập"
 msgid "Document to open"
 msgstr "Tài liệu sẽ mở"
 
-#: app/katedocmanager.cpp:291
+#: app/katedocmanager.cpp:299
 #, kde-format
 msgid ""
 "The supposedly temporary file %1 has been modified. Do you want to delete it "
 "anyway?"
 msgstr ""
 
-#: app/katedocmanager.cpp:293
+#: app/katedocmanager.cpp:301
 #, fuzzy
 msgid "Delete File?"
 msgstr "Xóa"
 
-#: app/katedocmanager.cpp:402
+#: app/katedocmanager.cpp:410
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
@@ -1200,24 +1200,24 @@ msgstr ""
 "<p>Tài liệu '%1' đã có thay đổi nhưng chưa được lưu. <p>Bạn muốn lưu những "
 "thay đổi đó hay bỏ chúng đi?"
 
-#: app/katedocmanager.cpp:404
+#: app/katedocmanager.cpp:412
 msgid "Close Document"
 msgstr "Đóng tài liệu"
 
-#: app/katedocmanager.cpp:411
+#: app/katedocmanager.cpp:419
 #, fuzzy
 msgid "Save As"
 msgstr "&Lưu như..."
 
-#: app/katedocmanager.cpp:482
+#: app/katedocmanager.cpp:490
 msgid "Starting Up"
 msgstr "Đang khởi động"
 
-#: app/katedocmanager.cpp:483
+#: app/katedocmanager.cpp:491
 msgid "Reopening files from the last session..."
 msgstr "Mở lại tập tin từ phiên chạy cuối..."
 
-#: app/katedocmanager.cpp:684
+#: app/katedocmanager.cpp:692
 msgid "Errors/Warnings while opening documents"
 msgstr ""
 
@@ -1333,25 +1333,66 @@ msgstr ""
 msgid "Session Renaming"
 msgstr "Tên phiên chạy:"
 
-#: app/katefilelist.cpp:38
+#: app/katefilelist.cpp:51
 msgid "Sort &By"
 msgstr "Sắp &xếp theo"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:179
 msgid "Opening Order"
 msgstr "Thứ tự mở"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:180
 msgid "Document Name"
 msgstr "Tên tài liệu"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55
 msgid "URL"
 msgstr "URL"
 
-#: app/katefilelist.cpp:42
+#: app/katefilelist.cpp:55 app/katefilelist.cpp:182
 msgid "Custom"
 msgstr ""
+
+#: app/katefilelist.cpp:153
+msgid "Background Shading"
+msgstr "Bóng nền"
+
+#: app/katefilelist.cpp:162
+msgid "&Viewed documents' shade:"
+msgstr "&Bóng các tài liệu đã xem:"
+
+#: app/katefilelist.cpp:167
+msgid "&Modified documents' shade:"
+msgstr "&Bóng các tài liệu đã sửa:"
+
+#: app/katefilelist.cpp:174
+msgid "&Sort by:"
+msgstr "&Sắp xếp theo:"
+
+#: app/katefilelist.cpp:181
+msgid "Url"
+msgstr ""
+
+#: app/katefilelist.cpp:187
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+"Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
+"hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
+
+#: app/katefilelist.cpp:191
+msgid "Set the color for shading viewed documents."
+msgstr "Chọn màu cho bóng của những tài liệu đã xem."
+
+#: app/katefilelist.cpp:193
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
+"Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
+"tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
 
 #: app/kateviewmanager.cpp:117
 msgid "Split Ve&rtical"
@@ -2386,39 +2427,8 @@ msgstr "Phiên chạy"
 #~ "<b>Tập tin này đã thay đổi (đã xóa) trên đĩa bởi một chương trình khác.</"
 #~ "b><br />"
 
-#~ msgid "Background Shading"
-#~ msgstr "Bóng nền"
-
 #~ msgid "&Enable background shading"
 #~ msgstr "&Dùng bóng nền"
-
-#~ msgid "&Viewed documents' shade:"
-#~ msgstr "&Bóng các tài liệu đã xem:"
-
-#~ msgid "&Modified documents' shade:"
-#~ msgstr "&Bóng các tài liệu đã sửa:"
-
-#~ msgid "&Sort by:"
-#~ msgstr "&Sắp xếp theo:"
-
-#~ msgid ""
-#~ "When background shading is enabled, documents that have been viewed or "
-#~ "edited within the current session will have a shaded background. The most "
-#~ "recent documents have the strongest shade."
-#~ msgstr ""
-#~ "Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
-#~ "hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
-
-#~ msgid "Set the color for shading viewed documents."
-#~ msgstr "Chọn màu cho bóng của những tài liệu đã xem."
-
-#~ msgid ""
-#~ "Set the color for modified documents. This color is blended into the "
-#~ "color for viewed files. The most recently edited documents get most of "
-#~ "this color."
-#~ msgstr ""
-#~ "Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
-#~ "tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
 
 #~ msgid "Set the sorting method for the documents."
 #~ msgstr "Chọn phương pháp sắp xếp cho tài liệu."

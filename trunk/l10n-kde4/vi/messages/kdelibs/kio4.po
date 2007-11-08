@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-07 05:55+0100\n"
+"POT-Creation-Date: 2007-11-08 06:00+0100\n"
 "PO-Revision-Date: 2007-06-22 17:25+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -4835,51 +4835,86 @@ msgid "Otherwise, the request would have succeeded."
 msgstr "Không thì yêu cầu thành công."
 
 #: ../kioslave/http/http.cpp:1465
+#, fuzzy
+#| msgid "retrieve property values"
+msgctxt "request type"
 msgid "retrieve property values"
 msgstr "lấy giá trị tài sản"
 
 #: ../kioslave/http/http.cpp:1468
+#, fuzzy
+#| msgid "set property values"
+msgctxt "request type"
 msgid "set property values"
 msgstr "Đặt giá trị tài sản"
 
 #: ../kioslave/http/http.cpp:1471
+#, fuzzy
+#| msgid "create the requested folder"
+msgctxt "request type"
 msgid "create the requested folder"
 msgstr "tạo thư mục đã yêu cầu"
 
 #: ../kioslave/http/http.cpp:1474
+#, fuzzy
+#| msgid "copy the specified file or folder"
+msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "chép tập tin hay thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1477
+#, fuzzy
+#| msgid "move the specified file or folder"
+msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "chuyển tập tin hay thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1480
+#, fuzzy
+#| msgid "search in the specified folder"
+msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "tìm kiếm qua thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1483
+#, fuzzy
+#| msgid "lock the specified file or folder"
+msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "khoá tập tin hay thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1486
+#, fuzzy
+#| msgid "unlock the specified file or folder"
+msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "bỏ khoá tập tin hay thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1489
+#, fuzzy
+#| msgid "delete the specified file or folder"
+msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "xoá tập tin hay thư mục đã chọn"
 
 #: ../kioslave/http/http.cpp:1492
+#, fuzzy
+#| msgid "query the server's capabilities"
+msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "truy vấn khả năng của máy phục vụ"
 
 #: ../kioslave/http/http.cpp:1495
+#, fuzzy
+#| msgid "retrieve the contents of the specified file or folder"
+msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "lấy nội dung của tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1507 ../kioslave/http/http.cpp:1660
-#, kde-format
+#: ../kioslave/http/http.cpp:1507
+#, fuzzy, kde-format
+#| msgid "An unexpected error (%1) occurred while attempting to %2."
+msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Gặp lỗi lạ (%1) khi cố %2."
 
@@ -4888,14 +4923,20 @@ msgid "The server does not support the WebDAV protocol."
 msgstr "Máy phục vụ này không hỗ trợ giao thức WebDAV."
 
 #: ../kioslave/http/http.cpp:1556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred while attempting to %1, %2. A summary of the reasons is "
+#| "below.<ul>"
+msgctxt "%1: request type, %2: url"
 msgid ""
 "An error occurred while attempting to %1, %2. A summary of the reasons is "
 "below.<ul>"
 msgstr "Gặp lỗi khi cố %1, %2. Bên dưới có lời tóm tắt các lý do.<ul>"
 
 #: ../kioslave/http/http.cpp:1568 ../kioslave/http/http.cpp:1671
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Access was denied while attempting to %1."
+msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "Truy cập bị từ chối trong khi cố %1."
 
@@ -4932,7 +4973,9 @@ msgid "The server does not support the request type of the body."
 msgstr "Máy phục vụ không hỗ trợ kiểu yêu cầu của thân."
 
 #: ../kioslave/http/http.cpp:1611 ../kioslave/http/http.cpp:1683
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Unable to %1 because the resource is locked."
+msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Không thể %1, vì tài nguyên bị khoá."
 
@@ -4941,7 +4984,11 @@ msgid "This action was prevented by another error."
 msgstr "Hành động này bị lỗi khác ngăn cản."
 
 #: ../kioslave/http/http.cpp:1622 ../kioslave/http/http.cpp:1688
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Unable to %1 because the destination server refuses to accept the file or "
+#| "folder."
+msgctxt "%1: request type"
 msgid ""
 "Unable to %1 because the destination server refuses to accept the file or "
 "folder."
@@ -4957,9 +5004,18 @@ msgstr ""
 "sau khi thực hiện phương pháp này."
 
 #: ../kioslave/http/http.cpp:1651
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "upload %1"
+msgctxt "request type"
 msgid "upload %1"
 msgstr "tải lên %1"
+
+#: ../kioslave/http/http.cpp:1660
+#, fuzzy, kde-format
+#| msgid "An unexpected error (%1) occurred while attempting to %2."
+msgctxt "%1: response code, %2: request type"
+msgid "An unexpected error (%1) occurred while attempting to %2."
+msgstr "Gặp lỗi lạ (%1) khi cố %2."
 
 #: ../kioslave/http/http.cpp:1969
 #, kde-format

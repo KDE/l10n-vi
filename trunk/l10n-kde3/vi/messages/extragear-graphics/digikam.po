@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-11-16 09:26+0100\n"
+"POT-Creation-Date: 2007-11-17 09:07+0100\n"
 "PO-Revision-Date: 2007-07-07 21:07+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -1040,19 +1040,19 @@ msgstr "&Hủy bỏ"
 
 #: libs/dialogs/ctrlpaneldlg.cpp:101 libs/dialogs/imagedlgbase.cpp:103
 #: libs/dialogs/imageguidedlg.cpp:136
-#: utilities/imageeditor/tools/imageresize.cpp:142
+#: utilities/imageeditor/tools/imageresize.cpp:145
 msgid "&Save As..."
 msgstr "&Lưu dạng..."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:102 libs/dialogs/imagedlgbase.cpp:104
 #: libs/dialogs/imageguidedlg.cpp:137
-#: utilities/imageeditor/tools/imageresize.cpp:143
+#: utilities/imageeditor/tools/imageresize.cpp:146
 msgid "&Load..."
 msgstr "&Tải..."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:115 libs/dialogs/imagedlgbase.cpp:115
 #: libs/dialogs/imageguidedlg.cpp:150
-#: utilities/imageeditor/tools/imageresize.cpp:149
+#: utilities/imageeditor/tools/imageresize.cpp:152
 msgid "<p>Reset all filter parameters to their default values."
 msgstr "<p>Đặt lại mọi tham số lọc thành giá trị mặc định."
 
@@ -1062,13 +1062,13 @@ msgstr "<p>Hủy bỏ vẽ ảnh hiện thời."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:117 libs/dialogs/imagedlgbase.cpp:116
 #: libs/dialogs/imageguidedlg.cpp:152
-#: utilities/imageeditor/tools/imageresize.cpp:150
+#: utilities/imageeditor/tools/imageresize.cpp:153
 msgid "<p>Load all filter parameters from settings text file."
 msgstr "<p>Tải mọi tham số lọc từ tập tin văn bản thiết lập."
 
 #: libs/dialogs/ctrlpaneldlg.cpp:118 libs/dialogs/imagedlgbase.cpp:117
 #: libs/dialogs/imageguidedlg.cpp:153
-#: utilities/imageeditor/tools/imageresize.cpp:151
+#: utilities/imageeditor/tools/imageresize.cpp:154
 msgid "<p>Save all filter parameters to settings text file."
 msgstr "<p>Lưu mọi tham số lọc vào tập tin văn bản thiết lập."
 
@@ -5438,7 +5438,7 @@ msgstr ""
 "<p>Ở đây hãy đặt kích cỡ của bút chì than gỗ được dùng để mô phỏng bản vẽ."
 
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:92
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:160
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:161
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:101
 msgid "Smooth:"
 msgstr "Mịn:"
@@ -6360,7 +6360,7 @@ msgstr ""
 "của viền được đặt theo phần trăm kích cỡ ảnh, không thì nó theo điểm ảnh."
 
 #: imageplugins/border/imageeffect_border.cpp:128
-#: utilities/imageeditor/tools/imageresize.cpp:183
+#: utilities/imageeditor/tools/imageresize.cpp:186
 msgid "Width (%):"
 msgstr "Rộng (%):"
 
@@ -6472,7 +6472,7 @@ msgstr "Định sẵn"
 
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:173
 #: imageplugins/restoration/imageeffect_restoration.cpp:105
-#: utilities/imageeditor/tools/imageresize.cpp:206
+#: utilities/imageeditor/tools/imageresize.cpp:209
 msgid "Visit CImg library website"
 msgstr "Thăm nơi Mạng của thư viện CImg"
 
@@ -7852,7 +7852,7 @@ msgid "X:"
 msgstr "X:"
 
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:165
-#: utilities/imageeditor/tools/imageresize.cpp:171
+#: utilities/imageeditor/tools/imageresize.cpp:174
 msgid "Width:"
 msgstr "Rộng:"
 
@@ -7869,7 +7869,7 @@ msgid "Y:"
 msgstr "Y:"
 
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:187
-#: utilities/imageeditor/tools/imageresize.cpp:177
+#: utilities/imageeditor/tools/imageresize.cpp:180
 msgid "Height:"
 msgstr "Cao :"
 
@@ -8497,28 +8497,36 @@ msgstr "Độ nhạy:"
 #: imageplugins/coreplugin/imageeffect_redeye.cpp:154
 msgid ""
 "<p>Sets the red color pixels selection threshold. Low values will select more "
-"red color pixels, high values less."
+"red color pixels (agressive correction), high values less (mild correction). "
+"Use low value if eye have been selected exactly. Use high value if other parts "
+"of the face are also selected."
 msgstr ""
-"<p>Đặt ngưỡng chọn điểm ảnh màu đỏ. GIá trị thấp thì chọn nhiều điểm ảnh màu đỏ "
-"hơn, giá trị cao chọn ít hơn."
 
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:164
-msgid "<p>Sets the smoothness value to blur red color pixels selection."
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:165
+#, fuzzy
+msgid ""
+"<p>Sets the smoothness value to blur the border of the changed pixels. This "
+"leads to a more naturally looking pupil."
 msgstr "<p>Đặt giá trị độ mịn để che mờ sự chọn các điểm ảnh màu đỏ."
 
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:169
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:171
 msgid "Coloring Tint:"
 msgstr "Nhuốm tô màu :"
 
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:178
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:176
+msgid "<p>Sets a custom color to re-colorize the eyes."
+msgstr ""
+
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:181
 msgid "Tint Level:"
 msgstr "Cấp nhuốm:"
 
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:182
-msgid "<p>Set here the tint level used to coloring red eye."
-msgstr "<p>Ở đây hãy đặt cấp nhuốm dùng để tô màu mắt đỏ."
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:185
+msgid ""
+"<p>Set the tint level to adjust the luminosity of the new color of the pupil."
+msgstr ""
 
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:387
+#: imageplugins/coreplugin/imageeffect_redeye.cpp:391
 msgid "Red Eyes Correction"
 msgstr "Sửa mắt đỏ"
 
@@ -10668,80 +10676,91 @@ msgstr ""
 "<p>Khả năng Quản lý Màu bị tắt</p>"
 "<p>Bạn có thể bật nó ngay bây giờ bằng cách nhấn vào cái nút « Thiết lập ».</p>"
 
-#: utilities/imageeditor/tools/imageresize.cpp:138
+#: utilities/imageeditor/tools/imageresize.cpp:141
 msgid "Resize Image"
 msgstr "Đổi cỡ ảnh"
 
-#: utilities/imageeditor/tools/imageresize.cpp:169
+#: utilities/imageeditor/tools/imageresize.cpp:172
 msgid "New Size"
 msgstr "Kích cỡ mới"
 
-#: utilities/imageeditor/tools/imageresize.cpp:175
+#: utilities/imageeditor/tools/imageresize.cpp:178
 msgid "<p>Set here the new image width in pixels."
 msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo điểm ảnh."
 
-#: utilities/imageeditor/tools/imageresize.cpp:181
+#: utilities/imageeditor/tools/imageresize.cpp:184
 msgid "<p>Set here the new image height in pixels."
 msgstr "<p>Ở đây hãy đặt độ cao mới của ảnh theo điểm ảnh."
 
-#: utilities/imageeditor/tools/imageresize.cpp:187
+#: utilities/imageeditor/tools/imageresize.cpp:190
 msgid "<p>Set here the new image width in percents."
 msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo phần trăm."
 
-#: utilities/imageeditor/tools/imageresize.cpp:189
+#: utilities/imageeditor/tools/imageresize.cpp:192
 msgid "Height (%):"
 msgstr "Cao (%):"
 
-#: utilities/imageeditor/tools/imageresize.cpp:193
+#: utilities/imageeditor/tools/imageresize.cpp:196
 msgid "<p>Set here the new image height in percents."
 msgstr "<p>Ở đây hãy đặt độ cao mới của ảnh theo phần trăm."
 
-#: utilities/imageeditor/tools/imageresize.cpp:195
+#: utilities/imageeditor/tools/imageresize.cpp:198
 msgid "Maintain aspect ratio"
 msgstr "Duy trì tỷ lệ hình thể"
 
-#: utilities/imageeditor/tools/imageresize.cpp:196
+#: utilities/imageeditor/tools/imageresize.cpp:199
 msgid "<p>Enable this option to maintain aspect ratio with new image sizes."
 msgstr "<p>Bật tùy chọn này để duy trì tỷ lệ hình thể với kích cỡ ảnh mới."
 
-#: utilities/imageeditor/tools/imageresize.cpp:208
-msgid "Restore photograph (slow)"
+#: utilities/imageeditor/tools/imageresize.cpp:211
+#, fuzzy
+msgid "Restore photograph"
 msgstr "Phục hồi ảnh chụp (chậm)"
 
-#: utilities/imageeditor/tools/imageresize.cpp:209
+#: utilities/imageeditor/tools/imageresize.cpp:212
+#, fuzzy
 msgid ""
-"<p>Enable this option to restore photograph content. Warning: this process can "
-"take a while."
+"<p>Enable this option to restore photograph content. This way is usefull to "
+"scale-up an image to an huge size. Warning: this process can take a while."
 msgstr ""
 "<p>Bật tùy chọn này để phục hồi nội dung của ảnh. Cảnh báo : tiến trình này có "
 "thể kéo dài một lát."
 
-#: utilities/imageeditor/tools/imageresize.cpp:214
+#: utilities/imageeditor/tools/imageresize.cpp:216
+#, fuzzy
+msgid ""
+"<b>Note: use Restoration Mode to only scale-up an image to huge size. Warning, "
+"this process can take a while.</b>"
+msgstr ""
+"<p>Bật tùy chọn này để phục hồi nội dung của ảnh. Cảnh báo : tiến trình này có "
+"thể kéo dài một lát."
+
+#: utilities/imageeditor/tools/imageresize.cpp:221
 msgid "<p>This is the current progress when you use Restoration mode."
 msgstr "<p>Đây là tiến hành hiện thời khi bạn sử dụng chế độ Phục hồi."
 
-#: utilities/imageeditor/tools/imageresize.cpp:545
+#: utilities/imageeditor/tools/imageresize.cpp:553
 msgid "Resize"
 msgstr "Đổi cỡ"
 
-#: utilities/imageeditor/tools/imageresize.cpp:570
+#: utilities/imageeditor/tools/imageresize.cpp:578
 msgid "Photograph Resizing Settings File to Load"
 msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần nạp"
 
-#: utilities/imageeditor/tools/imageresize.cpp:581
+#: utilities/imageeditor/tools/imageresize.cpp:589
 msgid "\"%1\" is not a Photograph Resizing settings text file."
 msgstr ""
 "« %1 » không phải là một tập tin văn bản thiết lập thay đổi kích cỡ ảnh chụp."
 
-#: utilities/imageeditor/tools/imageresize.cpp:588
+#: utilities/imageeditor/tools/imageresize.cpp:596
 msgid "Cannot load settings from the Photograph Resizing text file."
 msgstr "Không thể nạp thiết lập từ tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
-#: utilities/imageeditor/tools/imageresize.cpp:597
+#: utilities/imageeditor/tools/imageresize.cpp:605
 msgid "Photograph Resizing Settings File to Save"
 msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần lưu"
 
-#: utilities/imageeditor/tools/imageresize.cpp:606
+#: utilities/imageeditor/tools/imageresize.cpp:614
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
@@ -12081,6 +12100,12 @@ msgstr "Chiếu ảnh đã chạy xong."
 #: utilities/slideshow/slideshow.cpp:452
 msgid "Click To Exit..."
 msgstr "Nhấn để thoát..."
+
+#~ msgid "<p>Sets the red color pixels selection threshold. Low values will select more red color pixels, high values less."
+#~ msgstr "<p>Đặt ngưỡng chọn điểm ảnh màu đỏ. GIá trị thấp thì chọn nhiều điểm ảnh màu đỏ hơn, giá trị cao chọn ít hơn."
+
+#~ msgid "<p>Set here the tint level used to coloring red eye."
+#~ msgstr "<p>Ở đây hãy đặt cấp nhuốm dùng để tô màu mắt đỏ."
 
 #~ msgid "&Batch Process"
 #~ msgstr "Tiến trình &bó"

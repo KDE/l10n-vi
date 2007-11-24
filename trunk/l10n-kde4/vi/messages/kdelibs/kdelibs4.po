@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-23 05:57+0100\n"
+"POT-Creation-Date: 2007-11-24 05:53+0100\n"
 "PO-Revision-Date: 2007-06-25 20:37+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -3277,7 +3277,7 @@ msgstr "Thư viện %1 không cung cấp bộ tạo tương thích với KDE."
 msgid "The plugin '%1' uses incompatible KDE library. (%2)"
 msgstr ""
 
-#: kdecore/config/kconfig.cpp:568
+#: kdecore/config/kconfig.cpp:569
 msgid "Please contact your system administrator."
 msgstr "Hãy liên lạc quản trị hệ thống."
 
@@ -4563,7 +4563,7 @@ msgstr ""
 #: kdecore/localization/kuitsemantics.cpp:695
 #, kde-format
 msgctxt "@placeholder/plain"
-msgid "<%1>"
+msgid "&lt;%1&gt;"
 msgstr ""
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
@@ -4577,7 +4577,7 @@ msgstr ""
 #: kdecore/localization/kuitsemantics.cpp:705
 #, kde-format
 msgctxt "@email/plain"
-msgid "<%1>"
+msgid "&lt;%1&gt;"
 msgstr ""
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
@@ -4590,14 +4590,12 @@ msgstr "Vui lòng thông báo lỗi nào cho <a href=\"mailto:%1\">%2</a>.\n"
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
 #: kdecore/localization/kuitsemantics.cpp:714
-#, fuzzy, kde-format
-#| msgctxt "concatenation of dates and time"
-#| msgid "%1 %2"
+#, kde-format
 msgctxt ""
 "@email-with-name/plain\n"
 "%1 is name, %2 is address"
-msgid "%1 <%2>"
-msgstr "%1 %2"
+msgid "%1 &lt;%2&gt;"
+msgstr ""
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
 #: kdecore/localization/kuitsemantics.cpp:719
@@ -4695,59 +4693,66 @@ msgstr ""
 
 #: kdecore/localization/kuitsemantics.cpp:818
 #, fuzzy
-#| msgid "Ctrl"
-msgctxt "keyboard-key-name"
-msgid "Ctrl"
-msgstr "Ctrl (điều khiển)"
-
-#: kdecore/localization/kuitsemantics.cpp:819
-#, fuzzy
 #| msgid "Alt"
 msgctxt "keyboard-key-name"
 msgid "Alt"
 msgstr "Alt (xen kẽ)"
 
+#: kdecore/localization/kuitsemantics.cpp:819
+#, fuzzy
+#| msgid "Alt"
+msgctxt "keyboard-key-name"
+msgid "AltGr"
+msgstr "Alt (xen kẽ)"
+
 #: kdecore/localization/kuitsemantics.cpp:820
-#, fuzzy
-#| msgid "Meta"
-msgctxt "keyboard-key-name"
-msgid "Meta"
-msgstr "Meta (siêu)"
-
-#: kdecore/localization/kuitsemantics.cpp:821
-#, fuzzy
-#| msgid "Shift"
-msgctxt "keyboard-key-name"
-msgid "Shift"
-msgstr "Shift (dịch)"
-
-#: kdecore/localization/kuitsemantics.cpp:823
-#, fuzzy
-#| msgid "Replace"
-msgctxt "keyboard-key-name"
-msgid "Space"
-msgstr "Thay thế"
-
-#: kdecore/localization/kuitsemantics.cpp:824
 #, fuzzy
 #| msgid "Backspace"
 msgctxt "keyboard-key-name"
 msgid "Backspace"
 msgstr "Xoá lùi"
 
-#: kdecore/localization/kuitsemantics.cpp:825
+#: kdecore/localization/kuitsemantics.cpp:821
 #, fuzzy
-#| msgid "Insert"
+#| msgid "CapsLock"
 msgctxt "keyboard-key-name"
-msgid "Insert"
-msgstr "Chèn"
+msgid "CapsLock"
+msgstr "CapsLock (khoá chữ hoa)"
 
-#: kdecore/localization/kuitsemantics.cpp:826
+#: kdecore/localization/kuitsemantics.cpp:822
+#, fuzzy
+#| msgid "Ctrl"
+msgctxt "keyboard-key-name"
+msgid "Control"
+msgstr "Ctrl (điều khiển)"
+
+#: kdecore/localization/kuitsemantics.cpp:823
+#, fuzzy
+#| msgid "Ctrl"
+msgctxt "keyboard-key-name"
+msgid "Ctrl"
+msgstr "Ctrl (điều khiển)"
+
+#: kdecore/localization/kuitsemantics.cpp:824
 #, fuzzy
 #| msgid "Delete"
 msgctxt "keyboard-key-name"
 msgid "Delete"
 msgstr "Xoá bỏ"
+
+#: kdecore/localization/kuitsemantics.cpp:825
+#, fuzzy
+#| msgid "End"
+msgctxt "keyboard-key-name"
+msgid "End"
+msgstr "Cuối"
+
+#: kdecore/localization/kuitsemantics.cpp:826
+#, fuzzy
+#| msgid "Owner"
+msgctxt "keyboard-key-name"
+msgid "Enter"
+msgstr "Sở hữu"
 
 #: kdecore/localization/kuitsemantics.cpp:827
 #, fuzzy
@@ -4757,25 +4762,126 @@ msgid "Home"
 msgstr "Nhà"
 
 #: kdecore/localization/kuitsemantics.cpp:828
-#, fuzzy
-#| msgid "End"
 msgctxt "keyboard-key-name"
-msgid "End"
-msgstr "Cuối"
+msgid "Hyper"
+msgstr ""
 
 #: kdecore/localization/kuitsemantics.cpp:829
+#, fuzzy
+#| msgid "Insert"
+msgctxt "keyboard-key-name"
+msgid "Insert"
+msgstr "Chèn"
+
+#: kdecore/localization/kuitsemantics.cpp:830
+#, fuzzy
+#| msgid "Menu"
+msgctxt "keyboard-key-name"
+msgid "Menu"
+msgstr "Trình đơn"
+
+#: kdecore/localization/kuitsemantics.cpp:831
+#, fuzzy
+#| msgid "Meta"
+msgctxt "keyboard-key-name"
+msgid "Meta"
+msgstr "Meta (siêu)"
+
+#: kdecore/localization/kuitsemantics.cpp:832
+#, fuzzy
+#| msgid "NumLock"
+msgctxt "keyboard-key-name"
+msgid "NumLock"
+msgstr "NumLock (khoá số)"
+
+#: kdecore/localization/kuitsemantics.cpp:833
+#, fuzzy
+#| msgid "PageDown"
+msgctxt "keyboard-key-name"
+msgid "PageDown"
+msgstr "PageDown (xuống trang)"
+
+#: kdecore/localization/kuitsemantics.cpp:834
 #, fuzzy
 #| msgid "PageUp"
 msgctxt "keyboard-key-name"
 msgid "PageUp"
 msgstr "PageUp (trang lên)"
 
-#: kdecore/localization/kuitsemantics.cpp:830
+#: kdecore/localization/kuitsemantics.cpp:835
 #, fuzzy
-#| msgid "PageDown"
+#| msgid "Pause"
 msgctxt "keyboard-key-name"
-msgid "PageDown"
-msgstr "PageDown (xuống trang)"
+msgid "PauseBreak"
+msgstr "Tạm dừng"
+
+#: kdecore/localization/kuitsemantics.cpp:836
+#, fuzzy
+#| msgid "Print Previe&w..."
+msgctxt "keyboard-key-name"
+msgid "PrintScreen"
+msgstr "&Xem thử bản in..."
+
+#: kdecore/localization/kuitsemantics.cpp:837
+msgctxt "keyboard-key-name"
+msgid "PrtScr"
+msgstr ""
+
+#: kdecore/localization/kuitsemantics.cpp:838
+#, fuzzy
+#| msgid "Run"
+msgctxt "keyboard-key-name"
+msgid "Return"
+msgstr "Chạy"
+
+#: kdecore/localization/kuitsemantics.cpp:839
+#, fuzzy
+#| msgid "ScrollLock"
+msgctxt "keyboard-key-name"
+msgid "ScrollLock"
+msgstr "ScrollLock (khoá cuộn)"
+
+#: kdecore/localization/kuitsemantics.cpp:840
+#, fuzzy
+#| msgid "Shift"
+msgctxt "keyboard-key-name"
+msgid "Shift"
+msgstr "Shift (dịch)"
+
+#: kdecore/localization/kuitsemantics.cpp:841
+#, fuzzy
+#| msgid "Replace"
+msgctxt "keyboard-key-name"
+msgid "Space"
+msgstr "Thay thế"
+
+#: kdecore/localization/kuitsemantics.cpp:842
+#, fuzzy
+#| msgid "Suspend"
+msgctxt "keyboard-key-name"
+msgid "Super"
+msgstr "Ngưng"
+
+#: kdecore/localization/kuitsemantics.cpp:843
+#, fuzzy
+#| msgid "SysReq"
+msgctxt "keyboard-key-name"
+msgid "SysReq"
+msgstr "SysReq (yêu cầu hệ thống)"
+
+#: kdecore/localization/kuitsemantics.cpp:844
+#, fuzzy
+#| msgid "Sab"
+msgctxt "keyboard-key-name"
+msgid "Tab"
+msgstr "Sab"
+
+#: kdecore/localization/kuitsemantics.cpp:845
+#, fuzzy
+#| msgid "Warning"
+msgctxt "keyboard-key-name"
+msgid "Win"
+msgstr "Cảnh báo"
 
 #: knewstuff/knewstuff2/ui/kdxstranslation.cpp:35
 msgid "Translate this entry"
@@ -9231,6 +9337,9 @@ msgstr ""
 "trong KDE.</qt>"
 
 #: kfile/kfileplacesmodel.cpp:85
+#, fuzzy
+#| msgid "Home"
+msgctxt "Home Directory"
 msgid "Home"
 msgstr "Nhà"
 
@@ -12690,6 +12799,15 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Điểm mã Unicode: %4<br>"
 "(In decimal: %5)</qt>"
+
+#, fuzzy
+#~| msgctxt "concatenation of dates and time"
+#~| msgid "%1 %2"
+#~ msgctxt ""
+#~ "@email-with-name/plain\n"
+#~ "%1 is name, %2 is address"
+#~ msgid "%1 <%2>"
+#~ msgstr "%1 %2"
 
 #~ msgid "No mime types installed."
 #~ msgstr "Chưa cài đặt kiểu MIME."

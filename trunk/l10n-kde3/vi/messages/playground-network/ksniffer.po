@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksniffer\n"
-"POT-Creation-Date: 2007-11-03 09:24+0100\n"
+"POT-Creation-Date: 2007-11-25 09:33+0100\n"
 "PO-Revision-Date: 2007-06-14 21:29+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -217,7 +217,7 @@ msgid ""
 msgstr "%1, %2"
 
 #: packetmanager.cpp:330 packetmanager.cpp:359 packetmanager.cpp:382
-#: packetmanager.cpp:406
+#: packetmanager.cpp:406 protocols/arp-protocol.cpp:157
 msgid ""
 "_: not available\n"
 "n/a"
@@ -1066,67 +1066,78 @@ msgstr "Đừng hiện lần nữa."
 msgid "You have not permission to write to %1."
 msgstr "Bạn không có quyền ghi vào %1."
 
-#: protocols/arp-protocol.cpp:150
+#: protocols/arp-protocol.cpp:152
 msgid "%1 asks: \"who has %2?\""
 msgstr ""
 
-#: protocols/arp-protocol.cpp:158
+#: protocols/arp-protocol.cpp:155
+msgid "%1 has %2 as IP address"
+msgstr ""
+
+#: protocols/arp-protocol.cpp:165
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Hardware address format: 0x%1"
 msgstr "Định dạng địa chỉ phần cứng: 0x%1"
 
-#: protocols/arp-protocol.cpp:159
+#: protocols/arp-protocol.cpp:166
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Protocol type: 0x%1"
 msgstr "Kiểu giao thức: 0x%1"
 
-#: protocols/arp-protocol.cpp:160
+#: protocols/arp-protocol.cpp:167
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Hardware address length: %1"
 msgstr "Độ dài địa chỉ phần cứng: %1"
 
-#: protocols/arp-protocol.cpp:161
+#: protocols/arp-protocol.cpp:168
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Protocol address length: %1"
 msgstr "Độ dài địa chỉ giao thức: %1"
 
-#: protocols/arp-protocol.cpp:162
-#, c-format
+#: protocols/arp-protocol.cpp:170
+#, fuzzy
 msgid ""
 "_: ARP protocol field: ARP request type\n"
-"Opcode: 0x%1"
+"Opcode: request (0x0001)"
 msgstr "Mã thao tác: 0x%1"
 
-#: protocols/arp-protocol.cpp:163
+#: protocols/arp-protocol.cpp:172
+#, fuzzy
+msgid ""
+"_: ARP protocol field: ARP request type\n"
+"Opcode: reply (0x0002)"
+msgstr "Mã thao tác: 0x%1"
+
+#: protocols/arp-protocol.cpp:173
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Sender MAC address: %1"
 msgstr "Địa chỉ MAC người gửi: %1"
 
-#: protocols/arp-protocol.cpp:164
+#: protocols/arp-protocol.cpp:174
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Sender IP address: %1"
 msgstr "Địa chỉ IP người gửi: %1"
 
-#: protocols/arp-protocol.cpp:165
+#: protocols/arp-protocol.cpp:175
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
 "Target MAC address: %1"
 msgstr "Địa chỉ MAC đích: %1"
 
-#: protocols/arp-protocol.cpp:166
+#: protocols/arp-protocol.cpp:176
 #, c-format
 msgid ""
 "_: ARP protocol field\n"
@@ -1134,21 +1145,24 @@ msgid ""
 msgstr "Địa chỉ IP đích: %1"
 
 #: protocols/icmp-protocol.cpp:82
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Echo Reply"
+"Echo reply"
 msgstr "Trả lời phản hồi"
 
 #: protocols/icmp-protocol.cpp:85
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Destination Unreachable"
+"Destination unreachable"
 msgstr "Không thể tới đích"
 
 #: protocols/icmp-protocol.cpp:88
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Source Quench"
+"Source quench"
 msgstr "Dập tắt nguồn"
 
 #: protocols/icmp-protocol.cpp:91
@@ -1164,15 +1178,17 @@ msgid ""
 msgstr "Phản hồi"
 
 #: protocols/icmp-protocol.cpp:97
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Time Exceeded"
+"Time exceeded"
 msgstr "Quá thời"
 
 #: protocols/icmp-protocol.cpp:100
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Parameter Problem"
+"Parameter problem"
 msgstr "Vấn đề tham số"
 
 #: protocols/icmp-protocol.cpp:103
@@ -1182,28 +1198,31 @@ msgid ""
 msgstr "Nhãn giờ"
 
 #: protocols/icmp-protocol.cpp:106
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Timestamp Reply"
+"Timestamp reply"
 msgstr "Trả lời nhãn giờ"
 
 #: protocols/icmp-protocol.cpp:109
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Information Request"
+"Information request"
 msgstr "Yêu cầu thông tin"
 
 #: protocols/icmp-protocol.cpp:112
+#, fuzzy
 msgid ""
 "_: ICMP type\n"
-"Information Reply"
+"Information reply"
 msgstr "Trả lời thông tin"
 
 #: protocols/icmp-protocol.cpp:125
 #, fuzzy
 msgid ""
 "_: ICMP code type\n"
-"Host Unreachable"
+"Host unreachable"
 msgstr "Không thể tới đích"
 
 #: protocols/icmp-protocol.cpp:173

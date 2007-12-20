@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-19 06:24+0100\n"
+"POT-Creation-Date: 2007-12-20 06:16+0100\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1684,46 +1684,46 @@ msgstr ""
 #. i18n: file ./ui/wdglayerbox.ui line 87
 #: rc.cpp:347
 #, fuzzy
-msgid "Create a new layer"
+msgid "Create a new mask or layer"
 msgstr "Tạo layer mới"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 115
+#. i18n: file ./ui/wdglayerbox.ui line 112
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 118
+#. i18n: file ./ui/wdglayerbox.ui line 115
 #: rc.cpp:350 rc.cpp:353
 #, fuzzy
 msgid "Duplicate layer or mask"
 msgstr "Công cụ &trình lọc"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 121
+#. i18n: file ./ui/wdglayerbox.ui line 118
 #: rc.cpp:356
 msgid "Duplicate the currently selected layer or mask"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 146
+#. i18n: file ./ui/wdglayerbox.ui line 140
 #: rc.cpp:359
 #, fuzzy
-msgid "Move layer down"
+msgid "Move layer or mask down"
 msgstr "Layer đã gỡ bỏ"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 171
+#. i18n: file ./ui/wdglayerbox.ui line 162
 #: rc.cpp:362
 #, fuzzy
-msgid "Move layer up"
+msgid "Move layer or mask up"
 msgstr "Layer đã gỡ bỏ"
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 196
+#. i18n: file ./ui/wdglayerbox.ui line 184
 #: rc.cpp:365
 msgid "View or change the layer properties"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 199
+#. i18n: file ./ui/wdglayerbox.ui line 187
 #. i18n: tag string
 #. i18n: file ./ui/wdgtextbrush.ui line 93
 #. i18n: tag string
@@ -1735,10 +1735,10 @@ msgid "..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./ui/wdglayerbox.ui line 234
+#. i18n: file ./ui/wdglayerbox.ui line 222
 #: rc.cpp:371
 #, fuzzy
-msgid "Delete the layer"
+msgid "Delete the layer or mask"
 msgstr "Tạo layer mới"
 
 #. i18n: tag string
@@ -4342,7 +4342,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/colorrange/wdg_colorrange.ui line 91
-#: rc.cpp:1822 ui/kis_selection_manager.cc:163
+#: rc.cpp:1822 ui/kis_selection_manager.cc:159
 #: plugins/filters/example/example.cc:67
 msgid "&Invert"
 msgstr ""
@@ -6156,8 +6156,12 @@ msgstr "&Trắng"
 msgid "Selection"
 msgstr "Chọn"
 
-#: ui/kis_mask_manager.cc:381 ui/kis_mask_manager.cc:406
-#: ui/kis_layer_manager.cc:723
+#: ui/kis_mask_manager.cc:381
+#, fuzzy
+msgid "Mirror Mask X"
+msgstr "Cho layer hiện tại xuống dưới"
+
+#: ui/kis_mask_manager.cc:406 ui/kis_layer_manager.cc:723
 #, fuzzy
 msgid "Mirror Layer X"
 msgstr "Cho layer hiện tại xuống dưới"
@@ -6659,121 +6663,103 @@ msgid ""
 "canvas. <p>Uncheck this to hide the rulers."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:147
+#: ui/kis_selection_manager.cc:143
 #, fuzzy
 msgid "Paste into &New Image"
 msgstr "Ảnh mới"
 
-#: ui/kis_selection_manager.cc:158 ui/kis_selection_manager.cc:710
+#: ui/kis_selection_manager.cc:154 ui/kis_selection_manager.cc:685
 #, fuzzy
 msgid "&Reselect"
 msgstr "Chọn"
 
-#: ui/kis_selection_manager.cc:168
+#: ui/kis_selection_manager.cc:164
 #, fuzzy
 msgid "Copy Selection to New Layer"
 msgstr "Copy chọn tới layer mới"
 
-#: ui/kis_selection_manager.cc:173
+#: ui/kis_selection_manager.cc:169
 #, fuzzy
 msgid "Cut Selection to New Layer"
 msgstr "Copy chọn tới layer mới"
 
-#: ui/kis_selection_manager.cc:178
+#: ui/kis_selection_manager.cc:174
 #, fuzzy
 msgid "Feather"
 msgstr "Layer"
 
-#: ui/kis_selection_manager.cc:183 ui/kis_selection_manager.cc:686
+#: ui/kis_selection_manager.cc:179 ui/kis_selection_manager.cc:661
 #, fuzzy
 msgid "Fill with Foreground Color"
 msgstr "Fill bằng Pattern"
 
-#: ui/kis_selection_manager.cc:188 ui/kis_selection_manager.cc:691
+#: ui/kis_selection_manager.cc:184 ui/kis_selection_manager.cc:666
 #, fuzzy
 msgid "Fill with Background Color"
 msgstr "Fill bằng Pattern"
 
-#: ui/kis_selection_manager.cc:193 ui/kis_selection_manager.cc:696
+#: ui/kis_selection_manager.cc:189 ui/kis_selection_manager.cc:671
 #, fuzzy
 msgid "Fill with Pattern"
 msgstr "Fill bằng Pattern"
 
-#: ui/kis_selection_manager.cc:197
+#: ui/kis_selection_manager.cc:193
 #, fuzzy
 msgid "Display Selection"
 msgstr "Chọn"
 
-#: ui/kis_selection_manager.cc:202
+#: ui/kis_selection_manager.cc:198
 #, fuzzy
 msgid "Hide Selection"
 msgstr "Bỏ chọn"
 
-#: ui/kis_selection_manager.cc:205
-msgid "Expand..."
-msgstr ""
-
-#: ui/kis_selection_manager.cc:209
+#: ui/kis_selection_manager.cc:201
 msgid "Smooth..."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:213
-#, fuzzy
-msgid "Contract..."
-msgstr "Góc:"
-
-#: ui/kis_selection_manager.cc:217
-msgid "Similar"
-msgstr ""
-
-#: ui/kis_selection_manager.cc:221
-#, fuzzy
-msgid "Transform..."
-msgstr "Công cụ &xoá"
-
-#: ui/kis_selection_manager.cc:429
+#: ui/kis_selection_manager.cc:404
 #, fuzzy
 msgid "Cut"
 msgstr "Chổi"
 
-#: ui/kis_selection_manager.cc:500
+#: ui/kis_selection_manager.cc:475
 msgid "(pasted)"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:583
+#: ui/kis_selection_manager.cc:558
 #, fuzzy
 msgid "Select All"
 msgstr "Chọn"
 
-#: ui/kis_selection_manager.cc:605
+#: ui/kis_selection_manager.cc:580
 #, fuzzy
 msgid "Deselect"
 msgstr "Chọn"
 
-#: ui/kis_selection_manager.cc:635
+#: ui/kis_selection_manager.cc:610
 #, fuzzy
 msgid "Clear"
 msgstr "Chổi"
 
-#: ui/kis_selection_manager.cc:735 plugins/filters/example/example.h:47
+#: ui/kis_selection_manager.cc:710 plugins/filters/example/example.h:47
 msgid "Invert"
 msgstr ""
 
-#: ui/kis_selection_manager.cc:789
+#: ui/kis_selection_manager.cc:764
 msgid "Feather..."
 msgstr ""
 
-#: ui/kis_selection_manager.cc:868
+#: ui/kis_selection_manager.cc:843
 #, fuzzy
 msgid "Grow"
 msgstr "Krayons"
 
-#: ui/kis_selection_manager.cc:1000
+#: ui/kis_selection_manager.cc:975
 #, fuzzy
 msgid "Shrink"
 msgstr "Độ sắc:"
 
-#: ui/kis_selection_manager.cc:1380
+#: ui/kis_selection_manager.cc:1355
 #, fuzzy
 msgid "Border"
 msgstr "Góc:"
@@ -7039,21 +7025,21 @@ msgstr ""
 msgid "YCBCR (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/gray_u16_plugin.cc:46
+#: colorspaces/gray_u16_no_alpa/gray_u16_plugin.cc:46
 #, fuzzy
 msgid "GRAY/Alpha16 Histogram"
 msgstr "RGB + kênh &alpha "
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.h:48
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.h:48
 msgid "Grayscale (16-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:34
 msgid "Grayscale 16-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u16/kis_gray_u16_colorspace.cc:36
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:34
+#: colorspaces/gray_u16_no_alpa/kis_gray_u16_colorspace.cc:36
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:34
 msgid "Gray"
 msgstr "Xám"
 
@@ -7111,15 +7097,15 @@ msgstr ""
 msgid "LMS Cone Space (32-bit float/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/kis_gray_colorspace.cc:32
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:32
 msgid "Grayscale without alpha (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/kis_gray_colorspace.h:48
+#: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.h:48
 msgid "Grayscale (8-bit integer/channel)"
 msgstr ""
 
-#: colorspaces/gray_u8/gray_plugin.cc:51
+#: colorspaces/gray_u8_no_alpha/gray_plugin.cc:51
 #, fuzzy
 msgid "GRAY/Alpha8 Histogram"
 msgstr "RGB + kênh &alpha "
@@ -7422,12 +7408,12 @@ msgid "Select similar colors"
 msgstr "Công cụ chọn"
 
 #: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:146
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:218
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:216
 #, fuzzy
 msgid "Similar Selection"
 msgstr "Chọn"
 
-#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:239
+#: plugins/tools/tool_selectsimilar/kis_tool_selectsimilar.cc:237
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:155
 msgid "Fuzziness: "
 msgstr ""
@@ -8476,6 +8462,14 @@ msgstr ""
 #: plugins/filters/bumpmap/bumpmap.cc:93
 msgid "&Bumpmap..."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Contract..."
+#~ msgstr "Góc:"
+
+#, fuzzy
+#~ msgid "Transform..."
+#~ msgstr "Công cụ &xoá"
 
 #, fuzzy
 #~ msgid "Rotate Image CW"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-04 06:29+0100\n"
+"POT-Creation-Date: 2008-01-09 07:17+0100\n"
 "PO-Revision-Date: 2007-06-23 22:34+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -26,7 +26,21 @@ msgstr "Cửa sổ '%1' đòi sự chú ý."
 msgid "Required X extensions (XComposite and XDamage) are not available."
 msgstr ""
 
-#: compositingprefs.cpp:112
+#: compositingprefs.cpp:92
+msgid "GLX/OpenGL are not available and only OpenGL support is compiled."
+msgstr ""
+
+#: compositingprefs.cpp:95
+msgid ""
+"XRender/XFixes extensions are not available and only XRender support is "
+"compiled."
+msgstr ""
+
+#: compositingprefs.cpp:101
+msgid "GLX/OpenGL and XRender/XFixes are not available."
+msgstr ""
+
+#: compositingprefs.cpp:106
 msgid ""
 "Compositing was disabled at compile time.\n"
 "Probably Xorg development headers were not installed."
@@ -477,11 +491,15 @@ msgid "Kill Window"
 msgstr "Diệt cửa sổ"
 
 #: kwinbindings.cpp:195
-msgid "Window Screenshot To Clipboard"
+#, fuzzy
+#| msgid "Window Screenshot To Clipboard"
+msgid "Window Screenshot to Clipboard"
 msgstr "Ảnh chụp cửa sổ tới bảng nháp"
 
 #: kwinbindings.cpp:196
-msgid "Desktop Screenshot To Clipboard"
+#, fuzzy
+#| msgid "Desktop Screenshot To Clipboard"
+msgid "Desktop Screenshot to Clipboard"
 msgstr "Ảnh chụp màn hình nền tới bảng nháp"
 
 #: kwinbindings.cpp:197
@@ -697,7 +715,7 @@ msgid "Animate desktop changes"
 msgstr ""
 
 #: effects/invert.cpp:39 effects/invert_config.cpp:48
-msgid "Toggle Invert effect"
+msgid "Toggle Invert Effect"
 msgstr ""
 
 #: effects/maketransparent_config.cpp:47
@@ -718,7 +736,15 @@ msgstr "Thay đổi kích thước cửa sổ"
 msgid "Dialogs:"
 msgstr ""
 
-#: effects/mousemark.cpp:50 effects/mousemark_config.cpp:68
+#: effects/mousemark.cpp:52
+msgid "Clear All Mouse Marks"
+msgstr ""
+
+#: effects/mousemark.cpp:56 effects/mousemark_config.cpp:71
+msgid "Clear Last Mouse Mark"
+msgstr ""
+
+#: effects/mousemark_config.cpp:68
 msgid "Clear Mouse Marks"
 msgstr ""
 
@@ -727,7 +753,7 @@ msgid "Toggle Expose Effect"
 msgstr ""
 
 #: effects/presentwindows.cpp:61 effects/presentwindows_config.cpp:75
-msgid "Toggle Expose effect (incl other desktops)"
+msgid "Toggle Expose Effect (incl other desktops)"
 msgstr ""
 
 #: effects/presentwindows.cpp:991
@@ -814,8 +840,18 @@ msgid "Active window has stronger shadow"
 msgstr ""
 
 #: effects/sharpen.cpp:40 effects/sharpen_config.cpp:48
-msgid "Toggle Sharpen effect"
+msgid "Toggle Sharpen Effect"
 msgstr ""
+
+#: effects/snow.cpp:63
+msgid "Snow"
+msgstr ""
+
+#: effects/snow_config.cpp:65
+#, fuzzy
+#| msgid "Window to Next Desktop"
+msgid "Toggle Snow on the desktop"
+msgstr "Cửa sổ tới màn hình tiếp"
 
 #: effects/thumbnailaside.cpp:40 effects/thumbnailaside_config.cpp:71
 msgid "Toggle Thumbnail for Current Window"

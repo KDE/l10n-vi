@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-10 10:26+0100\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -121,8 +121,8 @@ msgstr "Tùy chọn bổ sung truyền"
 msgid "Folder and extension can not be empty."
 msgstr "Thư mục và phần mở rộng không thể rỗng."
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:115 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:168 ui/transferhistory.cpp:214
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:450
+#: core/kget.cpp:736 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr "Lỗi"
 
@@ -161,8 +161,20 @@ msgctxt "speed of download"
 msgid "Speed"
 msgstr "Tốc độ"
 
-#: core/transfergroup.cpp:115 ui/transferhistory.cpp:168
-#: ui/transferhistory.cpp:214
+#: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
+#, fuzzy
+#| msgid "Finished"
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "Xong"
+
+#: core/transfergroup.cpp:114
+msgctxt "the transfer has been aborted"
+msgid "Aborted"
+msgstr ""
+
+#: core/transfergroup.cpp:117 ui/transferhistory.cpp:177
+#: ui/transferhistory.cpp:224
 msgid "History-File cannot be opened correctly!"
 msgstr ""
 
@@ -367,6 +379,11 @@ msgid "Aborted"
 msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:153
+#, fuzzy
+#| msgid "Downloads"
+msgid "Downloading..."
+msgstr "Tải về"
+
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:240
@@ -751,7 +768,7 @@ msgstr ""
 msgid "Transfer details"
 msgstr "Chi tiết truyền:"
 
-#: ui/transferhistory.cpp:30
+#: ui/transferhistory.cpp:33
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "Transfer History"
@@ -901,58 +918,58 @@ msgstr ""
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:90
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:93
+#: extensions/konqueror/kget_linkview.cpp:91
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:94
+#: extensions/konqueror/kget_linkview.cpp:92
 #, fuzzy
 #| msgid "Default Download Folders"
 msgid "Download checked"
 msgstr "Thư mục tải về mặc định"
 
-#: extensions/konqueror/kget_linkview.cpp:96
+#: extensions/konqueror/kget_linkview.cpp:94
 #, fuzzy
 #| msgid "Change"
 msgid "Cancel"
 msgstr "Đổi"
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: extensions/konqueror/kget_linkview.cpp:130
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: extensions/konqueror/kget_linkview.cpp:131
 #, fuzzy
 #| msgid "Name"
 msgid "File Name"
 msgstr "Tên"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: extensions/konqueror/kget_linkview.cpp:132
 msgid "Description"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:135
+#: extensions/konqueror/kget_linkview.cpp:133
 #, fuzzy
 #| msgid "File"
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Tập tin"
 
-#: extensions/konqueror/kget_linkview.cpp:136
+#: extensions/konqueror/kget_linkview.cpp:134
 msgid "Location (URL)"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:197
+#: extensions/konqueror/kget_linkview.cpp:195
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all filtered"
 msgstr ""
 
@@ -1876,7 +1893,7 @@ msgstr "<speed>"
 #: rc.cpp:375
 #, fuzzy
 #| msgid "Source:"
-msgid "Source"
+msgid "Source-File"
 msgstr "Nguồn:"
 
 #. i18n: tag string
@@ -1897,25 +1914,33 @@ msgstr ""
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
 #, fuzzy
-#| msgid "Start"
-msgid "State"
-msgstr "Chạy"
+#| msgid "&File"
+msgid "File-Size"
+msgstr "&Tập tin"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 78
+#. i18n: file ui/transferhistory.ui line 67
 #: rc.cpp:387
+#, fuzzy
+#| msgid "Status"
+msgid "Status"
+msgstr "Trạng thái"
+
+#. i18n: tag string
+#. i18n: file ui/transferhistory.ui line 83
+#: rc.cpp:390
 msgid "Clear History"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 104
-#: rc.cpp:390
+#. i18n: file ui/transferhistory.ui line 109
+#: rc.cpp:393
 msgid "Filter history..."
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 113
-#: rc.cpp:393
+#. i18n: file ui/transferhistory.ui line 118
+#: rc.cpp:396
 #, fuzzy
 #| msgid "Delete Selected"
 msgctxt "delete selected transfer"
@@ -1923,8 +1948,8 @@ msgid "Delete Selected"
 msgstr "Xoá mục đã chọn"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 118
-#: rc.cpp:396
+#. i18n: file ui/transferhistory.ui line 123
+#: rc.cpp:399
 #, fuzzy
 #| msgid "Downloads"
 msgid "Download"
@@ -1932,39 +1957,44 @@ msgstr "Tải về"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:399
+#: rc.cpp:402
 msgid "&File"
 msgstr "&Tập tin"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:402
+#: rc.cpp:405
 msgid "&Downloads"
 msgstr "Tải &về"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:405
+#: rc.cpp:408
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "&Help"
 msgstr "Trợ g&iúp"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "&Tools"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Start"
+#~ msgid "State"
+#~ msgstr "Chạy"
 
 #, fuzzy
 #~| msgid "Hiding drop target"

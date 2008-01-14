@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ksniffer\n"
-"POT-Creation-Date: 2008-01-13 14:36+0100\n"
+"POT-Creation-Date: 2008-01-14 13:48+0100\n"
 "PO-Revision-Date: 2007-06-14 21:29+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -326,53 +326,53 @@ msgstr "Vùng này hiển thị chi tiết về gói tin đã bất được ch�
 msgid "More details about the captured packets"
 msgstr "Chi tiết thêm về gói tin đã bắt."
 
-#: ksniffermainwidget.cpp:463
+#: ksniffermainwidget.cpp:464
 #, c-format
 msgid "Frame number: %1"
 msgstr "Số khung: %1"
 
-#: ksniffermainwidget.cpp:464
+#: ksniffermainwidget.cpp:465
 #, c-format
 msgid ""
 "_: general field for the frame header\n"
 "Capture time: %1"
 msgstr "Thời gian bắt: %1"
 
-#: ksniffermainwidget.cpp:467
+#: ksniffermainwidget.cpp:468
 msgid ""
 "_: general field for the frame header\n"
 "Delay from the previous packet: %1 s"
 msgstr "Trễ sau gói tin trước: %1 giây"
 
-#: ksniffermainwidget.cpp:470
+#: ksniffermainwidget.cpp:471
 msgid ""
 "_: general field for the frame header\n"
 "Delay from the first packet: %1 s"
 msgstr "Trễ sau gói tin đầu : %1 giây"
 
-#: ksniffermainwidget.cpp:472
+#: ksniffermainwidget.cpp:473
 msgid ""
 "_: general field for the frame header\n"
 "Packet length: %1 bytes"
 msgstr "Cỡ gói tin: %1 byte"
 
-#: ksniffermainwidget.cpp:475
+#: ksniffermainwidget.cpp:476
 msgid ""
 "_: general field for the frame header\n"
 "Captured packet length: %1 bytes"
 msgstr "Cỡ gói tin đã bắt: %1 byte"
 
-#: ksniffermainwidget.cpp:483
+#: ksniffermainwidget.cpp:484
 #, c-format
 msgid "Frame header: %1"
 msgstr "Phần đầu khung: %1"
 
-#: ksniffermainwidget.cpp:495
+#: ksniffermainwidget.cpp:496
 #, c-format
 msgid "Protocol information: %1"
 msgstr "Thông tin giao thức: %1"
 
-#: ksniffermainwidget.cpp:516
+#: ksniffermainwidget.cpp:517
 msgid ""
 "_: specific protocol information\n"
 "%1 information:"
@@ -444,7 +444,7 @@ msgstr "Bắt Linux Cooked"
 msgid "KSniffer - The KDE Network Sniffer"
 msgstr "KSniffer — Bộ Hít Mạng KDE"
 
-#: ksniffer.cpp:133 ksniffer.cpp:1349
+#: ksniffer.cpp:133 ksniffer.cpp:1350
 msgid "Ready."
 msgstr "Sẵn sàng."
 
@@ -622,7 +622,7 @@ msgstr ""
 "<p>Bạn có thật sự muốn tiếp tục không?</p>"
 
 #: ksniffer.cpp:786 ksniffer.cpp:973 ksniffer.cpp:997 ksniffer.cpp:1034
-#: ksniffer.cpp:1086 ksniffer.cpp:1504
+#: ksniffer.cpp:1086 ksniffer.cpp:1505
 msgid "Capturing"
 msgstr "Đang bắt"
 
@@ -731,21 +731,21 @@ msgstr "Gói tin đã bắt chưa lưu"
 msgid "Saved captured-packets."
 msgstr "Các gói tin đã bắt đã được lưu."
 
-#: ksniffer.cpp:1477
+#: ksniffer.cpp:1478
 msgid "Could not open temporary file '%1' for writing"
 msgstr "Không thể mở tập tin tạm thời « %1 » để ghi."
 
-#: ksniffer.cpp:1478
+#: ksniffer.cpp:1479
 msgid "Writing Error"
 msgstr "Lỗi ghi"
 
-#: ksniffer.cpp:1505
+#: ksniffer.cpp:1506
 msgid ""
 "<p>You selected <b>%1</b> interface."
 "<br>Now starting to capture packets.</p>"
 msgstr "<p>Bạn đã chọn giao diện <b>%1</b>.<br>Mới bắt đầu bắt gói tin.</p>"
 
-#: ksniffer.cpp:1508
+#: ksniffer.cpp:1509
 msgid "KSniffer - Capturing on %1 interface"
 msgstr "KSniffer — Đang bắt trên giao diện %1"
 
@@ -794,7 +794,7 @@ msgstr "Hiện màn hình chà&o mừng khi khởi chạy"
 #. i18n: file ./options/base_guioptiontab.ui line 91
 #: rc.cpp:37
 #, no-c-format
-msgid "Don't show the service name in the Protocol column"
+msgid "Show the service name in the Protocol column"
 msgstr ""
 
 #. i18n: file ./options/base_guioptiontab.ui line 99
@@ -1006,6 +1006,25 @@ msgstr ""
 #: options/guioptiontab.cpp:71
 msgid "It will show a splash screen at the startup"
 msgstr "Hiển thị màn hình chào mừng khi khởi chạy"
+
+#: options/guioptiontab.cpp:73
+msgid ""
+"The <b>Protocol</b> column is referred to the packets list. Changes are applyed "
+"just to the new packets"
+msgstr ""
+
+#: options/guioptiontab.cpp:75
+msgid ""
+"<p>If you check this, when KSniffer will detect the service application as "
+"could be an IMAP, SMTP, POP3, DNS protocol you will see that names in place of "
+"just TCP or UDP (according to the relative protocol) in the <b>Protocol</b> "
+"column in the packets list.</p>"
+"<p>This option has effect only on the new packets. If you want to apply the "
+"change to all packets you need to reload the file if you loaded one, or just "
+"restart KSniffer to have this option enabled for all packets.</p>"
+"<p>The protocol name is obtained from your OS from the file <b>/etc/services</b>"
+".</p>"
+msgstr ""
 
 #: options/snifferoptiontab.cpp:56
 msgid "The folder where KSniffer stores a temporary file"

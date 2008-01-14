@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-13 10:06+0100\n"
+"POT-Creation-Date: 2008-01-14 09:41+0100\n"
 "PO-Revision-Date: 2002-06-08 00:18+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -177,6 +177,13 @@ msgstr "Thiếu trình lọc nhập"
 #, fuzzy
 msgid "&New View"
 msgstr "&Tháo gỡ View"
+
+#: main/KoExistingDocumentPane.cpp:49 main/KoMainWindow.cpp:1227
+#: main/KoOpenPane.cpp:346 main/KoOpenPane.cpp:350
+#: guiutils/KoTemplateChooseDia.cpp:197
+#, fuzzy
+msgid "Open Document"
+msgstr "Mở tài liệu"
 
 #: main/KoDocumentInfoDlg.cpp:72 main/KoMainWindow.cpp:277
 msgid "Document Information"
@@ -667,7 +674,7 @@ msgstr ""
 msgid "a drawing"
 msgstr ""
 
-#: main/KoDocument.cpp:2805
+#: main/KoDocument.cpp:2806
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Không thể tải ảnh"
@@ -937,11 +944,6 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
-#: main/KoMainWindow.cpp:1227 guiutils/KoTemplateChooseDia.cpp:197
-#, fuzzy
-msgid "Open Document"
-msgstr "Mở tài liệu"
-
 #: main/KoMainWindow.cpp:1229
 #, fuzzy
 msgid "Import Document"
@@ -977,17 +979,12 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: main/KoOpenPane.cpp:117
-#, fuzzy
-msgid "Open Existing Document..."
-msgstr "Mở tài liệu đã tồn tạị"
-
-#: main/KoOpenPane.cpp:178
+#: main/KoOpenPane.cpp:165
 #, fuzzy
 msgid "Recent Documents"
 msgstr "Mở tài liệu &gần đây"
 
-#: main/KoOpenPane.cpp:258
+#: main/KoOpenPane.cpp:255
 #, fuzzy
 msgid "Custom Document"
 msgstr "Mở tài liệu"
@@ -1675,7 +1672,7 @@ msgstr ""
 
 #. i18n: tag Text
 #. i18n: file ./main/koffice_shell.rc line 54
-#: rc.cpp:12 guiutils/KoInsertLink.cpp:66
+#: rc.cpp:12
 #, fuzzy
 msgid "File"
 msgstr "Đầu đề:"
@@ -1687,13 +1684,13 @@ msgid "DetailsPaneBase"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./main/koDetailsPaneBase.ui line 138
+#. i18n: file ./main/koDetailsPaneBase.ui line 102
 #: rc.cpp:18
 msgid "Always use this template at application start up"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./main/koDetailsPaneBase.ui line 141
+#. i18n: file ./main/koDetailsPaneBase.ui line 105
 #: rc.cpp:21
 msgid "Always use this template"
 msgstr ""
@@ -2398,9 +2395,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoGeneralPropertyUi.ui line 56
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 29
-#: rc.cpp:379 rc.cpp:421
+#: rc.cpp:379
 msgid "Position"
 msgstr ""
 
@@ -2438,134 +2433,100 @@ msgid "Save palette"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 22
-#: rc.cpp:418
-msgid "Protect size and position"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 54
-#: rc.cpp:424 guiutils/KoPageLayoutDia.cpp:323
-#: guiutils/KoPageLayoutDia.cpp:351
-msgid "Left:"
-msgstr " Trái:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 64
-#: rc.cpp:427
-#, fuzzy
-msgid "Width:"
-msgstr "Bề rộng:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 74
-#: rc.cpp:430
-#, fuzzy
-msgid "Top:"
-msgstr "Đỉnh:"
-
-#. i18n: tag string
-#. i18n: file ./guiutils/KoShapeGeometry.ui line 84
-#: rc.cpp:433
-#, fuzzy
-msgid "Height:"
-msgstr "Chiều cao:"
-
-#. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 51
-#: rc.cpp:436
+#: rc.cpp:418
 #, fuzzy
 msgid "Data"
 msgstr "Tên: "
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 74
-#: rc.cpp:439
+#: rc.cpp:421
 #, fuzzy
 msgid "E&ncoding:"
 msgstr "Đường Head:"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 118
-#: rc.cpp:442
+#: rc.cpp:424
 msgid "First row contains headers"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 131
-#: rc.cpp:445
+#: rc.cpp:427
 msgid "First column contains headers"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 155
-#: rc.cpp:448
+#: rc.cpp:430
 #, fuzzy
 msgid "Format"
 msgstr "Định dạng trang"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 167
-#: rc.cpp:451
+#: rc.cpp:433
 #, fuzzy
 msgid "Delimiter"
 msgstr "Dấu phân cách Trái"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 173
-#: rc.cpp:454
+#: rc.cpp:436
 #, fuzzy
 msgid "Comma"
 msgstr "Công ti:"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 183
-#: rc.cpp:457
+#: rc.cpp:439
 msgid "Semicolon"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 190
-#: rc.cpp:460
+#: rc.cpp:442
 #, fuzzy
 msgid "Other"
 msgstr "Nhập tên"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 197
-#: rc.cpp:463
+#: rc.cpp:445
 #, fuzzy
 msgid "Tabulator"
 msgstr "Tab &trái"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 204
-#: rc.cpp:466
+#: rc.cpp:448
 #, fuzzy
 msgid "Space"
 msgstr "Thêm ngoặc"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 249
-#: rc.cpp:469
+#: rc.cpp:451
 msgid "Text&quote:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 266
-#: rc.cpp:472
+#: rc.cpp:454
 msgid "\""
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 271
-#: rc.cpp:475
+#: rc.cpp:457
 msgid "'"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 276
-#: rc.cpp:478 guiutils/KoCsvImportDialog.cpp:220
+#: rc.cpp:460 guiutils/KoCsvImportDialog.cpp:220
 #: guiutils/KoCsvImportDialog.cpp:585 guiutils/KoCsvImportDialog.cpp:690
 #: guiutils/Kolinestyleaction.cpp:75
 msgid "None"
@@ -2573,51 +2534,51 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 300
-#: rc.cpp:481
+#: rc.cpp:463
 msgid "Decimal symbol:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 329
-#: rc.cpp:484
+#: rc.cpp:466
 msgid "Thousands separator:"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 374
-#: rc.cpp:487
+#: rc.cpp:469
 msgid "Ignore duplicate delimiters"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 381
-#: rc.cpp:490
+#: rc.cpp:472
 #, fuzzy
 msgid "&Format:"
 msgstr "Định dạng trang"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 395
-#: rc.cpp:493
+#: rc.cpp:475
 msgid "Ranges"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 401
-#: rc.cpp:496
+#: rc.cpp:478
 msgid "Update"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 468
-#: rc.cpp:499
+#: rc.cpp:481
 #, fuzzy
 msgid "Import columns:"
 msgstr "Mở tài liệu"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 487
-#: rc.cpp:502
+#: rc.cpp:484
 #, fuzzy
 msgid "Import lines:"
 msgstr "Nhập trình lọc thất bại"
@@ -2626,93 +2587,74 @@ msgstr "Nhập trình lọc thất bại"
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 497
 #. i18n: tag string
 #. i18n: file ./guiutils/KoCsvImportDialog.ui line 520
-#: rc.cpp:505 rc.cpp:508
+#: rc.cpp:487 rc.cpp:490
 msgid "to"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 25
-#: rc.cpp:511
+#: rc.cpp:493
 msgid "Footnote/ Endnote"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 37
-#: rc.cpp:514
+#: rc.cpp:496
 #, fuzzy
 msgid "Spacing between footnote and body:"
 msgstr "Khoảng cách giữa footer và thân (%1):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 47
-#: rc.cpp:517
+#: rc.cpp:499
 #, fuzzy
 msgid "Footer"
 msgstr "Footer"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 59
-#: rc.cpp:520
+#: rc.cpp:502
 msgid "Different footer for even and odd pages"
 msgstr "Footer riêng cho trang lẻ và chẵn"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 66
-#: rc.cpp:523
+#: rc.cpp:505
 msgid "Different footer for the first page"
 msgstr "Footer riêng cho trang đầu"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 73
-#: rc.cpp:526
+#: rc.cpp:508
 #, fuzzy
 msgid "Spacing between footer and body:"
 msgstr "Khoảng cách giữa footer và thân (%1):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 83
-#: rc.cpp:529
+#: rc.cpp:511
 #, fuzzy
 msgid "Header"
 msgstr "Header"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 95
-#: rc.cpp:532
+#: rc.cpp:514
 #, fuzzy
 msgid "Spacing between header and body:"
 msgstr "Khoảng cách giữa header và thân (%1):"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 102
-#: rc.cpp:535
+#: rc.cpp:517
 msgid "Different header for even and odd pages"
 msgstr "Header khác cho trang lẻ và chẵn"
 
 #. i18n: tag string
 #. i18n: file ./guiutils/KoPageLayoutHeaderBase.ui line 109
-#: rc.cpp:538
+#: rc.cpp:520
 msgid "Different header for the first page"
 msgstr "Header khác cho trang đầu"
-
-#: guiutils/Kolinewidthaction.cpp:102
-#, fuzzy
-msgid "&Custom..."
-msgstr "Tuỳ biến"
-
-#: guiutils/Kolinewidthaction.cpp:167
-#, fuzzy
-msgid "Custom Line Width"
-msgstr "Tuỳ biến"
-
-#: guiutils/Kolinewidthaction.cpp:175
-#, fuzzy
-msgid "Line width:"
-msgstr "Bề rộng:"
-
-#: guiutils/KoPictureFilePreview.cpp:116
-msgid "*.svg *.wmf *.qpic|Clipart (*.svg *.wmf *.qpic)"
-msgstr ""
 
 #: guiutils/KoDocumentSectionToolTip.cpp:51
 msgid "Yes"
@@ -2816,6 +2758,10 @@ msgstr "Header và Footer"
 #, fuzzy
 msgid "Head Line"
 msgstr "Đường Head:"
+
+#: guiutils/KoPageLayoutDia.cpp:323 guiutils/KoPageLayoutDia.cpp:351
+msgid "Left:"
+msgstr " Trái:"
 
 #: guiutils/KoPageLayoutDia.cpp:330 guiutils/KoPageLayoutDia.cpp:358
 msgid "Mid:"
@@ -2928,10 +2874,6 @@ msgid "&Position:"
 msgstr ""
 "\n"
 " Định hướng:"
-
-#: guiutils/KoShapeGeometry.cpp:28
-msgid "Geometry"
-msgstr ""
 
 #: guiutils/KoTemplateChooseDia.cpp:290
 #, fuzzy
@@ -3070,54 +3012,6 @@ msgstr ""
 #, fuzzy
 msgid "Add / Remove Colors..."
 msgstr "Máu text khác ..."
-
-#: guiutils/KoInsertLink.cpp:48
-#, fuzzy
-msgid "Insert Link"
-msgstr "Chèn pattern"
-
-#: guiutils/KoInsertLink.cpp:54
-#, fuzzy
-msgid "Internet"
-msgstr "Nhập tên"
-
-#: guiutils/KoInsertLink.cpp:60
-msgid "Mail & News"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:74
-msgid "Bookmark"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:221 guiutils/KoInsertLink.cpp:295
-#: guiutils/KoInsertLink.cpp:378 guiutils/KoInsertLink.cpp:449
-#, fuzzy
-msgid "Text to display:"
-msgstr "&Text sẽ tìm"
-
-#: guiutils/KoInsertLink.cpp:229
-msgid "Internet address:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:303
-msgid "Bookmark name:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:386
-msgid "Target:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:456
-msgid "Recent file:"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:474
-msgid "No Entries"
-msgstr ""
-
-#: guiutils/KoInsertLink.cpp:487
-msgid "File location:"
-msgstr ""
 
 #: guiutils/KoResourceItemChooser.cpp:99
 #, fuzzy
@@ -3321,22 +3215,6 @@ msgstr ""
 #: guiutils/KoZoomMode.cpp:29
 msgid "Actual Pixels"
 msgstr ""
-
-#: guiutils/KoTabChooser.cpp:160
-msgid "Tabulator &Left"
-msgstr "Tab &trái"
-
-#: guiutils/KoTabChooser.cpp:161
-msgid "Tabulator &Center"
-msgstr "Tab &giữa"
-
-#: guiutils/KoTabChooser.cpp:162
-msgid "Tabulator &Right"
-msgstr "Tab &phải"
-
-#: guiutils/KoTabChooser.cpp:163
-msgid "Tabulator &Decimal Point"
-msgstr "Tabulator &Decimal Point"
 
 #: guiutils/KoEditColorSetDialog.cpp:144
 msgid "Add Color To Palette"
@@ -3705,6 +3583,58 @@ msgstr ""
 #, fuzzy
 msgid "Reparent shapes"
 msgstr "Text đã &chọn"
+
+#, fuzzy
+#~ msgid "Open Existing Document..."
+#~ msgstr "Mở tài liệu đã tồn tạị"
+
+#, fuzzy
+#~ msgid "Width:"
+#~ msgstr "Bề rộng:"
+
+#, fuzzy
+#~ msgid "Top:"
+#~ msgstr "Đỉnh:"
+
+#, fuzzy
+#~ msgid "Height:"
+#~ msgstr "Chiều cao:"
+
+#, fuzzy
+#~ msgid "&Custom..."
+#~ msgstr "Tuỳ biến"
+
+#, fuzzy
+#~ msgid "Custom Line Width"
+#~ msgstr "Tuỳ biến"
+
+#, fuzzy
+#~ msgid "Line width:"
+#~ msgstr "Bề rộng:"
+
+#, fuzzy
+#~ msgid "Insert Link"
+#~ msgstr "Chèn pattern"
+
+#, fuzzy
+#~ msgid "Internet"
+#~ msgstr "Nhập tên"
+
+#, fuzzy
+#~ msgid "Text to display:"
+#~ msgstr "&Text sẽ tìm"
+
+#~ msgid "Tabulator &Left"
+#~ msgstr "Tab &trái"
+
+#~ msgid "Tabulator &Center"
+#~ msgstr "Tab &giữa"
+
+#~ msgid "Tabulator &Right"
+#~ msgstr "Tab &phải"
+
+#~ msgid "Tabulator &Decimal Point"
+#~ msgstr "Tabulator &Decimal Point"
 
 #, fuzzy
 #~ msgid "&Raise"

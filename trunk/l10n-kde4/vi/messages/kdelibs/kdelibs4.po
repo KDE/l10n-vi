@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-20 08:55+0100\n"
+"POT-Creation-Date: 2008-01-21 07:41+0100\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -617,7 +617,7 @@ msgstr "Chu&yển"
 #. i18n: file ./kdeui/xmlgui/ui_standards.rc line 100
 #. i18n: tag text
 #. i18n: file ./khtml/khtml_browser.rc line 20
-#: rc.cpp:237 rc.cpp:378 kfile/kdiroperator.cpp:1618
+#: rc.cpp:237 rc.cpp:378 kfile/kdiroperator.cpp:1648
 msgid "&View"
 msgstr "&Xem"
 
@@ -3236,13 +3236,13 @@ msgctxt "@item Calendar system"
 msgid "Invalid Calendar Type"
 msgstr "Tên tập tin không hợp lệ"
 
-#: kdecore/date/kdatetime.cpp:1467 kdecore/date/kdatetime.cpp:1477
-#: kdecore/date/kdatetime.cpp:2814 kdecore/localization/klocale.cpp:1713
+#: kdecore/date/kdatetime.cpp:1466 kdecore/date/kdatetime.cpp:1476
+#: kdecore/date/kdatetime.cpp:2813 kdecore/localization/klocale.cpp:1713
 #: kdecore/localization/klocale.cpp:1839
 msgid "am"
 msgstr "sáng"
 
-#: kdecore/date/kdatetime.cpp:2822 kdecore/localization/klocale.cpp:1704
+#: kdecore/date/kdatetime.cpp:2821 kdecore/localization/klocale.cpp:1704
 #: kdecore/localization/klocale.cpp:1837
 msgid "pm"
 msgstr "chiều/tối"
@@ -5753,7 +5753,7 @@ msgstr "Bỏ"
 msgid "Test"
 msgstr "Thử ra"
 
-#: kdeui/util/kstandardguiitem.cpp:285 kfile/kdiroperator.cpp:1611
+#: kdeui/util/kstandardguiitem.cpp:285 kfile/kdiroperator.cpp:1641
 msgid "Properties"
 msgstr "Thuộc tính"
 
@@ -7869,26 +7869,44 @@ msgctxt "@action:button"
 msgid "&Finished"
 msgstr "Đã &xong"
 
+#: kdeui/sonnet/dialog.cpp:156
+#, fuzzy
+#| msgid "Spell Checker"
+msgid "Spell check stopped."
+msgstr "Bộ bắt lỗi chính tả"
+
+#: kdeui/sonnet/dialog.cpp:164
+#, fuzzy
+#| msgid "Spell Checker"
+msgid "Spell check canceled."
+msgstr "Bộ bắt lỗi chính tả"
+
+#: kdeui/sonnet/dialog.cpp:298
+#, fuzzy
+#| msgid "Spell Checker"
+msgid "Spell check complete."
+msgstr "Bộ bắt lỗi chính tả"
+
 #: kdeui/sonnet/configdialog.cpp:42
 #, fuzzy
 #| msgid "KSpell2 Configuration"
 msgid "Sonnet Configuration"
 msgstr "Cấu hình KSpell2"
 
-#: kdeui/sonnet/highlighter.cpp:222 kdeui/sonnet/highlighter.cpp:243
+#: kdeui/sonnet/highlighter.cpp:221 kdeui/sonnet/highlighter.cpp:242
 #: kde3support/kdeui/k3syntaxhighlighter.cpp:470
 #: kde3support/kdeui/k3syntaxhighlighter.cpp:576
 msgid "As-you-type spell checking enabled."
 msgstr "Khả năng bắt lỗi chính tả trong khi gõ đã được bật."
 
-#: kdeui/sonnet/highlighter.cpp:224
+#: kdeui/sonnet/highlighter.cpp:223
 #: kde3support/kdeui/k3syntaxhighlighter.cpp:578
 msgid "Too many misspelled words. As-you-type spell checking disabled."
 msgstr ""
 "Có quá nhiều từ chính tả sai. Khả năng bắt lỗi chính tả trong khi gõ đã bị "
 "tắt."
 
-#: kdeui/sonnet/highlighter.cpp:245
+#: kdeui/sonnet/highlighter.cpp:244
 #: kde3support/kdeui/k3syntaxhighlighter.cpp:472
 msgid "As-you-type spell checking disabled."
 msgstr "Khả năng bắt lỗi chính tả trong khi gõ đã bị tắt."
@@ -9236,19 +9254,19 @@ msgstr "Tỉnh"
 msgid "Comment"
 msgstr "Ghi chú"
 
-#: kdeui/widgets/ktextedit.cpp:320 kde3support/kdeui/k3textedit.cpp:232
+#: kdeui/widgets/ktextedit.cpp:326 kde3support/kdeui/k3textedit.cpp:232
 msgid "Check Spelling..."
 msgstr "Bắt lỗi chính tả..."
 
-#: kdeui/widgets/ktextedit.cpp:325 kde3support/kdeui/k3textedit.cpp:238
+#: kdeui/widgets/ktextedit.cpp:331 kde3support/kdeui/k3textedit.cpp:238
 msgid "Auto Spell Check"
 msgstr "Tự động bắt lỗi chính tả"
 
-#: kdeui/widgets/ktextedit.cpp:330 kde3support/kdeui/k3textedit.cpp:242
+#: kdeui/widgets/ktextedit.cpp:336 kde3support/kdeui/k3textedit.cpp:242
 msgid "Allow Tabulations"
 msgstr "Cho phép lập bảng"
 
-#: kdeui/widgets/ktextedit.cpp:436
+#: kdeui/widgets/ktextedit.cpp:442
 #, fuzzy
 #| msgid "Nothing to Delete"
 msgid "Nothing to spell check."
@@ -9604,11 +9622,11 @@ msgid "Custom Path"
 msgstr "Đường dẫn riêng"
 
 #: kfile/kdirselectdialog.cpp:115 kfile/kdirselectdialog.cpp:119
-#: kfile/kdiroperator.cpp:640 kfile/kdiroperator.cpp:648
+#: kfile/kdiroperator.cpp:642 kfile/kdiroperator.cpp:650
 msgid "New Folder"
 msgstr "Thư mục mới"
 
-#: kfile/kdirselectdialog.cpp:120 kfile/kdiroperator.cpp:649
+#: kfile/kdirselectdialog.cpp:120 kfile/kdiroperator.cpp:651
 #, kde-format
 msgid ""
 "Create new folder in:\n"
@@ -9617,12 +9635,12 @@ msgstr ""
 "Tạo thư mục mới trong:\n"
 "%1"
 
-#: kfile/kdirselectdialog.cpp:143 kfile/kdiroperator.cpp:675
+#: kfile/kdirselectdialog.cpp:143 kfile/kdiroperator.cpp:677
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Một tập tin hay thư mục tên %1 đã có."
 
-#: kfile/kdirselectdialog.cpp:147 kfile/kdiroperator.cpp:678
+#: kfile/kdirselectdialog.cpp:147 kfile/kdiroperator.cpp:680
 msgid "You do not have permission to create that folder."
 msgstr "Bạn không có quyền tạo thư mục đó."
 
@@ -9631,7 +9649,7 @@ msgid "Select Folder"
 msgstr "Chọn thư mục"
 
 #: kfile/kdirselectdialog.cpp:225 kfile/kdirselectdialog.cpp:261
-#: kfile/kdiroperator.cpp:1540
+#: kfile/kdiroperator.cpp:1570
 msgid "New Folder..."
 msgstr "Thư mục mới..."
 
@@ -9716,15 +9734,15 @@ msgstr ""
 "<qt>Bật tùy chọn này nếu bạn muốn mục nhập này hiển thị chỉ khi sử dụng ứng "
 "dụng hiện thời (%1).<p>Không bật thì mục nhập có sẵn trong mọi ứng dụng.</qt>"
 
-#: kfile/kdiroperator.cpp:693
+#: kfile/kdiroperator.cpp:695
 msgid "You did not select a file to delete."
 msgstr "Bạn chưa chọn tập tin cần xoá."
 
-#: kfile/kdiroperator.cpp:694
+#: kfile/kdiroperator.cpp:696
 msgid "Nothing to Delete"
 msgstr "Không có gì cần xoá"
 
-#: kfile/kdiroperator.cpp:715
+#: kfile/kdiroperator.cpp:717
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -9733,29 +9751,29 @@ msgstr ""
 "<qt>Bạn có thực sự muốn xoá\n"
 "<b>« %1 »</b> không?</qt>"
 
-#: kfile/kdiroperator.cpp:717
+#: kfile/kdiroperator.cpp:719
 msgid "Delete File"
 msgstr "Xoá tập tin"
 
-#: kfile/kdiroperator.cpp:722
+#: kfile/kdiroperator.cpp:724
 #, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Bạn thực sự muốn xoá %1 mục này không?"
 
-#: kfile/kdiroperator.cpp:724
+#: kfile/kdiroperator.cpp:726
 msgid "Delete Files"
 msgstr "Xoá tập tin"
 
-#: kfile/kdiroperator.cpp:755
+#: kfile/kdiroperator.cpp:757
 msgid "You did not select a file to trash."
 msgstr "Bạn chưa chọn tập tin cần kéo vào Rác."
 
-#: kfile/kdiroperator.cpp:756
+#: kfile/kdiroperator.cpp:758
 msgid "Nothing to Trash"
 msgstr "Không có gì cần kéo vào Rác."
 
-#: kfile/kdiroperator.cpp:773
+#: kfile/kdiroperator.cpp:775
 #, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -9764,90 +9782,90 @@ msgstr ""
 "<qt>Bạn có thực sự muốn kéo\n"
 " <b>« %1 »</b> vào Rác không?</qt>"
 
-#: kfile/kdiroperator.cpp:775
+#: kfile/kdiroperator.cpp:777
 msgid "Trash File"
 msgstr "Kéo tập tin vào Rác"
 
-#: kfile/kdiroperator.cpp:776 kfile/kdiroperator.cpp:783
+#: kfile/kdiroperator.cpp:778 kfile/kdiroperator.cpp:785
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "&Rác"
 
-#: kfile/kdiroperator.cpp:780
+#: kfile/kdiroperator.cpp:782
 #, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Bạn có thực sự muốn kéo những %1 mục này vào Rác không?"
 
-#: kfile/kdiroperator.cpp:782
+#: kfile/kdiroperator.cpp:784
 msgid "Trash Files"
 msgstr "Kéo tập tin vào Rác"
 
-#: kfile/kdiroperator.cpp:905 kfile/kdiroperator.cpp:1018
+#: kfile/kdiroperator.cpp:907 kfile/kdiroperator.cpp:1020
 msgid "The specified folder does not exist or was not readable."
 msgstr "Bạn đã xác định một thư mục không tồn tại hay không thể đọc."
 
-#: kfile/kdiroperator.cpp:1523
+#: kfile/kdiroperator.cpp:1553
 msgid "Menu"
 msgstr "Trình đơn"
 
-#: kfile/kdiroperator.cpp:1527
+#: kfile/kdiroperator.cpp:1557
 msgid "Parent Folder"
 msgstr "Thư mục cha"
 
-#: kfile/kdiroperator.cpp:1534
+#: kfile/kdiroperator.cpp:1564
 msgid "Home Folder"
 msgstr "Thư mục Nhà"
 
-#: kfile/kdiroperator.cpp:1537
+#: kfile/kdiroperator.cpp:1567
 msgid "Reload"
 msgstr "Tải lại"
 
-#: kfile/kdiroperator.cpp:1545
+#: kfile/kdiroperator.cpp:1575
 msgid "Move to Trash"
 msgstr "Chuyển vào Rác"
 
-#: kfile/kdiroperator.cpp:1551
+#: kfile/kdiroperator.cpp:1581
 msgid "Delete"
 msgstr "Xoá bỏ"
 
-#: kfile/kdiroperator.cpp:1558
+#: kfile/kdiroperator.cpp:1588
 msgid "Sorting"
 msgstr "Sắp xếp"
 
-#: kfile/kdiroperator.cpp:1561
+#: kfile/kdiroperator.cpp:1591
 msgid "By Name"
 msgstr "Theo tên"
 
-#: kfile/kdiroperator.cpp:1565
+#: kfile/kdiroperator.cpp:1595
 msgid "By Size"
 msgstr "Theo cỡ"
 
-#: kfile/kdiroperator.cpp:1569
+#: kfile/kdiroperator.cpp:1599
 msgid "By Date"
 msgstr "Theo ngày"
 
-#: kfile/kdiroperator.cpp:1573
+#: kfile/kdiroperator.cpp:1603
 msgid "By Type"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:1577
+#: kfile/kdiroperator.cpp:1607
 msgid "Descending"
 msgstr ""
 
-#: kfile/kdiroperator.cpp:1587
+#: kfile/kdiroperator.cpp:1617
 msgid "Short View"
 msgstr "Xem ngắn"
 
-#: kfile/kdiroperator.cpp:1592
+#: kfile/kdiroperator.cpp:1622
 msgid "Detailed View"
 msgstr "Xem chi tiết"
 
-#: kfile/kdiroperator.cpp:1601
+#: kfile/kdiroperator.cpp:1631
 msgid "Show Hidden Files"
 msgstr "Hiện tập tin ẩn"
 
-#: kfile/kdiroperator.cpp:1605
+#: kfile/kdiroperator.cpp:1635
 msgid "Show Preview"
 msgstr "Hiện ô xem thử"
 

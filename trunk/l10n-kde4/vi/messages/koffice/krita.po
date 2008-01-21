@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-18 08:03+0100\n"
+"POT-Creation-Date: 2008-01-21 07:46+0100\n"
 "PO-Revision-Date: 2002-06-02 01:35+0900\n"
 "Last-Translator: Nguyen Hung Vu(Nguyễn Hưng Vũ) <vuhung@fedu.uec.ac.jp>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -913,7 +913,7 @@ msgstr "Để cách:"
 #. i18n: tag text
 #. i18n: file krita.rc line 63
 #. i18n: tag text
-#. i18n: file ./sdk/templates/view/view.rc line 4
+#. i18n: file ./sdk/templates/view/APPNAMELC.rc line 4
 #. i18n: tag text
 #. i18n: file ./colorspaces/lms_f32/lms_f32_plugin.rc line 3
 #. i18n: tag text
@@ -6155,6 +6155,7 @@ msgid "Performance"
 msgstr "Thao chiếu"
 
 #: ui/kis_dlg_preferences.cc:843 ui/kis_dlg_preferences.cc:844
+#: plugins/tools/tool_grid/kis_tool_grid.h:73
 #, fuzzy
 msgid "Grid"
 msgstr "Xanh nước biển"
@@ -6916,13 +6917,15 @@ msgstr "Bỏ chọn"
 msgid "No profile"
 msgstr ""
 
-#: sdk/templates/view/view.cc:33
-msgid "&My action !"
+#: sdk/templates/tool/kis_tool_APPNAMELC.h:45
+#: sdk/templates/tool/kis_tool_APPNAMELC.h:47
+#: sdk/templates/docker/APPNAMELC_dock.cc:7
+#: sdk/templates/filter/APPNAMELC.h:21 sdk/templates/filter/APPNAMELC.cc:43
+msgid "%{APPNAME}"
 msgstr ""
 
-#: sdk/templates/docker/APPNAMELC_dock.cc:7 sdk/templates/filter/filter.cc:43
-#: sdk/templates/filter/filter.h:21
-msgid "%{APPNAME}"
+#: sdk/templates/view/APPNAMELC.cc:33
+msgid "&My action !"
 msgstr ""
 
 #: image/kis_layer.cc:95
@@ -7340,6 +7343,10 @@ msgstr "Chổi"
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:141
 msgid "Crop the image to an area"
+msgstr ""
+
+#: plugins/tools/tool_grid/kis_tool_grid.h:75
+msgid "Edit the grid"
 msgstr ""
 
 #: plugins/tools/tool_star/kis_tool_star.h:80
@@ -7823,24 +7830,14 @@ msgstr ""
 msgid "Transform a layer or a selection"
 msgstr ""
 
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:45
-#, fuzzy
-msgid "Perspective Grid"
-msgstr "Công cụ &xoá"
-
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:474
-msgid "&Perspective Grid"
-msgstr ""
-
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.cc:479
-#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:92
-msgid "Edit the perspective grid"
-msgstr ""
-
 #: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:90
 #, fuzzy
 msgid "Perspective grid"
 msgstr "Công cụ &xoá"
+
+#: plugins/tools/tool_perspectivegrid/kis_tool_perspectivegrid.h:92
+msgid "Edit the perspective grid"
+msgstr ""
 
 #: plugins/painterlyframework/kis_ks_colorspace.h:107
 #, fuzzy
@@ -8689,6 +8686,10 @@ msgstr ""
 #: plugins/filters/bumpmap/bumpmap.cc:89
 msgid "&Bumpmap..."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Perspective Grid"
+#~ msgstr "Công cụ &xoá"
 
 #, fuzzy
 #~ msgid "Painterly Color Space"

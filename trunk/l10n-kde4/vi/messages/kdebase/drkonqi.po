@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-15 09:40+0100\n"
+"POT-Creation-Date: 2008-01-21 07:42+0100\n"
 "PO-Revision-Date: 2007-06-07 22:58+0930\n"
 "Last-Translator: Phan Vinh Thinh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17,56 +17,59 @@ msgstr ""
 "X-Generator: KBabel 1.10\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: backtrace.cpp:80
+#: backtrace.cpp:76
 #, kde-format
 msgid "Could not generate a backtrace as the debugger '%1' was not found."
 msgstr "Không thể tạo vết lùi vì không tìm thấy trình gỡ lỗi « %1 »."
 
-#: debugger.cpp:75
+#: debugger.cpp:71
 msgid "C&opy"
 msgstr "&Chép"
 
-#: debugger.cpp:96
+#: debugger.cpp:92
+#, fuzzy
+#| msgid "Done."
+msgctxt "debugging finished"
 msgid "Done."
 msgstr "Xong."
 
-#: debugger.cpp:121
+#: debugger.cpp:117
 #, kde-format
 msgid "Backtrace saved to %1"
 msgstr "Vết lùi đã được lưu vào %1."
 
-#: debugger.cpp:125
+#: debugger.cpp:121
 msgid "Cannot create a file to save the backtrace in"
 msgstr "Không thể tạo tập tin để lưu kết quả tìm lỗi vết lùi"
 
-#: debugger.cpp:130
+#: debugger.cpp:126
 msgid "Select Filename"
 msgstr "Chọn tên tập tin"
 
-#: debugger.cpp:138
+#: debugger.cpp:134
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Đã có tập tin với tên « %1 ». Bạn có chắc muốn ghi đè lên nó không?"
 
-#: debugger.cpp:140
+#: debugger.cpp:136
 msgid "Overwrite File?"
 msgstr "Ghi đè lên tập tin?"
 
-#: debugger.cpp:141
+#: debugger.cpp:137
 msgid "&Overwrite"
 msgstr "&Ghi đè"
 
-#: debugger.cpp:153
+#: debugger.cpp:149
 #, kde-format
 msgid "Cannot open file %1 for writing"
 msgstr "Không thể mở tập tin %1 để ghi"
 
-#: debugger.cpp:161
+#: debugger.cpp:157
 msgid "Unable to create a valid backtrace."
 msgstr "Không thể tạo một chuỗi chương trình con vết lùi đúng."
 
-#: debugger.cpp:162
+#: debugger.cpp:158
 msgid ""
 "This backtrace appears to be of no use.\n"
 "This is probably because your packages are built in a way which prevents "
@@ -79,11 +82,11 @@ msgstr ""
 "thích hợp, hoặc khung đống bị hỏng nghiệm trọng khi sụp đổ.\n"
 "\n"
 
-#: debugger.cpp:171
+#: debugger.cpp:167
 msgid "Loading backtrace..."
 msgstr "Đang nạp vết lùi..."
 
-#: debugger.cpp:194
+#: debugger.cpp:190
 msgid ""
 "The following options are enabled:\n"
 "\n"
@@ -91,7 +94,7 @@ msgstr ""
 "Những tùy chọn sau được chọn:\n"
 "\n"
 
-#: debugger.cpp:196
+#: debugger.cpp:192
 msgid ""
 "\n"
 "As the usage of these options is not recommended - because they can, in rare "
@@ -105,15 +108,15 @@ msgstr ""
 "Bạn cần tắt những tùy chọn này và tạo lại lỗi xảy ra để lấy được thông tin "
 "sửa lỗi vết lùi.\n"
 
-#: debugger.cpp:201
+#: debugger.cpp:197
 msgid "Backtrace will not be created."
 msgstr "Sẽ không tạo được thông tin tìm sửa lỗi vết lùi."
 
-#: debugger.cpp:209
+#: debugger.cpp:205
 msgid "Loading symbols..."
 msgstr "Đang nạp các ký hiệu..."
 
-#: debugger.cpp:230
+#: debugger.cpp:226
 msgid "System configuration startup check disabled.\n"
 msgstr "Tắt kiểm tra cấu hình hệ thống khi khởi chạy.\n"
 
@@ -122,6 +125,9 @@ msgid "You have to edit the description before the report can be sent."
 msgstr "Bạn phải thay đổi phần mô tả trước khi gửi bản báo cáo lỗi."
 
 #: krashconf.cpp:78
+#, fuzzy
+#| msgid "unknown"
+msgctxt "unknown application"
 msgid "unknown"
 msgstr "không rõ"
 
@@ -193,46 +199,37 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "teppi82@gmail.com"
 
-#: toplevel.cpp:64
+#: toplevel.cpp:54
 #, fuzzy
 #| msgid "&Bug report"
 msgid "&Bug Report"
 msgstr "Báo cáo &lỗi"
 
-#: toplevel.cpp:65
+#: toplevel.cpp:55
 msgid "&Debugger"
 msgstr "&Trình gỡ rối"
 
-#: toplevel.cpp:71
-msgid "General"
-msgstr "Chung"
+#: toplevel.cpp:88
+msgid "Please attach the following backtrace to your bugreport."
+msgstr ""
 
-#: toplevel.cpp:95
-msgid "Backtrace"
-msgstr "Vết lùi"
+#: toplevel.cpp:130
+msgid "A fatal error occurred"
+msgstr ""
 
-#: toplevel.cpp:119
-#, kde-format
-msgid "<p><b>Short description</b></p><p>%1</p>"
-msgstr "<p><b>Mô tả ngắn gọn</b></p><p>%1</p>"
+#: toplevel.cpp:134
+msgid "What can I do?"
+msgstr ""
 
-#: toplevel.cpp:123
-#, kde-format
-msgid "<p><b>What is this?</b></p><p>%1</p>"
-msgstr "<p><b>Đây là cái gì?</b></p><p>%1</p>"
-
-#: toplevel.cpp:127
-#, kde-format
-msgid "<p><b>What can I do?</b></p><p>%1</p>"
-msgstr "<p><b>Tôi có thể làm gì?</b></p><p>%1</p>"
-
-#: toplevel.cpp:132
-#, c-format
-msgid "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+#: toplevel.cpp:139
+#, fuzzy, c-format
+#| msgid ""
+#| "<p><b>Application crashed</b></p><p>The program %appname crashed.</p>"
+msgid "<p>Application crashed</p><p>The program %appname crashed.</p>"
 msgstr ""
 "<p><b>Chuơng trình đã sụp đổ</b></p><p>Chuơng trình %appname đã sụp đổ.</p>"
 
-#: toplevel.cpp:151
+#: toplevel.cpp:158
 msgid ""
 "<p>Do you want to generate a backtrace? This will help the developers to "
 "figure out what went wrong.</p>\n"
@@ -248,22 +245,37 @@ msgstr ""
 "cách người dùng đã tạo ra lỗi. Không thể sửa lỗi nếu không có mô tả lỗi "
 "chính xác.</b></p>"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Include Backtrace"
 msgstr "Chứa vết lùi"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Generate"
 msgstr "Tạo ra"
 
-#: toplevel.cpp:163
+#: toplevel.cpp:170
 msgid "Do Not Generate"
 msgstr "Không tạo ra"
 
-#: toplevel.cpp:230
+#: toplevel.cpp:237
 msgid "It was not possible to generate a backtrace."
 msgstr "Không thể tạo ra chuỗi tìm sửa lỗi vết lùi."
 
-#: toplevel.cpp:231
+#: toplevel.cpp:238
 msgid "Backtrace Not Possible"
 msgstr "Không thể chạy chuỗi trình con tìm lỗi"
+
+#~ msgid "General"
+#~ msgstr "Chung"
+
+#~ msgid "Backtrace"
+#~ msgstr "Vết lùi"
+
+#~ msgid "<p><b>Short description</b></p><p>%1</p>"
+#~ msgstr "<p><b>Mô tả ngắn gọn</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What is this?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Đây là cái gì?</b></p><p>%1</p>"
+
+#~ msgid "<p><b>What can I do?</b></p><p>%1</p>"
+#~ msgstr "<p><b>Tôi có thể làm gì?</b></p><p>%1</p>"

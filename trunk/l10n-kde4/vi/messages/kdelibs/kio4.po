@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-22 07:57+0100\n"
+"POT-Creation-Date: 2008-01-25 09:36+0100\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -134,7 +134,7 @@ msgstr "Dạng thức dữ liệu :"
 msgid "The peer SSL certificate chainappears to be corrupt."
 msgstr "Chứng nhận SSL ngang hàng có vẻ bị hỏng."
 
-#: kio/slaveinterface.cpp:484 kio/tcpslavebase.cpp:631
+#: kio/slaveinterface.cpp:484 kio/tcpslavebase.cpp:641
 msgid "SSL"
 msgstr "SSL"
 
@@ -331,7 +331,7 @@ msgstr ""
 "Bạn sắp dời khỏi chế độ bảo mật. Việc truyền sẽ không còn được mật mẫ lại.\n"
 "Có nghĩa là người khác có thể xem dữ liệu bạn trong khi truyền."
 
-#: kio/tcpslavebase.cpp:269 kio/tcpslavebase.cpp:463
+#: kio/tcpslavebase.cpp:269 kio/tcpslavebase.cpp:473
 msgid "Security Information"
 msgstr "Thông tin bảo mật"
 
@@ -339,7 +339,13 @@ msgstr "Thông tin bảo mật"
 msgid "C&ontinue Loading"
 msgstr "&Tiếp tục tải"
 
-#: kio/tcpslavebase.cpp:457
+#: kio/tcpslavebase.cpp:316
+#, fuzzy
+#| msgid "Authentication Failed."
+msgid ": SSL negotiation failed"
+msgstr "Xác thực thất bại."
+
+#: kio/tcpslavebase.cpp:467
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
 "unless otherwise noted.\n"
@@ -350,31 +356,31 @@ msgstr ""
 "khác.\n"
 "Có nghĩa là người khác không thể xem dễ dàng dữ liệu bạn trong khi truyền."
 
-#: kio/tcpslavebase.cpp:464
+#: kio/tcpslavebase.cpp:474
 msgid "Display SSL &Information"
 msgstr "Hiển thị thông t&in SSL"
 
-#: kio/tcpslavebase.cpp:465
+#: kio/tcpslavebase.cpp:475
 msgid "C&onnect"
 msgstr "&Kết nối"
 
-#: kio/tcpslavebase.cpp:602
+#: kio/tcpslavebase.cpp:612
 msgid "Enter the certificate password:"
 msgstr "Nhập mật khẩu chứng nhận:"
 
-#: kio/tcpslavebase.cpp:603
+#: kio/tcpslavebase.cpp:613
 msgid "SSL Certificate Password"
 msgstr "Mật khẩu chứng nhận SSL"
 
-#: kio/tcpslavebase.cpp:616
+#: kio/tcpslavebase.cpp:626
 msgid "Unable to open the certificate. Try a new password?"
 msgstr "Không thể mở chứng nhận. Thử mật khẩu mới không?"
 
-#: kio/tcpslavebase.cpp:629
+#: kio/tcpslavebase.cpp:639
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên chạy bị lỗi."
 
-#: kio/tcpslavebase.cpp:659
+#: kio/tcpslavebase.cpp:669
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
@@ -382,33 +388,33 @@ msgid ""
 "\n"
 msgstr "Chứng nhận máy phục vụ đã thất bại việc thử ra xác thực (%1)."
 
-#: kio/tcpslavebase.cpp:708 kio/tcpslavebase.cpp:725 kio/tcpslavebase.cpp:827
-#: kio/tcpslavebase.cpp:839
+#: kio/tcpslavebase.cpp:718 kio/tcpslavebase.cpp:735 kio/tcpslavebase.cpp:837
+#: kio/tcpslavebase.cpp:849
 msgid "Server Authentication"
 msgstr "Xác thực máy phục vụ"
 
-#: kio/tcpslavebase.cpp:709
+#: kio/tcpslavebase.cpp:719
 msgid "&Details"
 msgstr "&Chi tiết"
 
-#: kio/tcpslavebase.cpp:709
+#: kio/tcpslavebase.cpp:719
 msgid "Co&ntinue"
 msgstr "Tiế&p tục"
 
-#: kio/tcpslavebase.cpp:722
+#: kio/tcpslavebase.cpp:732
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr "Bạn có muốn chấp nhận hoài chứng nhận này, không có được nhắc không?"
 
-#: kio/tcpslavebase.cpp:726
+#: kio/tcpslavebase.cpp:736
 msgid "&Forever"
 msgstr "&Hoài"
 
-#: kio/tcpslavebase.cpp:727
+#: kio/tcpslavebase.cpp:737
 msgid "&Current Sessions Only"
 msgstr "&Chỉ các phiên chạy hiện thời"
 
-#: kio/tcpslavebase.cpp:826
+#: kio/tcpslavebase.cpp:836
 msgid ""
 "You have indicated that you wish to accept this certificate, but it is not "
 "issued to the server who is presenting it. Do you wish to continue loading?"
@@ -417,7 +423,7 @@ msgstr ""
 "phát hành cho máy phục vụ đang cung cấp nó. Như thệ thì bạn có muốn tiếp tục "
 "tải không?"
 
-#: kio/tcpslavebase.cpp:838
+#: kio/tcpslavebase.cpp:848
 msgid ""
 "SSL certificate is being rejected as requested. You can disable this in the "
 "KDE Control Center."
@@ -2420,22 +2426,22 @@ msgstr "Quyền hạn:"
 msgid "No service implementing %1"
 msgstr "Không có dịch vụ thi hành %1"
 
-#: kio/slave.cpp:405
+#: kio/slave.cpp:406
 #, kde-format
 msgid "Unknown protocol '%1'."
 msgstr "Không biết giao thức « %1 »."
 
-#: kio/slave.cpp:413
+#: kio/slave.cpp:414
 #, kde-format
 msgid "Can not find io-slave for protocol '%1'."
 msgstr "Không tìm thấy io-slave cho giao thức « %1 »."
 
-#: kio/slave.cpp:431
+#: kio/slave.cpp:432
 #, kde-format
 msgid "Cannot talk to klauncher: %1"
 msgstr "Không thể liên lạc với klauncher (bộ khởi chạy): %1"
 
-#: kio/slave.cpp:439
+#: kio/slave.cpp:440
 #, kde-format
 msgid ""
 "Unable to create io-slave:\n"

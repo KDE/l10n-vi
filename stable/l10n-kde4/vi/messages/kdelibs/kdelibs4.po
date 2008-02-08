@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-06 07:55+0100\n"
+"POT-Creation-Date: 2008-02-08 07:57+0100\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -5530,7 +5530,7 @@ msgstr "&Được"
 msgid "&Cancel"
 msgstr "Th&ôi"
 
-#: kdeui/util/kstandardguiitem.cpp:116 khtml/java/kjavaappletserver.cpp:849
+#: kdeui/util/kstandardguiitem.cpp:116 khtml/java/kjavaappletserver.cpp:817
 msgid "&Yes"
 msgstr "&Có"
 
@@ -5538,7 +5538,7 @@ msgstr "&Có"
 msgid "Yes"
 msgstr "Có"
 
-#: kdeui/util/kstandardguiitem.cpp:121 khtml/java/kjavaappletserver.cpp:842
+#: kdeui/util/kstandardguiitem.cpp:121 khtml/java/kjavaappletserver.cpp:810
 msgid "&No"
 msgstr "&Không"
 
@@ -9019,7 +9019,7 @@ msgstr "Dấu phân cách đoạn văn"
 msgid "Separator, Space"
 msgstr "Dấu phân cách khoảng cách"
 
-#: kdeui/widgets/kcharselectdata.cpp:530 khtml/java/kjavaappletserver.cpp:697
+#: kdeui/widgets/kcharselectdata.cpp:530
 msgid "Unknown"
 msgstr "Không rõ"
 
@@ -10614,7 +10614,7 @@ msgstr "Cảnh báo bảo mật"
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>Trang không tin cây truy cập<BR><B>%1</B><BR>bị từ chối."
 
-#: khtml/khtml_part.cpp:6891 khtml/java/kjavaappletserver.cpp:823
+#: khtml/khtml_part.cpp:6891 khtml/java/kjavaappletserver.cpp:791
 msgid "Security Alert"
 msgstr "Cảnh giác bảo mật"
 
@@ -11193,82 +11193,30 @@ msgid "Error: java executable not found"
 msgstr "Lỗi : không tìm thấy tập tin thực hiện được Java"
 
 #: khtml/java/kjavaappletserver.cpp:663
-msgid "Signed by (validation: "
+#, fuzzy, kde-format
+#| msgid "Signed by (validation: "
+msgid "Signed by (validation: %1)"
 msgstr "Ký do (hợp lệ hóa : "
 
 #: khtml/java/kjavaappletserver.cpp:665
-msgid "Certificate (validation: "
+#, fuzzy, kde-format
+#| msgid "Certificate (validation: "
+msgid "Certificate (validation: %1)"
 msgstr "Chứng nhận (hợp lệ hoá : "
 
-#: khtml/java/kjavaappletserver.cpp:668
-msgid "Ok"
-msgstr "Được"
-
-#: khtml/java/kjavaappletserver.cpp:670
-msgid "NoCARoot"
-msgstr "Không có gốc CA"
-
-#: khtml/java/kjavaappletserver.cpp:672
-msgid "InvalidPurpose"
-msgstr "Mục đích không hợp lệ"
-
-#: khtml/java/kjavaappletserver.cpp:674
-msgid "PathLengthExceeded"
-msgstr "Đường dẫn quá dài"
-
-#: khtml/java/kjavaappletserver.cpp:676
-msgid "InvalidCA"
-msgstr "CA không hợp lệ"
-
-#: khtml/java/kjavaappletserver.cpp:678
-msgid "Expired"
-msgstr "Hết hạn"
-
-#: khtml/java/kjavaappletserver.cpp:680
-msgid "SelfSigned"
-msgstr "Tự ký"
-
-#: khtml/java/kjavaappletserver.cpp:682
-msgid "ErrorReadingRoot"
-msgstr "Gặp lỗi khi đọc gốc"
-
-#: khtml/java/kjavaappletserver.cpp:684
-msgid "Revoked"
-msgstr "Bị hủy bỏ"
-
-#: khtml/java/kjavaappletserver.cpp:686
-msgid "Untrusted"
-msgstr "Không tin cây"
-
-#: khtml/java/kjavaappletserver.cpp:688
-msgid "SignatureFailed"
-msgstr "Chữ ký bị lỗi"
-
-#: khtml/java/kjavaappletserver.cpp:690
-msgid "Rejected"
-msgstr "Bị từ chối"
-
-#: khtml/java/kjavaappletserver.cpp:692
-msgid "PrivateKeyFailed"
-msgstr "Khoá riêng bị lỗi"
-
-#: khtml/java/kjavaappletserver.cpp:694
-msgid "InvalidHost"
-msgstr "Máy không hợp lệ"
-
-#: khtml/java/kjavaappletserver.cpp:830
+#: khtml/java/kjavaappletserver.cpp:798
 msgid "Do you grant Java applet with certificate(s):"
 msgstr "Bạn có cho tiểu dụng Java có chứng nhận:"
 
-#: khtml/java/kjavaappletserver.cpp:832
+#: khtml/java/kjavaappletserver.cpp:800
 msgid "the following permission"
 msgstr "quyền theo đây"
 
-#: khtml/java/kjavaappletserver.cpp:846
+#: khtml/java/kjavaappletserver.cpp:814
 msgid "&Reject All"
 msgstr "&Từ chối hết"
 
-#: khtml/java/kjavaappletserver.cpp:852
+#: khtml/java/kjavaappletserver.cpp:820
 msgid "&Grant All"
 msgstr "Cho &phép hết"
 
@@ -12974,6 +12922,48 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Điểm mã Unicode: %4<br>"
 "(In decimal: %5)</qt>"
+
+#~ msgid "Ok"
+#~ msgstr "Được"
+
+#~ msgid "NoCARoot"
+#~ msgstr "Không có gốc CA"
+
+#~ msgid "InvalidPurpose"
+#~ msgstr "Mục đích không hợp lệ"
+
+#~ msgid "PathLengthExceeded"
+#~ msgstr "Đường dẫn quá dài"
+
+#~ msgid "InvalidCA"
+#~ msgstr "CA không hợp lệ"
+
+#~ msgid "Expired"
+#~ msgstr "Hết hạn"
+
+#~ msgid "SelfSigned"
+#~ msgstr "Tự ký"
+
+#~ msgid "ErrorReadingRoot"
+#~ msgstr "Gặp lỗi khi đọc gốc"
+
+#~ msgid "Revoked"
+#~ msgstr "Bị hủy bỏ"
+
+#~ msgid "Untrusted"
+#~ msgstr "Không tin cây"
+
+#~ msgid "SignatureFailed"
+#~ msgstr "Chữ ký bị lỗi"
+
+#~ msgid "Rejected"
+#~ msgstr "Bị từ chối"
+
+#~ msgid "PrivateKeyFailed"
+#~ msgstr "Khoá riêng bị lỗi"
+
+#~ msgid "InvalidHost"
+#~ msgstr "Máy không hợp lệ"
 
 #~ msgid "Stop script execution"
 #~ msgstr "Dừng thực hiện văn lệnh"

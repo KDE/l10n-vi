@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-09 11:45+0100\n"
+"POT-Creation-Date: 2008-02-10 09:58+0100\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -57,7 +57,7 @@ msgid "New Group"
 msgstr "Nhóm %1"
 
 #: conf/transfersgroupwidget.cpp:144 core/transfergrouphandler.cpp:192
-#: core/kget.cpp:619
+#: core/kget.cpp:623
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
@@ -173,7 +173,7 @@ msgid "Folder and extension can not be empty."
 msgstr "Thư mục và phần mở rộng không thể rỗng."
 
 #: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:135 core/kget.cpp:457
-#: core/kget.cpp:793 ui/transferhistory.cpp:121 ui/transferhistory.cpp:224
+#: core/kget.cpp:797 ui/transferhistory.cpp:121 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr "Lỗi"
 
@@ -229,7 +229,14 @@ msgstr ""
 msgid "History-File cannot be opened correctly!"
 msgstr ""
 
-#: core/transferhandler.cpp:128 ui/transfersviewdelegate.cpp:343
+#: core/transferhandler.cpp:128
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:27
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:28
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:29
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:30
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:31
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:32
+#: ui/transfersviewdelegate.cpp:336
 msgctxt "not available"
 msgid "n/a"
 msgstr "không có"
@@ -279,7 +286,7 @@ msgstr "Ngừng"
 #: transfer-plugins/kio/transferKio.cpp:57
 #: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:61
-#: transfer-plugins/bittorrent/bttransfer.cpp:262
+#: transfer-plugins/bittorrent/bttransfer.cpp:267
 #, fuzzy
 #| msgid "Stopped"
 msgctxt "transfer state: stopped"
@@ -296,7 +303,7 @@ msgstr "Bị trễ"
 #: core/transfer.cpp:136 transfer-plugins/kio/transferKio.cpp:133
 #: transfer-plugins/metalink/metalink.cpp:113
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:214
-#: transfer-plugins/bittorrent/bttransfer.cpp:259
+#: transfer-plugins/bittorrent/bttransfer.cpp:264
 #, fuzzy
 #| msgid "Finished"
 msgctxt "transfer state: finished"
@@ -329,15 +336,15 @@ msgstr "Không thể lưu vào : %1"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:730 ui/newtransferdialog.cpp:35 rc.cpp:384
+#: core/kget.cpp:734 ui/newtransferdialog.cpp:35 rc.cpp:384
 msgid "New Download"
 msgstr "Tải về mới"
 
-#: core/kget.cpp:730
+#: core/kget.cpp:734
 msgid "Enter URL:"
 msgstr "Nhập URL:"
 
-#: core/kget.cpp:792
+#: core/kget.cpp:796
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -346,7 +353,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:804
+#: core/kget.cpp:808
 #, kde-format
 msgid ""
 "URL already saved:\n"
@@ -357,15 +364,15 @@ msgstr ""
 "%1\n"
 "Tải về lại không?"
 
-#: core/kget.cpp:805
+#: core/kget.cpp:809
 msgid "Download URL again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:833 core/kget.cpp:840
+#: core/kget.cpp:837 core/kget.cpp:844
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:850
+#: core/kget.cpp:854
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -378,7 +385,7 @@ msgstr ""
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:965
+#: core/kget.cpp:969
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error "
@@ -389,7 +396,7 @@ msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:982
+#: core/kget.cpp:986
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -400,11 +407,11 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:984 core/kget.cpp:995
+#: core/kget.cpp:988 core/kget.cpp:999
 msgid "Not Deleted"
 msgstr "Chưa xóa"
 
-#: core/kget.cpp:993
+#: core/kget.cpp:997
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -585,12 +592,12 @@ msgid "Trackers"
 msgstr "Truyền:"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:76
-#: transfer-plugins/bittorrent/bttransfer.cpp:218
+#: transfer-plugins/bittorrent/bttransfer.cpp:223
 msgid "Cannot add a tracker to a private torrent."
 msgstr ""
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:93
-#: transfer-plugins/bittorrent/bttransfer.cpp:224
+#: transfer-plugins/bittorrent/bttransfer.cpp:229
 #, fuzzy
 #| msgid ""
 #| "Malformed URL:\n"
@@ -808,26 +815,26 @@ msgstr "Tốc độ"
 msgid "&Scan Files"
 msgstr "&Tập tin"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:83
+#: transfer-plugins/bittorrent/bttransfer.cpp:88
 #, fuzzy
 #| msgid "Downloads"
 msgid "Downloading Torrent-File.."
 msgstr "Tải về"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:243
+#: transfer-plugins/bittorrent/bttransfer.cpp:248
 #, fuzzy
 #| msgid "Downloads"
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "Tải về"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:288
+#: transfer-plugins/bittorrent/bttransfer.cpp:301
 #, fuzzy
 #| msgid "Downloads"
 msgid "Analyzing torrent.."
 msgstr "Tải về"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:362
+#: transfer-plugins/bittorrent/bttransfer.cpp:376
 msgctxt "Transfer status: seeding"
 msgid "Seeding.."
 msgstr ""

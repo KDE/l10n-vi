@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-25 13:33+0100\n"
+"POT-Creation-Date: 2008-02-26 14:46+0100\n"
 "PO-Revision-Date: 2006-11-01 21:28+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17,35 +17,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6fc1\n"
 
-#: src/crontabWidget.cpp:127
+#: src/crontabWidget.cpp:128
 msgid "Show the following Cron:"
 msgstr ""
 
-#: src/crontabWidget.cpp:131
+#: src/crontabWidget.cpp:132
 msgid "Personal Cron"
 msgstr ""
 
-#: src/crontabWidget.cpp:136
+#: src/crontabWidget.cpp:137
 #, fuzzy
 #| msgid "(System Crontab)"
 msgid "System Cron"
 msgstr "(Crontab hệ thống)"
 
-#: src/crontabWidget.cpp:140
+#: src/crontabWidget.cpp:141
 msgid "Cron of User:"
 msgstr ""
-
-#: src/crontabWidget.cpp:303
-#, kde-format
-msgctxt "user on host"
-msgid "%1 <placeholder>%2</placeholder> on %3"
-msgstr ""
-
-#: src/crontabWidget.cpp:308
-#, fuzzy
-#| msgid "Scheduled Tasks"
-msgid "Scheduled Tasks"
-msgstr "Tác vụ đã lập lịch"
 
 #: src/crontablib/cthost.cpp:53
 msgid ""
@@ -55,7 +43,7 @@ msgid ""
 "Check the crontab man page for further details."
 msgstr ""
 
-#: src/crontablib/cttask.cpp:232 src/taskWidget.cpp:69
+#: src/crontablib/cttask.cpp:232
 msgid "At system startup"
 msgstr ""
 
@@ -135,7 +123,7 @@ msgstr "(Crontab hệ thống)"
 msgid "No password entry found for uid '%1'"
 msgstr "Không tìm thấy mục nhập mật khẩu cho UID « %1 »"
 
-#: src/crontablib/ctcron.cpp:332
+#: src/crontablib/ctcron.cpp:333
 msgid "An error occurred while updating crontab."
 msgstr "Gặp lỗi trong khi cập nhật crontab."
 
@@ -385,58 +373,42 @@ msgstr ""
 msgid "Sunday"
 msgstr "CN"
 
-#: src/tasksWidget.cpp:41
+#: src/tasksWidget.cpp:40
 msgid "<b>Tasks</b>"
 msgstr ""
 
-#: src/tasksWidget.cpp:51
+#: src/tasksWidget.cpp:50 src/crontabPrinter.cpp:135
 msgid "Scheduling"
 msgstr ""
 
-#: src/tasksWidget.cpp:52
+#: src/tasksWidget.cpp:51 src/crontabPrinter.cpp:135
 #, fuzzy
 #| msgid "Modify Task"
 msgid "Command"
 msgstr "Sửa đổi tác vụ"
 
-#: src/tasksWidget.cpp:53 src/variablesWidget.cpp:47
+#: src/tasksWidget.cpp:52 src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Sat"
 msgid "Status"
 msgstr "T7"
 
-#: src/tasksWidget.cpp:54
+#: src/tasksWidget.cpp:53 src/crontabPrinter.cpp:135
 msgid "Description"
 msgstr "Mô tả"
 
-#: src/tasksWidget.cpp:55
+#: src/tasksWidget.cpp:54
 #, fuzzy
 #| msgid "Scheduled Tasks"
 msgid "Scheduling Details"
 msgstr "Tác vụ đã lập lịch"
 
-#: src/tasksWidget.cpp:73
-msgid "Task name:"
-msgstr "Tên tác vụ :"
-
-#: src/tasksWidget.cpp:74
-msgid "Program:"
-msgstr "Chương trình:"
-
-#: src/tasksWidget.cpp:75 src/variablesWidget.cpp:105
-msgid "Description:"
-msgstr "Mô tả:"
-
-#: src/tasksWidget.cpp:80
-msgid "No tasks..."
-msgstr "Không có tác vụ..."
-
-#: src/tasksWidget.cpp:161
+#: src/tasksWidget.cpp:130
 msgctxt "Do not use any quote characters (') in this string"
 msgid "End of script execution. Type Enter or Ctrl+C to exit."
 msgstr ""
 
-#: src/tasksWidget.cpp:194
+#: src/tasksWidget.cpp:163
 #, fuzzy
 #| msgid "Tasks"
 msgid "New Task"
@@ -601,80 +573,51 @@ msgstr ""
 msgid "Alberto G. Hierro"
 msgstr ""
 
-#: src/variablesWidget.cpp:35
+#: src/variablesWidget.cpp:36
 #, fuzzy
 #| msgid "Variables"
 msgid "<b>Environment Variables</b>"
 msgstr "Biến"
 
-#: src/variablesWidget.cpp:45
+#: src/variablesWidget.cpp:46
 #, fuzzy
 #| msgid "Variables"
 msgid "Variable"
 msgstr "Biến"
 
-#: src/variablesWidget.cpp:46
+#: src/variablesWidget.cpp:47
 msgid "Value"
 msgstr "Giá trị"
 
-#: src/variablesWidget.cpp:48
+#: src/variablesWidget.cpp:49
 #, fuzzy
 #| msgid "Co&mment:"
 msgid "Comment"
 msgstr "C&hú thích:"
 
-#: src/variablesWidget.cpp:103
-#, fuzzy
-#| msgid "Variable:"
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "Variable:"
-msgstr "Biến:"
-
-#: src/variablesWidget.cpp:104
-msgid "Value:"
-msgstr "Giá trị:"
-
-#: src/variablesWidget.cpp:110
-msgid "No variables..."
-msgstr "Không có biến..."
-
-#: src/variablesWidget.cpp:142
+#: src/variablesWidget.cpp:112
 #, fuzzy
 #| msgid "Variables"
 msgid "New Variable"
 msgstr "Biến"
 
-#: src/taskWidget.cpp:36 src/variableWidget.cpp:36
+#: src/taskWidget.cpp:35 src/variableWidget.cpp:35
 #, fuzzy
 #| msgid "&Enabled"
 msgid "Enabled"
 msgstr "&Bật"
 
-#: src/taskWidget.cpp:39 src/variableWidget.cpp:40
+#: src/taskWidget.cpp:38 src/variableWidget.cpp:39
 #, fuzzy
 #| msgid "Disabled"
 msgid "Disabled"
 msgstr "Tắt"
 
-#: src/taskWidget.cpp:73
-#, fuzzy
-#| msgid "Disabled."
-msgctxt "The cron task had been disabled"
-msgid "Disabled."
-msgstr "Bị tắt."
-
-#: src/taskWidget.cpp:77
+#: src/taskWidget.cpp:63
 msgid "Modify Task"
 msgstr "Sửa đổi tác vụ"
 
-#: src/variableWidget.cpp:67
-#, fuzzy
-#| msgid "Disabled."
-msgctxt "The cron variable has been disabled"
-msgid "Disabled."
-msgstr "Bị tắt."
-
-#: src/variableWidget.cpp:73
+#: src/variableWidget.cpp:61
 msgid "Modify Variable"
 msgstr "Sửa đổi biến"
 
@@ -860,19 +803,39 @@ msgstr "Hãy nhập tên giá trị."
 msgid "<i>Please enter the variable value ...</i>"
 msgstr "Hãy nhập giá trị biến."
 
-#: src/crontabPrinter.cpp:78
-msgid "Print Cron Tab"
-msgstr "In Crontab"
+#: src/crontabPrinter.cpp:120
+#, fuzzy
+#| msgid "Scheduled Tasks"
+msgid "Scheduled Tasks"
+msgstr "Tác vụ đã lập lịch"
 
-#: src/ktprintopt.cpp:25
+#: src/crontabPrinter.cpp:159
+#, fuzzy
+#| msgid "Variables"
+msgid "Environment Variables"
+msgstr "Biến"
+
+#: src/crontabPrinter.cpp:182
+#, fuzzy
+#| msgid "(System Crontab)"
+msgid "System Crontab"
+msgstr "(Crontab hệ thống)"
+
+#: src/crontabPrinter.cpp:184
+#, kde-format
+msgctxt "Crontab of user login"
+msgid "Crontab of user %1"
+msgstr ""
+
+#: src/crontabPrinterWidget.cpp:24
 msgid "Cron Options"
 msgstr "Tuỳ chọn Cron"
 
-#: src/ktprintopt.cpp:31
+#: src/crontabPrinterWidget.cpp:30
 msgid "Print cron&tab"
 msgstr "In Cron&tab"
 
-#: src/ktprintopt.cpp:35
+#: src/crontabPrinterWidget.cpp:34
 msgid "Print &all users"
 msgstr "In &mọi người dùng"
 
@@ -885,6 +848,45 @@ msgstr "Nhóm Việt hoá KDE"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-vi@kde.org"
+
+#~ msgid "Task name:"
+#~ msgstr "Tên tác vụ :"
+
+#~ msgid "Program:"
+#~ msgstr "Chương trình:"
+
+#~ msgid "Description:"
+#~ msgstr "Mô tả:"
+
+#~ msgid "No tasks..."
+#~ msgstr "Không có tác vụ..."
+
+#, fuzzy
+#~| msgid "Variable:"
+#~ msgctxt "The environmental variable name ie HOME, MAILTO etc"
+#~ msgid "Variable:"
+#~ msgstr "Biến:"
+
+#~ msgid "Value:"
+#~ msgstr "Giá trị:"
+
+#~ msgid "No variables..."
+#~ msgstr "Không có biến..."
+
+#, fuzzy
+#~| msgid "Disabled."
+#~ msgctxt "The cron task had been disabled"
+#~ msgid "Disabled."
+#~ msgstr "Bị tắt."
+
+#, fuzzy
+#~| msgid "Disabled."
+#~ msgctxt "The cron variable has been disabled"
+#~ msgid "Disabled."
+#~ msgstr "Bị tắt."
+
+#~ msgid "Print Cron Tab"
+#~ msgstr "In Crontab"
 
 #~ msgid "No password entry found for user '%1'"
 #~ msgstr "Không tìm thấy mục nhập mật khẩu cho người dùng « %1 »"

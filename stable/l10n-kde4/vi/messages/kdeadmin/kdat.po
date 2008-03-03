@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdat\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-11-14 06:10+0100\n"
+"POT-Creation-Date: 2008-03-03 10:27+0100\n"
 "PO-Revision-Date: 2006-11-01 22:02+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -853,12 +853,12 @@ msgstr "Tạo lại"
 msgid "Reading version number failed."
 msgstr "Việc đọc số thứ tự phiên bản bị lỗi."
 
-#: Tape.cpp:185 Tape.cpp:640 Tape.cpp:646 Tape.cpp:652 Tape.cpp:659
-#: Tape.cpp:666 Tape.cpp:674 Tape.cpp:681 Tape.cpp:689 Tape.cpp:697
-#: Tape.cpp:704 Tape.cpp:711 Tape.cpp:724 Tape.cpp:736 Tape.cpp:744
-#: Tape.cpp:751 Tape.cpp:758 Tape.cpp:787 Tape.cpp:793 Tape.cpp:799
-#: Tape.cpp:806 Tape.cpp:813 Tape.cpp:821 Tape.cpp:828 Tape.cpp:849
-#: Tape.cpp:855 Tape.cpp:892 Tape.cpp:898
+#: Tape.cpp:185 Tape.cpp:620 Tape.cpp:626 Tape.cpp:632 Tape.cpp:639
+#: Tape.cpp:646 Tape.cpp:654 Tape.cpp:661 Tape.cpp:669 Tape.cpp:677
+#: Tape.cpp:684 Tape.cpp:691 Tape.cpp:704 Tape.cpp:716 Tape.cpp:724
+#: Tape.cpp:731 Tape.cpp:738 Tape.cpp:767 Tape.cpp:773 Tape.cpp:779
+#: Tape.cpp:786 Tape.cpp:793 Tape.cpp:801 Tape.cpp:808 Tape.cpp:829
+#: Tape.cpp:835 Tape.cpp:872 Tape.cpp:878
 msgid "Index File Error"
 msgstr "Lỗi tập tin chỉ mục"
 
@@ -873,93 +873,103 @@ msgstr ""
 "năng đọc chỉ mục đó. Có lẽ tập tin chỉ mục băng đã được tạo bởi một phiên "
 "bản KDat mới hơn ?"
 
-#: Tape.cpp:386
-msgid "Error during fseek #1 while accessing archive: \""
+#: Tape.cpp:382
+#, fuzzy, kde-format
+#| msgid "Error during fseek #1 while accessing archive: \""
+msgid "Error during fseek #1 while accessing archive: \"%1\": %2"
 msgstr "Lỗi trong việc « fseek #1 » trong khi truy cập kho lưu : \""
 
-#: Tape.cpp:391 Tape.cpp:404 Tape.cpp:417 Tape.cpp:430 Tape.cpp:445
+#: Tape.cpp:384 Tape.cpp:394 Tape.cpp:404 Tape.cpp:414 Tape.cpp:425
 msgid "File Access Error"
 msgstr "Lỗi truy cập tập tin"
 
-#: Tape.cpp:399
-msgid "Error while accessing string #1 in archive: \""
+#: Tape.cpp:392
+#, fuzzy, kde-format
+#| msgid "Error while accessing string #1 in archive: \""
+msgid "Error while accessing string #1 in archive: \"%1\": %2"
 msgstr "Lỗi trong khi truy cập chuỗi #1 trong kho lưu : \""
 
-#: Tape.cpp:412
-msgid "Error while accessing string #2 in archive: \""
+#: Tape.cpp:402
+#, fuzzy, kde-format
+#| msgid "Error while accessing string #2 in archive: \""
+msgid "Error while accessing string #2 in archive: \"%1\": %1"
 msgstr "Lỗi trong khi truy cập chuỗi #2 trong kho lưu : \""
 
-#: Tape.cpp:425
-msgid "Error during fseek #2 while accessing archive: \""
+#: Tape.cpp:412
+#, fuzzy, kde-format
+#| msgid "Error during fseek #2 while accessing archive: \""
+msgid "Error during fseek #2 while accessing archive: \"%1\": %2"
 msgstr "Lỗi trong việc « fseek #2 » trong khi truy cập kho lưu : \""
 
-#: Tape.cpp:442
-msgid "Error while updating archive name: "
+#: Tape.cpp:423
+#, fuzzy, kde-format
+#| msgid "Error while updating archive name: "
+msgid "Error while updating archive name: %1"
 msgstr "Lỗi khi cập nhật tên kho lưu : "
 
-#: Tape.cpp:640 Tape.cpp:787 Tape.cpp:849 Tape.cpp:892 TapeDrive.cpp:262
+#: Tape.cpp:620 Tape.cpp:767 Tape.cpp:829 Tape.cpp:872 TapeDrive.cpp:262
 msgid "Reading tape ID failed."
 msgstr "Việc đọc mã nhận diện băng bị lỗi."
 
-#: Tape.cpp:646 Tape.cpp:793 Tape.cpp:855 Tape.cpp:898
+#: Tape.cpp:626 Tape.cpp:773 Tape.cpp:835 Tape.cpp:878
 msgid "Tape ID on tape does not match tape ID in index file."
 msgstr ""
 "Mã nhận diện băng trên băng không khớp với mã nhận diện băng trong tập tin "
 "chỉ mục."
 
-#: Tape.cpp:652 Tape.cpp:799
+#: Tape.cpp:632 Tape.cpp:779
 msgid "Reading creation time failed."
 msgstr "Việc đọc thời gian tạo bị lỗi."
 
-#: Tape.cpp:659 Tape.cpp:806
+#: Tape.cpp:639 Tape.cpp:786
 msgid "Reading modification time failed."
 msgstr "Việc đọc thời gian sửa đổi bị lỗi."
 
-#: Tape.cpp:666 Tape.cpp:813
+#: Tape.cpp:646 Tape.cpp:793
 msgid "Reading tape name failed."
 msgstr "Việc đọc tên băng bị lỗi."
 
-#: Tape.cpp:674 Tape.cpp:821
+#: Tape.cpp:654 Tape.cpp:801
 msgid "Reading tape size failed."
 msgstr "Việc đọc kích cỡ băng bị lỗi."
 
-#: Tape.cpp:681 Tape.cpp:828
+#: Tape.cpp:661 Tape.cpp:808
 msgid "Reading archive count failed."
 msgstr "Việc đọc số đếm kho lưu bị lỗi."
 
-#: Tape.cpp:689
+#: Tape.cpp:669
 msgid "Reading archive name failed."
 msgstr "Việc đọc tên kho lưu bị lỗi."
 
-#: Tape.cpp:697
+#: Tape.cpp:677
 msgid "Reading archive time stamp failed."
 msgstr "Việc đọc nhãn thời gian kho lưu bị lỗi."
 
-#: Tape.cpp:704
+#: Tape.cpp:684
 msgid "Reading archive start block failed."
 msgstr "Việc đọc khối đầu kho lưu bị lỗi."
 
-#: Tape.cpp:711
+#: Tape.cpp:691
 msgid "Reading archive end block failed."
 msgstr "Việc đọc khối cuối kho lưu bị lỗi."
 
-#: Tape.cpp:724
+#: Tape.cpp:704
 msgid "Reading archive file count failed."
 msgstr "Việc đọc số đếm tập tin kho lưu bị lỗi."
 
-#: Tape.cpp:736
+#: Tape.cpp:716
 msgid "Reading file name failed."
 msgstr "Việc đọc tên tập tin bị lỗi."
 
-#: Tape.cpp:744
+#: Tape.cpp:724
 msgid "Reading file size failed."
 msgstr "Việc đọc kích cỡ tập tin bị lỗi."
 
-#: Tape.cpp:751
+#: Tape.cpp:731
 msgid "Reading file modification time failed."
 msgstr "Việc đọc thời gian sửa đổi tập tin bị lỗi."
 
-#: Tape.cpp:758
+#: Tape.cpp:738
 msgid "Reading file record number failed."
 msgstr "Việc đọc số mục ghi tập tin bị lỗi."
 

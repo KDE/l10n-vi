@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-16 00:06+0100\n"
+"POT-Creation-Date: 2008-03-17 08:42+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -166,13 +166,13 @@ msgstr "<i>không sẵn sàng</i>"
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:438
 #: libs/imageproperties/imagepropertiessidebar.cpp:268
-#: libs/thumbbar/thumbbar.cpp:906
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:348
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:381
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:411
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:432
-#: digikam/albumiconitem.cpp:323 digikam/albumfiletip.cpp:372
-#: showfoto/showfoto.cpp:722 utilities/imageeditor/canvas/undoaction.h:135
+#: libs/widgets/common/thumbbar.cpp:900 digikam/albumiconitem.cpp:323
+#: digikam/albumfiletip.cpp:372 showfoto/showfoto.cpp:731
+#: utilities/imageeditor/canvas/undoaction.h:135
 #: utilities/imageeditor/editor/imagewindow.cpp:604
 #: utilities/lighttable/lighttablebar.cpp:888
 msgid "Unknown"
@@ -195,7 +195,7 @@ msgstr "%1 bpp"
 #: libs/imageproperties/imagepropertiessidebardb.cpp:476
 #: libs/imageproperties/cameraitempropertiestab.cpp:526
 #: libs/imageproperties/imagepropertiessidebar.cpp:298
-#: libs/thumbbar/thumbbar.cpp:956 digikam/albumfiletip.cpp:426
+#: libs/widgets/common/thumbbar.cpp:950 digikam/albumfiletip.cpp:426
 #: utilities/lighttable/lighttablebar.cpp:942
 #, kde-format
 msgid "%1 (35mm: %2)"
@@ -204,7 +204,7 @@ msgstr "%1 (35mm: %2)"
 #: libs/imageproperties/imagepropertiessidebardb.cpp:481
 #: libs/imageproperties/cameraitempropertiestab.cpp:532
 #: libs/imageproperties/imagepropertiessidebar.cpp:303
-#: libs/thumbbar/thumbbar.cpp:968 digikam/albumfiletip.cpp:435
+#: libs/widgets/common/thumbbar.cpp:962 digikam/albumfiletip.cpp:435
 #: utilities/lighttable/lighttablebar.cpp:951
 #: utilities/slideshow/slideshow.cpp:432
 #, kde-format
@@ -383,7 +383,7 @@ msgid "Yes"
 msgstr "Có"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:387
-#: libs/thumbbar/thumbbar.cpp:857 digikam/albumfiletip.cpp:357
+#: libs/widgets/common/thumbbar.cpp:851 digikam/albumfiletip.cpp:357
 #: utilities/lighttable/lighttablebar.cpp:873
 #, kde-format
 msgid "%1 (%2)"
@@ -391,14 +391,14 @@ msgstr "%1 (%2)"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:394
 #: libs/imageproperties/imagepropertiessidebar.cpp:195
-#: libs/thumbbar/thumbbar.cpp:869
+#: libs/widgets/common/thumbbar.cpp:863
 msgid "RAW Image"
 msgstr "Ảnh RAW"
 
 #: libs/imageproperties/cameraitempropertiestab.cpp:435
 #: libs/imageproperties/imagepropertiessidebar.cpp:268
-#: libs/thumbbar/thumbbar.cpp:906 digikam/albumiconitem.cpp:323
-#: showfoto/showfoto.cpp:722 utilities/imageeditor/editor/imagewindow.cpp:604
+#: libs/widgets/common/thumbbar.cpp:900 digikam/albumiconitem.cpp:323
+#: showfoto/showfoto.cpp:731 utilities/imageeditor/editor/imagewindow.cpp:604
 #, kde-format
 msgid "%1x%2 (%3Mpx)"
 msgstr "%1x%2 (%3Mpx)"
@@ -1754,95 +1754,12 @@ msgstr ""
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:183 libs/themeengine/themeengine.cpp:197
 #: digikam/albumsettings.cpp:303 digikam/digikamapp.cpp:2092
-#: showfoto/showfoto.cpp:543
+#: showfoto/showfoto.cpp:552
 #: utilities/imageeditor/editor/editorwindow.cpp:1795
 #: utilities/lighttable/lighttablewindow.cpp:1583
 #: utilities/cameragui/cameraui.cpp:1981
 msgid "Default"
 msgstr "Mặc định"
-
-#: libs/thumbbar/thumbbar.cpp:823 digikam/albumfiletip.cpp:308
-#: utilities/lighttable/lighttablebar.cpp:840
-msgid "unavailable"
-msgstr "không sẵn sàng"
-
-#: libs/thumbbar/thumbbar.cpp:839 digikam/albumfiletip.cpp:339
-#: utilities/lighttable/lighttablebar.cpp:855
-msgid "File Properties"
-msgstr "Thuộc tính tập tin"
-
-#: libs/thumbbar/thumbbar.cpp:843 digikam/albumfiletip.cpp:343
-#: utilities/setup/setupcollections.cpp:249
-#: utilities/lighttable/lighttablebar.cpp:859
-msgid "Name:"
-msgstr "Tên:"
-
-#: libs/thumbbar/thumbbar.cpp:851 digikam/albumfiletip.cpp:351
-#: utilities/lighttable/lighttablebar.cpp:867
-msgid "Modified:"
-msgstr "Sửa đổi:"
-
-#: libs/thumbbar/thumbbar.cpp:856 digikam/albumfiletip.cpp:356
-#: utilities/lighttable/lighttablebar.cpp:872
-msgid "Size:"
-msgstr "Cỡ :"
-
-#: libs/thumbbar/thumbbar.cpp:899 digikam/albumfiletip.cpp:366
-#: imageplugins/colorfx/imageeffect_colorfx.cpp:170
-#: imageplugins/texture/imageeffect_texture.cpp:88
-#: imageplugins/blurfx/imageeffect_blurfx.cpp:90
-#: imageplugins/border/imageeffect_border.cpp:92
-#: imageplugins/distortionfx/imageeffect_distortionfx.cpp:99
-#: utilities/lighttable/lighttablebar.cpp:882
-msgid "Type:"
-msgstr "Kiểu :"
-
-#: libs/thumbbar/thumbbar.cpp:908 digikam/albumfiletip.cpp:380
-#: utilities/lighttable/lighttablebar.cpp:896
-msgid "Dimensions:"
-msgstr "Các chiều :"
-
-#: libs/thumbbar/thumbbar.cpp:927 digikam/albumfiletip.cpp:397
-#: utilities/lighttable/lighttablebar.cpp:913
-msgid "Photograph Properties"
-msgstr "Thuộc tính ảnh chụp"
-
-#: libs/thumbbar/thumbbar.cpp:934 digikam/albumfiletip.cpp:404
-#: utilities/lighttable/lighttablebar.cpp:920
-msgid "Make/Model:"
-msgstr "Hãng/Mô hình:"
-
-#: libs/thumbbar/thumbbar.cpp:943 libs/thumbbar/thumbbar.cpp:946
-#: digikam/albumfiletip.cpp:413 digikam/albumfiletip.cpp:416
-#: utilities/lighttable/lighttablebar.cpp:929
-#: utilities/lighttable/lighttablebar.cpp:932
-msgid "Created:"
-msgstr "Tạo :"
-
-#: libs/thumbbar/thumbbar.cpp:960 digikam/albumfiletip.cpp:429
-#: utilities/lighttable/lighttablebar.cpp:945
-msgid "Aperture/Focal:"
-msgstr "Độ mở/Tiêu :"
-
-#: libs/thumbbar/thumbbar.cpp:970 digikam/albumfiletip.cpp:437
-#: utilities/lighttable/lighttablebar.cpp:953
-msgid "Exposure/Sensitivity:"
-msgstr "Độ phơi nắng/nhạy:"
-
-#: libs/thumbbar/thumbbar.cpp:985 digikam/albumfiletip.cpp:452
-#: utilities/lighttable/lighttablebar.cpp:968
-msgid "Mode/Program:"
-msgstr "Chế độ/Chương trình:"
-
-#: libs/thumbbar/thumbbar.cpp:992 digikam/albumfiletip.cpp:459
-#: utilities/lighttable/lighttablebar.cpp:975
-msgid "Flash:"
-msgstr "Nháy:"
-
-#: libs/thumbbar/thumbbar.cpp:999 digikam/albumfiletip.cpp:466
-#: utilities/lighttable/lighttablebar.cpp:982
-msgid "White Balance:"
-msgstr "Cán cân trắng:"
 
 #: libs/widgets/metadata/xmpwidget.cpp:97
 msgid "XMP Schema"
@@ -2254,6 +2171,89 @@ msgstr "Thăm nơi Mạng của dự án digiKam"
 #| msgid "Shear..."
 msgid "Search..."
 msgstr "Kéo cắt..."
+
+#: libs/widgets/common/thumbbar.cpp:817 digikam/albumfiletip.cpp:308
+#: utilities/lighttable/lighttablebar.cpp:840
+msgid "unavailable"
+msgstr "không sẵn sàng"
+
+#: libs/widgets/common/thumbbar.cpp:833 digikam/albumfiletip.cpp:339
+#: utilities/lighttable/lighttablebar.cpp:855
+msgid "File Properties"
+msgstr "Thuộc tính tập tin"
+
+#: libs/widgets/common/thumbbar.cpp:837 digikam/albumfiletip.cpp:343
+#: utilities/setup/setupcollections.cpp:249
+#: utilities/lighttable/lighttablebar.cpp:859
+msgid "Name:"
+msgstr "Tên:"
+
+#: libs/widgets/common/thumbbar.cpp:845 digikam/albumfiletip.cpp:351
+#: utilities/lighttable/lighttablebar.cpp:867
+msgid "Modified:"
+msgstr "Sửa đổi:"
+
+#: libs/widgets/common/thumbbar.cpp:850 digikam/albumfiletip.cpp:356
+#: utilities/lighttable/lighttablebar.cpp:872
+msgid "Size:"
+msgstr "Cỡ :"
+
+#: libs/widgets/common/thumbbar.cpp:893 digikam/albumfiletip.cpp:366
+#: imageplugins/colorfx/imageeffect_colorfx.cpp:170
+#: imageplugins/texture/imageeffect_texture.cpp:88
+#: imageplugins/blurfx/imageeffect_blurfx.cpp:90
+#: imageplugins/border/imageeffect_border.cpp:92
+#: imageplugins/distortionfx/imageeffect_distortionfx.cpp:99
+#: utilities/lighttable/lighttablebar.cpp:882
+msgid "Type:"
+msgstr "Kiểu :"
+
+#: libs/widgets/common/thumbbar.cpp:902 digikam/albumfiletip.cpp:380
+#: utilities/lighttable/lighttablebar.cpp:896
+msgid "Dimensions:"
+msgstr "Các chiều :"
+
+#: libs/widgets/common/thumbbar.cpp:921 digikam/albumfiletip.cpp:397
+#: utilities/lighttable/lighttablebar.cpp:913
+msgid "Photograph Properties"
+msgstr "Thuộc tính ảnh chụp"
+
+#: libs/widgets/common/thumbbar.cpp:928 digikam/albumfiletip.cpp:404
+#: utilities/lighttable/lighttablebar.cpp:920
+msgid "Make/Model:"
+msgstr "Hãng/Mô hình:"
+
+#: libs/widgets/common/thumbbar.cpp:937 libs/widgets/common/thumbbar.cpp:940
+#: digikam/albumfiletip.cpp:413 digikam/albumfiletip.cpp:416
+#: utilities/lighttable/lighttablebar.cpp:929
+#: utilities/lighttable/lighttablebar.cpp:932
+msgid "Created:"
+msgstr "Tạo :"
+
+#: libs/widgets/common/thumbbar.cpp:954 digikam/albumfiletip.cpp:429
+#: utilities/lighttable/lighttablebar.cpp:945
+msgid "Aperture/Focal:"
+msgstr "Độ mở/Tiêu :"
+
+#: libs/widgets/common/thumbbar.cpp:964 digikam/albumfiletip.cpp:437
+#: utilities/lighttable/lighttablebar.cpp:953
+msgid "Exposure/Sensitivity:"
+msgstr "Độ phơi nắng/nhạy:"
+
+#: libs/widgets/common/thumbbar.cpp:979 digikam/albumfiletip.cpp:452
+#: utilities/lighttable/lighttablebar.cpp:968
+msgid "Mode/Program:"
+msgstr "Chế độ/Chương trình:"
+
+#: libs/widgets/common/thumbbar.cpp:986 digikam/albumfiletip.cpp:459
+#: utilities/lighttable/lighttablebar.cpp:975
+msgid "Flash:"
+msgstr "Nháy:"
+
+#: libs/widgets/common/thumbbar.cpp:993 digikam/albumfiletip.cpp:466
+#: utilities/lighttable/lighttablebar.cpp:982
+msgid "White Balance:"
+msgstr "Cán cân trắng:"
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:97
 #, fuzzy
@@ -2790,7 +2790,7 @@ msgid "<qt><b>\"<i>%1</i>\" Album Properties</b></qt>"
 msgstr "<qt><b>Thuộc tính tập ảnh « <i>%1</i> »</b></qt>"
 
 #: digikam/albumpropsedit.cpp:131 digikam/tagcreatedlg.cpp:119
-#: digikam/tagcreatedlg.cpp:289
+#: digikam/tagcreatedlg.cpp:292
 msgid "&Title:"
 msgstr "&Tựa:"
 
@@ -3047,20 +3047,20 @@ msgstr "Thẻ mới"
 msgid "<qt><b>Create New Tag in <i>\"%1\"</i></b></qt>"
 msgstr "<qt><b>Tạo thẻ mới trong « <i>%1</i> »</b></qt>"
 
-#: digikam/tagcreatedlg.cpp:128 digikam/tagcreatedlg.cpp:298
+#: digikam/tagcreatedlg.cpp:128 digikam/tagcreatedlg.cpp:301
 msgid "&Icon:"
 msgstr "B&iểu tượng"
 
-#: digikam/tagcreatedlg.cpp:246
+#: digikam/tagcreatedlg.cpp:249
 msgid "Edit Tag"
 msgstr "Sửa thẻ"
 
-#: digikam/tagcreatedlg.cpp:268
+#: digikam/tagcreatedlg.cpp:271
 #, kde-format
 msgid "<qt><b>Tag <i>\"%1\"</i> Properties </b></qt>"
 msgstr "<qt><b>Thuộc tính thẻ « <i>%1</i> »</b></qt>"
 
-#: digikam/tagcreatedlg.cpp:304
+#: digikam/tagcreatedlg.cpp:307
 msgid "Reset"
 msgstr "Đặt lại"
 
@@ -3527,61 +3527,61 @@ msgstr ""
 "nhấn vào « Có » để làm việc với tập ảnh này. Không thì nhấn vào « Không » và "
 "sửa chữa thiết lập miền địa phương trước khi khởi chạy lại trình digiKam."
 
-#: digikam/albummanager.cpp:959
+#: digikam/albummanager.cpp:969
 msgid "No parent found for album."
 msgstr "Không tìm thấy điều mẹ cho tập ảnh."
 
-#: digikam/albummanager.cpp:966
+#: digikam/albummanager.cpp:976
 msgid "Album name cannot be empty."
 msgstr "Không cho phép tên tập ảnh rỗng."
 
-#: digikam/albummanager.cpp:972
+#: digikam/albummanager.cpp:982
 msgid "Album name cannot contain '/'."
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:982
+#: digikam/albummanager.cpp:992
 msgid "No album root path supplied"
 msgstr "Chưa cung cấp đường dẫn gốc của tập ảnh"
 
-#: digikam/albummanager.cpp:1002
+#: digikam/albummanager.cpp:1012
 msgid "An existing album has the same name."
 msgstr "Một tập ảnh cùng tên đã có."
 
-#: digikam/albummanager.cpp:1018
+#: digikam/albummanager.cpp:1028
 msgid "Another file or folder with same name exists"
 msgstr "Một tập tin hay thư mục cùng tên đã có."
 
-#: digikam/albummanager.cpp:1020
+#: digikam/albummanager.cpp:1030
 msgid "Access denied to path"
 msgstr "Truy cập vào đường dẫn bị từ chối"
 
-#: digikam/albummanager.cpp:1022
+#: digikam/albummanager.cpp:1032
 msgid "Disk is full"
 msgstr "Đĩa đầy"
 
-#: digikam/albummanager.cpp:1024
+#: digikam/albummanager.cpp:1034
 msgid "Unknown error"
 msgstr "Lỗi không rõ"
 
-#: digikam/albummanager.cpp:1033
+#: digikam/albummanager.cpp:1043
 msgid "Failed to add album to database"
 msgstr "Lỗi thêm tập ảnh vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:1054 digikam/albummanager.cpp:1137
-#: digikam/albummanager.cpp:1238 digikam/albummanager.cpp:1274
-#: digikam/albummanager.cpp:1314
+#: digikam/albummanager.cpp:1064 digikam/albummanager.cpp:1147
+#: digikam/albummanager.cpp:1248 digikam/albummanager.cpp:1284
+#: digikam/albummanager.cpp:1324
 msgid "No such album"
 msgstr "Không có tập ảnh như vậy"
 
-#: digikam/albummanager.cpp:1060
+#: digikam/albummanager.cpp:1070
 msgid "Cannot rename root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: digikam/albummanager.cpp:1066
+#: digikam/albummanager.cpp:1076
 msgid "Album name cannot contain '/'"
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:1076
+#: digikam/albummanager.cpp:1086
 msgid ""
 "Another album with same name exists\n"
 "Please choose another name"
@@ -3589,43 +3589,43 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:1092
+#: digikam/albummanager.cpp:1102
 msgid "Failed to rename Album"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: digikam/albummanager.cpp:1143
+#: digikam/albummanager.cpp:1153
 msgid "Cannot edit root album"
 msgstr "Không thể sửa đổi tập ảnh gốc"
 
-#: digikam/albummanager.cpp:1171
+#: digikam/albummanager.cpp:1181
 msgid "No parent found for tag"
 msgstr "Không tìm thấy điều mẹ cho thẻ"
 
-#: digikam/albummanager.cpp:1178
+#: digikam/albummanager.cpp:1188
 msgid "Tag name cannot be empty"
 msgstr "Không cho phép tên thẻ rỗng."
 
-#: digikam/albummanager.cpp:1184 digikam/albummanager.cpp:1286
+#: digikam/albummanager.cpp:1194 digikam/albummanager.cpp:1296
 msgid "Tag name cannot contain '/'"
 msgstr "Không cho phép tên thẻ chứa « / »"
 
-#: digikam/albummanager.cpp:1194
+#: digikam/albummanager.cpp:1204
 msgid "Tag name already exists"
 msgstr "Tên thẻ đã có."
 
-#: digikam/albummanager.cpp:1203
+#: digikam/albummanager.cpp:1213
 msgid "Failed to add tag to database"
 msgstr "Lỗi thêm thẻ vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:1244
+#: digikam/albummanager.cpp:1254
 msgid "Cannot delete Root Tag"
 msgstr "Không thể xoá thẻ gốc"
 
-#: digikam/albummanager.cpp:1280 digikam/albummanager.cpp:1344
+#: digikam/albummanager.cpp:1290 digikam/albummanager.cpp:1354
 msgid "Cannot edit root tag"
 msgstr "Không thể sửa đổi thẻ gốc"
 
-#: digikam/albummanager.cpp:1296
+#: digikam/albummanager.cpp:1306
 msgid ""
 "Another tag with same name exists\n"
 "Please choose another name"
@@ -3633,11 +3633,11 @@ msgstr ""
 "Một thẻ cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:1320
+#: digikam/albummanager.cpp:1330
 msgid "Cannot move root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: digikam/albummanager.cpp:1338
+#: digikam/albummanager.cpp:1348
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
@@ -3747,7 +3747,7 @@ msgid "Open With"
 msgstr "Mở bằng"
 
 #: digikam/albumiconview.cpp:699 digikam/imagepreviewview.cpp:408
-#: showfoto/showfoto.cpp:576 utilities/imageeditor/editor/editorwindow.cpp:304
+#: showfoto/showfoto.cpp:585 utilities/imageeditor/editor/editorwindow.cpp:304
 #: utilities/lighttable/lighttablepreview.cpp:398
 #: utilities/lighttable/lighttablewindow.cpp:399
 #, fuzzy, kde-format
@@ -4070,11 +4070,11 @@ msgstr "Đánh giá"
 msgid "Rating less or equal to %1"
 msgstr ""
 
-#: digikam/digikamapp.cpp:170 showfoto/showfoto.cpp:187
+#: digikam/digikamapp.cpp:170 showfoto/showfoto.cpp:195
 msgid "Checking ICC repository"
 msgstr "Đang kiểm tra kho lưu ICC"
 
-#: digikam/digikamapp.cpp:177 showfoto/showfoto.cpp:195
+#: digikam/digikamapp.cpp:177 showfoto/showfoto.cpp:203
 msgid "Checking dcraw version"
 msgstr "Đang kiểm tra phiên bản dcraw"
 
@@ -4567,7 +4567,7 @@ msgstr ""
 msgid "Loading Kipi Plugins"
 msgstr "Đang nạp các phần bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:2070 showfoto/showfoto.cpp:202
+#: digikam/digikamapp.cpp:2070 showfoto/showfoto.cpp:210
 msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
@@ -5261,35 +5261,35 @@ msgstr "Joern Ahrens"
 msgid "File(s) or folder(s) to open"
 msgstr "Các tập tin/thư mục cần mở"
 
-#: showfoto/showfoto.cpp:221
+#: showfoto/showfoto.cpp:229
 msgid "Brightness/Contrast/Gamma"
 msgstr "Độ sáng/tương phản/gamma"
 
-#: showfoto/showfoto.cpp:225
+#: showfoto/showfoto.cpp:233
 msgid "Increase Gamma"
 msgstr "Tăng gamma"
 
-#: showfoto/showfoto.cpp:230
+#: showfoto/showfoto.cpp:238
 msgid "Decrease Gamma"
 msgstr "Giảm gamma"
 
-#: showfoto/showfoto.cpp:235
+#: showfoto/showfoto.cpp:243
 msgid "Increase Brightness"
 msgstr "Tăng độ sáng"
 
-#: showfoto/showfoto.cpp:240
+#: showfoto/showfoto.cpp:248
 msgid "Decrease Brightness"
 msgstr "Giảm độ sáng"
 
-#: showfoto/showfoto.cpp:245
+#: showfoto/showfoto.cpp:253
 msgid "Increase Contrast"
 msgstr "Tăng độ tương phản"
 
-#: showfoto/showfoto.cpp:250
+#: showfoto/showfoto.cpp:258
 msgid "Decrease Contrast"
 msgstr "Giảm độ tương phản"
 
-#: showfoto/showfoto.cpp:372
+#: showfoto/showfoto.cpp:381
 msgid ""
 "<qt><p>The ICC profile path seems to be invalid.</p><p>If you want to set it "
 "now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
@@ -5300,36 +5300,36 @@ msgstr ""
 "hợp này, tính năng « Quản lý màu » bị tắt đến khi bạn giải quyết vấn đề này.</"
 "p></qt>"
 
-#: showfoto/showfoto.cpp:498
+#: showfoto/showfoto.cpp:507
 msgid "Open folder"
 msgstr "Mở thư mục"
 
-#: showfoto/showfoto.cpp:507
+#: showfoto/showfoto.cpp:516
 msgid "Show Thumbnails"
 msgstr "Hiện các ảnh mẫu"
 
-#: showfoto/showfoto.cpp:581
+#: showfoto/showfoto.cpp:590
 msgid "Delete File"
 msgstr "Xoá tập tin"
 
-#: showfoto/showfoto.cpp:803 utilities/imageeditor/editor/imagewindow.cpp:684
+#: showfoto/showfoto.cpp:812 utilities/imageeditor/editor/imagewindow.cpp:684
 #, fuzzy, kde-format
 #| msgid " (%2 of %3)"
 msgctxt "<Image file name> (<Image number> of <Images in album>)"
 msgid "%1 (%2 of %3)"
 msgstr " (%2 trên %3)"
 
-#: showfoto/showfoto.cpp:888
+#: showfoto/showfoto.cpp:897
 #, fuzzy
 #| msgid "There are no pictures in this folder."
 msgid "There are no images in this folder."
 msgstr "Không có ảnh nào trong thư mục này."
 
-#: showfoto/showfoto.cpp:908
+#: showfoto/showfoto.cpp:917
 msgid "Open Images From Folder"
 msgstr "Mở ảnh từ thư mục"
 
-#: showfoto/showfoto.cpp:1086
+#: showfoto/showfoto.cpp:1095
 #, kde-format
 msgid ""
 "About to delete file \"%1\"\n"
@@ -5338,60 +5338,60 @@ msgstr ""
 "Sắp xoá tập tin « %1 »\n"
 "Bạn có chắc chưa?"
 
-#: showfoto/showfoto.cpp:1090
+#: showfoto/showfoto.cpp:1099
 #: utilities/imageeditor/editor/editorwindow.cpp:1071
 #: utilities/cameragui/cameraui.cpp:1500 utilities/cameragui/cameraui.cpp:1567
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: showfoto/showfoto.cpp:1178
+#: showfoto/showfoto.cpp:1187
 #: utilities/imageeditor/editor/imagewindow.cpp:1031
 #: utilities/imageeditor/editor/imagewindow.cpp:1053
 msgid "Prepare slideshow. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
 
 # Name: don't translate/Tên: đừng dịch
-#: showfoto/imagedialog.cpp:146
+#: showfoto/imagedialog.cpp:140
 #, fuzzy, kde-format
 #| msgid "Make:"
 msgid "Make: %1\n"
 msgstr "Make:"
 
-#: showfoto/imagedialog.cpp:147
+#: showfoto/imagedialog.cpp:141
 #, fuzzy, kde-format
 #| msgid "Model:"
 msgid "Model: %1\n"
 msgstr "Mô hình:"
 
-#: showfoto/imagedialog.cpp:150
+#: showfoto/imagedialog.cpp:144
 #, fuzzy, kde-format
 #| msgid "created : %1"
 msgid "Created: %1\n"
 msgstr "tạo : %1"
 
-#: showfoto/imagedialog.cpp:153
+#: showfoto/imagedialog.cpp:147
 #, fuzzy, kde-format
 #| msgid "Aperture/Focal:"
 msgid "Aperture: f/%1\n"
 msgstr "Độ mở/Tiêu :"
 
-#: showfoto/imagedialog.cpp:154
+#: showfoto/imagedialog.cpp:148
 #, kde-format
 msgid "Focal: %1 mm\n"
 msgstr ""
 
-#: showfoto/imagedialog.cpp:155
+#: showfoto/imagedialog.cpp:149
 #, kde-format
 msgid "Exposure: 1/%1 s\n"
 msgstr ""
 
-#: showfoto/imagedialog.cpp:156
+#: showfoto/imagedialog.cpp:150
 #, fuzzy, kde-format
 #| msgid "Sensitivity (ISO):"
 msgid "Sensitivity: %1 ISO"
 msgstr "Độ nhạy (ISO):"
 
-#: showfoto/imagedialog.cpp:220
+#: showfoto/imagedialog.cpp:214
 #, kde-format
 msgid ""
 "\n"
@@ -5400,7 +5400,7 @@ msgstr ""
 "\n"
 "%1|Các tập tin RAW của máy ảnh"
 
-#: showfoto/imagedialog.cpp:231
+#: showfoto/imagedialog.cpp:225
 msgid "Open Images"
 msgstr "Mở ảnh"
 

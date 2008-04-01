@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-29 21:23+0100\n"
+"POT-Creation-Date: 2008-03-31 20:05+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -726,9 +726,13 @@ msgstr "Tạm dừng"
 #. i18n: tag string
 #. i18n: file ./khtml/test_regression_gui.ui line 150
 #: rc.cpp:285 rc.cpp:288
+#, fuzzy
+#| msgid ""
+#| "You may select a file where the log content is stored, before the "
+#| "regression testing started!"
 msgid ""
 "You may select a file where the log content is stored, before the regression "
-"testing started!"
+"testing started."
 msgstr ""
 "Bạn có thể chọn tập tin vào đó cần ghi lưu, trước khi khởi chạy tiến trình "
 "thử ra hồi quy."
@@ -777,8 +781,10 @@ msgstr "Chỉ thử ra HTML"
 
 #. i18n: tag string
 #. i18n: file ./khtml/test_regression_gui.ui line 257
-#: rc.cpp:312
-msgid "Do not supress debug output"
+#: rc.cpp:312 khtml/test_regression.cpp:618
+#, fuzzy
+#| msgid "Do not supress debug output"
+msgid "Do not suppress debug output"
 msgstr "Đừng thu hồi kết xuất gỡ lỗi"
 
 #. i18n: tag string
@@ -1090,9 +1096,13 @@ msgstr "Dùng loa của máy tính"
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 31
 #: rc.cpp:473
+#, fuzzy
+#| msgid ""
+#| "If the ordinary PC speaker should be used instead of KDE's own "
+#| "notifications system."
 msgid ""
-"If the ordinary PC speaker should be used instead of KDE's own notifications "
-"system."
+"Whether the ordinary PC speaker should be used instead of KDE's own "
+"notifications system."
 msgstr "Có nên sử dụng loa chuẩn của máy tính thay cho hệ thống thông báo KDE."
 
 #. i18n: tag label
@@ -1154,7 +1164,9 @@ msgstr "Màu cho liên kết"
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 54
 #: rc.cpp:502
-msgid "What color links which are yet not clicked on should have."
+#, fuzzy
+#| msgid "What color links which are yet not clicked on should have."
+msgid "What color links should be that have not yet been clicked on"
 msgstr "Liên kết chưa nhấn vào nên có màu nào?"
 
 #. i18n: tag label
@@ -1212,19 +1224,25 @@ msgstr "Hiện thư mục trước"
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 388
 #: rc.cpp:529
-msgid "If directories should be placed at the top when displaying files"
+#, fuzzy
+#| msgid "If directories should be placed at the top when displaying files"
+msgid "Whether directories should be placed at the top when displaying files"
 msgstr "Có nên để các thư mục bên trên khi liệt kê tập tin"
 
 #. i18n: tag label
 #. i18n: file ./kutils/kdeglobals.kcfg line 396
 #: rc.cpp:532
-msgid "The recent URLs recently visited"
+#, fuzzy
+#| msgid "The recent URLs recently visited"
+msgid "The URLs recently visited"
 msgstr "Các URL vừa thăm"
 
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 397
 #: rc.cpp:535
-msgid "Used for auto completion in file dialogs for example."
+#, fuzzy
+#| msgid "Used for auto completion in file dialogs for example."
+msgid "Used for auto-completion in file dialogs, for example"
 msgstr "Dùng để gõ xong vào hộp thoại, chẳng hạn."
 
 #. i18n: tag label
@@ -1242,9 +1260,13 @@ msgstr "Hiện tập tin ẩn"
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 407
 #: rc.cpp:544
+#, fuzzy
+#| msgid ""
+#| "Determines if files starting with a dot(convention for hidden files) "
+#| "should be shown"
 msgid ""
-"Determines if files starting with a dot(convention for hidden files) should "
-"be shown"
+"Whether files starting with a dot (convention for hidden files) should be "
+"shown"
 msgstr ""
 "Xác định có nên hiển thị tập tin có tên bắt đầu với dấu chấm (quy ước cho "
 "tập tin ẩn) hay không."
@@ -1273,14 +1295,20 @@ msgstr "Quốc gia nào"
 #. i18n: tag whatsthis
 #. i18n: file ./kutils/kdeglobals.kcfg line 433
 #: rc.cpp:556
+#, fuzzy
+#| msgid ""
+#| "Used to determine how to display numbers, currency and time/date for "
+#| "example"
 msgid ""
-"Used to determine how to display numbers, currency and time/date for example"
+"Used to determine how to display numbers, currency and time/date, for example"
 msgstr "Dùng để xác định phương pháp hiển thị con số, tiền tệ và ngày/giờ v.v."
 
 #. i18n: tag label
 #. i18n: file ./kutils/kdeglobals.kcfg line 437
 #: rc.cpp:559
-msgid "What language to display text in"
+#, fuzzy
+#| msgid "What language to display text in"
+msgid "What language to use to display text"
 msgstr "Ngôn ngữ theo đó cần hiển thị văn bản"
 
 #. i18n: tag label
@@ -1326,7 +1354,7 @@ msgstr "Đường dẫn tới thư mục màn hình nền"
 #: rc.cpp:580
 #, fuzzy
 #| msgid "In this directory the files on the dekstop are stored"
-msgid "In this directory the files on the desktop are stored"
+msgid "Directory where the files on the desktop are stored"
 msgstr "Các tập tin nằm trên màn hình nền được cất giữ trong thư mục này."
 
 #. i18n: tag label
@@ -1656,9 +1684,13 @@ msgstr "Thí dụ công việc ThreadWeaver"
 #. i18n: tag string
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 19
 #: rc.cpp:852
+#, fuzzy
+#| msgid ""
+#| "The program executes 100 jobs in 4 threads. Each job waits for a random "
+#| "amount of milliseconds between 1 and 1000."
 msgid ""
 "The program executes 100 jobs in 4 threads. Each job waits for a random "
-"amount of milliseconds between 1 and 1000."
+"number of milliseconds between 1 and 1000."
 msgstr ""
 "Chương trình thực hiện 100 công việc trong 4 mạch. Mỗi công việc đợi trong "
 "số mili-giây ngẫu nhiên (giữa 1 và 1000)."
@@ -1778,12 +1810,19 @@ msgid "System Default (currently: %1)"
 msgstr "Mặc định của hệ thống (hiện thời: %1)"
 
 #: interfaces/ktexteditor/templateinterface.cpp:65
+#, fuzzy
+#| msgid ""
+#| "The templates needs information about you, which are stored in your "
+#| "addressbook.\n"
+#| "The needed plugin could not be loaded.\n"
+#| "\n"
+#| "Please install the KDEPIM/Kontact package for your system"
 msgid ""
-"The templates needs information about you, which are stored in your "
-"addressbook.\n"
-"The needed plugin could not be loaded.\n"
+"The template needs information about you, which is stored in your address "
+"book.\n"
+"However, the required plugin could not be loaded.\n"
 "\n"
-"Please install the KDEPIM/Kontact package for your system"
+"Please install the KDEPIM/Kontact package for your system."
 msgstr ""
 "Các mẫu yêu cầu thông tin về bạn mà được cất giữ trong Sổ địa chỉ.\n"
 "Không thể nạp bổ sung cần thiết.\n"
@@ -3261,26 +3300,35 @@ msgstr "chiều/tối"
 msgid "Library not found"
 msgstr "Không tìm thấy liên kết: « %1 »"
 
-#: kdecore/util/klibloader.cpp:146 kdecore/services/kmimetypetrader.h:136
-#: kdecore/services/kmimetypetrader.h:169
-#: kdecore/services/kservicetypetrader.h:187
-msgid "No service matching the requirements was found"
+#: kdecore/util/klibloader.cpp:146
+#, fuzzy
+#| msgid "No service matching the requirements was found"
+msgid "No service matching the requirements was found."
 msgstr "Không tìm thấy dịch vụ tương ứng với yêu cầu"
 
 #: kdecore/util/klibloader.cpp:148
+#, fuzzy
+#| msgid ""
+#| "The service provides no library, the Library key is missing in the ."
+#| "desktop file"
 msgid ""
 "The service provides no library, the Library key is missing in the .desktop "
-"file"
+"file."
 msgstr ""
 "Dịch vụ không cung cấp thư viện; khoá Thư Viện còn thiếu trong tập tin môi "
 "trường (.desktop)."
 
 #: kdecore/util/klibloader.cpp:152
-msgid "The library does not export a factory for creating components"
+#, fuzzy
+#| msgid "The library does not export a factory for creating components"
+msgid "The library does not export a factory for creating components."
 msgstr "Thư viện không xuất khẩu bộ tạo thành phần"
 
 #: kdecore/util/klibloader.cpp:154
-msgid "The factory does not support creating components of the specified type"
+#, fuzzy
+#| msgid ""
+#| "The factory does not support creating components of the specified type"
+msgid "The factory does not support creating components of the specified type."
 msgstr "Bộ tạo không hỗ trợ khả năng tạo thành phần có kiểu đã xác định."
 
 #: kdecore/util/klibloader.cpp:156
@@ -3294,7 +3342,7 @@ msgstr "KLibLoader: lỗi không rõ"
 #| "desktop file"
 msgid ""
 "The service '%1' provides no library or the Library key is missing in the ."
-"desktop file"
+"desktop file."
 msgstr ""
 "Dịch vụ không cung cấp thư viện; khoá Thư Viện còn thiếu trong tập tin môi "
 "trường (.desktop)."
@@ -3307,7 +3355,7 @@ msgstr "Thư viện %1 không cung cấp bộ tạo tương thích với KDE."
 
 #: kdecore/util/kpluginloader.cpp:187
 #, kde-format
-msgid "The plugin '%1' uses incompatible KDE library. (%2)"
+msgid "The plugin '%1' uses an incompatible KDE library (%2)."
 msgstr ""
 
 #: kdecore/config/kconfig.cpp:659
@@ -3943,9 +3991,12 @@ msgid "Function must be called from the main thread."
 msgstr "Hàm cần phải được gọi từ mạch chính."
 
 #: kdecore/kernel/ktoolinvocation.cpp:110
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "KLauncher could not be reached via D-Bus, error when calling %1:\n"
+#| "%2\n"
 msgid ""
-"KLauncher could not be reached via D-Bus, error when calling %1:\n"
+"KLauncher could not be reached via D-Bus. Error when calling %1:\n"
 "%2\n"
 msgstr ""
 "Không thể tới bộ khởi chạy KLauncher thông qua D-Bus, gặp lỗi khi gọi %1:\n"
@@ -4082,13 +4133,13 @@ msgstr "Không tìm thấy tập tin %1."
 
 #: kdecore/sycoca/kmemfile.cpp:78
 #, kde-format
-msgid "Can't open %1 for reading"
+msgid "Cannot open %1 for reading"
 msgstr ""
 
-#: kdecore/sycoca/kmemfile.cpp:88
+#: kdecore/sycoca/kmemfile.cpp:88 kdecore/sycoca/kmemfile.cpp:167
 #, fuzzy, kde-format
 #| msgid "Could not create temporary file."
-msgid "Can not create memory segment for file %1"
+msgid "Cannot create memory segment for file %1"
 msgstr "Không thể tạo tập tin tạm thời."
 
 #: kdecore/sycoca/kmemfile.cpp:98
@@ -4101,13 +4152,8 @@ msgstr "Không thể đọc tập tin « %1 »."
 msgid "Only 'ReadOnly' allowed"
 msgstr ""
 
-#: kdecore/sycoca/kmemfile.cpp:167
-#, kde-format
-msgid "Can't create memory segment for file %1"
-msgstr ""
-
 #: kdecore/sycoca/kmemfile.cpp:205
-msgid "Can't seek over eof"
+msgid "Cannot seek past eof"
 msgstr ""
 
 #: kdecore/services/kmimetype.cpp:58
@@ -4129,7 +4175,7 @@ msgstr[0] ""
 #: kdecore/services/kmimetype.cpp:129
 msgid ""
 "No mime types installed. Check that shared-mime-info is installed, and that "
-"XDG_DATA_DIRS is not set, or includes /usr/share"
+"XDG_DATA_DIRS is not set, or includes /usr/share."
 msgstr ""
 
 #: kdecore/localization/kencodingdetector.cpp:1116
@@ -5100,7 +5146,9 @@ msgid "Author:"
 msgstr "Tác giả :"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:72
-msgid "E-mail address:"
+#, fuzzy
+#| msgid "E-mail address:"
+msgid "Email address:"
 msgstr "Địa chỉ thư :"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:77
@@ -5142,7 +5190,9 @@ msgid "Summary:"
 msgstr "Tóm tắt:"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:109
-msgid "In which language did you describe above?"
+#, fuzzy
+#| msgid "In which language did you describe above?"
+msgid "In which language did you describe the above?"
 msgstr "Bạn đã diễn tả bên trên bằng ngôn ngữ nào?"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:112
@@ -5170,13 +5220,17 @@ msgid "Get Hot New Stuff!"
 msgstr "Lấy các thứ mới trơ tráo nhé"
 
 #: knewstuff/knewstuff2/ui/downloaddialog.cpp:96
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "Program name followed by 'Add On Installer'"
+#| msgid "%1 Add On Installer"
 msgctxt "Program name followed by 'Add On Installer'"
-msgid "%1 Add On Installer"
+msgid "%1 Add-On Installer"
 msgstr "Bộ cài đặt bổ trợ %1"
 
 #: knewstuff/knewstuff2/ui/downloaddialog.cpp:168
-msgid "Timeout. Check internet connection!"
+#, fuzzy
+#| msgid "Timeout. Check internet connection!"
+msgid "Timeout. Check Internet connection!"
 msgstr "Quá giờ. Hãy kiểm tra lại có kết nối Mạng không."
 
 #: knewstuff/knewstuff2/ui/downloaddialog.cpp:250
@@ -5352,7 +5406,9 @@ msgid "KNewStuff contributions"
 msgstr "Đóng góp KNewStuff"
 
 #: knewstuff/knewstuff2/ui/kdxsbutton.cpp:565
-msgid "This operation needs authentication"
+#, fuzzy
+#| msgid "This operation needs authentication"
+msgid "This operation requires authentication."
 msgstr "Thao tác này cần thiết xác thực"
 
 #: knewstuff/knewstuff2/ui/knewstuffaction.cpp:37
@@ -6153,7 +6209,9 @@ msgstr ""
 "mặc định không? Các thay đổi sẽ được áp dụng ngay."
 
 #: kdeui/dialogs/kedittoolbar.cpp:527
-msgid "Reset ToolBars"
+#, fuzzy
+#| msgid "Reset ToolBars"
+msgid "Reset Toolbars"
 msgstr "Đặt lại Thanh công cụ"
 
 #: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2887
@@ -6764,7 +6822,9 @@ msgid "Switch Application Language"
 msgstr "Đổi ngôn ngữ ứng dụng"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:108
-msgid "Please choose language which should be used for this application:"
+#, fuzzy
+#| msgid "Please choose language which should be used for this application:"
+msgid "Please choose the language which should be used for this application:"
 msgstr "Hãy chọn ngôn ngữ cần dùng cho ứng dụng này:"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:136
@@ -6774,21 +6834,31 @@ msgid "Add Fallback Language"
 msgstr "Thêm ngôn ngữ phụ"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:137
+#, fuzzy
+#| msgid ""
+#| "Adds one more language which will be used if other translations do not "
+#| "contain proper translation"
 msgid ""
 "Adds one more language which will be used if other translations do not "
-"contain proper translation"
+"contain a proper translation."
 msgstr "Thêm ngôn ngữ thứ hai sẽ được dùng nếu bản dịch chưa hoàn tất."
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:226
+#, fuzzy
+#| msgid ""
+#| "Language for this application has been changed. The change will take "
+#| "effect upon next start of application"
 msgid ""
-"Language for this application has been changed. The change will take effect "
-"upon next start of application"
+"The language for this application has been changed. The change will take "
+"effect the next time the application is started."
 msgstr ""
 "Ngôn ngữ cho ứng dụng này bị thay đổi. Thay đổi sẽ có tác động lần kế tiếp "
 "bạn khởi chạy ứng dụng này."
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:227
-msgid "Application language changed"
+#, fuzzy
+#| msgid "Application language changed"
+msgid "Application Language Changed"
 msgstr "Ngôn ngữ ứng dụng bị thay đổi"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:280
@@ -6800,15 +6870,23 @@ msgid "Fallback language:"
 msgstr "Ngôn ngữ phụ :"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:311
+#, fuzzy
+#| msgid ""
+#| "This is main application language which will be used first before any "
+#| "other languages"
 msgid ""
-"This is main application language which will be used first before any other "
-"languages"
+"This is the main application language which will be used first, before any "
+"other languages."
 msgstr "Đây là ngôn ngữ ứng dụng chính mà sẽ được dùng trước các ngôn ngữ khác"
 
 #: kdeui/dialogs/kswitchlanguagedialog_p.cpp:312
+#, fuzzy
+#| msgid ""
+#| "This is language which will be used if any previous languages does not "
+#| "contain proper translation"
 msgid ""
-"This is language which will be used if any previous languages does not "
-"contain proper translation"
+"This is the language which will be used if any previous languages do not "
+"contain a proper translation."
 msgstr "Đây là ngôn ngữ phụ mà sẽ được dùng nếu bản dịch chưa hoàn tất"
 
 #: kdeui/dialogs/kpassworddialog.cpp:68
@@ -7200,7 +7278,7 @@ msgstr "Hãy nhập chuỗi thay thế, hoặc chọn chuỗi trước trong dan
 #| "an extra backslash in front of it, like <code><b>\\\\N</b></code>.</qt>"
 msgid ""
 "<qt>If enabled, any occurrence of <code><b>\\N</b></code>, where <code><b>N</"
-"b></code> is a integer number, will be replaced with the corresponding "
+"b></code> is an integer number, will be replaced with the corresponding "
 "capture (\"parenthesized substring\") from the pattern.<p>To include (a "
 "literal <code><b>\\N</b></code> in your replacement, put an extra backslash "
 "in front of it, like <code><b>\\\\N</b></code>.</p></qt>"
@@ -7859,7 +7937,7 @@ msgctxt ""
 msgid "LTR"
 msgstr "LTR"
 
-#: kdeui/kernel/kapplication.cpp:829
+#: kdeui/kernel/kapplication.cpp:862
 #, kde-format
 msgid "The style '%1' was not found"
 msgstr "Không tìm thấy kiểu dáng « %1 »"
@@ -8595,7 +8673,7 @@ msgstr ""
 
 #: kdeui/widgets/kcharselect-translation.cpp:97
 msgctxt "KCharselect unicode block name"
-msgid "Letterlike Symbols"
+msgid "Letter-Like Symbols"
 msgstr ""
 
 #: kdeui/widgets/kcharselect-translation.cpp:98
@@ -8935,7 +9013,7 @@ msgstr ""
 
 #: kdeui/widgets/kcharselect-translation.cpp:161
 msgctxt "KCharselect unicode block name"
-msgid "Halfwidth and Fullwidth Forms"
+msgid "Half-Width and Full-Width Forms"
 msgstr ""
 
 #: kdeui/widgets/kcharselect-translation.cpp:162
@@ -9695,8 +9773,9 @@ msgid "&Unmount '%1'"
 msgstr "&Bỏ lắp « %1 »"
 
 #: kfile/kfileplacesmodel.cpp:727
-#, kde-format
-msgid "An error occurred while accessing '%1', the system said: %2"
+#, fuzzy, kde-format
+#| msgid "An error occurred while accessing '%1', the system said: %2"
+msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Gặp lỗi khi truy cập « %1 », thông điệp hệ thống: %2"
 
 #: kfile/kfileplacesmodel.cpp:731
@@ -10012,7 +10091,7 @@ msgid "Navigate"
 msgstr "Duyệt tới"
 
 #: khtml/testkhtml.cpp:38
-msgid "url to open"
+msgid "URL to open"
 msgstr ""
 
 #: khtml/testkhtml.cpp:40
@@ -10058,12 +10137,6 @@ msgstr "Đã xong."
 msgid "Directory containing tests, basedir and output directories."
 msgstr ""
 
-#: khtml/test_regression.cpp:618
-#, fuzzy
-#| msgid "Do not supress debug output"
-msgid "Do not suppress debug output"
-msgstr "Đừng thu hồi kết xuất gỡ lỗi"
-
 #: khtml/test_regression.cpp:620
 msgid "Regenerate baseline (instead of checking)"
 msgstr ""
@@ -10094,8 +10167,8 @@ msgstr ""
 
 #: khtml/test_regression.cpp:630
 msgid ""
-"Directory containing tests,basedir and output directories. Only regarded if -"
-"b is not specified."
+"Directory containing tests, basedir and output directories. Only regarded if "
+"-b is not specified."
 msgstr ""
 
 #: khtml/test_regression.cpp:631
@@ -10855,7 +10928,9 @@ msgid "Continue"
 msgstr "Tiếp tục"
 
 #: khtml/test_regression_gui_window.cpp:632
-msgid "Can not find testregression executable."
+#, fuzzy
+#| msgid "Can not find testregression executable."
+msgid "Cannot find testregression executable."
 msgstr ""
 "Không thể tìm được tập tin thực hiện được thử ra hồi quy testregression."
 
@@ -11565,13 +11640,15 @@ msgid "Level of safety of the Ruby interpreter"
 msgstr "Cấp an toàn của bộ giải thích Ruby"
 
 #: kross/core/action.cpp:399
-#, kde-format
-msgid "There exists no such scriptfile \"%1\""
-msgstr "Không có tập tin văn lệnh « %1 »."
+#, fuzzy, kde-format
+#| msgid "File %1 not found."
+msgid "Scriptfile \"%1\" does not exist."
+msgstr "Không tìm thấy tập tin %1."
 
 #: kross/core/action.cpp:403
-#, kde-format
-msgid "Failed to determinate interpreter for scriptfile \"%1\""
+#, fuzzy, kde-format
+#| msgid "Failed to determinate interpreter for scriptfile \"%1\""
+msgid "Failed to determine interpreter for scriptfile \"%1\""
 msgstr "Lỗi xác định bộ giải thích cho tập tin văn lệnh « %1 »."
 
 #: kross/core/action.cpp:407
@@ -11711,6 +11788,22 @@ msgstr ""
 msgid "Daniel Molkentin"
 msgstr ""
 
+#: nepomuk/core/resource.cpp:368
+msgid "Success"
+msgstr "Thành công"
+
+#: nepomuk/core/resource.cpp:370
+msgid "Communication error"
+msgstr "Lỗi giao thông"
+
+#: nepomuk/core/resource.cpp:372
+msgid "Invalid type in Database"
+msgstr "Gặp kiểu không hợp lệ trong cơ sở dữ liệu"
+
+#: nepomuk/core/resource.cpp:374
+msgid "Unknown error"
+msgstr "Gặp lỗi lạ"
+
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:207
 #, fuzzy
 #| msgid "Create new tag..."
@@ -11747,22 +11840,6 @@ msgstr "Cấu hình thông &báo..."
 #: nepomuk/core/test/tagcloudtest.cpp:30
 msgid "tagcloudtest"
 msgstr ""
-
-#: nepomuk/core/generated/resource.cpp:370
-msgid "Success"
-msgstr "Thành công"
-
-#: nepomuk/core/generated/resource.cpp:372
-msgid "Communication error"
-msgstr "Lỗi giao thông"
-
-#: nepomuk/core/generated/resource.cpp:374
-msgid "Invalid type in Database"
-msgstr "Gặp kiểu không hợp lệ trong cơ sở dữ liệu"
-
-#: nepomuk/core/generated/resource.cpp:376
-msgid "Unknown error"
-msgstr "Gặp lỗi lạ"
 
 #: kparts/browserextension.cpp:645
 #, fuzzy, kde-format
@@ -11939,17 +12016,25 @@ msgid "Automatic changes have been performed due to plugin dependencies"
 msgstr "Thay đổi tự động đã được thực hiện do quan hệ phụ thuộc của bổ sung."
 
 #: kutils/kpluginselector.cpp:224
+#, fuzzy
+#| msgid ""
+#| "Automatically changes have been performed in order to satisfy plugin "
+#| "dependencies:\n"
 msgid ""
-"Automatically changes have been performed in order to satisfy plugin "
+"Automatic changes have been performed in order to satisfy plugin "
 "dependencies:\n"
 msgstr ""
 "Thay đổi tự động đã được thực hiện để thỏa quan hệ phụ thuộc của bổ sung.\n"
 
 #: kutils/kpluginselector.cpp:228
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "\n"
+#| "    %1 plugin has been automatically checked because the dependency of %2 "
+#| "plugin"
 msgid ""
 "\n"
-"    %1 plugin has been automatically checked because the dependency of %2 "
+"    %1 plugin has been automatically checked because of the dependency of %2 "
 "plugin"
 msgstr ""
 "\n"
@@ -11963,8 +12048,8 @@ msgstr ""
 #| "2 plugin"
 msgid ""
 "\n"
-"    %1 plugin has been automatically unchecked because its dependency on %2 "
-"plugin"
+"    %1 plugin has been automatically unchecked because of its dependency on %"
+"2 plugin"
 msgstr ""
 "\n"
 "    Bổ sung %1 bị bỏ chọn tự động do quan hệ phụ thuộc của bổ sung %2."
@@ -12000,8 +12085,10 @@ msgid "About %1 plugin"
 msgstr "Giới thiệu về %1"
 
 #: kutils/kpluginselector.cpp:1683
-msgid "E-Mail:"
-msgstr "Địa chỉ thư :"
+#, fuzzy
+#| msgid "Email"
+msgid "Email:"
+msgstr "Thư điện tử"
 
 #: kutils/kpluginselector.cpp:1701
 msgid "Website:"
@@ -12020,8 +12107,12 @@ msgid "Print Preview"
 msgstr "&Xem thử bản in..."
 
 #: kutils/kcmoduleproxy.cpp:134
+#, fuzzy
+#| msgid ""
+#| "<b>Changes in this section requires root access.</b><br />On applying "
+#| "your changes you will have to supply your root password."
 msgid ""
-"<b>Changes in this section requires root access.</b><br />On applying your "
+"<b>Changes in this section require root access.</b><br />On applying your "
 "changes you will have to supply your root password."
 msgstr ""
 "<b>Thay đổi trong phần này cần thiết quyền của người chủ.</b><br />Khi áp "
@@ -12103,9 +12194,11 @@ msgid "Incorrect number of arguments."
 msgstr "Số đối số không đúng."
 
 #: kjsembed/kjsembed/qobject_binding.cpp:410
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The slot sked for %1 arguments but there are only %2 arguments available."
 msgid ""
-"The slot sked for %1 arguments but there are only %2 arguments available."
+"The slot asked for %1 arguments but there are only %2 arguments available."
 msgstr "Khe yêu cầu %1 đối số nhưng chỉ có %2 đối số sẵn sàng."
 
 #: kjsembed/kjsembed/qobject_binding.cpp:604
@@ -12232,8 +12325,9 @@ msgid "Could not create temporary file."
 msgstr "Không thể tạo tập tin tạm thời."
 
 #: kjsembed/kjsembed/builtins.cpp:89 kjsembed/kjsembed/builtins.cpp:129
-#, kde-format
-msgid "Error seen while processing include '%1' line %2: %3"
+#, fuzzy, kde-format
+#| msgid "Error seen while processing include '%1' line %2: %3"
+msgid "Error encountered while processing include '%1' line %2: %3"
 msgstr "Gặp lỗi trong khi xử lý hàm bao gồm « %1 », dòng %2: %3"
 
 #: kjsembed/kjsembed/builtins.cpp:95
@@ -12348,7 +12442,7 @@ msgstr "Nhập mật khẩu"
 #, fuzzy
 #| msgid "Do SpellChecking"
 msgctxt "@option:check"
-msgid "Do SpellChecking"
+msgid "Do Spellchecking"
 msgstr "Bắt lỗi chính tả"
 
 #: kde3support/kdeui/k3sconfig.cpp:113
@@ -12901,6 +12995,12 @@ msgstr ""
 msgid "The service '%1' does not provide an interface '%2' with keyword '%3'"
 msgstr ""
 
+#: kdecore/services/kmimetypetrader.h:136
+#: kdecore/services/kmimetypetrader.h:169
+#: kdecore/services/kservicetypetrader.h:187
+msgid "No service matching the requirements was found"
+msgstr "Không tìm thấy dịch vụ tương ứng với yêu cầu"
+
 #: kdeui/actions/kstandardaction_p.h:43
 msgid "&New"
 msgstr "&Mới"
@@ -13089,6 +13189,21 @@ msgid ""
 msgstr ""
 "<qt><font size=\"+4\" face=\"%1\">%2</font><br>%3<br>Điểm mã Unicode: %4<br>"
 "(In decimal: %5)</qt>"
+
+#: kross/qts/values_p.h:68
+#, fuzzy, kde-format
+#| msgid "No such interpreter \"%1\""
+msgid "No such function \"%1\""
+msgstr "Không có bộ giải thích « %1 »."
+
+#~ msgid "Do not supress debug output"
+#~ msgstr "Đừng thu hồi kết xuất gỡ lỗi"
+
+#~ msgid "There exists no such scriptfile \"%1\""
+#~ msgstr "Không có tập tin văn lệnh « %1 »."
+
+#~ msgid "E-Mail:"
+#~ msgstr "Địa chỉ thư :"
 
 #, fuzzy
 #~| msgid "Latest"

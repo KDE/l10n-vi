@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-29 21:25+0100\n"
+"POT-Creation-Date: 2008-03-31 20:06+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -340,9 +340,10 @@ msgid "C&ontinue Loading"
 msgstr "&Tiếp tục tải"
 
 #: kio/tcpslavebase.cpp:319
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Authentication Failed."
-msgid ": SSL negotiation failed"
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
 msgstr "Xác thực thất bại."
 
 #: kio/tcpslavebase.cpp:476
@@ -384,7 +385,7 @@ msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên c
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
-"The server failed the authenticity check (%1)\n"
+"The server failed the authenticity check (%1).\n"
 "\n"
 msgstr "Chứng nhận máy phục vụ đã thất bại việc thử ra xác thực (%1)."
 
@@ -2841,21 +2842,27 @@ msgstr ""
 #| "The IP address of the host %1 does not match the one the certificate was "
 #| "issued to."
 msgid ""
-"The certificate's CA's (Certificate Authority) does not match the CA name of "
+"The certificate's CA (Certificate Authority) does not match the CA name of "
 "the certificate."
 msgstr ""
 "Địa chỉ IP của máy %1 không khớp với điều cho mà chứng nhận đã được phát "
 "hành."
 
 #: kssl/ksslcertificate.cpp:1112
+#, fuzzy
+#| msgid ""
+#| "The IP address of the host %1 does not match the one the certificate was "
+#| "issued to."
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID does not match the key "
+"The CA (Certificate Authority) certificate's key ID does not match the key "
 "ID in the 'Issuer' section of the certificate you are trying to use."
 msgstr ""
+"Địa chỉ IP của máy %1 không khớp với điều cho mà chứng nhận đã được phát "
+"hành."
 
 #: kssl/ksslcertificate.cpp:1114
 msgid ""
-"The CA's (Certificate Authority) certificate's key ID and name do not match "
+"The CA (Certificate Authority) certificate's key ID and name do not match "
 "the key ID and name in the 'Issuer' section of the certificate you are "
 "trying to use."
 msgstr ""
@@ -2886,7 +2893,7 @@ msgid ""
 "CRL (Certificate Revocation List) is not valid. Any of them could not be "
 "valid yet or not valid any more. If you see this message, please let the "
 "author of the software you are using know that he or she should use the new, "
-"morespecific error messages."
+"more specific error messages."
 msgstr ""
 
 #: kssl/ksslcertificate.cpp:1131
@@ -3585,7 +3592,8 @@ msgstr "&Nhớ ứng dụng tương ứng với kiểu tập tin này."
 #: kfile/kopenwithdialog.cpp:794
 #, kde-format
 msgid ""
-"Could not extract executable name from '%1', please type a valid program name"
+"Could not extract executable name from '%1', please type a valid program "
+"name."
 msgstr ""
 
 #: kfile/kmetaprops.cpp:101
@@ -5968,8 +5976,9 @@ msgstr "&Bỏ lắp « %1 »"
 # An error occurred while attempting to %1, %2. A summary of the reasons is
 # below.<ul>
 #: ../kfile/kfileplacesmodel.cpp:727
-#, kde-format
-msgid "An error occurred while accessing '%1', the system said: %2"
+#, fuzzy, kde-format
+#| msgid "An error occurred while accessing '%1', the system said: %2"
+msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Gặp lỗi khi truy cập « %1 »: thông điệp hệ thống: %2"
 
 # msgid "An unexpected error (%1) occurred while attempting to %2."

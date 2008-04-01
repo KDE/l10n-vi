@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-29 21:24+0100\n"
+"POT-Creation-Date: 2008-03-31 20:06+0200\n"
 "PO-Revision-Date: 2008-01-06 00:26+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-l10n-vi@lists.kde.org>\n"
@@ -199,10 +199,15 @@ msgid "&Clean Indentation"
 msgstr "Làm &sạch thụt lề"
 
 #: view/kateview.cpp:320
+#, fuzzy
+#| msgid ""
+#| "Use this to clean the indentation of a selected block of text (only tabs/"
+#| "only spaces)<br /><br />You can configure whether tabs should be honored "
+#| "and used or replaced with spaces, in the configuration dialog."
 msgid ""
 "Use this to clean the indentation of a selected block of text (only tabs/"
-"only spaces)<br /><br />You can configure whether tabs should be honored and "
-"used or replaced with spaces, in the configuration dialog."
+"only spaces).<br /><br />You can configure whether tabs should be honored "
+"and used or replaced with spaces, in the configuration dialog."
 msgstr ""
 "Dùng lệnh này để làm sạch cách thụt lề một khối văn bản đã chọn (dùng chỉ "
 "Tab hoặc chỉ dấu cách).<br/><br/>Trong hộp thoại cấu hình, bạn có thể chọn "
@@ -345,9 +350,13 @@ msgid "&Mode"
 msgstr "&Chế độ"
 
 #: view/kateview.cpp:413
+#, fuzzy
+#| msgid ""
+#| "Here you can choose which mode should be used for the current document. "
+#| "This will influence the used highlighting and folding for example."
 msgid ""
 "Here you can choose which mode should be used for the current document. This "
-"will influence the used highlighting and folding for example."
+"will influence the highlighting and folding being used, for example."
 msgstr ""
 "Ở đây bạn có khả năng chọn chế độ nào nên được dùng cho tài liệu hiện thời. "
 "Nó sẽ có tác động kiểu tô sáng và gấp lại."
@@ -503,9 +512,13 @@ msgid "Show Scroll&bar Marks"
 msgstr "Hiện dấu thanh &cuộn"
 
 #: view/kateview.cpp:505
+#, fuzzy
+#| msgid ""
+#| "Show/hide the marks on the vertical scrollbar.<br /><br />The marks, for "
+#| "instance, show bookmarks."
 msgid ""
-"Show/hide the marks on the vertical scrollbar.<br /><br />The marks, for "
-"instance, show bookmarks."
+"Show/hide the marks on the vertical scrollbar.<br /><br />The marks show "
+"bookmarks, for instance."
 msgstr ""
 "Bật/tắt hiển thị những dấu trên thanh cuộn dọc.<br/><br/>Tức là những dấu "
 "này hiển thị Đánh dấu."
@@ -1114,7 +1127,9 @@ msgid "Choose Editor..."
 msgstr "Chọn bộ sửa..."
 
 #: tests/katetest.cpp:205
-msgid "Override the system wide setting for the default editing component"
+#, fuzzy
+#| msgid "Override the system wide setting for the default editing component"
+msgid "Override the system-wide setting for the default editing component"
 msgstr ""
 "Có quyền cao hơn thiết lập toàn hệ thống cho thành phần hiệu chỉnh mặc định."
 
@@ -3833,7 +3848,7 @@ msgstr "Hiện &số hiệu dòng"
 #| "instance, show bookmarks."
 msgid ""
 "<p>If this option is checked, every new view will show marks on the vertical "
-"scrollbar.</p><p>These marks will, for instance, show bookmarks.</p>"
+"scrollbar.</p><p>These marks will show bookmarks, for instance.</p>"
 msgstr ""
 "Bật/tắt hiển thị những dấu trên thanh cuộn dọc.<br><br>Tức là những dấu này "
 "hiển thị Đánh dấu."
@@ -5903,7 +5918,7 @@ msgstr ""
 msgid "Binary File Opened"
 msgstr "Tập tin nhị phân được mở"
 
-#: document/katedocument.cpp:3497
+#: document/katedocument.cpp:3497 document/katedocument.cpp:3503
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 was opened with UTF-8 encoding but contained invalid "
@@ -5924,19 +5939,6 @@ msgstr ""
 #: document/katedocument.cpp:3500
 msgid "Broken UTF-8 File Opened"
 msgstr "Tập tin UTF-8 bị hư được mở"
-
-#: document/katedocument.cpp:3503
-#, kde-format
-msgid ""
-"The file %1 was opened with UTF-8 encoding but contained invalid characters. "
-"It is set to read-only mode, as saving might destroy it's content. Either "
-"reopen the file with the correct encoding chosen or enable the read-write "
-"mode again in the menu to be able to edit it."
-msgstr ""
-"Tập tin %1 đã được mở với bảng mã UTF-8, nhưng vẫn còn chứa ký tự không hợp "
-"lệ. Nó được đặt thành chế độ chỉ đọc, vì việc lưu có thể hủy nội dung của "
-"nó. Hoặc mở lại tập tin này với bảng mã đúng được chọn, hoặc hiệu lực chế độ "
-"đọc-ghi lần nửa trong trình đơn để có khả năng hiệu chỉnh nó."
 
 #: document/katedocument.cpp:3523
 msgid "Trying to Save Binary File"
@@ -6069,6 +6071,17 @@ msgstr "Ghi đè tập tin không?"
 #: document/katedocument.cpp:5956
 msgid "&Overwrite"
 msgstr "&Ghi đè"
+
+#~ msgid ""
+#~ "The file %1 was opened with UTF-8 encoding but contained invalid "
+#~ "characters. It is set to read-only mode, as saving might destroy it's "
+#~ "content. Either reopen the file with the correct encoding chosen or "
+#~ "enable the read-write mode again in the menu to be able to edit it."
+#~ msgstr ""
+#~ "Tập tin %1 đã được mở với bảng mã UTF-8, nhưng vẫn còn chứa ký tự không "
+#~ "hợp lệ. Nó được đặt thành chế độ chỉ đọc, vì việc lưu có thể hủy nội dung "
+#~ "của nó. Hoặc mở lại tập tin này với bảng mã đúng được chọn, hoặc hiệu lực "
+#~ "chế độ đọc-ghi lần nửa trong trình đơn để có khả năng hiệu chỉnh nó."
 
 #, fuzzy
 #~| msgid "Plain Text"

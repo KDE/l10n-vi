@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-04 16:48+0200\n"
+"POT-Creation-Date: 2008-04-06 20:09+0200\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -1197,7 +1197,9 @@ msgstr "Không gian màu:"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdglayerproperties.ui line 62
-#: rc.cpp:128
+#. i18n: tag string
+#. i18n: file ./plugins/generators/example/wdgcoloroptions.ui line 45
+#: rc.cpp:128 rc.cpp:2686
 msgid "&Opacity:"
 msgstr "&Độ đậm đặc:"
 
@@ -1428,9 +1430,7 @@ msgstr "Tự đặt..."
 #. i18n: file ./plugins/filters/noisefilter/wdgnoiseoptions.ui line 22
 #. i18n: tag string
 #. i18n: file ./plugins/filters/randompickfilter/wdgrandompickoptions.ui line 48
-#. i18n: tag string
-#. i18n: file ./plugins/generators/example/wdgnoiseoptions.ui line 22
-#: rc.cpp:272 rc.cpp:347 rc.cpp:1746 rc.cpp:2491 rc.cpp:2605 rc.cpp:2683
+#: rc.cpp:272 rc.cpp:347 rc.cpp:1746 rc.cpp:2491 rc.cpp:2605
 msgid "Opacity:"
 msgstr "Độ đậm đặc:"
 
@@ -5427,9 +5427,7 @@ msgstr "Tham số chi tiết:"
 #. i18n: file ./plugins/filters/noisefilter/wdgnoiseoptions.ui line 32
 #. i18n: tag string
 #. i18n: file ./plugins/filters/randompickfilter/wdgrandompickoptions.ui line 22
-#. i18n: tag string
-#. i18n: file ./plugins/generators/example/wdgnoiseoptions.ui line 32
-#: rc.cpp:2494 rc.cpp:2602 rc.cpp:2686
+#: rc.cpp:2494 rc.cpp:2602
 msgid "Level:"
 msgstr "Mức độ:"
 
@@ -5682,6 +5680,13 @@ msgstr "Mực &nước:"
 msgid "&Ambient light:"
 msgstr "Ánh sáng &nền:"
 
+#. i18n: tag string
+#. i18n: file ./plugins/generators/example/wdgcoloroptions.ui line 16
+#: rc.cpp:2683
+#, fuzzy
+msgid "&Color:"
+msgstr "Màu"
+
 #. i18n: tag text
 #. i18n: file ./colorspaces/lms_f32/lms_f32_plugin.rc line 4
 #: rc.cpp:2746
@@ -5910,7 +5915,7 @@ msgstr "Phần chọn"
 msgid "Mirror Mask X"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:412 ui/kis_layer_manager.cc:768
+#: ui/kis_mask_manager.cc:412 ui/kis_layer_manager.cc:767
 msgid "Mirror Layer X"
 msgstr ""
 
@@ -6045,67 +6050,67 @@ msgstr "Sửa cỡ ảnh thành cỡ lớp hiện tại"
 msgid "Filter Layer Properties"
 msgstr "Tính chất cho lớp mới"
 
-#: ui/kis_layer_manager.cc:390
+#: ui/kis_layer_manager.cc:391
 #, fuzzy
 #| msgid "New Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Tính chất cho lớp mới"
 
-#: ui/kis_layer_manager.cc:466 ui/kis_layer_manager.cc:481
-#: ui/kis_layer_manager.cc:524 ui/kis_layer_manager.cc:557
-#: ui/kis_layer_manager.cc:689
+#: ui/kis_layer_manager.cc:465 ui/kis_layer_manager.cc:480
+#: ui/kis_layer_manager.cc:523 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:688
 msgid "Could not add layer to image."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: ui/kis_layer_manager.cc:466 ui/kis_layer_manager.cc:481
-#: ui/kis_layer_manager.cc:524 ui/kis_layer_manager.cc:557
-#: ui/kis_layer_manager.cc:689
+#: ui/kis_layer_manager.cc:465 ui/kis_layer_manager.cc:480
+#: ui/kis_layer_manager.cc:523 ui/kis_layer_manager.cc:556
+#: ui/kis_layer_manager.cc:688
 #, fuzzy
 msgid "Layer Error"
 msgstr "Lỗi Lớp"
 
-#: ui/kis_layer_manager.cc:580
+#: ui/kis_layer_manager.cc:579
 #, fuzzy
 msgid "New Filter Layer"
 msgstr "Tạo layer mới"
 
-#: ui/kis_layer_manager.cc:682
+#: ui/kis_layer_manager.cc:681
 #, kde-format
 msgid "Duplicate of '%1'"
 msgstr "Bản sao của '%1'"
 
-#: ui/kis_layer_manager.cc:789
+#: ui/kis_layer_manager.cc:788
 msgid "Mirror Layer Y"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:811
+#: ui/kis_layer_manager.cc:810
 msgid "Scale Layer"
 msgstr "Phóng Lớp"
 
-#: ui/kis_layer_manager.cc:834
+#: ui/kis_layer_manager.cc:833
 #: plugins/viewplugins/rotateimage/rotateimage.cc:149
 msgid "Rotate Layer"
 msgstr "Xoay Lớp"
 
-#: ui/kis_layer_manager.cc:868
+#: ui/kis_layer_manager.cc:867
 msgid "Shear layer"
 msgstr "Làm méo Lớp"
 
-#: ui/kis_layer_manager.cc:891
+#: ui/kis_layer_manager.cc:890
 #, fuzzy
 msgid "The image contains hidden layers that will be lost."
 msgstr "Ảnh chứa lớp ẩn, chúng sẽ bị mất."
 
-#: ui/kis_layer_manager.cc:892 image/kis_image.cc:796
+#: ui/kis_layer_manager.cc:891 image/kis_image.cc:796
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Làm phẳng ảnh"
 
-#: ui/kis_layer_manager.cc:893
+#: ui/kis_layer_manager.cc:892
 msgid "&Flatten Image"
 msgstr "&Làm phẳng ảnh"
 
-#: ui/kis_layer_manager.cc:940
+#: ui/kis_layer_manager.cc:939
 #: plugins/viewplugins/separate_channels/kis_channel_separator.cc:258
 msgid "Export Layer"
 msgstr "Xuất Lớp"
@@ -6556,7 +6561,7 @@ msgstr "Cr"
 #: colorspaces/ycbcr/kis_ycbcr_u16_colorspace.cc:41
 #: colorspaces/xyz_u16/kis_xyz_u16_colorspace.cc:38
 #: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:54
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:215
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:200
 msgid "Alpha"
 msgstr "Alpha"
 
@@ -6585,7 +6590,7 @@ msgstr "Đen trắng (số nguyên 16-bit mỗi kênh)"
 msgid "Gray"
 msgstr "Xám"
 
-#: colorspaces/xyz_u16/xyz_u16_plugin.cc:49
+#: colorspaces/xyz_u16/xyz_u16_plugin.cc:50
 msgid "XYZ16 Histogram"
 msgstr ""
 
@@ -6602,6 +6607,7 @@ msgid "Z"
 msgstr "Z"
 
 #: colorspaces/xyz_float_hdr/xyz_float_hdr.cc:53
+#: colorspaces/rgb_float_hdr.ctl/rgb_float_hdr.cc:65
 #: colorspaces/rgb_float_hdr/rgb_float_hdr.cc:93
 #: colorspaces/xyz_float_hdr.ctl/xyz_float_hdr.cc:51
 msgid "Float32 Half Histogram"
@@ -6641,22 +6647,37 @@ msgstr ""
 msgid "Long Middle Short Cone Space (32-bit float/channel)"
 msgstr ""
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:208
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:193
 msgid "LMS (32-bit float/channel)"
 msgstr ""
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:212
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:197
 msgid "Long"
 msgstr "Dài"
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:213
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:198
 #, fuzzy
 msgid "Middle"
 msgstr "Trung bình"
 
-#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:214
+#: colorspaces/lms_f32/kis_lms_f32_colorspace.cc:199
 msgid "Short"
 msgstr "Ngắn"
+
+#: colorspaces/rgb_float_hdr.ctl/kis_rgb_f16_hdr_colorspace.cc:28
+#: colorspaces/rgb_float_hdr/kis_rgb_f16_hdr_colorspace.cc:29
+msgid "RGB (16-bit float/channel) for High Dynamic Range imaging"
+msgstr ""
+
+#: colorspaces/rgb_float_hdr.ctl/rgb_float_hdr.cc:51
+#: colorspaces/rgb_float_hdr/rgb_float_hdr.cc:82
+msgid "Float16 Half Histogram"
+msgstr ""
+
+#: colorspaces/rgb_float_hdr.ctl/kis_rgb_f32_hdr_colorspace.cc:28
+#: colorspaces/rgb_float_hdr/kis_rgb_f32_hdr_colorspace.cc:29
+msgid "RGB (32-bit float/channel) for High Dynamic Range imaging"
+msgstr ""
 
 #: colorspaces/gray_u8_no_alpha/kis_gray_colorspace.cc:34
 msgid "Grayscale without alpha (8-bit integer/channel)"
@@ -6664,18 +6685,6 @@ msgstr "Đen trắng không trong suốt (số nguyên 8-bit mỗi kênh)"
 
 #: colorspaces/gray_u8_no_alpha/gray_plugin.cc:53
 msgid "GRAY/Alpha8 Histogram"
-msgstr ""
-
-#: colorspaces/rgb_float_hdr/kis_rgb_f16_hdr_colorspace.cc:29
-msgid "RGB (16-bit float/channel) for High Dynamic Range imaging"
-msgstr ""
-
-#: colorspaces/rgb_float_hdr/rgb_float_hdr.cc:82
-msgid "Float16 Half Histogram"
-msgstr ""
-
-#: colorspaces/rgb_float_hdr/kis_rgb_f32_hdr_colorspace.cc:29
-msgid "RGB (32-bit float/channel) for High Dynamic Range imaging"
 msgstr ""
 
 #: colorspaces/extensions/kis_hsv_adjustment.cc:117
@@ -8384,10 +8393,6 @@ msgstr "Andreas Lundin"
 #, fuzzy
 #~ msgid "&Canvas"
 #~ msgstr "Tải lại Canvas"
-
-#, fuzzy
-#~ msgid "&Color:"
-#~ msgstr "Màu"
 
 #, fuzzy
 #~ msgid "Indian Red"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-06 19:51+0200\n"
+"POT-Creation-Date: 2008-04-08 21:19+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -197,7 +197,7 @@ msgstr "Nhớ mật khẩu"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/sonnet/configui.ui line 28
-#: rc.cpp:80 kdeui/findreplace/kfinddialog.cpp:126 kfile/kfilewidget.cpp:347
+#: rc.cpp:80 kdeui/findreplace/kfinddialog.cpp:126 kfile/kfilewidget.cpp:373
 msgid "Options"
 msgstr "Tùy chọn"
 
@@ -675,13 +675,13 @@ msgstr "Thanh công cụ chính"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/widgets/kshortcutwidget.ui line 22
-#: rc.cpp:261 kdeui/dialogs/kshortcutseditor.cpp:603
+#: rc.cpp:261 kdeui/dialogs/kshortcutseditor.cpp:606
 msgid "Main:"
 msgstr "Chính:"
 
 #. i18n: tag string
 #. i18n: file ./kdeui/widgets/kshortcutwidget.ui line 52
-#: rc.cpp:264 kdeui/dialogs/kshortcutseditor.cpp:604
+#: rc.cpp:264 kdeui/dialogs/kshortcutseditor.cpp:607
 msgid "Alternate:"
 msgstr "Xen kẽ:"
 
@@ -1527,7 +1527,7 @@ msgstr "Cửa sổ chính"
 
 #. i18n: tag string
 #. i18n: file ./kjsembed/examples/kjsconsole/jsconsole.ui line 109
-#: rc.cpp:671 kparts/browserrun.cpp:295
+#: rc.cpp:671 kparts/browserrun.cpp:302
 msgid "Execute"
 msgstr "Thực hiện"
 
@@ -1976,7 +1976,7 @@ msgstr "Tải lại"
 msgid "Do Not Reload"
 msgstr "Không tải lại"
 
-#: kded/kbuildsycoca.cpp:870
+#: kded/kbuildsycoca.cpp:873
 msgid "Configuration information reloaded successfully."
 msgstr "Thông tin cấu hình đã được tải lại."
 
@@ -3358,7 +3358,7 @@ msgstr "Thư viện %1 không cung cấp bộ tạo tương thích với KDE."
 msgid "The plugin '%1' uses an incompatible KDE library (%2)."
 msgstr ""
 
-#: kdecore/config/kconfig.cpp:659
+#: kdecore/config/kconfig.cpp:661
 msgid "Please contact your system administrator."
 msgstr "Hãy liên lạc quản trị hệ thống."
 
@@ -3710,7 +3710,7 @@ msgstr "Ứng dụng: "
 msgid "Qt"
 msgstr "Thoát"
 
-#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4807
+#: kdecore/kernel/kcmdlineargs.cpp:489 khtml/khtml_part.cpp:4813
 msgid "KDE"
 msgstr "KDE"
 
@@ -5144,7 +5144,7 @@ msgid "Name"
 msgstr "Tên"
 
 #: knewstuff/knewstuff2/ui/kdxstranslation.cpp:49
-#: kdeui/dialogs/kshortcutseditor.cpp:628
+#: kdeui/dialogs/kshortcutseditor.cpp:631
 msgid "Description"
 msgstr "Mô tả"
 
@@ -6317,13 +6317,13 @@ msgid "Change Icon"
 msgstr "Đổi &biểu tượng..."
 
 #: kdeui/dialogs/kshortcutseditor.cpp:104
-#: kdeui/dialogs/kshortcutseditor.cpp:624
+#: kdeui/dialogs/kshortcutseditor.cpp:627
 msgid "Shortcuts"
 msgstr "Phím tắt"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:490
-#: kdeui/dialogs/kshortcutseditor.cpp:519
-#: kdeui/dialogs/kshortcutseditor.cpp:535
+#: kdeui/dialogs/kshortcutseditor.cpp:522
+#: kdeui/dialogs/kshortcutseditor.cpp:538
 #: kdeui/widgets/kkeysequencewidget.cpp:124
 msgid "Key Conflict"
 msgstr "Phím xung đột"
@@ -6339,8 +6339,9 @@ msgstr ""
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:495
-#: kdeui/dialogs/kshortcutseditor.cpp:524
-#: kdeui/dialogs/kshortcutseditor.cpp:540 kdeui/shortcuts/kglobalaccel.cpp:375
+#: kdeui/dialogs/kshortcutseditor.cpp:513
+#: kdeui/dialogs/kshortcutseditor.cpp:527
+#: kdeui/dialogs/kshortcutseditor.cpp:543 kdeui/shortcuts/kglobalaccel.cpp:375
 #: kdeui/widgets/kkeysequencewidget.cpp:128
 msgid "Reassign"
 msgstr "Gán lại"
@@ -6350,17 +6351,21 @@ msgid "Conflict with Standard Application Shortcut"
 msgstr "Xung đột với phím tắt ứng dụng chuẩn"
 
 #: kdeui/dialogs/kshortcutseditor.cpp:508
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The '%1' key combination has already been allocated to the standard "
+#| "action \"%2\" that many applications use.\n"
+#| "You cannot use it for global shortcuts for this reason."
 msgid ""
-"The '%1' key combination has already been allocated to the standard action "
-"\"%2\" that many applications use.\n"
-"You cannot use it for global shortcuts for this reason."
+"The '%1' key combination is also being used for the standard action \"%2\" "
+"that some applications use.\n"
+"Do you really want to use it as a global shortcut, too?"
 msgstr ""
 "Tổ hợp phím « %1 » đã được gán cho hành động chuẩn « %2 » mà được dùng bởi "
 "nhiều ứng dụng.\n"
 "Vậy bạn không thể sử dụng nó lam phím tắt toàn cục."
 
-#: kdeui/dialogs/kshortcutseditor.cpp:520
+#: kdeui/dialogs/kshortcutseditor.cpp:523
 #, kde-format
 msgid ""
 "The '%1' shape gesture has already been allocated to the \"%2\" action.\n"
@@ -6369,7 +6374,7 @@ msgstr ""
 "Điệu bộ hình « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:536
+#: kdeui/dialogs/kshortcutseditor.cpp:539
 #, kde-format
 msgid ""
 "The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
@@ -6378,20 +6383,20 @@ msgstr ""
 "Điệu bộ đu « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:585
+#: kdeui/dialogs/kshortcutseditor.cpp:588
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgctxt "header for an applications shortcut list"
 msgid "Shortcuts for %1"
 msgstr "Phím tắt"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:605
+#: kdeui/dialogs/kshortcutseditor.cpp:608
 #, fuzzy
 #| msgid "Global"
 msgid "Global:"
 msgstr "Toàn cục"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:620
+#: kdeui/dialogs/kshortcutseditor.cpp:623
 #, fuzzy
 #| msgid "Action"
 msgid "Action Name"
@@ -9496,7 +9501,7 @@ msgstr "&Hiện mọi mục nhập"
 msgid "&Remove '%1'"
 msgstr "&Bỏ « %1 »"
 
-#: kfile/kfilefiltercombo.cpp:36 kfile/kfilewidget.cpp:1438
+#: kfile/kfilefiltercombo.cpp:36 kfile/kfilewidget.cpp:1475
 msgid "*|All Files"
 msgstr "*|Mọi tập tin"
 
@@ -9504,7 +9509,7 @@ msgstr "*|Mọi tập tin"
 msgid "All Supported Files"
 msgstr "Mọi tập tin đã hỗ trợ"
 
-#: kfile/kfilewidget.cpp:205
+#: kfile/kfilewidget.cpp:207
 #, fuzzy
 #| msgid ""
 #| "<p>While typing in the text area, you may be presented with possible "
@@ -9521,12 +9526,12 @@ msgstr ""
 "bên phải trên con chuột) rồi chọn chế độ đã muốn trong trình đơn <b>Gõ xong "
 "văn bản</b>."
 
-#: kfile/kfilewidget.cpp:247
+#: kfile/kfilewidget.cpp:273
 #, kde-format
 msgid "Drive: %1"
 msgstr "Ổ : %1"
 
-#: kfile/kfilewidget.cpp:319
+#: kfile/kfilewidget.cpp:345
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -9541,33 +9546,33 @@ msgstr ""
 "thời là « file:/home/%1 », việc nhấn vào nút này sẽ lên thư mục cha « file:/"
 "home »."
 
-#: kfile/kfilewidget.cpp:324
+#: kfile/kfilewidget.cpp:350
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Nhấn vào cái nút này để lùi lại một bước trong lịch sử duyệt."
 
-#: kfile/kfilewidget.cpp:326
+#: kfile/kfilewidget.cpp:352
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Nhấn vào cái nút này để tiếp tới một bước trong lịch sử duyệt."
 
-#: kfile/kfilewidget.cpp:329
+#: kfile/kfilewidget.cpp:355
 msgid "Click this button to reload the contents of the current location."
 msgstr "Nhấn vào cái nút này để nạp lại nội dung của địa điểm hiện thời."
 
-#: kfile/kfilewidget.cpp:332
+#: kfile/kfilewidget.cpp:358
 msgid "Click this button to create a new folder."
 msgstr "Nhấn vào cái nút này để tạo một thư mục mới."
 
-#: kfile/kfilewidget.cpp:335
+#: kfile/kfilewidget.cpp:361
 #, fuzzy
 #| msgid "Show Quick Access Navigation Panel"
 msgid "Show Places Navigation Panel"
 msgstr "Hiện Bảng Duyệt qua Truy cập Nhanh"
 
-#: kfile/kfilewidget.cpp:342
+#: kfile/kfilewidget.cpp:368
 msgid "Show Bookmarks"
 msgstr "Hiện Liên kết đã Lưu"
 
-#: kfile/kfilewidget.cpp:349
+#: kfile/kfilewidget.cpp:375
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the configuration menu for the file dialog. Various options "
@@ -9588,11 +9593,11 @@ msgstr ""
 "li><li>khả năng hiển thị tập tin ẩn</li><li>Bảng Duyệt qua Truy cập Nhanh</"
 "li><li>ô xem thử tập tin</li><li>phân biệt tập tin ra thư mục</li></ul></qt>"
 
-#: kfile/kfilewidget.cpp:393 kfile/kfileplaceeditdialog.cpp:116
+#: kfile/kfilewidget.cpp:419 kfile/kfileplaceeditdialog.cpp:116
 msgid "&Location:"
 msgstr "Đị&a điểm:"
 
-#: kfile/kfilewidget.cpp:416
+#: kfile/kfilewidget.cpp:442
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -9610,21 +9615,21 @@ msgstr ""
 "lọc trong trình đơn thả xuống, hoặc gõ trực tiếp vào vùng văn bản một bộ lọc "
 "riêng.<p>Cho phép sử dụng ký tự đại diện như « * » và « ? ».</qt>"
 
-#: kfile/kfilewidget.cpp:422
+#: kfile/kfilewidget.cpp:448
 msgid "&Filter:"
 msgstr "&Lọc:"
 
-#: kfile/kfilewidget.cpp:637 kfile/kfilewidget.cpp:680
-#: kfile/kfilewidget.cpp:1371
+#: kfile/kfilewidget.cpp:665 kfile/kfilewidget.cpp:707
+#: kfile/kfilewidget.cpp:1408
 msgid "You can only select local files."
 msgstr "Chỉ có thể chọn tập tin cục bộ."
 
-#: kfile/kfilewidget.cpp:638 kfile/kfilewidget.cpp:681
-#: kfile/kfilewidget.cpp:1372
+#: kfile/kfilewidget.cpp:666 kfile/kfilewidget.cpp:708
+#: kfile/kfilewidget.cpp:1409
 msgid "Remote Files Not Accepted"
 msgstr "Không chấp nhận tập tin ở xa"
 
-#: kfile/kfilewidget.cpp:672
+#: kfile/kfilewidget.cpp:699
 #, kde-format
 msgid ""
 "%1\n"
@@ -9633,15 +9638,15 @@ msgstr ""
 "%1\n"
 "có vẻ là không phải địa chỉ URL hợp lệ.\n"
 
-#: kfile/kfilewidget.cpp:672
+#: kfile/kfilewidget.cpp:699
 msgid "Invalid URL"
 msgstr "URL không hợp lệ"
 
-#: kfile/kfilewidget.cpp:1005
+#: kfile/kfilewidget.cpp:1043
 msgid "This is the name to save the file as."
 msgstr "Đây là tên dưới đó cần lưu tập tin."
 
-#: kfile/kfilewidget.cpp:1010
+#: kfile/kfilewidget.cpp:1048
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -9649,11 +9654,11 @@ msgstr ""
 "Đây là danh sách những tập tin cần mở. Cũng có thể xác định nhiều tập tin "
 "bằng cách liệt kê vài tập tin định giới bằng dấu cách."
 
-#: kfile/kfilewidget.cpp:1017
+#: kfile/kfilewidget.cpp:1055
 msgid "This is the name of the file to open."
 msgstr "Đây là tên của tập tin cần mở."
 
-#: kfile/kfilewidget.cpp:1303
+#: kfile/kfilewidget.cpp:1340
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -9661,11 +9666,11 @@ msgstr ""
 "Có vẻ là những tên tập tin\n"
 " đã chọn không phải hợp lệ."
 
-#: kfile/kfilewidget.cpp:1305
+#: kfile/kfilewidget.cpp:1342
 msgid "Invalid Filenames"
 msgstr "Tên tập tin không hợp lệ"
 
-#: kfile/kfilewidget.cpp:1334
+#: kfile/kfilewidget.cpp:1371
 #, kde-format
 msgid ""
 "The requested filenames\n"
@@ -9678,37 +9683,37 @@ msgstr ""
 "có vẻ là không phải hợp lệ;\n"
 "hãy kiểm tra xem mỗi tên tập tin nằm giữa hai dấu trích dẫn đôi."
 
-#: kfile/kfilewidget.cpp:1338
+#: kfile/kfilewidget.cpp:1375
 msgid "Filename Error"
 msgstr "Lỗi tên tập tin"
 
-#: kfile/kfilewidget.cpp:1435
+#: kfile/kfilewidget.cpp:1472
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: kfile/kfilewidget.cpp:1574 kparts/browserrun.cpp:376
+#: kfile/kfilewidget.cpp:1611 kparts/browserrun.cpp:383
 msgid "&Open"
 msgstr "&Mở"
 
-#: kfile/kfilewidget.cpp:1717
+#: kfile/kfilewidget.cpp:1754
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Tự động chọn &phần mở rộng tên tập tin (%1)"
 
-#: kfile/kfilewidget.cpp:1718
+#: kfile/kfilewidget.cpp:1755
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "phần mở rộng <b>%1</b>"
 
-#: kfile/kfilewidget.cpp:1726
+#: kfile/kfilewidget.cpp:1763
 msgid "Automatically select filename e&xtension"
 msgstr "Tự động chọn &phần mở rộng tên tập tin"
 
-#: kfile/kfilewidget.cpp:1727
+#: kfile/kfilewidget.cpp:1764
 msgid "a suitable extension"
 msgstr "một phần mở rộng thích hợp"
 
-#: kfile/kfilewidget.cpp:1737
+#: kfile/kfilewidget.cpp:1774
 #, fuzzy, kde-format
 #| msgid ""
 #| "This option enables some convenient features for saving files with "
@@ -9746,11 +9751,11 @@ msgstr ""
 "cuối tên tập tin (dấu chấm tự động bị gỡ bỏ).</li></ol>Chưa chắc thì bật tùy "
 "chọn này, vì nó giúp đỡ bạn quản lý tập tin."
 
-#: kfile/kfilewidget.cpp:2013
+#: kfile/kfilewidget.cpp:2050
 msgid "Bookmarks"
 msgstr "Đánh dấu"
 
-#: kfile/kfilewidget.cpp:2017
+#: kfile/kfilewidget.cpp:2054
 #, fuzzy
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "
@@ -10136,8 +10141,8 @@ msgstr "Thử ra"
 msgid "a basic web browser using the KHTML library"
 msgstr ""
 
-#: khtml/khtml_run.cpp:90 khtml/khtml_part.cpp:3809 khtml/khtml_part.cpp:4025
-#: khtml/khtml_part.cpp:4399 kparts/browserrun.cpp:436
+#: khtml/khtml_run.cpp:97 khtml/khtml_part.cpp:3809 khtml/khtml_part.cpp:4025
+#: khtml/khtml_part.cpp:4408 kparts/browserrun.cpp:443
 msgid "Save As"
 msgstr "Lưu dạng"
 
@@ -10403,14 +10408,14 @@ msgstr "Ghi đè tập tin không?"
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: khtml/khtml_ext.cpp:971 kparts/browserrun.cpp:407
+#: khtml/khtml_ext.cpp:971 kparts/browserrun.cpp:414
 #, kde-format
 msgid "The Download Manager (%1) could not be found in your $PATH "
 msgstr ""
 "Không tìm thấy Bộ Quản lý Tải về (%1) trong PATH (đường dẫn ứng dụng) của "
 "bạn."
 
-#: khtml/khtml_ext.cpp:972 kparts/browserrun.cpp:408
+#: khtml/khtml_ext.cpp:972 kparts/browserrun.cpp:415
 msgid ""
 "Try to reinstall it  \n"
 "\n"
@@ -10808,7 +10813,7 @@ msgstr "&Tìm trong khung..."
 msgid "&Find..."
 msgstr "&Tìm..."
 
-#: khtml/khtml_part.cpp:4698
+#: khtml/khtml_part.cpp:4704
 msgid ""
 "Warning:  This is a secure form but it is attempting to send your data back "
 "unencrypted.\n"
@@ -10820,16 +10825,16 @@ msgstr ""
 "Có lẽ người khác có thể lấy và xem thông tin này.\n"
 "Bạn cọ chắc muốn tiếp tục không?"
 
-#: khtml/khtml_part.cpp:4701 khtml/khtml_part.cpp:4710
-#: khtml/khtml_part.cpp:4734
+#: khtml/khtml_part.cpp:4707 khtml/khtml_part.cpp:4716
+#: khtml/khtml_part.cpp:4740
 msgid "Network Transmission"
 msgstr "Truyền qua mạng"
 
-#: khtml/khtml_part.cpp:4701 khtml/khtml_part.cpp:4711
+#: khtml/khtml_part.cpp:4707 khtml/khtml_part.cpp:4717
 msgid "&Send Unencrypted"
 msgstr "&Gởi không mật mã"
 
-#: khtml/khtml_part.cpp:4708
+#: khtml/khtml_part.cpp:4714
 msgid ""
 "Warning: Your data is about to be transmitted across the network "
 "unencrypted.\n"
@@ -10838,7 +10843,7 @@ msgstr ""
 "Cảnh báo : dữ liệu của bạn sắp được gởi một cách không mật mã.\n"
 "Bạn cọ chắc muốn tiếp tục không?"
 
-#: khtml/khtml_part.cpp:4732
+#: khtml/khtml_part.cpp:4738
 msgid ""
 "This site is attempting to submit form data via email.\n"
 "Do you want to continue?"
@@ -10846,11 +10851,11 @@ msgstr ""
 "Nơi Mạng này đang cố gởi dữ liệu của đơn thông qua thư điện tử.\n"
 "Bạn có muốn tiếp tục không?"
 
-#: khtml/khtml_part.cpp:4735
+#: khtml/khtml_part.cpp:4741
 msgid "&Send Email"
 msgstr "&Gởi thư"
 
-#: khtml/khtml_part.cpp:4757
+#: khtml/khtml_part.cpp:4763
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The form will be submitted to <BR><B>%1</B><BR>on your local "
@@ -10862,12 +10867,12 @@ msgstr ""
 "<qt>Đơn sẽ được gởi cho <BR><B>%1</B><BR> trong hệ thống tập tin cục bộ của "
 "bạn.<br>Bạn có muốn gởi đơn này không?"
 
-#: khtml/khtml_part.cpp:4758 khtml/khtmlview.cpp:2873 khtml/khtmlview.cpp:2915
+#: khtml/khtml_part.cpp:4764 khtml/khtmlview.cpp:2873 khtml/khtmlview.cpp:2915
 #: khtml/html/html_formimpl.cpp:1587 khtml/html/html_formimpl.cpp:2195
 msgid "Submit"
 msgstr "Gởi"
 
-#: khtml/khtml_part.cpp:4807
+#: khtml/khtml_part.cpp:4813
 msgid ""
 "This site attempted to attach a file from your computer in the form "
 "submission. The attachment was removed for your protection."
@@ -10875,47 +10880,47 @@ msgstr ""
 "Nơi Mạng này đã cố đính một tập tin từ máy tính của bạn kèm đơn đã gởi. Tập "
 "tin đính kèm đã được gỡ bỏ để bảo vệ bạn."
 
-#: khtml/khtml_part.cpp:5812
+#: khtml/khtml_part.cpp:5818
 #, kde-format
 msgid "(%1/s)"
 msgstr "(%1/g)"
 
-#: khtml/khtml_part.cpp:6859
+#: khtml/khtml_part.cpp:6865
 msgid "Security Warning"
 msgstr "Cảnh báo bảo mật"
 
-#: khtml/khtml_part.cpp:6865
+#: khtml/khtml_part.cpp:6871
 #, fuzzy, kde-format
 #| msgid "<qt>Access by untrusted page to<BR><B>%1</B><BR> denied."
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>Trang không tin cây truy cập<BR><B>%1</B><BR>bị từ chối."
 
-#: khtml/khtml_part.cpp:6866 khtml/java/kjavaappletserver.cpp:791
+#: khtml/khtml_part.cpp:6872 khtml/java/kjavaappletserver.cpp:791
 msgid "Security Alert"
 msgstr "Cảnh giác bảo mật"
 
-#: khtml/khtml_part.cpp:7213
+#: khtml/khtml_part.cpp:7219
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "Ví « %1 » đã mở, và hoạt động với dữ liệu đơn và mật khẩu."
 
-#: khtml/khtml_part.cpp:7270
+#: khtml/khtml_part.cpp:7276
 msgid "&Close Wallet"
 msgstr "Đóng ví"
 
-#: khtml/khtml_part.cpp:7313
+#: khtml/khtml_part.cpp:7319
 msgid "JavaScript &Debugger"
 msgstr "Bộ gỡ lỗi &JavaScript"
 
-#: khtml/khtml_part.cpp:7346
+#: khtml/khtml_part.cpp:7352
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr "Trang này bị JavaScript ngăn cản mở cửa sổ mới."
 
-#: khtml/khtml_part.cpp:7352
+#: khtml/khtml_part.cpp:7358
 msgid "Popup Window Blocked"
 msgstr "Cửa sổ bất lên bị chặn"
 
-#: khtml/khtml_part.cpp:7352
+#: khtml/khtml_part.cpp:7358
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -10925,7 +10930,7 @@ msgstr ""
 "Bạn có thể nhắp vào biểu tượng này trong thanh trạng thái\n"
 "để điều khiển ứng xử này, hoặc để mở cửa sổ bật lên."
 
-#: khtml/khtml_part.cpp:7365
+#: khtml/khtml_part.cpp:7371
 #, fuzzy, kde-format
 #| msgid "&Show Blocked Popup Window"
 #| msgid_plural "Show %1 Blocked Popup Windows"
@@ -10933,11 +10938,11 @@ msgid "&Show Blocked Popup Window"
 msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "Hiện %1 cửa sổ bật lên bị chặn"
 
-#: khtml/khtml_part.cpp:7366
+#: khtml/khtml_part.cpp:7372
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "Hiện thông &báo bật lên bị động cửa sổ bị chặn"
 
-#: khtml/khtml_part.cpp:7368
+#: khtml/khtml_part.cpp:7374
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Cấu hình chính sách về cửa sổ JavaScript mới..."
 
@@ -11014,7 +11019,7 @@ msgstr "Tìm đoạn: « %1 »"
 msgid "Text not found: \"%1\"."
 msgstr "Không tìm thấy đoạn: « %1 »"
 
-#: khtml/khtmlview.cpp:1944
+#: khtml/khtmlview.cpp:1942
 msgid "Access Keys activated"
 msgstr "Phím truy cập hoạt động"
 
@@ -11908,17 +11913,17 @@ msgstr ""
 msgid "Close Document"
 msgstr "Đóng tài liệu"
 
-#: kparts/browserrun.cpp:294
+#: kparts/browserrun.cpp:301
 #, fuzzy, kde-format
 #| msgid "Do you really want to execute '%1'? "
 msgid "Do you really want to execute '%1'?"
 msgstr "Bạn thật sự muốn thực hiện « %1 » không? "
 
-#: kparts/browserrun.cpp:295
+#: kparts/browserrun.cpp:302
 msgid "Execute File?"
 msgstr "Thực hiện tập tin ?"
 
-#: kparts/browserrun.cpp:313
+#: kparts/browserrun.cpp:320
 #, kde-format
 msgid ""
 "Open '%2'?\n"
@@ -11927,7 +11932,7 @@ msgstr ""
 "Mở « %2 » ?\n"
 "Kiểu : %1"
 
-#: kparts/browserrun.cpp:315
+#: kparts/browserrun.cpp:322
 #, kde-format
 msgid ""
 "Open '%3'?\n"
@@ -11938,12 +11943,12 @@ msgstr ""
 "Tên: %2\n"
 "Kiểu : %1"
 
-#: kparts/browserrun.cpp:330
+#: kparts/browserrun.cpp:337
 #, kde-format
 msgid "&Open with '%1'"
 msgstr "&Mở bằng « %1 »"
 
-#: kparts/browserrun.cpp:331
+#: kparts/browserrun.cpp:338
 msgid "&Open With..."
 msgstr "&Mở bằng..."
 

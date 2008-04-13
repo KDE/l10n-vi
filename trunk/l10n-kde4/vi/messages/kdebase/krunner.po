@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-08 21:28+0200\n"
+"POT-Creation-Date: 2008-04-12 19:00+0200\n"
 "PO-Revision-Date: 2007-06-16 16:39+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -79,7 +79,10 @@ msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Không thể khởi chạy tiến trình kiểm tra mật khẩu <i>kcheckpass</i>."
 
 #: lock/lockprocess.cc:767
-msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
+#, fuzzy
+#| msgid ""
+#| "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
+msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
 msgstr ""
 "Tiến trình kiểm tra mật khẩu <i>kcheckpass</i> không thể hoạt động. Có lẽ nó "
 "chưa được đặt là SetUID root (chưa có quyền người chủ)."
@@ -221,66 +224,72 @@ msgstr "Mặc định: "
 msgid "Run Command"
 msgstr "Chạy lệnh"
 
-#: interface.cpp:358 interface.cpp:710 interface.cpp:750 interface.cpp:753
+#: interface.cpp:365 interface.cpp:719 interface.cpp:759 interface.cpp:762
 msgid "Show Options"
 msgstr "Hiện tùy chọn"
 
-#: interface.cpp:365 krunnerapp.cpp:144 krunnerapp.cpp:145
+#: interface.cpp:372 krunnerapp.cpp:144 krunnerapp.cpp:145
 msgid "Show System Activity"
 msgstr "Hiện hoạt động hệ thống"
 
-#: interface.cpp:373
+#: interface.cpp:380
 msgid "Click to execute the selected item above"
 msgstr "Nhấn để thực hiện mục đã chọn bên trên"
 
-#: interface.cpp:374
+#: interface.cpp:381
 msgid "Launch"
 msgstr "Khởi chạy"
 
-#: interface.cpp:469
+#: interface.cpp:477
 msgid "Switch users"
 msgstr "Chuyển đổi người dùng"
 
-#: interface.cpp:489
+#: interface.cpp:497
 msgid "No desktop sessions available"
 msgstr "Không có sẵn phiên chạy làm việc"
 
-#: interface.cpp:511
+#: interface.cpp:519
 msgid "Enter the name of an application, location or search term below."
 msgstr ""
 "Hãy nhập vào bên dưới một tên ứng dụng, một địa điểm hay một chuỗi tìm kiếm."
 
-#: interface.cpp:706 interface.cpp:748
+#: interface.cpp:715 interface.cpp:757
 msgid "Hide Options"
 msgstr "Ẩn tùy chọn"
 
 #. i18n: tag label
-#. i18n: file krunner.kcfg line 14
+#. i18n: file krunner.kcfg line 15
 #: rc.cpp:11
 msgid "Whitelist of allowed runners."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file krunner.kcfg line 15
+#. i18n: file krunner.kcfg line 16
 #: rc.cpp:14
 msgid "If set, this list defines which runners will be used at runtime."
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file krunner.kcfg line 20
+#. i18n: file krunner.kcfg line 21
 #: rc.cpp:17
-msgid "History if past queries successfully completed"
+msgid "Completion mode used for the query text."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file krunner.kcfg line 26
-#: rc.cpp:21
+#: rc.cpp:20
+msgid "History if past queries successfully completed"
+msgstr ""
+
+#. i18n: tag label
+#. i18n: file krunner.kcfg line 32
+#: rc.cpp:24
 msgid "Maximum number of threads to use for searches."
 msgstr ""
 
 #. i18n: tag whatsthis
-#. i18n: file krunner.kcfg line 27
-#: rc.cpp:24
+#. i18n: file krunner.kcfg line 33
+#: rc.cpp:27
 msgid ""
 "The number of threads used scales with the number of processors. This entry "
 "allows you to define a hard upper limit independent of the number of "
@@ -288,44 +297,44 @@ msgid ""
 msgstr ""
 
 #. i18n: tag label
-#. i18n: file krunner.kcfg line 35
-#: rc.cpp:27
+#. i18n: file krunner.kcfg line 41
+#: rc.cpp:30
 msgid "Whether to keep the tasks dialog above other windows when shown."
 msgstr ""
 
 #. i18n: tag label
 #. i18n: file kscreensaversettings.kcfg line 11
-#: rc.cpp:31
+#: rc.cpp:34
 msgid "Enable screen saver"
 msgstr "Bật trình bảo vệ màn hình"
 
 #. i18n: tag whatsthis
 #. i18n: file kscreensaversettings.kcfg line 12
-#: rc.cpp:34
+#: rc.cpp:37
 msgid "Enables the screen saver."
 msgstr "Hiệu lực trình bảo vệ màn hình."
 
 #. i18n: tag label
 #. i18n: file kscreensaversettings.kcfg line 16
-#: rc.cpp:37
+#: rc.cpp:40
 msgid "Screen saver timeout"
 msgstr "Thời hạn bảo vệ màn hình"
 
 #. i18n: tag whatsthis
 #. i18n: file kscreensaversettings.kcfg line 17
-#: rc.cpp:40
+#: rc.cpp:43
 msgid "Sets the seconds after which the screen saver is started."
 msgstr "Đặt số giây sau đó trình bảo vệ màn hình khởi chạy."
 
 #. i18n: tag label
 #. i18n: file kscreensaversettings.kcfg line 21
-#: rc.cpp:43
+#: rc.cpp:46
 msgid "Suspend screen saver when DPMS kicks in"
 msgstr ""
 
 #. i18n: tag whatsthis
 #. i18n: file kscreensaversettings.kcfg line 24
-#: rc.cpp:46
+#: rc.cpp:49
 msgid ""
 "Usually the screen saver is suspended when display power saving kicks in,\n"
 "       as nothing can be seen on the screen anyway, obviously. However, some "
@@ -334,12 +343,12 @@ msgid ""
 "suspend them."
 msgstr ""
 
-#: rc.cpp:73
+#: rc.cpp:76
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nhóm Việt hoá KDE"
 
-#: rc.cpp:74
+#: rc.cpp:77
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-vi@kde.org"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-12 19:20+0200\n"
+"POT-Creation-Date: 2008-04-14 19:00+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1306,6 +1306,7 @@ msgstr ""
 
 # Name: don't translate/Tên: đừng dịch
 #: libs/dialogs/imagedialog.cpp:169
+#: imageplugins/lenscorrection/klensfun.cpp:128
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:320
 #, fuzzy
 #| msgid "Make:"
@@ -1313,6 +1314,7 @@ msgid "Make:"
 msgstr "Make:"
 
 #: libs/dialogs/imagedialog.cpp:170
+#: imageplugins/lenscorrection/klensfun.cpp:129
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:322
 msgid "Model:"
 msgstr "Mô hình:"
@@ -2053,12 +2055,12 @@ msgstr "In siêu dữ liệu vào máy in"
 msgid "Copy metadata to clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: libs/widgets/metadata/metadatawidget.cpp:300
+#: libs/widgets/metadata/metadatawidget.cpp:299
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "Tên tập tin: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:342
+#: libs/widgets/metadata/metadatawidget.cpp:341
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>Tên tập tin: %1 (%2)</b></big></big>"
@@ -2705,17 +2707,25 @@ msgstr ""
 "ảnh, nếu không thì xem ảnh đích."
 
 #: libs/widgets/imageplugins/imagewidget.cpp:188
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option on to display pure black over-colored on preview. This "
+#| "will help you to avoid under-exposing the image."
 msgid ""
-"<p>Set this option on to display pure black over-colored on preview. This "
-"will help you to avoid under-exposing the image."
+"<p>Set this option to display black overlaid on the preview. This will help "
+"you to avoid under-exposing the image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị toàn bộ màu đen trên ô xem thử, thì giúp đỡ "
 "bạn tránh chụp non ảnh."
 
 #: libs/widgets/imageplugins/imagewidget.cpp:197
+#, fuzzy
+#| msgid ""
+#| "<p>Set this option on to display pure white over-colored on preview. This "
+#| "will help you to avoid over-exposing the image."
 msgid ""
-"<p>Set this option on to display pure white over-colored on preview. This "
-"will help you to avoid over-exposing the image."
+"<p>Set this option to display white overlaid on the preview. This will help "
+"you to avoid over-exposing the image."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị toàn bộ màu trắng trên ô xem thử, thì giúp "
 "đỡ bạn tránh phơi ảnh quá lâu."
@@ -2742,11 +2752,17 @@ msgid "<b>Albums Library Folder</b>"
 msgstr "<b>Thư mục thư viện tập ảnh</b>"
 
 #: digikam/firstrun.cpp:93
+#, fuzzy
+#| msgid ""
+#| "<p>digiKam will store the photo albums which you create in a common "
+#| "<b>Albums Library Folder</b>. Please select which folder you would like "
+#| "digiKam to use as the common Albums Library Folder below.</p><p><b>Do not "
+#| "use a mount path hosted by a remote computer.</b></p>"
 msgid ""
 "<p>digiKam will store the photo albums which you create in a common "
-"<b>Albums Library Folder</b>. Please select which folder you would like "
-"digiKam to use as the common Albums Library Folder below.</p><p><b>Do not "
-"use a mount path hosted by a remote computer.</b></p>"
+"<b>Albums Library Folder</b>. Below, please select which folder you would "
+"like digiKam to use as the common Albums Library Folder.</p><p><b>Do not use "
+"a mount path hosted by a remote computer.</b></p>"
 msgstr ""
 "<p>digiKam sẽ cất giữ những tập ảnh bạn tạo trong một <b>Thư mục Thư Viện "
 "Tập Ảnh</b> chung. Bên dưới, xin hãy chọn thư mục nào bạn muốn digiKam dùng "
@@ -3422,7 +3438,6 @@ msgid "Main developer and coordinator"
 msgstr "Nhà phát triển chính và điều hợp viên"
 
 #: digikam/main.cpp:122 showfoto/main.cpp:93 themedesigner/main.cpp:58
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:79
 #: imageplugins/texture/imageeffect_texture.cpp:78
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:93
@@ -6116,18 +6131,24 @@ msgstr ""
 msgid "Do not &ask again"
 msgstr "Đừng &hỏi lại"
 
-#: imageplugins/lenscorrection/klensfun.cpp:111
+#: imageplugins/lenscorrection/klensfun.cpp:124
 msgid "Use Exif Data"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:65
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:72
+#: imageplugins/lenscorrection/klensfun.cpp:130
+#, fuzzy
+#| msgid "Density:"
+msgid "Lens:"
+msgstr "Mật độ :"
+
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:68
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:75
 #, fuzzy
 #| msgid "Lens Distortion Correction"
 msgid "Lens Error Correction"
 msgstr "Sửa chữa sự méo mó ống kính"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:74
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:77
 #, fuzzy
 #| msgid ""
 #| "A digiKam image plugin to reduce spherical aberration caused by a lens to "
@@ -6136,23 +6157,23 @@ msgid "A digiKam image plugin to fix errors caused by lens."
 msgstr ""
 "Phần bổ sung ảnh digiKam để giảm quang sai hình bầu do ống kính trên ảnh."
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:76
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:79
 #, fuzzy
 #| msgid ""
 #| "(c) 2005, Gilles Caulier\n"
 #| "(c) 2006-2007, Gilles Caulier and Marcel Wiesweg"
 msgid ""
 "(c) 2008, Adrian Schroeter\n"
-"(c) 2006-2007, Gilles Caulier and Marcel Wiesweg"
+"(c) 2008, Gilles Caulier"
 msgstr ""
 "© năm 2005 của Gilles Caulier\n"
 "© năm 2006-2007 của Gilles Caulier và Marcel Wiesweg"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:81
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 msgid "Adrian Schroeter"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:81
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:81
@@ -6181,7 +6202,7 @@ msgstr ""
 msgid "Author and maintainer"
 msgstr "Tác giả và nhà duy trì"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:79
 #: imageplugins/channelmixer/channelmixer.cpp:107
 #: imageplugins/hotpixels/imageeffect_hotpixels.cpp:84
@@ -6210,7 +6231,6 @@ msgstr "Tác giả và nhà duy trì"
 msgid "Gilles Caulier"
 msgstr "Gilles Caulier"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:84
 #: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:87
 msgid "provided base classes"
 msgstr ""
@@ -6239,41 +6259,41 @@ msgstr ""
 "<p>Ở đây có ô xem thử ảnh mẫu của việc sửa chữa được áp dụng cho một mẫu chứ "
 "thập."
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:124
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:125
 msgid "Chromatic Aberration"
 msgstr ""
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:125
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:126
 #, fuzzy
 #| msgid "Vignetting..."
 msgid "Vignetting"
 msgstr "Làm mờ nét ảnh..."
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:126
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:127
 #, fuzzy
 #| msgid "Auto Color Correction"
 msgid "Color Correction"
 msgstr "Sửa chữa màu tự động"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:127
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:128
 #, fuzzy
 #| msgid "Lens Distortion"
 msgid "Distortion"
 msgstr "Sự méo mó ống kính"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:128
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:129
 #, fuzzy
 #| msgid "Retry"
 msgid "Geometry"
 msgstr "Thử lại"
 
-#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:266
+#: imageplugins/lenscorrection/imageeffect_lenscorrection.cpp:277
 #, fuzzy
 #| msgid "Red Eyes Correction"
 msgid "Lens Correction"
 msgstr "Sửa mắt đỏ"
 
-#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:43
+#: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:44
 #, fuzzy
 #| msgid "Lens Distortion..."
 msgid "Lens Correction..."

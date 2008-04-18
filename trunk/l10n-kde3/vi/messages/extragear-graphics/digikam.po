@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-17 01:37+0200\n"
+"POT-Creation-Date: 2008-04-18 19:37+0200\n"
 "PO-Revision-Date: 2007-07-07 21:07+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -4514,32 +4514,36 @@ msgstr "<p>Bật tùy chọn này để hiển thị tên của tập tin ảnh.
 msgid "Show file date"
 msgstr "Hiện ngày tập tin"
 
-#: showfoto/setup/setuptooltip.cpp:112
-msgid "<p>Set this option to display image file date."
+#: showfoto/setup/setuptooltip.cpp:112 utilities/setup/setuptooltip.cpp:123
+#, fuzzy
+msgid "<p>Set this option to display the image file date."
 msgstr "<p>Bật tùy chọn này để hiển thị ngày tháng của tập tin ảnh."
 
 #: showfoto/setup/setuptooltip.cpp:114 utilities/setup/setuptooltip.cpp:125
 msgid "Show file size"
 msgstr "Hiện cỡ tập tin"
 
-#: showfoto/setup/setuptooltip.cpp:115
-msgid "<p>Set this option to display image file size."
+#: showfoto/setup/setuptooltip.cpp:115 utilities/setup/setuptooltip.cpp:126
+#, fuzzy
+msgid "<p>Set this option to display the image file size."
 msgstr "<p>Bật tùy chọn này để hiển thị kích cỡ của tập tin ảnh."
 
 #: showfoto/setup/setuptooltip.cpp:117 utilities/setup/setuptooltip.cpp:128
 msgid "Show image type"
 msgstr "Hiện kiểu ảnh"
 
-#: showfoto/setup/setuptooltip.cpp:118
-msgid "<p>Set this option to display image type."
+#: showfoto/setup/setuptooltip.cpp:118 utilities/setup/setuptooltip.cpp:129
+#, fuzzy
+msgid "<p>Set this option to display the image type."
 msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
 
 #: showfoto/setup/setuptooltip.cpp:120 utilities/setup/setuptooltip.cpp:131
 msgid "Show image dimensions"
 msgstr "Hiện các chiếu ảnh"
 
-#: showfoto/setup/setuptooltip.cpp:121
-msgid "<p>Set this option to display image dimensions in pixels."
+#: showfoto/setup/setuptooltip.cpp:121 utilities/setup/setuptooltip.cpp:132
+#, fuzzy
+msgid "<p>Set this option to display the image dimensions in pixels."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị các chiều của tập tin ảnh, theo điểm ảnh."
 
@@ -4729,7 +4733,8 @@ msgstr ""
 #: showfoto/showfoto.cpp:1177
 #: utilities/imageeditor/editor/imagewindow.cpp:1026
 #: utilities/imageeditor/editor/imagewindow.cpp:1056
-msgid "Prepare slideshow. Please wait..."
+#: utilities/lighttable/lighttablewindow.cpp:1273
+msgid "Preparing slideshow. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
 
 #: _translatorinfo.cpp:1
@@ -4875,15 +4880,15 @@ msgstr "Bật thì tập tin bị gỡ bỏ hoàn toàn thay vào bị chuyển 
 
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 117
 #: rc.cpp:24
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "<qt>"
 "<p>If this box is checked, files will be <b>permanently removed</b> "
 "instead of being placed in the Trash Bin.</p>\n"
 "    \n"
 "    "
-"<p><em>Use this option with caution</em>: Most filesystems are unable to "
-"reliably undelete deleted files.</p></qt>"
+"<p><em>Use this option with caution</em>: most filesystems are unable to "
+"undelete deleted files reliably.</p></qt>"
 msgstr ""
 "<qt>"
 "<p>Đánh dấu trong hộp chọn này thì tập tin sẽ bị <b>gỡ bỏ hoàn toàn</b> "
@@ -4902,9 +4907,9 @@ msgstr "Đừng &hỏi lại"
 
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 128
 #: rc.cpp:32
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"If checked, this dialog will no longer be shown and files will be directly "
+"If checked, this dialog will no longer be shown, and files will be directly "
 "moved to the Trash Bin"
 msgstr ""
 "Bật thì hộp thoại này không còn được hiển thị lại, các tập tin bị di chuyển "
@@ -4912,15 +4917,14 @@ msgstr ""
 
 #. i18n: file ./libs/dialogs/deletedialogbase.ui line 131
 #: rc.cpp:35
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
 "<qt>"
-"<p>If this box is checked, this dialog will not be shown again in the future, "
-"files will be directly moved to the Trash Bin</p>"
+"<p>If this box is checked, this dialog will no longer be shown, and files will "
+"be directly moved to the Trash Bin</p>"
 msgstr ""
-"<qt>"
-"<p>Đánh dấu trong hộp chọn này thì hộp thoại này không còn được hiển thị lại, "
-"các tập tin bị di chuyển trực tiếp vào Sọt Rác.</p>"
+"Bật thì hộp thoại này không còn được hiển thị lại, các tập tin bị di chuyển "
+"trực tiếp vào Sọt Rác."
 
 #. i18n: file ./digikam/digikamui.rc line 7
 #: rc.cpp:38
@@ -5160,9 +5164,10 @@ msgid "Luminance:"
 msgstr "Độ trưng:"
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:206
+#, fuzzy
 msgid ""
 "<p><b>Luminance</b>: this control sets the luminance tolerance of the image.We "
-"recommend to use either the <b>Color</b> or the <b>Luminance</b> "
+"recommend using either the <b>Color</b> or the <b>Luminance</b> "
 "tolerance settings to make an image correction, not both at the same time. "
 "These settings do not influence the main smoothing process controlled by the <b>"
 "Details</b> settings."
@@ -5178,9 +5183,10 @@ msgid "Color:"
 msgstr "Màu :"
 
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:222
+#, fuzzy
 msgid ""
 "<p><b>Color</b>: this control sets the color tolerance of the image. It is "
-"recommended to use either the <b>Color</b> or the <b>Luminance</b> "
+"recommended using either the <b>Color</b> or the <b>Luminance</b> "
 "tolerance to make image correction, not both at the same time. These settings "
 "do not influence the main smoothing process controlled by the <b>Details</b> "
 "settings."
@@ -5407,7 +5413,7 @@ msgstr "Hiệu ứng màu"
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:83
 #, fuzzy
-msgid "A digiKam plugin to apply special color effects on an image."
+msgid "A digiKam plugin to apply special color effects to an image."
 msgstr "Một phần bổ sung digiKam để áp dụng hiệu ứng màu cho ảnh."
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:89
@@ -5480,7 +5486,7 @@ msgstr "Tìm cạnh"
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:178
 #, fuzzy
 msgid ""
-"<p>Select the effect type to apply on the image here."
+"<p>Select the effect type to apply to the image here."
 "<p><b>Solarize</b>: simulates solarization of photograph."
 "<p><b>Vivid</b>: simulates the Velvia(tm) slide film colors."
 "<p><b>Neon</b>: coloring the edges in a photograph to reproduce a fluorescent "
@@ -5511,9 +5517,10 @@ msgid "Iteration:"
 msgstr "Lặp lại:"
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:200
+#, fuzzy
 msgid ""
-"<p>This value controls the number of iterations to use with Neon and Find Edges "
-"effects."
+"<p>This value controls the number of iterations to use with the Neon and Find "
+"Edges effects."
 msgstr ""
 "<p>Giá trị này điều khiển số lần lặp lại cần dùng với hiệu ứng Nê-ông và Tìm "
 "cạnh."
@@ -6220,7 +6227,8 @@ msgid "Stone"
 msgstr "Đá"
 
 #: imageplugins/texture/imageeffect_texture.cpp:106
-msgid "<p>Set here the texture type to apply on image."
+#, fuzzy
+msgid "<p>Set here the texture type to apply to the image."
 msgstr "<p>Ở đây hãy đặt kiểu họa tiết cần áp dụng cho ảnh."
 
 #: imageplugins/texture/imageeffect_texture.cpp:113
@@ -6738,7 +6746,7 @@ msgstr "Khảm"
 #: imageplugins/blurfx/imageeffect_blurfx.cpp:103
 #, fuzzy
 msgid ""
-"<p>Select the blurring effect to apply on image."
+"<p>Select the blurring effect to apply to the image."
 "<p><b>Zoom Blur</b>:  blurs the image along radial lines starting from a "
 "specified center point. This simulates the blur of a zooming camera."
 "<p><b>Radial Blur</b>: blurs the image by rotating the pixels around the "
@@ -7290,7 +7298,7 @@ msgstr "Lát"
 #: imageplugins/distortionfx/imageeffect_distortionfx.cpp:119
 #, fuzzy
 msgid ""
-"<p>Select the effect type to apply on image."
+"<p>Select the effect type to apply to the image."
 "<p><b>Fish Eyes</b>: warps the photograph around a 3D spherical shape to "
 "reproduce the common photograph 'Fish Eyes' effect."
 "<p><b>Twirl</b>: spins the photograph to produce a Twirl pattern."
@@ -7676,7 +7684,7 @@ msgstr "Điều chỉnh lại tiêu điểm"
 
 #: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:82
 #, fuzzy
-msgid "<p>Select the sharping method to apply on image."
+msgid "<p>Select the sharping method to apply to the image."
 msgstr "<p>Ở đây hãy đặt phương pháp mài sắc cần áp dụng cho ảnh."
 
 #: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:100
@@ -10960,27 +10968,6 @@ msgstr ""
 "<p>Bật tùy chọn này để hiển thị thông tin về ảnh khi con chuột ở trên mục trong "
 "tập ảnh."
 
-#: utilities/setup/setuptooltip.cpp:123
-#, fuzzy
-msgid "<p>Set this option to display the image file date."
-msgstr "<p>Bật tùy chọn này để hiển thị ngày tháng của tập tin ảnh."
-
-#: utilities/setup/setuptooltip.cpp:126
-#, fuzzy
-msgid "<p>Set this option to display the image file size."
-msgstr "<p>Bật tùy chọn này để hiển thị kích cỡ của tập tin ảnh."
-
-#: utilities/setup/setuptooltip.cpp:129
-#, fuzzy
-msgid "<p>Set this option to display the image type."
-msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
-
-#: utilities/setup/setuptooltip.cpp:132
-#, fuzzy
-msgid "<p>Set this option to display the image dimensions in pixels."
-msgstr ""
-"<p>Bật tùy chọn này để hiển thị các chiều của tập tin ảnh, theo điểm ảnh."
-
 #: utilities/setup/setuptooltip.cpp:147
 msgid "Show camera aperture and focal"
 msgstr "Hiện độ mở và tiêu cự của máy ảnh"
@@ -11879,10 +11866,6 @@ msgstr "1 mục trên bảng ánh sáng"
 msgid "%1 items on Light Table"
 msgstr "%1 mục trên bảng ánh sáng"
 
-#: utilities/lighttable/lighttablewindow.cpp:1273
-msgid "Preparing slideshow. Please wait..."
-msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
-
 #: utilities/cameragui/camerainfodialog.cpp:45
 #: utilities/cameragui/cameraui.cpp:446
 msgid "Camera Information"
@@ -12728,6 +12711,24 @@ msgstr "Chiếu ảnh đã chạy xong."
 #: utilities/slideshow/slideshow.cpp:452
 msgid "Click To Exit..."
 msgstr "Nhấn để thoát..."
+
+#~ msgid "<p>Set this option to display image file date."
+#~ msgstr "<p>Bật tùy chọn này để hiển thị ngày tháng của tập tin ảnh."
+
+#~ msgid "<p>Set this option to display image file size."
+#~ msgstr "<p>Bật tùy chọn này để hiển thị kích cỡ của tập tin ảnh."
+
+#~ msgid "<p>Set this option to display image type."
+#~ msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
+
+#~ msgid "<p>Set this option to display image dimensions in pixels."
+#~ msgstr "<p>Bật tùy chọn này để hiển thị các chiều của tập tin ảnh, theo điểm ảnh."
+
+#~ msgid "Prepare slideshow. Please wait..."
+#~ msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
+
+#~ msgid "<qt><p>If this box is checked, this dialog will not be shown again in the future, files will be directly moved to the Trash Bin</p>"
+#~ msgstr "<qt><p>Đánh dấu trong hộp chọn này thì hộp thoại này không còn được hiển thị lại, các tập tin bị di chuyển trực tiếp vào Sọt Rác.</p>"
 
 #~ msgid "Make a donation..."
 #~ msgstr "Tặng tiền..."

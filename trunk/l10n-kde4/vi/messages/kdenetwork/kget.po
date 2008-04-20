@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-18 11:59+0200\n"
+"POT-Creation-Date: 2008-04-19 21:57+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -308,6 +308,11 @@ msgstr "Bị trễ"
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "Xong"
+
+#: core/linkimporter.cpp:63
+#, kde-format
+msgid "Erro trying to get %1"
+msgstr ""
 
 #: core/kget.cpp:181
 #, fuzzy
@@ -1528,13 +1533,13 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "Dính"
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:777
+#: ui/droptarget.cpp:221 mainwindow.cpp:806
 #, fuzzy
 #| msgid "&Downloads"
 msgid "&Download"
 msgstr "Tải &về"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:778
+#: ui/droptarget.cpp:222 mainwindow.cpp:807
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "&Load transferlist"
@@ -1597,75 +1602,44 @@ msgstr "Tải về"
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
 
-#: extensions/konqueror/kget_linkview.h:85
+#: ui/linkview/kget_linkview.h:100
 msgctxt "filter: show all file types"
 msgid "All"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:86
+#: ui/linkview/kget_linkview.h:101
 msgid "Videos"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:87
+#: ui/linkview/kget_linkview.h:102
 msgid "Audio"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.h:88
+#: ui/linkview/kget_linkview.h:103
 msgid "Archives"
 msgstr ""
 
-#: extensions/konqueror/kget_plug_in.cpp:44
-#, fuzzy
-#| msgid "Downloads number:"
-msgid "Download Manager"
-msgstr "Số tải về:"
-
-#: extensions/konqueror/kget_plug_in.cpp:51 mainwindow.cpp:256
-#, fuzzy
-#| msgid "Show drop target"
-msgid "Show Drop Target"
-msgstr "Hiện đích thả"
-
-#: extensions/konqueror/kget_plug_in.cpp:58
-msgid "List All Links"
-msgstr ""
-
-#: extensions/konqueror/kget_plug_in.cpp:63
-#, fuzzy
-#| msgid "Stop Selected"
-msgid "List Selected Links"
-msgstr "Ngừng mục đã chọn"
-
-#: extensions/konqueror/kget_plug_in.cpp:198
-msgid "There are no links in the active frame of the current HTML page."
-msgstr ""
-
-#: extensions/konqueror/kget_plug_in.cpp:199
-msgid "No Links"
-msgstr ""
-
-#: extensions/konqueror/kget_linkview.cpp:40 main.cpp:113 mainwindow.cpp:83
+#: ui/linkview/kget_linkview.cpp:48 main.cpp:113 mainwindow.cpp:84
 msgid "KGet"
 msgstr "KGet"
 
-#: extensions/konqueror/kget_linkview.cpp:62
+#: ui/linkview/kget_linkview.cpp:70
 msgid "Filter files here..."
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:73
+#: ui/linkview/kget_linkview.cpp:81
 msgid "Show:"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:90
-#: extensions/konqueror/kget_linkview.cpp:247
+#: ui/linkview/kget_linkview.cpp:113 ui/linkview/kget_linkview.cpp:282
 msgid "Select all"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:91
+#: ui/linkview/kget_linkview.cpp:114
 msgid "Show web content"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:92
+#: ui/linkview/kget_linkview.cpp:115
 #, fuzzy
 #| msgid "Default Download Folders"
 msgid "Download checked"
@@ -1673,44 +1647,74 @@ msgstr "Thư mục tải về mặc định"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 183
-#: extensions/konqueror/kget_linkview.cpp:94 rc.cpp:207
+#: ui/linkview/kget_linkview.cpp:117 rc.cpp:207
 #, fuzzy
 #| msgid "Change"
 msgid "Cancel"
 msgstr "Đổi"
 
-#: extensions/konqueror/kget_linkview.cpp:130
+#: ui/linkview/kget_linkview.cpp:158
 msgid "Auxiliar header"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:131
+#: ui/linkview/kget_linkview.cpp:159
 #, fuzzy
 #| msgid "Name"
 msgid "File Name"
 msgstr "Tên"
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: ui/linkview/kget_linkview.cpp:160
 msgid "Description"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: ui/linkview/kget_linkview.cpp:161
 #, fuzzy
 #| msgid "File"
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Tập tin"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: ui/linkview/kget_linkview.cpp:162
 msgid "Location (URL)"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:195
+#: ui/linkview/kget_linkview.cpp:216
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr ""
 
-#: extensions/konqueror/kget_linkview.cpp:247
+#: ui/linkview/kget_linkview.cpp:282
 msgid "Select all filtered"
+msgstr ""
+
+#: extensions/konqueror/kget_plug_in.cpp:43
+#, fuzzy
+#| msgid "Downloads number:"
+msgid "Download Manager"
+msgstr "Số tải về:"
+
+#: extensions/konqueror/kget_plug_in.cpp:50 mainwindow.cpp:257
+#, fuzzy
+#| msgid "Show drop target"
+msgid "Show Drop Target"
+msgstr "Hiện đích thả"
+
+#: extensions/konqueror/kget_plug_in.cpp:57
+msgid "List All Links"
+msgstr ""
+
+#: extensions/konqueror/kget_plug_in.cpp:62
+#, fuzzy
+#| msgid "Stop Selected"
+msgid "List Selected Links"
+msgstr "Ngừng mục đã chọn"
+
+#: extensions/konqueror/kget_plug_in.cpp:197
+msgid "There are no links in the active frame of the current HTML page."
+msgstr ""
+
+#: extensions/konqueror/kget_plug_in.cpp:198
+msgid "No Links"
 msgstr ""
 
 #: main.cpp:114
@@ -1837,39 +1841,39 @@ msgstr "Hiện cửa sổ thả xuống khi chạy KGet"
 msgid "URL(s) to download"
 msgstr "URL để tải về"
 
-#: mainwindow.cpp:117
+#: mainwindow.cpp:118
 msgid "&New Download..."
 msgstr "Tải về mớ&i..."
 
-#: mainwindow.cpp:123
+#: mainwindow.cpp:124
 #, fuzzy
 #| msgid "&Export Transfers List..."
 msgid "&Import Transfers..."
 msgstr "&Xuất danh sách truyền..."
 
-#: mainwindow.cpp:129
+#: mainwindow.cpp:130
 msgid "&Export Transfers List..."
 msgstr "&Xuất danh sách truyền..."
 
-#: mainwindow.cpp:135
+#: mainwindow.cpp:136
 msgid "Delete Group"
 msgstr "Xoá nhóm"
 
-#: mainwindow.cpp:140
+#: mainwindow.cpp:141
 #, fuzzy
 #| msgid "Delete Group"
 msgid "Rename Group"
 msgstr "Xoá nhóm"
 
-#: mainwindow.cpp:145
+#: mainwindow.cpp:146
 msgid "Set Icon"
 msgstr ""
 
-#: mainwindow.cpp:150
+#: mainwindow.cpp:151
 msgid "Auto-Paste Mode"
 msgstr "Chế độ tự động dán"
 
-#: mainwindow.cpp:153
+#: mainwindow.cpp:154
 msgid ""
 "<b>Auto paste</b> button toggles the auto-paste mode on and off.\n"
 "When set, KGet will periodically scan the clipboard for URLs and paste them "
@@ -1879,88 +1883,94 @@ msgstr ""
 "Khi bật, KGet sẽ quét định kỳ nội dung của bảng nháp để tìm các URL và thêm "
 "chúng một cách tự động."
 
-#: mainwindow.cpp:159
+#: mainwindow.cpp:160
 msgid "Use KGet as Konqueror Download Manager"
 msgstr "Dùng KGet là bộ quản lý tải về của Konqueror"
 
-#: mainwindow.cpp:182
+#: mainwindow.cpp:183
 #, fuzzy
 #| msgid "Delete Selected"
 msgctxt "delete selected transfer item"
 msgid "Delete Selected"
 msgstr "Xoá mục đã chọn"
 
-#: mainwindow.cpp:188
+#: mainwindow.cpp:189
 msgctxt "delete all finished transfers"
 msgid "Delete all finished"
 msgstr ""
 
-#: mainwindow.cpp:193
+#: mainwindow.cpp:194
 #, fuzzy
 #| msgid "Default Download Folders"
 msgctxt "redownload selected transfer item"
 msgid "Redownload Selected"
 msgstr "Thư mục tải về mặc định"
 
-#: mainwindow.cpp:198
+#: mainwindow.cpp:199
 msgid "Start / Resume All"
 msgstr "Chạy/Tiếp tục tất cả"
 
-#: mainwindow.cpp:204
+#: mainwindow.cpp:205
 msgid "Start / Resume Selected"
 msgstr "Chạy/Tiếp tục mục đã chọn"
 
-#: mainwindow.cpp:209
+#: mainwindow.cpp:210
 msgid "Stop All"
 msgstr "Ngừng tất cả"
 
-#: mainwindow.cpp:215
+#: mainwindow.cpp:216
 msgid "Stop Selected"
 msgstr "Ngừng mục đã chọn"
 
-#: mainwindow.cpp:219
+#: mainwindow.cpp:220
 msgid "Start / Resume"
 msgstr "Chạy/Tiếp tục"
 
-#: mainwindow.cpp:227
+#: mainwindow.cpp:228
 msgid "Stop"
 msgstr "Ngừng"
 
-#: mainwindow.cpp:236
+#: mainwindow.cpp:237
 msgid "Open Destination"
 msgstr "Mở đích"
 
-#: mainwindow.cpp:241 mainwindow.cpp:372
+#: mainwindow.cpp:242 mainwindow.cpp:379
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: mainwindow.cpp:246
+#: mainwindow.cpp:247
 msgid "Show Details"
 msgstr "Hiện chi tiết"
 
-#: mainwindow.cpp:251
+#: mainwindow.cpp:252
 msgid "Copy URL to Clipboard"
 msgstr "Chép URL vào bảng nháp"
 
-#: mainwindow.cpp:262
+#: mainwindow.cpp:263
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "&Transfer History"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:268
+#: mainwindow.cpp:269
 #, fuzzy
 #| msgid "&Settings"
 msgid "&Group Settings"
 msgstr "Thiết &lập"
 
-#: mainwindow.cpp:274
+#: mainwindow.cpp:275
 #, fuzzy
 #| msgid "Transfer details:"
 msgid "&Transfer Settings"
 msgstr "Chi tiết truyền:"
 
-#: mainwindow.cpp:313
+#: mainwindow.cpp:281
+#, fuzzy
+#| msgid "Stop Selected"
+msgid "&List Links"
+msgstr "Ngừng mục đã chọn"
+
+#: mainwindow.cpp:320
 #, fuzzy
 #| msgid ""
 #| "This is the first time you have run KGet.\n"
@@ -1973,23 +1983,23 @@ msgstr ""
 "Bạn có muốn gán KGet là bộ quản lý việc tải về của trình duyệt Konqueror "
 "không?"
 
-#: mainwindow.cpp:315
+#: mainwindow.cpp:322
 msgid "Konqueror Integration"
 msgstr "Hợp nhất với Konqueror"
 
-#: mainwindow.cpp:315
+#: mainwindow.cpp:322
 msgid "Enable"
 msgstr "Bật"
 
-#: mainwindow.cpp:316
+#: mainwindow.cpp:323
 msgid "Do Not Enable"
 msgstr "Không bật"
 
-#: mainwindow.cpp:371
+#: mainwindow.cpp:378
 msgid "All Openable Files"
 msgstr "Mọi tập tin mở được"
 
-#: mainwindow.cpp:388
+#: mainwindow.cpp:395
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -1997,27 +2007,27 @@ msgstr ""
 "Một vài truyền tải vẫn đang chạy.\n"
 "Bạn có chắc muốn đóng KGet không?"
 
-#: mainwindow.cpp:390
+#: mainwindow.cpp:397
 msgid "Confirm Quit"
 msgstr "Xác nhận Thoát"
 
-#: mainwindow.cpp:423
+#: mainwindow.cpp:430
 msgid "KGet Transfer List"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:425
+#: mainwindow.cpp:432
 msgid "Export Transfers"
 msgstr "Xuất truyền"
 
-#: mainwindow.cpp:448
+#: mainwindow.cpp:455
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:449
+#: mainwindow.cpp:456
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:689
+#: mainwindow.cpp:696
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -2027,7 +2037,7 @@ msgstr ""
 "Konqueror. Muốn tắt luôn thì tới « Thiết lập > Cấp cao » rồi tắt mục « Dùng "
 "làm bộ quản lý việc tải về cho Konqueror »."
 
-#: mainwindow.cpp:692
+#: mainwindow.cpp:699
 msgid "Konqueror Integration disabled"
 msgstr "Khả năng hợp nhất với Konqueror bị tắt"
 
@@ -2902,25 +2912,25 @@ msgid "&File"
 msgstr "&Tập tin"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 14
+#. i18n: file ui/kgetui.rc line 15
 #: rc.cpp:479
 msgid "&Downloads"
 msgstr "Tải &về"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 24
+#. i18n: file ui/kgetui.rc line 25
 #: rc.cpp:482
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 36
+#. i18n: file ui/kgetui.rc line 37
 #: rc.cpp:485
 msgid "&Help"
 msgstr "Trợ g&iúp"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 39
+#. i18n: file ui/kgetui.rc line 40
 #: rc.cpp:488
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"

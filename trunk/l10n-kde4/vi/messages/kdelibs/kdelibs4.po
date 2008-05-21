@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-20 07:35+0200\n"
+"POT-Creation-Date: 2008-05-21 08:59+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -84,7 +84,7 @@ msgstr "Nhập vào đây chuỗi tìm kiếm"
 #: rc.cpp:23
 #, fuzzy
 #| msgid "Collaboration"
-msgid "Colaborate"
+msgid "Collaborate"
 msgstr "Hợp tác"
 
 #. i18n: tag label
@@ -260,9 +260,10 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./kdeui/dialogs/kcupsoptionspageswidget.ui line 95
-#. i18n: tag string
-#. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 80
-#: rc.cpp:95 rc.cpp:936
+#: rc.cpp:95
+#, fuzzy
+#| msgid "Start"
+msgctxt "Banner page at start"
 msgid "Start"
 msgstr "Bắt đầu"
 
@@ -271,6 +272,7 @@ msgstr "Bắt đầu"
 #: rc.cpp:98
 #, fuzzy
 #| msgid "End"
+msgctxt "Banner page at end"
 msgid "End"
 msgstr "Cuối"
 
@@ -1783,8 +1785,7 @@ msgstr "Bước tới dòng kế..."
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 90
 #: rc.cpp:788 rc.cpp:939 kdeui/util/kstandardguiitem.cpp:265
 #: kdeui/util/kkeyserver_x11.cpp:109 kdeui/findreplace/kreplace.cpp:353
-#: khtml/ecma/kjs_debugwin.cpp:482 khtml/ecma/debugger/debugwindow.cpp:186
-#: kross/ui/view.cpp:309
+#: khtml/ecma/kjs_debugwin.cpp:482 kross/ui/view.cpp:309
 msgid "Stop"
 msgstr "Dừng"
 
@@ -1872,6 +1873,12 @@ msgstr "Ghi lưu hoạt động mạch"
 #: rc.cpp:933
 msgid "Displays Thread Activity"
 msgstr "Hiển thị hoạt động mạch"
+
+#. i18n: tag string
+#. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 80
+#: rc.cpp:936
+msgid "Start"
+msgstr "Bắt đầu"
 
 #. i18n: tag string
 #. i18n: file ./threadweaver/Examples/Jobs/JobsBase.ui line 185
@@ -6427,9 +6434,9 @@ msgid "Top to Bottom, Right to Left"
 msgstr ""
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:191
-#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:212
-#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:235
-#: kdeui/dialogs/kshortcuteditwidget.cpp:58
+#, fuzzy
+#| msgid "None"
+msgctxt "No border line"
 msgid "None"
 msgstr "Không có"
 
@@ -6453,22 +6460,35 @@ msgstr ""
 msgid "Double Thick Line"
 msgstr "Giấy Phép Công Cộng Q"
 
+#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:212
+#: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:235
+#, fuzzy
+#| msgid "None"
+msgctxt "Banner page"
+msgid "None"
+msgstr "Không có"
+
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:213
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:236
 #, fuzzy
 #| msgid "Start"
+msgctxt "Banner page"
 msgid "Standard"
 msgstr "Bắt đầu"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:214
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:237
+#, fuzzy
+#| msgid "Class"
+msgctxt "Banner page"
 msgid "Unclassified"
-msgstr ""
+msgstr "Hạng"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:215
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:238
 #, fuzzy
 #| msgid "Critical"
+msgctxt "Banner page"
 msgid "Confidential"
 msgstr "Nghiêm trọng"
 
@@ -6476,6 +6496,7 @@ msgstr "Nghiêm trọng"
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:239
 #, fuzzy
 #| msgid "Class"
+msgctxt "Banner page"
 msgid "Classified"
 msgstr "Hạng"
 
@@ -6483,13 +6504,17 @@ msgstr "Hạng"
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:240
 #, fuzzy
 #| msgid "Security Alert"
+msgctxt "Banner page"
 msgid "Secret"
 msgstr "Cảnh giác bảo mật"
 
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:218
 #: kdeui/dialogs/kcupsoptionspageswidget_p.cpp:241
+#, fuzzy
+#| msgid "Security Alert"
+msgctxt "Banner page"
 msgid "Top Secret"
-msgstr ""
+msgstr "Cảnh giác bảo mật"
 
 #. i18n: Filter for the Yes-button text in standard message dialogs,
 #. after the message caption/text have been translated.
@@ -7122,6 +7147,10 @@ msgstr "Đóng thư"
 #| msgid "Default"
 msgid "Default:"
 msgstr "Mặc định"
+
+#: kdeui/dialogs/kshortcuteditwidget.cpp:58
+msgid "None"
+msgstr "Không có"
 
 #: kdeui/dialogs/kshortcuteditwidget.cpp:61
 #, fuzzy
@@ -11685,7 +11714,7 @@ msgid "Available Tests: %1 (ignored: %2)"
 msgstr "Thử ra sẵn sàng: %1 (Bỏ qua: %2)"
 
 #: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:178
+#: khtml/ecma/debugger/debugwindow.cpp:176
 msgid "Continue"
 msgstr "Tiếp tục"
 
@@ -11806,7 +11835,7 @@ msgstr "&Tiếp tục"
 msgid "St&op"
 msgstr "&Dừng"
 
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:185
+#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:170
 msgid "&Break at Next Statement"
 msgstr "&Ngắt tại câu kế"
 
@@ -11815,7 +11844,7 @@ msgctxt "Next breakpoint"
 msgid "Next"
 msgstr "Kế"
 
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:594
+#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:580
 #, kde-format
 msgid "Parse error at %1 line %2"
 msgstr "Lỗi phân tách tại %1 dòng %2"
@@ -11831,7 +11860,7 @@ msgstr ""
 "\n"
 "%1"
 
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:631
+#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:617
 #, kde-format
 msgid ""
 "An error occurred while attempting to run a script on this page.\n"
@@ -11948,9 +11977,12 @@ msgstr ""
 "JavaScript.<br/>Bạn có muốn cho phép gởi đơn này không?"
 
 #: khtml/ecma/debugger/debugdocument.cpp:210
-#: khtml/ecma/debugger/debugwindow.cpp:128
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
 msgid ""
-"A KDE text-editor component could not be found;\n"
+"Unable to find the Kate editor component;\n"
 "please check your KDE installation."
 msgstr ""
 "Không tìm thấy thành phần hiệu chỉnh văn bản KDE;\n"
@@ -11959,7 +11991,7 @@ msgstr ""
 #: khtml/ecma/debugger/debugdocument.cpp:327
 #, fuzzy
 #| msgid "Qt (QGradient)"
-msgid "Breakpoints"
+msgid "Breakpoint"
 msgstr "Qt (Dốc Q)"
 
 #: khtml/ecma/debugger/scriptsdock.cpp:39
@@ -11978,38 +12010,48 @@ msgstr ""
 msgid "Reference"
 msgstr "Lỗi tham chiếu"
 
-#: khtml/ecma/debugger/debugwindow.cpp:180
-#: khtml/ecma/debugger/debugwindow.cpp:181
-msgid "Continue script execution"
-msgstr "Tiếp tục thực hiện văn lệnh"
+#: khtml/ecma/debugger/debugwindow.cpp:171
+#, fuzzy
+#| msgid "&Break at Next Statement"
+msgid "Break at Next"
+msgstr "&Ngắt tại câu kế"
 
-#: khtml/ecma/debugger/debugwindow.cpp:192
-#: khtml/ecma/debugger/debugwindow.cpp:194
-#: khtml/ecma/debugger/debugwindow.cpp:195
+#: khtml/ecma/debugger/debugwindow.cpp:183
+msgid "Step Over"
+msgstr "Bước qua"
+
+#: khtml/ecma/debugger/debugwindow.cpp:190
 msgid "Step Into"
 msgstr "Bước vào"
 
-#: khtml/ecma/debugger/debugwindow.cpp:199
-#: khtml/ecma/debugger/debugwindow.cpp:201
-#: khtml/ecma/debugger/debugwindow.cpp:202
+#: khtml/ecma/debugger/debugwindow.cpp:197
 msgid "Step Out"
 msgstr "Bước ra"
 
 #: khtml/ecma/debugger/debugwindow.cpp:206
-#: khtml/ecma/debugger/debugwindow.cpp:208
-#: khtml/ecma/debugger/debugwindow.cpp:209
-msgid "Step Over"
-msgstr "Bước qua"
+msgid "&Debug"
+msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:249
+#: khtml/ecma/debugger/debugwindow.cpp:235
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close source"
 msgstr "Đóng tài liệu"
 
-#: khtml/ecma/debugger/debugwindow.cpp:255
+#: khtml/ecma/debugger/debugwindow.cpp:241
 msgid "Ready"
 msgstr "Sẵn sàng"
+
+#: khtml/ecma/debugger/debugwindow.cpp:796
+msgid ""
+"Don't know where to evaluate the expression. Please pause a script or open a "
+"source file."
+msgstr ""
+
+#: khtml/ecma/debugger/debugwindow.cpp:832
+#, kde-format
+msgid "Evaluation threw an exception %1"
+msgstr ""
 
 #: khtml/ecma/debugger/consoledock.cpp:231
 #, fuzzy
@@ -12846,7 +12888,7 @@ msgstr[0] ""
 msgid "Search Plugins"
 msgstr "Cột tìm kiếm"
 
-#: kutils/kpluginselector.cpp:723
+#: kutils/kpluginselector.cpp:728
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgid ""
@@ -12854,7 +12896,7 @@ msgid ""
 "%1"
 msgstr "Tên:"
 
-#: kutils/kpluginselector.cpp:726
+#: kutils/kpluginselector.cpp:731
 #, fuzzy, kde-format
 #| msgid "Comment:"
 msgid ""
@@ -12864,7 +12906,7 @@ msgid ""
 "%1"
 msgstr "Ghi chú :"
 
-#: kutils/kpluginselector.cpp:730
+#: kutils/kpluginselector.cpp:735
 #, fuzzy, kde-format
 #| msgid ""
 #| "Author:\n"
@@ -12878,7 +12920,7 @@ msgstr ""
 "Tác giả:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:734
+#: kutils/kpluginselector.cpp:739
 #, fuzzy, kde-format
 #| msgid "E-Mail:"
 msgid ""
@@ -12888,7 +12930,7 @@ msgid ""
 "%1"
 msgstr "Địa chỉ thư :"
 
-#: kutils/kpluginselector.cpp:738
+#: kutils/kpluginselector.cpp:743
 #, fuzzy, kde-format
 #| msgid "Website:"
 msgid ""
@@ -12898,7 +12940,7 @@ msgid ""
 "%1"
 msgstr "Nơi Mạng:"
 
-#: kutils/kpluginselector.cpp:742
+#: kutils/kpluginselector.cpp:747
 #, fuzzy, kde-format
 #| msgid ""
 #| "Version:\n"
@@ -12912,7 +12954,7 @@ msgstr ""
 "Phiên bản:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:746
+#: kutils/kpluginselector.cpp:751
 #, fuzzy, kde-format
 #| msgid ""
 #| "License:\n"
@@ -12926,7 +12968,7 @@ msgstr ""
 "Giấy phép:\n"
 "\t%1"
 
-#: kutils/kpluginselector.cpp:749
+#: kutils/kpluginselector.cpp:754
 #, fuzzy, kde-format
 #| msgid "About %1"
 msgid "About Plugin \"%1\""
@@ -14033,6 +14075,9 @@ msgstr ""
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
+
+#~ msgid "Continue script execution"
+#~ msgstr "Tiếp tục thực hiện văn lệnh"
 
 #, fuzzy
 #~| msgid "None"

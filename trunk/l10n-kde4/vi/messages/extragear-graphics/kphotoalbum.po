@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-08 14:32+0200\n"
+"POT-Creation-Date: 2008-07-09 18:29+0200\n"
 "PO-Revision-Date: 2007-07-08 22:14+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -1579,12 +1579,12 @@ msgstr ""
 msgid "No image existed in export file for %1"
 msgstr "Không có ảnh tồn tại trong tập tin xuất khẩu cho %1"
 
-#: ImportExport/ImportDialog.cpp:87
+#: ImportExport/ImportDialog.cpp:88
 #, kde-format
 msgid "Error in file %1 on line %2 col %3: %4"
 msgstr "Gặp lỗi trong tập tin %1 trên dòng %2 cột %3: %4"
 
-#: ImportExport/ImportDialog.cpp:94
+#: ImportExport/ImportDialog.cpp:95
 #, kde-format
 msgid ""
 "Unexpected top element while reading file %1. Expected KPhotoAlbum-export "
@@ -1593,7 +1593,7 @@ msgstr ""
 "Gặp yếu tố đầu bất thường trong khi đọc tập tin %1. Đợi hỏi xuất khẩu "
 "KPhotoAlbum còn tìm %2"
 
-#: ImportExport/ImportDialog.cpp:102
+#: ImportExport/ImportDialog.cpp:103
 msgid ""
 "<p>XML file did not specify the source of the images, this is a strong "
 "indication that the file is corrupted</p>"
@@ -1601,12 +1601,12 @@ msgstr ""
 "<p>Tập tin XML đã không xác định nguồn của các ảnh: rất ngụ ý là tập tin bị "
 "hỏng.</p>"
 
-#: ImportExport/ImportDialog.cpp:114
+#: ImportExport/ImportDialog.cpp:115
 #, kde-format
 msgid "Unknown element while reading %1, expected image."
 msgstr "Gặp yếu tố lạ trong khi đọc %1, còn đợi hỏi ảnh."
 
-#: ImportExport/ImportDialog.cpp:143
+#: ImportExport/ImportDialog.cpp:139
 msgid ""
 "<h1><font size=\"+2\">Welcome to KPhotoAlbum Import</font></h1>This wizard "
 "will take you through the steps of an import operation. The steps are: "
@@ -1645,48 +1645,54 @@ msgstr ""
 "màu đỏ, để cho bạn xem dễ dàng những hiệu bài nào không được tìm trong co sở "
 "dữ liệu của bạn, hoặc những hiệu bài nào chỉ khớp một phần.</li></ol>"
 
-#: ImportExport/ImportDialog.cpp:162
+#: ImportExport/ImportDialog.cpp:158
 msgid "Introduction"
 msgstr "Giới thiệu"
 
-#: ImportExport/ImportDialog.cpp:178 MainWindow/TokenEditor.cpp:62
+#: ImportExport/ImportDialog.cpp:174 MainWindow/TokenEditor.cpp:62
 msgid "Select All"
 msgstr "Chọn tất cả"
 
-#: ImportExport/ImportDialog.cpp:180
+#: ImportExport/ImportDialog.cpp:176
 msgid "Deselect All"
 msgstr "Hủy chọn hết"
 
-#: ImportExport/ImportDialog.cpp:215
+#: ImportExport/ImportDialog.cpp:211
 msgid "Select Which Images to Import"
 msgstr "Chọn những ảnh cần nhập"
 
-#: ImportExport/ImportDialog.cpp:227
+#: ImportExport/ImportDialog.cpp:223
 msgid "Destination of images: "
 msgstr "Đích của ảnh: "
 
-#: ImportExport/ImportDialog.cpp:241
+#: ImportExport/ImportDialog.cpp:237
 msgid "Destination of Images"
 msgstr "Đích của ảnh"
 
-#: ImportExport/ImportDialog.cpp:249
+#: ImportExport/ImportDialog.cpp:245
 #, kde-format
 msgid "The directory must be a subdirectory of %1"
 msgstr "Thư mục phải là thư mục con của %1"
 
-#: ImportExport/ImportDialog.cpp:291
+#: ImportExport/ImportDialog.cpp:287
 msgid "Match Categories"
 msgstr "Khớp phân loại"
 
-#: ImportExport/ImportDialog.cpp:321
+#: ImportExport/ImportDialog.cpp:319
 #, kde-format
 msgid "Directory %1 does not exists. Should it be created?"
 msgstr "Thư mục %1 không tồn tại. Có nên tạo nó không?"
 
-#: ImportExport/ImportDialog.cpp:325
+#: ImportExport/ImportDialog.cpp:323
 #, kde-format
 msgid "Error creating directory %1"
 msgstr "Gặp lỗi khi tạo thư mục %1"
+
+#: ImportExport/ImportDialog.cpp:423
+#, fuzzy
+#| msgid "How to Handle Images"
+msgid "How to resolve clashes"
+msgstr "Cách thao tác ảnh"
 
 #: ImportExport/Import.cpp:46
 #, fuzzy
@@ -1789,8 +1795,8 @@ msgstr ""
 msgid "Error creating zip file"
 msgstr "Gặp lỗi khi tạo tập tin nén zip"
 
-#: ImportExport/Export.cpp:196 ImportExport/ImportHandler.cpp:51
-#: ImportExport/ImportHandler.cpp:97
+#: ImportExport/Export.cpp:196 ImportExport/ImportHandler.cpp:54
+#: ImportExport/ImportHandler.cpp:101
 msgid "&Cancel"
 msgstr "&Thôi"
 
@@ -1838,37 +1844,76 @@ msgstr ""
 msgid "How to Use the Export File"
 msgstr "Cách dùng tập tin xuất"
 
-#: ImportExport/ImportHandler.cpp:51 ImportExport/ImportHandler.cpp:97
+#: ImportExport/ImportHandler.cpp:54 ImportExport/ImportHandler.cpp:101
 msgid "Copying Images"
 msgstr "Đang sao chép ảnh"
 
-#: ImportExport/ImportHandler.cpp:114
+#: ImportExport/ImportHandler.cpp:119
 #, fuzzy, kde-format
 #| msgid "Error when writing image %s"
 msgid "Error when writing image %1"
 msgstr "Găp lỗi khi ghi ảnh %s"
 
-#: ImportExport/ImportHandler.cpp:132
+#: ImportExport/ImportHandler.cpp:138
 #, fuzzy
 #| msgid "Loading Database"
 msgid "Updating Database"
 msgstr "Đang nạp cơ sở dữ liệu"
 
-#: ImportExport/ImportHandler.cpp:187
+#: ImportExport/ImportHandler.cpp:166
 msgid "Can't copy file from any of the following locations:"
 msgstr ""
 
-#: ImportExport/ImportHandler.cpp:188
+#: ImportExport/ImportHandler.cpp:167
 msgid "Continue without Asking"
 msgstr ""
 
-#: ImportExport/ImportMatcher.cpp:47
+#: ImportExport/ImportMatcher.cpp:48
 msgid "Key in file"
 msgstr "Khóa trong tập tin"
 
-#: ImportExport/ImportMatcher.cpp:58
+#: ImportExport/ImportMatcher.cpp:59
 msgid "Key in your database"
 msgstr "Khóa trong co sở dữ liệu của bạn"
+
+#: ImportExport/MD5CheckPage.cpp:35
+#, kde-format
+msgid ""
+"One image from the import file, has the same MD5 sum as an image in the "
+"Database, how should that be resolved?"
+msgid_plural ""
+"%1 images from the import file, have the same MD5 sum as images in the "
+"Database, how should that be resolved?"
+msgstr[0] ""
+
+#: ImportExport/MD5CheckPage.cpp:50
+msgid ""
+"Use data from\n"
+"Import File"
+msgstr ""
+
+#: ImportExport/MD5CheckPage.cpp:53
+#, fuzzy
+#| msgid "Loading Database"
+msgid ""
+"Use data from\n"
+"Database"
+msgstr "Đang nạp cơ sở dữ liệu"
+
+#: ImportExport/MD5CheckPage.cpp:56
+msgid "Merge data"
+msgstr ""
+
+#: ImportExport/MD5CheckPage.cpp:60
+#, fuzzy
+#| msgid "Label:"
+msgid "Label"
+msgstr "Nhãn:"
+
+#: ImportExport/MD5CheckPage.cpp:61 AnnotationDialog/Dialog.cpp:98
+#: HTMLGenerator/HTMLDialog.cpp:99
+msgid "Description"
+msgstr "Mô tả"
 
 #: tips.cc:3
 msgid ""
@@ -2910,10 +2955,6 @@ msgstr "Nhãn và Ngày"
 #: AnnotationDialog/Dialog.cpp:93
 msgid "Image Preview"
 msgstr "Xem thử ảnh"
-
-#: AnnotationDialog/Dialog.cpp:98 HTMLGenerator/HTMLDialog.cpp:99
-msgid "Description"
-msgstr "Mô tả"
 
 #: AnnotationDialog/Dialog.cpp:115
 msgid "Revert This Item"

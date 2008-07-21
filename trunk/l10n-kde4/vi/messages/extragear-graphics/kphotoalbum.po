@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-18 09:36+0200\n"
+"POT-Creation-Date: 2008-07-21 02:17+0200\n"
 "PO-Revision-Date: 2007-07-08 22:14+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -162,8 +162,8 @@ msgid "Places"
 msgstr "Nơi"
 
 #: DB/Category.cpp:128 XMLDB/FileReader.cpp:345
-msgid "Keywords"
-msgstr "Từ khoá"
+msgid "Events"
+msgstr ""
 
 #: DB/Category.cpp:129
 msgid "Folder"
@@ -176,6 +176,10 @@ msgstr "Hiệu bài"
 #: DB/Category.cpp:131
 msgid "Media Type"
 msgstr "Kiểu vật chứa"
+
+#: DB/Category.cpp:136
+msgid "Keywords"
+msgstr "Từ khoá"
 
 #: Exif/SearchDialog.cpp:42
 msgid "EXIF Search"
@@ -1939,7 +1943,7 @@ msgstr ""
 #| "delete one of the existing ones.</p>\n"
 msgid ""
 "<p>It is possible to create new categories - that are alternatives\n"
-"to <b>People</b>, <b>Places</b>, and <b>Keywords</b> - in the annotation\n"
+"to <b>People</b>, <b>Places</b>, and <b>Events</b> - in the annotation\n"
 "dialog. \n"
 "To add new categories or remove existing ones, go to the <b>Settings-&gt;"
 "Configure KPhotoAlbum</b> dialog, and choose\n"
@@ -2250,6 +2254,23 @@ msgstr ""
 "tin ảnh khớp.</p>"
 
 #: Settings/SettingsDialog.cpp:202
+#, fuzzy
+#| msgid ""
+#| "<p>KPhotoAlbum shares plugins with other imaging applications, some of "
+#| "which have the concept of albums. KPhotoAlbum does not have this concept; "
+#| "nevertheless, for certain plugins to function, KPhotoAlbum behaves to the "
+#| "plugin system as if it did.</p><p>KPhotoAlbum does this by defining the "
+#| "current album to be the current view - that is, all the images the "
+#| "browser offers to display.</p><p>In addition to the current album, "
+#| "KPhotoAlbum must also be able to give a list of all albums; the list of "
+#| "all albums is defined in the following way:<ul><li>When KPhotoAlbum's "
+#| "browser displays the content of a category, say all People, then each "
+#| "item in this category will look like an album to the plugin."
+#| "<li>Otherwise, the category you specify using this option will be used; e."
+#| "g. if you specify People with this option, then KPhotoAlbum will act as "
+#| "if you had just chosen to display people and then invoke the plugin which "
+#| "needs to know about all albums.</p><p>Most users would probably want to "
+#| "specify Keywords here.</p>"
 msgid ""
 "<p>KPhotoAlbum shares plugins with other imaging applications, some of which "
 "have the concept of albums. KPhotoAlbum does not have this concept; "
@@ -2264,7 +2285,7 @@ msgid ""
 "this option will be used; e.g. if you specify People with this option, then "
 "KPhotoAlbum will act as if you had just chosen to display people and then "
 "invoke the plugin which needs to know about all albums.</p><p>Most users "
-"would probably want to specify Keywords here.</p>"
+"would probably want to specify Events here.</p>"
 msgstr ""
 "<p>KPhotoAlbum chia sẻ bổ sung với các ứng dụng đồ họa khác; một số ứng dụng "
 "này hiểu được khái niệm tập ảnh. KPhotoAlbum không hiểu khái niệm này, tùy "
@@ -2762,29 +2783,34 @@ msgstr ""
 "dữ liệu.</p>"
 
 #: Settings/SettingsData.cpp:98
-msgid "New images were found. Should I trust their time stamps?"
+msgid ""
+"When reading time information of images, their EXIF info is used. Exif info "
+"may, however, not be supported by your KPhotoAlbum installation, or no valid "
+"information may be in the file. As a backup, KPhotoAlbum may use the "
+"timestamp of the image - this may, however, not be valid in case the image "
+"is scanned in. So the question is, should KPhotoAlbum trust the time stamp "
+"on your images?"
 msgstr ""
-"Tìm thấy một số ảnh mới. Trình này nên theo nhãn thời gian của chúng không?"
 
-#: Settings/SettingsData.cpp:99
+#: Settings/SettingsData.cpp:104
 msgid "Trust Time Stamps?"
 msgstr "Theo nhãn thời gian ?"
 
-#: Settings/SettingsData.cpp:251
+#: Settings/SettingsData.cpp:256
 #, kde-format
 msgid "Unable to create directory '%1'."
 msgstr "Không thể tạo thư mục « %1 »."
 
-#: Settings/SettingsData.cpp:251
+#: Settings/SettingsData.cpp:256
 msgid "Unable to Create Directory"
 msgstr "Không thể tạo thư mục"
 
-#: Settings/SettingsData.cpp:258
+#: Settings/SettingsData.cpp:263
 #, kde-format
 msgid "Error when saving image '%1'."
 msgstr "Găp lỗi khi lưu ảnh « %1 »."
 
-#: Settings/SettingsData.cpp:258
+#: Settings/SettingsData.cpp:263
 msgid "Error Saving Image"
 msgstr "Gặp lỗi khi lưu ảnh"
 
@@ -4173,6 +4199,11 @@ msgstr "Sắp xếp lại mẫu ảnh"
 #: ThumbnailView/ThumbnailBuilder.cpp:39
 msgid "Generating thumbnails"
 msgstr "Đang tạo ra các mẫu ảnh"
+
+#~ msgid "New images were found. Should I trust their time stamps?"
+#~ msgstr ""
+#~ "Tìm thấy một số ảnh mới. Trình này nên theo nhãn thời gian của chúng "
+#~ "không?"
 
 #~ msgid "Replacements"
 #~ msgstr "Thay thế"

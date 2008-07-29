@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-22 05:29+0200\n"
+"POT-Creation-Date: 2008-07-29 08:30+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "New Group"
 msgstr "Nhóm %1"
 
-#: conf/transfersgroupwidget.cpp:127 core/kget.cpp:683 ui/contextmenu.cpp:97
+#: conf/transfersgroupwidget.cpp:127 core/kget.cpp:693 ui/contextmenu.cpp:97
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
@@ -101,79 +101,83 @@ msgstr "Xoá nhóm"
 msgid "Select Icon"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:45
+#: conf/preferencesdialog.cpp:46
 msgid "Xml"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:47
+#: conf/preferencesdialog.cpp:48
 #, fuzzy
 #| msgid "Size"
 msgid "Sqlite"
 msgstr "Cỡ"
 
-#: conf/preferencesdialog.cpp:57
+#: conf/preferencesdialog.cpp:52
+msgid "Turn off the computer"
+msgstr ""
+
+#: conf/preferencesdialog.cpp:67
 msgid "Appearance"
 msgstr "Diện mạo"
 
-#: conf/preferencesdialog.cpp:57
+#: conf/preferencesdialog.cpp:67
 msgid "Change appearance settings"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:58
+#: conf/preferencesdialog.cpp:68
 #, fuzzy
 #| msgctxt "%1 is the name of the group"
 #| msgid "%1 Group"
 msgid "Groups"
 msgstr "Nhóm %1"
 
-#: conf/preferencesdialog.cpp:58
+#: conf/preferencesdialog.cpp:68
 msgid "Manage the groups"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 108
-#: conf/preferencesdialog.cpp:59 rc.cpp:231
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 102
+#: conf/preferencesdialog.cpp:69 rc.cpp:231
 msgid "Folders"
 msgstr "Thư mục"
 
-#: conf/preferencesdialog.cpp:59
+#: conf/preferencesdialog.cpp:69
 msgid "Default Download Folders"
 msgstr "Thư mục tải về mặc định"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 22
-#: conf/preferencesdialog.cpp:60 rc.cpp:210
+#: conf/preferencesdialog.cpp:70 rc.cpp:210
 msgid "Network"
 msgstr "Mạng"
 
-#: conf/preferencesdialog.cpp:60
+#: conf/preferencesdialog.cpp:70
 msgid "Network and Downloads"
 msgstr "Mạng và Tải về"
 
-#: conf/preferencesdialog.cpp:61
+#: conf/preferencesdialog.cpp:71
 msgid "Webinterface"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:61
+#: conf/preferencesdialog.cpp:71
 msgid "Control KGet over Network or Internet"
 msgstr ""
 
-#: conf/preferencesdialog.cpp:62
+#: conf/preferencesdialog.cpp:72
 #, fuzzy
 #| msgid "Advanced"
 msgctxt "Advanced Options"
 msgid "Advanced"
 msgstr "Cấp cao"
 
-#: conf/preferencesdialog.cpp:62
+#: conf/preferencesdialog.cpp:72
 msgid "Advanced Options"
 msgstr "Tùy chọn cấp cao"
 
-#: conf/preferencesdialog.cpp:63
+#: conf/preferencesdialog.cpp:73
 msgid "Plugins"
 msgstr "Bổ sung"
 
-#: conf/preferencesdialog.cpp:63
+#: conf/preferencesdialog.cpp:73
 msgid "Transfer Plugin Options"
 msgstr "Tùy chọn bổ sung truyền"
 
@@ -181,9 +185,8 @@ msgstr "Tùy chọn bổ sung truyền"
 msgid "Folder and extension can not be empty."
 msgstr "Thư mục và phần mở rộng không thể rỗng."
 
-#. i18n("Malformed URL, protocol missing:\n%1", source.prettyUrl()),
-#: conf/dlgdirectories.cpp:141 core/kget.cpp:472 core/kget.cpp:858
-#: core/kget.cpp:867
+#: conf/dlgdirectories.cpp:141 core/kget.cpp:459 core/kget.cpp:868
+#: core/kget.cpp:876
 msgid "Error"
 msgstr "Lỗi"
 
@@ -227,7 +230,46 @@ msgctxt "remaining time of download"
 msgid "Remaining Time"
 msgstr ""
 
-#: core/transferhandler.cpp:138
+#: core/transfertreemodel.cpp:560
+#, fuzzy
+#| msgid "Name"
+msgid "Name"
+msgstr "Tên"
+
+#: core/transfertreemodel.cpp:562
+#: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:127
+#: ui/history/transferhistory.cpp:247
+#, fuzzy
+#| msgid "Status"
+msgid "Status"
+msgstr "Trạng thái"
+
+#. i18n: tag string
+#. i18n: file ui/history/transferhistory.ui line 120
+#: core/transfertreemodel.cpp:564
+#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:257
+#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:72
+#: rc.cpp:463
+msgid "Size"
+msgstr "Cỡ"
+
+#: core/transfertreemodel.cpp:566
+#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:193
+msgid "Progress"
+msgstr "Tiến hành"
+
+#: core/transfertreemodel.cpp:568
+#: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:125
+#, fuzzy
+#| msgid "Speed"
+msgid "Speed"
+msgstr "Tốc độ"
+
+#: core/transfertreemodel.cpp:570
+msgid "Remaining Time"
+msgstr ""
+
+#: core/transferhandler.cpp:142
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:27
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:28
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:29
@@ -241,27 +283,33 @@ msgctxt "not available"
 msgid "n/a"
 msgstr "không có"
 
-#: core/transferhandler.cpp:146
+#: core/transferhandler.cpp:150
 #: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1448
 #: ui/transferdetails.cpp:90
 msgid "Stalled"
 msgstr "Dừng lại"
 
-#: core/transferhandler.cpp:151 core/transfergrouphandler.cpp:129
+#: core/transferhandler.cpp:155 core/transfergrouphandler.cpp:129
 #: ui/transferdetails.cpp:95
 #, kde-format
 msgid "%1/s"
 msgstr "%1/giây"
 
-#: core/transferhandler.cpp:325 core/transferhandler.cpp:331
-#: ui/droptarget.cpp:94
+#. i18n: tag string
+#. i18n: file conf/dlgadvanced.ui line 43
+#: core/transferhandler.cpp:355 core/transferhandler.cpp:365
+#: ui/droptarget.cpp:94 rc.cpp:99
 #, fuzzy
 #| msgid "KGet"
 msgid "Quit KGet"
 msgstr "KGet"
 
-#: core/transferhandler.cpp:326 core/transferhandler.cpp:332
+#: core/transferhandler.cpp:356
 msgid "KGet quits now because all downloads have been completed."
+msgstr ""
+
+#: core/transferhandler.cpp:366
+msgid "The computer turn off now because all downloads have been completed."
 msgstr ""
 
 #: core/transfergrouphandler.cpp:113
@@ -336,22 +384,22 @@ msgstr ""
 msgid "Overwrite existing file?"
 msgstr "Ghi đè lên tập tin đã có?"
 
-#: core/kget.cpp:471
+#: core/kget.cpp:458
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "Không thể lưu vào : %1"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:794 ui/newtransferdialog.cpp:38 rc.cpp:401
+#: core/kget.cpp:804 ui/newtransferdialog.cpp:210 rc.cpp:401
 msgid "New Download"
 msgstr "Tải về mới"
 
-#: core/kget.cpp:794
+#: core/kget.cpp:804
 msgid "Enter URL:"
 msgstr "Nhập URL:"
 
-#: core/kget.cpp:857 core/kget.cpp:864
+#: core/kget.cpp:867
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -360,7 +408,19 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:878
+#: core/kget.cpp:875
+#, fuzzy, kde-format
+#| msgid ""
+#| "Malformed URL:\n"
+#| "%1"
+msgid ""
+"Malformed URL, protocol missing:\n"
+"%1"
+msgstr ""
+"URL dạng sai:\n"
+"%1"
+
+#: core/kget.cpp:888
 #, kde-format
 msgid ""
 "URL already saved:\n"
@@ -371,15 +431,15 @@ msgstr ""
 "%1\n"
 "Tải về lại không?"
 
-#: core/kget.cpp:879
+#: core/kget.cpp:889
 msgid "Download URL again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:913 core/kget.cpp:920
+#: core/kget.cpp:923 core/kget.cpp:930
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:930
+#: core/kget.cpp:940
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -392,18 +452,18 @@ msgstr ""
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:1045
+#: core/kget.cpp:1055
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error "
 #| "message:<br/><i>%2</i></p>"
 msgid ""
-"<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
+"<html><p>Plugin loader could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:1062
+#: core/kget.cpp:1073
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -414,11 +474,7 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:1064 core/kget.cpp:1075
-msgid "Not Deleted"
-msgstr "Chưa xóa"
-
-#: core/kget.cpp:1073
+#: core/kget.cpp:1083
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -438,7 +494,6 @@ msgstr ""
 
 #: transfer-plugins/kio/transferKio.cpp:135
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:221
-#: ui/history/transferhistory.cpp:216
 msgid "Aborted"
 msgstr ""
 
@@ -479,14 +534,6 @@ msgstr ""
 #| msgid "&File"
 msgid "File"
 msgstr "&Tập tin"
-
-#. i18n: tag string
-#. i18n: file ui/history/transferhistory.ui line 120
-#: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:257
-#: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:72
-#: rc.cpp:463
-msgid "Size"
-msgstr "Cỡ"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:64
 #, fuzzy
@@ -633,19 +680,6 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:125
-#, fuzzy
-#| msgid "Speed"
-msgid "Speed"
-msgstr "Tốc độ"
-
-#: transfer-plugins/bittorrent/advanceddetails/webseedsmodel.cpp:127
-#: ui/history/transferhistory.cpp:247
-#, fuzzy
-#| msgid "Status"
-msgid "Status"
-msgstr "Trạng thái"
-
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:54
 #, fuzzy, kde-format
 #| msgid "Details for: %1"
@@ -693,7 +727,7 @@ msgstr ""
 msgid "Cannot add the webseed %1, it is already part of the list of webseeds."
 msgstr ""
 
-#: transfer-plugins/bittorrent/advanceddetails/webseedstab.cpp:110
+#: transfer-plugins/bittorrent/advanceddetails/webseedstab.cpp:109
 #, kde-format
 msgid "Cannot remove webseed %1, it is part of the torrent."
 msgstr ""
@@ -805,10 +839,6 @@ msgstr ""
 #: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:192
 msgid "Chunk"
 msgstr ""
-
-#: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:193
-msgid "Progress"
-msgstr "Tiến hành"
 
 #: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:194
 msgid "Peer"
@@ -1290,7 +1320,6 @@ msgstr "Tải về"
 
 #: transfer-plugins/bittorrent/libbtcore/torrent/torrentcontrol.cpp:1450
 #: transfer-plugins/bittorrent/libbtcore/torrent/peersourcemanager.cpp:162
-#: ui/history/transferhistory.cpp:214
 #, fuzzy
 #| msgid "Stopped"
 msgid "Stopped"
@@ -1365,7 +1394,7 @@ msgstr ""
 msgid "Cannot open file : %1 : %2"
 msgstr ""
 
-#: ui/tray.cpp:61
+#: ui/tray.cpp:62
 #, fuzzy
 #| msgid "Downloads number:"
 msgid "KGet - Download Manager"
@@ -1382,6 +1411,10 @@ msgstr "Chi tiết về: %1"
 #| msgid "Transfer details:"
 msgid "Transfer details"
 msgstr "Chi tiết truyền:"
+
+#: ui/transfersview.cpp:152
+msgid "Select columns"
+msgstr ""
 
 #: ui/history/transferhistorycategorizeddelegate.cpp:45
 #: ui/history/transferhistory.cpp:268
@@ -1431,18 +1464,33 @@ msgid "&Open File"
 msgstr "Mở tập tin"
 
 #: ui/history/transferhistory.cpp:210
+msgctxt "The transfer is running"
 msgid "Running"
 msgstr ""
 
 #: ui/history/transferhistory.cpp:212
 #, fuzzy
 #| msgid "Delayed"
+msgctxt "The transfer is delayed"
 msgid "Delayed"
 msgstr "Bị trễ"
+
+#: ui/history/transferhistory.cpp:214
+#, fuzzy
+#| msgid "Stopped"
+msgctxt "The transfer is stopped"
+msgid "Stopped"
+msgstr "Bị ngừng"
+
+#: ui/history/transferhistory.cpp:216
+msgctxt "The transfer is aborted"
+msgid "Aborted"
+msgstr ""
 
 #: ui/history/transferhistory.cpp:218
 #, fuzzy
 #| msgid "Finished"
+msgctxt "The transfer is finished"
 msgid "Finished"
 msgstr "Xong"
 
@@ -1452,9 +1500,7 @@ msgstr "Xong"
 msgid "Source-File"
 msgstr "Nguồn:"
 
-#. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 49
-#: ui/history/transferhistory.cpp:247 rc.cpp:407
+#: ui/history/transferhistory.cpp:247
 #, fuzzy
 #| msgid "Open Destination"
 msgid "Destination"
@@ -1510,6 +1556,7 @@ msgstr "Tải về URL lần nữa không?"
 #: ui/history/transferhistoryitemdelegate.cpp:46
 #, fuzzy
 #| msgid "Delete Selected"
+msgctxt "Delete selected history-item"
 msgid "Delete selected"
 msgstr "Xoá mục đã chọn"
 
@@ -1567,17 +1614,17 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "Dính"
 
-#: ui/droptarget.cpp:220 mainwindow.cpp:805
+#: ui/droptarget.cpp:220 mainwindow.cpp:863
 msgid "The dropped file is a KGet-Transferlist"
 msgstr ""
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:806
+#: ui/droptarget.cpp:221 mainwindow.cpp:864
 #, fuzzy
 #| msgid "&Downloads"
 msgid "&Download"
 msgstr "Tải &về"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:807
+#: ui/droptarget.cpp:222 mainwindow.cpp:865
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "&Load transferlist"
@@ -1592,7 +1639,7 @@ msgid "Hide Main Window"
 msgstr "Ẩn cửa sổ chính"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 51
+#. i18n: file conf/dlgappearance.ui line 35
 #: ui/droptarget.cpp:358 rc.cpp:132
 #, fuzzy
 #| msgid "Show drop target"
@@ -1640,20 +1687,20 @@ msgstr "Tải về"
 msgid "Transfer details:"
 msgstr "Chi tiết truyền:"
 
-#: ui/linkview/kget_linkview.h:101
+#: ui/linkview/kget_linkview.h:103
 msgctxt "filter: show all file types"
 msgid "All"
 msgstr ""
 
-#: ui/linkview/kget_linkview.h:102
+#: ui/linkview/kget_linkview.h:104
 msgid "Videos"
 msgstr ""
 
-#: ui/linkview/kget_linkview.h:103
+#: ui/linkview/kget_linkview.h:105
 msgid "Audio"
 msgstr ""
 
-#: ui/linkview/kget_linkview.h:104
+#: ui/linkview/kget_linkview.h:106
 msgid "Archives"
 msgstr ""
 
@@ -1663,37 +1710,43 @@ msgstr ""
 msgid "Import Links"
 msgstr "Ngừng mục đã chọn"
 
-#: ui/linkview/kget_linkview.cpp:75
+#: ui/linkview/kget_linkview.cpp:76
 msgid "Filter files here..."
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:86
+#: ui/linkview/kget_linkview.cpp:87
 msgid "Show:"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:97
+#: ui/linkview/kget_linkview.cpp:98
 msgid "File with links to import:"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:98
+#: ui/linkview/kget_linkview.cpp:99
 #, fuzzy
 #| msgid "Stop Selected"
 msgid "Import links"
 msgstr "Ngừng mục đã chọn"
 
-#: ui/linkview/kget_linkview.cpp:126 ui/linkview/kget_linkview.cpp:317
+#: ui/linkview/kget_linkview.cpp:127 ui/linkview/kget_linkview.cpp:324
 msgid "Select all"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:127 ui/linkview/kget_linkview.cpp:318
+#: ui/linkview/kget_linkview.cpp:128 ui/linkview/kget_linkview.cpp:325
 msgid "Deselect all"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:129
+#: ui/linkview/kget_linkview.cpp:130
+#, fuzzy
+#| msgid "Delete Selected"
+msgid "Check selected"
+msgstr "Xoá mục đã chọn"
+
+#: ui/linkview/kget_linkview.cpp:132
 msgid "Show web content"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:130
+#: ui/linkview/kget_linkview.cpp:133
 #, fuzzy
 #| msgid "Default Download Folders"
 msgid "Download checked"
@@ -1701,47 +1754,47 @@ msgstr "Thư mục tải về mặc định"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/scandlg.ui line 183
-#: ui/linkview/kget_linkview.cpp:132 rc.cpp:207
+#: ui/linkview/kget_linkview.cpp:135 rc.cpp:207
 #, fuzzy
 #| msgid "Change"
 msgid "Cancel"
 msgstr "Đổi"
 
-#: ui/linkview/kget_linkview.cpp:175
+#: ui/linkview/kget_linkview.cpp:182
 msgid "Auxiliar header"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:176
+#: ui/linkview/kget_linkview.cpp:183
 #, fuzzy
 #| msgid "Name"
 msgid "File Name"
 msgstr "Tên"
 
-#: ui/linkview/kget_linkview.cpp:177
+#: ui/linkview/kget_linkview.cpp:184
 msgid "Description"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:178
+#: ui/linkview/kget_linkview.cpp:185
 #, fuzzy
 #| msgid "File"
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "Tập tin"
 
-#: ui/linkview/kget_linkview.cpp:179
+#: ui/linkview/kget_linkview.cpp:186
 msgid "Location (URL)"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:234
+#: ui/linkview/kget_linkview.cpp:241
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:317
+#: ui/linkview/kget_linkview.cpp:324
 msgid "Select all filtered"
 msgstr ""
 
-#: ui/linkview/kget_linkview.cpp:318
+#: ui/linkview/kget_linkview.cpp:325
 msgid "Deselect all filtered"
 msgstr ""
 
@@ -1751,7 +1804,7 @@ msgstr ""
 msgid "Download Manager"
 msgstr "Số tải về:"
 
-#: extensions/konqueror/kget_plug_in.cpp:54 mainwindow.cpp:257
+#: extensions/konqueror/kget_plug_in.cpp:54 mainwindow.cpp:303
 #, fuzzy
 #| msgid "Show drop target"
 msgid "Show Drop Target"
@@ -1922,7 +1975,7 @@ msgctxt "@label text in footer"
 msgid "KGet Webinterface | Valid XHTML 1.0 Strict &amp; CSS"
 msgstr ""
 
-#: main.cpp:113 mainwindow.cpp:84
+#: main.cpp:113 mainwindow.cpp:84 mainwindow.cpp:443
 msgid "KGet"
 msgstr "KGet"
 
@@ -2056,39 +2109,53 @@ msgstr "Hiện cửa sổ thả xuống khi chạy KGet"
 msgid "URL(s) to download"
 msgstr "URL để tải về"
 
-#: mainwindow.cpp:118
+#: mainwindow.cpp:141
+msgid "KGet Transfer List"
+msgstr "Danh sách truyền KGet"
+
+#: mainwindow.cpp:148
+msgid "Export Transfers"
+msgstr "Xuất truyền"
+
+#: mainwindow.cpp:158
 msgid "&New Download..."
 msgstr "Tải về mớ&i..."
 
-#: mainwindow.cpp:124
+#: mainwindow.cpp:164
 #, fuzzy
 #| msgid "&Export Transfers List..."
 msgid "&Import Transfers..."
 msgstr "&Xuất danh sách truyền..."
 
-#: mainwindow.cpp:130
+#: mainwindow.cpp:170
 msgid "&Export Transfers List..."
 msgstr "&Xuất danh sách truyền..."
 
-#: mainwindow.cpp:136
+#: mainwindow.cpp:176
+#, fuzzy
+#| msgid "&Export Transfers List..."
+msgid "&Export Transfers as Plain Text"
+msgstr "&Xuất danh sách truyền..."
+
+#: mainwindow.cpp:182
 msgid "Delete Group"
 msgstr "Xoá nhóm"
 
-#: mainwindow.cpp:141
+#: mainwindow.cpp:187
 #, fuzzy
 #| msgid "Delete Group"
 msgid "Rename Group"
 msgstr "Xoá nhóm"
 
-#: mainwindow.cpp:146
+#: mainwindow.cpp:192
 msgid "Set Icon"
 msgstr ""
 
-#: mainwindow.cpp:151
+#: mainwindow.cpp:197
 msgid "Auto-Paste Mode"
 msgstr "Chế độ tự động dán"
 
-#: mainwindow.cpp:154
+#: mainwindow.cpp:200
 msgid ""
 "<b>Auto paste</b> button toggles the auto-paste mode on and off.\n"
 "When set, KGet will periodically scan the clipboard for URLs and paste them "
@@ -2098,92 +2165,94 @@ msgstr ""
 "Khi bật, KGet sẽ quét định kỳ nội dung của bảng nháp để tìm các URL và thêm "
 "chúng một cách tự động."
 
-#: mainwindow.cpp:160
+#: mainwindow.cpp:206
 msgid "Use KGet as Konqueror Download Manager"
 msgstr "Dùng KGet là bộ quản lý tải về của Konqueror"
 
-#: mainwindow.cpp:183
+#: mainwindow.cpp:229
 #, fuzzy
 #| msgid "Delete Selected"
 msgctxt "delete selected transfer item"
 msgid "Delete Selected"
 msgstr "Xoá mục đã chọn"
 
-#: mainwindow.cpp:189
+#: mainwindow.cpp:235
 msgctxt "delete all finished transfers"
 msgid "Delete all finished"
 msgstr ""
 
-#: mainwindow.cpp:194
+#: mainwindow.cpp:240
 #, fuzzy
 #| msgid "Default Download Folders"
 msgctxt "redownload selected transfer item"
 msgid "Redownload Selected"
 msgstr "Thư mục tải về mặc định"
 
-#: mainwindow.cpp:199
+#: mainwindow.cpp:245
 msgid "Start / Resume All"
 msgstr "Chạy/Tiếp tục tất cả"
 
-#: mainwindow.cpp:205
+#: mainwindow.cpp:251
 msgid "Start / Resume Selected"
 msgstr "Chạy/Tiếp tục mục đã chọn"
 
-#: mainwindow.cpp:210
+#: mainwindow.cpp:256
 msgid "Stop All"
 msgstr "Ngừng tất cả"
 
-#: mainwindow.cpp:216
+#: mainwindow.cpp:262
 msgid "Stop Selected"
 msgstr "Ngừng mục đã chọn"
 
-#: mainwindow.cpp:220
+#: mainwindow.cpp:266
 msgid "Start / Resume"
 msgstr "Chạy/Tiếp tục"
 
-#: mainwindow.cpp:228
+#: mainwindow.cpp:274
 msgid "Stop"
 msgstr "Ngừng"
 
-#: mainwindow.cpp:237
+#: mainwindow.cpp:283
 msgid "Open Destination"
 msgstr "Mở đích"
 
-#: mainwindow.cpp:242 mainwindow.cpp:379
+#: mainwindow.cpp:288 mainwindow.cpp:425
 msgid "Open File"
 msgstr "Mở tập tin"
 
-#: mainwindow.cpp:247
+#: mainwindow.cpp:293
 msgid "Show Details"
 msgstr "Hiện chi tiết"
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:298
 msgid "Copy URL to Clipboard"
 msgstr "Chép URL vào bảng nháp"
 
-#: mainwindow.cpp:263
+#: mainwindow.cpp:309
 #, fuzzy
 #| msgid "KGet Transfer List"
-msgid "&Transfer History"
+msgid "&Transfer History..."
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:269
+#: mainwindow.cpp:315
 #, fuzzy
 #| msgid "&Settings"
-msgid "&Group Settings"
+msgid "&Group Settings..."
 msgstr "Thiết &lập"
 
-#: mainwindow.cpp:275
+#: mainwindow.cpp:321
 #, fuzzy
 #| msgid "Transfer details:"
-msgid "&Transfer Settings"
+msgid "&Transfer Settings..."
 msgstr "Chi tiết truyền:"
 
-#: mainwindow.cpp:281
-msgid "Import &Links"
-msgstr ""
+#: mainwindow.cpp:327
+#, fuzzy
+#| msgid "Stop Selected"
+msgid "Import &Links..."
+msgstr "Ngừng mục đã chọn"
 
-#: mainwindow.cpp:320
+#: mainwindow.cpp:366
 #, fuzzy
 #| msgid ""
 #| "This is the first time you have run KGet.\n"
@@ -2196,23 +2265,29 @@ msgstr ""
 "Bạn có muốn gán KGet là bộ quản lý việc tải về của trình duyệt Konqueror "
 "không?"
 
-#: mainwindow.cpp:322
+#: mainwindow.cpp:368
 msgid "Konqueror Integration"
 msgstr "Hợp nhất với Konqueror"
 
-#: mainwindow.cpp:322
+#: mainwindow.cpp:368
 msgid "Enable"
 msgstr "Bật"
 
-#: mainwindow.cpp:323
+#: mainwindow.cpp:369
 msgid "Do Not Enable"
 msgstr "Không bật"
 
-#: mainwindow.cpp:378
+#: mainwindow.cpp:424
 msgid "All Openable Files"
 msgstr "Mọi tập tin mở được"
 
-#: mainwindow.cpp:395
+#: mainwindow.cpp:441
+#, kde-format
+msgctxt "window title including overall download progress in percent"
+msgid "KGet - %1%"
+msgstr ""
+
+#: mainwindow.cpp:451
 msgid ""
 "Some transfers are still running.\n"
 "Are you sure you want to close KGet?"
@@ -2220,27 +2295,19 @@ msgstr ""
 "Một vài truyền tải vẫn đang chạy.\n"
 "Bạn có chắc muốn đóng KGet không?"
 
-#: mainwindow.cpp:397
+#: mainwindow.cpp:453
 msgid "Confirm Quit"
 msgstr "Xác nhận Thoát"
 
-#: mainwindow.cpp:430
-msgid "KGet Transfer List"
-msgstr "Danh sách truyền KGet"
-
-#: mainwindow.cpp:432
-msgid "Export Transfers"
-msgstr "Xuất truyền"
-
-#: mainwindow.cpp:455
+#: mainwindow.cpp:508
 msgid "Enter Group Name"
 msgstr "Nhập tên nhóm"
 
-#: mainwindow.cpp:456
+#: mainwindow.cpp:509
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:696
+#: mainwindow.cpp:749
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -2249,10 +2316,6 @@ msgstr ""
 "Trình KGet đã bị tắt tạm thời làm bộ quản lý việc tải về cho trình duyệt "
 "Konqueror. Muốn tắt luôn thì tới « Thiết lập > Cấp cao » rồi tắt mục « Dùng "
 "làm bộ quản lý việc tải về cho Konqueror »."
-
-#: mainwindow.cpp:699
-msgid "Konqueror Integration disabled"
-msgstr "Khả năng hợp nhất với Konqueror bị tắt"
 
 #: rc.cpp:1
 #, fuzzy
@@ -2269,31 +2332,31 @@ msgid "Your emails"
 msgstr "Hiện chi tiết"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 28
+#. i18n: file conf/dlgnetwork.ui line 19
 #: rc.cpp:5
 msgid "Start downloading files immediately after startup"
 msgstr "Bắt đầu tải về tập tin đúng sau khi khởi chạy"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 35
+#. i18n: file conf/dlgnetwork.ui line 26
 #: rc.cpp:8
 msgid "Limit maximum downloads per group"
 msgstr "Giới hạn số tối đa việc tải về cho mỗi nhóm"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 47
+#. i18n: file conf/dlgnetwork.ui line 35
 #: rc.cpp:11
-msgid "Downloads from the same server:"
-msgstr "Tải xuống cùng máy phục vụ :"
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 54
-#: rc.cpp:14
 msgid "Downloads number:"
 msgstr "Số tải về:"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 91
+#. i18n: file conf/dlgnetwork.ui line 52
+#: rc.cpp:14
+msgid "Downloads from the same server:"
+msgstr "Tải xuống cùng máy phục vụ :"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 69
 #: rc.cpp:17
 #, fuzzy
 #| msgid "Speed"
@@ -2301,83 +2364,83 @@ msgid "Speed limit"
 msgstr "Tốc độ"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 100
+#. i18n: file conf/dlgnetwork.ui line 78
 #: rc.cpp:20
-#, fuzzy
-#| msgid "Transfers:"
-msgid "Per Transfer:"
-msgstr "Truyền:"
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 123
-#: rc.cpp:23
-msgid "kBi/s"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 139
-#: rc.cpp:26
 #, fuzzy
 #| msgid "Downloads"
 msgid "Global Download-Limit:"
 msgstr "Tải về"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 146
-#: rc.cpp:29
-#, fuzzy
-#| msgid "Downloads"
-msgid "Global Upload-Limit:"
-msgstr "Tải về"
-
+#. i18n: file conf/dlgnetwork.ui line 85
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 153
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 160
-#: rc.cpp:32 rc.cpp:35
+#. i18n: file conf/dlgnetwork.ui line 99
+#: rc.cpp:23 rc.cpp:29
 #, fuzzy
 #| msgid "%1/s"
 msgid "KiB/s"
 msgstr "%1/giây"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 196
+#. i18n: file conf/dlgnetwork.ui line 92
+#: rc.cpp:26
+#, fuzzy
+#| msgid "Downloads"
+msgid "Global Upload-Limit:"
+msgstr "Tải về"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 106
+#: rc.cpp:32
+#, fuzzy
+#| msgid "Transfers:"
+msgid "Per Transfer:"
+msgstr "Truyền:"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 113
+#: rc.cpp:35
+msgid "kBi/s"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 132
 #: rc.cpp:38
 msgid "Reconnect on error or broken connection"
 msgstr "Tái kết nối khi gặp lỗi hay kết nối bị ngắt"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 205
+#. i18n: file conf/dlgnetwork.ui line 141
 #: rc.cpp:41
-msgid "Retry after:"
-msgstr "Thử lại sau :"
-
-#. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 212
-#: rc.cpp:44
 msgid "Number of retries:"
 msgstr "Số lần thử lại:"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 242
+#. i18n: file conf/dlgnetwork.ui line 155
+#: rc.cpp:44
+msgid "Retry after:"
+msgstr "Thử lại sau :"
+
+#. i18n: tag string
+#. i18n: file conf/dlgnetwork.ui line 162
 #: rc.cpp:47
 msgid "sec"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 258
+#. i18n: file conf/dlgnetwork.ui line 178
 #: rc.cpp:50
 msgid "After Completing Downloads"
 msgstr "Sau khi tải về xong"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 264
+#. i18n: file conf/dlgnetwork.ui line 184
 #: rc.cpp:53
 msgid "Auto shutdown"
 msgstr "Tự động thoát"
 
 #. i18n: tag string
-#. i18n: file conf/dlgnetwork.ui line 271
+#. i18n: file conf/dlgnetwork.ui line 191
 #: rc.cpp:56
 msgid "Auto disconnect"
 msgstr "Tự động ngắt kết nối"
@@ -2451,95 +2514,91 @@ msgid "Enable system tray icon"
 msgstr "Bật hoạt ảnh"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 33
+#. i18n: file conf/dlgadvanced.ui line 35
 #: rc.cpp:96
-msgid "Quit when all downloads have been finished"
+msgid "Execute action after all downloads have been finished"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 40
-#: rc.cpp:99
+#. i18n: file conf/dlgadvanced.ui line 53
+#: rc.cpp:102
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "History"
 msgstr "Danh sách truyền KGet"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 46
-#: rc.cpp:102
-msgid "History backend"
-msgstr ""
+#. i18n: file conf/dlgadvanced.ui line 59
+#: rc.cpp:105
+#, fuzzy
+#| msgid "KGet Transfer List"
+msgid "History backend:"
+msgstr "Danh sách truyền KGet"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 63
-#: rc.cpp:105
+#. i18n: file conf/dlgadvanced.ui line 72
+#: rc.cpp:108
 msgid "Integration"
 msgstr "Hợp nhất"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 69
-#: rc.cpp:108
+#. i18n: file conf/dlgadvanced.ui line 78
+#: rc.cpp:111
 msgid "Use as download manager for Konqueror"
 msgstr "Dùng làm bộ quản lý việc tải về cho Konqueror"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 76
-#: rc.cpp:111
+#. i18n: file conf/dlgadvanced.ui line 85
+#: rc.cpp:114
 msgid "Monitor clipboard for files to download"
 msgstr "Theo dõi bảng nháp tìm tập tin cần tải về"
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 92
-#: rc.cpp:114
+#. i18n: file conf/dlgadvanced.ui line 95
+#: rc.cpp:117
 msgid "Enable KDE global progress tracking"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 104
-#: rc.cpp:117
+#. i18n: file conf/dlgadvanced.ui line 107
+#: rc.cpp:120
 msgid "Show every single download "
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgadvanced.ui line 111
-#: rc.cpp:120
+#. i18n: file conf/dlgadvanced.ui line 114
+#: rc.cpp:123
 msgid "Show overall progress"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 28
-#: rc.cpp:123
+#. i18n: file conf/dlgappearance.ui line 19
+#: rc.cpp:126
 #, fuzzy
 #| msgid "Start"
 msgid "Startup"
 msgstr "Chạy"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 34
-#: rc.cpp:126
-msgid "Show main window at startup"
-msgstr "Hiện cửa sổ chính khi khởi chạy"
-
-#. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 41
+#. i18n: file conf/dlgappearance.ui line 25
 #: rc.cpp:129
 msgid "Show splashscreen"
 msgstr "Hiện màn hình chào mừng"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 57
+#. i18n: file conf/dlgappearance.ui line 41
 #: rc.cpp:135
 msgid "Show drop target"
 msgstr "Hiện đích thả"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 64
+#. i18n: file conf/dlgappearance.ui line 48
 #: rc.cpp:138
 msgid "Enable animations"
 msgstr "Bật hoạt ảnh"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 74
+#. i18n: file conf/dlgappearance.ui line 58
 #: rc.cpp:141
 #, fuzzy
 #| msgid "KGet Transfer List"
@@ -2547,19 +2606,19 @@ msgid "Transfer List"
 msgstr "Danh sách truyền KGet"
 
 #. i18n: tag string
-#. i18n: file conf/dlgappearance.ui line 80
+#. i18n: file conf/dlgappearance.ui line 64
 #: rc.cpp:144
 msgid "Expandable transfer details instead of separate tabs"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgwebinterface.ui line 31
+#. i18n: file conf/dlgwebinterface.ui line 19
 #: rc.cpp:147
 msgid "Enable Webinterface"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgwebinterface.ui line 43
+#. i18n: file conf/dlgwebinterface.ui line 31
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 28
 #: rc.cpp:150 rc.cpp:213
@@ -2567,13 +2626,13 @@ msgid "Port:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgwebinterface.ui line 70
+#. i18n: file conf/dlgwebinterface.ui line 45
 #: rc.cpp:153
 msgid "User:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file conf/dlgwebinterface.ui line 84
+#. i18n: file conf/dlgwebinterface.ui line 59
 #: rc.cpp:156
 msgid "Password:"
 msgstr ""
@@ -2599,21 +2658,21 @@ msgid "Minimal segment size:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 62
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 49
 #. i18n: tag string
-#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 91
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 78
 #: rc.cpp:168 rc.cpp:174
 msgid "kBi"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 84
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 71
 #: rc.cpp:171
 msgid "Save data every:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 113
+#. i18n: file transfer-plugins/multisegmentkio/dlgmultisegkio.ui line 100
 #: rc.cpp:177
 msgid "Use search engines"
 msgstr ""
@@ -2669,41 +2728,41 @@ msgid "0"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 51
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 45
 #: rc.cpp:216
 msgid "Upload Limit per Transfer: (0 if no limit)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 58
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 52
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 75
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 69
 #. i18n: tag string
-#. i18n: file ui/transfersettingsdialog.ui line 45
+#. i18n: file ui/transfersettingsdialog.ui line 41
 #. i18n: tag string
-#. i18n: file ui/transfersettingsdialog.ui line 71
+#. i18n: file ui/transfersettingsdialog.ui line 61
 #. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 49
+#. i18n: file ui/groupsettingsdialog.ui line 58
 #. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 75
-#: rc.cpp:219 rc.cpp:225 rc.cpp:389 rc.cpp:395 rc.cpp:439 rc.cpp:445
+#. i18n: file ui/groupsettingsdialog.ui line 84
+#: rc.cpp:219 rc.cpp:225 rc.cpp:389 rc.cpp:395 rc.cpp:442 rc.cpp:448
 msgid "KiB"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 68
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 62
 #: rc.cpp:222
 msgid "Download Limit per Transfer: (0 if no limit)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 85
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 79
 #: rc.cpp:228
 msgid "Maximum Shared Ration: (0 if no limit)"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 120
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 114
 #: rc.cpp:234
 #, fuzzy
 #| msgid "Default Folder"
@@ -2711,7 +2770,7 @@ msgid "Default Torrent-Folder:"
 msgstr "Thư mục mặc định"
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 140
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 134
 #: rc.cpp:237
 #, fuzzy
 #| msgid "Default Folder"
@@ -2719,7 +2778,7 @@ msgid "Default temporary folder"
 msgstr "Thư mục mặc định"
 
 #. i18n: tag string
-#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 157
+#. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 151
 #: rc.cpp:240
 msgid "Preallocate disk-space"
 msgstr ""
@@ -2813,7 +2872,9 @@ msgstr "Truyền:"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 34
-#: rc.cpp:281
+#. i18n: tag string
+#. i18n: file ui/newtransferwidget.ui line 33
+#: rc.cpp:281 rc.cpp:404
 msgid "URL:"
 msgstr ""
 
@@ -2976,7 +3037,7 @@ msgid "Transfer-Settings"
 msgstr "Chi tiết truyền:"
 
 #. i18n: tag string
-#. i18n: file ui/transfersettingsdialog.ui line 29
+#. i18n: file ui/transfersettingsdialog.ui line 31
 #: rc.cpp:386
 #, fuzzy
 #| msgid "Downloads"
@@ -2984,7 +3045,7 @@ msgid "Upload Limit"
 msgstr "Tải về"
 
 #. i18n: tag string
-#. i18n: file ui/transfersettingsdialog.ui line 55
+#. i18n: file ui/transfersettingsdialog.ui line 51
 #: rc.cpp:392
 #, fuzzy
 #| msgid "Downloads"
@@ -2992,32 +3053,34 @@ msgid "Download Limit"
 msgstr "Tải về"
 
 #. i18n: tag string
-#. i18n: file ui/transfersettingsdialog.ui line 81
+#. i18n: file ui/transfersettingsdialog.ui line 71
 #: rc.cpp:398
 msgid "Maximum Share Ratio"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 39
-#: rc.cpp:404
-msgid "Url"
-msgstr ""
-
-#. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 59
-#: rc.cpp:410
+#. i18n: file ui/newtransferwidget.ui line 43
+#: rc.cpp:407
 #, fuzzy
-#| msgid "Transfers:"
-msgid "Transfer Group"
-msgstr "Truyền:"
+#| msgid "Open Destination"
+msgid "Destination:"
+msgstr "Mở đích"
 
 #. i18n: tag string
-#. i18n: file ui/newtransferwidget.ui line 89
-#: rc.cpp:413
+#. i18n: file ui/newtransferwidget.ui line 53
+#: rc.cpp:410
 #, fuzzy
 #| msgid "Default folder:"
 msgid "Set as default folder"
 msgstr "Thư mục mặc định:"
+
+#. i18n: tag string
+#. i18n: file ui/newtransferwidget.ui line 60
+#: rc.cpp:413
+#, fuzzy
+#| msgid "Transfers:"
+msgid "Transfer Group:"
+msgstr "Truyền:"
 
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 164
@@ -3026,7 +3089,7 @@ msgid "Remaining Time:"
 msgstr ""
 
 #. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 26
+#. i18n: file ui/groupsettingsdialog.ui line 19
 #: rc.cpp:433
 #, fuzzy
 #| msgid "&Settings"
@@ -3034,28 +3097,28 @@ msgid "Group-Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 33
+#. i18n: file ui/groupsettingsdialog.ui line 28
 #: rc.cpp:436
+#, fuzzy
+#| msgid "Default Folder"
+msgid "Default folder:"
+msgstr "Thư mục mặc định"
+
+#. i18n: tag string
+#. i18n: file ui/groupsettingsdialog.ui line 42
+#: rc.cpp:439
 #, fuzzy
 #| msgid "Default Download Folders"
 msgid "Maximum download speed"
 msgstr "Thư mục tải về mặc định"
 
 #. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 59
-#: rc.cpp:442
+#. i18n: file ui/groupsettingsdialog.ui line 68
+#: rc.cpp:445
 #, fuzzy
 #| msgid "Default Download Folders"
 msgid "Maximum upload speed"
 msgstr "Thư mục tải về mặc định"
-
-#. i18n: tag string
-#. i18n: file ui/groupsettingsdialog.ui line 85
-#: rc.cpp:448
-#, fuzzy
-#| msgid "Default Folder"
-msgid "Default folder:"
-msgstr "Thư mục mặc định"
 
 #. i18n: tag string
 #. i18n: file ui/history/transferhistory.ui line 26
@@ -3122,25 +3185,25 @@ msgid "&File"
 msgstr "&Tập tin"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 15
+#. i18n: file ui/kgetui.rc line 16
 #: rc.cpp:481
 msgid "&Downloads"
 msgstr "Tải &về"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 25
+#. i18n: file ui/kgetui.rc line 26
 #: rc.cpp:484
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 37
+#. i18n: file ui/kgetui.rc line 38
 #: rc.cpp:487
 msgid "&Help"
 msgstr "Trợ g&iúp"
 
 #. i18n: tag text
-#. i18n: file ui/kgetui.rc line 40
+#. i18n: file ui/kgetui.rc line 41
 #: rc.cpp:490
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
@@ -3150,6 +3213,15 @@ msgstr "Thanh công cụ chính"
 #: rc.cpp:493
 msgid "&Tools"
 msgstr ""
+
+#~ msgid "Not Deleted"
+#~ msgstr "Chưa xóa"
+
+#~ msgid "Konqueror Integration disabled"
+#~ msgstr "Khả năng hợp nhất với Konqueror bị tắt"
+
+#~ msgid "Show main window at startup"
+#~ msgstr "Hiện cửa sổ chính khi khởi chạy"
 
 #~ msgid "<done> MiB of <todo> MiB"
 #~ msgstr "<done> MiB trên <todo> MiB"

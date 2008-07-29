@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-22 05:32+0200\n"
+"POT-Creation-Date: 2008-07-29 08:35+0200\n"
 "PO-Revision-Date: 2007-07-08 22:14+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -180,6 +180,26 @@ msgstr "Kiểu vật chứa"
 #: DB/Category.cpp:144
 msgid "Keywords"
 msgstr "Từ khoá"
+
+#: Exif/Database.cpp:79
+#, kde-format
+msgid ""
+"<p>There was an error while executing the SQL backend command. The error is "
+"likely due to a broken database file.</p><p>To fix this problem run "
+"Maintainance->Rebuild EXIF database.</p><hr/><p>For debugging, this is the "
+"command I tried to execute:<br/>%1</p><p>This was the error message I got:"
+"<br/>%2</p>"
+msgstr ""
+
+#: Exif/Database.cpp:87
+msgid "Error Executing Exif Command"
+msgstr ""
+
+#: Exif/Database.cpp:301
+#, fuzzy
+#| msgid "Loading information from images"
+msgid "Rereading EXIF information from all images"
+msgstr "Đang tải thông tin từ ảnh"
 
 #: Exif/SearchDialog.cpp:42
 msgid "EXIF Search"
@@ -693,11 +713,11 @@ msgstr ""
 msgid "Other: "
 msgstr "Khác: "
 
-#: Survey/MySurvey.cpp:34 MainWindow/FeatureDialog.cpp:190
+#: Survey/MySurvey.cpp:34 MainWindow/FeatureDialog.cpp:191
 msgid "Yes"
 msgstr "Có"
 
-#: Survey/MySurvey.cpp:34 MainWindow/FeatureDialog.cpp:191
+#: Survey/MySurvey.cpp:34 MainWindow/FeatureDialog.cpp:192
 msgid "No"
 msgstr "Không"
 
@@ -919,7 +939,7 @@ msgid "What"
 msgstr "Kiểu"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 71
+#. i18n: file kphotoalbumui.rc line 72
 #: Browser/BrowserWidget.cpp:63 rc.cpp:21
 msgid "Images"
 msgstr "Ảnh"
@@ -2134,7 +2154,7 @@ msgstr ""
 "<a href=\"mailto:blackie@kde.org\">blackie@kde.org</a>.</p>\n"
 
 #: Settings/SettingsDialog.cpp:98 Settings/SettingsDialog.cpp:99
-#: MainWindow/Window.cpp:1064
+#: MainWindow/Window.cpp:1067
 msgid "General"
 msgstr "Chung"
 
@@ -2479,7 +2499,7 @@ msgstr "Cỡ mẫu ảnh : "
 msgid "Preferred view:"
 msgstr "Ô xem ưa thích:"
 
-#: Settings/SettingsDialog.cpp:419 MainWindow/Window.cpp:718
+#: Settings/SettingsDialog.cpp:419 MainWindow/Window.cpp:721
 msgid "List View"
 msgstr "Xem danh sách"
 
@@ -2487,7 +2507,7 @@ msgstr "Xem danh sách"
 msgid "List View with Custom Thumbnails"
 msgstr "Xem danh sách có mẫu ảnh riêng"
 
-#: Settings/SettingsDialog.cpp:419 MainWindow/Window.cpp:728
+#: Settings/SettingsDialog.cpp:419 MainWindow/Window.cpp:731
 msgid "Icon View"
 msgstr "Xem biểu tượng"
 
@@ -2567,7 +2587,7 @@ msgid "&Delete"
 msgstr "&Xoá"
 
 #: Settings/SettingsDialog.cpp:937 Settings/SettingsDialog.cpp:938
-#: MainWindow/Window.cpp:1065
+#: MainWindow/Window.cpp:1068
 msgid "Viewer"
 msgstr "Bộ xem"
 
@@ -2651,7 +2671,7 @@ msgstr ""
 "nhanh hơn còn ít mịn hơn.</p>"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 61
+#. i18n: file kphotoalbumui.rc line 62
 #: Settings/SettingsDialog.cpp:1007 Settings/SettingsDialog.cpp:1008 rc.cpp:12
 msgid "Plugins"
 msgstr "Bổ sung"
@@ -3149,31 +3169,31 @@ msgid "&Maintenance"
 msgstr "&Bảo trì"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 63
+#. i18n: file kphotoalbumui.rc line 64
 #: rc.cpp:15
 msgid "Export"
 msgstr "Xuất"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 67
+#. i18n: file kphotoalbumui.rc line 68
 #: rc.cpp:18
 msgid "Import"
 msgstr "Nhập"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 75
+#. i18n: file kphotoalbumui.rc line 76
 #: rc.cpp:24
 msgid "Batch Plugins"
 msgstr "Bổ sung bó"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 79
+#. i18n: file kphotoalbumui.rc line 80
 #: rc.cpp:27
 msgid "Tools"
 msgstr "Công cụ"
 
 #. i18n: tag text
-#. i18n: file kphotoalbumui.rc line 96
+#. i18n: file kphotoalbumui.rc line 97
 #: rc.cpp:30
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
@@ -3214,15 +3234,19 @@ msgid "Feature Status"
 msgstr "Trạng thái tính năng"
 
 #: MainWindow/FeatureDialog.cpp:44
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<h1>Overview</h1><p>Below you may see the list of compile- and runtime "
+#| "features KPhotoAlbum has, and their status:</p>%1"
 msgid ""
 "<h1>Overview</h1><p>Below you may see the list of compile- and runtime "
-"features KPhotoAlbum has, and their status:</p>%1"
+"features KPhotoAlbum has, and their status:</p><p><font color=\"red\">NOTICE "
+"THIS DIALOG DOES CURRENTLY NOT WORK</font></p>%1"
 msgstr ""
 "<h1>Toàn cảnh</h1><p>Bên dưới có danh sách các tính năng KPhotoAlbum chạy "
 "vào lúc biên dịch và chạy, và trạng thái của chúng:</p>%1"
 
-#: MainWindow/FeatureDialog.cpp:47
+#: MainWindow/FeatureDialog.cpp:48
 msgid ""
 "<h1>What can I do if I miss a feature?</h1><p>If you compiled KPhotoAlbum "
 "yourself, then please review the sections below to learn what to install to "
@@ -3256,7 +3280,7 @@ msgstr ""
 "gói phát triển: trong phần lớn bản phân phối, những gói này có tên như "
 "<b>kdelibs<i>-devel</i></b>.</p>"
 
-#: MainWindow/FeatureDialog.cpp:63
+#: MainWindow/FeatureDialog.cpp:64
 msgid ""
 "<h1><a name=\"kipi\">Plug-ins Support</a></h1><p>KPhotoAlbum has a plug-in "
 "system with lots of extensions. You may among other things find plug-ins for:"
@@ -3273,7 +3297,7 @@ msgstr ""
 "\">flickr</a></ul></p><p>Thư viện bổ sung có tên KIPI, và có thể được tải "
 "xuống <a href=\"http://extragear.kde.org/apps/kipi/\">trang chủ KIPI</a>.</p>"
 
-#: MainWindow/FeatureDialog.cpp:75
+#: MainWindow/FeatureDialog.cpp:76
 msgid ""
 "<h1><a name=\"exiv2\">EXIF support</a></h1><p>Images store information like "
 "the date the image was shot, the shooting angle, focal length, and shutter-"
@@ -3286,7 +3310,7 @@ msgstr ""
 "p><p>KPhotoAlbum dùng <a href=\"http://freshmeat.net/projects/exiv2/\">thư "
 "viện EXIV2</a> để đọc thông tin EXIF của ảnh.</p>"
 
-#: MainWindow/FeatureDialog.cpp:83
+#: MainWindow/FeatureDialog.cpp:84
 msgid ""
 "<h1><a name=\"database\">SQL Database Support</a></h1><p>KPhotoAlbum allows "
 "you to search using a certain number of EXIF tags. For this KPhotoAlbum "
@@ -3301,7 +3325,7 @@ msgstr ""
 "cần thiết bạn chạy phần mềm Sqlite phiên bản 2.8.16, vì vậy hãy kiểm tra xem "
 "phiên bản này được cài đặt vào hệ thống của bạn.</p>"
 
-#: MainWindow/FeatureDialog.cpp:89
+#: MainWindow/FeatureDialog.cpp:90
 msgid ""
 "<h1><a name=\"video\">Video Support</a></h1><p>KPhotoAlbum relies on the KDE "
 "plug-in subsystem for support for displaying videos. If this feature is not "
@@ -3315,7 +3339,7 @@ msgstr ""
 "php?page=KPhotoAlbum+Video+Support\">bài wiki KPhotoAlbum về sự hỗ trợ ảnh "
 "động</a>.</p>"
 
-#: MainWindow/FeatureDialog.cpp:94
+#: MainWindow/FeatureDialog.cpp:95
 msgid ""
 "<h1><a name=\"thumbnails\">Video Thumbnails Support</a></h1><p>KPhotoAlbum "
 "asks the KDE plug-in system for help when it needs to generate a thumbnail "
@@ -3333,44 +3357,64 @@ msgstr ""
 "giành được khả năng hỗ trợ ngay cả tốt hơn, hãy xài thử <a href=\"http://www."
 "kde-apps.org/content/show.php?content=41180\">MPlayerThumbs</a>.</p>"
 
-#: MainWindow/FeatureDialog.cpp:174
-msgid "Plug-ins available"
+#: MainWindow/FeatureDialog.cpp:175
+#, fuzzy
+#| msgid "Plug-ins available"
+msgid "Plug-ins available *TODO*"
 msgstr "Bổ sung có sẵn"
 
-#: MainWindow/FeatureDialog.cpp:175
-msgid "EXIF info supported"
+#: MainWindow/FeatureDialog.cpp:176
+#, fuzzy
+#| msgid "EXIF info supported"
+msgid "EXIF info supported *TODO*"
 msgstr "Thông tin EXIF đã hỗ trợ"
 
-#: MainWindow/FeatureDialog.cpp:176
-msgid "SQL Database Support"
+#: MainWindow/FeatureDialog.cpp:177
+#, fuzzy
+#| msgid "SQL Database Support"
+msgid "SQL Database Support *TODO*"
 msgstr "Hỗ trợ co sở dữ liệu SQL"
 
-#: MainWindow/FeatureDialog.cpp:177
-msgid "Sqlite Database Support (used for EXIF searches)"
+#: MainWindow/FeatureDialog.cpp:178
+#, fuzzy
+#| msgid "Sqlite Database Support (used for EXIF searches)"
+msgid "Sqlite Database Support (used for EXIF searches) *TODO*"
 msgstr "Hỗ trợ co sở dữ liệu Sqlite (dùng để tìm EXIF)"
 
-#: MainWindow/FeatureDialog.cpp:179
-msgid "MPEG video support"
+#: MainWindow/FeatureDialog.cpp:180
+#, fuzzy
+#| msgid "MPEG video support"
+msgid "MPEG video support *TODO*"
 msgstr "Hỗ trợ ảnh động MPEG"
 
-#: MainWindow/FeatureDialog.cpp:180
-msgid "Quicktime video support (aka mov)"
+#: MainWindow/FeatureDialog.cpp:181
+#, fuzzy
+#| msgid "Quicktime video support (aka mov)"
+msgid "Quicktime video support (aka mov) *TODO*"
 msgstr "Hỗ trợ ảnh động Quicktime (cũng tên « mov »)"
 
-#: MainWindow/FeatureDialog.cpp:181
-msgid "AVI video support"
+#: MainWindow/FeatureDialog.cpp:182
+#, fuzzy
+#| msgid "AVI video support"
+msgid "AVI video support *TODO*"
 msgstr "Hỗ trợ ảnh động AVI"
 
-#: MainWindow/FeatureDialog.cpp:182
-msgid "ASF video support (aka wmv)"
+#: MainWindow/FeatureDialog.cpp:183
+#, fuzzy
+#| msgid "ASF video support (aka wmv)"
+msgid "ASF video support (aka wmv) *TODO*"
 msgstr "Hỗ trợ ảnh động ASF (cũng tên « wmv »)"
 
-#: MainWindow/FeatureDialog.cpp:183
-msgid "Real Media"
+#: MainWindow/FeatureDialog.cpp:184
+#, fuzzy
+#| msgid "Real Media"
+msgid "Real Media *TODO*"
 msgstr "Vật chứa thật"
 
-#: MainWindow/FeatureDialog.cpp:186
-msgid "Video Thumbnails support"
+#: MainWindow/FeatureDialog.cpp:187
+#, fuzzy
+#| msgid "Video Thumbnails support"
+msgid "Video Thumbnails support *TODO*"
 msgstr "Hỗ trợ mẫu ảnh ảnh động"
 
 #: MainWindow/DeleteDialog.cpp:37
@@ -3682,11 +3726,11 @@ msgstr "Bạn có muốn lưu các thay đổi không?"
 msgid "Save Changes?"
 msgstr "Lưu thay đổi ?"
 
-#: MainWindow/Window.cpp:332 MainWindow/Window.cpp:1107
+#: MainWindow/Window.cpp:332 MainWindow/Window.cpp:1110
 msgid "No item is selected."
 msgstr "Chưa chọn mục nào."
 
-#: MainWindow/Window.cpp:332 MainWindow/Window.cpp:1107
+#: MainWindow/Window.cpp:332 MainWindow/Window.cpp:1110
 msgid "No Selection"
 msgstr "Chưa chọn gì"
 
@@ -3809,76 +3853,82 @@ msgid "Rescan for Images and Videos"
 msgstr "Quết lại tìm ảnh (động)"
 
 #: MainWindow/Window.cpp:683
+#, fuzzy
+#| msgid "Update EXIF search database"
+msgid "Recreate Exif Search Database"
+msgstr "Cập nhật co sở dữ liệu tìm EXIF"
+
+#: MainWindow/Window.cpp:686
 msgid "Read EXIF Info From Files..."
 msgstr "Đọc thông tin EXIF từ tập tin..."
 
-#: MainWindow/Window.cpp:688
+#: MainWindow/Window.cpp:691
 msgid "Convert Backend...(Experimental!)"
 msgstr "Chuyển đổi hậu phương... (thử nghiệm !)"
 
-#: MainWindow/Window.cpp:693
+#: MainWindow/Window.cpp:696
 msgid "Build Thumbnails"
 msgstr "Xây dựng mẫu ảnh"
 
-#: MainWindow/Window.cpp:696
+#: MainWindow/Window.cpp:699
 msgid "Statistics"
 msgstr ""
 
-#: MainWindow/Window.cpp:705
+#: MainWindow/Window.cpp:708
 msgid "Enable All Messages"
 msgstr "Bật mọi thông điệp"
 
-#: MainWindow/Window.cpp:708
+#: MainWindow/Window.cpp:711
 msgid "Configure View"
 msgstr "Cấu hình ô xem"
 
-#: MainWindow/Window.cpp:723
+#: MainWindow/Window.cpp:726
 msgid "List View with Custom Icons"
 msgstr "Xem danh sách có biểu tượng riêng"
 
-#: MainWindow/Window.cpp:733
+#: MainWindow/Window.cpp:736
 msgid "Icon View with Custom Icons"
 msgstr "Xem biểu tượng có biểu tượng riêng"
 
-#: MainWindow/Window.cpp:743
+#: MainWindow/Window.cpp:746
 msgid "Show Tooltips in Thumbnails Window"
 msgstr "Hiện mẹo công cụ trong cửa sổ mẫu ảnh"
 
-#: MainWindow/Window.cpp:749
+#: MainWindow/Window.cpp:752
 msgid "Run KPhotoAlbum Demo"
 msgstr "Chạy chứng minh KPhotoAlbum"
 
-#: MainWindow/Window.cpp:752
+#: MainWindow/Window.cpp:755
 msgid "Answer KPhotoAlbum Survey..."
 msgstr "Điền vào khảo sát KPhotoAlbum..."
 
-#: MainWindow/Window.cpp:755
+#: MainWindow/Window.cpp:758
 msgid "KPhotoAlbum Feature Status"
 msgstr "Trạng thái tính năng KPhotoAlbum"
 
-#: MainWindow/Window.cpp:758
+#: MainWindow/Window.cpp:761
 #, fuzzy
 #| msgid "Show Videos"
 msgid "Show Demo Videos"
 msgstr "Hiện ảnh động"
 
-#: MainWindow/Window.cpp:763
+#: MainWindow/Window.cpp:766
 msgid "Show Exif Info"
 msgstr "Hiện thông tin EXIF"
 
-#: MainWindow/Window.cpp:766
+#: MainWindow/Window.cpp:769
 msgid "Recreate Selected Thumbnails"
 msgstr "Tạo ra các mẫu ảnh đã chọn"
 
-#: MainWindow/Window.cpp:794
+#: MainWindow/Window.cpp:797
 msgid "Auto saving...."
 msgstr "Đang tự động lưu..."
 
-#: MainWindow/Window.cpp:796
+#: MainWindow/Window.cpp:799
 msgid "Auto saving.... Done"
 msgstr "Đang tự động lưu... xong."
 
-#: MainWindow/Window.cpp:907
+#: MainWindow/Window.cpp:910
 #, kde-format
 msgid ""
 "SQL backend initialization failed, because following error occurred:\n"
@@ -3887,20 +3937,20 @@ msgstr ""
 "Việc khởi tạo hậu phương SQL bị lỗi, do lỗi này:\n"
 "%1"
 
-#: MainWindow/Window.cpp:911
+#: MainWindow/Window.cpp:914
 msgid "SQL database support is not compiled in."
 msgstr "Chưa biên dịch khả năng hỗ trợ co sở dữ liệu SQL vào phần mềm này."
 
-#: MainWindow/Window.cpp:916
+#: MainWindow/Window.cpp:919
 #, kde-format
 msgid "Invalid database backend: %1"
 msgstr "Hậu phương co sở dữ liệu không hợp lệ: %1"
 
-#: MainWindow/Window.cpp:921
+#: MainWindow/Window.cpp:924
 msgid "Do you want to use XML backend instead?"
 msgstr "Bạn có muốn sử dụng hậu phương XML thay thế không?"
 
-#: MainWindow/Window.cpp:983
+#: MainWindow/Window.cpp:986
 msgid ""
 "<p>The password protection is only a means of allowing your little sister to "
 "look in your images, without getting to those embarrassing images from your "
@@ -3911,31 +3961,31 @@ msgstr ""
 "nguyện cờ xem ảnh của bạn.</p><p>Tức là ai truy cập tập tin XML chỉ mục có "
 "thể đi vòng mật khẩu này.</b></p>"
 
-#: MainWindow/Window.cpp:988
+#: MainWindow/Window.cpp:991
 msgid "Password Protection"
 msgstr "Bảo vệ bằng mật khẩu"
 
-#: MainWindow/Window.cpp:1002
+#: MainWindow/Window.cpp:1005
 msgid "Type in Password to Unlock"
 msgstr "Gõ vào mật khẩu để bỏ khoá"
 
-#: MainWindow/Window.cpp:1011 MainWindow/Window.cpp:1051
+#: MainWindow/Window.cpp:1014 MainWindow/Window.cpp:1054
 msgid "Invalid password."
 msgstr "Mật khẩu không hợp lệ."
 
-#: MainWindow/Window.cpp:1042
+#: MainWindow/Window.cpp:1045
 msgid "Type in Old Password"
 msgstr "Gõ vào mật khẩu cũ"
 
-#: MainWindow/Window.cpp:1054
+#: MainWindow/Window.cpp:1057
 msgid "Type in New Password"
 msgstr "Gõ vào mật khẩu mới"
 
-#: MainWindow/Window.cpp:1078
+#: MainWindow/Window.cpp:1081
 msgid "Annotation Dialog"
 msgstr "Hộp thoại chú giải"
 
-#: MainWindow/Window.cpp:1230
+#: MainWindow/Window.cpp:1233
 msgid ""
 "<p>Really enable all messageboxes where you previously checked the do-not-"
 "show-again check box?</p>"
@@ -3943,32 +3993,32 @@ msgstr ""
 "<p>Thực sự hiệu lực mọi hộp thông điệp khi bạn đã đánh dấu trong hộp ở cạnh « "
 "Đừng hiện lần nữa » không?</p>"
 
-#: MainWindow/Window.cpp:1392
+#: MainWindow/Window.cpp:1395
 msgid "Open List of Files"
 msgstr ""
 
-#: MainWindow/Window.cpp:1392
+#: MainWindow/Window.cpp:1395
 #, fuzzy
 #| msgid "Enter new name:"
 msgid "Enter file names"
 msgstr "Gõ tên mới:"
 
-#: MainWindow/Window.cpp:1405
+#: MainWindow/Window.cpp:1408
 msgid "No images matching your input were found."
 msgstr ""
 
-#: MainWindow/Window.cpp:1405
+#: MainWindow/Window.cpp:1408
 #, fuzzy
 #| msgid "No other"
 msgid "No Matches"
 msgstr "Không có gì khác"
 
-#: MainWindow/Window.cpp:1486
+#: MainWindow/Window.cpp:1489
 msgid "Database conversion from SQL database is not yet supported."
 msgstr ""
 "Chưa hỗ trợ khả năng chuyển đổi co sở dữ liệu từ co sở dữ liệu kiểu SQL."
 
-#: MainWindow/Window.cpp:1493
+#: MainWindow/Window.cpp:1496
 msgid ""
 "You should set SQL database settings before the conversion. Do you want to "
 "do this now?"
@@ -3976,23 +4026,23 @@ msgstr ""
 "Bạn nên thiết lập co sở dữ liệu SQL trước khi chuyển đổi. Bạn có muốn làm "
 "như thế ngay bây giờ không?"
 
-#: MainWindow/Window.cpp:1513
+#: MainWindow/Window.cpp:1516
 msgid "Converting database"
 msgstr "Đang chuyển đổi co sở dữ liệu"
 
-#: MainWindow/Window.cpp:1516
+#: MainWindow/Window.cpp:1519
 msgid "Converting database to SQL."
 msgstr "Đang chuyển đổi co sở dữ liệu sang SQL..."
 
-#: MainWindow/Window.cpp:1517
+#: MainWindow/Window.cpp:1520
 msgid "Please wait."
 msgstr "Hãy đợi."
 
-#: MainWindow/Window.cpp:1526
+#: MainWindow/Window.cpp:1529
 msgid "Database conversion is ready."
 msgstr "Việc chuyển đổi co sở dữ liệu sẵn sàng."
 
-#: MainWindow/Window.cpp:1529
+#: MainWindow/Window.cpp:1532
 #, kde-format
 msgid ""
 "Database conversion failed, because following error occurred:\n"

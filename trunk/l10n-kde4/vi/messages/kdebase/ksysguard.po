@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-03 08:18+0200\n"
+"POT-Creation-Date: 2008-08-04 08:27+0200\n"
 "PO-Revision-Date: 2007-06-23 22:55+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,12 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
 
-#: WorkSheet.cc:93 KSysGuardApplet.cc:306
+#: WorkSheet.cc:93
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Không thể mở tập tin %1."
 
-#: WorkSheet.cc:101 KSysGuardApplet.cc:315
+#: WorkSheet.cc:101
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "Tập tin %1 không chứa mã XML hợp lệ."
@@ -40,7 +40,7 @@ msgstr ""
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
 
-#: WorkSheet.cc:234 KSysGuardApplet.cc:459
+#: WorkSheet.cc:234
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Không thể lưu tập tin %1"
@@ -49,7 +49,7 @@ msgstr "Không thể lưu tập tin %1"
 msgid "The clipboard does not contain a valid display description."
 msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
 
-#: WorkSheet.cc:331 KSysGuardApplet.cc:200
+#: WorkSheet.cc:331
 msgid "Select Display Type"
 msgstr "Chọn kiểu bộ trình bày"
 
@@ -69,17 +69,16 @@ msgstr "Đồ thị th&anh"
 msgid "Log to a &file"
 msgstr "&Ghi lưu vào tập tin"
 
-#: WorkSheet.cc:505 KSysGuardApplet.cc:241
+#: WorkSheet.cc:505
 msgid "Do you really want to delete the display?"
 msgstr "Bạn thực sự muốn xoá bộ trình bày không?"
 
-#: WorkSheet.cc:506 KSysGuardApplet.cc:241
+#: WorkSheet.cc:506
 msgid "Delete Display"
 msgstr "Xoá bộ trình bày"
 
 #: WorkSheet.cc:525 WorkSheet.cc:528 WorkSheet.cc:530 WorkSheet.cc:532
-#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540 KSysGuardApplet.cc:377
-#: KSysGuardApplet.cc:379 KSysGuardApplet.cc:381
+#: WorkSheet.cc:534 WorkSheet.cc:536 WorkSheet.cc:540
 msgid "Dummy"
 msgstr "Giả"
 
@@ -638,51 +637,60 @@ msgstr ""
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
 
-#: Workspace.cc:46
+#: Workspace.cc:47
+#, fuzzy
+#| msgid ""
+#| "This is your work space. It holds your worksheets. You need to create a "
+#| "new worksheet (Menu File->New) before you can drag sensors here."
 msgid ""
-"This is your work space. It holds your worksheets. You need to create a new "
-"worksheet (Menu File->New) before you can drag sensors here."
+"This is your work space. It holds your tabs. You need to create a new tab "
+"(Menu File->New) before you can drag sensors here."
 msgstr ""
 "Đây là vùng làm việc của bạn. Nó chứa các bảng làm việc của bạn. Bạn cần "
 "phải tạo một bảng làm việc mới (trình đơn Tập tin → Mới) trước khi bạn có "
 "thể kéo bộ nhạy vào đây."
 
-#: Workspace.cc:106
+#: Workspace.cc:107
 #, kde-format
 msgid "Sheet %1"
 msgstr "Tờ %1"
 
-#: Workspace.cc:161
-#, kde-format
+#: Workspace.cc:162
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
 msgid ""
-"The worksheet '%1' contains unsaved data.\n"
-"Do you want to save the worksheet?"
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
 msgstr ""
 "Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
 "Bạn có muốn lưu tờ này không?"
 
-#: Workspace.cc:176
+#: Workspace.cc:177
 #, fuzzy
 #| msgid "*.sgrd|Sensor Files"
 msgid "*.sgrd|Sensor Files (*.sgrd)"
 msgstr "*.sgrd|Tập tin bộ nhạy"
 
-#: Workspace.cc:176
-#, fuzzy
-#| msgid "Select Worksheet to Import"
-msgid "Select Worksheet to Open"
-msgstr "Chọn bảng làm việc cần nhập khẩu"
+#: Workspace.cc:177
+msgid "Select Tab file to Import"
+msgstr ""
 
-#: Workspace.cc:204 Workspace.cc:225
-msgid "You do not have a worksheet that could be saved."
+#: Workspace.cc:205 Workspace.cc:226
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
 msgstr "Bạn không có bảng làm việc có thể lưu."
 
-#: Workspace.cc:232
-msgid "Export Work Sheet"
-msgstr "Xuất bảng làm việc"
+#: Workspace.cc:233
+msgid "Export Tab"
+msgstr ""
 
-#: Workspace.cc:250
-msgid "There are no worksheets that could be deleted."
+#: Workspace.cc:251
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
 msgstr "Không có bảng làm việc có thể xoá bỏ."
 
 #: KSGAppletSettings.cc:34
@@ -1340,8 +1348,10 @@ msgid "Network History"
 msgstr "Mạng"
 
 #: WorkSheetSettings.cc:40
-msgid "Worksheet Properties"
-msgstr "Tài sản bảng làm việc"
+#, fuzzy
+#| msgid "Properties"
+msgid "Tab Properties"
+msgstr "Thuộc tính"
 
 #: WorkSheetSettings.cc:62
 msgid "Properties"
@@ -1366,39 +1376,6 @@ msgstr "Hãy nhập số cột cho tờ này."
 #: WorkSheetSettings.cc:102
 msgid "Enter the title of the worksheet here."
 msgstr "Hãy nhập vào đây tựa của bảng làm việc."
-
-#: KSysGuardApplet.cc:201
-msgid "&Signal Plotter"
-msgstr "Bộ vẽ &tín hiệu"
-
-#: KSysGuardApplet.cc:202
-msgid "&Multimeter"
-msgstr "Bộ &đa đo"
-
-#: KSysGuardApplet.cc:203
-msgid "&Dancing Bars"
-msgstr "Thanh &múa"
-
-#: KSysGuardApplet.cc:223 KSysGuardApplet.cc:383
-msgid ""
-"The KSysGuard applet does not support displaying of this type of sensor. "
-"Please choose another sensor."
-msgstr ""
-"Tiểu dụng KSysGuard không hỗ trợ hiển thị kiểu bộ nhạy này. Vui lòng chọn bộ "
-"nhạy khác."
-
-#: KSysGuardApplet.cc:322
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid applet definition, which must have a "
-"document type 'KSysGuardApplet'."
-msgstr ""
-"Tập tin %1 không chứa lời định nghĩa tiểu dụng hợp lệ, mà phải có kiểu tài "
-"liệu « KSysGuardApplet »."
-
-#: KSysGuardApplet.cc:478
-msgid "Drag sensors from the KDE System Guard into this cell."
-msgstr "Hãy kéo bộ nhạy từ Bộ Bảo vệ Hệ thống vào ô này."
 
 #: SensorBrowser.cc:116
 msgid "Sensor Browser"
@@ -1425,125 +1402,127 @@ msgstr ""
 "hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
 "bộ trình bày, để thêm bộ nhạy nữa."
 
-#: ksysguard.cc:74
+#: ksysguard.cc:73
 msgid "KDE System Monitor"
 msgstr "Bộ Theo dõi Hệ thống KDE"
 
-#: ksysguard.cc:151 ksysguard.cc:542
+#: ksysguard.cc:150 ksysguard.cc:541
 msgid "System Monitor"
 msgstr "Bộ Theo dõi Hệ thống"
 
+#: ksysguard.cc:151
+msgid "&New Tab..."
+msgstr ""
+
 #: ksysguard.cc:152
-msgid "&New Worksheet..."
-msgstr "Tờ làm &việc mới..."
+msgid "Import Tab Fr&om File..."
+msgstr ""
 
 #: ksysguard.cc:153
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "Open Worksheet..."
-msgstr "Tờ làm &việc mới..."
+msgid "Save Tab &As..."
+msgstr ""
 
 #: ksysguard.cc:154
-msgid "&Export Worksheet..."
-msgstr "&Xuất bảng làm việc..."
+msgid "&Close Tab"
+msgstr ""
 
 #: ksysguard.cc:155
-msgid "&Remove Worksheet"
-msgstr "Gỡ &bỏ bảng làm việc"
+#, fuzzy
+#| msgid "Monitor remote machine..."
+msgid "Monitor &Remote Machine..."
+msgstr "Theo dõi máy từ xa..."
 
 #: ksysguard.cc:156
-msgid "Monitor remote machine..."
-msgstr "Theo dõi máy từ xa..."
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Download New Tabs..."
+msgstr "Tờ làm &việc mới..."
 
 #: ksysguard.cc:157
 #, fuzzy
-#| msgid "&New Worksheet..."
-msgid "Download new worksheets..."
-msgstr "Tờ làm &việc mới..."
+#| msgid "&Properties"
+msgid "Tab &Properties"
+msgstr "Tài &sản"
 
-#: ksysguard.cc:158
-msgid "&Worksheet Properties"
-msgstr "Tài &sản bảng làm việc"
-
-#: ksysguard.cc:450
+#: ksysguard.cc:449
 #, kde-format
 msgid " %1 processes "
 msgstr "%1 tiến trình"
 
-#: ksysguard.cc:456
+#: ksysguard.cc:455
 #, kde-format
 msgid " CPU: %1% "
 msgstr " CPU: %1% "
 
-#: ksysguard.cc:470
+#: ksysguard.cc:469
 #, kde-format
 msgid " Memory: %1 / %2 "
 msgstr " Bộ nhớ : %1 / %2 "
 
-#: ksysguard.cc:497
+#: ksysguard.cc:496
 msgid " No swap space available "
 msgstr " Không có vùng trao đổi sẵn sàng "
 
-#: ksysguard.cc:499
+#: ksysguard.cc:498
 #, kde-format
 msgid " Swap: %1 / %2 "
 msgstr " Trao đổi: %1 / %2 "
 
-#: ksysguard.cc:544
+#: ksysguard.cc:543
 #, fuzzy
 #| msgid "(c) 1996-2006 The KDE System Monitor Developers"
 msgid "(c) 1996-2008 The KDE System Monitor Developers"
 msgstr "© năm 1996-2006 của Những Nhà Phát triển Bộ Theo dõi Hệ thống"
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "John Tapsell"
 msgstr ""
 
-#: ksysguard.cc:545
+#: ksysguard.cc:544
 msgid "Current Maintainer"
 msgstr ""
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Chris Schlaeger"
 msgstr ""
 
-#: ksysguard.cc:546
+#: ksysguard.cc:545
 msgid "Previous Maintainer"
 msgstr ""
 
-#: ksysguard.cc:547
+#: ksysguard.cc:546
 msgid "Greg Martyn"
 msgstr ""
 
-#: ksysguard.cc:548
+#: ksysguard.cc:547
 msgid "Tobias Koenig"
 msgstr ""
 
-#: ksysguard.cc:549
+#: ksysguard.cc:548
 msgid "Nicolas Leclercq"
 msgstr ""
 
-#: ksysguard.cc:550
+#: ksysguard.cc:549
 msgid "Alex Sanda"
 msgstr ""
 
-#: ksysguard.cc:551
+#: ksysguard.cc:550
 msgid "Bernd Johannes Wuebben"
 msgstr ""
 
-#: ksysguard.cc:552
+#: ksysguard.cc:551
 msgid "Ralf Mueller"
 msgstr ""
 
-#: ksysguard.cc:553
+#: ksysguard.cc:552
 msgid "Hamish Rodda"
 msgstr ""
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid "Torsten Kasch"
 msgstr ""
 
-#: ksysguard.cc:554
+#: ksysguard.cc:553
 msgid ""
 "Solaris Support\n"
 "Parts derived (by permission) from the sunos5\n"
@@ -1553,9 +1532,63 @@ msgstr ""
 "Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
 "của tiện ích « top » của William LeFebvre."
 
-#: ksysguard.cc:563
+#: ksysguard.cc:562
 msgid "Optional worksheet files to load"
 msgstr "Tập tin bảng làm việc tùy chọn cần tải"
+
+#, fuzzy
+#~| msgid "Select Worksheet to Import"
+#~ msgid "Select Worksheet to Open"
+#~ msgstr "Chọn bảng làm việc cần nhập khẩu"
+
+#~ msgid "Export Work Sheet"
+#~ msgstr "Xuất bảng làm việc"
+
+#~ msgid "Worksheet Properties"
+#~ msgstr "Tài sản bảng làm việc"
+
+#~ msgid "&Signal Plotter"
+#~ msgstr "Bộ vẽ &tín hiệu"
+
+#~ msgid "&Multimeter"
+#~ msgstr "Bộ &đa đo"
+
+#~ msgid "&Dancing Bars"
+#~ msgstr "Thanh &múa"
+
+#~ msgid ""
+#~ "The KSysGuard applet does not support displaying of this type of sensor. "
+#~ "Please choose another sensor."
+#~ msgstr ""
+#~ "Tiểu dụng KSysGuard không hỗ trợ hiển thị kiểu bộ nhạy này. Vui lòng chọn "
+#~ "bộ nhạy khác."
+
+#~ msgid ""
+#~ "The file %1 does not contain a valid applet definition, which must have a "
+#~ "document type 'KSysGuardApplet'."
+#~ msgstr ""
+#~ "Tập tin %1 không chứa lời định nghĩa tiểu dụng hợp lệ, mà phải có kiểu "
+#~ "tài liệu « KSysGuardApplet »."
+
+#~ msgid "Drag sensors from the KDE System Guard into this cell."
+#~ msgstr "Hãy kéo bộ nhạy từ Bộ Bảo vệ Hệ thống vào ô này."
+
+#~ msgid "&New Worksheet..."
+#~ msgstr "Tờ làm &việc mới..."
+
+#, fuzzy
+#~| msgid "&New Worksheet..."
+#~ msgid "Open Worksheet..."
+#~ msgstr "Tờ làm &việc mới..."
+
+#~ msgid "&Export Worksheet..."
+#~ msgstr "&Xuất bảng làm việc..."
+
+#~ msgid "&Remove Worksheet"
+#~ msgstr "Gỡ &bỏ bảng làm việc"
+
+#~ msgid "&Worksheet Properties"
+#~ msgstr "Tài &sản bảng làm việc"
 
 #~ msgid "Import Worksheet..."
 #~ msgstr "Nập bảng làm việc..."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-07 08:20+0200\n"
+"POT-Creation-Date: 2008-08-10 08:30+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -128,13 +128,13 @@ msgstr ""
 msgid "Data format:"
 msgstr "Dạng thức dữ liệu :"
 
-#: kio/slaveinterface.cpp:488
+#: kio/slaveinterface.cpp:476
 #, fuzzy
 #| msgid "The peer SSL certificate appears to be corrupt."
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Chứng nhận SSL ngang hàng có vẻ bị hỏng."
 
-#: kio/slaveinterface.cpp:490 kio/tcpslavebase.cpp:656
+#: kio/slaveinterface.cpp:478 kio/tcpslavebase.cpp:675
 msgid "SSL"
 msgstr "SSL"
 
@@ -326,7 +326,7 @@ msgstr ""
 "Bạn sắp dời khỏi chế độ bảo mật. Việc truyền sẽ không còn được mật mẫ lại.\n"
 "Có nghĩa là người khác có thể xem dữ liệu bạn trong khi truyền."
 
-#: kio/tcpslavebase.cpp:266 kio/tcpslavebase.cpp:488
+#: kio/tcpslavebase.cpp:266 kio/tcpslavebase.cpp:507
 msgid "Security Information"
 msgstr "Thông tin bảo mật"
 
@@ -341,7 +341,7 @@ msgctxt "%1 is a host name"
 msgid "%1: SSL negotiation failed"
 msgstr "Xác thực thất bại."
 
-#: kio/tcpslavebase.cpp:482
+#: kio/tcpslavebase.cpp:501
 msgid ""
 "You are about to enter secure mode. All transmissions will be encrypted "
 "unless otherwise noted.\n"
@@ -352,31 +352,31 @@ msgstr ""
 "khác.\n"
 "Có nghĩa là người khác không thể xem dễ dàng dữ liệu bạn trong khi truyền."
 
-#: kio/tcpslavebase.cpp:489
+#: kio/tcpslavebase.cpp:508
 msgid "Display SSL &Information"
 msgstr "Hiển thị thông t&in SSL"
 
-#: kio/tcpslavebase.cpp:490
+#: kio/tcpslavebase.cpp:509
 msgid "C&onnect"
 msgstr "&Kết nối"
 
-#: kio/tcpslavebase.cpp:627
+#: kio/tcpslavebase.cpp:646
 msgid "Enter the certificate password:"
 msgstr "Nhập mật khẩu chứng nhận:"
 
-#: kio/tcpslavebase.cpp:628
+#: kio/tcpslavebase.cpp:647
 msgid "SSL Certificate Password"
 msgstr "Mật khẩu chứng nhận SSL"
 
-#: kio/tcpslavebase.cpp:641
+#: kio/tcpslavebase.cpp:660
 msgid "Unable to open the certificate. Try a new password?"
 msgstr "Không thể mở chứng nhận. Thử mật khẩu mới không?"
 
-#: kio/tcpslavebase.cpp:654
+#: kio/tcpslavebase.cpp:673
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên chạy bị lỗi."
 
-#: kio/tcpslavebase.cpp:712
+#: kio/tcpslavebase.cpp:731
 #, fuzzy, kde-format
 #| msgid "The server certificate failed the authenticity test (%1)."
 msgid ""
@@ -384,33 +384,33 @@ msgid ""
 "\n"
 msgstr "Chứng nhận máy phục vụ đã thất bại việc thử ra xác thực (%1)."
 
-#: kio/tcpslavebase.cpp:761 kio/tcpslavebase.cpp:778 kio/tcpslavebase.cpp:880
-#: kio/tcpslavebase.cpp:892
+#: kio/tcpslavebase.cpp:780 kio/tcpslavebase.cpp:797 kio/tcpslavebase.cpp:899
+#: kio/tcpslavebase.cpp:911
 msgid "Server Authentication"
 msgstr "Xác thực máy phục vụ"
 
-#: kio/tcpslavebase.cpp:762
+#: kio/tcpslavebase.cpp:781
 msgid "&Details"
 msgstr "&Chi tiết"
 
-#: kio/tcpslavebase.cpp:762
+#: kio/tcpslavebase.cpp:781
 msgid "Co&ntinue"
 msgstr "Tiế&p tục"
 
-#: kio/tcpslavebase.cpp:775
+#: kio/tcpslavebase.cpp:794
 msgid ""
 "Would you like to accept this certificate forever without being prompted?"
 msgstr "Bạn có muốn chấp nhận hoài chứng nhận này, không có được nhắc không?"
 
-#: kio/tcpslavebase.cpp:779
+#: kio/tcpslavebase.cpp:798
 msgid "&Forever"
 msgstr "&Hoài"
 
-#: kio/tcpslavebase.cpp:780
+#: kio/tcpslavebase.cpp:799
 msgid "&Current Sessions Only"
 msgstr "&Chỉ các phiên chạy hiện thời"
 
-#: kio/tcpslavebase.cpp:879
+#: kio/tcpslavebase.cpp:898
 msgid ""
 "You have indicated that you wish to accept this certificate, but it is not "
 "issued to the server who is presenting it. Do you wish to continue loading?"
@@ -419,7 +419,7 @@ msgstr ""
 "phát hành cho máy phục vụ đang cung cấp nó. Như thệ thì bạn có muốn tiếp tục "
 "tải không?"
 
-#: kio/tcpslavebase.cpp:891
+#: kio/tcpslavebase.cpp:910
 msgid ""
 "SSL certificate is being rejected as requested. You can disable this in the "
 "KDE Control Center."
@@ -2627,51 +2627,59 @@ msgstr "Kiểu"
 msgid "Certificate password"
 msgstr "Mật khẩu chứng nhận"
 
-#: kssl/ksslinfodialog.cpp:73 kssl/ksslkeygen.cpp:125
+#: kssl/ksslinfodialog.cpp:74 kssl/ksslkeygen.cpp:125
 msgid "KDE SSL Information"
 msgstr "Thông tin SSL KDE"
 
-#: kssl/ksslinfodialog.cpp:80
+#: kssl/ksslinfodialog.cpp:81
 #, fuzzy
 #| msgid "Subject line"
 msgid "Subject"
 msgstr "Dòng chủ thể"
 
-#: kssl/ksslinfodialog.cpp:81
+#: kssl/ksslinfodialog.cpp:82
 #, fuzzy
 #| msgid "Issuer:"
 msgid "Issuer"
 msgstr "Nhà phát hành:"
 
-#: kssl/ksslinfodialog.cpp:91 kssl/ksslinfodialog.cpp:136
+#: kssl/ksslinfodialog.cpp:92 kssl/ksslinfodialog.cpp:137
 msgid "Current connection is secured with SSL."
 msgstr "Sự kết nối hiện thời bị SSL bảo mật."
 
-#: kssl/ksslinfodialog.cpp:94 kssl/ksslinfodialog.cpp:149
+#: kssl/ksslinfodialog.cpp:95 kssl/ksslinfodialog.cpp:150
 msgid "Current connection is not secured with SSL."
 msgstr "Sự kết nối hiện thời không bị SSL bảo mật."
 
-#: kssl/ksslinfodialog.cpp:98
+#: kssl/ksslinfodialog.cpp:99
 msgid "SSL support is not available in this build of KDE."
 msgstr "Phiên bản xây dựng KDE này không hỗ trợ giao thức SSL."
 
-#: kssl/ksslinfodialog.cpp:139
+#: kssl/ksslinfodialog.cpp:140
 msgid ""
 "The main part of this document is secured with SSL, but some parts are not."
 msgstr ""
 "Phần chính của tài liệu này bị SSL bảo mật, còn một số phần khác không."
 
-#: kssl/ksslinfodialog.cpp:145
+#: kssl/ksslinfodialog.cpp:146
 #, fuzzy
 #| msgid "Some of this document is secured with SSL, but the main part is not."
 msgid "Some of this document is secured with SSL, but the main part is not."
 msgstr "Một phần của tài liệu này bị SSL bảo mật, còn phần chính không."
 
-#: kssl/ksslinfodialog.cpp:190
+#: kssl/ksslinfodialog.cpp:193
 #, fuzzy, kde-format
 #| msgid "%1 bits used of a %2 bit cipher"
 msgid "%1, using %2 bits of a %3 bit key"
 msgstr "%1 bit đã được dùng cũa mật mã %2 bit."
+
+#: kssl/ksslinfodialog.cpp:212
+msgid "NO, there were errors:"
+msgstr ""
+
+#: kssl/ksslinfodialog.cpp:219
+msgid "Yes"
+msgstr ""
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -3145,7 +3153,7 @@ msgstr ""
 "Ứng dụng « <b>%1</b> » đã yêu cầu mở ví « <b>%2</b> ». Vui lòng gõ mật khẩu "
 "cho ví này bên dưới."
 
-#: misc/kwalletd/kwalletd.cpp:395 ../kfile/kfilewidget.cpp:1800
+#: misc/kwalletd/kwalletd.cpp:395 ../kfile/kfilewidget.cpp:1801
 msgid "&Open"
 msgstr "&Mở"
 
@@ -5004,7 +5012,7 @@ msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Tập tin này bị Konqueror tạo ra. -->"
 
 #: bookmarks/kbookmarkimporter_ns.cc:157 bookmarks/kbookmarkimporter_ns.cc:158
-#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2271
+#: bookmarks/kbookmarkdialog.cc:325 ../kfile/kfilewidget.cpp:2276
 msgid "Bookmarks"
 msgstr "Liên kết lưu"
 
@@ -5805,7 +5813,7 @@ msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Rác"
 
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1661
+#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1662
 msgid "*|All Files"
 msgstr "*|Mọi tập tin"
 
@@ -5829,12 +5837,12 @@ msgstr ""
 "điều khiển tính năng này bằng cách nhắp cái nút phải trên chuột rồi chọn chế "
 "độ ưa thích trong trình đơn <b>Gõ xong từ</b>."
 
-#: ../kfile/kfilewidget.cpp:312
+#: ../kfile/kfilewidget.cpp:313
 #, kde-format
 msgid "Drive: %1"
 msgstr "Ổ : %1"
 
-#: ../kfile/kfilewidget.cpp:367
+#: ../kfile/kfilewidget.cpp:368
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -5849,39 +5857,39 @@ msgstr ""
 "có là &lt;file:/home/%1&gt;, nhắp vào nút này sẽ hiển thị &lt;file:/home&gt;."
 "</qt>"
 
-#: ../kfile/kfilewidget.cpp:372
+#: ../kfile/kfilewidget.cpp:373
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Nhắp vào nút này để lùi lại một bước trong lược sử duyệt."
 
-#: ../kfile/kfilewidget.cpp:374
+#: ../kfile/kfilewidget.cpp:375
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Nhắp vào nút này để tiếp lại một bước trong lược sử duyệt."
 
-#: ../kfile/kfilewidget.cpp:377
+#: ../kfile/kfilewidget.cpp:378
 msgid "Click this button to reload the contents of the current location."
 msgstr "Nhắp vào nút này để tải lại nội dung của địa điểm hiện có."
 
-#: ../kfile/kfilewidget.cpp:380
+#: ../kfile/kfilewidget.cpp:381
 msgid "Click this button to create a new folder."
 msgstr "Nhắp vào nút này để tạo một thư mục mới."
 
-#: ../kfile/kfilewidget.cpp:386
+#: ../kfile/kfilewidget.cpp:387
 #, fuzzy
 #| msgid "Show Quick Access Navigation Panel"
 msgid "Show Places Navigation Panel"
 msgstr "Hiện bảng duyệt truy cập nhanh"
 
-#: ../kfile/kfilewidget.cpp:393
+#: ../kfile/kfilewidget.cpp:394
 msgid "Show Bookmarks"
 msgstr "Hiện Đánh dấu"
 
-#: ../kfile/kfilewidget.cpp:398
+#: ../kfile/kfilewidget.cpp:399
 #, fuzzy
 #| msgid "Actions"
 msgid "Options"
 msgstr "Hành động"
 
-#: ../kfile/kfilewidget.cpp:400
+#: ../kfile/kfilewidget.cpp:401
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the configuration menu for the file dialog. Various options "
@@ -5902,11 +5910,11 @@ msgstr ""
 "li><li>hiển thị các tập tin bị ẩn</li><li>bảng duyệt Truy cập Nhanh</"
 "li><li>khung xem tập tin</li><li>phân cách thư mục ra tập tin</li></ul></qt>"
 
-#: ../kfile/kfilewidget.cpp:446 ../kfile/kfileplaceeditdialog.cpp:116
+#: ../kfile/kfilewidget.cpp:447 ../kfile/kfileplaceeditdialog.cpp:116
 msgid "&Location:"
 msgstr "&Địa điểm:"
 
-#: ../kfile/kfilewidget.cpp:482
+#: ../kfile/kfilewidget.cpp:483
 #, fuzzy
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -5924,21 +5932,21 @@ msgstr ""
 "bộ lọc có sẵn trong trình đơn thả xuống, hoặc gõ trực tiếp vào trường chữ "
 "một bộ lọc tự chọn.<p>Cho phép dùng ký tự đại diện như « * » và « ? ».</qt>"
 
-#: ../kfile/kfilewidget.cpp:488
+#: ../kfile/kfilewidget.cpp:489
 msgid "&Filter:"
 msgstr "&Lọc:"
 
-#: ../kfile/kfilewidget.cpp:715 ../kfile/kfilewidget.cpp:764
-#: ../kfile/kfilewidget.cpp:1598
+#: ../kfile/kfilewidget.cpp:716 ../kfile/kfilewidget.cpp:765
+#: ../kfile/kfilewidget.cpp:1599
 msgid "You can only select local files."
 msgstr "Bạn có khả năng chọn chỉ tập tin cục bộ thôi."
 
-#: ../kfile/kfilewidget.cpp:716 ../kfile/kfilewidget.cpp:765
-#: ../kfile/kfilewidget.cpp:1599
+#: ../kfile/kfilewidget.cpp:717 ../kfile/kfilewidget.cpp:766
+#: ../kfile/kfilewidget.cpp:1600
 msgid "Remote Files Not Accepted"
 msgstr "Không chấp nhận tập tin từ xa"
 
-#: ../kfile/kfilewidget.cpp:755
+#: ../kfile/kfilewidget.cpp:756
 #, kde-format
 msgid ""
 "%1\n"
@@ -5947,15 +5955,15 @@ msgstr ""
 "%1\n"
 "không có vẻ là địa chỉ Mạng hợp lệ.\n"
 
-#: ../kfile/kfilewidget.cpp:755
+#: ../kfile/kfilewidget.cpp:756
 msgid "Invalid URL"
 msgstr "Địa chỉ Mạng không hợp lệ"
 
-#: ../kfile/kfilewidget.cpp:1189
+#: ../kfile/kfilewidget.cpp:1190
 msgid "This is the name to save the file as."
 msgstr "Đây là tên cho tập tin đang lưu."
 
-#: ../kfile/kfilewidget.cpp:1194
+#: ../kfile/kfilewidget.cpp:1195
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
 "listing several files, separated by spaces."
@@ -5963,22 +5971,22 @@ msgstr ""
 "Đây là danh sách những tập tin cần mở. Có thể ghi rõ nhiều tập tin, định "
 "giới bằng dấu cách."
 
-#: ../kfile/kfilewidget.cpp:1201
+#: ../kfile/kfilewidget.cpp:1202
 msgid "This is the name of the file to open."
 msgstr "Đây là tên của tập tin cần mở."
 
-#: ../kfile/kfilewidget.cpp:1375
+#: ../kfile/kfilewidget.cpp:1376
 #, kde-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr ""
 
-#: ../kfile/kfilewidget.cpp:1376
+#: ../kfile/kfilewidget.cpp:1377
 #, fuzzy
 #| msgid "O&verwrite All"
 msgid "Overwrite File?"
 msgstr "Gh&i đè hết"
 
-#: ../kfile/kfilewidget.cpp:1530
+#: ../kfile/kfilewidget.cpp:1531
 msgid ""
 "The chosen filenames do not\n"
 "appear to be valid."
@@ -5986,11 +5994,11 @@ msgstr ""
 "Những tên tập tin đã chọn\n"
 "có vẻ không phải là hợp lệ."
 
-#: ../kfile/kfilewidget.cpp:1532
+#: ../kfile/kfilewidget.cpp:1533
 msgid "Invalid Filenames"
 msgstr "Tên tập tin không hợp lệ"
 
-#: ../kfile/kfilewidget.cpp:1561
+#: ../kfile/kfilewidget.cpp:1562
 #, kde-format
 msgid ""
 "The requested filenames\n"
@@ -6003,33 +6011,33 @@ msgstr ""
 "có vẻ không phải là hợp lệ.\n"
 "Hãy kiểm tra xem mỗi tên tập tin nằm bên trong dấu trích dẫn đôi."
 
-#: ../kfile/kfilewidget.cpp:1565
+#: ../kfile/kfilewidget.cpp:1566
 msgid "Filename Error"
 msgstr "Lỗi tên tập tin"
 
-#: ../kfile/kfilewidget.cpp:1658
+#: ../kfile/kfilewidget.cpp:1659
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: ../kfile/kfilewidget.cpp:1956
+#: ../kfile/kfilewidget.cpp:1957
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Chọn tự động phần mở &rộng tên tập tin (%1)"
 
-#: ../kfile/kfilewidget.cpp:1957
+#: ../kfile/kfilewidget.cpp:1958
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "phần mở rộng <b>%1</b>"
 
-#: ../kfile/kfilewidget.cpp:1965
+#: ../kfile/kfilewidget.cpp:1966
 msgid "Automatically select filename e&xtension"
 msgstr "Chọn tự động phần mở &rộng tên tập tin"
 
-#: ../kfile/kfilewidget.cpp:1966
+#: ../kfile/kfilewidget.cpp:1967
 msgid "a suitable extension"
 msgstr "là một phần mở rộng thích hợp"
 
-#: ../kfile/kfilewidget.cpp:1976
+#: ../kfile/kfilewidget.cpp:1977
 #, fuzzy, kde-format
 #| msgid ""
 #| "This option enables some convenient features for saving files with "
@@ -6067,7 +6075,7 @@ msgstr ""
 "của tên tập tin (dấu chấm này sẽ được gỡ bỏ tự động).</li></ol>Nếu chưa "
 "chắc, hãy cứ bật tùy chọn này, vì nó làm cho các tập tin dễ hơn quản lý."
 
-#: ../kfile/kfilewidget.cpp:2275
+#: ../kfile/kfilewidget.cpp:2280
 #, fuzzy
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "

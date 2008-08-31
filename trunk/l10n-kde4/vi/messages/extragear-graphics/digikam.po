@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-30 10:27+0200\n"
+"POT-Creation-Date: 2008-08-31 10:12+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -120,7 +120,7 @@ msgstr ""
 #: digikam/tagfilterview.cpp:918 digikam/ratingpopupmenu.cpp:134
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:222
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:171
-#: imageplugins/restoration/imageeffect_restoration.cpp:110
+#: imageplugins/restoration/restorationtool.cpp:102
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:142
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:119
 #: imageplugins/coreplugin/ratiocrop/imageeffect_ratiocrop.cpp:224
@@ -787,17 +787,17 @@ msgid "Assign tag to images. Please wait..."
 msgstr "Gán thẻ vào ảnh. Hãy đời..."
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:152
-#: imageplugins/channelmixer/channelmixer.cpp:132
+#: imageplugins/channelmixer/channelmixertool.cpp:127
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:117
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:133
-#: imageplugins/adjustcurves/adjustcurves.cpp:127
-#: imageplugins/adjustlevels/adjustlevels.cpp:131
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:118
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:122
 #: imageplugins/coreplugin/hsl/hsltool.cpp:103
+#: imageplugins/coreplugin/rgbtool.cpp:103
 #: imageplugins/coreplugin/bcgtool.cpp:104
+#: imageplugins/coreplugin/redeyetool.cpp:105
 #: imageplugins/coreplugin/bwsepiatool.cpp:209
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:91
 #: imageplugins/coreplugin/autocorrectiontool.cpp:105
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:93
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:171
 msgid "Channel:"
 msgstr "Kênh:"
@@ -805,34 +805,34 @@ msgstr "Kênh:"
 #: libs/imageproperties/imagepropertiescolorstab.cpp:156
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:120
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:136
-#: imageplugins/adjustcurves/adjustcurves.cpp:130
-#: imageplugins/adjustlevels/adjustlevels.cpp:134
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:121
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:125
 #: imageplugins/coreplugin/hsl/hsltool.cpp:106
+#: imageplugins/coreplugin/rgbtool.cpp:106
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:126
 #: imageplugins/coreplugin/bcgtool.cpp:107
+#: imageplugins/coreplugin/redeyetool.cpp:108
 #: imageplugins/coreplugin/bwsepiatool.cpp:212
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:94
 #: imageplugins/coreplugin/autocorrectiontool.cpp:108
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:96
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:174
 msgid "Luminosity"
 msgstr "Độ trưng"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:157
 #: libs/imageproperties/imagepropertiescolorstab.cpp:206
-#: imageplugins/channelmixer/channelmixer.cpp:135
+#: imageplugins/channelmixer/channelmixertool.cpp:130
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:121
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:137
-#: imageplugins/adjustcurves/adjustcurves.cpp:131
-#: imageplugins/adjustlevels/adjustlevels.cpp:135
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:122
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:126
 #: imageplugins/coreplugin/hsl/hsltool.cpp:107
+#: imageplugins/coreplugin/rgbtool.cpp:107
+#: imageplugins/coreplugin/rgbtool.cpp:175
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:127
 #: imageplugins/coreplugin/bcgtool.cpp:108
+#: imageplugins/coreplugin/redeyetool.cpp:109
 #: imageplugins/coreplugin/bwsepiatool.cpp:213
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:95
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:163
 #: imageplugins/coreplugin/autocorrectiontool.cpp:109
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:97
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:175
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:221
 msgid "Red"
@@ -840,19 +840,19 @@ msgstr "Đỏ"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:158
 #: libs/imageproperties/imagepropertiescolorstab.cpp:207
-#: imageplugins/channelmixer/channelmixer.cpp:136
+#: imageplugins/channelmixer/channelmixertool.cpp:131
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:122
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:138
-#: imageplugins/adjustcurves/adjustcurves.cpp:132
-#: imageplugins/adjustlevels/adjustlevels.cpp:136
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:123
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:127
 #: imageplugins/coreplugin/hsl/hsltool.cpp:108
+#: imageplugins/coreplugin/rgbtool.cpp:108
+#: imageplugins/coreplugin/rgbtool.cpp:196
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:128
 #: imageplugins/coreplugin/bcgtool.cpp:109
+#: imageplugins/coreplugin/redeyetool.cpp:110
 #: imageplugins/coreplugin/bwsepiatool.cpp:214
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:96
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:184
 #: imageplugins/coreplugin/autocorrectiontool.cpp:110
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:98
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:176
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:222
 msgid "Green"
@@ -860,27 +860,27 @@ msgstr "Lục"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:159
 #: libs/imageproperties/imagepropertiescolorstab.cpp:208
-#: imageplugins/channelmixer/channelmixer.cpp:137
+#: imageplugins/channelmixer/channelmixertool.cpp:132
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:123
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:139
-#: imageplugins/adjustcurves/adjustcurves.cpp:133
-#: imageplugins/adjustlevels/adjustlevels.cpp:137
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:124
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:128
 #: imageplugins/coreplugin/hsl/hsltool.cpp:109
+#: imageplugins/coreplugin/rgbtool.cpp:109
+#: imageplugins/coreplugin/rgbtool.cpp:217
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:129
 #: imageplugins/coreplugin/bcgtool.cpp:110
+#: imageplugins/coreplugin/redeyetool.cpp:111
 #: imageplugins/coreplugin/bwsepiatool.cpp:215
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:97
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:205
 #: imageplugins/coreplugin/autocorrectiontool.cpp:111
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:99
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:177
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:223
 msgid "Blue"
 msgstr "Xanh"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:160
-#: imageplugins/adjustcurves/adjustcurves.cpp:134
-#: imageplugins/adjustlevels/adjustlevels.cpp:138
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:125
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:129
 msgid "Alpha"
 msgstr "Anfa"
 
@@ -935,36 +935,36 @@ msgstr ""
 "trong đồ thị."
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:185
-#: imageplugins/channelmixer/channelmixer.cpp:155
+#: imageplugins/channelmixer/channelmixertool.cpp:150
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:139
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:157
-#: imageplugins/adjustcurves/adjustcurves.cpp:156
-#: imageplugins/adjustlevels/adjustlevels.cpp:160
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:147
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:151
 #: imageplugins/coreplugin/hsl/hsltool.cpp:127
+#: imageplugins/coreplugin/rgbtool.cpp:125
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:147
 #: imageplugins/coreplugin/bcgtool.cpp:128
+#: imageplugins/coreplugin/redeyetool.cpp:129
 #: imageplugins/coreplugin/bwsepiatool.cpp:233
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:113
 #: imageplugins/coreplugin/autocorrectiontool.cpp:129
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:117
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:197
 #: utilities/timeline/timelineview.cpp:151
 msgid "<p>Linear"
 msgstr "<p>Tuyến"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:191
-#: imageplugins/channelmixer/channelmixer.cpp:161
+#: imageplugins/channelmixer/channelmixertool.cpp:156
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:145
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:164
-#: imageplugins/adjustcurves/adjustcurves.cpp:162
-#: imageplugins/adjustlevels/adjustlevels.cpp:166
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:153
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:157
 #: imageplugins/coreplugin/hsl/hsltool.cpp:133
+#: imageplugins/coreplugin/rgbtool.cpp:131
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:153
 #: imageplugins/coreplugin/bcgtool.cpp:134
+#: imageplugins/coreplugin/redeyetool.cpp:135
 #: imageplugins/coreplugin/bwsepiatool.cpp:239
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:119
 #: imageplugins/coreplugin/autocorrectiontool.cpp:135
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:123
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:203
 #: utilities/timeline/timelineview.cpp:157
 msgid "<p>Logarithmic"
@@ -1552,8 +1552,7 @@ msgstr "<b>Tiêu</b>:"
 msgid "Exposure:"
 msgstr "Tự động phơi nắng"
 
-#: libs/dialogs/imagedialog.cpp:175
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:156
+#: libs/dialogs/imagedialog.cpp:175 imageplugins/coreplugin/redeyetool.cpp:168
 msgid "Sensitivity:"
 msgstr "Độ nhạy:"
 
@@ -2020,7 +2019,7 @@ msgid "Nearest Neighbor"
 msgstr "Hàng xóm gần nhất"
 
 #: libs/greycstoration/greycstorationwidget.cpp:239
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:103
+#: imageplugins/hotpixels/hotpixelstool.cpp:90
 msgid "Linear"
 msgstr "Tuyến"
 
@@ -2744,7 +2743,7 @@ msgstr ""
 "y:%2"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:136
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:111
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:105
 msgid ""
 "<p>Here you can see the original clip image which will be used for the "
 "preview computation.<p>Click and drag the mouse cursor in the image to "
@@ -2754,7 +2753,6 @@ msgstr ""
 "<p>Nhấn và kéo con trỏ chuột trên ảnh để thay đổi tiêu điểm trích."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:145
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:120
 #, fuzzy
 #| msgid ""
 #| "<p>Set here the zoom factor used to render picture in the preview area."
@@ -2762,7 +2760,7 @@ msgid "<p>Here set the zoom factor of the preview area."
 msgstr "<p>Ở đây hãy đặt hệ số phóng/thu dùng để vẽ ảnh trong ô xem thử."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:164
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:139
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:128
 msgid ""
 "<p>If you enable this option, you will separate the preview area "
 "horizontally, displaying the original and target image at the same time. The "
@@ -2773,7 +2771,7 @@ msgstr ""
 "đường gạch gạch màu đỏ."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:174
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:149
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:138
 msgid ""
 "<p>If you enable this option, you will separate the preview area vertically, "
 "displaying the original and target image at the same time. The target is "
@@ -2784,7 +2782,7 @@ msgstr ""
 "đường gạch gạch màu đỏ."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:188
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:163
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:152
 msgid ""
 "<p>If you enable this option, you will separate the preview area "
 "horizontally, displaying the original and target image at the same time. The "
@@ -2795,7 +2793,7 @@ msgstr ""
 "còn ảnh đích nằm bên dưới nó."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:198
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:173
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:162
 msgid ""
 "<p>If you enable this option, you will separate the preview area vertically, "
 "displaying the original and target image at the same time. The original is "
@@ -2806,7 +2804,7 @@ msgstr ""
 "còn ảnh đích nằm bên phải nó."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:209
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:184
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:173
 msgid "<p>If you enable this option, the preview area will not be separated."
 msgstr "<p>Nếu bạn bật tùy chọn này, bạn sẽ không chia ra ô xem thử."
 
@@ -2830,7 +2828,6 @@ msgstr ""
 "tiêu điểm trích."
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:361
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:286
 #: digikam/digikamapp.cpp:2308 utilities/lighttable/lighttablewindow.cpp:1489
 #: utilities/lighttable/lighttablewindow.cpp:1512
 #, kde-format
@@ -2838,7 +2835,7 @@ msgid "zoom: %1%"
 msgstr "thu phóng: %1%"
 
 #: libs/widgets/imageplugins/imagepannelwidget.cpp:488
-#: libs/widgets/imageplugins/imagepanelwidget.cpp:377
+#: libs/widgets/imageplugins/imagepanelwidget.cpp:335
 #, kde-format
 msgid "<nobr>(%1,%2)(%3x%4)</nobr>"
 msgstr "<nobr>(%1,%2)(%3x%4)</nobr>"
@@ -3084,7 +3081,6 @@ msgstr "Marcel Wiesweg"
 #: digikam/daboutdata.h:127 digikam/daboutdata.h:131
 #: imageplugins/lenscorrection/autocorrection/imageeffect_autocorrection.cpp:82
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:88
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:90
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:80
 #: imageplugins/texture/imageeffect_texture.cpp:85
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:94
@@ -6183,20 +6179,15 @@ msgstr ""
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:85
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:85
-#: imageplugins/channelmixer/channelmixer.cpp:114
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:87
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:77
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:111
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:78
-#: imageplugins/adjustcurves/adjustcurves.cpp:109
 #: imageplugins/texture/imageeffect_texture.cpp:82
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:91
-#: imageplugins/adjustlevels/adjustlevels.cpp:113
 #: imageplugins/raindrop/imageeffect_raindrop.cpp:80
 #: imageplugins/blurfx/imageeffect_blurfx.cpp:81
 #: imageplugins/border/imageeffect_border.cpp:86
 #: imageplugins/emboss/imageeffect_emboss.cpp:78
-#: imageplugins/restoration/imageeffect_restoration.cpp:82
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:86
 #: imageplugins/distortionfx/imageeffect_distortionfx.cpp:87
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:80
@@ -6212,20 +6203,15 @@ msgstr "Tác giả và nhà duy trì"
 #: imageplugins/lenscorrection/distortion/imageeffect_lensdistortion.cpp:85
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:85
 #: imageplugins/noisereduction/imageeffect_noisereduction.cpp:85
-#: imageplugins/channelmixer/channelmixer.cpp:114
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:90
 #: imageplugins/filmgrain/imageeffect_filmgrain.cpp:77
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:111
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:78
-#: imageplugins/adjustcurves/adjustcurves.cpp:109
 #: imageplugins/texture/imageeffect_texture.cpp:82
 #: imageplugins/inserttext/imageeffect_inserttext.cpp:91
-#: imageplugins/adjustlevels/adjustlevels.cpp:113
 #: imageplugins/raindrop/imageeffect_raindrop.cpp:80
 #: imageplugins/blurfx/imageeffect_blurfx.cpp:81
 #: imageplugins/border/imageeffect_border.cpp:86
 #: imageplugins/emboss/imageeffect_emboss.cpp:78
-#: imageplugins/restoration/imageeffect_restoration.cpp:82
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:86
 #: imageplugins/distortionfx/imageeffect_distortionfx.cpp:87
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:80
@@ -6450,8 +6436,6 @@ msgstr "Một phần bổ sung digiKam để giảm hiệu ứng làm mờ nét 
 
 #: imageplugins/lenscorrection/vignetting/imageeffect_antivignetting.cpp:81
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:74
-#: imageplugins/adjustcurves/adjustcurves.cpp:105
-#: imageplugins/adjustlevels/adjustlevels.cpp:109
 #: imageplugins/freerotation/imageeffect_freerotation.cpp:82
 #: imageplugins/sheartool/imageeffect_sheartool.cpp:81
 #, fuzzy
@@ -6799,24 +6783,16 @@ msgstr "Tập tin thiết lập giảm nhiễu ảnh chụp cần lưu"
 msgid "Cannot save settings to the Photograph Noise Reduction text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản giảm nhiễu ảnh chụp."
 
-#: imageplugins/channelmixer/imageplugin_channelmixer.cpp:47
+#: imageplugins/channelmixer/imageplugin_channelmixer.cpp:49
 msgid "Channel Mixer..."
 msgstr "Bộ hoà kênh..."
 
-#: imageplugins/channelmixer/channelmixer.cpp:98
-#: imageplugins/channelmixer/channelmixer.cpp:106
-msgid "Color Channel Mixer"
-msgstr "Bộ hoà kênh màu"
+#: imageplugins/channelmixer/channelmixertool.cpp:104
+#: imageplugins/channelmixer/channelmixertool.cpp:496
+msgid "Channel Mixer"
+msgstr "Bộ hoà kênh"
 
-#: imageplugins/channelmixer/channelmixer.cpp:108
-msgid "An image color channel mixer plugin for digiKam."
-msgstr "Phần bổ sung hoà kênh màu ảnh cho digiKam."
-
-#: imageplugins/channelmixer/channelmixer.cpp:110
-msgid "(c) 2005-2007, Gilles Caulier"
-msgstr "© năm 2005-2007 của Gilles Caulier"
-
-#: imageplugins/channelmixer/channelmixer.cpp:122
+#: imageplugins/channelmixer/channelmixertool.cpp:112
 msgid ""
 "<p>You can see here the image's color channels' gains adjustments preview. "
 "You can pick color on image to see the color level corresponding on "
@@ -6825,7 +6801,7 @@ msgstr ""
 "<p>Ở đây có ô xem thử cách điều chỉnh khuếch đại của các kênh màu của ảnh. "
 "Bạn có thể kén màu trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất. "
 
-#: imageplugins/channelmixer/channelmixer.cpp:139
+#: imageplugins/channelmixer/channelmixertool.cpp:134
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the color channel to mix:<p><b>Red</b>: display the red "
@@ -6840,11 +6816,11 @@ msgstr ""
 "kênh màu đỏ.<p><b>Lục</b>: hiển thị những giá trị của kênh màu lục."
 "<p><b>Xanh</b>: hiển thị những giá trị của kênh màu xanh.<p>"
 
-#: imageplugins/channelmixer/channelmixer.cpp:149
+#: imageplugins/channelmixer/channelmixertool.cpp:144
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:133
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:150
-#: imageplugins/adjustcurves/adjustcurves.cpp:150
-#: imageplugins/adjustlevels/adjustlevels.cpp:154
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:141
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:145
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:191
 #, fuzzy
 #| msgid ""
@@ -6863,7 +6839,7 @@ msgstr ""
 "dùng tỷ lệ loga; nếu dùng, mọi giá trị (cả nhỏ lẫn lớn) sẽ được hiển thị "
 "trong đồ thị."
 
-#: imageplugins/channelmixer/channelmixer.cpp:184
+#: imageplugins/channelmixer/channelmixertool.cpp:179
 msgid ""
 "<p>Here you can see the target preview image histogram drawing of the "
 "selected image channel. This one is re-computed at any mixer settings "
@@ -6872,57 +6848,57 @@ msgstr ""
 "<p>Ở đây có bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh ảnh được chọn. "
 "Điều này được tính lại khi nào thay đổi thiết lập bộ hoà."
 
-#: imageplugins/channelmixer/channelmixer.cpp:194
+#: imageplugins/channelmixer/channelmixertool.cpp:189
 msgid "Red:"
 msgstr "Đỏ :"
 
-#: imageplugins/channelmixer/channelmixer.cpp:199
+#: imageplugins/channelmixer/channelmixertool.cpp:194
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the red color gain in percent for the current channel."
 msgid "<p>Select the red color gain in percent for the current channel here."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu đỏ theo phần trăm cho kênh hiện có."
 
-#: imageplugins/channelmixer/channelmixer.cpp:202
+#: imageplugins/channelmixer/channelmixertool.cpp:197
 msgid "Blue:"
 msgstr "Xanh:"
 
-#: imageplugins/channelmixer/channelmixer.cpp:207
+#: imageplugins/channelmixer/channelmixertool.cpp:202
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the green color gain in percent for the current channel."
 msgid "<p>Select the green color gain in percent for the current channel here."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu lục theo phần trăm cho kênh hiện có."
 
-#: imageplugins/channelmixer/channelmixer.cpp:210
+#: imageplugins/channelmixer/channelmixertool.cpp:205
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:281
 msgid "Green:"
 msgstr "Lục:"
 
-#: imageplugins/channelmixer/channelmixer.cpp:215
+#: imageplugins/channelmixer/channelmixertool.cpp:210
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the blue color gain in percent for the current channel."
 msgid "<p>Select the blue color gain in percent for the current channel here."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu xanh theo phần trăm cho kênh hiện có."
 
-#: imageplugins/channelmixer/channelmixer.cpp:218
-#: imageplugins/adjustcurves/adjustcurves.cpp:292
-#: imageplugins/adjustlevels/adjustlevels.cpp:332
+#: imageplugins/channelmixer/channelmixertool.cpp:213
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:283
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:325
 msgid "&Reset"
 msgstr "Đặt &lại"
 
-#: imageplugins/channelmixer/channelmixer.cpp:220
+#: imageplugins/channelmixer/channelmixertool.cpp:215
 msgid ""
 "Reset color channels' gains settings from the currently selected channel."
 msgstr ""
 "Đặt lại thiết lập khuếch đại của các kênh màu từ kênh được chọn hiện thời."
 
-#: imageplugins/channelmixer/channelmixer.cpp:225
+#: imageplugins/channelmixer/channelmixertool.cpp:220
 msgid "Monochrome"
 msgstr "Đơn sắc"
 
-#: imageplugins/channelmixer/channelmixer.cpp:226
+#: imageplugins/channelmixer/channelmixertool.cpp:221
 msgid ""
 "<p>Enable this option if you want the image rendered in monochrome mode. In "
 "this mode, the histogram will display only luminosity values."
@@ -6930,31 +6906,27 @@ msgstr ""
 "<p>Bật tùy chọn này nếu bạn muốn ảnh được vẽ trong chế độ đơn sắc. Trong chế "
 "độ này, biểu đồ tần xuất sẽ hiển thị chỉ các giá trị độ trưng."
 
-#: imageplugins/channelmixer/channelmixer.cpp:230
+#: imageplugins/channelmixer/channelmixertool.cpp:225
 msgid "Preserve luminosity"
 msgstr "Bảo tồn độ trưng"
 
-#: imageplugins/channelmixer/channelmixer.cpp:231
+#: imageplugins/channelmixer/channelmixertool.cpp:226
 msgid "<p>Enable this option is you want preserve the image luminosity."
 msgstr "<p>Bật tùy chọn này nếu bạn muốn bảo tồn độ trưng của ảnh."
 
-#: imageplugins/channelmixer/channelmixer.cpp:503
-msgid "Channel Mixer"
-msgstr "Bộ hoà kênh"
-
-#: imageplugins/channelmixer/channelmixer.cpp:654
+#: imageplugins/channelmixer/channelmixertool.cpp:646
 msgid "Select Gimp Gains Mixer File to Load"
 msgstr "Chọn tập tin hoà khuếch đại GIMP cần tải"
 
-#: imageplugins/channelmixer/channelmixer.cpp:726
+#: imageplugins/channelmixer/channelmixertool.cpp:719
 msgid "Cannot load settings from the Gains Mixer text file."
 msgstr "Không thể tải thiết lập từ tập tin văn bản hoà khuếch đại."
 
-#: imageplugins/channelmixer/channelmixer.cpp:739
+#: imageplugins/channelmixer/channelmixertool.cpp:732
 msgid "Gimp Gains Mixer File to Save"
 msgstr "Tập tin hoà khuếch đại GIMP cần lưu"
 
-#: imageplugins/channelmixer/channelmixer.cpp:801
+#: imageplugins/channelmixer/channelmixertool.cpp:795
 msgid "Cannot save settings to the Gains Mixer text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản hoà khuếch đại."
 
@@ -7017,9 +6989,9 @@ msgstr ""
 
 #: imageplugins/colorfx/imageeffect_colorfx.cpp:168
 #: imageplugins/coreplugin/hsl/hsltool.cpp:156
+#: imageplugins/coreplugin/rgbtool.cpp:154
 #: imageplugins/coreplugin/bcgtool.cpp:157
 #: imageplugins/coreplugin/bwsepiatool.cpp:262
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:142
 #: imageplugins/coreplugin/autocorrectiontool.cpp:158
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:234
 msgid ""
@@ -7101,6 +7073,53 @@ msgstr ""
 msgid "ColorFX"
 msgstr "Hiệu ứng màu"
 
+#: imageplugins/hotpixels/hotpixelstool.cpp:76
+#, fuzzy
+#| msgid "Hot Pixels..."
+msgid "Hot Pixels"
+msgstr "Điểm ảnh nóng..."
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:87
+msgid "Filter:"
+msgstr "Lọc:"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:89
+msgid "Average"
+msgstr "Trung bình"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:91
+msgid "Quadratic"
+msgstr "Bậc hai"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:92
+msgid "Cubic"
+msgstr "Bậc ba"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:95
+msgid "Black Frame..."
+msgstr "Khung khối..."
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:96
+msgid ""
+"<p>Use this button to add a new black frame file which will be used by the "
+"hot pixels removal filter."
+msgstr ""
+"<p>Dùng cái nút này để thêm một tập tin khung màu đen mới sẽ được dùng bởi "
+"bộ lọc gỡ bỏ điểm ảnh nóng."
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:145
+#: utilities/imageeditor/editor/editorwindow.cpp:1259
+msgid "Loading: "
+msgstr "Đang tải: "
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:184
+msgid "Select Black Frame Image"
+msgstr "Chọn ảnh khung đen"
+
+#: imageplugins/hotpixels/hotpixelstool.cpp:252
+msgid "Hot Pixels Correction"
+msgstr "Sửa chữa điểm ảnh nóng"
+
 #: imageplugins/hotpixels/blackframelistview.cpp:52
 msgid "Preview"
 msgstr "Xem thử"
@@ -7116,71 +7135,9 @@ msgctxt ""
 msgid "HP"
 msgstr "ĐN"
 
-#: imageplugins/hotpixels/imageplugin_hotpixels.cpp:49
+#: imageplugins/hotpixels/imageplugin_hotpixels.cpp:51
 msgid "Hot Pixels..."
 msgstr "Điểm ảnh nóng..."
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:68
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:78
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:269
-msgid "Hot Pixels Correction"
-msgstr "Sửa chữa điểm ảnh nóng"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:80
-msgid ""
-"A digiKam image plugin for fixing dots produced by hot/stuck/dead pixels "
-"from a CCD."
-msgstr ""
-"Phần bổ sung ảnh digiKam để sửa chữa chấm được tạo bởi điểm ảnh nóng/bị kẹt/"
-"chết từ CCD."
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:83
-#, fuzzy
-#| msgid ""
-#| "(c) 2004-2005, Renchi Raju\n"
-#| "(c) 2006-2007, Gilles Caulier"
-msgid ""
-"(c) 2005-2006, Unai Garro\n"
-"(c) 2005-2008, Gilles Caulier"
-msgstr ""
-"© năm 2004-2005 của Renchi Raju\n"
-"© năm 2006-2007 của Gilles Caulier"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:87
-msgid "Unai Garro"
-msgstr "Unai Garro"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:100
-msgid "Filter:"
-msgstr "Lọc:"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:102
-msgid "Average"
-msgstr "Trung bình"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:104
-msgid "Quadratic"
-msgstr "Bậc hai"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:105
-msgid "Cubic"
-msgstr "Bậc ba"
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:108
-msgid "Black Frame..."
-msgstr "Khung khối..."
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:109
-msgid ""
-"<p>Use this button to add a new black frame file which will be used by the "
-"hot pixels removal filter."
-msgstr ""
-"<p>Dùng cái nút này để thêm một tập tin khung màu đen mới sẽ được dùng bởi "
-"bộ lọc gỡ bỏ điểm ảnh nóng."
-
-#: imageplugins/hotpixels/imageeffect_hotpixels.cpp:184
-msgid "Select Black Frame Image"
-msgstr "Chọn ảnh khung đen"
 
 #: imageplugins/filmgrain/imageplugin_filmgrain.cpp:48
 msgid "Add Film Grain..."
@@ -7234,7 +7191,6 @@ msgid "A digiKam image plugin to correct white color balance."
 msgstr "Phần bổ sung ảnh digiKam để sửa chữa cán cân màu trắng."
 
 #: imageplugins/whitebalance/imageeffect_whitebalance.cpp:107
-#: imageplugins/restoration/imageeffect_restoration.cpp:78
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:141
 #, fuzzy
 #| msgid "(c) 2004-2007, Gilles Caulier"
@@ -7513,7 +7469,7 @@ msgstr ""
 
 #: imageplugins/charcoal/imageeffect_charcoal.cpp:98
 #: imageplugins/oilpaint/imageeffect_oilpaint.cpp:105
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:166
+#: imageplugins/coreplugin/redeyetool.cpp:178
 msgid "Smooth:"
 msgstr "Mịn:"
 
@@ -7530,16 +7486,13 @@ msgstr "Than gỗ"
 msgid "Charcoal Drawing..."
 msgstr "Bản vẽ than gỗ..."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:83
-#: imageplugins/adjustcurves/adjustcurves.cpp:101
-msgid "Adjust Color Curves"
-msgstr "Chỉnh cong màu"
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:90
+#, fuzzy
+#| msgid "Adjust Curve"
+msgid "Adjust Curves"
+msgstr "Điều chỉnh cong"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:103
-msgid "An image-histogram-curves adjustment plugin for digiKam."
-msgstr "Phần bổ sung điều chỉnh đường cong biểu đồ tần xuất ảnh cho digiKam."
-
-#: imageplugins/adjustcurves/adjustcurves.cpp:117
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:103
 #, fuzzy
 #| msgid ""
 #| "<p>You can see here the image's curve-adjustments preview. You can pick "
@@ -7551,8 +7504,8 @@ msgstr ""
 "<p>Ở đây có ô xem thử cách điều chỉnh đường cong của ảnh. Bạn có thể kén màu "
 "trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:136
-#: imageplugins/adjustlevels/adjustlevels.cpp:140
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:127
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:131
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
@@ -7578,7 +7531,7 @@ msgstr ""
 "anfa. Kênh này tương ứng với giá trị độ trong suốt và được hỗ trợ bởi một số "
 "định dạng ảnh nào đó, như PNG hay TIFF."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:187
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:178
 msgid ""
 "<p>Here you can see the target preview image histogram drawing of the "
 "selected image channel. This one is re-computed at any curves settings "
@@ -7587,26 +7540,26 @@ msgstr ""
 "<p>Ở đây có bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh ảnh được chọn. "
 "Bản vẽ này được tính lại khi nào thay đổi thiết lập đường cong."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:200
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:191
 msgid ""
 "<p>This is the curve drawing of the selected channel from original image"
 msgstr "<p>Đây là bản vẽ đường cong của kênh được chọn từ ảnh gốc"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:228
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:219
 msgid "Curve free mode"
 msgstr "Chế độ cong bằng tay"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:229
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:220
 msgid "<p>With this button, you can draw your curve free-hand with the mouse."
 msgstr ""
 "<p>Dùng cái nút này, bạn có khả năng vẽ đường cong bằng con chuột, như vẽ "
 "bằng tay."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:236
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:227
 msgid "Curve smooth mode"
 msgstr "Chế độ cong mịn"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:237
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:228
 msgid ""
 "<p>With this button, you constrains the curve type to a smooth line with "
 "tension."
@@ -7614,12 +7567,12 @@ msgstr ""
 "<p>Dùng cái nút này, bạn ràng buộc kiểu đường cong thành đường mịn có sự "
 "căng."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:259
-#: imageplugins/adjustlevels/adjustlevels.cpp:293
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:250
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:286
 msgid "All channels shadow tone color picker"
 msgstr "Bộ kén màu sắc bóng mọi kênh"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:260
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:251
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Shadow Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
@@ -7629,12 +7582,12 @@ msgstr ""
 "điểm đường cong mịn <b>Sắc bóng</b> trên kênh độ trưng màu Đỏ, Lục, Xanh và "
 "Độ trưng."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:268
-#: imageplugins/adjustlevels/adjustlevels.cpp:302
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:259
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:295
 msgid "All channels middle tone color picker"
 msgstr "Bộ kén màu sắc vừa mọi kênh"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:269
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:260
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Middle Tone</b> smooth curves point on Red, Green, Blue, and Luminosity "
@@ -7644,12 +7597,12 @@ msgstr ""
 "điểm đường cong mịn <b>Sắc vừa</b> trên kênh độ trưng màu Đỏ, Lục, Xanh và "
 "Độ trưng."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:277
-#: imageplugins/adjustlevels/adjustlevels.cpp:311
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:268
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:304
 msgid "All channels highlight tone color picker"
 msgstr "Bộ kén màu sắc chỗ sáng mọi kênh"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:278
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:269
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Highlight Tone</b> smooth curves point on Red, Green, Blue, and "
@@ -7659,11 +7612,11 @@ msgstr ""
 "điểm đường cong mịn <b>Sắc chỗ sáng</b> trên kênh độ trưng màu Đỏ, Lục, Xanh "
 "và Độ trưng."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:294
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:285
 msgid "Reset current channel curves' values."
 msgstr "Đặt lại giá trị của đường cong kênh hiện có."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:295
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:286
 msgid ""
 "<p>If you press this button, all curves' values from the current selected "
 "channel will be reset to the default values."
@@ -7671,27 +7624,27 @@ msgstr ""
 "<p>Nếu bạn bấm cái nút này, mọi giá trị của đường cong từ kênh được chọn "
 "hiện thời sẽ bị đặt lại thành giá trị mặc định."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:484
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:475
 msgid "Adjust Curve"
 msgstr "Điều chỉnh cong"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:651
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:645
 msgid "Select Gimp Curves File to Load"
 msgstr "Chọn tập tin cong GIMP cần tải"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:657
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:652
 msgid "Cannot load from the Gimp curves text file."
 msgstr "Không thể tải từ tập tin văn bản đường cong GIMP."
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:673
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:668
 msgid "Gimp Curves File to Save"
 msgstr "Tập tin cong GIMP cần lưu"
 
-#: imageplugins/adjustcurves/adjustcurves.cpp:679
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:675
 msgid "Cannot save to the Gimp curves text file."
 msgstr "Không thể lưu vào tập tin văn bản đường cong GIMP."
 
-#: imageplugins/adjustcurves/imageplugin_adjustcurves.cpp:48
+#: imageplugins/adjustcurves/imageplugin_adjustcurves.cpp:50
 msgid "Curves Adjust..."
 msgstr "Điều chỉnh cong..."
 
@@ -7920,16 +7873,13 @@ msgstr "Hãy nhập đoạn vào đây !"
 msgid "Insert Text..."
 msgstr "Chèn đoạn..."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:85
-#: imageplugins/adjustlevels/adjustlevels.cpp:105
-msgid "Adjust Color Levels"
-msgstr "Điều chỉnh cấp màu"
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:91
+#, fuzzy
+#| msgid "Adjust Level"
+msgid "Adjust Levels"
+msgstr "Điều chỉnh cấp"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:107
-msgid "An image-histogram-levels adjustment plugin for digiKam."
-msgstr "Phần bổ sung điều chỉnh cấp biểu đồ tần xuất ảnh cho digiKam."
-
-#: imageplugins/adjustlevels/adjustlevels.cpp:121
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:106
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the image's level-adjustments preview. You can pick "
@@ -7941,7 +7891,7 @@ msgstr ""
 "<p>Ở đây có ô xem thử cách điều chỉnh cấp của ảnh. Bạn có thể kén màu trên "
 "ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:188
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:179
 msgid ""
 "<p>Here you can see the target preview image histogram drawing of the "
 "selected image channel. This one is re-computed at any levels settings "
@@ -7950,73 +7900,73 @@ msgstr ""
 "<p>Ở đây có bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh ảnh được chọn. "
 "Bản vẽ này được tính lại khi nào thay đổi thiết lập cấp."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:195
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:188
 msgid ""
 "<p>This is the histogram drawing of the selected channel from original image"
 msgstr "<p>Đây là bản vẽ biểu đồ tần xuất của kênh được chọn từ ảnh gốc"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:205
-#: imageplugins/adjustlevels/adjustlevels.cpp:226
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:198
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:219
 #, fuzzy
 #| msgid "<p>Select here the minimal intensity input value of the histogram."
 msgid "<p>Select the minimal intensity input value of the histogram here."
 msgstr ""
 "<p>Ở đây hãy chọn giá trị nhập cường độ tối thiểu của biểu đồ tần xuất."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:207
-#: imageplugins/adjustlevels/adjustlevels.cpp:228
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:200
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:221
 msgid "Minimal intensity input."
 msgstr "Nhập cường độ tối thiểu."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:216
-#: imageplugins/adjustlevels/adjustlevels.cpp:242
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:209
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:235
 #, fuzzy
 #| msgid "<p>Select here the maximal intensity input value of the histogram."
 msgid "<p>Select the maximal intensity input value of the histogram here."
 msgstr "<p>Ở đây hãy chọn giá trị nhập cường độ tối đa của biểu đồ tần xuất."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:218
-#: imageplugins/adjustlevels/adjustlevels.cpp:241
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:211
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:234
 msgid "Maximal intensity input."
 msgstr "Nhập cường độ tối đa."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:234
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:227
 msgid "Gamma input value."
 msgstr "Giá trị nhập Gamma."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:235
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:228
 #, fuzzy
 #| msgid "<p>Select here the gamma input value."
 msgid "<p>Select the gamma input value here."
 msgstr "<p>Ở đây hãy chọn giá trị nhập Gamma."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:247
-#: imageplugins/adjustlevels/adjustlevels.cpp:272
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:240
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:265
 #, fuzzy
 #| msgid "<p>Select here the minimal intensity output value of the histogram."
 msgid "<p>Select the minimal intensity output value of the histogram here."
 msgstr ""
 "<p><p>Ở đây hãy chọn giá trị xuất cường độ tối thiểu của biểu đồ tần xuất."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:249
-#: imageplugins/adjustlevels/adjustlevels.cpp:271
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:242
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:264
 msgid "Minimal intensity output."
 msgstr "Xuất cường độ tối thiểu."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:258
-#: imageplugins/adjustlevels/adjustlevels.cpp:280
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:251
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:273
 #, fuzzy
 #| msgid "<p>Select here the maximal intensity output value of the histogram."
 msgid "<p>Select the maximal intensity output value of the histogram here."
 msgstr ""
 "<p><p>Ở đây hãy chọn giá trị xuất cường độ tối đa của biểu đồ tần xuất."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:260
-#: imageplugins/adjustlevels/adjustlevels.cpp:279
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:253
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:272
 msgid "Maximal intensity output."
 msgstr "Xuất cường độ tối đa."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:294
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:287
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Shadow Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -8025,7 +7975,7 @@ msgstr ""
 "giá trị nhập cấp <b>Sắc bóng</b> trên kênh độ trưng màu Đỏ, Lục, Xanh và Độ "
 "trưng."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:303
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:296
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Middle Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -8034,7 +7984,7 @@ msgstr ""
 "giá trị nhập cấp <b>Sắc vừa</b> trên kênh độ trưng màu Đỏ, Lục, Xanh và Độ "
 "trưng."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:312
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:305
 msgid ""
 "<p>With this button, you can pick the color from original image used to set "
 "<b>Highlight Tone</b> levels input on Red, Green, Blue, and Luminosity "
@@ -8044,21 +7994,21 @@ msgstr ""
 "giá trị nhập cấp <b>Sắc chỗ sáng</b> trên kênh độ trưng màu Đỏ, Lục, Xanh và "
 "Độ trưng."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:328
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:321
 msgid "Adjust all levels automatically."
 msgstr "Tự động điều chỉnh mọi cấp."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:329
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:322
 msgid ""
 "<p>If you press this button, all channel levels will be adjusted "
 "automatically."
 msgstr "<p>Nếu bạn bấm cái nút này, mọi cấp kênh sẽ được điều chỉnh tự động."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:334
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:327
 msgid "Reset current channel levels' values."
 msgstr "Đặ lại giá trị của các cấp kênh hiện có."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:335
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:328
 msgid ""
 "<p>If you press this button, all levels' values from the current selected "
 "channel will be reset to the default values."
@@ -8066,27 +8016,27 @@ msgstr ""
 "<p>Nếu bạn bấm cái nút này, mọi giá trị của cấp từ kênh được chọn hiện thời "
 "sẽ được đặt lại thành giá trị mặc định."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:654
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:647
 msgid "Adjust Level"
 msgstr "Điều chỉnh cấp"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:813
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:805
 msgid "Select Gimp Levels File to Load"
 msgstr "Chọn tập tin cấp GIMP cần tải"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:819
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:812
 msgid "Cannot load from the Gimp levels text file."
 msgstr "Không thể tải từ tập tin văn bản cấp GIMP."
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:834
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:827
 msgid "Gimp Levels File to Save"
 msgstr "Tập tin cấp GIMP cần lưu"
 
-#: imageplugins/adjustlevels/adjustlevels.cpp:840
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:834
 msgid "Cannot save to the Gimp levels text file."
 msgstr "Không thể lưu vào tập tin văn bản cấp GIMP."
 
-#: imageplugins/adjustlevels/imageplugin_adjustlevels.cpp:47
+#: imageplugins/adjustlevels/imageplugin_adjustlevels.cpp:49
 msgid "Levels Adjust..."
 msgstr "Điều chỉnh cấp..."
 
@@ -8515,64 +8465,40 @@ msgstr "<p>Ở đây hãy đặt độ sâu của hiệu ứng chạm nổi ản
 msgid "Emboss"
 msgstr "Chạm nổi"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:65
-#: imageplugins/restoration/imageeffect_restoration.cpp:74
-msgid "Photograph Restoration"
-msgstr "Phục hồi lại ảnh chụp"
+#: imageplugins/restoration/restorationtool.cpp:73
+#: imageplugins/restoration/restorationtool.cpp:301
+msgid "Restoration"
+msgstr "Phục hồi lại"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:76
-msgid "A digiKam image plugin to restore a photograph."
-msgstr "Phần bổ sung ảnh digiKam để phục hồi lại ảnh chụp."
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:85
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
-msgid "David Tschumperle"
-msgstr "David Tschumperle"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:85
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
-msgid "CImg library"
-msgstr "Thư viện CImg"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:88
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
-msgid "Gerhard Kulzer"
-msgstr "Gerhard Kulzer"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:88
-#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
-msgid "Feedback and plugin polishing"
-msgstr "Phản hồi và điều chỉnh phần bổ sung"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:99
+#: imageplugins/restoration/restorationtool.cpp:91
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:164
 msgid "Preset"
 msgstr "Định sẵn"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:105
+#: imageplugins/restoration/restorationtool.cpp:97
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:170
 #: utilities/imageeditor/tools/imageresize.cpp:227
 msgid "Visit CImg library website"
 msgstr "Thăm nơi Mạng của thư viện CImg"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:107
+#: imageplugins/restoration/restorationtool.cpp:99
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:172
 msgid "Filtering type:"
 msgstr "Kiểu lọc:"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:111
+#: imageplugins/restoration/restorationtool.cpp:103
 msgid "Reduce Uniform Noise"
 msgstr "giảm nhiễu đồng dạng"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:112
+#: imageplugins/restoration/restorationtool.cpp:104
 msgid "Reduce JPEG Artefacts"
 msgstr "Giảm đồ tạo tác JPEG"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:113
+#: imageplugins/restoration/restorationtool.cpp:105
 msgid "Reduce Texturing"
 msgstr "Giảm độ họa tiết hoá"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:114
+#: imageplugins/restoration/restorationtool.cpp:106
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the filter preset to use for photograph restoration:"
@@ -8596,33 +8522,29 @@ msgstr ""
 "<p><b>Giảm đồ họa tiết hoá</b>: giảm đồ tạo tác ảnh như họa tiết giấy hay "
 "mẫu Moire của ảnh đã quét.<p>"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:302
-msgid "Restoration"
-msgstr "Phục hồi lại"
-
-#: imageplugins/restoration/imageeffect_restoration.cpp:310
+#: imageplugins/restoration/restorationtool.cpp:308
 msgid "Photograph Restoration Settings File to Load"
 msgstr "Tập tin thiết lập phục hồi lại ảnh chụp cần tải"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:321
+#: imageplugins/restoration/restorationtool.cpp:319
 #, kde-format
 msgid "\"%1\" is not a Photograph Restoration settings text file."
 msgstr ""
 "« %1 » không phải là một tập tin văn bản thiết lập phục hồi lại ảnh chụp."
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:330
+#: imageplugins/restoration/restorationtool.cpp:328
 msgid "Cannot load settings from the Photograph Restoration text file."
 msgstr "Không thể tải thiết lập từ tập tin văn bản phục hồi lại ảnh chụp."
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:343
+#: imageplugins/restoration/restorationtool.cpp:341
 msgid "Photograph Restoration Settings File to Save"
 msgstr "Tập tin thiết lập phục hồi lại ảnh chụp cần lưu"
 
-#: imageplugins/restoration/imageeffect_restoration.cpp:352
+#: imageplugins/restoration/restorationtool.cpp:350
 msgid "Cannot save settings to the Photograph Restoration text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản phục hồi lại ảnh chụp."
 
-#: imageplugins/restoration/imageplugin_restoration.cpp:48
+#: imageplugins/restoration/imageplugin_restoration.cpp:50
 msgid "Restoration..."
 msgstr "Phục hồi lại..."
 
@@ -9126,10 +9048,10 @@ msgstr ""
 "kén màu trên ảnh, biểu đồ tần xuất sẽ hiển thị lớp màu tương ứng."
 
 #: imageplugins/coreplugin/hsl/hsltool.cpp:110
+#: imageplugins/coreplugin/rgbtool.cpp:110
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:130
 #: imageplugins/coreplugin/bcgtool.cpp:111
 #: imageplugins/coreplugin/bwsepiatool.cpp:216
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:98
 #: imageplugins/coreplugin/autocorrectiontool.cpp:112
 #, fuzzy
 #| msgid ""
@@ -9149,12 +9071,12 @@ msgstr ""
 "b>: hiển thị những giá trị kênh màu xanh.<p>"
 
 #: imageplugins/coreplugin/hsl/hsltool.cpp:121
+#: imageplugins/coreplugin/rgbtool.cpp:119
 #: imageplugins/coreplugin/imageeffect_iccproof.cpp:141
 #: imageplugins/coreplugin/bcgtool.cpp:122
+#: imageplugins/coreplugin/redeyetool.cpp:123
 #: imageplugins/coreplugin/bwsepiatool.cpp:227
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:107
 #: imageplugins/coreplugin/autocorrectiontool.cpp:123
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram scale.<p>If the image's maximal counts are "
@@ -9206,7 +9128,7 @@ msgstr "Độ nhạt:"
 msgid "<p>Set here the lightness adjustment of the image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ nhạt của ảnh."
 
-#: imageplugins/coreplugin/hsl/hsltool.cpp:453
+#: imageplugins/coreplugin/hsl/hsltool.cpp:450
 msgid "HSL Adjustments"
 msgstr "Điều chỉnh SBN"
 
@@ -9289,6 +9211,43 @@ msgid ""
 "tool"
 msgstr ""
 "Bạn cần phải chọn một vùng chứa mắt để dùng công cụ sửa chửa mắt màu đỏ."
+
+#: imageplugins/coreplugin/rgbtool.cpp:83
+#: imageplugins/coreplugin/rgbtool.cpp:460
+msgid "Color Balance"
+msgstr "Cán cân màu"
+
+#: imageplugins/coreplugin/rgbtool.cpp:89
+msgid ""
+"<p>Here you can see the image color-balance adjustments preview. You can "
+"pick color on image to see the color level corresponding on histogram."
+msgstr ""
+"<p>Ở đây có ô xem thử cách điều chỉnh cán cân màu của ảnh. Bạn có thể kén "
+"màu trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
+
+#: imageplugins/coreplugin/rgbtool.cpp:164
+msgid "Cyan"
+msgstr "Xanh lông mòng"
+
+#: imageplugins/coreplugin/rgbtool.cpp:173
+msgid "<p>Set here the cyan/red color adjustment of the image."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ/xanh lông mòng của ảnh đó."
+
+#: imageplugins/coreplugin/rgbtool.cpp:185
+msgid "Magenta"
+msgstr "Đỏ tươi"
+
+#: imageplugins/coreplugin/rgbtool.cpp:194
+msgid "<p>Set here the magenta/green color adjustment of the image."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ tươi/lục của ảnh đó."
+
+#: imageplugins/coreplugin/rgbtool.cpp:206
+msgid "Yellow"
+msgstr "Vàng"
+
+#: imageplugins/coreplugin/rgbtool.cpp:215
+msgid "<p>Set here the yellow/blue color adjustment of the image."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu vàng/xanh của ảnh đó."
 
 #: imageplugins/coreplugin/sharpnesseditor/imageeffect_sharpen.cpp:71
 msgid "Sharpening Photograph"
@@ -10184,6 +10143,81 @@ msgstr ""
 msgid "Gaussian Blur"
 msgstr "Cảnh mờ kiểu Gauss"
 
+#: imageplugins/coreplugin/redeyetool.cpp:85
+#, fuzzy
+#| msgid "Red Eye..."
+msgid "Red Eye"
+msgstr "Mắt đỏ..."
+
+#: imageplugins/coreplugin/redeyetool.cpp:92
+msgid ""
+"<p>Here you can see the image selection preview with red eye reduction "
+"applied."
+msgstr "<p>Ở đây bạn có thể thấy ô xem thử chọn ảnh giảm mắt đỏ</p>"
+
+#: imageplugins/coreplugin/redeyetool.cpp:112
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
+#| "display the image's luminosity values.<p><b>Red</b>: display the red "
+#| "image channel values.<p><b>Green</b>: display the green image channel "
+#| "values.<p><b>Blue</b>: display the blue image channel values.<p>"
+msgid ""
+"<p>Select the histogram channel to display:<p><b>Luminosity</b>: display the "
+"image's luminosity values.<p><b>Red</b>: display the red image channel "
+"values.<p><b>Green</b>: display the green image channel values.<p><b>Blue</"
+"b>: display the blue image channel values.<p>"
+msgstr ""
+"<p>Ở đây hãy chọn kênh biểu đồ tần xuất cần hiển thị:<p><b>Độ trưng</b>: "
+"hiển thị những giá trị độ trưng của ảnh.<p><b>Đỏ</b>: hiển thị những giá trị "
+"kênh màu đỏ.<p><b>Lục</b>: hiển thị những giá trị kênh màu lục.<p><b>Xanh</"
+"b>: hiển thị những giá trị kênh màu xanh.<p>"
+
+#: imageplugins/coreplugin/redeyetool.cpp:158
+msgid ""
+"<p>Here you can see the target preview image histogram of the selected image "
+"channel. It is updated upon setting changes."
+msgstr ""
+"<p>Ở đây bạn có thể xem bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh "
+"ảnh đã chọn. Điều này được tính lại khi nào thay đổi thiết lập."
+
+#: imageplugins/coreplugin/redeyetool.cpp:173
+msgid ""
+"<p>Sets the red color pixels selection threshold. Low values will select "
+"more red color pixels (agressive correction), high values less (mild "
+"correction). Use low value if eye have been selected exactly. Use high value "
+"if other parts of the face are also selected."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:183
+#, fuzzy
+#| msgid "<p>Sets the smoothness value to blur red color pixels selection."
+msgid ""
+"<p>Sets the smoothness value when blurring the border of the changed pixels. "
+"This leads to a more naturally looking pupil."
+msgstr "<p>Đặt giá trị độ mịn để che mờ sự chọn các điểm ảnh màu đỏ."
+
+#: imageplugins/coreplugin/redeyetool.cpp:187
+msgid "Coloring Tint:"
+msgstr "Nhuốm tô màu :"
+
+#: imageplugins/coreplugin/redeyetool.cpp:190
+msgid "<p>Sets a custom color when re-colorizing the eyes."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:200
+msgid "Tint Level:"
+msgstr "Cấp nhuốm:"
+
+#: imageplugins/coreplugin/redeyetool.cpp:205
+msgid ""
+"<p>Set the tint level to adjust the luminosity of the new color of the pupil."
+msgstr ""
+
+#: imageplugins/coreplugin/redeyetool.cpp:472
+msgid "Red Eyes Correction"
+msgstr "Sửa mắt đỏ"
+
 #: imageplugins/coreplugin/bwsepiatool.cpp:181
 #, fuzzy
 #| msgid "Black && White..."
@@ -10620,43 +10654,6 @@ msgstr "Tập tin thiết lập đen trắng cần lưu"
 msgid "Cannot save settings to the Black & White text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thiết lập đen trắng."
 
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:74
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:450
-msgid "Color Balance"
-msgstr "Cán cân màu"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:80
-msgid ""
-"<p>Here you can see the image color-balance adjustments preview. You can "
-"pick color on image to see the color level corresponding on histogram."
-msgstr ""
-"<p>Ở đây có ô xem thử cách điều chỉnh cán cân màu của ảnh. Bạn có thể kén "
-"màu trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:152
-msgid "Cyan"
-msgstr "Xanh lông mòng"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:161
-msgid "<p>Set here the cyan/red color adjustment of the image."
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ/xanh lông mòng của ảnh đó."
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:173
-msgid "Magenta"
-msgstr "Đỏ tươi"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:182
-msgid "<p>Set here the magenta/green color adjustment of the image."
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ tươi/lục của ảnh đó."
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:194
-msgid "Yellow"
-msgstr "Vàng"
-
-#: imageplugins/coreplugin/imageeffect_rgb.cpp:203
-msgid "<p>Set here the yellow/blue color adjustment of the image."
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu vàng/xanh của ảnh đó."
-
 #: imageplugins/coreplugin/autocorrectiontool.cpp:80
 #, fuzzy
 #| msgid "Auto-Correction..."
@@ -10672,7 +10669,7 @@ msgstr ""
 "kén màu trên ảnh để xem cấp màu tương ứng trong biểu đồ tần xuất."
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:172
-#: imageplugins/coreplugin/autocorrectiontool.cpp:388
+#: imageplugins/coreplugin/autocorrectiontool.cpp:385
 msgid "Auto Levels"
 msgstr "Cấp tự động"
 
@@ -10688,7 +10685,7 @@ msgstr ""
 "kênh màu Đỏ, Lục và Xanh thành phạm vi biểu đồ tần xuất đầy đủ.</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:181
-#: imageplugins/coreplugin/autocorrectiontool.cpp:392
+#: imageplugins/coreplugin/autocorrectiontool.cpp:389
 msgid "Normalize"
 msgstr "Chuẩn hoá"
 
@@ -10705,7 +10702,7 @@ msgstr ""
 "không tươi.</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:191
-#: imageplugins/coreplugin/autocorrectiontool.cpp:396
+#: imageplugins/coreplugin/autocorrectiontool.cpp:393
 msgid "Equalize"
 msgstr "Làm bằng"
 
@@ -10727,7 +10724,7 @@ msgstr ""
 "rất mạnh mẽ, mà có thể giải cứu ảnh hay hủy nó.</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:204
-#: imageplugins/coreplugin/autocorrectiontool.cpp:400
+#: imageplugins/coreplugin/autocorrectiontool.cpp:397
 msgid "Stretch Contrast"
 msgstr "Kéo giãn độ tương phản"
 
@@ -10742,7 +10739,7 @@ msgstr ""
 "nhất thành phạm vi rộng nhất, điều chỉnh mọi thứ nằm giữa.</p>"
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:213
-#: imageplugins/coreplugin/autocorrectiontool.cpp:404
+#: imageplugins/coreplugin/autocorrectiontool.cpp:401
 msgid "Auto Exposure"
 msgstr "Tự động phơi nắng"
 
@@ -10755,79 +10752,6 @@ msgstr ""
 "<b>Tự động phơi nắng</b>:<p>Tùy chọn này tăng cường độ tương phản và độ sáng "
 "của các giá trị RGB của ảnh, để tính độ phơi nắng và cấp màu đen tối ưu, "
 "dùng các thuộc tính của biểu đồ tần xuất của ảnh.</p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:77
-msgid "Red Eye Reduction"
-msgstr "Giảm mắt đỏ"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:83
-msgid ""
-"<p>Here you can see the image selection preview with red eye reduction "
-"applied."
-msgstr "<p>Ở đây bạn có thể thấy ô xem thử chọn ảnh giảm mắt đỏ</p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:100
-#, fuzzy
-#| msgid ""
-#| "<p>Select here the histogram channel to display:<p><b>Luminosity</b>: "
-#| "display the image's luminosity values.<p><b>Red</b>: display the red "
-#| "image channel values.<p><b>Green</b>: display the green image channel "
-#| "values.<p><b>Blue</b>: display the blue image channel values.<p>"
-msgid ""
-"<p>Select the histogram channel to display:<p><b>Luminosity</b>: display the "
-"image's luminosity values.<p><b>Red</b>: display the red image channel "
-"values.<p><b>Green</b>: display the green image channel values.<p><b>Blue</"
-"b>: display the blue image channel values.<p>"
-msgstr ""
-"<p>Ở đây hãy chọn kênh biểu đồ tần xuất cần hiển thị:<p><b>Độ trưng</b>: "
-"hiển thị những giá trị độ trưng của ảnh.<p><b>Đỏ</b>: hiển thị những giá trị "
-"kênh màu đỏ.<p><b>Lục</b>: hiển thị những giá trị kênh màu lục.<p><b>Xanh</"
-"b>: hiển thị những giá trị kênh màu xanh.<p>"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:146
-msgid ""
-"<p>Here you can see the target preview image histogram of the selected image "
-"channel. It is updated upon setting changes."
-msgstr ""
-"<p>Ở đây bạn có thể xem bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh "
-"ảnh đã chọn. Điều này được tính lại khi nào thay đổi thiết lập."
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:161
-msgid ""
-"<p>Sets the red color pixels selection threshold. Low values will select "
-"more red color pixels (agressive correction), high values less (mild "
-"correction). Use low value if eye have been selected exactly. Use high value "
-"if other parts of the face are also selected."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:171
-#, fuzzy
-#| msgid "<p>Sets the smoothness value to blur red color pixels selection."
-msgid ""
-"<p>Sets the smoothness value when blurring the border of the changed pixels. "
-"This leads to a more naturally looking pupil."
-msgstr "<p>Đặt giá trị độ mịn để che mờ sự chọn các điểm ảnh màu đỏ."
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:175
-msgid "Coloring Tint:"
-msgstr "Nhuốm tô màu :"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:178
-msgid "<p>Sets a custom color when re-colorizing the eyes."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:188
-msgid "Tint Level:"
-msgstr "Cấp nhuốm:"
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:193
-msgid ""
-"<p>Set the tint level to adjust the luminosity of the new color of the pupil."
-msgstr ""
-
-#: imageplugins/coreplugin/imageeffect_redeye.cpp:461
-msgid "Red Eyes Correction"
-msgstr "Sửa mắt đỏ"
 
 #: imageplugins/sheartool/imageplugin_sheartool.cpp:47
 msgid "Shear..."
@@ -10927,6 +10851,22 @@ msgstr "Sơn vào ảnh chụp"
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:139
 msgid "A digiKam image plugin to inpaint a photograph."
 msgstr "Phần bổ sung ảnh digiKam để sơn vào ành chụp."
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
+msgid "David Tschumperle"
+msgstr "David Tschumperle"
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:148
+msgid "CImg library"
+msgstr "Thư viện CImg"
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
+msgid "Gerhard Kulzer"
+msgstr "Gerhard Kulzer"
+
+#: imageplugins/inpainting/imageeffect_inpainting.cpp:151
+msgid "Feedback and plugin polishing"
+msgstr "Phản hồi và điều chỉnh phần bổ sung"
 
 #: imageplugins/inpainting/imageeffect_inpainting.cpp:176
 msgid "Remove Small Artefact"
@@ -13568,10 +13508,6 @@ msgstr ""
 msgid "Please wait while the image is being saved..."
 msgstr "Hãy đời trong khi lưu ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1259
-msgid "Loading: "
-msgstr "Đang tải: "
-
 #: utilities/imageeditor/editor/editorwindow.cpp:1277
 #, kde-format
 msgid "Failed to load image \"%1\""
@@ -15901,6 +15837,58 @@ msgid ""
 "to perform a\n"
 "Fuzzy search"
 msgstr ""
+
+#~ msgid "Color Channel Mixer"
+#~ msgstr "Bộ hoà kênh màu"
+
+#~ msgid "An image color channel mixer plugin for digiKam."
+#~ msgstr "Phần bổ sung hoà kênh màu ảnh cho digiKam."
+
+#~ msgid "(c) 2005-2007, Gilles Caulier"
+#~ msgstr "© năm 2005-2007 của Gilles Caulier"
+
+#~ msgid ""
+#~ "A digiKam image plugin for fixing dots produced by hot/stuck/dead pixels "
+#~ "from a CCD."
+#~ msgstr ""
+#~ "Phần bổ sung ảnh digiKam để sửa chữa chấm được tạo bởi điểm ảnh nóng/bị "
+#~ "kẹt/chết từ CCD."
+
+#, fuzzy
+#~| msgid ""
+#~| "(c) 2004-2005, Renchi Raju\n"
+#~| "(c) 2006-2007, Gilles Caulier"
+#~ msgid ""
+#~ "(c) 2005-2006, Unai Garro\n"
+#~ "(c) 2005-2008, Gilles Caulier"
+#~ msgstr ""
+#~ "© năm 2004-2005 của Renchi Raju\n"
+#~ "© năm 2006-2007 của Gilles Caulier"
+
+#~ msgid "Unai Garro"
+#~ msgstr "Unai Garro"
+
+#~ msgid "Adjust Color Curves"
+#~ msgstr "Chỉnh cong màu"
+
+#~ msgid "An image-histogram-curves adjustment plugin for digiKam."
+#~ msgstr ""
+#~ "Phần bổ sung điều chỉnh đường cong biểu đồ tần xuất ảnh cho digiKam."
+
+#~ msgid "Adjust Color Levels"
+#~ msgstr "Điều chỉnh cấp màu"
+
+#~ msgid "An image-histogram-levels adjustment plugin for digiKam."
+#~ msgstr "Phần bổ sung điều chỉnh cấp biểu đồ tần xuất ảnh cho digiKam."
+
+#~ msgid "Photograph Restoration"
+#~ msgstr "Phục hồi lại ảnh chụp"
+
+#~ msgid "A digiKam image plugin to restore a photograph."
+#~ msgstr "Phần bổ sung ảnh digiKam để phục hồi lại ảnh chụp."
+
+#~ msgid "Red Eye Reduction"
+#~ msgstr "Giảm mắt đỏ"
 
 #~ msgid "Auto Color Correction"
 #~ msgstr "Sửa chữa màu tự động"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-03 10:07+0200\n"
+"POT-Creation-Date: 2008-09-04 09:43+0200\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16613,14 +16613,12 @@ msgstr "Có %1 kênh được tạo."
 
 #: protocols/irc/libkirc/kircengine_numericreplies.cpp:204
 #: protocols/irc/libkirc/client/tasks/kirci18ntask.cpp:400
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:525
 #, kde-format
 msgid "Server was too busy to execute %1."
 msgstr "Máy phục vụ quá bận để thực hiện %1."
 
 #: protocols/irc/libkirc/kircengine_numericreplies.cpp:270
 #: protocols/irc/libkirc/client/tasks/kirci18ntask.cpp:466
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:597
 msgid "You have been marked as being away."
 msgstr "Bạn có nhãn « Vắng mặt »."
 
@@ -16701,26 +16699,7 @@ msgstr "Tên hiệu %1 đang được dùng"
 msgid "Incorrect password."
 msgstr "Mật khẩu không đúng."
 
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:475
-#, fuzzy, kde-format
-msgid "There is %1 operator online."
-msgid_plural "There are %1 operators online."
-msgstr[0] "Có %s người thao tác còn trực tuyến."
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:490
-#, fuzzy, kde-format
-msgid "There is %1 unknown connection."
-msgid_plural "There are %1 unknown connections."
-msgstr[0] "Có %s kết nối lạ."
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:505
-#, fuzzy, kde-format
-#| msgid "There are %1 channel formed."
-msgid "There has been %1 channel formed."
-msgid_plural "There have been %1 channels formed."
-msgstr[0] "Có %1 kênh được tạo."
-
-#: protocols/irc/libkirc/client/kircclienthandler.cpp:861
+#: protocols/irc/libkirc/client/kircclienthandler.cpp:886
 #, fuzzy
 #| msgid "Password Incorrect"
 msgid "Password Incorect"
@@ -16730,15 +16709,24 @@ msgstr "Mật khẩu không đúng"
 msgid "Acknowledge size is greater then the expected file size"
 msgstr "Kích cỡ xác nhận lớn hơn kích cỡ tập tin mong đợi"
 
-#: protocols/irc/ircaccount.cpp:176
+#: protocols/irc/ircaccount.cpp:149
+#, kde-format
+msgid "Temporary Network - %1"
+msgstr ""
+
+#: protocols/irc/ircaccount.cpp:150
+msgid "Network imported from previous version of Kopete, or an IRC URI"
+msgstr ""
+
+#: protocols/irc/ircaccount.cpp:182
 msgid "Join Channel..."
 msgstr "Vào kênh..."
 
-#: protocols/irc/ircaccount.cpp:178
+#: protocols/irc/ircaccount.cpp:184
 msgid "Search Channels..."
 msgstr "Tìm kiếm kênh..."
 
-#: protocols/irc/ircaccount.cpp:243
+#: protocols/irc/ircaccount.cpp:253
 msgid ""
 "<qt>The network associated with this account has no valid hosts. Please "
 "ensure that the account has a valid network.</qt>"
@@ -16746,11 +16734,11 @@ msgstr ""
 "<qt>Mạng liên quan đến tài khoản này không phải có máy hợp lệ nào. Hãy kiểm "
 "tra lại tài khoản có mạng hợp lệ.</qt>"
 
-#: protocols/irc/ircaccount.cpp:245 protocols/irc/ircaccount.cpp:253
+#: protocols/irc/ircaccount.cpp:255 protocols/irc/ircaccount.cpp:263
 msgid "Network is Empty"
 msgstr "Mạng rỗng"
 
-#: protocols/irc/ircaccount.cpp:251
+#: protocols/irc/ircaccount.cpp:261
 #, kde-format
 msgid ""
 "<qt>The network associated with this account, <b>%1</b>, has no valid hosts. "
@@ -16759,7 +16747,7 @@ msgstr ""
 "<qt>Mạng liên quan đến tài khoản này, <b>%1</b>, không phải có máy hợp lệ "
 "nào. Hãy kiểm tra lại tài khoản có mạng hợp lệ.</qt>"
 
-#: protocols/irc/ircaccount.cpp:259
+#: protocols/irc/ircaccount.cpp:269
 #, kde-format
 msgid ""
 "<qt>Kopete could not connect to any of the servers in the network associated "
@@ -16768,7 +16756,7 @@ msgstr ""
 "<qt>Kopete không thể kết nối tới máy phục vụ nào trên mạng liên quan đến tài "
 "khoản này (<b>%1</b>). Hãy thử lại sau.</qt>"
 
-#: protocols/irc/ircaccount.cpp:262
+#: protocols/irc/ircaccount.cpp:272
 msgid "Network is Unavailable"
 msgstr "Mạng không sẵn sàng"
 
@@ -22908,6 +22896,22 @@ msgid ""
 "Sorry, We are unable to connect to the local mDNS server. Please Ensure "
 "Avahi Daemon is Running"
 msgstr ""
+
+#, fuzzy
+#~ msgid "There is %1 operator online."
+#~ msgid_plural "There are %1 operators online."
+#~ msgstr[0] "Có %s người thao tác còn trực tuyến."
+
+#, fuzzy
+#~ msgid "There is %1 unknown connection."
+#~ msgid_plural "There are %1 unknown connections."
+#~ msgstr[0] "Có %s kết nối lạ."
+
+#, fuzzy
+#~| msgid "There are %1 channel formed."
+#~ msgid "There has been %1 channel formed."
+#~ msgid_plural "There have been %1 channels formed."
+#~ msgstr[0] "Có %1 kênh được tạo."
 
 #~ msgid "A User Would Like to Send You a File"
 #~ msgstr "Người dùng muốn gửi cho bạn một tập tin"

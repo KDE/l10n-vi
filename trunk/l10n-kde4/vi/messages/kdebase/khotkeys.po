@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-18 09:52+0200\n"
+"POT-Creation-Date: 2008-09-21 09:47+0200\n"
 "PO-Revision-Date: 2007-06-23 21:43+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -122,7 +122,7 @@ msgstr "Nút chuột:"
 msgid "Application"
 msgstr "Hành động"
 
-#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:28
+#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:32
 #. i18n: ectx: property (text), widget (KPushButton, applicationButton)
 #: rc.cpp:44
 #, fuzzy
@@ -132,7 +132,7 @@ msgstr "Xoá bỏ hành động"
 
 #. i18n: file: kcm_hotkeys/ui/command_url_action_widget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, commandLabel)
-#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:54
+#: rc.cpp:47 kcm_hotkeys/hotkeys_tree_view.cpp:110
 #, fuzzy
 #| msgid "Command/URL : "
 msgid "Command/URL"
@@ -158,40 +158,42 @@ msgstr ""
 msgid "&Enabled"
 msgstr "&Tắt"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:38
+#: kcm_hotkeys/hotkeys_tree_view.cpp:40
 #, fuzzy
 #| msgid "&Reset"
 msgid "Test"
 msgstr "Đặt &lại"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:45
-msgid "Delete"
-msgstr "Xoá"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:51
-#, fuzzy
-#| msgid "Keyboard Shortcut"
-msgid "New Global Shortcut"
-msgstr "Phím tắt"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:58
-msgid "Dbus Command"
-msgstr ""
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:62
-#, fuzzy
-#| msgid "K-Menu Entry..."
-msgid "K-Menu Entry"
-msgstr "Mục trình đơn K..."
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:66 kcm_hotkeys/hotkeys_tree_view.cpp:94
-#: kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:59 kcm_hotkeys/hotkeys_tree_view.cpp:75
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "New &Group"
 msgid "New Group"
 msgstr "&Nhóm mới"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:94 kcm_hotkeys/hotkeys_model.cpp:60
+#: kcm_hotkeys/hotkeys_tree_view.cpp:69
+msgid "Delete"
+msgstr "Xoá"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:91
+#, fuzzy
+#| msgid "Keyboard Shortcut"
+msgid "New Global Shortcut"
+msgstr "Phím tắt"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:117
+#, fuzzy
+#| msgid "DCOP Call..."
+msgid "D-Bus Command"
+msgstr "Cuộc gọi DCOP..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:124
+#, fuzzy
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "Mục trình đơn K..."
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "Comment:"
 msgid "Comment"
@@ -257,17 +259,17 @@ msgid ""
 "i>"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:223
+#: kcm_hotkeys/hotkeys_model.cpp:332
 msgid "Name"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:226
+#: kcm_hotkeys/hotkeys_model.cpp:335
 #, fuzzy
 #| msgid "&Disable"
 msgid "Enabled"
 msgstr "&Tắt"
 
-#: kcm_hotkeys/hotkeys_model.cpp:229
+#: kcm_hotkeys/hotkeys_model.cpp:338
 msgid "Type"
 msgstr ""
 
@@ -294,7 +296,7 @@ msgstr "Trình nền KHotKeys"
 msgid "Id of the script to add to %1"
 msgstr ""
 
-#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:133
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:135
 msgid "Shortcut trigger: "
 msgstr "Lối tắt gây nên: "
 
@@ -363,7 +365,7 @@ msgstr "Kích hoạt cửa sổ : "
 msgid "Keyboard input: "
 msgstr "Nhập bàn phím: "
 
-#: libkhotkeysprivate/settings.cpp:190
+#: libkhotkeysprivate/settings.cpp:264
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
@@ -371,7 +373,7 @@ msgstr ""
 "Tập tin « hành động » này đã được nhập trước này. Bạn có chắc muốn nhập lại "
 "nó không?"
 
-#: libkhotkeysprivate/settings.cpp:201
+#: libkhotkeysprivate/settings.cpp:275
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
 "determined whether or not it has been imported already. Are you sure you "
@@ -380,11 +382,11 @@ msgstr ""
 "Tập tin « hành động » này không có trường ImportId nên không thể quyết định "
 "nếu nó đã được nhập trước không. Bạn có chắc muốn nhập nó không?"
 
-#: libkhotkeysprivate/settings.cpp:371
+#: libkhotkeysprivate/settings.cpp:444
 msgid "These entries were created using Menu Editor."
 msgstr "Những mục nhập này được tạo bằng Menu Editor."
 
-#: libkhotkeysprivate/windows.cpp:361
+#: libkhotkeysprivate/windows.cpp:360
 msgid "Window simple: "
 msgstr "Cửa sổ (đơn giản): "
 
@@ -793,11 +795,6 @@ msgstr "Mục nhập Menu Editor"
 
 #~ msgid "Command/URL..."
 #~ msgstr "Lệnh/URL..."
-
-#, fuzzy
-#~| msgid "DCOP Call..."
-#~ msgid "D-Bus Call..."
-#~ msgstr "Cuộc gọi DCOP..."
 
 #~ msgid "Keyboard Input..."
 #~ msgstr "Nhập bàn phím..."

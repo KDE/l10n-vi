@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-28 09:42+0200\n"
+"POT-Creation-Date: 2008-09-29 10:08+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -874,13 +874,13 @@ msgstr "Thanh công cụ chính"
 
 #. i18n: file: kdeui/widgets/kshortcutwidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, priLabel)
-#: rc.cpp:336 kdeui/dialogs/kshortcutseditor.cpp:560
+#: rc.cpp:336 kdeui/dialogs/kshortcutseditor.cpp:580
 msgid "Main:"
 msgstr "Chính:"
 
 #. i18n: file: kdeui/widgets/kshortcutwidget.ui:52
 #. i18n: ectx: property (text), widget (QLabel, altLabel)
-#: rc.cpp:339 kdeui/dialogs/kshortcutseditor.cpp:561
+#: rc.cpp:339 kdeui/dialogs/kshortcutseditor.cpp:581
 msgid "Alternate:"
 msgstr "Xen kẽ:"
 
@@ -5463,7 +5463,7 @@ msgid "Name"
 msgstr "Tên"
 
 #: knewstuff/knewstuff2/ui/kdxstranslation.cpp:49
-#: kdeui/dialogs/kshortcutseditor.cpp:585
+#: kdeui/dialogs/kshortcutseditor.cpp:605
 msgid "Description"
 msgstr "Mô tả"
 
@@ -6893,18 +6893,18 @@ msgstr "%1%"
 msgid "Change Icon"
 msgstr "Đổi &biểu tượng..."
 
-#: kdeui/dialogs/kshortcutseditor.cpp:113
-#: kdeui/dialogs/kshortcutseditor.cpp:581
+#: kdeui/dialogs/kshortcutseditor.cpp:114
+#: kdeui/dialogs/kshortcutseditor.cpp:601
 msgid "Shortcuts"
 msgstr "Phím tắt"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:484
-#: kdeui/dialogs/kshortcutseditor.cpp:500
-#: kdeui/widgets/kkeysequencewidget.cpp:150
+#: kdeui/dialogs/kshortcutseditor.cpp:504
+#: kdeui/dialogs/kshortcutseditor.cpp:520
+#: kdeui/widgets/kkeysequencewidget.cpp:152
 msgid "Key Conflict"
 msgstr "Phím xung đột"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:485
+#: kdeui/dialogs/kshortcutseditor.cpp:505
 #, kde-format
 msgid ""
 "The '%1' shape gesture has already been allocated to the \"%2\" action.\n"
@@ -6913,14 +6913,14 @@ msgstr ""
 "Điệu bộ hình « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:489
-#: kdeui/dialogs/kshortcutseditor.cpp:505 kdeui/shortcuts/kglobalaccel.cpp:439
-#: kdeui/widgets/kkeysequencewidget.cpp:154
-#: kdeui/widgets/kkeysequencewidget.cpp:463
+#: kdeui/dialogs/kshortcutseditor.cpp:509
+#: kdeui/dialogs/kshortcutseditor.cpp:525 kdeui/shortcuts/kglobalaccel.cpp:439
+#: kdeui/widgets/kkeysequencewidget.cpp:160
+#: kdeui/widgets/kkeysequencewidget.cpp:481
 msgid "Reassign"
 msgstr "Gán lại"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:501
+#: kdeui/dialogs/kshortcutseditor.cpp:521
 #, kde-format
 msgid ""
 "The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
@@ -6929,20 +6929,20 @@ msgstr ""
 "Điệu bộ đu « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:542
+#: kdeui/dialogs/kshortcutseditor.cpp:562
 #, fuzzy, kde-format
 #| msgid "Shortcuts"
 msgctxt "header for an applications shortcut list"
 msgid "Shortcuts for %1"
 msgstr "Phím tắt"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:562
+#: kdeui/dialogs/kshortcutseditor.cpp:582
 #, fuzzy
 #| msgid "Global"
 msgid "Global:"
 msgstr "Toàn cục"
 
-#: kdeui/dialogs/kshortcutseditor.cpp:577
+#: kdeui/dialogs/kshortcutseditor.cpp:597
 #, fuzzy
 #| msgid "Action"
 msgid "Action Name"
@@ -9076,107 +9076,113 @@ msgstr "Chọn loại"
 msgid "Select a block to be displayed"
 msgstr "Chọn khối cần hiển thị"
 
-#: kdeui/widgets/kcharselect.cpp:626 kdeui/widgets/kcharselect.cpp:628
+#: kdeui/widgets/kcharselect.cpp:629 kdeui/widgets/kcharselect.cpp:881
+#: kdeui/widgets/kcharselect-translation.cpp:43
+msgctxt "KCharselect unicode block name"
+msgid "Combining Diacritical Marks"
+msgstr ""
+
+#: kdeui/widgets/kcharselect.cpp:632 kdeui/widgets/kcharselect.cpp:634
 msgid "Character:"
 msgstr "Ký tự :"
 
-#: kdeui/widgets/kcharselect.cpp:628 kdeui/widgets/kcharselect.cpp:874
+#: kdeui/widgets/kcharselect.cpp:634 kdeui/widgets/kcharselect.cpp:885
 msgid "Non-printable"
 msgstr "Không thể in"
 
-#: kdeui/widgets/kcharselect.cpp:632
+#: kdeui/widgets/kcharselect.cpp:638
 msgid "Name: "
 msgstr "Tên:"
 
-#: kdeui/widgets/kcharselect.cpp:640
+#: kdeui/widgets/kcharselect.cpp:646
 msgid "Annotations and Cross References"
 msgstr "Phụ chú và tham chiếu chéo"
 
-#: kdeui/widgets/kcharselect.cpp:644
+#: kdeui/widgets/kcharselect.cpp:650
 msgid "Alias names:"
 msgstr "Tên bí danh:"
 
-#: kdeui/widgets/kcharselect.cpp:652
+#: kdeui/widgets/kcharselect.cpp:658
 msgid "Notes:"
 msgstr "Ghi chú :"
 
-#: kdeui/widgets/kcharselect.cpp:660
+#: kdeui/widgets/kcharselect.cpp:666
 msgid "See also:"
 msgstr "Xem cũng:"
 
-#: kdeui/widgets/kcharselect.cpp:672
+#: kdeui/widgets/kcharselect.cpp:678
 msgid "Equivalents:"
 msgstr "Tương đương:"
 
-#: kdeui/widgets/kcharselect.cpp:680
+#: kdeui/widgets/kcharselect.cpp:686
 msgid "Approximate equivalents:"
 msgstr "Tương đương xấp xỉ:"
 
-#: kdeui/widgets/kcharselect.cpp:689
+#: kdeui/widgets/kcharselect.cpp:695
 msgid "CJK Ideograph Information"
 msgstr "Thông tin chữ viết ghi ý Hoa/Nhật/Hàn"
 
-#: kdeui/widgets/kcharselect.cpp:692
+#: kdeui/widgets/kcharselect.cpp:698
 msgid "Definition in English: "
 msgstr "Định nghĩa tiếng Anh:"
 
-#: kdeui/widgets/kcharselect.cpp:697
+#: kdeui/widgets/kcharselect.cpp:703
 msgid "Mandarin Pronunciation: "
 msgstr "Phát âm tiếng Hoa truyền thống:"
 
-#: kdeui/widgets/kcharselect.cpp:702
+#: kdeui/widgets/kcharselect.cpp:708
 msgid "Cantonese Pronunciation: "
 msgstr "Phát âm tiếng Hoa phổ thông:"
 
-#: kdeui/widgets/kcharselect.cpp:707
+#: kdeui/widgets/kcharselect.cpp:713
 msgid "Japanese On Pronunciation: "
 msgstr "Phát âm tiếng Nhật On:"
 
-#: kdeui/widgets/kcharselect.cpp:712
+#: kdeui/widgets/kcharselect.cpp:718
 msgid "Japanese Kun Pronunciation: "
 msgstr "Phát âm tiếng Nhật Kun:"
 
-#: kdeui/widgets/kcharselect.cpp:717
+#: kdeui/widgets/kcharselect.cpp:723
 msgid "Tang Pronunciation: "
 msgstr "Phát âm Tang:"
 
-#: kdeui/widgets/kcharselect.cpp:722
+#: kdeui/widgets/kcharselect.cpp:728
 msgid "Korean Pronunciation: "
 msgstr "Phát âm Hàn:"
 
-#: kdeui/widgets/kcharselect.cpp:728
+#: kdeui/widgets/kcharselect.cpp:734
 msgid "General Character Properties"
 msgstr "Thuộc tính ký tự chung"
 
-#: kdeui/widgets/kcharselect.cpp:729
+#: kdeui/widgets/kcharselect.cpp:735
 msgid "Block: "
 msgstr "Khối:"
 
-#: kdeui/widgets/kcharselect.cpp:730
+#: kdeui/widgets/kcharselect.cpp:736
 msgid "Unicode category: "
 msgstr "Loại Unicode:"
 
-#: kdeui/widgets/kcharselect.cpp:734
+#: kdeui/widgets/kcharselect.cpp:740
 msgid "Various Useful Representations"
 msgstr "Đại diện hữu ích khác nhau"
 
-#: kdeui/widgets/kcharselect.cpp:735
+#: kdeui/widgets/kcharselect.cpp:741
 msgid "UTF-8:"
 msgstr "UTF-8:"
 
-#: kdeui/widgets/kcharselect.cpp:738
+#: kdeui/widgets/kcharselect.cpp:744
 msgid "UTF-16: "
 msgstr "UTF-16: "
 
-#: kdeui/widgets/kcharselect.cpp:739
+#: kdeui/widgets/kcharselect.cpp:745
 msgid "C octal escaped UTF-8: "
 msgstr "UTF-8 thoát bát phân C:"
 
-#: kdeui/widgets/kcharselect.cpp:742
+#: kdeui/widgets/kcharselect.cpp:748
 msgid "XML decimal entity:"
 msgstr "Thực thể thập phân XML:"
 
-#: kdeui/widgets/kcharselect.cpp:875
+#: kdeui/widgets/kcharselect.cpp:887
 #, fuzzy, kde-format
 #| msgctxt "Character"
 #| msgid ""
@@ -9304,11 +9310,6 @@ msgstr ""
 #: kdeui/widgets/kcharselect-translation.cpp:42
 msgctxt "KCharselect unicode block name"
 msgid "Spacing Modifier Letters"
-msgstr ""
-
-#: kdeui/widgets/kcharselect-translation.cpp:43
-msgctxt "KCharselect unicode block name"
-msgid "Combining Diacritical Marks"
 msgstr ""
 
 #: kdeui/widgets/kcharselect-translation.cpp:44
@@ -10418,33 +10419,36 @@ msgstr "Không rõ"
 msgid "&Copy Full Text"
 msgstr "&Chép đoạn"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:151
-#, kde-format
+#: kdeui/widgets/kkeysequencewidget.cpp:154
+#, fuzzy, kde-format
+#| msgid ""
+#| "The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
+#| "Do you want to reassign it from that action to the current one?"
 msgid ""
-"The '%1' key combination has already been allocated to the \"%2\" action.\n"
-"Do you want to reassign it from that action to the current one?"
+"The \"%1\" key sequence conflicts with \"%2\" for the \"%3\" action.\n"
+"Do you want to assign an empty shortcut to that action?"
 msgstr ""
-"Tổ hợp phím « %1 » đã được gán cho hành động « %2 ».\n"
+"Điệu bộ đu « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:162
+#: kdeui/widgets/kkeysequencewidget.cpp:168
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Shortcut conflict"
 msgstr "Phím tắt"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:163
+#: kdeui/widgets/kkeysequencewidget.cpp:169
 #, kde-format
 msgid ""
 "<qt>The '%1' key combination is already used by the <b>%2</b> action."
 "<br>Please select a different one.</qt>"
 msgstr ""
 
-#: kdeui/widgets/kkeysequencewidget.cpp:457
+#: kdeui/widgets/kkeysequencewidget.cpp:475
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Xung đột với phím tắt ứng dụng chuẩn"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:458
+#: kdeui/widgets/kkeysequencewidget.cpp:476
 #, fuzzy, kde-format
 #| msgid ""
 #| "The '%1' key combination has already been allocated to the standard "
@@ -10459,12 +10463,12 @@ msgstr ""
 "nhiều ứng dụng.\n"
 "Vậy bạn không thể sử dụng nó lam phím tắt toàn cục."
 
-#: kdeui/widgets/kkeysequencewidget.cpp:490
+#: kdeui/widgets/kkeysequencewidget.cpp:508
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Gõ"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:497
+#: kdeui/widgets/kkeysequencewidget.cpp:515
 #, fuzzy
 #| msgid "None"
 msgctxt "No shortcut defined"
@@ -12458,19 +12462,19 @@ msgstr ""
 msgid "Daniel Molkentin"
 msgstr ""
 
-#: nepomuk/core/resource.cpp:386
+#: nepomuk/core/resource.cpp:398
 msgid "Success"
 msgstr "Thành công"
 
-#: nepomuk/core/resource.cpp:388
+#: nepomuk/core/resource.cpp:400
 msgid "Communication error"
 msgstr "Lỗi giao thông"
 
-#: nepomuk/core/resource.cpp:390
+#: nepomuk/core/resource.cpp:402
 msgid "Invalid type in Database"
 msgstr "Gặp kiểu không hợp lệ trong cơ sở dữ liệu"
 
-#: nepomuk/core/resource.cpp:392
+#: nepomuk/core/resource.cpp:404
 msgid "Unknown error"
 msgstr "Gặp lỗi lạ"
 
@@ -13834,6 +13838,14 @@ msgstr "&Mẹo của hôm nay"
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
+
+#~ msgid ""
+#~ "The '%1' key combination has already been allocated to the \"%2\" "
+#~ "action.\n"
+#~ "Do you want to reassign it from that action to the current one?"
+#~ msgstr ""
+#~ "Tổ hợp phím « %1 » đã được gán cho hành động « %2 ».\n"
+#~ "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
 #~ msgid "Already open."
 #~ msgstr "Đã mở."

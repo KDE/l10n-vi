@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-30 09:38+0200\n"
+"POT-Creation-Date: 2008-10-02 09:44+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -5983,20 +5983,23 @@ msgid_plural "%2 / %1 files"
 msgstr[0] "%2 / %1 tập tin"
 
 #: kdeui/jobs/kwidgetjobtracker.cpp:374
-#, kde-format
-msgid "%1 % of %2 "
+#, fuzzy, kde-format
+#| msgid "%1 % of %2 "
+msgid "%1% of %2"
 msgstr "%1 % trên %2 "
 
 #: kdeui/jobs/kwidgetjobtracker.cpp:377
-#, kde-format
-msgid "%2 % of 1 file"
-msgid_plural "%2 % of %1 files"
+#, fuzzy, kde-format
+#| msgid "%2 % of 1 file"
+#| msgid_plural "%2 % of %1 files"
+msgid "%2% of 1 file"
+msgid_plural "%2% of %1 files"
 msgstr[0] "%2 % trên %1 tập tin"
 
-#: kdeui/jobs/kwidgetjobtracker.cpp:379
-#, kde-format
-msgid "%1 %"
-msgstr "%1 %"
+#: kdeui/jobs/kwidgetjobtracker.cpp:379 khtml/khtml_ext.cpp:1089
+#, no-c-format, kde-format
+msgid "%1%"
+msgstr "%1%"
 
 #: kdeui/jobs/kwidgetjobtracker.cpp:392
 msgid "Stalled"
@@ -6005,8 +6008,8 @@ msgstr "Bị ngừng chạy"
 #: kdeui/jobs/kwidgetjobtracker.cpp:397
 #, fuzzy, kde-format
 #| msgid "%1/s ( %2 remaining )"
-msgid "%2/s ( %3 remaining )"
-msgid_plural "%2/s ( %3 remaining )"
+msgid "%2/s (%3 remaining)"
+msgid_plural "%2/s (%3 remaining)"
 msgstr[0] "%1/g ( %2 còn lại )"
 
 #: kdeui/jobs/kwidgetjobtracker.cpp:400
@@ -10999,11 +11002,6 @@ msgstr ""
 msgid "Default Font Size (100%)"
 msgstr "Kích cỡ phông chữ mặc định (100%)"
 
-#: khtml/khtml_ext.cpp:1089
-#, no-c-format, kde-format
-msgid "%1%"
-msgstr "%1%"
-
 #: khtml/khtml_printsettings.cpp:31
 msgid ""
 "<qt><p><strong>'Print images'</strong></p><p>If this checkbox is enabled, "
@@ -11466,42 +11464,42 @@ msgstr ""
 msgid "(%1/s)"
 msgstr "(%1/g)"
 
-#: khtml/khtml_part.cpp:6914
+#: khtml/khtml_part.cpp:6913
 msgid "Security Warning"
 msgstr "Cảnh báo bảo mật"
 
-#: khtml/khtml_part.cpp:6920
+#: khtml/khtml_part.cpp:6919
 #, fuzzy, kde-format
 #| msgid "<qt>Access by untrusted page to<BR><B>%1</B><BR> denied."
 msgid "<qt>Access by untrusted page to<br /><b>%1</b><br /> denied.</qt>"
 msgstr "<qt>Trang không tin cây truy cập<BR><B>%1</B><BR>bị từ chối."
 
-#: khtml/khtml_part.cpp:6921 khtml/java/kjavaappletserver.cpp:792
+#: khtml/khtml_part.cpp:6920 khtml/java/kjavaappletserver.cpp:792
 msgid "Security Alert"
 msgstr "Cảnh giác bảo mật"
 
-#: khtml/khtml_part.cpp:7271
+#: khtml/khtml_part.cpp:7270
 #, kde-format
 msgid "The wallet '%1' is open and being used for form data and passwords."
 msgstr "Ví « %1 » đã mở, và hoạt động với dữ liệu đơn và mật khẩu."
 
-#: khtml/khtml_part.cpp:7328
+#: khtml/khtml_part.cpp:7327
 msgid "&Close Wallet"
 msgstr "Đóng ví"
 
-#: khtml/khtml_part.cpp:7371
+#: khtml/khtml_part.cpp:7370
 msgid "JavaScript &Debugger"
 msgstr "Bộ gỡ lỗi &JavaScript"
 
-#: khtml/khtml_part.cpp:7404
+#: khtml/khtml_part.cpp:7403
 msgid "This page was prevented from opening a new window via JavaScript."
 msgstr "Trang này bị JavaScript ngăn cản mở cửa sổ mới."
 
-#: khtml/khtml_part.cpp:7410
+#: khtml/khtml_part.cpp:7409
 msgid "Popup Window Blocked"
 msgstr "Cửa sổ bất lên bị chặn"
 
-#: khtml/khtml_part.cpp:7410
+#: khtml/khtml_part.cpp:7409
 msgid ""
 "This page has attempted to open a popup window but was blocked.\n"
 "You can click on this icon in the status bar to control this behavior\n"
@@ -11511,7 +11509,7 @@ msgstr ""
 "Bạn có thể nhắp vào biểu tượng này trong thanh trạng thái\n"
 "để điều khiển ứng xử này, hoặc để mở cửa sổ bật lên."
 
-#: khtml/khtml_part.cpp:7423
+#: khtml/khtml_part.cpp:7422
 #, fuzzy, kde-format
 #| msgid "&Show Blocked Popup Window"
 #| msgid_plural "Show %1 Blocked Popup Windows"
@@ -11519,11 +11517,11 @@ msgid "&Show Blocked Popup Window"
 msgid_plural "&Show %1 Blocked Popup Windows"
 msgstr[0] "Hiện %1 cửa sổ bật lên bị chặn"
 
-#: khtml/khtml_part.cpp:7424
+#: khtml/khtml_part.cpp:7423
 msgid "Show Blocked Window Passive Popup &Notification"
 msgstr "Hiện thông &báo bật lên bị động cửa sổ bị chặn"
 
-#: khtml/khtml_part.cpp:7426
+#: khtml/khtml_part.cpp:7425
 msgid "&Configure JavaScript New Window Policies..."
 msgstr "&Cấu hình chính sách về cửa sổ JavaScript mới..."
 
@@ -13850,6 +13848,9 @@ msgstr "&Mẹo của hôm nay"
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
+
+#~ msgid "%1 %"
+#~ msgstr "%1 %"
 
 #~ msgid ""
 #~ "The '%1' key combination has already been allocated to the \"%2\" "

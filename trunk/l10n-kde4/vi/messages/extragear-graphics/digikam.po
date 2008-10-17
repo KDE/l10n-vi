@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-15 10:43+0200\n"
+"POT-Creation-Date: 2008-10-17 09:40+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -2112,7 +2112,7 @@ msgid "No profile available..."
 msgstr "Không có sẵn hồ sơ..."
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:126
-#: utilities/setup/setupcollections.cpp:225
+#: showfoto/setup/setupeditor.cpp:192 utilities/setup/setupcollections.cpp:225
 msgid "Name"
 msgstr "Tên"
 
@@ -3182,7 +3182,8 @@ msgid "First Run"
 msgstr "Thứ nhất:"
 
 #: digikam/digikamfirstrun.cpp:72
-msgid "<b>Configure First Local Root Album and Database File Paths</b>"
+msgid ""
+"<b>First-run Wizard: Configure where images and meta-data are stored</b>"
 msgstr ""
 
 #: digikam/digikamfirstrun.cpp:93
@@ -3195,142 +3196,150 @@ msgstr "Vẽ biếm hoạ"
 
 #: digikam/digikamfirstrun.cpp:98
 msgid ""
-"<p>Please enter a folder where you want to store your pictures.</p> <p>If "
-"you already have a folder where you usually store your pictures, choose that "
-"one. You can as well pick a new location or use the suggested folder.<br/> "
-"You can add more locations later on from the <i>Settings</i> menu. Removable "
-"media and shared file systems are supported.</p>"
+"<p>Please enter a location where you want to store your images.</p> <p>You "
+"can choose any local folder, even one that already contains images.<br/> "
+"More folders can be added later under the <i>Settings</i> menu. </p> "
+"<p><i>Note:</i> Removable media (like USB drives) and shared file systems "
+"(both NFS or Samba) are supported.</p>"
 msgstr ""
 
 #: digikam/digikamfirstrun.cpp:111
 msgid ""
-"<p>Digikam stores information about your pictures in a database file. Please "
-"set the location of this file. It is fine to use the same directory as "
-"above. <br>Please note that you should have write access to the folder, and "
-"that you cannot use a remote file system here, such as NFS."
+"<p>Digikam stores information and meta-data about your images in a database "
+"file. Please set the location of this file or accept the default.</"
+"p><p><i>Note:</i> You need to have write access to the folder used here, and "
+"you cannot use a remote location on a networked server, using NFS or Samba.</"
+"p>"
 msgstr ""
 
-#: digikam/digikamfirstrun.cpp:165
+#: digikam/digikamfirstrun.cpp:164
 #, fuzzy
 #| msgid ""
 #| "You must select a folder for digiKam to use as the Album Library folder."
-msgid "You must select a folder for digiKam to use as the root album path."
+msgid ""
+"You must select a folder for digiKam to use as the root album. All of your "
+"images will go there."
 msgstr ""
 "Bạn cần phải chọn thư mục cho trình digiKam dùng là thư mục thư viện tập ảnh."
 
-#: digikam/digikamfirstrun.cpp:179
+#: digikam/digikamfirstrun.cpp:178
 #, fuzzy
 #| msgid "digiKam cannot use your home folder as the Album Library folder."
-msgid "digiKam cannot use your home folder as root album path."
+msgid ""
+"digiKam will not use your home folder as the root album. Please select "
+"another location."
 msgstr ""
 "Trình digiKam không thể dùng thư mục chính của bạn là thư mục thư viện tập "
 "ảnh."
 
-#: digikam/digikamfirstrun.cpp:189
+#: digikam/digikamfirstrun.cpp:188
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to create it?</qt>"
 msgid ""
-"The folder to use as root album path does not exist: <p><b>%1</b></p>Would "
-"you like digiKam to create it?"
+"The folder to use as the root album path does not exist: <p><b>%1</b></"
+"p>Would you like digiKam to create it for you?"
 msgstr ""
 "<qt>Bạn đã chọn một thư mục không tồn tại:<p><b>%1</b></p>Bạn có muốn trình "
 "digiKam tạo nó không?</qt>"
 
-#: digikam/digikamfirstrun.cpp:193
+#: digikam/digikamfirstrun.cpp:192
 #, fuzzy
 #| msgid "Create Folder?"
 msgid "Create Root Album Folder?"
 msgstr "Tạo thư mục ?"
 
-#: digikam/digikamfirstrun.cpp:203
+#: digikam/digikamfirstrun.cpp:202
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"digiKam could not create the folder to use as root album path.\n"
+"digiKam could not create the folder to use as the root album.\n"
 "Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>Trình digiKam không thể tạo thư mục được hiển thị bên dưới. Xin hãy chọn "
 "vị trí khác.<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:206
+#: digikam/digikamfirstrun.cpp:205
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Create Root Album Folder Failed"
 msgstr "Lỗi tạo thư mục"
 
-#: digikam/digikamfirstrun.cpp:215
+#: digikam/digikamfirstrun.cpp:214
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
 #| "Warning: the comment and tag features will not work."
 msgid ""
-"No write access for root album path.\n"
-"Warning: the comment and tag features will not work."
+"You don't seem to have write access for the folder selected to be the root "
+"album.\n"
+"Warning: Without write access, the comment and tag features will not work."
 msgstr ""
 "Không có quyền ghi vào đường dẫn này.\n"
 "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
 
-#: digikam/digikamfirstrun.cpp:229
+#: digikam/digikamfirstrun.cpp:228
 #, fuzzy
 #| msgid ""
 #| "You must select a folder for digiKam to use as the Album Library folder."
-msgid "You must select a folder for digiKam to store database file."
+msgid ""
+"You must select a folder for digiKam to store information and meta-data in a "
+"database file."
 msgstr ""
 "Bạn cần phải chọn thư mục cho trình digiKam dùng là thư mục thư viện tập ảnh."
 
-#: digikam/digikamfirstrun.cpp:255
+#: digikam/digikamfirstrun.cpp:254
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>The folder you selected does not exist: <p><b>%1</b></p>Would you "
 #| "like digiKam to create it?</qt>"
 msgid ""
-"The folder to host database file does not exist: <p><b>%1</b></p>Would you "
-"like digiKam to create it?"
+"The folder to put your database in does not seem to exist: <p><b>%1</b></"
+"p>Would you like digiKam to create it for you?"
 msgstr ""
 "<qt>Bạn đã chọn một thư mục không tồn tại:<p><b>%1</b></p>Bạn có muốn trình "
 "digiKam tạo nó không?</qt>"
 
-#: digikam/digikamfirstrun.cpp:259
+#: digikam/digikamfirstrun.cpp:258
 #, fuzzy
 #| msgid "Create Folder?"
 msgid "Create Database Folder?"
 msgstr "Tạo thư mục ?"
 
-#: digikam/digikamfirstrun.cpp:269
+#: digikam/digikamfirstrun.cpp:268
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"digiKam could not create the folder to host database file.\n"
+"digiKam could not create the folder to host your database file.\n"
 "Please select a different location.<p><b>%1</b></p>"
 msgstr ""
 "<qt>Trình digiKam không thể tạo thư mục được hiển thị bên dưới. Xin hãy chọn "
 "vị trí khác.<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:272
+#: digikam/digikamfirstrun.cpp:271
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Create Database Folder Failed"
 msgstr "Lỗi tạo thư mục"
 
-#: digikam/digikamfirstrun.cpp:281
+#: digikam/digikamfirstrun.cpp:280
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>digiKam could not create the folder shown below. Please select a "
 #| "different location.<p><b>%1</b></p></qt>"
 msgid ""
-"<p>No write access for path used to host database file.<br/>Please select a "
-"different location.</p><p><b>%1</b></p>"
+"<p>You do not seem to have write access for the folder to host the database "
+"file.<br/>Please select a different location.</p><p><b>%1</b></p>"
 msgstr ""
 "<qt>Trình digiKam không thể tạo thư mục được hiển thị bên dưới. Xin hãy chọn "
 "vị trí khác.<p><b>%1</b></p></qt>"
 
-#: digikam/digikamfirstrun.cpp:284
+#: digikam/digikamfirstrun.cpp:283
 msgid "No Database Write Access"
 msgstr ""
 
@@ -3523,19 +3532,11 @@ msgid "Miscellaneous"
 msgstr "Lặt vặt"
 
 #: digikam/welcomepageview.cpp:98
-msgid "Designed for KDE4"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:99
-msgid "Hardware handling using KDE4 Solid interface"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:100
-msgid "Multimedia files handling using KDE4 Phonon interface"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:101
-msgid "Geolocation performed using KDE4 Marble interface"
+msgid ""
+"Designed from the ground-up for KDE4, using KDE4 technology:<ul><li>Hardware "
+"handling with KDE4's Solid interface</li><li>More comprehensive multimedia "
+"file handling using KDE4's Phonon interface</li><li>Easy Geolocation with "
+"KDE4's Marble interface</li></ul>"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:102
@@ -3545,23 +3546,21 @@ msgid "XMP metadata support"
 msgstr "Hỗ trợ siêu dữ liệu RAW"
 
 #: digikam/welcomepageview.cpp:103
-msgid "TIFF/EP RAW files metadata editing"
+msgid "TIFF/EP RAW metadata editing"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:104
 msgid ""
-"The database file can be stored on a customized place to support remote "
-"album library paths"
+"Customizable file storage for the Digikam database, supporting remote albums"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:105
-msgid "Support of multiple roots album paths"
+msgid ""
+"Support of multiple root album paths (no more importing into one giant album)"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:106
-msgid ""
-"Thumbnails-bar integration with preview mode and editor for easy navigation "
-"between images"
+msgid "Thumbnail-bar integration for easy navigation and editing"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:107
@@ -3569,39 +3568,25 @@ msgid "Supports the latest camera RAW files"
 msgstr ""
 
 #: digikam/welcomepageview.cpp:108
-msgid "A new camera interface"
+msgid ""
+"New/revamped tools:<ul><li>Revamped camera import wizard</li><li>LensFun "
+"integration: auto-correction of lens distortion</li><li>Fuzzy searches based "
+"on hand-drawn sketches</li><li>Advanced searches using image meta-"
+"information, like keywords and dates</li><li>User-friendly map searching "
+"that gives you the power to search for global photo locations</"
+"li><li>Advanced searches for duplicate and similar images</li></ul>"
 msgstr ""
 
-#: digikam/welcomepageview.cpp:109
-msgid "A new tool to capture photographs from Camera"
+#: digikam/welcomepageview.cpp:115
+msgid "...and much more"
 msgstr ""
 
-#: digikam/welcomepageview.cpp:110
-msgid "A new tool based on LensFun library to fix lens defaults automatically"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:111
-msgid "A new tool to perform fuzzy searches based on sketch drawing template"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:112
-msgid "A new tool to perform advanced searches based on photo meta-information"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:113
-msgid "A new tool to perform searches over a map"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:114
-msgid "A new tool to find similar and duplicate images around collections"
-msgstr ""
-
-#: digikam/welcomepageview.cpp:118
+#: digikam/welcomepageview.cpp:120
 #, kde-format
 msgid "<li>%1</li>\n"
 msgstr "<li>%1</li>\n"
 
-#: digikam/welcomepageview.cpp:131
+#: digikam/welcomepageview.cpp:133
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "%1: digiKam version; %2: help:// URL; %3: homepage URL; %4: prior digiKam "
@@ -3632,16 +3617,16 @@ msgctxt ""
 "new features; %7: generated list of important changes; --- end of comment ---"
 msgid ""
 "<h2 style='margin-top: 0px;'>Welcome to digiKam %1</h2><p>digiKam is an open "
-"source photo management program. It is designed to import, organize, "
-"enhance, search and export your digital photographs on your computer.</"
-"p><p>You are currently in the Album view mode of digiKam. The Albums are the "
-"real containers where your files are stored, they are identical with the "
-"folders on disk.</p><ul><li>digiKam has many powerful features which are "
-"described in the <a href=\"%2\">documentation</a></li><li>The <a href=\"%3"
-"\">digiKam homepage</A> provides information about new versions of digiKam</"
-"li></ul><p>%7</p><p>Some of the new features in this release of digiKam "
-"include (compared to digiKam %4):</p><ul>%5</ul><p>%6</p><p>We hope that you "
-"will enjoy digiKam.</p><p>Thank you,</p><p style='margin-bottom: 0px; margin-"
+"source photo management program designed to import, organize, enhance, "
+"search and export your digital images to and from your computer.</"
+"p><p>Currently, you're in the Album view mode of digiKam. Albums are the "
+"places where your files are stored, and are identical to the folders on your "
+"hard disk.</p><ul><li>digiKam has many powerful features which are described "
+"in the <a href=\"%2\">documentation</a></li><li>The <a href=\"%3\">digiKam "
+"homepage</A> provides information about new versions of digiKam.</li></ul><p>"
+"%7</p><p>Some of the new features in this release of digiKam include "
+"(compared to digiKam %4):</p><ul>%5</ul><p>%6</p><p>We hope that you will "
+"enjoy digiKam.</p><p>Thank you,</p><p style='margin-bottom: 0px; margin-"
 "left:20px;'>The digiKam team</p>"
 msgstr ""
 "<h2 style='margin-top: 0px;'>Chào mừng bạn dùng digiKam %1</h2><p>digiKam là "
@@ -3661,7 +3646,7 @@ msgstr ""
 "<p>Cám ơn bạn.</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; Nhóm digiKam</p>"
 
-#: digikam/welcomepageview.cpp:256 digikam/main.cpp:69
+#: digikam/welcomepageview.cpp:258 digikam/main.cpp:69
 msgid "digiKam"
 msgstr "digiKam"
 
@@ -3973,7 +3958,8 @@ msgstr "Kiểu lọc:"
 msgid "Select the file types (mime types) you want to show"
 msgstr ""
 
-#: digikam/albumiconview.cpp:591 utilities/searchwindow/searchfields.cpp:155
+#: digikam/albumiconview.cpp:591 showfoto/setup/setupeditor.cpp:191
+#: utilities/searchwindow/searchfields.cpp:155
 #, fuzzy
 #| msgid "Date:"
 msgid "Date"
@@ -4274,9 +4260,9 @@ msgstr "Đang đọc cơ sở dữ liệu..."
 #| "it now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
 #| "Management\" feature will be disabled until you solve this issue</p></qt>"
 msgid ""
-"<p>The ICC profiles path seems to be invalid.</p><p>If you want to set it "
-"now, select \"Yes\", otherwise select \"No\". In this case, \"Color "
-"Management\" feature will be disabled until you solve this issue</p>"
+"<p>The ICC profiles folder seems to be invalid.</p><p>If you want to try "
+"setting it again, choose \"Yes\" here, otherwise choose \"No\", and the "
+"\"Color Management\" feature will be disabled until you solve this issue</p>"
 msgstr ""
 "<qt><p>Có vẻ là đường dẫn đến các hồ sơ ICC không phải hợp lệ.</p><p>Muốn "
 "đặt nó ngay bây giờ thì chọn « Có », không thì chọn « Không ». Trong trường "
@@ -4319,12 +4305,16 @@ msgid "Last Image"
 msgstr "Ảnh cuối"
 
 #: digikam/digikamapp.cpp:490
-msgid "Copy Album Items Selection"
-msgstr "Chép các mục chọn trong tập ảnh"
+#, fuzzy
+#| msgid "About to delete selected albums"
+msgid "Copy selected album items"
+msgstr "Sắp xoá các tập ảnh đã chọn"
 
 #: digikam/digikamapp.cpp:495
-msgid "Paste Album Items Selection"
-msgstr "Dán các mục chọn trong tập ảnh"
+#, fuzzy
+#| msgid "About to delete selected albums"
+msgid "Paste selected album items"
+msgstr "Sắp xoá các tập ảnh đã chọn"
 
 #: digikam/digikamapp.cpp:517
 #: utilities/imageeditor/editor/editorwindow.cpp:514
@@ -4365,9 +4355,9 @@ msgstr "Cập nhật"
 
 #: digikam/digikamapp.cpp:590
 #, fuzzy
-#| msgid "Refresh all album contents"
-msgid "Refresh all album contents."
-msgstr "Cập nhật nội dung tập ảnh"
+#| msgid "Rename the filename of the currently selected item."
+msgid "Refresh the contents of the current album."
+msgstr "Thay đổi tên tập của mục được chọn hiện thời."
 
 #: digikam/digikamapp.cpp:596
 msgid "Synchronize images with database"
@@ -4468,10 +4458,10 @@ msgid "Include Album Sub-Tree"
 msgstr ""
 
 #: digikam/digikamapp.cpp:725
-msgid ""
-"Activate this option to recursively show all sub-albums below the current "
-"album."
-msgstr ""
+#, fuzzy
+#| msgid "<p>Set this option to show file name below image thumbnail."
+msgid "Activate this option to show all sub-albums below the current album."
+msgstr "<p>Bật tùy chọn này để hiển thị tên tập tin bên dưới ảnh mẫu của ảnh."
 
 #: digikam/digikamapp.cpp:730
 msgid "Include Tag Sub-Tree"
@@ -4479,8 +4469,8 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:731
 msgid ""
-"Activate this option to show all images marked by the given tag and its all "
-"its sub-tags."
+"Activate this option to show all images marked by the given tag and all its "
+"sub-tags."
 msgstr ""
 
 #: digikam/digikamapp.cpp:738
@@ -4550,9 +4540,9 @@ msgid "Select None"
 msgstr "Chọn Không gì"
 
 #: digikam/digikamapp.cpp:861
-#: utilities/imageeditor/editor/editorwindow.cpp:388
-#: utilities/lighttable/lighttablewindow.cpp:440
-msgid "Zoom to 1:1"
+#, fuzzy
+#| msgid "Zoom to 1:1"
+msgid "Zoom to 100%"
 msgstr "Phóng to 1:1 (không thay đổi)"
 
 #: digikam/digikamapp.cpp:868
@@ -4563,12 +4553,10 @@ msgid "Fit to &Window"
 msgstr "Vừa khít cửa &sổ"
 
 #: digikam/digikamapp.cpp:880
-#: utilities/imageeditor/editor/editorwindow.cpp:437
-#: utilities/lighttable/lighttablewindow.cpp:453
 #, fuzzy
-#| msgid "Solid"
-msgid "Slide"
-msgstr "Đặc"
+#| msgid "SlideShow"
+msgid "Slideshow"
+msgstr "Trình chiếu"
 
 #: digikam/digikamapp.cpp:884
 msgid "All"
@@ -4591,11 +4579,10 @@ msgid "supported RAW cameras"
 msgstr ""
 
 #: digikam/digikamapp.cpp:922
-#: utilities/imageeditor/editor/editorwindow.cpp:537
-#: utilities/lighttable/lighttablewindow.cpp:488
-#: utilities/cameragui/cameraui.cpp:440
-msgid "Components info"
-msgstr ""
+#, fuzzy
+#| msgid "Comments:"
+msgid "Component info"
+msgstr "Ghi chú :"
 
 #: digikam/digikamapp.cpp:928
 msgid "Kipi Plugins Handbook"
@@ -4673,7 +4660,7 @@ msgstr "Xây dựng lạ mọi ảnh mẫu..."
 #: digikam/digikamapp.cpp:1027
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
-msgid "Rebuild all FingerPrints..."
+msgid "Rebuild all Fingerprints..."
 msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
 #: digikam/digikamapp.cpp:1034
@@ -4702,10 +4689,8 @@ msgid "%1/%2 items selected"
 msgstr "%1 mục đã chọn"
 
 #: digikam/digikamapp.cpp:1333
-#, fuzzy
-#| msgid "Cameras"
-msgid "Digital Cameras"
-msgstr "Máy ảnh"
+msgid "Cameras (Auto-detected)"
+msgstr ""
 
 #: digikam/digikamapp.cpp:1335
 msgid "USB Storage Devices"
@@ -4719,9 +4704,9 @@ msgstr "Thư mục máy ảnh"
 
 #: digikam/digikamapp.cpp:1339
 #, fuzzy
-#| msgid "Camera Manual"
-msgid "Cameras Added Manually"
-msgstr "Sổ tay máy ảnh"
+#| msgid "Cameras"
+msgid "Cameras (Add)"
+msgstr "Máy ảnh"
 
 #: digikam/digikamapp.cpp:1347
 msgid "Add Camera..."
@@ -4744,8 +4729,10 @@ msgid "Add Folders..."
 msgstr "Thêm viền..."
 
 #: digikam/digikamapp.cpp:1364
-msgid "Adds new folders to Albums library."
-msgstr ""
+#, fuzzy
+#| msgid "Adds new items to the current Album."
+msgid "Adds new folders to Album library."
+msgstr "Thêm mục mới vào tập ảnh hiện thời."
 
 #: digikam/digikamapp.cpp:1431 digikam/digikamapp.cpp:1588
 #, kde-format
@@ -4773,8 +4760,10 @@ msgid "SD / MMC Card Reader"
 msgstr ""
 
 #: digikam/digikamapp.cpp:1729
-msgid "xD-Picture Card Reader"
-msgstr ""
+#, fuzzy
+#| msgid "Camera Folders"
+msgid "xD Card Reader"
+msgstr "Thư mục máy ảnh"
 
 #: digikam/digikamapp.cpp:2048
 msgid "Loading Kipi Plugins"
@@ -4802,10 +4791,10 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:2251
 msgid ""
-"Image finger-prints computation can take a while.\n"
-"What do you want to do?\n"
-"- Scan for changed or non-recorded items in database\n"
-"- Rebuild all fingerprints (long)"
+"Image fingerprinting can take some time.\n"
+"Which would you prefer?\n"
+"- Scan for changed or non-cataloged items in the database (quick)\n"
+"- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
 #: digikam/digikamapp.cpp:2256 showfoto/showfoto.cpp:1085
@@ -4846,7 +4835,7 @@ msgstr "Chọn ảnh cần tải lên"
 #: digikam/digikamapp.cpp:2356
 #, fuzzy
 #| msgid "Select Image to Upload"
-msgid "Select folders to import"
+msgid "Select folders to import into album"
 msgstr "Chọn ảnh cần tải lên"
 
 #: digikam/digikamapp.cpp:2368
@@ -4856,7 +4845,7 @@ msgstr "Chọn ảnh cần tải lên"
 #| "the camera pictures into.</p>"
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
-"folders.</p>"
+"folders into.</p>"
 msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
@@ -5059,16 +5048,20 @@ msgstr "Bỏ thẻ"
 msgid "Interface Options"
 msgstr "Tuy chọn giao diện"
 
-#: showfoto/setup/setupeditor.cpp:108 utilities/setup/setupeditor.cpp:93
-msgid "&Use theme background color"
+#: showfoto/setup/setupeditor.cpp:108
+#, fuzzy
+#| msgid "&Use theme background color"
+msgid "&Use current theme background color"
 msgstr "Dùng mà&u nền của sắc thái"
 
-#: showfoto/setup/setupeditor.cpp:111 utilities/setup/setupeditor.cpp:96
+#: showfoto/setup/setupeditor.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>Enable this option to use the background theme color in the image "
 #| "editor area"
-msgid "Enable this option to use background theme color in image editor area"
+msgid ""
+"Enable this option to use the current background theme color in the image "
+"editor area"
 msgstr ""
 "<p>Bật tùy chọn này để sử dụng màu nền của sắc thái trong vùng bộ sửa ảnh"
 
@@ -5092,7 +5085,9 @@ msgid "Hide &thumbbar in fullscreen mode"
 msgstr "Ẩn &thanh ảnh mẫu trong chế độ toàn màn hình"
 
 #: showfoto/setup/setupeditor.cpp:123
-msgid "Use &horizontal thumbbar (need to restart showFoto)"
+#, fuzzy
+#| msgid "Use &horizontal thumbbar (need to restart showFoto)"
+msgid "Use &horizontal thumbbar (will need to restart showFoto)"
 msgstr "Dùng thanh &ảnh mẫu ngang (cần khởi chạy lại showFoto)"
 
 #: showfoto/setup/setupeditor.cpp:124
@@ -5102,8 +5097,8 @@ msgstr "Dùng thanh &ảnh mẫu ngang (cần khởi chạy lại showFoto)"
 #| "horizontally behind image area. You need to restart showFoto for this "
 #| "option take effect.<p>"
 msgid ""
-"If this option is enabled, the thumbnails bar will be displayed horizontally "
-"behind the image area. You need to restart showFoto for this option take "
+"If this option is enabled, the thumbnail bar will be displayed horizontally "
+"behind the image area. You need to restart showFoto for this option to take "
 "effect."
 msgstr ""
 "<p>Bật tùy chọn này thì thanh ảnh mẫu sẽ được hiển thị theo chiều ngang ở "
@@ -5111,21 +5106,23 @@ msgstr ""
 "động."
 
 #: showfoto/setup/setupeditor.cpp:127
-msgid "&Deleting items should move them to trash"
+#, fuzzy
+#| msgid "&Deleting items should move them to trash"
+msgid "&Deleted items should go to the trash"
 msgstr "Việc xoá mục nên &di chuyển chúng vào Rác"
 
 #: showfoto/setup/setupeditor.cpp:128 utilities/setup/setupmisc.cpp:73
 msgid "&Show splash screen at startup"
 msgstr "Hiện màn hình &giật gân khi khởi chạy"
 
-#: showfoto/setup/setupeditor.cpp:130 utilities/setup/setupeditor.cpp:119
-msgid "Use Raw Import Tool to handle Raw image"
+#: showfoto/setup/setupeditor.cpp:130
+msgid "Use Raw Import Tool to handle Raw images"
 msgstr ""
 
-#: showfoto/setup/setupeditor.cpp:131 utilities/setup/setupeditor.cpp:120
+#: showfoto/setup/setupeditor.cpp:131
 msgid ""
 "Set this option to use Raw Import tool to load a RAW image. With this tool "
-"you are able to customize indeep decoding settings."
+"you are able to customize advanced settings."
 msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:147 utilities/setup/setupeditor.cpp:135
@@ -5136,12 +5133,14 @@ msgstr "Cái chỉ phơi nắng"
 msgid "&Under-exposure color:"
 msgstr "Mà&u chụp non:"
 
-#: showfoto/setup/setupeditor.cpp:154 utilities/setup/setupeditor.cpp:142
+#: showfoto/setup/setupeditor.cpp:154
 #, fuzzy
 #| msgid ""
 #| "<p>Customize the color used in image editor to identify the under-exposed "
 #| "pixels."
-msgid "Customize color used in image editor to identify under-exposed pixels."
+msgid ""
+"Customize the color used in the image editor to identify under-exposed "
+"pixels."
 msgstr ""
 "<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
 "điểm ảnh chụp non."
@@ -5150,12 +5149,13 @@ msgstr ""
 msgid "&Over-exposure color:"
 msgstr "Màu phơi &quá lâu :"
 
-#: showfoto/setup/setupeditor.cpp:161 utilities/setup/setupeditor.cpp:149
+#: showfoto/setup/setupeditor.cpp:161
 #, fuzzy
 #| msgid ""
 #| "<p>Customize the color used in image editor to identify the over-exposed "
 #| "pixels."
-msgid "Customize color used in image editor to identify over-exposed pixels."
+msgid ""
+"Customize the color used in the image editor to identify over-exposed pixels."
 msgstr ""
 "<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
 "điểm ảnh phơi quá lâu."
@@ -5164,7 +5164,7 @@ msgstr ""
 msgid "EXIF Actions"
 msgstr "Hành động EXIF"
 
-#: showfoto/setup/setupeditor.cpp:174 utilities/setup/setupmetadata.cpp:101
+#: showfoto/setup/setupeditor.cpp:174
 msgid "Show images/thumbs &rotated according to orientation tag"
 msgstr "Hiện ảnh/ảnh mẫu được &xoay tùy theo thẻ hướng"
 
@@ -5184,29 +5184,17 @@ msgstr "&Sắp xếp ảnh"
 msgid "Sort images by:"
 msgstr "&Sắp xếp ảnh"
 
-#: showfoto/setup/setupeditor.cpp:191
-#, fuzzy
-#| msgid "Image Date"
-msgid "File Date"
-msgstr "Ngày ảnh"
-
-#: showfoto/setup/setupeditor.cpp:192
-#: utilities/searchwindow/searchfields.cpp:120
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "File Name"
-msgstr "Tên tập tin ảnh mới"
-
 #: showfoto/setup/setupeditor.cpp:193
+#: utilities/searchwindow/searchfields.cpp:135
 #, fuzzy
 #| msgid "Tile size:"
-msgid "File size"
+msgid "File Size"
 msgstr "Cỡ gạch lát:"
 
 #: showfoto/setup/setupeditor.cpp:194
 msgid ""
-"Here, select whether newly-loaded images are sorted by file-date, file-name, "
-"or file-size."
+"Here, select whether newly-loaded images are sorted by their date, name, or "
+"size on disk."
 msgstr ""
 
 #: showfoto/setup/setupeditor.cpp:197
@@ -5347,7 +5335,8 @@ msgid "Set this option to display the image dimensions in pixels."
 msgstr ""
 "<p>Bật tùy chọn này để hiển thị các chiều của tập tin ảnh, theo điểm ảnh."
 
-#: showfoto/setup/setuptooltip.cpp:141 utilities/setup/setuptooltip.cpp:146
+#: showfoto/setup/setuptooltip.cpp:141 utilities/setup/setupslideshow.cpp:109
+#: utilities/setup/setuptooltip.cpp:146
 msgid "Show camera make and model"
 msgstr "Hiển thị nhà chế tạo và mô hình của máy ảnh"
 
@@ -5373,7 +5362,8 @@ msgstr "Hiện ngày máy ảnh"
 msgid "Set this option to display the date when the image was taken."
 msgstr "<p>Bật tùy chọn này để hiển thị ngày tháng chụp ảnh."
 
-#: showfoto/setup/setuptooltip.cpp:148 utilities/setup/setuptooltip.cpp:153
+#: showfoto/setup/setuptooltip.cpp:148 utilities/setup/setupslideshow.cpp:103
+#: utilities/setup/setuptooltip.cpp:153
 #, fuzzy
 #| msgid "Show camera aperture and focal"
 msgid "Show camera aperture and focal length"
@@ -5389,7 +5379,8 @@ msgid ""
 "take the image."
 msgstr "<p>Bật tùy chọn này để hiển thị độ mở và tiêu cự của máy ảnh chụp ảnh."
 
-#: showfoto/setup/setuptooltip.cpp:152 utilities/setup/setuptooltip.cpp:157
+#: showfoto/setup/setuptooltip.cpp:152 utilities/setup/setupslideshow.cpp:106
+#: utilities/setup/setuptooltip.cpp:157
 msgid "Show camera exposure and sensitivity"
 msgstr "Hiện phơi nắng và độ nhạy của máy ảnh"
 
@@ -10662,6 +10653,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:19
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can use nested albums in digiKam.\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10670,7 +10676,7 @@ msgid ""
 "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"... that you can use nested albums in digiKam.\n"
+"... that you can use nested albums in digiKam?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10751,6 +10757,22 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:67
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that albums in digiKam are folders in your Album Library? So you can "
+#| "easily import your photos by simply copying them to your Album Library.\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10760,7 +10782,8 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that albums in digiKam are folders in your Album Library? So you can "
-"easily import your photos by simply copying them to your Album Library.\n"
+"easily import your photos by simply copying those folders to your Album "
+"Library.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10812,6 +10835,23 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:99
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can reach other users through the digiKam-users mailing "
+#| "list? Subscribe to it at <a href=\"https://mail.kde.org/mailman/listinfo/"
+#| "digikam-users\">this url</a>.\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10822,7 +10862,7 @@ msgid ""
 "<td>\n"
 "... that you can reach other users through the digiKam-users mailing list? "
 "Subscribe to it at <a href=\"https://mail.kde.org/mailman/listinfo/digikam-"
-"users\">this url</a>.\n"
+"users\">this site</a>.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10844,6 +10884,24 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:115
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that digiKam has multiple plugins with extra features like <b>HTML "
+#| "export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you are "
+#| "welcome to write your own plugins? You can find more information at <a "
+#| "href=\"http://extragear.kde.org/apps/kipi\">this url</a>.\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10853,9 +10911,9 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that digiKam has multiple plugins with extra features like <b>HTML "
-"export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and that you are "
-"welcome to write your own plugins? You can find more information at <a href="
-"\"http://extragear.kde.org/apps/kipi\">this url</a>.\n"
+"export</b>, <b>Archive to CD</b>, <b>Slideshow</b>,... and many more? You "
+"can even write your own! Find more information at <a href=\"http://extragear."
+"kde.org/apps/kipi\">this site</a>.\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10934,6 +10992,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:161
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td><img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can use the <b>PNG</b> file format instead of <b>TIFF</b> "
+#| "for good compression without losing image quality?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10941,8 +11014,9 @@ msgid ""
 "<td><img src=\"hicolor/32x32/apps/digikam.png\">\n"
 "</td>\n"
 "<td>\n"
-"... that you can use the <b>PNG</b> file format instead of <b>TIFF</b> for "
-"good compression without losing image quality?\n"
+"... that you can save your images with the new <b>PNG</b> file format "
+"instead of the old <b>TIFF</b> format and get good compression without "
+"losing image quality?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10962,6 +11036,21 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:176
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\"></td>\n"
+#| "<td>\n"
+#| "... that most of the settings in a dialog box have <b>What's this?</b> "
+#| "information available, which can be reached via the right mouse button?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -10969,8 +11058,9 @@ msgid ""
 "<td>\n"
 "<img src=\"hicolor/32x32/apps/digikam.png\"></td>\n"
 "<td>\n"
-"... that most of the settings in a dialog box have <b>What's this?</b> "
-"information available, which can be reached via the right mouse button?\n"
+"... that most of the settings in a dialog box have small explanation text, "
+"called \"<b>What's this?</b>\" information, available when you hover over an "
+"item and right click with your mouse?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -10991,6 +11081,22 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:191
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that because the PNG file format uses a lossless compression "
+#| "algorithm, you can use the max compression level with this file format?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -11000,7 +11106,8 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that because the PNG file format uses a lossless compression algorithm, "
-"you can use the max compression level with this file format?\n"
+"you can use the max compression level when you save your images and not lose "
+"any quality?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -11051,6 +11158,22 @@ msgstr ""
 "</p>\n"
 
 #: tips.cpp:223
+#, fuzzy
+#| msgid ""
+#| "<p>\n"
+#| "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center"
+#| "\">\n"
+#| "<tr>\n"
+#| "<td>\n"
+#| "<img src=\"hicolor/32x32/apps/digikam.png\">\n"
+#| "</td>\n"
+#| "<td>\n"
+#| "... that you can edit the comments of the current image opened in the "
+#| "digiKam image editor using <b>Comments and Tags</b> sidebar tab?\n"
+#| "</td>\n"
+#| "</tr>\n"
+#| "</table>\n"
+#| "</p>\n"
 msgid ""
 "<p>\n"
 "<table border=\"0\" cellpadding=\"0\" cellspacing=\"10\" align=\"center\">\n"
@@ -11060,7 +11183,7 @@ msgid ""
 "</td>\n"
 "<td>\n"
 "... that you can edit the comments of the current image opened in the "
-"digiKam image editor using <b>Comments and Tags</b> sidebar tab?\n"
+"digiKam image editor by using the <b>Comments and Tags</b> sidebar tab?\n"
 "</td>\n"
 "</tr>\n"
 "</table>\n"
@@ -11325,6 +11448,12 @@ msgstr ""
 "kích cỡ bị giảm. Vì tùy chọn này sẽ nạp chậm hơn, khuyên bạn chỉ sử dụng nó "
 "trên máy tính chạy nhanh."
 
+#: utilities/setup/setupmetadata.cpp:101
+#, fuzzy
+#| msgid "Show images/thumbs &rotated according to orientation tag"
+msgid "Show images/thumbnails &rotated according to orientation tag"
+msgstr "Hiện ảnh/ảnh mẫu được &xoay tùy theo thẻ hướng"
+
 #: utilities/setup/setupmetadata.cpp:113
 msgid "Common Metadata Actions"
 msgstr "Hành động siêu dữ liệu thường"
@@ -11438,11 +11567,11 @@ msgstr "Thăm nơi Mạng của dự án Exiv2"
 #| "photography to store embedded information in pictures. You can learn more "
 #| "about IPTC at <a href='http://www.iptc.org/IIM'>www.iptc.org</a>.</p>"
 msgid ""
-"<p><b><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a></b> is a standard "
-"used by most digital cameras today to store technical information about "
-"photograph.</p><p><b><a href='http://en.wikipedia.org/wiki/IPTC'>IPTC</a></"
-"b> is an old standard used in digital photography to store photographer "
-"information in pictures.</p>"
+"<p><b><a href='http://en.wikipedia.org/wiki/Exif'>EXIF</a></b> - a standard "
+"used by most digital cameras today to store technical information (like "
+"aperture and shutter speed) about an image.</p><p><b><a href='http://en."
+"wikipedia.org/wiki/IPTC'>IPTC</a></b> - an older standard used in digital "
+"photography to store photographer information in an image.</p>"
 msgstr ""
 "<p><b>EXIF</b> là một tiêu chuẩn được dùng hiện thời bởi phần lớn máy ảnh "
 "điện số để cất giữ thông tin kỹ thuật về ảnh chụp dạng siêu dữ liệu trong "
@@ -11455,7 +11584,7 @@ msgstr ""
 #: utilities/setup/setupmetadata.cpp:180
 msgid ""
 "<p><b><a href='http://en.wikipedia.org/wiki/"
-"Extensible_Metadata_Platform'>XMP</a></b> is a new standard used in digital "
+"Extensible_Metadata_Platform'>XMP</a></b> - a new standard used in digital "
 "photography dedicated to replace IPTC.</p>"
 msgstr ""
 
@@ -11503,8 +11632,10 @@ msgstr ""
 "danh sách các ảnh."
 
 #: utilities/setup/setupslideshow.cpp:94
-msgid "Display in loop"
-msgstr "Hiển thị trong vòng lặp"
+#, fuzzy
+#| msgid "<p>Run the slideshow in a loop."
+msgid "Slideshow runs in a loop"
+msgstr "<p>Làm cho chiếu ảnh bị lặp."
 
 #: utilities/setup/setupslideshow.cpp:95
 #, fuzzy
@@ -11513,173 +11644,179 @@ msgid "Run the slideshow in a loop."
 msgstr "<p>Làm cho chiếu ảnh bị lặp."
 
 #: utilities/setup/setupslideshow.cpp:97
-msgid "Print image file name"
-msgstr "Hiện tên tập tin ảnh"
+#, fuzzy
+#| msgid "Show file name"
+msgid "Show image file name"
+msgstr "Hiện tên tập tin"
 
 #: utilities/setup/setupslideshow.cpp:98
 #, fuzzy
 #| msgid "<p>Print image file name to the screen bottom."
-msgid "Print the image file name at the bottom of the screen."
+msgid "Show the image file name at the bottom of the screen."
 msgstr "<p>Hiện tên tập tin ảnh ở dưới màn hình."
 
 #: utilities/setup/setupslideshow.cpp:100
-msgid "Print image creation date"
-msgstr "Hiện ngày tạo ảnh"
+#, fuzzy
+#| msgid "Show file creation &date"
+msgid "Show image creation date"
+msgstr "Hiện ngà&y tạo tập tin"
 
 #: utilities/setup/setupslideshow.cpp:101
 #, fuzzy
 #| msgid "<p>Print image comment on bottom of screen."
-msgid "Print the image creation time/date at the bottom of the screen."
+msgid "Show the image creation time/date at the bottom of the screen."
 msgstr "<p>Hiển thị chú thích về ảnh ở dưới màn hình."
-
-#: utilities/setup/setupslideshow.cpp:103
-msgid "Print camera aperture and focal length"
-msgstr "Hiện độ mở và tiêu cự của máy ảnh"
 
 #: utilities/setup/setupslideshow.cpp:104
 #, fuzzy
 #| msgid "<p>Print camera aperture and focal length to the screen bottom."
-msgid "Print the camera aperture and focal length at the bottom of the screen."
+msgid "Show the camera aperture and focal length at the bottom of the screen."
 msgstr "<p>Hiển thị độ mở và tiêu cự của máy ảnh ở dưới màn hình."
-
-#: utilities/setup/setupslideshow.cpp:106
-msgid "Print camera exposure and sensitivity"
-msgstr "Hiện phơi nắng và độ nhạy của máy ảnh"
 
 #: utilities/setup/setupslideshow.cpp:107
 #, fuzzy
 #| msgid "<p>Print camera exposure and sensitivity to the screen  bottom."
-msgid "Print the camera exposure and sensitivity at the bottom of the screen."
+msgid "Show the camera exposure and sensitivity at the bottom of the screen."
 msgstr "<p>Hiển thị phơi nắng và độ nhạy của máy ảnh ở dưới màn hình."
-
-#: utilities/setup/setupslideshow.cpp:109
-msgid "Print camera make and model"
-msgstr "Hiện nhà chế tạo và mô hình của máy ảnh"
 
 #: utilities/setup/setupslideshow.cpp:110
 #, fuzzy
 #| msgid "<p>Print camera make and model to the screen bottom."
-msgid "Print the camera make and model at the bottom of the screen."
+msgid "Show the camera make and model at the bottom of the screen."
 msgstr "<p>Hiển thị nhà chế tạo và mô hình của máy ảnh ở dưới màn hình."
 
-#: utilities/setup/setupslideshow.cpp:112
+#: utilities/setup/setupslideshow.cpp:112 utilities/setup/setuptooltip.cpp:191
 #, fuzzy
-#| msgid "Print image creation date"
-msgid "Print image caption"
-msgstr "Hiện ngày tạo ảnh"
+#| msgid "Show picture rating"
+msgid "Show image caption"
+msgstr "Hiện đánh giá ảnh"
 
 #: utilities/setup/setupslideshow.cpp:113
 #, fuzzy
 #| msgid "<p>Print image comment on bottom of screen."
-msgid "Print the image caption at the bottom of the screen."
+msgid "Show the image caption at the bottom of the screen."
 msgstr "<p>Hiển thị chú thích về ảnh ở dưới màn hình."
 
-#: utilities/setup/setupslideshow.cpp:115
+#: utilities/setup/setupslideshow.cpp:115 utilities/setup/setuptooltip.cpp:197
 #, fuzzy
-#| msgid "Print image creation date"
-msgid "Print image rating"
-msgstr "Hiện ngày tạo ảnh"
+#| msgid "Show picture rating"
+msgid "Show image rating"
+msgstr "Hiện đánh giá ảnh"
 
 #: utilities/setup/setupslideshow.cpp:116
 #, fuzzy
 #| msgid "<p>Print image creation to the screen bottom."
-msgid "Print the digiKam image rating at the bottom of the screen."
+msgid "Show the digiKam image rating at the bottom of the screen."
 msgstr "<p>Hiển thị ngày tháng tạo ảnh ở dưới màn hình."
 
 #: utilities/setup/setupmime.cpp:92
 msgid ""
-"<p>Digikam supports the image formats that digital cameras produce, a few "
-"other important image formats, as well as common video and audio formats.</"
-"p> <p>If you have special needs, you can adjust here the list of supported "
-"formats. Add your file extensions to the lists of either image, audio or "
-"video files.</p>"
+"<p>Digikam attempts to support all of the image formats that digital cameras "
+"produce, while being able to handle a few other important video and audio "
+"formats.</p> <p>You can add to the already-appreciable list of formats that "
+"Digikam handles by adding the extension of the type you want to add. "
+"Multiple extensions need to be separated by a space.</p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:101
+#: utilities/setup/setupmime.cpp:106
 msgid "Image Files"
 msgstr "Tập tin ảnh"
 
-#: utilities/setup/setupmime.cpp:108
-msgid "Customize &image file extensions (<a href=image>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:112
+#: utilities/setup/setupmime.cpp:113
 msgid ""
-"<p>Here you can add extra extensions of image files (including RAW files) to "
-"be displayed in Albums. Just write \"xyz abc\" to support files with the *."
-"xyz and *.abc extensions. You can as well remove file formats that are "
-"supported by default by prepending a minus sign: \"-gif\" will remove all "
-"GIF files from the database.</p><p><b>Attention:</b> Removing files from the "
-"database means losing all their tags and ratings!<p>"
+"Customize &image file extensions (<a href='image'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:125 utilities/setup/setupmime.cpp:160
-#: utilities/setup/setupmime.cpp:195
+#: utilities/setup/setupmime.cpp:117
+msgid ""
+"<p>Here you can add the extensions of image files (including RAW files) to "
+"be displayed in the Album view. Just put \"xyz abc\" to display files with "
+"the xyz and abc extensions in your Album view.</p><p>You can also remove "
+"file formats that are shown by default by putting a minus sign in front of "
+"the extension: \"-gif\", which would remove all GIF files from your Album "
+"view and any trace of them in your database. They would not be deleted, just "
+"not shown in Digikam.</p><p><b>Warning:</b> Removing files from the database "
+"means losing all of their tags and ratings!</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:131 utilities/setup/setupmime.cpp:169
+#: utilities/setup/setupmime.cpp:207
 msgid "Revert to default settings"
 msgstr "Hoàn nguyên về thiết lập mặc định"
 
-#: utilities/setup/setupmime.cpp:136
+#: utilities/setup/setupmime.cpp:142
 msgid "Movie Files"
 msgstr "Tập tin phim"
 
-#: utilities/setup/setupmime.cpp:143
-msgid "Customize &movie file extensions (<a href=video>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:147
+#: utilities/setup/setupmime.cpp:149
 msgid ""
-"<p>Here you can add extra extensions of video files to be displayed in "
-"Albums. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
-"extensions. Clicking on these files will play them in an embedded KDE movie "
-"player. You can as well remove file formats that are supported by default by "
-"prepending a minus sign: \"-avi\" will remove all AVI files from the "
-"database.</p>"
+"Customize &movie file extensions (<a href='video'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:171
+#: utilities/setup/setupmime.cpp:153
+msgid ""
+"<p>Here you can add extra extensions of video files to be displayed in your "
+"Album view. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
+"extensions. Clicking on these files will play them in an embedded KDE movie "
+"player.</p><p>You can as well remove file formats that are supported by "
+"default by putting a minus sign in front of the extension: \"-avi\", which "
+"would remove all AVI files from your Album view and any trace of them in "
+"your database. They would not be deleted, just not shown in Digikam.</"
+"p><p><b>Warning:</b> Removing files from the database means losing all of "
+"their tags and ratings!</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:180
 msgid "Audio Files"
 msgstr "Tập tin âm thanh"
 
-#: utilities/setup/setupmime.cpp:178
-msgid "Customize &audio file extensions (<a href=audio>Current settings</a>):"
-msgstr ""
-
-#: utilities/setup/setupmime.cpp:182
+#: utilities/setup/setupmime.cpp:187
 msgid ""
-"<p>Here you can add extra extensions of audio files to be displayed in "
-"Albums. Just write \"xyz abc\" to support files with the *.xyz and *.abc "
-"extensions. Clicking on these files will play them with an embedded KDE "
-"audio player. You can as well remove file formats that are supported by "
-"default by prepending a minus sign: \"-mp3\" will for example remove all MP3 "
-"files from the database.</p>"
+"Customize &audio file extensions (<a href='audio'>Currently-supported types</"
+"a>):"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:295
+#: utilities/setup/setupmime.cpp:191
+msgid ""
+"<p>Here you can add extra extensions of audio files to be displayed in your "
+"Album view. Just write \"mp7\" to support files with the *.mp7 extension. "
+"Clicking on these files will play them in an embedded KDE audio player.</"
+"p><p>You can also remove file formats that are supported by default by "
+"putting a minus sign in front of the extension: \"-ogg\", which would remove "
+"all OGG files from your Album view and any trace of them in your database. "
+"They would not be deleted, just not shown in Digikam.</p><p><b>Warning:</b> "
+"Removing files from the database means losing all of their tags and ratings!"
+"</p>"
+msgstr ""
+
+#: utilities/setup/setupmime.cpp:307
 #, kde-format
 msgid ""
-"You have chosen to remove the following image formats from the list of "
-"supported formats: %1.\n"
-"These are very common formats. If you have images in your collection with "
-"these formats, they will be removed from the database and you will lose all "
-"information about them, including rating and tags. Are you sure you want to "
-"apply your changes about the supported image formats?"
+"<p>You have chosen to remove the following image formats from the list of "
+"supported formats: <b>%1</b>.</p><p>These are very common formats. If you "
+"have images in your collection with these formats, they will be removed from "
+"the database and you will lose all information about them, including rating "
+"and tags.</p><p>Are you sure you want to apply your changes and lose the "
+"support for these formats?</p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:341
+#: utilities/setup/setupmime.cpp:353
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as images and included "
 "into the database:<br/> <code>%1</code></p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:351
+#: utilities/setup/setupmime.cpp:363
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as movie files and "
 "included into the database:<br/> <code>%1</code></p>"
 msgstr ""
 
-#: utilities/setup/setupmime.cpp:361
+#: utilities/setup/setupmime.cpp:373
 #, kde-format
 msgid ""
 "<p>Files with these extensions will be recognized as audio files and "
@@ -11835,28 +11972,33 @@ msgstr "Xem thử nhúng nạp cỡ ảnh đầy đủ"
 #: utilities/setup/setupalbumview.cpp:167
 #, fuzzy
 #| msgid ""
-#| "<p>Set this option to load full image size with embedded preview instead "
-#| "a reduced one. Because this option will take more time to load image, use "
+#| "<p>Set this option to load full image size in preview panel instead a "
+#| "reduced one. Because this option will take more time to load image, use "
 #| "it only if you have a fast computer."
 msgid ""
-"Set this option to load the full image size with an embedded preview, "
-"instead of a reduced size. Because this option will take more time to load "
-"images, use it only if you have a fast computer."
+"Set this option to load the full image size for a preview, instead of with a "
+"reduced size. This loads more data and will be slow on older computers."
 msgstr ""
-"<p>Bật tùy chọn này để nạp kích cỡ ảnh đầy đủ trong ô xem thử nhúng, thay "
-"cho kích cỡ bị giảm. Vì tùy chọn này sẽ nạp chậm hơn, khuyên bạn chỉ sử dụng "
-"nó trên máy tính chạy nhanh."
+"<p>Bật tùy chọn này để nạp vào bảng xem thử kích cỡ ảnh đầy đủ, thay cho "
+"kích cỡ bị giảm. Vì tùy chọn này sẽ nạp chậm hơn, khuyên bạn chỉ sử dụng nó "
+"trên máy tính chạy nhanh."
 
 #: utilities/setup/setupmisc.cpp:69
-msgid "Show confirmation dialog when moving items to the &trash"
+#, fuzzy
+#| msgid "Show confirmation dialog when moving items to the &trash"
+msgid "Confirm when moving items to the &trash"
 msgstr "Yêu cầu xác nhận khi chuyển mục vào Sọ&t Rác"
 
 #: utilities/setup/setupmisc.cpp:71
-msgid "Apply changes in the &right sidebar without confirmation"
+#, fuzzy
+#| msgid "Apply changes in the &right sidebar without confirmation"
+msgid "Do not confirm when apply changes in the &right sidebar"
 msgstr "Áp dụng thay đổi t&rong khung lề bên phải, không cần xác nhận"
 
 #: utilities/setup/setupmisc.cpp:75
-msgid "&Scan for new items on startup (slows down startup)"
+#, fuzzy
+#| msgid "&Scan for new items on startup (slows down startup)"
+msgid "&Scan for new items at startup (makes startup slower)"
 msgstr "&Quét tìm mục mới khi khởi chạy (làm chậm việc khởi chạy)"
 
 #: utilities/setup/setupidentity.cpp:76
@@ -11970,16 +12112,15 @@ msgstr ""
 
 #: utilities/setup/setupcollections.cpp:205
 #, fuzzy
-#| msgid "&Sort Albums"
-msgid "Root Album Paths"
-msgstr "&Sắp xếp tập ảnh"
+#| msgid "Create Folder?"
+msgid "Root Album Folders"
+msgstr "Tạo thư mục ?"
 
 #: utilities/setup/setupcollections.cpp:208
 msgid ""
-"Here you can set all root album paths used to host your images. Write access "
-"is necessary to be able to edit images.\n"
-"You can use removable media and remote file systems shared over NFS for "
-"example."
+"Below are the locations of your root albums used to store your images. Write "
+"access is necessary to be able to edit images in these albums.\n"
+"Note: Removable media and remote file systems (NFS and Samba), are supported."
 msgstr ""
 
 #: utilities/setup/setupcollections.cpp:222
@@ -11987,7 +12128,7 @@ msgstr ""
 #| msgid ""
 #| "<p>Here you can see the digital camera list used by digiKam via the "
 #| "Gphoto interface."
-msgid "This shows all root album paths used by digiKam as collections."
+msgid "This shows all root albums used by digiKam as collections."
 msgstr ""
 "<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi digiKam "
 "qua giao diện Gphoto."
@@ -12048,11 +12189,10 @@ msgstr ""
 #| "computer.<p>Write access is required for this path and do not use a "
 #| "remote path here, like an NFS mounted file system."
 msgid ""
-"Here you can set the location on your computer where the digiKam database "
-"file will be stored. There is only one common database file for all root "
-"albums.\n"
+"The location where the database file will be stored on your system. There is "
+"one common database file for all root albums.\n"
 "Write access is required to be able to edit image properties.\n"
-"Please note that you cannot use a remote file system here, such as NFS."
+"Note: A remote file system, such as NFS, cannot be used here."
 msgstr ""
 "<p>Ở đây bạn có thể đặt đường dẫn chính đến thư viện tập ảnh digiKam trên "
 "máy tính của bạn.<p>Đường dẫn này cần thiết quyền ghi; đừng đặt một đường "
@@ -12069,8 +12209,8 @@ msgstr ""
 #| "No write access for this path.\n"
 #| "Warning: the comment and tag features will not work."
 msgid ""
-"No write access for this path to store database.\n"
-"Warning: the caption and tag features will not work."
+"You don't seem to have write access to this database folder.\n"
+"Without this access, the caption and tag features will not work."
 msgstr ""
 "Không có quyền ghi vào đường dẫn này.\n"
 "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
@@ -12078,7 +12218,7 @@ msgstr ""
 #: utilities/setup/setupcollections.cpp:538
 #, fuzzy
 #| msgid "Sorry; cannot use home directory as album library."
-msgid "Sorry you can not use your home directory as root album path."
+msgid "Sorry you cannot use your home directory as the root album."
 msgstr "Tiếc là không thể đặt thư mục chính làm thư viện tập ảnh."
 
 #: utilities/setup/setupcollections.cpp:546
@@ -12087,8 +12227,8 @@ msgstr "Tiếc là không thể đặt thư mục chính làm thư viện tập 
 #| "No write access for this path.\n"
 #| "Warning: the comment and tag features will not work."
 msgid ""
-"No write access for this root album path.\n"
-"Warning: image and metadata editing will not work with this path."
+"You don't seem to have write access to this root album.\n"
+"Without this access, image and metadata editing will not work."
 msgstr ""
 "Không có quyền ghi vào đường dẫn này.\n"
 "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
@@ -12096,14 +12236,27 @@ msgstr ""
 #: utilities/setup/setupcollections.cpp:606
 #, fuzzy, kde-format
 #| msgid "Tag name already exists"
-msgid "A root album named \"%1\" already exist."
+msgid "A root album named \"%1\" already exists."
 msgstr "Tên thẻ đã có."
 
 #: utilities/setup/setupcollections.cpp:612
 #, fuzzy, kde-format
 #| msgid "Tag name already exists"
-msgid "A root album set with path \"%1\" already exist."
+msgid "A root album in folder \"%1\" already exists."
 msgstr "Tên thẻ đã có."
+
+#: utilities/setup/setupeditor.cpp:93
+msgid "&Use theme background color"
+msgstr "Dùng mà&u nền của sắc thái"
+
+#: utilities/setup/setupeditor.cpp:96
+#, fuzzy
+#| msgid ""
+#| "<p>Enable this option to use the background theme color in the image "
+#| "editor area"
+msgid "Enable this option to use background theme color in image editor area"
+msgstr ""
+"<p>Bật tùy chọn này để sử dụng màu nền của sắc thái trong vùng bộ sửa ảnh"
 
 #: utilities/setup/setupeditor.cpp:105
 #, fuzzy
@@ -12131,6 +12284,36 @@ msgstr ""
 "<p>Bật tùy chọn này thì thanh ảnh mẫu sẽ được hiển thị theo chiều ngang ở "
 "sau vùng ảnh. Bạn cần phải khởi chạy lại showFoto để tùy chọn này có tác "
 "động."
+
+#: utilities/setup/setupeditor.cpp:119
+msgid "Use Raw Import Tool to handle Raw image"
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:120
+msgid ""
+"Set this option to use Raw Import tool to load a RAW image. With this tool "
+"you are able to customize indeep decoding settings."
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:142
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the under-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify under-exposed pixels."
+msgstr ""
+"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
+"điểm ảnh chụp non."
+
+#: utilities/setup/setupeditor.cpp:149
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the over-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify over-exposed pixels."
+msgstr ""
+"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
+"điểm ảnh phơi quá lâu."
 
 #: utilities/setup/setupcamera.cpp:94
 #, fuzzy
@@ -12257,7 +12440,9 @@ msgid "Mime Types"
 msgstr "Kiểu MIME"
 
 #: utilities/setup/setup.cpp:180
-msgid "File (MIME) Types Settings"
+#, fuzzy
+#| msgid "File (MIME) Types Settings"
+msgid "Supported File (MIME-Type) Settings"
 msgstr "Thiết lập kiểu tập tin (MIME)"
 
 #: utilities/setup/setup.cpp:185
@@ -12687,12 +12872,6 @@ msgstr "Hiện tên tập ảnh"
 msgid "Set this option to display the album name."
 msgstr "<p>Bật tùy chọn này để hiển thị tên của tập ảnh."
 
-#: utilities/setup/setuptooltip.cpp:191
-#, fuzzy
-#| msgid "Show picture rating"
-msgid "Show image caption"
-msgstr "Hiện đánh giá ảnh"
-
 #: utilities/setup/setuptooltip.cpp:192
 #, fuzzy
 #| msgid "<p>Set this option to display picture comments."
@@ -12710,12 +12889,6 @@ msgstr "Hiện kiểu ảnh"
 #| msgid "<p>Set this option to display image type."
 msgid "Set this option to display the image tags."
 msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
-
-#: utilities/setup/setuptooltip.cpp:197
-#, fuzzy
-#| msgid "Show picture rating"
-msgid "Show image rating"
-msgstr "Hiện đánh giá ảnh"
 
 #: utilities/setup/setuptooltip.cpp:198
 #, fuzzy
@@ -12916,13 +13089,13 @@ msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo điểm ả
 #: utilities/imageeditor/tools/imageresize.cpp:202
 #, fuzzy
 #| msgid "<p>Set here the new image height in pixels."
-msgid "Set here the new image height in pixels."
+msgid "New image height in pixels (px)."
 msgstr "<p>Ở đây hãy đặt độ cao mới của ảnh theo điểm ảnh."
 
 #: utilities/imageeditor/tools/imageresize.cpp:209
 #, fuzzy
 #| msgid "<p>Set here the new image width in percents."
-msgid "Set here the new image width in percent."
+msgid "New image width in percent (%)."
 msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo phần trăm."
 
 #: utilities/imageeditor/tools/imageresize.cpp:211
@@ -12932,7 +13105,7 @@ msgstr "Cao (%):"
 #: utilities/imageeditor/tools/imageresize.cpp:216
 #, fuzzy
 #| msgid "<p>Set here the new image height in percents."
-msgid "Set here the new image height in percent."
+msgid "New image height in percent (%)."
 msgstr "<p>Ở đây hãy đặt độ cao mới của ảnh theo phần trăm."
 
 #: utilities/imageeditor/tools/imageresize.cpp:218
@@ -12955,54 +13128,54 @@ msgstr "Phục hồi ảnh chụp (chậm)"
 #| "<p>Enable this option to restore photograph content. Warning: this "
 #| "process can take a while."
 msgid ""
-"Enable this option to restore photograph content. This way is useful to "
-"scale-up an image to an huge size. Warning: this process can take a while."
+"Enable this option to scale-up an image to a huge size. <b>Warning</b>: This "
+"process can take some time."
 msgstr ""
 "<p>Bật tùy chọn này để phục hồi nội dung của ảnh. Cảnh báo : tiến trình này "
 "có thể kéo dài một lát."
 
-#: utilities/imageeditor/tools/imageresize.cpp:233
+#: utilities/imageeditor/tools/imageresize.cpp:232
 #, fuzzy
 #| msgid ""
 #| "<p>Enable this option to restore photograph content. Warning: this "
 #| "process can take a while."
 msgid ""
-"<b>Note: use Restoration Mode to only scale-up an image to huge size. "
-"Warning, this process can take a while.</b>"
+"<b>Note:</b> use Restoration Mode to scale-up an image to a huge size. This "
+"process can take some time."
 msgstr ""
 "<p>Bật tùy chọn này để phục hồi nội dung của ảnh. Cảnh báo : tiến trình này "
 "có thể kéo dài một lát."
 
-#: utilities/imageeditor/tools/imageresize.cpp:240
+#: utilities/imageeditor/tools/imageresize.cpp:239
 #, fuzzy
 #| msgid "<p>This is the current progress when you use Restoration mode."
 msgid "This shows the current progress when you use the Restoration mode."
 msgstr "<p>Đây là tiến hành hiện thời khi bạn sử dụng chế độ Phục hồi."
 
-#: utilities/imageeditor/tools/imageresize.cpp:581
-#: utilities/imageeditor/tools/imageresize.cpp:606
+#: utilities/imageeditor/tools/imageresize.cpp:580
+#: utilities/imageeditor/tools/imageresize.cpp:605
 msgid "Resize"
 msgstr "Đổi cỡ"
 
-#: utilities/imageeditor/tools/imageresize.cpp:633
+#: utilities/imageeditor/tools/imageresize.cpp:632
 msgid "Photograph Resizing Settings File to Load"
 msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần nạp"
 
-#: utilities/imageeditor/tools/imageresize.cpp:644
+#: utilities/imageeditor/tools/imageresize.cpp:643
 #, kde-format
 msgid "\"%1\" is not a Photograph Resizing settings text file."
 msgstr ""
 "« %1 » không phải là một tập tin văn bản thiết lập thay đổi kích cỡ ảnh chụp."
 
-#: utilities/imageeditor/tools/imageresize.cpp:651
+#: utilities/imageeditor/tools/imageresize.cpp:650
 msgid "Cannot load settings from the Photograph Resizing text file."
 msgstr "Không thể nạp thiết lập từ tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
-#: utilities/imageeditor/tools/imageresize.cpp:660
+#: utilities/imageeditor/tools/imageresize.cpp:659
 msgid "Photograph Resizing Settings File to Save"
 msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần lưu"
 
-#: utilities/imageeditor/tools/imageresize.cpp:669
+#: utilities/imageeditor/tools/imageresize.cpp:668
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
@@ -13147,6 +13320,11 @@ msgstr "Hủy bước"
 msgid "Redo"
 msgstr "Làm lại"
 
+#: utilities/imageeditor/editor/editorwindow.cpp:388
+#: utilities/lighttable/lighttablewindow.cpp:440
+msgid "Zoom to 1:1"
+msgstr "Phóng to 1:1 (không thay đổi)"
+
 #: utilities/imageeditor/editor/editorwindow.cpp:398
 msgid "Fit to &Selection"
 msgstr "&Vừa khít vùng chọn"
@@ -13160,6 +13338,13 @@ msgstr ""
 #: utilities/imageeditor/editor/editorwindow.cpp:431
 msgid "Zoom"
 msgstr "Thu/Phóng"
+
+#: utilities/imageeditor/editor/editorwindow.cpp:437
+#: utilities/lighttable/lighttablewindow.cpp:453
+#, fuzzy
+#| msgid "Solid"
+msgid "Slide"
+msgstr "Đặc"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:443
 msgid "Under-Exposure Indicator"
@@ -13209,6 +13394,12 @@ msgstr "Xoay phải"
 #: utilities/lighttable/lighttablewindow.cpp:476
 msgid "Donate Money..."
 msgstr "Tăng tiền..."
+
+#: utilities/imageeditor/editor/editorwindow.cpp:537
+#: utilities/lighttable/lighttablewindow.cpp:488
+#: utilities/cameragui/cameraui.cpp:440
+msgid "Components info"
+msgstr ""
 
 #: utilities/imageeditor/editor/editorwindow.cpp:543
 #: utilities/lighttable/lighttablewindow.cpp:532
@@ -13755,6 +13946,12 @@ msgid "A tag of the picture contains"
 msgstr ""
 
 #: utilities/searchwindow/searchfields.cpp:120
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "File Name"
+msgstr "Tên tập tin ảnh mới"
+
+#: utilities/searchwindow/searchfields.cpp:120
 msgid "Return pictures whose file name contains"
 msgstr ""
 
@@ -13774,12 +13971,6 @@ msgstr ""
 msgctxt "'Return pictures modified between...and..."
 msgid "and"
 msgstr "Cây nến"
-
-#: utilities/searchwindow/searchfields.cpp:135
-#, fuzzy
-#| msgid "Tile size:"
-msgid "File Size"
-msgstr "Cỡ gạch lát:"
 
 #: utilities/searchwindow/searchfields.cpp:135
 #, fuzzy
@@ -15627,6 +15818,100 @@ msgid ""
 "Fuzzy search"
 msgstr ""
 
+#~ msgid "Copy Album Items Selection"
+#~ msgstr "Chép các mục chọn trong tập ảnh"
+
+#~ msgid "Paste Album Items Selection"
+#~ msgstr "Dán các mục chọn trong tập ảnh"
+
+#, fuzzy
+#~| msgid "Refresh all album contents"
+#~ msgid "Refresh all album contents."
+#~ msgstr "Cập nhật nội dung tập ảnh"
+
+#, fuzzy
+#~| msgid "Cameras"
+#~ msgid "Digital Cameras"
+#~ msgstr "Máy ảnh"
+
+#, fuzzy
+#~| msgid "Camera Manual"
+#~ msgid "Cameras Added Manually"
+#~ msgstr "Sổ tay máy ảnh"
+
+#, fuzzy
+#~| msgid "Image Date"
+#~ msgid "File Date"
+#~ msgstr "Ngày ảnh"
+
+#, fuzzy
+#~| msgid "Tile size:"
+#~ msgid "File size"
+#~ msgstr "Cỡ gạch lát:"
+
+#~ msgid "Display in loop"
+#~ msgstr "Hiển thị trong vòng lặp"
+
+#~ msgid "Print image file name"
+#~ msgstr "Hiện tên tập tin ảnh"
+
+#~ msgid "Print image creation date"
+#~ msgstr "Hiện ngày tạo ảnh"
+
+#~ msgid "Print camera aperture and focal length"
+#~ msgstr "Hiện độ mở và tiêu cự của máy ảnh"
+
+#~ msgid "Print camera exposure and sensitivity"
+#~ msgstr "Hiện phơi nắng và độ nhạy của máy ảnh"
+
+#~ msgid "Print camera make and model"
+#~ msgstr "Hiện nhà chế tạo và mô hình của máy ảnh"
+
+#, fuzzy
+#~| msgid "Print image creation date"
+#~ msgid "Print image caption"
+#~ msgstr "Hiện ngày tạo ảnh"
+
+#, fuzzy
+#~| msgid "Print image creation date"
+#~ msgid "Print image rating"
+#~ msgstr "Hiện ngày tạo ảnh"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Set this option to load full image size with embedded preview instead "
+#~| "a reduced one. Because this option will take more time to load image, "
+#~| "use it only if you have a fast computer."
+#~ msgid ""
+#~ "Set this option to load the full image size with an embedded preview, "
+#~ "instead of a reduced size. Because this option will take more time to "
+#~ "load images, use it only if you have a fast computer."
+#~ msgstr ""
+#~ "<p>Bật tùy chọn này để nạp kích cỡ ảnh đầy đủ trong ô xem thử nhúng, thay "
+#~ "cho kích cỡ bị giảm. Vì tùy chọn này sẽ nạp chậm hơn, khuyên bạn chỉ sử "
+#~ "dụng nó trên máy tính chạy nhanh."
+
+#, fuzzy
+#~| msgid "&Sort Albums"
+#~ msgid "Root Album Paths"
+#~ msgstr "&Sắp xếp tập ảnh"
+
+#, fuzzy
+#~| msgid "Tag name already exists"
+#~ msgid "A root album set with path \"%1\" already exist."
+#~ msgstr "Tên thẻ đã có."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Enable this option to restore photograph content. Warning: this "
+#~| "process can take a while."
+#~ msgid ""
+#~ "Enable this option to restore photograph content. This way is useful to "
+#~ "scale-up an image to an huge size. Warning: this process can take a while."
+#~ msgstr ""
+#~ "<p>Bật tùy chọn này để phục hồi nội dung của ảnh. Cảnh báo : tiến trình "
+#~ "này có thể kéo dài một lát."
+
 #, fuzzy
 #~| msgid "<qt>These items will be moved to the Trash Bin.</qt>"
 #~ msgid "<qt>These items will be moved to Trash.</qt>"
@@ -16811,11 +17096,6 @@ msgstr ""
 
 #~ msgid "Save search as:"
 #~ msgstr "Lưu tìm kiếm dạng:"
-
-#, fuzzy
-#~| msgid "Rename the filename of the currently selected item."
-#~ msgid "Enter the name of the current search"
-#~ msgstr "Thay đổi tên tập của mục được chọn hiện thời."
 
 #, fuzzy
 #~| msgid "Find Edges"

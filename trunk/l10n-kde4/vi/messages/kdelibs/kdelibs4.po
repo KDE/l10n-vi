@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-26 09:02+0100\n"
+"POT-Creation-Date: 2008-10-27 10:16+0100\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -6096,6 +6096,12 @@ msgstr "<qt>Bạn có chắc muốn thoát khỏi <b>%1</b> không?</qt>"
 msgid "Confirm Quit From System Tray"
 msgstr "Xác nhận thoát từ khay hệ thống"
 
+#: kdeui/util/knotificationrestrictions.cpp:179
+#, fuzzy
+#| msgid "Quit application"
+msgid "Unknown Application"
+msgstr "Thoát khỏi ứng dụng"
+
 #: kdeui/util/kstandardguiitem.cpp:105
 msgid "&OK"
 msgstr "&Được"
@@ -6833,8 +6839,8 @@ msgstr ""
 msgid "Reset Toolbars"
 msgstr "Đặt lại Thanh công cụ"
 
-#: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2973
-#: khtml/khtmlview.cpp:3006 khtml/html/html_formimpl.cpp:2165
+#: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2971
+#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2165
 msgid "Reset"
 msgstr "Đặt lại"
 
@@ -6905,7 +6911,7 @@ msgstr "Đổi &biểu tượng..."
 
 #: kdeui/dialogs/kshortcutseditor.cpp:508
 #: kdeui/dialogs/kshortcutseditor.cpp:524
-#: kdeui/widgets/kkeysequencewidget.cpp:152
+#: kdeui/widgets/kkeysequencewidget.cpp:236
 msgid "Key Conflict"
 msgstr "Phím xung đột"
 
@@ -6921,8 +6927,9 @@ msgstr ""
 #: kdeui/dialogs/kshortcutseditor.cpp:513
 #: kdeui/dialogs/kshortcutseditor.cpp:529 kdeui/shortcuts/kglobalaccel.cpp:429
 #: kdeui/shortcuts/kglobalaccel.cpp:468
-#: kdeui/widgets/kkeysequencewidget.cpp:160
-#: kdeui/widgets/kkeysequencewidget.cpp:483
+#: kdeui/widgets/kkeysequencewidget.cpp:173
+#: kdeui/widgets/kkeysequencewidget.cpp:244
+#: kdeui/widgets/kkeysequencewidget.cpp:578
 msgid "Reassign"
 msgstr "Gán lại"
 
@@ -10452,7 +10459,23 @@ msgstr "Không rõ"
 msgid "&Copy Full Text"
 msgstr "&Chép đoạn"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:154
+#: kdeui/widgets/kkeysequencewidget.cpp:160
+#, kde-format
+msgid "Shortcut '%1' in Application %2 for action %3\n"
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:167
+#, kde-format
+msgid "The shortcut '%1' conflicts with the following key combinations:\n"
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:171
+#, fuzzy
+#| msgid "Conflict with Global Shortcut"
+msgid "Conflict With Registered Global Shortcut(s)"
+msgstr "Xung đột với phím tắt toàn cục"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:238
 #, fuzzy, kde-format
 #| msgid ""
 #| "The '%1' rocker gesture has already been allocated to the \"%2\" action.\n"
@@ -10464,24 +10487,24 @@ msgstr ""
 "Điệu bộ đu « %1 » đã được gán cho hành động « %2 ».\n"
 "Bạn có muốn gán lại nó từ hành động này đến điều hiện thời không?"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:168
+#: kdeui/widgets/kkeysequencewidget.cpp:252
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Shortcut conflict"
 msgstr "Phím tắt"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:169
+#: kdeui/widgets/kkeysequencewidget.cpp:253
 #, kde-format
 msgid ""
 "<qt>The '%1' key combination is already used by the <b>%2</b> action."
 "<br>Please select a different one.</qt>"
 msgstr ""
 
-#: kdeui/widgets/kkeysequencewidget.cpp:477
+#: kdeui/widgets/kkeysequencewidget.cpp:572
 msgid "Conflict with Standard Application Shortcut"
 msgstr "Xung đột với phím tắt ứng dụng chuẩn"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:478
+#: kdeui/widgets/kkeysequencewidget.cpp:573
 #, fuzzy, kde-format
 #| msgid ""
 #| "The '%1' key combination has already been allocated to the standard "
@@ -10496,17 +10519,27 @@ msgstr ""
 "nhiều ứng dụng.\n"
 "Vậy bạn không thể sử dụng nó lam phím tắt toàn cục."
 
-#: kdeui/widgets/kkeysequencewidget.cpp:510
+#: kdeui/widgets/kkeysequencewidget.cpp:605
 msgctxt "What the user inputs now will be taken as the new shortcut"
 msgid "Input"
 msgstr "Gõ"
 
-#: kdeui/widgets/kkeysequencewidget.cpp:517
+#: kdeui/widgets/kkeysequencewidget.cpp:612
 #, fuzzy
 #| msgid "None"
 msgctxt "No shortcut defined"
 msgid "None"
 msgstr "Không có"
+
+#: kdeui/widgets/kkeysequencewidget.cpp:655
+msgid "The key you just pressed isn't supported by qt."
+msgstr ""
+
+#: kdeui/widgets/kkeysequencewidget.cpp:656
+#, fuzzy
+#| msgid "Unsorted"
+msgid "Unsupported Key"
+msgstr "Chưa sắp xếp"
 
 #: kdeui/widgets/keditlistbox.cpp:328
 msgid "&Add"
@@ -11476,7 +11509,7 @@ msgstr ""
 "<qt>Đơn sẽ được gởi cho <BR><B>%1</B><BR> trong hệ thống tập tin cục bộ của "
 "bạn.<br>Bạn có muốn gởi đơn này không?"
 
-#: khtml/khtml_part.cpp:4952 khtml/khtmlview.cpp:2959 khtml/khtmlview.cpp:3001
+#: khtml/khtml_part.cpp:4952 khtml/khtmlview.cpp:2957 khtml/khtmlview.cpp:2999
 #: khtml/html/html_formimpl.cpp:1579 khtml/html/html_formimpl.cpp:2173
 msgid "Submit"
 msgstr "Gởi"
@@ -11596,39 +11629,39 @@ msgstr "Thêm vào danh sách bỏ qua..."
 msgid "Remove from ignores..."
 msgstr "Bỏ ra danh sách bỏ qua..."
 
-#: khtml/khtmlview.cpp:1923
+#: khtml/khtmlview.cpp:1921
 msgid "Find stopped."
 msgstr "Tìm đã dừng."
 
-#: khtml/khtmlview.cpp:1934
+#: khtml/khtmlview.cpp:1932
 msgid "Starting -- find links as you type"
 msgstr "Bắt đầu... tìm liên kết trong khi gõ"
 
-#: khtml/khtmlview.cpp:1940
+#: khtml/khtmlview.cpp:1938
 msgid "Starting -- find text as you type"
 msgstr "Bắt đầu... tìm đoạn trong khi gõ"
 
-#: khtml/khtmlview.cpp:1963
+#: khtml/khtmlview.cpp:1961
 #, kde-format
 msgid "Link found: \"%1\"."
 msgstr "Tìm liên kết: « %1 »"
 
-#: khtml/khtmlview.cpp:1968
+#: khtml/khtmlview.cpp:1966
 #, kde-format
 msgid "Link not found: \"%1\"."
 msgstr "Không tìm thấy liên kết: « %1 »"
 
-#: khtml/khtmlview.cpp:1976
+#: khtml/khtmlview.cpp:1974
 #, kde-format
 msgid "Text found: \"%1\"."
 msgstr "Tìm đoạn: « %1 »"
 
-#: khtml/khtmlview.cpp:1981
+#: khtml/khtmlview.cpp:1979
 #, kde-format
 msgid "Text not found: \"%1\"."
 msgstr "Không tìm thấy đoạn: « %1 »"
 
-#: khtml/khtmlview.cpp:2029
+#: khtml/khtmlview.cpp:2027
 msgid "Access Keys activated"
 msgstr "Phím truy cập hoạt động"
 

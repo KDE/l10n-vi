@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-29 10:31+0100\n"
+"POT-Creation-Date: 2008-10-30 10:05+0100\n"
 "PO-Revision-Date: 2008-01-06 00:26+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-l10n-vi@lists.kde.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 msgid "Select Mime Types"
 msgstr "Chọn kiểu MIME"
 
-#: view/kateviewhelpers.cpp:347
+#: view/kateviewhelpers.cpp:355
 msgid "Available Commands"
 msgstr "Lệnh sẵn sàng"
 
-#: view/kateviewhelpers.cpp:349
+#: view/kateviewhelpers.cpp:357
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
 "p>"
@@ -62,17 +62,17 @@ msgstr ""
 "<p>Để xem trợ giúp về lệnh riêng, hãy gõ <code>'help &lt;tên_lệnh&gt;'</"
 "code></p>"
 
-#: view/kateviewhelpers.cpp:360
+#: view/kateviewhelpers.cpp:368
 #, kde-format
 msgid "No help for '%1'"
 msgstr "Không có trợ giúp cho « %1 »"
 
-#: view/kateviewhelpers.cpp:363
+#: view/kateviewhelpers.cpp:371
 #, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "Không có lệnh <b>%1</b>"
 
-#: view/kateviewhelpers.cpp:368
+#: view/kateviewhelpers.cpp:376
 msgid ""
 "<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
 "[ arguments ]</b></code><br />For a list of available commands, enter "
@@ -84,54 +84,54 @@ msgstr ""
 "<code><b>help list</b></code><br/>Còn để xem trợ giúp về lệnh riêng, "
 "gõ<code><b>help &lt;tên_lệnh&gt;</b></code></p>"
 
-#: view/kateviewhelpers.cpp:459
+#: view/kateviewhelpers.cpp:467
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr ""
 
-#: view/kateviewhelpers.cpp:475
+#: view/kateviewhelpers.cpp:483
 msgid "Success: "
 msgstr "Thành công: "
 
-#: view/kateviewhelpers.cpp:477
+#: view/kateviewhelpers.cpp:485
 msgid "Success"
 msgstr "Thành công"
 
-#: view/kateviewhelpers.cpp:482
+#: view/kateviewhelpers.cpp:490
 msgid "Error: "
 msgstr "Lỗi: "
 
-#: view/kateviewhelpers.cpp:484
+#: view/kateviewhelpers.cpp:492
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "Lệnh « %1 » đã thất bại."
 
-#: view/kateviewhelpers.cpp:490
+#: view/kateviewhelpers.cpp:498
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "Không có lệnh: « %1 »"
 
-#: view/kateviewhelpers.cpp:708 utils/kateschema.cpp:203
+#: view/kateviewhelpers.cpp:716 utils/kateschema.cpp:203
 msgid "Bookmark"
 msgstr "Đánh dấu"
 
-#: view/kateviewhelpers.cpp:1468 view/kateviewhelpers.cpp:1469
+#: view/kateviewhelpers.cpp:1476 view/kateviewhelpers.cpp:1477
 #, kde-format
 msgid "Mark Type %1"
 msgstr "Kiểu dấu %1"
 
-#: view/kateviewhelpers.cpp:1488
+#: view/kateviewhelpers.cpp:1496
 msgid "Set Default Mark Type"
 msgstr "Đặt kiểu dấu mặc định"
 
-#: view/kateviewhelpers.cpp:1637
+#: view/kateviewhelpers.cpp:1645
 #, fuzzy
 #| msgid "Disabled"
 msgctxt "Encodings menu"
 msgid "Disabled"
 msgstr "Đã tắt"
 
-#: view/kateviewhelpers.cpp:1640 view/kateviewhelpers.cpp:1652
+#: view/kateviewhelpers.cpp:1648 view/kateviewhelpers.cpp:1660
 msgctxt "Encodings menu"
 msgid "Autodetect"
 msgstr ""
@@ -807,7 +807,7 @@ msgstr "ĐÈ"
 msgid "INS"
 msgstr "CHÈN "
 
-#: view/kateview.cpp:1988
+#: view/kateview.cpp:1994
 msgid "Export File as HTML"
 msgstr "Xuất tập tin dạng HTML"
 
@@ -2344,14 +2344,23 @@ msgstr ""
 msgid "Unknown command '%1'"
 msgstr "Không biết lệnh « %1 »."
 
-#: utils/katecmds.cpp:551
+#: utils/katecmds.cpp:558
 msgid "Sorry, but Kate is not able to replace newlines, yet"
 msgstr "Tiếc là trình Kate chưa có khả năng thay thế dòng mới"
 
-#: utils/katecmds.cpp:595
-#, kde-format
-msgid "1 replacement done"
-msgid_plural "%1 replacements done"
+#: utils/katecmds.cpp:587
+#, fuzzy, kde-format
+#| msgid "Inline"
+msgid "1 line"
+msgid_plural "%1 lines"
+msgstr[0] "Trực tiếp"
+
+#: utils/katecmds.cpp:586
+#, fuzzy, kde-format
+#| msgid "1 replacement done"
+#| msgid_plural "%1 replacements done"
+msgid "1 replacement done on 1 line"
+msgid_plural "%1 replacements done on %2"
 msgstr[0] "Mới thay thế %1 lần."
 
 #: completion/katecompletionmodel.cpp:134

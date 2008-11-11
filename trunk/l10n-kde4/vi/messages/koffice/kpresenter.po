@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-10 10:15+0100\n"
+"POT-Creation-Date: 2008-11-11 09:59+0100\n"
 "PO-Revision-Date: 2008-01-18 11:33+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -84,45 +84,106 @@ msgstr "&Mọi slide"
 msgid "Configure Slide Show"
 msgstr "&Cấu hình trang ..."
 
-#: part/KPrView.cpp:97
+#: part/KPrView.cpp:62
+#, fuzzy
+msgid "Show Master Slides"
+msgstr "Slide"
+
+#: part/KPrView.cpp:63
+#, fuzzy
+msgid "Insert Slide"
+msgstr "Chèn dòng"
+
+#: part/KPrView.cpp:64 part/KPrView.cpp:65
+msgid "Insert a new slide after the current one"
+msgstr ""
+
+#: part/KPrView.cpp:66
+#, fuzzy
+msgid "Copy Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:67 part/KPrView.cpp:68
+#, fuzzy
+msgid "Copy the current slide"
+msgstr "Trước trang hiện tại"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:69 rc.cpp:170
+#, fuzzy
+msgid "Delete Slide"
+msgstr "Slide đã chọ&n"
+
+#: part/KPrView.cpp:70 part/KPrView.cpp:71
+#, fuzzy
+msgid "Delete the current slide"
+msgstr "Trước trang hiện tại"
+
+#: part/KPrView.cpp:72
+#, fuzzy
+msgid "Master Slide..."
+msgstr "Chèn dòng"
+
+#: part/KPrView.cpp:73
+#, fuzzy
+msgid "Previous Slide"
+msgstr "Bước &trước"
+
+#: part/KPrView.cpp:74 part/KPrPresenterViewInterface.cpp:67
+#, fuzzy
+msgid "Next Slide"
+msgstr "Bước &kế"
+
+#: part/KPrView.cpp:75
+#, fuzzy
+msgid "First Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+msgid "Last Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:114
 msgid "Normal"
 msgstr "Thông thường "
 
-#: part/KPrView.cpp:103
+#: part/KPrView.cpp:120
 #, fuzzy
 msgid "Notes"
 msgstr "Không bút"
 
-#: part/KPrView.cpp:112
+#: part/KPrView.cpp:129
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Create Appear Animation"
 msgstr "Hoạt cảnh tạo hình"
 
-#: part/KPrView.cpp:116
+#: part/KPrView.cpp:133
 #, fuzzy
 msgid "Edit Custom Slide Shows..."
 msgstr "&Cấu hình trang ..."
 
-#: part/KPrView.cpp:120
+#: part/KPrView.cpp:137
 msgid "Start Presentation"
 msgstr "Bắt đầu Trình diễn"
 
-#: part/KPrView.cpp:123
+#: part/KPrView.cpp:140
 #, fuzzy
-msgid "From Current Page"
+msgid "From Current Slide"
 msgstr "Sau trang hiện tại"
 
-#: part/KPrView.cpp:126
-msgid "From First Page"
+#: part/KPrView.cpp:144
+msgid "From First Slide"
 msgstr ""
 
-#: part/KPrView.cpp:130
+#: part/KPrView.cpp:148
 #, fuzzy
 msgid "Configure Slide Show..."
 msgstr "&Cấu hình trang ..."
 
-#: part/KPrView.cpp:134
+#: part/KPrView.cpp:152
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure Presenter View..."
@@ -176,9 +237,8 @@ msgstr "Hình"
 
 #: part/dockers/KPrPageLayoutDocker.cpp:45
 #, fuzzy
-#| msgid "Set Page Layout"
-msgid "Page Layouts"
-msgstr "Đặt kiểu Trang"
+msgid "Slide Layouts"
+msgstr "&Kiểu Trang..."
 
 #: part/KPrPlaceholderShapeFactory.cpp:30
 msgid "Placeholder shape"
@@ -357,11 +417,6 @@ msgstr ""
 #: part/KPrAboutData.h:55
 msgid "Timothée Lacroix "
 msgstr ""
-
-#: part/KPrPresenterViewInterface.cpp:67
-#, fuzzy
-msgid "Next Slide"
-msgstr "Bước &kế"
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -739,13 +794,6 @@ msgstr "Tạo HTML Slideshow"
 msgid "Add Slide"
 msgstr "Slide"
 
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: rc.cpp:170
-#, fuzzy
-msgid "Delete Slide"
-msgstr "Slide đã chọ&n"
-
 #. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:182
 #. i18n: ectx: property (text), widget (QPushButton, undoButton)
 #: rc.cpp:173
@@ -888,8 +936,8 @@ msgstr "Kiểu: "
 #. i18n: ectx: Menu (page)
 #: rc.cpp:251
 #, fuzzy
-msgid "&Page"
-msgstr "&Trang...."
+msgid "&Slide"
+msgstr "Slide"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:102
 #, fuzzy
@@ -2019,6 +2067,15 @@ msgstr "Dòng ngang"
 msgid "Box"
 msgstr ""
 
+#, fuzzy
+#~| msgid "Set Page Layout"
+#~ msgid "Page Layouts"
+#~ msgstr "Đặt kiểu Trang"
+
+#, fuzzy
+#~ msgid "&Page"
+#~ msgstr "&Trang...."
+
 #~ msgid "Page effects"
 #~ msgstr "Các hiệu ứng trang"
 
@@ -2161,14 +2218,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Cover down effect"
 #~ msgstr "Đến từ bên trái"
-
-#, fuzzy
-#~ msgid "Insert Slide"
-#~ msgstr "Chèn dòng"
-
-#, fuzzy
-#~ msgid "Before Current Slide"
-#~ msgstr "Trước trang hiện tại"
 
 #, fuzzy
 #~ msgid "Insert &new slide:"
@@ -2831,10 +2880,6 @@ msgstr ""
 #~ msgstr "Slide"
 
 #, fuzzy
-#~ msgid "Paste Slide"
-#~ msgstr "Slide"
-
-#, fuzzy
 #~ msgid "Insert File"
 #~ msgstr "Chèn dòng"
 
@@ -3372,10 +3417,6 @@ msgstr ""
 #~ msgid "Change Outline Width"
 #~ msgstr "Thay đổi bút"
 
-#, fuzzy
-#~ msgid "Copy Slide"
-#~ msgstr "Slide"
-
 #~ msgid "Show Sidebar"
 #~ msgstr "Hiện sidebar"
 
@@ -3414,10 +3455,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Slide..."
 #~ msgstr "Slide"
-
-#, fuzzy
-#~ msgid "Insert &Slide..."
-#~ msgstr "Chèn dòng"
 
 #~ msgid "P&icture..."
 #~ msgstr "&Hình..."
@@ -3605,10 +3642,6 @@ msgstr ""
 
 #~ msgid "&Go to Start"
 #~ msgstr "&Nhảy tới Bắt Đầu"
-
-#, fuzzy
-#~ msgid "&Previous Slide"
-#~ msgstr "Bước &trước"
 
 #~ msgid "Go to &End"
 #~ msgstr "Nhảy  đến &cuối"

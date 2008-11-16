@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-15 11:47+0100\n"
+"POT-Creation-Date: 2008-11-16 10:01+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1590,15 +1590,25 @@ msgstr "Lần lặp lại:"
 msgid "Dropped v3 tables"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:614
-msgid "There is already an entry with the same path"
+#: libs/database/collectionmanager.cpp:684
+#: libs/database/collectionmanager.cpp:806
+msgid "The selected folder does not exist or is not readable"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:628
+#: libs/database/collectionmanager.cpp:693
+#, kde-format
+msgid "There is already a collection containing the folder \"%1\""
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:709
 msgid "The storage media can be uniquely identified."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:656
+#: libs/database/collectionmanager.cpp:716
+msgid "The collection is located on your harddisk"
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:744
 msgid ""
 "This is a CD/DVD, which is identified by the label that you can set in your "
 "CD burning application. There is already another entry with the same label. "
@@ -1608,7 +1618,7 @@ msgid ""
 "with digiKam."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:668
+#: libs/database/collectionmanager.cpp:756
 #, kde-format
 msgid ""
 "This is a CD/DVD. It will be identified by the label (\"%1\")that you have "
@@ -1616,14 +1626,14 @@ msgid ""
 "digikam in the future, please remember to give them a unique label as well."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:680
+#: libs/database/collectionmanager.cpp:768
 #, kde-format
 msgid ""
 "This is a removable storage media that will be identified by its label (\"%1"
 "\")"
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:688
+#: libs/database/collectionmanager.cpp:778
 #, kde-format
 msgid ""
 "This entry will only be identified by the path where it is found on your "
@@ -1631,10 +1641,20 @@ msgid ""
 "available."
 msgstr ""
 
-#: libs/database/collectionmanager.cpp:697
+#: libs/database/collectionmanager.cpp:789
 msgid ""
 "There is a problem identifying the storage media of this path. It will be "
 "added using the file path as the only identifier"
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:815
+msgid "There is already a collection for a network share with the same path"
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:822
+msgid ""
+"The network share will be identified by the path you selected. If the path "
+"is empty, the share will be considered unavailable."
 msgstr ""
 
 #: libs/database/imagescanner.cpp:601
@@ -2058,67 +2078,67 @@ msgstr "Tập tin EXIF cần lưu"
 msgid "EXIF binary Files (*.exif)"
 msgstr "Tập tin nhị phân EXIF (*.dat)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:124
+#: libs/widgets/metadata/metadatawidget.cpp:123
 #, fuzzy
 #| msgid "Toggle tags view to a simple human-readable list"
 msgid "Switch the tags view to a simple human-readable list"
 msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
 
-#: libs/widgets/metadata/metadatawidget.cpp:125
+#: libs/widgets/metadata/metadatawidget.cpp:124
 #, fuzzy
 #| msgid "Simple sharp"
 msgid "Simple list"
 msgstr "Sắc đơn giản"
 
-#: libs/widgets/metadata/metadatawidget.cpp:132
+#: libs/widgets/metadata/metadatawidget.cpp:130
 #, fuzzy
 #| msgid "Toggle tags view to a full list"
 msgid "Switch the tags view to a full list"
 msgstr "Bật/tắt ô xem thẻ thành danh sách đầy đủ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:133
+#: libs/widgets/metadata/metadatawidget.cpp:131
 #, fuzzy
 #| msgid "Full Text"
 msgid "Full list"
 msgstr "Văn bản đầy đủ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:148
+#: libs/widgets/metadata/metadatawidget.cpp:147
 #, fuzzy
 #| msgid "Save meta-data to a binary file"
 msgid "Save metadata to a binary file"
 msgstr "Lưu siêu dữ liệu vào tập tin nhị phân"
 
-#: libs/widgets/metadata/metadatawidget.cpp:149
+#: libs/widgets/metadata/metadatawidget.cpp:148
 #, fuzzy
 #| msgid "Metadata"
 msgid "Save metadata"
 msgstr "Siêu dữ liệu"
 
-#: libs/widgets/metadata/metadatawidget.cpp:154
+#: libs/widgets/metadata/metadatawidget.cpp:153
 #, fuzzy
 #| msgid "Print meta-data to printer"
 msgid "Print metadata to printer"
 msgstr "In siêu dữ liệu vào máy in"
 
-#: libs/widgets/metadata/metadatawidget.cpp:155
+#: libs/widgets/metadata/metadatawidget.cpp:154
 #, fuzzy
 #| msgid "Print meta-data to printer"
 msgid "Print metadata"
 msgstr "In siêu dữ liệu vào máy in"
 
+#: libs/widgets/metadata/metadatawidget.cpp:159
 #: libs/widgets/metadata/metadatawidget.cpp:160
-#: libs/widgets/metadata/metadatawidget.cpp:161
 #, fuzzy
 #| msgid "Copy meta-data to clipboard"
 msgid "Copy metadata to clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: libs/widgets/metadata/metadatawidget.cpp:300
+#: libs/widgets/metadata/metadatawidget.cpp:299
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "Tên tập tin: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:342
+#: libs/widgets/metadata/metadatawidget.cpp:341
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>Tên tập tin: %1 (%2)</b></big></big>"
@@ -2190,7 +2210,8 @@ msgid "No profile available..."
 msgstr "Không có sẵn hồ sơ..."
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:127
-#: showfoto/setup/setupeditor.cpp:191 utilities/setup/setupcollections.cpp:227
+#: showfoto/setup/setupeditor.cpp:191
+#: utilities/setup/setupcollectionview.cpp:765
 msgid "Name"
 msgstr "Tên"
 
@@ -2520,7 +2541,7 @@ msgid "File Properties"
 msgstr "Thuộc tính tập tin"
 
 #: libs/widgets/common/thumbbar.cpp:977 digikam/imagepreviewbar.cpp:466
-#: digikam/albumfiletip.cpp:341 utilities/setup/setupcollections.cpp:251
+#: digikam/albumfiletip.cpp:341
 msgid "Name:"
 msgstr "Tên:"
 
@@ -11837,6 +11858,101 @@ msgstr "Hiện đánh giá ảnh"
 msgid "Show the digiKam image rating at the bottom of the screen."
 msgstr "<p>Hiển thị ngày tháng tạo ảnh ở dưới màn hình."
 
+#: utilities/setup/setupcollectionview.cpp:465
+msgid "It was not possible to add a collection for the following paths"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:496
+msgid "Choose the folder containing your collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:524
+#, kde-format
+msgid ""
+"You have just previously added a collection that already contains the path "
+"\"%1\""
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:544
+#, fuzzy
+#| msgid "Album Collection"
+msgid "Problem Adding Collection"
+msgstr "Tập hợp tập ảnh"
+
+#: utilities/setup/setupcollectionview.cpp:623
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:625
+#, kde-format
+msgid ""
+"Do you want to remove the collection \"%1\" from your list of collections?"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:626
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove Collection?"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:652
+#, fuzzy
+#| msgid "Collections"
+msgid "Local Collections"
+msgstr "Tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:653
+msgid "Collections on Removable Media"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:654
+#, fuzzy
+#| msgid "Collections"
+msgid "Collections on Network Shares"
+msgstr "Tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:666
+#, fuzzy
+#| msgid "By Collection"
+msgid "Add Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:686
+#, kde-format
+msgid "Col. %1"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:733
+msgid "This collection is currently not available"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:735
+msgid "No problems found: Enjoy this collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:737
+msgid "This collection is hidden"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:746
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:766
+#: utilities/setup/setupcamera.cpp:103
+msgid "Path"
+msgstr "Đường dẫn"
+
+#: utilities/setup/setupcollectionview.cpp:767
+#, fuzzy
+#| msgid "Statistics"
+msgid "Status"
+msgstr "Thống kê"
+
 #: utilities/setup/setupmime.cpp:94
 msgid ""
 "<p>digiKam attempts to support all of the image formats that digital cameras "
@@ -12238,79 +12354,25 @@ msgid ""
 "and limit strings size. Use contextual help for details.</b>"
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:207
+#: utilities/setup/setupcollections.cpp:91
 #, fuzzy
 #| msgid "Create Folder?"
 msgid "Root Album Folders"
 msgstr "Tạo thư mục ?"
 
-#: utilities/setup/setupcollections.cpp:210
+#: utilities/setup/setupcollections.cpp:93
 msgid ""
 "Below are the locations of your root albums used to store your images. Write "
 "access is necessary to be able to edit images in these albums.\n"
-"Note: Removable media and remote file systems (NFS and Samba), are supported."
+"Note: removable media (such as USB drive or DVD) and remote file systems "
+"(such as NFS or Samba) are supported."
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:224
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the digital camera list used by digiKam via the "
-#| "Gphoto interface."
-msgid "This shows all root albums used by digiKam as collections."
-msgstr ""
-"<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi digiKam "
-"qua giao diện Gphoto."
-
-#: utilities/setup/setupcollections.cpp:228
-#, fuzzy
-#| msgid "Type:"
-msgid "Type"
-msgstr "Kiểu :"
-
-#: utilities/setup/setupcollections.cpp:229
-#, fuzzy
-#| msgid "Statistics"
-msgid "Status"
-msgstr "Thống kê"
-
-#: utilities/setup/setupcollections.cpp:230
-#: utilities/setup/setupcamera.cpp:103
-msgid "Path"
-msgstr "Đường dẫn"
-
-#: utilities/setup/setupcollections.cpp:238
-#, fuzzy
-#| msgid "&View"
-msgid "&New"
-msgstr "&Xem"
-
-#: utilities/setup/setupcollections.cpp:239
-msgid "&Add"
-msgstr "Thê&m"
-
-#: utilities/setup/setupcollections.cpp:240
-#: utilities/setup/setupcamera.cpp:117 utilities/setup/setupalbumtype.cpp:101
-msgid "&Remove"
-msgstr "&Bỏ"
-
-#: utilities/setup/setupcollections.cpp:241
-#: utilities/setup/setupalbumtype.cpp:102
-#, fuzzy
-#| msgid "Relative"
-msgid "&Replace"
-msgstr "Tương đối"
-
-#: utilities/setup/setupcollections.cpp:255
-#, fuzzy
-#| msgid "Path"
-msgid "Path:"
-msgstr "Đường dẫn"
-
-#: utilities/setup/setupcollections.cpp:277
+#: utilities/setup/setupcollections.cpp:114
 msgid "Database File Path"
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:280
+#: utilities/setup/setupcollections.cpp:117
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can set the main path to the digiKam album library in your "
@@ -12320,18 +12382,13 @@ msgid ""
 "The location where the database file will be stored on your system. There is "
 "one common database file for all root albums.\n"
 "Write access is required to be able to edit image properties.\n"
-"Note: A remote file system, such as NFS, cannot be used here."
+"Note: a remote file system, such as NFS, cannot be used here."
 msgstr ""
 "<p>Ở đây bạn có thể đặt đường dẫn chính đến thư viện tập ảnh digiKam trên "
 "máy tính của bạn.<p>Đường dẫn này cần thiết quyền ghi; đừng đặt một đường "
 "dẫn ở xa, v.d. trên hệ thống tập tin được lắp NFS."
 
-#: utilities/setup/setupcollections.cpp:439
-#, kde-format
-msgid "Col. %1"
-msgstr ""
-
-#: utilities/setup/setupcollections.cpp:522
+#: utilities/setup/setupcollections.cpp:195
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
@@ -12342,36 +12399,6 @@ msgid ""
 msgstr ""
 "Không có quyền ghi vào đường dẫn này.\n"
 "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
-
-#: utilities/setup/setupcollections.cpp:548
-#, fuzzy
-#| msgid "Sorry; cannot use home directory as album library."
-msgid "Sorry you cannot use your home directory as the root album."
-msgstr "Tiếc là không thể đặt thư mục chính làm thư viện tập ảnh."
-
-#: utilities/setup/setupcollections.cpp:556
-#, fuzzy
-#| msgid ""
-#| "No write access for this path.\n"
-#| "Warning: the comment and tag features will not work."
-msgid ""
-"You don't seem to have write access to this root album.\n"
-"Without this access, image and metadata editing will not work."
-msgstr ""
-"Không có quyền ghi vào đường dẫn này.\n"
-"Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
-
-#: utilities/setup/setupcollections.cpp:616
-#, fuzzy, kde-format
-#| msgid "Tag name already exists"
-msgid "A root album named \"%1\" already exists."
-msgstr "Tên thẻ đã có."
-
-#: utilities/setup/setupcollections.cpp:622
-#, fuzzy, kde-format
-#| msgid "Tag name already exists"
-msgid "A root album in folder \"%1\" already exists."
-msgstr "Tên thẻ đã có."
 
 #: utilities/setup/setupeditor.cpp:93
 msgid "&Use theme background color"
@@ -12468,6 +12495,10 @@ msgstr "Cổng"
 msgid "&Add..."
 msgstr "&Thêm..."
 
+#: utilities/setup/setupcamera.cpp:117 utilities/setup/setupalbumtype.cpp:101
+msgid "&Remove"
+msgstr "&Bỏ"
+
 #: utilities/setup/setupcamera.cpp:119
 msgid "&Edit..."
 msgstr "&Sửa..."
@@ -12510,6 +12541,12 @@ msgid ""
 msgstr ""
 "<p>Ở đây bạn có thể thêm hay gỡ bỏ kiểu tập hợp tập ảnh để cải tiến cách sắp "
 "xếp tập ảnh trong digiKam."
+
+#: utilities/setup/setupalbumtype.cpp:102
+#, fuzzy
+#| msgid "Relative"
+msgid "&Replace"
+msgstr "Tương đối"
 
 #: utilities/setup/setup.cpp:151
 msgid "Collections"
@@ -15976,6 +16013,59 @@ msgid ""
 "Fuzzy search"
 msgstr ""
 
+#, fuzzy
+#~| msgid ""
+#~| "<p>Here you can see the digital camera list used by digiKam via the "
+#~| "Gphoto interface."
+#~ msgid "This shows all root albums used by digiKam as collections."
+#~ msgstr ""
+#~ "<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi "
+#~ "digiKam qua giao diện Gphoto."
+
+#, fuzzy
+#~| msgid "Type:"
+#~ msgid "Type"
+#~ msgstr "Kiểu :"
+
+#, fuzzy
+#~| msgid "&View"
+#~ msgid "&New"
+#~ msgstr "&Xem"
+
+#~ msgid "&Add"
+#~ msgstr "Thê&m"
+
+#, fuzzy
+#~| msgid "Path"
+#~ msgid "Path:"
+#~ msgstr "Đường dẫn"
+
+#, fuzzy
+#~| msgid "Sorry; cannot use home directory as album library."
+#~ msgid "Sorry you cannot use your home directory as the root album."
+#~ msgstr "Tiếc là không thể đặt thư mục chính làm thư viện tập ảnh."
+
+#, fuzzy
+#~| msgid ""
+#~| "No write access for this path.\n"
+#~| "Warning: the comment and tag features will not work."
+#~ msgid ""
+#~ "You don't seem to have write access to this root album.\n"
+#~ "Without this access, image and metadata editing will not work."
+#~ msgstr ""
+#~ "Không có quyền ghi vào đường dẫn này.\n"
+#~ "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
+
+#, fuzzy
+#~| msgid "Tag name already exists"
+#~ msgid "A root album named \"%1\" already exists."
+#~ msgstr "Tên thẻ đã có."
+
+#, fuzzy
+#~| msgid "Tag name already exists"
+#~ msgid "A root album in folder \"%1\" already exists."
+#~ msgstr "Tên thẻ đã có."
+
 #~ msgid "Open in Konqueror"
 #~ msgstr "Mở bằng Konqueror"
 
@@ -17256,9 +17346,6 @@ msgstr ""
 
 #~ msgid "Album Caption"
 #~ msgstr "Phụ đề tập ảnh"
-
-#~ msgid "Album Collection"
-#~ msgstr "Tập hợp tập ảnh"
 
 #~ msgid "Tag Name"
 #~ msgstr "Tên thẻ"

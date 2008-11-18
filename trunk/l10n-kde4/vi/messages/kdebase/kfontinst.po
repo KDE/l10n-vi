@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfontinst\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:40+0100\n"
+"POT-Creation-Date: 2008-11-18 09:54+0100\n"
 "PO-Revision-Date: 2007-06-25 16:34+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -220,13 +220,13 @@ msgstr "Thuộc tính..."
 #: kcmfontinst/DuplicatesDialog.cpp:555
 #, fuzzy
 #| msgid "Unmark for deletion..."
-msgid "Unmark for Deletion..."
+msgid "Unmark for Deletion"
 msgstr "Bỏ dấu để xoá..."
 
 #: kcmfontinst/DuplicatesDialog.cpp:557
 #, fuzzy
 #| msgid "Mark for deletion..."
-msgid "Mark for Deletion..."
+msgid "Mark for Deletion"
 msgstr "Đánh dấu để xoá..."
 
 #: kcmfontinst/DuplicatesDialog.cpp:634 kcmfontinst/FontList.cpp:2016
@@ -319,7 +319,7 @@ msgstr "...và %1 thêm"
 msgid "%1 [%2]"
 msgstr "%1 [%2]"
 
-#: kcmfontinst/FontList.cpp:1613
+#: kcmfontinst/FontList.cpp:1613 kcmfontinst/KCmFontInst.cpp:368
 #, fuzzy
 #| msgid "Delete..."
 msgid "Delete"
@@ -334,12 +334,16 @@ msgid "Reload"
 msgstr "Nạp lại"
 
 #: kcmfontinst/FontList.cpp:1625 kcmfontinst/GroupList.cpp:773
-msgid "Enable..."
-msgstr "Bật..."
+#: kcmfontinst/KCmFontInst.cpp:372 kcmfontinst/KCmFontInst.cpp:1399
+#: kcmfontinst/KCmFontInst.cpp:1423
+msgid "Enable"
+msgstr "Bật"
 
 #: kcmfontinst/FontList.cpp:1627 kcmfontinst/GroupList.cpp:775
-msgid "Disable..."
-msgstr "Tắt..."
+#: kcmfontinst/KCmFontInst.cpp:376 kcmfontinst/KCmFontInst.cpp:1400
+#: kcmfontinst/KCmFontInst.cpp:1424
+msgid "Disable"
+msgstr "Tắt"
 
 #: kcmfontinst/GroupList.cpp:83
 msgid "All Fonts"
@@ -402,7 +406,7 @@ msgstr ""
 msgid "Remove Group"
 msgstr "Gỡ bỏ nhóm"
 
-#: kcmfontinst/GroupList.cpp:588
+#: kcmfontinst/GroupList.cpp:588 kcmfontinst/GroupList.cpp:771
 msgid "Remove"
 msgstr "Bỏ"
 
@@ -460,10 +464,6 @@ msgstr ""
 #| msgid "<qt>A group named <b>'%1'</b> already exists!</qt>"
 msgid "<qt>A group named <b>'%1'</b> already exists.</qt>"
 msgstr "<qt>Một nhóm tên « <b>%1</b> » đã có.</qt>"
-
-#: kcmfontinst/GroupList.cpp:771
-msgid "Remove..."
-msgstr "Bỏ..."
 
 #: kcmfontinst/GroupList.cpp:778
 msgid "Rename..."
@@ -707,7 +707,9 @@ msgid "Change Preview Text..."
 msgstr "Đổi văn bản xem thử..."
 
 #: kcmfontinst/KCmFontInst.cpp:295
-msgid "Scan For Duplicate Fonts..."
+#, fuzzy
+#| msgid "Scan For Duplicate Fonts..."
+msgid "Scan for Duplicate Fonts..."
 msgstr "Quét tìm phông trùng..."
 
 #: kcmfontinst/KCmFontInst.cpp:299
@@ -742,27 +744,13 @@ msgstr "Thêm..."
 msgid "Install fonts"
 msgstr "Cài đặt phông"
 
-#: kcmfontinst/KCmFontInst.cpp:368
-msgid "Delete..."
-msgstr "Xoá..."
-
 #: kcmfontinst/KCmFontInst.cpp:369
 msgid "Delete all selected fonts"
 msgstr "Xoá mọi phông đã chọn"
 
-#: kcmfontinst/KCmFontInst.cpp:372 kcmfontinst/KCmFontInst.cpp:1399
-#: kcmfontinst/KCmFontInst.cpp:1423
-msgid "Enable"
-msgstr "Bật"
-
 #: kcmfontinst/KCmFontInst.cpp:373
 msgid "Enable all selected fonts"
 msgstr "Bật mọi phông đã chọn"
-
-#: kcmfontinst/KCmFontInst.cpp:376 kcmfontinst/KCmFontInst.cpp:1400
-#: kcmfontinst/KCmFontInst.cpp:1424
-msgid "Disable"
-msgstr "Tắt"
 
 #: kcmfontinst/KCmFontInst.cpp:377
 msgid "Disable all selected fonts"
@@ -2477,6 +2465,18 @@ msgstr "Phach-x-pa"
 #: viewpart/UnicodeScripts.h:79
 msgid "Yi"
 msgstr "Yi"
+
+#~ msgid "Enable..."
+#~ msgstr "Bật..."
+
+#~ msgid "Disable..."
+#~ msgstr "Tắt..."
+
+#~ msgid "Remove..."
+#~ msgstr "Bỏ..."
+
+#~ msgid "Delete..."
+#~ msgstr "Xoá..."
 
 #~ msgid "Enable font"
 #~ msgstr "Bật phông"

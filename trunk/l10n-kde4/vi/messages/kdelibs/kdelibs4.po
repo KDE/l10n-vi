@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-17 09:39+0100\n"
+"POT-Creation-Date: 2008-11-18 09:53+0100\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -856,7 +856,7 @@ msgstr "&Công cụ"
 
 #. i18n: file: kdeui/xmlgui/ui_standards.rc:146
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:327
+#: rc.cpp:327 khtml/ecma/debugger/debugwindow.cpp:240
 msgid "&Settings"
 msgstr "Thiết &lập"
 
@@ -1801,7 +1801,7 @@ msgstr "Chạy tới điểm ngắt..."
 
 #. i18n: file: kjsembed/examples/kjsconsole/jsconsole.ui:219
 #. i18n: ectx: property (text), widget (QStatusBar, statusBar)
-#: rc.cpp:791 khtml/ecma/kjs_debugwin.cpp:480
+#: rc.cpp:791
 msgid "Step"
 msgstr "Bước"
 
@@ -1817,8 +1817,7 @@ msgstr "Bước tới dòng kế..."
 #. i18n: ectx: property (text), widget (QPushButton, pbStop)
 #: rc.cpp:797 rc.cpp:945 kdeui/jobs/kstatusbarjobtracker.cpp:156
 #: kdeui/util/kstandardguiitem.cpp:265 kdeui/util/kkeyserver_x11.cpp:109
-#: kdeui/findreplace/kreplace.cpp:353 khtml/ecma/kjs_debugwin.cpp:482
-#: kross/ui/view.cpp:309
+#: kdeui/findreplace/kreplace.cpp:353 kross/ui/view.cpp:309
 msgid "Stop"
 msgstr "Dừng"
 
@@ -5912,6 +5911,7 @@ msgid "No provider selected."
 msgstr "Chưa chọn nhà cung cấp."
 
 #: knewstuff/knewstuff2/core/providerhandler.cpp:156
+#: knewstuff/knewstuff2/core/providerhandler.cpp:176
 #, fuzzy
 #| msgid "Latest"
 msgctxt "describes the feed of the latest posted entries"
@@ -5925,10 +5925,6 @@ msgstr "Điểm cao nhất"
 #: knewstuff/knewstuff2/core/providerhandler.cpp:168
 msgid "Most Downloads"
 msgstr "Lần tải về nhiều nhất"
-
-#: knewstuff/knewstuff2/core/providerhandler.cpp:174
-msgid "Unsorted"
-msgstr "Chưa sắp xếp"
 
 #: knewstuff/knewstuff2/core/security.cpp:76
 msgid ""
@@ -6570,7 +6566,7 @@ msgstr "Phím tắt"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:61
 #, fuzzy
 #| msgid "Curr&ent actions:"
-msgid "Current Scheme:"
+msgid "Current scheme:"
 msgstr "Hành động &hiện có :"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:71
@@ -6590,8 +6586,10 @@ msgid "More Actions"
 msgstr "Hành động"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:81
-msgid "Save As Scheme Defaults"
-msgstr ""
+#, fuzzy
+#| msgid "&Defaults"
+msgid "Save as Scheme Defaults"
+msgstr "&Mặc định"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:83
 msgid "Export Scheme..."
@@ -6602,8 +6600,10 @@ msgid "Name for New Scheme"
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
-msgid "Name for New Scheme:"
-msgstr ""
+#, fuzzy
+#| msgid "Curr&ent actions:"
+msgid "Name for new scheme:"
+msgstr "Hành động &hiện có :"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:101
 #, fuzzy
@@ -6614,7 +6614,7 @@ msgstr "Hành động &hiện có :"
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:107
 #, fuzzy
 #| msgid "The tag %1 already exists"
-msgid "The scheme with this name already exists"
+msgid "A scheme with this name already exists."
 msgstr "Thẻ %1 đã có."
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:135
@@ -6625,8 +6625,10 @@ msgid ""
 msgstr ""
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:164
-msgid "Export To Location"
-msgstr ""
+#, fuzzy
+#| msgid "Click to Edit Location"
+msgid "Export to Location"
+msgstr "Nhấn để sửa địa điểm"
 
 #: kdeui/dialogs/kshortcutschemeseditor.cpp:173
 msgid "Could not export shortcuts scheme because the location is invalid."
@@ -6879,7 +6881,7 @@ msgid "Reset Toolbars"
 msgstr "Đặt lại Thanh công cụ"
 
 #: kdeui/dialogs/kedittoolbar.cpp:527 khtml/khtmlview.cpp:2971
-#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2166
+#: khtml/khtmlview.cpp:3004 khtml/html/html_formimpl.cpp:2167
 msgid "Reset"
 msgstr "Đặt lại"
 
@@ -9135,21 +9137,21 @@ msgstr "Tới"
 msgid "Next Character"
 msgstr "Bộ ký tự"
 
-#: kdeui/widgets/kcharselect.cpp:370
-msgid "Set font"
-msgstr "Đặt phông"
-
-#: kdeui/widgets/kcharselect.cpp:377
-msgid "Set font size"
-msgstr "Đổi cỡ phông"
-
-#: kdeui/widgets/kcharselect.cpp:384
+#: kdeui/widgets/kcharselect.cpp:367
 msgid "Select a category"
 msgstr "Chọn loại"
 
-#: kdeui/widgets/kcharselect.cpp:387
+#: kdeui/widgets/kcharselect.cpp:370
 msgid "Select a block to be displayed"
 msgstr "Chọn khối cần hiển thị"
+
+#: kdeui/widgets/kcharselect.cpp:383
+msgid "Set font"
+msgstr "Đặt phông"
+
+#: kdeui/widgets/kcharselect.cpp:390
+msgid "Set font size"
+msgstr "Đổi cỡ phông"
 
 #: kdeui/widgets/kcharselect.cpp:629 kdeui/widgets/kcharselect.cpp:881
 #: kdeui/widgets/kcharselect-translation.cpp:43
@@ -11558,7 +11560,7 @@ msgstr ""
 "bạn.<br>Bạn có muốn gởi đơn này không?"
 
 #: khtml/khtml_part.cpp:4594 khtml/khtmlview.cpp:2957 khtml/khtmlview.cpp:2999
-#: khtml/html/html_formimpl.cpp:1580 khtml/html/html_formimpl.cpp:2174
+#: khtml/html/html_formimpl.cpp:1581 khtml/html/html_formimpl.cpp:2175
 msgid "Submit"
 msgstr "Gởi"
 
@@ -11653,8 +11655,8 @@ msgstr "Hãy chọn một thư mục xây dựng « khtml » hợp lệ."
 msgid "Available Tests: %1 (ignored: %2)"
 msgstr "Thử ra sẵn sàng: %1 (Bỏ qua: %2)"
 
-#: khtml/test_regression_gui_window.cpp:563 khtml/ecma/kjs_debugwin.cpp:481
-#: khtml/ecma/debugger/debugwindow.cpp:166
+#: khtml/test_regression_gui_window.cpp:563
+#: khtml/ecma/debugger/debugwindow.cpp:192
 msgid "Continue"
 msgstr "Tiếp tục"
 
@@ -11737,81 +11739,6 @@ msgstr "Lỗi phân tách XML"
 #: khtml/xml/dom_docimpl.cpp:2237
 msgid "Basic Page Style"
 msgstr "Kiểu dáng trang cơ bản"
-
-#: khtml/ecma/kjs_debugwin.cpp:298 khtml/ecma/debugger/errordlg.cpp:35
-msgid "JavaScript Error"
-msgstr "Lỗi JavaScript"
-
-#: khtml/ecma/kjs_debugwin.cpp:315 khtml/ecma/debugger/errordlg.cpp:50
-msgid "&Do not show this message again"
-msgstr "&Đừng hiện thông điệp này lần nữa"
-
-#: khtml/ecma/kjs_debugwin.cpp:385 khtml/ecma/debugger/debugwindow.cpp:111
-msgid "JavaScript Debugger"
-msgstr "Bộ gỡ lỗi JavaScript"
-
-#: khtml/ecma/kjs_debugwin.cpp:400
-msgid "Call stack"
-msgstr "Đống gọi"
-
-#: khtml/ecma/kjs_debugwin.cpp:435
-msgid "JavaScript console"
-msgstr "Bàn giao tiếp Javascript"
-
-#: khtml/ecma/kjs_debugwin.cpp:465
-msgctxt "Next breakpoint"
-msgid "&Next"
-msgstr "&Kế"
-
-#: khtml/ecma/kjs_debugwin.cpp:467
-msgid "&Step"
-msgstr "&Bước"
-
-#: khtml/ecma/kjs_debugwin.cpp:472
-msgid "&Continue"
-msgstr "&Tiếp tục"
-
-#: khtml/ecma/kjs_debugwin.cpp:474
-msgid "St&op"
-msgstr "&Dừng"
-
-#: khtml/ecma/kjs_debugwin.cpp:476 khtml/ecma/debugger/debugwindow.cpp:160
-msgid "&Break at Next Statement"
-msgstr "&Ngắt tại câu kế"
-
-#: khtml/ecma/kjs_debugwin.cpp:479
-msgctxt "Next breakpoint"
-msgid "Next"
-msgstr "Kế"
-
-#: khtml/ecma/kjs_debugwin.cpp:848 khtml/ecma/debugger/debugwindow.cpp:572
-#, kde-format
-msgid "Parse error at %1 line %2"
-msgstr "Lỗi phân tách tại %1 dòng %2"
-
-#: khtml/ecma/kjs_debugwin.cpp:859
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1"
-msgstr ""
-"Gặp lỗi khi cố chạy một tập lệnh trên trang này.\n"
-"\n"
-"%1"
-
-#: khtml/ecma/kjs_debugwin.cpp:870 khtml/ecma/debugger/debugwindow.cpp:609
-#, kde-format
-msgid ""
-"An error occurred while attempting to run a script on this page.\n"
-"\n"
-"%1 line %2:\n"
-"%3"
-msgstr ""
-"Gặp lỗi khi cố chạy một tập lệnh trên trang này.\n"
-"\n"
-"%1 dòng %2:\n"
-"%3"
 
 #: khtml/ecma/kjs_binding.cpp:184
 msgid ""
@@ -11916,7 +11843,7 @@ msgstr ""
 "<qt>Nơi Mạng này đang gởi đơn sẽ mở <p>%1</p>trong một cửa sổ duyệt mới bằng "
 "JavaScript.<br/>Bạn có muốn cho phép gởi đơn này không?"
 
-#: khtml/ecma/debugger/debugdocument.cpp:210
+#: khtml/ecma/debugger/debugdocument.cpp:187
 #, fuzzy
 #| msgid ""
 #| "A KDE text-editor component could not be found;\n"
@@ -11928,13 +11855,13 @@ msgstr ""
 "Không tìm thấy thành phần hiệu chỉnh văn bản KDE;\n"
 "hãy kiểm tra lại bản cài đặt KDE."
 
-#: khtml/ecma/debugger/debugdocument.cpp:327
+#: khtml/ecma/debugger/debugdocument.cpp:253
 #, fuzzy
 #| msgid "Qt (QGradient)"
 msgid "Breakpoint"
 msgstr "Qt (Dốc Q)"
 
-#: khtml/ecma/debugger/scriptsdock.cpp:39
+#: khtml/ecma/debugger/scriptsdock.cpp:40
 #, fuzzy
 #| msgid "Close Script"
 msgid "Loaded Scripts"
@@ -11950,60 +11877,104 @@ msgstr ""
 msgid "Reference"
 msgstr "Lỗi tham chiếu"
 
-#: khtml/ecma/debugger/debugwindow.cpp:161
+#: khtml/ecma/debugger/debugwindow.cpp:111
+msgid "JavaScript Debugger"
+msgstr "Bộ gỡ lỗi JavaScript"
+
+#: khtml/ecma/debugger/debugwindow.cpp:186
+msgid "&Break at Next Statement"
+msgstr "&Ngắt tại câu kế"
+
+#: khtml/ecma/debugger/debugwindow.cpp:187
 #, fuzzy
 #| msgid "&Break at Next Statement"
 msgid "Break at Next"
 msgstr "&Ngắt tại câu kế"
 
-#: khtml/ecma/debugger/debugwindow.cpp:173
+#: khtml/ecma/debugger/debugwindow.cpp:199
 msgid "Step Over"
 msgstr "Bước qua"
 
-#: khtml/ecma/debugger/debugwindow.cpp:180
+#: khtml/ecma/debugger/debugwindow.cpp:206
 msgid "Step Into"
 msgstr "Bước vào"
 
-#: khtml/ecma/debugger/debugwindow.cpp:187
+#: khtml/ecma/debugger/debugwindow.cpp:213
 msgid "Step Out"
 msgstr "Bước ra"
 
-#: khtml/ecma/debugger/debugwindow.cpp:196
+#: khtml/ecma/debugger/debugwindow.cpp:219
+msgid "Reindent Sources"
+msgstr ""
+
+#: khtml/ecma/debugger/debugwindow.cpp:224
+#, fuzzy
+#| msgid "Action"
+msgid "Report Exceptions"
+msgstr "Hành động"
+
+#: khtml/ecma/debugger/debugwindow.cpp:232
 msgid "&Debug"
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:225
+#: khtml/ecma/debugger/debugwindow.cpp:266
 #, fuzzy
 #| msgid "Close Document"
 msgid "Close source"
 msgstr "Đóng tài liệu"
 
-#: khtml/ecma/debugger/debugwindow.cpp:231
+#: khtml/ecma/debugger/debugwindow.cpp:272
 msgid "Ready"
 msgstr "Sẵn sàng"
 
-#: khtml/ecma/debugger/debugwindow.cpp:789
+#: khtml/ecma/debugger/debugwindow.cpp:615
+#, kde-format
+msgid "Parse error at %1 line %2"
+msgstr "Lỗi phân tách tại %1 dòng %2"
+
+#: khtml/ecma/debugger/debugwindow.cpp:650
+#, kde-format
+msgid ""
+"An error occurred while attempting to run a script on this page.\n"
+"\n"
+"%1 line %2:\n"
+"%3"
+msgstr ""
+"Gặp lỗi khi cố chạy một tập lệnh trên trang này.\n"
+"\n"
+"%1 dòng %2:\n"
+"%3"
+
+#: khtml/ecma/debugger/debugwindow.cpp:835
 msgid ""
 "Don't know where to evaluate the expression. Please pause a script or open a "
 "source file."
 msgstr ""
 
-#: khtml/ecma/debugger/debugwindow.cpp:825
+#: khtml/ecma/debugger/debugwindow.cpp:871
 #, kde-format
 msgid "Evaluation threw an exception %1"
 msgstr ""
 
-#: khtml/ecma/debugger/consoledock.cpp:231
+#: khtml/ecma/debugger/consoledock.cpp:220
 #, fuzzy
 #| msgid "Close"
 msgid "Console"
 msgstr "Đóng"
 
-#: khtml/ecma/debugger/consoledock.cpp:254
+#: khtml/ecma/debugger/consoledock.cpp:243
 #, fuzzy
 #| msgid "Owner"
 msgid "Enter"
 msgstr "Sở hữu"
+
+#: khtml/ecma/debugger/errordlg.cpp:35
+msgid "JavaScript Error"
+msgstr "Lỗi JavaScript"
+
+#: khtml/ecma/debugger/errordlg.cpp:50
+msgid "&Do not show this message again"
+msgstr "&Đừng hiện thông điệp này lần nữa"
 
 #: khtml/ecma/debugger/callstackdock.cpp:37
 #, fuzzy
@@ -12110,7 +12081,7 @@ msgstr ""
 "khóa, nó có thể phục hồi tự động thông tin đăng nhập lần kế tiếp bạn thăm %"
 "1. Vậy bạn có muốn lưu thông tin này không?"
 
-#: khtml/html/html_formimpl.cpp:2555
+#: khtml/html/html_formimpl.cpp:2557
 #, fuzzy
 #| msgid "General"
 msgid "Key Generator"
@@ -13971,6 +13942,41 @@ msgstr "&Mẹo của hôm nay"
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
 
+#~ msgid "Unsorted"
+#~ msgstr "Chưa sắp xếp"
+
+#~ msgid "Call stack"
+#~ msgstr "Đống gọi"
+
+#~ msgid "JavaScript console"
+#~ msgstr "Bàn giao tiếp Javascript"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "&Next"
+#~ msgstr "&Kế"
+
+#~ msgid "&Step"
+#~ msgstr "&Bước"
+
+#~ msgid "&Continue"
+#~ msgstr "&Tiếp tục"
+
+#~ msgid "St&op"
+#~ msgstr "&Dừng"
+
+#~ msgctxt "Next breakpoint"
+#~ msgid "Next"
+#~ msgstr "Kế"
+
+#~ msgid ""
+#~ "An error occurred while attempting to run a script on this page.\n"
+#~ "\n"
+#~ "%1"
+#~ msgstr ""
+#~ "Gặp lỗi khi cố chạy một tập lệnh trên trang này.\n"
+#~ "\n"
+#~ "%1"
+
 #~ msgid "Form"
 #~ msgstr "Mẫu"
 
@@ -14649,9 +14655,6 @@ msgstr "Không có bộ giải thích « %1 »."
 
 #~ msgid "Click for Location Navigation"
 #~ msgstr "Nhấn để duyệt tới địa điểm"
-
-#~ msgid "Click to Edit Location"
-#~ msgstr "Nhấn để sửa địa điểm"
 
 #~ msgid "Navigate"
 #~ msgstr "Duyệt tới"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-19 10:57+0100\n"
+"POT-Creation-Date: 2008-11-21 10:06+0100\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -62,6 +62,7 @@ msgstr "Liên lạc"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: libkopete/ui/kopeteinfodialog.cpp:50 libkopete/ui/kopeteinfodialog.cpp:64
 #: rc.cpp:2824 rc.cpp:5320 rc.cpp:5350 rc.cpp:5842
+#: protocols/wlm/wlmchatsession.cpp:622
 msgid "Information"
 msgstr "Thông tin"
 
@@ -247,6 +248,7 @@ msgstr "Ngoại tuyến"
 #: protocols/oscar/icq/icqstatusmanager.cpp:37
 #: protocols/oscar/icq/icqprotocol.cpp:448
 #: protocols/oscar/icq/icqprotocol.cpp:530
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:38
 #: protocols/groupwise/gwprotocol.cpp:66
 msgid "Unknown"
 msgstr "Không rõ"
@@ -319,6 +321,7 @@ msgstr ""
 
 #: libkopete/kopetetransfermanager.cpp:513
 #: libkopete/kopetetransfermanager.cpp:562
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:35
 msgid "File Transfer"
 msgstr "Truyền tập tin"
 
@@ -1110,7 +1113,7 @@ msgctxt "@label:textbox formatted status title"
 msgid "<br /><b>Status&nbsp;Title:</b>&nbsp;%1"
 msgstr "<br><b>Thông&nbsp;điệp&nbsp;trạng&nbsp;thái:</b>&nbsp;%1"
 
-#: libkopete/kopetecontact.cpp:629 kopete/kopetewindow.cpp:1208
+#: libkopete/kopetecontact.cpp:629 kopete/kopetewindow.cpp:1209
 #, fuzzy, kde-format
 #| msgctxt "<br><b>Status Message:</b>&nbsp;FORMATTED STATUS MESSAGE"
 #| msgid "<br><b>Status&nbsp;Message:</b>&nbsp;%1"
@@ -1198,7 +1201,7 @@ msgstr "Gặp cuối"
 msgid "Status Title"
 msgstr "Trạng thái"
 
-#: libkopete/kopeteglobal.cpp:159 kopete/kopetewindow.cpp:1218
+#: libkopete/kopeteglobal.cpp:159 kopete/kopetewindow.cpp:1219
 msgid "Status Message"
 msgstr "Thông điệp trạng thái"
 
@@ -1468,7 +1471,7 @@ msgstr "Hiển thị hay giấu danh sách liên lạc"
 msgid "Set Away/Back"
 msgstr "Đặt Vắng mặt/Trở về"
 
-#: kopete/kopetewindow.cpp:782
+#: kopete/kopetewindow.cpp:783
 msgid ""
 "<qt>Closing the main window will keep Kopete running in the system tray. Use "
 "'Quit' from the 'File' menu to quit the application.</qt>"
@@ -1476,11 +1479,11 @@ msgstr ""
 "<qt>Việc đóng cửa sổ chính sẽ để lại trình Kopete chạy trên khay hệ thống. "
 "Dùng mục « Thoát » trong trình đơn « Tập tin » để thoát khỏi ứng dụng.</qt>"
 
-#: kopete/kopetewindow.cpp:784
+#: kopete/kopetewindow.cpp:785
 msgid "Docking in System Tray"
 msgstr "Thả neo trên khay hệ thống"
 
-#: kopete/kopetewindow.cpp:990
+#: kopete/kopetewindow.cpp:991
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "Account tooltip information: <nobr>ICON <b>PROTOCOL:</b> NAME (<i>STATUS</"
@@ -1497,7 +1500,7 @@ msgid ""
 msgstr ""
 "<nobr><img src=\"kopete-account-icon:%3:%4\"> <b>%1:</b> %2 (<i>%5</i>)<br/>"
 
-#: kopete/kopetewindow.cpp:1205
+#: kopete/kopetewindow.cpp:1206
 #, fuzzy, kde-format
 #| msgctxt "<br><b>Status Message:</b>&nbsp;FORMATTED STATUS MESSAGE"
 #| msgid "<br><b>Status&nbsp;Message:</b>&nbsp;%1"
@@ -1505,7 +1508,7 @@ msgctxt "@label:textbox formatted status title"
 msgid "<b>Status&nbsp;Title:</b>&nbsp;%1"
 msgstr "<br><b>Thông&nbsp;điệp&nbsp;trạng&nbsp;thái:</b>&nbsp;%1"
 
-#: kopete/kopetewindow.cpp:1253
+#: kopete/kopetewindow.cpp:1254
 #: kopete/contactlist/kopetecontactlistview.cpp:1791
 msgid "Add Contact"
 msgstr "Thêm liên lạc"
@@ -3608,7 +3611,7 @@ msgstr "Điện thoại di động"
 
 #. i18n: file: kopete/config/avdevice/avdeviceconfig_videodevice.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, AVDeviceConfig_VideoDevice)
-#: rc.cpp:178
+#: rc.cpp:178 protocols/jabber/jingle/jinglecontentdialog.cpp:32
 msgid "Video"
 msgstr "Ảnh động"
 
@@ -17805,11 +17808,11 @@ msgstr ""
 msgid "%1 has started a chat with you"
 msgstr "%1 đã bắt đầu cuộc trò chuyện với bạn"
 
-#: protocols/msn/msnchatsession.cpp:674 protocols/wlm/wlmchatsession.cpp:299
+#: protocols/msn/msnchatsession.cpp:674 protocols/wlm/wlmchatsession.cpp:316
 msgid "has sent a nudge"
 msgstr "đã gửi nhích"
 
-#: protocols/msn/msnchatsession.cpp:690 protocols/wlm/wlmchatsession.cpp:675
+#: protocols/msn/msnchatsession.cpp:690 protocols/wlm/wlmchatsession.cpp:692
 msgid "has sent you a nudge"
 msgstr "đã gửi nhích cho bạn"
 
@@ -18069,6 +18072,12 @@ msgstr "Đang nghe: "
 #: protocols/oscar/oscaraccount.cpp:797
 msgid "Buddies"
 msgstr "Bạn bè"
+
+#: protocols/wlm/wlmchatsession.cpp:621
+#, fuzzy
+#| msgid "Send"
+msgid "Send OIM"
+msgstr "Gửi"
 
 #: protocols/gadu/gadusession.cpp:220 protocols/gadu/gadusession.cpp:233
 #: protocols/gadu/gadusession.cpp:245 protocols/gadu/gadusession.cpp:278
@@ -22666,6 +22675,20 @@ msgstr ""
 msgid "Jabber Account Unregistration"
 msgstr "Hủy đăng ký tài khoản Jabber"
 
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:29
+msgid "Audio"
+msgstr ""
+
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:74
+msgid "Check the contents you wanna accept : "
+msgstr ""
+
+#: protocols/jabber/jingle/jinglecontentdialog.cpp:81
+#, fuzzy, kde-format
+#| msgid "Show Offline &Users"
+msgid "New Jingle session from %1"
+msgstr "Hiện người dùng ngoại t&uyến"
+
 #: protocols/jabber/jabberchatsession.cpp:73
 msgid "Show audio calls"
 msgstr ""
@@ -23502,11 +23525,6 @@ msgstr ""
 #~| msgid "Please enter name of the channel you want to join:"
 #~ msgid "Please enter name of the channel you want to join:"
 #~ msgstr "Hãy nhập tên của kênh bạn muốn vào :"
-
-#, fuzzy
-#~| msgid "Show Offline &Users"
-#~ msgid "Show Jingle sessions"
-#~ msgstr "Hiện người dùng ngoại t&uyến"
 
 #~ msgid "Voice session with:"
 #~ msgstr "Buổi tiếng nói với:"

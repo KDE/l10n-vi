@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: domtreeviewer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 10:57+0100\n"
+"POT-Creation-Date: 2008-12-25 09:46+0100\n"
 "PO-Revision-Date: 2006-10-31 16:03+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -137,30 +137,30 @@ msgstr "Sửa văn bản"
 msgid "Edit Attribute"
 msgstr "Sửa thuộc tính"
 
-#: domtreeview.cpp:183
+#: domtreeview.cpp:172
 #, kde-format
 msgid "DOM Tree for %1"
 msgstr "Cây DOM cho %1"
 
 #. i18n: file: domtreeviewbase.ui:115
 #. i18n: ectx: property (text), widget (QTreeWidget, m_listView)
-#: domtreeview.cpp:183 rc.cpp:18
+#: domtreeview.cpp:172 rc.cpp:18
 msgid "DOM Tree"
 msgstr "Cây DOM"
 
-#: domtreeview.cpp:524
+#: domtreeview.cpp:513
 msgid "Move Nodes"
 msgstr "Di chuyển các nút"
 
-#: domtreeview.cpp:593
+#: domtreeview.cpp:582
 msgid "Save DOM Tree as HTML"
 msgstr "Lưu cây DOM dạng HTML"
 
-#: domtreeview.cpp:598
+#: domtreeview.cpp:587
 msgid "File Exists"
 msgstr "Tập tin tồn tại"
 
-#: domtreeview.cpp:599
+#: domtreeview.cpp:588
 #, kde-format
 msgid ""
 "Do you really want to overwrite: \n"
@@ -169,15 +169,15 @@ msgstr ""
 "Bạn thực sự muốn ghi đè:\n"
 "%1 không?"
 
-#: domtreeview.cpp:600
+#: domtreeview.cpp:589
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: domtreeview.cpp:613
+#: domtreeview.cpp:602
 msgid "Unable to Open File"
 msgstr "Không thể mở tập tin"
 
-#: domtreeview.cpp:614
+#: domtreeview.cpp:603
 #, kde-format
 msgid ""
 "Unable to open \n"
@@ -188,11 +188,11 @@ msgstr ""
 " %1 \n"
 "để ghi"
 
-#: domtreeview.cpp:618
+#: domtreeview.cpp:607
 msgid "Invalid URL"
 msgstr "Địa chỉ URL không hợp lệ"
 
-#: domtreeview.cpp:619
+#: domtreeview.cpp:608
 #, kde-format
 msgid ""
 "This URL \n"
@@ -203,15 +203,15 @@ msgstr ""
 " %1 \n"
 "không phải hợp lệ."
 
-#: domtreeview.cpp:838
+#: domtreeview.cpp:827
 msgid "Delete Nodes"
 msgstr "Xoá các nút"
 
-#: domtreeview.cpp:1049
+#: domtreeview.cpp:1038
 msgid "<Click to add>"
 msgstr "<Nhấn để thêm>"
 
-#: domtreeview.cpp:1381
+#: domtreeview.cpp:1370
 msgid "Delete Attributes"
 msgstr "Xoá các thuộc tính"
 
@@ -220,43 +220,61 @@ msgid "Message Log"
 msgstr "Bản ghi thông điệp"
 
 #: domtreewindow.cpp:161
+#, fuzzy
+#| msgid "DOM Tree"
+msgid "Pure DOM Tree"
+msgstr "Cây DOM"
+
+#: domtreewindow.cpp:167
+#, fuzzy
+#| msgid "Show &attributes"
+msgid "Show DOM Attributes"
+msgstr "Hiện &thuộc tính"
+
+#: domtreewindow.cpp:174
+#, fuzzy
+#| msgid "Highlight &HTML"
+msgid "Highlight HTML"
+msgstr "Tô sáng &HTML"
+
+#: domtreewindow.cpp:182
 msgid "Show Message Log"
 msgstr "Hiện bản ghi thông điệp"
 
-#: domtreewindow.cpp:173
+#: domtreewindow.cpp:194
 msgid "Expand"
 msgstr "Mở rộng"
 
-#: domtreewindow.cpp:176
+#: domtreewindow.cpp:197
 msgid "Increase expansion level"
 msgstr "Tăng cấp mở rộng"
 
-#: domtreewindow.cpp:179
+#: domtreewindow.cpp:200
 msgid "Collapse"
 msgstr "Co lại"
 
-#: domtreewindow.cpp:182
+#: domtreewindow.cpp:203
 msgid "Decrease expansion level"
 msgstr "Giảm cấp mở rộng"
 
-#: domtreewindow.cpp:188 domtreewindow.cpp:206
+#: domtreewindow.cpp:209 domtreewindow.cpp:227
 #, fuzzy
 msgid "&Delete"
 msgstr "Xoá các nút"
 
-#: domtreewindow.cpp:191
+#: domtreewindow.cpp:212
 msgid "Delete nodes"
 msgstr "Xoá các nút"
 
-#: domtreewindow.cpp:196
+#: domtreewindow.cpp:217
 msgid "New &Element ..."
 msgstr "&Phần tử mới ..."
 
-#: domtreewindow.cpp:200
+#: domtreewindow.cpp:221
 msgid "New &Text Node ..."
 msgstr "Nút &văn bản mới ..."
 
-#: domtreewindow.cpp:209
+#: domtreewindow.cpp:230
 msgid "Delete attributes"
 msgstr "Xoá các thuộc tính"
 
@@ -370,99 +388,81 @@ msgstr ""
 msgid "1"
 msgstr ""
 
-#. i18n: file: domtreeviewbase.ui:378
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:60
-msgid "DOM Tree Options"
-msgstr "Tùy chọn cây DOM"
-
-#. i18n: file: domtreeviewbase.ui:384
-#. i18n: ectx: property (text), widget (QCheckBox, m_pureCheckBox)
-#: rc.cpp:63
-msgid "&Pure"
-msgstr "Th&uần"
-
-#. i18n: file: domtreeviewbase.ui:394
-#. i18n: ectx: property (text), widget (QCheckBox, m_showAttributesCheckBox)
-#: rc.cpp:66
-msgid "Show &attributes"
-msgstr "Hiện &thuộc tính"
-
-#. i18n: file: domtreeviewbase.ui:404
-#. i18n: ectx: property (text), widget (QCheckBox, m_highlightHTMLCheckBox)
-#: rc.cpp:69
-msgid "Highlight &HTML"
-msgstr "Tô sáng &HTML"
-
 #. i18n: file: domtreeviewerui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:72
+#: rc.cpp:60
 #, fuzzy
 msgid "&File"
 msgstr "G&iấu"
 
 #. i18n: file: domtreeviewerui.rc:6
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:75
+#: rc.cpp:63
 #, fuzzy
 msgid "&Edit"
 msgstr "&Liệt kê"
 
 #. i18n: file: domtreeviewerui.rc:8
 #. i18n: ectx: Menu (view)
-#: rc.cpp:78
+#: rc.cpp:66
 #, fuzzy
 msgid "&View"
 msgstr "G&iấu"
 
-#. i18n: file: domtreeviewerui.rc:15
+#. i18n: file: domtreeviewerui.rc:19
 #. i18n: ectx: Menu (go)
-#: rc.cpp:81
+#: rc.cpp:69
 msgid "&Go"
 msgstr "&Tới"
 
-#. i18n: file: domtreeviewerui.rc:19
+#. i18n: file: domtreeviewerui.rc:23
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:84
+#: rc.cpp:72
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Thanh công cụ thêm"
 
-#. i18n: file: domtreeviewerui.rc:21
+#. i18n: file: domtreeviewerui.rc:25
 #. i18n: ectx: ToolBar (treeToolBar)
-#: rc.cpp:87
+#: rc.cpp:75
 msgid "Tree Toolbar"
 msgstr "Thanh công cụ cây"
 
 #. i18n: file: elementeditwidget.ui:24
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:90
+#: rc.cpp:78
 msgid "Element &name:"
 msgstr "Tê&n phần tử :"
 
 #. i18n: file: elementeditwidget.ui:47
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:93
+#: rc.cpp:81
 msgid "Element &namespace:"
 msgstr "Miền tê&n phần tử :"
 
 #. i18n: file: plugin_domtreeviewer.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:96
+#: rc.cpp:84
 msgid "&Tools"
 msgstr ""
 
 #. i18n: file: plugin_domtreeviewer.rc:8
 #. i18n: ectx: ToolBar (extraToolBar)
-#: rc.cpp:99
+#: rc.cpp:87
 msgid "Extra Toolbar"
 msgstr "Thanh công cụ thêm"
 
 #. i18n: file: texteditwidget.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:102
+#: rc.cpp:90
 msgid "Edit &text for text node:"
 msgstr "Sửa văn bản cho nú&t văn bản:"
+
+#~ msgid "DOM Tree Options"
+#~ msgstr "Tùy chọn cây DOM"
+
+#~ msgid "&Pure"
+#~ msgstr "Th&uần"
 
 #~ msgid "C&lear"
 #~ msgstr "X&oá sạch"

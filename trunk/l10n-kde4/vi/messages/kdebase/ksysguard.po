@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-18 09:55+0100\n"
+"POT-Creation-Date: 2008-12-27 11:10+0100\n"
 "PO-Revision-Date: 2007-06-23 22:55+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -83,7 +83,11 @@ msgid "Dummy"
 msgstr "Giả"
 
 #: ksgrd/SensorAgent.cc:105
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Message from %1:\n"
+#| "%2"
+msgctxt "%1 is a host name"
 msgid ""
 "Message from %1:\n"
 "%2"
@@ -129,9 +133,10 @@ msgstr "Trọng tải ưu tiên"
 msgid "User Load"
 msgstr "Trọng tải người dùng"
 
-#. i18n: tag WorkSheet attribute title
-#. i18n: file: ./SystemLoad.sgrd:3
-#: ksgrd/SensorManager.cc:63 rc.cpp:149
+#: ksgrd/SensorManager.cc:63
+#, fuzzy
+#| msgid "System Load"
+msgctxt "@item sensor description"
 msgid "System Load"
 msgstr "Trọng tải hệ thống"
 
@@ -313,6 +318,9 @@ msgid "Packets"
 msgstr "Gói tin"
 
 #: ksgrd/SensorManager.cc:106
+#, fuzzy
+#| msgid "Carrier"
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
 msgid "Carrier"
 msgstr "Bộ truyền"
 
@@ -706,6 +714,9 @@ msgid "Size ratio:"
 msgstr "Tỷ lệ cỡ :"
 
 #: KSGAppletSettings.cc:63
+#, fuzzy
+#| msgid "%"
+msgctxt "Number suffix in spinbox"
 msgid "%"
 msgstr "%"
 
@@ -815,6 +826,9 @@ msgid "Upper limit:"
 msgstr "Giới hạn trên:"
 
 #: SensorDisplayLib/DancingBarsSettings.cc:157
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
 msgid "Look"
 msgstr "Diện mạo"
 
@@ -1061,11 +1075,13 @@ msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cc:344
 #, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
 msgid "<p><b>%1:</b><br>"
 msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cc:391
 #, kde-format
+msgctxt "%1 and %2 are sensor's last and maximum value"
 msgid "%1 of %2"
 msgstr ""
 
@@ -1138,6 +1154,10 @@ msgid "Foreground color:"
 msgstr "Màu chữ :"
 
 #: SensorDisplayLib/MultiMeterSettings.cc:31
+#, fuzzy
+#| msgid "Multimeter Settings"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
 msgid "Multimeter Settings"
 msgstr "Thiết lập bộ đa đo"
 
@@ -1327,6 +1347,12 @@ msgstr "&Đổi"
 msgid "Process Table"
 msgstr "Bộ điều khiển tiến trình"
 
+#. i18n: tag WorkSheet attribute title
+#. i18n: file: ./SystemLoad.sgrd:3
+#: rc.cpp:149
+msgid "System Load"
+msgstr "Trọng tải hệ thống"
+
 #. i18n: tag display attribute title
 #. i18n: file: ./SystemLoad.sgrd:5
 #: rc.cpp:152
@@ -1445,9 +1471,11 @@ msgid "Tab &Properties"
 msgstr "Tài &sản"
 
 #: ksysguard.cc:449
-#, kde-format
-msgid " %1 processes "
-msgstr "%1 tiến trình"
+#, fuzzy, kde-format
+#| msgid " %1 processes "
+msgid " 1 process "
+msgid_plural " %1 processes "
+msgstr[0] "%1 tiến trình"
 
 #: ksysguard.cc:455
 #, kde-format
@@ -1455,7 +1483,9 @@ msgid " CPU: %1% "
 msgstr " CPU: %1% "
 
 #: ksysguard.cc:469
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Memory: %1 / %2 "
 msgstr " Bộ nhớ : %1 / %2 "
 
@@ -1464,7 +1494,9 @@ msgid " No swap space available "
 msgstr " Không có vùng trao đổi sẵn sàng "
 
 #: ksysguard.cc:498
-#, kde-format
+#, fuzzy, kde-format
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
 msgid " Swap: %1 / %2 "
 msgstr " Trao đổi: %1 / %2 "
 

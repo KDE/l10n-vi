@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-13 09:43+0100\n"
+"POT-Creation-Date: 2009-01-14 11:20+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -780,7 +780,7 @@ msgstr "Xoá thẻ « %1 » không?"
 #: libs/imageproperties/imagedescedittab.cpp:1208
 #: digikam/tagfolderview.cpp:756 digikam/tagfilterview.cpp:1267
 #: digikam/digikamapp.cpp:592 digikam/digikamapp.cpp:641
-#: digikam/digikamapp.cpp:694 utilities/gpssearch/gpssearchfolderview.cpp:175
+#: utilities/gpssearch/gpssearchfolderview.cpp:175
 #: utilities/gpssearch/gpssearchfolderview.cpp:282
 #: utilities/searchwindow/searchfolderview.cpp:212
 #: utilities/cameragui/cameraui.cpp:1591 utilities/cameragui/cameraui.cpp:1658
@@ -2031,7 +2031,7 @@ msgstr ""
 
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
-#: digikam/digikamapp.cpp:2315
+#: digikam/digikamapp.cpp:2314
 #: utilities/imageeditor/editor/editorwindow.cpp:1857
 #: utilities/lighttable/lighttablewindow.cpp:1603
 #: utilities/cameragui/cameraui.cpp:2049
@@ -2170,7 +2170,7 @@ msgstr "Thông tin ảnh"
 
 #: libs/widgets/metadata/mdkeylistviewitem.cpp:54
 #: showfoto/setup/setuptooltip.cpp:142 utilities/setup/setuptooltip.cpp:172
-#: utilities/searchwindow/searchgroup.cpp:147
+#: utilities/searchwindow/searchgroup.cpp:148
 msgid "Photograph Information"
 msgstr "Thông tin ảnh chụp"
 
@@ -2608,7 +2608,7 @@ msgstr "Tự chọn"
 msgid "Choose..."
 msgstr ""
 
-#: libs/widgets/common/dlogoaction.cpp:150
+#: libs/widgets/common/dlogoaction.cpp:168
 msgid "Visit digiKam project website"
 msgstr "Thăm nơi Mạng của dự án digiKam"
 
@@ -3129,7 +3129,7 @@ msgstr "Tập"
 #: digikam/albummodel.cpp:606 digikam/albumfolderview.cpp:552
 #: digikam/albumfolderview.cpp:1011 digikam/albumfolderview.cpp:1103
 #: digikam/albumfolderview.cpp:1136 digikam/albumfolderview.cpp:1196
-#: digikam/albumfolderview.cpp:1250 digikam/albummanager.cpp:568
+#: digikam/albumfolderview.cpp:1250 digikam/albummanager.cpp:639
 #: digikam/albumiconview.cpp:1609 digikam/albumselectdialog.cpp:116
 #: digikam/album.cpp:354 utilities/kipiiface/kipiimagecollection.cpp:272
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:140
@@ -3138,7 +3138,7 @@ msgstr "Tập ảnh tôi"
 
 #: digikam/albummodel.cpp:622 digikam/tagfolderview.cpp:539
 #: digikam/tagfolderview.cpp:845 digikam/tagfolderview.cpp:919
-#: digikam/tagfolderview.cpp:948 digikam/albummanager.cpp:571
+#: digikam/tagfolderview.cpp:948 digikam/albummanager.cpp:642
 #: digikam/album.cpp:413
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:141
 msgid "My Tags"
@@ -3986,7 +3986,53 @@ msgid ""
 "Database plugins installed are:"
 msgstr ""
 
-#: digikam/albummanager.cpp:432
+#: digikam/albummanager.cpp:361 digikam/albummanager.cpp:399
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to copy the old database file (\"%1\")to its new location (\"%2\")."
+#| "Please make sure that the file can be copied."
+msgid ""
+"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
+"Starting with an empty database."
+msgstr ""
+"Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
+"kiểm tra lại tập tin này có khả năng được sao chép."
+
+#: digikam/albummanager.cpp:370
+#, fuzzy
+#| msgid "Reading database"
+msgid "Copy current database"
+msgstr "Đang đọc cơ sở dữ liệu..."
+
+#: digikam/albummanager.cpp:371
+#, fuzzy
+#| msgid "Use builtin sRGB profile"
+msgid "Use existing file"
+msgstr "Dùng hồ sơ sRGB có sẵn"
+
+#: digikam/albummanager.cpp:373
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database. "
+"There is already a database file found in this folder.</p> <p>Would you like "
+"to use this existing file as the new database, or remove it and copy the "
+"current database to this place?</p> "
+msgstr ""
+
+#: digikam/albummanager.cpp:378
+#, fuzzy
+#| msgid "Reading database"
+msgid "New database folder"
+msgstr "Đang đọc cơ sở dữ liệu..."
+
+#: digikam/albummanager.cpp:388
+#, kde-format
+msgid ""
+"Failed to backup the existing database file (\"%1\").Refusing to replace "
+"file without backup, using the existing file."
+msgstr ""
+
+#: digikam/albummanager.cpp:503
 #, fuzzy
 #| msgid ""
 #| "<qt><p>Failed to open the database.  Error message from database: %1 </"
@@ -4002,7 +4048,7 @@ msgstr ""
 "p><p>Không có cơ sở dữ liệu hoạt động được thì không thể sử dụng digiKam. "
 "Hãy kiểm tra lại thiết lập cơ sở dữ liệu trong trình đơn cấu hình.</p></qt>"
 
-#: digikam/albummanager.cpp:440
+#: digikam/albummanager.cpp:511
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p>Failed to open the database.  Error message from database: %1 </"
@@ -4018,7 +4064,7 @@ msgstr ""
 "p><p>Không có cơ sở dữ liệu hoạt động được thì không thể sử dụng digiKam. "
 "Hãy kiểm tra lại thiết lập cơ sở dữ liệu trong trình đơn cấu hình.</p></qt>"
 
-#: digikam/albummanager.cpp:508
+#: digikam/albummanager.cpp:579
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your locale has changed from the previous time this album was opened.\n"
@@ -4042,68 +4088,68 @@ msgstr ""
 "nhấn vào « Có » để làm việc với tập ảnh này. Không thì nhấn vào « Không » và "
 "sửa chữa thiết lập miền địa phương trước khi khởi chạy lại trình digiKam."
 
-#: digikam/albummanager.cpp:574
+#: digikam/albummanager.cpp:645
 #: utilities/searchwindow/searchfolderview.cpp:118
 #: utilities/searchwindow/searchfolderview.cpp:310
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:142
 msgid "My Searches"
 msgstr "Tìm kiếm của tôì"
 
-#: digikam/albummanager.cpp:1335
+#: digikam/albummanager.cpp:1406
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: digikam/albummanager.cpp:1360
+#: digikam/albummanager.cpp:1431
 msgid "No parent found for album."
 msgstr "Không tìm thấy điều mẹ cho tập ảnh."
 
-#: digikam/albummanager.cpp:1367
+#: digikam/albummanager.cpp:1438
 msgid "Album name cannot be empty."
 msgstr "Không cho phép tên tập ảnh rỗng."
 
-#: digikam/albummanager.cpp:1373
+#: digikam/albummanager.cpp:1444
 msgid "Album name cannot contain '/'."
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:1379
+#: digikam/albummanager.cpp:1450
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: digikam/albummanager.cpp:1392
+#: digikam/albummanager.cpp:1463
 msgid "An existing album has the same name."
 msgstr "Một tập ảnh cùng tên đã có."
 
-#: digikam/albummanager.cpp:1404
+#: digikam/albummanager.cpp:1475
 #, fuzzy
 #| msgid "Failed to rename Album"
 msgid "Failed to create directory,"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: digikam/albummanager.cpp:1413
+#: digikam/albummanager.cpp:1484
 msgid "Failed to add album to database"
 msgstr "Lỗi thêm tập ảnh vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:1436 digikam/albummanager.cpp:1528
-#: digikam/albummanager.cpp:1630 digikam/albummanager.cpp:1664
-#: digikam/albummanager.cpp:1705
+#: digikam/albummanager.cpp:1507 digikam/albummanager.cpp:1599
+#: digikam/albummanager.cpp:1701 digikam/albummanager.cpp:1735
+#: digikam/albummanager.cpp:1776
 msgid "No such album"
 msgstr "Không có tập ảnh như vậy"
 
-#: digikam/albummanager.cpp:1442
+#: digikam/albummanager.cpp:1513
 msgid "Cannot rename root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: digikam/albummanager.cpp:1448
+#: digikam/albummanager.cpp:1519
 #, fuzzy
 #| msgid "Cannot rename root album"
 msgid "Cannot rename album root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: digikam/albummanager.cpp:1454
+#: digikam/albummanager.cpp:1525
 msgid "Album name cannot contain '/'"
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: digikam/albummanager.cpp:1464
+#: digikam/albummanager.cpp:1535
 msgid ""
 "Another album with same name exists\n"
 "Please choose another name"
@@ -4111,43 +4157,43 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:1481
+#: digikam/albummanager.cpp:1552
 msgid "Failed to rename Album"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: digikam/albummanager.cpp:1534
+#: digikam/albummanager.cpp:1605
 msgid "Cannot edit root album"
 msgstr "Không thể sửa đổi tập ảnh gốc"
 
-#: digikam/albummanager.cpp:1563
+#: digikam/albummanager.cpp:1634
 msgid "No parent found for tag"
 msgstr "Không tìm thấy điều mẹ cho thẻ"
 
-#: digikam/albummanager.cpp:1570
+#: digikam/albummanager.cpp:1641
 msgid "Tag name cannot be empty"
 msgstr "Không cho phép tên thẻ rỗng."
 
-#: digikam/albummanager.cpp:1576 digikam/albummanager.cpp:1676
+#: digikam/albummanager.cpp:1647 digikam/albummanager.cpp:1747
 msgid "Tag name cannot contain '/'"
 msgstr "Không cho phép tên thẻ chứa « / »"
 
-#: digikam/albummanager.cpp:1586 digikam/tageditdlg.cpp:356
+#: digikam/albummanager.cpp:1657 digikam/tageditdlg.cpp:356
 msgid "Tag name already exists"
 msgstr "Tên thẻ đã có."
 
-#: digikam/albummanager.cpp:1596
+#: digikam/albummanager.cpp:1667
 msgid "Failed to add tag to database"
 msgstr "Lỗi thêm thẻ vào cơ sở dữ liệu"
 
-#: digikam/albummanager.cpp:1636
+#: digikam/albummanager.cpp:1707
 msgid "Cannot delete Root Tag"
 msgstr "Không thể xoá thẻ gốc"
 
-#: digikam/albummanager.cpp:1670 digikam/albummanager.cpp:1736
+#: digikam/albummanager.cpp:1741 digikam/albummanager.cpp:1807
 msgid "Cannot edit root tag"
 msgstr "Không thể sửa đổi thẻ gốc"
 
-#: digikam/albummanager.cpp:1686
+#: digikam/albummanager.cpp:1757
 msgid ""
 "Another tag with same name exists\n"
 "Please choose another name"
@@ -4155,11 +4201,11 @@ msgstr ""
 "Một thẻ cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: digikam/albummanager.cpp:1711
+#: digikam/albummanager.cpp:1782
 msgid "Cannot move root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: digikam/albummanager.cpp:1730
+#: digikam/albummanager.cpp:1801
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
@@ -4264,7 +4310,8 @@ msgid "Open With"
 msgstr "Mở bằng"
 
 #: digikam/albumiconview.cpp:714 digikam/imagepreviewview.cpp:413
-#: showfoto/showfoto.cpp:568 utilities/imageeditor/editor/editorwindow.cpp:319
+#: digikam/digikamapp.cpp:694 showfoto/showfoto.cpp:568
+#: utilities/imageeditor/editor/editorwindow.cpp:319
 #: utilities/lighttable/lighttablepreview.cpp:397
 #: utilities/lighttable/lighttablewindow.cpp:406
 #, fuzzy, kde-format
@@ -5188,22 +5235,22 @@ msgstr ""
 msgid "xD Card Reader"
 msgstr "Thư mục máy ảnh"
 
-#: digikam/digikamapp.cpp:2052
+#: digikam/digikamapp.cpp:2051
 #, fuzzy
 #| msgid "General"
 msgctxt "general keyboard shortcuts"
 msgid "General"
 msgstr "Chung"
 
-#: digikam/digikamapp.cpp:2158
+#: digikam/digikamapp.cpp:2157
 msgid "Loading Kipi Plugins"
 msgstr "Đang nạp các phần bổ sung Kipi"
 
-#: digikam/digikamapp.cpp:2293 showfoto/showfoto.cpp:213
+#: digikam/digikamapp.cpp:2292 showfoto/showfoto.cpp:213
 msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
-#: digikam/digikamapp.cpp:2335
+#: digikam/digikamapp.cpp:2334
 msgid ""
 "Rebuilding all image thumbnails can take some time.\n"
 "Do you want to continue?"
@@ -5211,7 +5258,7 @@ msgstr ""
 "Tiến trình xây dựng lại mọi ảnh mẫu của ảnh có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2347
+#: digikam/digikamapp.cpp:2346
 msgid ""
 "Updating the metadata database can take some time. \n"
 "Do you want to continue?"
@@ -5219,7 +5266,7 @@ msgstr ""
 "Tiến trình cập nhật cơ sở dữ liệu siêu dữ liệu có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2358
+#: digikam/digikamapp.cpp:2357
 msgid ""
 "Image fingerprinting can take some time.\n"
 "Which would you prefer?\n"
@@ -5227,48 +5274,48 @@ msgid ""
 "- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2363 showfoto/showfoto.cpp:1090
+#: digikam/digikamapp.cpp:2362 showfoto/showfoto.cpp:1090
 #: utilities/imageeditor/editor/editorwindow.cpp:1111
 #: utilities/cameragui/cameraui.cpp:1590 utilities/cameragui/cameraui.cpp:1657
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: digikam/digikamapp.cpp:2364
+#: digikam/digikamapp.cpp:2363
 #, fuzzy
 #| msgid "Scaling"
 msgid "Scan"
 msgstr "Co dãn"
 
-#: digikam/digikamapp.cpp:2365
+#: digikam/digikamapp.cpp:2364
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
 msgid "Rebuild All"
 msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
-#: digikam/digikamapp.cpp:2416 utilities/cameragui/cameraui.cpp:936
+#: digikam/digikamapp.cpp:2415 utilities/cameragui/cameraui.cpp:936
 #, kde-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
 
-#: digikam/digikamapp.cpp:2424 utilities/lighttable/lighttablewindow.cpp:1492
+#: digikam/digikamapp.cpp:2423 utilities/lighttable/lighttablewindow.cpp:1492
 #: utilities/lighttable/lighttablewindow.cpp:1516
 #, kde-format
 msgid "zoom: %1%"
 msgstr "thu phóng: %1%"
 
-#: digikam/digikamapp.cpp:2455
+#: digikam/digikamapp.cpp:2454
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
 msgstr "Chọn ảnh cần tải lên"
 
-#: digikam/digikamapp.cpp:2467
+#: digikam/digikamapp.cpp:2466
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folders to import into album"
 msgstr "Chọn ảnh cần tải lên"
 
-#: digikam/digikamapp.cpp:2479
+#: digikam/digikamapp.cpp:2478
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -12439,6 +12486,16 @@ msgstr ""
 msgid "Problem Adding Collection"
 msgstr "Tập hợp tập ảnh"
 
+#: utilities/setup/setupcollectionview.cpp:546
+#, fuzzy
+#| msgid "By Collection"
+msgid "Adding Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:553
+msgid "Your new collection will be created with this name:"
+msgstr ""
+
 #: utilities/setup/setupcollectionview.cpp:618
 #, fuzzy
 #| msgid "By Collection"
@@ -14662,45 +14719,89 @@ msgstr "Chưa chọn mục"
 msgid "No Rating assigned"
 msgstr "Không có thẻ vừa được gán"
 
-#: utilities/searchwindow/searchgroup.cpp:89
+#: utilities/searchwindow/searchgroup.cpp:90
 #, fuzzy
 #| msgid "Move Album to Trash"
 msgid "File, Album, Tags"
 msgstr "Chuyển tập ảnh vào Sọt rác"
 
-#: utilities/searchwindow/searchgroup.cpp:107
+#: utilities/searchwindow/searchgroup.cpp:108
 #, fuzzy
 #| msgid "File Properties"
 msgid "Picture Properties"
 msgstr "Thuộc tính tập tin"
 
-#: utilities/searchwindow/searchgroup.cpp:130
+#: utilities/searchwindow/searchgroup.cpp:131
 msgid "Caption, Comment, Title"
 msgstr ""
 
-#: utilities/searchwindow/searchgroup.cpp:343
+#: utilities/searchwindow/searchgroup.cpp:345
 #, fuzzy
 #| msgid "Caricature"
 msgid "Find Pictures"
 msgstr "Vẽ biếm hoạ"
 
-#: utilities/searchwindow/searchgroup.cpp:346
+#: utilities/searchwindow/searchgroup.cpp:348
 #, fuzzy
 #| msgid "Matching Condition"
-msgid "Match All of the following conditions"
+msgid "Meet All of the following conditions"
 msgstr "Điều kiện khớp"
 
-#: utilities/searchwindow/searchgroup.cpp:349
+#: utilities/searchwindow/searchgroup.cpp:351
 #, fuzzy
 #| msgid "Matching Condition"
-msgid "Match Any of the following conditions"
+msgid "Meet Any of the following conditions"
 msgstr "Điều kiện khớp"
 
-#: utilities/searchwindow/searchgroup.cpp:371
+#: utilities/searchwindow/searchgroup.cpp:354
+msgid "None of these conditions are met"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:357
+msgid "At least one of these conditions is not met"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:387
+#, fuzzy
+#| msgid "Album Collections"
+msgctxt ""
+"Search your collection...for pictures meeting the following conditions"
+msgid "Search your collection"
+msgstr "Tập hợp tập ảnh"
+
+#: utilities/searchwindow/searchgroup.cpp:390
+#, fuzzy
+#| msgid "Matching Condition"
+msgctxt ""
+"Search your collection...for pictures meeting the following conditions"
+msgid "for pictures meeting the following conditions"
+msgstr "Điều kiện khớp"
+
+#: utilities/searchwindow/searchgroup.cpp:434
 #, fuzzy
 #| msgid "Remove"
 msgid "Remove Group"
 msgstr "Bỏ"
+
+#: utilities/searchwindow/searchgroup.cpp:469
+#, fuzzy
+#| msgid "Interface Options"
+msgid "Hide Options <<"
+msgstr "Tuy chọn giao diện"
+
+#: utilities/searchwindow/searchgroup.cpp:479
+#, fuzzy
+#| msgid "Interface Options"
+msgid "Options >>"
+msgstr "Tuy chọn giao diện"
+
+#: utilities/searchwindow/searchgroup.cpp:539
+msgid "AND"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:541
+msgid "OR"
+msgstr ""
 
 #: utilities/searchwindow/searchfolderview.cpp:103
 #, fuzzy
@@ -15043,54 +15144,54 @@ msgstr ""
 msgid "Reset contents"
 msgstr "Đặt lại biểu tượng thẻ"
 
-#: utilities/searchwindow/searchfields.cpp:1344
+#: utilities/searchwindow/searchfields.cpp:1431
 msgid "Any"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1402
+#: utilities/searchwindow/searchfields.cpp:1489
 #, kde-format
 msgid "Any of: %1"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1722
+#: utilities/searchwindow/searchfields.cpp:1809
 #, fuzzy
 #| msgid "My Albums"
 msgid "Any Album"
 msgstr "Tập ảnh tôi"
 
-#: utilities/searchwindow/searchfields.cpp:1727
+#: utilities/searchwindow/searchfields.cpp:1814
 #, fuzzy
 #| msgid "My Tags"
 msgid "Any Tag"
 msgstr "Thẻ tôi"
 
-#: utilities/searchwindow/searchfields.cpp:1772
+#: utilities/searchwindow/searchfields.cpp:1859
 #, fuzzy, kde-format
 #| msgid "%1 items selected"
 msgid "%1 Albums selected"
 msgstr "%1 mục đã chọn"
 
-#: utilities/searchwindow/searchfields.cpp:1774
+#: utilities/searchwindow/searchfields.cpp:1861
 #, fuzzy, kde-format
 #| msgid "%1 items selected"
 msgid "%1 Tags selected"
 msgstr "%1 mục đã chọn"
 
-#: utilities/searchwindow/searchfields.cpp:1996
+#: utilities/searchwindow/searchfields.cpp:2098
 #, fuzzy
 #| msgid "Color depth:"
 msgid "any color depth"
 msgstr "Độ sâu màu :"
 
-#: utilities/searchwindow/searchfields.cpp:1997
+#: utilities/searchwindow/searchfields.cpp:2099
 msgid "8 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1998
+#: utilities/searchwindow/searchfields.cpp:2100
 msgid "16 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchview.cpp:437
+#: utilities/searchwindow/searchview.cpp:457
 #, fuzzy
 #| msgid "Advanced Search"
 msgid "Add Search Group"
@@ -15132,7 +15233,7 @@ msgstr "Gỡ bỏ mục"
 msgid "Clear all"
 msgstr "Xoá hết"
 
-#: utilities/lighttable/lighttablebar.cpp:511
+#: utilities/lighttable/lighttablebar.cpp:509
 msgid "Drag and drop images here"
 msgstr "Kéo và thả ảnh vào đây"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:23+0100\n"
+"POT-Creation-Date: 2009-01-29 07:19+0100\n"
 "PO-Revision-Date: 2007-06-16 16:39+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -15,6 +15,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
+
+#: interfaces/default/interface.cpp:76 interfaces/default/interface.cpp:77
+#: interfaces/quicksand/qs_dialog.cpp:50 interfaces/quicksand/qs_dialog.cpp:51
+#, fuzzy
+#| msgid "Sessions"
+msgid "Settings"
+msgstr "Phiên chạy"
+
+#: interfaces/default/interface.cpp:96 interfaces/default/interface.cpp:97
+#: krunnerapp.cpp:202 krunnerapp.cpp:203
+msgid "Show System Activity"
+msgstr "Hiện hoạt động hệ thống"
+
+#: interfaces/default/interface.cpp:456
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgid "%1: %2"
+msgstr "%1 (%2)"
+
+#: interfaces/quicksand/qs_dialog.cpp:80
+#, fuzzy
+#| msgid "Location"
+msgid "Actions"
+msgstr "Địa điểm"
+
+#: interfaces/quicksand/qs_dialog.cpp:81
+#, fuzzy
+#| msgid "Location"
+msgid "actions"
+msgstr "Địa điểm"
+
+#: interfaces/quicksand/qs_matchview.cpp:122
+msgid "items"
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:176
+msgid "Type to search."
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:251
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgid "%1 %2"
+msgstr "%1 (%2)"
+
+#: interfaces/quicksand/qs_matchview.cpp:334
+msgid "Loading..."
+msgstr ""
+
+#: interfaces/quicksand/qs_matchview.cpp:418
+msgid "No results found."
+msgstr ""
 
 #: lock/autologout.cc:44
 #, fuzzy
@@ -70,15 +122,19 @@ msgstr "Chỉ khởi chạy trình bảo vệ màn hình"
 msgid "Only use the blank screen saver"
 msgstr "Chỉ dùng trình bảo vệ màn hình trắng"
 
-#: lock/lockprocess.cc:764
+#: lock/main.cc:67
+msgid "start with plasma unlocked for configuring"
+msgstr ""
+
+#: lock/lockprocess.cc:796
 msgid "Will not lock the session, as unlocking would be impossible:\n"
 msgstr "Sẽ không khoá phiên chạy vì không thể bỏ khoá:\n"
 
-#: lock/lockprocess.cc:768
+#: lock/lockprocess.cc:800
 msgid "Cannot start <i>kcheckpass</i>."
 msgstr "Không thể khởi chạy tiến trình kiểm tra mật khẩu <i>kcheckpass</i>."
 
-#: lock/lockprocess.cc:769
+#: lock/lockprocess.cc:801
 #, fuzzy
 #| msgid ""
 #| "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
@@ -87,39 +143,39 @@ msgstr ""
 "Tiến trình kiểm tra mật khẩu <i>kcheckpass</i> không thể hoạt động. Có lẽ nó "
 "chưa được đặt là SetUID root (chưa có quyền người chủ)."
 
-#: lock/lockprocess.cc:812
+#: lock/lockprocess.cc:863
 msgid "No appropriate greeter plugin configured."
 msgstr "Chưa cấu hình bổ sung chào mừng thích hợp."
 
-#: lock/lockdlg.cc:96
+#: lock/lockdlg.cc:98
 #, fuzzy
 #| msgid "<nobr><b>The session is locked</b><br>"
 msgid "<nobr><b>The session is locked</b></nobr><br />"
 msgstr "<nobr><b>Phiên chạy bị khoá</b><br>"
 
-#: lock/lockdlg.cc:97
+#: lock/lockdlg.cc:99
 #, fuzzy, kde-format
 #| msgid "<nobr><b>The session was locked by %1</b><br>"
 msgid "<nobr><b>The session was locked by %1</b></nobr><br />"
 msgstr "<nobr><b>Phiên chạy bị khoá bởi %1</b><br>"
 
-#: lock/lockdlg.cc:108
+#: lock/lockdlg.cc:112
 msgid "Unl&ock"
 msgstr "Bỏ kh&oá"
 
-#: lock/lockdlg.cc:110
+#: lock/lockdlg.cc:114
 msgid "Sw&itch User..."
 msgstr "Chuyển đổ&i người dùng..."
 
-#: lock/lockdlg.cc:178
+#: lock/lockdlg.cc:182
 msgid "<b>Unlocking failed</b>"
 msgstr "<b>Lỗi bỏ khoá</b>"
 
-#: lock/lockdlg.cc:186
+#: lock/lockdlg.cc:190
 msgid "<b>Warning: Caps Lock on</b>"
 msgstr "<b>Cảnh báo : phím khoá chữ hoa Caps Lock đã bật</b>"
 
-#: lock/lockdlg.cc:418
+#: lock/lockdlg.cc:422
 #, kde-format
 msgid ""
 "Cannot unlock the session because the authentication system failed to work;\n"
@@ -128,11 +184,11 @@ msgstr ""
 "Không thể bỏ khoá phiên chạy vì hệ thống xác thực không hoạt động được;\n"
 "bạn cần phải tự buộc kết thúc tiến trình « krunner_lock » (PID %1)."
 
-#: lock/lockdlg.cc:507
+#: lock/lockdlg.cc:511
 msgid "&Start New Session"
 msgstr "&Sở khởi phiên chạy mới"
 
-#: lock/lockdlg.cc:515
+#: lock/lockdlg.cc:519
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have chosen to open another desktop session instead of resuming the "
@@ -162,195 +218,134 @@ msgstr ""
 "trên Bảng KDE và màn hình nền cũng có hành động chuyển đổi giữa các phiên "
 "chạy."
 
-#: lock/lockdlg.cc:528
+#: lock/lockdlg.cc:532
 msgid "&Do not ask again"
 msgstr "Đừng &hỏi lại"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Session"
 msgstr "Phiên chạy"
 
-#: lock/lockdlg.cc:584
+#: lock/lockdlg.cc:588
 msgid "Location"
 msgstr "Địa điểm"
 
-#: lock/lockdlg.cc:612
+#: lock/lockdlg.cc:616
 msgctxt "session"
 msgid "&Activate"
 msgstr "&Kích hoạt"
 
-#: lock/lockdlg.cc:621
+#: lock/lockdlg.cc:625
 msgid "Start &New Session"
 msgstr "Sở khởi phiê&n chạy mới"
 
-#: main.cpp:33
+#: krunnerdialog.cpp:57 krunnerapp.cpp:191 krunnerapp.cpp:192
+msgid "Run Command"
+msgstr "Chạy lệnh"
+
+#: main.cpp:37
 msgid "KDE run command interface"
 msgstr "Giao diện Chạy lệnh KDE"
 
-#: main.cpp:39
+#: main.cpp:43
 msgid "Run Command Interface"
 msgstr "Giao diện Chạy lệnh"
 
-#: main.cpp:41
+#: main.cpp:45
 msgid "(c) 2006, Aaron Seigo"
 msgstr "© năm 2006 của Aaron Seigo"
 
-#: main.cpp:42
+#: main.cpp:46
 #, fuzzy
 #| msgid "(c) 2006, Aaron Seigo"
 msgid "Aaron J. Seigo"
 msgstr "© năm 2006 của Aaron Seigo"
 
-#: main.cpp:43
+#: main.cpp:47
 msgid "Author and maintainer"
 msgstr "Tác giả và nhà duy trì"
 
-#: interface.cpp:70 krunnerapp.cpp:143 krunnerapp.cpp:144
-msgid "Run Command"
-msgstr "Chạy lệnh"
+#: configdialog.cpp:53
+msgid "Plugins"
+msgstr ""
 
-#: interface.cpp:84 interface.cpp:85
+#: configdialog.cpp:60
 #, fuzzy
-#| msgid "Sessions"
-msgid "Settings"
-msgstr "Phiên chạy"
+#| msgid "Command"
+msgid "Command oriented"
+msgstr "Lệnh"
 
-#: interface.cpp:104 interface.cpp:105 krunnerapp.cpp:154 krunnerapp.cpp:155
-msgid "Show System Activity"
-msgstr "Hiện hoạt động hệ thống"
-
-#: interface.cpp:112
-msgid "Launch"
-msgstr "Khởi chạy"
-
-#: interface.cpp:113
-msgid "Click to execute the selected item above"
-msgstr "Nhấn để thực hiện mục đã chọn bên trên"
-
-#: interface.cpp:114
+#: configdialog.cpp:61
 #, fuzzy
-#| msgid "Show Options"
-msgid "Show Options"
-msgstr "Hiện tùy chọn"
+#| msgid "Command"
+msgid "Task oriented"
+msgstr "Lệnh"
 
-#: configdialog.cpp:44
+#: configdialog.cpp:75
+msgid "Preview"
+msgstr ""
+
+#: configdialog.cpp:83
+msgid "User Interface"
+msgstr ""
+
+#: configdialog.cpp:86
 #, fuzzy
 #| msgid "KRunner Locker"
 msgid "KRunner Settings"
 msgstr "Bộ khoá KRunner"
 
-#: configdialog.cpp:51
-#, fuzzy
-#| msgid "KRunner Locker"
-msgid "Runners"
-msgstr "Bộ khoá KRunner"
-
-#. i18n: file: krunner.kcfg:16
-#. i18n: ectx: label, entry, group (TaskDialog)
-#: rc.cpp:11
-msgid "Completion mode used for the query text."
+#: configdialog.cpp:93
+msgid "Available Features"
 msgstr ""
 
-#. i18n: file: krunner.kcfg:21
-#. i18n: ectx: label, entry (PastQueries), group (TaskDialog)
-#: rc.cpp:14
-msgid "History if past queries successfully completed"
-msgstr ""
-
-#. i18n: file: krunner.kcfg:27
-#. i18n: ectx: label, entry (KeepTaskDialogAbove), group (TaskDialog)
-#: rc.cpp:18
-msgid "Whether to keep the tasks dialog above other windows when shown."
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:11
-#. i18n: ectx: label, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:22
-msgid "Enable screen saver"
-msgstr "Bật trình bảo vệ màn hình"
-
-#. i18n: file: kscreensaversettings.kcfg:12
-#. i18n: ectx: whatsthis, entry (ScreenSaverEnabled), group (ScreenSaver)
-#: rc.cpp:25
-msgid "Enables the screen saver."
-msgstr "Hiệu lực trình bảo vệ màn hình."
-
-#. i18n: file: kscreensaversettings.kcfg:16
-#. i18n: ectx: label, entry, group (ScreenSaver)
-#: rc.cpp:28
-msgid "Screen saver timeout"
-msgstr "Thời hạn bảo vệ màn hình"
-
-#. i18n: file: kscreensaversettings.kcfg:17
-#. i18n: ectx: whatsthis, entry, group (ScreenSaver)
-#: rc.cpp:31
-msgid "Sets the seconds after which the screen saver is started."
-msgstr "Đặt số giây sau đó trình bảo vệ màn hình khởi chạy."
-
-#. i18n: file: kscreensaversettings.kcfg:21
-#. i18n: ectx: label, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:34
-msgid "Suspend screen saver when DPMS kicks in"
-msgstr ""
-
-#. i18n: file: kscreensaversettings.kcfg:24
-#. i18n: ectx: whatsthis, entry (SuspendWhenInvisible), group (ScreenSaver)
-#: rc.cpp:37
-msgid ""
-"Usually the screen saver is suspended when display power saving kicks in,\n"
-"       as nothing can be seen on the screen anyway, obviously. However, some "
-"screen savers\n"
-"       actually perform useful computations, so it is not desirable to "
-"suspend them."
-msgstr ""
-
-#: rc.cpp:64
+#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nhóm Việt hoá KDE"
 
-#: rc.cpp:65
+#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-vi@kde.org"
 
-#: krunnerapp.cpp:148 krunnerapp.cpp:149
+#: krunnerapp.cpp:196 krunnerapp.cpp:197
 msgid "Run Command on clipboard contents"
 msgstr ""
 
-#: krunnerapp.cpp:166 krunnerapp.cpp:167
+#: krunnerapp.cpp:214 krunnerapp.cpp:215
 msgid "Switch User"
 msgstr "Chuyển đổi người dùng"
 
-#: krunnerapp.cpp:172 krunnerapp.cpp:173
+#: krunnerapp.cpp:221 krunnerapp.cpp:222
 msgid "Lock Session"
 msgstr "Khoá phiên chạy"
 
-#: krunnerapp.cpp:179 krunnerapp.cpp:180
+#: krunnerapp.cpp:229 krunnerapp.cpp:230
 msgid "Log Out"
 msgstr "Đăng xuất"
 
-#: krunnerapp.cpp:184 krunnerapp.cpp:185
+#: krunnerapp.cpp:234 krunnerapp.cpp:235
 msgid "Log Out Without Confirmation"
 msgstr "Đăng xuất mà không xác nhận"
 
-#: krunnerapp.cpp:189 krunnerapp.cpp:190
+#: krunnerapp.cpp:239 krunnerapp.cpp:240
 #, fuzzy
 #| msgid "Halt without Confirmation"
 msgid "Halt Without Confirmation"
 msgstr "Tạm dừng lại mà không xác nhận"
 
-#: krunnerapp.cpp:194 krunnerapp.cpp:195
+#: krunnerapp.cpp:244 krunnerapp.cpp:245
 #, fuzzy
 #| msgid "Reboot without Confirmation"
 msgid "Reboot Without Confirmation"
 msgstr "Khởi động lại mà không xác nhận"
 
-#: krunnerapp.cpp:243
+#: krunnerapp.cpp:296
 msgid "System Activity"
 msgstr "Hoạt động hệ thống"
 
-#: krunnerapp.cpp:322
+#: krunnerapp.cpp:405
 msgid ""
 "Could not log out properly.\n"
 "The session manager cannot be contacted. You can try to force a shutdown by "
@@ -362,35 +357,33 @@ msgstr ""
 "máy bằng cách bấm tổ hợp phím Ctrl+Alt+Xoá lùi; tuy nhiên, ghi chú rằng "
 "phiên chạy hiện thời sẽ không được lưu khi máy bị ép buộc tắt."
 
-#, fuzzy
-#~| msgid "%1 (%2)"
-#~ msgid "%1: %2"
-#~ msgstr "%1 (%2)"
+#~ msgid "Launch"
+#~ msgstr "Khởi chạy"
+
+#~ msgid "Click to execute the selected item above"
+#~ msgstr "Nhấn để thực hiện mục đã chọn bên trên"
 
 #, fuzzy
-#~| msgid "Location"
-#~ msgid "Actions"
-#~ msgstr "Địa điểm"
+#~| msgid "Show Options"
+#~ msgid "Show Options"
+#~ msgstr "Hiện tùy chọn"
 
 #, fuzzy
-#~| msgid "Location"
-#~ msgid "actions"
-#~ msgstr "Địa điểm"
+#~| msgid "KRunner Locker"
+#~ msgid "Runners"
+#~ msgstr "Bộ khoá KRunner"
 
-#, fuzzy
-#~| msgid "%1 (%2)"
-#~ msgid "%1 %2"
-#~ msgstr "%1 (%2)"
+#~ msgid "Enable screen saver"
+#~ msgstr "Bật trình bảo vệ màn hình"
 
-#, fuzzy
-#~| msgid "Command"
-#~ msgid "Command oriented"
-#~ msgstr "Lệnh"
+#~ msgid "Enables the screen saver."
+#~ msgstr "Hiệu lực trình bảo vệ màn hình."
 
-#, fuzzy
-#~| msgid "Command"
-#~ msgid "Task oriented"
-#~ msgstr "Lệnh"
+#~ msgid "Screen saver timeout"
+#~ msgstr "Thời hạn bảo vệ màn hình"
+
+#~ msgid "Sets the seconds after which the screen saver is started."
+#~ msgstr "Đặt số giây sau đó trình bảo vệ màn hình khởi chạy."
 
 #, fuzzy
 #~| msgid "KRunner Locker"

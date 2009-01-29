@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-28 09:19+0100\n"
+"POT-Creation-Date: 2009-01-29 20:00+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1466,18 +1466,19 @@ msgstr ""
 #| "Please make sure that the file can be copied."
 msgid ""
 "Failed to copy the old database file (\"%1\")to its new location (\"%2\")."
-"Please make sure that the file can be copied, or delete it."
+"Error message: \"%3\".Please make sure that the file can be copied, or "
+"delete it."
 msgstr ""
 "Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
 "kiểm tra lại tập tin này có khả năng được sao chép."
 
-#: libs/database/schemaupdater.cpp:728
+#: libs/database/schemaupdater.cpp:730
 #, fuzzy
 #| msgid "Reading database"
 msgid "Copied database file"
 msgstr "Đang đọc cơ sở dữ liệu..."
 
-#: libs/database/schemaupdater.cpp:732
+#: libs/database/schemaupdater.cpp:734
 #, fuzzy, kde-format
 #| msgid ""
 #| "The old database file (\"%1\") has been copied to the new location (\"%2"
@@ -1492,13 +1493,13 @@ msgstr ""
 "nhưng mà không thể mở được. Hãy gỡ bỏ cả hai tập tin này rồi thử lại, bắt "
 "đầu với cơ sở dữ liệu trống."
 
-#: libs/database/schemaupdater.cpp:747
+#: libs/database/schemaupdater.cpp:749
 #, fuzzy
 #| msgid "Reading database"
 msgid "Opened new database file"
 msgstr "Đang đọc cơ sở dữ liệu..."
 
-#: libs/database/schemaupdater.cpp:765
+#: libs/database/schemaupdater.cpp:767
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not update from the old SQLite2 file (\"%1\"). Please remove this "
@@ -1510,30 +1511,30 @@ msgstr ""
 "Không thể cập nhật từ tập tin SQLite2 cũ (« %1 »). Hãy gỡ bỏ tập tin này rồi "
 "thử lại, bắt đầu với cơ sở dữ liệu trống."
 
-#: libs/database/schemaupdater.cpp:777
+#: libs/database/schemaupdater.cpp:779
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Updated from 0.7 database"
 msgstr "Đọc siêu dữ liệu từ tập tin vào cơ sở dữ liệu"
 
-#: libs/database/schemaupdater.cpp:837
+#: libs/database/schemaupdater.cpp:839
 msgid "Prepared table creation"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:846
+#: libs/database/schemaupdater.cpp:848
 #, fuzzy
 #| msgid "Create Folder Failed"
 msgid "Created tables"
 msgstr "Lỗi tạo thư mục"
 
-#: libs/database/schemaupdater.cpp:858
+#: libs/database/schemaupdater.cpp:860
 msgid ""
 "No album library path has been found in the configuration file. Giving up "
 "the schema updating process. Please try with an empty database, or repair "
 "your configuration."
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:876
+#: libs/database/schemaupdater.cpp:878
 #, kde-format
 msgid ""
 "There was an error associating your albumLibraryPath (\"%1\") with a storage "
@@ -1545,49 +1546,60 @@ msgid ""
 "assumptions from a broken installation."
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:894
+#: libs/database/schemaupdater.cpp:896
 msgid "Configured one album root"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:910
+#: libs/database/schemaupdater.cpp:912
 #, fuzzy
 #| msgid "&Sort Albums"
 msgid "Imported albums"
 msgstr "&Sắp xếp tập ảnh"
 
-#: libs/database/schemaupdater.cpp:929
+#: libs/database/schemaupdater.cpp:931
 #, fuzzy
 #| msgid "Image Information"
 msgid "Imported images information"
 msgstr "Thông tin ảnh"
 
-#: libs/database/schemaupdater.cpp:998
+#: libs/database/schemaupdater.cpp:956
+#: utilities/searchwindow/searchfolderview.cpp:105
+msgid "Last Search"
+msgstr "Tìm kiếm cuối cùng"
+
+#: libs/database/schemaupdater.cpp:957
+#, fuzzy
+#| msgid "Last Search"
+msgid "Last Search (0.9)"
+msgstr "Tìm kiếm cuối cùng"
+
+#: libs/database/schemaupdater.cpp:1004
 msgid "Initialized and imported file suffix filter"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:1008
+#: libs/database/schemaupdater.cpp:1014
 msgid "Did the initial full scan"
 msgstr ""
 
-#: libs/database/schemaupdater.cpp:1023
+#: libs/database/schemaupdater.cpp:1029
 #, fuzzy
 #| msgid "Print image creation date"
 msgid "Imported creation dates"
 msgstr "Hiện ngày tạo ảnh"
 
-#: libs/database/schemaupdater.cpp:1036
+#: libs/database/schemaupdater.cpp:1042
 #, fuzzy
 #| msgid "Print image comment"
 msgid "Imported comments"
 msgstr "Hiện chú thích về ảnh"
 
-#: libs/database/schemaupdater.cpp:1053
+#: libs/database/schemaupdater.cpp:1059
 #, fuzzy
 #| msgid "Iterations:"
 msgid "Imported ratings"
 msgstr "Lần lặp lại:"
 
-#: libs/database/schemaupdater.cpp:1062
+#: libs/database/schemaupdater.cpp:1068
 msgid "Dropped v3 tables"
 msgstr ""
 
@@ -14853,10 +14865,6 @@ msgstr ""
 msgid "Current Search"
 msgstr "Xoá tìm kiếm"
 
-#: utilities/searchwindow/searchfolderview.cpp:105
-msgid "Last Search"
-msgstr "Tìm kiếm cuối cùng"
-
 #: utilities/searchwindow/searchfolderview.cpp:208
 #, kde-format
 msgid "Are you sure you want to delete the selected search \"%1\"?"
@@ -15526,31 +15534,31 @@ msgstr "Tự nhiên"
 msgid "Capture"
 msgstr "Tự nhiên"
 
-#: utilities/cameragui/freespacewidget.cpp:318
+#: utilities/cameragui/freespacewidget.cpp:319
 #, fuzzy
 #| msgid "Camera Manual"
 msgid "Camera Media"
 msgstr "Sổ tay máy ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:319
+#: utilities/cameragui/freespacewidget.cpp:320
 #, fuzzy
 #| msgid "Album Library Path"
 msgid "Album Library"
 msgstr "Đường dẫn thư viện tập ảnh"
 
-#: utilities/cameragui/freespacewidget.cpp:328
-#: utilities/cameragui/freespacewidget.cpp:339
+#: utilities/cameragui/freespacewidget.cpp:329
+#: utilities/cameragui/freespacewidget.cpp:340
 msgid "Capacity:"
 msgstr ""
 
-#: utilities/cameragui/freespacewidget.cpp:331
-#: utilities/cameragui/freespacewidget.cpp:342
+#: utilities/cameragui/freespacewidget.cpp:332
+#: utilities/cameragui/freespacewidget.cpp:343
 #, fuzzy
 #| msgid "unavailable"
 msgid "Available:"
 msgstr "không sẵn sàng"
 
-#: utilities/cameragui/freespacewidget.cpp:334
+#: utilities/cameragui/freespacewidget.cpp:335
 #, fuzzy
 #| msgid "Relief:"
 msgid "Require:"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-18 09:58+0100\n"
+"POT-Creation-Date: 2009-02-03 11:13+0100\n"
 "PO-Revision-Date: 2007-06-23 21:43+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -26,125 +26,507 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-vi@kde.org"
 
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:18
-#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
-#: rc.cpp:5
-#, fuzzy
-#| msgid "Remote &application:"
-msgid "Remote Application:"
-msgstr "Ứng dụng ở x&a:"
-
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:31
-#. i18n: ectx: property (text), widget (QLabel, objectLabel)
-#: rc.cpp:8
-#, fuzzy
-#| msgid "Remote &object:"
-msgid "Remote Object:"
-msgstr "Đ&ối tượng ở xa:"
-
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:44
-#. i18n: ectx: property (text), widget (QLabel, functionLabel)
-#: rc.cpp:11
-#, fuzzy
-#| msgid "Actions"
-msgid "Function:"
-msgstr "Hành động"
-
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:57
-#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
-#: rc.cpp:14
-msgid "Arguments:"
-msgstr "Đối số :"
-
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:84
-#. i18n: ectx: property (text), widget (QPushButton, execButton)
-#: rc.cpp:17
-msgid "Call"
-msgstr ""
-
-#. i18n: file: kcm_hotkeys/ui/dbus_action_widget.ui:91
-#. i18n: ectx: property (text), widget (QPushButton, launchButton)
-#: rc.cpp:20
-msgid "Launch  D-Bus Browser"
-msgstr ""
-
-#. i18n: file: kcm_hotkeys/ui/shortcut_trigger_widget.ui:18
+#. i18n: file: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:18
 #. i18n: ectx: property (text), widget (QLabel, shortcut_label)
-#: rc.cpp:23
+#: rc.cpp:5
 #, fuzzy
 #| msgid "Shortcut:"
 msgid "&Shortcut:"
 msgstr "Lối tắt:"
 
-#. i18n: file: kcm_hotkeys/ui/simple_action_data_widget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, triggerBox)
+#. i18n: file: kcm_hotkeys/triggers/gesture_trigger_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, GestureTriggerWidget)
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowTriggerWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/gesture_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, GestureWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowDefinitionWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowDefinitionListWidget)
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ConditionsWidget)
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, KeyboardInputActionWidget)
+#. i18n: file: kcm_hotkeys/triggers/gesture_trigger_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, GestureTriggerWidget)
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowTriggerWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/gesture_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, GestureWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowDefinitionWidget)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, WindowDefinitionListWidget)
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ConditionsWidget)
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, KeyboardInputActionWidget)
+#: rc.cpp:8 rc.cpp:11 rc.cpp:32 rc.cpp:38 rc.cpp:137 rc.cpp:152 rc.cpp:203
+#, fuzzy
+#| msgid "Normal"
+msgid "Form"
+msgstr "Chuẩn"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:25
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: rc.cpp:14
+msgid "Trigger When"
+msgstr "Gây ra khi"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:34
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: rc.cpp:17
+#, fuzzy
+#| msgid "Window appears"
+msgid "Window Appears"
+msgstr "Cửa sổ xuất hiện"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:41
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: rc.cpp:20
+#, fuzzy
+#| msgid "Window disappears"
+msgid "Window Disappears"
+msgstr "Cửa sổ biến mất"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:48
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: rc.cpp:23
+#, fuzzy
+#| msgid "Window Details"
+msgid "Window Gets Focus"
+msgstr "Chi tiết cửa sổ"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:55
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
 #: rc.cpp:26
+#, fuzzy
+#| msgid "Windows to Exclude"
+msgid "Window Loses Focus"
+msgstr "Cửa sổ cần loại trừ"
+
+#. i18n: file: kcm_hotkeys/triggers/window_trigger_widget.ui:65
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: rc.cpp:29
+msgid "Window"
+msgstr "Cửa sổ"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/gesture_widget.ui:25
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: rc.cpp:35
+#, fuzzy
+#| msgid "Edit..."
+msgid "Edit"
+msgstr "Sửa..."
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:25
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:41
+#, fuzzy
+#| msgid "Window Details"
+msgid "Window Data"
+msgstr "Chi tiết cửa sổ"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:33
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: rc.cpp:44 kcm_hotkeys/hotkeys_tree_view.cpp:172
+#: kcm_hotkeys/hotkeys_tree_view.cpp:217 kcm_hotkeys/hotkeys_tree_view.cpp:262
+#: kcm_hotkeys/hotkeys_model.cpp:90
+#, fuzzy
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "Ghi chú :"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:40
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: rc.cpp:47
+#, fuzzy
+#| msgid "Window &title:"
+msgid "Window Title"
+msgstr "&Tựa cửa sổ :"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:48
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:94
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:140
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:48
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:94
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:140
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:50 rc.cpp:74 rc.cpp:98
+msgid "Is Not Important"
+msgstr "không phải là quan trọng"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:53
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:99
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:145
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:53
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:99
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:145
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:53 rc.cpp:77 rc.cpp:101
+msgid "Contains"
+msgstr "chứa"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:58
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:104
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:150
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:58
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:104
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:150
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:56 rc.cpp:80 rc.cpp:104
+msgid "Is"
+msgstr "là"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:63
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:109
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:155
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:63
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:109
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:155
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:59 rc.cpp:83 rc.cpp:107
+msgid "Matches Regular Expression"
+msgstr "khớp biểu thức chính quy"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:68
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:114
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:160
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:68
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:114
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:160
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:62 rc.cpp:86 rc.cpp:110
+msgid "Does Not Contain"
+msgstr "không chứa"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:73
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:119
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:165
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:73
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:119
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:165
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:65 rc.cpp:89 rc.cpp:113
+msgid "Is Not"
+msgstr "không phải là"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:78
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:124
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:170
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:78
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:124
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:170
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: rc.cpp:68 rc.cpp:92 rc.cpp:116
+msgid "Does Not Match Regular Expression"
+msgstr "không khớp biểu thức chính quy"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:86
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: rc.cpp:71
+#, fuzzy
+#| msgid "Window c&lass:"
+msgid "Window Class"
+msgstr "&Hạng cửa sổ :"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:132
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: rc.cpp:95
+#, fuzzy
+#| msgid "Window &role:"
+msgid "Window Role"
+msgstr "&Vai cửa sổ :"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:204
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: rc.cpp:119
+msgid "&Autodetect"
+msgstr "Tự động ph&át hiện"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:214
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:122
+msgid "Window Types"
+msgstr "Kiểu cửa sổ"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:220
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: rc.cpp:125
+msgid "Normal"
+msgstr "Chuẩn"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:227
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: rc.cpp:128
+msgid "Desktop"
+msgstr "Môi trường"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:234
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: rc.cpp:131
+msgid "Dialog"
+msgstr "Hộp thoại"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_widget.ui:241
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: rc.cpp:134
+msgid "Dock"
+msgstr "Neo"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:24
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: rc.cpp:140
+#, fuzzy
+#| msgid "Edit..."
+msgid "&Edit"
+msgstr "Sửa..."
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:31
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: rc.cpp:143
+msgid "&New"
+msgstr "&Mới"
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: rc.cpp:146
+msgid "&Duplicate"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: rc.cpp:149
+#, fuzzy
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "Xoá"
+
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:26
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: rc.cpp:155
+msgid "1"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:36
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: rc.cpp:158
+#, fuzzy
+#| msgid "&New"
+msgid "New"
+msgstr "&Mới"
+
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:43
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: rc.cpp:161
+#, fuzzy
+#| msgid "Edit..."
+msgid "Edit ..."
+msgstr "Sửa..."
+
+#. i18n: file: kcm_hotkeys/conditions/conditions_widget.ui:50
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: rc.cpp:164 kcm_hotkeys/hotkeys_tree_view.cpp:69
+msgid "Delete"
+msgstr "Xoá"
+
+#. i18n: file: kcm_hotkeys/simple_action_data_widget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, triggerBox)
+#: rc.cpp:167
 #, fuzzy
 #| msgid "Triggers"
 msgid "Trigger"
 msgstr "Bộ gây nên"
 
-#. i18n: file: kcm_hotkeys/ui/simple_action_data_widget.ui:24
+#. i18n: file: kcm_hotkeys/simple_action_data_widget.ui:24
 #. i18n: ectx: property (title), widget (QGroupBox, actionBox)
-#: rc.cpp:29
+#: rc.cpp:170
 #, fuzzy
 #| msgid "Actions"
 msgid "Action"
 msgstr "Hành động"
 
-#. i18n: file: kcm_hotkeys/ui/global_settings_widget.ui:28
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:32
+#: rc.cpp:173
 #, fuzzy
 #| msgid "KHotKeys daemon"
 msgid "KHotKeys Daemon"
 msgstr "Trình nền KHotKeys"
 
-#. i18n: file: kcm_hotkeys/ui/global_settings_widget.ui:36
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:36
 #. i18n: ectx: property (text), widget (QCheckBox, enabled)
-#: rc.cpp:35
+#: rc.cpp:176
 msgid "Start the khotkeys daemon on logon"
 msgstr ""
 
-#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:18
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:179
+msgid "Gestures"
+msgstr "Điệu bộ"
+
+#. i18n: file: kcm_hotkeys/global_settings_widget.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, gestures_enabled)
+#: rc.cpp:182
+#, fuzzy
+#| msgid "Gestures"
+msgid "Enable Gestures"
+msgstr "Điệu bộ"
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:18
 #. i18n: ectx: property (text), widget (QLabel, applicationLabel)
-#: rc.cpp:38
+#: rc.cpp:185
+#, fuzzy
+#| msgid "Remote &application:"
+msgid "Remote Application:"
+msgstr "Ứng dụng ở x&a:"
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: rc.cpp:188
+#, fuzzy
+#| msgid "Remote &object:"
+msgid "Remote Object:"
+msgstr "Đ&ối tượng ở xa:"
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:44
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: rc.cpp:191
+#, fuzzy
+#| msgid "Actions"
+msgid "Function:"
+msgstr "Hành động"
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:57
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: rc.cpp:194
+msgid "Arguments:"
+msgstr "Đối số :"
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:84
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: rc.cpp:197
+msgid "Call"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/actions/dbus_action_widget.ui:91
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: rc.cpp:200
+msgid "Launch  D-Bus Browser"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:52
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:22
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:52
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:206 rc.cpp:218
+msgid "GroupBox"
+msgstr ""
+
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:28
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: rc.cpp:209
+#, fuzzy
+#| msgid "Action window"
+msgid "Action Window"
+msgstr "Cửa sổ hành động"
+
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:35
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: rc.cpp:212
+#, fuzzy
+#| msgid "Active window"
+msgid "Active Window"
+msgstr "Cửa sổ hoạt động"
+
+#. i18n: file: kcm_hotkeys/actions/keyboard_input_action_widget.ui:42
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: rc.cpp:215
+#, fuzzy
+#| msgid "Specific window"
+msgid "Specific Window"
+msgstr "Cửa sổ riêng"
+
+#. i18n: file: kcm_hotkeys/actions/menuentry_action_widget.ui:18
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: rc.cpp:221
 #, fuzzy
 #| msgid "Actions"
 msgid "Application"
 msgstr "Hành động"
 
-#. i18n: file: kcm_hotkeys/ui/menuentry_action_widget.ui:32
+#. i18n: file: kcm_hotkeys/actions/menuentry_action_widget.ui:32
 #. i18n: ectx: property (text), widget (KPushButton, applicationButton)
-#: rc.cpp:41
+#: rc.cpp:224
 #, fuzzy
 #| msgid "Delete Action"
 msgid "Select Application ..."
 msgstr "Xoá bỏ hành động"
 
-#. i18n: file: kcm_hotkeys/ui/command_url_action_widget.ui:16
+#. i18n: file: kcm_hotkeys/actions/command_url_action_widget.ui:16
 #. i18n: ectx: property (text), widget (QLabel, commandLabel)
-#: rc.cpp:44
+#: rc.cpp:227
 #, fuzzy
 #| msgid "Command/URL : "
 msgid "Command/URL:"
 msgstr "Lệnh/URL: "
 
-#. i18n: file: kcm_hotkeys/ui/hotkeys_widget_base.ui:16
+#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, commentBox)
-#: rc.cpp:47
+#: rc.cpp:230
 msgid "General"
 msgstr "Chung"
 
-#. i18n: file: kcm_hotkeys/ui/hotkeys_widget_base.ui:25
+#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:25
 #. i18n: ectx: property (text), widget (QLabel, enabled_comment)
-#: rc.cpp:50
+#: rc.cpp:233
 msgid "Add comment here"
 msgstr ""
 
-#. i18n: file: kcm_hotkeys/ui/hotkeys_widget_base.ui:32
+#. i18n: file: kcm_hotkeys/hotkeys_widget_base.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, enabled)
-#: rc.cpp:53
+#: rc.cpp:236
 #, fuzzy
 #| msgid "&Disable"
 msgid "&Enabled"
@@ -157,15 +539,12 @@ msgid "Test"
 msgstr "Đặt &lại"
 
 #: kcm_hotkeys/hotkeys_tree_view.cpp:59 kcm_hotkeys/hotkeys_tree_view.cpp:75
-#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
+#: kcm_hotkeys/hotkeys_tree_view.cpp:172 kcm_hotkeys/hotkeys_tree_view.cpp:262
+#: kcm_hotkeys/hotkeys_model.cpp:90
 #, fuzzy
 #| msgid "New &Group"
 msgid "New Group"
 msgstr "&Nhóm mới"
-
-#: kcm_hotkeys/hotkeys_tree_view.cpp:69
-msgid "Delete"
-msgstr "Xoá"
 
 #: kcm_hotkeys/hotkeys_tree_view.cpp:91
 #, fuzzy
@@ -173,35 +552,101 @@ msgstr "Xoá"
 msgid "New Global Shortcut"
 msgstr "Phím tắt"
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:110
+#: kcm_hotkeys/hotkeys_tree_view.cpp:104
+#, fuzzy
+#| msgid "New Action"
+msgid "New Window Action"
+msgstr "Hành động mới"
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:117
+msgid "New Mouse Gesture Action"
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_tree_view.cpp:136
 #, fuzzy
 #| msgid "Command/URL : "
 msgid "Command/URL"
 msgstr "Lệnh/URL: "
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:117
+#: kcm_hotkeys/hotkeys_tree_view.cpp:143
 #, fuzzy
 #| msgid "DCOP Call..."
 msgid "D-Bus Command"
 msgstr "Cuộc gọi DCOP..."
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:124
+#: kcm_hotkeys/hotkeys_tree_view.cpp:150
 #, fuzzy
 #| msgid "K-Menu Entry..."
 msgid "K-Menu Entry"
 msgstr "Mục trình đơn K..."
 
-#: kcm_hotkeys/hotkeys_tree_view.cpp:145 kcm_hotkeys/hotkeys_model.cpp:90
+#: kcm_hotkeys/hotkeys_tree_view.cpp:217
+msgid "New Action"
+msgstr "Hành động mới"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:33
 #, fuzzy
-#| msgid "Comment:"
-msgid "Comment"
-msgstr "Ghi chú :"
+#| msgid "Gestures"
+msgid "Edit Gesture"
+msgstr "Điệu bộ"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:37
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
 
 #: kcm_hotkeys/hotkeys_widget_base.cpp:71
 #, fuzzy
 #| msgid "&Disable (group is disabled)"
 msgid "Parent group is disabled"
 msgstr "&Tắt (nhóm bị tắt)"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:27
+#, fuzzy
+#| msgid "Active Window..."
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "Cửa sổ hoạt động..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:29
+#, fuzzy
+#| msgid "Existing Window..."
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "Cửa sổ tồn tại..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:31
+#, fuzzy
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Condition type"
+msgid "And"
+msgstr "và"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:33
+#, fuzzy
+#| msgctxt "Or_condition"
+#| msgid "Or"
+msgctxt "Condition type"
+msgid "Or"
+msgstr "hoặc"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:35
+#, fuzzy
+#| msgctxt "Not_condition"
+#| msgid "Not"
+msgctxt "Condition type"
+msgid "Not"
+msgstr "không"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:82
+#, fuzzy
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "và"
 
 #: kcm_hotkeys/kcm_gestures.cpp:102 kcm_hotkeys/kcm_hotkeys.cpp:118
 msgid "KDE Hotkeys Configuration Module"
@@ -250,17 +695,17 @@ msgstr ""
 msgid "Failed to run qdbusviewer"
 msgstr "Lỗi chạy KDCOP"
 
-#: kcm_hotkeys/hotkeys_model.cpp:332
+#: kcm_hotkeys/hotkeys_model.cpp:350
 msgid "Name"
 msgstr ""
 
-#: kcm_hotkeys/hotkeys_model.cpp:335
+#: kcm_hotkeys/hotkeys_model.cpp:353
 #, fuzzy
 #| msgid "&Disable"
 msgid "Enabled"
 msgstr "&Tắt"
 
-#: kcm_hotkeys/hotkeys_model.cpp:338
+#: kcm_hotkeys/hotkeys_model.cpp:356
 msgid "Type"
 msgstr ""
 
@@ -295,7 +740,7 @@ msgstr "Lối tắt gây nên: "
 msgid "Gesture trigger: "
 msgstr "Điệu bộ gây nên: "
 
-#: libkhotkeysprivate/triggers/window_trigger.cpp:113
+#: libkhotkeysprivate/triggers/window_trigger.cpp:135
 msgid "Window trigger: "
 msgstr "Cửa sổ gây nên: "
 
@@ -303,28 +748,32 @@ msgstr "Cửa sổ gây nên: "
 msgid "Voice trigger: "
 msgstr "Giọng nói gây nên: "
 
-#: libkhotkeysprivate/conditions/or_condition.cpp:62
+#: libkhotkeysprivate/conditions/or_condition.cpp:69
 msgctxt "Or_condition"
 msgid "Or"
 msgstr "hoặc"
 
-#: libkhotkeysprivate/conditions/and_condition.cpp:60
+#: libkhotkeysprivate/conditions/and_condition.cpp:61
 msgctxt "And_condition"
 msgid "And"
 msgstr "và"
 
-#: libkhotkeysprivate/conditions/not_condition.cpp:53
+#: libkhotkeysprivate/conditions/not_condition.cpp:63
 msgctxt "Not_condition"
 msgid "Not"
 msgstr "không"
 
-#: libkhotkeysprivate/conditions/active_window_condition.cpp:69
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:82
 msgid "Active window: "
 msgstr "Cửa sổ hoạt động: "
 
-#: libkhotkeysprivate/conditions/existing_window_condition.cpp:72
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:76
 msgid "Existing window: "
 msgstr "Cửa sổ tồn tại: "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:82
+msgid "Window simple: "
+msgstr "Cửa sổ (đơn giản): "
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:87
 #, fuzzy
@@ -338,25 +787,25 @@ msgstr "Mục trình đơn: "
 msgid "D-Bus: "
 msgstr "Cuộc gọi DCOP..."
 
-#: libkhotkeysprivate/actions/command_url_action.cpp:68
+#: libkhotkeysprivate/actions/command_url_action.cpp:69
 #, fuzzy
 #| msgid "Command/URL : "
 msgid "Command/URL : "
 msgstr "Lệnh/URL: "
 
-#: libkhotkeysprivate/actions/activate_window_action.cpp:79
+#: libkhotkeysprivate/actions/activate_window_action.cpp:80
 #, fuzzy
 #| msgid "Activate window : "
 msgid "Activate window: "
 msgstr "Kích hoạt cửa sổ : "
 
-#: libkhotkeysprivate/actions/keyboard_input_action.cpp:139
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:220
 #, fuzzy
 #| msgid "Keyboard input : "
 msgid "Keyboard input: "
 msgstr "Nhập bàn phím: "
 
-#: libkhotkeysprivate/settings.cpp:269
+#: libkhotkeysprivate/settings.cpp:272
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
@@ -364,7 +813,7 @@ msgstr ""
 "Tập tin « hành động » này đã được nhập trước này. Bạn có chắc muốn nhập lại "
 "nó không?"
 
-#: libkhotkeysprivate/settings.cpp:280
+#: libkhotkeysprivate/settings.cpp:283
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
 "determined whether or not it has been imported already. Are you sure you "
@@ -373,13 +822,9 @@ msgstr ""
 "Tập tin « hành động » này không có trường ImportId nên không thể quyết định "
 "nếu nó đã được nhập trước không. Bạn có chắc muốn nhập nó không?"
 
-#: libkhotkeysprivate/settings.cpp:449
+#: libkhotkeysprivate/settings.cpp:452
 msgid "These entries were created using Menu Editor."
 msgstr "Những mục nhập này được tạo bằng Menu Editor."
-
-#: libkhotkeysprivate/windows.cpp:360
-msgid "Window simple: "
-msgstr "Cửa sổ (đơn giản): "
 
 #: libkhotkeysprivate/khotkeysglobal.h:40
 msgid "Menu Editor entries"
@@ -396,9 +841,6 @@ msgstr "Mục nhập Menu Editor"
 #~ msgid "PushButton"
 #~ msgstr "Nút chuột:"
 
-#~ msgid "&New"
-#~ msgstr "&Mới"
-
 #~ msgid "&Modify..."
 #~ msgstr "&Sửa đổi..."
 
@@ -414,23 +856,11 @@ msgstr "Mục nhập Menu Editor"
 #~ msgid "Command/URL to execute:"
 #~ msgstr "Lệnh/URL cần thực hiện:"
 
-#~ msgid "Trigger When"
-#~ msgstr "Gây ra khi"
-
-#~ msgid "Window appears"
-#~ msgstr "Cửa sổ xuất hiện"
-
-#~ msgid "Window disappears"
-#~ msgstr "Cửa sổ biến mất"
-
 #~ msgid "Window activates"
 #~ msgstr "Cửa sổ mới hoạt động"
 
 #~ msgid "Window deactivates"
 #~ msgstr "Cửa sổ dừng hoạt động"
-
-#~ msgid "Window"
-#~ msgstr "Cửa sổ"
 
 #~ msgid "Menu entry to execute:"
 #~ msgstr "Mục trình đơn cần thực hiện:"
@@ -440,54 +870,6 @@ msgstr "Mục nhập Menu Editor"
 
 #~ msgid "&Comment:"
 #~ msgstr "Ghi &chú :"
-
-#~ msgid "Window &title:"
-#~ msgstr "&Tựa cửa sổ :"
-
-#~ msgid "Is Not Important"
-#~ msgstr "không phải là quan trọng"
-
-#~ msgid "Contains"
-#~ msgstr "chứa"
-
-#~ msgid "Is"
-#~ msgstr "là"
-
-#~ msgid "Matches Regular Expression"
-#~ msgstr "khớp biểu thức chính quy"
-
-#~ msgid "Does Not Contain"
-#~ msgstr "không chứa"
-
-#~ msgid "Is Not"
-#~ msgstr "không phải là"
-
-#~ msgid "Does Not Match Regular Expression"
-#~ msgstr "không khớp biểu thức chính quy"
-
-#~ msgid "Window c&lass:"
-#~ msgstr "&Hạng cửa sổ :"
-
-#~ msgid "Window &role:"
-#~ msgstr "&Vai cửa sổ :"
-
-#~ msgid "&Autodetect"
-#~ msgstr "Tự động ph&át hiện"
-
-#~ msgid "Window Types"
-#~ msgstr "Kiểu cửa sổ"
-
-#~ msgid "Normal"
-#~ msgstr "Chuẩn"
-
-#~ msgid "Dialog"
-#~ msgstr "Hộp thoại"
-
-#~ msgid "Desktop"
-#~ msgstr "Môi trường"
-
-#~ msgid "Dock"
-#~ msgstr "Neo"
 
 #~ msgid "&Play"
 #~ msgstr "&Phát"
@@ -500,9 +882,6 @@ msgstr "Mục nhập Menu Editor"
 
 #~ msgid "Gestures:"
 #~ msgstr "Điệu bộ :"
-
-#~ msgid "Edit..."
-#~ msgstr "Sửa..."
 
 #~ msgid "Action group &name:"
 #~ msgstr "&Nhóm và tên hành động:"
@@ -544,9 +923,6 @@ msgstr "Mục nhập Menu Editor"
 #~ msgid "Gesture timeout (ms):"
 #~ msgstr "Thời hạn điệu bộ (mgiây):"
 
-#~ msgid "Windows to Exclude"
-#~ msgstr "Cửa sổ cần loại trừ"
-
 #~ msgid "Disable KHotKeys daemon"
 #~ msgstr "Tắt trình nền KHotKeys"
 
@@ -586,15 +962,6 @@ msgstr "Mục nhập Menu Editor"
 #~ "</li>\n"
 #~ "</ul>"
 
-#~ msgid "Action window"
-#~ msgstr "Cửa sổ hành động"
-
-#~ msgid "Active window"
-#~ msgstr "Cửa sổ hoạt động"
-
-#~ msgid "Specific window"
-#~ msgstr "Cửa sổ riêng"
-
 #~ msgid "Called &function:"
 #~ msgstr "&Hàm được gọi:"
 
@@ -633,9 +1000,6 @@ msgstr "Mục nhập Menu Editor"
 
 #~ msgid "Simple Window..."
 #~ msgstr "Cửa sổ đơn giản..."
-
-#~ msgid "Window Details"
-#~ msgstr "Chi tiết cửa sổ"
 
 #~ msgid ""
 #~ "Draw the gesture you would like to record below. Press and hold the left "
@@ -704,9 +1068,6 @@ msgstr "Mục nhập Menu Editor"
 #~ msgid "Gestures Settings"
 #~ msgstr "Thiết lập điều bộ"
 
-#~ msgid "Gestures"
-#~ msgstr "Điệu bộ"
-
 #~ msgid "Command/URL Settings"
 #~ msgstr "Thiết lập lệnh/URL"
 
@@ -726,12 +1087,6 @@ msgstr "Mục nhập Menu Editor"
 
 #~ msgid "Voices Settings"
 #~ msgstr "Thiết lập giọng nói"
-
-#~ msgid "Active Window..."
-#~ msgstr "Cửa sổ hoạt động..."
-
-#~ msgid "Existing Window..."
-#~ msgstr "Cửa sổ tồn tại..."
 
 #~ msgid ""
 #~ "A group is selected.\n"
@@ -775,9 +1130,6 @@ msgstr "Mục nhập Menu Editor"
 #~| msgid "(c) 1999-2005 Lubos Lunak"
 #~ msgid "Lubos Lunak"
 #~ msgstr "Bản quyền © năm 1999-2005 của Lubos Lunak"
-
-#~ msgid "New Action"
-#~ msgstr "Hành động mới"
 
 #~ msgid "New Action Group"
 #~ msgstr "Nhóm hành động mới"

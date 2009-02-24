@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-22 09:47+0100\n"
+"POT-Creation-Date: 2009-02-24 11:00+0100\n"
 "PO-Revision-Date: 2007-06-23 20:04+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -19,17 +19,17 @@ msgstr ""
 #: kglobalshortcutseditor.cpp:114
 #, fuzzy
 #| msgid "Current Scheme"
-msgid "Import Scheme ..."
+msgid "Import Scheme..."
 msgstr "Giản đồ hiện có"
 
 #: kglobalshortcutseditor.cpp:115
 #, fuzzy
 #| msgid "Current Scheme"
-msgid "Export Scheme ..."
+msgid "Export Scheme..."
 msgstr "Giản đồ hiện có"
 
 #: kglobalshortcutseditor.cpp:116
-msgid "Revise Component"
+msgid "Remove Component"
 msgstr ""
 
 #: kglobalshortcutseditor.cpp:234
@@ -70,17 +70,27 @@ msgstr ""
 msgid "Failed to contact the KDE global shortcuts daemon\n"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:385
+#: kglobalshortcutseditor.cpp:387
 #, kde-format
 msgid ""
-"This will remove all currently not active global shortcuts for %1 from this "
-"list. %1 is removed too if no shortcut is left.\n"
-"All global shortcuts will reregister themselves whenever they are activated "
-"the next time!"
+"Component '%1' is currently active. Only global shortcuts currently not "
+"active will be removed from the list.\n"
+"All global shortcuts will reregister themselves with their default when they "
+"are started the next time!"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:387
-msgid "Clean component"
+#: kglobalshortcutseditor.cpp:389 kglobalshortcutseditor.cpp:399
+#, fuzzy
+#| msgid "&Remove Scheme"
+msgid "Remove component"
+msgstr "&Bỏ giản đồ"
+
+#: kglobalshortcutseditor.cpp:395
+#, kde-format
+msgid ""
+"Are you sure you want to remove the registered shortcuts for component '%1'?."
+"The component and shortcuts will reregister themselves with their default "
+"setting when they are started the next time."
 msgstr ""
 
 #. i18n: file: kglobalshortcutseditor.ui:19
@@ -170,12 +180,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Hãy nhấn vào đây để thêm một giản đồ tổ hợp phím mới. Bạn sẽ được nhắc "
 #~ "nhập tên."
-
-#, fuzzy
-#~| msgid "&Remove Scheme"
-#~ msgctxt "@action:button"
-#~ msgid "&Remove Scheme"
-#~ msgstr "&Bỏ giản đồ"
 
 #, fuzzy
 #~| msgid ""

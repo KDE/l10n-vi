@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-22 10:16+0100\n"
+"POT-Creation-Date: 2009-03-24 10:53+0100\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -3571,6 +3571,14 @@ msgstr "Hãy liên lạc quản trị hệ thống."
 msgid "Configuration file \"%1\" not writable.\n"
 msgstr "Tập tin cấu hình « %1 » không có khả năng ghi.\n"
 
+#: kdecore/network/klocalsocket_win.cpp:31
+#: kdecore/network/klocalsocket_win.cpp:36
+#, fuzzy
+#| msgctxt "Socket error code NotSupported"
+#| msgid "operation is not supported"
+msgid "Operation not supported"
+msgstr "không hỗ trợ thao tác này"
+
 #: kdecore/network/k3socketaddress.cpp:623
 #, kde-format
 msgctxt "1: the unknown socket address family number"
@@ -3704,6 +3712,87 @@ msgstr "chưa hỗ trợ « ai-socktype » (kiểu ổ cắm)"
 #: kdecore/network/netsupp.cpp:902
 msgid "system error"
 msgstr "lỗi hệ thống"
+
+#: kdecore/network/klocalsocket_unix.cpp:178
+#: kdecore/network/klocalsocket_unix.cpp:246
+msgid "Specified socket path is invalid"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:187
+#: kdecore/network/klocalsocket_unix.cpp:234
+#: kdecore/network/klocalsocket_unix.cpp:255
+#, fuzzy
+#| msgctxt "Socket error code NotSupported"
+#| msgid "operation is not supported"
+msgid "The socket operation is not supported"
+msgstr "không hỗ trợ thao tác này"
+
+#: kdecore/network/klocalsocket_unix.cpp:200
+#, fuzzy
+#| msgctxt "Socket error code ConnectionRefused"
+#| msgid "connection actively refused"
+msgid "Connection refused"
+msgstr "kết nối bị từ chối động"
+
+#: kdecore/network/klocalsocket_unix.cpp:205
+#: kdecore/network/klocalsocket_unix.cpp:268
+#, fuzzy
+#| msgid "Permissions"
+msgid "Permission denied"
+msgstr "Quyền hạn"
+
+#: kdecore/network/klocalsocket_unix.cpp:209
+#, fuzzy
+#| msgctxt "Socket error code ConnectionTimedOut"
+#| msgid "connection timed out"
+msgid "Connection timed out"
+msgstr "kết nối đã quá giờ"
+
+#: kdecore/network/klocalsocket_unix.cpp:213
+#: kdecore/network/klocalsocket_unix.cpp:293 nepomuk/core/resource.cpp:475
+msgid "Unknown error"
+msgstr "Gặp lỗi lạ"
+
+#: kdecore/network/klocalsocket_unix.cpp:221
+#: kdecore/network/klocalsocket_unix.cpp:301
+msgid "Could not set non-blocking mode"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:272
+#, fuzzy
+#| msgctxt "Socket error code AddressInUse"
+#| msgid "address already in use"
+msgid "Address is already in use"
+msgstr "địa chỉ đang được dùng"
+
+#: kdecore/network/klocalsocket_unix.cpp:277
+#, fuzzy
+#| msgid "This file cannot be opened."
+msgid "Path cannot be used"
+msgstr "Không thể mở tập tin này."
+
+#: kdecore/network/klocalsocket_unix.cpp:281
+#, fuzzy
+#| msgid "No such interpreter \"%1\""
+msgid "No such file or directory"
+msgstr "Không có bộ giải thích « %1 »."
+
+#: kdecore/network/klocalsocket_unix.cpp:285
+#, fuzzy
+#| msgid "Path to the autostart directory"
+msgid "Not a directory"
+msgstr "Đường dẫn tới thư mục tự động khởi chạy"
+
+#: kdecore/network/klocalsocket_unix.cpp:289
+msgid "Read-only filesystem"
+msgstr ""
+
+#: kdecore/network/klocalsocket_unix.cpp:354
+#: kdecore/network/klocalsocket_unix.cpp:386
+#, fuzzy
+#| msgid "Unknown error"
+msgid "Unknown socket error"
+msgstr "Gặp lỗi lạ"
 
 #: kdecore/network/k3resolver.cpp:546
 msgid "requested family not supported for this host name"
@@ -12698,10 +12787,6 @@ msgstr "Lỗi giao thông"
 msgid "Invalid type in Database"
 msgstr "Gặp kiểu không hợp lệ trong cơ sở dữ liệu"
 
-#: nepomuk/core/resource.cpp:475
-msgid "Unknown error"
-msgstr "Gặp lỗi lạ"
-
 #: nepomuk/core/ui/kmetadatatagwidget.cpp:214
 #, fuzzy
 #| msgid "Create new tag..."
@@ -15224,9 +15309,6 @@ msgstr "Không có bộ giải thích « %1 »."
 #~ msgid "Date"
 #~ msgstr "Ngày"
 
-#~ msgid "Permissions"
-#~ msgstr "Quyền hạn"
-
 #~ msgid "Group"
 #~ msgstr "Nhóm"
 
@@ -15463,9 +15545,6 @@ msgstr "Không có bộ giải thích « %1 »."
 
 #~ msgid "Try Different"
 #~ msgstr "Thử khác"
-
-#~ msgid "This file cannot be opened."
-#~ msgstr "Không thể mở tập tin này."
 
 #~ msgid "I do not know how to handle this type of file."
 #~ msgstr "Trình này không có cách quản lý tập tin kiểu này."

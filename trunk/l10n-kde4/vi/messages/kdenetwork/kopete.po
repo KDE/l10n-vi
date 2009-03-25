@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-24 10:57+0100\n"
+"POT-Creation-Date: 2009-03-25 11:24+0100\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17797,8 +17797,8 @@ msgid "Open MS&N service status site..."
 msgstr ""
 
 #: protocols/wlm/wlmaccount.cpp:136 protocols/wlm/wlmaccount.cpp:138
-#: protocols/oscar/oscaraccount.cpp:285 protocols/oscar/oscaraccount.cpp:851
-#: protocols/oscar/oscaraccount.cpp:857
+#: protocols/oscar/oscaraccount.cpp:289 protocols/oscar/oscaraccount.cpp:890
+#: protocols/oscar/oscaraccount.cpp:896
 msgid "Buddies"
 msgstr "Bạn bè"
 
@@ -18534,7 +18534,7 @@ msgstr "Di động"
 #: protocols/oscar/aim/aimstatusmanager.cpp:87
 #: protocols/oscar/icq/ui/icqeditaccountwidget.cpp:305
 #: protocols/oscar/icq/icqprotocol.cpp:121
-#: protocols/oscar/oscaraccount.cpp:1156 protocols/yahoo/yahooprotocol.cpp:75
+#: protocols/oscar/oscaraccount.cpp:1195 protocols/yahoo/yahooprotocol.cpp:75
 msgid "ICQ"
 msgstr "ICQ"
 
@@ -18546,7 +18546,7 @@ msgstr "Bạn cần kết nối để có khả năng thêm liên lạc."
 
 #: protocols/oscar/aim/aimprotocol.cpp:181
 #: protocols/oscar/icq/icqstatusmanager.cpp:94
-#: protocols/oscar/oscaraccount.cpp:1156 protocols/yahoo/yahooprotocol.cpp:74
+#: protocols/oscar/oscaraccount.cpp:1195 protocols/yahoo/yahooprotocol.cpp:74
 msgid "AIM"
 msgstr "AIM"
 
@@ -19984,21 +19984,48 @@ msgstr "Chọn bảng mã"
 msgid "Default"
 msgstr "Mặc định"
 
-#: protocols/oscar/oscaraccount.cpp:586
+#: protocols/oscar/oscaraccount.cpp:455
+#, fuzzy, kde-format
+#| msgctxt "Translators: client name and version"
+#| msgid "%1"
+msgctxt "@action:button filter-yes"
+msgid "%1"
+msgstr "%1"
+
+#: protocols/oscar/oscaraccount.cpp:456
+#, fuzzy, kde-format
+#| msgctxt "Translators: client name and version"
+#| msgid "%1"
+msgctxt "@action:button filter-no"
+msgid "%1"
+msgstr "%1"
+
+#: protocols/oscar/oscaraccount.cpp:457
+msgctxt "@action:button post-filter"
+msgid "."
+msgstr ""
+
+#: protocols/oscar/oscaraccount.cpp:460
+#, fuzzy
+#| msgid "Chat Invitation List"
+msgid "Chat Room Invitation"
+msgstr "Danh sách mời trò chuyện"
+
+#: protocols/oscar/oscaraccount.cpp:625
 msgid "ICQ Web Express"
 msgstr "ICQ Web Express"
 
-#: protocols/oscar/oscaraccount.cpp:588
+#: protocols/oscar/oscaraccount.cpp:627
 msgid "ICQ Email Express"
 msgstr "ICQ Email Express"
 
-#: protocols/oscar/oscaraccount.cpp:971 protocols/oscar/oscaraccount.cpp:988
+#: protocols/oscar/oscaraccount.cpp:1010 protocols/oscar/oscaraccount.cpp:1027
 #, kde-format
 msgctxt "account has been disconnected"
 msgid "%1 disconnected"
 msgstr "%1 bị ngắt kết nối"
 
-#: protocols/oscar/oscaraccount.cpp:1012
+#: protocols/oscar/oscaraccount.cpp:1051
 msgid ""
 "There was an error in the protocol handling; it was not fatal, so you will "
 "not be disconnected."
@@ -20006,27 +20033,27 @@ msgstr ""
 "Gặp lỗi trong tiến trình quản lý giao thức; nó không phải nghiệm trọng, vậy "
 "bạn không bị ngắt kết nối."
 
-#: protocols/oscar/oscaraccount.cpp:1014
+#: protocols/oscar/oscaraccount.cpp:1053
 msgid ""
 "There was an error in the protocol handling; automatic reconnection "
 "occurring."
 msgstr "Gặp lỗi trong tiến trình quản lý giao thức; đang tự động tái kết nối."
 
-#: protocols/oscar/oscaraccount.cpp:1016
+#: protocols/oscar/oscaraccount.cpp:1055
 msgid "OSCAR Protocol error"
 msgstr "Lỗi giao thức OSCAR"
 
-#: protocols/oscar/oscaraccount.cpp:1157
+#: protocols/oscar/oscaraccount.cpp:1196
 msgctxt "ICQ user id"
 msgid "UIN"
 msgstr "UIN"
 
-#: protocols/oscar/oscaraccount.cpp:1157
+#: protocols/oscar/oscaraccount.cpp:1196
 msgctxt "AIM user id"
 msgid "screen name"
 msgstr "tên màn hình"
 
-#: protocols/oscar/oscaraccount.cpp:1167
+#: protocols/oscar/oscaraccount.cpp:1206
 #, kde-format
 msgid ""
 "You have logged in more than once with the same %1, account %2 is now "
@@ -20034,7 +20061,7 @@ msgid ""
 msgstr ""
 "Bạn đã đăng nhập nhiều lần với cùng một %1 nên tài khoản %2 bị ngắt kết nối."
 
-#: protocols/oscar/oscaraccount.cpp:1173
+#: protocols/oscar/oscaraccount.cpp:1212
 #, kde-format
 msgid ""
 "Sign on failed because either your %1 or password are invalid. Please check "
@@ -20043,33 +20070,33 @@ msgstr ""
 "Lỗi đăng nhập vì hoặc %1 hoặc mật khẩu của bạn không phải hợp lệ. Hãy kiểm "
 "tra lại thiết lập cho tài khoản %2."
 
-#: protocols/oscar/oscaraccount.cpp:1181
+#: protocols/oscar/oscaraccount.cpp:1220
 #, kde-format
 msgid "The %1 service is temporarily unavailable. Please try again later."
 msgstr "Dịch vụ %1 tạm thời không sẵn sàng. Hãy thử lại sau."
 
-#: protocols/oscar/oscaraccount.cpp:1186
+#: protocols/oscar/oscaraccount.cpp:1225
 #, kde-format
 msgid ""
 "Could not sign on to %1 with account %2 because the password was incorrect."
 msgstr "Không thể đăng nhập vào %1 với tài khoản %2 vì mật khẩu không đúng."
 
-#: protocols/oscar/oscaraccount.cpp:1191
+#: protocols/oscar/oscaraccount.cpp:1230
 #, kde-format
 msgid "Could not sign on to %1 with nonexistent account %2."
 msgstr "Không thể đăng nhập vào %1 với tài khoản không tồn tại %2."
 
-#: protocols/oscar/oscaraccount.cpp:1195
+#: protocols/oscar/oscaraccount.cpp:1234
 #, kde-format
 msgid "Sign on to %1 failed because your account %2 expired."
 msgstr "Lỗi đăng nhập vào %1 vì tài khoản %2 của bạn đã hết hạn dùng."
 
-#: protocols/oscar/oscaraccount.cpp:1199
+#: protocols/oscar/oscaraccount.cpp:1238
 #, kde-format
 msgid "Sign on to %1 failed because your account %2 is currently suspended."
 msgstr "Lỗi đăng nhập vào %1 vì tài khoản %2 của bạn hiện thời bị đình chỉ."
 
-#: protocols/oscar/oscaraccount.cpp:1205
+#: protocols/oscar/oscaraccount.cpp:1244
 #, kde-format
 msgid ""
 "Could not sign on to %1 as there are too many clients from the same computer."
@@ -20077,7 +20104,7 @@ msgstr ""
 "Không thể đăng nhập vào %1 vì có quá nhiều ứng dụng khách chạy từ cùng một "
 "máy tính."
 
-#: protocols/oscar/oscaraccount.cpp:1211
+#: protocols/oscar/oscaraccount.cpp:1250
 #, kde-format
 msgid ""
 "Account %1 was blocked on the %2 server for sending messages too quickly. "
@@ -20087,7 +20114,7 @@ msgstr ""
 "Tài khoản %1 bị chặn trên máy phục vụ %2 do gửi tin nhẳn quá nhanh. Hãy đợi "
 "10 phút rồi thử lại. Tiếp tục thử thì phải đợi ngay cả lâu hơn."
 
-#: protocols/oscar/oscaraccount.cpp:1220
+#: protocols/oscar/oscaraccount.cpp:1259
 #, kde-format
 msgid ""
 "Account %1 was blocked on the %2 server for reconnecting too quickly. Wait "
@@ -20097,12 +20124,12 @@ msgstr ""
 "Tài khoản %1 bị chặn trên máy phục vụ %2 do tái kết nối quá nhanh. Hãy đợi "
 "10 phút rồi thử lại. Tiếp tục thử thì phải đợi ngay cả lâu hơn."
 
-#: protocols/oscar/oscaraccount.cpp:1232 protocols/oscar/oscaraccount.cpp:1252
+#: protocols/oscar/oscaraccount.cpp:1271 protocols/oscar/oscaraccount.cpp:1291
 #, kde-format
 msgid "Sign on to %1 with your account %2 failed."
 msgstr "Lỗi đăng nhập vào %1 với tài khoản %2 của bạn."
 
-#: protocols/oscar/oscaraccount.cpp:1239
+#: protocols/oscar/oscaraccount.cpp:1278
 #, kde-format
 msgid ""
 "The %1 server thinks the client you are using is too old. Please report this "
@@ -20111,7 +20138,7 @@ msgstr ""
 "Máy phục vụ %1 thấy ứng dụng khách hiện thời của bạn vẫn còn quá cũ. Hãy "
 "thông báo như lỗi ở « http://bugs.kde.org/ »."
 
-#: protocols/oscar/oscaraccount.cpp:1245
+#: protocols/oscar/oscaraccount.cpp:1284
 #, fuzzy, kde-format
 #| msgid ""
 #| "Account %1 was disabled on the %2 server because of your age (less than "

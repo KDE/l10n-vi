@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-27 10:54+0100\n"
+"POT-Creation-Date: 2009-03-28 11:06+0100\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -111,7 +111,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Đang tháo gắn kết"
 
-#: kio/job.cpp:1992 kio/paste.cpp:64 kio/copyjob.cpp:1182 kio/copyjob.cpp:1727
+#: kio/job.cpp:1992 kio/paste.cpp:64 kio/copyjob.cpp:1198 kio/copyjob.cpp:1743
 #: kio/global.cpp:664
 msgid "File Already Exists"
 msgstr "Tập tin đã có"
@@ -164,7 +164,7 @@ msgid "The clipboard is empty"
 msgstr "Bảng tạm rỗng"
 
 #: kio/paste.cpp:228 kio/renamedialog.cpp:404 kio/kdirlister.cpp:313
-#: kio/krun.cpp:1071
+#: kio/krun.cpp:1075
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -532,11 +532,11 @@ msgstr "Bỏ qua"
 msgid "AutoSkip"
 msgstr "Tự động bỏ qua"
 
-#: kio/copyjob.cpp:897 kio/global.cpp:674
+#: kio/copyjob.cpp:913 kio/global.cpp:674
 msgid "Folder Already Exists"
 msgstr "Thư mục đã có"
 
-#: kio/copyjob.cpp:1182 kio/copyjob.cpp:1727
+#: kio/copyjob.cpp:1198 kio/copyjob.cpp:1743
 msgid "Already Exists as Folder"
 msgstr "Đã có, là thư mục."
 
@@ -2229,14 +2229,22 @@ msgid "Timeout Error"
 msgstr "Lỗi quá giờ"
 
 #: kio/global.cpp:1072
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Although contact was made with the server, a response was not received "
+#| "within the amount of time allocated for the request as follows:"
+#| "<ul><li>Timeout for establishing a connection: %1 seconds</li><li>Timeout "
+#| "for receiving a response: %2 seconds</li><li>Timeout for accessing proxy "
+#| "servers: %3 seconds</li></ul>Please note that you can alter these timeout "
+#| "settings in the KDE Control Center, by selecting Network -> Preferences."
 msgid ""
 "Although contact was made with the server, a response was not received "
 "within the amount of time allocated for the request as follows:"
 "<ul><li>Timeout for establishing a connection: %1 seconds</li><li>Timeout "
 "for receiving a response: %2 seconds</li><li>Timeout for accessing proxy "
 "servers: %3 seconds</li></ul>Please note that you can alter these timeout "
-"settings in the KDE Control Center, by selecting Network -> Preferences."
+"settings in the KDE System Settings, by selecting Network Settings -> "
+"Connection Preferences."
 msgstr ""
 "Dù đã liên lạc máy phục vụ, chưa nhận đáp ứng trong thời hạn được cấp phát "
 "cho yêu cầu, như theo :<ul><li>Thời hạn để thiết lập kết nối : %1 giây</"
@@ -2457,7 +2465,7 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: kio/krun.cpp:1104
+#: kio/krun.cpp:1108
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -2466,7 +2474,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: kio/krun.cpp:1724
+#: kio/krun.cpp:1728
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Không tìm thấy chương trình « %1 »"

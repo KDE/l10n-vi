@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klipper\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:50+0100\n"
+"POT-Creation-Date: 2009-03-31 10:41+0200\n"
 "PO-Revision-Date: 2008-01-16 06:29+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -18,68 +18,72 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KAider 0.1\n"
 
-#: configdialog.cpp:156
+#. i18n: file: editactiondialog.ui:138
+#. i18n: ectx: property (text), widget (QPushButton, pbAddCommand)
+#: configdialog.cpp:161 rc.cpp:46
 msgid "Add Command"
 msgstr "Thêm lệnh"
 
-#: configdialog.cpp:157
+#. i18n: file: editactiondialog.ui:145
+#. i18n: ectx: property (text), widget (QPushButton, pbRemoveCommand)
+#: configdialog.cpp:162 rc.cpp:49
 msgid "Remove Command"
 msgstr "Xóa lệnh"
 
-#: configdialog.cpp:166
+#: configdialog.cpp:171
 msgid "Double-click here to set the command to be executed"
 msgstr "Nhấn đúp vào đây để chọn lệnh sẽ được thực hiện"
 
-#: configdialog.cpp:167
+#: configdialog.cpp:172
 msgid "<new command>"
 msgstr "<lệnh mới>"
 
-#: configdialog.cpp:191
+#: configdialog.cpp:208
 #, fuzzy
 #| msgid "Double-click here to set the regexp"
 msgid "Double-click here to set the regular expression"
 msgstr "Nhấn đúp vào đây để đặt biểu thức chính quy"
 
-#: configdialog.cpp:192
+#: configdialog.cpp:209
 msgid "<new action>"
 msgstr "<hành động mới>"
 
-#: configdialog.cpp:209
+#: configdialog.cpp:248
 msgid "Advanced Settings"
 msgstr "Thiết lập nâng cao"
 
-#: configdialog.cpp:231
+#: configdialog.cpp:270
 msgctxt "General Config"
 msgid "General"
 msgstr "Chung"
 
-#: configdialog.cpp:231
+#: configdialog.cpp:270
 msgid "General Config"
 msgstr "Cấu hình Chung"
 
-#: configdialog.cpp:232
+#: configdialog.cpp:271
 msgctxt "Actions Config"
 msgid "Actions"
 msgstr "Hành động"
 
-#: configdialog.cpp:232
+#: configdialog.cpp:271
 msgid "Actions Config"
 msgstr "Cấu hình Hành động"
 
-#: configdialog.cpp:236
+#: configdialog.cpp:275
 msgctxt "Shortcuts Config"
 msgid "Shortcuts"
 msgstr "Phím tắt"
 
-#: configdialog.cpp:236
+#: configdialog.cpp:275
 msgid "Shortcuts Config"
 msgstr "Cấu hình Phím tắt"
 
-#: configdialog.cpp:319
+#: configdialog.cpp:358
 msgid "D&isable Actions for Windows of Type WM_CLASS"
 msgstr "&Vô hiệu hoá hành động cho cửa sổ loại WM_CLASS:"
 
-#: configdialog.cpp:324
+#: configdialog.cpp:363
 msgid ""
 "<qt>This lets you specify windows in which Klipper should not invoke "
 "\"actions\". Use<br /><br /><center><b>xprop | grep WM_CLASS</b></"
@@ -92,6 +96,10 @@ msgstr ""
 "center><br/> trong trình đầu cuối để tìm ra WM_CLASS của cửa sổ. Tiếp theo, "
 "nhấn vào cửa sổ mà bạn muốn thử nghiệm. Chuỗi đầu tiên được xuất sau dấu "
 "bằng là cái bạn cần nhập vào đây.</qt>"
+
+#: editactiondialog.cpp:32
+msgid "Action Properties"
+msgstr ""
 
 #: klipper.cpp:141
 #, fuzzy
@@ -223,7 +231,7 @@ msgstr "Klipper - công cụ bảng tạm"
 msgid "&More"
 msgstr "&Thêm"
 
-#. i18n: file: actionsconfig.ui:16
+#. i18n: file: actionsconfig.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:3
 #, fuzzy
@@ -231,19 +239,21 @@ msgstr "&Thêm"
 msgid "Action list (right click to add/remove commands):"
 msgstr "&Danh sách hành động (nhấn chuột phải để thêm/xoá):"
 
-#. i18n: file: actionsconfig.ui:27
+#. i18n: file: actionsconfig.ui:28
 #. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
 #: rc.cpp:6
 msgid "Regular Expression"
 msgstr "Biểu thức chính quy"
 
-#. i18n: file: actionsconfig.ui:32
+#. i18n: file: actionsconfig.ui:33
 #. i18n: ectx: property (text), widget (ActionsTreeWidget, kcfg_ActionList)
-#: rc.cpp:9
+#. i18n: file: editactiondialog.ui:80
+#. i18n: ectx: property (text), widget (QTreeWidget, twCommandList)
+#: rc.cpp:9 rc.cpp:43
 msgid "Description"
 msgstr "Mô tả"
 
-#. i18n: file: actionsconfig.ui:42
+#. i18n: file: actionsconfig.ui:43
 #. i18n: ectx: property (text), widget (QPushButton, pbAddAction)
 #: rc.cpp:12
 #, fuzzy
@@ -251,25 +261,33 @@ msgstr "Mô tả"
 msgid "Add Action"
 msgstr "&Thêm hành động"
 
-#. i18n: file: actionsconfig.ui:49
-#. i18n: ectx: property (text), widget (QPushButton, pbDelAction)
+#. i18n: file: actionsconfig.ui:50
+#. i18n: ectx: property (text), widget (QPushButton, pbEditAction)
 #: rc.cpp:15
+#, fuzzy
+#| msgid "&Add Action"
+msgid "Edit Action"
+msgstr "&Thêm hành động"
+
+#. i18n: file: actionsconfig.ui:57
+#. i18n: ectx: property (text), widget (QPushButton, pbDelAction)
+#: rc.cpp:18
 #, fuzzy
 #| msgid "&Delete Action"
 msgid "Delete Action"
 msgstr "&Xoá hành động"
 
-#. i18n: file: actionsconfig.ui:56
+#. i18n: file: actionsconfig.ui:64
 #. i18n: ectx: property (text), widget (QPushButton, pbAdvanced)
-#: rc.cpp:18
+#: rc.cpp:21
 #, fuzzy
 #| msgid "Advanced..."
 msgid "Advanced"
 msgstr "Nâng cao..."
 
-#. i18n: file: actionsconfig.ui:65
+#. i18n: file: actionsconfig.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:22
+#: rc.cpp:25
 #, fuzzy, no-c-format
 msgid ""
 "Click on a highlighted item's column to change it. \"%s\" in a command will "
@@ -280,9 +298,45 @@ msgstr ""
 "Để biết thêm về biểu thức chính quy, bạn có thể xem <a href=\"http://en."
 "wikipedia.org/wiki/Regular_expression\">mục này trên Wikipedia</a>."
 
+#. i18n: file: editactiondialog.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:28
+msgid "Action properties:"
+msgstr ""
+
+#. i18n: file: editactiondialog.ui:45
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:31
+#, fuzzy
+#| msgid "Regular Expression"
+msgid "Regular Expression:"
+msgstr "Biểu thức chính quy"
+
+#. i18n: file: editactiondialog.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:34
+#, fuzzy
+#| msgid "Description"
+msgid "Description:"
+msgstr "Mô tả"
+
+#. i18n: file: editactiondialog.ui:67
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:37
+msgid "List of commands for this action:"
+msgstr ""
+
+#. i18n: file: editactiondialog.ui:75
+#. i18n: ectx: property (text), widget (QTreeWidget, twCommandList)
+#: rc.cpp:40
+#, fuzzy
+#| msgid "Add Command"
+msgid "Command"
+msgstr "Thêm lệnh"
+
 #. i18n: file: generalconfig.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PopupAtMousePosition)
-#: rc.cpp:25
+#: rc.cpp:52
 #, fuzzy
 #| msgid "&Popup menu at mouse-cursor position"
 msgid "Popup menu at mouse-cursor position"
@@ -290,7 +344,7 @@ msgstr "Thực đơn &chuột phải ở vị trí con trỏ chuột"
 
 #. i18n: file: generalconfig.ui:23
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KeepClipboardContents)
-#: rc.cpp:28
+#: rc.cpp:55
 #, fuzzy
 #| msgid "Save clipboard contents on e&xit"
 msgid "Save clipboard contents on exit"
@@ -298,13 +352,13 @@ msgstr "&Lưu nội dung bảng tạm khi thoát"
 
 #. i18n: file: generalconfig.ui:30
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_StripWhiteSpace)
-#: rc.cpp:31
+#: rc.cpp:58
 msgid "Remove whitespace when executing actions"
 msgstr "Xóa bỏ khoảng trắng khi thực hiện hành động"
 
 #. i18n: file: generalconfig.ui:37
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ReplayActionInHistory)
-#: rc.cpp:34
+#: rc.cpp:61
 #, fuzzy
 #| msgid "&Replay actions on an item selected from history"
 msgid "Replay actions on an item selected from history"
@@ -314,7 +368,7 @@ msgstr "&Lặp lại hành động của mục đã chọn từ lịch sử"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PreventEmptyClipboard)
 #. i18n: file: klipper.kcfg:29
 #. i18n: ectx: label, entry (PreventEmptyClipboard), group (General)
-#: rc.cpp:37 rc.cpp:85
+#: rc.cpp:64 rc.cpp:112
 #, fuzzy
 #| msgid "Pre&vent empty clipboard"
 msgid "Prevent empty clipboard"
@@ -324,7 +378,7 @@ msgstr "Ngăn &chặn sự rỗng bảng tạm"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreSelection)
 #. i18n: file: klipper.kcfg:34
 #. i18n: ectx: label, entry (IgnoreSelection), group (General)
-#: rc.cpp:40 rc.cpp:91
+#: rc.cpp:67 rc.cpp:118
 #, fuzzy
 #| msgid "&Ignore selection"
 msgid "Ignore selection"
@@ -334,19 +388,19 @@ msgstr "&Lờ đi sự lựa chọn"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_IgnoreImages)
 #. i18n: file: klipper.kcfg:39
 #. i18n: ectx: label, entry (IgnoreImages), group (General)
-#: rc.cpp:43 rc.cpp:97
+#: rc.cpp:70 rc.cpp:124
 msgid "Ignore images"
 msgstr ""
 
 #. i18n: file: generalconfig.ui:65
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_Synchronize)
-#: rc.cpp:46
+#: rc.cpp:73
 msgid "Clipboard/Selection Behavior"
 msgstr "Thái độ bảng tạm/sự lựa chọn"
 
 #. i18n: file: generalconfig.ui:71
 #. i18n: ectx: property (text), widget (QRadioButton, rbSynchronize)
-#: rc.cpp:49
+#: rc.cpp:76
 #, fuzzy
 #| msgid "Sy&nchronize contents of the clipboard and the selection"
 msgid "Synchronize contents of the clipboard and the selection"
@@ -354,13 +408,13 @@ msgstr "Đồng &bộ hoá nội dung của bảng tạm và sự lựa chọn"
 
 #. i18n: file: generalconfig.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, rbSeparate)
-#: rc.cpp:52
+#: rc.cpp:79
 msgid "Separate clipboard and selection"
 msgstr "Phân biệt bảng tạm và sự lựa chọn"
 
 #. i18n: file: generalconfig.ui:88
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:55
+#: rc.cpp:82
 #, fuzzy
 #| msgid "Tim&eout for action popups:"
 msgid "Timeout for action popups:"
@@ -368,13 +422,13 @@ msgstr "Thời gian chờ hiện &ra hành động:"
 
 #. i18n: file: generalconfig.ui:98
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_TimeoutForActionPopups)
-#: rc.cpp:58
+#: rc.cpp:85
 msgid " sec"
 msgstr " giây"
 
 #. i18n: file: generalconfig.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:61
+#: rc.cpp:88
 #, fuzzy
 #| msgid "C&lipboard history size:"
 msgid "Clipboard history size:"
@@ -382,7 +436,7 @@ msgstr "Kích thước lịch sử &bảng tạm:"
 
 #. i18n: file: generalconfig.ui:115
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MaxClipItems)
-#: rc.cpp:64
+#: rc.cpp:91
 #, fuzzy
 #| msgid " entry"
 #| msgid_plural " entries"
@@ -391,7 +445,7 @@ msgstr " mục"
 
 #. i18n: file: klipper.kcfg:9
 #. i18n: ectx: label, entry (Version), group (General)
-#: rc.cpp:67
+#: rc.cpp:94
 #, fuzzy
 #| msgid "Klipper"
 msgid "Klipper version"
@@ -399,7 +453,7 @@ msgstr "Klipper"
 
 #. i18n: file: klipper.kcfg:12
 #. i18n: ectx: label, entry (PopupAtMousePosition), group (General)
-#: rc.cpp:70
+#: rc.cpp:97
 #, fuzzy
 #| msgid "&Popup menu at mouse-cursor position"
 msgid "Popup at mouse position"
@@ -407,7 +461,7 @@ msgstr "Thực đơn &chuột phải ở vị trí con trỏ chuột"
 
 #. i18n: file: klipper.kcfg:16
 #. i18n: ectx: label, entry (KeepClipboardContents), group (General)
-#: rc.cpp:73
+#: rc.cpp:100
 #, fuzzy
 #| msgid "Save clipboard contents on e&xit"
 msgid "Keep clipboard contents"
@@ -415,7 +469,7 @@ msgstr "&Lưu nội dung bảng tạm khi thoát"
 
 #. i18n: file: klipper.kcfg:20
 #. i18n: ectx: label, entry (StripWhiteSpace), group (General)
-#: rc.cpp:76
+#: rc.cpp:103
 #, fuzzy
 #| msgid "Remove whitespace when executing actions"
 msgid "Strip whitespace when executing an action"
@@ -423,7 +477,7 @@ msgstr "Xóa bỏ khoảng trắng khi thực hiện hành động"
 
 #. i18n: file: klipper.kcfg:22
 #. i18n: ectx: whatsthis, entry (StripWhiteSpace), group (General)
-#: rc.cpp:79
+#: rc.cpp:106
 msgid ""
 "Sometimes, the selected text has some whitespace at the end, which, if "
 "loaded as URL in a browser would cause an error. Enabling this option "
@@ -437,7 +491,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:25
 #. i18n: ectx: label, entry (ReplayActionInHistory), group (General)
-#: rc.cpp:82
+#: rc.cpp:109
 #, fuzzy
 #| msgid "&Replay actions on an item selected from history"
 msgid "Replay action in history"
@@ -445,7 +499,7 @@ msgstr "&Lặp lại hành động của mục đã chọn từ lịch sử"
 
 #. i18n: file: klipper.kcfg:31
 #. i18n: ectx: whatsthis, entry (PreventEmptyClipboard), group (General)
-#: rc.cpp:88
+#: rc.cpp:115
 msgid ""
 "Selecting this option has the effect, that the clipboard can never be "
 "emptied. E.g. when an application exits, the clipboard would usually be "
@@ -456,7 +510,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:36
 #. i18n: ectx: whatsthis, entry (IgnoreSelection), group (General)
-#: rc.cpp:94
+#: rc.cpp:121
 msgid ""
 "This option prevents the selection being recorded in the clipboard history. "
 "Only explicit clipboard changes are recorded."
@@ -466,7 +520,7 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:43
 #. i18n: ectx: label, entry (Synchronize), group (General)
-#: rc.cpp:100
+#: rc.cpp:127
 #, fuzzy
 #| msgid "Separate clipboard and selection"
 msgid "Synchronize clipboard and selection"
@@ -474,13 +528,13 @@ msgstr "Phân biệt bảng tạm và sự lựa chọn"
 
 #. i18n: file: klipper.kcfg:47
 #. i18n: ectx: label, entry (SelectionTextOnly), group (General)
-#: rc.cpp:103
+#: rc.cpp:130
 msgid "Selection text only"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:49
 #. i18n: ectx: whatsthis, entry (SelectionTextOnly), group (General)
-#: rc.cpp:106
+#: rc.cpp:133
 msgid ""
 "<qt>There are two different clipboard buffers available:<br /><br /"
 "><b>Clipboard</b> is filled by selecting something and pressing Ctrl+C, or "
@@ -498,25 +552,25 @@ msgstr ""
 
 #. i18n: file: klipper.kcfg:52
 #. i18n: ectx: label, entry (UseGUIRegExpEditor), group (General)
-#: rc.cpp:109
+#: rc.cpp:136
 msgid "Use graphical regexp editor"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:56
 #. i18n: ectx: label, entry (URLGrabberEnabled), group (General)
-#: rc.cpp:112
+#: rc.cpp:139
 msgid "URL grabber enabled"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:61
 #. i18n: ectx: label, entry (NoActionsForWM_CLASS), group (General)
-#: rc.cpp:115
+#: rc.cpp:142
 msgid "No actions for WM_CLASS"
 msgstr ""
 
 #. i18n: file: klipper.kcfg:64
 #. i18n: ectx: label, entry (TimeoutForActionPopups), group (General)
-#: rc.cpp:118
+#: rc.cpp:145
 #, fuzzy
 #| msgid "Tim&eout for action popups:"
 msgid "Timeout for action popups (seconds)"
@@ -524,13 +578,13 @@ msgstr "Thời gian chờ hiện &ra hành động:"
 
 #. i18n: file: klipper.kcfg:68
 #. i18n: ectx: tooltip, entry (TimeoutForActionPopups), group (General)
-#: rc.cpp:121
+#: rc.cpp:148
 msgid "A value of 0 disables the timeout"
 msgstr "Đặt giá trị 0 sẽ bỏ thời gian chờ đi"
 
 #. i18n: file: klipper.kcfg:71
 #. i18n: ectx: label, entry (MaxClipItems), group (General)
-#: rc.cpp:124
+#: rc.cpp:151
 #, fuzzy
 #| msgid "C&lipboard history size:"
 msgid "Clipboard history size"
@@ -538,16 +592,16 @@ msgstr "Kích thước lịch sử &bảng tạm:"
 
 #. i18n: file: klipper.kcfg:77
 #. i18n: ectx: label, entry (ActionList), group (General)
-#: rc.cpp:127
+#: rc.cpp:154
 msgid "Dummy entry for indicating changes in an action's tree widget"
 msgstr ""
 
-#: rc.cpp:128
+#: rc.cpp:155
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Phan Vĩnh Thịnh, nhóm Việt hóa KDE"
 
-#: rc.cpp:129
+#: rc.cpp:156
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "teppi82@gmail.comh, kde-l10n-vi@lists.kde.org"
@@ -556,25 +610,25 @@ msgstr "teppi82@gmail.comh, kde-l10n-vi@lists.kde.org"
 msgid "Klipper - clipboard tool"
 msgstr "Klipper - công cụ bảng tạm"
 
-#: urlgrabber.cpp:162
+#: urlgrabber.cpp:178
 #, fuzzy, kde-format
 #| msgid " - Actions For: "
 msgid "%1 - Actions For: %2"
 msgstr " - Hành động cho: "
 
-#: urlgrabber.cpp:187
+#: urlgrabber.cpp:206
 msgid "Disable This Popup"
 msgstr "Không dùng thực đơn này"
 
-#: urlgrabber.cpp:193
+#: urlgrabber.cpp:212
 msgid "&Edit Contents..."
 msgstr "&Sửa nội dung..."
 
-#: urlgrabber.cpp:197
+#: urlgrabber.cpp:216
 msgid "&Cancel"
 msgstr "&Thôi"
 
-#: urlgrabber.cpp:268
+#: urlgrabber.cpp:293
 msgid "Edit Contents"
 msgstr "Sửa nội dung"
 

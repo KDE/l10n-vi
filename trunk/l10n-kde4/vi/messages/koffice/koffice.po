@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-08 12:03+0200\n"
+"POT-Creation-Date: 2009-04-10 11:16+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -749,7 +749,7 @@ msgstr "Thư kiểu Mĩ"
 msgid "US Legal"
 msgstr ""
 
-#: main/KoPageFormat.cpp:64
+#: main/KoPageFormat.cpp:64 pigment/compositeops/KoCompositeOpScreen.h:35
 msgid "Screen"
 msgstr "Màn hình"
 
@@ -1561,7 +1561,7 @@ msgstr "Cài gói từ trên Mạng"
 #. i18n: file: guiutils/KoEditColorSet.ui:45
 #. i18n: ectx: property (toolTip), widget (QToolButton, add)
 #: kokross/KoScriptManagerAdd.cpp:304 kokross/KoScriptManagerAdd.cpp:307
-#: rc.cpp:433
+#: rc.cpp:433 pigment/compositeops/KoCompositeOpAdd.h:35
 msgid "Add"
 msgstr "Thêm"
 
@@ -3381,6 +3381,54 @@ msgstr "Xem trước Trang"
 msgid "SVG Gradient"
 msgstr ""
 
+#: pigment/compositeops/KoCompositeOpDodge.h:36
+#, fuzzy
+msgid "Dodge"
+msgstr "Không có"
+
+#: pigment/compositeops/KoCompositeOpMultiply.h:34
+msgid "Multiply"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpOverlay.h:35
+#, fuzzy
+msgid "Overlay"
+msgstr "Thêm mục lục dưới"
+
+#: pigment/compositeops/KoCompositeOpDivide.h:35
+msgid "Divide"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpErase.h:39
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
+msgid "Erase"
+msgstr "Xóa"
+
+#: pigment/compositeops/KoCompositeOpSubstract.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
+msgid "Subtract"
+msgstr "Trừ"
+
+#: pigment/compositeops/KoCompositeOpBurn.h:35
+msgid "Burn"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOpOver.h:35
+#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
+msgid "Normal"
+msgstr "Bình thường"
+
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:40
+#, fuzzy
+#| msgid "Alpha"
+msgid "Alphadarken"
+msgstr "Alpha"
+
+#: pigment/KoColorSpaceAbstract.h:45
+#, fuzzy
+msgid "Copy"
+msgstr "Công ti:"
+
 #: pigment/tests/CCSGraph.cpp:39
 #, fuzzy
 #| msgid "CSSGraph"
@@ -3427,21 +3475,16 @@ msgstr "chỉ định đầu ra (có thể là ps hoặc dot, mặc định là 
 msgid "name of the output file"
 msgstr "tên của tập tin đầu ra"
 
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:43
-msgid "Normal"
-msgstr "Bình thường"
+#: pigment/colorspaces/KoRgbU8ColorSpace.h:62
+#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
+#, fuzzy
+#| msgid "RGB 8-bit integer/channel)"
+msgid "RGB (8-bit integer/channel)"
+msgstr "RGB số nguyên 8-bit/channel)"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:142
 msgid "Clear"
 msgstr ""
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:217
-msgid "Erase"
-msgstr "Xóa"
-
-#: pigment/colorspaces/KoAlphaColorSpace.cpp:282
-msgid "Subtract"
-msgstr "Trừ"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:350
 msgid "Alpha mask"
@@ -3456,16 +3499,26 @@ msgid "Alpha"
 msgstr "Alpha"
 
 #: pigment/colorspaces/KoRgbU16ColorSpace.cpp:29
+#: pigment/colorspaces/KoRgbU16ColorSpace.h:53
 #, fuzzy
 #| msgid "RGB 16-bit integer/channel)"
 msgid "RGB (16-bit integer/channel)"
 msgstr "RGB số nguyên 16-bit/channel)"
 
-#: pigment/colorspaces/KoRgbU8ColorSpace.cc:71
-#, fuzzy
-#| msgid "RGB 8-bit integer/channel)"
-msgid "RGB (8-bit integer/channel)"
-msgstr "RGB số nguyên 8-bit/channel)"
+#: pigment/colorspaces/KoAlphaColorSpace.h:125
+#: pigment/colorspaces/KoAlphaColorSpace.h:130
+#: pigment/colorspaces/KoAlphaColorSpace.h:135
+#: pigment/colorspaces/KoAlphaColorSpace.h:140
+#: pigment/colorspaces/KoAlphaColorSpace.h:145
+#: pigment/colorspaces/KoAlphaColorSpace.h:149
+#: pigment/colorspaces/KoAlphaColorSpace.h:153
+msgid "Undefined operation in the alpha colorspace"
+msgstr ""
+
+#: pigment/colorspaces/KoLabColorSpace.h:65
+#: pigment/colorspaces/KoLabColorSpace.cpp:33
+msgid "L*a*b* (16-bit integer/channel)"
+msgstr "L*a*b* (số nguyên 16-bit/channel)"
 
 #: pigment/colorspaces/KoRgbU8ColorSpace.cc:81
 msgid "Darken"
@@ -3483,10 +3536,6 @@ msgstr "Giá trị"
 msgid "Color"
 msgstr "Màu"
 
-#: pigment/colorspaces/KoLabColorSpace.cpp:33
-msgid "L*a*b* (16-bit integer/channel)"
-msgstr "L*a*b* (số nguyên 16-bit/channel)"
-
 #: pigment/colorspaces/KoLabColorSpace.cpp:36
 #: pigment/KoBasicHistogramProducers.cpp:418
 msgid "a*"
@@ -3498,6 +3547,7 @@ msgid "b*"
 msgstr "b*"
 
 #: pigment/KoBasicHistogramProducers.cpp:348
+#: pigment/KoBasicHistogramProducers.h:162
 msgid "Generic RGB Histogram"
 msgstr ""
 
@@ -3514,7 +3564,7 @@ msgid "B"
 msgstr "B"
 
 #: pigment/KoBasicHistogramProducers.cpp:414
-#: pigment/KoColorSpaceRegistry.cpp:160
+#: pigment/KoColorSpaceRegistry.cpp:124
 msgid "L*a*b* Histogram"
 msgstr ""
 
@@ -3570,7 +3620,11 @@ msgstr "32 Bit dấu phẩy động (HDR)"
 msgid "ICC Engine"
 msgstr ""
 
-#: pigment/KoColorSpaceRegistry.cpp:168
+#: pigment/KoBasicHistogramProducers.h:191
+msgid "Generic L*a*b* Histogram"
+msgstr ""
+
+#: pigment/KoColorSpaceRegistry.cpp:132
 msgid "RGB8 Histogram"
 msgstr ""
 
@@ -4462,10 +4516,6 @@ msgstr ""
 #~ msgstr "Đơn vị:"
 
 #, fuzzy
-#~ msgid "Company"
-#~ msgstr "Công ti:"
-
-#, fuzzy
 #~ msgid "Telephone (private)"
 #~ msgstr "Điện thoại:"
 
@@ -5035,10 +5085,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Index"
 #~ msgstr "Thêm mục lục"
-
-#, fuzzy
-#~ msgid "Overline"
-#~ msgstr "Thêm mục lục dưới"
 
 #, fuzzy
 #~ msgid "Append Column"

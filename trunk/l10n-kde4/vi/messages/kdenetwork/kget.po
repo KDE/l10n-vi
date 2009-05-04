@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-03 11:07+0200\n"
+"POT-Creation-Date: 2009-05-04 12:03+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -21,91 +21,71 @@ msgstr ""
 msgid "Plugins"
 msgstr "Bổ sung"
 
-#: conf/transfersgroupwidget.cpp:75
-msgid "The group name is empty"
-msgstr ""
-
-#: conf/transfersgroupwidget.cpp:75
-#, fuzzy
-#| msgid ""
-#| "A group with that name already exists!\n"
-#| "Please change the group name."
-msgid ""
-"A group can not have an empty name.\n"
-"Please select a new one."
-msgstr ""
-"Một nhóm tên đó đã có.\n"
-"Hãy thay đổi tên nhóm."
-
-#: conf/transfersgroupwidget.cpp:86
+#: conf/transfersgroupwidget.cpp:81
 msgid "Group name already in use"
 msgstr ""
 
-#: conf/transfersgroupwidget.cpp:86
+#: conf/transfersgroupwidget.cpp:81
 #, fuzzy
 #| msgid ""
 #| "A group with that name already exists!\n"
 #| "Please change the group name."
 msgid ""
-"Another group with this name already exists.\n"
-"Please select a different name."
+"Another group with this name already exists. Please select a different name."
 msgstr ""
 "Một nhóm tên đó đã có.\n"
 "Hãy thay đổi tên nhóm."
 
-#: conf/transfersgroupwidget.cpp:104 conf/transfersgroupwidget.cpp:109
+#: conf/transfersgroupwidget.cpp:99 conf/transfersgroupwidget.cpp:104
 #, fuzzy
 #| msgctxt "%1 is the name of the group"
 #| msgid "%1 Group"
 msgid "New Group"
 msgstr "Nhóm %1"
 
-#: conf/transfersgroupwidget.cpp:130 core/kget.cpp:687 ui/contextmenu.cpp:133
-#, fuzzy
-#| msgid "Downloads"
-msgid "My Downloads"
-msgstr "Tải về"
-
-#: conf/transfersgroupwidget.cpp:132
-#, fuzzy
-#| msgid "You can not delete the default group!"
-msgid "You can not delete this group."
-msgstr "Bạn không thể xoá nhóm mặc định."
-
-#: conf/transfersgroupwidget.cpp:137
-#, kde-format
-msgid ""
-"Are you sure that you want to remove\n"
-"the group named %1?"
-msgstr ""
+#: conf/transfersgroupwidget.cpp:126
+#, fuzzy, kde-format
+#| msgid ""
+#| "Are you sure that you want to remove\n"
+#| "the group named %1?"
+msgid "Are you sure that you want to remove the group named %1?"
+msgid_plural "Are you sure that you want to remove all selected groups?"
+msgstr[0] ""
 "Bạn có chắc muốn gỡ bỏ\n"
 "nhóm tên %1 không?"
 
-#: conf/transfersgroupwidget.cpp:170
+#: conf/transfersgroupwidget.cpp:127
+#, fuzzy
+#| msgid "Delete Group"
+msgid "Remove group"
+msgid_plural "Remove groups"
+msgstr[0] "Xoá nhóm"
+
+#: conf/transfersgroupwidget.cpp:166
 msgid "Use default directories for groups as suggestion"
 msgstr ""
 
-#: conf/transfersgroupwidget.cpp:175
+#: conf/transfersgroupwidget.cpp:171
 msgid "Add"
 msgstr "Thêm"
 
-#: conf/transfersgroupwidget.cpp:177
+#: conf/transfersgroupwidget.cpp:173
 #, fuzzy
 #| msgid "Not Deleted"
 msgid "Delete"
 msgstr "Chưa xóa"
 
-#: conf/transfersgroupwidget.cpp:180
+#: conf/transfersgroupwidget.cpp:176
 #, fuzzy
 #| msgid "Delete Group"
 msgid "Rename"
 msgstr "Xoá nhóm"
 
-#: conf/transfersgroupwidget.cpp:186
+#: conf/transfersgroupwidget.cpp:182
 msgid "Select Icon"
 msgstr ""
 
-#: conf/transfersgroupwidget.cpp:188
+#: conf/transfersgroupwidget.cpp:184
 msgid "Configure..."
 msgstr ""
 
@@ -385,6 +365,12 @@ msgstr "Không thể lưu vào : %1"
 msgid "Error"
 msgstr "Lỗi"
 
+#: core/kget.cpp:687 ui/contextmenu.cpp:138
+#, fuzzy
+#| msgid "Downloads"
+msgid "My Downloads"
+msgstr "Tải về"
+
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
 #: core/kget.cpp:799 ui/newtransferdialog.cpp:238 rc.cpp:472
@@ -447,6 +433,12 @@ msgstr ""
 "%1\n"
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
+
+#: core/kget.cpp:898
+#, fuzzy
+#| msgid "Overwrite existing file?"
+msgid "Overwrite destination"
+msgstr "Ghi đè lên tập tin đã có?"
 
 #: core/kget.cpp:1027
 #, fuzzy, kde-format
@@ -1614,6 +1606,20 @@ msgstr "Thêm"
 msgid "Semantic desktop"
 msgstr ""
 
+#: ui/contextmenu.cpp:147 mainwindow.cpp:182
+#, fuzzy
+#| msgid "Delete Group"
+msgid "Delete Group"
+msgid_plural "Delete Groups"
+msgstr[0] "Xoá nhóm"
+
+#: ui/contextmenu.cpp:151 mainwindow.cpp:187
+#, fuzzy
+#| msgid "Delete Group"
+msgid "Rename Group"
+msgid_plural "Rename Groups"
+msgstr[0] "Xoá nhóm"
+
 #: ui/transfersviewdelegate.cpp:491
 #, fuzzy
 #| msgid "Transfer details:"
@@ -1909,6 +1915,7 @@ msgstr "Ngừng mục đã chọn"
 #: ui/linkview/kget_linkview.cpp:82
 #, fuzzy
 #| msgid "Default Download Folders"
+msgctxt "Download the items which have been selected"
 msgid "&Download checked"
 msgstr "Thư mục tải về mặc định"
 
@@ -2303,16 +2310,6 @@ msgstr "&Xuất danh sách truyền..."
 msgid "&Export Transfers as Plain Text..."
 msgstr "&Xuất danh sách truyền..."
 
-#: mainwindow.cpp:182
-msgid "Delete Group"
-msgstr "Xoá nhóm"
-
-#: mainwindow.cpp:187
-#, fuzzy
-#| msgid "Delete Group"
-msgid "Rename Group"
-msgstr "Xoá nhóm"
-
 #: mainwindow.cpp:192
 msgid "Set Icon"
 msgstr ""
@@ -2489,12 +2486,6 @@ msgstr[0] ""
 #| msgid "KGet Transfer List"
 msgid "Confirm transfer delete"
 msgstr "Danh sách truyền KGet"
-
-#: mainwindow.cpp:573
-#, fuzzy
-#| msgid "Not Deleted"
-msgid "&Delete"
-msgstr "Chưa xóa"
 
 #: mainwindow.cpp:759
 msgid ""
@@ -3796,6 +3787,27 @@ msgstr ""
 #: rc.cpp:689
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "A group with that name already exists!\n"
+#~| "Please change the group name."
+#~ msgid ""
+#~ "A group can not have an empty name.\n"
+#~ "Please select a new one."
+#~ msgstr ""
+#~ "Một nhóm tên đó đã có.\n"
+#~ "Hãy thay đổi tên nhóm."
+
+#, fuzzy
+#~| msgid "You can not delete the default group!"
+#~ msgid "You can not delete this group."
+#~ msgstr "Bạn không thể xoá nhóm mặc định."
+
+#, fuzzy
+#~| msgid "Not Deleted"
+#~ msgid "&Delete"
+#~ msgstr "Chưa xóa"
 
 #, fuzzy
 #~| msgid "Change"

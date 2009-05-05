@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_kdebase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-03 09:17+0000\n"
+"POT-Creation-Date: 2009-05-05 09:34+0000\n"
 "PO-Revision-Date: 2007-06-23 16:57+0930\n"
 "Last-Translator: Trần Thế Trung <tttrung@hotmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -2716,21 +2716,6 @@ msgctxt "Name"
 msgid "UADescription (Lynx 2.8.3)"
 msgstr "Mô tả UA (Lynx 2.8.3)"
 
-#: apps/konqueror/settings/kio/uasproviders/mozoncurrent.desktop:2
-msgctxt "Name"
-msgid "UADescription (Mozilla 1.7 on current)"
-msgstr "Mô tả UA (Mozilla 1.7 trên hệ thống hiện thời)"
-
-#: apps/konqueror/settings/kio/uasproviders/mozoncurrent12.desktop:2
-msgctxt "Name"
-msgid "UADescription (Mozilla 1.2.1 on current)"
-msgstr "Mô tả UA (Mozilla 1.2.1 trên hệ thống hiện thời)"
-
-#: apps/konqueror/settings/kio/uasproviders/mozonwinxp.desktop:2
-msgctxt "Name"
-msgid "UADescription (Mozilla 1.7 on Windows XP)"
-msgstr "Mô tả UA (Mozilla 1.7 trên Win XP)"
-
 #: apps/konqueror/settings/kio/uasproviders/nn301oncurrent.desktop:2
 msgctxt "Name"
 msgid "UADescription (NN 3.01 on current)"
@@ -3023,6 +3008,8 @@ msgstr "Thư mục này chứa các tập tin cá nhân của bạn"
 
 #: apps/konqueror/sidebar/trees/init/remote.desktop:2
 #: apps/konqueror/sidebar/trees/init/remote/.directory:2
+#: runtime/kioslave/network/ioslave/network.desktop:7
+#: runtime/kioslave/network/ioslave/virtualfolder_network.desktop:7
 msgctxt "Name"
 msgid "Network"
 msgstr "Mạng"
@@ -3901,6 +3888,29 @@ msgstr "Bộ xem Troff nhúng được"
 msgctxt "Name"
 msgid "KManPart"
 msgstr "KManPart"
+
+#: runtime/kioslave/network/ioslave/network.protocol:8
+#, fuzzy
+#| msgctxt "Description"
+#| msgid "A kioslave for the FISH protocol"
+msgctxt "Description"
+msgid "A kioslave to browse the network"
+msgstr "A kioslave (đày tớ vào ra KDE) cho giao thức FISH"
+
+#: runtime/kioslave/network/kded/networkwatcher.desktop:8
+#, fuzzy
+#| msgctxt "GenericName"
+#| msgid "Network Analyzer"
+msgctxt "Name"
+msgid "Network Watcher"
+msgstr "Bộ phân tích mạng"
+
+#: runtime/kioslave/network/kded/networkwatcher.desktop:17
+msgctxt "Comment"
+msgid ""
+"Keeps track of the network and updates directory listings of the network:/ "
+"protocol"
+msgstr ""
 
 #: runtime/kioslave/remote/kdedmodule/remotedirnotify.desktop:3
 msgctxt "Name"
@@ -10894,7 +10904,7 @@ msgstr ""
 #| msgctxt "Description"
 #| msgid "Open with &Netscape"
 msgctxt "Name"
-msgid "Open with the file manager"
+msgid "Open with File Manager"
 msgstr "Mở bằng &Netscape"
 
 #: workspace/plasma/applets/digital-clock/plasma-applet-digitalclock.desktop:2
@@ -10986,7 +10996,7 @@ msgstr ""
 #| msgctxt "Name"
 #| msgid "Panels"
 msgctxt "Name"
-msgid "Panel spacer"
+msgid "Panel Spacer"
 msgstr "Bảng điều khiển"
 
 #: workspace/plasma/applets/panelspacer/plasma-applet-panelspacer-internal.desktop:15
@@ -11187,6 +11197,19 @@ msgctxt "Name"
 msgid "SaverDesktop"
 msgstr "Màn hình nền"
 
+#: workspace/plasma/dataengines/akonadi/plasma-engine-akonadi.desktop:2
+msgctxt "Name"
+msgid "Akonadi"
+msgstr ""
+
+#: workspace/plasma/dataengines/akonadi/plasma-engine-akonadi.desktop:4
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Time Data Engine"
+msgctxt "Comment"
+msgid "Akonadi PIM data engine"
+msgstr "Cơ chế dữ liệu thời gian"
+
 #: workspace/plasma/dataengines/applicationjobs/plasma-dataengine-applicationjobs.desktop:2
 #, fuzzy
 #| msgctxt "Name"
@@ -11266,6 +11289,55 @@ msgctxt "Comment"
 msgid "Information about files and directories."
 msgstr "Thư mục mở"
 
+#: workspace/plasma/dataengines/geolocation/plasma-dataengine-geolocation.desktop:3
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Actions"
+msgctxt "Name"
+msgid "Geolocation"
+msgstr "Hành động"
+
+#: workspace/plasma/dataengines/geolocation/plasma-dataengine-geolocation.desktop:13
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Time Data Engine"
+msgctxt "Comment"
+msgid "Geolocation Data Engine"
+msgstr "Cơ chế dữ liệu thời gian"
+
+#: workspace/plasma/dataengines/geolocation/plasma-geolocation-gps.desktop:2
+msgctxt "Name"
+msgid "Geolocation GPS"
+msgstr ""
+
+#: workspace/plasma/dataengines/geolocation/plasma-geolocation-gps.desktop:11
+msgctxt "Comment"
+msgid "Geolocation from GPS address."
+msgstr ""
+
+#: workspace/plasma/dataengines/geolocation/plasma-geolocation-ip.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Actions"
+msgctxt "Name"
+msgid "Geolocation IP"
+msgstr "Hành động"
+
+#: workspace/plasma/dataengines/geolocation/plasma-geolocation-ip.desktop:11
+msgctxt "Comment"
+msgid "Geolocation from IP address."
+msgstr ""
+
+# msgid "Plasma Data Engine"
+# | msgctxt "Comment"
+#: workspace/plasma/dataengines/geolocation/plasma-geolocationprovider.desktop:4
+#, fuzzy
+#| msgctxt "Comment"
+#| msgid "Plasma Animation Engine"
+msgctxt "Comment"
+msgid "Plasma Geolation Provider"
+msgstr "Cơ chế hoạt ảnh Plasma"
+
 #: workspace/plasma/dataengines/hotplug/plasma-dataengine-hotplug.desktop:2
 #, fuzzy
 #| msgctxt "Name"
@@ -11277,6 +11349,19 @@ msgstr "Cơ chế dữ liệu thời gian"
 #: workspace/plasma/dataengines/hotplug/plasma-dataengine-hotplug.desktop:57
 msgctxt "Comment"
 msgid "Tracks hot-pluggable devices as they appear and disappear."
+msgstr ""
+
+#: workspace/plasma/dataengines/keystate/plasma-dataengine-keystate.desktop:2
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Keyboard Layout"
+msgctxt "Name"
+msgid "Keyboard and Mouse State"
+msgstr "Bố trí bàn phím"
+
+#: workspace/plasma/dataengines/keystate/plasma-dataengine-keystate.desktop:11
+msgctxt "Comment"
+msgid "Keyboard modifier and mouse buttons states"
 msgstr ""
 
 #: workspace/plasma/dataengines/metadata/plasma-engine-metadata.desktop:2
@@ -12817,7 +12902,7 @@ msgctxt "Name"
 msgid "Classic Tree View"
 msgstr "Xem cây"
 
-#: workspace/systemsettings/classic/settings-classic-view.desktop:15
+#: workspace/systemsettings/classic/settings-classic-view.desktop:16
 msgctxt "Comment"
 msgid "A Classic KDE 3 KControl style system settings view."
 msgstr ""
@@ -12835,7 +12920,7 @@ msgctxt "Name"
 msgid "Icon View"
 msgstr "Xem kiểu Biểu tượng"
 
-#: workspace/systemsettings/icons/settings-icon-view.desktop:25
+#: workspace/systemsettings/icons/settings-icon-view.desktop:26
 msgctxt "Comment"
 msgid "The KDE 4 icon view style"
 msgstr ""
@@ -12929,6 +13014,18 @@ msgstr ""
 msgctxt "Name"
 msgid "Vector Sunset"
 msgstr ""
+
+#~ msgctxt "Name"
+#~ msgid "UADescription (Mozilla 1.7 on current)"
+#~ msgstr "Mô tả UA (Mozilla 1.7 trên hệ thống hiện thời)"
+
+#~ msgctxt "Name"
+#~ msgid "UADescription (Mozilla 1.2.1 on current)"
+#~ msgstr "Mô tả UA (Mozilla 1.2.1 trên hệ thống hiện thời)"
+
+#~ msgctxt "Name"
+#~ msgid "UADescription (Mozilla 1.7 on Windows XP)"
+#~ msgstr "Mô tả UA (Mozilla 1.7 trên Win XP)"
 
 #, fuzzy
 #~| msgctxt "Name"
@@ -13215,12 +13312,6 @@ msgstr ""
 #~ msgid "You can configure how the desktop behaves here"
 #~ msgstr "Bạn có khả năng cấu hình cách hoạt động của màn hình nền ở đây"
 
-# msgid "Plasma Data Engine"
-# | msgctxt "Comment"
-#~ msgctxt "Comment"
-#~ msgid "Plasma Animation Engine"
-#~ msgstr "Cơ chế hoạt ảnh Plasma"
-
 #~ msgctxt "Comment"
 #~ msgid "Plasma applet"
 #~ msgstr "Tiểu dụng Plasma"
@@ -13239,13 +13330,6 @@ msgstr ""
 #~ msgctxt "Comment"
 #~ msgid "Plasma wallpaper"
 #~ msgstr "Tiểu dụng Plasma"
-
-#, fuzzy
-#~| msgctxt "Name"
-#~| msgid "Time Data Engine"
-#~ msgctxt "Name"
-#~ msgid "Test Data Engine"
-#~ msgstr "Cơ chế dữ liệu thời gian"
 
 #, fuzzy
 #~| msgctxt "Comment"

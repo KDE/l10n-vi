@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdat\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-25 09:08+0200\n"
+"POT-Creation-Date: 2009-05-11 07:07+0200\n"
 "PO-Revision-Date: 2006-11-01 22:02+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -784,6 +784,28 @@ msgstr "KDat: Lưu bản ghi"
 msgid "&Overwrite"
 msgstr "G&hi đè"
 
+#: main.cpp:40
+msgid "tar-based DAT archiver for KDE"
+msgstr "Bộ tạo kho lưu DAT dựa vào Tar cho KDE"
+
+#: main.cpp:47
+msgid "KDat"
+msgstr "KDat"
+
+#: main.cpp:49
+msgid "(c) 1999-2000, Sean Vyain; 2001-2002 Lawrence Widman"
+msgstr ""
+
+#: main.cpp:58
+#, fuzzy
+#| msgid "Can't allocate memory in kdat"
+msgid "Cannot allocate memory in kdat"
+msgstr "Không thể cấp phát bộ nhớ trong kdat."
+
+#: main.cpp:75
+msgid "Lawrence Widman"
+msgstr ""
+
 #: Node.cpp:1194 Node.cpp:1264
 msgid "<no tape>"
 msgstr "<không có băng>"
@@ -800,6 +822,246 @@ msgstr "Hồ sơ sao lưu"
 #, fuzzy
 msgid "Options"
 msgstr "Tùy chọn Tar"
+
+#. i18n: file: OptionsDlgWidget.ui:17
+#. i18n: ectx: property (windowTitle), widget (QWidget)
+#: rc.cpp:3
+msgid "Options Widget"
+msgstr "Ô điều khiển tùy chọn"
+
+#. i18n: file: OptionsDlgWidget.ui:53
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
+#: rc.cpp:6
+msgid ""
+"This setting determines the capacity that KDat assumes your backup tapes to "
+"be.  This is used when formatting the tapes."
+msgstr ""
+"Thiết lập này xác định kích cỡ băng KDat giả sử. Dùng khi định dạng băng."
+
+#. i18n: file: OptionsDlgWidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
+#: rc.cpp:9
+msgid ""
+"Tape drives read and write data in individual blocks.  This setting controls "
+"the size of each block, and should be set to your tape drive's block size.  "
+"For floppy tape drives this should be set to <b>10240</b> bytes."
+msgstr ""
+"Ổ băng đọc và ghi dữ liệu theo khối riêng. Thiết lập này điều khiển kích cỡ "
+"của mỗi khối, và nên được đặt thành kích cỡ khối của ổ băng. Đối với ổ băng "
+"mềm, nó nên là <b>10240</b> byte."
+
+#. i18n: file: OptionsDlgWidget.ui:73
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: rc.cpp:12
+msgid "MB"
+msgstr "MB"
+
+#. i18n: file: OptionsDlgWidget.ui:78
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: rc.cpp:15
+msgid "GB"
+msgstr "GB"
+
+#. i18n: file: OptionsDlgWidget.ui:88
+#. i18n: ectx: property (whatsThis), item, widget (KComboBox)
+#: rc.cpp:19
+msgid ""
+"This option chooses whether the default tape size to the left is in "
+"megabytes (MB) or gigabytes (GB)."
+msgstr ""
+"Tùy chọn này đặt đơn vị kích cỡ băng: mega-byte (MB) hay giga-byte (GB)."
+
+#. i18n: file: OptionsDlgWidget.ui:96
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:22
+msgid "bytes"
+msgstr "byte"
+
+#. i18n: file: OptionsDlgWidget.ui:104
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:25
+msgid "Tape block size:"
+msgstr "Cỡ khối băng:"
+
+#. i18n: file: OptionsDlgWidget.ui:115
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:28
+msgid "Default tape size:"
+msgstr "Cỡ băng mặc định:"
+
+#. i18n: file: OptionsDlgWidget.ui:136
+#. i18n: ectx: property (text), widget (KPushButton)
+#. i18n: file: OptionsDlgWidget.ui:166
+#. i18n: ectx: property (text), widget (KPushButton)
+#: rc.cpp:31 rc.cpp:43 VerifyOptDlg.cpp:62
+msgid "..."
+msgstr "..."
+
+#. i18n: file: OptionsDlgWidget.ui:139
+#. i18n: ectx: property (toolTip), widget (KPushButton)
+#: rc.cpp:34
+msgid "Browse for the tar command."
+msgstr "Duyệt tìm lệnh tar."
+
+#. i18n: file: OptionsDlgWidget.ui:147
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: rc.cpp:37
+msgid ""
+"The location in the filesystem of the <em>non-rewinding</em> tape device.  "
+"The default is <b>/dev/tape</b>."
+msgstr ""
+"Vị trí của thiết bị băng <em>không tua lại</em> trên hệ thống tập tin. Vị "
+"trí mặc định là <b>/dev/tape</b>."
+
+#. i18n: file: OptionsDlgWidget.ui:155
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:40
+msgid "Tar command:"
+msgstr "Lệnh tar:"
+
+#. i18n: file: OptionsDlgWidget.ui:169
+#. i18n: ectx: property (toolTip), widget (KPushButton)
+#: rc.cpp:46
+msgid "Browse for the tape device."
+msgstr "Duyệt tìm thiết bị thiết bị."
+
+#. i18n: file: OptionsDlgWidget.ui:177
+#. i18n: ectx: property (whatsThis), widget (KLineEdit)
+#: rc.cpp:49
+msgid ""
+"This setting controls the command that KDat uses to perform the tape "
+"backup.  The full path should be given.  The default is <b>tar</b>."
+msgstr ""
+"Thiết lập này điều khiển lệnh mà KDat sử dụng để thực hiện việc sao lưu "
+"băng. Bạn nên nhập đường dẫn đầy đủ. Giá trị mặc định là <b>tar</b>."
+
+#. i18n: file: OptionsDlgWidget.ui:185
+#. i18n: ectx: property (text), widget (QLabel)
+#: rc.cpp:52
+msgid "Tape device:"
+msgstr "Thiết bị băng:"
+
+#. i18n: file: OptionsDlgWidget.ui:198
+#. i18n: ectx: property (title), widget (QButtonGroup)
+#: rc.cpp:55
+msgid "Tape Drive Options"
+msgstr "Tùy chọn ổ băng"
+
+#. i18n: file: OptionsDlgWidget.ui:209
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:58
+msgid "Load tape on mount"
+msgstr "Tải băng vào lúc lắp"
+
+#. i18n: file: OptionsDlgWidget.ui:212
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:61
+msgid "<qt>Issue an <tt>mtload</tt> command prior to mounting the tape.</qt>"
+msgstr "<qt>Gửi lệnh <tt>mtload</tt> trước khi lắp băng.</qt>"
+
+#. i18n: file: OptionsDlgWidget.ui:217
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:64
+msgid ""
+"This command issues an <tt>mtload</tt> command to the tape device before "
+"trying to mount it.\n"
+"\n"
+"This is required by some tape drives."
+msgstr ""
+"Lệnh này gửi lần lượt lệnh <tt>mtload</tt> cho thiết bị băng trước khi thử "
+"lắp nó.\n"
+"\n"
+"Nó cần thiết cho một số thiết bị thiết bị riêng."
+
+#. i18n: file: OptionsDlgWidget.ui:225
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:69
+msgid "Lock tape drive on mount"
+msgstr "Khoá thiết bị thiết bị vào lúc lắp"
+
+#. i18n: file: OptionsDlgWidget.ui:228
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:72
+msgid "Disable the eject button after mounting the tape."
+msgstr "Tắt cái nút đẩy ra sau khi lắp băng."
+
+#. i18n: file: OptionsDlgWidget.ui:233
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:75
+msgid ""
+"This option makes KDat try to disable the eject button on the tape drive "
+"after the tape has been mounted.\n"
+"\n"
+"This doesn't work for all tape drives."
+msgstr ""
+"Tùy chọn này làm cho KDat thử tắt cái nút đẩy ra trên thiết bị băng, sau khi "
+"lắp băng.\n"
+"\n"
+"Nó không hoạt động được cho mọi ổ băng."
+
+#. i18n: file: OptionsDlgWidget.ui:241
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:80
+msgid "Eject tape on unmount"
+msgstr "Đẩy ra băng một khi hủy lắp"
+
+#. i18n: file: OptionsDlgWidget.ui:244
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:83
+#, fuzzy
+#| msgid ""
+#| "Try to eject the tape after it is unmounted.  Don't use this for ftape."
+msgid ""
+"Try to eject the tape after it is unmounted.  Do not use this for ftape."
+msgstr "Thử đẩy ra băng sau khi hủy lắp nó. Đừng dùng cho « ftape »."
+
+#. i18n: file: OptionsDlgWidget.ui:249
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:86
+msgid ""
+"Try to eject the tape after it has been unmounted.\n"
+"\n"
+"This option should not be used for floppy-tape drives."
+msgstr ""
+"Thử đẩy ra băng sau khi hủy lắp nó.\n"
+"\n"
+"Đừng dùng tùy chọn này cho ổ băng mềm."
+
+#. i18n: file: OptionsDlgWidget.ui:257
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: rc.cpp:91
+msgid "Variable block size"
+msgstr "Cỡ khối thay đổi"
+
+#. i18n: file: OptionsDlgWidget.ui:260
+#. i18n: ectx: property (toolTip), widget (QCheckBox)
+#: rc.cpp:94
+msgid "Enable variable-block size support in the tape drive."
+msgstr "Bật khả năng hỗ trợ kích cỡ khối thay đổi trong ổ băng."
+
+#. i18n: file: OptionsDlgWidget.ui:265
+#. i18n: ectx: property (whatsThis), widget (QCheckBox)
+#: rc.cpp:97
+msgid ""
+"Some tape drives support different sizes of the data block.  With this "
+"option, KDat will attempt to enable that support.\n"
+"\n"
+"You must still specify the block size."
+msgstr ""
+"Một số ổ băng riêng hỗ trợ kích cỡ khác nhau cho khối dữ liệu. Khi tùy chọn "
+"này được bật, KDat sẽ thử bật khả năng hỗ trợ đó.\n"
+"\n"
+"Bạn vẫn còn cần phải xác định kích cỡ khối."
+
+#: rc.cpp:100
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nhóm Việt hoá KDE"
+
+#: rc.cpp:101
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-l10n-vi@kde.org"
 
 #: Tape.cpp:44
 msgid "New Tape"
@@ -1081,14 +1343,6 @@ msgstr "Phục hồi vào thư mục:"
 msgid "Verify in folder:"
 msgstr "Kiểm tra trong thư mục:"
 
-#. i18n: file: OptionsDlgWidget.ui:136
-#. i18n: ectx: property (text), widget (KPushButton)
-#. i18n: file: OptionsDlgWidget.ui:166
-#. i18n: ectx: property (text), widget (KPushButton)
-#: VerifyOptDlg.cpp:62 rc.cpp:31 rc.cpp:43
-msgid "..."
-msgstr "..."
-
 #: VerifyOptDlg.cpp:67
 msgid "Restore files:"
 msgstr "Phục hồi tập tin:"
@@ -1096,260 +1350,6 @@ msgstr "Phục hồi tập tin:"
 #: VerifyOptDlg.cpp:69
 msgid "Verify files:"
 msgstr "Kiểm tra tập tin:"
-
-#: main.cpp:40
-msgid "tar-based DAT archiver for KDE"
-msgstr "Bộ tạo kho lưu DAT dựa vào Tar cho KDE"
-
-#: main.cpp:47
-msgid "KDat"
-msgstr "KDat"
-
-#: main.cpp:49
-msgid "(c) 1999-2000, Sean Vyain; 2001-2002 Lawrence Widman"
-msgstr ""
-
-#: main.cpp:58
-#, fuzzy
-#| msgid "Can't allocate memory in kdat"
-msgid "Cannot allocate memory in kdat"
-msgstr "Không thể cấp phát bộ nhớ trong kdat."
-
-#: main.cpp:75
-msgid "Lawrence Widman"
-msgstr ""
-
-#. i18n: file: OptionsDlgWidget.ui:17
-#. i18n: ectx: property (windowTitle), widget (QWidget)
-#: rc.cpp:3
-msgid "Options Widget"
-msgstr "Ô điều khiển tùy chọn"
-
-#. i18n: file: OptionsDlgWidget.ui:53
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
-#: rc.cpp:6
-msgid ""
-"This setting determines the capacity that KDat assumes your backup tapes to "
-"be.  This is used when formatting the tapes."
-msgstr ""
-"Thiết lập này xác định kích cỡ băng KDat giả sử. Dùng khi định dạng băng."
-
-#. i18n: file: OptionsDlgWidget.ui:67
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox)
-#: rc.cpp:9
-msgid ""
-"Tape drives read and write data in individual blocks.  This setting controls "
-"the size of each block, and should be set to your tape drive's block size.  "
-"For floppy tape drives this should be set to <b>10240</b> bytes."
-msgstr ""
-"Ổ băng đọc và ghi dữ liệu theo khối riêng. Thiết lập này điều khiển kích cỡ "
-"của mỗi khối, và nên được đặt thành kích cỡ khối của ổ băng. Đối với ổ băng "
-"mềm, nó nên là <b>10240</b> byte."
-
-#. i18n: file: OptionsDlgWidget.ui:73
-#. i18n: ectx: property (text), item, widget (KComboBox)
-#: rc.cpp:12
-msgid "MB"
-msgstr "MB"
-
-#. i18n: file: OptionsDlgWidget.ui:78
-#. i18n: ectx: property (text), item, widget (KComboBox)
-#: rc.cpp:15
-msgid "GB"
-msgstr "GB"
-
-#. i18n: file: OptionsDlgWidget.ui:88
-#. i18n: ectx: property (whatsThis), item, widget (KComboBox)
-#: rc.cpp:19
-msgid ""
-"This option chooses whether the default tape size to the left is in "
-"megabytes (MB) or gigabytes (GB)."
-msgstr ""
-"Tùy chọn này đặt đơn vị kích cỡ băng: mega-byte (MB) hay giga-byte (GB)."
-
-#. i18n: file: OptionsDlgWidget.ui:96
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:22
-msgid "bytes"
-msgstr "byte"
-
-#. i18n: file: OptionsDlgWidget.ui:104
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:25
-msgid "Tape block size:"
-msgstr "Cỡ khối băng:"
-
-#. i18n: file: OptionsDlgWidget.ui:115
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:28
-msgid "Default tape size:"
-msgstr "Cỡ băng mặc định:"
-
-#. i18n: file: OptionsDlgWidget.ui:139
-#. i18n: ectx: property (toolTip), widget (KPushButton)
-#: rc.cpp:34
-msgid "Browse for the tar command."
-msgstr "Duyệt tìm lệnh tar."
-
-#. i18n: file: OptionsDlgWidget.ui:147
-#. i18n: ectx: property (whatsThis), widget (KLineEdit)
-#: rc.cpp:37
-msgid ""
-"The location in the filesystem of the <em>non-rewinding</em> tape device.  "
-"The default is <b>/dev/tape</b>."
-msgstr ""
-"Vị trí của thiết bị băng <em>không tua lại</em> trên hệ thống tập tin. Vị "
-"trí mặc định là <b>/dev/tape</b>."
-
-#. i18n: file: OptionsDlgWidget.ui:155
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:40
-msgid "Tar command:"
-msgstr "Lệnh tar:"
-
-#. i18n: file: OptionsDlgWidget.ui:169
-#. i18n: ectx: property (toolTip), widget (KPushButton)
-#: rc.cpp:46
-msgid "Browse for the tape device."
-msgstr "Duyệt tìm thiết bị thiết bị."
-
-#. i18n: file: OptionsDlgWidget.ui:177
-#. i18n: ectx: property (whatsThis), widget (KLineEdit)
-#: rc.cpp:49
-msgid ""
-"This setting controls the command that KDat uses to perform the tape "
-"backup.  The full path should be given.  The default is <b>tar</b>."
-msgstr ""
-"Thiết lập này điều khiển lệnh mà KDat sử dụng để thực hiện việc sao lưu "
-"băng. Bạn nên nhập đường dẫn đầy đủ. Giá trị mặc định là <b>tar</b>."
-
-#. i18n: file: OptionsDlgWidget.ui:185
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:52
-msgid "Tape device:"
-msgstr "Thiết bị băng:"
-
-#. i18n: file: OptionsDlgWidget.ui:198
-#. i18n: ectx: property (title), widget (QButtonGroup)
-#: rc.cpp:55
-msgid "Tape Drive Options"
-msgstr "Tùy chọn ổ băng"
-
-#. i18n: file: OptionsDlgWidget.ui:209
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:58
-msgid "Load tape on mount"
-msgstr "Tải băng vào lúc lắp"
-
-#. i18n: file: OptionsDlgWidget.ui:212
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:61
-msgid "<qt>Issue an <tt>mtload</tt> command prior to mounting the tape.</qt>"
-msgstr "<qt>Gửi lệnh <tt>mtload</tt> trước khi lắp băng.</qt>"
-
-#. i18n: file: OptionsDlgWidget.ui:217
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:64
-msgid ""
-"This command issues an <tt>mtload</tt> command to the tape device before "
-"trying to mount it.\n"
-"\n"
-"This is required by some tape drives."
-msgstr ""
-"Lệnh này gửi lần lượt lệnh <tt>mtload</tt> cho thiết bị băng trước khi thử "
-"lắp nó.\n"
-"\n"
-"Nó cần thiết cho một số thiết bị thiết bị riêng."
-
-#. i18n: file: OptionsDlgWidget.ui:225
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:69
-msgid "Lock tape drive on mount"
-msgstr "Khoá thiết bị thiết bị vào lúc lắp"
-
-#. i18n: file: OptionsDlgWidget.ui:228
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:72
-msgid "Disable the eject button after mounting the tape."
-msgstr "Tắt cái nút đẩy ra sau khi lắp băng."
-
-#. i18n: file: OptionsDlgWidget.ui:233
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:75
-msgid ""
-"This option makes KDat try to disable the eject button on the tape drive "
-"after the tape has been mounted.\n"
-"\n"
-"This doesn't work for all tape drives."
-msgstr ""
-"Tùy chọn này làm cho KDat thử tắt cái nút đẩy ra trên thiết bị băng, sau khi "
-"lắp băng.\n"
-"\n"
-"Nó không hoạt động được cho mọi ổ băng."
-
-#. i18n: file: OptionsDlgWidget.ui:241
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:80
-msgid "Eject tape on unmount"
-msgstr "Đẩy ra băng một khi hủy lắp"
-
-#. i18n: file: OptionsDlgWidget.ui:244
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:83
-#, fuzzy
-#| msgid ""
-#| "Try to eject the tape after it is unmounted.  Don't use this for ftape."
-msgid ""
-"Try to eject the tape after it is unmounted.  Do not use this for ftape."
-msgstr "Thử đẩy ra băng sau khi hủy lắp nó. Đừng dùng cho « ftape »."
-
-#. i18n: file: OptionsDlgWidget.ui:249
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:86
-msgid ""
-"Try to eject the tape after it has been unmounted.\n"
-"\n"
-"This option should not be used for floppy-tape drives."
-msgstr ""
-"Thử đẩy ra băng sau khi hủy lắp nó.\n"
-"\n"
-"Đừng dùng tùy chọn này cho ổ băng mềm."
-
-#. i18n: file: OptionsDlgWidget.ui:257
-#. i18n: ectx: property (text), widget (QCheckBox)
-#: rc.cpp:91
-msgid "Variable block size"
-msgstr "Cỡ khối thay đổi"
-
-#. i18n: file: OptionsDlgWidget.ui:260
-#. i18n: ectx: property (toolTip), widget (QCheckBox)
-#: rc.cpp:94
-msgid "Enable variable-block size support in the tape drive."
-msgstr "Bật khả năng hỗ trợ kích cỡ khối thay đổi trong ổ băng."
-
-#. i18n: file: OptionsDlgWidget.ui:265
-#. i18n: ectx: property (whatsThis), widget (QCheckBox)
-#: rc.cpp:97
-msgid ""
-"Some tape drives support different sizes of the data block.  With this "
-"option, KDat will attempt to enable that support.\n"
-"\n"
-"You must still specify the block size."
-msgstr ""
-"Một số ổ băng riêng hỗ trợ kích cỡ khác nhau cho khối dữ liệu. Khi tùy chọn "
-"này được bật, KDat sẽ thử bật khả năng hỗ trợ đó.\n"
-"\n"
-"Bạn vẫn còn cần phải xác định kích cỡ khối."
-
-#: rc.cpp:100
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nhóm Việt hoá KDE"
-
-#: rc.cpp:101
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde-l10n-vi@kde.org"
 
 #~ msgid "%02d:%02d:%02d"
 #~ msgstr "%02d:%02d:%02d"

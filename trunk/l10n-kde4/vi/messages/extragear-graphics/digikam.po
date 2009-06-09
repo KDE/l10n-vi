@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-05 11:31+0200\n"
+"POT-Creation-Date: 2009-06-09 11:39+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -172,6 +172,51 @@ msgid ""
 "images with soft edges but tends to alter colors</p><p><b>Note: JPEG always "
 "uses lossy compression.</b></p>"
 msgstr ""
+
+#: libs/dimg/loaders/pgfsettings.cpp:72
+#, fuzzy
+#| msgid "LossLess JPEG 2000 files"
+msgid "Lossless PGF files"
+msgstr "Tập tin JPEG 2000 không mất gì"
+
+#: libs/dimg/loaders/pgfsettings.cpp:74
+#, fuzzy
+#| msgid ""
+#| "<p>Toggle lossless compression for JPEG 2000 images.<p>If you enable this "
+#| "option, you will use a lossless method to compress JPEG 2000 pictures.<p>"
+msgid ""
+"<p>Toggle lossless compression for PGF images.</p><p>If this option is "
+"enabled, a lossless method will be used to compress PGF pictures.</p>"
+msgstr ""
+"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tùy chọn này thì "
+"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
+
+#: libs/dimg/loaders/pgfsettings.cpp:81
+#, fuzzy
+#| msgid "JPEG quality:"
+msgid "PGF quality:"
+msgstr "Chất lượng JPEG:"
+
+#: libs/dimg/loaders/pgfsettings.cpp:83
+#, fuzzy
+#| msgid ""
+#| "<p>The quality value for JPEG 2000 images:<p><b>1</b>: low quality (high "
+#| "compression and small file size)<p><b>50</b>: medium quality<p><b>75</b>: "
+#| "good quality (default)<p><b>100</b>: high quality (no compression and "
+#| "large file size)<p><b>Note: JPEG 2000 is not a lossless image compression "
+#| "format when you use this setting.</b>"
+msgid ""
+"<p>The quality value for PGF images:</p><b>1</b>: high quality (no "
+"compression and large file size)</p><b>3</b>: good quality (default)<br/"
+"><b>6</b>: medium quality<br/><p><b>9</b>: low quality (high compression and "
+"small file size)<br/><p><b>Note: PGF is not a lossless image compression "
+"format when you use this setting.</b></p>"
+msgstr ""
+"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
+"nén cao thì kích cỡ tập tin nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: "
+"chất lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì "
+"kích cỡ tập tin lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không "
+"phải là định dạng nén ảnh không mất gì.</b>"
 
 #: libs/imageproperties/imagepropertiessidebardb.cpp:93
 #, fuzzy
@@ -456,9 +501,9 @@ msgstr "<i>không rõ</i>"
 #: libs/imageproperties/cameraitempropertiestab.cpp:330
 #: libs/imageproperties/cameraitempropertiestab.cpp:411
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: libs/dialogs/libsinfodlg.cpp:102 libs/dialogs/libsinfodlg.cpp:107
-#: libs/dialogs/libsinfodlg.cpp:110 libs/dialogs/libsinfodlg.cpp:112
-#: libs/dialogs/libsinfodlg.cpp:114 libs/dialogs/libsinfodlg.cpp:116
+#: libs/dialogs/libsinfodlg.cpp:103 libs/dialogs/libsinfodlg.cpp:108
+#: libs/dialogs/libsinfodlg.cpp:111 libs/dialogs/libsinfodlg.cpp:113
+#: libs/dialogs/libsinfodlg.cpp:115 libs/dialogs/libsinfodlg.cpp:117
 msgid "No"
 msgstr "Không"
 
@@ -466,9 +511,9 @@ msgstr "Không"
 #: libs/imageproperties/cameraitempropertiestab.cpp:332
 #: libs/imageproperties/cameraitempropertiestab.cpp:409
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: libs/dialogs/libsinfodlg.cpp:102 libs/dialogs/libsinfodlg.cpp:107
-#: libs/dialogs/libsinfodlg.cpp:110 libs/dialogs/libsinfodlg.cpp:112
-#: libs/dialogs/libsinfodlg.cpp:114 libs/dialogs/libsinfodlg.cpp:116
+#: libs/dialogs/libsinfodlg.cpp:103 libs/dialogs/libsinfodlg.cpp:108
+#: libs/dialogs/libsinfodlg.cpp:111 libs/dialogs/libsinfodlg.cpp:113
+#: libs/dialogs/libsinfodlg.cpp:115 libs/dialogs/libsinfodlg.cpp:117
 msgid "Yes"
 msgstr "Có"
 
@@ -1204,126 +1249,130 @@ msgstr "Sắp xoá các tập tin đã chọn"
 msgid "About to delete selected albums"
 msgstr "Sắp xoá các tập ảnh đã chọn"
 
-#: libs/dialogs/libsinfodlg.cpp:86 libs/dialogs/infodlg.cpp:110
+#: libs/dialogs/libsinfodlg.cpp:87 libs/dialogs/infodlg.cpp:111
 #, fuzzy
 #| msgid "Edit Album Properties and Collection information."
 msgid "Shared Libraries and Components Information"
 msgstr "Hiệu chỉnh thuộc tính tập ảnh và thông tin tập hợp."
 
-#: libs/dialogs/libsinfodlg.cpp:91
+#: libs/dialogs/libsinfodlg.cpp:92
 msgid "LibQt"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:92
+#: libs/dialogs/libsinfodlg.cpp:93
 msgid "LibKDE"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:93
+#: libs/dialogs/libsinfodlg.cpp:94
 msgid "LibKdcraw"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:95
+#: libs/dialogs/libsinfodlg.cpp:96
 #, fuzzy
 #| msgid "Draw grid"
 msgid "Dcraw program"
 msgstr "Vẽ lưới"
 
-#: libs/dialogs/libsinfodlg.cpp:97
+#: libs/dialogs/libsinfodlg.cpp:98
 msgid "LibRaw"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:101
+#: libs/dialogs/libsinfodlg.cpp:102
 msgid "Parallelized demosaicing"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:104
+#: libs/dialogs/libsinfodlg.cpp:105
 msgid "LibKExiv2"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:105
+#: libs/dialogs/libsinfodlg.cpp:106
 msgid "LibExiv2"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:106
+#: libs/dialogs/libsinfodlg.cpp:107
 #, fuzzy
 #| msgid "Metadata"
 msgid "Exiv2 supports XMP metadata"
 msgstr "Siêu dữ liệu"
 
-#: libs/dialogs/libsinfodlg.cpp:109
+#: libs/dialogs/libsinfodlg.cpp:110
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Exiv2 can write to Jpeg"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: libs/dialogs/libsinfodlg.cpp:111
+#: libs/dialogs/libsinfodlg.cpp:112
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Exiv2 can write to Tiff"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: libs/dialogs/libsinfodlg.cpp:113
+#: libs/dialogs/libsinfodlg.cpp:114
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Exiv2 can write to Png"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: libs/dialogs/libsinfodlg.cpp:115
+#: libs/dialogs/libsinfodlg.cpp:116
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Exiv2 can write to Jp2"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: libs/dialogs/libsinfodlg.cpp:119
+#: libs/dialogs/libsinfodlg.cpp:120
 msgid "LibPNG"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:120
+#: libs/dialogs/libsinfodlg.cpp:121
 msgid "LibTIFF"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:121
+#: libs/dialogs/libsinfodlg.cpp:122
 msgid "LibJPEG"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:122
+#: libs/dialogs/libsinfodlg.cpp:123
 msgid "LibJasper"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:123
+#: libs/dialogs/libsinfodlg.cpp:124
 msgid "LibCImg"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:124
+#: libs/dialogs/libsinfodlg.cpp:125
 msgid "LibLCMS"
 msgstr ""
 
-#: libs/dialogs/libsinfodlg.cpp:127
+#: libs/dialogs/libsinfodlg.cpp:126
+msgid "LibPGF"
+msgstr ""
+
+#: libs/dialogs/libsinfodlg.cpp:129
 #, fuzzy
 #| msgid "Marble 2"
 msgid "Marble widget"
 msgstr "Đá hoa 2"
 
-#: libs/dialogs/libsinfodlg.cpp:130
+#: libs/dialogs/libsinfodlg.cpp:132
 #, fuzzy
 #| msgid "Comments:"
 msgid "Component"
 msgstr "Ghi chú :"
 
-#: libs/dialogs/libsinfodlg.cpp:130
+#: libs/dialogs/libsinfodlg.cpp:132
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:293
 #, fuzzy
 #| msgid "Info..."
 msgid "Info"
 msgstr "Thông tin..."
 
-#: libs/dialogs/rawcameradlg.cpp:79
+#: libs/dialogs/rawcameradlg.cpp:80
 #, fuzzy
 #| msgid "Mounted Camera"
 msgid "List of supported RAW cameras"
 msgstr "Máy ảnh được lắp"
 
-#: libs/dialogs/rawcameradlg.cpp:109
+#: libs/dialogs/rawcameradlg.cpp:110
 #, kde-format
 msgid ""
 "<p>Using KDcraw library version %2</p><p>Using Dcraw program version %3</"
@@ -1333,7 +1382,7 @@ msgid_plural ""
 "p><p>%1 models in the list</p>"
 msgstr[0] ""
 
-#: libs/dialogs/rawcameradlg.cpp:117
+#: libs/dialogs/rawcameradlg.cpp:118
 #, kde-format
 msgid ""
 "<p>Using KDcraw library version %2</p><p>Using LibRaw version %3</p><p>1 "
@@ -1391,7 +1440,7 @@ msgstr "<b>Phơi năng</b>:"
 msgid "<i>Sensitivity:</i>"
 msgstr "<b>Độ nhạy</b>:"
 
-#: libs/dialogs/imagedialog.cpp:254 libs/dialogs/imagedialog.cpp:263
+#: libs/dialogs/imagedialog.cpp:254
 #, kde-format
 msgid ""
 "\n"
@@ -1400,25 +1449,39 @@ msgstr ""
 "\n"
 "%1|Các tập tin RAW của máy ảnh"
 
-#: libs/dialogs/imagedialog.cpp:278
+#: libs/dialogs/imagedialog.cpp:263
+#, fuzzy, kde-format
+#| msgid ""
+#| "\n"
+#| "%1|Camera RAW files"
+msgid "%1|Camera RAW files"
+msgstr ""
+"\n"
+"%1|Các tập tin RAW của máy ảnh"
+
+#: libs/dialogs/imagedialog.cpp:265
+msgid "*.pgf|Progressive Graphics file"
+msgstr ""
+
+#: libs/dialogs/imagedialog.cpp:279
 #, fuzzy
 #| msgid "Select Black Frame Image"
 msgid "Select an Image"
 msgstr "Chọn ảnh khung đen"
 
-#: libs/dialogs/imagedialog.cpp:286
+#: libs/dialogs/imagedialog.cpp:287
 #, fuzzy
 #| msgid "Save Images"
 msgid "Select Images"
 msgstr "Lưu ảnh"
 
-#: libs/dialogs/infodlg.cpp:111 libs/widgets/common/dhistoryview.cpp:132
+#: libs/dialogs/infodlg.cpp:112 libs/widgets/common/dhistoryview.cpp:132
 #, fuzzy
 #| msgid "Copy meta-data to clipboard"
 msgid "Copy to Clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: libs/dialogs/infodlg.cpp:131
+#: libs/dialogs/infodlg.cpp:132
 #, kde-format
 msgid "<font size=\"5\">%1</font><br/><b>Version %2</b><p>%3</p>"
 msgstr ""
@@ -1964,24 +2027,24 @@ msgstr "Ước lượng nhanh"
 msgid "Enable fast approximation when rendering images."
 msgstr "<p>Bật khả năng ước lượng nhanh để vẽ ảnh."
 
-#: libs/threadimageio/thumbnailcreator.cpp:136
+#: libs/threadimageio/thumbnailcreator.cpp:158
 msgid "No or invalid size specified"
 msgstr "Chưa ghi rõ kích cỡ hay kích cỡ không hợp lệ"
 
-#: libs/threadimageio/thumbnailcreator.cpp:148
-msgid "File does not exist"
-msgstr "Tập tin không tồn tại"
-
-#: libs/threadimageio/thumbnailcreator.cpp:228
-#, kde-format
-msgid "Cannot create thumbnail for %1"
-msgstr "Không thể tạo ảnh mẫu cho %1"
-
-#: libs/threadimageio/thumbnailcreator.cpp:291
+#: libs/threadimageio/thumbnailcreator.cpp:213
 #, fuzzy
 #| msgid "Thumbnail click action:"
 msgid "Thumbnail is null"
 msgstr "Khi nhấn vào ảnh mẫu :"
+
+#: libs/threadimageio/thumbnailcreator.cpp:253
+msgid "File does not exist"
+msgstr "Tập tin không tồn tại"
+
+#: libs/threadimageio/thumbnailcreator.cpp:330
+#, kde-format
+msgid "Cannot create thumbnail for %1"
+msgstr "Không thể tạo ảnh mẫu cho %1"
 
 #: libs/dmetadata/dmetadata.cpp:993
 msgid "Unspecified"
@@ -2113,7 +2176,7 @@ msgstr "Tập"
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
 #: digikam/digikamapp.cpp:2394
-#: utilities/imageeditor/editor/editorwindow.cpp:1892
+#: utilities/imageeditor/editor/editorwindow.cpp:1895
 #: utilities/queuemanager/queuemgrwindow.cpp:714
 #: utilities/lighttable/lighttablewindow.cpp:1588
 #: utilities/cameragui/cameraui.cpp:2203
@@ -2703,7 +2766,7 @@ msgstr "Kéo cắt..."
 msgid "unavailable"
 msgstr "không sẵn sàng"
 
-#: libs/widgets/common/filesaveoptionsbox.cpp:97
+#: libs/widgets/common/filesaveoptionsbox.cpp:102
 #, fuzzy
 #| msgid "None options available"
 msgid "No options available"
@@ -2771,47 +2834,47 @@ msgstr "Nháy:"
 msgid "White Balance:"
 msgstr "Cán cân trắng:"
 
-#: libs/widgets/common/manualrenameinput.cpp:238
+#: libs/widgets/common/manualrenameinput.cpp:239
 msgid "filename (original)"
 msgstr ""
 
-#: libs/widgets/common/manualrenameinput.cpp:239
+#: libs/widgets/common/manualrenameinput.cpp:240
 msgid "filename (upper case)"
 msgstr ""
 
-#: libs/widgets/common/manualrenameinput.cpp:240
+#: libs/widgets/common/manualrenameinput.cpp:241
 #, fuzzy
 #| msgid "Print fi&lename below image"
 msgid "filename (lower case)"
 msgstr "In tê&n tập tin bên dưới ảnh"
 
-#: libs/widgets/common/manualrenameinput.cpp:241
+#: libs/widgets/common/manualrenameinput.cpp:242
 msgid "filename (first letter of each word upper case)"
 msgstr ""
 
-#: libs/widgets/common/manualrenameinput.cpp:242
+#: libs/widgets/common/manualrenameinput.cpp:243
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "sequence number"
 msgstr "Thêm số dãy"
 
-#: libs/widgets/common/manualrenameinput.cpp:243
+#: libs/widgets/common/manualrenameinput.cpp:244
 msgid "sequence number (custom start + step)"
 msgstr ""
 
-#: libs/widgets/common/manualrenameinput.cpp:244
+#: libs/widgets/common/manualrenameinput.cpp:245
 #, fuzzy
 #| msgid "Camera filenames"
 msgid "camera name"
 msgstr "Tên tập tin máy ảnh"
 
-#: libs/widgets/common/manualrenameinput.cpp:245
+#: libs/widgets/common/manualrenameinput.cpp:246
 msgid ""
 "date and time of the file (<a href='http://doc.trolltech.com/latest/"
 "qdatetime.html#toString'>format settings</a>)"
 msgstr ""
 
-#: libs/widgets/common/manualrenameinput.cpp:261
+#: libs/widgets/common/manualrenameinput.cpp:262
 msgid ""
 "<p><table><tr><td><i>Example:</i></td><td></td></tr><tr><td></td><td><b>new_"
 "$_###</b></td></tr><tr><td>=></td><td>new_MyImageName_001.jpg</td></tr></"
@@ -3397,7 +3460,7 @@ msgid "Add to Existing Queue"
 msgstr ""
 
 #: digikam/contextmenuhelper.cpp:590 digikam/digikamapp.cpp:774
-#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:320
+#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:321
 #: utilities/lighttable/lighttablepreview.cpp:362
 #: utilities/lighttable/lighttablewindow.cpp:420
 #, fuzzy, kde-format
@@ -4806,7 +4869,7 @@ msgid "Next Image"
 msgstr "Ảnh kế"
 
 #: digikam/digikamapp.cpp:544 digikam/digikamapp.cpp:550
-#: utilities/imageeditor/editor/editorwindow.cpp:548
+#: utilities/imageeditor/editor/editorwindow.cpp:549
 #: utilities/lighttable/lighttablewindow.cpp:558
 #: utilities/cameragui/cameraui.cpp:490
 msgid "Previous Image"
@@ -4833,7 +4896,7 @@ msgid "Paste Selected Album Items"
 msgstr "Sắp xoá các tập ảnh đã chọn"
 
 #: digikam/digikamapp.cpp:592
-#: utilities/imageeditor/editor/editorwindow.cpp:514
+#: utilities/imageeditor/editor/editorwindow.cpp:515
 #: utilities/queuemanager/queuemgrwindow.cpp:410
 #: utilities/lighttable/lighttablewindow.cpp:483
 #: utilities/cameragui/cameraui.cpp:447
@@ -5101,19 +5164,19 @@ msgid "Rotated Right / Vert. Flipped"
 msgstr "Xoay phải/Lật dọc"
 
 #: digikam/digikamapp.cpp:949
-#: utilities/imageeditor/editor/editorwindow.cpp:369
+#: utilities/imageeditor/editor/editorwindow.cpp:370
 #: utilities/cameragui/cameraui.cpp:330
 msgid "Select All"
 msgstr "Chọn tất cả"
 
 #: digikam/digikamapp.cpp:956
-#: utilities/imageeditor/editor/editorwindow.cpp:374
+#: utilities/imageeditor/editor/editorwindow.cpp:375
 #: utilities/cameragui/cameraui.cpp:337
 msgid "Select None"
 msgstr "Chọn Không gì"
 
 #: digikam/digikamapp.cpp:988
-#: utilities/imageeditor/editor/editorwindow.cpp:389
+#: utilities/imageeditor/editor/editorwindow.cpp:390
 #: utilities/lighttable/lighttablewindow.cpp:455
 #, fuzzy
 #| msgid "Zoom to 1:1"
@@ -5121,14 +5184,14 @@ msgid "Zoom to 100%"
 msgstr "Phóng to 1:1 (không thay đổi)"
 
 #: digikam/digikamapp.cpp:995
-#: utilities/imageeditor/editor/editorwindow.cpp:394
+#: utilities/imageeditor/editor/editorwindow.cpp:395
 #: utilities/lighttable/lighttablepreview.cpp:359
 #: utilities/lighttable/lighttablewindow.cpp:460
 msgid "Fit to &Window"
 msgstr "Vừa khít cửa &sổ"
 
 #: digikam/digikamapp.cpp:1007
-#: utilities/imageeditor/editor/editorwindow.cpp:438
+#: utilities/imageeditor/editor/editorwindow.cpp:439
 #: utilities/lighttable/lighttablepreview.cpp:360
 #: utilities/lighttable/lighttablewindow.cpp:468
 #: utilities/slideshow/slideshow.cpp:137
@@ -5148,12 +5211,12 @@ msgid "With All Sub-Albums"
 msgstr "Với mọi tập ảnh phụ"
 
 #: digikam/digikamapp.cpp:1031
-#: utilities/imageeditor/editor/editorwindow.cpp:460
+#: utilities/imageeditor/editor/editorwindow.cpp:461
 msgid "Show Thumbnails"
 msgstr "Hiện các ảnh mẫu"
 
 #: digikam/digikamapp.cpp:1043
-#: utilities/imageeditor/editor/editorwindow.cpp:533
+#: utilities/imageeditor/editor/editorwindow.cpp:534
 #: utilities/lighttable/lighttablewindow.cpp:501
 #: utilities/cameragui/cameraui.cpp:465
 #, fuzzy
@@ -5162,7 +5225,7 @@ msgid "Supported RAW Cameras"
 msgstr "Máy ảnh được lắp"
 
 #: digikam/digikamapp.cpp:1049
-#: utilities/imageeditor/editor/editorwindow.cpp:537
+#: utilities/imageeditor/editor/editorwindow.cpp:538
 #: utilities/cameragui/cameraui.cpp:469
 #, fuzzy
 #| msgid "Comments:"
@@ -5180,7 +5243,7 @@ msgid "Donate..."
 msgstr "Tăng tiền..."
 
 #: digikam/digikamapp.cpp:1076
-#: utilities/imageeditor/editor/editorwindow.cpp:529
+#: utilities/imageeditor/editor/editorwindow.cpp:530
 #: utilities/queuemanager/queuemgrwindow.cpp:424
 #: utilities/lighttable/lighttablewindow.cpp:497
 #: utilities/cameragui/cameraui.cpp:461
@@ -5419,7 +5482,7 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:2433 digikam/digikamapp.cpp:2456
 #: showfoto/showfoto.cpp:1105
-#: utilities/imageeditor/editor/editorwindow.cpp:1114
+#: utilities/imageeditor/editor/editorwindow.cpp:1121
 #: utilities/cameragui/cameraui.cpp:1810
 #: utilities/fuzzysearch/findduplicatesview.cpp:339
 msgid "Warning"
@@ -7686,7 +7749,7 @@ msgstr ""
 "bộ lọc gỡ bỏ điểm ảnh nóng."
 
 #: imageplugins/hotpixels/hotpixelstool.cpp:176
-#: utilities/imageeditor/editor/editorwindow.cpp:1278
+#: utilities/imageeditor/editor/editorwindow.cpp:1285
 msgid "Loading: "
 msgstr "Đang tải: "
 
@@ -8219,19 +8282,19 @@ msgstr ""
 msgid "Adjust Curve"
 msgstr "Điều chỉnh cong"
 
-#: imageplugins/adjustcurves/adjustcurvestool.cpp:637
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:639
 msgid "Select Gimp Curves File to Load"
 msgstr "Chọn tập tin cong GIMP cần tải"
 
-#: imageplugins/adjustcurves/adjustcurvestool.cpp:644
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:646
 msgid "Cannot load from the Gimp curves text file."
 msgstr "Không thể tải từ tập tin văn bản đường cong GIMP."
 
-#: imageplugins/adjustcurves/adjustcurvestool.cpp:659
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:661
 msgid "Gimp Curves File to Save"
 msgstr "Tập tin cong GIMP cần lưu"
 
-#: imageplugins/adjustcurves/adjustcurvestool.cpp:666
+#: imageplugins/adjustcurves/adjustcurvestool.cpp:668
 msgid "Cannot save to the Gimp curves text file."
 msgstr "Không thể lưu vào tập tin văn bản đường cong GIMP."
 
@@ -8634,19 +8697,19 @@ msgstr ""
 msgid "Adjust Level"
 msgstr "Điều chỉnh cấp"
 
-#: imageplugins/adjustlevels/adjustlevelstool.cpp:735
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:751
 msgid "Select Gimp Levels File to Load"
 msgstr "Chọn tập tin cấp GIMP cần tải"
 
-#: imageplugins/adjustlevels/adjustlevelstool.cpp:742
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:758
 msgid "Cannot load from the Gimp levels text file."
 msgstr "Không thể tải từ tập tin văn bản cấp GIMP."
 
-#: imageplugins/adjustlevels/adjustlevelstool.cpp:756
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:772
 msgid "Gimp Levels File to Save"
 msgstr "Tập tin cấp GIMP cần lưu"
 
-#: imageplugins/adjustlevels/adjustlevelstool.cpp:763
+#: imageplugins/adjustlevels/adjustlevelstool.cpp:779
 msgid "Cannot save to the Gimp levels text file."
 msgstr "Không thể lưu vào tập tin văn bản cấp GIMP."
 
@@ -15029,61 +15092,61 @@ msgstr ""
 msgid "Loading Image Plugins"
 msgstr "Đang nạp các phần bổ sung ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:292
+#: utilities/imageeditor/editor/editorwindow.cpp:293
 #: utilities/lighttable/lighttablewindow.cpp:376
 msgid "&First"
 msgstr "Đầ&u"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:297
+#: utilities/imageeditor/editor/editorwindow.cpp:298
 #: utilities/lighttable/lighttablewindow.cpp:382
 msgid "&Last"
 msgstr "&Cuối"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:315
+#: utilities/imageeditor/editor/editorwindow.cpp:316
 msgid "Print Image..."
 msgstr "In ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:334
+#: utilities/imageeditor/editor/editorwindow.cpp:335
 msgid "Undo"
 msgstr "Hủy bước"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:353
+#: utilities/imageeditor/editor/editorwindow.cpp:354
 msgid "Redo"
 msgstr "Làm lại"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:399
+#: utilities/imageeditor/editor/editorwindow.cpp:400
 msgid "Fit to &Selection"
 msgstr "&Vừa khít vùng chọn"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:404
+#: utilities/imageeditor/editor/editorwindow.cpp:405
 msgid ""
 "This option can be used to zoom the image to the current selection area."
 msgstr ""
 "Tùy chọn này có thể được dùng để thu/phóng ảnh vào vùng chọn hiện thời."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:432
+#: utilities/imageeditor/editor/editorwindow.cpp:433
 msgid "Zoom"
 msgstr "Thu/Phóng"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:444
+#: utilities/imageeditor/editor/editorwindow.cpp:445
 msgid "Under-Exposure Indicator"
 msgstr "Cái chỉ chụp non"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:450
+#: utilities/imageeditor/editor/editorwindow.cpp:451
 msgid "Over-Exposure Indicator"
 msgstr "Cái chỉ phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:455
+#: utilities/imageeditor/editor/editorwindow.cpp:456
 #, fuzzy
 #| msgid "Color Managed View"
 msgid "Color-Managed View"
 msgstr "Ô xem đã Quản lý Màu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:467
+#: utilities/imageeditor/editor/editorwindow.cpp:468
 msgid "Crop"
 msgstr "Xén"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:472
+#: utilities/imageeditor/editor/editorwindow.cpp:473
 msgid ""
 "This option can be used to crop the image. Select a region of the image to "
 "enable this action."
@@ -15091,62 +15154,62 @@ msgstr ""
 "Tùy chọn này có thể được dùng để xén ảnh. Hãy chọn một vùng trên ảnh để bật "
 "hành động này."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:477
+#: utilities/imageeditor/editor/editorwindow.cpp:478
 msgid "Flip Horizontally"
 msgstr "Lật ngang"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:483
+#: utilities/imageeditor/editor/editorwindow.cpp:484
 msgid "Flip Vertically"
 msgstr "Lật dọc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:491
+#: utilities/imageeditor/editor/editorwindow.cpp:492
 msgid "Rotate Left"
 msgstr "Xoay trái"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:497
+#: utilities/imageeditor/editor/editorwindow.cpp:498
 msgid "Rotate Right"
 msgstr "Xoay phải"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:525
+#: utilities/imageeditor/editor/editorwindow.cpp:526
 #: utilities/queuemanager/queuemgrwindow.cpp:420
 #: utilities/lighttable/lighttablewindow.cpp:493
 msgid "Donate Money..."
 msgstr "Tăng tiền..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:543
+#: utilities/imageeditor/editor/editorwindow.cpp:544
 #, fuzzy
 #| msgid "Exit Fullscreen mode"
 msgid "Exit Full Screen"
 msgstr "Thoát khỏi chế độ toàn màn hình"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:564
-#: utilities/imageeditor/editor/editorwindow.cpp:1245
+#: utilities/imageeditor/editor/editorwindow.cpp:565
+#: utilities/imageeditor/editor/editorwindow.cpp:1252
 msgid "No selection"
 msgstr "Chưa chọn gì"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:568
+#: utilities/imageeditor/editor/editorwindow.cpp:569
 msgid "Information about current selection area"
 msgstr "Thông tin về vùng chọn hiện thời"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:574
+#: utilities/imageeditor/editor/editorwindow.cpp:575
 msgid "Information about image size"
 msgstr "Thông tin về kích cỡ của ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:626
+#: utilities/imageeditor/editor/editorwindow.cpp:627
 #, fuzzy
 #| msgid "General"
 msgctxt "general editor shortcuts"
 msgid "General"
 msgstr "Chung"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:627
+#: utilities/imageeditor/editor/editorwindow.cpp:628
 #, fuzzy
 #| msgid "Loading Image Plugins"
 msgctxt "imageplugins shortcuts"
 msgid "Image Plugins"
 msgstr "Đang nạp các phần bổ sung ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1111
+#: utilities/imageeditor/editor/editorwindow.cpp:1118
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to delete file \"%1\"\n"
@@ -15158,11 +15221,11 @@ msgstr ""
 "Sắp xoá tập tin « %1 »\n"
 "Bạn có chắc chưa?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1115
+#: utilities/imageeditor/editor/editorwindow.cpp:1122
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1132
+#: utilities/imageeditor/editor/editorwindow.cpp:1139
 #, kde-format
 msgid ""
 "The image '%1' has been modified.\n"
@@ -15171,22 +15234,22 @@ msgstr ""
 "Ảnh « %1 » đã bị sửa đổi.\n"
 "Bạn có muốn lưu nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1203
+#: utilities/imageeditor/editor/editorwindow.cpp:1210
 msgid "Please wait while the image is being saved..."
 msgstr "Hãy đời trong khi lưu ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1297
+#: utilities/imageeditor/editor/editorwindow.cpp:1304
 #, kde-format
 msgid "Failed to load image \"%1\""
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1333
+#: utilities/imageeditor/editor/editorwindow.cpp:1340
 msgid "Saving: "
 msgstr "Đang lưu: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1347
-#: utilities/imageeditor/editor/editorwindow.cpp:1388
-#: utilities/imageeditor/editor/editorwindow.cpp:1602
+#: utilities/imageeditor/editor/editorwindow.cpp:1354
+#: utilities/imageeditor/editor/editorwindow.cpp:1395
+#: utilities/imageeditor/editor/editorwindow.cpp:1605
 #, kde-format
 msgid ""
 "Failed to save file\n"
@@ -15199,33 +15262,43 @@ msgstr ""
 "vào\n"
 "« %2 » ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1466
-#: utilities/imageeditor/editor/editorwindow.cpp:1662
+#: utilities/imageeditor/editor/editorwindow.cpp:1473
+#: utilities/imageeditor/editor/editorwindow.cpp:1665
 #, kde-format
 msgid "Could not open a temporary file in the folder \"%1\": %2 (%3)"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1526
+#: utilities/imageeditor/editor/editorwindow.cpp:1502
+#, fuzzy
+#| msgid "JPEG 2000 quality:"
+msgid "JPEG 2000 image"
+msgstr "Chất lượng JPEG 2000:"
+
+#: utilities/imageeditor/editor/editorwindow.cpp:1503
+msgid "Progressive Graphics File"
+msgstr ""
+
+#: utilities/imageeditor/editor/editorwindow.cpp:1525
 msgid "New Image File Name"
 msgstr "Tên tập tin ảnh mới"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1593
+#: utilities/imageeditor/editor/editorwindow.cpp:1596
 #, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "Định dạng tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1632
+#: utilities/imageeditor/editor/editorwindow.cpp:1635
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Tập tin tên « %1 » đã có. Bạn có chắc muốn ghi đè lên nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1636
-#: utilities/imageeditor/editor/editorwindow.cpp:1699
+#: utilities/imageeditor/editor/editorwindow.cpp:1639
+#: utilities/imageeditor/editor/editorwindow.cpp:1702
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1694
+#: utilities/imageeditor/editor/editorwindow.cpp:1697
 #, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -15234,27 +15307,27 @@ msgstr ""
 "Bạn không có quyền ghi tập tin tên « %1 ». Bạn có chắc muốn ghi đè lên nó "
 "không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1746
+#: utilities/imageeditor/editor/editorwindow.cpp:1749
 msgid "Failed to overwrite original file"
 msgstr "Lỗi ghi đè lên tập tin gốc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1747
+#: utilities/imageeditor/editor/editorwindow.cpp:1750
 msgid "Error Saving File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1793
+#: utilities/imageeditor/editor/editorwindow.cpp:1796
 #, fuzzy
 #| msgid "Color Managed View is enabled"
 msgid "Color-Managed View is enabled."
 msgstr "Ô xem đả quản lý màu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1795
+#: utilities/imageeditor/editor/editorwindow.cpp:1798
 #, fuzzy
 #| msgid "Color Managed View is disabled"
 msgid "Color-Managed View is disabled."
 msgstr "Ô xem đả quản lý màu bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1799
+#: utilities/imageeditor/editor/editorwindow.cpp:1802
 #, fuzzy
 #| msgid ""
 #| "Color Management is not configured, so the Color Managed View is not "
@@ -15265,19 +15338,19 @@ msgid ""
 msgstr ""
 "Chưa cấu hình khả năng Quản lý Màu, vì vậy không có sẵn Ô xem đã Quản lý Màu."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1821
+#: utilities/imageeditor/editor/editorwindow.cpp:1824
 msgid "Under-Exposure indicator is enabled"
 msgstr "Cái chỉ chụp non đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1822
+#: utilities/imageeditor/editor/editorwindow.cpp:1825
 msgid "Under-Exposure indicator is disabled"
 msgstr "Cái chỉ chụp non bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1842
+#: utilities/imageeditor/editor/editorwindow.cpp:1845
 msgid "Over-Exposure indicator is enabled"
 msgstr "Cái chỉ phơi quá lâu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1843
+#: utilities/imageeditor/editor/editorwindow.cpp:1846
 msgid "Over-Exposure indicator is disabled"
 msgstr "Cái chỉ phơi quá lâu bị tắt"
 

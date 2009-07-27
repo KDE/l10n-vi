@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-26 06:15+0200\n"
+"POT-Creation-Date: 2009-07-27 06:24+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -279,19 +279,19 @@ msgstr "%1 (35mm: %2)"
 msgid "%1 ISO"
 msgstr "%1 ISO"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:95
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:91
 msgid "EXIF"
 msgstr "EXIF"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:100
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:96
 msgid "Makernote"
 msgstr "Ghi chú nhà tạo"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:105
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:101
 msgid "IPTC"
 msgstr "IPTC"
 
-#: libs/imageproperties/imagepropertiesmetadatatab.cpp:111
+#: libs/imageproperties/imagepropertiesmetadatatab.cpp:107
 msgid "XMP"
 msgstr ""
 
@@ -565,12 +565,12 @@ msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
 
 #: libs/imageproperties/imagedescedittab.cpp:189
 #: libs/widgets/common/thumbbartooltip.cpp:154 digikam/tooltipfiller.cpp:80
-#: digikam/tooltipfiller.cpp:300
+#: digikam/tooltipfiller.cpp:315
 #: utilities/cameragui/cameraiconviewtooltip.cpp:141
 msgid "Date:"
 msgstr "Ngày:"
 
-#: libs/imageproperties/imagedescedittab.cpp:194 digikam/tooltipfiller.cpp:251
+#: libs/imageproperties/imagedescedittab.cpp:194 digikam/tooltipfiller.cpp:266
 msgid "Rating:"
 msgstr "Đánh giá:"
 
@@ -2117,7 +2117,7 @@ msgid "Reference:"
 msgstr ""
 
 #: libs/template/subjectwidget.cpp:191
-#: libs/widgets/common/thumbbartooltip.cpp:146 digikam/tooltipfiller.cpp:279
+#: libs/widgets/common/thumbbartooltip.cpp:146 digikam/tooltipfiller.cpp:294
 #: utilities/cameragui/cameraiconviewtooltip.cpp:133
 msgid "Name:"
 msgstr "Tên:"
@@ -5276,6 +5276,10 @@ msgstr "Trung vị:"
 msgid "Percent:"
 msgstr "Phần trăm:"
 
+#: libs/widgets/common/ditemtooltip.cpp:49
+msgid "unavailable"
+msgstr "không sẵn sàng"
+
 #: libs/widgets/common/dfontselect.cpp:81
 msgid "System Font"
 msgstr ""
@@ -5299,10 +5303,6 @@ msgstr "Thăm nơi Mạng của dự án digiKam"
 #| msgid "Shear..."
 msgid "Search..."
 msgstr "Kéo cắt..."
-
-#: libs/widgets/common/ditemtooltip.h:59
-msgid "unavailable"
-msgstr "không sẵn sàng"
 
 #: libs/widgets/common/filesaveoptionsbox.cpp:102
 #, fuzzy
@@ -7481,31 +7481,31 @@ msgctxt "caption of the file"
 msgid "Caption:"
 msgstr "Độ xoay:"
 
-#: digikam/tooltipfiller.cpp:241
+#: digikam/tooltipfiller.cpp:238
 msgid "Tags:"
 msgstr "Thẻ:"
 
-#: digikam/tooltipfiller.cpp:275
+#: digikam/tooltipfiller.cpp:290
 #, fuzzy
 #| msgid "Edit Album Properties..."
 msgid "Album Properties"
 msgstr "Sửa thuộc tính tập ảnh..."
 
-#: digikam/tooltipfiller.cpp:285 utilities/fuzzysearch/fuzzysearchview.cpp:332
+#: digikam/tooltipfiller.cpp:300 utilities/fuzzysearch/fuzzysearchview.cpp:332
 msgid "Items:"
 msgstr ""
 
-#: digikam/tooltipfiller.cpp:291
+#: digikam/tooltipfiller.cpp:306
 #, fuzzy
 #| msgid "Co&llection:"
 msgid "Collection:"
 msgstr "Tập &hợp:"
 
-#: digikam/tooltipfiller.cpp:307
+#: digikam/tooltipfiller.cpp:322
 msgid "Category:"
 msgstr ""
 
-#: digikam/tooltipfiller.cpp:315
+#: digikam/tooltipfiller.cpp:330
 #, fuzzy
 #| msgid "Rotation:"
 msgid "Caption:"
@@ -8175,9 +8175,9 @@ msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
 #: digikam/digikamapp.cpp:1237
 #, fuzzy
-#| msgid "Synchronize images with database"
-msgid "Synchronize All Images with Database"
-msgstr "Đồng bộ các ảnh với cơ sở dữ liệu"
+#| msgid "Write metadata to each file"
+msgid "Write Metadata to All Images"
+msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
 #: digikam/digikamapp.cpp:1252
 msgid "Loading cameras"
@@ -8332,14 +8332,19 @@ msgid "Loading themes"
 msgstr "Đang tải sắc thái..."
 
 #: digikam/digikamapp.cpp:2501
+#, fuzzy
+#| msgid ""
+#| "Updating the metadata database can take some time. \n"
+#| "Do you want to continue?"
 msgid ""
-"Updating the metadata database can take some time. \n"
+"This action will update the metadata of all available files from information "
+"stored in the database. This can take some time. \n"
 "Do you want to continue?"
 msgstr ""
 "Tiến trình cập nhật cơ sở dữ liệu siêu dữ liệu có thể kéo dài một lát.\n"
 "Bạn vẫn muốn tiếp tục không?"
 
-#: digikam/digikamapp.cpp:2512
+#: digikam/digikamapp.cpp:2513
 msgid ""
 "Image thumbnailing can take some time.\n"
 "Which would you prefer?\n"
@@ -8347,26 +8352,26 @@ msgid ""
 "- Rebuild all thumbnails (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2517 digikam/digikamapp.cpp:2540
+#: digikam/digikamapp.cpp:2518 digikam/digikamapp.cpp:2541
 #: showfoto/showfoto.cpp:1106
 #: utilities/imageeditor/editor/editorwindow.cpp:1126
 #: utilities/cameragui/cameraui.cpp:1860
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: digikam/digikamapp.cpp:2518 digikam/digikamapp.cpp:2541
+#: digikam/digikamapp.cpp:2519 digikam/digikamapp.cpp:2542
 #, fuzzy
 #| msgid "Scaling"
 msgid "Scan"
 msgstr "Co dãn"
 
-#: digikam/digikamapp.cpp:2519 digikam/digikamapp.cpp:2542
+#: digikam/digikamapp.cpp:2520 digikam/digikamapp.cpp:2543
 #, fuzzy
 #| msgid "Rebuild all Thumbnails..."
 msgid "Rebuild All"
 msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
-#: digikam/digikamapp.cpp:2535
+#: digikam/digikamapp.cpp:2536
 msgid ""
 "Image fingerprinting can take some time.\n"
 "Which would you prefer?\n"
@@ -8374,30 +8379,30 @@ msgid ""
 "- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2593 utilities/cameragui/cameraui.cpp:1019
+#: digikam/digikamapp.cpp:2594 utilities/cameragui/cameraui.cpp:1019
 #, kde-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
 
-#: digikam/digikamapp.cpp:2601 utilities/lighttable/lighttablewindow.cpp:1488
+#: digikam/digikamapp.cpp:2602 utilities/lighttable/lighttablewindow.cpp:1488
 #: utilities/lighttable/lighttablewindow.cpp:1512
 #, kde-format
 msgid "zoom: %1%"
 msgstr "thu phóng: %1%"
 
-#: digikam/digikamapp.cpp:2633
+#: digikam/digikamapp.cpp:2634
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folder to parse"
 msgstr "Chọn ảnh cần tải lên"
 
-#: digikam/digikamapp.cpp:2645
+#: digikam/digikamapp.cpp:2646
 #, fuzzy
 #| msgid "Select Image to Upload"
 msgid "Select folders to import into album"
 msgstr "Chọn ảnh cần tải lên"
 
-#: digikam/digikamapp.cpp:2657
+#: digikam/digikamapp.cpp:2658
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -21549,6 +21554,11 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Synchronize images with database"
+#~ msgid "Synchronize All Images with Database"
+#~ msgstr "Đồng bộ các ảnh với cơ sở dữ liệu"
 
 #, fuzzy
 #~| msgid "Synchronize images with database"

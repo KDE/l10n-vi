@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-30 06:23+0200\n"
+"POT-Creation-Date: 2009-08-01 06:15+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -1779,7 +1779,7 @@ msgstr "Cửa sổ chính"
 
 #. i18n: file: kjsembed/examples/kjsconsole/jsconsole.ui:106
 #. i18n: ectx: property (text), widget (QPushButton, mExecute)
-#: rc.cpp:764 kparts/browserrun.cpp:304
+#: rc.cpp:764 kparts/browserrun.cpp:312
 msgid "Execute"
 msgstr "Thực hiện"
 
@@ -11417,7 +11417,7 @@ msgid "a basic web browser using the KHTML library"
 msgstr ""
 
 #: khtml/khtml_run.cpp:97 khtml/khtml_part.cpp:3719 khtml/khtml_part.cpp:3929
-#: khtml/khtml_part.cpp:4315 kparts/browserrun.cpp:453
+#: khtml/khtml_part.cpp:4315 kparts/browserrun.cpp:461
 msgid "Save As"
 msgstr "Lưu dạng"
 
@@ -11693,14 +11693,14 @@ msgstr "Ghi đè tập tin không?"
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: khtml/khtml_ext.cpp:991 kparts/browserrun.cpp:424
+#: khtml/khtml_ext.cpp:991 kparts/browserrun.cpp:432
 #, kde-format
 msgid "The Download Manager (%1) could not be found in your $PATH "
 msgstr ""
 "Không tìm thấy Bộ Quản lý Tải về (%1) trong PATH (đường dẫn ứng dụng) của "
 "bạn."
 
-#: khtml/khtml_ext.cpp:992 kparts/browserrun.cpp:425
+#: khtml/khtml_ext.cpp:992 kparts/browserrun.cpp:433
 msgid ""
 "Try to reinstall it  \n"
 "\n"
@@ -12373,10 +12373,15 @@ msgid "Basic Page Style"
 msgstr "Kiểu dáng trang cơ bản"
 
 #: khtml/ecma/kjs_binding.cpp:184
+#, fuzzy
+#| msgid ""
+#| "A script on this page is causing KHTML to freeze. If it continues to run, "
+#| "other applications may become less responsive.\n"
+#| "Do you want to abort the script?"
 msgid ""
 "A script on this page is causing KHTML to freeze. If it continues to run, "
 "other applications may become less responsive.\n"
-"Do you want to abort the script?"
+"Do you want to stop the script?"
 msgstr ""
 "Một tập lệnh trên trang này đang làm KHTML đông đặc. Nếu nó tiếp tục chạy, "
 "ứng dụng thêm có thể sẽ không đáp ứng được.\n"
@@ -12387,8 +12392,10 @@ msgid "JavaScript"
 msgstr "JavaScript"
 
 #: khtml/ecma/kjs_binding.cpp:184
-msgid "&Abort"
-msgstr "&Hủy bỏ"
+#, fuzzy
+#| msgid "Open Script"
+msgid "&Stop Script"
+msgstr "Mở văn lệnh"
 
 #: khtml/ecma/kjs_window.cpp:1590 khtml/ecma/kjs_html.cpp:2118
 msgid "Confirmation: JavaScript Popup"
@@ -13052,9 +13059,9 @@ msgstr ""
 
 #: kross/modules/form.cpp:303
 #, fuzzy
-#| msgid "&Abort"
-msgid "Abort?"
-msgstr "&Hủy bỏ"
+#| msgid "Cancel"
+msgid "Cancel?"
+msgstr "Thôi"
 
 #: solid/examples/minibrowser/main.cpp:232
 msgid "Solid Browser"
@@ -13339,17 +13346,17 @@ msgstr ""
 msgid "Close Document"
 msgstr "Đóng tài liệu"
 
-#: kparts/browserrun.cpp:303
+#: kparts/browserrun.cpp:311
 #, fuzzy, kde-format
 #| msgid "Do you really want to execute '%1'? "
 msgid "Do you really want to execute '%1'?"
 msgstr "Bạn thật sự muốn thực hiện « %1 » không? "
 
-#: kparts/browserrun.cpp:304
+#: kparts/browserrun.cpp:312
 msgid "Execute File?"
 msgstr "Thực hiện tập tin ?"
 
-#: kparts/browserrun.cpp:322
+#: kparts/browserrun.cpp:330
 #, kde-format
 msgid ""
 "Open '%2'?\n"
@@ -13358,7 +13365,7 @@ msgstr ""
 "Mở « %2 » ?\n"
 "Kiểu : %1"
 
-#: kparts/browserrun.cpp:324
+#: kparts/browserrun.cpp:332
 #, kde-format
 msgid ""
 "Open '%3'?\n"
@@ -13369,18 +13376,18 @@ msgstr ""
 "Tên: %2\n"
 "Kiểu : %1"
 
-#: kparts/browserrun.cpp:340
+#: kparts/browserrun.cpp:348
 #, kde-format
 msgid "&Open with '%1'"
 msgstr "&Mở bằng « %1 »"
 
-#: kparts/browserrun.cpp:342
+#: kparts/browserrun.cpp:350
 #, fuzzy
 #| msgid "&Open With..."
 msgid "&Open with..."
 msgstr "&Mở bằng..."
 
-#: kparts/browserrun.cpp:387
+#: kparts/browserrun.cpp:395
 msgid "&Open"
 msgstr "&Mở"
 
@@ -14629,6 +14636,14 @@ msgstr "&Mẹo của hôm nay"
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
+
+#~ msgid "&Abort"
+#~ msgstr "&Hủy bỏ"
+
+#, fuzzy
+#~| msgid "&Abort"
+#~ msgid "Abort?"
+#~ msgstr "&Hủy bỏ"
 
 #, fuzzy
 #~| msgid "Download New %1"

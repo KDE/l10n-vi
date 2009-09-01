@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-31 06:06+0200\n"
+"POT-Creation-Date: 2009-09-01 06:21+0200\n"
 "PO-Revision-Date: 2008-01-03 00:00+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -7384,7 +7384,7 @@ msgstr "Đừng hiện thông điệp này lần nữa"
 msgid "About %1"
 msgstr "Giới thiệu về %1"
 
-#: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:123
+#: kdeui/dialogs/kconfigdialog.cpp:69 kutils/kcmultidialog.cpp:125
 msgid "Configure"
 msgstr "Cấu hình"
 
@@ -9709,6 +9709,16 @@ msgstr "Thanh công cụ"
 #: kdeui/widgets/klanguagebutton.cpp:177
 msgid "without name"
 msgstr "không có tên"
+
+#: kdeui/widgets/kcmodule.cpp:170
+msgid "You will be asked to authenticate before saving"
+msgstr ""
+
+#: kdeui/widgets/kcmodule.cpp:174
+#, fuzzy
+#| msgid "Will not save configuration.\n"
+msgid "You are not allowed to save the configuration"
+msgstr "Sẽ không lưu cấu hình.\n"
 
 #: kdeui/widgets/kactionselector.cpp:94
 msgid "&Available:"
@@ -12729,8 +12739,11 @@ msgid "Send Confirmation"
 msgstr "Xác nhận"
 
 #: khtml/html/html_formimpl.cpp:440
-msgid "&Send Files"
-msgstr "&Gởi tập tin"
+#, fuzzy
+#| msgid "&Send Files"
+msgid "&Send File"
+msgid_plural "&Send Files"
+msgstr[0] "&Gởi tập tin"
 
 #: khtml/html/html_formimpl.cpp:2619
 #, fuzzy
@@ -13637,31 +13650,7 @@ msgstr "Không thể nạp thư viện giải thích « %1 »."
 msgid "Print Preview"
 msgstr "&Xem thử bản in..."
 
-#: kutils/kcmoduleproxy.cpp:131
-#, fuzzy
-#| msgid ""
-#| "<b>Changes in this section requires root access.</b><br />On applying "
-#| "your changes you will have to supply your root password."
-msgid ""
-"<b>Changes in this section require root access.</b><br />On applying your "
-"changes you will have to supply your root password."
-msgstr ""
-"<b>Thay đổi trong phần này cần thiết quyền của người chủ.</b><br />Khi áp "
-"dụng thay đổi thì bạn cần phải cung cấp mật khẩu chủ."
-
-#: kutils/kcmoduleproxy.cpp:138
-msgid ""
-"This section requires special permissions, probably for system-wide changes; "
-"therefore, it is required that you provide the root password to be able to "
-"change the module's properties. If you cannot provide the password, the "
-"changes of the module cannot be saved "
-msgstr ""
-"Phần này cần thiết quyền truy cập đặc biệt, rất có thể để thay đổi trên toàn "
-"hệ thống. Vì thế bạn cần phải cung cấp mật khẩu của người chủ để có khả năng "
-"thay đổi thuộc tính của mô-đun đó. Không thể cung cấp mật khẩu chủ thì không "
-"thể lưu thay đổi trong mô-đun."
-
-#: kutils/kcmoduleproxy.cpp:159
+#: kutils/kcmoduleproxy.cpp:165
 #, kde-format
 msgctxt "Argument is application name"
 msgid "This configuration section is already opened in %1"
@@ -14697,6 +14686,28 @@ msgstr "&Mẹo của hôm nay"
 #| msgid "No such interpreter \"%1\""
 msgid "No such function \"%1\""
 msgstr "Không có bộ giải thích « %1 »."
+
+#, fuzzy
+#~| msgid ""
+#~| "<b>Changes in this section requires root access.</b><br />On applying "
+#~| "your changes you will have to supply your root password."
+#~ msgid ""
+#~ "<b>Changes in this section require root access.</b><br />On applying your "
+#~ "changes you will have to supply your root password."
+#~ msgstr ""
+#~ "<b>Thay đổi trong phần này cần thiết quyền của người chủ.</b><br />Khi áp "
+#~ "dụng thay đổi thì bạn cần phải cung cấp mật khẩu chủ."
+
+#~ msgid ""
+#~ "This section requires special permissions, probably for system-wide "
+#~ "changes; therefore, it is required that you provide the root password to "
+#~ "be able to change the module's properties. If you cannot provide the "
+#~ "password, the changes of the module cannot be saved "
+#~ msgstr ""
+#~ "Phần này cần thiết quyền truy cập đặc biệt, rất có thể để thay đổi trên "
+#~ "toàn hệ thống. Vì thế bạn cần phải cung cấp mật khẩu của người chủ để có "
+#~ "khả năng thay đổi thuộc tính của mô-đun đó. Không thể cung cấp mật khẩu "
+#~ "chủ thì không thể lưu thay đổi trong mô-đun."
 
 #~ msgid "&Abort"
 #~ msgstr "&Hủy bỏ"
@@ -15903,9 +15914,6 @@ msgstr "Không có bộ giải thích « %1 »."
 #~ msgctxt "@action"
 #~ msgid "End"
 #~ msgstr "Cuối"
-
-#~ msgid "Will not save configuration.\n"
-#~ msgstr "Sẽ không lưu cấu hình.\n"
 
 #~ msgid "Folders"
 #~ msgstr "Thư mục"

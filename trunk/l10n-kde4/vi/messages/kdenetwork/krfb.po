@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-16 07:09+0200\n"
+"POT-Creation-Date: 2009-09-17 06:25+0200\n"
 "PO-Revision-Date: 2007-07-11 23:20+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -99,7 +99,7 @@ msgstr "%1@%2 (màn hình đã chia sẻ)"
 msgid "Address already in use"
 msgstr ""
 
-#: krfbserver.cpp:299
+#: krfbserver.cpp:302
 msgid ""
 "Your X11 Server does not support the required XTest extension version 2.2. "
 "Sharing your desktop is not possible."
@@ -107,7 +107,7 @@ msgstr ""
 "X11 của bạn không hỗ trợ phiên bản mở rộng XTest 2.2. Không thể chia sẻ màn "
 "hình."
 
-#: krfbserver.cpp:300
+#: krfbserver.cpp:303
 msgid "Desktop Sharing Error"
 msgstr "Lỗi chia sẻ màn hình"
 
@@ -115,7 +115,7 @@ msgstr "Lỗi chia sẻ màn hình"
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "Máy chủ tương hợp với VNC để chia sẻ màn hình KDE"
 
-#: main.cpp:46 trayicon.cpp:77 trayicon.cpp:92
+#: main.cpp:46
 msgid "Desktop Sharing"
 msgstr "Chia sẻ màn hình"
 
@@ -375,25 +375,27 @@ msgstr ""
 "không phải luôn luôn đoán đúng. Nếu máy tính của bạn nằm ở sau bức tường "
 "lửa, nó có thể ở địa chỉ khác hay không cho phép máy tính khác tới nó."
 
-#. i18n: file: configsecurity.ui:16
+#. i18n: file: configsecurity.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
 #: rc.cpp:3
 msgid "Allow uninvited connections"
 msgstr "Cho phép kết nối không giấy mời"
 
-#. i18n: file: configsecurity.ui:23
+#. i18n: file: configsecurity.ui:24
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
 #: rc.cpp:6
 msgid "Allow remote connections to control your desktop"
 msgstr "Cho phép người dùng ở xa điều khiển bàn phím và chuột"
 
-#. i18n: file: configsecurity.ui:36
+#. i18n: file: configsecurity.ui:37
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
 #: rc.cpp:9
-msgid "Ask before accepting an uninvited connection"
+#, fuzzy
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
 msgstr "Hỏi trước khi chấp nhận kết nối không giấy mời"
 
-#. i18n: file: configsecurity.ui:49
+#. i18n: file: configsecurity.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:12
 #, fuzzy
@@ -763,21 +765,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "teppi82@gmail.com"
 
-#: trayicon.cpp:38 trayicon.cpp:90
+#: trayicon.cpp:39 trayicon.cpp:91
 msgid "Desktop Sharing - disconnected"
 msgstr "Chia sẻ màn hình - đã ngừng kết nối"
 
-#: trayicon.cpp:47
+#: trayicon.cpp:48
 msgid "Enable Remote Control"
 msgstr "Cho phép điều khiển từ xa"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:49
 msgid "Disable Remote Control"
 msgstr "Không cho điều khiển từ xa"
 
-#: trayicon.cpp:78
-msgid "The remote user has been authenticated and is now connected."
-msgstr "Người dùng từ xa đã đăng nhập và đã kết nối."
+#: trayicon.cpp:79
+#, fuzzy, kde-format
+#| msgid "The remote user has closed the connection."
+msgid "The remote user %1 is now connected."
+msgstr "Người dùng từ xa đã ngừng kết nối"
 
 #: trayicon.cpp:81
 #, kde-format
@@ -787,6 +791,9 @@ msgstr "Chia sẻ màn hình - đã kết nối với %1"
 #: trayicon.cpp:93
 msgid "The remote user has closed the connection."
 msgstr "Người dùng từ xa đã ngừng kết nối"
+
+#~ msgid "The remote user has been authenticated and is now connected."
+#~ msgstr "Người dùng từ xa đã đăng nhập và đã kết nối."
 
 #~ msgid "Attepted uninvited connection from %1: connection refused"
 #~ msgstr "Chấp nhận kết nối không giấy mời từ %1: kết nối bị từ chối"

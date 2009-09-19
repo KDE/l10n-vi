@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-17 06:47+0200\n"
+"POT-Creation-Date: 2009-09-19 06:10+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -900,8 +900,9 @@ msgstr "Thuộc tính"
 
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:107
 #: libs/imageproperties/imagepropertiessidebar.cpp:85
-#: showfoto/setup/setup.cpp:107 utilities/setup/setup.cpp:178
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:157
+#: showfoto/setup/setup.cpp:107
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:157
+#: utilities/setup/setup.cpp:178
 msgid "Metadata"
 msgstr "Siêu dữ liệu"
 
@@ -926,7 +927,7 @@ msgstr "&Sắc thái"
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
 #: libs/widgets/metadata/metadataselector.cpp:233 digikam/digikamapp.cpp:2494
-#: utilities/imageeditor/editor/editorwindow.cpp:1949
+#: utilities/imageeditor/editor/editorwindow.cpp:1989
 #: utilities/queuemanager/queuemgrwindow.cpp:714
 #: utilities/lighttable/lighttablewindow.cpp:1621
 #: utilities/cameragui/cameraui.cpp:2264
@@ -4947,12 +4948,12 @@ msgstr "không sẵn sàng"
 
 #: libs/widgets/metadata/metadataselector.cpp:96
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:123
-#: utilities/setup/setupcollectionview.cpp:773
+#: utilities/setup/setupcollectionview.cpp:794
 msgid "Name"
 msgstr "Tên"
 
 #: libs/widgets/metadata/metadataselector.cpp:231 digikam/digikamapp.cpp:1016
-#: utilities/imageeditor/editor/editorwindow.cpp:374
+#: utilities/imageeditor/editor/editorwindow.cpp:381
 #: utilities/cameragui/cameraui.cpp:333
 msgid "Select All"
 msgstr "Chọn tất cả"
@@ -4983,12 +4984,90 @@ msgstr "Mục ghi IPTC"
 msgid "XMP viewer"
 msgstr ""
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:77
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:79
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "<Profile Description> (<File Name>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:148
+#, fuzzy
+#| msgid ""
+#| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
+#| "be compressed or expanded to fill the gamut of the destination device, so "
+#| "that gray balance is preserved but colorimetric accuracy may not be "
+#| "preserved.</p><p>In other words, if certain colors in an image fall "
+#| "outside of the range of colors that the output device can render, the "
+#| "picture intent will cause all the colors in the image to be adjusted so "
+#| "that the every color in the image falls within the range that can be "
+#| "rendered and so that the relationship between colors is preserved as much "
+#| "as possible.</p><p>This intent is most suitable for display of "
+#| "photographs and images, and is the default intent.</p></"
+#| "li><li><p><b>Absolute Colorimetric intent</b> causes any colors that fall "
+#| "outside the range that the output device can render are adjusted to the "
+#| "closest color that can be rendered, while all other colors are left "
+#| "unchanged.</p><p>This intent preserves the white point and is most "
+#| "suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
+#| "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
+#| "colors that fall outside the range that the output device can render are "
+#| "adjusted to the closest color that can be rendered, while all other "
+#| "colors are left unchanged. Proof intent does not preserve the white point."
+#| "</p></li><li><p><b>Saturation intent</b> preserves the saturation of "
+#| "colors in the image at the possible expense of hue and lightness.</"
+#| "p><p>Implementation of this intent remains somewhat problematic, and the "
+#| "ICC is still working on methods to achieve the desired effects.</"
+#| "p><p>This intent is most suitable for business graphics such as charts, "
+#| "where it is more important that the colors be vivid and contrast well "
+#| "with each other rather than a specific color.</p></li></ul>"
+msgid ""
+"<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
+"compressed or expanded to fill the gamut of the destination device, so that "
+"gray balance is preserved but colorimetric accuracy may not be preserved.</"
+"p><p>In other words, if certain colors in an image fall outside of the range "
+"of colors that the output device can render, the image intent will cause all "
+"the colors in the image to be adjusted so that the every color in the image "
+"falls within the range that can be rendered and so that the relationship "
+"between colors is preserved as much as possible.</p><p>This intent is most "
+"suitable for display of photographs and images, and is the default intent.</"
+"p></li><li><p><b>Absolute Colorimetric intent</b> causes any colors that "
+"fall outside the range that the output device can render to be adjusted to "
+"the closest color that can be rendered, while all other colors are left "
+"unchanged.</p><p>This intent preserves the white point and is most suitable "
+"for spot colors (Pantone, TruMatch, logo colors, ....)</p></"
+"li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
+"colors that fall outside the range that the output device can render are "
+"adjusted to the closest color that can be rendered, while all other colors "
+"are left unchanged. Proof intent does not preserve the white point.</p></"
+"li><li><p><b>Saturation intent</b> preserves the saturation of colors in the "
+"image at the possible expense of hue and lightness.</p><p>Implementation of "
+"this intent remains somewhat problematic, and the ICC is still working on "
+"methods to achieve the desired effects.</p><p>This intent is most suitable "
+"for business graphics such as charts, where it is more important that the "
+"colors be vivid and contrast well with each other rather than a specific "
+"color.</p></li></ul>"
+msgstr ""
+"<ul><li><p><b>Ý định dựa vào nhận thức</b> gây ra toàn bộ ảnh được nén hay "
+"mở rộng để chiếm toàn bộ thiết bị đích, để bảo tồn cán cân xám còn có thể "
+"không bảo tồn độ chính xác đo màu.</p><p>Tức là nếu một số màu sắc nào đó "
+"trong ảnh nằm ở ngoại phạm vi màu sắc mà thiết bị xuất có thể vẽ, ý định "
+"hình sẽ gây ra tất cả các màu sắc trong ảnh được điều chỉnh để mọi màu trong "
+"ảnh nằm trong phạm vi có thể được vẽ, và quan hệ giữa màu khác nhau được bảo "
+"tồn càng nhiều càng có thể.</p><p>Ý định này thích hợp khi hiển thị ảnh chụp "
+"và ảnh, và là ý định mặc định.</p></li><li><p><b>Ý định đo màu tuyệt đối</b> "
+"gây ra màu nào nằm ở ngoại phạm vi mà thiết bị xuất có thể vẽ sẽ được điều "
+"chỉnh thành màu gần nhất có thể được vẽ, còn để lại các màu khác không được "
+"thay đổi.</p><p>Ý định này bảo tồn điểm màu trắng và là rất thích hợp với "
+"màu sắc chấm (Pantone, TruMatch, màu sắc biểu hình ...).</p></li><li><p><b>Ý "
+"định đo màu tương đối</b> được xác định để cho màu nào nằm ở ngoại phạm vi "
+"mà thiết bị xuất có thể vẽ sẽ được điều chỉnh thành màu gần nhất có thể được "
+"vẽ, còn để lại các màu khác không được thay đổi. Ý định kiểm lỗi không bảo "
+"tồn điểm màu trắng.</p></li><li><p><b>Ý định độ bão hoà</b> bảo tồn độ bão "
+"hoà của màu sắc trong ảnh trả giá bằng sắc màu và độ nhạt.</p><p>Chưa thực "
+"hiện được ý định này, và ICC vẫn còn phát triển phương pháp tạo hiệu ứng đã "
+"muốn.</p><p>Ý định này thích hợp nhất với đồ họa doanh nghiệp như sơ đồ, "
+"trong đó quan trọng hơn có màu sắc sặc sỡ và tương phản nhau, hơn là một màu "
+"sắc riêng có chất lượng cao.</p></li></ul>"
 
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:798
 #: libs/widgets/common/histogramwidget.cpp:519
@@ -5719,7 +5798,7 @@ msgstr "Gốc"
 #: libs/widgets/imageplugins/imageregionwidget.cpp:223
 #: libs/widgets/imageplugins/imageregionwidget.cpp:258
 #: utilities/queuemanager/queuelist.cpp:244
-#: utilities/queuemanager/queuesettingsview.cpp:100
+#: utilities/queuemanager/queuesettingsview.cpp:101
 msgid "Target"
 msgstr "Đích"
 
@@ -6099,7 +6178,7 @@ msgid "Add to Existing Queue"
 msgstr ""
 
 #: digikam/contextmenuhelper.cpp:590 digikam/digikamapp.cpp:820
-#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:325
+#: showfoto/showfoto.cpp:572 utilities/imageeditor/editor/editorwindow.cpp:332
 #: utilities/lighttable/lighttablepreview.cpp:364
 #: utilities/lighttable/lighttablewindow.cpp:443
 #, fuzzy, kde-format
@@ -7679,7 +7758,7 @@ msgid "Next Image"
 msgstr "Ảnh kế"
 
 #: digikam/digikamapp.cpp:561 digikam/digikamapp.cpp:567
-#: utilities/imageeditor/editor/editorwindow.cpp:556
+#: utilities/imageeditor/editor/editorwindow.cpp:571
 #: utilities/lighttable/lighttablewindow.cpp:591
 #: utilities/cameragui/cameraui.cpp:499
 msgid "Previous Image"
@@ -7706,7 +7785,7 @@ msgid "Paste Selected Album Items"
 msgstr "Sắp xoá các tập ảnh đã chọn"
 
 #: digikam/digikamapp.cpp:609
-#: utilities/imageeditor/editor/editorwindow.cpp:517
+#: utilities/imageeditor/editor/editorwindow.cpp:532
 #: utilities/queuemanager/queuemgrwindow.cpp:410
 #: utilities/lighttable/lighttablewindow.cpp:516
 #: utilities/cameragui/cameraui.cpp:456
@@ -8034,13 +8113,13 @@ msgid "Rotated Right / Vert. Flipped"
 msgstr "Xoay phải/Lật dọc"
 
 #: digikam/digikamapp.cpp:1023
-#: utilities/imageeditor/editor/editorwindow.cpp:379
+#: utilities/imageeditor/editor/editorwindow.cpp:386
 #: utilities/cameragui/cameraui.cpp:340
 msgid "Select None"
 msgstr "Chọn Không gì"
 
 #: digikam/digikamapp.cpp:1055
-#: utilities/imageeditor/editor/editorwindow.cpp:394
+#: utilities/imageeditor/editor/editorwindow.cpp:401
 #: utilities/lighttable/lighttablewindow.cpp:485
 #, fuzzy
 #| msgid "Zoom to 1:1"
@@ -8048,14 +8127,14 @@ msgid "Zoom to 100%"
 msgstr "Phóng to 1:1 (không thay đổi)"
 
 #: digikam/digikamapp.cpp:1062
-#: utilities/imageeditor/editor/editorwindow.cpp:399
+#: utilities/imageeditor/editor/editorwindow.cpp:406
 #: utilities/lighttable/lighttablepreview.cpp:361
 #: utilities/lighttable/lighttablewindow.cpp:490
 msgid "Fit to &Window"
 msgstr "Vừa khít cửa &sổ"
 
 #: digikam/digikamapp.cpp:1074
-#: utilities/imageeditor/editor/editorwindow.cpp:443
+#: utilities/imageeditor/editor/editorwindow.cpp:450
 #: utilities/lighttable/lighttablepreview.cpp:362
 #: utilities/lighttable/lighttablewindow.cpp:501
 #: utilities/slideshow/slideshow.cpp:137
@@ -8075,7 +8154,7 @@ msgid "With All Sub-Albums"
 msgstr "Với mọi tập ảnh phụ"
 
 #: digikam/digikamapp.cpp:1110
-#: utilities/imageeditor/editor/editorwindow.cpp:536
+#: utilities/imageeditor/editor/editorwindow.cpp:551
 #: utilities/lighttable/lighttablewindow.cpp:534
 #: utilities/cameragui/cameraui.cpp:474
 #, fuzzy
@@ -8084,7 +8163,7 @@ msgid "Supported RAW Cameras"
 msgstr "Máy ảnh được lắp"
 
 #: digikam/digikamapp.cpp:1116
-#: utilities/imageeditor/editor/editorwindow.cpp:540
+#: utilities/imageeditor/editor/editorwindow.cpp:555
 #: utilities/cameragui/cameraui.cpp:478
 #, fuzzy
 #| msgid "Comments:"
@@ -8102,7 +8181,7 @@ msgid "Donate..."
 msgstr "Tăng tiền..."
 
 #: digikam/digikamapp.cpp:1143
-#: utilities/imageeditor/editor/editorwindow.cpp:532
+#: utilities/imageeditor/editor/editorwindow.cpp:547
 #: utilities/queuemanager/queuemgrwindow.cpp:424
 #: utilities/lighttable/lighttablewindow.cpp:530
 #: utilities/cameragui/cameraui.cpp:470
@@ -8350,7 +8429,7 @@ msgstr ""
 
 #: digikam/digikamapp.cpp:2534 digikam/digikamapp.cpp:2557
 #: showfoto/showfoto.cpp:1105
-#: utilities/imageeditor/editor/editorwindow.cpp:1162
+#: utilities/imageeditor/editor/editorwindow.cpp:1164
 #: utilities/cameragui/cameraui.cpp:1871
 msgid "Warning"
 msgstr "Cảnh báo"
@@ -8700,8 +8779,8 @@ msgstr ""
 "iptc.org</a>.</p>"
 
 #: showfoto/setup/setupmetadata.cpp:158 utilities/setup/setupmetadata.cpp:244
-#: utilities/setup/setupicc.cpp:522
-#: utilities/queuemanager/queuesettingsview.cpp:134
+#: utilities/setup/setupicc.cpp:496
+#: utilities/queuemanager/queuesettingsview.cpp:135
 msgid "Behavior"
 msgstr "Ứng xử"
 
@@ -9406,7 +9485,7 @@ msgstr "Ản&h"
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: utilities/cameragui/cameraui.rc:16
 #. i18n: ectx: Menu (Edit)
-#: rc.cpp:14 rc.cpp:41 rc.cpp:257 rc.cpp:386
+#: rc.cpp:14 rc.cpp:41 rc.cpp:281 rc.cpp:386
 msgid "&Edit"
 msgstr "&Sửa"
 
@@ -9422,7 +9501,7 @@ msgstr "&Sửa"
 #. i18n: ectx: Menu (View)
 #. i18n: file: utilities/cameragui/cameraui.rc:42
 #. i18n: ectx: Menu (View)
-#: rc.cpp:17 rc.cpp:44 rc.cpp:260 rc.cpp:332 rc.cpp:347 rc.cpp:392
+#: rc.cpp:17 rc.cpp:44 rc.cpp:284 rc.cpp:356 rc.cpp:371 rc.cpp:392
 msgid "&View"
 msgstr "&Xem"
 
@@ -9430,7 +9509,7 @@ msgstr "&Xem"
 #. i18n: ectx: Menu (Tools)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:20
 #. i18n: ectx: Menu (Tools)
-#: rc.cpp:20 rc.cpp:329
+#: rc.cpp:20 rc.cpp:353
 msgid "&Tools"
 msgstr "&Công cụ"
 
@@ -9452,7 +9531,7 @@ msgstr "&Xuất"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: showfoto/showfotoui.rc:87
 #. i18n: ectx: Menu (settings)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:84
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:87
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:41
 #. i18n: ectx: Menu (settings)
@@ -9460,7 +9539,7 @@ msgstr "&Xuất"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/cameragui/cameraui.rc:62
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:29 rc.cpp:65 rc.cpp:281 rc.cpp:338 rc.cpp:353 rc.cpp:398
+#: rc.cpp:29 rc.cpp:65 rc.cpp:305 rc.cpp:362 rc.cpp:377 rc.cpp:398
 msgid "&Settings"
 msgstr "Thiết &lập"
 
@@ -9468,7 +9547,7 @@ msgstr "Thiết &lập"
 #. i18n: ectx: Menu (help)
 #. i18n: file: showfoto/showfotoui.rc:78
 #. i18n: ectx: Menu (help)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:74
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:77
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:31
 #. i18n: ectx: Menu (help)
@@ -9476,7 +9555,7 @@ msgstr "Thiết &lập"
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/cameragui/cameraui.rc:52
 #. i18n: ectx: Menu (help)
-#: rc.cpp:32 rc.cpp:62 rc.cpp:278 rc.cpp:335 rc.cpp:350 rc.cpp:395
+#: rc.cpp:32 rc.cpp:62 rc.cpp:302 rc.cpp:359 rc.cpp:374 rc.cpp:395
 msgid "&Help"
 msgstr "Trợ g&iúp"
 
@@ -9540,7 +9619,7 @@ msgstr "Trợ g&iúp"
 #. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc:13
 #. i18n: ectx: ToolBar (ToolBar)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:98
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:101
 #. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:55
 #. i18n: ectx: ToolBar (ToolBar)
@@ -9552,8 +9631,8 @@ msgstr "Trợ g&iúp"
 #: rc.cpp:107 rc.cpp:113 rc.cpp:119 rc.cpp:125 rc.cpp:131 rc.cpp:137
 #: rc.cpp:143 rc.cpp:149 rc.cpp:155 rc.cpp:161 rc.cpp:167 rc.cpp:173
 #: rc.cpp:179 rc.cpp:185 rc.cpp:191 rc.cpp:197 rc.cpp:203 rc.cpp:209
-#: rc.cpp:215 rc.cpp:221 rc.cpp:239 rc.cpp:245 rc.cpp:251 rc.cpp:284
-#: rc.cpp:341 rc.cpp:356 rc.cpp:401
+#: rc.cpp:215 rc.cpp:221 rc.cpp:239 rc.cpp:245 rc.cpp:251 rc.cpp:308
+#: rc.cpp:365 rc.cpp:380 rc.cpp:401
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
 
@@ -9563,7 +9642,7 @@ msgstr "Thanh công cụ chính"
 #. i18n: ectx: Menu (File)
 #. i18n: file: utilities/lighttable/lighttablewindowui.rc:6
 #. i18n: ectx: Menu (File)
-#: rc.cpp:38 rc.cpp:254 rc.cpp:344
+#: rc.cpp:38 rc.cpp:278 rc.cpp:368
 msgid "&File"
 msgstr "&Tập tin"
 
@@ -9581,10 +9660,10 @@ msgstr "&Tập tin"
 #. i18n: ectx: Menu (Color)
 #. i18n: file: imageplugins/coreplugin/digikamimageplugin_core_ui.rc:6
 #. i18n: ectx: Menu (Color)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:51
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:54
 #. i18n: ectx: Menu (Color)
 #: rc.cpp:47 rc.cpp:86 rc.cpp:92 rc.cpp:110 rc.cpp:122 rc.cpp:140 rc.cpp:224
-#: rc.cpp:263
+#: rc.cpp:287
 msgid "&Color"
 msgstr "&Màu"
 
@@ -9604,10 +9683,10 @@ msgstr "&Màu"
 #. i18n: ectx: Menu (Enhance)
 #. i18n: file: imageplugins/inpainting/digikamimageplugin_inpainting_ui.rc:6
 #. i18n: ectx: Menu (Enhance)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:54
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:57
 #. i18n: ectx: Menu (Enhance)
 #: rc.cpp:50 rc.cpp:71 rc.cpp:80 rc.cpp:98 rc.cpp:170 rc.cpp:188 rc.cpp:230
-#: rc.cpp:248 rc.cpp:266
+#: rc.cpp:248 rc.cpp:290
 msgid "Enh&ance"
 msgstr "&Tăng cường"
 
@@ -9623,9 +9702,9 @@ msgstr "&Tăng cường"
 #. i18n: ectx: Menu (Transform)
 #. i18n: file: imageplugins/sheartool/digikamimageplugin_sheartool_ui.rc:6
 #. i18n: ectx: Menu (Transform)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:57
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:60
 #. i18n: ectx: Menu (Transform)
-#: rc.cpp:53 rc.cpp:176 rc.cpp:206 rc.cpp:212 rc.cpp:233 rc.cpp:242 rc.cpp:269
+#: rc.cpp:53 rc.cpp:176 rc.cpp:206 rc.cpp:212 rc.cpp:233 rc.cpp:242 rc.cpp:293
 msgid "Tra&nsform"
 msgstr "Chuyể&n dạng"
 
@@ -9639,9 +9718,9 @@ msgstr "Chuyể&n dạng"
 #. i18n: ectx: Menu (Decorate)
 #. i18n: file: imageplugins/superimpose/digikamimageplugin_superimpose_ui.rc:6
 #. i18n: ectx: Menu (Decorate)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:68
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:71
 #. i18n: ectx: Menu (Decorate)
-#: rc.cpp:56 rc.cpp:128 rc.cpp:134 rc.cpp:158 rc.cpp:218 rc.cpp:272
+#: rc.cpp:56 rc.cpp:128 rc.cpp:134 rc.cpp:158 rc.cpp:218 rc.cpp:296
 msgid "&Decorate"
 msgstr "T&rang trí"
 
@@ -9665,10 +9744,10 @@ msgstr "T&rang trí"
 #. i18n: ectx: Menu (Filters)
 #. i18n: file: imageplugins/coreplugin/digikamimageplugin_core_ui.rc:38
 #. i18n: ectx: Menu (Filters)
-#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:71
+#. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:74
 #. i18n: ectx: Menu (Filters)
 #: rc.cpp:59 rc.cpp:104 rc.cpp:116 rc.cpp:146 rc.cpp:152 rc.cpp:164 rc.cpp:182
-#: rc.cpp:194 rc.cpp:200 rc.cpp:236 rc.cpp:275
+#: rc.cpp:194 rc.cpp:200 rc.cpp:236 rc.cpp:299
 msgid "F&ilters"
 msgstr "Bộ &lọc"
 
@@ -9686,15 +9765,71 @@ msgstr "Mật độ :"
 msgid "&Depth"
 msgstr "Độ &sâu"
 
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, DateParserDialogWidget)
+#: rc.cpp:254
+#, fuzzy
+#| msgid "Image Date"
+msgid "Form"
+msgstr "Ngày ảnh"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:257 utilities/cameragui/cameraui.cpp:219
+msgid "Date format:"
+msgstr "Định dạng ngày:"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:60
+#. i18n: ectx: property (text), widget (QLabel, exampleLabel)
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:70
+#. i18n: ectx: property (text), widget (QLabel, dateFormatLink)
+#: rc.cpp:260 rc.cpp:263
+#, fuzzy
+#| msgid "Texture"
+msgid "TextLabel"
+msgstr "Họa tiết"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:266
+#, fuzzy
+#| msgid "Source:"
+msgid "Source"
+msgstr "Nguồn:"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:88
+#. i18n: ectx: property (text), widget (QRadioButton, fromImageBtn)
+#: rc.cpp:269
+#, fuzzy
+#| msgid "First Image"
+msgid "From Image"
+msgstr "Ảnh đầu"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, fixedDateBtn)
+#: rc.cpp:272
+#, fuzzy
+#| msgid "Image Date"
+msgid "Fixed Date"
+msgstr "Ngày ảnh"
+
+#. i18n: file: utilities/advancedrename/parsers/subparsers/dateparserdialogwidget.ui:116
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:275
+#, fuzzy
+#| msgid "&Title:"
+msgid "Time:"
+msgstr "&Tựa:"
+
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:287
+#: rc.cpp:311
 msgid "Image Settings"
 msgstr "Thiết lập ảnh"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:290
+#: rc.cpp:314
 #, fuzzy
 #| msgid "Image position:"
 msgid "Image Position"
@@ -9702,7 +9837,7 @@ msgstr "Vị trí ảnh:"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:49
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintAutoRotate)
-#: rc.cpp:293
+#: rc.cpp:317
 #, fuzzy
 #| msgid "&Auto-rotate page"
 msgid "Auto rotate"
@@ -9710,7 +9845,7 @@ msgstr "Xo&ay tự động trang"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:74
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:296
+#: rc.cpp:320
 #, fuzzy
 #| msgid "Scaling"
 msgid "Scaling"
@@ -9718,7 +9853,7 @@ msgstr "Co dãn"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:299
+#: rc.cpp:323
 #, fuzzy
 #| msgid "No such tag"
 msgid "&No scaling"
@@ -9726,7 +9861,7 @@ msgstr "Không có thẻ như vậy"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:99
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:302
+#: rc.cpp:326
 #, fuzzy
 #| msgid "Print image creation date"
 msgid "&Fit image to page"
@@ -9734,110 +9869,54 @@ msgstr "Hiện ngày tạo ảnh"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:136
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:305
+#: rc.cpp:329
 msgid "Enlarge smaller images"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:161
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:308
+#: rc.cpp:332
 msgid "&Scale to:"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:202
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:311
+#: rc.cpp:335
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr ""
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:229
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:314
+#: rc.cpp:338
 msgid "Millimeters"
 msgstr "Mili-mét"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:234
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:317
+#: rc.cpp:341
 msgid "Centimeters"
 msgstr "Cen-ti-mét"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:239
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:320
+#: rc.cpp:344
 msgid "Inches"
 msgstr "Insơ"
 
 #. i18n: file: utilities/imageeditor/printiface/printoptionspage.ui:250
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:323
+#: rc.cpp:347
 msgid "Keep ratio"
 msgstr "Giữ tỷ lệ"
 
 #. i18n: file: utilities/queuemanager/queuemgrwindowui.rc:6
 #. i18n: ectx: Menu (Queues)
-#: rc.cpp:326
+#: rc.cpp:350
 #, fuzzy
 #| msgid "Quique"
 msgid "&Queues"
 msgstr "Quique"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, DateParserDialogWidget)
-#: rc.cpp:359
-#, fuzzy
-#| msgid "Image Date"
-msgid "Form"
-msgstr "Ngày ảnh"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:362 utilities/cameragui/cameraui.cpp:219
-msgid "Date format:"
-msgstr "Định dạng ngày:"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:60
-#. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:70
-#. i18n: ectx: property (text), widget (QLabel, dateFormatLink)
-#: rc.cpp:365 rc.cpp:368
-#, fuzzy
-#| msgid "Texture"
-msgid "TextLabel"
-msgstr "Họa tiết"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:371
-#, fuzzy
-#| msgid "Source:"
-msgid "Source"
-msgstr "Nguồn:"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:88
-#. i18n: ectx: property (text), widget (QRadioButton, fromImageBtn)
-#: rc.cpp:374
-#, fuzzy
-#| msgid "First Image"
-msgid "From Image"
-msgstr "Ảnh đầu"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:98
-#. i18n: ectx: property (text), widget (QRadioButton, fixedDateBtn)
-#: rc.cpp:377
-#, fuzzy
-#| msgid "Image Date"
-msgid "Fixed Date"
-msgstr "Ngày ảnh"
-
-#. i18n: file: utilities/manualrename/parsers/subparsers/dateparserdialogwidget.ui:116
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:380
-#, fuzzy
-#| msgid "&Title:"
-msgid "Time:"
-msgstr "&Tựa:"
 
 #. i18n: file: utilities/cameragui/cameraui.rc:6
 #. i18n: ectx: Menu (Device)
@@ -10728,7 +10807,7 @@ msgstr ""
 "bộ lọc gỡ bỏ điểm ảnh nóng."
 
 #: imageplugins/hotpixels/hotpixelstool.cpp:177
-#: utilities/imageeditor/editor/editorwindow.cpp:1326
+#: utilities/imageeditor/editor/editorwindow.cpp:1328
 msgid "Loading: "
 msgstr "Đang tải: "
 
@@ -12267,7 +12346,7 @@ msgid "Manual Adjustment"
 msgstr "Điều chỉnh:"
 
 #: imageplugins/freerotation/freerotationtool.cpp:273
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:111
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:111
 #: utilities/cameragui/cameraui.cpp:297
 msgid "Settings"
 msgstr "Thiết lập"
@@ -14310,7 +14389,7 @@ msgstr "Tiếc là chưa chọn hồ sơ"
 
 #: imageplugins/coreplugin/iccprooftool.cpp:1000
 #: imageplugins/coreplugin/iccprooftool.cpp:1013
-#: utilities/setup/setupicc.cpp:829
+#: utilities/setup/setupicc.cpp:783
 msgid "Profile Error"
 msgstr "Lỗi hồ sơ"
 
@@ -15859,6 +15938,318 @@ msgstr ""
 "</table>\n"
 "</p>\n"
 
+#: utilities/advancedrename/advancedrenamewidget.cpp:194
+#, fuzzy
+#| msgid "Modified:"
+msgid "Modifiers"
+msgstr "Sửa đổi:"
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:199
+msgid "You can not apply modifiers to tokens marked with '(x)'."
+msgstr ""
+
+#: utilities/advancedrename/advancedrenamewidget.cpp:338
+#, fuzzy
+#| msgid "File Renaming Options"
+msgid "Renaming Options"
+msgstr "Tùy chọn thay tên tập tin"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:41
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "Directory Name"
+msgstr "Tên tập tin ảnh mới"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:45
+#, fuzzy
+#| msgid "Count:"
+msgctxt "current directory name"
+msgid "Current"
+msgstr "Đếm:"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:46
+msgid "current directory name"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:48
+msgctxt "directory name"
+msgid "Parent Directory Name"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
+msgid ""
+"directory name of the parent, additional '.' characters move up <br/>in the "
+"directory hierarchy"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:75
+msgid "Add Metadata Keywords"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:80
+msgid "Keyword separator:"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:120
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata Keywords"
+msgstr "Siêu dữ liệu"
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:155
+#, fuzzy
+#| msgid "Metadata"
+msgid "Metadata..."
+msgstr "Siêu dữ liệu"
+
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:158
+msgid "add metadata (use the quick access dialog for keycodes)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:97
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Add Date & Time"
+msgstr "Thêm Ngày và Giờ"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:109
+msgid "Enter custom date format"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:168
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time..."
+msgstr "Thêm Ngày và Giờ"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:172
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time"
+msgstr "Thêm Ngày và Giờ"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:173
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "date and time (standard format)"
+msgstr "Lọc nhiễu :"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:175
+#, fuzzy
+#| msgid "Add Date && Time"
+msgid "Date && Time (key)"
+msgstr "Thêm Ngày và Giờ"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:176
+msgid "date and time (key = ISO|Text|Locale)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:178
+msgid "Date && Time (custom format)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:179
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "date and time"
+msgstr "Lọc nhiễu :"
+
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:36
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:38
+#, fuzzy
+#| msgid "Add Camera Name"
+msgid "Camera Name"
+msgstr "Thêm tên máy ảnh"
+
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:38
+#, fuzzy
+#| msgid "Camera filenames"
+msgid "camera name"
+msgstr "Tên tập tin máy ảnh"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:63
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Add sequence number"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:69
+#, fuzzy
+#| msgid "Lightness"
+msgctxt "number of digits"
+msgid "Digits:"
+msgstr "Độ nhạt"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:70
+#, fuzzy
+#| msgid "Strength:"
+msgctxt "start of sequence number range"
+msgid "Start:"
+msgstr "Độ mạnh:"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:71
+#, fuzzy
+#| msgid "Style:"
+msgctxt "stepping used for sequence number range"
+msgid "Step:"
+msgstr "Kiểu dáng:"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:82
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom Range"
+msgstr "Tự chọn"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:123
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number..."
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:129
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "sequence number"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number (start)"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:132
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "sequence number (custom start)"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence Number (start, step)"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:135
+msgid "sequence number (custom start + step)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:40
+#: utilities/queuemanager/queuelist.cpp:243
+#: utilities/searchwindow/searchfields.cpp:137
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "File Name"
+msgstr "Tên tập tin ảnh mới"
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:42
+#, fuzzy
+#| msgid "New Image File Name"
+msgctxt "image filename"
+msgid "Filename"
+msgstr "Tên tập tin ảnh mới"
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:43
+#, fuzzy
+#| msgid "Show file name"
+msgid "image filename"
+msgstr "Hiện tên tập tin"
+
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
+#, fuzzy
+#| msgid "Range:"
+msgid "Range"
+msgstr "Phạm vi:"
+
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
+msgid "display only a specific range"
+msgstr ""
+
+#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "&Title:"
+msgid "Trimmed"
+msgstr "&Tựa:"
+
+#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
+#, fuzzy
+#| msgid "German translations and beta tester"
+msgid "remove leading, trailing and extra whitespace"
+msgstr "Bản dịch Đức và người thử B"
+
+#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
+#, fuzzy
+#| msgid "Lower"
+msgid "Lowercase"
+msgstr "Chữ thường"
+
+#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
+#, fuzzy
+msgid "convert to lowercase"
+msgstr "Chuyển vào Rác"
+
+#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
+#, fuzzy
+#| msgid "Upper"
+msgid "Uppercase"
+msgstr "Trên"
+
+#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
+#, fuzzy
+msgid "convert to uppercase"
+msgstr "Chuyển vào Rác"
+
+#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
+#, fuzzy
+#| msgid "Relative"
+msgid "Replace"
+msgstr "Tương đối"
+
+#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
+#, fuzzy
+#| msgid "Relative"
+msgid "replace text"
+msgstr "Tương đối"
+
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:34
+msgid "First Letter Of Each Word Uppercase"
+msgstr ""
+
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:35
+msgid "convert the first letter of each word to uppercase"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenameinput.cpp:83
+#, fuzzy
+#| msgid "Enter new name (without extension):"
+msgid "Enter renaming string (without extension)"
+msgstr "Nhập vào tên mới (không có phần mở rộng):"
+
+#: utilities/advancedrename/advancedrenameinput.cpp:84
+msgid ""
+"<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
+"words.<br/>To mark a token, press the left mouse button while it is "
+"highlighted.</p>"
+msgstr ""
+
+#: utilities/advancedrename/advancedrenameinput.cpp:330
+#, fuzzy
+#| msgid "Align text to the left"
+msgid "Move selected token to the left"
+msgstr "Canh lề đoạn bên trái"
+
+#: utilities/advancedrename/advancedrenameinput.cpp:331
+#, fuzzy
+#| msgid "Align text to the right"
+msgid "Move selected token to the right"
+msgstr "Canh lề đoạn bên phải"
+
 #: utilities/gpssearch/gpssearchview.cpp:110
 msgid ""
 "To perform a search over map, use CTRL+left mouse button to draw a rectangle "
@@ -16426,100 +16817,101 @@ msgstr ""
 msgid "It was not possible to add a collection for the following paths:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:498
+#: utilities/setup/setupcollectionview.cpp:515
+#: utilities/setup/setupcollectionview.cpp:518
 msgid "Choose the folder containing your collection"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:526
+#: utilities/setup/setupcollectionview.cpp:547
 #, kde-format
 msgid "You have previously added a collection that contains the path \"%1\"."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:546
+#: utilities/setup/setupcollectionview.cpp:567
 #, fuzzy
 #| msgid "Album Collection"
 msgid "Problem Adding Collection"
 msgstr "Tập hợp tập ảnh"
 
-#: utilities/setup/setupcollectionview.cpp:553
+#: utilities/setup/setupcollectionview.cpp:574
 #, fuzzy
 #| msgid "By Collection"
 msgid "Adding Collection"
 msgstr "Theo tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:560
+#: utilities/setup/setupcollectionview.cpp:581
 msgid "Your new collection will be created with this name:"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:628
+#: utilities/setup/setupcollectionview.cpp:649
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove Collection"
 msgstr "Theo tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:630
+#: utilities/setup/setupcollectionview.cpp:651
 #, kde-format
 msgid ""
 "Do you want to remove the collection \"%1\" from your list of collections?"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:631
+#: utilities/setup/setupcollectionview.cpp:652
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove Collection?"
 msgstr "Theo tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:660
+#: utilities/setup/setupcollectionview.cpp:681
 #, fuzzy
 #| msgid "Collections"
 msgid "Local Collections"
 msgstr "Tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:661
+#: utilities/setup/setupcollectionview.cpp:682
 msgid "Collections on Removable Media"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:662
+#: utilities/setup/setupcollectionview.cpp:683
 #, fuzzy
 #| msgid "Collections"
 msgid "Collections on Network Shares"
 msgstr "Tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:674
+#: utilities/setup/setupcollectionview.cpp:695
 #, fuzzy
 #| msgid "By Collection"
 msgid "Add Collection"
 msgstr "Theo tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:694
+#: utilities/setup/setupcollectionview.cpp:715
 #, kde-format
 msgid "Col. %1"
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:741
+#: utilities/setup/setupcollectionview.cpp:762
 msgid "This collection is currently not available."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:743
+#: utilities/setup/setupcollectionview.cpp:764
 msgid "No problems found, enjoy this collection."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:745
+#: utilities/setup/setupcollectionview.cpp:766
 msgid "This collection is hidden."
 msgstr ""
 
-#: utilities/setup/setupcollectionview.cpp:754
+#: utilities/setup/setupcollectionview.cpp:775
 #, fuzzy
 #| msgid "By Collection"
 msgid "Remove collection"
 msgstr "Theo tập hợp"
 
-#: utilities/setup/setupcollectionview.cpp:774
+#: utilities/setup/setupcollectionview.cpp:795
 #: utilities/setup/setupcamera.cpp:151
 msgid "Path"
 msgstr "Đường dẫn"
 
-#: utilities/setup/setupcollectionview.cpp:775
+#: utilities/setup/setupcollectionview.cpp:796
 #, fuzzy
 #| msgid "Statistics"
 msgid "Status"
@@ -17379,6 +17771,7 @@ msgid "Output device profile:"
 msgstr "Thiết bị xuất"
 
 #: utilities/setup/setupicc.cpp:421
+#: utilities/imageeditor/canvas/softproofdialog.cpp:111
 #, fuzzy
 #| msgid ""
 #| "<p>You must select the profile for your output device (usually, your "
@@ -17441,109 +17834,31 @@ msgstr ""
 msgid "Rendering Intents:"
 msgstr "Ý định vẽ:"
 
-#: utilities/setup/setupicc.cpp:488
-#, fuzzy
-#| msgid ""
-#| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
-#| "be compressed or expanded to fill the gamut of the destination device, so "
-#| "that gray balance is preserved but colorimetric accuracy may not be "
-#| "preserved.</p><p>In other words, if certain colors in an image fall "
-#| "outside of the range of colors that the output device can render, the "
-#| "picture intent will cause all the colors in the image to be adjusted so "
-#| "that the every color in the image falls within the range that can be "
-#| "rendered and so that the relationship between colors is preserved as much "
-#| "as possible.</p><p>This intent is most suitable for display of "
-#| "photographs and images, and is the default intent.</p></"
-#| "li><li><p><b>Absolute Colorimetric intent</b> causes any colors that fall "
-#| "outside the range that the output device can render are adjusted to the "
-#| "closest color that can be rendered, while all other colors are left "
-#| "unchanged.</p><p>This intent preserves the white point and is most "
-#| "suitable for spot colors (Pantone, TruMatch, logo colors, ...).</p></"
-#| "li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
-#| "colors that fall outside the range that the output device can render are "
-#| "adjusted to the closest color that can be rendered, while all other "
-#| "colors are left unchanged. Proof intent does not preserve the white point."
-#| "</p></li><li><p><b>Saturation intent</b> preserves the saturation of "
-#| "colors in the image at the possible expense of hue and lightness.</"
-#| "p><p>Implementation of this intent remains somewhat problematic, and the "
-#| "ICC is still working on methods to achieve the desired effects.</"
-#| "p><p>This intent is most suitable for business graphics such as charts, "
-#| "where it is more important that the colors be vivid and contrast well "
-#| "with each other rather than a specific color.</p></li></ul>"
-msgid ""
-"<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to be "
-"compressed or expanded to fill the gamut of the destination device, so that "
-"gray balance is preserved but colorimetric accuracy may not be preserved.</"
-"p><p>In other words, if certain colors in an image fall outside of the range "
-"of colors that the output device can render, the image intent will cause all "
-"the colors in the image to be adjusted so that the every color in the image "
-"falls within the range that can be rendered and so that the relationship "
-"between colors is preserved as much as possible.</p><p>This intent is most "
-"suitable for display of photographs and images, and is the default intent.</"
-"p></li><li><p><b>Absolute Colorimetric intent</b> causes any colors that "
-"fall outside the range that the output device can render to be adjusted to "
-"the closest color that can be rendered, while all other colors are left "
-"unchanged.</p><p>This intent preserves the white point and is most suitable "
-"for spot colors (Pantone, TruMatch, logo colors, ....)</p></"
-"li><li><p><b>Relative Colorimetric intent</b> is defined such that any "
-"colors that fall outside the range that the output device can render are "
-"adjusted to the closest color that can be rendered, while all other colors "
-"are left unchanged. Proof intent does not preserve the white point.</p></"
-"li><li><p><b>Saturation intent</b> preserves the saturation of colors in the "
-"image at the possible expense of hue and lightness.</p><p>Implementation of "
-"this intent remains somewhat problematic, and the ICC is still working on "
-"methods to achieve the desired effects.</p><p>This intent is most suitable "
-"for business graphics such as charts, where it is more important that the "
-"colors be vivid and contrast well with each other rather than a specific "
-"color.</p></li></ul>"
-msgstr ""
-"<ul><li><p><b>Ý định dựa vào nhận thức</b> gây ra toàn bộ ảnh được nén hay "
-"mở rộng để chiếm toàn bộ thiết bị đích, để bảo tồn cán cân xám còn có thể "
-"không bảo tồn độ chính xác đo màu.</p><p>Tức là nếu một số màu sắc nào đó "
-"trong ảnh nằm ở ngoại phạm vi màu sắc mà thiết bị xuất có thể vẽ, ý định "
-"hình sẽ gây ra tất cả các màu sắc trong ảnh được điều chỉnh để mọi màu trong "
-"ảnh nằm trong phạm vi có thể được vẽ, và quan hệ giữa màu khác nhau được bảo "
-"tồn càng nhiều càng có thể.</p><p>Ý định này thích hợp khi hiển thị ảnh chụp "
-"và ảnh, và là ý định mặc định.</p></li><li><p><b>Ý định đo màu tuyệt đối</b> "
-"gây ra màu nào nằm ở ngoại phạm vi mà thiết bị xuất có thể vẽ sẽ được điều "
-"chỉnh thành màu gần nhất có thể được vẽ, còn để lại các màu khác không được "
-"thay đổi.</p><p>Ý định này bảo tồn điểm màu trắng và là rất thích hợp với "
-"màu sắc chấm (Pantone, TruMatch, màu sắc biểu hình ...).</p></li><li><p><b>Ý "
-"định đo màu tương đối</b> được xác định để cho màu nào nằm ở ngoại phạm vi "
-"mà thiết bị xuất có thể vẽ sẽ được điều chỉnh thành màu gần nhất có thể được "
-"vẽ, còn để lại các màu khác không được thay đổi. Ý định kiểm lỗi không bảo "
-"tồn điểm màu trắng.</p></li><li><p><b>Ý định độ bão hoà</b> bảo tồn độ bão "
-"hoà của màu sắc trong ảnh trả giá bằng sắc màu và độ nhạt.</p><p>Chưa thực "
-"hiện được ý định này, và ICC vẫn còn phát triển phương pháp tạo hiệu ứng đã "
-"muốn.</p><p>Ý định này thích hợp nhất với đồ họa doanh nghiệp như sơ đồ, "
-"trong đó quan trọng hơn có màu sắc sặc sỡ và tương phản nhau, hơn là một màu "
-"sắc riêng có chất lượng cao.</p></li></ul>"
-
-#: utilities/setup/setupicc.cpp:523
+#: utilities/setup/setupicc.cpp:497
 #, fuzzy
 #| msgid "Profile ID"
 msgid "Profiles"
 msgstr "ID hồ sơ :"
 
-#: utilities/setup/setupicc.cpp:524
+#: utilities/setup/setupicc.cpp:498
 #, fuzzy
 #| msgid "Advanced"
 msgid "Advanced"
 msgstr "Cấp cao"
 
-#: utilities/setup/setupicc.cpp:705
+#: utilities/setup/setupicc.cpp:659
 #, fuzzy
 #| msgid "ICC Profiles Settings"
 msgid "Monitor Profile From System Settings"
 msgstr "Thiết lập hồ sơ ICC"
 
-#: utilities/setup/setupicc.cpp:728
+#: utilities/setup/setupicc.cpp:682
 #, fuzzy
 #| msgid "<p>Sorry, there are no ICC profiles files in "
 msgid "No ICC profiles files found."
 msgstr "<p>Tiếc là không có tập tin hồ sơ ICC nằm trong "
 
-#: utilities/setup/setupicc.cpp:742
+#: utilities/setup/setupicc.cpp:696
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:341
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:437
 #, fuzzy
@@ -17551,39 +17866,39 @@ msgstr "<p>Tiếc là không có tập tin hồ sơ ICC nằm trong "
 msgid "No Profile Available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: utilities/setup/setupicc.cpp:743
+#: utilities/setup/setupicc.cpp:697
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Display Profile Available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: utilities/setup/setupicc.cpp:744
+#: utilities/setup/setupicc.cpp:698
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:476
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Input Profile Available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: utilities/setup/setupicc.cpp:745
+#: utilities/setup/setupicc.cpp:699
 #, fuzzy
 #| msgid "No profile available..."
 msgid "No Output Profile Available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: utilities/setup/setupicc.cpp:829
+#: utilities/setup/setupicc.cpp:783
 #, fuzzy
 #| msgid "No item selected"
 msgid "No profile is selected."
 msgstr "Chưa chọn mục"
 
-#: utilities/setup/setupicc.cpp:849
+#: utilities/setup/setupicc.cpp:803
 #, fuzzy
 #| msgid "None"
 msgctxt "none of the paths"
 msgid "none"
 msgstr "Không có"
 
-#: utilities/setup/setupicc.cpp:852
+#: utilities/setup/setupicc.cpp:806
 #, kde-format
 msgid ""
 "On Linux, the default search paths include <ul><li>/usr/share/color/icc</"
@@ -17946,6 +18261,68 @@ msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
 msgid "A metadata template named '%1' already exist."
 msgstr "Tên thẻ đã có."
 
+#: utilities/imageeditor/canvas/softproofdialog.cpp:81
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing Options"
+msgstr "Kiểm lỗi mềm"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:88
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing On"
+msgstr "Kiểm lỗi mềm"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:89
+msgid "Enable soft-proofing color managed view"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:90
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing Off"
+msgstr "Kiểm lỗi mềm"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:91
+msgid "Disable soft-proofing color managed view"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:99
+msgid "<b>Configure the Soft Proofing View</b>"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:108
+msgid "Profile of the output device to simulate:"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:117
+#, fuzzy
+#| msgid ""
+#| "<p>You can use this button to get more detailed information about the "
+#| "selected soft proof profile.</p>"
+msgid ""
+"Press this button to get detailed information about the selected proofing "
+"profile.</p>"
+msgstr ""
+"<p>Bạn có thể bấm cái nút này để xem thông tin chi tiết hơn về hồ sơ kiểm "
+"lỗi mềm đã chọn.</p>"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:133
+#, fuzzy
+#| msgid "Rendering Intent:"
+msgid "Rendering intent:"
+msgstr "Ý định vẽ:"
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:138
+msgid "Highlight out-of-gamut colors"
+msgstr ""
+
+#: utilities/imageeditor/canvas/softproofdialog.cpp:140
+#, fuzzy
+#| msgid "Regularity:"
+msgid "Highlighting color:"
+msgstr "Độ đều đặn:"
+
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:125
 #, fuzzy
 #| msgid "Color Profiles Directory"
@@ -18170,61 +18547,71 @@ msgstr "Lỗi nạp ảnh « %1 »"
 msgid "Loading Image Plugins"
 msgstr "Đang nạp các phần bổ sung ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:297
+#: utilities/imageeditor/editor/editorwindow.cpp:304
 #: utilities/lighttable/lighttablewindow.cpp:399
 msgid "&First"
 msgstr "Đầ&u"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:302
+#: utilities/imageeditor/editor/editorwindow.cpp:309
 #: utilities/lighttable/lighttablewindow.cpp:405
 msgid "&Last"
 msgstr "&Cuối"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:320
+#: utilities/imageeditor/editor/editorwindow.cpp:327
 msgid "Print Image..."
 msgstr "In ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:339
+#: utilities/imageeditor/editor/editorwindow.cpp:346
 msgid "Undo"
 msgstr "Hủy bước"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:358
+#: utilities/imageeditor/editor/editorwindow.cpp:365
 msgid "Redo"
 msgstr "Làm lại"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:404
+#: utilities/imageeditor/editor/editorwindow.cpp:411
 msgid "Fit to &Selection"
 msgstr "&Vừa khít vùng chọn"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:409
+#: utilities/imageeditor/editor/editorwindow.cpp:416
 msgid ""
 "This option can be used to zoom the image to the current selection area."
 msgstr ""
 "Tùy chọn này có thể được dùng để thu/phóng ảnh vào vùng chọn hiện thời."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:437
+#: utilities/imageeditor/editor/editorwindow.cpp:444
 msgid "Zoom"
 msgstr "Thu/Phóng"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:449
+#: utilities/imageeditor/editor/editorwindow.cpp:456
 msgid "Under-Exposure Indicator"
 msgstr "Cái chỉ chụp non"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:455
+#: utilities/imageeditor/editor/editorwindow.cpp:462
 msgid "Over-Exposure Indicator"
 msgstr "Cái chỉ phơi quá lâu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:460
+#: utilities/imageeditor/editor/editorwindow.cpp:467
 #, fuzzy
 #| msgid "Color Managed View"
 msgid "Color-Managed View"
 msgstr "Ô xem đã Quản lý Màu"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:470
+#: utilities/imageeditor/editor/editorwindow.cpp:472
+msgid "Soft Proofing Options..."
+msgstr ""
+
+#: utilities/imageeditor/editor/editorwindow.cpp:476
+#, fuzzy
+#| msgid "Soft-proofing"
+msgid "Soft Proofing View"
+msgstr "Kiểm lỗi mềm"
+
+#: utilities/imageeditor/editor/editorwindow.cpp:485
 msgid "Crop"
 msgstr "Xén"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:475
+#: utilities/imageeditor/editor/editorwindow.cpp:490
 msgid ""
 "This option can be used to crop the image. Select a region of the image to "
 "enable this action."
@@ -18232,62 +18619,62 @@ msgstr ""
 "Tùy chọn này có thể được dùng để xén ảnh. Hãy chọn một vùng trên ảnh để bật "
 "hành động này."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:480
+#: utilities/imageeditor/editor/editorwindow.cpp:495
 msgid "Flip Horizontally"
 msgstr "Lật ngang"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:486
+#: utilities/imageeditor/editor/editorwindow.cpp:501
 msgid "Flip Vertically"
 msgstr "Lật dọc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:494
+#: utilities/imageeditor/editor/editorwindow.cpp:509
 msgid "Rotate Left"
 msgstr "Xoay trái"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:500
+#: utilities/imageeditor/editor/editorwindow.cpp:515
 msgid "Rotate Right"
 msgstr "Xoay phải"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:528
+#: utilities/imageeditor/editor/editorwindow.cpp:543
 #: utilities/queuemanager/queuemgrwindow.cpp:420
 #: utilities/lighttable/lighttablewindow.cpp:526
 msgid "Donate Money..."
 msgstr "Tăng tiền..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:551
+#: utilities/imageeditor/editor/editorwindow.cpp:566
 #, fuzzy
 #| msgid "&Tools"
 msgid "Close Tool"
 msgstr "&Công cụ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:572
-#: utilities/imageeditor/editor/editorwindow.cpp:1293
+#: utilities/imageeditor/editor/editorwindow.cpp:587
+#: utilities/imageeditor/editor/editorwindow.cpp:1295
 msgid "No selection"
 msgstr "Chưa chọn gì"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:576
+#: utilities/imageeditor/editor/editorwindow.cpp:591
 msgid "Information about current selection area"
 msgstr "Thông tin về vùng chọn hiện thời"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:582
+#: utilities/imageeditor/editor/editorwindow.cpp:597
 msgid "Information about image size"
 msgstr "Thông tin về kích cỡ của ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:634
+#: utilities/imageeditor/editor/editorwindow.cpp:649
 #, fuzzy
 #| msgid "General"
 msgctxt "general editor shortcuts"
 msgid "General"
 msgstr "Chung"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:635
+#: utilities/imageeditor/editor/editorwindow.cpp:650
 #, fuzzy
 #| msgid "Loading Image Plugins"
 msgctxt "imageplugins shortcuts"
 msgid "Image Plugins"
 msgstr "Đang nạp các phần bổ sung ảnh"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1159
+#: utilities/imageeditor/editor/editorwindow.cpp:1161
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to delete file \"%1\"\n"
@@ -18299,11 +18686,11 @@ msgstr ""
 "Sắp xoá tập tin « %1 »\n"
 "Bạn có chắc chưa?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1163
+#: utilities/imageeditor/editor/editorwindow.cpp:1165
 msgid "Overwrite"
 msgstr "Ghi đè"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1180
+#: utilities/imageeditor/editor/editorwindow.cpp:1182
 #, kde-format
 msgid ""
 "The image '%1' has been modified.\n"
@@ -18312,11 +18699,11 @@ msgstr ""
 "Ảnh « %1 » đã bị sửa đổi.\n"
 "Bạn có muốn lưu nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1251
+#: utilities/imageeditor/editor/editorwindow.cpp:1253
 msgid "Please wait while the image is being saved..."
 msgstr "Hãy đời trong khi lưu ảnh..."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1360
+#: utilities/imageeditor/editor/editorwindow.cpp:1362
 #, fuzzy, kde-format
 #| msgid ""
 #| "Cannot find the ICC color-space profile file. ICC profiles path seems to "
@@ -18332,13 +18719,13 @@ msgstr ""
 "Hãy kiểm tra lại cấu hình quản lý màu trong thiết lập của digiKam, để thẩm "
 "tra đường dẫn ICC."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1405
+#: utilities/imageeditor/editor/editorwindow.cpp:1407
 msgid "Saving: "
 msgstr "Đang lưu: "
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1419
-#: utilities/imageeditor/editor/editorwindow.cpp:1460
-#: utilities/imageeditor/editor/editorwindow.cpp:1671
+#: utilities/imageeditor/editor/editorwindow.cpp:1421
+#: utilities/imageeditor/editor/editorwindow.cpp:1462
+#: utilities/imageeditor/editor/editorwindow.cpp:1673
 #, kde-format
 msgid ""
 "Failed to save file\n"
@@ -18351,43 +18738,43 @@ msgstr ""
 "vào\n"
 "« %2 » ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1538
-#: utilities/imageeditor/editor/editorwindow.cpp:1731
+#: utilities/imageeditor/editor/editorwindow.cpp:1540
+#: utilities/imageeditor/editor/editorwindow.cpp:1733
 #, kde-format
 msgid "Could not open a temporary file in the folder \"%1\": %2 (%3)"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1567
+#: utilities/imageeditor/editor/editorwindow.cpp:1569
 #, fuzzy
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG 2000 image"
 msgstr "Chất lượng JPEG 2000:"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1568
+#: utilities/imageeditor/editor/editorwindow.cpp:1570
 msgid "Progressive Graphics File"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1590
+#: utilities/imageeditor/editor/editorwindow.cpp:1592
 msgid "New Image File Name"
 msgstr "Tên tập tin ảnh mới"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1662
+#: utilities/imageeditor/editor/editorwindow.cpp:1664
 #, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "Định dạng tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1701
+#: utilities/imageeditor/editor/editorwindow.cpp:1703
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Tập tin tên « %1 » đã có. Bạn có chắc muốn ghi đè lên nó không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1705
-#: utilities/imageeditor/editor/editorwindow.cpp:1768
+#: utilities/imageeditor/editor/editorwindow.cpp:1707
+#: utilities/imageeditor/editor/editorwindow.cpp:1770
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1763
+#: utilities/imageeditor/editor/editorwindow.cpp:1765
 #, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -18396,27 +18783,27 @@ msgstr ""
 "Bạn không có quyền ghi tập tin tên « %1 ». Bạn có chắc muốn ghi đè lên nó "
 "không?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1816
+#: utilities/imageeditor/editor/editorwindow.cpp:1818
 msgid "Failed to overwrite original file"
 msgstr "Lỗi ghi đè lên tập tin gốc"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1817
+#: utilities/imageeditor/editor/editorwindow.cpp:1819
 msgid "Error Saving File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1858
+#: utilities/imageeditor/editor/editorwindow.cpp:1882
 #, fuzzy
 #| msgid "Color Managed View is enabled"
 msgid "Color-Managed View is enabled."
 msgstr "Ô xem đả quản lý màu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1860
+#: utilities/imageeditor/editor/editorwindow.cpp:1884
 #, fuzzy
 #| msgid "Color Managed View is disabled"
 msgid "Color-Managed View is disabled."
 msgstr "Ô xem đả quản lý màu bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1864
+#: utilities/imageeditor/editor/editorwindow.cpp:1888
 #, fuzzy
 #| msgid ""
 #| "Color Management is not configured, so the Color Managed View is not "
@@ -18427,19 +18814,19 @@ msgid ""
 msgstr ""
 "Chưa cấu hình khả năng Quản lý Màu, vì vậy không có sẵn Ô xem đã Quản lý Màu."
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1882
+#: utilities/imageeditor/editor/editorwindow.cpp:1922
 msgid "Under-Exposure indicator is enabled"
 msgstr "Cái chỉ chụp non đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1883
+#: utilities/imageeditor/editor/editorwindow.cpp:1923
 msgid "Under-Exposure indicator is disabled"
 msgstr "Cái chỉ chụp non bị tắt"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1899
+#: utilities/imageeditor/editor/editorwindow.cpp:1939
 msgid "Over-Exposure indicator is enabled"
 msgstr "Cái chỉ phơi quá lâu đã bật"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1900
+#: utilities/imageeditor/editor/editorwindow.cpp:1940
 msgid "Over-Exposure indicator is disabled"
 msgstr "Cái chỉ phơi quá lâu bị tắt"
 
@@ -18985,14 +19372,6 @@ msgstr "Đây là danh sách các mục sắp bị xoá."
 msgid "Thumbnail"
 msgstr "Hiện các ảnh mẫu"
 
-#: utilities/queuemanager/queuelist.cpp:243
-#: utilities/searchwindow/searchfields.cpp:137
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:40
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "File Name"
-msgstr "Tên tập tin ảnh mới"
-
 #: utilities/queuemanager/assignedlist.cpp:117
 #, fuzzy
 #| msgid "This is the list of items that are about to be deleted."
@@ -19285,29 +19664,29 @@ msgstr ""
 msgid "History"
 msgstr "Biểu đồ tần xuất"
 
-#: utilities/queuemanager/queuesettingsview.cpp:112
+#: utilities/queuemanager/queuesettingsview.cpp:113
 #, fuzzy
 #| msgid "Image Files"
 msgid "If Target File Exists:"
 msgstr "Tập tin ảnh"
 
-#: utilities/queuemanager/queuesettingsview.cpp:116
+#: utilities/queuemanager/queuesettingsview.cpp:117
 #, fuzzy
 #| msgid "Overwrite File?"
 msgid "Overwrite automatically"
 msgstr "Ghi đè tập tin không?"
 
-#: utilities/queuemanager/queuesettingsview.cpp:117
+#: utilities/queuemanager/queuesettingsview.cpp:118
 msgid "Open rename-file dialog"
 msgstr ""
 
-#: utilities/queuemanager/queuesettingsview.cpp:146
+#: utilities/queuemanager/queuesettingsview.cpp:147
 #, fuzzy
 #| msgid "Camera filenames"
 msgid "Use original filenames"
 msgstr "Tên tập tin máy ảnh"
 
-#: utilities/queuemanager/queuesettingsview.cpp:147
+#: utilities/queuemanager/queuesettingsview.cpp:148
 #, fuzzy
 #| msgid ""
 #| "<p>Turn on this option to use camera provided image filenames without "
@@ -19317,13 +19696,13 @@ msgstr ""
 "<p>Bật tùy chọn này để dùng các tên tập tin do máy ảnh cung cấp, không sửa "
 "đổi."
 
-#: utilities/queuemanager/queuesettingsview.cpp:150
+#: utilities/queuemanager/queuesettingsview.cpp:151
 #, fuzzy
 #| msgid "Camera filenames"
 msgid "Customize filenames:"
 msgstr "Tên tập tin máy ảnh"
 
-#: utilities/queuemanager/queuesettingsview.cpp:163
+#: utilities/queuemanager/queuesettingsview.cpp:164
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "File Renaming"
@@ -20417,310 +20796,6 @@ msgstr "Không có mục trên bảng ánh sáng"
 msgid "%1 item on Light Table"
 msgid_plural "%1 items on Light Table"
 msgstr[0] "%1 mục trên bảng ánh sáng"
-
-#: utilities/manualrename/manualrenamewidget.cpp:176
-#, fuzzy
-#| msgid "Interface Options"
-msgctxt "Renaming Options"
-msgid "Options"
-msgstr "Tuy chọn giao diện"
-
-#: utilities/manualrename/manualrenamewidget.cpp:194
-#, fuzzy
-#| msgid "Modified:"
-msgid "Modifiers"
-msgstr "Sửa đổi:"
-
-#: utilities/manualrename/manualrenamewidget.cpp:336
-#, fuzzy
-#| msgid "File Renaming Options"
-msgid "Renaming Options"
-msgstr "Tùy chọn thay tên tập tin"
-
-#: utilities/manualrename/manualrenamedialog.cpp:153
-#, fuzzy
-#| msgid "Count:"
-msgid "Current Name"
-msgstr "Đếm:"
-
-#: utilities/manualrename/manualrenamedialog.cpp:153
-#, fuzzy
-#| msgid "Name:"
-msgid "New Name"
-msgstr "Tên:"
-
-#: utilities/manualrename/manualrenamedialog.cpp:239
-#, fuzzy, kde-format
-#| msgid "Rename..."
-msgid "Rename"
-msgid_plural "Rename (%1 images)"
-msgstr[0] "Thay tên..."
-
-#: utilities/manualrename/manualrenameinput.cpp:83
-#, fuzzy
-#| msgid "Enter new name (without extension):"
-msgid "Enter renaming string (without extension)"
-msgstr "Nhập vào tên mới (không có phần mở rộng):"
-
-#: utilities/manualrename/manualrenameinput.cpp:84
-msgid ""
-"<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
-"words.<br/>To mark a token, press the left mouse button while it is "
-"highlighted.</p>"
-msgstr ""
-
-#: utilities/manualrename/manualrenameinput.cpp:330
-#, fuzzy
-#| msgid "Align text to the left"
-msgid "Move selected token to the left"
-msgstr "Canh lề đoạn bên trái"
-
-#: utilities/manualrename/manualrenameinput.cpp:331
-#, fuzzy
-#| msgid "Align text to the right"
-msgid "Move selected token to the right"
-msgstr "Canh lề đoạn bên phải"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:41
-#, fuzzy
-#| msgid "New Image File Name"
-msgid "Directory Name"
-msgstr "Tên tập tin ảnh mới"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:43
-#, fuzzy
-#| msgid "Count:"
-msgctxt "current directory name"
-msgid "Current"
-msgstr "Đếm:"
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:44
-msgid "current directory name"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:46
-msgctxt "directory name"
-msgid "Parent Directory Name"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/directorynameparser.cpp:47
-msgid ""
-"directory name of the parent, additional '.' characters move up <br/>in the "
-"directory hierarchy"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:75
-msgid "Add Metadata Keywords"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:80
-msgid "Keyword separator:"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:120
-#, fuzzy
-#| msgid "Metadata"
-msgid "Metadata Keywords"
-msgstr "Siêu dữ liệu"
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:155
-#, fuzzy
-#| msgid "Metadata"
-msgid "Metadata..."
-msgstr "Siêu dữ liệu"
-
-#: utilities/manualrename/parsers/subparsers/metadataparser.cpp:158
-msgid "add metadata (use the quick access dialog for keycodes)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:97
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Add Date & Time"
-msgstr "Thêm Ngày và Giờ"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:109
-msgid "Enter custom date format"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:168
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time..."
-msgstr "Thêm Ngày và Giờ"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:172
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time"
-msgstr "Thêm Ngày và Giờ"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:173
-#, fuzzy
-#| msgid "Noise filter:"
-msgid "date and time (standard format)"
-msgstr "Lọc nhiễu :"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:175
-#, fuzzy
-#| msgid "Add Date && Time"
-msgid "Date && Time (key)"
-msgstr "Thêm Ngày và Giờ"
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:176
-msgid "date and time (key = ISO|Text|Locale)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:178
-msgid "Date && Time (custom format)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/dateparser.cpp:179
-#, fuzzy
-#| msgid "Noise filter:"
-msgid "date and time"
-msgstr "Lọc nhiễu :"
-
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:36
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:38
-#, fuzzy
-#| msgid "Add Camera Name"
-msgid "Camera Name"
-msgstr "Thêm tên máy ảnh"
-
-#: utilities/manualrename/parsers/subparsers/cameranameparser.cpp:38
-#, fuzzy
-#| msgid "Camera filenames"
-msgid "camera name"
-msgstr "Tên tập tin máy ảnh"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:63
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Add sequence number"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:69
-#, fuzzy
-#| msgid "Lightness"
-msgctxt "number of digits"
-msgid "Digits:"
-msgstr "Độ nhạt"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:70
-#, fuzzy
-#| msgid "Strength:"
-msgctxt "start of sequence number range"
-msgid "Start:"
-msgstr "Độ mạnh:"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:71
-#, fuzzy
-#| msgid "Style:"
-msgctxt "stepping used for sequence number range"
-msgid "Step:"
-msgstr "Kiểu dáng:"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:82
-#, fuzzy
-#| msgid "Custom"
-msgid "Custom Range"
-msgstr "Tự chọn"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:123
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number..."
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:127
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:128
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "sequence number"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:130
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number (start)"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:131
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "sequence number (custom start)"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:133
-#, fuzzy
-#| msgid "Add Sequence Number"
-msgid "Sequence Number (start, step)"
-msgstr "Thêm số dãy"
-
-#: utilities/manualrename/parsers/subparsers/sequencenumberparser.cpp:134
-msgid "sequence number (custom start + step)"
-msgstr ""
-
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:42
-#, fuzzy
-#| msgid "New Image File Name"
-msgctxt "image filename"
-msgid "Filename"
-msgstr "Tên tập tin ảnh mới"
-
-#: utilities/manualrename/parsers/subparsers/filenameparser.cpp:43
-#, fuzzy
-#| msgid "Show file name"
-msgid "image filename"
-msgstr "Hiện tên tập tin"
-
-#: utilities/manualrename/parsers/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "&Title:"
-msgid "Trimmed"
-msgstr "&Tựa:"
-
-#: utilities/manualrename/parsers/modifiers/trimmedmodifier.cpp:34
-#, fuzzy
-#| msgid "German translations and beta tester"
-msgid "remove leading, trailing and extra whitespace"
-msgstr "Bản dịch Đức và người thử B"
-
-#: utilities/manualrename/parsers/modifiers/lowercasemodifier.cpp:34
-#, fuzzy
-#| msgid "Lower"
-msgid "Lowercase"
-msgstr "Chữ thường"
-
-#: utilities/manualrename/parsers/modifiers/lowercasemodifier.cpp:34
-#, fuzzy
-msgid "convert to lowercase"
-msgstr "Chuyển vào Rác"
-
-#: utilities/manualrename/parsers/modifiers/uppercasemodifier.cpp:34
-#, fuzzy
-#| msgid "Upper"
-msgid "Uppercase"
-msgstr "Trên"
-
-#: utilities/manualrename/parsers/modifiers/uppercasemodifier.cpp:34
-#, fuzzy
-msgid "convert to uppercase"
-msgstr "Chuyển vào Rác"
-
-#: utilities/manualrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:34
-msgid "First Letter Of Each Word Uppercase"
-msgstr ""
-
-#: utilities/manualrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:35
-msgid "convert the first letter of each word to uppercase"
-msgstr ""
 
 #: utilities/cameragui/camerainfodialog.cpp:45
 #, fuzzy
@@ -22093,6 +22168,28 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Interface Options"
+#~ msgctxt "Renaming Options"
+#~ msgid "Options"
+#~ msgstr "Tuy chọn giao diện"
+
+#, fuzzy
+#~| msgid "Count:"
+#~ msgid "Current Name"
+#~ msgstr "Đếm:"
+
+#, fuzzy
+#~| msgid "Name:"
+#~ msgid "New Name"
+#~ msgstr "Tên:"
+
+#, fuzzy
+#~| msgid "Rename..."
+#~ msgid "Rename"
+#~ msgid_plural "Rename (%1 images)"
+#~ msgstr[0] "Thay tên..."
 
 #, fuzzy
 #~| msgid "Tone"

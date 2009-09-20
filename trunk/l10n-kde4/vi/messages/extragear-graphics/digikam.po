@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-19 06:10+0200\n"
+"POT-Creation-Date: 2009-09-20 06:26+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1100,12 +1100,12 @@ msgid "ICC profile"
 msgstr "Hồ sơ ICC"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: imageplugins/coreplugin/imageplugin_core.cpp:164
+#: imageplugins/coreplugin/imageplugin_core.cpp:166
 msgid "16 bits"
 msgstr "16 bit"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:632
-#: imageplugins/coreplugin/imageplugin_core.cpp:159
+#: imageplugins/coreplugin/imageplugin_core.cpp:161
 msgid "8 bits"
 msgstr "8 bit"
 
@@ -4984,14 +4984,14 @@ msgstr "Mục ghi IPTC"
 msgid "XMP viewer"
 msgstr ""
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:79
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:68
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgctxt "<Profile Description> (<File Name>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:148
+#: libs/widgets/iccprofiles/iccprofilescombobox.cpp:243
 #, fuzzy
 #| msgid ""
 #| "<ul><li><p><b>Perceptual intent</b> causes the full gamut of the image to "
@@ -6107,6 +6107,7 @@ msgid "Open With"
 msgstr "Mở bằng"
 
 #: digikam/contextmenuhelper.cpp:244
+#: imageplugins/coreplugin/imageplugin_core.cpp:405
 #, fuzzy
 #| msgid "Shear..."
 msgid "Other..."
@@ -10252,7 +10253,7 @@ msgid "Set here the gamma re-adjustment of the target image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh lại gamma của ảnh đích."
 
 #: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:60
-#: imageplugins/coreplugin/imageplugin_core.cpp:146
+#: imageplugins/coreplugin/imageplugin_core.cpp:148
 msgid "Auto-Correction..."
 msgstr "Sửa chữa tự động..."
 
@@ -13258,19 +13259,19 @@ msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần lưu"
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:109
+#: imageplugins/coreplugin/imageplugin_core.cpp:111
 msgid "Blur..."
 msgstr "Mờ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:114
+#: imageplugins/coreplugin/imageplugin_core.cpp:116
 msgid "Sharpen..."
 msgstr "Mài sắc..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:119
+#: imageplugins/coreplugin/imageplugin_core.cpp:121
 msgid "Red Eye..."
 msgstr "Mắt đỏ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:120
+#: imageplugins/coreplugin/imageplugin_core.cpp:122
 msgid ""
 "This filter can be used to correct red eyes in a photo. Select a region "
 "including the eyes to use this option."
@@ -13278,46 +13279,48 @@ msgstr ""
 "Bộ lọc này có thể được dùng để sửa chữa mắt màu đỏ trong ảnh chụp. Hãy chọn "
 "vùng chứa mắt để dùng tính năng này."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:126
+#: imageplugins/coreplugin/imageplugin_core.cpp:128
 msgid "Brightness/Contrast/Gamma..."
 msgstr "Độ sáng/tương phản/gamma..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:132
+#: imageplugins/coreplugin/imageplugin_core.cpp:134
 msgid "Hue/Saturation/Lightness..."
 msgstr "Sắc màu/Độ bão hòa/Độ nhạt..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:139
+#: imageplugins/coreplugin/imageplugin_core.cpp:141
 msgid "Color Balance..."
 msgstr "Cân bằng màu..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:153
-#: imageplugins/coreplugin/imageplugin_core.cpp:244
+#: imageplugins/coreplugin/imageplugin_core.cpp:155
+#: imageplugins/coreplugin/imageplugin_core.cpp:257
 msgid "Invert"
 msgstr "Đảo"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:169
-msgid "Color Management..."
-msgstr "Quản lý màu..."
-
 #: imageplugins/coreplugin/imageplugin_core.cpp:177
+#, fuzzy
+#| msgid "Color Space"
+msgid "Color Space Conversion"
+msgstr "Miền màu"
+
+#: imageplugins/coreplugin/imageplugin_core.cpp:190
 msgid "Black && White..."
 msgstr "Đen trắng..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:185
+#: imageplugins/coreplugin/imageplugin_core.cpp:198
 msgid "Aspect Ratio Crop..."
 msgstr "Xén tỷ lệ hình thể..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:191
+#: imageplugins/coreplugin/imageplugin_core.cpp:204
 msgid "&Resize..."
 msgstr "Đổi &cỡ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:256
+#: imageplugins/coreplugin/imageplugin_core.cpp:269
 #, fuzzy
 #| msgid "This picture is already using a depth of 8 bits / color / pixel."
 msgid "This image is already using a depth of 8 bits / color / pixel."
 msgstr "Ảnh này đã dùng độ sâu 8 bit/màu/điểm ảnh."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:263
+#: imageplugins/coreplugin/imageplugin_core.cpp:276
 msgid ""
 "Performing this operation will reduce image color quality. Do you want to "
 "continue?"
@@ -13325,22 +13328,28 @@ msgstr ""
 "Thực hiện thao tác này thì giảm chất lượng màu của ảnh. Bạn có muốn tiếp tục "
 "không?"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:281
+#: imageplugins/coreplugin/imageplugin_core.cpp:294
 #, fuzzy
 #| msgid "This picture is already using a depth of 16 bits / color / pixel."
 msgid "This image is already using a depth of 16 bits / color / pixel."
 msgstr "Ảnh này đã dùng độ sâu 16 bit/màu/điểm ảnh."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:321
+#: imageplugins/coreplugin/imageplugin_core.cpp:334
 msgid "Red-Eye Correction Tool"
 msgstr "Công cụ sửa mắt đỏ"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:322
+#: imageplugins/coreplugin/imageplugin_core.cpp:335
 msgid ""
 "You need to select a region including the eyes to use the red-eye correction "
 "tool"
 msgstr ""
 "Bạn cần phải chọn một vùng chứa mắt để dùng công cụ sửa chửa mắt màu đỏ."
+
+#: imageplugins/coreplugin/imageplugin_core.cpp:362
+#, fuzzy
+#| msgid "This is the list of items that are about to be deleted."
+msgid "This image is not color managed."
+msgstr "Đây là danh sách các mục sắp bị xoá."
 
 #: imageplugins/coreplugin/rgbtool.cpp:116
 #: imageplugins/coreplugin/rgbtool.cpp:398
@@ -14260,6 +14269,8 @@ msgstr "Dùng hồ sơ đã chọn"
 #: imageplugins/coreplugin/iccprooftool.cpp:364
 #: imageplugins/coreplugin/iccprooftool.cpp:424
 #: imageplugins/coreplugin/iccprooftool.cpp:466
+#: imageplugins/coreplugin/profileconversiontool.cpp:136
+#: imageplugins/coreplugin/profileconversiontool.cpp:152
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:249
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:263
 #: utilities/imageeditor/canvas/colorcorrectiondlg.cpp:433
@@ -14996,6 +15007,32 @@ msgstr "Tập tin thiết lập đen trắng cần lưu"
 #: imageplugins/coreplugin/bwsepiatool.cpp:1067
 msgid "Cannot save settings to the Black & White text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thiết lập đen trắng."
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:113
+#: imageplugins/coreplugin/profileconversiontool.cpp:210
+#: imageplugins/coreplugin/profileconversiontool.cpp:292
+#, fuzzy
+#| msgid "Color Profiles Directory"
+msgid "Color Profile Conversion"
+msgstr "Thư mục hồ sơ màu"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:134
+#, fuzzy
+#| msgid "Color Space"
+msgid "Current Color Space:"
+msgstr "Miền màu"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:147
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert to:"
+msgstr "Chuyển đổi"
+
+#: imageplugins/coreplugin/profileconversiontool.cpp:150
+#, fuzzy
+#| msgid "<p>Set here the saturation value."
+msgid "Select the profile of the color space to convert to."
+msgstr "<p>Ở đây hãy đặt giá trị độ bão hoà."
 
 #: imageplugins/coreplugin/autocorrectiontool.cpp:100
 #, fuzzy
@@ -15938,17 +15975,19 @@ msgstr ""
 "</table>\n"
 "</p>\n"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:194
+#: utilities/advancedrename/advancedrenamewidget.cpp:192
 #, fuzzy
 #| msgid "Modified:"
 msgid "Modifiers"
 msgstr "Sửa đổi:"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:199
-msgid "You can not apply modifiers to tokens marked with '(x)'."
+#: utilities/advancedrename/advancedrenamewidget.cpp:198
+msgid ""
+"Modifiers can be applied to each token, to change the parse results "
+"individually."
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:338
+#: utilities/advancedrename/advancedrenamewidget.cpp:334
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "Renaming Options"
@@ -15978,7 +16017,7 @@ msgstr ""
 
 #: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
 msgid ""
-"directory name of the parent, additional '.' characters move up <br/>in the "
+"directory name of the parent, additional '.' characters move up in the "
 "directory hierarchy"
 msgstr ""
 
@@ -16106,37 +16145,37 @@ msgstr "Tự chọn"
 msgid "Sequence Number..."
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:127
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:129
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "sequence number"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:130
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number (start)"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:132
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "sequence number (custom start)"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:133
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number (start, step)"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:135
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
 msgid "sequence number (custom start + step)"
 msgstr ""
 
@@ -16167,8 +16206,9 @@ msgstr "Hiện tên tập tin"
 msgid "Range"
 msgstr "Phạm vi:"
 
-#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
-msgid "display only a specific range"
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:35
+msgid ""
+"display only a specific range (if stop is omitted, move to end of the string)"
 msgstr ""
 
 #: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
@@ -16225,30 +16265,18 @@ msgstr ""
 msgid "convert the first letter of each word to uppercase"
 msgstr ""
 
-#: utilities/advancedrename/advancedrenameinput.cpp:83
+#: utilities/advancedrename/advancedrenameinput.cpp:84
 #, fuzzy
 #| msgid "Enter new name (without extension):"
 msgid "Enter renaming string (without extension)"
 msgstr "Nhập vào tên mới (không có phần mở rộng):"
 
-#: utilities/advancedrename/advancedrenameinput.cpp:84
+#: utilities/advancedrename/advancedrenameinput.cpp:85
 msgid ""
 "<p>Hold CTRL and move the mouse over the line edit widget to highlight token "
 "words.<br/>To mark a token, press the left mouse button while it is "
 "highlighted.</p>"
 msgstr ""
-
-#: utilities/advancedrename/advancedrenameinput.cpp:330
-#, fuzzy
-#| msgid "Align text to the left"
-msgid "Move selected token to the left"
-msgstr "Canh lề đoạn bên trái"
-
-#: utilities/advancedrename/advancedrenameinput.cpp:331
-#, fuzzy
-#| msgid "Align text to the right"
-msgid "Move selected token to the right"
-msgstr "Canh lề đoạn bên phải"
 
 #: utilities/gpssearch/gpssearchview.cpp:110
 msgid ""
@@ -22169,6 +22197,19 @@ msgid ""
 "Build date: %1"
 msgstr ""
 
+#~ msgid "Color Management..."
+#~ msgstr "Quản lý màu..."
+
+#, fuzzy
+#~| msgid "Align text to the left"
+#~ msgid "Move selected token to the left"
+#~ msgstr "Canh lề đoạn bên trái"
+
+#, fuzzy
+#~| msgid "Align text to the right"
+#~ msgid "Move selected token to the right"
+#~ msgstr "Canh lề đoạn bên phải"
+
 #, fuzzy
 #~| msgid "Interface Options"
 #~ msgctxt "Renaming Options"
@@ -22507,9 +22548,6 @@ msgstr ""
 
 #~ msgid "Soft proof:"
 #~ msgstr "Kiểm lỗi mềm:"
-
-#~ msgid "Convert"
-#~ msgstr "Chuyển đổi"
 
 #, fuzzy
 #~| msgid "Apply the default color workspace profile to the image"

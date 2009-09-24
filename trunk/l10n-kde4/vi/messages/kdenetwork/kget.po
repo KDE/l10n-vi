@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-23 07:16+0200\n"
+"POT-Creation-Date: 2009-09-24 06:18+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -261,8 +261,8 @@ msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:636 core/kget.cpp:529 core/kget.cpp:878
-#: core/kget.cpp:886 transfer-plugins/metalink/metalink.cpp:193
+#: core/datasourcefactory.cpp:636 core/kget.cpp:554 core/kget.cpp:902
+#: core/kget.cpp:911 transfer-plugins/metalink/metalink.cpp:193
 #: transfer-plugins/bittorrent/bttransfer.cpp:494
 #: transfer-plugins/bittorrent/bttransfer.cpp:505
 #: ui/metalinkcreator/metalinkcreator.cpp:287
@@ -295,7 +295,7 @@ msgctxt "transfer state: delayed"
 msgid "Delayed"
 msgstr "Bị trễ"
 
-#: core/transfer.cpp:30 core/transfer.cpp:240 core/transfer.cpp:265
+#: core/transfer.cpp:30 core/transfer.cpp:234 core/transfer.cpp:259
 #: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/bittorrent/bttransfer.cpp:321
 #: transfer-plugins/contentfetch/contentfetch.cpp:64
@@ -368,13 +368,40 @@ msgstr ""
 msgid "Remove groups"
 msgstr "Xoá nhóm"
 
-#: core/kget.cpp:237
-#, fuzzy
-#| msgid "Transfers:"
-msgid "Rename transfer"
-msgstr "Truyền:"
+#: core/kget.cpp:241
+msgid ""
+"You have already downloaded that file from another location\n"
+"\n"
+"Download and delete the previous one?"
+msgstr ""
 
-#: core/kget.cpp:514
+#: core/kget.cpp:242
+#, fuzzy
+#| msgid ""
+#| "URL already saved:\n"
+#| "%1\n"
+#| "Download again?"
+msgid "File already downloaded. Download anyway?"
+msgstr ""
+"URL đã được lưu :\n"
+"%1\n"
+"Tải về lại không?"
+
+#: core/kget.cpp:251
+msgid "You are already downloading the same file"
+msgstr ""
+
+#: core/kget.cpp:255
+#, fuzzy
+#| msgid ""
+#| "The file %1 already exists.\n"
+#| "Overwrite?"
+msgid "File already exists"
+msgstr ""
+"Tập tin %1 đã có.\n"
+"Ghi đè không?"
+
+#: core/kget.cpp:539
 #, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -383,16 +410,16 @@ msgstr ""
 "Tập tin %1 đã có.\n"
 "Ghi đè không?"
 
-#: core/kget.cpp:515
+#: core/kget.cpp:540
 msgid "Overwrite existing file?"
 msgstr "Ghi đè lên tập tin đã có?"
 
-#: core/kget.cpp:528 ui/metalinkcreator/metalinkcreator.cpp:306
+#: core/kget.cpp:553 ui/metalinkcreator/metalinkcreator.cpp:306
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "Không thể lưu vào : %1"
 
-#: core/kget.cpp:747 ui/contextmenu.cpp:135
+#: core/kget.cpp:772 ui/contextmenu.cpp:135
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
@@ -400,19 +427,19 @@ msgstr "Tải về"
 
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:817 ui/newtransferdialog.cpp:254 rc.cpp:520
+#: core/kget.cpp:842 ui/newtransferdialog.cpp:254 rc.cpp:520
 msgid "New Download"
 msgstr "Tải về mới"
 
-#: core/kget.cpp:817
+#: core/kget.cpp:842
 msgid "Enter URL:"
 msgstr "Nhập URL:"
 
-#: core/kget.cpp:849
+#: core/kget.cpp:874
 msgid "Save As"
 msgstr ""
 
-#: core/kget.cpp:877
+#: core/kget.cpp:901
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -421,7 +448,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:885
+#: core/kget.cpp:910
 #, fuzzy, kde-format
 #| msgid ""
 #| "Malformed URL:\n"
@@ -433,26 +460,43 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:898
+#: core/kget.cpp:922
 #, kde-format
 msgid ""
-"URL already saved:\n"
+"You have already completed a download from the location: \n"
+"\n"
 "%1\n"
-"Download again?"
+"\n"
+"Download it again?"
 msgstr ""
-"URL đã được lưu :\n"
-"%1\n"
-"Tải về lại không?"
 
-#: core/kget.cpp:899
-msgid "Download URL again?"
+#: core/kget.cpp:923
+#, fuzzy
+#| msgid "Download URL again?"
+msgid "Download it again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:927 core/kget.cpp:934
+#: core/kget.cpp:935
+#, kde-format
+msgid ""
+"You have a download in progress from the location: \n"
+"\n"
+"%1\n"
+"\n"
+"Delete it and download again?"
+msgstr ""
+
+#: core/kget.cpp:936
+#, fuzzy
+#| msgid "Download URL again?"
+msgid "Delete it and download again?"
+msgstr "Tải về URL lần nữa không?"
+
+#: core/kget.cpp:959 core/kget.cpp:966
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:944
+#: core/kget.cpp:976
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -465,13 +509,13 @@ msgstr ""
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:945
+#: core/kget.cpp:977
 #, fuzzy
 #| msgid "Overwrite existing file?"
 msgid "Overwrite destination"
 msgstr "Ghi đè lên tập tin đã có?"
 
-#: core/kget.cpp:1076
+#: core/kget.cpp:1108
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error "
@@ -482,7 +526,7 @@ msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:1094
+#: core/kget.cpp:1126
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -493,7 +537,7 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:1104
+#: core/kget.cpp:1136
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -506,17 +550,17 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1295 core/kget.cpp:1305 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1327 core/kget.cpp:1337 ui/droptarget.cpp:94 rc.cpp:65
 #, fuzzy
 #| msgid "KGet"
 msgid "Quit KGet"
 msgstr "KGet"
 
-#: core/kget.cpp:1296
+#: core/kget.cpp:1328
 msgid "KGet is now closing, as all downloads have completed."
 msgstr ""
 
-#: core/kget.cpp:1306
+#: core/kget.cpp:1338
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr ""
 
@@ -4644,6 +4688,14 @@ msgstr ""
 #: rc.cpp:1018
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Transfers:"
+#~ msgid "Rename transfer"
+#~ msgstr "Truyền:"
+
+#~ msgid "Download URL again?"
+#~ msgstr "Tải về URL lần nữa không?"
 
 #, fuzzy
 #~| msgid "&File"

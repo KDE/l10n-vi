@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-24 06:24+0200\n"
+"POT-Creation-Date: 2009-09-25 06:33+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -901,7 +901,7 @@ msgstr "Thuộc tính"
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:107
 #: libs/imageproperties/imagepropertiessidebar.cpp:85
 #: showfoto/setup/setup.cpp:107
-#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:157
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:164
 #: utilities/setup/setup.cpp:178
 msgid "Metadata"
 msgstr "Siêu dữ liệu"
@@ -7362,7 +7362,7 @@ msgstr "Kiểu lọc:"
 msgid "Select the file types (mime types) that you want shown"
 msgstr ""
 
-#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:181
+#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:186
 #: utilities/cameragui/cameraui.cpp:366
 #, fuzzy
 #| msgid "&View"
@@ -7379,7 +7379,7 @@ msgstr "Thay tên mục (%1)"
 msgid "Enter new name (without extension):"
 msgstr "Nhập vào tên mới (không có phần mở rộng):"
 
-#: digikam/albumiconview.cpp:1020 digikam/imageviewutilities.cpp:316
+#: digikam/albumiconview.cpp:1020 digikam/imageviewutilities.cpp:327
 #: utilities/imageeditor/editor/imagewindow.cpp:1382
 #: utilities/imageeditor/editor/imagewindow.cpp:1409
 #: utilities/imageeditor/editor/imagewindow.cpp:1440
@@ -7430,7 +7430,7 @@ msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
 msgid "Failed to revise Exif orientation these files:"
 msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
 
-#: digikam/albumiconview.cpp:2336 digikam/imageviewutilities.cpp:230
+#: digikam/albumiconview.cpp:2336 digikam/imageviewutilities.cpp:241
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -12342,7 +12342,7 @@ msgid "Manual Adjustment"
 msgstr "Điều chỉnh:"
 
 #: imageplugins/freerotation/freerotationtool.cpp:273
-#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:111
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:116
 #: utilities/cameragui/cameraui.cpp:297
 msgid "Settings"
 msgstr "Thiết lập"
@@ -15970,32 +15970,51 @@ msgstr ""
 "</table>\n"
 "</p>\n"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:188
-#: utilities/advancedrename/advancedrenamewidget.cpp:357
+#: utilities/advancedrename/advancedrenamewidget.cpp:192
+#: utilities/advancedrename/advancedrenamewidget.cpp:380
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "Renaming Options"
 msgstr "Tùy chọn thay tên tập tin"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:193
+#: utilities/advancedrename/advancedrenamewidget.cpp:197
 #, fuzzy
 #| msgid "Modified:"
 msgid "Modifiers"
 msgstr "Sửa đổi:"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:352
+#: utilities/advancedrename/advancedrenamewidget.cpp:375
 msgid "Show help"
 msgstr ""
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:363
+#: utilities/advancedrename/advancedrenamewidget.cpp:386
 #, fuzzy
 #| msgid "File Renaming Options"
 msgid "Quickly add a renaming option"
 msgstr "Tùy chọn thay tên tập tin"
 
-#: utilities/advancedrename/advancedrenamewidget.cpp:369
+#: utilities/advancedrename/advancedrenamewidget.cpp:392
 msgid "Quickly add a modifier to the marked token"
 msgstr ""
+
+#: utilities/advancedrename/advancedrenamedialog.cpp:153
+#, fuzzy
+#| msgid "Count:"
+msgid "Current Name"
+msgstr "Đếm:"
+
+#: utilities/advancedrename/advancedrenamedialog.cpp:153
+#, fuzzy
+#| msgid "Name:"
+msgid "New Name"
+msgstr "Tên:"
+
+#: utilities/advancedrename/advancedrenamedialog.cpp:241
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgid "Rename"
+msgid_plural "Rename (%1 images)"
+msgstr[0] "Thay tên..."
 
 #: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:41
 #, fuzzy
@@ -16003,25 +16022,33 @@ msgstr ""
 msgid "Directory Name"
 msgstr "Tên tập tin ảnh mới"
 
-#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:45
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:41
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "Add the directory name"
+msgstr "Tên tập tin ảnh mới"
+
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:46
 #, fuzzy
 #| msgid "Count:"
 msgctxt "current directory name"
 msgid "Current"
 msgstr "Đếm:"
 
-#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:46
-msgid "current directory name"
-msgstr ""
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:47
+#, fuzzy
+#| msgid "New Image File Name"
+msgid "Current directory name"
+msgstr "Tên tập tin ảnh mới"
 
-#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:48
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
 msgctxt "directory name"
 msgid "Parent Directory Name"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:49
+#: utilities/advancedrename/parsers/subparsers/directorynameparser.cpp:50
 msgid ""
-"directory name of the parent, additional '.' characters move up in the "
+"Directory name of the parent, additional '.' characters move up in the "
 "directory hierarchy"
 msgstr ""
 
@@ -16033,82 +16060,98 @@ msgstr ""
 msgid "Keyword separator:"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:120
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:125
 #, fuzzy
 #| msgid "Metadata"
 msgid "Metadata Keywords"
 msgstr "Siêu dữ liệu"
 
-#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:155
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:160
 #, fuzzy
 #| msgid "Metadata"
 msgid "Metadata..."
 msgstr "Siêu dữ liệu"
 
-#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:158
-msgid "add metadata (use the quick access dialog for keycodes)"
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:161
+msgid "Add metadata fields from Exif, IPTC and XMP"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:97
+#: utilities/advancedrename/parsers/subparsers/metadataparser.cpp:165
+msgid "Add metadata (use the quick access dialog for keycodes)"
+msgstr ""
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:99
 #, fuzzy
 #| msgid "Add Date && Time"
 msgid "Add Date & Time"
 msgstr "Thêm Ngày và Giờ"
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:109
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:111
 msgid "Enter custom date format"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:168
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:174
 #, fuzzy
 #| msgid "Add Date && Time"
 msgid "Date && Time..."
 msgstr "Thêm Ngày và Giờ"
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:172
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:174
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "Add date and time information"
+msgstr "Lọc nhiễu :"
+
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:179
 #, fuzzy
 #| msgid "Add Date && Time"
 msgid "Date && Time"
 msgstr "Thêm Ngày và Giờ"
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:173
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:180
 #, fuzzy
 #| msgid "Noise filter:"
-msgid "date and time (standard format)"
+msgid "Date and time (standard format)"
 msgstr "Lọc nhiễu :"
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:175
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:182
 #, fuzzy
 #| msgid "Add Date && Time"
 msgid "Date && Time (key)"
 msgstr "Thêm Ngày và Giờ"
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:176
-msgid "date and time (key = ISO|Text|Locale)"
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:183
+msgid "Date and time (key = ISO|Text|Locale)"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:178
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:185
 msgid "Date && Time (custom format)"
 msgstr ""
 
-#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:179
+#: utilities/advancedrename/parsers/subparsers/dateparser.cpp:186
 #, fuzzy
 #| msgid "Noise filter:"
-msgid "date and time"
+msgid "Date and time"
 msgstr "Lọc nhiễu :"
 
 #: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:40
-#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:42
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:43
 #, fuzzy
 #| msgid "Add Camera Name"
 msgid "Camera Name"
 msgstr "Thêm tên máy ảnh"
 
-#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:42
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:40
 #, fuzzy
-#| msgid "Camera filenames"
-msgid "camera name"
-msgstr "Tên tập tin máy ảnh"
+#| msgid "Add Camera Name"
+msgid "Add the camera name"
+msgstr "Thêm tên máy ảnh"
+
+#: utilities/advancedrename/parsers/subparsers/cameranameparser.cpp:43
+#, fuzzy
+#| msgid "Add Camera Name"
+msgid "Camera name"
+msgstr "Thêm tên máy ảnh"
 
 #: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:63
 #, fuzzy
@@ -16149,39 +16192,47 @@ msgstr "Tự chọn"
 msgid "Sequence Number..."
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:127
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:123
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "Sequence Number"
+msgid "Add a sequence number"
 msgstr "Thêm số dãy"
 
 #: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:128
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "sequence number"
+msgid "Sequence Number"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:130
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:129
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "Sequence Number (start)"
+msgid "Sequence number"
 msgstr "Thêm số dãy"
 
 #: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:131
 #, fuzzy
 #| msgid "Add Sequence Number"
-msgid "sequence number (custom start)"
+msgid "Sequence Number (start)"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:133
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:132
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence number (custom start)"
+msgstr "Thêm số dãy"
+
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
 #, fuzzy
 #| msgid "Add Sequence Number"
 msgid "Sequence Number (start, step)"
 msgstr "Thêm số dãy"
 
-#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:134
-msgid "sequence number (custom start + step)"
-msgstr ""
+#: utilities/advancedrename/parsers/subparsers/sequencenumberparser.cpp:135
+#, fuzzy
+#| msgid "Add Sequence Number"
+msgid "Sequence number (custom start + step)"
+msgstr "Thêm số dãy"
 
 #: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:40
 #: utilities/queuemanager/queuelist.cpp:243
@@ -16190,6 +16241,12 @@ msgstr ""
 #| msgid "New Image File Name"
 msgid "File Name"
 msgstr "Tên tập tin ảnh mới"
+
+#: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:40
+#, fuzzy
+#| msgid "By Collection"
+msgid "Add the current file name"
+msgstr "Theo tập hợp"
 
 #: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:42
 #, fuzzy
@@ -16201,7 +16258,7 @@ msgstr "Tên tập tin ảnh mới"
 #: utilities/advancedrename/parsers/subparsers/filenameparser.cpp:43
 #, fuzzy
 #| msgid "Show file name"
-msgid "image filename"
+msgid "Image filename"
 msgstr "Hiện tên tập tin"
 
 #: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
@@ -16211,16 +16268,20 @@ msgstr "Hiện tên tập tin"
 msgid "Range"
 msgstr "Phạm vi:"
 
+#: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:34
+msgid "Add only a specific range of a string"
+msgstr ""
+
 #: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:36
 msgid "Index"
 msgstr ""
 
 #: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:37
-msgid "extract the character at the given index"
+msgid "Extract the character at the given index"
 msgstr ""
 
 #: utilities/advancedrename/parsers/modifiers/rangemodifier.cpp:40
-msgid "extract a specific range ('<i>to'</i> = end of string, if omitted)"
+msgid "Extract a specific range ('<i>to'</i> = end of string, if omitted)"
 msgstr ""
 
 #: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
@@ -16230,10 +16291,10 @@ msgstr ""
 msgid "Trimmed"
 msgstr "&Tựa:"
 
-#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:36
+#: utilities/advancedrename/parsers/modifiers/trimmedmodifier.cpp:34
 #, fuzzy
 #| msgid "German translations and beta tester"
-msgid "remove leading, trailing and extra whitespace"
+msgid "Remove leading, trailing and extra whitespace"
 msgstr "Bản dịch Đức và người thử B"
 
 #: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
@@ -16243,9 +16304,9 @@ msgstr "Bản dịch Đức và người thử B"
 msgid "Lowercase"
 msgstr "Chữ thường"
 
-#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:36
+#: utilities/advancedrename/parsers/modifiers/lowercasemodifier.cpp:34
 #, fuzzy
-msgid "convert to lowercase"
+msgid "Convert to lowercase"
 msgstr "Chuyển vào Rác"
 
 #: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
@@ -16255,9 +16316,9 @@ msgstr "Chuyển vào Rác"
 msgid "Uppercase"
 msgstr "Trên"
 
-#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:36
+#: utilities/advancedrename/parsers/modifiers/uppercasemodifier.cpp:34
 #, fuzzy
-msgid "convert to uppercase"
+msgid "Convert to uppercase"
 msgstr "Chuyển vào Rác"
 
 #: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
@@ -16267,19 +16328,19 @@ msgstr "Chuyển vào Rác"
 msgid "Replace"
 msgstr "Tương đối"
 
-#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:36
+#: utilities/advancedrename/parsers/modifiers/replacemodifier.cpp:34
 #, fuzzy
-#| msgid "Relative"
-msgid "replace text"
-msgstr "Tương đối"
+#| msgid "Align text to the right"
+msgid "Replace text in the string"
+msgstr "Canh lề đoạn bên phải"
 
 #: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:34
-#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:36
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:37
 msgid "First Letter Of Each Word Uppercase"
 msgstr ""
 
-#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:37
-msgid "convert the first letter of each word to uppercase"
+#: utilities/advancedrename/parsers/modifiers/firstletterofeachworduppercasemodifier.cpp:35
+msgid "Convert the first letter of each word to uppercase"
 msgstr ""
 
 #: utilities/advancedrename/advancedrenameinput.cpp:81
@@ -22222,6 +22283,21 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Camera filenames"
+#~ msgid "camera name"
+#~ msgstr "Tên tập tin máy ảnh"
+
+#, fuzzy
+#~| msgid "Add Sequence Number"
+#~ msgid "sequence number"
+#~ msgstr "Thêm số dãy"
+
+#, fuzzy
+#~| msgid "Relative"
+#~ msgid "replace text"
+#~ msgstr "Tương đối"
+
+#, fuzzy
 #~| msgid "&Load..."
 #~ msgctxt "load theme"
 #~ msgid "&Load"
@@ -22251,22 +22327,6 @@ msgstr ""
 #~ msgctxt "Renaming Options"
 #~ msgid "Options"
 #~ msgstr "Tuy chọn giao diện"
-
-#, fuzzy
-#~| msgid "Count:"
-#~ msgid "Current Name"
-#~ msgstr "Đếm:"
-
-#, fuzzy
-#~| msgid "Name:"
-#~ msgid "New Name"
-#~ msgstr "Tên:"
-
-#, fuzzy
-#~| msgid "Rename..."
-#~ msgid "Rename"
-#~ msgid_plural "Rename (%1 images)"
-#~ msgstr[0] "Thay tên..."
 
 #, fuzzy
 #~| msgid "Tone"
@@ -22393,9 +22453,6 @@ msgstr ""
 #~ "p><p><b>Thiết lập cục bộ</b>: định dạng ngày tháng phụ thuộc vào thiết "
 #~ "lập trên bảng điều khiển KDE.</p><p><b>Cấp cao :</b> cho bạn có khả năng "
 #~ "xác định một định dạng ngày tháng riêng.</p>"
-
-#~ msgid "Add Camera Name"
-#~ msgstr "Thêm tên máy ảnh"
 
 #, fuzzy
 #~| msgid "<p>Set this option to add the camera name."

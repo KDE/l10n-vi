@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-27 06:15+0200\n"
+"POT-Creation-Date: 2009-09-28 06:17+0200\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -269,8 +269,8 @@ msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:638 core/kget.cpp:554 core/kget.cpp:908
-#: core/kget.cpp:917 transfer-plugins/metalink/metalink.cpp:193
+#: core/datasourcefactory.cpp:638 core/kget.cpp:554 core/kget.cpp:925
+#: core/kget.cpp:934 transfer-plugins/metalink/metalink.cpp:193
 #: transfer-plugins/bittorrent/bttransfer.cpp:494
 #: transfer-plugins/bittorrent/bttransfer.cpp:505
 #: ui/metalinkcreator/metalinkcreator.cpp:289
@@ -305,6 +305,7 @@ msgstr "Bị trễ"
 
 #: core/transfer.cpp:30 core/transfer.cpp:234 core/transfer.cpp:259
 #: transfer-plugins/mms/mmsTransfer.cpp:52
+#: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:321
 #: transfer-plugins/contentfetch/contentfetch.cpp:64
 #, fuzzy
@@ -438,24 +439,24 @@ msgid "We are sorry. KGet is unable to download from this protocol"
 msgstr ""
 
 #: core/kget.cpp:816
-msgid "We are sorry"
+msgid "Protocol unsupported"
 msgstr ""
 
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:847 ui/newtransferdialog.cpp:254 rc.cpp:520
+#: core/kget.cpp:868 ui/newtransferdialog.cpp:256 rc.cpp:520
 msgid "New Download"
 msgstr "Tải về mới"
 
-#: core/kget.cpp:847
+#: core/kget.cpp:868
 msgid "Enter URL:"
 msgstr "Nhập URL:"
 
-#: core/kget.cpp:880
+#: core/kget.cpp:901
 msgid "Save As"
 msgstr ""
 
-#: core/kget.cpp:907
+#: core/kget.cpp:924
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -464,7 +465,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:916
+#: core/kget.cpp:933
 #, fuzzy, kde-format
 #| msgid ""
 #| "Malformed URL:\n"
@@ -476,7 +477,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:928
+#: core/kget.cpp:945
 #, kde-format
 msgid ""
 "You have already completed a download from the location: \n"
@@ -486,13 +487,13 @@ msgid ""
 "Download it again?"
 msgstr ""
 
-#: core/kget.cpp:929
+#: core/kget.cpp:946
 #, fuzzy
 #| msgid "Download URL again?"
 msgid "Download it again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:941
+#: core/kget.cpp:958
 #, kde-format
 msgid ""
 "You have a download in progress from the location: \n"
@@ -502,17 +503,17 @@ msgid ""
 "Delete it and download again?"
 msgstr ""
 
-#: core/kget.cpp:942
+#: core/kget.cpp:959
 #, fuzzy
 #| msgid "Download URL again?"
 msgid "Delete it and download again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:965 core/kget.cpp:972
+#: core/kget.cpp:982 core/kget.cpp:989
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:982
+#: core/kget.cpp:999
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -525,13 +526,13 @@ msgstr ""
 "đã tồn tại.\n"
 "Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:983
+#: core/kget.cpp:1000
 #, fuzzy
 #| msgid "Overwrite existing file?"
 msgid "Overwrite destination"
 msgstr "Ghi đè lên tập tin đã có?"
 
-#: core/kget.cpp:1114
+#: core/kget.cpp:1131
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error "
@@ -542,7 +543,7 @@ msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:1132
+#: core/kget.cpp:1149
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -553,7 +554,7 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:1142
+#: core/kget.cpp:1159
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -566,17 +567,17 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1333 core/kget.cpp:1343 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1350 core/kget.cpp:1360 ui/droptarget.cpp:94 rc.cpp:65
 #, fuzzy
 #| msgid "KGet"
 msgid "Quit KGet"
 msgstr "KGet"
 
-#: core/kget.cpp:1334
+#: core/kget.cpp:1351
 msgid "KGet is now closing, as all downloads have completed."
 msgstr ""
 
-#: core/kget.cpp:1344
+#: core/kget.cpp:1361
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr ""
 
@@ -597,6 +598,7 @@ msgid "Verification failed."
 msgstr ""
 
 #: transfer-plugins/mms/mmsTransfer.cpp:36
+#: transfer-plugins/mmsclient/mmsTransfer.cpp:38
 msgctxt "transfer state: running"
 msgid "Running...."
 msgstr ""
@@ -1746,25 +1748,25 @@ msgstr "KGet"
 msgid "Download Manager"
 msgstr "Số tải về:"
 
-#: ui/groupsettingsdialog.cpp:24
+#: ui/groupsettingsdialog.cpp:25
 #, fuzzy, kde-format
 #| msgid "Details for: %1"
 msgid "Group Settings for %1"
 msgstr "Chi tiết về: %1"
 
-#: ui/groupsettingsdialog.cpp:66
+#: ui/groupsettingsdialog.cpp:69
 #, fuzzy
 #| msgid "Details for: %1"
 msgid "Tag Settings for the groups"
 msgstr "Chi tiết về: %1"
 
-#: ui/groupsettingsdialog.cpp:79 ui/nepomukwidget.cpp:60
+#: ui/groupsettingsdialog.cpp:82 ui/nepomukwidget.cpp:60
 #, fuzzy
 #| msgid "Transfers:"
 msgid "Remove Tag"
 msgstr "Truyền:"
 
-#: ui/groupsettingsdialog.cpp:81 ui/nepomukwidget.cpp:66
+#: ui/groupsettingsdialog.cpp:84 ui/nepomukwidget.cpp:66
 #, fuzzy
 #| msgid "Add"
 msgid "Add Tag"

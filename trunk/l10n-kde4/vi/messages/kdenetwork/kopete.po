@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-24 06:18+0200\n"
+"POT-Creation-Date: 2009-09-29 06:10+0200\n"
 "PO-Revision-Date: 2007-07-11 23:13+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17111,7 +17111,7 @@ msgstr ""
 msgid "<b>Authentication error.</b>"
 msgstr "Lỗi đăng ký."
 
-#: plugins/otr/otrlchatinterface.cpp:545 plugins/otr/otrlchatinterface.cpp:560
+#: plugins/otr/otrlchatinterface.cpp:560
 #, fuzzy
 #| msgid "Connection Error"
 msgid "Encryption error"
@@ -17435,20 +17435,26 @@ msgctxt "@item:inmenu Never encrypt messages"
 msgid "Ne&ver"
 msgstr "Không bao giờ"
 
-#: plugins/otr/otrplugin.cpp:181
+#: plugins/otr/otrplugin.cpp:164
+#, fuzzy
+#| msgid "An error occurred sending the message"
+msgid "An error occured while encrypting the message."
+msgstr "Gặp lỗi khi gửi tin nhẳn"
+
+#: plugins/otr/otrplugin.cpp:191
 #, fuzzy
 #| msgid "You do not have enough permission to send a message to this contact."
 msgctxt "@info:status"
 msgid "Your policy settings do not allow encrypted sessions to this contact."
 msgstr "Bạn không có quyền để gửi tin nhẳn cho liên lạc này."
 
-#: plugins/otr/otrplugin.cpp:190
+#: plugins/otr/otrplugin.cpp:200
 #, kde-format
 msgctxt "@info:status"
 msgid "Attempting to refresh the OTR session with <b>%1</b>..."
 msgstr ""
 
-#: plugins/otr/otrplugin.cpp:192
+#: plugins/otr/otrplugin.cpp:202
 #, kde-format
 msgctxt "@info:status"
 msgid "Attempting to start a private OTR session with <b>%1</b>..."
@@ -17978,7 +17984,7 @@ msgid "History Converter"
 msgstr "Bộ chuyển đổi lịch sử"
 
 #: plugins/history/converter.cpp:42 protocols/jabber/jabbercontact.cpp:979
-#: protocols/jabber/jabberaccount.cpp:1166
+#: protocols/jabber/jabberaccount.cpp:1168
 msgid "Keep"
 msgstr "Giữ"
 
@@ -21528,9 +21534,11 @@ msgid "ICQ Email Express"
 msgstr "ICQ Email Express"
 
 #: protocols/oscar/oscaraccount.cpp:1006 protocols/oscar/oscaraccount.cpp:1023
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "account has been disconnected"
+#| msgid "%1 disconnected"
 msgctxt "account has been disconnected"
-msgid "%1 disconnected"
+msgid "Kopete: %1 disconnected"
 msgstr "%1 bị ngắt kết nối"
 
 #: protocols/oscar/oscaraccount.cpp:1047
@@ -21548,7 +21556,9 @@ msgid ""
 msgstr "Gặp lỗi trong tiến trình quản lý giao thức; đang tự động tái kết nối."
 
 #: protocols/oscar/oscaraccount.cpp:1051
-msgid "OSCAR Protocol error"
+#, fuzzy
+#| msgid "OSCAR Protocol error"
+msgid "Kopete: OSCAR Protocol error"
 msgstr "Lỗi giao thức OSCAR"
 
 #: protocols/oscar/oscaraccount.cpp:1192
@@ -23453,7 +23463,7 @@ msgstr ""
 "không?"
 
 #: protocols/jabber/jabbercontact.cpp:978
-#: protocols/jabber/jabberaccount.cpp:1166
+#: protocols/jabber/jabberaccount.cpp:1168
 msgid "Notification"
 msgstr "Thông báo"
 
@@ -23907,7 +23917,7 @@ msgid "Please enter your nickname for the room %1"
 msgstr "Hãy nhập vào tên hiệu của bạn cho phòng %1"
 
 #: protocols/jabber/jabberprotocol.cpp:486
-#: protocols/jabber/jabberaccount.cpp:1560
+#: protocols/jabber/jabberaccount.cpp:1562
 #, fuzzy
 #| msgid "Give your nickname"
 msgid "Provide your nickname"
@@ -24297,12 +24307,13 @@ msgid "Could not bind a resource: %1"
 msgstr "Không thể đóng kết tài nguyên: %1"
 
 #: protocols/jabber/jabberaccount.cpp:994
-#: protocols/jabber/jabberaccount.cpp:998
-#, kde-format
-msgid "Connection problem with Jabber server %1"
+#: protocols/jabber/jabberaccount.cpp:999
+#, fuzzy, kde-format
+#| msgid "Connection problem with Jabber server %1"
+msgid "Kopete: Connection problem with Jabber server %1"
 msgstr "Lỗi kết nối với máy phục vụ Jabber %1"
 
-#: protocols/jabber/jabberaccount.cpp:1163
+#: protocols/jabber/jabberaccount.cpp:1165
 #, fuzzy, kde-format
 #| msgid ""
 #| "The Jabber user %1 removed %2's subscription to them. This account will "
@@ -24317,33 +24328,33 @@ msgstr ""
 "không còn có khả năng xem lại trạng thái trực/ngoại tuyến của họ. Bạn có "
 "muốn xoá liên lạc này không?"
 
-#: protocols/jabber/jabberaccount.cpp:1337
+#: protocols/jabber/jabberaccount.cpp:1339
 msgid "Waiting for authorization"
 msgstr "Đang đợi sự cho phép"
 
-#: protocols/jabber/jabberaccount.cpp:1550
+#: protocols/jabber/jabberaccount.cpp:1552
 #, kde-format
 msgid "A password is required to join the room %1."
 msgstr "Cần thiết mật khẩu để vào phòng %1."
 
-#: protocols/jabber/jabberaccount.cpp:1559
+#: protocols/jabber/jabberaccount.cpp:1561
 #, kde-format
 msgid "Error trying to join %1 : nickname %2 is already in use"
 msgstr "Lỗi thử vào %1: tên hiệu %2 đang được dùng"
 
-#: protocols/jabber/jabberaccount.cpp:1573
+#: protocols/jabber/jabberaccount.cpp:1575
 #, fuzzy, kde-format
 #| msgid "You can not join the room %1 because you were banned"
 msgid "You cannot join the room %1 because you have been banned"
 msgstr "Bạn không thể vào phòng %1 vì bạn bị cấm"
 
-#: protocols/jabber/jabberaccount.cpp:1574
-#: protocols/jabber/jabberaccount.cpp:1581
-#: protocols/jabber/jabberaccount.cpp:1591
+#: protocols/jabber/jabberaccount.cpp:1576
+#: protocols/jabber/jabberaccount.cpp:1583
+#: protocols/jabber/jabberaccount.cpp:1593
 msgid "Jabber Group Chat"
 msgstr "Trò chuyện nhóm Jabber"
 
-#: protocols/jabber/jabberaccount.cpp:1580
+#: protocols/jabber/jabberaccount.cpp:1582
 #, fuzzy, kde-format
 #| msgid ""
 #| "You can not join the room %1 because the maximum users has been reached"
@@ -24352,11 +24363,11 @@ msgid ""
 "reached"
 msgstr "Bạn không thể vào phòng %1 vì nó chứa số người dùng tối đa"
 
-#: protocols/jabber/jabberaccount.cpp:1586
+#: protocols/jabber/jabberaccount.cpp:1588
 msgid "No reason given by the server"
 msgstr "Máy phục vụ không cung cấp lý do"
 
-#: protocols/jabber/jabberaccount.cpp:1590
+#: protocols/jabber/jabberaccount.cpp:1592
 #, fuzzy, kde-format
 #| msgid ""
 #| "There was an error processing your request for group chat %1. (Reason: %"
@@ -24367,7 +24378,7 @@ msgid ""
 msgstr ""
 "Gặp lỗi khi xử lý yêu cầu của bạn về trò chuyện nhóm %1. (Lý do : %2; Mã %3)"
 
-#: protocols/jabber/jabberaccount.cpp:1663
+#: protocols/jabber/jabberaccount.cpp:1665
 #, fuzzy, kde-format
 #| msgid ""
 #| "Do you want to also unregister \"%1\" from the Jabber server ?\n"
@@ -24383,21 +24394,21 @@ msgstr ""
 "phục vụ ; bạn sẽ cũng không bao giờ có khả năng kết nối tới tài khoản này "
 "bằng bất cứ ứng dụng khách nào."
 
-#: protocols/jabber/jabberaccount.cpp:1666
+#: protocols/jabber/jabberaccount.cpp:1668
 msgid "Unregister"
 msgstr "Hủy đăng ký"
 
-#: protocols/jabber/jabberaccount.cpp:1667
+#: protocols/jabber/jabberaccount.cpp:1669
 msgid "Remove and Unregister"
 msgstr "Bỏ và Hủy đăng ký"
 
-#: protocols/jabber/jabberaccount.cpp:1668
+#: protocols/jabber/jabberaccount.cpp:1670
 #, fuzzy
 #| msgid "Remove from kopete only"
 msgid "Remove only from Kopete"
 msgstr "Bỏ chỉ ra Kopete"
 
-#: protocols/jabber/jabberaccount.cpp:1712
+#: protocols/jabber/jabberaccount.cpp:1714
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred when trying to remove the account:\n"
@@ -24409,7 +24420,7 @@ msgstr ""
 "Gặp lỗi khi thử gỡ bỏ tài khoản:\n"
 "%1"
 
-#: protocols/jabber/jabberaccount.cpp:1713
+#: protocols/jabber/jabberaccount.cpp:1715
 msgid "Jabber Account Unregistration"
 msgstr "Hủy đăng ký tài khoản Jabber"
 
@@ -25002,7 +25013,9 @@ msgid "Unable to Send Message on Account '%1'"
 msgstr "Không thể kết nối tới %1"
 
 #: protocols/groupwise/gwaccount.cpp:586
-msgid "Conflicting Changes Made Offline"
+#, fuzzy
+#| msgid "Conflicting Changes Made Offline"
+msgid "Kopete: Conflicting Changes Made Offline"
 msgstr "Có thay đổi xung đột đã làm ngoại tuyến"
 
 #: protocols/groupwise/gwaccount.cpp:586
@@ -25071,8 +25084,9 @@ msgid "Error Adding Contact"
 msgstr "Lỗi thêm liên lạc"
 
 #: protocols/groupwise/gwaccount.cpp:1318
-#, kde-format
-msgid "Signed in as %1 Elsewhere"
+#, fuzzy, kde-format
+#| msgid "Signed in as %1 Elsewhere"
+msgid "Kopete: Signed in as %1 Elsewhere"
 msgstr "Đã đăng nhập dưới %1 ở nơi khác"
 
 #: protocols/groupwise/gwaccount.cpp:1318

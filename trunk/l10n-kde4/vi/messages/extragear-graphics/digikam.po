@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-07 07:18+0200\n"
+"POT-Creation-Date: 2009-10-08 06:16+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -2102,7 +2102,7 @@ msgid "Nearest Neighbor"
 msgstr "Hàng xóm gần nhất"
 
 #: libs/greycstoration/greycstorationwidget.cpp:236
-#: imageplugins/localcontrast/localcontrasttool.cpp:156
+#: imageplugins/localcontrast/localcontrasttool.cpp:174
 #: utilities/timeline/timelineview.cpp:151
 msgid "Linear"
 msgstr "Tuyến"
@@ -10210,10 +10210,10 @@ msgstr ""
 "đa."
 
 #: imageplugins/lenscorrection/vignetting/antivignettingtool.cpp:141
-#: imageplugins/localcontrast/localcontrasttool.cpp:226
-#: imageplugins/localcontrast/localcontrasttool.cpp:262
-#: imageplugins/localcontrast/localcontrasttool.cpp:298
-#: imageplugins/localcontrast/localcontrasttool.cpp:334
+#: imageplugins/localcontrast/localcontrasttool.cpp:245
+#: imageplugins/localcontrast/localcontrasttool.cpp:285
+#: imageplugins/localcontrast/localcontrasttool.cpp:325
+#: imageplugins/localcontrast/localcontrasttool.cpp:365
 msgid "Power:"
 msgstr "Mũ :"
 
@@ -10343,7 +10343,6 @@ msgstr ""
 #: imageplugins/noisereduction/noisereductiontool.cpp:151
 #: imageplugins/coreplugin/sharpentool.cpp:194
 #: utilities/queuemanager/basetools/enhance/sharpen.cpp:124
-#: utilities/fuzzysearch/findduplicatesview.cpp:173
 #: utilities/fuzzysearch/fuzzysearchview.cpp:224
 msgid "Threshold:"
 msgstr "Ngưỡng:"
@@ -12550,26 +12549,24 @@ msgstr ""
 "<p>Giá trị này điều khiển số lần lặp lại cần dùng với hiệu ứng Sóng, Lát và "
 "Nê-ông."
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:131
-#: imageplugins/localcontrast/localcontrasttool.cpp:552
-#, fuzzy
-#| msgid "Increase Contrast"
-msgid "Local Contrast"
-msgstr "Tăng độ tương phản"
+#: imageplugins/localcontrast/localcontrasttool.cpp:149
+#: imageplugins/localcontrast/localcontrasttool.cpp:622
+msgid "Tone Mapping"
+msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:153
+#: imageplugins/localcontrast/localcontrasttool.cpp:171
 #, fuzzy
 #| msgid "Selection"
 msgid "Function:"
 msgstr "Vùng chọn"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:155
+#: imageplugins/localcontrast/localcontrasttool.cpp:173
 #, fuzzy
 #| msgid "Power:"
 msgid "Power"
 msgstr "Mũ :"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:158
+#: imageplugins/localcontrast/localcontrasttool.cpp:176
 msgid ""
 "<b>Function</b>: This function combines the original RGB channels with the "
 "desaturated blurred image. This function is used in each of the tonemapping "
@@ -12578,119 +12575,150 @@ msgid ""
 "opposite on high values."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:166
+#: imageplugins/localcontrast/localcontrasttool.cpp:184
 #, fuzzy
 #| msgid "Stretch Contrast"
 msgid "Stretch contrast"
 msgstr "Kéo giãn độ tương phản"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:167
+#: imageplugins/localcontrast/localcontrasttool.cpp:185
 msgid ""
 "<b>Stretch contrast</b>: This stretches the contrast of the original image. "
 "It is applied before the tonemapping process."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:173
+#: imageplugins/localcontrast/localcontrasttool.cpp:191
 #, fuzzy
 #| msgid "Saturation:"
 msgid "High saturation:"
 msgstr "Độ bão hoà:"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:179
-#: imageplugins/localcontrast/localcontrasttool.cpp:191
+#: imageplugins/localcontrast/localcontrasttool.cpp:197
+#: imageplugins/localcontrast/localcontrasttool.cpp:209
 msgid ""
 "<b>High and low saturation</b>: Usually the (perceived) saturation is "
 "increased. The user can choose to lower the saturation on original highlight "
 "and shadows from the image with these parameters."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:185
+#: imageplugins/localcontrast/localcontrasttool.cpp:203
 #, fuzzy
 #| msgid "Saturation:"
 msgid "Low saturation:"
 msgstr "Độ bão hoà:"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:197
+#: imageplugins/localcontrast/localcontrasttool.cpp:215
 #, fuzzy
 #| msgid "Flash:"
 msgid "Fast mode"
 msgstr "Nháy:"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:198
+#: imageplugins/localcontrast/localcontrasttool.cpp:216
 msgid ""
 "<b>Fast mode</b>: There are available two ways to do the tonemapping: using "
 "a very fast algorithm, which might produce artifacts on the image or a more "
 "precise algorithm, which is slower."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:220
-#: imageplugins/localcontrast/localcontrasttool.cpp:256
-#: imageplugins/localcontrast/localcontrasttool.cpp:292
-#: imageplugins/localcontrast/localcontrasttool.cpp:328
+#: imageplugins/localcontrast/localcontrasttool.cpp:238
+#: imageplugins/localcontrast/localcontrasttool.cpp:278
+#: imageplugins/localcontrast/localcontrasttool.cpp:318
+#: imageplugins/localcontrast/localcontrasttool.cpp:358
 #, fuzzy
 #| msgid "Marble"
 msgid "Enabled"
 msgstr "Đá hoa"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:221
-#: imageplugins/localcontrast/localcontrasttool.cpp:257
-#: imageplugins/localcontrast/localcontrasttool.cpp:293
-#: imageplugins/localcontrast/localcontrasttool.cpp:329
+#: imageplugins/localcontrast/localcontrasttool.cpp:239
+#: imageplugins/localcontrast/localcontrasttool.cpp:279
+#: imageplugins/localcontrast/localcontrasttool.cpp:319
+#: imageplugins/localcontrast/localcontrasttool.cpp:359
 msgid "Check to enable this stage."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:231
-#: imageplugins/localcontrast/localcontrasttool.cpp:267
-#: imageplugins/localcontrast/localcontrasttool.cpp:303
-#: imageplugins/localcontrast/localcontrasttool.cpp:339
+#: imageplugins/localcontrast/localcontrasttool.cpp:250
+#: imageplugins/localcontrast/localcontrasttool.cpp:290
+#: imageplugins/localcontrast/localcontrasttool.cpp:330
+#: imageplugins/localcontrast/localcontrasttool.cpp:370
 msgid "<b>Power</b>: How strong the effect is applied."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:235
-#: imageplugins/localcontrast/localcontrasttool.cpp:271
-#: imageplugins/localcontrast/localcontrasttool.cpp:307
-#: imageplugins/localcontrast/localcontrasttool.cpp:343
+#: imageplugins/localcontrast/localcontrasttool.cpp:254
+#: imageplugins/localcontrast/localcontrasttool.cpp:294
+#: imageplugins/localcontrast/localcontrasttool.cpp:334
+#: imageplugins/localcontrast/localcontrasttool.cpp:374
 #, fuzzy
 #| msgid "Blue"
 msgid "Blur:"
 msgstr "Xanh"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:240
-#: imageplugins/localcontrast/localcontrasttool.cpp:276
-#: imageplugins/localcontrast/localcontrasttool.cpp:312
-#: imageplugins/localcontrast/localcontrasttool.cpp:348
+#: imageplugins/localcontrast/localcontrasttool.cpp:259
+#: imageplugins/localcontrast/localcontrasttool.cpp:299
+#: imageplugins/localcontrast/localcontrasttool.cpp:339
+#: imageplugins/localcontrast/localcontrasttool.cpp:379
 msgid ""
 "<b>Blur</b>: How strong the image is blured before combining with the "
 "original image with the tonemapping function."
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:360
+#: imageplugins/localcontrast/localcontrasttool.cpp:396
 #, fuzzy
 #| msgid "General Settings"
 msgid "General settings"
 msgstr "Thiết lập chung"
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:362
+#: imageplugins/localcontrast/localcontrasttool.cpp:398
 msgid "Stage 1"
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:364
+#: imageplugins/localcontrast/localcontrasttool.cpp:400
 msgid "Stage 2"
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:366
+#: imageplugins/localcontrast/localcontrasttool.cpp:402
 msgid "Stage 3"
 msgstr ""
 
-#: imageplugins/localcontrast/localcontrasttool.cpp:368
+#: imageplugins/localcontrast/localcontrasttool.cpp:404
 msgid "Stage 4"
 msgstr ""
 
+#: imageplugins/localcontrast/localcontrasttool.cpp:629
+#, fuzzy
+#| msgid "Photograph Resizing Settings File to Load"
+msgid "Photograph Tone Mapping Settings File to Load"
+msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần nạp"
+
+#: imageplugins/localcontrast/localcontrasttool.cpp:641
+#, fuzzy, kde-format
+#| msgid "\"%1\" is not a Photograph Resizing settings text file."
+msgid "\"%1\" is not a Photograph Tone Mapping settings text file."
+msgstr ""
+"« %1 » không phải là một tập tin văn bản thiết lập thay đổi kích cỡ ảnh chụp."
+
+#: imageplugins/localcontrast/localcontrasttool.cpp:670
+#, fuzzy
+#| msgid "Cannot load settings from the Photograph Resizing text file."
+msgid "Cannot load settings from the Photograph Tone Mapping text file."
+msgstr "Không thể nạp thiết lập từ tập tin văn bản thay đổi kích cỡ ảnh chụp."
+
+#: imageplugins/localcontrast/localcontrasttool.cpp:680
+#, fuzzy
+#| msgid "Photograph Resizing Settings File to Save"
+msgid "Photograph Tone Mapping Settings File to Save"
+msgstr "Tập tin thiết lập thay đổi kích cỡ ảnh chụp cần lưu"
+
+#: imageplugins/localcontrast/localcontrasttool.cpp:712
+#, fuzzy
+#| msgid "Cannot save settings to the Photograph Resizing text file."
+msgid "Cannot save settings to the Photograph Tone Mapping text file."
+msgstr "Không thể lưu thiết lập vào tập tin văn bản thay đổi kích cỡ ảnh chụp."
+
 #: imageplugins/localcontrast/imageplugin_localcontrast.cpp:50
 #, fuzzy
-#| msgid "Increase Contrast"
-msgid "Local Contrast..."
-msgstr "Tăng độ tương phản"
+#| msgid "Donate Money..."
+msgid "Tone Mapping..."
+msgstr "Tăng tiền..."
 
 #: imageplugins/oilpaint/imageplugin_oilpaint.cpp:51
 msgid "Oil Paint..."
@@ -22135,17 +22163,17 @@ msgctxt ""
 msgid "Giving a presentation"
 msgstr ""
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:129
+#: utilities/fuzzysearch/findduplicatesview.cpp:127
 #, fuzzy
 #| msgid "Save Images"
 msgid "Ref. images"
 msgstr "Lưu ảnh"
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:129
+#: utilities/fuzzysearch/findduplicatesview.cpp:127
 msgid "Items"
 msgstr ""
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:132
+#: utilities/fuzzysearch/findduplicatesview.cpp:130
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the digital camera list used by digiKam via the "
@@ -22155,51 +22183,57 @@ msgstr ""
 "<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi digiKam "
 "qua giao diện Gphoto."
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:134
+#: utilities/fuzzysearch/findduplicatesview.cpp:132
 #, fuzzy
 #| msgid "<b>Update of thumbnails database done</b>"
 msgid "Update fingerprints"
 msgstr "<b>Tiến trình cập nhật cơ sở dữ liệu ảnh mẫu đã chạy xong</b>"
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:136
+#: utilities/fuzzysearch/findduplicatesview.cpp:134
 #, fuzzy
 #| msgid "<p>Set this option to display image type."
 msgid "Use this button to update all image fingerprints."
 msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:138
+#: utilities/fuzzysearch/findduplicatesview.cpp:136
 #, fuzzy
 #| msgid "Caricature"
 msgid "Find duplicates"
 msgstr "Vẽ biếm hoạ"
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:140
+#: utilities/fuzzysearch/findduplicatesview.cpp:138
 #, fuzzy
 #| msgid "<p>Set this option to display image type."
 msgid "Use this button to scan the selected albums for duplicate items."
 msgstr "<p>Bật tùy chọn này để hiển thị kiểu của tập tin ảnh."
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:149
+#: utilities/fuzzysearch/findduplicatesview.cpp:147
 #, fuzzy
 #| msgid "Search:"
 msgid "Search in:"
 msgstr "Tìm kiếm:"
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:154
+#: utilities/fuzzysearch/findduplicatesview.cpp:152
 msgid "Select all albums that should be included in the search."
 msgstr ""
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:161
+#: utilities/fuzzysearch/findduplicatesview.cpp:159
 msgid "Select all tags that should be included in the search."
 msgstr ""
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:280
+#: utilities/fuzzysearch/findduplicatesview.cpp:171
+#, fuzzy
+#| msgid "Regularity:"
+msgid "Similarity:"
+msgstr "Độ đều đặn:"
+
+#: utilities/fuzzysearch/findduplicatesview.cpp:278
 #, fuzzy
 #| msgid "%1 items selected"
 msgid "No albums selected"
 msgstr "%1 mục đã chọn"
 
-#: utilities/fuzzysearch/findduplicatesview.cpp:295
+#: utilities/fuzzysearch/findduplicatesview.cpp:293
 #, fuzzy
 #| msgid "%1 items selected"
 msgid "No tags selected"
@@ -22436,6 +22470,16 @@ msgid ""
 "\n"
 "Build date: %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Increase Contrast"
+#~ msgid "Local Contrast"
+#~ msgstr "Tăng độ tương phản"
+
+#, fuzzy
+#~| msgid "Increase Contrast"
+#~ msgid "Local Contrast..."
+#~ msgstr "Tăng độ tương phản"
 
 #, fuzzy
 #~| msgid "&Themes"

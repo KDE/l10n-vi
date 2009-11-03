@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkclock\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-01 06:23+0200\n"
+"POT-Creation-Date: 2009-11-03 06:09+0100\n"
 "PO-Revision-Date: 2007-06-23 20:00+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17,15 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.10\n"
 
-#: dtime.cpp:76
-msgid "Set date and time &automatically:"
-msgstr "Tự động đặt ngày và &giờ:"
-
-#: dtime.cpp:102
-msgid "Here you can change the system date's day of the month, month and year."
-msgstr "Ở đây bạn có thể thay đổi ngày tháng năm của hệ thống."
-
-#: dtime.cpp:130
+#: dtime.cpp:98
 msgid ""
 "Here you can change the system time. Click into the hours, minutes or "
 "seconds field to change the relevant value, either using the up and down "
@@ -35,7 +27,13 @@ msgstr ""
 "giây để thay đổi các giá trị tương ứng, hoặc cũng có thể dùng các mũi tên "
 "lên xuống ở bên phải hoặc nhập trực tiếp một giá trị mới."
 
-#: dtime.cpp:215
+#: dtime.cpp:122
+#, fuzzy, kde-format
+#| msgid "Current local timezone: %1 (%2)"
+msgid "Current local time zone: %1 (%2)"
+msgstr "Múi giờ hiện tại: %1 (%2)"
+
+#: dtime.cpp:188
 msgid ""
 "Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
 "north-america.pool.ntp.org,oceania.pool.ntp.org"
@@ -43,16 +41,28 @@ msgstr ""
 "Máy chủ thời gian chung (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
 "north-america.pool.ntp.org,oceania.pool.ntp.org"
 
-#: dtime.cpp:275
+#: dtime.cpp:267
 #, kde-format
 msgid "Unable to contact time server: %1."
 msgstr "Không thể liên lạc với máy phục vụ giờ : %1"
 
-#: dtime.cpp:279
+#: dtime.cpp:271
 msgid "Can not set date."
 msgstr "Không đặt được ngày."
 
-#: dtime.cpp:297 main.cpp:62
+#: dtime.cpp:274
+#, fuzzy
+#| msgid "Error setting new timezone."
+msgid "Error setting new time zone."
+msgstr "Lỗi khi thiết lập múi giờ mới."
+
+#: dtime.cpp:275
+#, fuzzy
+#| msgid "Timezone Error"
+msgid "Time zone Error"
+msgstr "Lỗi múi giờ"
+
+#: dtime.cpp:292 main.cpp:61
 msgid ""
 "<h1>Date & Time</h1> This control module can be used to set the system date "
 "and time. As these settings do not only affect you as a user, but rather the "
@@ -66,80 +76,116 @@ msgstr ""
 "trị này khi chạy Trung tâm điều khiển với quyền root. Nếu bạn không có mật "
 "khẩu root và thấy thời gian bị sai, hãy liên hệ với nhà quản lí hệ thống ."
 
-#: main.cpp:54
+#: main.cpp:53
 msgid "kcmclock"
 msgstr "kcmclock"
 
-#: main.cpp:54
+#: main.cpp:53
 msgid "KDE Clock Control Module"
 msgstr "Môđun điều khiển đồng hồ KDE"
 
-#: main.cpp:56
+#: main.cpp:55
 msgid "(c) 1996 - 2001 Luca Montecchiani"
 msgstr ""
 
-#: main.cpp:58
+#: main.cpp:57
 msgid "Luca Montecchiani"
 msgstr ""
 
-#: main.cpp:58
+#: main.cpp:57
 msgid "Original author"
 msgstr "Tác giả gốc"
 
-#: main.cpp:59
+#: main.cpp:58
 msgid "Paul Campbell"
 msgstr ""
 
-#: main.cpp:59
+#: main.cpp:58
 msgid "Current Maintainer"
 msgstr "Nhà bảo trì hiện tại"
 
-#: main.cpp:60
+#: main.cpp:59
 msgid "Benjamin Meyer"
 msgstr ""
 
-#: main.cpp:60
+#: main.cpp:59
 msgid "Added NTP support"
 msgstr "Đã thêm hỗ trợ NTP"
 
-#: main.cpp:103
+#: main.cpp:97
 #, kde-format
 msgid "Unable to authenticate/execute the action: %1, %2"
 msgstr ""
 
-#: rc.cpp:1
+#. i18n: file: dateandtime.ui:15
+#. i18n: ectx: property (windowTitle), widget (QWidget, DateAndTime)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:25
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: rc.cpp:6
+msgid "Date and Time"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:31
+#. i18n: ectx: property (whatsThis), widget (KDatePicker, cal)
+#: rc.cpp:9
+msgid "Here you can change the system date's day of the month, month and year."
+msgstr "Ở đây bạn có thể thay đổi ngày tháng năm của hệ thống."
+
+#. i18n: file: dateandtime.ui:49
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Timezone Error"
+msgid "Time Zone"
+msgstr "Lỗi múi giờ"
+
+#. i18n: file: dateandtime.ui:55
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "To change the timezone, select your area from the list below"
+msgid "To change the local time zone, select your area from the list below."
+msgstr "Để thay đổi múi giờ, hãy chọn nơi ở của bạn từ danh sách dưới đây"
+
+#. i18n: file: dateandtime.ui:78
+#. i18n: ectx: property (text), widget (QLabel, m_local)
+#: rc.cpp:18
+#, fuzzy
+#| msgid "Current local timezone: %1 (%2)"
+msgid "Current local time zone:"
+msgstr "Múi giờ hiện tại: %1 (%2)"
+
+#. i18n: file: dateandtime.ui:105
+#. i18n: ectx: attribute (title), widget (QWidget, tab_3)
+#: rc.cpp:24
+msgid "NTP"
+msgstr ""
+
+#. i18n: file: dateandtime.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, setDateTimeAuto)
+#: rc.cpp:27
+msgid "Set date and time &automatically:"
+msgstr "Tự động đặt ngày và &giờ:"
+
+#. i18n: file: dateandtime.ui:134
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:30
+msgid "Time server:"
+msgstr ""
+
+#: rc.cpp:31
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Phan Vĩnh Thịnh"
 
-#: rc.cpp:2
+#: rc.cpp:32
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "teppi82@gmail.com"
-
-#: tzone.cpp:58
-#, fuzzy
-#| msgid "To change the timezone, select your area from the list below"
-msgid "To change the local time zone, select your area from the list below"
-msgstr "Để thay đổi múi giờ, hãy chọn nơi ở của bạn từ danh sách dưới đây"
-
-#: tzone.cpp:88
-#, fuzzy, kde-format
-#| msgid "Current local timezone: %1 (%2)"
-msgid "Current local time zone: %1 (%2)"
-msgstr "Múi giờ hiện tại: %1 (%2)"
-
-#: tzone.cpp:114
-#, fuzzy
-#| msgid "Error setting new timezone."
-msgid "Error setting new time zone."
-msgstr "Lỗi khi thiết lập múi giờ mới."
-
-#: tzone.cpp:115
-#, fuzzy
-#| msgid "Timezone Error"
-msgid "Time zone Error"
-msgstr "Lỗi múi giờ"
 
 #, fuzzy
 #~| msgid "Timezone Error"

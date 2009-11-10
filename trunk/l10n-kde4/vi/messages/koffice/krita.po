@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-09 06:06+0100\n"
+"POT-Creation-Date: 2009-11-10 06:16+0100\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -2375,7 +2375,7 @@ msgstr "Tạo layer mới"
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:338
+#: rc.cpp:581 rc.cpp:2650 rc.cpp:3392 rc.cpp:3545 ui/kis_view2.cpp:337
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -8659,7 +8659,17 @@ msgstr "YCbCr (số nguyên 16-bit mỗi kênh)"
 msgid "YCbCr (8-bit integer/channel)"
 msgstr "YCbCr (số nguyên 8-bit mỗi kênh)"
 
-#: ui/tool/kis_tool.cc:350
+#: ui/tool/kis_tool.cc:98
+#, fuzzy
+msgid "Swap Foreground and Background Color"
+msgstr "Màu Mặt"
+
+#: ui/tool/kis_tool.cc:103
+#, fuzzy
+msgid "Reset Foreground and Background Color"
+msgstr "Màu Mặt"
+
+#: ui/tool/kis_tool.cc:367
 #, fuzzy
 #| msgid "options"
 msgid "No options"
@@ -9229,6 +9239,21 @@ msgstr "Như trên &mạng"
 msgid "As on &Monitor"
 msgstr "Như trên màn &hình"
 
+#: ui/kis_node_model.cpp:295 image/kis_base_node.cpp:120
+msgid "Visible"
+msgstr "Nhìn thấy"
+
+#: ui/kis_node_model.cpp:296 image/kis_base_node.cpp:121
+#, fuzzy
+msgid "Locked"
+msgstr "kết nối"
+
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:144
+#: image/kis_paint_layer.cc:151
+#, fuzzy
+msgid "Alpha Locked"
+msgstr "kết nối"
+
 #: ui/kis_zoom_manager.cc:84
 msgid "Show Rulers"
 msgstr "Hiện thước kẻ"
@@ -9296,36 +9321,36 @@ msgstr ""
 msgid "Show Dockers"
 msgstr "Đá"
 
-#: ui/kis_view2.cpp:227
+#: ui/kis_view2.cpp:226
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "&Công cụ"
 
-#: ui/kis_view2.cpp:332
+#: ui/kis_view2.cpp:331
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:333
+#: ui/kis_view2.cpp:332
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:335
+#: ui/kis_view2.cpp:334
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:336
+#: ui/kis_view2.cpp:335
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:538
+#: ui/kis_view2.cpp:537
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Palettes"
 
-#: ui/kis_view2.cpp:678 ui/kis_view2.cpp:681
+#: ui/kis_view2.cpp:677 ui/kis_view2.cpp:680
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Palettes"
@@ -9549,11 +9574,6 @@ msgstr ""
 "Phương pháp nhập này cố tìm giải pháp nhập tốt nhất, ví dụ bằng cách nhập "
 "danh sách các tác giả lại, hoặc giữ các thông tin về ảnh giống hệt nhau..."
 
-#: image/kis_paint_layer.cc:144 image/kis_paint_layer.cc:151
-#, fuzzy
-msgid "Alpha Locked"
-msgstr "kết nối"
-
 #: image/tests/kis_random_generator_demo.cpp:141
 msgid "kis_random_generator_demo"
 msgstr ""
@@ -9767,15 +9787,6 @@ msgstr "Làm phẳng ảnh"
 #, fuzzy
 msgid "Last used"
 msgstr "Được dùng cuối cùng"
-
-#: image/kis_base_node.cpp:120
-msgid "Visible"
-msgstr "Nhìn thấy"
-
-#: image/kis_base_node.cpp:121
-#, fuzzy
-msgid "Locked"
-msgstr "kết nối"
 
 #: image/recorder/kis_macro.cc:93
 msgid "Play macro"
@@ -11142,7 +11153,7 @@ msgstr "Chổi nhòe"
 msgid "Float"
 msgstr "&Trắng"
 
-#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:127
+#: plugins/colorspaces/ctlcs/ctl_cs_plugin.cpp:115
 #: plugins/colorspaces/lms_f32/lms_f32_plugin.cc:54
 msgid "Float32 Histogram"
 msgstr ""

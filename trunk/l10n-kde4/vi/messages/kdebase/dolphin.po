@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-13 06:08+0100\n"
+"POT-Creation-Date: 2009-11-14 06:12+0100\n"
 "PO-Revision-Date: 2007-06-25 16:30+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -294,24 +294,34 @@ msgstr "Nạp lại"
 msgid "Default"
 msgstr "Xoá"
 
-#: dolphinviewcontainer.cpp:286
+#: dolphinviewcontainer.cpp:290
+msgctxt "@info"
+msgid "Searching..."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:298
 #, fuzzy
 #| msgid "Loading folder..."
 msgctxt "@info:progress"
 msgid "Loading folder..."
 msgstr "Đang nạp thư mục..."
 
-#: dolphinviewcontainer.cpp:406
+#: dolphinviewcontainer.cpp:313
+msgctxt "@info:status"
+msgid "No items found."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:424
 msgctxt "@info:status"
 msgid "Dolphin does not support web pages, the web browser has been launched"
 msgstr ""
 
-#: dolphinviewcontainer.cpp:418
+#: dolphinviewcontainer.cpp:436
 msgctxt "@info:status"
 msgid "Protocol not supported by Dolphin, Konqueror has been launched"
 msgstr ""
 
-#: dolphinviewcontainer.cpp:425
+#: dolphinviewcontainer.cpp:443
 msgctxt "@info:status"
 msgid "Invalid protocol"
 msgstr ""
@@ -512,7 +522,7 @@ msgctxt "@action:inmenu"
 msgid "Restore"
 msgstr "Phục hồi"
 
-#: dolphincontextmenu.cpp:197 dolphinmainwindow.cpp:1183
+#: dolphincontextmenu.cpp:197 dolphinmainwindow.cpp:1190
 #, fuzzy
 #| msgid "Create New"
 msgctxt "@title:menu Create new folder, file, link, etc."
@@ -956,6 +966,7 @@ msgid "Permissions:"
 msgstr "Quyền hạn"
 
 #: panels/information/kmetadatawidget.cpp:198
+#: search/searchcriterionselector.cpp:220
 #, fuzzy
 #| msgid "Rating:"
 msgctxt "@label"
@@ -982,7 +993,7 @@ msgid "Width x Height:"
 msgstr ""
 
 #: panels/information/kmetadatawidget.cpp:503
-#: search/searchcriterionselector.cpp:170
+#: search/searchcriterionselector.cpp:192
 #, fuzzy
 #| msgid "Size:"
 msgctxt "@label"
@@ -1003,7 +1014,7 @@ msgctxt "@label"
 msgid "Total Size:"
 msgstr "Tổng cỡ :"
 
-#: panels/information/informationpanelcontent.cpp:217
+#: panels/information/informationpanelcontent.cpp:234
 #, fuzzy, kde-format
 #| msgid "%1 item selected"
 #| msgid_plural "%1 items selected"
@@ -1012,21 +1023,21 @@ msgid "%1 item selected"
 msgid_plural "%1 items selected"
 msgstr[0] "%1 mục đã chọn"
 
-#: panels/information/informationpanelcontent.cpp:267
+#: panels/information/informationpanelcontent.cpp:284
 #, fuzzy
 #| msgid "Preview"
 msgctxt "@action:inmenu"
 msgid "Preview"
 msgstr "Xem thử"
 
-#: panels/information/informationpanelcontent.cpp:272
+#: panels/information/informationpanelcontent.cpp:289
 #, fuzzy
 #| msgid "Click to add comment..."
 msgctxt "@action:inmenu"
 msgid "Configure..."
 msgstr "Nhấn để thêm chú thích..."
 
-#: panels/information/informationpanelcontent.cpp:289
+#: panels/information/informationpanelcontent.cpp:306
 msgctxt "@label::textbox"
 msgid "Configure which data should be shown in the Information Panel."
 msgstr ""
@@ -1740,207 +1751,202 @@ msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "Đóng"
 
-#: dolphinmainwindow.cpp:1013
-msgctxt "@info"
-msgid "Searching..."
-msgstr ""
-
-#: dolphinmainwindow.cpp:1190
+#: dolphinmainwindow.cpp:1197
 #, fuzzy
 #| msgid "New &Window"
 msgctxt "@action:inmenu File"
 msgid "New &Window"
 msgstr "&Cửa sổ mới"
 
-#: dolphinmainwindow.cpp:1196
+#: dolphinmainwindow.cpp:1203
 msgctxt "@action:inmenu File"
 msgid "New Tab"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1202
+#: dolphinmainwindow.cpp:1209
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:inmenu File"
 msgid "Close Tab"
 msgstr "Đóng"
 
-#: dolphinmainwindow.cpp:1225
+#: dolphinmainwindow.cpp:1232
 #, fuzzy
 #| msgid "Paste"
 msgctxt "@action:inmenu Edit"
 msgid "Paste"
 msgstr "Dán"
 
-#: dolphinmainwindow.cpp:1228
+#: dolphinmainwindow.cpp:1235
 #, fuzzy
 #| msgid "Select All"
 msgctxt "@action:inmenu Edit"
 msgid "Select All"
 msgstr "Chọn tất cả"
 
-#: dolphinmainwindow.cpp:1233
+#: dolphinmainwindow.cpp:1240
 #, fuzzy
 #| msgid "Invert Selection"
 msgctxt "@action:inmenu Edit"
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
 
-#: dolphinmainwindow.cpp:1246
+#: dolphinmainwindow.cpp:1253
 #, fuzzy
 #| msgid "Reload"
 msgctxt "@action:inmenu View"
 msgid "Reload"
 msgstr "Nạp lại"
 
-#: dolphinmainwindow.cpp:1252
+#: dolphinmainwindow.cpp:1259
 #, fuzzy
 #| msgid "Stop"
 msgctxt "@action:inmenu View"
 msgid "Stop"
 msgstr "Dừng"
 
-#: dolphinmainwindow.cpp:1253
+#: dolphinmainwindow.cpp:1260
 #, fuzzy
 #| msgid "Sorting:"
 msgctxt "@info"
 msgid "Stop loading"
 msgstr "Đang sắp xếp:"
 
-#: dolphinmainwindow.cpp:1258
+#: dolphinmainwindow.cpp:1265
 #, fuzzy
 #| msgid "Edit Location"
 msgctxt "@action:inmenu Navigation Bar"
 msgid "Editable Location"
 msgstr "Sửa địa điểm"
 
-#: dolphinmainwindow.cpp:1263
+#: dolphinmainwindow.cpp:1270
 #, fuzzy
 #| msgid "Location:"
 msgctxt "@action:inmenu Navigation Bar"
 msgid "Replace Location"
 msgstr "Địa điểm:"
 
-#: dolphinmainwindow.cpp:1274
+#: dolphinmainwindow.cpp:1281
 #, fuzzy
 #| msgid "Close"
 msgid "Recently Closed Tabs"
 msgstr "Đóng"
 
-#: dolphinmainwindow.cpp:1297
+#: dolphinmainwindow.cpp:1304
 #, fuzzy
 #| msgid "Show Filter Bar"
 msgctxt "@action:inmenu Tools"
 msgid "Show Search Bar"
 msgstr "Hiện thanh lọc"
 
-#: dolphinmainwindow.cpp:1302
+#: dolphinmainwindow.cpp:1309
 #, fuzzy
 #| msgid "Show Filter Bar"
 msgctxt "@action:inmenu Tools"
 msgid "Show Filter Bar"
 msgstr "Hiện thanh lọc"
 
-#: dolphinmainwindow.cpp:1308
+#: dolphinmainwindow.cpp:1315
 #, fuzzy
 #| msgid "Compare Files"
 msgctxt "@action:inmenu Tools"
 msgid "Compare Files"
 msgstr "So sánh tập tin"
 
-#: dolphinmainwindow.cpp:1314
+#: dolphinmainwindow.cpp:1321
 #, fuzzy
 #| msgid "Terminal"
 msgctxt "@action:inmenu Tools"
 msgid "Open Terminal"
 msgstr "Thiết bị cuối"
 
-#: dolphinmainwindow.cpp:1325
+#: dolphinmainwindow.cpp:1332
 msgctxt "@action:inmenu"
 msgid "Activate Next Tab"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1331
+#: dolphinmainwindow.cpp:1338
 msgctxt "@action:inmenu"
 msgid "Activate Previous Tab"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1338
+#: dolphinmainwindow.cpp:1345
 msgctxt "@action:inmenu"
 msgid "Open in New Tab"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1343
+#: dolphinmainwindow.cpp:1350
 #, fuzzy
 #| msgid "New &Window"
 msgctxt "@action:inmenu"
 msgid "Open in New Window"
 msgstr "&Cửa sổ mới"
 
-#: dolphinmainwindow.cpp:1353
+#: dolphinmainwindow.cpp:1360
 msgctxt "@action:inmenu"
 msgid "Search Bar"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1361 dolphinmainwindow.cpp:1368
+#: dolphinmainwindow.cpp:1368 dolphinmainwindow.cpp:1375
 #, fuzzy
 #| msgid "Information"
 msgctxt "@title:window"
 msgid "Information"
 msgstr "Thông tin"
 
-#: dolphinmainwindow.cpp:1382 dolphinmainwindow.cpp:1389
+#: dolphinmainwindow.cpp:1389 dolphinmainwindow.cpp:1396
 #, fuzzy
 #| msgid "Folders"
 msgctxt "@title:window"
 msgid "Folders"
 msgstr "Thư mục"
 
-#: dolphinmainwindow.cpp:1404 dolphinmainwindow.cpp:1413
+#: dolphinmainwindow.cpp:1411 dolphinmainwindow.cpp:1420
 #, fuzzy
 #| msgid "Terminal"
 msgctxt "@title:window Shell terminal"
 msgid "Terminal"
 msgstr "Thiết bị cuối"
 
-#: dolphinmainwindow.cpp:1431 dolphinmainwindow.cpp:1441
+#: dolphinmainwindow.cpp:1438 dolphinmainwindow.cpp:1448
 #, fuzzy
 #| msgid "Places"
 msgctxt "@title:window"
 msgid "Places"
 msgstr "Nơi"
 
-#: dolphinmainwindow.cpp:1573
+#: dolphinmainwindow.cpp:1580
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:intoolbar Close right view"
 msgid "Close"
 msgstr "Đóng"
 
-#: dolphinmainwindow.cpp:1574
+#: dolphinmainwindow.cpp:1581
 msgctxt "@info"
 msgid "Close right view"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1577
+#: dolphinmainwindow.cpp:1584
 #, fuzzy
 #| msgid "Close"
 msgctxt "@action:intoolbar Close left view"
 msgid "Close"
 msgstr "Đóng"
 
-#: dolphinmainwindow.cpp:1578
+#: dolphinmainwindow.cpp:1585
 msgctxt "@info"
 msgid "Close left view"
 msgstr ""
 
-#: dolphinmainwindow.cpp:1582
+#: dolphinmainwindow.cpp:1589
 #, fuzzy
 #| msgid "Split"
 msgctxt "@action:intoolbar Split view"
 msgid "Split"
 msgstr "Chia ra"
 
-#: dolphinmainwindow.cpp:1583
+#: dolphinmainwindow.cpp:1590
 #, fuzzy
 #| msgid "Split view mode"
 msgctxt "@info"
@@ -1959,74 +1965,79 @@ msgctxt "@label:textbox"
 msgid "Search..."
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:52
+#: search/dolphinsearchoptionsconfigurator.cpp:50
 msgctxt "@label"
 msgid "Search:"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:55
+#: search/dolphinsearchoptionsconfigurator.cpp:53
 msgctxt "@label"
 msgid "Everywhere"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:56
+#: search/dolphinsearchoptionsconfigurator.cpp:54
 #, fuzzy
 #| msgid "&Move Here"
 msgctxt "@label"
 msgid "From Here"
 msgstr "Chu&yển vào đây"
 
-#: search/dolphinsearchoptionsconfigurator.cpp:59
+#: search/dolphinsearchoptionsconfigurator.cpp:57
 msgctxt "@label"
 msgid "What:"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:62
+#: search/dolphinsearchoptionsconfigurator.cpp:60
 msgctxt "@label"
 msgid "All"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:63
+#: search/dolphinsearchoptionsconfigurator.cpp:61
 msgctxt "@label"
 msgid "Images"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:64
+#: search/dolphinsearchoptionsconfigurator.cpp:62
 #, fuzzy
 #| msgid "Text"
 msgctxt "@label"
 msgid "Text"
 msgstr "Văn bản"
 
-#: search/dolphinsearchoptionsconfigurator.cpp:65
+#: search/dolphinsearchoptionsconfigurator.cpp:63
 #, fuzzy
 #| msgid "File Manager"
 msgctxt "@label"
 msgid "Filenames"
 msgstr "Bộ Quản lý Tập tin"
 
-#: search/dolphinsearchoptionsconfigurator.cpp:70
+#: search/dolphinsearchoptionsconfigurator.cpp:68
+msgctxt "@info"
+msgid "Add search option"
+msgstr ""
+
+#: search/dolphinsearchoptionsconfigurator.cpp:75
 msgctxt "@action:button"
 msgid "Search"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:71
+#: search/dolphinsearchoptionsconfigurator.cpp:76
 msgctxt "@info"
 msgid "Start searching"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:76
-#: search/dolphinsearchoptionsconfigurator.cpp:194
+#: search/dolphinsearchoptionsconfigurator.cpp:82
+#: search/dolphinsearchoptionsconfigurator.cpp:203
 msgctxt "@action:button"
 msgid "Save"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:77
+#: search/dolphinsearchoptionsconfigurator.cpp:83
 msgctxt "@info"
 msgid "Save search options"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:83
+#: search/dolphinsearchoptionsconfigurator.cpp:89
 #: statusbar/statusbarmessagelabel.cpp:50
 #, fuzzy
 #| msgid "Close"
@@ -2034,24 +2045,19 @@ msgctxt "@action:button"
 msgid "Close"
 msgstr "Đóng"
 
-#: search/dolphinsearchoptionsconfigurator.cpp:84
+#: search/dolphinsearchoptionsconfigurator.cpp:90
 msgctxt "@info"
 msgid "Close search options"
 msgstr ""
 
-#: search/dolphinsearchoptionsconfigurator.cpp:90
-msgctxt "@info"
-msgid "Add search option"
-msgstr ""
-
-#: search/dolphinsearchoptionsconfigurator.cpp:182
+#: search/dolphinsearchoptionsconfigurator.cpp:191
 #, fuzzy
 #| msgid "By Name"
 msgctxt "@label"
 msgid "Name:"
 msgstr "Theo tên"
 
-#: search/dolphinsearchoptionsconfigurator.cpp:191
+#: search/dolphinsearchoptionsconfigurator.cpp:200
 msgctxt "@title:window"
 msgid "Save Search Options"
 msgstr ""
@@ -2061,110 +2067,127 @@ msgctxt "@info"
 msgid "Remove search option"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:142
+#: search/searchcriterionselector.cpp:161
 msgctxt "@label"
 msgid "Greater Than"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:143
+#: search/searchcriterionselector.cpp:162
 #, fuzzy
 #| msgid "Less than a year"
 msgctxt "@label"
 msgid "Greater Than or Equal to"
 msgstr "Ngắn hơn một năm"
 
-#: search/searchcriterionselector.cpp:144
+#: search/searchcriterionselector.cpp:163
 #, fuzzy
 #| msgid "Less than a week"
 msgctxt "@label"
 msgid "Less Than"
 msgstr "Ngắn hơn một tuần"
 
-#: search/searchcriterionselector.cpp:145
+#: search/searchcriterionselector.cpp:164
 #, fuzzy
 #| msgid "Less than a year"
 msgctxt "@label"
 msgid "Less Than or Equal to"
 msgstr "Ngắn hơn một năm"
 
-#: search/searchcriterionselector.cpp:149
+#: search/searchcriterionselector.cpp:168
 msgctxt "@label"
 msgid "Anytime"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:150
+#: search/searchcriterionselector.cpp:169
 #, fuzzy
 #| msgid "Today"
 msgctxt "@label"
 msgid "Today"
 msgstr "Hôm nay"
 
-#: search/searchcriterionselector.cpp:151
+#: search/searchcriterionselector.cpp:170
 msgctxt "@label"
-msgid "This week"
+msgid "This Week"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:152
+#: search/searchcriterionselector.cpp:171
 msgctxt "@label"
-msgid "This month"
+msgid "This Month"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:159
+#: search/searchcriterionselector.cpp:172
+msgctxt "@label"
+msgid "This Year"
+msgstr ""
+
+#: search/searchcriterionselector.cpp:179
 #, fuzzy
 #| msgid "Date"
 msgctxt "@label"
 msgid "Date:"
 msgstr "Ngày"
 
-#: search/searchcriterionselector.cpp:166
+#: search/searchcriterionselector.cpp:188
 msgctxt "@label Any (file size)"
 msgid "Any"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:177
+#: search/searchcriterionselector.cpp:201
 msgctxt "@label All (tags)"
 msgid "All"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:178
+#: search/searchcriterionselector.cpp:202
 msgctxt "@label"
 msgid "Equal to"
 msgstr ""
 
-#: search/searchcriterionselector.cpp:182
+#: search/searchcriterionselector.cpp:203
+#, fuzzy
+#| msgid "Less than a year"
+msgctxt "@label"
+msgid "Not Equal to"
+msgstr "Ngắn hơn một năm"
+
+#: search/searchcriterionselector.cpp:207
 #, fuzzy
 #| msgid "Tags:"
 msgctxt "@label"
 msgid "Tag:"
 msgstr "Thẻ:"
 
-#: search/searchcriterionvalue.cpp:102
+#: search/searchcriterionselector.cpp:216
+msgctxt "@label Any (rating)"
+msgid "Any"
+msgstr ""
+
+#: search/searchcriterionvalue.cpp:129
 msgctxt "@label"
 msgid "No Tags Available"
 msgstr ""
 
-#: search/searchcriterionvalue.cpp:122
+#: search/searchcriterionvalue.cpp:149
 #, fuzzy
 #| msgid "By Date"
 msgctxt "@label"
 msgid "Byte"
 msgstr "Theo ngày"
 
-#: search/searchcriterionvalue.cpp:123
+#: search/searchcriterionvalue.cpp:150
 #, fuzzy
 #| msgid "By Date"
 msgctxt "@label"
 msgid "KByte"
 msgstr "Theo ngày"
 
-#: search/searchcriterionvalue.cpp:124
+#: search/searchcriterionvalue.cpp:151
 #, fuzzy
 #| msgid "By Date"
 msgctxt "@label"
 msgid "MByte"
 msgstr "Theo ngày"
 
-#: search/searchcriterionvalue.cpp:125
+#: search/searchcriterionvalue.cpp:152
 #, fuzzy
 #| msgid "By Date"
 msgctxt "@label"

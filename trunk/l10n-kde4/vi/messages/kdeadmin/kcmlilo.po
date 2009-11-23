@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlilo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-11 12:52+0200\n"
+"POT-Creation-Date: 2009-11-23 06:17+0100\n"
 "PO-Revision-Date: 2006-11-01 18:43+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -141,11 +141,17 @@ msgid "Mount root filesystem &read-only"
 msgstr "Lắp hệ thống tập tin gốc là &chỉ đọc"
 
 #: kde/Details.cpp:79 qt/Details.cpp:77
+#, fuzzy
+#| msgid ""
+#| "Mount the root filesystem for this kernel read-only. Since the init "
+#| "scripts normally take care of remounting the root filesystem in read-"
+#| "write mode after running some checks, this should always be turned on."
+#| "<br>Don't turn this off unless you know what you're doing."
 msgid ""
 "Mount the root filesystem for this kernel read-only. Since the init scripts "
 "normally take care of remounting the root filesystem in read-write mode "
-"after running some checks, this should always be turned on.<br>Don't turn "
-"this off unless you know what you're doing."
+"after running some checks, this should always be turned on.<br>Do not turn "
+"this off unless you know what you are doing."
 msgstr ""
 "Lắp hệ thống tập tin gốc cho hạt nhân này là chỉ đọc. Vì các văn lệnh init "
 "thường quản lý việc lắp lại hệ thống tập tin gốc trong chế độ đọc-ghi sau "
@@ -208,12 +214,19 @@ msgid "Require &password:"
 msgstr "Cần thiết &mật khẩu :"
 
 #: kde/Details.cpp:97 qt/Details.cpp:98
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
 "above is checked, the password is required for additional parameters only."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here."
 msgstr ""
 "Ở đây hãy nhập mật khẩu cần thiết để khởi động (nếu có). Nếu tùy chọn "
 "<i>restricted</i> (bị hạn chế) bên trên được bật, mật khẩu cần thiết chỉ cho "
@@ -292,12 +305,19 @@ msgid "Use &linear mode"
 msgstr "Dùng chế độ &tuyến tính"
 
 #: kde-qt-common/general.cpp:73
+#, fuzzy
+#| msgid ""
+#| "Check this box if you want to use the linear mode.<br>Linear mode tells "
+#| "the boot loader the location of kernels in linear addressing rather than "
+#| "sector/head/cylinder.<br>linear mode is required for some SCSI drives, "
+#| "and shouldn't hurt unless you're planning to create a boot disk to be "
+#| "used with a different computer.<br>See the lilo.conf man page for details."
 msgid ""
 "Check this box if you want to use the linear mode.<br>Linear mode tells the "
 "boot loader the location of kernels in linear addressing rather than sector/"
-"head/cylinder.<br>linear mode is required for some SCSI drives, and "
-"shouldn't hurt unless you're planning to create a boot disk to be used with "
-"a different computer.<br>See the lilo.conf man page for details."
+"head/cylinder.<br>Linear mode is required for some SCSI drives, and should "
+"not cause problems unless you are planning to create a boot disk to be used "
+"with a different computer.<br>See the lilo.conf man page for details."
 msgstr ""
 "Bật tùy chọn này nếu bạn muốn dùng chế độ tuyến tình.<br>Chế độ tuyến tinh "
 "sẽ báo cho bộ tải khởi động biết vị trí của hạt nhân dạng địa chỉ tuyến tính "
@@ -351,14 +371,24 @@ msgstr ""
 "thẻ <i>Hệ điều hành</i> rồi chọn <i>Chi tiết</i>."
 
 #: kde-qt-common/general.cpp:97
+#, fuzzy
+#| msgid ""
+#| "Enter the password required for bootup (if any) here. If <i>restricted</"
+#| "i> above is checked, the password is required for additional parameters "
+#| "only.<br><b>WARNING:</b> The password is stored in clear text in /etc/"
+#| "lilo.conf. You'll want to make sure nobody untrusted can read this file. "
+#| "Also, you probably don't want to use your normal/root password here."
+#| "<br>This sets a default for all Linux kernels you want to boot. If you "
+#| "need a per-kernel setting, go to the <i>Operating systems</i> tab and "
+#| "select <i>Details</i>."
 msgid ""
 "Enter the password required for bootup (if any) here. If <i>restricted</i> "
-"above is checked, the password is required for additional parameters only."
+"is checked above, the password is only required for additional parameters."
 "<br><b>WARNING:</b> The password is stored in clear text in /etc/lilo.conf. "
-"You'll want to make sure nobody untrusted can read this file. Also, you "
-"probably don't want to use your normal/root password here.<br>This sets a "
-"default for all Linux kernels you want to boot. If you need a per-kernel "
-"setting, go to the <i>Operating systems</i> tab and select <i>Details</i>."
+"Make sure that nobody untrusted can read this file. Also, you probably do "
+"not want to use your normal/root password here.<br>This sets a default for "
+"all Linux kernels you want to boot. If you need a per-kernel setting, go to "
+"the <i>Operating systems</i> tab and select <i>Details</i>."
 msgstr ""
 "Ở đây hãy nhập mật khẩu cần thiết để khởi động (nếu có). Nếu tùy chọn <i>bị "
 "hạn chế</i> bên trên được chọn, mật khẩu cần thiết chỉ cho tham số thêm nữa."
@@ -448,9 +478,14 @@ msgid "&Initial ramdisk:"
 msgstr "Đĩa &RAM ban đầu :"
 
 #: kde-qt-common/images.cpp:73 kde-qt-common/images.cpp:195
+#, fuzzy
+#| msgid ""
+#| "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
+#| "filename here. Leave this field blank if you don't intend to use an "
+#| "initial ramdisk for this kernel."
 msgid ""
 "If you want to use an initial ramdisk (initrd) for this kernel, enter its "
-"filename here. Leave this field blank if you don't intend to use an initial "
+"filename here. Leave this field blank if you do not intend to use an initial "
 "ramdisk for this kernel."
 msgstr ""
 "Nếu bạn muốn sử dụng đĩa RAM ban đầu (initrd) cho hạt nhân này, hãy nhập vào "
@@ -474,7 +509,9 @@ msgid "Set &Default"
 msgstr "Đặt &mặc định"
 
 #: kde-qt-common/images.cpp:84
-msgid "Boot this kernel/OS if the user doesn't make a different choice"
+#, fuzzy
+#| msgid "Boot this kernel/OS if the user doesn't make a different choice"
+msgid "Boot this kernel/OS if the user does not make a different choice"
 msgstr "Khởi động hạt nhân/HĐH này nếu người dùng không chọn khác"
 
 #: kde-qt-common/images.cpp:86
@@ -503,7 +540,9 @@ msgid "&Check Configuration"
 msgstr "Kiểm tra &cấu hình"
 
 #: kde-qt-common/images.cpp:94
-msgid "Run LILO in test mode to see if the configuration is ok"
+#, fuzzy
+#| msgid "Run LILO in test mode to see if the configuration is ok"
+msgid "Run LILO in test mode to see if the configuration is okay."
 msgstr "Chạy LILO trong chế độ thử ra để kiểm tra cấu hình là đúng chưa"
 
 #: kde-qt-common/images.cpp:95
@@ -531,19 +570,27 @@ msgid "Remove entry from the boot menu"
 msgstr "Gỡ bỏ mục nhập khỏi trình đơn khởi động"
 
 #: kde-qt-common/images.cpp:182
-msgid "Configuration ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration ok. LILO said:\n"
+msgid "Configuration okay. LILO reported:\n"
 msgstr "Cấu hình chạy được. LILO nói:\n"
 
 #: kde-qt-common/images.cpp:183
-msgid "Configuration OK"
+#, fuzzy
+#| msgid "Configuration OK"
+msgid "Configuration Okay"
 msgstr "Cấu hình chạy được"
 
 #: kde-qt-common/images.cpp:185
-msgid "Configuration NOT ok. LILO said:\n"
+#, fuzzy
+#| msgid "Configuration NOT ok. LILO said:\n"
+msgid "Configuration NOT okay. LILO reported:\n"
 msgstr "Cấu hình không chạy được. LILO nói:\n"
 
 #: kde-qt-common/images.cpp:186
-msgid "Configuration NOT ok"
+#, fuzzy
+#| msgid "Configuration NOT ok"
+msgid "Configuration NOT Okay"
 msgstr "Cấu hình không chạy được"
 
 #: kde-qt-common/images.cpp:192
@@ -555,12 +602,19 @@ msgid "Boot from dis&k:"
 msgstr "&Khởi động từ đĩa:"
 
 #: kde-qt-common/images.cpp:220
+#, fuzzy
+#| msgid ""
+#| "Enter the partition containing the operating system you'd like to boot "
+#| "here."
 msgid ""
-"Enter the partition containing the operating system you'd like to boot here."
+"Enter here the partition containing the operating system you would like to "
+"boot."
 msgstr "Ở đây hãy nhập phân vùng chứa hệ điều hành bạn muốn khởi động."
 
 #: kde-qt-common/images.cpp:221
-msgid "Enter the label (name) of the operating system here."
+#, fuzzy
+#| msgid "Enter the label (name) of the operating system here."
+msgid "Enter here the label (name) of the operating system."
 msgstr "Ở đây hãy nhập nhãn (tên) của hệ điều hành."
 
 #: kde-qt-common/images.cpp:302
@@ -589,9 +643,16 @@ msgid "&Operating systems"
 msgstr "&Hệ điều hành"
 
 #: qt/Details.cpp:81
+#, fuzzy
+#| msgid ""
+#| "This turns off some sanity checks while writing the configuration. This "
+#| "shouldn't be used under \"normal\" circumstances, but it's useful, for "
+#| "example, for installing the possibility to boot from a floppy disk "
+#| "without having a floppy in the drive every time you run lilo.<br>This "
+#| "sets the <i>unsafe</i> keyword in lilo.conf."
 msgid ""
 "This turns off some sanity checks while writing the configuration. This "
-"shouldn't be used under \"normal\" circumstances, but it's useful, for "
+"should not be used under \"normal\" circumstances, but it is useful, for "
 "example, for installing the possibility to boot from a floppy disk without "
 "having a floppy in the drive every time you run lilo.<br>This sets the "
 "<i>unsafe</i> keyword in lilo.conf."

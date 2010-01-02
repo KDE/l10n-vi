@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-01 06:21+0100\n"
+"POT-Creation-Date: 2010-01-02 06:00+0100\n"
 "PO-Revision-Date: 2007-07-11 23:08+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -222,6 +222,12 @@ msgctxt "signature of a file"
 msgid "Signature"
 msgstr ""
 
+#: core/kgetkjobadapter.cpp:43
+#, fuzzy
+#| msgid "KGet Transfer List"
+msgid "KGet Transfer"
+msgstr "Danh sách truyền KGet"
+
 #: core/transferhandler.cpp:135
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:27
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:28
@@ -277,14 +283,14 @@ msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "Ngừng"
 
-#: core/datasourcefactory.cpp:600
+#: core/datasourcefactory.cpp:611
 #, kde-format
 msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:600 core/kget.cpp:557 core/kget.cpp:939
-#: core/kget.cpp:948 transfer-plugins/metalink/metalink.cpp:204
+#: core/datasourcefactory.cpp:611 core/kget.cpp:526 core/kget.cpp:908
+#: core/kget.cpp:917 transfer-plugins/metalink/metalink.cpp:204
 #: transfer-plugins/bittorrent/bttransfer.cpp:491
 #: transfer-plugins/bittorrent/bttransfer.cpp:502
 #: ui/metalinkcreator/metalinkcreator.cpp:300
@@ -426,40 +432,7 @@ msgstr ""
 msgid "Remove groups"
 msgstr "Xoá nhóm"
 
-#: core/kget.cpp:245
-msgid ""
-"You have already downloaded that file from another location.\n"
-"\n"
-"Download and delete the previous one?"
-msgstr ""
-
-#: core/kget.cpp:246
-#, fuzzy
-#| msgid ""
-#| "URL already saved:\n"
-#| "%1\n"
-#| "Download again?"
-msgid "File already downloaded. Download anyway?"
-msgstr ""
-"URL đã được lưu :\n"
-"%1\n"
-"Tải về lại không?"
-
-#: core/kget.cpp:255
-msgid "You are already downloading the same file"
-msgstr ""
-
-#: core/kget.cpp:259
-#, fuzzy
-#| msgid ""
-#| "The file %1 already exists.\n"
-#| "Overwrite?"
-msgid "File already exists"
-msgstr ""
-"Tập tin %1 đã có.\n"
-"Ghi đè không?"
-
-#: core/kget.cpp:542
+#: core/kget.cpp:511
 #, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -468,44 +441,44 @@ msgstr ""
 "Tập tin %1 đã có.\n"
 "Ghi đè không?"
 
-#: core/kget.cpp:543
+#: core/kget.cpp:512
 msgid "Overwrite existing file?"
 msgstr "Ghi đè lên tập tin đã có?"
 
-#: core/kget.cpp:556 ui/metalinkcreator/metalinkcreator.cpp:317
+#: core/kget.cpp:525 ui/metalinkcreator/metalinkcreator.cpp:317
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "Không thể lưu vào : %1"
 
-#: core/kget.cpp:785 ui/contextmenu.cpp:135
+#: core/kget.cpp:754 ui/contextmenu.cpp:135
 #, fuzzy
 #| msgid "Downloads"
 msgid "My Downloads"
 msgstr "Tải về"
 
-#: core/kget.cpp:829
+#: core/kget.cpp:798
 msgid "Unable to continue: KGet cannot download using this protocol."
 msgstr ""
 
-#: core/kget.cpp:830
+#: core/kget.cpp:799
 msgid "Protocol unsupported"
 msgstr ""
 
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:882 ui/newtransferdialog.cpp:256 rc.cpp:541
+#: core/kget.cpp:851 ui/newtransferdialog.cpp:256 rc.cpp:541
 msgid "New Download"
 msgstr "Tải về mới"
 
-#: core/kget.cpp:882
+#: core/kget.cpp:851
 msgid "Enter URL:"
 msgstr "Nhập URL:"
 
-#: core/kget.cpp:915
+#: core/kget.cpp:884
 msgid "Save As"
 msgstr ""
 
-#: core/kget.cpp:938
+#: core/kget.cpp:907
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -514,7 +487,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:947
+#: core/kget.cpp:916
 #, fuzzy, kde-format
 #| msgid ""
 #| "Malformed URL:\n"
@@ -526,7 +499,7 @@ msgstr ""
 "URL dạng sai:\n"
 "%1"
 
-#: core/kget.cpp:959
+#: core/kget.cpp:928
 #, kde-format
 msgid ""
 "You have already completed a download from the location: \n"
@@ -536,13 +509,13 @@ msgid ""
 "Download it again?"
 msgstr ""
 
-#: core/kget.cpp:960
+#: core/kget.cpp:929
 #, fuzzy
 #| msgid "Download URL again?"
 msgid "Download it again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:972
+#: core/kget.cpp:941
 #, kde-format
 msgid ""
 "You have a download in progress from the location: \n"
@@ -552,36 +525,50 @@ msgid ""
 "Delete it and download again?"
 msgstr ""
 
-#: core/kget.cpp:973
+#: core/kget.cpp:942
 #, fuzzy
 #| msgid "Download URL again?"
 msgid "Delete it and download again?"
 msgstr "Tải về URL lần nữa không?"
 
-#: core/kget.cpp:996 core/kget.cpp:1003
+#: core/kget.cpp:965 core/kget.cpp:972
 msgid "Directory is not writable"
 msgstr ""
 
-#: core/kget.cpp:1013
-#, kde-format
+#: core/kget.cpp:1000
 msgid ""
-"Destination file \n"
-"%1\n"
-"already exists.\n"
-"Do you want to overwrite it?"
+"You have already downloaded that file from another location.\n"
+"\n"
+"Download and delete the previous one?"
 msgstr ""
-"Tập tin đích \n"
-"%1\n"
-"đã tồn tại.\n"
-"Bạn có muốn ghi đè lên nó không?"
 
-#: core/kget.cpp:1014
+#: core/kget.cpp:1001
 #, fuzzy
-#| msgid "Overwrite existing file?"
-msgid "Overwrite destination"
-msgstr "Ghi đè lên tập tin đã có?"
+#| msgid ""
+#| "URL already saved:\n"
+#| "%1\n"
+#| "Download again?"
+msgid "File already downloaded. Download anyway?"
+msgstr ""
+"URL đã được lưu :\n"
+"%1\n"
+"Tải về lại không?"
 
-#: core/kget.cpp:1145
+#: core/kget.cpp:1010
+msgid "You are already downloading the same file"
+msgstr ""
+
+#: core/kget.cpp:1014 core/kget.cpp:1017
+#, fuzzy
+#| msgid ""
+#| "The file %1 already exists.\n"
+#| "Overwrite?"
+msgid "File already exists"
+msgstr ""
+"Tập tin %1 đã có.\n"
+"Ghi đè không?"
+
+#: core/kget.cpp:1117
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KLibLoader could not load the plugin:<br/><i>%1</i></p><p>Error "
@@ -592,7 +579,7 @@ msgstr ""
 "<p>Bộ nạp thư viện KLibLoader không thể nạp bổ sung:<br/><i>%1</i></"
 "p><p>Thông điệp lỗi:<br/><i>%2</i></p>"
 
-#: core/kget.cpp:1163
+#: core/kget.cpp:1135
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -603,7 +590,7 @@ msgstr ""
 "%1\n"
 "vì đó là một thư mục."
 
-#: core/kget.cpp:1173
+#: core/kget.cpp:1145
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -616,17 +603,17 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1384 core/kget.cpp:1394 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1358 core/kget.cpp:1368 ui/droptarget.cpp:94 rc.cpp:65
 #, fuzzy
 #| msgid "KGet"
 msgid "Quit KGet"
 msgstr "KGet"
 
-#: core/kget.cpp:1385
+#: core/kget.cpp:1359
 msgid "KGet is now closing, as all downloads have completed."
 msgstr ""
 
-#: core/kget.cpp:1395
+#: core/kget.cpp:1369
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr ""
 
@@ -2334,12 +2321,12 @@ msgstr "Mở tập tin"
 msgid "Transfer Settings for %1"
 msgstr "Chi tiết về: %1"
 
-#: ui/transfersettingsdialog.cpp:131
+#: ui/transfersettingsdialog.cpp:134
 msgid ""
 "Changing the destination did not work, the destination stays unmodified."
 msgstr ""
 
-#: ui/transfersettingsdialog.cpp:131
+#: ui/transfersettingsdialog.cpp:134
 #, fuzzy
 #| msgid "Open Destination"
 msgid "Destination unmodified"
@@ -2363,19 +2350,19 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "Dính"
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:963
+#: ui/droptarget.cpp:221 mainwindow.cpp:968
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "The dropped file is a KGet Transfer List"
 msgstr "Danh sách truyền KGet"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:964
+#: ui/droptarget.cpp:222 mainwindow.cpp:969
 #, fuzzy
 #| msgid "&Downloads"
 msgid "&Download"
 msgstr "Tải &về"
 
-#: ui/droptarget.cpp:223 mainwindow.cpp:965
+#: ui/droptarget.cpp:223 mainwindow.cpp:970
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "&Load transfer list"
@@ -3055,7 +3042,7 @@ msgstr "Nhập tên nhóm"
 msgid "Group name:"
 msgstr "Tên nhóm:"
 
-#: mainwindow.cpp:649
+#: mainwindow.cpp:654
 #, fuzzy
 #| msgid ""
 #| "Are you sure that you want to remove\n"
@@ -3066,13 +3053,13 @@ msgstr[0] ""
 "Bạn có chắc muốn gỡ bỏ\n"
 "nhóm tên %1 không?"
 
-#: mainwindow.cpp:651
+#: mainwindow.cpp:656
 #, fuzzy
 #| msgid "KGet Transfer List"
 msgid "Confirm transfer delete"
 msgstr "Danh sách truyền KGet"
 
-#: mainwindow.cpp:842
+#: mainwindow.cpp:847
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -5039,6 +5026,22 @@ msgstr ""
 #: rc.cpp:1016
 msgid "List of whether the script is enabled"
 msgstr ""
+
+#~ msgid ""
+#~ "Destination file \n"
+#~ "%1\n"
+#~ "already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "Tập tin đích \n"
+#~ "%1\n"
+#~ "đã tồn tại.\n"
+#~ "Bạn có muốn ghi đè lên nó không?"
+
+#, fuzzy
+#~| msgid "Overwrite existing file?"
+#~ msgid "Overwrite destination"
+#~ msgstr "Ghi đè lên tập tin đã có?"
 
 #, fuzzy
 #~| msgid "Transfers:"

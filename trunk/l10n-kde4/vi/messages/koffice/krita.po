@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:19+0100\n"
+"POT-Creation-Date: 2010-01-12 07:01+0100\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -3914,7 +3914,7 @@ msgstr "Đượ&c"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: plugins/extensions/dockers/defaultdockers/wdgpalettechooser.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:1169 rc.cpp:2464 plugins/tools/tool_polyline/kis_tool_polyline.cc:63
+#: rc.cpp:1169 rc.cpp:2464 ui/tool/kis_tool_polyline_base.cpp:42
 msgid "&Cancel"
 msgstr "&Thôi"
 
@@ -8608,6 +8608,11 @@ msgstr "YCbCr (số nguyên 8-bit mỗi kênh)"
 msgid "Selection"
 msgstr "Phần chọn"
 
+#: ui/tool/kis_tool_polyline_base.cpp:39
+#, fuzzy
+msgid "&Finish"
+msgstr "Công cụ đa &Sgiác"
+
 #: ui/tool/kis_tool.cc:103
 #, fuzzy
 msgid "Swap Foreground and Background Color"
@@ -8624,7 +8629,7 @@ msgstr "Màu Mặt"
 msgid "No options"
 msgstr "tuỳ chọn"
 
-#: ui/tool/kis_tool_freehand.cc:409 ui/tool/kis_tool_freehand.cc:418
+#: ui/tool/kis_tool_freehand.cc:415 ui/tool/kis_tool_freehand.cc:424
 msgid "Freehand tool"
 msgstr ""
 
@@ -8911,59 +8916,63 @@ msgid "Lukáš Tvrdý"
 msgstr ""
 
 #: ui/kis_aboutdata.h:58
+msgid "Marc Pegon"
+msgstr ""
+
+#: ui/kis_aboutdata.h:59
 msgid "Matthias Elter"
 msgstr "Matthias Elter"
 
-#: ui/kis_aboutdata.h:59
+#: ui/kis_aboutdata.h:60
 msgid "Melchior Franz"
 msgstr "Melchior Franz"
 
-#: ui/kis_aboutdata.h:60
+#: ui/kis_aboutdata.h:61
 msgid "Michael Koch"
 msgstr "Michael Koch"
 
-#: ui/kis_aboutdata.h:61
+#: ui/kis_aboutdata.h:62
 msgid "Michael Thaler"
 msgstr "Michael Thaler"
 
-#: ui/kis_aboutdata.h:62
+#: ui/kis_aboutdata.h:63
 msgid "Patrick Julien"
 msgstr "Patrick Julien"
 
-#: ui/kis_aboutdata.h:63
+#: ui/kis_aboutdata.h:64
 msgid "Roger Larsson"
 msgstr "Roger Larsson"
 
-#: ui/kis_aboutdata.h:64
+#: ui/kis_aboutdata.h:65
 #, fuzzy
 msgid "Samy Lange"
 msgstr "Trình đổi màu"
 
-#: ui/kis_aboutdata.h:65
+#: ui/kis_aboutdata.h:66
 msgid "Sven Langkamp"
 msgstr "Sven Langkamp"
 
-#: ui/kis_aboutdata.h:66
+#: ui/kis_aboutdata.h:67
 msgid "Toshitaka Fujioka"
 msgstr "Toshitaka Fujioka"
 
-#: ui/kis_aboutdata.h:67
+#: ui/kis_aboutdata.h:68
 msgid "Thomas Zander"
 msgstr "Thomas Zander"
 
-#: ui/kis_aboutdata.h:68
+#: ui/kis_aboutdata.h:69
 msgid "Tom Burdick"
 msgstr "Tom Burdick"
 
-#: ui/kis_aboutdata.h:69
+#: ui/kis_aboutdata.h:70
 msgid "Vera Lukman"
 msgstr ""
 
-#: ui/kis_aboutdata.h:70
+#: ui/kis_aboutdata.h:71
 msgid "Sander Koning"
 msgstr "Sander Koning"
 
-#: ui/kis_aboutdata.h:71
+#: ui/kis_aboutdata.h:72
 msgid "Andreas Lundin"
 msgstr "Andreas Lundin"
 
@@ -10143,19 +10152,11 @@ msgstr "Công cụ &xoá"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Vẽ một đa giác. Shift-chuột trái kết thúc đa giác."
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:60
-msgid "&Finish Polyline"
-msgstr ""
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:118
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:55
 msgid "Polyline"
 msgstr ""
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:317
-msgid "Press shift-mouseclick to end the polyline."
-msgstr ""
-
-#: plugins/tools/tool_polyline/kis_tool_polyline.h:81
+#: plugins/tools/tool_polyline/kis_tool_polyline.h:54
 #, fuzzy
 #| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgid "Draw a polyline. Shift-mouseclick ends the polyline."
@@ -10306,8 +10307,8 @@ msgstr "Chọn một khu vực của ảnh với các đường cong"
 msgid "Select similar colors"
 msgstr "Chọn các màu tương tự"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:71
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:82
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:72
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 msgid "Polygonal Selection"
 msgstr "Chọn hình đa giác"
 
@@ -11495,16 +11496,16 @@ msgstr "Lớp HDR"
 msgid "JPEG 2000 Export Options"
 msgstr "Tùy chọn Hình học"
 
+#: plugins/formats/pdf/kis_pdf_import.cpp:100
 #: plugins/formats/pdf/kis_pdf_import.cpp:101
-#: plugins/formats/pdf/kis_pdf_import.cpp:102
 msgid "A password is required to read that pdf"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:111
+#: plugins/formats/pdf/kis_pdf_import.cpp:110
 msgid "PDF Import Options"
 msgstr ""
 
-#: plugins/formats/pdf/kis_pdf_import.cpp:142
+#: plugins/formats/pdf/kis_pdf_import.cpp:141
 #, fuzzy, kde-format
 msgid "Page %1"
 msgstr "ảnh %1"
@@ -12220,10 +12221,6 @@ msgstr "Khoảng cách:"
 
 #~ msgid "Shift-click will end the polygon."
 #~ msgstr "Shift-chuột trái sẽ kết thúc đa giác."
-
-#, fuzzy
-#~ msgid "&Finish Polygon"
-#~ msgstr "Công cụ đa &Sgiác"
 
 #, fuzzy
 #~ msgid "Example curves tool"

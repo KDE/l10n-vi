@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-04 06:49+0100\n"
+"POT-Creation-Date: 2010-02-05 02:50+0100\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -2516,7 +2516,7 @@ msgstr "Tạo layer mới"
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
 #. i18n: file: plugins/extensions/tonemapping/wdgtonemappingdialog.ui:93
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:349
+#: rc.cpp:615 rc.cpp:2633 rc.cpp:3375 rc.cpp:3534 ui/kis_view2.cpp:346
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -3444,7 +3444,8 @@ msgstr "Hình dáng:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:66
+#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
 msgid "Ellipse"
 msgstr "Hình êlíp"
 
@@ -6327,7 +6328,7 @@ msgstr ""
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:168
+#: rc.cpp:2357 ui/tool/kis_tool_paint.cc:167
 #, fuzzy
 msgid "Opacity: "
 msgstr "Độ đậm đặc:"
@@ -8738,27 +8739,23 @@ msgstr "Phần chọn"
 msgid "&Finish"
 msgstr "Công cụ đa &Sgiác"
 
-#: ui/tool/kis_tool.cc:103
+#: ui/tool/kis_tool.cc:104
 #, fuzzy
 msgid "Swap Foreground and Background Color"
 msgstr "Màu Mặt"
 
-#: ui/tool/kis_tool.cc:108
+#: ui/tool/kis_tool.cc:109
 #, fuzzy
 msgid "Reset Foreground and Background Color"
 msgstr "Màu Mặt"
 
-#: ui/tool/kis_tool.cc:378
+#: ui/tool/kis_tool.cc:384
 #, fuzzy
 #| msgid "options"
 msgid "No options"
 msgstr "tuỳ chọn"
 
-#: ui/tool/kis_tool_freehand.cc:416 ui/tool/kis_tool_freehand.cc:425
-msgid "Freehand tool"
-msgstr ""
-
-#: ui/tool/kis_tool_paint.cc:176
+#: ui/tool/kis_tool_paint.cc:175
 msgid "Mode: "
 msgstr "Chế độ:"
 
@@ -9448,36 +9445,36 @@ msgstr ""
 msgid "Show Dockers"
 msgstr "Đá"
 
-#: ui/kis_view2.cpp:238
+#: ui/kis_view2.cpp:240
 #, fuzzy
 #| msgid "&Tools"
 msgid "Tools"
 msgstr "&Công cụ"
 
-#: ui/kis_view2.cpp:343
+#: ui/kis_view2.cpp:340
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:344
+#: ui/kis_view2.cpp:341
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:346
+#: ui/kis_view2.cpp:343
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:347
+#: ui/kis_view2.cpp:344
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:549
+#: ui/kis_view2.cpp:546
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Palettes"
 
-#: ui/kis_view2.cpp:686 ui/kis_view2.cpp:689
+#: ui/kis_view2.cpp:683 ui/kis_view2.cpp:686
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Palettes"
@@ -9925,6 +9922,17 @@ msgstr "Được dùng cuối cùng"
 msgid "Play macro"
 msgstr ""
 
+#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
+#, fuzzy
+msgid "Poly line"
+msgstr "Công cụ đa &Sgiác"
+
+#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
+#, fuzzy
+#| msgid "Bezier Curve"
+msgid "Bezier curve"
+msgstr "Đường cong Bezier"
+
 #: image/kis_clone_layer.cpp:199
 #, fuzzy
 msgid "Copy From"
@@ -10081,11 +10089,6 @@ msgstr "Khoảng cách:"
 msgid "Angle: "
 msgstr "Góc:"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:54
-#, fuzzy
-msgid "Ellipse tool"
-msgstr "Elliptical"
-
 #: plugins/tools/defaulttools/kis_tool_colorpicker.h:89
 msgid "Select a color from the image or current layer"
 msgstr "Chọn một màu từ ảnh hoặc lớp hiện tại"
@@ -10107,12 +10110,7 @@ msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "Đường"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:176
-#, fuzzy
-msgid "Line tool"
-msgstr "Công cụ đườn&g"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:269
+#: plugins/tools/defaulttools/kis_tool_line.cc:270
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -10308,12 +10306,6 @@ msgstr "Công cụ &xoá"
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:50
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Vẽ một đa giác. Shift-chuột trái kết thúc đa giác."
-
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:65
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:54
-#, fuzzy
-msgid "Polyline tool"
-msgstr "Công cụ đa &Sgiác"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
 msgid "Polyline"
@@ -12328,7 +12320,7 @@ msgstr ""
 msgid "Index out of bound"
 msgstr ""
 
-#: plugins/extensions/scripting/scriptingpart.cpp:137
+#: plugins/extensions/scripting/scriptingpart.cpp:138
 #, fuzzy, kde-format
 #| msgid "&Show"
 msgid "&Show %1"
@@ -12445,6 +12437,14 @@ msgstr "Thông thường"
 #| msgid "Distance: "
 msgid "Ruler assistant editor tool"
 msgstr "Khoảng cách:"
+
+#, fuzzy
+#~ msgid "Ellipse tool"
+#~ msgstr "Elliptical"
+
+#, fuzzy
+#~ msgid "Line tool"
+#~ msgstr "Công cụ đườn&g"
 
 #, fuzzy
 #~ msgid "Form"

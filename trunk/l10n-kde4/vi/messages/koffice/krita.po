@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-06 01:57+0100\n"
+"POT-Creation-Date: 2010-02-07 07:49+0100\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -3173,7 +3173,7 @@ msgstr "&Cắt"
 
 #. i18n: file: plugins/tools/tool_star/wdg_tool_star.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolStar)
-#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:121
+#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:134
 msgid "Star"
 msgstr "Ngôi sao"
 
@@ -3444,8 +3444,8 @@ msgstr "Hình dáng:"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
+#: image/recorder/kis_recorded_shape_paint_action.cpp:54
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "Hình êlíp"
 
@@ -3466,7 +3466,8 @@ msgstr "Hình êlíp"
 #. i18n: file: plugins/filters/blur/wdgblur.ui:130
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #: rc.cpp:959 rc.cpp:1245 rc.cpp:1569 rc.cpp:1650
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:70
+#: image/recorder/kis_recorded_shape_paint_action.cpp:56
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:80
 msgid "Rectangle"
 msgstr "Hình chữ nhật"
 
@@ -3525,6 +3526,7 @@ msgstr "Nhiễu &ngẫu nhiên..."
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:983 rc.cpp:1269
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Rotation"
 msgstr "Xoay"
 
@@ -4322,7 +4324,7 @@ msgstr "Tăng dần"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:62
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Pressure"
 msgstr "Áp lực"
 
@@ -4702,7 +4704,7 @@ msgstr "Gần tâm:"
 
 #. i18n: file: plugins/paintops/dynadraw/wdgdynaoptions.ui:271
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
-#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:78
+#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:77
 msgid "Polygon"
 msgstr "Đa giác"
 
@@ -6760,7 +6762,7 @@ msgstr "Xem:"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2657 image/kis_image.cc:568
+#: rc.cpp:2657 image/kis_image.cc:566
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 #, fuzzy
@@ -7138,7 +7140,7 @@ msgstr "&Bỏ chọn"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2910 image/kis_image.cc:516
+#: rc.cpp:2910 image/kis_image.cc:514
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -9216,7 +9218,7 @@ msgstr "Làm méo Lớp"
 msgid "The image contains hidden layers that will be lost."
 msgstr "Ảnh chứa lớp ẩn, chúng sẽ bị mất."
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:765
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Làm phẳng ảnh"
@@ -9366,8 +9368,8 @@ msgstr "Nhìn thấy"
 msgid "Locked"
 msgstr "kết nối"
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:146
-#: image/kis_paint_layer.cc:153
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: image/kis_paint_layer.cc:146
 #, fuzzy
 msgid "Alpha Locked"
 msgstr "kết nối"
@@ -9716,12 +9718,12 @@ msgstr ""
 msgid "Matthew Woehlke"
 msgstr ""
 
-#: image/kis_adjustment_layer.cc:88
+#: image/kis_adjustment_layer.cc:124
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 msgid "Filter"
 msgstr "Bộ lọc"
 
-#: image/kis_transformation_mask.cpp:110
+#: image/kis_transformation_mask.cpp:111
 #, fuzzy
 msgid "Transformation Mask Settings"
 msgstr "Hiệu ứng biến hình"
@@ -9764,7 +9766,7 @@ msgstr "Lanczos3"
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:394
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
 msgid "Resize Image"
 msgstr "Sửa cỡ ảnh"
 
@@ -9790,7 +9792,7 @@ msgstr "Thay đổi tính chất"
 msgid "Raise"
 msgstr "Nâng lên"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:603
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
 msgid "Convert Image Type"
 msgstr "Chuyển đổi loại ảnh"
 
@@ -9882,33 +9884,33 @@ msgstr "Măc định"
 msgid "Rotate Node"
 msgstr "Quay &90"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:283
 msgid "background"
 msgstr "nền"
 
-#: image/kis_image.cc:288
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr "Lớp %1"
 
-#: image/kis_image.cc:392
+#: image/kis_image.cc:390
 msgid "Crop Image"
 msgstr "Cắt ảnh"
 
-#: image/kis_image.cc:426
+#: image/kis_image.cc:424
 #, fuzzy
 msgid "Size Canvas"
 msgstr "Tải lại Canvas"
 
-#: image/kis_image.cc:475
+#: image/kis_image.cc:473
 msgid "Scale Image"
 msgstr "Phóng ảnh"
 
-#: image/kis_image.cc:801
+#: image/kis_image.cc:798
 msgid "Merge with Layer Below"
 msgstr "Nhập vào với lớp bên dưới"
 
-#: image/kis_image.cc:841
+#: image/kis_image.cc:835
 #, fuzzy
 msgid "Flatten Layer"
 msgstr "Làm phẳng ảnh"
@@ -9918,22 +9920,16 @@ msgstr "Làm phẳng ảnh"
 msgid "Last used"
 msgstr "Được dùng cuối cùng"
 
+#: image/recorder/kis_recorded_path_paint_action.cpp:62
+#: plugins/tools/defaulttools/kis_tool_path.cc:124
+msgid "Path"
+msgstr "Đường"
+
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
 msgstr ""
 
-#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
-#, fuzzy
-msgid "Poly line"
-msgstr "Công cụ đa &Sgiác"
-
-#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
-#, fuzzy
-#| msgid "Bezier Curve"
-msgid "Bezier curve"
-msgstr "Đường cong Bezier"
-
-#: image/kis_clone_layer.cpp:199
+#: image/kis_clone_layer.cpp:192
 #, fuzzy
 msgid "Copy From"
 msgstr "xanh nước biển"
@@ -9986,71 +9982,49 @@ msgstr "Cắt ảnh vào một vùng"
 msgid "Dyna"
 msgstr ""
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:223
-#: plugins/tools/defaulttools/kis_tool_brush.cc:142
-#, fuzzy
-#| msgid "Smoothness:"
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr "Độ mượt:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:236
-#: plugins/tools/defaulttools/kis_tool_brush.cc:165
-#, fuzzy
-#| msgid "Distance: "
-msgid "Assistant:"
-msgstr "Khoảng cách:"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:238
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
-#, fuzzy
-#| msgid "Magentas"
-msgid "Magnetism:"
-msgstr "Các màu đỏ tươi"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:248
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:211
 #, fuzzy
 #| msgid "Pixel width"
 msgid "Initial width:"
 msgstr "Chiều rộng điểm ảnh"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:249
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:212
 #, fuzzy
 #| msgid "Main:"
 msgid "Mass:"
 msgstr "Chính:"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:250
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:213
 #, fuzzy
 #| msgid "Dialog"
 msgid "Drag:"
 msgstr "Hộp thoại"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:251
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:214
 #, fuzzy
 #| msgid "Angle"
 msgid "X angle:"
 msgstr "Góc"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:252
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:215
 #, fuzzy
 #| msgid "Angle"
 msgid "Y angle:"
 msgstr "Góc"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:253
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:216
 #, fuzzy
 #| msgid "Width:"
 msgid "Width range:"
 msgstr "Chiều rộng:"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:255
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:218
 #, fuzzy
 #| msgid "Triangle"
 msgid "Fixed angle:"
 msgstr "Hình tam giác"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.h:170
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:164
 #, fuzzy
 #| msgid "Paint with curves"
 msgid "Paint with brushes using dynamic movements"
@@ -10098,12 +10072,31 @@ msgstr "Chọn một màu từ ảnh hoặc lớp hiện tại"
 msgid "ms"
 msgstr ""
 
+#: plugins/tools/defaulttools/kis_tool_brush.cc:142
+#, fuzzy
+#| msgid "Smoothness:"
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr "Độ mượt:"
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:147
 #, fuzzy
 msgid "Rate:"
 msgstr "Lặp lại"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:155
+#: plugins/tools/defaulttools/kis_tool_brush.cc:165
+#, fuzzy
+#| msgid "Distance: "
+msgid "Assistant:"
+msgstr "Khoảng cách:"
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+#, fuzzy
+#| msgid "Magentas"
+msgid "Magnetism:"
+msgstr "Các màu đỏ tươi"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:156
 #, fuzzy
 #| msgid "Line"
 msgctxt "a straight drawn line"
@@ -10178,10 +10171,6 @@ msgstr ""
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
 msgstr "Vẽ một hình êlíp"
-
-#: plugins/tools/defaulttools/kis_tool_path.cc:72
-msgid "Path"
-msgstr "Đường"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.h:124
 #, fuzzy
@@ -10307,7 +10296,7 @@ msgstr "Công cụ &xoá"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "Vẽ một đa giác. Shift-chuột trái kết thúc đa giác."
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr ""
 
@@ -10624,11 +10613,11 @@ msgstr "Thời gian"
 msgid "Drawing angle"
 msgstr "Góc vẽ"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
 msgid "X-Tilt"
 msgstr "Nghiêng X"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Y-Tilt"
 msgstr "Nghiêng Y"
 
@@ -11849,26 +11838,26 @@ msgstr ""
 msgid "Success"
 msgstr "Nguồn"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:60
+#: plugins/extensions/bigbrother/bigbrother.cc:81
 msgid "Open and play..."
 msgstr "Mở và chạy..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:64
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 #, fuzzy
 #| msgid "Open and play..."
 msgid "Open and edit..."
 msgstr "Mở và chạy..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:68
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Save all actions"
 msgstr "Lưu tất cả các hành động"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:72
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 #, fuzzy
 msgid "Start recording macro"
 msgstr "Bắt đầu ghi macro"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:76
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Stop recording actions"
 msgstr "Dừng ghi các hành động"
 
@@ -12437,6 +12426,15 @@ msgstr "Thông thường"
 #| msgid "Distance: "
 msgid "Ruler assistant editor tool"
 msgstr "Khoảng cách:"
+
+#, fuzzy
+#~ msgid "Poly line"
+#~ msgstr "Công cụ đa &Sgiác"
+
+#, fuzzy
+#~| msgid "Bezier Curve"
+#~ msgid "Bezier curve"
+#~ msgstr "Đường cong Bezier"
 
 #, fuzzy
 #~ msgid "Ellipse tool"

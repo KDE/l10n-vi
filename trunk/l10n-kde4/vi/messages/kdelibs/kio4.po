@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-22 06:58+0100\n"
+"POT-Creation-Date: 2010-02-23 07:04+0100\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -111,7 +111,7 @@ msgctxt "@title job"
 msgid "Unmounting"
 msgstr "Đang tháo gắn kết"
 
-#: kio/job.cpp:2053 kio/paste.cpp:64 kio/copyjob.cpp:1248 kio/copyjob.cpp:1799
+#: kio/job.cpp:2053 kio/paste.cpp:64 kio/copyjob.cpp:1320 kio/copyjob.cpp:1885
 #: kio/global.cpp:664
 msgid "File Already Exists"
 msgstr "Tập tin đã có"
@@ -163,7 +163,7 @@ msgstr ""
 msgid "The clipboard is empty"
 msgstr "Bảng tạm rỗng"
 
-#: kio/paste.cpp:228 kio/renamedialog.cpp:404 kio/kdirlister.cpp:329
+#: kio/paste.cpp:228 kio/renamedialog.cpp:396 kio/kdirlister.cpp:329
 #: kio/krun.cpp:1093
 #, kde-format
 msgid ""
@@ -211,57 +211,56 @@ msgstr "Không rõ"
 msgid "Unknown Error"
 msgstr "Lỗi không rõ"
 
-#: kio/renamedialog.cpp:102
+#: kio/renamedialog.cpp:103
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:104
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:105
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:110
 msgid "&Rename"
 msgstr "&Đổi tên"
 
-#: kio/renamedialog.cpp:104
+#: kio/renamedialog.cpp:112
 msgid "Suggest New &Name"
 msgstr "Đệ nghị tê&n mới"
 
-#: kio/renamedialog.cpp:110
+#: kio/renamedialog.cpp:118
 msgid "&Skip"
 msgstr "&Bỏ qua"
 
-#: kio/renamedialog.cpp:111
+#: kio/renamedialog.cpp:119
 msgid "Do not copy or move this folder, skip to the next item instead"
 msgstr ""
 
-#: kio/renamedialog.cpp:112
+#: kio/renamedialog.cpp:120
 msgid "Do not copy or move this file, skip to the next item instead"
 msgstr ""
 
-#: kio/renamedialog.cpp:115
-msgid "&Auto Skip"
-msgstr "Tự động bỏ qu&a"
-
-#: kio/renamedialog.cpp:116
-msgid ""
-"Do not copy or move any folder that already exists in the destination "
-"folder.\n"
-"You will be prompted again in case of a conflict with an existing file "
-"though."
-msgstr ""
-
-#: kio/renamedialog.cpp:117
-msgid ""
-"Do not copy or move any file that already exists in the destination folder.\n"
-"You will be prompted again in case of a conflict with an existing directory "
-"though."
-msgstr ""
-
-#: kio/renamedialog.cpp:122
+#: kio/renamedialog.cpp:125
 #, fuzzy
 #| msgid "Write"
 msgctxt "Write files into an existing folder"
 msgid "&Write Into"
 msgstr "Ghi"
 
-#: kio/renamedialog.cpp:122
+#: kio/renamedialog.cpp:125
 msgid "&Overwrite"
 msgstr "&Ghi đè"
 
-#: kio/renamedialog.cpp:124
+#: kio/renamedialog.cpp:127
 msgid ""
 "Files and folders will be copied into the existing directory, alongside its "
 "existing contents.\n"
@@ -269,36 +268,11 @@ msgid ""
 "the directory."
 msgstr ""
 
-#: kio/renamedialog.cpp:128
-#, fuzzy
-#| msgid "O&verwrite All"
-msgctxt "Write files into any existing directory"
-msgid "&Write Into All"
-msgstr "Gh&i đè hết"
-
-#: kio/renamedialog.cpp:128
-#, fuzzy
-#| msgid "O&verwrite All"
-msgid "&Overwrite All"
-msgstr "Gh&i đè hết"
-
-#: kio/renamedialog.cpp:130
-msgid ""
-"Files and folders will be copied into any existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in a "
-"directory, but not in case of another existing directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:136
+#: kio/renamedialog.cpp:132
 msgid "&Resume"
 msgstr "Tiếp tục &lại"
 
 #: kio/renamedialog.cpp:141
-msgid "R&esume All"
-msgstr "Tiếp tục lại &hết"
-
-#: kio/renamedialog.cpp:151
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -307,42 +281,42 @@ msgstr ""
 "Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
 "Vui lòng gõ một tên tập tin mới."
 
-#: kio/renamedialog.cpp:153
+#: kio/renamedialog.cpp:143
 msgid "C&ontinue"
 msgstr "&Tiếp tục"
 
-#: kio/renamedialog.cpp:198 kio/renamedialog.cpp:280
+#: kio/renamedialog.cpp:188 kio/renamedialog.cpp:270
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Một mục cũ hơn tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:200 kio/renamedialog.cpp:282
+#: kio/renamedialog.cpp:190 kio/renamedialog.cpp:272
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Tập tin tương tự tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:202 kio/renamedialog.cpp:284
+#: kio/renamedialog.cpp:192 kio/renamedialog.cpp:274
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "Mục mới hơn tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:215 kio/renamedialog.cpp:252
+#: kio/renamedialog.cpp:205 kio/renamedialog.cpp:242
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgid "size %1 (%2)"
 msgstr "%1 (%2)"
 
-#: kio/renamedialog.cpp:224 kio/renamedialog.cpp:260
+#: kio/renamedialog.cpp:214 kio/renamedialog.cpp:250
 #, kde-format
 msgid "created on %1"
 msgstr "tạo vào %1"
 
-#: kio/renamedialog.cpp:231 kio/renamedialog.cpp:267
+#: kio/renamedialog.cpp:221 kio/renamedialog.cpp:257
 #, kde-format
 msgid "modified on %1"
 msgstr "sửa đổi vào %1"
 
-#: kio/renamedialog.cpp:240
+#: kio/renamedialog.cpp:230
 #, kde-format
 msgid "The source file is '%1'"
 msgstr "Tập tin nguồn là « %1 »"
@@ -497,17 +471,17 @@ msgstr ""
 "Chứng nhận SSL đang bị từ chối như được yêu cầu. Bạn có thể tắt khả năng này "
 "trong Trung tâm Điều khiển KDE."
 
-#: kio/jobuidelegate.cpp:132 ../kfile/kdiroperator.cpp:816
+#: kio/jobuidelegate.cpp:137 ../kfile/kdiroperator.cpp:808
 #, kde-format
 msgid "Do you really want to delete this item?"
 msgid_plural "Do you really want to delete these %1 items?"
 msgstr[0] "Bạn thật sự muốn xoá %1 mục này không?"
 
-#: kio/jobuidelegate.cpp:134 ../kfile/kdiroperator.cpp:818
+#: kio/jobuidelegate.cpp:139 ../kfile/kdiroperator.cpp:810
 msgid "Delete Files"
 msgstr "Xoá tập tin"
 
-#: kio/jobuidelegate.cpp:144
+#: kio/jobuidelegate.cpp:149
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this item?"
 #| msgid_plural "Do you really want to delete these %1 items?"
@@ -515,11 +489,11 @@ msgid "Do you really want to move this item to the trash?"
 msgid_plural "Do you really want to move these %1 items to the trash?"
 msgstr[0] "Bạn thật sự muốn xoá %1 mục này không?"
 
-#: kio/jobuidelegate.cpp:146 ../kfile/kdiroperator.cpp:1871
+#: kio/jobuidelegate.cpp:151 ../kfile/kdiroperator.cpp:1874
 msgid "Move to Trash"
 msgstr "Chuyển vào Rác"
 
-#: kio/jobuidelegate.cpp:147
+#: kio/jobuidelegate.cpp:152
 #, fuzzy
 #| msgctxt "to trash"
 #| msgid "&Trash"
@@ -539,49 +513,49 @@ msgstr "Bỏ qua"
 msgid "AutoSkip"
 msgstr "Tự động bỏ qua"
 
-#: kio/copyjob.cpp:954 kio/global.cpp:674
+#: kio/copyjob.cpp:1008 kio/global.cpp:674
 msgid "Folder Already Exists"
 msgstr "Thư mục đã có"
 
-#: kio/copyjob.cpp:1248 kio/copyjob.cpp:1799
+#: kio/copyjob.cpp:1320 kio/copyjob.cpp:1885
 msgid "Already Exists as Folder"
 msgstr "Đã có, là thư mục."
 
-#: kio/kfileitemactions.cpp:401
+#: kio/kfileitemactions.cpp:402
 #, fuzzy
 #| msgid "Actions"
 msgctxt "@title:menu"
 msgid "&Actions"
 msgstr "Hành động"
 
-#: kio/kfileitemactions.cpp:489
+#: kio/kfileitemactions.cpp:507
 #, fuzzy
 #| msgid "Open With"
 msgctxt "@title:menu"
 msgid "&Open With"
 msgstr "Mở bằng"
 
-#: kio/kfileitemactions.cpp:506
+#: kio/kfileitemactions.cpp:524
 #, fuzzy
 #| msgid "Others"
 msgctxt "@action:inmenu Open With"
 msgid "&Other..."
 msgstr "Khác"
 
-#: kio/kfileitemactions.cpp:508 kio/kfileitemactions.cpp:520
+#: kio/kfileitemactions.cpp:526 kio/kfileitemactions.cpp:538
 #, fuzzy
 #| msgid "Open With"
 msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "Mở bằng"
 
-#: kio/kfileitemactions.cpp:548
+#: kio/kfileitemactions.cpp:566
 #, fuzzy, kde-format
 #| msgid "Open with:"
 msgid "Open &with %1"
 msgstr "Mở bằng:"
 
-#: kio/kfileitemactions.cpp:550
+#: kio/kfileitemactions.cpp:568
 #, kde-format
 msgctxt "@item:inmenu Open With, %1 is application name"
 msgid "%1"
@@ -4907,7 +4881,7 @@ msgstr "Mở thư mục trong Bộ sửa Đánh dấu"
 msgid "Delete Folder"
 msgstr "Xoá thư mục"
 
-#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1976
+#: bookmarks/kbookmarkmenu.cc:281 ../kfile/kdiroperator.cpp:1983
 msgid "Properties"
 msgstr "Thuộc tính"
 
@@ -6176,12 +6150,12 @@ msgstr ""
 "Tạo thư mục mới trong:\n"
 "%1"
 
-#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:770
+#: ../kfile/kdirselectdialog.cpp:156 ../kfile/kdiroperator.cpp:762
 #, kde-format
 msgid "A file or folder named %1 already exists."
 msgstr "Một tập tin hay thư mục tên %1 đã có."
 
-#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:772
+#: ../kfile/kdirselectdialog.cpp:160 ../kfile/kdiroperator.cpp:764
 msgid "You do not have permission to create that folder."
 msgstr "Bạn không có quyền tạo thư mục đó."
 
@@ -6323,15 +6297,15 @@ msgstr ""
 msgid "Show Hidden Folders"
 msgstr "Hiện thư mục ẩn"
 
-#: ../kfile/kdiroperator.cpp:787
+#: ../kfile/kdiroperator.cpp:779
 msgid "You did not select a file to delete."
 msgstr "Bạn chưa chọn tập tin cần xoá."
 
-#: ../kfile/kdiroperator.cpp:788
+#: ../kfile/kdiroperator.cpp:780
 msgid "Nothing to Delete"
 msgstr "Không có gì cần xoá"
 
-#: ../kfile/kdiroperator.cpp:809
+#: ../kfile/kdiroperator.cpp:801
 #, kde-format
 msgid ""
 "<qt>Do you really want to delete\n"
@@ -6340,19 +6314,19 @@ msgstr ""
 "<qt>Bạn thật sự muốn xoá\n"
 " <b>« %1 »</b> không?</qt>"
 
-#: ../kfile/kdiroperator.cpp:811
+#: ../kfile/kdiroperator.cpp:803
 msgid "Delete File"
 msgstr "Xoá tập tin"
 
-#: ../kfile/kdiroperator.cpp:849
+#: ../kfile/kdiroperator.cpp:841
 msgid "You did not select a file to trash."
 msgstr "Bạn chưa chọn tập tin cần bỏ vào rác."
 
-#: ../kfile/kdiroperator.cpp:850
+#: ../kfile/kdiroperator.cpp:842
 msgid "Nothing to Trash"
 msgstr "Không có gì cần bỏ vào Rác."
 
-#: ../kfile/kdiroperator.cpp:867
+#: ../kfile/kdiroperator.cpp:859
 #, kde-format
 msgid ""
 "<qt>Do you really want to trash\n"
@@ -6362,134 +6336,138 @@ msgstr ""
 " <b>« %1 »</b>\n"
 "vào Rác không?</qt>"
 
-#: ../kfile/kdiroperator.cpp:869
+#: ../kfile/kdiroperator.cpp:861
 msgid "Trash File"
 msgstr "Bỏ tập tin vào Rác"
 
-#: ../kfile/kdiroperator.cpp:870 ../kfile/kdiroperator.cpp:877
+#: ../kfile/kdiroperator.cpp:862 ../kfile/kdiroperator.cpp:869
 msgctxt "to trash"
 msgid "&Trash"
 msgstr "Bỏ vào &Rác"
 
-#: ../kfile/kdiroperator.cpp:874
+#: ../kfile/kdiroperator.cpp:866
 #, kde-format
 msgid "translators: not called for n == 1"
 msgid_plural "Do you really want to trash these %1 items?"
 msgstr[0] "Bạn thật sự muốn bỏ %1 mục này vào Rác không?"
 
-#: ../kfile/kdiroperator.cpp:876
+#: ../kfile/kdiroperator.cpp:868
 msgid "Trash Files"
 msgstr "Bỏ tập tin vào Rác"
 
-#: ../kfile/kdiroperator.cpp:1068 ../kfile/kdiroperator.cpp:1194
+#: ../kfile/kdiroperator.cpp:1060 ../kfile/kdiroperator.cpp:1197
 msgid "The specified folder does not exist or was not readable."
 msgstr "Thư mục đã ghi rõ không tồn tại hoặc không có khả năng đọc."
 
-#: ../kfile/kdiroperator.cpp:1849
+#: ../kfile/kdiroperator.cpp:1852
 msgid "Menu"
 msgstr "Trình đơn"
 
-#: ../kfile/kdiroperator.cpp:1853
+#: ../kfile/kdiroperator.cpp:1856
 msgid "Parent Folder"
 msgstr "Thư mục mẹ"
 
-#: ../kfile/kdiroperator.cpp:1860
+#: ../kfile/kdiroperator.cpp:1863
 msgid "Home Folder"
 msgstr "Thư mục chính"
 
-#: ../kfile/kdiroperator.cpp:1863
+#: ../kfile/kdiroperator.cpp:1866
 msgid "Reload"
 msgstr "Nạp lại"
 
-#: ../kfile/kdiroperator.cpp:1866
+#: ../kfile/kdiroperator.cpp:1869
 msgid "New Folder..."
 msgstr "Thư mục mới..."
 
-#: ../kfile/kdiroperator.cpp:1877
+#: ../kfile/kdiroperator.cpp:1880
 msgid "Delete"
 msgstr "Xoá"
 
-#: ../kfile/kdiroperator.cpp:1884
+#: ../kfile/kdiroperator.cpp:1887
 msgid "Sorting"
 msgstr "Đang sắp xếp"
 
-#: ../kfile/kdiroperator.cpp:1887
+#: ../kfile/kdiroperator.cpp:1890
 msgid "By Name"
 msgstr "Theo tên"
 
-#: ../kfile/kdiroperator.cpp:1891
+#: ../kfile/kdiroperator.cpp:1894
 msgid "By Size"
 msgstr "Theo kích cỡ"
 
-#: ../kfile/kdiroperator.cpp:1895
+#: ../kfile/kdiroperator.cpp:1898
 msgid "By Date"
 msgstr "Theo ngày"
 
-#: ../kfile/kdiroperator.cpp:1899
+#: ../kfile/kdiroperator.cpp:1902
 #, fuzzy
 #| msgid "Type"
 msgid "By Type"
 msgstr "Kiểu"
 
-#: ../kfile/kdiroperator.cpp:1903
+#: ../kfile/kdiroperator.cpp:1906
 #, fuzzy
 #| msgid "Deleting"
 msgid "Descending"
 msgstr "Đang xoá"
 
-#: ../kfile/kdiroperator.cpp:1913
+#: ../kfile/kdiroperator.cpp:1910
+msgid "Folders First"
+msgstr "Thư mục trước"
+
+#: ../kfile/kdiroperator.cpp:1920
 msgid "Icon Position"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1916
+#: ../kfile/kdiroperator.cpp:1923
 msgid "Next to File Name"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1920
+#: ../kfile/kdiroperator.cpp:1927
 msgid "Above File Name"
 msgstr ""
 
-#: ../kfile/kdiroperator.cpp:1931
+#: ../kfile/kdiroperator.cpp:1938
 msgid "Short View"
 msgstr "Khung xem ngắn"
 
-#: ../kfile/kdiroperator.cpp:1936
+#: ../kfile/kdiroperator.cpp:1943
 msgid "Detailed View"
 msgstr "Khung xem chi tiết"
 
-#: ../kfile/kdiroperator.cpp:1941
+#: ../kfile/kdiroperator.cpp:1948
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Tree View"
 msgstr "Khung xem chi tiết"
 
-#: ../kfile/kdiroperator.cpp:1946
+#: ../kfile/kdiroperator.cpp:1953
 #, fuzzy
 #| msgid "Detailed View"
 msgid "Detailed Tree View"
 msgstr "Khung xem chi tiết"
 
-#: ../kfile/kdiroperator.cpp:1957
+#: ../kfile/kdiroperator.cpp:1964
 msgid "Show Hidden Files"
 msgstr "Hiện tập tin ẩn"
 
-#: ../kfile/kdiroperator.cpp:1961
+#: ../kfile/kdiroperator.cpp:1968
 #, fuzzy
 #| msgid "Show Preview"
 msgid "Show Aside Preview"
 msgstr "Hiện khung Xem thử"
 
-#: ../kfile/kdiroperator.cpp:1967
+#: ../kfile/kdiroperator.cpp:1974
 msgid "Show Preview"
 msgstr "Hiện khung Xem thử"
 
-#: ../kfile/kdiroperator.cpp:1971
+#: ../kfile/kdiroperator.cpp:1978
 #, fuzzy
 #| msgid "Open file dialog"
 msgid "Open File Manager"
 msgstr "Hộp thoại mở tập tin"
 
-#: ../kfile/kdiroperator.cpp:1983
+#: ../kfile/kdiroperator.cpp:1990
 msgid "&View"
 msgstr "&Xem"
 
@@ -6595,6 +6573,23 @@ msgid ""
 "Basic links can only point to local files or directories.\n"
 "Please use \"Link to Location\" for remote URLs."
 msgstr ""
+
+#~ msgid "&Auto Skip"
+#~ msgstr "Tự động bỏ qu&a"
+
+#, fuzzy
+#~| msgid "O&verwrite All"
+#~ msgctxt "Write files into any existing directory"
+#~ msgid "&Write Into All"
+#~ msgstr "Gh&i đè hết"
+
+#, fuzzy
+#~| msgid "O&verwrite All"
+#~ msgid "&Overwrite All"
+#~ msgstr "Gh&i đè hết"
+
+#~ msgid "R&esume All"
+#~ msgstr "Tiếp tục lại &hết"
 
 #~ msgid "Sends a short bug report to submit@bugs.kde.org"
 #~ msgstr "Gởi báo cáo lỗi ngắn cho <submit@bugs.kde.org>"
@@ -7135,9 +7130,6 @@ msgstr ""
 
 #~ msgid "Reverse"
 #~ msgstr "Ngược lại"
-
-#~ msgid "Folders First"
-#~ msgstr "Thư mục trước"
 
 #~ msgid "Separate Folders"
 #~ msgstr "Phân cách thư mục"

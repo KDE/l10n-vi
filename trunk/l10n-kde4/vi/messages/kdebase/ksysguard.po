@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-16 05:59+0100\n"
+"POT-Creation-Date: 2010-03-02 04:18+0100\n"
 "PO-Revision-Date: 2007-06-23 22:55+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,87 +16,523 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
 
-#: WorkSheet.cc:88
-#, kde-format
-msgid "Cannot open the file %1."
-msgstr "Không thể mở tập tin %1."
-
-#: WorkSheet.cc:96
-#, kde-format
-msgid "The file %1 does not contain valid XML."
-msgstr "Tập tin %1 không chứa mã XML hợp lệ."
-
-#: WorkSheet.cc:103
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid worksheet definition, which must have a "
-"document type 'KSysGuardWorkSheet'."
+#: SensorDisplayLib/FancyPlotter.cc:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
 msgstr ""
-"Tập tin %1 không chứa lời định nghĩa bảng làm việc hợp lệ, mà phải có kiểu "
-"tài liệu KSysGuardWorkSheet."
 
-#: WorkSheet.cc:127
+#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/DancingBars.cc:96
+msgid "OK"
+msgstr "OK"
+
+#: SensorDisplayLib/FancyPlotter.cc:281 SensorDisplayLib/FancyPlotter.cc:515
+#: SensorDisplayLib/FancyPlotter.cc:585 SensorDisplayLib/DancingBars.cc:96
+msgid "Error"
+msgstr "Lỗi"
+
+#: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
+#: SensorDisplayLib/FancyPlotter.cc:637
 #, kde-format
-msgid "The file %1 has an invalid worksheet size."
-msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
+msgctxt "units"
+msgid "%1%"
+msgstr ""
 
-#: WorkSheet.cc:228
+#: SensorDisplayLib/FancyPlotter.cc:518
 #, kde-format
-msgid "Cannot save file %1"
-msgstr "Không thể lưu tập tin %1"
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr ""
 
-#: WorkSheet.cc:274
-msgid "The clipboard does not contain a valid display description."
-msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
+#: SensorDisplayLib/FancyPlotter.cc:582
+#, kde-format
+msgid "%1 of %2%1"
+msgstr ""
 
-#: WorkSheet.cc:372
-msgid "Select Display Type"
-msgstr "Chọn kiểu bộ trình bày"
+#: SensorDisplayLib/FancyPlotter.cc:610
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB"
+msgstr ""
 
-#: WorkSheet.cc:373
-msgid "&Line graph"
-msgstr "Đồ thị đườ&ng"
+#: SensorDisplayLib/FancyPlotter.cc:613
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr ""
 
-#: WorkSheet.cc:374
-msgid "&Digital display"
-msgstr "Hiện điện &số"
+#: SensorDisplayLib/FancyPlotter.cc:616
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr ""
 
-#: WorkSheet.cc:375
-msgid "&Bar graph"
-msgstr "Đồ thị th&anh"
+#: SensorDisplayLib/FancyPlotter.cc:619
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr ""
 
-#: WorkSheet.cc:376
-msgid "Log to a &file"
-msgstr "&Ghi lưu vào tập tin"
+#: SensorDisplayLib/FancyPlotter.cc:624
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr ""
 
-#: WorkSheet.cc:525
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove this display?"
-msgstr "Gỡ &bỏ bộ trình bày"
+#: SensorDisplayLib/FancyPlotter.cc:627
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr ""
 
-#: WorkSheet.cc:526
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove Display"
-msgstr "Gỡ &bỏ bộ trình bày"
+#: SensorDisplayLib/FancyPlotter.cc:630
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr ""
 
-#: WorkSheet.cc:567
-msgid "Dummy"
-msgstr "Giả"
+#: SensorDisplayLib/FancyPlotter.cc:633
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr ""
 
-#: ksgrd/SensorAgent.cc:109
+#: SensorDisplayLib/FancyPlotter.cc:639
 #, fuzzy, kde-format
-#| msgid ""
-#| "Message from %1:\n"
-#| "%2"
-msgctxt "%1 is a host name"
-msgid ""
-"Message from %1:\n"
-"%2"
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%"
+
+#: SensorDisplayLib/LogFile.cc:92
+msgid "File logging settings"
+msgstr "Thiết lập ghi lưu tập tin"
+
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cc:98 rc.cpp:125
+msgid "Foreground color:"
+msgstr "Màu chữ :"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/LogFile.cc:100 SensorDisplayLib/DancingBarsSettings.cc:176
+#: rc.cpp:86 rc.cpp:101 rc.cpp:113 rc.cpp:128
+msgid "Background color:"
+msgstr "Màu nền:"
+
+#: SensorDisplayLib/SensorModel.cc:166
+msgid "Host"
+msgstr "Máy"
+
+#: SensorDisplayLib/SensorModel.cc:169
+msgid "Sensor"
+msgstr "Bộ nhạy"
+
+#: SensorDisplayLib/SensorModel.cc:172
+msgid "Unit"
+msgstr "Đơn vị"
+
+#: SensorDisplayLib/SensorModel.cc:175
+msgid "Status"
+msgstr "Trạng thái"
+
+#: SensorDisplayLib/SensorModel.cc:178
+msgid "Label"
+msgstr "Nhãn"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:51
+#, fuzzy
+#| msgid "Signal Plotter Settings"
+msgid "Plotter Settings"
+msgstr "Thiết lập bộ vẽ tín hiệu"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:65
+msgid "General"
+msgstr "Chung"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:70
+msgid "Title:"
+msgstr "Tựa :"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/FancyPlotterSettings.cc:74
+#: SensorDisplayLib/DancingBarsSettings.cc:63 rc.cpp:53
+msgid "Enter the title of the display here."
+msgstr "Hãy nhập vào đây tựa của bộ trình bày."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:86
+msgid "Scales"
+msgstr "Tỷ lệ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:91
+#, fuzzy
+#| msgid "Vertical Scale"
+msgid "Vertical scale"
+msgstr "Tỷ lệ dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:97
+msgid "Specify graph range:"
 msgstr ""
-"Thông điệp từ %1:\n"
-"%2"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:98
+msgid ""
+"Check this box if you want the display range to adapt dynamically to the "
+"currently displayed values; if you do not check this, you have to specify "
+"the range you want in the fields below."
+msgstr ""
+"Hãy bật tùy chọn này nếu bạn muốn phạm vị trình bày thích nghi với các giá "
+"trị được hiển thị hiện thời. Nếu không bật, bạn sẽ phải xác định phạm vị đã "
+"muốn trong các trường bên dưới."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:102
+#: SensorDisplayLib/DancingBarsSettings.cc:73
+msgid "Minimum value:"
+msgstr "Giá trị tối thiểu :"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:108
+#, fuzzy
+#| msgid "Enter the title of the display here."
+msgid "Enter the minimum value for the display here."
+msgstr "Hãy nhập vào đây tựa của bộ trình bày."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:113
+#: SensorDisplayLib/DancingBarsSettings.cc:85
+msgid "Maximum value:"
+msgstr "Giá trị tối đa:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:119
+msgid ""
+"Enter the soft maximum value for the display here. The upper range will not "
+"be reduced below this value, but will still go above this number for values "
+"above this value."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:126
+#, fuzzy
+#| msgid "Horizontal Scale"
+msgid "Horizontal scale"
+msgstr "Tỷ lệ ngang"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:133
+#, fuzzy
+#| msgid "pixels per time period"
+msgid "Pixels per time period:"
+msgstr "điểm ảnh trong mỗi thời gian"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:140
+msgid "Grid"
+msgstr "Lưới"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:145
+msgid "Lines"
+msgstr "Đường"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:151
+msgid "Vertical lines"
+msgstr "Đường dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:152
+msgid "Check this to activate the vertical lines if display is large enough."
+msgstr "Bật tùy chọn này để vẽ đường dọc nếu bộ trình bày đủ lớn."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:155
+msgid "Distance:"
+msgstr "Khoảng cách:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:161
+msgid "Enter the distance between two vertical lines here."
+msgstr "Hãy nhập vào đây khoảng cách giữa hai đường dọc."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:165
+msgid "Vertical lines scroll"
+msgstr "Cuộn đường dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:168
+msgid "Horizontal lines"
+msgstr "Đường ngang"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:169
+msgid "Check this to enable horizontal lines if display is large enough."
+msgstr "Bật tùy chọn này để vẽ đường ngang nếu bộ trình bày đủ lớn."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:174
+msgid "Text"
+msgstr "Chữ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:180
+msgid "Show axis labels"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:181
+msgid ""
+"Check this box if horizontal lines should be decorated with the values they "
+"mark."
+msgstr ""
+"Bật tùy chọn này nếu bạn muốn hiển thị trên mỗi đường ngang giá trị tương "
+"ứng."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:184
+#: SensorDisplayLib/DancingBarsSettings.cc:183
+msgid "Font size:"
+msgstr "Cỡ phông chữ :"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:199
+#: SensorDisplayLib/DancingBarsSettings.cc:195
+msgid "Sensors"
+msgstr "Bộ nhạy"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:224
+msgid "Set Color..."
+msgstr "Đặt màu..."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:225
+msgid "Push this button to configure the color of the sensor in the diagram."
+msgstr "Hãy nhấn nút này để cấu hình màu của bộ nhạy trong sơ đồ."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:232
+#: SensorDisplayLib/DancingBarsSettings.cc:212
+msgid "Delete"
+msgstr "Xoá"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:233
+#: SensorDisplayLib/DancingBarsSettings.cc:213
+msgid "Push this button to delete the sensor."
+msgstr "Hãy nhấn nút này để xoá bỏ bộ nhạy."
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:237
+msgid "Move Up"
+msgstr "Đem lên"
+
+#: SensorDisplayLib/FancyPlotterSettings.cc:242
+msgid "Move Down"
+msgstr "Đem xuống"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:43
+msgid "Edit BarGraph Preferences"
+msgstr "Sửa đổi Tùy thích Đồ thị thanh"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:53
+msgid "Range"
+msgstr "Phạm vị"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cc:58 WorkSheetSettings.cc:51
+#: rc.cpp:89 rc.cpp:104
+msgid "Title"
+msgstr "Tựa"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:68
+msgid "Display Range"
+msgstr "Phạm vi trình bày"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:81
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Hãy nhập vào đây giá trị tối thiểu cho bộ trình bày. Nếu cả hai giá trị là "
+"0, khả năng phát hiện tự động phạm vị được bật."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:93
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Hãy nhập vào đây giá trị tối đa cho bộ trình bày. Nếu cả hai giá trị là 0, "
+"khả năng phát hiện tự động phạm vị được bật."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:103
+msgid "Alarms"
+msgstr "Báo động"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cc:108 rc.cpp:26
+msgid "Alarm for Minimum Value"
+msgstr "Báo động giá trị tối thiểu"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:113
+#: SensorDisplayLib/DancingBarsSettings.cc:136
+msgid "Enable alarm"
+msgstr "Bật báo động"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:114 rc.cpp:32 rc.cpp:62
+msgid "Enable the minimum value alarm."
+msgstr "Bật báo động giá trị tối thiểu."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:117 rc.cpp:35
+msgid "Lower limit:"
+msgstr "Giới hạn dưới :"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cc:131 rc.cpp:38
+msgid "Alarm for Maximum Value"
+msgstr "Báo động giá trị tối đa"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cc:137 rc.cpp:44 rc.cpp:71
+msgid "Enable the maximum value alarm."
+msgstr "Bật báo động giá trị tối đa."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cc:140 rc.cpp:47
+msgid "Upper limit:"
+msgstr "Giới hạn trên:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:157
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Diện mạo"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:162
+msgid "Normal bar color:"
+msgstr "Màu thanh chuẩn:"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:169
+msgid "Out-of-range color:"
+msgstr "Màu ở ngoại phạm vị :"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:187
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Giá trị này xác định kích cỡ của phông chữ dùng để in nhãn dưới mỗi thanh. "
+"Các thanh bị thu hồi tự động nếu chữ trở thành quá lớn, vậy khuyên bạn đặt "
+"vào đây một kích cỡ nhỏ."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:208
+msgid "Edit..."
+msgstr "Sửa..."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:209
+msgid "Push this button to configure the label."
+msgstr "Hãy nhấn nút này để cấu hình nhãn."
+
+#: SensorDisplayLib/DancingBarsSettings.cc:367
+msgid "Label of Bar Graph"
+msgstr "Nhãn của đồ thị thanh"
+
+#: SensorDisplayLib/DancingBarsSettings.cc:368
+msgid "Enter new label:"
+msgstr "Nhập nhãn mới:"
+
+#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
+msgid "&Properties"
+msgstr "Tài &sản"
+
+#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
+msgid "&Remove Display"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: SensorDisplayLib/SensorDisplay.cc:193
+#, kde-format
+msgid ""
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
+msgstr ""
+"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
+"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
+"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
+
+#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
+msgid "Sensor Logger"
+msgstr "Bộ ghi lưu dữ liệu nhạy"
+
+#: SensorDisplayLib/MultiMeterSettings.cc:31
+#, fuzzy
+#| msgid "Multimeter Settings"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Thiết lập bộ đa đo"
+
+#: SensorDisplayLib/SensorLogger.cc:138
+msgid "Logging"
+msgstr "Ghi lưu"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
+#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:20
+msgid "Timer Interval"
+msgstr "Khoảng thời gian đếm giờ"
+
+#: SensorDisplayLib/SensorLogger.cc:144
+msgid "Sensor Name"
+msgstr "Tên bộ nhạy"
+
+#: SensorDisplayLib/SensorLogger.cc:147
+msgid "Host Name"
+msgstr "Tên máy"
+
+#: SensorDisplayLib/SensorLogger.cc:150
+msgid "Log File"
+msgstr "Tập tin ghi lưu"
+
+#: SensorDisplayLib/SensorLogger.cc:608
+msgid "&Remove Sensor"
+msgstr "Gỡ &bỏ bộ nhạy"
+
+#: SensorDisplayLib/SensorLogger.cc:613
+msgid "&Edit Sensor..."
+msgstr "&Sửa bộ nhạy..."
+
+#: SensorDisplayLib/SensorLogger.cc:621
+msgid "St&op Logging"
+msgstr "&Ngưng ghi lưu"
+
+#: SensorDisplayLib/SensorLogger.cc:624
+msgid "S&tart Logging"
+msgstr "&Bắt đầu ghi lưu"
+
+#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
+msgid "Drop Sensor Here"
+msgstr "Thả đây bộ nhạy"
+
+#: SensorDisplayLib/DummyDisplay.cc:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Đây là ô rỗng trong bảng làm việc. Hãy kéo một bộ nhạy từ Bộ Duyệt Nhạy và "
+"thả nó vào đây. Một bộ trình bày nhạy sẽ xuất hiện mà cho bạn khả năng theo "
+"dõi các giá trị nhạy trong thời gian."
+
+#: SensorDisplayLib/ListViewSettings.cc:30
+msgid "List View Settings"
+msgstr "Thiết lập ô xem danh sách"
+
+#: SensorDisplayLib/SensorLoggerSettings.cc:30
+msgid "Sensor Logger Settings"
+msgstr "Thiết lập bộ ghi lưu dữ liệu nhạy"
 
 #: ksgrd/SensorShellAgent.cc:126
 #, kde-format
@@ -107,6 +543,31 @@ msgstr ""
 #, kde-format
 msgid "The daemon program '%1' failed."
 msgstr ""
+
+#: ksgrd/SensorSocketAgent.cc:103
+#, kde-format
+msgid "Connection to %1 refused"
+msgstr "Kết nối đến %1 bị từ chối."
+
+#: ksgrd/SensorSocketAgent.cc:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "Không tìm thấy máy %1"
+
+#: ksgrd/SensorSocketAgent.cc:111
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred with the network (e.g., the network cable was "
+#| "accidentally plugged out) for host %1"
+msgid ""
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
+msgstr "Gặp lỗi mạng (v.d. cáp mạng bị tháo nút ra) cho máy %1."
+
+#: ksgrd/SensorSocketAgent.cc:115
+#, kde-format
+msgid "Error for host %1: %2"
+msgstr "Lỗi cho máy %1: %2"
 
 #: ksgrd/SensorManager.cc:60
 #, fuzzy
@@ -616,30 +1077,76 @@ msgstr "Giá trị số nguyên"
 msgid "Floating Point Value"
 msgstr "Giá trị số điểm phù động"
 
-#: ksgrd/SensorSocketAgent.cc:103
-#, kde-format
-msgid "Connection to %1 refused"
-msgstr "Kết nối đến %1 bị từ chối."
-
-#: ksgrd/SensorSocketAgent.cc:107
-#, kde-format
-msgid "Host %1 not found"
-msgstr "Không tìm thấy máy %1"
-
-#: ksgrd/SensorSocketAgent.cc:111
+#: ksgrd/SensorAgent.cc:109
 #, fuzzy, kde-format
 #| msgid ""
-#| "An error occurred with the network (e.g., the network cable was "
-#| "accidentally plugged out) for host %1"
+#| "Message from %1:\n"
+#| "%2"
+msgctxt "%1 is a host name"
 msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
-msgstr "Gặp lỗi mạng (v.d. cáp mạng bị tháo nút ra) cho máy %1."
+"Message from %1:\n"
+"%2"
+msgstr ""
+"Thông điệp từ %1:\n"
+"%2"
 
-#: ksgrd/SensorSocketAgent.cc:115
+#: Workspace.cc:112
 #, kde-format
-msgid "Error for host %1: %2"
-msgstr "Lỗi cho máy %1: %2"
+msgid "Sheet %1"
+msgstr "Tờ %1"
+
+#: Workspace.cc:171
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
+msgid ""
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
+msgstr ""
+"Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
+"Bạn có muốn lưu tờ này không?"
+
+#: Workspace.cc:186
+#, fuzzy
+#| msgid "*.sgrd|Sensor Files"
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Tập tin bộ nhạy"
+
+#: Workspace.cc:186
+msgid "Select Tab File to Import"
+msgstr ""
+
+#: Workspace.cc:214 Workspace.cc:235
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
+msgstr "Bạn không có bảng làm việc có thể lưu."
+
+#: Workspace.cc:242
+msgid "Export Tab"
+msgstr ""
+
+#: Workspace.cc:260
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
+msgstr "Không có bảng làm việc có thể xoá bỏ."
+
+#: Workspace.cc:300
+#, kde-format
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
+
+#: Workspace.cc:300
+#, fuzzy
+#| msgid "System Monitor"
+msgid "Upload custom System Monitor tab"
+msgstr "Bộ Theo dõi Hệ thống"
 
 #: TimerSettings.cc:38
 msgid "Timer Settings"
@@ -655,13 +1162,296 @@ msgstr "Khoảng cập nhật:"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
 #. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:59 rc.cpp:23 WorkSheetSettings.cc:95
+#: TimerSettings.cc:59 WorkSheetSettings.cc:95 rc.cpp:23
 msgid " sec"
 msgstr " giây"
 
 #: TimerSettings.cc:62 WorkSheetSettings.cc:101
 msgid "All displays of the sheet are updated at the rate specified here."
 msgstr "Mọi bộ trình bày của tờ được cập nhật theo tỷ lệ đã xác định vào đây."
+
+#: WorkSheet.cc:88
+#, kde-format
+msgid "Cannot open the file %1."
+msgstr "Không thể mở tập tin %1."
+
+#: WorkSheet.cc:96
+#, kde-format
+msgid "The file %1 does not contain valid XML."
+msgstr "Tập tin %1 không chứa mã XML hợp lệ."
+
+#: WorkSheet.cc:103
+#, kde-format
+msgid ""
+"The file %1 does not contain a valid worksheet definition, which must have a "
+"document type 'KSysGuardWorkSheet'."
+msgstr ""
+"Tập tin %1 không chứa lời định nghĩa bảng làm việc hợp lệ, mà phải có kiểu "
+"tài liệu KSysGuardWorkSheet."
+
+#: WorkSheet.cc:127
+#, kde-format
+msgid "The file %1 has an invalid worksheet size."
+msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
+
+#: WorkSheet.cc:228
+#, kde-format
+msgid "Cannot save file %1"
+msgstr "Không thể lưu tập tin %1"
+
+#: WorkSheet.cc:274
+msgid "The clipboard does not contain a valid display description."
+msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
+
+#: WorkSheet.cc:372
+msgid "Select Display Type"
+msgstr "Chọn kiểu bộ trình bày"
+
+#: WorkSheet.cc:373
+msgid "&Line graph"
+msgstr "Đồ thị đườ&ng"
+
+#: WorkSheet.cc:374
+msgid "&Digital display"
+msgstr "Hiện điện &số"
+
+#: WorkSheet.cc:375
+msgid "&Bar graph"
+msgstr "Đồ thị th&anh"
+
+#: WorkSheet.cc:376
+msgid "Log to a &file"
+msgstr "&Ghi lưu vào tập tin"
+
+#: WorkSheet.cc:525
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove this display?"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: WorkSheet.cc:526
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove Display"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: WorkSheet.cc:567
+msgid "Dummy"
+msgstr "Giả"
+
+#: WorkSheetSettings.cc:40
+#, fuzzy
+#| msgid "Properties"
+msgid "Tab Properties"
+msgstr "Thuộc tính"
+
+#: WorkSheetSettings.cc:62
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#: WorkSheetSettings.cc:71
+msgid "Rows:"
+msgstr "Hàng:"
+
+#: WorkSheetSettings.cc:80
+msgid "Columns:"
+msgstr "Cột:"
+
+#: WorkSheetSettings.cc:88
+msgid "Enter the number of rows the sheet should have."
+msgstr "Hãy nhập số hàng cho tờ này."
+
+#: WorkSheetSettings.cc:89
+msgid "Enter the number of columns the sheet should have."
+msgstr "Hãy nhập số cột cho tờ này."
+
+#: WorkSheetSettings.cc:102
+msgid "Enter the title of the worksheet here."
+msgstr "Hãy nhập vào đây tựa của bảng làm việc."
+
+#: ksysguard.cc:74
+msgid "KDE System Monitor"
+msgstr "Bộ Theo dõi Hệ thống KDE"
+
+#: ksysguard.cc:154 ksysguard.cc:530
+msgid "System Monitor"
+msgstr "Bộ Theo dõi Hệ thống"
+
+#: ksysguard.cc:155
+msgid "&Refresh Tab"
+msgstr ""
+
+#: ksysguard.cc:156
+msgid "&New Tab..."
+msgstr ""
+
+#: ksysguard.cc:157
+msgid "Import Tab Fr&om File..."
+msgstr ""
+
+#: ksysguard.cc:158
+msgid "Save Tab &As..."
+msgstr ""
+
+#: ksysguard.cc:159
+msgid "&Close Tab"
+msgstr ""
+
+#: ksysguard.cc:160
+#, fuzzy
+#| msgid "Monitor remote machine..."
+msgid "Monitor &Remote Machine..."
+msgstr "Theo dõi máy từ xa..."
+
+#: ksysguard.cc:161
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Download New Tabs..."
+msgstr "Tờ làm &việc mới..."
+
+#: ksysguard.cc:162
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Upload Current Tab..."
+msgstr "Tờ làm &việc mới..."
+
+#: ksysguard.cc:164
+#, fuzzy
+#| msgid "&Properties"
+msgid "Tab &Properties"
+msgstr "Tài &sản"
+
+#: ksysguard.cc:359
+#, fuzzy, kde-format
+#| msgid " %1 processes "
+msgid "1 process1"
+msgid_plural "%1 processes%1"
+msgstr[0] "%1 tiến trình"
+
+#: ksysguard.cc:443
+#, fuzzy, kde-format
+#| msgid " CPU: %1% "
+msgid "CPU: %1%%1%"
+msgstr " CPU: %1% "
+
+#: ksysguard.cc:458
+#, kde-format
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
+msgstr ""
+
+#: ksysguard.cc:485
+msgid " No swap space available "
+msgstr " Không có vùng trao đổi sẵn sàng "
+
+#: ksysguard.cc:487
+#, fuzzy, kde-format
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Swap: %1 / %2Swap: %1%1"
+msgstr " Trao đổi: %1 / %2 "
+
+#: ksysguard.cc:532
+#, fuzzy
+#| msgid "(c) 1996-2006 The KDE System Monitor Developers"
+msgid "(c) 1996-2008 The KDE System Monitor Developers"
+msgstr "© năm 1996-2006 của Những Nhà Phát triển Bộ Theo dõi Hệ thống"
+
+#: ksysguard.cc:533
+msgid "John Tapsell"
+msgstr ""
+
+#: ksysguard.cc:533
+msgid "Current Maintainer"
+msgstr ""
+
+#: ksysguard.cc:534
+msgid "Chris Schlaeger"
+msgstr ""
+
+#: ksysguard.cc:534
+msgid "Previous Maintainer"
+msgstr ""
+
+#: ksysguard.cc:535
+msgid "Greg Martyn"
+msgstr ""
+
+#: ksysguard.cc:536
+msgid "Tobias Koenig"
+msgstr ""
+
+#: ksysguard.cc:537
+msgid "Nicolas Leclercq"
+msgstr ""
+
+#: ksysguard.cc:538
+msgid "Alex Sanda"
+msgstr ""
+
+#: ksysguard.cc:539
+msgid "Bernd Johannes Wuebben"
+msgstr ""
+
+#: ksysguard.cc:540
+msgid "Ralf Mueller"
+msgstr ""
+
+#: ksysguard.cc:541
+msgid "Hamish Rodda"
+msgstr ""
+
+#: ksysguard.cc:542
+msgid "Torsten Kasch"
+msgstr ""
+
+#: ksysguard.cc:542
+msgid ""
+"Solaris Support\n"
+"Parts derived (by permission) from the sunos5\n"
+"module of William LeFebvre's \"top\" utility."
+msgstr ""
+"Cách hỗ trợ Solaris\n"
+"Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
+"của tiện ích « top » của William LeFebvre."
+
+#: ksysguard.cc:551
+msgid "Optional worksheet files to load"
+msgstr "Tập tin bảng làm việc tùy chọn cần tải"
+
+#: SensorBrowser.cc:117
+msgid "Sensor Browser"
+msgstr "Bộ Duyệt Nhạy"
+
+#: SensorBrowser.cc:473
+#, fuzzy
+#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
+msgid "Drag sensors to empty cells of a worksheet "
+msgstr ""
+"Hãy kéo bộ nhạy vào ô rỗng trên bảng làm việc, hoặc vào tiểu dụng này trên "
+"bảng điều khiển."
+
+#: SensorBrowser.cc:474
+#, fuzzy
+#| msgid ""
+#| "The sensor browser lists the connected hosts and the sensors that they "
+#| "provide. Click and drag sensors into drop zones of a worksheet or the "
+#| "panel applet. A display will appear that visualizes the values provided "
+#| "by the sensor. Some sensor displays can display values of multiple "
+#| "sensors. Simply drag other sensors on to the display to add more sensors."
+msgid ""
+"The sensor browser lists the connected hosts and the sensors that they "
+"provide. Click and drag sensors into drop zones of a worksheet. A display "
+"will appear that visualizes the values provided by the sensor. Some sensor "
+"displays can display values of multiple sensors. Simply drag other sensors "
+"on to the display to add more sensors."
+msgstr ""
+"Bộ duyệt nhạy liệt kê các máy đã kết nối, và những bộ nhạy bị chúng cung "
+"cấp. Hãy nhắp vào và kéo bộ nhạy vào vùng thả trên bảng làm việc, hoặc vào "
+"tiểu dụng này trên bảng điều khiển KDE. Một bộ trình bày sẽ xuất hiện mà "
+"hiển thị các giá trị bị bộ nhạy đó cung cấp. Một số bộ trình bày nhạy có thể "
+"hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
+"bộ trình bày, để thêm bộ nhạy nữa."
 
 #: HostConnector.cc:44
 msgid "Connect Host"
@@ -746,582 +1536,6 @@ msgstr ""
 #: HostConnector.cc:122
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
-
-#: Workspace.cc:112
-#, kde-format
-msgid "Sheet %1"
-msgstr "Tờ %1"
-
-#: Workspace.cc:171
-#, fuzzy, kde-format
-#| msgid ""
-#| "The worksheet '%1' contains unsaved data.\n"
-#| "Do you want to save the worksheet?"
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
-"Bạn có muốn lưu tờ này không?"
-
-#: Workspace.cc:186
-#, fuzzy
-#| msgid "*.sgrd|Sensor Files"
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Tập tin bộ nhạy"
-
-#: Workspace.cc:186
-msgid "Select Tab File to Import"
-msgstr ""
-
-#: Workspace.cc:214 Workspace.cc:235
-#, fuzzy
-#| msgid "You do not have a worksheet that could be saved."
-msgid "You do not have a tab that could be saved."
-msgstr "Bạn không có bảng làm việc có thể lưu."
-
-#: Workspace.cc:242
-msgid "Export Tab"
-msgstr ""
-
-#: Workspace.cc:260
-#, fuzzy
-#| msgid "There are no worksheets that could be deleted."
-msgid "There are no tabs that could be deleted."
-msgstr "Không có bảng làm việc có thể xoá bỏ."
-
-#: Workspace.cc:300
-#, kde-format
-msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
-msgstr ""
-
-#: Workspace.cc:300
-#, fuzzy
-#| msgid "System Monitor"
-msgid "Upload custom System Monitor tab"
-msgstr "Bộ Theo dõi Hệ thống"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Sửa đổi Tùy thích Đồ thị thanh"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:53
-msgid "Range"
-msgstr "Phạm vị"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:58 rc.cpp:89 rc.cpp:104
-#: WorkSheetSettings.cc:51
-msgid "Title"
-msgstr "Tựa"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/DancingBarsSettings.cc:63
-#: SensorDisplayLib/FancyPlotterSettings.cc:74 rc.cpp:53
-msgid "Enter the title of the display here."
-msgstr "Hãy nhập vào đây tựa của bộ trình bày."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:68
-msgid "Display Range"
-msgstr "Phạm vi trình bày"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:73
-#: SensorDisplayLib/FancyPlotterSettings.cc:102
-msgid "Minimum value:"
-msgstr "Giá trị tối thiểu :"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:81
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Hãy nhập vào đây giá trị tối thiểu cho bộ trình bày. Nếu cả hai giá trị là "
-"0, khả năng phát hiện tự động phạm vị được bật."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:85
-#: SensorDisplayLib/FancyPlotterSettings.cc:113
-msgid "Maximum value:"
-msgstr "Giá trị tối đa:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:93
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Hãy nhập vào đây giá trị tối đa cho bộ trình bày. Nếu cả hai giá trị là 0, "
-"khả năng phát hiện tự động phạm vị được bật."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:103
-msgid "Alarms"
-msgstr "Báo động"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:108 rc.cpp:26
-msgid "Alarm for Minimum Value"
-msgstr "Báo động giá trị tối thiểu"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:113
-#: SensorDisplayLib/DancingBarsSettings.cc:136
-msgid "Enable alarm"
-msgstr "Bật báo động"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:114 rc.cpp:32 rc.cpp:62
-msgid "Enable the minimum value alarm."
-msgstr "Bật báo động giá trị tối thiểu."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:117 rc.cpp:35
-msgid "Lower limit:"
-msgstr "Giới hạn dưới :"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:131 rc.cpp:38
-msgid "Alarm for Maximum Value"
-msgstr "Báo động giá trị tối đa"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:137 rc.cpp:44 rc.cpp:71
-msgid "Enable the maximum value alarm."
-msgstr "Bật báo động giá trị tối đa."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:140 rc.cpp:47
-msgid "Upper limit:"
-msgstr "Giới hạn trên:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:157
-#, fuzzy
-#| msgid "Look"
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Diện mạo"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:162
-msgid "Normal bar color:"
-msgstr "Màu thanh chuẩn:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:169
-msgid "Out-of-range color:"
-msgstr "Màu ở ngoại phạm vị :"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/DancingBarsSettings.cc:176 SensorDisplayLib/LogFile.cc:100
-#: rc.cpp:86 rc.cpp:101 rc.cpp:113 rc.cpp:128
-msgid "Background color:"
-msgstr "Màu nền:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:183
-#: SensorDisplayLib/FancyPlotterSettings.cc:184
-msgid "Font size:"
-msgstr "Cỡ phông chữ :"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:187
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Giá trị này xác định kích cỡ của phông chữ dùng để in nhãn dưới mỗi thanh. "
-"Các thanh bị thu hồi tự động nếu chữ trở thành quá lớn, vậy khuyên bạn đặt "
-"vào đây một kích cỡ nhỏ."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:195
-#: SensorDisplayLib/FancyPlotterSettings.cc:199
-msgid "Sensors"
-msgstr "Bộ nhạy"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Edit..."
-msgstr "Sửa..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:209
-msgid "Push this button to configure the label."
-msgstr "Hãy nhấn nút này để cấu hình nhãn."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-msgid "Delete"
-msgstr "Xoá"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:213
-#: SensorDisplayLib/FancyPlotterSettings.cc:233
-msgid "Push this button to delete the sensor."
-msgstr "Hãy nhấn nút này để xoá bỏ bộ nhạy."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Label of Bar Graph"
-msgstr "Nhãn của đồ thị thanh"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:368
-msgid "Enter new label:"
-msgstr "Nhập nhãn mới:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:51
-#, fuzzy
-#| msgid "Signal Plotter Settings"
-msgid "Plotter Settings"
-msgstr "Thiết lập bộ vẽ tín hiệu"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:65
-msgid "General"
-msgstr "Chung"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:70
-msgid "Title:"
-msgstr "Tựa :"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:86
-msgid "Scales"
-msgstr "Tỷ lệ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:91
-#, fuzzy
-#| msgid "Vertical Scale"
-msgid "Vertical scale"
-msgstr "Tỷ lệ dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:97
-msgid "Specify graph range:"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:98
-msgid ""
-"Check this box if you want the display range to adapt dynamically to the "
-"currently displayed values; if you do not check this, you have to specify "
-"the range you want in the fields below."
-msgstr ""
-"Hãy bật tùy chọn này nếu bạn muốn phạm vị trình bày thích nghi với các giá "
-"trị được hiển thị hiện thời. Nếu không bật, bạn sẽ phải xác định phạm vị đã "
-"muốn trong các trường bên dưới."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:108
-#, fuzzy
-#| msgid "Enter the title of the display here."
-msgid "Enter the minimum value for the display here."
-msgstr "Hãy nhập vào đây tựa của bộ trình bày."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:119
-msgid ""
-"Enter the soft maximum value for the display here. The upper range will not "
-"be reduced below this value, but will still go above this number for values "
-"above this value."
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:126
-#, fuzzy
-#| msgid "Horizontal Scale"
-msgid "Horizontal scale"
-msgstr "Tỷ lệ ngang"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:133
-#, fuzzy
-#| msgid "pixels per time period"
-msgid "Pixels per time period:"
-msgstr "điểm ảnh trong mỗi thời gian"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:140
-msgid "Grid"
-msgstr "Lưới"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:145
-msgid "Lines"
-msgstr "Đường"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:151
-msgid "Vertical lines"
-msgstr "Đường dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:152
-msgid "Check this to activate the vertical lines if display is large enough."
-msgstr "Bật tùy chọn này để vẽ đường dọc nếu bộ trình bày đủ lớn."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:155
-msgid "Distance:"
-msgstr "Khoảng cách:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:161
-msgid "Enter the distance between two vertical lines here."
-msgstr "Hãy nhập vào đây khoảng cách giữa hai đường dọc."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:165
-msgid "Vertical lines scroll"
-msgstr "Cuộn đường dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:168
-msgid "Horizontal lines"
-msgstr "Đường ngang"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:169
-msgid "Check this to enable horizontal lines if display is large enough."
-msgstr "Bật tùy chọn này để vẽ đường ngang nếu bộ trình bày đủ lớn."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:174
-msgid "Text"
-msgstr "Chữ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:180
-msgid "Show axis labels"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:181
-msgid ""
-"Check this box if horizontal lines should be decorated with the values they "
-"mark."
-msgstr ""
-"Bật tùy chọn này nếu bạn muốn hiển thị trên mỗi đường ngang giá trị tương "
-"ứng."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:224
-msgid "Set Color..."
-msgstr "Đặt màu..."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:225
-msgid "Push this button to configure the color of the sensor in the diagram."
-msgstr "Hãy nhấn nút này để cấu hình màu của bộ nhạy trong sơ đồ."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:237
-msgid "Move Up"
-msgstr "Đem lên"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:242
-msgid "Move Down"
-msgstr "Đem xuống"
-
-#: SensorDisplayLib/SensorLoggerDlg.cc:32 SensorDisplayLib/SensorLogger.cc:431
-msgid "Sensor Logger"
-msgstr "Bộ ghi lưu dữ liệu nhạy"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
-msgid "OK"
-msgstr "OK"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:281
-#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:585
-msgid "Error"
-msgstr "Lỗi"
-
-#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
-msgid "&Properties"
-msgstr "Tài &sản"
-
-#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
-msgid "&Remove Display"
-msgstr "Gỡ &bỏ bộ trình bày"
-
-#: SensorDisplayLib/SensorDisplay.cc:193
-#, kde-format
-msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
-msgstr ""
-"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
-"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
-"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
-
-#: SensorDisplayLib/FancyPlotter.cc:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:511 SensorDisplayLib/FancyPlotter.cc:574
-#: SensorDisplayLib/FancyPlotter.cc:637
-#, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:518
-#, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:582
-#, kde-format
-msgid "%1 of %2%1"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:610
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:613
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:616
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:619
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:624
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:627
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:630
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:633
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:639
-#, fuzzy, kde-format
-#| msgctxt "a percentage"
-#| msgid "%"
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%"
-
-#: SensorDisplayLib/SensorLogger.cc:138
-msgid "Logging"
-msgstr "Ghi lưu"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:20
-msgid "Timer Interval"
-msgstr "Khoảng thời gian đếm giờ"
-
-#: SensorDisplayLib/SensorLogger.cc:144
-msgid "Sensor Name"
-msgstr "Tên bộ nhạy"
-
-#: SensorDisplayLib/SensorLogger.cc:147
-msgid "Host Name"
-msgstr "Tên máy"
-
-#: SensorDisplayLib/SensorLogger.cc:150
-msgid "Log File"
-msgstr "Tập tin ghi lưu"
-
-#: SensorDisplayLib/SensorLogger.cc:608
-msgid "&Remove Sensor"
-msgstr "Gỡ &bỏ bộ nhạy"
-
-#: SensorDisplayLib/SensorLogger.cc:613
-msgid "&Edit Sensor..."
-msgstr "&Sửa bộ nhạy..."
-
-#: SensorDisplayLib/SensorLogger.cc:621
-msgid "St&op Logging"
-msgstr "&Ngưng ghi lưu"
-
-#: SensorDisplayLib/SensorLogger.cc:624
-msgid "S&tart Logging"
-msgstr "&Bắt đầu ghi lưu"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Máy"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Bộ nhạy"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Đơn vị"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Trạng thái"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Nhãn"
-
-#: SensorDisplayLib/LogFile.cc:92
-msgid "File logging settings"
-msgstr "Thiết lập ghi lưu tập tin"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:125
-msgid "Foreground color:"
-msgstr "Màu chữ :"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-#, fuzzy
-#| msgid "Multimeter Settings"
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Thiết lập bộ đa đo"
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Thiết lập ô xem danh sách"
-
-#: SensorDisplayLib/SensorLoggerSettings.cc:30
-msgid "Sensor Logger Settings"
-msgstr "Thiết lập bộ ghi lưu dữ liệu nhạy"
-
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Thả đây bộ nhạy"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Đây là ô rỗng trong bảng làm việc. Hãy kéo một bộ nhạy từ Bộ Duyệt Nhạy và "
-"thả nó vào đây. Một bộ trình bày nhạy sẽ xuất hiện mà cho bạn khả năng theo "
-"dõi các giá trị nhạy trong thời gian."
 
 #. i18n: file: ksysguardui.rc:4
 #. i18n: ectx: Menu (file)
@@ -1526,220 +1740,6 @@ msgstr ""
 #| msgid "Network"
 msgid "Network History"
 msgstr "Mạng"
-
-#: WorkSheetSettings.cc:40
-#, fuzzy
-#| msgid "Properties"
-msgid "Tab Properties"
-msgstr "Thuộc tính"
-
-#: WorkSheetSettings.cc:62
-msgid "Properties"
-msgstr "Thuộc tính"
-
-#: WorkSheetSettings.cc:71
-msgid "Rows:"
-msgstr "Hàng:"
-
-#: WorkSheetSettings.cc:80
-msgid "Columns:"
-msgstr "Cột:"
-
-#: WorkSheetSettings.cc:88
-msgid "Enter the number of rows the sheet should have."
-msgstr "Hãy nhập số hàng cho tờ này."
-
-#: WorkSheetSettings.cc:89
-msgid "Enter the number of columns the sheet should have."
-msgstr "Hãy nhập số cột cho tờ này."
-
-#: WorkSheetSettings.cc:102
-msgid "Enter the title of the worksheet here."
-msgstr "Hãy nhập vào đây tựa của bảng làm việc."
-
-#: SensorBrowser.cc:117
-msgid "Sensor Browser"
-msgstr "Bộ Duyệt Nhạy"
-
-#: SensorBrowser.cc:473
-#, fuzzy
-#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
-msgid "Drag sensors to empty cells of a worksheet "
-msgstr ""
-"Hãy kéo bộ nhạy vào ô rỗng trên bảng làm việc, hoặc vào tiểu dụng này trên "
-"bảng điều khiển."
-
-#: SensorBrowser.cc:474
-#, fuzzy
-#| msgid ""
-#| "The sensor browser lists the connected hosts and the sensors that they "
-#| "provide. Click and drag sensors into drop zones of a worksheet or the "
-#| "panel applet. A display will appear that visualizes the values provided "
-#| "by the sensor. Some sensor displays can display values of multiple "
-#| "sensors. Simply drag other sensors on to the display to add more sensors."
-msgid ""
-"The sensor browser lists the connected hosts and the sensors that they "
-"provide. Click and drag sensors into drop zones of a worksheet. A display "
-"will appear that visualizes the values provided by the sensor. Some sensor "
-"displays can display values of multiple sensors. Simply drag other sensors "
-"on to the display to add more sensors."
-msgstr ""
-"Bộ duyệt nhạy liệt kê các máy đã kết nối, và những bộ nhạy bị chúng cung "
-"cấp. Hãy nhắp vào và kéo bộ nhạy vào vùng thả trên bảng làm việc, hoặc vào "
-"tiểu dụng này trên bảng điều khiển KDE. Một bộ trình bày sẽ xuất hiện mà "
-"hiển thị các giá trị bị bộ nhạy đó cung cấp. Một số bộ trình bày nhạy có thể "
-"hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
-"bộ trình bày, để thêm bộ nhạy nữa."
-
-#: ksysguard.cc:74
-msgid "KDE System Monitor"
-msgstr "Bộ Theo dõi Hệ thống KDE"
-
-#: ksysguard.cc:154 ksysguard.cc:530
-msgid "System Monitor"
-msgstr "Bộ Theo dõi Hệ thống"
-
-#: ksysguard.cc:155
-msgid "&Refresh Tab"
-msgstr ""
-
-#: ksysguard.cc:156
-msgid "&New Tab..."
-msgstr ""
-
-#: ksysguard.cc:157
-msgid "Import Tab Fr&om File..."
-msgstr ""
-
-#: ksysguard.cc:158
-msgid "Save Tab &As..."
-msgstr ""
-
-#: ksysguard.cc:159
-msgid "&Close Tab"
-msgstr ""
-
-#: ksysguard.cc:160
-#, fuzzy
-#| msgid "Monitor remote machine..."
-msgid "Monitor &Remote Machine..."
-msgstr "Theo dõi máy từ xa..."
-
-#: ksysguard.cc:161
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "&Download New Tabs..."
-msgstr "Tờ làm &việc mới..."
-
-#: ksysguard.cc:162
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "&Upload Current Tab..."
-msgstr "Tờ làm &việc mới..."
-
-#: ksysguard.cc:164
-#, fuzzy
-#| msgid "&Properties"
-msgid "Tab &Properties"
-msgstr "Tài &sản"
-
-#: ksysguard.cc:359
-#, fuzzy, kde-format
-#| msgid " %1 processes "
-msgid "1 process1"
-msgid_plural "%1 processes%1"
-msgstr[0] "%1 tiến trình"
-
-#: ksysguard.cc:443
-#, fuzzy, kde-format
-#| msgid " CPU: %1% "
-msgid "CPU: %1%%1%"
-msgstr " CPU: %1% "
-
-#: ksysguard.cc:458
-#, kde-format
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
-msgstr ""
-
-#: ksysguard.cc:485
-msgid " No swap space available "
-msgstr " Không có vùng trao đổi sẵn sàng "
-
-#: ksysguard.cc:487
-#, fuzzy, kde-format
-#| msgid " Swap: %1 / %2 "
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Swap: %1 / %2Swap: %1%1"
-msgstr " Trao đổi: %1 / %2 "
-
-#: ksysguard.cc:532
-#, fuzzy
-#| msgid "(c) 1996-2006 The KDE System Monitor Developers"
-msgid "(c) 1996-2008 The KDE System Monitor Developers"
-msgstr "© năm 1996-2006 của Những Nhà Phát triển Bộ Theo dõi Hệ thống"
-
-#: ksysguard.cc:533
-msgid "John Tapsell"
-msgstr ""
-
-#: ksysguard.cc:533
-msgid "Current Maintainer"
-msgstr ""
-
-#: ksysguard.cc:534
-msgid "Chris Schlaeger"
-msgstr ""
-
-#: ksysguard.cc:534
-msgid "Previous Maintainer"
-msgstr ""
-
-#: ksysguard.cc:535
-msgid "Greg Martyn"
-msgstr ""
-
-#: ksysguard.cc:536
-msgid "Tobias Koenig"
-msgstr ""
-
-#: ksysguard.cc:537
-msgid "Nicolas Leclercq"
-msgstr ""
-
-#: ksysguard.cc:538
-msgid "Alex Sanda"
-msgstr ""
-
-#: ksysguard.cc:539
-msgid "Bernd Johannes Wuebben"
-msgstr ""
-
-#: ksysguard.cc:540
-msgid "Ralf Mueller"
-msgstr ""
-
-#: ksysguard.cc:541
-msgid "Hamish Rodda"
-msgstr ""
-
-#: ksysguard.cc:542
-msgid "Torsten Kasch"
-msgstr ""
-
-#: ksysguard.cc:542
-msgid ""
-"Solaris Support\n"
-"Parts derived (by permission) from the sunos5\n"
-"module of William LeFebvre's \"top\" utility."
-msgstr ""
-"Cách hỗ trợ Solaris\n"
-"Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
-"của tiện ích « top » của William LeFebvre."
-
-#: ksysguard.cc:551
-msgid "Optional worksheet files to load"
-msgstr "Tập tin bảng làm việc tùy chọn cần tải"
 
 #, fuzzy
 #~| msgid " sec"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-03-08 04:21+0100\n"
+"POT-Creation-Date: 2010-04-24 01:33+0200\n"
 "PO-Revision-Date: 2008-01-18 11:33+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -147,13 +147,13 @@ msgstr "Dòng ngang"
 #: plugins/pageeffects/matrixwipe/waterfallwipe/KPrWaterfallWipeEffectFactory.cpp:64
 #: plugins/pageeffects/matrixwipe/boxsnakes/KPrBoxSnakesWipeEffectFactory.cpp:69
 #: plugins/pageeffects/iriswipe/ellipseWipe/KPrEllipseWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:68
+#: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:100
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:71
 #: plugins/pageeffects/iriswipe/starWipe/KPrStarWipeEffectFactory.cpp:116
 #: plugins/pageeffects/iriswipe/pentagonWipe/KPrPentagonWipeEffectFactory.cpp:77
-#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
+#: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:73
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
 msgid "Unknown subtype"
@@ -1012,6 +1012,11 @@ msgstr "Hình tròn"
 msgid "Circle Reverse"
 msgstr "Dòng thẳng đứng"
 
+#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
+#, fuzzy
+msgid "RoundRect"
+msgstr "Không hiệu ứng"
+
 #: plugins/pageeffects/iriswipe/triangleWipe/KPrTriangleWipeEffectFactory.cpp:31
 #, fuzzy
 #| msgid "Tiled"
@@ -1046,11 +1051,6 @@ msgstr "Cuộn về trái"
 #| msgid "Vertical Lines"
 msgid "Left Reverse"
 msgstr "Dòng thẳng đứng"
-
-#: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:32
-#, fuzzy
-msgid "RoundRect"
-msgstr "Không hiệu ứng"
 
 #: plugins/pageeffects/iriswipe/irisWipe/KPrIrisWipeEffectFactory.cpp:30
 msgid "Iris"
@@ -1117,6 +1117,12 @@ msgstr "Dòng ngang"
 msgid "Pentagon"
 msgstr "Trình diễn"
 
+#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
+#, fuzzy
+#| msgid "Slide Wipe Effect"
+msgid "ArrowHead"
+msgstr "Hiệu ứng Quét Trang trình diễn"
+
 #: plugins/pageeffects/iriswipe/miscShapeWipe/KPrMiscShapeWipeEffectFactory.cpp:30
 msgid "Misc"
 msgstr ""
@@ -1141,12 +1147,6 @@ msgstr ""
 #| msgid "Vertical Lines"
 msgid "Keyhole Reverse"
 msgstr "Dòng thẳng đứng"
-
-#: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:31
-#, fuzzy
-#| msgid "Slide Wipe Effect"
-msgid "ArrowHead"
-msgstr "Hiệu ứng Quét Trang trình diễn"
 
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:32
 msgid "Eye"
@@ -1305,14 +1305,125 @@ msgstr ""
 msgid "Confirm action"
 msgstr "Sao luư  Cấu hình."
 
-#: part/KPrPlaceholderShapeFactory.cpp:31
-msgid "Placeholder shape"
+#: part/KPrView.cpp:65
+#, fuzzy
+msgid "Show Master Slides"
+msgstr "Slide"
+
+#: part/KPrView.cpp:66
+#, fuzzy
+msgid "Import Slideshow..."
+msgstr "Nhảy tới Trang..."
+
+#: part/KPrView.cpp:67
+#, fuzzy
+msgid "Insert Slide"
+msgstr "Chèn dòng"
+
+#: part/KPrView.cpp:68 part/KPrView.cpp:69
+msgid "Insert a new slide after the current one"
 msgstr ""
 
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:78
+#: part/KPrView.cpp:70
+#, fuzzy
+msgid "Copy Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:71 part/KPrView.cpp:72
+#, fuzzy
+msgid "Copy the current slide"
+msgstr "Trước trang hiện tại"
+
+#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
+#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
+#: part/KPrView.cpp:73 rc.cpp:206
+#, fuzzy
+msgid "Delete Slide"
+msgstr "Slide đã chọ&n"
+
+#: part/KPrView.cpp:74 part/KPrView.cpp:75
+#, fuzzy
+msgid "Delete the current slide"
+msgstr "Trước trang hiện tại"
+
+#: part/KPrView.cpp:76
+#, fuzzy
+msgid "Master Slide..."
+msgstr "Chèn dòng"
+
+#: part/KPrView.cpp:77
+#, fuzzy
+msgid "Previous Slide"
+msgstr "Bước &trước"
+
+#: part/KPrView.cpp:78 part/KPrPresenterViewInterface.cpp:67
 #, fuzzy
 msgid "Next Slide"
 msgstr "Bước &kế"
+
+#: part/KPrView.cpp:79
+#, fuzzy
+msgid "First Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:80
+#, fuzzy
+msgid "Last Slide"
+msgstr "Slide"
+
+#: part/KPrView.cpp:81
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure KPresenter..."
+msgstr "Cấu hình KPresenter..."
+
+#: part/KPrView.cpp:142
+msgid "Normal"
+msgstr "Thông thường "
+
+#: part/KPrView.cpp:148
+#, fuzzy
+msgid "Notes"
+msgstr "Không bút"
+
+#: part/KPrView.cpp:157
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Create Appear Animation"
+msgstr "Hoạt cảnh tạo hình"
+
+#: part/KPrView.cpp:161
+#, fuzzy
+msgid "Edit Custom Slide Shows..."
+msgstr "&Cấu hình trang ..."
+
+#: part/KPrView.cpp:165
+msgid "Start Presentation"
+msgstr "Bắt đầu Trình diễn"
+
+#: part/KPrView.cpp:168
+#, fuzzy
+msgid "From Current Slide"
+msgstr "Sau trang hiện tại"
+
+#: part/KPrView.cpp:173
+msgid "From First Slide"
+msgstr ""
+
+#: part/KPrView.cpp:178
+#, fuzzy
+msgid "Configure Slide Show..."
+msgstr "&Cấu hình trang ..."
+
+#: part/KPrView.cpp:182
+#, fuzzy
+#| msgid "Configure KPresenter..."
+msgid "Configure Presenter View..."
+msgstr "Cấu hình KPresenter..."
+
+#: part/KPrPlaceholderShapeFactory.cpp:31
+msgid "Placeholder shape"
+msgstr ""
 
 #: part/KPrPresenterViewInterface.cpp:77
 msgid "Speaker Notes"
@@ -1476,6 +1587,11 @@ msgstr ""
 msgid "File to open"
 msgstr "Tập tin để mở"
 
+#: part/KPrEndOfSlideShowPage.cpp:68
+#, fuzzy
+msgid "End of presentation. Click to exit."
+msgstr "Presentation"
+
 #: part/KPrPresentationDrawWidget.cpp:102
 #, fuzzy
 #| msgid "Color"
@@ -1515,122 +1631,6 @@ msgstr "Danh sách &bullet"
 #, fuzzy
 msgid "Yellow"
 msgstr "Slideshow"
-
-#: part/KPrView.cpp:65
-#, fuzzy
-msgid "Show Master Slides"
-msgstr "Slide"
-
-#: part/KPrView.cpp:66
-#, fuzzy
-msgid "Import Slideshow..."
-msgstr "Nhảy tới Trang..."
-
-#: part/KPrView.cpp:67
-#, fuzzy
-msgid "Insert Slide"
-msgstr "Chèn dòng"
-
-#: part/KPrView.cpp:68 part/KPrView.cpp:69
-msgid "Insert a new slide after the current one"
-msgstr ""
-
-#: part/KPrView.cpp:70
-#, fuzzy
-msgid "Copy Slide"
-msgstr "Slide"
-
-#: part/KPrView.cpp:71 part/KPrView.cpp:72
-#, fuzzy
-msgid "Copy the current slide"
-msgstr "Trước trang hiện tại"
-
-#. i18n: file: part/ui/KPrCustomSlideShowsDialog.ui:136
-#. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/KPrView.cpp:73 rc.cpp:206
-#, fuzzy
-msgid "Delete Slide"
-msgstr "Slide đã chọ&n"
-
-#: part/KPrView.cpp:74 part/KPrView.cpp:75
-#, fuzzy
-msgid "Delete the current slide"
-msgstr "Trước trang hiện tại"
-
-#: part/KPrView.cpp:76
-#, fuzzy
-msgid "Master Slide..."
-msgstr "Chèn dòng"
-
-#: part/KPrView.cpp:77
-#, fuzzy
-msgid "Previous Slide"
-msgstr "Bước &trước"
-
-#: part/KPrView.cpp:79
-#, fuzzy
-msgid "First Slide"
-msgstr "Slide"
-
-#: part/KPrView.cpp:80
-#, fuzzy
-msgid "Last Slide"
-msgstr "Slide"
-
-#: part/KPrView.cpp:81
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure KPresenter..."
-msgstr "Cấu hình KPresenter..."
-
-#: part/KPrView.cpp:142
-msgid "Normal"
-msgstr "Thông thường "
-
-#: part/KPrView.cpp:148
-#, fuzzy
-msgid "Notes"
-msgstr "Không bút"
-
-#: part/KPrView.cpp:157
-#, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Create Appear Animation"
-msgstr "Hoạt cảnh tạo hình"
-
-#: part/KPrView.cpp:161
-#, fuzzy
-msgid "Edit Custom Slide Shows..."
-msgstr "&Cấu hình trang ..."
-
-#: part/KPrView.cpp:165
-msgid "Start Presentation"
-msgstr "Bắt đầu Trình diễn"
-
-#: part/KPrView.cpp:168
-#, fuzzy
-msgid "From Current Slide"
-msgstr "Sau trang hiện tại"
-
-#: part/KPrView.cpp:173
-msgid "From First Slide"
-msgstr ""
-
-#: part/KPrView.cpp:178
-#, fuzzy
-msgid "Configure Slide Show..."
-msgstr "&Cấu hình trang ..."
-
-#: part/KPrView.cpp:182
-#, fuzzy
-#| msgid "Configure KPresenter..."
-msgid "Configure Presenter View..."
-msgstr "Cấu hình KPresenter..."
-
-#: part/KPrEndOfSlideShowPage.cpp:68
-#, fuzzy
-msgid "End of presentation. Click to exit."
-msgstr "Presentation"
 
 #. i18n: file: kpresenter.rc:3
 #. i18n: ectx: Menu (file)

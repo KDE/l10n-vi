@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-03 04:58+0200\n"
+"POT-Creation-Date: 2010-05-07 04:46+0200\n"
 "PO-Revision-Date: 2008-01-18 11:33+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -79,6 +79,7 @@ msgstr "Mở theo chiều dọc"
 #: plugins/pageeffects/iriswipe/roundRectWipe/KPrRoundRectWipeEffectFactory.cpp:57
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:63
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:78
+#: plugins/pageeffects/swapeffect/KPrSwapEffectFactory.cpp:39
 #, fuzzy
 msgid "Horizontal"
 msgstr "Mở theo chiều ngang"
@@ -156,6 +157,8 @@ msgstr "Dòng ngang"
 #: plugins/pageeffects/iriswipe/arrowHeadWipe/KPrArrowHeadWipeEffectFactory.cpp:103
 #: plugins/pageeffects/iriswipe/eyeWipe/KPrEyeWipeEffectFactory.cpp:72
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:89
+#: plugins/pageeffects/swapeffect/KPrSwapEffectFactory.cpp:48
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:56
 msgid "Unknown subtype"
 msgstr ""
 
@@ -419,6 +422,7 @@ msgstr "Hiệu ứng Quét Trang trình diễn"
 #: plugins/pageeffects/edgewipe/veewipe/VeeWipeEffectFactory.cpp:41
 #: plugins/pageeffects/edgewipe/barnveewipe/BarnVeeWipeEffectFactory.cpp:41
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:55
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:46
 #, fuzzy
 msgid "From Top"
 msgstr "Đến từ trên"
@@ -430,6 +434,7 @@ msgstr "Đến từ trên"
 #: plugins/pageeffects/edgewipe/veewipe/VeeWipeEffectFactory.cpp:44
 #: plugins/pageeffects/edgewipe/barnveewipe/BarnVeeWipeEffectFactory.cpp:44
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:53
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:47
 #, fuzzy
 msgid "From Left"
 msgstr "Đến từ bên trái"
@@ -441,6 +446,7 @@ msgstr "Đến từ bên trái"
 #: plugins/pageeffects/edgewipe/veewipe/VeeWipeEffectFactory.cpp:43
 #: plugins/pageeffects/edgewipe/barnveewipe/BarnVeeWipeEffectFactory.cpp:43
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:56
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:45
 #, fuzzy
 msgid "From Bottom"
 msgstr "Đến từ đáy"
@@ -452,6 +458,7 @@ msgstr "Đến từ đáy"
 #: plugins/pageeffects/edgewipe/veewipe/VeeWipeEffectFactory.cpp:42
 #: plugins/pageeffects/edgewipe/barnveewipe/BarnVeeWipeEffectFactory.cpp:42
 #: plugins/pageeffects/matrixwipe/snakewipe/KPrSnakeWipeEffectFactory.cpp:54
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:48
 #, fuzzy
 msgid "From Right"
 msgstr "Đến từ bên phải"
@@ -1155,6 +1162,17 @@ msgstr ""
 #: plugins/pageeffects/iriswipe/hexagonWipe/KPrHexagonWipeEffectFactory.cpp:38
 msgid "Hexagon"
 msgstr ""
+
+#: plugins/pageeffects/swapeffect/KPrSwapEffectFactory.cpp:29
+#, fuzzy
+#| msgid "Page effects"
+msgid "Swap effect"
+msgstr "Các hiệu ứng trang"
+
+#: plugins/pageeffects/spacerotation/KPrSpaceRotationEffectFactory.cpp:32
+#, fuzzy
+msgid "Space Rotation"
+msgstr "Nhảy tới Trang:"
 
 #: part/tools/animationtool/KPrPageEffectDocker.cpp:56
 msgid "No Effect"
@@ -2135,9 +2153,6 @@ msgstr "Slide"
 #~ msgid "&Page"
 #~ msgstr "&Trang...."
 
-#~ msgid "Page effects"
-#~ msgstr "Các hiệu ứng trang"
-
 #, fuzzy
 #~| msgid "Create page effect"
 #~ msgid "Click to preview the page effect."
@@ -2291,10 +2306,6 @@ msgstr "Slide"
 
 #~ msgid "Choose di&fferent template"
 #~ msgstr "Chọn template &khác"
-
-#, fuzzy
-#~ msgid "Rotation"
-#~ msgstr "Nhảy tới Trang:"
 
 #, fuzzy
 #~ msgid "A&ngle:"

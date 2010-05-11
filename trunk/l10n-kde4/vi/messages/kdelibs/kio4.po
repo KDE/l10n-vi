@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-10 04:40+0200\n"
+"POT-Creation-Date: 2010-05-11 05:53+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -1853,11 +1853,11 @@ msgstr "Hãy chọn tên tập tin khác cho tập tin đích."
 msgid "Undocumented Error"
 msgstr "Lỗi không được diễn tả"
 
-#: kio/renamedialog.cpp:114
+#: kio/renamedialog.cpp:122
 msgid "Appl&y to All"
 msgstr ""
 
-#: kio/renamedialog.cpp:115
+#: kio/renamedialog.cpp:123
 msgid ""
 "When this is checked the button pressed will be applied to all subsequent "
 "folder conflicts for the remainder of the current job.\n"
@@ -1865,44 +1865,44 @@ msgid ""
 "an existing file in the directory."
 msgstr ""
 
-#: kio/renamedialog.cpp:116
+#: kio/renamedialog.cpp:124
 msgid ""
 "When this is checked the button pressed will be applied to all subsequent "
 "conflicts for the remainder of the current job."
 msgstr ""
 
-#: kio/renamedialog.cpp:121
+#: kio/renamedialog.cpp:129
 msgid "&Rename"
 msgstr "&Đổi tên"
 
-#: kio/renamedialog.cpp:123
+#: kio/renamedialog.cpp:131
 msgid "Suggest New &Name"
 msgstr "Đệ nghị tê&n mới"
 
-#: kio/renamedialog.cpp:129
+#: kio/renamedialog.cpp:137
 msgid "&Skip"
 msgstr "&Bỏ qua"
 
-#: kio/renamedialog.cpp:130
+#: kio/renamedialog.cpp:138
 msgid "Do not copy or move this folder, skip to the next item instead"
 msgstr ""
 
-#: kio/renamedialog.cpp:131
+#: kio/renamedialog.cpp:139
 msgid "Do not copy or move this file, skip to the next item instead"
 msgstr ""
 
-#: kio/renamedialog.cpp:136
+#: kio/renamedialog.cpp:144
 #, fuzzy
 #| msgid "Write"
 msgctxt "Write files into an existing folder"
 msgid "&Write Into"
 msgstr "Ghi"
 
-#: kio/renamedialog.cpp:136
+#: kio/renamedialog.cpp:144
 msgid "&Overwrite"
 msgstr "&Ghi đè"
 
-#: kio/renamedialog.cpp:138
+#: kio/renamedialog.cpp:146
 msgid ""
 "Files and folders will be copied into the existing directory, alongside its "
 "existing contents.\n"
@@ -1910,11 +1910,11 @@ msgid ""
 "the directory."
 msgstr ""
 
-#: kio/renamedialog.cpp:143
+#: kio/renamedialog.cpp:151
 msgid "&Resume"
 msgstr "Tiếp tục &lại"
 
-#: kio/renamedialog.cpp:152
+#: kio/renamedialog.cpp:160
 #, kde-format
 msgid ""
 "This action would overwrite '%1' with itself.\n"
@@ -1923,47 +1923,68 @@ msgstr ""
 "Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
 "Vui lòng gõ một tên tập tin mới."
 
-#: kio/renamedialog.cpp:154
+#: kio/renamedialog.cpp:162
 msgid "C&ontinue"
 msgstr "&Tiếp tục"
 
-#: kio/renamedialog.cpp:199 kio/renamedialog.cpp:281
+#: kio/renamedialog.cpp:234
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a newer file '%2'."
+msgstr ""
+"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
+"Vui lòng gõ một tên tập tin mới."
+
+#: kio/renamedialog.cpp:236
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with a file of the same age '%2'."
+msgstr ""
+"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
+"Vui lòng gõ một tên tập tin mới."
+
+#: kio/renamedialog.cpp:238
+#, fuzzy, kde-format
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite '%1' with an older file '%2'."
+msgstr ""
+"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
+"Vui lòng gõ một tên tập tin mới."
+
+#: kio/renamedialog.cpp:242
+#, fuzzy
+#| msgid "Source"
+msgid "Source"
+msgstr "Nguồn"
+
+#: kio/renamedialog.cpp:243
+#, fuzzy
+#| msgid "Destination"
+msgid "Destination"
+msgstr "Đích"
+
+#: kio/renamedialog.cpp:261
 #, kde-format
 msgid "An older item named '%1' already exists."
 msgstr "Một mục cũ hơn tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:201 kio/renamedialog.cpp:283
+#: kio/renamedialog.cpp:263
 #, kde-format
 msgid "A similar file named '%1' already exists."
 msgstr "Tập tin tương tự tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:203 kio/renamedialog.cpp:285
+#: kio/renamedialog.cpp:265
 #, kde-format
 msgid "A newer item named '%1' already exists."
 msgstr "Mục mới hơn tên « %1 » đã có ."
 
-#: kio/renamedialog.cpp:216 kio/renamedialog.cpp:253
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
-msgid "size %1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/renamedialog.cpp:225 kio/renamedialog.cpp:261
-#, kde-format
-msgid "created on %1"
-msgstr "tạo vào %1"
-
-#: kio/renamedialog.cpp:232 kio/renamedialog.cpp:268
-#, kde-format
-msgid "modified on %1"
-msgstr "sửa đổi vào %1"
-
-#: kio/renamedialog.cpp:241
-#, kde-format
-msgid "The source file is '%1'"
-msgstr "Tập tin nguồn là « %1 »"
-
-#: kio/renamedialog.cpp:407 kio/paste.cpp:228 kio/krun.cpp:1095
+#: kio/renamedialog.cpp:387 kio/paste.cpp:228 kio/krun.cpp:1095
 #: kio/kdirlister.cpp:329
 #, kde-format
 msgid ""
@@ -5716,112 +5737,112 @@ msgstr "Gỡ bỏ mọi cookie"
 msgid "Reload configuration file"
 msgstr "Tải lại tập tin cấu hình"
 
-#: ../kioslave/http/http.cpp:561
+#: ../kioslave/http/http.cpp:566
 msgid "No host specified."
 msgstr "Chưa ghi rõ máy"
 
-#: ../kioslave/http/http.cpp:1428
+#: ../kioslave/http/http.cpp:1441
 #, fuzzy
 #| msgid "The specified resource may not exist."
 msgid "The resource cannot be deleted."
 msgstr "Có lẽ tài nguyên đã ghi rõ không tồn tại."
 
-#: ../kioslave/http/http.cpp:1549
+#: ../kioslave/http/http.cpp:1562
 msgid "Otherwise, the request would have succeeded."
 msgstr "Không thì yêu cầu thành công."
 
-#: ../kioslave/http/http.cpp:1553
+#: ../kioslave/http/http.cpp:1566
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "lấy giá trị tính chất"
 
-#: ../kioslave/http/http.cpp:1556
+#: ../kioslave/http/http.cpp:1569
 msgctxt "request type"
 msgid "set property values"
 msgstr "đặt giá trị tính chất"
 
-#: ../kioslave/http/http.cpp:1559
+#: ../kioslave/http/http.cpp:1572
 #, fuzzy
 #| msgid "create the requested folder"
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "tạo thư mục đã yêu cầu"
 
-#: ../kioslave/http/http.cpp:1562
+#: ../kioslave/http/http.cpp:1575
 #, fuzzy
 #| msgid "copy the specified file or folder"
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "chép tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1565
+#: ../kioslave/http/http.cpp:1578
 #, fuzzy
 #| msgid "move the specified file or folder"
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "chuyển tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1568
+#: ../kioslave/http/http.cpp:1581
 #, fuzzy
 #| msgid "search in the specified folder"
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "tìm kiếm qua thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1571
+#: ../kioslave/http/http.cpp:1584
 #, fuzzy
 #| msgid "lock the specified file or folder"
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "khoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1574
+#: ../kioslave/http/http.cpp:1587
 #, fuzzy
 #| msgid "unlock the specified file or folder"
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "bỏ khoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1577
+#: ../kioslave/http/http.cpp:1590
 #, fuzzy
 #| msgid "delete the specified file or folder"
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "xoá tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1580
+#: ../kioslave/http/http.cpp:1593
 #, fuzzy
 #| msgid "query the server's capabilities"
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "truy vấn khả năng của máy phục vụ"
 
-#: ../kioslave/http/http.cpp:1583
+#: ../kioslave/http/http.cpp:1596
 #, fuzzy
 #| msgid "retrieve the contents of the specified file or folder"
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "lấy nội dung của tập tin hay thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1586
+#: ../kioslave/http/http.cpp:1599
 #, fuzzy
 #| msgid "search in the specified folder"
 msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "tìm kiếm qua thư mục đã chọn"
 
-#: ../kioslave/http/http.cpp:1598
+#: ../kioslave/http/http.cpp:1611
 #, fuzzy, kde-format
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Gặp lỗi lạ (%1) khi cố %2."
 
-#: ../kioslave/http/http.cpp:1606
+#: ../kioslave/http/http.cpp:1619
 msgid "The server does not support the WebDAV protocol."
 msgstr "Máy phục vụ này không hỗ trợ giao thức WebDAV."
 
-#: ../kioslave/http/http.cpp:1648
+#: ../kioslave/http/http.cpp:1661
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while attempting to %1, %2. A summary of the reasons is "
@@ -5832,18 +5853,18 @@ msgid ""
 "below."
 msgstr "Gặp lỗi khi cố %1, %2. Bên dưới có lời tóm tắt các lý do.<ul>"
 
-#: ../kioslave/http/http.cpp:1662 ../kioslave/http/http.cpp:1767
+#: ../kioslave/http/http.cpp:1675 ../kioslave/http/http.cpp:1780
 #, fuzzy, kde-format
 #| msgid "Access was denied while attempting to %1."
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "Truy cập bị từ chối trong khi cố %1."
 
-#: ../kioslave/http/http.cpp:1669
+#: ../kioslave/http/http.cpp:1682
 msgid "The specified folder already exists."
 msgstr "Thư mục đã ghi rõ tồn tại."
 
-#: ../kioslave/http/http.cpp:1675 ../kioslave/http/http.cpp:1772
+#: ../kioslave/http/http.cpp:1688 ../kioslave/http/http.cpp:1785
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
@@ -5851,7 +5872,7 @@ msgstr ""
 "Không thể tạo một tài nguyên tại đích, cho đến khi một hay nhiều tập hợp "
 "trung cấp (thư mục) đã được tạo."
 
-#: ../kioslave/http/http.cpp:1684
+#: ../kioslave/http/http.cpp:1697
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -5862,27 +5883,27 @@ msgstr ""
 "kê trong yếu tố XML tính chất / ứng xử, hoặc bạn đã cố ghi đè lên tập tin "
 "trong khi yêu cầu tập tin không bị ghi đè. %1"
 
-#: ../kioslave/http/http.cpp:1694
+#: ../kioslave/http/http.cpp:1707
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "Không thể cung cấp khoá đã yêu cầu. %1"
 
-#: ../kioslave/http/http.cpp:1700
+#: ../kioslave/http/http.cpp:1713
 msgid "The server does not support the request type of the body."
 msgstr "Máy phục vụ không hỗ trợ kiểu yêu cầu của thân."
 
-#: ../kioslave/http/http.cpp:1705 ../kioslave/http/http.cpp:1779
+#: ../kioslave/http/http.cpp:1718 ../kioslave/http/http.cpp:1792
 #, fuzzy, kde-format
 #| msgid "Unable to %1 because the resource is locked."
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "Không thể %1, vì tài nguyên bị khoá."
 
-#: ../kioslave/http/http.cpp:1709
+#: ../kioslave/http/http.cpp:1722
 msgid "This action was prevented by another error."
 msgstr "Hành động này bị lỗi khác ngăn cản."
 
-#: ../kioslave/http/http.cpp:1716 ../kioslave/http/http.cpp:1784
+#: ../kioslave/http/http.cpp:1729 ../kioslave/http/http.cpp:1797
 #, fuzzy, kde-format
 #| msgid ""
 #| "Unable to %1 because the destination server refuses to accept the file or "
@@ -5894,7 +5915,7 @@ msgid ""
 msgstr ""
 "Không thể %1 vì máy phục vụ đích từ chối chấp nhận tập tin hay thư mục."
 
-#: ../kioslave/http/http.cpp:1723 ../kioslave/http/http.cpp:1790
+#: ../kioslave/http/http.cpp:1736 ../kioslave/http/http.cpp:1803
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
@@ -5902,84 +5923,39 @@ msgstr ""
 "Tài nguyên đích không có đủ sức chứa để ghi lưu tình trạng của tài nguyên "
 "sau khi thực hiện phương pháp này."
 
-#: ../kioslave/http/http.cpp:1745
+#: ../kioslave/http/http.cpp:1758
 #, fuzzy, kde-format
 #| msgid "upload %1"
 msgctxt "request type"
 msgid "upload %1"
 msgstr "tải lên %1"
 
-#: ../kioslave/http/http.cpp:1756
+#: ../kioslave/http/http.cpp:1769
 #, fuzzy, kde-format
 #| msgid "An unexpected error (%1) occurred while attempting to %2."
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "Gặp lỗi lạ (%1) khi cố %2."
 
-#: ../kioslave/http/http.cpp:2507
+#: ../kioslave/http/http.cpp:2527
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "Đã liên lạc %1. Đang chờ trả lời..."
 
-#: ../kioslave/http/http.cpp:2869
+#: ../kioslave/http/http.cpp:2885
 msgid "Server processing request, please wait..."
 msgstr "Máy phục vụ đang xử lý yêu cầu, hãy đợi..."
 
-#: ../kioslave/http/http.cpp:3253
-msgid "Authentication Failed."
-msgstr "Xác thực thất bại."
-
-#: ../kioslave/http/http.cpp:3254 ../kioslave/http/http.cpp:4937
-msgid "Proxy Authentication Failed."
-msgstr "Xác thực ủy nhiệm thất bại."
-
-#: ../kioslave/http/http.cpp:3289
-#, fuzzy
-#| msgid "Authorization Dialog"
-msgid "Authorization failed."
-msgstr "Hộp thoại xác thực"
-
-#: ../kioslave/http/http.cpp:3305
-#, fuzzy
-#| msgid "Authorization Dialog"
-msgid "Unknown Authorization method."
-msgstr "Hộp thoại xác thực"
-
-#: ../kioslave/http/http.cpp:3690
-msgid "Requesting data to send"
-msgstr "Đang yêu cầu dữ liệu cần gởi..."
-
-#: ../kioslave/http/http.cpp:3722
-#, kde-format
-msgid "Sending data to %1"
-msgstr "Đang gởi dữ liệu cho %1..."
-
-#: ../kioslave/http/http.cpp:4139
-#, kde-format
-msgid "Retrieving %1 from %2..."
-msgstr "Đang lấy %1 từ %2..."
-
-#: ../kioslave/http/http.cpp:4145
-#, kde-format
-msgid "Retrieving from %1..."
-msgstr "Đang lấy từ %1..."
-
-#: ../kioslave/http/http.cpp:4862 ../kioslave/ftp/ftp.cpp:477
+#: ../kioslave/http/http.cpp:3230 ../kioslave/ftp/ftp.cpp:477
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu để truy cập nơi Mạng này."
 
-#: ../kioslave/http/http.cpp:4869 ../kioslave/ftp/ftp.cpp:479
+#: ../kioslave/http/http.cpp:3232 ../kioslave/ftp/ftp.cpp:479
 msgid "Site:"
 msgstr "Nơi:"
 
-#: ../kioslave/http/http.cpp:4870 ../kioslave/http/http.cpp:4886
-#: ../kioslave/http/http.cpp:4936
-#, kde-format
-msgid "<b>%1</b> at <b>%2</b>"
-msgstr "<b>%1</b> tại <b>%2</b>"
-
-#: ../kioslave/http/http.cpp:4877 ../kioslave/http/http.cpp:4931
+#: ../kioslave/http/http.cpp:3242 ../kioslave/http/http.cpp:4996
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5987,9 +5963,53 @@ msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu cho máy phục vụ ủy nhiệm "
 "được liệt kê dưới này, trước khi bạn có quyền truy cập nơi Mạng nào."
 
-#: ../kioslave/http/http.cpp:4885 ../kioslave/http/http.cpp:4935
+#: ../kioslave/http/http.cpp:3245 ../kioslave/http/http.cpp:5000
 msgid "Proxy:"
 msgstr "Ủy nhiệm:"
+
+#: ../kioslave/http/http.cpp:3301 ../kioslave/http/http.cpp:5001
+#, kde-format
+msgid "<b>%1</b> at <b>%2</b>"
+msgstr "<b>%1</b> tại <b>%2</b>"
+
+#: ../kioslave/http/http.cpp:3314
+msgid "Authentication Failed."
+msgstr "Xác thực thất bại."
+
+#: ../kioslave/http/http.cpp:3316 ../kioslave/http/http.cpp:5002
+msgid "Proxy Authentication Failed."
+msgstr "Xác thực ủy nhiệm thất bại."
+
+#: ../kioslave/http/http.cpp:3353
+#, fuzzy
+#| msgid "Authorization Dialog"
+msgid "Authorization failed."
+msgstr "Hộp thoại xác thực"
+
+#: ../kioslave/http/http.cpp:3370
+#, fuzzy
+#| msgid "Authorization Dialog"
+msgid "Unknown Authorization method."
+msgstr "Hộp thoại xác thực"
+
+#: ../kioslave/http/http.cpp:3750
+msgid "Requesting data to send"
+msgstr "Đang yêu cầu dữ liệu cần gởi..."
+
+#: ../kioslave/http/http.cpp:3782
+#, kde-format
+msgid "Sending data to %1"
+msgstr "Đang gởi dữ liệu cho %1..."
+
+#: ../kioslave/http/http.cpp:4199
+#, kde-format
+msgid "Retrieving %1 from %2..."
+msgstr "Đang lấy %1 từ %2..."
+
+#: ../kioslave/http/http.cpp:4205
+#, kde-format
+msgid "Retrieving from %1..."
+msgstr "Đang lấy từ %1..."
 
 #: ../kioslave/http/http_cache_cleaner.cpp:728
 #: ../kioslave/http/http_cache_cleaner.cpp:729
@@ -6978,6 +6998,20 @@ msgstr "Gặp lỗi khi truy cập « %1 »."
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "Hiện thư mục ẩn"
+
+#, fuzzy
+#~| msgid "%1 (%2)"
+#~ msgid "size %1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgid "created on %1"
+#~ msgstr "tạo vào %1"
+
+#~ msgid "modified on %1"
+#~ msgstr "sửa đổi vào %1"
+
+#~ msgid "The source file is '%1'"
+#~ msgstr "Tập tin nguồn là « %1 »"
 
 #, fuzzy
 #~| msgid "Move to Trash"

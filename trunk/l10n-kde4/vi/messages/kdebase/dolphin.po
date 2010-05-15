@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-14 04:45+0200\n"
+"POT-Creation-Date: 2010-05-15 04:51+0200\n"
 "PO-Revision-Date: 2007-06-25 16:30+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -42,7 +42,7 @@ msgstr "Nhấn để thêm chú thích..."
 #: panels/information/informationpanelcontent.cpp:300
 #: settings/behaviorsettingspage.cpp:198
 msgctxt "@label::textbox"
-msgid "Configure which data should be shown in the tooltip."
+msgid "Select which data should be shown in the tooltip."
 msgstr ""
 
 #: panels/information/phononwidget.cpp:139
@@ -138,7 +138,7 @@ msgstr "Mọi thư mục"
 
 #: settings/servicessettingspage.cpp:55
 msgctxt "@label:textbox"
-msgid "Configure which services should be shown in the context menu."
+msgid "Select which services should be shown in the context menu."
 msgstr ""
 
 #: settings/servicessettingspage.cpp:65
@@ -522,54 +522,17 @@ msgctxt "@info:progress"
 msgid "Folders: %1"
 msgstr "Thư mục: %1"
 
-#: settings/additionalinfodialog.cpp:38
+#: settings/additionalinfodialog.cpp:35
 #, fuzzy
 #| msgid "Additional Information"
 msgctxt "@title:window"
 msgid "Additional Information"
 msgstr "Thông tin thêm"
 
-#: settings/additionalinfodialog.cpp:44
-#, fuzzy
-#| msgid "Size"
-msgctxt "@option:check Additional Information"
-msgid "Size"
-msgstr "Cỡ"
-
 #: settings/additionalinfodialog.cpp:45
-#, fuzzy
-#| msgid "Date"
-msgctxt "@option:check Additional Information"
-msgid "Date"
-msgstr "Ngày"
-
-#: settings/additionalinfodialog.cpp:46
-#, fuzzy
-#| msgid "Permissions"
-msgctxt "@option:check Additional Information"
-msgid "Permissions"
-msgstr "Quyền hạn"
-
-#: settings/additionalinfodialog.cpp:47
-#, fuzzy
-#| msgid "Owner"
-msgctxt "@option:check Additional Information"
-msgid "Owner"
-msgstr "Sở hữu"
-
-#: settings/additionalinfodialog.cpp:48
-#, fuzzy
-#| msgid "Group"
-msgctxt "@option:check Additional Information"
-msgid "Group"
-msgstr "Nhóm"
-
-#: settings/additionalinfodialog.cpp:49
-#, fuzzy
-#| msgid "Type"
-msgctxt "@option:check Additional Information"
-msgid "Type"
-msgstr "Kiểu"
+msgctxt "@label"
+msgid "Select which additional information should be shown."
+msgstr ""
 
 #: settings/viewpropertiesdialog.cpp:78
 #, fuzzy
@@ -914,7 +877,7 @@ msgstr ""
 
 #: settings/filemetadataconfigurationdialog.cpp:39
 msgctxt "@label::textbox"
-msgid "Configure which data should be shown"
+msgid "Select which data should be shown"
 msgstr ""
 
 #: search/searchcriterionvalue.cpp:130
@@ -1506,7 +1469,7 @@ msgctxt "@action:inmenu View"
 msgid "Sort By"
 msgstr "Sắp xếp"
 
-#: dolphinviewactionhandler.cpp:187 dolphinviewactionhandler.cpp:221
+#: dolphinviewactionhandler.cpp:187 dolphinviewactionhandler.cpp:220
 #, fuzzy
 #| msgid "Additional Information"
 msgctxt "@action:inmenu View"
@@ -1534,14 +1497,14 @@ msgctxt "@action:inmenu View"
 msgid "Adjust View Properties..."
 msgstr "Chỉnh thuộc tính xem..."
 
-#: dolphinviewactionhandler.cpp:209
+#: dolphinviewactionhandler.cpp:208
 #, fuzzy
 #| msgid "Find File..."
 msgctxt "@action:inmenu Tools"
 msgid "Find File..."
 msgstr "Tìm tập tin..."
 
-#: dolphinviewactionhandler.cpp:246
+#: dolphinviewactionhandler.cpp:245
 #, fuzzy
 #| msgid "By Name"
 msgctxt "@action:inmenu Sort By"
@@ -2286,21 +2249,21 @@ msgctxt "@info:status files (size)"
 msgid "%1 (%2)"
 msgstr "%1 tập tin đã chọn (%2)"
 
-#: dolphinview.cpp:1093
+#: dolphinview.cpp:1094
 #, fuzzy
 #| msgid "Delete operation completed."
 msgctxt "@info:status"
 msgid "Delete operation completed."
 msgstr "Thao tác xoá hoàn tất."
 
-#: dolphinview.cpp:1178
+#: dolphinview.cpp:1179
 #, fuzzy
 #| msgid "The location is empty."
 msgctxt "@info:status"
 msgid "The location is empty."
 msgstr "Địa điểm rỗng."
 
-#: dolphinview.cpp:1180
+#: dolphinview.cpp:1181
 #, fuzzy, kde-format
 #| msgid "The location '%1' is invalid."
 msgctxt "@info:status"
@@ -2868,61 +2831,97 @@ msgstr ""
 msgid "Criteria"
 msgstr ""
 
-#: additionalinfomanager.cpp:82
+#: additionalinfoaccessor.cpp:99
 #, fuzzy
 #| msgid "Size"
 msgctxt "@label"
 msgid "Size"
 msgstr "Cỡ"
 
-#: additionalinfomanager.cpp:83
+#: additionalinfoaccessor.cpp:100
 #, fuzzy
 #| msgid "Date"
 msgctxt "@label"
 msgid "Date"
 msgstr "Ngày"
 
-#: additionalinfomanager.cpp:84
+#: additionalinfoaccessor.cpp:101
 #, fuzzy
 #| msgid "Permissions"
 msgctxt "@label"
 msgid "Permissions"
 msgstr "Quyền hạn"
 
-#: additionalinfomanager.cpp:85
+#: additionalinfoaccessor.cpp:102
 #, fuzzy
 #| msgid "Owner"
 msgctxt "@label"
 msgid "Owner"
 msgstr "Sở hữu"
 
-#: additionalinfomanager.cpp:86
+#: additionalinfoaccessor.cpp:103
 #, fuzzy
 #| msgid "Group"
 msgctxt "@label"
 msgid "Group"
 msgstr "Nhóm"
 
-#: additionalinfomanager.cpp:87
+#: additionalinfoaccessor.cpp:104
 #, fuzzy
 #| msgid "Type"
 msgctxt "@label"
 msgid "Type"
 msgstr "Kiểu"
 
-#: additionalinfomanager.cpp:88
+#: additionalinfoaccessor.cpp:105
 #, fuzzy
 #| msgid "Documentation"
 msgctxt "@label"
 msgid "Destination"
 msgstr "Tài liệu"
 
-#: additionalinfomanager.cpp:89
+#: additionalinfoaccessor.cpp:106
 #, fuzzy
 #| msgid "Paste"
 msgctxt "@label"
 msgid "Path"
 msgstr "Dán"
+
+#, fuzzy
+#~| msgid "Size"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Size"
+#~ msgstr "Cỡ"
+
+#, fuzzy
+#~| msgid "Date"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Date"
+#~ msgstr "Ngày"
+
+#, fuzzy
+#~| msgid "Permissions"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Permissions"
+#~ msgstr "Quyền hạn"
+
+#, fuzzy
+#~| msgid "Owner"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Owner"
+#~ msgstr "Sở hữu"
+
+#, fuzzy
+#~| msgid "Group"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Group"
+#~ msgstr "Nhóm"
+
+#, fuzzy
+#~| msgid "Type"
+#~ msgctxt "@option:check Additional Information"
+#~ msgid "Type"
+#~ msgstr "Kiểu"
 
 #, fuzzy
 #~| msgid "Reload"

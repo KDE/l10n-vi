@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-07-16 05:07+0200\n"
+"POT-Creation-Date: 2010-08-24 06:08+0200\n"
 "PO-Revision-Date: 2006-04-15 22:24+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -164,36 +164,42 @@ msgctxt "@info:whatsthis"
 msgid "A very simple LGPL C++ header file"
 msgstr ""
 
+#. i18n: file: plugins/filetree/ui.rc:4
+#. i18n: ectx: ToolBar (katefiletreeplugin)
+#: rc.cpp:59
+msgid "Kate File Tree"
+msgstr ""
+
 #. i18n: file: data/kateui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:59
+#: rc.cpp:62
 #, fuzzy
 msgid "&File"
 msgstr "Tập tin:"
 
 #. i18n: file: data/kateui.rc:35
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:62
+#: rc.cpp:65
 #, fuzzy
 msgid "&Edit"
 msgstr "&Soạn..."
 
 #. i18n: file: data/kateui.rc:46
 #. i18n: ectx: Menu (go)
-#: rc.cpp:65
+#: rc.cpp:68
 msgid "&Go"
 msgstr ""
 
 #. i18n: file: data/kateui.rc:55
 #. i18n: ectx: Menu (view)
-#: rc.cpp:68
+#: rc.cpp:71
 #, fuzzy
 msgid "&View"
 msgstr "&Mới"
 
 #. i18n: file: data/kateui.rc:58
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:71
+#: rc.cpp:74
 #, fuzzy
 #| msgid "Split Ve&rtical"
 msgid "Split View"
@@ -201,33 +207,33 @@ msgstr "Chia &dọc"
 
 #. i18n: file: data/kateui.rc:71
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:74
+#: rc.cpp:77
 #, fuzzy
 msgid "&Tools"
 msgstr "Thanh công cụ"
 
 #. i18n: file: data/kateui.rc:79
 #. i18n: ectx: Menu (sessions)
-#: rc.cpp:77
+#: rc.cpp:80
 msgid "Sess&ions"
 msgstr "Phiên chạ&y"
 
 #. i18n: file: data/kateui.rc:91
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:80
+#: rc.cpp:83
 #, fuzzy
 msgid "&Settings"
 msgstr "Đang khởi động"
 
 #. i18n: file: data/kateui.rc:95
 #. i18n: ectx: Menu (help)
-#: rc.cpp:83
+#: rc.cpp:86
 msgid "&Help"
 msgstr ""
 
 #. i18n: file: data/kateui.rc:100
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:86
+#: rc.cpp:89
 #, fuzzy
 msgid "Main Toolbar"
 msgstr "Thanh công cụ"
@@ -1160,13 +1166,14 @@ msgstr ""
 "Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
 "được nạp, và sẽ được nạp khi Kate khởi động lần sau."
 
-#: app/katefilelist.cpp:55
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:46
 #, fuzzy
 #| msgid "Clos&e All"
 msgid "Close"
 msgstr "Đón&g tất cả"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
+#: plugins/filetree/katefiletree.cpp:48
 msgid "Close the current document."
 msgstr "Đóng tài liệu hiện thời."
 
@@ -1758,6 +1765,21 @@ msgstr " CHÈN "
 #| msgid " BLK "
 msgid " BLOCK "
 msgstr " BLK "
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:92
+#, fuzzy
+#| msgid "Document Name"
+msgid "Document Tree"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletreeplugin.cpp:43
+msgid "Show open documents in a tree"
+msgstr ""
+
+#: plugins/filetree/katefiletreeplugin.cpp:130
+msgid "&Show Active"
+msgstr ""
 
 #, fuzzy
 #~ msgid "Tabify Plugin"

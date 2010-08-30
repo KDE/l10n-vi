@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:11+0200\n"
+"POT-Creation-Date: 2010-08-30 05:27+0200\n"
 "PO-Revision-Date: 2008-01-19 20:08+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -221,7 +221,7 @@ msgstr "Cỡ trang và Lề"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:51
 #. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:42
+#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:40
 msgid "Columns"
 msgstr "Các cột"
 
@@ -970,6 +970,12 @@ msgstr "Kết nối Các khung Văn bản"
 msgid "Geometry"
 msgstr "Hình học"
 
+#: part/dialogs/KWPageSettingsDialog.cpp:92
+#, fuzzy
+#| msgid "Page Properties"
+msgid "Change Page Properties"
+msgstr "Thuộc tính của Trang"
+
 #: part/dialogs/KWSelectBookmarkDialog.cpp:79
 #, fuzzy
 msgid "Rename Bookmark"
@@ -1015,10 +1021,6 @@ msgstr "Tạo Khung"
 msgid "Create custom outline"
 msgstr "Tạo đường nét riêng"
 
-#: part/commands/KWPagePropertiesCommand.cpp:36
-msgid "Page Properties"
-msgstr "Thuộc tính của Trang"
-
 #: part/commands/KWPageRemoveCommand.cpp:32
 msgid "Remove Page"
 msgstr "Bỏ Trang"
@@ -1028,30 +1030,40 @@ msgstr "Bỏ Trang"
 msgid "Clip Frame"
 msgstr "Xoá(delete)"
 
-#: part/frames/KWTextFrameSet.cpp:88
+#: part/commands/KWChangePageStyleCommand.cpp:25
+#, fuzzy
+msgid "Set Page Style"
+msgstr "&Khung"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Chèn Trang"
+
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+msgid "Page Properties"
+msgstr "Thuộc tính của Trang"
+
+#: part/frames/KWTextFrameSet.cpp:90
 msgid "Odd Pages Header"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:91
+#: part/frames/KWTextFrameSet.cpp:93
 msgid "Even Pages Header"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:94
+#: part/frames/KWTextFrameSet.cpp:96
 msgid "Odd Pages Footer"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:97
+#: part/frames/KWTextFrameSet.cpp:99
 msgid "Even Pages Footer"
 msgstr ""
 
-#: part/frames/KWTextFrameSet.cpp:100
+#: part/frames/KWTextFrameSet.cpp:102
 msgid "Main text"
 msgstr "Văn bản chính"
-
-#: part/frames/KWTextFrameSet.cpp:103
-#, fuzzy
-msgid "Page Background"
-msgstr "Màu nền"
 
 #: part/KWStatusBar.cpp:39
 msgid "Modified"
@@ -1632,6 +1644,10 @@ msgstr "Không thể tìm thấy thành phần văn bản cần thiết, KWord s
 #: part/KWDocument.cpp:835
 msgid "Installation Error"
 msgstr "Lỗi Cài đặt"
+
+#, fuzzy
+#~ msgid "Page Background"
+#~ msgstr "Màu nền"
 
 #, fuzzy
 #~| msgid "Format"

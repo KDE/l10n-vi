@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-08 06:59+0200\n"
+"POT-Creation-Date: 2010-09-13 05:54+0200\n"
 "PO-Revision-Date: 2006-04-15 22:24+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -1166,14 +1166,14 @@ msgstr ""
 "Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
 "được nạp, và sẽ được nạp khi Kate khởi động lần sau."
 
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:50
+#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
 #, fuzzy
 #| msgid "Clos&e All"
 msgid "Close"
 msgstr "Đón&g tất cả"
 
 #: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:52
+#: plugins/filetree/katefiletree.cpp:53
 msgid "Close the current document."
 msgstr "Đóng tài liệu hiện thời."
 
@@ -1214,10 +1214,14 @@ msgid "Sort &By"
 msgstr "Sắp &xếp theo"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:307
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
 msgid "Opening Order"
 msgstr "Thứ tự mở"
 
 #: app/katefilelist.cpp:78 app/katefilelist.cpp:308
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
 msgid "Document Name"
 msgstr "Tên tài liệu"
 
@@ -1229,27 +1233,27 @@ msgstr "URL"
 msgid "Custom"
 msgstr ""
 
-#: app/katefilelist.cpp:281
+#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
 msgid "Background Shading"
 msgstr "Bóng nền"
 
-#: app/katefilelist.cpp:288
+#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
 msgid "&Viewed documents' shade:"
 msgstr "&Bóng các tài liệu đã xem:"
 
-#: app/katefilelist.cpp:294
+#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
 msgid "&Modified documents' shade:"
 msgstr "&Bóng các tài liệu đã sửa:"
 
-#: app/katefilelist.cpp:302
+#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
 msgid "&Sort by:"
 msgstr "&Sắp xếp theo:"
 
-#: app/katefilelist.cpp:309
+#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
 msgid "Url"
 msgstr ""
 
-#: app/katefilelist.cpp:315
+#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
 msgid ""
 "When background shading is enabled, documents that have been viewed or "
 "edited within the current session will have a shaded background. The most "
@@ -1258,11 +1262,11 @@ msgstr ""
 "Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
 "hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
 
-#: app/katefilelist.cpp:319
+#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
 msgid "Set the color for shading viewed documents."
 msgstr "Chọn màu cho bóng của những tài liệu đã xem."
 
-#: app/katefilelist.cpp:321
+#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
 msgid ""
 "Set the color for modified documents. This color is blended into the color "
 "for viewed files. The most recently edited documents get most of this color."
@@ -1766,20 +1770,85 @@ msgstr " CHÈN "
 msgid " BLOCK "
 msgstr " BLK "
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
-#: plugins/filetree/katefiletreeplugin.cpp:92
+#: plugins/filetree/katefiletreeplugin.cpp:46
+#: plugins/filetree/katefiletreeplugin.cpp:111
 #, fuzzy
 #| msgid "Document Name"
 msgid "Document Tree"
 msgstr "Tên tài liệu"
 
-#: plugins/filetree/katefiletreeplugin.cpp:43
+#: plugins/filetree/katefiletreeplugin.cpp:46
 msgid "Show open documents in a tree"
 msgstr ""
 
-#: plugins/filetree/katefiletreeplugin.cpp:132
+#: plugins/filetree/katefiletreeplugin.cpp:154
 msgid "&Show Active"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:58
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:62
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:68
+#, fuzzy
+#| msgid "Document Name"
+msgid "Sort by Document Name"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:72
+#, fuzzy
+#| msgid "Document List"
+msgid "Document Path"
+msgstr "Danh sách tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:73
+#, fuzzy
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Hiển thị mọi tài liệu >>"
+
+#: plugins/filetree/katefiletree.cpp:77
+#, fuzzy
+#| msgid "Opening Order"
+msgid "Sort by Opening Order"
+msgstr "Thứ tự mở"
+
+#: plugins/filetree/katefiletree.cpp:197
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:201
+#, fuzzy
+msgid "Sort By"
+msgstr "Sắp &xếp theo"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:82
+#, fuzzy
+msgid "&View Mode:"
+msgstr "&Mới"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+#, fuzzy
+msgid "Tree View"
+msgstr "Ô xem trước"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:88
+#, fuzzy
+#| msgid "Split Ve&rtical"
+msgid "List View"
+msgstr "Chia &dọc"
 
 #, fuzzy
 #~ msgid "Tabify Plugin"
@@ -2306,9 +2375,6 @@ msgstr ""
 #~ msgid "Email Files"
 #~ msgstr "Gửi tập tin qua thư"
 
-#~ msgid "&Show All Documents >>"
-#~ msgstr "&Hiển thị mọi tài liệu >>"
-
 #~ msgid ""
 #~ "<p>Press <strong>Mail...</strong> to email the current document.<p>To "
 #~ "select more documents to send, press <strong>Show All Documents&nbsp;&gt;"
@@ -2344,16 +2410,8 @@ msgstr ""
 #~ msgid "Selection"
 #~ msgstr "Hành động đã &chọn:"
 
-#, fuzzy
-#~ msgid "Preview"
-#~ msgstr "Ô xem trước"
-
 #~ msgid "&Appearance"
 #~ msgstr "Diện m&ạo"
-
-#, fuzzy
-#~ msgid "Sort By"
-#~ msgstr "Sắp &xếp theo"
 
 #, fuzzy
 #~ msgid "&follow current tab"

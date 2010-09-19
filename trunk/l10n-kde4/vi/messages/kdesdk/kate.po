@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-18 06:05+0200\n"
+"POT-Creation-Date: 2010-09-19 06:07+0200\n"
 "PO-Revision-Date: 2006-04-15 22:24+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -528,11 +528,11 @@ msgstr "Đóng tài liệu"
 msgid "Save As"
 msgstr "&Lưu như..."
 
-#: app/katedocmanager.cpp:504 app/katemainwindow.cpp:482
+#: app/katedocmanager.cpp:504 app/katemainwindow.cpp:435
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "Mở tập tin mới khi đóng Kate, không đóng."
 
-#: app/katedocmanager.cpp:505 app/katemainwindow.cpp:483
+#: app/katedocmanager.cpp:505 app/katemainwindow.cpp:436
 msgid "Closing Aborted"
 msgstr "Dừng đóng"
 
@@ -548,19 +548,19 @@ msgstr "Mở lại tập tin từ phiên chạy cuối..."
 msgid "Errors/Warnings while opening documents"
 msgstr ""
 
-#: app/kateappcommands.cpp:76
+#: app/kateappcommands.cpp:78
 #, fuzzy
 #| msgid "Documents Modified on Disk"
 msgid "All documents written to disk"
 msgstr "Tài liệu đã thay đổi trên đĩa"
 
-#: app/kateappcommands.cpp:79
+#: app/kateappcommands.cpp:81
 #, fuzzy
 #| msgid "Documents Modified on Disk"
 msgid "Document written to disk"
 msgstr "Tài liệu đã thay đổi trên đĩa"
 
-#: app/kateappcommands.cpp:144
+#: app/kateappcommands.cpp:150
 msgid ""
 "<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
 "b></tt></p><p>Writes the current document(s) to disk. It can be called in "
@@ -569,7 +569,7 @@ msgid ""
 "associated with the document, a file dialog will be shown.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:155
+#: app/kateappcommands.cpp:161
 msgid ""
 "<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
 "b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
@@ -583,7 +583,7 @@ msgid ""
 "disk, a file dialog will be shown.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:170
+#: app/kateappcommands.cpp:176
 msgid ""
 "<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
 "p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
@@ -595,7 +595,7 @@ msgid ""
 "command only writes the document if it is modified.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:184
+#: app/kateappcommands.cpp:190
 msgid ""
 "<p><b>bp/bn &mdash; switch to previous/next document</b></p><p>Usage: "
 "<tt><b>bp/bn</b></tt></p><p>Goes to <b>p</b>revious or <b>n</b>ext document "
@@ -606,7 +606,7 @@ msgid ""
 "end up at the first and vice versa.</p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:197
+#: app/kateappcommands.cpp:203
 msgid ""
 "<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
 "<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
@@ -616,7 +616,7 @@ msgid ""
 "document.<br /></p>"
 msgstr ""
 
-#: app/kateappcommands.cpp:207
+#: app/kateappcommands.cpp:213
 msgid ""
 "<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
 "b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
@@ -1018,15 +1018,15 @@ msgstr ""
 msgid "Document to open"
 msgstr "Tài liệu sẽ mở"
 
-#: app/kateconfigdialog.cpp:59
+#: app/kateconfigdialog.cpp:58
 msgid "Configure"
 msgstr ""
 
-#: app/kateconfigdialog.cpp:70
+#: app/kateconfigdialog.cpp:69
 msgid "Application"
 msgstr "Ứng dụng"
 
-#: app/kateconfigdialog.cpp:72
+#: app/kateconfigdialog.cpp:71
 #, fuzzy
 msgid "Application Options"
 msgstr "Ứng dụng"
@@ -1122,33 +1122,25 @@ msgstr "&Nạp phiên chạy sử dụng cuối"
 msgid "&Manually choose a session"
 msgstr "Tự &chọn một phiên chạy"
 
-#: app/kateconfigdialog.cpp:199
-msgid "Document List"
-msgstr "Danh sách tài liệu"
-
-#: app/kateconfigdialog.cpp:200
-msgid "Document List Settings"
-msgstr "Thiết lập danh sách tài liệu"
-
-#: app/kateconfigdialog.cpp:211
+#: app/kateconfigdialog.cpp:203
 msgid "Plugins"
 msgstr "Bổ sung"
 
-#: app/kateconfigdialog.cpp:212
+#: app/kateconfigdialog.cpp:204
 msgid "Plugin Manager"
 msgstr "Trình quản lí bổ sung"
 
-#: app/kateconfigdialog.cpp:225
+#: app/kateconfigdialog.cpp:217
 #, fuzzy
 msgid "Editor Component"
 msgstr "Chọn thành phần soạn thảo"
 
-#: app/kateconfigdialog.cpp:227
+#: app/kateconfigdialog.cpp:219
 #, fuzzy
 msgid "Editor Component Options"
 msgstr "Chọn thành phần soạn thảo"
 
-#: app/kateconfigdialog.cpp:412
+#: app/kateconfigdialog.cpp:399
 #, fuzzy
 #| msgid " day(s)"
 msgctxt "The suffix of 'Delete unused meta-information after'"
@@ -1156,129 +1148,21 @@ msgid " day"
 msgid_plural " days"
 msgstr[0] " ngày"
 
-#: app/kateconfigplugindialogpage.cpp:69
+#: app/kateconfigplugindialogpage.cpp:71
 msgid "Name"
 msgstr "Tên"
 
-#: app/kateconfigplugindialogpage.cpp:69
+#: app/kateconfigplugindialogpage.cpp:71
 msgid "Comment"
 msgstr "Chú thích"
 
-#: app/kateconfigplugindialogpage.cpp:71
+#: app/kateconfigplugindialogpage.cpp:73
 msgid ""
 "Here you can see all available Kate plugins. Those with a check mark are "
 "loaded, and will be loaded again the next time Kate is started."
 msgstr ""
 "Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
 "được nạp, và sẽ được nạp khi Kate khởi động lần sau."
-
-#: app/katefilelist.cpp:55 plugins/filetree/katefiletree.cpp:51
-#, fuzzy
-#| msgid "Clos&e All"
-msgid "Close"
-msgstr "Đón&g tất cả"
-
-#: app/katefilelist.cpp:58 app/katemainwindow.cpp:327
-#: plugins/filetree/katefiletree.cpp:53
-msgid "Close the current document."
-msgstr "Đóng tài liệu hiện thời."
-
-#: app/katefilelist.cpp:61 app/katemainwindow.cpp:330
-#, fuzzy
-msgid "Close Other"
-msgstr "Đóng thẻ hiện thời"
-
-#: app/katefilelist.cpp:63 app/katemainwindow.cpp:332
-#, fuzzy
-msgid "Close other open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katefilelist.cpp:66
-#, fuzzy
-#| msgid "&Save Selected"
-msgid "Close Selected"
-msgstr "&Lưu đã chọn"
-
-#: app/katefilelist.cpp:68
-#, fuzzy
-msgid "Close selected open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katefilelist.cpp:71
-#, fuzzy
-#| msgid "&Save Selected"
-msgid "Save Selected"
-msgstr "&Lưu đã chọn"
-
-#: app/katefilelist.cpp:73
-#, fuzzy
-msgid "Save selected open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katefilelist.cpp:75
-msgid "Sort &By"
-msgstr "Sắp &xếp theo"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:307
-#: plugins/filetree/katefiletree.cpp:76
-#: plugins/filetree/katefiletreeconfigpage.cpp:74
-msgid "Opening Order"
-msgstr "Thứ tự mở"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:308
-#: plugins/filetree/katefiletree.cpp:67
-#: plugins/filetree/katefiletreeconfigpage.cpp:75
-msgid "Document Name"
-msgstr "Tên tài liệu"
-
-#: app/katefilelist.cpp:78
-msgid "URL"
-msgstr "URL"
-
-#: app/katefilelist.cpp:78 app/katefilelist.cpp:310
-msgid "Custom"
-msgstr ""
-
-#: app/katefilelist.cpp:281 plugins/filetree/katefiletreeconfigpage.cpp:48
-msgid "Background Shading"
-msgstr "Bóng nền"
-
-#: app/katefilelist.cpp:288 plugins/filetree/katefiletreeconfigpage.cpp:55
-msgid "&Viewed documents' shade:"
-msgstr "&Bóng các tài liệu đã xem:"
-
-#: app/katefilelist.cpp:294 plugins/filetree/katefiletreeconfigpage.cpp:61
-msgid "&Modified documents' shade:"
-msgstr "&Bóng các tài liệu đã sửa:"
-
-#: app/katefilelist.cpp:302 plugins/filetree/katefiletreeconfigpage.cpp:69
-msgid "&Sort by:"
-msgstr "&Sắp xếp theo:"
-
-#: app/katefilelist.cpp:309 plugins/filetree/katefiletreeconfigpage.cpp:76
-msgid "Url"
-msgstr ""
-
-#: app/katefilelist.cpp:315 plugins/filetree/katefiletreeconfigpage.cpp:93
-msgid ""
-"When background shading is enabled, documents that have been viewed or "
-"edited within the current session will have a shaded background. The most "
-"recent documents have the strongest shade."
-msgstr ""
-"Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
-"hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
-
-#: app/katefilelist.cpp:319 plugins/filetree/katefiletreeconfigpage.cpp:97
-msgid "Set the color for shading viewed documents."
-msgstr "Chọn màu cho bóng của những tài liệu đã xem."
-
-#: app/katefilelist.cpp:321 plugins/filetree/katefiletreeconfigpage.cpp:99
-msgid ""
-"Set the color for modified documents. This color is blended into the color "
-"for viewed files. The most recently edited documents get most of this color."
-msgstr ""
-"Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
-"tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
 
 #: app/katemwmodonhddialog.cpp:65
 msgid "Documents Modified on Disk"
@@ -1396,31 +1280,27 @@ msgstr ""
 msgid "Diff Output"
 msgstr ""
 
-#: app/katemainwindow.cpp:239
+#: app/katemainwindow.cpp:229
 msgid "Use this command to show or hide the view's statusbar"
 msgstr "Dùng câu lệnh này để hiện hay ẩn thanh trạng thái"
 
-#: app/katemainwindow.cpp:241
+#: app/katemainwindow.cpp:231
 msgid "Sho&w Path"
 msgstr "&Hiện đường dẫn"
 
-#: app/katemainwindow.cpp:244
+#: app/katemainwindow.cpp:234
 msgid "Show the complete document path in the window caption"
 msgstr "Hiển thị đường dẫn đầy đủ đến tài liệu trong đầu đề cửa sổ"
 
-#: app/katemainwindow.cpp:259 app/katesavemodifieddialog.cpp:202
-msgid "Documents"
-msgstr "Tài liệu"
-
-#: app/katemainwindow.cpp:301
+#: app/katemainwindow.cpp:254
 msgid "Create a new document"
 msgstr "Tạo một tài liệu mới"
 
-#: app/katemainwindow.cpp:303
+#: app/katemainwindow.cpp:256
 msgid "Open an existing document for editing"
 msgstr "Mở tài liệu đã có để sửa"
 
-#: app/katemainwindow.cpp:307
+#: app/katemainwindow.cpp:260
 msgid ""
 "This lists files which you have opened recently, and allows you to easily "
 "open them again."
@@ -1428,62 +1308,76 @@ msgstr ""
 "Đây là danh sách những tập tin bạn vừa mở, nó cho phép mở lại chúng dễ dàng "
 "hơn."
 
-#: app/katemainwindow.cpp:311
+#: app/katemainwindow.cpp:264
 msgid "Save A&ll"
 msgstr "Lưu &tất cả"
 
-#: app/katemainwindow.cpp:314
+#: app/katemainwindow.cpp:267
 msgid "Save all open, modified documents to disk."
 msgstr "Lưu mọi tài liệu mở và đã sửa lên đĩa."
 
-#: app/katemainwindow.cpp:317
+#: app/katemainwindow.cpp:270
 msgid "&Reload All"
 msgstr ""
 
-#: app/katemainwindow.cpp:319
+#: app/katemainwindow.cpp:272
 #, fuzzy
 #| msgid "Close all open documents."
 msgid "Reload all open documents."
 msgstr "Đóng mọi tài liệu đang mở."
 
-#: app/katemainwindow.cpp:322
+#: app/katemainwindow.cpp:275
 #, fuzzy
 msgid "Close Orphaned"
 msgstr "Đóng thẻ hiện thời"
 
-#: app/katemainwindow.cpp:324
+#: app/katemainwindow.cpp:277
 msgid ""
 "Close all documents in the file list that could not be reopened, because "
 "they are not accessible anymore."
 msgstr ""
 
-#: app/katemainwindow.cpp:335
+#: app/katemainwindow.cpp:280 plugins/filetree/katefiletree.cpp:53
+msgid "Close the current document."
+msgstr "Đóng tài liệu hiện thời."
+
+#: app/katemainwindow.cpp:283
+#, fuzzy
+msgid "Close Other"
+msgstr "Đóng thẻ hiện thời"
+
+#: app/katemainwindow.cpp:285
+#, fuzzy
+msgid "Close other open documents."
+msgstr "Đóng mọi tài liệu đang mở."
+
+#: app/katemainwindow.cpp:288
 msgid "Clos&e All"
 msgstr "Đón&g tất cả"
 
-#: app/katemainwindow.cpp:337
+#: app/katemainwindow.cpp:290
 msgid "Close all open documents."
 msgstr "Đóng mọi tài liệu đang mở."
 
-#: app/katemainwindow.cpp:342
+#: app/katemainwindow.cpp:295
 msgid "Close this window"
 msgstr "Đóng cửa sổ này"
 
-#: app/katemainwindow.cpp:346
+#: app/katemainwindow.cpp:299
 #, fuzzy
 msgid "&New Window"
 msgstr "&Cửa sổ"
 
-#: app/katemainwindow.cpp:348
+#: app/katemainwindow.cpp:301
 msgid "Create a new Kate view (a new window with the same document list)."
 msgstr ""
 "Tạo một cửa sổ xem tài liệu mới (một cửa sổ mới với cùng danh sách tài liệu)."
 
-#: app/katemainwindow.cpp:354
+#: app/katemainwindow.cpp:307
 msgid "Open W&ith"
 msgstr "&Mở bằng"
 
-#: app/katemainwindow.cpp:356
+#: app/katemainwindow.cpp:309
 msgid ""
 "Open the current document using another application registered for its file "
 "type, or an application of your choice."
@@ -1491,104 +1385,104 @@ msgstr ""
 "Mở tài liệu hiện thời bằng ứng dụng khác đã đăng ký để mở loại tập tin này, "
 "hoặc một ứng dụng theo lựa chọn."
 
-#: app/katemainwindow.cpp:361
+#: app/katemainwindow.cpp:314
 msgid "Configure the application's keyboard shortcut assignments."
 msgstr "Cấu hình phím nóng của ứng dụng."
 
-#: app/katemainwindow.cpp:364
+#: app/katemainwindow.cpp:317
 msgid "Configure which items should appear in the toolbar(s)."
 msgstr "Chọn những mục hiện lên trên thanh công cụ."
 
-#: app/katemainwindow.cpp:367
+#: app/katemainwindow.cpp:320
 msgid ""
 "Configure various aspects of this application and the editing component."
 msgstr "Cấu hình các mặt khác nhau của ứng dụng này và sửa các thành phần."
 
-#: app/katemainwindow.cpp:371
+#: app/katemainwindow.cpp:324
 msgid "This shows useful tips on the use of this application."
 msgstr "Nó hiển thị lời mách có ích về sử dụng chương trình này."
 
-#: app/katemainwindow.cpp:376
+#: app/katemainwindow.cpp:329
 msgid "&Plugins Handbook"
 msgstr "&Sổ tay về bổ sung"
 
-#: app/katemainwindow.cpp:378
+#: app/katemainwindow.cpp:331
 msgid "This shows help files for various available plugins."
 msgstr "Hiển thị những tập tin trợ giúp về các bổ sung."
 
-#: app/katemainwindow.cpp:382
+#: app/katemainwindow.cpp:335
 #, fuzzy
 msgid "&About Editor Component"
 msgstr "Chọn thành phần soạn thảo"
 
-#: app/katemainwindow.cpp:397
+#: app/katemainwindow.cpp:350
 msgctxt "Menu entry Session->New"
 msgid "&New"
 msgstr "&Mới"
 
-#: app/katemainwindow.cpp:402
+#: app/katemainwindow.cpp:355
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Open Session"
 msgstr "Mở phiên chạy"
 
-#: app/katemainwindow.cpp:407
+#: app/katemainwindow.cpp:360
 #, fuzzy
 #| msgid "&Save session"
 msgid "&Save Session"
 msgstr "&Lưu phiên chạy"
 
-#: app/katemainwindow.cpp:411
+#: app/katemainwindow.cpp:364
 #, fuzzy
 #| msgid "Save Session?"
 msgid "Save Session &As..."
 msgstr "Lưu phiên chạy?"
 
-#: app/katemainwindow.cpp:415
+#: app/katemainwindow.cpp:368
 #, fuzzy
 #| msgid "Save &As..."
 msgid "Save Session as &Default..."
 msgstr "&Lưu như..."
 
-#: app/katemainwindow.cpp:419
+#: app/katemainwindow.cpp:372
 #, fuzzy
 #| msgid "Manage Sessions"
 msgid "&Manage Sessions..."
 msgstr "Quản lý các phiên chạy"
 
-#: app/katemainwindow.cpp:424
+#: app/katemainwindow.cpp:377
 #, fuzzy
 #| msgid "Open Session"
 msgid "&Quick Open Session"
 msgstr "Mở phiên chạy"
 
-#: app/katemainwindow.cpp:431
+#: app/katemainwindow.cpp:384
 msgid "This will close all open documents. Are you sure you want to continue?"
 msgstr ""
 
-#: app/katemainwindow.cpp:432
+#: app/katemainwindow.cpp:385
 #, fuzzy
 #| msgid "Close all open documents."
 msgid "Close all documents"
 msgstr "Đóng mọi tài liệu đang mở."
 
-#: app/katemainwindow.cpp:662
+#: app/katemainwindow.cpp:608
 #, kde-format
 msgctxt "'document name [*]', [*] means modified"
 msgid "%1 [*]"
 msgstr ""
 
-#: app/katemainwindow.cpp:828
+#: app/katemainwindow.cpp:777
 msgid "&Other..."
 msgstr "&Khác..."
 
-#: app/katemainwindow.cpp:854
+#: app/katemainwindow.cpp:803
 #, fuzzy, kde-format
 #| msgid "Application '%1' not found!"
 msgid "Application '%1' not found."
 msgstr "Không tìm thấy ứng dụng '%1'!"
 
-#: app/katemainwindow.cpp:854
+#: app/katemainwindow.cpp:803
 #, fuzzy
 msgid "Application not found"
 msgstr "Không tìm thấy ứng dụng!"
@@ -1631,6 +1525,11 @@ msgstr "Vị trí"
 #: app/katesavemodifieddialog.cpp:196
 msgid "Projects"
 msgstr "Dự án"
+
+#: app/katesavemodifieddialog.cpp:202
+#: plugins/filetree/katefiletreeplugin.cpp:159
+msgid "Documents"
+msgstr "Tài liệu"
 
 #: app/katesavemodifieddialog.cpp:218
 msgid "Se&lect All"
@@ -1777,7 +1676,6 @@ msgid " BLOCK "
 msgstr " BLK "
 
 #: plugins/filetree/katefiletreeplugin.cpp:48
-#: plugins/filetree/katefiletreeplugin.cpp:159
 #, fuzzy
 #| msgid "Document Name"
 msgid "Document Tree"
@@ -1790,6 +1688,12 @@ msgstr ""
 #: plugins/filetree/katefiletreeplugin.cpp:202
 msgid "&Show Active"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:51
+#, fuzzy
+#| msgid "Clos&e All"
+msgid "Close"
+msgstr "Đón&g tất cả"
 
 #: plugins/filetree/katefiletree.cpp:57
 msgid "Tree Mode"
@@ -1806,6 +1710,11 @@ msgstr ""
 #: plugins/filetree/katefiletree.cpp:62
 msgid "Set view style to List Mode"
 msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:67
+#: plugins/filetree/katefiletreeconfigpage.cpp:75
+msgid "Document Name"
+msgstr "Tên tài liệu"
 
 #: plugins/filetree/katefiletree.cpp:68
 #, fuzzy
@@ -1825,6 +1734,11 @@ msgstr "Danh sách tài liệu"
 msgid "Sort by Document Path"
 msgstr "&Hiển thị mọi tài liệu >>"
 
+#: plugins/filetree/katefiletree.cpp:76
+#: plugins/filetree/katefiletreeconfigpage.cpp:74
+msgid "Opening Order"
+msgstr "Thứ tự mở"
+
 #: plugins/filetree/katefiletree.cpp:77
 #, fuzzy
 #| msgid "Opening Order"
@@ -1839,6 +1753,26 @@ msgstr ""
 #, fuzzy
 msgid "Sort By"
 msgstr "Sắp &xếp theo"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:48
+msgid "Background Shading"
+msgstr "Bóng nền"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:55
+msgid "&Viewed documents' shade:"
+msgstr "&Bóng các tài liệu đã xem:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:61
+msgid "&Modified documents' shade:"
+msgstr "&Bóng các tài liệu đã sửa:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:69
+msgid "&Sort by:"
+msgstr "&Sắp xếp theo:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:76
+msgid "Url"
+msgstr ""
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:82
 #, fuzzy
@@ -1855,6 +1789,27 @@ msgstr "Ô xem trước"
 #| msgid "Split Ve&rtical"
 msgid "List View"
 msgstr "Chia &dọc"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:93
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+"Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
+"hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:97
+msgid "Set the color for shading viewed documents."
+msgstr "Chọn màu cho bóng của những tài liệu đã xem."
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:99
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
+"Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
+"tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
 
 #: plugins/gdbplugin/plugin_kategdb.cpp:55
 #, fuzzy
@@ -1994,6 +1949,36 @@ msgstr ""
 #: plugins/gdbplugin/configview.cpp:85
 msgid "Keep the focus on the command line"
 msgstr ""
+
+#~ msgid "Document List"
+#~ msgstr "Danh sách tài liệu"
+
+#~ msgid "Document List Settings"
+#~ msgstr "Thiết lập danh sách tài liệu"
+
+#, fuzzy
+#~| msgid "&Save Selected"
+#~ msgid "Close Selected"
+#~ msgstr "&Lưu đã chọn"
+
+#, fuzzy
+#~ msgid "Close selected open documents."
+#~ msgstr "Đóng mọi tài liệu đang mở."
+
+#, fuzzy
+#~| msgid "&Save Selected"
+#~ msgid "Save Selected"
+#~ msgstr "&Lưu đã chọn"
+
+#, fuzzy
+#~ msgid "Save selected open documents."
+#~ msgstr "Đóng mọi tài liệu đang mở."
+
+#~ msgid "Sort &By"
+#~ msgstr "Sắp &xếp theo"
+
+#~ msgid "URL"
+#~ msgstr "URL"
 
 #, fuzzy
 #~ msgid "Tabify Plugin"

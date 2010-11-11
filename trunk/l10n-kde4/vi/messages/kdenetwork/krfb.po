@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-28 06:11+0200\n"
+"POT-Creation-Date: 2010-11-11 06:16+0100\n"
 "PO-Revision-Date: 2007-07-11 23:20+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17,35 +17,64 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.7b1\n"
 
-#: abstractrfbserver.cpp:227
-msgid "Address already in use"
-msgstr ""
-
-#: abstractrfbserver.cpp:319
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"X11 của bạn không hỗ trợ phiên bản mở rộng XTest 2.2. Không thể chia sẻ màn "
-"hình."
-
-#: abstractrfbserver.cpp:320
-msgid "Desktop Sharing Error"
-msgstr "Lỗi chia sẻ màn hình"
-
-#: connectiondialog.cpp:32
+#: connectiondialog.cpp:35
 msgid "New Connection"
 msgstr "Kết nối mới"
 
-#: connectiondialog.cpp:45
+#: connectiondialog.cpp:48
 msgid "Accept Connection"
 msgstr "Chấp nhận kết nối"
 
-#: connectiondialog.cpp:49
+#: connectiondialog.cpp:52
 msgid "Refuse Connection"
 msgstr "Từ chối kết nối"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
+#: connectiondialog.cpp:79
+#, fuzzy, kde-format
+#| msgid ""
+#| "Somebody is requesting a connection to your computer. Granting this will "
+#| "allow the remote user to watch your desktop. "
+msgid ""
+"You have requested to share your desktop with %1. If you proceed, you will "
+"allow the remote user to watch your desktop."
+msgstr ""
+"Có ai đó yêu cầu kết nối tới máy của bạn. Nếu bạn cho phép thì người đó sẽ "
+"nhìn thấy màn hình của bạn. "
+
+#: invitationsrfbclient.cpp:60 invitationsrfbclient.cpp:63
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "Lỗi đăng nhập từ %1: mật khẩu không đúng"
+
+#: invitationsrfbclient.cpp:80
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Refused uninvited connection attempt from %1"
+msgstr "Chấp nhận kết nối không giấy mời từ %1"
+
+#: invitationsrfbclient.cpp:84 pendingrfbclient.cpp:57 tubesrfbclient.cpp:57
+#, fuzzy, kde-format
+#| msgid "Accepted uninvited connection from %1"
+msgid "Accepted connection from %1"
+msgstr "Chấp nhận kết nối không giấy mời từ %1"
+
+#: invitationsrfbclient.cpp:88 pendingrfbclient.cpp:61 tubesrfbclient.cpp:61
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "Nhận được kết nối từ %1, đang chờ phê chuẩn"
+
+#: invitationsrfbserver.cpp:52
+msgid ""
+"Failed to start the krfb server. Invitation-based sharing will not work. Try "
+"setting another port in the settings and restart krfb."
+msgstr ""
+
+#: invitationsrfbserver.cpp:58
+#, kde-format
+msgid "%1@%2 (shared desktop)"
+msgstr "%1@%2 (màn hình đã chia sẻ)"
+
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:53
 msgid "Invitation"
 msgstr "Giấy mời"
 
@@ -85,41 +114,27 @@ msgstr ""
 "Nếu muốn tạo một mật khẩu lâu dài để chia sẻ màn hình, cần cho phép « Kết nối "
 "không giấy mời » trong cấu hình."
 
-#: krfbconnectioncontroller.cpp:99
-#, fuzzy, kde-format
-#| msgid "Accepted uninvited connection from %1"
-msgid "Refused uninvited connection attempt from %1"
-msgstr "Chấp nhận kết nối không giấy mời từ %1"
-
-#: krfbconnectioncontroller.cpp:110
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "Chấp nhận kết nối không giấy mời từ %1"
-
-#: krfbconnectioncontroller.cpp:118
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "Nhận được kết nối từ %1, đang chờ phê chuẩn"
-
-#: krfbconnectioncontroller.cpp:162 krfbconnectioncontroller.cpp:166
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "Lỗi đăng nhập từ %1: mật khẩu không đúng"
-
-#: krfbserver.cpp:60 krfbserver.cpp:65
-#, kde-format
-msgid "%1@%2 (shared desktop)"
-msgstr "%1@%2 (màn hình đã chia sẻ)"
-
-#: main.cpp:40
+#: main.cpp:43
 msgid "VNC-compatible server to share KDE desktops"
 msgstr "Máy chủ tương hợp với VNC để chia sẻ màn hình KDE"
 
-#: main.cpp:46
+#: main.cpp:54
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"X11 của bạn không hỗ trợ phiên bản mở rộng XTest 2.2. Không thể chia sẻ màn "
+"hình."
+
+#: main.cpp:56
+msgid "Desktop Sharing Error"
+msgstr "Lỗi chia sẻ màn hình"
+
+#: main.cpp:65
 msgid "Desktop Sharing"
 msgstr "Chia sẻ màn hình"
 
-#: main.cpp:48
+#: main.cpp:67
 #, fuzzy
 #| msgid ""
 #| "(c) 2007, Alessandro Praduroux\n"
@@ -130,10 +145,10 @@ msgstr "Chia sẻ màn hình"
 #| "(c) 2000, Tridia Corporation\n"
 #| "(c) 1999, AT&T Laboratories Cambridge\n"
 msgid ""
+"(c) 2009-2010, Collabora Ltd.\n"
 "(c) 2007, Alessandro Praduroux\n"
 "(c) 2001-2003, Tim Jansen\n"
 "(c) 2001, Johannes E. Schindelin\n"
-"(c) 2000, heXoNet Support GmbH, D-66424 Homburg\n"
 "(c) 2000-2001, Const Kaplinsky\n"
 "(c) 2000, Tridia Corporation\n"
 "(c) 1999, AT&T Laboratories Boston\n"
@@ -146,89 +161,73 @@ msgstr ""
 "© năm 2000 của Tridia Corporation\n"
 "© năm 1999 của AT&T Laboratories Cambridge\n"
 
-#: main.cpp:55
+#: main.cpp:74
+msgid "George Goldberg"
+msgstr ""
+
+#: main.cpp:75
+msgid "Telepathy tubes support"
+msgstr ""
+
+#: main.cpp:77
+msgid "George Kiagiadakis"
+msgstr ""
+
+#: main.cpp:80
 msgid "Alessandro Praduroux"
 msgstr "Alessandro Praduroux"
 
-#: main.cpp:55
+#: main.cpp:80
 msgid "KDE4 porting"
 msgstr "Chuyển sang KDE4"
 
-#: main.cpp:56
+#: main.cpp:81
 msgid "Tim Jansen"
 msgstr "Tim Jansen"
 
-#: main.cpp:57
-msgid "Ian Reinhart Geiser"
-msgstr "Ian Reinhart Geiser"
+#: main.cpp:81
+msgid "Original author"
+msgstr ""
 
-#: main.cpp:57
-msgid "DCOP interface"
-msgstr "Giao diện DCOP"
-
-#: main.cpp:58
+#: main.cpp:82
 msgid "Johannes E. Schindelin"
 msgstr "Johannes E. Schindelin"
 
-#: main.cpp:59
+#: main.cpp:83
 msgid "libvncserver"
 msgstr "libvncserver"
 
-#: main.cpp:60
+#: main.cpp:84
 msgid "Const Kaplinsky"
 msgstr "Const Kaplinsky"
 
-#: main.cpp:61
+#: main.cpp:85
 msgid "TightVNC encoder"
 msgstr "Bộ mã hóa TightVNC"
 
-#: main.cpp:62
+#: main.cpp:86
 msgid "Tridia Corporation"
 msgstr "Tridia Corporation"
 
-#: main.cpp:63
+#: main.cpp:87
 msgid "ZLib encoder"
 msgstr "Bộ mã hóa ZLib"
 
-#: main.cpp:64
+#: main.cpp:88
 #, fuzzy
 #| msgid "AT&T Laboratories Cambridge"
 msgid "AT&T Laboratories Boston"
 msgstr "AT&T Laboratories Cambridge"
 
-#: main.cpp:65
+#: main.cpp:89
 msgid "original VNC encoders and protocol design"
 msgstr "Thiết kết bộ tạo mã và giao thức VNC gốc"
 
-#: main.cpp:67
-msgid "Jens Wagner (heXoNet Support GmbH)"
-msgstr "Jens Wagner (heXoNet Support GmbH)"
-
-#: main.cpp:68
-msgid "X11 update scanner, original code base"
-msgstr "Trình quét đã cập nhật, mã gốc"
-
-#: main.cpp:70
-msgid "Jason Spisak"
-msgstr "Jason Spisak"
-
-#: main.cpp:71
-msgid "Connection side image"
-msgstr "Ảnh hiển thị phía kết nối"
-
-#: main.cpp:73
-msgid "Karl Vogel"
-msgstr "Karl Vogel"
-
-#: main.cpp:74
-msgid "KDesktop background deactivation"
-msgstr "Cắt bỏ ảnh nền KDE"
-
-#: main.cpp:78
+#: main.cpp:94
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: manageinvitationsdialog.cpp:93
+#: manageinvitationsdialog.cpp:91
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -257,7 +256,7 @@ msgstr ""
 "Nếu muốn tạo một mật khẩu lâu dài để chia sẻ màn hình, cần cho phép « Kết nối "
 "không giấy mời » trong cấu hình."
 
-#: manageinvitationsdialog.cpp:115
+#: manageinvitationsdialog.cpp:113
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -271,15 +270,15 @@ msgstr ""
 "Vì vậy bạn nên mã hóa thư hoặc ít nhất chỉ gửi thư trong mạng bảo mật, và "
 "không gửi qua Internet."
 
-#: manageinvitationsdialog.cpp:120
+#: manageinvitationsdialog.cpp:118
 msgid "Send Invitation via Email"
 msgstr "Gửi giấy mời qua Email"
 
-#: manageinvitationsdialog.cpp:147
+#: manageinvitationsdialog.cpp:145
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "Giấy mời dùng màn hình chia sẻ (VNC)"
 
-#: manageinvitationsdialog.cpp:148
+#: manageinvitationsdialog.cpp:146
 #, fuzzy, kde-format
 #| msgid ""
 #| "You have been invited to a VNC session. If you have the KDE Remote "
@@ -318,23 +317,23 @@ msgstr ""
 "\n"
 "Vì lý do bảo mật giấy mời này sẽ hết hạn lúc %7."
 
-#: manageinvitationsdialog.cpp:187
+#: manageinvitationsdialog.cpp:185
 msgid "Network"
 msgstr "Mạng"
 
-#: manageinvitationsdialog.cpp:188
+#: manageinvitationsdialog.cpp:186
 msgid "Security"
 msgstr "Bảo mật"
 
-#: manageinvitationsdialog.cpp:197
+#: manageinvitationsdialog.cpp:194
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr "<qt>Bạn có chắc muốn xoá mọi lời mời không?</qt>"
 
-#: manageinvitationsdialog.cpp:198 manageinvitationsdialog.cpp:213
+#: manageinvitationsdialog.cpp:195 manageinvitationsdialog.cpp:210
 msgid "Confirm delete Invitations"
 msgstr "Xác nhận xóa lời mời"
 
-#: manageinvitationsdialog.cpp:212
+#: manageinvitationsdialog.cpp:209
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr "<qt>Bạn có chắc muốn xoá lời mời này không?</qt>"
 
@@ -385,25 +384,25 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "teppi82@gmail.com"
 
-#. i18n: file: ui/configsecurity.ui:17
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#. i18n: file: ui/configsecurity.ui:20
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
 #: rc.cpp:5
-msgid "Allow uninvited connections"
-msgstr "Cho phép kết nối không giấy mời"
+#, fuzzy
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
+msgstr "Hỏi trước khi chấp nhận kết nối không giấy mời"
 
-#. i18n: file: ui/configsecurity.ui:24
+#. i18n: file: ui/configsecurity.ui:30
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
 #: rc.cpp:8
 msgid "Allow remote connections to control your desktop"
 msgstr "Cho phép người dùng ở xa điều khiển bàn phím và chuột"
 
-#. i18n: file: ui/configsecurity.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#. i18n: file: ui/configsecurity.ui:40
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
 #: rc.cpp:11
-#, fuzzy
-#| msgid "Ask before accepting an uninvited connection"
-msgid "Ask before accepting connections"
-msgstr "Hỏi trước khi chấp nhận kết nối không giấy mời"
+msgid "Allow uninvited connections"
+msgstr "Cho phép kết nối không giấy mời"
 
 #. i18n: file: ui/configsecurity.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -417,7 +416,7 @@ msgstr "Mật khẩu kết nối không giấy mời"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
 #. i18n: file: krfb.kcfg:16
 #. i18n: ectx: label, entry (publishService), group (TCP)
-#: rc.cpp:17 rc.cpp:148
+#: rc.cpp:17 rc.cpp:157
 msgid "Announce the service on the local network"
 msgstr "Thông báo dịch vụ trên máy cục bộ"
 
@@ -465,7 +464,9 @@ msgstr "123.234.123.234"
 
 #. i18n: file: ui/connectionwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:38
+#. i18n: file: ui/tubesconnectionwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: rc.cpp:38 rc.cpp:145
 msgid ""
 "If you turn this option on, the remote user can enter keystrokes and use "
 "your mouse pointer. This gives them full control over your computer, so be "
@@ -479,7 +480,9 @@ msgstr ""
 
 #. i18n: file: ui/connectionwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:41
+#. i18n: file: ui/tubesconnectionwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: rc.cpp:41 rc.cpp:148
 msgid "Allow remote user to &control keyboard and mouse"
 msgstr "Cho phép người dùng ở xa điều kh&iển bàn phím và chuột"
 
@@ -727,15 +730,23 @@ msgstr "<b>Mật khẩu :</b>"
 msgid "<b>Expiration time:</b>"
 msgstr "<b>Hạn sử dụng:</b>"
 
+#. i18n: file: ui/tubesconnectionwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:142
+#, fuzzy
+#| msgid "Invitation"
+msgid "Confirmation"
+msgstr "Giấy mời"
+
 #. i18n: file: krfb.kcfg:8
 #. i18n: ectx: label, entry (useDefaultPort), group (TCP)
-#: rc.cpp:142
+#: rc.cpp:151
 msgid "Use the default port for VNC (5900)"
 msgstr "Dùng cổng mặc định cho VNC (5900)"
 
 #. i18n: file: krfb.kcfg:12
 #. i18n: ectx: label, entry (port), group (TCP)
-#: rc.cpp:145
+#: rc.cpp:154
 #, fuzzy
 #| msgid "This is the port on wich krfb will listen."
 msgid "This is the port on which krfb will listen."
@@ -743,60 +754,121 @@ msgstr "Đây là cổng trên đó krfb sẽ lắng nghe."
 
 #. i18n: file: krfb.kcfg:22
 #. i18n: ectx: label, entry (allowDesktopControl), group (Security)
-#: rc.cpp:151
+#: rc.cpp:160
 msgid "Allow remote connections to manage the desktop."
 msgstr "Cho phép kết nối từ xa quản lý máy tính này."
 
 #. i18n: file: krfb.kcfg:26
 #. i18n: ectx: label, entry (askOnConnect), group (Security)
-#: rc.cpp:154
+#: rc.cpp:163
 msgid "Ask before allowing a remote connection."
 msgstr "Hỏi trước khi cho phép kết nối từ xa."
 
 #. i18n: file: krfb.kcfg:30
 #. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
-#: rc.cpp:157
+#: rc.cpp:166
 msgid "Allow connections without an invitation."
 msgstr "Cho phép kết nối không có lời mời."
 
 #. i18n: file: krfb.kcfg:34
 #. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
-#: rc.cpp:160
+#: rc.cpp:169
 msgid "Password for uninvited connections."
 msgstr "Mật khẩu cho kết nối không giấy mời."
 
 #. i18n: file: krfb.kcfg:39
 #. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
-#: rc.cpp:163
+#: rc.cpp:172
 msgid "Preferred Frame Buffer Plugin"
 msgstr ""
 
-#: trayicon.cpp:38 trayicon.cpp:91
-msgid "Desktop Sharing - disconnected"
-msgstr "Chia sẻ màn hình - đã ngừng kết nối"
-
-#: trayicon.cpp:47
-msgid "Enable Remote Control"
-msgstr "Cho phép điều khiển từ xa"
-
-#: trayicon.cpp:48
-msgid "Disable Remote Control"
-msgstr "Không cho điều khiển từ xa"
-
-#: trayicon.cpp:78
+#: rfbservermanager.cpp:214
 #, fuzzy, kde-format
 #| msgid "The remote user has closed the connection."
 msgid "The remote user %1 is now connected."
 msgstr "Người dùng từ xa đã ngừng kết nối"
 
-#: trayicon.cpp:80
+#: rfbservermanager.cpp:228
+#, fuzzy, kde-format
+#| msgid "The remote user has closed the connection."
+msgid "The remote user %1 disconnected."
+msgstr "Người dùng từ xa đã ngừng kết nối"
+
+#: trayicon.cpp:55
+msgid "Disconnect"
+msgstr ""
+
+#: trayicon.cpp:61
+msgid "Enable Remote Control"
+msgstr "Cho phép điều khiển từ xa"
+
+#: trayicon.cpp:102 trayicon.cpp:138
+msgid "Desktop Sharing - disconnected"
+msgstr "Chia sẻ màn hình - đã ngừng kết nối"
+
+#: trayicon.cpp:120 trayicon.cpp:142
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "Chia sẻ màn hình - đã kết nối với %1"
 
-#: trayicon.cpp:93
-msgid "The remote user has closed the connection."
-msgstr "Người dùng từ xa đã ngừng kết nối"
+#: trayicon.cpp:123
+#, fuzzy
+#| msgid "Desktop Sharing - disconnected"
+msgid "Desktop Sharing - connected"
+msgstr "Chia sẻ màn hình - đã ngừng kết nối"
+
+#: tubesrfbserver.cpp:138
+msgid "An error occurred sharing your desktop."
+msgstr ""
+
+#: tubesrfbserver.cpp:139 tubesrfbserver.cpp:152 tubesrfbserver.cpp:173
+#: tubesrfbserver.cpp:190 tubesrfbserver.cpp:248 tubesrfbserver.cpp:252
+msgid "Error"
+msgstr ""
+
+#: tubesrfbserver.cpp:151 tubesrfbserver.cpp:172 tubesrfbserver.cpp:251
+msgid "An unknown error occurred sharing your desktop."
+msgstr ""
+
+#: tubesrfbserver.cpp:189
+msgid "Failed to activate the rfb server."
+msgstr ""
+
+#: tubesrfbserver.cpp:245
+msgid ""
+"An error occurred sharing your desktop. The person you are trying to share "
+"your desktop with does not have the required software installed to access it."
+msgstr ""
+
+#~ msgid "Ian Reinhart Geiser"
+#~ msgstr "Ian Reinhart Geiser"
+
+#~ msgid "DCOP interface"
+#~ msgstr "Giao diện DCOP"
+
+#~ msgid "Jens Wagner (heXoNet Support GmbH)"
+#~ msgstr "Jens Wagner (heXoNet Support GmbH)"
+
+#~ msgid "X11 update scanner, original code base"
+#~ msgstr "Trình quét đã cập nhật, mã gốc"
+
+#~ msgid "Jason Spisak"
+#~ msgstr "Jason Spisak"
+
+#~ msgid "Connection side image"
+#~ msgstr "Ảnh hiển thị phía kết nối"
+
+#~ msgid "Karl Vogel"
+#~ msgstr "Karl Vogel"
+
+#~ msgid "KDesktop background deactivation"
+#~ msgstr "Cắt bỏ ảnh nền KDE"
+
+#~ msgid "Disable Remote Control"
+#~ msgstr "Không cho điều khiển từ xa"
+
+#~ msgid "The remote user has closed the connection."
+#~ msgstr "Người dùng từ xa đã ngừng kết nối"
 
 #~ msgid "The remote user has been authenticated and is now connected."
 #~ msgstr "Người dùng từ xa đã đăng nhập và đã kết nối."

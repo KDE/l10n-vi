@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keditbookmarks\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-19 06:54+0200\n"
+"POT-Creation-Date: 2010-12-26 02:55+0100\n"
 "PO-Revision-Date: 2007-06-25 15:32+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -15,6 +15,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a3\n"
+
+#: kbookmarkmodel/model.cpp:118
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Liên kết lưu"
+
+#: kbookmarkmodel/model.cpp:222
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@title:column name of a bookmark"
+msgid "Name"
+msgstr "Tên:"
+
+#: kbookmarkmodel/model.cpp:226
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@title:column name of a bookmark"
+msgid "Location"
+msgstr "Địa điểm:"
+
+#: kbookmarkmodel/model.cpp:230
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@title:column comment for a bookmark"
+msgid "Comment"
+msgstr "Chú thích"
+
+#: kbookmarkmodel/model.cpp:234
+#, fuzzy
+#| msgid "Status"
+msgctxt "@title:column status of a bookmark"
+msgid "Status"
+msgstr "Trạng thái"
+
+#: kbookmarkmodel/commands.cpp:68
+msgid "Insert Separator"
+msgstr "Chèn đường phân cách"
+
+#: kbookmarkmodel/commands.cpp:77
+msgid "Create Bookmark"
+msgstr "Tạo liên kết lưu"
+
+#: kbookmarkmodel/commands.cpp:86
+msgid "Create Folder"
+msgstr "Tạo thư mục"
+
+#: kbookmarkmodel/commands.cpp:95
+#, kde-format
+msgid "Copy %1"
+msgstr "Chép %1"
+
+#: kbookmarkmodel/commands.cpp:183
+#, fuzzy
+#| msgid "%1 Change"
+msgid "Icon Change"
+msgstr "Thay đổi %1"
+
+#: kbookmarkmodel/commands.cpp:185
+#, fuzzy
+#| msgid "%1 Change"
+msgid "Title Change"
+msgstr "Thay đổi %1"
+
+#: kbookmarkmodel/commands.cpp:187
+#, fuzzy
+#| msgid "%1 Change"
+msgid "URL Change"
+msgstr "Thay đổi %1"
+
+#: kbookmarkmodel/commands.cpp:189
+#, fuzzy
+#| msgid "Comment"
+msgid "Comment Change"
+msgstr "Chú thích"
+
+#: kbookmarkmodel/commands.cpp:359
+#, kde-format
+msgid "Move %1"
+msgstr "Chuyển %1"
+
+#: kbookmarkmodel/commands.cpp:476
+msgid "Set as Bookmark Toolbar"
+msgstr "Đặt làm Thanh công cụ Liên kết lưu"
+
+#: kbookmarkmodel/commands.cpp:512
+msgid "Copy Items"
+msgstr "Chép mục"
+
+#: kbookmarkmodel/commands.cpp:513
+msgid "Move Items"
+msgstr "Chuyển mục"
 
 #: kebsearchline.cpp:273
 msgid "Search Columns"
@@ -232,6 +325,30 @@ msgstr "*.xbel|Tập tin liên kết lưu Galeon (*.xbel)"
 msgid "*.xml|KDE Bookmark Files (*.xml)"
 msgstr "*.xml|Tập tin liên kết lưu KDE (*.xml)"
 
+#: bookmarkinfowidget.cpp:246
+msgid "Name:"
+msgstr "Tên:"
+
+#: bookmarkinfowidget.cpp:254
+msgid "Location:"
+msgstr "Địa điểm:"
+
+#: bookmarkinfowidget.cpp:262
+msgid "Comment:"
+msgstr "Chú thích:"
+
+#: bookmarkinfowidget.cpp:269
+msgid "First viewed:"
+msgstr "Xem đầu :"
+
+#: bookmarkinfowidget.cpp:272
+msgid "Viewed last:"
+msgstr "Xem cuối:"
+
+#: bookmarkinfowidget.cpp:275
+msgid "Times visited:"
+msgstr "Lần thâm:"
+
 #: favicons.cpp:56 testlink.cpp:97
 msgid "OK"
 msgstr ""
@@ -242,31 +359,10 @@ msgstr ""
 msgid "Updating favicon..."
 msgstr "Cập nhật Hình ưa thích"
 
-#: kbookmarkmerger.cpp:39
-msgid "KBookmarkMerger"
-msgstr "KBookmarkMerger"
-
-#: kbookmarkmerger.cpp:40
-msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+#: faviconupdater.cpp:87
+#, kde-format
+msgid "%1; no HTML component found (%2)"
 msgstr ""
-"Trộn các liên kết lưu được cài đặt bởi nhóm ba vào các liên kết lưu của "
-"người dùng."
-
-#: kbookmarkmerger.cpp:42
-msgid "Copyright © 2005 Frerich Raabe"
-msgstr "Tác quyền © năm 2005 của Frerich Raabe"
-
-#: kbookmarkmerger.cpp:43
-msgid "Frerich Raabe"
-msgstr ""
-
-#: kbookmarkmerger.cpp:43
-msgid "Original author"
-msgstr "Tác giả gốc"
-
-#: kbookmarkmerger.cpp:49
-msgid "Directory to scan for extra bookmarks"
-msgstr "Thư mục trong đó cần quét tìm liên kết lưu thêm"
 
 #: actionsimpl.cpp:97
 msgid "&Delete"
@@ -436,6 +532,32 @@ msgstr "Sắp xếp theo abc"
 msgid "Delete Items"
 msgstr "Xoá mục"
 
+#: kbookmarkmerger.cpp:39
+msgid "KBookmarkMerger"
+msgstr "KBookmarkMerger"
+
+#: kbookmarkmerger.cpp:40
+msgid "Merges bookmarks installed by 3rd parties into the user's bookmarks"
+msgstr ""
+"Trộn các liên kết lưu được cài đặt bởi nhóm ba vào các liên kết lưu của "
+"người dùng."
+
+#: kbookmarkmerger.cpp:42
+msgid "Copyright © 2005 Frerich Raabe"
+msgstr "Tác quyền © năm 2005 của Frerich Raabe"
+
+#: kbookmarkmerger.cpp:43
+msgid "Frerich Raabe"
+msgstr ""
+
+#: kbookmarkmerger.cpp:43
+msgid "Original author"
+msgstr "Tác giả gốc"
+
+#: kbookmarkmerger.cpp:49
+msgid "Directory to scan for extra bookmarks"
+msgstr "Thư mục trong đó cần quét tìm liên kết lưu thêm"
+
 #: importers.h:102
 msgid "Galeon"
 msgstr "Galeon"
@@ -467,128 +589,6 @@ msgstr "Liên kết do tôi lưu"
 #: testlink.cpp:76
 msgid "Checking..."
 msgstr "Đang kiểm tra..."
-
-#: bookmarkinfowidget.cpp:246
-msgid "Name:"
-msgstr "Tên:"
-
-#: bookmarkinfowidget.cpp:254
-msgid "Location:"
-msgstr "Địa điểm:"
-
-#: bookmarkinfowidget.cpp:262
-msgid "Comment:"
-msgstr "Chú thích:"
-
-#: bookmarkinfowidget.cpp:269
-msgid "First viewed:"
-msgstr "Xem đầu :"
-
-#: bookmarkinfowidget.cpp:272
-msgid "Viewed last:"
-msgstr "Xem cuối:"
-
-#: bookmarkinfowidget.cpp:275
-msgid "Times visited:"
-msgstr "Lần thâm:"
-
-#: kbookmarkmodel/model.cpp:118
-#, fuzzy
-#| msgid "Bookmarks"
-msgctxt "name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Liên kết lưu"
-
-#: kbookmarkmodel/model.cpp:222
-#, fuzzy
-#| msgid "Name:"
-msgctxt "@title:column name of a bookmark"
-msgid "Name"
-msgstr "Tên:"
-
-#: kbookmarkmodel/model.cpp:226
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@title:column name of a bookmark"
-msgid "Location"
-msgstr "Địa điểm:"
-
-#: kbookmarkmodel/model.cpp:230
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@title:column comment for a bookmark"
-msgid "Comment"
-msgstr "Chú thích"
-
-#: kbookmarkmodel/model.cpp:234
-#, fuzzy
-#| msgid "Status"
-msgctxt "@title:column status of a bookmark"
-msgid "Status"
-msgstr "Trạng thái"
-
-#: kbookmarkmodel/commands.cpp:68
-msgid "Insert Separator"
-msgstr "Chèn đường phân cách"
-
-#: kbookmarkmodel/commands.cpp:77
-msgid "Create Bookmark"
-msgstr "Tạo liên kết lưu"
-
-#: kbookmarkmodel/commands.cpp:86
-msgid "Create Folder"
-msgstr "Tạo thư mục"
-
-#: kbookmarkmodel/commands.cpp:95
-#, kde-format
-msgid "Copy %1"
-msgstr "Chép %1"
-
-#: kbookmarkmodel/commands.cpp:183
-#, fuzzy
-#| msgid "%1 Change"
-msgid "Icon Change"
-msgstr "Thay đổi %1"
-
-#: kbookmarkmodel/commands.cpp:185
-#, fuzzy
-#| msgid "%1 Change"
-msgid "Title Change"
-msgstr "Thay đổi %1"
-
-#: kbookmarkmodel/commands.cpp:187
-#, fuzzy
-#| msgid "%1 Change"
-msgid "URL Change"
-msgstr "Thay đổi %1"
-
-#: kbookmarkmodel/commands.cpp:189
-#, fuzzy
-#| msgid "Comment"
-msgid "Comment Change"
-msgstr "Chú thích"
-
-#: kbookmarkmodel/commands.cpp:359
-#, kde-format
-msgid "Move %1"
-msgstr "Chuyển %1"
-
-#: kbookmarkmodel/commands.cpp:476
-msgid "Set as Bookmark Toolbar"
-msgstr "Đặt làm Thanh công cụ Liên kết lưu"
-
-#: kbookmarkmodel/commands.cpp:512
-msgid "Copy Items"
-msgstr "Chép mục"
-
-#: kbookmarkmodel/commands.cpp:513
-msgid "Move Items"
-msgstr "Chuyển mục"
-
-#: faviconupdater.cpp:87
-#, kde-format
-msgid "%1; no HTML component found (%2)"
-msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

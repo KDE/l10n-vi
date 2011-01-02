@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-30 02:59+0100\n"
+"POT-Creation-Date: 2011-01-02 03:00+0100\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -64,6 +64,7 @@ msgid "Paste Shapes"
 msgstr "Dán Các hình"
 
 #: flake/KoToolBase.cpp:175 flake/KoToolManager.cpp:350
+#: main/KoToolDocker.cpp:205
 msgid "Tool Options"
 msgstr "Cấu hình Công cụ"
 
@@ -437,7 +438,7 @@ msgstr ""
 msgid "Script Manager"
 msgstr ""
 
-#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:592
+#: kokross/KoScriptManager.cpp:299 main/KoMainWindow.cpp:595
 msgid "Save"
 msgstr "Lưu"
 
@@ -535,7 +536,7 @@ msgstr "Bị khóa"
 msgid "Reparent shapes"
 msgstr ""
 
-#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1687
+#: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1700
 msgid "Document"
 msgstr "Tài liệu"
 
@@ -664,112 +665,6 @@ msgstr[0] "Trang Dán"
 msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Trang Dán"
-
-#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
-msgid "Tools"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:276
-msgid "D&elete"
-msgstr "&Xóa"
-
-#: kopageapp/KoPAView.cpp:287
-#, fuzzy
-msgid "Snap to Grid"
-msgstr "Gắn vào Lưới"
-
-#: kopageapp/KoPAView.cpp:297
-msgid "Show Master Pages"
-msgstr ""
-
-#: kopageapp/KoPAView.cpp:301
-msgid "Show Rulers"
-msgstr "Hiện Thước kẻ"
-
-#: kopageapp/KoPAView.cpp:303
-msgid "Show/hide the view's rulers"
-msgstr "Hiện/ẩn các thước kẻ của khung xem"
-
-#: kopageapp/KoPAView.cpp:307
-msgid "Insert Page"
-msgstr "Chèn Trang"
-
-#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
-#, fuzzy
-msgid "Insert a new page after the current one"
-msgstr "Chèn một trang vào sau trang hiện tại"
-
-#: kopageapp/KoPAView.cpp:313
-msgid "Copy Page"
-msgstr "Chép Trang"
-
-#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
-msgid "Copy the current page"
-msgstr "Chép trang hiện tại"
-
-#: kopageapp/KoPAView.cpp:319
-msgid "Delete Page"
-msgstr "Xóa Trang"
-
-#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
-#, fuzzy
-#| msgid "Copy the current page"
-msgid "Delete the current page"
-msgstr "Chép trang hiện tại"
-
-#: kopageapp/KoPAView.cpp:326
-#, fuzzy
-msgid "Master Page..."
-msgstr "Trang Dán"
-
-#: kopageapp/KoPAView.cpp:330
-msgid "Page Layout..."
-msgstr "Kiểu trang..."
-
-#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
-#. i18n: ectx: property (text), widget (QTableWidget, variables)
-#: kopageapp/KoPAView.cpp:339 rc.cpp:317
-msgid "Variable"
-msgstr "Biến số"
-
-#: kopageapp/KoPAView.cpp:344
-#, fuzzy
-#| msgid "Import Document"
-msgid "Import Document..."
-msgstr "Nhập Tài liệu"
-
-#: kopageapp/KoPAView.cpp:348
-#, fuzzy
-msgid "Configure..."
-msgstr "Gắn vào Lưới"
-
-#: kopageapp/KoPAView.cpp:401
-#, fuzzy
-#| msgid "Import lines:"
-msgid "Import Slideshow"
-msgstr "Nhập các dòng:"
-
-#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1204
-msgid "Import Document"
-msgstr "Nhập Tài liệu"
-
-#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open\n"
-#| "%1"
-msgid ""
-"Could not import\n"
-"%1"
-msgstr ""
-"Không thể mở\n"
-"%1"
-
-#: kopageapp/KoPAView.cpp:541
-#, fuzzy
-#| msgid "Change parameter"
-msgid "Change page layout"
-msgstr "Thay đổi tham số"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -929,6 +824,112 @@ msgstr "Màu &nền:"
 #| msgid "Set background"
 msgid "Change background image"
 msgstr "Đặt nền"
+
+#: kopageapp/KoPAView.cpp:239 main/KoToolBoxFactory.cpp:36
+msgid "Tools"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:276
+msgid "D&elete"
+msgstr "&Xóa"
+
+#: kopageapp/KoPAView.cpp:287
+#, fuzzy
+msgid "Snap to Grid"
+msgstr "Gắn vào Lưới"
+
+#: kopageapp/KoPAView.cpp:297
+msgid "Show Master Pages"
+msgstr ""
+
+#: kopageapp/KoPAView.cpp:301
+msgid "Show Rulers"
+msgstr "Hiện Thước kẻ"
+
+#: kopageapp/KoPAView.cpp:303
+msgid "Show/hide the view's rulers"
+msgstr "Hiện/ẩn các thước kẻ của khung xem"
+
+#: kopageapp/KoPAView.cpp:307
+msgid "Insert Page"
+msgstr "Chèn Trang"
+
+#: kopageapp/KoPAView.cpp:309 kopageapp/KoPAView.cpp:310
+#, fuzzy
+msgid "Insert a new page after the current one"
+msgstr "Chèn một trang vào sau trang hiện tại"
+
+#: kopageapp/KoPAView.cpp:313
+msgid "Copy Page"
+msgstr "Chép Trang"
+
+#: kopageapp/KoPAView.cpp:315 kopageapp/KoPAView.cpp:316
+msgid "Copy the current page"
+msgstr "Chép trang hiện tại"
+
+#: kopageapp/KoPAView.cpp:319
+msgid "Delete Page"
+msgstr "Xóa Trang"
+
+#: kopageapp/KoPAView.cpp:322 kopageapp/KoPAView.cpp:323
+#, fuzzy
+#| msgid "Copy the current page"
+msgid "Delete the current page"
+msgstr "Chép trang hiện tại"
+
+#: kopageapp/KoPAView.cpp:326
+#, fuzzy
+msgid "Master Page..."
+msgstr "Trang Dán"
+
+#: kopageapp/KoPAView.cpp:330
+msgid "Page Layout..."
+msgstr "Kiểu trang..."
+
+#. i18n: file: main/rdf/KoSemanticStylesheetsEditor.ui:63
+#. i18n: ectx: property (text), widget (QTableWidget, variables)
+#: kopageapp/KoPAView.cpp:339 rc.cpp:317
+msgid "Variable"
+msgstr "Biến số"
+
+#: kopageapp/KoPAView.cpp:344
+#, fuzzy
+#| msgid "Import Document"
+msgid "Import Document..."
+msgstr "Nhập Tài liệu"
+
+#: kopageapp/KoPAView.cpp:348
+#, fuzzy
+msgid "Configure..."
+msgstr "Gắn vào Lưới"
+
+#: kopageapp/KoPAView.cpp:401
+#, fuzzy
+#| msgid "Import lines:"
+msgid "Import Slideshow"
+msgstr "Nhập các dòng:"
+
+#: kopageapp/KoPAView.cpp:404 main/KoMainWindow.cpp:1211
+msgid "Import Document"
+msgstr "Nhập Tài liệu"
+
+#: kopageapp/KoPAView.cpp:433 kopageapp/KoPAView.cpp:437
+#, fuzzy, kde-format
+#| msgid ""
+#| "Could not open\n"
+#| "%1"
+msgid ""
+"Could not import\n"
+"%1"
+msgstr ""
+"Không thể mở\n"
+"%1"
+
+#: kopageapp/KoPAView.cpp:541
+#, fuzzy
+#| msgid "Change parameter"
+msgid "Change page layout"
+msgstr "Thay đổi tham số"
 
 #. i18n: file: main/rdf/KoRdfFoaFEditWidget.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -1444,6 +1445,17 @@ msgstr "Định dạng"
 msgid "Default"
 msgstr "&Mặc định"
 
+#: kotext/commands/DeleteTableColumnCommand.cpp:39
+#, fuzzy
+msgid "Delete Column"
+msgstr "Text đã &chọn"
+
+#: kotext/commands/DeleteTableRowCommand.cpp:39
+#, fuzzy
+#| msgid "Delete"
+msgid "Delete Row"
+msgstr "Xóa"
+
 #: kotext/KoTextEditor.cpp:435 kotext/KoTextEditor.cpp:440
 msgid "Bold"
 msgstr "Đậm"
@@ -1590,17 +1602,6 @@ msgstr ""
 msgid "Line Break"
 msgstr "Viền Đường thẳng"
 
-#: kotext/commands/DeleteTableColumnCommand.cpp:39
-#, fuzzy
-msgid "Delete Column"
-msgstr "Text đã &chọn"
-
-#: kotext/commands/DeleteTableRowCommand.cpp:39
-#, fuzzy
-#| msgid "Delete"
-msgid "Delete Row"
-msgstr "Xóa"
-
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
 msgstr "Chỉ in và thoát ra"
@@ -1663,6 +1664,10 @@ msgstr "Không thể tải mẫu %1."
 #, fuzzy, kde-format
 msgid "Unknown Calligra MimeType %1. Check your installation."
 msgstr "Không biết loại MIME KOffice %1. Kiểm tra lại cài đặt."
+
+#: main/KoDockerManager.cpp:68
+msgid "Tool Bars Docker"
+msgstr ""
 
 #: main/KoDocument.cpp:503
 msgid "Making backup..."
@@ -1742,7 +1747,7 @@ msgstr ""
 "Một tập tin được lưu tự động của tài liệu này đã tồn tại.\n"
 "Bạn có muốn mở nó không?"
 
-#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:635
+#: main/KoDocument.cpp:1279 main/KoDocument.cpp:1546 main/KoMainWindow.cpp:638
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Tập tin %1 không tồn tại."
@@ -1875,12 +1880,12 @@ msgstr ""
 "Tài liệu này chứa vài phiên bản. Dùng Tập tin -> Các phiên bản để mở một "
 "phiên bản cũ."
 
-#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1132
+#: main/KoDocument.cpp:1924 main/KoMainWindow.cpp:1139
 #: pigment/resources/KoColorSet.cpp:214
 msgid "Untitled"
 msgstr "Không đề"
 
-#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1135
+#: main/KoDocument.cpp:1927 main/KoMainWindow.cpp:1142
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -1960,7 +1965,7 @@ msgstr "Nhúng Đối tượng"
 msgid "Unknown"
 msgstr "Không biết"
 
-#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:283
+#: main/KoDocumentInfoDlg.cpp:90 main/KoMainWindow.cpp:287
 msgid "Document Information"
 msgstr "Thông tin về tài liệu"
 
@@ -2073,7 +2078,7 @@ msgstr ""
 "<qt>Tài liệu đã bị thay đổi kể từ khi nó được mở ra. Để hoàn thành giải mã, "
 "tài liệu cần được lưu lại.<p>Bạn có muốn lưu tài liệu này bây giờ không?</qt>"
 
-#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:757
+#: main/KoDocumentInfoDlg.cpp:489 main/KoMainWindow.cpp:760
 #, fuzzy, kde-format
 msgid "%1 (unknown file type)"
 msgstr "%1 (kiểu file không xác định)"
@@ -2128,7 +2133,7 @@ msgstr "Có"
 msgid "No"
 msgstr "Không"
 
-#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1202
+#: main/KoExistingDocumentPane.cpp:44 main/KoMainWindow.cpp:1209
 #: main/KoOpenPane.cpp:358 main/KoOpenPane.cpp:362
 #, fuzzy
 msgid "Open Document"
@@ -2190,87 +2195,87 @@ msgstr "Gắn vào Lưới"
 msgid "Shows or hides grid"
 msgstr "Hiện &Lưới"
 
-#: main/KoMainWindow.cpp:154
+#: main/KoMainWindow.cpp:158
 #, fuzzy, kde-format
 msgid "%1 unsaved document (%2)"
 msgstr "%1 tài liệu chưa được lưu (%2)"
 
-#: main/KoMainWindow.cpp:255
+#: main/KoMainWindow.cpp:259
 msgid "Export as PDF..."
 msgstr "Xuất ra PDF..."
 
-#: main/KoMainWindow.cpp:265
+#: main/KoMainWindow.cpp:269
 msgid "Reload"
 msgstr "Tải lại"
 
-#: main/KoMainWindow.cpp:269
+#: main/KoMainWindow.cpp:273
 msgid "Versions..."
 msgstr "Các phiên bản..."
 
-#: main/KoMainWindow.cpp:273
+#: main/KoMainWindow.cpp:277
 msgid "I&mport..."
 msgstr "&Nhập..."
 
-#: main/KoMainWindow.cpp:277
+#: main/KoMainWindow.cpp:281
 msgid "E&xport..."
 msgstr "&Xuất..."
 
-#: main/KoMainWindow.cpp:308
+#: main/KoMainWindow.cpp:312
 #, fuzzy
 msgid "&Close All Views"
 msgstr "Đóng Tất &cả Các khung xem"
 
-#: main/KoMainWindow.cpp:315
+#: main/KoMainWindow.cpp:319
 #, fuzzy
 msgid "&Split View"
 msgstr "&Chia đôi khung xem"
 
-#: main/KoMainWindow.cpp:320
+#: main/KoMainWindow.cpp:324
 msgid "&Remove View"
 msgstr "&Xóa khung xem"
 
-#: main/KoMainWindow.cpp:326
+#: main/KoMainWindow.cpp:330
 msgid "Full Screen Mode"
 msgstr "Chế độ Toàn màn hình"
 
-#: main/KoMainWindow.cpp:331
+#: main/KoMainWindow.cpp:335
 msgid "Splitter &Orientation"
 msgstr "&Hướng chia"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Horizontal"
 msgstr "&Ngang"
 
-#: main/KoMainWindow.cpp:335
+#: main/KoMainWindow.cpp:339
 msgid "&Vertical"
 msgstr "&Dọc"
 
-#: main/KoMainWindow.cpp:343
+#: main/KoMainWindow.cpp:347
 #, fuzzy
 #| msgid "Show Rulers"
 msgid "Show Dockers"
 msgstr "Hiện Thước kẻ"
 
-#: main/KoMainWindow.cpp:344
+#: main/KoMainWindow.cpp:348
 #, fuzzy
 #| msgid "Show Rulers"
 msgid "Hide Dockers"
 msgstr "Hiện Thước kẻ"
 
-#: main/KoMainWindow.cpp:351
+#: main/KoMainWindow.cpp:355
 msgid "Dockers"
 msgstr ""
 
-#: main/KoMainWindow.cpp:586
+#: main/KoMainWindow.cpp:589
 msgid "(write protected)"
 msgstr "(bảo vệ khỏi ghi)"
 
-#: main/KoMainWindow.cpp:590
+#: main/KoMainWindow.cpp:593
 #, kde-format
 msgid "Save as %1"
 msgstr "Lưu vào %1"
 
-#: main/KoMainWindow.cpp:765
+#: main/KoMainWindow.cpp:768
 #, kde-format
 msgid ""
 "<qt>Saving as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2279,11 +2284,11 @@ msgstr ""
 "<qt>Lưu vào định dạng %1 có thể làm mất một số thông tin định dạng.<p>Bạn có "
 "muốn lưu vào định dạng này?</qt>"
 
-#: main/KoMainWindow.cpp:768
+#: main/KoMainWindow.cpp:771
 msgid "Confirm Save"
 msgstr "Xác nhận Lưu"
 
-#: main/KoMainWindow.cpp:777
+#: main/KoMainWindow.cpp:780
 #, kde-format
 msgid ""
 "<qt>Exporting as a %1 may result in some loss of formatting.<p>Do you still "
@@ -2292,23 +2297,23 @@ msgstr ""
 "<qt>Xuất ra định dạng %1 có thể làm mất một số thông tin định dạng.<p>Bạn có "
 "muốn xuất ra định dạng này?</qt>"
 
-#: main/KoMainWindow.cpp:780
+#: main/KoMainWindow.cpp:783
 msgid "Confirm Export"
 msgstr "Xác nhận Xuất"
 
-#: main/KoMainWindow.cpp:781
+#: main/KoMainWindow.cpp:784
 msgid "Export"
 msgstr "Xuất"
 
-#: main/KoMainWindow.cpp:864
+#: main/KoMainWindow.cpp:867
 msgid "Save Document As"
 msgstr "Lưu Tài liệu Vào"
 
-#: main/KoMainWindow.cpp:866
+#: main/KoMainWindow.cpp:869
 msgid "Export Document As"
 msgstr "Xuất Tài liệu Ra"
 
-#: main/KoMainWindow.cpp:924 main/KoMainWindow.cpp:1337
+#: main/KoMainWindow.cpp:927 main/KoMainWindow.cpp:1344
 msgid ""
 "A document with this name already exists.\n"
 "Do you want to overwrite it?"
@@ -2316,31 +2321,31 @@ msgstr ""
 "Một văn bản có tên này đã tồn tại.\n"
 "Bạn có muốn ghi đè không?"
 
-#: main/KoMainWindow.cpp:926 main/KoMainWindow.cpp:1339
-#: main/KoMainWindow.cpp:1727
+#: main/KoMainWindow.cpp:929 main/KoMainWindow.cpp:1346
+#: main/KoMainWindow.cpp:1740
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: main/KoMainWindow.cpp:1331
+#: main/KoMainWindow.cpp:1338
 msgid "Write PDF"
 msgstr "Ghi PDF"
 
-#: main/KoMainWindow.cpp:1621
+#: main/KoMainWindow.cpp:1632
 #, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Hiện thanh công cụ %1"
 
-#: main/KoMainWindow.cpp:1623
+#: main/KoMainWindow.cpp:1634
 #, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "Ẩn thanh công cụ %1"
 
-#: main/KoMainWindow.cpp:1695
+#: main/KoMainWindow.cpp:1708
 #, kde-format
 msgid "Document - %1"
 msgstr "Tài liệu - %1"
 
-#: main/KoMainWindow.cpp:1725
+#: main/KoMainWindow.cpp:1738
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
@@ -2522,6 +2527,14 @@ msgstr "Không có ảnh nào."
 #: main/KoTemplatesPane.cpp:47
 msgid "Use This Template"
 msgstr "Dùng mẫu này"
+
+#: main/KoToolDocker.cpp:232
+msgid "Toggles showing a title bar"
+msgstr ""
+
+#: main/KoToolDocker.cpp:241
+msgid "Toggles organising the options in tabs or not"
+msgstr ""
 
 #: main/KoVersionDialog.cpp:48
 msgid "Version"

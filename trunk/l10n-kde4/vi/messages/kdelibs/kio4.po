@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 02:25+0100\n"
+"POT-Creation-Date: 2011-01-11 02:42+0100\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -17,9 +17,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KAider 0.1\n"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "Mọi ảnh"
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "Không thể tạo io-slave: %1"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -28,25 +29,6 @@ msgstr "Lấy ảnh"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "Ảnh OCR"
-
-#: kio/kfileitemdelegate.cpp:236
-#, fuzzy, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "1 mục"
-
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-#, fuzzy
-#| msgid "Unknown"
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "Không rõ"
-
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "Không thể tạo io-slave: %1"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -986,8 +968,8 @@ msgstr "Không có tập tin hay thư mục đó"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Không có tập tin hay thư mục <strong>%1</strong> đã ghi rõ."
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908 kio/paste.cpp:64
+#: kio/global.cpp:666 kio/job.cpp:2071 kio/paste.cpp:64 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908
 msgid "File Already Exists"
 msgstr "Tập tin đã có"
 
@@ -1871,95 +1853,136 @@ msgstr "Hãy chọn tên tập tin khác cho tập tin đích."
 msgid "Undocumented Error"
 msgstr "Lỗi không được diễn tả"
 
-#: kio/fileundomanager.cpp:116
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
+msgstr ""
+
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "&Đổi tên"
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr "Đệ nghị tê&n mới"
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "&Bỏ qua"
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr ""
+
+#: kio/renamedialog.cpp:146
 #, fuzzy
-#| msgid "Creating directory"
-msgid "Creating directory"
-msgstr "Đang tạo thư mục"
+#| msgid "Write"
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "Ghi"
 
-#: kio/fileundomanager.cpp:117 kio/job.cpp:171
-msgid "Directory"
-msgstr "Thư mục"
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "&Ghi đè"
 
-#: kio/fileundomanager.cpp:119
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr "Tiếp tục &lại"
+
+#: kio/renamedialog.cpp:162
+#, kde-format
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
+"Vui lòng gõ một tên tập tin mới."
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "&Tiếp tục"
+
+#: kio/renamedialog.cpp:238
 #, fuzzy
-#| msgid "Moving"
-msgid "Moving"
-msgstr "Đang chuyển"
+#| msgid ""
+#| "This action would overwrite '%1' with itself.\n"
+#| "Please enter a new file name:"
+msgid "This action will overwrite the destination."
+msgstr ""
+"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
+"Vui lòng gõ một tên tập tin mới."
 
-#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
+#: kio/renamedialog.cpp:240
 #, fuzzy
 #| msgid "Source"
-msgctxt "The source of a file operation"
 msgid "Source"
 msgstr "Nguồn"
 
-#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
+#: kio/renamedialog.cpp:241
 #, fuzzy
 #| msgid "Destination"
-msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "Đích"
 
-#: kio/fileundomanager.cpp:123
-#, fuzzy
-#| msgid "Deleting"
-msgid "Deleting"
-msgstr "Đang xoá"
-
-#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
-msgid "File"
-msgstr "Tập tin"
-
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
 msgstr ""
 
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr ""
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "Một mục cũ hơn tên « %1 » đã có ."
 
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr ""
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "Tập tin tương tự tên « %1 » đã có ."
 
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr ""
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "Mục mới hơn tên « %1 » đã có ."
 
-#: kio/fileundomanager.cpp:294
+#: kio/renamedialog.cpp:293
 #, fuzzy
 #| msgid "&Rename"
-msgid "Und&o: Rename"
+msgid "Rename:"
 msgstr "&Đổi tên"
 
-#: kio/fileundomanager.cpp:296
-#, fuzzy
-#| msgctxt "to trash"
-#| msgid "&Trash"
-msgid "Und&o: Trash"
-msgstr "Bỏ vào &Rác"
-
-#: kio/fileundomanager.cpp:298
-#, fuzzy
-#| msgid "Could Not Create Folder"
-msgid "Und&o: Create Folder"
-msgstr "Không thể tạo thư mục"
-
-#: kio/fileundomanager.cpp:764
+#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
+#: kio/kdirlister.cpp:331
 #, kde-format
 msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
+"Malformed URL\n"
+"%1"
 msgstr ""
-
-#: kio/fileundomanager.cpp:767
-#, fuzzy
-#| msgid "Updating System Configuration"
-msgid "Undo File Copy Confirmation"
-msgstr "Đang cập nhật cấu hình hệ thống"
+"Địa chỉ Mạng dạng sai :\n"
+"%1"
 
 #: kio/kdesktopfileactions.cpp:65
 #, kde-format
@@ -2011,68 +2034,6 @@ msgstr "Đẩy ra"
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
 msgstr "Tháo gắn kết"
-
-#: kio/job.cpp:156
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Đang chuyển"
-
-#: kio/job.cpp:163
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Đang sao chép"
-
-#: kio/job.cpp:170
-#, fuzzy
-#| msgid "Creating directory"
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Đang tạo thư mục"
-
-#: kio/job.cpp:176
-#, fuzzy
-#| msgid "Deleting"
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "Đang xoá"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr ""
-
-#: kio/job.cpp:188
-#, fuzzy
-#| msgid "Transferring"
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "Đang truyền"
-
-#: kio/job.cpp:194
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Đăng gắn kết"
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "Thiết bị"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "Điểm lắp"
-
-#: kio/job.cpp:201
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Đang tháo gắn kết"
 
 #: kio/slave.cpp:442
 #, kde-format
@@ -2218,38 +2179,179 @@ msgstr ""
 "Chứng nhận SSL đang bị từ chối như được yêu cầu. Bạn có thể tắt khả năng này "
 "trong Trung tâm Điều khiển KDE."
 
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr ""
+#: kio/kfileitemdelegate.cpp:236
+#, fuzzy, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 mục"
 
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr ""
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+#, fuzzy
+#| msgid "Unknown"
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "Không rõ"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "Hộp thoại xác thực"
 
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "Mặc định"
+#: kio/job.cpp:125
+#, fuzzy
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Đang chuyển"
+
+#: kio/job.cpp:126 kio/job.cpp:133 kio/job.cpp:158 kio/fileundomanager.cpp:120
+#, fuzzy
+#| msgid "Source"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Nguồn"
+
+#: kio/job.cpp:127 kio/job.cpp:134 kio/fileundomanager.cpp:121
+#, fuzzy
+#| msgid "Destination"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Đích"
+
+#: kio/job.cpp:132
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Đang sao chép"
+
+#: kio/job.cpp:139
+#, fuzzy
+#| msgid "Creating directory"
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Đang tạo thư mục"
+
+#: kio/job.cpp:140 kio/fileundomanager.cpp:117
+msgid "Directory"
+msgstr "Thư mục"
+
+#: kio/job.cpp:145
+#, fuzzy
+#| msgid "Deleting"
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "Đang xoá"
+
+#: kio/job.cpp:146 kio/job.cpp:152 kio/fileundomanager.cpp:124
+msgid "File"
+msgstr "Tập tin"
+
+#: kio/job.cpp:151
+msgctxt "@title job"
+msgid "Examining"
+msgstr ""
+
+#: kio/job.cpp:157
+#, fuzzy
+#| msgid "Transferring"
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "Đang truyền"
+
+#: kio/job.cpp:163
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Đăng gắn kết"
+
+#: kio/job.cpp:164
+msgid "Device"
+msgstr "Thiết bị"
+
+#: kio/job.cpp:165 kio/job.cpp:171
+msgid "Mountpoint"
+msgstr "Điểm lắp"
+
+#: kio/job.cpp:170
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "Đang tháo gắn kết"
+
+#: kio/fileundomanager.cpp:116
+#, fuzzy
+#| msgid "Creating directory"
+msgid "Creating directory"
+msgstr "Đang tạo thư mục"
+
+#: kio/fileundomanager.cpp:119
+#, fuzzy
+#| msgid "Moving"
+msgid "Moving"
+msgstr "Đang chuyển"
+
+#: kio/fileundomanager.cpp:123
+#, fuzzy
+#| msgid "Deleting"
+msgid "Deleting"
+msgstr "Đang xoá"
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr ""
+
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr ""
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr ""
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr ""
+
+#: kio/fileundomanager.cpp:294
+#, fuzzy
+#| msgid "&Rename"
+msgid "Und&o: Rename"
+msgstr "&Đổi tên"
+
+#: kio/fileundomanager.cpp:296
+#, fuzzy
+#| msgctxt "to trash"
+#| msgid "&Trash"
+msgid "Und&o: Trash"
+msgstr "Bỏ vào &Rác"
+
+#: kio/fileundomanager.cpp:298
+#, fuzzy
+#| msgid "Could Not Create Folder"
+msgid "Und&o: Create Folder"
+msgstr "Không thể tạo thư mục"
+
+#: kio/fileundomanager.cpp:764
+#, kde-format
+msgid ""
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
+msgstr ""
+
+#: kio/fileundomanager.cpp:767
+#, fuzzy
+#| msgid "Updating System Configuration"
+msgid "Undo File Copy Confirmation"
+msgstr "Đang cập nhật cấu hình hệ thống"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "Dạng thức dữ liệu :"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "Thông tin"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "Bỏ qua"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr "Tự động bỏ qua"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, kde-format
@@ -2268,7 +2370,7 @@ msgid ""
 "be undone."
 msgstr ""
 
-#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:638
+#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:640
 #, fuzzy
 #| msgid "Trash"
 msgctxt "@action:button"
@@ -2340,6 +2442,80 @@ msgstr "Sở hữu :"
 msgid "Permissions:"
 msgstr "Quyền hạn:"
 
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr "Tên tập tin cho nội dung của bảng tạm:"
+
+#: kio/paste.cpp:124
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"Bảng tạm đã thay đổi kể từ bạn đã dùng khả năng « dán »: dạng thức dữ liệu đã "
+"chọn không còn thích hợp lại. Vui lòng sao chép lại điều cần dán."
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr "Bảng tạm rỗng"
+
+#: kio/paste.cpp:339
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "&Dán %1 tập tin"
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "&Dán %1 địa chỉ Mạng"
+
+#: kio/paste.cpp:343
+msgid "&Paste Clipboard Contents"
+msgstr "&Dán nội dung của bảng tạm"
+
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr ""
+
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr ""
+
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "Đang cập nhật cấu hình hệ thống"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "Đang cập nhật cấu hình hệ thống của bạn."
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr ""
+
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "Mặc định"
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "Thông tin"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "Bỏ qua"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
+msgstr "Tự động bỏ qua"
+
 #: kio/krun.cpp:126
 #, kde-format
 msgid ""
@@ -2408,16 +2584,6 @@ msgstr ""
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
-#: kio/kdirlister.cpp:331
-#, kde-format
-msgid ""
-"Malformed URL\n"
-"%1"
-msgstr ""
-"Địa chỉ Mạng dạng sai :\n"
-"%1"
-
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2432,179 +2598,14 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "Không tìm thấy chương trình « %1 »"
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
-msgstr "Đã có, là thư mục."
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "Mọi ảnh"
 
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "Đang cập nhật cấu hình hệ thống"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "Đang cập nhật cấu hình hệ thống của bạn."
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr ""
-
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
-msgstr ""
-
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "&Đổi tên"
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr "Đệ nghị tê&n mới"
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "&Bỏ qua"
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr ""
-
-#: kio/renamedialog.cpp:146
-#, fuzzy
-#| msgid "Write"
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "Ghi"
-
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "&Ghi đè"
-
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr "Tiếp tục &lại"
-
-#: kio/renamedialog.cpp:162
+#: kio/kdbusservicestarter.cpp:76
 #, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
-"Vui lòng gõ một tên tập tin mới."
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "&Tiếp tục"
-
-#: kio/renamedialog.cpp:238
-#, fuzzy
-#| msgid ""
-#| "This action would overwrite '%1' with itself.\n"
-#| "Please enter a new file name:"
-msgid "This action will overwrite the destination."
-msgstr ""
-"Hành động này sẽ ghi đè lên « %1 » bằng chính nó.\n"
-"Vui lòng gõ một tên tập tin mới."
-
-#: kio/renamedialog.cpp:240
-#, fuzzy
-#| msgid "Source"
-msgid "Source"
-msgstr "Nguồn"
-
-#: kio/renamedialog.cpp:241
-#, fuzzy
-#| msgid "Destination"
-msgid "Destination"
-msgstr "Đích"
-
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
-msgstr ""
-
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "Một mục cũ hơn tên « %1 » đã có ."
-
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "Tập tin tương tự tên « %1 » đã có ."
-
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "Mục mới hơn tên « %1 » đã có ."
-
-#: kio/renamedialog.cpp:293
-#, fuzzy
-#| msgid "&Rename"
-msgid "Rename:"
-msgstr "&Đổi tên"
-
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr "Tên tập tin cho nội dung của bảng tạm:"
-
-#: kio/paste.cpp:124
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"Bảng tạm đã thay đổi kể từ bạn đã dùng khả năng « dán »: dạng thức dữ liệu đã "
-"chọn không còn thích hợp lại. Vui lòng sao chép lại điều cần dán."
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr "Bảng tạm rỗng"
-
-#: kio/paste.cpp:339
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "&Dán %1 tập tin"
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "&Dán %1 địa chỉ Mạng"
-
-#: kio/paste.cpp:343
-msgid "&Paste Clipboard Contents"
-msgstr "&Dán nội dung của bảng tạm"
+msgid "No service implementing %1"
+msgstr "Không có dịch vụ thi hành %1"
 
 #: kio/kdirlister.cpp:341
 #, kde-format
@@ -2615,10 +2616,9 @@ msgstr ""
 "Không thể liệt kê URL\n"
 "%1"
 
-#: kio/kdbusservicestarter.cpp:76
-#, kde-format
-msgid "No service implementing %1"
-msgstr "Không có dịch vụ thi hành %1"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
+msgstr "Đã có, là thư mục."
 
 #: kio/chmodjob.cpp:214
 #, kde-format
@@ -3020,106 +3020,6 @@ msgstr "Mở dưới thẻ mới"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Tập tin Đánh dấu Opera (*.adr)"
 
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "Ứng dụng đã biết"
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "Mở bằng"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Hãy chọn ứng dụng cần dùng khi mở <b>%1</b>. Nếu chương trình này không "
-"nằm trong danh sách, hãy gõ tên nó, hoặc nhắp vào cái nút Duyệt.</qt>"
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "Chọn tên của chương trình cần dùng để mở những tập tin được chọn."
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "Chọn ứng dụng cho %1"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>Hãy chọn chương trình thích hợp với kiểu tập tin <b>%1</b>. Nếu chương "
-"trình này không nằm trong danh sách, hãy gõ tên nó, hoặc nhắp vào cái nút "
-"Duyệt.</qt>"
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "Chọn ứng dụng"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr ""
-"<qt>Hãy chọn chương trình. Nếu chương trình này không nằm trong danh sách, "
-"hãy gõ tên nó, hoặc nhắp vào cái nút Duyệt.</qt>"
-
-#: kfile/kopenwithdialog.cpp:600
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"Bạn có khả năng nhập theo lệnh một hay nhiều bộ giữ chỗ sẽ được thay thế "
-"bằng giá trị thật khi chương trình được chạy.\n"
-"%f\tmột tên tập tin riêng lẻ\n"
-"%F\tdanh sách nhiều tập tin; hãy dùng chỉ với ứng dụng có khả năng mở nhiều "
-"tập tin cùng lúc.\n"
-"%u\tmột địa chỉ Mạng riêng lẻ\n"
-"%U\tdanh sách nhiềU địa chỉ Mạng\n"
-"%d\tthư mục chứa tập tin cần mở\n"
-"%D\tDanh sách nhiều thư mục\n"
-"%i\tbIểu tượng\n"
-"%m\tbiểu tượng nhỏ\n"
-"%c\tChú thích"
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr "Chạy trong &thiết bị cuối"
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr "&Không đóng khi lệnh thoát"
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr "&Nhớ ứng dụng tương ứng với kiểu tập tin này."
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr ""
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr ""
-
 #: kfile/kfiledialog.cpp:129
 #, fuzzy
 #| msgid "*|All Files"
@@ -3146,39 +3046,9 @@ msgstr "Mở"
 msgid "Save As"
 msgstr "Lưu dạng"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<Lỗi>"
-
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr "Hộp thoại mở tập tin"
-
-#: kfile/kmetaprops.cpp:57
-#, fuzzy
-#| msgid "Configure"
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "Cấu hình"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr ""
-
-#: kfile/kmetaprops.cpp:120
-#, fuzzy
-#| msgid "Configure"
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "Cấu hình"
-
-#: kfile/kmetaprops.cpp:130
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "Thông tin"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3281,9 +3151,39 @@ msgstr "c"
 msgid "Effective"
 msgstr "Hữu hiệu"
 
+#: kfile/kmetaprops.cpp:57
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "Cấu hình"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr ""
+
+#: kfile/kmetaprops.cpp:120
+#, fuzzy
+#| msgid "Configure"
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "Cấu hình"
+
+#: kfile/kmetaprops.cpp:130
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "Thông tin"
+
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr "Tên thiết bị"
+
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "Địa điểm:"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3360,41 +3260,333 @@ msgstr ""
 "Gặp lỗi khi cố bỏ chia sẻ thư mục « %1 ». Hãy kiểm tra xem tập lệnh Perl « "
 "fileshareset » (đặt chia sẻ tập tin) đã được đặt « suid root »."
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "Địa điểm:"
-
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "X&em thử"
 
-#: kfile/kcommentwidget.cpp:65
-#, fuzzy
-#| msgid "Add Entry..."
-msgctxt "@label"
-msgid "Add Comment..."
-msgstr "Thêm mục..."
-
-#: kfile/kcommentwidget.cpp:71
-#, fuzzy
-#| msgid "Calculating..."
-msgctxt "@label"
-msgid "Change..."
-msgstr "Đang tính..."
-
-#: kfile/kcommentwidget.cpp:124
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
 #, fuzzy
 #| msgid "Comment"
-msgctxt "@title:window"
-msgid "Change Comment"
+msgctxt "@label"
+msgid "Comment"
 msgstr "Ghi chú"
 
-#: kfile/kcommentwidget.cpp:125
+#: kfile/knfotranslator.cpp:41
 #, fuzzy
-#| msgid "Comment"
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "Ghi chú"
+#| msgid "Created:"
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "Tạo :"
+
+#: kfile/knfotranslator.cpp:42
+#, fuzzy
+#| msgid "Size"
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "Cỡ"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:44
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "&Chung"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:46
+#, fuzzy
+#| msgid "Parent Folder"
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "Thư mục mẹ"
+
+#: kfile/knfotranslator.cpp:47
+msgctxt "@label"
+msgid "Keyword"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:48
+#, fuzzy
+#| msgid "Modified"
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "Sửa đổi"
+
+#: kfile/knfotranslator.cpp:49
+#, fuzzy
+#| msgid "Mime Type"
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "Kiểu MIME"
+
+#: kfile/knfotranslator.cpp:50
+#, fuzzy
+#| msgid "Contents:"
+msgctxt "@label"
+msgid "Content"
+msgstr "Nội dung:"
+
+#: kfile/knfotranslator.cpp:51
+#, fuzzy
+#| msgid "Subject line"
+msgctxt "@label"
+msgid "Subject"
+msgstr "Dòng chủ thể"
+
+#: kfile/knfotranslator.cpp:52
+#, fuzzy
+#| msgid "File"
+msgctxt "@label music title"
+msgid "Title"
+msgstr "Tập tin"
+
+#: kfile/knfotranslator.cpp:53
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "Địa điểm:"
+
+#: kfile/knfotranslator.cpp:54
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label"
+msgid "Creator"
+msgstr "Tạo :"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:57
+#, fuzzy
+#| msgid "Categories"
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "Loại"
+
+#: kfile/knfotranslator.cpp:58
+#, fuzzy
+#| msgid "C&onnect"
+msgctxt "@label"
+msgid "Codec"
+msgstr "&Kết nối"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:60
+#, fuzzy
+#| msgid "Destination"
+msgctxt "@label"
+msgid "Duration"
+msgstr "Đích"
+
+#: kfile/knfotranslator.cpp:61
+#, fuzzy
+#| msgid "Device name"
+msgctxt "@label"
+msgid "Filename"
+msgstr "Tên thiết bị"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:64
+#, fuzzy
+#| msgid "Link"
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "Liên kết"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:67
+#, fuzzy
+#| msgid "Write"
+msgctxt "@label"
+msgid "Width"
+msgstr "Ghi"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:71
+#, fuzzy
+#| msgid "Exposure:"
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "Phơi nắng:"
+
+#: kfile/knfotranslator.cpp:72
+#, fuzzy
+#| msgid "Class"
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "Hạng"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:76
+#, fuzzy
+#| msgid "Mask"
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "Lọc"
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:78
+#, fuzzy
+#| msgid "Modified"
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "Sửa đổi"
+
+#: kfile/knfotranslator.cpp:79
+#, fuzzy
+#| msgid "Organization:"
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "Tổ chức:"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:81
+#, fuzzy
+#| msgid "&General"
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "&Chung"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:85
+#, fuzzy
+#| msgid "Type"
+msgctxt "@label file type"
+msgid "Type"
+msgstr "Kiểu"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:91
+#, fuzzy
+#| msgid "Created:"
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr "Tạo :"
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr ""
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr ""
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -3957,330 +4149,6 @@ msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống c�
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
-#, fuzzy
-#| msgid "Comment"
-msgctxt "@label"
-msgid "Comment"
-msgstr "Ghi chú"
-
-#: kfile/knfotranslator.cpp:41
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "Tạo :"
-
-#: kfile/knfotranslator.cpp:42
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "Cỡ"
-
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:44
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "&Chung"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:46
-#, fuzzy
-#| msgid "Parent Folder"
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "Thư mục mẹ"
-
-#: kfile/knfotranslator.cpp:47
-msgctxt "@label"
-msgid "Keyword"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:48
-#, fuzzy
-#| msgid "Modified"
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "Sửa đổi"
-
-#: kfile/knfotranslator.cpp:49
-#, fuzzy
-#| msgid "Mime Type"
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "Kiểu MIME"
-
-#: kfile/knfotranslator.cpp:50
-#, fuzzy
-#| msgid "Contents:"
-msgctxt "@label"
-msgid "Content"
-msgstr "Nội dung:"
-
-#: kfile/knfotranslator.cpp:51
-#, fuzzy
-#| msgid "Subject line"
-msgctxt "@label"
-msgid "Subject"
-msgstr "Dòng chủ thể"
-
-#: kfile/knfotranslator.cpp:52
-#, fuzzy
-#| msgid "File"
-msgctxt "@label music title"
-msgid "Title"
-msgstr "Tập tin"
-
-#: kfile/knfotranslator.cpp:53
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "Địa điểm:"
-
-#: kfile/knfotranslator.cpp:54
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label"
-msgid "Creator"
-msgstr "Tạo :"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:57
-#, fuzzy
-#| msgid "Categories"
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "Loại"
-
-#: kfile/knfotranslator.cpp:58
-#, fuzzy
-#| msgid "C&onnect"
-msgctxt "@label"
-msgid "Codec"
-msgstr "&Kết nối"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:60
-#, fuzzy
-#| msgid "Destination"
-msgctxt "@label"
-msgid "Duration"
-msgstr "Đích"
-
-#: kfile/knfotranslator.cpp:61
-#, fuzzy
-#| msgid "Device name"
-msgctxt "@label"
-msgid "Filename"
-msgstr "Tên thiết bị"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:64
-#, fuzzy
-#| msgid "Link"
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "Liên kết"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:67
-#, fuzzy
-#| msgid "Write"
-msgctxt "@label"
-msgid "Width"
-msgstr "Ghi"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:71
-#, fuzzy
-#| msgid "Exposure:"
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "Phơi nắng:"
-
-#: kfile/knfotranslator.cpp:72
-#, fuzzy
-#| msgid "Class"
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "Hạng"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:76
-#, fuzzy
-#| msgid "Mask"
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "Lọc"
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:78
-#, fuzzy
-#| msgid "Modified"
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "Sửa đổi"
-
-#: kfile/knfotranslator.cpp:79
-#, fuzzy
-#| msgid "Organization:"
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "Tổ chức:"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:81
-#, fuzzy
-#| msgid "&General"
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "&Chung"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:85
-#, fuzzy
-#| msgid "Type"
-msgctxt "@label file type"
-msgid "Type"
-msgstr "Kiểu"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:91
-#, fuzzy
-#| msgid "Created:"
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr "Tạo :"
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr ""
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr ""
-
 #: kfile/kfilemetadataprovider.cpp:414
 #, fuzzy
 #| msgid "Modified"
@@ -4336,6 +4204,138 @@ msgstr "Cỡ :"
 msgctxt "@label"
 msgid "Type"
 msgstr "Kiểu"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<Lỗi>"
+
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "Ứng dụng đã biết"
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "Mở bằng"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Hãy chọn ứng dụng cần dùng khi mở <b>%1</b>. Nếu chương trình này không "
+"nằm trong danh sách, hãy gõ tên nó, hoặc nhắp vào cái nút Duyệt.</qt>"
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "Chọn tên của chương trình cần dùng để mở những tập tin được chọn."
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "Chọn ứng dụng cho %1"
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>Hãy chọn chương trình thích hợp với kiểu tập tin <b>%1</b>. Nếu chương "
+"trình này không nằm trong danh sách, hãy gõ tên nó, hoặc nhắp vào cái nút "
+"Duyệt.</qt>"
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "Chọn ứng dụng"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr ""
+"<qt>Hãy chọn chương trình. Nếu chương trình này không nằm trong danh sách, "
+"hãy gõ tên nó, hoặc nhắp vào cái nút Duyệt.</qt>"
+
+#: kfile/kopenwithdialog.cpp:600
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"Bạn có khả năng nhập theo lệnh một hay nhiều bộ giữ chỗ sẽ được thay thế "
+"bằng giá trị thật khi chương trình được chạy.\n"
+"%f\tmột tên tập tin riêng lẻ\n"
+"%F\tdanh sách nhiều tập tin; hãy dùng chỉ với ứng dụng có khả năng mở nhiều "
+"tập tin cùng lúc.\n"
+"%u\tmột địa chỉ Mạng riêng lẻ\n"
+"%U\tdanh sách nhiềU địa chỉ Mạng\n"
+"%d\tthư mục chứa tập tin cần mở\n"
+"%D\tDanh sách nhiều thư mục\n"
+"%i\tbIểu tượng\n"
+"%m\tbiểu tượng nhỏ\n"
+"%c\tChú thích"
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr "Chạy trong &thiết bị cuối"
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr "&Không đóng khi lệnh thoát"
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr "&Nhớ ứng dụng tương ứng với kiểu tập tin này."
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr ""
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr ""
+
+#: kfile/kcommentwidget.cpp:65
+#, fuzzy
+#| msgid "Add Entry..."
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "Thêm mục..."
+
+#: kfile/kcommentwidget.cpp:71
+#, fuzzy
+#| msgid "Calculating..."
+msgctxt "@label"
+msgid "Change..."
+msgstr "Đang tính..."
+
+#: kfile/kcommentwidget.cpp:124
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Change Comment"
+msgstr "Ghi chú"
+
+#: kfile/kcommentwidget.cpp:125
+#, fuzzy
+#| msgid "Comment"
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "Ghi chú"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4441,51 +4441,6 @@ msgstr "bộ quản lý giao thức telnet"
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "Bạn không có quyền truy cập giao thức %1."
-
-#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 (%2)"
-
-#: kssl/kcm/cacertificatespage.cpp:131
-#, fuzzy
-#| msgid "Send certificate"
-msgid "System certificates"
-msgstr "Gởi chứng nhận"
-
-#: kssl/kcm/cacertificatespage.cpp:138
-#, fuzzy
-#| msgid "Send certificate"
-msgid "User-added certificates"
-msgstr "Gởi chứng nhận"
-
-#: kssl/kcm/cacertificatespage.cpp:295
-#, fuzzy
-#| msgid "Certificate"
-msgid "Pick Certificates"
-msgstr "Chứng nhận"
-
-#: kssl/kcm/kcmssl.cpp:40
-#, fuzzy
-#| msgid "Reload configuration file"
-msgid "SSL Configuration Module"
-msgstr "Tải lại tập tin cấu hình"
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr ""
-
-#: kssl/kcm/kcmssl.cpp:55
-#, fuzzy
-#| msgid "Link"
-msgid "SSL Signers"
-msgstr "Liên kết"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4879,6 +4834,13 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr ""
 
+#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 (%2)"
+
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "Chứng nhận"
@@ -4972,6 +4934,44 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr "UTC"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+#, fuzzy
+#| msgid "Send certificate"
+msgid "System certificates"
+msgstr "Gởi chứng nhận"
+
+#: kssl/kcm/cacertificatespage.cpp:138
+#, fuzzy
+#| msgid "Send certificate"
+msgid "User-added certificates"
+msgstr "Gởi chứng nhận"
+
+#: kssl/kcm/cacertificatespage.cpp:295
+#, fuzzy
+#| msgid "Certificate"
+msgid "Pick Certificates"
+msgstr "Chứng nhận"
+
+#: kssl/kcm/kcmssl.cpp:40
+#, fuzzy
+#| msgid "Reload configuration file"
+msgid "SSL Configuration Module"
+msgstr "Tải lại tập tin cấu hình"
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr ""
+
+#: kssl/kcm/kcmssl.cpp:55
+#, fuzzy
+#| msgid "Link"
+msgid "SSL Signers"
+msgstr "Liên kết"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5341,7 +5341,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:234
+#: rc.cpp:168 rc.cpp:327
 msgid "Add..."
 msgstr "Thêm..."
 
@@ -5360,7 +5360,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:231
+#: rc.cpp:174 rc.cpp:324
 msgid "Remove"
 msgstr "Bỏ"
 
@@ -5384,9 +5384,216 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "Tùy chọn cấp c&ao"
 
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:183
+msgid "[padlock]"
+msgstr ""
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:187
+#, fuzzy
+#| msgid "IP address:"
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "Địa chỉ IP:"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:191
+#, fuzzy
+#| msgid "IP address:"
+msgid "IP address:"
+msgstr "Địa chỉ IP:"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:195
+#, fuzzy
+#| msgid "&Description:"
+msgid "Encryption:"
+msgstr "&Mô tả:"
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:199
+msgid "Details:"
+msgstr "Chi tiết:"
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:203
+#, fuzzy
+#| msgid "SSL version:"
+msgid "SSL version:"
+msgstr "Phiên bản SSL:"
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:207
+#, fuzzy
+#| msgid "Certificate"
+msgid "Certificate chain:"
+msgstr "Chứng nhận"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:210
+#, fuzzy
+#| msgid "Created:"
+msgid "Trusted:"
+msgstr "Tạo :"
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:214
+#, fuzzy
+#| msgid "Valid from:"
+msgid "Validity period:"
+msgstr "Hợp lệ từ :"
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:218
+#, fuzzy
+#| msgid "Serial number:"
+msgid "Serial number:"
+msgstr "Số sản xuất:"
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:222
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "MD5 digest:"
+msgstr "Bản tóm tắt MD5:"
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:225
+#, fuzzy
+#| msgid "MD5 digest:"
+msgid "SHA1 digest:"
+msgstr "Bản tóm tắt MD5:"
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:228
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+"Lúc này bạn cần phải cung cấp một mật khẩu cho yêu cầu chứng nhận. Vui lòng "
+"chọn một mật khẩu rất bảo mật, vì nó sẽ được dùng để mật mã khoá riêng của "
+"bạn."
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:231
+msgid "&Repeat password:"
+msgstr "Gõ &lại mật khẩu :"
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:234
+msgid "&Choose password:"
+msgstr "&Chọn mật khẩu :"
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:237
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+"Bạn đã ngụ ý rằng bạn muốn được hay mua một chứng nhận bảo mật. Trợ lý này "
+"sẽ hướng dẫn bạn qua thủ tục đó. Bạn có khả năng thôi tiến trình vào bất cứ "
+"điểm nào nên phiên giao dịch sẽ bị hủy bỏ."
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:240
+msgid "Common name:"
+msgstr "Tên chung:"
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:243
+msgid "Acme Co."
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:246
+msgid "Organization:"
+msgstr "Tổ chức:"
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:249
+msgid "Acme Sundry Products Company"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:252
+msgid "Organizational unit:"
+msgstr "Đơn vị tổ chức:"
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:255
+msgid "Fraud Department"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:258
+msgid "Country:"
+msgstr "Quốc gia :"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:261
+#, fuzzy
+#| msgid "Can Read"
+msgid "Canada"
+msgstr "Có thể đọc"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:264
+#, fuzzy
+#| msgctxt "Federal State"
+#| msgid "State:"
+msgid "State:"
+msgstr "Tỉnh"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:267
+msgid "Quebec"
+msgstr ""
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:270
+#, fuzzy
+#| msgid "Country:"
+msgid "City:"
+msgstr "Quốc gia :"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:273
+msgid "Lakeridge Meadows"
+msgstr ""
+
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:183
+#: rc.cpp:276
 #, fuzzy
 #| msgid "Security Information"
 msgid "<b>Subject Information</b>"
@@ -5394,7 +5601,7 @@ msgstr "Thông tin bảo mật"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:186
+#: rc.cpp:279
 #, fuzzy
 #| msgid " <b>[Cross Domain]</b>"
 msgid "<b>Issuer Information</b>"
@@ -5402,7 +5609,7 @@ msgstr " <b>[Đa miền]</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:189
+#: rc.cpp:282
 #, fuzzy
 #| msgid "<b>%1</b>"
 msgid "<b>Other</b>"
@@ -5410,7 +5617,7 @@ msgstr "<b>%1</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:192
+#: rc.cpp:285
 #, fuzzy
 #| msgid "Valid from:"
 msgid "Validity period"
@@ -5424,7 +5631,7 @@ msgstr "Hợp lệ từ :"
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
+#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
 #, fuzzy
 #| msgid "&Name:"
 msgid "TextLabel"
@@ -5432,7 +5639,7 @@ msgstr "Tê&n:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:198
+#: rc.cpp:291
 #, fuzzy
 #| msgid "Serial number:"
 msgid "Serial number"
@@ -5440,7 +5647,7 @@ msgstr "Số sản xuất:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:204
+#: rc.cpp:297
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "MD5 digest"
@@ -5448,7 +5655,7 @@ msgstr "Bản tóm tắt MD5:"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:210
+#: rc.cpp:303
 #, fuzzy
 #| msgid "MD5 digest:"
 msgid "SHA1 digest"
@@ -5456,7 +5663,7 @@ msgstr "Bản tóm tắt MD5:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:216
+#: rc.cpp:309
 #, fuzzy
 #| msgid "Organization:"
 msgid "Organization / Common Name"
@@ -5464,7 +5671,7 @@ msgstr "Tổ chức:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:219
+#: rc.cpp:312
 #, fuzzy
 #| msgid "Organizational unit:"
 msgid "Organizational Unit"
@@ -5472,230 +5679,23 @@ msgstr "Đơn vị tổ chức:"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:222
+#: rc.cpp:315
 msgid "Display..."
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:225
+#: rc.cpp:318
 msgid "Disable"
 msgstr ""
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:228
+#: rc.cpp:321
 #, fuzzy
 #| msgid "Emblems"
 msgid "Enable"
 msgstr "Hình tượng"
-
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:237
-msgid "[padlock]"
-msgstr ""
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:241
-#, fuzzy
-#| msgid "IP address:"
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "Địa chỉ IP:"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:245
-#, fuzzy
-#| msgid "IP address:"
-msgid "IP address:"
-msgstr "Địa chỉ IP:"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:249
-#, fuzzy
-#| msgid "&Description:"
-msgid "Encryption:"
-msgstr "&Mô tả:"
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:253
-msgid "Details:"
-msgstr "Chi tiết:"
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:257
-#, fuzzy
-#| msgid "SSL version:"
-msgid "SSL version:"
-msgstr "Phiên bản SSL:"
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:261
-#, fuzzy
-#| msgid "Certificate"
-msgid "Certificate chain:"
-msgstr "Chứng nhận"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:264
-#, fuzzy
-#| msgid "Created:"
-msgid "Trusted:"
-msgstr "Tạo :"
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:268
-#, fuzzy
-#| msgid "Valid from:"
-msgid "Validity period:"
-msgstr "Hợp lệ từ :"
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:272
-#, fuzzy
-#| msgid "Serial number:"
-msgid "Serial number:"
-msgstr "Số sản xuất:"
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:276
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "MD5 digest:"
-msgstr "Bản tóm tắt MD5:"
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:279
-#, fuzzy
-#| msgid "MD5 digest:"
-msgid "SHA1 digest:"
-msgstr "Bản tóm tắt MD5:"
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:282
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-"Lúc này bạn cần phải cung cấp một mật khẩu cho yêu cầu chứng nhận. Vui lòng "
-"chọn một mật khẩu rất bảo mật, vì nó sẽ được dùng để mật mã khoá riêng của "
-"bạn."
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:285
-msgid "&Repeat password:"
-msgstr "Gõ &lại mật khẩu :"
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:288
-msgid "&Choose password:"
-msgstr "&Chọn mật khẩu :"
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:291
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-"Bạn đã ngụ ý rằng bạn muốn được hay mua một chứng nhận bảo mật. Trợ lý này "
-"sẽ hướng dẫn bạn qua thủ tục đó. Bạn có khả năng thôi tiến trình vào bất cứ "
-"điểm nào nên phiên giao dịch sẽ bị hủy bỏ."
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:294
-msgid "Common name:"
-msgstr "Tên chung:"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:297
-msgid "Acme Co."
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:300
-msgid "Organization:"
-msgstr "Tổ chức:"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:303
-msgid "Acme Sundry Products Company"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:306
-msgid "Organizational unit:"
-msgstr "Đơn vị tổ chức:"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:309
-msgid "Fraud Department"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:312
-msgid "Country:"
-msgstr "Quốc gia :"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:315
-#, fuzzy
-#| msgid "Can Read"
-msgid "Canada"
-msgstr "Có thể đọc"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:318
-#, fuzzy
-#| msgctxt "Federal State"
-#| msgid "State:"
-msgid "State:"
-msgstr "Tỉnh"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:321
-msgid "Quebec"
-msgstr ""
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:324
-#, fuzzy
-#| msgid "Country:"
-msgid "City:"
-msgstr "Quốc gia :"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:327
-msgid "Lakeridge Meadows"
-msgstr ""
 
 #: ../kioslave/file/file.cpp:209
 #, kde-format
@@ -6623,6 +6623,14 @@ msgstr ""
 "<p>Những đánh dấu này đặc trưng cho hộp thoại tập tin, nhưng về mặt khác có "
 "cùng hoạt động với các đánh dấu khác trong KDE.</qt>"
 
+#: ../kfile/kurlnavigatortogglebutton.cpp:93
+msgid "Click for Location Navigation"
+msgstr "Nhấn để duyệt tới địa điểm"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:95
+msgid "Click to Edit Location"
+msgstr "Nhấn để sửa địa điểm"
+
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6806,6 +6814,27 @@ msgstr "Hộp thoại mở tập tin"
 msgid "&View"
 msgstr "&Xem"
 
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+#, fuzzy
+#| msgid "Devices"
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "Thiết bị"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+#, fuzzy
+#| msgid "SSL version:"
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Phiên bản SSL:"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:176
+#, fuzzy
+#| msgid "Others"
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "Khác"
+
 #: ../kfile/kdirselectdialog.cpp:128
 #, fuzzy
 #| msgid "New Folder"
@@ -6868,14 +6897,6 @@ msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "Thuộc tính"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr "Nhấn để duyệt tới địa điểm"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr "Nhấn để sửa địa điểm"
-
 #: ../kfile/kfileplacesview.cpp:575
 #, fuzzy
 #| msgid "Trash"
@@ -6905,7 +6926,7 @@ msgstr "&Hiện mọi mục"
 msgid "&Remove Entry '%1'"
 msgstr "&Bỏ « %1 »"
 
-#: ../kfile/kfileplacesview.cpp:634
+#: ../kfile/kfileplacesview.cpp:636
 #, fuzzy
 #| msgid "Do you really want to delete this item?"
 #| msgid_plural "Do you really want to delete these %1 items?"
@@ -6913,7 +6934,7 @@ msgctxt "@info"
 msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr "Bạn thật sự muốn xoá %1 mục này không?"
 
-#: ../kfile/kurlnavigatorbutton.cpp:596
+#: ../kfile/kurlnavigatorbutton.cpp:599
 #, fuzzy
 #| msgid "Store"
 msgctxt "@action:inmenu"
@@ -7016,27 +7037,27 @@ msgstr ""
 "<qt>Chọn thiết lập này nếu bạn muốn mục này hiển thị chỉ khi dùng ứng dụng "
 "hiện có (%1) thôi.<p>Khi không chọn, mục này sẽ có sẵn cho mọi ứng dụng.</qt>"
 
-#: ../kfile/kurlnavigator.cpp:427
+#: ../kfile/kurlnavigator.cpp:429
 msgid "Copy"
 msgstr "Chép"
 
-#: ../kfile/kurlnavigator.cpp:431
+#: ../kfile/kurlnavigator.cpp:433
 msgid "Paste"
 msgstr "Dán"
 
-#: ../kfile/kurlnavigator.cpp:438
+#: ../kfile/kurlnavigator.cpp:440
 msgid "Edit"
 msgstr "Sửa"
 
-#: ../kfile/kurlnavigator.cpp:441
+#: ../kfile/kurlnavigator.cpp:443
 msgid "Navigate"
 msgstr "Duyệt qua"
 
-#: ../kfile/kurlnavigator.cpp:456
+#: ../kfile/kurlnavigator.cpp:458
 msgid "Show Full Path"
 msgstr ""
 
-#: ../kfile/kurlnavigator.cpp:688
+#: ../kfile/kurlnavigator.cpp:690
 msgid "Custom Path"
 msgstr "Đường dẫn riêng"
 
@@ -7217,27 +7238,6 @@ msgstr "Gặp lỗi khi truy cập « %1 »."
 #| msgid "Show Hidden Folders"
 msgid "Show Hidden Folders"
 msgstr "Hiện thư mục ẩn"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-#, fuzzy
-#| msgid "Devices"
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "Thiết bị"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-#, fuzzy
-#| msgid "SSL version:"
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Phiên bản SSL:"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-#, fuzzy
-#| msgid "Others"
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "Khác"
 
 #, fuzzy
 #~| msgid "Size:"

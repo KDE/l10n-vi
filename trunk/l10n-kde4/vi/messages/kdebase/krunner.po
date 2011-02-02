@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-29 02:13+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2007-06-16 16:39+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,25 +16,50 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
 
-#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
+#: configdialog.cpp:52
+msgid "Plugins"
+msgstr ""
+
+#: configdialog.cpp:81
+msgid "User Interface"
+msgstr ""
+
+#: configdialog.cpp:87
+msgid "Available Features"
+msgstr ""
+
 #: interfaces/default/interface.cpp:85 interfaces/default/interface.cpp:86
+#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
 #, fuzzy
 #| msgid "Sessions"
 msgid "Settings"
 msgstr "Phiên chạy"
+
+#: interfaces/default/interface.cpp:107
+msgid "Help"
+msgstr ""
+
+#: interfaces/default/interface.cpp:108
+msgid "Information on using this application"
+msgstr ""
+
+#: interfaces/default/interface.cpp:259 interfaces/quicksand/qs_dialog.cpp:317
+#, fuzzy, kde-format
+#| msgid "%1 (%2)"
+msgctxt "tooltip, shortcut"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: interfaces/default/interface.cpp:409
+#, kde-format
+msgid "(From %1, %2)"
+msgstr ""
 
 #: interfaces/quicksand/qs_dialog.cpp:108
 #, fuzzy
 #| msgid "Location"
 msgid "Actions"
 msgstr "Địa điểm"
-
-#: interfaces/quicksand/qs_dialog.cpp:317 interfaces/default/interface.cpp:259
-#, fuzzy, kde-format
-#| msgid "%1 (%2)"
-msgctxt "tooltip, shortcut"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
 
 #: interfaces/quicksand/qs_matchview.cpp:193
 msgid "Type to search."
@@ -68,18 +93,65 @@ msgctxt "%1 current item number, %2 total number of items"
 msgid "%1 of %2"
 msgstr "%1 - %2"
 
-#: interfaces/default/interface.cpp:107
-msgid "Help"
+#: krunnerapp.cpp:128 krunnerdialog.cpp:69
+msgid "Run Command"
+msgstr "Chạy lệnh"
+
+#: krunnerapp.cpp:133
+msgid "Run Command on clipboard contents"
 msgstr ""
 
-#: interfaces/default/interface.cpp:108
-msgid "Information on using this application"
-msgstr ""
+#: krunnerapp.cpp:139
+msgid "Show System Activity"
+msgstr "Hiện hoạt động hệ thống"
 
-#: interfaces/default/interface.cpp:409
+#: krunnerapp.cpp:145
+msgid "Switch User"
+msgstr "Chuyển đổi người dùng"
+
+#: krunnerapp.cpp:155
+msgid "Lock Session"
+msgstr "Khoá phiên chạy"
+
+#: krunnerapp.cpp:195
 #, kde-format
-msgid "(From %1, %2)"
+msgctxt "Run krunner restricting the search only to runner %1"
+msgid "Run Command (runner \"%1\" only)"
 msgstr ""
+
+#: ksystemactivitydialog.cpp:39
+msgid "System Activity"
+msgstr "Hoạt động hệ thống"
+
+#: lock/autologout.cc:38
+#, fuzzy
+#| msgid "<nobr><qt><b>Automatic Log Out</b></qt><nobr>"
+msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
+msgstr "<nobr><qt><b>Tự động đăng xuất</b></qt><nobr>"
+
+#: lock/autologout.cc:39
+msgid ""
+"<qt>To prevent being logged out, resume using this session by moving the "
+"mouse or pressing a key.</qt>"
+msgstr ""
+"<qt>Để tránh bị đăng xuất, bạn hãy tiếp tục lại sử dụng phiên chạy này bằng "
+"cách di chuyển con chuột hay bấm phím.</qt>"
+
+#: lock/autologout.cc:44
+msgid "Time Remaining:"
+msgstr "Thời gian còn lại:"
+
+#: lock/autologout.cc:77
+#, fuzzy, kde-format
+#| msgid ""
+#| "<nobr><qt>You will be automatically logged out in 1 second</qt></nobr>"
+#| msgid_plural ""
+#| "<nobr><qt>You will be automatically logged out in %1 seconds</qt></nobr>"
+msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
+msgid_plural ""
+"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
+msgstr[0] ""
+"<nobr><qt>Bạn sẽ bị đăng xuất tự động trong vòng %1 giây</qt></nobr>"
 
 #: lock/lockdlg.cc:100
 #, fuzzy
@@ -177,35 +249,26 @@ msgstr "&Kích hoạt"
 msgid "Start &New Session"
 msgstr "Sở khởi phiê&n chạy mới"
 
-#: lock/autologout.cc:38
+#: lock/lockprocess.cc:830
+msgid "Will not lock the session, as unlocking would be impossible:\n"
+msgstr "Sẽ không khoá phiên chạy vì không thể bỏ khoá:\n"
+
+#: lock/lockprocess.cc:834
+msgid "Cannot start <i>kcheckpass</i>."
+msgstr "Không thể khởi chạy tiến trình kiểm tra mật khẩu <i>kcheckpass</i>."
+
+#: lock/lockprocess.cc:835
 #, fuzzy
-#| msgid "<nobr><qt><b>Automatic Log Out</b></qt><nobr>"
-msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
-msgstr "<nobr><qt><b>Tự động đăng xuất</b></qt><nobr>"
-
-#: lock/autologout.cc:39
-msgid ""
-"<qt>To prevent being logged out, resume using this session by moving the "
-"mouse or pressing a key.</qt>"
-msgstr ""
-"<qt>Để tránh bị đăng xuất, bạn hãy tiếp tục lại sử dụng phiên chạy này bằng "
-"cách di chuyển con chuột hay bấm phím.</qt>"
-
-#: lock/autologout.cc:44
-msgid "Time Remaining:"
-msgstr "Thời gian còn lại:"
-
-#: lock/autologout.cc:77
-#, fuzzy, kde-format
 #| msgid ""
-#| "<nobr><qt>You will be automatically logged out in 1 second</qt></nobr>"
-#| msgid_plural ""
-#| "<nobr><qt>You will be automatically logged out in %1 seconds</qt></nobr>"
-msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
-msgid_plural ""
-"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
-msgstr[0] ""
-"<nobr><qt>Bạn sẽ bị đăng xuất tự động trong vòng %1 giây</qt></nobr>"
+#| "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
+msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
+msgstr ""
+"Tiến trình kiểm tra mật khẩu <i>kcheckpass</i> không thể hoạt động. Có lẽ nó "
+"chưa được đặt là SetUID root (chưa có quyền người chủ)."
+
+#: lock/lockprocess.cc:898
+msgid "No appropriate greeter plugin configured."
+msgstr "Chưa cấu hình bổ sung chào mừng thích hợp."
 
 #: lock/main.cc:61
 msgid "KDE Screen Locker"
@@ -245,31 +308,6 @@ msgstr ""
 msgid "Fork into the background after starting up"
 msgstr ""
 
-#: lock/lockprocess.cc:830
-msgid "Will not lock the session, as unlocking would be impossible:\n"
-msgstr "Sẽ không khoá phiên chạy vì không thể bỏ khoá:\n"
-
-#: lock/lockprocess.cc:834
-msgid "Cannot start <i>kcheckpass</i>."
-msgstr "Không thể khởi chạy tiến trình kiểm tra mật khẩu <i>kcheckpass</i>."
-
-#: lock/lockprocess.cc:835
-#, fuzzy
-#| msgid ""
-#| "<i>kcheckpass</i> is unable to operate. Possibly it is not SetUID root."
-msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
-msgstr ""
-"Tiến trình kiểm tra mật khẩu <i>kcheckpass</i> không thể hoạt động. Có lẽ nó "
-"chưa được đặt là SetUID root (chưa có quyền người chủ)."
-
-#: lock/lockprocess.cc:898
-msgid "No appropriate greeter plugin configured."
-msgstr "Chưa cấu hình bổ sung chào mừng thích hợp."
-
-#: krunnerdialog.cpp:69 krunnerapp.cpp:128
-msgid "Run Command"
-msgstr "Chạy lệnh"
-
 #: main.cpp:38
 msgid "KDE run command interface"
 msgstr "Giao diện Chạy lệnh KDE"
@@ -291,44 +329,6 @@ msgstr "© năm 2006 của Aaron Seigo"
 #: main.cpp:54
 msgid "Author and maintainer"
 msgstr "Tác giả và nhà duy trì"
-
-#: krunnerapp.cpp:133
-msgid "Run Command on clipboard contents"
-msgstr ""
-
-#: krunnerapp.cpp:139
-msgid "Show System Activity"
-msgstr "Hiện hoạt động hệ thống"
-
-#: krunnerapp.cpp:145
-msgid "Switch User"
-msgstr "Chuyển đổi người dùng"
-
-#: krunnerapp.cpp:155
-msgid "Lock Session"
-msgstr "Khoá phiên chạy"
-
-#: krunnerapp.cpp:195
-#, kde-format
-msgctxt "Run krunner restricting the search only to runner %1"
-msgid "Run Command (runner \"%1\" only)"
-msgstr ""
-
-#: configdialog.cpp:52
-msgid "Plugins"
-msgstr ""
-
-#: configdialog.cpp:81
-msgid "User Interface"
-msgstr ""
-
-#: configdialog.cpp:87
-msgid "Available Features"
-msgstr ""
-
-#: ksystemactivitydialog.cpp:39
-msgid "System Activity"
-msgstr "Hoạt động hệ thống"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

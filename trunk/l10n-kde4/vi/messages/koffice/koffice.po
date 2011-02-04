@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-02 03:38+0100\n"
+"POT-Creation-Date: 2011-02-04 02:57+0100\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -88,12 +88,6 @@ msgstr "Thay đổi tham số"
 msgid "Convert to Path"
 msgstr "Chuyển đổi sang Đường"
 
-#: flake/commands/KoPathBreakAtPointCommand.cpp:38
-#, fuzzy
-#| msgid "Break subpath at points"
-msgid "Break Subpath at Points"
-msgstr "Ngắt đường con tại các điểm"
-
 #: flake/commands/KoPathCombineCommand.cpp:58
 #, fuzzy
 msgid "Combine paths"
@@ -109,6 +103,17 @@ msgstr "Di chuyển điểm điều khiển"
 #, fuzzy
 msgid "Set Fill Rule"
 msgstr "Đặt luật tô màu"
+
+#: flake/commands/KoShapeGroupCommand.cpp:93
+#, fuzzy
+msgid "Group Shapes"
+msgstr "Nhóm các hình"
+
+#: flake/commands/KoShapeGroupCommand.cpp:95
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "Thêm Nhóm"
 
 #: flake/commands/KoPathPointMergeCommand.cpp:152
 #, fuzzy
@@ -208,17 +213,6 @@ msgstr "Xóa các hình"
 msgid "Distribute Shapes"
 msgstr "Phân phối các hình"
 
-#: flake/commands/KoShapeGroupCommand.cpp:93
-#, fuzzy
-msgid "Group Shapes"
-msgstr "Nhóm các hình"
-
-#: flake/commands/KoShapeGroupCommand.cpp:95
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "Thêm Nhóm"
-
 #: flake/commands/KoShapeKeepAspectRatioCommand.cpp:40
 #, fuzzy
 msgid "Keep Aspect Ratio"
@@ -287,6 +281,12 @@ msgstr "Nhập các đường con"
 msgid "Remove Subpath"
 msgstr "Xóa đường con"
 
+#: flake/commands/KoPathBreakAtPointCommand.cpp:38
+#, fuzzy
+#| msgid "Break subpath at points"
+msgid "Break Subpath at Points"
+msgstr "Ngắt đường con tại các điểm"
+
 #: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -312,11 +312,6 @@ msgstr "Mở tài liệu"
 #: flake/tools/KoPanToolFactory.cpp:29
 msgid "Pan"
 msgstr ""
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-msgid "Change Segment"
-msgstr "Thay đổi Liên hệ"
 
 #: flake/tools/KoPathTool.cpp:87
 msgid "Corner point"
@@ -420,6 +415,11 @@ msgstr ""
 #: widgets/KoZoomController.cpp:38 widgets/KoZoomInput.cpp:52
 msgid "Zoom"
 msgstr ""
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+msgid "Change Segment"
+msgstr "Thay đổi Liên hệ"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -690,11 +690,6 @@ msgstr "Công ti:"
 #| msgid "Date"
 msgid "Paste"
 msgstr "Ngày"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Tên: "
 
 #: kopageapp/KoPAPastePage.cpp:132
 #, fuzzy
@@ -973,6 +968,11 @@ msgstr "Màu &nền:"
 msgid "Change background image"
 msgstr "Đặt nền"
 
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+msgid "Page %1"
+msgstr "Tên: "
+
 #: kotext/InsertTextLocator.cpp:29
 msgid "Index Reference"
 msgstr ""
@@ -1017,23 +1017,6 @@ msgstr[0] ""
 #, fuzzy, kde-format
 msgid "Replace %1 with %2?"
 msgstr "Thay thế Text"
-
-#: kotext/KoText.cpp:29
-#, fuzzy
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Không"
-
-#: kotext/KoText.cpp:30
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Một"
-
-#: kotext/KoText.cpp:31
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Đôi"
 
 #: kotext/KoTextEditor.cpp:105 kotext/KoTextEditor.cpp:161
 #: kotext/KoTextEditor.cpp:319 widgets/KoCsvImportDialog.cpp:216
@@ -1167,6 +1150,23 @@ msgstr "Viền Đường thẳng"
 #, fuzzy
 msgid "Format"
 msgstr "Định dạng"
+
+#: kotext/KoText.cpp:47
+#, fuzzy
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Không"
+
+#: kotext/KoText.cpp:48
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Một"
+
+#: kotext/KoText.cpp:49
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Đôi"
 
 #: main/KoApplication.cpp:77
 msgid "Only print and exit"
@@ -1512,7 +1512,7 @@ msgstr "một biểu đồ"
 msgid "a drawing"
 msgstr "một bức vẽ"
 
-#: main/KoDocument.cpp:2504
+#: main/KoDocument.cpp:2499
 #, fuzzy
 msgid "Embedding Object"
 msgstr "Nhúng Đối tượng"
@@ -2767,10 +2767,6 @@ msgstr "a*"
 msgid "b*"
 msgstr "b*"
 
-#: pigment/KoBasicHistogramProducers.h:231
-msgid "Generic L*a*b* Histogram"
-msgstr ""
-
 #: pigment/KoColorModelStandardIds.cpp:25
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:261
 #: pigment/colorspaces/KoLabColorSpace.cpp:44
@@ -2934,12 +2930,6 @@ msgstr ""
 msgid "Simple Color Conversion Engine"
 msgstr ""
 
-#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
-#, fuzzy
-#| msgid "Alpha"
-msgid "Alpha darken"
-msgstr "Alpha"
-
 #: pigment/compositeops/KoCompositeOpBurn.h:36
 msgid "Burn"
 msgstr ""
@@ -2987,8 +2977,18 @@ msgstr "Màn hình"
 msgid "Soft light"
 msgstr "Thẳng"
 
+#: pigment/compositeops/KoCompositeOpAlphaDarken.h:42
+#, fuzzy
+#| msgid "Alpha"
+msgid "Alpha darken"
+msgstr "Alpha"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoBasicHistogramProducers.h:231
+msgid "Generic L*a*b* Histogram"
 msgstr ""
 
 #: widgets/KoColorPopupAction.cpp:85 widgets/KoUniColorChooser.cpp:418

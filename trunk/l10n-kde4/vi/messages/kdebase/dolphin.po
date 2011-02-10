@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-08 02:35+0100\n"
+"POT-Creation-Date: 2011-02-10 02:47+0100\n"
 "PO-Revision-Date: 2007-06-25 16:30+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -96,7 +96,7 @@ msgctxt "@action:inmenu"
 msgid "Delete"
 msgstr "Xoá"
 
-#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:365
+#: panels/folders/treeviewcontextmenu.cpp:111 dolphincontextmenu.cpp:367
 #, fuzzy
 #| msgid "Properties"
 msgctxt "@action:inmenu"
@@ -928,7 +928,7 @@ msgctxt "@option:check"
 msgid "Use these view properties as default"
 msgstr "Dùng thuộc tính xem chung cho mọi thư mục"
 
-#: settings/viewpropertiesdialog.cpp:338
+#: settings/viewpropertiesdialog.cpp:337
 #, fuzzy
 #| msgid ""
 #| "The view properties of all sub folders will be changed. Do you want to "
@@ -941,7 +941,7 @@ msgstr ""
 "Các thuộc tính xem của mọi thư mục con sẽ bị thay đổi. Bạn có muốn tiếp tục "
 "không?"
 
-#: settings/viewpropertiesdialog.cpp:373
+#: settings/viewpropertiesdialog.cpp:370
 #, fuzzy
 #| msgid ""
 #| "The view properties of all folders will be changed. Do you want to "
@@ -1015,6 +1015,79 @@ msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "%1 rảnh"
 
+#: views/dolphinview.cpp:500
+#, fuzzy, kde-format
+#| msgid "Rename the item '%1' to:"
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected"
+msgstr "Thay đổi tên của mục « %1 » thành:"
+
+#: views/dolphinview.cpp:501
+#, fuzzy, kde-format
+#| msgid "1 File selected (%2)"
+#| msgid_plural "%1 Files selected (%2)"
+msgctxt "@info:status"
+msgid "<filename>%1</filename> selected (%2)"
+msgstr "%1 tập tin đã chọn (%2)"
+
+#: views/dolphinview.cpp:505
+#, fuzzy, kde-format
+#| msgid "1 Folder selected"
+#| msgid_plural "%1 Folders selected"
+msgctxt "@info:status"
+msgid "1 Folder selected"
+msgid_plural "%1 Folders selected"
+msgstr[0] "%1 thư mục đã chọn"
+
+#: views/dolphinview.cpp:506
+#, fuzzy, kde-format
+#| msgid "1 Folder selected"
+#| msgid_plural "%1 Folders selected"
+msgctxt "@info:status"
+msgid "1 File selected"
+msgid_plural "%1 Files selected"
+msgstr[0] "%1 thư mục đã chọn"
+
+#: views/dolphinview.cpp:508
+#, kde-format
+msgctxt "@info:status folders, files (size)"
+msgid "%1, %2 (%3)"
+msgstr ""
+
+#: views/dolphinview.cpp:511
+#, fuzzy, kde-format
+#| msgid "1 File selected (%2)"
+#| msgid_plural "%1 Files selected (%2)"
+msgctxt "@info:status files (size)"
+msgid "%1 (%2)"
+msgstr "%1 tập tin đã chọn (%2)"
+
+#: views/dolphinview.cpp:1039
+#, fuzzy
+#| msgid "Delete operation completed."
+msgctxt "@info:status"
+msgid "Delete operation completed."
+msgstr "Thao tác xoá hoàn tất."
+
+#: views/dolphinview.cpp:1141
+#, fuzzy
+#| msgid "The location is empty."
+msgctxt "@info:status"
+msgid "The location is empty."
+msgstr "Địa điểm rỗng."
+
+#: views/dolphinview.cpp:1143
+#, fuzzy, kde-format
+#| msgid "The location '%1' is invalid."
+msgctxt "@info:status"
+msgid "The location '%1' is invalid."
+msgstr "Địa điểm « %1 » không hợp lệ."
+
+#: views/draganddrophelper.cpp:108
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr ""
+
 #: views/renamedialog.cpp:54
 #, fuzzy
 #| msgid "Rename Item"
@@ -1066,33 +1139,221 @@ msgctxt "@info"
 msgid "(# will be replaced by ascending numbers)"
 msgstr "(# bị thay thế bằng số tăng dần)"
 
-#: views/selectiontoggle.cpp:132
+#: views/dolphindetailsview.cpp:144
+#, fuzzy
+#| msgid "All folders"
+msgctxt "@option:check"
+msgid "Expandable Folders"
+msgstr "Mọi thư mục"
+
+#: views/dolphindetailsview.cpp:372
+#, fuzzy
+#| msgid "Columns"
+msgctxt "@title:menu"
+msgid "Columns"
+msgstr "Cột"
+
+#: views/dolphincolumnview.cpp:88
+msgctxt "@info:tooltip"
+msgid "Resize column"
+msgstr ""
+
+#: views/dolphindirlister.cpp:41
+#, fuzzy
+#| msgid "Total size:"
+msgctxt "@info:status"
+msgid "Unknown error."
+msgstr "Tổng cỡ :"
+
+#: views/dolphinviewactionhandler.cpp:87
+#, fuzzy
+#| msgid "Created folder."
+msgctxt "@action"
+msgid "Create Folder..."
+msgstr "Thư mục đã được tạo."
+
+#: views/dolphinviewactionhandler.cpp:95
+#, fuzzy
+#| msgid "Rename..."
+msgctxt "@action:inmenu File"
+msgid "Rename..."
+msgstr "Thay tên..."
+
+#: views/dolphinviewactionhandler.cpp:101
+#, fuzzy
+#| msgid "Move to Trash"
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "Chuyển vào Rác"
+
+#: views/dolphinviewactionhandler.cpp:109
 #, fuzzy
 #| msgid "Delete"
-msgctxt "@info:tooltip"
-msgid "Deselect Item"
+msgctxt "@action:inmenu File"
+msgid "Delete"
 msgstr "Xoá"
 
-#: views/selectiontoggle.cpp:133
-#, fuzzy
-#| msgid "Select All"
-msgctxt "@info:tooltip"
-msgid "Select Item"
-msgstr "Chọn tất cả"
+#: views/dolphinviewactionhandler.cpp:119
+msgctxt "@action \"Move to Trash\" for non-local files, etc."
+msgid "Delete (using shortcut for Trash)"
+msgstr ""
 
-#: views/versioncontrol/versioncontrolobserver.cpp:189
+#: views/dolphinviewactionhandler.cpp:126
+#, fuzzy
+#| msgid "Properties"
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#: views/dolphinviewactionhandler.cpp:137
+#, fuzzy
+#| msgid "View Mode"
+msgctxt "@action:intoolbar"
+msgid "View Mode"
+msgstr "Chế độ xem"
+
+#: views/dolphinviewactionhandler.cpp:153
+#, fuzzy
+#| msgid "Preview"
+msgctxt "@action:intoolbar"
+msgid "Preview"
+msgstr "Xem thử"
+
+#: views/dolphinviewactionhandler.cpp:154
+#, fuzzy
+#| msgid "Show preview"
+msgctxt "@info"
+msgid "Show preview of files and folders"
+msgstr "Hiện ô xem thử"
+
+#: views/dolphinviewactionhandler.cpp:159
+#, fuzzy
+#| msgid "Descending"
+msgctxt "@action:inmenu Sort"
+msgid "Descending"
+msgstr "Giảm dần"
+
+#: views/dolphinviewactionhandler.cpp:163
+#, fuzzy
+#| msgid "Folders"
+msgctxt "@action:inmenu Sort"
+msgid "Folders First"
+msgstr "Thư mục"
+
+#: views/dolphinviewactionhandler.cpp:171
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@action:inmenu View"
+msgid "Sort By"
+msgstr "Sắp xếp"
+
+#: views/dolphinviewactionhandler.cpp:186
+#: views/dolphinviewactionhandler.cpp:212
+#, fuzzy
+#| msgid "Additional Information"
+msgctxt "@action:inmenu View"
+msgid "Additional Information"
+msgstr "Thông tin thêm"
+
+#: views/dolphinviewactionhandler.cpp:193
+#, fuzzy
+#| msgid "Show in Groups"
+msgctxt "@action:inmenu View"
+msgid "Show in Groups"
+msgstr "Hiện theo nhóm"
+
+#: views/dolphinviewactionhandler.cpp:197
+#, fuzzy
+#| msgid "Show Hidden Files"
+msgctxt "@action:inmenu View"
+msgid "Show Hidden Files"
+msgstr "Hiện tập tin ẩn"
+
+#: views/dolphinviewactionhandler.cpp:202
+#, fuzzy
+#| msgid "Adjust View Properties..."
+msgctxt "@action:inmenu View"
+msgid "Adjust View Properties..."
+msgstr "Chỉnh thuộc tính xem..."
+
+#: views/dolphinviewactionhandler.cpp:237
+#, fuzzy
+#| msgid "By Name"
+msgctxt "@action:inmenu Sort By"
+msgid "Name"
+msgstr "Theo tên"
+
+#: views/dolphinviewactionhandler.cpp:440
+#, fuzzy
+#| msgid "Icons"
+msgctxt "@action:inmenu View Mode"
+msgid "Icons"
+msgstr "Biểu tượng"
+
+#: views/dolphinviewactionhandler.cpp:441
+#, fuzzy
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Icons view mode"
+msgstr "Chế độ xem tách"
+
+#: views/dolphinviewactionhandler.cpp:451
+#, fuzzy
+#| msgid "Details"
+msgctxt "@action:inmenu View Mode"
+msgid "Details"
+msgstr "Chi tiết"
+
+#: views/dolphinviewactionhandler.cpp:452
+#, fuzzy
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Details view mode"
+msgstr "Chế độ xem tách"
+
+#: views/dolphinviewactionhandler.cpp:462
+#, fuzzy
+#| msgid "Columns"
+msgctxt "@action:inmenu View Mode"
+msgid "Columns"
+msgstr "Cột"
+
+#: views/dolphinviewactionhandler.cpp:463
+#, fuzzy
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Columns view mode"
+msgstr "Chế độ xem tách"
+
+#: views/versioncontrol/versioncontrolobserver.cpp:190
 #, fuzzy
 #| msgid "Additional information:"
 msgctxt "@info:status"
 msgid "Update of version information failed."
 msgstr "Thông tin thêm:"
 
-#: views/versioncontrol/versioncontrolobserver.cpp:242
+#: views/versioncontrol/versioncontrolobserver.cpp:243
 #, fuzzy
 #| msgid "Additional information:"
 msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Thông tin thêm:"
+
+#: views/dolphinremoteencoding.cpp:53
+msgid "Select Remote Charset"
+msgstr ""
+
+#: views/dolphinremoteencoding.cpp:117
+#, fuzzy
+#| msgid "Reload"
+msgid "Reload"
+msgstr "Nạp lại"
+
+#: views/dolphinremoteencoding.cpp:118
+#, fuzzy
+#| msgid "Delete"
+msgid "Default"
+msgstr "Xoá"
 
 #: views/additionalinfoaccessor.cpp:105
 #, fuzzy
@@ -1149,32 +1410,6 @@ msgstr "Tài liệu"
 msgctxt "@label"
 msgid "Path"
 msgstr "Dán"
-
-#: views/dolphincolumnview.cpp:88
-msgctxt "@info:tooltip"
-msgid "Resize column"
-msgstr ""
-
-#: views/dolphindetailsview.cpp:144
-#, fuzzy
-#| msgid "All folders"
-msgctxt "@option:check"
-msgid "Expandable Folders"
-msgstr "Mọi thư mục"
-
-#: views/dolphindetailsview.cpp:372
-#, fuzzy
-#| msgid "Columns"
-msgctxt "@title:menu"
-msgid "Columns"
-msgstr "Cột"
-
-#: views/dolphindirlister.cpp:41
-#, fuzzy
-#| msgid "Total size:"
-msgctxt "@info:status"
-msgid "Unknown error."
-msgstr "Tổng cỡ :"
 
 #: views/dolphinmodel.cpp:43
 #, fuzzy
@@ -1351,254 +1586,111 @@ msgctxt "@title:group Files and folders by permissions"
 msgid "(User: %1) (Group: %2) (Others: %3)"
 msgstr ""
 
-#: views/dolphinremoteencoding.cpp:53
-msgid "Select Remote Charset"
-msgstr ""
-
-#: views/dolphinremoteencoding.cpp:117
-#, fuzzy
-#| msgid "Reload"
-msgid "Reload"
-msgstr "Nạp lại"
-
-#: views/dolphinremoteencoding.cpp:118
+#: views/selectiontoggle.cpp:132
 #, fuzzy
 #| msgid "Delete"
-msgid "Default"
+msgctxt "@info:tooltip"
+msgid "Deselect Item"
 msgstr "Xoá"
 
-#: views/dolphinview.cpp:500
-#, fuzzy, kde-format
-#| msgid "Rename the item '%1' to:"
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected"
-msgstr "Thay đổi tên của mục « %1 » thành:"
-
-#: views/dolphinview.cpp:501
-#, fuzzy, kde-format
-#| msgid "1 File selected (%2)"
-#| msgid_plural "%1 Files selected (%2)"
-msgctxt "@info:status"
-msgid "<filename>%1</filename> selected (%2)"
-msgstr "%1 tập tin đã chọn (%2)"
-
-#: views/dolphinview.cpp:505
-#, fuzzy, kde-format
-#| msgid "1 Folder selected"
-#| msgid_plural "%1 Folders selected"
-msgctxt "@info:status"
-msgid "1 Folder selected"
-msgid_plural "%1 Folders selected"
-msgstr[0] "%1 thư mục đã chọn"
-
-#: views/dolphinview.cpp:506
-#, fuzzy, kde-format
-#| msgid "1 Folder selected"
-#| msgid_plural "%1 Folders selected"
-msgctxt "@info:status"
-msgid "1 File selected"
-msgid_plural "%1 Files selected"
-msgstr[0] "%1 thư mục đã chọn"
-
-#: views/dolphinview.cpp:508
-#, kde-format
-msgctxt "@info:status folders, files (size)"
-msgid "%1, %2 (%3)"
-msgstr ""
-
-#: views/dolphinview.cpp:511
-#, fuzzy, kde-format
-#| msgid "1 File selected (%2)"
-#| msgid_plural "%1 Files selected (%2)"
-msgctxt "@info:status files (size)"
-msgid "%1 (%2)"
-msgstr "%1 tập tin đã chọn (%2)"
-
-#: views/dolphinview.cpp:1039
+#: views/selectiontoggle.cpp:133
 #, fuzzy
-#| msgid "Delete operation completed."
-msgctxt "@info:status"
-msgid "Delete operation completed."
-msgstr "Thao tác xoá hoàn tất."
+#| msgid "Select All"
+msgctxt "@info:tooltip"
+msgid "Select Item"
+msgstr "Chọn tất cả"
 
-#: views/dolphinview.cpp:1141
+#: dolphincontextmenu.cpp:169
 #, fuzzy
-#| msgid "The location is empty."
-msgctxt "@info:status"
-msgid "The location is empty."
-msgstr "Địa điểm rỗng."
+#| msgid "Empty Trash"
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "Đổ Rác"
 
-#: views/dolphinview.cpp:1143
-#, fuzzy, kde-format
-#| msgid "The location '%1' is invalid."
-msgctxt "@info:status"
-msgid "The location '%1' is invalid."
-msgstr "Địa điểm « %1 » không hợp lệ."
-
-#: views/dolphinviewactionhandler.cpp:87
+#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:346
 #, fuzzy
-#| msgid "Created folder."
-msgctxt "@action"
-msgid "Create Folder..."
-msgstr "Thư mục đã được tạo."
+#| msgid "Places"
+msgctxt "@action:inmenu Add current folder to places"
+msgid "Add to Places"
+msgstr "Nơi"
 
-#: views/dolphinviewactionhandler.cpp:95
+#: dolphincontextmenu.cpp:191
 #, fuzzy
-#| msgid "Rename..."
-msgctxt "@action:inmenu File"
-msgid "Rename..."
-msgstr "Thay tên..."
+#| msgid "Do you really want to empty the Trash? All items will get deleted."
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "Bạn thật sự muốn đổ thùng Rác không? Mọi mục sẽ bị xoá."
 
-#: views/dolphinviewactionhandler.cpp:101
+#: dolphincontextmenu.cpp:195
+#, fuzzy
+#| msgid "Empty Trash"
+msgctxt "@action:button"
+msgid "Empty Trash"
+msgstr "Đổ Rác"
+
+#: dolphincontextmenu.cpp:204
+#, fuzzy
+#| msgid "Tags:"
+msgctxt "@label"
+msgid "Trash"
+msgstr "Thẻ:"
+
+#: dolphincontextmenu.cpp:214
+#, fuzzy
+#| msgid "Restore"
+msgctxt "@action:inmenu"
+msgid "Restore"
+msgstr "Phục hồi"
+
+#: dolphincontextmenu.cpp:253 dolphinmainwindow.cpp:1417
+#, fuzzy
+#| msgid "Create New"
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Tạo mới"
+
+#: dolphincontextmenu.cpp:266
+#, fuzzy
+#| msgid "Places"
+msgctxt "@action:inmenu Add selected folder to places"
+msgid "Add to Places"
+msgstr "Nơi"
+
+#: dolphincontextmenu.cpp:273
+#, fuzzy
+#| msgid "New &Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Window"
+msgstr "&Cửa sổ mới"
+
+#: dolphincontextmenu.cpp:279
+#, fuzzy
+#| msgid "New &Window"
+msgctxt "@action:inmenu"
+msgid "Open Path in New Tab"
+msgstr "&Cửa sổ mới"
+
+#: dolphincontextmenu.cpp:450
+#, fuzzy
+#| msgid "Paste One File"
+#| msgid_plural "Paste %1 Files"
+msgctxt "@action:inmenu"
+msgid "Paste Into Folder"
+msgstr "Dán %1 tập tin"
+
+#: dolphincontextmenu.cpp:562
 #, fuzzy
 #| msgid "Move to Trash"
-msgctxt "@action:inmenu File"
-msgid "Move to Trash"
+msgctxt "@action:inmenu"
+msgid "&Move to Trash"
 msgstr "Chuyển vào Rác"
 
-#: views/dolphinviewactionhandler.cpp:109
+#: dolphincontextmenu.cpp:565
 #, fuzzy
 #| msgid "Delete"
-msgctxt "@action:inmenu File"
-msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "&Delete"
 msgstr "Xoá"
-
-#: views/dolphinviewactionhandler.cpp:119
-msgctxt "@action \"Move to Trash\" for non-local files, etc."
-msgid "Delete (using shortcut for Trash)"
-msgstr ""
-
-#: views/dolphinviewactionhandler.cpp:126
-#, fuzzy
-#| msgid "Properties"
-msgctxt "@action:inmenu File"
-msgid "Properties"
-msgstr "Thuộc tính"
-
-#: views/dolphinviewactionhandler.cpp:137
-#, fuzzy
-#| msgid "View Mode"
-msgctxt "@action:intoolbar"
-msgid "View Mode"
-msgstr "Chế độ xem"
-
-#: views/dolphinviewactionhandler.cpp:153
-#, fuzzy
-#| msgid "Preview"
-msgctxt "@action:intoolbar"
-msgid "Preview"
-msgstr "Xem thử"
-
-#: views/dolphinviewactionhandler.cpp:154
-#, fuzzy
-#| msgid "Show preview"
-msgctxt "@info"
-msgid "Show preview of files and folders"
-msgstr "Hiện ô xem thử"
-
-#: views/dolphinviewactionhandler.cpp:159
-#, fuzzy
-#| msgid "Descending"
-msgctxt "@action:inmenu Sort"
-msgid "Descending"
-msgstr "Giảm dần"
-
-#: views/dolphinviewactionhandler.cpp:163
-#, fuzzy
-#| msgid "Folders"
-msgctxt "@action:inmenu Sort"
-msgid "Folders First"
-msgstr "Thư mục"
-
-#: views/dolphinviewactionhandler.cpp:171
-#, fuzzy
-#| msgid "Sort"
-msgctxt "@action:inmenu View"
-msgid "Sort By"
-msgstr "Sắp xếp"
-
-#: views/dolphinviewactionhandler.cpp:186
-#: views/dolphinviewactionhandler.cpp:212
-#, fuzzy
-#| msgid "Additional Information"
-msgctxt "@action:inmenu View"
-msgid "Additional Information"
-msgstr "Thông tin thêm"
-
-#: views/dolphinviewactionhandler.cpp:193
-#, fuzzy
-#| msgid "Show in Groups"
-msgctxt "@action:inmenu View"
-msgid "Show in Groups"
-msgstr "Hiện theo nhóm"
-
-#: views/dolphinviewactionhandler.cpp:197
-#, fuzzy
-#| msgid "Show Hidden Files"
-msgctxt "@action:inmenu View"
-msgid "Show Hidden Files"
-msgstr "Hiện tập tin ẩn"
-
-#: views/dolphinviewactionhandler.cpp:202
-#, fuzzy
-#| msgid "Adjust View Properties..."
-msgctxt "@action:inmenu View"
-msgid "Adjust View Properties..."
-msgstr "Chỉnh thuộc tính xem..."
-
-#: views/dolphinviewactionhandler.cpp:237
-#, fuzzy
-#| msgid "By Name"
-msgctxt "@action:inmenu Sort By"
-msgid "Name"
-msgstr "Theo tên"
-
-#: views/dolphinviewactionhandler.cpp:440
-#, fuzzy
-#| msgid "Icons"
-msgctxt "@action:inmenu View Mode"
-msgid "Icons"
-msgstr "Biểu tượng"
-
-#: views/dolphinviewactionhandler.cpp:441
-#, fuzzy
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Icons view mode"
-msgstr "Chế độ xem tách"
-
-#: views/dolphinviewactionhandler.cpp:451
-#, fuzzy
-#| msgid "Details"
-msgctxt "@action:inmenu View Mode"
-msgid "Details"
-msgstr "Chi tiết"
-
-#: views/dolphinviewactionhandler.cpp:452
-#, fuzzy
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Details view mode"
-msgstr "Chế độ xem tách"
-
-#: views/dolphinviewactionhandler.cpp:462
-#, fuzzy
-#| msgid "Columns"
-msgctxt "@action:inmenu View Mode"
-msgid "Columns"
-msgstr "Cột"
-
-#: views/dolphinviewactionhandler.cpp:463
-#, fuzzy
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Columns view mode"
-msgstr "Chế độ xem tách"
-
-#: views/draganddrophelper.cpp:108
-msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr ""
 
 #: dolphinmainwindow.cpp:227
 msgctxt "@info:status"
@@ -1685,13 +1777,6 @@ msgstr ""
 msgctxt "@action:inmenu"
 msgid "Close Tab"
 msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:1417 dolphincontextmenu.cpp:251
-#, fuzzy
-#| msgid "Create New"
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Tạo mới"
 
 #: dolphinmainwindow.cpp:1424
 #, fuzzy
@@ -2002,6 +2087,38 @@ msgstr ""
 msgid "Unselect all items matching this pattern:"
 msgstr ""
 
+#: dolphinviewcontainer.cpp:313
+#, fuzzy
+#| msgid "Loading folder..."
+msgctxt "@info:progress"
+msgid "Loading folder..."
+msgstr "Đang nạp thư mục..."
+
+#: dolphinviewcontainer.cpp:324
+msgctxt "@info"
+msgid "Searching..."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:344
+msgctxt "@info:status"
+msgid "No items found."
+msgstr ""
+
+#: dolphinviewcontainer.cpp:423
+msgctxt "@info:status"
+msgid "Dolphin does not support web pages, the web browser has been launched"
+msgstr ""
+
+#: dolphinviewcontainer.cpp:435
+msgctxt "@info:status"
+msgid "Protocol not supported by Dolphin, Konqueror has been launched"
+msgstr ""
+
+#: dolphinviewcontainer.cpp:442
+msgctxt "@info:status"
+msgid "Invalid protocol"
+msgstr ""
+
 #: main.cpp:35
 #, fuzzy
 #| msgid "Dolphin"
@@ -2093,123 +2210,6 @@ msgstr ""
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Tài liệu cần mở"
-
-#: dolphinviewcontainer.cpp:313
-#, fuzzy
-#| msgid "Loading folder..."
-msgctxt "@info:progress"
-msgid "Loading folder..."
-msgstr "Đang nạp thư mục..."
-
-#: dolphinviewcontainer.cpp:324
-msgctxt "@info"
-msgid "Searching..."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:344
-msgctxt "@info:status"
-msgid "No items found."
-msgstr ""
-
-#: dolphinviewcontainer.cpp:423
-msgctxt "@info:status"
-msgid "Dolphin does not support web pages, the web browser has been launched"
-msgstr ""
-
-#: dolphinviewcontainer.cpp:435
-msgctxt "@info:status"
-msgid "Protocol not supported by Dolphin, Konqueror has been launched"
-msgstr ""
-
-#: dolphinviewcontainer.cpp:442
-msgctxt "@info:status"
-msgid "Invalid protocol"
-msgstr ""
-
-#: dolphincontextmenu.cpp:169
-#, fuzzy
-#| msgid "Empty Trash"
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "Đổ Rác"
-
-#: dolphincontextmenu.cpp:175 dolphincontextmenu.cpp:344
-#, fuzzy
-#| msgid "Places"
-msgctxt "@action:inmenu Add current folder to places"
-msgid "Add to Places"
-msgstr "Nơi"
-
-#: dolphincontextmenu.cpp:191
-#, fuzzy
-#| msgid "Do you really want to empty the Trash? All items will get deleted."
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "Bạn thật sự muốn đổ thùng Rác không? Mọi mục sẽ bị xoá."
-
-#: dolphincontextmenu.cpp:195
-#, fuzzy
-#| msgid "Empty Trash"
-msgctxt "@action:button"
-msgid "Empty Trash"
-msgstr "Đổ Rác"
-
-#: dolphincontextmenu.cpp:204
-#, fuzzy
-#| msgid "Tags:"
-msgctxt "@label"
-msgid "Trash"
-msgstr "Thẻ:"
-
-#: dolphincontextmenu.cpp:214
-#, fuzzy
-#| msgid "Restore"
-msgctxt "@action:inmenu"
-msgid "Restore"
-msgstr "Phục hồi"
-
-#: dolphincontextmenu.cpp:264
-#, fuzzy
-#| msgid "Places"
-msgctxt "@action:inmenu Add selected folder to places"
-msgid "Add to Places"
-msgstr "Nơi"
-
-#: dolphincontextmenu.cpp:271
-#, fuzzy
-#| msgid "New &Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Window"
-msgstr "&Cửa sổ mới"
-
-#: dolphincontextmenu.cpp:277
-#, fuzzy
-#| msgid "New &Window"
-msgctxt "@action:inmenu"
-msgid "Open Path in New Tab"
-msgstr "&Cửa sổ mới"
-
-#: dolphincontextmenu.cpp:448
-#, fuzzy
-#| msgid "Paste One File"
-#| msgid_plural "Paste %1 Files"
-msgctxt "@action:inmenu"
-msgid "Paste Into Folder"
-msgstr "Dán %1 tập tin"
-
-#: dolphincontextmenu.cpp:560
-#, fuzzy
-#| msgid "Move to Trash"
-msgctxt "@action:inmenu"
-msgid "&Move to Trash"
-msgstr "Chuyển vào Rác"
-
-#: dolphincontextmenu.cpp:563
-#, fuzzy
-#| msgid "Delete"
-msgctxt "@action:inmenu"
-msgid "&Delete"
-msgstr "Xoá"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

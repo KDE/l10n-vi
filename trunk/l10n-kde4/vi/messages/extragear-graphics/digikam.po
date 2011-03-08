@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-07 03:16+0100\n"
+"POT-Creation-Date: 2011-03-08 03:25+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -666,6 +666,24 @@ msgstr[0] "%1 mục đã chọn"
 msgid "Select Album"
 msgstr "Chọn tập ảnh"
 
+#: digikam/album/albumselectwidget.cpp:82
+msgid "Create New Album"
+msgstr "Tạo tập ảnh mới"
+
+#: digikam/album/albumselectwidget.cpp:182
+msgid "&New Album"
+msgstr "Tập ả&nh mới"
+
+#: digikam/album/albumselectwidget.cpp:183
+#, fuzzy
+#| msgid "Create New Album"
+msgid "Create new album"
+msgstr "Tạo tập ảnh mới"
+
+#: digikam/album/albumtreeview.cpp:966
+msgid "Context menu"
+msgstr ""
+
 #: digikam/album/albumselectiontreeview.cpp:110
 #: digikam/main/digikamapp.cpp:947 digikam/utils/editablesearchtreeview.cpp:67
 msgid "Rename..."
@@ -688,24 +706,6 @@ msgstr "Vẽ biếm hoạ"
 msgid "Rebuild Thumbnails..."
 msgstr "Xây dựng lạ mọi ảnh mẫu..."
 
-#: digikam/album/albumselectwidget.cpp:82
-msgid "Create New Album"
-msgstr "Tạo tập ảnh mới"
-
-#: digikam/album/albumselectwidget.cpp:182
-msgid "&New Album"
-msgstr "Tập ả&nh mới"
-
-#: digikam/album/albumselectwidget.cpp:183
-#, fuzzy
-#| msgid "Create New Album"
-msgid "Create new album"
-msgstr "Tạo tập ảnh mới"
-
-#: digikam/album/albumtreeview.cpp:966
-msgid "Context menu"
-msgstr ""
-
 #: digikam/database/databaseguierrorhandler.cpp:205
 msgid ""
 "Error while opening the database.\n"
@@ -720,7 +720,7 @@ msgid ""
 msgstr ""
 
 #: digikam/database/dbstatdlg.cpp:58 digikam/main/digikamapp.cpp:1199
-#: utilities/cameragui/cameraui.cpp:519
+#: utilities/cameragui/main/cameraui.cpp:519
 #: utilities/imageeditor/editor/imagewindow.cpp:583
 #: utilities/lighttable/lighttablewindow.cpp:619
 #: utilities/queuemanager/queuemgrwindow.cpp:448
@@ -924,7 +924,7 @@ msgstr "&Chuyển vào đây"
 #: digikam/dragdrop/imagedragdrop.cpp:87
 #: digikam/dragdrop/imagedragdrop.cpp:567 digikam/dragdrop/tagdragdrop.cpp:86
 #: digikam/dragdrop/tagdragdrop.cpp:160 digikam/dragdrop/tagdragdrop.cpp:192
-#: utilities/cameragui/cameraiconview.cpp:759
+#: utilities/cameragui/views/cameraiconview.cpp:759
 msgid "C&ancel"
 msgstr "T&hôi"
 
@@ -1356,18 +1356,6 @@ msgstr "Lọc nhiễu :"
 msgid "%1 active filters"
 msgstr "Lọc nhiễu :"
 
-#: digikam/items/digikamimageview.cpp:266 utilities/cameragui/cameraui.cpp:398
-#, fuzzy
-#| msgid "&View"
-msgctxt "View the selected image"
-msgid "View"
-msgstr "&Xem"
-
-#: digikam/items/facerejectionoverlay.cpp:64
-msgctxt "@info:tooltip"
-msgid "If this is not a face, click to reject it."
-msgstr ""
-
 #: digikam/items/imagecategorydrawer.cpp:245
 #: digikam/items/imagecategorydrawer.cpp:327
 #: digikam/items/imagecategorydrawer.cpp:344
@@ -1426,22 +1414,6 @@ msgctxt "Month String - Year String"
 msgid "%1 %2"
 msgstr "%1 (%2)"
 
-#: digikam/items/imagerotationoverlay.cpp:58
-#: digikam/views/imagepreviewview.cpp:215
-#, fuzzy
-#| msgid "Rotate Left"
-msgctxt "@info:tooltip"
-msgid "Rotate Left"
-msgstr "Xoay trái"
-
-#: digikam/items/imagerotationoverlay.cpp:80
-#: digikam/views/imagepreviewview.cpp:216
-#, fuzzy
-#| msgid "Rotate Right"
-msgctxt "@info:tooltip"
-msgid "Rotate Right"
-msgstr "Xoay phải"
-
 #: digikam/items/imageselectionoverlay.cpp:60
 #, fuzzy
 #| msgid "Deselect"
@@ -1475,6 +1447,35 @@ msgstr ""
 #, kde-format
 msgid "Album \"%1\""
 msgstr "Tập « %1 »"
+
+#: digikam/items/digikamimageview.cpp:288
+#: utilities/cameragui/main/cameraui.cpp:398
+#, fuzzy
+#| msgid "&View"
+msgctxt "View the selected image"
+msgid "View"
+msgstr "&Xem"
+
+#: digikam/items/facerejectionoverlay.cpp:64
+msgctxt "@info:tooltip"
+msgid "If this is not a face, click to reject it."
+msgstr ""
+
+#: digikam/items/imagerotationoverlay.cpp:68
+#: digikam/views/imagepreviewview.cpp:215
+#, fuzzy
+#| msgid "Rotate Left"
+msgctxt "@info:tooltip"
+msgid "Rotate Left"
+msgstr "Xoay trái"
+
+#: digikam/items/imagerotationoverlay.cpp:72
+#: digikam/views/imagepreviewview.cpp:216
+#, fuzzy
+#| msgid "Rotate Right"
+msgctxt "@info:tooltip"
+msgid "Rotate Right"
+msgstr "Xoay phải"
 
 #: digikam/main/digikamapp.cpp:191
 #, fuzzy
@@ -1537,7 +1538,7 @@ msgid "Next Image"
 msgstr "Ảnh kế"
 
 #: digikam/main/digikamapp.cpp:613 digikam/main/digikamapp.cpp:619
-#: utilities/cameragui/cameraui.cpp:531
+#: utilities/cameragui/main/cameraui.cpp:531
 #: utilities/imageeditor/editor/editorwindow.cpp:647
 #: utilities/lighttable/lighttablewindow.cpp:631
 msgid "Previous Image"
@@ -1551,7 +1552,7 @@ msgstr "Ảnh đầu"
 msgid "Last Image"
 msgstr "Ảnh cuối"
 
-#: digikam/main/digikamapp.cpp:663 utilities/cameragui/cameraui.cpp:502
+#: digikam/main/digikamapp.cpp:663 utilities/cameragui/main/cameraui.cpp:502
 #: utilities/imageeditor/editor/editorwindow.cpp:627
 #: utilities/lighttable/lighttablewindow.cpp:602
 #: utilities/queuemanager/queuemgrwindow.cpp:431
@@ -1691,8 +1692,8 @@ msgstr "Xem..."
 #: digikam/main/digikamapp.cpp:824 digikam/tags/tagmodificationhelper.cpp:245
 #: digikam/utils/editablesearchtreeview.cpp:68
 #: digikam/utils/searchmodificationhelper.cpp:82
-#: utilities/cameragui/cameraiconview.cpp:549
-#: utilities/cameragui/cameraui.cpp:2041
+#: utilities/cameragui/main/cameraui.cpp:2041
+#: utilities/cameragui/views/cameraiconview.cpp:549
 msgid "Delete"
 msgstr "Xoá"
 
@@ -1971,17 +1972,17 @@ msgstr "Ngày ảnh"
 
 #: digikam/main/digikamapp.cpp:1087
 #: libs/widgets/metadata/metadataselector.cpp:266
-#: utilities/cameragui/cameraui.cpp:365
+#: utilities/cameragui/main/cameraui.cpp:365
 msgid "Select All"
 msgstr "Chọn tất cả"
 
-#: digikam/main/digikamapp.cpp:1094 utilities/cameragui/cameraui.cpp:372
+#: digikam/main/digikamapp.cpp:1094 utilities/cameragui/main/cameraui.cpp:372
 #: utilities/imageeditor/editor/editorwindow.cpp:498
 msgid "Select None"
 msgstr "Chọn Không gì"
 
 #: digikam/main/digikamapp.cpp:1101 digikam/tags/tagcheckview.cpp:118
-#: utilities/cameragui/cameraui.cpp:379
+#: utilities/cameragui/main/cameraui.cpp:379
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
 
@@ -2033,7 +2034,7 @@ msgstr "Với mọi tập ảnh phụ"
 msgid "Show Thumbbar"
 msgstr "Hiện các ảnh mẫu"
 
-#: digikam/main/digikamapp.cpp:1188 utilities/cameragui/cameraui.cpp:515
+#: digikam/main/digikamapp.cpp:1188 utilities/cameragui/main/cameraui.cpp:515
 #: utilities/imageeditor/editor/editorwindow.cpp:641
 #: utilities/lighttable/lighttablewindow.cpp:615
 #: utilities/queuemanager/queuemgrwindow.cpp:444
@@ -2283,7 +2284,7 @@ msgstr "Đang tải sắc thái..."
 #: libs/themeengine/themeengine.cpp:99 libs/themeengine/themeengine.cpp:195
 #: libs/themeengine/themeengine.cpp:209
 #: libs/widgets/metadata/metadataselector.cpp:268
-#: utilities/cameragui/cameraui.cpp:2479
+#: utilities/cameragui/main/cameraui.cpp:2479
 #: utilities/imageeditor/editor/editorwindow.cpp:2892
 #: utilities/lighttable/lighttablewindow.cpp:1711
 #: utilities/queuemanager/queuemgrwindow.cpp:755
@@ -2312,7 +2313,7 @@ msgid ""
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:2827 digikam/main/digikamapp.cpp:2863
-#: showfoto/showfoto.cpp:1111 utilities/cameragui/cameraui.cpp:2040
+#: showfoto/showfoto.cpp:1111 utilities/cameragui/main/cameraui.cpp:2040
 #: utilities/imageeditor/editor/editorwindow.cpp:1352
 msgid "Warning"
 msgstr "Cảnh báo"
@@ -3030,7 +3031,7 @@ msgstr "Tên đã có"
 #: digikam/utils/tooltipfiller.cpp:72
 #: libs/imageproperties/imagepropertiestab.cpp:216
 #: libs/widgets/common/thumbbartooltip.cpp:147
-#: utilities/cameragui/cameraiconviewtooltip.cpp:138
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:138
 msgid "File Properties"
 msgstr "Thuộc tính tập tin"
 
@@ -3044,20 +3045,20 @@ msgstr "Tên:"
 #: digikam/utils/tooltipfiller.cpp:85 digikam/utils/tooltipfiller.cpp:403
 #: libs/imageproperties/imagedescedittab.cpp:188
 #: libs/widgets/common/thumbbartooltip.cpp:159
-#: utilities/cameragui/cameraiconviewtooltip.cpp:150
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:150
 msgid "Date:"
 msgstr "Ngày:"
 
 #: digikam/utils/tooltipfiller.cpp:90
 #: libs/widgets/common/thumbbartooltip.cpp:164
-#: utilities/cameragui/cameraiconviewtooltip.cpp:155
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:155
 msgid "Size:"
 msgstr "Cỡ :"
 
 #: digikam/utils/tooltipfiller.cpp:92
 #: libs/imageproperties/cameraitempropertiestab.cpp:355
 #: libs/widgets/common/thumbbartooltip.cpp:165
-#: utilities/cameragui/cameraiconviewtooltip.cpp:156
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:156
 #, kde-format
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
@@ -3069,7 +3070,7 @@ msgstr "%1 (%2)"
 #: imageplugins/filters/distortionfxtool.cpp:129
 #: libs/dimg/filters/decorate/bordersettings.cpp:132
 #: libs/widgets/common/thumbbartooltip.cpp:208
-#: utilities/cameragui/cameraiconviewtooltip.cpp:167
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:167
 msgid "Type:"
 msgstr "Kiểu :"
 
@@ -3082,7 +3083,7 @@ msgstr "Không rõ"
 
 #: digikam/utils/tooltipfiller.cpp:114
 #: libs/imageproperties/imagepropertiessidebardb.cpp:514
-#: utilities/cameragui/cameraiconviewtooltip.cpp:181
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:181
 #, fuzzy, kde-format
 #| msgid "%1x%2 (%3Mpx)"
 msgctxt "width x height (megapixels Mpx)"
@@ -3091,7 +3092,7 @@ msgstr "%1x%2 (%3Mpx)"
 
 #: digikam/utils/tooltipfiller.cpp:118
 #: libs/widgets/common/thumbbartooltip.cpp:217
-#: utilities/cameragui/cameraiconviewtooltip.cpp:185
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:185
 msgid "Dimensions:"
 msgstr "Các chiều :"
 
@@ -3099,13 +3100,13 @@ msgstr "Các chiều :"
 #: libs/imageproperties/cameraitempropertiestab.cpp:264
 #: libs/imageproperties/imagepropertiestab.cpp:308
 #: libs/widgets/common/thumbbartooltip.cpp:236
-#: utilities/cameragui/cameraiconviewtooltip.cpp:202
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:202
 msgid "Photograph Properties"
 msgstr "Thuộc tính ảnh chụp"
 
 #: digikam/utils/tooltipfiller.cpp:147
 #: libs/widgets/common/thumbbartooltip.cpp:248
-#: utilities/cameragui/cameraiconviewtooltip.cpp:214
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:214
 msgid "Make/Model:"
 msgstr "Hãng/Mô hình:"
 
@@ -3121,14 +3122,14 @@ msgstr "Tạo :"
 #: libs/imageproperties/imagepropertiessidebar.cpp:335
 #: libs/imageproperties/imagepropertiessidebardb.cpp:554
 #: libs/widgets/common/thumbbartooltip.cpp:279
-#: utilities/cameragui/cameraiconviewtooltip.cpp:245
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:245
 #, kde-format
 msgid "%1 (35mm: %2)"
 msgstr "%1 (35mm: %2)"
 
 #: digikam/utils/tooltipfiller.cpp:189
 #: libs/widgets/common/thumbbartooltip.cpp:287
-#: utilities/cameragui/cameraiconviewtooltip.cpp:253
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:253
 msgid "Aperture/Focal:"
 msgstr "Độ mở/Tiêu :"
 
@@ -3137,7 +3138,7 @@ msgstr "Độ mở/Tiêu :"
 #: libs/imageproperties/imagepropertiessidebar.cpp:340
 #: libs/imageproperties/imagepropertiessidebardb.cpp:559
 #: libs/widgets/common/thumbbartooltip.cpp:295
-#: utilities/cameragui/cameraiconviewtooltip.cpp:261
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:261
 #: utilities/slideshow/slideshow.cpp:463
 #, kde-format
 msgid "%1 ISO"
@@ -3145,13 +3146,13 @@ msgstr "%1 ISO"
 
 #: digikam/utils/tooltipfiller.cpp:202
 #: libs/widgets/common/thumbbartooltip.cpp:302
-#: utilities/cameragui/cameraiconviewtooltip.cpp:268
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:268
 msgid "Exposure/Sensitivity:"
 msgstr "Độ phơi nắng/nhạy:"
 
 #: digikam/utils/tooltipfiller.cpp:229
 #: libs/widgets/common/thumbbartooltip.cpp:329
-#: utilities/cameragui/cameraiconviewtooltip.cpp:295
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:295
 msgid "Mode/Program:"
 msgstr "Chế độ/Chương trình:"
 
@@ -3164,7 +3165,7 @@ msgstr "Nháy:"
 
 #: digikam/utils/tooltipfiller.cpp:254
 #: libs/widgets/common/thumbbartooltip.cpp:353
-#: utilities/cameragui/cameraiconviewtooltip.cpp:319
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:319
 msgid "White Balance:"
 msgstr "Cán cân trắng:"
 
@@ -3203,7 +3204,7 @@ msgstr "Sửa thuộc tính tập ảnh..."
 
 #: digikam/utils/tooltipfiller.cpp:382 digikam/utils/tooltipfiller.cpp:452
 #: libs/widgets/common/thumbbartooltip.cpp:151
-#: utilities/cameragui/cameraiconviewtooltip.cpp:142
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:142
 msgid "Name:"
 msgstr "Tên:"
 
@@ -5973,7 +5974,7 @@ msgid "Automatic Adjustment"
 msgstr "Điều chỉnh:"
 
 #: imageplugins/transform/freerotationtool.cpp:221
-#: utilities/cameragui/cameraui.cpp:329
+#: utilities/cameragui/main/cameraui.cpp:329
 msgid "Settings"
 msgstr "Thiết lập"
 
@@ -7480,7 +7481,7 @@ msgstr "Lưu ảnh"
 msgid "Migrate ->"
 msgstr ""
 
-#: libs/dialogs/migrationdlg.cpp:137 utilities/cameragui/cameraui.cpp:341
+#: libs/dialogs/migrationdlg.cpp:137 utilities/cameragui/main/cameraui.cpp:341
 #: utilities/imageeditor/editor/editorwindow.cpp:666
 #, fuzzy
 #| msgid "C&ancel"
@@ -9296,7 +9297,7 @@ msgid "Rain Drops Effect"
 msgstr "Giọt mưa"
 
 #: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:134
-#: utilities/cameragui/cameraui.cpp:2317
+#: utilities/cameragui/main/cameraui.cpp:2317
 #: utilities/lighttable/lighttablewindow.cpp:1579
 #: utilities/queuemanager/queuemgrwindow.cpp:713
 msgid "General"
@@ -11541,7 +11542,8 @@ msgstr "Mô tả"
 #: libs/imageproperties/imagedescedittab.cpp:303
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
 #: utilities/advancedrename/common/tooltipdialog.cpp:57
-#: utilities/cameragui/cameraui.cpp:348 utilities/cameragui/cameraui.cpp:2022
+#: utilities/cameragui/main/cameraui.cpp:348
+#: utilities/cameragui/main/cameraui.cpp:2022
 msgid "Information"
 msgstr "Thông tin"
 
@@ -11931,7 +11933,7 @@ msgstr "Chất lượng JPEG %1"
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:401
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:433
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:456
-#: utilities/cameragui/cameraiconviewtooltip.cpp:175
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:175
 #: utilities/imageeditor/canvas/undoaction.h:95
 #: utilities/imageeditor/editor/imagewindow.cpp:839
 msgid "Unknown"
@@ -12647,10 +12649,6 @@ msgstr "Tự chọn"
 msgid "Choose..."
 msgstr ""
 
-#: libs/widgets/common/ditemtooltip.cpp:53
-msgid "unavailable"
-msgstr "không sẵn sàng"
-
 #: libs/widgets/common/dzoombar.cpp:238
 #, kde-format
 msgid "Size: %1"
@@ -12659,6 +12657,10 @@ msgstr "Cỡ : %1"
 #: libs/widgets/common/paniconwidget.cpp:119
 msgid "Pan the image to a region"
 msgstr "Kéo ngang ảnh vào vùng"
+
+#: libs/widgets/common/ditemtooltip.cpp:54
+msgid "unavailable"
+msgstr "không sẵn sàng"
 
 #: libs/widgets/common/searchtextbar.cpp:290
 #, fuzzy
@@ -12702,13 +12704,13 @@ msgstr "Vị trí ảnh:"
 
 #: libs/widgets/common/thumbbartooltip.cpp:262
 #: libs/widgets/common/thumbbartooltip.cpp:266
-#: utilities/cameragui/cameraiconviewtooltip.cpp:228
-#: utilities/cameragui/cameraiconviewtooltip.cpp:232
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:228
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:232
 msgid "Created:"
 msgstr "Tạo :"
 
 #: libs/widgets/common/thumbbartooltip.cpp:341
-#: utilities/cameragui/cameraiconviewtooltip.cpp:307
+#: utilities/cameragui/views/cameraiconviewtooltip.cpp:307
 msgid "Flash:"
 msgstr "Nháy:"
 
@@ -12741,6 +12743,12 @@ msgstr "Tựa"
 #| msgid "Color depth:"
 msgid "Color Label: %1"
 msgstr "Độ sâu màu :"
+
+#: libs/widgets/common/imagedelegateoverlay.cpp:307
+#, kde-format
+msgctxt "@info"
+msgid "<i>Applying operation to <br/><b>%1</b> selected pictures</i>"
+msgstr ""
 
 #: libs/widgets/common/ditemdelegate.cpp:152
 #, fuzzy, kde-format
@@ -15011,117 +15019,202 @@ msgstr "<b>Tiến trình cập nhật cơ sở dữ liệu ảnh mẫu đã ch�
 msgid "Update of fingerprint database complete."
 msgstr "<b>Tiến trình cập nhật cơ sở dữ liệu ảnh mẫu đã chạy xong</b>"
 
-#: utilities/cameragui/camerafolderdialog.cpp:69
+#: utilities/cameragui/controller/cameracontroller.cpp:404
+msgid "Connecting to camera..."
+msgstr "Đang kết nối tới máy ảnh..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:412
+#, fuzzy
+#| msgid "Connection established"
+msgid "Connection established."
+msgstr "Sự kết nối đã được thiết lập"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:416
+#, fuzzy
+#| msgid "Connection failed"
+msgid "Connection failed."
+msgstr "Lỗi kết nối"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:423
+msgid "Getting camera information..."
+msgstr "Đang lấy thông tin về máy ảnh..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:436
+#, fuzzy
+#| msgid "Getting camera information..."
+msgid "Getting available free space on camera..."
+msgstr "Đang lấy thông tin về máy ảnh..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:445
+#, fuzzy
+#| msgid "Settings..."
+msgid "Getting preview..."
+msgstr "Thiết lập..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:453
+#, fuzzy
+#| msgid "Caricature"
+msgid "Capture image..."
+msgstr "Vẽ biếm hoạ"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:461
+msgid "Listing folders..."
+msgstr "Đang liệt kê các thư mục..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:468
+msgid "The folders have been listed."
+msgstr ""
+
+#: utilities/cameragui/controller/cameracontroller.cpp:476
 #, kde-format
-msgid "%1 - Select Camera Folder"
-msgstr "%1 — Chọn thư mục máy ảnh"
+msgid "Listing files in %1..."
+msgstr "Đang liệt kê các tập tin nằm trong %1 ..."
 
-#: utilities/cameragui/camerafolderdialog.cpp:88
-#, fuzzy
-#| msgid ""
-#| "<p>Please select the camera folder where you want to upload the pictures."
-#| "</p>"
-msgid ""
-"<p>Please select the camera folder where you want to upload the images.</p>"
-msgstr "<p>Hãy chọn thư mục máy ảnh lên đó bạn muốn tải các ảnh.</p>"
-
-#: utilities/cameragui/camerafolderview.cpp:68
-msgid "Camera Folders"
-msgstr "Thư mục máy ảnh"
-
-#: utilities/cameragui/camerainfodialog.cpp:45
-#, fuzzy
-#| msgid "Picture Information"
-msgid "Device Information"
-msgstr "Thông tin ảnh"
-
-#: utilities/cameragui/camerainfodialog.cpp:59
-msgid "Summary"
-msgstr "Tóm tắt"
-
-#: utilities/cameragui/camerainfodialog.cpp:60
-#, fuzzy
-#| msgid "Summary"
-msgid "Device Summary"
-msgstr "Tóm tắt"
-
-#: utilities/cameragui/camerainfodialog.cpp:69
-msgid "Manual"
-msgstr "Sổ tay"
-
-#: utilities/cameragui/camerainfodialog.cpp:70
-#, fuzzy
-#| msgid "Device Class"
-msgid "Device Manual"
-msgstr "Hạng thiết bị"
-
-#: utilities/cameragui/camerainfodialog.cpp:79
-msgid "About"
-msgstr "Giới thiệu"
-
-#: utilities/cameragui/camerainfodialog.cpp:80
-msgid "About Driver"
-msgstr "Giới thiệu về trình điều khiển"
-
-#: utilities/cameragui/cameranamehelper.cpp:111
-#, fuzzy
-#| msgid "Auto-&Detect"
-msgid "auto-detected"
-msgstr "&Tìm ra tự động"
-
-#: utilities/cameragui/capturedlg.cpp:70
+#: utilities/cameragui/controller/cameracontroller.cpp:482
 #, fuzzy, kde-format
-#| msgid "Nature"
-msgid "Capture from %1"
-msgstr "Tự nhiên"
+#| msgid "Failed to list files in %1"
+msgid "Failed to list files in %1."
+msgstr "Lỗi liệt kê tập tin nằm trong %1"
 
-#: utilities/cameragui/capturedlg.cpp:73 utilities/cameragui/cameraui.cpp:354
-#, fuzzy
-#| msgid "Nature"
-msgid "Capture"
-msgstr "Tự nhiên"
-
-#: utilities/cameragui/capturewidget.cpp:93
-#, fuzzy
-#| msgid ""
-#| "Cannot display preview for\n"
-#| "\"%1\""
-msgid "Cannot display camera preview"
-msgstr ""
-"Không thể hiển thị ô xem thử cho\n"
-"« %1 »"
-
-#: utilities/cameragui/freespacewidget.cpp:327
-#, fuzzy
-#| msgid "Camera Manual"
-msgid "Camera Media"
-msgstr "Sổ tay máy ảnh"
-
-#: utilities/cameragui/freespacewidget.cpp:331
-#, fuzzy
-#| msgid "Album Library Path"
-msgid "Album Library"
-msgstr "Đường dẫn thư viện tập ảnh"
-
-#: utilities/cameragui/freespacewidget.cpp:341
-#: utilities/cameragui/freespacewidget.cpp:352
-msgid "Capacity:"
+#: utilities/cameragui/controller/cameracontroller.cpp:490
+#, kde-format
+msgid "The files in %1 have been listed."
 msgstr ""
 
-#: utilities/cameragui/freespacewidget.cpp:344
-#: utilities/cameragui/freespacewidget.cpp:355
-#, fuzzy
-#| msgid "unavailable"
-msgid "Available:"
-msgstr "không sẵn sàng"
+#: utilities/cameragui/controller/cameracontroller.cpp:508
+#, fuzzy, kde-format
+#| msgid "Getting thumbnail for %1/%2..."
+msgid "Getting thumbnails for %1..."
+msgstr "Đang lấy ảnh mẫu cho %1/%2..."
 
-#: utilities/cameragui/freespacewidget.cpp:347
-#, fuzzy
-#| msgid "Relief:"
-msgid "Require:"
-msgstr "Nổi bật:"
+#: utilities/cameragui/controller/cameracontroller.cpp:535
+#, fuzzy, kde-format
+#| msgid "Getting EXIF information for %1/%2..."
+msgid "Getting EXIF information for %1..."
+msgstr "Đang lấy thông tin EXIF cho %1/%2..."
 
-#: utilities/cameragui/gpcamera.cpp:1440
+#: utilities/cameragui/controller/cameracontroller.cpp:565
+#, kde-format
+msgid "Downloading file %1..."
+msgstr "Đang tải về tập tin %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:583
+#: utilities/cameragui/controller/cameracontroller.cpp:875
+#: utilities/cameragui/controller/cameracontroller.cpp:888
+#, fuzzy, kde-format
+#| msgid "Failed to download file \"%1\"."
+msgid "Failed to download %1..."
+msgstr "Lỗi tải xuống tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:593
+#, kde-format
+msgid "EXIF rotating file %1..."
+msgstr "Đang xoay EXIF tập tin %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:604
+#, fuzzy, kde-format
+#| msgid "Fix internal date && time"
+msgid "Fix Internal date to file %1..."
+msgstr "Sửa ngày và giờ nội bộ"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:624
+#, fuzzy, kde-format
+#| msgid "Setting Metadata tags to file %1..."
+msgid "Apply Metadata template to file %1..."
+msgstr "Đang đặt thẻ siêu dữ liệu đối với tập tin %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:639
+#, kde-format
+msgid "Converting %1 to lossless file format..."
+msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:672
+#, kde-format
+msgid "Retrieving file %1 from camera..."
+msgstr "Đang lấy tập tin %1 từ máy ảnh..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:682
+#, fuzzy, kde-format
+#| msgid "Failed to retrieve file %1 from camera"
+msgid "Failed to retrieve file %1 from camera."
+msgstr "Lỗi lấy tập tin %1 từ máy ảnh"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:698
+#, kde-format
+msgid "Uploading file %1 to camera..."
+msgstr "Đang tải tập tin %1 lên máy ảnh..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:720
+#, kde-format
+msgid "Deleting file %1..."
+msgstr "Đang xoá tập tin %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:741
+#, kde-format
+msgid "Toggle lock file %1..."
+msgstr "Bật/tắt tập tin khoá %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:802
+msgid "Rename File"
+msgstr "Thay tên tập tin"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:864
+#, kde-format
+msgid "Skipped file %1"
+msgstr "Đã bỏ qua tập tin %1"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:881
+#, fuzzy, kde-format
+#| msgid "Downloading file %1..."
+msgid "Download successfully %1..."
+msgstr "Đang tải về tập tin %1..."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:887
+#, kde-format
+msgid "Failed to download file \"%1\"."
+msgstr "Lỗi tải xuống tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:898
+#: utilities/cameragui/controller/cameracontroller.cpp:925
+#: utilities/cameragui/controller/cameracontroller.cpp:951
+#: utilities/cameragui/controller/cameracontroller.cpp:977
+msgid " Do you want to continue?"
+msgstr " Bạn có muốn tiếp tục không?"
+
+#: utilities/cameragui/controller/cameracontroller.cpp:914
+#, kde-format
+msgid "Failed to upload file \"%1\"."
+msgstr "Lỗi tải lên tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:915
+#, fuzzy, kde-format
+#| msgid "Failed to upload file \"%1\"."
+msgid "Failed to upload %1..."
+msgstr "Lỗi tải lên tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:939
+#, fuzzy, kde-format
+#| msgid "Failed to delete file \"%1\"."
+msgid "Failed to delete %1..."
+msgstr "Lỗi xoá tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:941
+#, kde-format
+msgid "Failed to delete file \"%1\"."
+msgstr "Lỗi xoá tập tin « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:965
+#, fuzzy, kde-format
+#| msgid "Failed to toggle lock file \"%1\"."
+msgid "Failed to lock %1..."
+msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
+
+#: utilities/cameragui/controller/cameracontroller.cpp:967
+#, kde-format
+msgid "Failed to toggle lock file \"%1\"."
+msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
+
+#: utilities/cameragui/devices/gpcamera.cpp:1440
 #, fuzzy, kde-format
 #| msgid "Title: %1<br>Model: %2<br>Port: %3<br>Path: %4<br>"
 msgid ""
@@ -15129,25 +15222,37 @@ msgid ""
 "b><br/><br/>"
 msgstr "Tên: %1<br>Mô hình: %2<br>Cổng: %3<br>Đường dẫn: %4<br>"
 
-#: utilities/cameragui/gpcamera.cpp:1455 utilities/cameragui/gpcamera.cpp:1456
-#: utilities/cameragui/gpcamera.cpp:1457 utilities/cameragui/gpcamera.cpp:1458
-#: utilities/cameragui/gpcamera.cpp:1459 utilities/cameragui/gpcamera.cpp:1460
-#: utilities/cameragui/umscamera.cpp:555 utilities/cameragui/umscamera.cpp:556
-#: utilities/cameragui/umscamera.cpp:557 utilities/cameragui/umscamera.cpp:558
-#: utilities/cameragui/umscamera.cpp:559 utilities/cameragui/umscamera.cpp:560
+#: utilities/cameragui/devices/gpcamera.cpp:1455
+#: utilities/cameragui/devices/gpcamera.cpp:1456
+#: utilities/cameragui/devices/gpcamera.cpp:1457
+#: utilities/cameragui/devices/gpcamera.cpp:1458
+#: utilities/cameragui/devices/gpcamera.cpp:1459
+#: utilities/cameragui/devices/gpcamera.cpp:1460
+#: utilities/cameragui/devices/umscamera.cpp:555
+#: utilities/cameragui/devices/umscamera.cpp:556
+#: utilities/cameragui/devices/umscamera.cpp:557
+#: utilities/cameragui/devices/umscamera.cpp:558
+#: utilities/cameragui/devices/umscamera.cpp:559
+#: utilities/cameragui/devices/umscamera.cpp:560
 msgid "yes"
 msgstr "có"
 
-#: utilities/cameragui/gpcamera.cpp:1455 utilities/cameragui/gpcamera.cpp:1456
-#: utilities/cameragui/gpcamera.cpp:1457 utilities/cameragui/gpcamera.cpp:1458
-#: utilities/cameragui/gpcamera.cpp:1459 utilities/cameragui/gpcamera.cpp:1460
-#: utilities/cameragui/umscamera.cpp:555 utilities/cameragui/umscamera.cpp:556
-#: utilities/cameragui/umscamera.cpp:557 utilities/cameragui/umscamera.cpp:558
-#: utilities/cameragui/umscamera.cpp:559 utilities/cameragui/umscamera.cpp:560
+#: utilities/cameragui/devices/gpcamera.cpp:1455
+#: utilities/cameragui/devices/gpcamera.cpp:1456
+#: utilities/cameragui/devices/gpcamera.cpp:1457
+#: utilities/cameragui/devices/gpcamera.cpp:1458
+#: utilities/cameragui/devices/gpcamera.cpp:1459
+#: utilities/cameragui/devices/gpcamera.cpp:1460
+#: utilities/cameragui/devices/umscamera.cpp:555
+#: utilities/cameragui/devices/umscamera.cpp:556
+#: utilities/cameragui/devices/umscamera.cpp:557
+#: utilities/cameragui/devices/umscamera.cpp:558
+#: utilities/cameragui/devices/umscamera.cpp:559
+#: utilities/cameragui/devices/umscamera.cpp:560
 msgid "no"
 msgstr "không"
 
-#: utilities/cameragui/gpcamera.cpp:1449
+#: utilities/cameragui/devices/gpcamera.cpp:1449
 #, fuzzy, kde-format
 #| msgid ""
 #| "Title: %1\n"
@@ -15179,70 +15284,15 @@ msgstr ""
 " • xoá thư mục: %9\n"
 "\n"
 
-#: utilities/cameragui/gpconfigdlg.cpp:285
+#: utilities/cameragui/devices/gpconfigdlg.cpp:285
 msgid "Button (not supported by KControl)"
 msgstr ""
 
-#: utilities/cameragui/gpconfigdlg.cpp:293
+#: utilities/cameragui/devices/gpconfigdlg.cpp:293
 msgid "Date (not supported by KControl)"
 msgstr ""
 
-#: utilities/cameragui/renamecustomizer.cpp:111
-msgid "Camera filenames"
-msgstr "Tên tập tin máy ảnh"
-
-#: utilities/cameragui/renamecustomizer.cpp:113
-#, fuzzy
-#| msgid ""
-#| "<p>Turn on this option to use camera provided image filenames without "
-#| "modifications."
-msgid ""
-"Turn on this option to use the camera provided image filenames without "
-"modifications."
-msgstr ""
-"<p>Bật tùy chọn này để dùng các tên tập tin do máy ảnh cung cấp, không sửa "
-"đổi."
-
-#: utilities/cameragui/renamecustomizer.cpp:119
-msgid "Change case to:"
-msgstr "Đổi chữ sang:"
-
-#: utilities/cameragui/renamecustomizer.cpp:123
-#, fuzzy
-#| msgid "Leave as Is"
-msgctxt "Leave filename as it is"
-msgid "Leave as-is"
-msgstr "Để lại"
-
-#: utilities/cameragui/renamecustomizer.cpp:124
-#, fuzzy
-#| msgid "Upper"
-msgctxt "Filename to uppercase"
-msgid "Upper"
-msgstr "Trên"
-
-#: utilities/cameragui/renamecustomizer.cpp:125
-#, fuzzy
-#| msgid "Lower"
-msgctxt "Filename to lowercase"
-msgid "Lower"
-msgstr "Chữ thường"
-
-#: utilities/cameragui/renamecustomizer.cpp:127
-#, fuzzy
-#| msgid "<p>Set the method to use to change the case of image filenames."
-msgid "Set the method to use to change the case of the image filenames."
-msgstr ""
-"<p>Ở đây hãy đặt phương pháp chuyển đổi chữ hoa/thường trong tên tập tin ảnh."
-
-#: utilities/cameragui/renamecustomizer.cpp:138
-#, fuzzy
-#| msgid "Customize"
-msgctxt "Custom Image Renaming"
-msgid "Customize"
-msgstr "Tùy chỉnh"
-
-#: utilities/cameragui/umscamera.cpp:533
+#: utilities/cameragui/devices/umscamera.cpp:533
 #, fuzzy
 #| msgid ""
 #| "<b>Mounted Camera</b> driver for USB/IEEE1394 mass storage cameras and "
@@ -15254,7 +15304,7 @@ msgstr ""
 "Trình điều khiển <b>máy ảnh đã lắp</b> cho các máy ảnh cất giữ hàng loạt USB/"
 "IEEE1394 và máy đọc thẻ Flash.<br><br>"
 
-#: utilities/cameragui/umscamera.cpp:538
+#: utilities/cameragui/devices/umscamera.cpp:538
 #, fuzzy, kde-format
 #| msgid "Title: %1<br>Model: %2<br>Port: %3<br>Path: %4<br>"
 msgid ""
@@ -15262,7 +15312,7 @@ msgid ""
 "b><br/>UUID: <b>%5</b><br/><br/>"
 msgstr "Tên: %1<br>Mô hình: %2<br>Cổng: %3<br>Đường dẫn: %4<br>"
 
-#: utilities/cameragui/umscamera.cpp:549
+#: utilities/cameragui/devices/umscamera.cpp:549
 #, fuzzy, kde-format
 #| msgid ""
 #| "Title: %1\n"
@@ -15294,7 +15344,7 @@ msgstr ""
 " • xoá thư mục: %9\n"
 "\n"
 
-#: utilities/cameragui/umscamera.cpp:566
+#: utilities/cameragui/devices/umscamera.cpp:566
 #, fuzzy
 #| msgid ""
 #| "For more information about the <b>Mounted Camera</b> driver, please read "
@@ -15307,7 +15357,7 @@ msgstr ""
 "digiKam, phần <b>Supported Digital Still Cameras</b> (các máy ảnh tĩnh số đã "
 "hỗ trợ)."
 
-#: utilities/cameragui/umscamera.cpp:574
+#: utilities/cameragui/devices/umscamera.cpp:574
 #, fuzzy
 #| msgid ""
 #| "The <b>Mounted Camera</b> driver is a simple interface to a camera disk "
@@ -15326,270 +15376,108 @@ msgstr ""
 "này, hãy liên lạc với nhóm digiKam ở :<br><br>http://www.digikam.org/?"
 "q=contact"
 
-#: utilities/cameragui/cameracontroller.cpp:404
-msgid "Connecting to camera..."
-msgstr "Đang kết nối tới máy ảnh..."
+#: utilities/cameragui/dialogs/camerafolderdialog.cpp:69
+#, kde-format
+msgid "%1 - Select Camera Folder"
+msgstr "%1 — Chọn thư mục máy ảnh"
 
-#: utilities/cameragui/cameracontroller.cpp:412
+#: utilities/cameragui/dialogs/camerafolderdialog.cpp:88
 #, fuzzy
-#| msgid "Connection established"
-msgid "Connection established."
-msgstr "Sự kết nối đã được thiết lập"
+#| msgid ""
+#| "<p>Please select the camera folder where you want to upload the pictures."
+#| "</p>"
+msgid ""
+"<p>Please select the camera folder where you want to upload the images.</p>"
+msgstr "<p>Hãy chọn thư mục máy ảnh lên đó bạn muốn tải các ảnh.</p>"
 
-#: utilities/cameragui/cameracontroller.cpp:416
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:45
 #, fuzzy
-#| msgid "Connection failed"
-msgid "Connection failed."
-msgstr "Lỗi kết nối"
+#| msgid "Picture Information"
+msgid "Device Information"
+msgstr "Thông tin ảnh"
 
-#: utilities/cameragui/cameracontroller.cpp:423
-msgid "Getting camera information..."
-msgstr "Đang lấy thông tin về máy ảnh..."
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:59
+msgid "Summary"
+msgstr "Tóm tắt"
 
-#: utilities/cameragui/cameracontroller.cpp:436
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:60
 #, fuzzy
-#| msgid "Getting camera information..."
-msgid "Getting available free space on camera..."
-msgstr "Đang lấy thông tin về máy ảnh..."
+#| msgid "Summary"
+msgid "Device Summary"
+msgstr "Tóm tắt"
 
-#: utilities/cameragui/cameracontroller.cpp:445
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:69
+msgid "Manual"
+msgstr "Sổ tay"
+
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:70
 #, fuzzy
-#| msgid "Settings..."
-msgid "Getting preview..."
-msgstr "Thiết lập..."
+#| msgid "Device Class"
+msgid "Device Manual"
+msgstr "Hạng thiết bị"
 
-#: utilities/cameragui/cameracontroller.cpp:453
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:79
+msgid "About"
+msgstr "Giới thiệu"
+
+#: utilities/cameragui/dialogs/camerainfodialog.cpp:80
+msgid "About Driver"
+msgstr "Giới thiệu về trình điều khiển"
+
+#: utilities/cameragui/dialogs/capturedlg.cpp:70
+#, fuzzy, kde-format
+#| msgid "Nature"
+msgid "Capture from %1"
+msgstr "Tự nhiên"
+
+#: utilities/cameragui/dialogs/capturedlg.cpp:73
+#: utilities/cameragui/main/cameraui.cpp:354
 #, fuzzy
-#| msgid "Caricature"
-msgid "Capture image..."
-msgstr "Vẽ biếm hoạ"
+#| msgid "Nature"
+msgid "Capture"
+msgstr "Tự nhiên"
 
-#: utilities/cameragui/cameracontroller.cpp:461
-msgid "Listing folders..."
-msgstr "Đang liệt kê các thư mục..."
-
-#: utilities/cameragui/cameracontroller.cpp:468
-msgid "The folders have been listed."
-msgstr ""
-
-#: utilities/cameragui/cameracontroller.cpp:476
-#, kde-format
-msgid "Listing files in %1..."
-msgstr "Đang liệt kê các tập tin nằm trong %1 ..."
-
-#: utilities/cameragui/cameracontroller.cpp:482
-#, fuzzy, kde-format
-#| msgid "Failed to list files in %1"
-msgid "Failed to list files in %1."
-msgstr "Lỗi liệt kê tập tin nằm trong %1"
-
-#: utilities/cameragui/cameracontroller.cpp:490
-#, kde-format
-msgid "The files in %1 have been listed."
-msgstr ""
-
-#: utilities/cameragui/cameracontroller.cpp:508
-#, fuzzy, kde-format
-#| msgid "Getting thumbnail for %1/%2..."
-msgid "Getting thumbnails for %1..."
-msgstr "Đang lấy ảnh mẫu cho %1/%2..."
-
-#: utilities/cameragui/cameracontroller.cpp:535
-#, fuzzy, kde-format
-#| msgid "Getting EXIF information for %1/%2..."
-msgid "Getting EXIF information for %1..."
-msgstr "Đang lấy thông tin EXIF cho %1/%2..."
-
-#: utilities/cameragui/cameracontroller.cpp:565
-#, kde-format
-msgid "Downloading file %1..."
-msgstr "Đang tải về tập tin %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:583
-#: utilities/cameragui/cameracontroller.cpp:875
-#: utilities/cameragui/cameracontroller.cpp:888
-#, fuzzy, kde-format
-#| msgid "Failed to download file \"%1\"."
-msgid "Failed to download %1..."
-msgstr "Lỗi tải xuống tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:593
-#, kde-format
-msgid "EXIF rotating file %1..."
-msgstr "Đang xoay EXIF tập tin %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:604
-#, fuzzy, kde-format
-#| msgid "Fix internal date && time"
-msgid "Fix Internal date to file %1..."
-msgstr "Sửa ngày và giờ nội bộ"
-
-#: utilities/cameragui/cameracontroller.cpp:624
-#, fuzzy, kde-format
-#| msgid "Setting Metadata tags to file %1..."
-msgid "Apply Metadata template to file %1..."
-msgstr "Đang đặt thẻ siêu dữ liệu đối với tập tin %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:639
-#, kde-format
-msgid "Converting %1 to lossless file format..."
-msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
-
-#: utilities/cameragui/cameracontroller.cpp:672
-#, kde-format
-msgid "Retrieving file %1 from camera..."
-msgstr "Đang lấy tập tin %1 từ máy ảnh..."
-
-#: utilities/cameragui/cameracontroller.cpp:682
-#, fuzzy, kde-format
-#| msgid "Failed to retrieve file %1 from camera"
-msgid "Failed to retrieve file %1 from camera."
-msgstr "Lỗi lấy tập tin %1 từ máy ảnh"
-
-#: utilities/cameragui/cameracontroller.cpp:698
-#, kde-format
-msgid "Uploading file %1 to camera..."
-msgstr "Đang tải tập tin %1 lên máy ảnh..."
-
-#: utilities/cameragui/cameracontroller.cpp:720
-#, kde-format
-msgid "Deleting file %1..."
-msgstr "Đang xoá tập tin %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:741
-#, kde-format
-msgid "Toggle lock file %1..."
-msgstr "Bật/tắt tập tin khoá %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:802
-msgid "Rename File"
-msgstr "Thay tên tập tin"
-
-#: utilities/cameragui/cameracontroller.cpp:864
-#, kde-format
-msgid "Skipped file %1"
-msgstr "Đã bỏ qua tập tin %1"
-
-#: utilities/cameragui/cameracontroller.cpp:881
-#, fuzzy, kde-format
-#| msgid "Downloading file %1..."
-msgid "Download successfully %1..."
-msgstr "Đang tải về tập tin %1..."
-
-#: utilities/cameragui/cameracontroller.cpp:887
-#, kde-format
-msgid "Failed to download file \"%1\"."
-msgstr "Lỗi tải xuống tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:898
-#: utilities/cameragui/cameracontroller.cpp:925
-#: utilities/cameragui/cameracontroller.cpp:951
-#: utilities/cameragui/cameracontroller.cpp:977
-msgid " Do you want to continue?"
-msgstr " Bạn có muốn tiếp tục không?"
-
-#: utilities/cameragui/cameracontroller.cpp:914
-#, kde-format
-msgid "Failed to upload file \"%1\"."
-msgstr "Lỗi tải lên tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:915
-#, fuzzy, kde-format
-#| msgid "Failed to upload file \"%1\"."
-msgid "Failed to upload %1..."
-msgstr "Lỗi tải lên tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:939
-#, fuzzy, kde-format
-#| msgid "Failed to delete file \"%1\"."
-msgid "Failed to delete %1..."
-msgstr "Lỗi xoá tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:941
-#, kde-format
-msgid "Failed to delete file \"%1\"."
-msgstr "Lỗi xoá tập tin « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:965
-#, fuzzy, kde-format
-#| msgid "Failed to toggle lock file \"%1\"."
-msgid "Failed to lock %1..."
-msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
-
-#: utilities/cameragui/cameracontroller.cpp:967
-#, kde-format
-msgid "Failed to toggle lock file \"%1\"."
-msgstr "Lỗi bật/tắt tập tin khoá « %1 »."
-
-#: utilities/cameragui/cameraiconview.cpp:543
-#, fuzzy
-#| msgid "&View"
-msgctxt "View the selected image"
-msgid "&View"
-msgstr "&Xem"
-
-#: utilities/cameragui/cameraiconview.cpp:545
-msgid "Download"
-msgstr "Tải về"
-
-#: utilities/cameragui/cameraiconview.cpp:546
-#, fuzzy
-#| msgid "Download Selected"
-msgid "Download && Delete"
-msgstr "Tải về các điều chọn"
-
-#: utilities/cameragui/cameraiconview.cpp:547
-#: utilities/cameragui/cameraui.cpp:437
-msgid "Toggle Lock"
-msgstr "Bật/tắt khoá"
-
-#: utilities/cameragui/cameraiconview.cpp:757
-#, fuzzy
-#| msgid "&Upload into camera"
-msgid "&Upload to camera"
-msgstr "Tải &lên máy ảnh"
-
-#: utilities/cameragui/cameraui.cpp:239
+#: utilities/cameragui/main/cameraui.cpp:239
 #, fuzzy
 #| msgid "<p>Set how digiKam will rename picture files as they are downloaded."
 msgid "Set how digiKam will rename files as they are downloaded."
 msgstr "<p>Đặt phương pháp digiKam thay đổi tên của tập tin một khi tải về"
 
-#: utilities/cameragui/cameraui.cpp:241
+#: utilities/cameragui/main/cameraui.cpp:241
 msgid "File Renaming Options"
 msgstr "Tùy chọn thay tên tập tin"
 
-#: utilities/cameragui/cameraui.cpp:248
+#: utilities/cameragui/main/cameraui.cpp:248
 msgid "Extension-based sub-albums"
 msgstr "Tập ảnh phụ dựa vào phần mở rộng"
 
-#: utilities/cameragui/cameraui.cpp:249
+#: utilities/cameragui/main/cameraui.cpp:249
 msgid "Date-based sub-albums"
 msgstr "Tập ảnh phụ dựa vào ngày tháng"
 
-#: utilities/cameragui/cameraui.cpp:251
+#: utilities/cameragui/main/cameraui.cpp:251
 msgid "Date format:"
 msgstr "Định dạng ngày:"
 
-#: utilities/cameragui/cameraui.cpp:253
+#: utilities/cameragui/main/cameraui.cpp:253
 msgid "ISO"
 msgstr "ISO"
 
-#: utilities/cameragui/cameraui.cpp:254
+#: utilities/cameragui/main/cameraui.cpp:254
 msgid "Full Text"
 msgstr "Văn bản đầy đủ"
 
-#: utilities/cameragui/cameraui.cpp:255
+#: utilities/cameragui/main/cameraui.cpp:255
 msgid "Local Settings"
 msgstr "Thiết lập cục bộ"
 
-#: utilities/cameragui/cameraui.cpp:264
+#: utilities/cameragui/main/cameraui.cpp:264
 #, fuzzy
 #| msgid "<p>Set how digiKam creates albums automatically when downloading."
 msgid "Set how digiKam creates albums automatically when downloading."
 msgstr "<p>Đặt phương pháp digiKam tự động tạo tập ảnh khi tải về."
 
-#: utilities/cameragui/cameraui.cpp:265
+#: utilities/cameragui/main/cameraui.cpp:265
 #, fuzzy
 #| msgid ""
 #| "<p>Toggle on this option if you want to download your pictures into "
@@ -15605,7 +15493,7 @@ msgstr ""
 "rộng tập tin của tập ảnh đích, được tạo tự động. Bằng cách này, bạn có thể "
 "phân cách các tập tin kiểu JPEG và RAW một khi tải xuống máy ảnh."
 
-#: utilities/cameragui/cameraui.cpp:268
+#: utilities/cameragui/main/cameraui.cpp:268
 #, fuzzy
 #| msgid ""
 #| "<p>Toggle on this option if you want to download your pictures into "
@@ -15617,7 +15505,7 @@ msgstr ""
 "<p>Bật tùy chọn này nếu bạn muốn tải các ảnh về tập ảnh phụ dựa vào ngày "
 "tháng tập tin của tập ảnh đích, được tạo tự động."
 
-#: utilities/cameragui/cameraui.cpp:271
+#: utilities/cameragui/main/cameraui.cpp:271
 #, fuzzy
 #| msgid ""
 #| "<p>Select here your preferred date format used to create new albums. The "
@@ -15641,27 +15529,27 @@ msgstr ""
 "i><p><b>Thiết lập cục bộ </b>: định dạng ngày tháng phụ thuộc vào thiết lập "
 "trên bảng điều khiển KDE.<p>"
 
-#: utilities/cameragui/cameraui.cpp:279
+#: utilities/cameragui/main/cameraui.cpp:279
 msgid "Auto-creation of Albums"
 msgstr "Tự động tạo tập ảnh"
 
-#: utilities/cameragui/cameraui.cpp:287
+#: utilities/cameragui/main/cameraui.cpp:287
 msgid "Fix internal date && time"
 msgstr "Sửa ngày và giờ nội bộ"
 
-#: utilities/cameragui/cameraui.cpp:289
+#: utilities/cameragui/main/cameraui.cpp:289
 msgid "Auto-rotate/flip image"
 msgstr "Tự động xoay/lật ảnh"
 
-#: utilities/cameragui/cameraui.cpp:290
+#: utilities/cameragui/main/cameraui.cpp:290
 msgid "Convert to lossless file format"
 msgstr "Chuyển đổi sang định dạng tập tin không mất gì"
 
-#: utilities/cameragui/cameraui.cpp:292
+#: utilities/cameragui/main/cameraui.cpp:292
 msgid "New image format:"
 msgstr "Định dạng ảnh mới:"
 
-#: utilities/cameragui/cameraui.cpp:309
+#: utilities/cameragui/main/cameraui.cpp:309
 #, fuzzy
 #| msgid ""
 #| "<p>Set here all options to fix/transform JPEG files automatically as they "
@@ -15673,7 +15561,7 @@ msgstr ""
 "<p>Ở đây hãy đặt các tùy chọn tự động sửa chữa/chuyển đổi tập tin JPEG một "
 "khi tải về."
 
-#: utilities/cameragui/cameraui.cpp:311
+#: utilities/cameragui/main/cameraui.cpp:311
 #, fuzzy
 #| msgid ""
 #| "<p>Toggle on this option if you want images automatically rotated or "
@@ -15685,13 +15573,13 @@ msgstr ""
 "<p>Bật tùy chọn này nếu bạn muốn có ảnh được xoay hay lật tự động, dùng "
 "thông tin EXIF do máy ảnh cung cấp."
 
-#: utilities/cameragui/cameraui.cpp:313
+#: utilities/cameragui/main/cameraui.cpp:313
 #, fuzzy
 #| msgid "<p>Set here the texture type to apply on image."
 msgid "Select here which metadata template you want to apply to images."
 msgstr "<p>Ở đây hãy đặt kiểu họa tiết cần áp dụng cho ảnh."
 
-#: utilities/cameragui/cameraui.cpp:315
+#: utilities/cameragui/main/cameraui.cpp:315
 #, fuzzy
 #| msgid ""
 #| "<p>Toggle on this option to set date and time metadata tags to the right "
@@ -15709,7 +15597,7 @@ msgstr ""
 "trị này sẽ được lưu vào trường EXIF/IPTC DateTimeDigitized (ngày giờ số hoá) "
 "và DateTimeCreated (ngày giờ tạo)."
 
-#: utilities/cameragui/cameraui.cpp:319
+#: utilities/cameragui/main/cameraui.cpp:319
 #, fuzzy
 #| msgid ""
 #| "<p>Toggle on this option to automatically convert all JPEG files to a "
@@ -15724,7 +15612,7 @@ msgstr ""
 "ảnh không mất gì.<b>Ghi chú :</b> tiến trình chuyển đổi có thể kéo dài một "
 "lát trên máy tính chạy chậm."
 
-#: utilities/cameragui/cameraui.cpp:322
+#: utilities/cameragui/main/cameraui.cpp:322
 #, fuzzy
 #| msgid ""
 #| "<p>Select your preferred lossless image file format to convert to.  "
@@ -15736,94 +15624,99 @@ msgstr ""
 "<p>Hãy chọn định dạng tập tin ảnh không mất gì sang đó cần chuyển đổi. "
 "<b>Ghi chú :</b> mọi siêu dữ liệu vẫn còn được bảo tồn trong khi chuyển đổi."
 
-#: utilities/cameragui/cameraui.cpp:325
+#: utilities/cameragui/main/cameraui.cpp:325
 msgid "On the Fly Operations (JPEG only)"
 msgstr "Thao tác khi yêu cầu (chỉ JPEG)"
 
-#: utilities/cameragui/cameraui.cpp:386
+#: utilities/cameragui/main/cameraui.cpp:386
 #, fuzzy
 #| msgid "Select &New Items"
 msgid "Select New Items"
 msgstr "Chọ&n mục mới"
 
-#: utilities/cameragui/cameraui.cpp:392
+#: utilities/cameragui/main/cameraui.cpp:392
 #, fuzzy
 #| msgid "Select &New Items"
 msgid "Select Locked Items"
 msgstr "Chọ&n mục mới"
 
-#: utilities/cameragui/cameraui.cpp:405
+#: utilities/cameragui/main/cameraui.cpp:405
 msgid "Download Selected"
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/cameraui.cpp:412
+#: utilities/cameragui/main/cameraui.cpp:412
 msgid "Download All"
 msgstr "Tải về hết"
 
-#: utilities/cameragui/cameraui.cpp:418
+#: utilities/cameragui/main/cameraui.cpp:418
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download/Delete Selected"
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/cameraui.cpp:425
+#: utilities/cameragui/main/cameraui.cpp:425
 #, fuzzy
 #| msgid "Download All"
 msgid "Download/Delete All"
 msgstr "Tải về hết"
 
-#: utilities/cameragui/cameraui.cpp:431
+#: utilities/cameragui/main/cameraui.cpp:431
 msgid "Upload..."
 msgstr "Tải lên..."
 
-#: utilities/cameragui/cameraui.cpp:443
+#: utilities/cameragui/main/cameraui.cpp:437
+#: utilities/cameragui/views/cameraiconview.cpp:547
+msgid "Toggle Lock"
+msgstr "Bật/tắt khoá"
+
+#: utilities/cameragui/main/cameraui.cpp:443
 #, fuzzy
 #| msgid "Download"
 msgid "Mark as downloaded"
 msgstr "Tải về"
 
-#: utilities/cameragui/cameraui.cpp:449
+#: utilities/cameragui/main/cameraui.cpp:449
 msgid "Delete Selected"
 msgstr "Xoá các điều chọn"
 
-#: utilities/cameragui/cameraui.cpp:457
+#: utilities/cameragui/main/cameraui.cpp:457
 msgid "Delete All"
 msgstr "Xoá tất cả"
 
-#: utilities/cameragui/cameraui.cpp:463
+#: utilities/cameragui/main/cameraui.cpp:463
 msgid "Show last photo first"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:486
+#: utilities/cameragui/main/cameraui.cpp:486
 #, fuzzy
 #| msgid "Draw grid"
 msgid "Show History"
 msgstr "Vẽ lưới"
 
-#: utilities/cameragui/cameraui.cpp:827
+#: utilities/cameragui/main/cameraui.cpp:827
 #, fuzzy
 #| msgid "Cancelling current operation, please wait..."
 msgid "Canceling current operation, please wait..."
 msgstr "Đang thôi thao tác hiện thời, xin hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:882
+#: utilities/cameragui/main/cameraui.cpp:882
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr "Bạn có muốn đóng hộp thoại này và thôi thao tác đang chạy không?"
 
-#: utilities/cameragui/cameraui.cpp:891
+#: utilities/cameragui/main/cameraui.cpp:891
 msgid "Disconnecting from camera, please wait..."
 msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
 
-#: utilities/cameragui/cameraui.cpp:930
+#: utilities/cameragui/main/cameraui.cpp:930
 msgid "Scanning for new files, please wait..."
 msgstr "Đang quét tìm tập tin mới. Hãy đời..."
 
-#: utilities/cameragui/cameraui.cpp:982
+#: utilities/cameragui/main/cameraui.cpp:982
 #: utilities/queuemanager/queuemgrwindow.cpp:605
 msgid "Ready"
 msgstr "Sẵn sàng"
 
-#: utilities/cameragui/cameraui.cpp:1075
+#: utilities/cameragui/main/cameraui.cpp:1075
 msgid ""
 "Failed to connect to the camera. Please make sure it is connected properly "
 "and turned on. Would you like to try again?"
@@ -15831,24 +15724,24 @@ msgstr ""
 "Lỗi kết nối tới máy ảnh. Hãy kiểm tra xem nó đã được kết nối và bật. Bạn có "
 "muốn thử lại không?"
 
-#: utilities/cameragui/cameraui.cpp:1079
+#: utilities/cameragui/main/cameraui.cpp:1079
 msgid "Connection Failed"
 msgstr "Lỗi kết nối"
 
-#: utilities/cameragui/cameraui.cpp:1080
+#: utilities/cameragui/main/cameraui.cpp:1080
 msgid "Retry"
 msgstr "Thử lại"
 
-#: utilities/cameragui/cameraui.cpp:1081
+#: utilities/cameragui/main/cameraui.cpp:1081
 #: utilities/imageeditor/rawimport/rawsettingsbox.cpp:188
 msgid "Abort"
 msgstr "Hủy bỏ"
 
-#: utilities/cameragui/cameraui.cpp:1416
+#: utilities/cameragui/main/cameraui.cpp:1416
 msgid "Select Image to Upload"
 msgstr "Chọn ảnh cần tải lên"
 
-#: utilities/cameragui/cameraui.cpp:1449
+#: utilities/cameragui/main/cameraui.cpp:1449
 #, kde-format
 msgid ""
 "There is not enough free space on the Camera Medium to upload pictures.\n"
@@ -15857,7 +15750,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1499
+#: utilities/cameragui/main/cameraui.cpp:1499
 #, fuzzy, kde-format
 #| msgid ""
 #| "Camera Folder <b>%1</b> already contains item <b>%2</b><br>Please enter a "
@@ -15869,11 +15762,11 @@ msgstr ""
 "Thư mục máy ảnh <b>%1</b> đã chứa mục <b>%2</b><br>Hãy nhập vào tên tập tin "
 "mới (không có phần mở rộng):"
 
-#: utilities/cameragui/cameraui.cpp:1502
+#: utilities/cameragui/main/cameraui.cpp:1502
 msgid "File already exists"
 msgstr "Tập tin đã có"
 
-#: utilities/cameragui/cameraui.cpp:1594
+#: utilities/cameragui/main/cameraui.cpp:1594
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "the camera pictures into.</p>"
@@ -15881,17 +15774,17 @@ msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: utilities/cameragui/cameraui.cpp:1625
+#: utilities/cameragui/main/cameraui.cpp:1625
 msgid "Try Anyway"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1627
+#: utilities/cameragui/main/cameraui.cpp:1627
 #, fuzzy
 #| msgid "Download"
 msgid "Cancel Download"
 msgstr "Tải về"
 
-#: utilities/cameragui/cameraui.cpp:1630
+#: utilities/cameragui/main/cameraui.cpp:1630
 #, kde-format
 msgid ""
 "There is not enough free space on the disk of the album you selected to "
@@ -15901,17 +15794,17 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1636
+#: utilities/cameragui/main/cameraui.cpp:1636
 msgid "Insufficient Disk Space"
 msgstr ""
 
-#: utilities/cameragui/cameraui.cpp:1854
+#: utilities/cameragui/main/cameraui.cpp:1854
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download is completed..."
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/cameraui.cpp:2019
+#: utilities/cameragui/main/cameraui.cpp:2019
 msgid ""
 "The items listed below are locked by camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
@@ -15921,7 +15814,7 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/cameraui.cpp:2030
+#: utilities/cameragui/main/cameraui.cpp:2030
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to delete this image. Deleted files are unrecoverable. Are you sure?"
@@ -15933,17 +15826,145 @@ msgid_plural ""
 msgstr[0] ""
 "Sắp xoá ảnh này. Tập tin bị xoá không thể được phục hồi. Bạn có chắc chưa?"
 
-#: utilities/cameragui/cameraui.cpp:2246
+#: utilities/cameragui/main/cameraui.cpp:2246
 #, fuzzy, kde-format
 #| msgid "A file with same name (%1) exists in folder %2"
 msgid "A file with the same name (%1) already exists in folder %2."
 msgstr "Một tập tin cùng tên (%1) đã có trong thư mục %2"
 
-#: utilities/cameragui/cameraui.cpp:2258
+#: utilities/cameragui/main/cameraui.cpp:2258
 #, fuzzy, kde-format
 #| msgid "Failed to find Album for path '%1'"
 msgid "Failed to find Album for path '%1'."
 msgstr "Không tìm thấy tập ảnh qua đường dẫn « %1 »"
+
+#: utilities/cameragui/views/camerafolderview.cpp:68
+msgid "Camera Folders"
+msgstr "Thư mục máy ảnh"
+
+#: utilities/cameragui/views/cameraiconview.cpp:543
+#, fuzzy
+#| msgid "&View"
+msgctxt "View the selected image"
+msgid "&View"
+msgstr "&Xem"
+
+#: utilities/cameragui/views/cameraiconview.cpp:545
+msgid "Download"
+msgstr "Tải về"
+
+#: utilities/cameragui/views/cameraiconview.cpp:546
+#, fuzzy
+#| msgid "Download Selected"
+msgid "Download && Delete"
+msgstr "Tải về các điều chọn"
+
+#: utilities/cameragui/views/cameraiconview.cpp:757
+#, fuzzy
+#| msgid "&Upload into camera"
+msgid "&Upload to camera"
+msgstr "Tải &lên máy ảnh"
+
+#: utilities/cameragui/views/cameranamehelper.cpp:111
+#, fuzzy
+#| msgid "Auto-&Detect"
+msgid "auto-detected"
+msgstr "&Tìm ra tự động"
+
+#: utilities/cameragui/widgets/capturewidget.cpp:92
+#, fuzzy
+#| msgid ""
+#| "Cannot display preview for\n"
+#| "\"%1\""
+msgid "Cannot display camera preview"
+msgstr ""
+"Không thể hiển thị ô xem thử cho\n"
+"« %1 »"
+
+#: utilities/cameragui/widgets/freespacewidget.cpp:329
+#, fuzzy
+#| msgid "Camera Manual"
+msgid "Camera Media"
+msgstr "Sổ tay máy ảnh"
+
+#: utilities/cameragui/widgets/freespacewidget.cpp:333
+#, fuzzy
+#| msgid "Album Library Path"
+msgid "Album Library"
+msgstr "Đường dẫn thư viện tập ảnh"
+
+#: utilities/cameragui/widgets/freespacewidget.cpp:343
+#: utilities/cameragui/widgets/freespacewidget.cpp:354
+msgid "Capacity:"
+msgstr ""
+
+#: utilities/cameragui/widgets/freespacewidget.cpp:346
+#: utilities/cameragui/widgets/freespacewidget.cpp:357
+#, fuzzy
+#| msgid "unavailable"
+msgid "Available:"
+msgstr "không sẵn sàng"
+
+#: utilities/cameragui/widgets/freespacewidget.cpp:349
+#, fuzzy
+#| msgid "Relief:"
+msgid "Require:"
+msgstr "Nổi bật:"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:111
+msgid "Camera filenames"
+msgstr "Tên tập tin máy ảnh"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:113
+#, fuzzy
+#| msgid ""
+#| "<p>Turn on this option to use camera provided image filenames without "
+#| "modifications."
+msgid ""
+"Turn on this option to use the camera provided image filenames without "
+"modifications."
+msgstr ""
+"<p>Bật tùy chọn này để dùng các tên tập tin do máy ảnh cung cấp, không sửa "
+"đổi."
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:119
+msgid "Change case to:"
+msgstr "Đổi chữ sang:"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:123
+#, fuzzy
+#| msgid "Leave as Is"
+msgctxt "Leave filename as it is"
+msgid "Leave as-is"
+msgstr "Để lại"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:124
+#, fuzzy
+#| msgid "Upper"
+msgctxt "Filename to uppercase"
+msgid "Upper"
+msgstr "Trên"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:125
+#, fuzzy
+#| msgid "Lower"
+msgctxt "Filename to lowercase"
+msgid "Lower"
+msgstr "Chữ thường"
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:127
+#, fuzzy
+#| msgid "<p>Set the method to use to change the case of image filenames."
+msgid "Set the method to use to change the case of the image filenames."
+msgstr ""
+"<p>Ở đây hãy đặt phương pháp chuyển đổi chữ hoa/thường trong tên tập tin ảnh."
+
+#: utilities/cameragui/widgets/renamecustomizer.cpp:138
+#, fuzzy
+#| msgid "Customize"
+msgctxt "Custom Image Renaming"
+msgid "Customize"
+msgstr "Tùy chỉnh"
 
 #: utilities/firstrun/collectionpage.cpp:76
 msgid "<b>Configure where images and metadata are stored</b>"
@@ -22058,7 +22079,7 @@ msgstr "T&hẻ"
 #. i18n: ectx: Menu (Image)
 #. i18n: file: tests/digikamui_good.rc:33
 #. i18n: ectx: Menu (Image)
-#. i18n: file: utilities/cameragui/cameraui.rc:25
+#. i18n: file: utilities/cameragui/main/cameraui.rc:25
 #. i18n: ectx: Menu (Image)
 #: rc.cpp:14 rc.cpp:116 rc.cpp:149 rc.cpp:244
 msgid "&Image"
@@ -22072,7 +22093,7 @@ msgstr "Ản&h"
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: tests/digikamui_good.rc:56
 #. i18n: ectx: Menu (Edit)
-#. i18n: file: utilities/cameragui/cameraui.rc:16
+#. i18n: file: utilities/cameragui/main/cameraui.rc:16
 #. i18n: ectx: Menu (Edit)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:27
 #. i18n: ectx: Menu (Edit)
@@ -22088,7 +22109,7 @@ msgstr "&Sửa"
 #. i18n: ectx: Menu (View)
 #. i18n: file: tests/digikamui_good.rc:63
 #. i18n: ectx: Menu (View)
-#. i18n: file: utilities/cameragui/cameraui.rc:43
+#. i18n: file: utilities/cameragui/main/cameraui.rc:43
 #. i18n: ectx: Menu (View)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:38
 #. i18n: ectx: Menu (View)
@@ -22143,7 +22164,7 @@ msgstr "&Xuất"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: tests/digikamui_good.rc:117
 #. i18n: ectx: Menu (settings)
-#. i18n: file: utilities/cameragui/cameraui.rc:63
+#. i18n: file: utilities/cameragui/main/cameraui.rc:63
 #. i18n: ectx: Menu (settings)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:91
 #. i18n: ectx: Menu (settings)
@@ -22164,7 +22185,7 @@ msgstr "Thiết &lập"
 #. i18n: ectx: Menu (help)
 #. i18n: file: tests/digikamui_good.rc:129
 #. i18n: ectx: Menu (help)
-#. i18n: file: utilities/cameragui/cameraui.rc:53
+#. i18n: file: utilities/cameragui/main/cameraui.rc:53
 #. i18n: ectx: Menu (help)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:81
 #. i18n: ectx: Menu (help)
@@ -22195,7 +22216,7 @@ msgstr "Trợ g&iúp"
 #. i18n: ectx: ToolBar (ToolBar)
 #. i18n: file: tests/digikamui_good.rc:145
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: utilities/cameragui/cameraui.rc:78
+#. i18n: file: utilities/cameragui/main/cameraui.rc:78
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: utilities/imageeditor/editor/digikamimagewindowui.rc:106
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -22445,7 +22466,7 @@ msgstr ""
 msgid "Folder aware numbering"
 msgstr ""
 
-#. i18n: file: utilities/cameragui/cameraui.rc:6
+#. i18n: file: utilities/cameragui/main/cameraui.rc:6
 #. i18n: ectx: Menu (Device)
 #: rc.cpp:238
 #, fuzzy

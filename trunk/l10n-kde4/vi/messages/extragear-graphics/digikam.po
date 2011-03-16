@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-15 03:27+0100\n"
+"POT-Creation-Date: 2011-03-16 03:19+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -12063,7 +12063,7 @@ msgstr ""
 
 #: libs/template/templatelist.cpp:83
 #: utilities/searchwindow/searchfields.cpp:537
-#: utilities/setup/setupcamera.cpp:180
+#: utilities/setup/setupcamera.cpp:196
 msgid "Title"
 msgstr "Tựa"
 
@@ -12578,7 +12578,7 @@ msgid "Host Name"
 msgstr "Theo tên"
 
 #: libs/widgets/common/databasewidget.cpp:112
-#: utilities/setup/setupcamera.cpp:182
+#: utilities/setup/setupcamera.cpp:198
 msgid "Port"
 msgstr "Cổng"
 
@@ -12948,7 +12948,7 @@ msgid "Raw information about the ICC profile manufacturer"
 msgstr "Thông tin thô về hãng chế tạo hồ sơ ICC"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:138
-#: utilities/setup/setupcamera.cpp:181
+#: utilities/setup/setupcamera.cpp:197
 msgid "Model"
 msgstr "Mô hình"
 
@@ -19478,228 +19478,83 @@ msgstr "Sửa tìm kiếm..."
 msgid "Add Search Group"
 msgstr "Tìm kiếm cấp cao"
 
-#: utilities/setup/setupplugins.cpp:75
+#: utilities/setup/setupcamera.cpp:192
 #, fuzzy
-#| msgid "<p>A list of available Kipi plugins appears below."
-msgid "A list of available Kipi plugins appears below."
-msgstr "<p>Bên dưới có danh sách các phần bổ sung Kipi sẵn sàng."
-
-#: utilities/setup/setupplugins.cpp:103
-#, kde-format
-msgid "1 Kipi plugin found"
-msgid_plural "%1 Kipi plugins found"
-msgstr[0] "Tìm thấy %1 phần bổ sung Kipi"
-
-#: utilities/setup/setuptemplate.cpp:93
-#, fuzzy
-#| msgid "Relative"
-msgid "Template Title:"
-msgstr "Tương đối"
-
-#: utilities/setup/setuptemplate.cpp:96
-#, fuzzy
-#| msgid "<p>Select here the text rotation to use."
-msgid "Enter the metadata template title here."
-msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
-
-#: utilities/setup/setuptemplate.cpp:97
+#| msgid ""
+#| "<p>Here you can see the digital camera list used by digiKam via the "
+#| "Gphoto interface."
 msgid ""
-"<p>Enter the metadata template title here. This title will be used to "
-"identify a template in your collection.</p>"
+"Here you can see the digital camera list used by digiKam via the Gphoto "
+"interface."
 msgstr ""
+"<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi digiKam "
+"qua giao diện Gphoto."
 
-#: utilities/setup/setuptemplate.cpp:107
-msgid ""
-"<b>Note: These information are used to set <b><a href='http://en.wikipedia."
-"org/wiki/Extensible_Metadata_Platform'>XMP</a></b> and <b><a href='http://en."
-"wikipedia.org/wiki/IPTC'>IPTC</a></b> tag contents. There is no limitation "
-"with XMP, but note that IPTC text tags only support the printable <b><a "
-"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> character set, and "
-"tag sizes are limited. Use contextual help for details.</b>"
-msgstr ""
+#: utilities/setup/setupcamera.cpp:199
+#: utilities/setup/setupcollectionview.cpp:900
+msgid "Path"
+msgstr "Đường dẫn"
 
-#: utilities/setup/setuptemplate.cpp:125 utilities/setup/setupcamera.cpp:197
+#: utilities/setup/setupcamera.cpp:213 utilities/setup/setuptemplate.cpp:125
 #: utilities/setup/setupcategory.cpp:100
 msgid "&Add..."
 msgstr "&Thêm..."
 
-#: utilities/setup/setuptemplate.cpp:127 utilities/setup/setupcamera.cpp:199
+#: utilities/setup/setupcamera.cpp:215 utilities/setup/setuptemplate.cpp:127
 #: utilities/setup/setupcategory.cpp:101
 msgid "&Remove"
 msgstr "&Bỏ"
 
-#: utilities/setup/setuptemplate.cpp:129
+#: utilities/setup/setupcamera.cpp:217
+msgid "&Edit..."
+msgstr "&Sửa..."
+
+#: utilities/setup/setupcamera.cpp:219
+msgid "Auto-&Detect"
+msgstr "&Tìm ra tự động"
+
+#: utilities/setup/setupcamera.cpp:232
+msgid "Visit Gphoto project website"
+msgstr "Thăm nơi Mạng của dự án Gphoto"
+
+#: utilities/setup/setupcamera.cpp:393
 #, fuzzy
-#| msgid "Relative"
-msgid "&Replace..."
-msgstr "Tương đối"
+#| msgid "Disconnecting from camera, please wait..."
+msgid "Device detection under progress, please wait..."
+msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
 
-#: utilities/setup/setuptemplate.cpp:249 utilities/setup/setuptemplate.cpp:278
-#, fuzzy
-#| msgid "<p>Select here the text rotation to use."
-msgid "Cannot register new metadata template without title."
-msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
-
-#: utilities/setup/setuptemplate.cpp:255
-#, fuzzy, kde-format
-#| msgid "Tag name already exists"
-msgid "A metadata template named '%1' already exists."
-msgstr "Tên thẻ đã có."
-
-#: utilities/setup/setupfacetags.cpp:90
+#: utilities/setup/setupcamera.cpp:404
 msgid ""
-"The accuracy of face detection.\n"
-"If you have a slow computer, it is a good idea to choose a lower value.\n"
-"Choosing a higher value will increase the accuracy of face detection,\n"
-"but will be slow.\n"
+"Failed to auto-detect camera.\n"
+"Please check if your camera is turned on and retry or try setting it "
+"manually."
 msgstr ""
+"Lỗi phát hiện tự động máy ảnh.\n"
+"Hãy kiểm tra xem máy ảnh được bật rồi thử lại, hoặc thử tự đặt nó."
 
-#: utilities/setup/setupfacetags.cpp:103
-msgid ""
-"The threshold of face suggestions.\n"
-"A larger suggestion threshold means that fewer suggestions will be "
-"presented,\n"
-"however these will be more accurate.\n"
-msgstr ""
-
-#: utilities/setup/setupfacetags.cpp:115
-msgid ""
-"If this option is enabled, digiKam will search for faces in your images,\n"
-"thus making it easier to tag people in your photographs.\n"
-msgstr ""
-
-#: utilities/setup/setupfacetags.cpp:117
-msgid "Enable face detection"
-msgstr ""
-
-#: utilities/setup/setupfacetags.cpp:121
-msgid ""
-"If this option is enabled, digiKam will try to identify detected faces,\n"
-"and present you with suggestions of similar faces,\n"
-"thus making person tagging even faster.\n"
-msgstr ""
-
-#: utilities/setup/setupfacetags.cpp:124
-msgid "Enable face suggestion"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:489
-msgid "It was not possible to add a collection for the following paths:"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:543
-#: utilities/setup/setupcollectionview.cpp:546
-msgid "Choose the folder containing your collection"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:584
+#: utilities/setup/setupcamera.cpp:418
 #, kde-format
-msgid "You have previously added a collection that contains the path \"%1\"."
-msgstr ""
+msgid "Camera '%1' (%2) is already in list."
+msgstr "Máy ảnh « %1 » (%2) đã có trong danh sách."
 
-#: utilities/setup/setupcollectionview.cpp:606
-#, fuzzy
-#| msgid "Album Collection"
-msgid "Problem Adding Collection"
-msgstr "Tập hợp tập ảnh"
-
-#: utilities/setup/setupcollectionview.cpp:613
-#, fuzzy
-#| msgid "By Collection"
-msgid "Adding Collection"
-msgstr "Theo tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:620
-msgid "Your new collection will be created with this name:"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:714
-#, fuzzy
-#| msgid "By Collection"
-msgid "Remove Collection"
-msgstr "Theo tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:716
+#: utilities/setup/setupcamera.cpp:422
 #, kde-format
-msgid ""
-"Do you want to remove the collection \"%1\" from your list of collections?"
-msgstr ""
+msgid "Found camera '%1' (%2) and added it to the list."
+msgstr "Tìm thấy máy ảnh « %1 » (%2) và đã thêm nó vào danh sách."
 
-#: utilities/setup/setupcollectionview.cpp:717
-#, fuzzy
-#| msgid "By Collection"
-msgid "Remove Collection?"
-msgstr "Theo tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:750
-#, fuzzy
-#| msgid "Collections"
-msgid "Local Collections"
-msgstr "Tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:752
-msgid "Collections on Removable Media"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:754
-#, fuzzy
-#| msgid "Collections"
-msgid "Collections on Network Shares"
-msgstr "Tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:772
-#, fuzzy
-#| msgid "By Collection"
-msgid "Add Collection"
-msgstr "Theo tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:800
-#, kde-format
-msgid "Col. %1"
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:861
-msgid "This collection is currently not available."
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:863
-msgid "No problems found, enjoy this collection."
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:865
-msgid "This collection is hidden."
-msgstr ""
-
-#: utilities/setup/setupcollectionview.cpp:877
-#, fuzzy
-#| msgid "By Collection"
-msgid "Remove collection"
-msgstr "Theo tập hợp"
-
-#: utilities/setup/setupcollectionview.cpp:900
-#: utilities/setup/setupcamera.cpp:183
-msgid "Path"
-msgstr "Đường dẫn"
-
-#: utilities/setup/setupcollectionview.cpp:902
-#, fuzzy
-#| msgid "Statistics"
-msgid "Status"
-msgstr "Thống kê"
-
-#: utilities/setup/setupdatabase.cpp:101
+#: utilities/setup/setupdatabase.cpp:100
 #, fuzzy
 #| msgid "Date:"
 msgctxt "@title:group"
 msgid "Updates"
 msgstr "Ngày:"
 
-#: utilities/setup/setupdatabase.cpp:104
+#: utilities/setup/setupdatabase.cpp:103
 msgctxt "@action:button"
 msgid "Update File Hashes"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:106
+#: utilities/setup/setupdatabase.cpp:105
 msgctxt "@info:tooltip"
 msgid ""
 "File hashes are used to identify identical files and to display thumbnails. "
@@ -19709,12 +19564,12 @@ msgid ""
 "database with a digiKam version prior to 2.0.</note>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:115
+#: utilities/setup/setupdatabase.cpp:114
 msgctxt "@info:tooltip"
 msgid "Get information about <interface>Update File Hashes</interface>"
 msgstr ""
 
-#: utilities/setup/setupdatabase.cpp:220
+#: utilities/setup/setupdatabase.cpp:219
 msgctxt "@info"
 msgid ""
 "<para>The process of updating the file hashes takes a few minutes.</para> "
@@ -19723,119 +19578,6 @@ msgid ""
 "digiKam version prior to 2.0.</note></para> <para>Do you want to begin the "
 "update?</para>"
 msgstr ""
-
-#: utilities/setup/setupeditor.cpp:136 utilities/setup/setuplighttable.cpp:89
-msgid "Interface Options"
-msgstr "Tuy chọn giao diện"
-
-#: utilities/setup/setupeditor.cpp:139
-msgid "&Use theme background color"
-msgstr "Dùng mà&u nền của sắc thái"
-
-#: utilities/setup/setupeditor.cpp:142
-#, fuzzy
-#| msgid ""
-#| "<p>Enable this option to use the background theme color in the image "
-#| "editor area"
-msgid ""
-"Enable this option to use the background theme color in the image editor "
-"area."
-msgstr ""
-"<p>Bật tùy chọn này để sử dụng màu nền của sắc thái trong vùng bộ sửa ảnh"
-
-#: utilities/setup/setupeditor.cpp:146
-msgid "&Background color:"
-msgstr "Màu &nền:"
-
-#: utilities/setup/setupeditor.cpp:149
-#, fuzzy
-#| msgid "<p>Customize the background color to use in the image editor area."
-msgid "Customize the background color to use in the image editor area."
-msgstr "<p>Tùy chỉnh màu nền cần dùng trong vùng bộ sửa ảnh."
-
-#: utilities/setup/setupeditor.cpp:152 utilities/setup/setuplighttable.cpp:110
-msgid "H&ide toolbar in fullscreen mode"
-msgstr "Ẩn thanh &công cụ trong chế độ toàn màn hình"
-
-#: utilities/setup/setupeditor.cpp:153
-msgid "Hide &thumbbar in fullscreen mode"
-msgstr "Ẩn &thanh ảnh mẫu trong chế độ toàn màn hình"
-
-#: utilities/setup/setupeditor.cpp:164
-msgid "Exposure Indicators"
-msgstr "Cái chỉ phơi nắng"
-
-#: utilities/setup/setupeditor.cpp:168
-msgid "&Under-exposure color:"
-msgstr "Mà&u chụp non:"
-
-#: utilities/setup/setupeditor.cpp:171
-#, fuzzy
-#| msgid ""
-#| "<p>Customize the color used in image editor to identify the under-exposed "
-#| "pixels."
-msgid "Customize color used in image editor to identify under-exposed pixels."
-msgstr ""
-"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
-"điểm ảnh chụp non."
-
-#: utilities/setup/setupeditor.cpp:175
-#, fuzzy
-#| msgid "&Under-exposure color:"
-msgid "Under-exposure percents:"
-msgstr "Mà&u chụp non:"
-
-#: utilities/setup/setupeditor.cpp:181
-msgid ""
-"Adjust the percents of the bottom of image histogram which will be used to "
-"check under exposed pixels."
-msgstr ""
-
-#: utilities/setup/setupeditor.cpp:185
-msgid "&Over-exposure color:"
-msgstr "Màu phơi &quá lâu :"
-
-#: utilities/setup/setupeditor.cpp:188
-#, fuzzy
-#| msgid ""
-#| "<p>Customize the color used in image editor to identify the over-exposed "
-#| "pixels."
-msgid "Customize color used in image editor to identify over-exposed pixels."
-msgstr ""
-"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
-"điểm ảnh phơi quá lâu."
-
-#: utilities/setup/setupeditor.cpp:192
-#, fuzzy
-#| msgid "&Over-exposure color:"
-msgid "Over-exposure percents:"
-msgstr "Màu phơi &quá lâu :"
-
-#: utilities/setup/setupeditor.cpp:198
-msgid ""
-"Adjust the percents of the top of image histogram which will be used to "
-"check over exposed pixels."
-msgstr ""
-
-#: utilities/setup/setupeditor.cpp:201
-#, fuzzy
-#| msgid "&Under-exposure color:"
-msgid "Indicate exposure as pure color"
-msgstr "Mà&u chụp non:"
-
-#: utilities/setup/setupeditor.cpp:202
-msgid ""
-"If this option is enabled, over- and under-exposure indicators will be "
-"displayed only when pure white and pure black color matches, as all color "
-"components match the condition in the same time. Otherwise, indicators are "
-"turned on when one of the color components matches the condition."
-msgstr ""
-
-#: utilities/setup/setupeditor.cpp:207
-#, fuzzy
-#| msgid "Name:"
-msgid "Example:"
-msgstr "Tên:"
 
 #: utilities/setup/setupicc.cpp:194
 msgid "Enable Color Management"
@@ -20159,13 +19901,13 @@ msgid ""
 "currently these paths exist and are scanned:<ul><li>%1</li></ul>"
 msgstr ""
 
-#: utilities/setup/setupiofiles.cpp:129
+#: utilities/setup/setupiofiles.cpp:130
 #, fuzzy
 #| msgid "Image Editor Save Images Files Settings"
 msgid "Show Settings Dialog when Saving Image Files"
 msgstr "Thiết lập tập tin ảnh lưu trong bộ sửa ảnh"
 
-#: utilities/setup/setupiofiles.cpp:130
+#: utilities/setup/setupiofiles.cpp:131
 #, fuzzy
 #| msgid ""
 #| "<ul><li>Checked: Color Management is enabled</li><li>Unchecked: Color "
@@ -20178,11 +19920,15 @@ msgstr ""
 "<ul><li>Chọn: khả năng quản lý màu đã được bật</li><li>Không chọn: khả năng "
 "quản lý màu đã bị tắt</li></ul>"
 
-#: utilities/setup/setuplighttable.cpp:92
+#: utilities/setup/setuplighttable.cpp:90 utilities/setup/setupeditor.cpp:136
+msgid "Interface Options"
+msgstr "Tuy chọn giao diện"
+
+#: utilities/setup/setuplighttable.cpp:93
 msgid "Synchronize panels automatically"
 msgstr "Tự động đồng bộ hoá các bảng"
 
-#: utilities/setup/setuplighttable.cpp:93
+#: utilities/setup/setuplighttable.cpp:94
 #, fuzzy
 #| msgid ""
 #| "<p>Set this option to automatically synchronize zooming and panning "
@@ -20194,13 +19940,13 @@ msgstr ""
 "<p>Bật tùy chọn này để tự động đồng bộ hoá việc thu/phóng và kéo ngang giữa "
 "bảng bên trái và bên phải, nếu hai ảnh có cùng kích cỡ."
 
-#: utilities/setup/setuplighttable.cpp:97
+#: utilities/setup/setuplighttable.cpp:98
 #, fuzzy
 #| msgid "Selecting a thumbbar item loads image to the right panel"
 msgid "Selecting a thumbbar item loads the image to the right panel"
 msgstr "Chọn mục trên thanh trượt thì nạp ảnh vào bảng bên phải"
 
-#: utilities/setup/setuplighttable.cpp:99
+#: utilities/setup/setuplighttable.cpp:100
 #, fuzzy
 #| msgid ""
 #| "<p>Set this option to automatically load an image into the right panel "
@@ -20212,13 +19958,13 @@ msgstr ""
 "<p>Bật tùy chọn này để tự động nạp ảnh vào bảng bên phải khi mục tương ứng "
 "được chọn trên thanh trượt."
 
-#: utilities/setup/setuplighttable.cpp:102
+#: utilities/setup/setuplighttable.cpp:103
 #, fuzzy
 #| msgid "Load full image size"
 msgid "Load full-sized image"
 msgstr "Nạp kích cỡ ảnh đầy đủ"
 
-#: utilities/setup/setuplighttable.cpp:103
+#: utilities/setup/setuplighttable.cpp:104
 #: utilities/setup/setupalbumview.cpp:207
 #, fuzzy
 #| msgid ""
@@ -20236,15 +19982,219 @@ msgstr ""
 "kích cỡ bị giảm. Vì tùy chọn này sẽ nạp chậm hơn, khuyên bạn chỉ sử dụng nó "
 "trên máy tính chạy nhanh."
 
-#: utilities/setup/setuplighttable.cpp:112
+#: utilities/setup/setuplighttable.cpp:111 utilities/setup/setupeditor.cpp:152
+msgid "H&ide toolbar in fullscreen mode"
+msgstr "Ẩn thanh &công cụ trong chế độ toàn màn hình"
+
+#: utilities/setup/setuplighttable.cpp:113
 msgid "Clear the light table on close"
 msgstr ""
 
-#: utilities/setup/setuplighttable.cpp:113
+#: utilities/setup/setuplighttable.cpp:114
 msgid ""
 "Set this option to remove all images from the light table when you close it, "
 "or unset it to preserve the images currently on the light table."
 msgstr ""
+
+#: utilities/setup/setupplugins.cpp:75
+#, fuzzy
+#| msgid "<p>A list of available Kipi plugins appears below."
+msgid "A list of available Kipi plugins appears below."
+msgstr "<p>Bên dưới có danh sách các phần bổ sung Kipi sẵn sàng."
+
+#: utilities/setup/setupplugins.cpp:103
+#, kde-format
+msgid "1 Kipi plugin found"
+msgid_plural "%1 Kipi plugins found"
+msgstr[0] "Tìm thấy %1 phần bổ sung Kipi"
+
+#: utilities/setup/setuptemplate.cpp:93
+#, fuzzy
+#| msgid "Relative"
+msgid "Template Title:"
+msgstr "Tương đối"
+
+#: utilities/setup/setuptemplate.cpp:96
+#, fuzzy
+#| msgid "<p>Select here the text rotation to use."
+msgid "Enter the metadata template title here."
+msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
+
+#: utilities/setup/setuptemplate.cpp:97
+msgid ""
+"<p>Enter the metadata template title here. This title will be used to "
+"identify a template in your collection.</p>"
+msgstr ""
+
+#: utilities/setup/setuptemplate.cpp:107
+msgid ""
+"<b>Note: These information are used to set <b><a href='http://en.wikipedia."
+"org/wiki/Extensible_Metadata_Platform'>XMP</a></b> and <b><a href='http://en."
+"wikipedia.org/wiki/IPTC'>IPTC</a></b> tag contents. There is no limitation "
+"with XMP, but note that IPTC text tags only support the printable <b><a "
+"href='http://en.wikipedia.org/wiki/Ascii'>ASCII</a></b> character set, and "
+"tag sizes are limited. Use contextual help for details.</b>"
+msgstr ""
+
+#: utilities/setup/setuptemplate.cpp:129
+#, fuzzy
+#| msgid "Relative"
+msgid "&Replace..."
+msgstr "Tương đối"
+
+#: utilities/setup/setuptemplate.cpp:249 utilities/setup/setuptemplate.cpp:278
+#, fuzzy
+#| msgid "<p>Select here the text rotation to use."
+msgid "Cannot register new metadata template without title."
+msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
+
+#: utilities/setup/setuptemplate.cpp:255
+#, fuzzy, kde-format
+#| msgid "Tag name already exists"
+msgid "A metadata template named '%1' already exists."
+msgstr "Tên thẻ đã có."
+
+#: utilities/setup/setupfacetags.cpp:90
+msgid ""
+"The accuracy of face detection.\n"
+"If you have a slow computer, it is a good idea to choose a lower value.\n"
+"Choosing a higher value will increase the accuracy of face detection,\n"
+"but will be slow.\n"
+msgstr ""
+
+#: utilities/setup/setupfacetags.cpp:103
+msgid ""
+"The threshold of face suggestions.\n"
+"A larger suggestion threshold means that fewer suggestions will be "
+"presented,\n"
+"however these will be more accurate.\n"
+msgstr ""
+
+#: utilities/setup/setupfacetags.cpp:115
+msgid ""
+"If this option is enabled, digiKam will search for faces in your images,\n"
+"thus making it easier to tag people in your photographs.\n"
+msgstr ""
+
+#: utilities/setup/setupfacetags.cpp:117
+msgid "Enable face detection"
+msgstr ""
+
+#: utilities/setup/setupfacetags.cpp:121
+msgid ""
+"If this option is enabled, digiKam will try to identify detected faces,\n"
+"and present you with suggestions of similar faces,\n"
+"thus making person tagging even faster.\n"
+msgstr ""
+
+#: utilities/setup/setupfacetags.cpp:124
+msgid "Enable face suggestion"
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:139
+msgid "&Use theme background color"
+msgstr "Dùng mà&u nền của sắc thái"
+
+#: utilities/setup/setupeditor.cpp:142
+#, fuzzy
+#| msgid ""
+#| "<p>Enable this option to use the background theme color in the image "
+#| "editor area"
+msgid ""
+"Enable this option to use the background theme color in the image editor "
+"area."
+msgstr ""
+"<p>Bật tùy chọn này để sử dụng màu nền của sắc thái trong vùng bộ sửa ảnh"
+
+#: utilities/setup/setupeditor.cpp:146
+msgid "&Background color:"
+msgstr "Màu &nền:"
+
+#: utilities/setup/setupeditor.cpp:149
+#, fuzzy
+#| msgid "<p>Customize the background color to use in the image editor area."
+msgid "Customize the background color to use in the image editor area."
+msgstr "<p>Tùy chỉnh màu nền cần dùng trong vùng bộ sửa ảnh."
+
+#: utilities/setup/setupeditor.cpp:153
+msgid "Hide &thumbbar in fullscreen mode"
+msgstr "Ẩn &thanh ảnh mẫu trong chế độ toàn màn hình"
+
+#: utilities/setup/setupeditor.cpp:164
+msgid "Exposure Indicators"
+msgstr "Cái chỉ phơi nắng"
+
+#: utilities/setup/setupeditor.cpp:168
+msgid "&Under-exposure color:"
+msgstr "Mà&u chụp non:"
+
+#: utilities/setup/setupeditor.cpp:171
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the under-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify under-exposed pixels."
+msgstr ""
+"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
+"điểm ảnh chụp non."
+
+#: utilities/setup/setupeditor.cpp:175
+#, fuzzy
+#| msgid "&Under-exposure color:"
+msgid "Under-exposure percents:"
+msgstr "Mà&u chụp non:"
+
+#: utilities/setup/setupeditor.cpp:181
+msgid ""
+"Adjust the percents of the bottom of image histogram which will be used to "
+"check under exposed pixels."
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:185
+msgid "&Over-exposure color:"
+msgstr "Màu phơi &quá lâu :"
+
+#: utilities/setup/setupeditor.cpp:188
+#, fuzzy
+#| msgid ""
+#| "<p>Customize the color used in image editor to identify the over-exposed "
+#| "pixels."
+msgid "Customize color used in image editor to identify over-exposed pixels."
+msgstr ""
+"<p>Ở đây có thể tùy chỉnh màu được dùng trong bộ sửa ảnh để nhận diện những "
+"điểm ảnh phơi quá lâu."
+
+#: utilities/setup/setupeditor.cpp:192
+#, fuzzy
+#| msgid "&Over-exposure color:"
+msgid "Over-exposure percents:"
+msgstr "Màu phơi &quá lâu :"
+
+#: utilities/setup/setupeditor.cpp:198
+msgid ""
+"Adjust the percents of the top of image histogram which will be used to "
+"check over exposed pixels."
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:201
+#, fuzzy
+#| msgid "&Under-exposure color:"
+msgid "Indicate exposure as pure color"
+msgstr "Mà&u chụp non:"
+
+#: utilities/setup/setupeditor.cpp:202
+msgid ""
+"If this option is enabled, over- and under-exposure indicators will be "
+"displayed only when pure white and pure black color matches, as all color "
+"components match the condition in the same time. Otherwise, indicators are "
+"turned on when one of the color components matches the condition."
+msgstr ""
+
+#: utilities/setup/setupeditor.cpp:207
+#, fuzzy
+#| msgid "Name:"
+msgid "Example:"
+msgstr "Tên:"
 
 #: utilities/setup/setupmetadata.cpp:152
 msgid "Common Metadata Actions"
@@ -21615,55 +21565,6 @@ msgstr ""
 "Ghi chú : tiến trình này có thể kéo dài một lát. Cũng có thể khởi chạy công "
 "việc này về sau từ trình đơn « Công cụ »."
 
-#: utilities/setup/setupcamera.cpp:176
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the digital camera list used by digiKam via the "
-#| "Gphoto interface."
-msgid ""
-"Here you can see the digital camera list used by digiKam via the Gphoto "
-"interface."
-msgstr ""
-"<p>Ở đây bạn có thể xem danh sách các máy ảnh điện số được dùng bởi digiKam "
-"qua giao diện Gphoto."
-
-#: utilities/setup/setupcamera.cpp:201
-msgid "&Edit..."
-msgstr "&Sửa..."
-
-#: utilities/setup/setupcamera.cpp:203
-msgid "Auto-&Detect"
-msgstr "&Tìm ra tự động"
-
-#: utilities/setup/setupcamera.cpp:216
-msgid "Visit Gphoto project website"
-msgstr "Thăm nơi Mạng của dự án Gphoto"
-
-#: utilities/setup/setupcamera.cpp:377
-#, fuzzy
-#| msgid "Disconnecting from camera, please wait..."
-msgid "Device detection under progress, please wait..."
-msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
-
-#: utilities/setup/setupcamera.cpp:388
-msgid ""
-"Failed to auto-detect camera.\n"
-"Please check if your camera is turned on and retry or try setting it "
-"manually."
-msgstr ""
-"Lỗi phát hiện tự động máy ảnh.\n"
-"Hãy kiểm tra xem máy ảnh được bật rồi thử lại, hoặc thử tự đặt nó."
-
-#: utilities/setup/setupcamera.cpp:402
-#, kde-format
-msgid "Camera '%1' (%2) is already in list."
-msgstr "Máy ảnh « %1 » (%2) đã có trong danh sách."
-
-#: utilities/setup/setupcamera.cpp:406
-#, kde-format
-msgid "Found camera '%1' (%2) and added it to the list."
-msgstr "Tìm thấy máy ảnh « %1 » (%2) và đã thêm nó vào danh sách."
-
 #: utilities/setup/setupcategory.cpp:94
 #, fuzzy
 #| msgid ""
@@ -21797,6 +21698,105 @@ msgid ""
 "Show the digiKam image color label, pick label, and rating at the bottom of "
 "the screen."
 msgstr "<p>Hiển thị ngày tháng tạo ảnh ở dưới màn hình."
+
+#: utilities/setup/setupcollectionview.cpp:489
+msgid "It was not possible to add a collection for the following paths:"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:543
+#: utilities/setup/setupcollectionview.cpp:546
+msgid "Choose the folder containing your collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:584
+#, kde-format
+msgid "You have previously added a collection that contains the path \"%1\"."
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:606
+#, fuzzy
+#| msgid "Album Collection"
+msgid "Problem Adding Collection"
+msgstr "Tập hợp tập ảnh"
+
+#: utilities/setup/setupcollectionview.cpp:613
+#, fuzzy
+#| msgid "By Collection"
+msgid "Adding Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:620
+msgid "Your new collection will be created with this name:"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:714
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:716
+#, kde-format
+msgid ""
+"Do you want to remove the collection \"%1\" from your list of collections?"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:717
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove Collection?"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:750
+#, fuzzy
+#| msgid "Collections"
+msgid "Local Collections"
+msgstr "Tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:752
+msgid "Collections on Removable Media"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:754
+#, fuzzy
+#| msgid "Collections"
+msgid "Collections on Network Shares"
+msgstr "Tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:772
+#, fuzzy
+#| msgid "By Collection"
+msgid "Add Collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:800
+#, kde-format
+msgid "Col. %1"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:861
+msgid "This collection is currently not available."
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:863
+msgid "No problems found, enjoy this collection."
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:865
+msgid "This collection is hidden."
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:877
+#, fuzzy
+#| msgid "By Collection"
+msgid "Remove collection"
+msgstr "Theo tập hợp"
+
+#: utilities/setup/setupcollectionview.cpp:902
+#, fuzzy
+#| msgid "Statistics"
+msgid "Status"
+msgstr "Thống kê"
 
 #: utilities/slideshow/slideshow.cpp:541
 #, fuzzy, kde-format

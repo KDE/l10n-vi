@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-03-26 13:12+0100\n"
+"POT-Creation-Date: 2011-03-29 14:00+0200\n"
 "PO-Revision-Date: 2007-06-23 22:55+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,43 +16,1363 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
 
-#: HostConnector.cc:44
+#: SensorDisplayLib/DancingBars.cpp:96 SensorDisplayLib/FancyPlotter.cpp:283
+msgid "OK"
+msgstr "OK"
+
+#: SensorDisplayLib/DancingBars.cpp:96 SensorDisplayLib/FancyPlotter.cpp:283
+#: SensorDisplayLib/FancyPlotter.cpp:519 SensorDisplayLib/FancyPlotter.cpp:597
+msgid "Error"
+msgstr "Lỗi"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:43
+msgid "Edit BarGraph Preferences"
+msgstr "Sửa đổi Tùy thích Đồ thị thanh"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:52
+msgid "Range"
+msgstr "Phạm vị"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
+#: SensorDisplayLib/DancingBarsSettings.cpp:57 WorkSheetSettings.cpp:50
+#: rc.cpp:5 rc.cpp:116
+msgid "Title"
+msgstr "Tựa"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
+#: SensorDisplayLib/DancingBarsSettings.cpp:62
+#: SensorDisplayLib/FancyPlotterSettings.cpp:73 rc.cpp:47
+msgid "Enter the title of the display here."
+msgstr "Hãy nhập vào đây tựa của bộ trình bày."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:67
+msgid "Display Range"
+msgstr "Phạm vi trình bày"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:72
+#: SensorDisplayLib/FancyPlotterSettings.cpp:101
+msgid "Minimum value:"
+msgstr "Giá trị tối thiểu :"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:80
+msgid ""
+"Enter the minimum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Hãy nhập vào đây giá trị tối thiểu cho bộ trình bày. Nếu cả hai giá trị là "
+"0, khả năng phát hiện tự động phạm vị được bật."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:84
+#: SensorDisplayLib/FancyPlotterSettings.cpp:112
+msgid "Maximum value:"
+msgstr "Giá trị tối đa:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:92
+msgid ""
+"Enter the maximum value for the display here. If both values are 0, "
+"automatic range detection is enabled."
+msgstr ""
+"Hãy nhập vào đây giá trị tối đa cho bộ trình bày. Nếu cả hai giá trị là 0, "
+"khả năng phát hiện tự động phạm vị được bật."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:102
+msgid "Alarms"
+msgstr "Báo động"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
+#: SensorDisplayLib/DancingBarsSettings.cpp:107 rc.cpp:92
+msgid "Alarm for Minimum Value"
+msgstr "Báo động giá trị tối thiểu"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:112
+#: SensorDisplayLib/DancingBarsSettings.cpp:135
+msgid "Enable alarm"
+msgstr "Bật báo động"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cpp:113 rc.cpp:56 rc.cpp:98
+msgid "Enable the minimum value alarm."
+msgstr "Bật báo động giá trị tối thiểu."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
+#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
+#: SensorDisplayLib/DancingBarsSettings.cpp:116 rc.cpp:101
+msgid "Lower limit:"
+msgstr "Giới hạn dưới :"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
+#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
+#: SensorDisplayLib/DancingBarsSettings.cpp:130 rc.cpp:104
+msgid "Alarm for Maximum Value"
+msgstr "Báo động giá trị tối đa"
+
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
+#: SensorDisplayLib/DancingBarsSettings.cpp:136 rc.cpp:65 rc.cpp:110
+msgid "Enable the maximum value alarm."
+msgstr "Bật báo động giá trị tối đa."
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
+#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
+#: SensorDisplayLib/DancingBarsSettings.cpp:139 rc.cpp:113
+msgid "Upper limit:"
+msgstr "Giới hạn trên:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:156
+#, fuzzy
+#| msgid "Look"
+msgctxt "@title:tab Appearance of the bar graph"
+msgid "Look"
+msgstr "Diện mạo"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:161
+msgid "Normal bar color:"
+msgstr "Màu thanh chuẩn:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:168
+msgid "Out-of-range color:"
+msgstr "Màu ở ngoại phạm vị :"
+
+#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: SensorDisplayLib/DancingBarsSettings.cpp:175
+#: SensorDisplayLib/LogFile.cpp:100 rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
+msgid "Background color:"
+msgstr "Màu nền:"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:182
+#: SensorDisplayLib/FancyPlotterSettings.cpp:183
+msgid "Font size:"
+msgstr "Cỡ phông chữ :"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:186
+msgid ""
+"This determines the size of the font used to print a label underneath the "
+"bars. Bars are automatically suppressed if text becomes too large, so it is "
+"advisable to use a small font size here."
+msgstr ""
+"Giá trị này xác định kích cỡ của phông chữ dùng để in nhãn dưới mỗi thanh. "
+"Các thanh bị thu hồi tự động nếu chữ trở thành quá lớn, vậy khuyên bạn đặt "
+"vào đây một kích cỡ nhỏ."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:194
+#: SensorDisplayLib/FancyPlotterSettings.cpp:198
+msgid "Sensors"
+msgstr "Bộ nhạy"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:207
+msgid "Edit..."
+msgstr "Sửa..."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:208
+msgid "Push this button to configure the label."
+msgstr "Hãy nhấn nút này để cấu hình nhãn."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:211
+#: SensorDisplayLib/FancyPlotterSettings.cpp:231
+msgid "Delete"
+msgstr "Xoá"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:212
+#: SensorDisplayLib/FancyPlotterSettings.cpp:232
+msgid "Push this button to delete the sensor."
+msgstr "Hãy nhấn nút này để xoá bỏ bộ nhạy."
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:366
+msgid "Label of Bar Graph"
+msgstr "Nhãn của đồ thị thanh"
+
+#: SensorDisplayLib/DancingBarsSettings.cpp:367
+msgid "Enter new label:"
+msgstr "Nhập nhãn mới:"
+
+#: SensorDisplayLib/DummyDisplay.cpp:30 SensorDisplayLib/DummyDisplay.cpp:38
+msgid "Drop Sensor Here"
+msgstr "Thả đây bộ nhạy"
+
+#: SensorDisplayLib/DummyDisplay.cpp:32
+msgid ""
+"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
+"and drop it here. A sensor display will appear that allows you to monitor "
+"the values of the sensor over time."
+msgstr ""
+"Đây là ô rỗng trong bảng làm việc. Hãy kéo một bộ nhạy từ Bộ Duyệt Nhạy và "
+"thả nó vào đây. Một bộ trình bày nhạy sẽ xuất hiện mà cho bạn khả năng theo "
+"dõi các giá trị nhạy trong thời gian."
+
+#: SensorDisplayLib/FancyPlotter.cpp:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
+#: SensorDisplayLib/FancyPlotter.cpp:649
+#, kde-format
+msgctxt "units"
+msgid "%1%"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:523
+#, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:594
+#, kde-format
+msgid "%1 of %2%1"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:622
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:625
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:628
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:631
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:636
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:639
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:642
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:645
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:651
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:51
+#, fuzzy
+#| msgid "Signal Plotter Settings"
+msgid "Plotter Settings"
+msgstr "Thiết lập bộ vẽ tín hiệu"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:64
+msgid "General"
+msgstr "Chung"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:69
+msgid "Title:"
+msgstr "Tựa :"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:77
+msgid "Stack the beams on top of each other"
+msgstr "Xếp đồng các tia"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:78
+#, fuzzy
+#| msgid ""
+#| "The beams are stacked on top of each other, and the area is drawn filled "
+#| "in. So if one beam has a value of 2 and another beam has a value of 3, "
+#| "the first beam will be draw at value 2 and the other beam drawn at 2+3=5"
+msgid ""
+"The beams are stacked on top of each other, and the area is drawn filled in. "
+"So if one beam has a value of 2 and another beam has a value of 3, the first "
+"beam will be drawn at value 2 and the other beam drawn at 2+3=5."
+msgstr ""
+"Các tia được xếp đồng trên với nhau, và vùng được vẽ đầy. Vậy nếu một tia có "
+"giá trị 2, còn tia khác có giá trị 3, tia thứ nhất sẽ được vẽ ở giá trị 2, "
+"nhưng tia khác sẽ được vẽ ở 2+3=5."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:85
+msgid "Scales"
+msgstr "Tỷ lệ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:90
+#, fuzzy
+#| msgid "Vertical Scale"
+msgid "Vertical scale"
+msgstr "Tỷ lệ dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:96
+msgid "Specify graph range:"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:97
+msgid ""
+"Check this box if you want the display range to adapt dynamically to the "
+"currently displayed values; if you do not check this, you have to specify "
+"the range you want in the fields below."
+msgstr ""
+"Hãy bật tùy chọn này nếu bạn muốn phạm vị trình bày thích nghi với các giá "
+"trị được hiển thị hiện thời. Nếu không bật, bạn sẽ phải xác định phạm vị đã "
+"muốn trong các trường bên dưới."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:107
+#, fuzzy
+#| msgid "Enter the title of the display here."
+msgid "Enter the minimum value for the display here."
+msgstr "Hãy nhập vào đây tựa của bộ trình bày."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:118
+msgid ""
+"Enter the soft maximum value for the display here. The upper range will not "
+"be reduced below this value, but will still go above this number for values "
+"above this value."
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:125
+#, fuzzy
+#| msgid "Horizontal Scale"
+msgid "Horizontal scale"
+msgstr "Tỷ lệ ngang"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:132
+#, fuzzy
+#| msgid "pixels per time period"
+msgid "Pixels per time period:"
+msgstr "điểm ảnh trong mỗi thời gian"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:139
+msgid "Grid"
+msgstr "Lưới"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:144
+msgid "Lines"
+msgstr "Đường"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:150
+msgid "Vertical lines"
+msgstr "Đường dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:151
+msgid "Check this to activate the vertical lines if display is large enough."
+msgstr "Bật tùy chọn này để vẽ đường dọc nếu bộ trình bày đủ lớn."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:154
+msgid "Distance:"
+msgstr "Khoảng cách:"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:160
+msgid "Enter the distance between two vertical lines here."
+msgstr "Hãy nhập vào đây khoảng cách giữa hai đường dọc."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:164
+msgid "Vertical lines scroll"
+msgstr "Cuộn đường dọc"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:167
+msgid "Horizontal lines"
+msgstr "Đường ngang"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:168
+msgid "Check this to enable horizontal lines if display is large enough."
+msgstr "Bật tùy chọn này để vẽ đường ngang nếu bộ trình bày đủ lớn."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:173
+msgid "Text"
+msgstr "Chữ"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:179
+msgid "Show axis labels"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:180
+msgid ""
+"Check this box if horizontal lines should be decorated with the values they "
+"mark."
+msgstr ""
+"Bật tùy chọn này nếu bạn muốn hiển thị trên mỗi đường ngang giá trị tương "
+"ứng."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:223
+msgid "Set Color..."
+msgstr "Đặt màu..."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:224
+msgid "Push this button to configure the color of the sensor in the diagram."
+msgstr "Hãy nhấn nút này để cấu hình màu của bộ nhạy trong sơ đồ."
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:236
+msgid "Move Up"
+msgstr "Đem lên"
+
+#: SensorDisplayLib/FancyPlotterSettings.cpp:241
+msgid "Move Down"
+msgstr "Đem xuống"
+
+#: SensorDisplayLib/ListView.cpp:45
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgid "%1 K"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:46
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgid "%1 M"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:47
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgid "%1 G"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:48
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgid "%1 T"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:49
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgid "%1 P"
+msgstr "%"
+
+#: SensorDisplayLib/ListView.cpp:152
+#, fuzzy
+#| msgid "Display Range"
+msgid "Display Units"
+msgstr "Phạm vi trình bày"
+
+#: SensorDisplayLib/ListView.cpp:156
+msgid "Mixed"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:162
+msgid "Kilobytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:168
+msgid "Megabytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:174
+msgid "Gigabytes"
+msgstr ""
+
+#: SensorDisplayLib/ListView.cpp:180
+#, fuzzy
+#| msgid "Temperature"
+msgid "Terabytes"
+msgstr "Nhiệt độ"
+
+#: SensorDisplayLib/ListViewSettings.cpp:30
+msgid "List View Settings"
+msgstr "Thiết lập ô xem danh sách"
+
+#: SensorDisplayLib/LogFile.cpp:92
+msgid "File logging settings"
+msgstr "Thiết lập ghi lưu tập tin"
+
+#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: SensorDisplayLib/LogFile.cpp:98 rc.cpp:26
+msgid "Foreground color:"
+msgstr "Màu chữ :"
+
+#: SensorDisplayLib/MultiMeterSettings.cpp:31
+#, fuzzy
+#| msgid "Multimeter Settings"
+msgctxt ""
+"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
+msgid "Multimeter Settings"
+msgstr "Thiết lập bộ đa đo"
+
+#: SensorDisplayLib/SensorDisplay.cpp:118
+#: SensorDisplayLib/SensorLogger.cpp:598
+msgid "&Properties"
+msgstr "Tài &sản"
+
+#: SensorDisplayLib/SensorDisplay.cpp:123
+#: SensorDisplayLib/SensorLogger.cpp:603
+msgid "&Remove Display"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: SensorDisplayLib/SensorDisplay.cpp:190
+#, kde-format
+msgid ""
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
+msgstr ""
+"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
+"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
+"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
+
+#: SensorDisplayLib/SensorLogger.cpp:138
+msgid "Logging"
+msgstr "Ghi lưu"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
+#: SensorDisplayLib/SensorLogger.cpp:141 rc.cpp:86
+msgid "Timer Interval"
+msgstr "Khoảng thời gian đếm giờ"
+
+#: SensorDisplayLib/SensorLogger.cpp:144
+msgid "Sensor Name"
+msgstr "Tên bộ nhạy"
+
+#: SensorDisplayLib/SensorLogger.cpp:147
+msgid "Host Name"
+msgstr "Tên máy"
+
+#: SensorDisplayLib/SensorLogger.cpp:150
+msgid "Log File"
+msgstr "Tập tin ghi lưu"
+
+#: SensorDisplayLib/SensorLogger.cpp:431
+#: SensorDisplayLib/SensorLoggerDlg.cpp:32
+msgid "Sensor Logger"
+msgstr "Bộ ghi lưu dữ liệu nhạy"
+
+#: SensorDisplayLib/SensorLogger.cpp:608
+msgid "&Remove Sensor"
+msgstr "Gỡ &bỏ bộ nhạy"
+
+#: SensorDisplayLib/SensorLogger.cpp:613
+msgid "&Edit Sensor..."
+msgstr "&Sửa bộ nhạy..."
+
+#: SensorDisplayLib/SensorLogger.cpp:621
+msgid "St&op Logging"
+msgstr "&Ngưng ghi lưu"
+
+#: SensorDisplayLib/SensorLogger.cpp:624
+msgid "S&tart Logging"
+msgstr "&Bắt đầu ghi lưu"
+
+#: SensorDisplayLib/SensorLoggerSettings.cpp:30
+msgid "Sensor Logger Settings"
+msgstr "Thiết lập bộ ghi lưu dữ liệu nhạy"
+
+#: SensorDisplayLib/SensorModel.cpp:166
+msgid "Host"
+msgstr "Máy"
+
+#: SensorDisplayLib/SensorModel.cpp:169
+msgid "Sensor"
+msgstr "Bộ nhạy"
+
+#: SensorDisplayLib/SensorModel.cpp:172
+msgid "Unit"
+msgstr "Đơn vị"
+
+#: SensorDisplayLib/SensorModel.cpp:175
+msgid "Status"
+msgstr "Trạng thái"
+
+#: SensorDisplayLib/SensorModel.cpp:178
+msgid "Label"
+msgstr "Nhãn"
+
+#: ksgrd/SensorAgent.cpp:109
+#, fuzzy, kde-format
+#| msgid ""
+#| "Message from %1:\n"
+#| "%2"
+msgctxt "%1 is a host name"
+msgid ""
+"Message from %1:\n"
+"%2"
+msgstr ""
+"Thông điệp từ %1:\n"
+"%2"
+
+#: ksgrd/SensorManager.cpp:60
+#, fuzzy
+#| msgid "&Change"
+msgid "Change"
+msgstr "&Đổi"
+
+#: ksgrd/SensorManager.cpp:61
+#, fuzzy
+#| msgid "State"
+msgid "Rate"
+msgstr "Tình trạng"
+
+#: ksgrd/SensorManager.cpp:63
+msgid "CPU Load"
+msgstr "Trọng tải CPU"
+
+#: ksgrd/SensorManager.cpp:64
+msgid "Idling"
+msgstr "Đang nghỉ"
+
+#: ksgrd/SensorManager.cpp:65
+msgid "Nice Load"
+msgstr "Trọng tải ưu tiên"
+
+#: ksgrd/SensorManager.cpp:66
+msgid "User Load"
+msgstr "Trọng tải người dùng"
+
+#: ksgrd/SensorManager.cpp:67
+#, fuzzy
+#| msgid "System Load"
+msgctxt "@item sensor description"
+msgid "System Load"
+msgstr "Trọng tải hệ thống"
+
+#: ksgrd/SensorManager.cpp:68
+msgid "Waiting"
+msgstr "Đang đợi"
+
+#: ksgrd/SensorManager.cpp:69
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Interrupt Load"
+msgstr "Lần ngắt"
+
+#: ksgrd/SensorManager.cpp:70
+msgid "Total Load"
+msgstr "Tổng trọng tải"
+
+#: ksgrd/SensorManager.cpp:71
+msgid "Memory"
+msgstr "Bộ nhớ"
+
+#: ksgrd/SensorManager.cpp:72
+msgid "Physical Memory"
+msgstr "Bộ nhớ vật lý"
+
+#: ksgrd/SensorManager.cpp:73
+msgid "Swap Memory"
+msgstr "Bộ nhớ trao đổi"
+
+#: ksgrd/SensorManager.cpp:74
+msgid "Cached Memory"
+msgstr "Bộ nhớ tạm"
+
+#: ksgrd/SensorManager.cpp:75
+msgid "Buffered Memory"
+msgstr "Bộ nhớ đệm"
+
+#: ksgrd/SensorManager.cpp:76
+msgid "Used Memory"
+msgstr "Bộ nhớ đã dùng"
+
+#: ksgrd/SensorManager.cpp:77
+msgid "Application Memory"
+msgstr "Bộ nhớ ứng dụng"
+
+#: ksgrd/SensorManager.cpp:78
+msgid "Free Memory"
+msgstr "Bộ nhớ còn rảnh"
+
+#: ksgrd/SensorManager.cpp:79
+#, fuzzy
+#| msgid "Application Memory"
+msgid "Active Memory"
+msgstr "Bộ nhớ ứng dụng"
+
+#: ksgrd/SensorManager.cpp:80
+#, fuzzy
+#| msgid "Cached Memory"
+msgid "Inactive Memory"
+msgstr "Bộ nhớ tạm"
+
+#: ksgrd/SensorManager.cpp:81
+#, fuzzy
+#| msgid "Used Memory"
+msgid "Wired Memory"
+msgstr "Bộ nhớ đã dùng"
+
+#: ksgrd/SensorManager.cpp:82
+msgid "Exec Pages"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:83
+msgid "File Pages"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:86
+#, fuzzy
+#| msgid "Process Count"
+msgid "Processes"
+msgstr "Số tiến trình"
+
+#: ksgrd/SensorManager.cpp:87 ksgrd/SensorManager.cpp:227
+msgid "Process Controller"
+msgstr "Bộ điều khiển tiến trình"
+
+#: ksgrd/SensorManager.cpp:88
+msgid "Last Process ID"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:89
+#, fuzzy
+#| msgid "Process Count"
+msgid "Process Spawn Count"
+msgstr "Số tiến trình"
+
+#: ksgrd/SensorManager.cpp:90
+msgid "Process Count"
+msgstr "Số tiến trình"
+
+#: ksgrd/SensorManager.cpp:91
+#, fuzzy
+#| msgid "Process Count"
+msgid "Idle Processes Count"
+msgstr "Số tiến trình"
+
+#: ksgrd/SensorManager.cpp:92
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Running Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:93
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Sleeping Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:94
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Stopped Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:95
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Zombie Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:96
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Waiting Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:97
+#, fuzzy
+#| msgid "Loading Processes Count.."
+msgid "Locked Processes Count"
+msgstr "Đang nạp số đếm các tiến trình."
+
+#: ksgrd/SensorManager.cpp:99
+msgid "Disk Throughput"
+msgstr "Lưu tốc đĩa"
+
+#: ksgrd/SensorManager.cpp:100
+msgctxt "CPU Load"
+msgid "Load"
+msgstr "Trọng tải"
+
+#: ksgrd/SensorManager.cpp:101
+msgid "Total Accesses"
+msgstr "Tổng số truy cập"
+
+#: ksgrd/SensorManager.cpp:102
+msgid "Read Accesses"
+msgstr "Truy cập đọc"
+
+#: ksgrd/SensorManager.cpp:103
+msgid "Write Accesses"
+msgstr "Truy cập ghi"
+
+#: ksgrd/SensorManager.cpp:104
+msgid "Read Data"
+msgstr "Dữ liệu đọc"
+
+#: ksgrd/SensorManager.cpp:105
+#, fuzzy
+#| msgid "Write Data"
+msgid "Written Data"
+msgstr "Dữ liệu ghi"
+
+#: ksgrd/SensorManager.cpp:106
+msgid "Milliseconds spent reading"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:107
+msgid "Milliseconds spent writing"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:108
+msgid "I/Os currently in progress"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:109
+msgid "Pages In"
+msgstr "Trang đến"
+
+#: ksgrd/SensorManager.cpp:110
+msgid "Pages Out"
+msgstr "Trang đi"
+
+#: ksgrd/SensorManager.cpp:111
+msgid "Context Switches"
+msgstr "Bộ chuyển ngữ cảnh"
+
+#: ksgrd/SensorManager.cpp:112
+msgid "Traps"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:113
+#, fuzzy
+#| msgid "System Load"
+msgid "System Calls"
+msgstr "Trọng tải hệ thống"
+
+#: ksgrd/SensorManager.cpp:114
+msgid "Network"
+msgstr "Mạng"
+
+#: ksgrd/SensorManager.cpp:115
+msgid "Interfaces"
+msgstr "Giao diện"
+
+#: ksgrd/SensorManager.cpp:116
+msgid "Receiver"
+msgstr "Bộ nhận"
+
+#: ksgrd/SensorManager.cpp:117
+msgid "Transmitter"
+msgstr "Bộ gởi"
+
+#: ksgrd/SensorManager.cpp:119
+#, fuzzy
+#| msgid "State"
+msgid "Data Rate"
+msgstr "Tình trạng"
+
+#: ksgrd/SensorManager.cpp:120
+#, fuzzy
+#| msgid "Compressed Packets"
+msgid "Compressed Packets Rate"
+msgstr "Gói tin đã nén"
+
+#: ksgrd/SensorManager.cpp:121
+#, fuzzy
+#| msgid "Dropped Packets"
+msgid "Dropped Packets Rate"
+msgstr "Gói tin bị mất"
+
+#: ksgrd/SensorManager.cpp:122
+#, fuzzy
+#| msgid "Errors"
+msgid "Error Rate"
+msgstr "Lỗi"
+
+#: ksgrd/SensorManager.cpp:123
+#, fuzzy
+#| msgid "FIFO Overruns"
+msgid "FIFO Overruns Rate"
+msgstr "Tràn qua FIFO"
+
+#: ksgrd/SensorManager.cpp:124
+#, fuzzy
+#| msgid "Frame Errors"
+msgid "Frame Error Rate"
+msgstr "Lỗi khung"
+
+#: ksgrd/SensorManager.cpp:125
+#, fuzzy
+#| msgid "Multicast"
+msgid "Multicast Packet Rate"
+msgstr "Truyền một-nhiều"
+
+#: ksgrd/SensorManager.cpp:126
+#, fuzzy
+#| msgid "Packets"
+msgid "Packet Rate"
+msgstr "Gói tin"
+
+#: ksgrd/SensorManager.cpp:127
+#, fuzzy
+#| msgid "Carrier"
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
+msgid "Carrier Loss Rate"
+msgstr "Bộ truyền"
+
+#: ksgrd/SensorManager.cpp:128 ksgrd/SensorManager.cpp:139
+msgid "Collisions"
+msgstr "Va chạm"
+
+#: ksgrd/SensorManager.cpp:130
+msgid "Data"
+msgstr "Dữ liệu"
+
+#: ksgrd/SensorManager.cpp:131
+msgid "Compressed Packets"
+msgstr "Gói tin đã nén"
+
+#: ksgrd/SensorManager.cpp:132
+msgid "Dropped Packets"
+msgstr "Gói tin bị mất"
+
+#: ksgrd/SensorManager.cpp:133
+msgid "Errors"
+msgstr "Lỗi"
+
+#: ksgrd/SensorManager.cpp:134
+msgid "FIFO Overruns"
+msgstr "Tràn qua FIFO"
+
+#: ksgrd/SensorManager.cpp:135
+msgid "Frame Errors"
+msgstr "Lỗi khung"
+
+#: ksgrd/SensorManager.cpp:136
+#, fuzzy
+#| msgid "Multicast"
+msgid "Multicast Packets"
+msgstr "Truyền một-nhiều"
+
+#: ksgrd/SensorManager.cpp:137
+msgid "Packets"
+msgstr "Gói tin"
+
+#: ksgrd/SensorManager.cpp:138
+#, fuzzy
+#| msgid "Carrier"
+msgctxt "@item sensor description ('carrier' is a type of network signal)"
+msgid "Carrier Losses"
+msgstr "Bộ truyền"
+
+#: ksgrd/SensorManager.cpp:141
+msgid "Sockets"
+msgstr "Ổ cắm"
+
+#: ksgrd/SensorManager.cpp:142
+msgid "Total Number"
+msgstr "Tổng số"
+
+#: ksgrd/SensorManager.cpp:143 ksgrd/SensorManager.cpp:228
+msgid "Table"
+msgstr "Bảng"
+
+#: ksgrd/SensorManager.cpp:144
+msgid "Advanced Power Management"
+msgstr "Quản lý Điện năng Cấp cao"
+
+# Name: don't translate / Tên: đừng dịch
+#: ksgrd/SensorManager.cpp:145
+msgid "ACPI"
+msgstr "ACPI"
+
+#: ksgrd/SensorManager.cpp:146
+msgid "Thermal Zone"
+msgstr "Khu vực Nhiệt"
+
+#: ksgrd/SensorManager.cpp:147
+msgid "Temperature"
+msgstr "Nhiệt độ"
+
+#: ksgrd/SensorManager.cpp:148
+#, fuzzy
+#| msgid "Temperature"
+msgid "Average CPU Temperature"
+msgstr "Nhiệt độ"
+
+#: ksgrd/SensorManager.cpp:149
+msgid "Fan"
+msgstr "Quạt"
+
+#: ksgrd/SensorManager.cpp:150
+msgid "State"
+msgstr "Tình trạng"
+
+#: ksgrd/SensorManager.cpp:151
+msgid "Battery"
+msgstr "Pin"
+
+#: ksgrd/SensorManager.cpp:152
+#, fuzzy
+#| msgid "Battery Charge"
+msgid "Battery Capacity"
+msgstr "Nạp pin"
+
+#: ksgrd/SensorManager.cpp:153
+msgid "Battery Charge"
+msgstr "Nạp pin"
+
+#: ksgrd/SensorManager.cpp:154
+msgid "Battery Usage"
+msgstr "Dùng pin"
+
+#: ksgrd/SensorManager.cpp:155
+#, fuzzy
+#| msgid "Battery Usage"
+msgid "Battery Voltage"
+msgstr "Dùng pin"
+
+#: ksgrd/SensorManager.cpp:156
+#, fuzzy
+#| msgid "Battery Charge"
+msgid "Battery Discharge Rate"
+msgstr "Nạp pin"
+
+#: ksgrd/SensorManager.cpp:157
+msgid "Remaining Time"
+msgstr "Thời gian còn lại"
+
+#: ksgrd/SensorManager.cpp:158
+msgid "Interrupts"
+msgstr "Lần ngắt"
+
+#: ksgrd/SensorManager.cpp:159
+msgid "Load Average (1 min)"
+msgstr "Trọng tải trung bình (1 phút)"
+
+#: ksgrd/SensorManager.cpp:160
+msgid "Load Average (5 min)"
+msgstr "Trọng tải trung bình (5 phút)"
+
+#: ksgrd/SensorManager.cpp:161
+msgid "Load Average (15 min)"
+msgstr "Trọng tải trung bình (15 phút)"
+
+#: ksgrd/SensorManager.cpp:162
+msgid "Clock Frequency"
+msgstr "Tần số đồng hồ"
+
+#: ksgrd/SensorManager.cpp:163
+#, fuzzy
+#| msgid "Clock Frequency"
+msgid "Average Clock Frequency"
+msgstr "Tần số đồng hồ"
+
+#: ksgrd/SensorManager.cpp:164
+msgid "Hardware Sensors"
+msgstr "Bộ nhạy phần cứng"
+
+#: ksgrd/SensorManager.cpp:165
+msgid "Partition Usage"
+msgstr "Dùng phân vùng"
+
+#: ksgrd/SensorManager.cpp:166
+msgid "Used Space"
+msgstr "Chỗ đã dùng"
+
+#: ksgrd/SensorManager.cpp:167
+msgid "Free Space"
+msgstr "Chỗ còn rảnh"
+
+#: ksgrd/SensorManager.cpp:168
+msgid "Fill Level"
+msgstr "Mức tô"
+
+#: ksgrd/SensorManager.cpp:169
+#, fuzzy
+#| msgid "User Load"
+msgid "Used Inodes"
+msgstr "Trọng tải người dùng"
+
+#: ksgrd/SensorManager.cpp:170
+msgid "Free Inodes"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:171
+msgid "Inode Level"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:172
+msgid "System"
+msgstr "Hệ thống"
+
+#: ksgrd/SensorManager.cpp:173
+msgid "Uptime"
+msgstr "Thời gian chạy"
+
+#: ksgrd/SensorManager.cpp:174
+msgid "Linux Soft Raid (md)"
+msgstr "Linux Soft Raid (md)"
+
+#: ksgrd/SensorManager.cpp:175
+#, fuzzy
+#| msgid "Process Count"
+msgid "Processors"
+msgstr "Số tiến trình"
+
+#: ksgrd/SensorManager.cpp:176
+#, fuzzy
+#| msgid "Colors"
+msgid "Cores"
+msgstr "Màu sắc"
+
+#: ksgrd/SensorManager.cpp:177
+#, fuzzy
+#| msgid "Number of displays:"
+msgid "Number of Blocks"
+msgstr "Số bộ trình bày:"
+
+#: ksgrd/SensorManager.cpp:178
+#, fuzzy
+#| msgid "Total Number"
+msgid "Total Number of Devices"
+msgstr "Tổng số"
+
+#: ksgrd/SensorManager.cpp:179
+msgid "Failed Devices"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:180
+msgid "Spare Devices"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:181
+#, fuzzy
+#| msgid "Number of displays:"
+msgid "Number of Raid Devices"
+msgstr "Số bộ trình bày:"
+
+#: ksgrd/SensorManager.cpp:182
+msgid "Working Devices"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:183
+msgid "Active Devices"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:184
+#, fuzzy
+#| msgid "Number of displays:"
+msgid "Number of Devices"
+msgstr "Số bộ trình bày:"
+
+#: ksgrd/SensorManager.cpp:185
+msgid "Resyncing Percent"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:186
+msgid "Disk Information"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:189
+#, kde-format
+msgid "CPU %1"
+msgstr "CPU %1"
+
+#: ksgrd/SensorManager.cpp:190
+#, kde-format
+msgid "Disk %1"
+msgstr "Đĩa %1"
+
+#: ksgrd/SensorManager.cpp:194
+#, fuzzy, kde-format
+#| msgid "Battery"
+msgid "Battery %1"
+msgstr "Pin"
+
+#: ksgrd/SensorManager.cpp:195
+#, kde-format
+msgid "Fan %1"
+msgstr "Quạt %1"
+
+#: ksgrd/SensorManager.cpp:196
+#, kde-format
+msgid "Temperature %1"
+msgstr "Nhiệt độ %1"
+
+#: ksgrd/SensorManager.cpp:199
+msgid "Total"
+msgstr "Tổng"
+
+#: ksgrd/SensorManager.cpp:200
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Software Interrupts"
+msgstr "Lần ngắt"
+
+#: ksgrd/SensorManager.cpp:201
+#, fuzzy
+#| msgid "Interrupts"
+msgid "Hardware Interrupts"
+msgstr "Lần ngắt"
+
+# Interrupts: Lần ngắt
+#: ksgrd/SensorManager.cpp:206 ksgrd/SensorManager.cpp:208
+#, kde-format
+msgid "Int %1"
+msgstr "Ngắt %1"
+
+#
+#: ksgrd/SensorManager.cpp:213
+msgctxt "the unit 1 per second"
+msgid "1/s"
+msgstr "1/giây"
+
+#: ksgrd/SensorManager.cpp:214
+msgid "kBytes"
+msgstr "kByte"
+
+#: ksgrd/SensorManager.cpp:215
+msgctxt "the unit minutes"
+msgid "min"
+msgstr "phút"
+
+#: ksgrd/SensorManager.cpp:216
+msgctxt "the frequency unit"
+msgid "MHz"
+msgstr "MHz"
+
+#: ksgrd/SensorManager.cpp:217
+msgctxt "a percentage"
+msgid "%"
+msgstr "%"
+
+#: ksgrd/SensorManager.cpp:218
+msgctxt "the unit milliamperes"
+msgid "mA"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:219
+msgctxt "the unit milliampere hours"
+msgid "mAh"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:220
+msgctxt "the unit milliwatts"
+msgid "mW"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:221
+msgctxt "the unit milliwatt hours"
+msgid "mWh"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:222
+msgctxt "the unit millivolts"
+msgid "mV"
+msgstr ""
+
+#: ksgrd/SensorManager.cpp:225
+msgid "Integer Value"
+msgstr "Giá trị số nguyên"
+
+#: ksgrd/SensorManager.cpp:226
+msgid "Floating Point Value"
+msgstr "Giá trị số điểm phù động"
+
+#: ksgrd/SensorShellAgent.cpp:126
+#, kde-format
+msgid "Could not run daemon program '%1'."
+msgstr ""
+
+#: ksgrd/SensorShellAgent.cpp:133
+#, kde-format
+msgid "The daemon program '%1' failed."
+msgstr ""
+
+#: ksgrd/SensorSocketAgent.cpp:103
+#, kde-format
+msgid "Connection to %1 refused"
+msgstr "Kết nối đến %1 bị từ chối."
+
+#: ksgrd/SensorSocketAgent.cpp:107
+#, kde-format
+msgid "Host %1 not found"
+msgstr "Không tìm thấy máy %1"
+
+#: ksgrd/SensorSocketAgent.cpp:111
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred with the network (e.g., the network cable was "
+#| "accidentally plugged out) for host %1"
+msgid ""
+"An error occurred with the network (e.g. the network cable was accidentally "
+"unplugged) for host %1."
+msgstr "Gặp lỗi mạng (v.d. cáp mạng bị tháo nút ra) cho máy %1."
+
+#: ksgrd/SensorSocketAgent.cpp:115
+#, kde-format
+msgid "Error for host %1: %2"
+msgstr "Lỗi cho máy %1: %2"
+
+#: HostConnector.cpp:44
 msgid "Connect Host"
 msgstr "Máy kết nối"
 
-#: HostConnector.cc:55
+#: HostConnector.cpp:55
 msgid "Host:"
 msgstr "Máy:"
 
-#: HostConnector.cc:65
+#: HostConnector.cpp:65
 msgid "Enter the name of the host you want to connect to."
 msgstr "Hãy nhập tên của máy nơi bạn muốn kết nối."
 
-#: HostConnector.cc:71
+#: HostConnector.cpp:71
 msgid "Connection Type"
 msgstr "Kiểu kết nối"
 
-#: HostConnector.cc:77
+#: HostConnector.cpp:77
 msgid "ssh"
 msgstr "SSH"
 
-#: HostConnector.cc:80
+#: HostConnector.cpp:80
 msgid "Select this to use the secure shell to login to the remote host."
 msgstr "Chọn điều này để dùng hệ vỏ bảo mật để đăng nhập vào máy từ xa."
 
-#: HostConnector.cc:83
+#: HostConnector.cpp:83
 msgid "rsh"
 msgstr "RSH"
 
-#: HostConnector.cc:84
+#: HostConnector.cpp:84
 msgid "Select this to use the remote shell to login to the remote host."
 msgstr "Chọn điều này để dùng hệ vỏ ở xa để đăng nhập vào máy từ xa."
 
-#: HostConnector.cc:87
+#: HostConnector.cpp:87
 msgid "Daemon"
 msgstr "Trình nền"
 
-#: HostConnector.cc:88
+#: HostConnector.cpp:88
 msgid ""
 "Select this if you want to connect to a ksysguard daemon that is running on "
 "the machine you want to connect to, and is listening for client requests."
@@ -60,11 +1380,11 @@ msgstr ""
 "Chọn điều này nếu bạn muốn kết nối đến một trình nền ksysguard mà chạy trên "
 "máy nơi bạn muốn kết nối, và lắng nghe các yêu cầu ứng dụng khách."
 
-#: HostConnector.cc:91
+#: HostConnector.cpp:91
 msgid "Custom command"
 msgstr "Lệnh tự chọn"
 
-#: HostConnector.cc:92
+#: HostConnector.cpp:92
 msgid ""
 "Select this to use the command you entered below to start ksysguardd on the "
 "remote host."
@@ -72,39 +1392,39 @@ msgstr ""
 "Chọn điều này để sử dụng lệnh đã nhập bên dưới để khởi chạy ksysguard trên "
 "máy ở xa."
 
-#: HostConnector.cc:95
+#: HostConnector.cpp:95
 msgid "Port:"
 msgstr "Cổng:"
 
-#: HostConnector.cc:102
+#: HostConnector.cpp:102
 msgid ""
 "Enter the port number on which the ksysguard daemon is listening for "
 "connections."
 msgstr "Hãy nhập sổ hiệu cổng nơi trình nền ksysguard lắng nghe các kết nối."
 
-#: HostConnector.cc:105
+#: HostConnector.cpp:105
 msgid "e.g.  3112"
 msgstr "v.d. 3112"
 
-#: HostConnector.cc:108
+#: HostConnector.cpp:108
 msgid "Command:"
 msgstr "Lệnh:"
 
-#: HostConnector.cc:117
+#: HostConnector.cpp:117
 msgid "Enter the command that runs ksysguardd on the host you want to monitor."
 msgstr ""
 "Hãy nhập lệnh chạy ksysguardd (trình nền ksysguard) trên máy bạn muốn theo "
 "dõi."
 
-#: HostConnector.cc:121
+#: HostConnector.cpp:121
 msgid "e.g. ssh -l root remote.host.org ksysguardd"
 msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
 
-#: SensorBrowser.cc:117
+#: SensorBrowser.cpp:117
 msgid "Sensor Browser"
 msgstr "Bộ Duyệt Nhạy"
 
-#: SensorBrowser.cc:473
+#: SensorBrowser.cpp:474
 #, fuzzy
 #| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
 msgid "Drag sensors to empty cells of a worksheet "
@@ -112,7 +1432,7 @@ msgstr ""
 "Hãy kéo bộ nhạy vào ô rỗng trên bảng làm việc, hoặc vào tiểu dụng này trên "
 "bảng điều khiển."
 
-#: SensorBrowser.cc:474
+#: SensorBrowser.cpp:475
 #, fuzzy
 #| msgid ""
 #| "The sensor browser lists the connected hosts and the sensors that they "
@@ -134,576 +1454,39 @@ msgstr ""
 "hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
 "bộ trình bày, để thêm bộ nhạy nữa."
 
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:283
-msgid "OK"
-msgstr "OK"
-
-#: SensorDisplayLib/DancingBars.cc:96 SensorDisplayLib/FancyPlotter.cc:283
-#: SensorDisplayLib/FancyPlotter.cc:519 SensorDisplayLib/FancyPlotter.cc:597
-msgid "Error"
-msgstr "Lỗi"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:43
-msgid "Edit BarGraph Preferences"
-msgstr "Sửa đổi Tùy thích Đồ thị thanh"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:52
-msgid "Range"
-msgstr "Phạm vị"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, titleFrame)
-#: SensorDisplayLib/DancingBarsSettings.cc:57 WorkSheetSettings.cc:50 rc.cpp:5
-#: rc.cpp:116
-msgid "Title"
-msgstr "Tựa"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, m_title)
-#: SensorDisplayLib/DancingBarsSettings.cc:62
-#: SensorDisplayLib/FancyPlotterSettings.cc:73 rc.cpp:47
-msgid "Enter the title of the display here."
-msgstr "Hãy nhập vào đây tựa của bộ trình bày."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:67
-msgid "Display Range"
-msgstr "Phạm vi trình bày"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:72
-#: SensorDisplayLib/FancyPlotterSettings.cc:101
-msgid "Minimum value:"
-msgstr "Giá trị tối thiểu :"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:80
-msgid ""
-"Enter the minimum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Hãy nhập vào đây giá trị tối thiểu cho bộ trình bày. Nếu cả hai giá trị là "
-"0, khả năng phát hiện tự động phạm vị được bật."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:84
-#: SensorDisplayLib/FancyPlotterSettings.cc:112
-msgid "Maximum value:"
-msgstr "Giá trị tối đa:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:92
-msgid ""
-"Enter the maximum value for the display here. If both values are 0, "
-"automatic range detection is enabled."
-msgstr ""
-"Hãy nhập vào đây giá trị tối đa cho bộ trình bày. Nếu cả hai giá trị là 0, "
-"khả năng phát hiện tự động phạm vị được bật."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:102
-msgid "Alarms"
-msgstr "Báo động"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:59
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1)
-#: SensorDisplayLib/DancingBarsSettings.cc:107 rc.cpp:92
-msgid "Alarm for Minimum Value"
-msgstr "Báo động giá trị tối thiểu"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:112
-#: SensorDisplayLib/DancingBarsSettings.cc:135
-msgid "Enable alarm"
-msgstr "Bật báo động"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:56
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:71
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_lowerLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:113 rc.cpp:56 rc.cpp:98
-msgid "Enable the minimum value alarm."
-msgstr "Bật báo động giá trị tối thiểu."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:97
-#. i18n: ectx: property (text), widget (QLabel, m_lblLowerLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:116 rc.cpp:101
-msgid "Lower limit:"
-msgstr "Giới hạn dưới :"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:123
-#. i18n: ectx: property (title), widget (QGroupBox, GroupBox1_2)
-#: SensorDisplayLib/DancingBarsSettings.cc:130 rc.cpp:104
-msgid "Alarm for Maximum Value"
-msgstr "Báo động giá trị tối đa"
-
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, m_upperLimitActive)
-#: SensorDisplayLib/DancingBarsSettings.cc:136 rc.cpp:65 rc.cpp:110
-msgid "Enable the maximum value alarm."
-msgstr "Bật báo động giá trị tối đa."
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, m_lblUpperLimit)
-#: SensorDisplayLib/DancingBarsSettings.cc:139 rc.cpp:113
-msgid "Upper limit:"
-msgstr "Giới hạn trên:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:156
-#, fuzzy
-#| msgid "Look"
-msgctxt "@title:tab Appearance of the bar graph"
-msgid "Look"
-msgstr "Diện mạo"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:161
-msgid "Normal bar color:"
-msgstr "Màu thanh chuẩn:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:168
-msgid "Out-of-range color:"
-msgstr "Màu ở ngoại phạm vị :"
-
-#. i18n: file: SensorDisplayLib/ListViewSettingsWidget.ui:77
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:74
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: SensorDisplayLib/MultiMeterSettingsWidget.ui:228
-#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#. i18n: file: SensorDisplayLib/SensorLoggerSettingsWidget.ui:64
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: SensorDisplayLib/DancingBarsSettings.cc:175 SensorDisplayLib/LogFile.cc:100
-#: rc.cpp:17 rc.cpp:29 rc.cpp:80 rc.cpp:125
-msgid "Background color:"
-msgstr "Màu nền:"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:182
-#: SensorDisplayLib/FancyPlotterSettings.cc:183
-msgid "Font size:"
-msgstr "Cỡ phông chữ :"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:186
-msgid ""
-"This determines the size of the font used to print a label underneath the "
-"bars. Bars are automatically suppressed if text becomes too large, so it is "
-"advisable to use a small font size here."
-msgstr ""
-"Giá trị này xác định kích cỡ của phông chữ dùng để in nhãn dưới mỗi thanh. "
-"Các thanh bị thu hồi tự động nếu chữ trở thành quá lớn, vậy khuyên bạn đặt "
-"vào đây một kích cỡ nhỏ."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:194
-#: SensorDisplayLib/FancyPlotterSettings.cc:198
-msgid "Sensors"
-msgstr "Bộ nhạy"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:207
-msgid "Edit..."
-msgstr "Sửa..."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:208
-msgid "Push this button to configure the label."
-msgstr "Hãy nhấn nút này để cấu hình nhãn."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:211
-#: SensorDisplayLib/FancyPlotterSettings.cc:231
-msgid "Delete"
-msgstr "Xoá"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:212
-#: SensorDisplayLib/FancyPlotterSettings.cc:232
-msgid "Push this button to delete the sensor."
-msgstr "Hãy nhấn nút này để xoá bỏ bộ nhạy."
-
-#: SensorDisplayLib/DancingBarsSettings.cc:366
-msgid "Label of Bar Graph"
-msgstr "Nhãn của đồ thị thanh"
-
-#: SensorDisplayLib/DancingBarsSettings.cc:367
-msgid "Enter new label:"
-msgstr "Nhập nhãn mới:"
-
-#: SensorDisplayLib/DummyDisplay.cc:30 SensorDisplayLib/DummyDisplay.cc:38
-msgid "Drop Sensor Here"
-msgstr "Thả đây bộ nhạy"
-
-#: SensorDisplayLib/DummyDisplay.cc:32
-msgid ""
-"This is an empty space in a worksheet. Drag a sensor from the Sensor Browser "
-"and drop it here. A sensor display will appear that allows you to monitor "
-"the values of the sensor over time."
-msgstr ""
-"Đây là ô rỗng trong bảng làm việc. Hãy kéo một bộ nhạy từ Bộ Duyệt Nhạy và "
-"thả nó vào đây. Một bộ trình bày nhạy sẽ xuất hiện mà cho bạn khả năng theo "
-"dõi các giá trị nhạy trong thời gian."
-
-#: SensorDisplayLib/ListViewSettings.cc:30
-msgid "List View Settings"
-msgstr "Thiết lập ô xem danh sách"
-
-#: SensorDisplayLib/LogFile.cc:92
-msgid "File logging settings"
-msgstr "Thiết lập ghi lưu tập tin"
-
-#. i18n: file: SensorDisplayLib/LogFileSettings.ui:61
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: SensorDisplayLib/LogFile.cc:98 rc.cpp:26
-msgid "Foreground color:"
-msgstr "Màu chữ :"
-
-#: SensorDisplayLib/MultiMeterSettings.cc:31
-#, fuzzy
-#| msgid "Multimeter Settings"
-msgctxt ""
-"Multimeter is a sensor display that mimics 'digital multimeter' aparatus"
-msgid "Multimeter Settings"
-msgstr "Thiết lập bộ đa đo"
-
-#: SensorDisplayLib/SensorDisplay.cc:118 SensorDisplayLib/SensorLogger.cc:598
-msgid "&Properties"
-msgstr "Tài &sản"
-
-#: SensorDisplayLib/SensorDisplay.cc:123 SensorDisplayLib/SensorLogger.cc:603
-msgid "&Remove Display"
-msgstr "Gỡ &bỏ bộ trình bày"
-
-#: SensorDisplayLib/SensorDisplay.cc:193
-#, kde-format
-msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
-msgstr ""
-"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
-"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
-"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
-
-#: SensorDisplayLib/SensorLogger.cc:138
-msgid "Logging"
-msgstr "Ghi lưu"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, timerFrame)
-#: SensorDisplayLib/SensorLogger.cc:141 rc.cpp:86
-msgid "Timer Interval"
-msgstr "Khoảng thời gian đếm giờ"
-
-#: SensorDisplayLib/SensorLogger.cc:144
-msgid "Sensor Name"
-msgstr "Tên bộ nhạy"
-
-#: SensorDisplayLib/SensorLogger.cc:147
-msgid "Host Name"
-msgstr "Tên máy"
-
-#: SensorDisplayLib/SensorLogger.cc:150
-msgid "Log File"
-msgstr "Tập tin ghi lưu"
-
-#: SensorDisplayLib/SensorLogger.cc:431 SensorDisplayLib/SensorLoggerDlg.cc:32
-msgid "Sensor Logger"
-msgstr "Bộ ghi lưu dữ liệu nhạy"
-
-#: SensorDisplayLib/SensorLogger.cc:608
-msgid "&Remove Sensor"
-msgstr "Gỡ &bỏ bộ nhạy"
-
-#: SensorDisplayLib/SensorLogger.cc:613
-msgid "&Edit Sensor..."
-msgstr "&Sửa bộ nhạy..."
-
-#: SensorDisplayLib/SensorLogger.cc:621
-msgid "St&op Logging"
-msgstr "&Ngưng ghi lưu"
-
-#: SensorDisplayLib/SensorLogger.cc:624
-msgid "S&tart Logging"
-msgstr "&Bắt đầu ghi lưu"
-
-#: SensorDisplayLib/SensorLoggerSettings.cc:30
-msgid "Sensor Logger Settings"
-msgstr "Thiết lập bộ ghi lưu dữ liệu nhạy"
-
-#: SensorDisplayLib/SensorModel.cc:166
-msgid "Host"
-msgstr "Máy"
-
-#: SensorDisplayLib/SensorModel.cc:169
-msgid "Sensor"
-msgstr "Bộ nhạy"
-
-#: SensorDisplayLib/SensorModel.cc:172
-msgid "Unit"
-msgstr "Đơn vị"
-
-#: SensorDisplayLib/SensorModel.cc:175
-msgid "Status"
-msgstr "Trạng thái"
-
-#: SensorDisplayLib/SensorModel.cc:178
-msgid "Label"
-msgstr "Nhãn"
-
-#: SensorDisplayLib/FancyPlotter.cc:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:515 SensorDisplayLib/FancyPlotter.cc:586
-#: SensorDisplayLib/FancyPlotter.cc:649
-#, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:523
-#, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:594
-#, kde-format
-msgid "%1 of %2%1"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:622
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:625
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:628
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:631
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:636
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:639
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:642
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:645
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cc:651
-#, fuzzy, kde-format
-#| msgctxt "a percentage"
-#| msgid "%"
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:51
-#, fuzzy
-#| msgid "Signal Plotter Settings"
-msgid "Plotter Settings"
-msgstr "Thiết lập bộ vẽ tín hiệu"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:64
-msgid "General"
-msgstr "Chung"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:69
-msgid "Title:"
-msgstr "Tựa :"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:77
-msgid "Stack the beams on top of each other"
-msgstr "Xếp đồng các tia"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:78
-#, fuzzy
-#| msgid ""
-#| "The beams are stacked on top of each other, and the area is drawn filled "
-#| "in. So if one beam has a value of 2 and another beam has a value of 3, "
-#| "the first beam will be draw at value 2 and the other beam drawn at 2+3=5"
-msgid ""
-"The beams are stacked on top of each other, and the area is drawn filled in. "
-"So if one beam has a value of 2 and another beam has a value of 3, the first "
-"beam will be drawn at value 2 and the other beam drawn at 2+3=5."
-msgstr ""
-"Các tia được xếp đồng trên với nhau, và vùng được vẽ đầy. Vậy nếu một tia có "
-"giá trị 2, còn tia khác có giá trị 3, tia thứ nhất sẽ được vẽ ở giá trị 2, "
-"nhưng tia khác sẽ được vẽ ở 2+3=5."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:85
-msgid "Scales"
-msgstr "Tỷ lệ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:90
-#, fuzzy
-#| msgid "Vertical Scale"
-msgid "Vertical scale"
-msgstr "Tỷ lệ dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:96
-msgid "Specify graph range:"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:97
-msgid ""
-"Check this box if you want the display range to adapt dynamically to the "
-"currently displayed values; if you do not check this, you have to specify "
-"the range you want in the fields below."
-msgstr ""
-"Hãy bật tùy chọn này nếu bạn muốn phạm vị trình bày thích nghi với các giá "
-"trị được hiển thị hiện thời. Nếu không bật, bạn sẽ phải xác định phạm vị đã "
-"muốn trong các trường bên dưới."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:107
-#, fuzzy
-#| msgid "Enter the title of the display here."
-msgid "Enter the minimum value for the display here."
-msgstr "Hãy nhập vào đây tựa của bộ trình bày."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:118
-msgid ""
-"Enter the soft maximum value for the display here. The upper range will not "
-"be reduced below this value, but will still go above this number for values "
-"above this value."
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:125
-#, fuzzy
-#| msgid "Horizontal Scale"
-msgid "Horizontal scale"
-msgstr "Tỷ lệ ngang"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:132
-#, fuzzy
-#| msgid "pixels per time period"
-msgid "Pixels per time period:"
-msgstr "điểm ảnh trong mỗi thời gian"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:139
-msgid "Grid"
-msgstr "Lưới"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:144
-msgid "Lines"
-msgstr "Đường"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:150
-msgid "Vertical lines"
-msgstr "Đường dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:151
-msgid "Check this to activate the vertical lines if display is large enough."
-msgstr "Bật tùy chọn này để vẽ đường dọc nếu bộ trình bày đủ lớn."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:154
-msgid "Distance:"
-msgstr "Khoảng cách:"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:160
-msgid "Enter the distance between two vertical lines here."
-msgstr "Hãy nhập vào đây khoảng cách giữa hai đường dọc."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:164
-msgid "Vertical lines scroll"
-msgstr "Cuộn đường dọc"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:167
-msgid "Horizontal lines"
-msgstr "Đường ngang"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:168
-msgid "Check this to enable horizontal lines if display is large enough."
-msgstr "Bật tùy chọn này để vẽ đường ngang nếu bộ trình bày đủ lớn."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:173
-msgid "Text"
-msgstr "Chữ"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:179
-msgid "Show axis labels"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:180
-msgid ""
-"Check this box if horizontal lines should be decorated with the values they "
-"mark."
-msgstr ""
-"Bật tùy chọn này nếu bạn muốn hiển thị trên mỗi đường ngang giá trị tương "
-"ứng."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:223
-msgid "Set Color..."
-msgstr "Đặt màu..."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:224
-msgid "Push this button to configure the color of the sensor in the diagram."
-msgstr "Hãy nhấn nút này để cấu hình màu của bộ nhạy trong sơ đồ."
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:236
-msgid "Move Up"
-msgstr "Đem lên"
-
-#: SensorDisplayLib/FancyPlotterSettings.cc:241
-msgid "Move Down"
-msgstr "Đem xuống"
-
-#: TimerSettings.cc:38
+#: TimerSettings.cpp:38
 msgid "Timer Settings"
 msgstr "Thiết lập đếm thời gian"
 
-#: TimerSettings.cc:48
+#: TimerSettings.cpp:48
 msgid "Use update interval of worksheet"
 msgstr "Dùng khoảng cập nhật của bảng làm việc"
 
-#: TimerSettings.cc:51 WorkSheetSettings.cc:90
+#: TimerSettings.cpp:51 WorkSheetSettings.cpp:90
 msgid "Update interval:"
 msgstr "Khoảng cập nhật:"
 
 #. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
 #. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cc:58 WorkSheetSettings.cc:94 rc.cpp:89
+#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:89
 msgid " sec"
 msgstr " giây"
 
-#: TimerSettings.cc:61 WorkSheetSettings.cc:100
+#: TimerSettings.cpp:61 WorkSheetSettings.cpp:100
 msgid "All displays of the sheet are updated at the rate specified here."
 msgstr "Mọi bộ trình bày của tờ được cập nhật theo tỷ lệ đã xác định vào đây."
 
-#: WorkSheet.cc:88
+#: WorkSheet.cpp:88
 #, kde-format
 msgid "Cannot open the file %1."
 msgstr "Không thể mở tập tin %1."
 
-#: WorkSheet.cc:96
+#: WorkSheet.cpp:96
 #, kde-format
 msgid "The file %1 does not contain valid XML."
 msgstr "Tập tin %1 không chứa mã XML hợp lệ."
 
-#: WorkSheet.cc:103
+#: WorkSheet.cpp:103
 #, kde-format
 msgid ""
 "The file %1 does not contain a valid worksheet definition, which must have a "
@@ -712,798 +1495,92 @@ msgstr ""
 "Tập tin %1 không chứa lời định nghĩa bảng làm việc hợp lệ, mà phải có kiểu "
 "tài liệu KSysGuardWorkSheet."
 
-#: WorkSheet.cc:127
+#: WorkSheet.cpp:127
 #, kde-format
 msgid "The file %1 has an invalid worksheet size."
 msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
 
-#: WorkSheet.cc:228
+#: WorkSheet.cpp:228
 #, kde-format
 msgid "Cannot save file %1"
 msgstr "Không thể lưu tập tin %1"
 
-#: WorkSheet.cc:274
+#: WorkSheet.cpp:274
 msgid "The clipboard does not contain a valid display description."
 msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
 
-#: WorkSheet.cc:372
+#: WorkSheet.cpp:375
 msgid "Select Display Type"
 msgstr "Chọn kiểu bộ trình bày"
 
-#: WorkSheet.cc:373
+#: WorkSheet.cpp:376
 msgid "&Line graph"
 msgstr "Đồ thị đườ&ng"
 
-#: WorkSheet.cc:374
+#: WorkSheet.cpp:377
 msgid "&Digital display"
 msgstr "Hiện điện &số"
 
-#: WorkSheet.cc:375
+#: WorkSheet.cpp:378
 msgid "&Bar graph"
 msgstr "Đồ thị th&anh"
 
-#: WorkSheet.cc:376
+#: WorkSheet.cpp:379
 msgid "Log to a &file"
 msgstr "&Ghi lưu vào tập tin"
 
-#: WorkSheet.cc:525
+#: WorkSheet.cpp:528
 #, fuzzy
 #| msgid "&Remove Display"
 msgid "Remove this display?"
 msgstr "Gỡ &bỏ bộ trình bày"
 
-#: WorkSheet.cc:526
+#: WorkSheet.cpp:529
 #, fuzzy
 #| msgid "&Remove Display"
 msgid "Remove Display"
 msgstr "Gỡ &bỏ bộ trình bày"
 
-#: WorkSheet.cc:567
+#: WorkSheet.cpp:570
 msgid "Dummy"
 msgstr "Giả"
 
-#: WorkSheetSettings.cc:40
+#: WorkSheetSettings.cpp:40
 #, fuzzy
 #| msgid "Properties"
 msgid "Tab Properties"
 msgstr "Thuộc tính"
 
-#: WorkSheetSettings.cc:61
+#: WorkSheetSettings.cpp:61
 msgid "Properties"
 msgstr "Thuộc tính"
 
-#: WorkSheetSettings.cc:70
+#: WorkSheetSettings.cpp:70
 msgid "Rows:"
 msgstr "Hàng:"
 
-#: WorkSheetSettings.cc:79
+#: WorkSheetSettings.cpp:79
 msgid "Columns:"
 msgstr "Cột:"
 
-#: WorkSheetSettings.cc:87
+#: WorkSheetSettings.cpp:87
 msgid "Enter the number of rows the sheet should have."
 msgstr "Hãy nhập số hàng cho tờ này."
 
-#: WorkSheetSettings.cc:88
+#: WorkSheetSettings.cpp:88
 msgid "Enter the number of columns the sheet should have."
 msgstr "Hãy nhập số cột cho tờ này."
 
-#: WorkSheetSettings.cc:101
+#: WorkSheetSettings.cpp:101
 msgid "Enter the title of the worksheet here."
 msgstr "Hãy nhập vào đây tựa của bảng làm việc."
 
-#: ksgrd/SensorAgent.cc:109
-#, fuzzy, kde-format
-#| msgid ""
-#| "Message from %1:\n"
-#| "%2"
-msgctxt "%1 is a host name"
-msgid ""
-"Message from %1:\n"
-"%2"
-msgstr ""
-"Thông điệp từ %1:\n"
-"%2"
-
-#: ksgrd/SensorManager.cc:60
-#, fuzzy
-#| msgid "&Change"
-msgid "Change"
-msgstr "&Đổi"
-
-#: ksgrd/SensorManager.cc:61
-#, fuzzy
-#| msgid "State"
-msgid "Rate"
-msgstr "Tình trạng"
-
-#: ksgrd/SensorManager.cc:63
-msgid "CPU Load"
-msgstr "Trọng tải CPU"
-
-#: ksgrd/SensorManager.cc:64
-msgid "Idling"
-msgstr "Đang nghỉ"
-
-#: ksgrd/SensorManager.cc:65
-msgid "Nice Load"
-msgstr "Trọng tải ưu tiên"
-
-#: ksgrd/SensorManager.cc:66
-msgid "User Load"
-msgstr "Trọng tải người dùng"
-
-#: ksgrd/SensorManager.cc:67
-#, fuzzy
-#| msgid "System Load"
-msgctxt "@item sensor description"
-msgid "System Load"
-msgstr "Trọng tải hệ thống"
-
-#: ksgrd/SensorManager.cc:68
-msgid "Waiting"
-msgstr "Đang đợi"
-
-#: ksgrd/SensorManager.cc:69
-msgid "Total Load"
-msgstr "Tổng trọng tải"
-
-#: ksgrd/SensorManager.cc:70
-msgid "Memory"
-msgstr "Bộ nhớ"
-
-#: ksgrd/SensorManager.cc:71
-msgid "Physical Memory"
-msgstr "Bộ nhớ vật lý"
-
-#: ksgrd/SensorManager.cc:72
-msgid "Swap Memory"
-msgstr "Bộ nhớ trao đổi"
-
-#: ksgrd/SensorManager.cc:73
-msgid "Cached Memory"
-msgstr "Bộ nhớ tạm"
-
-#: ksgrd/SensorManager.cc:74
-msgid "Buffered Memory"
-msgstr "Bộ nhớ đệm"
-
-#: ksgrd/SensorManager.cc:75
-msgid "Used Memory"
-msgstr "Bộ nhớ đã dùng"
-
-#: ksgrd/SensorManager.cc:76
-msgid "Application Memory"
-msgstr "Bộ nhớ ứng dụng"
-
-#: ksgrd/SensorManager.cc:77
-msgid "Free Memory"
-msgstr "Bộ nhớ còn rảnh"
-
-#: ksgrd/SensorManager.cc:78
-#, fuzzy
-#| msgid "Application Memory"
-msgid "Active Memory"
-msgstr "Bộ nhớ ứng dụng"
-
-#: ksgrd/SensorManager.cc:79
-#, fuzzy
-#| msgid "Cached Memory"
-msgid "Inactive Memory"
-msgstr "Bộ nhớ tạm"
-
-#: ksgrd/SensorManager.cc:80
-#, fuzzy
-#| msgid "Used Memory"
-msgid "Wired Memory"
-msgstr "Bộ nhớ đã dùng"
-
-#: ksgrd/SensorManager.cc:81
-msgid "Exec Pages"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:82
-msgid "File Pages"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:83
-msgid "Process Count"
-msgstr "Số tiến trình"
-
-#: ksgrd/SensorManager.cc:84 ksgrd/SensorManager.cc:193
-msgid "Process Controller"
-msgstr "Bộ điều khiển tiến trình"
-
-#: ksgrd/SensorManager.cc:85
-msgid "Disk Throughput"
-msgstr "Lưu tốc đĩa"
-
-#: ksgrd/SensorManager.cc:86
-msgctxt "CPU Load"
-msgid "Load"
-msgstr "Trọng tải"
-
-#: ksgrd/SensorManager.cc:87
-msgid "Total Accesses"
-msgstr "Tổng số truy cập"
-
-#: ksgrd/SensorManager.cc:88
-msgid "Read Accesses"
-msgstr "Truy cập đọc"
-
-#: ksgrd/SensorManager.cc:89
-msgid "Write Accesses"
-msgstr "Truy cập ghi"
-
-#: ksgrd/SensorManager.cc:90
-msgid "Read Data"
-msgstr "Dữ liệu đọc"
-
-#: ksgrd/SensorManager.cc:91
-#, fuzzy
-#| msgid "Write Data"
-msgid "Written Data"
-msgstr "Dữ liệu ghi"
-
-#: ksgrd/SensorManager.cc:92
-msgid "Milliseconds spent reading"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:93
-msgid "Milliseconds spent writing"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:94
-msgid "I/Os currently in progress"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:95
-msgid "Pages In"
-msgstr "Trang đến"
-
-#: ksgrd/SensorManager.cc:96
-msgid "Pages Out"
-msgstr "Trang đi"
-
-#: ksgrd/SensorManager.cc:97
-msgid "Context Switches"
-msgstr "Bộ chuyển ngữ cảnh"
-
-#: ksgrd/SensorManager.cc:98
-msgid "Network"
-msgstr "Mạng"
-
-#: ksgrd/SensorManager.cc:99
-msgid "Interfaces"
-msgstr "Giao diện"
-
-#: ksgrd/SensorManager.cc:100
-msgid "Receiver"
-msgstr "Bộ nhận"
-
-#: ksgrd/SensorManager.cc:101
-msgid "Transmitter"
-msgstr "Bộ gởi"
-
-#: ksgrd/SensorManager.cc:103
-#, fuzzy
-#| msgid "State"
-msgid "Data Rate"
-msgstr "Tình trạng"
-
-#: ksgrd/SensorManager.cc:104
-#, fuzzy
-#| msgid "Compressed Packets"
-msgid "Compressed Packets Rate"
-msgstr "Gói tin đã nén"
-
-#: ksgrd/SensorManager.cc:105
-#, fuzzy
-#| msgid "Dropped Packets"
-msgid "Dropped Packets Rate"
-msgstr "Gói tin bị mất"
-
-#: ksgrd/SensorManager.cc:106
-#, fuzzy
-#| msgid "Errors"
-msgid "Error Rate"
-msgstr "Lỗi"
-
-#: ksgrd/SensorManager.cc:107
-#, fuzzy
-#| msgid "FIFO Overruns"
-msgid "FIFO Overruns Rate"
-msgstr "Tràn qua FIFO"
-
-#: ksgrd/SensorManager.cc:108
-#, fuzzy
-#| msgid "Frame Errors"
-msgid "Frame Error Rate"
-msgstr "Lỗi khung"
-
-#: ksgrd/SensorManager.cc:109
-#, fuzzy
-#| msgid "Multicast"
-msgid "Multicast Packet Rate"
-msgstr "Truyền một-nhiều"
-
-#: ksgrd/SensorManager.cc:110
-#, fuzzy
-#| msgid "Packets"
-msgid "Packet Rate"
-msgstr "Gói tin"
-
-#: ksgrd/SensorManager.cc:111
-#, fuzzy
-#| msgid "Carrier"
-msgctxt "@item sensor description ('carrier' is a type of network signal)"
-msgid "Carrier Loss Rate"
-msgstr "Bộ truyền"
-
-#: ksgrd/SensorManager.cc:112 ksgrd/SensorManager.cc:123
-msgid "Collisions"
-msgstr "Va chạm"
-
-#: ksgrd/SensorManager.cc:114
-msgid "Data"
-msgstr "Dữ liệu"
-
-#: ksgrd/SensorManager.cc:115
-msgid "Compressed Packets"
-msgstr "Gói tin đã nén"
-
-#: ksgrd/SensorManager.cc:116
-msgid "Dropped Packets"
-msgstr "Gói tin bị mất"
-
-#: ksgrd/SensorManager.cc:117
-msgid "Errors"
-msgstr "Lỗi"
-
-#: ksgrd/SensorManager.cc:118
-msgid "FIFO Overruns"
-msgstr "Tràn qua FIFO"
-
-#: ksgrd/SensorManager.cc:119
-msgid "Frame Errors"
-msgstr "Lỗi khung"
-
-#: ksgrd/SensorManager.cc:120
-#, fuzzy
-#| msgid "Multicast"
-msgid "Multicast Packets"
-msgstr "Truyền một-nhiều"
-
-#: ksgrd/SensorManager.cc:121
-msgid "Packets"
-msgstr "Gói tin"
-
-#: ksgrd/SensorManager.cc:122
-#, fuzzy
-#| msgid "Carrier"
-msgctxt "@item sensor description ('carrier' is a type of network signal)"
-msgid "Carrier Losses"
-msgstr "Bộ truyền"
-
-#: ksgrd/SensorManager.cc:125
-msgid "Sockets"
-msgstr "Ổ cắm"
-
-#: ksgrd/SensorManager.cc:126
-msgid "Total Number"
-msgstr "Tổng số"
-
-#: ksgrd/SensorManager.cc:127 ksgrd/SensorManager.cc:194
-msgid "Table"
-msgstr "Bảng"
-
-#: ksgrd/SensorManager.cc:128
-msgid "Advanced Power Management"
-msgstr "Quản lý Điện năng Cấp cao"
-
-# Name: don't translate / Tên: đừng dịch
-#: ksgrd/SensorManager.cc:129
-msgid "ACPI"
-msgstr "ACPI"
-
-#: ksgrd/SensorManager.cc:130
-msgid "Thermal Zone"
-msgstr "Khu vực Nhiệt"
-
-#: ksgrd/SensorManager.cc:131
-msgid "Temperature"
-msgstr "Nhiệt độ"
-
-#: ksgrd/SensorManager.cc:132
-msgid "Fan"
-msgstr "Quạt"
-
-#: ksgrd/SensorManager.cc:133
-msgid "State"
-msgstr "Tình trạng"
-
-#: ksgrd/SensorManager.cc:134
-msgid "Battery"
-msgstr "Pin"
-
-#: ksgrd/SensorManager.cc:135
-msgid "Battery Charge"
-msgstr "Nạp pin"
-
-#: ksgrd/SensorManager.cc:136
-msgid "Battery Usage"
-msgstr "Dùng pin"
-
-#: ksgrd/SensorManager.cc:137
-msgid "Remaining Time"
-msgstr "Thời gian còn lại"
-
-#: ksgrd/SensorManager.cc:138
-msgid "Interrupts"
-msgstr "Lần ngắt"
-
-#: ksgrd/SensorManager.cc:139
-msgid "Load Average (1 min)"
-msgstr "Trọng tải trung bình (1 phút)"
-
-#: ksgrd/SensorManager.cc:140
-msgid "Load Average (5 min)"
-msgstr "Trọng tải trung bình (5 phút)"
-
-#: ksgrd/SensorManager.cc:141
-msgid "Load Average (15 min)"
-msgstr "Trọng tải trung bình (15 phút)"
-
-#: ksgrd/SensorManager.cc:142
-msgid "Clock Frequency"
-msgstr "Tần số đồng hồ"
-
-#: ksgrd/SensorManager.cc:143
-msgid "Hardware Sensors"
-msgstr "Bộ nhạy phần cứng"
-
-#: ksgrd/SensorManager.cc:144
-msgid "Partition Usage"
-msgstr "Dùng phân vùng"
-
-#: ksgrd/SensorManager.cc:145
-msgid "Used Space"
-msgstr "Chỗ đã dùng"
-
-#: ksgrd/SensorManager.cc:146
-msgid "Free Space"
-msgstr "Chỗ còn rảnh"
-
-#: ksgrd/SensorManager.cc:147
-msgid "Fill Level"
-msgstr "Mức tô"
-
-#: ksgrd/SensorManager.cc:148
-msgid "System"
-msgstr "Hệ thống"
-
-#: ksgrd/SensorManager.cc:149
-msgid "Uptime"
-msgstr "Thời gian chạy"
-
-#: ksgrd/SensorManager.cc:150
-msgid "Linux Soft Raid (md)"
-msgstr "Linux Soft Raid (md)"
-
-#: ksgrd/SensorManager.cc:151
-#, fuzzy
-#| msgid "Process Count"
-msgid "Processors"
-msgstr "Số tiến trình"
-
-#: ksgrd/SensorManager.cc:152
-#, fuzzy
-#| msgid "Colors"
-msgid "Cores"
-msgstr "Màu sắc"
-
-#: ksgrd/SensorManager.cc:153
-#, fuzzy
-#| msgid "Number of displays:"
-msgid "Number of Blocks"
-msgstr "Số bộ trình bày:"
-
-#: ksgrd/SensorManager.cc:154
-#, fuzzy
-#| msgid "Total Number"
-msgid "Total Number of Devices"
-msgstr "Tổng số"
-
-#: ksgrd/SensorManager.cc:155
-msgid "Failed Devices"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:156
-msgid "Spare Devices"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:157
-#, fuzzy
-#| msgid "Number of displays:"
-msgid "Number of Raid Devices"
-msgstr "Số bộ trình bày:"
-
-#: ksgrd/SensorManager.cc:158
-msgid "Working Devices"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:159
-msgid "Active Devices"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:160
-#, fuzzy
-#| msgid "Number of displays:"
-msgid "Number of Devices"
-msgstr "Số bộ trình bày:"
-
-#: ksgrd/SensorManager.cc:161
-msgid "Resyncing Percent"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:162
-msgid "Disk Information"
-msgstr ""
-
-#: ksgrd/SensorManager.cc:165
-#, kde-format
-msgid "CPU %1"
-msgstr "CPU %1"
-
-#: ksgrd/SensorManager.cc:166
-#, kde-format
-msgid "Disk %1"
-msgstr "Đĩa %1"
-
-#: ksgrd/SensorManager.cc:170
-#, kde-format
-msgid "Fan %1"
-msgstr "Quạt %1"
-
-#: ksgrd/SensorManager.cc:171
-#, kde-format
-msgid "Temperature %1"
-msgstr "Nhiệt độ %1"
-
-#: ksgrd/SensorManager.cc:174
-msgid "Total"
-msgstr "Tổng"
-
-# Interrupts: Lần ngắt
-#: ksgrd/SensorManager.cc:179
-#, kde-format
-msgid "Int %1"
-msgstr "Ngắt %1"
-
-#
-#: ksgrd/SensorManager.cc:184
-msgctxt "the unit 1 per second"
-msgid "1/s"
-msgstr "1/giây"
-
-#: ksgrd/SensorManager.cc:185
-msgid "kBytes"
-msgstr "kByte"
-
-#: ksgrd/SensorManager.cc:186
-msgctxt "the unit minutes"
-msgid "min"
-msgstr "phút"
-
-#: ksgrd/SensorManager.cc:187
-msgctxt "the frequency unit"
-msgid "MHz"
-msgstr "MHz"
-
-#: ksgrd/SensorManager.cc:188
-msgctxt "a percentage"
-msgid "%"
-msgstr "%"
-
-#: ksgrd/SensorManager.cc:191
-msgid "Integer Value"
-msgstr "Giá trị số nguyên"
-
-#: ksgrd/SensorManager.cc:192
-msgid "Floating Point Value"
-msgstr "Giá trị số điểm phù động"
-
-#: ksgrd/SensorShellAgent.cc:126
-#, kde-format
-msgid "Could not run daemon program '%1'."
-msgstr ""
-
-#: ksgrd/SensorShellAgent.cc:133
-#, kde-format
-msgid "The daemon program '%1' failed."
-msgstr ""
-
-#: ksgrd/SensorSocketAgent.cc:103
-#, kde-format
-msgid "Connection to %1 refused"
-msgstr "Kết nối đến %1 bị từ chối."
-
-#: ksgrd/SensorSocketAgent.cc:107
-#, kde-format
-msgid "Host %1 not found"
-msgstr "Không tìm thấy máy %1"
-
-#: ksgrd/SensorSocketAgent.cc:111
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred with the network (e.g., the network cable was "
-#| "accidentally plugged out) for host %1"
-msgid ""
-"An error occurred with the network (e.g. the network cable was accidentally "
-"unplugged) for host %1."
-msgstr "Gặp lỗi mạng (v.d. cáp mạng bị tháo nút ra) cho máy %1."
-
-#: ksgrd/SensorSocketAgent.cc:115
-#, kde-format
-msgid "Error for host %1: %2"
-msgstr "Lỗi cho máy %1: %2"
-
-#: ksysguard.cc:74
-msgid "KDE System Monitor"
-msgstr "Bộ Theo dõi Hệ thống KDE"
-
-#: ksysguard.cc:154 ksysguard.cc:530
-msgid "System Monitor"
-msgstr "Bộ Theo dõi Hệ thống"
-
-#: ksysguard.cc:155
-msgid "&Refresh Tab"
-msgstr ""
-
-#: ksysguard.cc:156
-msgid "&New Tab..."
-msgstr ""
-
-#: ksysguard.cc:157
-msgid "Import Tab Fr&om File..."
-msgstr ""
-
-#: ksysguard.cc:158
-msgid "Save Tab &As..."
-msgstr ""
-
-#: ksysguard.cc:159
-msgid "&Close Tab"
-msgstr ""
-
-#: ksysguard.cc:160
-#, fuzzy
-#| msgid "Monitor remote machine..."
-msgid "Monitor &Remote Machine..."
-msgstr "Theo dõi máy từ xa..."
-
-#: ksysguard.cc:161
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "&Download New Tabs..."
-msgstr "Tờ làm &việc mới..."
-
-#: ksysguard.cc:162
-#, fuzzy
-#| msgid "&New Worksheet..."
-msgid "&Upload Current Tab..."
-msgstr "Tờ làm &việc mới..."
-
-#: ksysguard.cc:164
-#, fuzzy
-#| msgid "&Properties"
-msgid "Tab &Properties"
-msgstr "Tài &sản"
-
-#: ksysguard.cc:359
-#, fuzzy, kde-format
-#| msgid " %1 processes "
-msgid "1 process1"
-msgid_plural "%1 processes%1"
-msgstr[0] "%1 tiến trình"
-
-#: ksysguard.cc:443
-#, fuzzy, kde-format
-#| msgid " CPU: %1% "
-msgid "CPU: %1%%1%"
-msgstr " CPU: %1% "
-
-#: ksysguard.cc:458
-#, kde-format
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
-msgstr ""
-
-#: ksysguard.cc:485
-msgid " No swap space available "
-msgstr " Không có vùng trao đổi sẵn sàng "
-
-#: ksysguard.cc:487
-#, fuzzy, kde-format
-#| msgid " Swap: %1 / %2 "
-msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Swap: %1 / %2Swap: %1%1"
-msgstr " Trao đổi: %1 / %2 "
-
-#: ksysguard.cc:532
-#, fuzzy
-#| msgid "(c) 1996-2006 The KDE System Monitor Developers"
-msgid "(c) 1996-2008 The KDE System Monitor Developers"
-msgstr "© năm 1996-2006 của Những Nhà Phát triển Bộ Theo dõi Hệ thống"
-
-#: ksysguard.cc:533
-msgid "John Tapsell"
-msgstr ""
-
-#: ksysguard.cc:533
-msgid "Current Maintainer"
-msgstr ""
-
-#: ksysguard.cc:534
-msgid "Chris Schlaeger"
-msgstr ""
-
-#: ksysguard.cc:534
-msgid "Previous Maintainer"
-msgstr ""
-
-#: ksysguard.cc:535
-msgid "Greg Martyn"
-msgstr ""
-
-#: ksysguard.cc:536
-msgid "Tobias Koenig"
-msgstr ""
-
-#: ksysguard.cc:537
-msgid "Nicolas Leclercq"
-msgstr ""
-
-#: ksysguard.cc:538
-msgid "Alex Sanda"
-msgstr ""
-
-#: ksysguard.cc:539
-msgid "Bernd Johannes Wuebben"
-msgstr ""
-
-#: ksysguard.cc:540
-msgid "Ralf Mueller"
-msgstr ""
-
-#: ksysguard.cc:541
-msgid "Hamish Rodda"
-msgstr ""
-
-#: ksysguard.cc:542
-msgid "Torsten Kasch"
-msgstr ""
-
-#: ksysguard.cc:542
-msgid ""
-"Solaris Support\n"
-"Parts derived (by permission) from the sunos5\n"
-"module of William LeFebvre's \"top\" utility."
-msgstr ""
-"Cách hỗ trợ Solaris\n"
-"Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
-"của tiện ích « top » của William LeFebvre."
-
-#: ksysguard.cc:551
-msgid "Optional worksheet files to load"
-msgstr "Tập tin bảng làm việc tùy chọn cần tải"
-
-#: Workspace.cc:112
+#: Workspace.cpp:112
 #, kde-format
 msgid "Sheet %1"
 msgstr "Tờ %1"
 
-#: Workspace.cc:171
+#: Workspace.cpp:171
 #, fuzzy, kde-format
 #| msgid ""
 #| "The worksheet '%1' contains unsaved data.\n"
@@ -1515,33 +1592,33 @@ msgstr ""
 "Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
 "Bạn có muốn lưu tờ này không?"
 
-#: Workspace.cc:186
+#: Workspace.cpp:186
 #, fuzzy
 #| msgid "*.sgrd|Sensor Files"
 msgid "*.sgrd|Sensor Files (*.sgrd)"
 msgstr "*.sgrd|Tập tin bộ nhạy"
 
-#: Workspace.cc:186
+#: Workspace.cpp:186
 msgid "Select Tab File to Import"
 msgstr ""
 
-#: Workspace.cc:214 Workspace.cc:235
+#: Workspace.cpp:214 Workspace.cpp:235
 #, fuzzy
 #| msgid "You do not have a worksheet that could be saved."
 msgid "You do not have a tab that could be saved."
 msgstr "Bạn không có bảng làm việc có thể lưu."
 
-#: Workspace.cc:242
+#: Workspace.cpp:242
 msgid "Export Tab"
 msgstr ""
 
-#: Workspace.cc:260
+#: Workspace.cpp:260
 #, fuzzy
 #| msgid "There are no worksheets that could be deleted."
 msgid "There are no tabs that could be deleted."
 msgstr "Không có bảng làm việc có thể xoá bỏ."
 
-#: Workspace.cc:300
+#: Workspace.cpp:300
 #, kde-format
 msgid ""
 "<qt>To propose the current custom tab as a new System Monitor tab, email "
@@ -1550,11 +1627,161 @@ msgid ""
 "qt>"
 msgstr ""
 
-#: Workspace.cc:300
+#: Workspace.cpp:300
 #, fuzzy
 #| msgid "System Monitor"
 msgid "Upload custom System Monitor tab"
 msgstr "Bộ Theo dõi Hệ thống"
+
+#: ksysguard.cpp:74
+msgid "KDE System Monitor"
+msgstr "Bộ Theo dõi Hệ thống KDE"
+
+#: ksysguard.cpp:154 ksysguard.cpp:530
+msgid "System Monitor"
+msgstr "Bộ Theo dõi Hệ thống"
+
+#: ksysguard.cpp:155
+msgid "&Refresh Tab"
+msgstr ""
+
+#: ksysguard.cpp:156
+msgid "&New Tab..."
+msgstr ""
+
+#: ksysguard.cpp:157
+msgid "Import Tab Fr&om File..."
+msgstr ""
+
+#: ksysguard.cpp:158
+msgid "Save Tab &As..."
+msgstr ""
+
+#: ksysguard.cpp:159
+msgid "&Close Tab"
+msgstr ""
+
+#: ksysguard.cpp:160
+#, fuzzy
+#| msgid "Monitor remote machine..."
+msgid "Monitor &Remote Machine..."
+msgstr "Theo dõi máy từ xa..."
+
+#: ksysguard.cpp:161
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Download New Tabs..."
+msgstr "Tờ làm &việc mới..."
+
+#: ksysguard.cpp:162
+#, fuzzy
+#| msgid "&New Worksheet..."
+msgid "&Upload Current Tab..."
+msgstr "Tờ làm &việc mới..."
+
+#: ksysguard.cpp:164
+#, fuzzy
+#| msgid "&Properties"
+msgid "Tab &Properties"
+msgstr "Tài &sản"
+
+#: ksysguard.cpp:359
+#, fuzzy, kde-format
+#| msgid " %1 processes "
+msgid "1 process1"
+msgid_plural "%1 processes%1"
+msgstr[0] "%1 tiến trình"
+
+#: ksysguard.cpp:443
+#, fuzzy, kde-format
+#| msgid " CPU: %1% "
+msgid "CPU: %1%%1%"
+msgstr " CPU: %1% "
+
+#: ksysguard.cpp:458
+#, kde-format
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
+msgstr ""
+
+#: ksysguard.cpp:485
+msgid " No swap space available "
+msgstr " Không có vùng trao đổi sẵn sàng "
+
+#: ksysguard.cpp:487
+#, fuzzy, kde-format
+#| msgid " Swap: %1 / %2 "
+msgctxt "Arguments are formatted byte sizes (used/total)"
+msgid "Swap: %1 / %2Swap: %1%1"
+msgstr " Trao đổi: %1 / %2 "
+
+#: ksysguard.cpp:532
+#, fuzzy
+#| msgid "(c) 1996-2006 The KDE System Monitor Developers"
+msgid "(c) 1996-2008 The KDE System Monitor Developers"
+msgstr "© năm 1996-2006 của Những Nhà Phát triển Bộ Theo dõi Hệ thống"
+
+#: ksysguard.cpp:533
+msgid "John Tapsell"
+msgstr ""
+
+#: ksysguard.cpp:533
+msgid "Current Maintainer"
+msgstr ""
+
+#: ksysguard.cpp:534
+msgid "Chris Schlaeger"
+msgstr ""
+
+#: ksysguard.cpp:534
+msgid "Previous Maintainer"
+msgstr ""
+
+#: ksysguard.cpp:535
+msgid "Greg Martyn"
+msgstr ""
+
+#: ksysguard.cpp:536
+msgid "Tobias Koenig"
+msgstr ""
+
+#: ksysguard.cpp:537
+msgid "Nicolas Leclercq"
+msgstr ""
+
+#: ksysguard.cpp:538
+msgid "Alex Sanda"
+msgstr ""
+
+#: ksysguard.cpp:539
+msgid "Bernd Johannes Wuebben"
+msgstr ""
+
+#: ksysguard.cpp:540
+msgid "Ralf Mueller"
+msgstr ""
+
+#: ksysguard.cpp:541
+msgid "Hamish Rodda"
+msgstr ""
+
+#: ksysguard.cpp:542
+msgid "Torsten Kasch"
+msgstr ""
+
+#: ksysguard.cpp:542
+msgid ""
+"Solaris Support\n"
+"Parts derived (by permission) from the sunos5\n"
+"module of William LeFebvre's \"top\" utility."
+msgstr ""
+"Cách hỗ trợ Solaris\n"
+"Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
+"của tiện ích « top » của William LeFebvre."
+
+#: ksysguard.cpp:551
+msgid "Optional worksheet files to load"
+msgstr "Tập tin bảng làm việc tùy chọn cần tải"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -1768,12 +1995,6 @@ msgstr "Mạng"
 #~ msgstr[0] " giây"
 
 #, fuzzy
-#~| msgctxt "a percentage"
-#~| msgid "%"
-#~ msgid "%1"
-#~ msgstr "%"
-
-#, fuzzy
 #~| msgid " Memory: %1 / %2 "
 #~ msgctxt "Arguments are formatted byte sizes (used/total)"
 #~ msgid " Memory: %1 / %2 "
@@ -1932,9 +2153,6 @@ msgstr "Mạng"
 #~| msgid "Sensor Logger"
 #~ msgid "Sensor Load"
 #~ msgstr "Bộ ghi lưu dữ liệu nhạy"
-
-#~ msgid "Loading Processes Count.."
-#~ msgstr "Đang nạp số đếm các tiến trình."
 
 #~ msgid "Loading CPU Stat.."
 #~ msgstr "Đang nạp thống kê bộ xử lý trung tâm."

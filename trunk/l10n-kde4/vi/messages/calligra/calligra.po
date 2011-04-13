@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-12 03:43+0200\n"
+"POT-Creation-Date: 2011-04-13 03:25+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -684,7 +684,7 @@ msgstr "Xác nhận Lưu"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:43
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:39
 msgid "Misc"
 msgstr ""
 
@@ -938,7 +938,7 @@ msgstr "Tự chọn"
 #: kopageapp/KoPADocumentStructureDocker.cpp:641
 #: koreport/wrtembed/KoReportDesigner.cpp:833
 #: pigment/compositeops/KoCompositeOpCopy.h:37
-#: pigment/compositeops/KoCompositeOpCopy2.h:52
+#: pigment/compositeops/KoCompositeOpCopy2.h:42
 #, fuzzy
 msgid "Copy"
 msgstr "Công ti:"
@@ -3371,35 +3371,19 @@ msgstr "16 Bit dấu phẩy động (HDR)"
 msgid "32 Bits Float"
 msgstr "32 Bit dấu phẩy động (HDR)"
 
-#: pigment/KoCompositeOp.cpp:27
-msgid "Mix"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:31
-#, fuzzy
-#| msgid "Lighten"
-msgid "Light"
-msgstr "Làm sáng"
-
-#: pigment/KoCompositeOp.cpp:35
-msgid "Arithmetic"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:39
-msgid "Color"
-msgstr "Màu"
-
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:48
 msgid "Clear"
 msgstr ""
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:121
 #: pigment/compositeops/KoCompositeOpSubtract.h:37
+#: pigment/compositeops/KoCompositeOps.h:87
 msgid "Subtract"
 msgstr "Trừ"
 
 #: pigment/colorspaces/KoAlphaColorSpace.cpp:193
 #: pigment/compositeops/KoCompositeOpMultiply.h:35
+#: pigment/compositeops/KoCompositeOps.h:88
 msgid "Multiply"
 msgstr ""
 
@@ -3426,7 +3410,7 @@ msgid "L*a*b* (16-bit integer/channel, unmanaged)"
 msgstr "L*a*b* (số nguyên 16-bit/channel)"
 
 #: pigment/colorspaces/KoLabColorSpace.cpp:42
-#: widgets/KoUniColorChooser.cpp:201
+#: pigment/compositeops/KoCompositeOps.h:152 widgets/KoUniColorChooser.cpp:201
 msgid "Lightness"
 msgstr ""
 
@@ -3486,6 +3470,7 @@ msgid "Alpha darken"
 msgstr "Alpha"
 
 #: pigment/compositeops/KoCompositeOpDivide.h:36
+#: pigment/compositeops/KoCompositeOps.h:89
 msgid "Divide"
 msgstr ""
 
@@ -3514,11 +3499,13 @@ msgid "Normal"
 msgstr "Bình thường"
 
 #: pigment/compositeops/KoCompositeOpOverlay.h:36
+#: pigment/compositeops/KoCompositeOps.h:62
 #, fuzzy
 msgid "Overlay"
 msgstr "Thêm mục lục dưới"
 
 #: pigment/compositeops/KoCompositeOpScreen.h:36
+#: pigment/compositeops/KoCompositeOps.h:70
 msgid "Screen"
 msgstr "Màn hình"
 
@@ -3538,8 +3525,338 @@ msgstr ""
 msgid "Copy Opacy"
 msgstr "Alpha"
 
+#: pigment/compositeops/KoCompositeOpDissolve.h:61
+msgid "Dissolve"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:63
+msgid "Grain Merge"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:64
+msgid "Grain Extract"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:65
+#, fuzzy
+msgid "Hard Mix"
+msgstr "Chiều cao:"
+
+#: pigment/compositeops/KoCompositeOps.h:66
+msgid "Geometric Mean"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:67
+#, fuzzy
+#| msgid "Variable"
+msgid "Parallel"
+msgstr "Biến số"
+
+#: pigment/compositeops/KoCompositeOps.h:68
+msgid "Allanon"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:71
+#, fuzzy
+#| msgid "Color Chooser"
+msgid "Color Dodge"
+msgstr "Chọn Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:72
+#, fuzzy
+#| msgid "Line Border"
+msgid "Linear Dodge"
+msgstr "Viền Đường thẳng"
+
+#: pigment/compositeops/KoCompositeOps.h:73 pigment/KoCompositeOp.cpp:32
+msgid "Lighten"
+msgstr "Làm sáng"
+
+#: pigment/compositeops/KoCompositeOps.h:74
+#, fuzzy
+msgid "Hard Light"
+msgstr "Chiều cao:"
+
+#: pigment/compositeops/KoCompositeOps.h:75
+#, fuzzy
+#| msgid "Straight"
+msgid "Soft Light"
+msgstr "Thẳng"
+
+#: pigment/compositeops/KoCompositeOps.h:76
+#, fuzzy
+#| msgid "Lighten"
+msgid "Gamma Light"
+msgstr "Làm sáng"
+
+#: pigment/compositeops/KoCompositeOps.h:77
+#, fuzzy
+#| msgid "Lighten"
+msgid "Vivid Light"
+msgstr "Làm sáng"
+
+#: pigment/compositeops/KoCompositeOps.h:78
+#, fuzzy
+#| msgid "Lighten"
+msgid "Pin Light"
+msgstr "Làm sáng"
+
+#: pigment/compositeops/KoCompositeOps.h:79
+#, fuzzy
+msgid "Linear Light"
+msgstr "Bề rộng:"
+
+#: pigment/compositeops/KoCompositeOps.h:81
+#, fuzzy
+#| msgid "Color"
+msgid "Color Burn"
+msgstr "Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:82
+#, fuzzy
+#| msgid "Line Border"
+msgid "Linear Burn"
+msgstr "Viền Đường thẳng"
+
+#: pigment/compositeops/KoCompositeOps.h:83 pigment/KoCompositeOp.cpp:33
+msgid "Darken"
+msgstr "Làm tối"
+
+#: pigment/compositeops/KoCompositeOps.h:84
+msgid "Gamma Dark"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:86
+#, fuzzy
+msgid "Addition"
+msgstr "Thêm phân số"
+
+#: pigment/compositeops/KoCompositeOps.h:91
+msgid "Arcus Tangent"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:92
+msgid "Difference"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:93
+msgid "Exclusion"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:94
+msgid "Equivalence"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:95
+#, fuzzy
+#| msgid "Subtract"
+msgid "Additive-Substractive"
+msgstr "Trừ"
+
+#: pigment/compositeops/KoCompositeOps.h:100
+#, fuzzy
+#| msgid "Alpha"
+msgid "Copy Alpha"
+msgstr "Alpha"
+
+#: pigment/compositeops/KoCompositeOps.h:125
+#, fuzzy
+#| msgid "Copy Page"
+msgid "Copy Red"
+msgstr "Chép Trang"
+
+#: pigment/compositeops/KoCompositeOps.h:126
+#, fuzzy
+#| msgid "Green"
+msgid "Copy Green"
+msgstr "Xanh lá cây"
+
+#: pigment/compositeops/KoCompositeOps.h:127
+#, fuzzy
+#| msgid "Copy Page"
+msgid "Copy Blue"
+msgstr "Chép Trang"
+
+#: pigment/compositeops/KoCompositeOps.h:129 pigment/KoCompositeOp.cpp:27
+msgid "Color"
+msgstr "Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:130 widgets/KoUniColorChooser.cpp:116
+msgid "Hue"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:131 widgets/KoUniColorChooser.cpp:125
+msgid "Saturation"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:132
+#, fuzzy
+#| msgid "Subtract"
+msgid "Increase Saturation"
+msgstr "Trừ"
+
+#: pigment/compositeops/KoCompositeOps.h:133
+#, fuzzy
+msgid "Decrease Saturation"
+msgstr ""
+"\n"
+" Định hướng:"
+
+#: pigment/compositeops/KoCompositeOps.h:134
+msgid "Luminosity"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:135
+#, fuzzy
+#| msgid "Increase font size"
+msgid "Increase Luminosity"
+msgstr "Tăng cỡ chữ"
+
+#: pigment/compositeops/KoCompositeOps.h:136
+#, fuzzy
+#| msgid "Decrease font size"
+msgid "Decrease Luminosity"
+msgstr "Giảm cỡ chữ"
+
+#: pigment/compositeops/KoCompositeOps.h:138
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSI"
+msgstr "Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:139
+msgid "Hue HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:140
+msgid "Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:141
+msgid "Increase Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:142
+msgid "Decrease Saturation HSI"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:143
+#, fuzzy
+msgid "Intensity"
+msgstr "Nhập tên"
+
+#: pigment/compositeops/KoCompositeOps.h:144
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Intensity"
+msgstr "Thụt vào"
+
+#: pigment/compositeops/KoCompositeOps.h:145
+#, fuzzy
+msgid "Decrease Intensity"
+msgstr "Lùi ra"
+
+#: pigment/compositeops/KoCompositeOps.h:147
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSL"
+msgstr "Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:148
+msgid "Hue HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:149
+msgid "Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:150
+msgid "Increase Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:151
+msgid "Decrease Saturation HSL"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:153
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Lightness"
+msgstr "Thụt vào"
+
+#: pigment/compositeops/KoCompositeOps.h:154
+#, fuzzy
+msgid "Decrease Lightness"
+msgstr "Lùi ra"
+
+#: pigment/compositeops/KoCompositeOps.h:156
+#, fuzzy
+#| msgid "Color"
+msgid "Color HSV"
+msgstr "Màu"
+
+#: pigment/compositeops/KoCompositeOps.h:157
+msgid "Hue HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:158
+msgid "Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:159
+msgid "Increase Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:160
+msgid "Decrease Saturation HSV"
+msgstr ""
+
+#: pigment/compositeops/KoCompositeOps.h:161
+msgid "Value"
+msgstr "Giá trị"
+
+#: pigment/compositeops/KoCompositeOps.h:162
+#, fuzzy
+#| msgid "Increase Indent"
+msgid "Increase Value"
+msgstr "Thụt vào"
+
+#: pigment/compositeops/KoCompositeOps.h:163
+#, fuzzy
+msgid "Decrease Value"
+msgstr "Lùi ra"
+
 #: pigment/resources/KoStopGradient.cpp:421
 msgid "SVG Gradient"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:30
+msgid "Arithmetic"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:31
+#, fuzzy
+msgid "Negative"
+msgstr "Thay thế bằng"
+
+#: pigment/KoCompositeOp.cpp:34
+msgid "HSY"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:35
+msgid "HSI"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:36
+msgid "HSL"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:37
+msgid "HSV"
+msgstr ""
+
+#: pigment/KoCompositeOp.cpp:38
+msgid "Mix"
 msgstr ""
 
 #: widgets/KoColorSetWidget.cpp:189
@@ -3710,14 +4027,6 @@ msgstr "Hình"
 #| msgid "Choose Filter"
 msgid "Choose File to Add"
 msgstr "Chọn bộ lọc"
-
-#: widgets/KoUniColorChooser.cpp:116
-msgid "Hue"
-msgstr ""
-
-#: widgets/KoUniColorChooser.cpp:125
-msgid "Saturation"
-msgstr ""
 
 #: widgets/KoUniColorChooser.cpp:134
 msgid "Value (brightness)"
@@ -4920,6 +5229,11 @@ msgstr "&Màu:"
 msgid "Blur radius:"
 msgstr ""
 
+#, fuzzy
+#~| msgid "Lighten"
+#~ msgid "Light"
+#~ msgstr "Làm sáng"
+
 #~ msgid "Write PDF"
 #~ msgstr "Ghi PDF"
 
@@ -4932,93 +5246,6 @@ msgstr ""
 #~| msgid "Stop"
 #~ msgid "Atop"
 #~ msgstr "Dừng"
-
-#, fuzzy
-#~ msgid "Hard Mix"
-#~ msgstr "Chiều cao:"
-
-#, fuzzy
-#~| msgid "Color"
-#~ msgid "Color Burn"
-#~ msgstr "Màu"
-
-#, fuzzy
-#~| msgid "Color Chooser"
-#~ msgid "Color Dodge"
-#~ msgstr "Chọn Màu"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgid "Linear Burn"
-#~ msgstr "Viền Đường thẳng"
-
-#, fuzzy
-#~| msgid "Line Border"
-#~ msgid "Linear Dodge"
-#~ msgstr "Viền Đường thẳng"
-
-#~ msgid "Darken"
-#~ msgstr "Làm tối"
-
-#~ msgid "Lighten"
-#~ msgstr "Làm sáng"
-
-#, fuzzy
-#~ msgid "Hard Light"
-#~ msgstr "Chiều cao:"
-
-#, fuzzy
-#~| msgid "Straight"
-#~ msgid "Soft Light"
-#~ msgstr "Thẳng"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Gamma Light"
-#~ msgstr "Làm sáng"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Vivid Light"
-#~ msgstr "Làm sáng"
-
-#, fuzzy
-#~| msgid "Lighten"
-#~ msgid "Pin Light"
-#~ msgstr "Làm sáng"
-
-#, fuzzy
-#~ msgid "Linear Light"
-#~ msgstr "Bề rộng:"
-
-#, fuzzy
-#~ msgid "Addition"
-#~ msgstr "Thêm phân số"
-
-#, fuzzy
-#~| msgid "Variable"
-#~ msgid "Parallel"
-#~ msgstr "Biến số"
-
-#, fuzzy
-#~| msgid "Subtract"
-#~ msgid "Additive-Substractive"
-#~ msgstr "Trừ"
-
-#, fuzzy
-#~| msgid "Copy Page"
-#~ msgid "Copy Red"
-#~ msgstr "Chép Trang"
-
-#, fuzzy
-#~| msgid "Green"
-#~ msgid "Copy Green"
-#~ msgstr "Xanh lá cây"
-
-#, fuzzy
-#~| msgid "Copy Page"
-#~ msgid "Copy Blue"
-#~ msgstr "Chép Trang"
 
 #, fuzzy
 #~ msgid "Spread out:"
@@ -5148,9 +5375,6 @@ msgstr ""
 #~| msgid "&Background color:"
 #~ msgid "Background tool"
 #~ msgstr "Màu &nền:"
-
-#~ msgid "Value"
-#~ msgstr "Giá trị"
 
 #, fuzzy
 #~ msgid "Out"
@@ -5801,10 +6025,6 @@ msgstr ""
 #~ msgstr "Chèn pattern"
 
 #, fuzzy
-#~ msgid "Internet"
-#~ msgstr "Nhập tên"
-
-#, fuzzy
 #~ msgid "Text to display:"
 #~ msgstr "&Text sẽ tìm"
 
@@ -5878,12 +6098,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "New Style Template (%1)"
 #~ msgstr "Tạo mẫu"
-
-#, fuzzy
-#~ msgid "Decoration"
-#~ msgstr ""
-#~ "\n"
-#~ " Định hướng:"
 
 #, fuzzy
 #~ msgid "Highlighting"
@@ -6313,10 +6527,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Font style"
 #~ msgstr "Nhập trình lọc thất bại"
-
-#, fuzzy
-#~ msgid "Relative"
-#~ msgstr "Thay thế bằng"
 
 #, fuzzy
 #~ msgid "Actual Font"

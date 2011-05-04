@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-04-29 03:33+0200\n"
+"POT-Creation-Date: 2011-05-04 03:30+0200\n"
 "PO-Revision-Date: 2008-01-24 15:51+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -192,8 +192,15 @@ msgstr "Chiều rộng (%)"
 msgid "Slide Title"
 msgstr "Tiêu đề Ảnh chiếu"
 
-#: kpresenter/pptx/PptxXmlSlideReader.cpp:305
+#: kpresenter/pptx/PptxImport.cpp:1100 tables/xlsx/XlsxImport.cpp:571
+#: words/docx/DocxImport.cpp:179
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Unable to find part for type %1"
+msgstr "Không thể đọc từ tập tin."
+
 #: kpresenter/pptx/PptxXmlDocumentReader.cpp:153
+#: kpresenter/pptx/PptxXmlSlideReader.cpp:305
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlThemesReader.cpp:356 libmsooxml/MsooXmlReader.cpp:184
 #: tables/xlsx/XlsxXmlStylesReader.cpp:453
@@ -215,22 +222,15 @@ msgstr "Tiêu đề Ảnh chiếu"
 msgid "Namespace \"%1\" not found"
 msgstr ""
 
-#: kpresenter/pptx/PptxXmlSlideReader.cpp:550
-#, fuzzy, kde-format
-msgid "Slide %1"
-msgstr "Tiêu đề Ảnh chiếu"
-
-#: kpresenter/pptx/PptxImport.cpp:1100 tables/xlsx/XlsxImport.cpp:571
-#: words/docx/DocxImport.cpp:179
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Unable to find part for type %1"
-msgstr "Không thể đọc từ tập tin."
-
 #: kpresenter/pptx/PptxXmlDocumentReader.cpp:269
 #, fuzzy, kde-format
 msgid "Slide layout \"%1\" not found"
 msgstr "Ghi chú cuối %1"
+
+#: kpresenter/pptx/PptxXmlSlideReader.cpp:550
+#, fuzzy, kde-format
+msgid "Slide %1"
+msgstr "Tiêu đề Ảnh chiếu"
 
 #: libdialogfilter/exportsizedia.cpp:42
 msgid "Export Filter Parameters"
@@ -283,14 +283,14 @@ msgstr ""
 msgid "Entry '%1' is not a file."
 msgstr ""
 
-#: libmsooxml/MsooXmlUtils.cpp:309 libmsooxml/MsooXmlUtils.cpp:353
-#: libmsooxml/MsooXmlUtils.cpp:396
+#: libmsooxml/MsooXmlUtils.cpp:313 libmsooxml/MsooXmlUtils.cpp:357
+#: libmsooxml/MsooXmlUtils.cpp:400
 #, kde-format
 msgid "Could not open entry \"%1\" for writing."
 msgstr ""
 
-#: libmsooxml/MsooXmlUtils.cpp:323 libmsooxml/MsooXmlUtils.cpp:363
-#: libmsooxml/MsooXmlUtils.cpp:407
+#: libmsooxml/MsooXmlUtils.cpp:327 libmsooxml/MsooXmlUtils.cpp:367
+#: libmsooxml/MsooXmlUtils.cpp:411
 #, fuzzy
 #| msgid "Could not read from file."
 msgid "Could not write block"

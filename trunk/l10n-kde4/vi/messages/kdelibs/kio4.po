@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-04 04:04+0200\n"
+"POT-Creation-Date: 2011-05-05 04:04+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -3434,7 +3434,7 @@ msgstr ""
 msgid "The server was too busy responding to other requests to respond."
 msgstr "Máy phục vụ đang đáp ứng các yêu cầu khác nên quá bận để đáp ứng."
 
-#: kio/global.cpp:1094 kio/slavebase.cpp:1300
+#: kio/global.cpp:1094 kio/slavebase.cpp:1302
 msgid "Unknown Error"
 msgstr "Lỗi không rõ"
 
@@ -4769,9 +4769,75 @@ msgstr "Chứng nhận này không thích đáng."
 msgid "The certificate is invalid."
 msgstr "Chứng nhận không hợp lệ."
 
-#: kssl/ksslinfodialog.cpp:73 kssl/ksslkeygen.cpp:125
+#: kssl/ksslkeygen.cpp:83
+msgid "KDE Certificate Request"
+msgstr "Yêu cầu chứng nhận KDE"
+
+#: kssl/ksslkeygen.cpp:90
+msgid "KDE Certificate Request - Password"
+msgstr "Yêu cầu chứng nhận KDE — mật khẩu"
+
+#: kssl/ksslkeygen.cpp:125
+msgid "Unsupported key size."
+msgstr "Kích cỡ khoá không được hỗ trợ."
+
+#: kssl/ksslkeygen.cpp:125 kssl/ksslinfodialog.cpp:73
 msgid "KDE SSL Information"
 msgstr "Thông tin SSL KDE"
+
+#: kssl/ksslkeygen.cpp:131
+msgid "KDE"
+msgstr "KDE"
+
+#: kssl/ksslkeygen.cpp:132
+msgid "Please wait while the encryption keys are generated..."
+msgstr "Vui lòng đời trong khi tạo ra các khoá mật mã..."
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do you wish to store the passphrase in your wallet file?"
+msgstr "Bạn có muốn lưu cụm từ mật khẩu vào tập tin ví mình không?"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Store"
+msgstr "Lưu"
+
+#: kssl/ksslkeygen.cpp:145
+msgid "Do Not Store"
+msgstr "Không lưu"
+
+#: kssl/ksslkeygen.cpp:261
+msgid "2048 (High Grade)"
+msgstr "2048 (mạnh nhất)"
+
+#: kssl/ksslkeygen.cpp:262
+msgid "1024 (Medium Grade)"
+msgstr "1024 (mạnh)"
+
+#: kssl/ksslkeygen.cpp:263
+msgid "768  (Low Grade)"
+msgstr "768 (yếu)"
+
+#: kssl/ksslkeygen.cpp:264
+msgid "512  (Low Grade)"
+msgstr "512 (yếu nhất)"
+
+#: kssl/ksslkeygen.cpp:266
+msgid "No SSL support."
+msgstr "Không có hỗ trợ SSL."
+
+#: kssl/ksslpemcallback.cpp:37
+msgid "Certificate password"
+msgstr "Mật khẩu chứng nhận"
+
+#: kssl/ksslutils.cpp:78
+msgid "GMT"
+msgstr "UTC"
+
+#: kssl/sslui.cpp:52
+msgid ""
+"The remote host did not send any SSL certificates.\n"
+"Aborting because the identity of the host cannot be established."
+msgstr ""
 
 #: kssl/ksslinfodialog.cpp:81
 #, fuzzy
@@ -4842,72 +4908,6 @@ msgstr ""
 #: kssl/ksslinfodialog.cpp:221
 msgctxt "The certificate is trusted"
 msgid "Yes"
-msgstr ""
-
-#: kssl/ksslkeygen.cpp:83
-msgid "KDE Certificate Request"
-msgstr "Yêu cầu chứng nhận KDE"
-
-#: kssl/ksslkeygen.cpp:90
-msgid "KDE Certificate Request - Password"
-msgstr "Yêu cầu chứng nhận KDE — mật khẩu"
-
-#: kssl/ksslkeygen.cpp:125
-msgid "Unsupported key size."
-msgstr "Kích cỡ khoá không được hỗ trợ."
-
-#: kssl/ksslkeygen.cpp:131
-msgid "KDE"
-msgstr "KDE"
-
-#: kssl/ksslkeygen.cpp:132
-msgid "Please wait while the encryption keys are generated..."
-msgstr "Vui lòng đời trong khi tạo ra các khoá mật mã..."
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do you wish to store the passphrase in your wallet file?"
-msgstr "Bạn có muốn lưu cụm từ mật khẩu vào tập tin ví mình không?"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Store"
-msgstr "Lưu"
-
-#: kssl/ksslkeygen.cpp:145
-msgid "Do Not Store"
-msgstr "Không lưu"
-
-#: kssl/ksslkeygen.cpp:261
-msgid "2048 (High Grade)"
-msgstr "2048 (mạnh nhất)"
-
-#: kssl/ksslkeygen.cpp:262
-msgid "1024 (Medium Grade)"
-msgstr "1024 (mạnh)"
-
-#: kssl/ksslkeygen.cpp:263
-msgid "768  (Low Grade)"
-msgstr "768 (yếu)"
-
-#: kssl/ksslkeygen.cpp:264
-msgid "512  (Low Grade)"
-msgstr "512 (yếu nhất)"
-
-#: kssl/ksslkeygen.cpp:266
-msgid "No SSL support."
-msgstr "Không có hỗ trợ SSL."
-
-#: kssl/ksslpemcallback.cpp:37
-msgid "Certificate password"
-msgstr "Mật khẩu chứng nhận"
-
-#: kssl/ksslutils.cpp:78
-msgid "GMT"
-msgstr "UTC"
-
-#: kssl/sslui.cpp:52
-msgid ""
-"The remote host did not send any SSL certificates.\n"
-"Aborting because the identity of the host cannot be established."
 msgstr ""
 
 #: misc/kmailservice.cpp:30

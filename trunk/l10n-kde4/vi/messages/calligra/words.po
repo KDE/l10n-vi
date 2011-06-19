@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-12 03:39+0200\n"
+"POT-Creation-Date: 2011-06-19 03:43+0200\n"
 "PO-Revision-Date: 2008-01-19 20:08+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -691,35 +691,6 @@ msgstr "Kết quả Kiểm tra Chính tả "
 msgid "Change Variable To"
 msgstr "Đổi Biến số Thành"
 
-#: part/KWDLoader.cpp:74
-#, fuzzy
-msgid "Invalid document. No mimetype specified."
-msgstr "Tài liệu không hợp lệ. Không có loại tài liệu nào được chỉ định."
-
-#: part/KWDLoader.cpp:78
-#, fuzzy, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-"Tài liệu không hợp lệ. Chờ loại application/x-kword hoặc application/vnd.kde."
-"kword, nhận được %1"
-
-#: part/KWDLoader.cpp:104
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Tài liệu không hợp lệ. Cỡ giấy: %1x%2"
-
-#: part/KWDLoader.cpp:691
-#, fuzzy
-msgid "Unable to locate footnote text"
-msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
-
-#: part/KWDLoader.cpp:717
-#, fuzzy
-msgid "Unable to locate note-text"
-msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
-
 #: part/KWDocument.cpp:487
 msgid "Copy"
 msgstr "Chép"
@@ -842,14 +813,14 @@ msgstr "Xóa Khung"
 msgid "Insert Page Style"
 msgstr "Chèn Trang"
 
-#: part/commands/KWPageRemoveCommand.cpp:35
-msgid "Remove Page"
-msgstr "Bỏ Trang"
-
 #: part/commands/KWChangePageStyleCommand.cpp:27
 #, fuzzy
 msgid "Set Page Style"
 msgstr "&Khung"
+
+#: part/commands/KWPageRemoveCommand.cpp:35
+msgid "Remove Page"
+msgstr "Bỏ Trang"
 
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 msgid "Page Properties"
@@ -908,11 +879,6 @@ msgstr "bộ khung"
 msgid "No framesets in document"
 msgstr "Không có bộ khung nào trong tài liệu"
 
-#: part/dialogs/KWStatistics.cpp:246
-#, kde-format
-msgid "approximately %1"
-msgstr "khoảng %1"
-
 #: part/dialogs/KWPageSettingsDialog.cpp:53
 #, fuzzy
 msgid "Style"
@@ -941,6 +907,11 @@ msgstr "&Khung"
 #: part/dialogs/KWPageSettingsDialog.cpp:209
 msgid "Add a new page style with the name:"
 msgstr ""
+
+#: part/dialogs/KWStatistics.cpp:246
+#, kde-format
+msgid "approximately %1"
+msgstr "khoảng %1"
 
 #: part/dockers/KWRdfDocker.cpp:52
 msgid "RDF"
@@ -1190,31 +1161,64 @@ msgstr "Xám trên và dưới"
 msgid "Tools"
 msgstr "Cô&ng cụ"
 
-#: part/KWord.cpp:58
+#: part/main.cpp:36
+msgid "File to open"
+msgstr "Tập tin để mở"
+
+#: part/Words.cpp:58
 msgid "Odd Pages Header"
 msgstr ""
 
-#: part/KWord.cpp:60
+#: part/Words.cpp:60
 msgid "Even Pages Header"
 msgstr ""
 
-#: part/KWord.cpp:62
+#: part/Words.cpp:62
 msgid "Odd Pages Footer"
 msgstr ""
 
-#: part/KWord.cpp:64
+#: part/Words.cpp:64
 msgid "Even Pages Footer"
 msgstr ""
 
-#: part/KWord.cpp:66
+#: part/Words.cpp:66
 msgid "Main text"
 msgstr "Văn bản chính"
 
-#: part/KWord.cpp:68
+#: part/Words.cpp:68
 #, fuzzy
 #| msgid "Other Pages"
 msgid "Other text"
 msgstr "Các trang Khác"
+
+#: part/KWDLoader.cpp:74
+#, fuzzy
+msgid "Invalid document. No mimetype specified."
+msgstr "Tài liệu không hợp lệ. Không có loại tài liệu nào được chỉ định."
+
+#: part/KWDLoader.cpp:78
+#, fuzzy, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-words or application/vnd."
+"kde.words, got %1"
+msgstr ""
+"Tài liệu không hợp lệ. Chờ loại application/x-kword hoặc application/vnd.kde."
+"kword, nhận được %1"
+
+#: part/KWDLoader.cpp:104
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Tài liệu không hợp lệ. Cỡ giấy: %1x%2"
+
+#: part/KWDLoader.cpp:691
+#, fuzzy
+msgid "Unable to locate footnote text"
+msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
+
+#: part/KWDLoader.cpp:717
+#, fuzzy
+msgid "Unable to locate note-text"
+msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
 
 #: part/KWView.cpp:260
 msgid "Frame/Frameset Properties"
@@ -1632,10 +1636,6 @@ msgid ""
 msgstr ""
 "Đây không phải là tài liệu văn bản, mà là %1. Hãy thử mở nó với ứng dụng phù "
 "hợp."
-
-#: part/main.cpp:36
-msgid "File to open"
-msgstr "Tập tin để mở"
 
 #: part/KWAboutData.h:27
 #, fuzzy

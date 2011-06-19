@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-18 04:34+0200\n"
+"POT-Creation-Date: 2011-06-19 04:29+0200\n"
 "PO-Revision-Date: 2008-01-19 20:08+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -872,42 +872,6 @@ msgstr "Tomasz Grobelny"
 msgid "Michael Johnson"
 msgstr "Michael Johnson"
 
-#: part/KWDocument.cpp:452
-msgid "Copy"
-msgstr "Chép"
-
-#: part/KWDocument.cpp:541
-#, fuzzy
-msgid "Head 1"
-msgstr "Tiêu đề 1"
-
-#: part/KWDocument.cpp:548
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Tiêu đề 2"
-
-#: part/KWDocument.cpp:555
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Tiêu đề 3"
-
-#: part/KWDocument.cpp:562
-#, fuzzy
-msgid "Bullet List"
-msgstr "Danh sách không được xếp thứ tự"
-
-#: part/KWDocument.cpp:896
-msgid "Can not find needed text component, KWord will quit now"
-msgstr "Không thể tìm thấy thành phần văn bản cần thiết, KWord sẽ thoát ngay"
-
-#: part/KWDocument.cpp:897
-msgid "Installation Error"
-msgstr "Lỗi Cài đặt"
-
 #: part/KWDLoader.cpp:75
 #, fuzzy
 msgid "Invalid document. No mimetype specified."
@@ -937,30 +901,6 @@ msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
 msgid "Unable to locate note-text"
 msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
 
-#: part/KWOdfLoader.cpp:86
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgid "Invalid OpenDocument file. No office:body tag found."
-msgstr ""
-"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử office:body."
-
-#: part/KWOdfLoader.cpp:98
-#, fuzzy
-#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgid "Invalid OpenDocument file. No tag found inside office:body."
-msgstr ""
-"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử nào bên trong "
-"office:body."
-
-#: part/KWOdfLoader.cpp:100
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-"Đây không phải là tài liệu văn bản, mà là %1. Hãy thử mở nó với ứng dụng phù "
-"hợp."
-
 #: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
 #| msgid "Insert Page"
@@ -971,11 +911,6 @@ msgstr "Chèn Trang"
 #, fuzzy
 msgid "Set Page Style"
 msgstr "&Khung"
-
-#: part/commands/KWClipFrameCommand.cpp:40
-#, fuzzy
-msgid "Clip Frame"
-msgstr "Xoá(delete)"
 
 #: part/commands/KWCreateOutlineCommand.cpp:30
 msgid "Create custom outline"
@@ -989,13 +924,18 @@ msgstr "Tạo Khung"
 msgid "Delete Frame"
 msgstr "Xóa Khung"
 
-#: part/commands/KWPageRemoveCommand.cpp:32
-msgid "Remove Page"
-msgstr "Bỏ Trang"
-
 #: part/commands/KWPageStylePropertiesCommand.cpp:36
 msgid "Page Properties"
 msgstr "Thuộc tính của Trang"
+
+#: part/commands/KWClipFrameCommand.cpp:40
+#, fuzzy
+msgid "Clip Frame"
+msgstr "Xoá(delete)"
+
+#: part/commands/KWPageRemoveCommand.cpp:32
+msgid "Remove Page"
+msgstr "Bỏ Trang"
 
 #: part/dialogs/KWStatisticsDialog.cpp:29
 #: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:385
@@ -1325,34 +1265,29 @@ msgstr "Xám trên và dưới"
 msgid "File to open"
 msgstr "Tập tin để mở"
 
-#: part/KWStatusBar.cpp:38
-msgid "Modified"
-msgstr "Đã thay đổi"
+#: part/KWOdfLoader.cpp:86
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgid "Invalid OpenDocument file. No office:body tag found."
+msgstr ""
+"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử office:body."
 
-#: part/KWStatusBar.cpp:39
-msgid "Saved"
-msgstr "Đã lưu"
+#: part/KWOdfLoader.cpp:98
+#, fuzzy
+#| msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgid "Invalid OpenDocument file. No tag found inside office:body."
+msgstr ""
+"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử nào bên trong "
+"office:body."
 
-#: part/KWStatusBar.cpp:40
+#: part/KWOdfLoader.cpp:100
 #, kde-format
-msgid "Page: %1/%2"
-msgstr "Trang: %1/%2"
-
-#: part/KWStatusBar.cpp:62
-msgid "Page: current/total"
-msgstr "Trang: hiện tại/tổng số"
-
-#: part/KWStatusBar.cpp:79
-msgid "State: saved/modified"
-msgstr "Trạng thái: đã lưu/đã thay đổi"
-
-#: part/KWStatusBar.cpp:93
-msgid "Mouseposition: X:Y"
-msgstr "Vị trí con trỏ: X:Y"
-
-#: part/KWStatusBar.cpp:106
-msgid "Zoom Controller"
-msgstr "Điều khiển Phóng"
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+"Đây không phải là tài liệu văn bản, mà là %1. Hãy thử mở nó với ứng dụng phù "
+"hợp."
 
 #: part/KWView.cpp:251
 #, fuzzy
@@ -1758,6 +1693,71 @@ msgstr ""
 #: part/KWView.cpp:1224
 msgid "Create outlines"
 msgstr "Tạo các đường nét"
+
+#: part/KWDocument.cpp:452
+msgid "Copy"
+msgstr "Chép"
+
+#: part/KWDocument.cpp:541
+#, fuzzy
+msgid "Head 1"
+msgstr "Tiêu đề 1"
+
+#: part/KWDocument.cpp:548
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Tiêu đề 2"
+
+#: part/KWDocument.cpp:555
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Tiêu đề 3"
+
+#: part/KWDocument.cpp:562
+#, fuzzy
+msgid "Bullet List"
+msgstr "Danh sách không được xếp thứ tự"
+
+#: part/KWDocument.cpp:896
+msgid "Can not find needed text component, KWord will quit now"
+msgstr "Không thể tìm thấy thành phần văn bản cần thiết, KWord sẽ thoát ngay"
+
+#: part/KWDocument.cpp:897
+msgid "Installation Error"
+msgstr "Lỗi Cài đặt"
+
+#: part/KWStatusBar.cpp:38
+msgid "Modified"
+msgstr "Đã thay đổi"
+
+#: part/KWStatusBar.cpp:39
+msgid "Saved"
+msgstr "Đã lưu"
+
+#: part/KWStatusBar.cpp:40
+#, kde-format
+msgid "Page: %1/%2"
+msgstr "Trang: %1/%2"
+
+#: part/KWStatusBar.cpp:62
+msgid "Page: current/total"
+msgstr "Trang: hiện tại/tổng số"
+
+#: part/KWStatusBar.cpp:79
+msgid "State: saved/modified"
+msgstr "Trạng thái: đã lưu/đã thay đổi"
+
+#: part/KWStatusBar.cpp:93
+msgid "Mouseposition: X:Y"
+msgstr "Vị trí con trỏ: X:Y"
+
+#: part/KWStatusBar.cpp:106
+msgid "Zoom Controller"
+msgstr "Điều khiển Phóng"
 
 #, fuzzy
 #~ msgid "Create a new shape list:"

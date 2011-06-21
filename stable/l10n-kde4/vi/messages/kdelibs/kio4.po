@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 15:10+0200\n"
+"POT-Creation-Date: 2011-06-21 15:53+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -1588,6 +1588,95 @@ msgctxt "@title:window"
 msgid "Add Comment"
 msgstr "Ghi chú"
 
+#: kio/job.cpp:156
+#, fuzzy
+#| msgid "Moving"
+msgctxt "@title job"
+msgid "Moving"
+msgstr "Đang chuyển"
+
+#: kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189 kio/fileundomanager.cpp:120
+#, fuzzy
+#| msgid "Source"
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "Nguồn"
+
+#: kio/job.cpp:158 kio/job.cpp:165 kio/fileundomanager.cpp:121
+#, fuzzy
+#| msgid "Destination"
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "Đích"
+
+#: kio/job.cpp:163
+#, fuzzy
+#| msgid "Copying"
+msgctxt "@title job"
+msgid "Copying"
+msgstr "Đang sao chép"
+
+#: kio/job.cpp:170
+#, fuzzy
+#| msgid "Creating directory"
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "Đang tạo thư mục"
+
+#: kio/job.cpp:171 kio/fileundomanager.cpp:117
+msgid "Directory"
+msgstr "Thư mục"
+
+#: kio/job.cpp:176
+#, fuzzy
+#| msgid "Deleting"
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "Đang xoá"
+
+#: kio/job.cpp:177 kio/job.cpp:183 kio/fileundomanager.cpp:124
+msgid "File"
+msgstr "Tập tin"
+
+#: kio/job.cpp:182
+msgctxt "@title job"
+msgid "Examining"
+msgstr ""
+
+#: kio/job.cpp:188
+#, fuzzy
+#| msgid "Transferring"
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "Đang truyền"
+
+#: kio/job.cpp:194
+#, fuzzy
+#| msgid "Mounting"
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "Đăng gắn kết"
+
+#: kio/job.cpp:195
+msgid "Device"
+msgstr "Thiết bị"
+
+#: kio/job.cpp:196 kio/job.cpp:202
+msgid "Mountpoint"
+msgstr "Điểm lắp"
+
+#: kio/job.cpp:201
+#, fuzzy
+#| msgid "Unmounting"
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "Đang tháo gắn kết"
+
+#: kio/job.cpp:2112 kio/global.cpp:666 kio/copyjob.cpp:1349
+#: kio/copyjob.cpp:1921 kio/paste.cpp:64
+msgid "File Already Exists"
+msgstr "Tập tin đã có"
+
 #: kio/chmodjob.cpp:214
 #, kde-format
 msgid ""
@@ -1612,39 +1701,17 @@ msgstr "Không thể tạo io-slave: %1"
 msgid "Creating directory"
 msgstr "Đang tạo thư mục"
 
-#: kio/fileundomanager.cpp:117 kio/job.cpp:171
-msgid "Directory"
-msgstr "Thư mục"
-
 #: kio/fileundomanager.cpp:119
 #, fuzzy
 #| msgid "Moving"
 msgid "Moving"
 msgstr "Đang chuyển"
 
-#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
-#, fuzzy
-#| msgid "Source"
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "Nguồn"
-
-#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
-#, fuzzy
-#| msgid "Destination"
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "Đích"
-
 #: kio/fileundomanager.cpp:123
 #, fuzzy
 #| msgid "Deleting"
 msgid "Deleting"
 msgstr "Đang xoá"
-
-#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
-msgid "File"
-msgstr "Tập tin"
 
 #: kio/fileundomanager.cpp:284
 msgid "Und&o"
@@ -2634,11 +2701,6 @@ msgstr "Không có tập tin hay thư mục đó"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "Không có tập tin hay thư mục <strong>%1</strong> đã ghi rõ."
 
-#: kio/global.cpp:666 kio/job.cpp:2105 kio/copyjob.cpp:1349
-#: kio/copyjob.cpp:1921 kio/paste.cpp:64
-msgid "File Already Exists"
-msgstr "Tập tin đã có"
-
 #: kio/global.cpp:667
 msgid ""
 "The requested file could not be created because a file with the same name "
@@ -3518,68 +3580,6 @@ msgstr "Hãy chọn tên tập tin khác cho tập tin đích."
 #: kio/global.cpp:1185
 msgid "Undocumented Error"
 msgstr "Lỗi không được diễn tả"
-
-#: kio/job.cpp:156
-#, fuzzy
-#| msgid "Moving"
-msgctxt "@title job"
-msgid "Moving"
-msgstr "Đang chuyển"
-
-#: kio/job.cpp:163
-#, fuzzy
-#| msgid "Copying"
-msgctxt "@title job"
-msgid "Copying"
-msgstr "Đang sao chép"
-
-#: kio/job.cpp:170
-#, fuzzy
-#| msgid "Creating directory"
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "Đang tạo thư mục"
-
-#: kio/job.cpp:176
-#, fuzzy
-#| msgid "Deleting"
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "Đang xoá"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr ""
-
-#: kio/job.cpp:188
-#, fuzzy
-#| msgid "Transferring"
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "Đang truyền"
-
-#: kio/job.cpp:194
-#, fuzzy
-#| msgid "Mounting"
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "Đăng gắn kết"
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "Thiết bị"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "Điểm lắp"
-
-#: kio/job.cpp:201
-#, fuzzy
-#| msgid "Unmounting"
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "Đang tháo gắn kết"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, kde-format

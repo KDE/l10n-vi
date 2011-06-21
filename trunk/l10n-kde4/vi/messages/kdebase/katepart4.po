@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-07 04:15+0200\n"
+"POT-Creation-Date: 2011-06-21 04:12+0200\n"
 "PO-Revision-Date: 2008-01-06 00:26+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-l10n-vi@lists.kde.org>\n"
@@ -185,7 +185,7 @@ msgstr "Thuộc tính không rõ"
 
 #. i18n: file: dialogs/completionconfigtab.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordCompletion)
-#: completion/katewordcompletion.cpp:89 rc.cpp:658
+#: completion/katewordcompletion.cpp:89 rc.cpp:604
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgid "Auto Word Completion"
@@ -235,7 +235,7 @@ msgstr[0] "Ký tự"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:676 dialogs/katedialogs.cpp:753
-#: dialogs/katedialogs.cpp:915 rc.cpp:652 rc.cpp:664
+#: dialogs/katedialogs.cpp:915 rc.cpp:598 rc.cpp:610
 msgid "General"
 msgstr "Chung"
 
@@ -293,7 +293,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:916 rc.cpp:631
+#: dialogs/katedialogs.cpp:916 rc.cpp:577
 msgid "Advanced"
 msgstr ""
 
@@ -2739,13 +2739,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:502 rc.cpp:596
+#: view/kateview.cpp:502 rc.cpp:542
 msgid "&Dynamic Word Wrap"
 msgstr "Ngắt từ &động"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:505 rc.cpp:593
+#: view/kateview.cpp:505 rc.cpp:539
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -3415,7 +3415,7 @@ msgstr "Tùy chọn hiệu chỉnh"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:95 rc.cpp:701
+#: rc.cpp:95 rc.cpp:647
 #, fuzzy
 #| msgid "Comment"
 msgid "Command"
@@ -3786,7 +3786,7 @@ msgstr ""
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:263 rc.cpp:612
+#: rc.cpp:263 rc.cpp:558
 msgid "Disabled"
 msgstr "Đã tắt"
 
@@ -4307,148 +4307,9 @@ msgstr ""
 msgid "&View Difference"
 msgstr ""
 
-#. i18n: file: dialogs/opensaveconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
-#: rc.cpp:476
-#, fuzzy
-#| msgid "&File mask:"
-msgid "File Format"
-msgstr "Bộ &lọc tập tin:"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:31
-#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
-#: rc.cpp:479
-#, fuzzy
-#| msgid "E&ncoding"
-msgid "&Encoding:"
-msgstr "Bộ &ký tự"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
-#: rc.cpp:482
-msgid ""
-"This defines the standard encoding to use to open/save files, if not changed "
-"in the open/save dialog or by using a command line option."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:48
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:485
-#, fuzzy
-#| msgid "E&ncoding"
-msgid "&Encoding Detection:"
-msgstr "Bộ &ký tự"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:58
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
-#: rc.cpp:488
-msgid ""
-"if neither the encoding chosen as standard above, nor the encoding specified "
-"in the open/save dialog, nor the encoding specified on command line match "
-"the content of the file, this detection will be run."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:65
-#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
-#: rc.cpp:491
-#, fuzzy
-#| msgid "E&ncoding"
-msgid "&Fallback Encoding"
-msgstr "Bộ &ký tự"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:75
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
-#: rc.cpp:494
-msgid ""
-"This defines the fallback encoding to try for opening files if neither the "
-"encoding chosen as standard above, nor the encoding specified in the open/"
-"save dialog, nor the encoding specified on command line match the content of "
-"the file.  Before this is used, an attempt will be made to determine the "
-"encoding to use by looking for a byte order marker at start of file: if one "
-"is found, the right unicode encoding will be chosen; otherwise encoding "
-"detection will run, if both fail fallback encoding will be tried."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:82
-#. i18n: ectx: property (text), widget (QLabel, lblEOL)
-#: rc.cpp:497
-#, fuzzy
-#| msgid "&End of Line"
-msgid "E&nd of line:"
-msgstr "&Kết thúc dòng"
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:93
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:500
-msgid "UNIX"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:98
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:503
-msgid "DOS/Windows"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:103
-#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
-#: rc.cpp:506
-msgid "Macintosh"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:113
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:509
-msgid ""
-"If this option is enabled the editor will autodetect the end of line type. "
-"The first found end of line type will be used for the whole file."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:116
-#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
-#: rc.cpp:512
-msgid "A&utomatic end of line detection"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:123
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:515
-msgid ""
-"The byte order mark is a special sequence at the beginning of unicode "
-"encoded documents. It helps editors to open text documents with the correct "
-"unicode encoding. The byte order mark is not visible in the displayed "
-"document."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:126
-#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
-#: rc.cpp:518
-msgid "Enable byte order marker"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:136
-#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
-#: rc.cpp:521
-msgid "Automatic Cleanups on Load/Save"
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:142
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:524
-msgid ""
-"The editor will automatically eliminate extra spaces at the ends of lines of "
-"text while loading/saving the file. This change is only visible after a save "
-"if you reload the file."
-msgstr ""
-
-#. i18n: file: dialogs/opensaveconfigwidget.ui:145
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:527
-msgid "Re&move trailing spaces"
-msgstr ""
-
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:530
+#: rc.cpp:476
 #, fuzzy
 #| msgid "Template Background"
 msgid "Text Area Background"
@@ -4456,7 +4317,7 @@ msgstr "Nền mẫu"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:533
+#: rc.cpp:479
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal text:"
@@ -4464,13 +4325,13 @@ msgstr "Văn bản chuẩn"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: rc.cpp:536
+#: rc.cpp:482
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:539
+#: rc.cpp:485
 #, fuzzy
 #| msgid "Selected"
 msgid "Selected text:"
@@ -4478,7 +4339,7 @@ msgstr "Đã chọn"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:542
+#: rc.cpp:488
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4486,7 +4347,7 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:545
+#: rc.cpp:491
 #, fuzzy
 #| msgid "Current Word Only"
 msgid "Current line:"
@@ -4494,7 +4355,7 @@ msgstr "Chỉ từ hiện có"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: rc.cpp:548
+#: rc.cpp:494
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -4502,13 +4363,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:551
+#: rc.cpp:497
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:554
+#: rc.cpp:500
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4516,13 +4377,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:557
+#: rc.cpp:503
 msgid "Additional Elements"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:560
+#: rc.cpp:506
 #, fuzzy
 #| msgid "Template Background"
 msgid "Left border background:"
@@ -4530,7 +4391,7 @@ msgstr "Nền mẫu"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:563
+#: rc.cpp:509
 #, fuzzy
 #| msgid "Show &Line Numbers"
 msgid "Line numbers:"
@@ -4538,7 +4399,7 @@ msgstr "Hiện &số hiệu dòng"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: rc.cpp:566
+#: rc.cpp:512
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -4546,7 +4407,7 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:569
+#: rc.cpp:515
 #, fuzzy
 #| msgid "H&ighlight:"
 msgid "Bracket highlight:"
@@ -4554,7 +4415,7 @@ msgstr "T&ô sáng:"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: rc.cpp:572
+#: rc.cpp:518
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -4562,13 +4423,13 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:575
+#: rc.cpp:521
 msgid "Word wrap markers:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: rc.cpp:578
+#: rc.cpp:524
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -4578,32 +4439,32 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:581
+#: rc.cpp:527
 msgid "Tab and space markers:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: rc.cpp:584
+#: rc.cpp:530
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:587
+#: rc.cpp:533
 msgid "Spelling mistake line:"
 msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: rc.cpp:590
+#: rc.cpp:536
 msgid ""
 "<p>Sets the color of the line that is used to indicate spelling mistakes.</p>"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:599
+#: rc.cpp:545
 #, fuzzy
 #| msgid "Dynamic Word Wrap Indicators"
 msgid "Dynamic &word wrap indicators (if applicable):"
@@ -4611,7 +4472,7 @@ msgstr "Chỉ thị Ngắt từ động"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:602
+#: rc.cpp:548
 #, fuzzy
 #| msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
@@ -4619,13 +4480,13 @@ msgstr "Chọn cách hiển thị các chỉ thị Ngắt Từ Động."
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:605
+#: rc.cpp:551
 msgid "Align dynamically wrapped lines to indentation depth:"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:609
+#: rc.cpp:555
 #, no-c-format
 msgid ""
 "<p>Enables the start of dynamically wrapped lines to be aligned vertically "
@@ -4639,7 +4500,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:616
+#: rc.cpp:562
 #, no-c-format
 msgid "% of View Width"
 msgstr ""
@@ -4647,7 +4508,7 @@ msgstr ""
 # msgid "Highlighting"
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:619
+#: rc.cpp:565
 #, fuzzy
 #| msgid "&Highlighting"
 msgid "Whitespace Highlighting"
@@ -4655,7 +4516,7 @@ msgstr "Tô &sáng"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:622
+#: rc.cpp:568
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -4663,7 +4524,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:625
+#: rc.cpp:571
 #, fuzzy
 #| msgid "&Highlight all"
 msgid "&Highlight tabulators"
@@ -4671,7 +4532,7 @@ msgstr "Tô &sáng tất cả"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:628
+#: rc.cpp:574
 #, fuzzy
 #| msgid "Highlighting for LaTeX"
 msgid "Highlight trailing &spaces"
@@ -4679,7 +4540,7 @@ msgstr "Cách tô sáng LaTeX"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:634
+#: rc.cpp:580
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -4687,13 +4548,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:637
+#: rc.cpp:583
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:640
+#: rc.cpp:586
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
 "indent lines."
@@ -4701,7 +4562,7 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:643
+#: rc.cpp:589
 #, fuzzy
 #| msgid "&Indentation"
 msgid "Show i&ndentation lines"
@@ -4709,7 +4570,7 @@ msgstr "Th&ụt lề"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:646
+#: rc.cpp:592
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -4717,13 +4578,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:649
+#: rc.cpp:595
 msgid "Highlight range between selected brackets"
 msgstr ""
 
 #. i18n: file: dialogs/completionconfigtab.ui:18
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoCompletionEnabled)
-#: rc.cpp:655
+#: rc.cpp:601
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgid "Enable &auto completion"
@@ -4731,13 +4592,13 @@ msgstr "Bổ sung hoàn chỉnh từ"
 
 #. i18n: file: dialogs/completionconfigtab.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:661
+#: rc.cpp:607
 msgid "Minimal word length to complete:"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:667
+#: rc.cpp:613
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -4746,13 +4607,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:670
+#: rc.cpp:616
 msgid "Use Vi input mode"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:673
+#: rc.cpp:619
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -4761,13 +4622,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:676
+#: rc.cpp:622
 msgid "Let Vi commands override Kate shortcuts"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:679
+#: rc.cpp:625
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -4778,13 +4639,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:684
+#: rc.cpp:630
 msgid "Hide the Vi mode status bar"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:687
+#: rc.cpp:633
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -4798,13 +4659,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:695
+#: rc.cpp:641
 msgid "Key Mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:698
+#: rc.cpp:644
 #, fuzzy
 #| msgid "Normal Text"
 msgid "Normal mode"
@@ -4812,7 +4673,7 @@ msgstr "Văn bản chuẩn"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:704
+#: rc.cpp:650
 #, fuzzy
 #| msgid "Template"
 msgid "Replacement"
@@ -4820,7 +4681,7 @@ msgstr "Mẫu"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:707
+#: rc.cpp:653
 #, fuzzy
 #| msgid "Selected"
 msgid "Remove selected"
@@ -4828,13 +4689,13 @@ msgstr "Đã chọn"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:710
+#: rc.cpp:656
 msgid "Add new mapping"
 msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:713
+#: rc.cpp:659
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -4842,25 +4703,25 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:716
+#: rc.cpp:662
 msgid "Import from vimrc file"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:719
+#: rc.cpp:665
 msgid "Folder Config File"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:722
+#: rc.cpp:668
 msgid "Search &depth for config file:"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:725
+#: rc.cpp:671
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
 "kateconfig file and load the settings line from it."
@@ -4868,13 +4729,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:728
+#: rc.cpp:674
 msgid "Do not use config file"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:731
+#: rc.cpp:677
 msgid ""
 "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
 "prefix&gt;&lt;filename&gt;&lt;suffix&gt;' before saving changes.<p>The "
@@ -4883,7 +4744,7 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:734
+#: rc.cpp:680
 #, fuzzy
 #| msgid "Backspace"
 msgid "Backup on Save"
@@ -4891,7 +4752,7 @@ msgstr "Xoá lùi"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:737
+#: rc.cpp:683
 #, fuzzy
 #| msgid ""
 #| "If this option is checked, the text lines will be wrapped at the view "
@@ -4903,7 +4764,7 @@ msgstr "Nếu bật, các dòng văn bản sẽ bị ngắt tại viền khung x
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:740
+#: rc.cpp:686
 #, fuzzy
 #| msgid "Local Scope"
 msgid "&Local files"
@@ -4911,7 +4772,7 @@ msgstr "Phạm vị cục bộ"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:743
+#: rc.cpp:689
 #, fuzzy
 #| msgid ""
 #| "If this option is checked, the text lines will be wrapped at the view "
@@ -4923,7 +4784,7 @@ msgstr "Nếu bật, các dòng văn bản sẽ bị ngắt tại viền khung x
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:746
+#: rc.cpp:692
 #, fuzzy
 #| msgid "&Reload File"
 msgid "&Remote files"
@@ -4931,7 +4792,7 @@ msgstr "Tải &lại tập tin"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:749
+#: rc.cpp:695
 #, fuzzy
 #| msgid "Prefix"
 msgid "&Prefix:"
@@ -4939,26 +4800,165 @@ msgstr "Tiền tố"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:752
+#: rc.cpp:698
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:755
+#: rc.cpp:701
 msgid "&Suffix:"
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:758
+#: rc.cpp:704
 msgid "Enter the suffix to append to the backup file names."
 msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:761
+#: rc.cpp:707
 msgid "Disable swap files syncing"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbFileFormat)
+#: rc.cpp:710
+#, fuzzy
+#| msgid "&File mask:"
+msgid "File Format"
+msgstr "Bộ &lọc tập tin:"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:31
+#. i18n: ectx: property (text), widget (QLabel, lblEncoding)
+#: rc.cpp:713
+#, fuzzy
+#| msgid "E&ncoding"
+msgid "&Encoding:"
+msgstr "Bộ &ký tự"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncoding)
+#: rc.cpp:716
+msgid ""
+"This defines the standard encoding to use to open/save files, if not changed "
+"in the open/save dialog or by using a command line option."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
+#: rc.cpp:719
+#, fuzzy
+#| msgid "E&ncoding"
+msgid "&Encoding Detection:"
+msgstr "Bộ &ký tự"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:58
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingDetection)
+#: rc.cpp:722
+msgid ""
+"if neither the encoding chosen as standard above, nor the encoding specified "
+"in the open/save dialog, nor the encoding specified on command line match "
+"the content of the file, this detection will be run."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:65
+#. i18n: ectx: property (text), widget (QLabel, lblEncodingDetection)
+#: rc.cpp:725
+#, fuzzy
+#| msgid "E&ncoding"
+msgid "&Fallback Encoding:"
+msgstr "Bộ &ký tự"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:75
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
+#: rc.cpp:728
+msgid ""
+"This defines the fallback encoding to try for opening files if neither the "
+"encoding chosen as standard above, nor the encoding specified in the open/"
+"save dialog, nor the encoding specified on command line match the content of "
+"the file.  Before this is used, an attempt will be made to determine the "
+"encoding to use by looking for a byte order marker at start of file: if one "
+"is found, the right unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail fallback encoding will be tried."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:82
+#. i18n: ectx: property (text), widget (QLabel, lblEOL)
+#: rc.cpp:731
+#, fuzzy
+#| msgid "&End of Line"
+msgid "E&nd of line:"
+msgstr "&Kết thúc dòng"
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:93
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:734
+msgid "UNIX"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:98
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:737
+msgid "DOS/Windows"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:103
+#. i18n: ectx: property (text), item, widget (KComboBox, cmbEOL)
+#: rc.cpp:740
+msgid "Macintosh"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:113
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:743
+msgid ""
+"If this option is enabled the editor will autodetect the end of line type. "
+"The first found end of line type will be used for the whole file."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:116
+#. i18n: ectx: property (text), widget (QCheckBox, chkDetectEOL)
+#: rc.cpp:746
+msgid "A&utomatic end of line detection"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:123
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:749
+msgid ""
+"The byte order mark is a special sequence at the beginning of unicode "
+"encoded documents. It helps editors to open text documents with the correct "
+"unicode encoding. The byte order mark is not visible in the displayed "
+"document."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:126
+#. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
+#: rc.cpp:752
+msgid "Enable byte order marker"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:136
+#. i18n: ectx: property (title), widget (QGroupBox, gbCleanups)
+#: rc.cpp:755
+msgid "Automatic Cleanups on Load/Save"
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:142
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:758
+msgid ""
+"The editor will automatically eliminate extra spaces at the ends of lines of "
+"text while loading/saving the file. This change is only visible after a save "
+"if you reload the file."
+msgstr ""
+
+#. i18n: file: dialogs/opensaveconfigwidget.ui:145
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:761
+msgid "Re&move trailing spaces"
 msgstr ""
 
 #. i18n: file: search/searchbarincremental.ui:32

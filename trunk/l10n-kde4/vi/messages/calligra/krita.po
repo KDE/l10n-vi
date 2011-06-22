@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-20 03:43+0200\n"
+"POT-Creation-Date: 2011-06-22 03:41+0200\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -6702,8 +6702,8 @@ msgstr "Áp lực"
 #. i18n: file: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2515 rc.cpp:3106
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:53
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
 #, fuzzy
 msgid "Threshold"
@@ -9998,20 +9998,6 @@ msgstr "&Phóng"
 msgid "default"
 msgstr "Măc định"
 
-#: image/commands/kis_change_filter_command.h:40
-msgid "Change Filter"
-msgstr "Đổi bộ lọc"
-
-#: image/commands/kis_change_generator_command.h:40
-#, fuzzy
-#| msgid "General"
-msgid "Change Generator"
-msgstr "Chung "
-
-#: image/commands/kis_deselect_global_selection_command.cpp:30
-msgid "Deselect"
-msgstr "Bỏ chọn"
-
 #: image/commands/kis_image_layer_add_command.cpp:27
 #: image/commands/kis_image_layer_add_command.cpp:35
 msgid "Add Layer"
@@ -10059,6 +10045,20 @@ msgstr "Chế độ Tổng hợp"
 #, fuzzy
 msgid "Node Opacity"
 msgstr "Mật độ"
+
+#: image/commands/kis_change_filter_command.h:40
+msgid "Change Filter"
+msgstr "Đổi bộ lọc"
+
+#: image/commands/kis_change_generator_command.h:40
+#, fuzzy
+#| msgid "General"
+msgid "Change Generator"
+msgstr "Chung "
+
+#: image/commands/kis_deselect_global_selection_command.cpp:30
+msgid "Deselect"
+msgstr "Bỏ chọn"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -10241,15 +10241,15 @@ msgstr "kết nối"
 msgid "Alpha Channel Disabled"
 msgstr ""
 
-#: image/kis_transform_visitor.h:158
-#, fuzzy
-msgid "Rotate Node"
-msgstr "Quay &90"
-
 #: image/kis_transformation_mask.cpp:112
 #, fuzzy
 msgid "Transformation Mask Settings"
 msgstr "Hiệu ứng biến hình"
+
+#: image/kis_transform_visitor.h:158
+#, fuzzy
+msgid "Rotate Node"
+msgstr "Quay &90"
 
 #: image/metadata/kis_meta_data_merge_strategy_p.cc:50
 msgid "Drop"
@@ -10716,17 +10716,17 @@ msgstr "Phóng Phần chọn"
 msgid "&Transformation Mask..."
 msgstr "Hiệu ứng biến hình"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:336
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:348
 #, fuzzy
 msgid "&Properties..."
 msgstr "Tính chất Layer..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:338
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:350
 #, fuzzy
 msgid "&Remove Layer"
 msgstr "Gỡ bỏ Layer"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:339
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:351
 #, fuzzy
 msgid "&Duplicate Layer or Mask"
 msgstr "Công cụ &trình lọc"
@@ -10796,19 +10796,19 @@ msgid "Advanced Color Selector"
 msgstr "Trình chọn màu tam giác"
 
 #: plugins/extensions/dropshadow/dlg_dropshadow.cc:42
-#: plugins/extensions/dropshadow/kis_dropshadow.cc:130
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:83
+#: plugins/extensions/dropshadow/kis_dropshadow.cc:130
 msgid "Drop Shadow"
 msgstr "Bóng đổ"
-
-#: plugins/extensions/dropshadow/kis_dropshadow.cc:93
-msgid "Add Drop Shadow"
-msgstr "Thêm Bóng đổ"
 
 #: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:60
 #, fuzzy
 msgid "Add Drop Shadow..."
 msgstr "Thêm Bóng đổ..."
+
+#: plugins/extensions/dropshadow/kis_dropshadow.cc:93
+msgid "Add Drop Shadow"
+msgstr "Thêm Bóng đổ"
 
 #: plugins/extensions/extensionsmanager/ExtensionsManager.cpp:107
 msgid "Invalid extension, missing 'manifest.xml' or 'source.tar.bz2'"
@@ -11156,11 +11156,6 @@ msgstr "&Làm méo Lớp..."
 msgid "Shear Layer"
 msgstr "Làm méo Lớp"
 
-#: plugins/extensions/tonemapping/kis_tonemapping_dialog.cc:120
-#: ui/widgets/kis_filter_selector_widget.cc:142
-msgid "No configuration option."
-msgstr "Không có tùy chọn nào."
-
 #: plugins/extensions/tonemapping/operators/ashikhmin02/kis_ashikhmin02_operator.cc:66
 msgid "Ashikhmin 02"
 msgstr "Ashikhmin 02"
@@ -11184,6 +11179,11 @@ msgstr ""
 #: plugins/extensions/tonemapping/tonemapping.cc:53
 msgid "Tonemapping..."
 msgstr ""
+
+#: plugins/extensions/tonemapping/kis_tonemapping_dialog.cc:120
+#: ui/widgets/kis_filter_selector_widget.cc:142
+msgid "No configuration option."
+msgstr "Không có tùy chọn nào."
 
 #: plugins/extensions/imagesplit/imagesplit.cpp:60
 #, fuzzy
@@ -11451,6 +11451,11 @@ msgstr "Giảm nhiễu kiểu Gauss"
 msgid "Wavelet Noise Reducer"
 msgstr "Chọn"
 
+#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
+#, fuzzy
+msgid "&Wavelet Noise Reducer..."
+msgstr "Chọn"
+
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:41
 #, fuzzy
 msgid "&Gaussian Noise Reduction..."
@@ -11460,11 +11465,6 @@ msgstr "Chọn"
 #, fuzzy
 msgid "Window size"
 msgstr "ảnh "
-
-#: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:38
-#, fuzzy
-msgid "&Wavelet Noise Reducer..."
-msgstr "Chọn"
 
 #: plugins/filters/levelfilter/kis_level_filter.cpp:49
 #, fuzzy
@@ -11600,14 +11600,14 @@ msgstr "Làm ảnh thành trong suốt"
 msgid "Sobel"
 msgstr "Đá"
 
-#: plugins/filters/unsharp/kis_unsharp_filter.cpp:43
-msgid "&Unsharp Mask..."
-msgstr ""
-
 #: plugins/filters/unsharp/kis_unsharp_filter.h:41
 #, fuzzy
 msgid "Unsharp Mask"
 msgstr "Xanh nước biển"
+
+#: plugins/filters/unsharp/kis_unsharp_filter.cpp:43
+msgid "&Unsharp Mask..."
+msgstr ""
 
 #: plugins/filters/wavefilter/wavefilter.cpp:106
 msgid "&Wave..."
@@ -13003,39 +13003,6 @@ msgstr "Vẽ bằng các đường cong"
 msgid "MultiBrush"
 msgstr "Chổi"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:80
-#, fuzzy
-#| msgid "X-Tilt"
-msgid "Tilt"
-msgstr "Nghiêng X"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:82
-#, fuzzy
-#| msgid "Pressure"
-msgid "Tangential Pressure"
-msgstr "Áp lực"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:83
-#, fuzzy
-#| msgid "options"
-msgid "Varying End-Points"
-msgstr "tuỳ chọn"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:219
-#, fuzzy
-#| msgid "Line"
-msgctxt "a straight drawn line"
-msgid "Line"
-msgstr "Đường"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:303
-msgid ""
-"Alt+Drag will move the origin of the currently displayed line around, Shift"
-"+Drag will force you to draw straight lines"
-msgstr ""
-"Alt+kéo sẽ di chuyển gốc của đường đang được hiển thị, Shift+kéo sẽ buộc bạn "
-"vẽ đường thẳng."
-
 #: plugins/tools/defaulttools/kis_tool_line.h:83
 #, fuzzy
 #| msgid "Draw a line with the current brush"
@@ -13082,6 +13049,39 @@ msgstr "Hình tam giác"
 msgid "Brush count"
 msgstr "Cỡ chổi"
 
+#: plugins/tools/defaulttools/kis_tool_line.cc:80
+#, fuzzy
+#| msgid "X-Tilt"
+msgid "Tilt"
+msgstr "Nghiêng X"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:82
+#, fuzzy
+#| msgid "Pressure"
+msgid "Tangential Pressure"
+msgstr "Áp lực"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:83
+#, fuzzy
+#| msgid "options"
+msgid "Varying End-Points"
+msgstr "tuỳ chọn"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:219
+#, fuzzy
+#| msgid "Line"
+msgctxt "a straight drawn line"
+msgid "Line"
+msgstr "Đường"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:303
+msgid ""
+"Alt+Drag will move the origin of the currently displayed line around, Shift"
+"+Drag will force you to draw straight lines"
+msgstr ""
+"Alt+kéo sẽ di chuyển gốc của đường đang được hiển thị, Shift+kéo sẽ buộc bạn "
+"vẽ đường thẳng."
+
 #: plugins/tools/selectiontools/kis_tool_select_brush.h:74
 #, fuzzy
 msgid "Select by brush"
@@ -13124,11 +13124,6 @@ msgstr "Chọn một khu vực của ảnh với các đường cong"
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.h:70
 msgid "Select a polygonal region"
 msgstr "Chọn một khu vực hình đa giác"
-
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:68
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:83
-msgid "Rectangular Selection"
-msgstr "Chọn hình chữ nhật"
 
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.h:67
 #, fuzzy
@@ -13195,6 +13190,11 @@ msgstr ""
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:83
 msgid "Polygonal Selection"
 msgstr "Chọn hình đa giác"
+
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:68
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:83
+msgid "Rectangular Selection"
+msgstr "Chọn hình chữ nhật"
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:148
 #, fuzzy
@@ -13364,22 +13364,6 @@ msgstr "Vẽ một ngôi sao dùng chổi hiện tại"
 msgid "Star"
 msgstr "Ngôi sao"
 
-#: plugins/tools/tool_transform2/tool_transform_commands.cc:24
-#, fuzzy
-#| msgid "Tool information"
-msgid "Apply transformation"
-msgstr "Thông tin về công cụ"
-
-#: plugins/tools/tool_transform2/tool_transform_commands.cc:55
-#, fuzzy
-msgid "Transform"
-msgstr "Biến hình"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.h:435
-#, fuzzy
-msgid "Transform a layer or a selection"
-msgstr "Biến dạnh một lớp hoặc phần chọn"
-
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2106
 #, fuzzy
 #| msgid "Tool information"
@@ -13408,6 +13392,22 @@ msgstr "Phải:"
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2896
 msgid "Unlock Points"
 msgstr ""
+
+#: plugins/tools/tool_transform2/kis_tool_transform.h:435
+#, fuzzy
+msgid "Transform a layer or a selection"
+msgstr "Biến dạnh một lớp hoặc phần chọn"
+
+#: plugins/tools/tool_transform2/tool_transform_commands.cc:24
+#, fuzzy
+#| msgid "Tool information"
+msgid "Apply transformation"
+msgstr "Thông tin về công cụ"
+
+#: plugins/tools/tool_transform2/tool_transform_commands.cc:55
+#, fuzzy
+msgid "Transform"
+msgstr "Biến hình"
 
 #: ui/kis_filter_handler.cc:110
 #, fuzzy, kde-format
@@ -13497,6 +13497,10 @@ msgstr "Tính chất Ảnh"
 msgid "New Transformation Mask"
 msgstr "Hiệu ứng biến hình"
 
+#: ui/dialogs/kis_dlg_layer_properties.cc:62
+msgid "Layer Properties"
+msgstr "Tính chất Lớp"
+
 #: ui/dialogs/kis_dlg_preferences.cc:191
 msgid "Monitor profile: "
 msgstr ""
@@ -13555,10 +13559,6 @@ msgstr ""
 #: ui/kis_clipboard.cc:154
 msgid "Krita"
 msgstr "Krita"
-
-#: ui/dialogs/kis_dlg_layer_properties.cc:62
-msgid "Layer Properties"
-msgstr "Tính chất Lớp"
 
 #: ui/flake/kis_shape_controller.cpp:229
 #, kde-format
@@ -13876,6 +13876,25 @@ msgstr "Như trên &mạng"
 msgid "As on &Monitor"
 msgstr "Như trên màn &hình"
 
+#: ui/kis_doc2.cc:440
+msgid ""
+"The Calligra LittleCMS color management plugin is not installed. Krita will "
+"quit now."
+msgstr ""
+
+#: ui/kis_doc2.cc:451
+#, kde-format
+msgid ""
+"Krita needs at least Qt 4.6.3 to work correctly. Your Qt version is %1. If "
+"you have a graphics tablet it will not work correctly!"
+msgstr ""
+
+#: ui/kis_doc2.cc:468
+#, fuzzy
+#| msgid "Layer Creation Error"
+msgid "Installation error"
+msgstr "Lỗi khi tạo lớp"
+
 #: ui/kis_control_frame.cpp:79 ui/kis_control_frame.cpp:80
 #, fuzzy
 msgid "Fill Patterns"
@@ -13932,25 +13951,6 @@ msgid ""
 "The current image is too big to create a pattern. The pattern will be scaled "
 "down."
 msgstr ""
-
-#: ui/kis_doc2.cc:440
-msgid ""
-"The Calligra LittleCMS color management plugin is not installed. Krita will "
-"quit now."
-msgstr ""
-
-#: ui/kis_doc2.cc:451
-#, kde-format
-msgid ""
-"Krita needs at least Qt 4.6.3 to work correctly. Your Qt version is %1. If "
-"you have a graphics tablet it will not work correctly!"
-msgstr ""
-
-#: ui/kis_doc2.cc:468
-#, fuzzy
-#| msgid "Layer Creation Error"
-msgid "Installation error"
-msgstr "Lỗi khi tạo lớp"
 
 #: ui/kis_view2.cpp:260
 #, fuzzy

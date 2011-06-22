@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-19 03:43+0200\n"
+"POT-Creation-Date: 2011-06-22 03:41+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -277,33 +277,6 @@ msgstr "Mở tài liệu"
 msgid "Pan"
 msgstr ""
 
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-msgid "Change Segment"
-msgstr "Thay đổi Liên hệ"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr ""
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:369 flake/tools/KoPathTool.cpp:184
-msgid "Snapping"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:375
-msgid "Angle snapping delta"
-msgstr ""
-
-#: flake/tools/KoCreatePathTool.cpp:380
-#, fuzzy
-msgid "Angle Constraints"
-msgstr "Thay đổi Liên hệ"
-
 #: flake/tools/KoPathTool.cpp:90
 msgid "Corner point"
 msgstr "Điểm góc"
@@ -370,6 +343,10 @@ msgstr "Tới đường"
 msgid "Line/Curve"
 msgstr "Cong"
 
+#: flake/tools/KoPathTool.cpp:184 flake/tools/KoCreatePathTool.cpp:369
+msgid "Snapping"
+msgstr ""
+
 #: flake/tools/KoPathTool.cpp:519
 msgid "Drag to move handle."
 msgstr ""
@@ -393,6 +370,29 @@ msgstr "Ngắt đường con tại các điểm"
 #: flake/tools/KoPathTool.cpp:612
 msgid "Press B to break path at selected segments."
 msgstr ""
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr ""
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:375
+msgid "Angle snapping delta"
+msgstr ""
+
+#: flake/tools/KoCreatePathTool.cpp:380
+#, fuzzy
+msgid "Angle Constraints"
+msgstr "Thay đổi Liên hệ"
+
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+msgid "Change Segment"
+msgstr "Thay đổi Liên hệ"
 
 #: kokross/KoScriptManager.cpp:177
 msgid "Install Script Package"
@@ -519,57 +519,15 @@ msgstr ""
 msgid "Execute Script File"
 msgstr ""
 
-#: kopageapp/KoPADocumentModel.cpp:166 kopageapp/KoPAPageThumbnailModel.cpp:67
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:166
 #, fuzzy, kde-format
 msgid "Slide %1"
 msgstr "Hiện thanh công cụ %1"
-
-#: kopageapp/KoPADocumentModel.cpp:168
-#, fuzzy, kde-format
-msgid "Page  %1"
-msgstr "Tên: "
-
-#: kopageapp/KoPADocumentModel.cpp:172
-#: kopageapp/KoPADocumentStructureDocker.cpp:118
-msgid "Layer"
-msgstr "Lớp"
-
-#: kopageapp/KoPADocumentModel.cpp:175
-msgid "Group"
-msgstr "Nhóm"
-
-#: kopageapp/KoPADocumentModel.cpp:178
-msgid "Shape"
-msgstr "Hình"
-
-#: kopageapp/KoPADocumentModel.cpp:291
-msgid "Visible"
-msgstr "Nhìn thấy"
-
-#: kopageapp/KoPADocumentModel.cpp:292
-msgid "Locked"
-msgstr "Bị khóa"
-
-#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
-msgid "Reparent shapes"
-msgstr ""
 
 #: kopageapp/KoPAPageThumbnailModel.cpp:69
 #, fuzzy, kde-format
 msgid "Page %1"
 msgstr "Tên: "
-
-#: kopageapp/KoPAPastePage.cpp:131
-#, fuzzy
-msgid "Paste Slide"
-msgid_plural "Paste Slides"
-msgstr[0] "Trang Dán"
-
-#: kopageapp/KoPAPastePage.cpp:134
-#, fuzzy
-msgid "Paste Page"
-msgid_plural "Paste Pages"
-msgstr[0] "Trang Dán"
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -582,12 +540,6 @@ msgstr "Thay đổi tham số"
 #| msgid "Change parameter"
 msgid "Change master page"
 msgstr "Thay đổi tham số"
-
-#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
-#, fuzzy
-#| msgid "Page Layout"
-msgid "Set Page Layout"
-msgstr "Bố trí Trang"
 
 #: kopageapp/commands/KoPADisplayMasterBackgroundCommand.cpp:31
 #, fuzzy
@@ -616,6 +568,12 @@ msgstr "Làm méo các hình"
 #, fuzzy
 msgid "Hide master shapes"
 msgstr "Làm méo các hình"
+
+#: kopageapp/commands/KoPAChangePageLayoutCommand.cpp:33
+#, fuzzy
+#| msgid "Page Layout"
+msgid "Set Page Layout"
+msgstr "Bố trí Trang"
 
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:39
 #: kopageapp/commands/KoPAPageDeleteCommand.cpp:63
@@ -709,12 +667,6 @@ msgstr "Tài liệu"
 msgid "Document Settings"
 msgstr "Thông tin về tại liệu"
 
-#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
-#, fuzzy
-#| msgid "Set background"
-msgid "Change background image"
-msgstr "Đặt nền"
-
 #: kopageapp/tools/backgroundTool/KoPABackgroundTool.cpp:105
 #, fuzzy
 #| msgid "&Background color:"
@@ -730,6 +682,42 @@ msgstr ""
 #| msgid "&Background color:"
 msgid "Background editing tool"
 msgstr "Màu &nền:"
+
+#: kopageapp/tools/backgroundTool/KoPABackgroundToolWidget.cpp:93
+#, fuzzy
+#| msgid "Set background"
+msgid "Change background image"
+msgstr "Đặt nền"
+
+#: kopageapp/KoPADocumentModel.cpp:168
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Tên: "
+
+#: kopageapp/KoPADocumentModel.cpp:172
+#: kopageapp/KoPADocumentStructureDocker.cpp:118
+msgid "Layer"
+msgstr "Lớp"
+
+#: kopageapp/KoPADocumentModel.cpp:175
+msgid "Group"
+msgstr "Nhóm"
+
+#: kopageapp/KoPADocumentModel.cpp:178
+msgid "Shape"
+msgstr "Hình"
+
+#: kopageapp/KoPADocumentModel.cpp:291
+msgid "Visible"
+msgstr "Nhìn thấy"
+
+#: kopageapp/KoPADocumentModel.cpp:292
+msgid "Locked"
+msgstr "Bị khóa"
+
+#: kopageapp/KoPADocumentModel.cpp:505 kopageapp/KoPADocumentModel.cpp:526
+msgid "Reparent shapes"
+msgstr ""
 
 #: kopageapp/KoPADocumentStructureDocker.cpp:95 main/KoMainWindow.cpp:1723
 msgid "Document"
@@ -843,6 +831,18 @@ msgstr "Công ti:"
 #| msgid "Date"
 msgid "Paste"
 msgstr "Ngày"
+
+#: kopageapp/KoPAPastePage.cpp:131
+#, fuzzy
+msgid "Paste Slide"
+msgid_plural "Paste Slides"
+msgstr[0] "Trang Dán"
+
+#: kopageapp/KoPAPastePage.cpp:134
+#, fuzzy
+msgid "Paste Page"
+msgid_plural "Paste Pages"
+msgstr[0] "Trang Dán"
 
 #: kopageapp/KoPAView.cpp:241 main/KoToolBoxFactory.cpp:37
 msgid "Tools"
@@ -2388,12 +2388,12 @@ msgid "Export to PDF"
 msgstr "Xuất ra PDF..."
 
 #: main/KoMainWindow.cpp:1385 main/KoUndoStackAction.cpp:36
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1093
 msgid "Undo"
 msgstr ""
 
 #: main/KoMainWindow.cpp:1386 main/KoUndoStackAction.cpp:44
-#: main/KoUndoStackAction.cpp:52
+#: main/KoUndoStackAction.cpp:52 kundo2/kundo2stack.cpp:1074
 #, fuzzy
 msgid "Redo"
 msgstr "&Tháo gỡ View"
@@ -4318,6 +4318,27 @@ msgstr ""
 #: textlayout/ListItemsHelper.cpp:212
 msgid "ArabicAlphabet"
 msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+#, kde-format
+msgid "Undo %1"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:359 kundo2/kundo2stack.cpp:841
+msgctxt "Default text for undo action"
+msgid "Undo"
+msgstr ""
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy, kde-format
+msgid "Redo %1"
+msgstr "&Tháo gỡ View"
+
+#: kundo2/kundo2group.cpp:386 kundo2/kundo2stack.cpp:867
+#, fuzzy
+msgctxt "Default text for redo action"
+msgid "Redo"
+msgstr "&Tháo gỡ View"
 
 #: rc.cpp:1
 #, fuzzy

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-06 04:01+0200\n"
+"POT-Creation-Date: 2011-07-05 04:20+0200\n"
 "PO-Revision-Date: 2006-04-15 22:24+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -695,7 +695,7 @@ msgstr "Chọn thành phần soạn thảo"
 msgid "Editor Component Options"
 msgstr "Chọn thành phần soạn thảo"
 
-#: app/kateconfigdialog.cpp:402
+#: app/kateconfigdialog.cpp:408
 #, fuzzy
 #| msgid " day(s)"
 msgctxt "The suffix of 'Delete unused meta-information after'"
@@ -718,6 +718,71 @@ msgid ""
 msgstr ""
 "Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
 "được nạp, và sẽ được nạp khi Kate khởi động lần sau."
+
+#: app/katedocmanager.cpp:69
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+"Không tìm thấy một thành phần trình soạn thảo văn bản của KDE;\n"
+"xin hãy kiểm tra lại cài đặt KDE."
+
+#: app/katedocmanager.cpp:369
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+
+#: app/katedocmanager.cpp:371
+#, fuzzy
+msgid "Delete File?"
+msgstr "Xóa"
+
+#: app/katedocmanager.cpp:513
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
+#| "save your changes or discard them?"
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>Tài liệu '%1' đã có thay đổi nhưng chưa được lưu. <p>Bạn muốn lưu những "
+"thay đổi đó hay bỏ chúng đi?"
+
+#: app/katedocmanager.cpp:515
+msgid "Close Document"
+msgstr "Đóng tài liệu"
+
+#: app/katedocmanager.cpp:522
+#, fuzzy
+msgid "Save As"
+msgstr "&Lưu như..."
+
+#: app/katedocmanager.cpp:548 app/katemainwindow.cpp:436
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr "Mở tập tin mới khi đóng Kate, không đóng."
+
+#: app/katedocmanager.cpp:549 app/katemainwindow.cpp:437
+msgid "Closing Aborted"
+msgstr "Dừng đóng"
+
+#: app/katedocmanager.cpp:622
+msgid "Starting Up"
+msgstr "Đang khởi động"
+
+#: app/katedocmanager.cpp:623
+msgid "Reopening files from the last session..."
+msgstr "Mở lại tập tin từ phiên chạy cuối..."
+
+#: app/katedocmanager.cpp:829
+msgid "Errors/Warnings while opening documents"
+msgstr ""
 
 #: app/katemain.cpp:81
 msgid "Kate"
@@ -1178,81 +1243,73 @@ msgstr ""
 msgid "Close all documents"
 msgstr "Đóng mọi tài liệu đang mở."
 
-#: app/katemainwindow.cpp:436 app/katedocmanager.cpp:545
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr "Mở tập tin mới khi đóng Kate, không đóng."
-
-#: app/katemainwindow.cpp:437 app/katedocmanager.cpp:546
-msgid "Closing Aborted"
-msgstr "Dừng đóng"
-
 #: app/katemainwindow.cpp:609
 #, kde-format
 msgctxt "'document name [*]', [*] means modified"
 msgid "%1 [*]"
 msgstr ""
 
-#: app/katemainwindow.cpp:801
+#: app/katemainwindow.cpp:796
 msgid "&Other..."
 msgstr "&Khác..."
 
-#: app/katemainwindow.cpp:827
+#: app/katemainwindow.cpp:822
 #, fuzzy, kde-format
 #| msgid "Application '%1' not found!"
 msgid "Application '%1' not found."
 msgstr "Không tìm thấy ứng dụng '%1'!"
 
-#: app/katemainwindow.cpp:827
+#: app/katemainwindow.cpp:822
 #, fuzzy
 msgid "Application not found"
 msgstr "Không tìm thấy ứng dụng!"
 
-#: app/katemdi.cpp:121
+#: app/katemdi.cpp:120
 msgid "Tool &Views"
 msgstr "Ô &xem công cụ"
 
-#: app/katemdi.cpp:123
+#: app/katemdi.cpp:122
 msgid "Show Side&bars"
 msgstr "Hiện kh&ung lề"
 
-#: app/katemdi.cpp:166
+#: app/katemdi.cpp:161
 #, kde-format
 msgid "Show %1"
 msgstr "Hiện %1"
 
-#: app/katemdi.cpp:458
+#: app/katemdi.cpp:453
 msgid "Behavior"
 msgstr "Cư xử"
 
-#: app/katemdi.cpp:461
+#: app/katemdi.cpp:456
 msgid "Make Non-Persistent"
 msgstr "Thành không bền bỉ"
 
-#: app/katemdi.cpp:461
+#: app/katemdi.cpp:456
 msgid "Make Persistent"
 msgstr "Thành bền bỉ"
 
-#: app/katemdi.cpp:463
+#: app/katemdi.cpp:458
 msgid "Move To"
 msgstr "Chuyển tới"
 
-#: app/katemdi.cpp:466
+#: app/katemdi.cpp:461
 msgid "Left Sidebar"
 msgstr "Khung lề trái"
 
-#: app/katemdi.cpp:469
+#: app/katemdi.cpp:464
 msgid "Right Sidebar"
 msgstr "Khung lề phải"
 
-#: app/katemdi.cpp:472
+#: app/katemdi.cpp:467
 msgid "Top Sidebar"
 msgstr "Thanh ở trên"
 
-#: app/katemdi.cpp:475
+#: app/katemdi.cpp:470
 msgid "Bottom Sidebar"
 msgstr "Thanh ở dưới"
 
-#: app/katemdi.cpp:781
+#: app/katemdi.cpp:776
 msgid ""
 "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
 "possible to directly access the tool views with the mouse anymore, so if you "
@@ -1382,6 +1439,54 @@ msgstr ""
 msgid "Diff Output"
 msgstr ""
 
+#: app/katesavemodifieddialog.cpp:91
+#, kde-format
+msgid "Save As (%1)"
+msgstr "Lưu như (%1)"
+
+#: app/katesavemodifieddialog.cpp:163
+msgid "Save Documents"
+msgstr "Lưu tài liệu"
+
+#: app/katesavemodifieddialog.cpp:169
+msgid "&Save Selected"
+msgstr "&Lưu đã chọn"
+
+#: app/katesavemodifieddialog.cpp:177
+#, fuzzy
+#| msgid "Do Not Save"
+msgid "Do &Not Close"
+msgstr "Không lưu"
+
+#: app/katesavemodifieddialog.cpp:184
+msgid ""
+"<qt>The following documents have been modified. Do you want to save them "
+"before closing?</qt>"
+msgstr ""
+"<qt>Những tài liệu sau đã có thay đổi. Bạn có muốn ghi chúng trước khi đóng?"
+"<qt>"
+
+#: app/katesavemodifieddialog.cpp:187
+#: plugins/filetree/katefiletreeplugin.cpp:159
+msgid "Documents"
+msgstr "Tài liệu"
+
+#: app/katesavemodifieddialog.cpp:187
+msgid "Location"
+msgstr "Vị trí"
+
+#: app/katesavemodifieddialog.cpp:196
+msgid "Se&lect All"
+msgstr "&Chọn tất cả"
+
+#: app/katesavemodifieddialog.cpp:247
+msgid ""
+"Data you requested to be saved could not be written. Please choose how you "
+"want to proceed."
+msgstr ""
+"Không ghi được dữ liệu bạn yêu cầu lưu. Xin hãy chọn thao tác thực hiện tiếp "
+"theo."
+
 #: app/katesession.cpp:269
 msgid ""
 "Internal error: there is more than one instance open for a given session."
@@ -1489,6 +1594,88 @@ msgstr ""
 msgid "Session Renaming"
 msgstr "Tên phiên chạy:"
 
+#: app/kateviewmanager.cpp:127
+msgid "Split Ve&rtical"
+msgstr "Chia &dọc"
+
+#: app/kateviewmanager.cpp:131
+msgid "Split the currently active view vertically into two views."
+msgstr "Chia ô xem hiện thời thành hai ô bằng một đường thẳng đứng."
+
+#: app/kateviewmanager.cpp:135
+msgid "Split &Horizontal"
+msgstr "Chia &ngang"
+
+#: app/kateviewmanager.cpp:139
+msgid "Split the currently active view horizontally into two views."
+msgstr "Chia ô xem hiện thời thành hai ô bằng một đường nằm ngang."
+
+#: app/kateviewmanager.cpp:143
+msgid "Cl&ose Current View"
+msgstr "Đóng ô &xem hiện thời"
+
+#: app/kateviewmanager.cpp:147
+msgid "Close the currently active splitted view"
+msgstr "Đóng ô xem đã được chia hiện thời"
+
+#: app/kateviewmanager.cpp:150
+#, fuzzy
+#| msgid "Next View"
+msgid "Next Split View"
+msgstr "Ô xem tiếp theo"
+
+#: app/kateviewmanager.cpp:154
+msgid "Make the next split view the active one."
+msgstr "Chọn ô xem đã chia tiếp theo"
+
+#: app/kateviewmanager.cpp:157
+#, fuzzy
+#| msgid "Previous View"
+msgid "Previous Split View"
+msgstr "Ô xem trước"
+
+#: app/kateviewmanager.cpp:161
+msgid "Make the previous split view the active one."
+msgstr "Chọn ô xem đã chia trước."
+
+#: app/kateviewmanager.cpp:164
+msgid "Move Splitter Right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:167
+msgid "Move the splitter of the current view to the right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:170
+msgid "Move Splitter Left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:173
+msgid "Move the splitter of the current view to the left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:176
+msgid "Move Splitter Up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:179
+msgid "Move the splitter of the current view up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:182
+msgid "Move Splitter Down"
+msgstr ""
+
+#: app/kateviewmanager.cpp:185
+#, fuzzy
+#| msgid "Make the next split view the active one."
+msgid "Move the splitter of the current view down"
+msgstr "Chọn ô xem đã chia tiếp theo"
+
+#: app/kateviewmanager.cpp:214
+msgid "Open File"
+msgstr "Mở tập tin"
+
 #: app/kateviewspace.cpp:256 app/kateviewspace.cpp:361
 #, kde-format
 msgid " Line: %1 Col: %2 "
@@ -1510,192 +1697,70 @@ msgstr " CHÈN "
 msgid " BLOCK "
 msgstr " BLK "
 
-#: app/kateviewmanager.cpp:120
-msgid "Split Ve&rtical"
-msgstr "Chia &dọc"
-
-#: app/kateviewmanager.cpp:124
-msgid "Split the currently active view vertically into two views."
-msgstr "Chia ô xem hiện thời thành hai ô bằng một đường thẳng đứng."
-
-#: app/kateviewmanager.cpp:128
-msgid "Split &Horizontal"
-msgstr "Chia &ngang"
-
-#: app/kateviewmanager.cpp:132
-msgid "Split the currently active view horizontally into two views."
-msgstr "Chia ô xem hiện thời thành hai ô bằng một đường nằm ngang."
-
-#: app/kateviewmanager.cpp:136
-msgid "Cl&ose Current View"
-msgstr "Đóng ô &xem hiện thời"
-
-#: app/kateviewmanager.cpp:140
-msgid "Close the currently active splitted view"
-msgstr "Đóng ô xem đã được chia hiện thời"
-
-#: app/kateviewmanager.cpp:143
+#: plugins/filetree/katefiletree.cpp:50
 #, fuzzy
-#| msgid "Next View"
-msgid "Next Split View"
-msgstr "Ô xem tiếp theo"
+#| msgid "Clos&e All"
+msgid "Close"
+msgstr "Đón&g tất cả"
 
-#: app/kateviewmanager.cpp:147
-msgid "Make the next split view the active one."
-msgstr "Chọn ô xem đã chia tiếp theo"
+#: plugins/filetree/katefiletree.cpp:56
+msgid "Tree Mode"
+msgstr ""
 
-#: app/kateviewmanager.cpp:150
+#: plugins/filetree/katefiletree.cpp:57
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:60
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:61
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:66
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+msgid "Document Name"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:67
 #, fuzzy
-#| msgid "Previous View"
-msgid "Previous Split View"
-msgstr "Ô xem trước"
+#| msgid "Document Name"
+msgid "Sort by Document Name"
+msgstr "Tên tài liệu"
 
-#: app/kateviewmanager.cpp:154
-msgid "Make the previous split view the active one."
-msgstr "Chọn ô xem đã chia trước."
-
-#: app/kateviewmanager.cpp:157
-msgid "Move Splitter Right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:160
-msgid "Move the splitter of the current view to the right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:163
-msgid "Move Splitter Left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:166
-msgid "Move the splitter of the current view to the left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:169
-msgid "Move Splitter Up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:172
-msgid "Move the splitter of the current view up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:175
-msgid "Move Splitter Down"
-msgstr ""
-
-#: app/kateviewmanager.cpp:178
+#: plugins/filetree/katefiletree.cpp:71
 #, fuzzy
-#| msgid "Make the next split view the active one."
-msgid "Move the splitter of the current view down"
-msgstr "Chọn ô xem đã chia tiếp theo"
+#| msgid "Document List"
+msgid "Document Path"
+msgstr "Danh sách tài liệu"
 
-#: app/kateviewmanager.cpp:207
-msgid "Open File"
-msgstr "Mở tập tin"
-
-#: app/katedocmanager.cpp:69
+#: plugins/filetree/katefiletree.cpp:72
 #, fuzzy
-#| msgid ""
-#| "A KDE text-editor component could not be found;\n"
-#| "please check your KDE installation."
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-"Không tìm thấy một thành phần trình soạn thảo văn bản của KDE;\n"
-"xin hãy kiểm tra lại cài đặt KDE."
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Hiển thị mọi tài liệu >>"
 
-#: app/katedocmanager.cpp:366
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
+#: plugins/filetree/katefiletree.cpp:75
+#: plugins/filetree/katefiletreeconfigpage.cpp:86
+msgid "Opening Order"
+msgstr "Thứ tự mở"
 
-#: app/katedocmanager.cpp:368
+#: plugins/filetree/katefiletree.cpp:76
 #, fuzzy
-msgid "Delete File?"
-msgstr "Xóa"
+#| msgid "Opening Order"
+msgid "Sort by Opening Order"
+msgstr "Thứ tự mở"
 
-#: app/katedocmanager.cpp:510
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
-#| "save your changes or discard them?"
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
+#: plugins/filetree/katefiletree.cpp:183
+msgid "View Mode"
 msgstr ""
-"<p>Tài liệu '%1' đã có thay đổi nhưng chưa được lưu. <p>Bạn muốn lưu những "
-"thay đổi đó hay bỏ chúng đi?"
 
-#: app/katedocmanager.cpp:512
-msgid "Close Document"
-msgstr "Đóng tài liệu"
-
-#: app/katedocmanager.cpp:519
+#: plugins/filetree/katefiletree.cpp:187
 #, fuzzy
-msgid "Save As"
-msgstr "&Lưu như..."
-
-#: app/katedocmanager.cpp:619
-msgid "Starting Up"
-msgstr "Đang khởi động"
-
-#: app/katedocmanager.cpp:620
-msgid "Reopening files from the last session..."
-msgstr "Mở lại tập tin từ phiên chạy cuối..."
-
-#: app/katedocmanager.cpp:826
-msgid "Errors/Warnings while opening documents"
-msgstr ""
-
-#: app/katesavemodifieddialog.cpp:91
-#, kde-format
-msgid "Save As (%1)"
-msgstr "Lưu như (%1)"
-
-#: app/katesavemodifieddialog.cpp:163
-msgid "Save Documents"
-msgstr "Lưu tài liệu"
-
-#: app/katesavemodifieddialog.cpp:169
-msgid "&Save Selected"
-msgstr "&Lưu đã chọn"
-
-#: app/katesavemodifieddialog.cpp:177
-#, fuzzy
-#| msgid "Do Not Save"
-msgid "Do &Not Close"
-msgstr "Không lưu"
-
-#: app/katesavemodifieddialog.cpp:184
-msgid ""
-"<qt>The following documents have been modified. Do you want to save them "
-"before closing?</qt>"
-msgstr ""
-"<qt>Những tài liệu sau đã có thay đổi. Bạn có muốn ghi chúng trước khi đóng?"
-"<qt>"
-
-#: app/katesavemodifieddialog.cpp:187
-#: plugins/filetree/katefiletreeplugin.cpp:155
-msgid "Documents"
-msgstr "Tài liệu"
-
-#: app/katesavemodifieddialog.cpp:187
-msgid "Location"
-msgstr "Vị trí"
-
-#: app/katesavemodifieddialog.cpp:196
-msgid "Se&lect All"
-msgstr "&Chọn tất cả"
-
-#: app/katesavemodifieddialog.cpp:247
-msgid ""
-"Data you requested to be saved could not be written. Please choose how you "
-"want to proceed."
-msgstr ""
-"Không ghi được dữ liệu bạn yêu cầu lưu. Xin hãy chọn thao tác thực hiện tiếp "
-"theo."
+msgid "Sort By"
+msgstr "Sắp &xếp theo"
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:60
 msgid "Background Shading"
@@ -1713,16 +1778,6 @@ msgstr "&Bóng các tài liệu đã sửa:"
 msgid "&Sort by:"
 msgstr "&Sắp xếp theo:"
 
-#: plugins/filetree/katefiletreeconfigpage.cpp:86
-#: plugins/filetree/katefiletree.cpp:75
-msgid "Opening Order"
-msgstr "Thứ tự mở"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:87
-#: plugins/filetree/katefiletree.cpp:66
-msgid "Document Name"
-msgstr "Tên tài liệu"
-
 #: plugins/filetree/katefiletreeconfigpage.cpp:88
 msgid "Url"
 msgstr ""
@@ -1733,7 +1788,7 @@ msgid "&View Mode:"
 msgstr "&Mới"
 
 #: plugins/filetree/katefiletreeconfigpage.cpp:99
-#: plugins/filetree/katefiletreeplugin.cpp:84
+#: plugins/filetree/katefiletreeplugin.cpp:88
 #, fuzzy
 msgid "Tree View"
 msgstr "Ô xem trước"
@@ -1787,69 +1842,14 @@ msgstr "Tên tài liệu"
 msgid "Show open documents in a tree"
 msgstr ""
 
-#: plugins/filetree/katefiletreeplugin.cpp:92
+#: plugins/filetree/katefiletreeplugin.cpp:96
 #, fuzzy
 msgid "Configure Tree View"
 msgstr "Ô xem trước"
 
-#: plugins/filetree/katefiletreeplugin.cpp:195
+#: plugins/filetree/katefiletreeplugin.cpp:202
 msgid "&Show Active"
 msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:50
-#, fuzzy
-#| msgid "Clos&e All"
-msgid "Close"
-msgstr "Đón&g tất cả"
-
-#: plugins/filetree/katefiletree.cpp:56
-msgid "Tree Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:57
-msgid "Set view style to Tree Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:60
-msgid "List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:61
-msgid "Set view style to List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:67
-#, fuzzy
-#| msgid "Document Name"
-msgid "Sort by Document Name"
-msgstr "Tên tài liệu"
-
-#: plugins/filetree/katefiletree.cpp:71
-#, fuzzy
-#| msgid "Document List"
-msgid "Document Path"
-msgstr "Danh sách tài liệu"
-
-#: plugins/filetree/katefiletree.cpp:72
-#, fuzzy
-#| msgid "&Show All Documents >>"
-msgid "Sort by Document Path"
-msgstr "&Hiển thị mọi tài liệu >>"
-
-#: plugins/filetree/katefiletree.cpp:76
-#, fuzzy
-#| msgid "Opening Order"
-msgid "Sort by Opening Order"
-msgstr "Thứ tự mở"
-
-#: plugins/filetree/katefiletree.cpp:183
-msgid "View Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:187
-#, fuzzy
-msgid "Sort By"
-msgstr "Sắp &xếp theo"
 
 #~ msgid "Title"
 #~ msgstr "Tựa"

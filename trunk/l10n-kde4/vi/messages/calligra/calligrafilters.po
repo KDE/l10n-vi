@@ -48,7 +48,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-21 03:46+0200\n"
+"POT-Creation-Date: 2011-07-06 03:51+0200\n"
 "PO-Revision-Date: 2008-01-24 15:51+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -188,7 +188,7 @@ msgid "Width (%)"
 msgstr "Chiều rộng (%)"
 
 #: kpresenter/pptx/PptxImport.cpp:1100 tables/xlsx/XlsxImport.cpp:571
-#: words/docx/DocxImport.cpp:166
+#: words/docx/DocxImport.cpp:168
 #, fuzzy, kde-format
 #| msgid "Could not read from file."
 msgid "Unable to find part for type %1"
@@ -205,10 +205,9 @@ msgstr "Không thể đọc từ tập tin."
 #: tables/xlsx/XlsxXmlTableReader.cpp:78
 #: tables/xlsx/XlsxXmlWorksheetReader.cpp:280
 #: words/docx/DocxXmlFootnoteReader.cpp:89
-#: words/docx/DocxXmlNotesReader.cpp:94
-#: words/docx/DocxXmlNumberingReader.cpp:89
 #: words/docx/DocxXmlEndnoteReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:94 words/docx/DocxXmlHeaderReader.cpp:94
+#: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlCommentsReader.cpp:89
 #: words/docx/DocxXmlSettingsReader.cpp:87
 #: words/docx/DocxXmlDocumentReader.cpp:194
@@ -297,25 +296,6 @@ msgstr ""
 msgid "None of expected elements found: %1"
 msgstr ""
 
-#: libmsooxml/MsooXmlRelationships.cpp:97
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Could not find target for id \"%1\" in file \"%2\""
-msgstr "Không thể đọc từ tập tin."
-
-#: libmsooxml/MsooXmlRelationships.cpp:101
-#: libmsooxml/MsooXmlRelationships.cpp:120
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Could not find relationships file \"%1\""
-msgstr "Không thể đọc từ tập tin."
-
-#: libmsooxml/MsooXmlRelationships.cpp:115
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Could not find target for relationship \"%1\" in file \"%2\""
-msgstr "Không thể đọc từ tập tin."
-
 #: libmsooxml/MsooXmlUtils.cpp:180 words/abiword/abiwordimport.cc:1440
 #: words/libexport/KWEFWordsLeader.cc:1205
 msgid "QXml"
@@ -354,6 +334,25 @@ msgstr ""
 #, fuzzy
 #| msgid "Could not read from file."
 msgid "Could not write block"
+msgstr "Không thể đọc từ tập tin."
+
+#: libmsooxml/MsooXmlRelationships.cpp:97
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Could not find target for id \"%1\" in file \"%2\""
+msgstr "Không thể đọc từ tập tin."
+
+#: libmsooxml/MsooXmlRelationships.cpp:101
+#: libmsooxml/MsooXmlRelationships.cpp:120
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Could not find relationships file \"%1\""
+msgstr "Không thể đọc từ tập tin."
+
+#: libmsooxml/MsooXmlRelationships.cpp:115
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Could not find target for relationship \"%1\" in file \"%2\""
 msgstr "Không thể đọc từ tập tin."
 
 #: libmsooxml/MsooXmlImport.cpp:98
@@ -631,11 +630,6 @@ msgstr "Bộ lọc Nhập Văn bản không được định dạng của KWord"
 msgid "Words's Plain Text Export Filter"
 msgstr "Bộ lọc Xuất Văn bản không được định dạng của KWord"
 
-#: words/docx/DocxXmlNotesReader.cpp:165
-#, kde-format
-msgid "Note \"%1\" already exists"
-msgstr ""
-
 #: words/html/export/ExportDialog.cc:44
 #, fuzzy
 #| msgid "KWord's HTML Export Filter"
@@ -797,64 +791,22 @@ msgctxt "Pseudo-author for annotations"
 msgid "KWord 1.3"
 msgstr "KWord 1.3"
 
-#: words/rtf/import/rtfimport.cpp:332
-msgid "The file cannot be loaded, as it cannot be opened."
-msgstr "Không thể tải tập tin vì không mở được nó."
+#: words/rtf/import/rtfimport.cpp:56
+msgid "The file cannot be loaded, as it seems not to be an RTF document."
+msgstr "Không thể tải tập tin vì nó trông không giống một tài liệu RTF."
 
-#: words/rtf/import/rtfimport.cpp:333 words/rtf/import/rtfimport.cpp:348
-#: words/rtf/import/rtfimport.cpp:363 words/rtf/import/rtfimport.cpp:376
-#: words/rtf/import/rtfimport.cpp:390 words/rtf/import/rtfimport.cpp:404
-#: words/rtf/import/rtfimport.cpp:417
+#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
+#: words/rtf/import/rtfimport.cpp:81
 #, fuzzy
 #| msgid "KWord's RTF Import Filter"
 msgid "Words's RTF Import Filter"
 msgstr "Bộ lọc Nhập RTF của KWor"
 
-#: words/rtf/import/rtfimport.cpp:347
-msgid "The file cannot be loaded, as it seems not to be an RTF document."
-msgstr "Không thể tải tập tin vì nó trông không giống một tài liệu RTF."
-
-#: words/rtf/import/rtfimport.cpp:362
+#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
 #, fuzzy
-msgid ""
-"The document cannot be loaded, as it seems not to follow the RTF syntax."
-msgstr "Không thể tải tài liệu vì nó không tuân theo cấu trúc của RTF."
-
-#: words/rtf/import/rtfimport.cpp:375
-#, fuzzy, kde-format
-msgid ""
-"The RTF (Rich Text Format) document has an unexpected version number: %1. "
-"Continuing might result in an erroneous conversion. Do you want to continue?"
-msgstr ""
-"Tài liệu RTF có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
-"chuyển đổi sai. Bạn có muốn tiếp tục?"
-
-#: words/rtf/import/rtfimport.cpp:389
-#, fuzzy, kde-format
-msgid ""
-"The PWD (PocketWord's Rich Text Format) document has an unexpected version "
-"number: %1. Continuing might result in an erroneous conversion. Do you want "
-"to continue?"
-msgstr ""
-"Tài liệu PWD có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
-"chuyển đổi sai. Bạn có muốn tiếp tục?"
-
-#: words/rtf/import/rtfimport.cpp:403
-#, fuzzy, kde-format
-msgid ""
-"The URTF (\"Unicode Rich Text Format\") document has an unexpected version "
-"number: %1. Continuing might result in an erroneous conversion. Do you want "
-"to continue?"
-msgstr ""
-"Tài liệu URTF có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
-"chuyển đổi sai. Bạn có muốn tiếp tục?"
-
-#: words/rtf/import/rtfimport.cpp:416
-#, fuzzy, kde-format
-msgid ""
-"The RTF document cannot be loaded, as it has an unexpected first keyword: \\%"
-"1."
-msgstr "Không thể tải tài liệu RTF do nó có từ khóa không mong đợi: \\%1."
+#| msgid "The file cannot be loaded, as it cannot be opened."
+msgid "The file cannot be loaded."
+msgstr "Không thể tải tập tin vì không mở được nó."
 
 #. i18n: file: xsltfilter/export/xsltdialog.ui:16
 #. i18n: ectx: property (caption), widget (QDialog)
@@ -1957,6 +1909,44 @@ msgstr "Các tập tin XSLT Cá nhân"
 #: rc.cpp:649 rc.cpp:667
 msgid "Choose..."
 msgstr "Chọn..."
+
+#, fuzzy
+#~ msgid ""
+#~ "The document cannot be loaded, as it seems not to follow the RTF syntax."
+#~ msgstr "Không thể tải tài liệu vì nó không tuân theo cấu trúc của RTF."
+
+#, fuzzy
+#~ msgid ""
+#~ "The RTF (Rich Text Format) document has an unexpected version number: %1. "
+#~ "Continuing might result in an erroneous conversion. Do you want to "
+#~ "continue?"
+#~ msgstr ""
+#~ "Tài liệu RTF có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
+#~ "chuyển đổi sai. Bạn có muốn tiếp tục?"
+
+#, fuzzy
+#~ msgid ""
+#~ "The PWD (PocketWord's Rich Text Format) document has an unexpected "
+#~ "version number: %1. Continuing might result in an erroneous conversion. "
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Tài liệu PWD có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
+#~ "chuyển đổi sai. Bạn có muốn tiếp tục?"
+
+#, fuzzy
+#~ msgid ""
+#~ "The URTF (\"Unicode Rich Text Format\") document has an unexpected "
+#~ "version number: %1. Continuing might result in an erroneous conversion. "
+#~ "Do you want to continue?"
+#~ msgstr ""
+#~ "Tài liệu URTF có số phiên bản không mong đợi: %1. Tiếp tục có thể dẫn đến "
+#~ "chuyển đổi sai. Bạn có muốn tiếp tục?"
+
+#, fuzzy
+#~ msgid ""
+#~ "The RTF document cannot be loaded, as it has an unexpected first keyword: "
+#~ "\\%1."
+#~ msgstr "Không thể tải tài liệu RTF do nó có từ khóa không mong đợi: \\%1."
 
 #~ msgid "Old &method: If the line is empty or has less than 40 characters"
 #~ msgstr "&Kiểu cũ: nếu dòng trống hoặc có ít hơn 40 kí tự"

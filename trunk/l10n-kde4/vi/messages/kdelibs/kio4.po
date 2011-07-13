@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-12 04:33+0200\n"
+"POT-Creation-Date: 2011-07-13 04:16+0200\n"
 "PO-Revision-Date: 2007-12-26 00:38+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: American English <kde-i18n-doc@lists.kde.org>\n"
@@ -5734,12 +5734,12 @@ msgstr "Bản tóm tắt MD5:"
 msgid "SHA1 digest:"
 msgstr "Bản tóm tắt MD5:"
 
-#: ../kioslave/file/file.cpp:211
+#: ../kioslave/file/file_unix.cpp:231
 #, kde-format
-msgid "Setting ACL for %1"
-msgstr "Đang đặt ACL cho %1"
+msgid "Cannot copy file from %1 to %2. (Errno: %3)"
+msgstr "Không thể sao chép tập tin từ %1 sang %2. (Lỗi : %3)"
 
-#: ../kioslave/file/file.cpp:728 ../kioslave/file/file_unix.cpp:300
+#: ../kioslave/file/file_unix.cpp:300 ../kioslave/file/file.cpp:728
 #, kde-format
 msgid ""
 "Could not change permissions for\n"
@@ -5747,6 +5747,27 @@ msgid ""
 msgstr ""
 "Không thể thay đổi quyền hạn về\n"
 "%1"
+
+#: ../kioslave/file/file_unix.cpp:344
+#, kde-format
+msgid "No media in device for %1"
+msgstr "Không có vật chứa trong thiết bị cho %1"
+
+#: ../kioslave/file/file_unix.cpp:613
+#, fuzzy, kde-format
+#| msgid "Could not enter folder %1."
+msgid "Could not get user id for given user name %1"
+msgstr "Không thể vào thư mục %1."
+
+#: ../kioslave/file/file_unix.cpp:626
+#, kde-format
+msgid "Could not get group id for given group name %1"
+msgstr ""
+
+#: ../kioslave/file/file.cpp:211
+#, kde-format
+msgid "Setting ACL for %1"
+msgstr "Đang đặt ACL cho %1"
 
 #: ../kioslave/file/file.cpp:918
 msgid "No Media inserted or Media not recognized."
@@ -5780,27 +5801,6 @@ msgstr "Không hỗ trợ khả năng ghi vào %1."
 #, kde-format
 msgid "Could not read %1"
 msgstr "Không thể đọc %1"
-
-#: ../kioslave/file/file_unix.cpp:231
-#, kde-format
-msgid "Cannot copy file from %1 to %2. (Errno: %3)"
-msgstr "Không thể sao chép tập tin từ %1 sang %2. (Lỗi : %3)"
-
-#: ../kioslave/file/file_unix.cpp:344
-#, kde-format
-msgid "No media in device for %1"
-msgstr "Không có vật chứa trong thiết bị cho %1"
-
-#: ../kioslave/file/file_unix.cpp:613
-#, fuzzy, kde-format
-#| msgid "Could not enter folder %1."
-msgid "Could not get user id for given user name %1"
-msgstr "Không thể vào thư mục %1."
-
-#: ../kioslave/file/file_unix.cpp:626
-#, kde-format
-msgid "Could not get group id for given group name %1"
-msgstr ""
 
 #: ../kioslave/ftp/ftp.cpp:341
 #, kde-format

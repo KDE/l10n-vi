@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-04 02:25+0200\n"
+"POT-Creation-Date: 2011-08-05 02:29+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -86,10 +86,6 @@ msgstr ""
 msgid ""
 "Failed to create database<p>Query error: %1</p><p>Database error: %2</p>"
 msgstr ""
-
-#: digikam/album/albumselectdialog.cpp:81
-msgid "Select Album"
-msgstr "Chọn tập ảnh"
 
 #: digikam/album/albumselectwidget.cpp:78
 msgid "Create New Album"
@@ -547,6 +543,51 @@ msgstr ""
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
+#: digikam/album/albumselectcombobox.cpp:76
+#: digikam/album/albumselectcombobox.cpp:86
+#, fuzzy
+#| msgid "%1 items selected"
+msgid "No Album Selected"
+msgstr "%1 mục đã chọn"
+
+#: digikam/album/albumselectcombobox.cpp:93
+#, fuzzy
+#| msgid "%1 items selected"
+msgid "No Tag Selected"
+msgstr "%1 mục đã chọn"
+
+#: digikam/album/albumselectcombobox.cpp:251
+#, fuzzy, kde-format
+#| msgid "%1 items selected"
+msgid "1 Tag selected"
+msgid_plural "%1 Tags selected"
+msgstr[0] "%1 mục đã chọn"
+
+#: digikam/album/albumselectcombobox.cpp:255
+#, fuzzy, kde-format
+#| msgid "%1 items selected"
+msgid "1 Album selected"
+msgid_plural "%1 Albums selected"
+msgstr[0] "%1 mục đã chọn"
+
+#: digikam/album/albumselectcombobox.cpp:264
+#, fuzzy, kde-format
+#| msgid "%1 items selected"
+msgid "1 Tag excluded"
+msgid_plural "%1 Tags excluded"
+msgstr[0] "%1 mục đã chọn"
+
+#: digikam/album/albumselectcombobox.cpp:268
+#, fuzzy, kde-format
+#| msgid "%1 items selected"
+msgid "1 Album excluded"
+msgid_plural "%1 Albums excluded"
+msgstr[0] "%1 mục đã chọn"
+
+#: digikam/album/albumtreeview.cpp:213
+msgid "Context menu"
+msgstr ""
+
 #: digikam/album/albumpropsedit.cpp:119 digikam/album/albumpropsedit.cpp:240
 msgid "New Album"
 msgstr "Tập ảnh mới"
@@ -604,62 +645,21 @@ msgctxt "Selects the date of the newest image"
 msgid "Newest"
 msgstr ""
 
-#: digikam/album/albumpropsedit.cpp:301
+#: digikam/album/albumpropsedit.cpp:298
 msgid "Uncategorized Album"
 msgstr "Tập ảnh chưa phân loại"
 
-#: digikam/album/albumpropsedit.cpp:413
+#: digikam/album/albumpropsedit.cpp:410
 msgid "Could not calculate an average."
 msgstr "Không thể tính số trung bình."
 
-#: digikam/album/albumpropsedit.cpp:414
+#: digikam/album/albumpropsedit.cpp:411
 msgid "Could Not Calculate Average"
 msgstr "Không thể tính trung bình"
 
-#: digikam/album/albumselectcombobox.cpp:76
-#: digikam/album/albumselectcombobox.cpp:86
-#, fuzzy
-#| msgid "%1 items selected"
-msgid "No Album Selected"
-msgstr "%1 mục đã chọn"
-
-#: digikam/album/albumselectcombobox.cpp:93
-#, fuzzy
-#| msgid "%1 items selected"
-msgid "No Tag Selected"
-msgstr "%1 mục đã chọn"
-
-#: digikam/album/albumselectcombobox.cpp:251
-#, fuzzy, kde-format
-#| msgid "%1 items selected"
-msgid "1 Tag selected"
-msgid_plural "%1 Tags selected"
-msgstr[0] "%1 mục đã chọn"
-
-#: digikam/album/albumselectcombobox.cpp:255
-#, fuzzy, kde-format
-#| msgid "%1 items selected"
-msgid "1 Album selected"
-msgid_plural "%1 Albums selected"
-msgstr[0] "%1 mục đã chọn"
-
-#: digikam/album/albumselectcombobox.cpp:264
-#, fuzzy, kde-format
-#| msgid "%1 items selected"
-msgid "1 Tag excluded"
-msgid_plural "%1 Tags excluded"
-msgstr[0] "%1 mục đã chọn"
-
-#: digikam/album/albumselectcombobox.cpp:268
-#, fuzzy, kde-format
-#| msgid "%1 items selected"
-msgid "1 Album excluded"
-msgid_plural "%1 Albums excluded"
-msgstr[0] "%1 mục đã chọn"
-
-#: digikam/album/albumtreeview.cpp:213
-msgid "Context menu"
-msgstr ""
+#: digikam/album/albumselectdialog.cpp:75
+msgid "Select Album"
+msgstr "Chọn tập ảnh"
 
 #: digikam/database/databaseguierrorhandler.cpp:205
 msgid ""
@@ -903,7 +903,7 @@ msgstr "Lọc nhiễu :"
 #: digikam/dragdrop/albumdragdrop.cpp:214
 #: digikam/dragdrop/albumdragdrop.cpp:274
 #: digikam/dragdrop/albumdragdrop.cpp:319
-#: utilities/cameragui/views/cameraiconview.cpp:802
+#: utilities/cameragui/views/cameraiconview.cpp:816
 msgid "C&ancel"
 msgstr "T&hôi"
 
@@ -1705,8 +1705,8 @@ msgstr "Xem..."
 #: digikam/main/digikamapp.cpp:817 digikam/tags/tagmodificationhelper.cpp:254
 #: digikam/utils/editablesearchtreeview.cpp:68
 #: digikam/utils/searchmodificationhelper.cpp:82
-#: utilities/cameragui/main/cameraui.cpp:1954
-#: utilities/cameragui/views/cameraiconview.cpp:592
+#: utilities/cameragui/main/cameraui.cpp:1885
+#: utilities/cameragui/views/cameraiconview.cpp:606
 msgid "Delete"
 msgstr "Xoá"
 
@@ -2320,7 +2320,7 @@ msgid ""
 msgstr ""
 
 #: digikam/main/digikamapp.cpp:2808 digikam/main/digikamapp.cpp:2844
-#: showfoto/main/showfoto.cpp:1118 utilities/cameragui/main/cameraui.cpp:1953
+#: showfoto/main/showfoto.cpp:1118 utilities/cameragui/main/cameraui.cpp:1884
 #: utilities/imageeditor/editor/editorwindow.cpp:1346
 msgid "Warning"
 msgstr "Cảnh báo"
@@ -9155,7 +9155,7 @@ msgid "Chrominance Red Noise"
 msgstr "Độ trưng:"
 
 #: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:134
-#: utilities/cameragui/main/cameraui.cpp:2187
+#: utilities/cameragui/main/cameraui.cpp:2114
 #: utilities/lighttable/lighttablewindow.cpp:1553
 #: utilities/queuemanager/main/queuemgrwindow.cpp:704
 msgid "General"
@@ -11682,7 +11682,7 @@ msgstr "Mô tả"
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
 #: utilities/advancedrename/common/tooltipdialog.cpp:57
 #: utilities/cameragui/main/cameraui.cpp:347
-#: utilities/cameragui/main/cameraui.cpp:1935
+#: utilities/cameragui/main/cameraui.cpp:1866
 msgid "Information"
 msgstr "Thông tin"
 
@@ -15519,7 +15519,7 @@ msgid "Upload..."
 msgstr "Tải lên..."
 
 #: utilities/cameragui/main/cameraui.cpp:436
-#: utilities/cameragui/views/cameraiconview.cpp:590
+#: utilities/cameragui/views/cameraiconview.cpp:604
 msgid "Toggle Lock"
 msgstr "Bật/tắt khoá"
 
@@ -15591,11 +15591,11 @@ msgstr "Thử lại"
 msgid "Abort"
 msgstr "Hủy bỏ"
 
-#: utilities/cameragui/main/cameraui.cpp:1344
+#: utilities/cameragui/main/cameraui.cpp:1326
 msgid "Select Image to Upload"
 msgstr "Chọn ảnh cần tải lên"
 
-#: utilities/cameragui/main/cameraui.cpp:1377
+#: utilities/cameragui/main/cameraui.cpp:1359
 #, kde-format
 msgid ""
 "There is not enough free space on the Camera Medium to upload pictures.\n"
@@ -15604,7 +15604,7 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/main/cameraui.cpp:1427
+#: utilities/cameragui/main/cameraui.cpp:1409
 #, fuzzy, kde-format
 #| msgid ""
 #| "Camera Folder <b>%1</b> already contains item <b>%2</b><br>Please enter a "
@@ -15616,11 +15616,11 @@ msgstr ""
 "Thư mục máy ảnh <b>%1</b> đã chứa mục <b>%2</b><br>Hãy nhập vào tên tập tin "
 "mới (không có phần mở rộng):"
 
-#: utilities/cameragui/main/cameraui.cpp:1430
+#: utilities/cameragui/main/cameraui.cpp:1412
 msgid "File already exists"
 msgstr "Tập tin đã có"
 
-#: utilities/cameragui/main/cameraui.cpp:1522
+#: utilities/cameragui/main/cameraui.cpp:1481
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
 "the camera pictures into.</p>"
@@ -15628,17 +15628,17 @@ msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: utilities/cameragui/main/cameraui.cpp:1553
+#: utilities/cameragui/main/cameraui.cpp:1512
 msgid "Try Anyway"
 msgstr ""
 
-#: utilities/cameragui/main/cameraui.cpp:1555
+#: utilities/cameragui/main/cameraui.cpp:1514
 #, fuzzy
 #| msgid "Download"
 msgid "Cancel Download"
 msgstr "Tải về"
 
-#: utilities/cameragui/main/cameraui.cpp:1558
+#: utilities/cameragui/main/cameraui.cpp:1517
 #, kde-format
 msgid ""
 "There is not enough free space on the disk of the album you selected to "
@@ -15648,17 +15648,17 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: utilities/cameragui/main/cameraui.cpp:1564
+#: utilities/cameragui/main/cameraui.cpp:1523
 msgid "Insufficient Disk Space"
 msgstr ""
 
-#: utilities/cameragui/main/cameraui.cpp:1779
+#: utilities/cameragui/main/cameraui.cpp:1736
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download is completed..."
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/main/cameraui.cpp:1932
+#: utilities/cameragui/main/cameraui.cpp:1863
 msgid ""
 "The items listed below are locked by camera (read-only). These items will "
 "not be deleted. If you really want to delete these items, please unlock them "
@@ -15668,7 +15668,7 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: utilities/cameragui/main/cameraui.cpp:1943
+#: utilities/cameragui/main/cameraui.cpp:1874
 #, fuzzy, kde-format
 #| msgid ""
 #| "About to delete this image. Deleted files are unrecoverable. Are you sure?"
@@ -15680,13 +15680,13 @@ msgid_plural ""
 msgstr[0] ""
 "Sắp xoá ảnh này. Tập tin bị xoá không thể được phục hồi. Bạn có chắc chưa?"
 
-#: utilities/cameragui/main/cameraui.cpp:2116
+#: utilities/cameragui/main/cameraui.cpp:2043
 #, fuzzy, kde-format
 #| msgid "A file with same name (%1) exists in folder %2"
 msgid "A file with the same name (%1) already exists in folder %2."
 msgstr "Một tập tin cùng tên (%1) đã có trong thư mục %2"
 
-#: utilities/cameragui/main/cameraui.cpp:2128
+#: utilities/cameragui/main/cameraui.cpp:2055
 #, fuzzy, kde-format
 #| msgid "Failed to find Album for path '%1'"
 msgid "Failed to find Album for path '%1'."
@@ -15702,24 +15702,24 @@ msgstr "&Tìm ra tự động"
 msgid "Camera Folders"
 msgstr "Thư mục máy ảnh"
 
-#: utilities/cameragui/views/cameraiconview.cpp:586
+#: utilities/cameragui/views/cameraiconview.cpp:600
 #, fuzzy
 #| msgid "&View"
 msgctxt "View the selected image"
 msgid "&View"
 msgstr "&Xem"
 
-#: utilities/cameragui/views/cameraiconview.cpp:588
+#: utilities/cameragui/views/cameraiconview.cpp:602
 msgid "Download"
 msgstr "Tải về"
 
-#: utilities/cameragui/views/cameraiconview.cpp:589
+#: utilities/cameragui/views/cameraiconview.cpp:603
 #, fuzzy
 #| msgid "Download Selected"
 msgid "Download && Delete"
 msgstr "Tải về các điều chọn"
 
-#: utilities/cameragui/views/cameraiconview.cpp:800
+#: utilities/cameragui/views/cameraiconview.cpp:814
 #, fuzzy
 #| msgid "&Upload into camera"
 msgid "&Upload to camera"

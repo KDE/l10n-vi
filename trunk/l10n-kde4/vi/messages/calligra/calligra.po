@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-04 02:21+0200\n"
+"POT-Creation-Date: 2011-08-08 02:19+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -66,10 +66,6 @@ msgstr ""
 msgctxt "(qtundo-format)"
 msgid "Paste Shapes"
 msgstr "Dán Các hình"
-
-#: flake/KoToolBase.cpp:198 main/KoToolDocker.cpp:198
-msgid "Tool Options"
-msgstr "Cấu hình Công cụ"
 
 #: flake/KoToolManager.cpp:366
 #, kde-format
@@ -371,6 +367,21 @@ msgstr "Mở tài liệu"
 msgid "Pan"
 msgstr ""
 
+#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Change Segment"
+msgstr "Thay đổi Liên hệ"
+
+#: flake/tools/KoPathToolFactory.cpp:29
+msgid "Path editing tool"
+msgstr ""
+
+#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
+#: widgets/KoZoomController.cpp:39
+msgid "Zoom"
+msgstr ""
+
 #: flake/tools/KoPathTool.cpp:90
 msgid "Corner point"
 msgstr "Điểm góc"
@@ -441,47 +452,32 @@ msgstr "Tới đường"
 msgid "Line/Curve"
 msgstr "Cong"
 
-#: flake/tools/KoPathTool.cpp:184 flake/tools/KoCreatePathTool.cpp:369
+#: flake/tools/KoPathTool.cpp:185 flake/tools/KoCreatePathTool.cpp:369
 msgid "Snapping"
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:519
+#: flake/tools/KoPathTool.cpp:520
 msgid "Drag to move handle."
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:583
+#: flake/tools/KoPathTool.cpp:584
 msgid "Drag to move point. Shift click to change point type."
 msgstr ""
 
-#: flake/tools/KoPathTool.cpp:585
+#: flake/tools/KoPathTool.cpp:586
 #, fuzzy
 #| msgid "Move control point"
 msgid "Drag to move control point."
 msgstr "Di chuyển điểm điều khiển"
 
-#: flake/tools/KoPathTool.cpp:610
+#: flake/tools/KoPathTool.cpp:611
 #, fuzzy
 #| msgid "Break subpath at points"
 msgid "Press B to break path at selected point."
 msgstr "Ngắt đường con tại các điểm"
 
-#: flake/tools/KoPathTool.cpp:612
+#: flake/tools/KoPathTool.cpp:613
 msgid "Press B to break path at selected segments."
-msgstr ""
-
-#: flake/tools/KoPathSegmentChangeStrategy.cpp:145
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Change Segment"
-msgstr "Thay đổi Liên hệ"
-
-#: flake/tools/KoPathToolFactory.cpp:29
-msgid "Path editing tool"
-msgstr ""
-
-#: flake/tools/KoZoomToolFactory.cpp:29 widgets/KoZoomAction.cpp:255
-#: widgets/KoZoomController.cpp:39
-msgid "Zoom"
 msgstr ""
 
 #: flake/tools/KoCreatePathTool.cpp:375
@@ -2776,6 +2772,10 @@ msgstr "Không có ảnh nào."
 msgid "Use This Template"
 msgstr "Dùng mẫu này"
 
+#: main/KoToolDocker.cpp:198
+msgid "Tool Options"
+msgstr "Cấu hình Công cụ"
+
 #: main/KoToolDocker.cpp:237
 msgid "Toggles showing a title bar"
 msgstr ""
@@ -4633,18 +4633,6 @@ msgstr ""
 msgid "Guide lines"
 msgstr "Các đường dóng"
 
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
-#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
-#: rc.cpp:35
-msgid "Zoom In"
-msgstr ""
-
-#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
-#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
-#: rc.cpp:38
-msgid "Zoom Out"
-msgstr ""
-
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:39
 #. i18n: ectx: property (text), widget (QToolButton, corner)
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:46
@@ -4679,17 +4667,29 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, open)
 #. i18n: file: widgets/KoEditColorSet.ui:78
 #. i18n: ectx: property (text), widget (QToolButton, save)
-#: rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53 rc.cpp:56 rc.cpp:59
-#: rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:74 rc.cpp:77 rc.cpp:535
+#: rc.cpp:35 rc.cpp:38 rc.cpp:41 rc.cpp:44 rc.cpp:47 rc.cpp:50 rc.cpp:53
+#: rc.cpp:56 rc.cpp:59 rc.cpp:62 rc.cpp:65 rc.cpp:68 rc.cpp:71 rc.cpp:535
 #: rc.cpp:541 rc.cpp:547 rc.cpp:553
 msgid "..."
 msgstr "..."
 
 #. i18n: file: flake/tools/PathToolOptionWidgetBase.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, convertToPath)
-#: rc.cpp:80
+#: rc.cpp:74
 msgid "Convert To Path"
 msgstr "Hoán chuyển thành Đường"
+
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:20
+#. i18n: ectx: property (text), widget (QRadioButton, zoomInButton)
+#: rc.cpp:77
+msgid "Zoom In"
+msgstr ""
+
+#. i18n: file: flake/tools/KoZoomToolWidget.ui:30
+#. i18n: ectx: property (text), widget (QRadioButton, zoomOutButton)
+#: rc.cpp:80
+msgid "Zoom Out"
+msgstr ""
 
 #. i18n: file: kopageapp/tools/backgroundTool/BackgroundToolWidget.ui:18
 #. i18n: ectx: property (text), widget (QPushButton, backgroundImage)

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 03:59+0200\n"
+"POT-Creation-Date: 2011-08-13 02:08+0200\n"
 "PO-Revision-Date: 2008-01-18 11:33+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -16,6 +16,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KAider 0.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: kpresenter/genericimageexport/genericimageexport.cpp:134
+msgid "Failed to write file."
+msgstr ""
+
+#: kpresenter/genericimageexport/genericimageexport.cpp:135
+#, kde-format
+msgid "%1 Export Error"
+msgstr ""
+
+#: kpresenter/pptx/PptxImport.cpp:1100
+#, kde-format
+msgid "Unable to find part for type %1"
+msgstr ""
+
+#: kpresenter/pptx/PptxXmlDocumentReader.cpp:153
+#: kpresenter/pptx/PptxXmlSlideReader.cpp:307
+#, kde-format
+msgid "Namespace \"%1\" not found"
+msgstr ""
+
+#: kpresenter/pptx/PptxXmlDocumentReader.cpp:288
+#, kde-format
+msgid "Slide layout \"%1\" not found"
+msgstr ""
+
+#: kpresenter/pptx/PptxXmlSlideReader.cpp:552
+#: part/KPrCustomSlideShowsModel.cpp:70
+#: part/KPrSlidesSorterDocumentModel.cpp:101
+#: part/ui/KPrHtmlExportDialog.cpp:119
+#, kde-format
+msgid "Slide %1"
+msgstr "Slide %1"
+
+#: kpresenter/words/odp2odt.cpp:287
+msgid "Slide Title"
+msgstr "Đầu đề slide"
 
 #: part/KPrAboutData.h:27
 #, fuzzy
@@ -135,6 +172,11 @@ msgstr ""
 msgid "Timothée Lacroix "
 msgstr ""
 
+#: part/KPrCustomSlideShowsModel.cpp:65
+#: part/KPrSlidesSorterDocumentModel.cpp:96
+msgid "Unknown"
+msgstr ""
+
 #: part/KPrDocument.cpp:404
 msgid "Installation Error"
 msgstr ""
@@ -223,7 +265,7 @@ msgstr "Danh sách &bullet"
 msgid "Yellow"
 msgstr "Slideshow"
 
-#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:92
+#: part/KPrPresenterViewInterface.cpp:67 part/KPrView.cpp:93
 #, fuzzy
 msgid "Next Slide"
 msgstr "Bước &kế"
@@ -244,154 +286,255 @@ msgstr "Tạo HTML Slideshow"
 msgid "End of Slide Show"
 msgstr "Trình diễn"
 
-#: part/KPrView.cpp:79
+#: part/KPrSlidesSorterDocumentModel.cpp:301
+#, fuzzy
+msgid "&Move Here"
+msgstr "Slide"
+
+#: part/KPrSlidesSorterDocumentModel.cpp:305
+#, fuzzy
+msgid "&Copy Here"
+msgstr "Slide"
+
+#: part/KPrSlidesSorterDocumentModel.cpp:309
+#, fuzzy
+#| msgid "&Cancel"
+msgid "C&ancel"
+msgstr "&Hủy bỏ"
+
+#: part/KPrView.cpp:75
+msgid "Normal"
+msgstr "Thông thường "
+
+#: part/KPrView.cpp:80
 #, fuzzy
 msgid "Show Master Slides"
 msgstr "Slide"
 
-#: part/KPrView.cpp:80
+#: part/KPrView.cpp:81
 #, fuzzy
 msgid "Import Slideshow..."
 msgstr "Nhảy tới Trang..."
 
-#: part/KPrView.cpp:81
+#: part/KPrView.cpp:82
 #, fuzzy
 msgid "Insert Slide"
 msgstr "Chèn dòng"
 
-#: part/KPrView.cpp:82 part/KPrView.cpp:83
+#: part/KPrView.cpp:83 part/KPrView.cpp:84
 msgid "Insert a new slide after the current one"
 msgstr ""
 
-#: part/KPrView.cpp:84
+#: part/KPrView.cpp:85
 #, fuzzy
 msgid "Copy Slide"
 msgstr "Slide"
 
-#: part/KPrView.cpp:85 part/KPrView.cpp:86
+#: part/KPrView.cpp:86 part/KPrView.cpp:87
 #, fuzzy
 msgid "Copy the current slide"
 msgstr "Trước trang hiện tại"
 
-#: part/KPrView.cpp:87
+#: part/KPrView.cpp:88
 #, fuzzy
 msgid "Delete Slide"
 msgstr "Slide đã chọ&n"
 
-#: part/KPrView.cpp:88 part/KPrView.cpp:89
+#: part/KPrView.cpp:89 part/KPrView.cpp:90
 #, fuzzy
 msgid "Delete the current slide"
 msgstr "Trước trang hiện tại"
 
-#: part/KPrView.cpp:90
+#: part/KPrView.cpp:91
 #, fuzzy
 msgid "Master Slide..."
 msgstr "Chèn dòng"
 
-#: part/KPrView.cpp:91
+#: part/KPrView.cpp:92
 #, fuzzy
 msgid "Previous Slide"
 msgstr "Bước &trước"
 
-#: part/KPrView.cpp:93
+#: part/KPrView.cpp:94
 #, fuzzy
 msgid "First Slide"
 msgstr "Slide"
 
-#: part/KPrView.cpp:94
+#: part/KPrView.cpp:95
 #, fuzzy
 msgid "Last Slide"
 msgstr "Slide"
 
-#: part/KPrView.cpp:95
+#: part/KPrView.cpp:96
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure KPresenter..."
 msgstr "Cấu hình KPresenter..."
 
-#: part/KPrView.cpp:202
+#: part/KPrView.cpp:207
 msgid "Export as HTML..."
 msgstr ""
 
-#: part/KPrView.cpp:206
-msgid "Normal"
-msgstr "Thông thường "
-
-#: part/KPrView.cpp:213
-#, fuzzy
-msgid "Notes"
-msgstr "Không bút"
-
-#: part/KPrView.cpp:219
-#, fuzzy
-msgid "Slides Sorter"
-msgstr "Đầu đề slide"
-
-#: part/KPrView.cpp:228
+#: part/KPrView.cpp:233
 #, fuzzy
 #| msgid "Insert Picture"
 msgid "Insert Pictures..."
 msgstr "Chèn ảnh"
 
-#: part/KPrView.cpp:237
+#: part/KPrView.cpp:242
 #, fuzzy
 #| msgid "Create HTML Presentation"
 msgid "Create Appear Animation"
 msgstr "Hoạt cảnh tạo hình"
 
-#: part/KPrView.cpp:241
+#: part/KPrView.cpp:246
 #, fuzzy
 msgid "Edit Custom Slide Shows..."
 msgstr "&Cấu hình trang ..."
 
-#: part/KPrView.cpp:245
+#: part/KPrView.cpp:250
 msgid "Start Presentation"
 msgstr "Bắt đầu Trình diễn"
 
-#: part/KPrView.cpp:248
+#: part/KPrView.cpp:253
 #, fuzzy
 msgid "From Current Slide"
 msgstr "Sau trang hiện tại"
 
-#: part/KPrView.cpp:252
+#: part/KPrView.cpp:257
 msgid "From First Slide"
 msgstr ""
 
-#: part/KPrView.cpp:257
+#: part/KPrView.cpp:262
 msgid "Show Status Bar"
 msgstr ""
 
-#: part/KPrView.cpp:258
+#: part/KPrView.cpp:263
 msgid "Hide Status Bar"
 msgstr ""
 
-#: part/KPrView.cpp:259
+#: part/KPrView.cpp:264
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: part/KPrView.cpp:268
+#: part/KPrView.cpp:273
 #, fuzzy
 msgid "Configure Slide Show..."
 msgstr "&Cấu hình trang ..."
 
-#: part/KPrView.cpp:272
+#: part/KPrView.cpp:277
 #, fuzzy
 #| msgid "Configure KPresenter..."
 msgid "Configure Presenter View..."
 msgstr "Cấu hình KPresenter..."
 
-#: part/KPrView.cpp:276
+#: part/KPrView.cpp:281
 #, fuzzy
 msgid "Draw on the presentation..."
 msgstr "&Thoát Presentation"
 
-#: part/KPrView.cpp:283
+#: part/KPrView.cpp:288
 msgid "Highlight the presentation..."
 msgstr ""
 
-#: part/KPrView.cpp:290
+#: part/KPrView.cpp:295
 msgid "Blackscreen on the presentation..."
 msgstr ""
+
+#: part/KPrViewModeNotes.cpp:50
+#, fuzzy
+msgid "Notes"
+msgstr "Không bút"
+
+#: part/KPrViewModeSlidesSorter.cpp:76
+#, fuzzy
+msgid "Slides Sorter"
+msgstr "Đầu đề slide"
+
+#: part/KPrViewModeSlidesSorter.cpp:83
+#, fuzzy
+#| msgid "Slide Show"
+msgid "Slide Show: "
+msgstr "Trình diễn"
+
+#: part/KPrViewModeSlidesSorter.cpp:92
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new custom slide show"
+msgstr "Slideshow"
+
+#: part/KPrViewModeSlidesSorter.cpp:97
+#, fuzzy
+msgid "Delete current custom slide show"
+msgstr "Trước trang hiện tại"
+
+#: part/KPrViewModeSlidesSorter.cpp:101
+#, fuzzy
+msgid "Add slides to current custom slide show"
+msgstr "Slideshow"
+
+#: part/KPrViewModeSlidesSorter.cpp:106
+msgid "Remove slides from current custom slide show"
+msgstr ""
+
+#: part/KPrViewModeSlidesSorter.cpp:532
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add a new slide"
+msgstr "Slideshow"
+
+#: part/KPrViewModeSlidesSorter.cpp:533 part/KPrViewModeSlidesSorter.cpp:551
+#, fuzzy
+msgid "Delete selected slides"
+msgstr "Slide đã chọ&n"
+
+#: part/KPrViewModeSlidesSorter.cpp:537
+#, fuzzy
+msgid "Rename"
+msgstr "&Thay tên trang"
+
+#: part/KPrViewModeSlidesSorter.cpp:541
+#, fuzzy
+msgid "Cut"
+msgstr "Tuỳ biến"
+
+#: part/KPrViewModeSlidesSorter.cpp:542
+#, fuzzy
+msgid "Copy"
+msgstr "Kiểu: "
+
+#: part/KPrViewModeSlidesSorter.cpp:543
+#, fuzzy
+msgid "Paste"
+msgstr "Đường dẫn:  "
+
+#: part/KPrViewModeSlidesSorter.cpp:639 part/KPrViewModeSlidesSorter.cpp:644
+#, fuzzy, kde-format
+#| msgid "Slide Show"
+msgid "Slide Show %1"
+msgstr "Trình diễn"
+
+#: part/KPrViewModeSlidesSorter.cpp:658
+#: part/ui/KPrConfigureSlideShowDialog.cpp:41
+#, fuzzy
+msgid "All slides"
+msgstr "&Mọi slide"
+
+#: part/KPrViewModeSlidesSorter.cpp:687
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
+
+#: part/KPrViewModeSlidesSorter.cpp:687 part/ui/KPrHtmlExportDialog.cpp:158
+#: part/ui/KPrHtmlExportDialog.cpp:210
+#, fuzzy
+#| msgid "Arrow"
+msgid "Error"
+msgstr "Mũi tên"
+
+#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
+#, fuzzy
+msgid "Add custom slide show"
+msgstr "Slideshow"
 
 #: part/commands/KPrAnimationCreateCommand.cpp:34
 #, fuzzy
@@ -399,6 +542,24 @@ msgstr ""
 msgctxt "(qtundo-format)"
 msgid "Create shape animation"
 msgstr "Hoạt cảnh tạo hình"
+
+#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
+#, fuzzy
+msgid "Delete custom slide show"
+msgstr "Slide đã chọ&n"
+
+#: part/commands/KPrDeleteSlidesCommand.cpp:38
+#: part/commands/KPrDeleteSlidesCommand.cpp:57
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Slide đã chọ&n"
+
+#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
+#, fuzzy
+msgid "Edit custom slide show"
+msgstr "Slideshow"
 
 #: part/commands/KPrPageEffectSetCommand.cpp:38
 #, fuzzy
@@ -420,29 +581,6 @@ msgstr "Hiệu ứng sửa trang"
 msgctxt "(qtundo-format)"
 msgid "Delete page effect"
 msgstr "Hiệu ứng xóa trang"
-
-#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
-#, fuzzy
-msgid "Add custom slide show"
-msgstr "Slideshow"
-
-#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
-#, fuzzy
-msgid "Delete custom slide show"
-msgstr "Slide đã chọ&n"
-
-#: part/commands/KPrDeleteSlidesCommand.cpp:38
-#: part/commands/KPrDeleteSlidesCommand.cpp:57
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Delete slide"
-msgid_plural "Delete slides"
-msgstr[0] "Slide đã chọ&n"
-
-#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
-#, fuzzy
-msgid "Edit custom slide show"
-msgstr "Slideshow"
 
 #: part/commands/KPrRenameCustomSlideShowCommand.cpp:33
 #, fuzzy
@@ -469,20 +607,15 @@ msgctxt "(qtundo-format)"
 msgid "Set Layout"
 msgstr "&Kiểu Trang..."
 
+#: part/tools/KPrPlaceholderTool.cpp:92
+#, fuzzy
+#| msgid "Shape"
+msgctxt "(qtundo-format)"
+msgid "Edit Shape"
+msgstr "Hình"
+
 #: part/tools/KPrPlaceholderToolFactory.cpp:28
 msgid "Layout Tool"
-msgstr ""
-
-#: part/tools/animationtool/KPrAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
-
-#: part/tools/animationtool/KPrPageEffectDocker.cpp:56
-msgid "No Effect"
-msgstr "Không hiệu ứng"
-
-#: part/tools/animationtool/KPrPageEffectDocker.cpp:79
-msgid " sec"
 msgstr ""
 
 #: part/tools/animationtool/KPrAnimationTool.cpp:85
@@ -504,12 +637,17 @@ msgstr ""
 msgid "Shape Animation"
 msgstr "Hoạt cảnh tạo hình"
 
-#: part/tools/KPrPlaceholderTool.cpp:92
-#, fuzzy
-#| msgid "Shape"
-msgctxt "(qtundo-format)"
-msgid "Edit Shape"
-msgstr "Hình"
+#: part/tools/animationtool/KPrAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:56
+msgid "No Effect"
+msgstr "Không hiệu ứng"
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:79
+msgid " sec"
+msgstr ""
 
 #: part/ui/KPrConfigurePresenterViewDialog.cpp:42
 #, kde-format
@@ -527,6 +665,13 @@ msgstr ""
 msgid "Configure Presenter View"
 msgstr "Cấu hình KPresenter"
 
+#. i18n: file: part/ui/KPrConfigureSlideShow.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, KPrConfigureSlideShow)
+#: part/ui/KPrConfigureSlideShowDialog.cpp:47 rc.cpp:71
+#, fuzzy
+msgid "Configure Slide Show"
+msgstr "&Cấu hình trang ..."
+
 #: part/ui/KPrHtmlExportDialog.cpp:44
 msgid "Html Export"
 msgstr ""
@@ -534,19 +679,6 @@ msgstr ""
 #: part/ui/KPrHtmlExportDialog.cpp:45
 msgid "Export"
 msgstr ""
-
-#: part/ui/KPrHtmlExportDialog.cpp:119 part/KPrCustomSlideShowsModel.cpp:70
-#: part/KPrSlidesSorterDocumentModel.cpp:101
-#, kde-format
-msgid "Slide %1"
-msgstr "Slide %1"
-
-#: part/ui/KPrHtmlExportDialog.cpp:158 part/ui/KPrHtmlExportDialog.cpp:210
-#: part/KPrViewModeSlidesSorter.cpp:688
-#, fuzzy
-#| msgid "Arrow"
-msgid "Error"
-msgstr "Mũi tên"
 
 #: part/ui/KPrHtmlExportDialog.cpp:158
 msgid "There is already a favorite file with this name"
@@ -585,107 +717,6 @@ msgid "Are you sure you want to remove \"%1\"?"
 msgstr ""
 "Bạn có muốn gỡ bỏ trang hiện tạỉ\n"
 "Thao tác này không thể undonẹ"
-
-#: part/ui/KPrConfigureSlideShowDialog.cpp:41
-#: part/KPrViewModeSlidesSorter.cpp:659
-#, fuzzy
-msgid "All slides"
-msgstr "&Mọi slide"
-
-#. i18n: file: part/ui/KPrConfigureSlideShow.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, KPrConfigureSlideShow)
-#: part/ui/KPrConfigureSlideShowDialog.cpp:47 rc.cpp:50
-#, fuzzy
-msgid "Configure Slide Show"
-msgstr "&Cấu hình trang ..."
-
-#: part/KPrCustomSlideShowsModel.cpp:65
-#: part/KPrSlidesSorterDocumentModel.cpp:96
-msgid "Unknown"
-msgstr ""
-
-#: part/KPrSlidesSorterDocumentModel.cpp:301
-#, fuzzy
-msgid "&Move Here"
-msgstr "Slide"
-
-#: part/KPrSlidesSorterDocumentModel.cpp:305
-#, fuzzy
-msgid "&Copy Here"
-msgstr "Slide"
-
-#: part/KPrSlidesSorterDocumentModel.cpp:309
-#, fuzzy
-#| msgid "&Cancel"
-msgid "C&ancel"
-msgstr "&Hủy bỏ"
-
-#: part/KPrViewModeSlidesSorter.cpp:82
-#, fuzzy
-#| msgid "Slide Show"
-msgid "Slide Show: "
-msgstr "Trình diễn"
-
-#: part/KPrViewModeSlidesSorter.cpp:91
-#, fuzzy
-#| msgid "Slideshow"
-msgid "Add a new custom slide show"
-msgstr "Slideshow"
-
-#: part/KPrViewModeSlidesSorter.cpp:96
-#, fuzzy
-msgid "Delete current custom slide show"
-msgstr "Trước trang hiện tại"
-
-#: part/KPrViewModeSlidesSorter.cpp:100
-#, fuzzy
-msgid "Add slides to current custom slide show"
-msgstr "Slideshow"
-
-#: part/KPrViewModeSlidesSorter.cpp:105
-msgid "Remove slides from current custom slide show"
-msgstr ""
-
-#: part/KPrViewModeSlidesSorter.cpp:533
-#, fuzzy
-#| msgid "Slideshow"
-msgid "Add a new slide"
-msgstr "Slideshow"
-
-#: part/KPrViewModeSlidesSorter.cpp:534 part/KPrViewModeSlidesSorter.cpp:552
-#, fuzzy
-msgid "Delete selected slides"
-msgstr "Slide đã chọ&n"
-
-#: part/KPrViewModeSlidesSorter.cpp:538
-#, fuzzy
-msgid "Rename"
-msgstr "&Thay tên trang"
-
-#: part/KPrViewModeSlidesSorter.cpp:542
-#, fuzzy
-msgid "Cut"
-msgstr "Tuỳ biến"
-
-#: part/KPrViewModeSlidesSorter.cpp:543
-#, fuzzy
-msgid "Copy"
-msgstr "Kiểu: "
-
-#: part/KPrViewModeSlidesSorter.cpp:544
-#, fuzzy
-msgid "Paste"
-msgstr "Đường dẫn:  "
-
-#: part/KPrViewModeSlidesSorter.cpp:640 part/KPrViewModeSlidesSorter.cpp:645
-#, fuzzy, kde-format
-#| msgid "Slide Show"
-msgid "Slide Show %1"
-msgstr "Trình diễn"
-
-#: part/KPrViewModeSlidesSorter.cpp:688
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:94
 #, fuzzy
@@ -1871,223 +1902,23 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vuhung@fedụuec.ac.jp vuhung@techviet.com, kde-l10n-vi@lists.kde.org"
 
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:16
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
-#: rc.cpp:5
-msgid "Crop"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:36
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:8
-msgid "X:"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:60
-#. i18n: ectx: property (text), widget (QCheckBox, boolWidth)
-#: rc.cpp:11
-#, fuzzy
-msgid "W&idth:"
-msgstr "Bề rộng bút:"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:63
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolWidth)
-#: rc.cpp:14
-#, fuzzy
-msgid "Will keep the width of the crop constant"
-msgstr "Tạo ảnh cho Slide"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:84
-#. i18n: ectx: property (text), widget (QCheckBox, boolHeight)
-#: rc.cpp:17
-#, fuzzy
-msgid "&Height:"
-msgstr "Đến từ bên phải"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:87
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolHeight)
-#: rc.cpp:20
-msgid "Will keep the height of the crop constant"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:94
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:23
-msgid "Y:"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, boolRatio)
-#: rc.cpp:26
-#, fuzzy
-msgid "R&atio:"
-msgstr "Nhảy tới Trang:"
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:114
-#. i18n: ectx: property (toolTip), widget (QCheckBox, boolRatio)
-#: rc.cpp:29
-msgid "Will keep the ratio constant"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:132
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: rc.cpp:32
-msgid "Layer"
-msgstr ""
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:137
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: rc.cpp:35
-#, fuzzy
-msgid "Image"
-msgstr "&Trang...."
-
-#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:145
-#. i18n: ectx: property (text), widget (QPushButton, bnCrop)
-#: rc.cpp:38
-#, fuzzy
-msgid "&Crop"
-msgstr "Kiểu: "
-
-#. i18n: file: part/ui/KPrConfigurePresenterView.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:41
-msgid "Multiple monitors"
-msgstr ""
-
-#. i18n: file: part/ui/KPrConfigurePresenterView.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:44
-#, fuzzy
-msgid "Presentation monitor:"
-msgstr "Presentation"
-
-#. i18n: file: part/ui/KPrConfigurePresenterView.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
-#: rc.cpp:47
-msgid "Enable presenter view"
-msgstr ""
-
-#. i18n: file: part/ui/KPrConfigureSlideShow.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:53
-#, fuzzy
-msgid "Slides"
-msgstr "Slide"
-
-#. i18n: file: part/ui/KPrConfigureSlideShow.ui:27
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:56
-#, fuzzy
-#| msgid "Presentation"
-msgid "Presentation Slides:"
-msgstr "Trình diễn"
-
-#. i18n: file: part/ui/KPrConfigureSlideShow.ui:54
-#. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
-#: rc.cpp:59
-#, fuzzy
-msgid "Edit Custom Slide Shows ..."
-msgstr "&Cấu hình trang ..."
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, KPrHtmlExport)
-#: rc.cpp:62
-msgid "HTML Export"
-msgstr ""
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:29
-#. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
-#: rc.cpp:65
-msgid "Tick the slide should be exported :"
-msgstr ""
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:55
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
-#: rc.cpp:68
-#, fuzzy
-msgid "Select all"
-msgstr "Chọn ..."
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:65
-#. i18n: ectx: property (text), widget (QLabel, textLabel_css)
-#: rc.cpp:71
-#, fuzzy
-msgid "Select template (.css) :"
-msgstr "Slide đã chọ&n"
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:78
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
-#: rc.cpp:74
-msgid "Deselect all"
-msgstr ""
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:101
-#. i18n: ectx: property (text), widget (QLabel, textlable_top)
-#: rc.cpp:77
-#, fuzzy
-msgid "Title"
-msgstr "Đầu đề "
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:117
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
-#: rc.cpp:80
-msgid "Output preview"
-msgstr ""
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:148
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
-#. i18n: file: part/ui/KPrHtmlExport.ui:164
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
-#: rc.cpp:83 rc.cpp:86
-#, fuzzy
-msgid "..."
-msgstr "..."
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:227
-#. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
-#: rc.cpp:89
-msgid "Browse"
-msgstr ""
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:243
-#. i18n: ectx: property (text), widget (QLabel, label_author)
-#: rc.cpp:92
-#, fuzzy
-#| msgid "Author:"
-msgid "Author"
-msgstr "Tác giả:"
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:258
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
-#: rc.cpp:95
-#, fuzzy
-msgid "Delete Favorite"
-msgstr "Slide đã chọ&n"
-
-#. i18n: file: part/ui/KPrHtmlExport.ui:286
-#. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
-#: rc.cpp:98
-msgid "Open in browser"
-msgstr ""
-
 #. i18n: file: part/stage.rc:8
-#. i18n: ectx: Menu (edit)
-#. i18n: file: stage_only.rc:7
 #. i18n: ectx: Menu (edit)
 #. i18n: file: stage.rc:10
 #. i18n: ectx: Menu (Edit)
-#: rc.cpp:101 rc.cpp:125 rc.cpp:140
+#. i18n: file: stage_only.rc:7
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:5 rc.cpp:125 rc.cpp:254
 msgid "&Edit"
 msgstr "&Sửa"
 
 #. i18n: file: part/stage.rc:27
 #. i18n: ectx: Menu (view)
-#. i18n: file: stage_only.rc:3
-#. i18n: ectx: Menu (view)
 #. i18n: file: stage.rc:33
 #. i18n: ectx: Menu (View)
-#: rc.cpp:104 rc.cpp:122 rc.cpp:143
+#. i18n: file: stage_only.rc:3
+#. i18n: ectx: Menu (view)
+#: rc.cpp:8 rc.cpp:128 rc.cpp:251
 msgid "&View"
 msgstr "&Xem"
 
@@ -2095,7 +1926,7 @@ msgstr "&Xem"
 #. i18n: ectx: Menu (insert)
 #. i18n: file: stage.rc:52
 #. i18n: ectx: Menu (Insert)
-#: rc.cpp:107 rc.cpp:146
+#: rc.cpp:11 rc.cpp:131
 msgid "&Insert"
 msgstr "&Chèn"
 
@@ -2103,24 +1934,24 @@ msgstr "&Chèn"
 #. i18n: ectx: Menu (format)
 #. i18n: file: stage.rc:89
 #. i18n: ectx: Menu (Format)
-#: rc.cpp:110 rc.cpp:155
+#: rc.cpp:14 rc.cpp:140
 msgid "F&ormat"
 msgstr "Định &dạng"
 
 #. i18n: file: part/stage.rc:63
 #. i18n: ectx: Menu (page)
-#: rc.cpp:113
+#: rc.cpp:17
 #, fuzzy
 msgid "&Slide"
 msgstr "Slide"
 
 #. i18n: file: part/stage.rc:74
 #. i18n: ectx: Menu (slideshow)
-#. i18n: file: stage_only.rc:12
-#. i18n: ectx: Menu (Slide Show)
 #. i18n: file: stage.rc:163
 #. i18n: ectx: Menu (Slide Show)
-#: rc.cpp:116 rc.cpp:128 rc.cpp:179
+#. i18n: file: stage_only.rc:12
+#. i18n: ectx: Menu (Slide Show)
+#: rc.cpp:20 rc.cpp:164 rc.cpp:257
 msgid "Sli&de Show"
 msgstr "&Trình diễn"
 
@@ -2128,45 +1959,231 @@ msgstr "&Trình diễn"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: stage.rc:178
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:119 rc.cpp:182
+#: rc.cpp:23 rc.cpp:167
 msgid "&Settings"
 msgstr "&Thiết lập"
 
-#. i18n: file: stage_only.rc:20
-#. i18n: ectx: ToolBar (editToolBar)
-#. i18n: file: stage.rc:189
-#. i18n: ectx: ToolBar (editToolBar)
-#: rc.cpp:131 rc.cpp:188
-msgid "Edit"
-msgstr "Sửa"
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:16
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
+#: rc.cpp:26
+msgid "Crop"
+msgstr ""
 
-#. i18n: file: stage_only.rc:25
-#. i18n: ectx: ToolBar (screenToolBar)
-#: rc.cpp:134
-msgid "Presentation"
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:36
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:29
+msgid "X:"
+msgstr ""
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:60
+#. i18n: ectx: property (text), widget (QCheckBox, boolWidth)
+#: rc.cpp:32
+#, fuzzy
+msgid "W&idth:"
+msgstr "Bề rộng bút:"
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:63
+#. i18n: ectx: property (toolTip), widget (QCheckBox, boolWidth)
+#: rc.cpp:35
+#, fuzzy
+msgid "Will keep the width of the crop constant"
+msgstr "Tạo ảnh cho Slide"
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:84
+#. i18n: ectx: property (text), widget (QCheckBox, boolHeight)
+#: rc.cpp:38
+#, fuzzy
+msgid "&Height:"
+msgstr "Đến từ bên phải"
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:87
+#. i18n: ectx: property (toolTip), widget (QCheckBox, boolHeight)
+#: rc.cpp:41
+msgid "Will keep the height of the crop constant"
+msgstr ""
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:94
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: rc.cpp:44
+msgid "Y:"
+msgstr ""
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:111
+#. i18n: ectx: property (text), widget (QCheckBox, boolRatio)
+#: rc.cpp:47
+#, fuzzy
+msgid "R&atio:"
+msgstr "Nhảy tới Trang:"
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:114
+#. i18n: ectx: property (toolTip), widget (QCheckBox, boolRatio)
+#: rc.cpp:50
+msgid "Will keep the ratio constant"
+msgstr ""
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:132
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
+#: rc.cpp:53
+msgid "Layer"
+msgstr ""
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:137
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
+#: rc.cpp:56
+#, fuzzy
+msgid "Image"
+msgstr "&Trang...."
+
+#. i18n: file: part/tools/animationtool/wdg_tool_crop.ui:145
+#. i18n: ectx: property (text), widget (QPushButton, bnCrop)
+#: rc.cpp:59
+#, fuzzy
+msgid "&Crop"
+msgstr "Kiểu: "
+
+#. i18n: file: part/ui/KPrConfigurePresenterView.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:62
+msgid "Multiple monitors"
+msgstr ""
+
+#. i18n: file: part/ui/KPrConfigurePresenterView.ui:24
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:65
+#, fuzzy
+msgid "Presentation monitor:"
+msgstr "Presentation"
+
+#. i18n: file: part/ui/KPrConfigurePresenterView.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
+#: rc.cpp:68
+msgid "Enable presenter view"
+msgstr ""
+
+#. i18n: file: part/ui/KPrConfigureSlideShow.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:74
+#, fuzzy
+msgid "Slides"
+msgstr "Slide"
+
+#. i18n: file: part/ui/KPrConfigureSlideShow.ui:27
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:77
+#, fuzzy
+#| msgid "Presentation"
+msgid "Presentation Slides:"
 msgstr "Trình diễn"
+
+#. i18n: file: part/ui/KPrConfigureSlideShow.ui:54
+#. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
+#: rc.cpp:80
+#, fuzzy
+msgid "Edit Custom Slide Shows ..."
+msgstr "&Cấu hình trang ..."
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, KPrHtmlExport)
+#: rc.cpp:83
+msgid "HTML Export"
+msgstr ""
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:29
+#. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
+#: rc.cpp:86
+msgid "Tick the slide should be exported :"
+msgstr ""
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:55
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
+#: rc.cpp:89
+#, fuzzy
+msgid "Select all"
+msgstr "Chọn ..."
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:65
+#. i18n: ectx: property (text), widget (QLabel, textLabel_css)
+#: rc.cpp:92
+#, fuzzy
+msgid "Select template (.css) :"
+msgstr "Slide đã chọ&n"
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:78
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
+#: rc.cpp:95
+msgid "Deselect all"
+msgstr ""
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:101
+#. i18n: ectx: property (text), widget (QLabel, textlable_top)
+#: rc.cpp:98
+#, fuzzy
+msgid "Title"
+msgstr "Đầu đề "
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:117
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
+#: rc.cpp:101
+msgid "Output preview"
+msgstr ""
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:148
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
+#. i18n: file: part/ui/KPrHtmlExport.ui:164
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
+#: rc.cpp:104 rc.cpp:107
+#, fuzzy
+msgid "..."
+msgstr "..."
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:227
+#. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
+#: rc.cpp:110
+msgid "Browse"
+msgstr ""
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:243
+#. i18n: ectx: property (text), widget (QLabel, label_author)
+#: rc.cpp:113
+#, fuzzy
+#| msgid "Author:"
+msgid "Author"
+msgstr "Tác giả:"
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:258
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
+#: rc.cpp:116
+#, fuzzy
+msgid "Delete Favorite"
+msgstr "Slide đã chọ&n"
+
+#. i18n: file: part/ui/KPrHtmlExport.ui:286
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
+#: rc.cpp:119
+msgid "Open in browser"
+msgstr ""
 
 #. i18n: file: stage.rc:3
 #. i18n: ectx: Menu (file)
-#: rc.cpp:137
+#: rc.cpp:122
 msgid "&File"
 msgstr "&Tập tin "
 
 #. i18n: file: stage.rc:70
 #. i18n: ectx: Menu (Insert Line)
-#: rc.cpp:149
+#: rc.cpp:134
 msgid "Line"
 msgstr "Đường"
 
 #. i18n: file: stage.rc:77
 #. i18n: ectx: Menu (Insert Shape)
-#: rc.cpp:152
+#: rc.cpp:137
 msgid "Shape"
 msgstr "Hình"
 
 #. i18n: file: stage.rc:95
 #. i18n: ectx: Menu (Arrange Objects)
-#: rc.cpp:158
+#: rc.cpp:143
 msgid "Arra&nge Objects"
 msgstr "&Sắp xếp các đối tượng"
 
@@ -2192,86 +2209,94 @@ msgstr "&Sắp xếp các đối tượng"
 #. i18n: ectx: Menu (Align Objects)
 #. i18n: file: stage.rc:658
 #. i18n: ectx: Menu (Align Objects)
-#: rc.cpp:161 rc.cpp:209 rc.cpp:215 rc.cpp:221 rc.cpp:224 rc.cpp:230
-#: rc.cpp:236 rc.cpp:242 rc.cpp:245 rc.cpp:251 rc.cpp:263
+#: rc.cpp:146 rc.cpp:194 rc.cpp:200 rc.cpp:206 rc.cpp:209 rc.cpp:215
+#: rc.cpp:221 rc.cpp:227 rc.cpp:230 rc.cpp:236 rc.cpp:248
 msgid "&Align Objects"
 msgstr "&Dóng các đối tượng"
 
 #. i18n: file: stage.rc:120
 #. i18n: ectx: Menu (Text)
-#: rc.cpp:164
+#: rc.cpp:149
 msgid "Te&xt"
 msgstr "&Văn bản"
 
 #. i18n: file: stage.rc:131
 #. i18n: ectx: Menu (Align)
-#: rc.cpp:167
+#: rc.cpp:152
 msgid "&Align"
 msgstr "Dó&ng"
 
 #. i18n: file: stage.rc:138
 #. i18n: ectx: Menu (Type)
-#: rc.cpp:170
+#: rc.cpp:155
 msgid "T&ype"
 msgstr "&Kiểu"
 
 #. i18n: file: stage.rc:153
 #. i18n: ectx: Menu (SpellCheck)
-#: rc.cpp:173
+#: rc.cpp:158
 msgid "Spellcheck"
 msgstr "Kiểm tra chính tả"
 
 #. i18n: file: stage.rc:158
 #. i18n: ectx: Menu (AutoFormat)
-#: rc.cpp:176
+#: rc.cpp:161
 msgid "Autocorrection"
 msgstr "Tự động sửa"
 
 #. i18n: file: stage.rc:187
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:185
+#: rc.cpp:170
 msgid "File"
 msgstr "Tập tin"
 
+#. i18n: file: stage.rc:189
+#. i18n: ectx: ToolBar (editToolBar)
+#. i18n: file: stage_only.rc:20
+#. i18n: ectx: ToolBar (editToolBar)
+#: rc.cpp:173 rc.cpp:260
+msgid "Edit"
+msgstr "Sửa"
+
 #. i18n: file: stage.rc:201
 #. i18n: ectx: ToolBar (insertToolBar)
-#: rc.cpp:191
+#: rc.cpp:176
 msgid "Insert"
 msgstr "Chèn"
 
 #. i18n: file: stage.rc:218
 #. i18n: ectx: ToolBar (toolsToolBar)
-#: rc.cpp:194
+#: rc.cpp:179
 msgid "Tools"
 msgstr "Công cụ"
 
 #. i18n: file: stage.rc:228
 #. i18n: ectx: ToolBar (extraToolBar)
-#: rc.cpp:197
+#: rc.cpp:182
 msgid "Format"
 msgstr "Định dạng"
 
 #. i18n: file: stage.rc:240
 #. i18n: ectx: ToolBar (textToolBar)
-#: rc.cpp:200
+#: rc.cpp:185
 msgid "Text"
 msgstr "Văn bản"
 
 #. i18n: file: stage.rc:262
 #. i18n: ectx: ToolBar (slideShowToolBar)
-#: rc.cpp:203
+#: rc.cpp:188
 msgid "Slide Show"
 msgstr "Trình diễn"
 
 #. i18n: file: stage.rc:269
 #. i18n: ectx: ToolBar (navigationToolBar)
-#: rc.cpp:206
+#: rc.cpp:191
 msgid "Navigation"
 msgstr "Di chuyển"
 
 #. i18n: file: stage.rc:317
 #. i18n: ectx: Menu (Vertical Alignment)
-#: rc.cpp:212
+#: rc.cpp:197
 msgid "Vertical Alignment"
 msgstr "Dóng dọc"
 
@@ -2287,21 +2312,27 @@ msgstr "Dóng dọc"
 #. i18n: ectx: Menu (Flip Objects)
 #. i18n: file: stage.rc:654
 #. i18n: ectx: Menu (Flip Objects)
-#: rc.cpp:218 rc.cpp:227 rc.cpp:233 rc.cpp:239 rc.cpp:248 rc.cpp:260
+#: rc.cpp:203 rc.cpp:212 rc.cpp:218 rc.cpp:224 rc.cpp:233 rc.cpp:245
 msgid "Flip Objects"
 msgstr "Lật các đối tượng"
 
 #. i18n: file: stage.rc:531
 #. i18n: ectx: Menu (Scale Picture)
-#: rc.cpp:254
+#: rc.cpp:239
 msgid "&Scale to Show the Picture 1:1 In"
 msgstr "&Phóng để hiện ảnh 1:1 trong"
 
 #. i18n: file: stage.rc:591
 #. i18n: ectx: Menu (check_spell_list)
-#: rc.cpp:257
+#: rc.cpp:242
 msgid "Spell Check Result"
 msgstr "Kết quả Kiểm tra Chính tả"
+
+#. i18n: file: stage_only.rc:25
+#. i18n: ectx: ToolBar (screenToolBar)
+#: rc.cpp:263
+msgid "Presentation"
+msgstr "Trình diễn"
 
 #, fuzzy
 #~ msgctxt "@info:tooltip"
@@ -3459,9 +3490,6 @@ msgstr "Kết quả Kiểm tra Chính tả"
 #, fuzzy
 #~ msgid "Presentation duration: "
 #~ msgstr "Presentation"
-
-#~ msgid "Slide Title"
-#~ msgstr "Đầu đề slide"
 
 #, fuzzy
 #~ msgid "Slides in the pages:"

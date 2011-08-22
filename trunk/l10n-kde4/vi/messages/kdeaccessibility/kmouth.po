@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:11+0200\n"
+"POT-Creation-Date: 2011-08-22 03:40+0200\n"
 "PO-Revision-Date: 2008-01-13 05:28+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -18,40 +18,282 @@ msgstr ""
 "X-Generator: KAider 0.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: phrasebook/phrasetree.cpp:471
-#, kde-format
+#: configwizard.cpp:38
+msgid "Initial Configuration - KMouth"
+msgstr "Cấu hình Ban đầu - Mồm K"
+
+#: configwizard.cpp:57
+msgid "Text-to-Speech Configuration"
+msgstr "Cấu hình Văn bản sang Tiếng nói"
+
+#: configwizard.cpp:71
+msgid "Initial Phrase Book"
+msgstr "Từ điển Thành ngữ Ban đầu"
+
+#: configwizard.cpp:103 optionsdialog.cpp:145 optionsdialog.cpp:146
+msgid "Word Completion"
+msgstr "Điền nốt Từ"
+
+#: kmouth.cpp:113
+msgid "&Open as History..."
+msgstr "&Mở theo dạng Lịch sử..."
+
+#: kmouth.cpp:116 kmouth.cpp:117
+msgid "Opens an existing file as history"
+msgstr "Mở một tập tin đã tồn tại ở dạng lịch sử"
+
+#: kmouth.cpp:121
+msgid "Save &History As..."
+msgstr "Lưu &Lịch sử Vào..."
+
+#: kmouth.cpp:124 kmouth.cpp:125
+#, fuzzy
+msgid "Saves the actual history as..."
+msgstr "Lưu lịch sử hiện tại vào..."
+
+#: kmouth.cpp:129
+msgid "&Print History..."
+msgstr "&In Lịch sử..."
+
+#: kmouth.cpp:132 kmouth.cpp:133
+msgid "Prints out the actual history"
+msgstr "In lịch sử hiện tại"
+
+#: kmouth.cpp:136 kmouth.cpp:137
+msgid "Quits the application"
+msgstr "Thoát khỏi ứng dụng"
+
+#: kmouth.cpp:141
+msgid "Cuts the selected section and puts it to the clipboard"
+msgstr "Cắt vùng đã chọn và đặt nó vào bảng nháp"
+
+#: kmouth.cpp:142
 msgid ""
-"The '%1' key combination has already been allocated to %2.\n"
-"Please choose a unique key combination."
+"Cuts the selected section and puts it to the clipboard. If there is some "
+"text selected in the edit field it is placed it on the clipboard. Otherwise "
+"the selected sentences in the history (if any) are placed on the clipboard."
 msgstr ""
-"Tổ hợp phím '%1' đã được dùng cho %2.\n"
-"Xin chọn tổ hợp phím đặc dụng khác."
+"Cắt phần đã chọn và đặt nó vào bảng nháp. Nếu có một số đoạn văn bản đã chọn "
+"trong ô sửa đổi, chúng sẽ được đặt vào bảng nháp. Nếu không câu đã chọn "
+"trong lịch sử (nếu có) sẽ được đưa vào bảng nháp."
 
-#: phrasebook/phrasetree.cpp:493
-#, kde-format
-msgid "the standard \"%1\" action"
-msgstr "hành động \"%1\" tiêu chuẩn"
+#: kmouth.cpp:145
+msgid "Copies the selected section to the clipboard"
+msgstr "Sao chép phần đã chọn vào bảng nháp"
 
-#: phrasebook/phrasetree.cpp:494
-msgid "Conflict with Standard Application Shortcut"
-msgstr "Mâu thuẫn với Cách gõ tắt Tiêu chuẩn trong Ứng dụng"
+#: kmouth.cpp:146
+msgid ""
+"Copies the selected section to the clipboard. If there is some text selected "
+"in the edit field it is copied to the clipboard. Otherwise the selected "
+"sentences in the history (if any) are copied to the clipboard."
+msgstr ""
+"Sao chép phần đã chọn và đặt nó vào bảng nháp. Nếu có một số đoạn văn bản đã "
+"chọn trong ô sửa đổi, chúng sẽ được sao chép vào bảng nháp. Nếu không câu đã "
+"chọn trong lịch sử (nếu có) sẽ được sao chép vào bảng nháp."
 
-#: phrasebook/phrasetree.cpp:511
-#, kde-format
-msgid "the global \"%1\" action"
-msgstr "hành động \"%1\" toàn cục"
+#: kmouth.cpp:149 phrasebook/phrasebookdialog.cpp:413
+#, fuzzy
+#| msgid "Pastes the clipboard contents to actual position"
+msgid "Pastes the clipboard contents to current position"
+msgstr "Dán nội dung bảng nháp vào vị trí hiện tại"
 
-#: phrasebook/phrasetree.cpp:512
-msgid "Conflict with Global Shortcuts"
-msgstr "Mâu thuẫn với Cách gõ tắt Toàn cục"
+#: kmouth.cpp:150 phrasebook/phrasebookdialog.cpp:414
+msgid ""
+"Pastes the clipboard contents at the current cursor position into the edit "
+"field."
+msgstr "Dán nội dung bảng nháp vào vị trí con trỏ trong ô soạn thảo."
 
-#: phrasebook/phrasetree.cpp:527
-msgid "an other phrase"
-msgstr "đoạn văn khác"
+#: kmouth.cpp:154
+#, fuzzy
+#| msgid "&Speak"
+msgctxt "Start speaking"
+msgid "&Speak"
+msgstr "&Nói"
 
-#: phrasebook/phrasetree.cpp:528
-msgid "Key Conflict"
-msgstr "Mâu thuẫn Bàn phím"
+#: kmouth.cpp:156
+msgid "Speaks the currently active sentence(s)"
+msgstr "Phát âm (các) câu văn đang được kích hoạt hiện tại"
+
+#: kmouth.cpp:157 phraselist.cpp:86
+msgid ""
+"Speaks the currently active sentence(s). If there is some text in the edit "
+"field it is spoken. Otherwise the selected sentences in the history (if any) "
+"are spoken."
+msgstr ""
+"Phát âm (các) câu văn đang được kích hoạt hiện tại. Nếu có một số đoạn văn "
+"bản đã chọn trong ô sửa đổi, chúng sẽ được phát âm. Nếu không câu đã chọn "
+"trong lịch sử (nếu có) sẽ được phát âm."
+
+#: kmouth.cpp:161
+msgid "&Edit..."
+msgstr "&Sửa..."
+
+#: kmouth.cpp:172
+msgid "Show P&hrasebook Bar"
+msgstr "Hiện Thanh Từ điển Thành ngữ"
+
+#: kmouth.cpp:174 kmouth.cpp:175
+msgid "Enables/disables the phrasebook bar"
+msgstr "Bật/tắt thanh từ điển thành ngữ"
+
+#: kmouth.cpp:178 kmouth.cpp:179
+msgid "Enables/disables the statusbar"
+msgstr "Bật/tắt thanh trạng thái"
+
+#: kmouth.cpp:183
+msgid "&Configure KMouth..."
+msgstr "&Cấu hình Mồm K..."
+
+#: kmouth.cpp:185 kmouth.cpp:186
+msgid "Opens the configuration dialog"
+msgstr "Mở hộp thoại cấu hình"
+
+#: kmouth.cpp:194 phraselist.cpp:83
+msgid "&Speak"
+msgstr "&Nói"
+
+#: kmouth.cpp:195 kmouth.cpp:197
+msgid "Speaks the currently selected phrases in the history"
+msgstr "Phát âm đoạn văn đã chọn hiện tại trong lịch sử"
+
+#: kmouth.cpp:201 phrasebook/phrasebookdialog.cpp:418
+msgid "&Delete"
+msgstr "&Xóa"
+
+#: kmouth.cpp:203 kmouth.cpp:204
+msgid "Deletes the currently selected phrases from the history"
+msgstr "Xoá đoạn văn đã chọn hiện tại trong lịch sử"
+
+#: kmouth.cpp:208
+msgid "Cu&t"
+msgstr "Cắ&t"
+
+#: kmouth.cpp:210 kmouth.cpp:211
+msgid ""
+"Cuts the currently selected phrases from the history and puts them to the "
+"clipboard"
+msgstr "Cắt đoạn văn đã chọn hiện tại trong lịch sử và đặt nó vào bảng nháp"
+
+#: kmouth.cpp:215
+msgid "&Copy"
+msgstr "&Chép"
+
+#: kmouth.cpp:217 kmouth.cpp:218
+msgid "Copies the currently selected phrases from the history to the clipboard"
+msgstr "Sao chép đoạn văn đã chọn hiện tại trong lịch sử vào bảng nháp"
+
+#: kmouth.cpp:221
+msgid "Select &All Entries"
+msgstr "Chọn &Tất cả các Mục"
+
+#: kmouth.cpp:223 kmouth.cpp:224
+msgid "Selects all phrases in the history"
+msgstr "Chọn tất cả các đoạn văn trong lịch sử"
+
+#: kmouth.cpp:227
+msgid "D&eselect All Entries"
+msgstr "&Bỏ chọn Tất cả các Mục"
+
+#: kmouth.cpp:229 kmouth.cpp:230
+msgid "Deselects all phrases in the history"
+msgstr "Bỏ chọn tất cả các đoạn văn trong lịch sử"
+
+#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
+#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
+#, fuzzy
+#| msgid "Ready."
+msgctxt "The job is done"
+msgid "Ready."
+msgstr "Sẵn sàng."
+
+#: kmouth.cpp:259 kmouth.cpp:366
+msgid "Opening file..."
+msgstr "Mở tập tin..."
+
+#: kmouth.cpp:374
+msgid "Saving history with a new filename..."
+msgstr "Lưu lịch sử vào tập tin có tên mới..."
+
+#: kmouth.cpp:383
+msgid "Printing..."
+msgstr "In ấn..."
+
+#: kmouth.cpp:401
+#, fuzzy
+#| msgid "Exiting..."
+msgctxt "Shutting down the application"
+msgid "Exiting..."
+msgstr "Thoát..."
+
+#: kmouth.cpp:439
+msgid "Toggling menubar..."
+msgstr "Bật tắt thanh thực đơn..."
+
+#: kmouth.cpp:451
+msgid "Toggling toolbar..."
+msgstr "Bật tắt thanh công cụ..."
+
+#: kmouth.cpp:468
+msgid "Toggling phrasebook bar..."
+msgstr "Bật tắt thanh từ điển thành ngữ..."
+
+#: kmouth.cpp:485
+msgid "Toggle the statusbar..."
+msgstr "Bật tắt thanh trạng thái..."
+
+#: main.cpp:28
+msgid "A type-and-say front end for speech synthesizers"
+msgstr "Một giao diện gõ-vào-và-phát-âm cho trình tổng hợp giọng nói"
+
+#: main.cpp:35
+msgid "KMouth"
+msgstr "Mồm K"
+
+#: main.cpp:37
+msgid "(c) 2002/2003, Gunnar Schmi Dt"
+msgstr "Bản quyền 2002-2003, Gunnar Schmi Dt"
+
+#: main.cpp:38
+msgid "Gunnar Schmi Dt"
+msgstr "Gunnar Schmi Dt"
+
+#: main.cpp:42
+msgid "History file to open"
+msgstr "Tập tin lịch sử để mở"
+
+#: main.cpp:45
+msgid "Olaf Schmidt"
+msgstr "Olaf Schmidt"
+
+#: main.cpp:45
+msgid "Tips, extended phrase books"
+msgstr "Gợi ý, từ điển thành ngữ mở rộng"
+
+#: optionsdialog.cpp:120
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#: optionsdialog.cpp:133
+msgid "&Preferences"
+msgstr "&Sở thích"
+
+#: optionsdialog.cpp:137
+msgid "&Text-to-Speech"
+msgstr "&Văn bản sang Tiếng nói"
+
+#: optionsdialog.cpp:139 optionsdialog.cpp:140
+msgid "General Options"
+msgstr "Tuỳ chọn Chung"
+
+#: optionsdialog.cpp:152
+#, fuzzy
+#| msgid "KTTSD Speech Service"
+msgid "Jovie Speech Service"
+msgstr "Dịch vụ Giọng nói KTTSD"
+
+#: optionsdialog.cpp:154
+msgid "KDE Text-to-Speech Daemon Configuration"
+msgstr "Cấu hình Trình nền Văn bản sang Tiếng nói KDE"
 
 #: phrasebook/phrasebook.cpp:263 phrasebook/phrasebookdialog.cpp:790
 msgid ""
@@ -235,22 +477,6 @@ msgid ""
 "Copies the currently selected entry from the phrase book to the clipboard"
 msgstr "Sao chép mục đang chọn từ từ điển thành ngữ và đặt nó vào bảng nháp"
 
-#: phrasebook/phrasebookdialog.cpp:413 kmouth.cpp:149
-#, fuzzy
-#| msgid "Pastes the clipboard contents to actual position"
-msgid "Pastes the clipboard contents to current position"
-msgstr "Dán nội dung bảng nháp vào vị trí hiện tại"
-
-#: phrasebook/phrasebookdialog.cpp:414 kmouth.cpp:150
-msgid ""
-"Pastes the clipboard contents at the current cursor position into the edit "
-"field."
-msgstr "Dán nội dung bảng nháp vào vị trí con trỏ trong ô soạn thảo."
-
-#: phrasebook/phrasebookdialog.cpp:418 kmouth.cpp:201
-msgid "&Delete"
-msgstr "&Xóa"
-
 #: phrasebook/phrasebookdialog.cpp:420 phrasebook/phrasebookdialog.cpp:421
 msgid "Deletes the selected entries from the phrase book"
 msgstr "Xoá mục đang chọn trong từ điển thành ngữ"
@@ -325,378 +551,40 @@ msgstr ""
 "Có lỗi khi lưu tập tin\n"
 "%1"
 
-#: wordcompletion/wordlist.cpp:114
-msgid "Creating Word List"
-msgstr "Tạo ra Danh mục Từ"
-
-#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
-msgid "Parsing the KDE documentation..."
-msgstr "Phân tích ngữ pháp tài liệu KDE..."
-
-#: wordcompletion/wordlist.cpp:243
-msgid "Merging dictionaries..."
-msgstr "Trộn từ điển..."
-
-#: wordcompletion/wordlist.cpp:314
-msgid "Parsing file..."
-msgstr "Phân tích ngữ pháp tập tin..."
-
-#: wordcompletion/wordlist.cpp:325
-msgid "Parsing directory..."
-msgstr "Phân tích ngữ pháp thư mục..."
-
-#: wordcompletion/wordlist.cpp:517
-msgid "Performing spell check..."
-msgstr "Chạy kiểm tra chính tả..."
-
-#: wordcompletion/wordcompletionwidget.cpp:75
-#: wordcompletion/wordcompletionwidget.cpp:144
-#: wordcompletion/wordcompletionwidget.cpp:208
-msgid "without name"
-msgstr "không tên"
-
-#: wordcompletion/wordcompletionwidget.cpp:254
-msgid "Export Dictionary"
-msgstr "Xuất khẩu Từ điển"
-
-#: wordcompletion/dictionarycreationwizard.cpp:49
-msgid "Source of New Dictionary (1)"
-msgstr "Nguồn của Từ điển Mới (1)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:54
-#: wordcompletion/dictionarycreationwizard.cpp:58
-#: wordcompletion/dictionarycreationwizard.cpp:66
-#: wordcompletion/dictionarycreationwizard.cpp:71
-#: wordcompletion/dictionarycreationwizard.cpp:116
-#: wordcompletion/dictionarycreationwizard.cpp:132
-#: wordcompletion/dictionarycreationwizard.cpp:141
-#: wordcompletion/dictionarycreationwizard.cpp:150
-msgid "Source of New Dictionary (2)"
-msgstr "Nguồn của Từ điển Mới (2)"
-
-#: wordcompletion/dictionarycreationwizard.cpp:59
-#, fuzzy
-#| msgid "&Directory:"
-msgctxt "In which directory is the file located?"
-msgid "&Directory:"
-msgstr "&Thư mục:"
-
-#: wordcompletion/dictionarycreationwizard.cpp:60
-#: wordcompletion/dictionarycreationwizard.cpp:62
+#: phrasebook/phrasetree.cpp:471
+#, kde-format
 msgid ""
-"With this input field you specify which directory you want to load for "
-"creating the new dictionary."
+"The '%1' key combination has already been allocated to %2.\n"
+"Please choose a unique key combination."
 msgstr ""
-"Với ô nhập này, bạn chỉ định thư mục mà bạn muốn dùng cho việc tạo ra từ "
-"điển mới."
-
-#: wordcompletion/dictionarycreationwizard.cpp:100
-#: texttospeechconfigurationwidget.cpp:48
-#, fuzzy
-#| msgid "Local"
-msgctxt "Local characterset"
-msgid "Local"
-msgstr "Bản địa"
-
-#: wordcompletion/dictionarycreationwizard.cpp:103
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin characterset"
-msgid "Latin1"
-msgstr "Latinh 1"
-
-#: wordcompletion/dictionarycreationwizard.cpp:104
-#: texttospeechconfigurationwidget.cpp:52
-msgid "Unicode"
-msgstr "Unicode"
-
-#: wordcompletion/dictionarycreationwizard.cpp:237
-msgid "Merge result"
-msgstr "Trộn kết quả"
-
-#: wordcompletion/dictionarycreationwizard.cpp:240
-msgctxt "In the sense of a blank word list"
-msgid "Empty list"
-msgstr "Danh sách trống"
-
-#: wordcompletion/dictionarycreationwizard.cpp:249
-msgid "KDE Documentation"
-msgstr "Tài liệu KDE"
-
-#: wordcompletion/dictionarycreationwizard.cpp:371
-#, fuzzy
-#| msgid "Default"
-msgctxt "Default dictionary"
-msgid "Default"
-msgstr "Mặc định"
-
-#: kmouth.cpp:113
-msgid "&Open as History..."
-msgstr "&Mở theo dạng Lịch sử..."
-
-#: kmouth.cpp:116 kmouth.cpp:117
-msgid "Opens an existing file as history"
-msgstr "Mở một tập tin đã tồn tại ở dạng lịch sử"
-
-#: kmouth.cpp:121
-msgid "Save &History As..."
-msgstr "Lưu &Lịch sử Vào..."
-
-#: kmouth.cpp:124 kmouth.cpp:125
-#, fuzzy
-msgid "Saves the actual history as..."
-msgstr "Lưu lịch sử hiện tại vào..."
-
-#: kmouth.cpp:129
-msgid "&Print History..."
-msgstr "&In Lịch sử..."
-
-#: kmouth.cpp:132 kmouth.cpp:133
-msgid "Prints out the actual history"
-msgstr "In lịch sử hiện tại"
-
-#: kmouth.cpp:136 kmouth.cpp:137
-msgid "Quits the application"
-msgstr "Thoát khỏi ứng dụng"
-
-#: kmouth.cpp:141
-msgid "Cuts the selected section and puts it to the clipboard"
-msgstr "Cắt vùng đã chọn và đặt nó vào bảng nháp"
-
-#: kmouth.cpp:142
-msgid ""
-"Cuts the selected section and puts it to the clipboard. If there is some "
-"text selected in the edit field it is placed it on the clipboard. Otherwise "
-"the selected sentences in the history (if any) are placed on the clipboard."
-msgstr ""
-"Cắt phần đã chọn và đặt nó vào bảng nháp. Nếu có một số đoạn văn bản đã chọn "
-"trong ô sửa đổi, chúng sẽ được đặt vào bảng nháp. Nếu không câu đã chọn "
-"trong lịch sử (nếu có) sẽ được đưa vào bảng nháp."
-
-#: kmouth.cpp:145
-msgid "Copies the selected section to the clipboard"
-msgstr "Sao chép phần đã chọn vào bảng nháp"
-
-#: kmouth.cpp:146
-msgid ""
-"Copies the selected section to the clipboard. If there is some text selected "
-"in the edit field it is copied to the clipboard. Otherwise the selected "
-"sentences in the history (if any) are copied to the clipboard."
-msgstr ""
-"Sao chép phần đã chọn và đặt nó vào bảng nháp. Nếu có một số đoạn văn bản đã "
-"chọn trong ô sửa đổi, chúng sẽ được sao chép vào bảng nháp. Nếu không câu đã "
-"chọn trong lịch sử (nếu có) sẽ được sao chép vào bảng nháp."
-
-#: kmouth.cpp:154
-#, fuzzy
-#| msgid "&Speak"
-msgctxt "Start speaking"
-msgid "&Speak"
-msgstr "&Nói"
-
-#: kmouth.cpp:156
-msgid "Speaks the currently active sentence(s)"
-msgstr "Phát âm (các) câu văn đang được kích hoạt hiện tại"
-
-#: kmouth.cpp:157 phraselist.cpp:86
-msgid ""
-"Speaks the currently active sentence(s). If there is some text in the edit "
-"field it is spoken. Otherwise the selected sentences in the history (if any) "
-"are spoken."
-msgstr ""
-"Phát âm (các) câu văn đang được kích hoạt hiện tại. Nếu có một số đoạn văn "
-"bản đã chọn trong ô sửa đổi, chúng sẽ được phát âm. Nếu không câu đã chọn "
-"trong lịch sử (nếu có) sẽ được phát âm."
-
-#: kmouth.cpp:161
-msgid "&Edit..."
-msgstr "&Sửa..."
-
-#: kmouth.cpp:172
-msgid "Show P&hrasebook Bar"
-msgstr "Hiện Thanh Từ điển Thành ngữ"
-
-#: kmouth.cpp:174 kmouth.cpp:175
-msgid "Enables/disables the phrasebook bar"
-msgstr "Bật/tắt thanh từ điển thành ngữ"
-
-#: kmouth.cpp:178 kmouth.cpp:179
-msgid "Enables/disables the statusbar"
-msgstr "Bật/tắt thanh trạng thái"
-
-#: kmouth.cpp:183
-msgid "&Configure KMouth..."
-msgstr "&Cấu hình Mồm K..."
-
-#: kmouth.cpp:185 kmouth.cpp:186
-msgid "Opens the configuration dialog"
-msgstr "Mở hộp thoại cấu hình"
-
-#: kmouth.cpp:194 phraselist.cpp:83
-msgid "&Speak"
-msgstr "&Nói"
-
-#: kmouth.cpp:195 kmouth.cpp:197
-msgid "Speaks the currently selected phrases in the history"
-msgstr "Phát âm đoạn văn đã chọn hiện tại trong lịch sử"
-
-#: kmouth.cpp:203 kmouth.cpp:204
-msgid "Deletes the currently selected phrases from the history"
-msgstr "Xoá đoạn văn đã chọn hiện tại trong lịch sử"
-
-#: kmouth.cpp:208
-msgid "Cu&t"
-msgstr "Cắ&t"
-
-#: kmouth.cpp:210 kmouth.cpp:211
-msgid ""
-"Cuts the currently selected phrases from the history and puts them to the "
-"clipboard"
-msgstr "Cắt đoạn văn đã chọn hiện tại trong lịch sử và đặt nó vào bảng nháp"
-
-#: kmouth.cpp:215
-msgid "&Copy"
-msgstr "&Chép"
-
-#: kmouth.cpp:217 kmouth.cpp:218
-msgid "Copies the currently selected phrases from the history to the clipboard"
-msgstr "Sao chép đoạn văn đã chọn hiện tại trong lịch sử vào bảng nháp"
-
-#: kmouth.cpp:221
-msgid "Select &All Entries"
-msgstr "Chọn &Tất cả các Mục"
-
-#: kmouth.cpp:223 kmouth.cpp:224
-msgid "Selects all phrases in the history"
-msgstr "Chọn tất cả các đoạn văn trong lịch sử"
-
-#: kmouth.cpp:227
-msgid "D&eselect All Entries"
-msgstr "&Bỏ chọn Tất cả các Mục"
-
-#: kmouth.cpp:229 kmouth.cpp:230
-msgid "Deselects all phrases in the history"
-msgstr "Bỏ chọn tất cả các đoạn văn trong lịch sử"
-
-#: kmouth.cpp:244 kmouth.cpp:262 kmouth.cpp:370 kmouth.cpp:378 kmouth.cpp:396
-#: kmouth.cpp:446 kmouth.cpp:463 kmouth.cpp:480 kmouth.cpp:497
-#, fuzzy
-#| msgid "Ready."
-msgctxt "The job is done"
-msgid "Ready."
-msgstr "Sẵn sàng."
-
-#: kmouth.cpp:259 kmouth.cpp:366
-msgid "Opening file..."
-msgstr "Mở tập tin..."
-
-#: kmouth.cpp:374
-msgid "Saving history with a new filename..."
-msgstr "Lưu lịch sử vào tập tin có tên mới..."
-
-#: kmouth.cpp:383
-msgid "Printing..."
-msgstr "In ấn..."
-
-#: kmouth.cpp:401
-#, fuzzy
-#| msgid "Exiting..."
-msgctxt "Shutting down the application"
-msgid "Exiting..."
-msgstr "Thoát..."
-
-#: kmouth.cpp:439
-msgid "Toggling menubar..."
-msgstr "Bật tắt thanh thực đơn..."
-
-#: kmouth.cpp:451
-msgid "Toggling toolbar..."
-msgstr "Bật tắt thanh công cụ..."
-
-#: kmouth.cpp:468
-msgid "Toggling phrasebook bar..."
-msgstr "Bật tắt thanh từ điển thành ngữ..."
-
-#: kmouth.cpp:485
-msgid "Toggle the statusbar..."
-msgstr "Bật tắt thanh trạng thái..."
-
-#: texttospeechconfigurationwidget.cpp:51
-#, fuzzy
-#| msgid "Latin1"
-msgctxt "Latin1 characterset"
-msgid "Latin1"
-msgstr "Latinh 1"
-
-#: optionsdialog.cpp:120
-msgid "Configuration"
-msgstr "Cấu hình"
-
-#: optionsdialog.cpp:133
-msgid "&Preferences"
-msgstr "&Sở thích"
-
-#: optionsdialog.cpp:137
-msgid "&Text-to-Speech"
-msgstr "&Văn bản sang Tiếng nói"
-
-#: optionsdialog.cpp:139 optionsdialog.cpp:140
-msgid "General Options"
-msgstr "Tuỳ chọn Chung"
-
-#: optionsdialog.cpp:145 optionsdialog.cpp:146 configwizard.cpp:103
-msgid "Word Completion"
-msgstr "Điền nốt Từ"
-
-#: optionsdialog.cpp:152
-#, fuzzy
-#| msgid "KTTSD Speech Service"
-msgid "Jovie Speech Service"
-msgstr "Dịch vụ Giọng nói KTTSD"
-
-#: optionsdialog.cpp:154
-msgid "KDE Text-to-Speech Daemon Configuration"
-msgstr "Cấu hình Trình nền Văn bản sang Tiếng nói KDE"
-
-#: main.cpp:28
-msgid "A type-and-say front end for speech synthesizers"
-msgstr "Một giao diện gõ-vào-và-phát-âm cho trình tổng hợp giọng nói"
-
-#: main.cpp:35
-msgid "KMouth"
-msgstr "Mồm K"
-
-#: main.cpp:37
-msgid "(c) 2002/2003, Gunnar Schmi Dt"
-msgstr "Bản quyền 2002-2003, Gunnar Schmi Dt"
-
-#: main.cpp:38
-msgid "Gunnar Schmi Dt"
-msgstr "Gunnar Schmi Dt"
-
-#: main.cpp:42
-msgid "History file to open"
-msgstr "Tập tin lịch sử để mở"
-
-#: main.cpp:45
-msgid "Olaf Schmidt"
-msgstr "Olaf Schmidt"
-
-#: main.cpp:45
-msgid "Tips, extended phrase books"
-msgstr "Gợi ý, từ điển thành ngữ mở rộng"
-
-#: configwizard.cpp:38
-msgid "Initial Configuration - KMouth"
-msgstr "Cấu hình Ban đầu - Mồm K"
-
-#: configwizard.cpp:57
-msgid "Text-to-Speech Configuration"
-msgstr "Cấu hình Văn bản sang Tiếng nói"
-
-#: configwizard.cpp:71
-msgid "Initial Phrase Book"
-msgstr "Từ điển Thành ngữ Ban đầu"
+"Tổ hợp phím '%1' đã được dùng cho %2.\n"
+"Xin chọn tổ hợp phím đặc dụng khác."
+
+#: phrasebook/phrasetree.cpp:493
+#, kde-format
+msgid "the standard \"%1\" action"
+msgstr "hành động \"%1\" tiêu chuẩn"
+
+#: phrasebook/phrasetree.cpp:494
+msgid "Conflict with Standard Application Shortcut"
+msgstr "Mâu thuẫn với Cách gõ tắt Tiêu chuẩn trong Ứng dụng"
+
+#: phrasebook/phrasetree.cpp:511
+#, kde-format
+msgid "the global \"%1\" action"
+msgstr "hành động \"%1\" toàn cục"
+
+#: phrasebook/phrasetree.cpp:512
+msgid "Conflict with Global Shortcuts"
+msgstr "Mâu thuẫn với Cách gõ tắt Toàn cục"
+
+#: phrasebook/phrasetree.cpp:527
+msgid "an other phrase"
+msgstr "đoạn văn khác"
+
+#: phrasebook/phrasetree.cpp:528
+msgid "Key Conflict"
+msgstr "Mâu thuẫn Bàn phím"
 
 #: phraselist.cpp:60
 msgid ""
@@ -731,6 +619,118 @@ msgstr ""
 #: phraselist.cpp:459
 msgid "Open File as History"
 msgstr "Mở Tập tin Lịch sử"
+
+#: texttospeechconfigurationwidget.cpp:48
+#: wordcompletion/dictionarycreationwizard.cpp:100
+#, fuzzy
+#| msgid "Local"
+msgctxt "Local characterset"
+msgid "Local"
+msgstr "Bản địa"
+
+#: texttospeechconfigurationwidget.cpp:51
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin1 characterset"
+msgid "Latin1"
+msgstr "Latinh 1"
+
+#: texttospeechconfigurationwidget.cpp:52
+#: wordcompletion/dictionarycreationwizard.cpp:104
+msgid "Unicode"
+msgstr "Unicode"
+
+#: wordcompletion/dictionarycreationwizard.cpp:49
+msgid "Source of New Dictionary (1)"
+msgstr "Nguồn của Từ điển Mới (1)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:54
+#: wordcompletion/dictionarycreationwizard.cpp:58
+#: wordcompletion/dictionarycreationwizard.cpp:66
+#: wordcompletion/dictionarycreationwizard.cpp:71
+#: wordcompletion/dictionarycreationwizard.cpp:116
+#: wordcompletion/dictionarycreationwizard.cpp:132
+#: wordcompletion/dictionarycreationwizard.cpp:141
+#: wordcompletion/dictionarycreationwizard.cpp:150
+msgid "Source of New Dictionary (2)"
+msgstr "Nguồn của Từ điển Mới (2)"
+
+#: wordcompletion/dictionarycreationwizard.cpp:59
+#, fuzzy
+#| msgid "&Directory:"
+msgctxt "In which directory is the file located?"
+msgid "&Directory:"
+msgstr "&Thư mục:"
+
+#: wordcompletion/dictionarycreationwizard.cpp:60
+#: wordcompletion/dictionarycreationwizard.cpp:62
+msgid ""
+"With this input field you specify which directory you want to load for "
+"creating the new dictionary."
+msgstr ""
+"Với ô nhập này, bạn chỉ định thư mục mà bạn muốn dùng cho việc tạo ra từ "
+"điển mới."
+
+#: wordcompletion/dictionarycreationwizard.cpp:103
+#, fuzzy
+#| msgid "Latin1"
+msgctxt "Latin characterset"
+msgid "Latin1"
+msgstr "Latinh 1"
+
+#: wordcompletion/dictionarycreationwizard.cpp:237
+msgid "Merge result"
+msgstr "Trộn kết quả"
+
+#: wordcompletion/dictionarycreationwizard.cpp:240
+msgctxt "In the sense of a blank word list"
+msgid "Empty list"
+msgstr "Danh sách trống"
+
+#: wordcompletion/dictionarycreationwizard.cpp:249
+msgid "KDE Documentation"
+msgstr "Tài liệu KDE"
+
+#: wordcompletion/dictionarycreationwizard.cpp:371
+#, fuzzy
+#| msgid "Default"
+msgctxt "Default dictionary"
+msgid "Default"
+msgstr "Mặc định"
+
+#: wordcompletion/wordcompletionwidget.cpp:75
+#: wordcompletion/wordcompletionwidget.cpp:144
+#: wordcompletion/wordcompletionwidget.cpp:208
+msgid "without name"
+msgstr "không tên"
+
+#: wordcompletion/wordcompletionwidget.cpp:254
+msgid "Export Dictionary"
+msgstr "Xuất khẩu Từ điển"
+
+#: wordcompletion/wordlist.cpp:114
+msgid "Creating Word List"
+msgstr "Tạo ra Danh mục Từ"
+
+#: wordcompletion/wordlist.cpp:114 wordcompletion/wordlist.cpp:296
+msgid "Parsing the KDE documentation..."
+msgstr "Phân tích ngữ pháp tài liệu KDE..."
+
+#: wordcompletion/wordlist.cpp:243
+msgid "Merging dictionaries..."
+msgstr "Trộn từ điển..."
+
+#: wordcompletion/wordlist.cpp:314
+msgid "Parsing file..."
+msgstr "Phân tích ngữ pháp tập tin..."
+
+#: wordcompletion/wordlist.cpp:325
+msgid "Parsing directory..."
+msgstr "Phân tích ngữ pháp thư mục..."
+
+#: wordcompletion/wordlist.cpp:517
+msgid "Performing spell check..."
+msgstr "Chạy kiểm tra chính tả..."
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-04 02:21+0200\n"
+"POT-Creation-Date: 2011-08-26 02:20+0200\n"
 "PO-Revision-Date: 2008-01-19 20:08+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -401,7 +401,7 @@ msgstr "Kí tự không bao gồm các khoảng trắng:"
 #. i18n: ectx: property (text), widget (QLabel, label_21)
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:51
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:180 rc.cpp:252
+#: rc.cpp:180 rc.cpp:321
 #, fuzzy
 msgid "East Asian characters"
 msgstr "Các kí tự Định dạng"
@@ -420,7 +420,9 @@ msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:29
 #. i18n: ectx: property (text), widget (QRadioButton, runThrough)
-#: rc.cpp:189
+#. i18n: file: part/dialogs/KWInsertImage.ui:136
+#. i18n: ectx: property (text), widget (QRadioButton, runThrough)
+#: rc.cpp:189 rc.cpp:273
 #, fuzzy
 #| msgid "Text will run through this frame"
 msgid "Run through this shape"
@@ -428,43 +430,57 @@ msgstr "Văn bản sẽ chạy qua khung này"
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:36
 #. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
-#: rc.cpp:192
+#. i18n: file: part/dialogs/KWInsertImage.ui:143
+#. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
+#: rc.cpp:192 rc.cpp:276
 msgid "Skip below this shape"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:43
 #. i18n: ectx: property (text), widget (QRadioButton, left)
-#: rc.cpp:195
+#. i18n: file: part/dialogs/KWInsertImage.ui:150
+#. i18n: ectx: property (text), widget (QRadioButton, left)
+#: rc.cpp:195 rc.cpp:279
 msgid "Run on left side of this shape"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:50
 #. i18n: ectx: property (text), widget (QRadioButton, right)
-#: rc.cpp:198
+#. i18n: file: part/dialogs/KWInsertImage.ui:157
+#. i18n: ectx: property (text), widget (QRadioButton, right)
+#: rc.cpp:198 rc.cpp:282
 msgid "Run on right side of this shape"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:57
 #. i18n: ectx: property (text), widget (QRadioButton, longest)
-#: rc.cpp:201
+#. i18n: file: part/dialogs/KWInsertImage.ui:164
+#. i18n: ectx: property (text), widget (QRadioButton, longest)
+#: rc.cpp:201 rc.cpp:285
 msgid "Run on longest side of this shape"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, both)
-#: rc.cpp:204
+#. i18n: file: part/dialogs/KWInsertImage.ui:171
+#. i18n: ectx: property (text), widget (QRadioButton, both)
+#: rc.cpp:204 rc.cpp:288
 msgid "Run on both sides of this shape"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:76
 #. i18n: ectx: property (text), widget (QRadioButton, enough)
-#: rc.cpp:207
+#. i18n: file: part/dialogs/KWInsertImage.ui:183
+#. i18n: ectx: property (text), widget (QRadioButton, enough)
+#: rc.cpp:207 rc.cpp:291
 msgid "Run on sides that are wider than:"
 msgstr ""
 
 #. i18n: file: part/dialogs/KWRunAroundProperties.ui:116
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:210
+#. i18n: file: part/dialogs/KWInsertImage.ui:197
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:210 rc.cpp:294
 #, fuzzy
 #| msgid "Distance Between Frame and Text:"
 msgid "Distance Between Shape and Text:"
@@ -497,15 +513,122 @@ msgstr "Các cột"
 
 #. i18n: file: part/dialogs/KWStartupWidget.ui:71
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:225 part/KWView.cpp:322
+#: rc.cpp:225 part/KWView.cpp:329
 msgid "Create"
 msgstr "Tạo"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, KWInsertImage)
+#: rc.cpp:228
+#, fuzzy
+#| msgid "Format"
+msgid "Form"
+msgstr "Định dạng"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, grpAnchor)
+#: rc.cpp:231
+msgid "Anchor to..."
+msgstr ""
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:26
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorPage)
+#: rc.cpp:234
+#, fuzzy
+#| msgid "Pages"
+msgid "&Page"
+msgstr "Các trang"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:33
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorParagraph)
+#: rc.cpp:237
+#, fuzzy
+#| msgid "Paragraph"
+msgid "Para&graph"
+msgstr "Đoạn"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:43
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorToCharacter)
+#: rc.cpp:240
+#, fuzzy
+#| msgid "Create"
+msgid "&To Character"
+msgstr "Tạo"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:50
+#. i18n: ectx: property (text), widget (QRadioButton, rAnchorAsCharacter)
+#: rc.cpp:243
+#, fuzzy
+#| msgid "Create"
+msgid "&As Character"
+msgstr "Tạo"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:62
+#. i18n: ectx: property (title), widget (QGroupBox, grpHAlign)
+#: rc.cpp:246
+msgid "Horizontal Alignment"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:68
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignLeft)
+#: rc.cpp:249
+#, fuzzy
+msgid "&Left"
+msgstr "Text"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:78
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignCenter)
+#: rc.cpp:252
+#, fuzzy
+msgid "&Center"
+msgstr "Sắp hàng"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:85
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignRight)
+#: rc.cpp:255
+#, fuzzy
+msgid "&Right"
+msgstr "Text"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, grpVAlign)
+#: rc.cpp:258
+msgid "Vertical Alignment"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:101
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignTop)
+#: rc.cpp:261
+msgid "&Top"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:108
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignMiddle)
+#: rc.cpp:264
+msgid "&Middle"
+msgstr ""
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:118
+#. i18n: ectx: property (text), widget (QRadioButton, rAlignBottom)
+#: rc.cpp:267
+#, fuzzy
+#| msgid "Bottom:"
+msgid "&Bottom"
+msgstr "Đáy:"
+
+#. i18n: file: part/dialogs/KWInsertImage.ui:130
+#. i18n: ectx: property (title), widget (QGroupBox, grpWrap)
+#: rc.cpp:270
+#, fuzzy
+#| msgid "Text Run Around"
+msgid "Text Wrap-around"
+msgstr "Văn bản Chạy Xung quanh"
 
 #. i18n: file: part/dockers/KWRdfDocker.ui:34
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#: rc.cpp:228 rc.cpp:261
+#: rc.cpp:297 rc.cpp:330
 #, fuzzy
 #| msgid "Automatically refresh data"
 msgid "Automatically update"
@@ -513,13 +636,13 @@ msgstr "Tự động nạp lại dữ liệu"
 
 #. i18n: file: part/dockers/KWRdfDocker.ui:41
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:231
+#: rc.cpp:300
 msgid "update"
 msgstr ""
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:21
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:234
+#: rc.cpp:303
 #, fuzzy
 #| msgid "Words"
 msgctxt "not application name"
@@ -528,49 +651,49 @@ msgstr "Các từ"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:26
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:237
+#: rc.cpp:306
 msgid "Sentences"
 msgstr "Các câu"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:31
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:240
+#: rc.cpp:309
 msgid "Syllables"
 msgstr "Các âm tiết"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:243
+#: rc.cpp:312
 msgid "Lines"
 msgstr "Các dòng"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:41
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:246
+#: rc.cpp:315
 msgid "Characters incl. spaces"
 msgstr "Các kí tự bao gồm khoảng trắng"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:46
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:249
+#: rc.cpp:318
 msgid "Characters without spaces"
 msgstr "Các kí tự không bao gồm khoảng trắng"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:56
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:255
+#: rc.cpp:324
 msgid "Flesch reading ease"
 msgstr "Độ dễ đọc Flesch"
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:80
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:258
+#: rc.cpp:327
 msgid "..."
 msgstr "..."
 
 #. i18n: file: part/dockers/KWStatisticsDocker.ui:94
 #. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:264
+#: rc.cpp:333
 msgid "Only count main text"
 msgstr ""
 
@@ -578,7 +701,7 @@ msgstr ""
 #. i18n: ectx: Menu (file)
 #. i18n: file: part/words.rc:3
 #. i18n: ectx: Menu (file)
-#: rc.cpp:267 rc.cpp:282
+#: rc.cpp:336 rc.cpp:351
 msgid "&File"
 msgstr "&Tập tin"
 
@@ -586,7 +709,7 @@ msgstr "&Tập tin"
 #. i18n: ectx: Menu (edit)
 #. i18n: file: part/words.rc:8
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:270 rc.cpp:285
+#: rc.cpp:339 rc.cpp:354
 msgid "&Edit"
 msgstr "&Sửa"
 
@@ -594,7 +717,7 @@ msgstr "&Sửa"
 #. i18n: ectx: Menu (view)
 #. i18n: file: part/words.rc:30
 #. i18n: ectx: Menu (view)
-#: rc.cpp:273 rc.cpp:288
+#: rc.cpp:342 rc.cpp:357
 msgid "&View"
 msgstr "&Xem "
 
@@ -602,7 +725,7 @@ msgstr "&Xem "
 #. i18n: ectx: Menu (view_displaymodes)
 #. i18n: file: part/words.rc:35
 #. i18n: ectx: Menu (view)
-#: rc.cpp:276 rc.cpp:291
+#: rc.cpp:345 rc.cpp:360
 msgid "&Display Mode"
 msgstr "&Chế độ Hiển thị"
 
@@ -610,63 +733,63 @@ msgstr "&Chế độ Hiển thị"
 #. i18n: ectx: Menu (tools)
 #. i18n: file: part/words.rc:101
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:279 rc.cpp:303
+#: rc.cpp:348 rc.cpp:372
 msgid "&Tools"
 msgstr "Cô&ng cụ"
 
 #. i18n: file: part/words.rc:54
 #. i18n: ectx: Menu (insert)
-#: rc.cpp:294
+#: rc.cpp:363
 msgctxt "Insert menu"
 msgid "&Insert"
 msgstr "C&hèn"
 
 #. i18n: file: part/words.rc:67
 #. i18n: ectx: Menu (semantic_object_menu)
-#: rc.cpp:297
+#: rc.cpp:366
 msgid "Semantic Object"
 msgstr ""
 
 #. i18n: file: part/words.rc:85
 #. i18n: ectx: Menu (format)
-#: rc.cpp:300
+#: rc.cpp:369
 msgid "F&ormat"
 msgstr "Định &dạng"
 
 #. i18n: file: part/words.rc:102
 #. i18n: ectx: Menu (SpellCheck)
-#: rc.cpp:306
+#: rc.cpp:375
 msgid "Spellcheck"
 msgstr "Kiểm tra chính tả "
 
 #. i18n: file: part/words.rc:108
 #. i18n: ectx: Menu (Changes)
-#: rc.cpp:309
+#: rc.cpp:378
 #, fuzzy
 msgid "Change Tracking"
 msgstr "Thay đổi"
 
 #. i18n: file: part/words.rc:122
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:312
+#: rc.cpp:381
 msgid "&Settings"
 msgstr "&Thiết lập"
 
 #. i18n: file: part/words.rc:133
 #. i18n: ectx: ToolBar (edit_toolbar)
-#: rc.cpp:315
+#: rc.cpp:384
 msgid "Edit"
 msgstr "Sửa"
 
 #. i18n: file: part/words.rc:192
 #. i18n: ectx: Menu (check_spell_list)
-#: rc.cpp:318
+#: rc.cpp:387
 msgid "Spell Check Result"
 msgstr "Kết quả Kiểm tra Chính tả "
 
 #. i18n: file: part/words.rc:221
 #. i18n: ectx: Menu (variable_list)
-#: rc.cpp:321
+#: rc.cpp:390
 msgid "Change Variable To"
 msgstr "Đổi Biến số Thành"
 
@@ -773,419 +896,6 @@ msgstr "Vị trí con trỏ: X:Y"
 msgid "Zoom Controller"
 msgstr "Điều khiển Phóng"
 
-#: part/KWView.cpp:248
-msgid "Frame/Frameset Properties"
-msgstr "Thuộc tính của Khung/Bộ khung"
-
-#: part/KWView.cpp:250
-msgid "Alter frameset properties"
-msgstr "Chỉnh thuộc tính của bộ khung"
-
-#: part/KWView.cpp:258
-msgid "Page Break"
-msgstr "Ngắt Trang"
-
-#: part/KWView.cpp:259
-msgid "Force the remainder of the text into the next page"
-msgstr "Bắt buộc phần văn bản còn lại sang trang tiếp theo"
-
-#: part/KWView.cpp:260
-msgid "All text after this point will be moved into the next page."
-msgstr "Tất cả văn bản sau điểm này sẽ bị di chuyển sang trang tiếp theo."
-
-#: part/KWView.cpp:262
-msgid "Enable Document Headers"
-msgstr ""
-
-#: part/KWView.cpp:264
-msgid "Disable Document Headers"
-msgstr ""
-
-#: part/KWView.cpp:265
-msgid "Shows and hides header display"
-msgstr ""
-
-#: part/KWView.cpp:266
-msgid ""
-"Selecting this option toggles the display of headers in Words.<br/><br/"
-">Headers are special frames at the top of each page which can contain page "
-"numbers or other information."
-msgstr ""
-
-#: part/KWView.cpp:271
-msgid "Enable Document Footers"
-msgstr ""
-
-#: part/KWView.cpp:273
-msgid "Disable Document Footers"
-msgstr ""
-
-#: part/KWView.cpp:274
-msgid "Shows and hides footer display"
-msgstr ""
-
-#: part/KWView.cpp:275
-msgid ""
-"Selecting this option toggles the display of footers in Words. <br/><br/"
-">Footers are special frames at the bottom of each page which can contain "
-"page numbers or other information."
-msgstr ""
-
-#: part/KWView.cpp:280
-#, fuzzy
-msgid "Snap to Grid"
-msgstr "Bắt vào Lưới"
-
-#: part/KWView.cpp:285
-msgid "Raise Frame"
-msgstr "Nâng Khung"
-
-#: part/KWView.cpp:288
-msgid ""
-"Raise the currently selected frame so that it appears above all the other "
-"frames"
-msgstr "Nâng khung đang được chọn để nó hiển thị trên tất cả các khung khác"
-
-#: part/KWView.cpp:290
-msgid ""
-"Raise the currently selected frame so that it appears above all the other "
-"frames. This is only useful if frames overlap each other. If multiple frames "
-"are selected they are all raised in turn."
-msgstr ""
-"Nâng khung đang được chọn để nó hiển thị trên tất cả các khung khác. Chỉ hữu "
-"hiệu khi có nhiều khung gối lên nhau. Nếu có nhiều khung được chọn chúng sẽ "
-"được nâng lên lần lượt."
-
-#: part/KWView.cpp:295
-msgid "Lower Frame"
-msgstr "Hạ Khung"
-
-#: part/KWView.cpp:298
-msgid ""
-"Lower the currently selected frame so that it disappears under any frame "
-"that overlaps it"
-msgstr ""
-"Hạ khung đang được chọn để nó bị khuất dưới bất cứ khung nào gối lên nó"
-
-#: part/KWView.cpp:300
-msgid ""
-"Lower the currently selected frame so that it disappears under any frame "
-"that overlaps it. If multiple frames are selected they are all lowered in "
-"turn."
-msgstr ""
-"Hạ khung đang được chọn để nó bị khuất dưới bất cứ khung nào gối lên nó. Nếu "
-"có nhiều khung được lựa chọn chúng sẽ bị hạ xuống theo lượt."
-
-#: part/KWView.cpp:304
-msgid "Bring to Front"
-msgstr "Mang lên Phía trước"
-
-#: part/KWView.cpp:308
-msgid "Send to Back"
-msgstr "Đẩy ra Phía sau"
-
-#: part/KWView.cpp:312
-#, fuzzy
-msgid "Variable"
-msgstr "Thay đổi"
-
-#: part/KWView.cpp:330
-#, fuzzy
-msgid "Bookmark..."
-msgstr " Chọn font "
-
-#: part/KWView.cpp:335
-#, fuzzy
-msgid "Select Bookmark..."
-msgstr " Chọn font "
-
-#: part/KWView.cpp:336
-#, fuzzy
-msgid "Bookmark"
-msgstr " Chọn font "
-
-#: part/KWView.cpp:342
-#, fuzzy
-msgid "Picture..."
-msgstr "Chèn"
-
-#: part/KWView.cpp:343
-#, fuzzy
-msgid "Insert a picture into document"
-msgstr "Chèn"
-
-#: part/KWView.cpp:347
-#, fuzzy
-msgid "Footnote/Endnote..."
-msgstr "Chèn"
-
-#: part/KWView.cpp:348
-msgid "Insert a footnote referencing the selected text"
-msgstr ""
-
-#: part/KWView.cpp:352
-#, fuzzy
-#| msgid "Frame Borders"
-msgid "Page Borders"
-msgstr "Viền Khung"
-
-#: part/KWView.cpp:353
-msgid "Turns the border display on and off"
-msgstr "Hiện hoặc ẩn viền khung"
-
-#: part/KWView.cpp:358
-msgid ""
-"Turns the border display on and off.<br/><br/>The borders are never printed. "
-"This option is useful to see how the document will appear on the printed "
-"page."
-msgstr ""
-"Hiện hoặc ẩn viền khung.<br/><br/>Viền không bao giờ được in ra. Lựa chọn "
-"này hữu hiệu cho việc xem tài liệu sẽ in ra như thế nào."
-
-#: part/KWView.cpp:360
-msgid "Page Layout..."
-msgstr "Bố trí Trang..."
-
-#: part/KWView.cpp:362
-msgid "Change properties of entire page"
-msgstr "Thay đổi thuộc tính của toàn bộ trang"
-
-#: part/KWView.cpp:363
-#, fuzzy
-msgid ""
-"Change properties of the entire page.<p>Currently you can change paper size, "
-"paper orientation, header and footer sizes, and column settings.</p>"
-msgstr ""
-"Thay đổi thuộc tính của toàn bộ trang.<p>Hiện tại bạn có thể thay đổi khích "
-"thước trang, hướng giấy, cỡ header và footer, và thiết lập cột.</p>"
-
-#: part/KWView.cpp:367
-#, fuzzy
-msgid "Semantic Stylesheets..."
-msgstr "Viền"
-
-#: part/KWView.cpp:369
-msgid "Modify and add semantic stylesheets"
-msgstr ""
-
-#: part/KWView.cpp:370
-msgid ""
-"Stylesheets are used to format contact, event, and location information "
-"which is stored in Rdf"
-msgstr ""
-
-#: part/KWView.cpp:374
-msgid "Make inline"
-msgstr ""
-
-#: part/KWView.cpp:375
-msgid "Convert current frame to an inline frame"
-msgstr ""
-
-#: part/KWView.cpp:376
-msgid ""
-"Convert the current frame to an inline frame.<br><br>Place the inline frame "
-"within the text at the point nearest to the frames current position."
-msgstr ""
-
-#: part/KWView.cpp:380
-#, fuzzy
-#| msgid "Create"
-msgid "As Character"
-msgstr "Tạo"
-
-#: part/KWView.cpp:381
-msgid "Insert the current shape as a character in the text"
-msgstr ""
-
-#: part/KWView.cpp:385
-#, fuzzy
-#| msgid "Create"
-msgid "To Character"
-msgstr "Tạo"
-
-#: part/KWView.cpp:386
-msgid "Anchor the current shape to the character at the current position"
-msgstr ""
-
-#: part/KWView.cpp:390
-#, fuzzy
-#| msgid "Paragraph"
-msgid "To Paragraph"
-msgstr "Đoạn"
-
-#: part/KWView.cpp:391
-msgid "Anchor the current shape to current paragraph"
-msgstr ""
-
-#: part/KWView.cpp:395
-#, fuzzy
-#| msgid "Remove Page"
-msgid "To Page"
-msgstr "Bỏ Trang"
-
-#: part/KWView.cpp:396
-msgid "Anchor the current shape to current page"
-msgstr ""
-
-#: part/KWView.cpp:400
-#, fuzzy
-#| msgid "&Settings"
-msgid "Set Floating"
-msgstr "&Thiết lập"
-
-#: part/KWView.cpp:401
-msgid "Set the current shape floating"
-msgstr ""
-
-#: part/KWView.cpp:405
-#, fuzzy
-msgid "Previous Page"
-msgstr "Xem trước"
-
-#: part/KWView.cpp:409
-#, fuzzy
-#| msgid "Index Page"
-msgid "Next Page"
-msgstr "Chèn Trang"
-
-#: part/KWView.cpp:421 part/dialogs/KWStatisticsDialog.cpp:29
-#: part/dockers/KWStatisticsDocker.cpp:35
-msgid "Statistics"
-msgstr "Thống kê"
-
-#: part/KWView.cpp:423
-msgid "Sentence, word and letter counts for this document"
-msgstr "Số câu, từ và chữ cái trong tài liệu này"
-
-#: part/KWView.cpp:424
-msgid ""
-"Information on the number of letters, words, syllables and sentences for "
-"this document.<p>Evaluates readability using the Flesch reading score.</p>"
-msgstr ""
-"Thông tin về số chữ cái, từ, âm tiết và câu cho tài liệu này.<p>Đánh giá độ "
-"dễ đọc dùng điểm đọc Flesch.</p>"
-
-#: part/KWView.cpp:427
-msgid "Show Rulers"
-msgstr "Hiện Các thước kẻ"
-
-#: part/KWView.cpp:429
-msgid "Shows or hides rulers"
-msgstr "Hiện hoặc ẩn các thước kẻ"
-
-#: part/KWView.cpp:430
-msgid ""
-"The rulers are the white measuring spaces top and left of the document. The "
-"rulers show the position and width of pages and of frames and can be used to "
-"position tabulators among others.<p>Uncheck this to disable the rulers from "
-"being displayed.</p>"
-msgstr ""
-"Các thước kẻ là các khoảng trống màu trắng có thước đo về phía trên và bên "
-"trái tài liệu. Các thước kẻ hiện vị trí và chiều rộng của các trang và các "
-"khung, và có thể được dùng để định vị khoảng cách tab và nhiều thứ khác."
-"<p>Bỏ chọn ở đây để ẩn các thước kẻ.</p>"
-
-#: part/KWView.cpp:438
-#, fuzzy
-msgid "Page..."
-msgstr "Tr&ang."
-
-#: part/KWView.cpp:442
-msgid "Delete Page"
-msgstr "Xoá Trang"
-
-#: part/KWView.cpp:449
-#, fuzzy
-msgid "Formatting Characters"
-msgstr "Các kí tự Định dạng"
-
-#: part/KWView.cpp:453
-msgid "Toggle the display of non-printing characters"
-msgstr "Hiện/ẩn các kí tự không in được"
-
-#: part/KWView.cpp:454
-#, fuzzy
-#| msgid ""
-#| "Toggle the display of non-printing characters.<br/><br/>When this is "
-#| "enabled, KWord shows you tabs, spaces, carriage returns and other non-"
-#| "printing characters."
-msgid ""
-"Toggle the display of non-printing characters.<br/><br/>When this is "
-"enabled, Words shows you tabs, spaces, carriage returns and other non-"
-"printing characters."
-msgstr ""
-"Hiện/ẩn các kí tự không in được.<br/><br/>Nếu được chọn, KWord hiện tab, "
-"khoảng trống, xuống dòng và các kí tự không in được khác."
-
-#: part/KWView.cpp:457
-msgid "Select All Frames"
-msgstr "Chọn Tất cả Các khung"
-
-#: part/KWView.cpp:462 part/dialogs/KWPageSettingsDialog.cpp:62
-#, fuzzy
-msgid "Delete"
-msgstr "Xoá(delete)"
-
-#: part/KWView.cpp:475
-#, fuzzy
-msgid "Create Linked Copy"
-msgstr "Tạo Bản sao được Liên kết"
-
-#: part/KWView.cpp:477
-msgid "Create a copy of the current frame, always showing the same contents"
-msgstr "Tạo một bản sao của khung hiện tại, luôn luôn có nội dung như nhau"
-
-#: part/KWView.cpp:478
-msgid ""
-"Create a copy of the current frame, that remains linked to it. This means "
-"they always show the same contents: modifying the contents in such a frame "
-"will update all its linked copies."
-msgstr ""
-"Tạo một bản sao của khung hiện tại và được liên kết với nó. Có nghĩa là "
-"chúng luôn có nội dung như nhau: sửa nội dung của một khung như vậy sẽ cập "
-"nhật tất cả các khung được liên kết."
-
-#: part/KWView.cpp:481
-#, fuzzy
-#| msgid "Create Frame"
-msgid "Create Frame-clip"
-msgstr "Tạo Khung"
-
-#: part/KWView.cpp:485
-#, fuzzy
-#| msgid "Remove record"
-msgid "Remove Frame-clip"
-msgstr "Bỏ hồ sơ"
-
-#: part/KWView.cpp:489
-#, fuzzy
-#| msgid "Status Bar"
-msgid "Show Status Bar"
-msgstr "Thanh Trạng thái"
-
-#: part/KWView.cpp:490
-#, fuzzy
-#| msgid "Status Bar"
-msgid "Hide Status Bar"
-msgstr "Thanh Trạng thái"
-
-#: part/KWView.cpp:491
-#, fuzzy
-#| msgid "Show the status bar"
-msgid "Shows or hides the status bar"
-msgstr "Hiện thanh trạng thái"
-
-#: part/KWView.cpp:1198
-msgid "Please select at least one non-locked shape and try again"
-msgstr ""
-
-#: part/KWView.cpp:1285
-#, fuzzy
-msgctxt "(qtundo-format)"
-msgid "Create Linked Copy"
-msgstr "Tạo Bản sao được Liên kết"
-
 #: part/commands/KWChangePageStyleCommand.cpp:27
 #, fuzzy
 msgctxt "(qtundo-format)"
@@ -1275,6 +985,11 @@ msgstr "the\n"
 msgid "Select Bookmark"
 msgstr " Chọn font "
 
+#: part/dialogs/KWStatisticsDialog.cpp:29
+#: part/dockers/KWStatisticsDocker.cpp:35 part/KWView.cpp:428
+msgid "Statistics"
+msgstr "Thống kê"
+
 #: part/dialogs/KWFrameConnectSelector.cpp:46
 msgid "frameset"
 msgstr "bộ khung"
@@ -1292,6 +1007,11 @@ msgstr "Kiểu:"
 #, fuzzy
 msgid "Clone"
 msgstr "Lời kết"
+
+#: part/dialogs/KWPageSettingsDialog.cpp:62 part/KWView.cpp:469
+#, fuzzy
+msgid "Delete"
+msgstr "Xoá(delete)"
 
 #: part/dialogs/KWPageSettingsDialog.cpp:147
 #, fuzzy
@@ -1625,6 +1345,415 @@ msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
 msgid "Unable to locate note-text"
 msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
 
+#: part/KWView.cpp:255
+msgid "Frame/Frameset Properties"
+msgstr "Thuộc tính của Khung/Bộ khung"
+
+#: part/KWView.cpp:257
+msgid "Alter frameset properties"
+msgstr "Chỉnh thuộc tính của bộ khung"
+
+#: part/KWView.cpp:265
+msgid "Page Break"
+msgstr "Ngắt Trang"
+
+#: part/KWView.cpp:266
+msgid "Force the remainder of the text into the next page"
+msgstr "Bắt buộc phần văn bản còn lại sang trang tiếp theo"
+
+#: part/KWView.cpp:267
+msgid "All text after this point will be moved into the next page."
+msgstr "Tất cả văn bản sau điểm này sẽ bị di chuyển sang trang tiếp theo."
+
+#: part/KWView.cpp:269
+msgid "Enable Document Headers"
+msgstr ""
+
+#: part/KWView.cpp:271
+msgid "Disable Document Headers"
+msgstr ""
+
+#: part/KWView.cpp:272
+msgid "Shows and hides header display"
+msgstr ""
+
+#: part/KWView.cpp:273
+msgid ""
+"Selecting this option toggles the display of headers in Words.<br/><br/"
+">Headers are special frames at the top of each page which can contain page "
+"numbers or other information."
+msgstr ""
+
+#: part/KWView.cpp:278
+msgid "Enable Document Footers"
+msgstr ""
+
+#: part/KWView.cpp:280
+msgid "Disable Document Footers"
+msgstr ""
+
+#: part/KWView.cpp:281
+msgid "Shows and hides footer display"
+msgstr ""
+
+#: part/KWView.cpp:282
+msgid ""
+"Selecting this option toggles the display of footers in Words. <br/><br/"
+">Footers are special frames at the bottom of each page which can contain "
+"page numbers or other information."
+msgstr ""
+
+#: part/KWView.cpp:287
+#, fuzzy
+msgid "Snap to Grid"
+msgstr "Bắt vào Lưới"
+
+#: part/KWView.cpp:292
+msgid "Raise Frame"
+msgstr "Nâng Khung"
+
+#: part/KWView.cpp:295
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames"
+msgstr "Nâng khung đang được chọn để nó hiển thị trên tất cả các khung khác"
+
+#: part/KWView.cpp:297
+msgid ""
+"Raise the currently selected frame so that it appears above all the other "
+"frames. This is only useful if frames overlap each other. If multiple frames "
+"are selected they are all raised in turn."
+msgstr ""
+"Nâng khung đang được chọn để nó hiển thị trên tất cả các khung khác. Chỉ hữu "
+"hiệu khi có nhiều khung gối lên nhau. Nếu có nhiều khung được chọn chúng sẽ "
+"được nâng lên lần lượt."
+
+#: part/KWView.cpp:302
+msgid "Lower Frame"
+msgstr "Hạ Khung"
+
+#: part/KWView.cpp:305
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame "
+"that overlaps it"
+msgstr ""
+"Hạ khung đang được chọn để nó bị khuất dưới bất cứ khung nào gối lên nó"
+
+#: part/KWView.cpp:307
+msgid ""
+"Lower the currently selected frame so that it disappears under any frame "
+"that overlaps it. If multiple frames are selected they are all lowered in "
+"turn."
+msgstr ""
+"Hạ khung đang được chọn để nó bị khuất dưới bất cứ khung nào gối lên nó. Nếu "
+"có nhiều khung được lựa chọn chúng sẽ bị hạ xuống theo lượt."
+
+#: part/KWView.cpp:311
+msgid "Bring to Front"
+msgstr "Mang lên Phía trước"
+
+#: part/KWView.cpp:315
+msgid "Send to Back"
+msgstr "Đẩy ra Phía sau"
+
+#: part/KWView.cpp:319
+#, fuzzy
+msgid "Variable"
+msgstr "Thay đổi"
+
+#: part/KWView.cpp:337
+#, fuzzy
+msgid "Bookmark..."
+msgstr " Chọn font "
+
+#: part/KWView.cpp:342
+#, fuzzy
+msgid "Select Bookmark..."
+msgstr " Chọn font "
+
+#: part/KWView.cpp:343
+#, fuzzy
+msgid "Bookmark"
+msgstr " Chọn font "
+
+#: part/KWView.cpp:349
+#, fuzzy
+msgid "Picture..."
+msgstr "Chèn"
+
+#: part/KWView.cpp:350
+#, fuzzy
+msgid "Insert a picture into document"
+msgstr "Chèn"
+
+#: part/KWView.cpp:354
+#, fuzzy
+msgid "Footnote/Endnote..."
+msgstr "Chèn"
+
+#: part/KWView.cpp:355
+msgid "Insert a footnote referencing the selected text"
+msgstr ""
+
+#: part/KWView.cpp:359
+#, fuzzy
+#| msgid "Frame Borders"
+msgid "Page Borders"
+msgstr "Viền Khung"
+
+#: part/KWView.cpp:360
+msgid "Turns the border display on and off"
+msgstr "Hiện hoặc ẩn viền khung"
+
+#: part/KWView.cpp:365
+msgid ""
+"Turns the border display on and off.<br/><br/>The borders are never printed. "
+"This option is useful to see how the document will appear on the printed "
+"page."
+msgstr ""
+"Hiện hoặc ẩn viền khung.<br/><br/>Viền không bao giờ được in ra. Lựa chọn "
+"này hữu hiệu cho việc xem tài liệu sẽ in ra như thế nào."
+
+#: part/KWView.cpp:367
+msgid "Page Layout..."
+msgstr "Bố trí Trang..."
+
+#: part/KWView.cpp:369
+msgid "Change properties of entire page"
+msgstr "Thay đổi thuộc tính của toàn bộ trang"
+
+#: part/KWView.cpp:370
+#, fuzzy
+msgid ""
+"Change properties of the entire page.<p>Currently you can change paper size, "
+"paper orientation, header and footer sizes, and column settings.</p>"
+msgstr ""
+"Thay đổi thuộc tính của toàn bộ trang.<p>Hiện tại bạn có thể thay đổi khích "
+"thước trang, hướng giấy, cỡ header và footer, và thiết lập cột.</p>"
+
+#: part/KWView.cpp:374
+#, fuzzy
+msgid "Semantic Stylesheets..."
+msgstr "Viền"
+
+#: part/KWView.cpp:376
+msgid "Modify and add semantic stylesheets"
+msgstr ""
+
+#: part/KWView.cpp:377
+msgid ""
+"Stylesheets are used to format contact, event, and location information "
+"which is stored in Rdf"
+msgstr ""
+
+#: part/KWView.cpp:381
+msgid "Make inline"
+msgstr ""
+
+#: part/KWView.cpp:382
+msgid "Convert current frame to an inline frame"
+msgstr ""
+
+#: part/KWView.cpp:383
+msgid ""
+"Convert the current frame to an inline frame.<br><br>Place the inline frame "
+"within the text at the point nearest to the frames current position."
+msgstr ""
+
+#: part/KWView.cpp:387
+#, fuzzy
+#| msgid "Create"
+msgid "As Character"
+msgstr "Tạo"
+
+#: part/KWView.cpp:388
+msgid "Anchor the current shape as a character in the text"
+msgstr ""
+
+#: part/KWView.cpp:392
+#, fuzzy
+#| msgid "Create"
+msgid "To Character"
+msgstr "Tạo"
+
+#: part/KWView.cpp:393
+msgid "Anchor the current shape to the character at the current position"
+msgstr ""
+
+#: part/KWView.cpp:397
+#, fuzzy
+#| msgid "Paragraph"
+msgid "To Paragraph"
+msgstr "Đoạn"
+
+#: part/KWView.cpp:398
+msgid "Anchor the current shape to current paragraph"
+msgstr ""
+
+#: part/KWView.cpp:402
+#, fuzzy
+#| msgid "Remove Page"
+msgid "To Page"
+msgstr "Bỏ Trang"
+
+#: part/KWView.cpp:403
+msgid "Anchor the current shape to current page"
+msgstr ""
+
+#: part/KWView.cpp:407
+#, fuzzy
+#| msgid "&Settings"
+msgid "Set Floating"
+msgstr "&Thiết lập"
+
+#: part/KWView.cpp:408
+msgid "Set the current shape floating"
+msgstr ""
+
+#: part/KWView.cpp:412
+#, fuzzy
+msgid "Previous Page"
+msgstr "Xem trước"
+
+#: part/KWView.cpp:416
+#, fuzzy
+#| msgid "Index Page"
+msgid "Next Page"
+msgstr "Chèn Trang"
+
+#: part/KWView.cpp:430
+msgid "Sentence, word and letter counts for this document"
+msgstr "Số câu, từ và chữ cái trong tài liệu này"
+
+#: part/KWView.cpp:431
+msgid ""
+"Information on the number of letters, words, syllables and sentences for "
+"this document.<p>Evaluates readability using the Flesch reading score.</p>"
+msgstr ""
+"Thông tin về số chữ cái, từ, âm tiết và câu cho tài liệu này.<p>Đánh giá độ "
+"dễ đọc dùng điểm đọc Flesch.</p>"
+
+#: part/KWView.cpp:434
+msgid "Show Rulers"
+msgstr "Hiện Các thước kẻ"
+
+#: part/KWView.cpp:436
+msgid "Shows or hides rulers"
+msgstr "Hiện hoặc ẩn các thước kẻ"
+
+#: part/KWView.cpp:437
+msgid ""
+"The rulers are the white measuring spaces top and left of the document. The "
+"rulers show the position and width of pages and of frames and can be used to "
+"position tabulators among others.<p>Uncheck this to disable the rulers from "
+"being displayed.</p>"
+msgstr ""
+"Các thước kẻ là các khoảng trống màu trắng có thước đo về phía trên và bên "
+"trái tài liệu. Các thước kẻ hiện vị trí và chiều rộng của các trang và các "
+"khung, và có thể được dùng để định vị khoảng cách tab và nhiều thứ khác."
+"<p>Bỏ chọn ở đây để ẩn các thước kẻ.</p>"
+
+#: part/KWView.cpp:445
+#, fuzzy
+msgid "Page..."
+msgstr "Tr&ang."
+
+#: part/KWView.cpp:449
+msgid "Delete Page"
+msgstr "Xoá Trang"
+
+#: part/KWView.cpp:456
+#, fuzzy
+msgid "Formatting Characters"
+msgstr "Các kí tự Định dạng"
+
+#: part/KWView.cpp:460
+msgid "Toggle the display of non-printing characters"
+msgstr "Hiện/ẩn các kí tự không in được"
+
+#: part/KWView.cpp:461
+#, fuzzy
+#| msgid ""
+#| "Toggle the display of non-printing characters.<br/><br/>When this is "
+#| "enabled, KWord shows you tabs, spaces, carriage returns and other non-"
+#| "printing characters."
+msgid ""
+"Toggle the display of non-printing characters.<br/><br/>When this is "
+"enabled, Words shows you tabs, spaces, carriage returns and other non-"
+"printing characters."
+msgstr ""
+"Hiện/ẩn các kí tự không in được.<br/><br/>Nếu được chọn, KWord hiện tab, "
+"khoảng trống, xuống dòng và các kí tự không in được khác."
+
+#: part/KWView.cpp:464
+msgid "Select All Frames"
+msgstr "Chọn Tất cả Các khung"
+
+#: part/KWView.cpp:482
+#, fuzzy
+msgid "Create Linked Copy"
+msgstr "Tạo Bản sao được Liên kết"
+
+#: part/KWView.cpp:484
+msgid "Create a copy of the current frame, always showing the same contents"
+msgstr "Tạo một bản sao của khung hiện tại, luôn luôn có nội dung như nhau"
+
+#: part/KWView.cpp:485
+msgid ""
+"Create a copy of the current frame, that remains linked to it. This means "
+"they always show the same contents: modifying the contents in such a frame "
+"will update all its linked copies."
+msgstr ""
+"Tạo một bản sao của khung hiện tại và được liên kết với nó. Có nghĩa là "
+"chúng luôn có nội dung như nhau: sửa nội dung của một khung như vậy sẽ cập "
+"nhật tất cả các khung được liên kết."
+
+#: part/KWView.cpp:488
+#, fuzzy
+#| msgid "Create Frame"
+msgid "Create Frame-clip"
+msgstr "Tạo Khung"
+
+#: part/KWView.cpp:492
+#, fuzzy
+#| msgid "Remove record"
+msgid "Remove Frame-clip"
+msgstr "Bỏ hồ sơ"
+
+#: part/KWView.cpp:496
+#, fuzzy
+#| msgid "Status Bar"
+msgid "Show Status Bar"
+msgstr "Thanh Trạng thái"
+
+#: part/KWView.cpp:497
+#, fuzzy
+#| msgid "Status Bar"
+msgid "Hide Status Bar"
+msgstr "Thanh Trạng thái"
+
+#: part/KWView.cpp:498
+#, fuzzy
+#| msgid "Show the status bar"
+msgid "Shows or hides the status bar"
+msgstr "Hiện thanh trạng thái"
+
+#: part/KWView.cpp:1205
+msgid "Please select at least one non-locked shape and try again"
+msgstr ""
+
+#: part/KWView.cpp:1292
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Create Linked Copy"
+msgstr "Tạo Bản sao được Liên kết"
+
+#: part/KWView.cpp:1674
+#, fuzzy
+#| msgid "Insert Page"
+msgid "Insert Image Options"
+msgstr "Chèn Trang"
+
 #: part/KWOdfLoader.cpp:88
 msgid "Invalid OASIS OpenDocument file. No office:body tag found."
 msgstr ""
@@ -1940,11 +2069,6 @@ msgstr "Michael Johnson"
 #, fuzzy
 #~ msgid "Page Background"
 #~ msgstr "Màu nền"
-
-#, fuzzy
-#~| msgid "Format"
-#~ msgid "Form"
-#~ msgstr "Định dạng"
 
 #~ msgid "If Text is Too Long for Frame"
 #~ msgstr "Nếu văn bản quá dài so với khung"
@@ -2385,9 +2509,6 @@ msgstr "Michael Johnson"
 #~ msgid "Table of Content"
 #~ msgstr "Mục lục"
 
-#~ msgid "Pages"
-#~ msgstr "Các trang"
-
 #~ msgid "Page Description"
 #~ msgstr "Mô tả Trang"
 
@@ -2787,16 +2908,6 @@ msgstr "Michael Johnson"
 #~ msgstr "đến"
 
 #, fuzzy
-#~ msgctxt "Run Around"
-#~ msgid "&Left"
-#~ msgstr "Text"
-
-#, fuzzy
-#~ msgctxt "Run Around"
-#~ msgid "&Right"
-#~ msgstr "Text"
-
-#, fuzzy
 #~ msgid "No."
 #~ msgstr "Nr."
 
@@ -3186,10 +3297,6 @@ msgstr "Michael Johnson"
 
 #, fuzzy
 #~ msgid "Align &Left"
-#~ msgstr "Sắp hàng"
-
-#, fuzzy
-#~ msgid "Align &Center"
 #~ msgstr "Sắp hàng"
 
 #, fuzzy

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-13 03:45+0200\n"
+"POT-Creation-Date: 2011-08-29 04:01+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -37,6 +37,17 @@ msgstr ""
 #: flake/KShapePaste.cpp:100
 msgid "Paste Shapes"
 msgstr "Dán Các hình"
+
+#: flake/commands/KShapeGroupCommand.cpp:107
+#, fuzzy
+msgid "Group Shapes"
+msgstr "Nhóm các hình"
+
+#: flake/commands/KShapeGroupCommand.cpp:109
+#, fuzzy
+#| msgid "Add Group"
+msgid "Add Shapes to Group"
+msgstr "Thêm Nhóm"
 
 #: flake/commands/KPathSegmentBreakCommand.cpp:40
 #, fuzzy
@@ -80,17 +91,6 @@ msgstr "Đặt viền"
 #| msgid "Distribute shapes"
 msgid "Distribute Shapes"
 msgstr "Phân phối các hình"
-
-#: flake/commands/KShapeGroupCommand.cpp:107
-#, fuzzy
-msgid "Group Shapes"
-msgstr "Nhóm các hình"
-
-#: flake/commands/KShapeGroupCommand.cpp:109
-#, fuzzy
-#| msgid "Add Group"
-msgid "Add Shapes to Group"
-msgstr "Thêm Nhóm"
 
 #: flake/commands/KShapeMoveCommand.cpp:42
 #, fuzzy
@@ -266,10 +266,6 @@ msgstr ""
 msgid "Zoom"
 msgstr ""
 
-#: flake/tools/KCreatePathToolFactory.cpp:33
-msgid "Create Path"
-msgstr "Tạo Đường"
-
 #: flake/tools/KCreatePathTool.cpp:370 flake/tools/KPathTool.cpp:181
 msgid "Snapping"
 msgstr ""
@@ -282,6 +278,10 @@ msgstr ""
 #, fuzzy
 msgid "Angle Constraints"
 msgstr "Thay đổi Liên hệ"
+
+#: flake/tools/KCreatePathToolFactory.cpp:33
+msgid "Create Path"
+msgstr "Tạo Đường"
 
 #: flake/tools/KPathSegmentChangeStrategy.cpp:140
 #, fuzzy
@@ -507,16 +507,6 @@ msgstr ""
 msgid "Collection"
 msgstr "Bộ"
 
-#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
-#, fuzzy, kde-format
-msgid "Slide %1"
-msgstr "Hiện thanh công cụ %1"
-
-#: kopageapp/KoPAPageThumbnailModel.cpp:69
-#, fuzzy, kde-format
-msgid "Page %1"
-msgstr "Tên: "
-
 #: kopageapp/KoPADocumentStructureDocker.cpp:82 main/KoMainWindow.cpp:1710
 msgid "Document"
 msgstr "Tài liệu"
@@ -632,30 +622,15 @@ msgstr "Công ti:"
 msgid "Paste"
 msgstr "Ngày"
 
-#: kopageapp/KoPADocumentModel.cpp:160
+#: kopageapp/KoPAPageThumbnailModel.cpp:67 kopageapp/KoPADocumentModel.cpp:158
 #, fuzzy, kde-format
-msgid "Page  %1"
+msgid "Slide %1"
+msgstr "Hiện thanh công cụ %1"
+
+#: kopageapp/KoPAPageThumbnailModel.cpp:69
+#, fuzzy, kde-format
+msgid "Page %1"
 msgstr "Tên: "
-
-#: kopageapp/KoPADocumentModel.cpp:167
-msgid "Group"
-msgstr "Nhóm"
-
-#: kopageapp/KoPADocumentModel.cpp:170
-msgid "Shape"
-msgstr "Hình"
-
-#: kopageapp/KoPADocumentModel.cpp:283
-msgid "Visible"
-msgstr "Nhìn thấy"
-
-#: kopageapp/KoPADocumentModel.cpp:284
-msgid "Locked"
-msgstr "Bị khóa"
-
-#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
-msgid "Reparent shapes"
-msgstr ""
 
 #: kopageapp/commands/KoPAChangeMasterPageCommand.cpp:35
 #, fuzzy
@@ -940,6 +915,31 @@ msgid "Paste Page"
 msgid_plural "Paste Pages"
 msgstr[0] "Trang Dán"
 
+#: kopageapp/KoPADocumentModel.cpp:160
+#, fuzzy, kde-format
+msgid "Page  %1"
+msgstr "Tên: "
+
+#: kopageapp/KoPADocumentModel.cpp:167
+msgid "Group"
+msgstr "Nhóm"
+
+#: kopageapp/KoPADocumentModel.cpp:170
+msgid "Shape"
+msgstr "Hình"
+
+#: kopageapp/KoPADocumentModel.cpp:283
+msgid "Visible"
+msgstr "Nhìn thấy"
+
+#: kopageapp/KoPADocumentModel.cpp:284
+msgid "Locked"
+msgstr "Bị khóa"
+
+#: kopageapp/KoPADocumentModel.cpp:497 kopageapp/KoPADocumentModel.cpp:518
+msgid "Reparent shapes"
+msgstr ""
+
 #: kotext/KFindStrategy.cpp:63
 #, kde-format
 msgid "Found 1 match"
@@ -985,23 +985,6 @@ msgstr "Chèn biểu tượng"
 msgid "Insert Row Above"
 msgstr "Chèn biểu tượng"
 
-#: kotext/KoText.cpp:45
-#, fuzzy
-msgctxt "Underline Style"
-msgid "None"
-msgstr "Không"
-
-#: kotext/KoText.cpp:46
-#, fuzzy
-msgctxt "Underline Style"
-msgid "Single"
-msgstr "Một"
-
-#: kotext/KoText.cpp:47
-msgctxt "Underline Style"
-msgid "Double"
-msgstr "Đôi"
-
 #: kotext/KReplaceStrategy.cpp:58
 msgid ""
 "Found no match\n"
@@ -1020,12 +1003,22 @@ msgstr[0] ""
 msgid "Replace %1 with %2?"
 msgstr "Thay thế Text"
 
-#. i18n: file: widgets/KoCsvImportDialog.ui:147
-#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
-#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#: kotext/KOdfText.cpp:45
 #, fuzzy
-msgid "Format"
-msgstr "Định dạng"
+msgctxt "Underline Style"
+msgid "None"
+msgstr "Không"
+
+#: kotext/KOdfText.cpp:46
+#, fuzzy
+msgctxt "Underline Style"
+msgid "Single"
+msgstr "Một"
+
+#: kotext/KOdfText.cpp:47
+msgctxt "Underline Style"
+msgid "Double"
+msgstr "Đôi"
 
 #: kotext/InsertTextReferenceAction.cpp:36
 #: kotext/InsertTextReferenceAction.cpp:64
@@ -1046,6 +1039,13 @@ msgstr ""
 #, kde-format
 msgid "%1 Options"
 msgstr ""
+
+#. i18n: file: widgets/KoCsvImportDialog.ui:147
+#. i18n: ectx: attribute (title), widget (QWidget, m_formatTab)
+#: kotext/KoTextEditor_p.h:93 kotext/KoTextEditor_p.h:130 rc.cpp:440
+#, fuzzy
+msgid "Format"
+msgstr "Định dạng"
 
 #: kotext/KoTextEditor.cpp:111 kotext/KoTextEditor.cpp:167
 #: kotext/KoTextEditor.cpp:325 widgets/KoCsvImportDialog.cpp:216
@@ -3106,54 +3106,6 @@ msgstr "Bảng màu"
 msgid "Add/Remove Colors"
 msgstr "Thêm/Xóa Màu"
 
-#: widgets/KoPageLayoutDialog.cpp:47
-msgid "Page Layout"
-msgstr "Bố trí Trang"
-
-#: widgets/KoPageLayoutDialog.cpp:113
-#, fuzzy
-msgid "Apply to document"
-msgstr "Mở tài liệu"
-
-#: widgets/KoResourceItemChooser.cpp:75
-msgid "Import"
-msgstr "Nhập"
-
-#: widgets/KoResourceItemChooser.cpp:89
-msgid "Download"
-msgstr "Tải xuống"
-
-#: widgets/KoResourceItemChooser.cpp:97
-#, fuzzy
-#| msgid "Shape"
-msgid "Share"
-msgstr "Hình"
-
-#: widgets/KoResourceItemChooser.cpp:125
-#, fuzzy
-#| msgid "Choose Filter"
-msgid "Choose File to Add"
-msgstr "Chọn bộ lọc"
-
-#: widgets/KoZoomAction.cpp:165 widgets/KoZoomAction.cpp:167
-#: widgets/KoZoomAction.cpp:179 widgets/KoZoomAction.cpp:181
-#: widgets/KoZoomMode.cpp:25
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: widgets/KoZoomAction.cpp:263
-msgid "Use same aspect as pixels"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:271
-msgid "Zoom to Selection"
-msgstr ""
-
-#: widgets/KoZoomAction.cpp:279
-msgid "Zoom to All"
-msgstr ""
-
 #: widgets/KoPageLayoutWidget.cpp:178
 #, fuzzy
 #| msgid "Left:"
@@ -3203,6 +3155,54 @@ msgstr "Bố trí Trang"
 #| msgid "Page Preview"
 msgid "Page spread"
 msgstr "Xem trước Trang"
+
+#: widgets/KoPageLayoutDialog.cpp:47
+msgid "Page Layout"
+msgstr "Bố trí Trang"
+
+#: widgets/KoPageLayoutDialog.cpp:113
+#, fuzzy
+msgid "Apply to document"
+msgstr "Mở tài liệu"
+
+#: widgets/KoResourceItemChooser.cpp:75
+msgid "Import"
+msgstr "Nhập"
+
+#: widgets/KoResourceItemChooser.cpp:89
+msgid "Download"
+msgstr "Tải xuống"
+
+#: widgets/KoResourceItemChooser.cpp:97
+#, fuzzy
+#| msgid "Shape"
+msgid "Share"
+msgstr "Hình"
+
+#: widgets/KoResourceItemChooser.cpp:125
+#, fuzzy
+#| msgid "Choose Filter"
+msgid "Choose File to Add"
+msgstr "Chọn bộ lọc"
+
+#: widgets/KoZoomAction.cpp:165 widgets/KoZoomAction.cpp:167
+#: widgets/KoZoomAction.cpp:179 widgets/KoZoomAction.cpp:181
+#: widgets/KoZoomMode.cpp:25
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
+
+#: widgets/KoZoomAction.cpp:263
+msgid "Use same aspect as pixels"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:271
+msgid "Zoom to Selection"
+msgstr ""
+
+#: widgets/KoZoomAction.cpp:279
+msgid "Zoom to All"
+msgstr ""
 
 #: widgets/KoZoomMode.cpp:26
 msgid "Fit Page Width"

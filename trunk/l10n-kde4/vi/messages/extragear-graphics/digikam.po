@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-31 02:10+0200\n"
+"POT-Creation-Date: 2011-09-01 02:39+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -8776,22 +8776,6 @@ msgstr ""
 "<p>Nếu bạn bấm cái nút này, mọi giá trị của đường cong từ kênh được chọn "
 "hiện thời sẽ bị đặt lại thành giá trị mặc định."
 
-#: libs/dimg/filters/curves/curvessettings.cpp:248
-msgid "Select Gimp Curves File to Load"
-msgstr "Chọn tập tin cong GIMP cần tải"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:258
-msgid "Cannot load from the Gimp curves text file."
-msgstr "Không thể tải từ tập tin văn bản đường cong GIMP."
-
-#: libs/dimg/filters/curves/curvessettings.cpp:269
-msgid "Gimp Curves File to Save"
-msgstr "Tập tin cong GIMP cần lưu"
-
-#: libs/dimg/filters/curves/curvessettings.cpp:279
-msgid "Cannot save to the Gimp curves text file."
-msgstr "Không thể lưu vào tập tin văn bản đường cong GIMP."
-
 #: libs/dimg/filters/curves/curveswidget.cpp:185
 #: libs/dimg/filters/levels/histogramwidget.cpp:495
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
@@ -8830,6 +8814,22 @@ msgid ""
 msgstr ""
 "x:%1\n"
 "y:%2"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:254
+msgid "Select Gimp Curves File to Load"
+msgstr "Chọn tập tin cong GIMP cần tải"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:264
+msgid "Cannot load from the Gimp curves text file."
+msgstr "Không thể tải từ tập tin văn bản đường cong GIMP."
+
+#: libs/dimg/filters/curves/curvessettings.cpp:275
+msgid "Gimp Curves File to Save"
+msgstr "Tập tin cong GIMP cần lưu"
+
+#: libs/dimg/filters/curves/curvessettings.cpp:285
+msgid "Cannot save to the Gimp curves text file."
+msgstr "Không thể lưu vào tập tin văn bản đường cong GIMP."
 
 #: libs/dimg/filters/decorate/borderfilter.h:143
 #, fuzzy
@@ -17959,8 +17959,10 @@ msgid "Color Auto-correction"
 msgstr "Sửa chữa màu tự động"
 
 #: utilities/queuemanager/basetools/color/autocorrection.cpp:54
-msgid "A tool to automatically correct image colors."
-msgstr ""
+#, fuzzy
+#| msgid "Color Space"
+msgid "Automatically correct image colors."
+msgstr "Miền màu"
 
 #: utilities/queuemanager/basetools/color/bcgcorrection.cpp:48
 #, fuzzy
@@ -17970,19 +17972,33 @@ msgstr "Sửa chữa màu tự động"
 
 #: utilities/queuemanager/basetools/color/bcgcorrection.cpp:49
 #, fuzzy
-#| msgid "Brightness/Contrast/Gamma"
-msgid "A tool to fix Brightness/Contrast/Gamma."
-msgstr "Độ sáng/tương phản/gamma"
+#| msgid "Brightness/Contrast/Gamma..."
+msgid "Fix Brightness/Contrast/Gamma."
+msgstr "Độ sáng/tương phản/gamma..."
+
+#: utilities/queuemanager/basetools/color/bwconvert.cpp:49
+#, fuzzy
+#| msgid "Invert"
+msgid "B&W Convert"
+msgstr "Đảo"
+
+#: utilities/queuemanager/basetools/color/bwconvert.cpp:50
+#, fuzzy
+#| msgid "Convert to Black & White"
+msgid "Convert to black and white."
+msgstr "Chuyển đổi sang đen trắng"
 
 #: utilities/queuemanager/basetools/color/channelmixer.cpp:51
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to mix color channel."
+msgid "Mix color channel."
 msgstr "Miền màu"
 
 #: utilities/queuemanager/basetools/color/colorbalance.cpp:49
-msgid "A tool to adjust color balance."
-msgstr ""
+#, fuzzy
+#| msgid "Adjust Color Curves"
+msgid "Adjust color balance."
+msgstr "Chỉnh cong màu"
 
 #: utilities/queuemanager/basetools/color/convert16to8.cpp:42
 #, fuzzy
@@ -17993,7 +18009,7 @@ msgstr "Chuyển đổi"
 #: utilities/queuemanager/basetools/color/convert16to8.cpp:43
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert color depth from 16 to 8 bits."
+msgid "Convert color depth from 16 to 8 bits."
 msgstr "Miền màu"
 
 #: utilities/queuemanager/basetools/color/convert8to16.cpp:42
@@ -18005,47 +18021,7 @@ msgstr "Chuyển đổi"
 #: utilities/queuemanager/basetools/color/convert8to16.cpp:43
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert color depth from 8 to 16 bits."
-msgstr "Miền màu"
-
-#: utilities/queuemanager/basetools/color/hslcorrection.cpp:48
-#, fuzzy
-#| msgid "Lens Distortion..."
-msgid "HSL Correction"
-msgstr "Sự méo mó kính..."
-
-#: utilities/queuemanager/basetools/color/hslcorrection.cpp:49
-#, fuzzy
-#| msgid "Hue/Saturation/Lightness..."
-msgid "A tool to fix Hue/Saturation/Lightness."
-msgstr "Sắc màu/Độ bão hòa/Độ nhạt..."
-
-#: utilities/queuemanager/basetools/color/invert.cpp:47
-#, fuzzy
-#| msgid "Color:"
-msgid "Invert Colors"
-msgstr "Màu :"
-
-#: utilities/queuemanager/basetools/color/invert.cpp:48
-#, fuzzy
-#| msgid "Color Space"
-msgid "A tool to invert image colors."
-msgstr "Miền màu"
-
-#: utilities/queuemanager/basetools/color/whitebalance.cpp:49
-msgid "A tool to adjust White Balance."
-msgstr ""
-
-#: utilities/queuemanager/basetools/color/bwconvert.cpp:49
-#, fuzzy
-#| msgid "Invert"
-msgid "B&W Convert"
-msgstr "Đảo"
-
-#: utilities/queuemanager/basetools/color/bwconvert.cpp:50
-#, fuzzy
-#| msgid "Color Space"
-msgid "A tool to convert to black and white."
+msgid "Convert color depth from 8 to 16 bits."
 msgstr "Miền màu"
 
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:53
@@ -18057,7 +18033,7 @@ msgstr "Điều chỉnh cong..."
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:54
 #, fuzzy
 #| msgid "Auto exposure adjustments"
-msgid "A tool to perform curves adjustments."
+msgid "Perform curves adjustments."
 msgstr "Điều chỉnh phơi nắng tự động"
 
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
@@ -18065,6 +18041,18 @@ msgstr "Điều chỉnh phơi nắng tự động"
 #| msgid "Alpha"
 msgid "Alpha"
 msgstr "Anfa"
+
+#: utilities/queuemanager/basetools/color/hslcorrection.cpp:48
+#, fuzzy
+#| msgid "Lens Distortion..."
+msgid "HSL Correction"
+msgstr "Sự méo mó kính..."
+
+#: utilities/queuemanager/basetools/color/hslcorrection.cpp:49
+#, fuzzy
+#| msgid "Hue/Saturation/Lightness..."
+msgid "Fix Hue/Saturation/Lightness."
+msgstr "Sắc màu/Độ bão hòa/Độ nhạt..."
 
 #: utilities/queuemanager/basetools/color/iccconvert.cpp:55
 #, fuzzy
@@ -18075,8 +18063,26 @@ msgstr "Đảo"
 #: utilities/queuemanager/basetools/color/iccconvert.cpp:56
 #, fuzzy
 #| msgid "Color Space"
-msgid "A tool to convert image to a color space."
+msgid "Convert image to a color space."
 msgstr "Miền màu"
+
+#: utilities/queuemanager/basetools/color/invert.cpp:47
+#, fuzzy
+#| msgid "Color:"
+msgid "Invert Colors"
+msgstr "Màu :"
+
+#: utilities/queuemanager/basetools/color/invert.cpp:48
+#, fuzzy
+#| msgid "Color Space"
+msgid "Invert image colors."
+msgstr "Miền màu"
+
+#: utilities/queuemanager/basetools/color/whitebalance.cpp:49
+#, fuzzy
+#| msgid "White Balance"
+msgid "Adjust White Balance."
+msgstr "Cán cân trắng"
 
 #: utilities/queuemanager/basetools/convert/convert2jp2.cpp:49
 #, fuzzy
@@ -18085,7 +18091,7 @@ msgid "Convert To JP2"
 msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2jp2.cpp:50
-msgid "A tool to convert images to JPEG-2000 format."
+msgid "Convert images to JPEG-2000 format."
 msgstr ""
 
 #: utilities/queuemanager/basetools/convert/convert2jpeg.cpp:49
@@ -18095,8 +18101,10 @@ msgid "Convert To JPEG"
 msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2jpeg.cpp:50
-msgid "A tool to convert images to JPEG format."
-msgstr ""
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert images to JPEG format."
+msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2pgf.cpp:49
 #, fuzzy
@@ -18105,8 +18113,10 @@ msgid "Convert To PGF"
 msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2pgf.cpp:50
-msgid "A tool to convert images to PGF format."
-msgstr ""
+#, fuzzy
+#| msgid "Converting %1 to lossless file format..."
+msgid "Convert images to PGF format."
+msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
 
 #: utilities/queuemanager/basetools/convert/convert2png.cpp:49
 #, fuzzy
@@ -18115,8 +18125,10 @@ msgid "Convert To PNG"
 msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2png.cpp:50
-msgid "A tool to convert images to PNG format."
-msgstr ""
+#, fuzzy
+#| msgid "Converting %1 to lossless file format..."
+msgid "Convert images to PNG format."
+msgstr "Đang chuyển đổi %1 sang định dạng tập tin không mất gì..."
 
 #: utilities/queuemanager/basetools/convert/convert2tiff.cpp:49
 #, fuzzy
@@ -18125,13 +18137,15 @@ msgid "Convert To TIFF"
 msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/convert/convert2tiff.cpp:50
-msgid "A tool to convert images to TIFF format."
-msgstr ""
+#, fuzzy
+#| msgid "Convert"
+msgid "Convert images to TIFF format."
+msgstr "Chuyển đổi"
 
 #: utilities/queuemanager/basetools/decorate/border.cpp:49
 #, fuzzy
 #| msgid "A digiKam image plugin to add a border around an image."
-msgid "A tool to add a border around images"
+msgid "Add a border around images"
 msgstr "Một phần bổ sung ảnh digiKam để thêm một viền chung quanh ảnh."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:127
@@ -18141,7 +18155,7 @@ msgid "Add Watermark"
 msgstr "Thêm máy ảnh.."
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:128
-msgid "A tool to overlay an image or text as a visible watermark"
+msgid "Overlay an image or text as a visible watermark"
 msgstr ""
 
 #: utilities/queuemanager/basetools/decorate/watermark.cpp:140
@@ -18321,7 +18335,7 @@ msgid "Anti-Vignetting"
 msgstr "Làm mờ nét ảnh..."
 
 #: utilities/queuemanager/basetools/enhance/antivignetting.cpp:53
-msgid "A tool to remove/add vignetting to photograph."
+msgid "Remove/add vignetting to photograph."
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/blur.cpp:50
@@ -18332,14 +18346,14 @@ msgstr "<p>Ảnh đầy đủ"
 
 #: utilities/queuemanager/basetools/enhance/blur.cpp:51
 #, fuzzy
-#| msgid "Color Space"
-msgid "A tool to blur images"
-msgstr "Miền màu"
+#| msgid "<p>Full Image"
+msgid "Blur images"
+msgstr "<p>Ảnh đầy đủ"
 
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:67
 #, fuzzy
 #| msgid "<p>Enable this option to automatic setting of orientation."
-msgid "A tool to fix automatically lens distortions"
+msgid "Fix automatically lens distortions"
 msgstr "<p>Bật tùy chọn này để tự động đặt hướng."
 
 #: utilities/queuemanager/basetools/enhance/lensautofix.cpp:79
@@ -18353,16 +18367,20 @@ msgid "Cannot find all lens information to process lens auto-corrections"
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/localcontrast.cpp:51
-msgid "A tool to emulate tone mapping."
-msgstr ""
+#, fuzzy
+#| msgid "Donate Money..."
+msgid "Emulate tone mapping."
+msgstr "Tăng tiền..."
 
 #: utilities/queuemanager/basetools/enhance/noisereduction.cpp:50
-msgid "A tool to remove photograph noise using wavelets."
+msgid "Remove photograph noise using wavelets."
 msgstr ""
 
 #: utilities/queuemanager/basetools/enhance/restoration.cpp:53
-msgid "A tool to restore photographs based on Greystoration."
-msgstr ""
+#, fuzzy
+#| msgid "Restore photograph (slow)"
+msgid "Restore photographs based on Greystoration."
+msgstr "Phục hồi ảnh chụp (chậm)"
 
 #: utilities/queuemanager/basetools/enhance/sharpen.cpp:52
 #, fuzzy
@@ -18371,14 +18389,16 @@ msgid "Sharpen Image"
 msgstr "Lưu ảnh"
 
 #: utilities/queuemanager/basetools/enhance/sharpen.cpp:53
-msgid "A tool to sharpen images"
-msgstr ""
+#, fuzzy
+#| msgid "Save Images"
+msgid "Sharpen images"
+msgstr "Lưu ảnh"
 
 #: utilities/queuemanager/basetools/filters/filmgrain.cpp:51
 #, fuzzy
-#| msgid "Add film grain"
-msgid "A tool to add film grain"
-msgstr "Thêm hạt mảng thuốc"
+#| msgid "Add Film Grain..."
+msgid "Add film grain"
+msgstr "Thêm hạt mảng thuốc..."
 
 #: utilities/queuemanager/basetools/metadata/assigntemplate.cpp:52
 #, fuzzy
@@ -18387,8 +18407,10 @@ msgid "Apply Metadata Template"
 msgstr "Đang đặt thẻ siêu dữ liệu đối với tập tin %1..."
 
 #: utilities/queuemanager/basetools/metadata/assigntemplate.cpp:53
-msgid "A tool to apply template metadata"
-msgstr ""
+#, fuzzy
+#| msgid "Metadata"
+msgid "Apply template metadata"
+msgstr "Siêu dữ liệu"
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:49
 #, fuzzy
@@ -18397,7 +18419,7 @@ msgid "Remove Metadata"
 msgstr "Siêu dữ liệu"
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:50
-msgid "A tool to remove Exif, Iptc, or Xmp metadata from images."
+msgid "Remove Exif, Iptc, or Xmp metadata from images."
 msgstr ""
 
 #: utilities/queuemanager/basetools/metadata/removemetadata.cpp:54
@@ -18423,8 +18445,10 @@ msgid "Flip"
 msgstr ""
 
 #: utilities/queuemanager/basetools/transform/flip.cpp:51
-msgid "A tool to flip images horizontally or vertically."
-msgstr ""
+#, fuzzy
+#| msgid "Flip horizontally"
+msgid "Flip images horizontally or vertically."
+msgstr "Lật ngang"
 
 #: utilities/queuemanager/basetools/transform/flip.cpp:57
 #, fuzzy
@@ -18443,7 +18467,7 @@ msgid "Flip:"
 msgstr ""
 
 #: utilities/queuemanager/basetools/transform/resize.cpp:52
-msgid "A tool to resize images with a customized length."
+msgid "Resize images with a customized length."
 msgstr ""
 
 #: utilities/queuemanager/basetools/transform/resize.cpp:56
@@ -18508,9 +18532,9 @@ msgstr "Xoay trái"
 
 #: utilities/queuemanager/basetools/transform/rotate.cpp:84
 #, fuzzy
-#| msgid "Color Space"
-msgid "A tool to rotate images."
-msgstr "Miền màu"
+#| msgid "Save Images"
+msgid "Rotate images."
+msgstr "Lưu ảnh"
 
 #: utilities/queuemanager/basetools/transform/rotate.cpp:88
 #, fuzzy
@@ -23536,6 +23560,36 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Brightness/Contrast/Gamma"
+#~ msgid "A tool to fix Brightness/Contrast/Gamma."
+#~ msgstr "Độ sáng/tương phản/gamma"
+
+#, fuzzy
+#~| msgid "Hue/Saturation/Lightness..."
+#~ msgid "A tool to fix Hue/Saturation/Lightness."
+#~ msgstr "Sắc màu/Độ bão hòa/Độ nhạt..."
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to convert to black and white."
+#~ msgstr "Miền màu"
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to blur images"
+#~ msgstr "Miền màu"
+
+#, fuzzy
+#~| msgid "Add film grain"
+#~ msgid "A tool to add film grain"
+#~ msgstr "Thêm hạt mảng thuốc"
+
+#, fuzzy
+#~| msgid "Color Space"
+#~ msgid "A tool to rotate images."
+#~ msgstr "Miền màu"
+
+#, fuzzy
 #~| msgid "Interface Options"
 #~ msgid "Misc Options"
 #~ msgstr "Tuy chọn giao diện"
@@ -25884,11 +25938,6 @@ msgstr ""
 #~ "Không thể lưu thiết lập vào tập tin văn bản thay đổi kích cỡ ảnh chụp."
 
 #, fuzzy
-#~| msgid "Donate Money..."
-#~ msgid "Tone Mapping..."
-#~ msgstr "Tăng tiền..."
-
-#, fuzzy
 #~| msgid "&Themes"
 #~ msgid "Map Theme"
 #~ msgstr "&Sắc thái"
@@ -27858,9 +27907,6 @@ msgstr ""
 
 #~ msgid "Unai Garro"
 #~ msgstr "Unai Garro"
-
-#~ msgid "Adjust Color Curves"
-#~ msgstr "Chỉnh cong màu"
 
 #~ msgid "An image-histogram-curves adjustment plugin for digiKam."
 #~ msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:46+0200\n"
+"POT-Creation-Date: 2011-09-09 11:37+0200\n"
 "PO-Revision-Date: 2007-06-23 22:55+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -16,6 +16,124 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
+
+#: HostConnector.cpp:44
+msgid "Connect Host"
+msgstr "Máy kết nối"
+
+#: HostConnector.cpp:55
+msgid "Host:"
+msgstr "Máy:"
+
+#: HostConnector.cpp:65
+msgid "Enter the name of the host you want to connect to."
+msgstr "Hãy nhập tên của máy nơi bạn muốn kết nối."
+
+#: HostConnector.cpp:71
+msgid "Connection Type"
+msgstr "Kiểu kết nối"
+
+#: HostConnector.cpp:77
+msgid "ssh"
+msgstr "SSH"
+
+#: HostConnector.cpp:80
+msgid "Select this to use the secure shell to login to the remote host."
+msgstr "Chọn điều này để dùng hệ vỏ bảo mật để đăng nhập vào máy từ xa."
+
+#: HostConnector.cpp:83
+msgid "rsh"
+msgstr "RSH"
+
+#: HostConnector.cpp:84
+msgid "Select this to use the remote shell to login to the remote host."
+msgstr "Chọn điều này để dùng hệ vỏ ở xa để đăng nhập vào máy từ xa."
+
+#: HostConnector.cpp:87
+msgid "Daemon"
+msgstr "Trình nền"
+
+#: HostConnector.cpp:88
+msgid ""
+"Select this if you want to connect to a ksysguard daemon that is running on "
+"the machine you want to connect to, and is listening for client requests."
+msgstr ""
+"Chọn điều này nếu bạn muốn kết nối đến một trình nền ksysguard mà chạy trên "
+"máy nơi bạn muốn kết nối, và lắng nghe các yêu cầu ứng dụng khách."
+
+#: HostConnector.cpp:91
+msgid "Custom command"
+msgstr "Lệnh tự chọn"
+
+#: HostConnector.cpp:92
+msgid ""
+"Select this to use the command you entered below to start ksysguardd on the "
+"remote host."
+msgstr ""
+"Chọn điều này để sử dụng lệnh đã nhập bên dưới để khởi chạy ksysguard trên "
+"máy ở xa."
+
+#: HostConnector.cpp:95
+msgid "Port:"
+msgstr "Cổng:"
+
+#: HostConnector.cpp:102
+msgid ""
+"Enter the port number on which the ksysguard daemon is listening for "
+"connections."
+msgstr "Hãy nhập sổ hiệu cổng nơi trình nền ksysguard lắng nghe các kết nối."
+
+#: HostConnector.cpp:105
+msgid "e.g.  3112"
+msgstr "v.d. 3112"
+
+#: HostConnector.cpp:108
+msgid "Command:"
+msgstr "Lệnh:"
+
+#: HostConnector.cpp:117
+msgid "Enter the command that runs ksysguardd on the host you want to monitor."
+msgstr ""
+"Hãy nhập lệnh chạy ksysguardd (trình nền ksysguard) trên máy bạn muốn theo "
+"dõi."
+
+#: HostConnector.cpp:121
+msgid "e.g. ssh -l root remote.host.org ksysguardd"
+msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
+
+#: SensorBrowser.cpp:117
+msgid "Sensor Browser"
+msgstr "Bộ Duyệt Nhạy"
+
+#: SensorBrowser.cpp:474
+#, fuzzy
+#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
+msgid "Drag sensors to empty cells of a worksheet "
+msgstr ""
+"Hãy kéo bộ nhạy vào ô rỗng trên bảng làm việc, hoặc vào tiểu dụng này trên "
+"bảng điều khiển."
+
+#: SensorBrowser.cpp:475
+#, fuzzy
+#| msgid ""
+#| "The sensor browser lists the connected hosts and the sensors that they "
+#| "provide. Click and drag sensors into drop zones of a worksheet or the "
+#| "panel applet. A display will appear that visualizes the values provided "
+#| "by the sensor. Some sensor displays can display values of multiple "
+#| "sensors. Simply drag other sensors on to the display to add more sensors."
+msgid ""
+"The sensor browser lists the connected hosts and the sensors that they "
+"provide. Click and drag sensors into drop zones of a worksheet. A display "
+"will appear that visualizes the values provided by the sensor. Some sensor "
+"displays can display values of multiple sensors. Simply drag other sensors "
+"on to the display to add more sensors."
+msgstr ""
+"Bộ duyệt nhạy liệt kê các máy đã kết nối, và những bộ nhạy bị chúng cung "
+"cấp. Hãy nhắp vào và kéo bộ nhạy vào vùng thả trên bảng làm việc, hoặc vào "
+"tiểu dụng này trên bảng điều khiển KDE. Một bộ trình bày sẽ xuất hiện mà "
+"hiển thị các giá trị bị bộ nhạy đó cung cấp. Một số bộ trình bày nhạy có thể "
+"hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
+"bộ trình bày, để thêm bộ nhạy nữa."
 
 #: SensorDisplayLib/DancingBars.cpp:96 SensorDisplayLib/FancyPlotter.cpp:283
 msgid "OK"
@@ -216,6 +334,85 @@ msgstr ""
 "Đây là ô rỗng trong bảng làm việc. Hãy kéo một bộ nhạy từ Bộ Duyệt Nhạy và "
 "thả nó vào đây. Một bộ trình bày nhạy sẽ xuất hiện mà cho bạn khả năng theo "
 "dõi các giá trị nhạy trong thời gian."
+
+#: SensorDisplayLib/FancyPlotter.cpp:178
+msgctxt "Largest axis title"
+msgid "99999 XXXX"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
+#: SensorDisplayLib/FancyPlotter.cpp:649
+#, kde-format
+msgctxt "units"
+msgid "%1%"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:523
+#, kde-format
+msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
+msgid "<p><b>%1:</b><br>"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:594
+#, kde-format
+msgid "%1 of %2%1"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:622
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:625
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:628
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:631
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:636
+#, kde-format
+msgctxt "units"
+msgid "%1 TiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:639
+#, kde-format
+msgctxt "units"
+msgid "%1 GiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:642
+#, kde-format
+msgctxt "units"
+msgid "%1 MiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:645
+#, kde-format
+msgctxt "units"
+msgid "%1 KiB/s"
+msgstr ""
+
+#: SensorDisplayLib/FancyPlotter.cpp:651
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "unitless - just a number"
+msgid "%1"
+msgstr "%"
 
 #: SensorDisplayLib/FancyPlotterSettings.cpp:51
 #, fuzzy
@@ -452,6 +649,28 @@ msgctxt ""
 msgid "Multimeter Settings"
 msgstr "Thiết lập bộ đa đo"
 
+#: SensorDisplayLib/SensorDisplay.cpp:118
+#: SensorDisplayLib/SensorLogger.cpp:598
+msgid "&Properties"
+msgstr "Tài &sản"
+
+#: SensorDisplayLib/SensorDisplay.cpp:123
+#: SensorDisplayLib/SensorLogger.cpp:603
+msgid "&Remove Display"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: SensorDisplayLib/SensorDisplay.cpp:190
+#, kde-format
+msgid ""
+"<qt><p>This is a sensor display. To customize a sensor display click the "
+"right mouse button here and select the <i>Properties</i> entry from the "
+"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
+"p>%1</qt>"
+msgstr ""
+"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
+"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
+"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
+
 #: SensorDisplayLib/SensorLogger.cpp:138
 msgid "Logging"
 msgstr "Ghi lưu"
@@ -478,16 +697,6 @@ msgstr "Tập tin ghi lưu"
 #: SensorDisplayLib/SensorLoggerDlg.cpp:32
 msgid "Sensor Logger"
 msgstr "Bộ ghi lưu dữ liệu nhạy"
-
-#: SensorDisplayLib/SensorLogger.cpp:598
-#: SensorDisplayLib/SensorDisplay.cpp:118
-msgid "&Properties"
-msgstr "Tài &sản"
-
-#: SensorDisplayLib/SensorLogger.cpp:603
-#: SensorDisplayLib/SensorDisplay.cpp:123
-msgid "&Remove Display"
-msgstr "Gỡ &bỏ bộ trình bày"
 
 #: SensorDisplayLib/SensorLogger.cpp:608
 msgid "&Remove Sensor"
@@ -529,96 +738,184 @@ msgstr "Trạng thái"
 msgid "Label"
 msgstr "Nhãn"
 
-#: SensorDisplayLib/FancyPlotter.cpp:178
-msgctxt "Largest axis title"
-msgid "99999 XXXX"
-msgstr ""
+#: TimerSettings.cpp:38
+msgid "Timer Settings"
+msgstr "Thiết lập đếm thời gian"
 
-#: SensorDisplayLib/FancyPlotter.cpp:515 SensorDisplayLib/FancyPlotter.cpp:586
-#: SensorDisplayLib/FancyPlotter.cpp:649
+#: TimerSettings.cpp:48
+msgid "Use update interval of worksheet"
+msgstr "Dùng khoảng cập nhật của bảng làm việc"
+
+#: TimerSettings.cpp:51 WorkSheetSettings.cpp:90
+msgid "Update interval:"
+msgstr "Khoảng cập nhật:"
+
+#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
+#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
+#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:89
+msgid " sec"
+msgstr " giây"
+
+#: TimerSettings.cpp:61 WorkSheetSettings.cpp:100
+msgid "All displays of the sheet are updated at the rate specified here."
+msgstr "Mọi bộ trình bày của tờ được cập nhật theo tỷ lệ đã xác định vào đây."
+
+#: WorkSheet.cpp:89
 #, kde-format
-msgctxt "units"
-msgid "%1%"
-msgstr ""
+msgid "Cannot open the file %1."
+msgstr "Không thể mở tập tin %1."
 
-#: SensorDisplayLib/FancyPlotter.cpp:523
+#: WorkSheet.cpp:97
 #, kde-format
-msgctxt "%1 is what is being shown statistics for, like 'Memory', 'Swap', etc."
-msgid "<p><b>%1:</b><br>"
-msgstr ""
+msgid "The file %1 does not contain valid XML."
+msgstr "Tập tin %1 không chứa mã XML hợp lệ."
 
-#: SensorDisplayLib/FancyPlotter.cpp:594
-#, kde-format
-msgid "%1 of %2%1"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:622
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:625
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:628
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:631
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:636
-#, kde-format
-msgctxt "units"
-msgid "%1 TiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:639
-#, kde-format
-msgctxt "units"
-msgid "%1 GiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:642
-#, kde-format
-msgctxt "units"
-msgid "%1 MiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:645
-#, kde-format
-msgctxt "units"
-msgid "%1 KiB/s"
-msgstr ""
-
-#: SensorDisplayLib/FancyPlotter.cpp:651
-#, fuzzy, kde-format
-#| msgctxt "a percentage"
-#| msgid "%"
-msgctxt "unitless - just a number"
-msgid "%1"
-msgstr "%"
-
-#: SensorDisplayLib/SensorDisplay.cpp:190
+#: WorkSheet.cpp:104
 #, kde-format
 msgid ""
-"<qt><p>This is a sensor display. To customize a sensor display click the "
-"right mouse button here and select the <i>Properties</i> entry from the "
-"popup menu. Select <i>Remove</i> to delete the display from the worksheet.</"
-"p>%1</qt>"
+"The file %1 does not contain a valid worksheet definition, which must have a "
+"document type 'KSysGuardWorkSheet'."
 msgstr ""
-"<qt><p>Đây là một bộ trình bày dữ liệu nhạy. Để tùy chỉnh nó, hãy nhấn-phải "
-"vào đây, rồi chọn <i>Thuộc tính</i> trong trình đơn bật lên. Chọn <i>Bỏ</i> "
-"để xoá bộ trình bày ra bảng làm việc.</p>%1</qt>"
+"Tập tin %1 không chứa lời định nghĩa bảng làm việc hợp lệ, mà phải có kiểu "
+"tài liệu KSysGuardWorkSheet."
+
+#: WorkSheet.cpp:128
+#, kde-format
+msgid "The file %1 has an invalid worksheet size."
+msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
+
+#: WorkSheet.cpp:229
+#, kde-format
+msgid "Cannot save file %1"
+msgstr "Không thể lưu tập tin %1"
+
+#: WorkSheet.cpp:275
+msgid "The clipboard does not contain a valid display description."
+msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
+
+#: WorkSheet.cpp:376
+msgid "Select Display Type"
+msgstr "Chọn kiểu bộ trình bày"
+
+#: WorkSheet.cpp:377
+msgid "&Line graph"
+msgstr "Đồ thị đườ&ng"
+
+#: WorkSheet.cpp:378
+msgid "&Digital display"
+msgstr "Hiện điện &số"
+
+#: WorkSheet.cpp:379
+msgid "&Bar graph"
+msgstr "Đồ thị th&anh"
+
+#: WorkSheet.cpp:380
+msgid "Log to a &file"
+msgstr "&Ghi lưu vào tập tin"
+
+#: WorkSheet.cpp:529
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove this display?"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: WorkSheet.cpp:530
+#, fuzzy
+#| msgid "&Remove Display"
+msgid "Remove Display"
+msgstr "Gỡ &bỏ bộ trình bày"
+
+#: WorkSheet.cpp:571
+msgid "Dummy"
+msgstr "Giả"
+
+#: WorkSheetSettings.cpp:40
+#, fuzzy
+#| msgid "Properties"
+msgid "Tab Properties"
+msgstr "Thuộc tính"
+
+#: WorkSheetSettings.cpp:61
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#: WorkSheetSettings.cpp:70
+msgid "Rows:"
+msgstr "Hàng:"
+
+#: WorkSheetSettings.cpp:79
+msgid "Columns:"
+msgstr "Cột:"
+
+#: WorkSheetSettings.cpp:87
+msgid "Enter the number of rows the sheet should have."
+msgstr "Hãy nhập số hàng cho tờ này."
+
+#: WorkSheetSettings.cpp:88
+msgid "Enter the number of columns the sheet should have."
+msgstr "Hãy nhập số cột cho tờ này."
+
+#: WorkSheetSettings.cpp:101
+msgid "Enter the title of the worksheet here."
+msgstr "Hãy nhập vào đây tựa của bảng làm việc."
+
+#: Workspace.cpp:113
+#, kde-format
+msgid "Sheet %1"
+msgstr "Tờ %1"
+
+#: Workspace.cpp:172
+#, fuzzy, kde-format
+#| msgid ""
+#| "The worksheet '%1' contains unsaved data.\n"
+#| "Do you want to save the worksheet?"
+msgid ""
+"The tab '%1' contains unsaved data.\n"
+"Do you want to save the tab?"
+msgstr ""
+"Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
+"Bạn có muốn lưu tờ này không?"
+
+#: Workspace.cpp:187
+#, fuzzy
+#| msgid "*.sgrd|Sensor Files"
+msgid "*.sgrd|Sensor Files (*.sgrd)"
+msgstr "*.sgrd|Tập tin bộ nhạy"
+
+#: Workspace.cpp:187
+msgid "Select Tab File to Import"
+msgstr ""
+
+#: Workspace.cpp:215 Workspace.cpp:236
+#, fuzzy
+#| msgid "You do not have a worksheet that could be saved."
+msgid "You do not have a tab that could be saved."
+msgstr "Bạn không có bảng làm việc có thể lưu."
+
+#: Workspace.cpp:243
+msgid "Export Tab"
+msgstr ""
+
+#: Workspace.cpp:261
+#, fuzzy
+#| msgid "There are no worksheets that could be deleted."
+msgid "There are no tabs that could be deleted."
+msgstr "Không có bảng làm việc có thể xoá bỏ."
+
+#: Workspace.cpp:301
+#, kde-format
+msgid ""
+"<qt>To propose the current custom tab as a new System Monitor tab, email "
+"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
+"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
+"qt>"
+msgstr ""
+
+#: Workspace.cpp:301
+#, fuzzy
+#| msgid "System Monitor"
+msgid "Upload custom System Monitor tab"
+msgstr "Bộ Theo dõi Hệ thống"
 
 #: ksgrd/SensorAgent.cpp:109
 #, fuzzy, kde-format
@@ -1337,142 +1634,6 @@ msgstr "Gặp lỗi mạng (v.d. cáp mạng bị tháo nút ra) cho máy %1."
 msgid "Error for host %1: %2"
 msgstr "Lỗi cho máy %1: %2"
 
-#: HostConnector.cpp:44
-msgid "Connect Host"
-msgstr "Máy kết nối"
-
-#: HostConnector.cpp:55
-msgid "Host:"
-msgstr "Máy:"
-
-#: HostConnector.cpp:65
-msgid "Enter the name of the host you want to connect to."
-msgstr "Hãy nhập tên của máy nơi bạn muốn kết nối."
-
-#: HostConnector.cpp:71
-msgid "Connection Type"
-msgstr "Kiểu kết nối"
-
-#: HostConnector.cpp:77
-msgid "ssh"
-msgstr "SSH"
-
-#: HostConnector.cpp:80
-msgid "Select this to use the secure shell to login to the remote host."
-msgstr "Chọn điều này để dùng hệ vỏ bảo mật để đăng nhập vào máy từ xa."
-
-#: HostConnector.cpp:83
-msgid "rsh"
-msgstr "RSH"
-
-#: HostConnector.cpp:84
-msgid "Select this to use the remote shell to login to the remote host."
-msgstr "Chọn điều này để dùng hệ vỏ ở xa để đăng nhập vào máy từ xa."
-
-#: HostConnector.cpp:87
-msgid "Daemon"
-msgstr "Trình nền"
-
-#: HostConnector.cpp:88
-msgid ""
-"Select this if you want to connect to a ksysguard daemon that is running on "
-"the machine you want to connect to, and is listening for client requests."
-msgstr ""
-"Chọn điều này nếu bạn muốn kết nối đến một trình nền ksysguard mà chạy trên "
-"máy nơi bạn muốn kết nối, và lắng nghe các yêu cầu ứng dụng khách."
-
-#: HostConnector.cpp:91
-msgid "Custom command"
-msgstr "Lệnh tự chọn"
-
-#: HostConnector.cpp:92
-msgid ""
-"Select this to use the command you entered below to start ksysguardd on the "
-"remote host."
-msgstr ""
-"Chọn điều này để sử dụng lệnh đã nhập bên dưới để khởi chạy ksysguard trên "
-"máy ở xa."
-
-#: HostConnector.cpp:95
-msgid "Port:"
-msgstr "Cổng:"
-
-#: HostConnector.cpp:102
-msgid ""
-"Enter the port number on which the ksysguard daemon is listening for "
-"connections."
-msgstr "Hãy nhập sổ hiệu cổng nơi trình nền ksysguard lắng nghe các kết nối."
-
-#: HostConnector.cpp:105
-msgid "e.g.  3112"
-msgstr "v.d. 3112"
-
-#: HostConnector.cpp:108
-msgid "Command:"
-msgstr "Lệnh:"
-
-#: HostConnector.cpp:117
-msgid "Enter the command that runs ksysguardd on the host you want to monitor."
-msgstr ""
-"Hãy nhập lệnh chạy ksysguardd (trình nền ksysguard) trên máy bạn muốn theo "
-"dõi."
-
-#: HostConnector.cpp:121
-msgid "e.g. ssh -l root remote.host.org ksysguardd"
-msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
-
-#: TimerSettings.cpp:38
-msgid "Timer Settings"
-msgstr "Thiết lập đếm thời gian"
-
-#: TimerSettings.cpp:48
-msgid "Use update interval of worksheet"
-msgstr "Dùng khoảng cập nhật của bảng làm việc"
-
-#: TimerSettings.cpp:51 WorkSheetSettings.cpp:90
-msgid "Update interval:"
-msgstr "Khoảng cập nhật:"
-
-#. i18n: file: SensorDisplayLib/SensorLoggerDlgWidget.ui:49
-#. i18n: ectx: property (suffix), widget (KIntNumInput, m_timerInterval)
-#: TimerSettings.cpp:58 WorkSheetSettings.cpp:94 rc.cpp:89
-msgid " sec"
-msgstr " giây"
-
-#: TimerSettings.cpp:61 WorkSheetSettings.cpp:100
-msgid "All displays of the sheet are updated at the rate specified here."
-msgstr "Mọi bộ trình bày của tờ được cập nhật theo tỷ lệ đã xác định vào đây."
-
-#: WorkSheetSettings.cpp:40
-#, fuzzy
-#| msgid "Properties"
-msgid "Tab Properties"
-msgstr "Thuộc tính"
-
-#: WorkSheetSettings.cpp:61
-msgid "Properties"
-msgstr "Thuộc tính"
-
-#: WorkSheetSettings.cpp:70
-msgid "Rows:"
-msgstr "Hàng:"
-
-#: WorkSheetSettings.cpp:79
-msgid "Columns:"
-msgstr "Cột:"
-
-#: WorkSheetSettings.cpp:87
-msgid "Enter the number of rows the sheet should have."
-msgstr "Hãy nhập số hàng cho tờ này."
-
-#: WorkSheetSettings.cpp:88
-msgid "Enter the number of columns the sheet should have."
-msgstr "Hãy nhập số cột cho tờ này."
-
-#: WorkSheetSettings.cpp:101
-msgid "Enter the title of the worksheet here."
-msgstr "Hãy nhập vào đây tựa của bảng làm việc."
-
 #: ksysguard.cpp:74
 msgid "KDE System Monitor"
 msgstr "Bộ Theo dõi Hệ thống KDE"
@@ -1622,167 +1783,6 @@ msgstr ""
 #: ksysguard.cpp:551
 msgid "Optional worksheet files to load"
 msgstr "Tập tin bảng làm việc tùy chọn cần tải"
-
-#: SensorBrowser.cpp:117
-msgid "Sensor Browser"
-msgstr "Bộ Duyệt Nhạy"
-
-#: SensorBrowser.cpp:474
-#, fuzzy
-#| msgid "Drag sensors to empty cells of a worksheet or the panel applet."
-msgid "Drag sensors to empty cells of a worksheet "
-msgstr ""
-"Hãy kéo bộ nhạy vào ô rỗng trên bảng làm việc, hoặc vào tiểu dụng này trên "
-"bảng điều khiển."
-
-#: SensorBrowser.cpp:475
-#, fuzzy
-#| msgid ""
-#| "The sensor browser lists the connected hosts and the sensors that they "
-#| "provide. Click and drag sensors into drop zones of a worksheet or the "
-#| "panel applet. A display will appear that visualizes the values provided "
-#| "by the sensor. Some sensor displays can display values of multiple "
-#| "sensors. Simply drag other sensors on to the display to add more sensors."
-msgid ""
-"The sensor browser lists the connected hosts and the sensors that they "
-"provide. Click and drag sensors into drop zones of a worksheet. A display "
-"will appear that visualizes the values provided by the sensor. Some sensor "
-"displays can display values of multiple sensors. Simply drag other sensors "
-"on to the display to add more sensors."
-msgstr ""
-"Bộ duyệt nhạy liệt kê các máy đã kết nối, và những bộ nhạy bị chúng cung "
-"cấp. Hãy nhắp vào và kéo bộ nhạy vào vùng thả trên bảng làm việc, hoặc vào "
-"tiểu dụng này trên bảng điều khiển KDE. Một bộ trình bày sẽ xuất hiện mà "
-"hiển thị các giá trị bị bộ nhạy đó cung cấp. Một số bộ trình bày nhạy có thể "
-"hiển thị giá trị của nhiều bộ nhạy khác nhau. Đơn giản kéo bộ nhạy thêm vào "
-"bộ trình bày, để thêm bộ nhạy nữa."
-
-#: WorkSheet.cpp:89
-#, kde-format
-msgid "Cannot open the file %1."
-msgstr "Không thể mở tập tin %1."
-
-#: WorkSheet.cpp:97
-#, kde-format
-msgid "The file %1 does not contain valid XML."
-msgstr "Tập tin %1 không chứa mã XML hợp lệ."
-
-#: WorkSheet.cpp:104
-#, kde-format
-msgid ""
-"The file %1 does not contain a valid worksheet definition, which must have a "
-"document type 'KSysGuardWorkSheet'."
-msgstr ""
-"Tập tin %1 không chứa lời định nghĩa bảng làm việc hợp lệ, mà phải có kiểu "
-"tài liệu KSysGuardWorkSheet."
-
-#: WorkSheet.cpp:128
-#, kde-format
-msgid "The file %1 has an invalid worksheet size."
-msgstr "Tập tin %1 có kích cỡ bảng làm việc không hợp lệ."
-
-#: WorkSheet.cpp:229
-#, kde-format
-msgid "Cannot save file %1"
-msgstr "Không thể lưu tập tin %1"
-
-#: WorkSheet.cpp:275
-msgid "The clipboard does not contain a valid display description."
-msgstr "Bảng tạm không chứa mô tả bộ trình bày hợp lệ."
-
-#: WorkSheet.cpp:376
-msgid "Select Display Type"
-msgstr "Chọn kiểu bộ trình bày"
-
-#: WorkSheet.cpp:377
-msgid "&Line graph"
-msgstr "Đồ thị đườ&ng"
-
-#: WorkSheet.cpp:378
-msgid "&Digital display"
-msgstr "Hiện điện &số"
-
-#: WorkSheet.cpp:379
-msgid "&Bar graph"
-msgstr "Đồ thị th&anh"
-
-#: WorkSheet.cpp:380
-msgid "Log to a &file"
-msgstr "&Ghi lưu vào tập tin"
-
-#: WorkSheet.cpp:529
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove this display?"
-msgstr "Gỡ &bỏ bộ trình bày"
-
-#: WorkSheet.cpp:530
-#, fuzzy
-#| msgid "&Remove Display"
-msgid "Remove Display"
-msgstr "Gỡ &bỏ bộ trình bày"
-
-#: WorkSheet.cpp:571
-msgid "Dummy"
-msgstr "Giả"
-
-#: Workspace.cpp:113
-#, kde-format
-msgid "Sheet %1"
-msgstr "Tờ %1"
-
-#: Workspace.cpp:172
-#, fuzzy, kde-format
-#| msgid ""
-#| "The worksheet '%1' contains unsaved data.\n"
-#| "Do you want to save the worksheet?"
-msgid ""
-"The tab '%1' contains unsaved data.\n"
-"Do you want to save the tab?"
-msgstr ""
-"Bảng làm việc « %1 » chứa dữ liệu chưa lưu.\n"
-"Bạn có muốn lưu tờ này không?"
-
-#: Workspace.cpp:187
-#, fuzzy
-#| msgid "*.sgrd|Sensor Files"
-msgid "*.sgrd|Sensor Files (*.sgrd)"
-msgstr "*.sgrd|Tập tin bộ nhạy"
-
-#: Workspace.cpp:187
-msgid "Select Tab File to Import"
-msgstr ""
-
-#: Workspace.cpp:215 Workspace.cpp:236
-#, fuzzy
-#| msgid "You do not have a worksheet that could be saved."
-msgid "You do not have a tab that could be saved."
-msgstr "Bạn không có bảng làm việc có thể lưu."
-
-#: Workspace.cpp:243
-msgid "Export Tab"
-msgstr ""
-
-#: Workspace.cpp:261
-#, fuzzy
-#| msgid "There are no worksheets that could be deleted."
-msgid "There are no tabs that could be deleted."
-msgstr "Không có bảng làm việc có thể xoá bỏ."
-
-#: Workspace.cpp:301
-#, kde-format
-msgid ""
-"<qt>To propose the current custom tab as a new System Monitor tab, email "
-"<br><a href=\"file:%1\">%2</a><br> to <a href=\"mailto:john.tapsell@kde.org?"
-"subject='System Monitor Tab'&attach='file://%2'\">john.tapsell@kde.org</a></"
-"qt>"
-msgstr ""
-
-#: Workspace.cpp:301
-#, fuzzy
-#| msgid "System Monitor"
-msgid "Upload custom System Monitor tab"
-msgstr "Bộ Theo dõi Hệ thống"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"

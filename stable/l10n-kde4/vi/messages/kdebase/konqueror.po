@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-25 11:07+0200\n"
+"POT-Creation-Date: 2011-09-09 11:27+0200\n"
 "PO-Revision-Date: 2007-06-25 15:19+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a2\n"
+
+#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
+#: src/konqmainwindow.cpp:5074
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid "no name"
+msgstr "Phan Vĩnh Thịnh"
 
 #: src/konqextensionmanager.cpp:54
 #, fuzzy
@@ -29,14 +37,6 @@ msgstr "Cấu hình"
 #: src/konqextensionmanager.cpp:78
 msgid "Extensions"
 msgstr "Mở rộng"
-
-#: src/konqclosedwindowsmanager.cpp:418 src/konqmainwindow.cpp:5014
-#: src/konqmainwindow.cpp:5074
-#, fuzzy
-#| msgctxt "NAME OF TRANSLATORS"
-#| msgid "Your names"
-msgid "no name"
-msgstr "Phan Vĩnh Thịnh"
 
 #: src/konqfactory.cpp:90
 #, kde-format
@@ -348,6 +348,31 @@ msgstr "%1/giây"
 msgid "Stalled"
 msgstr "Ngừng chạy"
 
+#: src/konqguiclients.cpp:66
+#, fuzzy, kde-format
+#| msgid "Preview in %1"
+msgid "Preview &in %1"
+msgstr "Xem trước trong %1"
+
+#: src/konqguiclients.cpp:135
+#, kde-format
+msgid "Show %1"
+msgstr "Hiện %1"
+
+#: src/konqhistorydialog.cpp:45
+#, fuzzy
+#| msgid "History"
+msgctxt "@title:window"
+msgid "History"
+msgstr "Lịch sử"
+
+#: src/konqhistorydialog.cpp:61 src/konqhistoryview.cpp:143
+#, fuzzy
+#| msgid "Sort"
+msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
+msgid "Sort"
+msgstr "Sắp xếp"
+
 #: src/konqhistorymodel.cpp:137
 #, fuzzy, kde-format
 #| msgid ""
@@ -413,13 +438,6 @@ msgstr "Theo &ngày"
 msgid "Search in history"
 msgstr "Xóa lịch sử"
 
-#: src/konqhistoryview.cpp:143 src/konqhistorydialog.cpp:61
-#, fuzzy
-#| msgid "Sort"
-msgctxt "@action:inmenu Parent of 'By Name' and 'By Date'"
-msgid "Sort"
-msgstr "Sắp xếp"
-
 #: src/konqhistoryview.cpp:171 sidebar/history_module/kcmhistory.cpp:254
 msgid "Do you really want to clear the entire history?"
 msgstr "Bạn có thực sự muốn xóa toàn bộ lịch sử?"
@@ -430,143 +448,6 @@ msgstr "Bạn có thực sự muốn xóa toàn bộ lịch sử?"
 msgctxt "@title:window"
 msgid "Clear History?"
 msgstr "Xóa lịch sử?"
-
-#: src/konqtabs.cpp:66
-#, fuzzy
-#| msgid ""
-#| "This bar contains the list of currently open tabs. Click on a tab to make "
-#| "it active. The option to show a close button instead of the website icon "
-#| "in the left corner of the tab is configurable. You can also use keyboard "
-#| "shortcuts to navigate through tabs. The text on the tab is the title of "
-#| "the website currently open in it, put your mouse over the tab too see the "
-#| "full title in case it was truncated to fit the tab size."
-msgid ""
-"This bar contains the list of currently open tabs. Click on a tab to make it "
-"active. You can also use keyboard shortcuts to navigate through tabs. The "
-"text on the tab shows the content currently open in it; place your mouse "
-"over the tab to see the full title, in case it has been shortened to fit the "
-"tab width."
-msgstr ""
-"Thanh này chứa danh sách của những thẻ đang mở. Nhấn vào một thẻ để đặt nó "
-"làm hiện thời. Có thể cấu hình hiển thị một nút đóng thay cho biểu tượng "
-"trang web ở góc trái của thẻ. Bạn cũng có thể dùng các phím nóng để di "
-"chuyển qua các thẻ. Chữ trên các thẻ là tiêu đề của trang web đang mở trong "
-"nó, đặt con chuột lên thẻ để xem tiêu đề đầy đủ khi nó bị cắt ngắn để tương "
-"ứng với kích thước thẻ."
-
-#: src/konqtabs.cpp:100
-msgid "Open a new tab"
-msgstr "Mở một thẻ mới"
-
-#: src/konqtabs.cpp:109
-msgid "Close the current tab"
-msgstr "Đóng thẻ hiện thời"
-
-#: src/konqtabs.cpp:326 src/konqmainwindow.cpp:3647
-msgid "&Reload All Tabs"
-msgstr "&Nạp lại tất cả các thẻ"
-
-#: src/konqtabs.cpp:349 src/konqmainwindow.cpp:2476
-#: src/konqmainwindow.cpp:3585
-msgid "Close &Other Tabs"
-msgstr "Đóng những thẻ &khác"
-
-#: src/konqtabs.cpp:460 src/konqmainwindow.cpp:3558
-msgid "&New Tab"
-msgstr "T&hẻ mới"
-
-#: src/konqtabs.cpp:465
-msgid "&Duplicate Tab"
-msgstr "&Nhân đôi thẻ"
-
-#: src/konqtabs.cpp:470
-msgid "&Reload Tab"
-msgstr "&Nạp lại thẻ"
-
-#: src/konqtabs.cpp:477
-msgid "Other Tabs"
-msgstr "Các thẻ khác"
-
-#: src/konqtabs.cpp:482
-msgid "D&etach Tab"
-msgstr "&Bỏ gắn thẻ"
-
-#: src/konqtabs.cpp:488
-msgid "&Close Tab"
-msgstr "Đó&ng thẻ"
-
-#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
-#, fuzzy
-#| msgid "&Close Tab"
-msgid "Und&o: Closed Tab"
-msgstr "Đó&ng thẻ"
-
-#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
-#: src/konqundomanager.cpp:162
-#, fuzzy
-#| msgid "&Close Tab"
-msgid "Und&o: Closed Window"
-msgstr "Đó&ng thẻ"
-
-#: src/konqundomanager.cpp:122
-msgid "Und&o"
-msgstr ""
-
-#: src/konqsessiondlg.cpp:77
-#, fuzzy
-#| msgid "&Management"
-msgctxt "@title:window"
-msgid "Manage Sessions"
-msgstr "&Quản lý"
-
-#: src/konqsessiondlg.cpp:81
-#, fuzzy
-#| msgid "&Open Link"
-msgid "&Open"
-msgstr "Mở &liên kết"
-
-#: src/konqsessiondlg.cpp:175
-#, fuzzy
-#| msgid "End of session"
-msgctxt "@title:window"
-msgid "Rename Session"
-msgstr "Kết thúc phiên chạy"
-
-#: src/konqsessiondlg.cpp:223
-#, fuzzy
-#| msgid "End of session"
-msgctxt "@title:window"
-msgid "Save Session"
-msgstr "Kết thúc phiên chạy"
-
-#: src/konqsessiondlg.cpp:247
-#, kde-format
-msgid ""
-"A session with the name '%1' already exists, do you want to overwrite it?"
-msgstr ""
-
-#: src/konqsessiondlg.cpp:248
-msgctxt "@title:window"
-msgid "Session exists. Overwrite?"
-msgstr ""
-
-#: src/konqguiclients.cpp:66
-#, fuzzy, kde-format
-#| msgid "Preview in %1"
-msgid "Preview &in %1"
-msgstr "Xem trước trong %1"
-
-#: src/konqguiclients.cpp:135
-#, kde-format
-msgid "Show %1"
-msgstr "Hiện %1"
-
-#: src/konqhistorydialog.cpp:45
-#, fuzzy
-#| msgid "History"
-msgctxt "@title:window"
-msgid "History"
-msgstr "Lịch sử"
 
 #: src/konqmain.cpp:96
 #, fuzzy
@@ -619,94 +500,6 @@ msgstr ""
 msgid "Location to open"
 msgstr "Vị trí để mở"
 
-#: src/konqprofiledlg.cpp:111
-#, fuzzy
-#| msgid "Profile Management"
-msgctxt "@title:window"
-msgid "Profile Management"
-msgstr "Quản lí xác lập"
-
-#: src/konqprofiledlg.cpp:114
-msgid "&Rename Profile"
-msgstr "Đổi tên xá&c lập"
-
-#: src/konqprofiledlg.cpp:115
-msgid "&Delete Profile"
-msgstr "&Xoá xác lập"
-
-#: src/konqsessionmanager.cpp:330
-msgid ""
-"Konqueror did not close correctly. Would you like to restore the previous "
-"session?"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:332
-#, fuzzy
-#| msgid "End of session"
-msgctxt "@title:window"
-msgid "Restore Session?"
-msgstr "Kết thúc phiên chạy"
-
-#: src/konqsessionmanager.cpp:333
-#, fuzzy
-#| msgid "End of session"
-msgid "Restore Session"
-msgstr "Kết thúc phiên chạy"
-
-#: src/konqsessionmanager.cpp:334
-msgid "Do Not Restore"
-msgstr ""
-
-#: src/konqsessionmanager.cpp:335
-#, fuzzy
-#| msgid "As New Folder"
-msgid "Ask Me Later"
-msgstr "Thành thư mục mới"
-
-#: src/konqviewmanager.cpp:1411
-msgid ""
-"You have multiple tabs open in this window.\n"
-"Loading a view profile will close them."
-msgstr ""
-"Bạn đang mở nhiều thẻ trong cửa sổ này.\n"
-"Nạp một xác lập xem sẽ đóng chúng."
-
-#: src/konqviewmanager.cpp:1413 src/konqmainwindow.cpp:4941
-#, fuzzy
-#| msgid "Confirmation"
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Hỏi lại"
-
-#: src/konqviewmanager.cpp:1414
-msgid "Load View Profile"
-msgstr "Nạp xác lập xem"
-
-#: src/konqviewmanager.cpp:1426
-msgid ""
-"This tab contains changes that have not been submitted.\n"
-"Loading a profile will discard these changes."
-msgstr ""
-"Thẻ này có những thay đổi chưa được gửi đi.\n"
-"Nạp một xác lập sẽ bỏ đi những thay đổi này."
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2514 src/konqmainwindow.cpp:4976
-#, fuzzy
-#| msgid "Discard Changes?"
-msgctxt "@title:window"
-msgid "Discard Changes?"
-msgstr "Bỏ các thay đổi?"
-
-#: src/konqviewmanager.cpp:1427 src/konqmainwindow.cpp:1615
-#: src/konqmainwindow.cpp:2342 src/konqmainwindow.cpp:2420
-#: src/konqmainwindow.cpp:2450 src/konqmainwindow.cpp:2492
-#: src/konqmainwindow.cpp:2515 src/konqmainwindow.cpp:4976
-msgid "&Discard Changes"
-msgstr "&Bỏ các thay đổi"
-
 #: src/konqmainwindow.cpp:574
 msgctxt "@title:tab"
 msgid "Loading..."
@@ -723,6 +516,23 @@ msgid ""
 msgstr ""
 "Trang này chứa những thay đổi chưa được gửi đi.\n"
 "Nạp lại trang sẽ bỏ đi những thay đổi này."
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2514
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+#, fuzzy
+#| msgid "Discard Changes?"
+msgctxt "@title:window"
+msgid "Discard Changes?"
+msgstr "Bỏ các thay đổi?"
+
+#: src/konqmainwindow.cpp:1615 src/konqmainwindow.cpp:2342
+#: src/konqmainwindow.cpp:2420 src/konqmainwindow.cpp:2450
+#: src/konqmainwindow.cpp:2492 src/konqmainwindow.cpp:2515
+#: src/konqmainwindow.cpp:4976 src/konqviewmanager.cpp:1427
+msgid "&Discard Changes"
+msgstr "&Bỏ các thay đổi"
 
 #: src/konqmainwindow.cpp:1725
 msgid "File Management"
@@ -818,6 +628,11 @@ msgstr "Bạn có muốn đóng tất cả các thẻ tab khác?"
 msgctxt "@title:window"
 msgid "Close Other Tabs Confirmation"
 msgstr "Xác nhận đóng những thẻ khác"
+
+#: src/konqmainwindow.cpp:2476 src/konqmainwindow.cpp:3585
+#: src/konqtabs.cpp:349
+msgid "Close &Other Tabs"
+msgstr "Đóng những thẻ &khác"
 
 #: src/konqmainwindow.cpp:2491
 msgid ""
@@ -980,6 +795,10 @@ msgstr "Chia xem thành &trái/phải"
 msgid "Split View &Top/Bottom"
 msgstr "Chia xem thành t&rên/dưới"
 
+#: src/konqmainwindow.cpp:3558 src/konqtabs.cpp:460
+msgid "&New Tab"
+msgstr "T&hẻ mới"
+
 #: src/konqmainwindow.cpp:3564
 msgid "&Duplicate Current Tab"
 msgstr "&Tạo bản sao của thẻ hiện thời"
@@ -1032,6 +851,10 @@ msgstr "Nạp xác lập &xem..."
 #: src/konqmainwindow.cpp:3642 sidebar/web_module/web_module.cpp:68
 msgid "&Reload"
 msgstr "Nạp &lại"
+
+#: src/konqmainwindow.cpp:3647 src/konqtabs.cpp:326
+msgid "&Reload All Tabs"
+msgstr "&Nạp lại tất cả các thẻ"
 
 #: src/konqmainwindow.cpp:3655
 #, fuzzy
@@ -1360,6 +1183,13 @@ msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
 msgstr "Bạn đang mở nhiều thẻ trong cửa sổ này, vẫn thoát?"
 
+#: src/konqmainwindow.cpp:4941 src/konqviewmanager.cpp:1413
+#, fuzzy
+#| msgid "Confirmation"
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Hỏi lại"
+
 #: src/konqmainwindow.cpp:4943
 msgid "C&lose Current Tab"
 msgstr "Đóng thẻ &hiện thời"
@@ -1414,6 +1244,156 @@ msgstr ""
 "Đó là một lỗi cấu hình. Bạn đã dùng Konqueror để mở %1, nhưng nó không điều "
 "khiển được loại tập tin này."
 
+#: src/konqprofiledlg.cpp:111
+#, fuzzy
+#| msgid "Profile Management"
+msgctxt "@title:window"
+msgid "Profile Management"
+msgstr "Quản lí xác lập"
+
+#: src/konqprofiledlg.cpp:114
+msgid "&Rename Profile"
+msgstr "Đổi tên xá&c lập"
+
+#: src/konqprofiledlg.cpp:115
+msgid "&Delete Profile"
+msgstr "&Xoá xác lập"
+
+#: src/konqsessiondlg.cpp:77
+#, fuzzy
+#| msgid "&Management"
+msgctxt "@title:window"
+msgid "Manage Sessions"
+msgstr "&Quản lý"
+
+#: src/konqsessiondlg.cpp:81
+#, fuzzy
+#| msgid "&Open Link"
+msgid "&Open"
+msgstr "Mở &liên kết"
+
+#: src/konqsessiondlg.cpp:175
+#, fuzzy
+#| msgid "End of session"
+msgctxt "@title:window"
+msgid "Rename Session"
+msgstr "Kết thúc phiên chạy"
+
+#: src/konqsessiondlg.cpp:223
+#, fuzzy
+#| msgid "End of session"
+msgctxt "@title:window"
+msgid "Save Session"
+msgstr "Kết thúc phiên chạy"
+
+#: src/konqsessiondlg.cpp:247
+#, kde-format
+msgid ""
+"A session with the name '%1' already exists, do you want to overwrite it?"
+msgstr ""
+
+#: src/konqsessiondlg.cpp:248
+msgctxt "@title:window"
+msgid "Session exists. Overwrite?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:330
+msgid ""
+"Konqueror did not close correctly. Would you like to restore the previous "
+"session?"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:332
+#, fuzzy
+#| msgid "End of session"
+msgctxt "@title:window"
+msgid "Restore Session?"
+msgstr "Kết thúc phiên chạy"
+
+#: src/konqsessionmanager.cpp:333
+#, fuzzy
+#| msgid "End of session"
+msgid "Restore Session"
+msgstr "Kết thúc phiên chạy"
+
+#: src/konqsessionmanager.cpp:334
+msgid "Do Not Restore"
+msgstr ""
+
+#: src/konqsessionmanager.cpp:335
+#, fuzzy
+#| msgid "As New Folder"
+msgid "Ask Me Later"
+msgstr "Thành thư mục mới"
+
+#: src/konqtabs.cpp:66
+#, fuzzy
+#| msgid ""
+#| "This bar contains the list of currently open tabs. Click on a tab to make "
+#| "it active. The option to show a close button instead of the website icon "
+#| "in the left corner of the tab is configurable. You can also use keyboard "
+#| "shortcuts to navigate through tabs. The text on the tab is the title of "
+#| "the website currently open in it, put your mouse over the tab too see the "
+#| "full title in case it was truncated to fit the tab size."
+msgid ""
+"This bar contains the list of currently open tabs. Click on a tab to make it "
+"active. You can also use keyboard shortcuts to navigate through tabs. The "
+"text on the tab shows the content currently open in it; place your mouse "
+"over the tab to see the full title, in case it has been shortened to fit the "
+"tab width."
+msgstr ""
+"Thanh này chứa danh sách của những thẻ đang mở. Nhấn vào một thẻ để đặt nó "
+"làm hiện thời. Có thể cấu hình hiển thị một nút đóng thay cho biểu tượng "
+"trang web ở góc trái của thẻ. Bạn cũng có thể dùng các phím nóng để di "
+"chuyển qua các thẻ. Chữ trên các thẻ là tiêu đề của trang web đang mở trong "
+"nó, đặt con chuột lên thẻ để xem tiêu đề đầy đủ khi nó bị cắt ngắn để tương "
+"ứng với kích thước thẻ."
+
+#: src/konqtabs.cpp:100
+msgid "Open a new tab"
+msgstr "Mở một thẻ mới"
+
+#: src/konqtabs.cpp:109
+msgid "Close the current tab"
+msgstr "Đóng thẻ hiện thời"
+
+#: src/konqtabs.cpp:465
+msgid "&Duplicate Tab"
+msgstr "&Nhân đôi thẻ"
+
+#: src/konqtabs.cpp:470
+msgid "&Reload Tab"
+msgstr "&Nạp lại thẻ"
+
+#: src/konqtabs.cpp:477
+msgid "Other Tabs"
+msgstr "Các thẻ khác"
+
+#: src/konqtabs.cpp:482
+msgid "D&etach Tab"
+msgstr "&Bỏ gắn thẻ"
+
+#: src/konqtabs.cpp:488
+msgid "&Close Tab"
+msgstr "Đó&ng thẻ"
+
+#: src/konqundomanager.cpp:110 src/konqundomanager.cpp:266
+#, fuzzy
+#| msgid "&Close Tab"
+msgid "Und&o: Closed Tab"
+msgstr "Đó&ng thẻ"
+
+#: src/konqundomanager.cpp:112 src/konqundomanager.cpp:120
+#: src/konqundomanager.cpp:162
+#, fuzzy
+#| msgid "&Close Tab"
+msgid "Und&o: Closed Window"
+msgstr "Đó&ng thẻ"
+
+#: src/konqundomanager.cpp:122
+msgid "Und&o"
+msgstr ""
+
 #: src/konqview.cpp:1203
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1434,6 +1414,26 @@ msgstr "Cảnh báo"
 #: src/konqview.cpp:1205
 msgid "Resend"
 msgstr "Gửi lại"
+
+#: src/konqviewmanager.cpp:1411
+msgid ""
+"You have multiple tabs open in this window.\n"
+"Loading a view profile will close them."
+msgstr ""
+"Bạn đang mở nhiều thẻ trong cửa sổ này.\n"
+"Nạp một xác lập xem sẽ đóng chúng."
+
+#: src/konqviewmanager.cpp:1414
+msgid "Load View Profile"
+msgstr "Nạp xác lập xem"
+
+#: src/konqviewmanager.cpp:1426
+msgid ""
+"This tab contains changes that have not been submitted.\n"
+"Loading a profile will discard these changes."
+msgstr ""
+"Thẻ này có những thay đổi chưa được gửi đi.\n"
+"Nạp một xác lập sẽ bỏ đi những thay đổi này."
 
 #: sidebar/history_module/history_module.cpp:126
 #, fuzzy
@@ -1492,197 +1492,6 @@ msgstr "Thay thế"
 #: sidebar/sidebar_part.cpp:28
 msgid "Extended Sidebar"
 msgstr "Thanh bên mở rộng"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
-msgid "&Create New Folder"
-msgstr "Tạo thư mụ&c mới"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
-#: sidebar/trees/konq_sidebartree.cpp:207
-msgid "Delete Folder"
-msgstr "Xóa thư mục"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
-msgid "Delete Bookmark"
-msgstr "Xóa đánh dấu"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
-#: sidebar/trees/konq_sidebartree.cpp:224
-msgid "Properties"
-msgstr "Thuộc tính"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
-#: sidebar/trees/konq_sidebartree.cpp:228
-msgid "Open in New Window"
-msgstr "Mở trong cửa sổ mới"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
-msgid "Open Folder in Tabs"
-msgstr "Mở thư mục trong thẻ"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
-#: sidebar/trees/konq_sidebartree.cpp:236
-msgid "Copy Link Address"
-msgstr "Sao chép địa chỉ liên kết"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
-#, kde-format
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Bạn có chắc muốn xóa thư mục đánh dấu\n"
-"\"%1\"?"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
-#, kde-format
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Bạn có chắc muốn xóa đánh dấu\n"
-"\"%1\"?"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
-msgctxt "@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Xóa thư mục đánh dấu"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:338
-#, fuzzy
-#| msgid "Bookmark Deletion"
-msgctxt "@title:window"
-msgid "Bookmark Deletion"
-msgstr "Xóa đánh dấu"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:380
-#, fuzzy
-#| msgid "Bookmark Properties"
-msgctxt "@title:window"
-msgid "Bookmark Properties"
-msgstr "Tính chất đánh dấu"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:565
-msgid "&Update"
-msgstr "Cậ&p nhật"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:573
-msgid "Name:"
-msgstr "Tên:"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:581
-msgid "Location:"
-msgstr "Vị trí:"
-
-#: sidebar/trees/bookmark_module/bookmark_module.h:88
-#, fuzzy
-#| msgid "Add Bookmark"
-msgctxt "@title:window"
-msgid "Add Bookmark"
-msgstr "Thêm đánh dấu"
-
-#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
-#, kde-format
-msgid "Cannot find parent item %1 in the tree. Internal error."
-msgstr "Không tìm thấy mục mẹ %1 trong cây. Lỗi nội bộ."
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-#, fuzzy
-#| msgid "Name:"
-msgctxt "@label"
-msgid "Name:"
-msgstr "Tên:"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
-#: sidebar/web_module/web_module.cpp:300
-#, fuzzy
-#| msgid "Show URL"
-msgctxt "@label"
-msgid "Path or URL:"
-msgstr "Hiện URL"
-
-#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
-msgctxt "@title:window"
-msgid "Add folder sidebar module"
-msgstr ""
-
-#: sidebar/trees/konq_sidebartree.cpp:203
-msgid "&Create New Folder..."
-msgstr "&Tạo thư mục mới..."
-
-#: sidebar/trees/konq_sidebartree.cpp:211
-#, fuzzy
-#| msgid "&Move to Trash"
-msgid "Move to Trash"
-msgstr "&Chuyển đến thùng rác"
-
-#: sidebar/trees/konq_sidebartree.cpp:215
-msgid "Rename"
-msgstr "Thay tên"
-
-#: sidebar/trees/konq_sidebartree.cpp:220
-msgid "Delete Link"
-msgstr "Xóa liên kết"
-
-#: sidebar/trees/konq_sidebartree.cpp:951
-msgid "New Folder"
-msgstr "Thư mục mới"
-
-#: sidebar/trees/konq_sidebartree.cpp:955
-#, fuzzy
-#| msgid "Create New Folder"
-msgctxt "@title:window"
-msgid "Create New Folder"
-msgstr "Tạo thư mục mới"
-
-#: sidebar/trees/konq_sidebartree.cpp:956
-msgid "Enter folder name:"
-msgstr "Nhập tên thư mục:"
-
-#: sidebar/web_module/web_module.cpp:57
-msgid "&Open Link"
-msgstr "Mở &liên kết"
-
-#: sidebar/web_module/web_module.cpp:73
-msgid "Set &Automatic Reload"
-msgstr "Đặt &nạp lại tự động"
-
-#: sidebar/web_module/web_module.cpp:137
-#, fuzzy
-#| msgid "Set Refresh Timeout (0 disables)"
-msgctxt "@title:window"
-msgid "Set Refresh Timeout (0 disables)"
-msgstr "Đặt thời gian chờ cập nhật (0 để tắt)"
-
-#: sidebar/web_module/web_module.cpp:145
-#, fuzzy
-#| msgid "Minute"
-#| msgid_plural "Minutes"
-msgid " minute"
-msgid_plural " minutes"
-msgstr[0] "Phút"
-
-#: sidebar/web_module/web_module.cpp:148
-#, fuzzy
-#| msgid " sec"
-msgid " second"
-msgid_plural " seconds"
-msgstr[0] " giây"
-
-#: sidebar/web_module/web_module.cpp:280
-#, fuzzy
-#| msgid "Web Sidebar"
-msgctxt "@action:inmenu Add"
-msgid "Web Sidebar Module"
-msgstr "Thanh bên Web"
-
-#: sidebar/web_module/web_module.cpp:301
-msgctxt "@title:window"
-msgid "Add web sidebar module"
-msgstr ""
 
 #: sidebar/sidebar_widget.cpp:94
 msgid "Rollback to System Default"
@@ -1795,6 +1604,197 @@ msgstr "Bỏ"
 #| msgid "Web Sidebar"
 msgid "Web module"
 msgstr "Thanh bên Web"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
+msgid "&Create New Folder"
+msgstr "Tạo thư mụ&c mới"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
+#: sidebar/trees/konq_sidebartree.cpp:207
+msgid "Delete Folder"
+msgstr "Xóa thư mục"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
+msgid "Delete Bookmark"
+msgstr "Xóa đánh dấu"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
+#: sidebar/trees/konq_sidebartree.cpp:224
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
+#: sidebar/trees/konq_sidebartree.cpp:228
+msgid "Open in New Window"
+msgstr "Mở trong cửa sổ mới"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
+msgid "Open Folder in Tabs"
+msgstr "Mở thư mục trong thẻ"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
+#: sidebar/trees/konq_sidebartree.cpp:236
+msgid "Copy Link Address"
+msgstr "Sao chép địa chỉ liên kết"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
+#, kde-format
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Bạn có chắc muốn xóa thư mục đánh dấu\n"
+"\"%1\"?"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
+#, kde-format
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Bạn có chắc muốn xóa đánh dấu\n"
+"\"%1\"?"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Xóa thư mục đánh dấu"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:338
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "@title:window"
+msgid "Bookmark Deletion"
+msgstr "Xóa đánh dấu"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:380
+#, fuzzy
+#| msgid "Bookmark Properties"
+msgctxt "@title:window"
+msgid "Bookmark Properties"
+msgstr "Tính chất đánh dấu"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:565
+msgid "&Update"
+msgstr "Cậ&p nhật"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:573
+msgid "Name:"
+msgstr "Tên:"
+
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:581
+msgid "Location:"
+msgstr "Vị trí:"
+
+#: sidebar/trees/bookmark_module/bookmark_module.h:88
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "@title:window"
+msgid "Add Bookmark"
+msgstr "Thêm đánh dấu"
+
+#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
+#, kde-format
+msgid "Cannot find parent item %1 in the tree. Internal error."
+msgstr "Không tìm thấy mục mẹ %1 trong cây. Lỗi nội bộ."
+
+#: sidebar/trees/konq_sidebartree.cpp:203
+msgid "&Create New Folder..."
+msgstr "&Tạo thư mục mới..."
+
+#: sidebar/trees/konq_sidebartree.cpp:211
+#, fuzzy
+#| msgid "&Move to Trash"
+msgid "Move to Trash"
+msgstr "&Chuyển đến thùng rác"
+
+#: sidebar/trees/konq_sidebartree.cpp:215
+msgid "Rename"
+msgstr "Thay tên"
+
+#: sidebar/trees/konq_sidebartree.cpp:220
+msgid "Delete Link"
+msgstr "Xóa liên kết"
+
+#: sidebar/trees/konq_sidebartree.cpp:951
+msgid "New Folder"
+msgstr "Thư mục mới"
+
+#: sidebar/trees/konq_sidebartree.cpp:955
+#, fuzzy
+#| msgid "Create New Folder"
+msgctxt "@title:window"
+msgid "Create New Folder"
+msgstr "Tạo thư mục mới"
+
+#: sidebar/trees/konq_sidebartree.cpp:956
+msgid "Enter folder name:"
+msgstr "Nhập tên thư mục:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+#, fuzzy
+#| msgid "Name:"
+msgctxt "@label"
+msgid "Name:"
+msgstr "Tên:"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
+#: sidebar/web_module/web_module.cpp:300
+#, fuzzy
+#| msgid "Show URL"
+msgctxt "@label"
+msgid "Path or URL:"
+msgstr "Hiện URL"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
+msgctxt "@title:window"
+msgid "Add folder sidebar module"
+msgstr ""
+
+#: sidebar/web_module/web_module.cpp:57
+msgid "&Open Link"
+msgstr "Mở &liên kết"
+
+#: sidebar/web_module/web_module.cpp:73
+msgid "Set &Automatic Reload"
+msgstr "Đặt &nạp lại tự động"
+
+#: sidebar/web_module/web_module.cpp:137
+#, fuzzy
+#| msgid "Set Refresh Timeout (0 disables)"
+msgctxt "@title:window"
+msgid "Set Refresh Timeout (0 disables)"
+msgstr "Đặt thời gian chờ cập nhật (0 để tắt)"
+
+#: sidebar/web_module/web_module.cpp:145
+#, fuzzy
+#| msgid "Minute"
+#| msgid_plural "Minutes"
+msgid " minute"
+msgid_plural " minutes"
+msgstr[0] "Phút"
+
+#: sidebar/web_module/web_module.cpp:148
+#, fuzzy
+#| msgid " sec"
+msgid " second"
+msgid_plural " seconds"
+msgstr[0] " giây"
+
+#: sidebar/web_module/web_module.cpp:280
+#, fuzzy
+#| msgid "Web Sidebar"
+msgctxt "@action:inmenu Add"
+msgid "Web Sidebar Module"
+msgstr "Thanh bên Web"
+
+#: sidebar/web_module/web_module.cpp:301
+msgctxt "@title:window"
+msgid "Add web sidebar module"
+msgstr ""
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
 #: about/konq_aboutpage.cc:135 about/konq_aboutpage.cc:137

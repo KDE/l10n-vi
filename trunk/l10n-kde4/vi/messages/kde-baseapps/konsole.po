@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-22 03:38+0200\n"
+"POT-Creation-Date: 2011-09-25 03:56+0200\n"
 "PO-Revision-Date: 2007-06-24 15:01+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -656,39 +656,39 @@ msgstr ""
 msgid "Thanks to many others.\n"
 msgstr "Cám ơn rất nhiều người khác.\n"
 
-#: MainWindow.cpp:252
+#: MainWindow.cpp:254
 #, fuzzy
 #| msgid "New &Tab"
 msgid "&New Tab"
 msgstr "&Thẻ mới"
 
-#: MainWindow.cpp:261
+#: MainWindow.cpp:263
 msgid "New &Window"
 msgstr "&Cửa sổ mới"
 
-#: MainWindow.cpp:272
+#: MainWindow.cpp:274
 msgid "&Bookmarks"
 msgstr "&Liên kết lưu"
 
-#: MainWindow.cpp:299 Part.cpp:101
+#: MainWindow.cpp:297 Part.cpp:101
 #, fuzzy
 #| msgid "Manage Profiles..."
 msgid "Configure Profiles..."
 msgstr "Quản lý hồ sơ..."
 
-#: MainWindow.cpp:305
+#: MainWindow.cpp:303
 msgid "Activate Menu"
 msgstr ""
 
-#: MainWindow.cpp:402
+#: MainWindow.cpp:420
 msgid "You have multiple tabs in this window, are you sure you want to quit?"
 msgstr ""
 
-#: MainWindow.cpp:404 SessionController.cpp:642
+#: MainWindow.cpp:422 SessionController.cpp:642
 msgid "Confirm Close"
 msgstr ""
 
-#: MainWindow.cpp:406
+#: MainWindow.cpp:424
 #, fuzzy
 #| msgid "&Close Tab"
 msgid "Close Current Tab"
@@ -1708,14 +1708,14 @@ msgid "S&crollback"
 msgstr "Không cuộn ngược"
 
 #. i18n: file: ../desktop/partui.rc:26
-#. i18n: ectx: Menu (change-profile)
-#. i18n: file: ../desktop/sessionui.rc:62
-#. i18n: ectx: Menu (change-profile)
+#. i18n: ectx: Menu (switch-profile)
+#. i18n: file: ../desktop/sessionui.rc:63
+#. i18n: ectx: Menu (switch-profile)
 #: rc.cpp:461 rc.cpp:470
 #, fuzzy
-#| msgid "Change Profile"
-msgid "&Change Profile"
-msgstr "Đổi hồ sơ"
+#| msgid "Edit Profile"
+msgid "&Switch Profile"
+msgstr "Sửa hồ sơ"
 
 #. i18n: file: ../desktop/sessionui.rc:17
 #. i18n: ectx: Menu (edit-copy-input-to)
@@ -1725,7 +1725,7 @@ msgstr "Đổi hồ sơ"
 msgid "Copy Input To"
 msgstr "Kết nhập"
 
-#. i18n: file: ../desktop/sessionui.rc:43
+#. i18n: file: ../desktop/sessionui.rc:44
 #. i18n: ectx: Menu (debug)
 #: rc.cpp:467
 msgid "Debug"
@@ -1892,8 +1892,10 @@ msgid "Configure Current Profile..."
 msgstr "Quản lý hồ sơ..."
 
 #: SessionController.cpp:547
-msgid "Change Profile"
-msgstr "Đổi hồ sơ"
+#, fuzzy
+#| msgid "Edit Profile"
+msgid "Switch Profile"
+msgstr "Sửa hồ sơ"
 
 #: SessionController.cpp:636
 msgid ""
@@ -2106,21 +2108,21 @@ msgstr ""
 "<qt>Kết xuất <a href=\"http://en.wikipedia.org/wiki/XON\">bị ngưng</a> bằng "
 "cách bấm tổ hợp phím Ctrl+S.  Hãy bấm <b>Ctrl+Q</b> để tiếp tục lại.</qt>"
 
-#: ViewContainer.cpp:494
+#: ViewContainer.cpp:499
 #, fuzzy
 #| msgid "&Detach View"
 msgctxt "@action:inmenu"
 msgid "&Detach Tab"
 msgstr "&Gỡ ra ô xem"
 
-#: ViewContainer.cpp:498
+#: ViewContainer.cpp:503
 #, fuzzy
 #| msgid "&Rename Tab..."
 msgctxt "@action:inmenu"
 msgid "&Rename Tab..."
 msgstr "Tha&y tên thẻ..."
 
-#: ViewContainer.cpp:502
+#: ViewContainer.cpp:507
 #, fuzzy
 #| msgid "&Close Tab"
 msgctxt "@action:inmenu"
@@ -2140,70 +2142,74 @@ msgid "Previous Tab"
 msgstr "Lùi"
 
 #: ViewManager.cpp:140
+msgid "Switch to Last Tab"
+msgstr ""
+
+#: ViewManager.cpp:141
 msgid "Next View Container"
 msgstr "Đồ chứa ô xem kế"
 
-#: ViewManager.cpp:142
+#: ViewManager.cpp:143
 #, fuzzy
 #| msgid "Move Here"
 msgid "Move Tab Left"
 msgstr "Chuyển vào đây"
 
-#: ViewManager.cpp:143
+#: ViewManager.cpp:144
 #, fuzzy
 #| msgid "Split View Left/Right"
 msgid "Move Tab Right"
 msgstr "Chia ô xem trái/phải"
 
-#: ViewManager.cpp:153
+#: ViewManager.cpp:154
 #, fuzzy
 #| msgid "Split View Left/Right"
 msgctxt "@action:inmenu"
 msgid "Split View Left/Right"
 msgstr "Chia ô xem trái/phải"
 
-#: ViewManager.cpp:160
+#: ViewManager.cpp:161
 #, fuzzy
 #| msgid "Split View Top/Bottom"
 msgctxt "@action:inmenu"
 msgid "Split View Top/Bottom"
 msgstr "Chia ô xem trên/xuống"
 
-#: ViewManager.cpp:165
+#: ViewManager.cpp:166
 #, fuzzy
 #| msgid "Close Active"
 msgctxt "@action:inmenu Close Active View"
 msgid "Close Active"
 msgstr "Đóng điều hoạt động"
 
-#: ViewManager.cpp:174
+#: ViewManager.cpp:175
 #, fuzzy
 #| msgid "Close Others"
 msgctxt "@action:inmenu Close Other Views"
 msgid "Close Others"
 msgstr "Đóng các điều khác"
 
-#: ViewManager.cpp:184
+#: ViewManager.cpp:185
 #, fuzzy
 #| msgid "&Close Tab"
 msgid "D&etach Current Tab"
 msgstr "Đón&g thẻ"
 
-#: ViewManager.cpp:193
+#: ViewManager.cpp:194
 #, fuzzy
 #| msgid "Expand View"
 msgctxt "@action:inmenu"
 msgid "Expand View"
 msgstr "Phóng to ô xem"
 
-#: ViewManager.cpp:200
+#: ViewManager.cpp:201
 #, fuzzy
 #| msgid "Shrink View"
 msgctxt "@action:inmenu"
 msgid "Shrink View"
 msgstr "Thu nhỏ ô xem"
 
-#: ViewManager.cpp:220
+#: ViewManager.cpp:222
 #, kde-format
 msgid "Switch to Tab %1"
 msgstr ""
@@ -2219,6 +2225,14 @@ msgstr ""
 #: ZModemDialog.cpp:35
 msgid "&Stop"
 msgstr "&Dừng"
+
+#, fuzzy
+#~| msgid "Change Profile"
+#~ msgid "&Change Profile"
+#~ msgstr "Đổi hồ sơ"
+
+#~ msgid "Change Profile"
+#~ msgstr "Đổi hồ sơ"
 
 #~ msgid "Maintainer"
 #~ msgstr "Nhà duy trì"

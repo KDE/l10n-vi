@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-08 03:03+0100\n"
+"POT-Creation-Date: 2011-11-09 02:59+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -10091,13 +10091,130 @@ msgstr "Sửa chữa màu tự động"
 msgid "Lens Auto-Correction Tool"
 msgstr "Sửa mắt đỏ"
 
-#: libs/dimg/filters/levels/levelsfilter.h:87
-#, fuzzy
-#| msgid "Levels Adjust..."
-msgid "Levels Adjust Tool"
-msgstr "Điều chỉnh cấp..."
+#: libs/dimg/filters/levels/histogrambox.cpp:89
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
+msgid "Channel:"
+msgstr "Kênh:"
 
-#: libs/dimg/filters/levels/histogrampainter.cpp:430
+#: libs/dimg/filters/levels/histogrambox.cpp:95
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the histogram scale.<p>If the image's maximal counts are "
+#| "small, you can use the linear scale.<p>Logarithmic scale can be used when "
+#| "the maximal counts are big; if it is used, all values (small and large) "
+#| "will be visible on the graph."
+msgid ""
+"<p>Select the histogram scale.</p><p>If the image's maximal counts are "
+"small, you can use the <b>linear</b> scale.</p><p><b>Logarithmic</b> scale "
+"can be used when the maximal counts are big; if it is used, all values "
+"(small and large) will be visible on the graph.</p>"
+msgstr ""
+"<p>Ở đây hãy chọn tỷ lệ biểu đồ tần xuất.<p>Nếu ảnh có số đếm tối đa nhỏ, "
+"bạn có thể dùng tỷ lệ tuyến.<p>Còn nếu ảnh có số đếm tối đa lớn, bạn có thể "
+"dùng tỷ lệ loga; nếu dùng, mọi giá trị (cả nhỏ lẫn lớn) sẽ được hiển thị "
+"trong đồ thị."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:101
+#, fuzzy
+#| msgid "Linear"
+msgctxt "linear histogram scaling mode"
+msgid "Linear"
+msgstr "Tuyến"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:107
+#, fuzzy
+#| msgid "<p>Logarithmic"
+msgctxt "logarithmic histogram scaling mode"
+msgid "Logarithmic"
+msgstr "<p>Loga"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:124
+#, fuzzy
+#| msgid ""
+#| "<p>Here you can see the target preview image histogram drawing of the "
+#| "selected image channel. This one is re-computed at any settings changes."
+msgid ""
+"Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any settings changes."
+msgstr ""
+"<p>Ở đây bạn có thể xem bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh "
+"ảnh đã chọn. Điều này được tính lại khi nào thay đổi thiết lập."
+
+#: libs/dimg/filters/levels/histogrambox.cpp:270
+msgid "<p>Select the histogram channel to display:</p>"
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:275
+#, fuzzy
+#| msgid "Luminosity"
+msgctxt "The luminosity channel"
+msgid "Luminosity"
+msgstr "Độ trưng"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:276
+msgid "<b>Luminosity</b>: display the image's luminosity values."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:278
+#, fuzzy
+#| msgid "Red"
+msgctxt "The red channel"
+msgid "Red"
+msgstr "Đỏ"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:279
+msgid "<b>Red</b>: display the red image-channel values."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:281
+#, fuzzy
+#| msgid "Green"
+msgctxt "The green channel"
+msgid "Green"
+msgstr "Lục"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:282
+msgid "<b>Green</b>: display the green image-channel values."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:284
+#, fuzzy
+#| msgid "Blue"
+msgctxt "The blue channel"
+msgid "Blue"
+msgstr "Xanh"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:285
+msgid "<b>Blue</b>: display the blue image-channel values."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:287
+#, fuzzy
+#| msgid "Colors"
+msgctxt "The colors channel"
+msgid "Colors"
+msgstr "Màu sắc"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:288
+msgid "<b>Colors</b>: Display all color channel values at the same time."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrambox.cpp:290
+#, fuzzy
+#| msgid "Alpha"
+msgctxt "The alpha channel"
+msgid "Alpha"
+msgstr "Anfa"
+
+#: libs/dimg/filters/levels/histogrambox.cpp:291
+msgid ""
+"<b>Alpha</b>: display the alpha image-channel values. This channel "
+"corresponds to the transparency value and is supported by some image "
+"formats, such as PNG or TIF."
+msgstr ""
+
+#: libs/dimg/filters/levels/histogrampainter.cpp:431
 #, kde-format
 msgid "x:%1"
 msgstr "x:%1"
@@ -10126,128 +10243,11 @@ msgstr "Trung vị:"
 msgid "Percent:"
 msgstr "Phần trăm:"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:88
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
-msgid "Channel:"
-msgstr "Kênh:"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:94
+#: libs/dimg/filters/levels/levelsfilter.h:87
 #, fuzzy
-#| msgid ""
-#| "<p>Select here the histogram scale.<p>If the image's maximal counts are "
-#| "small, you can use the linear scale.<p>Logarithmic scale can be used when "
-#| "the maximal counts are big; if it is used, all values (small and large) "
-#| "will be visible on the graph."
-msgid ""
-"<p>Select the histogram scale.</p><p>If the image's maximal counts are "
-"small, you can use the <b>linear</b> scale.</p><p><b>Logarithmic</b> scale "
-"can be used when the maximal counts are big; if it is used, all values "
-"(small and large) will be visible on the graph.</p>"
-msgstr ""
-"<p>Ở đây hãy chọn tỷ lệ biểu đồ tần xuất.<p>Nếu ảnh có số đếm tối đa nhỏ, "
-"bạn có thể dùng tỷ lệ tuyến.<p>Còn nếu ảnh có số đếm tối đa lớn, bạn có thể "
-"dùng tỷ lệ loga; nếu dùng, mọi giá trị (cả nhỏ lẫn lớn) sẽ được hiển thị "
-"trong đồ thị."
-
-#: libs/dimg/filters/levels/histogrambox.cpp:100
-#, fuzzy
-#| msgid "Linear"
-msgctxt "linear histogram scaling mode"
-msgid "Linear"
-msgstr "Tuyến"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:106
-#, fuzzy
-#| msgid "<p>Logarithmic"
-msgctxt "logarithmic histogram scaling mode"
-msgid "Logarithmic"
-msgstr "<p>Loga"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:123
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the target preview image histogram drawing of the "
-#| "selected image channel. This one is re-computed at any settings changes."
-msgid ""
-"Here you can see the target preview image histogram drawing of the selected "
-"image channel. This one is re-computed at any settings changes."
-msgstr ""
-"<p>Ở đây bạn có thể xem bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh "
-"ảnh đã chọn. Điều này được tính lại khi nào thay đổi thiết lập."
-
-#: libs/dimg/filters/levels/histogrambox.cpp:269
-msgid "<p>Select the histogram channel to display:</p>"
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:274
-#, fuzzy
-#| msgid "Luminosity"
-msgctxt "The luminosity channel"
-msgid "Luminosity"
-msgstr "Độ trưng"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:275
-msgid "<b>Luminosity</b>: display the image's luminosity values."
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:277
-#, fuzzy
-#| msgid "Red"
-msgctxt "The red channel"
-msgid "Red"
-msgstr "Đỏ"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:278
-msgid "<b>Red</b>: display the red image-channel values."
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:280
-#, fuzzy
-#| msgid "Green"
-msgctxt "The green channel"
-msgid "Green"
-msgstr "Lục"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:281
-msgid "<b>Green</b>: display the green image-channel values."
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:283
-#, fuzzy
-#| msgid "Blue"
-msgctxt "The blue channel"
-msgid "Blue"
-msgstr "Xanh"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:284
-msgid "<b>Blue</b>: display the blue image-channel values."
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:286
-#, fuzzy
-#| msgid "Colors"
-msgctxt "The colors channel"
-msgid "Colors"
-msgstr "Màu sắc"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:287
-msgid "<b>Colors</b>: Display all color channel values at the same time."
-msgstr ""
-
-#: libs/dimg/filters/levels/histogrambox.cpp:289
-#, fuzzy
-#| msgid "Alpha"
-msgctxt "The alpha channel"
-msgid "Alpha"
-msgstr "Anfa"
-
-#: libs/dimg/filters/levels/histogrambox.cpp:290
-msgid ""
-"<b>Alpha</b>: display the alpha image-channel values. This channel "
-"corresponds to the transparency value and is supported by some image "
-"formats, such as PNG or TIF."
-msgstr ""
+#| msgid "Levels Adjust..."
+msgid "Levels Adjust Tool"
+msgstr "Điều chỉnh cấp..."
 
 #: libs/dimg/filters/nr/nrsettings.cpp:110
 msgid ""

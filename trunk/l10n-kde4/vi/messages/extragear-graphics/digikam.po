@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-09 02:59+0100\n"
+"POT-Creation-Date: 2011-11-11 03:13+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -3920,7 +3920,7 @@ msgid ""
 msgstr "<p>Nếu bạn bấm cái nút này, mọi cấp kênh sẽ được điều chỉnh tự động."
 
 #: imageplugins/color/adjustlevelstool.cpp:319
-#: libs/dimg/filters/bw/mixersettings.cpp:155
+#: libs/dimg/filters/bw/mixersettings.cpp:167
 #: libs/dimg/filters/curves/curvesbox.cpp:215
 msgid "&Reset"
 msgstr "Đặt &lại"
@@ -4046,12 +4046,6 @@ msgstr "Đây là danh sách các mục sắp bị xoá."
 #| msgid "Color Managed View is disabled"
 msgid "Color Management is disabled..."
 msgstr "Ô xem đả quản lý màu bị tắt"
-
-#: imageplugins/color/channelmixertool.cpp:108
-#: imageplugins/color/channelmixertool.cpp:225
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:50
-msgid "Channel Mixer"
-msgstr "Bộ hoà kênh"
 
 #: imageplugins/color/autocorrectiontool.cpp:91
 #, fuzzy
@@ -4214,6 +4208,12 @@ msgstr "Miền màu"
 #: utilities/searchwindow/searchfields.cpp:438
 msgid "White Balance"
 msgstr "Cán cân trắng"
+
+#: imageplugins/color/channelmixertool.cpp:108
+#: imageplugins/color/channelmixertool.cpp:212
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:49
+msgid "Channel Mixer"
+msgstr "Bộ hoà kênh"
 
 #: imageplugins/decorate/superimpose/superimposetool.cpp:103
 msgid "Template Superimpose"
@@ -8610,66 +8610,93 @@ msgstr "Tập tin thiết lập đen trắng cần lưu"
 msgid "Cannot save settings to the Black & White text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản thiết lập đen trắng."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:129
+#: libs/dimg/filters/bw/mixersettings.cpp:135
+#, fuzzy
+#| msgid "Channel:"
+msgid "Output Channel:"
+msgstr "Kênh:"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:137
+#: libs/dimg/filters/cb/cbsettings.cpp:97
+#: libs/widgets/common/colorlabelwidget.cpp:409
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:71
+msgid "Red"
+msgstr "Đỏ"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:138
+#: libs/dimg/filters/cb/cbsettings.cpp:111
+#: libs/widgets/common/colorlabelwidget.cpp:418
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:72
+msgid "Green"
+msgstr "Lục"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:139
+#: libs/dimg/filters/cb/cbsettings.cpp:119
+#: libs/widgets/common/colorlabelwidget.cpp:421
+#: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
+msgid "Blue"
+msgstr "Xanh"
+
+#: libs/dimg/filters/bw/mixersettings.cpp:141
 #, fuzzy
 #| msgid "Size:"
 msgid "Red (%):"
 msgstr "Cỡ :"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:134
+#: libs/dimg/filters/bw/mixersettings.cpp:146
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the red color gain in percent for the current channel."
 msgid "Select the red color gain, as a percentage, for the current channel."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu đỏ theo phần trăm cho kênh hiện có."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:137
+#: libs/dimg/filters/bw/mixersettings.cpp:149
 #, fuzzy
 #| msgid "Green:"
 msgid "Green (%):"
 msgstr "Lục:"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:142
+#: libs/dimg/filters/bw/mixersettings.cpp:154
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the green color gain in percent for the current channel."
 msgid "Select the green color gain, as a percentage, for the current channel."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu lục theo phần trăm cho kênh hiện có."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:145
+#: libs/dimg/filters/bw/mixersettings.cpp:157
 #, fuzzy
 #| msgid "Blue:"
 msgid "Blue (%):"
 msgstr "Xanh:"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:150
+#: libs/dimg/filters/bw/mixersettings.cpp:162
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the blue color gain in percent for the current channel."
 msgid "Select the blue color gain, as a percentage, for the current channel."
 msgstr "<p>Ở đây hãy chọn khuếch đại màu xanh theo phần trăm cho kênh hiện có."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:157
+#: libs/dimg/filters/bw/mixersettings.cpp:169
 msgid ""
 "Reset color channels' gains settings from the currently selected channel."
 msgstr ""
 "Đặt lại thiết lập khuếch đại của các kênh màu từ kênh được chọn hiện thời."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:165
+#: libs/dimg/filters/bw/mixersettings.cpp:177
 msgid "Preserve luminosity"
 msgstr "Bảo tồn độ trưng"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:166
+#: libs/dimg/filters/bw/mixersettings.cpp:178
 #, fuzzy
 #| msgid "<p>Enable this option is you want preserve the image luminosity."
 msgid "Enable this option is you want preserve the image luminosity."
 msgstr "<p>Bật tùy chọn này nếu bạn muốn bảo tồn độ trưng của ảnh."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:171
+#: libs/dimg/filters/bw/mixersettings.cpp:183
 msgid "Monochrome"
 msgstr "Đơn sắc"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:172
+#: libs/dimg/filters/bw/mixersettings.cpp:184
 msgid ""
 "<p>Use <b>Monochrome</b> mode to convert color picture to Black and White:</"
 "p><p>The <qt><font color=\"red\">red channel</font></qt> modifies <a "
@@ -8681,25 +8708,25 @@ msgid ""
 "this mode, the histogram will display only luminosity values.</p>"
 msgstr ""
 
-#: libs/dimg/filters/bw/mixersettings.cpp:335
+#: libs/dimg/filters/bw/mixersettings.cpp:354
 #, fuzzy, kde-format
 #| msgid "%1 (%2)"
 msgid "Total: %1 (%)"
 msgstr "%1 (%2)"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:524
+#: libs/dimg/filters/bw/mixersettings.cpp:550
 msgid "Select Gimp Gains Mixer File to Load"
 msgstr "Chọn tập tin hoà khuếch đại GIMP cần tải"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:620
+#: libs/dimg/filters/bw/mixersettings.cpp:646
 msgid "Cannot load settings from the Gains Mixer text file."
 msgstr "Không thể tải thiết lập từ tập tin văn bản hoà khuếch đại."
 
-#: libs/dimg/filters/bw/mixersettings.cpp:632
+#: libs/dimg/filters/bw/mixersettings.cpp:658
 msgid "Gimp Gains Mixer File to Save"
 msgstr "Tập tin hoà khuếch đại GIMP cần lưu"
 
-#: libs/dimg/filters/bw/mixersettings.cpp:698
+#: libs/dimg/filters/bw/mixersettings.cpp:724
 msgid "Cannot save settings to the Gains Mixer text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản hoà khuếch đại."
 
@@ -8719,13 +8746,6 @@ msgstr "Xanh lông mòng"
 msgid "Set here the cyan/red color adjustment of the image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ/xanh lông mòng của ảnh đó."
 
-#: libs/dimg/filters/cb/cbsettings.cpp:97
-#: libs/widgets/common/colorlabelwidget.cpp:409
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:71
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:59
-msgid "Red"
-msgstr "Đỏ"
-
 #: libs/dimg/filters/cb/cbsettings.cpp:102
 #: libs/widgets/common/colorlabelwidget.cpp:424
 msgid "Magenta"
@@ -8737,24 +8757,10 @@ msgstr "Đỏ tươi"
 msgid "Set here the magenta/green color adjustment of the image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu đỏ tươi/lục của ảnh đó."
 
-#: libs/dimg/filters/cb/cbsettings.cpp:111
-#: libs/widgets/common/colorlabelwidget.cpp:418
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:72
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:60
-msgid "Green"
-msgstr "Lục"
-
 #: libs/dimg/filters/cb/cbsettings.cpp:116
 #: libs/widgets/common/colorlabelwidget.cpp:415
 msgid "Yellow"
 msgstr "Vàng"
-
-#: libs/dimg/filters/cb/cbsettings.cpp:119
-#: libs/widgets/common/colorlabelwidget.cpp:421
-#: utilities/queuemanager/basetools/color/curvesadjust.cpp:73
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:61
-msgid "Blue"
-msgstr "Xanh"
 
 #: libs/dimg/filters/cb/cbsettings.cpp:126
 #, fuzzy
@@ -10093,7 +10099,6 @@ msgstr "Sửa mắt đỏ"
 
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:57
 msgid "Channel:"
 msgstr "Kênh:"
 
@@ -18217,7 +18222,7 @@ msgstr "Điều chỉnh phơi nắng tự động"
 msgid "Alpha"
 msgstr "Anfa"
 
-#: utilities/queuemanager/basetools/color/channelmixer.cpp:51
+#: utilities/queuemanager/basetools/color/channelmixer.cpp:50
 #, fuzzy
 #| msgid "Color Space"
 msgid "Mix color channel."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-17 02:58+0100\n"
+"POT-Creation-Date: 2011-11-18 03:17+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -2831,7 +2831,9 @@ msgstr "Tên:"
 msgid "Date:"
 msgstr "Ngày:"
 
-#: digikam/utils/tooltipfiller.cpp:90 libs/widgets/q3support/thumbbar.cpp:1455
+#: digikam/utils/tooltipfiller.cpp:90
+#: imageplugins/transform/ratiocroptool.cpp:373
+#: libs/widgets/q3support/thumbbar.cpp:1455
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:155
 msgid "Size:"
 msgstr "Cỡ :"
@@ -2863,7 +2865,7 @@ msgid "Unknown"
 msgstr "Không rõ"
 
 #: digikam/utils/tooltipfiller.cpp:114
-#: imageplugins/transform/ratiocroptool.cpp:1026
+#: imageplugins/transform/ratiocroptool.cpp:1030
 #: libs/imageproperties/imagepropertiessidebardb.cpp:538
 #: utilities/cameragui/views/cameraiconviewtooltip.cpp:181
 #, fuzzy, kde-format
@@ -5815,7 +5817,6 @@ msgid "Enable this option to maintain aspect ratio with new image sizes."
 msgstr "<p>Bật tùy chọn này để duy trì tỷ lệ hình thể với kích cỡ ảnh mới."
 
 #: imageplugins/transform/resizetool.cpp:215
-#: imageplugins/transform/ratiocroptool.cpp:364
 msgid "Width:"
 msgstr "Rộng:"
 
@@ -5827,7 +5828,6 @@ msgid "Set here the new image width in pixels."
 msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo điểm ảnh."
 
 #: imageplugins/transform/resizetool.cpp:223
-#: imageplugins/transform/ratiocroptool.cpp:386
 msgid "Height:"
 msgstr "Cao :"
 
@@ -6274,8 +6274,8 @@ msgid "Okay"
 msgstr ""
 
 #: imageplugins/transform/ratiocroptool.cpp:221
-#: imageplugins/transform/ratiocroptool.cpp:1071
-#: imageplugins/transform/ratiocroptool.cpp:1077
+#: imageplugins/transform/ratiocroptool.cpp:1074
+#: imageplugins/transform/ratiocroptool.cpp:1080
 msgid "Aspect Ratio Crop"
 msgstr "Xén tỷ lệ hình thể"
 
@@ -6334,7 +6334,7 @@ msgid "Custom"
 msgstr "Tự chọn"
 
 #: imageplugins/transform/ratiocroptool.cpp:299
-#: imageplugins/transform/ratiocroptool.cpp:807
+#: imageplugins/transform/ratiocroptool.cpp:811
 msgid "Golden Ratio"
 msgstr "Tỷ lệ vàng"
 
@@ -6448,86 +6448,82 @@ msgstr "<p>Ở đây hãy đặt giá trị tử số hình thể tự chọn đ
 msgid "Set here the desired custom aspect denominator value."
 msgstr "<p>Ở đây hãy đặt giá trị mẫu số hình thể tự chọn đã muốn."
 
-#: imageplugins/transform/ratiocroptool.cpp:357
-#: imageplugins/transform/ratiocroptool.cpp:380
+#: imageplugins/transform/ratiocroptool.cpp:356
+#: libs/template/templateviewer.cpp:163
+#, fuzzy
+#| msgid "Erosion:"
+msgid "Position:"
+msgstr "Độ xói mòn:"
+
+#: imageplugins/transform/ratiocroptool.cpp:360
+#: imageplugins/transform/ratiocroptool.cpp:366
 #, fuzzy
 #| msgid "<p>Set here the top left selection corner position for cropping."
 msgid "Set here the top left selection corner position for cropping."
 msgstr "<p>Ở đây hãy đặt vị trí của góc chọn bên trái trên để xén."
 
-#: imageplugins/transform/ratiocroptool.cpp:358
-#, fuzzy
-#| msgid "X:"
-msgctxt "top left corner position for cropping"
-msgid "X:"
-msgstr "X:"
-
-#: imageplugins/transform/ratiocroptool.cpp:365
+#: imageplugins/transform/ratiocroptool.cpp:377
 #, fuzzy
 #| msgid "<p>Set here the width selection for cropping."
 msgid "Set here the width selection for cropping."
 msgstr "<p>Ở đây hãy đặt độ rộng chọn để xén."
 
-#: imageplugins/transform/ratiocroptool.cpp:374
+#: imageplugins/transform/ratiocroptool.cpp:386
 #, fuzzy
 #| msgid "<p>Set width position to center."
 msgid "Set width position to center."
 msgstr "<p>Đặt vị trí độ rộng thành trung tâm."
 
-#: imageplugins/transform/ratiocroptool.cpp:379
-msgid "Y:"
-msgstr "Y:"
-
-#: imageplugins/transform/ratiocroptool.cpp:387
+#: imageplugins/transform/ratiocroptool.cpp:389
 #, fuzzy
 #| msgid "<p>Set here the height selection for cropping."
 msgid "Set here the height selection for cropping."
 msgstr "<p>Ở đây hãy đặt độ cao chọn để xén."
 
-#: imageplugins/transform/ratiocroptool.cpp:396
+#: imageplugins/transform/ratiocroptool.cpp:398
 #, fuzzy
 #| msgid "<p>Set height position to center."
 msgid "Set height position to center."
 msgstr "<p>Đặt vị trí độ cao thành trung tâm."
 
-#: imageplugins/transform/ratiocroptool.cpp:420
+#: imageplugins/transform/ratiocroptool.cpp:424
 #, fuzzy
 #| msgid "Camera Settings"
 msgid "Crop Settings"
 msgstr "Thiết lập máy ảnh"
 
-#: imageplugins/transform/ratiocroptool.cpp:427
+#: imageplugins/transform/ratiocroptool.cpp:431
 #, fuzzy
 #| msgid "Retry"
 msgid "Geometric form:"
 msgstr "Thử lại"
 
-#: imageplugins/transform/ratiocroptool.cpp:429
+#: imageplugins/transform/ratiocroptool.cpp:433
 msgid "Rules of Thirds"
 msgstr "Quy tắc phần ba"
 
-#: imageplugins/transform/ratiocroptool.cpp:430
+#: imageplugins/transform/ratiocroptool.cpp:434
 #, fuzzy
 #| msgid "Original Author"
 msgid "Diagonal Method"
 msgstr "Tác giả gốc"
 
-#: imageplugins/transform/ratiocroptool.cpp:431
+#: imageplugins/transform/ratiocroptool.cpp:435
 msgid "Harmonious Triangles"
 msgstr "Tam giác hài hoà"
 
-#: imageplugins/transform/ratiocroptool.cpp:432
+#: imageplugins/transform/ratiocroptool.cpp:436
 msgid "Golden Mean"
 msgstr "Trung dung"
 
-#: imageplugins/transform/ratiocroptool.cpp:433
+#: imageplugins/transform/ratiocroptool.cpp:437
 #, fuzzy
 #| msgid "None"
 msgctxt "no geometric form"
 msgid "None"
 msgstr "Không có"
 
-#: imageplugins/transform/ratiocroptool.cpp:436
+#: imageplugins/transform/ratiocroptool.cpp:440
 #, fuzzy
 #| msgid ""
 #| "<p>With this option, you can display guide lines which help you to "
@@ -6538,102 +6534,102 @@ msgid ""
 msgstr ""
 "<p>Dùng tùy chọn này, bạn có thể hiển thị nét dẫn giúp đỡ cấu tạo ảnh chụp."
 
-#: imageplugins/transform/ratiocroptool.cpp:439
+#: imageplugins/transform/ratiocroptool.cpp:443
 msgid "Golden sections"
 msgstr "Phần vàng"
 
-#: imageplugins/transform/ratiocroptool.cpp:440
+#: imageplugins/transform/ratiocroptool.cpp:444
 #, fuzzy
 #| msgid "<p>Enable this option to show golden sections."
 msgid "Enable this option to show golden sections."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần vàng."
 
-#: imageplugins/transform/ratiocroptool.cpp:442
+#: imageplugins/transform/ratiocroptool.cpp:446
 msgid "Golden spiral sections"
 msgstr "Phần xoắn ốc vàng"
 
-#: imageplugins/transform/ratiocroptool.cpp:443
+#: imageplugins/transform/ratiocroptool.cpp:447
 #, fuzzy
 #| msgid "<p>Enable this option to show golden spiral sections."
 msgid "Enable this option to show golden spiral sections."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần xoắn ốc vàng."
 
-#: imageplugins/transform/ratiocroptool.cpp:445
+#: imageplugins/transform/ratiocroptool.cpp:449
 msgid "Golden spiral"
 msgstr "Xoắn ốc vàng"
 
-#: imageplugins/transform/ratiocroptool.cpp:446
+#: imageplugins/transform/ratiocroptool.cpp:450
 #, fuzzy
 #| msgid "<p>Enable this option to show golden spiral guide."
 msgid "Enable this option to show a golden spiral guide."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị nét dẫn xoắn ốc vàng."
 
-#: imageplugins/transform/ratiocroptool.cpp:448
+#: imageplugins/transform/ratiocroptool.cpp:452
 msgid "Golden triangles"
 msgstr "Tam giác vàng"
 
-#: imageplugins/transform/ratiocroptool.cpp:449
+#: imageplugins/transform/ratiocroptool.cpp:453
 #, fuzzy
 #| msgid "<p>Enable this option to show golden triangles."
 msgid "Enable this option to show golden triangles."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các tam giác vàng."
 
-#: imageplugins/transform/ratiocroptool.cpp:451
+#: imageplugins/transform/ratiocroptool.cpp:455
 msgid "Flip horizontally"
 msgstr "Lật ngang"
 
-#: imageplugins/transform/ratiocroptool.cpp:452
+#: imageplugins/transform/ratiocroptool.cpp:456
 #, fuzzy
 #| msgid "<p>Enable this option to flip vertically guidelines."
 msgid "Enable this option to flip the guidelines horizontally."
 msgstr "<p>Hãy bật tùy chọn này để lật các nét dẫn theo chiều dọc."
 
-#: imageplugins/transform/ratiocroptool.cpp:454
+#: imageplugins/transform/ratiocroptool.cpp:458
 msgid "Flip vertically"
 msgstr "Lật dọc"
 
-#: imageplugins/transform/ratiocroptool.cpp:455
+#: imageplugins/transform/ratiocroptool.cpp:459
 #, fuzzy
 #| msgid "<p>Enable this option to flip vertically guidelines."
 msgid "Enable this option to flip the guidelines vertically."
 msgstr "<p>Hãy bật tùy chọn này để lật các nét dẫn theo chiều dọc."
 
-#: imageplugins/transform/ratiocroptool.cpp:457
+#: imageplugins/transform/ratiocroptool.cpp:461
 msgid "Color and width:"
 msgstr "Màu và độ rộng:"
 
-#: imageplugins/transform/ratiocroptool.cpp:463
+#: imageplugins/transform/ratiocroptool.cpp:467
 #, fuzzy
 #| msgid "<p>Set here the color used to draw composition guides."
 msgid "Set here the color used to draw composition guides."
 msgstr "<p>Ở đây hãy đặt màu dùng để vẽ nét dẫn cấu tạo."
 
-#: imageplugins/transform/ratiocroptool.cpp:464
+#: imageplugins/transform/ratiocroptool.cpp:468
 #, fuzzy
 #| msgid "<p>Set here the width in pixels used to draw composition guides."
 msgid "Set here the width in pixels used to draw composition guides."
 msgstr "<p>Ở đây hãy đặt độ rộng (theo điểm ảnh) dùng để vẽ nét dẫn cấu tạo."
 
-#: imageplugins/transform/ratiocroptool.cpp:483
+#: imageplugins/transform/ratiocroptool.cpp:487
 #, fuzzy
 #| msgid "Composition guide:"
 msgid "Composition Guides"
 msgstr "Nét dẫn cấu tạo :"
 
-#: imageplugins/transform/ratiocroptool.cpp:785
+#: imageplugins/transform/ratiocroptool.cpp:789
 #, fuzzy
 #| msgid "Custom"
 msgctxt "custom ratio crop settings"
 msgid "Custom"
 msgstr "Tự chọn"
 
-#: imageplugins/transform/ratiocroptool.cpp:808
+#: imageplugins/transform/ratiocroptool.cpp:812
 #, fuzzy
 #| msgid "Maintain aspect ratio"
 msgid "Current aspect ratio"
 msgstr "Duy trì tỷ lệ hình thể"
 
-#: imageplugins/transform/ratiocroptool.cpp:809
+#: imageplugins/transform/ratiocroptool.cpp:813
 #, fuzzy
 #| msgid "None"
 msgctxt "no aspect ratio"
@@ -12600,12 +12596,6 @@ msgstr "Không làm gì"
 #| msgid "Name:"
 msgid "Names:"
 msgstr "Tên:"
-
-#: libs/template/templateviewer.cpp:163
-#, fuzzy
-#| msgid "Erosion:"
-msgid "Position:"
-msgstr "Độ xói mòn:"
 
 #: libs/template/templateviewer.cpp:169
 #, fuzzy
@@ -23750,6 +23740,15 @@ msgid ""
 "Build date: %1 (target: %2)\n"
 "Rev.: %3"
 msgstr ""
+
+#, fuzzy
+#~| msgid "X:"
+#~ msgctxt "top left corner position for cropping"
+#~ msgid "X:"
+#~ msgstr "X:"
+
+#~ msgid "Y:"
+#~ msgstr "Y:"
 
 #~ msgid "Red:"
 #~ msgstr "Đỏ :"

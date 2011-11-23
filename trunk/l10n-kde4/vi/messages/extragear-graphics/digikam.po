@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-22 03:36+0100\n"
+"POT-Creation-Date: 2011-11-23 03:02+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -793,7 +793,7 @@ msgstr "Tạo thư mục ?"
 #: libs/imageproperties/cameraitempropertiestab.cpp:323
 #: libs/imageproperties/cameraitempropertiestab.cpp:338
 #: libs/imageproperties/cameraitempropertiestab.cpp:411
-#: libs/imageproperties/imagepropertiescolorstab.cpp:642
+#: libs/imageproperties/imagepropertiescolorstab.cpp:598
 msgid "Yes"
 msgstr "Có"
 
@@ -805,7 +805,7 @@ msgstr "Có"
 #: libs/imageproperties/cameraitempropertiestab.cpp:319
 #: libs/imageproperties/cameraitempropertiestab.cpp:334
 #: libs/imageproperties/cameraitempropertiestab.cpp:415
-#: libs/imageproperties/imagepropertiescolorstab.cpp:642
+#: libs/imageproperties/imagepropertiescolorstab.cpp:598
 msgid "No"
 msgstr "Không"
 
@@ -2096,7 +2096,6 @@ msgid "All"
 msgstr "Tất cả"
 
 #: digikam/main/digikamapp.cpp:1190
-#: libs/imageproperties/imagepropertiescolorstab.cpp:169
 msgid "Selection"
 msgstr "Vùng chọn"
 
@@ -3984,12 +3983,12 @@ msgid "Invert"
 msgstr "Đảo"
 
 #: imageplugins/color/imageplugin_color.cpp:140
-#: libs/imageproperties/imagepropertiescolorstab.cpp:641
+#: libs/imageproperties/imagepropertiescolorstab.cpp:597
 msgid "8 bits"
 msgstr "8 bit"
 
 #: imageplugins/color/imageplugin_color.cpp:145
-#: libs/imageproperties/imagepropertiescolorstab.cpp:641
+#: libs/imageproperties/imagepropertiescolorstab.cpp:597
 msgid "16 bits"
 msgstr "16 bit"
 
@@ -8795,13 +8794,13 @@ msgid "Set here the yellow/blue color adjustment of the image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu vàng/xanh của ảnh đó."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:518
+#: libs/dimg/filters/levels/histogramwidget.cpp:523
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
 msgid "Loading image..."
 msgstr "Đang tải ảnh..."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:523
+#: libs/dimg/filters/levels/histogramwidget.cpp:528
 #, fuzzy
 #| msgid ""
 #| "Histogram\n"
@@ -8814,7 +8813,7 @@ msgstr ""
 "xuất bị lỗi."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:538
+#: libs/dimg/filters/levels/histogramwidget.cpp:543
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -10245,38 +10244,38 @@ msgid ""
 "formats, such as PNG or TIF."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrampainter.cpp:431
-#, kde-format
-msgid "x:%1"
-msgstr "x:%1"
-
 #: libs/dimg/filters/levels/levelsfilter.h:87
 #, fuzzy
 #| msgid "Levels Adjust..."
 msgid "Levels Adjust Tool"
 msgstr "Điều chỉnh cấp..."
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:595
+#: libs/dimg/filters/levels/histogrampainter.cpp:434
+#, kde-format
+msgid "x:%1"
+msgstr "x:%1"
+
+#: libs/dimg/filters/levels/histogramwidget.cpp:600
 msgid "Mean:"
 msgstr "Trung bình:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:599
+#: libs/dimg/filters/levels/histogramwidget.cpp:604
 msgid "Pixels:"
 msgstr "Điểm ảnh:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:603
+#: libs/dimg/filters/levels/histogramwidget.cpp:608
 msgid "Std dev.:"
 msgstr "Lệch chuẩn:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:607
+#: libs/dimg/filters/levels/histogramwidget.cpp:612
 msgid "Count:"
 msgstr "Đếm:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:611
+#: libs/dimg/filters/levels/histogramwidget.cpp:616
 msgid "Median:"
 msgstr "Trung vị:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:615
+#: libs/dimg/filters/levels/histogramwidget.cpp:620
 msgid "Percent:"
 msgstr "Phần trăm:"
 
@@ -11572,119 +11571,6 @@ msgstr "<i>chưa đổi</i>"
 msgid "<i>unavailable</i>"
 msgstr "<i>không sẵn sàng</i>"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:157
-#, fuzzy
-#| msgid ""
-#| "<p>Select here from which region the histogram will be computed:"
-#| "<p><b>Full Image</b>: Compute histogram using the full image."
-#| "<p><b>Selection</b>: Compute histogram using the current image selection."
-msgid ""
-"<p>Select from which region the histogram will be computed here:</"
-"p><p><b>Full Image</b>: Compute histogram using the full image.<br/"
-"><b>Selection</b>: Compute histogram using the current image selection.</p>"
-msgstr ""
-"<p>Ở đây hãy chọn vùng từ đó tính toán biểu đồ tần xuất:<p><b>Ảnh đầy đủ </"
-"b>: tính biểu đồ tần xuất dùng ảnh đầy đủ.<p><b>Vùng chọn</b>: tính biểu đồ "
-"tần xuất dùng vùng chọn ảnh hiện thời."
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:163
-#, fuzzy
-#| msgid "<p>Full Image"
-msgid "Full Image"
-msgstr "<p>Ảnh đầy đủ"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:190
-msgid "Range:"
-msgstr "Phạm vi:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:197
-#, fuzzy
-#| msgid ""
-#| "<p>Select here the minimal intensity value of the histogram selection."
-msgid "Select the minimal intensity value of the histogram selection here."
-msgstr ""
-"<p>Ở đây hãy chọn giá trị cường độ tối thiểu của vùng chọn biểu đồ tần xuất."
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:203
-#, fuzzy
-#| msgid ""
-#| "<p>Select here the maximal intensity value of the histogram selection."
-msgid "Select the maximal intensity value of the histogram selection here."
-msgstr ""
-"<p>Ở đây hãy chọn giá trị cường độ tối đa của vùng chọn biểu đồ tần xuất."
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:213
-msgid "Statistics"
-msgstr "Thống kê"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:214
-#, fuzzy
-#| msgid ""
-#| "<p>Here you can see the statistical results calculated from the selected "
-#| "histogram part. These values are available for all channels."
-msgid ""
-"Here you can see the statistical results calculated from the selected "
-"histogram part. These values are available for all channels."
-msgstr ""
-"<p>Ở đây bạn có thể xem kết quả thống kê được tính với phần biểu đồ tần xuất "
-"đã chọn. Những giá trị sẵn sàng cho mọi kênh."
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:219
-#, fuzzy
-#| msgid "Pixels:"
-msgid "Pixels: "
-msgstr "Điểm ảnh:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:222
-#, fuzzy
-#| msgid "Count:"
-msgid "Count: "
-msgstr "Đếm:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:225
-#, fuzzy
-#| msgid "Mean:"
-msgid "Mean: "
-msgstr "Trung bình:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:228
-#, fuzzy
-#| msgid "Standard deviation:"
-msgid "Std. deviation: "
-msgstr "Độ lệch chuẩn:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:231
-#, fuzzy
-#| msgid "Median:"
-msgid "Median: "
-msgstr "Trung vị:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:234
-#, fuzzy
-#| msgid "Percentile:"
-msgid "Percentile: "
-msgstr "Tỷ lệ phần trăm:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:237
-#, fuzzy
-#| msgid "Color depth:"
-msgid "Color depth: "
-msgstr "Độ sâu màu :"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:240
-#, fuzzy
-#| msgid "Alpha Channel:"
-msgid "Alpha Channel: "
-msgstr "Kênh anfa:"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:273
-msgid "Histogram"
-msgstr "Biểu đồ tần xuất"
-
-#: libs/imageproperties/imagepropertiescolorstab.cpp:283
-msgid "ICC profile"
-msgstr "Hồ sơ ICC"
-
 #: libs/imageproperties/imagepropertiesversionstab.cpp:85
 #, fuzzy
 #| msgid "<b>Permissions</b>:"
@@ -11944,6 +11830,116 @@ msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 #: libs/imageproperties/imagedescedittab.cpp:1173
 msgid "Read metadata from each file to database"
 msgstr "Đọc siêu dữ liệu từ mỗi tập tin vào cơ sở dữ liệu"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:161
+msgid "Range:"
+msgstr "Phạm vi:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:168
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the minimal intensity value of the histogram selection."
+msgid "Select the minimal intensity value of the histogram selection here."
+msgstr ""
+"<p>Ở đây hãy chọn giá trị cường độ tối thiểu của vùng chọn biểu đồ tần xuất."
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:174
+#, fuzzy
+#| msgid ""
+#| "<p>Select here the maximal intensity value of the histogram selection."
+msgid "Select the maximal intensity value of the histogram selection here."
+msgstr ""
+"<p>Ở đây hãy chọn giá trị cường độ tối đa của vùng chọn biểu đồ tần xuất."
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:182
+msgid "Statistics"
+msgstr "Thống kê"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:183
+#, fuzzy
+#| msgid ""
+#| "<p>Here you can see the statistical results calculated from the selected "
+#| "histogram part. These values are available for all channels."
+msgid ""
+"Here you can see the statistical results calculated from the selected "
+"histogram part. These values are available for all channels."
+msgstr ""
+"<p>Ở đây bạn có thể xem kết quả thống kê được tính với phần biểu đồ tần xuất "
+"đã chọn. Những giá trị sẵn sàng cho mọi kênh."
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:188
+#, fuzzy
+#| msgid "Pixels:"
+msgid "Pixels: "
+msgstr "Điểm ảnh:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:191
+#, fuzzy
+#| msgid "Count:"
+msgid "Count: "
+msgstr "Đếm:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:194
+#, fuzzy
+#| msgid "Mean:"
+msgid "Mean: "
+msgstr "Trung bình:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:197
+#, fuzzy
+#| msgid "Standard deviation:"
+msgid "Std. deviation: "
+msgstr "Độ lệch chuẩn:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:200
+#, fuzzy
+#| msgid "Median:"
+msgid "Median: "
+msgstr "Trung vị:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:203
+#, fuzzy
+#| msgid "Percentile:"
+msgid "Percentile: "
+msgstr "Tỷ lệ phần trăm:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:206
+#, fuzzy
+#| msgid "Color depth:"
+msgid "Color depth: "
+msgstr "Độ sâu màu :"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:209
+#, fuzzy
+#| msgid "Alpha Channel:"
+msgid "Alpha Channel: "
+msgstr "Kênh anfa:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:212
+#, fuzzy
+#| msgid "Source:"
+msgid "Source: "
+msgstr "Nguồn:"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:246
+msgid "Histogram"
+msgstr "Biểu đồ tần xuất"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:256
+msgid "ICC profile"
+msgstr "Hồ sơ ICC"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#, fuzzy
+#| msgid "<p>Full Image"
+msgid "Full Image"
+msgstr "<p>Ảnh đầy đủ"
+
+#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#, fuzzy
+#| msgid "Show image dimensions"
+msgid "Image Region"
+msgstr "Hiện các chiếu ảnh"
 
 #: libs/imageproperties/imagepropertiessidebar.cpp:82
 #: libs/imageproperties/imagepropertiessidebarcamgui.cpp:92
@@ -12703,14 +12699,14 @@ msgstr ""
 msgid "Pick"
 msgstr "Gạch"
 
-#: libs/widgets/common/ditemtooltip.cpp:55
-msgid "unavailable"
-msgstr "không sẵn sàng"
-
 #: libs/widgets/common/dzoombar.cpp:238
 #, kde-format
 msgid "Size: %1"
 msgstr "Cỡ : %1"
+
+#: libs/widgets/common/ditemtooltip.cpp:55
+msgid "unavailable"
+msgstr "không sẵn sàng"
 
 #: libs/widgets/common/searchtextbar.cpp:283
 #, fuzzy
@@ -23741,6 +23737,21 @@ msgid ""
 "Build date: %1 (target: %2)\n"
 "Rev.: %3"
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>Select here from which region the histogram will be computed:"
+#~| "<p><b>Full Image</b>: Compute histogram using the full image."
+#~| "<p><b>Selection</b>: Compute histogram using the current image selection."
+#~ msgid ""
+#~ "<p>Select from which region the histogram will be computed here:</"
+#~ "p><p><b>Full Image</b>: Compute histogram using the full image.<br/"
+#~ "><b>Selection</b>: Compute histogram using the current image selection.</"
+#~ "p>"
+#~ msgstr ""
+#~ "<p>Ở đây hãy chọn vùng từ đó tính toán biểu đồ tần xuất:<p><b>Ảnh đầy đủ "
+#~ "</b>: tính biểu đồ tần xuất dùng ảnh đầy đủ.<p><b>Vùng chọn</b>: tính "
+#~ "biểu đồ tần xuất dùng vùng chọn ảnh hiện thời."
 
 #, fuzzy
 #~| msgid "X:"

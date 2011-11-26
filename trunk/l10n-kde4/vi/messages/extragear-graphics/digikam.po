@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-25 03:14+0100\n"
+"POT-Creation-Date: 2011-11-26 02:57+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -793,7 +793,7 @@ msgstr "Tạo thư mục ?"
 #: libs/imageproperties/cameraitempropertiestab.cpp:323
 #: libs/imageproperties/cameraitempropertiestab.cpp:338
 #: libs/imageproperties/cameraitempropertiestab.cpp:411
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 msgid "Yes"
 msgstr "Có"
 
@@ -805,7 +805,7 @@ msgstr "Có"
 #: libs/imageproperties/cameraitempropertiestab.cpp:319
 #: libs/imageproperties/cameraitempropertiestab.cpp:334
 #: libs/imageproperties/cameraitempropertiestab.cpp:415
-#: libs/imageproperties/imagepropertiescolorstab.cpp:598
+#: libs/imageproperties/imagepropertiescolorstab.cpp:697
 msgid "No"
 msgstr "Không"
 
@@ -3983,12 +3983,12 @@ msgid "Invert"
 msgstr "Đảo"
 
 #: imageplugins/color/imageplugin_color.cpp:140
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "8 bits"
 msgstr "8 bit"
 
 #: imageplugins/color/imageplugin_color.cpp:145
-#: libs/imageproperties/imagepropertiescolorstab.cpp:597
+#: libs/imageproperties/imagepropertiescolorstab.cpp:696
 msgid "16 bits"
 msgstr "16 bit"
 
@@ -8794,13 +8794,13 @@ msgid "Set here the yellow/blue color adjustment of the image."
 msgstr "<p>Ở đây hãy đặt cách điều chỉnh màu vàng/xanh của ảnh đó."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:185
-#: libs/dimg/filters/levels/histogramwidget.cpp:523
+#: libs/dimg/filters/levels/histogramwidget.cpp:526
 #: libs/widgets/iccprofiles/cietonguewidget.cpp:845
 msgid "Loading image..."
 msgstr "Đang tải ảnh..."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:190
-#: libs/dimg/filters/levels/histogramwidget.cpp:528
+#: libs/dimg/filters/levels/histogramwidget.cpp:531
 #, fuzzy
 #| msgid ""
 #| "Histogram\n"
@@ -8813,7 +8813,7 @@ msgstr ""
 "xuất bị lỗi."
 
 #: libs/dimg/filters/curves/curveswidget.cpp:204
-#: libs/dimg/filters/levels/histogramwidget.cpp:543
+#: libs/dimg/filters/levels/histogramwidget.cpp:546
 msgid ""
 "Histogram\n"
 "calculation\n"
@@ -10122,6 +10122,17 @@ msgstr "Sửa chữa màu tự động"
 msgid "Lens Auto-Correction Tool"
 msgstr "Sửa mắt đỏ"
 
+#: libs/dimg/filters/levels/levelsfilter.h:87
+#, fuzzy
+#| msgid "Levels Adjust..."
+msgid "Levels Adjust Tool"
+msgstr "Điều chỉnh cấp..."
+
+#: libs/dimg/filters/levels/histogrampainter.cpp:473
+#, kde-format
+msgid "x:%1"
+msgstr "x:%1"
+
 #: libs/dimg/filters/levels/histogrambox.cpp:89
 #: utilities/queuemanager/basetools/color/curvesadjust.cpp:68
 msgid "Channel:"
@@ -10171,111 +10182,100 @@ msgstr ""
 "<p>Ở đây bạn có thể xem bản vẽ biểu đồ tần xuất ảnh xem thử đích của kênh "
 "ảnh đã chọn. Điều này được tính lại khi nào thay đổi thiết lập."
 
-#: libs/dimg/filters/levels/histogrambox.cpp:270
+#: libs/dimg/filters/levels/histogrambox.cpp:269
 msgid "<p>Select the histogram channel to display:</p>"
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:275
+#: libs/dimg/filters/levels/histogrambox.cpp:274
 #, fuzzy
 #| msgid "Luminosity"
 msgctxt "The luminosity channel"
 msgid "Luminosity"
 msgstr "Độ trưng"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:276
+#: libs/dimg/filters/levels/histogrambox.cpp:275
 msgid "<b>Luminosity</b>: display the image's luminosity values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:278
+#: libs/dimg/filters/levels/histogrambox.cpp:277
 #, fuzzy
 #| msgid "Red"
 msgctxt "The red channel"
 msgid "Red"
 msgstr "Đỏ"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:279
+#: libs/dimg/filters/levels/histogrambox.cpp:278
 msgid "<b>Red</b>: display the red image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:281
+#: libs/dimg/filters/levels/histogrambox.cpp:280
 #, fuzzy
 #| msgid "Green"
 msgctxt "The green channel"
 msgid "Green"
 msgstr "Lục"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:282
+#: libs/dimg/filters/levels/histogrambox.cpp:281
 msgid "<b>Green</b>: display the green image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:284
+#: libs/dimg/filters/levels/histogrambox.cpp:283
 #, fuzzy
 #| msgid "Blue"
 msgctxt "The blue channel"
 msgid "Blue"
 msgstr "Xanh"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:285
+#: libs/dimg/filters/levels/histogrambox.cpp:284
 msgid "<b>Blue</b>: display the blue image-channel values."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:287
+#: libs/dimg/filters/levels/histogrambox.cpp:286
 #, fuzzy
 #| msgid "Colors"
 msgctxt "The colors channel"
 msgid "Colors"
 msgstr "Màu sắc"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:288
+#: libs/dimg/filters/levels/histogrambox.cpp:287
 msgid "<b>Colors</b>: Display all color channel values at the same time."
 msgstr ""
 
-#: libs/dimg/filters/levels/histogrambox.cpp:290
+#: libs/dimg/filters/levels/histogrambox.cpp:289
 #, fuzzy
 #| msgid "Alpha"
 msgctxt "The alpha channel"
 msgid "Alpha"
 msgstr "Anfa"
 
-#: libs/dimg/filters/levels/histogrambox.cpp:291
+#: libs/dimg/filters/levels/histogrambox.cpp:290
 msgid ""
 "<b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image "
 "formats, such as PNG or TIF."
 msgstr ""
 
-#: libs/dimg/filters/levels/levelsfilter.h:87
-#, fuzzy
-#| msgid "Levels Adjust..."
-msgid "Levels Adjust Tool"
-msgstr "Điều chỉnh cấp..."
-
-#: libs/dimg/filters/levels/histogrampainter.cpp:473
-#, kde-format
-msgid "x:%1"
-msgstr "x:%1"
-
-#: libs/dimg/filters/levels/histogramwidget.cpp:600
+#: libs/dimg/filters/levels/histogramwidget.cpp:602
 msgid "Mean:"
 msgstr "Trung bình:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:604
+#: libs/dimg/filters/levels/histogramwidget.cpp:606
 msgid "Pixels:"
 msgstr "Điểm ảnh:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:608
+#: libs/dimg/filters/levels/histogramwidget.cpp:610
 msgid "Std dev.:"
 msgstr "Lệch chuẩn:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:612
+#: libs/dimg/filters/levels/histogramwidget.cpp:614
 msgid "Count:"
 msgstr "Đếm:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:616
+#: libs/dimg/filters/levels/histogramwidget.cpp:618
 msgid "Median:"
 msgstr "Trung vị:"
 
-#: libs/dimg/filters/levels/histogramwidget.cpp:620
+#: libs/dimg/filters/levels/histogramwidget.cpp:622
 msgid "Percent:"
 msgstr "Phần trăm:"
 
@@ -11831,11 +11831,11 @@ msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 msgid "Read metadata from each file to database"
 msgstr "Đọc siêu dữ liệu từ mỗi tập tin vào cơ sở dữ liệu"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:161
+#: libs/imageproperties/imagepropertiescolorstab.cpp:165
 msgid "Range:"
 msgstr "Phạm vi:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:168
+#: libs/imageproperties/imagepropertiescolorstab.cpp:172
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the minimal intensity value of the histogram selection."
@@ -11843,7 +11843,7 @@ msgid "Select the minimal intensity value of the histogram selection here."
 msgstr ""
 "<p>Ở đây hãy chọn giá trị cường độ tối thiểu của vùng chọn biểu đồ tần xuất."
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:174
+#: libs/imageproperties/imagepropertiescolorstab.cpp:178
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the maximal intensity value of the histogram selection."
@@ -11851,11 +11851,11 @@ msgid "Select the maximal intensity value of the histogram selection here."
 msgstr ""
 "<p>Ở đây hãy chọn giá trị cường độ tối đa của vùng chọn biểu đồ tần xuất."
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:182
+#: libs/imageproperties/imagepropertiescolorstab.cpp:186
 msgid "Statistics"
 msgstr "Thống kê"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:183
+#: libs/imageproperties/imagepropertiescolorstab.cpp:187
 #, fuzzy
 #| msgid ""
 #| "<p>Here you can see the statistical results calculated from the selected "
@@ -11867,75 +11867,75 @@ msgstr ""
 "<p>Ở đây bạn có thể xem kết quả thống kê được tính với phần biểu đồ tần xuất "
 "đã chọn. Những giá trị sẵn sàng cho mọi kênh."
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:188
+#: libs/imageproperties/imagepropertiescolorstab.cpp:192
 #, fuzzy
 #| msgid "Pixels:"
 msgid "Pixels: "
 msgstr "Điểm ảnh:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:191
+#: libs/imageproperties/imagepropertiescolorstab.cpp:195
 #, fuzzy
 #| msgid "Count:"
 msgid "Count: "
 msgstr "Đếm:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:194
+#: libs/imageproperties/imagepropertiescolorstab.cpp:198
 #, fuzzy
 #| msgid "Mean:"
 msgid "Mean: "
 msgstr "Trung bình:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:197
+#: libs/imageproperties/imagepropertiescolorstab.cpp:201
 #, fuzzy
 #| msgid "Standard deviation:"
 msgid "Std. deviation: "
 msgstr "Độ lệch chuẩn:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:200
+#: libs/imageproperties/imagepropertiescolorstab.cpp:204
 #, fuzzy
 #| msgid "Median:"
 msgid "Median: "
 msgstr "Trung vị:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:203
+#: libs/imageproperties/imagepropertiescolorstab.cpp:207
 #, fuzzy
 #| msgid "Percentile:"
 msgid "Percentile: "
 msgstr "Tỷ lệ phần trăm:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:206
+#: libs/imageproperties/imagepropertiescolorstab.cpp:210
 #, fuzzy
 #| msgid "Color depth:"
 msgid "Color depth: "
 msgstr "Độ sâu màu :"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:209
+#: libs/imageproperties/imagepropertiescolorstab.cpp:213
 #, fuzzy
 #| msgid "Alpha Channel:"
 msgid "Alpha Channel: "
 msgstr "Kênh anfa:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:212
+#: libs/imageproperties/imagepropertiescolorstab.cpp:216
 #, fuzzy
 #| msgid "Source:"
 msgid "Source: "
 msgstr "Nguồn:"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:246
+#: libs/imageproperties/imagepropertiescolorstab.cpp:266
 msgid "Histogram"
 msgstr "Biểu đồ tần xuất"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:256
+#: libs/imageproperties/imagepropertiescolorstab.cpp:276
 msgid "ICC profile"
 msgstr "Hồ sơ ICC"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 #, fuzzy
 #| msgid "<p>Full Image"
 msgid "Full Image"
 msgstr "<p>Ảnh đầy đủ"
 
-#: libs/imageproperties/imagepropertiescolorstab.cpp:639
+#: libs/imageproperties/imagepropertiescolorstab.cpp:738
 #, fuzzy
 #| msgid "Show image dimensions"
 msgid "Image Region"

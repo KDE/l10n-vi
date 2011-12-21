@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcron\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:12+0200\n"
+"POT-Creation-Date: 2011-12-21 04:36+0100\n"
 "PO-Revision-Date: 2006-11-01 21:28+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -32,6 +32,24 @@ msgstr ""
 msgctxt "User login: errorMessage"
 msgid "User %1: %2"
 msgstr "%H:%M"
+
+#: src/crontablib/ctunit.cpp:172
+msgid ","
+msgstr ","
+
+#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
+msgid " and "
+msgstr " và "
+
+#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
+msgid ", "
+msgstr ", "
+
+#: src/crontablib/ctHelper.cpp:22
+#, fuzzy
+#| msgid "Co&mment:"
+msgid "No comment"
+msgstr "C&hú thích:"
 
 #: src/crontablib/ctdom.cpp:23 src/crontablib/ctdow.cpp:44
 #: src/crontablib/cttask.cpp:266
@@ -162,29 +180,37 @@ msgstr "ngày 30"
 msgid "31st"
 msgstr "ngày 31"
 
-#: src/crontablib/ctHelper.cpp:22
-#, fuzzy
-#| msgid "Co&mment:"
-msgid "No comment"
-msgstr "C&hú thích:"
-
-#: src/crontablib/ctunit.cpp:172
-msgid ","
-msgstr ","
-
-#: src/crontablib/ctunit.cpp:173 src/crontablib/cttask.cpp:318
-msgid " and "
-msgstr " và "
-
-#: src/crontablib/ctunit.cpp:176 src/crontablib/cttask.cpp:321
-msgid ", "
-msgstr ", "
-
 #: src/crontablib/ctGlobalCron.cpp:39
 #, fuzzy
 #| msgid "Print &all users"
 msgid "All users"
 msgstr "In &mọi người dùng"
+
+#: src/crontablib/ctvariable.cpp:126
+msgid "Override default home folder."
+msgstr "Đè thư mục chính mặc định."
+
+#: src/crontablib/ctvariable.cpp:129
+msgid "Email output to specified account."
+msgstr "Gửi thư chứa kết xuất tới tài khoản đã xác định."
+
+#: src/crontablib/ctvariable.cpp:132
+msgid "Override default shell."
+msgstr "Đè trình bao mặc định."
+
+#: src/crontablib/ctvariable.cpp:135
+msgid "Folders to search for program files."
+msgstr "Thư mục nơi cần tìm tập tin chương trình."
+
+#: src/crontablib/ctvariable.cpp:138
+msgid "Dynamic libraries location."
+msgstr ""
+
+#: src/crontablib/ctvariable.cpp:141
+#, fuzzy
+#| msgid "Variables"
+msgid "Local Variable"
+msgstr "Biến"
 
 #: src/crontablib/ctmonth.cpp:23
 #, fuzzy
@@ -243,32 +269,6 @@ msgstr "Tháng mười một"
 #: src/crontablib/ctmonth.cpp:33
 msgid "December"
 msgstr "Tháng mười hai"
-
-#: src/crontablib/ctvariable.cpp:126
-msgid "Override default home folder."
-msgstr "Đè thư mục chính mặc định."
-
-#: src/crontablib/ctvariable.cpp:129
-msgid "Email output to specified account."
-msgstr "Gửi thư chứa kết xuất tới tài khoản đã xác định."
-
-#: src/crontablib/ctvariable.cpp:132
-msgid "Override default shell."
-msgstr "Đè trình bao mặc định."
-
-#: src/crontablib/ctvariable.cpp:135
-msgid "Folders to search for program files."
-msgstr "Thư mục nơi cần tìm tập tin chương trình."
-
-#: src/crontablib/ctvariable.cpp:138
-msgid "Dynamic libraries location."
-msgstr ""
-
-#: src/crontablib/ctvariable.cpp:141
-#, fuzzy
-#| msgid "Variables"
-msgid "Local Variable"
-msgstr "Biến"
 
 #: src/crontablib/ctdow.cpp:56
 msgid "Mon"
@@ -459,55 +459,6 @@ msgstr "&Bật"
 msgid "Disabled"
 msgstr "Tắt"
 
-#: src/variableEditorDialog.cpp:60
-#, fuzzy
-#| msgid "Modify Variable"
-msgid "Add or modify a variable"
-msgstr "Sửa đổi biến"
-
-#: src/variableEditorDialog.cpp:64
-#, fuzzy
-#| msgid "&Variable:"
-msgctxt "The environmental variable name ie HOME, MAILTO etc"
-msgid "&Variable:"
-msgstr "&Biến:"
-
-#: src/variableEditorDialog.cpp:93
-msgid "Va&lue:"
-msgstr "G&iá trị:"
-
-#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
-msgid "&Run as:"
-msgstr "Chạ&y dưới:"
-
-#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
-msgid "Co&mment:"
-msgstr "C&hú thích:"
-
-#: src/variableEditorDialog.cpp:128
-msgid "&Enable this variable"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:156
-msgid "<i>This variable will be used by scheduled tasks.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:200
-msgid "<i>This variable is disabled.</i>"
-msgstr ""
-
-#: src/variableEditorDialog.cpp:207
-#, fuzzy
-#| msgid "Please enter the variable name."
-msgid "<i>Please enter the variable name...</i>"
-msgstr "Hãy nhập tên giá trị."
-
-#: src/variableEditorDialog.cpp:214
-#, fuzzy
-#| msgid "Please enter the variable value."
-msgid "<i>Please enter the variable value ...</i>"
-msgstr "Hãy nhập giá trị biến."
-
 #: src/variablesWidget.cpp:48
 #, fuzzy
 #| msgid "Variables"
@@ -582,6 +533,55 @@ msgstr ""
 #| msgid "Delete the selected task or variable."
 msgid "Delete the selected variable."
 msgstr "Xoá tác vụ hay biến đã chọn."
+
+#: src/variableEditorDialog.cpp:60
+#, fuzzy
+#| msgid "Modify Variable"
+msgid "Add or modify a variable"
+msgstr "Sửa đổi biến"
+
+#: src/variableEditorDialog.cpp:64
+#, fuzzy
+#| msgid "&Variable:"
+msgctxt "The environmental variable name ie HOME, MAILTO etc"
+msgid "&Variable:"
+msgstr "&Biến:"
+
+#: src/variableEditorDialog.cpp:93
+msgid "Va&lue:"
+msgstr "G&iá trị:"
+
+#: src/variableEditorDialog.cpp:102 src/taskEditorDialog.cpp:106
+msgid "&Run as:"
+msgstr "Chạ&y dưới:"
+
+#: src/variableEditorDialog.cpp:120 src/taskEditorDialog.cpp:122
+msgid "Co&mment:"
+msgstr "C&hú thích:"
+
+#: src/variableEditorDialog.cpp:128
+msgid "&Enable this variable"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:156
+msgid "<i>This variable will be used by scheduled tasks.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:200
+msgid "<i>This variable is disabled.</i>"
+msgstr ""
+
+#: src/variableEditorDialog.cpp:207
+#, fuzzy
+#| msgid "Please enter the variable name."
+msgid "<i>Please enter the variable name...</i>"
+msgstr "Hãy nhập tên giá trị."
+
+#: src/variableEditorDialog.cpp:214
+#, fuzzy
+#| msgid "Please enter the variable value."
+msgid "<i>Please enter the variable value ...</i>"
+msgstr "Hãy nhập giá trị biến."
 
 #: src/taskEditorDialog.cpp:76
 #, fuzzy

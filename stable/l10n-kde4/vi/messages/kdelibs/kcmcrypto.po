@@ -1,0 +1,955 @@
+# Vietnamese translation for KCM Crypto.
+# Copyright © 2007 KDE i18n Project for Vietnamese.
+#
+# Clytie Siddall <clytie@riverland.net.au>, 2007.
+# Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmcrypto\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2011-08-02 06:20+0200\n"
+"PO-Revision-Date: 2008-01-05 23:17+0700\n"
+"Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KAider 0.1\n"
+
+#: certexport.cpp:49
+msgid "X509 Certificate Export"
+msgstr "Xuất chứng nhận X509"
+
+#: certexport.cpp:51
+msgid "Format"
+msgstr "Định dạng"
+
+# Name: don't translate / Tên: đừng dịch
+#: certexport.cpp:53
+msgid "&PEM"
+msgstr "&PEM"
+
+# Name: don't translate / Tên: đừng dịch
+#: certexport.cpp:55
+msgid "&Netscape"
+msgstr "&Netscape"
+
+# Name: don't translate / Tên: đừng dịch
+#: certexport.cpp:57
+msgid "&DER/ASN1"
+msgstr "&DER/ASN1"
+
+#: certexport.cpp:59
+msgid "&Text"
+msgstr "&Văn bản"
+
+#: certexport.cpp:64
+msgid "Filename:"
+msgstr "Tên tập tin:"
+
+#: certexport.cpp:75
+msgid "&Export"
+msgstr "&Xuất"
+
+#: certexport.cpp:80
+msgid "&Cancel"
+msgstr "&Thôi"
+
+#: certexport.cpp:103
+msgid "Internal error. Please report to kfm-devel@kde.org."
+msgstr ""
+"Lỗi nội bộ. Xin báo cáo lỗi này cho nhà phát triển tại kfm-devel@kde.org"
+
+#: certexport.cpp:103 certexport.cpp:118 certexport.cpp:126 crypto.cpp:841
+#: crypto.cpp:1294 crypto.cpp:1323 crypto.cpp:1340 crypto.cpp:1342
+#: crypto.cpp:1533 crypto.cpp:1550 crypto.cpp:1605 crypto.cpp:1644
+#: crypto.cpp:1646 crypto.cpp:1856 crypto.cpp:1876 crypto.cpp:1940
+#: crypto.cpp:1947 crypto.cpp:1963 crypto.cpp:2016
+msgid "SSL"
+msgstr "SSL"
+
+#: certexport.cpp:118
+msgid "Error converting the certificate into the requested format."
+msgstr "Lỗi chuyển đổi chứng nhận thành định dạng đã yêu cầu."
+
+#: certexport.cpp:126
+msgid "Error opening file for output."
+msgstr "Gặp lỗi khi mở tập tin để xuất."
+
+#: crypto.cpp:109
+#, kde-format
+msgid "%1 (%2 of %3 bits)"
+msgstr "%1 (%2 trên %3 bit)"
+
+#: crypto.cpp:229
+msgid ""
+"<h1>Crypto</h1> This module allows you to configure SSL for use with most "
+"KDE applications, as well as manage your personal certificates and the known "
+"certificate authorities."
+msgstr ""
+"<h1>Mật mã</h1> Mô-đun này cho bạn khả năng cấu hình SSL để dùng với hầu hết "
+"các ứng dụng KDE cũng như quản lý các chứng nhận cá nhân và các nhà cầm "
+"quyền chứng nhận đã biết."
+
+#: crypto.cpp:238
+msgid "KCMCrypto"
+msgstr "KCMCrypto"
+
+#: crypto.cpp:239
+msgid "KDE Crypto Control Module"
+msgstr "Mô-đun điều khiển mã hoá KDE"
+
+#: crypto.cpp:240
+msgid "(c) 2000 - 2001 George Staikos"
+msgstr "Tác quyền © năm 2000-2001 của George Staikos"
+
+#: crypto.cpp:241
+msgid "George Staikos"
+msgstr "George Staikos"
+
+#: crypto.cpp:242
+msgid "Carsten Pfeiffer"
+msgstr "Carsten Pfeiffer"
+
+#: crypto.cpp:273
+msgid "SSL Ciphers to Use"
+msgstr "Mật mã SSL được dùng"
+
+#: crypto.cpp:274
+msgid ""
+"Select the ciphers you wish to enable when using the SSL protocol. The "
+"actual protocol used will be negotiated with the server at connection time."
+msgstr ""
+"Hãy chọn những mật mã bạn muốn hiệu lực khi dùng giao thức SSL. Giao thức "
+"thực sự được dùng sẽ được thỏa thuận với máy phục vụ vào lúc kết nối."
+
+#: crypto.cpp:290
+msgid "Cipher Wizard"
+msgstr "Trợ lý mật mã"
+
+#: crypto.cpp:295
+msgid "Strong Ciphers Only"
+msgstr "Chỉ các mật mã mạnh"
+
+#: crypto.cpp:296
+msgid "Export Ciphers Only"
+msgstr "Chỉ các mật mã được phép xuất khẩu"
+
+#: crypto.cpp:297
+msgid "Enable All"
+msgstr "Bật tất cả"
+
+#: crypto.cpp:299
+msgid ""
+"<qt>Use these preconfigurations to more easily configure the SSL encryption "
+"settings. You can choose among the following modes:<ul><li><b>Strong Ciphers "
+"Only:</b> Select only the strong (&gt;= 128 bit) encryption ciphers.</"
+"li><li><b>Export Ciphers Only:</b> Select only the weak ciphers (&lt;= 56 "
+"bit).</li><li><b>Enable All:</b> Select all SSL ciphers and methods.</li></"
+"ul></qt>"
+msgstr ""
+"<qt>Dùng các cấu hình sẵn này để cấu hình mật mã SSL dễ dàng hơn. Bạn có thể "
+"chọn trong số các chế độ:<ul><li><b>Chỉ các mật mã mạnh:</b> Chỉ chọn các "
+"mật mã mạnh (&gt;= 128 bit).</li><li><b>Chỉ các mật mã được phép xuất khẩu:</"
+"b> Chỉ chọn các mật mã yếu (&lt;= 56 bit).</li><li><b>Bật tất cả:</b> Chọn "
+"tất cả các mật mã và phương pháp của SSL .</li></ul></qt>"
+
+#: crypto.cpp:316
+msgid "Warn on &entering SSL mode"
+msgstr "Cảnh báo khi &vào chế độ SSL"
+
+#: crypto.cpp:319
+msgid "If selected, you will be notified when entering an SSL enabled site"
+msgstr "Nếu chọn, bạn sẽ được thông báo khi vào trang có khả năng dùng SSL"
+
+#: crypto.cpp:323
+msgid "Warn on &leaving SSL mode"
+msgstr "Cảnh báo khi &rời chế độ SSL"
+
+#: crypto.cpp:326
+msgid "If selected, you will be notified when leaving an SSL based site."
+msgstr "Nếu chọn, bạn sẽ được thông báo khi rời trang có khả năng dùng SSL"
+
+#: crypto.cpp:330
+msgid "Warn on sending &unencrypted data"
+msgstr "Cảnh báo khi gửi dữ liệu ch&ưa mã hóa"
+
+#: crypto.cpp:333
+msgid ""
+"If selected, you will be notified before sending unencrypted data via a web "
+"browser."
+msgstr ""
+"Nếu chọn, bạn sẽ được thông báo trước khi gửi dữ liệu không được mã hóa qua "
+"trình duyệt mạng."
+
+#: crypto.cpp:338
+msgid "Warn on &mixed SSL/non-SSL pages"
+msgstr "Cảnh báo khi vào trang &hỗn hợp SSL/không-SSL"
+
+#: crypto.cpp:341
+msgid ""
+"If selected, you will be notified if you view a page that has both encrypted "
+"and non-encrypted parts."
+msgstr ""
+"Nếu chọn, bạn sẽ được thông báo nếu bạn xem một trang có cả phần được mã hóa "
+"và không được mã hóa."
+
+#: crypto.cpp:354
+msgid "Path to OpenSSL Shared Libraries"
+msgstr "Đường dẫn tới các thư viện dùng chung OpenSSL"
+
+#: crypto.cpp:361
+msgid "&Test"
+msgstr "&Thử"
+
+#: crypto.cpp:372
+msgid "Use EGD"
+msgstr "Dùng EGD"
+
+#: crypto.cpp:374
+msgid "Use entropy file"
+msgstr "Dùng tập tin ngẫu nhiên"
+
+#: crypto.cpp:381 crypto.cpp:2260
+msgid "Path to EGD:"
+msgstr "Đường dẫn tới EGD:"
+
+#: crypto.cpp:388
+msgid ""
+"If selected, OpenSSL will be asked to use the entropy gathering daemon (EGD) "
+"for initializing the pseudo-random number generator."
+msgstr ""
+"Nếu chọn, OpenSSL sẽ được yêu cầu dùng trình nền tập hợp dữ liệu ngẫu nhiên "
+"(EGD) cho việc khởi tạo trình tạo ra số ngẫu nhiên giả."
+
+#: crypto.cpp:391
+msgid ""
+"If selected, OpenSSL will be asked to use the given file as entropy for "
+"initializing the pseudo-random number generator."
+msgstr ""
+"Nếu chọn, OpenSSL sẽ được yêu cầu dùng tập tin đã cung cấp như là dữ liệu "
+"ngẫu nhiên cho việc khởi tạo trình tạo ra số ngẫu nhiên giả."
+
+#: crypto.cpp:394
+msgid ""
+"Enter the path to the socket created by the entropy gathering daemon (or the "
+"entropy file) here."
+msgstr ""
+"Hãy nhập vào đây đường dẫn tời ổ cắm được tạo bởi trình nền tập hợp dữ liệu "
+"ngẫu nhiên (hay tập tin ngẫu nhiên)."
+
+#: crypto.cpp:397
+msgid "Click here to browse for the EGD socket file."
+msgstr "Nhấn vào đây để duyệt tìm tập tin ổ cắm EGD."
+
+#: crypto.cpp:418
+msgid ""
+"This list box shows which certificates of yours KDE knows about. You can "
+"easily manage them from here."
+msgstr ""
+"Đây là danh sách hiển thị những chứng nhận của bạn mà KDE biết. Bạn có thể "
+"dễ dàng quản lý chúng ở đây."
+
+#: crypto.cpp:423 crypto.cpp:604 crypto.cpp:740
+msgid "Common Name"
+msgstr "Tên chung"
+
+#: crypto.cpp:423
+msgid "Email Address"
+msgstr "Địa chỉ thư"
+
+#: crypto.cpp:431 crypto.cpp:743
+msgid "I&mport..."
+msgstr "&Nhập...."
+
+#: crypto.cpp:435 crypto.cpp:609
+msgid "&Export..."
+msgstr "&Xuất..."
+
+#: crypto.cpp:440 crypto.cpp:559
+msgid "Remo&ve"
+msgstr "&Gỡ bỏ"
+
+#: crypto.cpp:445
+msgid "&Unlock"
+msgstr "&Bỏ khoá"
+
+#: crypto.cpp:450
+msgid "Verif&y"
+msgstr "&Thẩm tra"
+
+#: crypto.cpp:455
+msgid "Chan&ge Password..."
+msgstr "Đổ&i mật khẩu..."
+
+#: crypto.cpp:470 crypto.cpp:644
+msgid "This is the information known about the owner of the certificate."
+msgstr "Đây là thông tin được biết về người sở hữu chứng nhận này."
+
+#: crypto.cpp:471 crypto.cpp:646
+msgid "This is the information known about the issuer of the certificate."
+msgstr "Đây là những thông tin được biết về nhà phát hành chứng nhận này."
+
+#: crypto.cpp:477 crypto.cpp:649
+msgid "Valid from:"
+msgstr "Hợp lệ từ :"
+
+#: crypto.cpp:478 crypto.cpp:650
+msgid "Valid until:"
+msgstr "Hợp lệ đến:"
+
+#: crypto.cpp:479 crypto.cpp:659
+msgid "The certificate is valid starting at this date."
+msgstr "Chứng nhận là hợp lệ kể từ ngày này."
+
+#: crypto.cpp:480 crypto.cpp:661
+msgid "The certificate is valid until this date."
+msgstr "Chứng nhận là hợp lệ cho đến ngày này."
+
+#: crypto.cpp:483 crypto.cpp:709 crypto.cpp:774
+msgid "MD5 digest:"
+msgstr "Bản tóm tắt MD5:"
+
+#: crypto.cpp:484 crypto.cpp:712 crypto.cpp:777
+msgid "A hash of the certificate used to identify it quickly."
+msgstr "Băm của chứng minh, được dùng để nhận diện nó nhanh chóng."
+
+#: crypto.cpp:487
+msgid "On SSL Connection..."
+msgstr "Trên kết nối SSL..."
+
+#: crypto.cpp:488
+msgid "&Use default certificate"
+msgstr "&Dùng chứng nhận mặc định"
+
+#: crypto.cpp:489
+msgid "&List upon connection"
+msgstr "&Liệt kê khi kết nối"
+
+#: crypto.cpp:490
+msgid "&Do not use certificates"
+msgstr "&Không dùng chứng nhận"
+
+#: crypto.cpp:494 crypto.cpp:578 crypto.cpp:716 crypto.cpp:781
+msgid ""
+"SSL certificates cannot be managed because this module was not linked with "
+"OpenSSL."
+msgstr ""
+"Chứng nhận SSL không thể được quản lý bởi vì mô-đun này không được liên kết "
+"với OpenSSL."
+
+#: crypto.cpp:510
+msgid "Default Action"
+msgstr "Hành động mặc định"
+
+#: crypto.cpp:513
+msgid "&Send"
+msgstr "&Gửi"
+
+#: crypto.cpp:516 crypto.cpp:700
+msgid "&Prompt"
+msgstr "&Nhắc"
+
+#: crypto.cpp:519
+msgid "Do &not send"
+msgstr "&Không gửi"
+
+#: crypto.cpp:524
+msgid "Default certificate:"
+msgstr "Chứng nhận mặc định:"
+
+#: crypto.cpp:530
+msgid "Host authentication:"
+msgstr "Xác thực máy:"
+
+#: crypto.cpp:535
+msgid "Host"
+msgstr "Máy"
+
+#: crypto.cpp:535
+msgid "Certificate"
+msgstr "Chứng nhận"
+
+#: crypto.cpp:535 crypto.cpp:691
+msgid "Policy"
+msgstr "Chính sách"
+
+#: crypto.cpp:536
+msgid "Host:"
+msgstr "Máy:"
+
+#: crypto.cpp:537
+msgid "Certificate:"
+msgstr "Chứng nhận:"
+
+#: crypto.cpp:544
+msgid "Action"
+msgstr "Hành động"
+
+#: crypto.cpp:547 crypto.h:184
+msgid "Send"
+msgstr "Gửi"
+
+#: crypto.cpp:550 crypto.h:190
+msgid "Prompt"
+msgstr "Nhắc"
+
+#: crypto.cpp:553
+msgid "Do not send"
+msgstr "Không gửi"
+
+#: crypto.cpp:558
+msgid "Ne&w"
+msgstr "&Mới"
+
+#: crypto.cpp:601
+msgid ""
+"This list box shows which site and person certificates KDE knows about. You "
+"can easily manage them from here."
+msgstr ""
+"Hộp danh sách này hiển thị các chứng nhận kiểu nơi và người mà KDE biết. Bạn "
+"có thể dễ dàng quản lý chùng ở đây. "
+
+#: crypto.cpp:604 crypto.cpp:738
+msgid "Organization"
+msgstr "Tổ chức"
+
+#: crypto.cpp:612
+msgid ""
+"This button allows you to export the selected certificate to a file of "
+"various formats."
+msgstr ""
+"Nút này cho bạn khả năng xuất khẩu chứng nhận đã chọn vào tập tin có một của "
+"vài định dạng khác nhau."
+
+#: crypto.cpp:616 crypto.cpp:747 crypto.cpp:822
+msgid "&Remove"
+msgstr "&Bỏ"
+
+#: crypto.cpp:619
+msgid ""
+"This button removes the selected certificate from the certificate cache."
+msgstr "Nút này gỡ bỏ chứng nhận đã chọn từ bộ nhớ tạm chứng nhận."
+
+#: crypto.cpp:623
+msgid "&Verify"
+msgstr "&Thẩm tra"
+
+#: crypto.cpp:626
+msgid "This button tests the selected certificate for validity."
+msgstr "Nút này thử sự xác thực của chứng nhận đã chọn."
+
+#: crypto.cpp:664
+msgid "Cache"
+msgstr "Nhớ tạm"
+
+#: crypto.cpp:667
+msgid "Permanentl&y"
+msgstr "&Vĩnh viễn"
+
+#: crypto.cpp:670
+msgid "&Until"
+msgstr "Đế&n"
+
+#: crypto.cpp:684
+msgid "Select here to make the cache entry permanent."
+msgstr "Ở đây hãy chọn làm cho mục nhập bộ nhớ tạm là vĩnh viễn."
+
+#: crypto.cpp:686
+msgid "Select here to make the cache entry temporary."
+msgstr "Ở đây hãy chọn làm cho mục nhập bộ nhớ tạm là tạm thời."
+
+#: crypto.cpp:688
+msgid "The date and time until the certificate cache entry should expire."
+msgstr ""
+"Ngày và thời gian cho tới khi mục nhập bộ nhớ tạm chứng nhận nên hết hạn."
+
+#: crypto.cpp:694
+msgid "Accep&t"
+msgstr "&Chấp nhận"
+
+#: crypto.cpp:697
+msgid "Re&ject"
+msgstr "&Từ chối"
+
+#: crypto.cpp:706
+msgid "Select this to always accept this certificate."
+msgstr "Chọn cái này để luôn chấp nhận chứng nhận này."
+
+#: crypto.cpp:707
+msgid "Select this to always reject this certificate."
+msgstr "Chọn cái này để luôn luôn từ chối chứng nhận này."
+
+#: crypto.cpp:708
+msgid ""
+"Select this if you wish to be prompted for action when receiving this "
+"certificate."
+msgstr ""
+"Chọn cái này nếu bạn muốn bị nhắc cho mối hành động khi nhận chứng nhận này."
+
+#: crypto.cpp:733
+msgid ""
+"This list box shows which certificate authorities KDE knows about. You can "
+"easily manage them from here."
+msgstr ""
+"Đây là danh sách liệt kê các nhà cầm quyền chứng nhận mà KDE biết. Bạn có "
+"thể dễ dàng quản lý chúng ở đây."
+
+#: crypto.cpp:739
+msgid "Organizational Unit"
+msgstr "Đơn vị tổ chức"
+
+#: crypto.cpp:752
+msgid "Res&tore"
+msgstr "&Khôi phục"
+
+#: crypto.cpp:762
+msgid "Accept for site signing"
+msgstr "Chấp nhận để ký nơi Mạng"
+
+#: crypto.cpp:763
+msgid "Accept for email signing"
+msgstr "Chấp nhận để ký thư"
+
+#: crypto.cpp:764
+msgid "Accept for code signing"
+msgstr "Chấp nhận để ký mã nguồn"
+
+#: crypto.cpp:796
+msgid "Warn on &self-signed certificates or unknown CA's"
+msgstr "Cảnh báo vào lúc gặp chứng nhận &tự ký hoặc không biết nhà chứng nhận"
+
+#: crypto.cpp:798
+msgid "Warn on &expired certificates"
+msgstr "Cảnh báo khi gặp chứng nhận đã &hết hạn"
+
+#: crypto.cpp:800
+msgid "Warn on re&voked certificates"
+msgstr "Cảnh bảo khi gặp chứng nhận bị &hủy bỏ"
+
+#: crypto.cpp:810
+msgid ""
+"This list box shows which sites you have decided to accept a certificate "
+"from even though the certificate might fail the validation procedure."
+msgstr ""
+"Đây là danh sách hiển thị các nơi Mạng từ đó bạn đã quyết định chấp nhận "
+"chứng nhận, cho dù nó có thể thất bại trong thủ tục thẩm tra."
+
+#: crypto.cpp:818
+msgid "&Add"
+msgstr "Thê&m"
+
+#: crypto.cpp:831
+msgid ""
+"These options are not configurable because this module was not linked with "
+"OpenSSL."
+msgstr ""
+"Các tuỳ chọn này không thể cấu hình được vì mô-đun này không được liên kết "
+"với OpenSSL."
+
+#: crypto.cpp:843 crypto.cpp:2240 crypto.cpp:2248 crypto.cpp:2252
+msgid "OpenSSL"
+msgstr "OpenSSL"
+
+#: crypto.cpp:845
+msgid "Your Certificates"
+msgstr "Các chứng nhận của bạn"
+
+#: crypto.cpp:846
+msgid "Authentication"
+msgstr "Xác thực"
+
+#: crypto.cpp:847
+msgid "Peer SSL Certificates"
+msgstr "Chứng nhận đồng đẳng SSL"
+
+#: crypto.cpp:848
+msgid "SSL Signers"
+msgstr "Người ký SSL"
+
+#: crypto.cpp:851
+msgid "Validation Options"
+msgstr "Tuỳ chọn thẩm tra"
+
+#: crypto.cpp:1061
+msgid "If you do not select at least one cipher, SSL will not work."
+msgstr "Nếu bạn không chọn ít nhất một mật mã thì SSL không hoạt động."
+
+#: crypto.cpp:1063
+msgid "SSL Ciphers"
+msgstr "Mật mã SSL"
+
+#: crypto.cpp:1293
+msgid "Could not open the certificate."
+msgstr "Không thể mở chứng nhận."
+
+#: crypto.cpp:1323
+msgid "Error obtaining the certificate."
+msgstr "Gặp lỗi khi lấy chứng nhận."
+
+#: crypto.cpp:1340 crypto.cpp:1644
+msgid "This certificate passed the verification tests successfully."
+msgstr "Chứng nhận này đã qua các việc thẩm tra thành công."
+
+#: crypto.cpp:1342 crypto.cpp:1646
+msgid "This certificate has failed the tests and should be considered invalid."
+msgstr ""
+"Chứng nhận này không qua được các việc thẩm tra và nên được coi là không "
+"đúng đắn."
+
+#: crypto.cpp:1525
+msgid "Certificate Password"
+msgstr "Mật khẩu chứng nhận"
+
+#: crypto.cpp:1526
+msgid "Certificate password"
+msgstr "Mật khẩu chứng nhận"
+
+#: crypto.cpp:1533
+msgid "The certificate file could not be loaded. Try a different password?"
+msgstr "Không thể tải tập tin chứng nhận này. Thử mật khẩu khác không?"
+
+#: crypto.cpp:1533
+msgid "Try"
+msgstr "Thử"
+
+#: crypto.cpp:1533
+msgid "Do Not Try"
+msgstr "Không thử"
+
+#: crypto.cpp:1550
+msgid ""
+"A certificate with that name already exists. Are you sure that you wish to "
+"replace it?"
+msgstr "Một chứng nhận với tên đó đã có. Bạn có chắc muốn thay thế nó không?"
+
+#: crypto.cpp:1550
+msgid "Replace"
+msgstr "Thay thế"
+
+#: crypto.cpp:1584 crypto.cpp:1620 crypto.cpp:1673
+msgid "Enter the certificate password:"
+msgstr "Nhập mật khẩu chứng nhận:"
+
+#: crypto.cpp:1585 crypto.cpp:1621 crypto.cpp:1674 crypto.cpp:1784
+#, kde-format
+msgid "Password For '%1'"
+msgstr "Mật khẩu cho « %1 »"
+
+#: crypto.cpp:1594 crypto.cpp:1631 crypto.cpp:1684 crypto.cpp:1793
+msgid "Decoding failed. Please try again:"
+msgstr "Lỗi giải mã. Hãy thử lại:"
+
+#: crypto.cpp:1605
+msgid "Export failed."
+msgstr "Lỗi xuất."
+
+#: crypto.cpp:1783
+msgid "Enter the OLD password for the certificate:"
+msgstr "Nhập mật khẩu CŨ của chứng nhận:"
+
+#: crypto.cpp:1801
+msgid "Enter the new certificate password"
+msgstr "Nhập mật khẩu mới của chứng nhận"
+
+#: crypto.cpp:1853 crypto.cpp:1946
+msgid "This is not a signer certificate."
+msgstr "Đây không phải là chứng nhận khả năng ký."
+
+#: crypto.cpp:1873 crypto.cpp:1962
+msgid "You already have this signer certificate installed."
+msgstr "Bạn đã có chứng nhận ký này được cài đặt."
+
+#: crypto.cpp:1939
+msgid "The certificate file could not be loaded."
+msgstr "Không tải được tập tin chứng nhận."
+
+#: crypto.cpp:1995
+msgid "Do you want to make this certificate available to KMail as well?"
+msgstr "Bạn có muốn làm cho chứng nhận này cũng sẵn sàng cho KMail không?"
+
+#: crypto.cpp:1995
+msgid "Make Available"
+msgstr "Làm sẵn sàng"
+
+#: crypto.cpp:1995
+msgid "Do Not Make Available"
+msgstr "Không làm sẵn sàng"
+
+#: crypto.cpp:1998
+msgid ""
+"Could not execute Kleopatra. You might have to install or update the kdepim "
+"package."
+msgstr ""
+"Không thể thực hiện Kleopatra. Có lẽ bạn phải cài đặt hay cập nhật gói phần "
+"mềm kdepim."
+
+#: crypto.cpp:2016
+msgid ""
+"This will revert your certificate signers database to the KDE default.\n"
+"This operation cannot be undone.\n"
+"Are you sure you wish to continue?"
+msgstr ""
+"Việc này sẽ hoàn nguyên cơ sở dữ liệu các người ký chứng nhận về mặc định "
+"của KDE.\n"
+"Không thể phục hồi thao tác này.\n"
+"Bạn có chắc chắn là muốn tiếp tục không?"
+
+#: crypto.cpp:2016
+msgid "Revert"
+msgstr "Hoàn nguyên"
+
+#: crypto.cpp:2238 crypto.cpp:2246
+msgid "Failed to load OpenSSL."
+msgstr "Lỗi tải OpenSSL."
+
+#: crypto.cpp:2239
+msgid "libssl was not found or successfully loaded."
+msgstr "Không tìm thấy hay không tải thành công thư viện SSL libssl."
+
+#: crypto.cpp:2247
+msgid "libcrypto was not found or successfully loaded."
+msgstr "Không tải thành công hay không tìm thấy thư viện mật mã libcrypto."
+
+#: crypto.cpp:2252
+msgid "OpenSSL was successfully loaded."
+msgstr "OpenSSL đã được tải."
+
+#: crypto.cpp:2271
+msgid "Path to entropy file:"
+msgstr "Đường dẫn đến tập tin ngẫu nhiên:"
+
+#: crypto.cpp:2284
+msgid "Personal SSL"
+msgstr "SSL cá nhân"
+
+#: crypto.cpp:2285
+msgid "Server SSL"
+msgstr "SSL máy phục vụ"
+
+#: crypto.cpp:2286
+msgid "S/MIME"
+msgstr "S/MIME"
+
+# #-#-#-#-#  kdelibs.po (kdelibs)  #-#-#-#-#
+# Name: don't translate / Tên: đừng dịch
+#: crypto.cpp:2287
+msgid "PGP"
+msgstr "PGP"
+
+# Name: don't translate / Tên: đừng dịch
+#: crypto.cpp:2288
+msgid "GPG"
+msgstr "GPG"
+
+#: crypto.cpp:2289
+msgid "SSL Personal Request"
+msgstr "Yêu cầu SSL cá nhân"
+
+#: crypto.cpp:2290
+msgid "SSL Server Request"
+msgstr "Yêu cầu máy phục vụ SSL"
+
+#: crypto.cpp:2291
+msgid "Netscape SSL"
+msgstr "SSL Netscape"
+
+#: crypto.cpp:2292
+msgctxt "Server certificate authority"
+msgid "Server CA"
+msgstr "Nhà cầm quyền chứng nhận máy phục vụ"
+
+#: crypto.cpp:2293
+msgctxt "Personal certificate authority"
+msgid "Personal CA"
+msgstr "Nhà cầm quyền chứng nhận cá nhân"
+
+#: crypto.cpp:2294
+msgctxt "Secure MIME certificate authority"
+msgid "S/MIME CA"
+msgstr "Nhà cầm quyền chứng nhận S/MIME"
+
+#: crypto.cpp:2355
+#, fuzzy
+#| msgid "None"
+msgctxt "No Certificates on List"
+msgid "None"
+msgstr "Không có"
+
+#: kdatetimedlg.cpp:46
+#, fuzzy
+#| msgid "Date & Time Selector"
+msgctxt "Select Time and Date"
+msgid "Date & Time Selector"
+msgstr "Bộ chọn ngày và giờ"
+
+#: kdatetimedlg.cpp:51
+#, fuzzy
+#| msgid "Hour:"
+msgctxt "Set Hours of Time"
+msgid "Hour:"
+msgstr "Giờ :"
+
+#: kdatetimedlg.cpp:57
+#, fuzzy
+#| msgid "Minute:"
+msgctxt "Set Minutes of Time"
+msgid "Minute:"
+msgstr "Phút:"
+
+#: kdatetimedlg.cpp:63
+msgctxt "Set Seconds of Time"
+msgid "Second:"
+msgstr "Giây:"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nhóm Việt hoá KDE"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-l10n-vi@kde.org"
+
+#. i18n: file: certgen.ui:14
+#. i18n: ectx: property (windowTitle), widget (QDialog, D_GenCert)
+#: rc.cpp:5
+msgid "Certificate Creation Wizard"
+msgstr "Trợ lý tạo chứng nhận"
+
+#. i18n: file: certgen.ui:22
+#. i18n: ectx: property (text), widget (QLabel, T_CertType)
+#: rc.cpp:8
+msgid "Certificate type:"
+msgstr "Kiểu chứng nhận:"
+
+#. i18n: file: certgen.ui:32
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: rc.cpp:11
+msgid "Passphrase:"
+msgstr "Cụm từ mật khẩu:"
+
+#. i18n: file: certgen.ui:49
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
+#: rc.cpp:14
+msgid "Passphrase (verify):"
+msgstr "Cụm từ mật khẩu (thẩm tra):"
+
+#. i18n: file: certgen.ui:69
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: rc.cpp:17
+msgid "Country code:"
+msgstr "Mã quốc gia:"
+
+#. i18n: file: certgen.ui:83
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:20
+msgid "State or province (in full):"
+msgstr "Tiểu bang hay Tỉnh (đầy đủ):"
+
+#. i18n: file: certgen.ui:97
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:23
+msgid "City:"
+msgstr "Thành phố:"
+
+#. i18n: file: certgen.ui:111
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:26
+msgid "Organization name:"
+msgstr "Tên tổ chức:"
+
+#. i18n: file: certgen.ui:125
+#. i18n: ectx: property (text), widget (QLabel, TextLabel7)
+#: rc.cpp:29
+msgid "Organizational unit/group:"
+msgstr "Nhóm/đơn vị tổ chức:"
+
+#. i18n: file: certgen.ui:139
+#. i18n: ectx: property (text), widget (QLabel, TextLabel8)
+#: rc.cpp:32
+msgid "Full hostname of the server:"
+msgstr "Tên máy đầy đủ của máy phục vụ:"
+
+#. i18n: file: certgen.ui:153
+#. i18n: ectx: property (text), widget (QLabel, TextLabel9)
+#: rc.cpp:35
+msgid "Email address:"
+msgstr "Địa chỉ thư:"
+
+#. i18n: file: certgen.ui:167
+#. i18n: ectx: property (text), widget (QLabel, TextLabel10)
+#: rc.cpp:38
+msgid "Days valid:"
+msgstr "Số ngày hợp lệ:"
+
+#. i18n: file: certgen.ui:191
+#. i18n: ectx: property (text), widget (QCheckBox, CheckBox1)
+#: rc.cpp:41
+msgid "Self sign"
+msgstr "Tự ký"
+
+#. i18n: file: certgen.ui:201
+#. i18n: ectx: property (text), widget (QLabel, TextLabel11)
+#: rc.cpp:44
+msgid "Digest:"
+msgstr "Bản tóm tắt:"
+
+#. i18n: file: certgen.ui:211
+#. i18n: ectx: property (text), widget (QLabel, TextLabel12)
+#: rc.cpp:47
+msgid "Alias:"
+msgstr "Bí danh:"
+
+#. i18n: file: certgen.ui:221
+#. i18n: ectx: property (text), widget (QCheckBox, CheckBox2)
+#: rc.cpp:50
+msgid "Use DSA instead of RSA"
+msgstr "Dùng DSA thay cho RSA"
+
+#. i18n: file: certgen.ui:228
+#. i18n: ectx: property (text), widget (QLabel, TextLabel13)
+#: rc.cpp:53
+msgid "Bit strength:"
+msgstr "Độ mạnh bit:"
+
+#: crypto.h:187
+msgid "Don't Send"
+msgstr "Không gửi"
+
+#~ msgid "Default Authentication Certificate"
+#~ msgstr "Chứng nhận xác thực mặc định"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Use these preconfigurations to more easily configure the SSL "
+#~| "encryption settings. You can choose among the following modes: <ul>"
+#~ msgid ""
+#~ "<qt>Use these preconfigurations to more easily configure the SSL "
+#~ "encryption settings. You can choose among the following modes: </qt><ul>"
+#~ msgstr ""
+#~ "<qt>Dùng các cấu hình sẵn này để cấu hình dễ hơn các thiết lập mật mã "
+#~ "SSL. Bạn có thể chọn trong những chế độ này:<ul>"
+
+#~ msgid ""
+#~ "<li><b>Strong Ciphers Only:</b> Select only the strong (&gt;= 128 bit) "
+#~ "encryption ciphers.</li>"
+#~ msgstr ""
+#~ "<li><b>Chỉ mật mã mạnh:</b> Chọn chỉ những mật mã mạnh (≥128 bit).</li>"
+
+#~ msgid ""
+#~ "<li><b>Export Ciphers Only:</b> Select only the weak ciphers (&lt;= 56 "
+#~ "bit).</li>"
+#~ msgstr ""
+#~ "<li><b>Chỉ mật mã xuất:</b> Chọn chỉ những mật mã yếu (≤56 bit).</li>"
+
+#~ msgid "<li><b>Enable All:</b> Select all SSL ciphers and methods.</li></ul>"
+#~ msgstr ""
+#~ "<li><b>Bật tất cả :</b>Chọn mọi mật mã và phương thức của SSL.</li></ul>"
+
+# Name: don't translate / Tên: đừng dịch
+#~ msgid "kcmcrypto"
+#~ msgstr "kcmcrypto"

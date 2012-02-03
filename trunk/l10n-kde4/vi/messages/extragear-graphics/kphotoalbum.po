@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-02 03:29+0100\n"
+"POT-Creation-Date: 2012-02-03 03:28+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -613,31 +613,6 @@ msgctxt ""
 msgid "No other %1"
 msgstr "Không có gì khác"
 
-#: DB/NewImageFinder.cpp:121
-msgid ""
-"<p><b>Loading information from new files</b></p><p>Depending on the number "
-"of images, this may take some time.<br/>However, there is only a delay when "
-"new images are found.</p>"
-msgstr ""
-"<p><p><b>Đang nạp thông tin từ các tập tin mới</b></p><p>Phụ thuộc vào tổng "
-"số ảnh, việc này có thể kéo dài một lát.<br/>Tuy nhiên, chỉ chạy trễ khi tìm "
-"ảnh mới.</p></p>"
-
-#: DB/NewImageFinder.cpp:281
-#, kde-format
-msgid ""
-"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
-"each image KPhotoAlbum is capable of finding images even when you have moved "
-"them on the disk.</p>"
-msgstr ""
-"<p><p><b>Đang tính tổng kiểm tra cho %1 tập tin<b></p><p>Bằng cách cất giữ "
-"một tổng kiểm tra (checksum) riêng cho mỗi ảnh, KPhotoAlbum có khả năng tìm "
-"ảnh ngay cả khi bạn đã di chuyển nó vào vị trí khác trên đĩa.</p></p>"
-
-#: DB/NewImageFinder.cpp:325
-msgid "Following files could not be read:"
-msgstr ""
-
 #: DB/Category.cpp:139 DB/Category.cpp:147 XMLDB/FileReader.cpp:349
 msgid "People"
 msgstr "Người"
@@ -683,6 +658,31 @@ msgstr "Găp lỗi khi lưu ảnh « %1 »."
 #: DB/Category.cpp:205
 msgid "Error Saving Image"
 msgstr "Gặp lỗi khi lưu ảnh"
+
+#: DB/NewImageFinder.cpp:126
+msgid ""
+"<p><b>Loading information from new files</b></p><p>Depending on the number "
+"of images, this may take some time.<br/>However, there is only a delay when "
+"new images are found.</p>"
+msgstr ""
+"<p><p><b>Đang nạp thông tin từ các tập tin mới</b></p><p>Phụ thuộc vào tổng "
+"số ảnh, việc này có thể kéo dài một lát.<br/>Tuy nhiên, chỉ chạy trễ khi tìm "
+"ảnh mới.</p></p>"
+
+#: DB/NewImageFinder.cpp:286
+#, kde-format
+msgid ""
+"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
+"each image KPhotoAlbum is capable of finding images even when you have moved "
+"them on the disk.</p>"
+msgstr ""
+"<p><p><b>Đang tính tổng kiểm tra cho %1 tập tin<b></p><p>Bằng cách cất giữ "
+"một tổng kiểm tra (checksum) riêng cho mỗi ảnh, KPhotoAlbum có khả năng tìm "
+"ảnh ngay cả khi bạn đã di chuyển nó vào vị trí khác trên đĩa.</p></p>"
+
+#: DB/NewImageFinder.cpp:330
+msgid "Following files could not be read:"
+msgstr ""
 
 #: DateBar/DateBarWidget.cpp:81
 msgid "Widen selection to include all images and videos again"
@@ -3137,107 +3137,6 @@ msgstr ""
 "ảnh sẽ được hiển thị tự động. Sự chọn xen kẽ là tiếp tục hiển thị bộ duyệt "
 "cho đến khi bạn bấm cái nút <b>Hiện ảnh</b>.</p>"
 
-#: Settings/FileVersionDetectionPage.cpp:36
-msgid "New File Searches"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:40
-msgid "Search for new images and videos on startup"
-msgstr "Tìm kiếm ảnh (động) mới khi khởi chạy"
-
-#: Settings/FileVersionDetectionPage.cpp:41
-#, fuzzy
-#| msgid "Don't read RAW files if matching JPEG/TIFF file exists"
-msgid "Do not read RAW files if a matching JPEG/TIFF file exists"
-msgstr "Đừng đọc tập tin RAW nếu tập tin JPEG/TIFF tồn tại"
-
-#: Settings/FileVersionDetectionPage.cpp:44
-msgid "Directories to exclude from new file search:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:49
-msgid "File Version Detection Settings"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:52
-msgid "Try to detect multiple versions of files"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:54
-msgid "File versions search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:57
-msgid "Original file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:60
-msgid "Move meta-data (i.e. delete tags from the original):"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:62
-msgid "Auto-stack new files on top of old"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:65
-msgctxt ""
-"Configure the feature to make a copy of a file first and then open the "
-"copied file with an external application"
-msgid "Copy File and Open with an External Application"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:68
-msgid "Copy file search regexp:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:71
-msgid "Copy file replacement text:"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:75
-msgid ""
-"<p>KPhotoAlbum is capable of searching for new images and videos when "
-"started, this does, however, take some time, so instead you may wish to "
-"manually tell KPhotoAlbum to search for new images using <b>Maintenance-"
-">Rescan for new images</b></p>"
-msgstr ""
-"<p>KPhotoAlbum có khả năng tìm kiếm ảnh và ảnh động mới khi nó được khởi "
-"chạy. Tuy nhiên, việc này có thể kéo dài một lát, vì vậy bạn có lẽ sẽ muốn "
-"tự báo KPhotoAlbum tìm kiếm ảnh mới bằng lệnh <b>Bảo trì > Quét lại tìm ảnh "
-"mới</b></p>"
-
-#: Settings/FileVersionDetectionPage.cpp:80
-msgid ""
-"<p>KPhotoAlbum is capable of reading certain kinds of RAW images.  Some "
-"cameras store both a RAW image and a matching JPEG or TIFF image.  This "
-"causes duplicate images to be stored in KPhotoAlbum, which may be "
-"undesirable.  If this option is checked, KPhotoAlbum will not read RAW files "
-"for which matching image files also exist.</p>"
-msgstr ""
-"<p>Trình KPhotoAlbum có khả năng đọc một số kiểu ảnh RAW nào đó. Một số máy "
-"ảnh riêng có lưu cả ảnh RAW lẫn ảnh JPEG hay TIFF khớp. Trường hợp này gây "
-"ra các ảnh trùng được cất giữ trong KPhotoAlbum, mà có thể không có ích. Nếu "
-"mục này được chọn, KPhotoAlbum sẽ không đọc tập tin RAW cho đó cũng có tập "
-"tin ảnh khớp.</p>"
-
-#: Settings/FileVersionDetectionPage.cpp:86
-msgid ""
-"<p>When KPhotoAlbum searches for new files and finds a file that matches the "
-"<i>modified file search regexp</i> it is assumed that an original version of "
-"the image may exist.  The regexp pattern will be replaced with the "
-"<i>original file string</i> text and if that file exists, all associated "
-"metadata (category information, ratings, etc) will be copied from the "
-"original file to the new one.</p>"
-msgstr ""
-
-#: Settings/FileVersionDetectionPage.cpp:95
-msgid ""
-"<p>KPhotoAlbum can make a copy of an image before opening it with an "
-"external program.  These settings set the original regexp to search for and "
-"contents to replace it with when deciding what the new filename should be.</"
-"p>"
-msgstr ""
-
 #: Settings/SettingsDialog.cpp:67
 #, fuzzy
 #| msgid "Version %1"
@@ -3424,20 +3323,6 @@ msgstr ""
 msgid "Show the KPhotoAlbum splash screen on start up"
 msgstr "Hiện màn hình giật gân KPhotoAlbum khi khởi chạy"
 
-#: Settings/SettingsData.cpp:198
-msgid ""
-"When reading time information of images, their EXIF info is used. Exif info "
-"may, however, not be supported by your KPhotoAlbum installation, or no valid "
-"information may be in the file. As a backup, KPhotoAlbum may use the "
-"timestamp of the image - this may, however, not be valid in case the image "
-"is scanned in. So the question is, should KPhotoAlbum trust the time stamp "
-"on your images?"
-msgstr ""
-
-#: Settings/SettingsData.cpp:204
-msgid "Trust Time Stamps?"
-msgstr "Theo nhãn thời gian ?"
-
 #: Settings/CategoryItem.cpp:121
 msgid ""
 "<p>Due to a shortcoming in KPhotoAlbum, you need to save your database after "
@@ -3532,6 +3417,135 @@ msgstr "Thiết lập co sở dữ liệu SQL"
 #| "Warning! The password is saved as plain text to the configuration file."
 msgid "Warning: The password is saved as plain text to the configuration file."
 msgstr "Cảnh báo ! Mật khẩu được lưu dạng nhập thô vào tập tin cấu hình."
+
+#: Settings/SettingsData.cpp:199
+msgid ""
+"When reading time information of images, their EXIF info is used. Exif info "
+"may, however, not be supported by your KPhotoAlbum installation, or no valid "
+"information may be in the file. As a backup, KPhotoAlbum may use the "
+"timestamp of the image - this may, however, not be valid in case the image "
+"is scanned in. So the question is, should KPhotoAlbum trust the time stamp "
+"on your images?"
+msgstr ""
+
+#: Settings/SettingsData.cpp:205
+msgid "Trust Time Stamps?"
+msgstr "Theo nhãn thời gian ?"
+
+#: Settings/FileVersionDetectionPage.cpp:36
+msgid "New File Searches"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:40
+msgid "Search for new images and videos on startup"
+msgstr "Tìm kiếm ảnh (động) mới khi khởi chạy"
+
+#: Settings/FileVersionDetectionPage.cpp:41
+msgid "Skip symbolic links when searching for new images"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:42
+#, fuzzy
+#| msgid "Don't read RAW files if matching JPEG/TIFF file exists"
+msgid "Do not read RAW files if a matching JPEG/TIFF file exists"
+msgstr "Đừng đọc tập tin RAW nếu tập tin JPEG/TIFF tồn tại"
+
+#: Settings/FileVersionDetectionPage.cpp:45
+msgid "Directories to exclude from new file search:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:50
+msgid "File Version Detection Settings"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:53
+msgid "Try to detect multiple versions of files"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:55
+msgid "File versions search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:58
+msgid "Original file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:61
+msgid "Move meta-data (i.e. delete tags from the original):"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:63
+msgid "Auto-stack new files on top of old"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:66
+msgctxt ""
+"Configure the feature to make a copy of a file first and then open the "
+"copied file with an external application"
+msgid "Copy File and Open with an External Application"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:69
+msgid "Copy file search regexp:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:72
+msgid "Copy file replacement text:"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:76
+msgid ""
+"<p>KPhotoAlbum is capable of searching for new images and videos when "
+"started, this does, however, take some time, so instead you may wish to "
+"manually tell KPhotoAlbum to search for new images using <b>Maintenance-"
+">Rescan for new images</b></p>"
+msgstr ""
+"<p>KPhotoAlbum có khả năng tìm kiếm ảnh và ảnh động mới khi nó được khởi "
+"chạy. Tuy nhiên, việc này có thể kéo dài một lát, vì vậy bạn có lẽ sẽ muốn "
+"tự báo KPhotoAlbum tìm kiếm ảnh mới bằng lệnh <b>Bảo trì > Quét lại tìm ảnh "
+"mới</b></p>"
+
+#: Settings/FileVersionDetectionPage.cpp:81
+msgid ""
+"<p>KPhotoAlbum attempts to read all image files whether actual files or "
+"symbolic links. If you wish to ignore symbolic links, check this option. "
+"This is useful if for some reason you have e.g. both the original files and "
+"and symbolic links to these files within your image directory.</p>"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:86
+msgid ""
+"<p>KPhotoAlbum is capable of reading certain kinds of RAW images.  Some "
+"cameras store both a RAW image and a matching JPEG or TIFF image.  This "
+"causes duplicate images to be stored in KPhotoAlbum, which may be "
+"undesirable.  If this option is checked, KPhotoAlbum will not read RAW files "
+"for which matching image files also exist.</p>"
+msgstr ""
+"<p>Trình KPhotoAlbum có khả năng đọc một số kiểu ảnh RAW nào đó. Một số máy "
+"ảnh riêng có lưu cả ảnh RAW lẫn ảnh JPEG hay TIFF khớp. Trường hợp này gây "
+"ra các ảnh trùng được cất giữ trong KPhotoAlbum, mà có thể không có ích. Nếu "
+"mục này được chọn, KPhotoAlbum sẽ không đọc tập tin RAW cho đó cũng có tập "
+"tin ảnh khớp.</p>"
+
+#: Settings/FileVersionDetectionPage.cpp:92
+msgid ""
+"<p>When KPhotoAlbum searches for new files and finds a file that matches the "
+"<i>modified file search regexp</i> it is assumed that an original version of "
+"the image may exist.  The regexp pattern will be replaced with the "
+"<i>original file string</i> text and if that file exists, all associated "
+"metadata (category information, ratings, etc) will be copied from the "
+"original file to the new one.</p>"
+msgstr ""
+
+#: Settings/FileVersionDetectionPage.cpp:101
+msgid ""
+"<p>KPhotoAlbum can make a copy of an image before opening it with an "
+"external application. This configuration defines how the new file is named.</"
+"p><p>The regular expression defines the part of the original file name that "
+"is replaced with the <i>replacement text</i>. E.g. regexp <i>\"\\.(jpg|"
+"png)\"</i> and replacement text <i>\"-mod.\\1\"</i> would copy test.jpg to "
+"test-mod.jpg and open the new file in selected application.</p>"
+msgstr ""
 
 #: ThumbnailView/ThumbnailDND.cpp:89
 #, fuzzy

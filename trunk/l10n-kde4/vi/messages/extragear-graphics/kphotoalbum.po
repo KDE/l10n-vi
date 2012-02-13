@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-11 02:52+0100\n"
+"POT-Creation-Date: 2012-02-13 03:16+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -588,15 +588,15 @@ msgstr "th11"
 msgid "dec"
 msgstr "th12"
 
-#: DB/Category.cpp:139 DB/Category.cpp:147 XMLDB/FileReader.cpp:349
+#: DB/Category.cpp:139 DB/Category.cpp:147 XMLDB/FileReader.cpp:350
 msgid "People"
 msgstr "Người"
 
-#: DB/Category.cpp:140 DB/Category.cpp:148 XMLDB/FileReader.cpp:350
+#: DB/Category.cpp:140 DB/Category.cpp:148 XMLDB/FileReader.cpp:351
 msgid "Places"
 msgstr "Nơi"
 
-#: DB/Category.cpp:141 XMLDB/FileReader.cpp:351
+#: DB/Category.cpp:141 XMLDB/FileReader.cpp:352
 msgid "Events"
 msgstr ""
 
@@ -634,31 +634,6 @@ msgstr "Găp lỗi khi lưu ảnh « %1 »."
 msgid "Error Saving Image"
 msgstr "Gặp lỗi khi lưu ảnh"
 
-#: DB/NewImageFinder.cpp:126
-msgid ""
-"<p><b>Loading information from new files</b></p><p>Depending on the number "
-"of images, this may take some time.<br/>However, there is only a delay when "
-"new images are found.</p>"
-msgstr ""
-"<p><p><b>Đang nạp thông tin từ các tập tin mới</b></p><p>Phụ thuộc vào tổng "
-"số ảnh, việc này có thể kéo dài một lát.<br/>Tuy nhiên, chỉ chạy trễ khi tìm "
-"ảnh mới.</p></p>"
-
-#: DB/NewImageFinder.cpp:286
-#, kde-format
-msgid ""
-"<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum for "
-"each image KPhotoAlbum is capable of finding images even when you have moved "
-"them on the disk.</p>"
-msgstr ""
-"<p><p><b>Đang tính tổng kiểm tra cho %1 tập tin<b></p><p>Bằng cách cất giữ "
-"một tổng kiểm tra (checksum) riêng cho mỗi ảnh, KPhotoAlbum có khả năng tìm "
-"ảnh ngay cả khi bạn đã di chuyển nó vào vị trí khác trên đĩa.</p></p>"
-
-#: DB/NewImageFinder.cpp:330
-msgid "Following files could not be read:"
-msgstr ""
-
 #: DB/ImageSearchInfo.cpp:217
 #, fuzzy, kde-format
 #| msgid "Show %1"
@@ -684,33 +659,39 @@ msgctxt ""
 msgid "No other %1"
 msgstr "Không có gì khác"
 
-#: DateBar/DateBarWidget.cpp:81
-msgid "Widen selection to include all images and videos again"
-msgstr "Mở rộng vùng chọn để chứa mọi ảnh và ảnh động lần nữa"
+#: DB/NewImageFinder.cpp:126
+msgid ""
+"<p><b>Loading information from new files</b></p><p>Depending on the number "
+"of images, this may take some time.<br/>However, there is only a delay when "
+"new images are found.</p>"
+msgstr ""
+"<p><p><b>Đang nạp thông tin từ các tập tin mới</b></p><p>Phụ thuộc vào tổng "
+"số ảnh, việc này có thể kéo dài một lát.<br/>Tuy nhiên, chỉ chạy trễ khi tìm "
+"ảnh mới.</p></p>"
 
-#: DateBar/DateBarWidget.cpp:511
-msgid "Show Ranges"
-msgstr "Hiện phạm vị"
-
-#: DateBar/DateBarWidget.cpp:517
-msgid "Show Resolution Indicator"
-msgstr "Hiện cái chỉ độ phân giải"
-
-#: DateBar/DateBarWidget.cpp:635
+#: DB/NewImageFinder.cpp:286
 #, kde-format
-msgid "%1 exact + %2 ranges = %3 total"
-msgstr "%1 chính xác + %2 phạm vị = %3 tổng"
+msgid "<p><b>Calculating checksum for %1 file<b></p>"
+msgid_plural "<p><b>Calculating checksums for %1 files<b></p>"
+msgstr[0] ""
 
-#: DateBar/DateBarWidget.cpp:637
-#, kde-format
-msgid "%1 images/videos"
-msgstr "%1 ảnh (động)"
+#: DB/NewImageFinder.cpp:287
+#, fuzzy
+#| msgid ""
+#| "<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum "
+#| "for each image KPhotoAlbum is capable of finding images even when you "
+#| "have moved them on the disk.</p>"
+msgid ""
+"<p>By storing a checksum for each image KPhotoAlbum is capable of finding "
+"images even when you have moved them on the disk.</p>"
+msgstr ""
+"<p><p><b>Đang tính tổng kiểm tra cho %1 tập tin<b></p><p>Bằng cách cất giữ "
+"một tổng kiểm tra (checksum) riêng cho mỗi ảnh, KPhotoAlbum có khả năng tìm "
+"ảnh ngay cả khi bạn đã di chuyển nó vào vị trí khác trên đĩa.</p></p>"
 
-#: DateBar/DateBarWidget.cpp:639
-#, fuzzy, kde-format
-#| msgid "%1 (by %2)"
-msgid "%1 | %2"
-msgstr "%1 (của %2)"
+#: DB/NewImageFinder.cpp:330
+msgid "Following files could not be read:"
+msgstr ""
 
 #: DateBar/ViewHandler.cpp:129
 msgid "1 Year"
@@ -735,6 +716,49 @@ msgstr "2 giờ"
 #: DateBar/ViewHandler.cpp:308
 msgid "10 Minutes"
 msgstr "10 phút"
+
+#: DateBar/DateBarWidget.cpp:81
+msgid "Widen selection to include all images and videos again"
+msgstr "Mở rộng vùng chọn để chứa mọi ảnh và ảnh động lần nữa"
+
+#: DateBar/DateBarWidget.cpp:511
+msgid "Show Ranges"
+msgstr "Hiện phạm vị"
+
+#: DateBar/DateBarWidget.cpp:517
+msgid "Show Resolution Indicator"
+msgstr "Hiện cái chỉ độ phân giải"
+
+#: DateBar/DateBarWidget.cpp:635
+#, kde-format
+msgid "1 exact"
+msgid_plural "%1 exact"
+msgstr[0] ""
+
+#: DateBar/DateBarWidget.cpp:636
+#, kde-format
+msgid " + 1 range"
+msgid_plural " + %1 ranges"
+msgstr[0] ""
+
+#: DateBar/DateBarWidget.cpp:637
+#, kde-format
+msgid " = 1 total"
+msgid_plural " = %1 total"
+msgstr[0] ""
+
+#: DateBar/DateBarWidget.cpp:639
+#, fuzzy, kde-format
+#| msgid "%1 images/videos"
+msgid "%1 image/video"
+msgid_plural "%1 images/videos"
+msgstr[0] "%1 ảnh (động)"
+
+#: DateBar/DateBarWidget.cpp:641
+#, fuzzy, kde-format
+#| msgid "%1 (by %2)"
+msgid "%1 | %2"
+msgstr "%1 (của %2)"
 
 #: Exif/Database.cpp:77
 #, kde-format
@@ -3651,7 +3675,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
 #: Utilities/Util.cpp:257 Utilities/Util.cpp:271 Utilities/Util.cpp:289
-#: Utilities/Util.cpp:306 XMLDB/FileReader.cpp:360
+#: Utilities/Util.cpp:306 XMLDB/FileReader.cpp:361
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy chứng minh"
 
@@ -3714,50 +3738,6 @@ msgstr ""
 #| msgid "Error Saving Image"
 msgid "Error playing media"
 msgstr "Gặp lỗi khi lưu ảnh"
-
-#: Viewer/VisibleOptionsMenu.cpp:33
-#, fuzzy
-#| msgid "Show"
-msgid "Show..."
-msgstr "Hiện"
-
-#: Viewer/VisibleOptionsMenu.cpp:36
-msgid "Show"
-msgstr "Hiện"
-
-#: Viewer/VisibleOptionsMenu.cpp:40
-msgid "Show Info Box"
-msgstr "Hiện hộp thông tin"
-
-#: Viewer/VisibleOptionsMenu.cpp:46
-#, fuzzy
-#| msgid "Show Date"
-msgid "Show Label"
-msgstr "Hiện ngày"
-
-#: Viewer/VisibleOptionsMenu.cpp:52
-msgid "Show Description"
-msgstr "Hiện mô tả"
-
-#: Viewer/VisibleOptionsMenu.cpp:58
-msgid "Show Date"
-msgstr "Hiện ngày"
-
-#: Viewer/VisibleOptionsMenu.cpp:63
-msgid "Show Time"
-msgstr "Hiện giờ"
-
-#: Viewer/VisibleOptionsMenu.cpp:68
-msgid "Show Filename"
-msgstr "Hiện tên tập tin"
-
-#: Viewer/VisibleOptionsMenu.cpp:73
-msgid "Show EXIF"
-msgstr "Hiện EXIF"
-
-#: Viewer/VisibleOptionsMenu.cpp:78
-msgid "Show Image Size"
-msgstr "Hiện cỡ ảnh"
 
 #: Viewer/ViewerWidget.cpp:146
 msgid "Annotate..."
@@ -4037,10 +4017,68 @@ msgstr ""
 msgid "[ zoom x%1 ]"
 msgstr "[ thu/phóng x%1 ]"
 
+#: Viewer/VisibleOptionsMenu.cpp:33
+#, fuzzy
+#| msgid "Show"
+msgid "Show..."
+msgstr "Hiện"
+
+#: Viewer/VisibleOptionsMenu.cpp:36
+msgid "Show"
+msgstr "Hiện"
+
+#: Viewer/VisibleOptionsMenu.cpp:40
+msgid "Show Info Box"
+msgstr "Hiện hộp thông tin"
+
+#: Viewer/VisibleOptionsMenu.cpp:46
+#, fuzzy
+#| msgid "Show Date"
+msgid "Show Label"
+msgstr "Hiện ngày"
+
+#: Viewer/VisibleOptionsMenu.cpp:52
+msgid "Show Description"
+msgstr "Hiện mô tả"
+
+#: Viewer/VisibleOptionsMenu.cpp:58
+msgid "Show Date"
+msgstr "Hiện ngày"
+
+#: Viewer/VisibleOptionsMenu.cpp:63
+msgid "Show Time"
+msgstr "Hiện giờ"
+
+#: Viewer/VisibleOptionsMenu.cpp:69
+msgid "Show Filename"
+msgstr "Hiện tên tập tin"
+
+#: Viewer/VisibleOptionsMenu.cpp:74
+msgid "Show EXIF"
+msgstr "Hiện EXIF"
+
+#: Viewer/VisibleOptionsMenu.cpp:79
+msgid "Show Image Size"
+msgstr "Hiện cỡ ảnh"
+
 #: XMLDB/NumberedBackup.cpp:40
 #, kde-format
 msgid "Error creating zip file %1"
 msgstr "Gặp lỗi khi tạo tập tin zip %1"
+
+#: XMLDB/FileWriter.cpp:64
+#, kde-format
+msgid "Could not open file '%1'."
+msgstr "Không thể mở tập tin « %1 »."
+
+#: XMLDB/Database.cpp:624
+#, kde-format
+msgid ""
+"<p>Unknown tag %1, while reading configuration file.</p><p>Expected one of: "
+"Options, Drawings</p>"
+msgstr ""
+"<p>Gặp thẻ lạ %1 trong khi đọc tập tin cấu hình.</p><p>Yêu cầu một của: Tùy "
+"chọn, Bản vẽ</p>"
 
 #: XMLDB/FileReader.cpp:81
 #, kde-format
@@ -4079,7 +4117,8 @@ msgid ""
 "their EXIF data or on the file, and execute <b>Maintenance->Read EXIF Info</"
 "b> to reread the information.</p><p>Finally, once all images have their "
 "dates set, you can execute <b>Images->Sort Selected by Date & Time</b> to "
-"sort them in the database.</p>"
+"sort them in the database. Note that you should expand all stacks for "
+"sorting.</p>"
 msgstr ""
 "<p>Các ảnh của bạn chưa được sắp xếp, vì vậy việc duyệt qua bằng thanh ngày "
 "tháng sẽ chỉ hoạt động ở mức dưới tối ưu.</p><p>Trong trình đơn <b>Bảo trì</"
@@ -4090,7 +4129,7 @@ msgstr ""
 "có ngày tháng được đặt, bạn có thể thực hiện <b>Ảnh > Sắp điều đã chọn theo "
 "Ngày và Giờ</b> để sắp xếp chúng trong co sở dữ liệu.</p>"
 
-#: XMLDB/FileReader.cpp:274
+#: XMLDB/FileReader.cpp:275
 msgid ""
 "<p>Your images/videos are not sorted, which means that navigating using the "
 "date bar will only work suboptimally.</p><p>You also do not have EXIF "
@@ -4100,11 +4139,11 @@ msgid ""
 "to do to correct all the missing information.</p>"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:281
+#: XMLDB/FileReader.cpp:282
 msgid "Images/Videos Are Not Sorted"
 msgstr "Chưa sắp xếp các Ảnh (động)"
 
-#: XMLDB/FileReader.cpp:296
+#: XMLDB/FileReader.cpp:297
 msgid ""
 "<p>Not all the images in the database have information about image sizes; "
 "this is needed to get the best result in the thumbnail view. To fix this, "
@@ -4120,11 +4159,11 @@ msgstr ""
 "ảnh</b>.</p><p>Không thì các ảnh trong ô xem mẫu ảnh sẽ chỉ có độ đệm thêm "
 "chung quanh. Không phải là vấn đề nghiêm trọng.</p>"
 
-#: XMLDB/FileReader.cpp:301
+#: XMLDB/FileReader.cpp:302
 msgid "Not All Images Have Size Information"
 msgstr "Không phải tất cả các ảnh có thông tin kích cỡ"
 
-#: XMLDB/FileReader.cpp:311
+#: XMLDB/FileReader.cpp:312
 msgid ""
 "<p>The index.xml file read was from an older version of KPhotoAlbum. "
 "KPhotoAlbum read the old format without problems, but to be able to convert "
@@ -4137,11 +4176,11 @@ msgstr ""
 "bằng cờ <tt>export-in-2.1-format</tt> (xuất khẩu theo định dạng 2.1), rồi "
 "lưu.</p>"
 
-#: XMLDB/FileReader.cpp:315
+#: XMLDB/FileReader.cpp:316
 msgid "Old File Format read"
 msgstr "Đọc định dạng tập tin cũ"
 
-#: XMLDB/FileReader.cpp:336
+#: XMLDB/FileReader.cpp:337
 msgid ""
 "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
 "installation error</p><p>If you have installed KPhotoAlbum yourself, then "
@@ -4163,45 +4202,31 @@ msgstr ""
 "phụ thêm chuỗi như khi đặt biến môi trường đường dẫn mặc định <b>PATH</b>.</"
 "p>"
 
-#: XMLDB/FileReader.cpp:343
+#: XMLDB/FileReader.cpp:344
 msgid "No default setup file found"
 msgstr "Không tìm thấy tập tin thiết lập mặc định nào"
 
-#: XMLDB/FileReader.cpp:360
+#: XMLDB/FileReader.cpp:361
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "Không thể mở « %1 » để đọc"
 
-#: XMLDB/FileReader.cpp:369
+#: XMLDB/FileReader.cpp:370
 #, kde-format
 msgid "Error on line %1 column %2 in file %3: %4"
 msgstr "Gặp lỗi trên dòng %1, cột %2, trong tập tin %3: %4"
 
-#: XMLDB/FileReader.cpp:377
+#: XMLDB/FileReader.cpp:378
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "Gặp lỗi trong tập tin %1: không tìm thấy yếu tố nào"
 
-#: XMLDB/FileReader.cpp:383
+#: XMLDB/FileReader.cpp:384
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr ""
 "Gặp lỗi trong tập tin %1: yêu cầu « KPhotoAlbum » là yếu tố đầu, còn tìm « "
 "%2 »"
-
-#: XMLDB/FileWriter.cpp:64
-#, kde-format
-msgid "Could not open file '%1'."
-msgstr "Không thể mở tập tin « %1 »."
-
-#: XMLDB/Database.cpp:624
-#, kde-format
-msgid ""
-"<p>Unknown tag %1, while reading configuration file.</p><p>Expected one of: "
-"Options, Drawings</p>"
-msgstr ""
-"<p>Gặp thẻ lạ %1 trong khi đọc tập tin cấu hình.</p><p>Yêu cầu một của: Tùy "
-"chọn, Bản vẽ</p>"
 
 #: main.cpp:41
 msgid "KPhotoAlbum"
@@ -4653,6 +4678,9 @@ msgid ""
 msgstr ""
 "<p>Đây là mẹo cuối cùng. Nếu bạn biết mẹo thêm, vui lòng gởi thư cho địa chỉ "
 "<a href=\"mailto:blackie@kde.org\">blackie@kde.org</a>.</p>\n"
+
+#~ msgid "%1 exact + %2 ranges = %3 total"
+#~ msgstr "%1 chính xác + %2 phạm vị = %3 tổng"
 
 #~ msgid "%1 (by %2)"
 #~ msgstr "%1 (của %2)"

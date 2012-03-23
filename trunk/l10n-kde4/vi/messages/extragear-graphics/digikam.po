@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-20 03:39+0100\n"
+"POT-Creation-Date: 2012-03-23 03:10+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -6753,41 +6753,6 @@ msgstr "Không tìm thấy tập ảnh đích %1 trong cơ sở dữ liệu"
 msgid "Source image %1 not found in database"
 msgstr "Không tìm thấy ảnh nguồn %1 trong cơ sở dữ liệu"
 
-#: libs/database/databaseconfigelement.cpp:223
-msgid ""
-"Could not open the dbconfig.xml file. This file is installed with the "
-"digikam application and is absolutely required to run digikam. Please check "
-"your installation."
-msgstr ""
-
-#: libs/database/databaseconfigelement.cpp:232
-#, kde-format
-msgid "Could not open dbconfig.xml file <filename>%1</filename>"
-msgstr ""
-
-#: libs/database/databaseconfigelement.cpp:241
-#, kde-format
-msgid ""
-"The XML in the dbconfig.xml file <filename>%1</filename> is invalid and "
-"cannot be read."
-msgstr ""
-
-#: libs/database/databaseconfigelement.cpp:251
-#: libs/database/databaseconfigelement.cpp:261
-#, kde-format
-msgid ""
-"The XML in the dbconfig.xml file <filename>%1</filename> is missing the "
-"required element <icode>%2</icode>"
-msgstr ""
-
-#: libs/database/databaseconfigelement.cpp:278
-#, kde-format
-msgid ""
-"An old version of the dbconfig.xml file <filename>%1</filename> is found. "
-"Please ensure that the version released with the running version of digiKam "
-"is installed. "
-msgstr ""
-
 #: libs/database/collectionmanager.cpp:616
 #, kde-format
 msgctxt "\"relative path\" on harddisk partition with \"UUID\""
@@ -6979,7 +6944,7 @@ msgid ""
 msgstr ""
 
 #: libs/database/schemaupdater.cpp:311
-#: libs/database/thumbnailschemaupdater.cpp:173
+#: libs/database/core/thumbnailschemaupdater.cpp:173
 #, fuzzy
 #| msgid ""
 #| "Failed to create tables on database.\n"
@@ -7176,14 +7141,49 @@ msgctxt "RAW image file (), the parentheses contain the file suffix, like MRW"
 msgid "RAW image file (%1)"
 msgstr "Hiện tên tập tin ảnh"
 
-#: libs/database/thumbnaildatabaseaccess.cpp:194
+#: libs/database/core/databaseconfigelement.cpp:223
+msgid ""
+"Could not open the dbconfig.xml file. This file is installed with the "
+"digikam application and is absolutely required to run digikam. Please check "
+"your installation."
+msgstr ""
+
+#: libs/database/core/databaseconfigelement.cpp:232
+#, kde-format
+msgid "Could not open dbconfig.xml file <filename>%1</filename>"
+msgstr ""
+
+#: libs/database/core/databaseconfigelement.cpp:241
+#, kde-format
+msgid ""
+"The XML in the dbconfig.xml file <filename>%1</filename> is invalid and "
+"cannot be read."
+msgstr ""
+
+#: libs/database/core/databaseconfigelement.cpp:251
+#: libs/database/core/databaseconfigelement.cpp:261
+#, kde-format
+msgid ""
+"The XML in the dbconfig.xml file <filename>%1</filename> is missing the "
+"required element <icode>%2</icode>"
+msgstr ""
+
+#: libs/database/core/databaseconfigelement.cpp:278
+#, kde-format
+msgid ""
+"An old version of the dbconfig.xml file <filename>%1</filename> is found. "
+"Please ensure that the version released with the running version of digiKam "
+"is installed. "
+msgstr ""
+
+#: libs/database/core/thumbnaildatabaseaccess.cpp:194
 #: libs/database/databaseaccess.cpp:251
 msgid ""
 "The driver \"SQLITE\" for SQLite3 databases is not available.\n"
 "digiKam depends on the drivers provided by the SQL module of Qt4."
 msgstr ""
 
-#: libs/database/thumbnaildatabaseaccess.cpp:218
+#: libs/database/core/thumbnaildatabaseaccess.cpp:218
 #: libs/database/databaseaccess.cpp:288
 msgid ""
 "Error opening database backend.\n"
@@ -7192,7 +7192,7 @@ msgstr ""
 "Gặp lỗi khi mở hậu phương cơ sở dữ liệu.\n"
 " "
 
-#: libs/database/thumbnailschemaupdater.cpp:113
+#: libs/database/core/thumbnailschemaupdater.cpp:113
 #, fuzzy
 #| msgid ""
 #| "The database is not valid: The \"DBVersion\" setting does not exist. The "
@@ -7207,7 +7207,7 @@ msgstr ""
 "liệu) không tồn tại. Vì thế không thể thẩm tra phiên bản giản đồ cơ sở dữ "
 "liệu hiện thời. Thử bắt đầu với cơ sở dữ liệu trống."
 
-#: libs/database/thumbnailschemaupdater.cpp:144
+#: libs/database/core/thumbnailschemaupdater.cpp:144
 msgid ""
 "The database has been used with a more recent version of digiKam and has "
 "been updated to a database schema which cannot be used with this version. "

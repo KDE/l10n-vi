@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-02 04:21+0200\n"
+"POT-Creation-Date: 2012-04-04 04:27+0200\n"
 "PO-Revision-Date: 2007-06-24 15:01+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -312,17 +312,27 @@ msgstr "Gửi thư cho..."
 msgid "Copy Email Address"
 msgstr "Chép địa chỉ thư"
 
-#: HistorySizeDialog.cpp:41
+#: HistorySizeDialog.cpp:32
 #, fuzzy
 #| msgid "No scrollback"
+msgctxt "@title:window"
 msgid "Adjust Scrollback"
 msgstr "Không cuộn ngược"
 
-#: HistorySizeDialog.cpp:52
-msgid "<center>The adjustment is only temporary</center>"
+#: HistorySizeDialog.cpp:45
+msgctxt "@info:status"
+msgid "Any adjustments are only temporary to this session."
 msgstr ""
 
-#: HistorySizeWidget.cpp:51
+#: HistorySizeWidget.cpp:44
+msgctxt "@info:status"
+msgid ""
+"When using this option, the scrollback data will be written unencrypted to "
+"temporary files. Those temporary files will be deleted automatically when "
+"quitting Konsole."
+msgstr ""
+
+#: HistorySizeWidget.cpp:60
 #, fuzzy
 #| msgid "lines"
 msgctxt "Unit of scrollback"
@@ -1568,7 +1578,7 @@ msgstr "Đặt hồ sơ đã chọn làm mặc định cho các phiên chạy th
 msgid "&Set as Default"
 msgstr "Làm mặc định"
 
-#. i18n: file: HistorySizeWidget.ui:23
+#. i18n: file: HistorySizeWidget.ui:29
 #. i18n: ectx: property (toolTip), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:341
 #, fuzzy
@@ -1576,19 +1586,19 @@ msgstr "Làm mặc định"
 msgid "Do not remember previous output"
 msgstr "Tắt thanh cuộn và không nhớ kết xuất trước"
 
-#. i18n: file: HistorySizeWidget.ui:26
+#. i18n: file: HistorySizeWidget.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, noHistoryButton)
 #: rc.cpp:344
 msgid "No scrollback"
 msgstr "Không cuộn ngược"
 
-#. i18n: file: HistorySizeWidget.ui:41
+#. i18n: file: HistorySizeWidget.ui:50
 #. i18n: ectx: property (toolTip), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:347
 msgid "Limit the remembered output to a fixed number of lines"
 msgstr "Giới hạn kết xuất đã nhớ thành số dòng cố định"
 
-#. i18n: file: HistorySizeWidget.ui:44
+#. i18n: file: HistorySizeWidget.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, fixedSizeHistoryButton)
 #: rc.cpp:350
 #, fuzzy
@@ -1596,19 +1606,19 @@ msgstr "Giới hạn kết xuất đã nhớ thành số dòng cố định"
 msgid "Fixed size scrollback:"
 msgstr "Cuộn ngược cỡ cố định:"
 
-#. i18n: file: HistorySizeWidget.ui:51
+#. i18n: file: HistorySizeWidget.ui:60
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, historyLineSpinner)
 #: rc.cpp:353
 msgid "Number of lines of output to remember"
 msgstr "Số dòng kết xuất cần nhớ"
 
-#. i18n: file: HistorySizeWidget.ui:85
+#. i18n: file: HistorySizeWidget.ui:94
 #. i18n: ectx: property (toolTip), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:356
 msgid "Remember all output produced by the terminal"
 msgstr "Nhớ toàn bộ kết xuất được tạo ra bởi thiết bị cuối"
 
-#. i18n: file: HistorySizeWidget.ui:88
+#. i18n: file: HistorySizeWidget.ui:97
 #. i18n: ectx: property (text), widget (QRadioButton, unlimitedHistoryButton)
 #: rc.cpp:359
 msgid "Unlimited scrollback"
@@ -2062,44 +2072,44 @@ msgid ""
 "kill it by force?"
 msgstr ""
 
-#: SessionController.cpp:1251
+#: SessionController.cpp:1255
 msgid "Save ZModem Download to..."
 msgstr ""
 
-#: SessionController.cpp:1259
+#: SessionController.cpp:1263
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
 "or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1271
+#: SessionController.cpp:1275
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr ""
 
-#: SessionController.cpp:1280
+#: SessionController.cpp:1284
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
 msgstr ""
 
-#: SessionController.cpp:1286
+#: SessionController.cpp:1290
 msgid "Select Files for ZModem Upload"
 msgstr ""
 
-#: SessionController.cpp:1354
+#: SessionController.cpp:1358
 #, fuzzy, kde-format
 #| msgid "Save Output from %1"
 msgid "Save Output From %1"
 msgstr "Lưu kết xuất từ %1"
 
-#: SessionController.cpp:1365
+#: SessionController.cpp:1369
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 là địa chỉ URL không hợp lệ nên không thể lưu kết xuất."
 
-#: SessionController.cpp:1440
+#: SessionController.cpp:1444
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
@@ -2171,14 +2181,14 @@ msgstr "Phiên chạy '%1' thoát ra với trạng thái %2."
 msgid "ZModem Progress"
 msgstr "Tiến trình ZModem"
 
-#: SessionManager.cpp:388
+#: SessionManager.cpp:381
 #, fuzzy
 #| msgid "Name"
 msgctxt "@item:intable The session index"
 msgid "Number"
 msgstr "Tên"
 
-#: SessionManager.cpp:390
+#: SessionManager.cpp:383
 #, fuzzy
 #| msgid "Tab Titles"
 msgctxt "@item:intable The session title"

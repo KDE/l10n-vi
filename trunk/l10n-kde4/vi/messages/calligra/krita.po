@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 02:46+0200\n"
+"POT-Creation-Date: 2012-04-11 02:34+0200\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "Language: \n"
@@ -1313,7 +1313,7 @@ msgstr "Tạo lớp HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:519
+#: rc.cpp:80 ui/kis_view2.cpp:521
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -11400,9 +11400,13 @@ msgstr "Trình chọn màu nhỏ"
 msgid "Image Docker"
 msgstr "Bảng màu"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
 msgstr "Trình chọn màu nhỏ"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "Trình chọn màu cụ thể"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
@@ -11415,9 +11419,11 @@ msgstr "%1:"
 msgid "Color name:"
 msgstr "Không gian màu:"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
-msgid "Specific Color Selector"
-msgstr "Trình chọn màu cụ thể"
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:53
+#, fuzzy
+#| msgid "Small Color Selector"
+msgid "Show Colorspace Selector"
+msgstr "Trình chọn màu nhỏ"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
 msgid "Task Sets"
@@ -12706,7 +12712,7 @@ msgstr "Làm tối"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:207
+#: ui/kis_paintop_box.cc:208
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -13560,10 +13566,6 @@ msgstr ""
 msgid "Paint with multibrushes"
 msgstr "Vẽ bằng các đường cong"
 
-#: plugins/tools/defaulttools/kis_tool_path.h:75
-msgid "Draw a path."
-msgstr "Vẽ một đường."
-
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
 #, fuzzy
 #| msgid "Draw a rectangle"
@@ -13777,6 +13779,12 @@ msgid ""
 msgstr ""
 "Alt+kéo sẽ di chuyển gốc của đường đang được hiển thị, Shift+kéo sẽ buộc bạn "
 "vẽ đường thẳng."
+
+#: plugins/tools/defaulttools/kis_tool_path.h:75
+#, fuzzy
+#| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+msgid "Draw a path. Shift-mouseclick ends the path."
+msgstr "Vẽ một đa giác. Shift-chuột trái kết thúc đa giác."
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:62
 msgid "Select a contiguous area of colors"
@@ -14511,7 +14519,7 @@ msgid "&Patterns"
 msgstr "Các bảng màu"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:193
+#: ui/kis_control_frame.cpp:191
 #, fuzzy
 msgid "Gradients"
 msgstr "Các đổ dốc màu"
@@ -14526,18 +14534,18 @@ msgstr "Các đổ &dốc màu"
 msgid "&Color"
 msgstr "Màu"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:116
 #, fuzzy
 msgid "&Painter's Tools"
 msgstr "Công cụ &vẽ"
 
-#: ui/kis_control_frame.cpp:153
+#: ui/kis_control_frame.cpp:151
 #, fuzzy
 #| msgid "Palettes"
 msgid "Patterns"
 msgstr "Các bảng màu"
 
-#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
+#: ui/kis_control_frame.cpp:154 ui/kis_control_frame.cpp:156
 #, fuzzy
 msgid "Custom Pattern"
 msgstr "Đổ dốc màu tự chọn"
@@ -14832,47 +14840,47 @@ msgstr "Chế độ đo khoảng cách:"
 msgid "Flow:"
 msgstr "&Hiện"
 
-#: ui/kis_paintop_box.cc:158
+#: ui/kis_paintop_box.cc:159
 msgid "Mode: "
 msgstr "Chế độ:"
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:165
 #, fuzzy
 #| msgid "edit presets"
 msgid "Save to Palette"
 msgstr "sửa định sẵn"
 
-#: ui/kis_paintop_box.cc:169
+#: ui/kis_paintop_box.cc:170
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "Không gian màu"
 
-#: ui/kis_paintop_box.cc:190
+#: ui/kis_paintop_box.cc:191
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "Cỡ chổi"
 
-#: ui/kis_paintop_box.cc:194
+#: ui/kis_paintop_box.cc:195
 #, fuzzy
 #| msgid "options"
 msgid "Brush option slider 1"
 msgstr "tuỳ chọn"
 
-#: ui/kis_paintop_box.cc:198
+#: ui/kis_paintop_box.cc:199
 #, fuzzy
 #| msgid "options"
 msgid "Brush option slider 2"
 msgstr "tuỳ chọn"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:212
 #, fuzzy
 #| msgid "Add to palette:"
 msgid "Add to palette"
 msgstr "Thêm vào bảng màu:"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:216
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -15115,38 +15123,38 @@ msgstr ""
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:511
+#: ui/kis_view2.cpp:513
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:512
+#: ui/kis_view2.cpp:514
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:514
+#: ui/kis_view2.cpp:516
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:515
+#: ui/kis_view2.cpp:517
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:517
+#: ui/kis_view2.cpp:519
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:735
+#: ui/kis_view2.cpp:737
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Palettes"
 
-#: ui/kis_view2.cpp:740
+#: ui/kis_view2.cpp:742
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:871 ui/kis_view2.cpp:874
+#: ui/kis_view2.cpp:873 ui/kis_view2.cpp:876
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Palettes"
@@ -15363,6 +15371,9 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Tập tin hay URL sẽ mở"
+
+#~ msgid "Draw a path."
+#~ msgstr "Vẽ một đường."
 
 #, fuzzy
 #~ msgid "Pasted Layer"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 11:17+0200\n"
+"POT-Creation-Date: 2012-04-13 11:33+0200\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "Language: \n"
@@ -1305,7 +1305,7 @@ msgstr "Tạo lớp HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:500
+#: rc.cpp:80 ui/kis_view2.cpp:502
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -11339,9 +11339,13 @@ msgstr "Trình chọn màu nhỏ"
 msgid "Image Docker"
 msgstr "Bảng màu"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
 msgstr "Trình chọn màu nhỏ"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "Trình chọn màu cụ thể"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
@@ -11353,10 +11357,6 @@ msgstr "%1:"
 #| msgid "Color space:"
 msgid "Color name:"
 msgstr "Không gian màu:"
-
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
-msgid "Specific Color Selector"
-msgstr "Trình chọn màu cụ thể"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
 msgid "Task Sets"
@@ -14373,7 +14373,7 @@ msgid "&Patterns"
 msgstr "Các bảng màu"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:192
+#: ui/kis_control_frame.cpp:193
 #, fuzzy
 msgid "Gradients"
 msgstr "Các đổ dốc màu"
@@ -14383,23 +14383,23 @@ msgstr "Các đổ dốc màu"
 msgid "&Gradients"
 msgstr "Các đổ &dốc màu"
 
-#: ui/kis_control_frame.cpp:100
+#: ui/kis_control_frame.cpp:101
 #, fuzzy
 msgid "&Color"
 msgstr "Màu"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:119
 #, fuzzy
 msgid "&Painter's Tools"
 msgstr "Công cụ &vẽ"
 
-#: ui/kis_control_frame.cpp:152
+#: ui/kis_control_frame.cpp:153
 #, fuzzy
 #| msgid "Palettes"
 msgid "Patterns"
 msgstr "Các bảng màu"
 
-#: ui/kis_control_frame.cpp:155 ui/kis_control_frame.cpp:157
+#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
 #, fuzzy
 msgid "Custom Pattern"
 msgstr "Đổ dốc màu tự chọn"
@@ -14892,25 +14892,6 @@ msgstr "Không có phần chọn"
 msgid "No profile"
 msgstr ""
 
-#: ui/kis_zoom_manager.cc:89
-msgid "Show Rulers"
-msgstr "Hiện thước kẻ"
-
-#: ui/kis_zoom_manager.cc:91
-msgid ""
-"The rulers show the horizontal and vertical positions of the mouse on the "
-"image and can be used to position your mouse at the right place on the "
-"canvas. <p>Uncheck this to hide the rulers."
-msgstr ""
-"Các thước kẻ hiển thị vị trí nằm ngang và thẳng đứng của con trỏ trên ảnh và "
-"có thể được dùng để đặt con trỏ vào vị trí đúng trên bản vẽ.<p>Bỏ chọn để "
-"dấu các thước kẻ."
-
-#: ui/kis_zoom_manager.cc:95
-#, fuzzy
-msgid "Reset zoom"
-msgstr "Chọn"
-
 #: ui/kisexiv2/kis_iptc_io.h:36
 msgid "Iptc"
 msgstr ""
@@ -15133,38 +15114,57 @@ msgstr ""
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:453
+#: ui/kis_view2.cpp:455
 #, fuzzy
 msgid "Pasted Layer"
 msgstr "Layer"
 
-#: ui/kis_view2.cpp:491
+#: ui/kis_view2.cpp:493
 #, fuzzy
 msgid "Insert as New Layer"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:492
+#: ui/kis_view2.cpp:494
 #, fuzzy
 msgid "Insert as New Layers"
 msgstr "&Chèn ảnh như là layer..."
 
-#: ui/kis_view2.cpp:494
+#: ui/kis_view2.cpp:496
 msgid "Open in New Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:495
+#: ui/kis_view2.cpp:497
 msgid "Open in New Documents"
 msgstr ""
 
-#: ui/kis_view2.cpp:711
+#: ui/kis_view2.cpp:713
 #, fuzzy
 msgid "Edit Palette..."
 msgstr "Palettes"
 
-#: ui/kis_view2.cpp:839 ui/kis_view2.cpp:842
+#: ui/kis_view2.cpp:841 ui/kis_view2.cpp:844
 #, fuzzy
 msgid "Edit Palette"
 msgstr "Palettes"
+
+#: ui/kis_zoom_manager.cc:89
+msgid "Show Rulers"
+msgstr "Hiện thước kẻ"
+
+#: ui/kis_zoom_manager.cc:91
+msgid ""
+"The rulers show the horizontal and vertical positions of the mouse on the "
+"image and can be used to position your mouse at the right place on the "
+"canvas. <p>Uncheck this to hide the rulers."
+msgstr ""
+"Các thước kẻ hiển thị vị trí nằm ngang và thẳng đứng của con trỏ trên ảnh và "
+"có thể được dùng để đặt con trỏ vào vị trí đúng trên bản vẽ.<p>Bỏ chọn để "
+"dấu các thước kẻ."
+
+#: ui/kis_zoom_manager.cc:95
+#, fuzzy
+msgid "Reset zoom"
+msgstr "Chọn"
 
 #, fuzzy
 #~| msgid "Options"

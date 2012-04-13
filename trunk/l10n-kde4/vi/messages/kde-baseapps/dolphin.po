@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-12 04:33+0200\n"
+"POT-Creation-Date: 2012-04-13 04:11+0200\n"
 "PO-Revision-Date: 2007-06-25 16:30+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1218,6 +1218,53 @@ msgctxt "@label"
 msgid "Select which additional information should be shown:"
 msgstr ""
 
+#: statusbar/dolphinstatusbar.cpp:63
+#, fuzzy
+#| msgid "Show preview"
+msgid "Zoom slider"
+msgstr "Hiện ô xem thử"
+
+#: statusbar/dolphinstatusbar.cpp:76
+#, fuzzy
+#| msgid "Stop"
+msgid "Stop"
+msgstr "Dừng"
+
+#: statusbar/dolphinstatusbar.cpp:78
+#, fuzzy
+#| msgid "Sorting:"
+msgctxt "@tooltip"
+msgid "Stop loading"
+msgstr "Đang sắp xếp:"
+
+#: statusbar/dolphinstatusbar.cpp:226
+#, fuzzy
+#| msgid "&Copy Here"
+msgctxt "@action:inmenu"
+msgid "Copy Text"
+msgstr "&Chép vào đây "
+
+#: statusbar/dolphinstatusbar.cpp:227
+#, fuzzy
+#| msgid "Show preview"
+msgctxt "@action:inmenu"
+msgid "Show Zoom Slider"
+msgstr "Hiện ô xem thử"
+
+#: statusbar/dolphinstatusbar.cpp:231
+#, fuzzy
+#| msgid "No Information"
+msgctxt "@action:inmenu"
+msgid "Show Space Information"
+msgstr "Không có thông tin"
+
+#: statusbar/dolphinstatusbar.cpp:308
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Size: 1 pixel"
+msgid_plural "Size: %1 pixels"
+msgstr[0] ""
+
 #: statusbar/statusbarspaceinfo.cpp:79 statusbar/statusbarspaceinfo.cpp:87
 #, fuzzy
 #| msgid "Total size:"
@@ -1231,51 +1278,6 @@ msgstr "Tổng cỡ :"
 msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "%1 rảnh"
-
-#: statusbar/dolphinstatusbar.cpp:65
-#, fuzzy
-#| msgid "Show preview"
-msgid "Zoom slider"
-msgstr "Hiện ô xem thử"
-
-#: statusbar/dolphinstatusbar.cpp:86
-#, fuzzy
-#| msgid "Stop"
-msgid "Stop"
-msgstr "Dừng"
-
-#: statusbar/dolphinstatusbar.cpp:273
-#, fuzzy
-#| msgid "No Information"
-msgctxt "@action:inmenu"
-msgid "Copy Information Message"
-msgstr "Không có thông tin"
-
-#: statusbar/dolphinstatusbar.cpp:276
-msgctxt "@action:inmenu"
-msgid "Copy Error Message"
-msgstr ""
-
-#: statusbar/dolphinstatusbar.cpp:281
-#, fuzzy
-#| msgid "Show preview"
-msgctxt "@action:inmenu"
-msgid "Show Zoom Slider"
-msgstr "Hiện ô xem thử"
-
-#: statusbar/dolphinstatusbar.cpp:285
-#, fuzzy
-#| msgid "No Information"
-msgctxt "@action:inmenu"
-msgid "Show Space Information"
-msgstr "Không có thông tin"
-
-#: statusbar/dolphinstatusbar.cpp:374
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Size: 1 pixel"
-msgid_plural "Size: %1 pixels"
-msgstr[0] ""
 
 #: views/dolphinview.cpp:517
 #, fuzzy, kde-format
@@ -1616,41 +1618,383 @@ msgctxt "@info"
 msgid "# will be replaced by ascending numbers starting with:"
 msgstr "(# bị thay thế bằng số tăng dần)"
 
-#: dolphinviewcontainer.cpp:338
+#: dolphinmainwindow.cpp:334
+msgctxt "@info:status"
+msgid "Successfully copied."
+msgstr ""
+
+#: dolphinmainwindow.cpp:337
+msgctxt "@info:status"
+msgid "Successfully moved."
+msgstr ""
+
+#: dolphinmainwindow.cpp:340
+msgctxt "@info:status"
+msgid "Successfully linked."
+msgstr ""
+
+#: dolphinmainwindow.cpp:343
+msgctxt "@info:status"
+msgid "Successfully moved to trash."
+msgstr ""
+
+#: dolphinmainwindow.cpp:346
+msgctxt "@info:status"
+msgid "Successfully renamed."
+msgstr ""
+
+#: dolphinmainwindow.cpp:350
+#, fuzzy
+#| msgid "Created folder."
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "Thư mục đã được tạo."
+
+#: dolphinmainwindow.cpp:427
+msgctxt "@info"
+msgid "Go back"
+msgstr ""
+
+#: dolphinmainwindow.cpp:433
+msgctxt "@info"
+msgid "Go forward"
+msgstr ""
+
+#: dolphinmainwindow.cpp:595
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "Thông tin"
+
+#: dolphinmainwindow.cpp:599
+#, fuzzy
+#| msgid "Close"
+msgid "C&lose Current Tab"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:607
+msgid ""
+"You have multiple tabs open in this window, are you sure you want to quit?"
+msgstr ""
+
+#: dolphinmainwindow.cpp:609
+msgid "Do not ask again"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1210
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1213
+msgctxt "@action:inmenu"
+msgid "Detach Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1215
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1217
+#, fuzzy
+#| msgid "Close"
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:1446
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@action:inmenu"
+msgid "Location Bar"
+msgstr "Địa điểm:"
+
+#: dolphinmainwindow.cpp:1454
+msgctxt "@action:inmenu"
+msgid "Go"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1464
+msgctxt "@action:inmenu"
+msgid "Tools"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1478
+msgctxt "@action:inmenu"
+msgid "Help"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1561 dolphincontextmenu.cpp:248
+#, fuzzy
+#| msgid "Create New"
+msgctxt "@title:menu Create new folder, file, link, etc."
+msgid "Create New"
+msgstr "Tạo mới"
+
+#: dolphinmainwindow.cpp:1568
+#, fuzzy
+#| msgid "New &Window"
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "&Cửa sổ mới"
+
+#: dolphinmainwindow.cpp:1574
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1580
+#, fuzzy
+#| msgid "Close"
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:1603
+#, fuzzy
+#| msgid "Paste"
+msgctxt "@action:inmenu Edit"
+msgid "Paste"
+msgstr "Dán"
+
+#: dolphinmainwindow.cpp:1608
+#, fuzzy
+#| msgid "Select All"
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "Chọn tất cả"
+
+#: dolphinmainwindow.cpp:1613 dolphinpart.cpp:164
+#, fuzzy
+#| msgid "Invert Selection"
+msgctxt "@action:inmenu Edit"
+msgid "Invert Selection"
+msgstr "Đảo vùng chọn"
+
+#: dolphinmainwindow.cpp:1626
+#, fuzzy
+#| msgid "Reload"
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "Nạp lại"
+
+#: dolphinmainwindow.cpp:1632
+#, fuzzy
+#| msgid "Stop"
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "Dừng"
+
+#: dolphinmainwindow.cpp:1633
+#, fuzzy
+#| msgid "Sorting:"
+msgctxt "@info"
+msgid "Stop loading"
+msgstr "Đang sắp xếp:"
+
+#: dolphinmainwindow.cpp:1638
+#, fuzzy
+#| msgid "Edit Location"
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Editable Location"
+msgstr "Sửa địa điểm"
+
+#: dolphinmainwindow.cpp:1643
+#, fuzzy
+#| msgid "Location:"
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "Địa điểm:"
+
+#: dolphinmainwindow.cpp:1654
+#, fuzzy
+#| msgid "Close"
+msgid "Recently Closed Tabs"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:1660
+#, fuzzy
+#| msgid "Close"
+msgid "Empty Recently Closed Tabs"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:1678
+#, fuzzy
+#| msgid "Show Filter Bar"
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "Hiện thanh lọc"
+
+#: dolphinmainwindow.cpp:1684
+#, fuzzy
+#| msgid "Compare Files"
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "So sánh tập tin"
+
+#: dolphinmainwindow.cpp:1690
+#, fuzzy
+#| msgid "Terminal"
+msgctxt "@action:inmenu Tools"
+msgid "Open Terminal"
+msgstr "Thiết bị cuối"
+
+#: dolphinmainwindow.cpp:1711
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1716
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1722
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1727
+#, fuzzy
+#| msgid "New &Window"
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "&Cửa sổ mới"
+
+#: dolphinmainwindow.cpp:1737
+#, fuzzy
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "Bảng"
+
+#: dolphinmainwindow.cpp:1739
+#, fuzzy
+#| msgid "Panels"
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "Bảng"
+
+#: dolphinmainwindow.cpp:1745
+#, fuzzy
+#| msgid "Information"
+msgctxt "@title:window"
+msgid "Information"
+msgstr "Thông tin"
+
+#: dolphinmainwindow.cpp:1766
+#, fuzzy
+#| msgid "Folders"
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "Thư mục"
+
+#: dolphinmainwindow.cpp:1785
+#, fuzzy
+#| msgid "Terminal"
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "Thiết bị cuối"
+
+#: dolphinmainwindow.cpp:1807
+msgctxt "@title:window"
+msgid "Search"
+msgstr ""
+
+#: dolphinmainwindow.cpp:1835
+#, fuzzy
+#| msgid "Places"
+msgctxt "@title:window"
+msgid "Places"
+msgstr "Nơi"
+
+#: dolphinmainwindow.cpp:1863
+#, fuzzy
+#| msgid "Panels"
+msgctxt "@action:inmenu View"
+msgid "Panels"
+msgstr "Bảng"
+
+#: dolphinmainwindow.cpp:1937
+msgctxt "@action"
+msgid "Control"
+msgstr ""
+
+#: dolphinmainwindow.cpp:2110
+#, fuzzy
+#| msgid "Close"
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:2111
+msgctxt "@info"
+msgid "Close right view"
+msgstr ""
+
+#: dolphinmainwindow.cpp:2114
+#, fuzzy
+#| msgid "Close"
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "Đóng"
+
+#: dolphinmainwindow.cpp:2115
+msgctxt "@info"
+msgid "Close left view"
+msgstr ""
+
+#: dolphinmainwindow.cpp:2119
+#, fuzzy
+#| msgid "Split"
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "Chia ra"
+
+#: dolphinmainwindow.cpp:2120
+#, fuzzy
+#| msgid "Split view mode"
+msgctxt "@info"
+msgid "Split view"
+msgstr "Chế độ xem tách"
+
+#: dolphinviewcontainer.cpp:366
 #, fuzzy
 #| msgid "Loading folder..."
 msgctxt "@info:progress"
 msgid "Loading folder..."
 msgstr "Đang nạp thư mục..."
 
-#: dolphinviewcontainer.cpp:346
+#: dolphinviewcontainer.cpp:374
 #, fuzzy
 #| msgid "Sorting:"
 msgctxt "@info:progress"
 msgid "Sorting..."
 msgstr "Đang sắp xếp:"
 
-#: dolphinviewcontainer.cpp:357
+#: dolphinviewcontainer.cpp:385
 msgctxt "@info"
 msgid "Searching..."
 msgstr ""
 
-#: dolphinviewcontainer.cpp:377
+#: dolphinviewcontainer.cpp:405
 msgctxt "@info:status"
 msgid "No items found."
 msgstr ""
 
-#: dolphinviewcontainer.cpp:514
+#: dolphinviewcontainer.cpp:521
 msgctxt "@info:status"
 msgid "Dolphin does not support web pages, the web browser has been launched"
 msgstr ""
 
-#: dolphinviewcontainer.cpp:526
+#: dolphinviewcontainer.cpp:535
 msgctxt "@info:status"
 msgid "Protocol not supported by Dolphin, Konqueror has been launched"
 msgstr ""
 
-#: dolphinviewcontainer.cpp:533
+#: dolphinviewcontainer.cpp:543
 msgctxt "@info:status"
 msgid "Invalid protocol"
 msgstr ""
@@ -2195,13 +2539,6 @@ msgctxt "@action:inmenu"
 msgid "Restore"
 msgstr "Phục hồi"
 
-#: dolphincontextmenu.cpp:248 dolphinmainwindow.cpp:1567
-#, fuzzy
-#| msgid "Create New"
-msgctxt "@title:menu Create new folder, file, link, etc."
-msgid "Create New"
-msgstr "Tạo mới"
-
 #: dolphincontextmenu.cpp:261
 #, fuzzy
 #| msgid "Places"
@@ -2353,341 +2690,6 @@ msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "Tài liệu cần mở"
 
-#: dolphinmainwindow.cpp:334
-msgctxt "@info:status"
-msgid "Successfully copied."
-msgstr ""
-
-#: dolphinmainwindow.cpp:338
-msgctxt "@info:status"
-msgid "Successfully moved."
-msgstr ""
-
-#: dolphinmainwindow.cpp:342
-msgctxt "@info:status"
-msgid "Successfully linked."
-msgstr ""
-
-#: dolphinmainwindow.cpp:346
-msgctxt "@info:status"
-msgid "Successfully moved to trash."
-msgstr ""
-
-#: dolphinmainwindow.cpp:350
-msgctxt "@info:status"
-msgid "Successfully renamed."
-msgstr ""
-
-#: dolphinmainwindow.cpp:355
-#, fuzzy
-#| msgid "Created folder."
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "Thư mục đã được tạo."
-
-#: dolphinmainwindow.cpp:433
-msgctxt "@info"
-msgid "Go back"
-msgstr ""
-
-#: dolphinmainwindow.cpp:439
-msgctxt "@info"
-msgid "Go forward"
-msgstr ""
-
-#: dolphinmainwindow.cpp:601
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "Thông tin"
-
-#: dolphinmainwindow.cpp:605
-#, fuzzy
-#| msgid "Close"
-msgid "C&lose Current Tab"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:613
-msgid ""
-"You have multiple tabs open in this window, are you sure you want to quit?"
-msgstr ""
-
-#: dolphinmainwindow.cpp:615
-msgid "Do not ask again"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1219
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1222
-msgctxt "@action:inmenu"
-msgid "Detach Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1224
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1226
-#, fuzzy
-#| msgid "Close"
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:1452
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@action:inmenu"
-msgid "Location Bar"
-msgstr "Địa điểm:"
-
-#: dolphinmainwindow.cpp:1460
-msgctxt "@action:inmenu"
-msgid "Go"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1470
-msgctxt "@action:inmenu"
-msgid "Tools"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1484
-msgctxt "@action:inmenu"
-msgid "Help"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1574
-#, fuzzy
-#| msgid "New &Window"
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "&Cửa sổ mới"
-
-#: dolphinmainwindow.cpp:1580
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1586
-#, fuzzy
-#| msgid "Close"
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:1609
-#, fuzzy
-#| msgid "Paste"
-msgctxt "@action:inmenu Edit"
-msgid "Paste"
-msgstr "Dán"
-
-#: dolphinmainwindow.cpp:1614
-#, fuzzy
-#| msgid "Select All"
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "Chọn tất cả"
-
-#: dolphinmainwindow.cpp:1619 dolphinpart.cpp:164
-#, fuzzy
-#| msgid "Invert Selection"
-msgctxt "@action:inmenu Edit"
-msgid "Invert Selection"
-msgstr "Đảo vùng chọn"
-
-#: dolphinmainwindow.cpp:1632
-#, fuzzy
-#| msgid "Reload"
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "Nạp lại"
-
-#: dolphinmainwindow.cpp:1638
-#, fuzzy
-#| msgid "Stop"
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "Dừng"
-
-#: dolphinmainwindow.cpp:1639
-#, fuzzy
-#| msgid "Sorting:"
-msgctxt "@info"
-msgid "Stop loading"
-msgstr "Đang sắp xếp:"
-
-#: dolphinmainwindow.cpp:1644
-#, fuzzy
-#| msgid "Edit Location"
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Editable Location"
-msgstr "Sửa địa điểm"
-
-#: dolphinmainwindow.cpp:1649
-#, fuzzy
-#| msgid "Location:"
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Replace Location"
-msgstr "Địa điểm:"
-
-#: dolphinmainwindow.cpp:1660
-#, fuzzy
-#| msgid "Close"
-msgid "Recently Closed Tabs"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:1666
-#, fuzzy
-#| msgid "Close"
-msgid "Empty Recently Closed Tabs"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:1684
-#, fuzzy
-#| msgid "Show Filter Bar"
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "Hiện thanh lọc"
-
-#: dolphinmainwindow.cpp:1690
-#, fuzzy
-#| msgid "Compare Files"
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "So sánh tập tin"
-
-#: dolphinmainwindow.cpp:1696
-#, fuzzy
-#| msgid "Terminal"
-msgctxt "@action:inmenu Tools"
-msgid "Open Terminal"
-msgstr "Thiết bị cuối"
-
-#: dolphinmainwindow.cpp:1717
-msgctxt "@action:inmenu"
-msgid "Activate Next Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1722
-msgctxt "@action:inmenu"
-msgid "Activate Previous Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1728
-msgctxt "@action:inmenu"
-msgid "Open in New Tab"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1733
-#, fuzzy
-#| msgid "New &Window"
-msgctxt "@action:inmenu"
-msgid "Open in New Window"
-msgstr "&Cửa sổ mới"
-
-#: dolphinmainwindow.cpp:1743
-#, fuzzy
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Unlock Panels"
-msgstr "Bảng"
-
-#: dolphinmainwindow.cpp:1745
-#, fuzzy
-#| msgid "Panels"
-msgctxt "@action:inmenu Panels"
-msgid "Lock Panels"
-msgstr "Bảng"
-
-#: dolphinmainwindow.cpp:1751
-#, fuzzy
-#| msgid "Information"
-msgctxt "@title:window"
-msgid "Information"
-msgstr "Thông tin"
-
-#: dolphinmainwindow.cpp:1772
-#, fuzzy
-#| msgid "Folders"
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "Thư mục"
-
-#: dolphinmainwindow.cpp:1791
-#, fuzzy
-#| msgid "Terminal"
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "Thiết bị cuối"
-
-#: dolphinmainwindow.cpp:1813
-msgctxt "@title:window"
-msgid "Search"
-msgstr ""
-
-#: dolphinmainwindow.cpp:1841
-#, fuzzy
-#| msgid "Places"
-msgctxt "@title:window"
-msgid "Places"
-msgstr "Nơi"
-
-#: dolphinmainwindow.cpp:1869
-#, fuzzy
-#| msgid "Panels"
-msgctxt "@action:inmenu View"
-msgid "Panels"
-msgstr "Bảng"
-
-#: dolphinmainwindow.cpp:1943
-msgctxt "@action"
-msgid "Control"
-msgstr ""
-
-#: dolphinmainwindow.cpp:2116
-#, fuzzy
-#| msgid "Close"
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:2117
-msgctxt "@info"
-msgid "Close right view"
-msgstr ""
-
-#: dolphinmainwindow.cpp:2120
-#, fuzzy
-#| msgid "Close"
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "Đóng"
-
-#: dolphinmainwindow.cpp:2121
-msgctxt "@info"
-msgid "Close left view"
-msgstr ""
-
-#: dolphinmainwindow.cpp:2125
-#, fuzzy
-#| msgid "Split"
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "Chia ra"
-
-#: dolphinmainwindow.cpp:2126
-#, fuzzy
-#| msgid "Split view mode"
-msgctxt "@info"
-msgid "Split view"
-msgstr "Chế độ xem tách"
-
 #: dolphinpart.cpp:145
 msgctxt "@action:inmenu Edit"
 msgid "&Edit File Type..."
@@ -2785,6 +2787,12 @@ msgstr ""
 #: dolphinpart.cpp:469
 msgid "Unselect all items matching this pattern:"
 msgstr ""
+
+#, fuzzy
+#~| msgid "No Information"
+#~ msgctxt "@action:inmenu"
+#~ msgid "Copy Information Message"
+#~ msgstr "Không có thông tin"
 
 #, fuzzy
 #~| msgid "Documentation"
@@ -4379,12 +4387,6 @@ msgstr ""
 
 #~ msgid "Counting folders: %1"
 #~ msgstr "Đang đếm thư mục: %1"
-
-#, fuzzy
-#~| msgid "&Copy Here"
-#~ msgctxt "@action:inmenu"
-#~ msgid "&Copy Here"
-#~ msgstr "&Chép vào đây "
 
 #, fuzzy
 #~| msgid "&Link Here"

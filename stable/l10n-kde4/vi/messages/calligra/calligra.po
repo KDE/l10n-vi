@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: koffice\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-16 10:47+0200\n"
+"POT-Creation-Date: 2012-04-17 17:47+0200\n"
 "PO-Revision-Date: 2008-01-27 21:10+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -966,8 +966,8 @@ msgstr "Xác nhận Lưu"
 
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:40
 #: kopageapp/dialogs/KoPAConfigureDialog.cpp:41
-#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOp.cpp:42
-#: pigment/KoCompositeOpRegistry.cpp:36
+#: main/config/KoConfigMiscPage.cpp:78 pigment/KoCompositeOpRegistry.cpp:36
+#: pigment/KoCompositeOp.cpp:42
 msgid "Misc"
 msgstr ""
 
@@ -1312,7 +1312,7 @@ msgstr "Nước :"
 #: koreport/items/field/KoReportItemField.cpp:102
 #: koreport/items/label/KoReportItemLabel.cpp:104
 #: koreport/items/text/KoReportItemText.cpp:129
-#: widgets/KoColorPopupAction.cpp:86 widgets/KoUniColorChooser.cpp:418
+#: widgets/KoUniColorChooser.cpp:418 widgets/KoColorPopupAction.cpp:93
 msgid "Opacity"
 msgstr "Độ trong suốt"
 
@@ -3710,50 +3710,43 @@ msgstr "16 Bit dấu phẩy động (HDR)"
 msgid "32 Bits Float"
 msgstr "32 Bit dấu phẩy động (HDR)"
 
-#: pigment/KoCompositeOp.cpp:30 pigment/KoCompositeOpRegistry.cpp:88
-#: pigment/compositeops/KoCompositeOps.h:141
-msgid "Color"
-msgstr "Màu"
-
-#: pigment/KoCompositeOp.cpp:33 pigment/KoCompositeOpRegistry.cpp:31
+#: pigment/KoCompositeOpRegistry.cpp:31 pigment/KoCompositeOp.cpp:33
 msgid "Arithmetic"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:34 pigment/KoCompositeOpRegistry.cpp:34
+#: pigment/KoCompositeOpRegistry.cpp:32 pigment/KoCompositeOpRegistry.cpp:50
+#: pigment/compositeops/KoCompositeOps.h:97 pigment/KoCompositeOp.cpp:36
+msgid "Darken"
+msgstr "Làm tối"
+
+#: pigment/KoCompositeOpRegistry.cpp:33 pigment/KoCompositeOpRegistry.cpp:55
+#: pigment/compositeops/KoCompositeOps.h:87 pigment/KoCompositeOp.cpp:35
+msgid "Lighten"
+msgstr "Làm sáng"
+
+#: pigment/KoCompositeOpRegistry.cpp:34 pigment/KoCompositeOp.cpp:34
 #, fuzzy
 msgid "Negative"
 msgstr "Thay thế bằng"
 
-#: pigment/KoCompositeOp.cpp:35 pigment/KoCompositeOpRegistry.cpp:33
-#: pigment/KoCompositeOpRegistry.cpp:55
-#: pigment/compositeops/KoCompositeOps.h:87
-msgid "Lighten"
-msgstr "Làm sáng"
+#: pigment/KoCompositeOpRegistry.cpp:35 pigment/KoCompositeOp.cpp:41
+msgid "Mix"
+msgstr ""
 
-#: pigment/KoCompositeOp.cpp:36 pigment/KoCompositeOpRegistry.cpp:32
-#: pigment/KoCompositeOpRegistry.cpp:50
-#: pigment/compositeops/KoCompositeOps.h:97
-msgid "Darken"
-msgstr "Làm tối"
-
-#: pigment/KoCompositeOp.cpp:37 pigment/KoCompositeOpRegistry.cpp:37
+#: pigment/KoCompositeOpRegistry.cpp:37 pigment/KoCompositeOp.cpp:37
 msgid "HSY"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:38 pigment/KoCompositeOpRegistry.cpp:38
+#: pigment/KoCompositeOpRegistry.cpp:38 pigment/KoCompositeOp.cpp:38
 msgid "HSI"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:39 pigment/KoCompositeOpRegistry.cpp:39
+#: pigment/KoCompositeOpRegistry.cpp:39 pigment/KoCompositeOp.cpp:39
 msgid "HSL"
 msgstr ""
 
-#: pigment/KoCompositeOp.cpp:40 pigment/KoCompositeOpRegistry.cpp:40
+#: pigment/KoCompositeOpRegistry.cpp:40 pigment/KoCompositeOp.cpp:40
 msgid "HSV"
-msgstr ""
-
-#: pigment/KoCompositeOp.cpp:41 pigment/KoCompositeOpRegistry.cpp:35
-msgid "Mix"
 msgstr ""
 
 #: pigment/KoCompositeOpRegistry.cpp:42
@@ -3975,6 +3968,11 @@ msgstr "Xanh lá cây"
 #| msgid "Copy Page"
 msgid "Copy Blue"
 msgstr "Chép Trang"
+
+#: pigment/KoCompositeOpRegistry.cpp:88
+#: pigment/compositeops/KoCompositeOps.h:141 pigment/KoCompositeOp.cpp:30
+msgid "Color"
+msgstr "Màu"
 
 #: pigment/KoCompositeOpRegistry.cpp:89
 #: pigment/compositeops/KoCompositeOps.h:142 widgets/KoUniColorChooser.cpp:116
@@ -4441,15 +4439,11 @@ msgstr ""
 msgid "ArabicAlphabet"
 msgstr ""
 
-#: widgets/KoColorSetWidget.cpp:189
+#: widgets/KoColorSetWidget.cpp:184
 msgid "Recent:"
 msgstr "Gần đây:"
 
-#: widgets/KoColorSetWidget.cpp:196
-msgid "Hide colors with bad contrast"
-msgstr "Ẩn các màu có độ tương phản kém"
-
-#: widgets/KoColorSetWidget.cpp:207
+#: widgets/KoColorSetWidget.cpp:197
 msgid "Add / Remove Colors..."
 msgstr "Thêm/Xóa Màu..."
 
@@ -5887,6 +5881,9 @@ msgstr "Xem trước Trang"
 #: rc.cpp:625
 msgid "Bottom:"
 msgstr ""
+
+#~ msgid "Hide colors with bad contrast"
+#~ msgstr "Ẩn các màu có độ tương phản kém"
 
 #~ msgid "Ellipse Shape"
 #~ msgstr "Hình êlíp"

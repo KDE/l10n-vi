@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-11 03:16+0200\n"
+"POT-Creation-Date: 2012-05-17 03:39+0200\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -17,36 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.4\n"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:44
-msgid "Annotate previous image"
-msgstr "Chú giải ảnh trước"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:50
-msgid "Annotate next image"
-msgstr "Chú giải ảnh kế"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:58 AnnotationDialog/Dialog.cpp:959
-#: MainWindow/Window.cpp:742 Viewer/ViewerWidget.cpp:270
-#, fuzzy
-#| msgid "Rotate contra-clockwise (to the left)"
-msgid "Rotate counterclockwise"
-msgstr "Xoay theo ngược chiều kim đồng hồ"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:64 AnnotationDialog/Dialog.cpp:962
-#: MainWindow/Window.cpp:747 Viewer/ViewerWidget.cpp:260
-#, fuzzy
-#| msgid "Rotate clockwise (to the right)"
-msgid "Rotate clockwise"
-msgstr "Xoay theo chiều kim đồng hồ"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:70
-msgid "Copy tags from previously tagged image"
-msgstr "Chép các thẻ từ ảnh đã đặt thẻ trước"
-
-#: AnnotationDialog/ImagePreviewWidget.cpp:76
-msgid "Delete image"
-msgstr "Xoá ảnh"
 
 #: AnnotationDialog/KDateEdit.cpp:87
 msgid "tomorrow"
@@ -418,11 +388,41 @@ msgstr "Hộp thoại Đồng ý"
 msgid "Copy tags from previous image"
 msgstr "Chép các thẻ từ ảnh trước"
 
+#: AnnotationDialog/Dialog.cpp:959 AnnotationDialog/ImagePreviewWidget.cpp:58
+#: MainWindow/Window.cpp:744 Viewer/ViewerWidget.cpp:270
+#, fuzzy
+#| msgid "Rotate contra-clockwise (to the left)"
+msgid "Rotate counterclockwise"
+msgstr "Xoay theo ngược chiều kim đồng hồ"
+
+#: AnnotationDialog/Dialog.cpp:962 AnnotationDialog/ImagePreviewWidget.cpp:64
+#: MainWindow/Window.cpp:749 Viewer/ViewerWidget.cpp:260
+#, fuzzy
+#| msgid "Rotate clockwise (to the right)"
+msgid "Rotate clockwise"
+msgstr "Xoay theo chiều kim đồng hồ"
+
 #: AnnotationDialog/Dialog.cpp:965
 #, fuzzy
 #| msgid "Toggle Full Screen"
 msgid "Toggle fullscreen preview"
 msgstr "Hiện/ẩn toàn màn hình"
+
+#: AnnotationDialog/ImagePreviewWidget.cpp:44
+msgid "Annotate previous image"
+msgstr "Chú giải ảnh trước"
+
+#: AnnotationDialog/ImagePreviewWidget.cpp:50
+msgid "Annotate next image"
+msgstr "Chú giải ảnh kế"
+
+#: AnnotationDialog/ImagePreviewWidget.cpp:70
+msgid "Copy tags from previously tagged image"
+msgstr "Chép các thẻ từ ảnh đã đặt thẻ trước"
+
+#: AnnotationDialog/ImagePreviewWidget.cpp:76
+msgid "Delete image"
+msgstr "Xoá ảnh"
 
 #: Browser/Breadcrumb.cpp:36 MainWindow/StatisticsDialog.cpp:167
 msgid "All"
@@ -600,15 +600,15 @@ msgstr "th11"
 msgid "dec"
 msgstr "th12"
 
-#: DB/Category.cpp:139 DB/Category.cpp:147 XMLDB/FileReader.cpp:348
+#: DB/Category.cpp:139 DB/Category.cpp:147 XMLDB/FileReader.cpp:353
 msgid "People"
 msgstr "Người"
 
-#: DB/Category.cpp:140 DB/Category.cpp:148 XMLDB/FileReader.cpp:349
+#: DB/Category.cpp:140 DB/Category.cpp:148 XMLDB/FileReader.cpp:354
 msgid "Places"
 msgstr "Nơi"
 
-#: DB/Category.cpp:141 XMLDB/FileReader.cpp:350
+#: DB/Category.cpp:141 XMLDB/FileReader.cpp:355
 msgid "Events"
 msgstr ""
 
@@ -646,11 +646,11 @@ msgstr "Găp lỗi khi lưu ảnh « %1 »."
 msgid "Error Saving Image"
 msgstr "Gặp lỗi khi lưu ảnh"
 
-#: DB/ImageDB.cpp:217
+#: DB/ImageDB.cpp:213
 msgid "Loading information from images"
 msgstr "Đang tải thông tin từ ảnh"
 
-#: DB/ImageDB.cpp:218
+#: DB/ImageDB.cpp:214
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -679,7 +679,7 @@ msgctxt ""
 msgid "No other %1"
 msgstr "Không có gì khác"
 
-#: DB/NewImageFinder.cpp:125
+#: DB/NewImageFinder.cpp:124
 msgid ""
 "<p><b>Loading information from new files</b></p><p>Depending on the number "
 "of images, this may take some time.<br/>However, there is only a delay when "
@@ -990,6 +990,22 @@ msgstr ""
 msgid "Rereading EXIF information from all images"
 msgstr "Đang tải thông tin từ ảnh"
 
+#: Exif/InfoDialog.cpp:38
+msgid "EXIF Information"
+msgstr "Thông tin EXIF"
+
+#: Exif/InfoDialog.cpp:67
+msgid "Current EXIF Label Search: "
+msgstr "Tìm nhãn EXIF hiện thời: "
+
+#: Exif/InfoDialog.cpp:81
+msgid "IPTC character set:"
+msgstr ""
+
+#: Exif/InfoDialog.cpp:101
+msgid "<No Search>"
+msgstr "<Không tìm>"
+
 #: Exif/ReReadDialog.cpp:35
 #, fuzzy
 #| msgid "Read EXIF Info From Files..."
@@ -1031,22 +1047,6 @@ msgstr ""
 #: Exif/ReReadDialog.cpp:129
 msgid "Override image dates"
 msgstr "Có quyền cao hơn ngày ảnh"
-
-#: Exif/InfoDialog.cpp:38
-msgid "EXIF Information"
-msgstr "Thông tin EXIF"
-
-#: Exif/InfoDialog.cpp:67
-msgid "Current EXIF Label Search: "
-msgstr "Tìm nhãn EXIF hiện thời: "
-
-#: Exif/InfoDialog.cpp:81
-msgid "IPTC character set:"
-msgstr ""
-
-#: Exif/InfoDialog.cpp:101
-msgid "<No Search>"
-msgstr "<Không tìm>"
 
 #: HTMLGenerator/HTMLDialog.cpp:51
 msgid "HTML Export"
@@ -1292,122 +1292,6 @@ msgstr "Xây dựng mẫu ảnh"
 msgid "Unable to create temporary file"
 msgstr "Không thể tạo thư mục"
 
-#: ImportExport/ImportDialog.cpp:82
-#, kde-format
-msgid "Error in file %1 on line %2 col %3: %4"
-msgstr "Gặp lỗi trong tập tin %1 trên dòng %2 cột %3: %4"
-
-#: ImportExport/ImportDialog.cpp:89
-#, kde-format
-msgid ""
-"Unexpected top element while reading file %1. Expected KPhotoAlbum-export "
-"found %2"
-msgstr ""
-"Gặp yếu tố đầu bất thường trong khi đọc tập tin %1. Đợi hỏi xuất khẩu "
-"KPhotoAlbum còn tìm %2"
-
-#: ImportExport/ImportDialog.cpp:97
-msgid ""
-"<p>XML file did not specify the source of the images, this is a strong "
-"indication that the file is corrupted</p>"
-msgstr ""
-"<p>Tập tin XML đã không xác định nguồn của các ảnh: rất ngụ ý là tập tin bị "
-"hỏng.</p>"
-
-#: ImportExport/ImportDialog.cpp:109
-#, kde-format
-msgid "Unknown element while reading %1, expected image."
-msgstr "Gặp yếu tố lạ trong khi đọc %1, còn đợi hỏi ảnh."
-
-#: ImportExport/ImportDialog.cpp:133
-msgid ""
-"<h1><font size=\"+2\">Welcome to KPhotoAlbum Import</font></h1>This wizard "
-"will take you through the steps of an import operation. The steps are: "
-"<ol><li>First you must select which images you want to import from the "
-"export file. You do so by selecting the checkbox next to the image.</"
-"li><li>Next you must tell KPhotoAlbum in which directory to put the images. "
-"This directory must of course be below the directory root KPhotoAlbum uses "
-"for images. KPhotoAlbum will take care to avoid name clashes</li><li>The "
-"next step is to specify which categories you want to import (People, "
-"Places, ... ) and also tell KPhotoAlbum how to match the categories from the "
-"file to your categories. Imagine you load from a file, where a category is "
-"called <b>Blomst</b> (which is the Danish word for flower), then you would "
-"likely want to match this with your category, which might be called "
-"<b>Blume</b> (which is the German word for flower) - of course given you are "
-"German.</li><li>The final steps, is matching the individual tokens from the "
-"categories. I may call myself <b>Jesper</b> in my image database, while you "
-"want to call me by my full name, namely <b>Jesper K. Pedersen</b>. In this "
-"step non matches will be highlighted in red, so you can see which tokens was "
-"not found in your database, or which tokens was only a partial match.</li></"
-"ol>"
-msgstr ""
-"<h1><font size=\"+2\">Chào mừng bạn dùng khả năng Nhập KPhotoAlbum</font></"
-"h1>Trợ lý này sẽ hướng dẫn bạn qua các bước của thao tác nhâp khẩu :"
-"<ol><li>Trước tiên, bạn hãy chọn những ảnh cần nhập khẩu từ tập tin xuất, "
-"bằng cách đánh dấu trong hộp chọn ở cạnh mỗi ảnh.</li><li>Báo trình "
-"KPhotoAlbum để các ảnh ở đâu. Thư mục này phải nằm dưới (bên trong) thư mục "
-"gốc KPhotoAlbum dùng cho các ảnh. Trình này cũng sẽ tránh cẩn thận các tên "
-"xung đột với nhau.</li><li>Xác định những phân loại cần nhập (v.d. Người, "
-"Nơi); cũng báo trình KPhotoAlbum biết cách khớp phân loại của tập tin với "
-"phân loại của bạn. Chẳng hạn, nếu bạn nhập từ một tập tin chứa phân loại tên "
-"<b>Flowers</b> (tiếng Anh), bạn có thể muốn khớp nó với phân loại <b>Hoa</b> "
-"(tiếng Việt) của bạn.</li><li>Cuối cùng, khớp các hiệu bài riêng từ phân "
-"loại. Lấy thí dụ, nếu tập tin nhập gồm gọi người là <b>Anh</b>, bạn có thể "
-"muốn gọi họ là <b>Nguyễn Văn Anh</b> hay <b>Bác Anh</b>, đặc biệt khi có "
-"nhiều người có tên <b>Anh</b>. Trong bước này, các điều không khớp thì có "
-"màu đỏ, để cho bạn xem dễ dàng những hiệu bài nào không được tìm trong co sở "
-"dữ liệu của bạn, hoặc những hiệu bài nào chỉ khớp một phần.</li></ol>"
-
-#: ImportExport/ImportDialog.cpp:152
-msgid "Introduction"
-msgstr "Giới thiệu"
-
-#: ImportExport/ImportDialog.cpp:168 MainWindow/TokenEditor.cpp:63
-msgid "Select All"
-msgstr "Chọn tất cả"
-
-#: ImportExport/ImportDialog.cpp:170
-msgid "Deselect All"
-msgstr "Hủy chọn hết"
-
-#: ImportExport/ImportDialog.cpp:205
-msgid "Select Which Images to Import"
-msgstr "Chọn những ảnh cần nhập"
-
-#: ImportExport/ImportDialog.cpp:217
-msgid "Destination of images: "
-msgstr "Đích của ảnh: "
-
-#: ImportExport/ImportDialog.cpp:231
-msgid "Destination of Images"
-msgstr "Đích của ảnh"
-
-#: ImportExport/ImportDialog.cpp:239
-#, kde-format
-msgid "The directory must be a subdirectory of %1"
-msgstr "Thư mục phải là thư mục con của %1"
-
-#: ImportExport/ImportDialog.cpp:281
-msgid "Match Categories"
-msgstr "Khớp phân loại"
-
-#: ImportExport/ImportDialog.cpp:313
-#, fuzzy, kde-format
-#| msgid "Directory %1 does not exists. Should it be created?"
-msgid "Directory %1 does not exist. Should it be created?"
-msgstr "Thư mục %1 không tồn tại. Có nên tạo nó không?"
-
-#: ImportExport/ImportDialog.cpp:317
-#, kde-format
-msgid "Error creating directory %1"
-msgstr "Gặp lỗi khi tạo thư mục %1"
-
-#: ImportExport/ImportDialog.cpp:403
-#, fuzzy
-#| msgid "How to Handle Images"
-msgid "How to resolve clashes"
-msgstr "Cách thao tác ảnh"
-
 #: ImportExport/ImportMatcher.cpp:45
 msgid "Key in file"
 msgstr "Khóa trong tập tin"
@@ -1416,70 +1300,9 @@ msgstr "Khóa trong tập tin"
 msgid "Key in your database"
 msgstr "Khóa trong co sở dữ liệu của bạn"
 
-#: ImportExport/MD5CheckPage.cpp:49
-#, kde-format
-msgid ""
-"One image from the import file, has the same MD5 sum as an image in the "
-"Database, how should that be resolved?"
-msgid_plural ""
-"%1 images from the import file, have the same MD5 sum as images in the "
-"Database, how should that be resolved?"
-msgstr[0] ""
-
-#: ImportExport/MD5CheckPage.cpp:64
-msgid ""
-"Use data from\n"
-"Import File"
-msgstr ""
-
-#: ImportExport/MD5CheckPage.cpp:67
-#, fuzzy
-#| msgid "Loading Database"
-msgid ""
-"Use data from\n"
-"Database"
-msgstr "Đang nạp cơ sở dữ liệu"
-
-#: ImportExport/MD5CheckPage.cpp:70
-msgid "Merge data"
-msgstr ""
-
-#: ImportExport/MD5CheckPage.cpp:77
-msgid "Date and Time"
-msgstr ""
-
 #: ImportExport/MiniViewer.cpp:69 Viewer/ViewerWidget.cpp:163
 msgid "Close"
 msgstr "Đóng"
-
-#: ImportExport/ImportHandler.cpp:85 ImportExport/ImportHandler.cpp:137
-msgid "Copying Images"
-msgstr "Đang sao chép ảnh"
-
-#: ImportExport/ImportHandler.cpp:85 ImportExport/ImportHandler.cpp:137
-#: ImportExport/Export.cpp:212
-msgid "&Cancel"
-msgstr "&Thôi"
-
-#: ImportExport/ImportHandler.cpp:151
-#, fuzzy, kde-format
-#| msgid "Error when writing image %s"
-msgid "Error when writing image %1"
-msgstr "Găp lỗi khi ghi ảnh %s"
-
-#: ImportExport/ImportHandler.cpp:170
-#, fuzzy
-#| msgid "Loading Database"
-msgid "Updating Database"
-msgstr "Đang nạp cơ sở dữ liệu"
-
-#: ImportExport/ImportHandler.cpp:199
-msgid "Cannot copy from any of the following locations:"
-msgstr ""
-
-#: ImportExport/ImportHandler.cpp:200
-msgid "Continue without Asking"
-msgstr ""
 
 #: ImportExport/Export.cpp:72
 #, fuzzy
@@ -1596,6 +1419,11 @@ msgstr ""
 msgid "Error creating zip file"
 msgstr "Gặp lỗi khi tạo tập tin nén zip"
 
+#: ImportExport/Export.cpp:212 ImportExport/ImportHandler.cpp:85
+#: ImportExport/ImportHandler.cpp:137
+msgid "&Cancel"
+msgstr "&Thôi"
+
 #: ImportExport/Export.cpp:229
 msgid "Creating index file"
 msgstr "Đang tạo tập tin chỉ mục"
@@ -1608,12 +1436,12 @@ msgstr "Đang tạo các mẫu ảnh"
 msgid "Copying image files"
 msgstr "Đang sao chép các tập tin ảnh"
 
-#: ImportExport/Export.cpp:332
+#: ImportExport/Export.cpp:333
 #, kde-format
 msgid "Error writing file %1"
 msgstr "Gặp lỗi khi ghi tập tin %1"
 
-#: ImportExport/Export.cpp:362
+#: ImportExport/Export.cpp:363
 msgid ""
 "<p>Other KPhotoAlbum users may now load the import file into their database, "
 "by choosing <b>import</b> in the file menu.</p><p>If they find it on a web "
@@ -1636,9 +1464,149 @@ msgstr ""
 "người dùng nhấn vào liên kết. Nếu không thì trình phục vụ Mạng sẽ chỉ báo "
 "Konqueror biết nó là tập tin văn bản chuẩn.</p>"
 
-#: ImportExport/Export.cpp:371
+#: ImportExport/Export.cpp:372
 msgid "How to Use the Export File"
 msgstr "Cách dùng tập tin xuất"
+
+#: ImportExport/ImportDialog.cpp:82
+#, kde-format
+msgid "Error in file %1 on line %2 col %3: %4"
+msgstr "Gặp lỗi trong tập tin %1 trên dòng %2 cột %3: %4"
+
+#: ImportExport/ImportDialog.cpp:89
+#, kde-format
+msgid ""
+"Unexpected top element while reading file %1. Expected KPhotoAlbum-export "
+"found %2"
+msgstr ""
+"Gặp yếu tố đầu bất thường trong khi đọc tập tin %1. Đợi hỏi xuất khẩu "
+"KPhotoAlbum còn tìm %2"
+
+#: ImportExport/ImportDialog.cpp:97
+msgid ""
+"<p>XML file did not specify the source of the images, this is a strong "
+"indication that the file is corrupted</p>"
+msgstr ""
+"<p>Tập tin XML đã không xác định nguồn của các ảnh: rất ngụ ý là tập tin bị "
+"hỏng.</p>"
+
+#: ImportExport/ImportDialog.cpp:109
+#, kde-format
+msgid "Unknown element while reading %1, expected image."
+msgstr "Gặp yếu tố lạ trong khi đọc %1, còn đợi hỏi ảnh."
+
+#: ImportExport/ImportDialog.cpp:134
+msgid ""
+"<h1><font size=\"+2\">Welcome to KPhotoAlbum Import</font></h1>This wizard "
+"will take you through the steps of an import operation. The steps are: "
+"<ol><li>First you must select which images you want to import from the "
+"export file. You do so by selecting the checkbox next to the image.</"
+"li><li>Next you must tell KPhotoAlbum in which directory to put the images. "
+"This directory must of course be below the directory root KPhotoAlbum uses "
+"for images. KPhotoAlbum will take care to avoid name clashes</li><li>The "
+"next step is to specify which categories you want to import (People, "
+"Places, ... ) and also tell KPhotoAlbum how to match the categories from the "
+"file to your categories. Imagine you load from a file, where a category is "
+"called <b>Blomst</b> (which is the Danish word for flower), then you would "
+"likely want to match this with your category, which might be called "
+"<b>Blume</b> (which is the German word for flower) - of course given you are "
+"German.</li><li>The final steps, is matching the individual tokens from the "
+"categories. I may call myself <b>Jesper</b> in my image database, while you "
+"want to call me by my full name, namely <b>Jesper K. Pedersen</b>. In this "
+"step non matches will be highlighted in red, so you can see which tokens was "
+"not found in your database, or which tokens was only a partial match.</li></"
+"ol>"
+msgstr ""
+"<h1><font size=\"+2\">Chào mừng bạn dùng khả năng Nhập KPhotoAlbum</font></"
+"h1>Trợ lý này sẽ hướng dẫn bạn qua các bước của thao tác nhâp khẩu :"
+"<ol><li>Trước tiên, bạn hãy chọn những ảnh cần nhập khẩu từ tập tin xuất, "
+"bằng cách đánh dấu trong hộp chọn ở cạnh mỗi ảnh.</li><li>Báo trình "
+"KPhotoAlbum để các ảnh ở đâu. Thư mục này phải nằm dưới (bên trong) thư mục "
+"gốc KPhotoAlbum dùng cho các ảnh. Trình này cũng sẽ tránh cẩn thận các tên "
+"xung đột với nhau.</li><li>Xác định những phân loại cần nhập (v.d. Người, "
+"Nơi); cũng báo trình KPhotoAlbum biết cách khớp phân loại của tập tin với "
+"phân loại của bạn. Chẳng hạn, nếu bạn nhập từ một tập tin chứa phân loại tên "
+"<b>Flowers</b> (tiếng Anh), bạn có thể muốn khớp nó với phân loại <b>Hoa</b> "
+"(tiếng Việt) của bạn.</li><li>Cuối cùng, khớp các hiệu bài riêng từ phân "
+"loại. Lấy thí dụ, nếu tập tin nhập gồm gọi người là <b>Anh</b>, bạn có thể "
+"muốn gọi họ là <b>Nguyễn Văn Anh</b> hay <b>Bác Anh</b>, đặc biệt khi có "
+"nhiều người có tên <b>Anh</b>. Trong bước này, các điều không khớp thì có "
+"màu đỏ, để cho bạn xem dễ dàng những hiệu bài nào không được tìm trong co sở "
+"dữ liệu của bạn, hoặc những hiệu bài nào chỉ khớp một phần.</li></ol>"
+
+#: ImportExport/ImportDialog.cpp:153
+msgid "Introduction"
+msgstr "Giới thiệu"
+
+#: ImportExport/ImportDialog.cpp:169 MainWindow/TokenEditor.cpp:63
+msgid "Select All"
+msgstr "Chọn tất cả"
+
+#: ImportExport/ImportDialog.cpp:171
+msgid "Deselect All"
+msgstr "Hủy chọn hết"
+
+#: ImportExport/ImportDialog.cpp:206
+msgid "Select Which Images to Import"
+msgstr "Chọn những ảnh cần nhập"
+
+#: ImportExport/ImportDialog.cpp:218
+msgid "Destination of images: "
+msgstr "Đích của ảnh: "
+
+#: ImportExport/ImportDialog.cpp:232
+msgid "Destination of Images"
+msgstr "Đích của ảnh"
+
+#: ImportExport/ImportDialog.cpp:240
+#, kde-format
+msgid "The directory must be a subdirectory of %1"
+msgstr "Thư mục phải là thư mục con của %1"
+
+#: ImportExport/ImportDialog.cpp:282
+msgid "Match Categories"
+msgstr "Khớp phân loại"
+
+#: ImportExport/ImportDialog.cpp:314
+#, fuzzy, kde-format
+#| msgid "Directory %1 does not exists. Should it be created?"
+msgid "Directory %1 does not exist. Should it be created?"
+msgstr "Thư mục %1 không tồn tại. Có nên tạo nó không?"
+
+#: ImportExport/ImportDialog.cpp:318
+#, kde-format
+msgid "Error creating directory %1"
+msgstr "Gặp lỗi khi tạo thư mục %1"
+
+#: ImportExport/ImportDialog.cpp:404
+#, fuzzy
+#| msgid "How to Handle Images"
+msgid "How to resolve clashes"
+msgstr "Cách thao tác ảnh"
+
+#: ImportExport/ImportHandler.cpp:85 ImportExport/ImportHandler.cpp:137
+msgid "Copying Images"
+msgstr "Đang sao chép ảnh"
+
+#: ImportExport/ImportHandler.cpp:151
+#, fuzzy, kde-format
+#| msgid "Error when writing image %s"
+msgid "Error when writing image %1"
+msgstr "Găp lỗi khi ghi ảnh %s"
+
+#: ImportExport/ImportHandler.cpp:170
+#, fuzzy
+#| msgid "Loading Database"
+msgid "Updating Database"
+msgstr "Đang nạp cơ sở dữ liệu"
+
+#: ImportExport/ImportHandler.cpp:199
+msgid "Cannot copy from any of the following locations:"
+msgstr ""
+
+#: ImportExport/ImportHandler.cpp:200
+msgid "Continue without Asking"
+msgstr ""
 
 #: ImportExport/KimFileReader.cpp:35
 #, kde-format
@@ -1698,15 +1666,37 @@ msgstr ""
 msgid "No image existed in export file for %1"
 msgstr "Không có ảnh tồn tại trong tập tin xuất khẩu cho %1"
 
-#: MainWindow/CategoryImagePopup.cpp:61
-msgid "Show Category Editor"
-msgstr "Hiện bộ sửa phân loại"
+#: ImportExport/MD5CheckPage.cpp:49
+#, kde-format
+msgid ""
+"One image from the import file, has the same MD5 sum as an image in the "
+"Database, how should that be resolved?"
+msgid_plural ""
+"%1 images from the import file, have the same MD5 sum as images in the "
+"Database, how should that be resolved?"
+msgstr[0] ""
 
-#: MainWindow/CategoryImagePopup.cpp:83
+#: ImportExport/MD5CheckPage.cpp:64
+msgid ""
+"Use data from\n"
+"Import File"
+msgstr ""
+
+#: ImportExport/MD5CheckPage.cpp:67
 #, fuzzy
-#| msgid "Configure Category Image"
-msgid "Make Category Image"
-msgstr "Cấu hình ảnh phân loại"
+#| msgid "Loading Database"
+msgid ""
+"Use data from\n"
+"Database"
+msgstr "Đang nạp cơ sở dữ liệu"
+
+#: ImportExport/MD5CheckPage.cpp:70
+msgid "Merge data"
+msgstr ""
+
+#: ImportExport/MD5CheckPage.cpp:77
+msgid "Date and Time"
+msgstr ""
 
 #: MainWindow/ImageCounter.cpp:32
 #, fuzzy, kde-format
@@ -1741,7 +1731,7 @@ msgstr "Phiên bản %1"
 msgid "Version: %1"
 msgstr "Phiên bản: %1"
 
-#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:716
+#: MainWindow/TokenEditor.cpp:38 MainWindow/Window.cpp:718
 msgid "Remove Tokens"
 msgstr "Gỡ bỏ hiệu bài"
 
@@ -1752,82 +1742,6 @@ msgstr "Chọn những hiệu bài cần gỡ bỏ ra mọi ảnh và ảnh đ�
 #: MainWindow/TokenEditor.cpp:64
 msgid "Select None"
 msgstr "Chọn Không gì"
-
-#: MainWindow/DeleteDialog.cpp:45
-msgid "Removing items"
-msgstr ""
-
-#: MainWindow/DeleteDialog.cpp:47
-msgid "OK"
-msgstr "OK"
-
-#: MainWindow/DeleteDialog.cpp:73
-#, kde-format
-msgid "Removing 1 item"
-msgid_plural "Removing %1 items"
-msgstr[0] ""
-
-#: MainWindow/DeleteDialog.cpp:74
-#, kde-format
-msgid ""
-"Selected item will be removed from the database.<br/>What do you want to do "
-"with the file on disk?"
-msgid_plural ""
-"Selected %1 items will be removed from the database.<br/>What do you want to "
-"do with the files on disk?"
-msgstr[0] ""
-
-#: MainWindow/DeleteDialog.cpp:80
-#, kde-format
-msgid "Move file to Trash"
-msgid_plural "Move %1 files to Trash"
-msgstr[0] ""
-
-#: MainWindow/DeleteDialog.cpp:81
-#, fuzzy, kde-format
-#| msgid "Delete file from disk as well"
-msgid "Delete file from disk"
-msgid_plural "Delete %1 files from disk"
-msgstr[0] "Cũng xoá tập tin ra đĩa"
-
-#: MainWindow/DeleteDialog.cpp:82
-#, fuzzy, kde-format
-#| msgid "Delete from database"
-msgid "Only remove the item from database"
-msgid_plural "Only remove %1 items from database"
-msgstr[0] "Xoá ra cơ sở dữ liệu"
-
-#: MainWindow/DeleteDialog.cpp:139
-#, fuzzy
-#| msgid "Error Deleting Files"
-msgid "Error Deleting Files"
-msgstr "Gặp lỗi khi xoá tập tin"
-
-#: MainWindow/ExternalPopup.cpp:46
-msgid "Current Item"
-msgstr "Mục hiện có"
-
-#: MainWindow/ExternalPopup.cpp:46
-msgid "All Selected Items"
-msgstr "Mọi mục đã chọn"
-
-#: MainWindow/ExternalPopup.cpp:46
-msgid "Copy and Open"
-msgstr ""
-
-#: MainWindow/ExternalPopup.cpp:74 MainWindow/ExternalPopup.cpp:75
-#: MainWindow/ExternalPopup.cpp:144
-msgid "Open With..."
-msgstr ""
-
-#: MainWindow/ExternalPopup.cpp:82 MainWindow/ExternalPopup.cpp:83
-#: MainWindow/ExternalPopup.cpp:134
-msgid "Your Command Line"
-msgstr ""
-
-#: MainWindow/ExternalPopup.cpp:160
-msgid "Invoke External Program"
-msgstr "Gọi trình bên ngoài"
 
 #: MainWindow/WelcomeDialog.cpp:55
 msgid ""
@@ -1907,120 +1821,6 @@ msgstr "Kiểm tra tính năng"
 msgid "Congratulations: all dynamic features have been enabled."
 msgstr ""
 
-#: MainWindow/InvalidDateFinder.cpp:42
-msgid "Search for Images and Videos with Missing Dates"
-msgstr "Tìm kiếm ảnh (động) thiếu ngày"
-
-#: MainWindow/InvalidDateFinder.cpp:49
-msgid "Which Images and Videos to Display"
-msgstr "Những ảnh (động) nào cần hiển thị"
-
-#: MainWindow/InvalidDateFinder.cpp:53
-msgid ""
-"Search for images and videos with a valid date but an invalid time stamp"
-msgstr ""
-"Tìm kiếm ảnh và ảnh động có ngày tháng hợp lệ nhưng có nhãn giờ không hợp lệ"
-
-#: MainWindow/InvalidDateFinder.cpp:54
-msgid "Search for images and videos missing date and time"
-msgstr "Tìm kiếm ảnh (động) thiếu cả hai ngày tháng và giờ"
-
-#: MainWindow/InvalidDateFinder.cpp:55
-msgid ""
-"Search for images and videos with only partial dates (like 1971 vs. "
-"11/7-1971)"
-msgstr ""
-"Tìm kiếm ảnh (động) không có ngày tháng hoàn toàn (v.d. chỉ 1991, so với "
-"11/7-1991)"
-
-#: MainWindow/InvalidDateFinder.cpp:70
-msgid "Image Info"
-msgstr "Thông tin ảnh"
-
-#: MainWindow/InvalidDateFinder.cpp:79
-msgid "<h1>Here you may see the date changes for the displayed items.</h1>"
-msgstr ""
-"<h1>Ở đây bạn có thể xem các thay đổi trong ngày tháng của những mục đã hiển "
-"thị.</h1>"
-
-#: MainWindow/InvalidDateFinder.cpp:84
-msgid "Reading file properties"
-msgstr "Đang đọc các tài sản tập tin"
-
-#: MainWindow/InvalidDateFinder.cpp:85
-msgid "Reading File Properties"
-msgstr "Đang đọc các tài sản tập tin"
-
-#: MainWindow/RunDialog.cpp:37
-#, no-c-format
-msgid ""
-"<p>Enter your command to run below:</p><p><i>%all will be replaced with a "
-"file list</i></p>"
-msgstr ""
-
-#: MainWindow/RunDialog.cpp:46
-#, no-c-format
-msgid ""
-"<p>Enter the command you want to run on your image file(s).  KPhotoAlbum "
-"will run your command and replace any '%all' tokens with a list of your "
-"files.  For example, if you entered:</p><ul><li>cp %all /tmp</li></"
-"ul><p>Then the files you selected would be copied to the /tmp directory</"
-"p><p>You can also use %each to have a command be run once per file.</p>"
-msgstr ""
-
-#: MainWindow/RunDialog.cpp:69
-#, no-c-format
-msgid "%all"
-msgstr ""
-
-#: MainWindow/RunDialog.cpp:71
-#, fuzzy, no-c-format
-#| msgid "Search"
-msgid "%each"
-msgstr "Tìm kiếm"
-
-#: MainWindow/AutoStackImages.cpp:43
-msgid "Automatically Stack Images"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:54
-msgid "Stack images with identical MD5 sum"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:66
-msgctxt ""
-"The whole sentence should read: *Stack images that are shot within x seconds "
-"of each other*. So images that are shot in one burst are automatically "
-"stacked together. (This sentence is before the x.)"
-msgid "Stack images that are shot within"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:76
-#, fuzzy
-#| msgid "1 second"
-msgctxt ""
-"The whole sentence should read: *Stack images that are shot within x seconds "
-"of each other*. (This being the text after x.)"
-msgid "seconds"
-msgstr "1 giây"
-
-#: MainWindow/AutoStackImages.cpp:79
-msgid "AutoStacking Options"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:83
-msgid "Include matching image to appropriate stack (if one exists)"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:87
-msgid ""
-"Unstack images from their current stack and create new one for the matches"
-msgstr ""
-
-#: MainWindow/AutoStackImages.cpp:91
-msgid "Skip images that are already in a stack"
-msgstr ""
-
 #: MainWindow/StatisticsDialog.cpp:43
 msgid ""
 "<h1>Description</h1><table><tr><td># of Items</td><td>This is the number of "
@@ -2081,482 +1881,6 @@ msgstr ""
 #| msgid "Total: %1"
 msgid "Total"
 msgstr "Tổng: %1"
-
-#: MainWindow/Window.cpp:142
-msgid "Loading Database"
-msgstr "Đang nạp cơ sở dữ liệu"
-
-#: MainWindow/Window.cpp:148
-msgid "Loading Main Window"
-msgstr "Đang nạp cửa sổ chính"
-
-#: MainWindow/Window.cpp:237
-#, fuzzy
-#| msgid "Searching for New Images and Videos"
-msgid "Searching for New Files"
-msgstr "Đang tìm kiếm ảnh (động) mới"
-
-#: MainWindow/Window.cpp:243
-msgid "Loading Plug-ins"
-msgstr "Đang nạp các bổ sung"
-
-#: MainWindow/Window.cpp:264
-msgid ""
-"EXIF database cannot be opened. Check that the image root directory is "
-"writable."
-msgstr ""
-"Không thể mở co sở dữ liệu EXIF. Hãy kiểm tra xem thư mục ảnh gốc có khả "
-"năng ghi."
-
-#: MainWindow/Window.cpp:273
-msgid ""
-"<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
-"KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
-"now? If you do not delete it, it will waste disk space; on the other hand, "
-"if you want to come back and try the demo again, you might want to keep it "
-"around with the changes you made through this session.</p>"
-msgstr ""
-"<p><b>Xoá cơ sở dữ liệu biểu diễn tạm thời</b></p><p>Chúng tôi hi vọng bạn "
-"đã thích thú với bản biểu diễn KPhotoAlbum. Cơ sở dữ liệu biểu diễn đã được "
-"sao chép vào thư mục /tmp, lúc này bạn có muốn xoá nó không? Nếu không, nó "
-"sẽ gây lãng phí không gian đĩa của bạn. Tuy nhiên, nếu bạn vẫn muốn xem lại "
-"lần nữa, có thể bạn sẽ muốn giữ nó lại cùng với những thay đổi mà bạn đã tạo "
-"ra trong phiên làm việc này</p>"
-
-#: MainWindow/Window.cpp:278
-msgid "Delete Demo Database"
-msgstr "Xoá cơ sở dữ liệu chứng minh"
-
-#: MainWindow/Window.cpp:293
-msgid "Do you want to save the changes?"
-msgstr "Bạn có muốn lưu các thay đổi không?"
-
-#: MainWindow/Window.cpp:294
-msgid "Save Changes?"
-msgstr "Lưu thay đổi ?"
-
-#: MainWindow/Window.cpp:332
-msgid ""
-"Some of the selected images already belong to a stack. Do you want to remove "
-"them from their stacks and create a completely new one?"
-msgstr ""
-
-#: MainWindow/Window.cpp:334 MainWindow/Window.cpp:339
-msgid "Stacking Error"
-msgstr ""
-
-#: MainWindow/Window.cpp:338
-msgid "Unknown error, stack creation failed."
-msgstr ""
-
-#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:542
-#: MainWindow/Window.cpp:1289
-msgid "No item is selected."
-msgstr "Chưa chọn mục nào."
-
-#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:542
-#: MainWindow/Window.cpp:1290
-msgid "No Selection"
-msgstr "Chưa chọn gì"
-
-#: MainWindow/Window.cpp:467
-msgid "Saving..."
-msgstr "Đang lưu..."
-
-#: MainWindow/Window.cpp:471
-msgid "Saving... Done"
-msgstr "Đang lưu... xong."
-
-#: MainWindow/Window.cpp:607
-msgid "There are no images to be shown."
-msgstr ""
-
-#: MainWindow/Window.cpp:677
-msgid "Generate HTML..."
-msgstr "Tạo ra mã HTML..."
-
-#: MainWindow/Window.cpp:681
-msgid "Import..."
-msgstr "Nhập..."
-
-#: MainWindow/Window.cpp:684
-#, fuzzy
-#| msgid "Copying Images"
-msgid "Export/Copy Images..."
-msgstr "Đang sao chép ảnh"
-
-#: MainWindow/Window.cpp:710
-msgid "Delete Selected"
-msgstr "Xoá điều chọn"
-
-#: MainWindow/Window.cpp:719
-msgid "Open List of Files..."
-msgstr ""
-
-#: MainWindow/Window.cpp:723
-msgid "Annotate Individual Items"
-msgstr "Chú giải mục riêng"
-
-#: MainWindow/Window.cpp:727
-msgid "Annotate Multiple Items at a Time"
-msgstr "Chú giải đồng thời nhiều mục"
-
-#: MainWindow/Window.cpp:731
-msgid "Merge Images into a Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:735
-msgid "Remove Images from Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:738 Viewer/ViewerWidget.cpp:151
-msgid "Set as First Image in Stack"
-msgstr ""
-
-#: MainWindow/Window.cpp:753
-msgid "View"
-msgstr "Xem"
-
-#: MainWindow/Window.cpp:757
-msgid "View (In New Window)"
-msgstr "Xem (trong cửa sổ mới)"
-
-#: MainWindow/Window.cpp:760
-msgid "Run Slide Show"
-msgstr "Chạy chiếu ảnh"
-
-#: MainWindow/Window.cpp:765
-msgid "Run Randomized Slide Show"
-msgstr "Chạy chiếu ảnh ngẫu nhiên"
-
-#: MainWindow/Window.cpp:771
-msgid "Collapse all stacks"
-msgstr ""
-
-#: MainWindow/Window.cpp:777
-msgid "Expand all stacks"
-msgstr ""
-
-#: MainWindow/Window.cpp:782
-msgid "Show &Oldest First"
-msgstr "Hiện &cú nhất trước"
-
-#: MainWindow/Window.cpp:787
-msgid "Show &Newest First"
-msgstr "Hiện mới &nhất trước"
-
-#: MainWindow/Window.cpp:792
-msgid "Sort Selected by Date && Time"
-msgstr "Sắp xếp điều chọn theo ngày và giờ"
-
-#: MainWindow/Window.cpp:795
-msgid "Limit View to Marked"
-msgstr "Chỉ hiện điều có dấu"
-
-#: MainWindow/Window.cpp:798
-msgid "Jump to Context"
-msgstr "Nhảy tới ngữ cảnh"
-
-#: MainWindow/Window.cpp:803
-msgid "Lock Images"
-msgstr "Khoá ảnh"
-
-#: MainWindow/Window.cpp:806
-msgid "Unlock"
-msgstr "Bỏ khoá"
-
-#: MainWindow/Window.cpp:809
-msgid "Change Password..."
-msgstr "Đổi mật khẩu..."
-
-#: MainWindow/Window.cpp:813
-msgid "Lock Away All Other Items"
-msgstr "Khoá riêng các mục khác"
-
-#: MainWindow/Window.cpp:816
-msgid "Lock Away Current Set of Items"
-msgstr "Khoá riêng tập mục hiện có"
-
-#: MainWindow/Window.cpp:820
-msgid "Display Images and Videos Not on Disk"
-msgstr "Hiển thị ảnh (động) không phải trên đĩa"
-
-#: MainWindow/Window.cpp:823
-msgid "Display Images and Videos with Incomplete Dates..."
-msgstr "Hiển thị ảnh (động) có ngày tháng không hoàn toàn..."
-
-#: MainWindow/Window.cpp:827
-msgid "Display Images and Videos with Changed MD5 Sum"
-msgstr "Hiển thị ảnh (động) có tổng kiểm MD5 bị sửa đổi"
-
-#: MainWindow/Window.cpp:831
-msgid "Recalculate Checksum"
-msgstr "Tính lại tổng kiểm tra"
-
-#: MainWindow/Window.cpp:834
-msgid "Rescan for Images and Videos"
-msgstr "Quết lại tìm ảnh (động)"
-
-#: MainWindow/Window.cpp:837
-#, fuzzy
-#| msgid "Update EXIF search database"
-msgid "Recreate Exif Search Database"
-msgstr "Cập nhật co sở dữ liệu tìm EXIF"
-
-#: MainWindow/Window.cpp:840
-msgid "Read EXIF Info From Files..."
-msgstr "Đọc thông tin EXIF từ tập tin..."
-
-#: MainWindow/Window.cpp:842
-msgid ""
-"Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
-msgstr ""
-
-#: MainWindow/Window.cpp:843
-msgid ""
-"Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
-msgstr ""
-
-#: MainWindow/Window.cpp:849
-msgid "Automatically Stack Selected Images..."
-msgstr ""
-
-#: MainWindow/Window.cpp:853
-msgid "Convert Backend...(Experimental!)"
-msgstr "Chuyển đổi hậu phương... (thử nghiệm !)"
-
-#: MainWindow/Window.cpp:858
-msgid "Build Thumbnails"
-msgstr "Xây dựng mẫu ảnh"
-
-#: MainWindow/Window.cpp:861
-msgid "Statistics"
-msgstr ""
-
-#: MainWindow/Window.cpp:870
-msgid "Enable All Messages"
-msgstr "Bật mọi thông điệp"
-
-#: MainWindow/Window.cpp:873
-#, fuzzy
-#| msgid "Configure View"
-msgid "Configure Current View"
-msgstr "Cấu hình ô xem"
-
-#: MainWindow/Window.cpp:882
-#, fuzzy
-#| msgid "Theme:"
-msgid "Tree"
-msgstr "Sắc thái:"
-
-#: MainWindow/Window.cpp:887
-msgid "Tree with User Icons"
-msgstr ""
-
-#: MainWindow/Window.cpp:893 MainWindow/Window.cpp:899
-#, fuzzy
-#| msgid "Icon:"
-msgid "Icons"
-msgstr "Biểu tượng:"
-
-#: MainWindow/Window.cpp:911
-msgid "Show Tooltips in Thumbnails Window"
-msgstr "Hiện mẹo công cụ trong cửa sổ mẫu ảnh"
-
-#: MainWindow/Window.cpp:917
-msgid "Run KPhotoAlbum Demo"
-msgstr "Chạy chứng minh KPhotoAlbum"
-
-#: MainWindow/Window.cpp:920
-msgid "KPhotoAlbum Feature Status"
-msgstr "Trạng thái tính năng KPhotoAlbum"
-
-#: MainWindow/Window.cpp:923
-#, fuzzy
-#| msgid "Show Videos"
-msgid "Show Demo Videos"
-msgstr "Hiện ảnh động"
-
-#: MainWindow/Window.cpp:928
-msgid "Show Exif Info"
-msgstr "Hiện thông tin EXIF"
-
-#: MainWindow/Window.cpp:931
-msgid "Recreate Selected Thumbnails"
-msgstr "Tạo ra các mẫu ảnh đã chọn"
-
-#: MainWindow/Window.cpp:956
-msgid "Auto saving...."
-msgstr "Đang tự động lưu..."
-
-#: MainWindow/Window.cpp:958
-msgid "Auto saving.... Done"
-msgstr "Đang tự động lưu... xong."
-
-#: MainWindow/Window.cpp:1063
-#, kde-format
-msgid ""
-"SQL backend initialization failed, because following error occurred:\n"
-"%1"
-msgstr ""
-"Việc khởi tạo hậu phương SQL bị lỗi, do lỗi này:\n"
-"%1"
-
-#: MainWindow/Window.cpp:1067
-msgid "SQL database support is not compiled in."
-msgstr "Chưa biên dịch khả năng hỗ trợ co sở dữ liệu SQL vào phần mềm này."
-
-#: MainWindow/Window.cpp:1072
-#, kde-format
-msgid "Invalid database backend: %1"
-msgstr "Hậu phương co sở dữ liệu không hợp lệ: %1"
-
-#: MainWindow/Window.cpp:1077
-msgid "Do you want to use XML backend instead?"
-msgstr "Bạn có muốn sử dụng hậu phương XML thay thế không?"
-
-#: MainWindow/Window.cpp:1087
-#, kde-format
-msgid ""
-"<p>Could not open given index.xml as provided directory does not exist.<br />"
-"%1</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1095
-#, kde-format
-msgid ""
-"<p>Given index file does not exist, do you want to create following?<br />%1/"
-"index.xml</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1160
-msgid ""
-"<p>The password protection is only a means of allowing your little sister to "
-"look in your images, without getting to those embarrassing images from your "
-"last party.</p><p>In other words, anyone with access to the index.xml file "
-"can easily circumvent this password.</b></p>"
-msgstr ""
-"<p>Khả năng bảo vệ bằng mật khẩu không phải mạnh, chỉ tránh người khác tình "
-"nguyện cờ xem ảnh của bạn.</p><p>Tức là ai truy cập tập tin XML chỉ mục có "
-"thể đi vòng mật khẩu này.</b></p>"
-
-#: MainWindow/Window.cpp:1165
-msgid "Password Protection"
-msgstr "Bảo vệ bằng mật khẩu"
-
-#: MainWindow/Window.cpp:1179
-msgid "Type in Password to Unlock"
-msgstr "Gõ vào mật khẩu để bỏ khoá"
-
-#: MainWindow/Window.cpp:1188 MainWindow/Window.cpp:1222
-msgid "Invalid password."
-msgstr "Mật khẩu không hợp lệ."
-
-#: MainWindow/Window.cpp:1213
-msgid "Type in Old Password"
-msgstr "Gõ vào mật khẩu cũ"
-
-#: MainWindow/Window.cpp:1225
-msgid "Type in New Password"
-msgstr "Gõ vào mật khẩu mới"
-
-#: MainWindow/Window.cpp:1236 Settings/SettingsDialog.cpp:66
-msgid "General"
-msgstr "Chung"
-
-#: MainWindow/Window.cpp:1237 Settings/SettingsDialog.cpp:71
-msgid "Viewer"
-msgstr "Bộ xem"
-
-#: MainWindow/Window.cpp:1250
-msgid "Annotation Dialog"
-msgstr "Hộp thoại chú giải"
-
-#: MainWindow/Window.cpp:1409
-#, fuzzy
-#| msgid ""
-#| "<p>Really enable all messageboxes where you previously checked the do-not-"
-#| "show-again check box?</p>"
-msgid ""
-"<p>Really enable all message boxes where you previously checked the do-not-"
-"show-again check box?</p>"
-msgstr ""
-"<p>Thực sự hiệu lực mọi hộp thông điệp khi bạn đã đánh dấu trong hộp ở cạnh "
-"« Đừng hiện lần nữa » không?</p>"
-
-#: MainWindow/Window.cpp:1420
-msgid ""
-"<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
-"Window::setupPluginMenu). This indicate that you forgot to do a make "
-"install. If you did compile KPhotoAlbum yourself, then please run make "
-"install. If not, please report this as a bug.</p><p>KPhotoAlbum will "
-"continue execution, but it is not entirely unlikely that it will crash later "
-"on due to the missing make install.</p>"
-msgstr ""
-
-#: MainWindow/Window.cpp:1420
-#, fuzzy
-#| msgid "Invoke External Program"
-msgid "Internal Error"
-msgstr "Gọi trình bên ngoài"
-
-#: MainWindow/Window.cpp:1590
-msgid "Open List of Files"
-msgstr ""
-
-#: MainWindow/Window.cpp:1590
-msgid ""
-"You can open a set of files from KPhotoAlbum's image root by listing the "
-"files here."
-msgstr ""
-
-#: MainWindow/Window.cpp:1606
-msgid "No images matching your input were found."
-msgstr ""
-
-#: MainWindow/Window.cpp:1606
-#, fuzzy
-#| msgid "No other"
-msgid "No Matches"
-msgstr "Không có gì khác"
-
-#: MainWindow/Window.cpp:1677
-msgid "Database conversion from SQL database is not yet supported."
-msgstr ""
-"Chưa hỗ trợ khả năng chuyển đổi co sở dữ liệu từ co sở dữ liệu kiểu SQL."
-
-#: MainWindow/Window.cpp:1684
-msgid ""
-"You should set SQL database settings before the conversion. Do you want to "
-"do this now?"
-msgstr ""
-"Bạn nên thiết lập co sở dữ liệu SQL trước khi chuyển đổi. Bạn có muốn làm "
-"như thế ngay bây giờ không?"
-
-#: MainWindow/Window.cpp:1704
-msgid "Converting database"
-msgstr "Đang chuyển đổi co sở dữ liệu"
-
-#: MainWindow/Window.cpp:1707
-msgid "Converting database to SQL."
-msgstr "Đang chuyển đổi co sở dữ liệu sang SQL..."
-
-#: MainWindow/Window.cpp:1708
-msgid "Please wait."
-msgstr "Hãy đợi."
-
-#: MainWindow/Window.cpp:1717
-msgid "Database conversion is ready."
-msgstr "Việc chuyển đổi co sở dữ liệu sẵn sàng."
-
-#: MainWindow/Window.cpp:1720
-#, kde-format
-msgid ""
-"Database conversion failed, because following error occurred:\n"
-"%1"
-msgstr ""
-"Việc chuyển đổi co sở dữ liệu bị lỗi do:\n"
-"%1"
 
 #: MainWindow/FeatureDialog.cpp:38
 msgid "Feature Status"
@@ -2801,14 +2125,681 @@ msgstr "Có"
 msgid "No"
 msgstr "Không"
 
-#: Plugins/Interface.cpp:97
+#: MainWindow/AutoStackImages.cpp:43
+msgid "Automatically Stack Images"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:54
+msgid "Stack images with identical MD5 sum"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:66
+msgctxt ""
+"The whole sentence should read: *Stack images that are shot within x seconds "
+"of each other*. So images that are shot in one burst are automatically "
+"stacked together. (This sentence is before the x.)"
+msgid "Stack images that are shot within"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:76
+#, fuzzy
+#| msgid "1 second"
+msgctxt ""
+"The whole sentence should read: *Stack images that are shot within x seconds "
+"of each other*. (This being the text after x.)"
+msgid "seconds"
+msgstr "1 giây"
+
+#: MainWindow/AutoStackImages.cpp:79
+msgid "AutoStacking Options"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:83
+msgid "Include matching image to appropriate stack (if one exists)"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:87
+msgid ""
+"Unstack images from their current stack and create new one for the matches"
+msgstr ""
+
+#: MainWindow/AutoStackImages.cpp:91
+msgid "Skip images that are already in a stack"
+msgstr ""
+
+#: MainWindow/CategoryImagePopup.cpp:61
+msgid "Show Category Editor"
+msgstr "Hiện bộ sửa phân loại"
+
+#: MainWindow/CategoryImagePopup.cpp:83
+#, fuzzy
+#| msgid "Configure Category Image"
+msgid "Make Category Image"
+msgstr "Cấu hình ảnh phân loại"
+
+#: MainWindow/DeleteDialog.cpp:45
+msgid "Removing items"
+msgstr ""
+
+#: MainWindow/DeleteDialog.cpp:47
+msgid "OK"
+msgstr "OK"
+
+#: MainWindow/DeleteDialog.cpp:73
+#, kde-format
+msgid "Removing 1 item"
+msgid_plural "Removing %1 items"
+msgstr[0] ""
+
+#: MainWindow/DeleteDialog.cpp:74
 #, kde-format
 msgid ""
-"<p>Image needs to be placed in a sub directory of your photo album, which is "
-"rooted at %1. Image path was %2</p>"
+"Selected item will be removed from the database.<br/>What do you want to do "
+"with the file on disk?"
+msgid_plural ""
+"Selected %1 items will be removed from the database.<br/>What do you want to "
+"do with the files on disk?"
+msgstr[0] ""
+
+#: MainWindow/DeleteDialog.cpp:80
+#, kde-format
+msgid "Move file to Trash"
+msgid_plural "Move %1 files to Trash"
+msgstr[0] ""
+
+#: MainWindow/DeleteDialog.cpp:81
+#, fuzzy, kde-format
+#| msgid "Delete file from disk as well"
+msgid "Delete file from disk"
+msgid_plural "Delete %1 files from disk"
+msgstr[0] "Cũng xoá tập tin ra đĩa"
+
+#: MainWindow/DeleteDialog.cpp:82
+#, fuzzy, kde-format
+#| msgid "Delete from database"
+msgid "Only remove the item from database"
+msgid_plural "Only remove %1 items from database"
+msgstr[0] "Xoá ra cơ sở dữ liệu"
+
+#: MainWindow/DeleteDialog.cpp:139
+#, fuzzy
+#| msgid "Error Deleting Files"
+msgid "Error Deleting Files"
+msgstr "Gặp lỗi khi xoá tập tin"
+
+#: MainWindow/ExternalPopup.cpp:47
+msgid "Current Item"
+msgstr "Mục hiện có"
+
+#: MainWindow/ExternalPopup.cpp:47
+msgid "All Selected Items"
+msgstr "Mọi mục đã chọn"
+
+#: MainWindow/ExternalPopup.cpp:47
+msgid "Copy and Open"
 msgstr ""
-"<p>Cần phải để ảnh vào thư mục con của tập ảnh chụp, mà có gốc %1. Đường dẫn "
-"ảnh là %2</p>"
+
+#: MainWindow/ExternalPopup.cpp:75 MainWindow/ExternalPopup.cpp:76
+#: MainWindow/ExternalPopup.cpp:145
+msgid "Open With..."
+msgstr ""
+
+#: MainWindow/ExternalPopup.cpp:83 MainWindow/ExternalPopup.cpp:84
+#: MainWindow/ExternalPopup.cpp:135
+msgid "Your Command Line"
+msgstr ""
+
+#: MainWindow/ExternalPopup.cpp:161
+msgid "Invoke External Program"
+msgstr "Gọi trình bên ngoài"
+
+#: MainWindow/InvalidDateFinder.cpp:42
+msgid "Search for Images and Videos with Missing Dates"
+msgstr "Tìm kiếm ảnh (động) thiếu ngày"
+
+#: MainWindow/InvalidDateFinder.cpp:49
+msgid "Which Images and Videos to Display"
+msgstr "Những ảnh (động) nào cần hiển thị"
+
+#: MainWindow/InvalidDateFinder.cpp:53
+msgid ""
+"Search for images and videos with a valid date but an invalid time stamp"
+msgstr ""
+"Tìm kiếm ảnh và ảnh động có ngày tháng hợp lệ nhưng có nhãn giờ không hợp lệ"
+
+#: MainWindow/InvalidDateFinder.cpp:54
+msgid "Search for images and videos missing date and time"
+msgstr "Tìm kiếm ảnh (động) thiếu cả hai ngày tháng và giờ"
+
+#: MainWindow/InvalidDateFinder.cpp:55
+msgid ""
+"Search for images and videos with only partial dates (like 1971 vs. "
+"11/7-1971)"
+msgstr ""
+"Tìm kiếm ảnh (động) không có ngày tháng hoàn toàn (v.d. chỉ 1991, so với "
+"11/7-1991)"
+
+#: MainWindow/InvalidDateFinder.cpp:70
+msgid "Image Info"
+msgstr "Thông tin ảnh"
+
+#: MainWindow/InvalidDateFinder.cpp:79
+msgid "<h1>Here you may see the date changes for the displayed items.</h1>"
+msgstr ""
+"<h1>Ở đây bạn có thể xem các thay đổi trong ngày tháng của những mục đã hiển "
+"thị.</h1>"
+
+#: MainWindow/InvalidDateFinder.cpp:84
+msgid "Reading file properties"
+msgstr "Đang đọc các tài sản tập tin"
+
+#: MainWindow/InvalidDateFinder.cpp:85
+msgid "Reading File Properties"
+msgstr "Đang đọc các tài sản tập tin"
+
+#: MainWindow/RunDialog.cpp:37
+#, no-c-format
+msgid ""
+"<p>Enter your command to run below:</p><p><i>%all will be replaced with a "
+"file list</i></p>"
+msgstr ""
+
+#: MainWindow/RunDialog.cpp:46
+#, no-c-format
+msgid ""
+"<p>Enter the command you want to run on your image file(s).  KPhotoAlbum "
+"will run your command and replace any '%all' tokens with a list of your "
+"files.  For example, if you entered:</p><ul><li>cp %all /tmp</li></"
+"ul><p>Then the files you selected would be copied to the /tmp directory</"
+"p><p>You can also use %each to have a command be run once per file.</p>"
+msgstr ""
+
+#: MainWindow/RunDialog.cpp:69
+#, no-c-format
+msgid "%all"
+msgstr ""
+
+#: MainWindow/RunDialog.cpp:71
+#, fuzzy, no-c-format
+#| msgid "Search"
+msgid "%each"
+msgstr "Tìm kiếm"
+
+#: MainWindow/Window.cpp:142
+msgid "Loading Database"
+msgstr "Đang nạp cơ sở dữ liệu"
+
+#: MainWindow/Window.cpp:148
+msgid "Loading Main Window"
+msgstr "Đang nạp cửa sổ chính"
+
+#: MainWindow/Window.cpp:237
+#, fuzzy
+#| msgid "Searching for New Images and Videos"
+msgid "Searching for New Files"
+msgstr "Đang tìm kiếm ảnh (động) mới"
+
+#: MainWindow/Window.cpp:243
+msgid "Loading Plug-ins"
+msgstr "Đang nạp các bổ sung"
+
+#: MainWindow/Window.cpp:264
+msgid ""
+"EXIF database cannot be opened. Check that the image root directory is "
+"writable."
+msgstr ""
+"Không thể mở co sở dữ liệu EXIF. Hãy kiểm tra xem thư mục ảnh gốc có khả "
+"năng ghi."
+
+#: MainWindow/Window.cpp:273
+msgid ""
+"<p><b>Delete Your Temporary Demo Database</b></p><p>I hope you enjoyed the "
+"KPhotoAlbum demo. The demo database was copied to /tmp, should it be deleted "
+"now? If you do not delete it, it will waste disk space; on the other hand, "
+"if you want to come back and try the demo again, you might want to keep it "
+"around with the changes you made through this session.</p>"
+msgstr ""
+"<p><b>Xoá cơ sở dữ liệu biểu diễn tạm thời</b></p><p>Chúng tôi hi vọng bạn "
+"đã thích thú với bản biểu diễn KPhotoAlbum. Cơ sở dữ liệu biểu diễn đã được "
+"sao chép vào thư mục /tmp, lúc này bạn có muốn xoá nó không? Nếu không, nó "
+"sẽ gây lãng phí không gian đĩa của bạn. Tuy nhiên, nếu bạn vẫn muốn xem lại "
+"lần nữa, có thể bạn sẽ muốn giữ nó lại cùng với những thay đổi mà bạn đã tạo "
+"ra trong phiên làm việc này</p>"
+
+#: MainWindow/Window.cpp:278
+msgid "Delete Demo Database"
+msgstr "Xoá cơ sở dữ liệu chứng minh"
+
+#: MainWindow/Window.cpp:293
+msgid "Do you want to save the changes?"
+msgstr "Bạn có muốn lưu các thay đổi không?"
+
+#: MainWindow/Window.cpp:294
+msgid "Save Changes?"
+msgstr "Lưu thay đổi ?"
+
+#: MainWindow/Window.cpp:332
+msgid ""
+"Some of the selected images already belong to a stack. Do you want to remove "
+"them from their stacks and create a completely new one?"
+msgstr ""
+
+#: MainWindow/Window.cpp:334 MainWindow/Window.cpp:339
+msgid "Stacking Error"
+msgstr ""
+
+#: MainWindow/Window.cpp:338
+msgid "Unknown error, stack creation failed."
+msgstr ""
+
+#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:544
+#: MainWindow/Window.cpp:1291
+msgid "No item is selected."
+msgstr "Chưa chọn mục nào."
+
+#: MainWindow/Window.cpp:418 MainWindow/Window.cpp:544
+#: MainWindow/Window.cpp:1292
+msgid "No Selection"
+msgstr "Chưa chọn gì"
+
+#: MainWindow/Window.cpp:467
+msgid "Saving..."
+msgstr "Đang lưu..."
+
+#: MainWindow/Window.cpp:471
+msgid "Saving... Done"
+msgstr "Đang lưu... xong."
+
+#: MainWindow/Window.cpp:609
+msgid "There are no images to be shown."
+msgstr ""
+
+#: MainWindow/Window.cpp:679
+msgid "Generate HTML..."
+msgstr "Tạo ra mã HTML..."
+
+#: MainWindow/Window.cpp:683
+msgid "Import..."
+msgstr "Nhập..."
+
+#: MainWindow/Window.cpp:686
+#, fuzzy
+#| msgid "Copying Images"
+msgid "Export/Copy Images..."
+msgstr "Đang sao chép ảnh"
+
+#: MainWindow/Window.cpp:712
+msgid "Delete Selected"
+msgstr "Xoá điều chọn"
+
+#: MainWindow/Window.cpp:721
+msgid "Open List of Files..."
+msgstr ""
+
+#: MainWindow/Window.cpp:725
+msgid "Annotate Individual Items"
+msgstr "Chú giải mục riêng"
+
+#: MainWindow/Window.cpp:729
+msgid "Annotate Multiple Items at a Time"
+msgstr "Chú giải đồng thời nhiều mục"
+
+#: MainWindow/Window.cpp:733
+msgid "Merge Images into a Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:737
+msgid "Remove Images from Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:740 Viewer/ViewerWidget.cpp:151
+msgid "Set as First Image in Stack"
+msgstr ""
+
+#: MainWindow/Window.cpp:755
+msgid "View"
+msgstr "Xem"
+
+#: MainWindow/Window.cpp:759
+msgid "View (In New Window)"
+msgstr "Xem (trong cửa sổ mới)"
+
+#: MainWindow/Window.cpp:762
+msgid "Run Slide Show"
+msgstr "Chạy chiếu ảnh"
+
+#: MainWindow/Window.cpp:767
+msgid "Run Randomized Slide Show"
+msgstr "Chạy chiếu ảnh ngẫu nhiên"
+
+#: MainWindow/Window.cpp:773
+msgid "Collapse all stacks"
+msgstr ""
+
+#: MainWindow/Window.cpp:779
+msgid "Expand all stacks"
+msgstr ""
+
+#: MainWindow/Window.cpp:784
+msgid "Show &Oldest First"
+msgstr "Hiện &cú nhất trước"
+
+#: MainWindow/Window.cpp:789
+msgid "Show &Newest First"
+msgstr "Hiện mới &nhất trước"
+
+#: MainWindow/Window.cpp:794
+msgid "Sort Selected by Date && Time"
+msgstr "Sắp xếp điều chọn theo ngày và giờ"
+
+#: MainWindow/Window.cpp:797
+msgid "Limit View to Marked"
+msgstr "Chỉ hiện điều có dấu"
+
+#: MainWindow/Window.cpp:800
+msgid "Jump to Context"
+msgstr "Nhảy tới ngữ cảnh"
+
+#: MainWindow/Window.cpp:805
+msgid "Lock Images"
+msgstr "Khoá ảnh"
+
+#: MainWindow/Window.cpp:808
+msgid "Unlock"
+msgstr "Bỏ khoá"
+
+#: MainWindow/Window.cpp:811
+msgid "Change Password..."
+msgstr "Đổi mật khẩu..."
+
+#: MainWindow/Window.cpp:815
+msgid "Lock Away All Other Items"
+msgstr "Khoá riêng các mục khác"
+
+#: MainWindow/Window.cpp:818
+msgid "Lock Away Current Set of Items"
+msgstr "Khoá riêng tập mục hiện có"
+
+#: MainWindow/Window.cpp:822
+msgid "Display Images and Videos Not on Disk"
+msgstr "Hiển thị ảnh (động) không phải trên đĩa"
+
+#: MainWindow/Window.cpp:825
+msgid "Display Images and Videos with Incomplete Dates..."
+msgstr "Hiển thị ảnh (động) có ngày tháng không hoàn toàn..."
+
+#: MainWindow/Window.cpp:829
+msgid "Display Images and Videos with Changed MD5 Sum"
+msgstr "Hiển thị ảnh (động) có tổng kiểm MD5 bị sửa đổi"
+
+#: MainWindow/Window.cpp:833
+msgid "Recalculate Checksum"
+msgstr "Tính lại tổng kiểm tra"
+
+#: MainWindow/Window.cpp:836
+msgid "Rescan for Images and Videos"
+msgstr "Quết lại tìm ảnh (động)"
+
+#: MainWindow/Window.cpp:839
+#, fuzzy
+#| msgid "Update EXIF search database"
+msgid "Recreate Exif Search Database"
+msgstr "Cập nhật co sở dữ liệu tìm EXIF"
+
+#: MainWindow/Window.cpp:842
+msgid "Read EXIF Info From Files..."
+msgstr "Đọc thông tin EXIF từ tập tin..."
+
+#: MainWindow/Window.cpp:844
+msgid ""
+"Recreate Exif Search Database (need to compile KPhotoAlbum with Exif support)"
+msgstr ""
+
+#: MainWindow/Window.cpp:845
+msgid ""
+"Read EXIF Info From Files... (need to compile KPhotoAlbum with Exif support)"
+msgstr ""
+
+#: MainWindow/Window.cpp:851
+msgid "Automatically Stack Selected Images..."
+msgstr ""
+
+#: MainWindow/Window.cpp:855
+msgid "Convert Backend...(Experimental!)"
+msgstr "Chuyển đổi hậu phương... (thử nghiệm !)"
+
+#: MainWindow/Window.cpp:860
+msgid "Build Thumbnails"
+msgstr "Xây dựng mẫu ảnh"
+
+#: MainWindow/Window.cpp:863
+msgid "Statistics"
+msgstr ""
+
+#: MainWindow/Window.cpp:872
+msgid "Enable All Messages"
+msgstr "Bật mọi thông điệp"
+
+#: MainWindow/Window.cpp:875
+#, fuzzy
+#| msgid "Configure View"
+msgid "Configure Current View"
+msgstr "Cấu hình ô xem"
+
+#: MainWindow/Window.cpp:884
+#, fuzzy
+#| msgid "Theme:"
+msgid "Tree"
+msgstr "Sắc thái:"
+
+#: MainWindow/Window.cpp:889
+msgid "Tree with User Icons"
+msgstr ""
+
+#: MainWindow/Window.cpp:895 MainWindow/Window.cpp:901
+#, fuzzy
+#| msgid "Icon:"
+msgid "Icons"
+msgstr "Biểu tượng:"
+
+#: MainWindow/Window.cpp:913
+msgid "Show Tooltips in Thumbnails Window"
+msgstr "Hiện mẹo công cụ trong cửa sổ mẫu ảnh"
+
+#: MainWindow/Window.cpp:919
+msgid "Run KPhotoAlbum Demo"
+msgstr "Chạy chứng minh KPhotoAlbum"
+
+#: MainWindow/Window.cpp:922
+msgid "KPhotoAlbum Feature Status"
+msgstr "Trạng thái tính năng KPhotoAlbum"
+
+#: MainWindow/Window.cpp:925
+#, fuzzy
+#| msgid "Show Videos"
+msgid "Show Demo Videos"
+msgstr "Hiện ảnh động"
+
+#: MainWindow/Window.cpp:930
+msgid "Show Exif Info"
+msgstr "Hiện thông tin EXIF"
+
+#: MainWindow/Window.cpp:933
+msgid "Recreate Selected Thumbnails"
+msgstr "Tạo ra các mẫu ảnh đã chọn"
+
+#: MainWindow/Window.cpp:958
+msgid "Auto saving...."
+msgstr "Đang tự động lưu..."
+
+#: MainWindow/Window.cpp:960
+msgid "Auto saving.... Done"
+msgstr "Đang tự động lưu... xong."
+
+#: MainWindow/Window.cpp:1065
+#, kde-format
+msgid ""
+"SQL backend initialization failed, because following error occurred:\n"
+"%1"
+msgstr ""
+"Việc khởi tạo hậu phương SQL bị lỗi, do lỗi này:\n"
+"%1"
+
+#: MainWindow/Window.cpp:1069
+msgid "SQL database support is not compiled in."
+msgstr "Chưa biên dịch khả năng hỗ trợ co sở dữ liệu SQL vào phần mềm này."
+
+#: MainWindow/Window.cpp:1074
+#, kde-format
+msgid "Invalid database backend: %1"
+msgstr "Hậu phương co sở dữ liệu không hợp lệ: %1"
+
+#: MainWindow/Window.cpp:1079
+msgid "Do you want to use XML backend instead?"
+msgstr "Bạn có muốn sử dụng hậu phương XML thay thế không?"
+
+#: MainWindow/Window.cpp:1089
+#, kde-format
+msgid ""
+"<p>Could not open given index.xml as provided directory does not exist.<br />"
+"%1</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1097
+#, kde-format
+msgid ""
+"<p>Given index file does not exist, do you want to create following?<br />%1/"
+"index.xml</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1162
+msgid ""
+"<p>The password protection is only a means of allowing your little sister to "
+"look in your images, without getting to those embarrassing images from your "
+"last party.</p><p>In other words, anyone with access to the index.xml file "
+"can easily circumvent this password.</b></p>"
+msgstr ""
+"<p>Khả năng bảo vệ bằng mật khẩu không phải mạnh, chỉ tránh người khác tình "
+"nguyện cờ xem ảnh của bạn.</p><p>Tức là ai truy cập tập tin XML chỉ mục có "
+"thể đi vòng mật khẩu này.</b></p>"
+
+#: MainWindow/Window.cpp:1167
+msgid "Password Protection"
+msgstr "Bảo vệ bằng mật khẩu"
+
+#: MainWindow/Window.cpp:1181
+msgid "Type in Password to Unlock"
+msgstr "Gõ vào mật khẩu để bỏ khoá"
+
+#: MainWindow/Window.cpp:1190 MainWindow/Window.cpp:1224
+msgid "Invalid password."
+msgstr "Mật khẩu không hợp lệ."
+
+#: MainWindow/Window.cpp:1215
+msgid "Type in Old Password"
+msgstr "Gõ vào mật khẩu cũ"
+
+#: MainWindow/Window.cpp:1227
+msgid "Type in New Password"
+msgstr "Gõ vào mật khẩu mới"
+
+#: MainWindow/Window.cpp:1238 Settings/SettingsDialog.cpp:66
+msgid "General"
+msgstr "Chung"
+
+#: MainWindow/Window.cpp:1239 Settings/SettingsDialog.cpp:71
+msgid "Viewer"
+msgstr "Bộ xem"
+
+#: MainWindow/Window.cpp:1252
+msgid "Annotation Dialog"
+msgstr "Hộp thoại chú giải"
+
+#: MainWindow/Window.cpp:1410
+#, fuzzy
+#| msgid ""
+#| "<p>Really enable all messageboxes where you previously checked the do-not-"
+#| "show-again check box?</p>"
+msgid ""
+"<p>Really enable all message boxes where you previously checked the do-not-"
+"show-again check box?</p>"
+msgstr ""
+"<p>Thực sự hiệu lực mọi hộp thông điệp khi bạn đã đánh dấu trong hộp ở cạnh "
+"« Đừng hiện lần nữa » không?</p>"
+
+#: MainWindow/Window.cpp:1421
+msgid ""
+"<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
+"Window::setupPluginMenu). This indicate that you forgot to do a make "
+"install. If you did compile KPhotoAlbum yourself, then please run make "
+"install. If not, please report this as a bug.</p><p>KPhotoAlbum will "
+"continue execution, but it is not entirely unlikely that it will crash later "
+"on due to the missing make install.</p>"
+msgstr ""
+
+#: MainWindow/Window.cpp:1421
+#, fuzzy
+#| msgid "Invoke External Program"
+msgid "Internal Error"
+msgstr "Gọi trình bên ngoài"
+
+#: MainWindow/Window.cpp:1591
+msgid "Open List of Files"
+msgstr ""
+
+#: MainWindow/Window.cpp:1591
+msgid ""
+"You can open a set of files from KPhotoAlbum's image root by listing the "
+"files here."
+msgstr ""
+
+#: MainWindow/Window.cpp:1607
+msgid "No images matching your input were found."
+msgstr ""
+
+#: MainWindow/Window.cpp:1607
+#, fuzzy
+#| msgid "No other"
+msgid "No Matches"
+msgstr "Không có gì khác"
+
+#: MainWindow/Window.cpp:1677
+msgid "Database conversion from SQL database is not yet supported."
+msgstr ""
+"Chưa hỗ trợ khả năng chuyển đổi co sở dữ liệu từ co sở dữ liệu kiểu SQL."
+
+#: MainWindow/Window.cpp:1684
+msgid ""
+"You should set SQL database settings before the conversion. Do you want to "
+"do this now?"
+msgstr ""
+"Bạn nên thiết lập co sở dữ liệu SQL trước khi chuyển đổi. Bạn có muốn làm "
+"như thế ngay bây giờ không?"
+
+#: MainWindow/Window.cpp:1704
+msgid "Converting database"
+msgstr "Đang chuyển đổi co sở dữ liệu"
+
+#: MainWindow/Window.cpp:1707
+msgid "Converting database to SQL."
+msgstr "Đang chuyển đổi co sở dữ liệu sang SQL..."
+
+#: MainWindow/Window.cpp:1708
+msgid "Please wait."
+msgstr "Hãy đợi."
+
+#: MainWindow/Window.cpp:1717
+msgid "Database conversion is ready."
+msgstr "Việc chuyển đổi co sở dữ liệu sẵn sàng."
+
+#: MainWindow/Window.cpp:1720
+#, kde-format
+msgid ""
+"Database conversion failed, because following error occurred:\n"
+"%1"
+msgstr ""
+"Việc chuyển đổi co sở dữ liệu bị lỗi do:\n"
+"%1"
 
 #: Plugins/ImageCollection.cpp:44
 #, fuzzy
@@ -2833,6 +2824,15 @@ msgstr "Không rõ"
 #| msgid "None"
 msgid "none"
 msgstr "Không có"
+
+#: Plugins/Interface.cpp:97
+#, kde-format
+msgid ""
+"<p>Image needs to be placed in a sub directory of your photo album, which is "
+"rooted at %1. Image path was %2</p>"
+msgstr ""
+"<p>Cần phải để ảnh vào thư mục con của tập ảnh chụp, mà có gốc %1. Đường dẫn "
+"ảnh là %2</p>"
 
 #: SQLDB/DatabaseInitialization.cpp:137
 msgid "Database schema is incompatible."
@@ -3815,7 +3815,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
 #: Utilities/Util.cpp:272 Utilities/Util.cpp:286 Utilities/Util.cpp:304
-#: Utilities/Util.cpp:321 XMLDB/FileReader.cpp:359
+#: Utilities/Util.cpp:321 XMLDB/FileReader.cpp:364
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy chứng minh"
 
@@ -3873,22 +3873,6 @@ msgid "<p><center><font size=\"+4\">Ending Slideshow</font></center></p>"
 msgstr ""
 "<p><center><font size=\"+4\">Đang kết thúc chiếu ảnh</font></center></p>"
 
-#: Viewer/VideoDisplay.cpp:200
-#, fuzzy
-#| msgid "Error Saving Image"
-msgid "Error playing media"
-msgstr "Gặp lỗi khi lưu ảnh"
-
-#: Viewer/ImageDisplay.cpp:350 Viewer/ImageDisplay.cpp:374
-#: Viewer/ImageDisplay.cpp:435
-msgid "Insufficient color depth for this filter"
-msgstr ""
-
-#: Viewer/ImageDisplay.cpp:497
-#, kde-format
-msgid "[ zoom x%1 ]"
-msgstr "[ thu/phóng x%1 ]"
-
 #: Viewer/VisibleOptionsMenu.cpp:33
 #, fuzzy
 #| msgid "Show"
@@ -3938,6 +3922,22 @@ msgstr "Hiện cỡ ảnh"
 #| msgid "Show Ranges"
 msgid "Show Rating"
 msgstr "Hiện phạm vị"
+
+#: Viewer/ImageDisplay.cpp:350 Viewer/ImageDisplay.cpp:374
+#: Viewer/ImageDisplay.cpp:435
+msgid "Insufficient color depth for this filter"
+msgstr ""
+
+#: Viewer/ImageDisplay.cpp:497
+#, kde-format
+msgid "[ zoom x%1 ]"
+msgstr "[ thu/phóng x%1 ]"
+
+#: Viewer/VideoDisplay.cpp:200
+#, fuzzy
+#| msgid "Error Saving Image"
+msgid "Error playing media"
+msgstr "Gặp lỗi khi lưu ảnh"
 
 #: Viewer/ViewerWidget.cpp:146
 msgid "Annotate..."
@@ -4218,7 +4218,7 @@ msgstr "Gặp lỗi khi tạo tập tin zip %1"
 msgid "Error writing file %1 to zip file %2"
 msgstr "Gặp lỗi khi ghi tập tin %1"
 
-#: XMLDB/Database.cpp:626
+#: XMLDB/Database.cpp:605
 #, kde-format
 msgid ""
 "<p>Unknown tag %1, while reading configuration file.</p><p>Expected one of: "
@@ -4242,7 +4242,7 @@ msgstr "Không tìm thấy thẻ « Tùy chọn » trong tập tin cấu hình %
 msgid "Unable to find 'Images' tag in configuration file %1."
 msgstr "Không tìm thấy thẻ « Ảnh » trong tập tin cấu hình %1."
 
-#: XMLDB/FileReader.cpp:262
+#: XMLDB/FileReader.cpp:267
 #, fuzzy
 #| msgid ""
 #| "<p>Your images/videos are not sorted, which means that navigating using "
@@ -4276,7 +4276,7 @@ msgstr ""
 "có ngày tháng được đặt, bạn có thể thực hiện <b>Ảnh > Sắp điều đã chọn theo "
 "Ngày và Giờ</b> để sắp xếp chúng trong co sở dữ liệu.</p>"
 
-#: XMLDB/FileReader.cpp:273
+#: XMLDB/FileReader.cpp:278
 msgid ""
 "<p>Your images/videos are not sorted, which means that navigating using the "
 "date bar will only work suboptimally.</p><p>You also do not have EXIF "
@@ -4286,11 +4286,11 @@ msgid ""
 "to do to correct all the missing information.</p>"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:280
+#: XMLDB/FileReader.cpp:285
 msgid "Images/Videos Are Not Sorted"
 msgstr "Chưa sắp xếp các Ảnh (động)"
 
-#: XMLDB/FileReader.cpp:295
+#: XMLDB/FileReader.cpp:300
 #, fuzzy
 #| msgid ""
 #| "<p>Not all the images in the database have information about image sizes; "
@@ -4314,11 +4314,11 @@ msgstr ""
 "ảnh</b>.</p><p>Không thì các ảnh trong ô xem mẫu ảnh sẽ chỉ có độ đệm thêm "
 "chung quanh. Không phải là vấn đề nghiêm trọng.</p>"
 
-#: XMLDB/FileReader.cpp:300
+#: XMLDB/FileReader.cpp:305
 msgid "Not All Images Have Size Information"
 msgstr "Không phải tất cả các ảnh có thông tin kích cỡ"
 
-#: XMLDB/FileReader.cpp:310
+#: XMLDB/FileReader.cpp:315
 msgid ""
 "<p>The index.xml file read was from an older version of KPhotoAlbum. "
 "KPhotoAlbum read the old format without problems, but to be able to convert "
@@ -4331,11 +4331,11 @@ msgstr ""
 "bằng cờ <tt>export-in-2.1-format</tt> (xuất khẩu theo định dạng 2.1), rồi "
 "lưu.</p>"
 
-#: XMLDB/FileReader.cpp:314
+#: XMLDB/FileReader.cpp:319
 msgid "Old File Format read"
 msgstr "Đọc định dạng tập tin cũ"
 
-#: XMLDB/FileReader.cpp:335
+#: XMLDB/FileReader.cpp:340
 #, fuzzy
 #| msgid ""
 #| "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
@@ -4368,32 +4368,32 @@ msgstr ""
 "phụ thêm chuỗi như khi đặt biến môi trường đường dẫn mặc định <b>PATH</b>.</"
 "p>"
 
-#: XMLDB/FileReader.cpp:342
+#: XMLDB/FileReader.cpp:347
 msgid "No default setup file found"
 msgstr "Không tìm thấy tập tin thiết lập mặc định nào"
 
-#: XMLDB/FileReader.cpp:359
+#: XMLDB/FileReader.cpp:364
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "Không thể mở « %1 » để đọc"
 
-#: XMLDB/FileReader.cpp:370
+#: XMLDB/FileReader.cpp:375
 #, fuzzy, kde-format
 #| msgid "Error on line %1 column %2 in file %3: %4"
 msgid "line %1 column %2 in file %3: %4"
 msgstr "Gặp lỗi trên dòng %1, cột %2, trong tập tin %3: %4"
 
-#: XMLDB/FileReader.cpp:372
+#: XMLDB/FileReader.cpp:377
 #, kde-format
 msgid "Failed to recover the backup: %1"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:381
+#: XMLDB/FileReader.cpp:386
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "Gặp lỗi trong tập tin %1: không tìm thấy yếu tố nào"
 
-#: XMLDB/FileReader.cpp:387
+#: XMLDB/FileReader.cpp:392
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr ""

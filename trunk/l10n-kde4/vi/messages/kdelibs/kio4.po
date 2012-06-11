@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-10 04:26+0200\n"
+"POT-Creation-Date: 2012-06-11 04:48+0200\n"
 "PO-Revision-Date: 2012-01-09 22:12+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -1306,69 +1306,6 @@ msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống c�
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
 
-#: kfile/kfilemetadataprovider.cpp:223
-#, fuzzy, kde-format
-msgctxt "@item:intable"
-msgid "%1 item"
-msgid_plural "%1 items"
-msgstr[0] "1 mục"
-
-#: kfile/kfilemetadataprovider.cpp:424
-#, fuzzy
-#| msgid "Modified"
-msgctxt "@label"
-msgid "Modified"
-msgstr "Sửa đổi"
-
-#: kfile/kfilemetadataprovider.cpp:425
-#, fuzzy
-#| msgid "Owner"
-msgctxt "@label"
-msgid "Owner"
-msgstr "Sở hữu"
-
-#: kfile/kfilemetadataprovider.cpp:426
-#, fuzzy
-#| msgid "Permissions"
-msgctxt "@label"
-msgid "Permissions"
-msgstr "Quyền hạn"
-
-#: kfile/kfilemetadataprovider.cpp:427
-#, fuzzy
-#| msgid "Stating"
-msgctxt "@label"
-msgid "Rating"
-msgstr "Đang lấy các thông tin"
-
-#: kfile/kfilemetadataprovider.cpp:428
-#, fuzzy
-#| msgid "Size"
-msgctxt "@label"
-msgid "Size"
-msgstr "Cỡ"
-
-#: kfile/kfilemetadataprovider.cpp:429
-#, fuzzy
-#| msgid "Trash"
-msgctxt "@label"
-msgid "Tags"
-msgstr "Rác"
-
-#: kfile/kfilemetadataprovider.cpp:430
-#, fuzzy
-#| msgid "Size:"
-msgctxt "@label"
-msgid "Total Size"
-msgstr "Cỡ :"
-
-#: kfile/kfilemetadataprovider.cpp:431
-#, fuzzy
-#| msgid "Type"
-msgctxt "@label"
-msgid "Type"
-msgstr "Kiểu"
-
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
 msgstr "Sở hữu"
@@ -1735,11 +1672,74 @@ msgstr "Lưu dạng"
 msgid "Encoding:"
 msgstr ""
 
-#: kio/accessmanager.cpp:234
+#: kfile/kfilemetadataprovider.cpp:223
+#, fuzzy, kde-format
+msgctxt "@item:intable"
+msgid "%1 item"
+msgid_plural "%1 items"
+msgstr[0] "1 mục"
+
+#: kfile/kfilemetadataprovider.cpp:424
+#, fuzzy
+#| msgid "Modified"
+msgctxt "@label"
+msgid "Modified"
+msgstr "Sửa đổi"
+
+#: kfile/kfilemetadataprovider.cpp:425
+#, fuzzy
+#| msgid "Owner"
+msgctxt "@label"
+msgid "Owner"
+msgstr "Sở hữu"
+
+#: kfile/kfilemetadataprovider.cpp:426
+#, fuzzy
+#| msgid "Permissions"
+msgctxt "@label"
+msgid "Permissions"
+msgstr "Quyền hạn"
+
+#: kfile/kfilemetadataprovider.cpp:427
+#, fuzzy
+#| msgid "Stating"
+msgctxt "@label"
+msgid "Rating"
+msgstr "Đang lấy các thông tin"
+
+#: kfile/kfilemetadataprovider.cpp:428
+#, fuzzy
+#| msgid "Size"
+msgctxt "@label"
+msgid "Size"
+msgstr "Cỡ"
+
+#: kfile/kfilemetadataprovider.cpp:429
+#, fuzzy
+#| msgid "Trash"
+msgctxt "@label"
+msgid "Tags"
+msgstr "Rác"
+
+#: kfile/kfilemetadataprovider.cpp:430
+#, fuzzy
+#| msgid "Size:"
+msgctxt "@label"
+msgid "Total Size"
+msgstr "Cỡ :"
+
+#: kfile/kfilemetadataprovider.cpp:431
+#, fuzzy
+#| msgid "Type"
+msgctxt "@label"
+msgid "Type"
+msgstr "Kiểu"
+
+#: kio/accessmanager.cpp:221
 msgid "Blocked request."
 msgstr ""
 
-#: kio/accessmanager.cpp:296
+#: kio/accessmanager.cpp:283
 #, fuzzy
 #| msgid "Unknown Error"
 msgid "Unknown HTTP verb."
@@ -4169,6 +4169,126 @@ msgstr "LỖI: giao thức không rõ « %1 »."
 msgid "Data format:"
 msgstr "Dạng thức dữ liệu :"
 
+#: kio/tcpslavebase.cpp:334
+msgid ""
+"You are about to leave secure mode. Transmissions will no longer be "
+"encrypted.\n"
+"This means that a third party could observe your data in transit."
+msgstr ""
+"Bạn sắp dời khỏi chế độ bảo mật. Việc truyền sẽ không còn được mật mẫ lại.\n"
+"Có nghĩa là người khác có thể xem dữ liệu bạn trong khi truyền."
+
+#: kio/tcpslavebase.cpp:340 kio/tcpslavebase.cpp:700
+msgid "Security Information"
+msgstr "Thông tin bảo mật"
+
+#: kio/tcpslavebase.cpp:341
+msgid "C&ontinue Loading"
+msgstr "&Tiếp tục tải"
+
+#: kio/tcpslavebase.cpp:453
+#, fuzzy, kde-format
+#| msgid "Authentication Failed."
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
+msgstr "Xác thực thất bại."
+
+#: kio/tcpslavebase.cpp:694
+msgid ""
+"You are about to enter secure mode. All transmissions will be encrypted "
+"unless otherwise noted.\n"
+"This means that no third party will be able to easily observe your data in "
+"transit."
+msgstr ""
+"Bạn sắp vào chế độ bảo mật. Mọi việc truyển sẽ được mật mã, trừ đã ghi rõ "
+"khác.\n"
+"Có nghĩa là người khác không thể xem dễ dàng dữ liệu bạn trong khi truyền."
+
+#: kio/tcpslavebase.cpp:701
+msgid "Display SSL &Information"
+msgstr "Hiển thị thông t&in SSL"
+
+#: kio/tcpslavebase.cpp:702
+msgid "C&onnect"
+msgstr "&Kết nối"
+
+#: kio/tcpslavebase.cpp:838
+msgid "Enter the certificate password:"
+msgstr "Nhập mật khẩu chứng nhận:"
+
+#: kio/tcpslavebase.cpp:839
+msgid "SSL Certificate Password"
+msgstr "Mật khẩu chứng nhận SSL"
+
+#: kio/tcpslavebase.cpp:852
+msgid "Unable to open the certificate. Try a new password?"
+msgstr "Không thể mở chứng nhận. Thử mật khẩu mới không?"
+
+#: kio/tcpslavebase.cpp:865
+msgid "The procedure to set the client certificate for the session failed."
+msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên chạy bị lỗi."
+
+#: kio/tcpslavebase.cpp:867 kio/slaveinterface.cpp:498
+msgid "SSL"
+msgstr "SSL"
+
+#: kio/tcpslavebase.cpp:911 kssl/sslui.cpp:71
+#, fuzzy, kde-format
+#| msgid "The server certificate failed the authenticity test (%1)."
+msgid ""
+"The server failed the authenticity check (%1).\n"
+"\n"
+msgstr "Chứng nhận máy phục vụ đã thất bại việc thử ra xác thực (%1)."
+
+#: kio/tcpslavebase.cpp:921 kio/tcpslavebase.cpp:938 kio/tcpslavebase.cpp:1040
+#: kio/tcpslavebase.cpp:1052 kssl/sslui.cpp:80 kssl/sslui.cpp:119
+msgid "Server Authentication"
+msgstr "Xác thực máy phục vụ"
+
+#: kio/tcpslavebase.cpp:922 kio/slaveinterface.cpp:427 kssl/sslui.cpp:81
+msgid "&Details"
+msgstr "&Chi tiết"
+
+#: kio/tcpslavebase.cpp:922 kio/slaveinterface.cpp:434 kssl/sslui.cpp:82
+msgid "Co&ntinue"
+msgstr "Tiế&p tục"
+
+#: kio/tcpslavebase.cpp:935 kssl/sslui.cpp:116
+msgid ""
+"Would you like to accept this certificate forever without being prompted?"
+msgstr "Bạn có muốn chấp nhận hoài chứng nhận này, không có được nhắc không?"
+
+#: kio/tcpslavebase.cpp:939 kio/slaveinterface.cpp:429 kssl/sslui.cpp:120
+msgid "&Forever"
+msgstr "&Hoài"
+
+#: kio/tcpslavebase.cpp:940 kio/slaveinterface.cpp:436 kssl/sslui.cpp:121
+#, fuzzy
+#| msgid "&Current Sessions Only"
+msgid "&Current Session only"
+msgstr "&Chỉ các phiên chạy hiện thời"
+
+#: kio/tcpslavebase.cpp:1039
+msgid ""
+"You have indicated that you wish to accept this certificate, but it is not "
+"issued to the server who is presenting it. Do you wish to continue loading?"
+msgstr ""
+"Bạn đã ngụ ý bạn muốn chấp nhận chứng nhận này, nhưng nó không phải được "
+"phát hành cho máy phục vụ đang cung cấp nó. Như thệ thì bạn có muốn tiếp tục "
+"tải không?"
+
+#: kio/tcpslavebase.cpp:1051
+#, fuzzy
+#| msgid ""
+#| "SSL certificate is being rejected as requested. You can disable this in "
+#| "the KDE Control Center."
+msgid ""
+"SSL certificate is being rejected as requested. You can disable this in the "
+"KDE System Settings."
+msgstr ""
+"Chứng nhận SSL đang bị từ chối như được yêu cầu. Bạn có thể tắt khả năng này "
+"trong Trung tâm Điều khiển KDE."
+
 #: kio/paste.cpp:98 kio/paste.cpp:191
 msgid "Filename for clipboard content:"
 msgstr "Tên tập tin cho nội dung của bảng tạm:"
@@ -4214,33 +4334,11 @@ msgstr ""
 msgid "&No"
 msgstr ""
 
-#: kio/slaveinterface.cpp:427 kio/tcpslavebase.cpp:831 kssl/sslui.cpp:81
-msgid "&Details"
-msgstr "&Chi tiết"
-
-#: kio/slaveinterface.cpp:429 kio/tcpslavebase.cpp:848 kssl/sslui.cpp:120
-msgid "&Forever"
-msgstr "&Hoài"
-
-#: kio/slaveinterface.cpp:434 kio/tcpslavebase.cpp:831 kssl/sslui.cpp:82
-msgid "Co&ntinue"
-msgstr "Tiế&p tục"
-
-#: kio/slaveinterface.cpp:436 kio/tcpslavebase.cpp:849 kssl/sslui.cpp:121
-#, fuzzy
-#| msgid "&Current Sessions Only"
-msgid "&Current Session only"
-msgstr "&Chỉ các phiên chạy hiện thời"
-
 #: kio/slaveinterface.cpp:496
 #, fuzzy
 #| msgid "The peer SSL certificate appears to be corrupt."
 msgid "The peer SSL certificate chain appears to be corrupt."
 msgstr "Chứng nhận SSL ngang hàng có vẻ bị hỏng."
-
-#: kio/slaveinterface.cpp:498 kio/tcpslavebase.cpp:776
-msgid "SSL"
-msgstr "SSL"
 
 #: kio/skipdialog.cpp:37
 msgid "Information"
@@ -4403,104 +4501,6 @@ msgstr "Một mục cũ hơn tên « %1 » đã có ."
 #| msgid "&Rename"
 msgid "Rename:"
 msgstr "&Đổi tên"
-
-#: kio/tcpslavebase.cpp:328
-msgid ""
-"You are about to leave secure mode. Transmissions will no longer be "
-"encrypted.\n"
-"This means that a third party could observe your data in transit."
-msgstr ""
-"Bạn sắp dời khỏi chế độ bảo mật. Việc truyền sẽ không còn được mật mẫ lại.\n"
-"Có nghĩa là người khác có thể xem dữ liệu bạn trong khi truyền."
-
-#: kio/tcpslavebase.cpp:334 kio/tcpslavebase.cpp:609
-msgid "Security Information"
-msgstr "Thông tin bảo mật"
-
-#: kio/tcpslavebase.cpp:335
-msgid "C&ontinue Loading"
-msgstr "&Tiếp tục tải"
-
-#: kio/tcpslavebase.cpp:391
-#, fuzzy, kde-format
-#| msgid "Authentication Failed."
-msgctxt "%1 is a host name"
-msgid "%1: SSL negotiation failed"
-msgstr "Xác thực thất bại."
-
-#: kio/tcpslavebase.cpp:603
-msgid ""
-"You are about to enter secure mode. All transmissions will be encrypted "
-"unless otherwise noted.\n"
-"This means that no third party will be able to easily observe your data in "
-"transit."
-msgstr ""
-"Bạn sắp vào chế độ bảo mật. Mọi việc truyển sẽ được mật mã, trừ đã ghi rõ "
-"khác.\n"
-"Có nghĩa là người khác không thể xem dễ dàng dữ liệu bạn trong khi truyền."
-
-#: kio/tcpslavebase.cpp:610
-msgid "Display SSL &Information"
-msgstr "Hiển thị thông t&in SSL"
-
-#: kio/tcpslavebase.cpp:611
-msgid "C&onnect"
-msgstr "&Kết nối"
-
-#: kio/tcpslavebase.cpp:747
-msgid "Enter the certificate password:"
-msgstr "Nhập mật khẩu chứng nhận:"
-
-#: kio/tcpslavebase.cpp:748
-msgid "SSL Certificate Password"
-msgstr "Mật khẩu chứng nhận SSL"
-
-#: kio/tcpslavebase.cpp:761
-msgid "Unable to open the certificate. Try a new password?"
-msgstr "Không thể mở chứng nhận. Thử mật khẩu mới không?"
-
-#: kio/tcpslavebase.cpp:774
-msgid "The procedure to set the client certificate for the session failed."
-msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên chạy bị lỗi."
-
-#: kio/tcpslavebase.cpp:820 kssl/sslui.cpp:71
-#, fuzzy, kde-format
-#| msgid "The server certificate failed the authenticity test (%1)."
-msgid ""
-"The server failed the authenticity check (%1).\n"
-"\n"
-msgstr "Chứng nhận máy phục vụ đã thất bại việc thử ra xác thực (%1)."
-
-#: kio/tcpslavebase.cpp:830 kio/tcpslavebase.cpp:847 kio/tcpslavebase.cpp:949
-#: kio/tcpslavebase.cpp:961 kssl/sslui.cpp:80 kssl/sslui.cpp:119
-msgid "Server Authentication"
-msgstr "Xác thực máy phục vụ"
-
-#: kio/tcpslavebase.cpp:844 kssl/sslui.cpp:116
-msgid ""
-"Would you like to accept this certificate forever without being prompted?"
-msgstr "Bạn có muốn chấp nhận hoài chứng nhận này, không có được nhắc không?"
-
-#: kio/tcpslavebase.cpp:948
-msgid ""
-"You have indicated that you wish to accept this certificate, but it is not "
-"issued to the server who is presenting it. Do you wish to continue loading?"
-msgstr ""
-"Bạn đã ngụ ý bạn muốn chấp nhận chứng nhận này, nhưng nó không phải được "
-"phát hành cho máy phục vụ đang cung cấp nó. Như thệ thì bạn có muốn tiếp tục "
-"tải không?"
-
-#: kio/tcpslavebase.cpp:960
-#, fuzzy
-#| msgid ""
-#| "SSL certificate is being rejected as requested. You can disable this in "
-#| "the KDE Control Center."
-msgid ""
-"SSL certificate is being rejected as requested. You can disable this in the "
-"KDE System Settings."
-msgstr ""
-"Chứng nhận SSL đang bị từ chối như được yêu cầu. Bạn có thể tắt khả năng này "
-"trong Trung tâm Điều khiển KDE."
 
 #: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:217
 #, fuzzy, kde-format
@@ -5967,12 +5967,12 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:5333
+#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:5353
 msgid "You need to supply a username and a password to access this site."
 msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu để truy cập nơi Mạng này."
 
-#: ../kioslave/ftp/ftp.cpp:580 ../kioslave/http/http.cpp:5335
+#: ../kioslave/ftp/ftp.cpp:580 ../kioslave/http/http.cpp:5355
 msgid "Site:"
 msgstr "Nơi:"
 
@@ -5990,8 +5990,8 @@ msgstr "Đăng nhập được"
 msgid "Could not login to %1."
 msgstr "Không thể đăng nhập vào %1."
 
-#: ../kioslave/ftp/ftp.cpp:2564 ../kioslave/http/http.cpp:5222
-#: ../kioslave/http/http.cpp:5345
+#: ../kioslave/ftp/ftp.cpp:2564 ../kioslave/http/http.cpp:5243
+#: ../kioslave/http/http.cpp:5365
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5999,19 +5999,19 @@ msgstr ""
 "Bạn cần phải cung cấp tên người dùng và mật khẩu cho máy phục vụ ủy nhiệm "
 "được liệt kê dưới này, trước khi bạn có quyền truy cập nơi Mạng nào."
 
-#: ../kioslave/ftp/ftp.cpp:2568 ../kioslave/http/http.cpp:5226
-#: ../kioslave/http/http.cpp:5348
+#: ../kioslave/ftp/ftp.cpp:2568 ../kioslave/http/http.cpp:5247
+#: ../kioslave/http/http.cpp:5368
 msgid "Proxy:"
 msgstr "Ủy nhiệm:"
 
-#: ../kioslave/ftp/ftp.cpp:2569 ../kioslave/http/http.cpp:5227
-#: ../kioslave/http/http.cpp:5428
+#: ../kioslave/ftp/ftp.cpp:2569 ../kioslave/http/http.cpp:5248
+#: ../kioslave/http/http.cpp:5448
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> tại <b>%2</b>"
 
-#: ../kioslave/ftp/ftp.cpp:2570 ../kioslave/http/http.cpp:5229
-#: ../kioslave/http/http.cpp:5365
+#: ../kioslave/ftp/ftp.cpp:2570 ../kioslave/http/http.cpp:5250
+#: ../kioslave/http/http.cpp:5385
 msgid "Proxy Authentication Failed."
 msgstr "Xác thực ủy nhiệm thất bại."
 
@@ -6440,17 +6440,17 @@ msgstr "Đang gởi dữ liệu cho %1..."
 msgid "Retrieving %1 from %2..."
 msgstr "Đang lấy %1 từ %2..."
 
-#: ../kioslave/http/http.cpp:5364
+#: ../kioslave/http/http.cpp:5384
 msgid "Authentication Failed."
 msgstr "Xác thực thất bại."
 
-#: ../kioslave/http/http.cpp:5461
+#: ../kioslave/http/http.cpp:5481
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Authorization failed."
 msgstr "Hộp thoại xác thực"
 
-#: ../kioslave/http/http.cpp:5477
+#: ../kioslave/http/http.cpp:5497
 #, fuzzy
 #| msgid "Authorization Dialog"
 msgid "Unknown Authorization method."

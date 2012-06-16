@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-14 03:47+0200\n"
+"POT-Creation-Date: 2012-06-16 03:15+0200\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "Language: \n"
@@ -8052,14 +8052,14 @@ msgstr "Hiện lớp gốc"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:122
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: rc.cpp:3201
+#: rc.cpp:3201 ui/input/kis_zoom_action.cpp:49
 #, fuzzy
 msgid "Zoom Out"
 msgstr "Thu Nhỏ"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:135
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: rc.cpp:3204
+#: rc.cpp:3204 ui/input/kis_zoom_action.cpp:48
 #, fuzzy
 msgid "Zoom In"
 msgstr "Phóng To"
@@ -14024,6 +14024,43 @@ msgid ""
 "<i>./0</i> represents the first child of the current layer"
 msgstr ""
 
+#: ui/tool/kis_tool_freehand_helper.cpp:127
+msgid "Freehand Stroke"
+msgstr ""
+
+#: ui/tool/kis_tool_freehand.cc:90
+#, fuzzy
+#| msgid "Chinese Brush"
+msgid "Increase Brush Size"
+msgstr "Chổi Trung Quốc"
+
+#: ui/tool/kis_tool_freehand.cc:96
+#, fuzzy
+#| msgid "Brush size"
+msgid "Decrease Brush Size"
+msgstr "Cỡ chổi"
+
+#: ui/tool/kis_tool.cc:111
+#, fuzzy
+msgid "Swap Foreground and Background Color"
+msgstr "Màu Mặt"
+
+#: ui/tool/kis_tool.cc:117
+#, fuzzy
+msgid "Reset Foreground and Background Color"
+msgstr "Màu Mặt"
+
+#: ui/tool/kis_tool.cc:519
+#, fuzzy
+msgid "Clear"
+msgstr "Xóa"
+
+#: ui/tool/kis_tool.cc:547
+#, fuzzy
+#| msgid "options"
+msgid "No options"
+msgstr "tuỳ chọn"
+
 #: ui/tool/kis_tool_paint.cc:92
 msgid "Make brush color lighter"
 msgstr ""
@@ -14041,43 +14078,6 @@ msgstr "Độ đậm đặc của hình xem trước:"
 #, fuzzy
 msgid "Decrease opacity"
 msgstr "Độ đậm đặc của hình xem trước:"
-
-#: ui/tool/kis_tool_freehand_helper.cpp:127
-msgid "Freehand Stroke"
-msgstr ""
-
-#: ui/tool/kis_tool.cc:111
-#, fuzzy
-msgid "Swap Foreground and Background Color"
-msgstr "Màu Mặt"
-
-#: ui/tool/kis_tool.cc:117
-#, fuzzy
-msgid "Reset Foreground and Background Color"
-msgstr "Màu Mặt"
-
-#: ui/tool/kis_tool.cc:595
-#, fuzzy
-msgid "Clear"
-msgstr "Xóa"
-
-#: ui/tool/kis_tool.cc:623
-#, fuzzy
-#| msgid "options"
-msgid "No options"
-msgstr "tuỳ chọn"
-
-#: ui/tool/kis_tool_freehand.cc:90
-#, fuzzy
-#| msgid "Chinese Brush"
-msgid "Increase Brush Size"
-msgstr "Chổi Trung Quốc"
-
-#: ui/tool/kis_tool_freehand.cc:96
-#, fuzzy
-#| msgid "Brush size"
-msgid "Decrease Brush Size"
-msgstr "Cỡ chổi"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14204,6 +14204,131 @@ msgid ""
 "your system..."
 msgstr ""
 
+#: ui/input/kis_abstract_input_action.cpp:36
+#, fuzzy
+msgid "Activate"
+msgstr "Lớp đang dùng"
+
+#: ui/input/kis_alternate_invocation_action.cpp:33
+#, fuzzy
+#| msgid "Alternating"
+msgid "Alternate Invocation"
+msgstr "Thay đổi"
+
+#: ui/input/kis_alternate_invocation_action.cpp:34
+msgid ""
+"Alternate Invocation performs an alternate action with the current tool. For "
+"example, using the brush tool it picks a color from the canvas."
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:29
+msgid "Change Tool Primary Setting"
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:30
+msgid ""
+"Changes a tool's \"Primary Setting\", for example the brush size for the "
+"brush tool."
+msgstr ""
+
+#: ui/input/kis_input_manager.cpp:100
+msgid "Set Mirror Axis"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:47
+#, fuzzy
+msgid "Pan Canvas"
+msgstr "Tải lại Canvas"
+
+#: ui/input/kis_pan_action.cpp:50
+msgid "Toggle Pan Mode"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:51
+#, fuzzy
+#| msgid "Left:"
+msgid "Pan Left"
+msgstr "Trái:"
+
+#: ui/input/kis_pan_action.cpp:52
+#, fuzzy
+#| msgid "Right:"
+msgid "Pan Right"
+msgstr "Phải:"
+
+#: ui/input/kis_pan_action.cpp:53
+msgid "Pan Up"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:54
+#, fuzzy
+msgid "Pan Down"
+msgstr "Công cụ &bút vẽ"
+
+#: ui/input/kis_rotate_canvas_action.cpp:44
+#, fuzzy
+#| msgid "Rotate Image"
+msgid "Rotate Canvas"
+msgstr "Xoay ảnh"
+
+#: ui/input/kis_rotate_canvas_action.cpp:46
+#, fuzzy
+msgid "Toggle Rotate Mode"
+msgstr "Quay &90"
+
+#: ui/input/kis_rotate_canvas_action.cpp:47
+#, fuzzy
+#| msgid "Rotate Layer"
+msgid "Rotate Left"
+msgstr "Xoay Lớp"
+
+#: ui/input/kis_rotate_canvas_action.cpp:48
+#, fuzzy
+msgid "Rotate Right"
+msgstr "Quay &90"
+
+#: ui/input/kis_rotate_canvas_action.cpp:49
+#, fuzzy
+#| msgid "Rotation"
+msgid "Reset Rotation"
+msgstr "Xoay"
+
+#: ui/input/kis_show_palette_action.cpp:31
+#, fuzzy
+#| msgid "Palette"
+msgid "Show Popup Palette"
+msgstr "Bảng màu"
+
+#: ui/input/kis_tool_invocation_action.cpp:49
+#, fuzzy
+#| msgid "Tool information"
+msgid "Tool Invocation"
+msgstr "Thông tin về công cụ"
+
+#: ui/input/kis_tool_invocation_action.cpp:50
+msgid ""
+"Tool Invocation invokes the current tool, for example, using the brush tool, "
+"it will start painting."
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:44
+#, fuzzy
+msgid "Zoom Canvas"
+msgstr "Phóng To"
+
+#: ui/input/kis_zoom_action.cpp:47
+msgid "Toggle Zoom Mode"
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:50
+#, fuzzy
+msgid "Reset Zoom to 100%"
+msgstr "Chọn"
+
+#: ui/input/kis_zoom_action.cpp:51
+msgid "Fit to Page"
+msgstr ""
+
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "Tập tin hay URL sẽ mở"
@@ -14311,10 +14436,6 @@ msgstr "Tập tin hay URL sẽ mở"
 #, fuzzy
 #~ msgid "Destination"
 #~ msgstr "Địa điểm"
-
-#, fuzzy
-#~ msgid "Active Layer"
-#~ msgstr "Lớp đang dùng"
 
 #~ msgid "New Layer"
 #~ msgstr "Lớp mới"
@@ -15412,10 +15533,6 @@ msgstr "Tập tin hay URL sẽ mở"
 #~ msgstr "Xóa điểm ảnh"
 
 #, fuzzy
-#~ msgid "Size Canvas"
-#~ msgstr "Tải lại Canvas"
-
-#, fuzzy
 #~| msgid "Color Settings"
 #~ msgid "Active Settings"
 #~ msgstr "Thiết lập Màu"
@@ -16025,11 +16142,6 @@ msgstr "Tập tin hay URL sẽ mở"
 #~ msgstr "Chổi nhòe"
 
 #, fuzzy
-#~| msgid "Palette"
-#~ msgid "&PopupPalette"
-#~ msgstr "Bảng màu"
-
-#, fuzzy
 #~| msgid "Glsl Image"
 #~ msgid "All Images"
 #~ msgstr "Ảnh GLSL"
@@ -16457,10 +16569,6 @@ msgstr "Tập tin hay URL sẽ mở"
 
 #, fuzzy
 #~ msgid "Rotate CCW"
-#~ msgstr "Quay &90"
-
-#, fuzzy
-#~ msgid "Rotating"
 #~ msgstr "Quay &90"
 
 #, fuzzy
@@ -16906,10 +17014,6 @@ msgstr "Tập tin hay URL sẽ mở"
 #, fuzzy
 #~ msgid "Move Tool"
 #~ msgstr "Công cụ &di chuyển"
-
-#, fuzzy
-#~ msgid "Pan Tool"
-#~ msgstr "Công cụ &bút vẽ"
 
 #, fuzzy
 #~ msgid "&Pan"

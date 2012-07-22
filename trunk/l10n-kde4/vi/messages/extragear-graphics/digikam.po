@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-17 04:13+0200\n"
+"POT-Creation-Date: 2012-07-22 03:57+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -2592,7 +2592,7 @@ msgid "Assign Tag \"%1\""
 msgstr "Gán thẻ"
 
 #: digikam/tags/tagspopupmenu.cpp:521
-#: libs/imageproperties/imagedescedittab.cpp:1293
+#: libs/imageproperties/imagedescedittab.cpp:1310
 msgid "No Recently Assigned Tags"
 msgstr "Không có thẻ vừa được gán"
 
@@ -3677,6 +3677,34 @@ msgstr "Tương đối"
 msgid "Process Items"
 msgstr "Đang xử lý ảnh mẫu ít"
 
+#: digikam/fileaction/fileworkeriface.cpp:71
+#, fuzzy
+#| msgid "Failed to revise Exif orientation for file %1."
+msgid "Failed to revise Exif orientation these files:"
+msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
+
+#: digikam/fileaction/fileworkeriface.cpp:263
+#, fuzzy
+#| msgid "Failed to revise Exif orientation for file %1."
+msgid "Failed to transform these files:"
+msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
+
+#: digikam/fileaction/databaseworkeriface.cpp:88
+#: digikam/fileaction/databaseworkeriface.cpp:126
+#: digikam/fileaction/databaseworkeriface.cpp:164
+#: digikam/fileaction/databaseworkeriface.cpp:203
+#: digikam/fileaction/databaseworkeriface.cpp:277
+#, fuzzy
+#| msgid "Write metadata to each file"
+msgid "Writing metadata to files"
+msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
+
+#: digikam/fileaction/databaseworkeriface.cpp:251
+#, fuzzy
+#| msgid "Revising Exif Orientation tags. Please wait..."
+msgid "Revising Exif Orientation tags"
+msgstr "Đang xem lại các thẻ hướng EXIF. Hãy đời..."
+
 #: digikam/fileaction/fileactionmngr.cpp:95
 msgctxt "@label"
 msgid "Finishing tasks"
@@ -3728,48 +3756,21 @@ msgstr "<b>Đang cập nhật cơ sở dữ liệu ảnh mẫu. Hãy đợi...</
 
 #: digikam/fileaction/fileactionmngr.cpp:245
 #: digikam/fileaction/fileactionmngr.cpp:254
+#: digikam/fileaction/fileactionmngr.cpp:267
 #, fuzzy
 #| msgid "Metadata"
 msgid "Applying metadata"
 msgstr "Siêu dữ liệu"
 
-#: digikam/fileaction/fileactionmngr.cpp:261
+#: digikam/fileaction/fileactionmngr.cpp:274
 #, fuzzy
 #| msgid "Save Images"
 msgid "Rotating images"
 msgstr "Lưu ảnh"
 
-#: digikam/fileaction/fileactionmngr.cpp:274
+#: digikam/fileaction/fileactionmngr.cpp:287
 msgid "Copying attributes"
 msgstr ""
-
-#: digikam/fileaction/fileworkeriface.cpp:71
-#, fuzzy
-#| msgid "Failed to revise Exif orientation for file %1."
-msgid "Failed to revise Exif orientation these files:"
-msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
-
-#: digikam/fileaction/fileworkeriface.cpp:263
-#, fuzzy
-#| msgid "Failed to revise Exif orientation for file %1."
-msgid "Failed to transform these files:"
-msgstr "Lỗi xem lại hướng EXIF cho tập tin %1."
-
-#: digikam/fileaction/databaseworkeriface.cpp:88
-#: digikam/fileaction/databaseworkeriface.cpp:126
-#: digikam/fileaction/databaseworkeriface.cpp:164
-#: digikam/fileaction/databaseworkeriface.cpp:203
-#: digikam/fileaction/databaseworkeriface.cpp:277
-#, fuzzy
-#| msgid "Write metadata to each file"
-msgid "Writing metadata to files"
-msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
-
-#: digikam/fileaction/databaseworkeriface.cpp:251
-#, fuzzy
-#| msgid "Revising Exif Orientation tags. Please wait..."
-msgid "Revising Exif Orientation tags"
-msgstr "Đang xem lại các thẻ hướng EXIF. Hãy đời..."
 
 #: imageplugins/color/adjustcurvestool.cpp:97
 #: libs/dimg/filters/curves/curvesfilter.h:63
@@ -11557,6 +11558,24 @@ msgctxt "@info:tooltip"
 msgid "Go to the album of this image"
 msgstr "Tới mục đầu"
 
+#: libs/imageproperties/captionedit.cpp:68
+#, fuzzy
+#| msgid "Rotation:"
+msgid "Captions: "
+msgstr "Độ xoay:"
+
+#: libs/imageproperties/captionedit.cpp:69
+#, fuzzy
+#| msgid "Enter your text here!"
+msgid "Enter caption text here."
+msgstr "Hãy nhập đoạn vào đây !"
+
+#: libs/imageproperties/captionedit.cpp:73
+#, fuzzy
+#| msgid "<p>Select here the text rotation to use."
+msgid "Enter caption author name here."
+msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
+
 #: libs/imageproperties/imagedescedittab.cpp:202
 #, fuzzy
 #| msgid "&Title:"
@@ -11648,154 +11667,136 @@ msgstr "Thẻ gần đầy"
 msgid "Information"
 msgstr "Thông tin"
 
-#: libs/imageproperties/imagedescedittab.cpp:506
+#: libs/imageproperties/imagedescedittab.cpp:523
 msgid "Apply changes?"
 msgstr "Áp dụng thay đổi ?"
 
-#: libs/imageproperties/imagedescedittab.cpp:556
+#: libs/imageproperties/imagedescedittab.cpp:573
 #, fuzzy, kde-format
 msgid "You have edited the image caption. "
 msgid_plural "You have edited the captions of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:560
+#: libs/imageproperties/imagedescedittab.cpp:577
 #, fuzzy, kde-format
 msgid "You have edited the image title. "
 msgid_plural "You have edited the titles of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:564
+#: libs/imageproperties/imagedescedittab.cpp:581
 #, fuzzy, kde-format
 msgid "You have edited the date of the image. "
 msgid_plural "You have edited the date of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:568
+#: libs/imageproperties/imagedescedittab.cpp:585
 #, fuzzy, kde-format
 msgid "You have edited the pick label of the image. "
 msgid_plural "You have edited the pick label of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:572
+#: libs/imageproperties/imagedescedittab.cpp:589
 #, fuzzy, kde-format
 msgid "You have edited the color label of the image. "
 msgid_plural "You have edited the color label of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa ngày tháng của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:576
+#: libs/imageproperties/imagedescedittab.cpp:593
 #, fuzzy, kde-format
 msgid "You have edited the rating of the image. "
 msgid_plural "You have edited the rating of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa đánh giá của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:580
+#: libs/imageproperties/imagedescedittab.cpp:597
 #, fuzzy, kde-format
 msgid "You have edited the tags of the image. "
 msgid_plural "You have edited the tags of %1 images. "
 msgstr[0] "<qt><p>Bạn đã sửa thẻ của ảnh. "
 
-#: libs/imageproperties/imagedescedittab.cpp:584
+#: libs/imageproperties/imagedescedittab.cpp:601
 #, fuzzy
 #| msgid "Do you want to apply your changes?</p></qt>"
 msgid "Do you want to apply your changes?"
 msgstr "Bạn có muốn áp dụng các thay đổi không?</p></qt>"
 
-#: libs/imageproperties/imagedescedittab.cpp:588
+#: libs/imageproperties/imagedescedittab.cpp:605
 #, fuzzy, kde-format
 msgid "<p>You have edited the metadata of the image: </p><p><ul>"
 msgid_plural "<p>You have edited the metadata of %1 images: </p><p><ul>"
 msgstr[0] "<qt><p>Bạn đã sửa siêu dữ liệu của ảnh:</p></ul>"
 
-#: libs/imageproperties/imagedescedittab.cpp:593
+#: libs/imageproperties/imagedescedittab.cpp:610
 #, fuzzy
 #| msgid "<li>the date</li>"
 msgid "<li>title</li>"
 msgstr "<li>ngày</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:596
+#: libs/imageproperties/imagedescedittab.cpp:613
 #, fuzzy
 #| msgid "<li>the rating</li>"
 msgid "<li>caption</li>"
 msgstr "<li>đánh giá</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:601
+#: libs/imageproperties/imagedescedittab.cpp:618
 #, fuzzy
 #| msgid "<li>the date</li>"
 msgid "<li>date</li>"
 msgstr "<li>ngày</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:606
+#: libs/imageproperties/imagedescedittab.cpp:623
 #, fuzzy
 #| msgid "<li>the date</li>"
 msgid "<li>pick label</li>"
 msgstr "<li>ngày</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:611
+#: libs/imageproperties/imagedescedittab.cpp:628
 #, fuzzy
 #| msgid "<li>the date</li>"
 msgid "<li>color label</li>"
 msgstr "<li>ngày</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:616
+#: libs/imageproperties/imagedescedittab.cpp:633
 #, fuzzy
 #| msgid "<li>the rating</li>"
 msgid "<li>rating</li>"
 msgstr "<li>đánh giá</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:621
+#: libs/imageproperties/imagedescedittab.cpp:638
 #, fuzzy
 #| msgid "<li>the tags</li>"
 msgid "<li>tags</li>"
 msgstr "<li>thẻ</li>"
 
-#: libs/imageproperties/imagedescedittab.cpp:626
+#: libs/imageproperties/imagedescedittab.cpp:643
 #, fuzzy
 #| msgid "Do you want to apply your changes?</p></qt>"
 msgid "<p>Do you want to apply your changes?</p>"
 msgstr "Bạn có muốn áp dụng các thay đổi không?</p></qt>"
 
-#: libs/imageproperties/imagedescedittab.cpp:633
+#: libs/imageproperties/imagedescedittab.cpp:648
 msgid "Always apply changes without confirmation"
 msgstr "Luôn luôn áp dụng thay đổi, không cần xác nhận"
 
-#: libs/imageproperties/imagedescedittab.cpp:751
+#: libs/imageproperties/imagedescedittab.cpp:768
 msgid "Reading metadata from files. Please wait..."
 msgstr "Đang nạp lại siêu dữ liệu từ tập tin. Hãy đời...."
 
-#: libs/imageproperties/imagedescedittab.cpp:789
+#: libs/imageproperties/imagedescedittab.cpp:806
 msgid "Writing metadata to files. Please wait..."
 msgstr "Đang ghi siêu dữ liệu vào tập tin. Hãy đời..."
 
-#: libs/imageproperties/imagedescedittab.cpp:1161
+#: libs/imageproperties/imagedescedittab.cpp:1178
 msgid "Read metadata from file to database"
 msgstr "Đọc siêu dữ liệu từ tập tin vào cơ sở dữ liệu"
 
-#: libs/imageproperties/imagedescedittab.cpp:1163
-#: libs/imageproperties/imagedescedittab.cpp:1176
+#: libs/imageproperties/imagedescedittab.cpp:1180
+#: libs/imageproperties/imagedescedittab.cpp:1193
 msgid "Write metadata to each file"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: libs/imageproperties/imagedescedittab.cpp:1175
+#: libs/imageproperties/imagedescedittab.cpp:1192
 msgid "Read metadata from each file to database"
 msgstr "Đọc siêu dữ liệu từ mỗi tập tin vào cơ sở dữ liệu"
-
-#: libs/imageproperties/captionedit.cpp:68
-#, fuzzy
-#| msgid "Rotation:"
-msgid "Captions: "
-msgstr "Độ xoay:"
-
-#: libs/imageproperties/captionedit.cpp:69
-#, fuzzy
-#| msgid "Enter your text here!"
-msgid "Enter caption text here."
-msgstr "Hãy nhập đoạn vào đây !"
-
-#: libs/imageproperties/captionedit.cpp:73
-#, fuzzy
-#| msgid "<p>Select here the text rotation to use."
-msgid "Enter caption author name here."
-msgstr "<p>Ở đây hãy chọn độ xoay đoạn cần dùng."
 
 #: libs/imageproperties/imagepropertiestab.cpp:184
 #: libs/imageproperties/cameraitempropertiestab.cpp:157
@@ -13671,27 +13672,27 @@ msgid ""
 "<b>Title: </b><p>%1</p><b>Value: </b><p>%2</p><b>Description: </b><p>%3</p>"
 msgstr "<b>Tựa: </b><p>%1<p><b>Giá trị: </b><p>%2<p><b>Mô tả: </b><p>%3"
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:206
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:210
 #, fuzzy
 #| msgid "&Load..."
 msgid "Loading..."
 msgstr "&Tải..."
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:214
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:218
 #, fuzzy
 #| msgid "Show embedded preview"
 msgid "Embedded JPEG Preview"
 msgstr "Hiển thị ô xem thử nhúng"
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:218
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:222
 msgid "Half Size Raw Preview"
 msgstr ""
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:230
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:234
 msgid "Reduced Size Preview"
 msgstr ""
 
-#: libs/widgets/graphicsview/dimgpreviewitem.cpp:238
+#: libs/widgets/graphicsview/dimgpreviewitem.cpp:242
 #, fuzzy
 #| msgid "Failed to load image \"%1\""
 msgid "Failed to load image"
@@ -16141,30 +16142,6 @@ msgctxt "Custom Image Renaming"
 msgid "Customize"
 msgstr "Tùy chỉnh"
 
-#: utilities/cameragui/widgets/filtercombo.cpp:150
-#, fuzzy
-#| msgid "RAW Files"
-msgid "Only New Files"
-msgstr "Tập tin RAW"
-
-#: utilities/cameragui/widgets/filtercombo.cpp:155
-#, fuzzy
-#| msgid "RAW Files"
-msgid "Raw Files"
-msgstr "Tập tin RAW"
-
-#: utilities/cameragui/widgets/filtercombo.cpp:165
-#, fuzzy
-#| msgid "Compress TIFF files"
-msgid "JPG/TIFF Files"
-msgstr "Nén tập tin TIFF"
-
-#: utilities/cameragui/widgets/filtercombo.cpp:170
-#, fuzzy
-#| msgid "Audio Files"
-msgid "Video Files"
-msgstr "Tập tin âm thanh"
-
 #: utilities/cameragui/widgets/freespacewidget.cpp:332
 #, fuzzy
 #| msgid "Camera Manual"
@@ -16194,6 +16171,30 @@ msgstr "không sẵn sàng"
 #| msgid "Relief:"
 msgid "Require:"
 msgstr "Nổi bật:"
+
+#: utilities/cameragui/widgets/filtercombo.cpp:150
+#, fuzzy
+#| msgid "RAW Files"
+msgid "Only New Files"
+msgstr "Tập tin RAW"
+
+#: utilities/cameragui/widgets/filtercombo.cpp:155
+#, fuzzy
+#| msgid "RAW Files"
+msgid "Raw Files"
+msgstr "Tập tin RAW"
+
+#: utilities/cameragui/widgets/filtercombo.cpp:165
+#, fuzzy
+#| msgid "Compress TIFF files"
+msgid "JPG/TIFF Files"
+msgstr "Nén tập tin TIFF"
+
+#: utilities/cameragui/widgets/filtercombo.cpp:170
+#, fuzzy
+#| msgid "Audio Files"
+msgid "Video Files"
+msgstr "Tập tin âm thanh"
 
 #: utilities/firstrun/welcomepage.cpp:43
 #, kde-format

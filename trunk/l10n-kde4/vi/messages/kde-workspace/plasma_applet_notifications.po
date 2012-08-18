@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-10 05:12+0200\n"
+"POT-Creation-Date: 2012-08-18 04:27+0200\n"
 "PO-Revision-Date: 2012-07-23 21:31+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -16,6 +16,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.5\n"
+
+#: core/completedjobnotification.cpp:48
+#, kde-format
+msgid "%1 [Finished]"
+msgstr "%1 [Hoàn tất]"
+
+#: core/completedjobnotification.cpp:64
+msgid "Open"
+msgstr "Mở"
 
 #: core/job.cpp:196
 #, kde-format
@@ -33,14 +42,35 @@ msgstr[0] "%1 công việc đang chạy (còn lại %2)"
 msgid "no running jobs"
 msgstr "không có công việc nào đang chạy"
 
-#: core/completedjobnotification.cpp:48
-#, kde-format
-msgid "%1 [Finished]"
-msgstr "%1 [Hoàn tất]"
+#. i18n: file: ui/notificationsconfig.ui:26
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:3
+msgid "Pop Up Notices"
+msgstr "Các chú ý bật lên"
 
-#: core/completedjobnotification.cpp:64
-msgid "Open"
-msgstr "Mở"
+#. i18n: file: ui/notificationsconfig.ui:33
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:6
+msgid "Application notifications"
+msgstr "Thông báo ứng dụng"
+
+#. i18n: file: ui/notificationsconfig.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:9
+msgid "File transfers and other jobs"
+msgstr "Truyền tập tin và các công việc khác"
+
+#. i18n: file: ui/notificationsconfig.ui:89
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:12
+msgid "Popup"
+msgstr "Bật lên"
+
+#. i18n: file: ui/notificationsconfig.ui:103
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:15
+msgid "Automatically hide"
+msgstr "Tự động ẩn"
 
 #: ui/busywidget.cpp:315
 #, kde-format
@@ -79,18 +109,6 @@ msgstr "Thông báo và công việc"
 msgctxt "Generic title for the job transfer popup"
 msgid "Jobs"
 msgstr "Công việc"
-
-#: ui/notifications.cpp:126
-msgid "No notifications and no jobs"
-msgstr "Không có thông báo và công việc nào"
-
-#: ui/notifications.cpp:213
-msgid "Information"
-msgstr "Thông tin"
-
-#: ui/notifications.cpp:215
-msgid "Choose which information to show"
-msgstr "Chọn thông tin nào được thể hiện"
 
 #: ui/jobwidget.cpp:65
 msgid "KiB/s"
@@ -151,11 +169,6 @@ msgstr[0] "%2 / %1 tập tin"
 msgid "Less"
 msgstr "Bớt"
 
-#: ui/notificationwidget.cpp:324 ui/notificationgroup.cpp:94
-#, kde-format
-msgid "Notification from %1"
-msgstr "Thông báo từ %1"
-
 #: ui/notificationgroup.cpp:42
 msgid "Notifications"
 msgstr "Thông báo"
@@ -165,32 +178,19 @@ msgctxt "Show all  notifications"
 msgid "All"
 msgstr "Tất cả"
 
-#. i18n: file: ui/notificationsconfig.ui:26
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:3
-msgid "Pop Up Notices"
-msgstr "Các chú ý bật lên"
+#: ui/notificationgroup.cpp:94 ui/notificationwidget.cpp:324
+#, kde-format
+msgid "Notification from %1"
+msgstr "Thông báo từ %1"
 
-#. i18n: file: ui/notificationsconfig.ui:33
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:6
-msgid "Application notifications"
-msgstr "Thông báo ứng dụng"
+#: ui/notifications.cpp:126
+msgid "No notifications and no jobs"
+msgstr "Không có thông báo và công việc nào"
 
-#. i18n: file: ui/notificationsconfig.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:9
-msgid "File transfers and other jobs"
-msgstr "Truyền tập tin và các công việc khác"
+#: ui/notifications.cpp:213
+msgid "Information"
+msgstr "Thông tin"
 
-#. i18n: file: ui/notificationsconfig.ui:89
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:12
-msgid "Popup"
-msgstr "Bật lên"
-
-#. i18n: file: ui/notificationsconfig.ui:103
-#. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:15
-msgid "Automatically hide"
-msgstr "Tự động ẩn"
+#: ui/notifications.cpp:215
+msgid "Choose which information to show"
+msgstr "Chọn thông tin nào được thể hiện"

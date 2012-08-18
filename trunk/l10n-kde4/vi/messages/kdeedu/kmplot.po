@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmplot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-03 04:34+0100\n"
+"POT-Creation-Date: 2012-08-18 04:15+0200\n"
 "PO-Revision-Date: 2006-06-02 15:26+0930\n"
 "Last-Translator: Trần Thế Trung <tttrung@hotmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -22,14 +22,14 @@ msgstr ""
 msgid "Calculator"
 msgstr "&Tính"
 
-#: coordsconfigdialog.cpp:50
-#, fuzzy
-msgid "Coordinates"
-msgstr "Hệ Toạ độ I"
-
 #: coordsconfigdialog.cpp:50 coordsconfigdialog.cpp:51
 #, fuzzy
 msgid "Coordinate System"
+msgstr "Hệ Toạ độ I"
+
+#: coordsconfigdialog.cpp:50
+#, fuzzy
+msgid "Coordinates"
 msgstr "Hệ Toạ độ I"
 
 #: coordsconfigdialog.cpp:80 coordsconfigdialog.cpp:106
@@ -111,6 +111,22 @@ msgstr ""
 msgid "Choose a Gradient"
 msgstr "Chọn Tham số"
 
+#: kmplot.cpp:83
+msgid "Could not find KmPlot's part."
+msgstr "Không tìm thấy các thành phần của KmPlot."
+
+#: kmplot.cpp:190 maindlg.cpp:519
+msgid ""
+"*.fkt|KmPlot Files (*.fkt)\n"
+"*|All Files"
+msgstr ""
+"*.fkt|Tập tin KmPlot (*.fkt)\n"
+"*|Tất cả"
+
+#: kmplot.cpp:190
+msgid "Open"
+msgstr ""
+
 #: kmplotio.cpp:322
 msgid "The file had an unknown version number"
 msgstr "Tập tin có phiên bản không rõ"
@@ -142,6 +158,194 @@ msgstr "tự động"
 #, kde-format
 msgid "The function %1 could not be loaded"
 msgstr "Hàm %1 không thể tải lên được"
+
+#. i18n: file: qparametereditor.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, QParameterEditor)
+#: kparametereditor.cpp:51 rc.cpp:634
+msgid "Parameter Editor"
+msgstr "Soạn Tham số"
+
+#: kparametereditor.cpp:213 kparametereditor.cpp:283
+msgid "*.txt|Plain Text File "
+msgstr "*.txt|Tập tin Văn bản Thuần"
+
+#: kparametereditor.cpp:230 kparametereditor.cpp:272
+msgid "An error appeared when opening this file"
+msgstr "Có lỗi khi mở tập tin này"
+
+#: kparametereditor.cpp:259
+#, kde-format
+msgid ""
+"Line %1 is not a valid parameter value and will therefore not be included. "
+"Do you want to continue?"
+msgstr ""
+"Dòng %1 không phải là một giá trị tham số hợp lệ và sẽ không được nhận. Bạn "
+"có muốn tiếp tục không?"
+
+#: kparametereditor.cpp:265
+msgid "Get Informed"
+msgstr "Lấy Thông báo"
+
+#: kparametereditor.cpp:265
+msgid "Ignore Information"
+msgstr "Bỏ qua Thông tin"
+
+#: kparametereditor.cpp:265
+msgid "Would you like to be informed about other lines that cannot be read?"
+msgstr "Bạn có muốn được thông báo về các dòng có lỗi khác không?"
+
+#: kparametereditor.cpp:287 maindlg.cpp:529 maindlg.cpp:560
+msgid "&Overwrite"
+msgstr "&Ghi đè"
+
+#: kparametereditor.cpp:287 maindlg.cpp:529 maindlg.cpp:560
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to continue and "
+"overwrite this file?"
+msgstr ""
+"Tập tin có tên \"%1\" đã tồn tại. Bạn có thực sự muốn ghi đè tập tin này "
+"không?"
+
+#: kparametereditor.cpp:287 maindlg.cpp:529 maindlg.cpp:560
+msgid "Overwrite File?"
+msgstr "Ghi đè Tập tin?"
+
+#: kparametereditor.cpp:306 kparametereditor.cpp:310 kparametereditor.cpp:332
+msgid "An error appeared when saving this file"
+msgstr "Có lỗi khi lưu tập tin"
+
+#: kprinterdlg.cpp:44
+msgid "KmPlot Options"
+msgstr "Tuỳ chọn KmPlot"
+
+#: kprinterdlg.cpp:50
+msgid "Print header table"
+msgstr "In bảng đề mục"
+
+#: kprinterdlg.cpp:51
+msgid "Transparent background"
+msgstr "Nền trong suốt"
+
+#: kprinterdlg.cpp:60
+msgid "Pixels (1/72nd in)"
+msgstr ""
+
+#: kprinterdlg.cpp:61
+msgid "Inches (in)"
+msgstr ""
+
+#: kprinterdlg.cpp:62
+msgid "Centimeters (cm)"
+msgstr ""
+
+#: kprinterdlg.cpp:63
+msgid "Millimeters (mm)"
+msgstr ""
+
+#: kprinterdlg.cpp:67
+#, fuzzy
+msgid "Width:"
+msgstr "Bề dày dấu khắc:"
+
+#: kprinterdlg.cpp:68
+msgid "Height:"
+msgstr ""
+
+#: kprinterdlg.cpp:138
+msgid "Width is invalid"
+msgstr ""
+
+#: kprinterdlg.cpp:145
+msgid "Height is invalid"
+msgstr ""
+
+#: ksliderwindow.cpp:37
+#, kde-format
+msgid "Slider %1"
+msgstr "Con trượt %1"
+
+#: ksliderwindow.cpp:43
+msgid ""
+"Move slider to change the parameter of the function plot connected to this "
+"slider."
+msgstr ""
+"Di chuyển con trượt để thay đổi giá trị tham số cho hàm được vẽ có kết nối "
+"tới con trượt này."
+
+#: ksliderwindow.cpp:94
+#, fuzzy
+msgid "Sliders"
+msgstr "Con trượt"
+
+#: main.cpp:42
+msgid "Mathematical function plotter for KDE"
+msgstr "Trình vẽ đồ thị hàm số toán học cho KDE"
+
+#: main.cpp:49
+msgid "KmPlot"
+msgstr "KmPlot"
+
+#: main.cpp:51
+msgid "(c) 2000-2002, Klaus-Dieter Möller"
+msgstr ""
+
+#: main.cpp:56
+msgid "Klaus-Dieter Möller"
+msgstr ""
+
+#: main.cpp:56
+msgid "Original Author"
+msgstr "Tác giả Gốc"
+
+#: main.cpp:59
+msgid "GUI"
+msgstr "Giao diện"
+
+#: main.cpp:59
+msgid "Matthias Meßmer"
+msgstr ""
+
+#: main.cpp:61
+msgid "Fredrik Edemar"
+msgstr ""
+
+#: main.cpp:61
+msgid "Various improvements"
+msgstr "Nhiều cải tiến"
+
+#: main.cpp:62
+msgid "David Saxton"
+msgstr ""
+
+#: main.cpp:62
+msgid "Porting to Qt 4, UI improvements, features"
+msgstr ""
+
+#: main.cpp:64
+msgid "David Vignoni"
+msgstr ""
+
+#: main.cpp:64
+msgid "svg icon"
+msgstr "biểu tượng svg"
+
+#: main.cpp:65
+msgid "Albert Astals Cid"
+msgstr ""
+
+#: main.cpp:65
+msgid "command line options, MIME type"
+msgstr "tuỳ chọn dòng lệnh, kiểu MIME"
+
+#: main.cpp:71
+#, fuzzy
+msgid "Initial functions to plot"
+msgstr "danh sách hàm để vẽ"
+
+#: main.cpp:72
+msgid "File to open"
+msgstr "Tập tin để mở"
 
 #. i18n: file: settingspagegeneral.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SettingsPageGeneral)
@@ -290,6 +494,10 @@ msgstr ""
 "Bạn có muốn lưu nó không?"
 
 #: maindlg.cpp:505
+msgid "Save New Format"
+msgstr "Lưu Định dạng Mới"
+
+#: maindlg.cpp:505
 #, fuzzy
 msgid ""
 "This file is saved with an old file format; if you save it, you cannot open "
@@ -298,38 +506,9 @@ msgstr ""
 "Tập tin đang có định dạng cũ; nếu bạn lưu nó, bạn sẽ không thể mở nó bằng "
 "các phiên bản cũ của Kmplot. Bạn có chắc là muố tiếp tục không?"
 
-#: maindlg.cpp:505
-msgid "Save New Format"
-msgstr "Lưu Định dạng Mới"
-
-#: maindlg.cpp:519 kmplot.cpp:190
-msgid ""
-"*.fkt|KmPlot Files (*.fkt)\n"
-"*|All Files"
-msgstr ""
-"*.fkt|Tập tin KmPlot (*.fkt)\n"
-"*|Tất cả"
-
 #: maindlg.cpp:519
 msgid "Save As"
 msgstr ""
-
-#: maindlg.cpp:529 maindlg.cpp:560 kparametereditor.cpp:287
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to continue and "
-"overwrite this file?"
-msgstr ""
-"Tập tin có tên \"%1\" đã tồn tại. Bạn có thực sự muốn ghi đè tập tin này "
-"không?"
-
-#: maindlg.cpp:529 maindlg.cpp:560 kparametereditor.cpp:287
-msgid "Overwrite File?"
-msgstr "Ghi đè Tập tin?"
-
-#: maindlg.cpp:529 maindlg.cpp:560 kparametereditor.cpp:287
-msgid "&Overwrite"
-msgstr "&Ghi đè"
 
 #: maindlg.cpp:536
 msgid "The file could not be saved"
@@ -362,159 +541,6 @@ msgstr "In Đồ thị"
 msgid "KmPlotPart"
 msgstr "KmPlotPart"
 
-#. i18n: file: qparametereditor.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, QParameterEditor)
-#: kparametereditor.cpp:51 rc.cpp:634
-msgid "Parameter Editor"
-msgstr "Soạn Tham số"
-
-#: kparametereditor.cpp:213 kparametereditor.cpp:283
-msgid "*.txt|Plain Text File "
-msgstr "*.txt|Tập tin Văn bản Thuần"
-
-#: kparametereditor.cpp:230 kparametereditor.cpp:272
-msgid "An error appeared when opening this file"
-msgstr "Có lỗi khi mở tập tin này"
-
-#: kparametereditor.cpp:259
-#, kde-format
-msgid ""
-"Line %1 is not a valid parameter value and will therefore not be included. "
-"Do you want to continue?"
-msgstr ""
-"Dòng %1 không phải là một giá trị tham số hợp lệ và sẽ không được nhận. Bạn "
-"có muốn tiếp tục không?"
-
-#: kparametereditor.cpp:265
-msgid "Would you like to be informed about other lines that cannot be read?"
-msgstr "Bạn có muốn được thông báo về các dòng có lỗi khác không?"
-
-#: kparametereditor.cpp:265
-msgid "Get Informed"
-msgstr "Lấy Thông báo"
-
-#: kparametereditor.cpp:265
-msgid "Ignore Information"
-msgstr "Bỏ qua Thông tin"
-
-#: kparametereditor.cpp:306 kparametereditor.cpp:310 kparametereditor.cpp:332
-msgid "An error appeared when saving this file"
-msgstr "Có lỗi khi lưu tập tin"
-
-#: kprinterdlg.cpp:44
-msgid "KmPlot Options"
-msgstr "Tuỳ chọn KmPlot"
-
-#: kprinterdlg.cpp:50
-msgid "Print header table"
-msgstr "In bảng đề mục"
-
-#: kprinterdlg.cpp:51
-msgid "Transparent background"
-msgstr "Nền trong suốt"
-
-#: kprinterdlg.cpp:60
-msgid "Pixels (1/72nd in)"
-msgstr ""
-
-#: kprinterdlg.cpp:61
-msgid "Inches (in)"
-msgstr ""
-
-#: kprinterdlg.cpp:62
-msgid "Centimeters (cm)"
-msgstr ""
-
-#: kprinterdlg.cpp:63
-msgid "Millimeters (mm)"
-msgstr ""
-
-#: kprinterdlg.cpp:67
-#, fuzzy
-msgid "Width:"
-msgstr "Bề dày dấu khắc:"
-
-#: kprinterdlg.cpp:68
-msgid "Height:"
-msgstr ""
-
-#: kprinterdlg.cpp:138
-msgid "Width is invalid"
-msgstr ""
-
-#: kprinterdlg.cpp:145
-msgid "Height is invalid"
-msgstr ""
-
-#: main.cpp:42
-msgid "Mathematical function plotter for KDE"
-msgstr "Trình vẽ đồ thị hàm số toán học cho KDE"
-
-#: main.cpp:49
-msgid "KmPlot"
-msgstr "KmPlot"
-
-#: main.cpp:51
-msgid "(c) 2000-2002, Klaus-Dieter Möller"
-msgstr ""
-
-#: main.cpp:56
-msgid "Klaus-Dieter Möller"
-msgstr ""
-
-#: main.cpp:56
-msgid "Original Author"
-msgstr "Tác giả Gốc"
-
-#: main.cpp:59
-msgid "Matthias Meßmer"
-msgstr ""
-
-#: main.cpp:59
-msgid "GUI"
-msgstr "Giao diện"
-
-#: main.cpp:61
-msgid "Fredrik Edemar"
-msgstr ""
-
-#: main.cpp:61
-msgid "Various improvements"
-msgstr "Nhiều cải tiến"
-
-#: main.cpp:62
-msgid "David Saxton"
-msgstr ""
-
-#: main.cpp:62
-msgid "Porting to Qt 4, UI improvements, features"
-msgstr ""
-
-#: main.cpp:64
-msgid "David Vignoni"
-msgstr ""
-
-#: main.cpp:64
-msgid "svg icon"
-msgstr "biểu tượng svg"
-
-#: main.cpp:65
-msgid "Albert Astals Cid"
-msgstr ""
-
-#: main.cpp:65
-msgid "command line options, MIME type"
-msgstr "tuỳ chọn dòng lệnh, kiểu MIME"
-
-#: main.cpp:71
-#, fuzzy
-msgid "Initial functions to plot"
-msgstr "danh sách hàm để vẽ"
-
-#: main.cpp:72
-msgid "File to open"
-msgstr "Tập tin để mở"
-
 #: parameteranimator.cpp:62
 #, fuzzy
 msgid "Parameter Animator"
@@ -524,51 +550,6 @@ msgstr "Soạn Tham số"
 #, kde-format
 msgid "Slider No. %1"
 msgstr "Con trượt số %1"
-
-#: plotstylewidget.cpp:44
-#, fuzzy
-msgid "Solid"
-msgstr "Con trượt"
-
-#: plotstylewidget.cpp:45
-msgid "Dash"
-msgstr ""
-
-#: plotstylewidget.cpp:46
-msgid "Dot"
-msgstr ""
-
-#: plotstylewidget.cpp:47
-msgid "Dash Dot"
-msgstr ""
-
-#: plotstylewidget.cpp:48
-msgid "Dash Dot Dot"
-msgstr ""
-
-#: plotstylewidget.cpp:59
-msgid "Advanced..."
-msgstr ""
-
-#: plotstylewidget.cpp:63
-msgid "Color:"
-msgstr "Màu:"
-
-#: plotstylewidget.cpp:73
-msgid "Plot Appearance"
-msgstr ""
-
-#: xparser.cpp:143
-msgid "Error in extension."
-msgstr "Lỗi trong phần mở rộng."
-
-#: kmplot.cpp:83
-msgid "Could not find KmPlot's part."
-msgstr "Không tìm thấy các thành phần của KmPlot."
-
-#: kmplot.cpp:190
-msgid "Open"
-msgstr ""
 
 #: parser.cpp:692
 msgid "Remove all"
@@ -631,82 +612,38 @@ msgstr ""
 msgid "The function does not have the correct number of arguments"
 msgstr ""
 
-#: ksliderwindow.cpp:37
-#, kde-format
-msgid "Slider %1"
-msgstr "Con trượt %1"
-
-#: ksliderwindow.cpp:43
-msgid ""
-"Move slider to change the parameter of the function plot connected to this "
-"slider."
-msgstr ""
-"Di chuyển con trượt để thay đổi giá trị tham số cho hàm được vẽ có kết nối "
-"tới con trượt này."
-
-#: ksliderwindow.cpp:94
+#: plotstylewidget.cpp:44
 #, fuzzy
-msgid "Sliders"
+msgid "Solid"
 msgstr "Con trượt"
 
-#: view.cpp:2380 view.cpp:2381
-msgid "  to  "
+#: plotstylewidget.cpp:45
+msgid "Dash"
 msgstr ""
 
-#. i18n: file: functioneditorwidget.ui:184
-#. i18n: ectx: property (title), widget (ParametersWidget, cartesianParameters)
-#. i18n: file: functioneditorwidget.ui:535
-#. i18n: ectx: property (title), widget (ParametersWidget, parametricParameters)
-#. i18n: file: functioneditorwidget.ui:640
-#. i18n: ectx: property (title), widget (ParametersWidget, polarParameters)
-#. i18n: file: functioneditorwidget.ui:714
-#. i18n: ectx: property (title), widget (ParametersWidget, implicitParameters)
-#. i18n: file: functioneditorwidget.ui:796
-#. i18n: ectx: property (title), widget (ParametersWidget, differentialParameters)
-#. i18n: file: parameterswidget.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ParametersWidget)
-#. i18n: file: functioneditorwidget.ui:184
-#. i18n: ectx: property (title), widget (ParametersWidget, cartesianParameters)
-#. i18n: file: functioneditorwidget.ui:535
-#. i18n: ectx: property (title), widget (ParametersWidget, parametricParameters)
-#. i18n: file: functioneditorwidget.ui:640
-#. i18n: ectx: property (title), widget (ParametersWidget, polarParameters)
-#. i18n: file: functioneditorwidget.ui:714
-#. i18n: ectx: property (title), widget (ParametersWidget, implicitParameters)
-#. i18n: file: functioneditorwidget.ui:796
-#. i18n: ectx: property (title), widget (ParametersWidget, differentialParameters)
-#. i18n: file: parameterswidget.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ParametersWidget)
-#: view.cpp:2387 rc.cpp:263 rc.cpp:390 rc.cpp:427 rc.cpp:456 rc.cpp:484
-#: rc.cpp:586
-#, fuzzy
-msgid "Parameters"
-msgstr "Tham số:"
+#: plotstylewidget.cpp:46
+msgid "Dot"
+msgstr ""
 
-#: view.cpp:2387
-#, fuzzy
-msgid "Plotting Range"
-msgstr "Vùng vẽ"
+#: plotstylewidget.cpp:47
+msgid "Dash Dot"
+msgstr ""
 
-#: view.cpp:2387
-msgid "Axes Division"
-msgstr "Phân chia Trục"
+#: plotstylewidget.cpp:48
+msgid "Dash Dot Dot"
+msgstr ""
 
-#: view.cpp:2388
-msgid "x-Axis:"
-msgstr "Trục-x:"
+#: plotstylewidget.cpp:59
+msgid "Advanced..."
+msgstr ""
 
-#: view.cpp:2389
-msgid "y-Axis:"
-msgstr "Trục-y:"
+#: plotstylewidget.cpp:63
+msgid "Color:"
+msgstr "Màu:"
 
-#: view.cpp:2392
-msgid "Functions:"
-msgstr "Hàm:"
-
-#: view.cpp:3469
-msgid "root"
-msgstr "gốc"
+#: plotstylewidget.cpp:73
+msgid "Plot Appearance"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -1353,6 +1290,36 @@ msgid ""
 "allowed, too."
 msgstr ""
 "Nhập giới hạn trên của dải vẽ. Biểu thức giống như 2*pi cũng được chấp nhận."
+
+#. i18n: file: functioneditorwidget.ui:184
+#. i18n: ectx: property (title), widget (ParametersWidget, cartesianParameters)
+#. i18n: file: functioneditorwidget.ui:535
+#. i18n: ectx: property (title), widget (ParametersWidget, parametricParameters)
+#. i18n: file: functioneditorwidget.ui:640
+#. i18n: ectx: property (title), widget (ParametersWidget, polarParameters)
+#. i18n: file: functioneditorwidget.ui:714
+#. i18n: ectx: property (title), widget (ParametersWidget, implicitParameters)
+#. i18n: file: functioneditorwidget.ui:796
+#. i18n: ectx: property (title), widget (ParametersWidget, differentialParameters)
+#. i18n: file: parameterswidget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ParametersWidget)
+#. i18n: file: functioneditorwidget.ui:184
+#. i18n: ectx: property (title), widget (ParametersWidget, cartesianParameters)
+#. i18n: file: functioneditorwidget.ui:535
+#. i18n: ectx: property (title), widget (ParametersWidget, parametricParameters)
+#. i18n: file: functioneditorwidget.ui:640
+#. i18n: ectx: property (title), widget (ParametersWidget, polarParameters)
+#. i18n: file: functioneditorwidget.ui:714
+#. i18n: ectx: property (title), widget (ParametersWidget, implicitParameters)
+#. i18n: file: functioneditorwidget.ui:796
+#. i18n: ectx: property (title), widget (ParametersWidget, differentialParameters)
+#. i18n: file: parameterswidget.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, ParametersWidget)
+#: rc.cpp:263 rc.cpp:390 rc.cpp:427 rc.cpp:456 rc.cpp:484 rc.cpp:586
+#: view.cpp:2387
+#, fuzzy
+msgid "Parameters"
+msgstr "Tham số:"
 
 #. i18n: file: functioneditorwidget.ui:191
 #. i18n: ectx: property (title), widget (PlotStyleWidget, cartesian_f0)
@@ -3290,6 +3257,39 @@ msgstr "&Tìm"
 #: rc.cpp:1242
 msgid "Main Toolbar"
 msgstr ""
+
+#: view.cpp:2380 view.cpp:2381
+msgid "  to  "
+msgstr ""
+
+#: view.cpp:2387
+msgid "Axes Division"
+msgstr "Phân chia Trục"
+
+#: view.cpp:2387
+#, fuzzy
+msgid "Plotting Range"
+msgstr "Vùng vẽ"
+
+#: view.cpp:2388
+msgid "x-Axis:"
+msgstr "Trục-x:"
+
+#: view.cpp:2389
+msgid "y-Axis:"
+msgstr "Trục-y:"
+
+#: view.cpp:2392
+msgid "Functions:"
+msgstr "Hàm:"
+
+#: view.cpp:3469
+msgid "root"
+msgstr "gốc"
+
+#: xparser.cpp:143
+msgid "Error in extension."
+msgstr "Lỗi trong phần mở rộng."
 
 #, fuzzy
 #~ msgid "&Settings"

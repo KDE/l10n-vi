@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktexteditor_plugins\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-11 04:00+0100\n"
+"POT-Creation-Date: 2012-08-18 04:13+0200\n"
 "PO-Revision-Date: 2007-06-22 17:41+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -290,13 +290,13 @@ msgstr "<p>Tập tin <strong>%1</strong> không có nội dung nào."
 #: kdatatool/kate_kdatatool.cpp:38
 #, fuzzy
 #| msgid "Data Tools"
-msgid "DataTool"
+msgid "Data tool"
 msgstr "Công cụ Dữ liệu"
 
 #: kdatatool/kate_kdatatool.cpp:38
 #, fuzzy
 #| msgid "Data Tools"
-msgid "Data tool"
+msgid "DataTool"
 msgstr "Công cụ Dữ liệu"
 
 #: kdatatool/kate_kdatatool.cpp:75
@@ -320,12 +320,12 @@ msgstr ""
 "KOffice."
 
 #: kte_iconinserter/iconinserterplugin.cpp:38
-msgid "Select an Icon to use it inside the Code"
+#: kte_iconinserter/iconinserterplugin.cpp:48
+msgid "Insert Code for KIcon-Creation"
 msgstr ""
 
 #: kte_iconinserter/iconinserterplugin.cpp:38
-#: kte_iconinserter/iconinserterplugin.cpp:48
-msgid "Insert Code for KIcon-Creation"
+msgid "Select an Icon to use it inside the Code"
 msgstr ""
 
 #: kte_iconinserter/iconinserterplugin.cpp:47
@@ -373,51 +373,32 @@ msgid "This looks like valid Insane HTML markup: %1"
 msgstr ""
 
 #: pythonencoding/python_encoding.cpp:35
-msgid "PythonEncoding"
-msgstr ""
-
-#: pythonencoding/python_encoding.cpp:35
 msgid "Python Encoding check"
 msgstr ""
 
-#: timedate/timedate.cpp:55 timedate/timedate_config.cpp:70
-msgctxt ""
-"This is a localized string for default time & date printing on kate document."
-"%d means day in XX format.%m means month in XX format.%Y means year in XXXX "
-"format.%H means hours in XX format.%M means minutes in XX format.Please, if "
-"in your language time or date is written in a different order, change it here"
-msgid "%d-%m-%Y %H:%M"
+#: pythonencoding/python_encoding.cpp:35
+msgid "PythonEncoding"
 msgstr ""
 
-#: timedate/timedate.cpp:124
-msgid "Insert Time && Date"
-msgstr ""
-
-#: timedate/timedate_config.cpp:38
+#: pythonencoding/python_encoding.h:66
+#, kde-format
 msgid ""
-"%y\t2-digit year excluding century (00 - 99)\n"
-"%Y\tfull year number\n"
-"%:m\tmonth number, without leading zero (1 - 12)\n"
-"%m\tmonth number, 2 digits (01 - 12)\n"
-"%b\tabbreviated month name\n"
-"%B\tfull month name\n"
-"%e\tday of the month (1 - 31)\n"
-"%d\tday of the month, 2 digits (01 - 31)\n"
-"%a\tabbreviated weekday name\n"
-"%A\tfull weekday name\n"
-"\n"
-"%H\thour in the 24 hour clock, 2 digits (00 - 23)\n"
-"%k\thour in the 24 hour clock, without leading zero (0 - 23)\n"
-"%I\thour in the 12 hour clock, 2 digits (01 - 12)\n"
-"%l\thour in the 12 hour clock, without leading zero (1 - 12)\n"
-"%M\tminute, 2 digits (00 - 59)\n"
-"%S\tseconds (00 - 59)\n"
-"%P\t\"am\" or \"pm\"\n"
-"%p\t\"AM\" or \"PM\"\n"
+"You are trying to save a python file as non ASCII, without specifiying a "
+"correct source encoding line for encoding \"%1\""
 msgstr ""
 
-#: timedate/timedate_config.cpp:74
-msgid "Format"
+#: pythonencoding/python_encoding.h:67
+msgid "No encoding header"
+msgstr ""
+
+#: pythonencoding/python_encoding.h:68
+#, fuzzy, kde-format
+#| msgid "&Insert"
+msgid "Insert: %1"
+msgstr "C&hèn"
+
+#: pythonencoding/python_encoding.h:69
+msgid "Save Nevertheless"
 msgstr ""
 
 #: rc.cpp:1
@@ -460,25 +441,44 @@ msgstr "&Sửa..."
 msgid "&Tools"
 msgstr "&Công cụ"
 
-#: pythonencoding/python_encoding.h:66
-#, kde-format
+#: timedate/timedate.cpp:55 timedate/timedate_config.cpp:70
+msgctxt ""
+"This is a localized string for default time & date printing on kate document."
+"%d means day in XX format.%m means month in XX format.%Y means year in XXXX "
+"format.%H means hours in XX format.%M means minutes in XX format.Please, if "
+"in your language time or date is written in a different order, change it here"
+msgid "%d-%m-%Y %H:%M"
+msgstr ""
+
+#: timedate/timedate.cpp:124
+msgid "Insert Time && Date"
+msgstr ""
+
+#: timedate/timedate_config.cpp:38
 msgid ""
-"You are trying to save a python file as non ASCII, without specifiying a "
-"correct source encoding line for encoding \"%1\""
+"%y\t2-digit year excluding century (00 - 99)\n"
+"%Y\tfull year number\n"
+"%:m\tmonth number, without leading zero (1 - 12)\n"
+"%m\tmonth number, 2 digits (01 - 12)\n"
+"%b\tabbreviated month name\n"
+"%B\tfull month name\n"
+"%e\tday of the month (1 - 31)\n"
+"%d\tday of the month, 2 digits (01 - 31)\n"
+"%a\tabbreviated weekday name\n"
+"%A\tfull weekday name\n"
+"\n"
+"%H\thour in the 24 hour clock, 2 digits (00 - 23)\n"
+"%k\thour in the 24 hour clock, without leading zero (0 - 23)\n"
+"%I\thour in the 12 hour clock, 2 digits (01 - 12)\n"
+"%l\thour in the 12 hour clock, without leading zero (1 - 12)\n"
+"%M\tminute, 2 digits (00 - 59)\n"
+"%S\tseconds (00 - 59)\n"
+"%P\t\"am\" or \"pm\"\n"
+"%p\t\"AM\" or \"PM\"\n"
 msgstr ""
 
-#: pythonencoding/python_encoding.h:67
-msgid "No encoding header"
-msgstr ""
-
-#: pythonencoding/python_encoding.h:68
-#, fuzzy, kde-format
-#| msgid "&Insert"
-msgid "Insert: %1"
-msgstr "C&hèn"
-
-#: pythonencoding/python_encoding.h:69
-msgid "Save Nevertheless"
+#: timedate/timedate_config.cpp:74
+msgid "Format"
 msgstr ""
 
 #~ msgid "Automatic Completion Popup"

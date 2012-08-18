@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-13 04:46+0200\n"
+"POT-Creation-Date: 2012-08-18 04:13+0200\n"
 "PO-Revision-Date: 2012-01-09 21:51+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -18,6 +18,1547 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.4\n"
+
+#: app/kateapp.cpp:226 app/kateapp.cpp:352
+#, kde-format
+msgid ""
+"The file '%1' could not be opened: it is not a normal file, it is a folder."
+msgstr ""
+"Không mở được tập tin '%1'; nó không phải là tập tin thông thường, nó là một "
+"thư mục."
+
+#: app/kateappcommands.cpp:98
+#, fuzzy
+#| msgid "Documents Modified on Disk"
+msgid "All documents written to disk"
+msgstr "Tài liệu đã thay đổi trên đĩa"
+
+#: app/kateappcommands.cpp:101
+#, fuzzy
+#| msgid "Documents Modified on Disk"
+msgid "Document written to disk"
+msgstr "Tài liệu đã thay đổi trên đĩa"
+
+#: app/kateappcommands.cpp:207
+#, fuzzy
+#| msgid "Create a new document"
+msgid "Cannot go to the document"
+msgstr "Tạo một tài liệu mới"
+
+#: app/kateappcommands.cpp:245
+msgid ""
+"<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
+"b></tt></p><p>Writes the current document(s) to disk. It can be called in "
+"two ways:<br /> <tt>w</tt> &mdash; writes the current document to disk<br /> "
+"<tt>wa</tt> &mdash; writes all documents to disk.</p><p>If no file name is "
+"associated with the document, a file dialog will be shown.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:256
+msgid ""
+"<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
+"b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
+"writes the document(s) to disk. This command can be called in several ways:"
+"<br /> <tt>q</tt> &mdash; closes the current view.<br /> <tt>qa</tt> &mdash; "
+"closes all views, effectively quitting the application.<br /> <tt>wq</tt> "
+"&mdash; writes the current document to disk and closes its view.<br /> "
+"<tt>wqa</tt> &mdash; writes all documents to disk and quits.</p><p>In all "
+"cases, if the view being closed is the last view, the application quits. If "
+"no file name is associated with the document and it should be written to "
+"disk, a file dialog will be shown.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:271
+msgid ""
+"<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
+"p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
+"in two ways:<br /> <tt>x</tt> &mdash; closes the current view.<br /> <tt>xa</"
+"tt> &mdash; closes all views, effectively quitting the application.</p><p>In "
+"all cases, if the view being closed is the last view, the application quits. "
+"If no file name is associated with the document and it should be written to "
+"disk, a file dialog will be shown.</p><p>Unlike the 'w' commands, this "
+"command only writes the document if it is modified.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:285
+msgid ""
+"<p><b>bn,bnext &mdash; switch to next document</b></p><p>Usage: <tt><b>bn"
+"[ext] [N]</b></tt></p><p>Goes to <b>[N]</b>th next document (\"<b>b</b>uffer"
+"\") in document list.<b>[N]</b> defaults to one. </p><p>Wraps around the end "
+"of the document list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:293
+msgid ""
+"<p><b>bp,bprev &mdash; previous buffer</b></p><p>Usage: <tt><b>bp[revious] "
+"[N]</b></tt></p><p>Goes to <b>[N]</b>th previous document (\"<b>b</b>uffer"
+"\") in document list. </p><p> <b>[N]</b> defaults to one. </p><p>Wraps "
+"around the start of the document list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:301
+msgid ""
+"<p><b>bf,bfirst &mdash; first document</b></p><p>Usage: <tt><b>bf[irst]</b></"
+"tt></p><p>Goes to the <b>f</b>irst document (\"<b>b</b>uffer\") in document "
+"list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:307
+msgid ""
+"<p><b>bl,blast &mdash; last document</b></p><p>Usage: <tt><b>bl[ast]</b></"
+"tt></p><p>Goes to the <b>l</b>ast document (\"<b>b</b>uffer\") in document "
+"list.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:313
+msgid ""
+"<p><b>b,buffer &mdash; Edit document N from the document list</b></"
+"p><p>Usage: <tt><b>b[uffer] [N]</b></tt></p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:318
+msgid ""
+"<p><b>sp,split&mdash; Split horizontally the current view into two</b></"
+"p><p>Usage: <tt><b>sp[lit]</b></tt></p><p>The result is two views on the "
+"same document.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:324
+msgid ""
+"<p><b>vs,vsplit&mdash; Split vertically the current view into two</b></"
+"p><p>Usage: <tt><b>vs[plit]</b></tt></p><p>The result is two views on the "
+"same document.</p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:330
+msgid ""
+"<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
+"<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
+"document in the new view. This command can be called in two ways:<br /> "
+"<tt>new</tt> &mdash; splits the view horizontally and opens a new document."
+"<br /> <tt>vnew</tt> &mdash; splits the view vertically and opens a new "
+"document.<br /></p>"
+msgstr ""
+
+#: app/kateappcommands.cpp:340
+msgid ""
+"<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
+"b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
+"useful to re-edit the current file, when it has been changed by another "
+"program.</p>"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:59
+msgid "Configure"
+msgstr ""
+
+#: app/kateconfigdialog.cpp:70
+msgid "Application"
+msgstr "Ứng dụng"
+
+#: app/kateconfigdialog.cpp:72
+#, fuzzy
+msgid "Application Options"
+msgstr "Ứng dụng"
+
+#. i18n: file: plugins/pate/src/plugins/console/config.ui:21
+#. i18n: ectx: attribute (title), widget (QWidget, generalTab)
+#: app/kateconfigdialog.cpp:77 rc.cpp:173
+msgid "General"
+msgstr "Chung"
+
+#: app/kateconfigdialog.cpp:78
+msgid "General Options"
+msgstr "Tuỳ chọn chung"
+
+#: app/kateconfigdialog.cpp:85
+msgid "&Behavior"
+msgstr "&Cư xử"
+
+#: app/kateconfigdialog.cpp:91
+msgid "Wa&rn about files modified by foreign processes"
+msgstr "&Cảnh báo về những tập tin bị sửa bởi các tiến trình ngoài"
+
+#: app/kateconfigdialog.cpp:94
+#, fuzzy
+#| msgid ""
+#| "If enabled, when Kate receives focus you will be asked what to do with "
+#| "files that have been modified on the hard disk. If not enabled, you will "
+#| "be asked what to do with a file that has been modified on the hard disk "
+#| "only when that file gains focus inside Kate."
+msgid ""
+"If enabled, when Kate receives focus you will be asked what to do with files "
+"that have been modified on the hard disk. If not enabled, you will be asked "
+"what to do with a file that has been modified on the hard disk only when "
+"that file is tried to be saved."
+msgstr ""
+"Nếu bật dùng, thì khi chọn cửa sổ Kate chương trình sẽ hỏi bạn làm gì với "
+"những tập tin đã có thay đổi trên đĩa. Nếu tắt không dùng, thì chương trình "
+"sẽ chỉ hỏi câu đó khi chọn tập tin đó ở bên trong trình soạn thảo Kate."
+
+#: app/kateconfigdialog.cpp:105
+msgid "Meta-Information"
+msgstr "Siêu thông tin"
+
+#: app/kateconfigdialog.cpp:111
+msgid "Keep &meta-information past sessions"
+msgstr "Giữ &siêu thông tin qua các thẻ"
+
+#: app/kateconfigdialog.cpp:114
+msgid ""
+"Check this if you want document configuration like for example bookmarks to "
+"be saved past editor sessions. The configuration will be restored if the "
+"document has not changed when reopened."
+msgstr ""
+"Chọn nếu bạn muốn các cấu hình tài liệu như đánh dấu được ghi qua các thẻ "
+"của trình soạn thảo. Cấu hình sẽ được phục hồi nếu tài liệu chưa thay đổi "
+"khi mở lại."
+
+#: app/kateconfigdialog.cpp:124
+msgid "&Delete unused meta-information after:"
+msgstr "&Xóa những siêu thông tin không dùng sau:"
+
+#: app/kateconfigdialog.cpp:127
+msgid "(never)"
+msgstr "(không bao giờ)"
+
+#: app/kateconfigdialog.cpp:148
+msgid "Sessions"
+msgstr "Phiên chạy"
+
+#: app/kateconfigdialog.cpp:149
+msgid "Session Management"
+msgstr "Quản lý phiên chạy"
+
+#: app/kateconfigdialog.cpp:156
+msgid "Elements of Sessions"
+msgstr "Thành phần của phiên chạy"
+
+#: app/kateconfigdialog.cpp:162
+msgid "Include &window configuration"
+msgstr "Bao gồm cấu hình cửa &sổ"
+
+#: app/kateconfigdialog.cpp:164
+msgid ""
+"Check this if you want all your views and frames restored each time you open "
+"Kate"
+msgstr "Chọn nếu bạn muốn mọi ô xem và khung được khôi phục mỗi khi mở Kate"
+
+#: app/kateconfigdialog.cpp:170
+msgid "Behavior on Application Startup"
+msgstr "Cư xử khi khởi chạy"
+
+#: app/kateconfigdialog.cpp:174
+msgid "&Start new session"
+msgstr "&Chạy một phiên chạy mới"
+
+#: app/kateconfigdialog.cpp:175
+msgid "&Load last-used session"
+msgstr "&Nạp phiên chạy sử dụng cuối"
+
+#: app/kateconfigdialog.cpp:176
+msgid "&Manually choose a session"
+msgstr "Tự &chọn một phiên chạy"
+
+#: app/kateconfigdialog.cpp:204
+msgid "Plugins"
+msgstr "Bổ sung"
+
+#: app/kateconfigdialog.cpp:205
+msgid "Plugin Manager"
+msgstr "Trình quản lí bổ sung"
+
+#: app/kateconfigdialog.cpp:218
+#, fuzzy
+msgid "Editor Component"
+msgstr "Chọn thành phần soạn thảo"
+
+#: app/kateconfigdialog.cpp:220
+#, fuzzy
+msgid "Editor Component Options"
+msgstr "Chọn thành phần soạn thảo"
+
+#: app/kateconfigdialog.cpp:408
+#, fuzzy
+#| msgid " day(s)"
+msgctxt "The suffix of 'Delete unused meta-information after'"
+msgid " day"
+msgid_plural " days"
+msgstr[0] " ngày"
+
+#: app/kateconfigplugindialogpage.cpp:71 plugins/pate/src/engine.cpp:181
+msgid "Comment"
+msgstr "Chú thích"
+
+#: app/kateconfigplugindialogpage.cpp:71 plugins/pate/src/engine.cpp:181
+msgid "Name"
+msgstr "Tên"
+
+#: app/kateconfigplugindialogpage.cpp:73
+msgid ""
+"Here you can see all available Kate plugins. Those with a check mark are "
+"loaded, and will be loaded again the next time Kate is started."
+msgstr ""
+"Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
+"được nạp, và sẽ được nạp khi Kate khởi động lần sau."
+
+#: app/katedocmanager.cpp:68
+#, fuzzy
+#| msgid ""
+#| "A KDE text-editor component could not be found;\n"
+#| "please check your KDE installation."
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation."
+msgstr ""
+"Không tìm thấy một thành phần trình soạn thảo văn bản của KDE;\n"
+"xin hãy kiểm tra lại cài đặt KDE."
+
+#: app/katedocmanager.cpp:308
+#, kde-format
+msgid ""
+"The supposedly temporary file %1 has been modified. Do you want to delete it "
+"anyway?"
+msgstr ""
+
+#: app/katedocmanager.cpp:310
+#, fuzzy
+msgid "Delete File?"
+msgstr "Xóa"
+
+#: app/katedocmanager.cpp:450
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
+#| "save your changes or discard them?"
+msgid ""
+"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
+"save your changes or discard them?</p>"
+msgstr ""
+"<p>Tài liệu '%1' đã có thay đổi nhưng chưa được lưu. <p>Bạn muốn lưu những "
+"thay đổi đó hay bỏ chúng đi?"
+
+#: app/katedocmanager.cpp:452
+msgid "Close Document"
+msgstr "Đóng tài liệu"
+
+#: app/katedocmanager.cpp:459
+#, fuzzy
+msgid "Save As"
+msgstr "&Lưu như..."
+
+#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:432
+msgid "New file opened while trying to close Kate, closing aborted."
+msgstr "Mở tập tin mới khi đóng Kate, không đóng."
+
+#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:433
+msgid "Closing Aborted"
+msgstr "Dừng đóng"
+
+#: app/katedocmanager.cpp:558
+msgid "Starting Up"
+msgstr "Đang khởi động"
+
+#: app/katedocmanager.cpp:559
+msgid "Reopening files from the last session..."
+msgstr "Mở lại tập tin từ phiên chạy cuối..."
+
+#: app/katedocmanager.cpp:738
+msgid "Errors/Warnings while opening documents"
+msgstr ""
+
+#: app/katemain.cpp:81
+msgid "Kate"
+msgstr "Kate"
+
+#: app/katemain.cpp:82
+msgid "Kate - Advanced Text Editor"
+msgstr "Kate - Trình soạn thảo văn bản cao cấp"
+
+#: app/katemain.cpp:83
+msgid "(c) 2000-2005 The Kate Authors"
+msgstr "Bản quyền © năm 2000-2005 của các tác gỉả Kate"
+
+#: app/katemain.cpp:85
+msgid "Christoph Cullmann"
+msgstr ""
+
+#: app/katemain.cpp:85
+msgid "Maintainer"
+msgstr "Nhà duy trì"
+
+#: app/katemain.cpp:86
+msgid "Anders Lund"
+msgstr ""
+
+#: app/katemain.cpp:86 app/katemain.cpp:87 app/katemain.cpp:88
+#: app/katemain.cpp:94
+msgid "Core Developer"
+msgstr "Nhà phát triển chính"
+
+#: app/katemain.cpp:87
+#, fuzzy
+msgid "Joseph Wenninger"
+msgstr "Thứ tự mở"
+
+#: app/katemain.cpp:88
+msgid "Hamish Rodda"
+msgstr ""
+
+#: app/katemain.cpp:89
+msgid "Developer & Highlight wizard"
+msgstr "Nhà phát triển & thuật sĩ chiếu sáng"
+
+#: app/katemain.cpp:89
+msgid "Dominik Haumann"
+msgstr ""
+
+#: app/katemain.cpp:90
+msgid "The cool buffersystem"
+msgstr "Hệ thống đệm tuyệt diệu"
+
+#: app/katemain.cpp:90
+msgid "Waldo Bastian"
+msgstr ""
+
+#: app/katemain.cpp:91
+msgid "Charles Samuels"
+msgstr ""
+
+#: app/katemain.cpp:91
+msgid "The Editing Commands"
+msgstr "Các lệnh soạn thảo"
+
+#: app/katemain.cpp:92
+msgid "Matt Newell"
+msgstr ""
+
+#: app/katemain.cpp:92
+msgid "Testing, ..."
+msgstr "Đang thử, ..."
+
+#: app/katemain.cpp:93
+msgid "Former Core Developer"
+msgstr "Nhà phát triển chính lúc đầu"
+
+#: app/katemain.cpp:93
+msgid "Michael Bartl"
+msgstr ""
+
+#: app/katemain.cpp:94
+msgid "Michael McCallum"
+msgstr ""
+
+#: app/katemain.cpp:95
+msgid "Jochen Wilhemly"
+msgstr ""
+
+#: app/katemain.cpp:95
+msgid "KWrite Author"
+msgstr "Tác giả Kwrite"
+
+#: app/katemain.cpp:96
+msgid "KWrite port to KParts"
+msgstr "KWrite chuyển thành KParts"
+
+#: app/katemain.cpp:96
+msgid "Michael Koch"
+msgstr ""
+
+#: app/katemain.cpp:97
+msgid "Christian Gebauer"
+msgstr ""
+
+#: app/katemain.cpp:98
+msgid "Simon Hausmann"
+msgstr ""
+
+#: app/katemain.cpp:99
+msgid "Glen Parker"
+msgstr ""
+
+#: app/katemain.cpp:99
+msgid "KWrite Undo History, Kspell integration"
+msgstr "Lịch sử bỏ bước của KWrite, sự kết hợp Kspell"
+
+#: app/katemain.cpp:100
+msgid "KWrite XML Syntax highlighting support"
+msgstr "Hỗ trợ chiếu sáng cú pháp XML của KWrite"
+
+#: app/katemain.cpp:100
+msgid "Scott Manson"
+msgstr ""
+
+#: app/katemain.cpp:101
+msgid "John Firebaugh"
+msgstr ""
+
+#: app/katemain.cpp:101
+msgid "Patches and more"
+msgstr "Các đắp vá và hơn nữa"
+
+#: app/katemain.cpp:103
+msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
+msgstr "Chiếu sáng cho các tập tin Spec của RPM, Perl, Diff và hơn nữa"
+
+#: app/katemain.cpp:103
+msgid "Matteo Merli"
+msgstr ""
+
+#: app/katemain.cpp:104
+msgid "Highlighting for VHDL"
+msgstr "Chiếu sáng cho VHDL"
+
+#: app/katemain.cpp:104
+msgid "Rocky Scaletta"
+msgstr ""
+
+#: app/katemain.cpp:105
+msgid "Highlighting for SQL"
+msgstr "Chiếu sáng cho SQL"
+
+#: app/katemain.cpp:105
+msgid "Yury Lebedev"
+msgstr ""
+
+#: app/katemain.cpp:106
+msgid "Chris Ross"
+msgstr ""
+
+#: app/katemain.cpp:106
+msgid "Highlighting for Ferite"
+msgstr "Chiếu sáng cho Ferite"
+
+#: app/katemain.cpp:107
+msgid "Highlighting for ILERPG"
+msgstr "Chiếu sáng cho ILERPG"
+
+#: app/katemain.cpp:107
+msgid "Nick Roux"
+msgstr ""
+
+#: app/katemain.cpp:108
+msgid "Carsten Niehaus"
+msgstr ""
+
+#: app/katemain.cpp:108
+msgid "Highlighting for LaTeX"
+msgstr "Chiếu sáng cho LaTeX"
+
+#: app/katemain.cpp:109
+msgid "Highlighting for Makefiles, Python"
+msgstr "Chiếu sáng cho Makefile, Python"
+
+#: app/katemain.cpp:109
+msgid "Per Wigren"
+msgstr ""
+
+#: app/katemain.cpp:110
+msgid "Highlighting for Python"
+msgstr "Chiếu sáng cho Python"
+
+#: app/katemain.cpp:110
+msgid "Jan Fritz"
+msgstr ""
+
+#: app/katemain.cpp:111
+msgid "Daniel Naber"
+msgstr ""
+
+#: app/katemain.cpp:112
+msgid "Highlighting for Scheme"
+msgstr "Chiếu sáng cho Scheme"
+
+#: app/katemain.cpp:112
+msgid "Roland Pabel"
+msgstr ""
+
+#: app/katemain.cpp:113
+msgid "Cristi Dumitrescu"
+msgstr ""
+
+#: app/katemain.cpp:113
+msgid "PHP Keyword/Datatype list"
+msgstr "Danh sách từ khoá/kiểu dữ liệu của PHP"
+
+#: app/katemain.cpp:114
+msgid "Carsten Pfeiffer"
+msgstr ""
+
+#: app/katemain.cpp:114
+msgid "Very nice help"
+msgstr "Trợ giúp rất tốt"
+
+#: app/katemain.cpp:115
+msgid "All people who have contributed and I have forgotten to mention"
+msgstr "Tất cả những người đã đóng góp và tôi đã quên không đề cập đến"
+
+#: app/katemain.cpp:122
+msgid "Start Kate with a given session"
+msgstr "Chạy Kate với phiên chạy chỉ ra"
+
+#: app/katemain.cpp:123
+#, fuzzy
+#| msgid "Start Kate with a given session"
+msgid "Start Kate with a new anonymous session, implies '-n'"
+msgstr "Chạy Kate với phiên chạy chỉ ra"
+
+#: app/katemain.cpp:125
+msgid ""
+"Force start of a new kate instance (is ignored if start is used and another "
+"kate instance already has the given session opened), forced if no parameters "
+"and no URLs are given at all"
+msgstr ""
+
+#: app/katemain.cpp:127
+msgid ""
+"If using an already running kate instance, block until it exits, if URLs "
+"given to open"
+msgstr ""
+
+#: app/katemain.cpp:129
+msgid ""
+"Only try to reuse kate instance with this pid (is ignored if start is used "
+"and another kate instance already has the given session opened)"
+msgstr ""
+
+#: app/katemain.cpp:131
+msgid "Set encoding for the file to open"
+msgstr "Đặt mã hóa cho tập tin sẽ mở"
+
+#: app/katemain.cpp:133
+msgid "Navigate to this line"
+msgstr "Chuyển tới dòng này"
+
+#: app/katemain.cpp:135
+msgid "Navigate to this column"
+msgstr "Chuyển tới cột này"
+
+#: app/katemain.cpp:137
+msgid "Read the contents of stdin"
+msgstr "Đọc nội dung của thiết bị nhập"
+
+#: app/katemain.cpp:139
+msgid "Reuse existing Kate instance; default, only for compatibility"
+msgstr ""
+
+#: app/katemain.cpp:140
+msgid "Document to open"
+msgstr "Tài liệu sẽ mở"
+
+#: app/katemainwindow.cpp:229
+msgid "Use this command to show or hide the view's statusbar"
+msgstr "Dùng câu lệnh này để hiện hay ẩn thanh trạng thái"
+
+#: app/katemainwindow.cpp:231
+msgid "Sho&w Path"
+msgstr "&Hiện đường dẫn"
+
+#: app/katemainwindow.cpp:234
+msgid "Show the complete document path in the window caption"
+msgstr "Hiển thị đường dẫn đầy đủ đến tài liệu trong đầu đề cửa sổ"
+
+#: app/katemainwindow.cpp:254
+msgid "Create a new document"
+msgstr "Tạo một tài liệu mới"
+
+#: app/katemainwindow.cpp:256
+msgid "Open an existing document for editing"
+msgstr "Mở tài liệu đã có để sửa"
+
+#: app/katemainwindow.cpp:260
+msgid ""
+"This lists files which you have opened recently, and allows you to easily "
+"open them again."
+msgstr ""
+"Đây là danh sách những tập tin bạn vừa mở, nó cho phép mở lại chúng dễ dàng "
+"hơn."
+
+#: app/katemainwindow.cpp:264
+msgid "Save A&ll"
+msgstr "Lưu &tất cả"
+
+#: app/katemainwindow.cpp:267
+msgid "Save all open, modified documents to disk."
+msgstr "Lưu mọi tài liệu mở và đã sửa lên đĩa."
+
+#: app/katemainwindow.cpp:270
+msgid "&Reload All"
+msgstr ""
+
+#: app/katemainwindow.cpp:272
+#, fuzzy
+#| msgid "Close all open documents."
+msgid "Reload all open documents."
+msgstr "Đóng mọi tài liệu đang mở."
+
+#: app/katemainwindow.cpp:275
+#, fuzzy
+msgid "Close Orphaned"
+msgstr "Đóng thẻ hiện thời"
+
+#: app/katemainwindow.cpp:277
+msgid ""
+"Close all documents in the file list that could not be reopened, because "
+"they are not accessible anymore."
+msgstr ""
+
+#: app/katemainwindow.cpp:280 plugins/filetree/katefiletree.cpp:60
+msgid "Close the current document."
+msgstr "Đóng tài liệu hiện thời."
+
+#: app/katemainwindow.cpp:283
+#, fuzzy
+msgid "Close Other"
+msgstr "Đóng thẻ hiện thời"
+
+#: app/katemainwindow.cpp:285
+#, fuzzy
+msgid "Close other open documents."
+msgstr "Đóng mọi tài liệu đang mở."
+
+#: app/katemainwindow.cpp:288
+msgid "Clos&e All"
+msgstr "Đón&g tất cả"
+
+#: app/katemainwindow.cpp:290
+msgid "Close all open documents."
+msgstr "Đóng mọi tài liệu đang mở."
+
+#: app/katemainwindow.cpp:295
+msgid "Close this window"
+msgstr "Đóng cửa sổ này"
+
+#: app/katemainwindow.cpp:299
+#, fuzzy
+msgid "&New Window"
+msgstr "&Cửa sổ"
+
+#: app/katemainwindow.cpp:301
+msgid "Create a new Kate view (a new window with the same document list)."
+msgstr ""
+"Tạo một cửa sổ xem tài liệu mới (một cửa sổ mới với cùng danh sách tài liệu)."
+
+#: app/katemainwindow.cpp:307
+msgid "Open W&ith"
+msgstr "&Mở bằng"
+
+#: app/katemainwindow.cpp:309
+msgid ""
+"Open the current document using another application registered for its file "
+"type, or an application of your choice."
+msgstr ""
+"Mở tài liệu hiện thời bằng ứng dụng khác đã đăng ký để mở loại tập tin này, "
+"hoặc một ứng dụng theo lựa chọn."
+
+#: app/katemainwindow.cpp:314
+msgid "Configure the application's keyboard shortcut assignments."
+msgstr "Cấu hình phím nóng của ứng dụng."
+
+#: app/katemainwindow.cpp:317
+msgid "Configure which items should appear in the toolbar(s)."
+msgstr "Chọn những mục hiện lên trên thanh công cụ."
+
+#: app/katemainwindow.cpp:320
+msgid ""
+"Configure various aspects of this application and the editing component."
+msgstr "Cấu hình các mặt khác nhau của ứng dụng này và sửa các thành phần."
+
+#: app/katemainwindow.cpp:324
+msgid "This shows useful tips on the use of this application."
+msgstr "Nó hiển thị lời mách có ích về sử dụng chương trình này."
+
+#: app/katemainwindow.cpp:329
+msgid "&Plugins Handbook"
+msgstr "&Sổ tay về bổ sung"
+
+#: app/katemainwindow.cpp:331
+msgid "This shows help files for various available plugins."
+msgstr "Hiển thị những tập tin trợ giúp về các bổ sung."
+
+#: app/katemainwindow.cpp:335
+#, fuzzy
+msgid "&About Editor Component"
+msgstr "Chọn thành phần soạn thảo"
+
+#: app/katemainwindow.cpp:350
+msgctxt "Menu entry Session->New"
+msgid "&New"
+msgstr "&Mới"
+
+#: app/katemainwindow.cpp:355
+#, fuzzy
+#| msgid "Open Session"
+msgid "&Open Session"
+msgstr "Mở phiên chạy"
+
+#: app/katemainwindow.cpp:360
+#, fuzzy
+#| msgid "&Save session"
+msgid "&Save Session"
+msgstr "&Lưu phiên chạy"
+
+#: app/katemainwindow.cpp:364
+#, fuzzy
+#| msgid "Save Session?"
+msgid "Save Session &As..."
+msgstr "Lưu phiên chạy?"
+
+#: app/katemainwindow.cpp:368
+#, fuzzy
+#| msgid "Manage Sessions"
+msgid "&Manage Sessions..."
+msgstr "Quản lý các phiên chạy"
+
+#: app/katemainwindow.cpp:373
+#, fuzzy
+#| msgid "Open Session"
+msgid "&Quick Open Session"
+msgstr "Mở phiên chạy"
+
+#: app/katemainwindow.cpp:380
+msgid "This will close all open documents. Are you sure you want to continue?"
+msgstr ""
+
+#: app/katemainwindow.cpp:381
+#, fuzzy
+#| msgid "Close all open documents."
+msgid "Close all documents"
+msgstr "Đóng mọi tài liệu đang mở."
+
+#: app/katemainwindow.cpp:725 plugins/filetree/katefiletree.cpp:246
+msgid "&Other..."
+msgstr "&Khác..."
+
+#: app/katemainwindow.cpp:751 plugins/filetree/katefiletree.cpp:277
+#, fuzzy, kde-format
+#| msgid "Application '%1' not found!"
+msgid "Application '%1' not found."
+msgstr "Không tìm thấy ứng dụng '%1'!"
+
+#: app/katemainwindow.cpp:751 plugins/filetree/katefiletree.cpp:277
+#, fuzzy
+msgid "Application not found"
+msgstr "Không tìm thấy ứng dụng!"
+
+#: app/katemdi.cpp:122
+msgid "Tool &Views"
+msgstr "Ô &xem công cụ"
+
+#: app/katemdi.cpp:124
+msgid "Show Side&bars"
+msgstr "Hiện kh&ung lề"
+
+#: app/katemdi.cpp:163
+#, kde-format
+msgid "Show %1"
+msgstr "Hiện %1"
+
+#: app/katemdi.cpp:485
+#, fuzzy
+msgid "Configure ..."
+msgstr "Ô xem trước"
+
+#: app/katemdi.cpp:489
+msgid "Behavior"
+msgstr "Cư xử"
+
+#: app/katemdi.cpp:492
+msgid "Make Non-Persistent"
+msgstr "Thành không bền bỉ"
+
+#: app/katemdi.cpp:492
+msgid "Make Persistent"
+msgstr "Thành bền bỉ"
+
+#: app/katemdi.cpp:494
+msgid "Move To"
+msgstr "Chuyển tới"
+
+#: app/katemdi.cpp:497
+msgid "Left Sidebar"
+msgstr "Khung lề trái"
+
+#: app/katemdi.cpp:500
+msgid "Right Sidebar"
+msgstr "Khung lề phải"
+
+#: app/katemdi.cpp:503
+msgid "Top Sidebar"
+msgstr "Thanh ở trên"
+
+#: app/katemdi.cpp:506
+msgid "Bottom Sidebar"
+msgstr "Thanh ở dưới"
+
+#: app/katemdi.cpp:830
+#, fuzzy
+#| msgid ""
+#| "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
+#| "possible to directly access the tool views with the mouse anymore, so if "
+#| "you need to access the sidebars again invoke <b>Window &gt; Tool Views "
+#| "&gt; Show Sidebars</b> in the menu. It is still possible to show/hide the "
+#| "tool views with the assigned shortcuts.</qt>"
+msgid ""
+"<qt>You are about to hide the sidebars. With hidden sidebars it is not "
+"possible to directly access the tool views with the mouse anymore, so if you "
+"need to access the sidebars again invoke <b>View &gt; Tool Views &gt; Show "
+"Sidebars</b> in the menu. It is still possible to show/hide the tool views "
+"with the assigned shortcuts.</qt>"
+msgstr ""
+"<qt>Bạn đang chuẩn bị ẩn thanh nằm bên. Khi ẩn các thanh này, sẽ không thể "
+"truy cập thẳng bằng chuột đến các ô xem công cụ, vì thế nếu cần truy cập tới "
+"các thanh nằm bên trở lại, thì gọi <b>Cửa sổ &gt; Xem công cụ &gt; Hiện "
+"thanh nằm bên</b> trong thực đơn. Hiện thời vẫn không thể hiện/ẩn các ô xem "
+"công cụ bằng phím nóng.</qt>"
+
+#: app/katemwmodonhddialog.cpp:65
+msgid "Documents Modified on Disk"
+msgstr "Tài liệu đã thay đổi trên đĩa"
+
+#: app/katemwmodonhddialog.cpp:67
+msgid "&Ignore"
+msgstr "&Lờ đi"
+
+#: app/katemwmodonhddialog.cpp:69
+msgid "&Reload"
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:76
+msgid ""
+"Removes the modified flag from the selected documents and closes the dialog "
+"if there are no more unhandled documents."
+msgstr ""
+"Bỏ đánh dấu cho biết những tập tin đã chọn có thay đổi và đóng hộp thoại nếu "
+"không còn có tài liệu không điều khiển được."
+
+#: app/katemwmodonhddialog.cpp:79
+msgid ""
+"Overwrite selected documents, discarding the disk changes and closes the "
+"dialog if there are no more unhandled documents."
+msgstr ""
+"Ghi chèn những tài liệu đã chọn, bỏ qua những thay đổi trên đĩa và đóng hộp "
+"thoại nếu không còn có những tài liệu không điều khiển được."
+
+#: app/katemwmodonhddialog.cpp:82
+msgid ""
+"Reloads the selected documents from disk and closes the dialog if there are "
+"no more unhandled documents."
+msgstr ""
+"Nạp lại những tài liệu đã chọn và đóng hộp thoại nếu không còn có những tài "
+"liệu không điều khiển được."
+
+#: app/katemwmodonhddialog.cpp:96
+#, fuzzy
+#| msgid ""
+#| "<qt>The documents listed below has changed on disk.<p>Select one or more "
+#| "at the time and press an action button until the list is empty.</qt>"
+msgid ""
+"<qt>The documents listed below have changed on disk.<p>Select one or more at "
+"once, and press an action button until the list is empty.</p></qt>"
+msgstr ""
+"<qt>Những tài liệu sau đã có thay đổi trên đĩa.<p>Chọn một hoặc vài tập tin "
+"và nhấn một nút thao tác cho đến khi không còn gì trong danh sách.</qt>"
+
+#: app/katemwmodonhddialog.cpp:103
+msgid "Filename"
+msgstr "Tên tập tin"
+
+#: app/katemwmodonhddialog.cpp:103
+msgid "Status on Disk"
+msgstr "Trạng thái trên đĩa"
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Created"
+msgstr "Tạo"
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Deleted"
+msgstr "Xóa"
+
+#: app/katemwmodonhddialog.cpp:109
+msgid "Modified"
+msgstr "Sửa"
+
+#: app/katemwmodonhddialog.cpp:124
+msgid "&View Difference"
+msgstr "&Xem sự khác nhau"
+
+#: app/katemwmodonhddialog.cpp:127
+#, fuzzy
+#| msgid ""
+#| "Calculates the difference between the the editor contents and the disk "
+#| "file for the selected document, and shows the difference with the default "
+#| "application. Requires diff(1)."
+msgid ""
+"Calculates the difference between the editor contents and the disk file for "
+"the selected document, and shows the difference with the default "
+"application. Requires diff(1)."
+msgstr ""
+"Đưa ra sự khác nhau giữa nội dung đang soạn thảo và nội dung trên đĩa của "
+"tài liệu đã chọn, và hiển thị sự khác nhau bằng ứng dụng mặc định. Cần "
+"chương trình diff(1)."
+
+#: app/katemwmodonhddialog.cpp:187
+#, kde-format
+msgid ""
+"Could not save the document \n"
+"'%1'"
+msgstr ""
+"Không ghi được tài liệu hiện thời.\n"
+"'%1'"
+
+#: app/katemwmodonhddialog.cpp:285
+msgid ""
+"The diff command failed. Please make sure that diff(1) is installed and in "
+"your PATH."
+msgstr ""
+"Lỗi chạy lệnh diff. Xin hãy kiểm tra xem diff(1) đã cài đặt và nằm trong "
+"biến PATH."
+
+#: app/katemwmodonhddialog.cpp:287
+msgid "Error Creating Diff"
+msgstr "Lỗi tạo Diff"
+
+#: app/katemwmodonhddialog.cpp:296
+msgid "Besides white space changes, the files are identical."
+msgstr ""
+
+#: app/katemwmodonhddialog.cpp:297
+msgid "Diff Output"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:91
+#, kde-format
+msgid "Save As (%1)"
+msgstr "Lưu như (%1)"
+
+#: app/katesavemodifieddialog.cpp:103
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr ""
+
+#: app/katesavemodifieddialog.cpp:105
+#, fuzzy
+msgid "Overwrite File?"
+msgstr "&Ghi chèn"
+
+#: app/katesavemodifieddialog.cpp:181
+msgid "Save Documents"
+msgstr "Lưu tài liệu"
+
+#: app/katesavemodifieddialog.cpp:187
+msgid "&Save Selected"
+msgstr "&Lưu đã chọn"
+
+#: app/katesavemodifieddialog.cpp:195
+#, fuzzy
+#| msgid "Do Not Save"
+msgid "Do &Not Close"
+msgstr "Không lưu"
+
+#: app/katesavemodifieddialog.cpp:202
+msgid ""
+"<qt>The following documents have been modified. Do you want to save them "
+"before closing?</qt>"
+msgstr ""
+"<qt>Những tài liệu sau đã có thay đổi. Bạn có muốn ghi chúng trước khi đóng?"
+"</qt>"
+
+#: app/katesavemodifieddialog.cpp:205
+#: plugins/filetree/katefiletreeplugin.cpp:101
+#: plugins/filetree/katefiletreeplugin.cpp:172
+msgid "Documents"
+msgstr "Tài liệu"
+
+#: app/katesavemodifieddialog.cpp:205
+msgid "Location"
+msgstr "Vị trí"
+
+#: app/katesavemodifieddialog.cpp:214
+msgid "Se&lect All"
+msgstr "&Chọn tất cả"
+
+#: app/katesavemodifieddialog.cpp:265
+msgid ""
+"Data you requested to be saved could not be written. Please choose how you "
+"want to proceed."
+msgstr ""
+"Không ghi được dữ liệu bạn yêu cầu lưu. Xin hãy chọn thao tác thực hiện tiếp "
+"theo."
+
+#: app/katesession.cpp:269
+msgid ""
+"Internal error: there is more than one instance open for a given session."
+msgstr ""
+
+#: app/katesession.cpp:275
+#, kde-format
+msgid ""
+"Session '%1' is already opened in another kate instance, change there "
+"instead of reopening?"
+msgstr ""
+
+#: app/katesession.cpp:466 app/katesession.cpp:491
+msgid "No Session Selected"
+msgstr "Chưa có phiên chạy được chọn"
+
+#: app/katesession.cpp:466
+msgid "No session selected to open."
+msgstr "Chưa chọn phiên chạy muốn mở."
+
+#: app/katesession.cpp:491
+#, fuzzy
+#| msgid "No session selected to open."
+msgid "No session selected to copy."
+msgstr "Chưa chọn phiên chạy muốn mở."
+
+#: app/katesession.cpp:577
+msgid "Specify New Name for Current Session"
+msgstr "Chỉ ra tên mới cho phiên chạy hiện thời"
+
+#: app/katesession.cpp:578 app/katesession.cpp:894
+msgid "Session name:"
+msgstr "Tên phiên chạy:"
+
+#: app/katesession.cpp:578
+msgid ""
+"There is already an existing session with your chosen name.\n"
+"Please choose a different one\n"
+"Session name:"
+msgstr ""
+
+#: app/katesession.cpp:585 app/katesession.cpp:901
+msgid "Missing Session Name"
+msgstr "Thiếu tên phiên chạy"
+
+#: app/katesession.cpp:585 app/katesession.cpp:901
+msgid "To save a session, you must specify a name."
+msgstr "Để lưu một phiên chạy, cần chỉ ra một tên."
+
+#: app/katesession.cpp:624
+msgid "Session Chooser"
+msgstr "Trình chọn phiên chạy"
+
+#: app/katesession.cpp:627 app/katesession.cpp:737
+msgid "Open Session"
+msgstr "Mở phiên chạy"
+
+#: app/katesession.cpp:628
+msgid "New Session"
+msgstr "Phiên chạy mới"
+
+#: app/katesession.cpp:639 app/katesession.cpp:758 app/katesession.cpp:835
+msgid "Session Name"
+msgstr "Tên phiên chạy"
+
+#: app/katesession.cpp:640 app/katesession.cpp:759 app/katesession.cpp:836
+msgctxt "The number of open documents"
+msgid "Open Documents"
+msgstr "Mở tài liệu"
+
+#: app/katesession.cpp:652
+msgid "Use selected session as template"
+msgstr ""
+
+#: app/katesession.cpp:668
+msgid "&Always use this choice"
+msgstr "&Luôn luôn dùng tùy chọn này"
+
+#: app/katesession.cpp:741 app/katesession.cpp:821
+msgid "&Open"
+msgstr "&Mở"
+
+#: app/katesession.cpp:817
+msgid "Manage Sessions"
+msgstr "Quản lý các phiên chạy"
+
+#: app/katesession.cpp:853
+msgid "&Rename..."
+msgstr "Đổ&i tên..."
+
+#: app/katesession.cpp:894
+msgid "Specify New Name for Session"
+msgstr "Chỉ ra tên mới cho phiên chạy"
+
+#: app/katesession.cpp:912
+#, fuzzy
+msgid "Session Renaming"
+msgstr "Tên phiên chạy:"
+
+#: app/katesession.cpp:912
+#, kde-format
+msgid ""
+"The session could not be renamed to \"%1\", there already exists another "
+"session with the same name"
+msgstr ""
+
+#: app/kateviewmanager.cpp:120
+msgid "Split Ve&rtical"
+msgstr "Chia &dọc"
+
+#: app/kateviewmanager.cpp:124
+msgid "Split the currently active view vertically into two views."
+msgstr "Chia ô xem hiện thời thành hai ô bằng một đường thẳng đứng."
+
+#: app/kateviewmanager.cpp:128
+msgid "Split &Horizontal"
+msgstr "Chia &ngang"
+
+#: app/kateviewmanager.cpp:132
+msgid "Split the currently active view horizontally into two views."
+msgstr "Chia ô xem hiện thời thành hai ô bằng một đường nằm ngang."
+
+#: app/kateviewmanager.cpp:136
+msgid "Cl&ose Current View"
+msgstr "Đóng ô &xem hiện thời"
+
+#: app/kateviewmanager.cpp:140
+#, fuzzy
+#| msgid "Close the currently active splitted view"
+msgid "Close the currently active split view"
+msgstr "Đóng ô xem đã được chia hiện thời"
+
+#: app/kateviewmanager.cpp:143
+#, fuzzy
+#| msgid "Next View"
+msgid "Next Split View"
+msgstr "Ô xem tiếp theo"
+
+#: app/kateviewmanager.cpp:147
+msgid "Make the next split view the active one."
+msgstr "Chọn ô xem đã chia tiếp theo"
+
+#: app/kateviewmanager.cpp:150
+#, fuzzy
+#| msgid "Previous View"
+msgid "Previous Split View"
+msgstr "Ô xem trước"
+
+#: app/kateviewmanager.cpp:154
+msgid "Make the previous split view the active one."
+msgstr "Chọn ô xem đã chia trước."
+
+#: app/kateviewmanager.cpp:157
+msgid "Move Splitter Right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:160
+msgid "Move the splitter of the current view to the right"
+msgstr ""
+
+#: app/kateviewmanager.cpp:163
+msgid "Move Splitter Left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:166
+msgid "Move the splitter of the current view to the left"
+msgstr ""
+
+#: app/kateviewmanager.cpp:169
+msgid "Move Splitter Up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:172
+msgid "Move the splitter of the current view up"
+msgstr ""
+
+#: app/kateviewmanager.cpp:175
+msgid "Move Splitter Down"
+msgstr ""
+
+#: app/kateviewmanager.cpp:178
+#, fuzzy
+#| msgid "Make the next split view the active one."
+msgid "Move the splitter of the current view down"
+msgstr "Chọn ô xem đã chia tiếp theo"
+
+#: app/kateviewmanager.cpp:183
+#, fuzzy
+msgid "Show Cursor Position"
+msgstr "Hiện kh&ung lề"
+
+#: app/kateviewmanager.cpp:188
+msgid "Show Characters Count"
+msgstr ""
+
+#: app/kateviewmanager.cpp:193
+msgid "Show Insertion Mode"
+msgstr ""
+
+#: app/kateviewmanager.cpp:198
+#, fuzzy
+msgid "Show Selection Mode"
+msgstr "Hành động đã &chọn:"
+
+#: app/kateviewmanager.cpp:203
+msgid "Show Encoding"
+msgstr ""
+
+#: app/kateviewmanager.cpp:208
+#, fuzzy
+#| msgid "Document Name"
+msgid "Show Document Name"
+msgstr "Tên tài liệu"
+
+#: app/kateviewmanager.cpp:240
+msgid "Open File"
+msgstr "Mở tập tin"
+
+#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
+#, kde-format
+msgid " Line: %1 Col: %2 "
+msgstr " Dòng: %1 Cột: %2 "
+
+#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
+#, kde-format
+msgid " Characters: %1 "
+msgstr ""
+
+#: app/kateviewspace.cpp:298
+msgid " INS "
+msgstr " CHÈN "
+
+#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
+#, fuzzy
+#| msgid " INS "
+msgid " LINE "
+msgstr " CHÈN "
+
+#: app/kateviewspace.cpp:404
+#, fuzzy
+#| msgid " BLK "
+msgid " BLOCK "
+msgstr " BLK "
+
+#: plugins/filetree/katefiletree.cpp:58
+#, fuzzy
+#| msgid "Clos&e All"
+msgid "Close"
+msgstr "Đón&g tất cả"
+
+#: plugins/filetree/katefiletree.cpp:62
+#, fuzzy
+#| msgid "Filename"
+msgid "Copy Filename"
+msgstr "Tên tập tin"
+
+#: plugins/filetree/katefiletree.cpp:64
+msgid "Copy the filename of the file."
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:68
+msgid "Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:69
+msgid "Set view style to Tree Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:72
+msgid "List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:73
+msgid "Set view style to List Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:78
+#: plugins/filetree/katefiletreeconfigpage.cpp:87
+msgid "Document Name"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:79
+#, fuzzy
+#| msgid "Document Name"
+msgid "Sort by Document Name"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:83
+#, fuzzy
+#| msgid "Document List"
+msgid "Document Path"
+msgstr "Danh sách tài liệu"
+
+#: plugins/filetree/katefiletree.cpp:84
+#, fuzzy
+#| msgid "&Show All Documents >>"
+msgid "Sort by Document Path"
+msgstr "&Hiển thị mọi tài liệu >>"
+
+#: plugins/filetree/katefiletree.cpp:87
+#: plugins/filetree/katefiletreeconfigpage.cpp:86
+msgid "Opening Order"
+msgstr "Thứ tự mở"
+
+#: plugins/filetree/katefiletree.cpp:88
+#, fuzzy
+#| msgid "Opening Order"
+msgid "Sort by Opening Order"
+msgstr "Thứ tự mở"
+
+#: plugins/filetree/katefiletree.cpp:199
+#, fuzzy
+#| msgid "Open W&ith"
+msgid "Open With"
+msgstr "&Mở bằng"
+
+#: plugins/filetree/katefiletree.cpp:204
+msgid "View Mode"
+msgstr ""
+
+#: plugins/filetree/katefiletree.cpp:208
+#, fuzzy
+msgid "Sort By"
+msgstr "Sắp &xếp theo"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:60
+msgid "Background Shading"
+msgstr "Bóng nền"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:67
+msgid "&Viewed documents' shade:"
+msgstr "&Bóng các tài liệu đã xem:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:73
+msgid "&Modified documents' shade:"
+msgstr "&Bóng các tài liệu đã sửa:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:81
+msgid "&Sort by:"
+msgstr "&Sắp xếp theo:"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:88
+msgid "Url"
+msgstr ""
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:94
+#, fuzzy
+msgid "&View Mode:"
+msgstr "&Mới"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:99
+#, fuzzy
+msgid "Tree View"
+msgstr "Ô xem trước"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:100
+#, fuzzy
+#| msgid "Split Ve&rtical"
+msgid "List View"
+msgstr "Chia &dọc"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:105
+#, fuzzy
+#| msgid "Sho&w Path"
+msgid "&Show Full Path"
+msgstr "&Hiện đường dẫn"
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:111
+msgid ""
+"When background shading is enabled, documents that have been viewed or "
+"edited within the current session will have a shaded background. The most "
+"recent documents have the strongest shade."
+msgstr ""
+"Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
+"hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:115
+msgid "Set the color for shading viewed documents."
+msgstr "Chọn màu cho bóng của những tài liệu đã xem."
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:117
+msgid ""
+"Set the color for modified documents. This color is blended into the color "
+"for viewed files. The most recently edited documents get most of this color."
+msgstr ""
+"Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
+"tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
+
+#: plugins/filetree/katefiletreeconfigpage.cpp:122
+msgid ""
+"When enabled, in tree mode, top level folders will show up with their full "
+"path rather than just the last folder name."
+msgstr ""
+
+#: plugins/filetree/katefiletreemodel.cpp:460
+#, kde-format
+msgctxt "%1 is the full path"
+msgid ""
+"<p><b>%1</b></p><p>The document has been modified by another application.</p>"
+msgstr ""
+
+#: plugins/filetree/katefiletreeplugin.cpp:48
+#, fuzzy
+#| msgid "Document Name"
+msgid "Document Tree"
+msgstr "Tên tài liệu"
+
+#: plugins/filetree/katefiletreeplugin.cpp:48
+msgid "Show open documents in a tree"
+msgstr ""
+
+#: plugins/filetree/katefiletreeplugin.cpp:109
+#, fuzzy
+#| msgid "Current Document"
+msgid "Configure Documents"
+msgstr "Tài liệu hiện thời"
+
+#: plugins/filetree/katefiletreeplugin.cpp:215
+msgid "&Show Active"
+msgstr ""
+
+#: plugins/pate/src/engine.cpp:294
+msgid "Hidden"
+msgstr ""
+
+#: plugins/pate/src/engine.cpp:392
+#, kde-format
+msgid "Missing plugin file %1"
+msgstr ""
+
+#: plugins/pate/src/engine.cpp:410
+msgid "Loaded"
+msgstr ""
+
+#: plugins/pate/src/engine.cpp:414
+#, kde-format
+msgid "Not Loaded: %1"
+msgstr ""
+
+#: plugins/pate/src/plugin.cpp:86 plugins/pate/src/plugin.cpp:117
+msgid "Pate engine could not be initialised"
+msgstr ""
+
+#: plugins/pate/src/plugin.cpp:195
+#, fuzzy
+#| msgid "Plugins"
+msgid "Python Plugins"
+msgstr "Bổ sung"
+
+#: plugins/pate/src/plugin.cpp:211
+msgid "Pâté host for Python plugins"
+msgstr ""
+
+#: plugins/pate/src/plugin.cpp:272
+#, fuzzy
+msgid "Modules"
+msgstr "Hiện kh&ung lề"
+
+#: plugins/pate/src/utilities.cpp:353
+msgid "Configuration group name not a string"
+msgstr ""
+
+#: plugins/pate/src/utilities.cpp:358
+#, kde-format
+msgid "Configuration group %1 top level key not a dictionary"
+msgstr ""
+
+#: plugins/pate/src/utilities.cpp:369
+#, kde-format
+msgid "Configuration group %1 itemKey not a string"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -432,12 +1973,6 @@ msgstr ""
 #: rc.cpp:170
 msgid "ConsoleConfig"
 msgstr ""
-
-#. i18n: file: plugins/pate/src/plugins/console/config.ui:21
-#. i18n: ectx: attribute (title), widget (QWidget, generalTab)
-#: rc.cpp:173 app/kateconfigdialog.cpp:77
-msgid "General"
-msgstr "Chung"
 
 #. i18n: file: plugins/pate/src/plugins/console/config.ui:27
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, ps2)
@@ -921,1541 +2456,6 @@ msgid ""
 msgstr ""
 "<p>Nhấn <strong>F8</strong> hoặc <strong>Shift+F8</strong> để chuyển tới\n"
 "khung tiếp theo/trước.</p>\n"
-
-#: app/kateconfigdialog.cpp:59
-msgid "Configure"
-msgstr ""
-
-#: app/kateconfigdialog.cpp:70
-msgid "Application"
-msgstr "Ứng dụng"
-
-#: app/kateconfigdialog.cpp:72
-#, fuzzy
-msgid "Application Options"
-msgstr "Ứng dụng"
-
-#: app/kateconfigdialog.cpp:78
-msgid "General Options"
-msgstr "Tuỳ chọn chung"
-
-#: app/kateconfigdialog.cpp:85
-msgid "&Behavior"
-msgstr "&Cư xử"
-
-#: app/kateconfigdialog.cpp:91
-msgid "Wa&rn about files modified by foreign processes"
-msgstr "&Cảnh báo về những tập tin bị sửa bởi các tiến trình ngoài"
-
-#: app/kateconfigdialog.cpp:94
-#, fuzzy
-#| msgid ""
-#| "If enabled, when Kate receives focus you will be asked what to do with "
-#| "files that have been modified on the hard disk. If not enabled, you will "
-#| "be asked what to do with a file that has been modified on the hard disk "
-#| "only when that file gains focus inside Kate."
-msgid ""
-"If enabled, when Kate receives focus you will be asked what to do with files "
-"that have been modified on the hard disk. If not enabled, you will be asked "
-"what to do with a file that has been modified on the hard disk only when "
-"that file is tried to be saved."
-msgstr ""
-"Nếu bật dùng, thì khi chọn cửa sổ Kate chương trình sẽ hỏi bạn làm gì với "
-"những tập tin đã có thay đổi trên đĩa. Nếu tắt không dùng, thì chương trình "
-"sẽ chỉ hỏi câu đó khi chọn tập tin đó ở bên trong trình soạn thảo Kate."
-
-#: app/kateconfigdialog.cpp:105
-msgid "Meta-Information"
-msgstr "Siêu thông tin"
-
-#: app/kateconfigdialog.cpp:111
-msgid "Keep &meta-information past sessions"
-msgstr "Giữ &siêu thông tin qua các thẻ"
-
-#: app/kateconfigdialog.cpp:114
-msgid ""
-"Check this if you want document configuration like for example bookmarks to "
-"be saved past editor sessions. The configuration will be restored if the "
-"document has not changed when reopened."
-msgstr ""
-"Chọn nếu bạn muốn các cấu hình tài liệu như đánh dấu được ghi qua các thẻ "
-"của trình soạn thảo. Cấu hình sẽ được phục hồi nếu tài liệu chưa thay đổi "
-"khi mở lại."
-
-#: app/kateconfigdialog.cpp:124
-msgid "&Delete unused meta-information after:"
-msgstr "&Xóa những siêu thông tin không dùng sau:"
-
-#: app/kateconfigdialog.cpp:127
-msgid "(never)"
-msgstr "(không bao giờ)"
-
-#: app/kateconfigdialog.cpp:148
-msgid "Sessions"
-msgstr "Phiên chạy"
-
-#: app/kateconfigdialog.cpp:149
-msgid "Session Management"
-msgstr "Quản lý phiên chạy"
-
-#: app/kateconfigdialog.cpp:156
-msgid "Elements of Sessions"
-msgstr "Thành phần của phiên chạy"
-
-#: app/kateconfigdialog.cpp:162
-msgid "Include &window configuration"
-msgstr "Bao gồm cấu hình cửa &sổ"
-
-#: app/kateconfigdialog.cpp:164
-msgid ""
-"Check this if you want all your views and frames restored each time you open "
-"Kate"
-msgstr "Chọn nếu bạn muốn mọi ô xem và khung được khôi phục mỗi khi mở Kate"
-
-#: app/kateconfigdialog.cpp:170
-msgid "Behavior on Application Startup"
-msgstr "Cư xử khi khởi chạy"
-
-#: app/kateconfigdialog.cpp:174
-msgid "&Start new session"
-msgstr "&Chạy một phiên chạy mới"
-
-#: app/kateconfigdialog.cpp:175
-msgid "&Load last-used session"
-msgstr "&Nạp phiên chạy sử dụng cuối"
-
-#: app/kateconfigdialog.cpp:176
-msgid "&Manually choose a session"
-msgstr "Tự &chọn một phiên chạy"
-
-#: app/kateconfigdialog.cpp:204
-msgid "Plugins"
-msgstr "Bổ sung"
-
-#: app/kateconfigdialog.cpp:205
-msgid "Plugin Manager"
-msgstr "Trình quản lí bổ sung"
-
-#: app/kateconfigdialog.cpp:218
-#, fuzzy
-msgid "Editor Component"
-msgstr "Chọn thành phần soạn thảo"
-
-#: app/kateconfigdialog.cpp:220
-#, fuzzy
-msgid "Editor Component Options"
-msgstr "Chọn thành phần soạn thảo"
-
-#: app/kateconfigdialog.cpp:408
-#, fuzzy
-#| msgid " day(s)"
-msgctxt "The suffix of 'Delete unused meta-information after'"
-msgid " day"
-msgid_plural " days"
-msgstr[0] " ngày"
-
-#: app/kateconfigplugindialogpage.cpp:71 plugins/pate/src/engine.cpp:181
-msgid "Name"
-msgstr "Tên"
-
-#: app/kateconfigplugindialogpage.cpp:71 plugins/pate/src/engine.cpp:181
-msgid "Comment"
-msgstr "Chú thích"
-
-#: app/kateconfigplugindialogpage.cpp:73
-msgid ""
-"Here you can see all available Kate plugins. Those with a check mark are "
-"loaded, and will be loaded again the next time Kate is started."
-msgstr ""
-"Ở đây bạn có thể thấy các bổ sung của Kate. Những bổ sung có đánh dấu là "
-"được nạp, và sẽ được nạp khi Kate khởi động lần sau."
-
-#: app/katemain.cpp:81
-msgid "Kate"
-msgstr "Kate"
-
-#: app/katemain.cpp:82
-msgid "Kate - Advanced Text Editor"
-msgstr "Kate - Trình soạn thảo văn bản cao cấp"
-
-#: app/katemain.cpp:83
-msgid "(c) 2000-2005 The Kate Authors"
-msgstr "Bản quyền © năm 2000-2005 của các tác gỉả Kate"
-
-#: app/katemain.cpp:85
-msgid "Christoph Cullmann"
-msgstr ""
-
-#: app/katemain.cpp:85
-msgid "Maintainer"
-msgstr "Nhà duy trì"
-
-#: app/katemain.cpp:86
-msgid "Anders Lund"
-msgstr ""
-
-#: app/katemain.cpp:86 app/katemain.cpp:87 app/katemain.cpp:88
-#: app/katemain.cpp:94
-msgid "Core Developer"
-msgstr "Nhà phát triển chính"
-
-#: app/katemain.cpp:87
-#, fuzzy
-msgid "Joseph Wenninger"
-msgstr "Thứ tự mở"
-
-#: app/katemain.cpp:88
-msgid "Hamish Rodda"
-msgstr ""
-
-#: app/katemain.cpp:89
-msgid "Dominik Haumann"
-msgstr ""
-
-#: app/katemain.cpp:89
-msgid "Developer & Highlight wizard"
-msgstr "Nhà phát triển & thuật sĩ chiếu sáng"
-
-#: app/katemain.cpp:90
-msgid "Waldo Bastian"
-msgstr ""
-
-#: app/katemain.cpp:90
-msgid "The cool buffersystem"
-msgstr "Hệ thống đệm tuyệt diệu"
-
-#: app/katemain.cpp:91
-msgid "Charles Samuels"
-msgstr ""
-
-#: app/katemain.cpp:91
-msgid "The Editing Commands"
-msgstr "Các lệnh soạn thảo"
-
-#: app/katemain.cpp:92
-msgid "Matt Newell"
-msgstr ""
-
-#: app/katemain.cpp:92
-msgid "Testing, ..."
-msgstr "Đang thử, ..."
-
-#: app/katemain.cpp:93
-msgid "Michael Bartl"
-msgstr ""
-
-#: app/katemain.cpp:93
-msgid "Former Core Developer"
-msgstr "Nhà phát triển chính lúc đầu"
-
-#: app/katemain.cpp:94
-msgid "Michael McCallum"
-msgstr ""
-
-#: app/katemain.cpp:95
-msgid "Jochen Wilhemly"
-msgstr ""
-
-#: app/katemain.cpp:95
-msgid "KWrite Author"
-msgstr "Tác giả Kwrite"
-
-#: app/katemain.cpp:96
-msgid "Michael Koch"
-msgstr ""
-
-#: app/katemain.cpp:96
-msgid "KWrite port to KParts"
-msgstr "KWrite chuyển thành KParts"
-
-#: app/katemain.cpp:97
-msgid "Christian Gebauer"
-msgstr ""
-
-#: app/katemain.cpp:98
-msgid "Simon Hausmann"
-msgstr ""
-
-#: app/katemain.cpp:99
-msgid "Glen Parker"
-msgstr ""
-
-#: app/katemain.cpp:99
-msgid "KWrite Undo History, Kspell integration"
-msgstr "Lịch sử bỏ bước của KWrite, sự kết hợp Kspell"
-
-#: app/katemain.cpp:100
-msgid "Scott Manson"
-msgstr ""
-
-#: app/katemain.cpp:100
-msgid "KWrite XML Syntax highlighting support"
-msgstr "Hỗ trợ chiếu sáng cú pháp XML của KWrite"
-
-#: app/katemain.cpp:101
-msgid "John Firebaugh"
-msgstr ""
-
-#: app/katemain.cpp:101
-msgid "Patches and more"
-msgstr "Các đắp vá và hơn nữa"
-
-#: app/katemain.cpp:103
-msgid "Matteo Merli"
-msgstr ""
-
-#: app/katemain.cpp:103
-msgid "Highlighting for RPM Spec-Files, Perl, Diff and more"
-msgstr "Chiếu sáng cho các tập tin Spec của RPM, Perl, Diff và hơn nữa"
-
-#: app/katemain.cpp:104
-msgid "Rocky Scaletta"
-msgstr ""
-
-#: app/katemain.cpp:104
-msgid "Highlighting for VHDL"
-msgstr "Chiếu sáng cho VHDL"
-
-#: app/katemain.cpp:105
-msgid "Yury Lebedev"
-msgstr ""
-
-#: app/katemain.cpp:105
-msgid "Highlighting for SQL"
-msgstr "Chiếu sáng cho SQL"
-
-#: app/katemain.cpp:106
-msgid "Chris Ross"
-msgstr ""
-
-#: app/katemain.cpp:106
-msgid "Highlighting for Ferite"
-msgstr "Chiếu sáng cho Ferite"
-
-#: app/katemain.cpp:107
-msgid "Nick Roux"
-msgstr ""
-
-#: app/katemain.cpp:107
-msgid "Highlighting for ILERPG"
-msgstr "Chiếu sáng cho ILERPG"
-
-#: app/katemain.cpp:108
-msgid "Carsten Niehaus"
-msgstr ""
-
-#: app/katemain.cpp:108
-msgid "Highlighting for LaTeX"
-msgstr "Chiếu sáng cho LaTeX"
-
-#: app/katemain.cpp:109
-msgid "Per Wigren"
-msgstr ""
-
-#: app/katemain.cpp:109
-msgid "Highlighting for Makefiles, Python"
-msgstr "Chiếu sáng cho Makefile, Python"
-
-#: app/katemain.cpp:110
-msgid "Jan Fritz"
-msgstr ""
-
-#: app/katemain.cpp:110
-msgid "Highlighting for Python"
-msgstr "Chiếu sáng cho Python"
-
-#: app/katemain.cpp:111
-msgid "Daniel Naber"
-msgstr ""
-
-#: app/katemain.cpp:112
-msgid "Roland Pabel"
-msgstr ""
-
-#: app/katemain.cpp:112
-msgid "Highlighting for Scheme"
-msgstr "Chiếu sáng cho Scheme"
-
-#: app/katemain.cpp:113
-msgid "Cristi Dumitrescu"
-msgstr ""
-
-#: app/katemain.cpp:113
-msgid "PHP Keyword/Datatype list"
-msgstr "Danh sách từ khoá/kiểu dữ liệu của PHP"
-
-#: app/katemain.cpp:114
-msgid "Carsten Pfeiffer"
-msgstr ""
-
-#: app/katemain.cpp:114
-msgid "Very nice help"
-msgstr "Trợ giúp rất tốt"
-
-#: app/katemain.cpp:115
-msgid "All people who have contributed and I have forgotten to mention"
-msgstr "Tất cả những người đã đóng góp và tôi đã quên không đề cập đến"
-
-#: app/katemain.cpp:122
-msgid "Start Kate with a given session"
-msgstr "Chạy Kate với phiên chạy chỉ ra"
-
-#: app/katemain.cpp:123
-#, fuzzy
-#| msgid "Start Kate with a given session"
-msgid "Start Kate with a new anonymous session, implies '-n'"
-msgstr "Chạy Kate với phiên chạy chỉ ra"
-
-#: app/katemain.cpp:125
-msgid ""
-"Force start of a new kate instance (is ignored if start is used and another "
-"kate instance already has the given session opened), forced if no parameters "
-"and no URLs are given at all"
-msgstr ""
-
-#: app/katemain.cpp:127
-msgid ""
-"If using an already running kate instance, block until it exits, if URLs "
-"given to open"
-msgstr ""
-
-#: app/katemain.cpp:129
-msgid ""
-"Only try to reuse kate instance with this pid (is ignored if start is used "
-"and another kate instance already has the given session opened)"
-msgstr ""
-
-#: app/katemain.cpp:131
-msgid "Set encoding for the file to open"
-msgstr "Đặt mã hóa cho tập tin sẽ mở"
-
-#: app/katemain.cpp:133
-msgid "Navigate to this line"
-msgstr "Chuyển tới dòng này"
-
-#: app/katemain.cpp:135
-msgid "Navigate to this column"
-msgstr "Chuyển tới cột này"
-
-#: app/katemain.cpp:137
-msgid "Read the contents of stdin"
-msgstr "Đọc nội dung của thiết bị nhập"
-
-#: app/katemain.cpp:139
-msgid "Reuse existing Kate instance; default, only for compatibility"
-msgstr ""
-
-#: app/katemain.cpp:140
-msgid "Document to open"
-msgstr "Tài liệu sẽ mở"
-
-#: app/kateviewspace.cpp:277 app/kateviewspace.cpp:389
-#, kde-format
-msgid " Line: %1 Col: %2 "
-msgstr " Dòng: %1 Cột: %2 "
-
-#: app/kateviewspace.cpp:285 app/kateviewspace.cpp:395
-#, kde-format
-msgid " Characters: %1 "
-msgstr ""
-
-#: app/kateviewspace.cpp:298
-msgid " INS "
-msgstr " CHÈN "
-
-#: app/kateviewspace.cpp:303 app/kateviewspace.cpp:404
-#, fuzzy
-#| msgid " INS "
-msgid " LINE "
-msgstr " CHÈN "
-
-#: app/kateviewspace.cpp:404
-#, fuzzy
-#| msgid " BLK "
-msgid " BLOCK "
-msgstr " BLK "
-
-#: app/katemwmodonhddialog.cpp:65
-msgid "Documents Modified on Disk"
-msgstr "Tài liệu đã thay đổi trên đĩa"
-
-#: app/katemwmodonhddialog.cpp:67
-msgid "&Ignore"
-msgstr "&Lờ đi"
-
-#: app/katemwmodonhddialog.cpp:69
-msgid "&Reload"
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:76
-msgid ""
-"Removes the modified flag from the selected documents and closes the dialog "
-"if there are no more unhandled documents."
-msgstr ""
-"Bỏ đánh dấu cho biết những tập tin đã chọn có thay đổi và đóng hộp thoại nếu "
-"không còn có tài liệu không điều khiển được."
-
-#: app/katemwmodonhddialog.cpp:79
-msgid ""
-"Overwrite selected documents, discarding the disk changes and closes the "
-"dialog if there are no more unhandled documents."
-msgstr ""
-"Ghi chèn những tài liệu đã chọn, bỏ qua những thay đổi trên đĩa và đóng hộp "
-"thoại nếu không còn có những tài liệu không điều khiển được."
-
-#: app/katemwmodonhddialog.cpp:82
-msgid ""
-"Reloads the selected documents from disk and closes the dialog if there are "
-"no more unhandled documents."
-msgstr ""
-"Nạp lại những tài liệu đã chọn và đóng hộp thoại nếu không còn có những tài "
-"liệu không điều khiển được."
-
-#: app/katemwmodonhddialog.cpp:96
-#, fuzzy
-#| msgid ""
-#| "<qt>The documents listed below has changed on disk.<p>Select one or more "
-#| "at the time and press an action button until the list is empty.</qt>"
-msgid ""
-"<qt>The documents listed below have changed on disk.<p>Select one or more at "
-"once, and press an action button until the list is empty.</p></qt>"
-msgstr ""
-"<qt>Những tài liệu sau đã có thay đổi trên đĩa.<p>Chọn một hoặc vài tập tin "
-"và nhấn một nút thao tác cho đến khi không còn gì trong danh sách.</qt>"
-
-#: app/katemwmodonhddialog.cpp:103
-msgid "Filename"
-msgstr "Tên tập tin"
-
-#: app/katemwmodonhddialog.cpp:103
-msgid "Status on Disk"
-msgstr "Trạng thái trên đĩa"
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Modified"
-msgstr "Sửa"
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Created"
-msgstr "Tạo"
-
-#: app/katemwmodonhddialog.cpp:109
-msgid "Deleted"
-msgstr "Xóa"
-
-#: app/katemwmodonhddialog.cpp:124
-msgid "&View Difference"
-msgstr "&Xem sự khác nhau"
-
-#: app/katemwmodonhddialog.cpp:127
-#, fuzzy
-#| msgid ""
-#| "Calculates the difference between the the editor contents and the disk "
-#| "file for the selected document, and shows the difference with the default "
-#| "application. Requires diff(1)."
-msgid ""
-"Calculates the difference between the editor contents and the disk file for "
-"the selected document, and shows the difference with the default "
-"application. Requires diff(1)."
-msgstr ""
-"Đưa ra sự khác nhau giữa nội dung đang soạn thảo và nội dung trên đĩa của "
-"tài liệu đã chọn, và hiển thị sự khác nhau bằng ứng dụng mặc định. Cần "
-"chương trình diff(1)."
-
-#: app/katemwmodonhddialog.cpp:187
-#, kde-format
-msgid ""
-"Could not save the document \n"
-"'%1'"
-msgstr ""
-"Không ghi được tài liệu hiện thời.\n"
-"'%1'"
-
-#: app/katemwmodonhddialog.cpp:285
-msgid ""
-"The diff command failed. Please make sure that diff(1) is installed and in "
-"your PATH."
-msgstr ""
-"Lỗi chạy lệnh diff. Xin hãy kiểm tra xem diff(1) đã cài đặt và nằm trong "
-"biến PATH."
-
-#: app/katemwmodonhddialog.cpp:287
-msgid "Error Creating Diff"
-msgstr "Lỗi tạo Diff"
-
-#: app/katemwmodonhddialog.cpp:296
-msgid "Besides white space changes, the files are identical."
-msgstr ""
-
-#: app/katemwmodonhddialog.cpp:297
-msgid "Diff Output"
-msgstr ""
-
-#: app/katesavemodifieddialog.cpp:91
-#, kde-format
-msgid "Save As (%1)"
-msgstr "Lưu như (%1)"
-
-#: app/katesavemodifieddialog.cpp:103
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr ""
-
-#: app/katesavemodifieddialog.cpp:105
-#, fuzzy
-msgid "Overwrite File?"
-msgstr "&Ghi chèn"
-
-#: app/katesavemodifieddialog.cpp:181
-msgid "Save Documents"
-msgstr "Lưu tài liệu"
-
-#: app/katesavemodifieddialog.cpp:187
-msgid "&Save Selected"
-msgstr "&Lưu đã chọn"
-
-#: app/katesavemodifieddialog.cpp:195
-#, fuzzy
-#| msgid "Do Not Save"
-msgid "Do &Not Close"
-msgstr "Không lưu"
-
-#: app/katesavemodifieddialog.cpp:202
-msgid ""
-"<qt>The following documents have been modified. Do you want to save them "
-"before closing?</qt>"
-msgstr ""
-"<qt>Những tài liệu sau đã có thay đổi. Bạn có muốn ghi chúng trước khi đóng?"
-"</qt>"
-
-#: app/katesavemodifieddialog.cpp:205
-#: plugins/filetree/katefiletreeplugin.cpp:101
-#: plugins/filetree/katefiletreeplugin.cpp:172
-msgid "Documents"
-msgstr "Tài liệu"
-
-#: app/katesavemodifieddialog.cpp:205
-msgid "Location"
-msgstr "Vị trí"
-
-#: app/katesavemodifieddialog.cpp:214
-msgid "Se&lect All"
-msgstr "&Chọn tất cả"
-
-#: app/katesavemodifieddialog.cpp:265
-msgid ""
-"Data you requested to be saved could not be written. Please choose how you "
-"want to proceed."
-msgstr ""
-"Không ghi được dữ liệu bạn yêu cầu lưu. Xin hãy chọn thao tác thực hiện tiếp "
-"theo."
-
-#: app/katesession.cpp:269
-msgid ""
-"Internal error: there is more than one instance open for a given session."
-msgstr ""
-
-#: app/katesession.cpp:275
-#, kde-format
-msgid ""
-"Session '%1' is already opened in another kate instance, change there "
-"instead of reopening?"
-msgstr ""
-
-#: app/katesession.cpp:466
-msgid "No session selected to open."
-msgstr "Chưa chọn phiên chạy muốn mở."
-
-#: app/katesession.cpp:466 app/katesession.cpp:491
-msgid "No Session Selected"
-msgstr "Chưa có phiên chạy được chọn"
-
-#: app/katesession.cpp:491
-#, fuzzy
-#| msgid "No session selected to open."
-msgid "No session selected to copy."
-msgstr "Chưa chọn phiên chạy muốn mở."
-
-#: app/katesession.cpp:577
-msgid "Specify New Name for Current Session"
-msgstr "Chỉ ra tên mới cho phiên chạy hiện thời"
-
-#: app/katesession.cpp:578
-msgid ""
-"There is already an existing session with your chosen name.\n"
-"Please choose a different one\n"
-"Session name:"
-msgstr ""
-
-#: app/katesession.cpp:578 app/katesession.cpp:894
-msgid "Session name:"
-msgstr "Tên phiên chạy:"
-
-#: app/katesession.cpp:585 app/katesession.cpp:901
-msgid "To save a session, you must specify a name."
-msgstr "Để lưu một phiên chạy, cần chỉ ra một tên."
-
-#: app/katesession.cpp:585 app/katesession.cpp:901
-msgid "Missing Session Name"
-msgstr "Thiếu tên phiên chạy"
-
-#: app/katesession.cpp:624
-msgid "Session Chooser"
-msgstr "Trình chọn phiên chạy"
-
-#: app/katesession.cpp:627 app/katesession.cpp:737
-msgid "Open Session"
-msgstr "Mở phiên chạy"
-
-#: app/katesession.cpp:628
-msgid "New Session"
-msgstr "Phiên chạy mới"
-
-#: app/katesession.cpp:639 app/katesession.cpp:758 app/katesession.cpp:835
-msgid "Session Name"
-msgstr "Tên phiên chạy"
-
-#: app/katesession.cpp:640 app/katesession.cpp:759 app/katesession.cpp:836
-msgctxt "The number of open documents"
-msgid "Open Documents"
-msgstr "Mở tài liệu"
-
-#: app/katesession.cpp:652
-msgid "Use selected session as template"
-msgstr ""
-
-#: app/katesession.cpp:668
-msgid "&Always use this choice"
-msgstr "&Luôn luôn dùng tùy chọn này"
-
-#: app/katesession.cpp:741 app/katesession.cpp:821
-msgid "&Open"
-msgstr "&Mở"
-
-#: app/katesession.cpp:817
-msgid "Manage Sessions"
-msgstr "Quản lý các phiên chạy"
-
-#: app/katesession.cpp:853
-msgid "&Rename..."
-msgstr "Đổ&i tên..."
-
-#: app/katesession.cpp:894
-msgid "Specify New Name for Session"
-msgstr "Chỉ ra tên mới cho phiên chạy"
-
-#: app/katesession.cpp:912
-#, kde-format
-msgid ""
-"The session could not be renamed to \"%1\", there already exists another "
-"session with the same name"
-msgstr ""
-
-#: app/katesession.cpp:912
-#, fuzzy
-msgid "Session Renaming"
-msgstr "Tên phiên chạy:"
-
-#: app/kateviewmanager.cpp:120
-msgid "Split Ve&rtical"
-msgstr "Chia &dọc"
-
-#: app/kateviewmanager.cpp:124
-msgid "Split the currently active view vertically into two views."
-msgstr "Chia ô xem hiện thời thành hai ô bằng một đường thẳng đứng."
-
-#: app/kateviewmanager.cpp:128
-msgid "Split &Horizontal"
-msgstr "Chia &ngang"
-
-#: app/kateviewmanager.cpp:132
-msgid "Split the currently active view horizontally into two views."
-msgstr "Chia ô xem hiện thời thành hai ô bằng một đường nằm ngang."
-
-#: app/kateviewmanager.cpp:136
-msgid "Cl&ose Current View"
-msgstr "Đóng ô &xem hiện thời"
-
-#: app/kateviewmanager.cpp:140
-#, fuzzy
-#| msgid "Close the currently active splitted view"
-msgid "Close the currently active split view"
-msgstr "Đóng ô xem đã được chia hiện thời"
-
-#: app/kateviewmanager.cpp:143
-#, fuzzy
-#| msgid "Next View"
-msgid "Next Split View"
-msgstr "Ô xem tiếp theo"
-
-#: app/kateviewmanager.cpp:147
-msgid "Make the next split view the active one."
-msgstr "Chọn ô xem đã chia tiếp theo"
-
-#: app/kateviewmanager.cpp:150
-#, fuzzy
-#| msgid "Previous View"
-msgid "Previous Split View"
-msgstr "Ô xem trước"
-
-#: app/kateviewmanager.cpp:154
-msgid "Make the previous split view the active one."
-msgstr "Chọn ô xem đã chia trước."
-
-#: app/kateviewmanager.cpp:157
-msgid "Move Splitter Right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:160
-msgid "Move the splitter of the current view to the right"
-msgstr ""
-
-#: app/kateviewmanager.cpp:163
-msgid "Move Splitter Left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:166
-msgid "Move the splitter of the current view to the left"
-msgstr ""
-
-#: app/kateviewmanager.cpp:169
-msgid "Move Splitter Up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:172
-msgid "Move the splitter of the current view up"
-msgstr ""
-
-#: app/kateviewmanager.cpp:175
-msgid "Move Splitter Down"
-msgstr ""
-
-#: app/kateviewmanager.cpp:178
-#, fuzzy
-#| msgid "Make the next split view the active one."
-msgid "Move the splitter of the current view down"
-msgstr "Chọn ô xem đã chia tiếp theo"
-
-#: app/kateviewmanager.cpp:183
-#, fuzzy
-msgid "Show Cursor Position"
-msgstr "Hiện kh&ung lề"
-
-#: app/kateviewmanager.cpp:188
-msgid "Show Characters Count"
-msgstr ""
-
-#: app/kateviewmanager.cpp:193
-msgid "Show Insertion Mode"
-msgstr ""
-
-#: app/kateviewmanager.cpp:198
-#, fuzzy
-msgid "Show Selection Mode"
-msgstr "Hành động đã &chọn:"
-
-#: app/kateviewmanager.cpp:203
-msgid "Show Encoding"
-msgstr ""
-
-#: app/kateviewmanager.cpp:208
-#, fuzzy
-#| msgid "Document Name"
-msgid "Show Document Name"
-msgstr "Tên tài liệu"
-
-#: app/kateviewmanager.cpp:240
-msgid "Open File"
-msgstr "Mở tập tin"
-
-#: app/kateapp.cpp:226 app/kateapp.cpp:352
-#, kde-format
-msgid ""
-"The file '%1' could not be opened: it is not a normal file, it is a folder."
-msgstr ""
-"Không mở được tập tin '%1'; nó không phải là tập tin thông thường, nó là một "
-"thư mục."
-
-#: app/kateappcommands.cpp:98
-#, fuzzy
-#| msgid "Documents Modified on Disk"
-msgid "All documents written to disk"
-msgstr "Tài liệu đã thay đổi trên đĩa"
-
-#: app/kateappcommands.cpp:101
-#, fuzzy
-#| msgid "Documents Modified on Disk"
-msgid "Document written to disk"
-msgstr "Tài liệu đã thay đổi trên đĩa"
-
-#: app/kateappcommands.cpp:207
-#, fuzzy
-#| msgid "Create a new document"
-msgid "Cannot go to the document"
-msgstr "Tạo một tài liệu mới"
-
-#: app/kateappcommands.cpp:245
-msgid ""
-"<p><b>w/wa &mdash; write document(s) to disk</b></p><p>Usage: <tt><b>w[a]</"
-"b></tt></p><p>Writes the current document(s) to disk. It can be called in "
-"two ways:<br /> <tt>w</tt> &mdash; writes the current document to disk<br /> "
-"<tt>wa</tt> &mdash; writes all documents to disk.</p><p>If no file name is "
-"associated with the document, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:256
-msgid ""
-"<p><b>q/qa/wq/wqa &mdash; [write and] quit</b></p><p>Usage: <tt><b>[w]q[a]</"
-"b></tt></p><p>Quits the application. If <tt>w</tt> is prepended, it also "
-"writes the document(s) to disk. This command can be called in several ways:"
-"<br /> <tt>q</tt> &mdash; closes the current view.<br /> <tt>qa</tt> &mdash; "
-"closes all views, effectively quitting the application.<br /> <tt>wq</tt> "
-"&mdash; writes the current document to disk and closes its view.<br /> "
-"<tt>wqa</tt> &mdash; writes all documents to disk and quits.</p><p>In all "
-"cases, if the view being closed is the last view, the application quits. If "
-"no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:271
-msgid ""
-"<p><b>x/xa &mdash; write and quit</b></p><p>Usage: <tt><b>x[a]</b></tt></"
-"p><p>Saves document(s) and quits (e<b>x</b>its). This command can be called "
-"in two ways:<br /> <tt>x</tt> &mdash; closes the current view.<br /> <tt>xa</"
-"tt> &mdash; closes all views, effectively quitting the application.</p><p>In "
-"all cases, if the view being closed is the last view, the application quits. "
-"If no file name is associated with the document and it should be written to "
-"disk, a file dialog will be shown.</p><p>Unlike the 'w' commands, this "
-"command only writes the document if it is modified.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:285
-msgid ""
-"<p><b>bn,bnext &mdash; switch to next document</b></p><p>Usage: <tt><b>bn"
-"[ext] [N]</b></tt></p><p>Goes to <b>[N]</b>th next document (\"<b>b</b>uffer"
-"\") in document list.<b>[N]</b> defaults to one. </p><p>Wraps around the end "
-"of the document list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:293
-msgid ""
-"<p><b>bp,bprev &mdash; previous buffer</b></p><p>Usage: <tt><b>bp[revious] "
-"[N]</b></tt></p><p>Goes to <b>[N]</b>th previous document (\"<b>b</b>uffer"
-"\") in document list. </p><p> <b>[N]</b> defaults to one. </p><p>Wraps "
-"around the start of the document list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:301
-msgid ""
-"<p><b>bf,bfirst &mdash; first document</b></p><p>Usage: <tt><b>bf[irst]</b></"
-"tt></p><p>Goes to the <b>f</b>irst document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:307
-msgid ""
-"<p><b>bl,blast &mdash; last document</b></p><p>Usage: <tt><b>bl[ast]</b></"
-"tt></p><p>Goes to the <b>l</b>ast document (\"<b>b</b>uffer\") in document "
-"list.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:313
-msgid ""
-"<p><b>b,buffer &mdash; Edit document N from the document list</b></"
-"p><p>Usage: <tt><b>b[uffer] [N]</b></tt></p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:318
-msgid ""
-"<p><b>sp,split&mdash; Split horizontally the current view into two</b></"
-"p><p>Usage: <tt><b>sp[lit]</b></tt></p><p>The result is two views on the "
-"same document.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:324
-msgid ""
-"<p><b>vs,vsplit&mdash; Split vertically the current view into two</b></"
-"p><p>Usage: <tt><b>vs[plit]</b></tt></p><p>The result is two views on the "
-"same document.</p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:330
-msgid ""
-"<p><b>[v]new &mdash; split view and create new document</b></p><p>Usage: "
-"<tt><b>[v]new</b></tt></p><p>Splits the current view and opens a new "
-"document in the new view. This command can be called in two ways:<br /> "
-"<tt>new</tt> &mdash; splits the view horizontally and opens a new document."
-"<br /> <tt>vnew</tt> &mdash; splits the view vertically and opens a new "
-"document.<br /></p>"
-msgstr ""
-
-#: app/kateappcommands.cpp:340
-msgid ""
-"<p><b>e[dit] &mdash; reload current document</b></p><p>Usage: <tt><b>e[dit]</"
-"b></tt></p><p>Starts <b>e</b>diting the current document again. This is "
-"useful to re-edit the current file, when it has been changed by another "
-"program.</p>"
-msgstr ""
-
-#: app/katedocmanager.cpp:68
-#, fuzzy
-#| msgid ""
-#| "A KDE text-editor component could not be found;\n"
-#| "please check your KDE installation."
-msgid ""
-"A KDE text-editor component could not be found.\n"
-"Please check your KDE installation."
-msgstr ""
-"Không tìm thấy một thành phần trình soạn thảo văn bản của KDE;\n"
-"xin hãy kiểm tra lại cài đặt KDE."
-
-#: app/katedocmanager.cpp:308
-#, kde-format
-msgid ""
-"The supposedly temporary file %1 has been modified. Do you want to delete it "
-"anyway?"
-msgstr ""
-
-#: app/katedocmanager.cpp:310
-#, fuzzy
-msgid "Delete File?"
-msgstr "Xóa"
-
-#: app/katedocmanager.cpp:450
-#, fuzzy, kde-format
-#| msgid ""
-#| "<p>The document '%1' has been modified, but not saved.<p>Do you want to "
-#| "save your changes or discard them?"
-msgid ""
-"<p>The document '%1' has been modified, but not saved.</p><p>Do you want to "
-"save your changes or discard them?</p>"
-msgstr ""
-"<p>Tài liệu '%1' đã có thay đổi nhưng chưa được lưu. <p>Bạn muốn lưu những "
-"thay đổi đó hay bỏ chúng đi?"
-
-#: app/katedocmanager.cpp:452
-msgid "Close Document"
-msgstr "Đóng tài liệu"
-
-#: app/katedocmanager.cpp:459
-#, fuzzy
-msgid "Save As"
-msgstr "&Lưu như..."
-
-#: app/katedocmanager.cpp:485 app/katemainwindow.cpp:432
-msgid "New file opened while trying to close Kate, closing aborted."
-msgstr "Mở tập tin mới khi đóng Kate, không đóng."
-
-#: app/katedocmanager.cpp:486 app/katemainwindow.cpp:433
-msgid "Closing Aborted"
-msgstr "Dừng đóng"
-
-#: app/katedocmanager.cpp:558
-msgid "Starting Up"
-msgstr "Đang khởi động"
-
-#: app/katedocmanager.cpp:559
-msgid "Reopening files from the last session..."
-msgstr "Mở lại tập tin từ phiên chạy cuối..."
-
-#: app/katedocmanager.cpp:738
-msgid "Errors/Warnings while opening documents"
-msgstr ""
-
-#: app/katemdi.cpp:122
-msgid "Tool &Views"
-msgstr "Ô &xem công cụ"
-
-#: app/katemdi.cpp:124
-msgid "Show Side&bars"
-msgstr "Hiện kh&ung lề"
-
-#: app/katemdi.cpp:163
-#, kde-format
-msgid "Show %1"
-msgstr "Hiện %1"
-
-#: app/katemdi.cpp:485
-#, fuzzy
-msgid "Configure ..."
-msgstr "Ô xem trước"
-
-#: app/katemdi.cpp:489
-msgid "Behavior"
-msgstr "Cư xử"
-
-#: app/katemdi.cpp:492
-msgid "Make Non-Persistent"
-msgstr "Thành không bền bỉ"
-
-#: app/katemdi.cpp:492
-msgid "Make Persistent"
-msgstr "Thành bền bỉ"
-
-#: app/katemdi.cpp:494
-msgid "Move To"
-msgstr "Chuyển tới"
-
-#: app/katemdi.cpp:497
-msgid "Left Sidebar"
-msgstr "Khung lề trái"
-
-#: app/katemdi.cpp:500
-msgid "Right Sidebar"
-msgstr "Khung lề phải"
-
-#: app/katemdi.cpp:503
-msgid "Top Sidebar"
-msgstr "Thanh ở trên"
-
-#: app/katemdi.cpp:506
-msgid "Bottom Sidebar"
-msgstr "Thanh ở dưới"
-
-#: app/katemdi.cpp:830
-#, fuzzy
-#| msgid ""
-#| "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
-#| "possible to directly access the tool views with the mouse anymore, so if "
-#| "you need to access the sidebars again invoke <b>Window &gt; Tool Views "
-#| "&gt; Show Sidebars</b> in the menu. It is still possible to show/hide the "
-#| "tool views with the assigned shortcuts.</qt>"
-msgid ""
-"<qt>You are about to hide the sidebars. With hidden sidebars it is not "
-"possible to directly access the tool views with the mouse anymore, so if you "
-"need to access the sidebars again invoke <b>View &gt; Tool Views &gt; Show "
-"Sidebars</b> in the menu. It is still possible to show/hide the tool views "
-"with the assigned shortcuts.</qt>"
-msgstr ""
-"<qt>Bạn đang chuẩn bị ẩn thanh nằm bên. Khi ẩn các thanh này, sẽ không thể "
-"truy cập thẳng bằng chuột đến các ô xem công cụ, vì thế nếu cần truy cập tới "
-"các thanh nằm bên trở lại, thì gọi <b>Cửa sổ &gt; Xem công cụ &gt; Hiện "
-"thanh nằm bên</b> trong thực đơn. Hiện thời vẫn không thể hiện/ẩn các ô xem "
-"công cụ bằng phím nóng.</qt>"
-
-#: app/katemainwindow.cpp:229
-msgid "Use this command to show or hide the view's statusbar"
-msgstr "Dùng câu lệnh này để hiện hay ẩn thanh trạng thái"
-
-#: app/katemainwindow.cpp:231
-msgid "Sho&w Path"
-msgstr "&Hiện đường dẫn"
-
-#: app/katemainwindow.cpp:234
-msgid "Show the complete document path in the window caption"
-msgstr "Hiển thị đường dẫn đầy đủ đến tài liệu trong đầu đề cửa sổ"
-
-#: app/katemainwindow.cpp:254
-msgid "Create a new document"
-msgstr "Tạo một tài liệu mới"
-
-#: app/katemainwindow.cpp:256
-msgid "Open an existing document for editing"
-msgstr "Mở tài liệu đã có để sửa"
-
-#: app/katemainwindow.cpp:260
-msgid ""
-"This lists files which you have opened recently, and allows you to easily "
-"open them again."
-msgstr ""
-"Đây là danh sách những tập tin bạn vừa mở, nó cho phép mở lại chúng dễ dàng "
-"hơn."
-
-#: app/katemainwindow.cpp:264
-msgid "Save A&ll"
-msgstr "Lưu &tất cả"
-
-#: app/katemainwindow.cpp:267
-msgid "Save all open, modified documents to disk."
-msgstr "Lưu mọi tài liệu mở và đã sửa lên đĩa."
-
-#: app/katemainwindow.cpp:270
-msgid "&Reload All"
-msgstr ""
-
-#: app/katemainwindow.cpp:272
-#, fuzzy
-#| msgid "Close all open documents."
-msgid "Reload all open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katemainwindow.cpp:275
-#, fuzzy
-msgid "Close Orphaned"
-msgstr "Đóng thẻ hiện thời"
-
-#: app/katemainwindow.cpp:277
-msgid ""
-"Close all documents in the file list that could not be reopened, because "
-"they are not accessible anymore."
-msgstr ""
-
-#: app/katemainwindow.cpp:280 plugins/filetree/katefiletree.cpp:60
-msgid "Close the current document."
-msgstr "Đóng tài liệu hiện thời."
-
-#: app/katemainwindow.cpp:283
-#, fuzzy
-msgid "Close Other"
-msgstr "Đóng thẻ hiện thời"
-
-#: app/katemainwindow.cpp:285
-#, fuzzy
-msgid "Close other open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katemainwindow.cpp:288
-msgid "Clos&e All"
-msgstr "Đón&g tất cả"
-
-#: app/katemainwindow.cpp:290
-msgid "Close all open documents."
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katemainwindow.cpp:295
-msgid "Close this window"
-msgstr "Đóng cửa sổ này"
-
-#: app/katemainwindow.cpp:299
-#, fuzzy
-msgid "&New Window"
-msgstr "&Cửa sổ"
-
-#: app/katemainwindow.cpp:301
-msgid "Create a new Kate view (a new window with the same document list)."
-msgstr ""
-"Tạo một cửa sổ xem tài liệu mới (một cửa sổ mới với cùng danh sách tài liệu)."
-
-#: app/katemainwindow.cpp:307
-msgid "Open W&ith"
-msgstr "&Mở bằng"
-
-#: app/katemainwindow.cpp:309
-msgid ""
-"Open the current document using another application registered for its file "
-"type, or an application of your choice."
-msgstr ""
-"Mở tài liệu hiện thời bằng ứng dụng khác đã đăng ký để mở loại tập tin này, "
-"hoặc một ứng dụng theo lựa chọn."
-
-#: app/katemainwindow.cpp:314
-msgid "Configure the application's keyboard shortcut assignments."
-msgstr "Cấu hình phím nóng của ứng dụng."
-
-#: app/katemainwindow.cpp:317
-msgid "Configure which items should appear in the toolbar(s)."
-msgstr "Chọn những mục hiện lên trên thanh công cụ."
-
-#: app/katemainwindow.cpp:320
-msgid ""
-"Configure various aspects of this application and the editing component."
-msgstr "Cấu hình các mặt khác nhau của ứng dụng này và sửa các thành phần."
-
-#: app/katemainwindow.cpp:324
-msgid "This shows useful tips on the use of this application."
-msgstr "Nó hiển thị lời mách có ích về sử dụng chương trình này."
-
-#: app/katemainwindow.cpp:329
-msgid "&Plugins Handbook"
-msgstr "&Sổ tay về bổ sung"
-
-#: app/katemainwindow.cpp:331
-msgid "This shows help files for various available plugins."
-msgstr "Hiển thị những tập tin trợ giúp về các bổ sung."
-
-#: app/katemainwindow.cpp:335
-#, fuzzy
-msgid "&About Editor Component"
-msgstr "Chọn thành phần soạn thảo"
-
-#: app/katemainwindow.cpp:350
-msgctxt "Menu entry Session->New"
-msgid "&New"
-msgstr "&Mới"
-
-#: app/katemainwindow.cpp:355
-#, fuzzy
-#| msgid "Open Session"
-msgid "&Open Session"
-msgstr "Mở phiên chạy"
-
-#: app/katemainwindow.cpp:360
-#, fuzzy
-#| msgid "&Save session"
-msgid "&Save Session"
-msgstr "&Lưu phiên chạy"
-
-#: app/katemainwindow.cpp:364
-#, fuzzy
-#| msgid "Save Session?"
-msgid "Save Session &As..."
-msgstr "Lưu phiên chạy?"
-
-#: app/katemainwindow.cpp:368
-#, fuzzy
-#| msgid "Manage Sessions"
-msgid "&Manage Sessions..."
-msgstr "Quản lý các phiên chạy"
-
-#: app/katemainwindow.cpp:373
-#, fuzzy
-#| msgid "Open Session"
-msgid "&Quick Open Session"
-msgstr "Mở phiên chạy"
-
-#: app/katemainwindow.cpp:380
-msgid "This will close all open documents. Are you sure you want to continue?"
-msgstr ""
-
-#: app/katemainwindow.cpp:381
-#, fuzzy
-#| msgid "Close all open documents."
-msgid "Close all documents"
-msgstr "Đóng mọi tài liệu đang mở."
-
-#: app/katemainwindow.cpp:725 plugins/filetree/katefiletree.cpp:246
-msgid "&Other..."
-msgstr "&Khác..."
-
-#: app/katemainwindow.cpp:751 plugins/filetree/katefiletree.cpp:277
-#, fuzzy, kde-format
-#| msgid "Application '%1' not found!"
-msgid "Application '%1' not found."
-msgstr "Không tìm thấy ứng dụng '%1'!"
-
-#: app/katemainwindow.cpp:751 plugins/filetree/katefiletree.cpp:277
-#, fuzzy
-msgid "Application not found"
-msgstr "Không tìm thấy ứng dụng!"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:60
-msgid "Background Shading"
-msgstr "Bóng nền"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:67
-msgid "&Viewed documents' shade:"
-msgstr "&Bóng các tài liệu đã xem:"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:73
-msgid "&Modified documents' shade:"
-msgstr "&Bóng các tài liệu đã sửa:"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:81
-msgid "&Sort by:"
-msgstr "&Sắp xếp theo:"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:86
-#: plugins/filetree/katefiletree.cpp:87
-msgid "Opening Order"
-msgstr "Thứ tự mở"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:87
-#: plugins/filetree/katefiletree.cpp:78
-msgid "Document Name"
-msgstr "Tên tài liệu"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:88
-msgid "Url"
-msgstr ""
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:94
-#, fuzzy
-msgid "&View Mode:"
-msgstr "&Mới"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:99
-#, fuzzy
-msgid "Tree View"
-msgstr "Ô xem trước"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:100
-#, fuzzy
-#| msgid "Split Ve&rtical"
-msgid "List View"
-msgstr "Chia &dọc"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:105
-#, fuzzy
-#| msgid "Sho&w Path"
-msgid "&Show Full Path"
-msgstr "&Hiện đường dẫn"
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:111
-msgid ""
-"When background shading is enabled, documents that have been viewed or "
-"edited within the current session will have a shaded background. The most "
-"recent documents have the strongest shade."
-msgstr ""
-"Khi chọn dùng bóng nền, thì tài liệu được xem hay sửa trong buổi làm việc "
-"hiện thời sẽ có một nền có bóng. Tài liệu mới nhất sẽ có bóng mạnh nhất."
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:115
-msgid "Set the color for shading viewed documents."
-msgstr "Chọn màu cho bóng của những tài liệu đã xem."
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:117
-msgid ""
-"Set the color for modified documents. This color is blended into the color "
-"for viewed files. The most recently edited documents get most of this color."
-msgstr ""
-"Chọn màu cho những tài liệu đã sửa. Màu này được pha trộn với màu cho các "
-"tập tin đã xem. Những tài liệu được sửa gần nhất sẽ có màu này nhiều nhất."
-
-#: plugins/filetree/katefiletreeconfigpage.cpp:122
-msgid ""
-"When enabled, in tree mode, top level folders will show up with their full "
-"path rather than just the last folder name."
-msgstr ""
-
-#: plugins/filetree/katefiletreemodel.cpp:460
-#, kde-format
-msgctxt "%1 is the full path"
-msgid ""
-"<p><b>%1</b></p><p>The document has been modified by another application.</p>"
-msgstr ""
-
-#: plugins/filetree/katefiletreeplugin.cpp:48
-#, fuzzy
-#| msgid "Document Name"
-msgid "Document Tree"
-msgstr "Tên tài liệu"
-
-#: plugins/filetree/katefiletreeplugin.cpp:48
-msgid "Show open documents in a tree"
-msgstr ""
-
-#: plugins/filetree/katefiletreeplugin.cpp:109
-#, fuzzy
-#| msgid "Current Document"
-msgid "Configure Documents"
-msgstr "Tài liệu hiện thời"
-
-#: plugins/filetree/katefiletreeplugin.cpp:215
-msgid "&Show Active"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:58
-#, fuzzy
-#| msgid "Clos&e All"
-msgid "Close"
-msgstr "Đón&g tất cả"
-
-#: plugins/filetree/katefiletree.cpp:62
-#, fuzzy
-#| msgid "Filename"
-msgid "Copy Filename"
-msgstr "Tên tập tin"
-
-#: plugins/filetree/katefiletree.cpp:64
-msgid "Copy the filename of the file."
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:68
-msgid "Tree Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:69
-msgid "Set view style to Tree Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:72
-msgid "List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:73
-msgid "Set view style to List Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:79
-#, fuzzy
-#| msgid "Document Name"
-msgid "Sort by Document Name"
-msgstr "Tên tài liệu"
-
-#: plugins/filetree/katefiletree.cpp:83
-#, fuzzy
-#| msgid "Document List"
-msgid "Document Path"
-msgstr "Danh sách tài liệu"
-
-#: plugins/filetree/katefiletree.cpp:84
-#, fuzzy
-#| msgid "&Show All Documents >>"
-msgid "Sort by Document Path"
-msgstr "&Hiển thị mọi tài liệu >>"
-
-#: plugins/filetree/katefiletree.cpp:88
-#, fuzzy
-#| msgid "Opening Order"
-msgid "Sort by Opening Order"
-msgstr "Thứ tự mở"
-
-#: plugins/filetree/katefiletree.cpp:199
-#, fuzzy
-#| msgid "Open W&ith"
-msgid "Open With"
-msgstr "&Mở bằng"
-
-#: plugins/filetree/katefiletree.cpp:204
-msgid "View Mode"
-msgstr ""
-
-#: plugins/filetree/katefiletree.cpp:208
-#, fuzzy
-msgid "Sort By"
-msgstr "Sắp &xếp theo"
-
-#: plugins/pate/src/engine.cpp:294
-msgid "Hidden"
-msgstr ""
-
-#: plugins/pate/src/engine.cpp:392
-#, kde-format
-msgid "Missing plugin file %1"
-msgstr ""
-
-#: plugins/pate/src/engine.cpp:410
-msgid "Loaded"
-msgstr ""
-
-#: plugins/pate/src/engine.cpp:414
-#, kde-format
-msgid "Not Loaded: %1"
-msgstr ""
-
-#: plugins/pate/src/plugin.cpp:86 plugins/pate/src/plugin.cpp:117
-msgid "Pate engine could not be initialised"
-msgstr ""
-
-#: plugins/pate/src/plugin.cpp:195
-#, fuzzy
-#| msgid "Plugins"
-msgid "Python Plugins"
-msgstr "Bổ sung"
-
-#: plugins/pate/src/plugin.cpp:211
-msgid "Pâté host for Python plugins"
-msgstr ""
-
-#: plugins/pate/src/plugin.cpp:272
-#, fuzzy
-msgid "Modules"
-msgstr "Hiện kh&ung lề"
-
-#: plugins/pate/src/utilities.cpp:353
-msgid "Configuration group name not a string"
-msgstr ""
-
-#: plugins/pate/src/utilities.cpp:358
-#, kde-format
-msgid "Configuration group %1 top level key not a dictionary"
-msgstr ""
-
-#: plugins/pate/src/utilities.cpp:369
-#, kde-format
-msgid "Configuration group %1 itemKey not a string"
-msgstr ""
 
 #, fuzzy
 #~ msgid "Filter"

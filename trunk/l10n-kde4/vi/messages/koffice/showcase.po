@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:28+0200\n"
+"POT-Creation-Date: 2012-08-19 05:51+0200\n"
 "PO-Revision-Date: 2012-01-16 16:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -367,12 +367,11 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
-#: part/SCViewModeSlidesSorter.cpp:325 part/ui/SCCustomSlideShowsDialog.cpp:82
-#: part/ui/SCCustomSlideShowsDialog.cpp:239
-#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#, kde-format
-msgid "Slide %1"
-msgstr "Slide %1"
+#. i18n: file: part/showcase.rc:91
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
+msgid "Edit"
+msgstr "Sửa"
 
 #: part/commands/SCAnimationCreateCommand.cpp:33
 #, fuzzy
@@ -392,12 +391,6 @@ msgstr "Hiệu ứng sửa trang"
 msgid "Delete page effect"
 msgstr "Hiệu ứng xóa trang"
 
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr "Sửa"
-
 #: part/dockers/SCPageLayoutDocker.cpp:46
 #, fuzzy
 msgid "Slide Layouts"
@@ -411,6 +404,14 @@ msgstr "Tập tin để mở"
 #, fuzzy
 msgid "Set Layout"
 msgstr "&Kiểu Trang..."
+
+#: part/tools/SCAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
+
+#: part/tools/SCPlaceholderToolFactory.cpp:28
+msgid "Layout Tool"
+msgstr ""
 
 #: part/tools/SCAnimationTool.cpp:69
 #, fuzzy
@@ -431,9 +432,11 @@ msgstr ""
 msgid "Shape Animation"
 msgstr "Hoạt cảnh tạo hình"
 
-#: part/tools/SCAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
+#: part/tools/SCPlaceholderTool.cpp:78
+#, fuzzy
+#| msgid "Shape"
+msgid "Edit Shape"
+msgstr "Hình"
 
 #: part/tools/SCPageEffectDocker.cpp:57
 msgid "No Effect"
@@ -441,16 +444,6 @@ msgstr "Không hiệu ứng"
 
 #: part/tools/SCPageEffectDocker.cpp:80
 msgid " sec"
-msgstr ""
-
-#: part/tools/SCPlaceholderTool.cpp:78
-#, fuzzy
-#| msgid "Shape"
-msgid "Edit Shape"
-msgstr "Hình"
-
-#: part/tools/SCPlaceholderToolFactory.cpp:28
-msgid "Layout Tool"
 msgstr ""
 
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
@@ -482,6 +475,14 @@ msgstr "&Mọi slide"
 msgid "Configure Slide Show"
 msgstr "&Cấu hình trang ..."
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:82
+#: part/ui/SCCustomSlideShowsDialog.cpp:239
+#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
+#: part/SCViewModeSlidesSorter.cpp:325
+#, kde-format
+msgid "Slide %1"
+msgstr "Slide %1"
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:96
 #: part/ui/SCCustomSlideShowsDialog.cpp:100
 #: part/ui/SCCustomSlideShowsDialog.cpp:102
@@ -491,16 +492,16 @@ msgstr "&Cấu hình trang ..."
 msgid "New Slide Show %1"
 msgstr "Trình diễn"
 
+#: part/ui/SCCustomSlideShowsDialog.cpp:133
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
+
 #: part/ui/SCCustomSlideShowsDialog.cpp:133 part/ui/SCHtmlExportDialog.cpp:158
 #: part/ui/SCHtmlExportDialog.cpp:211
 #, fuzzy
 #| msgid "Arrow"
 msgid "Error"
 msgstr "Mũi tên"
-
-#: part/ui/SCCustomSlideShowsDialog.cpp:133
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
 
 #: part/ui/SCCustomSlideShowsDialog.cpp:148
 #, fuzzy
@@ -549,17 +550,17 @@ msgid "Add Template"
 msgstr ""
 
 #: part/ui/SCHtmlExportDialog.cpp:322
+#, fuzzy
+#| msgid "Save Configuration..."
+msgid "Confirm remove"
+msgstr "Sao luư  Cấu hình."
+
+#: part/ui/SCHtmlExportDialog.cpp:322
 #, fuzzy, kde-format
 msgid "Are you sure you want to remove \"%1\"?"
 msgstr ""
 "Bạn có muốn gỡ bỏ trang hiện tạỉ\n"
 "Thao tác này không thể undonẹ"
-
-#: part/ui/SCHtmlExportDialog.cpp:322
-#, fuzzy
-#| msgid "Save Configuration..."
-msgid "Confirm remove"
-msgstr "Sao luư  Cấu hình."
 
 #: plugins/eventactions/sound/SCSoundEventActionWidget.cpp:94
 #, fuzzy

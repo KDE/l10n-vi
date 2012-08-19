@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:01+0200\n"
+"POT-Creation-Date: 2012-08-19 02:35+0200\n"
 "PO-Revision-Date: 2012-01-09 00:52+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -86,6 +86,15 @@ msgstr ""
 "X-Generator: KAider 0.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: flow/imageexport/flow_imageexportdialog.cpp:35
+msgid "Export to Image"
+msgstr "Xuất ra Ảnh"
+
+#: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
+msgid "Failed to read data."
+msgstr "Không đọc được dữ liệu."
+
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:68
@@ -93,19 +102,10 @@ msgstr ""
 msgid "Export Error"
 msgstr "Lỗi Xuất"
 
-#: flow/imageexport/flow_imageexport.cpp:91
-#: kchart/genericimageexport/genericimageexport.cpp:67
-msgid "Failed to read data."
-msgstr "Không đọc được dữ liệu."
-
 #: flow/imageexport/flow_imageexport.cpp:102
 #: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "Dữ liệu XML không hợp lệ."
-
-#: flow/imageexport/flow_imageexportdialog.cpp:35
-msgid "Export to Image"
-msgstr "Xuất ra Ảnh"
 
 #: karbon/eps/EpsExportDlg.cpp:37
 msgid "EPS Export"
@@ -175,16 +175,9 @@ msgstr "Lỗi Xuất PNG"
 
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
-#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
-#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
-#: sheets/xlsx/XlsxXmlTableReader.cpp:78
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
-#: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
+#: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: words/docx/DocxXmlCommentsReader.cpp:89
-#: words/docx/DocxXmlDocumentReader.cpp:201
 #: words/docx/DocxXmlEndnoteReader.cpp:90
 #: words/docx/DocxXmlFontTableReader.cpp:89
 #: words/docx/DocxXmlFooterReader.cpp:95
@@ -192,6 +185,13 @@ msgstr "Lỗi Xuất PNG"
 #: words/docx/DocxXmlHeaderReader.cpp:95
 #: words/docx/DocxXmlNumberingReader.cpp:87
 #: words/docx/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
+#: sheets/xlsx/XlsxXmlDocumentReader.cpp:134
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:113
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:457
+#: sheets/xlsx/XlsxXmlTableReader.cpp:78
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -287,6 +287,10 @@ msgstr "Không thể đọc từ tập tin."
 msgid "Could not find target for relationship \"%1\" in file \"%2\""
 msgstr "Không thể đọc từ tập tin."
 
+#: libmsooxml/MsooXmlUtils.cpp:180
+msgid "QXml"
+msgstr "QXml"
+
 #: libmsooxml/MsooXmlUtils.cpp:179
 #, fuzzy, kde-format
 #| msgid ""
@@ -298,10 +302,6 @@ msgid ""
 "Error message: %3"
 msgstr ""
 "Lỗi xảy ra khi đọc tập tin KWord. Trên dòng: %1, cột %2 Thông báo lỗi: %3"
-
-#: libmsooxml/MsooXmlUtils.cpp:180
-msgid "QXml"
-msgstr "QXml"
 
 #: libmsooxml/MsooXmlUtils.cpp:229
 #, kde-format
@@ -325,6 +325,250 @@ msgstr ""
 #| msgid "Could not read from file."
 msgid "Could not write block"
 msgstr "Không thể đọc từ tập tin."
+
+#: stage/pptx/PptxImport.cpp:1097 words/docx/DocxImport.cpp:168
+#: sheets/xlsx/XlsxImport.cpp:571
+#, fuzzy, kde-format
+#| msgid "Could not read from file."
+msgid "Unable to find part for type %1"
+msgstr "Không thể đọc từ tập tin."
+
+#: stage/pptx/PptxXmlSlideReader.cpp:629
+#, fuzzy, kde-format
+msgid "Slide %1"
+msgstr "Tiêu đề Ảnh chiếu"
+
+#: stage/pptx/PptxXmlDocumentReader.cpp:289
+#, fuzzy, kde-format
+msgid "Slide layout \"%1\" not found"
+msgstr "Ghi chú cuối %1"
+
+#: words/ascii/ImportDialog.cc:45
+#, fuzzy
+msgid "Words's Plain Text Import Filter"
+msgstr "Bộ lọc Nhập Văn bản không được định dạng của KWord"
+
+#: words/ascii/ImportDialog.cc:49 sheets/csv/csvdialog.cpp:65
+#: sheets/csv/csvexportdialog.cpp:46
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Recommended ( %1 )"
+msgstr "Khuyên dùng ( %1 )"
+
+#: words/ascii/ImportDialog.cc:50 sheets/csv/csvdialog.cpp:66
+#: sheets/csv/csvexportdialog.cpp:47
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Locale ( %1 )"
+msgstr "Miền địa phương (%1)"
+
+#: words/ascii/ImportDialog.cc:53 sheets/csv/csvdialog.cpp:69
+#: sheets/csv/csvexportdialog.cpp:50
+#, kde-format
+msgctxt "Descriptive encoding name"
+msgid "Other ( %1 )"
+msgstr "Khác ( %1 )"
+
+#: words/ascii/ImportDialog.cc:107 sheets/csv/csvdialog.cpp:522
+#: sheets/csv/csvexportdialog.cpp:286
+#, kde-format
+msgid "Cannot find encoding: %1"
+msgstr "Không thể tìm thấy bộ mã: %1"
+
+#: words/html-odf/exportdialog.cpp:36 sheets/html/exportdialog.cc:37
+msgid "Export Sheet to HTML"
+msgstr "Xuất Tờ ra HTML"
+
+#: words/html-odf/exportdialog.cpp:43 sheets/html/exportdialog.cc:48
+msgid "Recommended: UTF-8"
+msgstr "Khuyên dùng: UTF-8"
+
+#: words/html-odf/exportdialog.cpp:44 sheets/html/exportdialog.cc:49
+#, kde-format
+msgid "Locale (%1)"
+msgstr "Miền địa phương (%1)"
+
+#: words/msword-odf/conversion.cpp:830
+msgid "Even Pages Header"
+msgstr ""
+
+#: words/msword-odf/conversion.cpp:832
+msgid "Odd Pages Header"
+msgstr ""
+
+#: words/msword-odf/conversion.cpp:834
+msgid "Even Pages Footer"
+msgstr ""
+
+#: words/msword-odf/conversion.cpp:836
+msgid "Odd Pages Footer"
+msgstr ""
+
+#: words/msword-odf/conversion.cpp:838
+msgid "First Page Header"
+msgstr ""
+
+#: words/msword-odf/conversion.cpp:840
+msgid "First Page Footer"
+msgstr ""
+
+#: words/msword-odf/texthandler.cpp:624
+#, kde-format
+msgid "Table %1"
+msgstr "Bảng %1"
+
+#: words/rtf/import/rtfimport.cpp:56
+msgid "The file cannot be loaded, as it seems not to be an RTF document."
+msgstr "Không thể tải tập tin vì nó trông không giống một tài liệu RTF."
+
+#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
+#: words/rtf/import/rtfimport.cpp:81
+#, fuzzy
+#| msgid "KWord's RTF Import Filter"
+msgid "Words's RTF Import Filter"
+msgstr "Bộ lọc Nhập RTF của KWor"
+
+#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
+#, fuzzy
+#| msgid "The file cannot be loaded, as it cannot be opened."
+msgid "The file cannot be loaded."
+msgstr "Không thể tải tập tin vì không mở được nó."
+
+#: sheets/csv/csvdialog.cpp:61
+msgid "Import"
+msgstr "Nhập"
+
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+#, fuzzy
+msgid "Text"
+msgstr "Chữ"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "Số"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "Ngày tháng"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr ""
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr ""
+
+#. i18n: file: sheets/csv/dialogui.ui:275
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 rc.cpp:144
+msgid "None"
+msgstr "Không"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"Hãy kiểm tra lại khoảng mà bạn chỉ định. Giá trị bắt đầu phải thấp hơn giá "
+"trị kết thúc."
+
+#: sheets/csv/csvexport.cc:282
+msgid "<SHEETNAME>"
+msgstr "<TÊNTỜ>"
+
+#: sheets/csv/csvimport.cc:92
+msgid "CSV filter cannot open input file - please report."
+msgstr "Bộ lọc CSV không thể mở tập tin đầu vào - xin thông báo lại."
+
+#: sheets/dbase/dbaseimport.cc:56
+msgid "File format is not supported."
+msgstr "Định dạng tập tin không được hỗ trợ."
+
+#: sheets/dbase/dbaseimport.cc:61
+msgid "Could not read from file."
+msgstr "Không thể đọc từ tập tin."
+
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
+msgid "Top"
+msgstr "Trên"
+
+#: sheets/opencalc/opencalcimport.cc:1236
+msgid "The file seems to be corrupt. Skipping a table."
+msgstr "Tập tin có thể bị lỗi. Bỏ qua một bảng."
+
+#: sheets/opencalc/opencalcimport.cc:1247
+msgid "Skipping a table."
+msgstr "Bỏ qua một bảng."
+
+#: sheets/opencalc/opencalcimport.cc:1947
+#, fuzzy, kde-format
+msgid ""
+"This document was created with OpenOffice.org version '%1'. This filter was "
+"written for version 1.0. Reading this file could cause strange behavior, "
+"crashes or incorrect display of the data. Do you want to continue converting "
+"the document?"
+msgstr ""
+"Tài liệu này được làm ra bởi OpenOffice.org phiên bản '%1'. Bộ lọc này được "
+"viết cho phiên bản 1.0. Đọc tập tin này có thể tạo ra hành xử lạ, sụp đổ "
+"hoặc hiển thị dữ liệu không chính xác. Bạn có muốn tiếp tục chuyển đổi tài "
+"liệu?"
+
+#: sheets/opencalc/opencalcimport.cc:1948
+msgid "Unsupported document version"
+msgstr "Phiên bản tài liệu không được hỗ trợ"
+
+#: sheets/opencalc/opencalcexport.cc:914
+msgid "Page "
+msgstr "Trang"
+
+#: sheets/qpro/qproimport.cc:128
+msgid "QPRO filter cannot open input file - please report."
+msgstr "Bộ lọc QPRO không thể mở tập tin đầu vào - xin thông báo lại."
+
+#: sheets/qpro/qproimport.cc:239
+msgid ""
+"Unable to open password protected files.\n"
+"The password algorithm has not been published"
+msgstr ""
+"Không thể mở các tập tin được bảo vệ bằng mật khẩu. Thuật toán của mật khẩu "
+"chưa được công bố"
+
+#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
+#, kde-format
+msgid "Declared number of shared strings too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
+#, kde-format
+msgid "Declared number of font styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
+#, kde-format
+msgid "Declared number of cell formats too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
+#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
+#, kde-format
+msgid "Declared number of fill styles too small (%1)"
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
+msgid ""
+"The data could not be loaded completely because the maximum size of sheet "
+"was exceeded."
+msgstr ""
+
+#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
+msgid "Expected integer or floating point number"
+msgstr ""
 
 #. i18n: file: flow/imageexport/flow_imageexportwidget.ui:27
 #. i18n: ectx: property (text), widget (QLabel)
@@ -643,12 +887,6 @@ msgstr "\""
 #: rc.cpp:141 rc.cpp:231
 msgid "'"
 msgstr "'"
-
-#. i18n: file: sheets/csv/dialogui.ui:275
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: rc.cpp:144 sheets/csv/csvdialog.cpp:454
-msgid "None"
-msgstr "Không"
 
 #. i18n: file: sheets/csv/dialogui.ui:316
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
@@ -1083,244 +1321,6 @@ msgstr "Đượ&c"
 #: rc.cpp:405
 msgid "&Cancel"
 msgstr "&Dừng"
-
-#: sheets/csv/csvdialog.cpp:61
-msgid "Import"
-msgstr "Nhập"
-
-#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
-#: words/ascii/ImportDialog.cc:49
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Recommended ( %1 )"
-msgstr "Khuyên dùng ( %1 )"
-
-#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
-#: words/ascii/ImportDialog.cc:50
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Locale ( %1 )"
-msgstr "Miền địa phương (%1)"
-
-#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
-#: words/ascii/ImportDialog.cc:53
-#, kde-format
-msgctxt "Descriptive encoding name"
-msgid "Other ( %1 )"
-msgstr "Khác ( %1 )"
-
-#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
-#: sheets/csv/csvdialog.cpp:334
-#, fuzzy
-msgid "Text"
-msgstr "Chữ"
-
-#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
-msgid "Number"
-msgstr "Số"
-
-#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
-msgid "Currency"
-msgstr "Tiền tệ"
-
-#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
-msgid "Date"
-msgstr "Ngày tháng"
-
-#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
-msgid "Decimal Comma Number"
-msgstr ""
-
-#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
-msgid "Decimal Point Number"
-msgstr ""
-
-#: sheets/csv/csvdialog.cpp:480
-msgid ""
-"Please check the ranges you specified. The start value must be lower than "
-"the end value."
-msgstr ""
-"Hãy kiểm tra lại khoảng mà bạn chỉ định. Giá trị bắt đầu phải thấp hơn giá "
-"trị kết thúc."
-
-#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:286
-#: words/ascii/ImportDialog.cc:107
-#, kde-format
-msgid "Cannot find encoding: %1"
-msgstr "Không thể tìm thấy bộ mã: %1"
-
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<TÊNTỜ>"
-
-#: sheets/csv/csvimport.cc:92
-msgid "CSV filter cannot open input file - please report."
-msgstr "Bộ lọc CSV không thể mở tập tin đầu vào - xin thông báo lại."
-
-#: sheets/dbase/dbaseimport.cc:56
-msgid "File format is not supported."
-msgstr "Định dạng tập tin không được hỗ trợ."
-
-#: sheets/dbase/dbaseimport.cc:61
-msgid "Could not read from file."
-msgstr "Không thể đọc từ tập tin."
-
-#: sheets/html/exportdialog.cc:37 words/html-odf/exportdialog.cpp:36
-msgid "Export Sheet to HTML"
-msgstr "Xuất Tờ ra HTML"
-
-#: sheets/html/exportdialog.cc:48 words/html-odf/exportdialog.cpp:43
-msgid "Recommended: UTF-8"
-msgstr "Khuyên dùng: UTF-8"
-
-#: sheets/html/exportdialog.cc:49 words/html-odf/exportdialog.cpp:44
-#, kde-format
-msgid "Locale (%1)"
-msgstr "Miền địa phương (%1)"
-
-#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
-msgid "Top"
-msgstr "Trên"
-
-#: sheets/opencalc/opencalcexport.cc:914
-msgid "Page "
-msgstr "Trang"
-
-#: sheets/opencalc/opencalcimport.cc:1236
-msgid "The file seems to be corrupt. Skipping a table."
-msgstr "Tập tin có thể bị lỗi. Bỏ qua một bảng."
-
-#: sheets/opencalc/opencalcimport.cc:1247
-msgid "Skipping a table."
-msgstr "Bỏ qua một bảng."
-
-#: sheets/opencalc/opencalcimport.cc:1947
-#, fuzzy, kde-format
-msgid ""
-"This document was created with OpenOffice.org version '%1'. This filter was "
-"written for version 1.0. Reading this file could cause strange behavior, "
-"crashes or incorrect display of the data. Do you want to continue converting "
-"the document?"
-msgstr ""
-"Tài liệu này được làm ra bởi OpenOffice.org phiên bản '%1'. Bộ lọc này được "
-"viết cho phiên bản 1.0. Đọc tập tin này có thể tạo ra hành xử lạ, sụp đổ "
-"hoặc hiển thị dữ liệu không chính xác. Bạn có muốn tiếp tục chuyển đổi tài "
-"liệu?"
-
-#: sheets/opencalc/opencalcimport.cc:1948
-msgid "Unsupported document version"
-msgstr "Phiên bản tài liệu không được hỗ trợ"
-
-#: sheets/qpro/qproimport.cc:128
-msgid "QPRO filter cannot open input file - please report."
-msgstr "Bộ lọc QPRO không thể mở tập tin đầu vào - xin thông báo lại."
-
-#: sheets/qpro/qproimport.cc:239
-msgid ""
-"Unable to open password protected files.\n"
-"The password algorithm has not been published"
-msgstr ""
-"Không thể mở các tập tin được bảo vệ bằng mật khẩu. Thuật toán của mật khẩu "
-"chưa được công bố"
-
-#: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/DocxImport.cpp:168
-#, fuzzy, kde-format
-#| msgid "Could not read from file."
-msgid "Unable to find part for type %1"
-msgstr "Không thể đọc từ tập tin."
-
-#: sheets/xlsx/XlsxXmlSharedStringsReader.cpp:181
-#, kde-format
-msgid "Declared number of shared strings too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:571
-#, kde-format
-msgid "Declared number of font styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:924
-#, kde-format
-msgid "Declared number of cell formats too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1047
-#: sheets/xlsx/XlsxXmlStylesReader.cpp:1393
-#, kde-format
-msgid "Declared number of fill styles too small (%1)"
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:350
-msgid ""
-"The data could not be loaded completely because the maximum size of sheet "
-"was exceeded."
-msgstr ""
-
-#: sheets/xlsx/XlsxXmlWorksheetReader.cpp:1429
-msgid "Expected integer or floating point number"
-msgstr ""
-
-#: stage/pptx/PptxXmlDocumentReader.cpp:289
-#, fuzzy, kde-format
-msgid "Slide layout \"%1\" not found"
-msgstr "Ghi chú cuối %1"
-
-#: stage/pptx/PptxXmlSlideReader.cpp:629
-#, fuzzy, kde-format
-msgid "Slide %1"
-msgstr "Tiêu đề Ảnh chiếu"
-
-#: words/ascii/ImportDialog.cc:45
-#, fuzzy
-msgid "Words's Plain Text Import Filter"
-msgstr "Bộ lọc Nhập Văn bản không được định dạng của KWord"
-
-#: words/msword-odf/conversion.cpp:830
-msgid "Even Pages Header"
-msgstr ""
-
-#: words/msword-odf/conversion.cpp:832
-msgid "Odd Pages Header"
-msgstr ""
-
-#: words/msword-odf/conversion.cpp:834
-msgid "Even Pages Footer"
-msgstr ""
-
-#: words/msword-odf/conversion.cpp:836
-msgid "Odd Pages Footer"
-msgstr ""
-
-#: words/msword-odf/conversion.cpp:838
-msgid "First Page Header"
-msgstr ""
-
-#: words/msword-odf/conversion.cpp:840
-msgid "First Page Footer"
-msgstr ""
-
-#: words/msword-odf/texthandler.cpp:624
-#, kde-format
-msgid "Table %1"
-msgstr "Bảng %1"
-
-#: words/rtf/import/rtfimport.cpp:56
-msgid "The file cannot be loaded, as it seems not to be an RTF document."
-msgstr "Không thể tải tập tin vì nó trông không giống một tài liệu RTF."
-
-#: words/rtf/import/rtfimport.cpp:57 words/rtf/import/rtfimport.cpp:71
-#: words/rtf/import/rtfimport.cpp:81
-#, fuzzy
-#| msgid "KWord's RTF Import Filter"
-msgid "Words's RTF Import Filter"
-msgstr "Bộ lọc Nhập RTF của KWor"
-
-#: words/rtf/import/rtfimport.cpp:70 words/rtf/import/rtfimport.cpp:80
-#, fuzzy
-#| msgid "The file cannot be loaded, as it cannot be opened."
-msgid "The file cannot be loaded."
-msgstr "Không thể tải tập tin vì không mở được nó."
 
 #, fuzzy
 #~| msgid ""

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kword\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:56+0200\n"
+"POT-Creation-Date: 2012-08-19 15:45+0200\n"
 "PO-Revision-Date: 2008-01-19 20:08+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -16,186 +16,377 @@ msgstr ""
 "X-Generator: KAider 0.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Nguyen Hung Vu(Nguyễn Hưng Vũ), nhóm Việt hóa KDE"
 
-#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vuhung@fedu.uec.ac.jp, kde-l10n-vi@lists.kde.org"
 
-#. i18n: file: part/dialogs/KWSelectBookmark.ui:20
-#. i18n: ectx: property (text), widget (QPushButton, buttonRename)
-#: rc.cpp:5
+#: part/commands/KWChangePageStyleCommand.cpp:25
 #, fuzzy
-msgid "&Rename"
-msgstr " Chọn font "
+msgid "Set Page Style"
+msgstr "&Khung"
 
-#. i18n: file: part/dialogs/KWSelectBookmark.ui:27
-#. i18n: ectx: property (text), widget (QPushButton, buttonDelete)
-#: rc.cpp:8
+#: part/commands/KWClipFrameCommand.cpp:41
 #, fuzzy
-msgid "&Delete"
+msgid "Clip Frame"
 msgstr "Xoá(delete)"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:11
+#: part/commands/KWCreateOutlineCommand.cpp:30
+msgid "Create custom outline"
+msgstr "Tạo đường nét riêng"
+
+#: part/commands/KWFrameCreateCommand.cpp:29
+msgid "Create Frame"
+msgstr "Tạo Khung"
+
+#: part/commands/KWFrameDeleteCommand.cpp:29
+msgid "Delete Frame"
+msgstr "Xóa Khung"
+
+#: part/commands/KWNewPageStyleCommand.cpp:27
 #, fuzzy
-msgid "Layout of Text in Other Frames"
-msgstr "Bố trí văn bản trong các khung khác"
+#| msgid "Insert Page"
+msgid "Insert Page Style"
+msgstr "Chèn Trang"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:34
-#. i18n: ectx: property (text), widget (QRadioButton, runThrough)
-#: rc.cpp:14
-msgid "Text will run through this frame"
-msgstr "Văn bản sẽ chạy qua khung này"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: part/commands/KWPageInsertCommand.cpp:72
+#: part/dialogs/KWInsertPageDialog.cpp:32
+#: part/dialogs/KWInsertPageDialog.ui:17
+msgid "Insert Page"
+msgstr "Chèn Trang"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:41
-#. i18n: ectx: property (text), widget (QRadioButton, runAround)
-#: rc.cpp:17
-msgid "Text will run around this frame"
-msgstr "Văn bản sẽ chạy xung quanh khung này"
+#: part/commands/KWPageRemoveCommand.cpp:32
+msgid "Remove Page"
+msgstr "Bỏ Trang"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:48
-#. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
-#: rc.cpp:20
-msgid "Text will not run around this frame"
-msgstr "Văn bản sẽ không chạy qua khung này"
+#: part/commands/KWPageStylePropertiesCommand.cpp:36
+msgid "Page Properties"
+msgstr "Thuộc tính của Trang"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:58
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: rc.cpp:23
-msgid "Run Around Side"
-msgstr "Chạy Quanh Bên"
+#. i18n: ectx: property (windowTitle), widget (QWidget, CreateBookmark)
+#: part/dialogs/KWCreateBookmark.ui:13
+#: part/dialogs/KWCreateBookmarkDialog.cpp:48
+#, fuzzy
+msgid "Create New Bookmark"
+msgstr "Xoá(delete)"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:70
-#. i18n: ectx: property (text), widget (QRadioButton, left)
-#: rc.cpp:26
-msgid "Left"
-msgstr "Trái"
+#. i18n: ectx: property (text), widget (QLabel, lExplain)
+#: part/dialogs/KWCreateBookmark.ui:20
+msgid ""
+"Bookmarks allow you to jump between parts of your document.\n"
+"Please provide the name of your bookmark."
+msgstr ""
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:77
-#. i18n: ectx: property (text), widget (QRadioButton, right)
-#: rc.cpp:29
-msgid "Right"
-msgstr "Phải"
+#. i18n: ectx: property (text), widget (QLabel, lName)
+#: part/dialogs/KWCreateBookmark.ui:38
+msgid "Name:"
+msgstr "Tên:"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:84
-#. i18n: ectx: property (text), widget (QRadioButton, longest)
-#: rc.cpp:32
-msgid "Longest side"
-msgstr "Bên dài hơn"
+#. i18n: ectx: property (text), widget (QLabel, columnsLabel)
+#: part/dialogs/KWDocumentColumns.ui:64
+#, fuzzy
+msgid "Columns:"
+msgstr "Các cột:"
 
-#. i18n: file: part/dialogs/KWFrameRunaroundProperties.ui:102
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:35
-msgid "Distance Between Frame and Text:"
-msgstr "Khoảng cách giữa khung và văn bản:"
+#. i18n: ectx: property (text), widget (QLabel, spacingLabel)
+#: part/dialogs/KWDocumentColumns.ui:74
+msgid "Column spacing:"
+msgstr "Khoảng cách giữa các cột:"
 
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:67
+#: part/dialogs/KWFrameConnectSelector.cpp:48
+msgid "frameset"
+msgstr "bộ khung"
+
+#: part/dialogs/KWFrameConnectSelector.cpp:75
+msgid "No framesets in document"
+msgstr "Không có bộ khung nào trong tài liệu"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:38
+#: part/dialogs/KWFrameConnectSelector.ui:67
 #, fuzzy
 msgid "Name of frameset:"
 msgstr "Tên bộ khung:"
 
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:82
 #. i18n: ectx: property (text), widget (QRadioButton, newRadio)
-#: rc.cpp:41
+#: part/dialogs/KWFrameConnectSelector.ui:82
 #, fuzzy
 msgid "Create a new frameset:"
 msgstr "Tạo bộ khung mới:"
 
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:89
 #. i18n: ectx: property (text), widget (QRadioButton, existingRadio)
-#: rc.cpp:44
+#: part/dialogs/KWFrameConnectSelector.ui:89
 msgid "Select existing frameset to connect to:"
 msgstr "Chọn bộ khung có sẵn để kết nối vào:"
 
-#. i18n: file: part/dialogs/KWFrameConnectSelector.ui:122
 #. i18n: ectx: property (text), widget (QTreeWidget, framesList)
-#: rc.cpp:47
+#: part/dialogs/KWFrameConnectSelector.ui:122
 msgid "Frameset Name"
 msgstr "Tên Bộ khung"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:16
+#: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
+msgid "Options"
+msgstr "Tùy chọn"
+
+#: part/dialogs/KWFrameDialog.cpp:40 part/dialogs/KWShapeConfigFactory.cpp:76
+msgid "Text Run Around"
+msgstr "Văn bản Chạy Xung quanh"
+
+#: part/dialogs/KWFrameDialog.cpp:47 part/dialogs/KWShapeConfigFactory.cpp:40
+msgid "Connect Text Frames"
+msgstr "Kết nối Các khung Văn bản"
+
+#: part/dialogs/KWFrameDialog.cpp:54 part/dialogs/KWShapeConfigFactory.cpp:58
+msgid "Geometry"
+msgstr "Hình học"
+
 #. i18n: ectx: property (text), widget (QCheckBox, protectSize)
-#: rc.cpp:50
+#: part/dialogs/KWFrameGeometry.ui:16
 msgid "Protect size and position"
 msgstr "Bảo vệ cỡ và vị trí"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, positionGB)
-#: rc.cpp:53
+#: part/dialogs/KWFrameGeometry.ui:23
 msgid "Position"
 msgstr "Vị trí "
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:29
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:56
+#: part/dialogs/KWFrameGeometry.ui:29
 msgid "X:"
 msgstr "Ngang:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:65
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:59
+#: part/dialogs/KWFrameGeometry.ui:65
 msgid "Y:"
 msgstr "Dọc:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:62
+#: part/dialogs/KWFrameGeometry.ui:78
 msgid "Width:"
 msgstr "Chiều rộng:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:65
+#: part/dialogs/KWFrameGeometry.ui:104
 msgid "Height:"
 msgstr "Chiều cao:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:127
 #. i18n: ectx: property (title), widget (QGroupBox, marginsGB)
-#: rc.cpp:68
+#: part/dialogs/KWFrameGeometry.ui:127
 msgid "Margins"
 msgstr "Lề"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, synchronize)
-#: rc.cpp:71
+#: part/dialogs/KWFrameGeometry.ui:146
 msgid "Synchronize changes"
 msgstr "Đồng bộ các thay đổi"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:153
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:74
+#: part/dialogs/KWFrameGeometry.ui:153
 msgid "Bottom:"
 msgstr "Đáy:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:77
+#: part/dialogs/KWFrameGeometry.ui:163
 msgid "Top:"
 msgstr "Đỉnh:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:173
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:80
+#: part/dialogs/KWFrameGeometry.ui:173
 msgid "Right:"
 msgstr "Phải:"
 
-#. i18n: file: part/dialogs/KWFrameGeometry.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:83
+#: part/dialogs/KWFrameGeometry.ui:183
 msgid "Left:"
 msgstr "Trái:"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:29
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: part/dialogs/KWFrameRunaroundProperties.ui:22
+#, fuzzy
+msgid "Layout of Text in Other Frames"
+msgstr "Bố trí văn bản trong các khung khác"
+
+#. i18n: ectx: property (text), widget (QRadioButton, runThrough)
+#: part/dialogs/KWFrameRunaroundProperties.ui:34
+msgid "Text will run through this frame"
+msgstr "Văn bản sẽ chạy qua khung này"
+
+#. i18n: ectx: property (text), widget (QRadioButton, runAround)
+#: part/dialogs/KWFrameRunaroundProperties.ui:41
+msgid "Text will run around this frame"
+msgstr "Văn bản sẽ chạy xung quanh khung này"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noRunaround)
+#: part/dialogs/KWFrameRunaroundProperties.ui:48
+msgid "Text will not run around this frame"
+msgstr "Văn bản sẽ không chạy qua khung này"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: part/dialogs/KWFrameRunaroundProperties.ui:58
+msgid "Run Around Side"
+msgstr "Chạy Quanh Bên"
+
+#. i18n: ectx: property (text), widget (QRadioButton, left)
+#: part/dialogs/KWFrameRunaroundProperties.ui:70
+msgid "Left"
+msgstr "Trái"
+
+#. i18n: ectx: property (text), widget (QRadioButton, right)
+#: part/dialogs/KWFrameRunaroundProperties.ui:77
+msgid "Right"
+msgstr "Phải"
+
+#. i18n: ectx: property (text), widget (QRadioButton, longest)
+#: part/dialogs/KWFrameRunaroundProperties.ui:84
+msgid "Longest side"
+msgstr "Bên dài hơn"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: part/dialogs/KWFrameRunaroundProperties.ui:102
+msgid "Distance Between Frame and Text:"
+msgstr "Khoảng cách giữa khung và văn bản:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, textGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:51
+msgid "If Frame Overflows"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, createNewPage)
+#: part/dialogs/KWGeneralFrameProperties.ui:75
+msgid "Create a new page"
+msgstr "Tạo trang mới"
+
+#. i18n: ectx: property (text), widget (QRadioButton, resizeLastFrame)
+#: part/dialogs/KWGeneralFrameProperties.ui:82
+#, fuzzy
+msgid "Resize last frame"
+msgstr "Thay cỡ khung cuối"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noExtraText)
+#: part/dialogs/KWGeneralFrameProperties.ui:89
+#, fuzzy
+#| msgid "Don't show the extra text"
+msgid "Do not show the extra text"
+msgstr "Không hiện ra phần văn bản thừa"
+
+#. i18n: ectx: property (title), widget (QGroupBox, newPageGroupBox)
+#: part/dialogs/KWGeneralFrameProperties.ui:112
+msgid "When Creating a Page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, reconnect)
+#: part/dialogs/KWGeneralFrameProperties.ui:118
+#, fuzzy
+msgid "Reconnect frame to current flow"
+msgstr "Nối khung vào dòng chảy hiện tại"
+
+#. i18n: ectx: property (text), widget (QRadioButton, noFollowup)
+#: part/dialogs/KWGeneralFrameProperties.ui:125
+#, fuzzy
+msgid "Do not create a followup frame"
+msgstr "Không tạo khung tiếp theo"
+
+#. i18n: ectx: property (text), widget (QRadioButton, placeCopy)
+#: part/dialogs/KWGeneralFrameProperties.ui:132
+#, fuzzy
+msgid "Copy this Frame"
+msgstr "Di chuyển"
+
+#. i18n: ectx: property (text), widget (QCheckBox, evenOdd)
+#: part/dialogs/KWGeneralFrameProperties.ui:139
+msgid "Only on even/odd pages"
+msgstr "Chỉ trên trang các trang chẵn/lẻ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, protectContent)
+#: part/dialogs/KWGeneralFrameProperties.ui:151
+msgid "Protect content"
+msgstr "Bảo vệ nội dung"
+
+#. i18n: ectx: property (text), widget (QCheckBox, isCopyOfPrevious)
+#: part/dialogs/KWGeneralFrameProperties.ui:158
+msgid "Frame is a copy of the previous frame"
+msgstr "Khung là một bản sao của khung trước"
+
+#. i18n: ectx: property (text), widget (QCheckBox, allFrames)
+#: part/dialogs/KWGeneralFrameProperties.ui:165
+msgid "Changes will be applied to all frames in frameset"
+msgstr "Các thay đổi sẽ được áp dụng cho tất cả các khung trong bộ khung"
+
+#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
+#: part/dialogs/KWGeneralFrameProperties.ui:185
+msgid "Retain original aspect ratio"
+msgstr "Giữ tỉ lệ gốc"
+
+#. i18n: ectx: property (text), widget (QRadioButton, beforeCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:23
+msgid "Before current page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterCurrent)
+#: part/dialogs/KWInsertPageDialog.ui:30
+msgid "After current page"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, afterLast)
+#: part/dialogs/KWInsertPageDialog.ui:37
+#, fuzzy
+#| msgid "First page:"
+msgid "After last page"
+msgstr "Trang đầu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/dialogs/KWInsertPageDialog.ui:55
+#, fuzzy
+msgid "Page style:"
+msgstr "&Khung"
+
+#. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
+#: part/dialogs/KWPageSettingsDialog.cpp:41 part/dialogs/KWStartupWidget.ui:51
+msgid "Columns"
+msgstr "Các cột"
+
+#: part/dialogs/KWPageSettingsDialog.cpp:97
+#, fuzzy
+#| msgid "Page Properties"
+msgid "Change Page Properties"
+msgstr "Thuộc tính của Trang"
+
+#. i18n: ectx: property (text), widget (QPushButton, buttonRename)
+#: part/dialogs/KWSelectBookmark.ui:20
+#, fuzzy
+msgid "&Rename"
+msgstr " Chọn font "
+
+#. i18n: ectx: property (text), widget (QPushButton, buttonDelete)
+#: part/dialogs/KWSelectBookmark.ui:27
+#, fuzzy
+msgid "&Delete"
+msgstr "Xoá(delete)"
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:79
+#, fuzzy
+msgid "Rename Bookmark"
+msgstr " Chọn font "
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:80
+msgid "Please provide a new name for the bookmark"
+msgstr ""
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:89
+#, fuzzy, kde-format
+msgid "A bookmark with the name \"%1\" already exists."
+msgstr "the\n"
+
+#: part/dialogs/KWSelectBookmarkDialog.cpp:121
+#, fuzzy
+msgid "Select Bookmark"
+msgstr " Chọn font "
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, mainText)
-#: rc.cpp:86
+#: part/dialogs/KWStartupWidget.ui:29
 msgid ""
 "<p><b>Check this option to have a text area created automatically for each "
 "page.</b><br>\n"
@@ -208,506 +399,190 @@ msgstr ""
 "trang, bạn nên chọn lựa chọn này. Bạn chỉ nên bỏ chọn nó nếu bạn muốn tự chỉ "
 "định mỗi khung văn bản được đặt như thế nào.</p>"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, mainText)
-#: rc.cpp:90
+#: part/dialogs/KWStartupWidget.ui:32
 msgid "Provide main text area"
 msgstr "Cung cấp khu vực văn bản chính"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:46
 #. i18n: ectx: attribute (title), widget (QWidget, sizeTab)
-#: rc.cpp:93
+#: part/dialogs/KWStartupWidget.ui:46
 msgid "Page Size && Margins"
 msgstr "Cỡ trang và Lề"
 
-#. i18n: file: part/dialogs/KWStartupWidget.ui:51
-#. i18n: ectx: attribute (title), widget (QWidget, columnsTab)
-#: rc.cpp:96 part/dialogs/KWPageSettingsDialog.cpp:41
-msgid "Columns"
-msgstr "Các cột"
-
-#. i18n: file: part/dialogs/KWStartupWidget.ui:102
 #. i18n: ectx: property (text), widget (QPushButton, createButton)
-#: rc.cpp:99 part/KWView.cpp:322
+#: part/dialogs/KWStartupWidget.ui:102 part/KWView.cpp:322
 msgid "Create"
 msgstr "Tạo"
 
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:102 part/dialogs/KWInsertPageDialog.cpp:32
-#: part/commands/KWPageInsertCommand.cpp:72
-msgid "Insert Page"
-msgstr "Chèn Trang"
+#: part/dialogs/KWStatistics.cpp:269
+#, kde-format
+msgid "approximately %1"
+msgstr "khoảng %1"
 
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:23
-#. i18n: ectx: property (text), widget (QRadioButton, beforeCurrent)
-#: rc.cpp:105
-msgid "Before current page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:30
-#. i18n: ectx: property (text), widget (QRadioButton, afterCurrent)
-#: rc.cpp:108
-msgid "After current page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:37
-#. i18n: ectx: property (text), widget (QRadioButton, afterLast)
-#: rc.cpp:111
-#, fuzzy
-#| msgid "First page:"
-msgid "After last page"
-msgstr "Trang đầu:"
-
-#. i18n: file: part/dialogs/KWInsertPageDialog.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:114
-#, fuzzy
-msgid "Page style:"
-msgstr "&Khung"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:51
-#. i18n: ectx: property (title), widget (QGroupBox, textGroupBox)
-#: rc.cpp:117
-msgid "If Frame Overflows"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:75
-#. i18n: ectx: property (text), widget (QRadioButton, createNewPage)
-#: rc.cpp:120
-msgid "Create a new page"
-msgstr "Tạo trang mới"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:82
-#. i18n: ectx: property (text), widget (QRadioButton, resizeLastFrame)
-#: rc.cpp:123
-#, fuzzy
-msgid "Resize last frame"
-msgstr "Thay cỡ khung cuối"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:89
-#. i18n: ectx: property (text), widget (QRadioButton, noExtraText)
-#: rc.cpp:126
-#, fuzzy
-#| msgid "Don't show the extra text"
-msgid "Do not show the extra text"
-msgstr "Không hiện ra phần văn bản thừa"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:112
-#. i18n: ectx: property (title), widget (QGroupBox, newPageGroupBox)
-#: rc.cpp:129
-msgid "When Creating a Page"
-msgstr ""
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:118
-#. i18n: ectx: property (text), widget (QRadioButton, reconnect)
-#: rc.cpp:132
-#, fuzzy
-msgid "Reconnect frame to current flow"
-msgstr "Nối khung vào dòng chảy hiện tại"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:125
-#. i18n: ectx: property (text), widget (QRadioButton, noFollowup)
-#: rc.cpp:135
-#, fuzzy
-msgid "Do not create a followup frame"
-msgstr "Không tạo khung tiếp theo"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:132
-#. i18n: ectx: property (text), widget (QRadioButton, placeCopy)
-#: rc.cpp:138
-#, fuzzy
-msgid "Copy this Frame"
-msgstr "Di chuyển"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, evenOdd)
-#: rc.cpp:141
-msgid "Only on even/odd pages"
-msgstr "Chỉ trên trang các trang chẵn/lẻ"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:151
-#. i18n: ectx: property (text), widget (QCheckBox, protectContent)
-#: rc.cpp:144
-msgid "Protect content"
-msgstr "Bảo vệ nội dung"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:158
-#. i18n: ectx: property (text), widget (QCheckBox, isCopyOfPrevious)
-#: rc.cpp:147
-msgid "Frame is a copy of the previous frame"
-msgstr "Khung là một bản sao của khung trước"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:165
-#. i18n: ectx: property (text), widget (QCheckBox, allFrames)
-#: rc.cpp:150
-msgid "Changes will be applied to all frames in frameset"
-msgstr "Các thay đổi sẽ được áp dụng cho tất cả các khung trong bộ khung"
-
-#. i18n: file: part/dialogs/KWGeneralFrameProperties.ui:185
-#. i18n: ectx: property (text), widget (QCheckBox, keepAspectRatio)
-#: rc.cpp:153
-msgid "Retain original aspect ratio"
-msgstr "Giữ tỉ lệ gốc"
-
-#. i18n: file: part/dialogs/KWDocumentColumns.ui:64
-#. i18n: ectx: property (text), widget (QLabel, columnsLabel)
-#: rc.cpp:156
-#, fuzzy
-msgid "Columns:"
-msgstr "Các cột:"
-
-#. i18n: file: part/dialogs/KWDocumentColumns.ui:74
-#. i18n: ectx: property (text), widget (QLabel, spacingLabel)
-#: rc.cpp:159
-msgid "Column spacing:"
-msgstr "Khoảng cách giữa các cột:"
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, CreateBookmark)
-#: rc.cpp:162 part/dialogs/KWCreateBookmarkDialog.cpp:48
-#, fuzzy
-msgid "Create New Bookmark"
-msgstr "Xoá(delete)"
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:20
-#. i18n: ectx: property (text), widget (QLabel, lExplain)
-#: rc.cpp:165
-msgid ""
-"Bookmarks allow you to jump between parts of your document.\n"
-"Please provide the name of your bookmark."
-msgstr ""
-
-#. i18n: file: part/dialogs/KWCreateBookmark.ui:38
-#. i18n: ectx: property (text), widget (QLabel, lName)
-#: rc.cpp:169
-msgid "Name:"
-msgstr "Tên:"
-
-#. i18n: file: part/dialogs/KWStatistics.ui:24
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:172
+#: part/dialogs/KWStatistics.ui:24
 msgid "General"
 msgstr "Chung"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:175
+#: part/dialogs/KWStatistics.ui:30
 msgid "Number of pages:"
 msgstr "Số trang:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:178
+#: part/dialogs/KWStatistics.ui:53
 #, fuzzy
 msgid "Number of frames:"
 msgstr "Số khung:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:76
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:181
+#: part/dialogs/KWStatistics.ui:76
 msgid "Number of pictures:"
 msgstr "Số ảnh:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:184
+#: part/dialogs/KWStatistics.ui:99
 msgid "Number of tables:"
 msgstr "Số bảng:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:136
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:187
+#: part/dialogs/KWStatistics.ui:136
 msgid "Text"
 msgstr "Văn bản"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:142
 #. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:190
+#: part/dialogs/KWStatistics.ui:142
 #, fuzzy
 msgid "Include text from foot- and endnotes"
 msgstr "Bao gồm chữ trong các ghi chú"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:149
 #. i18n: ectx: property (text), widget (QLabel, label_25)
-#: rc.cpp:193
+#: part/dialogs/KWStatistics.ui:149
 msgid "Words:"
 msgstr "Từ:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:176
 #. i18n: ectx: property (text), widget (QLabel, label_23)
-#: rc.cpp:196
+#: part/dialogs/KWStatistics.ui:176
 msgid "Sentences:"
 msgstr "Câu:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:203
 #. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:199
+#: part/dialogs/KWStatistics.ui:203
 msgid "Syllables:"
 msgstr "Âm tiết:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:230
 #. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:202
+#: part/dialogs/KWStatistics.ui:230
 msgid "Lines:"
 msgstr "Dòng: "
 
-#. i18n: file: part/dialogs/KWStatistics.ui:257
 #. i18n: ectx: property (text), widget (QLabel, label_19)
-#: rc.cpp:205
+#: part/dialogs/KWStatistics.ui:257
 msgid "Characters including spaces:"
 msgstr "Kí tự bao gồm các khoảng trắng:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:284
 #. i18n: ectx: property (text), widget (QLabel, label_20)
-#: rc.cpp:208
+#: part/dialogs/KWStatistics.ui:284
 msgid "Characters without spaces:"
 msgstr "Kí tự không bao gồm các khoảng trắng:"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:311
 #. i18n: ectx: property (text), widget (QLabel, label_21)
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:51
 #. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:211 rc.cpp:235
+#: part/dialogs/KWStatistics.ui:311 part/dockers/KWStatisticsDocker.ui:51
 #, fuzzy
 msgid "East Asian characters"
 msgstr "Các kí tự Định dạng"
 
-#. i18n: file: part/dialogs/KWStatistics.ui:338
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#: rc.cpp:214
+#: part/dialogs/KWStatistics.ui:338
 msgid "Flesch reading ease:"
 msgstr "Độ dễ đọc Flesch:"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:21
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:217
-msgid "Words"
-msgstr "Các từ"
+#: part/dialogs/KWStatisticsDialog.cpp:29
+#: part/dockers/KWStatisticsDocker.cpp:36 part/KWView.cpp:390
+msgid "Statistics"
+msgstr "Thống kê"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:26
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:220
-msgid "Sentences"
-msgstr "Các câu"
+#: part/dockers/KWRdfDocker.cpp:50
+msgid "RDF"
+msgstr ""
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:31
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:223
-msgid "Syllables"
-msgstr "Các âm tiết"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:36
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:226
-msgid "Lines"
-msgstr "Các dòng"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:41
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:229
-msgid "Characters incl. spaces"
-msgstr "Các kí tự bao gồm khoảng trắng"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:46
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:232
-msgid "Characters without spaces"
-msgstr "Các kí tự không bao gồm khoảng trắng"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:56
-#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
-#: rc.cpp:238
-msgid "Flesch reading ease"
-msgstr "Độ dễ đọc Flesch"
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:80
-#. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:241
-msgid "..."
-msgstr "..."
-
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:87
 #. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#. i18n: file: part/dockers/KWRdfDocker.ui:34
-#. i18n: ectx: property (text), widget (QCheckBox, autoRefresh)
-#: rc.cpp:244 rc.cpp:250
+#: part/dockers/KWRdfDocker.ui:34 part/dockers/KWStatisticsDocker.ui:87
 #, fuzzy
 #| msgid "Automatically refresh data"
 msgid "Automatically update"
 msgstr "Tự động nạp lại dữ liệu"
 
-#. i18n: file: part/dockers/KWStatisticsDocker.ui:94
-#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
-#: rc.cpp:247
-msgid "Only count main text"
-msgstr ""
-
-#. i18n: file: part/dockers/KWRdfDocker.ui:41
 #. i18n: ectx: property (text), widget (QToolButton, refresh)
-#: rc.cpp:253
+#: part/dockers/KWRdfDocker.ui:41
 msgid "update"
 msgstr ""
 
-#. i18n: file: part/kword_readonly.rc:3
-#. i18n: ectx: Menu (file)
-#. i18n: file: part/kword.rc:3
-#. i18n: ectx: Menu (file)
-#: rc.cpp:256 rc.cpp:274
-msgid "&File"
-msgstr "&Tập tin"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:21
+msgid "Words"
+msgstr "Các từ"
 
-#. i18n: file: part/kword_readonly.rc:6
-#. i18n: ectx: Menu (edit)
-#. i18n: file: part/kword.rc:8
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:259 rc.cpp:277
-msgid "&Edit"
-msgstr "&Sửa"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:26
+msgid "Sentences"
+msgstr "Các câu"
 
-#. i18n: file: part/kword_readonly.rc:12
-#. i18n: ectx: Menu (view)
-#. i18n: file: part/kword.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:262 rc.cpp:280
-msgid "&View"
-msgstr "&Xem "
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:31
+msgid "Syllables"
+msgstr "Các âm tiết"
 
-#. i18n: file: part/kword_readonly.rc:14
-#. i18n: ectx: Menu (view_displaymodes)
-#. i18n: file: part/kword.rc:32
-#. i18n: ectx: Menu (view)
-#: rc.cpp:265 rc.cpp:283
-msgid "&Display Mode"
-msgstr "&Chế độ Hiển thị"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:36
+msgid "Lines"
+msgstr "Các dòng"
 
-#. i18n: file: part/kword_readonly.rc:29
-#. i18n: ectx: Menu (tools)
-#. i18n: file: part/kword.rc:120
-#. i18n: ectx: Menu (tools)
-#: rc.cpp:268 rc.cpp:298
-msgid "&Tools"
-msgstr "Cô&ng cụ"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:41
+msgid "Characters incl. spaces"
+msgstr "Các kí tự bao gồm khoảng trắng"
 
-#. i18n: file: part/kword_readonly.rc:34
-#. i18n: ectx: ToolBar (edit_toolbar)
-#. i18n: file: part/kword.rc:157
-#. i18n: ectx: ToolBar (edit_toolbar)
-#: rc.cpp:271 rc.cpp:313
-msgid "Edit"
-msgstr "Sửa"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:46
+msgid "Characters without spaces"
+msgstr "Các kí tự không bao gồm khoảng trắng"
 
-#. i18n: file: part/kword.rc:52
-#. i18n: ectx: Menu (insert)
-#: rc.cpp:286
-msgctxt "Insert menu"
-msgid "&Insert"
-msgstr "C&hèn"
+#. i18n: ectx: property (text), item, widget (QComboBox, statistics)
+#: part/dockers/KWStatisticsDocker.ui:56
+msgid "Flesch reading ease"
+msgstr "Độ dễ đọc Flesch"
 
-#. i18n: file: part/kword.rc:65
-#. i18n: ectx: Menu (semantic_object_menu)
-#: rc.cpp:289
-msgid "Semantic Object"
+#. i18n: ectx: property (text), widget (QToolButton, refresh)
+#: part/dockers/KWStatisticsDocker.ui:80
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QCheckBox, footEndNotes)
+#: part/dockers/KWStatisticsDocker.ui:94
+msgid "Only count main text"
 msgstr ""
 
-#. i18n: file: part/kword.rc:83
-#. i18n: ectx: Menu (format)
-#: rc.cpp:292
-msgid "F&ormat"
-msgstr "Định &dạng"
-
-#. i18n: file: part/kword.rc:99
-#. i18n: ectx: Menu (frames)
-#: rc.cpp:295
-msgid "Fra&mes"
-msgstr "Các &Khung"
-
-#. i18n: file: part/kword.rc:121
-#. i18n: ectx: Menu (SpellCheck)
-#: rc.cpp:301
-msgid "Spellcheck"
-msgstr "Kiểm tra chính tả "
-
-#. i18n: file: part/kword.rc:126
-#. i18n: ectx: Menu (AutoFormat)
-#: rc.cpp:304
-msgid "Autocorrection"
-msgstr "Tự động sửa"
-
-#. i18n: file: part/kword.rc:130
-#. i18n: ectx: Menu (Changes)
-#: rc.cpp:307
-#, fuzzy
-msgid "Change Tracking"
-msgstr "Thay đổi"
-
-#. i18n: file: part/kword.rc:145
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:310
-msgid "&Settings"
-msgstr "&Thiết lập"
-
-#. i18n: file: part/kword.rc:169
-#. i18n: ectx: ToolBar (table_toolbar)
-#: rc.cpp:316
-msgid "Table"
-msgstr "Bảng"
-
-#. i18n: file: part/kword.rc:179
-#. i18n: ectx: ToolBar (insert_toolbar)
-#: rc.cpp:319
-#, fuzzy
-msgid "Insert"
-msgstr "Chèn"
-
-#. i18n: file: part/kword.rc:188
-#. i18n: ectx: ToolBar (paragraph_toolbar)
-#: rc.cpp:322
-msgid "Paragraph"
-msgstr "Đoạn"
-
-#. i18n: file: part/kword.rc:202
-#. i18n: ectx: ToolBar (format_toolbar)
-#: rc.cpp:325
-msgid "Font"
-msgstr "Phông chữ"
-
-#. i18n: file: part/kword.rc:208
-#. i18n: ectx: ToolBar (charformat_toolbar)
-#: rc.cpp:328
-msgid "Format"
-msgstr "Định dạng"
-
-#. i18n: file: part/kword.rc:218
-#. i18n: ectx: ToolBar (border_toolbar)
-#: rc.cpp:331
-#, fuzzy
-msgid "Borders"
-msgstr "Viền"
-
-#. i18n: file: part/kword.rc:230
-#. i18n: ectx: ToolBar (mailmerge_toolbar)
-#: rc.cpp:334
-msgid "MailMerge"
+#: part/frames/KWTextFrameSet.cpp:90
+msgid "Odd Pages Header"
 msgstr ""
 
-#. i18n: file: part/kword.rc:235
-#. i18n: ectx: ToolBar (formula_toolbar)
-#: rc.cpp:337
-msgid "Formula"
-msgstr "Công thức"
+#: part/frames/KWTextFrameSet.cpp:93
+msgid "Even Pages Header"
+msgstr ""
 
-#. i18n: file: part/kword.rc:312
-#. i18n: ectx: Menu (check_spell_list)
-#: rc.cpp:340
-msgid "Spell Check Result"
-msgstr "Kết quả Kiểm tra Chính tả "
+#: part/frames/KWTextFrameSet.cpp:96
+msgid "Odd Pages Footer"
+msgstr ""
 
-#. i18n: file: part/kword.rc:341
-#. i18n: ectx: Menu (variable_list)
-#: rc.cpp:343
-msgid "Change Variable To"
-msgstr "Đổi Biến số Thành"
+#: part/frames/KWTextFrameSet.cpp:99
+msgid "Even Pages Footer"
+msgstr ""
+
+#: part/frames/KWTextFrameSet.cpp:102
+msgid "Main text"
+msgstr "Văn bản chính"
 
 #: part/i18n/stylenames.cpp:21
 msgctxt "Style name"
@@ -947,207 +822,6 @@ msgctxt "Style name"
 msgid "Gray Top and Bottom"
 msgstr "Xám trên và dưới"
 
-#: part/dialogs/KWFrameConnectSelector.cpp:48
-msgid "frameset"
-msgstr "bộ khung"
-
-#: part/dialogs/KWFrameConnectSelector.cpp:75
-msgid "No framesets in document"
-msgstr "Không có bộ khung nào trong tài liệu"
-
-#: part/dialogs/KWFrameDialog.cpp:38 part/dialogs/KWShapeConfigFactory.cpp:94
-msgid "Options"
-msgstr "Tùy chọn"
-
-#: part/dialogs/KWFrameDialog.cpp:40 part/dialogs/KWShapeConfigFactory.cpp:76
-msgid "Text Run Around"
-msgstr "Văn bản Chạy Xung quanh"
-
-#: part/dialogs/KWFrameDialog.cpp:47 part/dialogs/KWShapeConfigFactory.cpp:40
-msgid "Connect Text Frames"
-msgstr "Kết nối Các khung Văn bản"
-
-#: part/dialogs/KWFrameDialog.cpp:54 part/dialogs/KWShapeConfigFactory.cpp:58
-msgid "Geometry"
-msgstr "Hình học"
-
-#: part/dialogs/KWPageSettingsDialog.cpp:97
-#, fuzzy
-#| msgid "Page Properties"
-msgid "Change Page Properties"
-msgstr "Thuộc tính của Trang"
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:79
-#, fuzzy
-msgid "Rename Bookmark"
-msgstr " Chọn font "
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:80
-msgid "Please provide a new name for the bookmark"
-msgstr ""
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:89
-#, fuzzy, kde-format
-msgid "A bookmark with the name \"%1\" already exists."
-msgstr "the\n"
-
-#: part/dialogs/KWSelectBookmarkDialog.cpp:121
-#, fuzzy
-msgid "Select Bookmark"
-msgstr " Chọn font "
-
-#: part/dialogs/KWStatistics.cpp:269
-#, kde-format
-msgid "approximately %1"
-msgstr "khoảng %1"
-
-#: part/dialogs/KWStatisticsDialog.cpp:29
-#: part/dockers/KWStatisticsDocker.cpp:36 part/KWView.cpp:390
-msgid "Statistics"
-msgstr "Thống kê"
-
-#: part/dockers/KWRdfDocker.cpp:50
-msgid "RDF"
-msgstr ""
-
-#: part/commands/KWClipFrameCommand.cpp:41
-#, fuzzy
-msgid "Clip Frame"
-msgstr "Xoá(delete)"
-
-#: part/commands/KWChangePageStyleCommand.cpp:25
-#, fuzzy
-msgid "Set Page Style"
-msgstr "&Khung"
-
-#: part/commands/KWCreateOutlineCommand.cpp:30
-msgid "Create custom outline"
-msgstr "Tạo đường nét riêng"
-
-#: part/commands/KWNewPageStyleCommand.cpp:27
-#, fuzzy
-#| msgid "Insert Page"
-msgid "Insert Page Style"
-msgstr "Chèn Trang"
-
-#: part/commands/KWPageStylePropertiesCommand.cpp:36
-msgid "Page Properties"
-msgstr "Thuộc tính của Trang"
-
-#: part/commands/KWFrameDeleteCommand.cpp:29
-msgid "Delete Frame"
-msgstr "Xóa Khung"
-
-#: part/commands/KWFrameCreateCommand.cpp:29
-msgid "Create Frame"
-msgstr "Tạo Khung"
-
-#: part/commands/KWPageRemoveCommand.cpp:32
-msgid "Remove Page"
-msgstr "Bỏ Trang"
-
-#: part/frames/KWTextFrameSet.cpp:90
-msgid "Odd Pages Header"
-msgstr ""
-
-#: part/frames/KWTextFrameSet.cpp:93
-msgid "Even Pages Header"
-msgstr ""
-
-#: part/frames/KWTextFrameSet.cpp:96
-msgid "Odd Pages Footer"
-msgstr ""
-
-#: part/frames/KWTextFrameSet.cpp:99
-msgid "Even Pages Footer"
-msgstr ""
-
-#: part/frames/KWTextFrameSet.cpp:102
-msgid "Main text"
-msgstr "Văn bản chính"
-
-#: part/KWStatusBar.cpp:39
-msgid "Modified"
-msgstr "Đã thay đổi"
-
-#: part/KWStatusBar.cpp:40
-msgid "Saved"
-msgstr "Đã lưu"
-
-#: part/KWStatusBar.cpp:41
-#, kde-format
-msgid "Page: %1/%2"
-msgstr "Trang: %1/%2"
-
-#: part/KWStatusBar.cpp:63
-msgid "Page: current/total"
-msgstr "Trang: hiện tại/tổng số"
-
-#: part/KWStatusBar.cpp:80
-msgid "State: saved/modified"
-msgstr "Trạng thái: đã lưu/đã thay đổi"
-
-#: part/KWStatusBar.cpp:94
-msgid "Mouseposition: X:Y"
-msgstr "Vị trí con trỏ: X:Y"
-
-#: part/KWStatusBar.cpp:107
-msgid "Zoom Controller"
-msgstr "Điều khiển Phóng"
-
-#: part/KWDLoader.cpp:75
-#, fuzzy
-msgid "Invalid document. No mimetype specified."
-msgstr "Tài liệu không hợp lệ. Không có loại tài liệu nào được chỉ định."
-
-#: part/KWDLoader.cpp:79
-#, fuzzy, kde-format
-msgid ""
-"Invalid document. Expected mimetype application/x-kword or application/vnd."
-"kde.kword, got %1"
-msgstr ""
-"Tài liệu không hợp lệ. Chờ loại application/x-kword hoặc application/vnd.kde."
-"kword, nhận được %1"
-
-#: part/KWDLoader.cpp:105
-#, kde-format
-msgid "Invalid document. Paper size: %1x%2"
-msgstr "Tài liệu không hợp lệ. Cỡ giấy: %1x%2"
-
-#: part/KWDLoader.cpp:691
-#, fuzzy
-msgid "Unable to locate footnote text"
-msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
-
-#: part/KWDLoader.cpp:711
-#, fuzzy
-msgid "Unable to locate note-text"
-msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
-
-#: part/main.cpp:31
-msgid "File to open"
-msgstr "Tập tin để mở"
-
-#: part/KWOdfLoader.cpp:85
-msgid "Invalid OASIS OpenDocument file. No office:body tag found."
-msgstr ""
-"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử office:body."
-
-#: part/KWOdfLoader.cpp:97
-msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
-msgstr ""
-"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử nào bên trong "
-"office:body."
-
-#: part/KWOdfLoader.cpp:99
-#, kde-format
-msgid ""
-"This is not a word processing document, but %1. Please try opening it with "
-"the appropriate application."
-msgstr ""
-"Đây không phải là tài liệu văn bản, mà là %1. Hãy thử mở nó với ứng dụng phù "
-"hợp."
-
 #: part/KWAboutData.h:27
 msgid "KOffice Word Processor"
 msgstr "Trình soạn thảo văn bản của KOffice"
@@ -1249,6 +923,245 @@ msgstr "Tomasz Grobelny"
 #: part/KWAboutData.h:61
 msgid "Michael Johnson"
 msgstr "Michael Johnson"
+
+#: part/KWDLoader.cpp:75
+#, fuzzy
+msgid "Invalid document. No mimetype specified."
+msgstr "Tài liệu không hợp lệ. Không có loại tài liệu nào được chỉ định."
+
+#: part/KWDLoader.cpp:79
+#, fuzzy, kde-format
+msgid ""
+"Invalid document. Expected mimetype application/x-kword or application/vnd."
+"kde.kword, got %1"
+msgstr ""
+"Tài liệu không hợp lệ. Chờ loại application/x-kword hoặc application/vnd.kde."
+"kword, nhận được %1"
+
+#: part/KWDLoader.cpp:105
+#, kde-format
+msgid "Invalid document. Paper size: %1x%2"
+msgstr "Tài liệu không hợp lệ. Cỡ giấy: %1x%2"
+
+#: part/KWDLoader.cpp:691
+#, fuzzy
+msgid "Unable to locate footnote text"
+msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
+
+#: part/KWDLoader.cpp:711
+#, fuzzy
+msgid "Unable to locate note-text"
+msgstr "Không thể tạo đối tượng trong cơ sở dữ liệu"
+
+#: part/KWDocument.cpp:468
+msgid "Copy"
+msgstr "Chép"
+
+#: part/KWDocument.cpp:513
+#, fuzzy
+msgid "Head 1"
+msgstr "Tiêu đề 1"
+
+#: part/KWDocument.cpp:520
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 2"
+msgid "Head 2"
+msgstr "Tiêu đề 2"
+
+#: part/KWDocument.cpp:527
+#, fuzzy
+#| msgctxt "Style name"
+#| msgid "Head 3"
+msgid "Head 3"
+msgstr "Tiêu đề 3"
+
+#: part/KWDocument.cpp:534
+#, fuzzy
+msgid "Bullet List"
+msgstr "Danh sách không được xếp thứ tự"
+
+#: part/KWDocument.cpp:838
+msgid "Can not find needed text component, KWord will quit now"
+msgstr "Không thể tìm thấy thành phần văn bản cần thiết, KWord sẽ thoát ngay"
+
+#: part/KWDocument.cpp:839
+msgid "Installation Error"
+msgstr "Lỗi Cài đặt"
+
+#: part/KWOdfLoader.cpp:85
+msgid "Invalid OASIS OpenDocument file. No office:body tag found."
+msgstr ""
+"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử office:body."
+
+#: part/KWOdfLoader.cpp:97
+msgid "Invalid OASIS OpenDocument file. No tag found inside office:body."
+msgstr ""
+"Tập tin Tài liệu Mở OASIS không hợp lệ. Không tìm thấy phần tử nào bên trong "
+"office:body."
+
+#: part/KWOdfLoader.cpp:99
+#, kde-format
+msgid ""
+"This is not a word processing document, but %1. Please try opening it with "
+"the appropriate application."
+msgstr ""
+"Đây không phải là tài liệu văn bản, mà là %1. Hãy thử mở nó với ứng dụng phù "
+"hợp."
+
+#. i18n: ectx: Menu (file)
+#: part/kword.rc:3 part/kword_readonly.rc:3
+msgid "&File"
+msgstr "&Tập tin"
+
+#. i18n: ectx: Menu (edit)
+#: part/kword.rc:8 part/kword_readonly.rc:6
+msgid "&Edit"
+msgstr "&Sửa"
+
+#. i18n: ectx: Menu (view)
+#: part/kword.rc:27 part/kword_readonly.rc:12
+msgid "&View"
+msgstr "&Xem "
+
+#. i18n: ectx: Menu (view_displaymodes)
+#. i18n: ectx: Menu (view)
+#: part/kword.rc:32 part/kword_readonly.rc:14
+msgid "&Display Mode"
+msgstr "&Chế độ Hiển thị"
+
+#. i18n: ectx: Menu (insert)
+#: part/kword.rc:52
+msgctxt "Insert menu"
+msgid "&Insert"
+msgstr "C&hèn"
+
+#. i18n: ectx: Menu (semantic_object_menu)
+#: part/kword.rc:65
+msgid "Semantic Object"
+msgstr ""
+
+#. i18n: ectx: Menu (format)
+#: part/kword.rc:83
+msgid "F&ormat"
+msgstr "Định &dạng"
+
+#. i18n: ectx: Menu (frames)
+#: part/kword.rc:99
+msgid "Fra&mes"
+msgstr "Các &Khung"
+
+#. i18n: ectx: Menu (tools)
+#: part/kword.rc:120 part/kword_readonly.rc:29
+msgid "&Tools"
+msgstr "Cô&ng cụ"
+
+#. i18n: ectx: Menu (SpellCheck)
+#: part/kword.rc:121
+msgid "Spellcheck"
+msgstr "Kiểm tra chính tả "
+
+#. i18n: ectx: Menu (AutoFormat)
+#: part/kword.rc:126
+msgid "Autocorrection"
+msgstr "Tự động sửa"
+
+#. i18n: ectx: Menu (Changes)
+#: part/kword.rc:130
+#, fuzzy
+msgid "Change Tracking"
+msgstr "Thay đổi"
+
+#. i18n: ectx: Menu (settings)
+#: part/kword.rc:145
+msgid "&Settings"
+msgstr "&Thiết lập"
+
+#. i18n: ectx: ToolBar (edit_toolbar)
+#: part/kword.rc:157 part/kword_readonly.rc:34
+msgid "Edit"
+msgstr "Sửa"
+
+#. i18n: ectx: ToolBar (table_toolbar)
+#: part/kword.rc:169
+msgid "Table"
+msgstr "Bảng"
+
+#. i18n: ectx: ToolBar (insert_toolbar)
+#: part/kword.rc:179
+#, fuzzy
+msgid "Insert"
+msgstr "Chèn"
+
+#. i18n: ectx: ToolBar (paragraph_toolbar)
+#: part/kword.rc:188
+msgid "Paragraph"
+msgstr "Đoạn"
+
+#. i18n: ectx: ToolBar (format_toolbar)
+#: part/kword.rc:202
+msgid "Font"
+msgstr "Phông chữ"
+
+#. i18n: ectx: ToolBar (charformat_toolbar)
+#: part/kword.rc:208
+msgid "Format"
+msgstr "Định dạng"
+
+#. i18n: ectx: ToolBar (border_toolbar)
+#: part/kword.rc:218
+#, fuzzy
+msgid "Borders"
+msgstr "Viền"
+
+#. i18n: ectx: ToolBar (mailmerge_toolbar)
+#: part/kword.rc:230
+msgid "MailMerge"
+msgstr ""
+
+#. i18n: ectx: ToolBar (formula_toolbar)
+#: part/kword.rc:235
+msgid "Formula"
+msgstr "Công thức"
+
+#. i18n: ectx: Menu (check_spell_list)
+#: part/kword.rc:312
+msgid "Spell Check Result"
+msgstr "Kết quả Kiểm tra Chính tả "
+
+#. i18n: ectx: Menu (variable_list)
+#: part/kword.rc:341
+msgid "Change Variable To"
+msgstr "Đổi Biến số Thành"
+
+#: part/KWStatusBar.cpp:39
+msgid "Modified"
+msgstr "Đã thay đổi"
+
+#: part/KWStatusBar.cpp:40
+msgid "Saved"
+msgstr "Đã lưu"
+
+#: part/KWStatusBar.cpp:41
+#, kde-format
+msgid "Page: %1/%2"
+msgstr "Trang: %1/%2"
+
+#: part/KWStatusBar.cpp:63
+msgid "Page: current/total"
+msgstr "Trang: hiện tại/tổng số"
+
+#: part/KWStatusBar.cpp:80
+msgid "State: saved/modified"
+msgstr "Trạng thái: đã lưu/đã thay đổi"
+
+#: part/KWStatusBar.cpp:94
+msgid "Mouseposition: X:Y"
+msgstr "Vị trí con trỏ: X:Y"
+
+#: part/KWStatusBar.cpp:107
+msgid "Zoom Controller"
+msgstr "Điều khiển Phóng"
 
 #: part/KWView.cpp:248
 msgid "Frame/Frameset Properties"
@@ -1610,41 +1523,9 @@ msgstr ""
 msgid "Create outlines"
 msgstr "Tạo các đường nét"
 
-#: part/KWDocument.cpp:468
-msgid "Copy"
-msgstr "Chép"
-
-#: part/KWDocument.cpp:513
-#, fuzzy
-msgid "Head 1"
-msgstr "Tiêu đề 1"
-
-#: part/KWDocument.cpp:520
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 2"
-msgid "Head 2"
-msgstr "Tiêu đề 2"
-
-#: part/KWDocument.cpp:527
-#, fuzzy
-#| msgctxt "Style name"
-#| msgid "Head 3"
-msgid "Head 3"
-msgstr "Tiêu đề 3"
-
-#: part/KWDocument.cpp:534
-#, fuzzy
-msgid "Bullet List"
-msgstr "Danh sách không được xếp thứ tự"
-
-#: part/KWDocument.cpp:838
-msgid "Can not find needed text component, KWord will quit now"
-msgstr "Không thể tìm thấy thành phần văn bản cần thiết, KWord sẽ thoát ngay"
-
-#: part/KWDocument.cpp:839
-msgid "Installation Error"
-msgstr "Lỗi Cài đặt"
+#: part/main.cpp:31
+msgid "File to open"
+msgstr "Tập tin để mở"
 
 #, fuzzy
 #~ msgid "Page Background"

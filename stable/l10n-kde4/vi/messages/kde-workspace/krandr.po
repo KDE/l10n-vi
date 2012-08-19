@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krandr\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-22 04:51+0100\n"
+"POT-Creation-Date: 2012-08-19 15:44+0200\n"
 "PO-Revision-Date: 2008-01-16 06:23+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KAider 0.1\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Phan Vĩnh Thịnh, nhóm Việt hóa KDE"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "teppi82@gmail.com, kde-l10n-vi@lists.kde.org"
 
 #: krandrmodule.cpp:47
 #, fuzzy
@@ -142,6 +150,91 @@ msgstr "Cấu hình màn hình"
 msgid "1 second remaining:"
 msgid_plural "%1 seconds remaining:"
 msgstr[0] "còn %1 giây:"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:14
+msgid "Screen Resize and Rotate Settings"
+msgstr "Thiết lập thay đổi kích cỡ và xoay màn hình"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
+#: legacyrandrconfigbase.ui:17
+msgid ""
+"If this option is enabled, options set by the system tray applet will be "
+"saved and loaded when KDE starts instead of being temporary."
+msgstr ""
+"Nếu tùy chọn này bật, thì các thiết lập do trình nhỏ trong khay hệ thống đặt "
+"sẽ được ghi nhớ và nạp khi KDE khởi động."
+
+#. i18n: ectx: property (text), widget (QLabel, screenLabel)
+#: legacyrandrconfigbase.ui:25
+#, fuzzy
+#| msgid "Settings for Screen:"
+msgid "Settings for screen:"
+msgstr "Thiết lập cho màn hình:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
+#: legacyrandrconfigbase.ui:38
+msgid ""
+"The screen whose settings you would like to change can be selected using "
+"this drop-down list."
+msgstr ""
+"Có thể chọn màn hình để thay đổi thiết lập dùng danh sách hiện xuống này."
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: legacyrandrconfigbase.ui:49
+msgid "Screen size:"
+msgstr "Kích thước màn hình:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
+#: legacyrandrconfigbase.ui:62
+msgid ""
+"The size, otherwise known as the resolution, of your screen can be selected "
+"from this drop-down list."
+msgstr ""
+"Có thể chọn kích thước, hay còn gọi là độ phân giải, trong danh sách hiện "
+"xuống này."
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: legacyrandrconfigbase.ui:73
+msgid "Refresh rate:"
+msgstr "Tần số cập nhật:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
+#: legacyrandrconfigbase.ui:83
+msgid ""
+"The refresh rate of your screen can be selected from this drop-down list."
+msgstr ""
+"Có thể chọn tần số cập nhật của màn hình trong danh sách hiện xuống này."
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:98
+msgid ""
+"The options in this section allow you to change the rotation of your screen."
+msgstr "Tùy chọn trong phần này cho phép bạn thay đổi góc quay của màn hình."
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: legacyrandrconfigbase.ui:101
+msgid "Orientation (degrees counterclockwise)"
+msgstr "Định hướng (độ ngược chiều quay đồng hồ)"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:108
+msgid ""
+"If this option is enabled the size and orientation settings will be used "
+"when KDE starts."
+msgstr ""
+"Nếu tùy chọn này bật thì các thiết lập kích thước và góc quay sẽ được dùng "
+"khi KDE khởi động."
+
+#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
+#: legacyrandrconfigbase.ui:111
+msgid "Apply settings on KDE startup"
+msgstr "Áp dụng thiết lập khi chạy KDE"
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
+#: legacyrandrconfigbase.ui:118
+msgid "Allow tray application to change startup settings"
+msgstr "Cho phép ứng dụng khay thay đổi thiết lập khởi động"
 
 #: legacyrandrscreen.cpp:140
 #, kde-format
@@ -275,58 +368,44 @@ msgctxt "Automatic refresh rate configuration"
 msgid "Auto"
 msgstr "Tự động"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
+#: outputconfigbase.ui:26
+msgid "Output Config"
+msgstr "Cấu hình kết xuất"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: outputconfigbase.ui:32
+msgid "Size:"
+msgstr "Cỡ :"
+
+#. i18n: ectx: property (text), widget (QLabel, rateLabel)
+#: outputconfigbase.ui:48
+#, fuzzy
+#| msgid "Refresh Rate:"
+msgid "Refresh:"
+msgstr "Tần số cập nhật:"
+
+#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
+#: outputconfigbase.ui:64
+#, fuzzy
+#| msgid "Orientation"
+msgid "Orientation:"
+msgstr "Hướng"
+
+#. i18n: ectx: property (text), widget (QLabel, positionLabel)
+#: outputconfigbase.ui:80
+#, fuzzy
+#| msgid "Position:"
+msgctxt "Position of the screen"
+msgid "Position:"
+msgstr "Vị trí:"
+
 #: outputgraphicsitem.cpp:72
 #, kde-format
 msgctxt "Configuration options. Output name, width x height (refresh rate Hz)"
 msgid ""
 "%1\n"
 "%2x%3 (%4 Hz)"
-msgstr ""
-
-#. i18n: file: randrconfigbase.ui:81
-#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
-#: randrconfig.cpp:61 rc.cpp:71
-msgid "Save as Default"
-msgstr ""
-
-#: randrconfig.cpp:62
-msgid "Reset"
-msgstr ""
-
-#: randrconfig.cpp:125
-msgctxt "No display selected"
-msgid "None"
-msgstr ""
-
-#: randrconfig.cpp:140 randrconfig.cpp:185
-#, kde-format
-msgid "%1 (Connected)"
-msgstr ""
-
-#: randrconfig.cpp:329
-msgid "Configuration has been set as the desktop default."
-msgstr ""
-
-#: randrconfig.cpp:338
-msgid "Default desktop setup has been reset."
-msgstr ""
-
-#: randrconfig.cpp:456
-msgid ""
-"Insufficient virtual size for the total screen size.\n"
-"The configured virtual size of your X server is insufficient for this setup. "
-"This configuration needs to be adjusted.\n"
-"Do you wish to run a tool to adjust the configuration?"
-msgstr ""
-
-#: randrconfig.cpp:464
-msgid ""
-"Configuration has been adjusted. Please restart your session for this change "
-"to take effect."
-msgstr ""
-
-#: randrconfig.cpp:467
-msgid "Changing configuration failed. Please adjust your xorg.conf manually."
 msgstr ""
 
 #: randr.cpp:32
@@ -451,184 +530,80 @@ msgstr ""
 "biết bạn có muốn giữ cấu hình này không. Trong vòng 15 giây màn hình sẽ nhận "
 "lại thiết lập cũ."
 
-#: randrdisplay.cpp:49
+#. i18n: ectx: property (text), widget (QPushButton, saveAsDefaultButton)
+#: randrconfig.cpp:61 randrconfigbase.ui:81
+msgid "Save as Default"
+msgstr ""
+
+#: randrconfig.cpp:62
+msgid "Reset"
+msgstr ""
+
+#: randrconfig.cpp:125
+msgctxt "No display selected"
+msgid "None"
+msgstr ""
+
+#: randrconfig.cpp:140 randrconfig.cpp:185
 #, kde-format
-msgid "X Resize and Rotate extension version %1.%2"
-msgstr "Phần mở rộng thay đổi kích thước và xoay X phiên bản %1.%2"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Phan Vĩnh Thịnh, nhóm Việt hóa KDE"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "teppi82@gmail.com, kde-l10n-vi@lists.kde.org"
-
-#. i18n: file: legacyrandrconfigbase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, LegacyRandRConfigBase)
-#: rc.cpp:5
-msgid "Screen Resize and Rotate Settings"
-msgstr "Thiết lập thay đổi kích cỡ và xoay màn hình"
-
-#. i18n: file: legacyrandrconfigbase.ui:17
-#. i18n: ectx: property (whatsThis), widget (QWidget, LegacyRandRConfigBase)
-#: rc.cpp:8
-msgid ""
-"If this option is enabled, options set by the system tray applet will be "
-"saved and loaded when KDE starts instead of being temporary."
+msgid "%1 (Connected)"
 msgstr ""
-"Nếu tùy chọn này bật, thì các thiết lập do trình nhỏ trong khay hệ thống đặt "
-"sẽ được ghi nhớ và nạp khi KDE khởi động."
 
-#. i18n: file: legacyrandrconfigbase.ui:25
-#. i18n: ectx: property (text), widget (QLabel, screenLabel)
-#: rc.cpp:11
-#, fuzzy
-#| msgid "Settings for Screen:"
-msgid "Settings for screen:"
-msgstr "Thiết lập cho màn hình:"
-
-#. i18n: file: legacyrandrconfigbase.ui:38
-#. i18n: ectx: property (whatsThis), widget (KComboBox, screenCombo)
-#: rc.cpp:14
-msgid ""
-"The screen whose settings you would like to change can be selected using "
-"this drop-down list."
+#: randrconfig.cpp:329
+msgid "Configuration has been set as the desktop default."
 msgstr ""
-"Có thể chọn màn hình để thay đổi thiết lập dùng danh sách hiện xuống này."
 
-#. i18n: file: legacyrandrconfigbase.ui:49
-#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
-#: rc.cpp:17
-msgid "Screen size:"
-msgstr "Kích thước màn hình:"
-
-#. i18n: file: legacyrandrconfigbase.ui:62
-#. i18n: ectx: property (whatsThis), widget (KComboBox, sizeCombo)
-#: rc.cpp:20
-msgid ""
-"The size, otherwise known as the resolution, of your screen can be selected "
-"from this drop-down list."
+#: randrconfig.cpp:338
+msgid "Default desktop setup has been reset."
 msgstr ""
-"Có thể chọn kích thước, hay còn gọi là độ phân giải, trong danh sách hiện "
-"xuống này."
 
-#. i18n: file: legacyrandrconfigbase.ui:73
-#. i18n: ectx: property (text), widget (QLabel, rateLabel)
-#: rc.cpp:23
-msgid "Refresh rate:"
-msgstr "Tần số cập nhật:"
-
-#. i18n: file: legacyrandrconfigbase.ui:83
-#. i18n: ectx: property (whatsThis), widget (KComboBox, rateCombo)
-#: rc.cpp:26
+#: randrconfig.cpp:456
 msgid ""
-"The refresh rate of your screen can be selected from this drop-down list."
+"Insufficient virtual size for the total screen size.\n"
+"The configured virtual size of your X server is insufficient for this setup. "
+"This configuration needs to be adjusted.\n"
+"Do you wish to run a tool to adjust the configuration?"
 msgstr ""
-"Có thể chọn tần số cập nhật của màn hình trong danh sách hiện xuống này."
 
-#. i18n: file: legacyrandrconfigbase.ui:98
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, rotationGroup)
-#: rc.cpp:29
+#: randrconfig.cpp:464
 msgid ""
-"The options in this section allow you to change the rotation of your screen."
-msgstr "Tùy chọn trong phần này cho phép bạn thay đổi góc quay của màn hình."
-
-#. i18n: file: legacyrandrconfigbase.ui:101
-#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
-#: rc.cpp:32
-msgid "Orientation (degrees counterclockwise)"
-msgstr "Định hướng (độ ngược chiều quay đồng hồ)"
-
-#. i18n: file: legacyrandrconfigbase.ui:108
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, applyOnStartup)
-#: rc.cpp:35
-msgid ""
-"If this option is enabled the size and orientation settings will be used "
-"when KDE starts."
+"Configuration has been adjusted. Please restart your session for this change "
+"to take effect."
 msgstr ""
-"Nếu tùy chọn này bật thì các thiết lập kích thước và góc quay sẽ được dùng "
-"khi KDE khởi động."
 
-#. i18n: file: legacyrandrconfigbase.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, applyOnStartup)
-#: rc.cpp:38
-msgid "Apply settings on KDE startup"
-msgstr "Áp dụng thiết lập khi chạy KDE"
+#: randrconfig.cpp:467
+msgid "Changing configuration failed. Please adjust your xorg.conf manually."
+msgstr ""
 
-#. i18n: file: legacyrandrconfigbase.ui:118
-#. i18n: ectx: property (text), widget (QCheckBox, syncTrayApp)
-#: rc.cpp:41
-msgid "Allow tray application to change startup settings"
-msgstr "Cho phép ứng dụng khay thay đổi thiết lập khởi động"
-
-#. i18n: file: outputconfigbase.ui:26
-#. i18n: ectx: property (windowTitle), widget (QWidget, OutputConfigBase)
-#: rc.cpp:44
-msgid "Output Config"
-msgstr "Cấu hình kết xuất"
-
-#. i18n: file: outputconfigbase.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:47
-msgid "Size:"
-msgstr "Cỡ :"
-
-#. i18n: file: outputconfigbase.ui:48
-#. i18n: ectx: property (text), widget (QLabel, rateLabel)
-#: rc.cpp:50
-#, fuzzy
-#| msgid "Refresh Rate:"
-msgid "Refresh:"
-msgstr "Tần số cập nhật:"
-
-#. i18n: file: outputconfigbase.ui:64
-#. i18n: ectx: property (text), widget (QLabel, orientationLabel)
-#: rc.cpp:53
-#, fuzzy
-#| msgid "Orientation"
-msgid "Orientation:"
-msgstr "Hướng"
-
-#. i18n: file: outputconfigbase.ui:80
-#. i18n: ectx: property (text), widget (QLabel, positionLabel)
-#: rc.cpp:56
-#, fuzzy
-#| msgid "Position:"
-msgctxt "Position of the screen"
-msgid "Position:"
-msgstr "Vị trí:"
-
-#. i18n: file: randrconfigbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, RandRConfigBase)
-#: rc.cpp:59
+#: randrconfigbase.ui:14
 #, fuzzy
 msgid "Display Configuration (X11 Resize, Rotate and Reflect)"
 msgstr "Cấu hình Hiển thị (Thay đổi kích thước, Xoay và Phản xạ cho X11)"
 
-#. i18n: file: randrconfigbase.ui:27
 #. i18n: ectx: property (text), widget (QCheckBox, unifyOutputs)
-#: rc.cpp:62
+#: randrconfigbase.ui:27
 #, fuzzy
 #| msgid "Unify Outputs"
 msgid "Unify outputs"
 msgstr "Hợp nhất kết xuất"
 
-#. i18n: file: randrconfigbase.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:65
+#: randrconfigbase.ui:52
 msgid "Primary output:"
 msgstr ""
 
-#. i18n: file: randrconfigbase.ui:74
 #. i18n: ectx: property (text), widget (QPushButton, identifyOutputsButton)
-#: rc.cpp:68
+#: randrconfigbase.ui:74
 #, fuzzy
 #| msgid "Unify Outputs"
 msgid "Identify Outputs"
 msgstr "Hợp nhất kết xuất"
+
+#: randrdisplay.cpp:49
+#, kde-format
+msgid "X Resize and Rotate extension version %1.%2"
+msgstr "Phần mở rộng thay đổi kích thước và xoay X phiên bản %1.%2"
 
 #, fuzzy
 #~| msgid "Screen Size"

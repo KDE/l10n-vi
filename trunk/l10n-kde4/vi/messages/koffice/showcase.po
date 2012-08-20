@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:51+0200\n"
+"POT-Creation-Date: 2012-08-20 05:48+0200\n"
 "PO-Revision-Date: 2012-01-16 16:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -17,6 +17,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Nguyen Hung Vu(Nguyễn Hưng Vũ) Nguyen Vu Hung, nhóm Việt hóa KDE"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vuhung@fedu.uec.ac.jp, kde-l10n-vi@lists.kde.org"
+
+#: part/commands/SCAnimationCreateCommand.cpp:33
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgid "Create shape animation"
+msgstr "Hoạt cảnh tạo hình"
+
+#: part/commands/SCPageEffectSetCommand.cpp:38
+msgid "Create page effect"
+msgstr "Hiệu ứng tạo trang"
+
+#: part/commands/SCPageEffectSetCommand.cpp:41
+msgid "Modify page effect"
+msgstr "Hiệu ứng sửa trang"
+
+#: part/commands/SCPageEffectSetCommand.cpp:45
+msgid "Delete page effect"
+msgstr "Hiệu ứng xóa trang"
+
+#. i18n: ectx: ToolBar (editToolBar)
+#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 part/showcase.rc:91
+msgid "Edit"
+msgstr "Sửa"
+
+#: part/dockers/SCPageLayoutDocker.cpp:46
+#, fuzzy
+msgid "Slide Layouts"
+msgstr "&Kiểu Trang..."
+
+#: part/main.cpp:36
+msgid "File to open"
+msgstr "Tập tin để mở"
+
+#: part/pagelayout/SCPlaceholders.cpp:58 part/pagelayout/SCPlaceholders.cpp:59
+#, fuzzy
+msgid "Set Layout"
+msgstr "&Kiểu Trang..."
 
 #: part/SCAboutData.h:27
 msgid "KOffice Presentation Tool"
@@ -253,9 +298,8 @@ msgstr "Slide"
 msgid "Copy the current slide"
 msgstr "Trước trang hiện tại"
 
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:136
 #. i18n: ectx: property (text), widget (QPushButton, deleteSlideButton)
-#: part/SCView.cpp:75 rc.cpp:26
+#: part/SCView.cpp:75 part/ui/SCCustomSlideShowsDialog.ui:136
 #, fuzzy
 msgid "Delete Slide"
 msgstr "Slide đã chọ&n"
@@ -367,51 +411,48 @@ msgstr ""
 msgid "Blackscreen on the presentation..."
 msgstr ""
 
-#. i18n: file: part/showcase.rc:91
-#. i18n: ectx: ToolBar (editToolBar)
-#: part/commands/SCSetCustomSlideShowsCommand.cpp:33 rc.cpp:119
-msgid "Edit"
-msgstr "Sửa"
+#: part/SCViewModeSlidesSorter.cpp:325 part/ui/SCCustomSlideShowsDialog.cpp:82
+#: part/ui/SCCustomSlideShowsDialog.cpp:239
+#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
+#, kde-format
+msgid "Slide %1"
+msgstr "Slide %1"
 
-#: part/commands/SCAnimationCreateCommand.cpp:33
+#. i18n: ectx: Menu (edit)
+#: part/showcase.rc:8
+msgid "&Edit"
+msgstr "&Sửa"
+
+#. i18n: ectx: Menu (view)
+#: part/showcase.rc:27
+msgid "&View"
+msgstr "&Xem"
+
+#. i18n: ectx: Menu (insert)
+#: part/showcase.rc:50
+msgid "&Insert"
+msgstr "&Chèn"
+
+#. i18n: ectx: Menu (format)
+#: part/showcase.rc:55
+msgid "F&ormat"
+msgstr "Định &dạng"
+
+#. i18n: ectx: Menu (page)
+#: part/showcase.rc:64
 #, fuzzy
-#| msgid "Create HTML Presentation"
-msgid "Create shape animation"
-msgstr "Hoạt cảnh tạo hình"
+msgid "&Slide"
+msgstr "Slide"
 
-#: part/commands/SCPageEffectSetCommand.cpp:38
-msgid "Create page effect"
-msgstr "Hiệu ứng tạo trang"
+#. i18n: ectx: Menu (slideshow)
+#: part/showcase.rc:75
+msgid "Sli&de Show"
+msgstr "&Trình diễn"
 
-#: part/commands/SCPageEffectSetCommand.cpp:41
-msgid "Modify page effect"
-msgstr "Hiệu ứng sửa trang"
-
-#: part/commands/SCPageEffectSetCommand.cpp:45
-msgid "Delete page effect"
-msgstr "Hiệu ứng xóa trang"
-
-#: part/dockers/SCPageLayoutDocker.cpp:46
-#, fuzzy
-msgid "Slide Layouts"
-msgstr "&Kiểu Trang..."
-
-#: part/main.cpp:36
-msgid "File to open"
-msgstr "Tập tin để mở"
-
-#: part/pagelayout/SCPlaceholders.cpp:58 part/pagelayout/SCPlaceholders.cpp:59
-#, fuzzy
-msgid "Set Layout"
-msgstr "&Kiểu Trang..."
-
-#: part/tools/SCAnimationToolFactory.cpp:32
-msgid "Animation tool"
-msgstr ""
-
-#: part/tools/SCPlaceholderToolFactory.cpp:28
-msgid "Layout Tool"
-msgstr ""
+#. i18n: ectx: Menu (settings)
+#: part/showcase.rc:82
+msgid "&Settings"
+msgstr "&Thiết lập"
 
 #: part/tools/SCAnimationTool.cpp:69
 #, fuzzy
@@ -432,11 +473,9 @@ msgstr ""
 msgid "Shape Animation"
 msgstr "Hoạt cảnh tạo hình"
 
-#: part/tools/SCPlaceholderTool.cpp:78
-#, fuzzy
-#| msgid "Shape"
-msgid "Edit Shape"
-msgstr "Hình"
+#: part/tools/SCAnimationToolFactory.cpp:32
+msgid "Animation tool"
+msgstr ""
 
 #: part/tools/SCPageEffectDocker.cpp:57
 msgid "No Effect"
@@ -444,6 +483,32 @@ msgstr "Không hiệu ứng"
 
 #: part/tools/SCPageEffectDocker.cpp:80
 msgid " sec"
+msgstr ""
+
+#: part/tools/SCPlaceholderTool.cpp:78
+#, fuzzy
+#| msgid "Shape"
+msgid "Edit Shape"
+msgstr "Hình"
+
+#: part/tools/SCPlaceholderToolFactory.cpp:28
+msgid "Layout Tool"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: part/ui/SCConfigurePresenterView.ui:16
+msgid "Multiple monitors"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/ui/SCConfigurePresenterView.ui:24
+#, fuzzy
+msgid "Presentation monitor:"
+msgstr "Presentation"
+
+#. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
+#: part/ui/SCConfigurePresenterView.ui:39
+msgid "Enable presenter view"
 msgstr ""
 
 #: part/ui/SCConfigurePresenterViewDialog.cpp:42
@@ -462,26 +527,37 @@ msgstr ""
 msgid "Configure Presenter View"
 msgstr "Cấu hình KPresenter"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
+#: part/ui/SCConfigureSlideShow.ui:13
+#: part/ui/SCConfigureSlideShowDialog.cpp:46
+#, fuzzy
+msgid "Configure Slide Show"
+msgstr "&Cấu hình trang ..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: part/ui/SCConfigureSlideShow.ui:19
+#, fuzzy
+msgid "Slides"
+msgstr "Slide"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/ui/SCConfigureSlideShow.ui:27
+#, fuzzy
+#| msgid "Presentation"
+msgid "Presentation Slides:"
+msgstr "Trình diễn"
+
+#. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
+#: part/ui/SCConfigureSlideShow.ui:54
+#, fuzzy
+msgid "Edit Custom Slide Shows ..."
+msgstr "&Cấu hình trang ..."
+
 #: part/ui/SCConfigureSlideShowDialog.cpp:40
 #: part/ui/SCConfigureSlideShowDialog.cpp:84
 #, fuzzy
 msgid "All slides"
 msgstr "&Mọi slide"
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, SCConfigureSlideShow)
-#: part/ui/SCConfigureSlideShowDialog.cpp:46 rc.cpp:47
-#, fuzzy
-msgid "Configure Slide Show"
-msgstr "&Cấu hình trang ..."
-
-#: part/ui/SCCustomSlideShowsDialog.cpp:82
-#: part/ui/SCCustomSlideShowsDialog.cpp:239
-#: part/ui/SCCustomSlideShowsDialog.cpp:257 part/ui/SCHtmlExportDialog.cpp:119
-#: part/SCViewModeSlidesSorter.cpp:325
-#, kde-format
-msgid "Slide %1"
-msgstr "Slide %1"
 
 #: part/ui/SCCustomSlideShowsDialog.cpp:96
 #: part/ui/SCCustomSlideShowsDialog.cpp:100
@@ -515,6 +591,135 @@ msgstr ""
 #| msgid "Save Configuration..."
 msgid "Confirm action"
 msgstr "Sao luư  Cấu hình."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, CustomSlideShowsWidget)
+#: part/ui/SCCustomSlideShowsDialog.ui:22
+#, fuzzy
+msgid "Custom Slideshows editor"
+msgstr "Slideshow"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: part/ui/SCCustomSlideShowsDialog.ui:36
+#, fuzzy
+msgid "Customs Slideshows"
+msgstr "Slideshow"
+
+#. i18n: ectx: property (text), widget (QPushButton, addButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:59
+#, fuzzy
+#| msgid "Slideshow"
+msgid "Add new slideshow"
+msgstr "Slideshow"
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:66
+#, fuzzy
+msgid "Delete slideshow"
+msgstr "Slide đã chọ&n"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: part/ui/SCCustomSlideShowsDialog.ui:75
+#, fuzzy
+msgid "Available Slides"
+msgstr "Nhân bản trang"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: part/ui/SCCustomSlideShowsDialog.ui:106
+#, fuzzy
+#| msgid "Create HTML Slideshow"
+msgid "Current Slideshow:"
+msgstr "Tạo HTML Slideshow"
+
+#. i18n: ectx: property (text), widget (QPushButton, addSlideButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:129
+#, fuzzy
+#| msgid "Slide"
+msgid "Add Slide"
+msgstr "Slide"
+
+#. i18n: ectx: property (text), widget (QPushButton, undoButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:182
+msgid "Undo"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, okButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:189
+msgid "Ok"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, closeButton)
+#: part/ui/SCCustomSlideShowsDialog.ui:196
+#, fuzzy
+msgid "Close"
+msgstr "Màu :"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, SCHtmlExport)
+#: part/ui/SCHtmlExport.ui:20
+msgid "HTML Export"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
+#: part/ui/SCHtmlExport.ui:29
+msgid "Tick the slide should be exported :"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
+#: part/ui/SCHtmlExport.ui:55
+#, fuzzy
+msgid "Select all"
+msgstr "Chọn ..."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_css)
+#: part/ui/SCHtmlExport.ui:65
+#, fuzzy
+msgid "Select template (.css) :"
+msgstr "Slide đã chọ&n"
+
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
+#: part/ui/SCHtmlExport.ui:78
+msgid "Deselect all"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textlable_top)
+#: part/ui/SCHtmlExport.ui:101
+#, fuzzy
+msgid "Title"
+msgstr "Đầu đề "
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
+#: part/ui/SCHtmlExport.ui:117
+msgid "Output preview"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
+#. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
+#: part/ui/SCHtmlExport.ui:148 part/ui/SCHtmlExport.ui:164
+#, fuzzy
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
+#: part/ui/SCHtmlExport.ui:227
+msgid "Browse"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_author)
+#: part/ui/SCHtmlExport.ui:243
+#, fuzzy
+#| msgid "Author:"
+msgid "Author"
+msgstr "Tác giả:"
+
+#. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
+#: part/ui/SCHtmlExport.ui:258
+#, fuzzy
+msgid "Delete Favorite"
+msgstr "Slide đã chọ&n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
+#: part/ui/SCHtmlExport.ui:286
+msgid "Open in browser"
+msgstr ""
 
 #: part/ui/SCHtmlExportDialog.cpp:44
 msgid "Html Export"
@@ -1734,252 +1939,6 @@ msgstr "&Header"
 #, fuzzy
 msgid "Footer"
 msgstr "&Footer"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nguyen Hung Vu(Nguyễn Hưng Vũ) Nguyen Vu Hung, nhóm Việt hóa KDE"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "vuhung@fedu.uec.ac.jp, kde-l10n-vi@lists.kde.org"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:22
-#. i18n: ectx: property (windowTitle), widget (QWidget, CustomSlideShowsWidget)
-#: rc.cpp:5
-#, fuzzy
-msgid "Custom Slideshows editor"
-msgstr "Slideshow"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:8
-#, fuzzy
-msgid "Customs Slideshows"
-msgstr "Slideshow"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:59
-#. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: rc.cpp:11
-#, fuzzy
-#| msgid "Slideshow"
-msgid "Add new slideshow"
-msgstr "Slideshow"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:66
-#. i18n: ectx: property (text), widget (QPushButton, deleteButton)
-#: rc.cpp:14
-#, fuzzy
-msgid "Delete slideshow"
-msgstr "Slide đã chọ&n"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:75
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:17
-#, fuzzy
-msgid "Available Slides"
-msgstr "Nhân bản trang"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:106
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:20
-#, fuzzy
-#| msgid "Create HTML Slideshow"
-msgid "Current Slideshow:"
-msgstr "Tạo HTML Slideshow"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:129
-#. i18n: ectx: property (text), widget (QPushButton, addSlideButton)
-#: rc.cpp:23
-#, fuzzy
-#| msgid "Slide"
-msgid "Add Slide"
-msgstr "Slide"
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:182
-#. i18n: ectx: property (text), widget (QPushButton, undoButton)
-#: rc.cpp:29
-msgid "Undo"
-msgstr ""
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:189
-#. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:32
-msgid "Ok"
-msgstr ""
-
-#. i18n: file: part/ui/SCCustomSlideShowsDialog.ui:196
-#. i18n: ectx: property (text), widget (QPushButton, closeButton)
-#: rc.cpp:35
-#, fuzzy
-msgid "Close"
-msgstr "Màu :"
-
-#. i18n: file: part/ui/SCConfigurePresenterView.ui:16
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:38
-msgid "Multiple monitors"
-msgstr ""
-
-#. i18n: file: part/ui/SCConfigurePresenterView.ui:24
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:41
-#, fuzzy
-msgid "Presentation monitor:"
-msgstr "Presentation"
-
-#. i18n: file: part/ui/SCConfigurePresenterView.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, presenterViewCheckBox)
-#: rc.cpp:44
-msgid "Enable presenter view"
-msgstr ""
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:19
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:50
-#, fuzzy
-msgid "Slides"
-msgstr "Slide"
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:27
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:53
-#, fuzzy
-#| msgid "Presentation"
-msgid "Presentation Slides:"
-msgstr "Trình diễn"
-
-#. i18n: file: part/ui/SCConfigureSlideShow.ui:54
-#. i18n: ectx: property (text), widget (QPushButton, editSlidesButton)
-#: rc.cpp:56
-#, fuzzy
-msgid "Edit Custom Slide Shows ..."
-msgstr "&Cấu hình trang ..."
-
-#. i18n: file: part/ui/SCHtmlExport.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, SCHtmlExport)
-#: rc.cpp:59
-msgid "HTML Export"
-msgstr ""
-
-#. i18n: file: part/ui/SCHtmlExport.ui:29
-#. i18n: ectx: property (text), widget (QLabel, textLabel_slideslist)
-#: rc.cpp:62
-msgid "Tick the slide should be exported :"
-msgstr ""
-
-#. i18n: file: part/ui/SCHtmlExport.ui:55
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_selectAll)
-#: rc.cpp:65
-#, fuzzy
-msgid "Select all"
-msgstr "Chọn ..."
-
-#. i18n: file: part/ui/SCHtmlExport.ui:65
-#. i18n: ectx: property (text), widget (QLabel, textLabel_css)
-#: rc.cpp:68
-#, fuzzy
-msgid "Select template (.css) :"
-msgstr "Slide đã chọ&n"
-
-#. i18n: file: part/ui/SCHtmlExport.ui:78
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_deselectAll)
-#: rc.cpp:71
-msgid "Deselect all"
-msgstr ""
-
-#. i18n: file: part/ui/SCHtmlExport.ui:101
-#. i18n: ectx: property (text), widget (QLabel, textlable_top)
-#: rc.cpp:74
-#, fuzzy
-msgid "Title"
-msgstr "Đầu đề "
-
-#. i18n: file: part/ui/SCHtmlExport.ui:117
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_preview)
-#: rc.cpp:77
-msgid "Output preview"
-msgstr ""
-
-#. i18n: file: part/ui/SCHtmlExport.ui:148
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_previous)
-#. i18n: file: part/ui/SCHtmlExport.ui:164
-#. i18n: ectx: property (text), widget (QToolButton, toolButton_next)
-#: rc.cpp:80 rc.cpp:83
-#, fuzzy
-msgid "..."
-msgstr "..."
-
-#. i18n: file: part/ui/SCHtmlExport.ui:227
-#. i18n: ectx: property (text), widget (KPushButton, kpushbuttonBrowseTemplate)
-#: rc.cpp:86
-msgid "Browse"
-msgstr ""
-
-#. i18n: file: part/ui/SCHtmlExport.ui:243
-#. i18n: ectx: property (text), widget (QLabel, label_author)
-#: rc.cpp:89
-#, fuzzy
-#| msgid "Author:"
-msgid "Author"
-msgstr "Tác giả:"
-
-#. i18n: file: part/ui/SCHtmlExport.ui:258
-#. i18n: ectx: property (text), widget (KPushButton, kPushButton_Favorite)
-#: rc.cpp:92
-#, fuzzy
-msgid "Delete Favorite"
-msgstr "Slide đã chọ&n"
-
-#. i18n: file: part/ui/SCHtmlExport.ui:286
-#. i18n: ectx: property (text), widget (QCheckBox, checkBox_browser)
-#: rc.cpp:95
-msgid "Open in browser"
-msgstr ""
-
-#. i18n: file: part/showcase.rc:8
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:98
-msgid "&Edit"
-msgstr "&Sửa"
-
-#. i18n: file: part/showcase.rc:27
-#. i18n: ectx: Menu (view)
-#: rc.cpp:101
-msgid "&View"
-msgstr "&Xem"
-
-#. i18n: file: part/showcase.rc:50
-#. i18n: ectx: Menu (insert)
-#: rc.cpp:104
-msgid "&Insert"
-msgstr "&Chèn"
-
-#. i18n: file: part/showcase.rc:55
-#. i18n: ectx: Menu (format)
-#: rc.cpp:107
-msgid "F&ormat"
-msgstr "Định &dạng"
-
-#. i18n: file: part/showcase.rc:64
-#. i18n: ectx: Menu (page)
-#: rc.cpp:110
-#, fuzzy
-msgid "&Slide"
-msgstr "Slide"
-
-#. i18n: file: part/showcase.rc:75
-#. i18n: ectx: Menu (slideshow)
-#: rc.cpp:113
-msgid "Sli&de Show"
-msgstr "&Trình diễn"
-
-#. i18n: file: part/showcase.rc:82
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:116
-msgid "&Settings"
-msgstr "&Thiết lập"
 
 #~ msgid "Start Presentation"
 #~ msgstr "Bắt đầu Trình diễn"

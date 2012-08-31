@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 08:20+0200\n"
+"POT-Creation-Date: 2012-08-31 07:33+0200\n"
 "PO-Revision-Date: 2002-04-26 01:03GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -64,7 +64,7 @@ msgctxt "@item Undefined import field type"
 msgid "Undefined"
 msgstr "Chưa định nghĩa"
 
-#: contactfields.cpp:56
+#: contactfields.cpp:56 grantleecontactformatter.cpp:210
 msgid "Anniversary"
 msgstr "Kỉ niệm"
 
@@ -95,15 +95,15 @@ msgctxt "Fourth email address"
 msgid "EMail (4)"
 msgstr "Email"
 
-#: contactfields.cpp:155
+#: contactfields.cpp:155 grantleecontactformatter.cpp:253
 msgid "Blog Feed"
 msgstr ""
 
-#: contactfields.cpp:158
+#: contactfields.cpp:158 grantleecontactformatter.cpp:296
 msgid "Profession"
 msgstr "Chuyên nghành"
 
-#: contactfields.cpp:161
+#: contactfields.cpp:161 grantleecontactformatter.cpp:300
 #, fuzzy
 msgid "Office"
 msgstr "&Cơ quan"
@@ -244,19 +244,62 @@ msgctxt "@info:status"
 msgid "%1 out of %2"
 msgstr ""
 
-#: grantleecontactformatter.cpp:214
+#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
+#: grantleecontactformatter.cpp:199 printing/rbs_appearance.ui:99
+#, fuzzy
+msgid "Birthday"
+msgstr "Ngày sinh"
+
+#: grantleecontactformatter.cpp:222
 #, fuzzy
 #| msgid "Email"
-msgctxt "a contact's email address"
-msgid "Email"
+msgid "Emails"
 msgstr "Email"
 
-#: grantleecontactformatter.cpp:351
+#: grantleecontactformatter.cpp:245
+msgid "Website"
+msgstr ""
+
+#: grantleecontactformatter.cpp:261 mainwidget.cpp:564
+#, fuzzy
+msgid "Address Book"
+msgstr "KAđressBook"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
+#: grantleecontactformatter.cpp:275 printing/rbs_appearance.ui:112
+#, fuzzy
+msgid "Note"
+msgstr "Ghi chú "
+
+#: grantleecontactformatter.cpp:289
+msgid "Department"
+msgstr "Nhà ở"
+
+#: grantleecontactformatter.cpp:305
+msgid "Manager's Name"
+msgstr "Tên người quản lí "
+
+#: grantleecontactformatter.cpp:310
+#, fuzzy
+msgid "Assistant's Name"
+msgstr "&Tên người hướng dẫn:"
+
+#: grantleecontactformatter.cpp:315
+#, fuzzy
+msgid "Partner's Name"
+msgstr "Tên người quản lí "
+
+#: grantleecontactformatter.cpp:320
+#, fuzzy
+msgid "IM Address"
+msgstr "địa chỉ"
+
+#: grantleecontactformatter.cpp:367
 msgctxt "Boolean value"
 msgid "yes"
 msgstr ""
 
-#: grantleecontactformatter.cpp:353
+#: grantleecontactformatter.cpp:369
 msgctxt "Boolean value"
 msgid "no"
 msgstr ""
@@ -455,11 +498,6 @@ msgstr "Nhập vào tự sổ danh sách của kde2"
 #: mainwidget.cpp:557
 #, fuzzy
 msgid "Export contacts to a GMX address book file."
-msgstr "KAđressBook"
-
-#: mainwidget.cpp:564
-#, fuzzy
-msgid "Address Book"
 msgstr "KAđressBook"
 
 #: mainwidget.cpp:570 printing/printingwizard.cpp:56
@@ -873,12 +911,6 @@ msgstr "Contact &mới"
 msgid "Check this box if you want contact birthdays to be printed."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, cbBirthday)
-#: printing/rbs_appearance.ui:99
-#, fuzzy
-msgid "Birthday"
-msgstr "Ngày sinh"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbNote)
 #: printing/rbs_appearance.ui:106
 #, fuzzy
@@ -889,12 +921,6 @@ msgstr "Contact &mới"
 #: printing/rbs_appearance.ui:109
 msgid "Check this box if you want contact notes to be printed."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, cbNote)
-#: printing/rbs_appearance.ui:112
-#, fuzzy
-msgid "Note"
-msgstr "Ghi chú "
 
 #: printing/ringbinderstyle.cpp:150
 msgid "Ring Binder Printing Style - Appearance"
@@ -1791,9 +1817,6 @@ msgstr ""
 #~ msgid "City"
 #~ msgstr "Thành phố "
 
-#~ msgid "Department"
-#~ msgstr "Nhà ở"
-
 #, fuzzy
 #~ msgid "Zip Code"
 #~ msgstr "Số buư điện hay zip code"
@@ -2228,10 +2251,6 @@ msgstr ""
 #~ msgstr "Tên người quản lí "
 
 #, fuzzy
-#~ msgid "Assistant's name:"
-#~ msgstr "&Tên người hướng dẫn:"
-
-#, fuzzy
 #~ msgid "Dates"
 #~ msgstr "Bang"
 
@@ -2430,18 +2449,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "All Fields"
 #~ msgstr "Các trường đã chọn"
-
-#~ msgid "Manager's Name"
-#~ msgstr "Tên người quản lí "
-
-#, fuzzy
-#~ msgctxt "Wife/Husband/..."
-#~ msgid "Partner's Name"
-#~ msgstr "Tên người quản lí "
-
-#, fuzzy
-#~ msgid "IM Address"
-#~ msgstr "địa chỉ"
 
 #, fuzzy
 #~ msgid "Don Sanders"

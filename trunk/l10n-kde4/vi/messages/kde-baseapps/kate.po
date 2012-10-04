@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-27 04:43+0200\n"
+"POT-Creation-Date: 2012-10-04 04:25+0200\n"
 "PO-Revision-Date: 2012-01-09 21:51+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -1000,7 +1000,9 @@ msgid "Documents Modified on Disk"
 msgstr "Tài liệu đã thay đổi trên đĩa"
 
 #: app/katemwmodonhddialog.cpp:67
-msgid "&Ignore"
+#, fuzzy
+#| msgid "&Ignore"
+msgid "&Ignore Changes"
 msgstr "&Lờ đi"
 
 #: app/katemwmodonhddialog.cpp:69
@@ -1008,30 +1010,25 @@ msgid "&Reload"
 msgstr ""
 
 #: app/katemwmodonhddialog.cpp:76
-msgid ""
-"Removes the modified flag from the selected documents and closes the dialog "
-"if there are no more unhandled documents."
+msgid "Remove modified flag from selected documents"
 msgstr ""
-"Bỏ đánh dấu cho biết những tập tin đã chọn có thay đổi và đóng hộp thoại nếu "
-"không còn có tài liệu không điều khiển được."
 
-#: app/katemwmodonhddialog.cpp:79
-msgid ""
-"Overwrite selected documents, discarding the disk changes and closes the "
-"dialog if there are no more unhandled documents."
+#: app/katemwmodonhddialog.cpp:78
+#, fuzzy
+#| msgid ""
+#| "Overwrite selected documents, discarding the disk changes and closes the "
+#| "dialog if there are no more unhandled documents."
+msgid "Overwrite selected documents, discarding disk changes"
 msgstr ""
 "Ghi chèn những tài liệu đã chọn, bỏ qua những thay đổi trên đĩa và đóng hộp "
 "thoại nếu không còn có những tài liệu không điều khiển được."
 
-#: app/katemwmodonhddialog.cpp:82
-msgid ""
-"Reloads the selected documents from disk and closes the dialog if there are "
-"no more unhandled documents."
-msgstr ""
-"Nạp lại những tài liệu đã chọn và đóng hộp thoại nếu không còn có những tài "
-"liệu không điều khiển được."
+#: app/katemwmodonhddialog.cpp:80
+#, fuzzy
+msgid "Reload selected documents from disk"
+msgstr "Đóng mọi tài liệu đang mở."
 
-#: app/katemwmodonhddialog.cpp:96
+#: app/katemwmodonhddialog.cpp:93
 #, fuzzy
 #| msgid ""
 #| "<qt>The documents listed below has changed on disk.<p>Select one or more "
@@ -1043,31 +1040,31 @@ msgstr ""
 "<qt>Những tài liệu sau đã có thay đổi trên đĩa.<p>Chọn một hoặc vài tập tin "
 "và nhấn một nút thao tác cho đến khi không còn gì trong danh sách.</qt>"
 
-#: app/katemwmodonhddialog.cpp:103
+#: app/katemwmodonhddialog.cpp:100
 msgid "Filename"
 msgstr "Tên tập tin"
 
-#: app/katemwmodonhddialog.cpp:103
+#: app/katemwmodonhddialog.cpp:100
 msgid "Status on Disk"
 msgstr "Trạng thái trên đĩa"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Modified"
 msgstr "Sửa"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Created"
 msgstr "Tạo"
 
-#: app/katemwmodonhddialog.cpp:109
+#: app/katemwmodonhddialog.cpp:106
 msgid "Deleted"
 msgstr "Xóa"
 
-#: app/katemwmodonhddialog.cpp:124
+#: app/katemwmodonhddialog.cpp:121
 msgid "&View Difference"
 msgstr "&Xem sự khác nhau"
 
-#: app/katemwmodonhddialog.cpp:127
+#: app/katemwmodonhddialog.cpp:124
 #, fuzzy
 #| msgid ""
 #| "Calculates the difference between the the editor contents and the disk "
@@ -1082,7 +1079,7 @@ msgstr ""
 "tài liệu đã chọn, và hiển thị sự khác nhau bằng ứng dụng mặc định. Cần "
 "chương trình diff(1)."
 
-#: app/katemwmodonhddialog.cpp:187
+#: app/katemwmodonhddialog.cpp:184
 #, kde-format
 msgid ""
 "Could not save the document \n"
@@ -1091,7 +1088,7 @@ msgstr ""
 "Không ghi được tài liệu hiện thời.\n"
 "'%1'"
 
-#: app/katemwmodonhddialog.cpp:285
+#: app/katemwmodonhddialog.cpp:282
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1099,15 +1096,15 @@ msgstr ""
 "Lỗi chạy lệnh diff. Xin hãy kiểm tra xem diff(1) đã cài đặt và nằm trong "
 "biến PATH."
 
-#: app/katemwmodonhddialog.cpp:287
+#: app/katemwmodonhddialog.cpp:284
 msgid "Error Creating Diff"
 msgstr "Lỗi tạo Diff"
 
-#: app/katemwmodonhddialog.cpp:296
+#: app/katemwmodonhddialog.cpp:293
 msgid "Besides white space changes, the files are identical."
 msgstr ""
 
-#: app/katemwmodonhddialog.cpp:297
+#: app/katemwmodonhddialog.cpp:294
 msgid "Diff Output"
 msgstr ""
 
@@ -2328,6 +2325,20 @@ msgstr ""
 "<p>Nhấn <strong>F8</strong> hoặc <strong>Shift+F8</strong> để chuyển tới\n"
 "khung tiếp theo/trước.</p>\n"
 
+#~ msgid ""
+#~ "Removes the modified flag from the selected documents and closes the "
+#~ "dialog if there are no more unhandled documents."
+#~ msgstr ""
+#~ "Bỏ đánh dấu cho biết những tập tin đã chọn có thay đổi và đóng hộp thoại "
+#~ "nếu không còn có tài liệu không điều khiển được."
+
+#~ msgid ""
+#~ "Reloads the selected documents from disk and closes the dialog if there "
+#~ "are no more unhandled documents."
+#~ msgstr ""
+#~ "Nạp lại những tài liệu đã chọn và đóng hộp thoại nếu không còn có những "
+#~ "tài liệu không điều khiển được."
+
 #, fuzzy
 #~| msgid "Create a new document"
 #~ msgid "Cannot go to the document"
@@ -2404,10 +2415,6 @@ msgstr ""
 #~| msgid "&Save Selected"
 #~ msgid "Close Selected"
 #~ msgstr "&Lưu đã chọn"
-
-#, fuzzy
-#~ msgid "Close selected open documents."
-#~ msgstr "Đóng mọi tài liệu đang mở."
 
 #, fuzzy
 #~| msgid "&Save Selected"

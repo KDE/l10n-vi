@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-04 04:25+0200\n"
+"POT-Creation-Date: 2012-10-05 04:36+0200\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -166,7 +166,7 @@ msgid "&Use cache"
 msgstr "D&ùng bộ nhớ tạm"
 
 #. i18n: ectx: property (title), widget (QGroupBox, bgCachePolicy)
-#. i18n: ectx: property (text), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: cache.ui:46 kcookiespolicies.ui:168
 msgid "Policy"
 msgstr "Chính sách"
@@ -419,21 +419,21 @@ msgstr "Hạn dùng:"
 msgid "Secure:"
 msgstr "Bảo mật:"
 
-#: kcookiespolicies.cpp:147
-#, fuzzy
-#| msgid "New Cookie Policy"
-msgctxt "@title:window"
-msgid "New Cookie Policy"
-msgstr "Chính sách cookie mới"
-
-#: kcookiespolicies.cpp:185
+#: kcookiespolicies.cpp:179
 #, fuzzy
 #| msgid "Change Cookie Policy"
 msgctxt "@title:window"
 msgid "Change Cookie Policy"
 msgstr "Đổi chính sách cookie"
 
-#: kcookiespolicies.cpp:206
+#: kcookiespolicies.cpp:198
+#, fuzzy
+#| msgid "New Cookie Policy"
+msgctxt "@title:window"
+msgid "New Cookie Policy"
+msgstr "Chính sách cookie mới"
+
+#: kcookiespolicies.cpp:226
 #, kde-format
 msgid ""
 "<qt>A policy already exists for<center><b>%1</b></center>Do you want to "
@@ -442,18 +442,18 @@ msgstr ""
 "<qt>Có một chính sách đã có về r<center><b>%1</b></center>. Bạn có muốn thay "
 "thế nó không?</qt>"
 
-#: kcookiespolicies.cpp:210
+#: kcookiespolicies.cpp:230
 #, fuzzy
 #| msgid "Duplicate Policy"
 msgctxt "@title:window"
 msgid "Duplicate Policy"
 msgstr "Nhân đôi chính sách"
 
-#: kcookiespolicies.cpp:211 useragentdlg.cpp:202
+#: kcookiespolicies.cpp:231 useragentdlg.cpp:202
 msgid "Replace"
 msgstr "Thay thế"
 
-#: kcookiespolicies.cpp:380
+#: kcookiespolicies.cpp:400
 msgid ""
 "Unable to communicate with the cookie handler service.\n"
 "Any changes you made will not take effect until the service is restarted."
@@ -461,7 +461,7 @@ msgstr ""
 "Không thể liên lạc với dịch vụ xử lý tập tin cookie.\n"
 "Thay đổi của bạn sẽ không có tác động đến khi dịch vụ này được khởi chạy lại."
 
-#: kcookiespolicies.cpp:422
+#: kcookiespolicies.cpp:442
 #, fuzzy
 #| msgid ""
 #| "<h1>Cookies</h1> Cookies contain information that Konqueror (or any other "
@@ -727,7 +727,7 @@ msgstr "Chính sách nơi Mạng"
 msgid "Search interactively for domains"
 msgstr "Tìm kiếm tương tác miền"
 
-#. i18n: ectx: property (whatsThis), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (whatsThis), widget (QTreeWidget, policyTreeWidget)
 #: kcookiespolicies.ui:147
 msgid ""
 "<qt>\n"
@@ -741,7 +741,7 @@ msgstr ""
 "Mạng đó.\n"
 "</qt>"
 
-#. i18n: ectx: property (text), widget (QTreeWidget, lvDomainPolicy)
+#. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: kcookiespolicies.ui:163
 msgid "Domain"
 msgstr "Miền"

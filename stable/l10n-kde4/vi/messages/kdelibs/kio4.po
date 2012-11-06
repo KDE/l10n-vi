@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-01 11:00+0100\n"
+"POT-Creation-Date: 2012-11-06 16:26+0100\n"
 "PO-Revision-Date: 2012-07-26 14:37+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -1460,52 +1460,55 @@ msgstr "Hiển thị thông t&in SSL"
 msgid "Cookie Alert"
 msgstr "Cảnh giác cookie"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:97
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:98
 #, kde-format
-msgid "You received a cookie from"
-msgid_plural "You received %1 cookies from"
-msgstr[0] "Bạn đã nhận %1 cookie từ"
+msgctxt "%2 hostname, %3 optional cross domain suffix (translated below)"
+msgid ""
+"<p>You received a cookie from<br/><b>%2%3</b><br/>Do you want to accept or "
+"reject this cookie?</p>"
+msgid_plural ""
+"<p>You received %1 cookies from<br/><b>%2%3</b><br/>Do you want to accept or "
+"reject these cookies?</p>"
+msgstr[0] ""
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:115
-msgid " <b>[Cross Domain]</b>"
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:106
+#, fuzzy
+#| msgid " <b>[Cross Domain]</b>"
+msgctxt "@item:intext cross domain cookie"
+msgid " [Cross Domain]"
 msgstr " <b>[Đa miền]</b>"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:118
-msgid "Do you want to accept or reject?"
-msgstr "Bạn có muốn chấp nhận hoặc từ chối?"
-
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:126
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:128
 msgid "Apply Choice To"
 msgstr "Áp dụng sự chọn vào"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:128
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:130
 msgid "&Only this cookie"
 msgstr "Chỉ c&ookie này"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:128
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:130
 msgid "&Only these cookies"
 msgstr "Chỉ những c&ookie này"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:132
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:134
 #, fuzzy
 #| msgid ""
 #| "Select this option to accept/reject only this cookie. You will be "
 #| "prompted if another cookie is received. <em>(see WebBrowsing/Cookies in "
 #| "the Control Center)</em>."
 msgid ""
-"Select this option to accept/reject only this cookie. You will be prompted "
-"if another cookie is received. <em>(see WebBrowsing/Cookies in the System "
-"Settings)</em>."
+"Select this option to only accept or reject this cookie. You will be "
+"prompted again if you receive another cookie."
 msgstr ""
 "Hãy chọn điều này để chấp nhận / từ chối chỉ cookie này. Bạn sẽ được nhắc "
 "nếu cookie thêm được nhận <em>(xem Duyệt Mạng/Cookies trong Trung tâm Điều "
 "khiển)</em>."
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:136
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:137
 msgid "All cookies from this do&main"
 msgstr "Mọi cookie từ &miền này"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:139
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:140
 #, fuzzy
 #| msgid ""
 #| "Select this option to accept/reject all cookies from this site. Choosing "
@@ -1513,10 +1516,10 @@ msgstr "Mọi cookie từ &miền này"
 #| "from. This policy will be permanent until you manually change it from the "
 #| "Control Center <em>(see WebBrowsing/Cookies in the Control Center)</em>."
 msgid ""
-"Select this option to accept/reject all cookies from this site. Choosing "
+"Select this option to accept or reject all cookies from this site. Choosing "
 "this option will add a new policy for the site this cookie originated from. "
 "This policy will be permanent until you manually change it from the System "
-"Settings <em>(see WebBrowsing/Cookies in the System Settings)</em>."
+"Settings."
 msgstr ""
 "Hãy chọn điều này để chấp nhận / từ chối mọi cookie từ nơi Mạng này. Việc "
 "chọn điều này sẽ thêm một giao thức mới về nơi Mạng đã tạo cookie này. Giao "
@@ -1536,84 +1539,92 @@ msgstr "Mọi &cookie"
 #| "</em>."
 msgid ""
 "Select this option to accept/reject all cookies from anywhere. Choosing this "
-"option will change the global cookie policy set in the System Settings for "
-"all cookies <em>(see WebBrowsing/Cookies in the System Settings)</em>."
+"option will change the global cookie policy for all cookies until you "
+"manually change it from the System Settings."
 msgstr ""
 "Hãy chọn điều này để chấp nhận / từ chối mọi cookie từ đâu. Việc chọn điều "
 "này sẽ thay đổi giao thức cookie toàn cục được đặt trong Trung tâm Điều "
 "khiển về mọi cookie <em>(xem Duyệt Mạng/Cookies trong Trung tâm Điều khiển)</"
 "em>."
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:162
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:170
 msgid "&Accept"
 msgstr "Chấ&p nhận"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:163
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:171
+msgid "Accept for this &session"
+msgstr ""
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:173
+msgid "Accept cookie(s) until the end of the current session"
+msgstr ""
+
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:174
 msgid "&Reject"
 msgstr "&Từ chối"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:165
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:176
 msgid "See or modify the cookie information"
 msgstr "Xem hoặc sửa đổi thông tin cookie"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:200
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:223
 msgid "Cookie Details"
 msgstr "Thông tin về cookie"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:205 kio/kfileitem.cpp:1225
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:228 kio/kfileitem.cpp:1225
 msgid "Name:"
 msgstr "Tên:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:213
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:236
 msgid "Value:"
 msgstr "Giá trị :"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:220
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:243
 msgid "Expires:"
 msgstr "Hạn dùng:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:227
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:250
 msgid "Path:"
 msgstr "Đường dẫn:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:234
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:257
 msgid "Domain:"
 msgstr "Miền:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:241
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:264
 msgid "Exposure:"
 msgstr "Phơi nắng:"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:250
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:273
 msgctxt "Next cookie"
 msgid "&Next >>"
 msgstr "&Kế →"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:255
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:278
 msgid "Show details of the next cookie"
 msgstr "Hiển thị chi tiết về cookie kế tiếp"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:282
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:305
 msgid "Not specified"
 msgstr "Chưa ghi rõ"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:291
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:314
 msgid "End of Session"
 msgstr "Kết thúc phiên chạy"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:296
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:319
 msgid "Secure servers only"
 msgstr "Chỉ máy phục vụ bảo mật"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:298
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:321
 msgid "Secure servers, page scripts"
 msgstr "Máy phục vụ bảo mật, tập lệnh trang"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:303
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:326
 msgid "Servers"
 msgstr "Máy phục vụ"
 
-#: ../kioslave/http/kcookiejar/kcookiewin.cpp:305
+#: ../kioslave/http/kcookiejar/kcookiewin.cpp:328
 msgid "Servers, page scripts"
 msgstr "Máy phục vụ, tập lệnh trang"
 
@@ -1879,7 +1890,7 @@ msgid "Owning Group"
 msgstr "Nhóm sở hữu"
 
 #: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
-#: kfile/kpropertiesdialog.cpp:2003
+#: kfile/kpropertiesdialog.cpp:2000
 msgid "Others"
 msgstr "Khác"
 
@@ -3206,67 +3217,67 @@ msgstr "&Chung"
 msgid "Type:"
 msgstr "Kiểu :"
 
-#: kfile/kpropertiesdialog.cpp:961
+#: kfile/kpropertiesdialog.cpp:960
 #, fuzzy
 #| msgid "Create new file type"
-msgid "Create new file type"
+msgid "Create New File Type"
 msgstr "Tạo kiểu tập tin mới"
 
-#: kfile/kpropertiesdialog.cpp:963
-msgid "Edit file type"
-msgstr "Sửa kiểu tập tin"
+#: kfile/kpropertiesdialog.cpp:962
+msgid "File Type Options"
+msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:975
+#: kfile/kpropertiesdialog.cpp:972
 msgid "Contents:"
 msgstr "Nội dung:"
 
-#: kfile/kpropertiesdialog.cpp:984 kfile/kurlrequesterdialog.cpp:58
+#: kfile/kpropertiesdialog.cpp:981 kfile/kurlrequesterdialog.cpp:58
 msgid "Location:"
 msgstr "Địa điểm:"
 
-#: kfile/kpropertiesdialog.cpp:998 kio/kfileitem.cpp:1235
+#: kfile/kpropertiesdialog.cpp:995 kio/kfileitem.cpp:1235
 msgid "Size:"
 msgstr "Cỡ :"
 
-#: kfile/kpropertiesdialog.cpp:1017
+#: kfile/kpropertiesdialog.cpp:1014
 msgid "Calculate"
 msgstr "Tính"
 
-#: kfile/kpropertiesdialog.cpp:1018
+#: kfile/kpropertiesdialog.cpp:1015
 msgid "Stop"
 msgstr "Dừng"
 
-#: kfile/kpropertiesdialog.cpp:1028 kfile/kpropertiesdialog.cpp:1234
+#: kfile/kpropertiesdialog.cpp:1025 kfile/kpropertiesdialog.cpp:1231
 msgid "Refresh"
 msgstr "Cập nhật"
 
-#: kfile/kpropertiesdialog.cpp:1036
+#: kfile/kpropertiesdialog.cpp:1033
 msgid "Points to:"
 msgstr "Chỉ tới :"
 
-#: kfile/kpropertiesdialog.cpp:1049
+#: kfile/kpropertiesdialog.cpp:1046
 msgid "Created:"
 msgstr "Tạo :"
 
-#: kfile/kpropertiesdialog.cpp:1059 kio/kfileitem.cpp:1239
+#: kfile/kpropertiesdialog.cpp:1056 kio/kfileitem.cpp:1239
 msgid "Modified:"
 msgstr "Sửa đổi :"
 
-#: kfile/kpropertiesdialog.cpp:1069
+#: kfile/kpropertiesdialog.cpp:1066
 msgid "Accessed:"
 msgstr "Truy cập:"
 
-#: kfile/kpropertiesdialog.cpp:1090
+#: kfile/kpropertiesdialog.cpp:1087
 msgid "Mounted on:"
 msgstr "Đã gắn kết vào :"
 
-#: kfile/kpropertiesdialog.cpp:1098 kfile/kpropertiesdialog.cpp:2790
+#: kfile/kpropertiesdialog.cpp:1095 kfile/kpropertiesdialog.cpp:2787
 #, fuzzy
 #| msgid "Device name"
 msgid "Device usage:"
 msgstr "Tên thiết bị"
 
-#: kfile/kpropertiesdialog.cpp:1196 kfile/kpropertiesdialog.cpp:2918
+#: kfile/kpropertiesdialog.cpp:1193 kfile/kpropertiesdialog.cpp:2915
 #, fuzzy, kde-format
 #| msgctxt "Available space out of total partition size (percent used)"
 #| msgid "%1 out of %2 (%3% used)"
@@ -3274,7 +3285,7 @@ msgctxt "Available space out of total partition size (percent used)"
 msgid "%1 free of %2 (%3% used)"
 msgstr "%1 trên %2 (%3% đã dùng)"
 
-#: kfile/kpropertiesdialog.cpp:1210
+#: kfile/kpropertiesdialog.cpp:1207
 #, kde-format
 msgid ""
 "Calculating... %1 (%2)\n"
@@ -3283,33 +3294,33 @@ msgstr ""
 "Đang tính... %1 (%2)\n"
 "%3, %4"
 
-#: kfile/kpropertiesdialog.cpp:1213 kfile/kpropertiesdialog.cpp:1229
+#: kfile/kpropertiesdialog.cpp:1210 kfile/kpropertiesdialog.cpp:1226
 #, kde-format
 msgid "1 file"
 msgid_plural "%1 files"
 msgstr[0] "%1 tập tin"
 
-#: kfile/kpropertiesdialog.cpp:1214 kfile/kpropertiesdialog.cpp:1230
+#: kfile/kpropertiesdialog.cpp:1211 kfile/kpropertiesdialog.cpp:1227
 #, kde-format
 msgid "1 sub-folder"
 msgid_plural "%1 sub-folders"
 msgstr[0] "%1 thư mục con"
 
-#: kfile/kpropertiesdialog.cpp:1243
+#: kfile/kpropertiesdialog.cpp:1240
 msgid "Calculating..."
 msgstr "Đang tính..."
 
-#: kfile/kpropertiesdialog.cpp:1278
+#: kfile/kpropertiesdialog.cpp:1275
 #, kde-format
 msgid "At least %1"
 msgstr ""
 
-#: kfile/kpropertiesdialog.cpp:1315
+#: kfile/kpropertiesdialog.cpp:1312
 msgid "The new file name is empty."
 msgstr "Tên tập tin mới là rỗng."
 
-#: kfile/kpropertiesdialog.cpp:1492 kfile/kpropertiesdialog.cpp:2664
-#: kfile/kpropertiesdialog.cpp:2958 kfile/kpropertiesdialog.cpp:3207
+#: kfile/kpropertiesdialog.cpp:1489 kfile/kpropertiesdialog.cpp:2661
+#: kfile/kpropertiesdialog.cpp:2955 kfile/kpropertiesdialog.cpp:3204
 #, kde-format
 msgid ""
 "<qt>Could not save properties. You do not have sufficient access to write to "
@@ -3317,73 +3328,73 @@ msgid ""
 msgstr ""
 "<qt>Không thể lưu thuộc tính vì bạn không có quyền ghi vào <b>%1</b>.</qt>"
 
-#: kfile/kpropertiesdialog.cpp:1567 kfile/kpropertiesdialog.cpp:1571
-#: kfile/kpropertiesdialog.cpp:1576
+#: kfile/kpropertiesdialog.cpp:1564 kfile/kpropertiesdialog.cpp:1568
+#: kfile/kpropertiesdialog.cpp:1573
 msgid "Forbidden"
 msgstr "Bị cấm"
 
-#: kfile/kpropertiesdialog.cpp:1568
+#: kfile/kpropertiesdialog.cpp:1565
 msgid "Can Read"
 msgstr "Có thể đọc"
 
-#: kfile/kpropertiesdialog.cpp:1569
+#: kfile/kpropertiesdialog.cpp:1566
 msgid "Can Read & Write"
 msgstr "Có thể đọc/ghi"
 
-#: kfile/kpropertiesdialog.cpp:1572
+#: kfile/kpropertiesdialog.cpp:1569
 msgid "Can View Content"
 msgstr "Có thể xem nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1573
+#: kfile/kpropertiesdialog.cpp:1570
 msgid "Can View & Modify Content"
 msgstr "Có thể xem/sửa đổi nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1577
+#: kfile/kpropertiesdialog.cpp:1574
 msgid "Can View Content & Read"
 msgstr "Có thể xem/đọc nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1578
+#: kfile/kpropertiesdialog.cpp:1575
 msgid "Can View/Read & Modify/Write"
 msgstr "Có thể xem/đọc/sửa đổi/ghi nội dung"
 
-#: kfile/kpropertiesdialog.cpp:1674
+#: kfile/kpropertiesdialog.cpp:1671
 msgid "&Permissions"
 msgstr "&Quyền hạn"
 
-#: kfile/kpropertiesdialog.cpp:1686 kfile/kpropertiesdialog.cpp:1928
+#: kfile/kpropertiesdialog.cpp:1683 kfile/kpropertiesdialog.cpp:1925
 msgid "Access Permissions"
 msgstr "Quyền truy cập"
 
-#: kfile/kpropertiesdialog.cpp:1694
+#: kfile/kpropertiesdialog.cpp:1691
 msgid "This file is a link and does not have permissions."
 msgid_plural "All files are links and do not have permissions."
 msgstr[0] "Tập tin là liên kết, không có quyền hạn."
 
-#: kfile/kpropertiesdialog.cpp:1698
+#: kfile/kpropertiesdialog.cpp:1695
 msgid "Only the owner can change permissions."
 msgstr "Chỉ người sở hữu có khả năng thay đổi các quyền truy cập."
 
-#: kfile/kpropertiesdialog.cpp:1701
+#: kfile/kpropertiesdialog.cpp:1698
 msgid "O&wner:"
 msgstr "&Sở hữu :"
 
-#: kfile/kpropertiesdialog.cpp:1707
+#: kfile/kpropertiesdialog.cpp:1704
 msgid "Specifies the actions that the owner is allowed to do."
 msgstr "Ghi rõ những hành động người sở hữu có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1709
+#: kfile/kpropertiesdialog.cpp:1706
 msgid "Gro&up:"
 msgstr "&Nhóm:"
 
-#: kfile/kpropertiesdialog.cpp:1715
+#: kfile/kpropertiesdialog.cpp:1712
 msgid "Specifies the actions that the members of the group are allowed to do."
 msgstr "Ghi rõ những hành động thành viên nhóm có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1717
+#: kfile/kpropertiesdialog.cpp:1714
 msgid "O&thers:"
 msgstr "Người &khác:"
 
-#: kfile/kpropertiesdialog.cpp:1723
+#: kfile/kpropertiesdialog.cpp:1720
 msgid ""
 "Specifies the actions that all users, who are neither owner nor in the "
 "group, are allowed to do."
@@ -3391,17 +3402,17 @@ msgstr ""
 "Ghi rõ những hành động mọi người không phải là người sở hữu, cũng không phải "
 "là thành viên của nhóm, có khả năng làm."
 
-#: kfile/kpropertiesdialog.cpp:1728
+#: kfile/kpropertiesdialog.cpp:1725
 msgid "Only own&er can rename and delete folder content"
 msgstr ""
 "Chỉ người &sở hữu có khả năng thay đổi tên của thư mục và xoá nội dung của "
 "thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1729
+#: kfile/kpropertiesdialog.cpp:1726
 msgid "Is &executable"
 msgstr "Thực hi&ện được"
 
-#: kfile/kpropertiesdialog.cpp:1733
+#: kfile/kpropertiesdialog.cpp:1730
 msgid ""
 "Enable this option to allow only the folder's owner to delete or rename the "
 "contained files and folders. Other users can only add new files, which "
@@ -3411,7 +3422,7 @@ msgstr ""
 "thay đổi tên của các tập tin và thư mục đã chứa. Người dùng khác chỉ có thể "
 "thêm tập tin mới, việc mà cần thiết quyền « Sửa đổi nội dung »."
 
-#: kfile/kpropertiesdialog.cpp:1737
+#: kfile/kpropertiesdialog.cpp:1734
 msgid ""
 "Enable this option to mark the file as executable. This only makes sense for "
 "programs and scripts. It is required when you want to execute them."
@@ -3420,35 +3431,35 @@ msgstr ""
 "chỉ có ích với chương trình và tập lệnh. Nó cần thiết khi bạn muốn thực hiện "
 "nó."
 
-#: kfile/kpropertiesdialog.cpp:1744
+#: kfile/kpropertiesdialog.cpp:1741
 msgid "A&dvanced Permissions"
 msgstr "Quyền hạn cấp c&ao"
 
-#: kfile/kpropertiesdialog.cpp:1753
+#: kfile/kpropertiesdialog.cpp:1750
 msgid "Ownership"
 msgstr "Sở hữu"
 
-#: kfile/kpropertiesdialog.cpp:1760
+#: kfile/kpropertiesdialog.cpp:1757
 msgid "User:"
 msgstr "Người dùng:"
 
-#: kfile/kpropertiesdialog.cpp:1835
+#: kfile/kpropertiesdialog.cpp:1832
 msgid "Group:"
 msgstr "Nhóm:"
 
-#: kfile/kpropertiesdialog.cpp:1878
+#: kfile/kpropertiesdialog.cpp:1875
 msgid "Apply changes to all subfolders and their contents"
 msgstr "Áp dụng các thay đổi vào mọi thư mục con (gồm nội dung)"
 
-#: kfile/kpropertiesdialog.cpp:1918
+#: kfile/kpropertiesdialog.cpp:1915
 msgid "Advanced Permissions"
 msgstr "Quyền hạn cấp cao"
 
-#: kfile/kpropertiesdialog.cpp:1936
+#: kfile/kpropertiesdialog.cpp:1933
 msgid "Class"
 msgstr "Hạng"
 
-#: kfile/kpropertiesdialog.cpp:1941
+#: kfile/kpropertiesdialog.cpp:1938
 msgid ""
 "Show\n"
 "Entries"
@@ -3456,19 +3467,19 @@ msgstr ""
 "HIện\n"
 "mục"
 
-#: kfile/kpropertiesdialog.cpp:1943
+#: kfile/kpropertiesdialog.cpp:1940
 msgid "Read"
 msgstr "Đọc"
 
-#: kfile/kpropertiesdialog.cpp:1948
+#: kfile/kpropertiesdialog.cpp:1945
 msgid "This flag allows viewing the content of the folder."
 msgstr "Cờ này cho khả năng xem nội dung của thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1950
+#: kfile/kpropertiesdialog.cpp:1947
 msgid "The Read flag allows viewing the content of the file."
 msgstr "Cờ Đọc cho khả năng xem nội dung của tập tin."
 
-#: kfile/kpropertiesdialog.cpp:1954
+#: kfile/kpropertiesdialog.cpp:1951
 msgid ""
 "Write\n"
 "Entries"
@@ -3476,11 +3487,11 @@ msgstr ""
 "Ghi\n"
 "mục"
 
-#: kfile/kpropertiesdialog.cpp:1956
+#: kfile/kpropertiesdialog.cpp:1953
 msgid "Write"
 msgstr "Ghi"
 
-#: kfile/kpropertiesdialog.cpp:1961
+#: kfile/kpropertiesdialog.cpp:1958
 msgid ""
 "This flag allows adding, renaming and deleting of files. Note that deleting "
 "and renaming can be limited using the Sticky flag."
@@ -3488,32 +3499,32 @@ msgstr ""
 "Cờ này cho khả năng thêm, thay đổi tên và xoá tập tin. Ghi chú rằng việc xoá "
 "và thay đổi tên của tập tin có thể được hạn chế bằng cờ Dính."
 
-#: kfile/kpropertiesdialog.cpp:1964
+#: kfile/kpropertiesdialog.cpp:1961
 msgid "The Write flag allows modifying the content of the file."
 msgstr "Cờ Ghi cho khả năng sửa đổi nội dung của tập tin."
 
-#: kfile/kpropertiesdialog.cpp:1969
+#: kfile/kpropertiesdialog.cpp:1966
 msgctxt "Enter folder"
 msgid "Enter"
 msgstr "Vào"
 
-#: kfile/kpropertiesdialog.cpp:1970
+#: kfile/kpropertiesdialog.cpp:1967
 msgid "Enable this flag to allow entering the folder."
 msgstr "Bật cờ này để có khả năng vào thư mục."
 
-#: kfile/kpropertiesdialog.cpp:1973
+#: kfile/kpropertiesdialog.cpp:1970
 msgid "Exec"
 msgstr "Chạy"
 
-#: kfile/kpropertiesdialog.cpp:1974
+#: kfile/kpropertiesdialog.cpp:1971
 msgid "Enable this flag to allow executing the file as a program."
 msgstr "Bật cờ này để có khả năng thực hiện tập tin như là chương trình."
 
-#: kfile/kpropertiesdialog.cpp:1984
+#: kfile/kpropertiesdialog.cpp:1981
 msgid "Special"
 msgstr "Đặc biệt"
 
-#: kfile/kpropertiesdialog.cpp:1988
+#: kfile/kpropertiesdialog.cpp:1985
 msgid ""
 "Special flag. Valid for the whole folder, the exact meaning of the flag can "
 "be seen in the right hand column."
@@ -3521,33 +3532,33 @@ msgstr ""
 "Cờ đặc biệt: hợp lệ cho toàn bộ thư mục. Sự nghĩa chính xác của cờ này xuất "
 "hiện trong cột bên phải."
 
-#: kfile/kpropertiesdialog.cpp:1991
+#: kfile/kpropertiesdialog.cpp:1988
 msgid ""
 "Special flag. The exact meaning of the flag can be seen in the right hand "
 "column."
 msgstr ""
 "Cờ đặc biệt. Sự nghĩa chính xác của cờ này xuất hiện trong cột bên phải."
 
-#: kfile/kpropertiesdialog.cpp:1995
+#: kfile/kpropertiesdialog.cpp:1992
 msgid "User"
 msgstr "Người dùng"
 
-#: kfile/kpropertiesdialog.cpp:1999
+#: kfile/kpropertiesdialog.cpp:1996
 msgid "Group"
 msgstr "Nhóm"
 
-#: kfile/kpropertiesdialog.cpp:2007
+#: kfile/kpropertiesdialog.cpp:2004
 msgid "Set UID"
 msgstr "Đặt UID (nhận diện người dùng)"
 
-#: kfile/kpropertiesdialog.cpp:2011
+#: kfile/kpropertiesdialog.cpp:2008
 msgid ""
 "If this flag is set, the owner of this folder will be the owner of all new "
 "files."
 msgstr ""
 "Nếu cờ này được bật, người sở hữu thư mục này cũng sẽ sở hưu mọi tập tin mới."
 
-#: kfile/kpropertiesdialog.cpp:2014
+#: kfile/kpropertiesdialog.cpp:2011
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the owner."
@@ -3555,17 +3566,17 @@ msgstr ""
 "Nếu tập tin này có khả năng thực hiện với cờ đã bật, nó sẽ được thực hiện "
 "bằng quyền hạn của người sở hữu."
 
-#: kfile/kpropertiesdialog.cpp:2018
+#: kfile/kpropertiesdialog.cpp:2015
 msgid "Set GID"
 msgstr "Đặt GID (nhận diện nhóm)"
 
-#: kfile/kpropertiesdialog.cpp:2022
+#: kfile/kpropertiesdialog.cpp:2019
 msgid ""
 "If this flag is set, the group of this folder will be set for all new files."
 msgstr ""
 "Nếu cờ này đã bật, nhóm của thư mục này sẽ cũng là nhóm của mọi tập tin mới."
 
-#: kfile/kpropertiesdialog.cpp:2025
+#: kfile/kpropertiesdialog.cpp:2022
 msgid ""
 "If this file is an executable and the flag is set, it will be executed with "
 "the permissions of the group."
@@ -3573,12 +3584,12 @@ msgstr ""
 "Nếu tập tin này có khả năng thực hiện với cờ đã bật, nó sẽ được thực hiện "
 "bằng quyền hạn của nhóm."
 
-#: kfile/kpropertiesdialog.cpp:2029
+#: kfile/kpropertiesdialog.cpp:2026
 msgctxt "File permission"
 msgid "Sticky"
 msgstr "Dính"
 
-#: kfile/kpropertiesdialog.cpp:2033
+#: kfile/kpropertiesdialog.cpp:2030
 msgid ""
 "If the Sticky flag is set on a folder, only the owner and root can delete or "
 "rename files. Otherwise everybody with write permissions can do this."
@@ -3587,7 +3598,7 @@ msgstr ""
 "năng xoá hay thay đổi tên của tập tin. Không thì mọi người có quyền ghi có "
 "thể làm như thế."
 
-#: kfile/kpropertiesdialog.cpp:2037
+#: kfile/kpropertiesdialog.cpp:2034
 msgid ""
 "The Sticky flag on a file is ignored on Linux, but may be used on some "
 "systems"
@@ -3595,82 +3606,82 @@ msgstr ""
 "Cờ Dính trên tập tin bị bỏ qua trên hệ thống Linux, nhưng có thể được dùng "
 "trên một số hệ thống khác."
 
-#: kfile/kpropertiesdialog.cpp:2214
+#: kfile/kpropertiesdialog.cpp:2211
 msgid "Link"
 msgstr "Liên kết"
 
-#: kfile/kpropertiesdialog.cpp:2231
+#: kfile/kpropertiesdialog.cpp:2228
 msgid "Varying (No Change)"
 msgstr "Thay đổi (Chưa thay đổi)"
 
-#: kfile/kpropertiesdialog.cpp:2330
+#: kfile/kpropertiesdialog.cpp:2327
 msgid "This file uses advanced permissions"
 msgid_plural "These files use advanced permissions."
 msgstr[0] "Tập tin này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2351
+#: kfile/kpropertiesdialog.cpp:2348
 msgid "This folder uses advanced permissions."
 msgid_plural "These folders use advanced permissions."
 msgstr[0] "Thư mục này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2367
+#: kfile/kpropertiesdialog.cpp:2364
 msgid "These files use advanced permissions."
 msgstr "Những tập tin này dùng quyền hạn cấp cao."
 
-#: kfile/kpropertiesdialog.cpp:2585
+#: kfile/kpropertiesdialog.cpp:2582
 msgid "U&RL"
 msgstr "&Địa chỉ Mạng"
 
-#: kfile/kpropertiesdialog.cpp:2592
+#: kfile/kpropertiesdialog.cpp:2589
 msgid "URL:"
 msgstr "Địa chỉ Mạng:"
 
-#: kfile/kpropertiesdialog.cpp:2723
+#: kfile/kpropertiesdialog.cpp:2720
 msgid "De&vice"
 msgstr "Thiết &bị"
 
-#: kfile/kpropertiesdialog.cpp:2754
+#: kfile/kpropertiesdialog.cpp:2751
 msgid "Device (/dev/fd0):"
 msgstr "Thiết bị (/dev/fd0):"
 
-#: kfile/kpropertiesdialog.cpp:2755
+#: kfile/kpropertiesdialog.cpp:2752
 msgid "Device:"
 msgstr "Thiết bị :"
 
-#: kfile/kpropertiesdialog.cpp:2768
+#: kfile/kpropertiesdialog.cpp:2765
 msgid "Read only"
 msgstr "Chỉ đọc"
 
-#: kfile/kpropertiesdialog.cpp:2772
+#: kfile/kpropertiesdialog.cpp:2769
 msgid "File system:"
 msgstr "Hê thống tập tin:"
 
-#: kfile/kpropertiesdialog.cpp:2780
+#: kfile/kpropertiesdialog.cpp:2777
 msgid "Mount point (/mnt/floppy):"
 msgstr "Điểm lắp (/mnt/floppy):"
 
-#: kfile/kpropertiesdialog.cpp:2781
+#: kfile/kpropertiesdialog.cpp:2778
 msgid "Mount point:"
 msgstr "Điểm lắp:"
 
-#: kfile/kpropertiesdialog.cpp:3014
+#: kfile/kpropertiesdialog.cpp:3011
 msgid "&Application"
 msgstr "&Ứng dụng"
 
-#: kfile/kpropertiesdialog.cpp:3138
+#: kfile/kpropertiesdialog.cpp:3135
 #, kde-format
 msgid "Add File Type for %1"
 msgstr "Thêm kiểu tập tin cho %1"
 
-#: kfile/kpropertiesdialog.cpp:3139
+#: kfile/kpropertiesdialog.cpp:3136
 msgid "Select one or more file types to add:"
 msgstr "Hãy chọn một hoặc nhiều kiểu tập tin cần thêm:"
 
-#: kfile/kpropertiesdialog.cpp:3281
+#: kfile/kpropertiesdialog.cpp:3278
 msgid "Only executables on local file systems are supported."
 msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống cục bộ thôi."
 
-#: kfile/kpropertiesdialog.cpp:3295
+#: kfile/kpropertiesdialog.cpp:3292
 #, kde-format
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
@@ -7314,6 +7325,16 @@ msgstr "bộ quản lý giao thức telnet"
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "Bạn không có quyền truy cập giao thức %1."
+
+#~ msgid "You received a cookie from"
+#~ msgid_plural "You received %1 cookies from"
+#~ msgstr[0] "Bạn đã nhận %1 cookie từ"
+
+#~ msgid "Do you want to accept or reject?"
+#~ msgstr "Bạn có muốn chấp nhận hoặc từ chối?"
+
+#~ msgid "Edit file type"
+#~ msgstr "Sửa kiểu tập tin"
 
 #~ msgid "The specified folder already exists."
 #~ msgstr "Thư mục đã ghi rõ tồn tại."

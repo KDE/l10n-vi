@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-16 06:59+0200\n"
+"POT-Creation-Date: 2012-11-09 03:20+0100\n"
 "PO-Revision-Date: 2012-01-10 14:51+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -24,6 +24,36 @@ msgstr "Lê Hoàng Phương"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "herophuong93@gmail.com"
+
+#: excludefilterselectiondialog.cpp:27
+#, fuzzy
+#| msgid "Advanced Settings"
+msgctxt ""
+"@title:window Referring to the folders which will be searched for files to "
+"index for desktop search"
+msgid "Advanced File Filtering"
+msgstr "Thiết lập nâng cao"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: excludefilterselectiondialog.ui:10
+msgid "Exclude Mime Type"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: excludefilterselectiondialog.ui:16
+msgid "Select the mimetypes that should be excluded from indexing"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: excludefilterselectiondialog.ui:32
+msgid "Index Exclude Filters"
+msgstr "Bộ lọc loại trừ lập chỉ mục"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: excludefilterselectiondialog.ui:38
+msgid ""
+"Select expressions to exclude files from indexing by matching their filenames"
+msgstr "Chọn biểu thức để loại các tập tin khỏi lập chỉ mục nếu khớp tên"
 
 #: folderselectionmodel.cpp:108
 #, kde-format
@@ -55,8 +85,7 @@ msgid "Folders to index"
 msgstr "Các thư mục để lập chỉ mục"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: indexfolderselectionwidget.ui:16 nepomukconfigwidget.ui:222
+#: indexfolderselectionwidget.ui:16
 msgid ""
 "Select the local folders that contain files to be indexed for fast desktop "
 "searches"
@@ -73,17 +102,6 @@ msgstr "Chọn để có thể chọn thêm các thư mục ẩn"
 #: indexfolderselectionwidget.ui:32
 msgid "Show hidden folders"
 msgstr "Hiện thư mục ẩn"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: indexfolderselectionwidget.ui:42
-msgid "Index Exclude Filters"
-msgstr "Bộ lọc loại trừ lập chỉ mục"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: indexfolderselectionwidget.ui:48
-msgid ""
-"Select expressions to exclude files from indexing by matching their filenames"
-msgstr "Chọn biểu thức để loại các tập tin khỏi lập chỉ mục nếu khớp tên"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: nepomukconfigwidget.ui:17
@@ -152,32 +170,82 @@ msgstr "Bật trình lập chỉ mục thư điện tử"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #: nepomukconfigwidget.ui:210
-msgid "Desktop Query"
-msgstr "Truy vấn máy làm việc"
+#, fuzzy
+#| msgid "File Indexing"
+msgid "Indexing"
+msgstr "Lập chỉ mục tập tin"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_7)
 #: nepomukconfigwidget.ui:216
 msgid "File Indexing"
 msgstr "Lập chỉ mục tập tin"
 
-#. i18n: ectx: property (text), widget (KUrlLabel, m_buttonCustomizeIndexFolders)
-#: nepomukconfigwidget.ui:249
-msgid "Customize index folders..."
-msgstr "Tuỳ biến thư mục chỉ mục..."
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: nepomukconfigwidget.ui:222
+msgid "Customize the files and folders to be indexed"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkboxDocuments)
+#: nepomukconfigwidget.ui:229
+#, fuzzy
+#| msgid "Index Exclude Filters"
+msgid "Index Documents"
+msgstr "Bộ lọc loại trừ lập chỉ mục"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkboxAudio)
+#: nepomukconfigwidget.ui:236
+msgid "Index Audio"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkboxImage)
+#: nepomukconfigwidget.ui:243
+#, fuzzy
+#| msgid "Indexed files:"
+msgid "Index Images"
+msgstr "Các tập tin đã có chỉ mục:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkboxVideo)
+#: nepomukconfigwidget.ui:250
+#, fuzzy
+#| msgid "Indexed files:"
+msgid "Index Videos"
+msgstr "Các tập tin đã có chỉ mục:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_checkboxSourceCode)
+#: nepomukconfigwidget.ui:257
+msgid "Index Source Code"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonAdvancedFileIndexing)
+#: nepomukconfigwidget.ui:279
+#, fuzzy
+#| msgid "Advanced Settings"
+msgid "Advanced"
+msgstr "Thiết lập nâng cao"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonCustomizeIndexFolders)
+#: nepomukconfigwidget.ui:286
+#, fuzzy
+#| msgctxt ""
+#| "@title:window Referring to the folders which will be searched for files "
+#| "to index for desktop search"
+#| msgid "Customizing Index Folders"
+msgid "Customize Folders"
+msgstr "Tuỳ biến thư mục chỉ mục"
 
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: nepomukconfigwidget.ui:260
+#: nepomukconfigwidget.ui:297
 msgid "Removable media handling:"
 msgstr "Xử lý các phương tiện tháo gỡ được:"
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:276
+#: nepomukconfigwidget.ui:313
 msgctxt "@info:tooltip"
 msgid "Indexing of files on removable media"
 msgstr "Lập chỉ mục các tập tin trên các phương tiện tháo gỡ được"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:282
+#: nepomukconfigwidget.ui:319
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Nepomuk can index files on removable devices like USB keys or external "
@@ -206,107 +274,32 @@ msgstr ""
 "nữa.</item></list></para>"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:286
+#: nepomukconfigwidget.ui:323
 msgid "Ignore all removable media"
 msgstr "Bỏ qua tất cả phương tiện tháo gỡ được"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:291
+#: nepomukconfigwidget.ui:328
 msgid "Index files on all removable devices"
 msgstr "Lập chỉ mục tập tin trên tất cả thiết bị tháo gỡ được"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, m_comboRemovableMediaHandling)
-#: nepomukconfigwidget.ui:296
+#: nepomukconfigwidget.ui:333
 msgid "Ask individually when newly mounted"
 msgstr "Hỏi từng thiết bị mới gắn"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: nepomukconfigwidget.ui:309
-msgid "Query Base Folder Listing"
-msgstr "Liệt ke thư mục cơ sở truy vấn"
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: nepomukconfigwidget.ui:315
-msgid ""
-"Please choose what should be listed in the Desktop Query root folder besides "
-"the history and the saved queries."
-msgstr ""
-"Hãy chọn những gì được liệt kê trong thư mục gốc Truy vấn máy làm việc bên "
-"cạnh lịch sử và các truy vấn đã lưu."
-
-#. i18n: ectx: property (toolTip), widget (QRadioButton, m_checkRootQueryNeverOpened)
-#: nepomukconfigwidget.ui:327
-msgid "Show the latest never opened files"
-msgstr "Hiện các tập tin chưa mở bao giờ mới nhất"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_checkRootQueryNeverOpened)
-#: nepomukconfigwidget.ui:330
-msgid "Never opened"
-msgstr "Chưa bao giờ mở"
-
-#. i18n: ectx: property (toolTip), widget (QRadioButton, m_checkRootQueryFancy)
-#: nepomukconfigwidget.ui:340
-msgid "Tries to show the most important files."
-msgstr "Cố gắng hiện các tập tin quan trọng nhất."
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_checkRootQueryFancy)
-#: nepomukconfigwidget.ui:343
-msgid "Most important files"
-msgstr "Các tập tin quan trọng nhất"
-
-#. i18n: ectx: property (toolTip), widget (QRadioButton, m_checkRootQueryLastModified)
-#: nepomukconfigwidget.ui:353
-msgid "Show the most recently modified files."
-msgstr "Hiện các tập tin thay đổi gần đây nhất."
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_checkRootQueryLastModified)
-#: nepomukconfigwidget.ui:356
-msgid "Last modified files"
-msgstr "Các tập tin thay đổi gần đây nhất"
-
-#. i18n: ectx: property (toolTip), widget (QRadioButton, m_checkRootQueryCustom)
-#: nepomukconfigwidget.ui:371
-msgid "Specify the query that should be listed."
-msgstr "Chỉ định truy vấn được liệt kê."
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_checkRootQueryCustom)
-#: nepomukconfigwidget.ui:374
-msgid "Custom query"
-msgstr "Truy vấn tuỳ biến"
-
-#. i18n: ectx: property (text), widget (KUrlLabel, m_buttonEditCustomQuery)
-#: nepomukconfigwidget.ui:402
-msgid "Edit..."
-msgstr "Sửa..."
-
-#. i18n: ectx: property (toolTip), widget (QLabel, label_6)
-#: nepomukconfigwidget.ui:444
-msgid ""
-"Specify the maximum number of results that should be listed in query folders."
-msgstr "Chỉ định lượng kết quả tối đa được liệt kê trong thư mục truy vấn."
-
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: nepomukconfigwidget.ui:447
-msgid "Maximum number of results in listing:"
-msgstr "Số kết quả tối đa được liệt kê:"
-
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, m_spinMaxResults)
-#: nepomukconfigwidget.ui:463
-msgid "Show all results"
-msgstr "Hiện tất cả kết quả"
-
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: nepomukconfigwidget.ui:489
+#: nepomukconfigwidget.ui:360
 msgid "Backup"
 msgstr "Sao lưu"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: nepomukconfigwidget.ui:495
+#: nepomukconfigwidget.ui:366
 msgid "Automatic Backups"
 msgstr "Sao lưu tự động"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: nepomukconfigwidget.ui:501
+#: nepomukconfigwidget.ui:372
 msgctxt "@info"
 msgid ""
 "Nepomuk can perform regular automatic backups of all data that could not be "
@@ -318,62 +311,62 @@ msgstr ""
 "được thêm bằng tay và các dữ liệu thống kê."
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: nepomukconfigwidget.ui:513
+#: nepomukconfigwidget.ui:384
 msgid "Backup frequency:"
 msgstr "Tần số sao lưu:"
 
 #. i18n: ectx: property (toolTip), widget (KComboBox, m_comboBackupFrequency)
-#: nepomukconfigwidget.ui:523
+#: nepomukconfigwidget.ui:394
 msgid "How often should a backup of the Nepomuk database be created"
 msgstr "Độ thường xuyên mà các bản sao lưu cơ sở dữ liệu Nepomuk sẽ được tạo"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: nepomukconfigwidget.ui:530
+#: nepomukconfigwidget.ui:401
 msgid "Backup Time:"
 msgstr "Thời gian sao lưu:"
 
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, m_editBackupTime)
-#: nepomukconfigwidget.ui:545
+#: nepomukconfigwidget.ui:416
 msgid "When should the backup be created"
 msgstr "Khi nào bản sao lưu sẽ được tạo"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: nepomukconfigwidget.ui:554
+#: nepomukconfigwidget.ui:425
 msgid "Max number of backups:"
 msgstr "Số bản sao lưu tối đa:"
 
 #. i18n: ectx: property (toolTip), widget (QSpinBox, m_spinBackupMax)
-#: nepomukconfigwidget.ui:566
+#: nepomukconfigwidget.ui:437
 msgid "How many previous backups should be kept"
 msgstr "Bao nhiêu bản sao lưu gần đây sẽ được giữ lại"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_6)
-#: nepomukconfigwidget.ui:596
+#: nepomukconfigwidget.ui:467
 msgid "Tools"
 msgstr "Công cụ"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_buttonManualBackup)
-#: nepomukconfigwidget.ui:602
+#: nepomukconfigwidget.ui:473
 msgid "Manual Backup..."
 msgstr "Sao lưu bằng tay..."
 
 #. i18n: ectx: property (text), widget (KPushButton, m_buttonRestoreBackup)
-#: nepomukconfigwidget.ui:609
+#: nepomukconfigwidget.ui:480
 msgid "Restore Backup..."
 msgstr "Phục hồi bản sao lưu..."
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: nepomukconfigwidget.ui:646
+#: nepomukconfigwidget.ui:517
 msgid "Advanced Settings"
 msgstr "Thiết lập nâng cao"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: nepomukconfigwidget.ui:652
+#: nepomukconfigwidget.ui:523
 msgid "Memory Usage"
 msgstr "Sử dụng bộ nhớ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: nepomukconfigwidget.ui:658
+#: nepomukconfigwidget.ui:529
 msgid ""
 "<p>The maximum amount of main memory the Nepomuk system should use for its "
 "database process. The more memory is available to Nepomuk the better will be "
@@ -386,52 +379,38 @@ msgstr ""
 "command> trong trình quản lý tiến trình.)"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, m_editMemoryUsage)
-#: nepomukconfigwidget.ui:686
+#: nepomukconfigwidget.ui:557
 msgid " MiB"
 msgstr " MiB"
 
-#: nepomukserverkcm.cpp:96
-msgctxt "'Home' as in 'Home path', i.e. /home/username"
-msgid "Home"
-msgstr "Nhà"
-
-#: nepomukserverkcm.cpp:97
-#, kde-format
-msgid "<strong><filename>%1</filename></strong>"
-msgstr "<strong><filename>%1</filename></strong>"
-
-#: nepomukserverkcm.cpp:99
-msgid "some subfolders excluded"
-msgstr "một vài thư mục con đã được loại trừ"
-
-#: nepomukserverkcm.cpp:140
+#: nepomukserverkcm.cpp:101
 msgid "Desktop Search Configuration Module"
 msgstr "Mô-đun cấu hình tìm kiếm máy làm việc"
 
-#: nepomukserverkcm.cpp:142
+#: nepomukserverkcm.cpp:103
 msgid "Copyright 2007-2010 Sebastian Trüg"
 msgstr "Bản quyền 2007-2010 Sebastian Trüg"
 
-#: nepomukserverkcm.cpp:143
+#: nepomukserverkcm.cpp:104
 msgid "Sebastian Trüg"
 msgstr "Sebastian Trüg"
 
-#: nepomukserverkcm.cpp:196
+#: nepomukserverkcm.cpp:160
 msgctxt "@item:inlistbox"
 msgid "Disable Automatic Backups"
 msgstr "Tắt tự động sao lưu"
 
-#: nepomukserverkcm.cpp:197
+#: nepomukserverkcm.cpp:161
 msgctxt "@item:inlistbox"
 msgid "Daily Backup"
 msgstr "Sao lưu hàng ngày"
 
-#: nepomukserverkcm.cpp:198
+#: nepomukserverkcm.cpp:162
 msgctxt "@item:inlistbox"
 msgid "Weekly Backup"
 msgstr "Sao lưu hàng tuần"
 
-#: nepomukserverkcm.cpp:229
+#: nepomukserverkcm.cpp:193
 msgid ""
 "The Nepomuk installation is not complete. No desktop search settings can be "
 "provided."
@@ -439,7 +418,7 @@ msgstr ""
 "Bản cài đặt Nepomuk không hoàn thiện. Chưa có thiết lập tìm kiếm nào được "
 "cung cấp."
 
-#: nepomukserverkcm.cpp:375
+#: nepomukserverkcm.cpp:327
 msgid ""
 "Failed to start the desktop search service (Nepomuk). The settings have been "
 "saved and will be used the next time the server is started."
@@ -447,27 +426,27 @@ msgstr ""
 "Khởi động dịch vụ tìm kiếm máy làm việc (Nepomuk) thất bại. Các thiết lập đã "
 "được lưu và sẽ được dùng lần kế tiếp trình chủ được khởi động."
 
-#: nepomukserverkcm.cpp:377
+#: nepomukserverkcm.cpp:329
 msgid "Desktop search service not running"
 msgstr "Dịch vụ tìm kiếm máy làm việc không đang chạy"
 
-#: nepomukserverkcm.cpp:415
+#: nepomukserverkcm.cpp:366
 msgctxt "@info:status"
 msgid "Desktop search services are active"
 msgstr "Dịch vụ tìm kiếm máy làm việc đang hoạt động"
 
-#: nepomukserverkcm.cpp:418
+#: nepomukserverkcm.cpp:369
 msgctxt "@info:status"
 msgid "Desktop search services are disabled"
 msgstr "Dịch vụ tìm kiếm máy làm việc đã tắt"
 
-#: nepomukserverkcm.cpp:439
+#: nepomukserverkcm.cpp:390
 #, kde-format
 msgctxt "@info:status %1 is an error message returned by a dbus interface."
 msgid "Failed to contact File Indexer service (%1)"
 msgstr "Liên lạc với dịch vụ Lập chỉ mục tập tin (%1) thất bại"
 
-#: nepomukserverkcm.cpp:449
+#: nepomukserverkcm.cpp:400
 msgctxt "@info:status"
 msgid ""
 "File indexing service failed to initialize, most likely due to an "
@@ -475,32 +454,24 @@ msgid ""
 msgstr ""
 "Khởi chạy dịch vụ lập chỉ mục tập tin thất bại, có vẻ do vấn đề lúc cài đặt."
 
-#: nepomukserverkcm.cpp:454
+#: nepomukserverkcm.cpp:405
 msgctxt "@info:status"
 msgid "File indexing service not running."
 msgstr "Dịch vụ lập chỉ mục tập tin không đang chạy."
 
-#: nepomukserverkcm.cpp:465
+#: nepomukserverkcm.cpp:416
 #, kde-format
 msgid "1 existing backup"
 msgid_plural "%1 existing backups"
 msgstr[0] "%1 bản sao lưu tồn tại"
 
-#: nepomukserverkcm.cpp:469
+#: nepomukserverkcm.cpp:420
 #, kde-format
 msgctxt ""
 "@info %1 is the creation date of a backup formatted vi KLocale::"
 "formatDateTime"
 msgid "Oldest: %1"
 msgstr "Cũ nhất: %1"
-
-#: nepomukserverkcm.cpp:495
-msgid "Custom root folder query"
-msgstr "Truy vấn thư mục gốc tuỳ biến"
-
-#: nepomukserverkcm.cpp:496
-msgid "Please enter a query to be listed in the root folder"
-msgstr "Hãy nhập một truy vấn để được liệt kê trong thư mục gốc"
 
 #: statuswidget.cpp:124
 #, kde-format
@@ -551,3 +522,73 @@ msgstr "Các tập tin đã có chỉ mục:"
 #: statuswidget.ui:136
 msgid "Calculating..."
 msgstr "Đang tính toán..."
+
+#~ msgid "Desktop Query"
+#~ msgstr "Truy vấn máy làm việc"
+
+#~ msgid "Customize index folders..."
+#~ msgstr "Tuỳ biến thư mục chỉ mục..."
+
+#~ msgid "Query Base Folder Listing"
+#~ msgstr "Liệt ke thư mục cơ sở truy vấn"
+
+#~ msgid ""
+#~ "Please choose what should be listed in the Desktop Query root folder "
+#~ "besides the history and the saved queries."
+#~ msgstr ""
+#~ "Hãy chọn những gì được liệt kê trong thư mục gốc Truy vấn máy làm việc "
+#~ "bên cạnh lịch sử và các truy vấn đã lưu."
+
+#~ msgid "Show the latest never opened files"
+#~ msgstr "Hiện các tập tin chưa mở bao giờ mới nhất"
+
+#~ msgid "Never opened"
+#~ msgstr "Chưa bao giờ mở"
+
+#~ msgid "Tries to show the most important files."
+#~ msgstr "Cố gắng hiện các tập tin quan trọng nhất."
+
+#~ msgid "Most important files"
+#~ msgstr "Các tập tin quan trọng nhất"
+
+#~ msgid "Show the most recently modified files."
+#~ msgstr "Hiện các tập tin thay đổi gần đây nhất."
+
+#~ msgid "Last modified files"
+#~ msgstr "Các tập tin thay đổi gần đây nhất"
+
+#~ msgid "Specify the query that should be listed."
+#~ msgstr "Chỉ định truy vấn được liệt kê."
+
+#~ msgid "Custom query"
+#~ msgstr "Truy vấn tuỳ biến"
+
+#~ msgid "Edit..."
+#~ msgstr "Sửa..."
+
+#~ msgid ""
+#~ "Specify the maximum number of results that should be listed in query "
+#~ "folders."
+#~ msgstr "Chỉ định lượng kết quả tối đa được liệt kê trong thư mục truy vấn."
+
+#~ msgid "Maximum number of results in listing:"
+#~ msgstr "Số kết quả tối đa được liệt kê:"
+
+#~ msgid "Show all results"
+#~ msgstr "Hiện tất cả kết quả"
+
+#~ msgctxt "'Home' as in 'Home path', i.e. /home/username"
+#~ msgid "Home"
+#~ msgstr "Nhà"
+
+#~ msgid "<strong><filename>%1</filename></strong>"
+#~ msgstr "<strong><filename>%1</filename></strong>"
+
+#~ msgid "some subfolders excluded"
+#~ msgstr "một vài thư mục con đã được loại trừ"
+
+#~ msgid "Custom root folder query"
+#~ msgstr "Truy vấn thư mục gốc tuỳ biến"
+
+#~ msgid "Please enter a query to be listed in the root folder"
+#~ msgstr "Hãy nhập một truy vấn để được liệt kê trong thư mục gốc"

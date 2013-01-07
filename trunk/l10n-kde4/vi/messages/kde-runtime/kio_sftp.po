@@ -1,27 +1,27 @@
 # Vietnamese translation for kio_sftp.
 # Copyright © 2006 Free Software Foundation, Inc.
-# Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006.
 #
+# Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006.
+# Lê Hoàng Phương <herophuong93@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_sftp\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-01-06 03:06+0100\n"
-"PO-Revision-Date: 2006-04-17 11:32+0930\n"
-"Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
-"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"PO-Revision-Date: 2013-01-07 11:17+0800\n"
+"Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
+"Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: KBabel 1.10\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: kio_sftp.cpp:203
-#, fuzzy
 #| msgid "Incorrect username or password"
 msgid "Incorrect or invalid passphrase"
-msgstr "Tên người dùng hoặc mật khẩu sai."
+msgstr "Mật khẩu sai hoặc không hợp lệ"
 
 #: kio_sftp.cpp:275 kio_sftp.cpp:277 kio_sftp.cpp:761
 msgid "SFTP Login"
@@ -29,19 +29,17 @@ msgstr "Đăng nhập SFTP"
 
 #: kio_sftp.cpp:292
 msgid "Use the username input field to answer this question."
-msgstr ""
+msgstr "Sử dụng ô nhập tên người dùng để trả lời câu hỏi này."
 
 #: kio_sftp.cpp:305
-#, fuzzy
 #| msgid "Please enter your username and password."
 msgid "Please enter your password."
-msgstr "Hãy nhập tên người dùng và mật khẩu."
+msgstr "Hãy nhập mật khẩu của bạn."
 
 #: kio_sftp.cpp:310 kio_sftp.cpp:764
-#, fuzzy
 #| msgid "site:"
 msgid "Site:"
-msgstr "nơi:"
+msgstr "Trang:"
 
 #: kio_sftp.cpp:460
 msgid "Could not allocate callbacks"
@@ -49,45 +47,43 @@ msgstr ""
 
 #: kio_sftp.cpp:506
 msgid "Could not create a new SSH session."
-msgstr ""
+msgstr "Không thể tạo phiên SSH mới."
 
 #: kio_sftp.cpp:517 kio_sftp.cpp:522
-#, fuzzy
 #| msgid "Could not read SFTP packet"
 msgid "Could not set a timeout."
-msgstr "Không đọc được gói mạng SFTP"
+msgstr "Không thể đặt thời gian chờ tối đa."
 
 #: kio_sftp.cpp:529 kio_sftp.cpp:535
 msgid "Could not set compression."
-msgstr ""
+msgstr "Không thể đặt chế độ nén. "
 
 #: kio_sftp.cpp:542
 msgid "Could not set host."
-msgstr ""
+msgstr "Không thể đặt máy chủ."
 
 #: kio_sftp.cpp:549
-#, fuzzy
 #| msgid "Could not read SFTP packet"
 msgid "Could not set port."
-msgstr "Không đọc được gói mạng SFTP"
+msgstr "Không thể đặt cổng."
 
 #: kio_sftp.cpp:558
 msgid "Could not set username."
-msgstr ""
+msgstr "Không thể đặt tên người dùng."
 
 #: kio_sftp.cpp:567
 msgid "Could not set log verbosity."
-msgstr ""
+msgstr "Không thể đặt chế độ chi tiết lưu ký."
 
 #: kio_sftp.cpp:575
 msgid "Could not parse the config file."
-msgstr ""
+msgstr "Không thể phân tích tập tin cấu hình."
 
 #: kio_sftp.cpp:603
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Opening SFTP connection to host <b>%1:%2</b>"
 msgid "Opening SFTP connection to host %1:%2"
-msgstr "Mở kết nối SFTP tới máy <b>%1:%2</b>"
+msgstr "Đang mở kết nối SFTP tới máy %1:%2"
 
 #: kio_sftp.cpp:660
 #, kde-format
@@ -98,6 +94,13 @@ msgid ""
 "Please contact your system administrator.\n"
 "%1"
 msgstr ""
+"Không tìm thấy khoá chủ cho máy chủ này, nhưng một loại khoá khác lại tồn "
+"tại.\n"
+"Một kẻ tấn công có thể đã thay đổi khoá máy chủ mặc định nhằm làm cho máy "
+"khách "
+"của bạn nghĩ rằng khoá không tồn tại.\n"
+"Hãy liên lạc với quản trị viên hệ thống của bạn.\n"
+"%1"
 
 #: kio_sftp.cpp:671
 #, kde-format
@@ -110,6 +113,13 @@ msgid ""
 "Please contact your system administrator.\n"
 "%3"
 msgstr ""
+"Khoá chủ cho máy chủ %1 đã thay đổi.\n"
+"Điều này có thể do bạn đang gặp phải DNS giả danh hoặc địa chỉ IP cho máy chủ "
+"và khoá chủ của nó đã thay đổi cùng lúc.\n"
+"Dấu tay cho khoá được gửi bởi máy chủ từ xa là:\n"
+"%2\n"
+"Hãy liên hệ quản trị viên hệ thống của bạn.\n"
+"%3"
 
 #: kio_sftp.cpp:684
 msgid "Warning: Cannot verify host's identity."
@@ -122,6 +132,9 @@ msgid ""
 "The key fingerprint is: %2\n"
 "Are you sure you want to continue connecting?"
 msgstr ""
+"Không thể thiết lập xác thực cho máy %1.\n"
+"Dấu vân tay khoá là: %2\n"
+"Bạn có chắc chắn muốn tiếp tục kết nối?"
 
 #: kio_sftp.cpp:718 kio_sftp.cpp:732 kio_sftp.cpp:752 kio_sftp.cpp:807
 msgid "Authentication failed."
@@ -140,10 +153,12 @@ msgid ""
 "Unable to request the SFTP subsystem. Make sure SFTP is enabled on the "
 "server."
 msgstr ""
+"Không thể gửi yêu cầu tới hệ thống con SFTP. Hãy chắc chắn rằng SFTP được "
+"bật trên máy chủ."
 
 #: kio_sftp.cpp:829
 msgid "Could not initialize the SFTP session."
-msgstr ""
+msgstr "Không thể khởi tạo phiên SFTP."
 
 #: kio_sftp.cpp:834
 #, kde-format
@@ -151,10 +166,10 @@ msgid "Successfully connected to %1"
 msgstr "Đã kết nối thành công tới %1"
 
 #: kio_sftp.cpp:1772
-#, fuzzy, kde-format
+#, kde-format
 #| msgid "Could not read SFTP packet"
 msgid "Could not read link: %1"
-msgstr "Không đọc được gói mạng SFTP"
+msgstr "Không thể đọc liên kết: %1"
 
 #: kio_sftp.cpp:2169
 #, kde-format
@@ -162,6 +177,8 @@ msgid ""
 "Could not change permissions for\n"
 "%1"
 msgstr ""
+"Không thể thay đổi quyền cho\n"
+"%1"
 
 #, fuzzy
 #~| msgid "No hostname specified"

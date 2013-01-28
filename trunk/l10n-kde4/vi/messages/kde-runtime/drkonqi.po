@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-27 03:54+0100\n"
+"POT-Creation-Date: 2013-01-28 03:38+0100\n"
 "PO-Revision-Date: 2012-01-16 16:50+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -70,11 +70,18 @@ msgid "Bug Reporting Assistant Guide"
 msgstr "Trợ tá hướng dẫn báo cáo lỗi"
 
 #: aboutbugreportingdialog.cpp:64
+#, fuzzy
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "This assistant will guide you through the crash reporting process for the "
+#| "KDE Bug Reports Database Site. All the information you enter on the bug "
+#| "report must be in English, if possible, as KDE is formed internationally."
 msgctxt "@info/rich"
 msgid ""
 "This assistant will guide you through the crash reporting process for the "
-"KDE Bug Reports Database Site. All the information you enter on the bug "
-"report must be in English, if possible, as KDE is formed internationally."
+"KDE bug tracking system. All the information you enter on the bug report "
+"<strong>must be written in English</strong>, if possible, as KDE is formed "
+"internationally."
 msgstr ""
 "Trợ tá này sẽ hướng dẫn bạn qua quá trình báo cáo lỗi cho trang cơ sở dữ "
 "liệu báo cáo lỗi KDE. Tất cả thông tin bạn nhập trong báo cáo lỗi nên là "
@@ -282,9 +289,17 @@ msgid "List of possible duplicate reports"
 msgstr "Danh sách các báo cáo có khả năng trùng"
 
 #: aboutbugreportingdialog.cpp:147
+#, fuzzy
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "This page will search the bug report database for similar crashes which "
+#| "are possible duplicates of your bug. If there are similar bug reports "
+#| "found, you can double click on them to see details. Then, read the "
+#| "current bug report information so you can check to see if they are "
+#| "similar. "
 msgctxt "@info/rich"
 msgid ""
-"This page will search the bug report database for similar crashes which are "
+"This page will search the bug report system for similar crashes which are "
 "possible duplicates of your bug. If there are similar bug reports found, you "
 "can double click on them to see details. Then, read the current bug report "
 "information so you can check to see if they are similar. "
@@ -365,8 +380,12 @@ msgstr ""
 "nguồn."
 
 #: aboutbugreportingdialog.cpp:178
+#, fuzzy
+#| msgctxt "@info/rich"
+#| msgid "<note>You should write in English.</note>"
 msgctxt "@info/rich"
-msgid "<note>You should write in English.</note>"
+msgid ""
+"<note>You should <strong>write those information in English</strong>.</note>"
 msgstr "<note>Bạn nên viết bằng tiếng Anh.</note>"
 
 #: aboutbugreportingdialog.cpp:182 reportassistantdialog.cpp:153
@@ -387,12 +406,19 @@ msgstr ""
 "cáo lỗi trong hệ thống theo dõi lỗi KDE để bạn có thể xem lại báo cáo sau."
 
 #: aboutbugreportingdialog.cpp:188
+#, fuzzy
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "If the process fails, you can click <interface>Retry</interface> to try "
+#| "sending the bug report again. If the report cannot be sent because the "
+#| "bug tracking database has a problem, you can save it to a file to "
+#| "manually report later."
 msgctxt "@info/rich"
 msgid ""
 "If the process fails, you can click <interface>Retry</interface> to try "
 "sending the bug report again. If the report cannot be sent because the bug "
-"tracking database has a problem, you can save it to a file to manually "
-"report later."
+"tracking system has a problem, you can save it to a file to manually report "
+"later."
 msgstr ""
 "Nếu tiến trình thất bại, bạn có thể nhấn <interface>Thử lại</interface> để "
 "thử gửi lại báo cáo lỗi lần nữa. Nếu báo cáo không thể được gửi vì cơ sở dữ "
@@ -689,7 +715,7 @@ msgctxt "messagebox title"
 msgid "Missing debug information packages"
 msgstr "Thiếu gói thông tin gỡ lỗi"
 
-#: bugzillalib.cpp:226 reportassistantpages_bugzilla_duplicates.cpp:817
+#: bugzillalib.cpp:241 reportassistantpages_bugzilla_duplicates.cpp:817
 msgctxt "@info"
 msgid ""
 "Invalid report information (malformed data). This could mean that the bug "
@@ -698,12 +724,12 @@ msgstr ""
 "Thông tin báo cáo không hợp lệ (dữ liệu sai dạng thức). Điều này có thể tức "
 "là báo cáo không tồn tại hay trang theo dõi lỗi đang gặp vấn đề."
 
-#: bugzillalib.cpp:248
+#: bugzillalib.cpp:263
 msgctxt "@info"
 msgid "Invalid bug list: corrupted data"
 msgstr "Danh sách lỗi không hợp lệ: dữ liệu hỏng"
 
-#: bugzillalib.cpp:302
+#: bugzillalib.cpp:366
 #, kde-format
 msgctxt "@info"
 msgid "Received unexpected error code %1 from bugzilla. Error message was: %2"
@@ -2462,9 +2488,14 @@ msgstr "Hoàn toàn chắc: đính kèm thông tin của tôi vào báo cáo nà
 
 #. i18n: ectx: property (text), widget (QLabel, m_explanationLabel)
 #: ui/assistantpage_bugzilla_information.ui:17
+#, fuzzy
+#| msgctxt "@label question"
+#| msgid ""
+#| "<strong>Please select which additional information you can provide:</"
+#| "strong>"
 msgctxt "@info/rich"
-msgid "Complete the bug report fields: <note>Use English.</note>"
-msgstr "Hoàn thành các trường báo cáo lỗi: <note>Sử dụng tiếng Anh.</note>"
+msgid "<strong>Please provide the following information in English.</strong>"
+msgstr "<strong>Hãy chọn thông tin thêm nào bạn có thể cung cấp:</strong>"
 
 #. i18n: ectx: property (text), widget (QLabel, m_titleLabel)
 #: ui/assistantpage_bugzilla_information.ui:27
@@ -2576,6 +2607,10 @@ msgstr ""
 #: ui/backtracewidget.ui:100
 msgid "Show backtrace content (advanced)"
 msgstr "Hiện nội dung backtrace (nâng cao)"
+
+#~ msgctxt "@info/rich"
+#~ msgid "Complete the bug report fields: <note>Use English.</note>"
+#~ msgstr "Hoàn thành các trường báo cáo lỗi: <note>Sử dụng tiếng Anh.</note>"
 
 #~ msgctxt "@info/plain"
 #~ msgid "Report to %1"

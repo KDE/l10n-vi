@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-05 02:57+0100\n"
+"POT-Creation-Date: 2013-02-06 02:48+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -2359,12 +2359,18 @@ msgid "Showing 1 thumbnail"
 msgid_plural "Showing %1 thumbnails"
 msgstr[0] "Hiện %n mẫu ảnh"
 
-#: MainWindow/ImageCounter.cpp:37
+#: MainWindow/ImageCounter.cpp:38
+#, fuzzy, kde-format
+#| msgid "No Item Selected"
+msgid "(%1 selected)"
+msgstr "Chưa chọn mục nào"
+
+#: MainWindow/ImageCounter.cpp:45
 #, kde-format
 msgid "Total: %1"
 msgstr "Tổng: %1"
 
-#: MainWindow/ImageCounter.cpp:42
+#: MainWindow/ImageCounter.cpp:50
 #, kde-format
 msgid "1 match"
 msgid_plural "%1 matches"
@@ -2675,12 +2681,12 @@ msgid "Unknown error, stack creation failed."
 msgstr ""
 
 #: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
-#: MainWindow/Window.cpp:1247
+#: MainWindow/Window.cpp:1249
 msgid "No item is selected."
 msgstr "Chưa chọn mục nào."
 
 #: MainWindow/Window.cpp:410 MainWindow/Window.cpp:534
-#: MainWindow/Window.cpp:1248
+#: MainWindow/Window.cpp:1250
 msgid "No Selection"
 msgstr "Chưa chọn gì"
 
@@ -2775,7 +2781,9 @@ msgid "Sort Selected by Date && Time"
 msgstr "Sắp xếp điều chọn theo ngày và giờ"
 
 #: MainWindow/Window.cpp:782
-msgid "Limit View to Marked"
+#, fuzzy
+#| msgid "Limit View to Marked"
+msgid "Limit View to Selection"
 msgstr "Chỉ hiện điều có dấu"
 
 #: MainWindow/Window.cpp:785
@@ -2928,21 +2936,21 @@ msgstr "Đang tự động lưu..."
 msgid "Auto saving.... Done"
 msgstr "Đang tự động lưu... xong."
 
-#: MainWindow/Window.cpp:1040
+#: MainWindow/Window.cpp:1041
 #, kde-format
 msgid ""
 "<p>Could not open given index.xml as provided directory does not exist.<br />"
 "%1</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1048
+#: MainWindow/Window.cpp:1049
 #, kde-format
 msgid ""
 "<p>Given index file does not exist, do you want to create following?<br />%1/"
 "index.xml</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1118
+#: MainWindow/Window.cpp:1119
 msgid ""
 "<p>The password protection is only a means of allowing your little sister to "
 "look in your images, without getting to those embarrassing images from your "
@@ -2953,39 +2961,39 @@ msgstr ""
 "nguyện cờ xem ảnh của bạn.</p><p>Tức là ai truy cập tập tin XML chỉ mục có "
 "thể đi vòng mật khẩu này.</b></p>"
 
-#: MainWindow/Window.cpp:1123
+#: MainWindow/Window.cpp:1124
 msgid "Password Protection"
 msgstr "Bảo vệ bằng mật khẩu"
 
-#: MainWindow/Window.cpp:1137
+#: MainWindow/Window.cpp:1138
 msgid "Type in Password to Unlock"
 msgstr "Gõ vào mật khẩu để bỏ khoá"
 
-#: MainWindow/Window.cpp:1146 MainWindow/Window.cpp:1180
+#: MainWindow/Window.cpp:1147 MainWindow/Window.cpp:1181
 msgid "Invalid password."
 msgstr "Mật khẩu không hợp lệ."
 
-#: MainWindow/Window.cpp:1171
+#: MainWindow/Window.cpp:1172
 msgid "Type in Old Password"
 msgstr "Gõ vào mật khẩu cũ"
 
-#: MainWindow/Window.cpp:1183
+#: MainWindow/Window.cpp:1184
 msgid "Type in New Password"
 msgstr "Gõ vào mật khẩu mới"
 
-#: MainWindow/Window.cpp:1194 Settings/SettingsDialog.cpp:65
+#: MainWindow/Window.cpp:1195 Settings/SettingsDialog.cpp:65
 msgid "General"
 msgstr "Chung"
 
-#: MainWindow/Window.cpp:1195 Settings/SettingsDialog.cpp:70
+#: MainWindow/Window.cpp:1196 Settings/SettingsDialog.cpp:70
 msgid "Viewer"
 msgstr "Bộ xem"
 
-#: MainWindow/Window.cpp:1208
+#: MainWindow/Window.cpp:1209
 msgid "Annotation Dialog"
 msgstr "Hộp thoại chú giải"
 
-#: MainWindow/Window.cpp:1365
+#: MainWindow/Window.cpp:1367
 #, fuzzy
 #| msgid ""
 #| "<p>Really enable all messageboxes where you previously checked the do-not-"
@@ -2997,7 +3005,7 @@ msgstr ""
 "<p>Thực sự hiệu lực mọi hộp thông điệp khi bạn đã đánh dấu trong hộp ở cạnh "
 "« Đừng hiện lần nữa » không?</p>"
 
-#: MainWindow/Window.cpp:1376
+#: MainWindow/Window.cpp:1378
 msgid ""
 "<p>KPhotoAlbum hit an internal error (missing plug-in menu in MainWindow::"
 "Window::setupPluginMenu). This indicate that you forgot to do a make "
@@ -3007,40 +3015,40 @@ msgid ""
 "on due to the missing make install.</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1376
+#: MainWindow/Window.cpp:1378
 #, fuzzy
 #| msgid "Invoke External Program"
 msgid "Internal Error"
 msgstr "Gọi trình bên ngoài"
 
-#: MainWindow/Window.cpp:1558
+#: MainWindow/Window.cpp:1560
 msgid "Open List of Files"
 msgstr ""
 
-#: MainWindow/Window.cpp:1558
+#: MainWindow/Window.cpp:1560
 msgid ""
 "You can open a set of files from KPhotoAlbum's image root by listing the "
 "files here."
 msgstr ""
 
-#: MainWindow/Window.cpp:1574
+#: MainWindow/Window.cpp:1576
 msgid "No images matching your input were found."
 msgstr ""
 
-#: MainWindow/Window.cpp:1574
+#: MainWindow/Window.cpp:1576
 #, fuzzy
 #| msgid "No other"
 msgid "No Matches"
 msgstr "Không có gì khác"
 
-#: MainWindow/Window.cpp:1748
+#: MainWindow/Window.cpp:1750
 msgid ""
 "<p>Unable to find mplayer on the system</p><p>KPhotoAlbum needs mplayer to "
 "extract video thumbnails among other things. Please install the mplayer2 "
 "package</p>"
 msgstr ""
 
-#: MainWindow/Window.cpp:1756
+#: MainWindow/Window.cpp:1758
 msgid ""
 "<p>You have mplayer installed on your system, but it is unfortunately not "
 "version 2. mplayer2 is on most systems a separate package, please install "
@@ -3048,7 +3056,7 @@ msgid ""
 "extracting thumbnails from videos."
 msgstr ""
 
-#: MainWindow/Window.cpp:1759
+#: MainWindow/Window.cpp:1761
 msgid "mplayer is too old"
 msgstr ""
 
@@ -4181,30 +4189,33 @@ msgstr "<b>Tên tập tin:</b> "
 msgid "<b>Date: </b> "
 msgstr "<b>Ngày:</b> "
 
-#: Utilities/Util.cpp:116
-msgid "x"
-msgstr "×"
+#: Utilities/Util.cpp:115
+#, kde-format
+msgctxt "width x height"
+msgid "%1x%2"
+msgstr ""
 
-#: Utilities/Util.cpp:121
-msgctxt "Short for Mega Pixels"
-msgid "MP"
-msgstr "MP"
+#: Utilities/Util.cpp:119
+#, kde-format
+msgctxt "short for: x megapixels"
+msgid " (%1MP)"
+msgstr ""
 
-#: Utilities/Util.cpp:123
+#: Utilities/Util.cpp:122
 msgid "<b>Image Size: </b> "
 msgstr "<b>Cỡ ảnh:</b> "
 
-#: Utilities/Util.cpp:169
+#: Utilities/Util.cpp:168
 #, fuzzy
 #| msgid "<b>Date: </b> "
 msgid "<b>Label: </b> "
 msgstr "<b>Ngày:</b> "
 
-#: Utilities/Util.cpp:173
+#: Utilities/Util.cpp:172
 msgid "<b>Description: </b> "
 msgstr "<b>Mô tả: </b> "
 
-#: Utilities/Util.cpp:231
+#: Utilities/Util.cpp:230
 #, fuzzy, kde-format
 #| msgid ""
 #| "Backup file '%1' exists and is newer than '%2'. Should I use the backup "
@@ -4216,13 +4227,13 @@ msgstr ""
 "Tập tin sao lưu « %1 » đã có : nó mới hơn « %2 ». Trình này nên dùng tập tin "
 "sao lưu này không?"
 
-#: Utilities/Util.cpp:233
+#: Utilities/Util.cpp:232
 #, fuzzy
 #| msgid "Found Backup File"
 msgid "Found Autosave File"
 msgstr "Tìm thấy tập tin sao lưu"
 
-#: Utilities/Util.cpp:235
+#: Utilities/Util.cpp:234
 #, kde-format
 msgid ""
 "<p>Error: Cannot use current database file '%1':</p><p>%2</p><p>Do you want "
@@ -4230,38 +4241,38 @@ msgid ""
 "verifying and copying the file might be a good idea)</small></p>"
 msgstr ""
 
-#: Utilities/Util.cpp:238
+#: Utilities/Util.cpp:237
 msgid "Recover from Autosave?"
 msgstr ""
 
-#: Utilities/Util.cpp:240
+#: Utilities/Util.cpp:239
 #, kde-format
 msgid ""
 "<p>Error: %1</p><p>Also autosave file is empty, check manually if numbered "
 "backup files exist and can be used to restore index.xml.</p>"
 msgstr ""
 
-#: Utilities/Util.cpp:272
+#: Utilities/Util.cpp:271
 #, kde-format
 msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
-#: Utilities/Util.cpp:272 Utilities/Util.cpp:286 Utilities/Util.cpp:304
-#: Utilities/Util.cpp:321 XMLDB/FileReader.cpp:346
+#: Utilities/Util.cpp:271 Utilities/Util.cpp:285 Utilities/Util.cpp:303
+#: Utilities/Util.cpp:320 XMLDB/FileReader.cpp:346
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy chứng minh"
 
-#: Utilities/Util.cpp:286 Utilities/Util.cpp:321
+#: Utilities/Util.cpp:285 Utilities/Util.cpp:320
 #, kde-format
 msgid "Unable to create directory '%1' needed for demo."
 msgstr "Không thể tạo thư mục %1 cần thiết để chứng minh."
 
-#: Utilities/Util.cpp:304
+#: Utilities/Util.cpp:303
 #, kde-format
 msgid "Unable to open '%1' for writing."
 msgstr "Không thể mở « %1 » để ghi."
 
-#: Utilities/Util.cpp:373
+#: Utilities/Util.cpp:372
 #, kde-format
 msgid "<p>Unable to find file %1</p>"
 msgstr "<p>Không tìm thấy tập tin %1</p>"
@@ -4831,6 +4842,13 @@ msgstr "Gặp lỗi khi tạo tập tin zip %1"
 #| msgid "Error writing file %1"
 msgid "Error writing file %1 to zip file %2"
 msgstr "Gặp lỗi khi ghi tập tin %1"
+
+#~ msgid "x"
+#~ msgstr "×"
+
+#~ msgctxt "Short for Mega Pixels"
+#~ msgid "MP"
+#~ msgstr "MP"
 
 #~ msgid ""
 #~ "This will make an attempt at saving in a format understandable by KimDaBa "

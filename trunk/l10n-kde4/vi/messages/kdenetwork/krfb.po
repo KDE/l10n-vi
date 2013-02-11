@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:46+0100\n"
+"POT-Creation-Date: 2012-08-20 04:22+0200\n"
 "PO-Revision-Date: 2007-07-11 23:20+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -87,8 +87,9 @@ msgstr "%1@%2 (màn hình đã chia sẻ)"
 msgid "Invitation"
 msgstr "Giấy mời"
 
-#: invitedialog.cpp:72
-#, kde-format
+#. i18n: ectx: property (text), widget (QPushButton, btnManageInvite)
+#: invitedialog.cpp:72 ui/invitewidget.ui:125
+#, no-c-format, kde-format
 msgid "&Manage Invitations (%1)..."
 msgstr "&Quản lý giấy mời (%1)..."
 
@@ -120,6 +121,49 @@ msgstr ""
 "chuyển con chuột hay bấm phím.\n"
 "Nếu muốn tạo một mật khẩu lâu dài để chia sẻ màn hình, cần cho phép « Kết "
 "nối không giấy mời » trong cấu hình."
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:8
+msgid "Use the default port for VNC (5900)"
+msgstr "Dùng cổng mặc định cho VNC (5900)"
+
+#. i18n: ectx: label, entry (port), group (TCP)
+#: krfb.kcfg:12
+#, fuzzy
+#| msgid "This is the port on wich krfb will listen."
+msgid "This is the port on which krfb will listen."
+msgstr "Đây là cổng trên đó krfb sẽ lắng nghe."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
+#. i18n: ectx: label, entry (publishService), group (TCP)
+#: krfb.kcfg:16 ui/configtcp.ui:22
+msgid "Announce the service on the local network"
+msgstr "Thông báo dịch vụ trên máy cục bộ"
+
+#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
+#: krfb.kcfg:22
+msgid "Allow remote connections to manage the desktop."
+msgstr "Cho phép kết nối từ xa quản lý máy tính này."
+
+#. i18n: ectx: label, entry (askOnConnect), group (Security)
+#: krfb.kcfg:26
+msgid "Ask before allowing a remote connection."
+msgstr "Hỏi trước khi cho phép kết nối từ xa."
+
+#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
+#: krfb.kcfg:30
+msgid "Allow connections without an invitation."
+msgstr "Cho phép kết nối không có lời mời."
+
+#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
+#: krfb.kcfg:34
+msgid "Password for uninvited connections."
+msgstr "Mật khẩu cho kết nối không giấy mời."
+
+#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
+#: krfb.kcfg:39
+msgid "Preferred Frame Buffer Plugin"
+msgstr ""
 
 #: main.cpp:42
 msgid "VNC-compatible server to share KDE desktops"
@@ -416,243 +460,305 @@ msgstr "Chia sẻ màn hình - đã kết nối với %1"
 msgid "Desktop Sharing - connected"
 msgstr "Chia sẻ màn hình - đã ngừng kết nối"
 
-#~ msgid "Use the default port for VNC (5900)"
-#~ msgstr "Dùng cổng mặc định cho VNC (5900)"
-
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#: ui/configsecurity.ui:20
 #, fuzzy
-#~| msgid "This is the port on wich krfb will listen."
-#~ msgid "This is the port on which krfb will listen."
-#~ msgstr "Đây là cổng trên đó krfb sẽ lắng nghe."
+#| msgid "Ask before accepting an uninvited connection"
+msgid "Ask before accepting connections"
+msgstr "Hỏi trước khi chấp nhận kết nối không giấy mời"
 
-#~ msgid "Announce the service on the local network"
-#~ msgstr "Thông báo dịch vụ trên máy cục bộ"
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
+#: ui/configsecurity.ui:30
+msgid "Allow remote connections to control your desktop"
+msgstr "Cho phép người dùng ở xa điều khiển bàn phím và chuột"
 
-#~ msgid "Allow remote connections to manage the desktop."
-#~ msgstr "Cho phép kết nối từ xa quản lý máy tính này."
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#: ui/configsecurity.ui:40
+msgid "Allow uninvited connections"
+msgstr "Cho phép kết nối không giấy mời"
 
-#~ msgid "Ask before allowing a remote connection."
-#~ msgstr "Hỏi trước khi cho phép kết nối từ xa."
-
-#~ msgid "Allow connections without an invitation."
-#~ msgstr "Cho phép kết nối không có lời mời."
-
-#~ msgid "Password for uninvited connections."
-#~ msgstr "Mật khẩu cho kết nối không giấy mời."
-
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configsecurity.ui:50
 #, fuzzy
-#~| msgid "Ask before accepting an uninvited connection"
-#~ msgid "Ask before accepting connections"
-#~ msgstr "Hỏi trước khi chấp nhận kết nối không giấy mời"
+#| msgid "Uninvited connections password"
+msgid "Uninvited connections password:"
+msgstr "Mật khẩu kết nối không giấy mời"
 
-#~ msgid "Allow remote connections to control your desktop"
-#~ msgstr "Cho phép người dùng ở xa điều khiển bàn phím và chuột"
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
+#: ui/configtcp.ui:32
+msgid "Use default port"
+msgstr "Dùng cổng mặc định"
 
-#~ msgid "Allow uninvited connections"
-#~ msgstr "Cho phép kết nối không giấy mời"
-
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configtcp.ui:50
 #, fuzzy
-#~| msgid "Uninvited connections password"
-#~ msgid "Uninvited connections password:"
-#~ msgstr "Mật khẩu kết nối không giấy mời"
+#| msgid "Listening Port:"
+msgid "Listening port:"
+msgstr "Cổng lắng nghe:"
 
-#~ msgid "Use default port"
-#~ msgstr "Dùng cổng mặc định"
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/connectionwidget.ui:47
+msgid "Attention"
+msgstr "Chú ý"
 
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/connectionwidget.ui:72
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+"Có ai đó yêu cầu kết nối tới máy của bạn. Nếu bạn cho phép thì người đó sẽ "
+"nhìn thấy màn hình của bạn. "
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: ui/connectionwidget.ui:102
+msgid "Remote system:"
+msgstr "Hệ thống ở xa:"
+
+#. i18n: ectx: property (text), widget (QLabel, remoteHost)
+#: ui/connectionwidget.ui:118
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+"Nếu bạn bật tùy chọn này lên, người dùng có thể nhập các phím và sử dụng trỏ "
+"chuột của bạn từ xa. Tính năng cho phép người dùng nắm hoàn toàn quyền điều "
+"khiển máy tính của bạn, vì vậy cần cẩn thận. Khi tùy chọn này tắt người dùng "
+"ở xa chỉ có thể xem màn hình của bạn."
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr "Cho phép người dùng ở xa điều kh&iển bàn phím và chuột"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: ui/invitewidget.ui:40 ui/manageinvitations.ui:25
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "Chào mừng đến với Chương trình Chia sẻ màn hình KDE"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/invitewidget.ui:50
+msgid ""
+"KDE Desktop Sharing allows you to invite somebody at a remote location to "
+"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
+"invitations...</a>"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:105
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+"Tạo một giấy mời và hiển thị dữ liệu để kết nối. Sử dụng tùy chọn này nếu "
+"muốn mời riêng một ai đó, ví dụ, thông báo dữ liệu để kết nối qua điện thoại."
+
+#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:108
+msgid "Create &Personal Invitation..."
+msgstr "Tạo giấy &mời đơn..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:115
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
+"Nhấn nút này sẽ chạy ứng dụng email với các thông tin điền sẵn hướng dẫn "
+"người nhận cách kết nối tới máy của bạn. "
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:118
+msgid "Invite via &Email..."
+msgstr "Mời qua &Email..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
+#: ui/manageinvitations.ui:13
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "Quản lý giấy mời - Chia sẻ màn hình"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/manageinvitations.ui:38
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tính năng Chia sẻ Màn hình "
+"KDE thì cho bạn có khả năng mời người ở vị trí khác xem, có thể cũng điều "
+"khiển máy tính của bạn. <a href=\"whatsthis\">Thông tin thêm về lời mời...</"
+"a></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:95
 #, fuzzy
-#~| msgid "Listening Port:"
-#~ msgid "Listening port:"
-#~ msgstr "Cổng lắng nghe:"
+#| msgid "Created"
+msgid "Creation Time"
+msgstr "Đã tạo"
 
-#~ msgid "Attention"
-#~ msgstr "Chú ý"
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:100
+msgid "Expire Time"
+msgstr "Thời hạn"
 
-#~ msgid ""
-#~ "Somebody is requesting a connection to your computer. Granting this will "
-#~ "allow the remote user to watch your desktop. "
-#~ msgstr ""
-#~ "Có ai đó yêu cầu kết nối tới máy của bạn. Nếu bạn cho phép thì người đó "
-#~ "sẽ nhìn thấy màn hình của bạn. "
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:124
+msgid "Create a new personal invitation..."
+msgstr "Tạo một giấy mời cá nhân mới..."
 
-#~ msgid "Remote system:"
-#~ msgstr "Hệ thống ở xa:"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:127
+msgid "Click this button to create a new personal invitation."
+msgstr "Nhấn nút này để tạo một giấy mời cá nhân mới."
 
-#~ msgid "123.234.123.234"
-#~ msgstr "123.234.123.234"
+#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:130
+msgid "New &Personal Invitation..."
+msgstr "Giấy mời &cá nhân mới..."
 
-#~ msgid ""
-#~ "If you turn this option on, the remote user can enter keystrokes and use "
-#~ "your mouse pointer. This gives them full control over your computer, so "
-#~ "be careful. When the option is disabled the remote user can only watch "
-#~ "your screen."
-#~ msgstr ""
-#~ "Nếu bạn bật tùy chọn này lên, người dùng có thể nhập các phím và sử dụng "
-#~ "trỏ chuột của bạn từ xa. Tính năng cho phép người dùng nắm hoàn toàn "
-#~ "quyền điều khiển máy tính của bạn, vì vậy cần cẩn thận. Khi tùy chọn này "
-#~ "tắt người dùng ở xa chỉ có thể xem màn hình của bạn."
+#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:137
+msgid "Send a new invitation via email..."
+msgstr "Gửi một giấy mời mới qua email..."
 
-#~ msgid "Allow remote user to &control keyboard and mouse"
-#~ msgstr "Cho phép người dùng ở xa điều kh&iển bàn phím và chuột"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:140
+msgid "Click this button to send a new invitation via email."
+msgstr "Nhấn nút này để gửi một giấy mời mới qua email."
 
-#~ msgid "Welcome to KDE Desktop Sharing"
-#~ msgstr "Chào mừng đến với Chương trình Chia sẻ màn hình KDE"
+#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:143
+msgid "&New Email Invitation..."
+msgstr "&Giấy mời qua email mới..."
 
-#~ msgid ""
-#~ "Create a new invitation and display the connection data. Use this option "
-#~ "if you want to invite somebody personally, for example, to give the "
-#~ "connection data over the phone."
-#~ msgstr ""
-#~ "Tạo một giấy mời và hiển thị dữ liệu để kết nối. Sử dụng tùy chọn này nếu "
-#~ "muốn mời riêng một ai đó, ví dụ, thông báo dữ liệu để kết nối qua điện "
-#~ "thoại."
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:153
+msgid "Delete all invitations"
+msgstr "Xóa hết giấy mời"
 
-#~ msgid "Create &Personal Invitation..."
-#~ msgstr "Tạo giấy &mời đơn..."
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:156
+msgid "Deletes all open invitations."
+msgstr "Xóa hết giấy mời mở"
 
-#~ msgid ""
-#~ "This button will start your email application with a pre-configured text "
-#~ "that explains to the recipient how to connect to your computer. "
-#~ msgstr ""
-#~ "Nhấn nút này sẽ chạy ứng dụng email với các thông tin điền sẵn hướng dẫn "
-#~ "người nhận cách kết nối tới máy của bạn. "
+#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:159
+msgid "Delete All"
+msgstr "Xoá tất cả"
 
-#~ msgid "Invite via &Email..."
-#~ msgstr "Mời qua &Email..."
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:169
+msgid "Delete the selected invitation"
+msgstr "Xóa các giấy mời đã chọn"
 
-#~ msgid "Manage Invitations - Desktop Sharing"
-#~ msgstr "Quản lý giấy mời - Chia sẻ màn hình"
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:172
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+"Xóa giấy mời đã chọn. Người được mời sẽ không thể dùng giấy mời này để kết "
+"nối được nữa."
 
-#~ msgid ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing "
-#~ "allows you to invite somebody at a remote location to watch and possibly "
-#~ "control your desktop. <a href=\"whatsthis\">More about invitations...</"
-#~ "a></p></body></html>"
-#~ msgstr ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Tính năng Chia sẻ Màn "
-#~ "hình KDE thì cho bạn có khả năng mời người ở vị trí khác xem, có thể cũng "
-#~ "điều khiển máy tính của bạn. <a href=\"whatsthis\">Thông tin thêm về lời "
-#~ "mời...</a></p></body></html>"
+#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:175
+msgid "&Delete"
+msgstr "&Xoá"
 
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/personalinvitewidget.ui:47
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Lời mời cá nhân</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Cung cấp thông tin bên "
+"dưới cho người bạn muốn mời (<a href=\"htc\">kết nối như thế nào</a>). Ghi "
+"chú rằng mọi người biết mật khẩu này cũng có khả năng kết nối: hãy cẩn thận."
+"</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
+#: ui/personalinvitewidget.ui:81
+msgid "<b>Host:</b>"
+msgstr "<b>Máy chủ:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
+#: ui/personalinvitewidget.ui:116
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Trợ giúp</"
+"a></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
+#: ui/personalinvitewidget.ui:129
+msgid "<b>Password:</b>"
+msgstr "<b>Mật khẩu :</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
+#: ui/personalinvitewidget.ui:161
+msgid "<b>Expiration time:</b>"
+msgstr "<b>Hạn sử dụng:</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/tubesconnectionwidget.ui:48
 #, fuzzy
-#~| msgid "Created"
-#~ msgid "Creation Time"
-#~ msgstr "Đã tạo"
-
-#~ msgid "Expire Time"
-#~ msgstr "Thời hạn"
-
-#~ msgid "Create a new personal invitation..."
-#~ msgstr "Tạo một giấy mời cá nhân mới..."
-
-#~ msgid "Click this button to create a new personal invitation."
-#~ msgstr "Nhấn nút này để tạo một giấy mời cá nhân mới."
-
-#~ msgid "New &Personal Invitation..."
-#~ msgstr "Giấy mời &cá nhân mới..."
-
-#~ msgid "Send a new invitation via email..."
-#~ msgstr "Gửi một giấy mời mới qua email..."
-
-#~ msgid "Click this button to send a new invitation via email."
-#~ msgstr "Nhấn nút này để gửi một giấy mời mới qua email."
-
-#~ msgid "&New Email Invitation..."
-#~ msgstr "&Giấy mời qua email mới..."
-
-#~ msgid "Delete all invitations"
-#~ msgstr "Xóa hết giấy mời"
-
-#~ msgid "Deletes all open invitations."
-#~ msgstr "Xóa hết giấy mời mở"
-
-#~ msgid "Delete All"
-#~ msgstr "Xoá tất cả"
-
-#~ msgid "Delete the selected invitation"
-#~ msgstr "Xóa các giấy mời đã chọn"
-
-#~ msgid ""
-#~ "Delete the selected invitation. The invited person will not be able to "
-#~ "connect using this invitation anymore."
-#~ msgstr ""
-#~ "Xóa giấy mời đã chọn. Người được mời sẽ không thể dùng giấy mời này để "
-#~ "kết nối được nữa."
-
-#~ msgid "&Delete"
-#~ msgstr "&Xoá"
-
-#~ msgid ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600;\">Personal Invitation</span></p>\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information "
-#~ "below to the person that you want to invite (<a href=\"htc\">how to "
-#~ "connect</a>). Note that everybody who gets the password can connect, so "
-#~ "be careful.</p></body></html>"
-#~ msgstr ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-#~ "weight:600;\">Lời mời cá nhân</span></p>\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\">Cung cấp thông tin bên "
-#~ "dưới cho người bạn muốn mời (<a href=\"htc\">kết nối như thế nào</a>). "
-#~ "Ghi chú rằng mọi người biết mật khẩu này cũng có khả năng kết nối: hãy "
-#~ "cẩn thận.</p></body></html>"
-
-#~ msgid "<b>Host:</b>"
-#~ msgstr "<b>Máy chủ:</b>"
-
-#~ msgid ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</"
-#~ "a></p></body></html>"
-#~ msgstr ""
-#~ "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
-#~ "css\">\n"
-#~ "p, li { white-space: pre-wrap; }\n"
-#~ "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
-#~ "font-weight:400; font-style:normal; text-decoration:none;\">\n"
-#~ "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-#~ "right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Trợ "
-#~ "giúp</a></p></body></html>"
-
-#~ msgid "<b>Password:</b>"
-#~ msgstr "<b>Mật khẩu :</b>"
-
-#~ msgid "<b>Expiration time:</b>"
-#~ msgstr "<b>Hạn sử dụng:</b>"
-
-#, fuzzy
-#~| msgid "Invitation"
-#~ msgid "Confirmation"
-#~ msgstr "Giấy mời"
+#| msgid "Invitation"
+msgid "Confirmation"
+msgstr "Giấy mời"
 
 #~ msgid "Ian Reinhart Geiser"
 #~ msgstr "Ian Reinhart Geiser"

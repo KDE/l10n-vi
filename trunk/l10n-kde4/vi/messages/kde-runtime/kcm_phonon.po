@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmphonon\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 03:48+0100\n"
+"POT-Creation-Date: 2013-01-14 03:23+0100\n"
 "PO-Revision-Date: 2012-01-10 10:57+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -45,10 +45,72 @@ msgstr "Thu (%1)"
 msgid "Independent Devices"
 msgstr "Thiết bị độc lập"
 
+#. i18n: ectx: property (title), widget (QGroupBox, hardwareGroupBox)
+#: audiosetup.ui:18
+msgid "Hardware"
+msgstr "Phần cứng"
+
+#. i18n: ectx: property (text), widget (QLabel, profileLabel)
+#: audiosetup.ui:44
+msgid "Profile"
+msgstr "Hồ sơ"
+
+#. i18n: ectx: property (text), widget (QLabel, cardLabel)
+#: audiosetup.ui:54
+msgid "Sound Card"
+msgstr "Card âm thanh"
+
+#. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
+#: audiosetup.ui:67
+msgid "Device Configuration"
+msgstr "Cấu hình thiết bị"
+
+#. i18n: ectx: property (text), widget (QLabel, portLabel)
+#: audiosetup.ui:83
+msgid "Connector"
+msgstr "Trình kết nối"
+
+#. i18n: ectx: property (text), widget (QLabel, deviceLabel)
+#: audiosetup.ui:103
+msgid "Sound Device"
+msgstr "Thiết bị âm thanh"
+
+#. i18n: ectx: property (title), widget (QGroupBox, outputGroupBox)
+#: audiosetup.ui:144
+msgid "Speaker Placement and Testing"
+msgstr "Vị trí loa và kiểm tra"
+
+#. i18n: ectx: property (title), widget (QGroupBox, inputGroupBox)
+#: audiosetup.ui:181
+msgid "Input Levels"
+msgstr "Cấp vào"
+
 #: backendselection.cpp:45
 msgctxt "@info User changed Phonon backend"
 msgid "To apply the backend change you will have to log out and back in again."
 msgstr "Để áp dụng thay đổi hậu trường bạn sẽ phải đăng xuất và đăng nhập lại."
+
+#. i18n: ectx: property (toolTip), widget (QListWidget, m_select)
+#. i18n: ectx: property (whatsThis), widget (QListWidget, m_select)
+#: backendselection.ui:38 backendselection.ui:41
+msgid ""
+"A list of Phonon Backends found on your system.  The order here determines "
+"the order Phonon will use them in."
+msgstr ""
+"Danh sách các hậu trường Phonon nằm trên hệ thống này. Thứ tự tại đây quyết "
+"định thứ tự Phonon sẽ sử dụng."
+
+#. i18n: ectx: property (text), widget (QToolButton, m_up)
+#. i18n: ectx: property (text), widget (QToolButton, preferButton)
+#: backendselection.ui:57 devicepreference.ui:190
+msgid "Prefer"
+msgstr "Ưu tiên"
+
+#. i18n: ectx: property (text), widget (QToolButton, m_down)
+#. i18n: ectx: property (text), widget (QToolButton, deferButton)
+#: backendselection.ui:70 devicepreference.ui:206
+msgid "Defer"
+msgstr "Giảm ưu tiên"
 
 #: devicepreference.cpp:109
 msgid "Audio Playback"
@@ -135,6 +197,66 @@ msgstr "Hậu trường của bạn có thể không hỗ trợ quay phim"
 msgid "Testing %1"
 msgstr "Kiểm tra %1"
 
+#. i18n: ectx: property (toolTip), widget (QTreeView, categoryTree)
+#. i18n: ectx: property (whatsThis), widget (QTreeView, categoryTree)
+#: devicepreference.ui:29 devicepreference.ui:32
+msgid ""
+"Various categories of media use cases.  For each category, you may choose "
+"what device you prefer to be used by the Phonon applications."
+msgstr ""
+"Các thể lại tương ứng các cách sử dụng phương tiện khác nhau. Với mỗi thể "
+"loại, bạn có thể chọn thiết bị nào bạn ưu tiên sử dụng bởi ứng dụng Phonon."
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAdvancedDevicesCheckBox)
+#: devicepreference.ui:47
+msgid "Show advanced devices"
+msgstr "Hiện thiết bị nâng cao"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, applyPreferencesButton)
+#. i18n: ectx: property (whatsThis), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:77 devicepreference.ui:80
+msgid "Use the currently shown device list for more categories."
+msgstr "Sử dụng danh sách thiết bị hiện có cho các thể loại khác."
+
+#. i18n: ectx: property (text), widget (QPushButton, applyPreferencesButton)
+#: devicepreference.ui:83
+msgid "Apply Device List To..."
+msgstr "Áp dụng danh sách thiết bị cho..."
+
+#. i18n: ectx: property (toolTip), widget (QTreeView, deviceList)
+#: devicepreference.ui:113
+msgid ""
+"Devices found on your system, suitable for the selected category.  Choose "
+"the device that you wish to be used by the applications."
+msgstr ""
+"Các thiết bị tìm thấy trên hệ thống của bạn và phù hợp cho thể loại đã chọn. "
+"Hãy chọn thiết bị mà bạn muốn dùng bởi các ứng dụng."
+
+#. i18n: ectx: property (whatsThis), widget (QTreeView, deviceList)
+#: devicepreference.ui:116
+msgid ""
+"The order determines the preference of the devices. If for some reason the "
+"first device cannot be used Phonon will try to use the second, and so on."
+msgstr ""
+"Thứ tự sẽ quyết định độ ưu tiên của thiết bị. Nếu do vài lý do nào đó mà "
+"thiết bị đầu tiên không thể dùng được, Phonon sẽ cố gắng sử dụng thiết bị "
+"thứ hai và tiếp tục như vậy."
+
+#. i18n: ectx: property (text), widget (QToolButton, testPlaybackButton)
+#: devicepreference.ui:171
+msgid "Test"
+msgstr "Kiểm tra"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, preferButton)
+#: devicepreference.ui:187
+msgid "prefer the selected device"
+msgstr "ưu tiên thiết bị đã chọn"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, deferButton)
+#: devicepreference.ui:203
+msgid "no preference for the selected device"
+msgstr "không có độ ưu tiên cho thiết bị đã chọn"
+
 #: main.cpp:46
 msgid "Phonon Configuration Module"
 msgstr "Mô-đun cấu hình Phonon"
@@ -214,85 +336,6 @@ msgstr "Loa trầm"
 #: testspeakerwidget.cpp:192
 msgid "Unknown Channel"
 msgstr "Kênh không rõ"
-
-#~ msgid "Hardware"
-#~ msgstr "Phần cứng"
-
-#~ msgid "Profile"
-#~ msgstr "Hồ sơ"
-
-#~ msgid "Sound Card"
-#~ msgstr "Card âm thanh"
-
-#~ msgid "Device Configuration"
-#~ msgstr "Cấu hình thiết bị"
-
-#~ msgid "Connector"
-#~ msgstr "Trình kết nối"
-
-#~ msgid "Sound Device"
-#~ msgstr "Thiết bị âm thanh"
-
-#~ msgid "Speaker Placement and Testing"
-#~ msgstr "Vị trí loa và kiểm tra"
-
-#~ msgid "Input Levels"
-#~ msgstr "Cấp vào"
-
-#~ msgid ""
-#~ "A list of Phonon Backends found on your system.  The order here "
-#~ "determines the order Phonon will use them in."
-#~ msgstr ""
-#~ "Danh sách các hậu trường Phonon nằm trên hệ thống này. Thứ tự tại đây "
-#~ "quyết định thứ tự Phonon sẽ sử dụng."
-
-#~ msgid "Prefer"
-#~ msgstr "Ưu tiên"
-
-#~ msgid "Defer"
-#~ msgstr "Giảm ưu tiên"
-
-#~ msgid ""
-#~ "Various categories of media use cases.  For each category, you may choose "
-#~ "what device you prefer to be used by the Phonon applications."
-#~ msgstr ""
-#~ "Các thể lại tương ứng các cách sử dụng phương tiện khác nhau. Với mỗi thể "
-#~ "loại, bạn có thể chọn thiết bị nào bạn ưu tiên sử dụng bởi ứng dụng "
-#~ "Phonon."
-
-#~ msgid "Show advanced devices"
-#~ msgstr "Hiện thiết bị nâng cao"
-
-#~ msgid "Use the currently shown device list for more categories."
-#~ msgstr "Sử dụng danh sách thiết bị hiện có cho các thể loại khác."
-
-#~ msgid "Apply Device List To..."
-#~ msgstr "Áp dụng danh sách thiết bị cho..."
-
-#~ msgid ""
-#~ "Devices found on your system, suitable for the selected category.  Choose "
-#~ "the device that you wish to be used by the applications."
-#~ msgstr ""
-#~ "Các thiết bị tìm thấy trên hệ thống của bạn và phù hợp cho thể loại đã "
-#~ "chọn. Hãy chọn thiết bị mà bạn muốn dùng bởi các ứng dụng."
-
-#~ msgid ""
-#~ "The order determines the preference of the devices. If for some reason "
-#~ "the first device cannot be used Phonon will try to use the second, and so "
-#~ "on."
-#~ msgstr ""
-#~ "Thứ tự sẽ quyết định độ ưu tiên của thiết bị. Nếu do vài lý do nào đó mà "
-#~ "thiết bị đầu tiên không thể dùng được, Phonon sẽ cố gắng sử dụng thiết bị "
-#~ "thứ hai và tiếp tục như vậy."
-
-#~ msgid "Test"
-#~ msgstr "Kiểm tra"
-
-#~ msgid "prefer the selected device"
-#~ msgstr "ưu tiên thiết bị đã chọn"
-
-#~ msgid "no preference for the selected device"
-#~ msgstr "không có độ ưu tiên cho thiết bị đã chọn"
 
 #~ msgid "Audio Output"
 #~ msgstr "Xuất âm thanh"

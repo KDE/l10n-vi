@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-08 02:42+0100\n"
+"POT-Creation-Date: 2013-02-14 02:26+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -70,6 +70,9 @@ msgid "Continue &Later"
 msgstr ""
 
 #: AnnotationDialog/Dialog.cpp:151 AnnotationDialog/Dialog.cpp:580
+#, fuzzy
+#| msgid "&Search"
+msgctxt "@action:button"
 msgid "&Search"
 msgstr "&Tìm kiếm"
 
@@ -142,7 +145,10 @@ msgstr "Đang tìm kiếm ảnh (động) mới"
 msgid "KPhotoAlbum Annotations (%1/%2)"
 msgstr "Chú giải KPhotoAlbum (%1/%2)"
 
-#: AnnotationDialog/Dialog.cpp:584 Browser/OverviewPage.cpp:143
+#: AnnotationDialog/Dialog.cpp:584
+#, fuzzy
+#| msgid "Search"
+msgctxt "@title:window title of the 'find images' window"
 msgid "Search"
 msgstr "Tìm kiếm"
 
@@ -489,18 +495,22 @@ msgid "Not Started"
 msgstr "Chưa xoay"
 
 #: BackgroundTaskManager/JobModel.cpp:97
+msgctxt "@title:column Background job id"
 msgid "ID"
 msgstr ""
 
 #: BackgroundTaskManager/JobModel.cpp:98
+msgctxt "@title:column Background job title"
 msgid "Title"
 msgstr ""
 
 #: BackgroundTaskManager/JobModel.cpp:99
+msgctxt "@title:column Additional information on background job"
 msgid "Details"
 msgstr ""
 
 #: BackgroundTaskManager/JobModel.cpp:100
+msgctxt "@title:column Elapsed time"
 msgid "Elapsed"
 msgstr ""
 
@@ -537,20 +547,31 @@ msgid ""
 "which is currently shown in the thumbnail viewer)</li></p>"
 msgstr ""
 
-#: Browser/AbstractCategoryModel.cpp:46 MainWindow/StatisticsDialog.cpp:129
-#: Plugins/CategoryImageCollection.cpp:34
+#: Browser/AbstractCategoryModel.cpp:46
+#, fuzzy
+#| msgid "None"
+msgctxt "As in No persons, no locations etc."
 msgid "None"
 msgstr "Không có"
 
 #: Browser/AbstractCategoryModel.cpp:48
+#, fuzzy
+#| msgid "No other"
+msgctxt "As in no other persons, or no other locations. "
 msgid "No other"
 msgstr "Không có gì khác"
 
 #: Browser/AbstractCategoryModel.cpp:51
+#, fuzzy
+#| msgid "Video"
+msgctxt "Denotes the media type (video,image)"
 msgid "Video"
 msgstr "Ảnh động"
 
 #: Browser/AbstractCategoryModel.cpp:53
+#, fuzzy
+#| msgid "Image"
+msgctxt "Denotes the media type (video,image)"
 msgid "Image"
 msgstr "Ảnh"
 
@@ -558,12 +579,16 @@ msgstr "Ảnh"
 #, fuzzy, kde-format
 #| msgid "1 image"
 #| msgid_plural "%1 images"
+msgctxt "@item:intable number of images with a specific tag."
 msgid "1 image"
 msgid_plural "%1 images"
 msgstr[0] "%1 ảnh"
 
 #: Browser/AbstractCategoryModel.cpp:101
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "1 video"
+#| msgid_plural "%1 videos"
+msgctxt "@item:intable number of videos with a specific tag."
 msgid "1 video"
 msgid_plural "%1 videos"
 msgstr[0] "%1 ảnh động"
@@ -577,13 +602,21 @@ msgstr "Ảnh"
 msgid "Videos"
 msgstr "Ảnh động"
 
-#: Browser/Breadcrumb.cpp:36 MainWindow/StatisticsDialog.cpp:167
+#: Browser/Breadcrumb.cpp:36
+msgctxt "As in 'all pictures'."
 msgid "All"
 msgstr ""
 
 #: Browser/OverviewPage.cpp:132
 msgid "Exif Info"
 msgstr "Thông tin EXIF"
+
+#: Browser/OverviewPage.cpp:143
+#, fuzzy
+#| msgid "Search"
+msgctxt "@action Search button in the browser view."
+msgid "Search"
+msgstr "Tìm kiếm"
 
 #: Browser/OverviewPage.cpp:152 Settings/UntaggedGroupBox.cpp:29
 #, fuzzy
@@ -610,6 +643,7 @@ msgstr "Tìm EXIF"
 #: Browser/OverviewPage.cpp:259
 #, fuzzy
 #| msgid "Search"
+msgctxt "Breadcrumb denoting that we 'browsed' to a search result."
 msgid "search"
 msgstr "Tìm kiếm"
 
@@ -676,34 +710,42 @@ msgstr "Hiện phạm vị"
 msgid "Show Resolution Indicator"
 msgstr "Hiện cái chỉ độ phân giải"
 
-#: DateBar/DateBarWidget.cpp:635
+#: DateBar/DateBarWidget.cpp:636
 #, kde-format
+msgctxt "@info:status images that fall in the given date range"
 msgid "1 exact"
 msgid_plural "%1 exact"
 msgstr[0] ""
 
-#: DateBar/DateBarWidget.cpp:636
+#: DateBar/DateBarWidget.cpp:638
 #, kde-format
+msgctxt ""
+"@info:status additional images captured in a date range that overlaps with "
+"the given date range,"
 msgid " + 1 range"
 msgid_plural " + %1 ranges"
 msgstr[0] ""
 
-#: DateBar/DateBarWidget.cpp:637
+#: DateBar/DateBarWidget.cpp:639
 #, kde-format
+msgctxt "@info:status total image count"
 msgid " = 1 total"
 msgid_plural " = %1 total"
 msgstr[0] ""
 
-#: DateBar/DateBarWidget.cpp:639
+#: DateBar/DateBarWidget.cpp:641
 #, fuzzy, kde-format
 #| msgid "%1 images/videos"
+msgctxt "@info:status image count"
 msgid "%1 image/video"
 msgid_plural "%1 images/videos"
 msgstr[0] "%1 ảnh (động)"
 
-#: DateBar/DateBarWidget.cpp:641
+#: DateBar/DateBarWidget.cpp:643
 #, fuzzy, kde-format
 #| msgid "%1 (by %2)"
+msgctxt ""
+"@info:status Time range vs. image count (e.g. 'Jun 2012 | 4 images/videos')."
 msgid "%1 | %2"
 msgstr "%1 (của %2)"
 
@@ -925,7 +967,9 @@ msgid "IPTC character set:"
 msgstr ""
 
 #: Exif/InfoDialog.cpp:99
-msgid "<No Search>"
+#, fuzzy
+#| msgid "<No Search>"
+msgid "&lt;No Search&gt;"
 msgstr "<Không tìm>"
 
 #: Exif/ReReadDialog.cpp:35
@@ -2517,6 +2561,14 @@ msgstr "Loại:"
 msgid "Tag:"
 msgstr ""
 
+#: MainWindow/StatisticsDialog.cpp:129 Plugins/CategoryImageCollection.cpp:34
+msgid "None"
+msgstr "Không có"
+
+#: MainWindow/StatisticsDialog.cpp:167
+msgid "All"
+msgstr ""
+
 #: MainWindow/StatisticsDialog.cpp:212
 #, fuzzy
 #| msgid "Total: %1"
@@ -3870,6 +3922,9 @@ msgstr "Cỡ :"
 #, fuzzy
 #| msgid "1 video"
 #| msgid_plural "%1 videos"
+msgctxt ""
+"No video length could be determined, so we just display 'video' instead of "
+"the video length."
 msgid "video"
 msgstr "%1 ảnh động"
 

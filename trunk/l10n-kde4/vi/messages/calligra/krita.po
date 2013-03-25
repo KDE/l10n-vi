@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-24 02:27+0100\n"
+"POT-Creation-Date: 2013-03-25 02:20+0100\n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
 "Language: \n"
@@ -1175,7 +1175,7 @@ msgstr "Chuyển đổi loại ảnh"
 msgid "Convert Projection Color Space"
 msgstr ""
 
-#: image/kis_image.cc:920 ui/kis_layer_manager.cc:772
+#: image/kis_image.cc:920 ui/kis_layer_manager.cc:770
 #, fuzzy
 msgid "Flatten Image"
 msgstr "Làm phẳng ảnh"
@@ -1993,7 +1993,7 @@ msgstr "Tính chất cho lớp mới"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/extensions/compose/wdg_compose.ui:22
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:84
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:82
 msgid "Layer name:"
 msgstr "Tên lớp:"
 
@@ -3244,7 +3244,7 @@ msgstr "Bán kính làm mờ:"
 #. i18n: ectx: property (text), widget (QLabel, lblCanvasBorderColor)
 #. i18n: ectx: property (text), widget (QLabel, lblColor)
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:38
-#: plugins/filters/colors/wdgcolortoalphabase.ui:17
+#: plugins/filters/colors/wdgcolortoalphabase.ui:20
 #: ui/forms/wdgdisplaysettings.ui:38 ui/forms/wdgdisplaysettings.ui:131
 msgid "Color:"
 msgstr "Màu:"
@@ -4439,7 +4439,7 @@ msgstr "Khóa:"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: ectx: property (text), widget (QTreeWidget, listViewChannels)
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:120
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:119
 #: plugins/paintops/libpaintop/forms/wdgcoloroptions.ui:185
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:35
@@ -4691,7 +4691,7 @@ msgid "Separate Image"
 msgstr "Ảnh Riêng"
 
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:236
-#: ui/kis_layer_manager.cc:869
+#: ui/kis_layer_manager.cc:867
 msgid "Export Layer"
 msgstr "Xuất Lớp"
 
@@ -5035,7 +5035,7 @@ msgstr "Kênh"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/colors/wdgcolortoalphabase.ui:30
+#: plugins/filters/colors/wdgcolortoalphabase.ui:61
 #: plugins/filters/unsharp/wdgunsharp.ui:68
 msgid "Threshold:"
 msgstr "Ngưỡng:"
@@ -5070,7 +5070,7 @@ msgstr "Độ sáng/độ tương phản"
 msgid "&HSV Adjustment..."
 msgstr "Phương thức màu"
 
-#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:124
+#: plugins/filters/colorsfilters/kis_hsv_adjustment_filter.cpp:123
 #, fuzzy
 msgid "Lightness"
 msgstr "Chỉ làm sáng"
@@ -5260,7 +5260,7 @@ msgstr "Xanh nước biển"
 msgid "&Emboss with Variable Depth..."
 msgstr ""
 
-#: plugins/filters/embossfilter/kis_emboss_filter.cpp:163
+#: plugins/filters/embossfilter/kis_emboss_filter.cpp:162
 msgid "Depth"
 msgstr "Độ sâu"
 
@@ -5302,7 +5302,7 @@ msgstr "Chọn"
 
 #. i18n: ectx: property (text), widget (QCheckBox, thresholdCBox)
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:54
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.cpp:52
 #: plugins/paintops/hairy/wdgbristleoptions.ui:116
 #: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
@@ -5311,7 +5311,7 @@ msgstr "Chọn"
 msgid "Threshold"
 msgstr "Ngưỡng vẽ :"
 
-#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:56
+#: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:55
 #, fuzzy
 msgid "Window size"
 msgstr "ảnh "
@@ -6076,11 +6076,19 @@ msgctxt "vertical resolution"
 msgid "Vertical:"
 msgstr "Dọc"
 
-#: plugins/formats/png/kis_png_export.cc:89
+#: plugins/formats/png/kis_png_export.cc:91
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "PNG Export Options"
 msgstr "Tùy chọn Hình học"
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Cannot export images in this colorspace or channel depth to PNG"
+msgstr ""
+
+#: plugins/formats/png/kis_png_export.cc:109
+msgid "Krita PNG Export"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, KisWdgOptionsPNG)
 #: plugins/formats/png/kis_wdg_options_png.ui:14
@@ -9039,27 +9047,27 @@ msgstr "Các màu đỏ tươi"
 msgid "Paint with brushes"
 msgstr "Vẽ bằng các đường cong"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:180
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:251
 #, fuzzy
 msgid "Cannot pick a color as no layer is active."
 msgstr "Không thể nhặt màu vì không có lớp nào đang dùng."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:184
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:255
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr "Không thể nhặt màu vì lớp đang dùng không được nhìn thấy."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr "Không thể ghi tập tin bảng màu %1. Có thể nó chỉ được đọc."
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:230
+#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:301
 #: ui/kis_custom_palette.cc:113 ui/kis_custom_palette.cc:152
 msgid "Palette"
 msgstr "Bảng màu"
 
-#: plugins/tools/defaulttools/kis_tool_colorpicker.h:96
+#: plugins/tools/defaulttools/kis_tool_colorpicker.h:115
 #, fuzzy
 #| msgid "Select a color from the image or current layer"
 msgid "Select a color from the image or current layer"
@@ -10007,7 +10015,7 @@ msgstr "Công cụ &xoá"
 msgid "Clear Perspective Grid"
 msgstr "Công cụ &xoá"
 
-#: ui/dialogs/kis_dlg_adj_layer_props.cc:104
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:103
 msgid "No configuration options are available for this filter"
 msgstr "Không có tùy chọn nào cho bộ lọc này."
 
@@ -11933,7 +11941,7 @@ msgstr "&Làm phẳng ảnh"
 msgid "&Flatten Layer"
 msgstr "Lớp &lặp lại"
 
-#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:841
+#: ui/kis_layer_manager.cc:295 ui/kis_layer_manager.cc:839
 #, fuzzy
 #| msgid "Rotate Layer"
 msgid "Rasterize Layer"
@@ -11959,54 +11967,54 @@ msgstr "Sửa cỡ ảnh thành cỡ lớp hiện tại"
 msgid "Add new paint layer"
 msgstr "Layer"
 
-#: ui/kis_layer_manager.cc:372
+#: ui/kis_layer_manager.cc:370
 #, fuzzy
 #| msgid "New Layer Properties"
 msgid "Filter Layer Properties"
 msgstr "Tính chất cho lớp mới"
 
-#: ui/kis_layer_manager.cc:417
+#: ui/kis_layer_manager.cc:415
 #, fuzzy
 #| msgid "New Layer Properties"
 msgid "Generator Layer Properties"
 msgstr "Tính chất cho lớp mới"
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 msgid "Could not add layer to image."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: ui/kis_layer_manager.cc:475 ui/kis_layer_manager.cc:489
-#: ui/kis_layer_manager.cc:530 ui/kis_layer_manager.cc:561
-#: ui/kis_layer_manager.cc:662
+#: ui/kis_layer_manager.cc:473 ui/kis_layer_manager.cc:487
+#: ui/kis_layer_manager.cc:528 ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:660
 #, fuzzy
 msgid "Layer Error"
 msgstr "Lỗi Lớp"
 
-#: ui/kis_layer_manager.cc:585
+#: ui/kis_layer_manager.cc:583
 #, fuzzy
 msgid "New Filter Layer"
 msgstr "Tạo layer mới"
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:727
 msgid "Scale Layer"
 msgstr "Phóng Lớp"
 
-#: ui/kis_layer_manager.cc:771
+#: ui/kis_layer_manager.cc:769
 #, fuzzy
 msgid "The image contains hidden layers that will be lost."
 msgstr "Ảnh chứa lớp ẩn, chúng sẽ bị mất."
 
-#: ui/kis_layer_manager.cc:773
+#: ui/kis_layer_manager.cc:771
 msgid "&Flatten Image"
 msgstr "&Làm phẳng ảnh"
 
-#: ui/kis_layer_manager.cc:929
+#: ui/kis_layer_manager.cc:927
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:932
+#: ui/kis_layer_manager.cc:930
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -12019,41 +12027,41 @@ msgstr ""
 msgid "Create Layer from Mask"
 msgstr "Công cụ &trình lọc"
 
-#: ui/kis_mask_manager.cc:139
+#: ui/kis_mask_manager.cc:138
 #, kde-format
 msgid "Selection <numid>%1</numid>"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:155
+#: ui/kis_mask_manager.cc:152
 msgid "Transparency Mask"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:168
+#: ui/kis_mask_manager.cc:163
 #, fuzzy
 msgid "New filter mask"
 msgstr "Tạo layer mới"
 
-#: ui/kis_mask_manager.cc:180
+#: ui/kis_mask_manager.cc:175
 msgid "New Filter Mask"
 msgstr ""
 
-#: ui/kis_mask_manager.cc:202
+#: ui/kis_mask_manager.cc:196
 #, fuzzy
 msgid "Mask to Selection"
 msgstr "Bỏ chọn"
 
-#: ui/kis_mask_manager.cc:245
+#: ui/kis_mask_manager.cc:237
 #, fuzzy
 msgid "Layer from Mask"
 msgstr "Gỡ bỏ Layer"
 
-#: ui/kis_mask_manager.cc:260
+#: ui/kis_mask_manager.cc:250
 #, fuzzy
 #| msgid "Duplicate of '%1'"
 msgid "Duplication of "
 msgstr "Bản sao của '%1'"
 
-#: ui/kis_mask_manager.cc:294
+#: ui/kis_mask_manager.cc:280
 msgid "Effect Mask Properties"
 msgstr ""
 
@@ -12659,7 +12667,7 @@ msgstr "Gradients"
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
+#: ui/widgets/kis_wdg_generator.cpp:138 ui/widgets/kis_wdg_generator.cpp:151
 #, fuzzy
 #| msgid "No configuration option."
 msgid "No configuration options."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-03 02:51+0200\n"
+"POT-Creation-Date: 2013-04-04 03:00+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1651,7 +1651,7 @@ msgctxt "@info:tooltip"
 msgid "Select Item"
 msgstr "Chọ&n mục mới"
 
-#: digikam/items/imageviewutilities.cpp:169
+#: digikam/items/imageviewutilities.cpp:175
 #, fuzzy
 #| msgid ""
 #| "<p>Please select the destination album from the digiKam library to import "
@@ -1663,7 +1663,7 @@ msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: digikam/items/imageviewutilities.cpp:290
+#: digikam/items/imageviewutilities.cpp:296
 #: utilities/imageeditor/main/imagewindow.cpp:1460
 #: utilities/imageeditor/main/imagewindow.cpp:1484
 #: utilities/imageeditor/main/imagewindow.cpp:1515
@@ -3336,7 +3336,7 @@ msgstr "Ngày:"
 #: imageplugins/transform/ratiocroptool.cpp:373
 #: libs/widgets/q3support/thumbbar.cpp:1378
 #: utilities/importui/items/importtooltipfiller.cpp:82
-#: utilities/queuemanager/basetools/transform/crop.cpp:109
+#: utilities/queuemanager/basetools/transform/crop.cpp:118
 msgid "Size:"
 msgstr "Cỡ :"
 
@@ -3888,19 +3888,19 @@ msgstr "Tương đối"
 msgid "An error has occurred with the media player...."
 msgstr ""
 
-#: digikam/views/tableview.cpp:477
+#: digikam/views/tableview.cpp:489
 #, fuzzy
 #| msgid "&Sort Images"
 msgid "Hide grouped items"
 msgstr "&Sắp xếp ảnh"
 
-#: digikam/views/tableview.cpp:487
+#: digikam/views/tableview.cpp:499
 #, fuzzy
 #| msgid "Assign Tag"
 msgid "Ignore grouping"
 msgstr "Gán thẻ"
 
-#: digikam/views/tableview.cpp:497
+#: digikam/views/tableview.cpp:509
 #, fuzzy
 #| msgid "Show on right panel"
 msgid "Show grouping in tree"
@@ -7096,7 +7096,7 @@ msgstr "<p>Ở đây hãy đặt giá trị mẫu số hình thể tự chọn �
 
 #: imageplugins/transform/ratiocroptool.cpp:356
 #: libs/template/templateviewer.cpp:163
-#: utilities/queuemanager/basetools/transform/crop.cpp:92
+#: utilities/queuemanager/basetools/transform/crop.cpp:101
 #, fuzzy
 #| msgid "Erosion:"
 msgid "Position:"
@@ -7104,15 +7104,15 @@ msgstr "Độ xói mòn:"
 
 #: imageplugins/transform/ratiocroptool.cpp:360
 #: imageplugins/transform/ratiocroptool.cpp:366
-#: utilities/queuemanager/basetools/transform/crop.cpp:96
-#: utilities/queuemanager/basetools/transform/crop.cpp:102
+#: utilities/queuemanager/basetools/transform/crop.cpp:105
+#: utilities/queuemanager/basetools/transform/crop.cpp:111
 #, fuzzy
 #| msgid "<p>Set here the top left selection corner position for cropping."
 msgid "Set here the top left selection corner position for cropping."
 msgstr "<p>Ở đây hãy đặt vị trí của góc chọn bên trái trên để xén."
 
 #: imageplugins/transform/ratiocroptool.cpp:377
-#: utilities/queuemanager/basetools/transform/crop.cpp:113
+#: utilities/queuemanager/basetools/transform/crop.cpp:122
 #, fuzzy
 #| msgid "<p>Set here the width selection for cropping."
 msgid "Set here the width selection for cropping."
@@ -7125,7 +7125,7 @@ msgid "Set width position to center."
 msgstr "<p>Đặt vị trí độ rộng thành trung tâm."
 
 #: imageplugins/transform/ratiocroptool.cpp:389
-#: utilities/queuemanager/basetools/transform/crop.cpp:119
+#: utilities/queuemanager/basetools/transform/crop.cpp:128
 #, fuzzy
 #| msgid "<p>Set here the height selection for cropping."
 msgid "Set here the height selection for cropping."
@@ -7822,7 +7822,7 @@ msgctxt "@item filename"
 msgid "%1<nl/>(Source Image)"
 msgstr ""
 
-#: libs/database/imagescanner.cpp:1652
+#: libs/database/imagescanner.cpp:1673
 #, fuzzy, kde-format
 #| msgid "Print image file name"
 msgctxt "RAW image file (), the parentheses contain the file suffix, like MRW"
@@ -10089,7 +10089,7 @@ msgid "Flip Vertically"
 msgstr "Lật dọc"
 
 #: libs/dimg/filters/dimgbuiltinfilter.cpp:350
-#: utilities/queuemanager/basetools/transform/crop.cpp:76
+#: utilities/queuemanager/basetools/transform/crop.cpp:81
 msgid "Crop"
 msgstr "Xén"
 
@@ -11364,55 +11364,61 @@ msgstr ""
 msgid "Estimate Noise"
 msgstr "Độ trưng:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:136
-#: libs/dimg/filters/nr/nrsettings.cpp:163
-#: libs/dimg/filters/nr/nrsettings.cpp:190
+#: libs/dimg/filters/nr/nrsettings.cpp:127
+msgid ""
+"Compute automatically all noise reduction settings by a parse of noise "
+"contained in image."
+msgstr ""
+
+#: libs/dimg/filters/nr/nrsettings.cpp:138
+#: libs/dimg/filters/nr/nrsettings.cpp:165
+#: libs/dimg/filters/nr/nrsettings.cpp:192
 #: libs/dimg/filters/sharp/sharpsettings.cpp:203
 #: utilities/fuzzysearch/fuzzysearchview.cpp:294
 msgid "Threshold:"
 msgstr "Ngưỡng:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:143
-#: libs/dimg/filters/nr/nrsettings.cpp:170
-#: libs/dimg/filters/nr/nrsettings.cpp:197
+#: libs/dimg/filters/nr/nrsettings.cpp:145
+#: libs/dimg/filters/nr/nrsettings.cpp:172
+#: libs/dimg/filters/nr/nrsettings.cpp:199
 #, fuzzy
 #| msgid "Smoothness:"
 msgid "Softness:"
 msgstr "Độ mịn:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:215
+#: libs/dimg/filters/nr/nrsettings.cpp:217
 #, fuzzy
 #| msgid "Luminance:"
 msgid "Luminance"
 msgstr "Độ trưng:"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:218
+#: libs/dimg/filters/nr/nrsettings.cpp:220
 msgid "Chrominance Blue"
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:221
+#: libs/dimg/filters/nr/nrsettings.cpp:223
 msgid "Chrominance Red"
 msgstr ""
 
-#: libs/dimg/filters/nr/nrsettings.cpp:375
+#: libs/dimg/filters/nr/nrsettings.cpp:377
 msgid "Photograph Noise Reduction Settings File to Load"
 msgstr "Tập tin thiết lập giảm nhiễu ảnh chụp cần tải"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:391
+#: libs/dimg/filters/nr/nrsettings.cpp:393
 #, kde-format
 msgid "\"%1\" is not a Photograph Noise Reduction settings text file."
 msgstr ""
 "« %1 » không phải là một tập tin văn bản thiết lập giảm nhiễu ảnh chup."
 
-#: libs/dimg/filters/nr/nrsettings.cpp:410
+#: libs/dimg/filters/nr/nrsettings.cpp:412
 msgid "Cannot load settings from the Photograph Noise Reduction text file."
 msgstr "Không thể tải thiết lập từ tập tin văn bản giảm nhiễu ảnh chụp."
 
-#: libs/dimg/filters/nr/nrsettings.cpp:420
+#: libs/dimg/filters/nr/nrsettings.cpp:422
 msgid "Photograph Noise Reduction Settings File to Save"
 msgstr "Tập tin thiết lập giảm nhiễu ảnh chụp cần lưu"
 
-#: libs/dimg/filters/nr/nrsettings.cpp:442
+#: libs/dimg/filters/nr/nrsettings.cpp:444
 msgid "Cannot save settings to the Photograph Noise Reduction text file."
 msgstr "Không thể lưu thiết lập vào tập tin văn bản giảm nhiễu ảnh chụp."
 
@@ -13731,17 +13737,17 @@ msgstr ""
 msgid "Check DB Connection"
 msgstr "Theo tập hợp"
 
-#: libs/widgets/common/databasewidget.cpp:164
+#: libs/widgets/common/databasewidget.cpp:165
 #, fuzzy
 #| msgid "Size"
 msgid "SQLite"
 msgstr "Cỡ"
 
-#: libs/widgets/common/databasewidget.cpp:165
+#: libs/widgets/common/databasewidget.cpp:166
 msgid "MySQL"
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:212
+#: libs/widgets/common/databasewidget.cpp:213
 #, fuzzy
 #| msgid ""
 #| "No write access for this path.\n"
@@ -13753,18 +13759,18 @@ msgstr ""
 "Không có quyền ghi vào đường dẫn này.\n"
 "Cảnh báo : tính năng ghi chú và thẻ sẽ không hoạt động được."
 
-#: libs/widgets/common/databasewidget.cpp:289
+#: libs/widgets/common/databasewidget.cpp:290
 msgid "Database connection test successful."
 msgstr ""
 
-#: libs/widgets/common/databasewidget.cpp:289
-#: libs/widgets/common/databasewidget.cpp:294
+#: libs/widgets/common/databasewidget.cpp:290
+#: libs/widgets/common/databasewidget.cpp:295
 #, fuzzy
 #| msgid "Statistics"
 msgid "Database connection test"
 msgstr "Thống kê"
 
-#: libs/widgets/common/databasewidget.cpp:293
+#: libs/widgets/common/databasewidget.cpp:294
 #, kde-format
 msgid "Database connection test was not successful. <p>Error was: %1</p>"
 msgstr ""
@@ -20982,11 +20988,23 @@ msgstr "Gỡ bỏ mục"
 msgid "Remove Xmp"
 msgstr "Gỡ bỏ mục"
 
-#: utilities/queuemanager/basetools/transform/crop.cpp:77
+#: utilities/queuemanager/basetools/transform/crop.cpp:82
 #, fuzzy
 #| msgid "Show image type"
-msgid "Crop images with a customized region."
+msgid "Crop images to a region."
 msgstr "Hiện kiểu ảnh"
+
+#: utilities/queuemanager/basetools/transform/crop.cpp:97
+#, fuzzy
+#| msgid "Auto-crop:"
+msgid "Auto-Crop"
+msgstr "Xén tự động:"
+
+#: utilities/queuemanager/basetools/transform/crop.cpp:98
+msgid ""
+"Compute automatically crop area settings by a parse of black hole image "
+"borders."
+msgstr ""
 
 #: utilities/queuemanager/basetools/transform/flip.cpp:54
 #, fuzzy
@@ -21311,32 +21329,32 @@ msgstr "Quique"
 msgid "No setting available"
 msgstr "Không có sẵn tùy chọn"
 
-#: utilities/queuemanager/manager/task.cpp:223
+#: utilities/queuemanager/manager/task.cpp:225
 #, fuzzy, kde-format
 #| msgid "Rename Item (%1)"
 msgid "(renamed to %1)"
 msgstr "Thay tên mục (%1)"
 
-#: utilities/queuemanager/manager/task.cpp:227
+#: utilities/queuemanager/manager/task.cpp:229
 #, fuzzy
 #| msgid "Overwrite"
 msgid "(overwritten)"
 msgstr "Ghi đè"
 
-#: utilities/queuemanager/manager/task.cpp:238
+#: utilities/queuemanager/manager/task.cpp:240
 #, fuzzy
 #| msgid "Failed to load image \"%1\""
 msgid "Failed to create sidecar file..."
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: utilities/queuemanager/manager/task.cpp:244
-#: utilities/queuemanager/manager/task.cpp:259
+#: utilities/queuemanager/manager/task.cpp:246
+#: utilities/queuemanager/manager/task.cpp:261
 #, fuzzy
 #| msgid "Failed to load image \"%1\""
 msgid "Failed to create file..."
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: utilities/queuemanager/manager/task.cpp:254
+#: utilities/queuemanager/manager/task.cpp:256
 #, fuzzy, kde-format
 #| msgid "Downloading file %1..."
 msgid "Item processed successfully %1"

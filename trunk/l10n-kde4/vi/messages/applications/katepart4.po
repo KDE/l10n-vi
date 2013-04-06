@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-05 02:07+0200\n"
+"POT-Creation-Date: 2013-04-06 02:13+0200\n"
 "PO-Revision-Date: 2012-01-09 21:52+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -191,15 +191,15 @@ msgstr "Thuộc tính không rõ"
 msgid "Auto Word Completion"
 msgstr "Bổ sung hoàn chỉnh từ"
 
-#: completion/katewordcompletion.cpp:336
+#: completion/katewordcompletion.cpp:355
 msgid "Shell Completion"
 msgstr "Hoàn chỉnh hệ vỏ"
 
-#: completion/katewordcompletion.cpp:342
+#: completion/katewordcompletion.cpp:361
 msgid "Reuse Word Above"
 msgstr "Dùng lại từ trên"
 
-#: completion/katewordcompletion.cpp:347
+#: completion/katewordcompletion.cpp:366
 msgid "Reuse Word Below"
 msgstr "Dùng lại từ dưới"
 
@@ -3086,89 +3086,101 @@ msgstr ""
 msgid "Expand Quick Coding Abbreviation"
 msgstr ""
 
-#: script/data/commands/utils.js:298 utils/kateglobal.cpp:395
+#: script/data/commands/utils.js:330 utils/kateglobal.cpp:395
 msgid "Editing"
 msgstr "HIệu chỉnh"
 
-#: script/data/commands/utils.js:301
+#: script/data/commands/utils.js:333
 #, fuzzy
 #| msgid "Selected"
 msgid "Sort Selected Text"
 msgstr "Đã chọn"
 
-#: script/data/commands/utils.js:304
+#: script/data/commands/utils.js:336
 #, fuzzy
 #| msgid "Scroll Line Down"
 msgid "Move Lines Down"
 msgstr "Cuộn xuống một dòng"
 
-#: script/data/commands/utils.js:307
+#: script/data/commands/utils.js:339
 #, fuzzy
 #| msgid "Scroll Line Up"
 msgid "Move Lines Up"
 msgstr "Cuộn lên một dòng"
 
-#: script/data/commands/utils.js:310
+#: script/data/commands/utils.js:342
 msgid "Duplicate Selected Lines Up"
 msgstr ""
 
-#: script/data/commands/utils.js:313
+#: script/data/commands/utils.js:345
 msgid "Duplicate Selected Lines Down"
 msgstr ""
 
-#: script/data/commands/utils.js:323
+#: script/data/commands/utils.js:348
+#, fuzzy
+#| msgid "Selected"
+msgid "URI-encode Selected Text"
+msgstr "Đã chọn"
+
+#: script/data/commands/utils.js:351
+#, fuzzy
+#| msgid "Selected"
+msgid "URI-decode Selected Text"
+msgstr "Đã chọn"
+
+#: script/data/commands/utils.js:361
 #, fuzzy
 #| msgid "Select the entire text of the current document."
 msgid "Sort the selected text or whole document."
 msgstr "Chọn toàn bộ nội dung tài liệu."
 
-#: script/data/commands/utils.js:325
+#: script/data/commands/utils.js:363
 #, fuzzy
 #| msgid "Selected"
 msgid "Move selected lines down."
 msgstr "Đã chọn"
 
-#: script/data/commands/utils.js:327
+#: script/data/commands/utils.js:365
 #, fuzzy
 #| msgid "Selected"
 msgid "Move selected lines up."
 msgstr "Đã chọn"
 
-#: script/data/commands/utils.js:329
+#: script/data/commands/utils.js:367
 msgid "Remove duplicate lines from the selected text or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:331
+#: script/data/commands/utils.js:369
 msgid ""
 "Sort the selected text or whole document in natural order.<br>Here is an "
 "example to show the difference to the normal sort method:<br>sort(a10, a1, "
 "a2) => a1, a10, a2<br>natsort(a10, a1, a2) => a1, a2, a10"
 msgstr ""
 
-#: script/data/commands/utils.js:333
+#: script/data/commands/utils.js:371
 msgid "Trims trailing whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:335
+#: script/data/commands/utils.js:373
 msgid "Trims leading whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:337
+#: script/data/commands/utils.js:375
 msgid "Trims leading and trailing whitespace from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:339
+#: script/data/commands/utils.js:377
 msgid ""
 "Joins selected lines or whole document. Optionally pass a separator to put "
 "between each line:<br><code>join ', '</code> will e.g. join lines and "
 "separate them by a comma."
 msgstr ""
 
-#: script/data/commands/utils.js:341
+#: script/data/commands/utils.js:379
 msgid "Removes empty lines from selection or whole document."
 msgstr ""
 
-#: script/data/commands/utils.js:345
+#: script/data/commands/utils.js:383
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and replace them with the return value of that callback."
@@ -3177,7 +3189,7 @@ msgid ""
 "this to achieve the same:<br><code>each 'lines.join(\", \")'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:347
+#: script/data/commands/utils.js:385
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and remove those where the callback returns false."
@@ -3186,7 +3198,7 @@ msgid ""
 "this to achieve the same:<br><code>filter 'line.length > 0'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:349
+#: script/data/commands/utils.js:387
 msgid ""
 "Given a JavaScript function as argument, call that for the list of "
 "(selected) lines and replace the line with the return value of the callback."
@@ -3196,12 +3208,22 @@ msgid ""
 "+/, \"\")'</code>"
 msgstr ""
 
-#: script/data/commands/utils.js:351
+#: script/data/commands/utils.js:389
 msgid "Duplicates the selected lines up."
 msgstr ""
 
-#: script/data/commands/utils.js:353
+#: script/data/commands/utils.js:391
 msgid "Duplicates the selected lines down."
+msgstr ""
+
+#: script/data/commands/utils.js:393
+msgid ""
+"Encode special chars in a single line selection, so the result text can be "
+"used as URI."
+msgstr ""
+
+#: script/data/commands/utils.js:395
+msgid "Reverse action of URI encode."
 msgstr ""
 
 #: script/katecommandlinescript.cpp:56
@@ -3310,14 +3332,14 @@ msgstr ""
 msgid "Not found"
 msgstr ""
 
-#: search/katesearchbar.cpp:650
+#: search/katesearchbar.cpp:656
 #, kde-format
 msgctxt "short translation"
 msgid "1 match found"
 msgid_plural "%1 matches found"
 msgstr[0] ""
 
-#: search/katesearchbar.cpp:894
+#: search/katesearchbar.cpp:906
 #, fuzzy, kde-format
 #| msgid "1 replacement done"
 #| msgid_plural "%1 replacements done"
@@ -3326,157 +3348,157 @@ msgid "1 replacement made"
 msgid_plural "%1 replacements made"
 msgstr[0] "Mới thay thế %1 lần."
 
-#: search/katesearchbar.cpp:1099
+#: search/katesearchbar.cpp:1111
 #, fuzzy
 #| msgid "Move to Beginning of Line"
 msgid "Beginning of line"
 msgstr "Về đầu dòng"
 
-#: search/katesearchbar.cpp:1100
+#: search/katesearchbar.cpp:1112
 #, fuzzy
 #| msgid "&End of Line"
 msgid "End of line"
 msgstr "&Kết thúc dòng"
 
-#: search/katesearchbar.cpp:1102
+#: search/katesearchbar.cpp:1114
 msgid "Any single character (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1104
+#: search/katesearchbar.cpp:1116
 msgid "One or more occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1105
+#: search/katesearchbar.cpp:1117
 msgid "Zero or more occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1106
+#: search/katesearchbar.cpp:1118
 msgid "Zero or one occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1107
+#: search/katesearchbar.cpp:1119
 msgid "<a> through <b> occurrences"
 msgstr ""
 
-#: search/katesearchbar.cpp:1109
+#: search/katesearchbar.cpp:1121
 msgid "Group, capturing"
 msgstr ""
 
-#: search/katesearchbar.cpp:1110
+#: search/katesearchbar.cpp:1122
 msgid "Or"
 msgstr ""
 
-#: search/katesearchbar.cpp:1111
+#: search/katesearchbar.cpp:1123
 #, fuzzy
 #| msgid "Character"
 msgid "Set of characters"
 msgstr "Ký tự"
 
-#: search/katesearchbar.cpp:1112
+#: search/katesearchbar.cpp:1124
 #, fuzzy
 #| msgid "Delete Next Character"
 msgid "Negative set of characters"
 msgstr "Xoá ký tự kế"
 
-#: search/katesearchbar.cpp:1116
+#: search/katesearchbar.cpp:1128
 msgid "Whole match reference"
 msgstr ""
 
-#: search/katesearchbar.cpp:1129
+#: search/katesearchbar.cpp:1141
 msgid "Reference"
 msgstr ""
 
-#: search/katesearchbar.cpp:1136
+#: search/katesearchbar.cpp:1148
 #, fuzzy
 #| msgid "Show &Line Numbers"
 msgid "Line break"
 msgstr "Hiện &số hiệu dòng"
 
-#: search/katesearchbar.cpp:1137
+#: search/katesearchbar.cpp:1149
 msgid "Tab"
 msgstr ""
 
-#: search/katesearchbar.cpp:1140
+#: search/katesearchbar.cpp:1152
 msgid "Word boundary"
 msgstr ""
 
-#: search/katesearchbar.cpp:1141
+#: search/katesearchbar.cpp:1153
 msgid "Not word boundary"
 msgstr ""
 
-#: search/katesearchbar.cpp:1142
+#: search/katesearchbar.cpp:1154
 msgid "Digit"
 msgstr ""
 
-#: search/katesearchbar.cpp:1143
+#: search/katesearchbar.cpp:1155
 msgid "Non-digit"
 msgstr ""
 
-#: search/katesearchbar.cpp:1144
+#: search/katesearchbar.cpp:1156
 msgid "Whitespace (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1145
+#: search/katesearchbar.cpp:1157
 msgid "Non-whitespace (excluding line breaks)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1146
+#: search/katesearchbar.cpp:1158
 msgid "Word character (alphanumerics plus '_')"
 msgstr ""
 
-#: search/katesearchbar.cpp:1147
+#: search/katesearchbar.cpp:1159
 #, fuzzy
 #| msgid "Character"
 msgid "Non-word character"
 msgstr "Ký tự"
 
-#: search/katesearchbar.cpp:1150
+#: search/katesearchbar.cpp:1162
 msgid "Octal character 000 to 377 (2^8-1)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1151
+#: search/katesearchbar.cpp:1163
 msgid "Hex character 0000 to FFFF (2^16-1)"
 msgstr ""
 
-#: search/katesearchbar.cpp:1152
+#: search/katesearchbar.cpp:1164
 #, fuzzy
 #| msgid "Backspace"
 msgid "Backslash"
 msgstr "Xoá lùi"
 
-#: search/katesearchbar.cpp:1156
+#: search/katesearchbar.cpp:1168
 msgid "Group, non-capturing"
 msgstr ""
 
-#: search/katesearchbar.cpp:1157
+#: search/katesearchbar.cpp:1169
 msgid "Lookahead"
 msgstr ""
 
-#: search/katesearchbar.cpp:1158
+#: search/katesearchbar.cpp:1170
 msgid "Negative lookahead"
 msgstr ""
 
-#: search/katesearchbar.cpp:1163
+#: search/katesearchbar.cpp:1175
 msgid "Begin lowercase conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1164
+#: search/katesearchbar.cpp:1176
 msgid "Begin uppercase conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1165
+#: search/katesearchbar.cpp:1177
 msgid "End case conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1166
+#: search/katesearchbar.cpp:1178
 msgid "Lowercase first character conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1167
+#: search/katesearchbar.cpp:1179
 msgid "Uppercase first character conversion"
 msgstr ""
 
-#: search/katesearchbar.cpp:1168
+#: search/katesearchbar.cpp:1180
 msgid "Replacement counter (for Replace All)"
 msgstr ""
 
@@ -7899,17 +7921,17 @@ msgid "VI: REPLACE"
 msgstr ""
 
 #: vimode/kateviinsertmode.cpp:237 vimode/katevimodebase.cpp:873
-#: vimode/katevinormalmode.cpp:3230
+#: vimode/katevinormalmode.cpp:3232
 #, kde-format
 msgid "Nothing in register %1"
 msgstr ""
 
-#: vimode/katevinormalmode.cpp:1535
+#: vimode/katevinormalmode.cpp:1537
 #, kde-format
 msgid "'%1' %2,  Hex %3,  Octal %4"
 msgstr ""
 
-#: vimode/katevinormalmode.cpp:2333
+#: vimode/katevinormalmode.cpp:2335
 #, fuzzy, kde-format
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"

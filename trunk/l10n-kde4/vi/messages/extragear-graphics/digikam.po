@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-07 02:51+0200\n"
+"POT-Creation-Date: 2013-05-08 02:52+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1193,12 +1193,12 @@ msgid ""
 msgstr ""
 
 #: digikam/filters/filtersidebarwidget.cpp:174
-#: utilities/searchwindow/searchgroup.cpp:651
+#: utilities/searchwindow/searchgroup.cpp:671
 msgid "OR"
 msgstr ""
 
 #: digikam/filters/filtersidebarwidget.cpp:176
-#: utilities/searchwindow/searchgroup.cpp:647
+#: utilities/searchwindow/searchgroup.cpp:667
 msgid "AND"
 msgstr ""
 
@@ -3503,6 +3503,7 @@ msgstr "Cán cân trắng:"
 #: digikam/utils/tooltipfiller.cpp:334
 #: libs/imageproperties/cameraitempropertiestab.cpp:334
 #: libs/imageproperties/imagepropertiestab.cpp:390
+#: utilities/searchwindow/searchgroup.cpp:141
 #, fuzzy
 #| msgid "File Properties"
 msgid "Video Properties"
@@ -14449,7 +14450,7 @@ msgstr "Thông tin ảnh"
 
 #: libs/widgets/metadata/mdkeylistviewitem.cpp:62
 #: showfoto/setup/setuptooltip.cpp:173
-#: utilities/searchwindow/searchgroup.cpp:158
+#: utilities/searchwindow/searchgroup.cpp:178
 #: utilities/setup/setuptooltip.cpp:222
 msgid "Photograph Information"
 msgstr "Thông tin ảnh chụp"
@@ -16650,12 +16651,14 @@ msgid "Display Aspect Ratio"
 msgstr "Giữ tỷ lệ hình thể"
 
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:87
+#: utilities/searchwindow/searchfields.cpp:635
 #, fuzzy
 #| msgid "Audio Files"
 msgid "Audio Bit Rate"
 msgstr "Tập tin âm thanh"
 
 #: utilities/advancedrename/parser/options/database/keys/metadatakeys.cpp:88
+#: utilities/searchwindow/searchfields.cpp:652
 #, fuzzy
 #| msgid "Alpha Channel:"
 msgid "Audio Channel Type"
@@ -18172,7 +18175,7 @@ msgid "Save all parameters to settings text file."
 msgstr "<p>Lưu mọi tham số lọc vào tập tin văn bản thiết lập."
 
 #: utilities/imageeditor/editor/editortoolsettings.cpp:228
-#: utilities/searchwindow/searchview.cpp:530
+#: utilities/searchwindow/searchview.cpp:531
 msgid "Try"
 msgstr ""
 
@@ -22044,6 +22047,7 @@ msgid "Find pictures that have associated all these words:"
 msgstr ""
 
 #: utilities/searchwindow/searchfields.cpp:550
+#: utilities/searchwindow/searchfields.cpp:569
 #, fuzzy
 #| msgid "Aspect ratio:"
 msgid "Aspect Ratio"
@@ -22065,60 +22069,168 @@ msgstr "Cỡ gạch lát:"
 msgid "Value of (Width * Height) between"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:617
+#: utilities/searchwindow/searchfields.cpp:569
+#, fuzzy
+#| msgid "Caricature"
+msgid "Return video with the frame aspect ratio"
+msgstr "Vẽ biếm hoạ"
+
+#: utilities/searchwindow/searchfields.cpp:583
+#, fuzzy
+#| msgid "Duration: %1"
+msgid "Duration"
+msgstr "Thời gian: %1"
+
+#: utilities/searchwindow/searchfields.cpp:583
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "Lenght of the video"
+msgstr "Lọc nhiễu :"
+
+#: utilities/searchwindow/searchfields.cpp:584
+#, fuzzy
+#| msgid "Candle"
+msgctxt "Find video with a lenght between...and..."
+msgid "and"
+msgstr "Cây nến"
+
+#: utilities/searchwindow/searchfields.cpp:585
+msgctxt "Seconds"
+msgid "s"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:600
+#, fuzzy
+#| msgid "<b>Created</b>:"
+msgid "Frame Rate"
+msgstr "<b>Tạo</b>:"
+
+#: utilities/searchwindow/searchfields.cpp:600
+#, fuzzy
+#| msgid "Caricature"
+msgid "Return video with the frame rate"
+msgstr "Vẽ biếm hoạ"
+
+#: utilities/searchwindow/searchfields.cpp:601
+#, fuzzy
+#| msgid "Candle"
+msgctxt "Find video with frame rate between...and..."
+msgid "and"
+msgstr "Cây nến"
+
+#: utilities/searchwindow/searchfields.cpp:602
+msgctxt "Frames per Second"
+msgid "fps"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:616
+#, fuzzy
+#| msgid "Audio Files"
+msgid "Codec"
+msgstr "Tập tin âm thanh"
+
+#: utilities/searchwindow/searchfields.cpp:616
+#, fuzzy
+#| msgid "Audio Files"
+msgid "Return video codec"
+msgstr "Tập tin âm thanh"
+
+#: utilities/searchwindow/searchfields.cpp:635
+msgid "Return video audio bits rate"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:636
+#, fuzzy
+#| msgid "Candle"
+msgctxt "Find video with audio bit rate between...and..."
+msgid "and"
+msgstr "Cây nến"
+
+#: utilities/searchwindow/searchfields.cpp:637
+msgctxt "Bits per Second"
+msgid "bps"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:652
+#, fuzzy
+#| msgid "Show image type"
+msgid "Return video audio Channel Type"
+msgstr "Hiện kiểu ảnh"
+
+#: utilities/searchwindow/searchfields.cpp:654
+msgid "Mono"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:655
+msgid "Stereo"
+msgstr ""
+
+#: utilities/searchwindow/searchfields.cpp:664
+#, fuzzy
+#| msgid "PNG compression:"
+msgid "Audio Compressor"
+msgstr "Nén PNG:"
+
+#: utilities/searchwindow/searchfields.cpp:664
+#, fuzzy
+#| msgid "PNG compression:"
+msgid "Return video audio Compressor"
+msgstr "Nén PNG:"
+
+#: utilities/searchwindow/searchfields.cpp:731
 #, fuzzy
 #| msgid "Reset Tag Icon"
 msgid "Reset contents"
 msgstr "Đặt lại biểu tượng thẻ"
 
-#: utilities/searchwindow/searchfields.cpp:1690
+#: utilities/searchwindow/searchfields.cpp:1804
 msgid "Any"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1749
+#: utilities/searchwindow/searchfields.cpp:1863
 #, kde-format
 msgid "Any of: %1"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:2089
+#: utilities/searchwindow/searchfields.cpp:2203
 #, fuzzy
 #| msgid "My Albums"
 msgid "Any Album"
 msgstr "Tập ảnh tôi"
 
-#: utilities/searchwindow/searchfields.cpp:2094
+#: utilities/searchwindow/searchfields.cpp:2208
 #, fuzzy
 #| msgid "My Tags"
 msgid "Any Tag"
 msgstr "Thẻ tôi"
 
-#: utilities/searchwindow/searchfields.cpp:2509
+#: utilities/searchwindow/searchfields.cpp:2623
 #, fuzzy
 #| msgid "Color depth:"
 msgid "any color depth"
 msgstr "Độ sâu màu :"
 
-#: utilities/searchwindow/searchfields.cpp:2510
+#: utilities/searchwindow/searchfields.cpp:2624
 msgid "8 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:2511
+#: utilities/searchwindow/searchfields.cpp:2625
 msgid "16 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:2545
+#: utilities/searchwindow/searchfields.cpp:2659
 #, fuzzy
 #| msgid "Orientation:"
 msgid "Any Orientation"
 msgstr "Hướng:"
 
-#: utilities/searchwindow/searchfields.cpp:2546
+#: utilities/searchwindow/searchfields.cpp:2660
 #, fuzzy
 #| msgid "Orientation:"
 msgid "Landscape Orientation"
 msgstr "Hướng:"
 
-#: utilities/searchwindow/searchfields.cpp:2547
+#: utilities/searchwindow/searchfields.cpp:2661
 #, fuzzy
 #| msgid "Orientation:"
 msgid "Portrait orientation"
@@ -22150,37 +22262,37 @@ msgstr "Chuyển tập ảnh vào Sọt rác"
 msgid "Picture Properties"
 msgstr "Thuộc tính tập tin"
 
-#: utilities/searchwindow/searchgroup.cpp:141
+#: utilities/searchwindow/searchgroup.cpp:161
 msgid "Caption, Comment, Title"
 msgstr ""
 
-#: utilities/searchwindow/searchgroup.cpp:426
+#: utilities/searchwindow/searchgroup.cpp:446
 #, fuzzy
 #| msgid "Caricature"
 msgid "Find Pictures"
 msgstr "Vẽ biếm hoạ"
 
-#: utilities/searchwindow/searchgroup.cpp:431
+#: utilities/searchwindow/searchgroup.cpp:451
 #, fuzzy
 #| msgid "Matching Condition"
 msgid "Meet All of the following conditions"
 msgstr "Điều kiện khớp"
 
-#: utilities/searchwindow/searchgroup.cpp:435
+#: utilities/searchwindow/searchgroup.cpp:455
 #, fuzzy
 #| msgid "Matching Condition"
 msgid "Meet Any of the following conditions"
 msgstr "Điều kiện khớp"
 
-#: utilities/searchwindow/searchgroup.cpp:439
+#: utilities/searchwindow/searchgroup.cpp:459
 msgid "None of these conditions are met"
 msgstr ""
 
-#: utilities/searchwindow/searchgroup.cpp:443
+#: utilities/searchwindow/searchgroup.cpp:463
 msgid "At least one of these conditions is not met"
 msgstr ""
 
-#: utilities/searchwindow/searchgroup.cpp:475
+#: utilities/searchwindow/searchgroup.cpp:495
 #, fuzzy
 #| msgid "Matching Condition"
 msgid ""
@@ -22188,19 +22300,19 @@ msgid ""
 "conditions</p></qt>"
 msgstr "Điều kiện khớp"
 
-#: utilities/searchwindow/searchgroup.cpp:513
+#: utilities/searchwindow/searchgroup.cpp:533
 #, fuzzy
 #| msgid "Remove"
 msgid "Remove Group"
 msgstr "Bỏ"
 
-#: utilities/searchwindow/searchgroup.cpp:556
+#: utilities/searchwindow/searchgroup.cpp:576
 #, fuzzy
 #| msgid "Interface Options"
 msgid "Hide Options <<"
 msgstr "Tuy chọn giao diện"
 
-#: utilities/searchwindow/searchgroup.cpp:566
+#: utilities/searchwindow/searchgroup.cpp:586
 #, fuzzy
 #| msgid "Interface Options"
 msgid "Options >>"
@@ -22268,7 +22380,7 @@ msgstr ""
 msgid "Edit Stored Search"
 msgstr "Sửa tìm kiếm..."
 
-#: utilities/searchwindow/searchview.cpp:500
+#: utilities/searchwindow/searchview.cpp:501
 #, fuzzy
 #| msgid "Advanced Search"
 msgid "Add Search Group"

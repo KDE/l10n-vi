@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkwm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:53+0000\n"
+"POT-Creation-Date: 2013-05-23 01:34+0000\n"
 "PO-Revision-Date: 2007-06-23 20:54+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -575,10 +575,10 @@ msgstr ""
 "Đặt thời gian theo mili-giây trước cửa sổ bỏ bóng, khi con trỏ chuột đi trên "
 "cửa sổ đã bóng."
 
-#. i18n: ectx: property (suffix), widget (KIntNumInput, autoRaise)
 #. i18n: ectx: property (suffix), widget (KIntNumInput, delayFocus)
+#. i18n: ectx: property (suffix), widget (KIntNumInput, autoRaise)
 #. i18n: ectx: property (suffix), widget (KIntNumInput, shadeHover)
-#: advanced.ui:230 focus.ui:173 focus.ui:214
+#: advanced.ui:230 focus.ui:262 focus.ui:487
 #, fuzzy
 #| msgid " msec"
 msgid " ms"
@@ -609,94 +609,106 @@ msgstr ""
 msgid "Hide utility windows for inactive applications"
 msgstr "Ẩn cửa sổ tiện ích cho ứng dụng bị động"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: focus.ui:32
-msgid "&Policy:"
-msgstr "Chính &sách:"
-
-#. i18n: ectx: property (whatsThis), widget (KComboBox, focusCombo)
-#: focus.ui:56
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: focus.ui:30
 #, fuzzy
-#| msgid ""
-#| "The focus policy is used to determine the active window, i.e. the window "
-#| "you can work in. <ul> <li><em>Click to focus:</em> A window becomes "
-#| "active when you click into it. This is the behavior you might know from "
-#| "other operating systems.</li> <li><em>Focus follows mouse:</em> Moving "
-#| "the mouse pointer actively on to a normal window activates it. New "
-#| "windows will receive the focus, without you having to point the mouse at "
-#| "them explicitly. Very practical if you are using the mouse a lot.</li> "
-#| "<li><em>Focus under mouse:</em> The window that happens to be under the "
-#| "mouse pointer is active. If the mouse points nowhere, the last window "
-#| "that was under the mouse has focus. New windows will not automatically "
-#| "receive the focus.</li> <li><em>Focus strictly under mouse:</em> Only the "
-#| "window under the mouse pointer is active. If the mouse points nowhere, "
-#| "nothing has focus. </ul>Note that 'Focus under mouse' and 'Focus strictly "
-#| "under mouse' prevent certain features such as the Alt+Tab walk through "
-#| "windows dialog in the KDE mode from working properly."
+#| msgid "Active windows:"
+msgid "Activating windows"
+msgstr "Cửa sổ hoạt động:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: focus.ui:69
 msgid ""
-"The focus policy is used to determine the active window, i.e. the window you "
-"can work in. <ul>\n"
-"<li><em>Click to focus:</em> A window becomes active when you click into it. "
-"This is the behavior you might know from other operating systems.</li> "
-"<li><em>Focus follows mouse:</em> Moving the mouse pointer actively on to a "
-"normal window activates it. New windows will receive the focus, without you "
-"having to point the mouse at them explicitly. Very practical if you are "
-"using the mouse a lot.</li>\n"
-"<li><em>Focus under mouse:</em> The window that happens to be under the "
-"mouse pointer is active. If the mouse points nowhere, the last window that "
-"was under the mouse has focus. New windows will not automatically receive "
-"the focus.</li>\n"
-"<li><em>Focus strictly under mouse:</em> Only the window under the mouse "
-"pointer is active. If the mouse points nowhere, nothing has focus.</li>\n"
-"</ul>\n"
-"Note that 'Focus under mouse' and 'Focus strictly under mouse' prevent "
-"certain features such as the Alt+Tab walk through windows dialog in the KDE "
-"mode from working properly."
+"<b>Click To Focus</b><br>\n"
+"A window becomes active when you click into it.<br><br>\n"
+"This behaviour is common on other operating systems and<br>\n"
+"likely what you want."
 msgstr ""
-"Chính sách tiêu điểm được dùng để xác định cửa sổ hoạt động, tức là cửa sổ "
-"nơi bạn có thể làm gì.<ul><li><em>Nhắp để đặt tiêu điểm:</em> một cửa sổ trở "
-"thành hoạt động khi bạn nhắp vào nó. Có thể bạn đã quen với ứng dụng này "
-"trong hệ điều hành khác.</li><li><em>Tiêu điểm theo chuột:</em> việc di "
-"chuyển hoạt động con trỏ chuột trên một cửa sổ chuẩn sẽ kích hoạt nó. Cửa sổ "
-"mới sẽ nhận tiêu điểm, bạn không cần trỏ chuột tới nó một cách dứt khoát. "
-"Rất có ích nếu bạn thường sử dụng con chuột.</li><li><em>Tiêu điểm dưới "
-"chuột:</em> cửa sổ nằm dưới con trỏ chuột là hoạt động. Nếu con chuột không "
-"trỏ tới gì, cửa sổ đã dưới chuột cuối cùng còn có tiêu điểm lại. Cửa sổ "
-"không nhận tự động tiêu điểm.</li><li><em>Tiêu điểm dưới chính xác chuột:</"
-"em> chỉ cửa sổ nằm dưới con chuột là hoạt động thôi. Nếu con chuột không trỏ "
-"tới gì, không có gì có tiêu điểm.</ul>Ghi chú rằng « Tiêu điểm dưới chuột » "
-"và « Tiêu điểm dưới chính xác chuột » ngăn cản một số tính năng hoạt động "
-"cho đúng, lấy thí dụ hộp thoại đi qua các cửa sổ (Alt+Tab) trong chế độ KDE."
 
-#. i18n: ectx: property (text), item, widget (KComboBox, focusCombo)
-#: focus.ui:60
-msgid "Click to Focus"
-msgstr "Nhắp để đặt tiêu điểm"
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: focus.ui:91
+msgid ""
+"<b>Click To Focus - Mouse Precendence</b><br>\n"
+"This is mostly the same as <i>Click To Focus</i><br><br>\n"
+"If an active window has to be chosen by the system<br>\n"
+"(eg. because the currently active one was closed) <br>\n"
+"the window under the mouse is the preferred candidate.<br><br>\n"
+"Unusual, but possible variant of <i>Click To Focus</i>."
+msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, focusCombo)
-#: focus.ui:65
-msgid "Focus Follows Mouse"
-msgstr "Tiêu điểm theo chuột"
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: focus.ui:112
+msgid ""
+"<b>Focus Follows Mouse</b><br>\n"
+"Moving the mouse onto a window will activate it.<br><br>\n"
+"Eg. windows randomly appearing under the mouse will not gain the focus.<br>\n"
+"Focus stealing prevention takes place as usual.<br><br>\n"
+"Think as <i>Click To Focus</i> just without having to actually click."
+msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, focusCombo)
-#: focus.ui:70
-msgid "Focus Under Mouse"
-msgstr "Tiêu điểm dưới chuột"
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: focus.ui:134
+msgid ""
+"<b>Focus Follows Mouse - Mouse Precendence</b><br>\n"
+"This is mostly the same as <i>Focus Follows Mouse</i><br><br>\n"
+"If an active window has to be chosen by the system<br>\n"
+"(eg. because the currently active one was closed) <br>\n"
+"the window under the mouse is the preferred candidate.<br><br>\n"
+"Choose this, if you want a hover controlled focus."
+msgstr ""
 
-#. i18n: ectx: property (text), item, widget (KComboBox, focusCombo)
-#: focus.ui:75
-msgid "Focus Strictly Under Mouse"
-msgstr "Tiêu điểm dưới chính xác chuột"
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: focus.ui:158
+msgid ""
+"<b>Focus Under Mouse</b><br>\n"
+"The focus always remains on the window under the mouse.<br><br>\n"
+"\n"
+"Notice:<br>\n"
+"<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
+"contradict the policy and <b>will not work</b>.<br><br>\n"
+"You very likely want to use<br>\n"
+"<i>Focus Follows Mouse - Mouse Precendence</i> instead!"
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: focus.ui:83
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: focus.ui:183
+msgid ""
+"<b>Focus Strictly Under Mouse</b><br>\n"
+"The focus is always on the window under the mouse - in doubt nowhere -<br>\n"
+"very much like the focus behaviour in an unmanaged legacy X11 environment."
+"<br><br>\n"
+"\n"
+"Notice:<br>\n"
+"<b>Focus stealing prevention</b> and the <b>tabbox (\"Alt+Tab\")</b><br>\n"
+"contradict the policy and <b>will not work</b>.<br><br>\n"
+"You very likely want to use<br>\n"
+"<i>Focus Follows Mouse - Mouse Precendence</i> instead!"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
+#: focus.ui:228
+#, fuzzy
+#| msgid "Delay focus"
+msgid "&Delay focus by"
+msgstr "Hoãn tiêu điểm"
+
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, delayFocus)
+#: focus.ui:247
+msgid ""
+"This is the delay after which the window the mouse pointer is over will "
+"automatically receive focus."
+msgstr ""
+"Đây là khoảng trễ sau mà cửa sổ dưới con trỏ chuột sẽ nhận tiêu điểm tự động."
+
+#. i18n: ectx: property (text), widget (QLabel, focusStealingLabel)
+#: focus.ui:273
 #, fuzzy
 #| msgid "Focus stealing prevention level:"
-msgid "Focus &stealing prevention level:"
+msgid "Focus &stealing prevention"
 msgstr "Mức chống ăn cấp tiêu điểm:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, focusStealing)
-#: focus.ui:110
+#: focus.ui:300
 #, fuzzy
 #| msgid ""
 #| "<p>This option specifies how much KWin will try to prevent unwanted focus "
@@ -760,7 +772,7 @@ msgstr ""
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
-#: focus.ui:114
+#: focus.ui:304
 #, fuzzy
 #| msgctxt "Focus Stealing Prevention Level"
 #| msgid "None"
@@ -769,7 +781,7 @@ msgstr "Không có"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
-#: focus.ui:119
+#: focus.ui:309
 #, fuzzy
 #| msgctxt "Focus Stealing Prevention Level"
 #| msgid "Low"
@@ -778,13 +790,13 @@ msgstr "Thấp"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
-#: focus.ui:124
+#: focus.ui:314
 msgid "Medium"
 msgstr ""
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
-#: focus.ui:129
+#: focus.ui:319
 #, fuzzy
 #| msgctxt "Focus Stealing Prevention Level"
 #| msgid "High"
@@ -793,15 +805,39 @@ msgstr "Cao"
 
 #. i18n: Focus Stealing Prevention Level
 #. i18n: ectx: property (text), item, widget (KComboBox, focusStealing)
-#: focus.ui:134
+#: focus.ui:324
 #, fuzzy
 #| msgctxt "Focus Stealing Prevention Level"
 #| msgid "Extreme"
 msgid "Extreme"
 msgstr "Rất cao"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: focus.ui:364
+#, fuzzy
+#| msgid "&Policy:"
+msgid "Policy"
+msgstr "Chính &sách:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: focus.ui:377
+msgid "Click"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: focus.ui:409
+msgid "Hover"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: focus.ui:434
+#, fuzzy
+#| msgid "Moving windows:"
+msgid "Raising windows"
+msgstr "Cửa sổ di chuyển:"
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, autoRaiseOn)
-#: focus.ui:142
+#: focus.ui:443
 msgid ""
 "When this option is enabled, a window in the background will automatically "
 "come to the front when the mouse pointer has been over it for some time."
@@ -810,39 +846,19 @@ msgstr ""
 "nó trong một thời gian."
 
 #. i18n: ectx: property (text), widget (QCheckBox, autoRaiseOn)
-#: focus.ui:145
-msgid "&Raise, with the following delay:"
+#: focus.ui:446
+msgid "&Raise on hover, delayed by"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (KIntNumInput, autoRaise)
-#: focus.ui:158
+#: focus.ui:472
 msgid ""
 "This is the delay after which the window that the mouse pointer is over will "
 "automatically come to the front."
 msgstr "Đây là khoảng trễ sau mà cửa sổ dưới con trỏ chuột sẽ lên trước."
 
-#. i18n: ectx: property (text), widget (QLabel, delayFocusOnLabel)
-#: focus.ui:180
-#, fuzzy
-#| msgid "Delay focus"
-msgid "&Delay focus by:"
-msgstr "Hoãn tiêu điểm"
-
-#. i18n: ectx: property (whatsThis), widget (KIntNumInput, delayFocus)
-#: focus.ui:199
-msgid ""
-"This is the delay after which the window the mouse pointer is over will "
-"automatically receive focus."
-msgstr ""
-"Đây là khoảng trễ sau mà cửa sổ dưới con trỏ chuột sẽ nhận tiêu điểm tự động."
-
-#. i18n: ectx: property (text), widget (QCheckBox, focusNextToMouse)
-#: focus.ui:221
-msgid "&When the active window disappears, pass focus to window under mouse"
-msgstr ""
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, clickRaiseOn)
-#: focus.ui:228
+#: focus.ui:494
 msgid ""
 "When this option is enabled, the active window will be brought to the front "
 "when you click somewhere into the window contents. To change it for inactive "
@@ -853,14 +869,19 @@ msgstr ""
 "thiết lập trong phần Hành động."
 
 #. i18n: ectx: property (text), widget (QCheckBox, clickRaiseOn)
-#: focus.ui:231
+#: focus.ui:497
 #, fuzzy
 #| msgid "C&lick raise active window"
 msgid "C&lick raises active window"
 msgstr "Nhắ&p nâng cửa sổ lên"
 
+#. i18n: ectx: property (title), widget (QGroupBox, multiscreenBox)
+#: focus.ui:520
+msgid "Multiscreen behaviour"
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, separateScreenFocus)
-#: focus.ui:238
+#: focus.ui:529
 msgid ""
 "When this option is enabled, focus operations are limited only to the active "
 "Xinerama screen"
@@ -869,12 +890,12 @@ msgstr ""
 "Xinerama hoạt động."
 
 #. i18n: ectx: property (text), widget (QCheckBox, separateScreenFocus)
-#: focus.ui:241
+#: focus.ui:532
 msgid "S&eparate screen focus"
 msgstr "Tiê&u điểm màn hình riêng"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, activeMouseScreen)
-#: focus.ui:248
+#: focus.ui:539
 #, fuzzy
 #| msgid ""
 #| "When this option is enabled, active Xinerama screen (where for example "
@@ -896,7 +917,7 @@ msgstr ""
 "điểm khác."
 
 #. i18n: ectx: property (text), widget (QCheckBox, activeMouseScreen)
-#: focus.ui:251
+#: focus.ui:542
 msgid "Active screen follows &mouse"
 msgstr ""
 
@@ -1353,6 +1374,71 @@ msgstr "Cửa sổ"
 msgid "Snap Zones"
 msgstr "Vùng đính"
 
+#, fuzzy
+#~| msgid ""
+#~| "The focus policy is used to determine the active window, i.e. the window "
+#~| "you can work in. <ul> <li><em>Click to focus:</em> A window becomes "
+#~| "active when you click into it. This is the behavior you might know from "
+#~| "other operating systems.</li> <li><em>Focus follows mouse:</em> Moving "
+#~| "the mouse pointer actively on to a normal window activates it. New "
+#~| "windows will receive the focus, without you having to point the mouse at "
+#~| "them explicitly. Very practical if you are using the mouse a lot.</li> "
+#~| "<li><em>Focus under mouse:</em> The window that happens to be under the "
+#~| "mouse pointer is active. If the mouse points nowhere, the last window "
+#~| "that was under the mouse has focus. New windows will not automatically "
+#~| "receive the focus.</li> <li><em>Focus strictly under mouse:</em> Only "
+#~| "the window under the mouse pointer is active. If the mouse points "
+#~| "nowhere, nothing has focus. </ul>Note that 'Focus under mouse' and "
+#~| "'Focus strictly under mouse' prevent certain features such as the Alt"
+#~| "+Tab walk through windows dialog in the KDE mode from working properly."
+#~ msgid ""
+#~ "The focus policy is used to determine the active window, i.e. the window "
+#~ "you can work in. <ul>\n"
+#~ "<li><em>Click to focus:</em> A window becomes active when you click into "
+#~ "it. This is the behavior you might know from other operating systems.</"
+#~ "li> <li><em>Focus follows mouse:</em> Moving the mouse pointer actively "
+#~ "on to a normal window activates it. New windows will receive the focus, "
+#~ "without you having to point the mouse at them explicitly. Very practical "
+#~ "if you are using the mouse a lot.</li>\n"
+#~ "<li><em>Focus under mouse:</em> The window that happens to be under the "
+#~ "mouse pointer is active. If the mouse points nowhere, the last window "
+#~ "that was under the mouse has focus. New windows will not automatically "
+#~ "receive the focus.</li>\n"
+#~ "<li><em>Focus strictly under mouse:</em> Only the window under the mouse "
+#~ "pointer is active. If the mouse points nowhere, nothing has focus.</li>\n"
+#~ "</ul>\n"
+#~ "Note that 'Focus under mouse' and 'Focus strictly under mouse' prevent "
+#~ "certain features such as the Alt+Tab walk through windows dialog in the "
+#~ "KDE mode from working properly."
+#~ msgstr ""
+#~ "Chính sách tiêu điểm được dùng để xác định cửa sổ hoạt động, tức là cửa "
+#~ "sổ nơi bạn có thể làm gì.<ul><li><em>Nhắp để đặt tiêu điểm:</em> một cửa "
+#~ "sổ trở thành hoạt động khi bạn nhắp vào nó. Có thể bạn đã quen với ứng "
+#~ "dụng này trong hệ điều hành khác.</li><li><em>Tiêu điểm theo chuột:</em> "
+#~ "việc di chuyển hoạt động con trỏ chuột trên một cửa sổ chuẩn sẽ kích hoạt "
+#~ "nó. Cửa sổ mới sẽ nhận tiêu điểm, bạn không cần trỏ chuột tới nó một cách "
+#~ "dứt khoát. Rất có ích nếu bạn thường sử dụng con chuột.</li><li><em>Tiêu "
+#~ "điểm dưới chuột:</em> cửa sổ nằm dưới con trỏ chuột là hoạt động. Nếu con "
+#~ "chuột không trỏ tới gì, cửa sổ đã dưới chuột cuối cùng còn có tiêu điểm "
+#~ "lại. Cửa sổ không nhận tự động tiêu điểm.</li><li><em>Tiêu điểm dưới "
+#~ "chính xác chuột:</em> chỉ cửa sổ nằm dưới con chuột là hoạt động thôi. "
+#~ "Nếu con chuột không trỏ tới gì, không có gì có tiêu điểm.</ul>Ghi chú "
+#~ "rằng « Tiêu điểm dưới chuột » và « Tiêu điểm dưới chính xác chuột » ngăn "
+#~ "cản một số tính năng hoạt động cho đúng, lấy thí dụ hộp thoại đi qua các "
+#~ "cửa sổ (Alt+Tab) trong chế độ KDE."
+
+#~ msgid "Click to Focus"
+#~ msgstr "Nhắp để đặt tiêu điểm"
+
+#~ msgid "Focus Follows Mouse"
+#~ msgstr "Tiêu điểm theo chuột"
+
+#~ msgid "Focus Under Mouse"
+#~ msgstr "Tiêu điểm dưới chuột"
+
+#~ msgid "Focus Strictly Under Mouse"
+#~ msgstr "Tiêu điểm dưới chính xác chuột"
+
 #~ msgid ""
 #~ "When enabled, this feature activates the border of maximized windows and "
 #~ "allows you to move or resize them, just like for normal windows"
@@ -1658,14 +1744,8 @@ msgstr "Vùng đính"
 #~ msgid "Apply translucency only to decoration"
 #~ msgstr "Chỉ đồ trang trí có trong mờ"
 
-#~ msgid "Active windows:"
-#~ msgstr "Cửa sổ hoạt động:"
-
 #~ msgid "Inactive windows:"
 #~ msgstr "Cửa sổ bị động:"
-
-#~ msgid "Moving windows:"
-#~ msgstr "Cửa sổ di chuyển:"
 
 #~ msgid "Dock windows:"
 #~ msgstr "Cửa sổ Neo :"

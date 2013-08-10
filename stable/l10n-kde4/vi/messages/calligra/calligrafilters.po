@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kofficefilters\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:41+0000\n"
+"POT-Creation-Date: 2013-08-10 05:22+0000\n"
 "PO-Revision-Date: 2012-01-09 00:52+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -87,15 +87,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: flow/imageexport/flow_imageexport.cpp:91
+#: kchart/genericimageexport/genericimageexport.cpp:67
 msgid "Failed to read data."
 msgstr "Không đọc được dữ liệu."
 
 #: flow/imageexport/flow_imageexport.cpp:91
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:68
+#: kchart/genericimageexport/genericimageexport.cpp:81
 msgid "Export Error"
 msgstr "Lỗi Xuất"
 
 #: flow/imageexport/flow_imageexport.cpp:102
+#: kchart/genericimageexport/genericimageexport.cpp:80
 msgid "Malformed XML data."
 msgstr "Dữ liệu XML không hợp lệ."
 
@@ -131,11 +135,13 @@ msgstr "Cỡ tự chọn (đo bằng điểm ảnh):"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:108
+#: libdialogfilter/exportsizedia.cpp:87
 msgid "Height:"
 msgstr "Chiều cao:"
 
 #. i18n: ectx: property (text), widget (QLabel)
 #: flow/imageexport/flow_imageexportwidget.ui:119
+#: libdialogfilter/exportsizedia.cpp:82
 msgid "Width:"
 msgstr "Chiều rộng:"
 
@@ -144,7 +150,27 @@ msgstr "Chiều rộng:"
 msgid "Margin:"
 msgstr "Lề:"
 
-#: karbon/image/ImageExport.cpp:97
+#: karbon/eps/EpsExportDlg.cpp:37
+msgid "EPS Export"
+msgstr "Xuất EPS"
+
+#: karbon/eps/EpsExportDlg.cpp:42
+msgid "Options"
+msgstr "Tùy chọn"
+
+#: karbon/eps/EpsExportDlg.cpp:45
+msgid "PostScript level 1"
+msgstr "PostScript cấp 1"
+
+#: karbon/eps/EpsExportDlg.cpp:46
+msgid "PostScript level 2"
+msgstr "PostScript cấp 2"
+
+#: karbon/eps/EpsExportDlg.cpp:47
+msgid "PostScript level 3"
+msgstr "PostScript cấp 3"
+
+#: karbon/image/ImageExport.cpp:99
 msgid "PNG Export Options"
 msgstr "Cấu hình Xuất PNG "
 
@@ -203,6 +229,36 @@ msgstr "Không gian màu"
 msgid "Opacity"
 msgstr ""
 
+#: kchart/genericimageexport/genericimageexport.cpp:122
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "Failed to write file."
+msgstr "Không thể viết tập tin."
+
+#: kchart/genericimageexport/genericimageexport.cpp:123
+#, kde-format
+msgid "%1 Export Error"
+msgstr "Lỗi Xuất %1"
+
+#: libdialogfilter/exportsizedia.cpp:42
+msgid "Export Filter Parameters"
+msgstr "Tham số cho Bộ lọc Xuất"
+
+#: libdialogfilter/exportsizedia.cpp:76
+msgid "Keep ratio"
+msgstr "Giữ tỉ lệ"
+
+#: libdialogfilter/exportsizedia.cpp:98
+msgid "Width (%):"
+msgstr "Chiều rộng (%):"
+
+#: libdialogfilter/exportsizedia.cpp:103
+msgid "Height (%):"
+msgstr "Chiều cao (%):"
+
+#: libdialogfilter/exportsizedia.cpp:266
+msgid "PNG Export Error"
+msgstr "Lỗi Xuất PNG"
+
 #: libmsooxml/MsooXmlDocPropertiesReader.cpp:75
 #: libmsooxml/MsooXmlReader.cpp:182 libmsooxml/MsooXmlThemesReader.cpp:363
 #: sheets/xlsx/XlsxXmlCommentsReader.cpp:108
@@ -213,15 +269,15 @@ msgstr ""
 #: sheets/xlsx/XlsxXmlWorksheetReader.cpp:301
 #: stage/pptx/PptxXmlDocumentReader.cpp:151
 #: stage/pptx/PptxXmlSlideReader.cpp:333
-#: words/docx/import/DocxXmlCommentsReader.cpp:89
-#: words/docx/import/DocxXmlDocumentReader.cpp:201
-#: words/docx/import/DocxXmlEndnoteReader.cpp:90
-#: words/docx/import/DocxXmlFontTableReader.cpp:89
-#: words/docx/import/DocxXmlFooterReader.cpp:95
-#: words/docx/import/DocxXmlFootnoteReader.cpp:90
-#: words/docx/import/DocxXmlHeaderReader.cpp:95
-#: words/docx/import/DocxXmlNumberingReader.cpp:87
-#: words/docx/import/DocxXmlSettingsReader.cpp:87
+#: words/docx/DocxXmlCommentsReader.cpp:89
+#: words/docx/DocxXmlDocumentReader.cpp:201
+#: words/docx/DocxXmlEndnoteReader.cpp:90
+#: words/docx/DocxXmlFontTableReader.cpp:89
+#: words/docx/DocxXmlFooterReader.cpp:95
+#: words/docx/DocxXmlFootnoteReader.cpp:90
+#: words/docx/DocxXmlHeaderReader.cpp:95
+#: words/docx/DocxXmlNumberingReader.cpp:87
+#: words/docx/DocxXmlSettingsReader.cpp:87
 #, kde-format
 msgid "Namespace \"%1\" not found"
 msgstr ""
@@ -356,48 +412,188 @@ msgstr ""
 msgid "Could not write block"
 msgstr "Không thể đọc từ tập tin."
 
-#: sheets/csv/csvexport.cc:282
-msgid "<SHEETNAME>"
-msgstr "<TÊNTỜ>"
+#: sheets/csv/csvdialog.cpp:61
+msgid "Import"
+msgstr "Nhập"
 
-#: sheets/csv/csvexportdialog.cpp:46 words/ascii/ImportDialog.cc:50
+#: sheets/csv/csvdialog.cpp:65 sheets/csv/csvexportdialog.cpp:46
+#: words/ascii/ImportDialog.cc:49
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Recommended ( %1 )"
 msgstr "Khuyên dùng ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:47 words/ascii/ImportDialog.cc:51
+#: sheets/csv/csvdialog.cpp:66 sheets/csv/csvexportdialog.cpp:47
+#: words/ascii/ImportDialog.cc:50
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Locale ( %1 )"
 msgstr "Miền địa phương (%1)"
 
-#: sheets/csv/csvexportdialog.cpp:50 words/ascii/ImportDialog.cc:54
+#: sheets/csv/csvdialog.cpp:69 sheets/csv/csvexportdialog.cpp:50
+#: words/ascii/ImportDialog.cc:53
 #, kde-format
 msgctxt "Descriptive encoding name"
 msgid "Other ( %1 )"
 msgstr "Khác ( %1 )"
 
-#: sheets/csv/csvexportdialog.cpp:284 words/ascii/ImportDialog.cc:108
+#: sheets/csv/csvdialog.cpp:75 sheets/csv/csvdialog.cpp:276
+#: sheets/csv/csvdialog.cpp:334
+#, fuzzy
+msgid "Text"
+msgstr "Chữ"
+
+#: sheets/csv/csvdialog.cpp:76 sheets/csv/csvdialog.cpp:336
+msgid "Number"
+msgstr "Số"
+
+#: sheets/csv/csvdialog.cpp:77 sheets/csv/csvdialog.cpp:338
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#: sheets/csv/csvdialog.cpp:78 sheets/csv/csvdialog.cpp:340
+msgid "Date"
+msgstr "Ngày tháng"
+
+#: sheets/csv/csvdialog.cpp:79 sheets/csv/csvdialog.cpp:342
+msgid "Decimal Comma Number"
+msgstr ""
+
+#: sheets/csv/csvdialog.cpp:80 sheets/csv/csvdialog.cpp:344
+msgid "Decimal Point Number"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/csvdialog.cpp:454 sheets/csv/dialogui.ui:275
+msgid "None"
+msgstr "Không"
+
+#: sheets/csv/csvdialog.cpp:480
+msgid ""
+"Please check the ranges you specified. The start value must be lower than "
+"the end value."
+msgstr ""
+"Hãy kiểm tra lại khoảng mà bạn chỉ định. Giá trị bắt đầu phải thấp hơn giá "
+"trị kết thúc."
+
+#: sheets/csv/csvdialog.cpp:522 sheets/csv/csvexportdialog.cpp:284
+#: words/ascii/ImportDialog.cc:107
 #, kde-format
 msgid "Cannot find encoding: %1"
 msgstr "Không thể tìm thấy bộ mã: %1"
 
-#: sheets/csv/csvimport.cc:93
+#: sheets/csv/csvexport.cc:283
+msgid "<SHEETNAME>"
+msgstr "<TÊNTỜ>"
+
+#: sheets/csv/csvimport.cc:92
 msgid "CSV filter cannot open input file - please report."
 msgstr "Bộ lọc CSV không thể mở tập tin đầu vào - xin thông báo lại."
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
 #. i18n: ectx: attribute (title), widget (QWidget, encodingPage)
-#: sheets/csv/exportdialogui.ui:27
-#: sheets/latex/export/latexexportwidget.ui:219
+#: sheets/csv/dialogui.ui:52 sheets/csv/exportdialogui.ui:27
+#: sheets/latex/export/latexexportdia.ui:344
 msgid "Encoding"
 msgstr "Bộ mã"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: sheets/csv/exportdialogui.ui:35 words/ascii/ImportDialogUI.ui:24
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: sheets/csv/dialogui.ui:66 sheets/csv/exportdialogui.ui:35
+#: words/ascii/ImportDialogUI.ui:30
 msgid "E&ncoding:"
 msgstr "&Bộ mã:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:124
+#, fuzzy
+msgid "Common"
+msgstr "Chung"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_delimiterBox)
+#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
+#: sheets/csv/dialogui.ui:141 sheets/csv/exportdialogui.ui:222
+msgid "Delimiter"
+msgstr "Dấu phân cách"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
+#: sheets/csv/dialogui.ui:153 sheets/csv/exportdialogui.ui:228
+msgid "Comma"
+msgstr "Dấu phẩy"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
+#: sheets/csv/dialogui.ui:163 sheets/csv/exportdialogui.ui:238
+msgid "Semicolon"
+msgstr "Dấu chấm phẩy"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
+#: sheets/csv/dialogui.ui:170 sheets/csv/exportdialogui.ui:245
+msgid "Tabulator"
+msgstr "Tab"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
+#: sheets/csv/dialogui.ui:177 sheets/csv/exportdialogui.ui:252
+#, fuzzy
+msgid "Space"
+msgstr "Khoảng trống"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
+#: sheets/csv/dialogui.ui:184
+msgid "Other"
+msgstr "Khác"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_ignoreDuplicates)
+#: sheets/csv/dialogui.ui:212
+msgid "Ignore duplicate delimiters"
+msgstr "Bỏ qua dấu phân cách bị lặp lại"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: sheets/csv/dialogui.ui:227
+msgid "Text&quote:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: sheets/csv/dialogui.ui:240
+msgid "&Format:"
+msgstr "Định &dạng:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:265 sheets/csv/exportdialogui.ui:329
+msgid "\""
+msgstr "\""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
+#: sheets/csv/dialogui.ui:270 sheets/csv/exportdialogui.ui:334
+msgid "'"
+msgstr "'"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: sheets/csv/dialogui.ui:316
+#, fuzzy
+msgid "Ranges"
+msgstr "Khoảng"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: sheets/csv/dialogui.ui:337 sheets/csv/dialogui.ui:390
+msgid "to"
+msgstr "đến"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3)
+#: sheets/csv/dialogui.ui:370
+msgid "Import lines:"
+msgstr "Nhập các dòng:"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel3_2)
+#: sheets/csv/dialogui.ui:430
+msgid "Import columns:"
+msgstr "Nhập các cột:"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_updateButton)
+#: sheets/csv/dialogui.ui:504
+msgid "Update"
+msgstr "Cập nhật"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupEndOfLine)
 #: sheets/csv/exportdialogui.ui:76
@@ -460,32 +656,6 @@ msgstr "In dòng phân cách phía trên mọi trang"
 msgid "Cells"
 msgstr "Các ô"
 
-#. i18n: ectx: property (title), widget (KButtonGroup, m_delimiterBox)
-#: sheets/csv/exportdialogui.ui:222
-msgid "Delimiter"
-msgstr "Dấu phân cách"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioComma)
-#: sheets/csv/exportdialogui.ui:228
-msgid "Comma"
-msgstr "Dấu phẩy"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSemicolon)
-#: sheets/csv/exportdialogui.ui:238
-msgid "Semicolon"
-msgstr "Dấu chấm phẩy"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioTab)
-#: sheets/csv/exportdialogui.ui:245
-msgid "Tabulator"
-msgstr "Tab"
-
-#. i18n: ectx: property (text), widget (QRadioButton, m_radioSpace)
-#: sheets/csv/exportdialogui.ui:252
-#, fuzzy
-msgid "Space"
-msgstr "Khoảng trống"
-
 #. i18n: ectx: property (text), widget (QRadioButton, m_radioOther)
 #: sheets/csv/exportdialogui.ui:259
 msgid "Other:"
@@ -496,16 +666,6 @@ msgstr "Khác:"
 #, fuzzy
 msgid "Quotes:"
 msgstr "Dấu ngoặc:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:329
-msgid "\""
-msgstr "\""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, m_comboQuote)
-#: sheets/csv/exportdialogui.ui:334
-msgid "'"
-msgstr "'"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_selectionOnly)
 #: sheets/csv/exportdialogui.ui:365
@@ -652,49 +812,55 @@ msgstr ""
 msgid "Pi&xels between cells:"
 msgstr "Số điểm ảnh &giữa các ô:"
 
-#: sheets/html/htmlexport.cc:208 sheets/html/htmlexport.cc:384
+#: sheets/html/htmlexport.cc:209 sheets/html/htmlexport.cc:385
 msgid "Top"
 msgstr "Trên"
 
-#: sheets/latex/export/latexexportdialog.cc:156
+#. i18n: ectx: property (caption), widget (QDialog)
+#: sheets/latex/export/latexexportdia.ui:18
 msgid "Latex Export Filter Configuration"
 msgstr "Cấu hình Bộ lọc Xuất LaTeX"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Widget2)
-#: sheets/latex/export/latexexportwidget.ui:24
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:45
 msgid "Document"
 msgstr "Tài liệu"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: sheets/latex/export/latexexportwidget.ui:32
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:82
 msgid "Document Style"
 msgstr "Kiểu Tài liệu"
 
-#. i18n: ectx: property (text), widget (QRadioButton, latexStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:38
-msgid "Latex style"
-msgstr "Kiểu LaTeX"
-
-#. i18n: ectx: property (text), widget (QRadioButton, wordsStyleButton)
-#: sheets/latex/export/latexexportwidget.ui:45
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:97
 #, fuzzy
 #| msgid "KWord style"
 msgid "Words style"
 msgstr "Kiểu KWord"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: sheets/latex/export/latexexportwidget.ui:58
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:116
+msgid "Latex style"
+msgstr "Kiểu LaTeX"
+
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:133
 msgid "Document Type"
 msgstr "Loại Tài liệu"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:64
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:148
+msgid "Independent document"
+msgstr "Tài liệu độc lập"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:154
 #, fuzzy
 msgid "The document will be able to be compiled alone"
 msgstr "Tài liệu này có thể được biên dịch riêng"
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:67
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:157
 #, fuzzy
 msgid ""
 "The document will be generated as a full latex document since all the "
@@ -705,18 +871,19 @@ msgstr ""
 "các tài liệu cần bao gồm sẽ được tạo ra trước các lệnh \\begin{document} và "
 "\\end{document}."
 
-#. i18n: ectx: property (text), widget (QRadioButton, fullDocButton)
-#: sheets/latex/export/latexexportwidget.ui:70
-msgid "Independent document"
-msgstr "Tài liệu độc lập"
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:173
+#, fuzzy
+msgid "Document to include"
+msgstr "Tài liệu cần bao gồm"
 
-#. i18n: ectx: property (toolTip), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:80
+#. i18n: ectx: property (toolTip), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:176
 msgid "Do not generate either the latex header or the document environment"
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:83
+#. i18n: ectx: property (whatsThis), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:179
 #, fuzzy
 msgid ""
 "The document will be generated as a latex document which will have to be "
@@ -727,127 +894,141 @@ msgstr ""
 "LaTeX chính. Nó cho phép bạn tạo ra nhiều tập tin nhỏ cho mỗi chương trong "
 "tài liệu của bạn."
 
-#. i18n: ectx: property (text), widget (QRadioButton, embededButton)
-#: sheets/latex/export/latexexportwidget.ui:86
-#, fuzzy
-msgid "Document to include"
-msgstr "Tài liệu cần bao gồm"
-
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: sheets/latex/export/latexexportwidget.ui:98
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:196
 msgid "Document class:"
 msgstr "Loại tài liệu:"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: sheets/latex/export/latexexportwidget.ui:111
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:212
 msgid "Quality:"
 msgstr "Chất lượng:"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:122
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:228
+msgid "Default font size:"
+msgstr "Cỡ phông mặc định:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:247
 #, fuzzy
 msgid "Final"
 msgstr "Cuối cùng"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, qualityComboBox)
-#: sheets/latex/export/latexexportwidget.ui:127
+#. i18n: ectx: property (text), item, widget (KComboBox)
+#: sheets/latex/export/latexexportdia.ui:252
 #, fuzzy
 msgid "Draft"
 msgstr "Nháp"
 
-#. i18n: ectx: property (text), widget (QLabel, defaultFontSizeTextZone)
-#: sheets/latex/export/latexexportwidget.ui:135
-msgid "Default font size:"
-msgstr "Cỡ phông mặc định:"
-
-#. i18n: ectx: attribute (title), widget (QWidget, Widget3)
-#: sheets/latex/export/latexexportwidget.ui:176
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:273
 msgid "Pictures"
 msgstr "Ảnh"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: sheets/latex/export/latexexportwidget.ui:182
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:301
 #, fuzzy
 #| msgid "Convert the pictures"
-msgid "Convert the pictures:"
+msgid "Convert the pictures"
 msgstr "Chuyển đổi các ảnh"
 
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: sheets/latex/export/latexexportwidget.ui:199
+#. i18n: ectx: property (text), widget (QLabel)
+#: sheets/latex/export/latexexportdia.ui:320
 msgid "Pictures directory:"
 msgstr "Thư mục ảnh:"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
-#: sheets/latex/export/latexexportwidget.ui:213
-#: sheets/latex/export/latexexportwidget.ui:244
+#. i18n: ectx: attribute (title), widget (QWidget)
+#. i18n: ectx: property (title), widget (QGroupBox)
+#: sheets/latex/export/latexexportdia.ui:329
+#: sheets/latex/export/latexexportdia.ui:376
 msgid "Language"
 msgstr "Ngôn ngữ"
 
-#. i18n: ectx: property (text), widget (QPushButton, addLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:261
-msgid "Add"
-msgstr "Thêm"
-
-#. i18n: ectx: property (text), widget (QPushButton, rmLanguageBtn)
-#: sheets/latex/export/latexexportwidget.ui:268
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:391
 msgid "Remove"
 msgstr "Xóa"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: sheets/latex/export/latexexportwidget.ui:293
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:407
+msgid "Add"
+msgstr "Thêm"
+
+#. i18n: ectx: attribute (title), widget (QWidget)
+#: sheets/latex/export/latexexportdia.ui:443
 msgid "Contents"
 msgstr "Nội dung"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: sheets/latex/export/latexexportwidget.ui:301
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:461
 #, fuzzy
 #| msgid "Export informations about author"
-msgid "Export information about author:"
+msgid "Export information about author"
 msgstr "Xuất thông tin về tác giả"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: sheets/latex/export/latexexportwidget.ui:321
+#. i18n: ectx: property (text), widget (QCheckBox)
+#: sheets/latex/export/latexexportdia.ui:483
 #, fuzzy
 #| msgid "Add a table of content"
-msgid "Add a table of content:"
+msgid "Add a table of content"
 msgstr "Thêm mục lục"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_5)
-#: sheets/latex/export/latexexportwidget.ui:340
+#. i18n: ectx: property (title), widget (Q3ButtonGroup)
+#: sheets/latex/export/latexexportdia.ui:502
 msgid "Notes"
 msgstr "Ghi chú"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton7)
-#: sheets/latex/export/latexexportwidget.ui:346
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:517
 msgid "Don't export"
 msgstr "Không xuất"
 
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton5)
-#: sheets/latex/export/latexexportwidget.ui:353
-#, fuzzy
-msgid "Export notes in margin notes"
-msgstr "Xuất các ghi chú thành ghi chú bên lề"
-
-#. i18n: ectx: property (text), widget (QRadioButton, RadioButton6)
-#: sheets/latex/export/latexexportwidget.ui:360
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:533
 #, fuzzy
 msgid "Export notes in comments"
 msgstr "Xuất các ghi chú thành phần chú thích"
 
-#: sheets/opencalc/opencalcexport.cc:914
+#. i18n: ectx: property (text), widget (QRadioButton)
+#: sheets/latex/export/latexexportdia.ui:549
+#, fuzzy
+msgid "Export notes in margin notes"
+msgstr "Xuất các ghi chú thành ghi chú bên lề"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:574
+msgid "&Help"
+msgstr "&Trợ giúp"
+
+#. i18n: ectx: property (accel), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:577
+msgid "F1"
+msgstr "F1"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:605
+msgid "&OK"
+msgstr "Đượ&c"
+
+#. i18n: ectx: property (text), widget (QPushButton)
+#: sheets/latex/export/latexexportdia.ui:619
+msgid "&Cancel"
+msgstr "&Dừng"
+
+#: sheets/opencalc/opencalcexport.cc:918
 msgid "Page "
 msgstr "Trang"
 
-#: sheets/opencalc/opencalcimport.cc:1235
+#: sheets/opencalc/opencalcimport.cc:1236
 msgid "The file seems to be corrupt. Skipping a table."
 msgstr "Tập tin có thể bị lỗi. Bỏ qua một bảng."
 
-#: sheets/opencalc/opencalcimport.cc:1246
+#: sheets/opencalc/opencalcimport.cc:1247
 msgid "Skipping a table."
 msgstr "Bỏ qua một bảng."
 
-#: sheets/opencalc/opencalcimport.cc:1946
+#: sheets/opencalc/opencalcimport.cc:1947
 #, fuzzy, kde-format
 msgid ""
 "This document was created with OpenOffice.org version '%1'. This filter was "
@@ -860,15 +1041,15 @@ msgstr ""
 "hoặc hiển thị dữ liệu không chính xác. Bạn có muốn tiếp tục chuyển đổi tài "
 "liệu?"
 
-#: sheets/opencalc/opencalcimport.cc:1947
+#: sheets/opencalc/opencalcimport.cc:1948
 msgid "Unsupported document version"
 msgstr "Phiên bản tài liệu không được hỗ trợ"
 
-#: sheets/qpro/qproimport.cc:127
+#: sheets/qpro/qproimport.cc:128
 msgid "QPRO filter cannot open input file - please report."
 msgstr "Bộ lọc QPRO không thể mở tập tin đầu vào - xin thông báo lại."
 
-#: sheets/qpro/qproimport.cc:238
+#: sheets/qpro/qproimport.cc:239
 msgid ""
 "Unable to open password protected files.\n"
 "The password algorithm has not been published"
@@ -877,7 +1058,7 @@ msgstr ""
 "chưa được công bố"
 
 #: sheets/xlsx/XlsxImport.cpp:571 stage/pptx/PptxImport.cpp:1097
-#: words/docx/import/DocxImport.cpp:168
+#: words/docx/DocxImport.cpp:168
 #, fuzzy, kde-format
 #| msgid "Could not read from file."
 msgid "Unable to find part for type %1"
@@ -924,7 +1105,7 @@ msgstr "Ghi chú cuối %1"
 msgid "Slide %1"
 msgstr "Tiêu đề Ảnh chiếu"
 
-#: words/ascii/ImportDialog.cc:46
+#: words/ascii/ImportDialog.cc:45
 #, fuzzy
 msgid "Words's Plain Text Import Filter"
 msgstr "Bộ lọc Nhập Văn bản không được định dạng của KWord"
@@ -935,28 +1116,28 @@ msgid "Plain Text Import Dialog"
 msgstr "Hộp thoại Nhập Văn bản không có định dạng"
 
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroupParagraph)
-#: words/ascii/ImportDialogUI.ui:65
+#: words/ascii/ImportDialogUI.ui:71
 #, fuzzy
 msgid "End of Paragraph"
 msgstr "Cuối đoạn"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphAsIs)
-#: words/ascii/ImportDialogUI.ui:71
+#: words/ascii/ImportDialogUI.ui:83
 #, fuzzy
 msgid "&As is: At the end of line"
 msgstr "&Như là: cuối của dòng"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphSentence)
-#: words/ascii/ImportDialogUI.ui:81
+#: words/ascii/ImportDialogUI.ui:93
 msgid "&Sentence: If the end of line is the end of a sentence"
 msgstr "&Câu: nếu cuối dòng là cuối một câu"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioParagraphEmptyLine)
-#: words/ascii/ImportDialogUI.ui:88
+#: words/ascii/ImportDialogUI.ui:100
 msgid "&Empty Line: If the line is empty"
 msgstr ""
 
-#: words/epub/OdtHtmlConverter.cpp:304 words/mobi/OdtMobiHtmlConverter.cpp:325
+#: words/epub/OdtHtmlConverter.cpp:299 words/mobi/OdtMobiHtmlConverter.cpp:325
 #, fuzzy
 msgid "End notes"
 msgstr "Kí tự xuống dòng"
@@ -1006,109 +1187,6 @@ msgstr "Bộ lọc Nhập RTF của KWor"
 #| msgid "The file cannot be loaded, as it cannot be opened."
 msgid "The file cannot be loaded."
 msgstr "Không thể tải tập tin vì không mở được nó."
-
-#~ msgid "Failed to write file."
-#~ msgstr "Không thể viết tập tin."
-
-#~ msgid "%1 Export Error"
-#~ msgstr "Lỗi Xuất %1"
-
-#~ msgid "Export Filter Parameters"
-#~ msgstr "Tham số cho Bộ lọc Xuất"
-
-#~ msgid "Keep ratio"
-#~ msgstr "Giữ tỉ lệ"
-
-#~ msgid "Width (%):"
-#~ msgstr "Chiều rộng (%):"
-
-#~ msgid "Height (%):"
-#~ msgstr "Chiều cao (%):"
-
-#~ msgid "PNG Export Error"
-#~ msgstr "Lỗi Xuất PNG"
-
-#~ msgid "EPS Export"
-#~ msgstr "Xuất EPS"
-
-#~ msgid "Options"
-#~ msgstr "Tùy chọn"
-
-#~ msgid "PostScript level 1"
-#~ msgstr "PostScript cấp 1"
-
-#~ msgid "PostScript level 2"
-#~ msgstr "PostScript cấp 2"
-
-#~ msgid "PostScript level 3"
-#~ msgstr "PostScript cấp 3"
-
-#~ msgid "Import"
-#~ msgstr "Nhập"
-
-#, fuzzy
-#~ msgid "Text"
-#~ msgstr "Chữ"
-
-#~ msgid "Number"
-#~ msgstr "Số"
-
-#~ msgid "Currency"
-#~ msgstr "Tiền tệ"
-
-#~ msgid "Date"
-#~ msgstr "Ngày tháng"
-
-#~ msgid "None"
-#~ msgstr "Không"
-
-#~ msgid ""
-#~ "Please check the ranges you specified. The start value must be lower than "
-#~ "the end value."
-#~ msgstr ""
-#~ "Hãy kiểm tra lại khoảng mà bạn chỉ định. Giá trị bắt đầu phải thấp hơn "
-#~ "giá trị kết thúc."
-
-#, fuzzy
-#~ msgid "Common"
-#~ msgstr "Chung"
-
-#~ msgid "Other"
-#~ msgstr "Khác"
-
-#~ msgid "Ignore duplicate delimiters"
-#~ msgstr "Bỏ qua dấu phân cách bị lặp lại"
-
-#~ msgid "&Format:"
-#~ msgstr "Định &dạng:"
-
-#, fuzzy
-#~ msgid "Ranges"
-#~ msgstr "Khoảng"
-
-#~ msgid "to"
-#~ msgstr "đến"
-
-#~ msgid "Import lines:"
-#~ msgstr "Nhập các dòng:"
-
-#~ msgid "Import columns:"
-#~ msgstr "Nhập các cột:"
-
-#~ msgid "Update"
-#~ msgstr "Cập nhật"
-
-#~ msgid "&Help"
-#~ msgstr "&Trợ giúp"
-
-#~ msgid "F1"
-#~ msgstr "F1"
-
-#~ msgid "&OK"
-#~ msgstr "Đượ&c"
-
-#~ msgid "&Cancel"
-#~ msgstr "&Dừng"
 
 #, fuzzy
 #~| msgid ""

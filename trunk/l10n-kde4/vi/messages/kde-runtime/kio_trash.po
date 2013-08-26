@@ -1,30 +1,30 @@
 # Vietnamese translation for kio_trash.
 # Copyright © 2006 Free Software Foundation, Inc.
-# Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006.
 #
+# Phan Vĩnh Thịnh <teppi82@gmail.com>, 2006, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kio_trash\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-07-04 01:40+0000\n"
-"PO-Revision-Date: 2006-04-13 15:59+0930\n"
-"Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
-"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"PO-Revision-Date: 2013-08-26 20:28+0800\n"
+"Last-Translator: herop-kde\n"
+"Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: KBabel 1.10\n"
+"X-Generator: Lokalize 1.5\n"
 
 #: kcmtrash.cpp:158 kcmtrash.cpp:256
 msgid " day"
 msgid_plural " days"
-msgstr[0] ""
+msgstr[0] " ngày"
 
 #: kcmtrash.cpp:247
 msgid "Delete files older than:"
-msgstr ""
+msgstr "Xoá những tập tin cũ hơn:"
 
 #: kcmtrash.cpp:249
 msgctxt "@info:whatsthis"
@@ -33,6 +33,9 @@ msgid ""
 "older than the value specified. Leave this disabled to <b>not</b> "
 "automatically delete any items after a certain timespan</para>"
 msgstr ""
+"<para>Chọn để cho phép <b>tự động xoá</b> các tập tin cũ hơn giá trị được "
+"nhập. Không chọn "
+"để không tự động xoá tập tin nào</para>"
 
 #: kcmtrash.cpp:258
 msgctxt "@info:whatsthis"
@@ -40,10 +43,12 @@ msgid ""
 "<para>Set the number of days that files can remain in the trash. Any files "
 "older than this will be automatically deleted.</para>"
 msgstr ""
+"<para>Đặt số ngày mà một tập tin được lưu giữ trong thùng rác. Bất kỳ tập "
+"tin nào cũ hơn sẽ tự động được xoá.</para>"
 
 #: kcmtrash.cpp:266
 msgid "Limit to maximum size"
-msgstr ""
+msgstr "Giới hạn kích thước tối đa"
 
 #: kcmtrash.cpp:268
 msgctxt "@info:whatsthis"
@@ -51,6 +56,9 @@ msgid ""
 "<para>Check this box to limit the trash to the maximum amount of disk space "
 "that you specify below. Otherwise, it will be unlimited.</para>"
 msgstr ""
+"<para>Chọn để giới hạn dung lượng đĩa tối đa dành cho thùng rác. Sẽ không có "
+"giới hạn nào "
+"nếu không chọn.</para>"
 
 #: kcmtrash.cpp:286
 msgctxt "@info:whatsthis"
@@ -58,6 +66,7 @@ msgid ""
 "<para>This is the maximum percent of disk space that will be used for the "
 "trash.</para>"
 msgstr ""
+"<para>Đây là số phần trăm dung lượng đĩa tối đa dành cho thùng rác.</para>"
 
 #: kcmtrash.cpp:291
 msgctxt "@info:whatsthis"
@@ -68,23 +77,23 @@ msgstr ""
 
 #: kcmtrash.cpp:294
 msgid "Maximum size:"
-msgstr ""
+msgstr "Kích thước tối đa:"
 
 #: kcmtrash.cpp:296
 msgid "When limit reached:"
-msgstr ""
+msgstr "Khi đạt giới hạn:"
 
 #: kcmtrash.cpp:300
 msgid "Warn Me"
-msgstr ""
+msgstr "Hãy cảnh báo tôi"
 
 #: kcmtrash.cpp:301
 msgid "Delete Oldest Files From Trash"
-msgstr ""
+msgstr "Xoá các tập tin cũ nhất trong thùng rác"
 
 #: kcmtrash.cpp:302
 msgid "Delete Biggest Files From Trash"
-msgstr ""
+msgstr "Xoá các tập tin lớn nhất trong thùng rác"
 
 #: kcmtrash.cpp:304
 msgctxt "@info:whatsthis"
@@ -93,6 +102,9 @@ msgid ""
 "files that you specify, first. If this is set to warn you, it will do so "
 "instead of automatically deleting files.</para>"
 msgstr ""
+"<para>Khi đạt giới hạn dung lượng, thùng rác sẽ ưu tiên xoá kiểu tập tin "
+"mà bạn đã chọn trước. Nếu được chọn là cảnh báo, nó sẽ làm như vậy thay "
+"vì xoá bất cứ tập tin nào.</para>"
 
 #: kio_trash.cpp:92 kio_trash.cpp:155 kio_trash.cpp:310 kio_trash.cpp:342
 #: kio_trash.cpp:510 kio_trash.cpp:522
@@ -118,18 +130,17 @@ msgstr "Tập tin này đã nằm trong thùng rác."
 
 #: kio_trash.cpp:228 kio_trash_win.cpp:252
 msgid "Internal error in copyOrMove, should never happen"
-msgstr ""
+msgstr "Lỗi nội bộ trong copyOrMove. Lỗi này không nên xảy ra."
 
 #: kio_trash_win.cpp:241
 msgid "not supported"
-msgstr ""
+msgstr "không hỗ trợ"
 
 #: ktrash.cpp:32
 msgid "ktrash"
 msgstr "ktrash"
 
 #: ktrash.cpp:34
-#, fuzzy
 #| msgid ""
 #| "Helper program to handle the KDE trash can\n"
 #| "Note: to move files to the trash, do not use ktrash, but \"kfmclient move "
@@ -139,9 +150,10 @@ msgid ""
 "Note: to move files to the trash, do not use ktrash, but \"kioclient move "
 "'url' trash:/\""
 msgstr ""
-"Chương trình giúp điều khiển sọt rác của KDE\n"
-"Chú ý: để chuyển tập tin tới sọt rác, đừng dùng ktrash, mà dùng \"kfmclient "
-"move 'url' trash:/\""
+"Chương trình hỗ trợ để quản lý thùng rác KDE\n"
+"Lưu ý: để di chuyển tập tin vào thùng rác, hãy sử dụng \"kioclient move 'url' "
+"trash:/\" "
+"thay vì ktrash"
 
 #: ktrash.cpp:38
 msgid "Empty the contents of the trash"
@@ -160,12 +172,13 @@ msgid ""
 "The trash has reached its maximum size!\n"
 "Cleanup the trash manually."
 msgstr ""
+"Thùng rác đã đạt giới hạn dung lượng tối đa!\n"
+"Hãy dọn dẹp thùng rác."
 
 #: trashimpl.cpp:1137
-#, fuzzy
 #| msgid "This file is already in the trash bin."
 msgid "The file is too large to be trashed."
-msgstr "Tập tin này đã nằm trong thùng rác."
+msgstr "Không thể bỏ thùng rác tập tin này do kích thước quá lớn."
 
 #~ msgid "Protocol name"
 #~ msgstr "Tên giao thức"

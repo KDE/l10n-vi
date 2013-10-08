@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-09-28 01:33+0000\n"
+"POT-Creation-Date: 2013-10-08 01:35+0000\n"
 "PO-Revision-Date: 2012-06-13 11:10+0800\n"
 "Last-Translator: HeroP <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -98,6 +98,34 @@ msgstr "Ứng dụng"
 msgctxt "@action Checks the Internet for updates"
 msgid "Check for Updates"
 msgstr "Tìm bản cập nhật"
+
+#: libmuon/backends/ApplicationBackend/ApplicationNotifier.cpp:50
+#, fuzzy
+#| msgid "Notification type:"
+msgid "Muon Notification Daemon"
+msgstr "Kiểu thông báo:"
+
+#: libmuon/backends/ApplicationBackend/ApplicationNotifier.cpp:51
+#, fuzzy
+#| msgid "Show notifications for:"
+msgid "A Notification Daemon for Muon"
+msgstr "Hiện thông báo cho:"
+
+#: libmuon/backends/ApplicationBackend/ApplicationNotifier.cpp:53
+msgid ""
+"(C) 2013 Lukas Appelhans, (C) 2009-2012 Jonathan Thomas, (C) 2009 Harald "
+"Sitter"
+msgstr ""
+
+#: libmuon/backends/ApplicationBackend/ApplicationNotifier.cpp:100
+#: libmuon/resources/AbstractKDEDModule.cpp:149
+msgid "System update available!"
+msgstr ""
+
+#: libmuon/backends/ApplicationBackend/ApplicationNotifier.cpp:101
+msgctxt "Notification when a new version of Kubuntu is available"
+msgid "A new version of Kubuntu is available"
+msgstr ""
 
 #: libmuon/backends/ApplicationBackend/ApplicationUpdates.cpp:229
 msgctxt "@title:window"
@@ -299,6 +327,62 @@ msgctxt "@label Easter Egg"
 msgid "This Muon has super cow powers"
 msgstr ""
 
+#: libmuon/resources/AbstractKDEDModule.cpp:62
+#, kde-format
+msgid "%1 update notifier"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:66
+#, kde-format
+msgid "Muon %1 update notifier"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:68
+msgid "Open Muon..."
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:69
+msgid "Quit notifier..."
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:130
+msgid "A security update is available for your system!"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:133
+#, fuzzy
+#| msgid "Applications"
+msgid "An update is available for your system!"
+msgstr "Ứng dụng"
+
+#: libmuon/resources/AbstractKDEDModule.cpp:138
+#, kde-format
+msgid ""
+"There are %1 updated packages, of which %2 were updated for security reasons!"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:140
+#, kde-format
+msgid "There are %1 update packages!"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:142
+#, kde-format
+msgid "%1 packages were updated for security reasons"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:146
+msgid "A system update is recommended"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:154
+msgid "Your system is up-to-date!"
+msgstr ""
+
+#: libmuon/resources/AbstractKDEDModule.cpp:154
+msgid "No system update available"
+msgstr ""
+
 #: libmuon/resources/AbstractResource.cpp:83
 #, fuzzy
 #| msgctxt "@info:status Package state"
@@ -326,7 +410,7 @@ msgstr "Đã cài "
 msgid "Upgradeable"
 msgstr "Nâng cấp được"
 
-#: libmuon/resources/ResourcesUpdatesModel.cpp:118
+#: libmuon/resources/ResourcesUpdatesModel.cpp:149
 #, kde-format
 msgctxt "@item:intext Remaining time"
 msgid "%1 remaining"
@@ -348,37 +432,15 @@ msgstr ""
 msgid "Installing..."
 msgstr "Đang cài"
 
-#: libmuon/settings/NotifySettingsPage.cpp:46
-msgid "Show notifications for:"
-msgstr "Hiện thông báo cho:"
-
-#: libmuon/settings/NotifySettingsPage.cpp:48
-msgid "Available updates"
-msgstr "Bản cập nhật sẵn sàng"
-
-#: libmuon/settings/NotifySettingsPage.cpp:49
-msgid "Show the number of available updates"
+#: libmuon/settings/NotifySettingsPage.cpp:66
+#, fuzzy
+#| msgid "Show the number of available updates"
+msgid "Show notifications for available updates"
 msgstr "Hiện số lượng bản cập nhật hiện có"
 
-#: libmuon/settings/NotifySettingsPage.cpp:50
-msgid "Distribution upgrades"
-msgstr "Nâng cấp bản phân phối"
-
-#: libmuon/settings/NotifySettingsPage.cpp:69
-msgid "Notification type:"
-msgstr "Kiểu thông báo:"
-
-#: libmuon/settings/NotifySettingsPage.cpp:72
-msgid "Use both popups and tray icons"
-msgstr "Sử dụng các cửa sổ bật lên và biểu tượng khay hệ thống"
-
-#: libmuon/settings/NotifySettingsPage.cpp:73
-msgid "Tray icons only"
-msgstr "Chỉ biểu tượng khay hệ thống"
-
-#: libmuon/settings/NotifySettingsPage.cpp:74
-msgid "Popup notifications only"
-msgstr "Chỉ thông báo bật lên"
+#: libmuon/settings/NotifySettingsPage.cpp:67
+msgid "Show the number of available updates"
+msgstr "Hiện số lượng bản cập nhật hiện có"
 
 #: libmuon/Transaction/TransactionModel.cpp:82
 #, fuzzy
@@ -1313,6 +1375,21 @@ msgstr "Không thể tìm thấy gói"
 msgctxt "@title:window"
 msgid "Package History"
 msgstr "Gói: %1"
+
+#~ msgid "Available updates"
+#~ msgstr "Bản cập nhật sẵn sàng"
+
+#~ msgid "Distribution upgrades"
+#~ msgstr "Nâng cấp bản phân phối"
+
+#~ msgid "Use both popups and tray icons"
+#~ msgstr "Sử dụng các cửa sổ bật lên và biểu tượng khay hệ thống"
+
+#~ msgid "Tray icons only"
+#~ msgstr "Chỉ biểu tượng khay hệ thống"
+
+#~ msgid "Popup notifications only"
+#~ msgstr "Chỉ thông báo bật lên"
 
 #~ msgctxt "Category"
 #~ msgid "Accessories"

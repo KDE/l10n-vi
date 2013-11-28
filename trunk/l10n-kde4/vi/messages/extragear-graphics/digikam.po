@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-27 01:27+0000\n"
+"POT-Creation-Date: 2013-11-28 01:27+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -7235,6 +7235,7 @@ msgid "Automatic Adjustment"
 msgstr "Điều chỉnh:"
 
 #: imageplugins/transform/freerotationtool.cpp:223
+#: libs/widgets/metadata/metadatawidget.cpp:146
 #: utilities/importui/main/importui.cpp:281
 msgid "Settings"
 msgstr "Thiết lập"
@@ -9065,6 +9066,7 @@ msgid "Shared Libraries and Components Information"
 msgstr "Hiệu chỉnh thuộc tính tập ảnh và thông tin tập hợp."
 
 #: libs/dialogs/infodlg.cpp:74 libs/widgets/common/dhistoryview.cpp:134
+#: libs/widgets/metadata/metadatawidget.cpp:163
 #, fuzzy
 #| msgid "Copy meta-data to clipboard"
 msgid "Copy to Clipboard"
@@ -14766,20 +14768,20 @@ msgstr "%1x%2 (%3Mpx)"
 msgid "Standard EXIF Tags"
 msgstr "Thẻ EXIF chuẩn"
 
-#: libs/widgets/metadata/exifwidget.cpp:153
-#: libs/widgets/metadata/iptcwidget.cpp:145
-#: libs/widgets/metadata/makernotewidget.cpp:148
-#: libs/widgets/metadata/xmpwidget.cpp:164
+#: libs/widgets/metadata/exifwidget.cpp:159
+#: libs/widgets/metadata/iptcwidget.cpp:151
+#: libs/widgets/metadata/makernotewidget.cpp:154
+#: libs/widgets/metadata/xmpwidget.cpp:170
 msgid "No description available"
 msgstr "Không có mô tả"
 
-#: libs/widgets/metadata/exifwidget.cpp:161
-#: libs/widgets/metadata/makernotewidget.cpp:156
+#: libs/widgets/metadata/exifwidget.cpp:167
+#: libs/widgets/metadata/makernotewidget.cpp:162
 msgid "EXIF File to Save"
 msgstr "Tập tin EXIF cần lưu"
 
-#: libs/widgets/metadata/exifwidget.cpp:162
-#: libs/widgets/metadata/makernotewidget.cpp:157
+#: libs/widgets/metadata/exifwidget.cpp:168
+#: libs/widgets/metadata/makernotewidget.cpp:163
 #, fuzzy
 #| msgid "EXIF binary Files (*.dat)"
 msgid "EXIF binary Files (*.exif)"
@@ -14789,11 +14791,11 @@ msgstr "Tập tin nhị phân EXIF (*.dat)"
 msgid "IPTC Records"
 msgstr "Mục ghi IPTC"
 
-#: libs/widgets/metadata/iptcwidget.cpp:153
+#: libs/widgets/metadata/iptcwidget.cpp:159
 msgid "IPTC File to Save"
 msgstr "Tập tin IPTC cần lưu"
 
-#: libs/widgets/metadata/iptcwidget.cpp:154
+#: libs/widgets/metadata/iptcwidget.cpp:160
 #, fuzzy
 #| msgid "IPTC binary Files (*.dat)"
 msgid "IPTC binary Files (*.iptc)"
@@ -14970,79 +14972,69 @@ msgstr "Chuẩn"
 msgid "Default"
 msgstr "Mặc định"
 
-#: libs/widgets/metadata/metadatawidget.cpp:127
-#, fuzzy
-#| msgid "Toggle tags view to a full list"
-msgid "Switch the tags view to a full list"
-msgstr "Bật/tắt ô xem thẻ thành danh sách đầy đủ"
-
 #: libs/widgets/metadata/metadatawidget.cpp:128
 #, fuzzy
-#| msgid "Full Text"
-msgid "Full list"
-msgstr "Văn bản đầy đủ"
+#| msgid "Orange Filter"
+msgid "Tags filter options"
+msgstr "Lọc cam"
 
-#: libs/widgets/metadata/metadatawidget.cpp:135
+#: libs/widgets/metadata/metadatawidget.cpp:131
 #, fuzzy
-#| msgid "Toggle tags view to a simple human-readable list"
-msgid ""
-"Switch the tags view to a custom human-readable list. To customize the tag "
-"filter list, go to the Metadata configuration panel."
-msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
+#| msgid "Metadata"
+msgid "Apply tags filter over metadata."
+msgstr "Siêu dữ liệu"
 
-#: libs/widgets/metadata/metadatawidget.cpp:137
+#: libs/widgets/metadata/metadatawidget.cpp:136
 #, fuzzy
-#| msgid "Custom"
-msgid "Custom list"
-msgstr "Tự chọn"
+#| msgid "Noise filter:"
+msgid "No filter"
+msgstr "Lọc nhiễu :"
 
 #: libs/widgets/metadata/metadatawidget.cpp:139
 #, fuzzy
-#| msgid "Toggle tags view to a simple human-readable list"
-msgid "Switch the tags view to a human-readable list"
-msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
+#| msgid "Photo Flash"
+msgid "Photograph"
+msgstr "Nháp ảnh chụp"
 
-#: libs/widgets/metadata/metadatawidget.cpp:140
-msgid "Human-readable list"
-msgstr ""
+#: libs/widgets/metadata/metadatawidget.cpp:142
+#: utilities/importui/widgets/albumcustomizer.cpp:116
+#: utilities/queuemanager/basetools/transform/rotate.cpp:106
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom"
+msgstr "Tự chọn"
+
+#: libs/widgets/metadata/metadatawidget.cpp:155
+#: utilities/queuemanager/views/workflowlist.cpp:98
+#, fuzzy
+#| msgid "&Tools"
+msgid "Tools"
+msgstr "&Công cụ"
+
+#: libs/widgets/metadata/metadatawidget.cpp:158
+#, fuzzy
+#| msgid "Color Space"
+msgid "Run tool over metadata tags."
+msgstr "Miền màu"
 
 #: libs/widgets/metadata/metadatawidget.cpp:161
 #, fuzzy
-#| msgid "Save meta-data to a binary file"
-msgid "Save metadata to a binary file"
-msgstr "Lưu siêu dữ liệu vào tập tin nhị phân"
+#| msgid "Movie Files"
+msgid "Save in file"
+msgstr "Tập tin phim"
 
 #: libs/widgets/metadata/metadatawidget.cpp:162
 #, fuzzy
-#| msgid "Metadata"
-msgid "Save metadata"
-msgstr "Siêu dữ liệu"
+#| msgid "Print Image..."
+msgid "Print"
+msgstr "In ảnh..."
 
-#: libs/widgets/metadata/metadatawidget.cpp:167
-#, fuzzy
-#| msgid "Print meta-data to printer"
-msgid "Print metadata to printer"
-msgstr "In siêu dữ liệu vào máy in"
-
-#: libs/widgets/metadata/metadatawidget.cpp:168
-#, fuzzy
-#| msgid "Print meta-data to printer"
-msgid "Print metadata"
-msgstr "In siêu dữ liệu vào máy in"
-
-#: libs/widgets/metadata/metadatawidget.cpp:173
-#: libs/widgets/metadata/metadatawidget.cpp:174
-#, fuzzy
-#| msgid "Copy meta-data to clipboard"
-msgid "Copy metadata to clipboard"
-msgstr "Sao chép siêu dữ liệu vào bảng nháp"
-
-#: libs/widgets/metadata/metadatawidget.cpp:336
+#: libs/widgets/metadata/metadatawidget.cpp:326
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "Tên tập tin: %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:383
+#: libs/widgets/metadata/metadatawidget.cpp:373
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>Tên tập tin: %1 (%2)</b></big></big>"
@@ -15051,13 +15043,13 @@ msgstr "<p><big><big><b>Tên tập tin: %1 (%2)</b></big></big>"
 msgid "XMP Schema"
 msgstr ""
 
-#: libs/widgets/metadata/xmpwidget.cpp:172
+#: libs/widgets/metadata/xmpwidget.cpp:178
 #, fuzzy
 #| msgid "EXIF File to Save"
 msgid "XMP File to Save"
 msgstr "Tập tin EXIF cần lưu"
 
-#: libs/widgets/metadata/xmpwidget.cpp:173
+#: libs/widgets/metadata/xmpwidget.cpp:179
 #, fuzzy
 #| msgid "EXIF binary Files (*.dat)"
 msgid "XMP text Files (*.xmp)"
@@ -20442,13 +20434,6 @@ msgstr "Văn bản đầy đủ"
 msgid "Local Settings"
 msgstr "Thiết lập cục bộ"
 
-#: utilities/importui/widgets/albumcustomizer.cpp:116
-#: utilities/queuemanager/basetools/transform/rotate.cpp:106
-#, fuzzy
-#| msgid "Custom"
-msgid "Custom"
-msgstr "Tự chọn"
-
 #: utilities/importui/widgets/albumcustomizer.cpp:135
 #, fuzzy
 #| msgid "<p>Set how digiKam creates albums automatically when downloading."
@@ -22140,12 +22125,6 @@ msgstr "<big><b>Thuộc tính tập tin</b></big>"
 #| msgid "Description"
 msgid "Description:"
 msgstr "Mô tả"
-
-#: utilities/queuemanager/views/workflowlist.cpp:98
-#, fuzzy
-#| msgid "&Tools"
-msgid "Tools"
-msgstr "&Công cụ"
 
 #: utilities/queuemanager/views/workflowlist.cpp:120
 msgid ""
@@ -25867,6 +25846,58 @@ msgid "Giving a presentation"
 msgstr ""
 
 #, fuzzy
+#~| msgid "Toggle tags view to a full list"
+#~ msgid "Switch the tags view to a full list"
+#~ msgstr "Bật/tắt ô xem thẻ thành danh sách đầy đủ"
+
+#, fuzzy
+#~| msgid "Full Text"
+#~ msgid "Full list"
+#~ msgstr "Văn bản đầy đủ"
+
+#, fuzzy
+#~| msgid "Toggle tags view to a simple human-readable list"
+#~ msgid ""
+#~ "Switch the tags view to a custom human-readable list. To customize the "
+#~ "tag filter list, go to the Metadata configuration panel."
+#~ msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
+
+#, fuzzy
+#~| msgid "Custom"
+#~ msgid "Custom list"
+#~ msgstr "Tự chọn"
+
+#, fuzzy
+#~| msgid "Toggle tags view to a simple human-readable list"
+#~ msgid "Switch the tags view to a human-readable list"
+#~ msgstr "Bật/tắt ô xem thẻ thành danh sách đơn giản cho người đọc"
+
+#, fuzzy
+#~| msgid "Save meta-data to a binary file"
+#~ msgid "Save metadata to a binary file"
+#~ msgstr "Lưu siêu dữ liệu vào tập tin nhị phân"
+
+#, fuzzy
+#~| msgid "Metadata"
+#~ msgid "Save metadata"
+#~ msgstr "Siêu dữ liệu"
+
+#, fuzzy
+#~| msgid "Print meta-data to printer"
+#~ msgid "Print metadata to printer"
+#~ msgstr "In siêu dữ liệu vào máy in"
+
+#, fuzzy
+#~| msgid "Print meta-data to printer"
+#~ msgid "Print metadata"
+#~ msgstr "In siêu dữ liệu vào máy in"
+
+#, fuzzy
+#~| msgid "Copy meta-data to clipboard"
+#~ msgid "Copy metadata to clipboard"
+#~ msgstr "Sao chép siêu dữ liệu vào bảng nháp"
+
+#, fuzzy
 #~| msgid "Unknown"
 #~ msgid "Unknow"
 #~ msgstr "Không rõ"
@@ -26540,11 +26571,6 @@ msgstr ""
 #~| msgid "Add film grain"
 #~ msgid "A tool to add film grain"
 #~ msgstr "Thêm hạt mảng thuốc"
-
-#, fuzzy
-#~| msgid "Color Space"
-#~ msgid "A tool to rotate images."
-#~ msgstr "Miền màu"
 
 #, fuzzy
 #~| msgid "Interface Options"

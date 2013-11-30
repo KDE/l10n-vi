@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-29 01:32+0000\n"
+"POT-Creation-Date: 2013-11-30 01:26+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -369,7 +369,7 @@ msgid "Collection not found"
 msgstr "Tập hợp"
 
 #: digikam/album/albummanager.cpp:1070
-#: digikam/utils/editablesearchtreeview.cpp:84
+#: digikam/utils/editablesearchtreeview.cpp:84 libs/models/albummodel.cpp:145
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:198
 msgid "My Searches"
 msgstr "Tìm kiếm của tôì"
@@ -789,11 +789,11 @@ msgstr "Tự động"
 msgid "Total Items"
 msgstr "Tập"
 
-#: digikam/database/dbstatdlg.cpp:74 digikam/views/leftsidebarwidgets.cpp:168
+#: digikam/database/dbstatdlg.cpp:74 digikam/views/leftsidebarwidgets.cpp:167
 msgid "Albums"
 msgstr "Tập"
 
-#: digikam/database/dbstatdlg.cpp:78 digikam/views/leftsidebarwidgets.cpp:265
+#: digikam/database/dbstatdlg.cpp:78 digikam/views/leftsidebarwidgets.cpp:260
 #: libs/imageproperties/imagedescedittab.cpp:338
 #: utilities/searchwindow/searchfields.cpp:116
 #: utilities/searchwindow/searchfields.cpp:123
@@ -1256,19 +1256,7 @@ msgstr "Bộ lọc thẻ"
 msgid "Labels Filter"
 msgstr "Bộ lọc kính"
 
-#: digikam/filters/filterstatusbar.cpp:83
-#, fuzzy
-#| msgid "Noise filter:"
-msgid "Reset all active filters"
-msgstr "Lọc nhiễu :"
-
-#: digikam/filters/filterstatusbar.cpp:89
-#, fuzzy
-#| msgid "General Settings"
-msgid "Open filter settings panel"
-msgstr "Thiết lập chung"
-
-#: digikam/filters/filterstatusbar.cpp:101
+#: digikam/filters/filterstatusbar.cpp:86
 msgid ""
 "Background color indicates the global image filter status, encompassing all "
 "filter settings from the right sidebar.\n"
@@ -1282,73 +1270,85 @@ msgid ""
 "Press the Settings button from the right side to open the filters panel."
 msgstr ""
 
-#: digikam/filters/filterstatusbar.cpp:137
+#: digikam/filters/filterstatusbar.cpp:97
+#, fuzzy
+#| msgid "Noise filter:"
+msgid "Reset all active filters"
+msgstr "Lọc nhiễu :"
+
+#: digikam/filters/filterstatusbar.cpp:103
+#, fuzzy
+#| msgid "General Settings"
+msgid "Open filter settings panel"
+msgstr "Thiết lập chung"
+
+#: digikam/filters/filterstatusbar.cpp:133
 #, fuzzy
 #| msgid "<nobr><b>Bit depth</b></nobr>:"
 msgid "<br/><nobr><i>Text</i></nobr>"
 msgstr "<nobr><b>Độ sâu bit</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:142
+#: digikam/filters/filterstatusbar.cpp:138
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Mime Type</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:147
+#: digikam/filters/filterstatusbar.cpp:143
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Geolocation</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:152
+#: digikam/filters/filterstatusbar.cpp:148
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Rating</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:157
+#: digikam/filters/filterstatusbar.cpp:153
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Pick Labels</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:162
+#: digikam/filters/filterstatusbar.cpp:158
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Color Labels</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:167
+#: digikam/filters/filterstatusbar.cpp:163
 #, fuzzy
 #| msgid "<nobr><b>New Name</b></nobr>:"
 msgid "<br/><nobr><i>Tags</i></nobr>"
 msgstr "<nobr><b>Tên mới</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:172
+#: digikam/filters/filterstatusbar.cpp:168
 #, fuzzy
 #| msgid "<nobr><b>White balance</b></nobr>:"
 msgid "<nobr><b>Active filters:</b></nobr>"
 msgstr "<nobr><b>Cán cân trắng</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:176
+#: digikam/filters/filterstatusbar.cpp:172
 #, fuzzy
 #| msgid "<nobr><b>White balance</b></nobr>:"
 msgid "<nobr><b>Active filter:</b></nobr>"
 msgstr "<nobr><b>Cán cân trắng</b></nobr>:"
 
-#: digikam/filters/filterstatusbar.cpp:183
+#: digikam/filters/filterstatusbar.cpp:179
 #, fuzzy
 #| msgid "Noise filter:"
 msgid "No active filter"
 msgstr "Lọc nhiễu :"
 
-#: digikam/filters/filterstatusbar.cpp:192
+#: digikam/filters/filterstatusbar.cpp:188
 #, fuzzy
 #| msgid "Noise filter:"
 msgid "One active filter"
 msgstr "Lọc nhiễu :"
 
-#: digikam/filters/filterstatusbar.cpp:196
+#: digikam/filters/filterstatusbar.cpp:192
 #, fuzzy, kde-format
 #| msgid "Noise filter:"
 msgid "1 active filter"
@@ -1945,7 +1945,7 @@ msgstr ""
 msgid "Browse Tags..."
 msgstr "Thẻ mới..."
 
-#: digikam/main/digikamapp.cpp:814 digikam/views/leftsidebarwidgets.cpp:200
+#: digikam/main/digikamapp.cpp:814 digikam/views/leftsidebarwidgets.cpp:195
 #, fuzzy
 #| msgid "Select Black Frame Image"
 msgid "Open Tag Manager"
@@ -3434,7 +3434,7 @@ msgid "No batch process plugins available"
 msgstr "Không có sẵn tùy chọn"
 
 #: digikam/utils/contextmenuhelper.cpp:716
-#: libs/models/abstractalbummodel.cpp:393
+#: libs/models/abstractalbummodel.cpp:397
 #: utilities/searchwindow/searchfields.cpp:88
 #: utilities/searchwindow/searchfields.cpp:95
 #: utilities/searchwindow/searchfields.cpp:102
@@ -3981,7 +3981,7 @@ msgstr "Tìm kiếm của tôì"
 msgid "Last Search"
 msgstr "Tìm kiếm cuối cùng"
 
-#: digikam/views/digikamview.cpp:207 digikam/views/leftsidebarwidgets.cpp:686
+#: digikam/views/digikamview.cpp:207 digikam/views/leftsidebarwidgets.cpp:678
 #, fuzzy
 #| msgid "Tile"
 msgid "Timeline"
@@ -4042,45 +4042,45 @@ msgstr "Áp dụng mọi thay đổi cho các ảnh"
 msgid "Show Face Tags"
 msgstr "Hiện kiểu ảnh"
 
-#: digikam/views/leftsidebarwidgets.cpp:356
+#: digikam/views/leftsidebarwidgets.cpp:351
 #, fuzzy
 #| msgid "Standard"
 msgid "Calendar"
 msgstr "Chuẩn"
 
-#: digikam/views/leftsidebarwidgets.cpp:435
+#: digikam/views/leftsidebarwidgets.cpp:428
 #, fuzzy
 #| msgid "Tile size:"
 msgid "Time Unit:"
 msgstr "Cỡ gạch lát:"
 
-#: digikam/views/leftsidebarwidgets.cpp:437
+#: digikam/views/leftsidebarwidgets.cpp:430
 msgid "Day"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:438
+#: digikam/views/leftsidebarwidgets.cpp:431
 msgid "Week"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:439
+#: digikam/views/leftsidebarwidgets.cpp:432
 #, fuzzy
 #| msgid "Both"
 msgid "Month"
 msgstr "Cả hai"
 
-#: digikam/views/leftsidebarwidgets.cpp:440
+#: digikam/views/leftsidebarwidgets.cpp:433
 #, fuzzy
 #| msgid "Linear"
 msgid "Year"
 msgstr "Tuyến"
 
-#: digikam/views/leftsidebarwidgets.cpp:443
+#: digikam/views/leftsidebarwidgets.cpp:436
 msgid ""
 "<p>Select the histogram time unit.</p><p>You can change the graph decade to "
 "zoom in or zoom out over time.</p>"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:450
+#: digikam/views/leftsidebarwidgets.cpp:443
 #, fuzzy
 #| msgid ""
 #| "<p>Select here the histogram scale.<p>If the image's maximal counts are "
@@ -4098,25 +4098,25 @@ msgstr ""
 "dùng tỷ lệ loga; nếu dùng, mọi giá trị (cả nhỏ lẫn lớn) sẽ được hiển thị "
 "trong đồ thị."
 
-#: digikam/views/leftsidebarwidgets.cpp:457
+#: digikam/views/leftsidebarwidgets.cpp:450
 #: libs/dimg/filters/greycstoration/greycstorationsettings.cpp:235
 #: libs/dimg/filters/lc/localcontrastsettings.cpp:176
 msgid "Linear"
 msgstr "Tuyến"
 
-#: digikam/views/leftsidebarwidgets.cpp:463
+#: digikam/views/leftsidebarwidgets.cpp:456
 #, fuzzy
 #| msgid "<p>Logarithmic"
 msgid "Logarithmic"
 msgstr "<p>Loga"
 
-#: digikam/views/leftsidebarwidgets.cpp:500
+#: digikam/views/leftsidebarwidgets.cpp:493
 #, fuzzy
 #| msgid "Invert Selection"
 msgid "Clear current selection"
 msgstr "Đảo vùng chọn"
 
-#: digikam/views/leftsidebarwidgets.cpp:501
+#: digikam/views/leftsidebarwidgets.cpp:494
 #, fuzzy
 #| msgid ""
 #| "<p>If you press this button, all channel levels will be adjusted "
@@ -4126,7 +4126,7 @@ msgid ""
 "be cleared."
 msgstr "<p>Nếu bạn bấm cái nút này, mọi cấp kênh sẽ được điều chỉnh tự động."
 
-#: digikam/views/leftsidebarwidgets.cpp:504
+#: digikam/views/leftsidebarwidgets.cpp:497
 #, fuzzy
 #| msgid ""
 #| "<p>Enter the name of the current search to save in the \"My Searches\" "
@@ -4138,11 +4138,11 @@ msgstr ""
 "<p>Ở đây hãy nhập vào tên của việc tìm kiếm hiện thời cần lưu vào ô xem « "
 "Tìm kiếm của tôi »."
 
-#: digikam/views/leftsidebarwidgets.cpp:510
+#: digikam/views/leftsidebarwidgets.cpp:503
 msgid "Save current selection to a new virtual Album"
 msgstr ""
 
-#: digikam/views/leftsidebarwidgets.cpp:511
+#: digikam/views/leftsidebarwidgets.cpp:504
 #, fuzzy
 #| msgid ""
 #| "<p>If you press this button, all curves' values from the current selected "
@@ -4154,13 +4154,13 @@ msgstr ""
 "<p>Nếu bạn bấm cái nút này, mọi giá trị của đường cong từ kênh được chọn "
 "hiện thời sẽ bị đặt lại thành giá trị mặc định."
 
-#: digikam/views/leftsidebarwidgets.cpp:717
+#: digikam/views/leftsidebarwidgets.cpp:709
 #, fuzzy
 #| msgid "No Date"
 msgid "no item"
 msgstr "Chưa có ngày"
 
-#: digikam/views/leftsidebarwidgets.cpp:717
+#: digikam/views/leftsidebarwidgets.cpp:709
 #: utilities/queuemanager/main/queuemgrwindow.cpp:509
 #: utilities/queuemanager/main/queuemgrwindow.cpp:535
 #, fuzzy, kde-format
@@ -4169,39 +4169,39 @@ msgid "1 item"
 msgid_plural "%1 items"
 msgstr[0] "16 bit"
 
-#: digikam/views/leftsidebarwidgets.cpp:935
+#: digikam/views/leftsidebarwidgets.cpp:924
 #, fuzzy
 #| msgid "Search:"
 msgctxt "Search images, access stored searches"
 msgid "Search"
 msgstr "Tìm kiếm:"
 
-#: digikam/views/leftsidebarwidgets.cpp:1024
+#: digikam/views/leftsidebarwidgets.cpp:1008
 #, fuzzy
 #| msgid "My Searches"
 msgid "Fuzzy Searches"
 msgstr "Tìm kiếm của tôì"
 
-#: digikam/views/leftsidebarwidgets.cpp:1116
+#: digikam/views/leftsidebarwidgets.cpp:1096
 #, fuzzy
 #| msgid "My Searches"
 msgctxt "Search images on a map"
 msgid "Map Search"
 msgstr "Tìm kiếm của tôì"
 
-#: digikam/views/leftsidebarwidgets.cpp:1165
+#: digikam/views/leftsidebarwidgets.cpp:1144
 #, fuzzy
 #| msgid "Album Collections"
 msgid "Scan collection for faces"
 msgstr "Tập hợp tập ảnh"
 
-#: digikam/views/leftsidebarwidgets.cpp:1170
+#: digikam/views/leftsidebarwidgets.cpp:1149
 #, fuzzy
 #| msgid "Relative"
 msgid "People Tags"
 msgstr "Tương đối"
 
-#: digikam/views/leftsidebarwidgets.cpp:1201
+#: digikam/views/leftsidebarwidgets.cpp:1180
 #, fuzzy
 #| msgid "Relative"
 msgctxt "Browse images sorted by depicted people"
@@ -13530,7 +13530,7 @@ msgstr ""
 msgid "Sort by rating"
 msgstr "Lần lặp lại:"
 
-#: libs/models/albummodel.cpp:248
+#: libs/models/albummodel.cpp:250
 #, fuzzy
 #| msgid "Standard"
 msgid "My Calendar"

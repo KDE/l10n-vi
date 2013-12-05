@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-03 01:21+0000\n"
+"POT-Creation-Date: 2013-12-05 01:22+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -5857,7 +5857,7 @@ msgstr "Sóng Dọc"
 msgid "HDR Layer"
 msgstr "Lớp HDR"
 
-#: plugins/formats/exr/exr_export.cc:66
+#: plugins/formats/exr/exr_export.cc:72
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "OpenEXR Export Options"
@@ -5880,71 +5880,37 @@ msgstr "&Làm phẳng ảnh"
 
 #: plugins/formats/jp2/jp2_converter.cc:345
 #: plugins/formats/jp2/jp2_converter.cc:356
-#: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:66
+#: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:67
 #, kde-format
 msgid "Cannot export images in %1.\n"
 msgstr ""
 
-#: plugins/formats/jp2/jp2_export.cc:74
+#: plugins/formats/jp2/jp2_export.cc:76
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "JPEG 2000 Export Options"
 msgstr "Tùy chọn Hình học"
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/formats/jp2/kis_wdg_options_jp2.ui:19
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
 #, fuzzy
-#| msgid "Tile size"
-msgid "File size:"
-msgstr "Cỡ miếng"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:34
-#, fuzzy
-#| msgid "Small Tiles"
-msgctxt "the file will be much compressed, thus small, but quality will be bad"
-msgid "Small"
-msgstr "Miếng nhỏ"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:57
-msgctxt "the file will be good quality, but big"
-msgid "Big"
-msgstr ""
+#| msgid "Properties:"
+msgid "Compression"
+msgstr "Tính chất:"
 
 #. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:68
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:275
+#: plugins/formats/jp2/kis_wdg_options_jp2.ui:26
+#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
 msgid ""
-"These settings determine how much information is lost during compression"
+"<html><head/><body><p>These settings determine how much information is lost "
+"during compression. Low: small files, bad quality. High: big files, good "
+"quality.</p></body></html>"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:101
-#: plugins/formats/tiff/kis_wdg_options_tiff.ui:260
-#, fuzzy
-#| msgid "Opacity:"
-msgid "Quality:"
-msgstr "Độ đậm đặc:"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:116
-#, fuzzy
-#| msgid "add"
-msgctxt "the file will be much compressed, so the quality will be bad"
-msgid "Bad"
-msgstr "thêm"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:142
-#, fuzzy
-#| msgid "Wood"
-msgctxt "the quality will be good but the file will not be much compressed"
-msgid "Good"
-msgstr "Gỗ"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/formats/jp2/kis_wdg_options_jp2.ui:159
+#: plugins/formats/jp2/kis_wdg_options_jp2.ui:74
 #, fuzzy
 #| msgid "Number of tiles"
 msgid "Number of resolutions:"
@@ -5957,7 +5923,7 @@ msgid ""
 "Will save as RGB."
 msgstr ""
 
-#: plugins/formats/jpeg/kis_jpeg_export.cc:75
+#: plugins/formats/jpeg/kis_jpeg_export.cc:81
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "JPEG Export Options"
@@ -5967,21 +5933,6 @@ msgstr "Tùy chọn Hình học"
 #: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:21
 msgid "Basic"
 msgstr "Cơ bản"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:29
-#, fuzzy
-#| msgid "Properties:"
-msgid "Compression"
-msgstr "Tính chất:"
-
-#. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
-#: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:36
-msgid ""
-"<html><head/><body><p>These settings determine how much information is lost "
-"during compression. Low: small files, bad quality. High: big files, good "
-"quality.</p></body></html>"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, progressive)
 #: plugins/formats/jpeg/kis_wdg_options_jpeg.ui:82
@@ -6092,13 +6043,13 @@ msgstr "Các bộ lọc:"
 msgid "Vector Layer"
 msgstr "Trộn Layer"
 
-#: plugins/formats/ora/ora_export.cc:97
+#: plugins/formats/ora/ora_export.cc:100
 msgid ""
 "This image contains vector, clone or generated layers..\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
-#: plugins/formats/ora/ora_export.cc:98
+#: plugins/formats/ora/ora_export.cc:101
 #, fuzzy
 #| msgid "Warning!"
 msgid "Warning"
@@ -6192,11 +6143,11 @@ msgstr ""
 msgid "PNG Export Options"
 msgstr "Tùy chọn Hình học"
 
-#: plugins/formats/png/kis_png_export.cc:109
+#: plugins/formats/png/kis_png_export.cc:112
 msgid "Cannot export images in this colorspace or channel depth to PNG"
 msgstr ""
 
-#: plugins/formats/png/kis_png_export.cc:109
+#: plugins/formats/png/kis_png_export.cc:112
 msgid "Krita PNG Export"
 msgstr ""
 
@@ -6510,6 +6461,19 @@ msgstr ""
 #| msgid "Geometry Options"
 msgid "JPEG Compression Options"
 msgstr "Tùy chọn Hình học"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:260
+#, fuzzy
+#| msgid "Opacity:"
+msgid "Quality:"
+msgstr "Độ đậm đặc:"
+
+#. i18n: ectx: property (toolTip), widget (QSlider, qualityLevel)
+#: plugins/formats/tiff/kis_wdg_options_tiff.ui:275
+msgid ""
+"These settings determine how much information is lost during compression"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #: plugins/formats/tiff/kis_wdg_options_tiff.ui:308
@@ -13442,6 +13406,30 @@ msgstr "Không gian màu"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "Không gian màu"
+
+#, fuzzy
+#~| msgid "Tile size"
+#~ msgid "File size:"
+#~ msgstr "Cỡ miếng"
+
+#, fuzzy
+#~| msgid "Small Tiles"
+#~ msgctxt ""
+#~ "the file will be much compressed, thus small, but quality will be bad"
+#~ msgid "Small"
+#~ msgstr "Miếng nhỏ"
+
+#, fuzzy
+#~| msgid "add"
+#~ msgctxt "the file will be much compressed, so the quality will be bad"
+#~ msgid "Bad"
+#~ msgstr "thêm"
+
+#, fuzzy
+#~| msgid "Wood"
+#~ msgctxt "the quality will be good but the file will not be much compressed"
+#~ msgid "Good"
+#~ msgstr "Gỗ"
 
 #, fuzzy
 #~| msgid "Preview: "

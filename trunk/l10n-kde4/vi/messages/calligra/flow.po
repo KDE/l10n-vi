@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kivio VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-21 01:26+0000\n"
+"POT-Creation-Date: 2014-02-28 03:08+0000\n"
 "PO-Revision-Date: 2008-01-19 18:29+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -120,108 +120,113 @@ msgstr ""
 msgid "File to open"
 msgstr "Tập tin để mở"
 
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:39
-msgid "Auto"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:298
+msgid "Expand all"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:46
-#, fuzzy
-#| msgctxt "Stencils"
-#| msgid "Contact"
-msgid "Constraint "
-msgstr "Contact"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:79
-#, fuzzy
-#| msgctxt "Stencils"
-#| msgid "Note"
-msgid "None"
-msgstr "Ghi chú"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:86
-msgid "Non-overlap"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:299
+msgid "Collapse all"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, pushButton)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_2)
-#. i18n: ectx: property (text), widget (QPushButton, pushButton_3)
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:111
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:130
-#: plugins/dockers/layoutdocker/LayoutDocker.ui:149
-msgid "PushButton"
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:302
+msgid "List View"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:94
+#: plugins/dockers/stencilboxdocker/CollectionTreeWidget.cpp:303
+msgid "Icon View"
+msgstr ""
+
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:71
 #, fuzzy
 msgid "Stencil Box"
 msgstr "&Stencil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:99
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:77
 #, fuzzy
-msgid "Get more stencils"
-msgstr "Tháo gỡ hạng mục"
+msgid "Stencils Online"
+msgstr "&Stencil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:100
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:78
 #, fuzzy
-msgid "Install stencil"
-msgstr "Tải thiết lập Stencil"
+msgid "Add/Remove Stencil"
+msgstr "Thêm tập Stencil"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:107
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:97
 #, fuzzy
 #| msgctxt "Stencils"
 #| msgid "House shape"
 msgid "More shapes"
 msgstr "Hình nhà ở"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:113
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:103
 msgid "Filter"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:147
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:182
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:135
 msgid "Stencils successfully installed."
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:150
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:138
 msgid "Stencils successfully uninstalled."
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:159
+#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:150
 msgid ""
-"Calligra Stencil Packages (*.cstencil.tar, *.cstencil.tar.bz2, *.cstencil."
-"tar.gz)"
+"This is the user stencils directory.\n"
+"From here you can add / remove stencils for use in the Stencil Box docker.\n"
+"\n"
+"Stencils are organized in collections, a collection is a folder containing a "
+"text file 'collection.desktop':\n"
+"\n"
+"ollection.desktop\n"
+"\n"
+"[Desktop Entry]\n"
+"Name=Your Stencil Collection Name\n"
+"\n"
+"A stencil is an ODG file, a desktop file, an optional PNG icon file, all "
+"with with name under its cpollection folder:\n"
+"\n"
+"foo.odg\n"
+"\n"
+"ODF elements for stencil should be a <draw:g> element or <draw:custom-shape> "
+"element\n"
+"\n"
+"foo.desktop\n"
+"\n"
+"[Desktop Entry]\n"
+"Name=Foo\n"
+"CS-KeepAspectRatio=1\n"
+"\n"
+"If CS-KeepAspectRatio=1, the stencil added to canvas will have geomatry "
+"aspect ratio locked, by default it's 0.\n"
+"\n"
+"foo.png\n"
+"\n"
+"Should have size 32x32 pixel, if the png file is not included, Flow will "
+"render the ODG file as the icon,\n"
+"but it won't look good under small pixels when the stencil stroke is "
+"complicated.\n"
 msgstr ""
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:165
-msgid "Could not read this package."
-msgstr ""
+#, fuzzy
+#~| msgctxt "Stencils"
+#~| msgid "Contact"
+#~ msgid "Constraint "
+#~ msgstr "Contact"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxDocker.cpp:176
-#, kde-format
-msgid ""
-"A collection of stencils in family '%1' is already installed. Please "
-"uninstall it first."
-msgstr ""
+#, fuzzy
+#~| msgctxt "Stencils"
+#~| msgid "Note"
+#~ msgid "None"
+#~ msgstr "Ghi chú"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:352
-msgid "Expand all"
-msgstr ""
+#, fuzzy
+#~ msgid "Get more stencils"
+#~ msgstr "Tháo gỡ hạng mục"
 
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:353
-msgid "Collapse all"
-msgstr ""
-
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:356
-msgid "List View"
-msgstr ""
-
-#: plugins/dockers/stencilboxdocker/StencilBoxView.cpp:357
-msgid "Icon View"
-msgstr ""
+#, fuzzy
+#~ msgid "Install stencil"
+#~ msgstr "Tải thiết lập Stencil"
 
 #, fuzzy
 #~| msgid "File to open"
@@ -3542,16 +3547,8 @@ msgstr ""
 #~ msgid "Untitled Layer"
 #~ msgstr "Layer không tên"
 
-#, fuzzy
-#~ msgid "Stencils"
-#~ msgstr "&Stencil"
-
 #~ msgid "Layer 1"
 #~ msgstr "Layer 1"
-
-#, fuzzy
-#~ msgid "Add Stencil"
-#~ msgstr "Thêm tập Stencil"
 
 #~ msgid ""
 #~ "One of the selected stencils has protection from deletion and cannot be "

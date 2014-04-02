@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kttsd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-30 01:33+0000\n"
+"POT-Creation-Date: 2014-04-02 01:42+0000\n"
 "PO-Revision-Date: 2008-01-15 07:13+0700\n"
 "Last-Translator: Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@lists.kde.org>\n"
@@ -42,11 +42,11 @@ msgstr "Một tiện ích để thử trình lọc bổ sung KTTSD"
 msgid "Copyright 2005, Gary Cramblitt &lt;garycramblitt@comcast.net&gt;"
 msgstr "Bản quyền 2005, Gary Cramblitt <garycramblitt@comcast.net>"
 
-#: filters/main.cpp:39 jovie/main.cpp:45 kcmkttsmgr/kcmkttsmgr.cpp:678
+#: filters/main.cpp:39 jovie/main.cpp:45 kcmkttsmgr/kcmkttsmgr.cpp:675
 msgid "Gary Cramblitt"
 msgstr "Gary Cramblitt"
 
-#: filters/main.cpp:39 kcmkttsmgr/kcmkttsmgr.cpp:678
+#: filters/main.cpp:39 kcmkttsmgr/kcmkttsmgr.cpp:675
 msgid "Maintainer"
 msgstr "Nhà bảo trì"
 
@@ -123,6 +123,20 @@ msgstr "..."
 #: filters/stringreplacer/editreplacementwidget.ui:133
 msgid "Match &case"
 msgstr "Khớp phân biệt chữ &hoa/thường"
+
+#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
+#: filters/stringreplacer/selectlanguagedlg.cpp:56
+#: kcmkttsmgr/talkerwidget.ui:68 libkttsd/talkerlistmodel.cpp:135
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: filters/stringreplacer/selectlanguagedlg.cpp:57
+msgid "Code"
+msgstr "Bộ mã"
+
+#: filters/stringreplacer/selectlanguagedlg.h:66
+msgid "Select Language"
+msgstr "Chọn Ngôn ngữ"
 
 #: filters/stringreplacer/stringreplacerconf.cpp:128
 msgid "Unable to open file."
@@ -452,15 +466,44 @@ msgstr "Khớp"
 msgid "Replace With"
 msgstr "Thay Bằng"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
+#: filters/talkerchooser/selecttalkerdlg.h:59
+#: filters/talkerchooser/selecttalkerwidget.ui:21
+#: filters/talkerchooser/talkerchooserconf.cpp:196 jovie/jovietrayicon.cpp:106
+msgid "Select Talker"
+msgstr "Chọn Máy phát âm"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:58
+msgid ""
+"When checked, will use the default Talker, which is the topmost Talker "
+"listed in the Talkers tab."
+msgstr ""
+"Nếu đánh dấu, dùng Máy phát âm mặc định, tức là Máy phát âm nằm trên cùng "
+"trong danh sách ở trang Máy phát âm."
+
+#. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:61
+msgid "&Use default Talker"
+msgstr "&Dùng Máy phát âm mặc định"
+
+#. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:68
+msgid ""
+"When checked, will use the specific Talker (if it is still configured), "
+"otherwise the Talker most closely matching."
+msgstr ""
+"Nếu đánh dấu, sẽ dùng Máy phát âm đặc dụng (nếu nó vẫn còn được cấu hình), "
+"nếu không sẽ dùng Máy phát âm phù hợp nhất."
+
+#. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
+#: filters/talkerchooser/selecttalkerwidget.ui:71
+msgid "Use specific &Talker"
+msgstr "Dùng &Máy phát âm đặc dụng"
+
 #: filters/talkerchooser/talkerchooserconf.cpp:135
 msgid "Talker Chooser"
 msgstr "Trình lựa chọn Máy phát âm"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
-#: filters/talkerchooser/talkerchooserconf.cpp:196 jovie/jovietrayicon.cpp:103
-#: libkttsd/selecttalkerdlg.h:59 libkttsd/selecttalkerwidget.ui:21
-msgid "Select Talker"
-msgstr "Chọn Máy phát âm"
 
 #: filters/talkerchooser/talkerchooserconf.cpp:212
 #: filters/talkerchooser/talkerchooserconf.cpp:226
@@ -712,27 +755,27 @@ msgstr "và &Mã số Ứng dụng chứa:"
 msgid "KDE Text-to-Speech"
 msgstr "Văn bản sang Tiếng nói KDE"
 
-#: jovie/jovietrayicon.cpp:64
+#: jovie/jovietrayicon.cpp:67
 msgid "KDE Text-to-Speech Manager"
 msgstr "Trình quản lý Văn bản sang Tiếng nói KDE"
 
-#: jovie/jovietrayicon.cpp:72
+#: jovie/jovietrayicon.cpp:75
 msgid "&Stop/Delete"
 msgstr "&Dừng/Xóa"
 
-#: jovie/jovietrayicon.cpp:78
+#: jovie/jovietrayicon.cpp:81
 msgid "&Pause"
 msgstr "&Tạm dừng"
 
-#: jovie/jovietrayicon.cpp:84
+#: jovie/jovietrayicon.cpp:87
 msgid "&Resume"
 msgstr "T&iếp tục"
 
-#: jovie/jovietrayicon.cpp:90
+#: jovie/jovietrayicon.cpp:93
 msgid "R&epeat"
 msgstr "&Bắt đầu lại"
 
-#: jovie/jovietrayicon.cpp:99
+#: jovie/jovietrayicon.cpp:102
 msgid "Spea&k Clipboard Contents"
 msgstr "&Phát âm Nội dung Bảng nháp"
 
@@ -761,7 +804,7 @@ msgstr ""
 msgid "Current Maintainer"
 msgstr "Nhà bảo trì"
 
-#: jovie/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:677
+#: jovie/main.cpp:44 kcmkttsmgr/kcmkttsmgr.cpp:674
 msgid "José Pablo Ezequiel Fernández"
 msgstr "José Pablo Ezequiel Fernández"
 
@@ -780,15 +823,15 @@ msgid "Gunnar Schmi Dt"
 msgstr "Gunnar Schmi Dt"
 
 #: jovie/main.cpp:46 jovie/main.cpp:47 jovie/main.cpp:48 jovie/main.cpp:49
-#: kcmkttsmgr/kcmkttsmgr.cpp:679 kcmkttsmgr/kcmkttsmgr.cpp:680
+#: kcmkttsmgr/kcmkttsmgr.cpp:676 kcmkttsmgr/kcmkttsmgr.cpp:677
 msgid "Contributor"
 msgstr "Người đóng góp"
 
-#: jovie/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:679
+#: jovie/main.cpp:47 kcmkttsmgr/kcmkttsmgr.cpp:676
 msgid "Olaf Schmidt"
 msgstr "Olaf Schmidt"
 
-#: jovie/main.cpp:48 kcmkttsmgr/kcmkttsmgr.cpp:680
+#: jovie/main.cpp:48 kcmkttsmgr/kcmkttsmgr.cpp:677
 msgid "Paul Giannaros"
 msgstr "Paul Giannaros"
 
@@ -812,11 +855,11 @@ msgstr "David Powell"
 msgid "Add Talker"
 msgstr "Thêm Máy phát âm"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:184 kcmkttsmgr/kcmkttsmgr.cpp:804
+#: kcmkttsmgr/kcmkttsmgr.cpp:181 kcmkttsmgr/kcmkttsmgr.cpp:801
 msgid "Filter"
 msgstr "Lọc"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:623
+#: kcmkttsmgr/kcmkttsmgr.cpp:620
 msgid ""
 "You have made changes to the configuration but have not saved them yet.  "
 "Click Apply to save the changes or Cancel to abandon the changes."
@@ -824,7 +867,7 @@ msgstr ""
 "Bạn đã thực hiện một số thay đổi đối với các cấu hình nhưng chưa lưu chúng. "
 "Nhấn nút Áp dụng để lưu các thay đổi hay nút Bỏ để bỏ các thay đổi."
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:664
+#: kcmkttsmgr/kcmkttsmgr.cpp:661
 #, fuzzy
 #| msgid ""
 #| "<h1>Text-to-Speech</h1><p>This is the configuration for the text-to-"
@@ -843,48 +886,48 @@ msgstr ""
 "của Văn bản sang Tiếng nói</p><p>Nhớ cài đặt một ngôn ngữ mặc định, nó sẽ "
 "được dùng bởi đa số các ứng dụng.</p>"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:673
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
 #, fuzzy
 msgid "jovie"
 msgstr "Giọng nói"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:673
+#: kcmkttsmgr/kcmkttsmgr.cpp:670
 msgid "KCMKttsMgr"
 msgstr "KCMKttsMgr"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:675
+#: kcmkttsmgr/kcmkttsmgr.cpp:672
 msgid "(c) 2010, Jeremy Whiting"
 msgstr ""
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:677
+#: kcmkttsmgr/kcmkttsmgr.cpp:674
 msgid "Author"
 msgstr "Tác giả"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:803
+#: kcmkttsmgr/kcmkttsmgr.cpp:800
 msgid "Select Filter"
 msgstr "Chọn Bộ lọc"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, kttsjobmgr)
-#: kcmkttsmgr/kcmkttsmgr.cpp:1098 kcmkttsmgr/kttsjobmgr.ui:14
+#: kcmkttsmgr/kcmkttsmgr.cpp:1095 kcmkttsmgr/kttsjobmgr.ui:14
 #, fuzzy
 #| msgid "&Jobs"
 msgid "Jobs"
 msgstr "Các &Tác vụ"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1120
+#: kcmkttsmgr/kcmkttsmgr.cpp:1117
 #, fuzzy, kde-format
 #| msgid "KTTSD Version: %1"
 msgid "Jovie Version: %1"
 msgstr "Phiên bản KTTSD: %1"
 
 #. i18n: ectx: property (text), widget (QLabel, kttsdVersion)
-#: kcmkttsmgr/kcmkttsmgr.cpp:1160 kcmkttsmgr/kcmkttsmgrwidget.ui:40
+#: kcmkttsmgr/kcmkttsmgr.cpp:1157 kcmkttsmgr/kcmkttsmgrwidget.ui:40
 #, fuzzy
 #| msgid "KTTSD not running"
 msgid "Jovie not running"
 msgstr "KTTSD đang không chạy"
 
-#: kcmkttsmgr/kcmkttsmgr.cpp:1269
+#: kcmkttsmgr/kcmkttsmgr.cpp:1266
 msgid "Filter Configuration"
 msgstr "Cấu hình Bộ lọc"
 
@@ -1100,13 +1143,7 @@ msgid "&Name"
 msgstr "&Tên:"
 
 #. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
-#: kcmkttsmgr/talkerwidget.ui:68 libkttsd/selectlanguagedlg.cpp:56
-#: libkttsd/talkerlistmodel.cpp:132
-msgid "Language"
-msgstr "Ngôn ngữ"
-
-#. i18n: ectx: property (text), widget (QTableWidget, AvailableTalkersTable)
-#: kcmkttsmgr/talkerwidget.ui:73 libkttsd/talkerlistmodel.cpp:133
+#: kcmkttsmgr/talkerwidget.ui:73 libkttsd/talkerlistmodel.cpp:136
 msgid "Synthesizer"
 msgstr "Trình tổng hợp giọng nói"
 
@@ -1130,14 +1167,14 @@ msgid "Male 1"
 msgstr "Nam"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:102 libkttsd/talkercode.cpp:252
+#: kcmkttsmgr/talkerwidget.ui:102 libkttsd/talkercode.cpp:278
 #, fuzzy
 #| msgid "Male"
 msgid "Male 2"
 msgstr "Nam"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:107 libkttsd/talkercode.cpp:253
+#: kcmkttsmgr/talkerwidget.ui:107 libkttsd/talkercode.cpp:279
 #, fuzzy
 #| msgid "Male"
 msgid "Male 3"
@@ -1151,14 +1188,14 @@ msgid "Female 1"
 msgstr "Nữ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:117 libkttsd/talkercode.cpp:255
+#: kcmkttsmgr/talkerwidget.ui:117 libkttsd/talkercode.cpp:281
 #, fuzzy
 #| msgid "Female"
 msgid "Female 2"
 msgstr "Nữ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, voiceComboBox)
-#: kcmkttsmgr/talkerwidget.ui:122 libkttsd/talkercode.cpp:256
+#: kcmkttsmgr/talkerwidget.ui:122 libkttsd/talkercode.cpp:282
 #, fuzzy
 #| msgid "Female"
 msgid "Female 3"
@@ -1197,132 +1234,96 @@ msgstr "Âm &sắc:"
 msgid "&Volume"
 msgstr "Âm &lượng:"
 
-#: libkttsd/selectlanguagedlg.cpp:57
-msgid "Code"
-msgstr "Bộ mã"
-
-#: libkttsd/selectlanguagedlg.h:66
-msgid "Select Language"
-msgstr "Chọn Ngôn ngữ"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
-#: libkttsd/selecttalkerwidget.ui:58
-msgid ""
-"When checked, will use the default Talker, which is the topmost Talker "
-"listed in the Talkers tab."
-msgstr ""
-"Nếu đánh dấu, dùng Máy phát âm mặc định, tức là Máy phát âm nằm trên cùng "
-"trong danh sách ở trang Máy phát âm."
-
-#. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
-#: libkttsd/selecttalkerwidget.ui:61
-msgid "&Use default Talker"
-msgstr "&Dùng Máy phát âm mặc định"
-
-#. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: libkttsd/selecttalkerwidget.ui:68
-msgid ""
-"When checked, will use the specific Talker (if it is still configured), "
-"otherwise the Talker most closely matching."
-msgstr ""
-"Nếu đánh dấu, sẽ dùng Máy phát âm đặc dụng (nếu nó vẫn còn được cấu hình), "
-"nếu không sẽ dùng Máy phát âm phù hợp nhất."
-
-#. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: libkttsd/selecttalkerwidget.ui:71
-msgid "Use specific &Talker"
-msgstr "Dùng &Máy phát âm đặc dụng"
-
-#: libkttsd/talkercode.cpp:243
+#: libkttsd/talkercode.cpp:269
 #, fuzzy
 #| msgid "default"
 msgctxt "Default language code"
 msgid "default"
 msgstr "mặc định"
 
-#: libkttsd/talkercode.cpp:251
+#: libkttsd/talkercode.cpp:277
 #, fuzzy
 #| msgid "Male"
 msgctxt "The name of the first Male voice"
 msgid "Male 1"
 msgstr "Nam"
 
-#: libkttsd/talkercode.cpp:254
+#: libkttsd/talkercode.cpp:280
 #, fuzzy
 #| msgid "Female"
 msgctxt "The name of the first Female voice"
 msgid "Female 1"
 msgstr "Nữ"
 
-#: libkttsd/talkercode.cpp:257
+#: libkttsd/talkercode.cpp:283
 msgctxt "The name of the male child voice"
 msgid "Boy"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:258
+#: libkttsd/talkercode.cpp:284
 msgctxt "The name of the female child voice"
 msgid "Girl"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:260
+#: libkttsd/talkercode.cpp:286
 msgctxt ""
 "Somehow user has gotten a voice type that is not valid, i.e. not Male1, "
 "Male2, etc."
 msgid "Invalid voice type"
 msgstr ""
 
-#: libkttsd/talkercode.cpp:288
+#: libkttsd/talkercode.cpp:314
 #, fuzzy
 #| msgid "Other"
 msgctxt "Other language"
 msgid "Other"
 msgstr "Khác"
 
-#: libkttsd/talkercode.cpp:298
+#: libkttsd/talkercode.cpp:324
 msgctxt "full country name"
 msgid "United States of America"
 msgstr "Hoa Kỳ"
 
-#: libkttsd/talkercode.cpp:299
+#: libkttsd/talkercode.cpp:325
 msgctxt "abbreviated country name"
 msgid "USA"
 msgstr "Mỹ"
 
-#: libkttsd/talkercode.cpp:300
+#: libkttsd/talkercode.cpp:326
 msgctxt "full country name"
 msgid "United Kingdom"
 msgstr "Vương quốc Anh"
 
-#: libkttsd/talkercode.cpp:301
+#: libkttsd/talkercode.cpp:327
 msgctxt "abbreviated country name"
 msgid "UK"
 msgstr "Anh"
 
-#: libkttsd/talkerlistmodel.cpp:131
+#: libkttsd/talkerlistmodel.cpp:134
 #, fuzzy
 #| msgid "&Name:"
 msgid "Name"
 msgstr "&Tên:"
 
-#: libkttsd/talkerlistmodel.cpp:134
+#: libkttsd/talkerlistmodel.cpp:137
 #, fuzzy
 msgid "Voice Type"
 msgstr "Giọng nói"
 
-#: libkttsd/talkerlistmodel.cpp:135
+#: libkttsd/talkerlistmodel.cpp:138
 #, fuzzy
 #| msgid "Volume"
 msgctxt "Volume of noise"
 msgid "Volume"
 msgstr "Âm lượng"
 
-#: libkttsd/talkerlistmodel.cpp:136
+#: libkttsd/talkerlistmodel.cpp:139
 #, fuzzy
 #| msgid "&Speed:"
 msgid "Speed"
 msgstr "&Tốc độ:"
 
-#: libkttsd/talkerlistmodel.cpp:137
+#: libkttsd/talkerlistmodel.cpp:140
 #, fuzzy
 #| msgid "&Pitch:"
 msgid "Pitch"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-02 01:28+0000\n"
+"POT-Creation-Date: 2014-04-14 01:36+0000\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -41,7 +41,7 @@ msgid "Image Preview"
 msgstr "Xem thử ảnh"
 
 #: AnnotationDialog/Dialog.cpp:101 AnnotationDialog/Dialog.cpp:105
-#: HTMLGenerator/HTMLDialog.cpp:110 ImportExport/MD5CheckPage.cpp:75
+#: HTMLGenerator/HTMLDialog.cpp:130 ImportExport/MD5CheckPage.cpp:75
 msgid "Description"
 msgstr "Mô tả"
 
@@ -1157,58 +1157,58 @@ msgstr "Bão hoà"
 msgid "No cameras found in the database"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:47
+#: HTMLGenerator/Generator.cpp:52
 msgid "Generating images for HTML page "
 msgstr "Đang tạo ra các ảnh cho trang HTML "
 
-#: HTMLGenerator/Generator.cpp:142
+#: HTMLGenerator/Generator.cpp:150
 #, kde-format
 msgid "Error copying %1 to %2"
 msgstr "Gặp lỗi khi sao chép %1 vào %2"
 
-#: HTMLGenerator/Generator.cpp:386
+#: HTMLGenerator/Generator.cpp:414
 #, kde-format
 msgid "<a href=\"%1\">prev</a>"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:388 HTMLGenerator/Generator.cpp:396
+#: HTMLGenerator/Generator.cpp:416 HTMLGenerator/Generator.cpp:424
 msgid "prev"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:400
+#: HTMLGenerator/Generator.cpp:428
 #, c-format, kde-format
 msgid "<a href=\"index-%1.html\">index</a>"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:409
+#: HTMLGenerator/Generator.cpp:437
 #, kde-format
 msgid "<a href=\"%1\">next</a>"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:411 HTMLGenerator/Generator.cpp:418
+#: HTMLGenerator/Generator.cpp:439 HTMLGenerator/Generator.cpp:446
 msgid "next"
 msgstr ""
 
-#: HTMLGenerator/Generator.cpp:543
+#: HTMLGenerator/Generator.cpp:585
 #, kde-format
 msgid "Could not create file '%1'."
 msgstr "Không thể tạo tập tin « %1 »."
 
-#: HTMLGenerator/Generator.cpp:544
+#: HTMLGenerator/Generator.cpp:586
 msgid "Could Not Create File"
 msgstr "Không thể tạo tập tin"
 
-#: HTMLGenerator/Generator.cpp:576
+#: HTMLGenerator/Generator.cpp:618
 #, kde-format
 msgid "<p>Unable to copy %1 to %2</p>"
 msgstr "<p>Không thể sao chép %1 vào %2</p>"
 
-#: HTMLGenerator/Generator.cpp:608
+#: HTMLGenerator/Generator.cpp:650
 #, kde-format
 msgid "Unable to write image '%1'."
 msgstr "Không thể ghi ảnh « %1 »."
 
-#: HTMLGenerator/Generator.cpp:685 HTMLGenerator/HTMLDialog.cpp:114
+#: HTMLGenerator/Generator.cpp:727 HTMLGenerator/HTMLDialog.cpp:134
 #, fuzzy
 #| msgid "Date: "
 msgid "Date"
@@ -1242,69 +1242,85 @@ msgstr "Tạo tập tin xuất dạng .kim"
 msgid "Inline Movies in pages"
 msgstr "Hiện phim trực tiếp trong trang"
 
-#: HTMLGenerator/HTMLDialog.cpp:106
+#: HTMLGenerator/HTMLDialog.cpp:105
+#, fuzzy
+#| msgid "Generate thumbnails"
+msgid "Use HTML5 video tag"
+msgstr "Tạo ra các mẫu ảnh"
+
+#: HTMLGenerator/HTMLDialog.cpp:116
+msgid ""
+"<p>This selection will generate video files suitable for displaying on web. "
+"avconv and ffmpeg2theora are required for video file generation.</p>"
+msgstr ""
+
+#: HTMLGenerator/HTMLDialog.cpp:118
+msgid "Generate HTML5 video files (mp4 and ogg)"
+msgstr ""
+
+#: HTMLGenerator/HTMLDialog.cpp:126
 msgid "What to Include"
 msgstr "Cần gồm:"
 
-#: HTMLGenerator/HTMLDialog.cpp:143 HTMLGenerator/HTMLDialog.cpp:144
+#: HTMLGenerator/HTMLDialog.cpp:163 HTMLGenerator/HTMLDialog.cpp:164
 msgid "Layout"
 msgstr "Bố trí"
 
-#: HTMLGenerator/HTMLDialog.cpp:153
+#: HTMLGenerator/HTMLDialog.cpp:173
 msgid "Thumbnail size:"
 msgstr "Cỡ mẫu ảnh"
 
-#: HTMLGenerator/HTMLDialog.cpp:168
+#: HTMLGenerator/HTMLDialog.cpp:188
 msgid "Number of columns:"
 msgstr "Số cột:"
 
-#: HTMLGenerator/HTMLDialog.cpp:183
+#: HTMLGenerator/HTMLDialog.cpp:203
 msgid "Theme:"
 msgstr "Sắc thái:"
 
-#: HTMLGenerator/HTMLDialog.cpp:191
+#: HTMLGenerator/HTMLDialog.cpp:211
 #, fuzzy
 #| msgid "Show Description"
 msgid "Theme Description"
 msgstr "Hiện mô tả"
 
-#: HTMLGenerator/HTMLDialog.cpp:198
+#: HTMLGenerator/HTMLDialog.cpp:218
 msgid "Image Sizes"
 msgstr "Cỡ ảnh"
 
-#: HTMLGenerator/HTMLDialog.cpp:207
+#: HTMLGenerator/HTMLDialog.cpp:227
 msgid "Full size"
 msgstr "Cỡ đầy"
 
-#: HTMLGenerator/HTMLDialog.cpp:250 HTMLGenerator/HTMLDialog.cpp:251
+#: HTMLGenerator/HTMLDialog.cpp:272 HTMLGenerator/HTMLDialog.cpp:273
 msgid "Destination"
 msgstr "Đích"
 
-#: HTMLGenerator/HTMLDialog.cpp:260
+#: HTMLGenerator/HTMLDialog.cpp:282
 msgid "Base directory:"
 msgstr "Thư mục cơ bản:"
 
-#: HTMLGenerator/HTMLDialog.cpp:278
+#: HTMLGenerator/HTMLDialog.cpp:300
 msgid "Base URL:"
 msgstr "URL cơ bản:"
 
-#: HTMLGenerator/HTMLDialog.cpp:287
+#: HTMLGenerator/HTMLDialog.cpp:309
 msgid "URL for final destination:"
 msgstr "URL của đích cuối:"
 
-#: HTMLGenerator/HTMLDialog.cpp:295
+#: HTMLGenerator/HTMLDialog.cpp:317
 msgid "Output directory:"
 msgstr "Thư mục xuất:"
 
-#: HTMLGenerator/HTMLDialog.cpp:301
+#: HTMLGenerator/HTMLDialog.cpp:323
 msgid "<b>Hint: Press the help button for descriptions of the fields</b>"
 msgstr "<b>Gợi ý: bấm nút Trợ giúp để xem mô tả trường.</b>"
 
-#: HTMLGenerator/HTMLDialog.cpp:312
+#: HTMLGenerator/HTMLDialog.cpp:334
 msgid "You must select at least one resolution."
 msgstr "Bạn phải chọn ít nhất một độ phân giải."
 
-#: HTMLGenerator/HTMLDialog.cpp:350
+#: HTMLGenerator/HTMLDialog.cpp:374
 msgid ""
 "<p>You did not specify a base directory. This is the topmost directory for "
 "your images. Under this directory you will find each generated collection in "
@@ -1313,11 +1329,11 @@ msgstr ""
 "<p>Bạn chưa ghi rõ thư mục cơ bản. Nó là thư mục cao nhất của các ảnh của "
 "bạn. Dưới thư mục này có mỗi tập hợp đã tạo ra, trong thư mục riêng.</p>"
 
-#: HTMLGenerator/HTMLDialog.cpp:354
+#: HTMLGenerator/HTMLDialog.cpp:378
 msgid "No Base Directory Specified"
 msgstr "Chưa ghi rõ thư mục cơ bản"
 
-#: HTMLGenerator/HTMLDialog.cpp:360
+#: HTMLGenerator/HTMLDialog.cpp:384
 msgid ""
 "<p>You did not specify an output directory. This is a directory containing "
 "the actual images. The directory will be in the base directory specified "
@@ -1326,11 +1342,11 @@ msgstr ""
 "<p>Bạn chưa ghi rõ thư mục xuất. Nó là thư mục chứa ảnh thật, và sẽ nằm "
 "trong thư mục cơ bản đã ghi rõ trên.</p>"
 
-#: HTMLGenerator/HTMLDialog.cpp:363
+#: HTMLGenerator/HTMLDialog.cpp:387
 msgid "No Output Directory Specified"
 msgstr "Chưa ghi rõ thư mục xuất"
 
-#: HTMLGenerator/HTMLDialog.cpp:371
+#: HTMLGenerator/HTMLDialog.cpp:395
 #, kde-format
 msgid ""
 "<p>Error while reading information about %1. This is most likely because the "
@@ -1339,13 +1355,13 @@ msgstr ""
 "<p>Gặp lỗi khi đọc thông tin về %1. Rất có thể vì thư mục đó không tồn tại.</"
 "p>"
 
-#: HTMLGenerator/HTMLDialog.cpp:379
+#: HTMLGenerator/HTMLDialog.cpp:403
 #, kde-format
 msgid "<p>%1 does not exist, is not a directory or cannot be written to.</p>"
 msgstr ""
 "<p>%1 không tồn tại, không phải là thư mục hoặc không có khả năng ghi.</p>"
 
-#: HTMLGenerator/HTMLDialog.cpp:389
+#: HTMLGenerator/HTMLDialog.cpp:413
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>Output directory %1 already exists. Usually you should specify a new "
@@ -1357,25 +1373,25 @@ msgstr ""
 "<p>Thư mục xuất %1 đã có. Bình thường, bạn nên ghi rõ một thư mục mới.</"
 "p>Bạn có muốn xoá %2 trước tiên không?</qt>"
 
-#: HTMLGenerator/HTMLDialog.cpp:392
+#: HTMLGenerator/HTMLDialog.cpp:416
 msgid "Directory Exists"
 msgstr "Thư mục đã có"
 
-#: HTMLGenerator/HTMLDialog.cpp:467 MainWindow/SplashScreen.cpp:66
+#: HTMLGenerator/HTMLDialog.cpp:491 MainWindow/SplashScreen.cpp:66
 #, kde-format
 msgid "%1"
 msgstr ""
 
-#: HTMLGenerator/HTMLDialog.cpp:478
+#: HTMLGenerator/HTMLDialog.cpp:502
 msgid "Could not find any themes - this is very likely an installation error"
 msgstr "Không tìm thấy sắc thái, rất có thể là do lỗi cài đặt."
 
-#: HTMLGenerator/HTMLDialog.cpp:485
+#: HTMLGenerator/HTMLDialog.cpp:509
 #, kde-format
 msgid "More than one theme is set as default, using theme %1"
 msgstr ""
 
-#: HTMLGenerator/HTMLDialog.cpp:492
+#: HTMLGenerator/HTMLDialog.cpp:516
 msgctxt ""
 "This is to show the author of the theme. E.g. copyright character (&#169;) "
 "by itself will work fine on this context if no proper word is available in "
@@ -1383,7 +1399,7 @@ msgctxt ""
 msgid "by "
 msgstr ""
 
-#: HTMLGenerator/HTMLDialog.cpp:494
+#: HTMLGenerator/HTMLDialog.cpp:518
 msgid ""
 "\n"
 " "

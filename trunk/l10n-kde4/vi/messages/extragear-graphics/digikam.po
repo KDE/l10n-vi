@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-27 01:46+0000\n"
+"POT-Creation-Date: 2014-05-01 01:31+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1960,7 +1960,7 @@ msgstr "Xem..."
 
 #: digikam/main/digikamapp.cpp:836 digikam/tags/tagmodificationhelper.cpp:273
 #: digikam/tags/tagmodificationhelper.cpp:378
-#: digikam/tags/tagsmanager/tagsmanager.cpp:339
+#: digikam/tags/tagsmanager/tagsmanager.cpp:378
 #: digikam/utils/editablesearchtreeview.cpp:70
 #: digikam/utils/searchmodificationhelper.cpp:82
 #: utilities/queuemanager/views/workflowlist.cpp:294
@@ -2282,7 +2282,7 @@ msgstr "Chọn Không gì"
 
 #: digikam/main/digikamapp.cpp:1147
 #: digikam/tags/tagsmanager/tagmngrtreeview.cpp:134
-#: digikam/tags/tagsmanager/tagsmanager.cpp:595
+#: digikam/tags/tagsmanager/tagsmanager.cpp:655
 #: digikam/utils/contextmenuhelper.cpp:847
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
@@ -2961,7 +2961,7 @@ msgstr "Đặt lại biểu tượng thẻ"
 
 #: digikam/tags/tagfolderview.cpp:114
 #: digikam/tags/tagsmanager/tagmngrtreeview.cpp:140
-#: digikam/tags/tagsmanager/tagsmanager.cpp:601
+#: digikam/tags/tagsmanager/tagsmanager.cpp:661
 #, fuzzy
 #| msgid "Select None"
 msgid "Expand Selected Nodes"
@@ -3006,13 +3006,11 @@ msgstr "Xoá thẻ « %1 » không?"
 
 #: digikam/tags/tagmodificationhelper.cpp:272
 #: digikam/tags/tagmodificationhelper.cpp:377
-#: digikam/tags/tagsmanager/tagsmanager.cpp:338
 #: digikam/utils/contextmenuhelper.cpp:420
 msgid "Delete Tag"
 msgstr "Xoá thẻ"
 
 #: digikam/tags/tagmodificationhelper.cpp:351
-#: digikam/tags/tagsmanager/tagsmanager.cpp:312
 #, fuzzy, kde-format
 msgid ""
 "Tags '%1' have one or more subtags. Deleting them will also delete the "
@@ -3022,7 +3020,6 @@ msgstr ""
 "muốn tiếp tục không?"
 
 #: digikam/tags/tagmodificationhelper.cpp:367
-#: digikam/tags/tagsmanager/tagsmanager.cpp:328
 #, fuzzy, kde-format
 msgid "Tags '%1' are assigned to one or more items. Do you want to continue?"
 msgstr ""
@@ -3030,7 +3027,6 @@ msgstr ""
 "muốn tiếp tục không?"
 
 #: digikam/tags/tagmodificationhelper.cpp:373
-#: digikam/tags/tagsmanager/tagsmanager.cpp:334
 #, fuzzy, kde-format
 #| msgid "Delete '%1' tag?"
 msgid "Delete '%1' tag(s)?"
@@ -3088,19 +3084,19 @@ msgid "Add selected tags to Quick Access List"
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagmngrtreeview.cpp:131
-#: digikam/tags/tagsmanager/tagsmanager.cpp:589
+#: digikam/tags/tagsmanager/tagsmanager.cpp:649
 #, fuzzy
 #| msgid "Reset Tag Icon"
 msgid "Reset tag Icon"
 msgstr "Đặt lại biểu tượng thẻ"
 
 #: digikam/tags/tagsmanager/tagmngrtreeview.cpp:137
-#: digikam/tags/tagsmanager/tagsmanager.cpp:598
+#: digikam/tags/tagsmanager/tagsmanager.cpp:658
 msgid "Expand Tag Tree"
 msgstr ""
 
 #: digikam/tags/tagsmanager/tagmngrtreeview.cpp:143
-#: digikam/tags/tagsmanager/tagsmanager.cpp:603
+#: digikam/tags/tagsmanager/tagsmanager.cpp:663
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Remove Tag from Images"
@@ -3122,15 +3118,53 @@ msgstr ""
 msgid "Previous tags were changed. Save changes? "
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:165
+#: digikam/tags/tagsmanager/tagsmanager.cpp:166
 #: libs/widgets/mainview/daboutdata.cpp:177
 #, fuzzy
 #| msgid "Color Management"
 msgid "Tags Manager"
 msgstr "Quản lý màu"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:443
-#: digikam/tags/tagsmanager/tagsmanager.cpp:462
+#: digikam/tags/tagsmanager/tagsmanager.cpp:331
+#, fuzzy, kde-format
+msgctxt "%2 is a comma separated list of tags to be deleted."
+msgid ""
+"Tag %2 has one or more subtags. Deleting it will also delete the subtags. Do "
+"you want to continue?"
+msgid_plural ""
+"Tags %2 have one or more subtags. Deleting them will also delete the "
+"subtags. Do you want to continue?"
+msgstr[0] ""
+"Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
+"muốn tiếp tục không?"
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:355
+#, fuzzy, kde-format
+msgctxt "%2 is a comma separated list of tags to be deleted."
+msgid "Tag %2 is assigned to one or more items. Do you want to delete it?"
+msgid_plural ""
+"Tags %2 are assigned to one or more items. Do you want to delete them?"
+msgstr[0] ""
+"Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
+"muốn tiếp tục không?"
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:367
+#, fuzzy, kde-format
+#| msgid "Delete Tag"
+msgctxt "%2 is a comma separated list of tags to be deleted."
+msgid "Delete tag %2?"
+msgid_plural "Delete tags %2?"
+msgstr[0] "Xoá thẻ"
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:377
+#, fuzzy
+#| msgid "Delete Tag"
+msgid "Delete tag"
+msgid_plural "Delete tags"
+msgstr[0] "Xoá thẻ"
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:483
+#: digikam/tags/tagsmanager/tagsmanager.cpp:505
 #, fuzzy
 #| msgid ""
 #| "Performing this operation will reduce image color quality. Do you want to "
@@ -3142,114 +3176,119 @@ msgstr ""
 "Thực hiện thao tác này thì giảm chất lượng màu của ảnh. Bạn có muốn tiếp tục "
 "không?"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:482
+#: digikam/tags/tagsmanager/tagsmanager.cpp:528
 msgid ""
 "This operation will wipe all tags from database only.\n"
-"To apply changes to files you must choose write metadata to file later\n"
+"To apply changes to files, you must choose write metadata to file later.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:585
+#: digikam/tags/tagsmanager/tagsmanager.cpp:591
+msgid "Do you really want to remove the selected tag from all images?"
+msgid_plural "Do you really want to remove the selected tags from all images?"
+msgstr[0] ""
+
+#: digikam/tags/tagsmanager/tagsmanager.cpp:645
 msgid "Organize"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:592
+#: digikam/tags/tagsmanager/tagsmanager.cpp:652
 #, fuzzy
 #| msgid "Create Tag From AddressBook"
 msgid "Create Tag from Address Book"
 msgstr "Tạo thẻ từ Sổ địa chỉ"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:606
+#: digikam/tags/tagsmanager/tagsmanager.cpp:666
 msgid "Add new tag to current tag. Current tag is last clicked tag."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:609
+#: digikam/tags/tagsmanager/tagsmanager.cpp:669
 msgid ""
 "Delete selected items. Also work with multiple items, but won't delete the "
 "root tag."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:613
+#: digikam/tags/tagsmanager/tagsmanager.cpp:673
 msgid "Reset icon to selected tags. Works with multiple selection."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:616
+#: digikam/tags/tagsmanager/tagsmanager.cpp:676
 msgid "Invert selection. Only visible items will be selected"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:619
+#: digikam/tags/tagsmanager/tagsmanager.cpp:679
 msgid "Expand tag tree by one level"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:621
+#: digikam/tags/tagsmanager/tagsmanager.cpp:681
 msgid "Selected items will be expanded"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:623
+#: digikam/tags/tagsmanager/tagsmanager.cpp:683
 msgid "Delete selected tag(s) from images. Works with multiple selection."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:653
+#: digikam/tags/tagsmanager/tagsmanager.cpp:713
 #, fuzzy
 #| msgid "&Export"
 msgid "Sync &Export"
 msgstr "&Xuất"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:657
+#: digikam/tags/tagsmanager/tagsmanager.cpp:717
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Write Tags from Database to Image"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:661
+#: digikam/tags/tagsmanager/tagsmanager.cpp:721
 #, fuzzy
 #| msgid "Read metadata from file to database"
 msgid "Read Tags from Image"
 msgstr "Đọc siêu dữ liệu từ tập tin vào cơ sở dữ liệu"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:664
+#: digikam/tags/tagsmanager/tagsmanager.cpp:724
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Wipe all tags from Database only"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:667
+#: digikam/tags/tagsmanager/tagsmanager.cpp:727
 #, fuzzy
 #| msgid "Write metadata to each file"
 msgid "Write Tags Metadata to Image."
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:669
+#: digikam/tags/tagsmanager/tagsmanager.cpp:729
 msgid "Read tags from Images into Database. Existing tags won't be affected"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:672
+#: digikam/tags/tagsmanager/tagsmanager.cpp:732
 msgid ""
 "Delete all tags from database only. Will not sync with files. Proceed with "
 "caution."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:693
+#: digikam/tags/tagsmanager/tagsmanager.cpp:753
 msgid "Sync Database with Nepomuk"
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:697
+#: digikam/tags/tagsmanager/tagsmanager.cpp:757
 #, fuzzy
 #| msgid "Sync pictures Metadata with database. Please wait..."
 msgid "Sync Nepomuk to Database"
 msgstr "Đang đồng bộ hoá siêu dữ liệu của ảnh với cơ sở dữ liệu. Hãy đợi..."
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:698
+#: digikam/tags/tagsmanager/tagsmanager.cpp:758
 msgid ""
 "Export all tags from Database to Nepomuk. digiKam with Nepomuk support is "
 "required."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:701
+#: digikam/tags/tagsmanager/tagsmanager.cpp:761
 msgid "Import tags from Nepomuk. digiKam with Nepomuk support is required."
 msgstr ""
 
-#: digikam/tags/tagsmanager/tagsmanager.cpp:727
+#: digikam/tags/tagsmanager/tagsmanager.cpp:787
 #, fuzzy
 #| msgid "Properties"
 msgid "Tag Properties"
@@ -26539,14 +26578,6 @@ msgstr ""
 #~| msgid "There are no pictures in this folder."
 #~ msgid "There are no images in this folder."
 #~ msgstr "Không có ảnh nào trong thư mục này."
-
-#, fuzzy
-#~ msgid ""
-#~ "Tags '%1' has one or more subtags. Deleting this will also delete the "
-#~ "subtag.Do you want to continue?"
-#~ msgstr ""
-#~ "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có "
-#~ "chắc muốn tiếp tục không?"
 
 #, fuzzy
 #~| msgid "Toggle tags view to a full list"

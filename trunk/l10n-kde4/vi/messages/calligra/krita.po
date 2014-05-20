@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-19 01:27+0000\n"
+"POT-Creation-Date: 2014-05-20 01:29+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1289,13 +1289,6 @@ msgstr "Layer"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 #, fuzzy
-#| msgid "Radius"
-msgctxt "Category of brush engines"
-msgid "Experimental"
-msgstr "Bán kính"
-
-#: image/brushengine/kis_paintop_factory.cpp:71
-#, fuzzy
 #| msgid "&Scale"
 msgctxt "Category of brush engines"
 msgid "Stable"
@@ -1468,7 +1461,7 @@ msgid "Generator"
 msgstr "Chung "
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:127
+#: image/kis_adjustment_layer.cc:127 plugins/paintops/filterop/filterop.cpp:45
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/dialogs/kis_dlg_filter.cpp:105
@@ -1487,16 +1480,19 @@ msgstr ""
 msgid "Default"
 msgstr "Măc định"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
+#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: image/kis_base_mask_generator.h:33
-#, fuzzy
-#| msgid "Smeary Brush"
-msgid "Soft brush"
-msgstr "Chổi nhòe"
+#: plugins/extensions/metadataeditor/editors/exif.ui:860
+#: plugins/extensions/metadataeditor/editors/exif.ui:892
+#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
+msgid "Soft"
+msgstr "Mềm"
 
 #: image/kis_base_mask_generator.h:34
 #, fuzzy
 #| msgid "Gaussian Blur"
-msgid "Gaussian brush"
+msgid "Gaussian"
 msgstr "Làm mờ kiểu Gauss"
 
 #: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:420
@@ -2688,6 +2684,7 @@ msgstr "&Loại"
 
 #. i18n: ectx: property (text), widget (QRadioButton, shadeSelectorTypeMyPaint)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:234
+#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
 #, fuzzy
 msgid "MyPaint"
 msgstr "Gradient"
@@ -3661,7 +3658,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, brushNameLbl)
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:188
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:31
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgfilternodecreation.ui:17 ui/forms/wdgflipbookselector.ui:28
 #: ui/forms/wdgpaintopsettings.ui:93
 msgid "Name:"
@@ -4194,6 +4191,7 @@ msgstr "Chế độ lộ sáng:"
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 msgid "Auto"
 msgstr "Tự động"
 
@@ -4646,14 +4644,6 @@ msgstr "Bình thường "
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
-#: plugins/extensions/metadataeditor/editors/exif.ui:860
-#: plugins/extensions/metadataeditor/editors/exif.ui:892
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
-msgid "Soft"
-msgstr "Mềm"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
-#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
 #: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:32
@@ -4674,6 +4664,8 @@ msgstr "Cân bằng trắng:"
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 msgid "Custom"
 msgstr "Tự đặt"
@@ -7070,7 +7062,7 @@ msgstr "Màu"
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:43
 #, fuzzy
 #| msgid "Chinese Brush"
-msgid "Chalk brush"
+msgid "Chalk"
 msgstr "Chổi Trung Quốc"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
@@ -7099,7 +7091,7 @@ msgstr "Bão hoà"
 #: plugins/paintops/colorsmudge/colorsmudge_paintop_plugin.cpp:44
 #, fuzzy
 #| msgid "Smeary Brush"
-msgid "Color Smudge Brush"
+msgid "Color Smudge"
 msgstr "Chổi nhòe"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
@@ -7169,9 +7161,9 @@ msgstr "Chổi nhòe"
 
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:43
 #, fuzzy
-#| msgid "Smeary Brush"
-msgid "Curve brush"
-msgstr "Chổi nhòe"
+#| msgid "Curved"
+msgid "Curve"
+msgstr "Cong"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
@@ -7245,16 +7237,21 @@ msgstr "Chọn đường"
 msgid "Smoothing"
 msgstr "Mượt"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:47
-msgid "Pixel Brush"
-msgstr "Chổi điểm ảnh"
+#: plugins/paintops/experiment/wdgshapeoptions.ui:75
+#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
+#: plugins/paintops/spray/wdgshapeoptions.ui:75
+#, fuzzy
+#| msgid "Pixel width"
+msgid "Pixel"
+msgstr "Chiều rộng điểm ảnh"
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_factory.h:50
-#, fuzzy
-#| msgid "Duplicate"
-msgctxt "duplicate paintbrush"
-msgid "Duplicate"
-msgstr "Lặp lại"
+msgctxt "clone paintbrush (previously \"Duplicate\")"
+msgid "Clone"
+msgstr ""
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_option.cpp:45
 #: plugins/paintops/libpaintop/kis_paint_action_type_option.cpp:37
@@ -7289,9 +7286,9 @@ msgstr "Tùy chọn Hình học"
 
 #: plugins/paintops/deform/kis_deform_paintop_factory.h:45
 #, fuzzy
-#| msgid "Radius"
-msgid "Deform brush"
-msgstr "Bán kính"
+#| msgid "Amount:"
+msgid "Deform"
+msgstr "Mức độ:"
 
 #. i18n: ectx: property (text), widget (QLabel, deformLabel)
 #: plugins/paintops/deform/wdgdeformoptions.ui:35
@@ -7380,9 +7377,8 @@ msgid "Use undeformed image"
 msgstr ""
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
-#, fuzzy
-msgid "Dyna brush"
-msgstr "Chổi động"
+msgid "Dyna"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:51
@@ -7425,6 +7421,7 @@ msgstr "Chiều rộng:"
 #. i18n: ectx: attribute (title), widget (QWidget, ShapeTab)
 #. i18n: ectx: property (title), widget (QGroupBox, shapeGroup)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:160
+#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:45
 #: plugins/paintops/hairy/wdghairyeoptions.ui:43
 #: plugins/paintops/hairy/wdgshapeoptions.ui:84
 #, fuzzy
@@ -7486,12 +7483,6 @@ msgstr "Palettes"
 #| msgid "Triangle"
 msgid "Fixed angle"
 msgstr "Hình tam giác"
-
-#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:42
-#, fuzzy
-#| msgid "Radius"
-msgid "Experiment brush"
-msgstr "Bán kính"
 
 #: plugins/paintops/experiment/kis_experiment_shape_option.cpp:36
 #: plugins/paintops/gridbrush/kis_grid_shape_option.cpp:33
@@ -7562,16 +7553,6 @@ msgstr "Gần mép:"
 msgid "Anti-aliased pixel"
 msgstr "Khử răng cưa"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
-#: plugins/paintops/experiment/wdgshapeoptions.ui:75
-#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
-#: plugins/paintops/spray/wdgshapeoptions.ui:75
-#, fuzzy
-#| msgid "Pixel width"
-msgid "Pixel"
-msgstr "Chiều rộng điểm ảnh"
-
 #. i18n: ectx: property (text), widget (QCheckBox, proportionalBox)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:213
 #: plugins/paintops/spray/wdgshapeoptions.ui:218
@@ -7601,7 +7582,7 @@ msgstr "Xoay"
 #. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:241
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:77
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:59
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
 #, fuzzy
 msgid "Constant"
@@ -7610,7 +7591,7 @@ msgstr "Hằng số"
 #. i18n: ectx: property (text), widget (QCheckBox, randomRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:289
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:82
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:64
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
 msgid "Random"
 msgstr "Ngẫu nhiên"
@@ -7629,16 +7610,11 @@ msgstr "Con trỏ"
 msgid "Texture:"
 msgstr "Chữ"
 
-#: plugins/paintops/filterop/filterop.cpp:45
-#, fuzzy
-msgid "Filter Brush"
-msgstr "&Trắng"
-
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-#, fuzzy
-#| msgid "Smeary Brush"
-msgid "Grid brush"
-msgstr "Chổi nhòe"
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
+msgid "Grid"
+msgstr "Lưới"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/gridbrush/wdggridoptions.ui:38
@@ -7713,7 +7689,7 @@ msgstr "Đường"
 #: plugins/paintops/hairy/hairy_paintop_plugin.cpp:44
 #, fuzzy
 #| msgid "Smeary Brush"
-msgid "Hairy brush"
+msgid "Hairy"
 msgstr "Chổi nhòe"
 
 #: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:46
@@ -7933,7 +7909,7 @@ msgstr ""
 #: plugins/paintops/hatching/hatching_paintop_plugin.cpp:43
 #, fuzzy
 #| msgid "Smeary Brush"
-msgid "Hatching brush"
+msgid "Hatching"
 msgstr "Chổi nhòe"
 
 #: plugins/paintops/hatching/kis_hatching_options.cpp:57
@@ -8118,7 +8094,7 @@ msgstr "Ngẫu nhiên"
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:266
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:152
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:85
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:180
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
 #: plugins/paintops/spray/wdgsprayoptions.ui:204
@@ -8185,7 +8161,7 @@ msgstr "Xóa đoạn"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsMask)
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:19
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:131
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:113
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
 msgid "Use color as mask"
 msgstr ""
@@ -8193,9 +8169,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:102
 #, fuzzy
-#| msgid "Smeary Brush"
-msgid "Save brush:"
-msgstr "Chổi nhòe"
+#| msgid "Scale Layer"
+msgid "Save Tip:"
+msgstr "Phóng Lớp"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
@@ -8294,53 +8270,57 @@ msgstr "Đường cong Cỡ"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, labelStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:60
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:42
 #: plugins/tools/tool_text/wdgtextoptions.ui:71
 msgid "Style:"
 msgstr "Kiểu:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:69
 msgid "Incremental"
 msgstr "Tăng dần"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:92
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
 #: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "Áp lực"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:97
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:79
 #, fuzzy
 msgid "Angular"
 msgstr "Góc"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:105
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
 msgid "Selection mode:"
 msgstr "Chế độ chọn:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:116
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:98
 msgid "Regular"
 msgstr "Thông thường"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:121
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:103
 #, fuzzy
 msgid "Animated"
 msgstr "Hoạt cảnh"
 
 #. i18n: ectx: property (text), widget (QPushButton, brushButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:236
-msgid "Use as Brush"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:200
+#, fuzzy
+#| msgid "Use as Brush"
+msgid "Use as Tip"
 msgstr "Dùng làm Chổi"
 
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:243
-msgid "Add to Predefined Brushes"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#, fuzzy
+#| msgid "Add to Predefined Brushes"
+msgid "Add to Predefined Tips"
 msgstr "Thêm vào Các chổi được định sẵn"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSmudgeMode)
@@ -8457,9 +8437,9 @@ msgstr ""
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
 #, fuzzy
-#| msgid "Smeary Brush"
-msgid "Reset Brush"
-msgstr "Chổi nhòe"
+#| msgid "Predefined Brushes"
+msgid "Reset Predefined Tip"
+msgstr "Các chổi có sẵn"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:157
 msgid ""
@@ -8474,31 +8454,24 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "Cỡ chổi"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
-msgid "Autobrush"
-msgstr "Chổi tự động"
-
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
-msgid "Predefined Brushes"
+#, fuzzy
+#| msgid "Predefined Brushes"
+msgid "Predefined"
 msgstr "Các chổi có sẵn"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
-msgid "Custom Brush"
-msgstr "Chổi tự đặt"
-
+#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
-#, fuzzy
-#| msgid "Smeary Brush"
-msgid "Clipboard Brush"
-msgstr "Chổi nhòe"
+#: ui/forms/wdgnewimage.ui:331
+msgid "Clipboard"
+msgstr ""
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
 #, fuzzy
-msgid "Text Brush"
-msgstr "Chổi cho chữ"
+msgid "Text"
+msgstr "Chữ"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
 msgid ""
@@ -9526,16 +9499,10 @@ msgid ""
 "will make it smoother"
 msgstr ""
 
-#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
-#, fuzzy
-#| msgid "Paint with curves"
-msgid "MyPaint brush"
-msgstr "Vẽ bằng các đường cong"
-
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
 #| msgid "Vertices:"
-msgid "Particle brush"
+msgid "Particle"
 msgstr "Các đỉnh:"
 
 #. i18n: ectx: property (text), widget (QLabel, particlesLbl)
@@ -9921,7 +9888,7 @@ msgstr "Khoảng cách X:"
 #: plugins/paintops/sketch/sketch_paintop_plugin.cpp:43
 #, fuzzy
 #| msgid "Smeary Brush"
-msgid "Sketch brush"
+msgid "Sketch"
 msgstr "Chổi nhòe"
 
 #. i18n: ectx: property (suffix), widget (KDoubleNumInput, lineWidthSPBox)
@@ -9996,7 +9963,7 @@ msgstr "Chổi nhòe"
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
 #, fuzzy
 #| msgid "Smeary Brush"
-msgid "Spray brush"
+msgid "Spray"
 msgstr "Chổi nhòe"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -11066,11 +11033,6 @@ msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
-
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
-#: ui/dialogs/kis_dlg_preferences.cc:674
-msgid "Grid"
-msgstr "Lưới"
 
 #: ui/canvas/kis_grid_manager.cpp:70
 #, fuzzy
@@ -12431,11 +12393,6 @@ msgstr "Phương thức"
 msgid "&Predefined:"
 msgstr "Các chổi có sẵn"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
-#: ui/forms/wdgnewimage.ui:331
-msgid "Clipboard"
-msgstr ""
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpContents)
 #: ui/forms/wdgnewimage.ui:373
 msgid "Contents"
@@ -12656,7 +12613,7 @@ msgid "No Outline"
 msgstr "Không chọn"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdgshapeoptions.ui:38 ui/kis_paintop_option.cpp:26
+#: ui/forms/wdgshapeoptions.ui:38
 #, fuzzy
 msgid "Brush"
 msgstr "Chổi"
@@ -13993,6 +13950,11 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "&Trắng"
 
+#: ui/kis_paintop_option.cpp:26
+#, fuzzy
+msgid "Common"
+msgstr "Màu"
+
 #: ui/kis_paintop_option.cpp:36
 #, fuzzy
 msgid "Texture"
@@ -14548,13 +14510,13 @@ msgstr "Phóng Phần chọn"
 msgid "Freehand Stroke"
 msgstr ""
 
-#: ui/tool/kis_tool_paint.cc:89
+#: ui/tool/kis_tool_paint.cc:105
 #, fuzzy
 #| msgid "Chinese Brush"
 msgid "Increase Brush Size"
 msgstr "Chổi Trung Quốc"
 
-#: ui/tool/kis_tool_paint.cc:95
+#: ui/tool/kis_tool_paint.cc:111
 #, fuzzy
 #| msgid "Brush size"
 msgid "Decrease Brush Size"
@@ -14691,6 +14653,102 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Đóng"
+
+#, fuzzy
+#~| msgid "Radius"
+#~ msgctxt "Category of brush engines"
+#~ msgid "Experimental"
+#~ msgstr "Bán kính"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Soft brush"
+#~ msgstr "Chổi nhòe"
+
+#, fuzzy
+#~| msgid "Gaussian Blur"
+#~ msgid "Gaussian brush"
+#~ msgstr "Làm mờ kiểu Gauss"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Curve brush"
+#~ msgstr "Chổi nhòe"
+
+#~ msgid "Pixel Brush"
+#~ msgstr "Chổi điểm ảnh"
+
+#, fuzzy
+#~| msgid "Duplicate"
+#~ msgctxt "duplicate paintbrush"
+#~ msgid "Duplicate"
+#~ msgstr "Lặp lại"
+
+#, fuzzy
+#~| msgid "Radius"
+#~ msgid "Deform brush"
+#~ msgstr "Bán kính"
+
+#, fuzzy
+#~ msgid "Dyna brush"
+#~ msgstr "Chổi động"
+
+#, fuzzy
+#~| msgid "Radius"
+#~ msgid "Experiment brush"
+#~ msgstr "Bán kính"
+
+#, fuzzy
+#~ msgid "Filter Brush"
+#~ msgstr "&Trắng"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Grid brush"
+#~ msgstr "Chổi nhòe"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Save brush:"
+#~ msgstr "Chổi nhòe"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Reset Brush"
+#~ msgstr "Chổi nhòe"
+
+#~ msgid "Autobrush"
+#~ msgstr "Chổi tự động"
+
+#~ msgid "Predefined Brushes"
+#~ msgstr "Các chổi có sẵn"
+
+#~ msgid "Custom Brush"
+#~ msgstr "Chổi tự đặt"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Clipboard Brush"
+#~ msgstr "Chổi nhòe"
+
+#, fuzzy
+#~ msgid "Text Brush"
+#~ msgstr "Chổi cho chữ"
+
+#, fuzzy
+#~| msgid "Paint with curves"
+#~ msgid "MyPaint brush"
+#~ msgstr "Vẽ bằng các đường cong"
+
+#, fuzzy
+#~| msgid "Vertices:"
+#~ msgid "Particle brush"
+#~ msgstr "Các đỉnh:"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Spray brush"
+#~ msgstr "Chổi nhòe"
 
 #, fuzzy
 #~| msgid "Description:"
@@ -15131,10 +15189,6 @@ msgstr "Đóng"
 #, fuzzy
 #~ msgid "A_Angular box soft"
 #~ msgstr "Bước góc:"
-
-#, fuzzy
-#~ msgid "Text"
-#~ msgstr "Chữ"
 
 #, fuzzy
 #~| msgid "Pixel width"
@@ -16274,10 +16328,6 @@ msgstr "Đóng"
 #~ msgstr "Màu Có tên"
 
 #, fuzzy
-#~ msgid "Common Colors"
-#~ msgstr "Màu"
-
-#, fuzzy
 #~| msgid "Main:"
 #~ msgid "Min"
 #~ msgstr "Chính:"
@@ -16309,16 +16359,6 @@ msgstr "Đóng"
 #~| msgid "Amount:"
 #~ msgid "Ink amount"
 #~ msgstr "Mức độ:"
-
-#, fuzzy
-#~| msgid "Curved"
-#~ msgid "Curve"
-#~ msgstr "Cong"
-
-#, fuzzy
-#~| msgid "Gaussian Blur"
-#~ msgid "Gaussian"
-#~ msgstr "Làm mờ kiểu Gauss"
 
 #, fuzzy
 #~| msgid "Smeary Brush"

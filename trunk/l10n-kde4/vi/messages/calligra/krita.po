@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-25 01:45+0000\n"
+"POT-Creation-Date: 2014-05-26 01:34+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -3768,7 +3768,7 @@ msgstr "Màu:"
 #: plugins/filters/noisefilter/wdgnoiseoptions.ui:29
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
-#: ui/forms/wdgautogradient.ui:278 ui/forms/wdgpaintactioneditor.ui:89
+#: ui/forms/wdgautogradient.ui:67 ui/forms/wdgpaintactioneditor.ui:89
 #: ui/kis_paintop_box.cc:150
 msgid "Opacity:"
 msgstr "Độ đậm đặc:"
@@ -3792,26 +3792,26 @@ msgstr "%"
 msgid "Grow image to make drop shadow fit if needed"
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:67
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:68
 msgid "Apply G'Mic Action..."
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:129
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:138 ui/kis_aboutdata.h:44
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:158
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167 ui/kis_aboutdata.h:44
 #: wdgsplash.ui:300
 msgid "Krita"
 msgstr "Krita"
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:129
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:158
 msgid "Sorry, this filter is crashing Krita and is turned off."
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:138
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167
 msgid "Sorry, this input mode is not implemented"
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:143
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:172
 #, fuzzy
 msgid "Gmic filter"
 msgstr "Trình chọn &màu"
@@ -3824,15 +3824,27 @@ msgstr "Trình chọn &màu"
 msgid "Update"
 msgstr "Cập nhật hình xem trước"
 
-#: plugins/extensions/gmic/kis_gmic_widget.cpp:38
+#: plugins/extensions/gmic/kis_gmic_widget.cpp:41
 #, fuzzy
 #| msgid "Channel"
 msgid "Maximize"
 msgstr "Kênh"
 
-#: plugins/extensions/gmic/kis_gmic_widget.cpp:249
+#: plugins/extensions/gmic/kis_gmic_widget.cpp:265
 msgid "Restore"
 msgstr ""
+
+#: plugins/extensions/gmic/kis_gmic_widget.cpp:282
+msgctxt "@info"
+msgid "Update filters done. Restart G'MIC dialog to finish updating! "
+msgstr ""
+
+#: plugins/extensions/gmic/kis_gmic_widget.cpp:284
+#, fuzzy
+#| msgid "Update preview"
+msgctxt "@title:window"
+msgid "Updated"
+msgstr "Cập nhật hình xem trước"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: plugins/extensions/gmic/wdg_gmic.ui:17
@@ -11651,68 +11663,61 @@ msgid ""
 "for spot colors (Pantone, TruMatch, logo colors, ...)"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: ui/forms/wdgautogradient.ui:32 ui/widgets/kis_gradient_chooser.cc:43
-#: ui/widgets/kis_gradient_chooser.cc:48
-#, fuzzy
-msgid "Custom Gradient"
-msgstr "Đổ dốc màu tự chọn"
-
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: ui/forms/wdgautogradient.ui:96
+#: ui/forms/wdgautogradient.ui:49
 #, fuzzy
 msgid "Segment Color"
 msgstr "Màu đoạn"
 
 #. i18n: ectx: property (text), widget (QLabel, labelLeftColor)
-#: ui/forms/wdgautogradient.ui:128
+#: ui/forms/wdgautogradient.ui:85
 msgid "Left:"
 msgstr "Trái:"
 
 #. i18n: ectx: property (text), widget (QLabel, labelRightColor)
-#: ui/forms/wdgautogradient.ui:195
+#: ui/forms/wdgautogradient.ui:166
 msgid "Right:"
 msgstr "Phải:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxInterpolationType)
-#: ui/forms/wdgautogradient.ui:378
+#: ui/forms/wdgautogradient.ui:285
 msgid "Linear"
 msgstr "Tuyến tính"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxInterpolationType)
-#: ui/forms/wdgautogradient.ui:383
+#: ui/forms/wdgautogradient.ui:290
 msgid "Curved"
 msgstr "Cong"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxInterpolationType)
-#: ui/forms/wdgautogradient.ui:388
+#: ui/forms/wdgautogradient.ui:295
 msgid "Sine"
 msgstr "Hình sin"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxInterpolationType)
-#: ui/forms/wdgautogradient.ui:393
+#: ui/forms/wdgautogradient.ui:300
 #, fuzzy
 msgid "Sphere Inc."
 msgstr "Hình cầu tăng"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxInterpolationType)
-#: ui/forms/wdgautogradient.ui:398
+#: ui/forms/wdgautogradient.ui:305
 #, fuzzy
 msgid "Sphere Dec."
 msgstr "Hình cầu giảm"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorInterpolationType)
-#: ui/forms/wdgautogradient.ui:421
+#: ui/forms/wdgautogradient.ui:328
 msgid "RGB"
 msgstr "RGB"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorInterpolationType)
-#: ui/forms/wdgautogradient.ui:426
+#: ui/forms/wdgautogradient.ui:333
 msgid "HSV CW"
 msgstr "HSV theo chiều kim đồng hồ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBoxColorInterpolationType)
-#: ui/forms/wdgautogradient.ui:431
+#: ui/forms/wdgautogradient.ui:338
 msgid "HSV CCW"
 msgstr "HSV ngược chiều kim đồng hồ"
 
@@ -13664,6 +13669,7 @@ msgid "The file does not contain an image."
 msgstr ""
 
 #: ui/kis_doc2.cc:442 ui/kis_part2.cpp:130 ui/kis_part2.cpp:145
+#: ui/widgets/kis_gradient_chooser.cc:127
 #, fuzzy
 #| msgid "Unnamed"
 msgid "unnamed"
@@ -14705,10 +14711,22 @@ msgstr ""
 msgid "No configuration option."
 msgstr "Không có tùy chọn nào."
 
-#: ui/widgets/kis_gradient_chooser.cc:75
+#: ui/widgets/kis_gradient_chooser.cc:46 ui/widgets/kis_gradient_chooser.cc:51
 #, fuzzy
-msgid "Custom Gradient..."
-msgstr "Đổ dốc màu tự chọn..."
+msgid "Custom Gradient"
+msgstr "Đổ dốc màu tự chọn"
+
+#: ui/widgets/kis_gradient_chooser.cc:80
+#, fuzzy
+#| msgid "&Add..."
+msgid "Add..."
+msgstr "&Thêm..."
+
+#: ui/widgets/kis_gradient_chooser.cc:84
+#, fuzzy
+#| msgid "Edit"
+msgid "Edit..."
+msgstr "Sửa"
 
 #: ui/widgets/kis_gradient_slider_widget.cc:48
 msgid "Split Segment"
@@ -14818,6 +14836,10 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Đóng"
+
+#, fuzzy
+#~ msgid "Custom Gradient..."
+#~ msgstr "Đổ dốc màu tự chọn..."
 
 #, fuzzy
 #~| msgid "Smooth"
@@ -14963,9 +14985,6 @@ msgstr "Đóng"
 #~| msgid "&Resources"
 #~ msgid "Resource Manager"
 #~ msgstr "&Tài nguyên"
-
-#~ msgid "Edit"
-#~ msgstr "Sửa"
 
 #, fuzzy
 #~| msgid "Vertical:"
@@ -17330,9 +17349,6 @@ msgstr "Đóng"
 #~| msgid "Opacity:"
 #~ msgid "Specify:"
 #~ msgstr "Độ đậm đặc:"
-
-#~ msgid "&Add..."
-#~ msgstr "&Thêm..."
 
 #~ msgid "Flip on &X Axis"
 #~ msgstr "Lật quanh trục &X"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-07-01 01:42+0000\n"
+"POT-Creation-Date: 2014-07-02 01:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -122,7 +122,7 @@ msgstr "Đóng"
 msgid "&Restart Krita"
 msgstr ""
 
-#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:534
+#: gemini/desktopviewproxy.cpp:124 gemini/MainWindow.cpp:545
 msgid "Open Document"
 msgstr ""
 
@@ -214,7 +214,7 @@ msgstr "Thiết lập"
 msgid "Brushes and Stuff"
 msgstr ""
 
-#: gemini/main.cpp:70 gemini/MainWindow.cpp:245 gemini/MainWindow.cpp:287
+#: gemini/main.cpp:70 gemini/MainWindow.cpp:251 gemini/MainWindow.cpp:293
 #, fuzzy
 #| msgid "Krita %1"
 msgid "Krita Gemini"
@@ -246,14 +246,18 @@ msgstr ""
 msgid "Use full-screen display"
 msgstr "Áp lực"
 
-#: gemini/MainWindow.cpp:286 gemini/MainWindow.cpp:625
+#: gemini/main.cpp:85
+msgid "Start with the Sketch interface"
+msgstr ""
+
+#: gemini/MainWindow.cpp:292 gemini/MainWindow.cpp:636
 #: sketch/MainWindow.cpp:150
 #, fuzzy
 #| msgid "untitled-1"
 msgid "Untitled"
 msgstr "không tên-1"
 
-#: gemini/MainWindow.cpp:628
+#: gemini/MainWindow.cpp:639
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -8099,7 +8103,6 @@ msgstr "Nhiễu &ngẫu nhiên..."
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:42
-#: plugins/tools/defaulttools/kis_tool_line.cc:72
 msgid "Rotation"
 msgstr "Xoay"
 
@@ -8799,7 +8802,6 @@ msgstr "Tăng dần"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
-#: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "Áp lực"
 
@@ -10923,32 +10925,20 @@ msgstr "Ngưỡng khử răng cưa:"
 msgid "Draw a gradient."
 msgstr "Vẽ một đổ dốc màu"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:71
-#, fuzzy
-#| msgid "X-Tilt"
-msgid "Tilt"
-msgstr "Nghiêng X"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:73
-#, fuzzy
-#| msgid "Pressure"
-msgid "Tangential Pressure"
-msgstr "Áp lực"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:74
-#, fuzzy
-#| msgid "options"
-msgid "Varying End-Points"
-msgstr "tuỳ chọn"
-
-#: plugins/tools/defaulttools/kis_tool_line.cc:186
+#: plugins/tools/defaulttools/kis_tool_line.cc:54
 #, fuzzy
 #| msgid "Dashed Lines"
 msgctxt "(qtundo-format)"
 msgid "Draw Line"
 msgstr "Đường gạch"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:259
+#: plugins/tools/defaulttools/kis_tool_line.cc:79
+#, fuzzy
+#| msgid "Color"
+msgid "Use sensors"
+msgstr "Màu"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:240
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -10956,7 +10946,7 @@ msgstr ""
 "Alt+kéo sẽ di chuyển gốc của đường đang được hiển thị, Shift+kéo sẽ buộc bạn "
 "vẽ đường thẳng."
 
-#: plugins/tools/defaulttools/kis_tool_line.h:85
+#: plugins/tools/defaulttools/kis_tool_line.h:93
 #, fuzzy
 msgid "Line Tool"
 msgstr "Công cụ đườn&g"
@@ -13612,7 +13602,7 @@ msgid "Edit Mouse Wheel Input"
 msgstr ""
 
 #: ui/input/kis_abstract_input_action.cpp:44
-#: ui/input/kis_tool_invocation_action.cpp:49
+#: ui/input/kis_tool_invocation_action.cpp:50
 #, fuzzy
 msgid "Activate"
 msgstr "Lớp đang dùng"
@@ -13953,27 +13943,33 @@ msgstr "Bảng màu"
 msgid "The <i>Show Popup Palette</i> displays the popup palette."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:45
+#: ui/input/kis_tool_invocation_action.cpp:46
 #, fuzzy
 #| msgid "Tool information"
 msgid "Tool Invocation"
 msgstr "Thông tin về công cụ"
 
-#: ui/input/kis_tool_invocation_action.cpp:46
+#: ui/input/kis_tool_invocation_action.cpp:47
 msgid ""
 "The <i>Tool Invocation</i> action invokes the current tool, for example, "
 "using the brush tool, it will start painting."
 msgstr ""
 
-#: ui/input/kis_tool_invocation_action.cpp:50
+#: ui/input/kis_tool_invocation_action.cpp:51
 #, fuzzy
 #| msgid "Configure..."
 msgid "Confirm"
 msgstr "Cấu hình..."
 
-#: ui/input/kis_tool_invocation_action.cpp:51 ui/kis_view2.cpp:570
+#: ui/input/kis_tool_invocation_action.cpp:52 ui/kis_view2.cpp:570
 msgid "Cancel"
 msgstr "Thôi"
+
+#: ui/input/kis_tool_invocation_action.cpp:53
+#, fuzzy
+#| msgid "Current layer"
+msgid "Activate Line Tool"
+msgstr "Lớp hiện tại"
 
 #: ui/input/kis_zoom_action.cpp:112
 #, fuzzy
@@ -15709,6 +15705,21 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Đóng"
+
+#, fuzzy
+#~| msgid "X-Tilt"
+#~ msgid "Tilt"
+#~ msgstr "Nghiêng X"
+
+#, fuzzy
+#~| msgid "Pressure"
+#~ msgid "Tangential Pressure"
+#~ msgstr "Áp lực"
+
+#, fuzzy
+#~| msgid "options"
+#~ msgid "Varying End-Points"
+#~ msgstr "tuỳ chọn"
 
 #, fuzzy
 #~ msgid "Gradient Fill"

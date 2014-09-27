@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_trash\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-07 08:44+0000\n"
+"POT-Creation-Date: 2014-09-27 09:13+0000\n"
 "PO-Revision-Date: 2013-08-26 20:28+0800\n"
 "Last-Translator: herop-kde\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -26,58 +26,9 @@ msgstr[0] " ngày"
 msgid "Delete files older than:"
 msgstr "Xoá những tập tin cũ hơn:"
 
-#: kcmtrash.cpp:249
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Check this box to allow <b>automatic deletion</b> of files that are "
-"older than the value specified. Leave this disabled to <b>not</b> "
-"automatically delete any items after a certain timespan</para>"
-msgstr ""
-"<para>Chọn để cho phép <b>tự động xoá</b> các tập tin cũ hơn giá trị được "
-"nhập. Không chọn để không tự động xoá tập tin nào</para>"
-
-#: kcmtrash.cpp:258
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Set the number of days that files can remain in the trash. Any files "
-"older than this will be automatically deleted.</para>"
-msgstr ""
-"<para>Đặt số ngày mà một tập tin được lưu giữ trong thùng rác. Bất kỳ tập "
-"tin nào cũ hơn sẽ tự động được xoá.</para>"
-
 #: kcmtrash.cpp:266
 msgid "Limit to maximum size"
 msgstr "Giới hạn kích thước tối đa"
-
-#: kcmtrash.cpp:268
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Check this box to limit the trash to the maximum amount of disk space "
-"that you specify below. Otherwise, it will be unlimited.</para>"
-msgstr ""
-"<para>Chọn để giới hạn dung lượng đĩa tối đa dành cho thùng rác. Sẽ không có "
-"giới hạn nào nếu không chọn.</para>"
-
-#: kcmtrash.cpp:286
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>This is the maximum percent of disk space that will be used for the "
-"trash.</para>"
-msgstr ""
-"<para>Đây là số phần trăm dung lượng đĩa tối đa dành cho thùng rác.</para>"
-
-#: kcmtrash.cpp:291
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid ""
-#| "<para>This is the maximum percent of disk space that will be used for the "
-#| "trash.</para>"
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>This is the calculated amount of disk space that will be allowed for "
-"the trash, the maximum.</para>"
-msgstr ""
-"<para>Đây là số phần trăm dung lượng đĩa tối đa dành cho thùng rác.</para>"
 
 #: kcmtrash.cpp:294
 msgid "Maximum size:"
@@ -98,17 +49,6 @@ msgstr "Xoá các tập tin cũ nhất trong thùng rác"
 #: kcmtrash.cpp:302
 msgid "Delete Biggest Files From Trash"
 msgstr "Xoá các tập tin lớn nhất trong thùng rác"
-
-#: kcmtrash.cpp:304
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>When the size limit is reached, it will prefer to delete the type of "
-"files that you specify, first. If this is set to warn you, it will do so "
-"instead of automatically deleting files.</para>"
-msgstr ""
-"<para>Khi đạt giới hạn dung lượng, thùng rác sẽ ưu tiên xoá kiểu tập tin mà "
-"bạn đã chọn trước. Nếu được chọn là cảnh báo, nó sẽ làm như vậy thay vì xoá "
-"bất cứ tập tin nào.</para>"
 
 #: kio_trash.cpp:93 kio_trash.cpp:159 kio_trash.cpp:315 kio_trash.cpp:347
 #: kio_trash.cpp:513 kio_trash.cpp:525
@@ -140,11 +80,7 @@ msgstr "Lỗi nội bộ trong copyOrMove. Lỗi này không nên xảy ra."
 msgid "not supported"
 msgstr "không hỗ trợ"
 
-#: ktrash.cpp:33
-msgid "ktrash"
-msgstr "ktrash"
-
-#: ktrash.cpp:35
+#: ktrash.cpp:38
 msgid ""
 "Helper program to handle the KDE trash can\n"
 "Note: to move files to the trash, do not use ktrash, but \"kioclient move "
@@ -154,19 +90,15 @@ msgstr ""
 "Lưu ý: để di chuyển tập tin vào thùng rác, hãy sử dụng \"kioclient move "
 "'url' trash:/\" thay vì ktrash"
 
-#: ktrash.cpp:39
+#: ktrash.cpp:41
 msgid "Empty the contents of the trash"
 msgstr "Dọn sạch sọt rác"
 
-#: ktrash.cpp:41
+#: ktrash.cpp:42
 msgid "Restore a trashed file to its original location"
 msgstr "Phục hồi tập tin trong sọt rác về vị trí cũ của nó"
 
-#: ktrash.cpp:43
-msgid "Ignored"
-msgstr "Bị bỏ qua"
-
-#: trashimpl.cpp:1128
+#: trashimpl.cpp:1123
 msgid ""
 "The trash has reached its maximum size!\n"
 "Cleanup the trash manually."
@@ -174,9 +106,69 @@ msgstr ""
 "Thùng rác đã đạt giới hạn dung lượng tối đa!\n"
 "Hãy dọn dẹp thùng rác."
 
-#: trashimpl.cpp:1139
+#: trashimpl.cpp:1134
 msgid "The file is too large to be trashed."
 msgstr "Không thể bỏ thùng rác tập tin này do kích thước quá lớn."
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Check this box to allow <b>automatic deletion</b> of files that are "
+#~ "older than the value specified. Leave this disabled to <b>not</b> "
+#~ "automatically delete any items after a certain timespan</para>"
+#~ msgstr ""
+#~ "<para>Chọn để cho phép <b>tự động xoá</b> các tập tin cũ hơn giá trị được "
+#~ "nhập. Không chọn để không tự động xoá tập tin nào</para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Set the number of days that files can remain in the trash. Any "
+#~ "files older than this will be automatically deleted.</para>"
+#~ msgstr ""
+#~ "<para>Đặt số ngày mà một tập tin được lưu giữ trong thùng rác. Bất kỳ tập "
+#~ "tin nào cũ hơn sẽ tự động được xoá.</para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>Check this box to limit the trash to the maximum amount of disk "
+#~ "space that you specify below. Otherwise, it will be unlimited.</para>"
+#~ msgstr ""
+#~ "<para>Chọn để giới hạn dung lượng đĩa tối đa dành cho thùng rác. Sẽ không "
+#~ "có giới hạn nào nếu không chọn.</para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>This is the maximum percent of disk space that will be used for the "
+#~ "trash.</para>"
+#~ msgstr ""
+#~ "<para>Đây là số phần trăm dung lượng đĩa tối đa dành cho thùng rác.</para>"
+
+#, fuzzy
+#~| msgctxt "@info:whatsthis"
+#~| msgid ""
+#~| "<para>This is the maximum percent of disk space that will be used for "
+#~| "the trash.</para>"
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>This is the calculated amount of disk space that will be allowed "
+#~ "for the trash, the maximum.</para>"
+#~ msgstr ""
+#~ "<para>Đây là số phần trăm dung lượng đĩa tối đa dành cho thùng rác.</para>"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<para>When the size limit is reached, it will prefer to delete the type "
+#~ "of files that you specify, first. If this is set to warn you, it will do "
+#~ "so instead of automatically deleting files.</para>"
+#~ msgstr ""
+#~ "<para>Khi đạt giới hạn dung lượng, thùng rác sẽ ưu tiên xoá kiểu tập tin "
+#~ "mà bạn đã chọn trước. Nếu được chọn là cảnh báo, nó sẽ làm như vậy thay "
+#~ "vì xoá bất cứ tập tin nào.</para>"
+
+#~ msgid "ktrash"
+#~ msgstr "ktrash"
+
+#~ msgid "Ignored"
+#~ msgstr "Bị bỏ qua"
 
 #~ msgid "Protocol name"
 #~ msgstr "Tên giao thức"

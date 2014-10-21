@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-20 01:40+0000\n"
+"POT-Creation-Date: 2014-10-21 01:37+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1306,14 +1306,14 @@ msgctxt "./data/patterns/HR_Wall_Paper.pat"
 msgid "HR Wall Paper"
 msgstr "Layer"
 
-#: image/brushengine/kis_paintop_factory.cpp:66
+#: image/brushengine/kis_paintop_factory.cpp:65
 #, fuzzy
 #| msgid "Brush size"
 msgctxt "Category of brush engines"
 msgid "Brush engines"
 msgstr "Cỡ chổi"
 
-#: image/brushengine/kis_paintop_registry.cc:132
+#: image/brushengine/kis_paintop_registry.cc:131
 #, fuzzy
 #| msgid "Default"
 msgid "default"
@@ -3098,7 +3098,7 @@ msgstr "&Hiện"
 #: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:30
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:103
-#: ui/forms/wdgdisplaysettings.ui:65 ui/kis_paintop_box.cc:153
+#: ui/forms/wdgdisplaysettings.ui:65 ui/kis_paintop_box.cc:172
 #, fuzzy
 msgid "Size:"
 msgstr "kết nối"
@@ -3784,7 +3784,7 @@ msgstr "Công cụ &trình lọc"
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
 #: ui/forms/wdganimationselector.ui:220 ui/forms/wdgautogradient.ui:81
-#: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:151
+#: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:170
 msgid "Opacity:"
 msgstr "Độ đậm đặc:"
 
@@ -3871,11 +3871,19 @@ msgstr ""
 msgid "Load flipbook"
 msgstr ""
 
-#: plugins/extensions/dockers/historydocker/HistoryDock.cpp:25
+#: plugins/extensions/dockers/historydocker/HistoryDock.cpp:27
 #, fuzzy
 #| msgid "Small Color Selector"
 msgid "Undo History"
 msgstr "Trình chọn màu nhỏ"
+
+#: plugins/extensions/dockers/historydocker/KisUndoView.cpp:307
+msgid "Disable Cumulative Undo"
+msgstr ""
+
+#: plugins/extensions/dockers/historydocker/KisUndoView.cpp:307
+msgid "Enable Cumulative Undo"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, imgBrowserTab)
 #: plugins/extensions/dockers/imagedocker/forms/wdgimagedocker.ui:42
@@ -4177,7 +4185,7 @@ msgstr "Tên lớp:"
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:131
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgautogradient.ui:25 ui/forms/wdgfilternodecreation.ui:17
-#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:93
+#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:166
 msgid "Name:"
 msgstr "Tên:"
 
@@ -5603,7 +5611,7 @@ msgstr "Chổi"
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:197
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:104
-#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:254
+#: ui/forms/wdgdlgblacklistcleanup.ui:26 ui/kis_paintop_box.cc:279
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Workspaces"
@@ -5773,11 +5781,11 @@ msgstr "Cấu hình mới %1"
 msgid "Could not load bundle %1."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: plugins/extensions/resourcemanager/resourcemanager.cpp:299
+#: plugins/extensions/resourcemanager/resourcemanager.cpp:300
 msgid "Could not create the new bundle."
 msgstr ""
 
-#: plugins/extensions/resourcemanager/resourcemanager.cpp:299
+#: plugins/extensions/resourcemanager/resourcemanager.cpp:300
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Error"
@@ -7722,13 +7730,21 @@ msgstr ""
 msgid "Vector Layer"
 msgstr "Trộn Layer"
 
-#: plugins/formats/ora/ora_export.cc:98
+#: plugins/formats/ora/ora_export.cc:106
+msgid "Cannot export images in this colorspace or channel depth to OpenRaster"
+msgstr ""
+
+#: plugins/formats/ora/ora_export.cc:106
+msgid "Krita OpenRaster Export"
+msgstr ""
+
+#: plugins/formats/ora/ora_export.cc:114
 msgid ""
 "This image contains vector, clone or fill layers.\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
-#: plugins/formats/ora/ora_export.cc:99
+#: plugins/formats/ora/ora_export.cc:115
 #, fuzzy
 #| msgid "Warning!"
 msgid "Warning"
@@ -9616,7 +9632,7 @@ msgstr "Thiết lập Màu"
 
 #. i18n: ectx: property (text), widget (QLabel, flowLabel)
 #: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:58
-#: ui/kis_paintop_box.cc:152
+#: ui/kis_paintop_box.cc:171
 #, fuzzy
 #| msgid "&Show"
 msgid "Flow:"
@@ -9971,7 +9987,7 @@ msgstr "Khoảng màu"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
-#: ui/kis_paintop_box.cc:250
+#: ui/kis_paintop_box.cc:275
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirror"
@@ -10790,7 +10806,7 @@ msgctxt "(qtundo-format)"
 msgid "Draw Line"
 msgstr "Đường gạch"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:81
+#: plugins/tools/defaulttools/kis_tool_line.cc:88
 #, fuzzy
 #| msgid "Color"
 msgid "Use sensors"
@@ -10798,12 +10814,12 @@ msgstr "Màu"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxPreview)
 #. i18n: ectx: property (title), widget (QGroupBox, m_groupBox)
-#: plugins/tools/defaulttools/kis_tool_line.cc:85
+#: plugins/tools/defaulttools/kis_tool_line.cc:91
 #: ui/forms/kis_previewwidgetbase.ui:36 ui/forms/wdgfilterdialog.ui:64
 msgid "Preview"
 msgstr "Xem Trước"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:250
+#: plugins/tools/defaulttools/kis_tool_line.cc:277
 msgid ""
 "Alt+Drag will move the origin of the currently displayed line around, Shift"
 "+Drag will force you to draw straight lines"
@@ -10811,7 +10827,7 @@ msgstr ""
 "Alt+kéo sẽ di chuyển gốc của đường đang được hiển thị, Shift+kéo sẽ buộc bạn "
 "vẽ đường thẳng."
 
-#: plugins/tools/defaulttools/kis_tool_line.h:96
+#: plugins/tools/defaulttools/kis_tool_line.h:103
 #, fuzzy
 msgid "Line Tool"
 msgstr "Công cụ đườn&g"
@@ -10828,7 +10844,7 @@ msgstr "Góc:"
 msgid "Measure the distance between two points"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_move.h:115
+#: plugins/tools/defaulttools/kis_tool_move.h:121
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move a layer"
@@ -13288,30 +13304,40 @@ msgid "Preset Collection"
 msgstr "Chọn đường"
 
 #. i18n: ectx: property (toolTip), widget (QLineEdit, txtPreset)
-#: ui/forms/wdgpaintopsettings.ui:103
-#, fuzzy
-#| msgid "edit presets"
-msgid "Current brush preset"
-msgstr "sửa định sẵn"
+#: ui/forms/wdgpaintopsettings.ui:176
+msgid ""
+"Current Brush Preset. Pink in Color whenever the preset has modified "
+"settings. Stays the same if original settings are loaded."
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:110
+#: ui/forms/wdgpaintopsettings.ui:183
 msgid "Save the current brush settings under this name"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:113
+#: ui/forms/wdgpaintopsettings.ui:186
 #, fuzzy
 #| msgid "edit presets"
 msgid "&Save to Presets"
 msgstr "sửa định sẵn"
 
+#. i18n: ectx: property (text), widget (QPushButton, reload)
+#: ui/forms/wdgpaintopsettings.ui:193
+msgid "Reload"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: ui/forms/wdgpaintopsettings.ui:130
+#: ui/forms/wdgpaintopsettings.ui:234
 #, fuzzy
 #| msgid "edit presets"
 msgid "Default preset"
 msgstr "sửa định sẵn"
+
+#. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
+#: ui/forms/wdgpaintopsettings.ui:247
+msgid "Temporarily Save Tweaks To Presets"
+msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
 #. i18n: ectx: property (whatsThis), widget (KIntNumInput, m_maxTiles)
@@ -14773,91 +14799,95 @@ msgstr "Hiện thước kẻ"
 msgid "Show Assistant Previews"
 msgstr "Hiện thước kẻ"
 
-#: ui/kis_paintop_box.cc:96
+#: ui/kis_paintop_box.cc:105
 #, fuzzy
 msgid "Painter's Toolchest"
 msgstr "Công cụ vẽ"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:111
 #, fuzzy
 #| msgid "edit presets"
 msgid "Edit brush settings"
 msgstr "sửa định sẵn"
 
-#: ui/kis_paintop_box.cc:107
+#: ui/kis_paintop_box.cc:116
 #, fuzzy
 #| msgid "edit presets"
 msgid "Choose brush preset"
 msgstr "sửa định sẵn"
 
-#: ui/kis_paintop_box.cc:114
+#: ui/kis_paintop_box.cc:123
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set eraser mode"
 msgstr "Chế độ đo khoảng cách:"
 
-#: ui/kis_paintop_box.cc:124
+#: ui/kis_paintop_box.cc:134
+msgid "Reload Original Preset"
+msgstr ""
+
+#: ui/kis_paintop_box.cc:143
 #, fuzzy
 msgid "Preserve Alpha"
 msgstr "Từ màu sang độ trong suốt"
 
-#: ui/kis_paintop_box.cc:133
+#: ui/kis_paintop_box.cc:152
 #, fuzzy
 #| msgid "Horizontal Wave"
 msgid "Set horizontal mirror mode"
 msgstr "Sóng Ngang"
 
-#: ui/kis_paintop_box.cc:142
+#: ui/kis_paintop_box.cc:161
 #, fuzzy
 #| msgid "Metering mode:"
 msgid "Set vertical mirror mode"
 msgstr "Chế độ đo khoảng cách:"
 
-#: ui/kis_paintop_box.cc:176
+#: ui/kis_paintop_box.cc:196
 msgid "Mode: "
 msgstr "Chế độ:"
 
-#: ui/kis_paintop_box.cc:187
+#: ui/kis_paintop_box.cc:207
 #, fuzzy
 #| msgid "Colorspace"
 msgid "Choose workspace"
 msgstr "Không gian màu"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:236
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "Cỡ chổi"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:240
 #, fuzzy
 #| msgid "options"
 msgid "Brush option slider 1"
 msgstr "tuỳ chọn"
 
-#: ui/kis_paintop_box.cc:220
+#: ui/kis_paintop_box.cc:245
 #, fuzzy
 #| msgid "options"
 msgid "Brush option slider 2"
 msgstr "tuỳ chọn"
 
-#: ui/kis_paintop_box.cc:225
+#: ui/kis_paintop_box.cc:250
 #, fuzzy
 #| msgid "options"
 msgid "Brush option slider 3"
 msgstr "tuỳ chọn"
 
-#: ui/kis_paintop_box.cc:230
+#: ui/kis_paintop_box.cc:255
 #, fuzzy
 msgid "Next Favourite Preset"
 msgstr "&Trắng"
 
-#: ui/kis_paintop_box.cc:235
+#: ui/kis_paintop_box.cc:260
 #, fuzzy
 msgid "Previous Favourite Preset"
 msgstr "&Trắng"
 
-#: ui/kis_paintop_box.cc:240
+#: ui/kis_paintop_box.cc:265
 msgid "Switch to Previous Preset"
 msgstr ""
 
@@ -15453,6 +15483,19 @@ msgctxt "(qtundo-format)"
 msgid "Filter \"%1\""
 msgstr "&Trắng"
 
+#: ui/widgets/kis_categorized_list_view.cpp:113
+#, fuzzy
+msgid "Lock"
+msgstr "kết nối"
+
+#: ui/widgets/kis_categorized_list_view.cpp:113
+msgid "Unlock (Drop Locked)"
+msgstr ""
+
+#: ui/widgets/kis_categorized_list_view.cpp:116
+msgid "Unlock (keep locked)"
+msgstr ""
+
 #: ui/widgets/kis_channelflags_widget.cpp:38
 msgid ""
 "Check the active channels in this layer. Only these channels will be "
@@ -15659,41 +15702,41 @@ msgstr "Chọn phương pháp hội nhập siêu dữ liệu"
 msgid "x%1"
 msgstr "%1%"
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:55
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:56
 msgid "Thumbnails"
 msgstr ""
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:60
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:61
 msgid "Details"
 msgstr ""
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:205
+#: ui/widgets/kis_paintop_presets_popup.cpp:220
 #, fuzzy
 #| msgid "edit presets"
 msgid "Overwrite Preset"
 msgstr "sửa định sẵn"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:209
+#: ui/widgets/kis_paintop_presets_popup.cpp:225
 #, fuzzy
 #| msgid "edit presets"
 msgid "Save to Presets"
 msgstr "sửa định sẵn"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:228
+#: ui/widgets/kis_paintop_presets_popup.cpp:246
 #, fuzzy
 msgid "Attach to Toolbar"
 msgstr "Gradients"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:228
+#: ui/widgets/kis_paintop_presets_popup.cpp:246
 msgid "Detach from Toolbar"
 msgstr ""
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:230
+#: ui/widgets/kis_paintop_presets_popup.cpp:248
 #, fuzzy
 msgid "Show Preset Strip"
 msgstr "Công cụ &xoá"
 
-#: ui/widgets/kis_paintop_presets_popup.cpp:234
+#: ui/widgets/kis_paintop_presets_popup.cpp:252
 #, fuzzy
 #| msgid "Show original layer"
 msgid "Show Scratchpad"
@@ -15742,6 +15785,11 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "Đóng"
+
+#, fuzzy
+#~| msgid "edit presets"
+#~ msgid "Current brush preset"
+#~ msgstr "sửa định sẵn"
 
 #, fuzzy
 #~| msgid "Use custom curve"

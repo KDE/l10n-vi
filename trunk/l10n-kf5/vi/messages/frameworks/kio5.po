@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-24 08:07+0000\n"
+"POT-Creation-Date: 2014-10-29 07:46+0000\n"
 "PO-Revision-Date: 2014-08-15 10:55+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -2019,7 +2019,7 @@ msgstr "Hãy chọn tên tập tin khác cho tập tin đích."
 msgid "Undocumented Error"
 msgstr "Lỗi không được diễn tả"
 
-#: core/kcoredirlister.cpp:397 widgets/krun.cpp:842 widgets/paste.cpp:258
+#: core/kcoredirlister.cpp:397 widgets/krun.cpp:844 widgets/paste.cpp:258
 #: widgets/renamedialog.cpp:410
 #, kde-format
 msgid ""
@@ -3060,7 +3060,8 @@ msgstr "Không chấp nhận tập tin từ xa"
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: filewidgets/kfilewidget.cpp:2023 widgets/kfileitemactions.cpp:536
+#: filewidgets/kfilewidget.cpp:2023 widgets/executablefileopendialog.cpp:38
+#: widgets/kfileitemactions.cpp:536
 msgid "&Open"
 msgstr "&Mở"
 
@@ -3189,7 +3190,7 @@ msgstr ""
 "Tên \"%1\" bắt đầu với một dấu chấm, vì vậy tập tin sẽ được ẩn đi theo mặc "
 "định."
 
-#: filewidgets/knewfilemenu.cpp:426
+#: filewidgets/knewfilemenu.cpp:426 widgets/executablefileopendialog.cpp:36
 msgid "Do not ask again"
 msgstr "Đừng hỏi lần nữa"
 
@@ -4609,6 +4610,18 @@ msgstr "Quốc gia :"
 msgid "Lakeridge Meadows"
 msgstr ""
 
+#: widgets/executablefileopendialog.cpp:33
+#, fuzzy
+#| msgid "Do you wish to store the passphrase in your wallet file?"
+msgid "What do you wish to do with this executable file?"
+msgstr "Bạn có muốn lưu cụm từ mật khẩu vào tập tin ví mình không?"
+
+#: widgets/executablefileopendialog.cpp:39
+#, fuzzy
+#| msgid "Exec"
+msgid "&Execute"
+msgstr "Chạy"
+
 #: widgets/fileundomanager.cpp:125
 #, fuzzy
 #| msgid "Creating directory"
@@ -5960,7 +5973,7 @@ msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống c�
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
 
-#: widgets/krun.cpp:170
+#: widgets/krun.cpp:171
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -5969,7 +5982,7 @@ msgstr ""
 "<qt>Không thể vào <b>%1</b>.\n"
 "Bạn không có quyền truy cập địa điểm này.</qt>"
 
-#: widgets/krun.cpp:200
+#: widgets/krun.cpp:201
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -5978,57 +5991,57 @@ msgstr ""
 "<qt>Tập tin <b>%1</b> là một chương trình có khả năng thực hiện. Vì lý do an "
 "toàn nó sẽ không được khởi chạy.</qt>"
 
-#: widgets/krun.cpp:206
+#: widgets/krun.cpp:207
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>Bạn không có quyền chạy <b>%1</b>.</qt>"
 
-#: widgets/krun.cpp:236
+#: widgets/krun.cpp:237
 msgid "You are not authorized to select an application to open this file."
 msgstr "Bạn không có quyền chọn ứng dụng nên mở tập tin này."
 
-#: widgets/krun.cpp:247
+#: widgets/krun.cpp:248
 msgid "Open with:"
 msgstr "Mở bằng:"
 
-#: widgets/krun.cpp:297
+#: widgets/krun.cpp:298
 msgid "You are not authorized to execute this file."
 msgstr "Bạn không có quyền thực hiện tập tin này."
 
-#: widgets/krun.cpp:320
+#: widgets/krun.cpp:321
 #, kde-format
 msgid "Launching %1"
 msgstr "Đang khởi chạy %1..."
 
-#: widgets/krun.cpp:425
+#: widgets/krun.cpp:426
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
 
-#: widgets/krun.cpp:602
+#: widgets/krun.cpp:603
 msgid "You are not authorized to execute this service."
 msgstr "Bạn không đủ quyền thực hiện dịch vụ này."
 
-#: widgets/krun.cpp:607
+#: widgets/krun.cpp:608
 msgctxt "Warning about executing unknown .desktop file"
 msgid "Warning"
 msgstr ""
 
-#: widgets/krun.cpp:624
+#: widgets/krun.cpp:625
 msgctxt "program name follows in a line edit below"
 msgid "This will start the program:"
 msgstr ""
 
-#: widgets/krun.cpp:641
+#: widgets/krun.cpp:642
 msgid "If you do not trust this program, click Cancel"
 msgstr ""
 
-#: widgets/krun.cpp:684
+#: widgets/krun.cpp:685
 #, kde-format
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: widgets/krun.cpp:866
+#: widgets/krun.cpp:868
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -6037,7 +6050,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: widgets/krun.cpp:1461
+#: widgets/krun.cpp:1520
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Không tìm thấy chương trình « %1 »"
@@ -7445,9 +7458,6 @@ msgstr ""
 
 #~ msgid "Please wait while the encryption keys are generated..."
 #~ msgstr "Vui lòng đời trong khi tạo ra các khoá mật mã..."
-
-#~ msgid "Do you wish to store the passphrase in your wallet file?"
-#~ msgstr "Bạn có muốn lưu cụm từ mật khẩu vào tập tin ví mình không?"
 
 #~ msgid "Store"
 #~ msgstr "Lưu"

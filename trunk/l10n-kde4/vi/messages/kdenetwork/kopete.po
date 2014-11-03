@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-29 01:48+0000\n"
+"POT-Creation-Date: 2014-11-03 01:46+0000\n"
 "PO-Revision-Date: 2012-01-09 22:13+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -3013,7 +3013,7 @@ msgstr ""
 msgid "Meta Contact Merge"
 msgstr "Làm siêu liên lạc"
 
-#: kopete/contactlist/contactlistmodel.cpp:514
+#: kopete/contactlist/contactlistmodel.cpp:530
 #, fuzzy, kde-format
 #| msgctxt "Translators: format: '<nickname> (<online status>)'"
 #| msgid "%1 (%2)"
@@ -3021,7 +3021,7 @@ msgctxt "%1 is display name, %2 is status (connected/away/etc.)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: kopete/contactlist/contactlistmodel.cpp:517
+#: kopete/contactlist/contactlistmodel.cpp:533
 #, fuzzy, kde-format
 #| msgctxt "Translators: format: '<nickname> (<online status>)'"
 #| msgid "%1 (%2)"
@@ -3031,7 +3031,7 @@ msgid ""
 "%3"
 msgstr "%1 (%2)"
 
-#: kopete/contactlist/contactlistmodel.cpp:679
+#: kopete/contactlist/contactlistmodel.cpp:695
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "<tr><td>STATUS ICON <b>PROTOCOL NAME</b> (ACCOUNT NAME)</td><td>STATUS "
@@ -3049,7 +3049,7 @@ msgstr ""
 "<tr><td><img src=\"%1\">&nbsp;<nobr><b>%2</b></nobr>&nbsp;<nobr>(%3)</nobr></"
 "td><td align=\"right\"><nobr>%4</nobr></td></tr>"
 
-#: kopete/contactlist/contactlistmodel.cpp:690
+#: kopete/contactlist/contactlistmodel.cpp:706
 #, kde-format
 msgctxt "<tr><td><small><i>STATUS MESSAGE</i></small></td></tr>"
 msgid "<tr><td>&nbsp;</td><td colspan='2'><small><i>%1</i></small></td></tr>"
@@ -7600,13 +7600,19 @@ msgstr ""
 msgid "Parsing history"
 msgstr "Đang phân tích lịch sử cũ trong %1"
 
-#: plugins/history/historyimport.cpp:299
+#: plugins/history/historyimport.cpp:301
+#: plugins/history2/history2import.cpp:360
+#, kde-format
+msgid "WARNING: There is no equivalent for protocol %1 in kopete.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:319
 #: plugins/history2/history2import.cpp:387
 #, kde-format
 msgid "WARNING: Cannot find matching account for %1 (%2).\n"
 msgstr ""
 
-#: plugins/history/historyimport.cpp:311
+#: plugins/history/historyimport.cpp:331
 #: plugins/history2/history2import.cpp:399
 #, kde-format
 msgid ""
@@ -7614,23 +7620,14 @@ msgid ""
 "imported.\n"
 msgstr ""
 
-#: plugins/history/historyimport.cpp:326
+#: plugins/history/historyimport.cpp:346
 #: plugins/history2/history2import.cpp:413
 #, fuzzy, kde-format
 #| msgid "Cannot open file for writing"
 msgid "WARNING: Cannot open file %1. Skipping.\n"
 msgstr "Không thể mở tập tin để ghi"
 
-#: plugins/history/historyimport.cpp:375
-msgid "Cannot Map Nickname to Account"
-msgstr ""
-
-#: plugins/history/historyimport.cpp:376
-#, kde-format
-msgid "Did you use \"%1\" as nickname in history?"
-msgstr ""
-
-#: plugins/history/historyimport.cpp:423
+#: plugins/history/historyimport.cpp:411
 #: plugins/history2/history2import.cpp:478
 #, kde-format
 msgid ""
@@ -7638,13 +7635,36 @@ msgid ""
 "this date manually. (Example recognized date strings: \"%2\".)\n"
 msgstr ""
 
-#: plugins/history/historyimport.cpp:546
+#: plugins/history/historyimport.cpp:511
+#: plugins/history2/history2import.cpp:573
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your nicks.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:513
+#: plugins/history2/history2import.cpp:575
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your buddys nicks.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:530
+#: plugins/history2/history2import.cpp:589
+msgid "Cannot map Nickname to Account"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:531
+#: plugins/history2/history2import.cpp:590
+#, kde-format
+msgid "Did you ever use \"%1\" as nickname in your history?"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:612
 #: plugins/history2/history2import.cpp:670
 #, kde-format
 msgid "WARNING: XML parser error in %1 at line %2, character %3: %4"
 msgstr ""
 
-#: plugins/history/historyimport.cpp:549
+#: plugins/history/historyimport.cpp:615
 #: plugins/history2/history2import.cpp:673
 #, fuzzy, kde-format
 #| msgctxt "Translators: client name and version"
@@ -7823,30 +7843,6 @@ msgstr "Đang phân tích lịch sử cũ trong %1"
 #| msgid "Parsing old history in %1"
 msgid "Parsing history from kopete ..."
 msgstr "Đang phân tích lịch sử cũ trong %1"
-
-#: plugins/history2/history2import.cpp:360
-#, kde-format
-msgid "WARNING: There is no equivalent for protocol %1 in kopete.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:573
-#, kde-format
-msgid "INFORMATION: Guessed %1 to be one of your nicks.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:575
-#, kde-format
-msgid "INFORMATION: Guessed %1 to be one of your buddys nicks.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:589
-msgid "Cannot map Nickname to Account"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:590
-#, kde-format
-msgid "Did you ever use \"%1\" as nickname in your history?"
-msgstr ""
 
 #: plugins/history2/history2plugin.cpp:47
 #, fuzzy

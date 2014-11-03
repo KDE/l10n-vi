@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-23 01:41+0000\n"
+"POT-Creation-Date: 2014-11-03 01:33+0000\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -4809,7 +4809,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
 #: Utilities/Util.cpp:352 Utilities/Util.cpp:366 Utilities/Util.cpp:384
-#: Utilities/Util.cpp:401 XMLDB/FileReader.cpp:396
+#: Utilities/Util.cpp:401 XMLDB/FileReader.cpp:385
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy chứng minh"
 
@@ -5402,44 +5402,33 @@ msgstr "Hiện cỡ ảnh"
 msgid "Show Rating"
 msgstr "Hiện phạm vị"
 
-#: XMLDB/FileReader.cpp:56
-#, kde-format
+#: XMLDB/FileReader.cpp:54
 msgid ""
-"<p>The database file indicates a file format version of %1. This version of "
-"KPhotoAlbum uses the database file format version %2.</p><p>It is possible "
-"that some information will be lost during import, or that the database can "
-"not be read at all.</p>"
+"<p>The databse file (index.xml) is from a newer version of KPhotoAlbum!</"
+"p><p>Chances are you will be able to read this file, but when writing it "
+"back, information saved in the newer version will be lost</p>"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:61 XMLDB/FileReader.cpp:71
+#: XMLDB/FileReader.cpp:57
 msgid "index.xml version mismatch"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:66
-#, kde-format
-msgid ""
-"<p>The database file indicates a file format version of %1. This version of "
-"KPhotoAlbum uses the database file format version %2.</p><p>If you save the "
-"database using this version of KPhotoAlbum, you won't be able to open it "
-"with older versions of KPhotoAlbum.</p>"
-msgstr ""
-
-#: XMLDB/FileReader.cpp:113
+#: XMLDB/FileReader.cpp:102
 #, kde-format
 msgid "Error in file %1: unexpected element: '%2'"
 msgstr "Gặp lỗi trong tập tin %1: yếu tố bất thường: « %2 »"
 
-#: XMLDB/FileReader.cpp:119
+#: XMLDB/FileReader.cpp:108
 #, kde-format
 msgid "Unable to find 'Options' tag in configuration file %1."
 msgstr "Không tìm thấy thẻ « Tùy chọn » trong tập tin cấu hình %1."
 
-#: XMLDB/FileReader.cpp:121
+#: XMLDB/FileReader.cpp:110
 #, kde-format
 msgid "Unable to find 'Images' tag in configuration file %1."
 msgstr "Không tìm thấy thẻ « Ảnh » trong tập tin cấu hình %1."
 
-#: XMLDB/FileReader.cpp:315
+#: XMLDB/FileReader.cpp:304
 #, fuzzy
 #| msgid ""
 #| "<p>Your images/videos are not sorted, which means that navigating using "
@@ -5472,7 +5461,7 @@ msgstr ""
 "có ngày tháng được đặt, bạn có thể thực hiện <b>Ảnh > Sắp điều đã chọn theo "
 "Ngày và Giờ</b> để sắp xếp chúng trong co sở dữ liệu.</p>"
 
-#: XMLDB/FileReader.cpp:325
+#: XMLDB/FileReader.cpp:314
 msgid ""
 "<p>Your images/videos are not sorted, which means that navigating using the "
 "date bar will only work suboptimally.</p><p>You also do not have EXIF "
@@ -5482,11 +5471,11 @@ msgid ""
 "to do to correct all the missing information.</p>"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:332
+#: XMLDB/FileReader.cpp:321
 msgid "Images/Videos Are Not Sorted"
 msgstr "Chưa sắp xếp các Ảnh (động)"
 
-#: XMLDB/FileReader.cpp:347
+#: XMLDB/FileReader.cpp:336
 #, fuzzy
 #| msgid ""
 #| "<p>Not all the images in the database have information about image sizes; "
@@ -5510,11 +5499,11 @@ msgstr ""
 "ảnh</b>.</p><p>Không thì các ảnh trong ô xem mẫu ảnh sẽ chỉ có độ đệm thêm "
 "chung quanh. Không phải là vấn đề nghiêm trọng.</p>"
 
-#: XMLDB/FileReader.cpp:352
+#: XMLDB/FileReader.cpp:341
 msgid "Not All Images Have Size Information"
 msgstr "Không phải tất cả các ảnh có thông tin kích cỡ"
 
-#: XMLDB/FileReader.cpp:375
+#: XMLDB/FileReader.cpp:364
 #, fuzzy
 #| msgid ""
 #| "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
@@ -5547,53 +5536,53 @@ msgstr ""
 "phụ thêm chuỗi như khi đặt biến môi trường đường dẫn mặc định <b>PATH</b>.</"
 "p>"
 
-#: XMLDB/FileReader.cpp:382
+#: XMLDB/FileReader.cpp:371
 msgid "No default setup file found"
 msgstr "Không tìm thấy tập tin thiết lập mặc định nào"
 
-#: XMLDB/FileReader.cpp:396
+#: XMLDB/FileReader.cpp:385
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "Không thể mở « %1 » để đọc"
 
-#: XMLDB/FileReader.cpp:409
+#: XMLDB/FileReader.cpp:398
 #, fuzzy, kde-format
 #| msgid "Error on line %1 column %2 in file %3: %4"
 msgid "line %1 column %2 in file %3: %4"
 msgstr "Gặp lỗi trên dòng %1, cột %2, trong tập tin %3: %4"
 
-#: XMLDB/FileReader.cpp:411
+#: XMLDB/FileReader.cpp:400
 #, kde-format
 msgid "Failed to recover the backup: %1"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:422
+#: XMLDB/FileReader.cpp:411
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "Gặp lỗi trong tập tin %1: không tìm thấy yếu tố nào"
 
-#: XMLDB/FileReader.cpp:428
+#: XMLDB/FileReader.cpp:417
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr ""
 "Gặp lỗi trong tập tin %1: yêu cầu « KPhotoAlbum » là yếu tố đầu, còn tìm « "
 "%2 »"
 
-#: XMLDB/FileWriter.cpp:47
+#: XMLDB/FileWriter.cpp:66
 #, kde-format
 msgid ""
 "<p>Could not save the image database to XML.</p>File %1 could not be opened "
 "because of the following error: %2"
 msgstr ""
 
-#: XMLDB/FileWriter.cpp:85
+#: XMLDB/FileWriter.cpp:94
 #, kde-format
 msgid ""
 "<p>Failed to remove old version of image database.</p><p>Please try again or "
 "replace the file %1 with file %2 manually!</p>"
 msgstr ""
 
-#: XMLDB/FileWriter.cpp:95
+#: XMLDB/FileWriter.cpp:104
 #, kde-format
 msgid ""
 "<p>Failed to move temporary XML file to permanent location.</p><p>Please try "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-12-26 08:15+0000\n"
+"POT-Creation-Date: 2014-12-29 07:47+0000\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -3868,8 +3868,8 @@ msgstr "Mọi &cookie"
 #| msgid ""
 #| "Select this option to accept/reject all cookies from anywhere. Choosing "
 #| "this option will change the global cookie policy set in the Control "
-#| "Center for all cookies <em>(see WebBrowsing/Cookies in the Control "
-#| "Center)</em>."
+#| "Center for all cookies <em>(see WebBrowsing/Cookies in the Control Center)"
+#| "</em>."
 msgid ""
 "Select this option to accept/reject all cookies from anywhere. Choosing this "
 "option will change the global cookie policy for all cookies until you "
@@ -5599,8 +5599,8 @@ msgid ""
 msgstr ""
 "<qt>\n"
 "Ở đây bạn có thể sửa đổi văn bản nhận diện trình duyệt mặc định, hoặc đặt "
-"văn bản nhận diện trình duyệt đặc trưng cho nơi Mạng <code>(v.d. www.kde."
-"org)</code> hay miền <code>(v.d. kde.org)</code>.<p>\n"
+"văn bản nhận diện trình duyệt đặc trưng cho nơi Mạng <code>(v.d. www.kde.org)"
+"</code> hay miền <code>(v.d. kde.org)</code>.<p>\n"
 "Để thêm một văn bản nhận diện trình duyệt đặc trưng cho nơi Mạng mới, nhấn "
 "vào nút <code>Mới</code> rồi cung cấp thông tin cần thiết. Để thay đổi một "
 "mục nhập đã có, nhấn vào nút <code>Đổi</code>. Cái nút <code>Xoá</code> sẽ "
@@ -5849,21 +5849,33 @@ msgstr ""
 msgid "KIO Exec - Opens remote files, watches modifications, asks for upload"
 msgstr ""
 
-#: kioexec/main.cpp:88
+#: kioexec/main.cpp:71
+#, fuzzy, kde-format
+#| msgid "Malformed URL %1."
+msgid "Invalid URL: %1"
+msgstr "Địa chỉ Mạng dạng sai %1."
+
+#: kioexec/main.cpp:77
+#, fuzzy, kde-format
+#| msgid "Could not bind %1."
+msgid "File not found: %1"
+msgstr "Không thể đóng kết %1."
+
+#: kioexec/main.cpp:97
 #, kde-format
 msgid ""
 "The URL %1\n"
 "is malformed"
 msgstr ""
 
-#: kioexec/main.cpp:90
+#: kioexec/main.cpp:99
 #, kde-format
 msgid ""
 "Remote URL %1\n"
 "not allowed with --tempfiles switch"
 msgstr ""
 
-#: kioexec/main.cpp:227
+#: kioexec/main.cpp:234
 #, kde-format
 msgid ""
 "The supposedly temporary file\n"
@@ -5872,19 +5884,19 @@ msgid ""
 "Do you still want to delete it?"
 msgstr ""
 
-#: kioexec/main.cpp:228 kioexec/main.cpp:235
+#: kioexec/main.cpp:235 kioexec/main.cpp:242
 #, fuzzy
 #| msgid "File name:"
 msgid "File Changed"
 msgstr "Tên tập tin:"
 
-#: kioexec/main.cpp:228
+#: kioexec/main.cpp:235
 #, fuzzy
 #| msgid "Do Not Store"
 msgid "Do Not Delete"
 msgstr "Không lưu"
 
-#: kioexec/main.cpp:234
+#: kioexec/main.cpp:241
 #, kde-format
 msgid ""
 "The file\n"
@@ -5893,63 +5905,63 @@ msgid ""
 "Do you want to upload the changes?"
 msgstr ""
 
-#: kioexec/main.cpp:235
+#: kioexec/main.cpp:242
 #, fuzzy
 #| msgid "Reload"
 msgid "Upload"
 msgstr "Nạp lại"
 
-#: kioexec/main.cpp:235
+#: kioexec/main.cpp:242
 #, fuzzy
 #| msgid "Do Not Store"
 msgid "Do Not Upload"
 msgstr "Không lưu"
 
-#: kioexec/main.cpp:266
+#: kioexec/main.cpp:273
 #, fuzzy
 #| msgid "Exec"
 msgid "KIOExec"
 msgstr "Chạy"
 
-#: kioexec/main.cpp:268
+#: kioexec/main.cpp:275
 msgid "(c) 1998-2000,2003 The KFM/Konqueror Developers"
 msgstr ""
 
-#: kioexec/main.cpp:269
+#: kioexec/main.cpp:276
 msgid "David Faure"
 msgstr ""
 
-#: kioexec/main.cpp:270
+#: kioexec/main.cpp:277
 msgid "Stephan Kulow"
 msgstr ""
 
-#: kioexec/main.cpp:271
+#: kioexec/main.cpp:278
 msgid "Bernhard Rosenkraenzer"
 msgstr ""
 
-#: kioexec/main.cpp:272
+#: kioexec/main.cpp:279
 msgid "Waldo Bastian"
 msgstr ""
 
-#: kioexec/main.cpp:273
+#: kioexec/main.cpp:280
 msgid "Oswald Buddenhagen"
 msgstr ""
 
-#: kioexec/main.cpp:278
+#: kioexec/main.cpp:284
 msgid "Treat URLs as local files and delete them afterwards"
 msgstr ""
 
-#: kioexec/main.cpp:279
+#: kioexec/main.cpp:285
 #, fuzzy
 #| msgid "Choose an alternate filename for the new file."
 msgid "Suggested file name for the downloaded file"
 msgstr "Hãy chọn một tên tập tịn xen kẽ cho tập tin mới."
 
-#: kioexec/main.cpp:280
+#: kioexec/main.cpp:286
 msgid "Command to execute"
 msgstr ""
 
-#: kioexec/main.cpp:281
+#: kioexec/main.cpp:287
 msgid "URL(s) or local file(s) used for 'command'"
 msgstr ""
 
@@ -7826,35 +7838,35 @@ msgstr "Mở bằng:"
 msgid "You are not authorized to execute this file."
 msgstr "Bạn không có quyền thực hiện tập tin này."
 
-#: widgets/krun.cpp:323
+#: widgets/krun.cpp:324
 #, kde-format
 msgid "Launching %1"
 msgstr "Đang khởi chạy %1..."
 
-#: widgets/krun.cpp:428
+#: widgets/krun.cpp:427
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
 
-#: widgets/krun.cpp:605
+#: widgets/krun.cpp:609
 msgid "You are not authorized to execute this service."
 msgstr "Bạn không đủ quyền thực hiện dịch vụ này."
 
-#: widgets/krun.cpp:610
+#: widgets/krun.cpp:614
 msgctxt "Warning about executing unknown .desktop file"
 msgid "Warning"
 msgstr ""
 
-#: widgets/krun.cpp:627
+#: widgets/krun.cpp:631
 msgctxt "program name follows in a line edit below"
 msgid "This will start the program:"
 msgstr ""
 
-#: widgets/krun.cpp:644
+#: widgets/krun.cpp:648
 msgid "If you do not trust this program, click Cancel"
 msgstr ""
 
-#: widgets/krun.cpp:687
+#: widgets/krun.cpp:691
 #, kde-format
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
@@ -7868,7 +7880,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: widgets/krun.cpp:1542
+#: widgets/krun.cpp:1538
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "Không tìm thấy chương trình « %1 »"
@@ -8465,8 +8477,8 @@ msgstr ""
 #~| "com, http:/mycompany,com file:/localhost</code></qt>"
 #~ msgid ""
 #~ "<qt>Make sure none of the addresses or URLs you specified contain invalid "
-#~ "or wildcard characters such as spaces, asterisks (*), or question "
-#~ "marks(?).<br /><br /><u>Examples of VALID entries:</u><br /><code>http://"
+#~ "or wildcard characters such as spaces, asterisks (*), or question marks"
+#~ "(?).<br /><br /><u>Examples of VALID entries:</u><br /><code>http://"
 #~ "mycompany.com, 192.168.10.1, mycompany.com, localhost, http://localhost</"
 #~ "code><br /><br /><u>Examples of INVALID entries:</u><br /><code>http://my "
 #~ "company.com, http:/mycompany,com file:/localhost</code></qt>"

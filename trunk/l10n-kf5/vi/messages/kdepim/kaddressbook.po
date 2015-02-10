@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-09 10:08+0000\n"
+"POT-Creation-Date: 2015-02-10 10:04+0000\n"
 "PO-Revision-Date: 2002-04-26 01:03GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -152,11 +152,6 @@ msgstr "Người giúp đỡ"
 #: contactfields.cpp:171
 msgid "Spouse"
 msgstr ""
-
-#: contactselectiondialog.cpp:32
-#, fuzzy
-msgid "Select Contacts"
-msgstr "Contact &mới"
 
 #: contactselectionwidget.cpp:111
 #, fuzzy
@@ -562,7 +557,7 @@ msgid "Select Contacts to merge"
 msgstr "Contact &mới"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:66
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:72
 msgid "You must select at least two elements."
 msgstr ""
 
@@ -614,9 +609,9 @@ msgstr "Contact &mới"
 msgid "No contacts selected."
 msgstr "Contact &mới"
 
-#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:58
+#: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:62
 #, fuzzy
-msgid "No duplicated contact found."
+msgid "No contact duplicated found."
 msgstr "Contact &mới"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:59
@@ -1178,6 +1173,11 @@ msgid ""
 "contacts of interest."
 msgstr ""
 
+#: xxport/contactselectiondialog.cpp:34
+#, fuzzy
+msgid "Select Contacts"
+msgstr "Contact &mới"
+
 #: xxport/csv/csv_xxport.cpp:67 xxport/gmx/gmx_xxport.cpp:370
 #: xxport/ldif/ldif_xxport.cpp:105
 #, fuzzy, kde-format
@@ -1594,128 +1594,122 @@ msgctxt "@info"
 msgid "The vCard does not contain any contacts."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:35
-#, fuzzy
-msgctxt "@title:window"
-msgid "Select vCard Fields"
-msgstr "Các trường đã chọn"
-
-#: xxport/vcard/vcardexportselectiondialog.cpp:59
+#: xxport/vcard/vcardexportselectionwidget.cpp:34
 #, fuzzy
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "File sẽ xuất ra"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:63
+#: xxport/vcard/vcardexportselectionwidget.cpp:38
 #, fuzzy
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "Tên trường"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:65
+#: xxport/vcard/vcardexportselectionwidget.cpp:40
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "Tên trường"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:68
+#: xxport/vcard/vcardexportselectionwidget.cpp:43
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:72
+#: xxport/vcard/vcardexportselectionwidget.cpp:47
 #, fuzzy
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "Địa chỉ nơi làm việc"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:74
+#: xxport/vcard/vcardexportselectionwidget.cpp:49
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "Địa chỉ nơi làm việc"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:77
+#: xxport/vcard/vcardexportselectionwidget.cpp:52
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:81
+#: xxport/vcard/vcardexportselectionwidget.cpp:56
 #, fuzzy
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "Tên trường"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:83
+#: xxport/vcard/vcardexportselectionwidget.cpp:58
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "Tên trường"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:86
+#: xxport/vcard/vcardexportselectionwidget.cpp:61
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:90
+#: xxport/vcard/vcardexportselectionwidget.cpp:65
 #, fuzzy
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "Egypt( Ai Cập)"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:92
+#: xxport/vcard/vcardexportselectionwidget.cpp:67
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "Egypt( Ai Cập)"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:95
+#: xxport/vcard/vcardexportselectionwidget.cpp:70
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:99
+#: xxport/vcard/vcardexportselectionwidget.cpp:74
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:101
+#: xxport/vcard/vcardexportselectionwidget.cpp:76
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:104
+#: xxport/vcard/vcardexportselectionwidget.cpp:79
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:109
+#: xxport/vcard/vcardexportselectionwidget.cpp:84
 #, fuzzy
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "Điện thoại di động"
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:113
+#: xxport/vcard/vcardexportselectionwidget.cpp:88
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:115
+#: xxport/vcard/vcardexportselectionwidget.cpp:90
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr ""
 
-#: xxport/vcard/vcardexportselectiondialog.cpp:118
+#: xxport/vcard/vcardexportselectionwidget.cpp:93
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
@@ -1723,19 +1717,19 @@ msgid ""
 "correctly in GMail or Android."
 msgstr ""
 
-#: xxport/vcard/vcardviewerdialog.cpp:34
+#: xxport/vcard/vcardviewerdialog.cpp:33
 #, fuzzy
 msgctxt "@title:window"
 msgid "Import vCard"
 msgstr "Danh sách &nhập vào"
 
-#: xxport/vcard/vcardviewerdialog.cpp:58
+#: xxport/vcard/vcardviewerdialog.cpp:57
 #, fuzzy
 msgctxt "@info"
 msgid "Do you want to import this contact into your address book?"
 msgstr "Xin lỗi, contact không tìm thấy trong sổ địa chỉ"
 
-#: xxport/vcard/vcardviewerdialog.cpp:68
+#: xxport/vcard/vcardviewerdialog.cpp:67
 #, fuzzy
 msgctxt "@action:button"
 msgid "Import All..."
@@ -1761,13 +1755,18 @@ msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "Tất cả cá c trường  liên hệ"
 
-#: xxport/xxportmanager.cpp:184
+#: xxport/xxportmanager.cpp:185
 msgid "Which contact do you want to export?"
 msgstr ""
 
-#: xxport/xxportmanager.cpp:195
+#: xxport/xxportmanager.cpp:197
 msgid "You have not selected any contacts to export."
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Select vCard Fields"
+#~ msgstr "Các trường đã chọn"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

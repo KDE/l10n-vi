@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-15 09:05+0000\n"
+"POT-Creation-Date: 2015-02-16 09:01+0000\n"
 "PO-Revision-Date: 2002-04-26 01:03GMT+0900\n"
 "Last-Translator: Nguyen Hung Vu <vuhung@feduDOTuecDOTacDOTjp>\n"
 "Language-Team: VIETNAMESE <vi@i18n.kde.org>\n"
@@ -558,6 +558,7 @@ msgstr "Contact &mới"
 
 #: merge/manualmerge/mergecontactsdialog.cpp:54
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:74
+#: merge/widgets/noenoughcontactselectedwidget.cpp:27
 msgid "You must select at least two elements."
 msgstr ""
 
@@ -566,12 +567,12 @@ msgstr ""
 msgid "You selected %1 and some item has not the same name"
 msgstr ""
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 msgid "Error while merging contacts."
 msgstr "Tất cả cá c trường  liên hệ"
 
-#: merge/manualmerge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:101
 #, fuzzy
 msgid "Merge contact"
 msgstr "Tất cả cá c trường  liên hệ"
@@ -599,15 +600,16 @@ msgstr ""
 msgid "Merged Contact"
 msgstr "Tất cả cá c trường  liên hệ"
 
-#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
-#, fuzzy
-msgid "Contacts"
-msgstr "&Tuỳ chọn..."
-
+#: merge/searchduplicate/mergecontactselectinformationtabwidget.cpp:62
 #: merge/searchduplicate/resultduplicatetreewidget.cpp:52
 #, fuzzy, kde-format
 msgid "Duplicate contact %1"
 msgstr "Contact &mới"
+
+#: merge/searchduplicate/resultduplicatetreewidget.cpp:28
+#, fuzzy
+msgid "Contacts"
+msgstr "&Tuỳ chọn..."
 
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:56
 #, fuzzy
@@ -625,9 +627,25 @@ msgid "Select AddressBook:"
 msgstr "KAđressBook"
 
 #: merge/searchduplicate/searchduplicateresultwidget.cpp:80
+#: merge/widgets/mergecontactselectinformationscrollarea.cpp:52
 #, fuzzy
 msgid "Merge"
 msgstr "Cột mốc"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:31
+msgid ""
+"Some information can be lost. Do you want to continue or customize what do "
+"you want to merge ?"
+msgstr ""
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:33
+#, fuzzy
+msgid "Customize"
+msgstr "Số ID khách hàng"
+
+#: merge/widgets/mergecontactloseinformationwarning.cpp:38
+msgid "Automatic Merging"
+msgstr ""
 
 #: modelcolumnmanager.cpp:78
 msgid "Full Name"
@@ -2907,11 +2925,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Export the entire address book"
 #~ msgstr "Không cất được sổ địa chỉ"
-
-#, fuzzy
-#~ msgctxt "@item Contact category"
-#~ msgid "Customer"
-#~ msgstr "Số ID khách hàng"
 
 #, fuzzy
 #~ msgctxt "@item Contact category"

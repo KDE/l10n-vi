@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-08-08 08:32+0000\n"
+"POT-Creation-Date: 2015-02-18 08:40+0000\n"
 "PO-Revision-Date: 2012-09-23 18:43+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -54,14 +54,50 @@ msgstr "Chạy &lệnh"
 msgid "Select the command to run"
 msgstr "Chọn lệnh để chạy"
 
-#. i18n: ectx: property (text), widget (QCheckBox, KTTS_check)
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
 #: knotifyconfigactionswidgetbase.ui:106
 msgid "Sp&eech"
 msgstr "&Lời nói"
 
-#. i18n: ectx: property (whatsThis), widget (KComboBox, KTTS_combo)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, KTTS_select)
-#: knotifyconfigactionswidgetbase.ui:119 knotifyconfigactionswidgetbase.ui:141
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, fuzzy, no-c-format
+#| msgid ""
+#| "<qt>Specifies how Jovie should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Chỉ định Jovie sẽ nói như thế nào khi nhận sự kiện. Nếu bạn chọn \"Nói "
+"văn bản tự chọn\", hãy nhập văn bản vào hộp. Bạn cũng có thể dùng các chuỗi "
+"thay thế trong văn bản:<dl><dt>%e</dt><dd>Tên sự kiện</dd><dt>%a</dt><dd> "
+"Ứng dụng gửi sự kiện</dd><dt>%m</dt><dd>Tin nhắn gửi bởi ứng dụng</dd></dl></"
+"qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+msgid "Speak Event Message"
+msgstr "Nói tin nhắn sự kiện"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+msgid "Speak Event Name"
+msgstr "Nói tên sự kiện"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+msgid "Speak Custom Text"
+msgstr "Nói văn bản tự chọn"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
 #, no-c-format
 msgid ""
 "<qt>Specifies how Jovie should speak the event when received.  If you select "
@@ -75,21 +111,6 @@ msgstr ""
 "thay thế trong văn bản:<dl><dt>%e</dt><dd>Tên sự kiện</dd><dt>%a</dt><dd> "
 "Ứng dụng gửi sự kiện</dd><dt>%m</dt><dd>Tin nhắn gửi bởi ứng dụng</dd></dl></"
 "qt>"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
-#: knotifyconfigactionswidgetbase.ui:123
-msgid "Speak Event Message"
-msgstr "Nói tin nhắn sự kiện"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
-#: knotifyconfigactionswidgetbase.ui:128
-msgid "Speak Event Name"
-msgstr "Nói tên sự kiện"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
-#: knotifyconfigactionswidgetbase.ui:133
-msgid "Speak Custom Text"
-msgstr "Nói văn bản tự chọn"
 
 #: knotifyconfigwidget.cpp:101
 msgid "Configure Notifications"

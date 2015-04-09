@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-13 11:00+0000\n"
+"POT-Creation-Date: 2015-04-07 11:43+0000\n"
 "PO-Revision-Date: 2013-02-04 09:26+0800\n"
 "Last-Translator: Lê Hoàng Phương\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -21,15 +21,21 @@ msgstr ""
 msgid "Information"
 msgstr "Thông tin"
 
-#: contents/ui/configNotifications.qml:36
+#: contents/ui/configNotifications.qml:42
 #, fuzzy
+#| msgid "Application notifications"
 msgid "Show application and system notifications"
 msgstr "Thông báo ứng dụng"
 
-#: contents/ui/configNotifications.qml:41
+#: contents/ui/configNotifications.qml:47
 #, fuzzy
+#| msgid "File transfers and other jobs"
 msgid "Track file transfers and other jobs"
 msgstr "Truyền tập tin và các công việc khác"
+
+#: contents/ui/configNotifications.qml:51
+msgid "Use custom position for the notification popup"
+msgstr ""
 
 #: contents/ui/JobDetailsItem.qml:51
 msgctxt ""
@@ -38,14 +44,19 @@ msgid "%1 of %2"
 msgstr "%1 trong %2"
 
 #: contents/ui/JobDetailsItem.qml:59
-msgctxt "m of n files are being processed"
-msgid "files"
-msgstr ""
+#, fuzzy
+#| msgid "%2 / 1 file"
+#| msgid_plural "%2 / %1 files"
+msgctxt "Either just 1 file or m of n files are being processed"
+msgid "1 file"
+msgid_plural "%2 of %1 files"
+msgstr[0] "%2 / %1 tập tin"
 
 #: contents/ui/JobDetailsItem.qml:61
-msgctxt "m of n dirs are being processed"
-msgid "dirs"
-msgstr ""
+msgctxt "Either just 1 dir or m of n dirs are being processed"
+msgid "1 dir"
+msgid_plural "%2 of %1 dirs"
+msgstr[0] ""
 
 #: contents/ui/JobDetailsItem.qml:64
 msgid "%1 of %2 %3"
@@ -53,29 +64,48 @@ msgstr "%1 trong %2 %3"
 
 #: contents/ui/JobDetailsItem.qml:91
 #, fuzzy
+#| msgid "%1:"
 msgctxt "placeholder is row description, such as Source or Destination"
 msgid "%1:"
 msgstr "%1:"
 
 #: contents/ui/JobDetailsItem.qml:141
 #, fuzzy
+#| msgctxt "Speed and estimated time to completition"
+#| msgid "%1 (%2 remaining)"
 msgctxt "Speed and estimated time to completion"
 msgid "%1 (%2 remaining)"
 msgstr "%1 (còn lại %2)"
 
-#: contents/ui/Jobs.qml:68
+#: contents/ui/Jobs.qml:64
 #, fuzzy
+#| msgid "%1 [Finished]"
 msgctxt "the job, which can be anything, has finished"
 msgid "%1: Finished"
 msgstr "%1 [Đã xong]"
 
-#: contents/ui/Jobs.qml:68
+#: contents/ui/Jobs.qml:64
 #, fuzzy
+#| msgid "%1 [Finished]"
 msgid "Job Finished"
 msgstr "%1 [Đã xong]"
 
-#: contents/ui/Jobs.qml:74
+#: contents/ui/Jobs.qml:67
 #, fuzzy
+#| msgid "%1 [Finished]"
+msgctxt "the job, which can be anything, failed to complete"
+msgid "%1: Failed"
+msgstr "%1 [Đã xong]"
+
+#: contents/ui/Jobs.qml:67
+#, fuzzy
+#| msgid "%1 [Finished]"
+msgid "Job Failed"
+msgstr "%1 [Đã xong]"
+
+#: contents/ui/Jobs.qml:80
+#, fuzzy
+#| msgid "Open"
 msgid "Open..."
 msgstr "Mở"
 
@@ -99,6 +129,7 @@ msgstr[0] "%1 thông báo"
 
 #: contents/ui/main.qml:115
 #, fuzzy
+#| msgid "Notifications"
 msgid "No new notifications."
 msgstr "Thông báo"
 
@@ -147,10 +178,12 @@ msgid_plural "%1 days ago"
 msgstr[0] ""
 
 #, fuzzy
+#~| msgid "Application notifications"
 #~ msgid "&Application notifications:"
 #~ msgstr "Thông báo ứng dụng"
 
 #, fuzzy
+#~| msgid "File transfers and other jobs"
 #~ msgid "&File transfers and jobs:"
 #~ msgstr "Truyền tập tin và các công việc khác"
 
@@ -225,10 +258,6 @@ msgstr[0] ""
 #~ msgid "%2 / 1 folder"
 #~ msgid_plural "%2 / %1 folders"
 #~ msgstr[0] "%2 / %1 thư mục"
-
-#~ msgid "%2 / 1 file"
-#~ msgid_plural "%2 / %1 files"
-#~ msgstr[0] "%2 / %1 tập tin"
 
 #~ msgid "Less"
 #~ msgstr "Bớt"

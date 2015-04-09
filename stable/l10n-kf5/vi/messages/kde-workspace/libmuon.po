@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-25 09:41+0000\n"
+"POT-Creation-Date: 2015-04-08 08:29+0000\n"
 "PO-Revision-Date: 2012-06-13 11:10+0800\n"
 "Last-Translator: HeroP <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -515,6 +515,7 @@ msgstr ""
 
 #: libmuon/backends/ApplicationBackend/ApplicationBackend.cpp:540
 #: libmuon/backends/DummyBackend/DummyBackend.cpp:62
+#: libmuon/backends/PackageKitBackend/PackageKitBackend.cpp:64
 #: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:45
 msgctxt "@action Checks the Internet for updates"
 msgid "Check for Updates"
@@ -863,7 +864,7 @@ msgid "Cannot remove system package"
 msgstr ""
 
 #: libmuon/backends/PackageKitBackend/PackageKitMessages.cpp:74
-msgid "Cannot kill process"
+msgid "The PackageKit daemon has crashed"
 msgstr ""
 
 #: libmuon/backends/PackageKitBackend/PackageKitMessages.cpp:76
@@ -1361,57 +1362,61 @@ msgctxt "update state"
 msgid "Testing"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:317
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:327
 #, kde-format
 msgctxt "package-name (version)"
 msgid "%1 (%2)"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:319
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:329
 msgctxt "comma separating package names"
 msgid ", "
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:327
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:345
 msgid "Reason:"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:328
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:346
 msgid "Obsoletes:"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:329
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:347
 #, fuzzy
 #| msgctxt "@item:inlistbox Filters updates in the history view"
 #| msgid "Updates"
 msgid "Updates:"
 msgstr "Bản cập nhật"
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:330
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:348
 msgid "Change Log:"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:331
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:349
 msgid "Update State:"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:332
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:350
 msgid "Restart:"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:239
+#: libmuon/backends/PackageKitBackend/PackageKitResource.cpp:353
+msgid "Vendor:"
+msgstr ""
+
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:263
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Packages Could Not be Found"
 msgid "PackageKit error found"
 msgstr "Không thể tìm thấy gói"
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:246
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:270
 #: libmuon/backends/PackageKitBackend/PKTransaction.cpp:140
 msgid "PackageKit media change"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:246
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:270
 #: libmuon/backends/PackageKitBackend/PKTransaction.cpp:140
 #, kde-format
 msgid ""
@@ -1419,12 +1424,12 @@ msgid ""
 "%2"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:251
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:275
 #: libmuon/backends/PackageKitBackend/PKTransaction.cpp:145
 msgid "PackageKit restart required"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:257
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:281
 #: libmuon/backends/PackageKitBackend/PKTransaction.cpp:119
 #, kde-format
 msgid ""
@@ -1432,7 +1437,7 @@ msgid ""
 " %3"
 msgstr ""
 
-#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:257
+#: libmuon/backends/PackageKitBackend/PackageKitUpdater.cpp:281
 #, kde-format
 msgid "%1 requires user to accept its license"
 msgstr ""
@@ -1467,7 +1472,7 @@ msgstr ""
 msgid "Available backends:\n"
 msgstr "Bản cập nhật sẵn sàng"
 
-#: libmuon/MuonMainWindow.cpp:68
+#: libmuon/MuonMainWindow.cpp:69
 msgctxt "@label Easter Egg"
 msgid "This Muon has super cow powers"
 msgstr ""
@@ -1499,7 +1504,7 @@ msgstr "Đã cài "
 msgid "Upgradeable"
 msgstr "Nâng cấp được"
 
-#: libmuon/resources/ResourcesUpdatesModel.cpp:157
+#: libmuon/resources/ResourcesUpdatesModel.cpp:159
 #, kde-format
 msgctxt "@item:intext Remaining time"
 msgid "%1 remaining"

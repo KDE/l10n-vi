@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-17 06:00+0000\n"
+"POT-Creation-Date: 2015-05-19 08:36+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -1552,7 +1552,7 @@ msgstr "Măc định"
 #: image/kis_base_mask_generator.h:33
 #: plugins/extensions/metadataeditor/editors/exif.ui:860
 #: plugins/extensions/metadataeditor/editors/exif.ui:892
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
 msgid "Soft"
 msgstr "Mềm"
 
@@ -1775,10 +1775,20 @@ msgstr "%1%"
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
 #: image/kis_layer.cc:210
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:230
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:49
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:35
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:56
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:47
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:42
+#: plugins/paintops/experiment/kis_experiment_paintop_settings_widget.cpp:37
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:50
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:42
 #: plugins/paintops/hairy/wdghairyeoptions.ui:297
 #: plugins/paintops/hairy/wdgInkOptions.ui:58
-#: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:32
-#: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:26
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:58
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
 #, fuzzy
 msgid "Opacity"
 msgstr "Độ đậm đặc:"
@@ -2754,10 +2764,10 @@ msgstr ""
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:70
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:73
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:76
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:73
 #: plugins/paintops/hairy/wdghairyeoptions.ui:310
-#: plugins/paintops/hairy/wdgInkOptions.ui:71
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:30
-#: ui/forms/wdgapplyprofile.ui:116 ui/forms/wdgcolorsettings.ui:117
+#: plugins/paintops/hairy/wdgInkOptions.ui:71 ui/forms/wdgapplyprofile.ui:116
+#: ui/forms/wdgcolorsettings.ui:117
 msgid "Saturation"
 msgstr "Bão hoà"
 
@@ -2836,7 +2846,6 @@ msgstr "Dịch:"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_general)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:24
 #: ui/dialogs/kis_dlg_preferences.cc:751 ui/dialogs/kis_dlg_preferences.cc:752
-#: ui/kis_paintop_option.cpp:26
 msgid "General"
 msgstr "Chung "
 
@@ -3411,7 +3420,7 @@ msgstr "Trình chọn màu nhỏ"
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:69
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:72
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:75
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:25
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:72
 #, fuzzy
 msgid "Hue"
 msgstr "Sắc"
@@ -3421,7 +3430,8 @@ msgstr "Sắc"
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1243
 #: plugins/extensions/dockers/colorslider/kis_color_slider_input.cpp:68
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:108
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:34
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:74
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:29
 msgid "Value"
 msgstr "Giá trị"
@@ -3688,7 +3698,20 @@ msgstr "&Nhập vào với lớp bên dưới"
 
 #. i18n: ectx: property (toolTip), widget (KisCompositeOpComboBox, cmbComposite)
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:44
-#: plugins/paintops/libpaintop/kis_compositeop_option.cpp:34
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:48
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:38
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:55
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:46
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:41
+#: plugins/paintops/dynadraw/kis_dyna_paintop_settings_widget.cpp:32
+#: plugins/paintops/experiment/kis_experiment_paintop_settings_widget.cpp:36
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:49
+#: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:39
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:41
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:54
+#: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:36
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:45
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:46
 #: ui/widgets/kis_cmb_composite.cc:70
 #, fuzzy
 #| msgid "Portrait mode"
@@ -3925,16 +3948,29 @@ msgstr "Điều chỉnh"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnZoom100)
 #: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:48
-#: plugins/paintops/curvebrush/kis_curves_opacity_option.cpp:26
-#: plugins/paintops/curvebrush/kis_linewidth_option.cpp:26
-#: plugins/paintops/libpaintop/kis_pressure_flow_option.cpp:29
-#: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:29
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:61
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:36
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:37
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:57
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:48
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:43
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:51
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:43
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:59
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:32
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:43
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:58
-#: plugins/paintops/libpaintop/kis_pressure_size_option.cpp:29
-#: plugins/paintops/libpaintop/kis_pressure_spacing_option.cpp:31
-#: plugins/paintops/sketch/kis_density_option.cpp:26
-#: plugins/paintops/sketch/kis_linewidth_option.cpp:26
-#: plugins/paintops/sketch/kis_offset_scale_option.cpp:26
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:70
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:85
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:97
+#: plugins/paintops/libpaintop/kis_pressure_spacing_option_widget.cpp:35
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:49
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:50
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:51
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
 #, no-c-format
 msgid "100%"
 msgstr ""
@@ -4891,8 +4927,7 @@ msgstr "Phóng Lớp"
 #: plugins/extensions/layersplit/layersplit.cpp:198
 #: plugins/generators/solid/colorgenerator.h:53
 #: ui/dialogs/kis_dlg_preferences.cc:768 ui/forms/wdgnewimage.ui:361
-#: ui/kis_paintop_option.cpp:31 ui/layerstyles/WdgColorOverlay.ui:26
-#: ui/layerstyles/WdgStroke.ui:137
+#: ui/layerstyles/WdgColorOverlay.ui:26 ui/layerstyles/WdgStroke.ui:137
 msgid "Color"
 msgstr "Màu"
 
@@ -5149,6 +5184,7 @@ msgstr "Chế độ đo khoảng cách:"
 #: plugins/extensions/metadataeditor/editors/exif.ui:464
 #: plugins/extensions/metadataeditor/editors/exif.ui:569
 #: plugins/extensions/metadataeditor/editors/exif.ui:708
+#: ui/kis_paintop_options_model.cpp:47
 msgid "Unknown"
 msgstr "Không rõ"
 
@@ -5180,8 +5216,11 @@ msgstr "Nhiều điểm"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: plugins/extensions/metadataeditor/editors/exif.ui:432
 #: plugins/generators/pattern/patterngenerator.h:53
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:63
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:78
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:51
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:64
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:59
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:138
 #: plugins/tools/tool_text/wdgtextoptions.ui:48
 #: ui/forms/wdgdlgblacklistcleanup.ui:83 ui/forms/wdggeometryoptions.ui:89
 msgid "Pattern"
@@ -5460,7 +5499,7 @@ msgstr "Bình thường "
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:32
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
 msgid "Hard"
 msgstr "Cứng"
 
@@ -6277,7 +6316,7 @@ msgstr "Mô hình màu hiện tại:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: plugins/extensions/separate_channels/wdg_separations.ui:46
-#: plugins/paintops/libpaintop/kis_color_source_option_widget.cpp:39
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:69
 msgid "Source"
 msgstr "Nguồn"
 
@@ -6607,7 +6646,7 @@ msgstr "Màu:"
 #: plugins/filters/colors/wdgcolortoalphabase.ui:131
 #: plugins/filters/unsharp/wdgunsharp.ui:103
 #: plugins/paintops/hairy/wdgbristleoptions.ui:180
-#: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:37
+#: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:39
 msgid "Threshold:"
 msgstr "Ngưỡng:"
 
@@ -7210,11 +7249,12 @@ msgid "&Oilpaint..."
 msgstr "Sơn &dầu..."
 
 #: plugins/filters/oilpaintfilter/kis_oilpaint_filter.cpp:206
-#: plugins/paintops/chalk/kis_chalkop_option.cpp:32
-#: plugins/paintops/dynadraw/kis_dynaop_option.cpp:42
-#: plugins/paintops/gridbrush/kis_gridop_option.cpp:33
-#: plugins/paintops/particle/kis_particleop_option.cpp:36
-#: plugins/paintops/sketch/kis_sketchop_option.cpp:32
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:35
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:39
+#: plugins/paintops/dynadraw/kis_dyna_paintop_settings_widget.cpp:31
+#: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:37
+#: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:35
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:44
 msgid "Brush size"
 msgstr "Cỡ chổi"
 
@@ -8255,7 +8295,7 @@ msgid "Duotone Colormode Block"
 msgstr ""
 
 #: plugins/formats/psd/psd_loader.cpp:175
-#: plugins/paintops/libpaintop/kis_pressure_mix_option.cpp:28
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:71
 #, fuzzy
 #| msgid "background"
 msgid "Background"
@@ -8528,6 +8568,64 @@ msgstr "Trình đổi màu"
 msgid "Chalk"
 msgstr "Chổi Trung Quốc"
 
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:49
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:35
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:47
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:42
+#: plugins/paintops/experiment/kis_experiment_paintop_settings_widget.cpp:37
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:50
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:42
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:58
+#: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option_widget.cpp:38
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
+msgid "Opaque"
+msgstr "Đậm đặc"
+
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:49
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:35
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:47
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:42
+#: plugins/paintops/experiment/kis_experiment_paintop_settings_widget.cpp:37
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:50
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:42
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:58
+#: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option_widget.cpp:38
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:46
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:44
+msgid "Transparent"
+msgstr "Trong suốt"
+
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:37
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:75
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:45
+#: plugins/paintops/dynadraw/kis_dyna_paintop_settings_widget.cpp:33
+#: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:37
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:52
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:52
+#, fuzzy
+#| msgid "Smeary Brush"
+msgid "Airbrush"
+msgstr "Chổi nhòe"
+
+#: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:38
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:39
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:76
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:50
+#: plugins/paintops/dynadraw/kis_dyna_paintop_settings_widget.cpp:34
+#: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:41
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:45
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:62
+#: plugins/paintops/particle/kis_particle_paintop_settings_widget.cpp:38
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:59
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "Portrait mode"
+msgid "Painting Mode"
+msgstr "Chế độ chân dung"
+
 #. i18n: ectx: property (text), widget (QLabel, radiusLabel)
 #: plugins/paintops/chalk/wdgchalkoptions.ui:46
 #, fuzzy
@@ -8537,7 +8635,7 @@ msgstr "Bán kính làm mờ:"
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
 #. i18n: ectx: property (text), widget (QCheckBox, inkDepletionCHBox)
 #: plugins/paintops/chalk/wdgchalkoptions.ui:61
-#: plugins/paintops/hairy/kis_hairy_ink_option.cpp:34
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:40
 #: plugins/paintops/hairy/wdghairyeoptions.ui:259
 #, fuzzy
 #| msgid "Resolution:"
@@ -8563,47 +8661,197 @@ msgstr "Bão hoà"
 msgid "Color Smudge"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:61
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:36
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:37
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:57
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:48
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:43
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:51
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:43
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:59
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:33
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:44
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:59
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:71
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:86
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:98
+#: plugins/paintops/libpaintop/kis_pressure_spacing_option_widget.cpp:35
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:49
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:50
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:51
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
 #, fuzzy
-#| msgid "Length:"
-msgid "Length: "
-msgstr "Chiều dài:"
+#| msgid "%"
+msgid "0%"
+msgstr "%"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgRectangleConstraints)
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:48
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:43
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:51
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:43
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:59
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
+#: ui/forms/wdgrectangleconstraints.ui:20
+msgid "Size"
+msgstr "Cỡ"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:51
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:59
+msgid "Spacing"
+msgstr "Để cách"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:60
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:49
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:53
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:60
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:276
+#: ui/kis_paintop_box.cc:308
+#, fuzzy
+#| msgid "Crop Image"
+msgid "Mirror"
+msgstr "Cắt ảnh"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Smudge Length"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
-#, fuzzy
-#| msgid "Radius"
-msgid "Radius(%): "
-msgstr "Bán kính"
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:55
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:56
+#: plugins/paintops/colorsmudge/kis_smudge_option_widget.cpp:33
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:70
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:55
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:56
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:57
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:35
+#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:33
+#: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:35
+msgid "0.0"
+msgstr ""
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:55
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:56
+#: plugins/paintops/colorsmudge/kis_smudge_option_widget.cpp:33
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:70
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:55
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:56
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:57
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:36
+#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:33
+#: plugins/paintops/libpaintop/kis_pressure_sharpness_option_widget.cpp:35
+msgid "1.0"
+msgstr ""
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:55
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Smudge Radius"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:56
 #, fuzzy
 #| msgid "Color Range"
 msgid "Color Rate"
 msgstr "Khoảng màu"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:65
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:44
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:52
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:44
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:36
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:53
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:77
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:84
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
 #, fuzzy
-msgid "Rate: "
-msgstr "Lặp lại"
+#| msgid "°"
+msgid "0°"
+msgstr "°"
 
-#: plugins/paintops/colorsmudge/kis_overlay_mode_option.h:30
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:65
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:44
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:52
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:44
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:37
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:54
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
+msgid "360°"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:58
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:65
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:44
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:52
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:44
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:48
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:51
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:647
+msgid "Rotation"
+msgstr "Xoay"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:59
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:66
+msgid "Scatter"
+msgstr "Phân tán"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:60
 #, fuzzy
 msgid "Overlay Mode"
 msgstr "Phủ"
 
-#: plugins/paintops/colorsmudge/kis_overlay_mode_option.h:51
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbFillType)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:61
+#: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
+#: plugins/tools/tool_text/wdgtextoptions.ui:53
+#: ui/layerstyles/WdgGradientOverlay.ui:26 ui/layerstyles/WdgStroke.ui:142
+#, fuzzy
+msgid "Gradient"
+msgstr "Đổ dốc màu"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:64
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+#, fuzzy
+msgid "Strength"
+msgstr "Cho layer hiện tại lên trên"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:64
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+#, fuzzy
+#| msgid "Stone"
+msgid "Strong"
+msgstr "Đá"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:64
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:79
+#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_settings_widget.cpp:52
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:65
+msgid "Weak"
+msgstr ""
+
+#: plugins/paintops/colorsmudge/kis_overlay_mode_option.h:54
 msgid ""
 "Paints on the current layer\n"
 "            but uses all layers that are currently visible for smudge input\n"
@@ -8633,41 +8881,17 @@ msgstr "Chổi nhòe"
 msgid "Curve"
 msgstr "Cong"
 
-#. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
-#. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
-#. i18n: ectx: property (text), widget (QRadioButton, linesRBox)
-#: plugins/paintops/curvebrush/kis_curve_line_option.cpp:41
-#: plugins/paintops/dynadraw/wdgdynaoptions.ui:198
-#: ui/forms/wdggridsettings.ui:229 ui/forms/wdggridsettings.ui:248
-msgid "Lines"
-msgstr "Đường"
-
-#: plugins/paintops/curvebrush/kis_curves_opacity_option.cpp:23
-#, fuzzy
-msgid "Curves opacity"
-msgstr "Độ đậm đặc của hình xem trước:"
-
-#: plugins/paintops/curvebrush/kis_curves_opacity_option.cpp:25
-#: plugins/paintops/curvebrush/kis_linewidth_option.cpp:25
-#: plugins/paintops/libpaintop/kis_pressure_flow_option.cpp:28
-#: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:28
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:59
-#: plugins/paintops/libpaintop/kis_pressure_size_option.cpp:28
-#: plugins/paintops/libpaintop/kis_pressure_spacing_option.cpp:30
-#: plugins/paintops/sketch/kis_density_option.cpp:25
-#: plugins/paintops/sketch/kis_linewidth_option.cpp:25
-#: plugins/paintops/sketch/kis_offset_scale_option.cpp:25
-#, fuzzy
-#| msgid "%"
-msgid "0%"
-msgstr "%"
-
-#: plugins/paintops/curvebrush/kis_linewidth_option.cpp:23
-#: plugins/paintops/sketch/kis_linewidth_option.cpp:23
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:36
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:49
 #, fuzzy
 #| msgid "Pixel width"
 msgid "Line width"
 msgstr "Chiều rộng điểm ảnh"
+
+#: plugins/paintops/curvebrush/kis_curve_paintop_settings_widget.cpp:37
+#, fuzzy
+msgid "Curves opacity"
+msgstr "Độ đậm đặc của hình xem trước:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, lineWidthLbl)
@@ -8706,6 +8930,38 @@ msgstr "Chọn đường"
 msgid "Smoothing"
 msgstr "Mượt"
 
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:57
+#, fuzzy
+#| msgid "&Show"
+msgid "Flow"
+msgstr "&Hiện"
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:63
+#, fuzzy
+#| msgid "Smoothness:"
+msgid "Softness"
+msgstr "Độ mượt:"
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:64
+#, fuzzy
+#| msgid "Sharpness:"
+msgid "Sharpness"
+msgstr "Độ sắc:"
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:70
+msgid "Darken"
+msgstr "Làm tối"
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:71
+#, fuzzy
+msgid "Foreground"
+msgstr "Màu Mặt"
+
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:71
+#, fuzzy
+msgid "Mix"
+msgstr "Trình Trộn"
+
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:48
 #, fuzzy
 #| msgid "Pixel width"
@@ -8717,13 +8973,6 @@ msgstr "Chiều rộng điểm ảnh"
 msgctxt "clone paintbrush (previously \"Duplicate\")"
 msgid "Clone"
 msgstr ""
-
-#: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_option.cpp:45
-#: plugins/paintops/libpaintop/kis_paint_action_type_option.cpp:37
-#, fuzzy
-#| msgid "Portrait mode"
-msgid "Painting Mode"
-msgstr "Chế độ chân dung"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbHealing)
 #: plugins/paintops/defaultpaintops/duplicate/wdgduplicateop.ui:21
@@ -8785,7 +9034,7 @@ msgstr ""
 msgid "Deform"
 msgstr "Mức độ:"
 
-#: plugins/paintops/deform/kis_deform_option.cpp:34
+#: plugins/paintops/deform/kis_deform_paintop_settings_widget.cpp:40
 #, fuzzy
 #| msgid "Geometry Options"
 msgid "Deform Options"
@@ -8936,6 +9185,14 @@ msgstr "Hình dáng:"
 msgid "Two"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
+#. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
+#. i18n: ectx: property (text), widget (QRadioButton, linesRBox)
+#: plugins/paintops/dynadraw/wdgdynaoptions.ui:198
+#: ui/forms/wdggridsettings.ui:229 ui/forms/wdggridsettings.ui:248
+msgid "Lines"
+msgstr "Đường"
+
 #. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, lineSpacingSPBox)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:205
 #, fuzzy
@@ -8986,7 +9243,7 @@ msgstr "Palettes"
 msgid "Fixed angle"
 msgstr "Hình tam giác"
 
-#: plugins/paintops/experiment/kis_experimentop_option.cpp:48
+#: plugins/paintops/experiment/kis_experiment_paintop_settings_widget.cpp:35
 #, fuzzy
 #| msgid "Radius"
 msgid "Experiment option"
@@ -9046,6 +9303,13 @@ msgctxt "type of a brush engine, shown in the list of brush engines"
 msgid "Filter"
 msgstr "Bộ lọc"
 
+#: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:56
+#, fuzzy
+#| msgid "Filter"
+msgctxt "option name"
+msgid "Filter"
+msgstr "Bộ lọc"
+
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:40
 #, fuzzy
 #| msgid "Grid"
@@ -9053,11 +9317,18 @@ msgctxt "type of a brush engine, shown in the list of brush engines"
 msgid "Grid"
 msgstr "Lưới"
 
-#: plugins/paintops/gridbrush/kis_grid_shape_option.cpp:33
+#: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:38
 #, fuzzy
 #| msgid "Partial"
 msgid "Particle type"
 msgstr "Một phần"
+
+#: plugins/paintops/gridbrush/kis_grid_paintop_settings_widget.cpp:40
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:49
+#, fuzzy
+#| msgid "options"
+msgid "Color options"
+msgstr "tuỳ chọn"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:47
@@ -9152,17 +9423,11 @@ msgstr "Cỡ miếng"
 msgid "Bristle"
 msgstr "tuỳ chọn"
 
-#: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:46
+#: plugins/paintops/hairy/kis_hairy_paintop_settings_widget.cpp:39
 #, fuzzy
 #| msgid "options"
 msgid "Bristle options"
 msgstr "tuỳ chọn"
-
-#: plugins/paintops/hairy/kis_hairy_shape_option.cpp:33
-#, fuzzy
-#| msgid "Brush Shapes"
-msgid "Brush shape"
-msgstr "Các hình Chổi"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/paintops/hairy/wdgbristleoptions.ui:62
@@ -9399,33 +9664,33 @@ msgstr "Độ phân giải:"
 msgid "Hatching"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/hatching/kis_hatching_options.cpp:57
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:52
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Hatching options"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/hatching/kis_hatching_preferences.cpp:34
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:53
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Hatching preferences"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/hatching/kis_hatching_pressure_crosshatching_option.cpp:28
-#, fuzzy
-#| msgid "Crosshair"
-msgid "Crosshatching"
-msgstr "Dấu cộng"
-
-#: plugins/paintops/hatching/kis_hatching_pressure_separation_option.cpp:29
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:55
 #, fuzzy
 #| msgid "Saturation"
 msgid "Separation"
 msgstr "Bão hoà"
 
-#: plugins/paintops/hatching/kis_hatching_pressure_thickness_option.cpp:29
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:56
 msgid "Thickness"
 msgstr ""
+
+#: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:57
+#, fuzzy
+#| msgid "Crosshair"
+msgid "Crosshatching"
+msgstr "Dấu cộng"
 
 #. i18n: ectx: property (text), widget (QLabel, label_18)
 #: plugins/paintops/hatching/wdghatchingoptions.ui:90
@@ -9932,19 +10197,16 @@ msgstr ""
 msgid "Pipe mode"
 msgstr "Tạo layer mới"
 
-#: plugins/paintops/libpaintop/kis_airbrush_option.cpp:43
-#, fuzzy
-#| msgid "Smeary Brush"
-msgid "Airbrush"
-msgstr "Chổi nhòe"
-
-#: plugins/paintops/libpaintop/kis_bidirectional_mixing_option_widget.cpp:27
-msgid "Mixing"
-msgstr ""
-
 #: plugins/paintops/libpaintop/kis_bidirectional_mixing_option_widget.cpp:30
 msgid "The mixing option mixes the paint on the brush with that on the canvas."
 msgstr ""
+
+#: plugins/paintops/libpaintop/kis_brush_based_paintop_options_widget.cpp:27
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:43
+#, fuzzy
+#| msgid "Brush size"
+msgid "Brush Tip"
+msgstr "Cỡ chổi"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:161
 #, fuzzy
@@ -9958,12 +10220,6 @@ msgid ""
 "Sets Scale to 1.0\n"
 "Sets Rotation to 0.0"
 msgstr ""
-
-#: plugins/paintops/libpaintop/kis_brush_option_widget.cpp:29
-#, fuzzy
-#| msgid "Brush size"
-msgid "Brush Tip"
-msgstr "Cỡ chổi"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:60
 #, fuzzy
@@ -10045,40 +10301,17 @@ msgid ""
 "The slowest performance. Best quality."
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_brush_size_option.cpp:38
-#, fuzzy
-#| msgid "Brush size"
-msgid "Brush tip"
-msgstr "Cỡ chổi"
-
 #: plugins/paintops/libpaintop/kis_clipboard_brush_widget.cpp:105
 msgid ""
 "Nothing copied\n"
 " to Clipboard"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_color_option.cpp:44
-#, fuzzy
-#| msgid "options"
-msgid "Color options"
-msgstr "tuỳ chọn"
-
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:55
 #, fuzzy
 #| msgid "Canvas color:"
 msgid "Plain color"
 msgstr "Màu giấy:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbFillType)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
-#: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
-#: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:26
-#: plugins/tools/tool_text/wdgtextoptions.ui:53
-#: ui/layerstyles/WdgGradientOverlay.ui:26 ui/layerstyles/WdgStroke.ui:142
-#, fuzzy
-msgid "Gradient"
-msgstr "Đổ dốc màu"
 
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:57
 #, fuzzy
@@ -10094,16 +10327,6 @@ msgstr "Hoàn toàn ngẫu nhiên"
 msgid "Locked pattern"
 msgstr "Cho layer hiện tại xuống dưới"
 
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:42
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:34
-msgid "0.0"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_curve_option.cpp:43
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:35
-msgid "1.0"
-msgstr ""
-
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Fuzzy"
 msgstr ""
@@ -10115,13 +10338,6 @@ msgstr "Thời gian"
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:45
 msgid "Drawing angle"
 msgstr "Góc vẽ"
-
-#. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:46
-#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:29
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:647
-msgid "Rotation"
-msgstr "Xoay"
 
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:48
 msgid "X-Tilt"
@@ -10148,200 +10364,95 @@ msgstr "Hiện phần chọn"
 msgid "Tangential pressure"
 msgstr "Áp lực"
 
-#: plugins/paintops/libpaintop/kis_filter_option.cpp:50
-#, fuzzy
-#| msgid "Filter"
-msgctxt "option category"
-msgid "Filter"
-msgstr "Bộ lọc"
-
-#: plugins/paintops/libpaintop/kis_filter_option.cpp:50
-#, fuzzy
-#| msgid "Filter"
-msgctxt "option name"
-msgid "Filter"
-msgstr "Bộ lọc"
-
-#: plugins/paintops/libpaintop/kis_pressure_darken_option.cpp:28
-msgid "Darken"
-msgstr "Làm tối"
-
-#: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:39
-#: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:29
-msgid "Transparent"
-msgstr "Trong suốt"
-
-#: plugins/paintops/libpaintop/kis_pressure_flow_opacity_option.cpp:40
-#: plugins/paintops/libpaintop/kis_pressure_opacity_option.cpp:30
-msgid "Opaque"
-msgstr "Đậm đặc"
-
-#: plugins/paintops/libpaintop/kis_pressure_flow_option.cpp:25
-#, fuzzy
-#| msgid "&Show"
-msgid "Flow"
-msgstr "&Hiện"
-
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:30
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:41
 #: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:56
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:68
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:83
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:95
 #, no-c-format
 msgid "(50% is active color)"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:62
-msgid "CW hue"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:63
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:35
 msgid "CCW hue"
 msgstr ""
 
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:66
-#, fuzzy
-msgid "More saturation"
-msgstr "Bão hoà miếng"
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:46
+msgid "CW hue"
+msgstr ""
 
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:67
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:61
 #, fuzzy
 #| msgid "Saturation"
 msgid "Less saturation "
 msgstr "Bão hoà"
 
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:71
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:73
 #, fuzzy
-msgid "Higher value"
-msgstr "Giá trị độ sáng:"
+msgid "More saturation"
+msgstr "Bão hoà miếng"
 
-#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:72
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:88
 #, fuzzy
 #| msgid "Color Range"
 msgid "Lower value "
 msgstr "Khoảng màu"
 
-#: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:276
-#: ui/kis_paintop_box.cc:308
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:100
 #, fuzzy
-#| msgid "Crop Image"
-msgid "Mirror"
-msgstr "Cắt ảnh"
+msgid "Higher value"
+msgstr "Giá trị độ sáng:"
 
-#: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:34
-#, fuzzy
-#| msgid "Not defined"
-msgid "Not mirrored"
-msgstr "Không được chỉ định"
-
-#: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:35
+#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:32
 #, fuzzy
 #| msgid "Crop Image"
 msgid "Mirrored"
 msgstr "Cắt ảnh"
 
-#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
+#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:32
+#, fuzzy
+#| msgid "Not defined"
+msgid "Not mirrored"
+msgstr "Không được chỉ định"
+
+#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:296
 #, fuzzy
 #| msgid "Horizontal:"
 msgid "Horizontally"
 msgstr "Ngang:"
 
-#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
+#: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:39
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:298
 #, fuzzy
 #| msgid "Vertical:"
 msgid "Vertically"
 msgstr "Dọc"
 
-#: plugins/paintops/libpaintop/kis_pressure_mix_option.cpp:25
-#, fuzzy
-msgid "Mix"
-msgstr "Trình Trộn"
-
-#: plugins/paintops/libpaintop/kis_pressure_mix_option.cpp:27
-#, fuzzy
-msgid "Foreground"
-msgstr "Màu Mặt"
-
-#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:34
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:36
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:53
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:77
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:84
-#, fuzzy
-#| msgid "°"
-msgid "0°"
-msgstr "°"
-
-#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:35
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:37
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:54
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:78
-msgid "360°"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_pressure_scatter_option.cpp:40
-msgid "Scatter"
-msgstr "Phân tán"
-
-#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:36
+#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:38
 #, fuzzy
 #| msgid "Axes"
 msgid "Axis X"
 msgstr "Các trục"
 
-#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:38
+#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:40
 #, fuzzy
 #| msgid "Axes"
 msgid "Axis Y"
 msgstr "Các trục"
 
-#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:41
+#: plugins/paintops/libpaintop/kis_pressure_scatter_option_widget.cpp:43
 #, fuzzy
 #| msgid "Scattering"
 msgid "Scatter amount"
 msgstr "Sự phân tán"
-
-#: plugins/paintops/libpaintop/kis_pressure_sharpness_option.cpp:32
-#, fuzzy
-#| msgid "Sharpness:"
-msgid "Sharpness"
-msgstr "Độ sắc:"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgRectangleConstraints)
-#: plugins/paintops/libpaintop/kis_pressure_size_option.cpp:26
-#: ui/forms/wdgrectangleconstraints.ui:20
-msgid "Size"
-msgstr "Cỡ"
-
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:23
-#, fuzzy
-#| msgid "Smoothness:"
-msgid "Softness"
-msgstr "Độ mượt:"
-
-#: plugins/paintops/libpaintop/kis_pressure_spacing_option.cpp:27
-msgid "Spacing"
-msgstr "Để cách"
 
 #: plugins/paintops/libpaintop/kis_pressure_spacing_option_widget.cpp:37
 #, fuzzy
 #| msgid "Grid Spacing"
 msgid "Isotropic Spacing"
 msgstr "Khoảng cách Lưới"
-
-#: plugins/paintops/libpaintop/kis_pressure_texture_strength_option.cpp:24
-#, fuzzy
-msgid "Strength"
-msgstr "Cho layer hiện tại lên trên"
-
-#: plugins/paintops/libpaintop/kis_pressure_texture_strength_option.cpp:26
-msgid "Weak"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_pressure_texture_strength_option.cpp:27
-#, fuzzy
-#| msgid "Stone"
-msgid "Strong"
-msgstr "Đá"
 
 #: plugins/paintops/libpaintop/kis_spacing_selection_widget.cpp:62
 #, fuzzy
@@ -10460,7 +10571,7 @@ msgstr "Khoảng cách"
 msgid "%1"
 msgstr "%1%"
 
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fuzzy.cpp:38
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fuzzy.cpp:39
 msgid ""
 "Positive and\n"
 "Negative\n"
@@ -10596,17 +10707,17 @@ msgstr "&Phóng"
 msgid "dy scale:"
 msgstr "&Phóng"
 
-#. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
-#: plugins/paintops/sketch/kis_density_option.cpp:23
-#: plugins/paintops/spray/wdgsprayoptions.ui:181
-msgid "Density"
-msgstr ""
-
-#: plugins/paintops/sketch/kis_offset_scale_option.cpp:23
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:50
 #, fuzzy
 #| msgid "Offset X:"
 msgid "Offset scale"
 msgstr "Khoảng cách X:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
+#: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:51
+#: plugins/paintops/spray/wdgsprayoptions.ui:181
+msgid "Density"
+msgstr ""
 
 #: plugins/paintops/sketch/sketch_paintop_plugin.cpp:42
 #, fuzzy
@@ -10654,21 +10765,16 @@ msgstr "Ngẫu nhiên"
 msgid "Distance opacity"
 msgstr "Khoảng cách:"
 
-#: plugins/paintops/spray/kis_spray_shape_dynamics.cpp:33
-msgid "Shape dynamics"
-msgstr ""
-
-#: plugins/paintops/spray/kis_spray_shape_option.cpp:38
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:41
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:42
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Spray shape"
 msgstr "Chổi nhòe"
 
-#: plugins/paintops/spray/kis_sprayop_option.cpp:33
-#, fuzzy
-#| msgid "Smeary Brush"
-msgid "Spray area"
-msgstr "Chổi nhòe"
+#: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:48
+msgid "Shape dynamics"
+msgstr ""
 
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:40
 #, fuzzy
@@ -11336,18 +11442,18 @@ msgstr "Giới hạn trong lớp hiện tại"
 msgid "Contiguous Selection Tool"
 msgstr "Chọn &Tiếp liền"
 
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:39
-msgid "Elliptical Selection"
-msgstr "Chọn êlíp"
-
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:57
 #, fuzzy
 #| msgid "Select All"
 msgctxt "(qtundo-format)"
 msgid "Select Ellipse"
 msgstr "Chọn Tất cả"
 
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:54
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:86
+msgid "Elliptical Selection"
+msgstr "Chọn êlíp"
+
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.h:73
 #, fuzzy
 msgid "Elliptical Selection Tool"
 msgstr "Chọn &Elip"
@@ -11384,33 +11490,33 @@ msgstr "Chọn đường"
 msgid "Bezier Curve Selection Tool"
 msgstr "Công cụ chọn Bezier"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:42
-msgid "Polygonal Selection"
-msgstr "Chọn hình đa giác"
-
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:56
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Polygon"
 msgstr "Công cụ chọn"
 
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.h:62
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:94
+msgid "Polygonal Selection"
+msgstr "Chọn hình đa giác"
+
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.h:69
 #, fuzzy
 msgid "Polygonal Selection Tool"
 msgstr "Chọn đa &giác"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:42
-msgid "Rectangular Selection"
-msgstr "Chọn hình chữ nhật"
-
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:52
 #, fuzzy
 #| msgid "Select a rectangular area"
 msgctxt "(qtundo-format)"
 msgid "Select Rectangle"
 msgstr "Chọn một khu vực hình chữ nhật"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:63
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:82
+msgid "Rectangular Selection"
+msgstr "Chọn hình chữ nhật"
+
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:68
 #, fuzzy
 msgid "Rectangular Selection Tool"
 msgstr "Chọn hình chữ &nhật"
@@ -14477,21 +14583,26 @@ msgstr "Quay &90"
 msgid "Secondary Mode"
 msgstr "Quay &90"
 
-#: ui/input/kis_alternate_invocation_action.cpp:46
+#: ui/input/kis_alternate_invocation_action.cpp:45
+#, fuzzy
+msgid "Tertiary Mode"
+msgstr "Quay &90"
+
+#: ui/input/kis_alternate_invocation_action.cpp:48
 #, fuzzy
 msgid "Pick Foreground Color from Current Layer"
 msgstr "Điền Bảng màu từ Lớp hiện tại"
 
-#: ui/input/kis_alternate_invocation_action.cpp:47
+#: ui/input/kis_alternate_invocation_action.cpp:49
 #, fuzzy
 msgid "Pick Background Color from Current Layer"
 msgstr "Điền Bảng màu từ Lớp hiện tại"
 
-#: ui/input/kis_alternate_invocation_action.cpp:49
+#: ui/input/kis_alternate_invocation_action.cpp:51
 msgid "Pick Foreground Color from Merged Image"
 msgstr ""
 
-#: ui/input/kis_alternate_invocation_action.cpp:50
+#: ui/input/kis_alternate_invocation_action.cpp:52
 msgid "Pick Background Color from Merged Image"
 msgstr ""
 
@@ -18012,13 +18123,32 @@ msgstr "&Trắng"
 msgid "Switch to Previous Preset"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/kis_paintop_option.cpp:36 ui/layerstyles/wdglayerstyles.ui:79
-#: ui/layerstyles/wdgTexture.ui:20
+#: ui/kis_paintop_options_model.cpp:35
 #, fuzzy
+#| msgid "General"
+msgctxt "option category"
+msgid "General"
+msgstr "Chung "
+
+#: ui/kis_paintop_options_model.cpp:38
+#, fuzzy
+#| msgid "Color"
+msgctxt "option category"
+msgid "Color"
+msgstr "Màu"
+
+#: ui/kis_paintop_options_model.cpp:41
+#, fuzzy
+msgctxt "option category"
 msgid "Texture"
 msgstr "Chữ"
+
+#: ui/kis_paintop_options_model.cpp:44
+#, fuzzy
+#| msgid "Filter"
+msgctxt "option category"
+msgid "Filter"
+msgstr "Bộ lọc"
 
 #: ui/kis_popup_palette.cpp:453
 msgid ""
@@ -19967,6 +20097,13 @@ msgstr "Các kiểu"
 msgid "Outer Glow"
 msgstr ""
 
+#. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/layerstyles/wdglayerstyles.ui:79 ui/layerstyles/wdgTexture.ui:20
+#, fuzzy
+msgid "Texture"
+msgstr "Chữ"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #: ui/layerstyles/wdglayerstyles.ui:87 ui/layerstyles/WdgSatin.ui:20
@@ -20254,13 +20391,13 @@ msgstr ""
 msgid "Local selection is locked."
 msgstr "Phóng Phần chọn"
 
-#: ui/tool/kis_tool_paint.cc:107
+#: ui/tool/kis_tool_paint.cc:108
 #, fuzzy
 #| msgid "Chinese Brush"
 msgid "Increase Brush Size"
 msgstr "Chổi Trung Quốc"
 
-#: ui/tool/kis_tool_paint.cc:113
+#: ui/tool/kis_tool_paint.cc:114
 #, fuzzy
 #| msgid "Brush size"
 msgid "Decrease Brush Size"
@@ -20585,6 +20722,35 @@ msgstr "Không gian màu"
 #| msgid "Colorspace"
 msgid "Workspace %1"
 msgstr "Không gian màu"
+
+#, fuzzy
+#~| msgid "Length:"
+#~ msgid "Length: "
+#~ msgstr "Chiều dài:"
+
+#, fuzzy
+#~| msgid "Radius"
+#~ msgid "Radius(%): "
+#~ msgstr "Bán kính"
+
+#, fuzzy
+#~ msgid "Rate: "
+#~ msgstr "Lặp lại"
+
+#, fuzzy
+#~| msgid "Brush Shapes"
+#~ msgid "Brush shape"
+#~ msgstr "Các hình Chổi"
+
+#, fuzzy
+#~| msgid "Brush size"
+#~ msgid "Brush tip"
+#~ msgstr "Cỡ chổi"
+
+#, fuzzy
+#~| msgid "Smeary Brush"
+#~ msgid "Spray area"
+#~ msgstr "Chổi nhòe"
 
 #, fuzzy
 #~| msgid "Brush size"

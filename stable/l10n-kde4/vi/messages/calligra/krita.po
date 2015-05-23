@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-22 06:25+0000\n"
+"POT-Creation-Date: 2015-05-23 05:43+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -656,10 +656,10 @@ msgstr "Bút chì điểm ảnh"
 
 #: i18ndata:61
 #, fuzzy
-#| msgid "Pixel Pencil"
+#| msgid "Brush size"
 msgctxt "./data/brushes/P_Graphite_Pencil_grain.gih"
-msgid "P_Graphite Pencil _grain"
-msgstr "Bút chì điểm ảnh"
+msgid "GIMP Brush Pipe"
+msgstr "Cỡ chổi"
 
 #: i18ndata:62
 #, fuzzy
@@ -1797,7 +1797,13 @@ msgstr "Độ đậm đặc:"
 msgid "Composite Mode"
 msgstr "Chế độ Tổng hợp"
 
-#: image/kis_layer.cc:216 image/kis_layer.cc:226
+#: image/kis_layer.cc:217 image/kis_layer.cc:234
+#, fuzzy
+#| msgid "Layer Size"
+msgid "Layer Style"
+msgstr "Cỡ Lớp"
+
+#: image/kis_layer.cc:220 image/kis_layer.cc:230
 msgid "Inherit Alpha"
 msgstr ""
 
@@ -1814,7 +1820,7 @@ msgid "Processing"
 msgstr "Hậu xử lý"
 
 #. i18n: ectx: property (text), widget (QLineEdit, palettename)
-#: image/kis_psd_layer_style.cpp:103 ui/forms/wdgcustompalette.ui:18
+#: image/kis_psd_layer_style.cpp:99 ui/forms/wdgcustompalette.ui:18
 #: ui/KisDocument.cpp:2481 ui/KisMainWindow.cpp:844 ui/KisPart.cpp:593
 #: ui/KisPart.cpp:609
 msgid "Unnamed"
@@ -2055,7 +2061,7 @@ msgstr "Nhập ảnh"
 
 #. i18n: ectx: Menu (LayerConvert)
 #: krita.rc:151
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:513
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:515
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
@@ -2063,7 +2069,7 @@ msgstr "&Nghịch đảo"
 
 #. i18n: ectx: Menu (LayerSplitAlpha)
 #: krita.rc:159
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:519
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:521
 #, fuzzy
 msgid "S&plit Alpha"
 msgstr "Từ màu sang độ trong suốt"
@@ -3691,7 +3697,7 @@ msgid ""
 "interface> docker"
 msgstr ""
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:509
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:511
 #: ui/kis_layer_manager.cc:300
 msgid "&Merge with Layer Below"
 msgstr "&Nhập vào với lớp bên dưới"
@@ -12637,62 +12643,62 @@ msgstr "Tính chất Lớp"
 msgid "Layer Styles"
 msgstr "Cỡ Lớp"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:232
+#: ui/dialogs/kis_dlg_layer_style.cpp:244
 msgctxt "@title:window"
 msgid "Enter new style name"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:233
+#: ui/dialogs/kis_dlg_layer_style.cpp:245
 #, fuzzy
 #| msgid "Name:"
 msgctxt "@label:textbox"
 msgid "Name:"
 msgstr "Tên:"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:234
+#: ui/dialogs/kis_dlg_layer_style.cpp:246
 #, fuzzy
 #| msgid "Styles"
 msgctxt "Default name for a new style"
 msgid "New Style"
 msgstr "Các kiểu"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:247
-#: ui/dialogs/kis_dlg_layer_style.cpp:261
+#: ui/dialogs/kis_dlg_layer_style.cpp:259
+#: ui/dialogs/kis_dlg_layer_style.cpp:273
 #, fuzzy
 #| msgid "Select All"
 msgid "Select ASL file"
 msgstr "Chọn Tất cả"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:249
+#: ui/dialogs/kis_dlg_layer_style.cpp:261
 #, fuzzy
 #| msgid "No configuration option."
 msgid "Layer style library (*.asl)"
 msgstr "Không có tùy chọn nào."
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:263
+#: ui/dialogs/kis_dlg_layer_style.cpp:275
 #, fuzzy
 #| msgid "No configuration option."
 msgid "Layer style configuration (*.asl)"
 msgstr "Không có tùy chọn nào."
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:722 ui/widgets/kis_cmb_contour.cpp:25
+#: ui/dialogs/kis_dlg_layer_style.cpp:738 ui/widgets/kis_cmb_contour.cpp:25
 #, fuzzy
 #| msgid "Not defined"
 msgid "Not Implemented Yet"
 msgstr "Không được chỉ định"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/dialogs/kis_dlg_layer_style.cpp:812 ui/layerstyles/wdglayerstyles.ui:39
+#: ui/dialogs/kis_dlg_layer_style.cpp:828 ui/layerstyles/wdglayerstyles.ui:51
 #, fuzzy
 #| msgid "Drop Shadow"
 msgid "Inner Shadow"
 msgstr "Bóng đổ"
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:813
+#: ui/dialogs/kis_dlg_layer_style.cpp:829
 msgid "Choke"
 msgstr ""
 
-#: ui/dialogs/kis_dlg_layer_style.cpp:1045
+#: ui/dialogs/kis_dlg_layer_style.cpp:1061
 msgctxt "layer styles parameter"
 msgid "Spread"
 msgstr ""
@@ -19423,7 +19429,7 @@ msgstr "&Trắng"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/layerstyles/wdgBevelAndEmboss.ui:20 ui/layerstyles/wdglayerstyles.ui:63
+#: ui/layerstyles/wdgBevelAndEmboss.ui:20 ui/layerstyles/wdglayerstyles.ui:75
 msgid "Bevel and Emboss"
 msgstr ""
 
@@ -19614,7 +19620,7 @@ msgstr "Bóng 2"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpBlendingOptions)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/wdgblendingoptions.ui:20 ui/layerstyles/wdglayerstyles.ui:26
+#: ui/layerstyles/wdgblendingoptions.ui:20 ui/layerstyles/wdglayerstyles.ui:38
 #, fuzzy
 #| msgid "Alpha Options"
 msgid "Blending Options"
@@ -19823,7 +19829,7 @@ msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/WdgColorOverlay.ui:20 ui/layerstyles/wdglayerstyles.ui:95
+#: ui/layerstyles/WdgColorOverlay.ui:20 ui/layerstyles/wdglayerstyles.ui:107
 #, fuzzy
 #| msgid "Selection"
 msgid "Color Overlay"
@@ -19834,7 +19840,7 @@ msgstr "Phần chọn"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: ui/layerstyles/wdgContour.ui:20 ui/layerstyles/wdgContour.ui:32
-#: ui/layerstyles/wdgdropshadow.ui:42 ui/layerstyles/wdglayerstyles.ui:71
+#: ui/layerstyles/wdgdropshadow.ui:42 ui/layerstyles/wdglayerstyles.ui:83
 #: ui/layerstyles/WdgSatin.ui:178
 #, fuzzy
 #| msgid "Contrast"
@@ -19875,7 +19881,7 @@ msgstr "Thêm Bóng đổ"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, grpMain)
-#: ui/layerstyles/wdgdropshadow.ui:20 ui/layerstyles/wdglayerstyles.ui:31
+#: ui/layerstyles/wdgdropshadow.ui:20 ui/layerstyles/wdglayerstyles.ui:43
 msgid "Drop Shadow"
 msgstr "Bóng đổ"
 
@@ -19941,7 +19947,7 @@ msgstr "&Cỡ"
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: ui/layerstyles/WdgGradientOverlay.ui:20
-#: ui/layerstyles/wdglayerstyles.ui:103
+#: ui/layerstyles/wdglayerstyles.ui:115
 #, fuzzy
 msgid "Gradient Overlay"
 msgstr "Công cụ vẽ"
@@ -20020,7 +20026,7 @@ msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/layerstyles/wdgInnerGlow.ui:20 ui/layerstyles/wdglayerstyles.ui:55
+#: ui/layerstyles/wdgInnerGlow.ui:20 ui/layerstyles/wdglayerstyles.ui:67
 msgid "Inner Glow"
 msgstr ""
 
@@ -20107,68 +20113,75 @@ msgstr "Khoảng:"
 msgid "&Jitter:"
 msgstr "Bộ &lọc:"
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkMasterFxSwitch)
+#: ui/layerstyles/wdglayerstyles.ui:22
+#, fuzzy
+#| msgid "Layer Effects"
+msgid "Enable Effects"
+msgstr "Hiệu ứng lớp"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpStyleSelector)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/wdglayerstyles.ui:21 ui/layerstyles/wdgstylesselector.ui:20
+#: ui/layerstyles/wdglayerstyles.ui:33 ui/layerstyles/wdgstylesselector.ui:20
 #, fuzzy
 #| msgid "Styles"
 msgid "Styles"
 msgstr "Các kiểu"
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/wdglayerstyles.ui:47
+#: ui/layerstyles/wdglayerstyles.ui:59
 msgid "Outer Glow"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/layerstyles/wdglayerstyles.ui:79 ui/layerstyles/wdgTexture.ui:20
+#: ui/layerstyles/wdglayerstyles.ui:91 ui/layerstyles/wdgTexture.ui:20
 #, fuzzy
 msgid "Texture"
 msgstr "Chữ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/wdglayerstyles.ui:87 ui/layerstyles/WdgSatin.ui:20
+#: ui/layerstyles/wdglayerstyles.ui:99 ui/layerstyles/WdgSatin.ui:20
 msgid "Satin"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/layerstyles/wdglayerstyles.ui:111 ui/layerstyles/WdgPatternOverlay.ui:20
+#: ui/layerstyles/wdglayerstyles.ui:123 ui/layerstyles/WdgPatternOverlay.ui:20
 #, fuzzy
 msgid "Pattern Overlay"
 msgstr "Công cụ vẽ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (text), item, widget (QListWidget, lstStyleSelector)
-#: ui/layerstyles/wdglayerstyles.ui:119 ui/layerstyles/WdgStroke.ui:20
+#: ui/layerstyles/wdglayerstyles.ui:131 ui/layerstyles/WdgStroke.ui:20
 #, fuzzy
 #| msgid "Stone"
 msgid "Stroke"
 msgstr "Đá"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnNewStyle)
-#: ui/layerstyles/wdglayerstyles.ui:135
+#: ui/layerstyles/wdglayerstyles.ui:149
 msgid "Ne&w..."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, btnLoadStyle)
-#: ui/layerstyles/wdglayerstyles.ui:142
+#: ui/layerstyles/wdglayerstyles.ui:156
 #, fuzzy
 #| msgid "Export"
 msgid "&Import..."
 msgstr "Xuất"
 
 #. i18n: ectx: property (text), widget (QPushButton, btnSaveStyle)
-#: ui/layerstyles/wdglayerstyles.ui:149
+#: ui/layerstyles/wdglayerstyles.ui:163
 #, fuzzy
 #| msgid "Export"
 msgid "&Export..."
 msgstr "Xuất"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkPreview)
-#: ui/layerstyles/wdglayerstyles.ui:156
+#: ui/layerstyles/wdglayerstyles.ui:170
 #, fuzzy
 #| msgid "Preview"
 msgid "Pre&view"
@@ -20747,6 +20760,12 @@ msgid "Workspace %1"
 msgstr "Không gian màu"
 
 #, fuzzy
+#~| msgid "Pixel Pencil"
+#~ msgctxt "./data/brushes/P_Graphite_Pencil_grain.gih"
+#~ msgid "P_Graphite Pencil _grain"
+#~ msgstr "Bút chì điểm ảnh"
+
+#, fuzzy
 #~ msgid "Tertiary Mode"
 #~ msgstr "Quay &90"
 
@@ -20809,9 +20828,6 @@ msgstr "Không gian màu"
 #~| msgid "&Scale"
 #~ msgid "&Save Style..."
 #~ msgstr "&Phóng"
-
-#~ msgid "Layer Effects"
-#~ msgstr "Hiệu ứng lớp"
 
 #, fuzzy
 #~ msgid "Add Drop Shadow..."

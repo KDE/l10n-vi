@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-06-26 01:53+0000\n"
+"POT-Creation-Date: 2015-07-31 02:02+0000\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -727,7 +727,8 @@ msgid ""
 "which is currently shown in the thumbnail viewer)</li></ul></p>"
 msgstr ""
 
-#: Browser/AbstractCategoryModel.cpp:46
+#: Browser/AbstractCategoryModel.cpp:46 Exif/SearchDialog.cpp:397
+#: Exif/SearchInfo.cpp:183
 #, fuzzy
 #| msgid "None"
 msgctxt "As in No persons, no locations etc."
@@ -1184,7 +1185,7 @@ msgstr ""
 msgid "Following files could not be read:"
 msgstr ""
 
-#: Exif/Database.cpp:96
+#: Exif/Database.cpp:100
 #, kde-format
 msgid ""
 "<p>There was an error while executing the SQL backend command. The error is "
@@ -1194,11 +1195,11 @@ msgid ""
 "message obtained was:<br/>%2</p>"
 msgstr ""
 
-#: Exif/Database.cpp:104
+#: Exif/Database.cpp:108
 msgid "Error Executing Exif Command"
 msgstr ""
 
-#: Exif/Database.cpp:415
+#: Exif/Database.cpp:483
 #, fuzzy
 #| msgid "Loading information from images"
 msgid "Rereading EXIF information from all images"
@@ -1295,53 +1296,67 @@ msgstr "mm"
 msgid "Camera"
 msgstr "Máy ảnh"
 
-#: Exif/SearchDialog.cpp:111 Settings/GeneralPage.cpp:124
+#: Exif/SearchDialog.cpp:110
+msgid "Lens"
+msgstr ""
+
+#: Exif/SearchDialog.cpp:115 Settings/GeneralPage.cpp:124
 msgid "Miscellaneous"
 msgstr "Lặt vặt"
 
-#: Exif/SearchDialog.cpp:137
+#: Exif/SearchDialog.cpp:141
 msgid "Iso setting"
 msgstr "Giá trị ISO"
 
-#: Exif/SearchDialog.cpp:142
+#: Exif/SearchDialog.cpp:146
 msgctxt "Example 1.6 secs (as in seconds)"
 msgid "secs."
 msgstr "giây"
 
-#: Exif/SearchDialog.cpp:181
+#: Exif/SearchDialog.cpp:185
 msgid "1 second"
 msgstr "1 giây"
 
-#: Exif/SearchDialog.cpp:198
+#: Exif/SearchDialog.cpp:202
 msgid "Exposure time"
 msgstr "Thời gian phơi sáng"
 
-#: Exif/SearchDialog.cpp:248
+#: Exif/SearchDialog.cpp:252
 msgid "Exposure Program"
 msgstr "Chương trình phơi sáng"
 
-#: Exif/SearchDialog.cpp:265 ImportExport/MD5CheckPage.cpp:76
+#: Exif/SearchDialog.cpp:269 ImportExport/MD5CheckPage.cpp:76
 msgid "Orientation"
 msgstr "Hướng"
 
-#: Exif/SearchDialog.cpp:277
+#: Exif/SearchDialog.cpp:281
 msgid "Metering Mode"
 msgstr "Chế độ đo"
 
-#: Exif/SearchDialog.cpp:293
+#: Exif/SearchDialog.cpp:297
 msgid "Contrast"
 msgstr "Tương phản"
 
-#: Exif/SearchDialog.cpp:304
+#: Exif/SearchDialog.cpp:308
 msgid "Sharpness"
 msgstr "Sắc"
 
-#: Exif/SearchDialog.cpp:315
+#: Exif/SearchDialog.cpp:319
 msgid "Saturation"
 msgstr "Bão hoà"
 
 #: Exif/SearchDialog.cpp:372
 msgid "No cameras found in the database"
+msgstr ""
+
+#: Exif/SearchDialog.cpp:393
+msgid "No lenses found in the database"
+msgstr ""
+
+#: Exif/SearchDialog.cpp:409
+msgid ""
+"Not all images in the database have lens information. <note>Recreate the "
+"EXIF search database to ensure lens data for all images.</note>"
 msgstr ""
 
 #: HTMLGenerator/Generator.cpp:52

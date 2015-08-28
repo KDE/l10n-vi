@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-08-26 05:40+0000\n"
+"POT-Creation-Date: 2015-08-28 05:41+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -87,7 +87,8 @@ msgstr "Layer"
 #: ui/KisMainWindow.cpp:1623 ui/KisMainWindow.cpp:1635
 #: ui/KisTemplateCreateDia.cpp:318 ui/KisView.cpp:845
 #: ui/opengl/kis_opengl.cpp:91 ui/opengl/kis_opengl_canvas2.cpp:513
-#: ui/thememanager.cpp:271 ui/widgets/kis_custom_image_widget.cc:246
+#: ui/opengl/kis_opengl_image_textures.cpp:500 ui/thememanager.cpp:271
+#: ui/widgets/kis_custom_image_widget.cc:246
 #, fuzzy
 #| msgid "Krita"
 msgctxt "@title:window"
@@ -2544,10 +2545,10 @@ msgstr ""
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:185
 #: plugins/paintops/libpaintop/sensors/SensorDistanceConfiguration.ui:85
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:64
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:91
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:108
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:128
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:145
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:84
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:101
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:121
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:138
 #: ui/layerstyles/wdgInnerGlow.ui:245
 msgid "px"
 msgstr ""
@@ -3302,7 +3303,7 @@ msgstr "Chổi nhòe"
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:195
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:129
 #: ui/forms/wdg_resolution.ui:27 ui/forms/wdgimageproperties.ui:58
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:121
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:114
 msgid "Height:"
 msgstr "Chiều cao:"
 
@@ -3323,7 +3324,7 @@ msgstr "Chiều cao:"
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:163
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:94
 #: ui/forms/wdg_resolution.ui:20 ui/forms/wdgimageproperties.ui:41
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:84
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:77
 msgid "Width:"
 msgstr "Chiều rộng:"
 
@@ -5029,12 +5030,10 @@ msgstr "Chế độ lộ sáng:"
 msgid "Auto"
 msgstr "Tự động"
 
-#. i18n: ectx: property (text), widget (QRadioButton, radioManual)
 #. i18n: ectx: property (text), item, widget (QComboBox, editExposureMode)
 #. i18n: ectx: property (text), item, widget (QComboBox, editExposureProgram)
 #: plugins/extensions/metadataeditor/editors/exif.ui:106
 #: plugins/extensions/metadataeditor/editors/exif.ui:138
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:59
 msgid "Manual"
 msgstr "Bằng tay"
 
@@ -13032,8 +13031,8 @@ msgid "Screen %1:"
 msgstr "&Cỡ Màn hình"
 
 #: ui/dialogs/kis_dlg_preferences.cc:331
-#: ui/widgets/kis_advanced_color_space_selector.cc:471
-#: ui/widgets/kis_color_space_selector.cc:196
+#: ui/widgets/kis_advanced_color_space_selector.cc:478
+#: ui/widgets/kis_color_space_selector.cc:197
 #, fuzzy
 #| msgid "Color Range"
 msgid "Install Color Profiles"
@@ -13536,8 +13535,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, bnAdvanced)
 #: ui/forms/wdgcolorspaceselector.ui:150
 #, fuzzy
-#| msgid "Colorspace"
-msgid "Choose Color Space"
+msgid "Color Space Browser"
 msgstr "Không gian màu"
 
 #. i18n: ectx: property (text), widget (QLabel, lbl_descriptionwidget)
@@ -13555,11 +13553,6 @@ msgstr ""
 #| msgid "New Layer Properties"
 msgid "Profile Properties"
 msgstr "Tính chất cho lớp mới"
-
-#. i18n: ectx: property (text), widget (QLabel, lbltrc)
-#: ui/forms/wdgcolorspaceselectoradvanced.ui:93
-msgid "TRC"
-msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, lblWhitepoint)
 #: ui/forms/wdgcolorspaceselectoradvanced.ui:103
@@ -14195,7 +14188,7 @@ msgstr "&Phần trăm:"
 #. i18n: ectx: property (text), widget (QLabel, lblXOffset)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_3)
 #: ui/forms/wdggridsettings.ui:48
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:101
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:94
 #, fuzzy
 #| msgid "&X offset:"
 msgid "X offset:"
@@ -14204,7 +14197,7 @@ msgstr "Khoảng cách &X:"
 #. i18n: ectx: property (text), widget (QLabel, lblYOffset)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2_2)
 #: ui/forms/wdggridsettings.ui:58
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:138
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:131
 #, fuzzy
 #| msgid "&Y offset:"
 msgid "Y offset:"
@@ -15483,23 +15476,23 @@ msgstr ""
 msgid "Choose screen resolution"
 msgstr "Chọn"
 
-#. i18n: ectx: property (text), widget (QCheckBox, chkRememberSetting)
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:20
-msgid "Do not ask (hold Shift to see it again)"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, lblTitleMessage)
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:27
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:20
 msgid ""
-"Krita couldn't determine size of the screen the tablet device is connected "
-"to. Please choose correct data source or enter screen resolution manually"
+"<html><head/><body><p>The driver for your  drawing tablet and Windows do not "
+"agree on the size of the screen your tablet is connected to. Please select "
+"the right option.</p></body></html>"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: ui/input/wintab/kis_screen_size_choice_dialog.ui:37
-#, fuzzy
-msgid "Screen Resolution"
-msgstr "Chọn"
+#. i18n: ectx: property (text), widget (QRadioButton, radioManual)
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:52
+msgid "If both are wrong, enter the size manually:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkRememberSetting)
+#: ui/input/wintab/kis_screen_size_choice_dialog.ui:155
+msgid "Do not ask again (hold Shift to ask again)"
+msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
 #: ui/kis_aboutdata.cpp:41 ui/wdgsplash.ui:300
@@ -20945,20 +20938,13 @@ msgid ""
 " Krita will disable OpenGL and close now."
 msgstr ""
 
-#: ui/opengl/kis_opengl_image_textures.cpp:496
-msgctxt "@title:window"
-msgid "Internal color management was activated"
-msgstr ""
-
-#: ui/opengl/kis_opengl_image_textures.cpp:497
+#: ui/opengl/kis_opengl_image_textures.cpp:501
 msgid ""
-"It was requested to disable final color conversion for a image that has non-"
-"RGB color space. This is a bug in Krita. Please report us how you managed to "
-"get this message.\n"
-"\n"
-"Right now the internal color conversion into the monitor profile will be "
-"activated. Please take it into account if you use OCIO or activated it for "
-"some other reason."
+"You enabled OpenColorIO based color management, but your image is not an RGB "
+"image.\n"
+"OpenColorIO-based color management only works with RGB images.\n"
+"Please check the settings in the LUT docker.OpenColorIO will now be "
+"deactivated."
 msgstr ""
 
 #: ui/opengl/kis_texture_tile_update_info.h:64
@@ -21508,11 +21494,26 @@ msgstr ""
 msgctxt "From Elle's notes."
 msgid ""
 "When editing 8-bit images, you should use a profile with a small color gamut "
-"and an approximately or exactly uniform TRC. Of the profiles supplied in my "
-"profile pack, only the sRGB and AdobeRGB1998 (ClayRGB) color spaces are "
-"small enough for 8-bit editing. Even with the AdobeRGB1998 color space you "
-"need to be careful to not cause posterization. And of course you can't use "
-"the linear gamma versions of these profiles for 8-bit editing."
+"and an approximately or exactly perceptually uniform TRC. Of the profiles "
+"supplied in my profile pack, only the sRGB and AdobeRGB1998 (ClayRGB) color "
+"spaces are small enough for 8-bit editing. Even with the AdobeRGB1998 color "
+"space you need to be careful to not cause posterization. And of course you "
+"can't use the linear gamma versions of these profiles for 8-bit editing."
+msgstr ""
+
+#: ui/widgets/kis_advanced_color_space_selector.cc:352
+msgctxt "From Elle's notes."
+msgid ""
+"Use V4 profiles for editing images using high bit depth image editors that "
+"use LCMS as the Color Management Module. This includes Krita, digiKam/"
+"showFoto, and GIMP 2.9."
+msgstr ""
+
+#: ui/widgets/kis_advanced_color_space_selector.cc:356
+msgctxt "From Elle's notes."
+msgid ""
+"Use V2 profiles for exporting finished images to be uploaded to the web or "
+"for use with imaging software that can't read V4 profiles."
 msgstr ""
 
 #: ui/widgets/kis_categorized_list_view.cpp:117
@@ -21817,6 +21818,15 @@ msgid "Workspace %1"
 msgstr "Không gian màu"
 
 #, fuzzy
+#~| msgid "Colorspace"
+#~ msgid "Choose Color Space"
+#~ msgstr "Không gian màu"
+
+#, fuzzy
+#~ msgid "Screen Resolution"
+#~ msgstr "Chọn"
+
+#, fuzzy
 #~| msgid "Distance: "
 #~ msgid "Ruler assistant editor tool"
 #~ msgstr "Khoảng cách:"
@@ -21946,10 +21956,6 @@ msgstr "Không gian màu"
 #~| msgid "&Random Noise..."
 #~ msgid "zoom to size"
 #~ msgstr "Nhiễu &ngẫu nhiên..."
-
-#, fuzzy
-#~ msgid "Color Space"
-#~ msgstr "Không gian màu"
 
 #, fuzzy
 #~| msgid "&Target color space:"

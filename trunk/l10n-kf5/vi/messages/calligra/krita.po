@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-08 08:19+0000\n"
+"POT-Creation-Date: 2015-11-11 07:46+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -207,7 +207,7 @@ msgstr "không tên-1"
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:338
 #: ui/dialogs/kis_dlg_preferences.cc:224 ui/input/kis_tablet_debugger.cpp:100
 #: ui/kis_filter_manager.cc:217 ui/kis_filter_manager.cc:226
-#: ui/kis_layer_manager.cc:674 ui/kis_layer_manager.cc:950
+#: ui/kis_layer_manager.cc:677 ui/kis_layer_manager.cc:953
 #: ui/KisApplication.cpp:238 ui/KisApplication.cpp:241
 #: ui/KisApplication.cpp:266 ui/KisApplication.cpp:292
 #: ui/KisApplication.cpp:313 ui/KisDocument.cpp:617 ui/KisDocument.cpp:619
@@ -1404,7 +1404,7 @@ msgid "Convert Image Type"
 msgstr "Chuyển đổi loại ảnh"
 
 #: image/commands/kis_layer_props_command.cpp:42
-#: image/commands/kis_node_property_list_command.cpp:27
+#: image/commands/kis_node_property_list_command.cpp:31
 #, fuzzy
 #| msgid "Property Changes"
 msgctxt "(qtundo-format)"
@@ -1424,11 +1424,34 @@ msgctxt "(qtundo-format)"
 msgid "Opacity Change"
 msgstr "Đường cong Độ trong suốt"
 
-#: image/commands/kis_node_property_list_command.cpp:57
-#: image/commands/kis_node_property_list_command.cpp:63
-#: image/kis_group_layer.cc:286 image/kis_group_layer.cc:293
+#: image/commands/kis_node_property_list_command.cpp:61
+#: image/commands/kis_node_property_list_command.cpp:67
+#: image/kis_group_layer.cc:304 image/kis_layer_properties_icons.cpp:35
 msgid "Pass Through"
 msgstr ""
+
+#: image/commands/kis_node_property_list_command.cpp:87
+#: image/kis_layer_properties_icons.cpp:30
+msgid "Visible"
+msgstr "Nhìn thấy"
+
+#: image/commands/kis_node_property_list_command.cpp:88
+#: image/kis_layer_properties_icons.cpp:29
+#: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
+#, fuzzy
+msgid "Locked"
+msgstr "kết nối"
+
+#: image/commands/kis_node_property_list_command.cpp:89
+#: image/kis_layer_properties_icons.cpp:36
+msgid "Active"
+msgstr ""
+
+#: image/commands/kis_node_property_list_command.cpp:96
+#: image/kis_layer_properties_icons.cpp:33 image/kis_paint_layer.cc:192
+#, fuzzy
+msgid "Alpha Locked"
+msgstr "kết nối"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -1436,7 +1459,7 @@ msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "Chọn"
 
-#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:444
+#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:447
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "(qtundo-format)"
@@ -1551,17 +1574,6 @@ msgstr "Mềm"
 msgid "Gaussian"
 msgstr "Làm mờ kiểu Gauss"
 
-#: image/kis_base_node.cpp:138 ui/kis_node_model.cpp:491
-msgid "Visible"
-msgstr "Nhìn thấy"
-
-#: image/kis_base_node.cpp:139
-#: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
-#: ui/kis_node_model.cpp:492
-#, fuzzy
-msgid "Locked"
-msgstr "kết nối"
-
 #: image/kis_clone_layer.cpp:307
 #, fuzzy
 msgid "Copy From"
@@ -1640,135 +1652,135 @@ msgstr ""
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/kis_image.cc:350
+#: image/kis_image.cc:353
 msgid "background"
 msgstr "nền"
 
-#: image/kis_image.cc:353
+#: image/kis_image.cc:356
 #, kde-format
 msgid "Layer %1"
 msgstr "Lớp %1"
 
-#: image/kis_image.cc:443
+#: image/kis_image.cc:446
 #, fuzzy
 #| msgid "Crop Image"
 msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "Cắt ảnh"
 
-#: image/kis_image.cc:485
+#: image/kis_image.cc:488
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Layer"
 msgstr "Layer &trước..."
 
-#: image/kis_image.cc:486
+#: image/kis_image.cc:489
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Mask"
 msgstr "Xanh nước biển"
 
-#: image/kis_image.cc:518
+#: image/kis_image.cc:521
 #, fuzzy
 #| msgid "Scale Image"
 msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "Phóng ảnh"
 
-#: image/kis_image.cc:519
+#: image/kis_image.cc:522
 #, fuzzy
 #| msgid "Image Resolution"
 msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "Độ phân giải ảnh"
 
-#: image/kis_image.cc:566
+#: image/kis_image.cc:569
 #, fuzzy
 #| msgid "Scale Layer"
 msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "Phóng Lớp"
 
-#: image/kis_image.cc:654
+#: image/kis_image.cc:657
 #, fuzzy
 #| msgid "Rotate Image"
 msgctxt "(qtundo-format)"
 msgid "Rotate Image"
 msgstr "Xoay ảnh"
 
-#: image/kis_image.cc:659
+#: image/kis_image.cc:662
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "Xoay Lớp"
 
-#: image/kis_image.cc:726
+#: image/kis_image.cc:729
 #, fuzzy
 #| msgid "Shear layer"
 msgctxt "(qtundo-format)"
 msgid "Shear layer"
 msgstr "Làm méo Lớp"
 
-#: image/kis_image.cc:732
+#: image/kis_image.cc:735
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "Làm méo ảnh"
 
-#: image/kis_image.cc:744
+#: image/kis_image.cc:747
 #, fuzzy
 #| msgid "Convert Image Type"
 msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "Chuyển đổi loại ảnh"
 
-#: image/kis_image.cc:777
+#: image/kis_image.cc:780
 #, fuzzy
 #| msgid "Convert Image Type"
 msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "Chuyển đổi loại ảnh"
 
-#: image/kis_image.cc:956
+#: image/kis_image.cc:959
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Image"
 msgstr "Làm phẳng ảnh"
 
-#: image/kis_image.cc:1102
+#: image/kis_image.cc:1105
 #, fuzzy
 #| msgid "Scale Selection"
 msgctxt "(qtundo-format)"
 msgid "Merge Selection Masks"
 msgstr "Phóng Phần chọn"
 
-#: image/kis_image.cc:1157
+#: image/kis_image.cc:1160
 #, fuzzy
 msgid "Merged"
 msgstr "xanh da trời"
 
-#: image/kis_image.cc:1168
+#: image/kis_image.cc:1171
 #, fuzzy
 #| msgid "Remove Selected Color"
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "Xóa Màu được chọn"
 
-#: image/kis_image.cc:1239
+#: image/kis_image.cc:1242
 #, fuzzy
 #| msgid "Merge with Layer Below"
 msgctxt "(qtundo-format)"
 msgid "Merge with Layer Below"
 msgstr "Nhập vào với lớp bên dưới"
 
-#: image/kis_image.cc:1309
+#: image/kis_image.cc:1312
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "Làm phẳng ảnh"
 
-#: image/kis_image.cc:1913
+#: image/kis_image.cc:1918
 #, fuzzy
 #| msgid "No Selection"
 msgctxt "(qtundo-format)"
@@ -1781,13 +1793,13 @@ msgstr "Không có phần chọn"
 msgid "Content"
 msgstr "Nội dung"
 
-#: image/kis_layer.cc:212
+#: image/kis_layer.cc:216
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
-#: image/kis_layer.cc:212
+#: image/kis_layer.cc:216
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:235
 #: plugins/paintops/chalk/kis_chalk_paintop_settings_widget.cpp:36
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:50
@@ -1807,29 +1819,25 @@ msgstr "%1%"
 msgid "Opacity"
 msgstr "Độ đậm đặc:"
 
-#: image/kis_layer.cc:215
+#: image/kis_layer.cc:219
 msgid "Composite Mode"
 msgstr "Chế độ Tổng hợp"
 
-#: image/kis_layer.cc:219 image/kis_layer.cc:236
+#: image/kis_layer.cc:236 image/kis_layer_properties_icons.cpp:32
+msgid "Inherit Alpha"
+msgstr ""
+
+#: image/kis_layer.cc:240 image/kis_layer_properties_icons.cpp:31
 #, fuzzy
 #| msgid "Layer Size"
 msgid "Layer Style"
 msgstr "Cỡ Lớp"
 
-#: image/kis_layer.cc:222 image/kis_layer.cc:232
-msgid "Inherit Alpha"
-msgstr ""
-
-#: image/kis_paint_layer.cc:168 image/kis_paint_layer.cc:180
-#: ui/kis_node_model.cpp:500
+#: image/kis_layer_properties_icons.cpp:34 image/kis_paint_layer.cc:195
+#: plugins/extensions/dockers/animation/animation_docker.cpp:126
 #, fuzzy
-msgid "Alpha Locked"
-msgstr "kết nối"
-
-#: image/kis_paint_layer.cc:171 image/kis_paint_layer.cc:183
-msgid "Onion skin"
-msgstr ""
+msgid "Onion Skins"
+msgstr "&Bó buộc tỉ lệ"
 
 #: image/kis_processing_visitor.cpp:34
 #, fuzzy
@@ -1905,10 +1913,6 @@ msgctxt "(qtundo-format)"
 msgid "Invert Selection"
 msgstr "Chọn &Lớp"
 
-#: image/kis_selection_mask.cpp:118 ui/kis_node_model.cpp:493
-msgid "Active"
-msgstr ""
-
 #: image/kis_sync_lod_cache_stroke_strategy.cpp:34
 #, fuzzy
 #| msgid "Update preview"
@@ -1920,6 +1924,18 @@ msgstr "Cập nhật hình xem trước"
 #, fuzzy
 msgid "Updating..."
 msgstr "Đổi tên ảnh"
+
+#: image/krita_utils.cpp:360
+#, fuzzy
+#| msgid "Coffee"
+msgid "off"
+msgstr "Cà phê"
+
+#: image/krita_utils.cpp:360
+#, fuzzy
+#| msgid "None"
+msgid "on"
+msgstr "Không"
 
 #: image/layerstyles/kis_ls_bevel_emboss_filter.cpp:56
 #: image/layerstyles/kis_ls_stroke_filter.cpp:49
@@ -3460,67 +3476,129 @@ msgstr ""
 msgid "Luma"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:41
+#: plugins/extensions/dockers/animation/animation_docker.cpp:43
 #, fuzzy
 msgid "Animation"
 msgstr "Hoạt cảnh"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:51
+#: plugins/extensions/dockers/animation/animation_docker.cpp:54
 #, fuzzy
-msgid "Move to previous frame"
-msgstr "Bỏ chọn"
+msgid "Previous Frame"
+msgstr "&Trắng"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:55
+#: plugins/extensions/dockers/animation/animation_docker.cpp:58
 #, fuzzy
-msgid "Move to next frame"
-msgstr "Bỏ chọn"
+#| msgid "Remove Layer"
+msgid "Next Frame"
+msgstr "Xóa Lớp"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:59
+#: plugins/extensions/dockers/animation/animation_docker.cpp:62
+#, fuzzy
+msgid "Previous Key Frame"
+msgstr "&Trắng"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:66
+#, fuzzy
+#| msgid "Layer name:"
+msgid "Next Key Frame"
+msgstr "Tên lớp:"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:70
+#, fuzzy
+msgid "First Frame"
+msgstr "&Trắng"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:74
+#, fuzzy
+msgid "Last Frame"
+msgstr "Được dùng cuối cùng"
+
+#: plugins/extensions/dockers/animation/animation_docker.cpp:78
 #, fuzzy
 #| msgid "Scale Layer"
-msgid "Play / pause animation"
+msgid "Play / Pause"
 msgstr "Phóng Lớp"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:63
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:32
+#, fuzzy
+#| msgid "Name:"
+msgid "New Frame"
+msgstr "Tên:"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:33
+#, fuzzy
+msgid "Copy Frame"
+msgstr "xanh nước biển"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:34
+#, fuzzy
+#| msgid "Remove Layer"
+msgid "Remove Frame"
+msgstr "Xóa Lớp"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:35
+#, fuzzy
+#| msgid "Remove Layer"
+msgid "Remove Frames"
+msgstr "Xóa Lớp"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:36
+#, fuzzy
+#| msgid "Auto mode"
+msgid "Auto Frame Mode"
+msgstr "Chế độ tự động"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:37
+#, fuzzy
+#| msgid "Pixel width"
+msgid "Show in Timeline"
+msgstr "Chiều rộng điểm ảnh"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:54
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:146
 #, fuzzy
 #| msgid "Layer name:"
-msgid "Add blank frame"
-msgstr "Tên lớp:"
+msgctxt "(qtundo-format)"
+msgid "Copy Keyframe"
+msgid_plural "Copy Keyframes"
+msgstr[0] "Tên lớp:"
 
-#: plugins/extensions/dockers/animation/animation_docker.cpp:67
-#, fuzzy
-#| msgid "Duplicate Segment"
-msgid "Add duplicate frame"
-msgstr "Lặp lại đoạn"
-
-#: plugins/extensions/dockers/animation/animation_docker.cpp:71
-#, fuzzy
-#| msgid "Layer name:"
-msgid "Delete keyframe"
-msgstr "Tên lớp:"
-
-#: plugins/extensions/dockers/animation/animation_docker.cpp:153
-#: plugins/extensions/dockers/animation/animation_docker.cpp:173
-#: plugins/extensions/dockers/animation/animation_docker.cpp:191
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:62
 #, fuzzy
 #| msgid "Layer name:"
 msgctxt "(qtundo-format)"
 msgid "Add Keyframe"
 msgstr "Tên lớp:"
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:40
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:74
+#, fuzzy
+#| msgid "Layer name:"
+msgctxt "(qtundo-format)"
+msgid "Remove Keyframe"
+msgid_plural "Remove Keyframes"
+msgstr[0] "Tên lớp:"
+
+#: plugins/extensions/dockers/animation/kis_animation_utils.cpp:143
+#, fuzzy
+#| msgid "Layer name:"
+msgctxt "(qtundo-format)"
+msgid "Move Keyframe"
+msgid_plural "Move Keyframes"
+msgstr[0] "Tên lớp:"
+
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:42
 msgid "Tint: "
 msgstr ""
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:46
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:48
 msgid "Tint color for past frames"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:47
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:49
 msgid "Tint color for future frames"
 msgstr ""
 
-#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:55
+#: plugins/extensions/dockers/animation/kis_onion_skin_dialog.cpp:57
 #, fuzzy
 #| msgid "Number of tiles"
 msgid "Number of onion skins"
@@ -3532,24 +3610,47 @@ msgstr "Số miếng"
 msgid "Onion skin options"
 msgstr "&Bó buộc tỉ lệ"
 
-#: plugins/extensions/dockers/animation/timeline_docker.cpp:33
+#: plugins/extensions/dockers/animation/timeline_docker.cpp:58
 #, fuzzy
 #| msgid "Pixel width"
 msgid "Timeline"
 msgstr "Chiều rộng điểm ảnh"
 
-#: plugins/extensions/dockers/animation/timeline_docker.cpp:42
-#, fuzzy
-#| msgid "Distance: "
-msgid "Toggle onion skin"
-msgstr "Khoảng cách:"
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:368
+#, fuzzy, kde-format
+#| msgid "Layer name:"
+msgid "Insert %1 left"
+msgstr "Tên lớp:"
 
-#: plugins/extensions/dockers/animation/timeline_view.cpp:126
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:369
+#, fuzzy, kde-format
+#| msgid "Right:"
+msgid "Insert %1 right"
+msgstr "Phải:"
+
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:370
+#, fuzzy, kde-format
+#| msgid "Number of tiles"
+msgid "Clear %1 columns"
+msgstr "Số miếng"
+
+#: plugins/extensions/dockers/animation/timeline_ruler_header.cpp:371
+#, fuzzy, kde-format
+#| msgid "Number of tiles"
+msgid "Remove %1 columns"
+msgstr "Số miếng"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:59
 #, fuzzy
-#| msgid "Export Layer"
-msgctxt "(qtundo-format)"
-msgid "Move keyframes"
-msgstr "Xuất Lớp"
+#| msgid "Star"
+msgid "Start:"
+msgstr "Ngôi sao"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:76
+msgid "End:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (KColorButton, bnColor)
 #. i18n: ectx: property (text), widget (KColorButton, bnHighlightColor)
@@ -3568,13 +3669,18 @@ msgstr "Xuất Lớp"
 #. i18n: ectx: property (text), widget (QToolButton, m_bnFileName)
 #. i18n: ectx: property (text), widget (QToolButton, bnSwapFile)
 #. i18n: ectx: property (text), widget (QToolButton, bnBackgroundColor)
+#. i18n: ectx: property (text), widget (QToolButton, btnFirstFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnPreviousKeyFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnPreviousFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnPlay)
 #. i18n: ectx: property (text), widget (QToolButton, btnNextFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnNextKeyFrame)
+#. i18n: ectx: property (text), widget (QToolButton, btnLastFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnAddKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnAddDuplicateFrame)
 #. i18n: ectx: property (text), widget (QToolButton, btnDeleteKeyframe)
 #. i18n: ectx: property (text), widget (QToolButton, btnOnionSkinOptions)
+#. i18n: ectx: property (text), widget (QToolButton, btnLazyFrame)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectConfigurationFile)
 #. i18n: ectx: property (text), widget (QToolButton, m_bnSelectLut)
 #. i18n: ectx: property (text), widget (QToolButton, bnViewMode)
@@ -3592,13 +3698,18 @@ msgstr "Xuất Lớp"
 #. i18n: ectx: property (text), widget (QToolButton, bnSelectSaveLocation)
 #. i18n: ectx: property (text), widget (QToolButton, bnGetPreview)
 #. i18n: ectx: property (text), widget (QToolButton, bnFont)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:22
-#: plugins/extensions/dockers/animation/wdg_animation.ui:29
-#: plugins/extensions/dockers/animation/wdg_animation.ui:36
-#: plugins/extensions/dockers/animation/wdg_animation.ui:47
-#: plugins/extensions/dockers/animation/wdg_animation.ui:54
-#: plugins/extensions/dockers/animation/wdg_animation.ui:61
-#: plugins/extensions/dockers/animation/wdg_animation.ui:68
+#: plugins/extensions/dockers/animation/wdg_animation.ui:146
+#: plugins/extensions/dockers/animation/wdg_animation.ui:178
+#: plugins/extensions/dockers/animation/wdg_animation.ui:210
+#: plugins/extensions/dockers/animation/wdg_animation.ui:242
+#: plugins/extensions/dockers/animation/wdg_animation.ui:274
+#: plugins/extensions/dockers/animation/wdg_animation.ui:306
+#: plugins/extensions/dockers/animation/wdg_animation.ui:338
+#: plugins/extensions/dockers/animation/wdg_animation.ui:385
+#: plugins/extensions/dockers/animation/wdg_animation.ui:395
+#: plugins/extensions/dockers/animation/wdg_animation.ui:405
+#: plugins/extensions/dockers/animation/wdg_animation.ui:422
+#: plugins/extensions/dockers/animation/wdg_animation.ui:432
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:66
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:151
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:170
@@ -3634,37 +3745,20 @@ msgstr "Xuất Lớp"
 msgid "..."
 msgstr "..."
 
+#. i18n: ectx: property (text), widget (QLabel, lblPlaySpeed)
+#: plugins/extensions/dockers/animation/wdg_animation.ui:464
+#, fuzzy
+#| msgid "Speed"
+msgid "Play Speed:"
+msgstr "Tốc độ"
+
 #. i18n: ectx: property (text), widget (QLabel, lblFramerate)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:79
+#: plugins/extensions/dockers/animation/wdg_animation.ui:487
 #, fuzzy
 #| msgctxt "NAME OF TRANSLATORS"
 #| msgid "Your names"
-msgid "Framerate"
+msgid "Frame Rate:"
 msgstr "Nhóm Việt hóa KDE"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:93
-#, fuzzy
-msgid "From"
-msgstr "xanh nước biển"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:100
-msgid "To"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, lblVersion)
-#. i18n: ectx: property (text), widget (QLabel, lblSwapFileLocation)
-#. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#. i18n: ectx: property (text), widget (QLabel, lblInfo)
-#. i18n: ectx: property (text), widget (QLabel, lblSaveLocation)
-#: plugins/extensions/dockers/animation/wdg_animation.ui:122
-#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:342
-#: ui/forms/wdgimageproperties.ui:193 ui/forms/wdgperformancesettings.ui:200
-#: ui/wdgsplash.ui:343
-#, fuzzy
-msgid "TextLabel"
-msgstr "Chữ"
 
 #: plugins/extensions/dockers/artisticcolorselector/artisticcolorselector_dock.cpp:51
 #, fuzzy
@@ -6293,6 +6387,17 @@ msgstr ""
 #| msgid "Scale Layer"
 msgid "Save to:"
 msgstr "Phóng Lớp"
+
+#. i18n: ectx: property (text), widget (QLabel, lblVersion)
+#. i18n: ectx: property (text), widget (QLabel, lblSwapFileLocation)
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#. i18n: ectx: property (text), widget (QLabel, lblSaveLocation)
+#: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:342
+#: ui/forms/wdgimageproperties.ui:193 ui/forms/wdgperformancesettings.ui:200
+#: ui/wdgsplash.ui:343
+#, fuzzy
+msgid "TextLabel"
+msgstr "Chữ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #: plugins/extensions/resourcemanager/wdgdlgcreatebundle.ui:370
@@ -16499,7 +16604,7 @@ msgstr ""
 msgid "The %1 filter will convert your %2 data to 16-bit RGBA and vice versa. "
 msgstr "Bộ lọc %1 sẽ chuyển dữ liệu %2 của bạn sang 16-bit RGBA và ngược lại."
 
-#: ui/kis_filter_manager.cc:309
+#: ui/kis_filter_manager.cc:310
 #, fuzzy, kde-format
 msgid "Apply Filter Again: %1"
 msgstr "Dùng bộ lọc lần nữa: %1"
@@ -16613,44 +16718,44 @@ msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "Chuyển đổi lớp hiện tại từ"
 
-#: ui/kis_layer_manager.cc:612
+#: ui/kis_layer_manager.cc:615
 #, fuzzy
 msgid "New Filter Layer"
 msgstr "Tạo layer mới"
 
-#: ui/kis_layer_manager.cc:675
+#: ui/kis_layer_manager.cc:678
 msgid "Could not add layer to image."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: ui/kis_layer_manager.cc:761
+#: ui/kis_layer_manager.cc:764
 #, fuzzy
 msgctxt "@title:window"
 msgid "Flatten Image"
 msgstr "Làm phẳng ảnh"
 
-#: ui/kis_layer_manager.cc:762
+#: ui/kis_layer_manager.cc:765
 #, fuzzy
 msgid ""
 "The image contains hidden layers that will be lost. Do you want to flatten "
 "the image?"
 msgstr "Ảnh chứa lớp ẩn, chúng sẽ bị mất."
 
-#: ui/kis_layer_manager.cc:860
+#: ui/kis_layer_manager.cc:863
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "(qtundo-format)"
 msgid "Rasterize Layer"
 msgstr "Xoay Lớp"
 
-#: ui/kis_layer_manager.cc:896
+#: ui/kis_layer_manager.cc:899
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:899
+#: ui/kis_layer_manager.cc:902
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:950
+#: ui/kis_layer_manager.cc:953
 msgid "No file name specified"
 msgstr ""
 
@@ -16847,79 +16952,79 @@ msgstr "Từ màu sang độ trong suốt"
 msgid "Save Merged..."
 msgstr "&Sóng..."
 
-#: ui/kis_node_manager.cpp:528
+#: ui/kis_node_manager.cpp:538
 #, fuzzy
 #| msgid "&Layer Selection"
 msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "Chọn &Lớp"
 
-#: ui/kis_node_manager.cpp:783
+#: ui/kis_node_manager.cpp:793
 #, fuzzy
 #| msgid "Remove Layer"
 msgctxt "(qtundo-format)"
 msgid "Remove Last Layer"
 msgstr "Xóa Lớp"
 
-#: ui/kis_node_manager.cpp:797
+#: ui/kis_node_manager.cpp:807
 msgctxt "(qtundo-format)"
 msgid "Remove Multiple Layers and Masks"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:825
+#: ui/kis_node_manager.cpp:835
 #, fuzzy
 #| msgid "Vertical:"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "Dọc"
 
-#: ui/kis_node_manager.cpp:827
+#: ui/kis_node_manager.cpp:837
 #, fuzzy
 #| msgid "Crop Image"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "Cắt ảnh"
 
-#: ui/kis_node_manager.cpp:838
+#: ui/kis_node_manager.cpp:848
 #, fuzzy
 #| msgid "Crop Image"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "Cắt ảnh"
 
-#: ui/kis_node_manager.cpp:840
+#: ui/kis_node_manager.cpp:850
 #, fuzzy
 #| msgid "Crop Image"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "Cắt ảnh"
 
-#: ui/kis_node_manager.cpp:959
+#: ui/kis_node_manager.cpp:969
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Export \"%1\""
 msgstr "Xuất"
 
-#: ui/kis_node_manager.cpp:1033
+#: ui/kis_node_manager.cpp:1043
 msgctxt "(qtundo-format)"
 msgid "Split Alpha into a Mask"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1063
+#: ui/kis_node_manager.cpp:1073
 #, fuzzy, kde-format
 #| msgid "Layer Size"
 msgctxt "@title:window"
 msgid "Layer %1 is not editable"
 msgstr "Cỡ Lớp"
 
-#: ui/kis_node_manager.cpp:1064
+#: ui/kis_node_manager.cpp:1074
 #, kde-format
 msgid ""
 "Cannot write alpha channel of the parent layer \"%1\".\n"
 "The operation will be cancelled."
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1095
+#: ui/kis_node_manager.cpp:1105
 #, fuzzy
 #| msgid "Create Panorama Layer"
 msgctxt "(qtundo-format)"
@@ -17340,13 +17445,6 @@ msgstr "Không có phần chọn"
 #: ui/kis_statusbar.cc:317
 msgid "No profile"
 msgstr ""
-
-#: ui/kis_timeline_model.cpp:264
-#, fuzzy
-#| msgid "Layer name:"
-msgctxt "(qtundo-format)"
-msgid "Move Keyframe"
-msgstr "Tên lớp:"
 
 #: ui/kis_zoom_manager.cc:245
 #, fuzzy, kde-format
@@ -18394,7 +18492,7 @@ msgstr ""
 msgid "Failure loading layer %1 of type: %2."
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:770
+#: ui/kra/kis_kra_loader.cpp:773
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -18402,7 +18500,7 @@ msgid ""
 "><nl/>Expected path:<nl/>%2<nl/><nl/>Do you want to locate it manually?"
 msgstr ""
 
-#: ui/kra/kis_kra_loader.cpp:775
+#: ui/kra/kis_kra_loader.cpp:778
 msgctxt "@title:window"
 msgid "File not found"
 msgstr ""
@@ -20293,6 +20391,44 @@ msgid "Workspace %1"
 msgstr "Không gian màu"
 
 #, fuzzy
+#~ msgid "Move to previous frame"
+#~ msgstr "Bỏ chọn"
+
+#, fuzzy
+#~ msgid "Move to next frame"
+#~ msgstr "Bỏ chọn"
+
+#, fuzzy
+#~| msgid "Layer name:"
+#~ msgid "Add blank frame"
+#~ msgstr "Tên lớp:"
+
+#, fuzzy
+#~| msgid "Duplicate Segment"
+#~ msgid "Add duplicate frame"
+#~ msgstr "Lặp lại đoạn"
+
+#, fuzzy
+#~| msgid "Layer name:"
+#~ msgid "Delete keyframe"
+#~ msgstr "Tên lớp:"
+
+#, fuzzy
+#~| msgid "Distance: "
+#~ msgid "Toggle onion skin"
+#~ msgstr "Khoảng cách:"
+
+#, fuzzy
+#~| msgid "Export Layer"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Move keyframes"
+#~ msgstr "Xuất Lớp"
+
+#, fuzzy
+#~ msgid "From"
+#~ msgstr "xanh nước biển"
+
+#, fuzzy
 #~| msgid "(c) 1999-2007 The Krita team.\n"
 #~ msgid "(c) 2014 The Krita team.\n"
 #~ msgstr "Bản quyền 1999-2007, nhóm Krita.\n"
@@ -20930,11 +21066,6 @@ msgstr "Không gian màu"
 
 #, fuzzy
 #~| msgid "Number of tiles"
-#~ msgid "Number of columns"
-#~ msgstr "Số miếng"
-
-#, fuzzy
-#~| msgid "Number of tiles"
 #~ msgid "Number of rows"
 #~ msgstr "Số miếng"
 
@@ -21172,15 +21303,6 @@ msgstr "Không gian màu"
 #, fuzzy
 #~ msgid "Move animation layer down"
 #~ msgstr "Bỏ chọn"
-
-#, fuzzy
-#~| msgid "Remove Layer"
-#~ msgid "Remove Frame"
-#~ msgstr "Xóa Lớp"
-
-#, fuzzy
-#~ msgid "Previous Frame"
-#~ msgstr "&Trắng"
 
 #, fuzzy
 #~| msgid "Stop recording actions"
@@ -22835,9 +22957,6 @@ msgstr "Không gian màu"
 #~ msgid "Burning Paper"
 #~ msgstr "Giấy đang cháy"
 
-#~ msgid "Coffee"
-#~ msgstr "Cà phê"
-
 #~ msgid "Cold Steel"
 #~ msgstr "Thép lạnh"
 
@@ -23173,11 +23292,6 @@ msgstr "Không gian màu"
 #, fuzzy
 #~ msgid "Magnetic selection tool (SHIFT+E)"
 #~ msgstr "Chọn"
-
-#, fuzzy
-#~| msgid "Star"
-#~ msgid "Start"
-#~ msgstr "Ngôi sao"
 
 #~ msgid "KOffice image manipulation application"
 #~ msgstr "Trình xử lý ảnh của KOffice"

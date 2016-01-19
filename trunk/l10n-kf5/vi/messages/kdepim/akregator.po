@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-18 09:25+0000\n"
+"POT-Creation-Date: 2016-01-19 09:02+0000\n"
 "PO-Revision-Date: 2012-07-09 22:08+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -720,7 +720,7 @@ msgstr ""
 msgid "Metakit"
 msgstr "Metakit"
 
-#: src/aboutdata.cpp:35 src/articleviewer-ng/articleviewerng.cpp:122
+#: src/aboutdata.cpp:35 src/articleviewer-ng/articleviewerng.cpp:152
 #: src/trayicon.cpp:58 src/trayicon.cpp:59 src/trayicon.cpp:70
 msgid "Akregator"
 msgstr "Akregator"
@@ -1080,22 +1080,30 @@ msgstr "Đóng thẻ"
 msgid "Activate Tab %1"
 msgstr ""
 
-#: src/actions/actionmanagerimpl.cpp:610
+#: src/actions/actionmanagerimpl.cpp:598
+msgid "&Save Link As..."
+msgstr "&Lưu liên kết dạng..."
+
+#: src/actions/actionmanagerimpl.cpp:603
+msgid "Copy &Link Address"
+msgstr "Sao chép địa chỉ &liên kết"
+
+#: src/actions/actionmanagerimpl.cpp:618
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr "Tiến"
 
-#: src/actions/actionmanagerimpl.cpp:617
+#: src/actions/actionmanagerimpl.cpp:625
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr "Lùi"
 
-#: src/actions/actionmanagerimpl.cpp:626
+#: src/actions/actionmanagerimpl.cpp:634
 msgctxt "Reload current page"
 msgid "Reload"
 msgstr "Tải lại"
 
-#: src/actions/actionmanagerimpl.cpp:631
+#: src/actions/actionmanagerimpl.cpp:639
 msgid "Stop"
 msgstr "Dừng"
 
@@ -1346,35 +1354,27 @@ msgctxt "Articlelist's column header"
 msgid "Content"
 msgstr "Nội dung"
 
-#: src/articleviewer-ng/articleviewerng.cpp:123
+#: src/articleviewer-ng/articleviewerng.cpp:153
 #, fuzzy
 #| msgid "A KDE news feed reader."
 msgid "Akregator is a KDE news feed reader."
 msgstr "Một trình đọc tin tức của KDE."
 
-#: src/articleviewer-ng/articleviewerng.cpp:246
+#: src/articleviewer-ng/articleviewerng.cpp:284
 msgid "Disable"
 msgstr "Tắt"
 
-#: src/articleviewer-ng/articleviewerng.cpp:248
+#: src/articleviewer-ng/articleviewerng.cpp:286
 msgid "Keep Enabled"
 msgstr "Giữ bật"
 
-#: src/articleviewer-ng/articleviewerng.cpp:249
+#: src/articleviewer-ng/articleviewerng.cpp:287
 msgid "Are you sure you want to disable this introduction page?"
 msgstr "Bạn có chắc muốn tắt trang giới thiệu này?"
 
-#: src/articleviewer-ng/articleviewerng.cpp:250
+#: src/articleviewer-ng/articleviewerng.cpp:288
 msgid "Disable Introduction Page"
 msgstr "Tắt trang giới thiệu"
-
-#: src/articleviewerwidget.cpp:95
-msgid "Copy &Link Address"
-msgstr "Sao chép địa chỉ &liên kết"
-
-#: src/articleviewerwidget.cpp:99
-msgid "&Save Link As..."
-msgstr "&Lưu liên kết dạng..."
 
 #: src/command/createfoldercommand.cpp:66
 msgid "Add Folder"
@@ -1605,8 +1605,9 @@ msgid_plural " (%1 unread articles)"
 msgstr[0] " (%1 bài viết chưa đọc)"
 
 #: src/formatter/grantleeviewformatter.cpp:85
-#, kde-format
-msgid "<b>Description:</b> %1<br /><br />"
+#, fuzzy, kde-format
+#| msgid "<b>Description:</b> %1<br /><br />"
+msgid "<b>Description:</b> %1<br />"
 msgstr "<b>Mô tả:</b> %1<br /><br />"
 
 #: src/formatter/grantleeviewformatter.cpp:94
@@ -1687,39 +1688,39 @@ msgstr "Bạn có thể xem nhiều bài viết trong các thẻ khác nhau."
 msgid "Articles list."
 msgstr "Danh sách bài viết."
 
-#: src/mainwidget.cpp:245 src/mainwidget.cpp:625
+#: src/mainwidget.cpp:240 src/mainwidget.cpp:624
 msgid "Articles"
 msgstr "Bài viết"
 
-#: src/mainwidget.cpp:271
+#: src/mainwidget.cpp:268
 msgid "About"
 msgstr "Giới thiệu"
 
-#: src/mainwidget.cpp:798 src/mainwidget.cpp:807 src/mainwidget.cpp:1201
+#: src/mainwidget.cpp:797 src/mainwidget.cpp:806 src/mainwidget.cpp:1200
 msgid "Networking is not available."
 msgstr "Mạng không sẵn sàng."
 
-#: src/mainwidget.cpp:815
+#: src/mainwidget.cpp:814
 msgid "Fetching Feeds..."
 msgstr "Đang lấy tin..."
 
-#: src/mainwidget.cpp:1012
+#: src/mainwidget.cpp:1011
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>Bạn có chắc muốn xoá bài viết <b>%1</b>?</qt>"
 
-#: src/mainwidget.cpp:1015
+#: src/mainwidget.cpp:1014
 #, kde-format
 msgid "<qt>Are you sure you want to delete the selected article?</qt>"
 msgid_plural ""
 "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr[0] "<qt>Bạn có chắc muốn xoá %1 bài viết đã chọn?</qt>"
 
-#: src/mainwidget.cpp:1019 src/urlhandler/urlhandler.cpp:86
+#: src/mainwidget.cpp:1018 src/urlhandler/urlhandler.cpp:117
 msgid "Delete Article"
 msgstr "Xoá bài viết"
 
-#: src/mainwidget.cpp:1198
+#: src/mainwidget.cpp:1197
 msgid "Networking is available now."
 msgstr "Mạng hiện sẵn sàng."
 
@@ -2028,43 +2029,55 @@ msgstr "Tải &toàn bộ trang web khi đọc bài viết"
 msgid "Mar&k articles as read when they arrive"
 msgstr "Đánh dấu đã đọc bài viết &khi chúng tới"
 
-#: src/urlhandler/urlhandler.cpp:48
+#: src/urlhandler/urlhandler.cpp:52
 #, fuzzy
 #| msgid "Disable Introduction Page"
 msgid "Disable Introduction"
 msgstr "Tắt trang giới thiệu"
 
-#: src/urlhandler/urlhandler.cpp:88
+#: src/urlhandler/urlhandler.cpp:76
+#, fuzzy
+#| msgid "Copy Link Address"
+msgid "&Open in Address Book"
+msgstr "Sao chép địa chỉ liên kết"
+
+#: src/urlhandler/urlhandler.cpp:77
+#, fuzzy
+#| msgid "Copy Link Address"
+msgid "&Copy Email Address"
+msgstr "Sao chép địa chỉ liên kết"
+
+#: src/urlhandler/urlhandler.cpp:119
 #, fuzzy
 #| msgid "Ma&rk All Feeds as Read"
 msgid "Mark Article as Read"
 msgstr "Đánh &dấu đã đọc tất cả nguồn tin"
 
-#: src/urlhandler/urlhandler.cpp:90
+#: src/urlhandler/urlhandler.cpp:121
 #, fuzzy
 #| msgid "Mark selected article as unread"
 msgid "Mark Article as Unread"
 msgstr "Đánh dấu chưa đọc bài viết được chọn"
 
-#: src/urlhandler/urlhandler.cpp:92
+#: src/urlhandler/urlhandler.cpp:123
 #, fuzzy
 #| msgid "&Mark as Important"
 msgid "Mark Article as Important"
 msgstr "Đánh dấu &quan trọng"
 
-#: src/urlhandler/urlhandler.cpp:94
+#: src/urlhandler/urlhandler.cpp:125
 #, fuzzy
 #| msgid "Share Article"
 msgid "Send Url Article"
 msgstr "Chia sẻ bài viết"
 
-#: src/urlhandler/urlhandler.cpp:96
+#: src/urlhandler/urlhandler.cpp:127
 #, fuzzy
 #| msgid "Open in External Browser"
 msgid "Open In External Browser"
 msgstr "Mở trong trình duyệt ngoài"
 
-#: src/urlhandler/urlhandler.cpp:98
+#: src/urlhandler/urlhandler.cpp:129
 msgid "Share"
 msgstr ""
 

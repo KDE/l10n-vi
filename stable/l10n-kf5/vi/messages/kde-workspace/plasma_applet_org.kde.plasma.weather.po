@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-02 07:46+0000\n"
+"POT-Creation-Date: 2016-03-15 13:12+0000\n"
 "PO-Revision-Date: 2012-08-14 09:26+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -18,10 +18,42 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 
 #: package/contents/config/config.qml:24
-msgid "General"
+msgid "Weather Station"
 msgstr ""
 
-#: package/contents/ui/configGeneral.qml:84 plugin/locationlistmodel.cpp:152
+#: package/contents/config/config.qml:29
+msgid "Units"
+msgstr ""
+
+#: package/contents/ui/configUnits.qml:67
+msgid "Temperature:"
+msgstr ""
+
+#: package/contents/ui/configUnits.qml:84
+#, fuzzy
+#| msgctxt "pressure, unit"
+#| msgid "Pressure: %1 %2"
+msgid "Pressure:"
+msgstr "Áp suất: %1 %2"
+
+#: package/contents/ui/configUnits.qml:101
+msgid "Wind speed:"
+msgstr ""
+
+#: package/contents/ui/configUnits.qml:118
+#, fuzzy
+#| msgctxt "visibility from distance"
+#| msgid "Visibility: %1"
+msgid "Visibility:"
+msgstr "Tầm nhìn: %1"
+
+#: package/contents/ui/configWeatherStation.qml:57
+#, kde-format
+msgid "No weather stations found for '%1'"
+msgstr ""
+
+#: package/contents/ui/configWeatherStation.qml:69
+#: plugin/locationlistmodel.cpp:80
 #, fuzzy, kde-format
 #| msgctxt "certain weather condition, probability percentage"
 #| msgid "%1 (%2%)"
@@ -29,51 +61,21 @@ msgctxt "A weather station location and the weather service it comes from"
 msgid "%1 (%2)"
 msgstr "%1 (%2%)"
 
-#: package/contents/ui/configGeneral.qml:106
-msgid "Weather Station"
-msgstr ""
-
-#: package/contents/ui/configGeneral.qml:118
+#: package/contents/ui/configWeatherStation.qml:90
 msgid "Location:"
 msgstr ""
 
-#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configWeatherStation.qml:128
 msgid "Search"
 msgstr ""
 
-#: package/contents/ui/configGeneral.qml:156
+#: package/contents/ui/configWeatherStation.qml:167
 msgid "Update every:"
 msgstr ""
 
-#: package/contents/ui/configGeneral.qml:163
+#: package/contents/ui/configWeatherStation.qml:174
 msgid " min"
 msgstr ""
-
-#: package/contents/ui/configGeneral.qml:173
-msgid "Units"
-msgstr ""
-
-#: package/contents/ui/configGeneral.qml:184
-msgid "Temperature:"
-msgstr ""
-
-#: package/contents/ui/configGeneral.qml:200
-#, fuzzy
-#| msgctxt "pressure, unit"
-#| msgid "Pressure: %1 %2"
-msgid "Pressure:"
-msgstr "Áp suất: %1 %2"
-
-#: package/contents/ui/configGeneral.qml:216
-msgid "Wind speed:"
-msgstr ""
-
-#: package/contents/ui/configGeneral.qml:232
-#, fuzzy
-#| msgctxt "visibility from distance"
-#| msgid "Visibility: %1"
-msgid "Visibility:"
-msgstr "Tầm nhìn: %1"
 
 #: package/contents/ui/main.qml:81
 #, fuzzy
@@ -98,11 +100,6 @@ msgstr "Cảnh báo đã phát:"
 msgctxt "weather watches"
 msgid "Watches Issued:"
 msgstr "Theo dõi:"
-
-#: plugin/locationlistmodel.cpp:165
-#, kde-format
-msgid "No weather stations found for '%1'"
-msgstr ""
 
 #: plugin/plugin.cpp:34
 msgid "Celsius °C"
@@ -171,6 +168,13 @@ msgstr "°"
 msgctxt "temperature, unit"
 msgid "%1%2"
 msgstr "%1%2"
+
+#: weatherapplet.cpp:99
+#, fuzzy
+#| msgctxt "Not available"
+#| msgid "N/A"
+msgid "N/A"
+msgstr "N/A"
 
 #: weatherapplet.cpp:148
 #, kde-format

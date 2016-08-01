@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-25 07:36+0000\n"
+"POT-Creation-Date: 2016-08-01 07:34+0000\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -4346,12 +4346,12 @@ msgid "Disk cache &size:"
 msgstr "Kích cỡ Bộ nhớ tạm đĩ&a:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, sbMaxCacheSize)
-#: kcms/kio/cache.ui:101
+#: kcms/kio/cache.ui:104
 msgid " KiB"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, clearCacheButton)
-#: kcms/kio/cache.ui:111
+#: kcms/kio/cache.ui:114
 msgid "C&lear Cache"
 msgstr "&Xoá bộ nhớ tạm"
 
@@ -4972,12 +4972,14 @@ msgstr ""
 "FTP cũ có lẽ không hỗ trợ FTP bị động."
 
 #. i18n: ectx: label, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:16
+#. i18n: ectx: label, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:16 kcms/kio/kioslave.kcfg:34
 msgid "Mark partially uploaded files"
 msgstr "Đánh dấu tập tin đã tải lên bộ phận"
 
 #. i18n: ectx: whatsthis, entry (MarkPartial), group (DesktopIcons)
-#: kcms/kio/kio_ftprc.kcfg:17
+#. i18n: ectx: whatsthis, entry (MarkPartial), group (Global Options)
+#: kcms/kio/kio_ftprc.kcfg:17 kcms/kio/kioslave.kcfg:35
 msgid ""
 "While a file is being uploaded its extension is \".part\". When fully "
 "uploaded it is renamed to its real name."
@@ -5525,14 +5527,40 @@ msgid "&Server response:"
 msgstr "Đáp ứng máy &phục vụ :"
 
 #: kcms/kio/netpref.cpp:67
+#, fuzzy
+#| msgid "Options"
+msgid "Global Options"
+msgstr "Tuỳ chọn"
+
+#: kcms/kio/netpref.cpp:71 kcms/kio/netpref.cpp:93
+msgid "Mark &partially uploaded files"
+msgstr "Nhãn tập tin đã tải lên bộ &phận"
+
+#: kcms/kio/netpref.cpp:72
+#, fuzzy
+#| msgid ""
+#| "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
+#| "partially uploaded files will have a \".part\" extension. This extension "
+#| "will be removed once the transfer is complete.</p>"
+msgid ""
+"<p>Marks partially uploaded files through SMB, SFTP and other protocols.</"
+"p><p>When this option is enabled, partially uploaded files will have a \"."
+"part\" extension. This extension will be removed once the transfer is "
+"complete.</p>"
+msgstr ""
+"<p>Nhãn các tập tin đã tải lên FTP bộ phận.</p><p>Khi tùy chọn này đã bật, "
+"các tập tin đã tải lên bộ phận có phần mở rộng tập tin « .part » (phần). Một "
+"khi truyền xong, phần mở rộng này được gỡ bỏ.</p>"
+
+#: kcms/kio/netpref.cpp:82
 msgid "FTP Options"
 msgstr "Tùy chọn FTP"
 
-#: kcms/kio/netpref.cpp:71
+#: kcms/kio/netpref.cpp:86
 msgid "Enable passive &mode (PASV)"
 msgstr "Bật chế độ bị động (PASV)"
 
-#: kcms/kio/netpref.cpp:72
+#: kcms/kio/netpref.cpp:87
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
 "behind firewalls."
@@ -5540,11 +5568,7 @@ msgstr ""
 "HIệu lực chế độ « bị động » của giao thức truyền tập tin FTP. Cần thiết để "
 "cho FTP khả năng hoạt động khi nằm sau bức tường lửa."
 
-#: kcms/kio/netpref.cpp:78
-msgid "Mark &partially uploaded files"
-msgstr "Nhãn tập tin đã tải lên bộ &phận"
-
-#: kcms/kio/netpref.cpp:79
+#: kcms/kio/netpref.cpp:94
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
 "partially uploaded files will have a \".part\" extension. This extension "
@@ -5554,7 +5578,7 @@ msgstr ""
 "các tập tin đã tải lên bộ phận có phần mở rộng tập tin « .part » (phần). Một "
 "khi truyền xong, phần mở rộng này được gỡ bỏ.</p>"
 
-#: kcms/kio/netpref.cpp:147
+#: kcms/kio/netpref.cpp:168
 msgid ""
 "<h1>Network Preferences</h1>Here you can define the behavior of KDE programs "
 "when using Internet and network connections. If you experience timeouts or "

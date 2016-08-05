@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-23 08:06+0000\n"
+"POT-Creation-Date: 2016-08-05 07:14+0000\n"
 "PO-Revision-Date: 2007-06-23 20:04+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -51,27 +51,34 @@ msgstr "&Bỏ giản đồ"
 msgid "All Components"
 msgstr "&Bỏ giản đồ"
 
-#: kglobalshortcutseditor.cpp:168
+#: kglobalshortcutseditor.cpp:239
 #, fuzzy
 #| msgid "Current Scheme"
 msgid "Import Scheme..."
 msgstr "Giản đồ hiện có"
 
-#: kglobalshortcutseditor.cpp:169
+#: kglobalshortcutseditor.cpp:240
 #, fuzzy
 #| msgid "Current Scheme"
 msgid "Export Scheme..."
 msgstr "Giản đồ hiện có"
 
-#: kglobalshortcutseditor.cpp:170
+#: kglobalshortcutseditor.cpp:241
 msgid "Set All Shortcuts to None"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:171
-msgid "Remove Component"
+#: kglobalshortcutseditor.cpp:249
+#, fuzzy
+#| msgid "App&lication Shortcuts"
+msgid "Applications"
+msgstr "Phím tắt ứng dụng"
+
+#: kglobalshortcutseditor.cpp:300
+#, kde-format
+msgid "Launch %1"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:180
+#: kglobalshortcutseditor.cpp:337
 #, kde-format
 msgid ""
 "Component '%1' is currently active. Only global shortcuts currently not "
@@ -80,13 +87,13 @@ msgid ""
 "they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:182 kglobalshortcutseditor.cpp:192
+#: kglobalshortcutseditor.cpp:339 kglobalshortcutseditor.cpp:349
 #, fuzzy
 #| msgid "&Remove Scheme"
 msgid "Remove component"
 msgstr "&Bỏ giản đồ"
 
-#: kglobalshortcutseditor.cpp:188
+#: kglobalshortcutseditor.cpp:345
 #, kde-format
 msgid ""
 "Are you sure you want to remove the registered shortcuts for component '%1'? "
@@ -94,7 +101,19 @@ msgid ""
 "settings when they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:386
+#: kglobalshortcutseditor.cpp:452
+#, fuzzy
+#| msgid "App&lication Shortcuts"
+msgid "Application Launchers"
+msgstr "Phím tắt ứng dụng"
+
+#: kglobalshortcutseditor.cpp:455
+#, fuzzy
+#| msgid "Shortcut"
+msgid "Other Shortcuts"
+msgstr "Phím tắt"
+
+#: kglobalshortcutseditor.cpp:560
 #, fuzzy
 #| msgid ""
 #| "Your current changes will be lost if you load another scheme before "
@@ -106,42 +125,65 @@ msgstr ""
 "Các thay đổi hiện thời sẽ bị mất nếu bạn tải giản đồ khác trước khi lưu điều "
 "này."
 
-#: kglobalshortcutseditor.cpp:387
+#: kglobalshortcutseditor.cpp:561
 #, fuzzy
 #| msgid "Shortcut Schemes"
 msgid "Load Shortcut Scheme"
 msgstr "Lược đồ phím tắt"
 
-#: kglobalshortcutseditor.cpp:388
+#: kglobalshortcutseditor.cpp:562
 msgid "Load"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:401
+#: kglobalshortcutseditor.cpp:575
 #, kde-format
 msgid "This file (%1) does not exist. You can only select local files."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:429 kglobalshortcutseditor.cpp:452
+#: kglobalshortcutseditor.cpp:603 kglobalshortcutseditor.cpp:626
 #, kde-format
 msgid ""
 "Message: %1\n"
 "Error: %2"
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:434 kglobalshortcutseditor.cpp:457
+#: kglobalshortcutseditor.cpp:608 kglobalshortcutseditor.cpp:631
 msgid "Failed to contact the KDE global shortcuts daemon\n"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: kglobalshortcutseditor.ui:19
+#. i18n: ectx: property (text), widget (QLabel, componentLabel)
+#: kglobalshortcutseditor.ui:25
 #, fuzzy
 #| msgid "&Remove Scheme"
-msgid "KDE component:"
+msgid "Component:"
+msgstr "&Bỏ giản đồ"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, addButton)
+#: kglobalshortcutseditor.ui:62
+msgid "Add a new shortcut to an Application..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QToolButton, addButton)
+#. i18n: ectx: property (text), widget (QToolButton, removeButton)
+#: kglobalshortcutseditor.ui:65 kglobalshortcutseditor.ui:75
+msgid "..."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, removeButton)
+#: kglobalshortcutseditor.ui:72
+#, fuzzy
+#| msgid "&Remove Scheme"
+msgid "Remove the selected component"
 msgstr "&Bỏ giản đồ"
 
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
-#: kglobalshortcutseditor.ui:36
+#: kglobalshortcutseditor.ui:95
 msgid "File"
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, SelectApplicationDialog)
+#: select_application.ui:14
+msgid "Select Application"
 msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, SelectSchemeDialog)
@@ -179,9 +221,9 @@ msgid "&Path:"
 msgstr ""
 
 #, fuzzy
-#~| msgid "Shortcut"
-#~ msgid "Shortcuts:"
-#~ msgstr "Phím tắt"
+#~| msgid "&Remove Scheme"
+#~ msgid "KDE component:"
+#~ msgstr "&Bỏ giản đồ"
 
 #, fuzzy
 #~| msgid "&Key Scheme"
@@ -336,9 +378,6 @@ msgstr ""
 
 #~ msgid "Shortcut Se&quences"
 #~ msgstr "Dã&y phím tắt"
-
-#~ msgid "App&lication Shortcuts"
-#~ msgstr "Phím tắt ứng dụng"
 
 #~ msgid "User-Defined Scheme"
 #~ msgstr "Giản đồ tự định nghĩa"

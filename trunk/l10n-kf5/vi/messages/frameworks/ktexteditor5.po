@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-07 06:59+0000\n"
+"POT-Creation-Date: 2016-09-08 07:30+0000\n"
 "PO-Revision-Date: 2012-01-09 21:52+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: American English <kde-i18n-vi@kde.org>\n"
@@ -251,29 +251,29 @@ msgid "&Code Folding"
 msgstr "&Gấp lại mã"
 
 #. i18n: ectx: Menu (tools)
-#: data/katepart5ui.rc:102
+#: data/katepart5ui.rc:94
 msgid "&Tools"
 msgstr "&Công cụ"
 
 #. i18n: ectx: Menu (wordcompletion)
-#: data/katepart5ui.rc:115
+#: data/katepart5ui.rc:107
 #, fuzzy
 #| msgid "Word Completion Plugin"
 msgid "Word Completion"
 msgstr "Bổ sung hoàn chỉnh từ"
 
 #. i18n: ectx: Menu (spelling)
-#: data/katepart5ui.rc:121 spellcheck/spellingmenu.cpp:97
+#: data/katepart5ui.rc:113 spellcheck/spellingmenu.cpp:97
 msgid "Spelling"
 msgstr ""
 
 #. i18n: ectx: Menu (settings)
-#: data/katepart5ui.rc:144
+#: data/katepart5ui.rc:136
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: data/katepart5ui.rc:166
+#: data/katepart5ui.rc:158
 msgid "Main Toolbar"
 msgstr "Thanh công cụ chính"
 
@@ -1351,62 +1351,49 @@ msgstr "Tới"
 msgid "Dictionary:"
 msgstr "Thực hiện"
 
-#: dialogs/katedialogs.cpp:1339
-msgid "File Was Deleted on Disk"
-msgstr "Tập tin bị xoá khỏi đĩa"
+#: dialogs/katedialogs.cpp:1345
+msgid "View &Difference"
+msgstr ""
 
-#: dialogs/katedialogs.cpp:1340
-msgid "&Save File As..."
+#: dialogs/katedialogs.cpp:1346
+msgid "Shows a diff of the changes"
+msgstr ""
+
+#: dialogs/katedialogs.cpp:1351
+#, fuzzy
+#| msgid "Reloa&d"
+msgid "&Reload"
+msgstr "Tả&i lại"
+
+#: dialogs/katedialogs.cpp:1353
+#, fuzzy
+#| msgid ""
+#| "Reload the file from disk. If you have unsaved changes, they will be lost."
+msgid "Reload the file from disk. Unsaved changes will be lost."
+msgstr "Tải lại tập tin từ đĩa. Thay đổi chưa lưu nào sẽ bị mất."
+
+#: dialogs/katedialogs.cpp:1357
+#, fuzzy
+#| msgid "&Save File As..."
+msgid "&Save As..."
 msgstr "&Lưu tập tin dạng..."
 
-#: dialogs/katedialogs.cpp:1342
+#: dialogs/katedialogs.cpp:1359
 msgid "Lets you select a location and save the file again."
 msgstr "Cho bạn chọn một địa điểm khác rồi lưu lại tập tin."
 
-#: dialogs/katedialogs.cpp:1344
-msgid "File Changed on Disk"
-msgstr "Tập tin đã thay đổi trên đĩa"
+#. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
+#: dialogs/katedialogs.cpp:1364 spellcheck/spellcheckbar.ui:143
+msgid "&Ignore"
+msgstr "&Bỏ qua"
 
-#: dialogs/katedialogs.cpp:1345 document/katedocument.cpp:4197
-msgid "&Reload File"
-msgstr "Tải &lại tập tin"
-
-#: dialogs/katedialogs.cpp:1347
-msgid ""
-"Reload the file from disk. If you have unsaved changes, they will be lost."
-msgstr "Tải lại tập tin từ đĩa. Thay đổi chưa lưu nào sẽ bị mất."
-
-#: dialogs/katedialogs.cpp:1361 document/katedocument.cpp:4195
-msgid "What do you want to do?"
-msgstr "Bạn muốn làm gì?"
-
-#: dialogs/katedialogs.cpp:1372 document/katedocument.cpp:4198
-msgid "&Ignore Changes"
-msgstr "&Bỏ qua các thay đổi"
-
-#: dialogs/katedialogs.cpp:1373
-msgid "Ignore the changes. You will not be prompted again."
+#: dialogs/katedialogs.cpp:1365
+#, fuzzy
+#| msgid "Ignore the changes. You will not be prompted again."
+msgid "Ignores the changes on disk without any action."
 msgstr "Bỏ qua các thay đổi. Bạn sẽ không được nhắc lại."
 
-#: dialogs/katedialogs.cpp:1379
-msgid ""
-"Do nothing. Next time you focus the file, or try to save it or close it, you "
-"will be prompted again."
-msgstr ""
-"Không làm gì. Lần kế tiếp bạn để tiêu điểm trên tập tin này, hoặc cố lưu "
-"hoặc đóng nó, bạn sẽ được nhắc lại."
-
-#: dialogs/katedialogs.cpp:1388
-msgid "Overwrite the disk file with the editor content."
-msgstr "Ghi đè lên tập tin trên đĩa bằng nội dung của trình soạn thảo."
-
-#: dialogs/katedialogs.cpp:1399
-#, fuzzy
-#| msgid "&Word Wrap Document"
-msgid "Close the document."
-msgstr "&Ngắt từ trong tài liệu"
-
-#: dialogs/katedialogs.cpp:1468 swapfile/kateswapdiffcreator.cpp:137
+#: dialogs/katedialogs.cpp:1432 swapfile/kateswapdiffcreator.cpp:137
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1414,57 +1401,17 @@ msgstr ""
 "Lệnh khác biệt (diff) bị lỗi. Hãy kiểm tra xem công cụ diff(1) đã được cài "
 "đặt cho đúng, và nó có trong đường dẫn thực hiện (PATH) của bạn."
 
-#: dialogs/katedialogs.cpp:1470 swapfile/kateswapdiffcreator.cpp:139
+#: dialogs/katedialogs.cpp:1434 swapfile/kateswapdiffcreator.cpp:139
 msgid "Error Creating Diff"
 msgstr "Gặp lỗi khi tạo khác biệt"
 
-#: dialogs/katedialogs.cpp:1479 swapfile/kateswapdiffcreator.cpp:147
+#: dialogs/katedialogs.cpp:1442 swapfile/kateswapdiffcreator.cpp:147
 msgid "The files are identical."
 msgstr ""
 
-#: dialogs/katedialogs.cpp:1480 dialogs/katedialogs.cpp:1484
-#: swapfile/kateswapdiffcreator.cpp:148
+#: dialogs/katedialogs.cpp:1443 swapfile/kateswapdiffcreator.cpp:148
 msgid "Diff Output"
 msgstr "Xuất khác biệt"
-
-#: dialogs/katedialogs.cpp:1483
-#, fuzzy
-#| msgid "Besides white space changes, the files are identical."
-msgid "Ignoring amount of white space changed, the files are identical."
-msgstr "Ngoài thay đổi dấu cách ra, hai tập tin trùng với nhau."
-
-#: dialogs/katedialogs.cpp:1508
-msgid ""
-"Ignoring means that you will not be warned again (unless the disk file "
-"changes once more): if you save the document, you will overwrite the file on "
-"disk; if you do not save then the disk file (if present) is what you have."
-msgstr ""
-"Bỏ qua có nghĩa là bạn sẽ không được cảnh báo lại (trừ khi tập tin trên đĩa "
-"thay đổi lần nữa). Nếu bạn lưu tài liệu này, bạn sẽ ghi đè lên tập tin trên "
-"đĩa; còn nếu bạn không lưu, tập tin trên đĩa (nếu có) là dữ liệu hiện thời."
-
-#: dialogs/katedialogs.cpp:1512
-msgid "You Are on Your Own"
-msgstr "Vậy bạn làm một mình"
-
-#. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: dialogs/modonhdwidget.ui:23
-#, fuzzy
-#| msgid "&Ignore Changes"
-msgid "Ignore white space changes"
-msgstr "&Bỏ qua các thay đổi"
-
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: dialogs/modonhdwidget.ui:30
-msgid ""
-"Calculates the difference between the editor contents and the disk file "
-"using diff(1)."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: dialogs/modonhdwidget.ui:33
-msgid "&View Difference"
-msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbCursorMovement)
 #: dialogs/navigationconfigwidget.ui:12
@@ -1856,14 +1803,14 @@ msgid "Append newline at end of file on save"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: dialogs/textareaappearanceconfigwidget.ui:9 view/kateview.cpp:692
+#: dialogs/textareaappearanceconfigwidget.ui:9 view/kateview.cpp:693
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
 msgstr "Nếu bật, các dòng văn bản sẽ bị ngắt tại viền khung xem trên màn hình."
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: dialogs/textareaappearanceconfigwidget.ui:12 view/kateview.cpp:689
+#: dialogs/textareaappearanceconfigwidget.ui:12 view/kateview.cpp:690
 msgid "&Dynamic Word Wrap"
 msgstr "Ngắt từ &động"
 
@@ -2004,7 +1951,7 @@ msgstr "Kiểu tập tin mới"
 msgid "The file %1 does not exist."
 msgstr ""
 
-#: document/katedocument.cpp:2146
+#: document/katedocument.cpp:2149
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 could not be loaded, as it was not possible to read from it.\n"
@@ -2018,20 +1965,20 @@ msgstr ""
 "\n"
 "Hãy kiểm tra xem bạn có quyền đọc tập tin này."
 
-#: document/katedocument.cpp:2149
+#: document/katedocument.cpp:2152
 msgctxt "translators: you can also translate 'Try Again' with 'Reload'"
 msgid "Try Again"
 msgstr ""
 
-#: document/katedocument.cpp:2152 document/katedocument.cpp:5934
+#: document/katedocument.cpp:2155 document/katedocument.cpp:5926
 msgid "&Close"
 msgstr ""
 
-#: document/katedocument.cpp:2153 document/katedocument.cpp:5935
+#: document/katedocument.cpp:2156 document/katedocument.cpp:5927
 msgid "Close message"
 msgstr ""
 
-#: document/katedocument.cpp:2164
+#: document/katedocument.cpp:2167
 #, kde-format
 msgid ""
 "The file %1 could not be loaded, as it was not possible to read from it.\n"
@@ -2042,7 +1989,7 @@ msgstr ""
 "\n"
 "Hãy kiểm tra xem bạn có quyền đọc tập tin này."
 
-#: document/katedocument.cpp:2280
+#: document/katedocument.cpp:2284
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 was opened with UTF-8 encoding but contained invalid "
@@ -2060,7 +2007,7 @@ msgstr ""
 "nó. Hoặc mở lại tập tin này với bảng mã đúng được chọn, hoặc hiệu lực chế độ "
 "đọc-ghi lần nửa trong trình đơn để có khả năng hiệu chỉnh nó."
 
-#: document/katedocument.cpp:2290
+#: document/katedocument.cpp:2294
 #, fuzzy, kde-format
 #| msgid ""
 #| "The file %1 was opened with UTF-8 encoding but contained invalid "
@@ -2078,7 +2025,7 @@ msgstr ""
 "nó. Hoặc mở lại tập tin này với bảng mã đúng được chọn, hoặc hiệu lực chế độ "
 "đọc-ghi lần nửa trong trình đơn để có khả năng hiệu chỉnh nó."
 
-#: document/katedocument.cpp:2301
+#: document/katedocument.cpp:2305
 #, kde-format
 msgid ""
 "The file %1 was opened and contained lines longer than the configured Line "
@@ -2087,15 +2034,15 @@ msgid ""
 "only mode, as saving will modify its content."
 msgstr ""
 
-#: document/katedocument.cpp:2306
+#: document/katedocument.cpp:2310
 msgid "Temporarily raise limit and reload file"
 msgstr ""
 
-#: document/katedocument.cpp:2309
+#: document/katedocument.cpp:2313
 msgid "Close"
 msgstr ""
 
-#: document/katedocument.cpp:2315
+#: document/katedocument.cpp:2319
 #, kde-format
 msgid ""
 "The file %1 was opened and contained lines longer than the configured Line "
@@ -2104,7 +2051,7 @@ msgid ""
 "only mode, as saving will modify its content."
 msgstr ""
 
-#: document/katedocument.cpp:2335
+#: document/katedocument.cpp:2342
 msgid ""
 "Do you really want to save this unmodified file? You could overwrite changed "
 "data in the file on disk."
@@ -2112,16 +2059,16 @@ msgstr ""
 "Bạn thật sự muốn lưu tập tin chưa được sửa đổi này? Việc này có thể ghi đè "
 "lên dữ liệu đã thay đổi trong tập tin trên đĩa."
 
-#: document/katedocument.cpp:2335
+#: document/katedocument.cpp:2342
 msgid "Trying to Save Unmodified File"
 msgstr "Đang cố lưu tập tin chưa được sửa đổi"
 
-#: document/katedocument.cpp:2335 document/katedocument.cpp:2340
-#: document/katedocument.cpp:2352
+#: document/katedocument.cpp:2342 document/katedocument.cpp:2347
+#: document/katedocument.cpp:2359
 msgid "Save Nevertheless"
 msgstr "Vẫn lưu"
 
-#: document/katedocument.cpp:2340
+#: document/katedocument.cpp:2347
 msgid ""
 "Do you really want to save this file? Both your open file and the file on "
 "disk were changed. There could be some data lost."
@@ -2129,12 +2076,12 @@ msgstr ""
 "Bạn thật sự muốn lưu tập tin này? Cả tập tin được mở của bạn lẫn tập tin "
 "trên đĩa đều đã được thay đổi. Một phần dữ liệu có thể bị mất."
 
-#: document/katedocument.cpp:2340 document/katedocument.cpp:2352
-#: document/katedocument.cpp:2633
+#: document/katedocument.cpp:2347 document/katedocument.cpp:2359
+#: document/katedocument.cpp:2643
 msgid "Possible Data Loss"
 msgstr "Có thể mất dữ liệu"
 
-#: document/katedocument.cpp:2352
+#: document/katedocument.cpp:2359
 msgid ""
 "The selected encoding cannot encode every unicode character in this "
 "document. Do you really want to save it? There could be some data lost."
@@ -2142,7 +2089,7 @@ msgstr ""
 "Bảng mã đã chọn không thể mã hoá mọi ký tự Unicode trong tài liệu này. Bạn "
 "thật sự muốn lưu nó không? Một phần dữ liệu có thể bị mất."
 
-#: document/katedocument.cpp:2395 document/katedocument.cpp:4319
+#: document/katedocument.cpp:2402 document/katedocument.cpp:4321
 #, kde-format
 msgid ""
 "The document could not be saved, as it was not possible to write to %1.\n"
@@ -2155,7 +2102,7 @@ msgstr ""
 "Hãy kiểm tra xem bạn có quyền ghi vào tập tin này, hoặc có đủ chỗ còn rảnh "
 "trên đĩa."
 
-#: document/katedocument.cpp:2520
+#: document/katedocument.cpp:2528
 #, fuzzy, kde-format
 #| msgid ""
 #| "For file %1 no backup copy could be created before saving. If the there "
@@ -2173,105 +2120,117 @@ msgstr ""
 "bạn thử ghi vào vật chứa đã đầy, hoặc bạn thử ghi tập tin trong thư mục vào "
 "đó bạn không có quyền ghi."
 
-#: document/katedocument.cpp:2523
+#: document/katedocument.cpp:2531
 msgid "Failed to create backup copy."
 msgstr "Lỗi tạo bản sao lưu."
 
-#: document/katedocument.cpp:2524
+#: document/katedocument.cpp:2532
 msgid "Try to Save Nevertheless"
 msgstr "Vẫn thử lưu"
 
-#: document/katedocument.cpp:2632
+#: document/katedocument.cpp:2642
 msgid "Do you really want to continue to close this file? Data loss may occur."
 msgstr ""
 "Bạn thật sự muốn tiếp tục đóng tập tin này không? Một phần dữ liệu có thể bị "
 "mất."
 
-#: document/katedocument.cpp:2633
+#: document/katedocument.cpp:2643
 msgid "Close Nevertheless"
 msgstr "Vẫn đóng"
 
-#: document/katedocument.cpp:4080
+#: document/katedocument.cpp:4091
 msgid "Untitled"
 msgstr "Không tên"
 
-#: document/katedocument.cpp:4115 document/katedocument.cpp:4284
-#: document/katedocument.cpp:4295 document/katedocument.cpp:4992
+#: document/katedocument.cpp:4132 document/katedocument.cpp:4286
+#: document/katedocument.cpp:4297 document/katedocument.cpp:4989
 msgid "Save File"
 msgstr "Lưu tập tin"
 
-#: document/katedocument.cpp:4119
+#: document/katedocument.cpp:4136
 msgid "Save failed"
 msgstr "Lỗi lưu"
 
 #: document/katedocument.cpp:4196
+msgid "What do you want to do?"
+msgstr "Bạn muốn làm gì?"
+
+#: document/katedocument.cpp:4197
 msgid "File Was Changed on Disk"
 msgstr "Tp tin đã được thay đổi trên đĩa"
 
-#: document/katedocument.cpp:4307
+#: document/katedocument.cpp:4198
+msgid "&Reload File"
+msgstr "Tải &lại tập tin"
+
+#: document/katedocument.cpp:4199
+msgid "&Ignore Changes"
+msgstr "&Bỏ qua các thay đổi"
+
+#: document/katedocument.cpp:4309
 #, fuzzy
 #| msgid "Save File"
 msgid "Save Copy of File"
 msgstr "Lưu tập tin"
 
-#: document/katedocument.cpp:4533
+#: document/katedocument.cpp:4535
 msgid ""
 "Using deprecated modeline 'remove-trailing-space'. Please replace with "
 "'remove-trailing-spaces modified;', see http://docs.kde.org/stable/en/"
 "applications/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4538
+#: document/katedocument.cpp:4540
 msgid ""
 "Using deprecated modeline 'replace-trailing-space-save'. Please replace with "
 "'remove-trailing-spaces all;', see http://docs.kde.org/stable/en/"
 "applications/kate/config-variables.html#variable-remove-trailing-spaces"
 msgstr ""
 
-#: document/katedocument.cpp:4879
+#: document/katedocument.cpp:4876
 #, kde-format
 msgid "The file '%1' was modified by another program."
 msgstr "Một chương trình khác đã sửa đổi tập tin « %1 »."
 
-#: document/katedocument.cpp:4882
+#: document/katedocument.cpp:4879
 #, kde-format
 msgid "The file '%1' was created by another program."
 msgstr "Một chương trình khác đã tạo tập tin « %1 »."
 
-#: document/katedocument.cpp:4885
+#: document/katedocument.cpp:4882
 #, kde-format
 msgid "The file '%1' was deleted by another program."
 msgstr "Một chương trình khác đã xoá tập tin « %1 »."
 
-#: document/katedocument.cpp:5019
+#: document/katedocument.cpp:5016
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "Tập tin « %1 » đã có. Bạn có chắc muốn ghi đè lên nó không?"
 
-#: document/katedocument.cpp:5021
+#: document/katedocument.cpp:5018
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin không?"
 
-#: document/katedocument.cpp:5238
+#: document/katedocument.cpp:5230
 #, kde-format
 msgid ""
 "The document \"%1\" has been modified.\n"
 "Do you want to save your changes or discard them?"
 msgstr ""
 
-#: document/katedocument.cpp:5240
+#: document/katedocument.cpp:5232
 #, fuzzy
 #| msgid "&Word Wrap Document"
 msgid "Close Document"
 msgstr "&Ngắt từ trong tài liệu"
 
-#: document/katedocument.cpp:5373
+#: document/katedocument.cpp:5365
 #, kde-format
 msgid "The file <a href=\"%1\">%2</a> is still loading."
 msgstr ""
 
-#: document/katedocument.cpp:5380
+#: document/katedocument.cpp:5372
 msgid "&Abort Loading"
 msgstr ""
 
@@ -4310,11 +4269,6 @@ msgid ""
 "</p>\n"
 "</qt>"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QPushButton, m_skipBtn)
-#: spellcheck/spellcheckbar.ui:143
-msgid "&Ignore"
-msgstr "&Bỏ qua"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel5)
 #. i18n: ectx: property (whatsThis), widget (QComboBox, m_language)
@@ -7758,49 +7712,49 @@ msgstr ""
 msgid "Words %1/%2, Chars %3/%4"
 msgstr ""
 
-#: view/kateview.cpp:471
+#: view/kateview.cpp:472
 msgid "Cut the selected text and move it to the clipboard"
 msgstr "Cắt đoạn chọn vào bảng tạm"
 
-#: view/kateview.cpp:474
+#: view/kateview.cpp:475
 msgid "Paste previously copied or cut clipboard contents"
 msgstr "Dán nội dung bảng tạm đã cắt hoặc chép"
 
-#: view/kateview.cpp:477
+#: view/kateview.cpp:478
 msgid ""
 "Use this command to copy the currently selected text to the system clipboard."
 msgstr ""
 "Dùng lệnh này để sao chép đoạn được chọn hiện thời vào bảng tạm của hệ thống."
 
-#: view/kateview.cpp:479
+#: view/kateview.cpp:480
 msgid "Clipboard &History"
 msgstr ""
 
-#: view/kateview.cpp:484
+#: view/kateview.cpp:485
 msgid "Save the current document"
 msgstr "Lưu tài liệu hiện có"
 
-#: view/kateview.cpp:487
+#: view/kateview.cpp:488
 msgid "Revert the most recent editing actions"
 msgstr "Hoàn nguyên những hành động soạn thảo gần nhất"
 
-#: view/kateview.cpp:490
+#: view/kateview.cpp:491
 msgid "Revert the most recent undo operation"
 msgstr "Hoàn nguyên thao tác hoàn tác gần nhất"
 
-#: view/kateview.cpp:493
+#: view/kateview.cpp:494
 #, fuzzy
 #| msgid "Scripts"
 msgid "&Scripts"
 msgstr "Văn lệnh"
 
-#: view/kateview.cpp:497
+#: view/kateview.cpp:498
 #, fuzzy
 #| msgid "&Dynamic Word Wrap"
 msgid "Apply &Word Wrap"
 msgstr "Ngắt từ &động"
 
-#: view/kateview.cpp:498
+#: view/kateview.cpp:499
 msgid ""
 "Use this command to wrap all lines of the current document which are longer "
 "than the width of the current view, to fit into this view.<br /><br /> This "
@@ -7811,11 +7765,11 @@ msgstr ""
 "thao tác ngắt từ tĩnh, tức là nó không cập nhật khi khung xem thay đổi kích "
 "cỡ."
 
-#: view/kateview.cpp:504
+#: view/kateview.cpp:505
 msgid "&Clean Indentation"
 msgstr "Làm &sạch thụt lề"
 
-#: view/kateview.cpp:505
+#: view/kateview.cpp:506
 #, fuzzy
 #| msgid ""
 #| "Use this to clean the indentation of a selected block of text (only tabs/"
@@ -7831,11 +7785,11 @@ msgstr ""
 "nếu thao tác này theo dấu cách Tab, hoặc nên thay thế chúng bằng dấu cách "
 "thường."
 
-#: view/kateview.cpp:510
+#: view/kateview.cpp:511
 msgid "&Align"
 msgstr "C&anh lề"
 
-#: view/kateview.cpp:511
+#: view/kateview.cpp:512
 msgid ""
 "Use this to align the current line or block of text to its proper indent "
 "level."
@@ -7843,11 +7797,11 @@ msgstr ""
 "Dùng lệnh này để canh lề dòng hoặc khối văn bản hiện thời với cấp thụt lề "
 "đúng."
 
-#: view/kateview.cpp:515
+#: view/kateview.cpp:516
 msgid "C&omment"
 msgstr "&Ghi chú"
 
-#: view/kateview.cpp:517
+#: view/kateview.cpp:518
 msgid ""
 "This command comments out the current line or a selected block of text.<br /"
 "><br />The characters for single/multiple line comments are defined within "
@@ -7857,23 +7811,23 @@ msgstr ""
 "ghi chú dòng đơn hoặc đa dòng có được định nghĩa khi thiết lập cách tô sáng "
 "ngôn ngữ đó. "
 
-#: view/kateview.cpp:522
+#: view/kateview.cpp:523
 #, fuzzy
 #| msgid "Move to Previous Line"
 msgid "Go to previous editing line"
 msgstr "Tới dòng trước"
 
-#: view/kateview.cpp:527
+#: view/kateview.cpp:528
 #, fuzzy
 #| msgid "Select to Next Line"
 msgid "Go to next editing line"
 msgstr "Chọn tới dòng kế"
 
-#: view/kateview.cpp:532
+#: view/kateview.cpp:533
 msgid "Unco&mment"
 msgstr "Bỏ ghi &chú"
 
-#: view/kateview.cpp:534
+#: view/kateview.cpp:535
 msgid ""
 "This command removes comments from the current line or a selected block of "
 "text.<br /><br />The characters for single/multiple line comments are "
@@ -7883,25 +7837,25 @@ msgstr ""
 "ký tự để ghi chú dòng đơn hoặc đa dòng có được định nghĩa khi thiết lập cách "
 "tô sáng ngôn ngữ đó. "
 
-#: view/kateview.cpp:539
+#: view/kateview.cpp:540
 #, fuzzy
 #| msgid "Comment"
 msgid "Toggle Comment"
 msgstr "Ghi chú"
 
-#: view/kateview.cpp:542
+#: view/kateview.cpp:543
 msgid "&Read Only Mode"
 msgstr "Chế độ c&hỉ đọc"
 
-#: view/kateview.cpp:543
+#: view/kateview.cpp:544
 msgid "Lock/unlock the document for writing"
 msgstr "Khoá/Gỡ khoá tài liệu để ghi"
 
-#: view/kateview.cpp:549
+#: view/kateview.cpp:550
 msgid "Uppercase"
 msgstr "Chữ hoa"
 
-#: view/kateview.cpp:551
+#: view/kateview.cpp:552
 msgid ""
 "Convert the selection to uppercase, or the character to the right of the "
 "cursor if no text is selected."
@@ -7909,11 +7863,11 @@ msgstr ""
 "Chuyển đổi đoạn chọn sang chữ hoa, hoặc chuyển đổi ký tự bên phải con chạy "
 "nếu chưa chọn đoạn nào."
 
-#: view/kateview.cpp:556
+#: view/kateview.cpp:557
 msgid "Lowercase"
 msgstr "Chữ thường"
 
-#: view/kateview.cpp:558
+#: view/kateview.cpp:559
 msgid ""
 "Convert the selection to lowercase, or the character to the right of the "
 "cursor if no text is selected."
@@ -7921,11 +7875,11 @@ msgstr ""
 "Chuyển đổi đoạn chọn sang chữ thường, hoặc chuyển đổi ký tự bên phải con "
 "chạy nếu chưa chọn đoạn nào."
 
-#: view/kateview.cpp:563
+#: view/kateview.cpp:564
 msgid "Capitalize"
 msgstr "Chữ hoa đầu"
 
-#: view/kateview.cpp:565
+#: view/kateview.cpp:566
 msgid ""
 "Capitalize the selection, or the word under the cursor if no text is "
 "selected."
@@ -7933,15 +7887,15 @@ msgstr ""
 "Chuyển đổi chữ đầu sang chữ hoa, trong mỗi từ trong đoạn chọn, hoặc trong từ "
 "bên dưới con chạy nếu chưa chọn đoạn nào."
 
-#: view/kateview.cpp:570
+#: view/kateview.cpp:571
 msgid "Join Lines"
 msgstr "Nối lại dòng"
 
-#: view/kateview.cpp:575
+#: view/kateview.cpp:576
 msgid "Invoke Code Completion"
 msgstr "Gọi gõ xong mã nguồn"
 
-#: view/kateview.cpp:576
+#: view/kateview.cpp:577
 msgid ""
 "Manually invoke command completion, usually by using a shortcut bound to "
 "this action."
@@ -7949,86 +7903,86 @@ msgstr ""
 "Tự gọi chức năng gõ xong lệnh, thường bằng cách sử dụng một lối tắt đã đóng "
 "kết với hành động này."
 
-#: view/kateview.cpp:588
+#: view/kateview.cpp:589
 msgid "Print the current document."
 msgstr "In tài liệu hiện thời."
 
-#: view/kateview.cpp:591
+#: view/kateview.cpp:592
 #, fuzzy
 #| msgid "Print the current document."
 msgid "Show print preview of current document"
 msgstr "In tài liệu hiện thời."
 
-#: view/kateview.cpp:595
+#: view/kateview.cpp:596
 msgid "Reloa&d"
 msgstr "Tả&i lại"
 
-#: view/kateview.cpp:597
+#: view/kateview.cpp:598
 msgid "Reload the current document from disk."
 msgstr "Tải lại tài liệu hiện thời từ đĩa."
 
-#: view/kateview.cpp:601
+#: view/kateview.cpp:602
 msgid "Save the current document to disk, with a name of your choice."
 msgstr "Lưu tài liệu hiện thời vào đĩa, với tên do bạn chọn."
 
-#: view/kateview.cpp:603
+#: view/kateview.cpp:604
 msgid "Save As with Encoding..."
 msgstr ""
 
-#: view/kateview.cpp:609
+#: view/kateview.cpp:610
 #, fuzzy
 #| msgid "&Save File As..."
 msgid "Save &Copy As..."
 msgstr "&Lưu tập tin dạng..."
 
-#: view/kateview.cpp:610
+#: view/kateview.cpp:611
 #, fuzzy
 #| msgid "Reload the current document from disk."
 msgid "Save a copy of the current document to disk."
 msgstr "Tải lại tài liệu hiện thời từ đĩa."
 
-#: view/kateview.cpp:614
+#: view/kateview.cpp:615
 msgid ""
 "This command opens a dialog and lets you choose a line that you want the "
 "cursor to move to."
 msgstr ""
 "Lệnh này mở hộp thoại cho bạn khả năng chọn dòng nơi bạn muốn con chạy tới."
 
-#: view/kateview.cpp:617
+#: view/kateview.cpp:618
 #, fuzzy
 #| msgid "Move to Previous Line"
 msgid "Move to Previous Modified Line"
 msgstr "Tới dòng trước"
 
-#: view/kateview.cpp:618
+#: view/kateview.cpp:619
 #, fuzzy
 #| msgid "Move to Matching Bracket"
 msgid "Move upwards to the previous modified line."
 msgstr "Tới dấu ngoặc khớp"
 
-#: view/kateview.cpp:622
+#: view/kateview.cpp:623
 #, fuzzy
 #| msgid "Move to Next Line"
 msgid "Move to Next Modified Line"
 msgstr "Tới dòng kế"
 
-#: view/kateview.cpp:623
+#: view/kateview.cpp:624
 msgid "Move downwards to the next modified line."
 msgstr ""
 
-#: view/kateview.cpp:627
+#: view/kateview.cpp:628
 msgid "&Configure Editor..."
 msgstr "&Cấu hình bộ soạn thảo..."
 
-#: view/kateview.cpp:629
+#: view/kateview.cpp:630
 msgid "Configure various aspects of this editor."
 msgstr "Cấu hình nhiều khía cạnh khác nhau của trình soạn thảo này."
 
-#: view/kateview.cpp:632
+#: view/kateview.cpp:633
 msgid "&Mode"
 msgstr "&Chế độ"
 
-#: view/kateview.cpp:634
+#: view/kateview.cpp:635
 #, fuzzy
 #| msgid ""
 #| "Here you can choose which mode should be used for the current document. "
@@ -8041,54 +7995,54 @@ msgstr ""
 "Nó sẽ có tác động kiểu tô sáng và gấp lại."
 
 # msgid "Highlighting"
-#: view/kateview.cpp:637
+#: view/kateview.cpp:638
 msgid "&Highlighting"
 msgstr "Tô &sáng"
 
-#: view/kateview.cpp:639
+#: view/kateview.cpp:640
 msgid "Here you can choose how the current document should be highlighted."
 msgstr "Ở đây bạn có thể chọn cách tô sáng tài liệu hiện có."
 
-#: view/kateview.cpp:642
+#: view/kateview.cpp:643
 msgid "&Schema"
 msgstr "&Giản đồ"
 
-#: view/kateview.cpp:647
+#: view/kateview.cpp:648
 msgid "&Indentation"
 msgstr "Thụt &lề"
 
-#: view/kateview.cpp:651
+#: view/kateview.cpp:652
 msgid "Select the entire text of the current document."
 msgstr "Chọn toàn bộ nội dung tài liệu."
 
-#: view/kateview.cpp:654
+#: view/kateview.cpp:655
 msgid ""
 "If you have selected something within the current document, this will no "
 "longer be selected."
 msgstr ""
 "Nếu bạn đã chọn gì ở trong tài liệu hiện thời, nó sẽ không còn được chọn lại."
 
-#: view/kateview.cpp:658
+#: view/kateview.cpp:659
 msgid "Enlarge Font"
 msgstr "Chữ lớn hơn"
 
-#: view/kateview.cpp:660
+#: view/kateview.cpp:661
 msgid "This increases the display font size."
 msgstr "Lệnh này tăng kích cỡ hiển thị của phông chữ."
 
-#: view/kateview.cpp:665
+#: view/kateview.cpp:666
 msgid "Shrink Font"
 msgstr "Chữ nhỏ hơn"
 
-#: view/kateview.cpp:667
+#: view/kateview.cpp:668
 msgid "This decreases the display font size."
 msgstr "Lệnh này giảm kích cỡ hiển thị của phông chữ."
 
-#: view/kateview.cpp:670
+#: view/kateview.cpp:671
 msgid "Bl&ock Selection Mode"
 msgstr "Chế độ chọn &khối"
 
-#: view/kateview.cpp:673
+#: view/kateview.cpp:674
 msgid ""
 "This command allows switching between the normal (line based) selection mode "
 "and the block selection mode."
@@ -8096,21 +8050,21 @@ msgstr ""
 "Lệnh này cho bạn khả năng chuyển đổi giữa chế độ chuẩn (đựa vào dòng) và chế "
 "độ chọn khối."
 
-#: view/kateview.cpp:677
+#: view/kateview.cpp:678
 msgid "Switch to Next Input Mode"
 msgstr ""
 
-#: view/kateview.cpp:679
+#: view/kateview.cpp:680
 #, fuzzy
 #| msgid "Select to End of Line"
 msgid "Switch to the next input mode."
 msgstr "Chọn tới cuối dòng"
 
-#: view/kateview.cpp:682
+#: view/kateview.cpp:683
 msgid "Overwr&ite Mode"
 msgstr "Chế độ &ghi đè"
 
-#: view/kateview.cpp:685
+#: view/kateview.cpp:686
 msgid ""
 "Choose whether you want the text you type to be inserted or to overwrite "
 "existing text."
@@ -8118,33 +8072,33 @@ msgstr ""
 "Hãy chọn nếu bạn muốn đoạn đã gõ để chèn vào đoạn đã có, hoặc để ghi đè lên "
 "nó."
 
-#: view/kateview.cpp:695
+#: view/kateview.cpp:696
 #, fuzzy
 msgid "Dynamic Word Wrap Indicators"
 msgstr "Chỉ dấu ngắt từ động"
 
-#: view/kateview.cpp:697
+#: view/kateview.cpp:698
 #, fuzzy
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed"
 msgstr "Chọn cách hiển thị các chỉ dấu ngắt từ động."
 
-#: view/kateview.cpp:701
+#: view/kateview.cpp:702
 msgid "&Off"
 msgstr "&Tắt"
 
-#: view/kateview.cpp:702
+#: view/kateview.cpp:703
 msgid "Follow &Line Numbers"
 msgstr "Sau &số thứ tự dòng"
 
-#: view/kateview.cpp:703
+#: view/kateview.cpp:704
 msgid "&Always On"
 msgstr "&Luôn bật"
 
-#: view/kateview.cpp:707
+#: view/kateview.cpp:708
 msgid "Show Folding &Markers"
 msgstr "Hiện dấu hiệu &gấp lại"
 
-#: view/kateview.cpp:710
+#: view/kateview.cpp:711
 msgid ""
 "You can choose if the codefolding marks should be shown, if codefolding is "
 "possible."
@@ -8152,11 +8106,11 @@ msgstr ""
 "Bạn có thể chọn để hiển thị dấu hiệu gấp lại mã hay không, nếu có khả năng "
 "gấp lại mã nguồn."
 
-#: view/kateview.cpp:713
+#: view/kateview.cpp:714
 msgid "Show &Icon Border"
 msgstr "Hiện viền &biểu tượng"
 
-#: view/kateview.cpp:716
+#: view/kateview.cpp:717
 msgid ""
 "Show/hide the icon border.<br /><br />The icon border shows bookmark "
 "symbols, for instance."
@@ -8164,19 +8118,19 @@ msgstr ""
 "Bật/tắt hiển thị viền biểu tượng.<br/><br/>Tức là viền biểu tượng hiển thị "
 "ký hiệu Đánh dấu,"
 
-#: view/kateview.cpp:719
+#: view/kateview.cpp:720
 msgid "Show &Line Numbers"
 msgstr "Hiện &số thứ tự dòng"
 
-#: view/kateview.cpp:722
+#: view/kateview.cpp:723
 msgid "Show/hide the line numbers on the left hand side of the view."
 msgstr "Bật/tắt hiển thị số thứ tự dòng bên trái khung xem."
 
-#: view/kateview.cpp:725
+#: view/kateview.cpp:726
 msgid "Show Scroll&bar Marks"
 msgstr "Hiện dấu thanh &cuộn"
 
-#: view/kateview.cpp:727
+#: view/kateview.cpp:728
 #, fuzzy
 #| msgid ""
 #| "Show/hide the marks on the vertical scrollbar.<br /><br />The marks, for "
@@ -8188,13 +8142,13 @@ msgstr ""
 "Bật/tắt hiển thị những dấu trên thanh cuộn dọc.<br/><br/>Tức là những dấu "
 "này hiển thị Đánh dấu."
 
-#: view/kateview.cpp:730
+#: view/kateview.cpp:731
 #, fuzzy
 #| msgid "Show Scroll&bar Marks"
 msgid "Show Scrollbar Mini-Map"
 msgstr "Hiện dấu thanh &cuộn"
 
-#: view/kateview.cpp:732
+#: view/kateview.cpp:733
 #, fuzzy
 #| msgid ""
 #| "Show/hide the marks on the vertical scrollbar.<br /><br />The marks, for "
@@ -8206,11 +8160,11 @@ msgstr ""
 "Bật/tắt hiển thị những dấu trên thanh cuộn dọc.<br/><br/>Tức là những dấu "
 "này hiển thị Đánh dấu."
 
-#: view/kateview.cpp:741
+#: view/kateview.cpp:742
 msgid "Show Static &Word Wrap Marker"
 msgstr "Hiện dấu hiệu &Ngắt từ tĩnh"
 
-#: view/kateview.cpp:744
+#: view/kateview.cpp:745
 #, fuzzy
 msgid ""
 "Show/hide the Word Wrap Marker, a vertical line drawn at the word wrap "
@@ -8219,107 +8173,107 @@ msgstr ""
 "Bật/tắt hiển thị dấu hiệu Ngắt từ, một đường dọc được vẽ tại cột ngắt từ, "
 "như được định nghĩa trong tính chất hiệu chỉnh."
 
-#: view/kateview.cpp:748
+#: view/kateview.cpp:749
 msgid "Show Non-Printable Spaces"
 msgstr ""
 
-#: view/kateview.cpp:750
+#: view/kateview.cpp:751
 msgid "Show/hide bounding box around non-printable spaces"
 msgstr ""
 
-#: view/kateview.cpp:753
+#: view/kateview.cpp:754
 msgid "Show Word Count"
 msgstr ""
 
-#: view/kateview.cpp:756
+#: view/kateview.cpp:757
 msgid "Show/hide word count in status bar"
 msgstr ""
 
-#: view/kateview.cpp:760
+#: view/kateview.cpp:761
 msgid "Switch to Command Line"
 msgstr "Chuyển sang Dòng lệnh"
 
-#: view/kateview.cpp:762
+#: view/kateview.cpp:763
 msgid "Show/hide the command line on the bottom of the view."
 msgstr "Bật/tắt hiển thị dòng lệnh bên dưới khung xem."
 
-#: view/kateview.cpp:765
+#: view/kateview.cpp:766
 msgid "Input Modes"
 msgstr ""
 
-#: view/kateview.cpp:771
+#: view/kateview.cpp:772
 #, kde-format
 msgid "Activate/deactivate %1"
 msgstr ""
 
-#: view/kateview.cpp:777
+#: view/kateview.cpp:778
 msgid "&End of Line"
 msgstr "&Kết thúc dòng"
 
-#: view/kateview.cpp:779
+#: view/kateview.cpp:780
 msgid "Choose which line endings should be used, when you save the document"
 msgstr "Hãy chọn dùng kiểu kết thúc dòng nào, khi bạn lưu tài liệu."
 
-#: view/kateview.cpp:781
+#: view/kateview.cpp:782
 msgctxt "@item:inmenu End of Line"
 msgid "&UNIX"
 msgstr ""
 
-#: view/kateview.cpp:782
+#: view/kateview.cpp:783
 #, fuzzy
 #| msgid "&New Window"
 msgctxt "@item:inmenu End of Line"
 msgid "&Windows/DOS"
 msgstr "Cửa sổ &mới"
 
-#: view/kateview.cpp:783
+#: view/kateview.cpp:784
 msgctxt "@item:inmenu End of Line"
 msgid "&Macintosh"
 msgstr ""
 
-#: view/kateview.cpp:788
+#: view/kateview.cpp:789
 msgid "Add &Byte Order Mark (BOM)"
 msgstr ""
 
-#: view/kateview.cpp:791
+#: view/kateview.cpp:792
 msgid ""
 "Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded files "
 "while saving"
 msgstr ""
 
-#: view/kateview.cpp:795
+#: view/kateview.cpp:796
 msgid "E&ncoding"
 msgstr "Bộ &ký tự"
 
-#: view/kateview.cpp:799
+#: view/kateview.cpp:800
 msgid "Look up the first occurrence of a piece of text or regular expression."
 msgstr "Tra tìm lần đầu tiên gặp một đoạn hoặc biểu thức chính quy."
 
-#: view/kateview.cpp:803
+#: view/kateview.cpp:804
 msgid "Find Selected"
 msgstr "Tìm phần đã chọn"
 
-#: view/kateview.cpp:805
+#: view/kateview.cpp:806
 msgid "Finds next occurrence of selected text."
 msgstr "Tìm lần xuất hiện tiếp theo của đoạn chữ được chọn."
 
-#: view/kateview.cpp:809
+#: view/kateview.cpp:810
 msgid "Find Selected Backwards"
 msgstr "Tìm phần ngược lại đã chọn"
 
-#: view/kateview.cpp:811
+#: view/kateview.cpp:812
 msgid "Finds previous occurrence of selected text."
 msgstr "Tìm lần xuất hiện trước của đoạn chữ được chọn."
 
-#: view/kateview.cpp:815
+#: view/kateview.cpp:816
 msgid "Look up the next occurrence of the search phrase."
 msgstr "Tra tìm lần kế tiếp gặp chuỗi tìm kiếm."
 
-#: view/kateview.cpp:819
+#: view/kateview.cpp:820
 msgid "Look up the previous occurrence of the search phrase."
 msgstr "Tra tìm lần trước gặp chuỗi tìm kiếm."
 
-#: view/kateview.cpp:823
+#: view/kateview.cpp:824
 msgid ""
 "Look up a piece of text or regular expression and replace the result with "
 "some given text."
@@ -8327,38 +8281,38 @@ msgstr ""
 "Tra tìm một đoạn hoặc biểu thức chính quy, và thay thế kết quả bằng một đoạn "
 "đã cho."
 
-#: view/kateview.cpp:826
+#: view/kateview.cpp:827
 msgid "Automatic Spell Checking"
 msgstr ""
 
-#: view/kateview.cpp:827
+#: view/kateview.cpp:828
 msgid "Enable/disable automatic spell checking"
 msgstr ""
 
-#: view/kateview.cpp:833
+#: view/kateview.cpp:834
 #, fuzzy
 #| msgid "Choose Editor..."
 msgid "Change Dictionary..."
 msgstr "Chọn bộ sửa..."
 
-#: view/kateview.cpp:834
+#: view/kateview.cpp:835
 msgid "Change the dictionary that is used for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:838
+#: view/kateview.cpp:839
 msgid "Clear Dictionary Ranges"
 msgstr ""
 
-#: view/kateview.cpp:840
+#: view/kateview.cpp:841
 msgid ""
 "Remove all the separate dictionary ranges that were set for spell checking."
 msgstr ""
 
-#: view/kateview.cpp:846
+#: view/kateview.cpp:847
 msgid "Copy as &HTML"
 msgstr "Chép dạng &HTML"
 
-#: view/kateview.cpp:847
+#: view/kateview.cpp:848
 msgid ""
 "Use this command to copy the currently selected text as HTML to the system "
 "clipboard."
@@ -8366,13 +8320,13 @@ msgstr ""
 "Dùng lệnh này để sao chép đoạn được chọn hiện thời dạng mã định dạng HTML "
 "vào bảng tạm của hệ thống."
 
-#: view/kateview.cpp:850
+#: view/kateview.cpp:851
 #, fuzzy
 #| msgid "Export File as HTML"
 msgid "E&xport as HTML..."
 msgstr "Xuất tập tin dạng HTML"
 
-#: view/kateview.cpp:851
+#: view/kateview.cpp:852
 msgid ""
 "This command allows you to export the current document with all highlighting "
 "information into a HTML document."
@@ -8380,183 +8334,183 @@ msgstr ""
 "Lệnh này cho bạn khả năng xuất tài liệu hiện thời cùng với các thông tin tô "
 "sáng, vào một tài liệu dạng HTML."
 
-#: view/kateview.cpp:889
+#: view/kateview.cpp:890
 msgid "Move Word Left"
 msgstr "Chuyển từ sang trái"
 
-#: view/kateview.cpp:895
+#: view/kateview.cpp:896
 msgid "Select Character Left"
 msgstr "Chọn ký tự trái"
 
-#: view/kateview.cpp:901
+#: view/kateview.cpp:902
 msgid "Select Word Left"
 msgstr "Chọn từ trái"
 
-#: view/kateview.cpp:907
+#: view/kateview.cpp:908
 msgid "Move Word Right"
 msgstr "Chuyển từ sang phải"
 
-#: view/kateview.cpp:913
+#: view/kateview.cpp:914
 msgid "Select Character Right"
 msgstr "Chọn ký tự phải"
 
-#: view/kateview.cpp:919
+#: view/kateview.cpp:920
 msgid "Select Word Right"
 msgstr "Chọn từ phải"
 
-#: view/kateview.cpp:925
+#: view/kateview.cpp:926
 msgid "Move to Beginning of Line"
 msgstr "Về đầu dòng"
 
-#: view/kateview.cpp:931
+#: view/kateview.cpp:932
 msgid "Move to Beginning of Document"
 msgstr "Về đầu tài liệu"
 
-#: view/kateview.cpp:937
+#: view/kateview.cpp:938
 msgid "Select to Beginning of Line"
 msgstr "Chọn tới đầu dòng"
 
-#: view/kateview.cpp:943
+#: view/kateview.cpp:944
 msgid "Select to Beginning of Document"
 msgstr "Chọn tới đầu tài liệu"
 
-#: view/kateview.cpp:949
+#: view/kateview.cpp:950
 msgid "Move to End of Line"
 msgstr "Tới cuối dòng"
 
-#: view/kateview.cpp:955
+#: view/kateview.cpp:956
 msgid "Move to End of Document"
 msgstr "Tới cuối tài liệu"
 
-#: view/kateview.cpp:961
+#: view/kateview.cpp:962
 msgid "Select to End of Line"
 msgstr "Chọn tới cuối dòng"
 
-#: view/kateview.cpp:967
+#: view/kateview.cpp:968
 msgid "Select to End of Document"
 msgstr "Chọn tới cuối tài liệu"
 
-#: view/kateview.cpp:973
+#: view/kateview.cpp:974
 msgid "Select to Previous Line"
 msgstr "Chọn tới dòng trước"
 
-#: view/kateview.cpp:979
+#: view/kateview.cpp:980
 msgid "Scroll Line Up"
 msgstr "Cuộn lên một dòng"
 
-#: view/kateview.cpp:985
+#: view/kateview.cpp:986
 msgid "Move to Next Line"
 msgstr "Tới dòng kế"
 
-#: view/kateview.cpp:991
+#: view/kateview.cpp:992
 msgid "Move to Previous Line"
 msgstr "Tới dòng trước"
 
-#: view/kateview.cpp:997
+#: view/kateview.cpp:998
 #, fuzzy
 #| msgid "Move Word Right"
 msgid "Move Cursor Right"
 msgstr "Chuyển từ sang phải"
 
-#: view/kateview.cpp:1003
+#: view/kateview.cpp:1004
 #, fuzzy
 #| msgid "Move Word Left"
 msgid "Move Cursor Left"
 msgstr "Chuyển từ sang trái"
 
-#: view/kateview.cpp:1009
+#: view/kateview.cpp:1010
 msgid "Select to Next Line"
 msgstr "Chọn tới dòng kế"
 
-#: view/kateview.cpp:1015
+#: view/kateview.cpp:1016
 msgid "Scroll Line Down"
 msgstr "Cuộn xuống một dòng"
 
-#: view/kateview.cpp:1021
+#: view/kateview.cpp:1022
 msgid "Scroll Page Up"
 msgstr "Cuộn lên một trang"
 
-#: view/kateview.cpp:1027
+#: view/kateview.cpp:1028
 msgid "Select Page Up"
 msgstr "Cuộn xuống một trang"
 
-#: view/kateview.cpp:1033
+#: view/kateview.cpp:1034
 msgid "Move to Top of View"
 msgstr "Tới đầu khung xem"
 
-#: view/kateview.cpp:1039
+#: view/kateview.cpp:1040
 msgid "Select to Top of View"
 msgstr "Chọn tới đầu khung xem"
 
-#: view/kateview.cpp:1045
+#: view/kateview.cpp:1046
 msgid "Scroll Page Down"
 msgstr "Cuộn xuống một trang"
 
-#: view/kateview.cpp:1051
+#: view/kateview.cpp:1052
 msgid "Select Page Down"
 msgstr "Chọn tới một trang"
 
-#: view/kateview.cpp:1057
+#: view/kateview.cpp:1058
 msgid "Move to Bottom of View"
 msgstr "Tới cuối khung xem"
 
-#: view/kateview.cpp:1063
+#: view/kateview.cpp:1064
 msgid "Select to Bottom of View"
 msgstr "Chọn tới cuối khung xem"
 
-#: view/kateview.cpp:1069
+#: view/kateview.cpp:1070
 msgid "Move to Matching Bracket"
 msgstr "Tới dấu ngoặc khớp"
 
-#: view/kateview.cpp:1075
+#: view/kateview.cpp:1076
 msgid "Select to Matching Bracket"
 msgstr "Chọn tới dấu ngoặc khớp"
 
-#: view/kateview.cpp:1083
+#: view/kateview.cpp:1084
 msgid "Transpose Characters"
 msgstr "Đổi chỗ hai ký tự"
 
-#: view/kateview.cpp:1089
+#: view/kateview.cpp:1090
 msgid "Delete Line"
 msgstr "Xoá dòng"
 
-#: view/kateview.cpp:1095
+#: view/kateview.cpp:1096
 msgid "Delete Word Left"
 msgstr "Xoá từ trái"
 
-#: view/kateview.cpp:1101
+#: view/kateview.cpp:1102
 msgid "Delete Word Right"
 msgstr "Xoá từ phải"
 
-#: view/kateview.cpp:1107
+#: view/kateview.cpp:1108
 msgid "Delete Next Character"
 msgstr "Xoá ký tự kế"
 
-#: view/kateview.cpp:1113
+#: view/kateview.cpp:1114
 msgid "Backspace"
 msgstr "Xoá lùi"
 
-#: view/kateview.cpp:1122
+#: view/kateview.cpp:1123
 #, fuzzy
 #| msgid "&Insert"
 msgid "Insert Tab"
 msgstr "C&hèn"
 
-#: view/kateview.cpp:1127
+#: view/kateview.cpp:1128
 msgid "Insert Smart Newline"
 msgstr ""
 
-#: view/kateview.cpp:1128
+#: view/kateview.cpp:1129
 msgid ""
 "Insert newline including leading characters of the current line which are "
 "not letters or numbers."
 msgstr ""
 
-#: view/kateview.cpp:1138
+#: view/kateview.cpp:1139
 msgid "&Indent"
 msgstr "Thụt &lề"
 
-#: view/kateview.cpp:1139
+#: view/kateview.cpp:1140
 msgid ""
 "Use this to indent a selected block of text.<br /><br />You can configure "
 "whether tabs should be honored and used or replaced with spaces, in the "
@@ -8566,36 +8520,42 @@ msgstr ""
 "cấu hình, bạn có thể chọn nếu thao tác này theo dấu cách Tab, hoặc nên thay "
 "thế chúng bằng dấu cách thường."
 
-#: view/kateview.cpp:1146
+#: view/kateview.cpp:1147
 msgid "&Unindent"
 msgstr "&Bỏ thụt lề"
 
-#: view/kateview.cpp:1147
+#: view/kateview.cpp:1148
 msgid "Use this to unindent a selected block of text."
 msgstr "Dùng lệnh này để bỏ thụt lề một khối văn bản đã chọn."
 
-#: view/kateview.cpp:1167
+#: view/kateview.cpp:1166
 #, fuzzy
 #| msgid "Collapse Toplevel"
 msgid "Fold Toplevel Nodes"
 msgstr "Co lại cấp đầu"
 
-#: view/kateview.cpp:1185
+#: view/kateview.cpp:1171
+#, fuzzy
+#| msgid "Expand Toplevel"
+msgid "Unfold Toplevel Nodes"
+msgstr "Bung cấp đầu"
+
+#: view/kateview.cpp:1184
 #, fuzzy
 #| msgid "Current Word Only"
 msgid "Fold Current Node"
 msgstr "Chỉ từ hiện có"
 
-#: view/kateview.cpp:1189
+#: view/kateview.cpp:1188
 msgid "Unfold Current Node"
 msgstr ""
 
-#: view/kateview.cpp:1293
+#: view/kateview.cpp:1263
 #, kde-format
 msgid "(R/O) %1"
 msgstr ""
 
-#: view/kateview.cpp:3505
+#: view/kateview.cpp:3475
 msgid "Export File as HTML"
 msgstr "Xuất tập tin dạng HTML"
 
@@ -8976,6 +8936,51 @@ msgstr ""
 msgid "Mark not set: %1"
 msgstr "Kiểu dấu %1"
 
+#~ msgid "File Was Deleted on Disk"
+#~ msgstr "Tập tin bị xoá khỏi đĩa"
+
+#~ msgid "File Changed on Disk"
+#~ msgstr "Tập tin đã thay đổi trên đĩa"
+
+#~ msgid ""
+#~ "Do nothing. Next time you focus the file, or try to save it or close it, "
+#~ "you will be prompted again."
+#~ msgstr ""
+#~ "Không làm gì. Lần kế tiếp bạn để tiêu điểm trên tập tin này, hoặc cố lưu "
+#~ "hoặc đóng nó, bạn sẽ được nhắc lại."
+
+#~ msgid "Overwrite the disk file with the editor content."
+#~ msgstr "Ghi đè lên tập tin trên đĩa bằng nội dung của trình soạn thảo."
+
+#, fuzzy
+#~| msgid "&Word Wrap Document"
+#~ msgid "Close the document."
+#~ msgstr "&Ngắt từ trong tài liệu"
+
+#, fuzzy
+#~| msgid "Besides white space changes, the files are identical."
+#~ msgid "Ignoring amount of white space changed, the files are identical."
+#~ msgstr "Ngoài thay đổi dấu cách ra, hai tập tin trùng với nhau."
+
+#~ msgid ""
+#~ "Ignoring means that you will not be warned again (unless the disk file "
+#~ "changes once more): if you save the document, you will overwrite the file "
+#~ "on disk; if you do not save then the disk file (if present) is what you "
+#~ "have."
+#~ msgstr ""
+#~ "Bỏ qua có nghĩa là bạn sẽ không được cảnh báo lại (trừ khi tập tin trên "
+#~ "đĩa thay đổi lần nữa). Nếu bạn lưu tài liệu này, bạn sẽ ghi đè lên tập "
+#~ "tin trên đĩa; còn nếu bạn không lưu, tập tin trên đĩa (nếu có) là dữ liệu "
+#~ "hiện thời."
+
+#~ msgid "You Are on Your Own"
+#~ msgstr "Vậy bạn làm một mình"
+
+#, fuzzy
+#~| msgid "&Ignore Changes"
+#~ msgid "Ignore white space changes"
+#~ msgstr "&Bỏ qua các thay đổi"
+
 #~ msgid "KDE Default"
 #~ msgstr "Mặc định của KDE"
 
@@ -9289,11 +9294,6 @@ msgstr "Kiểu dấu %1"
 
 #~ msgid "R/O"
 #~ msgstr "Chỉ đọc"
-
-#, fuzzy
-#~| msgid "Expand Toplevel"
-#~ msgid "Unfold Toplevel Nodes"
-#~ msgstr "Bung cấp đầu"
 
 #, fuzzy
 #~| msgid "Show Folding &Markers"

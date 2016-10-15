@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmperformance\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-11 07:05+0000\n"
+"POT-Creation-Date: 2016-10-15 07:15+0000\n"
 "PO-Revision-Date: 2007-06-24 14:08+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -43,28 +43,7 @@ msgstr ""
 "hiệu suất làm việc của KDE ở đây. Chúng bao gồm những tùy chọn để dùng lại "
 "những tiến trình Konqueror đang chạy và giữ chúng nạp trước."
 
-#: konqueror.cpp:34
-#, fuzzy
-#| msgid ""
-#| "If non-zero, this option allows keeping Konqueror instances in memory "
-#| "after all their windows have been closed, up to the number specified in "
-#| "this option.<p>When a new Konqueror instance is needed, one of these "
-#| "preloaded instances will be reused instead, improving responsiveness at "
-#| "the expense of the memory required by the preloaded instances."
-msgid ""
-"<p>If non-zero, this option allows keeping Konqueror instances in memory "
-"after all their windows have been closed, up to the number specified in this "
-"option.</p><p>When a new Konqueror instance is needed, one of these "
-"preloaded instances will be reused instead, improving responsiveness at the "
-"expense of the memory required by the preloaded instances.</p>"
-msgstr ""
-"Nếu khác 0, tùy chọn này cho phép giữ số tiến trình Konqueror trong bộ nhớ "
-"sau khi các cửa sổ của chúng đã đóng không vượt quá số đã chọn.<p> Khi cần "
-"một tiến trình Konqueror mới, thì một trong số những tiến trình này sẽ được "
-"sử dụng, như vậy làm tăng tốc độ trả lời nhưng cần sử dụng bộ nhớ cho các "
-"tiến trình nạp trước này."
-
-#: konqueror.cpp:43
+#: konqueror.cpp:35
 #, fuzzy
 #| msgid ""
 #| "If enabled, an instance of Konqueror will be preloaded after the ordinary "
@@ -74,17 +53,17 @@ msgstr ""
 #| "taking longer)."
 msgid ""
 "<p>If enabled, an instance of Konqueror will be preloaded after the ordinary "
-"KDE startup sequence.</p><p>This will make the first Konqueror window open "
-"faster, but at the expense of longer KDE startup times (but you will be able "
-"to work while it is loading, so you may not even notice that it is taking "
-"longer).</p>"
+"Plasma startup sequence.</p><p>This will make the first Konqueror window "
+"open faster, but at the expense of longer Plasma startup times (but you will "
+"be able to work while it is loading, so you may not even notice that it is "
+"taking longer).</p>"
 msgstr ""
 "Nếu chọn, một tiến trình Konqueror sẽ được nạp trước sau vòng khởi động của "
 "KDE.<p>Tính năng này làm tăng tốc độ mở của cửa sổ Konqueror đầu tiên, nhưng "
 "sẽ làm cho KDE khởi động lâu hơn (nhưng bạn vẫn có thể làm việc khi "
 "Konqueror đang nạp, vì thế có thể bạn sẽ không nhận ra sự chậm chạp này)."
 
-#: konqueror.cpp:49
+#: konqueror.cpp:41
 #, fuzzy
 #| msgid ""
 #| "If enabled, KDE will always try to have one preloaded Konqueror instance "
@@ -93,7 +72,7 @@ msgstr ""
 #| "b> In some cases, it is actually possible that this will reduce perceived "
 #| "performance."
 msgid ""
-"<p>If enabled, KDE will always try to have one preloaded Konqueror instance "
+"<p>If enabled, Konqueror will always try to have one preloaded instance "
 "ready; preloading a new instance in the background whenever there is not one "
 "available, so that windows will always open quickly.</p><p><b>Warning:</b> "
 "In some cases, it is actually possible that this will reduce perceived "
@@ -109,21 +88,16 @@ msgstr ""
 msgid "Preloading"
 msgstr "Nạp trước"
 
-#. i18n: ectx: property (text), widget (QLabel, lb_preload_count)
-#: konqueror_ui.ui:37
-#, fuzzy
-#| msgid "Maximum number of instances kept &preloaded:"
-msgid "&Maximum number of instances kept preloaded:"
-msgstr "Số tiến trình nạ&p trước lớn nhất:"
-
 #. i18n: ectx: property (text), widget (QCheckBox, cb_preload_on_startup)
-#: konqueror_ui.ui:71
+#: konqueror_ui.ui:23
 msgid "Preload an instance after KDE startup"
 msgstr "Nạp trước một tiến trình sau khi khởi động KDE"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cb_always_have_preloaded)
-#: konqueror_ui.ui:78
-msgid "Always try to have at least one preloaded instance"
+#: konqueror_ui.ui:30
+#, fuzzy
+#| msgid "Always try to have at least one preloaded instance"
+msgid "Always try to have one preloaded instance"
 msgstr "Luôn luôn có ít nhất một tiến trình nạp trước"
 
 #: system.cpp:34
@@ -172,6 +146,31 @@ msgid ""
 msgstr ""
 "Tùy chọn này trong một số hiếm trường hợp có thể gây ra vấn đề. Xem trợ giúp "
 "« Cái này là gì? » (Shift+F1) để biết chi tiết."
+
+#, fuzzy
+#~| msgid ""
+#~| "If non-zero, this option allows keeping Konqueror instances in memory "
+#~| "after all their windows have been closed, up to the number specified in "
+#~| "this option.<p>When a new Konqueror instance is needed, one of these "
+#~| "preloaded instances will be reused instead, improving responsiveness at "
+#~| "the expense of the memory required by the preloaded instances."
+#~ msgid ""
+#~ "<p>If non-zero, this option allows keeping Konqueror instances in memory "
+#~ "after all their windows have been closed, up to the number specified in "
+#~ "this option.</p><p>When a new Konqueror instance is needed, one of these "
+#~ "preloaded instances will be reused instead, improving responsiveness at "
+#~ "the expense of the memory required by the preloaded instances.</p>"
+#~ msgstr ""
+#~ "Nếu khác 0, tùy chọn này cho phép giữ số tiến trình Konqueror trong bộ "
+#~ "nhớ sau khi các cửa sổ của chúng đã đóng không vượt quá số đã chọn.<p> "
+#~ "Khi cần một tiến trình Konqueror mới, thì một trong số những tiến trình "
+#~ "này sẽ được sử dụng, như vậy làm tăng tốc độ trả lời nhưng cần sử dụng bộ "
+#~ "nhớ cho các tiến trình nạp trước này."
+
+#, fuzzy
+#~| msgid "Maximum number of instances kept &preloaded:"
+#~ msgid "&Maximum number of instances kept preloaded:"
+#~ msgstr "Số tiến trình nạ&p trước lớn nhất:"
 
 #~ msgid ""
 #~ "Disables the minimization of memory usage and allows you to make each "

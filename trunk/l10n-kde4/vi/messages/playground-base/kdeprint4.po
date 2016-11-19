@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeprint4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-25 02:38+0100\n"
+"POT-Creation-Date: 2016-11-19 11:46+0100\n"
 "PO-Revision-Date: 2012-01-09 22:18+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -19,33 +19,39 @@ msgstr ""
 "X-Generator: Lokalize 1.4\n"
 
 #: cups/cupsaddsmb2.cpp:54 cups/cupsaddsmb2.cpp:342
+#, kde-format
 msgid "&Export"
 msgstr "&Xuất"
 
 #: cups/cupsaddsmb2.cpp:62
+#, kde-format
 msgid "Export Printer Driver to Windows Clients"
 msgstr "Xuất trình điều khiển máy in tới ứng dụng khách Windows"
 
 #: cups/cupsaddsmb2.cpp:73
+#, kde-format
 msgid "&Username:"
 msgstr "T&ên người dùng:"
 
 #: cups/cupsaddsmb2.cpp:74
+#, kde-format
 msgid "&Samba server:"
 msgstr "Máy phục vụ &Samba:"
 
 #: cups/cupsaddsmb2.cpp:75 management/kmwpassword.cpp:49
+#, kde-format
 msgid "&Password:"
 msgstr "&Mật khẩu :"
 
 #: cups/cupsaddsmb2.cpp:80
+#, kde-format
 msgid ""
 "<p><b>Samba server</b></p>Adobe Windows PostScript driver files plus the "
 "CUPS printer PPD will be exported to the <tt>[print$]</tt> special share of "
 "the Samba server (to change the source CUPS server, use the "
-"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The <tt>[print$]"
-"</tt> share must exist on the Samba side prior to clicking the <b>Export</b> "
-"button below."
+"<nobr><i>Configure Manager -> CUPS server</i></nobr> first). The <tt>[print"
+"$]</tt> share must exist on the Samba side prior to clicking the <b>Export</"
+"b> button below."
 msgstr ""
 "<p><b>Máy phục vụ Samba</b></p>Các tập tin trình điều khiển Adobe Windows "
 "PostScript cùng với PPD của máy in CUPS sẽ được xuất tới vùng dùng chung đặc "
@@ -55,6 +61,7 @@ msgstr ""
 "bạn nhấn vào nút <b>Xuất</b> bên dưới."
 
 #: cups/cupsaddsmb2.cpp:89
+#, kde-format
 msgid ""
 "<p><b>Samba username</b></p>User needs to have write access to the <tt>[print"
 "$]</tt> share on the Samba server. <tt>[print$]</tt> holds printer drivers "
@@ -69,6 +76,7 @@ msgstr ""
 "<tt>security = share</tt> (còn hoạt động được với <tt>security = user</tt>)."
 
 #: cups/cupsaddsmb2.cpp:97
+#, kde-format
 msgid ""
 "<p><b>Samba password</b></p>The Samba setting <tt>encrypt passwords = yes</"
 "tt> (default) requires prior use of <tt>smbpasswd -a [username]</tt> "
@@ -79,35 +87,42 @@ msgstr ""
 "a [tên_người_dùng]</tt> trước đó, để tạo một mật khẩu Samba đã mật mã và làm "
 "cho Samba chấp nhận nó."
 
+#. i18n("Creating directory %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:261
 #, kde-format
 msgid "Creating folder %1"
 msgstr "Đang tạo thư mục %1..."
 
+#. i18n("Uploading %1").arg(m_actions[m_actionindex+1]));
 #: cups/cupsaddsmb2.cpp:267
 #, kde-format
 msgid "Uploading %1"
 msgstr "Đang tải lên %1..."
 
+#. i18n("Installing driver for %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:273
 #, kde-format
 msgid "Installing driver for %1"
 msgstr "Đang cài đặt trình phục vụ cho %1..."
 
+#. i18n("Installing printer %1").arg(m_actions[m_actionindex]));
 #: cups/cupsaddsmb2.cpp:279
 #, kde-format
 msgid "Installing printer %1"
 msgstr "Đang cài đặt máy in %1..."
 
 #: cups/cupsaddsmb2.cpp:309
+#, kde-format
 msgid "&Close"
 msgstr "Đón&g"
 
 #: cups/cupsaddsmb2.cpp:315
+#, kde-format
 msgid "Driver successfully exported."
 msgstr "Trình điều khiển đã được xuất."
 
 #: cups/cupsaddsmb2.cpp:324
+#, kde-format
 msgid ""
 "Operation failed. Possible reasons are: permission denied or invalid Samba "
 "configuration (see <a href=\"man:/cupsaddsmb\">cupsaddsmb</a> manual page "
@@ -122,6 +137,7 @@ msgstr ""
 "đăng nhập / mật khẩu khác."
 
 #: cups/cupsaddsmb2.cpp:331
+#, kde-format
 msgid "Operation aborted (process killed)."
 msgstr "Tháo tác bị hủy bỏ (tiến trình bị buộc kết thúc)."
 
@@ -151,6 +167,7 @@ msgstr ""
 "giao tiếp để tìm thông tin thêm về chức năng này."
 
 #: cups/cupsaddsmb2.cpp:371
+#, kde-format
 msgid ""
 "Some driver files are missing. You can get them on <a href=\"http://www."
 "adobe.com\">Adobe</a> web site. See <a href=\"man:/cupsaddsmb\">cupsaddsmb</"
@@ -163,12 +180,14 @@ msgstr ""
 "cần phải co phần mềm <a href=\"http://www.cups.org\">CUPS</a> phiên bản "
 "1.1.11 hay mới hơn)."
 
+#. i18n("<p>Preparing to upload driver to host <b>%1</b>").arg(m_servered->text()));
 #: cups/cupsaddsmb2.cpp:382
 #, kde-format
 msgid "Preparing to upload driver to host %1"
 msgstr "Đang chuẩn bị tải trình điều khiển lên máy %1..."
 
 #: cups/cupsaddsmb2.cpp:387 management/networkscanner.cpp:139
+#, kde-format
 msgid "&Abort"
 msgstr "&Hủy bỏ"
 
@@ -177,44 +196,54 @@ msgstr "&Hủy bỏ"
 msgid "The driver for printer <b>%1</b> could not be found."
 msgstr "Không tìm thấy trình điều khiển máy in <b>%1</b>."
 
+#. i18n("Preparing to install driver on host <b>%1</b>").arg(m_servered->text()));
 #: cups/cupsaddsmb2.cpp:433
 #, kde-format
 msgid "Preparing to install driver on host %1"
 msgstr "Đang chuẩn bị cài đặt trình điều khiển vào máy %1..."
 
 #: cups/ippreportdlg.cpp:37
+#, kde-format
 msgid "IPP Report"
 msgstr "Báo cáo IPP"
 
 #: cups/ippreportdlg.cpp:39 cups/ippreportdlg.cpp:48 kprintdialog.cpp:307
+#, kde-format
 msgid "&Print"
 msgstr "&In"
 
 #: cups/ippreportdlg.cpp:94
+#, kde-format
 msgid "Internal error: unable to generate HTML report."
 msgstr "Lỗi nội bộ: không thể tạo ra báo cáo HTML."
 
 #: cups/ipprequest.cpp:101
+#, kde-format
 msgid "You do not have access to the requested resource."
 msgstr "Bạn không có quyền truy cập tài nguyên đã yêu cầu."
 
 #: cups/ipprequest.cpp:104
+#, kde-format
 msgid "You are not authorized to access the requested resource."
 msgstr "Không cho phép bạn truy cập tài nguyên đã yêu cầu."
 
 #: cups/ipprequest.cpp:107
+#, kde-format
 msgid "The requested operation cannot be completed."
 msgstr "Không thể làm xong thao tác đã yêu cầu."
 
 #: cups/ipprequest.cpp:110
+#, kde-format
 msgid "The requested service is currently unavailable."
 msgstr "Dịch vụ đã yêu cầu hiện thời không sẵn sàng."
 
 #: cups/ipprequest.cpp:113
+#, kde-format
 msgid "The target printer is not accepting print jobs."
 msgstr "Máy in đích hiện thời không chấp nhận công việc in."
 
 #: cups/ipprequest.cpp:219
+#, kde-format
 msgid ""
 "Connection to CUPS server failed. Check that the CUPS server is correctly "
 "installed and running."
@@ -223,107 +252,133 @@ msgstr ""
 "đã được cài đặt cho đúng và chạy được."
 
 #: cups/ipprequest.cpp:222
+#, kde-format
 msgid "The IPP request failed for an unknown reason."
 msgstr "Yêu cầu IPP bị lỗi, không biết sao."
 
 #: cups/ipprequest.cpp:331
+#, kde-format
 msgid "Attribute"
 msgstr "Thuộc tính"
 
 #: cups/ipprequest.cpp:332
+#, kde-format
 msgid "Values"
 msgstr "Giá trị"
 
 #: cups/ipprequest.cpp:358
+#, kde-format
 msgid "True"
 msgstr "Đúng"
 
 #: cups/ipprequest.cpp:358
+#, kde-format
 msgid "False"
 msgstr "Sai"
 
 #: cups/kmconfigcups.cpp:33
+#, kde-format
 msgid "CUPS Server"
 msgstr "Máy phục vụ CUPS"
 
 #: cups/kmconfigcups.cpp:34
+#, kde-format
 msgid "CUPS Server Settings"
 msgstr "Thiết lập máy phục vụ CUPS"
 
 #: cups/kmconfigcupsdir.cpp:35
+#, kde-format
 msgid "Folder"
 msgstr "Thư mục"
 
 #: cups/kmconfigcupsdir.cpp:36
+#, kde-format
 msgid "CUPS Folder Settings"
 msgstr "Thiết lập thư mục CUPS"
 
 #: cups/kmconfigcupsdir.cpp:39
+#, kde-format
 msgid "Installation Folder"
 msgstr "Thư mục cài đặt"
 
 #: cups/kmconfigcupsdir.cpp:43
+#, kde-format
 msgid "Standard installation (/)"
 msgstr "Cài đặt chuẩn (/)"
 
 #: cups/kmcupsconfigwidget.cpp:69
+#, kde-format
 msgid "Server Information"
 msgstr "Thông tin máy phục vụ"
 
 #: cups/kmcupsconfigwidget.cpp:71
+#, kde-format
 msgid "Account Information"
 msgstr "Thông tin tài liệu"
 
 #: cups/kmcupsconfigwidget.cpp:73 rlpr/kmproxywidget.cpp:36
+#, kde-format
 msgid "&Host:"
 msgstr "&Máy:"
 
 #: cups/kmcupsconfigwidget.cpp:74 management/kmwsocketutil.cpp:61
 #: management/networkscanner.cpp:318 rlpr/kmproxywidget.cpp:37
+#, kde-format
 msgid "&Port:"
 msgstr "Cổn&g:"
 
 #: cups/kmcupsconfigwidget.cpp:81
+#, kde-format
 msgid "&User:"
 msgstr "&Người dùng:"
 
 #: cups/kmcupsconfigwidget.cpp:82
+#, kde-format
 msgid "Pass&word:"
 msgstr "&Mật khẩu:"
 
 #: cups/kmcupsconfigwidget.cpp:85
+#, kde-format
 msgid "&Store password in configuration file"
 msgstr "&Lưu mật khẩu vào tập tin cấu hình"
 
 #: cups/kmcupsconfigwidget.cpp:87
+#, kde-format
 msgid "Use &anonymous access"
 msgstr "Truy cấp &vô danh"
 
 #: cups/kmcupsjobmanager.cpp:263
+#, kde-format
 msgid "Job Report"
 msgstr "Báo cáo công việc"
 
 #: cups/kmcupsjobmanager.cpp:265 cups/kmcupsjobmanager.cpp:372
+#, kde-format
 msgid "Unable to retrieve job information: "
 msgstr "Không thể lấy thông tin về công việc: "
 
 #: cups/kmcupsjobmanager.cpp:274
+#, kde-format
 msgid "&Job IPP Report"
 msgstr "Báo cáo IPP công &việc"
 
 #: cups/kmcupsjobmanager.cpp:277
+#, kde-format
 msgid "&Increase Priority"
 msgstr "Tăng ưu t&iên"
 
 #: cups/kmcupsjobmanager.cpp:280
+#, kde-format
 msgid "&Decrease Priority"
 msgstr "Giảm ư&u tiên"
 
 #: cups/kmcupsjobmanager.cpp:283
+#, kde-format
 msgid "&Edit Attributes..."
 msgstr "&HIệu chỉnh thuộc tính..."
 
 #: cups/kmcupsjobmanager.cpp:337
+#, kde-format
 msgid "Unable to change job priority: "
 msgstr "Không thể thay đổi ưu tiên công việc: "
 
@@ -338,11 +393,12 @@ msgid "Attributes of Job %1@%2 (%3)"
 msgstr "Thuộc tính của công việc %1@%2 (%3)"
 
 #: cups/kmcupsjobmanager.cpp:429
+#, kde-format
 msgid "Unable to set job attributes: "
 msgstr "Không thể đặt thuộc tính công việc: "
 
-#: cups/kmcupsmanager.cpp:506 lpr/matichandler.cpp:228
-#: lpr/matichandler.cpp:309
+#: cups/kmcupsmanager.cpp:506 lpr/matichandler.cpp:228 lpr/matichandler.cpp:309
+#, kde-format
 msgid ""
 "Unable to find the executable foomatic-datafile in your PATH. Check that "
 "Foomatic is correctly installed."
@@ -350,8 +406,7 @@ msgstr ""
 "Không tìm thấy tập tin thực hiện được foomatic-datafile trong đường dẫn mặc "
 "định PATH của bạn. Hãy kiểm tra xem Foomatic đã được cài đặt cho đúng."
 
-#: cups/kmcupsmanager.cpp:522 lpr/matichandler.cpp:244
-#: lpr/matichandler.cpp:347
+#: cups/kmcupsmanager.cpp:522 lpr/matichandler.cpp:244 lpr/matichandler.cpp:347
 #, kde-format
 msgid ""
 "Unable to create the Foomatic driver [%1,%2]. Either that driver does not "
@@ -362,6 +417,7 @@ msgstr ""
 "đó."
 
 #: cups/kmcupsmanager.cpp:658
+#, kde-format
 msgid "Library cupsdconf not found. Check your installation."
 msgstr "Không tìm thấy thư viện cupsdconf. Vui lòng kiểm tra lại bản cài đặt."
 
@@ -371,10 +427,12 @@ msgid "Symbol %1 not found in cupsdconf library."
 msgstr "Không tìm thấy ký hiệu %1 trong thư viện cupsdconf."
 
 #: cups/kmcupsmanager.cpp:732
+#, kde-format
 msgid "&Export Driver..."
 msgstr "&Xuất trình điều khiển..."
 
 #: cups/kmcupsmanager.cpp:738
+#, kde-format
 msgid "&Printer IPP Report"
 msgstr "Báo cáo IPP máy &in"
 
@@ -384,10 +442,12 @@ msgid "IPP Report for %1"
 msgstr "Báo cáo IPP cho %1"
 
 #: cups/kmcupsmanager.cpp:786
+#, kde-format
 msgid "Unable to retrieve printer information. Error received:"
 msgstr "Không thể lấy thông tin về máy in. Nhận lỗi :"
 
 #: cups/kmcupsmanager.cpp:799
+#, kde-format
 msgid "Server"
 msgstr "Máy phục vụ"
 
@@ -401,14 +461,17 @@ msgstr ""
 "CUPS đã được cài đặt cho đúng và đang chạy. Lỗi : %1."
 
 #: cups/kmcupsmanager.cpp:831
+#, kde-format
 msgid "the IPP request failed for an unknown reason"
 msgstr "yêu cầu IPP bị lỗi, không biết sao."
 
 #: cups/kmcupsmanager.cpp:868
+#, kde-format
 msgid "connection refused"
 msgstr "kết nối bị từ chối."
 
 #: cups/kmcupsmanager.cpp:871
+#, kde-format
 msgid "host not found"
 msgstr "chưa tìm mấy chủ"
 
@@ -427,6 +490,7 @@ msgstr ""
 "CUPS đã được cài đặt cho đúng và đang chạy. Lỗi : %2: %1."
 
 #: cups/kmcupsuimanager.cpp:97
+#, kde-format
 msgid ""
 "<qt><p>Print queue on remote CUPS server</p><p>Use this for a print queue "
 "installed on a remote machine running a CUPS server. This allows to use "
@@ -438,6 +502,7 @@ msgstr ""
 "</p></qt>"
 
 #: cups/kmcupsuimanager.cpp:104
+#, kde-format
 msgid ""
 "<qt><p>Network IPP printer</p><p>Use this for a network-enabled printer "
 "using the IPP protocol. Modern high-end printers can use this mode. Use this "
@@ -449,6 +514,7 @@ msgstr ""
 "qt>"
 
 #: cups/kmcupsuimanager.cpp:111
+#, kde-format
 msgid ""
 "<qt><p>Fax/Modem printer</p><p>Use this for a fax/modem printer. This "
 "requires the installation of the <a href=\"http://vigna.dsi.unimi.it/"
@@ -462,6 +528,7 @@ msgstr ""
 "ra.</p></qt>"
 
 #: cups/kmcupsuimanager.cpp:118
+#, kde-format
 msgid ""
 "<qt><p>Other printer</p><p>Use this for any printer type. To use this "
 "option, you must know the URI of the printer you want to install. Refer to "
@@ -475,6 +542,7 @@ msgstr ""
 "phương khác không thích hợp với các khả năng khác.</p></qt>"
 
 #: cups/kmcupsuimanager.cpp:126
+#, kde-format
 msgid ""
 "<qt><p>Class of printers</p><p>Use this to create a class of printers. When "
 "sending a document to a class, the document is actually sent to the first "
@@ -487,135 +555,168 @@ msgstr ""
 "in.</p></qt>"
 
 #: cups/kmcupsuimanager.cpp:139
+#, kde-format
 msgid "Re&mote CUPS server (IPP/HTTP)"
 msgstr "Máy phục vụ CUPS từ &xa (IPP/HTTP)"
 
 #: cups/kmcupsuimanager.cpp:140
+#, kde-format
 msgid "Network printer w/&IPP (IPP/HTTP)"
 msgstr "Máy in mạng có &IPP (IPP/HTTP)"
 
 #: cups/kmcupsuimanager.cpp:141
+#, kde-format
 msgid "S&erial Fax/Modem printer"
 msgstr "Máy in điện thư/điều giải &nối tiếp"
 
 #: cups/kmcupsuimanager.cpp:142
+#, kde-format
 msgid "Other &printer type"
 msgstr "Kiểu máy &in khác"
 
 #: cups/kmcupsuimanager.cpp:144
+#, kde-format
 msgid "Cl&ass of printers"
 msgstr "H&ạng máy in"
 
 #: cups/kmcupsuimanager.cpp:175
+#, kde-format
 msgid "An error occurred while retrieving the list of available backends:"
 msgstr "Gặp lỗi khi lấy danh sách các hậu phương sẵn sàng:"
 
 #: cups/kmcupsuimanager.cpp:230
+#, kde-format
 msgid "Priority"
 msgstr "Ưu tiên"
 
 #: cups/kmcupsuimanager.cpp:230
+#, kde-format
 msgid "Billing Information"
 msgstr "Thông tin hoá đơn"
 
 #: cups/kmpropbanners.cpp:37 cups/kmwbanners.cpp:92
+#, kde-format
 msgid "&Starting banner:"
 msgstr "Đầ&u băng cờ :"
 
 #: cups/kmpropbanners.cpp:38 cups/kmwbanners.cpp:93
+#, kde-format
 msgid "&Ending banner:"
 msgstr "Cuố&i băng cờ :"
 
 #: cups/kmpropbanners.cpp:53 kpgeneralpage.cpp:300
+#, kde-format
 msgid "Banners"
 msgstr "Băng cờ"
 
 #: cups/kmpropbanners.cpp:54
+#, kde-format
 msgid "Banner Settings"
 msgstr "Thiết lập băng cờ"
 
 #: cups/kmpropquota.cpp:39 cups/kmwquota.cpp:96
+#, kde-format
 msgid "&Period:"
 msgstr "&Thời kỳ:"
 
 #: cups/kmpropquota.cpp:40 cups/kmwquota.cpp:97
+#, kde-format
 msgid "&Size limit (KB):"
 msgstr "Giới &hạn cỡ (KB):"
 
 #: cups/kmpropquota.cpp:41 cups/kmwquota.cpp:98
+#, kde-format
 msgid "&Page limit:"
 msgstr "Giới hạn tr&ang :"
 
 #: cups/kmpropquota.cpp:59
+#, kde-format
 msgid "Quotas"
 msgstr "Chỉ tiêu"
 
 #: cups/kmpropquota.cpp:60
+#, kde-format
 msgid "Quota Settings"
 msgstr "Thiết lập chỉ tiêu"
 
 #: cups/kmpropquota.cpp:79 cups/kmwquota.cpp:84
+#, kde-format
 msgid "No quota"
 msgstr "Không có chỉ tiêu"
 
 #: cups/kmpropquota.cpp:80 cups/kmpropquota.cpp:81 cups/kmwquota.cpp:87
 #: cups/kmwquota.cpp:90
+#, kde-format
 msgid "None"
 msgstr "Không có"
 
 #: cups/kmpropusers.cpp:40 cups/kmwusers.cpp:39
+#, kde-format
 msgid "Users"
 msgstr "Người dùng"
 
 #: cups/kmpropusers.cpp:41 cups/kmwusers.cpp:36
+#, kde-format
 msgid "Users Access Settings"
 msgstr "Thiết lập truy cập của người dùng"
 
 #: cups/kmpropusers.cpp:55
+#, kde-format
 msgid "Denied users"
 msgstr "Người dùng bị cấm"
 
 #: cups/kmpropusers.cpp:60
+#, kde-format
 msgid "Allowed users"
 msgstr "Người dùng được chấp nhận"
 
 #: cups/kmpropusers.cpp:72
+#, kde-format
 msgid "All users allowed"
 msgstr "Mọi người dùng được chấp nhận"
 
 #: cups/kmwbanners.cpp:57
+#, kde-format
 msgid "No Banner"
 msgstr "Không có băng cờ"
 
 #: cups/kmwbanners.cpp:58
+#, kde-format
 msgid "Classified"
 msgstr "Đã phân loại"
 
 #: cups/kmwbanners.cpp:59
+#, kde-format
 msgid "Confidential"
 msgstr "Tin tưởng"
 
 #: cups/kmwbanners.cpp:60
+#, kde-format
 msgid "Secret"
 msgstr "Bí mật"
 
 #: cups/kmwbanners.cpp:61
+#, kde-format
 msgid "Standard"
 msgstr "Chuẩn"
 
 #: cups/kmwbanners.cpp:62
+#, kde-format
 msgid "Top Secret"
 msgstr "Tối mật"
 
 #: cups/kmwbanners.cpp:63
+#, kde-format
 msgid "Unclassified"
 msgstr "Chưa phân loại"
 
 #: cups/kmwbanners.cpp:86
+#, kde-format
 msgid "Banner Selection"
 msgstr "Chọn băng cờ"
 
 #: cups/kmwbanners.cpp:100
+#, kde-format
 msgid ""
 "<p>Select the default banners associated with this printer. These banners "
 "will be inserted before and/or after each print job sent to the printer. If "
@@ -626,22 +727,27 @@ msgstr ""
 "Nếu bạn không muốn dùng băng cờ, hãy chọn « Không có băng cờ ».</p>"
 
 #: cups/kmwfax.cpp:37
+#, kde-format
 msgid "Fax Serial Device"
 msgstr "Thiết bị điện thư nối tiếp"
 
 #: cups/kmwfax.cpp:42
+#, kde-format
 msgid "<p>Select the device which your serial Fax/Modem is connected to.</p>"
 msgstr "<p>Hãy chọn thiết bị nơi máy điện thư / điều giải được kết nối.</p>"
 
 #: cups/kmwfax.cpp:73
+#, kde-format
 msgid "You must select a device."
 msgstr "Bạn phải chọn thiết bị."
 
 #: cups/kmwipp.cpp:35
+#, kde-format
 msgid "Remote IPP server"
 msgstr "Máy phục vụ IPP ở xa"
 
 #: cups/kmwipp.cpp:39
+#, kde-format
 msgid ""
 "<p>Enter the information concerning the remote IPP server owning the "
 "targeted printer. This wizard will poll the server before continuing.</p>"
@@ -651,18 +757,22 @@ msgstr ""
 
 #: cups/kmwipp.cpp:42 management/kmwlpd.cpp:48 rlpr/kmproprlpr.cpp:34
 #: rlpr/kmwrlpr.cpp:62
+#, kde-format
 msgid "Host:"
 msgstr "Máy:"
 
 #: cups/kmwipp.cpp:43
+#, kde-format
 msgid "Port:"
 msgstr "Cổng:"
 
 #: cups/kmwipp.cpp:51 management/kmwsmb.cpp:87
+#, kde-format
 msgid "Empty server name."
 msgstr "Tên máy phục vụ rỗng."
 
 #: cups/kmwipp.cpp:57
+#, kde-format
 msgid "Incorrect port number."
 msgstr "Số hiệu cổng không đúng"
 
@@ -673,14 +783,17 @@ msgstr ""
 "<nobr>Không thể nối tới máy phục vụ <b>%1</b> trên cổng<b>%2</b>.</nobr>"
 
 #: cups/kmwippprinter.cpp:43
+#, kde-format
 msgid "IPP Printer Information"
 msgstr "Thông tin máy in IPP"
 
 #: cups/kmwippprinter.cpp:53
+#, kde-format
 msgid "&Printer URI:"
 msgstr "URI máy in:"
 
 #: cups/kmwippprinter.cpp:61
+#, kde-format
 msgid ""
 "<p>Either enter the printer URI directly, or use the network scanning "
 "facility.</p>"
@@ -688,14 +801,17 @@ msgstr ""
 "<p>Hoặc nhập trực tiếp URI của máy in, hoặc dùng khả năng quét qua mạng.</p>"
 
 #: cups/kmwippprinter.cpp:62
+#, kde-format
 msgid "&IPP Report"
 msgstr "Báo cáo &IPP"
 
 #: cups/kmwippprinter.cpp:110
+#, kde-format
 msgid "You must enter a printer URI."
 msgstr "Bạn phải nhập URI (địa điểm, địa chỉ) của máy in."
 
 #: cups/kmwippprinter.cpp:116 management/kmwsocket.cpp:118
+#, kde-format
 msgid "No printer found at this address/port."
 msgstr "Không tìm thấy máy in tại địa chỉ/cổng này."
 
@@ -730,24 +846,25 @@ msgid "<b>Model</b>: %1<br />"
 msgstr "<b>Mô hình</b>: %1<br>"
 
 #: cups/kmwippprinter.cpp:180 kmprinter.cpp:135
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Idle"
 msgid "Idle"
 msgstr "Nghỉ"
 
 #: cups/kmwippprinter.cpp:181 kmprinter.cpp:137
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Stopped"
 msgid "Stopped"
 msgstr "Bị ngừng"
 
 #: cups/kmwippprinter.cpp:182 kmjob.cpp:110 kmprinter.cpp:136
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Processing..."
 msgid "Processing..."
 msgstr "Đang xử lý..."
 
 #: cups/kmwippprinter.cpp:183 kmjob.cpp:131 kmprinter.cpp:138
+#, kde-format
 msgctxt "Unknown State"
 msgid "Unknown"
 msgstr "Không rõ"
@@ -770,18 +887,22 @@ msgid "Unable to generate report. IPP request failed with message: %1 (0x%2)."
 msgstr "Không thể tạo ra báo cáo. Yêu cầu IPP bị lỗi : %1 (0x%2)."
 
 #: cups/kmwippselect.cpp:36
+#, kde-format
 msgid "Remote IPP Printer Selection"
 msgstr "Chọn máy in IPP từ xa"
 
 #: cups/kmwippselect.cpp:50
+#, kde-format
 msgid "You must select a printer."
 msgstr "Phải chọn một máy in."
 
 #: cups/kmwother.cpp:41
+#, kde-format
 msgid "URI Selection"
 msgstr "Chọn URI"
 
 #: cups/kmwother.cpp:47
+#, kde-format
 msgid ""
 "<p>Enter the URI corresponding to the printer to be installed. Examples:</"
 "p><ul><li>smb://[login[:passwd]@]server/printer</li><li>lpd://server/queue</"
@@ -793,6 +914,7 @@ msgstr ""
 
 #: cups/kmwother.cpp:52 management/kminfopage.cpp:53
 #: management/kmpropbackend.cpp:35 management/kmwlocal.cpp:54
+#, kde-format
 msgid "URI:"
 msgstr "URI:"
 
@@ -802,34 +924,42 @@ msgid "CUPS Server %1:%2"
 msgstr "Máy phục vụ CUPS %1:%2"
 
 #: cups/kmwquota.cpp:46
+#, kde-format
 msgid "second(s)"
 msgstr "giây"
 
 #: cups/kmwquota.cpp:47
+#, kde-format
 msgid "minute(s)"
 msgstr "phút"
 
 #: cups/kmwquota.cpp:48
+#, kde-format
 msgid "hour(s)"
 msgstr "giờ"
 
 #: cups/kmwquota.cpp:49
+#, kde-format
 msgid "day(s)"
 msgstr "ngày"
 
 #: cups/kmwquota.cpp:50
+#, kde-format
 msgid "week(s)"
 msgstr "tuần"
 
 #: cups/kmwquota.cpp:51
+#, kde-format
 msgid "month(s)"
 msgstr "tháng"
 
 #: cups/kmwquota.cpp:79
+#, kde-format
 msgid "Printer Quota Settings"
 msgstr "Thiết lập chỉ tiêu máy in"
 
 #: cups/kmwquota.cpp:106
+#, kde-format
 msgid ""
 "<p>Set here the quota for this printer. Using limits of <b>0</b> means that "
 "no quota will be used. This is equivalent to setting the quota period to "
@@ -842,28 +972,33 @@ msgstr ""
 "người dùng, cũng áp dụng cho mọi người dùng.</p>"
 
 #: cups/kmwquota.cpp:133
+#, kde-format
 msgid "You must specify at least one quota limit."
 msgstr "Phải ghi rõ ít nhất một sự giới hạn chế chỉ tiêu."
 
 #: cups/kmwusers.cpp:41
+#, kde-format
 msgid "Allowed Users"
 msgstr "Người dùng được chấp nhận"
 
 #: cups/kmwusers.cpp:42
+#, kde-format
 msgid "Denied Users"
 msgstr "Người dùng bị từ chối"
 
 #: cups/kmwusers.cpp:44
+#, kde-format
 msgid "Define here a group of allowed/denied users for this printer."
 msgstr ""
 "Ở đây hãy xác định nhóm những người dùng (không) có quyền dùng máy in này."
 
 #: cups/kmwusers.cpp:45 management/kxmlcommanddlg.cpp:116
+#, kde-format
 msgid "&Type:"
 msgstr "&Kiểu :"
 
 #: cups/kphpgl2page.cpp:32
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Print in Black Only (Blackplot)</b>  <p>The 'blackplot' option "
 #| "specifies that all pens should plot in black-only: The default is to use "
@@ -890,7 +1025,7 @@ msgstr ""
 "em>  <pre>    -o blackplot=true  </pre>  </p>  </qt>"
 
 #: cups/kphpgl2page.cpp:47
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Scale Print Image to Page Size</b>  <p>The 'fitplot' option "
 #| "specifies that the HP-GL image should be scaled to fill  exactly the page "
@@ -936,7 +1071,7 @@ msgstr ""
 "</p>  </qt>"
 
 #: cups/kphpgl2page.cpp:67
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Set Pen Width for HP-GL (if not defined in file)</b>.  <p>The "
 #| "pen width value can be set here in case the original HP-GL file does not "
@@ -973,7 +1108,7 @@ msgstr ""
 "<pre>    -o penwidth=...   # example: \"2000\" or \"500\"  </pre> </p>  </qt>"
 
 #: cups/kphpgl2page.cpp:84
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>HP-GL Print Options</b>  <p>All options on this page are only "
 #| "applicable if you use KDEPrint to send HP-GL and  HP-GL/2 files to one of "
@@ -1023,23 +1158,27 @@ msgstr ""
 "# examples: \"true\" or \"false\"  </pre> </p>  </qt>"
 
 #: cups/kphpgl2page.cpp:112
+#, kde-format
 msgid "HP-GL/2 Options"
 msgstr "Tùy chọn HP-GL/2"
 
 #: cups/kphpgl2page.cpp:115
+#, kde-format
 msgid "&Use only black pen"
 msgstr "Dùng chỉ &bút đen"
 
 #: cups/kphpgl2page.cpp:118
+#, kde-format
 msgid "&Fit plot to page"
 msgstr "&Vẽ vừa cỡ trang"
 
 #: cups/kphpgl2page.cpp:122
+#, kde-format
 msgid "&Pen width:"
 msgstr "&Rộng bút:"
 
 #: cups/kpimagepage.cpp:43
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Brightness:</b> Slider to control the brightness value of all "
 #| "colors used.</p> <p> The brightness value can range from 0 to 200. Values "
@@ -1066,7 +1205,7 @@ msgstr ""
 "p>  </qt>"
 
 #: cups/kpimagepage.cpp:57
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Hue (Tint):</b> Slider to control the hue value for color "
 #| "rotation.</p> <p> The hue value is a number from -360 to 360 and "
@@ -1120,7 +1259,7 @@ msgstr ""
 "# use range from \"-360\" to \"360\"  </pre> </p>  </qt>"
 
 #: cups/kpimagepage.cpp:82
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Saturation:</b> Slider to control the saturation value for "
 #| "all colors used.</p> <p> The saturation value adjusts the saturation of "
@@ -1157,7 +1296,7 @@ msgstr ""
 "o saturation=...      # use range from \"0\" to \"200\"  </pre> </p>  </qt>"
 
 #: cups/kpimagepage.cpp:100
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Gamma:</b> Slider to control the gamma value for color "
 #| "correction.</p> <p> The gamma value can range from 1 to 3000. A gamma "
@@ -1188,7 +1327,7 @@ msgstr ""
 "gamma=...      # use range from \"1\" to \"3000\"  </pre> </p>  </qt>"
 
 #: cups/kpimagepage.cpp:117
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Image Printing Options</b></p> <p>All options controlled on "
 #| "this page only apply to printing images. Most image file formats are "
@@ -1219,7 +1358,7 @@ msgstr ""
 "điều khiển.</p>  </p>  </qt>"
 
 #: cups/kpimagepage.cpp:135
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Coloration Preview Thumbnail</b></p> <p>The coloration "
 #| "preview thumbnail indicates change of image coloration by different "
@@ -1245,7 +1384,7 @@ msgstr ""
 "Gamma, xem mục « Cái này là gì? » được cung cấp cho mỗi điều khiển.</p></qt>"
 
 #: cups/kpimagepage.cpp:151
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Image Size:</b> Dropdown menu to control the image size on "
 #| "the printed paper. The menu works in conjunction with slider below. The "
@@ -1338,7 +1477,7 @@ msgstr ""
 "pre> </p>  </qt>"
 
 #: cups/kpimagepage.cpp:191
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Position Preview Thumbnail</b></p> <p>This position preview "
 #| "thumbnail indicates the position of the image on the paper sheet. "
@@ -1364,7 +1503,7 @@ msgstr ""
 "li> <li> phải       </li> <li> phải-trên   </li> </ul>  </p>  </qt>"
 
 #: cups/kpimagepage.cpp:209
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<qt> <p><b>Reset to Default Values</b> </p> <p> Reset all coloration "
 #| "settings to default values. Default values are: <ul> <li> Brightness: 100 "
@@ -1382,7 +1521,7 @@ msgstr ""
 "Gamma:     1000 </li> </ul>  </p>  </qt>"
 
 #: cups/kpimagepage.cpp:221
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Image Positioning:</b></p>  <p>Select a pair of radiobuttons "
 #| "to  move image to the position you want on the paper printout. Default is "
@@ -1405,65 +1544,77 @@ msgstr ""
 "o position=...       # examples: \"top-left\" or \"bottom\" </pre> </p> </qt>"
 
 #: cups/kpimagepage.cpp:236
+#, kde-format
 msgid "Image"
 msgstr "Ảnh"
 
 #: cups/kpimagepage.cpp:238
+#, kde-format
 msgid "Color Settings"
 msgstr "Thiết lập màu sắc"
 
 #: cups/kpimagepage.cpp:241
+#, kde-format
 msgid "Image Size"
 msgstr "Cỡ ảnh"
 
 #: cups/kpimagepage.cpp:244
+#, kde-format
 msgid "Image Position"
 msgstr "Vị trí ảnh"
 
 #: cups/kpimagepage.cpp:249
+#, kde-format
 msgid "&Brightness:"
 msgstr "Độ &sáng:"
 
 #: cups/kpimagepage.cpp:254
+#, kde-format
 msgid "&Hue (Color rotation):"
 msgstr "&Sắc màu (xoay màu):"
 
 #: cups/kpimagepage.cpp:259
+#, kde-format
 msgid "&Saturation:"
 msgstr "Độ &bão hoà :"
 
 #: cups/kpimagepage.cpp:264
+#, kde-format
 msgid "&Gamma (Color correction):"
 msgstr "&amma (sửa màu):"
 
 #: cups/kpimagepage.cpp:285
+#, kde-format
 msgid "&Default Settings"
 msgstr "Thiết lập &mặc định"
 
 #: cups/kpimagepage.cpp:291
+#, kde-format
 msgid "Natural Image Size"
 msgstr "Cỡ ảnh tự nhiên"
 
 #: cups/kpimagepage.cpp:292
+#, kde-format
 msgid "Resolution (ppi)"
 msgstr "Độ phân giải (ppi)"
 
 #: cups/kpimagepage.cpp:294
-#, no-c-format
+#, no-c-format, kde-format
 msgid "% of Page"
 msgstr "% trang"
 
 #: cups/kpimagepage.cpp:296
-#, no-c-format
+#, no-c-format, kde-format
 msgid "% of Natural Image Size"
 msgstr "% kích cỡ ảnh tự nhiên"
 
 #: cups/kpimagepage.cpp:306
+#, kde-format
 msgid "&Image size type:"
 msgstr "K&iểu kích cỡ ảnh:"
 
 #: cups/kpschedulepage.cpp:39
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Print Job Billing and Accounting</b></p>  <p>Insert a "
 #| "meaningful string here to associate the current print job with a certain "
@@ -1501,7 +1652,7 @@ msgstr ""
 "\"  </pre> </p>  </qt>"
 
 #: cups/kpschedulepage.cpp:59
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Scheduled Printing</b></p>  <p>Scheduled printing lets you "
 #| "control the time of the actual printout, while you can still send away "
@@ -1551,7 +1702,7 @@ msgstr ""
 "\"  </pre> </p>  </qt>"
 
 #: cups/kpschedulepage.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Page Labels</b></p>  <p>Page Labels are printed by CUPS at "
 #| "the top and bottom of each page. They appear on the pages surrounded by a "
@@ -1577,7 +1728,7 @@ msgstr ""
 "example: \"Company Confidential\"  </pre> </p>  </qt>"
 
 #: cups/kpschedulepage.cpp:101
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Job Priority</b></p>  <p>Usually CUPS prints all jobs per "
 #| "queue according to the \"FIFO\" principle: <em>First In, First Out</em>. "
@@ -1621,67 +1772,82 @@ msgstr ""
 "example: \"10\" or \"66\" or \"99\"  </pre> </p>  </qt>"
 
 #: cups/kpschedulepage.cpp:125
+#, kde-format
 msgid "Advanced Options"
 msgstr "Tùy chọn cấp cao"
 
 #: cups/kpschedulepage.cpp:136
+#, kde-format
 msgid "Immediately"
 msgstr "Ngay"
 
 #: cups/kpschedulepage.cpp:137
+#, kde-format
 msgid "Never (hold indefinitely)"
 msgstr "Không bao giờ (giữ lại vô hạn)"
 
 #: cups/kpschedulepage.cpp:138
+#, kde-format
 msgid "Daytime "
 msgstr "Ban ngày"
 
 #: cups/kpschedulepage.cpp:139
+#, kde-format
 msgid "Evening"
 msgstr "Chiều/tối"
 
 #: cups/kpschedulepage.cpp:140
+#, kde-format
 msgid "Night"
 msgstr "Đêm"
 
 #: cups/kpschedulepage.cpp:141
+#, kde-format
 msgid "Weekend"
 msgstr "Cuối tuần"
 
 #: cups/kpschedulepage.cpp:142
+#, kde-format
 msgid "Second Shift (after close of business)"
 msgstr "Ca thứ hai (sau giờ làm việc)"
 
 #: cups/kpschedulepage.cpp:143
+#, kde-format
 msgid "Third Shift (after midnight)"
 msgstr "Ca thứ ba (sau nửa đêm)"
 
 #: cups/kpschedulepage.cpp:144
+#, kde-format
 msgid "Specified Time"
 msgstr "Giờ xác định"
 
 #: cups/kpschedulepage.cpp:162
+#, kde-format
 msgid "&Scheduled printing:"
 msgstr "In đã &định thời :"
 
 #: cups/kpschedulepage.cpp:165
+#, kde-format
 msgid "&Billing information:"
 msgstr "Thông tin &hoá đơn:"
 
 #: cups/kpschedulepage.cpp:168
+#, kde-format
 msgid "T&op/Bottom page label:"
 msgstr "Nhãn t&rên/dưới trang:"
 
 #: cups/kpschedulepage.cpp:171
+#, kde-format
 msgid "&Job priority:"
 msgstr "&Ưu tiên công việc:"
 
 #: cups/kpschedulepage.cpp:204
+#, kde-format
 msgid "The time specified is not valid."
 msgstr "Giờ đã xác định không hợp lệ."
 
 #: cups/kptagspage.cpp:36
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <ul> <li>Use any current or future standard CUPS job option not "
 #| "supported by the  KDEPrint GUI. </li> <li>Control any custom job option "
@@ -1702,17 +1868,17 @@ msgstr "Giờ đã xác định không hợp lệ."
 #| "yourself) by viewing the <em>\"Job IPP Report\"</em> for the job.</p> "
 #| "<b>Examples:</b><br> <pre> A standard CUPS job option:<br>    <em>(Name) "
 #| "number-up</em>                -- <em>(Value) 9</em>                     "
-#| "<br> <br> A job option for custom CUPS filters or backends:<br>    <em>"
-#| "(Name) DANKA_watermark</em>          -- <em>(Value) Company_Confidential</"
-#| "em>   <br> <br> A message to the operator(s):<br>    <em>(Name) "
-#| "Deliver_after_completion</em> -- <em>(Value) to_Marketing_Departm.</"
-#| "em><br> </pre> <p><b>Note:</b> the fields must not include spaces, tabs "
-#| "or quotes. You may need to  double-click on a field to edit it. "
-#| "<p><b>Warning:</b> Do not use such standard CUPS option names which also "
-#| "can be used  through the KDEPrint GUI. Results may be  unpredictable if "
-#| "they conflict,  or if they are sent multiple times. For all options "
-#| "supported by the GUI, please do use  the GUI. (Each GUI element's  "
-#| "'What's This' names the related CUPS option name.) </p>  </qt>"
+#| "<br> <br> A job option for custom CUPS filters or backends:<br>    "
+#| "<em>(Name) DANKA_watermark</em>          -- <em>(Value) "
+#| "Company_Confidential</em>   <br> <br> A message to the operator(s):"
+#| "<br>    <em>(Name) Deliver_after_completion</em> -- <em>(Value) "
+#| "to_Marketing_Departm.</em><br> </pre> <p><b>Note:</b> the fields must not "
+#| "include spaces, tabs or quotes. You may need to  double-click on a field "
+#| "to edit it. <p><b>Warning:</b> Do not use such standard CUPS option names "
+#| "which also can be used  through the KDEPrint GUI. Results may be  "
+#| "unpredictable if they conflict,  or if they are sent multiple times. For "
+#| "all options supported by the GUI, please do use  the GUI. (Each GUI "
+#| "element's  'What's This' names the related CUPS option name.) </p>  </qt>"
 msgid ""
 " <ul> <li>'Use any current or future standard CUPS job option' is not "
 "supported by the KDEPrint GUI.</li> <li>Control any custom job option you "
@@ -1777,20 +1943,24 @@ msgstr ""
 "p>  </qt>"
 
 #: cups/kptagspage.cpp:73
+#, kde-format
 msgid "Additional Tags"
 msgstr "Tên thêm"
 
 #: cups/kptagspage.cpp:77 kfilelist.cpp:100 kpfilterpage.cpp:396
 #: management/kmjobviewer.cpp:258 management/kmwend.cpp:54
 #: management/kxmlcommanddlg.cpp:141 management/kxmlcommanddlg.cpp:551
+#, kde-format
 msgid "Name"
 msgstr "Tên"
 
 #: cups/kptagspage.cpp:77
+#, kde-format
 msgid "Value"
 msgstr "Giá trị"
 
 #: cups/kptagspage.cpp:93
+#, kde-format
 msgid "Read-Only"
 msgstr "Chỉ đọc"
 
@@ -1802,7 +1972,7 @@ msgstr ""
 "<b>%1</b>."
 
 #: cups/kptextpage.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Characters Per Inch</b></p>  <p>This setting controls the "
 #| "horizontal size of characters when printing a text file. </p> <p>The "
@@ -1829,7 +1999,7 @@ msgstr ""
 "\"12\"  </pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:54
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Lines Per Inch</b></p>  <p>This setting controls the "
 #| "vertical size of characters when printing a text file. </p> <p>The "
@@ -1856,7 +2026,7 @@ msgstr ""
 "</pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:68
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Columns</b></p>  <p>This setting controls how many columns "
 #| "of text will be printed on each page when. printing text files. </p>  "
@@ -1882,12 +2052,13 @@ msgstr ""
 "o columns=...     # example: \"2\" or \"4\"  </pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:83
+#, kde-format
 msgid " <qt>  Preview icon changes when you turn on or off prettyprint.  </qt>"
 msgstr ""
 "<qt>Biểu tượng xem thử thay đổi khi bạn bật/tắt khả năng « in xinh ».</qt>"
 
 #: cups/kptextpage.cpp:86
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Text Formats</b></p>  <p>These settings control the "
 #| "appearance of text on printouts. They are only valid for  printing text "
@@ -1929,7 +2100,7 @@ msgstr ""
 "\"4\"  </pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:107
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Margins</b></p>  <p>These settings control the margins of "
 #| "printouts on the paper. They are not valid for  jobs originating from "
@@ -1983,7 +2154,7 @@ msgstr ""
 "o page-right=...    # example: \"12\"  </pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:133
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Turn Text Printing with Syntax Highlighting (Prettyprint) On!"
 #| "</b></p>  <p>ASCII text file printouts can be 'prettyfied' by enabling "
@@ -2022,7 +2193,7 @@ msgstr ""
 "lệnh CUPS:</em>  <pre>     -o prettyprint=true.  </pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:152
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Turn Text Printing with Syntax Highlighting (Prettyprint) "
 #| "Off! </b></p>  <p>ASCII text file printing with this option turned off "
@@ -2048,7 +2219,7 @@ msgstr ""
 "pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:166
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Print Text with Syntax Highlighting (Prettyprint)</b></p>  "
 #| "<p>ASCII file printouts can be 'prettyfied' by enabling this option. If "
@@ -2089,61 +2260,74 @@ msgstr ""
 "pre> </p>  </qt>"
 
 #: cups/kptextpage.cpp:187
+#, kde-format
 msgid "Text"
 msgstr "Văn bản"
 
 #: cups/kptextpage.cpp:190
+#, kde-format
 msgid "Text Format"
 msgstr "Định dạng văn bản"
 
 #: cups/kptextpage.cpp:193
+#, kde-format
 msgid "Syntax Highlighting"
 msgstr "Tô sáng cú pháp"
 
 #: cups/kptextpage.cpp:196 kpmarginpage.cpp:41 kpmarginpage.cpp:44
+#, kde-format
 msgid "Margins"
 msgstr "Lề"
 
 #: cups/kptextpage.cpp:202
+#, kde-format
 msgid "&Chars per inch:"
 msgstr "&Ký tự trên mỗi insơ :"
 
 #: cups/kptextpage.cpp:206
+#, kde-format
 msgid "&Lines per inch:"
 msgstr "&Dòng trên mỗi insơ :"
 
 #: cups/kptextpage.cpp:210
+#, kde-format
 msgid "C&olumns:"
 msgstr "C&ột:"
 
 #: cups/kptextpage.cpp:221
+#, kde-format
 msgid "&Disabled"
 msgstr "Đã &tắt"
 
 #: cups/kptextpage.cpp:223
+#, kde-format
 msgid "&Enabled"
 msgstr "Đã &bật"
 
 #: driver.cpp:359 kpgeneralpage.cpp:257 lpd/lpdtools.cpp:290
 #: management/kmconfiggeneral.cpp:45 management/kmpropgeneral.cpp:56
 #: management/kmwend.cpp:52
+#, kde-format
 msgid "General"
 msgstr "Chung"
 
 #: driver.cpp:367 foomatic2loader.cpp:234
+#, kde-format
 msgid "Adjustments"
 msgstr "Điều chỉnh"
 
 #: driver.cpp:369
+#, kde-format
 msgid "JCL"
 msgstr "JCL"
 
 #: driver.cpp:371 management/kmwlocal.cpp:60
+#, kde-format
 msgid "Others"
 msgstr "Khác"
 
 #: driverview.cpp:39
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>List of Driver Options (from PPD)</b>. <p>The upper pane of "
 #| "this dialog page contains all printjob options as laid down in the "
@@ -2206,7 +2390,7 @@ msgstr ""
 "trong hộp thoại kprinter.</p>  </qt>"
 
 #: driverview.cpp:63
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>List of Possible Values for given Option (from PPD)</b>.  "
 #| "<p>The lower pane of this dialog page contains all possible values of the "
@@ -2266,30 +2450,37 @@ msgstr ""
 "In KDE tải, thì không hiển thị trong hộp thoại kprinter.</p>  </qt>"
 
 #: droptionview.cpp:61
+#, kde-format
 msgid "Value:"
 msgstr "Giá trị :"
 
 #: droptionview.cpp:169
+#, kde-format
 msgid "String value:"
 msgstr "Giá trị chuỗi :"
 
 #: droptionview.cpp:297 droptionview.cpp:351
+#, kde-format
 msgid "No Option Selected"
 msgstr "Chưa chọn tùy chọn"
 
 #: ext/kextprinterimpl.cpp:46
+#, kde-format
 msgid "Empty print command."
 msgstr "Lệnh in rỗng."
 
 #: ext/kmextmanager.cpp:40
+#, kde-format
 msgid "PS_printer"
 msgstr "Máy_in_PS"
 
 #: ext/kmextmanager.cpp:42
+#, kde-format
 msgid "PostScript file generator"
 msgstr "Bộ tạo ra tập tin PostScript"
 
 #: foomatic/kfoomaticprinterimpl.cpp:49 lpdunix/klpdunixprinterimpl.cpp:70
+#, kde-format
 msgid ""
 "No valid print executable was found in your path. Check your installation."
 msgstr ""
@@ -2297,10 +2488,12 @@ msgstr ""
 "bạn. Vui lòng kiểm tra lại bản cài đặt."
 
 #: foomatic/kmfoomaticmanager.cpp:67
+#, kde-format
 msgid "This is not a Foomatic printer"
 msgstr "Điều này không phải là máy in Foomatic"
 
 #: foomatic/kmfoomaticmanager.cpp:70
+#, kde-format
 msgid "Some printer information is missing"
 msgstr "Một phần thông tin máy in còn thiếu"
 
@@ -2316,6 +2509,7 @@ msgstr ""
 "<p><nobr>Gặp lỗi in. Thông điệp lỗi được nhận từ hệ thống:</nobr></p><br>%1"
 
 #: kdeprintd/kdeprintd.cpp:185
+#, kde-format
 msgid ""
 "Some of the files to printed are not readable by the KDE print daemon. This "
 "may happen if you are trying to print as a different user to the one "
@@ -2327,6 +2521,7 @@ msgstr ""
 "tục in, bạn cần phải nhập vào mật khẩu của người chủ (root)."
 
 #: kdeprintd/kdeprintd.cpp:190
+#, kde-format
 msgid "Enter the root password"
 msgstr "Nhập mật khẩu chủ"
 
@@ -2336,6 +2531,7 @@ msgid "Printing Status - %1"
 msgstr "Trạng thái in - %1"
 
 #: kdeprintd/kdeprintd.cpp:267
+#, kde-format
 msgid "Printing system"
 msgstr "Hệ thống in"
 
@@ -2345,6 +2541,7 @@ msgid "Authentication failed (user name=%1)"
 msgstr "Việc xác thực bị lỗi (tên người dùng = %1)"
 
 #: kdeprintd/kprintprocess.cpp:81
+#, kde-format
 msgid "File transfer failed."
 msgstr "Việc truyền tập tin bị lỗi."
 
@@ -2359,7 +2556,7 @@ msgid "<b>%1</b>: execution failed with message:<p>%2</p>"
 msgstr "<b>%1</b>: việc thực hiện bị lỗi với thông điệp:<p>%2</p>"
 
 #: kfilelist.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Add File button</b> <p>This button calls the <em>'File Open'</"
 #| "em> dialog to let you select a file for printing. Note, that  <ul><li>you "
@@ -2383,7 +2580,7 @@ msgstr ""
 "một « công việc đa tập tin ».</ul> </qt>"
 
 #: kfilelist.cpp:52
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Remove File button</b> <p>This button removes the highlighted "
 #| "file from the list of to-be-printed files. </qt>"
@@ -2395,6 +2592,7 @@ msgstr ""
 "sách các tập tin cần in. </qt>"
 
 #: kfilelist.cpp:57
+#, kde-format
 msgid ""
 " <qt> <b>Move File Up button</b> <p>This button moves the highlighted file "
 "up in the list of files to be printed.</p> <p>In effect, this changes the "
@@ -2405,6 +2603,7 @@ msgstr ""
 "in tập tin.</p> </qt>"
 
 #: kfilelist.cpp:64
+#, kde-format
 msgid ""
 " <qt> <b>Move File Down button</b> <p>This button moves the highlighted file "
 "down in the list of files to be printed.</p> <p>In effect, this changes the "
@@ -2415,6 +2614,7 @@ msgstr ""
 "tự in tập tin.</p> </qt>"
 
 #: kfilelist.cpp:71
+#, kde-format
 msgid ""
 " <qt> <b>File Open button</b> <p>This button tries to open the highlighted "
 "file, so you can view or edit it before you send it to the printing system.</"
@@ -2426,6 +2626,7 @@ msgstr ""
 "tin nào, In KDE sẽ sử dụng ứng dụng khớp kiểu MIME của tập tin đó.</p> </qt>"
 
 #: kfilelist.cpp:80
+#, kde-format
 msgid ""
 " <qt> <b>File List view</b> <p>This list displays all the files you selected "
 "for printing. You can see the file name(s), file path(s) and the file (MIME) "
@@ -2453,34 +2654,42 @@ msgstr ""
 
 #: kfilelist.cpp:100 management/kmwend.cpp:53 management/kmwend.cpp:104
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "Type"
 msgstr "Kiểu"
 
 #: kfilelist.cpp:100
+#, kde-format
 msgid "Path"
 msgstr "Đường dẫn"
 
 #: kfilelist.cpp:109
+#, kde-format
 msgid "Add file"
 msgstr "Thêm tập tin"
 
 #: kfilelist.cpp:115
+#, kde-format
 msgid "Remove file"
 msgstr "Bỏ tập tin"
 
 #: kfilelist.cpp:122
+#, kde-format
 msgid "Open file"
 msgstr "Mở tập tin"
 
 #: kfilelist.cpp:129 management/kxmlcommanddlg.cpp:157
+#, kde-format
 msgid "Move up"
 msgstr "Đem lên"
 
 #: kfilelist.cpp:136 management/kxmlcommanddlg.cpp:158
+#, kde-format
 msgid "Move down"
 msgstr "Đem xuống"
 
 #: kfilelist.cpp:143
+#, kde-format
 msgid ""
 "Drag file(s) here or use the button to open a file dialog. Leave empty for "
 "<b>&lt;STDIN&gt;</b>."
@@ -2494,48 +2703,52 @@ msgid "<qt>There was an error loading %1. The diagnostic is:<p>%2</p></qt>"
 msgstr "<qt>Gặp lỗi khi tải %1. Thông tin chẩn đoạn là :<p>%2</p></qt>"
 
 #: kmjob.cpp:113
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Queued"
 msgid "Queued"
 msgstr "Đã sắp hàng"
 
 #: kmjob.cpp:116
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Held"
 msgid "Held"
 msgstr "Đã giữ lại"
 
 #: kmjob.cpp:119 tools/escputil/escpwidget.cpp:228
+#, kde-format
 msgid "Error"
 msgstr "Lỗi"
 
 #: kmjob.cpp:122
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Canceled"
 msgid "Canceled"
 msgstr "Bị thôi"
 
 #: kmjob.cpp:125
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Aborted"
 msgid "Aborted"
 msgstr "Bị hủy bỏ"
 
 #: kmjob.cpp:128
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid "Completed"
 msgid "Completed"
 msgstr "Hoàn tất"
 
 #: kmmanager.cpp:75
+#, kde-format
 msgid "This operation is not implemented."
 msgstr "Chưa thực hiện thao tác này."
 
 #: kmmanager.cpp:172
+#, kde-format
 msgid "Unable to locate test page."
 msgstr "Không thể định vị trang thử."
 
 #: kmmanager.cpp:455
+#, kde-format
 msgid "Can not overwrite regular printer with special printer settings."
 msgstr "Không thể ghi đè lên máy in chuẩn bằng thiết lập máy in đặc biệt."
 
@@ -2550,30 +2763,37 @@ msgid "Unable to load KDE print management library: %1"
 msgstr "Không thể tải thư viện quản lý in KDE: %1"
 
 #: kmmanager.cpp:495 kxmlcommand.cpp:633
+#, kde-format
 msgid "Unable to find wizard object in management library."
 msgstr "Không tìm thấy đối tượng trợ lý trong thư viện quản lý."
 
 #: kmmanager.cpp:510
+#, kde-format
 msgid "Unable to find options dialog in management library."
 msgstr "Không tìm thấy hộp thoại tùy chọn trong thư viện quản lý."
 
 #: kmmanager.cpp:537
+#, kde-format
 msgid "No plugin information available"
 msgstr "Không có thông tin bộ cầm phít"
 
 #: kmprinter.cpp:140
+#, kde-format
 msgid "(rejecting jobs)"
 msgstr "(đang từ chối công việc)"
 
 #: kmprinter.cpp:140
+#, kde-format
 msgid "(accepting jobs)"
 msgstr "(đang chấp nhận công việc)"
 
 #: kmprinter.cpp:185 kprintdialog.cpp:960
+#, kde-format
 msgid "All Files"
 msgstr "Mọi tập tin"
 
 #: kmspecialmanager.cpp:51
+#, kde-format
 msgid ""
 "A file share/kdeprint/specials.desktop was found in your local KDE "
 "directory. This file probably comes from a previous KDE release and should "
@@ -2604,10 +2824,12 @@ msgstr ""
 "mặc định riêng của bạn không?</qt>"
 
 #: kmvirtualmanager.cpp:159 management/kminstancepage.cpp:93
+#, kde-format
 msgid "Set as Default"
 msgstr "Đặt là mặc định"
 
 #: kpcopiespage.cpp:46
+#, kde-format
 msgid ""
 " <qt><p><b>Page Selection</b></p>  <p>Here you can control if you print a "
 "certain selection only out of all the pages from the complete document. </p> "
@@ -2617,7 +2839,7 @@ msgstr ""
 "trang của mọi trang tạo toàn bộ tài liệu </p> </qt>"
 
 #: kpcopiespage.cpp:51
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>All Pages:</b> Select \"All\" to print the complete document. "
 #| "Since this is the default, it is pre-selected. </p> </qt>"
@@ -2629,7 +2851,7 @@ msgstr ""
 "trị này là mặc định, nó được chọn sẵn.</p> </qt>"
 
 #: kpcopiespage.cpp:54
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Current Page:</b> Select <em>\"Current\"</em> if you want  to "
 #| "print the page currently visible in your KDE application.</p> <p><b>Note:"
@@ -2651,7 +2873,7 @@ msgstr ""
 "phần của hệ thống KDE.</p></qt>"
 
 #: kpcopiespage.cpp:59
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Page Range:</b> Choose a \"Page Range\" to select a subset of the "
 #| "complete document pages to be printed. The format is <em>\"n,m,o-p,q,r,s-"
@@ -2681,7 +2903,7 @@ msgstr ""
 "pre> </p> </qt>"
 
 #: kpcopiespage.cpp:73
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Page Set:</b> <p>Choose <em>\"All Pages\"</em>, <em>\"Even Pages"
 #| "\"</em> or <em>\"Odd Pages\"</em> if you want to print a page selection "
@@ -2730,7 +2952,7 @@ msgstr ""
 "example: \"odd\" or \"even\"  </pre> </p>  </qt>"
 
 #: kpcopiespage.cpp:95
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Output Settings:</b> Here you can determine the number of copies, "
 #| "the output order and the collate mode for the pages of your printjob. "
@@ -2764,7 +2986,7 @@ msgstr ""
 "\"  </pre> </p> .</qt>"
 
 #: kpcopiespage.cpp:113
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Number of Copies:</b> Determine the number of requested copies "
 #| "here. You can increase or decrease the number of printed copies by "
@@ -2790,7 +3012,7 @@ msgstr ""
 "copies=...            # examples: \"5\" or \"42\"  </pre> </p>  </qt>"
 
 #: kpcopiespage.cpp:126
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Collate Copies</b> <p>If the <em>\"Collate\"</em> checkbox is "
 #| "enabled (default), the output order for multiple copies of a multi-page "
@@ -2822,7 +3044,7 @@ msgstr ""
 "example:  \"true\" or \"false\"  </pre> </p>  </qt>"
 
 #: kpcopiespage.cpp:140
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Reverse Order</b> <p> If the <em>\"Reverse\"</em> checkbox is "
 #| "enabled, the output order for multiple copies of a multi-page document "
@@ -2860,26 +3082,32 @@ msgstr ""
 "example:  \"reverse\"  </pre> </p>  </qt>"
 
 #: kpcopiespage.cpp:161
+#, kde-format
 msgid "C&opies"
 msgstr "Bản &sao"
 
 #: kpcopiespage.cpp:167
+#, kde-format
 msgid "Page Selection"
 msgstr "Chọn trang"
 
 #: kpcopiespage.cpp:169
+#, kde-format
 msgid "&All"
 msgstr "&Tất cả"
 
 #: kpcopiespage.cpp:171
+#, kde-format
 msgid "Cu&rrent"
 msgstr "&Hiện có"
 
 #: kpcopiespage.cpp:173
+#, kde-format
 msgid "Ran&ge"
 msgstr "L&oạt"
 
 #: kpcopiespage.cpp:178
+#, kde-format
 msgid ""
 "<p>Enter pages or group of pages to print separated by commas (1,2-5,8).</p>"
 msgstr ""
@@ -2887,47 +3115,57 @@ msgstr ""
 "p>"
 
 #: kpcopiespage.cpp:184
+#, kde-format
 msgid "Output Settings"
 msgstr "Thiết lập Xuất"
 
 #: kpcopiespage.cpp:186
+#, kde-format
 msgid "Co&llate"
 msgstr "&Đối chiếu"
 
 #: kpcopiespage.cpp:188
+#, kde-format
 msgid "Re&verse"
 msgstr "&Ngược"
 
 #: kpcopiespage.cpp:193
+#, kde-format
 msgid "Cop&ies:"
 msgstr "Bản &sao :"
 
 #: kpcopiespage.cpp:200
+#, kde-format
 msgid "All Pages"
 msgstr "Mọi trang"
 
 #: kpcopiespage.cpp:201
+#, kde-format
 msgid "Odd Pages"
 msgstr "Trang lẻ"
 
 #: kpcopiespage.cpp:202
+#, kde-format
 msgid "Even Pages"
 msgstr "Trang chẵn"
 
 #: kpcopiespage.cpp:204
+#, kde-format
 msgid "Page &set:"
 msgstr "Tậ&p trang:"
 
 #: kpcopiespage.cpp:268
+#, kde-format
 msgid "Pages"
 msgstr "Trang"
 
 #: kpdriverpage.cpp:30 management/kmpropdriver.cpp:56
+#, kde-format
 msgid "Driver Settings"
 msgstr "Thiết lập trình điều khiển"
 
 #: kpdriverpage.cpp:48
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Some options selected are in conflict. You must resolve those "
 #| "conflicts before continuing. See <b>Driver Settings</b> tab for detailed "
@@ -2942,11 +3180,12 @@ msgstr ""
 "b> để tìm chi tiết.</qt>"
 
 #: kpfileselectpage.cpp:32
+#, kde-format
 msgid "&Files"
 msgstr "&Tập tin"
 
 #: kpfilterpage.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Add Filter button</b> <p>This button calls a little dialog to "
 #| "let you select a filter here. </p> <p><b>Note 1:</b> You can chain "
@@ -2974,7 +3213,7 @@ msgstr ""
 "và cho hệ thống in phụ (v.d. CUPS, LPRng, LPD).</p> </ul> </qt>"
 
 #: kpfilterpage.cpp:51
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Remove Filter button</b> <p>This button removes the highlighted "
 #| "filter from the list of filters. </qt>"
@@ -2986,6 +3225,7 @@ msgstr ""
 "sách bộ lọc. </qt>"
 
 #: kpfilterpage.cpp:56
+#, kde-format
 msgid ""
 " <qt> <b>Move Filter Up button</b> <p>This button moves the highlighted "
 "filter up in the list of filters, towards the front of the filtering chain. "
@@ -2995,6 +3235,7 @@ msgstr ""
 "danh sách bộ lọc, về đầu của dây lọc. </p> </qt>"
 
 #: kpfilterpage.cpp:61
+#, kde-format
 msgid ""
 " <qt> <b>Move Filter Down button</b> <p>This button moves the highlighted "
 "filter down in the list of filters, towards the end of the filtering chain.."
@@ -3004,6 +3245,7 @@ msgstr ""
 "xuống danh sách bộ lọc, tới kết thúc của dây lọc. </p> </qt>"
 
 #: kpfilterpage.cpp:66
+#, kde-format
 msgid ""
 " <qt> <b>Configure Filter button</b> <p>This button lets you configure the "
 "currently highlighted filter. It opens a separate dialog.  </p> </qt>"
@@ -3012,7 +3254,7 @@ msgstr ""
 "lọc đã tô sáng. Nó mở một hộp thoại riêng.</p> </qt>"
 
 #: kpfilterpage.cpp:72
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Filter Info Pane</b> <p>This field shows some general info about "
 #| "the selected filter.  Amongst them are:  <ul>  <li>the <em>filter name</"
@@ -3046,7 +3288,7 @@ msgstr ""
 "ul>  </p> </qt>"
 
 #: kpfilterpage.cpp:88
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <b>Filtering Chain</b> (if enabled, is run <em>before</em> actual  "
 #| "job submission to print system) <p>This field shows which filters are "
@@ -3129,34 +3371,42 @@ msgstr ""
 "In KDE.  </p> </qt>"
 
 #: kpfilterpage.cpp:122
+#, kde-format
 msgid "Filters"
 msgstr "Lọc"
 
 #: kpfilterpage.cpp:134
+#, kde-format
 msgid "Add filter"
 msgstr "Thêm bộ lọc"
 
 #: kpfilterpage.cpp:139
+#, kde-format
 msgid "Remove filter"
 msgstr "Bỏ bộ lọc"
 
 #: kpfilterpage.cpp:144
+#, kde-format
 msgid "Move filter up"
 msgstr "Đem bộ lọc lên"
 
 #: kpfilterpage.cpp:149
+#, kde-format
 msgid "Move filter down"
 msgstr "Đem bộ lọc xuống"
 
 #: kpfilterpage.cpp:154
+#, kde-format
 msgid "Configure filter"
 msgstr "Cấu hình bộ lọc"
 
 #: kpfilterpage.cpp:281
+#, kde-format
 msgid "Internal error: unable to load filter."
 msgstr "Lỗi nội bộ: không thể tải bộ lọc."
 
 #: kpfilterpage.cpp:385
+#, kde-format
 msgid ""
 "<p>The filter chain is wrong. The output format of at least one filter is "
 "not supported by its follower. See <b>Filters</b> tab for more information.</"
@@ -3166,91 +3416,112 @@ msgstr ""
 "hỗ trợ. Xem thanh <b>Lọc</b> để tìm thông tin thêm.</p>"
 
 #: kpfilterpage.cpp:397 management/kxmlcommanddlg.cpp:845
+#, kde-format
 msgid "Requirements"
 msgstr "Cần thiết"
 
 #: kpfilterpage.cpp:398
+#, kde-format
 msgid "Input"
 msgstr "Nhập"
 
 #: kpfilterpage.cpp:399 tools/escputil/escpwidget.cpp:226
+#, kde-format
 msgid "Output"
 msgstr "Xuất"
 
 #: kpgeneralpage.cpp:83
+#, kde-format
 msgid "ISO A4"
 msgstr "ISO A4"
 
 #: kpgeneralpage.cpp:84 lpd/lpdtools.cpp:30
+#, kde-format
 msgid "US Letter"
 msgstr "Thư Mỹ"
 
 #: kpgeneralpage.cpp:85 lpd/lpdtools.cpp:29
+#, kde-format
 msgid "US Legal"
 msgstr "Hành pháp Mỹ"
 
 #: kpgeneralpage.cpp:86 lpd/lpdtools.cpp:28
+#, kde-format
 msgid "Ledger"
 msgstr "Sổ cái"
 
 #: kpgeneralpage.cpp:87
+#, kde-format
 msgid "Folio"
 msgstr "Số tờ"
 
 #: kpgeneralpage.cpp:88
+#, kde-format
 msgid "US #10 Envelope"
 msgstr "Phong bì Mỹ #10"
 
 #: kpgeneralpage.cpp:89
+#, kde-format
 msgid "ISO DL Envelope"
 msgstr "Phong bì DL ISO"
 
 #: kpgeneralpage.cpp:90
+#, kde-format
 msgid "Tabloid"
 msgstr "Vắn tắt"
 
 #: kpgeneralpage.cpp:91
+#, kde-format
 msgid "ISO A3"
 msgstr "ISO A3"
 
 #: kpgeneralpage.cpp:92
+#, kde-format
 msgid "ISO A2"
 msgstr "ISO A2"
 
 #: kpgeneralpage.cpp:93
+#, kde-format
 msgid "ISO A1"
 msgstr "ISO A1"
 
 #: kpgeneralpage.cpp:94
+#, kde-format
 msgid "ISO A0"
 msgstr "ISO A0"
 
 #: kpgeneralpage.cpp:104
+#, kde-format
 msgid "Upper Tray"
 msgstr "Khay trên"
 
 #: kpgeneralpage.cpp:105
+#, kde-format
 msgid "Lower Tray"
 msgstr "Khay dưới"
 
 #: kpgeneralpage.cpp:106
+#, kde-format
 msgid "Multi-Purpose Tray"
 msgstr "Khay vạn năng"
 
 #: kpgeneralpage.cpp:107
+#, kde-format
 msgid "Large Capacity Tray"
 msgstr "Khay có dung tích lớn"
 
 #: kpgeneralpage.cpp:111
+#, kde-format
 msgid "Normal"
 msgstr "Chuẩn"
 
 #: kpgeneralpage.cpp:112
+#, kde-format
 msgid "Transparency"
 msgstr "Tờ trong suốt"
 
 #: kpgeneralpage.cpp:121
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>\"General\"</b> </p>  <p>This dialog page contains "
 #| "<em>general</em> print job settings. General settings are applicable to "
@@ -3271,7 +3542,7 @@ msgstr ""
 "trong hộp thoại này.</qt>"
 
 #: kpgeneralpage.cpp:129
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Page size:</b> Select paper size to be printed on from the "
 #| "drop-down menu. </p> <p>The exact list of choices depends on the printer "
@@ -3295,7 +3566,7 @@ msgstr ""
 "examples: \"A4\" or \"Letter\" </pre> </p>  </qt>"
 
 #: kpgeneralpage.cpp:142
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Paper type:</b> Select paper type to be printed on from  the "
 #| "drop-down menu. </p> <p>The exact list of choices depends on the printer "
@@ -3319,7 +3590,7 @@ msgstr ""
 "\"Transparency\" </pre> </p>  </qt>"
 
 #: kpgeneralpage.cpp:155
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Paper source:</b> Select paper source tray for the paper to "
 #| "be printed on from the drop-down menu. <p>The exact list of choices "
@@ -3345,7 +3616,7 @@ msgstr ""
 "examples: \"Lower\" or \"LargeCapacity\" </pre> </p>  </qt>"
 
 #: kpgeneralpage.cpp:168
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt> <p><b>Image Orientation:</b> Orientation of the printed page image "
 #| "on your paper is controlled by the radio buttons. By default, the "
@@ -3384,7 +3655,7 @@ msgstr ""
 "examples: \"landscape\" or \"reverse-portrait\" </pre> </p>  </qt>"
 
 #: kpgeneralpage.cpp:189
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<qt> <p><b>Duplex Printing:</b> These controls may be grayed out if your "
 #| "printer does not support <em>duplex printing</em> (i.e. printing on both "
@@ -3443,7 +3714,7 @@ msgstr ""
 "p>  </qt>"
 
 #: kpgeneralpage.cpp:214
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Banner Page(s):</b> Select banner(s) to print one or two "
 #| "special sheets of paper just before or after your main job. </p> "
@@ -3497,7 +3768,7 @@ msgstr ""
 "qt>"
 
 #: kpgeneralpage.cpp:236
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<qt> <p><b>Pages per Sheet:</b>  You can choose to print more than one "
 #| "page onto each sheet of paper. This is sometimes useful to save paper.</"
@@ -3543,82 +3814,100 @@ msgstr ""
 "up=...        # examples: \"2\" or \"4\"  </pre> </p>  </qt>"
 
 #: kpgeneralpage.cpp:260 kpqtpage.cpp:117
+#, kde-format
 msgid "Page s&ize:"
 msgstr "&Cỡ trang:"
 
 #: kpgeneralpage.cpp:264
+#, kde-format
 msgid "Paper t&ype:"
 msgstr "&Kiểu giấy:"
 
 #: kpgeneralpage.cpp:268
+#, kde-format
 msgid "Paper so&urce:"
 msgstr "&Nguồn giấy:"
 
 #: kpgeneralpage.cpp:287 kpqtpage.cpp:122
+#, kde-format
 msgid "Orientation"
 msgstr "Hướng"
 
 #: kpgeneralpage.cpp:291
+#, kde-format
 msgid "Duplex Printing"
 msgstr "In hai chiều"
 
 #: kpgeneralpage.cpp:297 kpqtpage.cpp:148
+#, kde-format
 msgid "Pages per Sheet"
 msgstr "Trang trên mỗi tờ"
 
 #: kpgeneralpage.cpp:304 kpqtpage.cpp:128
+#, kde-format
 msgid "&Portrait"
 msgstr "&Thẳng đứng"
 
 #: kpgeneralpage.cpp:305 kpqtpage.cpp:131
+#, kde-format
 msgid "&Landscape"
 msgstr "Nằm ng&ang"
 
 #: kpgeneralpage.cpp:306
+#, kde-format
 msgid "&Reverse landscape"
 msgstr "Nằm ngang n&gược"
 
 #: kpgeneralpage.cpp:307
+#, kde-format
 msgid "R&everse portrait"
 msgstr "Thẳng đứng ng&ược"
 
 #: kpgeneralpage.cpp:312
+#, kde-format
 msgctxt "duplex orientation"
 msgid "&None"
 msgstr "Kh&ông có"
 
 #: kpgeneralpage.cpp:313
+#, kde-format
 msgctxt "duplex orientation"
 msgid "Lon&g side"
 msgstr "Trục dài"
 
 #: kpgeneralpage.cpp:314
+#, kde-format
 msgctxt "duplex orientation"
 msgid "S&hort side"
 msgstr "Trục ngắn"
 
 #: kpgeneralpage.cpp:326
+#, kde-format
 msgid "S&tart:"
 msgstr "&Đầu :"
 
 #: kpgeneralpage.cpp:327
+#, kde-format
 msgid "En&d:"
 msgstr "&Cuối :"
 
 #: kpgeneralpage.cpp:424 lpd/lpdtools.cpp:40 management/kmconfiggeneral.cpp:54
+#, kde-format
 msgid "Disabled"
 msgstr "Đã tắt"
 
 #: kpgeneralpage.cpp:425 lpd/lpdtools.cpp:39 lpr/editentrydialog.cpp:54
+#, kde-format
 msgid "Enabled"
 msgstr "Hoạt động"
 
 #: kpposterpage.cpp:40
+#, kde-format
 msgid " <qt>  5.  </qt>"
 msgstr " <qt>  5.  </qt>"
 
 #: kpposterpage.cpp:44
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Print Poster</b> (enabled or disabled).  <p>If you enable this "
 #| "option, you can print posters of different sizes  The printout will "
@@ -3648,11 +3937,11 @@ msgid ""
 "dialog. </p> <p>This tab is only visible if the external <em>'poster'</em> "
 "utility is discovered by KDEPrint on your system. [<em>'poster'</em> is a "
 "command line utility that enables you to convert PostScript files into tiled "
-"printouts, with overlap to allow the tiles to be joined together seamlessly.]"
-"</p> <p><b>Note:</b> The standard version of 'poster' will not work. Your "
-"system must use a patched version of 'poster'. Ask your operating system "
-"vendor to provide a patched version of 'poster' if they do not do so already."
-"</p> <p><b>Additional hint for power users:</b> A patched version of "
+"printouts, with overlap to allow the tiles to be joined together "
+"seamlessly.]</p> <p><b>Note:</b> The standard version of 'poster' will not "
+"work. Your system must use a patched version of 'poster'. Ask your operating "
+"system vendor to provide a patched version of 'poster' if they do not do so "
+"already.</p> <p><b>Additional hint for power users:</b> A patched version of "
 "'poster' is available from the <a href=\"http://printing.kde.org/\">KDEPrint "
 "Website</a> at <a href=\"http://printing.kde.org/downloads/\">http://"
 "printing.kde.org/downloads/</a>. The direct link to the patched source "
@@ -3679,7 +3968,7 @@ msgstr ""
 "bz2\">ftp://ftp.kde.org/pub/kde/printing/poster.tar.bz2</a>.  </p>  </qt>"
 
 #: kpposterpage.cpp:66
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Tile Selection widget</b>  <p>This GUI element is <em>not only "
 #| "for viewing</em> your selections: it also  lets you interactively select "
@@ -3696,8 +3985,8 @@ msgstr ""
 #| "part  of) your poster, you must select at least one tile. </p>  </qt>"
 msgid ""
 " <qt> <b>Tile Selection widget</b> <p>This GUI element is <em>not only for "
-"viewing</em> your selections: it also lets you interactively select the tile"
-"(s) you want to print. </p> <p><b>Hints</b> <ul> <li>Click any tile to "
+"viewing</em> your selections: it also lets you interactively select the "
+"tile(s) you want to print. </p> <p><b>Hints</b> <ul> <li>Click any tile to "
 "select it for printing.</li> <li>To select multiple tiles to be printed at "
 "once, <em>'shift-click'</em> on the tiles ('shift-click' means: hold down "
 "the [SHIFT]-key on your keyboard and click with the mouse while [SHIFT]-key "
@@ -3723,7 +4012,7 @@ msgstr ""
 "</qt>"
 
 #: kpposterpage.cpp:87
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Poster Size</b>  <p>Select the poster size you want from the "
 #| "dropdown list. </p>  Available sizes are all standard paper sizes up to  "
@@ -3778,7 +4067,7 @@ msgstr ""
 "</qt>"
 
 #: kpposterpage.cpp:106
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Paper Size</b>  <p>This field indicates the paper size the "
 #| "poster tiles will be printed on.  To select a different paper size for "
@@ -3853,7 +4142,7 @@ msgstr ""
 "bích chương nào, bạn phải chọn ít nhất một đá lát. </p>  </qt>"
 
 #: kpposterpage.cpp:130
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Cut Margin selection</b>  <p>Slider and spinbox let you "
 #| "determine a <em>'cut margin'</em> which will be printed onto  each tile "
@@ -3885,7 +4174,7 @@ msgstr ""
 "điều khiển nó.</p>  </qt>"
 
 #: kpposterpage.cpp:141
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Order and number of tile pages to be printed</b>  <p>This field "
 #| "displays and sets the individual tiles to be printed, as well as the "
@@ -3914,43 +4203,52 @@ msgstr ""
 "<p><b>Thí dụ :</b></p><pre>    \"2,3,7,9,3\"  <br>    \"1-3,6,8-11\"  </qt>"
 
 #: kpposterpage.cpp:158
+#, kde-format
 msgid "Poster"
 msgstr "Bích chương"
 
 #: kpposterpage.cpp:160
+#, kde-format
 msgid "&Print poster"
 msgstr "&In bích chương"
 
 #: kpposterpage.cpp:174
+#, kde-format
 msgid "Poste&r size:"
 msgstr "Cỡ bích chương"
 
 #: kpposterpage.cpp:176
+#, kde-format
 msgid "Media size:"
 msgstr "Cỡ phương tiện:"
 
 #: kpposterpage.cpp:178
+#, kde-format
 msgid "Pri&nt size:"
 msgstr "Cỡ i&n:"
 
 #: kpposterpage.cpp:185
-#, no-c-format
+#, no-c-format, kde-format
 msgid "C&ut margin (% of media):"
 msgstr "Lề &cắt (% tờ):"
 
 #: kpposterpage.cpp:189
+#, kde-format
 msgid "&Tile pages (to be printed):"
 msgstr "Trang đá &lát (cần in):"
 
 #: kpposterpage.cpp:196
+#, kde-format
 msgid "Link/unlink poster and print size"
 msgstr "(Bỏ) Liên kết bích chương và kích cỡ in"
 
 #: kpposterpage.cpp:261
+#, kde-format
 msgid "Unknown"
 msgstr "Không rõ"
 
 #: kpqtpage.cpp:69
+#, kde-format
 msgid ""
 " <qt>  <b>Selection of color mode:</b> You can choose between 2 options:  "
 "<ul><li><b>Color</b> and</li>  <li><b>Grayscale</b></li></ul>  <b>Note:</b> "
@@ -3967,7 +4265,7 @@ msgstr ""
 "định, có quyền cao hơn.  </qt>"
 
 #: kpqtpage.cpp:78
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Selection of page size:</b> Select paper size to be printed on "
 #| "from  the drop-down menu.  <p>The exact list of choices depends on the "
@@ -3982,7 +4280,7 @@ msgstr ""
 "điều kiển máy in (PPD) đã được cài đặt.  </qt>"
 
 #: kpqtpage.cpp:83
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Selection of pages per sheet:</b>  You can choose to print more "
 #| "than one page onto each sheet of paper.  This is sometimes useful to save "
@@ -4015,17 +4313,18 @@ msgstr ""
 " <qt>  <b>Chọn số trang trên mỗi tờ :</b>  Bạn có thể chọn in nhiều trang "
 "trên mỗi tờ giấy, để tiết kiệm giấy.  <p><b>Ghi chú (1):</b> những ảnh trên "
 "trang được thu nhỏ tương ứng để in 2 hay 4 trang trên mỗi tờ. (Ảnh trên "
-"trang không được thu nhỏ nếu bạn in 1 trang trên mỗi tờ [giá trị mặc định].)"
-"<p><b>Ghi chú (2):</b> nếu bạn chọn ở đây để in nhiều trang trên mỗi tờ, "
-"việc thu nhỏ và sắp xếp lại bị hệ thống in thực hiện.  <p><b>Ghi chú (3), về "
-"« Khác »:</b> bạn không thể thật chon <em>Khác</em> là số trang cần in trên "
-"mỗi tờ.« Khác » được chọn vào đây chỉ với mục đích thông tin thôi. <p>Để "
-"chọn in8, 9, 16 hay số khác trang trên mỗi tờ :  <ul>  <li> đi tới thanh tên "
-"« Lọc »</li> <li> bật bộ lọc <em>Nhiều trang trên mỗi tờ</em> </li> <li> và "
-"cấu hình nó (bằng cái nút dưới nhất bên phải thanh « Lọc ». </li> </ul> </qt>"
+"trang không được thu nhỏ nếu bạn in 1 trang trên mỗi tờ [giá trị mặc "
+"định].)<p><b>Ghi chú (2):</b> nếu bạn chọn ở đây để in nhiều trang trên mỗi "
+"tờ, việc thu nhỏ và sắp xếp lại bị hệ thống in thực hiện.  <p><b>Ghi chú "
+"(3), về « Khác »:</b> bạn không thể thật chon <em>Khác</em> là số trang cần "
+"in trên mỗi tờ.« Khác » được chọn vào đây chỉ với mục đích thông tin thôi. "
+"<p>Để chọn in8, 9, 16 hay số khác trang trên mỗi tờ :  <ul>  <li> đi tới "
+"thanh tên « Lọc »</li> <li> bật bộ lọc <em>Nhiều trang trên mỗi tờ</em> </"
+"li> <li> và cấu hình nó (bằng cái nút dưới nhất bên phải thanh « Lọc ». </"
+"li> </ul> </qt>"
 
 #: kpqtpage.cpp:101
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <b>Selection of image orientation:</b> Orientation of the printed  "
 #| "pageimage on your paper is controlled by the radio buttons. By default,  "
@@ -4047,30 +4346,37 @@ msgstr ""
 "đổi tương ứng bạn chọn gì. </qt>"
 
 #: kpqtpage.cpp:112
+#, kde-format
 msgid "Print Format"
 msgstr "Định dạng in:"
 
 #: kpqtpage.cpp:126
+#, kde-format
 msgid "Color Mode"
 msgstr "Chế độ màu"
 
 #: kpqtpage.cpp:138
+#, kde-format
 msgid "Colo&r"
 msgstr "&Màu sắc"
 
 #: kpqtpage.cpp:141
+#, kde-format
 msgid "&Grayscale"
 msgstr "Mức &xám"
 
 #: kpqtpage.cpp:156
+#, kde-format
 msgid "Ot&her"
 msgstr "&Khác"
 
 #: kprintaction.cpp:106 kprintaction.cpp:114 kprintaction.cpp:122
+#, kde-format
 msgid "&Export..."
 msgstr "&Xuất..."
 
 #: kprintdialog.cpp:95
+#, kde-format
 msgid ""
 " <qt><b>Printer Location:</b> The <em>Location</em> may describe where the "
 "selected printer is located. The Location description is created by the "
@@ -4081,12 +4387,14 @@ msgstr ""
 "có thể bỏ rỗng).</qt>"
 
 #: kprintdialog.cpp:100
+#, kde-format
 msgid ""
 " <qt><b>Printer Type:</b>  The <em>Type</em> indicates your printer type. </"
 "qt>"
 msgstr " <qt><b>Kiểu máy in:</b>  <em>Kiểu</em> ngụ ý kiểu máy in. </qt>"
 
 #: kprintdialog.cpp:102
+#, kde-format
 msgid ""
 " <qt><b>Printer State:</b>  The <em>State</em> indicates the state of the "
 "print queue on the print server (which could be your localhost). The state "
@@ -4099,6 +4407,7 @@ msgstr ""
 "</qt>"
 
 #: kprintdialog.cpp:106
+#, kde-format
 msgid ""
 " <qt><b>Printer Comment:</b>  The <em>Comment</em> may describe the selected "
 "printer. This comment is created by the administrator of the print system "
@@ -4108,7 +4417,7 @@ msgstr ""
 "chọn. Chú thích được tạo bởi quan trị hệ thống in (hoặc có thể bỏ rỗng).</qt>"
 
 #: kprintdialog.cpp:110
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Printer Selection Menu:</b>  <p>Use this combo box to select the "
 #| "printer to which you want to print. Initially (if you run KDEPrint for "
@@ -4168,7 +4477,7 @@ msgstr ""
 "dưới hộp thoại này (khi nó đã bung đầy đủ).</p>  </qt>"
 
 #: kprintdialog.cpp:135
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Print Job Properties:</b>  <p>This button opens a dialog where "
 #| "you can make decisions regarding all supported print job options. </qt>"
@@ -4180,6 +4489,7 @@ msgstr ""
 "khả năng đặt các tùy chọn công việc in đã hỗ trợ.</qt>"
 
 #: kprintdialog.cpp:139
+#, kde-format
 msgid ""
 " <qt><b>Selective View on List of Printers:</b> <p> This button reduces the "
 "list of visible printers to a shorter, more convenient, pre-defined list.</"
@@ -4205,6 +4515,7 @@ msgstr ""
 "vào nút này.) </p>  </qt>"
 
 #: kprintdialog.cpp:152
+#, kde-format
 msgid ""
 "<qt><b>KDE Add Printer Wizard</b> <p>This button starts the <em>KDE Add "
 "Printer Wizard</em>.</p> <p>Use the Wizard (with <em>\"CUPS\"</em> or <em>"
@@ -4222,6 +4533,7 @@ msgstr ""
 "em>.) </p>  </qt>"
 
 #: kprintdialog.cpp:161
+#, kde-format
 msgid ""
 " <qt><b>External Print Command</b> <p>Here you can enter any command that "
 "would also print for you in a <em>konsole</em> window. </p> <b>Example:</b> "
@@ -4232,7 +4544,7 @@ msgstr ""
 "b> <pre>a2ps -P &lt;tên_máy_in&gt; --medium=A3</pre>. </qt>"
 
 #: kprintdialog.cpp:166
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Additional Print Job Options</b> <p>This button shows or hides "
 #| "additional printing options.</qt>"
@@ -4244,7 +4556,7 @@ msgstr ""
 "chọn in thêm.</qt>"
 
 #: kprintdialog.cpp:168
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>System Options:</b> <p>This button starts a new dialog where you "
 #| "can adjust various settings of your printing system. Amongst them: "
@@ -4268,6 +4580,7 @@ msgstr ""
 "xa? v.v.</ul></qt>"
 
 #: kprintdialog.cpp:180
+#, kde-format
 msgid ""
 " <qt><b>Help:</b> This button takes you to the complete <em>KDEPrint Manual</"
 "em>. </qt>"
@@ -4276,6 +4589,7 @@ msgstr ""
 "KDEPrint</em> (hiện thời vẫn còn bằng tiếng Anh). </qt>"
 
 #: kprintdialog.cpp:184
+#, kde-format
 msgid ""
 " <qt><b>Cancel:</b> This button cancels your print job and quits the "
 "kprinter dialog. </qt>"
@@ -4284,6 +4598,7 @@ msgstr ""
 "kprinter. </qt>"
 
 #: kprintdialog.cpp:188
+#, kde-format
 msgid ""
 " <qt><b>Print:</b> This button sends the job to the printing process. If you "
 "are sending non-PostScript files, you may be asked if you want KDE to "
@@ -4296,6 +4611,7 @@ msgstr ""
 "làm như thế.</qt>"
 
 #: kprintdialog.cpp:194
+#, kde-format
 msgid ""
 " <qt><b>Keep Printing Dialog Open</b><p>If you enable this checkbox, the "
 "printing dialog stays open after you hit the <em>Print</em> button.</p> <p> "
@@ -4311,6 +4627,7 @@ msgstr ""
 "nhanh hơn.</p> </qt>"
 
 #: kprintdialog.cpp:204
+#, kde-format
 msgid ""
 " <qt><b>Output File Name and Path:</b> The \"Output file:\" shows  you where "
 "your file will be saved if you decide to \"Print to File\" your job, using "
@@ -4326,6 +4643,7 @@ msgstr ""
 "điểm thích hợp bằng cách bấm nút và/hay sửa đổi dòng bên phải. </qt>"
 
 #: kprintdialog.cpp:212
+#, kde-format
 msgid ""
 " <qt><b>Output File Name and Path:</b> Edit this line to create a  path and "
 "filename that suits your needs. (Button and Lineedit field are only "
@@ -4336,7 +4654,7 @@ msgstr ""
 "sàng chỉ khi bạn « In vào tập tin » thôi.)</qt>"
 
 #: kprintdialog.cpp:217
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Browse Directories button:<b> This button calls the \"File Open / "
 #| "Browse Directories\" dialog to let you choose a directory and file name "
@@ -4351,7 +4669,7 @@ msgstr ""
 "In vào tập tin ».</qt>"
 
 #: kprintdialog.cpp:223
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Add File to Job</b> <p>This button calls the \"File Open / Browse "
 #| "Directories\" dialog to allow you to select a file for printing. Note, "
@@ -4375,7 +4693,7 @@ msgstr ""
 "việc đa tập tin » cho hệ thống in.</ul> </qt>"
 
 #: kprintdialog.cpp:235
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Print Preview</b> Enable this checkbox if you want to see a "
 #| "preview of your printout. A preview lets you check if, for instance, your "
@@ -4407,7 +4725,7 @@ msgstr ""
 "OpenOffice), ô xem thử bản in không sẵn sàng ở đây.</qt>"
 
 #: kprintdialog.cpp:248
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Set as Default Printer</b> This button sets the current printer "
 #| "as the user's default.  <p><b>Note:</b> (Button is only visible if the "
@@ -4429,113 +4747,141 @@ msgstr ""
 #: kprintdialog.cpp:258 kprintdialog.cpp:732 kprinterimpl.cpp:442
 #: kprintpreview.cpp:130 kprintpreview.cpp:151 kprintpreview.cpp:157
 #: kprintpreview.cpp:313
+#, kde-format
 msgid "Print"
 msgstr "In"
 
+#. i18n( "Printer" ), menu );
 #: kprintdialog.cpp:264 management/kmmainview.cpp:380 management/kmwend.cpp:89
 #: management/smbview.cpp:43
+#, kde-format
 msgid "Printer"
 msgstr "Máy in"
 
 #: kprintdialog.cpp:278 management/kmspecialprinterdlg.cpp:60
 #: management/kxmlcommanddlg.cpp:113
+#, kde-format
 msgid "&Name:"
 msgstr "Tê&n:"
 
 #: kprintdialog.cpp:280 management/kminfopage.cpp:51
+#, kde-format
 msgctxt "Status"
 msgid "State:"
 msgstr "Tình trạng:"
 
 #: kprintdialog.cpp:282 management/kminfopage.cpp:49
+#, kde-format
 msgid "Type:"
 msgstr "Kiểu :"
 
 #: kprintdialog.cpp:284 management/kmwname.cpp:40
+#, kde-format
 msgid "Location:"
 msgstr "Địa điểm:"
 
 #: kprintdialog.cpp:286 management/kxmlcommanddlg.cpp:177
+#, kde-format
 msgid "Comment:"
 msgstr "Chú thích:"
 
 #: kprintdialog.cpp:289
+#, kde-format
 msgid "P&roperties"
 msgstr "Tài &sản"
 
 #: kprintdialog.cpp:291
+#, kde-format
 msgid "System Op&tions"
 msgstr "Tù&y chọn hệ thống:"
 
 #: kprintdialog.cpp:293
+#, kde-format
 msgid "Set as &Default"
 msgstr "Đặt là &mặc định"
 
 #: kprintdialog.cpp:300
+#, kde-format
 msgid "Toggle selective view on printer list"
 msgstr "Bật/tắt danh sách máy in có sẵn"
 
 #: kprintdialog.cpp:305
+#, kde-format
 msgid "Add printer..."
 msgstr "Thêm máy in..."
 
 #: kprintdialog.cpp:313
+#, kde-format
 msgid "Previe&w"
 msgstr "&Xem thử"
 
 #: kprintdialog.cpp:315
+#, kde-format
 msgid "O&utput file:"
 msgstr "Tập tin &xuất:"
 
 #: kprintdialog.cpp:321
+#, kde-format
 msgid "Print co&mmand:"
 msgstr "&Lệnh in:"
 
 #: kprintdialog.cpp:330
+#, kde-format
 msgid "Show/hide advanced options"
 msgstr "Hiện/ẩn tùy chọn cấp cao"
 
 #: kprintdialog.cpp:332
+#, kde-format
 msgid "&Keep this dialog open after printing"
 msgstr "Hộp th&oại này còn lại mở sau khi in"
 
 #: kprintdialog.cpp:553 kprintdialog.cpp:922
+#, kde-format
 msgid "An error occurred while retrieving the printer list:"
 msgstr "Gặp lỗi khi lấy danh sách máy in:"
 
 #: kprintdialog.cpp:718
+#, kde-format
 msgid "The output filename is empty."
 msgstr "Tên tập tin xuất là rỗng."
 
 #: kprintdialog.cpp:752
+#, kde-format
 msgid "You do not have write permissions to this file."
 msgstr "Bạn không có quyền ghi vào tập tin này."
 
 #: kprintdialog.cpp:756
+#, kde-format
 msgid "The output directory does not exist."
 msgstr "Thư mục xuất không tồn tại."
 
 #: kprintdialog.cpp:758
+#, kde-format
 msgid "You do not have write permissions in that directory."
 msgstr "Bạn không có quyền ghi trong thư mục đó."
 
 #: kprintdialog.cpp:863
+#, kde-format
 msgid "&Options <<"
 msgstr "Tù&y chọn ←"
 
 #: kprintdialog.cpp:872
+#, kde-format
 msgid "&Options >>"
 msgstr "Tù&y chọn →"
 
 #: kprintdialog.cpp:912
+#, kde-format
 msgid "Initializing printing system..."
 msgstr "Đang khởi động hệ thống in..."
 
 #: kprintdialog.cpp:945
+#, kde-format
 msgid "Print to File"
 msgstr "In vào tập tin"
 
 #: kprinter.cpp:246
+#, kde-format
 msgid "Initialization..."
 msgstr "Sơ khởi..."
 
@@ -4545,10 +4891,12 @@ msgid "Generating print data: page %1"
 msgstr "Đang tạo ra dữ liệu in: trang %1"
 
 #: kprinter.cpp:560
+#, kde-format
 msgid "Previewing..."
 msgstr "Đang xem thử..."
 
 #: kprinterimpl.cpp:149
+#, kde-format
 msgid "Cannot copy multiple files into one file."
 msgstr "Không thể sao chép nhiều tập tin vào cùng một tập tin."
 
@@ -4569,10 +4917,12 @@ msgid "Sending print data to printer: %1"
 msgstr "Đang gửi dữ liệu in cho máy in: %1"
 
 #: kprinterimpl.cpp:228
+#, kde-format
 msgid "Unable to start child print process. "
 msgstr "Không thể khởi chạy tiến trình in con. "
 
 #: kprinterimpl.cpp:230
+#, kde-format
 msgid ""
 "The KDE print server (<b>kdeprintd</b>) could not be contacted. Check that "
 "this server is running."
@@ -4591,10 +4941,12 @@ msgstr ""
 "%1 <các_tập_tin>"
 
 #: kprinterimpl.cpp:239
+#, kde-format
 msgid "No valid file was found for printing. Operation aborted."
 msgstr "Không tìm thấy tập tin hợp lệ cần in nên thao tác bị hủy bỏ."
 
 #: kprinterimpl.cpp:271
+#, kde-format
 msgid ""
 "<p>Unable to perform the requested page selection. The filter <b>psselect</"
 "b> cannot be inserted in the current filter chain. See <b>Filter</b> tab in "
@@ -4631,22 +4983,27 @@ msgstr ""
 "hỗ trợ không?</p>"
 
 #: kprinterimpl.cpp:328 kprinterimpl.cpp:427
+#, kde-format
 msgid "Convert"
 msgstr "Chuyển đổi"
 
 #: kprinterimpl.cpp:336
+#, kde-format
 msgid "Select MIME Type"
 msgstr "Chọn kiểu MIME"
 
 #: kprinterimpl.cpp:337
+#, kde-format
 msgid "Select the target format for the conversion:"
 msgstr "Chọn định dạng đích để chuyển đổi :"
 
 #: kprinterimpl.cpp:340 kprinterimpl.cpp:358
+#, kde-format
 msgid "Operation aborted."
 msgstr "Thao tác bị hủy bỏ."
 
 #: kprinterimpl.cpp:345
+#, kde-format
 msgid "No appropriate filter found. Select another target format."
 msgstr "Không tìm thấy bộ lọc thích hợp. Hãy chọn định dạng đích khác."
 
@@ -4663,6 +5020,7 @@ msgstr ""
 "qt>"
 
 #: kprinterimpl.cpp:369
+#, kde-format
 msgid "Filtering print data"
 msgstr "Đang lọc dữ liệu in..."
 
@@ -4696,6 +5054,7 @@ msgstr ""
 "này sang %2 không?</qt>"
 
 #: kprinterimpl.cpp:428 management/kmwname.cpp:59
+#, kde-format
 msgid "Keep"
 msgstr "Giữ"
 
@@ -4721,22 +5080,27 @@ msgstr ""
 "thống này.</li></ul></qt>"
 
 #: kprinterpropertydialog.cpp:82 kprinterpropertydialog.cpp:141
+#, kde-format
 msgid "Printer Configuration"
 msgstr "Cấu hình máy in"
 
 #: kprinterpropertydialog.cpp:141
+#, kde-format
 msgid "No configurable options for that printer."
 msgstr "Không có tùy chọn cấu hình được cho máy in đó."
 
 #: kprintpreview.cpp:129
+#, kde-format
 msgid "Do you want to continue printing anyway?"
 msgstr "Bạn vẫn có muốn tiếp tục in không?"
 
 #: kprintpreview.cpp:140 kprintpreview.cpp:232
+#, kde-format
 msgid "Print Preview"
 msgstr "Xem thử bản in"
 
 #: kprintpreview.cpp:163
+#, kde-format
 msgid "Cancel"
 msgstr "Thôi"
 
@@ -4752,6 +5116,7 @@ msgstr ""
 "(biến môi trường PATH) của bạn."
 
 #: kprintpreview.cpp:297
+#, kde-format
 msgid ""
 "Preview failed: neither the internal KDE PostScript viewer (KGhostView) nor "
 "any other external PostScript viewer could be found."
@@ -4774,31 +5139,37 @@ msgid "Preview failed: unable to start program %1."
 msgstr "Việc xem thử bị lỗi : không thể khởi chạy chương trình %1."
 
 #: kprintpreview.cpp:313
+#, kde-format
 msgid "Do you want to continue printing?"
 msgstr "Bạn có muốn tiếp tục in không?"
 
 #. i18n: ectx: Menu (file)
 #: kprintpreviewui.rc:4
+#, kde-format
 msgid "&File"
 msgstr "&Tập tin"
 
 #. i18n: ectx: Menu (view)
 #: kprintpreviewui.rc:11 management/kmmainview.cpp:186
+#, kde-format
 msgid "&View"
 msgstr "&Xem"
 
 #. i18n: ectx: Menu (pagemarks)
 #: kprintpreviewui.rc:13
+#, kde-format
 msgid "&PageMarks"
 msgstr "&Dấu trang"
 
 #. i18n: ectx: Menu (settings)
 #: kprintpreviewui.rc:16 management/kmwdrivertest.cpp:57
 #: management/networkscanner.cpp:105
+#, kde-format
 msgid "&Settings"
 msgstr "Thiết &lập"
 
 #: kxmlcommand.cpp:736
+#, kde-format
 msgid "One of the command object's requirements is not met."
 msgstr "Chưa thoả một của những tiêu chuẩn của đối tượng lệnh."
 
@@ -4817,6 +5188,7 @@ msgstr ""
 "lòng kiểm tra lại bản cài đặt."
 
 #: lpd/kmlpdmanager.cpp:88
+#, kde-format
 msgctxt "Unknown type of local printer queue"
 msgid "Unknown"
 msgstr "Không rõ"
@@ -4827,10 +5199,12 @@ msgid "Local printer queue (%1)"
 msgstr "Hàng đợi máy in cục bộ (%1)"
 
 #: lpd/kmlpdmanager.cpp:89
+#, kde-format
 msgid "<Not available>"
 msgstr "<Không sẵn sàng>"
 
 #: lpd/kmlpdmanager.cpp:90
+#, kde-format
 msgctxt "Unknown Driver"
 msgid "Unknown"
 msgstr "Không rõ"
@@ -4859,6 +5233,7 @@ msgstr ""
 "Không thể đặt quyền hạn đúng về thư mục ống chỉ %1 cho máy in <b>%2</b>."
 
 #: lpd/kmlpdmanager.cpp:207
+#, kde-format
 msgid "Permission denied: you must be root."
 msgstr "Không đủ quyền: bạn phải là người chủ (root)."
 
@@ -4868,6 +5243,7 @@ msgid "Unable to execute command \"%1\"."
 msgstr "Không thể thực hiện lệnh « %1 »."
 
 #: lpd/kmlpdmanager.cpp:282
+#, kde-format
 msgid "Unable to write printcap file."
 msgstr "Không thể ghi tập tin printcap."
 
@@ -4884,10 +5260,12 @@ msgid "Could not find printer <b>%1</b> in printcap file."
 msgstr "Không tìm thấy máy in <b>%1</b> trong tập tin printcap."
 
 #: lpd/kmlpdmanager.cpp:396
+#, kde-format
 msgid "No driver found (raw printer)"
 msgstr "Không tìm thấy trình điều khiển nào (máy in thô)"
 
 #: lpd/kmlpdmanager.cpp:398
+#, kde-format
 msgid "Printer type not recognized."
 msgstr "Không nhận diện kiểu máy in."
 
@@ -4902,102 +5280,126 @@ msgstr ""
 "trình điều khiển khác."
 
 #: lpd/kmlpdmanager.cpp:501
+#, kde-format
 msgid "Unable to write driver associated files in spool directory."
 msgstr ""
 "Không thể ghi các tập tin tương ứng với trình điều khiển trong thư mục ống "
 "chỉ."
 
 #: lpd/kmlpduimanager.cpp:44
+#, kde-format
 msgid "Local printer (parallel, serial, USB)"
 msgstr "Máy in cục bộ (song song, nối tiếp, USB)"
 
 #: lpd/kmlpduimanager.cpp:45 management/kmpropbackend.cpp:69
 #: rlpr/kmwrlpr.cpp:118
+#, kde-format
 msgid "Remote LPD queue"
 msgstr "Hàng đợo LPD từ xa"
 
 #: lpd/kmlpduimanager.cpp:46
+#, kde-format
 msgid "SMB shared printer (Windows)"
 msgstr "Máy in dùng chung SMB (Windows)"
 
 #: lpd/kmlpduimanager.cpp:47
+#, kde-format
 msgid "Network printer (TCP)"
 msgstr "Máy in mạng (TCP)"
 
 #: lpd/kmlpduimanager.cpp:48
+#, kde-format
 msgid "File printer (print to file)"
 msgstr "Máy in tập tin (in vào tập tin)"
 
 #: lpd/lpdtools.cpp:31
+#, kde-format
 msgid "A4"
 msgstr "A4"
 
 #: lpd/lpdtools.cpp:32
+#, kde-format
 msgid "A3"
 msgstr "A3"
 
 #: lpd/lpdtools.cpp:33
+#, kde-format
 msgid "B4"
 msgstr "B4"
 
 #: lpd/lpdtools.cpp:34
+#, kde-format
 msgid "B5"
 msgstr "B5"
 
 #: lpd/lpdtools.cpp:214
+#, kde-format
 msgid "GhostScript settings"
 msgstr "Thiết lập GhostScript"
 
 #: lpd/lpdtools.cpp:220 management/kmpropdriver.cpp:55
 #: management/kmwend.cpp:102
+#, kde-format
 msgid "Driver"
 msgstr "Trình điều khiển"
 
 #: lpd/lpdtools.cpp:234
+#, kde-format
 msgid "Resolution"
 msgstr "Độ phân giải"
 
 #: lpd/lpdtools.cpp:258
+#, kde-format
 msgid "Color depth"
 msgstr "Độ sâu màu"
 
 #: lpd/lpdtools.cpp:284
+#, kde-format
 msgid "Additional GS options"
 msgstr "Tùy chọn GS thêm"
 
 #: lpd/lpdtools.cpp:296
+#, kde-format
 msgid "Page size"
 msgstr "Cỡ trang"
 
 #: lpd/lpdtools.cpp:311
+#, kde-format
 msgid "Pages per sheet"
 msgstr "Trang trên mỗi tờ"
 
 #: lpd/lpdtools.cpp:326
+#, kde-format
 msgid "Left/right margin (1/72 in)"
 msgstr "Lề trái/phải (1/72 in)"
 
 #: lpd/lpdtools.cpp:331
+#, kde-format
 msgid "Top/bottom margin (1/72 in)"
 msgstr "Lề trên/dưới (1/72 in)"
 
 #: lpd/lpdtools.cpp:337
+#, kde-format
 msgid "Text options"
 msgstr "Tùy chọn văn bản"
 
 #: lpd/lpdtools.cpp:343
+#, kde-format
 msgid "Send EOF after job to eject page"
 msgstr "Gửi EOF sau khi in xong để đẩy trang ra"
 
 #: lpd/lpdtools.cpp:351
+#, kde-format
 msgid "Fix stair-stepping text"
 msgstr "Sửa văn bản có bước chồng lấp"
 
 #: lpd/lpdtools.cpp:362
+#, kde-format
 msgid "Fast text printing (non-PS printers only)"
 msgstr "In văn bản nhanh (chỉ máy in không PS)"
 
 #: lpdunix/kmlpdunixmanager.cpp:194
+#, kde-format
 msgid "Description unavailable"
 msgstr "Không có mô tả"
 
@@ -5010,6 +5412,7 @@ msgstr "Hàng đợi máy in từ xa trên %1"
 #: lpdunix/kmlpdunixmanager.cpp:204 lpdunix/kmlpdunixmanager.cpp:248
 #: lpdunix/kmlpdunixmanager.cpp:287 lpdunix/kmlpdunixmanager.cpp:305
 #: lpdunix/kmlpdunixmanager.cpp:338 management/kminfopage.cpp:122
+#, kde-format
 msgid "Local printer"
 msgstr "Máy in cục bộ"
 
@@ -5050,6 +5453,7 @@ msgid "Unable to create the file %1."
 msgstr "Không thể tạo tập tin %1."
 
 #: lpr/apshandler.cpp:286
+#, kde-format
 msgid "The APS driver is not defined."
 msgstr "Chưa xác định trình điều khiển APS."
 
@@ -5059,18 +5463,22 @@ msgid "Unable to remove directory %1."
 msgstr "Không thể gỡ bỏ thư mục %1."
 
 #: lpr/editentrydialog.cpp:44
+#, kde-format
 msgid "Aliases:"
 msgstr "Biệt hiệu :"
 
 #: lpr/editentrydialog.cpp:50 management/kxmlcommanddlg.cpp:106
+#, kde-format
 msgid "String"
 msgstr "Chuỗi"
 
 #: lpr/editentrydialog.cpp:51
+#, kde-format
 msgid "Number"
 msgstr "Số"
 
 #: lpr/editentrydialog.cpp:52 management/kxmlcommanddlg.cpp:110
+#, kde-format
 msgid "Boolean"
 msgstr "Bun"
 
@@ -5080,22 +5488,27 @@ msgid "Printcap Entry: %1"
 msgstr "Mục printcap: %1"
 
 #: lpr/kmconfiglpr.cpp:34 lpr/kmconfiglpr.cpp:38
+#, kde-format
 msgid "Spooler"
 msgstr "Bộ cuộn vào ống"
 
 #: lpr/kmconfiglpr.cpp:35
+#, kde-format
 msgid "Spooler Settings"
 msgstr "Thiết lập bộ cuộn vào ống"
 
 #: lpr/kmlprjobmanager.cpp:81
+#, kde-format
 msgid "Unsupported operation."
 msgstr "Thao tác không được hỗ trợ."
 
 #: lpr/kmlprmanager.cpp:278
+#, kde-format
 msgid "The printcap file is a remote file (NIS). It cannot be written."
 msgstr "Tập tin printcap là tập tin từ xa (NIS) nên không thể được ghi."
 
 #: lpr/kmlprmanager.cpp:291
+#, kde-format
 msgid ""
 "Unable to save printcap file. Check that you have write permissions for that "
 "file."
@@ -5103,10 +5516,12 @@ msgstr ""
 "Không thể lưu tập tin printcap. Hãy kiểm tra xem bạn có quyền ghi tập tin đó."
 
 #: lpr/kmlprmanager.cpp:315
+#, kde-format
 msgid "Internal error: no handler defined."
 msgstr "Lỗi nội bộ : chưa xác định bộ quản lý."
 
 #: lpr/kmlprmanager.cpp:328
+#, kde-format
 msgid "Could not determine spool directory. See options dialog."
 msgstr "Không thể xác định thư mục ống chỉ. Xem hộp thoại tùy chọn."
 
@@ -5136,10 +5551,12 @@ msgstr ""
 "thư mục đó."
 
 #: lpr/kmlprmanager.cpp:431
+#, kde-format
 msgid "&Edit printcap Entry..."
 msgstr "&Sửa mục printcap..."
 
 #: lpr/kmlprmanager.cpp:449
+#, kde-format
 msgid ""
 "Editing a printcap entry manually should only be done by confirmed system "
 "administrator. This may prevent your printer from working. Do you want to "
@@ -5162,6 +5579,7 @@ msgstr ""
 "bạn."
 
 #: lpr/lpchelper.cpp:237 lpr/lpchelper.cpp:260 lpr/lpchelper.cpp:276
+#, kde-format
 msgid "Permission denied."
 msgstr "Không đủ quyền."
 
@@ -5181,6 +5599,7 @@ msgid "Execution of lprm failed: %1"
 msgstr "Việc thực hiện lprm bị lỗi : %1"
 
 #: lpr/lprhandler.cpp:59 lpr/lprhandler.cpp:88
+#, kde-format
 msgid "Unknown (unrecognized entry)"
 msgstr "Không rõ (không nhận diện mục nhập)"
 
@@ -5195,10 +5614,12 @@ msgid "Local printer on %1"
 msgstr "Máy in cục bộ trên %1"
 
 #: lpr/lprhandler.cpp:95 lpr/lprhandler.cpp:101 lpr/lprhandler.cpp:107
+#, kde-format
 msgid "Unrecognized entry."
 msgstr "Không nhận diện mục nhập."
 
 #: lpr/lprngtoolhandler.cpp:95 lpr/lprngtoolhandler.cpp:160
+#, kde-format
 msgid "unknown"
 msgstr "không rõ"
 
@@ -5208,6 +5629,7 @@ msgid "IFHP Driver (%1)"
 msgstr "Trình điều khiển IFHP (%1)"
 
 #: lpr/lprngtoolhandler.cpp:153
+#, kde-format
 msgid "No driver defined for that printer. It might be a raw printer."
 msgstr "Chưa xác định trình điều khiển cho máy in đó. Có lẽ nó là máy in thô."
 
@@ -5217,20 +5639,24 @@ msgid "LPRngTool Common Driver (%1)"
 msgstr "Trình điều khiển chung LPRngTool (%1)"
 
 #: lpr/matichandler.cpp:81
+#, kde-format
 msgid "Network printer"
 msgstr "Máy in mạng"
 
 #: lpr/matichandler.cpp:220
+#, kde-format
 msgid "Internal error."
 msgstr "Lỗi nội bộ."
 
 #: lpr/matichandler.cpp:291
+#, kde-format
 msgid ""
 "You probably do not have the required permissions to perform that operation."
 msgstr ""
 "Rất có thể là bạn không có quyền hạn cần thiết để thực hiện thao tác đó."
 
 #: lpr/matichandler.cpp:366
+#, kde-format
 msgid ""
 "Unable to find executable lpdomatic. Check that Foomatic is correctly "
 "installed and that lpdomatic is installed in a standard location."
@@ -5244,39 +5670,47 @@ msgid "Unable to remove driver file %1."
 msgstr "Không thể gỡ bỏ tập tin trình điều khiển %1."
 
 #: management/kaddprinterwizard.cpp:30
+#, kde-format
 msgid "Configure KDE Print"
 msgstr "Cấu hình In KDE"
 
 #: management/kaddprinterwizard.cpp:31
+#, kde-format
 msgid "Configure print server"
 msgstr "Cấu hình trình phục vụ in"
 
 #: management/kaddprinterwizard.cpp:33
+#, kde-format
 msgid "KAddPrinterWizard"
 msgstr "Trợ lý thêm máy in KDE"
 
 #: management/kaddprinterwizard.cpp:34
+#, kde-format
 msgid "Start the add printer wizard"
 msgstr "Khởi chạy trợ lý thêm máy in"
 
 #: management/kdeprint_management_module.cpp:47
+#, kde-format
 msgid "Select Command"
 msgstr "Chọn lệnh"
 
 #: management/kmconfigcommand.cpp:33
+#, kde-format
 msgid "Commands"
 msgstr "Lệnh"
 
 #: management/kmconfigcommand.cpp:34
+#, kde-format
 msgid "Command Settings"
 msgstr "Thiết lập lệnh"
 
 #: management/kmconfigcommand.cpp:37
+#, kde-format
 msgid "Edit/Create Commands"
 msgstr "Sửa/Tạo lệnh"
 
 #: management/kmconfigcommand.cpp:40
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<p>Command objects perform a conversion from input to output.<br>They are "
 #| "used as the basis to build both print filters and special printers. They "
@@ -5298,22 +5732,27 @@ msgstr ""
 "có. Thay đổi nào sẽ có tác động chỉ bạn thôi."
 
 #: management/kmconfigdialog.cpp:44
+#, kde-format
 msgid "KDE Print Configuration"
 msgstr "Cấu hình In KDE"
 
 #: management/kmconfigfilter.cpp:42
+#, kde-format
 msgid "Filter"
 msgstr "Lọc"
 
 #: management/kmconfigfilter.cpp:43
+#, kde-format
 msgid "Printer Filtering Settings"
 msgstr "Thiết lập lọc máy in"
 
 #: management/kmconfigfilter.cpp:46
+#, kde-format
 msgid "Printer Filter"
 msgstr "Lọc máy in"
 
 #: management/kmconfigfilter.cpp:59
+#, kde-format
 msgid ""
 "The printer filtering allows you to view only a specific set of printers "
 "instead of all of them. This may be useful when there are a lot of printers "
@@ -5328,50 +5767,62 @@ msgstr ""
 "được bỏ qua nếu rỗng."
 
 #: management/kmconfigfilter.cpp:66
+#, kde-format
 msgid "Location filter:"
 msgstr "Bộ lọc địa điểm:"
 
 #: management/kmconfigfonts.cpp:43
+#, kde-format
 msgid "Fonts"
 msgstr "Phông"
 
 #: management/kmconfigfonts.cpp:44
+#, kde-format
 msgid "Font Settings"
 msgstr "Thiết lập phông chữ"
 
 #: management/kmconfigfonts.cpp:47
+#, kde-format
 msgid "Fonts Embedding"
 msgstr "Nhúng phông chữ"
 
 #: management/kmconfigfonts.cpp:49
+#, kde-format
 msgid "Fonts Path"
 msgstr "Đường dẫn phông chữ"
 
 #: management/kmconfigfonts.cpp:52
+#, kde-format
 msgid "&Embed fonts in PostScript data when printing"
 msgstr "&Nhúng phông chữ vào dữ liệu PostScript khi in"
 
 #: management/kmconfigfonts.cpp:60
+#, kde-format
 msgid "&Up"
 msgstr "&Lên"
 
 #: management/kmconfigfonts.cpp:61
+#, kde-format
 msgid "&Down"
 msgstr "&Xuống"
 
 #: management/kmconfigfonts.cpp:62
+#, kde-format
 msgid "&Add"
 msgstr "Th&êm"
 
 #: management/kmconfigfonts.cpp:63 management/kmmainview.cpp:225
+#, kde-format
 msgid "&Remove"
 msgstr "&Bỏ"
 
 #: management/kmconfigfonts.cpp:64
+#, kde-format
 msgid "Additional director&y:"
 msgstr "Thư mục th&êm:"
 
 #: management/kmconfigfonts.cpp:95
+#, kde-format
 msgid ""
 "These options will automatically put fonts in the PostScript file which are "
 "not present on the printer. Font embedding usually produces better print "
@@ -5383,6 +5834,7 @@ msgstr ""
 "hơn trang được hiển thị trên màn hình), cũng tạo dữ liệu in nhiều hơn."
 
 #: management/kmconfigfonts.cpp:98
+#, kde-format
 msgid ""
 "When using font embedding you can select additional directories where KDE "
 "should search for embeddable font files. By default, the X server font path "
@@ -5395,18 +5847,22 @@ msgstr ""
 "dẫn tìm kiếm mặc định là đủ trong phần lớn trường hợp."
 
 #: management/kmconfiggeneral.cpp:46 management/kmpropgeneral.cpp:57
+#, kde-format
 msgid "General Settings"
 msgstr "Thiết lập chung"
 
 #: management/kmconfiggeneral.cpp:49
+#, kde-format
 msgid "Refresh Interval"
 msgstr "Thời gian cập nhật"
 
 #: management/kmconfiggeneral.cpp:53
+#, kde-format
 msgid " sec"
 msgstr " giây"
 
 #: management/kmconfiggeneral.cpp:55
+#, kde-format
 msgid ""
 "This time setting controls the refresh rate of various <b>KDE Print</b> "
 "components like the print manager and the job viewer."
@@ -5415,30 +5871,37 @@ msgstr ""
 "KDE</b> như bộ quản lý in và bộ xem công việc."
 
 #: management/kmconfiggeneral.cpp:59
+#, kde-format
 msgid "Test Page"
 msgstr "Trang thử"
 
 #: management/kmconfiggeneral.cpp:61
+#, kde-format
 msgid "&Specify personal test page"
 msgstr "Ghi rõ trang thử &riêng"
 
 #: management/kmconfiggeneral.cpp:65
+#, kde-format
 msgid "Preview..."
 msgstr "Xem thử..."
 
 #: management/kmconfiggeneral.cpp:74
+#, kde-format
 msgid "Miscellaneous"
 msgstr "Lặt vặt"
 
 #: management/kmconfiggeneral.cpp:76
+#, kde-format
 msgid "Sho&w printing status message box"
 msgstr "&Hiện hộp thông điệp trạng thái in"
 
 #: management/kmconfiggeneral.cpp:77
+#, kde-format
 msgid "De&faults to the last printer used in the application"
 msgstr "Mặc định là máy in đã dùng cuối cùng trong ứng dụng đó"
 
 #: management/kmconfiggeneral.cpp:140
+#, kde-format
 msgid ""
 "The selected test page is not a PostScript file. You may not be able to test "
 "your printer anymore."
@@ -5447,47 +5910,58 @@ msgstr ""
 "bạn không còn có lại khả năng thử ra máy in."
 
 #: management/kmconfiggeneral.cpp:150 management/kmwfile.cpp:64
+#, kde-format
 msgid "Empty file name."
 msgstr "Tên tập tin rỗng."
 
 #: management/kmconfigjobs.cpp:34 management/kmpages.cpp:58
+#, kde-format
 msgid "Jobs"
 msgstr "Công việc"
 
 #: management/kmconfigjobs.cpp:35 management/kmjobviewer.cpp:742
+#, kde-format
 msgid "Print Job Settings"
 msgstr "Thiết lập công việc máy in"
 
 #: management/kmconfigjobs.cpp:38
+#, kde-format
 msgid "Jobs Shown"
 msgstr "Công việc đã hiện"
 
 #: management/kmconfigjobs.cpp:43 management/kmjobviewer.cpp:193
 #: management/kmjobviewer.cpp:379
+#, kde-format
 msgid "Unlimited"
 msgstr "Vô hạn"
 
 #: management/kmconfigjobs.cpp:44
+#, kde-format
 msgid "Maximum number of jobs shown:"
 msgstr "Số công việc tối đa đã hiện:"
 
 #: management/kmconfigpreview.cpp:35
+#, kde-format
 msgid "Preview"
 msgstr "Xem thử"
 
 #: management/kmconfigpreview.cpp:36
+#, kde-format
 msgid "Preview Settings"
 msgstr "Thiết lập xem thử"
 
 #: management/kmconfigpreview.cpp:39
+#, kde-format
 msgid "Preview Program"
 msgstr "Chương trình xem thử"
 
 #: management/kmconfigpreview.cpp:42
+#, kde-format
 msgid "&Use external preview program"
 msgstr "D&ùng chương trình xem thử bên ngoài"
 
 #: management/kmconfigpreview.cpp:45
+#, kde-format
 msgid ""
 "You can use an external preview program (PS viewer) instead of the KDE built-"
 "in preview system. Note that if the KDE default PS viewer (KGhostView) "
@@ -5500,6 +5974,7 @@ msgstr ""
 "khác."
 
 #: management/kmdbcreator.cpp:94
+#, kde-format
 msgid ""
 "No executable defined for the creation of the driver database. This "
 "operation is not implemented."
@@ -5527,14 +6002,17 @@ msgstr ""
 "lỗi."
 
 #: management/kmdbcreator.cpp:122
+#, kde-format
 msgid "Please wait while KDE rebuilds a driver database."
 msgstr "Vui lòng đời khi KDE xây dựng lại một cơ sở dữ liệu trình điều khiển."
 
 #: management/kmdbcreator.cpp:123
+#, kde-format
 msgid "Driver Database"
 msgstr "Cơ sở dữ liệu trình điều khiển"
 
 #: management/kmdbcreator.cpp:168
+#, kde-format
 msgid ""
 "Error while creating driver database: abnormal child-process termination."
 msgstr ""
@@ -5542,58 +6020,72 @@ msgstr ""
 "bất thường."
 
 #: management/kmdriverdbwidget.cpp:49
+#, kde-format
 msgid "&PostScript printer"
 msgstr "Máy in &PostScript"
 
 #: management/kmdriverdbwidget.cpp:50
+#, kde-format
 msgid "&Raw printer (no driver needed)"
 msgstr "Máy in th&ô (không cần trình điều khiển)"
 
 #: management/kmdriverdbwidget.cpp:53
+#, kde-format
 msgid "&Other..."
 msgstr "&Khác..."
 
 #: management/kmdriverdbwidget.cpp:54
+#, kde-format
 msgid "&Manufacturer:"
 msgstr "&Hãng chế tạo :"
 
 #: management/kmdriverdbwidget.cpp:55
+#, kde-format
 msgid "Mo&del:"
 msgstr "&Mô hình:"
 
 #: management/kmdriverdbwidget.cpp:169 management/kmdriverdbwidget.cpp:181
+#, kde-format
 msgid "Loading..."
 msgstr "Đang tải..."
 
 #: management/kmdriverdbwidget.cpp:235
+#, kde-format
 msgid "Unable to find the PostScript driver."
 msgstr "Không tìm thấy trình điều khiển PostScript."
 
 #: management/kmdriverdbwidget.cpp:248
+#, kde-format
 msgid "Select Driver"
 msgstr "Chọn trình điều khiển"
 
 #: management/kmdriverdbwidget.cpp:262 management/kmdriverdbwidget.cpp:264
+#, kde-format
 msgid "<Unknown>"
 msgstr "<Không rõ>"
 
 #: management/kmdriverdbwidget.cpp:267
+#, kde-format
 msgid "Database"
 msgstr "Cơ sở dữ liệu"
 
 #: management/kmdriverdbwidget.cpp:272
+#, kde-format
 msgid "Wrong driver format."
 msgstr "Định dạng trình điều khiển không đúng."
 
 #: management/kmdriverdbwidget.cpp:279
+#, kde-format
 msgid "Other"
 msgstr "Khác"
 
 #: management/kmdriverdialog.cpp:29
+#, kde-format
 msgid "Configure"
 msgstr "Cấu hình"
 
 #: management/kmdriverdialog.cpp:54
+#, kde-format
 msgid ""
 "Some options are in conflict. You must resolve those conflicts before "
 "continuing."
@@ -5602,54 +6094,66 @@ msgstr ""
 "tiếp tục."
 
 #: management/kminfopage.cpp:45 management/kmpropgeneral.cpp:38
+#, kde-format
 msgctxt "Physical Location"
 msgid "Location:"
 msgstr "Địa điểm:"
 
 #: management/kminfopage.cpp:47 management/kmpropgeneral.cpp:39
 #: management/kmwname.cpp:41
+#, kde-format
 msgid "Description:"
 msgstr "Mô tả :"
 
 #: management/kminfopage.cpp:55 management/kminfopage.cpp:100
 #: tools/escputil/escpwidget.cpp:111
+#, kde-format
 msgid "Device:"
 msgstr "Thiết bị :"
 
 #: management/kminfopage.cpp:57
+#, kde-format
 msgid "Model:"
 msgstr "Mô hình:"
 
 #: management/kminfopage.cpp:99
+#, kde-format
 msgid "Members:"
 msgstr "Thành viên:"
 
 #: management/kminfopage.cpp:116
+#, kde-format
 msgid "Implicit class"
 msgstr "Hạng ngầm"
 
 #: management/kminfopage.cpp:118
+#, kde-format
 msgid "Remote class"
 msgstr "Hạng từ xa"
 
 #: management/kminfopage.cpp:119
+#, kde-format
 msgid "Local class"
 msgstr "Hạng cục bộ"
 
 #: management/kminfopage.cpp:121
+#, kde-format
 msgid "Remote printer"
 msgstr "Máy in từ xa"
 
 #: management/kminfopage.cpp:124
+#, kde-format
 msgid "Special (pseudo) printer"
 msgstr "Máy in đặc biệt (giả)"
 
 #: management/kminfopage.cpp:125
+#, kde-format
 msgctxt "Unknown class of printer"
 msgid "Unknown"
 msgstr "Lạ"
 
 #: management/kminstancepage.cpp:63
+#, kde-format
 msgid ""
 "Define/Edit here instances for the current selected printer. An instance is "
 "a combination of a real (physical) printer and a set of predefined options. "
@@ -5666,22 +6170,27 @@ msgstr ""
 "mặt đôi.</li></ul>"
 
 #: management/kminstancepage.cpp:89
+#, kde-format
 msgid "New..."
 msgstr "Mới..."
 
 #: management/kminstancepage.cpp:90
+#, kde-format
 msgid "Copy..."
 msgstr "Chép..."
 
 #: management/kminstancepage.cpp:91 management/kmjobviewer.cpp:545
+#, kde-format
 msgid "Remove"
 msgstr "Bỏ"
 
 #: management/kminstancepage.cpp:94
+#, kde-format
 msgid "Settings"
 msgstr "Thiết lập"
 
 #: management/kminstancepage.cpp:96
+#, kde-format
 msgid "Test..."
 msgstr "Thử..."
 
@@ -5691,18 +6200,22 @@ msgstr "Thử..."
 #: management/kminstancepage.cpp:190 management/kminstancepage.cpp:195
 #: management/kminstancepage.cpp:197 management/kminstancepage.cpp:216
 #: management/kminstancepage.cpp:248 management/kminstancepage.cpp:265
+#, kde-format
 msgid "(Default)"
 msgstr "(Mặc định)"
 
 #: management/kminstancepage.cpp:142 management/kminstancepage.cpp:189
+#, kde-format
 msgid "Instance Name"
 msgstr "Tên thể hiện"
 
 #: management/kminstancepage.cpp:142 management/kminstancepage.cpp:189
+#, kde-format
 msgid "Enter name for new instance (leave untouched for default):"
 msgstr "Hãy nhập tên cho thể hiện mới (để lại để chọn giá trị mặc định):"
 
 #: management/kminstancepage.cpp:146 management/kminstancepage.cpp:193
+#, kde-format
 msgid "Instance name must not contain any spaces or slashes."
 msgstr "Tên thể hiện không thể chứa dấu cách hay dấu xuyệc."
 
@@ -5732,10 +6245,12 @@ msgid ""
 msgstr "Không thể lấy thông tin về máy in. Thông điệp từ hệ thống in: %1."
 
 #: management/kminstancepage.cpp:235
+#, kde-format
 msgid "The instance name is empty. Please select an instance."
 msgstr "Tên thể hiện là rỗng. Vui lòng chọn thể hiện."
 
 #: management/kminstancepage.cpp:269
+#, kde-format
 msgid "Internal error: printer not found."
 msgstr "Lỗi nội bộ : không tìm thấy máy in."
 
@@ -5745,6 +6260,7 @@ msgid "You are about to print a test page on %1. Do you want to continue?"
 msgstr "Bạn sắp in một trang thử trên %1. Bạn vẫn muốn tiếp tục không?"
 
 #: management/kminstancepage.cpp:270 management/kmmainview.cpp:714
+#, kde-format
 msgid "Print Test Page"
 msgstr "In tráng thử"
 
@@ -5759,12 +6275,14 @@ msgid "Test page successfully sent to printer %1."
 msgstr "Trang thử đã được gửi cho máy in %1."
 
 #: management/kmjobviewer.cpp:127 management/kmjobviewer.cpp:179
+#, kde-format
 msgid "No Printer"
 msgstr "Không có máy in"
 
 #: management/kmjobviewer.cpp:162 management/kmjobviewer.cpp:200
 #: management/kmjobviewer.cpp:216 management/kmjobviewer.cpp:231
 #: management/kmjobviewer.cpp:398 management/kmjobviewer.cpp:589
+#, kde-format
 msgid "All Printers"
 msgstr "Mọi máy in"
 
@@ -5780,67 +6298,83 @@ msgid "Max.: %1"
 msgstr "Đa : %1"
 
 #: management/kmjobviewer.cpp:258
+#, kde-format
 msgid "Job ID"
 msgstr "ID việc"
 
 #: management/kmjobviewer.cpp:258
+#, kde-format
 msgid "Owner"
 msgstr "Sở hữu"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgctxt "Status"
 msgid "State"
 msgstr "Trạng thái"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgid "Size (KB)"
 msgstr "Cỡ (kB)"
 
 #: management/kmjobviewer.cpp:259
+#, kde-format
 msgid "Page(s)"
 msgstr "Trang"
 
 #: management/kmjobviewer.cpp:277
+#, kde-format
 msgid "&Hold"
 msgstr "&Giữ lại"
 
 #: management/kmjobviewer.cpp:282
+#, kde-format
 msgid "&Resume"
 msgstr "Tiếp tục &lại"
 
 #: management/kmjobviewer.cpp:287
+#, kde-format
 msgid "Remo&ve"
 msgstr "&Bỏ"
 
 #: management/kmjobviewer.cpp:293
+#, kde-format
 msgid "Res&tart"
 msgstr "&Khởi chạy lại"
 
 #: management/kmjobviewer.cpp:298
+#, kde-format
 msgid "&Move to Printer"
 msgstr "Chu&yển vào máy in"
 
 #: management/kmjobviewer.cpp:306
+#, kde-format
 msgid "&Toggle Completed Jobs"
 msgstr "&Bật/tắt việc hoàn tất"
 
 #: management/kmjobviewer.cpp:312
+#, kde-format
 msgid "Show Only User Jobs"
 msgstr "Hiện chỉ công việc người dùng"
 
 #: management/kmjobviewer.cpp:324
+#, kde-format
 msgid "User Name"
 msgstr "Tên người dùng"
 
 #: management/kmjobviewer.cpp:342
+#, kde-format
 msgid "&Select Printer"
 msgstr "&Chọn máy in"
 
 #: management/kmjobviewer.cpp:370
+#, kde-format
 msgid "Refresh"
 msgstr "Cập nhật"
 
 #: management/kmjobviewer.cpp:377
+#, kde-format
 msgid "Keep window permanent"
 msgstr "Cửa sổ mở luôn"
 
@@ -5854,14 +6388,17 @@ msgstr ""
 "bộ quản lý :"
 
 #: management/kmjobviewer.cpp:535
+#, kde-format
 msgid "Hold"
 msgstr "Giữ lại"
 
 #: management/kmjobviewer.cpp:540
+#, kde-format
 msgid "Resume"
 msgstr "Tiếp tục lại"
 
 #: management/kmjobviewer.cpp:550
+#, kde-format
 msgid "Restart"
 msgstr "Chạy lại"
 
@@ -5871,22 +6408,27 @@ msgid "Move to %1"
 msgstr "Chuyển vào %1"
 
 #: management/kmjobviewer.cpp:717
+#, kde-format
 msgid "Operation failed."
 msgstr "Thao tác thất bại."
 
 #: management/kmlistview.cpp:127
+#, kde-format
 msgid "Print System"
 msgstr "Hệ thống in"
 
 #: management/kmlistview.cpp:130
+#, kde-format
 msgid "Classes"
 msgstr "Hạng"
 
 #: management/kmlistview.cpp:133
+#, kde-format
 msgid "Printers"
 msgstr "Máy in"
 
 #: management/kmlistview.cpp:136
+#, kde-format
 msgid "Specials"
 msgstr "Đặc biệt"
 
@@ -5901,98 +6443,122 @@ msgstr ""
 
 #: management/kmmainview.cpp:141 management/kmmainview.cpp:852
 #: management/kmmainview.cpp:923 management/kmmainview.cpp:947
+#, kde-format
 msgid "Initializing manager..."
 msgstr "Đang sở khởi bộ quản lý..."
 
 #: management/kmmainview.cpp:190
+#, kde-format
 msgid "&Icons,&List,&Tree"
 msgstr "&Biểu tượng,&Danh sách,&Cây"
 
 #: management/kmmainview.cpp:194
+#, kde-format
 msgid "Start/Stop Printer"
 msgstr "Chạy/Dừng máy in"
 
 #: management/kmmainview.cpp:197
+#, kde-format
 msgid "&Start Printer"
 msgstr "&Chạy máy in"
 
 #: management/kmmainview.cpp:203
+#, kde-format
 msgid "Sto&p Printer"
 msgstr "&Dừng máy in"
 
 #: management/kmmainview.cpp:209
+#, kde-format
 msgid "Enable/Disable Job Spooling"
 msgstr "Bật/tắt cuộn công việc vào ống"
 
 #: management/kmmainview.cpp:213
+#, kde-format
 msgid "&Enable Job Spooling"
 msgstr "&Bật cuộn công việc vào ống"
 
 #: management/kmmainview.cpp:219
+#, kde-format
 msgid "&Disable Job Spooling"
 msgstr "&Tắt cuộn công việc vào ống"
 
 #: management/kmmainview.cpp:230
+#, kde-format
 msgid "&Configure..."
 msgstr "&Cấu hính..."
 
 #: management/kmmainview.cpp:235
+#, kde-format
 msgid "Add &Printer/Class..."
 msgstr "Th&êm hạng máy in"
 
 #: management/kmmainview.cpp:240
+#, kde-format
 msgid "Add &Special (pseudo) Printer..."
 msgstr "Thêm mạy in đặc &biệt (giả)..."
 
 #: management/kmmainview.cpp:245
+#, kde-format
 msgid "Set as &Local Default"
 msgstr "Đặt là mặc định &cục bộ"
 
 #: management/kmmainview.cpp:250
+#, kde-format
 msgid "Set as &User Default"
 msgstr "Đặt là mặc định &người dùng"
 
 #: management/kmmainview.cpp:255
+#, kde-format
 msgid "&Test Printer..."
 msgstr "&Thử máy in..."
 
 #: management/kmmainview.cpp:260
+#, kde-format
 msgid "Configure &Manager..."
 msgstr "Cấu hình bộ &quản lý..."
 
 #: management/kmmainview.cpp:265
+#, kde-format
 msgid "Initialize Manager/&View"
 msgstr "Sở khởi Bộ quản lý/&Xem"
 
 #: management/kmmainview.cpp:270
+#, kde-format
 msgid "&Orientation"
 msgstr "&Hướng"
 
 #: management/kmmainview.cpp:274
+#, kde-format
 msgid "&Vertical,&Horizontal"
 msgstr "&Ngang,&Dọc"
 
 #: management/kmmainview.cpp:278
+#, kde-format
 msgid "R&estart Server"
 msgstr "Khởi chạy &lại trình phục vụ"
 
 #: management/kmmainview.cpp:283
+#, kde-format
 msgid "Configure &Server..."
 msgstr "Cấu hình trình &phục vụ..."
 
 #: management/kmmainview.cpp:289
+#, kde-format
 msgid "Show &Toolbar"
 msgstr "Hiện &thanh công cụ"
 
 #: management/kmmainview.cpp:292
+#, kde-format
 msgid "Show Me&nu Toolbar"
 msgstr "Hiện th&anh công cụ trình đơn"
 
 #: management/kmmainview.cpp:295
+#, kde-format
 msgid "Show Pr&inter Details"
 msgstr "Hiện ch&i tiết máy in"
 
 #: management/kmmainview.cpp:301
+#, kde-format
 msgid "Toggle Printer &Filtering"
 msgstr "Bật/tắt &lọc máy in"
 
@@ -6007,30 +6573,41 @@ msgid "%1 &Web Site"
 msgstr "Chỗ &Mạng %1"
 
 #: management/kmmainview.cpp:317
+#, kde-format
 msgid "Pri&nter Tools"
 msgstr "C&ông cụ máy in"
 
+#. i18n( "Add" ), menu );
 #: management/kmmainview.cpp:362
+#, kde-format
 msgid "Add"
 msgstr "Thêm"
 
+#. i18n( "Server" ), menu );
 #: management/kmmainview.cpp:389
+#, kde-format
 msgid "Print Server"
 msgstr "Trình phục vụ in"
 
+#. i18n( "Manager" ), menu );
 #: management/kmmainview.cpp:398
+#, kde-format
 msgid "Print Manager"
 msgstr "Bộ quản lý in"
 
+#. i18n( "View" ), menu );
 #: management/kmmainview.cpp:413
+#, kde-format
 msgid "View"
 msgstr "Xem"
 
 #: management/kmmainview.cpp:422
+#, kde-format
 msgid "Documentation"
 msgstr "Tài liệu"
 
 #: management/kmmainview.cpp:445
+#, kde-format
 msgid "An error occurred while retrieving the printer list."
 msgstr "Gặp lỗi khi lấy danh sách máy in."
 
@@ -6070,6 +6647,7 @@ msgid "Unable to load a valid driver for printer %1."
 msgstr "Không thể tải trình điều khiển hợp lệ cho máy in %1."
 
 #: management/kmmainview.cpp:668
+#, kde-format
 msgid "Unable to create printer."
 msgstr "Không thể tạo máy in."
 
@@ -6084,6 +6662,7 @@ msgid "Unable to test printer %1."
 msgstr "Không thể thử ra máy in %1."
 
 #: management/kmmainview.cpp:732
+#, kde-format
 msgid "Internal error (no error message)."
 msgstr "Lỗi nội bộ (không có thông điệp lỗi)."
 
@@ -6094,22 +6673,27 @@ msgid "<p>Error message received from manager:</p><p>%1</p>"
 msgstr "Thông điệp lỗi được nhận từ bộ quản lý :</p><p>%1</p>"
 
 #: management/kmmainview.cpp:750
+#, kde-format
 msgid "Unable to restart print server."
 msgstr "Không thể khởi chạy lại trình phục vụ in."
 
 #: management/kmmainview.cpp:753
+#, kde-format
 msgid "Restarting server..."
 msgstr "Đang khởi chạy lại trình phục vụ..."
 
 #: management/kmmainview.cpp:762
+#, kde-format
 msgid "Unable to configure print server."
 msgstr "Không thể cấu hình trình phục vụ in."
 
 #: management/kmmainview.cpp:765
+#, kde-format
 msgid "Configuring server..."
 msgstr "Đang cấu hình trình phục vụ..."
 
 #: management/kmmainview.cpp:906
+#, kde-format
 msgid ""
 "Unable to start printer tool. Possible reasons are: no printer selected, the "
 "selected printer doesn't have any local device defined (printer port), or "
@@ -6120,95 +6704,118 @@ msgstr ""
 "công cụ."
 
 #: management/kmmainview.cpp:930
+#, kde-format
 msgid "Unable to retrieve the printer list."
 msgstr "Không thể lấy danh sách máy in."
 
 #: management/kmpages.cpp:52 management/kxmlcommandselector.cpp:59
+#, kde-format
 msgid "Information"
 msgstr "Thông tin"
 
 #: management/kmpages.cpp:64
+#, kde-format
 msgid "Properties"
 msgstr "Thuộc tính"
 
 #: management/kmpages.cpp:70
+#, kde-format
 msgid "Instances"
 msgstr "Thể hiện"
 
 #: management/kmpropbackend.cpp:34
+#, kde-format
 msgid "Printer type:"
 msgstr "Kiểu máy in:"
 
 #: management/kmpropbackend.cpp:50
+#, kde-format
 msgid "Interface"
 msgstr "Giao diện"
 
 #: management/kmpropbackend.cpp:51
+#, kde-format
 msgid "Interface Settings"
 msgstr "Thiết lập giao diện"
 
 #: management/kmpropbackend.cpp:63
+#, kde-format
 msgid "IPP Printer"
 msgstr "Máy in IPP"
 
 #: management/kmpropbackend.cpp:64
+#, kde-format
 msgid "Local USB Printer"
 msgstr "Máy in USB cục bộ"
 
 #: management/kmpropbackend.cpp:65
+#, kde-format
 msgid "Local Parallel Printer"
 msgstr "Máy in song song cục bộ"
 
 #: management/kmpropbackend.cpp:66
+#, kde-format
 msgid "Local Serial Printer"
 msgstr "Máy in nối tiếp cục bộ"
 
 #: management/kmpropbackend.cpp:67
+#, kde-format
 msgid "Network Printer (socket)"
 msgstr "Máy in mạng (ổ cắm)"
 
 #: management/kmpropbackend.cpp:68
+#, kde-format
 msgid "SMB printers (Windows)"
 msgstr "Máy in SMB (Windows)"
 
 #: management/kmpropbackend.cpp:70
+#, kde-format
 msgid "File printer"
 msgstr "Máy in tập tin"
 
 #: management/kmpropbackend.cpp:71
+#, kde-format
 msgid "Serial Fax/Modem printer"
 msgstr "Máy in điện thư/điêu giải nối tiếp"
 
 #: management/kmpropbackend.cpp:72
+#, kde-format
 msgctxt "Unknown Protocol"
 msgid "Unknown"
 msgstr "Lạ"
 
 #: management/kmpropcontainer.cpp:35
+#, kde-format
 msgid "Change..."
 msgstr "Đổi..."
 
 #: management/kmpropdriver.cpp:36
+#, kde-format
 msgid "Manufacturer:"
 msgstr "Hãng chế tạo :"
 
 #: management/kmpropdriver.cpp:37
+#, kde-format
 msgid "Printer model:"
 msgstr "Mô hình máy in:"
 
 #: management/kmpropdriver.cpp:38
+#, kde-format
 msgid "Driver info:"
 msgstr "Thông tin trình điều khiển:"
 
 #: management/kmpropgeneral.cpp:37
+#, kde-format
 msgid "Printer name:"
 msgstr "Tên máy in:"
 
 #: management/kmpropmembers.cpp:41 management/kmwend.cpp:61
+#, kde-format
 msgid "Members"
 msgstr "Thành viên"
 
 #: management/kmpropmembers.cpp:42
+#, kde-format
 msgid "Class Members"
 msgstr "Bộ phạn hạng"
 
@@ -6222,39 +6829,48 @@ msgstr ""
 "p></qt>"
 
 #: management/kmspecialprinterdlg.cpp:50
+#, kde-format
 msgid "Add Special Printer"
 msgstr "Thêm máy in đặc biệt"
 
 #: management/kmspecialprinterdlg.cpp:61 management/kxmlcommanddlg.cpp:114
 #: management/kxmlcommanddlg.cpp:872
+#, kde-format
 msgid "&Description:"
 msgstr "&Mô tả :"
 
 #: management/kmspecialprinterdlg.cpp:62
+#, kde-format
 msgid "&Location:"
 msgstr "&Địa điểm:"
 
 #: management/kmspecialprinterdlg.cpp:70
+#, kde-format
 msgid "Command &Settings"
 msgstr "Thiết lập &lệnh"
 
 #: management/kmspecialprinterdlg.cpp:76
+#, kde-format
 msgid "Outp&ut File"
 msgstr "Tập tin &xuất"
 
 #: management/kmspecialprinterdlg.cpp:79
+#, kde-format
 msgid "&Enable output file"
 msgstr "&Bật tập tin xuất"
 
 #: management/kmspecialprinterdlg.cpp:90 management/kxmlcommanddlg.cpp:115
+#, kde-format
 msgid "&Format:"
 msgstr "&Định dạng:"
 
 #: management/kmspecialprinterdlg.cpp:95
+#, kde-format
 msgid "Filename e&xtension:"
 msgstr "&Phần mở rộng tên tập tin:"
 
 #: management/kmspecialprinterdlg.cpp:111
+#, kde-format
 msgid ""
 "<p>The command will use an output file. If checked, make sure the command "
 "contains an output tag.</p>"
@@ -6263,7 +6879,7 @@ msgstr ""
 "chứa một thẻ kiểu xuất.</p>"
 
 #: management/kmspecialprinterdlg.cpp:113
-#, c-format
+#, kde-format
 msgid ""
 "<p>The command to execute when printing on this special printer. Either "
 "enter the command to execute directly, or associate/create a command object "
@@ -6287,6 +6903,7 @@ msgstr ""
 "b>: kích cỡ trang có chữ hoa đầu từ.</li></ul>"
 
 #: management/kmspecialprinterdlg.cpp:123
+#, kde-format
 msgid ""
 "<p>The default mimetype for the output file (e.g. application/postscript).</"
 "p>"
@@ -6295,10 +6912,12 @@ msgstr ""
 "PostScript]).</p>"
 
 #: management/kmspecialprinterdlg.cpp:126
+#, kde-format
 msgid "<p>The default extension for the output file (e.g. ps, pdf, ps.gz).</p>"
 msgstr "<p>Phần mở rộng tập tin cho tập tin xuất (v.d. ps, pdf, ps.gz).</p>"
 
 #: management/kmspecialprinterdlg.cpp:181
+#, kde-format
 msgid "You must provide a non-empty name."
 msgstr "Phải cung cấp tên không rỗng."
 
@@ -6313,18 +6932,22 @@ msgid "Configuring %1"
 msgstr "Đang cấu hình %1..."
 
 #: management/kmwbackend.cpp:39
+#, kde-format
 msgid "Backend Selection"
 msgstr "Chọn hậu phương"
 
 #: management/kmwbackend.cpp:48
+#, kde-format
 msgid "You must select a backend."
 msgstr "Phải chọn một hậu phương."
 
 #: management/kmwbackend.cpp:96
+#, kde-format
 msgid "&Local printer (parallel, serial, USB)"
 msgstr "Máy in &cục bộ (song song, nối tiếp, USB)"
 
 #: management/kmwbackend.cpp:97
+#, kde-format
 msgid ""
 "<qt><p>Locally-connected printer</p><p>Use this for a printer connected to "
 "the computer via a parallel, serial or USB port.</p></qt>"
@@ -6333,10 +6956,12 @@ msgstr ""
 "kết nối đến máy tính bằng cổng kiểu song song, nối tiếp hay USB.</p></qt>"
 
 #: management/kmwbackend.cpp:103
+#, kde-format
 msgid "&SMB shared printer (Windows)"
 msgstr "Máy in dùng chung &SMB (Windows)"
 
 #: management/kmwbackend.cpp:104
+#, kde-format
 msgid ""
 "<qt><p>Shared Windows printer</p><p>Use this for a printer installed on a "
 "Windows server and shared on the network using the SMB protocol (samba).</"
@@ -6347,10 +6972,12 @@ msgstr ""
 "(samba).</p></qt>"
 
 #: management/kmwbackend.cpp:111
+#, kde-format
 msgid "&Remote LPD queue"
 msgstr "Hàng đợi LPD từ &xa"
 
 #: management/kmwbackend.cpp:112
+#, kde-format
 msgid ""
 "<qt><p>Print queue on a remote LPD server</p><p>Use this for a print queue "
 "existing on a remote machine running a LPD print server.</p></qt>"
@@ -6359,10 +6986,12 @@ msgstr ""
 "với hàng đợi nằm trên máy từ xa chạy trình phục vụ in LPD.</p></qt>"
 
 #: management/kmwbackend.cpp:118
+#, kde-format
 msgid "Ne&twork printer (TCP)"
 msgstr "Máy in &mạng (TCP)"
 
 #: management/kmwbackend.cpp:119
+#, kde-format
 msgid ""
 "<qt><p>Network TCP printer</p><p>Use this for a network-enabled printer "
 "using TCP (usually on port 9100) as communication protocol. Most network "
@@ -6373,39 +7002,48 @@ msgstr ""
 "máy in mạng có khả năng sử dụng chế độ này.</p></qt>"
 
 #: management/kmwclass.cpp:37
+#, kde-format
 msgid "Class Composition"
 msgstr "Thành phần hạng"
 
 #: management/kmwclass.cpp:52
+#, kde-format
 msgid "Available printers:"
 msgstr "Máy in sẵn sàng:"
 
 #: management/kmwclass.cpp:53
+#, kde-format
 msgid "Class printers:"
 msgstr "Máy in hạng:"
 
 #: management/kmwclass.cpp:87
+#, kde-format
 msgid "You must select at least one printer."
 msgstr "Bạn phải chọn ít nhất một máy in."
 
 #: management/kmwdriver.cpp:33
+#, kde-format
 msgid "Printer Model Selection"
 msgstr "Chọn mô hình máy in"
 
 #: management/kmwdriver.cpp:76 management/kmwend.cpp:104
 #: management/kmwname.cpp:79
+#, kde-format
 msgid "Raw printer"
 msgstr "Máy in thô"
 
 #: management/kmwdriver.cpp:101
+#, kde-format
 msgid "Internal error: unable to locate the driver."
 msgstr "Lỗi nội bộ : không tìm thấy trình điều khiển."
 
 #: management/kmwdriverselect.cpp:37
+#, kde-format
 msgid "Driver Selection"
 msgstr "Chọn trình điều khiển"
 
 #: management/kmwdriverselect.cpp:44
+#, kde-format
 msgid ""
 "<p>Several drivers have been detected for this model. Select the driver you "
 "want to use. You will have the opportunity to test it as well as to change "
@@ -6416,42 +7054,52 @@ msgstr ""
 "với thay đổi nó nếu cần.</p>"
 
 #: management/kmwdriverselect.cpp:47
+#, kde-format
 msgid "Driver Information"
 msgstr "Thông tin trình điều khiển"
 
 #: management/kmwdriverselect.cpp:66
+#, kde-format
 msgid "You must select a driver."
 msgstr "Bạn phải chọn trình điều khiển."
 
 #: management/kmwdriverselect.cpp:84
+#, kde-format
 msgid " [recommended]"
 msgstr " [đệ nghị]"
 
 #: management/kmwdriverselect.cpp:112
+#, kde-format
 msgid "No information about the selected driver."
 msgstr "Không có thông tin về trình điều khiển đã chọn."
 
 #: management/kmwdrivertest.cpp:42
+#, kde-format
 msgid "Printer Test"
 msgstr "Thử máy in"
 
 #: management/kmwdrivertest.cpp:52
+#, kde-format
 msgid "<b>Manufacturer:</b>"
 msgstr "<b>Nhà sản xuất:</b>"
 
 #: management/kmwdrivertest.cpp:53
+#, kde-format
 msgid "<b>Model:</b>"
 msgstr "<b>Mô hình:</b>"
 
 #: management/kmwdrivertest.cpp:54
+#, kde-format
 msgid "<b>Description:</b>"
 msgstr "<b>Mô tả:</b>"
 
 #: management/kmwdrivertest.cpp:56
+#, kde-format
 msgid "&Test"
 msgstr "&Thử"
 
 #: management/kmwdrivertest.cpp:61
+#, kde-format
 msgid ""
 "<p>Now you can test the printer before finishing installation. Use the "
 "<b>Settings</b> button to configure the printer driver and the <b>Test</b> "
@@ -6469,6 +7117,7 @@ msgid "<qt>Unable to load the requested driver:<p>%1</p></qt>"
 msgstr "<qt>Không thể tải trình điều khiển đã yêu cầu :<p>%1</p></qt>"
 
 #: management/kmwdrivertest.cpp:150
+#, kde-format
 msgid ""
 "Test page successfully sent to printer. Wait until printing is complete, "
 "then click the OK button."
@@ -6477,87 +7126,108 @@ msgstr ""
 "vào cái nút « Được »."
 
 #: management/kmwdrivertest.cpp:152
+#, kde-format
 msgid "Unable to test printer: "
 msgstr "Không thể thử ra máy in: "
 
 #: management/kmwdrivertest.cpp:154
+#, kde-format
 msgid "Unable to remove temporary printer."
 msgstr "Không thể gỡ bỏ máy in tạm thời."
 
 #: management/kmwdrivertest.cpp:156
+#, kde-format
 msgid "Unable to create temporary printer."
 msgstr "Không thể tạo máy in tạm thời."
 
 #: management/kmwend.cpp:34
+#, kde-format
 msgid "Confirmation"
 msgstr "Xác nhận"
 
 #: management/kmwend.cpp:55
+#, kde-format
 msgid "Location"
 msgstr "Địa điểm"
 
 #: management/kmwend.cpp:56 management/kmwend.cpp:109
 #: management/kxmlcommanddlg.cpp:142 management/kxmlcommanddlg.cpp:551
+#, kde-format
 msgid "Description"
 msgstr "Mô tả"
 
 #: management/kmwend.cpp:69
+#, kde-format
 msgid "Backend"
 msgstr "Hậu phương"
 
 #: management/kmwend.cpp:73
+#, kde-format
 msgid "Device"
 msgstr "Thiết bị"
 
 #: management/kmwend.cpp:76
+#, kde-format
 msgid "Printer IP"
 msgstr "IP máy in"
 
 #: management/kmwend.cpp:77 management/kmwend.cpp:88
+#, kde-format
 msgid "Port"
 msgstr "Cổng"
 
 #: management/kmwend.cpp:80 management/kmwend.cpp:87
+#, kde-format
 msgid "Host"
 msgstr "Máy"
 
 #: management/kmwend.cpp:81 rlpr/kmproprlpr.cpp:50
+#, kde-format
 msgid "Queue"
 msgstr "Hàng đợi"
 
 #: management/kmwend.cpp:84
+#, kde-format
 msgid "File"
 msgstr "Tập tin"
 
 #: management/kmwend.cpp:90
+#, kde-format
 msgid "Account"
 msgstr "Tài khoản"
 
 #: management/kmwend.cpp:95
+#, kde-format
 msgid "URI"
 msgstr "URI"
 
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "DB driver"
 msgstr "Trình điều khiển cơ sở dữ liệu"
 
 #: management/kmwend.cpp:106
+#, kde-format
 msgid "External driver"
 msgstr "Trình điều khiển bên ngoài"
 
 #: management/kmwend.cpp:107
+#, kde-format
 msgid "Manufacturer"
 msgstr "Hãng chế tạo"
 
 #: management/kmwend.cpp:108
+#, kde-format
 msgid "Model"
 msgstr "Mô hình"
 
 #: management/kmwfile.cpp:35
+#, kde-format
 msgid "File Selection"
 msgstr "Chọn tập tin"
 
 #: management/kmwfile.cpp:42
+#, kde-format
 msgid ""
 "<p>The printing will be redirected to a file. Enter here the path of the "
 "file you want to use for redirection. Use an absolute path or the browse "
@@ -6568,19 +7238,22 @@ msgstr ""
 "giao diện.</p>"
 
 #: management/kmwfile.cpp:45
+#, kde-format
 msgid "Print to file:"
 msgstr "In vào tập tin:"
 
 #: management/kmwfile.cpp:69
+#, kde-format
 msgid "Directory does not exist."
 msgstr "Thư mục này không tồn tại."
 
 #: management/kmwinfopage.cpp:31
+#, kde-format
 msgid "Introduction"
 msgstr "Giới thiệu"
 
 #: management/kmwinfopage.cpp:35
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| "<p>Welcome,</p><br><p>This wizard will help to install a new printer on "
 #| "your computer. It will guide you through the various steps of the process "
@@ -6604,51 +7277,63 @@ msgstr ""
 "\"><i>Nhóm In KDE</i></a>.</p>"
 
 #: management/kmwizard.cpp:66 management/kmwizard.cpp:217
+#, kde-format
 msgid "&Next >"
 msgstr "&Kế →"
 
 #: management/kmwizard.cpp:68
+#, kde-format
 msgid "< &Back"
 msgstr "← &Lùi"
 
 #: management/kmwizard.cpp:140 management/kmwizard.cpp:176
 #: management/kmwizard.cpp:199
+#, kde-format
 msgid "Add Printer Wizard"
 msgstr "Thêm Trợ lý in"
 
 #: management/kmwizard.cpp:176
+#, kde-format
 msgid "Modify Printer"
 msgstr "Sửa đổi máy in"
 
 #: management/kmwizard.cpp:199
+#, kde-format
 msgid "Unable to find the requested page."
 msgstr "Không tìm thấy trang đã yêu cầu."
 
 #: management/kmwizard.cpp:215 management/kmwizard.cpp:238
+#, kde-format
 msgid "&Finish"
 msgstr "Kết t&húc"
 
 #: management/kmwlocal.cpp:38
+#, kde-format
 msgid "Local Port Selection"
 msgstr "Chọn cổng cục bộ"
 
 #: management/kmwlocal.cpp:50
+#, kde-format
 msgid "Local System"
 msgstr "Hệ thống cục bộ"
 
 #: management/kmwlocal.cpp:57
+#, kde-format
 msgid "Parallel"
 msgstr "Song song"
 
 #: management/kmwlocal.cpp:58
+#, kde-format
 msgid "Serial"
 msgstr "Nối tiếp"
 
 #: management/kmwlocal.cpp:59
+#, kde-format
 msgid "USB"
 msgstr "USB"
 
 #: management/kmwlocal.cpp:65
+#, kde-format
 msgid ""
 "<p>Select a valid detected port, or enter directly the corresponding URI in "
 "the bottom edit field.</p>"
@@ -6657,27 +7342,33 @@ msgstr ""
 "nhập dưới nhất URI tương ứng.</p>"
 
 #: management/kmwlocal.cpp:83
+#, kde-format
 msgctxt "The URI is empty"
 msgid "Empty URI."
 msgstr "URI rỗng"
 
 #: management/kmwlocal.cpp:86
+#, kde-format
 msgid "The local URI does not correspond to a detected port. Continue?"
 msgstr "URI cục bộ không tương ứng với cổng đã phát hiện. Tiếp tục ?"
 
 #: management/kmwlocal.cpp:87
+#, kde-format
 msgid "Select a valid port."
 msgstr "Chọn một cổng hợp lệ."
 
 #: management/kmwlocal.cpp:163
+#, kde-format
 msgid "Unable to detect local ports."
 msgstr "Không thể phát hiện cổng cục bộ."
 
 #: management/kmwlpd.cpp:43
+#, kde-format
 msgid "LPD Queue Information"
 msgstr "Thông tin hàng đợi LPD"
 
 #: management/kmwlpd.cpp:46
+#, kde-format
 msgid ""
 "<p>Enter the information concerning the remote LPD queue; this wizard will "
 "check it before continuing.</p>"
@@ -6686,10 +7377,12 @@ msgstr ""
 "trước khi tiếp tục.</p>"
 
 #: management/kmwlpd.cpp:49 rlpr/kmproprlpr.cpp:35 rlpr/kmwrlpr.cpp:63
+#, kde-format
 msgid "Queue:"
 msgstr "Hàng đợi :"
 
 #: management/kmwlpd.cpp:55
+#, kde-format
 msgid "Some information is missing."
 msgstr "Còn thiếu thông tin."
 
@@ -6700,10 +7393,12 @@ msgstr ""
 "Không tìm thấy hàng đợi %1 trên máy phục vụ %2. Bạn vẫn muốn tiếp tục không?"
 
 #: management/kmwname.cpp:34
+#, kde-format
 msgid "General Information"
 msgstr "Thông tin chung"
 
 #: management/kmwname.cpp:37
+#, kde-format
 msgid ""
 "<p>Enter the information concerning your printer or class. <b>Name</b> is "
 "mandatory, <b>Location</b> and <b>Description</b> are not (they may even not "
@@ -6714,10 +7409,12 @@ msgstr ""
 "có lẽ chúng ngay cả không dùng).</p>"
 
 #: management/kmwname.cpp:39
+#, kde-format
 msgid "Name:"
 msgstr "Tên:"
 
 #: management/kmwname.cpp:47
+#, kde-format
 msgid "You must supply at least a name."
 msgstr "Bạn phải xác định ít nhất tên."
 
@@ -6733,14 +7430,17 @@ msgstr ""
 "Vậy bạn có muốn làm gì?"
 
 #: management/kmwname.cpp:59
+#, kde-format
 msgid "Strip"
 msgstr "Bỏ"
 
 #: management/kmwpassword.cpp:35
+#, kde-format
 msgid "User Identification"
 msgstr "Nhận diện người dùng"
 
 #: management/kmwpassword.cpp:42
+#, kde-format
 msgid ""
 "<p>This backend may require a login/password to work properly. Select the "
 "type of access to use and fill in the login and password entries if needed.</"
@@ -6751,58 +7451,72 @@ msgstr ""
 "(đăng nhập) và mật khẩu nếu cần thiết.</p>"
 
 #: management/kmwpassword.cpp:48
+#, kde-format
 msgid "&Login:"
 msgstr "Đ&ăng nhập:"
 
 #: management/kmwpassword.cpp:52
+#, kde-format
 msgid "&Anonymous (no login/password)"
 msgstr "Vô d&anh (không có đăng nhập/mật khẩu)"
 
 #: management/kmwpassword.cpp:53
+#, kde-format
 msgid "&Guest account (login=\"guest\")"
 msgstr "Tài khoản &khách (đăng nhập=\"guest\")"
 
 #: management/kmwpassword.cpp:54
+#, kde-format
 msgid "Nor&mal account"
 msgstr "Tài khoản ch&uẩn"
 
 #: management/kmwpassword.cpp:86
+#, kde-format
 msgid "Select one option"
 msgstr "Hãy chọn một tùy chọn"
 
 #: management/kmwpassword.cpp:88
+#, kde-format
 msgid "User name is empty."
 msgstr "Tên người dùng là rỗng."
 
 #: management/kmwsmb.cpp:36
+#, kde-format
 msgid "SMB Printer Settings"
 msgstr "Thiết lập máy in SMB"
 
 #: management/kmwsmb.cpp:43
+#, kde-format
 msgid "Scan"
 msgstr "Quét"
 
 #: management/kmwsmb.cpp:44
+#, kde-format
 msgid "Abort"
 msgstr "Hủy bỏ"
 
 #: management/kmwsmb.cpp:46
+#, kde-format
 msgid "Workgroup:"
 msgstr "Nhóm làm việc:"
 
 #: management/kmwsmb.cpp:47
+#, kde-format
 msgid "Server:"
 msgstr "Máy phục vụ :"
 
 #: management/kmwsmb.cpp:48 tools/escputil/escpwidget.cpp:109
+#, kde-format
 msgid "Printer:"
 msgstr "Máy in:"
 
 #: management/kmwsmb.cpp:89 rlpr/kmrlprmanager.cpp:45
+#, kde-format
 msgid "Empty printer name."
 msgstr "Tên máy in rỗng."
 
 #: management/kmwsmb.cpp:106
+#, kde-format
 msgid "<anonymous>"
 msgstr "<vô danh>"
 
@@ -6812,127 +7526,158 @@ msgid "Login: %1"
 msgstr "Đăng nhập: %1"
 
 #: management/kmwsocket.cpp:38
+#, kde-format
 msgid "Network Printer Information"
 msgstr "Thông tin máy in mạng"
 
 #: management/kmwsocket.cpp:48
+#, kde-format
 msgid "&Printer address:"
 msgstr "Địa chỉ máy &in:"
 
 #: management/kmwsocket.cpp:49
+#, kde-format
 msgid "P&ort:"
 msgstr "Cổn&g:"
 
 #: management/kmwsocket.cpp:101
+#, kde-format
 msgid "You must enter a printer address."
 msgstr "Bạn phải nhập địa chỉ máy in."
 
 #: management/kmwsocket.cpp:110
+#, kde-format
 msgid "Wrong port number."
 msgstr "Số hiệu cổng không đúng."
 
 #: management/kmwsocketutil.cpp:60 management/networkscanner.cpp:317
+#, kde-format
 msgid "&Subnetwork:"
 msgstr "Mạng &phụ :"
 
 #: management/kmwsocketutil.cpp:62 management/networkscanner.cpp:319
+#, kde-format
 msgid "&Timeout (ms):"
 msgstr "&Thời hạn (ms):"
 
 #: management/kmwsocketutil.cpp:105 management/networkscanner.cpp:362
+#, kde-format
 msgid "Scan Configuration"
 msgstr "Cấu hình quét"
 
 #: management/kmwsocketutil.cpp:118 management/kmwsocketutil.cpp:122
 #: management/networkscanner.cpp:375 management/networkscanner.cpp:379
+#, kde-format
 msgid "Wrong subnetwork specification."
 msgstr "Đặc tả mạng phụ không đúng."
 
 #: management/kmwsocketutil.cpp:130 management/networkscanner.cpp:387
+#, kde-format
 msgid "Wrong timeout specification."
 msgstr "Đặc tả thời hạn không đúng."
 
 #: management/kmwsocketutil.cpp:133 management/networkscanner.cpp:390
+#, kde-format
 msgid "Wrong port specification."
 msgstr "Đặc tả cổng không đúng."
 
 #: management/kxmlcommanddlg.cpp:107
+#, kde-format
 msgid "Integer"
 msgstr "Số nguyên"
 
 #: management/kxmlcommanddlg.cpp:108
+#, kde-format
 msgid "Float"
 msgstr "Nổi"
 
 #: management/kxmlcommanddlg.cpp:109
+#, kde-format
 msgid "List"
 msgstr "Danh sách"
 
 #: management/kxmlcommanddlg.cpp:117
+#, kde-format
 msgid "Default &value:"
 msgstr "Giá trị &mặc định:"
 
 #: management/kxmlcommanddlg.cpp:118
+#, kde-format
 msgid "Co&mmand:"
 msgstr "&Lệnh:"
 
 #: management/kxmlcommanddlg.cpp:125
+#, kde-format
 msgid "&Persistent option"
 msgstr "Tùy chọn &bền bỉ"
 
 #: management/kxmlcommanddlg.cpp:127
+#, kde-format
 msgid "Va&lues"
 msgstr "&Giá trị"
 
 #: management/kxmlcommanddlg.cpp:136
+#, kde-format
 msgid "Minimum v&alue:"
 msgstr "Giá trị tối thiể&u :"
 
 #: management/kxmlcommanddlg.cpp:137
+#, kde-format
 msgid "Ma&ximum value:"
 msgstr "Giá trị tối &đa:"
 
 #: management/kxmlcommanddlg.cpp:150
+#, kde-format
 msgid "Add value"
 msgstr "Thêm giá trị"
 
 #: management/kxmlcommanddlg.cpp:151
+#, kde-format
 msgid "Delete value"
 msgstr "Bỏ giá trị"
 
 #: management/kxmlcommanddlg.cpp:153
+#, kde-format
 msgid "Apply changes"
 msgstr "Áp dụng thay đổi"
 
 #: management/kxmlcommanddlg.cpp:154
+#, kde-format
 msgid "Add group"
 msgstr "Thêm nhóm"
 
 #: management/kxmlcommanddlg.cpp:155
+#, kde-format
 msgid "Add option"
 msgstr "Thêm tùy chọn"
 
 #: management/kxmlcommanddlg.cpp:156
+#, kde-format
 msgid "Delete item"
 msgstr "Bỏ mục"
 
 #: management/kxmlcommanddlg.cpp:162
+#, kde-format
 msgid "&Input From"
 msgstr "&Nhập từ"
 
 #: management/kxmlcommanddlg.cpp:164
+#, kde-format
 msgid "O&utput To"
 msgstr "&Xuất vào"
 
 #: management/kxmlcommanddlg.cpp:166 management/kxmlcommanddlg.cpp:168
+#, kde-format
 msgid "File:"
 msgstr "Tập tin:"
 
 #: management/kxmlcommanddlg.cpp:167 management/kxmlcommanddlg.cpp:169
+#, kde-format
 msgid "Pipe:"
 msgstr "Ống dẫn:"
 
 #: management/kxmlcommanddlg.cpp:309
+#, kde-format
 msgid ""
 "An identification string. Use only alphanumeric characters except spaces. "
 "The string <b>__root__</b> is reserved for internal use."
@@ -6941,6 +7686,7 @@ msgstr ""
 "<b>__root__</b> » được dành riêng để dùng nội bộ."
 
 #: management/kxmlcommanddlg.cpp:313
+#, kde-format
 msgid ""
 "A description string. This string is shown in the interface, and should be "
 "explicit enough about the role of the corresponding option."
@@ -6949,6 +7695,7 @@ msgstr ""
 "của tùy chọn tương ứng."
 
 #: management/kxmlcommanddlg.cpp:317
+#, kde-format
 msgid ""
 "The type of the option. This determines how the option is presented "
 "graphically to the user."
@@ -6957,6 +7704,7 @@ msgstr ""
 "xem."
 
 #: management/kxmlcommanddlg.cpp:321
+#, kde-format
 msgid ""
 "The format of the option. This determines how the option is formatted for "
 "inclusion in the global command line. The tag <b>%value</b> can be used to "
@@ -6969,6 +7717,7 @@ msgstr ""
 "bằng đại diện dạng chuỗi của giá trị tùy chọn này."
 
 #: management/kxmlcommanddlg.cpp:327
+#, kde-format
 msgid ""
 "The default value of the option. For non persistent options, nothing is "
 "added to the command line if the option has that default value. If this "
@@ -6981,6 +7730,7 @@ msgstr ""
 "chọn bền bỉ để tránh kết quả vô ích."
 
 #: management/kxmlcommanddlg.cpp:333
+#, kde-format
 msgid ""
 "Make the option persistent. A persistent option is always written to the "
 "command line, whatever its value. This is useful when the chosen default "
@@ -6991,7 +7741,7 @@ msgstr ""
 "không tương ứng với giá trị mặc định thật của tiện ích cơ bản."
 
 #: management/kxmlcommanddlg.cpp:337
-#, c-format
+#, kde-format
 msgid ""
 "The full command line to execute the associated underlying utility. This "
 "command line is based on a mechanism of tags that are replaced at run-time. "
@@ -7008,7 +7758,7 @@ msgstr ""
 "thường</li></ul>"
 
 #: management/kxmlcommanddlg.cpp:347
-#, c-format
+#, kde-format
 msgid ""
 "Input specification when the underlying utility reads input data from a "
 "file. Use the tag <b>%in</b> to represent the input filename."
@@ -7017,7 +7767,7 @@ msgstr ""
 "%in</b> để tiêu biểu tên tập tin nhập."
 
 #: management/kxmlcommanddlg.cpp:351
-#, c-format
+#, kde-format
 msgid ""
 "Output specification when the underlying utility writes output data to a "
 "file. Use the tag <b>%out</b> to represent the output filename."
@@ -7026,6 +7776,7 @@ msgstr ""
 "<b>%out</b> để tiêu biểu tên tập tin xuất."
 
 #: management/kxmlcommanddlg.cpp:355
+#, kde-format
 msgid ""
 "Input specification when the underlying utility reads input data from its "
 "standard input."
@@ -7033,6 +7784,7 @@ msgstr ""
 "Đặc tả nhập khi tiện ích cơ bản đọc dữ liệu nhập từ thiết bị nhập chuẩn."
 
 #: management/kxmlcommanddlg.cpp:359
+#, kde-format
 msgid ""
 "Output specification when the underlying utility writes output data to its "
 "standard output."
@@ -7040,6 +7792,7 @@ msgstr ""
 "Đặc tả xuất khi tiện ích cơ bản đọc dữ liệu xuất từ thiết bị xuất chuẩn."
 
 #: management/kxmlcommanddlg.cpp:363
+#, kde-format
 msgid ""
 "A comment about the underlying utility, which can be viewed by the user from "
 "the interface. This comment string supports basic HTML tags like &lt;a&gt;, "
@@ -7050,16 +7803,19 @@ msgstr ""
 "&lt;i&gt;."
 
 #: management/kxmlcommanddlg.cpp:572
+#, kde-format
 msgid ""
 "Invalid identification name. Empty strings and \"__root__\" are not allowed."
 msgstr ""
 "Tên nhận diện không hợp lệ. Không cho phép chuỗi rỗng hay \"__root__\"."
 
 #: management/kxmlcommanddlg.cpp:653 management/kxmlcommanddlg.cpp:656
+#, kde-format
 msgid "New Group"
 msgstr "Nhóm mới"
 
 #: management/kxmlcommanddlg.cpp:671 management/kxmlcommanddlg.cpp:674
+#, kde-format
 msgid "New Option"
 msgstr "Tùy chọn mới"
 
@@ -7069,50 +7825,62 @@ msgid "Command Edit for %1"
 msgstr "Sửa lệnh cho %1"
 
 #: management/kxmlcommanddlg.cpp:835
+#, kde-format
 msgid "&Mime Type Settings"
 msgstr "Thiết lập kiểu &MIME"
 
 #: management/kxmlcommanddlg.cpp:843
+#, kde-format
 msgid "Supported &Input Formats"
 msgstr "Định dạng &nhập được hỗ trợ"
 
 #: management/kxmlcommanddlg.cpp:857
+#, kde-format
 msgid "&Edit Command..."
 msgstr "&Sửa lệnh..."
 
 #: management/kxmlcommanddlg.cpp:874
+#, kde-format
 msgid "Output &format:"
 msgstr "Định dạng &xuất:"
 
 #: management/kxmlcommanddlg.cpp:876
+#, kde-format
 msgid "ID name:"
 msgstr "Tên nhận diện:"
 
 #: management/kxmlcommanddlg.cpp:1055
+#, kde-format
 msgid "exec:/"
 msgstr "exec:/"
 
 #: management/kxmlcommandselector.cpp:53
+#, kde-format
 msgid "New command"
 msgstr "Lệnh mới"
 
 #: management/kxmlcommandselector.cpp:54
+#, kde-format
 msgid "Edit command"
 msgstr "Sửa lệnh"
 
 #: management/kxmlcommandselector.cpp:72
+#, kde-format
 msgid "&Browse..."
 msgstr "&Duyệt..."
 
 #: management/kxmlcommandselector.cpp:73
+#, kde-format
 msgid "Use co&mmand:"
 msgstr "Dùng &lệnh:"
 
 #: management/kxmlcommandselector.cpp:179
+#, kde-format
 msgid "Command Name"
 msgstr "Tên lệnh"
 
 #: management/kxmlcommandselector.cpp:179
+#, kde-format
 msgid "Enter an identification name for the new command:"
 msgstr "Hãy nhập tên nhận diện lệnh mới này:"
 
@@ -7130,26 +7898,32 @@ msgid "Internal error. The XML driver for the command %1 could not be found."
 msgstr "Lỗi nội bộ. Không tìm thấy trình điều khiển XML cho lệnh %1."
 
 #: management/kxmlcommandselector.cpp:237
+#, kde-format
 msgid "output"
 msgstr "kết xuất"
 
 #: management/kxmlcommandselector.cpp:240
+#, kde-format
 msgid "undefined"
 msgstr "chưa xác định"
 
 #: management/kxmlcommandselector.cpp:244
+#, kde-format
 msgid "not allowed"
 msgstr "không cho phép"
 
 #: management/kxmlcommandselector.cpp:248
+#, kde-format
 msgid "(Unavailable: requirements not satisfied)"
 msgstr "(Không sẵn sàng: chưa thoả tiêu chuẩn)"
 
 #: management/networkscanner.cpp:106 management/networkscanner.cpp:168
+#, kde-format
 msgid "Sc&an"
 msgstr "Q&uét"
 
 #: management/networkscanner.cpp:109
+#, kde-format
 msgid "Network scan:"
 msgstr "Quét mạng:"
 
@@ -7170,19 +7944,22 @@ msgstr ""
 "của máy tính này (%2.*). Bạn vẫn muốn quét mạng phụ đã ghi rõ không?"
 
 #: management/networkscanner.cpp:153
+#, kde-format
 msgid "&Scan"
 msgstr "&Quét"
 
 #: management/smbview.cpp:44
+#, kde-format
 msgid "Comment"
 msgstr "Ghi chú"
 
 #: marginpreview.cpp:128
+#, kde-format
 msgid "No preview available"
 msgstr "Không có khung xem thử sẵn sàng"
 
 #: marginwidget.cpp:36
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Top Margin</b></p>.  <p>This spinbox/text edit field lets "
 #| "you control the top margin of your printout if the printing  application "
@@ -7225,7 +8002,7 @@ msgstr ""
 "</pre> </p>  </qt>"
 
 #: marginwidget.cpp:56
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Bottom Margin</b></p>.  <p>This spinbox/text edit field lets "
 #| "you control the bottom margin of your printout if the printing  "
@@ -7268,7 +8045,7 @@ msgstr ""
 "inch.  </pre> </qt>"
 
 #: marginwidget.cpp:76
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Left Margin</b></p>.  <p>This spinbox/text edit field lets "
 #| "you control the left margin of your printout if the printing  application "
@@ -7311,7 +8088,7 @@ msgstr ""
 "</pre> </qt>"
 
 #: marginwidget.cpp:96
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Right Margin</b></p>.  <p>This spinbox/text edit field lets "
 #| "you control the right margin of your printout if the printing  "
@@ -7354,7 +8131,7 @@ msgstr ""
 "inch.  </pre> </qt>"
 
 #: marginwidget.cpp:116
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Change Measurement Unit<b></p>.  <p>You can change the units "
 #| "of measurement for the page margins here. Select from Millimeter, "
@@ -7369,7 +8146,7 @@ msgstr ""
 "điểm ảnh == 1/72\").  </p>  </qt>"
 
 #: marginwidget.cpp:123
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>Custom Margins Checkbox</b></p>.  <p>Enable this checkbox if "
 #| "you want to modify the margins of your printouts.  <p>You can change "
@@ -7405,7 +8182,7 @@ msgstr ""
 "OpenOffice.org. </p>  </qt>"
 
 #: marginwidget.cpp:140
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt>  <p><b>\"Drag-your-Margins\" </p>.  <p>Use your mouse to drag and "
 #| "set each margin on this little preview window. </p>  </qt>"
@@ -7417,43 +8194,52 @@ msgstr ""
 "sổ nhỏ xem thử này. </p>  </qt>"
 
 #: marginwidget.cpp:150
+#, kde-format
 msgid "&Use custom margins"
 msgstr "D&ùng lề tự chọn"
 
 #: marginwidget.cpp:160
+#, kde-format
 msgid "&Top:"
 msgstr "Tr&ên:"
 
 #: marginwidget.cpp:161
+#, kde-format
 msgid "&Bottom:"
 msgstr "&Dưới :"
 
 #: marginwidget.cpp:162
+#, kde-format
 msgid "Le&ft:"
 msgstr "&Trái :"
 
 #: marginwidget.cpp:163
+#, kde-format
 msgid "&Right:"
 msgstr "&Phải :"
 
 #: marginwidget.cpp:166
+#, kde-format
 msgid "Pixels (1/72nd in)"
 msgstr "Điểm ảnh (1/72\")"
 
 #: marginwidget.cpp:168
+#, kde-format
 msgid "Inches (in)"
 msgstr "Insơ (in)"
 
 #: marginwidget.cpp:169
+#, kde-format
 msgid "Centimeters (cm)"
 msgstr "Centi-mét (cm)"
 
 #: marginwidget.cpp:170
+#, kde-format
 msgid "Millimeters (mm)"
 msgstr "Mili-mét (mm)"
 
 #: plugincombobox.cpp:32
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Print Subsystem Selection</b> <p>This combo box shows (and lets "
 #| "you select) a print subsystem to be used by KDEPrint. (This print "
@@ -7476,15 +8262,17 @@ msgstr ""
 "» (Common UNIX Printing System : hệ thống in UNIX chung)</qt>"
 
 #: plugincombobox.cpp:45
+#, kde-format
 msgid "Print s&ystem currently used:"
 msgstr "&Hệ thống in được dùng hiện thời :"
 
 #: plugincombobox.cpp:49
+#, kde-format
 msgid "Plugin information"
 msgstr "Thông tin bổ sung"
 
 #: plugincombobox.cpp:91
-#, fuzzy
+#, fuzzy, kde-format
 #| msgid ""
 #| " <qt><b>Current Connection</b> <p>This line shows which CUPS server your "
 #| "PC is currently connected to for printing and retrieving printer info. To "
@@ -7502,6 +8290,7 @@ msgstr ""
 "« Máy phục vụ CUPS » và điền vào thông tin cần thiết.</qt>"
 
 #: posterpreview.cpp:123
+#, kde-format
 msgid ""
 "Poster preview not available. Either the <b>poster</b> executable is not "
 "properly installed, or you don't have the required version; available at "
@@ -7517,38 +8306,47 @@ msgid "(line %1): "
 msgstr "(dòng %1): "
 
 #: rlpr/kmconfigproxy.cpp:30
+#, kde-format
 msgid "Proxy"
 msgstr "Ủy nhiệm"
 
 #: rlpr/kmconfigproxy.cpp:31
+#, kde-format
 msgid "RLPR Proxy Server Settings"
 msgstr "Thiết lập máy phục vụ ủy nhiệm RLPR"
 
 #: rlpr/kmproprlpr.cpp:51 rlpr/kmwrlpr.cpp:50
+#, kde-format
 msgid "Remote LPD Queue Settings"
 msgstr "Thiết lập hàng đợi LPD từ xa"
 
 #: rlpr/kmproxywidget.cpp:32
+#, kde-format
 msgid "Proxy Settings"
 msgstr "Thiết lập ủy nhiệm"
 
 #: rlpr/kmproxywidget.cpp:38
+#, kde-format
 msgid "&Use proxy server"
 msgstr "Dùng máy phục vụ ủ&y nhiệm"
 
 #: rlpr/kmrlprmanager.cpp:47 rlpr/kmwrlpr.cpp:89
+#, kde-format
 msgid "Empty host name."
 msgstr "Tên máy rỗng."
 
 #: rlpr/kmrlprmanager.cpp:49 rlpr/kmwrlpr.cpp:91
+#, kde-format
 msgid "Empty queue name."
 msgstr "Tên hàng đợi rỗng."
 
 #: rlpr/kmrlprmanager.cpp:62
+#, kde-format
 msgid "Printer not found."
 msgstr "Không tìm thấy máy in."
 
 #: rlpr/kmrlprmanager.cpp:73
+#, kde-format
 msgid "Not implemented yet."
 msgstr "Chưa thực hiện."
 
@@ -7558,42 +8356,52 @@ msgid "Remote queue %1 on %2"
 msgstr "Hàng đợi từ xa %1 trên %2"
 
 #: rlpr/kmwrlpr.cpp:191
+#, kde-format
 msgid "No Predefined Printers"
 msgstr "Không có máy in xác định sẵn"
 
 #: rlpr/krlprprinterimpl.cpp:68
+#, kde-format
 msgid "The printer is incompletely defined. Try to reinstall it."
 msgstr "Chưa xác định hoàn toàn máy in. Hãy thử cài đặt lại nó."
 
 #: tools/escputil/escpwidget.cpp:49
+#, kde-format
 msgid "EPSON InkJet Printer Utilities"
 msgstr "Tiện ích máy in phun mực EPSON"
 
 #: tools/escputil/escpwidget.cpp:101
+#, kde-format
 msgid "&Use direct connection (might need root permissions)"
 msgstr "D&ùng kết nối trực tiếp (có lẽ cần quyền người chủ)"
 
 #: tools/escputil/escpwidget.cpp:113
+#, kde-format
 msgid "Clea&n print head"
 msgstr "Làm &sạch đầu in"
 
 #: tools/escputil/escpwidget.cpp:114
+#, kde-format
 msgid "&Print a nozzle test pattern"
 msgstr "&In mẫu thử miệng"
 
 #: tools/escputil/escpwidget.cpp:115
+#, kde-format
 msgid "&Align print head"
 msgstr "C&anh đầu in"
 
 #: tools/escputil/escpwidget.cpp:116
+#, kde-format
 msgid "&Ink level"
 msgstr "&Mức mực"
 
 #: tools/escputil/escpwidget.cpp:117
+#, kde-format
 msgid "P&rinter identification"
 msgstr "Nhận diện &máy in"
 
 #: tools/escputil/escpwidget.cpp:166
+#, kde-format
 msgid "Internal error: no device set."
 msgstr "Lỗi nội bộ : chưa đặt thiết bị."
 
@@ -7603,6 +8411,7 @@ msgid "Unsupported connection type: %1"
 msgstr "Kiểu kết nối không được hỗ trợ : %1"
 
 #: tools/escputil/escpwidget.cpp:180
+#, kde-format
 msgid ""
 "An escputil process is still running. You must wait until its completion "
 "before continuing."
@@ -7611,6 +8420,7 @@ msgstr ""
 "tiếp tục."
 
 #: tools/escputil/escpwidget.cpp:187
+#, kde-format
 msgid ""
 "The executable escputil cannot be found in your PATH environment variable. "
 "Make sure gimp-print is installed and that escputil is in your PATH."
@@ -7620,10 +8430,12 @@ msgstr ""
 "đặt, và escputil có phải nằm trong PATH của bạn."
 
 #: tools/escputil/escpwidget.cpp:214
+#, kde-format
 msgid "Internal error: unable to start escputil process."
 msgstr "Lỗi nội bộ: không thể khởi chạy tiến trình escputil."
 
 #: tools/escputil/escpwidget.cpp:223
+#, kde-format
 msgid "Operation terminated with errors."
 msgstr "Thao tác đã kết thúc với lỗi."
 

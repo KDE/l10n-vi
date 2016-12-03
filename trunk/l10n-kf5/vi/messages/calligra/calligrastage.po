@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpresenter VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-12-02 03:12+0100\n"
+"POT-Creation-Date: 2016-12-03 13:49+0100\n"
 "PO-Revision-Date: 2012-01-16 16:49+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -60,6 +60,91 @@ msgstr "&Trình diễn"
 msgid "&Settings"
 msgstr "&Thiết lập"
 
+#: part/commands/KPrAddCustomSlideShowCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add custom slide show"
+msgstr "Slideshow"
+
+#: part/commands/KPrAnimationCreateCommand.cpp:32
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Create shape animation"
+msgstr "Hoạt cảnh tạo hình"
+
+#: part/commands/KPrAnimationEditNodeTypeCommand.cpp:35
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Edit animation trigger event"
+msgstr "Hoạt cảnh tạo hình"
+
+#: part/commands/KPrAnimationRemoveCommand.cpp:30
+#, fuzzy
+#| msgid "Create HTML Presentation"
+msgctxt "(qtundo-format)"
+msgid "Remove shape animation"
+msgstr "Hoạt cảnh tạo hình"
+
+#: part/commands/KPrDelCustomSlideShowCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete custom slide show"
+msgstr "Slide đã chọ&n"
+
+#: part/commands/KPrDeleteSlidesCommand.cpp:38
+#: part/commands/KPrDeleteSlidesCommand.cpp:57
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete slide"
+msgid_plural "Delete slides"
+msgstr[0] "Slide đã chọ&n"
+
+#: part/commands/KPrEditAnimationTimeLineCommand.cpp:37
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit animation delay/duration"
+msgstr "Presentation"
+
+#: part/commands/KPrEditCustomSlideShowsCommand.cpp:32
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit custom slide show"
+msgstr "Slideshow"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:38
+#, fuzzy
+#| msgid "Create page effect"
+msgctxt "(qtundo-format)"
+msgid "Create Slide Effect"
+msgstr "Hiệu ứng tạo trang"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:41
+#, fuzzy
+#| msgid "Modify page effect"
+msgctxt "(qtundo-format)"
+msgid "Modify Slide Effect"
+msgstr "Hiệu ứng sửa trang"
+
+#: part/commands/KPrPageEffectSetCommand.cpp:45
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Delete Slide Effect"
+msgstr "Slide đã chọ&n"
+
+#: part/commands/KPrRenameCustomSlideShowCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Rename custom slide show"
+msgstr "Slideshow"
+
+#: part/commands/KPrReorderAnimationCommand.cpp:33
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Reorder animations"
+msgstr "Đầu đề slide"
+
 #: part/KPrAboutData.h:34
 #, fuzzy, kde-format
 msgctxt "application name"
@@ -85,16 +170,16 @@ msgstr ""
 msgid "Copyright 1998-%1, The Stage Team"
 msgstr "Bản quyền 1998-2007, nhóm KPresenter"
 
-#: part/KPrAboutData.h:48
-#, kde-format
-msgid "Thorsten Zachmann"
-msgstr "Thorsten Zachmann"
-
 #: part/KPrAboutData.h:48 part/KPrAboutData.h:49
 #, fuzzy, kde-format
 #| msgid "current maintainer"
 msgid "Former maintainer"
 msgstr "người bảo trì hiện tại"
+
+#: part/KPrAboutData.h:48
+#, kde-format
+msgid "Thorsten Zachmann"
+msgstr "Thorsten Zachmann"
 
 #: part/KPrAboutData.h:49
 #, kde-format
@@ -102,15 +187,15 @@ msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
 #: part/KPrAboutData.h:50
-#, kde-format
-msgid "Reginald Stadlbauer"
-msgstr "Reginald Stadlbauer"
-
-#: part/KPrAboutData.h:50
 #, fuzzy, kde-format
 #| msgid "original author"
 msgid "Original author"
 msgstr "Tác giả gốc"
+
+#: part/KPrAboutData.h:50
+#, kde-format
+msgid "Reginald Stadlbauer"
+msgstr "Reginald Stadlbauer"
 
 #: part/KPrAboutData.h:51
 #, kde-format
@@ -247,6 +332,13 @@ msgstr ""
 #, kde-format
 msgid "Installation Error"
 msgstr ""
+
+#: part/KPrPicturesImport.cpp:75
+#, fuzzy
+#| msgid "Insert Picture"
+msgctxt "(qtundo-format)"
+msgid "Insert Pictures"
+msgstr "Chèn ảnh"
 
 #: part/KPrPlaceholderShapeFactory.cpp:32
 #, kde-format
@@ -671,17 +763,24 @@ msgstr "Trình diễn"
 msgid "All slides"
 msgstr "&Mọi slide"
 
-#: part/KPrViewModeSlidesSorter.cpp:699
-#, kde-format
-msgid "There cannot be two slideshows with the same name."
-msgstr ""
-
 #: part/KPrViewModeSlidesSorter.cpp:699 part/ui/KPrHtmlExportDialog.cpp:162
 #: part/ui/KPrHtmlExportDialog.cpp:216
 #, fuzzy, kde-format
 #| msgid "Arrow"
 msgid "Error"
 msgstr "Mũi tên"
+
+#: part/KPrViewModeSlidesSorter.cpp:699
+#, kde-format
+msgid "There cannot be two slideshows with the same name."
+msgstr ""
+
+#: part/pagelayout/KPrPlaceholders.cpp:59
+#: part/pagelayout/KPrPlaceholders.cpp:60
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Set Layout"
+msgstr "&Kiểu Trang..."
 
 #: part/tools/animationtool/KPrAnimationSelectorWidget.cpp:67
 #, kde-format
@@ -770,6 +869,12 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "Apply Styles"
 msgid "Apply To All Slides"
+msgstr "Áp dụng kiểu"
+
+#: part/tools/animationtool/KPrPageEffectDocker.cpp:236
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Apply Slide Effect to all Slides"
 msgstr "Áp dụng kiểu"
 
 #: part/tools/animationtool/KPrPredefinedAnimationsLoader.cpp:178
@@ -930,6 +1035,13 @@ msgstr "&Trang...."
 #, fuzzy, kde-format
 msgid "&Crop"
 msgstr "Kiểu: "
+
+#: part/tools/KPrPlaceholderTool.cpp:92
+#, fuzzy
+#| msgid "Shape"
+msgctxt "(qtundo-format)"
+msgid "Edit Shape"
+msgstr "Hình"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: part/ui/KPrConfigurePresenterView.ui:16
@@ -1107,16 +1219,23 @@ msgstr ""
 
 #: part/ui/KPrHtmlExportDialog.cpp:330
 #, fuzzy, kde-format
-#| msgid "Save Configuration..."
-msgid "Confirm remove"
-msgstr "Sao luư  Cấu hình."
-
-#: part/ui/KPrHtmlExportDialog.cpp:330
-#, fuzzy, kde-format
 msgid "Are you sure you want to remove \"%1\"?"
 msgstr ""
 "Bạn có muốn gỡ bỏ trang hiện tạỉ\n"
 "Thao tác này không thể undonẹ"
+
+#: part/ui/KPrHtmlExportDialog.cpp:330
+#, fuzzy, kde-format
+#| msgid "Save Configuration..."
+msgid "Confirm remove"
+msgstr "Sao luư  Cấu hình."
+
+#: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:95
+#, fuzzy
+#| msgid "Change Rotation"
+msgctxt "(qtundo-format)"
+msgid "Change sound action"
+msgstr "Thay đổi Góc Quay"
 
 #: plugins/eventactions/sound/KPrSoundEventActionWidget.cpp:118
 #, kde-format
@@ -2498,66 +2617,6 @@ msgstr "&Footer"
 #~ msgstr "Cấu hình KPresenter"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Add custom slide show"
-#~ msgstr "Slideshow"
-
-#, fuzzy
-#~| msgid "Create HTML Presentation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create shape animation"
-#~ msgstr "Hoạt cảnh tạo hình"
-
-#, fuzzy
-#~| msgid "Create HTML Presentation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Remove shape animation"
-#~ msgstr "Hoạt cảnh tạo hình"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete custom slide show"
-#~ msgstr "Slide đã chọ&n"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete slide"
-#~ msgid_plural "Delete slides"
-#~ msgstr[0] "Slide đã chọ&n"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit custom slide show"
-#~ msgstr "Slideshow"
-
-#, fuzzy
-#~| msgid "Create page effect"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Create Slide Effect"
-#~ msgstr "Hiệu ứng tạo trang"
-
-#, fuzzy
-#~| msgid "Modify page effect"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Modify Slide Effect"
-#~ msgstr "Hiệu ứng sửa trang"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete Slide Effect"
-#~ msgstr "Slide đã chọ&n"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Rename custom slide show"
-#~ msgstr "Slideshow"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Reorder animations"
-#~ msgstr "Đầu đề slide"
-
-#, fuzzy
 #~ msgctxt "(qtundo-format) application name"
 #~ msgid "Calligra Stage"
 #~ msgstr "&Cấu hình trang ..."
@@ -2685,12 +2744,6 @@ msgstr "&Footer"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Layout"
 #~ msgstr "&Kiểu Trang..."
-
-#, fuzzy
-#~| msgid "Insert Picture"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Insert Pictures"
-#~ msgstr "Chèn ảnh"
 
 #, fuzzy
 #~| msgid "Color"
@@ -3032,11 +3085,6 @@ msgstr "&Footer"
 #~ msgstr "Mũi tên"
 
 #, fuzzy
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Set Layout"
-#~ msgstr "&Kiểu Trang..."
-
-#, fuzzy
 #~| msgid "Presentation"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Preview animation"
@@ -3106,11 +3154,6 @@ msgstr "&Footer"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"
-#~ msgid "Apply Slide Effect to all Slides"
-#~ msgstr "Áp dụng kiểu"
-
-#, fuzzy
-#~ msgctxt "(qtundo-format)"
 #~ msgid "Custom"
 #~ msgstr "Slideshow"
 
@@ -3161,12 +3204,6 @@ msgstr "&Footer"
 #~ msgstr "Trước trang hiện tại"
 
 #, fuzzy
-#~| msgid "Shape"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Edit Shape"
-#~ msgstr "Hình"
-
-#, fuzzy
 #~| msgid "Configure KPresenter"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Configure Presenter View"
@@ -3199,12 +3236,6 @@ msgstr "&Footer"
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Confirm remove"
 #~ msgstr "Sao luư  Cấu hình."
-
-#, fuzzy
-#~| msgid "Change Rotation"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Change sound action"
-#~ msgstr "Thay đổi Góc Quay"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"

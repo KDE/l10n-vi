@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-01-13 03:38+0100\n"
+"POT-Creation-Date: 2017-01-15 03:59+0100\n"
 "PO-Revision-Date: 2012-01-09 21:56+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -1975,59 +1975,74 @@ msgstr ""
 "Đó là một lỗi cấu hình. Bạn đã dùng Konqueror để mở %1, nhưng nó không điều "
 "khiển được loại tập tin này."
 
-#. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: src/konqnewsessiondlg_base.ui:33
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: src/konqnewsessiondlg_base.ui:28
 #, kde-format
-msgid "Save open tabs and windows for easy retrieval"
+msgid "Save open &tabs and windows for easy retrieval"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_pAllWindows)
+#: src/konqnewsessiondlg_base.ui:34
+#, fuzzy, kde-format
+#| msgid "Open new windows:"
+msgid "A&ll open windows"
+msgstr "Mở cửa sổ mới:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, m_pCurrentWindow)
+#: src/konqnewsessiondlg_base.ui:44
+#, fuzzy, kde-format
+#| msgid "Open the document in current window"
+msgid "Onl&y current window"
+msgstr "Mở tài liệu trong cửa sổ hiện tại"
 
 #. i18n: ectx: property (text), widget (QLabel, lblSessionName)
-#: src/konqnewsessiondlg_base.ui:48
-#, kde-format
-msgid "&Session name:"
-msgstr ""
+#: src/konqnewsessiondlg_base.ui:56
+#, fuzzy, kde-format
+#| msgid "Permissions"
+msgid "Session n&ame:"
+msgstr "Quyền hạn"
 
-#: src/konqsessiondlg.cpp:76
+#: src/konqsessiondlg.cpp:77
 #, fuzzy, kde-format
 #| msgid "&Management"
 msgctxt "@title:window"
 msgid "Manage Sessions"
 msgstr "&Quản lý"
 
-#: src/konqsessiondlg.cpp:80
+#: src/konqsessiondlg.cpp:81
 #, fuzzy, kde-format
 #| msgid "&Open Link"
 msgid "&Open"
 msgstr "Mở &liên kết"
 
-#: src/konqsessiondlg.cpp:178
+#: src/konqsessiondlg.cpp:180
 #, fuzzy, kde-format
 #| msgid "End of session"
 msgctxt "@title:window"
 msgid "Rename Session"
 msgstr "Kết thúc phiên chạy"
 
-#: src/konqsessiondlg.cpp:225
+#: src/konqsessiondlg.cpp:230
 #, fuzzy, kde-format
 #| msgid "End of session"
 msgctxt "@title:window"
 msgid "Save Session"
 msgstr "Kết thúc phiên chạy"
 
-#: src/konqsessiondlg.cpp:251
+#: src/konqsessiondlg.cpp:258
 #, kde-format
 msgid ""
 "A session with the name '%1' already exists, do you want to overwrite it?"
 msgstr ""
 
-#: src/konqsessiondlg.cpp:252
+#: src/konqsessiondlg.cpp:259
 #, kde-format
 msgctxt "@title:window"
 msgid "Session exists. Overwrite?"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pNewButton)
-#: src/konqsessiondlg_base.ui:25
+#: src/konqsessiondlg_base.ui:26
 #, fuzzy, kde-format
 #| msgid "&New..."
 msgctxt "@action:button New session"
@@ -2035,15 +2050,15 @@ msgid "New..."
 msgstr "&Mới..."
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pSaveCurrentButton)
-#: src/konqsessiondlg_base.ui:32
+#: src/konqsessiondlg_base.ui:33
 #, fuzzy, kde-format
 #| msgid "Close Current Tab"
 msgctxt "@action:button Save current session"
-msgid "Save Current"
+msgid "Save Current..."
 msgstr "Đóng thẻ hiện thời"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pRenameButton)
-#: src/konqsessiondlg_base.ui:39
+#: src/konqsessiondlg_base.ui:40
 #, fuzzy, kde-format
 #| msgid "Rename"
 msgctxt "@action:button Rename session"
@@ -2051,7 +2066,7 @@ msgid "Rename..."
 msgstr "Thay tên"
 
 #. i18n: ectx: property (text), widget (QPushButton, m_pDeleteButton)
-#: src/konqsessiondlg_base.ui:46
+#: src/konqsessiondlg_base.ui:47
 #, fuzzy, kde-format
 #| msgid "D&elete"
 msgctxt "@action:button Delete session"
@@ -2060,7 +2075,7 @@ msgstr "&Xoá"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_pOpenTabsInsideCurrentWindow)
 #. i18n: ectx: label, entry, group (Trash)
-#: src/konqsessiondlg_base.ui:72 src/konqueror.kcfg:517
+#: src/konqsessiondlg_base.ui:73 src/konqueror.kcfg:517
 #, fuzzy, kde-format
 #| msgid "Open the document in current window"
 msgid "Open tabs inside current window"
@@ -4839,9 +4854,6 @@ msgstr "Gửi lại"
 
 #~ msgid "Tabbed Browsing"
 #~ msgstr "Duyệt mỗi thẻ"
-
-#~ msgid "Open new windows:"
-#~ msgstr "Mở cửa sổ mới:"
 
 #~ msgid "Use global"
 #~ msgstr "Dùng toàn cục"

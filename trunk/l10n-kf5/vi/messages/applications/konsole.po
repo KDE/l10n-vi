@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-22 02:46+0200\n"
+"POT-Creation-Date: 2017-04-28 02:46+0200\n"
 "PO-Revision-Date: 2007-06-24 15:01+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -128,6 +128,7 @@ msgstr "Khởi chạy Konsole trong nền, rồi đêm lên trước khi phím F
 
 #: Application.cpp:76
 #, kde-format
+msgctxt "@info:shell"
 msgid "Run in a separate process"
 msgstr ""
 
@@ -425,6 +426,7 @@ msgstr "Màu"
 #: ColorScheme.cpp:348
 #, fuzzy, kde-format
 #| msgid "Un-named Color Scheme"
+msgctxt "@item"
 msgid "Un-named Color Scheme"
 msgstr "Giản đồ màu không tên"
 
@@ -481,13 +483,17 @@ msgctxt "Filter in file open dialog"
 msgid "Supported Images"
 msgstr ""
 
-#: ColorSchemeEditor.cpp:238 ColorSchemeEditor.cpp:239
-#, kde-format
+#: ColorSchemeEditor.cpp:238
+#, fuzzy, kde-format
+#| msgid "New Color Scheme"
+msgctxt "@title:window"
 msgid "New Color Scheme"
 msgstr "Giản đồ màu mới"
 
 #: ColorSchemeEditor.cpp:241
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Edit Color Scheme"
+msgctxt "@title:window"
 msgid "Edit Color Scheme"
 msgstr "Sửa giản đồ màu"
 
@@ -1730,19 +1736,15 @@ msgctxt "@info:tooltip"
 msgid "Sets whether matching text should be highlighted"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SearchReverseSearch)
-#. i18n: ectx: label, entry (SearchReverseSearch), group (SearchSettings)
-#: IncrementalSearchBar.cpp:134 settings/GeneralSettings.ui:195
-#: settings/konsole.kcfg:60
+#: IncrementalSearchBar.cpp:134
 #, kde-format
+msgctxt "@item:inmenu"
 msgid "Search backwards"
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_SearchReverseSearch)
-#. i18n: ectx: tooltip, entry (SearchReverseSearch), group (SearchSettings)
-#: IncrementalSearchBar.cpp:136 settings/GeneralSettings.ui:198
-#: settings/konsole.kcfg:61
+#: IncrementalSearchBar.cpp:136
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Sets whether search should start from the bottom"
 msgstr ""
 
@@ -1754,6 +1756,7 @@ msgstr ""
 
 #: IncrementalSearchBar.cpp:158
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Search for the current search phrase from the bottom"
 msgstr ""
 
@@ -1765,6 +1768,7 @@ msgstr ""
 
 #: IncrementalSearchBar.cpp:163
 #, kde-format
+msgctxt "@info:tooltip"
 msgid "Search for the current search phrase from the top"
 msgstr ""
 
@@ -1820,6 +1824,7 @@ msgstr "Bộ mô phỏng thiết bị cuối"
 
 #: main.cpp:101
 #, kde-format
+msgctxt "@info:credit"
 msgid "(c) 1997-2017, The Konsole Developers"
 msgstr ""
 
@@ -2242,7 +2247,12 @@ msgstr "Làm mặc định"
 msgid "Default profile"
 msgstr "Xoá hồ sơ"
 
-#: ProfileManager.cpp:366
+#: ProfileManager.cpp:333
+#, kde-format
+msgid "Konsole does not have permission to save this profile to %1"
+msgstr ""
+
+#: ProfileManager.cpp:369
 #, fuzzy, kde-format
 #| msgid "Edit Profile \"%1\""
 msgctxt "The default name of a profile"
@@ -2370,50 +2380,50 @@ msgstr "Bàn giao tiếp Linux"
 msgid "Solaris console"
 msgstr "Bàn giao tiếp Solaris"
 
-#: Session.cpp:348
+#: Session.cpp:347
 #, kde-format
 msgid "Could not find binary: "
 msgstr ""
 
-#: Session.cpp:357
+#: Session.cpp:356
 #, kde-format
 msgctxt "@info:shell Alert the user with red color text"
 msgid "Warning: "
 msgstr ""
 
-#: Session.cpp:414
+#: Session.cpp:413
 #, kde-format
 msgid ""
 "Could not find '%1', starting '%2' instead.  Please check your profile "
 "settings."
 msgstr ""
 
-#: Session.cpp:417
+#: Session.cpp:416
 #, kde-format
 msgid "Could not find an interactive shell to start."
 msgstr ""
 
-#: Session.cpp:455
+#: Session.cpp:454
 #, kde-format
 msgid "Could not start program '%1' with arguments '%2'."
 msgstr ""
 
-#: Session.cpp:584
+#: Session.cpp:583
 #, kde-format
 msgid "Silence in session '%1'"
 msgstr "Không có hoạt động trong phiên chạy '%1'"
 
-#: Session.cpp:632
+#: Session.cpp:631
 #, kde-format
 msgid "Bell in session '%1'"
 msgstr "Tiếng chuông trong phiên chạy '%1'"
 
-#: Session.cpp:645
+#: Session.cpp:644
 #, kde-format
 msgid "Activity in session '%1'"
 msgstr "Hoạt động trong phiên chạy '%1'"
 
-#: Session.cpp:839
+#: Session.cpp:838
 #, kde-format
 msgid ""
 "The D-Bus methods sendText/runCommand were just used.  There are security "
@@ -2422,26 +2432,26 @@ msgid ""
 "warning will only show once for this Konsole instance.</p>"
 msgstr ""
 
-#: Session.cpp:866
+#: Session.cpp:865
 #, fuzzy, kde-format
 #| msgid "<Finished>"
 msgctxt "@info:shell This session is done"
 msgid "Finished"
 msgstr "<Kết thúc>"
 
-#: Session.cpp:880 Session.cpp:892
+#: Session.cpp:879 Session.cpp:891
 #, fuzzy, kde-format
 #| msgid "Session '%1' exited unexpectedly."
 msgid "Program '%1' crashed."
 msgstr "Phiên chạy '%1' thoát ra bất ngờ."
 
-#: Session.cpp:882
+#: Session.cpp:881
 #, fuzzy, kde-format
 #| msgid "Session '%1' exited with status %2."
 msgid "Program '%1' exited with status %2."
 msgstr "Phiên chạy '%1' thoát ra với trạng thái %2."
 
-#: Session.cpp:1279
+#: Session.cpp:1278
 #, kde-format
 msgid "ZModem Progress"
 msgstr "Tiến trình ZModem"
@@ -2897,6 +2907,20 @@ msgstr "Theo biểu thức chính quy"
 #| msgid "Highlight all"
 msgid "Highlight all search matches"
 msgstr "Tô sáng tất cả"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_SearchReverseSearch)
+#. i18n: ectx: label, entry (SearchReverseSearch), group (SearchSettings)
+#: settings/GeneralSettings.ui:195 settings/konsole.kcfg:60
+#, kde-format
+msgid "Search backwards"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_SearchReverseSearch)
+#. i18n: ectx: tooltip, entry (SearchReverseSearch), group (SearchSettings)
+#: settings/GeneralSettings.ui:198 settings/konsole.kcfg:61
+#, kde-format
+msgid "Sets whether search should start from the bottom"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: settings/GeneralSettings.ui:216
@@ -3387,97 +3411,97 @@ msgid ""
 "You can double-click a tab to change its name.</para>"
 msgstr ""
 
-#: ViewManager.cpp:132
+#: ViewManager.cpp:131
 #, fuzzy, kde-format
 #| msgid "New &Tab"
 msgctxt "@action Shortcut entry"
 msgid "Next Tab"
 msgstr "&Thẻ mới"
 
-#: ViewManager.cpp:133
+#: ViewManager.cpp:132
 #, fuzzy, kde-format
 #| msgid "Previous"
 msgctxt "@action Shortcut entry"
 msgid "Previous Tab"
 msgstr "Lùi"
 
-#: ViewManager.cpp:134
+#: ViewManager.cpp:133
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Switch to Last Tab"
 msgstr ""
 
-#: ViewManager.cpp:135
+#: ViewManager.cpp:134
 #, fuzzy, kde-format
 #| msgid "Next View Container"
 msgctxt "@action Shortcut entry"
 msgid "Next View Container"
 msgstr "Đồ chứa ô xem kế"
 
-#: ViewManager.cpp:137
+#: ViewManager.cpp:136
 #, fuzzy, kde-format
 #| msgid "Move Here"
 msgctxt "@action Shortcut entry"
 msgid "Move Tab Left"
 msgstr "Chuyển vào đây"
 
-#: ViewManager.cpp:138
+#: ViewManager.cpp:137
 #, fuzzy, kde-format
 #| msgid "Split View Left/Right"
 msgctxt "@action Shortcut entry"
 msgid "Move Tab Right"
 msgstr "Chia ô xem trái/phải"
 
-#: ViewManager.cpp:146
+#: ViewManager.cpp:145
 #, fuzzy, kde-format
 #| msgid "Split View Left/Right"
 msgctxt "@action:inmenu"
 msgid "Split View Left/Right"
 msgstr "Chia ô xem trái/phải"
 
-#: ViewManager.cpp:153
+#: ViewManager.cpp:152
 #, fuzzy, kde-format
 #| msgid "Split View Top/Bottom"
 msgctxt "@action:inmenu"
 msgid "Split View Top/Bottom"
 msgstr "Chia ô xem trên/xuống"
 
-#: ViewManager.cpp:158
+#: ViewManager.cpp:157
 #, fuzzy, kde-format
 #| msgid "Close Active"
 msgctxt "@action:inmenu Close Active View"
 msgid "Close Active"
 msgstr "Đóng điều hoạt động"
 
-#: ViewManager.cpp:167
+#: ViewManager.cpp:166
 #, fuzzy, kde-format
 #| msgid "Close Others"
 msgctxt "@action:inmenu Close Other Views"
 msgid "Close Others"
 msgstr "Đóng các điều khác"
 
-#: ViewManager.cpp:176
+#: ViewManager.cpp:175
 #, fuzzy, kde-format
 #| msgid "Expand View"
 msgctxt "@action:inmenu"
 msgid "Expand View"
 msgstr "Phóng to ô xem"
 
-#: ViewManager.cpp:184
+#: ViewManager.cpp:183
 #, fuzzy, kde-format
 #| msgid "Shrink View"
 msgctxt "@action:inmenu"
 msgid "Shrink View"
 msgstr "Thu nhỏ ô xem"
 
-#: ViewManager.cpp:195
+#: ViewManager.cpp:194
 #, fuzzy, kde-format
 #| msgid "&Close Tab"
 msgctxt "@action:inmenu"
 msgid "D&etach Current Tab"
 msgstr "Đón&g thẻ"
 
-#: ViewManager.cpp:217
+#: ViewManager.cpp:216
 #, kde-format
 msgctxt "@action Shortcut entry"
 msgid "Switch to Tab %1"

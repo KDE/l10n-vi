@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-04-30 02:51+0200\n"
+"POT-Creation-Date: 2017-05-02 05:37+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -2183,8 +2183,10 @@ msgstr "Tên:"
 msgid "Date:"
 msgstr "Ngày:"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
 #: app/utils/tooltipfiller.cpp:97
 #: showfoto/thumbbar/showfototooltipfiller.cpp:84
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:314
 #: utilities/imageeditor/tools/transform/ratiocroptool.cpp:369
 #: utilities/importui/items/importtooltipfiller.cpp:82
 #: utilities/queuemanager/tools/transform/crop.cpp:117
@@ -2577,7 +2579,7 @@ msgstr "Hiện kiểu ảnh"
 msgid "Show Fullscreen"
 msgstr "Thoát khỏi chế độ toàn màn hình"
 
-#: app/views/leftsidebarwidgets.cpp:171 libs/album/album.cpp:472
+#: app/views/leftsidebarwidgets.cpp:171 libs/album/album.cpp:473
 #: libs/album/albummanager.cpp:1041 libs/album/albumselectiontreeview.cpp:187
 #: libs/album/albumselectors.cpp:131 libs/database/utils/dbstatdlg.cpp:70
 #: libs/models/albummodel.cpp:50
@@ -2608,7 +2610,7 @@ msgstr "Ảnh đầu"
 msgid "No Tags Album"
 msgstr "Tập ảnh tôi"
 
-#: app/views/leftsidebarwidgets.cpp:379 libs/album/album.cpp:534
+#: app/views/leftsidebarwidgets.cpp:379 libs/album/album.cpp:535
 #: libs/album/albummanager.cpp:1044 libs/album/albumselectors.cpp:134
 #: libs/database/utils/dbstatdlg.cpp:74
 #: libs/dmetadata/dmetadatasettingscontainer.h:53
@@ -3294,10 +3296,12 @@ msgstr ""
 msgid "Unit"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: app/views/tableview/tableview_column_thumbnail.cpp:83
 #: app/views/tableview/tableview_column_thumbnail.cpp:93
 #: libs/dtrash/dtrashitemmodel.cpp:190
 #: utilities/assistants/common/dimageslist.cpp:286
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:225
 #: utilities/geolocation/editor/items/gpsimageitem.cpp:501
 #: utilities/queuemanager/views/queuelist.cpp:315
 #, fuzzy, kde-format
@@ -3532,32 +3536,32 @@ msgstr ""
 msgid "Trash"
 msgstr ""
 
-#: libs/album/album.cpp:734
+#: libs/album/album.cpp:735
 #, fuzzy, kde-format
 msgid "Current Timeline Search"
 msgstr "Xoá tìm kiếm"
 
-#: libs/album/album.cpp:740
+#: libs/album/album.cpp:741
 #, fuzzy, kde-format
 msgid "Current Fuzzy Image Search"
 msgstr "Xoá tìm kiếm"
 
-#: libs/album/album.cpp:744
+#: libs/album/album.cpp:745
 #, fuzzy, kde-format
 msgid "Current Fuzzy Sketch Search"
 msgstr "Xoá tìm kiếm"
 
-#: libs/album/album.cpp:751
+#: libs/album/album.cpp:752
 #, fuzzy, kde-format
 msgid "Current Map Search"
 msgstr "Xoá tìm kiếm"
 
-#: libs/album/album.cpp:756
+#: libs/album/album.cpp:757
 #, fuzzy, kde-format
 msgid "Current Search"
 msgstr "Xoá tìm kiếm"
 
-#: libs/album/album.cpp:759
+#: libs/album/album.cpp:760
 #, fuzzy, kde-format
 msgid "Current Duplicates Search"
 msgstr "Xoá tìm kiếm"
@@ -10176,7 +10180,9 @@ msgstr "16 bit"
 msgid "8 bits"
 msgstr "8 bit"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/imageproperties/imagepropertiescolorstab.cpp:721
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:22
 #, fuzzy, kde-format
 msgid "Full Image"
 msgstr "<p>Ảnh đầy đủ"
@@ -12772,6 +12778,7 @@ msgid "Raw information about the ICC profile manufacturer"
 msgstr "Thông tin thô về hãng chế tạo hồ sơ ICC"
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:134
+#: utilities/assistants/htmlexport/generator/generator.cpp:353
 #: utilities/setup/camera/setupcamera.cpp:300
 #, kde-format
 msgid "Model"
@@ -13546,6 +13553,7 @@ msgid "Developer (2004)"
 msgstr "Nhà phát triển"
 
 #: libs/widgets/mainview/ditemtooltip.cpp:55
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:223
 #, kde-format
 msgid "unavailable"
 msgstr "không sẵn sàng"
@@ -18970,6 +18978,392 @@ msgid ""
 "risk.</p></qt>"
 msgstr ""
 
+#: utilities/assistants/htmlexport/generator/generator.cpp:144
+#, fuzzy, kde-format
+msgid "Could not find theme in '%1'"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:153
+#, fuzzy, kde-format
+#| msgid "Loading themes"
+msgid "Copying theme"
+msgstr "Đang tải sắc thái..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:169
+#, fuzzy, kde-format
+msgid "Could not copy theme"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:197
+#, fuzzy, kde-format
+#| msgid "Downloading file %1..."
+msgid "Downloading remote files for \"%1\""
+msgstr "Đang tải về tập tin %1..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:217
+#, fuzzy, kde-format
+#| msgid "Failed to delete file \"%1\"."
+msgid "Could not open temporary file"
+msgstr "Lỗi xoá tập tin « %1 »."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:233
+#, fuzzy, kde-format
+msgid "Could not download %1"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:256
+#, fuzzy, kde-format
+msgid "Could not create gallery.xml"
+msgstr "Không thể tính số trung bình."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:308
+#, fuzzy, kde-format
+#| msgid "Deleting file %1..."
+msgid "Generating files for \"%1\""
+msgstr "Đang xoá tập tin %1..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:346
+#, fuzzy, kde-format
+msgid "Previous"
+msgstr "Ảnh trước"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_nextButton)
+#: utilities/assistants/htmlexport/generator/generator.cpp:347
+#: utilities/presentation/audio/presentationaudiowidget.ui:50
+#: utilities/presentation/widgets/presentationctrlwidget.ui:51
+#, kde-format
+msgid "Next"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:348
+#, fuzzy, kde-format
+#| msgid "Collections"
+msgid "Collection List"
+msgstr "Tập hợp"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:349
+#, fuzzy, kde-format
+msgid "Original Image"
+msgstr "Gốc"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:350
+#, kde-format
+msgid "Go Up"
+msgstr ""
+
+# Name: don't translate/Tên: đừng dịch
+#: utilities/assistants/htmlexport/generator/generator.cpp:352
+#, fuzzy, kde-format
+#| msgid "Make:"
+msgid "Make"
+msgstr "Make:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:354
+#, fuzzy, kde-format
+msgid "Image Orientation"
+msgstr "Vị trí ảnh:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:355
+#, fuzzy, kde-format
+msgid "Image X Resolution"
+msgstr "Hiện các chiếu ảnh"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:356
+#, fuzzy, kde-format
+msgid "Image Y Resolution"
+msgstr "Hiện các chiếu ảnh"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:357
+#, fuzzy, kde-format
+msgid "Image Resolution Unit"
+msgstr "Hiện các chiếu ảnh"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:358
+#, fuzzy, kde-format
+msgid "Image Date Time"
+msgstr "Thêm Ngày và Giờ"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:359
+#, fuzzy, kde-format
+msgid "YCBCR Positioning"
+msgstr "Độ xói mòn:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:360
+#, fuzzy, kde-format
+msgid "Exposure Time"
+msgstr "Tự động phơi nắng"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:361
+#, fuzzy, kde-format
+#| msgid "Number:"
+msgid "F Number"
+msgstr "Số :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:362
+#, fuzzy, kde-format
+msgid "Exposure Index"
+msgstr "Tự động phơi nắng"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:363
+#, fuzzy, kde-format
+msgid "ISO Speed Ratings"
+msgstr "Lần lặp lại:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:364
+#, kde-format
+msgid "Shutter Speed Value"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:365
+#, fuzzy, kde-format
+msgid "Aperture Value"
+msgstr "Độ mở/Tiêu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:366
+#, fuzzy, kde-format
+msgid "Focal Length"
+msgstr "Thiết lập cục bộ"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:367
+#, fuzzy, kde-format
+msgid "GPS Altitude"
+msgstr "<b>Độ mở</b>:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:368
+#, fuzzy, kde-format
+msgid "GPS Latitude"
+msgstr "<b>Độ mở</b>:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:369
+#, fuzzy, kde-format
+msgid "GPS Longitude"
+msgstr "<b>Mô hình</b>:"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:396
+#, fuzzy, kde-format
+msgid "Generating HTML files"
+msgstr "Đang xoay EXIF tập tin %1..."
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:404
+#, fuzzy, kde-format
+msgid "Could not load XSL file '%1'"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:413
+#, fuzzy, kde-format
+msgid "Could not load XML file '%1'"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:449
+#, fuzzy, kde-format
+msgid "Error processing XML file"
+msgstr "Gặp lỗi khi lưu tập tin"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:458
+#: utilities/assistants/htmlexport/generator/generator.cpp:466
+#, fuzzy, kde-format
+#| msgid "Failed to list files in %1"
+msgid "Could not open '%1' for writing"
+msgstr "Lỗi liệt kê tập tin nằm trong %1"
+
+#: utilities/assistants/htmlexport/generator/generator.cpp:489
+#, kde-format
+msgid "Could not create folder '%1' in '%2'"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:102
+#, fuzzy, kde-format
+msgid "Could not read image '%1'"
+msgstr "Độ sâu màu :"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:115
+#, fuzzy, kde-format
+msgid "Error loading RAW image '%1'"
+msgstr "Gặp lỗi khi lưu tập tin"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:125
+#, kde-format
+msgid "Format of image '%1' is unknown"
+msgstr ""
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:136
+#, fuzzy, kde-format
+#| msgid "Error Saving File"
+msgid "Error loading image '%1'"
+msgstr "Gặp lỗi khi lưu tập tin"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:185
+#, fuzzy, kde-format
+msgid "Could not save image '%1' to '%2'"
+msgstr "Lỗi in tập tin: « %1 »"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:214
+#, fuzzy, kde-format
+#| msgid "Cannot create thumbnail for %1"
+msgid "Could not save thumbnail for image '%1' to '%2'"
+msgstr "Không thể tạo ảnh mẫu cho %1"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:446
+#, fuzzy, kde-format
+#| msgid "Failed to list files in %1"
+msgid "Could not open file '%1' for writing"
+msgstr "Lỗi liệt kê tập tin nằm trong %1"
+
+#: utilities/assistants/htmlexport/generator/imagegenerationfunctor.cpp:452
+#, fuzzy, kde-format
+msgid "Could not save image to file '%1'"
+msgstr "Lỗi in tập tin: « %1 »"
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:103
+#, kde-format
+msgid "Export to &HTML..."
+msgstr ""
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:133
+#, fuzzy, kde-format
+#| msgid "Deleting file %1..."
+msgid "Generating gallery..."
+msgstr "Đang xoá tập tin %1..."
+
+#: utilities/assistants/htmlexport/plugin_htmlexport.cpp:145
+#, kde-format
+msgid "Finished, but some warnings occurred."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mSaveImageButton)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:29
+#, fuzzy, kde-format
+#| msgid "Save Images"
+msgid "Save image"
+msgstr "Lưu ảnh"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2_2_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2_2)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:39
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:232
+#: utilities/metadataedit/iptc/iptcenvelope.cpp:246
+#, fuzzy, kde-format
+msgid "Format:"
+msgstr "Ngày ảnh"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_fullFormat)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_thumbnailFormat)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:56
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:249
+#: utilities/queuemanager/tools/custom/userscript.cpp:101
+#, fuzzy, kde-format
+msgid "JPEG"
+msgstr "Chất lượng JPEG 2000:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_fullFormat)
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_thumbnailFormat)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:61
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:254
+#: utilities/queuemanager/tools/custom/userscript.cpp:102
+#, kde-format
+msgid "PNG"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:85
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:278
+#, fuzzy, kde-format
+msgid "Quality:"
+msgstr "Chất lượng JPEG:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_fullResize)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:130
+#, fuzzy, kde-format
+#| msgid "Matrix size:"
+msgid "Max size:"
+msgstr "Cỡ ma trận:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_copyOriginalImage)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:171
+#, kde-format
+msgid "Include full-size original images for download"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, mUseOriginalImageButton)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:196
+#, fuzzy, kde-format
+msgid "Use original image"
+msgstr "Gốc"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_thumbnailSquare)
+#: utilities/assistants/htmlexport/wizard/imagesettingspage.ui:346
+#, fuzzy, kde-format
+msgid "Square thumbnails"
+msgstr "Hiện các ảnh mẫu"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: utilities/assistants/htmlexport/wizard/outputpage.ui:21
+#, fuzzy, kde-format
+msgid "Destination folder:"
+msgstr "Mô tả"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_openInBrowser)
+#: utilities/assistants/htmlexport/wizard/outputpage.ui:39
+#, fuzzy, kde-format
+#| msgid "Open folder"
+msgid "Open in browser"
+msgstr "Mở thư mục"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: utilities/assistants/htmlexport/wizard/themeparameterspage.ui:22
+#, kde-format
+msgid ""
+"In this page, you can change some theme parameters. Depending on the theme, "
+"different parameters are available."
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:176
+#, kde-format
+msgctxt "'%1' is a label for a theme parameter"
+msgid "%1:"
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:216
+#, kde-format
+msgid "Export image collections to HTML pages"
+msgstr ""
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:221
+#, fuzzy, kde-format
+msgid "Collection Selection"
+msgstr "&Vừa khít vùng chọn"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:227
+#, fuzzy, kde-format
+#| msgid "&Themes"
+msgid "Theme"
+msgstr "&Sắc thái"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:233
+#, fuzzy, kde-format
+msgid "Theme Parameters"
+msgstr "Cha"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:234
+#: utilities/imageeditor/printiface/printoptionspage.ui:13
+#, kde-format
+msgid "Image Settings"
+msgstr "Thiết lập ảnh"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:235
+#, fuzzy, kde-format
+#| msgid "Output device"
+msgid "Output"
+msgstr "Thiết bị xuất"
+
+#: utilities/assistants/htmlexport/wizard/wizard.cpp:295
+#, fuzzy, kde-format
+#| msgid "Author:"
+msgid "Author: %1"
+msgstr "Tác giả:"
+
 #: utilities/assistants/panorama/importwizard/panointropage.cpp:93
 #, kde-format
 msgctxt "@title:window"
@@ -22192,12 +22586,6 @@ msgid ""
 msgstr ""
 "<p>Khả năng Quản lý Màu bị tắt</p><p>Bạn có thể bật nó ngay bây giờ bằng "
 "cách nhấn vào cái nút « Thiết lập ».</p>"
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: utilities/imageeditor/printiface/printoptionspage.ui:13
-#, kde-format
-msgid "Image Settings"
-msgstr "Thiết lập ảnh"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintAutoRotate)
 #: utilities/imageeditor/printiface/printoptionspage.ui:49
@@ -28696,11 +29084,6 @@ msgstr ""
 msgid "Select here the envelope priority."
 msgstr "<p>Ở đây hãy đặt cấp của hiệu ứng."
 
-#: utilities/metadataedit/iptc/iptcenvelope.cpp:246
-#, fuzzy, kde-format
-msgid "Format:"
-msgstr "Ngày ảnh"
-
 #: utilities/metadataedit/iptc/iptcenvelope.cpp:259
 #, fuzzy, kde-format
 msgid "Select here envelope file format."
@@ -30560,13 +30943,6 @@ msgstr "Đá"
 msgid "Prev"
 msgstr "Xem thử"
 
-#. i18n: ectx: property (text), widget (QPushButton, m_nextButton)
-#: utilities/presentation/audio/presentationaudiowidget.ui:50
-#: utilities/presentation/widgets/presentationctrlwidget.ui:51
-#, kde-format
-msgid "Next"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: utilities/presentation/audio/presentationaudiowidget.ui:70
 #, fuzzy, kde-format
@@ -31440,16 +31816,6 @@ msgstr "Thiết bị xuất"
 #: utilities/queuemanager/tools/custom/userscript.cpp:100
 #, kde-format
 msgid "Same as input"
-msgstr ""
-
-#: utilities/queuemanager/tools/custom/userscript.cpp:101
-#, fuzzy, kde-format
-msgid "JPEG"
-msgstr "Chất lượng JPEG 2000:"
-
-#: utilities/queuemanager/tools/custom/userscript.cpp:102
-#, kde-format
-msgid "PNG"
 msgstr ""
 
 #: utilities/queuemanager/tools/custom/userscript.cpp:103
@@ -38289,9 +38655,6 @@ msgstr "Lục:"
 #~ msgid "Getting Metadata for %1..."
 #~ msgstr "Đang lấy ảnh mẫu cho %1/%2..."
 
-#~ msgid "Downloading file %1..."
-#~ msgstr "Đang tải về tập tin %1..."
-
 #, fuzzy
 #~| msgid "Fix internal date && time"
 #~ msgid "Fix Internal date to file %1..."
@@ -38307,9 +38670,6 @@ msgstr "Lục:"
 
 #~ msgid "Uploading file %1 to camera..."
 #~ msgstr "Đang tải tập tin %1 lên máy ảnh..."
-
-#~ msgid "Deleting file %1..."
-#~ msgstr "Đang xoá tập tin %1..."
 
 #~ msgid "Toggle lock file %1..."
 #~ msgstr "Bật/tắt tập tin khoá %1..."
@@ -38733,9 +39093,6 @@ msgstr "Lục:"
 
 #~ msgid "Checking ICC repository"
 #~ msgstr "Đang kiểm tra kho lưu ICC"
-
-#~ msgid "Loading themes"
-#~ msgstr "Đang tải sắc thái..."
 
 #, fuzzy
 #~| msgid "Failed to revise Exif orientation for file %1."
@@ -39295,11 +39652,6 @@ msgstr "Lục:"
 #~| msgid "Guide color:"
 #~ msgid "Border Color: "
 #~ msgstr "Màu nét dẫn:"
-
-#, fuzzy
-#~| msgid "Failed to list files in %1"
-#~ msgid "Failed to open file for writing"
-#~ msgstr "Lỗi liệt kê tập tin nằm trong %1"
 
 #, fuzzy
 #~ msgid "July 2008 - 10 Items"
@@ -41253,11 +41605,6 @@ msgstr "Lục:"
 #~ msgstr "Thiết lập cục bộ"
 
 #, fuzzy
-#~| msgid "Author:"
-#~ msgid "Authors:"
-#~ msgstr "Tác giả:"
-
-#, fuzzy
 #~| msgid "Auto-Correction..."
 #~ msgid "Author Position"
 #~ msgstr "Sửa chữa tự động..."
@@ -41573,12 +41920,6 @@ msgstr "Lục:"
 
 #~ msgid "Update Metadata Database..."
 #~ msgstr "Cập nhật cơ sở dữ liệu siêu dữ liệu..."
-
-# Name: don't translate/Tên: đừng dịch
-#, fuzzy
-#~| msgid "Make:"
-#~ msgid "Make:"
-#~ msgstr "Make:"
 
 #~ msgid "Model:"
 #~ msgstr "Mô hình:"

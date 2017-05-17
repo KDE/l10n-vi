@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-16 02:54+0200\n"
+"POT-Creation-Date: 2017-05-17 04:53+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -723,7 +723,7 @@ msgid "N&ew..."
 msgstr "Xem..."
 
 #: app/main/digikamapp.cpp:874 app/utils/editablesearchtreeview.cpp:67
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:299
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:336
 #: utilities/setup/metadata/advancedmetadatatab.cpp:355
 #, kde-format
 msgid "Delete"
@@ -2864,7 +2864,7 @@ msgstr "Độ sâu màu :"
 #: app/views/tableview/tableview_column_digikam.cpp:78
 #: app/views/tableview/tableview_column_digikam.cpp:96
 #: libs/template/templatelist.cpp:83
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:217
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:298
 #: utilities/queuemanager/views/workflowlist.cpp:98
 #: utilities/searchwindow/searchfields.cpp:557
 #: utilities/setup/camera/setupcamera.cpp:299
@@ -10186,32 +10186,32 @@ msgstr "<p>Ảnh đầy đủ"
 msgid "Image Region"
 msgstr "Hiện các chiếu ảnh"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:151
+#: libs/imageproperties/imagepropertiesgpstab.cpp:147
 #, fuzzy, kde-format
 msgid "<b>Altitude</b>:"
 msgstr "<b>Độ mở</b>:"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:152
+#: libs/imageproperties/imagepropertiesgpstab.cpp:148
 #, fuzzy, kde-format
 msgid "<b>Latitude</b>:"
 msgstr "<b>Ngày</b>:"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:153
+#: libs/imageproperties/imagepropertiesgpstab.cpp:149
 #, fuzzy, kde-format
 msgid "<b>Longitude</b>:"
 msgstr "<b>Mô hình</b>:"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:154
+#: libs/imageproperties/imagepropertiesgpstab.cpp:150
 #, kde-format
 msgid "<b>Date</b>:"
 msgstr "<b>Ngày</b>:"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:177
+#: libs/imageproperties/imagepropertiesgpstab.cpp:173
 #, fuzzy, kde-format
 msgid "See more information on the Internet"
 msgstr "Thông tin ảnh"
 
-#: libs/imageproperties/imagepropertiesgpstab.cpp:389
+#: libs/imageproperties/imagepropertiesgpstab.cpp:386
 #, kde-format
 msgid "Undefined"
 msgstr ""
@@ -10361,7 +10361,6 @@ msgid "Used Filters"
 msgstr "Bộ lọc kính"
 
 #: libs/imageproperties/imagepropertiesversionstab.cpp:161
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:295
 #, fuzzy, kde-format
 msgid "Open"
 msgstr "Mở bằng"
@@ -11482,6 +11481,7 @@ msgid "<p>Select here the country where the photograph was taken.</p>"
 msgstr ""
 
 #: libs/template/templatepanel.cpp:310 libs/template/templateviewer.cpp:201
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:300
 #, fuzzy, kde-format
 msgid "Location"
 msgstr "Vùng chọn"
@@ -20514,33 +20514,32 @@ msgid ""
 "Fuzzy search"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:154
+#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:178
 #, fuzzy, kde-format
 msgid "The file is not an XBEL version 1.0 file."
 msgstr "Miền màu"
 
-#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:239
+#: utilities/geolocation/editor/bookmark/bookmarknode.cpp:263
 #, fuzzy, kde-format
 msgid "Unknown title"
 msgstr "Lỗi không rõ"
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:62
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:95
 #, fuzzy
 msgid "Add Bookmark"
 msgstr "Thêm máy ảnh.."
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:71
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:100
 msgid "Type a name for the bookmark, and choose where to keep it."
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:193
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:142
-#: utilities/geolocation/editor/searches/searchwidget.cpp:228
-#, kde-format
-msgid "Bookmarks"
-msgstr ""
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:208
+#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:153
+#, fuzzy, kde-format
+msgid "Edit Bookmarks"
+msgstr "Thêm máy ảnh.."
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:194
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:226
 #: utilities/setup/album/setupcategory.cpp:107
 #: utilities/setup/camera/setupcamera.cpp:318
 #: utilities/setup/camera/setupcamera.cpp:434
@@ -20549,93 +20548,94 @@ msgstr ""
 msgid "&Remove"
 msgstr "&Bỏ"
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:195
-#, fuzzy
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:230
+#, fuzzy, kde-format
 msgid "Add Folder"
 msgstr "Thêm viền..."
 
-#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:327
+#: utilities/geolocation/editor/bookmark/bookmarksdlg.cpp:364
 #, fuzzy, kde-format
 #| msgid "By Folder"
 msgid "New Folder"
 msgstr "Theo thư mục"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:57
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:59
 #, fuzzy, kde-format
 msgid "Remove Bookmark"
 msgstr "Gỡ bỏ mục"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:94
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:98
 #, fuzzy, kde-format
 msgid "Insert Bookmark"
 msgstr "Màu :"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:111
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:147
 #, fuzzy, kde-format
 msgid "Name Change"
 msgstr "Lưu ảnh"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:116
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:152
 #, fuzzy, kde-format
 msgid "Address Change"
 msgstr "Lưu ảnh"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:218
-#, kde-format
-msgid "Address"
-msgstr ""
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:682
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:888
+#, fuzzy, kde-format
+msgid "Loading Bookmark"
+msgstr "Thêm máy ảnh.."
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:518
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:707
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:683
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:889
 #, kde-format
 msgid ""
 "Error when loading bookmarks on line %1, column %2:\n"
 "%3"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:533
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:700
 #, kde-format
 msgid "Toolbar Bookmarks"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:544
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:711
 #, kde-format
 msgid "Menu"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:697
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:877
 #, fuzzy, kde-format
 msgid "Open File"
 msgstr "Mở thư mục"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:699
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:720
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:879
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:906
 #, kde-format
 msgid "XBEL (*.xbel *.xml)"
 msgstr ""
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:712
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:896
 #, fuzzy, kde-format
 #| msgid "Import"
 msgid "Imported %1"
 msgstr "Nhập"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:718
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:903
 #, fuzzy, kde-format
 msgid "Save File"
 msgstr "Tập tin phim"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:719
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:904
 #, fuzzy, kde-format
 msgid "%1 Bookmarks.xbel"
 msgstr "Chưa chọn mục"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:726
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:913
 #, fuzzy, kde-format
 msgid "Export error"
 msgstr "Xuất"
 
-#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:726
+#: utilities/geolocation/editor/bookmark/bookmarksmngr.cpp:913
 #, kde-format
 msgid "error saving bookmarks"
 msgstr ""
@@ -20647,12 +20647,7 @@ msgid "1 image snapped to '%2'"
 msgid_plural "%1 images snapped to '%2'"
 msgstr[0] ""
 
-#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:156
-#, fuzzy, kde-format
-msgid "Show All Bookmarks"
-msgstr "Hiện kiểu ảnh"
-
-#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:162
+#: utilities/geolocation/editor/bookmark/gpsbookmarkowner.cpp:159
 #, fuzzy, kde-format
 #| msgid "Add Border..."
 msgid "Add Bookmark..."
@@ -20793,7 +20788,7 @@ msgid "#points"
 msgstr "In %1"
 
 #: utilities/geolocation/editor/dialog/geolocationedit.cpp:264
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:479
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:478
 #, fuzzy, kde-format
 msgid "Geolocation Editor"
 msgstr "Lọc lục"
@@ -21038,99 +21033,105 @@ msgstr "Lỗi in tập tin: « %1 »"
 msgid "Unable to save changes to file"
 msgstr "Lỗi in tập tin: « %1 »"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:108
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:109
 #: utilities/geolocation/editor/searches/searchwidget.cpp:196
 #, fuzzy, kde-format
 msgid "Copy coordinates"
 msgstr "Toạ độ cực"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:110
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:111
 #, fuzzy, kde-format
 msgid "Paste coordinates"
 msgstr "Toạ độ cực"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:112
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:113
 #, fuzzy, kde-format
 msgid "Remove coordinates"
 msgstr "Gỡ bỏ mục"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:113
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:114
 #, fuzzy, kde-format
 msgid "Remove altitude"
 msgstr "Gỡ bỏ mục"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:114
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:115
 #, fuzzy, kde-format
 msgid "Remove uncertainty"
 msgstr "Theo tập hợp"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:115
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:646
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:116
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:645
 #, fuzzy, kde-format
 msgid "Remove speed"
 msgstr "Gỡ bỏ mục"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:116
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:117
 #, kde-format
 msgid "Look up missing altitude values"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:420
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:750
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:143
+#: utilities/geolocation/editor/searches/searchwidget.cpp:228
+#, kde-format
+msgid "Bookmarks"
+msgstr ""
+
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:419
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:749
 #, kde-format
 msgid "GPS Sync"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:420
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:419
 #, kde-format
 msgid ""
 "Found more than one point on the clipboard - can only assign one point at a "
 "time."
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:479
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:478
 #, kde-format
 msgid "Could not find any coordinates on the clipboard."
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:483
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:482
 #, fuzzy, kde-format
 msgid "Coordinates pasted"
 msgstr "Toạ độ cực"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:515
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:514
 #, fuzzy, kde-format
 msgid "Bookmark selected"
 msgstr "Chưa chọn mục"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:625
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:624
 #, fuzzy, kde-format
 msgid "Remove coordinates information"
 msgstr "Thông tin ảnh"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:630
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:629
 #, fuzzy, kde-format
 msgid "Remove altitude information"
 msgstr "Thông tin giống hệt IPTC mặc định"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:636
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:635
 #, fuzzy, kde-format
 msgid "Remove uncertainty information"
 msgstr "Thông tin giống hệt IPTC mặc định"
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:698
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:697
 #, kde-format
 msgid "Looking up altitudes"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:749
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:748
 #, kde-format
 msgid ""
 "Altitude lookup failed:\n"
 "%1"
 msgstr ""
 
-#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:756
+#: utilities/geolocation/editor/items/gpsimagelistcontextmenu.cpp:755
 #, fuzzy, kde-format
 msgid "Altitude looked up"
 msgstr "<b>Độ mở</b>:"
@@ -37397,6 +37398,10 @@ msgstr "Thoát khỏi chế độ toàn màn hình"
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "Lục:"
+
+#, fuzzy
+#~ msgid "Show All Bookmarks"
+#~ msgstr "Hiện kiểu ảnh"
 
 #, fuzzy
 #~ msgid "Albums Selection"

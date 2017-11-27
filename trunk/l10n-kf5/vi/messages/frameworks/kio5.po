@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-11-16 03:25+0100\n"
+"POT-Creation-Date: 2017-11-27 03:10+0100\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -3152,7 +3152,7 @@ msgstr ""
 "<qt>Chọn thiết lập này nếu bạn muốn mục này hiển thị chỉ khi dùng ứng dụng "
 "hiện có (%1) thôi.<p>Khi không chọn, mục này sẽ có sẵn cho mọi ứng dụng.</qt>"
 
-#: filewidgets/kfileplacesitem.cpp:115
+#: filewidgets/kfileplacesitem.cpp:107
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Places"
@@ -3160,20 +3160,27 @@ msgctxt "@item"
 msgid "Places"
 msgstr "Vị trí"
 
-#: filewidgets/kfileplacesitem.cpp:118
+#: filewidgets/kfileplacesitem.cpp:110
+#, fuzzy, kde-format
+#| msgid "Remove"
+msgctxt "@item"
+msgid "Remote"
+msgstr "Bỏ"
+
+#: filewidgets/kfileplacesitem.cpp:113
 #, kde-format
 msgctxt "@item"
 msgid "Recently Saved"
 msgstr ""
 
-#: filewidgets/kfileplacesitem.cpp:121
+#: filewidgets/kfileplacesitem.cpp:116
 #, fuzzy, kde-format
 #| msgid "&Search:"
 msgctxt "@item"
 msgid "Search For"
 msgstr "Tìm &kiếm:"
 
-#: filewidgets/kfileplacesitem.cpp:124
+#: filewidgets/kfileplacesitem.cpp:119
 #, fuzzy, kde-format
 #| msgctxt "@item:inmenu"
 #| msgid "Devices"
@@ -3181,53 +3188,109 @@ msgctxt "@item"
 msgid "Devices"
 msgstr "Thiết bị"
 
-#: filewidgets/kfileplacesmodel.cpp:108
+#: filewidgets/kfileplacesitem.cpp:122
+#, kde-format
+msgctxt "@item"
+msgid "Removable Devices"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:131
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Home"
 msgstr "Thư mục chính"
 
-#: filewidgets/kfileplacesmodel.cpp:111
+#: filewidgets/kfileplacesmodel.cpp:134
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Network"
 msgstr "Mạng"
 
-#: filewidgets/kfileplacesmodel.cpp:123
+#: filewidgets/kfileplacesmodel.cpp:146
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Root"
 msgstr "Thư mục gốc"
 
-#: filewidgets/kfileplacesmodel.cpp:127
+#: filewidgets/kfileplacesmodel.cpp:150
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Trash"
 msgstr "Thùng rác"
 
-#: filewidgets/kfileplacesmodel.cpp:794
+#: filewidgets/kfileplacesmodel.cpp:165
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "Today"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:168
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "Yesterday"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:171
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "This Month"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:174
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "Last Month"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:177
+#, fuzzy, kde-format
+#| msgid "FIXME: Document this"
+msgctxt "KFile System Bookmarks"
+msgid "Documents"
+msgstr "SỬA ĐI : tạo tài liệu về điều này"
+
+#: filewidgets/kfileplacesmodel.cpp:180
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "Images"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:183
+#, fuzzy, kde-format
+#| msgid "All Files"
+msgctxt "KFile System Bookmarks"
+msgid "Audio Files"
+msgstr "Mọi tập tin"
+
+#: filewidgets/kfileplacesmodel.cpp:186
+#, kde-format
+msgctxt "KFile System Bookmarks"
+msgid "Videos"
+msgstr ""
+
+#: filewidgets/kfileplacesmodel.cpp:860
 #, kde-format
 msgid "&Release '%1'"
 msgstr "&Tháo '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:796
+#: filewidgets/kfileplacesmodel.cpp:862
 #, kde-format
 msgid "&Safely Remove '%1'"
 msgstr "&Gỡ an toàn '%1'"
 
 # msgid "Unmount"
-#: filewidgets/kfileplacesmodel.cpp:799
+#: filewidgets/kfileplacesmodel.cpp:865
 #, kde-format
 msgid "&Unmount '%1'"
 msgstr "&Gỡ gắn kết '%1'"
 
 # msgid "Eject"
-#: filewidgets/kfileplacesmodel.cpp:820
+#: filewidgets/kfileplacesmodel.cpp:886
 #, kde-format
 msgid "&Eject '%1'"
 msgstr "Đẩy '%1' &ra"
 
-#: filewidgets/kfileplacesmodel.cpp:854
+#: filewidgets/kfileplacesmodel.cpp:920
 #, kde-format
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr "Thiết bị '%1' không phải là đĩa và không thể được đẩy ra."
@@ -3235,45 +3298,45 @@ msgstr "Thiết bị '%1' không phải là đĩa và không thể được đ�
 # msgid ""
 # An error occurred while attempting to %1, %2. A summary of the reasons is
 # below.<ul>
-#: filewidgets/kfileplacesmodel.cpp:890
+#: filewidgets/kfileplacesmodel.cpp:956
 #, kde-format
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Gặp lỗi khi truy cập '%1', phản hồi từ hệ thống: %2"
 
 # msgid "An unexpected error (%1) occurred while attempting to %2."
-#: filewidgets/kfileplacesmodel.cpp:894
+#: filewidgets/kfileplacesmodel.cpp:960
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "Gặp lỗi khi truy cập '%1'."
 
-#: filewidgets/kfileplacesview.cpp:741
+#: filewidgets/kfileplacesview.cpp:749
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
 msgstr "Đổ rác"
 
-#: filewidgets/kfileplacesview.cpp:746 filewidgets/kfileplacesview.cpp:767
-#: filewidgets/kfileplacesview.cpp:774 widgets/kacleditwidget.cpp:97
+#: filewidgets/kfileplacesview.cpp:754 filewidgets/kfileplacesview.cpp:775
+#: filewidgets/kfileplacesview.cpp:782 widgets/kacleditwidget.cpp:97
 #, kde-format
 msgid "Add Entry..."
 msgstr "Thêm mục..."
 
-#: filewidgets/kfileplacesview.cpp:748
+#: filewidgets/kfileplacesview.cpp:756
 #, kde-format
 msgid "&Edit Entry '%1'..."
 msgstr "&Sửa mục '%1'..."
 
-#: filewidgets/kfileplacesview.cpp:770
+#: filewidgets/kfileplacesview.cpp:778
 #, kde-format
 msgid "&Hide Entry '%1'"
 msgstr "Ẩ&n mục '%1'"
 
-#: filewidgets/kfileplacesview.cpp:779
+#: filewidgets/kfileplacesview.cpp:787
 #, kde-format
 msgid "&Show All Entries"
 msgstr "&Hiện mọi mục"
 
-#: filewidgets/kfileplacesview.cpp:790
+#: filewidgets/kfileplacesview.cpp:798
 #, kde-format
 msgid "&Remove Entry '%1'"
 msgstr "&Xoá mục '%1'"

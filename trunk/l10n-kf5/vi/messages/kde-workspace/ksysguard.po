@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksysguard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-01 03:37+0100\n"
+"POT-Creation-Date: 2018-05-15 03:42+0200\n"
 "PO-Revision-Date: 2012-10-09 21:01+0800\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -135,7 +135,7 @@ msgstr "v.d. « ssh -l root remote.host.org ksysguardd »"
 msgid "KDE System Monitor"
 msgstr "Bộ Theo dõi Hệ thống KDE"
 
-#: ksysguard.cpp:162 ksysguard.cpp:537
+#: ksysguard.cpp:162 ksysguard.cpp:553
 #, kde-format
 msgid "System Monitor"
 msgstr "Bộ Theo dõi Hệ thống"
@@ -185,101 +185,134 @@ msgstr "Tải &lên thẻ hiện tại..."
 msgid "Tab &Properties"
 msgstr "Thuộ&c tính thẻ"
 
-#: ksysguard.cpp:367
+#: ksysguard.cpp:368
 #, fuzzy, kde-format
 #| msgid "Process Count"
-msgid "1 process1"
-msgid_plural "%1 processes%1"
+msgid "1 process"
+msgid_plural "%1 processes"
 msgstr[0] "Số tiến trình"
 
-#: ksysguard.cpp:446
+#: ksysguard.cpp:449
 #, kde-format
-msgid "CPU: %1%%1%"
+msgid "CPU: %1%"
 msgstr ""
 
-#: ksysguard.cpp:461
-#, kde-format
+#: ksysguard.cpp:449
+#, fuzzy, kde-format
+#| msgctxt "a percentage"
+#| msgid "%"
+msgctxt "This is the shorter version of CPU: %1%"
+msgid "%1%"
+msgstr "%"
+
+#: ksysguard.cpp:468
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
 msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Memory: %1 / %2Mem: %1 / %2Mem: %1%1"
+msgid "Memory: %1 / %2"
+msgstr " Bộ nhớ : %1 / %2 "
+
+#: ksysguard.cpp:470
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
+msgctxt ""
+"Arguments are formatted byte sizes (used/total) This should be a shorter "
+"version of the previous Memory: %1 / %2"
+msgid "Mem: %1 / %2"
+msgstr " Bộ nhớ : %1 / %2 "
+
+#: ksysguard.cpp:472
+#, kde-format
+msgctxt ""
+"Arguments is formatted byte sizes (used) This should be a shorter version of "
+"the previous Mem: %1 / %2"
+msgid "Mem: %1"
 msgstr ""
 
-#: ksysguard.cpp:488
+#: ksysguard.cpp:500
 #, kde-format
 msgid " No swap space available "
 msgstr " Không có vùng trao đổi sẵn sàng "
 
-#: ksysguard.cpp:490
-#, kde-format
+#: ksysguard.cpp:504
+#, fuzzy, kde-format
+#| msgid " Memory: %1 / %2 "
 msgctxt "Arguments are formatted byte sizes (used/total)"
-msgid "Swap: %1 / %2Swap: %1%1"
+msgid "Swap: %1 / %2"
+msgstr " Bộ nhớ : %1 / %2 "
+
+#: ksysguard.cpp:506
+#, kde-format
+msgctxt "Arguments is formatted byte sizes (used)"
+msgid "Swap: %1"
 msgstr ""
 
-#: ksysguard.cpp:539
+#: ksysguard.cpp:555
 #, kde-format
 msgid "(c) 1996-2016 The KDE System Monitor Developers"
 msgstr ""
 
-#: ksysguard.cpp:541
+#: ksysguard.cpp:557
 #, kde-format
 msgid "John Tapsell"
 msgstr ""
 
-#: ksysguard.cpp:541
+#: ksysguard.cpp:557
 #, kde-format
 msgid "Current Maintainer"
 msgstr ""
 
-#: ksysguard.cpp:542
+#: ksysguard.cpp:558
 #, kde-format
 msgid "Chris Schlaeger"
 msgstr ""
 
-#: ksysguard.cpp:542
+#: ksysguard.cpp:558
 #, kde-format
 msgid "Previous Maintainer"
 msgstr ""
 
-#: ksysguard.cpp:543
+#: ksysguard.cpp:559
 #, kde-format
 msgid "Greg Martyn"
 msgstr ""
 
-#: ksysguard.cpp:544
+#: ksysguard.cpp:560
 #, kde-format
 msgid "Tobias Koenig"
 msgstr ""
 
-#: ksysguard.cpp:545
+#: ksysguard.cpp:561
 #, kde-format
 msgid "Nicolas Leclercq"
 msgstr ""
 
-#: ksysguard.cpp:546
+#: ksysguard.cpp:562
 #, kde-format
 msgid "Alex Sanda"
 msgstr ""
 
-#: ksysguard.cpp:547
+#: ksysguard.cpp:563
 #, kde-format
 msgid "Bernd Johannes Wuebben"
 msgstr ""
 
-#: ksysguard.cpp:548
+#: ksysguard.cpp:564
 #, kde-format
 msgid "Ralf Mueller"
 msgstr ""
 
-#: ksysguard.cpp:549
+#: ksysguard.cpp:565
 #, kde-format
 msgid "Hamish Rodda"
 msgstr ""
 
-#: ksysguard.cpp:550
+#: ksysguard.cpp:566
 #, kde-format
 msgid "Torsten Kasch"
 msgstr ""
 
-#: ksysguard.cpp:550
+#: ksysguard.cpp:566
 #, kde-format
 msgid ""
 "Solaris Support\n"
@@ -290,7 +323,7 @@ msgstr ""
 "Phần bắt nguồn (có quyền) từ mô-đun sunos5\n"
 "của tiện ích \"top\" của William LeFebvre."
 
-#: ksysguard.cpp:559
+#: ksysguard.cpp:575
 #, kde-format
 msgid "Optional worksheet files to load"
 msgstr "Tập tin bảng làm việc tùy chọn cần tải"
@@ -609,7 +642,7 @@ msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cpp:597
 #, kde-format
-msgid "%1 of %2%1"
+msgid "%1 of %2"
 msgstr ""
 
 #: SensorDisplayLib/FancyPlotter.cpp:625
@@ -1922,12 +1955,6 @@ msgstr "Bộ Theo dõi Hệ thống"
 #~ msgid_plural "%1 seconds"
 #~ msgstr[0] " giây"
 
-#, fuzzy
-#~| msgid " Memory: %1 / %2 "
-#~ msgctxt "Arguments are formatted byte sizes (used/total)"
-#~ msgid " Memory: %1 / %2 "
-#~ msgstr " Bộ nhớ : %1 / %2 "
-
 #~ msgid "Font:"
 #~ msgstr "Phông:"
 
@@ -1952,13 +1979,6 @@ msgstr "Bộ Theo dõi Hệ thống"
 #~| msgid "Automatic range detection"
 #~ msgid "Automatic range"
 #~ msgstr "Phát hiện phạm vị tự động"
-
-#, fuzzy
-#~| msgctxt "a percentage"
-#~| msgid "%"
-#~ msgctxt "units in percentage"
-#~ msgid "%1%"
-#~ msgstr "%"
 
 #, fuzzy
 #~| msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-07-03 03:21+0200\n"
+"POT-Creation-Date: 2018-07-04 03:26+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -886,7 +886,7 @@ msgstr "<i>không sẵn sàng</i>"
 msgid "Initializing..."
 msgstr "Sơn vào..."
 
-#: core/app/main/digikamapp.cpp:138 core/showfoto/main/showfoto.cpp:179
+#: core/app/main/digikamapp.cpp:138 core/showfoto/main/showfoto.cpp:68
 #, fuzzy, kde-format
 msgid "Checking ICC repository..."
 msgstr "Đang kiểm tra kho lưu ICC"
@@ -1781,12 +1781,13 @@ msgstr "Lật dọc"
 msgid "Auto Rotate/Flip Using Exif Information"
 msgstr ""
 
-#: core/app/main/digikamapp_setup.cpp:1040 core/showfoto/main/showfoto.cpp:188
+#: core/app/main/digikamapp_setup.cpp:1040 core/showfoto/main/showfoto.cpp:77
 #, fuzzy, kde-format
 msgid "Loading themes..."
 msgstr "Đang tải sắc thái..."
 
-#: core/app/main/digikamapp_setup.cpp:1043 core/showfoto/main/showfoto.cpp:422
+#: core/app/main/digikamapp_setup.cpp:1043
+#: core/showfoto/main/showfoto_setup.cpp:32
 #, kde-format
 msgid "&Themes"
 msgstr "&Sắc thái"
@@ -13434,7 +13435,7 @@ msgid "Mod.: %1"
 msgstr "Mô hình:"
 
 #: core/libs/widgets/itemview/itemviewimagedelegate.cpp:432
-#: core/showfoto/main/showfoto.cpp:648
+#: core/showfoto/main/showfoto.cpp:314
 #: core/showfoto/thumbbar/itemviewshowfotodelegate.cpp:322
 #: core/utilities/import/items/itemviewimportdelegate.cpp:363
 #, fuzzy, kde-format
@@ -16733,7 +16734,7 @@ msgstr ""
 msgid "File(s) or folder(s) to open"
 msgstr "Các tập tin/thư mục cần mở"
 
-#: core/showfoto/main/showfoto.cpp:290
+#: core/showfoto/main/showfoto.cpp:179
 #, fuzzy, kde-format
 msgid ""
 "<p>The ICC profile path seems to be invalid.</p><p>If you want to set it "
@@ -16745,71 +16746,61 @@ msgstr ""
 "hợp này, tính năng « Quản lý màu » bị tắt đến khi bạn giải quyết vấn đề này."
 "</p></qt>"
 
-#: core/showfoto/main/showfoto.cpp:432
-#, kde-format
-msgid "Open folder"
-msgstr "Mở thư mục"
-
-#: core/showfoto/main/showfoto.cpp:503
-#, kde-format
-msgid "Delete File"
-msgstr "Xoá tập tin"
-
-#: core/showfoto/main/showfoto.cpp:607
+#: core/showfoto/main/showfoto.cpp:273
 #, fuzzy, kde-format
 #| msgid "Error Saving File"
 msgid "Error Loading File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: core/showfoto/main/showfoto.cpp:608
+#: core/showfoto/main/showfoto.cpp:274
 #, fuzzy, kde-format
 msgid ""
 "Failed to load file: %1\n"
 "Remote file handling is not supported"
 msgstr "Định dạng tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: core/showfoto/main/showfoto.cpp:647
+#: core/showfoto/main/showfoto.cpp:313
 #, fuzzy, kde-format
 msgctxt "unknown image dimensions"
 msgid "Unknown"
 msgstr "Không rõ"
 
-#: core/showfoto/main/showfoto.cpp:730
+#: core/showfoto/main/showfoto.cpp:352
 #: core/utilities/imageeditor/main/imagewindow.cpp:809
 #, fuzzy, kde-format
 msgctxt "<Image file name> (<Image number> of <Images in album>)"
 msgid "%1 (%2 of %3)"
 msgstr " (%2 trên %3)"
 
-#: core/showfoto/main/showfoto.cpp:767
+#: core/showfoto/main/showfoto.cpp:389
 #, kde-format
 msgid "Open Images From Folder"
 msgstr "Mở ảnh từ thư mục"
 
-#: core/showfoto/main/showfoto.cpp:925
+#: core/showfoto/main/showfoto.cpp:512
 #: core/utilities/imageeditor/editor/editorwindow.cpp:2738
 #, kde-format
 msgid "Error Saving File"
 msgstr "Gặp lỗi khi lưu tập tin"
 
-#: core/showfoto/main/showfoto.cpp:926
+#: core/showfoto/main/showfoto.cpp:513
 #, fuzzy, kde-format
 msgid "Failed to save file: %1"
 msgstr "Lỗi in tập tin: « %1 »"
 
-#: core/showfoto/main/showfoto.cpp:927
+#: core/showfoto/main/showfoto.cpp:514
 #, fuzzy, kde-format
 msgid "Remote file handling is not supported"
 msgstr "Định dạng tập tin ảnh đích « %1 » không được hỗ trợ."
 
-#: core/showfoto/main/showfoto.cpp:946
+#: core/showfoto/main/showfoto.cpp:533
 #: core/utilities/imageeditor/main/imagewindow.cpp:898
 #: core/utilities/imageeditor/main/imagewindow.cpp:1001
 #, fuzzy, kde-format
 msgid "Image saved successfully"
 msgstr "Đang tải về tập tin %1..."
 
-#: core/showfoto/main/showfoto.cpp:1024
+#: core/showfoto/main/showfoto.cpp:611
 #, kde-format
 msgid ""
 "About to delete file \"%1\"\n"
@@ -16818,13 +16809,28 @@ msgstr ""
 "Sắp xoá tập tin « %1 »\n"
 "Bạn có chắc chưa?"
 
-#: core/showfoto/main/showfoto.cpp:1038
+#: core/showfoto/main/showfoto.cpp:625
 #, fuzzy, kde-format
 #| msgid "Cannot delete Root Tag"
 msgid "Cannot delete \"%1\""
 msgstr "Không thể xoá thẻ gốc"
 
-#: core/showfoto/main/showfoto.cpp:1089
+#: core/showfoto/main/showfoto.cpp:809
+#, fuzzy, kde-format
+msgid "There is no dropped item to process."
+msgstr "Không có ảnh nào trong thư mục này."
+
+#: core/showfoto/main/showfoto_config.cpp:117
+#, kde-format
+msgid "Delete File"
+msgstr "Xoá tập tin"
+
+#: core/showfoto/main/showfoto_setup.cpp:42
+#, kde-format
+msgid "Open folder"
+msgstr "Mở thư mục"
+
+#: core/showfoto/main/showfoto_tools.cpp:45
 #: core/utilities/imageeditor/main/imagewindow.cpp:1398
 #: core/utilities/lighttable/lighttablewindow.cpp:1467
 #: core/utilities/lighttable/lighttablewindow.cpp:1494
@@ -16832,16 +16838,11 @@ msgstr "Không thể xoá thẻ gốc"
 msgid "Preparing slideshow. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
 
-#: core/showfoto/main/showfoto.cpp:1130
+#: core/showfoto/main/showfoto_tools.cpp:86
 #, fuzzy, kde-format
 #| msgid "Preparing slideshow. Please wait..."
 msgid "Preparing presentation. Please wait..."
 msgstr "Đang chuẩn bị chiếu ảnh. Hãy đợi..."
-
-#: core/showfoto/main/showfoto.cpp:1304
-#, fuzzy, kde-format
-msgid "There is no dropped item to process."
-msgstr "Không có ảnh nào trong thư mục này."
 
 #: core/showfoto/setup/showfotosetup.cpp:104 core/utilities/setup/setup.cpp:132
 #, kde-format

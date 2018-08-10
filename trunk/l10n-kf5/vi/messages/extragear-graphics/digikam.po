@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-07 03:33+0200\n"
+"POT-Creation-Date: 2018-08-10 03:32+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -564,7 +564,7 @@ msgstr "Ngày:"
 #: core/app/items/tooltipfiller.cpp:97
 #: core/showfoto/thumbbar/showfototooltipfiller.cpp:84
 #: core/utilities/assistants/htmlgallery/wizard/htmlimagesettingspage.cpp:200
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:369
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:371
 #: core/utilities/import/items/importtooltipfiller.cpp:82
 #: core/utilities/queuemanager/tools/transform/crop.cpp:117
 #, kde-format
@@ -613,7 +613,7 @@ msgstr "Không rõ"
 #: core/app/items/tooltipfiller.cpp:121
 #: core/libs/imageproperties/imagepropertiessidebardb.cpp:534
 #: core/showfoto/thumbbar/showfototooltipfiller.cpp:106
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1049
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1052
 #: core/utilities/import/items/importtooltipfiller.cpp:106
 #, fuzzy, kde-format
 msgctxt "width x height (megapixels Mpx)"
@@ -12538,7 +12538,7 @@ msgid "Names:"
 msgstr "Tên:"
 
 #: core/libs/template/templateviewer.cpp:157
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:354
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:356
 #: core/utilities/queuemanager/tools/transform/crop.cpp:102
 #, fuzzy, kde-format
 msgid "Position:"
@@ -29638,8 +29638,8 @@ msgid "Perspective Adjustment"
 msgstr "Điều chỉnh phối cảnh"
 
 #: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:215
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1086
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1092
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1089
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:1095
 #, kde-format
 msgid "Aspect Ratio Crop"
 msgstr "Xén tỷ lệ hình thể"
@@ -29689,23 +29689,31 @@ msgid "Custom"
 msgstr "Tự chọn"
 
 #: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:297
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:818
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:820
+#, fuzzy, kde-format
+msgid "Format DIN A"
+msgstr "Ngày ảnh"
+
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:298
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:821
 #, kde-format
 msgid "Golden Ratio"
 msgstr "Tỷ lệ vàng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:298
-#, fuzzy, kde-format
-msgid "Current Image Aspect Ratio"
-msgstr "Giữ tỷ lệ hình thể"
-
 #: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:299
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:822
 #, fuzzy, kde-format
-msgctxt "no crop mode"
+msgid "Current Aspect Ratio"
+msgstr "Duy trì tỷ lệ hình thể"
+
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:300
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:823
+#, fuzzy, kde-format
+msgctxt "no aspect ratio"
 msgid "None"
 msgstr "Không có"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:302
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:303
 #, fuzzy, kde-format
 msgid ""
 "<p>Select your constrained aspect ratio for cropping. Aspect Ratio Crop tool "
@@ -29719,10 +29727,11 @@ msgid ""
 "p><p><b>7:10</b>: 21x30cm, 42x60cm, 3.5x5\"</p><p><b>8:5</b>: common wide-"
 "screen monitor (as 1680x1050)</p><p><b>2:1</b>, <b>3:1</b>, <b>4:1</b>: "
 "common panoramic sizes</p><p><b>16:9</b>: common tv-screen (as HDTV or Full-"
-"HD)</p><p>The <b>Golden Ratio</b> is 1:1.618. A composition following this "
-"rule is considered visually harmonious but can be unadapted to print on "
-"standard photographic paper.</p><p>The <b>Current Aspect Ratio</b> takes "
-"aspect ratio from the currently opened image.</p>"
+"HD)</p><p>The paper <b>Format DIN A</b> use the ratio 1:1.414</p><p>The "
+"<b>Golden Ratio</b> is 1:1.618. A composition following this rule is "
+"considered visually harmonious but can be unadapted to print on standard "
+"photographic paper.</p><p>The <b>Current Aspect Ratio</b> takes aspect ratio "
+"from the currently opened image.</p>"
 msgstr ""
 "<p>Ở đây hãy chọn tỷ lệ hình thể bị ràng buộc để xén. Công cụ Xén Tỷ Lệ Hình "
 "Thể dùng tỷ lệ tương đối. Có nghĩa là dùng centi-mét hay insơ cũng được, và "
@@ -29736,131 +29745,131 @@ msgstr ""
 "xem là hài hoà trực quan còn có thể hủy thích nghị để in ra trên giấy ảnh "
 "chụp chuẩn."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:325
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:327
 #, fuzzy, kde-format
 msgid "Exact aspect"
 msgstr "&Hình thể tối đa"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:326
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:328
 #, fuzzy, kde-format
 msgid "Enable this option to force exact aspect ratio crop."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần vàng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:328
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:330
 #, kde-format
 msgid "Orientation:"
 msgstr "Hướng:"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:330
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:332
 #: core/utilities/metadataedit/exif/exifdevice.cpp:303
 #, kde-format
 msgid "Landscape"
 msgstr "Nằm ngang"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:331
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:333
 #: core/utilities/metadataedit/exif/exifdevice.cpp:304
 #, kde-format
 msgid "Portrait"
 msgstr "Thẳng đứng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:332
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:334
 #, fuzzy, kde-format
 msgid "Select constrained aspect ratio orientation."
 msgstr "<p>Ở đây hãy chọn hướng của tỷ lệ hình thể bị ràng buộc."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:335
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:337
 #: core/utilities/metadataedit/exif/exiflight.cpp:189
 #, kde-format
 msgid "Auto"
 msgstr "Tự động"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:336
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:338
 #, fuzzy, kde-format
 msgid "Enable this option to automatically set the orientation."
 msgstr "<p>Bật tùy chọn này để tự động đặt hướng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:340
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:342
 #, kde-format
 msgid "Custom ratio:"
 msgstr "Tỷ lệ tự chọn:"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:345
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:347
 #, fuzzy, kde-format
 msgid "Set here the desired custom aspect numerator value."
 msgstr "<p>Ở đây hãy đặt giá trị tử số hình thể tự chọn đã muốn."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:350
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:352
 #, fuzzy, kde-format
 msgid "Set here the desired custom aspect denominator value."
 msgstr "<p>Ở đây hãy đặt giá trị mẫu số hình thể tự chọn đã muốn."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:358
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:363
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:360
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:365
 #: core/utilities/queuemanager/tools/transform/crop.cpp:106
 #: core/utilities/queuemanager/tools/transform/crop.cpp:111
 #, fuzzy, kde-format
 msgid "Set here the top left selection corner position for cropping."
 msgstr "<p>Ở đây hãy đặt vị trí của góc chọn bên trái trên để xén."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:373
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:375
 #: core/utilities/queuemanager/tools/transform/crop.cpp:121
 #, fuzzy, kde-format
 msgid "Set here the width selection for cropping."
 msgstr "<p>Ở đây hãy đặt độ rộng chọn để xén."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:381
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:383
 #, fuzzy, kde-format
 msgid "Set width position to center."
 msgstr "<p>Đặt vị trí độ rộng thành trung tâm."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:384
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:386
 #: core/utilities/queuemanager/tools/transform/crop.cpp:126
 #, fuzzy, kde-format
 msgid "Set here the height selection for cropping."
 msgstr "<p>Ở đây hãy đặt độ cao chọn để xén."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:392
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:394
 #, fuzzy, kde-format
 msgid "Set height position to center."
 msgstr "<p>Đặt vị trí độ cao thành trung tâm."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:418
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:420
 #, fuzzy, kde-format
 msgid "Crop Settings"
 msgstr "Thiết lập máy ảnh"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:425
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:427
 #, fuzzy, kde-format
 msgid "Form:"
 msgstr "Ngày ảnh"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:427
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:429
 #, kde-format
 msgid "Rules of Thirds"
 msgstr "Quy tắc phần ba"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:428
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:430
 #, fuzzy, kde-format
 msgid "Diagonal Method"
 msgstr "Tác giả gốc"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:429
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:431
 #, kde-format
 msgid "Harmonious Triangles"
 msgstr "Tam giác hài hoà"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:430
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:432
 #, kde-format
 msgid "Golden Mean"
 msgstr "Trung dung"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:431
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:433
 #, fuzzy, kde-format
 msgctxt "no geometric form"
 msgid "None"
 msgstr "Không có"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:434
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:436
 #, fuzzy, kde-format
 msgid ""
 "With this option, you can display guide lines to help compose your "
@@ -29868,102 +29877,91 @@ msgid ""
 msgstr ""
 "<p>Dùng tùy chọn này, bạn có thể hiển thị nét dẫn giúp đỡ cấu tạo ảnh chụp."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:437
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:439
 #, kde-format
 msgid "Golden sections"
 msgstr "Phần vàng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:438
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:440
 #, fuzzy, kde-format
 msgid "Enable this option to show golden sections."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần vàng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:440
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:442
 #, kde-format
 msgid "Golden spiral sections"
 msgstr "Phần xoắn ốc vàng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:441
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:443
 #, fuzzy, kde-format
 msgid "Enable this option to show golden spiral sections."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các phần xoắn ốc vàng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:443
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:445
 #, kde-format
 msgid "Golden spiral"
 msgstr "Xoắn ốc vàng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:444
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:446
 #, fuzzy, kde-format
 msgid "Enable this option to show a golden spiral guide."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị nét dẫn xoắn ốc vàng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:446
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:448
 #, kde-format
 msgid "Golden triangles"
 msgstr "Tam giác vàng"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:447
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:449
 #, fuzzy, kde-format
 msgid "Enable this option to show golden triangles."
 msgstr "<p>Hãy bật tùy chọn này để hiển thị các tam giác vàng."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:449
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:451
 #, kde-format
 msgid "Flip horizontally"
 msgstr "Lật ngang"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:450
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:452
 #, fuzzy, kde-format
 msgid "Enable this option to flip the guidelines horizontally."
 msgstr "<p>Hãy bật tùy chọn này để lật các nét dẫn theo chiều dọc."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:452
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:454
 #, kde-format
 msgid "Flip vertically"
 msgstr "Lật dọc"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:453
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:455
 #, fuzzy, kde-format
 msgid "Enable this option to flip the guidelines vertically."
 msgstr "<p>Hãy bật tùy chọn này để lật các nét dẫn theo chiều dọc."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:455
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:457
 #, kde-format
 msgid "Color and width:"
 msgstr "Màu và độ rộng:"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:461
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:463
 #, fuzzy, kde-format
 msgid "Set here the color used to draw composition guides."
 msgstr "<p>Ở đây hãy đặt màu dùng để vẽ nét dẫn cấu tạo."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:462
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:464
 #, fuzzy, kde-format
 msgid "Set here the width in pixels used to draw composition guides."
 msgstr "<p>Ở đây hãy đặt độ rộng (theo điểm ảnh) dùng để vẽ nét dẫn cấu tạo."
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:481
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:483
 #, fuzzy, kde-format
 msgid "Composition Guides"
 msgstr "Nét dẫn cấu tạo :"
 
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:788
+#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:790
 #, fuzzy, kde-format
 msgctxt "custom ratio crop settings"
 msgid "Custom"
 msgstr "Tự chọn"
-
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:819
-#, fuzzy, kde-format
-msgid "Current aspect ratio"
-msgstr "Duy trì tỷ lệ hình thể"
-
-#: core/utilities/imageeditor/tools/transform/ratiocroptool.cpp:820
-#, fuzzy, kde-format
-msgctxt "no aspect ratio"
-msgid "None"
-msgstr "Không có"
 
 #: core/utilities/imageeditor/tools/transform/resizetool.cpp:171
 #, kde-format
@@ -41955,6 +41953,15 @@ msgstr "Thoát khỏi chế độ toàn màn hình"
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "Lục:"
+
+#, fuzzy
+#~ msgid "Current Image Aspect Ratio"
+#~ msgstr "Giữ tỷ lệ hình thể"
+
+#, fuzzy
+#~ msgctxt "no crop mode"
+#~ msgid "None"
+#~ msgstr "Không có"
 
 #, fuzzy
 #~ msgctxt "@item:inlistbox Noise Reduction"

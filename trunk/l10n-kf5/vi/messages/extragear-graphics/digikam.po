@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-21 03:38+0200\n"
+"POT-Creation-Date: 2018-10-22 03:39+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1721,7 +1721,7 @@ msgid "Normal"
 msgstr "Chuẩn"
 
 #: core/app/main/digikamapp_setup.cpp:912
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:660
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:497
 #, kde-format
 msgid "Flipped Horizontally"
 msgstr "Lật ngang"
@@ -1732,7 +1732,7 @@ msgid "Rotated Upside Down"
 msgstr "Xoay từ trên xuống"
 
 #: core/app/main/digikamapp_setup.cpp:916
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:664
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:501
 #, kde-format
 msgid "Flipped Vertically"
 msgstr "Lật dọc"
@@ -1743,7 +1743,7 @@ msgid "Rotated Right / Horiz. Flipped"
 msgstr "Xoay phải/Lật ngang"
 
 #: core/app/main/digikamapp_setup.cpp:920
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:672
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:509
 #, fuzzy, kde-format
 msgid "Rotated Right"
 msgstr "Xoay phải"
@@ -1754,7 +1754,7 @@ msgid "Rotated Right / Vert. Flipped"
 msgstr "Xoay phải/Lật dọc"
 
 #: core/app/main/digikamapp_setup.cpp:924
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:668
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:505
 #, fuzzy, kde-format
 msgid "Rotated Left"
 msgstr "Xoay trái"
@@ -1925,8 +1925,8 @@ msgid "Import"
 msgstr "Nhập"
 
 #: core/app/main/main.cpp:84 core/app/views/welcomepageview.cpp:207
-#: core/libs/album/albummanager.cpp:2969 core/libs/album/albummanager.cpp:2999
-#: core/libs/album/albummanager.cpp:3042 core/libs/album/albummanager.cpp:3072
+#: core/libs/album/albummanager.cpp:2988 core/libs/album/albummanager.cpp:3019
+#: core/libs/album/albummanager.cpp:3062 core/libs/album/albummanager.cpp:3092
 #, kde-format
 msgid "digiKam"
 msgstr "digiKam"
@@ -3783,74 +3783,74 @@ msgstr "Tập hợp"
 msgid "Searches"
 msgstr "Việc tìm kiếm"
 
-#: core/libs/album/albummanager.cpp:1929
+#: core/libs/album/albummanager.cpp:1945
 #, kde-format
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1937
+#: core/libs/album/albummanager.cpp:1953
 #, kde-format
 msgid "No album for collection location: Internal error"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1953
+#: core/libs/album/albummanager.cpp:1969
 #, kde-format
 msgid "No parent found for album."
 msgstr "Không tìm thấy điều mẹ cho tập ảnh."
 
-#: core/libs/album/albummanager.cpp:1960
+#: core/libs/album/albummanager.cpp:1976
 #, kde-format
 msgid "Album name cannot be empty."
 msgstr "Không cho phép tên tập ảnh rỗng."
 
-#: core/libs/album/albummanager.cpp:1966
+#: core/libs/album/albummanager.cpp:1982
 #, kde-format
 msgid "Album name cannot contain '/'."
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: core/libs/album/albummanager.cpp:1972
+#: core/libs/album/albummanager.cpp:1988
 #, kde-format
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:1986
+#: core/libs/album/albummanager.cpp:2002
 #, kde-format
 msgid "An existing album has the same name."
 msgstr "Một tập ảnh cùng tên đã có."
 
-#: core/libs/album/albummanager.cpp:2002
+#: core/libs/album/albummanager.cpp:2018
 #, fuzzy, kde-format
 msgid "Failed to create directory '%1'"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: core/libs/album/albummanager.cpp:2011
+#: core/libs/album/albummanager.cpp:2027
 #, kde-format
 msgid "Failed to add album to database"
 msgstr "Lỗi thêm tập ảnh vào cơ sở dữ liệu"
 
-#: core/libs/album/albummanager.cpp:2038 core/libs/album/albummanager.cpp:2136
-#: core/libs/album/albummanager.cpp:2240 core/libs/album/albummanager.cpp:2307
-#: core/libs/album/albummanager.cpp:2345 core/libs/album/albummanager.cpp:2427
+#: core/libs/album/albummanager.cpp:2054 core/libs/album/albummanager.cpp:2151
+#: core/libs/album/albummanager.cpp:2255 core/libs/album/albummanager.cpp:2322
+#: core/libs/album/albummanager.cpp:2360 core/libs/album/albummanager.cpp:2442
 #, kde-format
 msgid "No such album"
 msgstr "Không có tập ảnh như vậy"
 
-#: core/libs/album/albummanager.cpp:2044
+#: core/libs/album/albummanager.cpp:2060
 #, kde-format
 msgid "Cannot rename root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: core/libs/album/albummanager.cpp:2050
+#: core/libs/album/albummanager.cpp:2066
 #, fuzzy, kde-format
 msgid "Cannot rename album root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: core/libs/album/albummanager.cpp:2056
+#: core/libs/album/albummanager.cpp:2072
 #, kde-format
 msgid "Album name cannot contain '/'"
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: core/libs/album/albummanager.cpp:2063
+#: core/libs/album/albummanager.cpp:2079
 #, fuzzy, kde-format
 msgid ""
 "Another album with the same name already exists.\n"
@@ -3859,52 +3859,52 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/albummanager.cpp:2087
+#: core/libs/album/albummanager.cpp:2103
 #, kde-format
 msgid "Failed to rename Album"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: core/libs/album/albummanager.cpp:2142
+#: core/libs/album/albummanager.cpp:2157
 #, kde-format
 msgid "Cannot edit root album"
 msgstr "Không thể sửa đổi tập ảnh gốc"
 
-#: core/libs/album/albummanager.cpp:2168
+#: core/libs/album/albummanager.cpp:2183
 #, kde-format
 msgid "No parent found for tag"
 msgstr "Không tìm thấy điều mẹ cho thẻ"
 
-#: core/libs/album/albummanager.cpp:2175
+#: core/libs/album/albummanager.cpp:2190
 #, kde-format
 msgid "Tag name cannot be empty"
 msgstr "Không cho phép tên thẻ rỗng."
 
-#: core/libs/album/albummanager.cpp:2181 core/libs/album/albummanager.cpp:2319
+#: core/libs/album/albummanager.cpp:2196 core/libs/album/albummanager.cpp:2334
 #, kde-format
 msgid "Tag name cannot contain '/'"
 msgstr "Không cho phép tên thẻ chứa « / »"
 
-#: core/libs/album/albummanager.cpp:2188 core/libs/tags/tageditdlg.cpp:471
+#: core/libs/album/albummanager.cpp:2203 core/libs/tags/tageditdlg.cpp:471
 #, kde-format
 msgid "Tag name already exists"
 msgstr "Tên thẻ đã có."
 
-#: core/libs/album/albummanager.cpp:2197
+#: core/libs/album/albummanager.cpp:2212
 #, kde-format
 msgid "Failed to add tag to database"
 msgstr "Lỗi thêm thẻ vào cơ sở dữ liệu"
 
-#: core/libs/album/albummanager.cpp:2246
+#: core/libs/album/albummanager.cpp:2261
 #, kde-format
 msgid "Cannot delete Root Tag"
 msgstr "Không thể xoá thẻ gốc"
 
-#: core/libs/album/albummanager.cpp:2313 core/libs/album/albummanager.cpp:2522
+#: core/libs/album/albummanager.cpp:2328 core/libs/album/albummanager.cpp:2537
 #, kde-format
 msgid "Cannot edit root tag"
 msgstr "Không thể sửa đổi thẻ gốc"
 
-#: core/libs/album/albummanager.cpp:2326
+#: core/libs/album/albummanager.cpp:2341
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3913,17 +3913,17 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/albummanager.cpp:2351
+#: core/libs/album/albummanager.cpp:2366
 #, kde-format
 msgid "Attempt to move TAlbum to nowhere"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:2357
+#: core/libs/album/albummanager.cpp:2372
 #, kde-format
 msgid "Cannot move root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: core/libs/album/albummanager.cpp:2365
+#: core/libs/album/albummanager.cpp:2380
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3932,28 +3932,28 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/albummanager.cpp:2433
+#: core/libs/album/albummanager.cpp:2448
 #, fuzzy, kde-format
 #| msgid "Cannot move root tag"
 msgid "Cannot merge root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: core/libs/album/albummanager.cpp:2439
+#: core/libs/album/albummanager.cpp:2454
 #, kde-format
 msgid "Only a tag without children can be merged!"
 msgstr ""
 
-#: core/libs/album/albummanager.cpp:2447
+#: core/libs/album/albummanager.cpp:2462
 #, fuzzy, kde-format
 msgid "Do you want to merge tag '%1' into tag '%2'?"
 msgstr "Siêu dữ liệu"
 
-#: core/libs/album/albummanager.cpp:2516
+#: core/libs/album/albummanager.cpp:2531
 #, kde-format
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
-#: core/libs/album/albummanager.cpp:3458
+#: core/libs/album/albummanager.cpp:3491
 #, fuzzy, kde-format
 msgid ""
 "This operation can take a long time in the background.\n"
@@ -5854,7 +5854,7 @@ msgstr "Thông tin..."
 #: core/libs/imageproperties/imagepropertiessidebar.cpp:253
 #: core/libs/imageproperties/imagepropertiessidebardb.cpp:528
 #: core/libs/imageproperties/imagepropertiessidebardb.cpp:542
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:674
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:511
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:354
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:389
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:421
@@ -7736,12 +7736,12 @@ msgstr "<p>Ở đây hãy đặt giá trị độ bão hoà."
 msgid "Info..."
 msgstr "Thông tin..."
 
-#: core/libs/dimg/filters/icc/icctransformfilter.cpp:112
+#: core/libs/dimg/filters/icc/icctransformfilter.cpp:113
 #, fuzzy, kde-format
 msgid "Input color profile \"%1\" not available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: core/libs/dimg/filters/icc/icctransformfilter.cpp:116
+#: core/libs/dimg/filters/icc/icctransformfilter.cpp:117
 #, fuzzy, kde-format
 msgid "Output color profile \"%1\" not available"
 msgstr "Không có sẵn hồ sơ..."
@@ -10759,78 +10759,78 @@ msgstr ""
 msgid "Image %1 could not be renamed"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:656
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:493
 #, kde-format
 msgid "Unspecified"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:658
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:495
 #, fuzzy, kde-format
 msgctxt "Rotation of an unrotated image"
 msgid "Normal"
 msgstr "Chuẩn"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:662
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:499
 #, fuzzy, kde-format
 msgid "Rotated by 180 Degrees"
 msgstr "Xoay 180°"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:666
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:503
 #, fuzzy, kde-format
 msgid "Flipped Horizontally and Rotated Left"
 msgstr "Lật ngang"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:670
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:507
 #, fuzzy, kde-format
 msgid "Flipped Vertically and Rotated Left"
 msgstr "Lật dọc"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:710
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:547
 #, fuzzy, kde-format
 msgctxt "Temperature in Kelvin"
 msgid "%1 K"
 msgstr "%1 bpp"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:733
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:746
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:570
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:583
 #, fuzzy, kde-format
 msgctxt "For use in longitude coordinate"
 msgid "West"
 msgstr "Đặt lại"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:733
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:746
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:570
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:583
 #, fuzzy, kde-format
 msgctxt "For use in longitude coordinate"
 msgid "East"
 msgstr "&Cuối"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:763
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:776
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:600
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:613
 #, fuzzy, kde-format
 msgctxt "For use in latitude coordinate"
 msgid "North"
 msgstr "Cả hai"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:763
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:776
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:600
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:613
 #, fuzzy, kde-format
 msgctxt "For use in latitude coordinate"
 msgid "South"
 msgstr "Cả hai"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:785
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:622
 #, fuzzy, no-c-format, kde-format
 msgctxt "Height in meters"
 msgid "%1m"
 msgstr "%1 bpp"
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:927
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:765
 #, kde-format
 msgid "Flash has been fired"
 msgstr ""
 
-#: core/libs/metadataengine/dmetadata/dmetadata.cpp:928
+#: core/libs/metadataengine/dmetadata/dmetadata_generic.cpp:766
 #, kde-format
 msgid "Flash with red-eye reduction mode"
 msgstr ""
@@ -19045,14 +19045,14 @@ msgstr "Bộ sửa ảnh"
 msgid "Cancel current operation"
 msgstr "Thông tin máy ảnh"
 
-#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:326
+#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:327
 #, fuzzy, kde-format
 #| msgid "unknown"
 msgctxt "average scene luminance value unknown"
 msgid "unknown"
 msgstr "không rõ"
 
-#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:867
+#: core/utilities/assistants/expoblending/manager/expoblendingthread.cpp:868
 #, kde-format
 msgid ""
 "Cannot run %1:\n"
@@ -20043,17 +20043,17 @@ msgstr "Lỗi kết nối"
 msgid "Unknown input file in the project file: <filename>%1</filename>"
 msgstr "Lỗi tải lên tập tin « %1 »."
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:173
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:174
 #, kde-format
 msgid "Input image cannot be loaded for preview generation."
 msgstr ""
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:216
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:217
 #, fuzzy, kde-format
 msgid "Tiff image creation failed."
 msgstr "Hiện ngà&y tạo tập tin"
 
-#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:233
+#: core/utilities/assistants/panorama/tasks/preprocesstask.cpp:234
 #, fuzzy, kde-format
 msgid "Raw file conversion failed."
 msgstr "Miền màu"
@@ -36834,7 +36834,7 @@ msgstr "Tiến trình liệt kê các thư mục đã chạy xong."
 msgid "All batch queues finished"
 msgstr "Tiến trình liệt kê các thư mục đã chạy xong."
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:552
+#: core/utilities/queuemanager/manager/batchtool.cpp:553
 #, fuzzy, kde-format
 msgid "No setting available"
 msgstr "Không có sẵn tùy chọn"

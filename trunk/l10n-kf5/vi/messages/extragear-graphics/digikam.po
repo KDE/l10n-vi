@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-23 03:47+0200\n"
+"POT-Creation-Date: 2018-10-24 03:45+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1925,10 +1925,10 @@ msgid "Import"
 msgstr "Nhập"
 
 #: core/app/main/main.cpp:84 core/app/views/welcomepageview.cpp:207
-#: core/libs/album/manager/albummanager.cpp:2955
-#: core/libs/album/manager/albummanager.cpp:2986
-#: core/libs/album/manager/albummanager.cpp:3029
-#: core/libs/album/manager/albummanager_dalbum.cpp:82
+#: core/libs/album/manager/albummanager_album.cpp:127
+#: core/libs/album/manager/albummanager_dalbum.cpp:102
+#: core/libs/album/manager/albummanager_falbum.cpp:69
+#: core/libs/album/manager/albummanager_talbum.cpp:873
 #, kde-format
 msgid "digiKam"
 msgstr "digiKam"
@@ -1988,34 +1988,34 @@ msgstr ""
 msgid "LibGphoto2"
 msgstr "ảnh"
 
+#: core/app/utils/componentsinfo.cpp:80 core/app/utils/componentsinfo.cpp:86
+#: core/app/utils/componentsinfo.cpp:92 core/app/utils/componentsinfo.cpp:102
+#: core/app/utils/componentsinfo.cpp:108 core/app/utils/componentsinfo.cpp:114
+#: core/app/utils/componentsinfo.cpp:120 core/app/utils/componentsinfo.cpp:126
+#: core/app/utils/componentsinfo.cpp:138
+#: core/app/views/tableview/tableview_column_geo.cpp:151
+#: core/libs/dialogs/libsinfodlg.cpp:108 core/libs/dialogs/libsinfodlg.cpp:110
+#: core/libs/dialogs/libsinfodlg.cpp:112 core/libs/dialogs/libsinfodlg.cpp:114
+#: core/libs/dialogs/libsinfodlg.cpp:116 core/libs/dialogs/libsinfodlg.cpp:118
+#: core/libs/dialogs/libsinfodlg.cpp:183
+#: core/libs/imageproperties/cameraitempropertiestab.cpp:414
+#: core/libs/imageproperties/cameraitempropertiestab.cpp:429
+#: core/libs/imageproperties/cameraitempropertiestab.cpp:515
+#: core/libs/imageproperties/imagepropertiescolorstab.cpp:684
+#: core/utilities/setup/setupmisc.cpp:301
+#, kde-format
+msgid "No"
+msgstr "Không"
+
 #: core/app/utils/componentsinfo.cpp:80
 #, fuzzy, kde-format
 msgid "LibGphoto2 support"
 msgstr "ảnh"
 
-#: core/app/utils/componentsinfo.cpp:80 core/app/utils/componentsinfo.cpp:86
-#: core/app/utils/componentsinfo.cpp:92 core/app/utils/componentsinfo.cpp:102
-#: core/app/utils/componentsinfo.cpp:108 core/app/utils/componentsinfo.cpp:114
-#: core/app/utils/componentsinfo.cpp:120 core/app/utils/componentsinfo.cpp:126
-#: core/utilities/import/backend/gpcamera.cpp:1407
-#: core/utilities/import/backend/gpcamera.cpp:1408
-#: core/utilities/import/backend/gpcamera.cpp:1409
-#: core/utilities/import/backend/gpcamera.cpp:1410
-#: core/utilities/import/backend/gpcamera.cpp:1411
-#: core/utilities/import/backend/gpcamera.cpp:1412
-#: core/utilities/import/backend/umscamera.cpp:602
-#: core/utilities/import/backend/umscamera.cpp:603
-#: core/utilities/import/backend/umscamera.cpp:604
-#: core/utilities/import/backend/umscamera.cpp:605
-#: core/utilities/import/backend/umscamera.cpp:606
-#: core/utilities/import/backend/umscamera.cpp:607
-#, kde-format
-msgid "no"
-msgstr "không"
-
 #: core/app/utils/componentsinfo.cpp:84 core/app/utils/componentsinfo.cpp:90
 #: core/app/utils/componentsinfo.cpp:96 core/app/utils/componentsinfo.cpp:106
-#: core/app/utils/componentsinfo.cpp:138
+#: core/app/utils/componentsinfo.cpp:112 core/app/utils/componentsinfo.cpp:118
+#: core/app/utils/componentsinfo.cpp:124 core/app/utils/componentsinfo.cpp:138
 #: core/app/views/tableview/tableview_column_geo.cpp:151
 #: core/libs/database/utils/dbstatdlg.cpp:90
 #: core/libs/dialogs/libsinfodlg.cpp:108 core/libs/dialogs/libsinfodlg.cpp:110
@@ -2079,24 +2079,6 @@ msgstr "Tuyến"
 msgid "Panorama support"
 msgstr "Hỗ trợ siêu dữ liệu RAW"
 
-#: core/app/utils/componentsinfo.cpp:112 core/app/utils/componentsinfo.cpp:118
-#: core/app/utils/componentsinfo.cpp:124
-#: core/utilities/import/backend/gpcamera.cpp:1407
-#: core/utilities/import/backend/gpcamera.cpp:1408
-#: core/utilities/import/backend/gpcamera.cpp:1409
-#: core/utilities/import/backend/gpcamera.cpp:1410
-#: core/utilities/import/backend/gpcamera.cpp:1411
-#: core/utilities/import/backend/gpcamera.cpp:1412
-#: core/utilities/import/backend/umscamera.cpp:602
-#: core/utilities/import/backend/umscamera.cpp:603
-#: core/utilities/import/backend/umscamera.cpp:604
-#: core/utilities/import/backend/umscamera.cpp:605
-#: core/utilities/import/backend/umscamera.cpp:606
-#: core/utilities/import/backend/umscamera.cpp:607
-#, kde-format
-msgid "yes"
-msgstr "có"
-
 #: core/app/utils/componentsinfo.cpp:118 core/app/utils/componentsinfo.cpp:120
 #, fuzzy, kde-format
 #| msgid "Linear"
@@ -2119,21 +2101,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Database backend"
 msgstr "Tạo thư mục ?"
-
-#: core/app/utils/componentsinfo.cpp:138
-#: core/app/views/tableview/tableview_column_geo.cpp:151
-#: core/libs/dialogs/libsinfodlg.cpp:108 core/libs/dialogs/libsinfodlg.cpp:110
-#: core/libs/dialogs/libsinfodlg.cpp:112 core/libs/dialogs/libsinfodlg.cpp:114
-#: core/libs/dialogs/libsinfodlg.cpp:116 core/libs/dialogs/libsinfodlg.cpp:118
-#: core/libs/dialogs/libsinfodlg.cpp:183
-#: core/libs/imageproperties/cameraitempropertiestab.cpp:414
-#: core/libs/imageproperties/cameraitempropertiestab.cpp:429
-#: core/libs/imageproperties/cameraitempropertiestab.cpp:515
-#: core/libs/imageproperties/imagepropertiescolorstab.cpp:684
-#: core/utilities/setup/setupmisc.cpp:301
-#, kde-format
-msgid "No"
-msgstr "Không"
 
 #: core/app/utils/componentsinfo.cpp:139
 #: core/libs/database/utils/dbstatdlg.cpp:90
@@ -2565,7 +2532,7 @@ msgstr "Thoát khỏi chế độ toàn màn hình"
 
 #: core/app/views/leftsidebarwidgets.cpp:171
 #: core/libs/album/engine/album.cpp:458
-#: core/libs/album/manager/albummanager.cpp:818
+#: core/libs/album/manager/albummanager.cpp:158
 #: core/libs/album/treeview/albumselectiontreeview.cpp:199
 #: core/libs/album/widgets/albumselectors.cpp:131
 #: core/libs/album/widgets/albumselecttabs.cpp:191
@@ -2602,7 +2569,7 @@ msgstr "Tập ảnh tôi"
 
 #: core/app/views/leftsidebarwidgets.cpp:382
 #: core/libs/album/engine/album.cpp:522
-#: core/libs/album/manager/albummanager.cpp:821
+#: core/libs/album/manager/albummanager.cpp:161
 #: core/libs/album/widgets/albumselectors.cpp:134
 #: core/libs/album/widgets/albumselecttabs.cpp:192
 #: core/libs/database/utils/dbstatdlg.cpp:74
@@ -3523,118 +3490,15 @@ msgstr "Thay tên tập ảnh (%1)"
 msgid "Enter new album name:"
 msgstr "Hãy nhập vào tên tập ảnh mới:"
 
-#: core/libs/album/manager/albummanager.cpp:166
+#: core/libs/album/manager/albummanager.cpp:164
+#: core/libs/album/widgets/albumselecttabs.cpp:193
+#: core/libs/models/albummodel.cpp:147
+#: core/utilities/searchwindow/editablesearchtreeview.cpp:81
 #, kde-format
-msgid ""
-"Failed to backup the existing database file (\"%1\"). Refusing to replace "
-"file without backup, using the existing file."
-msgstr ""
+msgid "Searches"
+msgstr "Việc tìm kiếm"
 
-#: core/libs/album/manager/albummanager.cpp:183
-#, fuzzy, kde-format
-msgid ""
-"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
-"Starting with an empty database."
-msgstr ""
-"Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
-"kiểm tra lại tập tin này có khả năng được sao chép."
-
-#: core/libs/album/manager/albummanager.cpp:217
-#, fuzzy, kde-format
-msgid "Database Folder"
-msgstr "Tạo thư mục ?"
-
-#: core/libs/album/manager/albummanager.cpp:218
-#, kde-format
-msgid ""
-"<p>You have chosen the folder \"%1\" as the place to store the database. A "
-"database file from an older version of digiKam is found in this folder.</p> "
-"<p>Would you like to upgrade the old database file - confirming that this "
-"database file was indeed created for the pictures located in the folder "
-"\"%2\" - or ignore the old file and start with a new database?</p> "
-msgstr ""
-
-#: core/libs/album/manager/albummanager.cpp:228
-#: core/libs/album/manager/albummanager.cpp:290
-#: core/libs/album/manager/albummanager.cpp:312
-#, fuzzy, kde-format
-msgid "Upgrade Database"
-msgstr "Tạo tập ảnh mới"
-
-#: core/libs/album/manager/albummanager.cpp:230
-#: core/libs/album/manager/albummanager.cpp:292
-#: core/libs/album/manager/albummanager.cpp:314
-#: core/libs/album/manager/albummanager.cpp:361
-#, fuzzy, kde-format
-msgid "Create New Database"
-msgstr "Tạo tập ảnh mới"
-
-#: core/libs/album/manager/albummanager.cpp:281
-#: core/libs/album/manager/albummanager.cpp:304
-#: core/libs/album/manager/albummanager.cpp:353
-#: core/libs/album/manager/albummanager.cpp:385
-#, fuzzy, kde-format
-msgid "New database folder"
-msgstr "Đang đọc cơ sở dữ liệu..."
-
-#: core/libs/album/manager/albummanager.cpp:282
-#, kde-format
-msgid ""
-"<p>You have chosen the folder \"%1\" as the new place to store the database. "
-"A database file from an older version of digiKam is found in this folder.</"
-"p> <p>Would you like to upgrade the old database file, start with a new "
-"database, or copy the current database to this location and continue using "
-"it?</p> "
-msgstr ""
-
-#: core/libs/album/manager/albummanager.cpp:294
-#: core/libs/album/manager/albummanager.cpp:363
-#: core/libs/album/manager/albummanager.cpp:394
-#, fuzzy, kde-format
-msgid "Copy Current Database"
-msgstr "Đang đọc cơ sở dữ liệu..."
-
-#: core/libs/album/manager/albummanager.cpp:305
-#, kde-format
-msgid ""
-"<p>You have chosen the folder \"%1\" as the new place to store the database. "
-"A database file from an older version of digiKam is found in this folder.</"
-"p> <p>Would you like to upgrade the old database file or start with a new "
-"database?</p>"
-msgstr ""
-
-#: core/libs/album/manager/albummanager.cpp:339
-#, fuzzy, kde-format
-msgid ""
-"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
-"Trying to upgrade old databases."
-msgstr ""
-"Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
-"kiểm tra lại tập tin này có khả năng được sao chép."
-
-#: core/libs/album/manager/albummanager.cpp:354
-#, kde-format
-msgid ""
-"<p>You have chosen the folder \"%1\" as the new place to store the database."
-"</p><p>Would you like to copy the current database to this location and "
-"continue using it, or start with a new database?</p> "
-msgstr ""
-
-#: core/libs/album/manager/albummanager.cpp:386
-#, kde-format
-msgid ""
-"<p>You have chosen the folder \"%1\" as the new place to store the database. "
-"There is already a database file in this location.</p> <p>Would you like to "
-"use this existing file as the new database, or remove it and copy the "
-"current database to this place?</p> "
-msgstr ""
-
-#: core/libs/album/manager/albummanager.cpp:396
-#, fuzzy, kde-format
-msgid "Use Existing File"
-msgstr "Dùng hồ sơ sRGB có sẵn"
-
-#: core/libs/album/manager/albummanager.cpp:498
+#: core/libs/album/manager/albummanager_database.cpp:102
 #, fuzzy, kde-format
 msgid ""
 "<p><b>An error occurred during the internal server start.</b></p>Details:\n"
@@ -3643,8 +3507,8 @@ msgstr ""
 "Gặp lỗi khi mở hậu phương cơ sở dữ liệu.\n"
 " "
 
-#: core/libs/album/manager/albummanager.cpp:514
-#: core/libs/album/manager/albummanager.cpp:546
+#: core/libs/album/manager/albummanager_database.cpp:118
+#: core/libs/album/manager/albummanager_database.cpp:150
 #, fuzzy, kde-format
 msgid ""
 "<p>Failed to open the database. </p><p>You cannot use digiKam without a "
@@ -3656,7 +3520,7 @@ msgstr ""
 "p><p>Không có cơ sở dữ liệu hoạt động được thì không thể sử dụng digiKam. "
 "Hãy kiểm tra lại thiết lập cơ sở dữ liệu trong trình đơn cấu hình.</p></qt>"
 
-#: core/libs/album/manager/albummanager.cpp:555
+#: core/libs/album/manager/albummanager_database.cpp:159
 #, fuzzy, kde-format
 msgid ""
 "<p>Failed to open the database. Error message from database:</p><p><b>%1</"
@@ -3668,7 +3532,7 @@ msgstr ""
 "p><p>Không có cơ sở dữ liệu hoạt động được thì không thể sử dụng digiKam. "
 "Hãy kiểm tra lại thiết lập cơ sở dữ liệu trong trình đơn cấu hình.</p></qt>"
 
-#: core/libs/album/manager/albummanager.cpp:628
+#: core/libs/album/manager/albummanager_database.cpp:232
 #, fuzzy, kde-format
 msgid ""
 "Your locale has changed since this album was last opened.\n"
@@ -3686,7 +3550,7 @@ msgstr ""
 "nhấn vào « Có » để làm việc với tập ảnh này. Không thì nhấn vào « Không » và "
 "sửa chữa thiết lập miền địa phương trước khi khởi chạy lại trình digiKam."
 
-#: core/libs/album/manager/albummanager.cpp:670
+#: core/libs/album/manager/albummanager_database.cpp:274
 #, kde-format
 msgid ""
 "<p>The collection </p><p><b>%1</b><br/>(%2)</p><p> is currently not found on "
@@ -3694,7 +3558,7 @@ msgid ""
 "situation:</p>"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:688
+#: core/libs/album/manager/albummanager_database.cpp:292
 #, kde-format
 msgid ""
 "<p>The collection is still available, but the identifier changed.<br/>This "
@@ -3702,104 +3566,207 @@ msgid ""
 "file system settings.<br/>The collection is now located at this place:</p>"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:707
+#: core/libs/album/manager/albummanager_database.cpp:311
 #, kde-format
 msgid ""
 "The collection is located on a storage device which is not always attached. "
 "Mark the collection as a removable collection."
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:714
+#: core/libs/album/manager/albummanager_database.cpp:318
 #, kde-format
 msgid ""
 "Take no action now. I would like to solve the problem later using the setup "
 "dialog"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:728
+#: core/libs/album/manager/albummanager_database.cpp:332
 #, fuzzy, kde-format
 msgid "Collection not found"
 msgstr "Tập hợp"
 
-#: core/libs/album/manager/albummanager.cpp:824
-#: core/libs/album/widgets/albumselecttabs.cpp:193
-#: core/libs/models/albummodel.cpp:147
-#: core/utilities/searchwindow/editablesearchtreeview.cpp:81
-#, kde-format
-msgid "Searches"
-msgstr "Việc tìm kiếm"
+#: core/libs/album/manager/albummanager_database.cpp:428
+#, fuzzy, kde-format
+msgid "Database Folder"
+msgstr "Tạo thư mục ?"
 
-#: core/libs/album/manager/albummanager.cpp:1917
+#: core/libs/album/manager/albummanager_database.cpp:429
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the place to store the database. A "
+"database file from an older version of digiKam is found in this folder.</p> "
+"<p>Would you like to upgrade the old database file - confirming that this "
+"database file was indeed created for the pictures located in the folder "
+"\"%2\" - or ignore the old file and start with a new database?</p> "
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:439
+#: core/libs/album/manager/albummanager_database.cpp:501
+#: core/libs/album/manager/albummanager_database.cpp:523
+#, fuzzy, kde-format
+msgid "Upgrade Database"
+msgstr "Tạo tập ảnh mới"
+
+#: core/libs/album/manager/albummanager_database.cpp:441
+#: core/libs/album/manager/albummanager_database.cpp:503
+#: core/libs/album/manager/albummanager_database.cpp:525
+#: core/libs/album/manager/albummanager_database.cpp:572
+#, fuzzy, kde-format
+msgid "Create New Database"
+msgstr "Tạo tập ảnh mới"
+
+#: core/libs/album/manager/albummanager_database.cpp:492
+#: core/libs/album/manager/albummanager_database.cpp:515
+#: core/libs/album/manager/albummanager_database.cpp:564
+#: core/libs/album/manager/albummanager_database.cpp:596
+#, fuzzy, kde-format
+msgid "New database folder"
+msgstr "Đang đọc cơ sở dữ liệu..."
+
+#: core/libs/album/manager/albummanager_database.cpp:493
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database. "
+"A database file from an older version of digiKam is found in this folder.</"
+"p> <p>Would you like to upgrade the old database file, start with a new "
+"database, or copy the current database to this location and continue using "
+"it?</p> "
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:505
+#: core/libs/album/manager/albummanager_database.cpp:574
+#: core/libs/album/manager/albummanager_database.cpp:605
+#, fuzzy, kde-format
+msgid "Copy Current Database"
+msgstr "Đang đọc cơ sở dữ liệu..."
+
+#: core/libs/album/manager/albummanager_database.cpp:516
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database. "
+"A database file from an older version of digiKam is found in this folder.</"
+"p> <p>Would you like to upgrade the old database file or start with a new "
+"database?</p>"
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:550
+#, fuzzy, kde-format
+msgid ""
+"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
+"Trying to upgrade old databases."
+msgstr ""
+"Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
+"kiểm tra lại tập tin này có khả năng được sao chép."
+
+#: core/libs/album/manager/albummanager_database.cpp:565
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database."
+"</p><p>Would you like to copy the current database to this location and "
+"continue using it, or start with a new database?</p> "
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:597
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database. "
+"There is already a database file in this location.</p> <p>Would you like to "
+"use this existing file as the new database, or remove it and copy the "
+"current database to this place?</p> "
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:607
+#, fuzzy, kde-format
+msgid "Use Existing File"
+msgstr "Dùng hồ sơ sRGB có sẵn"
+
+#: core/libs/album/manager/albummanager_database.cpp:674
+#, kde-format
+msgid ""
+"Failed to backup the existing database file (\"%1\"). Refusing to replace "
+"file without backup, using the existing file."
+msgstr ""
+
+#: core/libs/album/manager/albummanager_database.cpp:692
+#, fuzzy, kde-format
+msgid ""
+"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
+"Starting with an empty database."
+msgstr ""
+"Lỗi sao chép tập tin cơ sở dữ liệu cũ (« %1 ») vào vị trí mới (« %2 »). Hãy "
+"kiểm tra lại tập tin này có khả năng được sao chép."
+
+#: core/libs/album/manager/albummanager_palbum.cpp:326
 #, kde-format
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:1925
+#: core/libs/album/manager/albummanager_palbum.cpp:334
 #, kde-format
 msgid "No album for collection location: Internal error"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:1941
+#: core/libs/album/manager/albummanager_palbum.cpp:350
 #, kde-format
 msgid "No parent found for album."
 msgstr "Không tìm thấy điều mẹ cho tập ảnh."
 
-#: core/libs/album/manager/albummanager.cpp:1948
+#: core/libs/album/manager/albummanager_palbum.cpp:357
 #, kde-format
 msgid "Album name cannot be empty."
 msgstr "Không cho phép tên tập ảnh rỗng."
 
-#: core/libs/album/manager/albummanager.cpp:1954
+#: core/libs/album/manager/albummanager_palbum.cpp:363
 #, kde-format
 msgid "Album name cannot contain '/'."
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: core/libs/album/manager/albummanager.cpp:1960
+#: core/libs/album/manager/albummanager_palbum.cpp:369
 #, kde-format
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:1974
+#: core/libs/album/manager/albummanager_palbum.cpp:383
 #, kde-format
 msgid "An existing album has the same name."
 msgstr "Một tập ảnh cùng tên đã có."
 
-#: core/libs/album/manager/albummanager.cpp:1990
+#: core/libs/album/manager/albummanager_palbum.cpp:399
 #, fuzzy, kde-format
 msgid "Failed to create directory '%1'"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: core/libs/album/manager/albummanager.cpp:1999
+#: core/libs/album/manager/albummanager_palbum.cpp:408
 #, kde-format
 msgid "Failed to add album to database"
 msgstr "Lỗi thêm tập ảnh vào cơ sở dữ liệu"
 
-#: core/libs/album/manager/albummanager.cpp:2026
-#: core/libs/album/manager/albummanager.cpp:2123
-#: core/libs/album/manager/albummanager.cpp:2227
-#: core/libs/album/manager/albummanager.cpp:2294
-#: core/libs/album/manager/albummanager.cpp:2332
-#: core/libs/album/manager/albummanager.cpp:2414
+#: core/libs/album/manager/albummanager_palbum.cpp:435
+#: core/libs/album/manager/albummanager_palbum.cpp:518
+#: core/libs/album/manager/albummanager_talbum.cpp:355
+#: core/libs/album/manager/albummanager_talbum.cpp:404
+#: core/libs/album/manager/albummanager_talbum.cpp:442
+#: core/libs/album/manager/albummanager_talbum.cpp:524
 #, kde-format
 msgid "No such album"
 msgstr "Không có tập ảnh như vậy"
 
-#: core/libs/album/manager/albummanager.cpp:2032
+#: core/libs/album/manager/albummanager_palbum.cpp:441
 #, kde-format
 msgid "Cannot rename root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2038
+#: core/libs/album/manager/albummanager_palbum.cpp:447
 #, fuzzy, kde-format
 msgid "Cannot rename album root album"
 msgstr "Không thể thay đổi tên của tập ảnh gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2044
+#: core/libs/album/manager/albummanager_palbum.cpp:453
 #, kde-format
 msgid "Album name cannot contain '/'"
 msgstr "Không cho phép tên tập ảnh chứa « / »."
 
-#: core/libs/album/manager/albummanager.cpp:2051
+#: core/libs/album/manager/albummanager_palbum.cpp:460
 #, fuzzy, kde-format
 msgid ""
 "Another album with the same name already exists.\n"
@@ -3808,55 +3775,55 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/manager/albummanager.cpp:2075
+#: core/libs/album/manager/albummanager_palbum.cpp:484
 #, kde-format
 msgid "Failed to rename Album"
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: core/libs/album/manager/albummanager.cpp:2129
+#: core/libs/album/manager/albummanager_palbum.cpp:524
 #, kde-format
 msgid "Cannot edit root album"
 msgstr "Không thể sửa đổi tập ảnh gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2155
+#: core/libs/album/manager/albummanager_talbum.cpp:283
 #, kde-format
 msgid "No parent found for tag"
 msgstr "Không tìm thấy điều mẹ cho thẻ"
 
-#: core/libs/album/manager/albummanager.cpp:2162
+#: core/libs/album/manager/albummanager_talbum.cpp:290
 #, kde-format
 msgid "Tag name cannot be empty"
 msgstr "Không cho phép tên thẻ rỗng."
 
-#: core/libs/album/manager/albummanager.cpp:2168
-#: core/libs/album/manager/albummanager.cpp:2306
+#: core/libs/album/manager/albummanager_talbum.cpp:296
+#: core/libs/album/manager/albummanager_talbum.cpp:416
 #, kde-format
 msgid "Tag name cannot contain '/'"
 msgstr "Không cho phép tên thẻ chứa « / »"
 
-#: core/libs/album/manager/albummanager.cpp:2175
+#: core/libs/album/manager/albummanager_talbum.cpp:303
 #: core/libs/tags/tageditdlg.cpp:471
 #, kde-format
 msgid "Tag name already exists"
 msgstr "Tên thẻ đã có."
 
-#: core/libs/album/manager/albummanager.cpp:2184
+#: core/libs/album/manager/albummanager_talbum.cpp:312
 #, kde-format
 msgid "Failed to add tag to database"
 msgstr "Lỗi thêm thẻ vào cơ sở dữ liệu"
 
-#: core/libs/album/manager/albummanager.cpp:2233
+#: core/libs/album/manager/albummanager_talbum.cpp:361
 #, kde-format
 msgid "Cannot delete Root Tag"
 msgstr "Không thể xoá thẻ gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2300
-#: core/libs/album/manager/albummanager.cpp:2509
+#: core/libs/album/manager/albummanager_talbum.cpp:410
+#: core/libs/album/manager/albummanager_talbum.cpp:619
 #, kde-format
 msgid "Cannot edit root tag"
 msgstr "Không thể sửa đổi thẻ gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2313
+#: core/libs/album/manager/albummanager_talbum.cpp:423
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3865,17 +3832,17 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/manager/albummanager.cpp:2338
+#: core/libs/album/manager/albummanager_talbum.cpp:448
 #, kde-format
 msgid "Attempt to move TAlbum to nowhere"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:2344
+#: core/libs/album/manager/albummanager_talbum.cpp:454
 #, kde-format
 msgid "Cannot move root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2352
+#: core/libs/album/manager/albummanager_talbum.cpp:462
 #, fuzzy, kde-format
 msgid ""
 "Another tag with the same name already exists.\n"
@@ -3884,28 +3851,28 @@ msgstr ""
 "Một tập ảnh cùng tên đã có.\n"
 "Hãy chọn tên khác."
 
-#: core/libs/album/manager/albummanager.cpp:2420
+#: core/libs/album/manager/albummanager_talbum.cpp:530
 #, fuzzy, kde-format
 #| msgid "Cannot move root tag"
 msgid "Cannot merge root tag"
 msgstr "Không thẻ di chuyển thẻ gốc"
 
-#: core/libs/album/manager/albummanager.cpp:2426
+#: core/libs/album/manager/albummanager_talbum.cpp:536
 #, kde-format
 msgid "Only a tag without children can be merged!"
 msgstr ""
 
-#: core/libs/album/manager/albummanager.cpp:2434
+#: core/libs/album/manager/albummanager_talbum.cpp:544
 #, fuzzy, kde-format
 msgid "Do you want to merge tag '%1' into tag '%2'?"
 msgstr "Siêu dữ liệu"
 
-#: core/libs/album/manager/albummanager.cpp:2503
+#: core/libs/album/manager/albummanager_talbum.cpp:613
 #, kde-format
 msgid "No such tag"
 msgstr "Không có thẻ như vậy"
 
-#: core/libs/album/manager/albummanager.cpp:3292
+#: core/libs/album/manager/albummanager_talbum.cpp:987
 #, fuzzy, kde-format
 msgid ""
 "This operation can take a long time in the background.\n"
@@ -3913,6 +3880,11 @@ msgid ""
 msgstr ""
 "Thực hiện thao tác này thì giảm chất lượng màu của ảnh. Bạn có muốn tiếp tục "
 "không?"
+
+#: core/libs/album/treeview/abstractalbumtreeview.cpp:56
+#, kde-format
+msgid "Context menu"
+msgstr ""
 
 #: core/libs/album/treeview/albumlabelstreeview.cpp:107
 #, fuzzy, kde-format
@@ -3992,11 +3964,6 @@ msgstr "Xuất"
 #, fuzzy, kde-format
 msgid "Labels Album"
 msgstr "Tập ảnh mới"
-
-#: core/libs/album/treeview/albumtreeview.cpp:215
-#, kde-format
-msgid "Context menu"
-msgstr ""
 
 #: core/libs/album/widgets/albumpropsedit.cpp:122
 #: core/libs/album/widgets/albumpropsedit.cpp:272
@@ -5524,7 +5491,7 @@ msgstr ""
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:923
 #: core/utilities/assistants/webservices/flickr/flickrwindow.cpp:474
 #: core/utilities/assistants/webservices/google/gdrive/gdtalker.cpp:313
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:629
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:635
 #: core/utilities/assistants/webservices/mediawiki/mediawikitalker.cpp:186
 #: core/utilities/assistants/webservices/onedrive/odtalker.cpp:406
 #: core/utilities/assistants/webservices/pinterest/ptalker.cpp:454
@@ -21702,7 +21669,7 @@ msgstr "Chọn ảnh cần tải lên"
 #: core/utilities/assistants/webservices/box/boxwindow.cpp:265
 #: core/utilities/assistants/webservices/common/wslogindialog.cpp:172
 #: core/utilities/assistants/webservices/dropbox/dbwindow.cpp:266
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:603
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:609
 #: core/utilities/assistants/webservices/google/gswindow.cpp:400
 #: core/utilities/assistants/webservices/google/gswindow.cpp:441
 #: core/utilities/assistants/webservices/google/gswindow.cpp:523
@@ -22565,14 +22532,14 @@ msgid "File Size exceeds maximum allowed file size."
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:670
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:552
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:558
 #, fuzzy, kde-format
 #| msgid "No or invalid size specified"
 msgid "No photo specified"
 msgstr "Chưa ghi rõ kích cỡ hay kích cỡ không hợp lệ"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:674
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:555
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:561
 #, fuzzy, kde-format
 msgid "General upload failure"
 msgstr "Đang xoay EXIF tập tin %1..."
@@ -22588,20 +22555,20 @@ msgid "Filetype was not recognized"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:686
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:564
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:570
 #, kde-format
 msgid "User exceeded upload limit"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:690
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:567
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:573
 #, fuzzy, kde-format
 #| msgid "Invalid Profile"
 msgid "Invalid signature"
 msgstr "Hồ sơ không hợp lệ"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:694
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:570
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:576
 #, kde-format
 msgid "Missing signature"
 msgstr ""
@@ -22612,46 +22579,46 @@ msgid "Login Failed / Invalid auth token"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:702
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:576
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:582
 #, fuzzy, kde-format
 #| msgid "Invalid Profile"
 msgid "Invalid API Key"
 msgstr "Hồ sơ không hợp lệ"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:706
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:579
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:585
 #, kde-format
 msgid "Service currently unavailable"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:710
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:582
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:588
 #, fuzzy, kde-format
 #| msgid "Invalid Profile"
 msgid "Invalid Frob"
 msgstr "Hồ sơ không hợp lệ"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:714
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:585
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:591
 #, kde-format
 msgid "Format \"xxx\" not found"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:718
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:588
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:594
 #, fuzzy, kde-format
 msgid "Method \"xxx\" not found"
 msgstr "Tập hợp"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:722
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:591
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:597
 #, fuzzy, kde-format
 #| msgid "Invalid Profile"
 msgid "Invalid SOAP envelope"
 msgstr "Hồ sơ không hợp lệ"
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:726
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:594
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:600
 #, kde-format
 msgid "Invalid XML-RPC Method Call"
 msgstr ""
@@ -22662,7 +22629,7 @@ msgid "The POST method is now required for all setters"
 msgstr ""
 
 #: core/utilities/assistants/webservices/flickr/flickrtalker.cpp:734
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:600
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:606
 #: core/utilities/assistants/webservices/rajce/rajcewidget.cpp:236
 #: core/utilities/assistants/webservices/yandexfotki/yfwindow.cpp:767
 #, fuzzy, kde-format
@@ -22941,34 +22908,34 @@ msgstr ""
 msgid "Failed to create folder"
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:558
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:564
 #, kde-format
 msgid "File-size was zero"
 msgstr ""
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:561
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:567
 #, kde-format
 msgid "File-type was not recognized"
 msgstr ""
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:573
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:579
 #, kde-format
 msgid "Login failed / Invalid auth token"
 msgstr ""
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:597
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:603
 #, kde-format
 msgid "The POST method is now required for all setters."
 msgstr ""
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:604
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:610
 #, kde-format
 msgid ""
 "Error occurred: %1\n"
 "Unable to proceed further."
 msgstr ""
 
-#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:805
+#: core/utilities/assistants/webservices/google/gphoto/gptalker.cpp:813
 #, fuzzy, kde-format
 #| msgid "Failed to print file: '%1'"
 msgid "Failed to fetch photo-set list"
@@ -30985,6 +30952,38 @@ msgstr ""
 " • tạo thư mục: %8\n"
 " • xoá thư mục: %9\n"
 "\n"
+
+#: core/utilities/import/backend/gpcamera.cpp:1407
+#: core/utilities/import/backend/gpcamera.cpp:1408
+#: core/utilities/import/backend/gpcamera.cpp:1409
+#: core/utilities/import/backend/gpcamera.cpp:1410
+#: core/utilities/import/backend/gpcamera.cpp:1411
+#: core/utilities/import/backend/gpcamera.cpp:1412
+#: core/utilities/import/backend/umscamera.cpp:602
+#: core/utilities/import/backend/umscamera.cpp:603
+#: core/utilities/import/backend/umscamera.cpp:604
+#: core/utilities/import/backend/umscamera.cpp:605
+#: core/utilities/import/backend/umscamera.cpp:606
+#: core/utilities/import/backend/umscamera.cpp:607
+#, kde-format
+msgid "yes"
+msgstr "có"
+
+#: core/utilities/import/backend/gpcamera.cpp:1407
+#: core/utilities/import/backend/gpcamera.cpp:1408
+#: core/utilities/import/backend/gpcamera.cpp:1409
+#: core/utilities/import/backend/gpcamera.cpp:1410
+#: core/utilities/import/backend/gpcamera.cpp:1411
+#: core/utilities/import/backend/gpcamera.cpp:1412
+#: core/utilities/import/backend/umscamera.cpp:602
+#: core/utilities/import/backend/umscamera.cpp:603
+#: core/utilities/import/backend/umscamera.cpp:604
+#: core/utilities/import/backend/umscamera.cpp:605
+#: core/utilities/import/backend/umscamera.cpp:606
+#: core/utilities/import/backend/umscamera.cpp:607
+#, kde-format
+msgid "no"
+msgstr "không"
 
 #: core/utilities/import/backend/umscamera.cpp:578
 #, fuzzy, kde-format

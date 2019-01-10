@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-01-08 02:52+0100\n"
+"POT-Creation-Date: 2019-01-10 02:55+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -1264,7 +1264,7 @@ msgctxt ""
 msgid "No other %1"
 msgstr "Không có gì khác"
 
-#: DB/NewImageFinder.cpp:470
+#: DB/NewImageFinder.cpp:484
 #, kde-format
 msgid ""
 "<p><b>Loading information from new files</b></p><p>Depending on the number "
@@ -1275,13 +1275,13 @@ msgstr ""
 "số ảnh, việc này có thể kéo dài một lát.<br/>Tuy nhiên, chỉ chạy trễ khi tìm "
 "ảnh mới.</p></p>"
 
-#: DB/NewImageFinder.cpp:686
+#: DB/NewImageFinder.cpp:700
 #, kde-format
 msgid "<p><b>Calculating checksum for %1 file</b></p>"
 msgid_plural "<p><b>Calculating checksums for %1 files</b></p>"
 msgstr[0] ""
 
-#: DB/NewImageFinder.cpp:687
+#: DB/NewImageFinder.cpp:701
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p><b>Calculating checksum for %1 files<b></p><p>By storing a checksum "
@@ -1295,7 +1295,7 @@ msgstr ""
 "một tổng kiểm tra (checksum) riêng cho mỗi ảnh, KPhotoAlbum có khả năng tìm "
 "ảnh ngay cả khi bạn đã di chuyển nó vào vị trí khác trên đĩa.</p></p>"
 
-#: DB/NewImageFinder.cpp:730
+#: DB/NewImageFinder.cpp:744
 #, kde-format
 msgid "Following files could not be read:"
 msgstr ""
@@ -2229,7 +2229,7 @@ msgstr "Hiệu bài"
 
 #: ImportExport/ImportDialog.cpp:274 Settings/CategoryPage.cpp:271
 #: ThumbnailView/CellGeometry.cpp:77 ThumbnailView/ThumbnailModel.cpp:350
-#: XMLDB/Database.cpp:239 XMLDB/Database.cpp:600 XMLDB/FileReader.cpp:135
+#: XMLDB/Database.cpp:270 XMLDB/Database.cpp:631 XMLDB/FileReader.cpp:135
 #, kde-format
 msgid "Media Type"
 msgstr "Kiểu vật chứa"
@@ -6040,44 +6040,6 @@ msgid "1 year"
 msgid_plural "%1 years"
 msgstr[0] ""
 
-#: Utilities/Util.cpp:56
-#, fuzzy, kde-format
-#| msgid ""
-#| "Backup file '%1' exists and is newer than '%2'. Should I use the backup "
-#| "file?"
-msgid ""
-"Autosave file '%1' exists (size %3 KB) and is newer than '%2'. Should the "
-"autosave file be used?"
-msgstr ""
-"Tập tin sao lưu « %1 » đã có : nó mới hơn « %2 ». Trình này nên dùng tập tin "
-"sao lưu này không?"
-
-#: Utilities/Util.cpp:58
-#, fuzzy, kde-format
-#| msgid "Found Backup File"
-msgid "Found Autosave File"
-msgstr "Tìm thấy tập tin sao lưu"
-
-#: Utilities/Util.cpp:60
-#, kde-format
-msgid ""
-"<p>Error: Cannot use current database file '%1':</p><p>%2</p><p>Do you want "
-"to use autosave (%3 - size %4 KB) instead of exiting?</p><p><small>(Manually "
-"verifying and copying the file might be a good idea)</small></p>"
-msgstr ""
-
-#: Utilities/Util.cpp:63
-#, kde-format
-msgid "Recover from Autosave?"
-msgstr ""
-
-#: Utilities/Util.cpp:65
-#, kde-format
-msgid ""
-"<p>Error: %1</p><p>Also autosave file is empty, check manually if numbered "
-"backup files exist and can be used to restore index.xml.</p>"
-msgstr ""
-
 #: Viewer/CategoryImageConfig.cpp:47
 #, fuzzy, kde-format
 #| msgid "Configure Category Image"
@@ -6628,13 +6590,31 @@ msgstr "Hiện cỡ ảnh"
 msgid "Show Rating"
 msgstr "Hiện phạm vị"
 
-#: XMLDB/Database.cpp:240 XMLDB/Database.cpp:601 XMLDB/FileReader.cpp:137
+#: XMLDB/Database.cpp:53
+#, fuzzy, kde-format
+#| msgid ""
+#| "Backup file '%1' exists and is newer than '%2'. Should I use the backup "
+#| "file?"
+msgid ""
+"Autosave file '%1' exists (size %3 KB) and is newer than '%2'. Should the "
+"autosave file be used?"
+msgstr ""
+"Tập tin sao lưu « %1 » đã có : nó mới hơn « %2 ». Trình này nên dùng tập tin "
+"sao lưu này không?"
+
+#: XMLDB/Database.cpp:55
+#, fuzzy, kde-format
+#| msgid "Found Backup File"
+msgid "Found Autosave File"
+msgstr "Tìm thấy tập tin sao lưu"
+
+#: XMLDB/Database.cpp:271 XMLDB/Database.cpp:632 XMLDB/FileReader.cpp:137
 #, fuzzy, kde-format
 #| msgid "Image"
 msgid "Image"
 msgstr "Ảnh"
 
-#: XMLDB/Database.cpp:240 XMLDB/Database.cpp:602 XMLDB/FileReader.cpp:138
+#: XMLDB/Database.cpp:271 XMLDB/Database.cpp:633 XMLDB/FileReader.cpp:138
 #, fuzzy, kde-format
 #| msgid "Video"
 msgid "Video"

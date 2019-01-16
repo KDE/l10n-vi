@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-15 03:35+0200\n"
+"POT-Creation-Date: 2019-01-16 03:23+0100\n"
 "PO-Revision-Date: 2007-07-11 23:20+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -249,19 +249,24 @@ msgstr "Thiết kết bộ tạo mã và giao thức VNC gốc"
 msgid "Do not show the invitations management dialog at startup"
 msgstr ""
 
-#: mainwindow.cpp:181
+#: mainwindow.cpp:53
+#, kde-format
+msgid "Storing passwords in config file is insecure!"
+msgstr ""
+
+#: mainwindow.cpp:195
 #, kde-format
 msgid "Enter a new password for Unattended Access"
 msgstr ""
 
-#: mainwindow.cpp:192
+#: mainwindow.cpp:206
 #, kde-format
 msgid ""
 "Failed to start the krfb server. Desktop sharing will not work. Try setting "
 "another port in the settings and restart krfb."
 msgstr ""
 
-#: mainwindow.cpp:215
+#: mainwindow.cpp:229
 #, fuzzy, kde-format
 #| msgid ""
 #| "This field contains the address of your computer and the display number, "
@@ -297,14 +302,14 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, titleLabel)
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
 #. i18n: ectx: property (whatsThis), widget (QLabel, aboutLabel)
-#: mainwindow.cpp:216 mainwindow.cpp:223 ui/mainwidget.ui:83
+#: mainwindow.cpp:230 mainwindow.cpp:237 ui/mainwidget.ui:83
 #: ui/mainwidget.ui:86 ui/mainwidget.ui:114
 #, fuzzy, kde-format
 #| msgid "Desktop Sharing"
 msgid "KDE Desktop Sharing"
 msgstr "Chia sẻ màn hình"
 
-#: mainwindow.cpp:222
+#: mainwindow.cpp:236
 #, kde-format
 msgid ""
 "Any remote user with normal desktop sharing password will have to be "
@@ -315,22 +320,22 @@ msgid ""
 "confirmation."
 msgstr ""
 
-#: mainwindow.cpp:239
+#: mainwindow.cpp:255
 #, kde-format
 msgid "Network"
 msgstr "Mạng"
 
-#: mainwindow.cpp:240
+#: mainwindow.cpp:256
 #, kde-format
 msgid "Security"
 msgstr "Bảo mật"
 
-#: mainwindow.cpp:241
+#: mainwindow.cpp:257
 #, kde-format
 msgid "Screen capture"
 msgstr ""
 
-#: mainwindow.cpp:246
+#: mainwindow.cpp:262
 #, kde-format
 msgid "To apply framebuffer plugin setting, you need to restart the program."
 msgstr ""
@@ -400,6 +405,12 @@ msgstr ""
 #, kde-format
 msgid "Allow remote connections to control your desktop"
 msgstr "Cho phép người dùng ở xa điều khiển bàn phím và chuột"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_noWallet)
+#: ui/configsecurity.ui:27
+#, kde-format
+msgid "Do not store passwords using KDE wallet"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
 #: ui/configtcp.ui:32

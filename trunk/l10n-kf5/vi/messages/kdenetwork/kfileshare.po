@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kfileshare\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-08-16 09:09+0200\n"
+"POT-Creation-Date: 2019-05-18 03:01+0200\n"
 "PO-Revision-Date: 2007-06-15 22:11+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -50,16 +50,21 @@ msgstr ""
 
 #: samba/filepropertiesplugin/sambausershareplugin.cpp:92
 #, fuzzy, kde-format
-#| msgid "No Samba server installed on this system"
-msgid "Samba is not installed on your system."
-msgstr "Không có trình phục vụ Samba được cài đặt trên hệ thống này"
+#| msgid "Only local folders can be shared."
+msgid "Samba must be installed before folders can be shared."
+msgstr "Chỉ có quyền chia sẻ thư mục cục bộ."
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:95
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:97
 #, kde-format
-msgid "Install Samba..."
+msgid "Install Samba"
 msgstr ""
 
-#: samba/filepropertiesplugin/sambausershareplugin.cpp:257
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:155
+#, kde-format
+msgid "Installing Samba..."
+msgstr ""
+
+#: samba/filepropertiesplugin/sambausershareplugin.cpp:264
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>There is already a share with the name <strong>%1</strong>.<br> "
@@ -74,22 +79,32 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, sambaChk)
 #: samba/filepropertiesplugin/sambausershareplugin.ui:19
 #, fuzzy, kde-format
-#| msgid "Share with S&amba (Microsoft(R) Windows(R))"
-msgid "Share with S&amba (Microsoft Windows)"
-msgstr "Chia sẻ với S&amba (Microsoft® Windows®)"
+#| msgid "S&hare this folder in the local network"
+msgid "Sh&are this folder with other computers on the local network"
+msgstr "Chia sẻ thư mục này qua mạng cục bộ"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:36
+#: samba/filepropertiesplugin/sambausershareplugin.ui:39
 #, kde-format
 msgid "Name:"
 msgstr "Tên:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, sambaAllowGuestChk)
-#: samba/filepropertiesplugin/sambausershareplugin.ui:56
+#: samba/filepropertiesplugin/sambausershareplugin.ui:59
 #, fuzzy, kde-format
 #| msgid "Allo&w guest logins"
 msgid "Allow Guests"
 msgstr "Cho phép &khách đăng nhập"
+
+#, fuzzy
+#~| msgid "No Samba server installed on this system"
+#~ msgid "Samba is not installed on your system."
+#~ msgstr "Không có trình phục vụ Samba được cài đặt trên hệ thống này"
+
+#, fuzzy
+#~| msgid "Share with S&amba (Microsoft(R) Windows(R))"
+#~ msgid "Share with S&amba (Microsoft Windows)"
+#~ msgstr "Chia sẻ với S&amba (Microsoft® Windows®)"
 
 #~ msgid "Select Users"
 #~ msgstr "Chọn người dùng"
@@ -2399,9 +2414,6 @@ msgstr "Cho phép &khách đăng nhập"
 #~ msgid "Folder:"
 #~ msgstr "Thư mục:"
 
-#~ msgid "S&hare this folder in the local network"
-#~ msgstr "Chia sẻ thư mục này qua mạng cục bộ"
-
 #~ msgid "Share with &NFS (Linux/UNIX)"
 #~ msgstr "Chia sẻ với &NFS (Linux/UNIX)"
 
@@ -2758,9 +2770,6 @@ msgstr "Cho phép &khách đăng nhập"
 
 #~ msgid "Please enter a valid path."
 #~ msgstr "Hãy nhập vào một đường dẫn hợp lệ."
-
-#~ msgid "Only local folders can be shared."
-#~ msgstr "Chỉ có quyền chia sẻ thư mục cục bộ."
 
 #~ msgid "The folder does not exists."
 #~ msgstr "Thư mục này không tồn tại."

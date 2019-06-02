@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-31 02:44+0200\n"
+"POT-Creation-Date: 2019-06-02 02:44+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -11168,26 +11168,39 @@ msgid ""
 "%1"
 msgstr "Xem trước:"
 
-#: libs/ui/canvas/kis_change_guides_command.cpp:38
+#: libs/ui/canvas/kis_change_guides_command.cpp:59
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add Guide"
+msgstr "Các đường dóng"
+
+#: libs/ui/canvas/kis_change_guides_command.cpp:61
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Remove Guide"
+msgstr "Công cụ &di chuyển"
+
+#: libs/ui/canvas/kis_change_guides_command.cpp:64
+#: libs/ui/canvas/kis_change_guides_command.cpp:116
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Edit Guides"
 msgstr "Các đường dóng"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:751
+#: libs/ui/canvas/kis_guides_manager.cpp:770
 #, fuzzy, kde-format
 msgid "Snap to:"
 msgstr "Gắn vào Lưới"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: libs/ui/canvas/kis_guides_manager.cpp:752
+#: libs/ui/canvas/kis_guides_manager.cpp:771
 #: plugins/dockers/griddocker/grid_config_widget.ui:39
 #, kde-format
 msgid "Grid"
 msgstr "Lưới"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: libs/ui/canvas/kis_guides_manager.cpp:753
+#: libs/ui/canvas/kis_guides_manager.cpp:772
 #: plugins/dockers/griddocker/grid_config_widget.ui:564
 #, fuzzy, kde-format
 msgid "Guides"
@@ -11195,44 +11208,44 @@ msgstr "Hiện &Lưới"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#: libs/ui/canvas/kis_guides_manager.cpp:754
+#: libs/ui/canvas/kis_guides_manager.cpp:773
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:52
 #: plugins/paintops/spray/wdgsprayshapeoptions.ui:81
 #, fuzzy, kde-format
 msgid "Pixel"
 msgstr "Chiều rộng điểm ảnh"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:755
+#: libs/ui/canvas/kis_guides_manager.cpp:774
 #, fuzzy, kde-format
 msgid "Orthogonal"
 msgstr "Gắn vào Lưới"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:757
+#: libs/ui/canvas/kis_guides_manager.cpp:776
 #, fuzzy, kde-format
 msgid "Node"
 msgstr "Không có"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:758
+#: libs/ui/canvas/kis_guides_manager.cpp:777
 #, fuzzy, kde-format
 msgid "Extension"
 msgstr "&Kích thước bằng điểm ảnh"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:759
+#: libs/ui/canvas/kis_guides_manager.cpp:778
 #, fuzzy, kde-format
 msgid "Intersection"
 msgstr "Cắt"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:761
+#: libs/ui/canvas/kis_guides_manager.cpp:780
 #, fuzzy, kde-format
 msgid "Bounding Box"
 msgstr "Chế độ chân dung"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:762
+#: libs/ui/canvas/kis_guides_manager.cpp:781
 #, fuzzy, kde-format
 msgid "Image Bounds"
 msgstr "Ảnh"
 
-#: libs/ui/canvas/kis_guides_manager.cpp:763
+#: libs/ui/canvas/kis_guides_manager.cpp:782
 #, fuzzy, kde-format
 msgid "Image Center"
 msgstr "Tâm:"
@@ -11707,8 +11720,8 @@ msgstr "nền"
 #: libs/ui/KisView.cpp:747 libs/ui/opengl/kis_opengl_canvas2.cpp:377
 #: libs/ui/opengl/kis_opengl_image_textures.cpp:576
 #: libs/ui/widgets/kis_custom_image_widget.cc:277
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:822
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:825
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:854
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:857
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:299
 #: plugins/extensions/animationrenderer/AnimationRenderer.cpp:141
 #: plugins/extensions/animationrenderer/AnimationRenderer.cpp:190
@@ -16970,8 +16983,8 @@ msgid "No profile"
 msgstr "Xóa điểm"
 
 #: libs/ui/kis_stopgradient_editor.cpp:44
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:955
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:961
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:987
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:993
 #: plugins/tools/defaulttool/defaulttool/DefaultToolGeometryWidget.cpp:122
 #: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImagesWidget.cpp:54
 #, fuzzy, kde-format
@@ -23006,10 +23019,28 @@ msgstr "Khoảng cách:"
 msgid "Concentric Ellipse assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/ConcentricEllipseAssistant.cc:189
+#: plugins/assistants/Assistants/ConcentricEllipseAssistant.cc:201
 #, fuzzy, kde-format
 msgid "Concentric Ellipse"
 msgstr "Chọn Tất cả"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:31
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Edit Assistants"
+msgstr "Khoảng cách:"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:42
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Add Assistant"
+msgstr "Khoảng cách:"
+
+#: plugins/assistants/Assistants/EditAssistantsCommand.cpp:42
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Remove Assistant"
+msgstr "Khoảng cách:"
 
 #: plugins/assistants/Assistants/EllipseAssistant.cc:34
 #, fuzzy, kde-format
@@ -23018,7 +23049,7 @@ msgstr "Khoảng cách:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#: plugins/assistants/Assistants/EllipseAssistant.cc:163
+#: plugins/assistants/Assistants/EllipseAssistant.cc:174
 #: plugins/flake/pathshapes/ellipse/EllipseShapeFactory.cpp:35
 #: plugins/paintops/gridbrush/wdggridbrushshapeoptions.ui:37
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:232
@@ -23032,7 +23063,7 @@ msgstr "Hình êlíp"
 msgid "Fish Eye Point assistant"
 msgstr "Hiện thước kẻ"
 
-#: plugins/assistants/Assistants/FisheyePointAssistant.cc:221
+#: plugins/assistants/Assistants/FisheyePointAssistant.cc:233
 #, fuzzy, kde-format
 msgid "Fish Eye Point"
 msgstr "tuỳ chọn"
@@ -23042,32 +23073,32 @@ msgstr "tuỳ chọn"
 msgid "Infinite Ruler assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:156
+#: plugins/assistants/Assistants/InfiniteRulerAssistant.cc:166
 #, fuzzy, kde-format
 msgid "Infinite Ruler"
 msgstr "&Hiện/ Ẩn layer..."
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:703
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:735
 #, fuzzy, kde-format
 msgid "Select an Assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:825
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:857
 #, kde-format
 msgid "Errors were encountered. Not all assistants were successfully loaded."
 msgstr ""
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:888
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:920
 #, fuzzy, kde-format
 msgid "Save Assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:968
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:1000
 #, fuzzy, kde-format
 msgid "Density: "
 msgstr "Mô tả:"
 
-#: plugins/assistants/Assistants/kis_assistant_tool.h:157
+#: plugins/assistants/Assistants/kis_assistant_tool.h:163
 #, fuzzy, kde-format
 msgid "Assistant Tool"
 msgstr "Khoảng cách:"
@@ -23077,7 +23108,7 @@ msgstr "Khoảng cách:"
 msgid "Parallel Ruler assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/ParallelRulerAssistant.cc:163
+#: plugins/assistants/Assistants/ParallelRulerAssistant.cc:173
 #, fuzzy, kde-format
 msgid "Parallel Ruler"
 msgstr "Khoảng cách:"
@@ -23089,7 +23120,7 @@ msgstr "Công cụ &xoá"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, perspectiveTransformButton)
 #. i18n: ectx: property (text), widget (QToolButton, perspectiveTransformButton)
-#: plugins/assistants/Assistants/PerspectiveAssistant.cc:457
+#: plugins/assistants/Assistants/PerspectiveAssistant.cc:474
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:62
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:128
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:112
@@ -23103,7 +23134,7 @@ msgstr "Công cụ &xoá"
 msgid "Ruler assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/RulerAssistant.cc:160
+#: plugins/assistants/Assistants/RulerAssistant.cc:170
 #, fuzzy, kde-format
 msgid "Ruler"
 msgstr "Thông thường"
@@ -23113,7 +23144,7 @@ msgstr "Thông thường"
 msgid "Spline assistant"
 msgstr "Khoảng cách:"
 
-#: plugins/assistants/Assistants/SplineAssistant.cc:221
+#: plugins/assistants/Assistants/SplineAssistant.cc:232
 #, fuzzy, kde-format
 msgid "Spline"
 msgstr "Hình sin"
@@ -23123,7 +23154,7 @@ msgstr "Hình sin"
 msgid "Vanishing Point assistant"
 msgstr "Hiện thước kẻ"
 
-#: plugins/assistants/Assistants/VanishingPointAssistant.cc:301
+#: plugins/assistants/Assistants/VanishingPointAssistant.cc:313
 #, fuzzy, kde-format
 msgid "Vanishing Point"
 msgstr "tuỳ chọn"
@@ -63494,10 +63525,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Scalable Distance"
 #~ msgstr "Khoảng cách tới đối tượng:"
-
-#, fuzzy
-#~ msgid "Assistant:"
-#~ msgstr "Khoảng cách:"
 
 #, fuzzy
 #~ msgctxt "(qtundo-format)"

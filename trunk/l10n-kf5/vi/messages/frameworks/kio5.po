@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-22 02:53+0200\n"
+"POT-Creation-Date: 2019-06-23 02:55+0200\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -292,7 +292,7 @@ msgid ""
 "Root privileges are required to complete renaming. Do you want to continue?"
 msgstr ""
 
-#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:549
+#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:529
 #, kde-format
 msgid "Create Symlink"
 msgstr "Tạo liên kết biểu tượng"
@@ -3789,12 +3789,12 @@ msgstr ""
 "bộ lọc có sẵn trong trình đơn thả xuống, hoặc gõ trực tiếp vào trường chữ "
 "một bộ lọc tự chọn.<p>Cho phép dùng ký tự đại diện như « * » và « ? ».</qt>"
 
-#: filewidgets/knewfilemenu.cpp:389
+#: filewidgets/knewfilemenu.cpp:395
 #, kde-format
 msgid "Sorry"
 msgstr "Xin lỗi"
 
-#: filewidgets/knewfilemenu.cpp:398
+#: filewidgets/knewfilemenu.cpp:404
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -3804,13 +3804,23 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: filewidgets/knewfilemenu.cpp:416
+#: filewidgets/knewfilemenu.cpp:526 filewidgets/knewfilemenu.cpp:607
 #, kde-format
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "Tạo thư mục"
+msgid "File name:"
+msgstr "Tên tập tin:"
 
-#: filewidgets/knewfilemenu.cpp:418 filewidgets/knewfilemenu.cpp:867
+#: filewidgets/knewfilemenu.cpp:611
+#, kde-format
+msgid "Create link to URL"
+msgstr "Tạo liên kết tới URL"
+
+#: filewidgets/knewfilemenu.cpp:657 filewidgets/knewfilemenu.cpp:714
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr "%1"
+
+#: filewidgets/knewfilemenu.cpp:847
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Enter a different name"
@@ -3818,48 +3828,13 @@ msgctxt "@action:button"
 msgid "Enter a Different Name"
 msgstr "Nhập một tên khác"
 
-#: filewidgets/knewfilemenu.cpp:422
-#, kde-format
-msgid "Create hidden directory?"
-msgstr "Tạo thư mục ẩn?"
-
-#: filewidgets/knewfilemenu.cpp:432
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr ""
-"Tên \"%1\" bắt đầu với một dấu chấm, vì vậy tập tin sẽ được ẩn đi theo mặc "
-"định."
-
-#: filewidgets/knewfilemenu.cpp:434 widgets/executablefileopendialog.cpp:36
-#, kde-format
-msgid "Do not ask again"
-msgstr "Đừng hỏi lần nữa"
-
-#: filewidgets/knewfilemenu.cpp:546 filewidgets/knewfilemenu.cpp:627
-#, kde-format
-msgid "File name:"
-msgstr "Tên tập tin:"
-
-#: filewidgets/knewfilemenu.cpp:631
-#, kde-format
-msgid "Create link to URL"
-msgstr "Tạo liên kết tới URL"
-
-#: filewidgets/knewfilemenu.cpp:677 filewidgets/knewfilemenu.cpp:734
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr "%1"
-
-#: filewidgets/knewfilemenu.cpp:871
+#: filewidgets/knewfilemenu.cpp:851
 #, fuzzy, kde-format
 #| msgid "Invalid Filenames"
 msgid "Invalid Directory Name"
 msgstr "Tên tập tin không hợp lệ"
 
-#: filewidgets/knewfilemenu.cpp:880
+#: filewidgets/knewfilemenu.cpp:860
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3867,33 +3842,82 @@ msgid ""
 "it is reserved for use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1140
+#: filewidgets/knewfilemenu.cpp:1060
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> cannot be used because it is reserved for "
+"use by the operating system."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1068
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "The name \"%1\" starts with a dot, so the directory will be hidden by "
+#| "default."
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> starts with a dot, so it will be hidden by "
+"default."
+msgstr ""
+"Tên \"%1\" bắt đầu với một dấu chấm, vì vậy tập tin sẽ được ẩn đi theo mặc "
+"định."
+
+#: filewidgets/knewfilemenu.cpp:1085
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders, like so:"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1095
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1107
+#, kde-format
+msgid "Slashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1113
+#, kde-format
+msgid "Backslashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1122
+#, kde-format
+msgid ""
+"Starting a file or folder name with a tilde is not recommended because it "
+"may be confusing or dangerous when using the terminal to delete things."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1195
 #, kde-format
 msgid "Create New"
 msgstr "Tạo mới"
 
-#: filewidgets/knewfilemenu.cpp:1155
+#: filewidgets/knewfilemenu.cpp:1210
 #, kde-format
 msgid "Link to Device"
 msgstr "Liên kết tới thiết bị"
 
-#: filewidgets/knewfilemenu.cpp:1209
+#: filewidgets/knewfilemenu.cpp:1264
 #, kde-format
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "Thư mục mới"
 
-#: filewidgets/knewfilemenu.cpp:1219
+#: filewidgets/knewfilemenu.cpp:1275
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Thư mục mới"
 
-#: filewidgets/knewfilemenu.cpp:1222
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
+#: filewidgets/knewfilemenu.cpp:1285
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgid "Create new folder in %1:"
 msgstr ""
 "Tạo thư mục mới trong:\n"
 "%1"
@@ -7492,6 +7516,11 @@ msgstr ""
 msgid "What do you wish to do with this executable file?"
 msgstr "Bạn có muốn lưu cụm từ mật khẩu vào tập tin ví mình không?"
 
+#: widgets/executablefileopendialog.cpp:36
+#, kde-format
+msgid "Do not ask again"
+msgstr "Đừng hỏi lần nữa"
+
 #: widgets/executablefileopendialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Exec"
@@ -9691,6 +9720,13 @@ msgid ""
 "The remote host did not send any SSL certificates.\n"
 "Aborting because the identity of the host cannot be established."
 msgstr ""
+
+#~ msgctxt "@action:button"
+#~ msgid "Create directory"
+#~ msgstr "Tạo thư mục"
+
+#~ msgid "Create hidden directory?"
+#~ msgstr "Tạo thư mục ẩn?"
 
 #~ msgid "Show Aside Preview"
 #~ msgstr "Hiện khung xem thử"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-03 03:25+0200\n"
+"POT-Creation-Date: 2019-07-04 03:09+0200\n"
 "PO-Revision-Date: 2012-01-16 16:50+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -289,11 +289,15 @@ msgstr ""
 "khoản tại: <link>%1</link>"
 
 #: aboutbugreportingdialog.cpp:133
-#, kde-kuit-format
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info/rich"
+#| msgid ""
+#| "Then, enter your username and password and press the Login button. You "
+#| "can use this login to directly access the KDE bug tracking system later."
 msgctxt "@info/rich"
 msgid ""
-"Then, enter your username and password and press the Login button. You can "
-"use this login to directly access the KDE bug tracking system later."
+"Then, enter your e-mail address and password and press the Login button. You "
+"can use this login to directly access the KDE bug tracking system later."
 msgstr ""
 "Sau đó, hãy nhập tên người dùng và mật khẩu rồi nhấn nút Đăng nhập. Bạn có "
 "thể sử dụng thông tin này để truy cập trực tiếp vào hệ thống theo dõi lỗi "
@@ -771,13 +775,13 @@ msgid ""
 msgstr ""
 "Bạn cần phải cài đặt gói gỡ lỗi (%1) và nhấn <interface>Tải lại</interface>."
 
-#: backtracewidget.cpp:368
+#: backtracewidget.cpp:366
 #, kde-format
 msgctxt "@title:window"
 msgid "Error during the installation of debug symbols"
 msgstr "Lỗi khi đang cài đặt biểu tượng gỡ lỗi"
 
-#: backtracewidget.cpp:400
+#: backtracewidget.cpp:398
 #, kde-format
 msgid ""
 "The packages containing debug information for the following application and "
@@ -785,7 +789,7 @@ msgid ""
 msgstr ""
 "Các gói chứa thông tin gỡ lỗi còn thiếu cho các ứng dụng và thư viện sau:"
 
-#: backtracewidget.cpp:409
+#: backtracewidget.cpp:407
 #, kde-format
 msgctxt "messagebox title"
 msgid "Missing debug information packages"
@@ -1120,11 +1124,15 @@ msgid "Login"
 msgstr "Đăng nhập"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:83
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid ""
+#| "Use this button to login to the KDE bug tracking system using the "
+#| "provided username and password."
 msgctxt "@info:tooltip"
 msgid ""
-"Use this button to login to the KDE bug tracking system using the provided "
-"username and password."
+"Use this button to login to the KDE bug tracking system using the provided e-"
+"mail address and password."
 msgstr ""
 "Dùng nút này để đăng nhập vào hệ thống theo dõi lỗi KDE sử dụng tên đăng "
 "nhập và mật khẩu đã tạo."
@@ -1160,17 +1168,19 @@ msgid "Logged in at the KDE bug tracking system (%1) as: %2."
 msgstr "Đã đăng nhập vào hệ thống theo dõi lỗi KDE (%1) bằng: %2."
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:286
-#, kde-format
-msgctxt "@info:status '1' is a url, '2' the username"
+#, fuzzy, kde-format
+#| msgctxt "@info:status '1' is a url, '2' the username"
+#| msgid "Performing login at %1 as %2..."
+msgctxt "@info:status '1' is a url, '2' the e-mail address"
 msgid "Performing login at %1 as %2..."
 msgstr "Đang thực hiện đăng nhập tại %1 bằng %2..."
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:319
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:320
 #, fuzzy, kde-format
 #| msgctxt "@info:status/rich"
 #| msgid "<b>Error: Invalid username or password</b>"
 msgctxt "@info:status"
-msgid "<b>Error: Invalid username or password</b>"
+msgid "<b>Error: Invalid e-mail address or password</b>"
 msgstr "<b>Lỗi: tên người dùng hay mật khẩu không hợp lệ</b>"
 
 #: bugzillaintegration/reportassistantpages_bugzilla.cpp:368
@@ -1506,13 +1516,13 @@ msgstr ""
 "được. Hãy thử lại hành động này một lần nữa hoặc lưu trang lỗi này để gửi "
 "báo cáo lỗi cho chính DrKonqi."
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:790 drkonqi.cpp:172
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:790 drkonqi.cpp:163
 #, kde-format
 msgctxt "@title:window"
 msgid "Select Filename"
 msgstr "Chọn tên tập tin"
 
-#: bugzillaintegration/reportassistantpages_bugzilla.cpp:813 drkonqi.cpp:198
+#: bugzillaintegration/reportassistantpages_bugzilla.cpp:813 drkonqi.cpp:189
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Cannot open file <filename>%1</filename> for writing."
@@ -2512,9 +2522,9 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, m_userLabel)
 #: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:38
 #, kde-format
-msgctxt "@label:textbox bugzilla account username"
-msgid "Username:"
-msgstr "Tên người dùng:"
+msgctxt "@label:textbox bugzilla account email"
+msgid "E-mail Address:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_passwordLabel)
 #: bugzillaintegration/ui/assistantpage_bugzilla_login.ui:45
@@ -2647,13 +2657,13 @@ msgid ""
 "packages."
 msgstr "Gặp lỗi khi đang cài đặt các gói biểu tượng gỡ lỗi."
 
-#: drkonqi.cpp:162
+#: drkonqi.cpp:153
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Report saved to <filename>%1</filename>."
 msgstr "Đã lưu báo cáo vào <filename>%1</filename>."
 
-#: drkonqi.cpp:165
+#: drkonqi.cpp:156
 #, kde-format
 msgctxt "@info"
 msgid "Could not create a file in which to save the report."
@@ -2829,11 +2839,6 @@ msgstr "Đóng hộp thoại này (bạn sẽ mất thông tin lỗi.)"
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in %1"
 msgstr ""
-
-#: findconfigdatajob.cpp:62
-#, kde-format
-msgid "Failed to retrieve the config data."
-msgstr "Thất bại khi lấy thông tin cấu hình."
 
 #: main.cpp:52
 #, kde-format
@@ -3016,7 +3021,7 @@ msgctxt "Notification action button, keep short"
 msgid "Report Bug"
 msgstr "Báo cáo lỗi"
 
-#: statusnotifier.cpp:127
+#: statusnotifier.cpp:125
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Restart Application"
@@ -3029,6 +3034,13 @@ msgstr "Khởi động lại ứng dụng"
 #, kde-format
 msgid "Show backtrace content (advanced)"
 msgstr "Hiện nội dung backtrace (nâng cao)"
+
+#~ msgctxt "@label:textbox bugzilla account username"
+#~ msgid "Username:"
+#~ msgstr "Tên người dùng:"
+
+#~ msgid "Failed to retrieve the config data."
+#~ msgstr "Thất bại khi lấy thông tin cấu hình."
 
 #~ msgctxt "@info"
 #~ msgid "Invalid bug list: corrupted data"

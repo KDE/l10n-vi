@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-07-18 02:39+0200\n"
+"POT-Creation-Date: 2019-07-20 02:42+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -7866,7 +7866,6 @@ msgstr "Đường"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, label_16)
 #. i18n: ectx: property (text), widget (QLabel, typeDescLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, axisTypeLabel)
 #: libs/flake/KoConnectionShapeConfigWidget.ui:17
 #: libs/ui/forms/wdgimageproperties.ui:350
@@ -7879,7 +7878,6 @@ msgstr "Đường"
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:35
 #: plugins/flake/pathshapes/spiral/SpiralShapeConfigWidget.ui:20
 #: plugins/impex/heightmap/kis_wdg_options_heightmap.ui:195
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:17
 #: plugins/tools/basictools/wdgmultihandtool.ui:164
 #, fuzzy, kde-format
 msgid "Type:"
@@ -8594,7 +8592,7 @@ msgid "Node Rename"
 msgstr "Tên:"
 
 #: libs/image/commands_new/kis_image_resize_command.cpp:28
-#: libs/image/kis_image.cc:674
+#: libs/image/kis_image.cc:740
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Resize Image"
@@ -8800,104 +8798,111 @@ msgstr "Mitchell"
 msgid "Pass Through"
 msgstr ""
 
-#: libs/image/kis_image.cc:569
+#: libs/image/kis_image.cc:330
+#: plugins/impex/qimageio/kis_qimageio_import.cpp:61
+#, fuzzy, kde-format
+#| msgid "Import Image"
+msgid "Imported Image"
+msgstr "Nhập ảnh"
+
+#: libs/image/kis_image.cc:635
 #, kde-format
 msgid "background"
 msgstr "nền"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: libs/image/kis_image.cc:573 plugins/extensions/imagesize/imagesize.xmlgui:9
+#: libs/image/kis_image.cc:639 plugins/extensions/imagesize/imagesize.xmlgui:9
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:393
 #, kde-format
 msgid "Layer"
 msgstr "Lớp"
 
-#: libs/image/kis_image.cc:673
+#: libs/image/kis_image.cc:739
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "Cắt ảnh"
 
-#: libs/image/kis_image.cc:715
+#: libs/image/kis_image.cc:781
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Layer"
 msgstr "Layer &trước..."
 
-#: libs/image/kis_image.cc:716
+#: libs/image/kis_image.cc:782
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Mask"
 msgstr "Xanh nước biển"
 
-#: libs/image/kis_image.cc:748
+#: libs/image/kis_image.cc:814
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "Phóng ảnh"
 
-#: libs/image/kis_image.cc:749
+#: libs/image/kis_image.cc:815
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "Độ phân giải ảnh"
 
-#: libs/image/kis_image.cc:796
+#: libs/image/kis_image.cc:862
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "Phóng Lớp"
 
-#: libs/image/kis_image.cc:923
+#: libs/image/kis_image.cc:989
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Image"
 msgstr "Xoay ảnh"
 
-#: libs/image/kis_image.cc:929
+#: libs/image/kis_image.cc:995
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Mask"
 msgstr "Xoay ảnh"
 
-#: libs/image/kis_image.cc:931
+#: libs/image/kis_image.cc:997
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "Xoay Lớp"
 
-#: libs/image/kis_image.cc:1013
+#: libs/image/kis_image.cc:1079
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Mask"
 msgstr "Làm méo các hình"
 
-#: libs/image/kis_image.cc:1016
+#: libs/image/kis_image.cc:1082
 #, fuzzy
 #| msgid "Shear Layer"
 msgctxt "(qtundo-format)"
 msgid "Shear Layer"
 msgstr "Làm méo Lớp"
 
-#: libs/image/kis_image.cc:1023
+#: libs/image/kis_image.cc:1089
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "Làm méo ảnh"
 
-#: libs/image/kis_image.cc:1035
+#: libs/image/kis_image.cc:1101
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "Chuyển đổi loại ảnh"
 
-#: libs/image/kis_image.cc:1070
+#: libs/image/kis_image.cc:1136
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "Chuyển đổi loại ảnh"
 
-#: libs/image/kis_image.cc:1855
+#: libs/image/kis_image.cc:1921
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Crop Selections"
@@ -10930,7 +10935,7 @@ msgstr "Lùi ra"
 #: libs/pigment/compositeops/KoCompositeOps.h:323
 #: libs/pigment/KoCompositeOpRegistry.cpp:99
 #, fuzzy, kde-format
-msgid "Luminosity (SAI)"
+msgid "Luminosity/Shine (SAI)"
 msgstr "Độ dính"
 
 #: libs/pigment/KoBasicHistogramProducers.cpp:372
@@ -11042,9 +11047,7 @@ msgstr "XYZ (số nguyên 16-bit mỗi kênh)"
 msgid "Arithmetic"
 msgstr "&Lôgarít"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
 #: libs/pigment/KoCompositeOp.cpp:35 libs/pigment/KoCompositeOpRegistry.cpp:38
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:34
 #, fuzzy, kde-format
 msgid "Binary"
 msgstr "Tuyến tính"
@@ -11984,7 +11987,7 @@ msgstr "&Cỡ Màn hình"
 
 #: libs/ui/dialogs/kis_dlg_preferences.cc:595
 #: libs/ui/widgets/kis_advanced_color_space_selector.cc:772
-#: libs/ui/widgets/kis_color_space_selector.cc:199
+#: libs/ui/widgets/kis_color_space_selector.cc:200
 #, fuzzy, kde-format
 msgid "Install Color Profiles"
 msgstr "Khoảng màu"
@@ -20412,7 +20415,7 @@ msgctxt "combo box: select all layers without a label"
 msgid "No Label"
 msgstr "Lớp"
 
-#: libs/ui/widgets/kis_color_space_selector.cc:226
+#: libs/ui/widgets/kis_color_space_selector.cc:227
 #, fuzzy, kde-format
 #| msgid "Select similar colors"
 msgid "Select a Colorspace"
@@ -33572,12 +33575,6 @@ msgstr "Độ phân giải:"
 msgid "Save as HDR image (Rec. 2020 PQ)"
 msgstr ""
 
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: plugins/impex/ppm/kis_wdg_options_ppm.ui:39
-#, kde-format
-msgid "Ascii"
-msgstr ""
-
 #: plugins/impex/psd/psd_export.cc:67
 #, kde-format
 msgctxt "image conversion warning"
@@ -33606,12 +33603,6 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Unparsed Resource Block"
 msgstr "&Tài nguyên"
-
-#: plugins/impex/qimageio/kis_qimageio_import.cpp:61
-#, fuzzy, kde-format
-#| msgid "Import Image"
-msgid "Imported Image"
-msgstr "Nhập ảnh"
 
 #: plugins/impex/raw/3rdparty/libkdcraw/src/dcrawsettingswidget.cpp:224
 #, fuzzy, kde-format
@@ -39951,7 +39942,7 @@ msgstr "Công cụ &chổi"
 msgid "Pan Tool"
 msgstr "Công cụ &di chuyển"
 
-#: plugins/tools/basictools/kis_tool_path.cc:113
+#: plugins/tools/basictools/kis_tool_path.cc:114
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Draw Bezier Curve"

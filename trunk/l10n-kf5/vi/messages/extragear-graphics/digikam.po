@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-08 02:39+0200\n"
+"POT-Creation-Date: 2019-09-09 02:28+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a6\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nhóm Việt hoá KDE"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde-l10n-vi@kde.org"
 
 #: core/app/date/ddateedit.cpp:481
 #, kde-format
@@ -587,8 +577,8 @@ msgid "Assign Labe&ls"
 msgstr "Gán hồ sơ"
 
 #: core/app/items/utils/contextmenuhelper.cpp:706
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:326
 #: core/libs/dplugins/core/dpluginaction.cpp:99
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:326
 #, kde-format
 msgid "Import"
 msgstr "Nhập"
@@ -694,7 +684,7 @@ msgstr "Bỏ chọn"
 #: core/app/items/utils/contextmenuhelper.cpp:936
 #: core/app/main/digikamapp_setup.cpp:631
 #: core/libs/tags/manager/tagmngrtreeview.cpp:155
-#: core/libs/tags/manager/tagsmanager.cpp:720
+#: core/libs/tags/manager/tagsmanager.cpp:718
 #, kde-format
 msgid "Invert Selection"
 msgstr "Đảo vùng chọn"
@@ -3460,7 +3450,7 @@ msgstr "Thiết lập cục bộ"
 
 #: core/app/views/tableview/tableview_column_photo.cpp:84
 #: core/app/views/tableview/tableview_column_photo.cpp:108
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:293
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:293
 #: core/utilities/searchwindow/searchfields.cpp:448
 #: core/utilities/searchwindow/searchfields.cpp:467
 #: core/utilities/searchwindow/searchfields.cpp:477
@@ -9628,9 +9618,9 @@ msgid ""
 msgstr ""
 
 #: core/dplugins/generic/metadata/metadataedit/exif/exifadjust.cpp:118
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:214
 #: core/libs/dimg/filters/bcg/bcgsettings.cpp:92
 #: core/libs/dimg/filters/bw/bwsepiasettings.cpp:356
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:214
 #, kde-format
 msgid "Contrast:"
 msgstr "Độ tương phản:"
@@ -9661,9 +9651,9 @@ msgid ""
 msgstr ""
 
 #: core/dplugins/generic/metadata/metadataedit/exif/exifadjust.cpp:128
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:227
 #: core/libs/dimg/filters/hsl/hslsettings.cpp:109
 #: core/libs/dimg/filters/wb/wbsettings.cpp:261
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:227
 #, kde-format
 msgid "Saturation:"
 msgstr "Độ bão hoà:"
@@ -17031,7 +17021,7 @@ msgstr ""
 #: core/dplugins/generic/webservices/pinterest/pwindow.cpp:271
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:679
 #: core/dplugins/generic/webservices/twitter/twitterwindow.cpp:276
-#: core/libs/tags/manager/tagsmanager.cpp:892
+#: core/libs/tags/manager/tagsmanager.cpp:890
 #: core/utilities/imageeditor/editor/editorwindow.cpp:1112
 #: core/utilities/import/main/importui.cpp:1987
 #: core/utilities/setup/metadata/advancedmetadatatab.cpp:138
@@ -20695,6 +20685,174 @@ msgstr ""
 "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
 "muốn tiếp tục không?"
 
+#: core/dplugins/rawimport/native/rawimport.cpp:73
+#, fuzzy, kde-format
+msgid "Raw Import"
+msgstr "Nhập"
+
+#: core/dplugins/rawimport/native/rawimport.cpp:75
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:317
+#, fuzzy, kde-format
+msgid "Post Processing"
+msgstr "Thuộc tính"
+
+#: core/dplugins/rawimport/native/rawimport.cpp:180
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:316
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:241
+#, fuzzy, kde-format
+msgid "Raw Decoding"
+msgstr "Giải mã RAW"
+
+#: core/dplugins/rawimport/native/rawimportnativeplugin.cpp:56
+#, kde-format
+msgid "Import Raw Using Libraw"
+msgstr ""
+
+#: core/dplugins/rawimport/native/rawimportnativeplugin.cpp:71
+#, fuzzy, kde-format
+msgid "A tool to import Raw images using Libraw engine"
+msgstr "Hiện kiểu ảnh"
+
+#: core/dplugins/rawimport/native/rawimportnativeplugin.cpp:76
+#, fuzzy, kde-format
+msgid ""
+"<p>This Image Editor tool import Raw images using Libraw engine as decoder.</"
+"p>"
+msgstr "Đây là danh sách các mục sắp bị xoá."
+
+#: core/dplugins/rawimport/native/rawpreview.cpp:178
+#, fuzzy, kde-format
+msgid ""
+"Cannot decode RAW image\n"
+"\"%1\""
+msgstr ""
+"Không thể hiển thị ảnh\n"
+"« %1 »"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:180
+#, kde-format
+msgid "Abort"
+msgstr "Hủy bỏ"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:183
+#, fuzzy, kde-format
+msgid "Abort the current Raw image preview."
+msgstr "<p>Hủy bỏ vẽ ảnh hiện thời."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:186
+#, fuzzy, kde-format
+msgid "Update"
+msgstr "Ngày:"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:189
+#, fuzzy, kde-format
+msgid "Generate a Raw image preview using current settings."
+msgstr ""
+"<p>Ở đây bạn có thể xem lại những ảnh được tìm bằng thiết lập tìm kiếm hiện "
+"có."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:208
+#: core/libs/dimg/filters/bcg/bcgsettings.cpp:86
+#, kde-format
+msgid "Brightness:"
+msgstr "Độ sáng:"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:212
+#: core/libs/dimg/filters/bcg/bcgsettings.cpp:90
+#, fuzzy, kde-format
+msgid "Set here the brightness adjustment of the image."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ sáng của ảnh."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:218
+#: core/libs/dimg/filters/bcg/bcgsettings.cpp:96
+#: core/libs/dimg/filters/bw/bwsepiasettings.cpp:362
+#, fuzzy, kde-format
+msgid "Set here the contrast adjustment of the image."
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ tương phản của ảnh."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:220
+#: core/libs/dimg/filters/bcg/bcgsettings.cpp:98
+#: core/libs/dimg/filters/wb/wbsettings.cpp:268
+#, kde-format
+msgid "Gamma:"
+msgstr "Gamma (γ):"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:225
+#, fuzzy, kde-format
+msgid "Set here the gamma adjustment of the image"
+msgstr "<p>Ở đây hãy đặt cách điều chỉnh gamma của ảnh."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:232
+#, fuzzy, kde-format
+msgid "Set here the color saturation correction."
+msgstr "<p>Ở đây hãy đặt giá trị độ bão hoà."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:234
+#, fuzzy, kde-format
+msgid "Exposure (E.V):"
+msgstr "Tự động phơi nắng"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:239
+#, fuzzy, kde-format
+msgid ""
+"This value in E.V will be used to perform an exposure compensation of the "
+"image."
+msgstr ""
+"<p>Giá trị này (theo E.V.) sẽ được thêm vào giá trị bù về phơi nắng chính để "
+"đặt độ điều chỉnh phơi nắng kiểu ít."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:268
+#: core/libs/dimg/filters/bw/bwsepiasettings.cpp:351
+#, fuzzy, kde-format
+msgid "This is the curve adjustment of the image luminosity"
+msgstr "<p>Đây là cách điều chỉnh độ trưng của ảnh"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:270
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:322
+#: core/libs/tags/manager/tagpropwidget.cpp:138
+#: core/libs/tags/widgets/tageditdlg.cpp:195
+#: core/utilities/searchwindow/searchview.cpp:504
+#, kde-format
+msgid "Reset"
+msgstr "Đặt lại"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:272
+#, kde-format
+msgid "Reset curve to linear"
+msgstr ""
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:294
+#, fuzzy, kde-format
+msgid "Luminosity Curve"
+msgstr "Độ trưng"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:318
+#, fuzzy, kde-format
+msgid "Info"
+msgstr "Thông tin..."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:324
+#, fuzzy, kde-format
+msgid "Reset all settings to default values."
+msgstr "<p>Đặt lại mọi tham số lọc thành giá trị mặc định."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:328
+#, fuzzy, kde-format
+msgid "Import image to editor using current settings."
+msgstr ""
+"<p>Ở đây bạn có thể xem lại những ảnh được tìm bằng thiết lập tìm kiếm hiện "
+"có."
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:330
+#, fuzzy, kde-format
+msgid "Use Default"
+msgstr "Mặc định"
+
+#: core/dplugins/rawimport/native/rawsettingsbox.cpp:332
+#, kde-format
+msgid "Use general Raw decoding settings to load this image in editor."
+msgstr ""
+
 #: core/libs/album/engine/album.cpp:374
 #: core/libs/database/utils/ifaces/dio.cpp:594
 #, kde-format
@@ -23131,32 +23289,6 @@ msgstr "Chuẩn hoá"
 msgid "Brightness / Contrast / Gamma Filter"
 msgstr "Độ sáng/tương phản/gamma"
 
-#: core/libs/dimg/filters/bcg/bcgsettings.cpp:86
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:208
-#, kde-format
-msgid "Brightness:"
-msgstr "Độ sáng:"
-
-#: core/libs/dimg/filters/bcg/bcgsettings.cpp:90
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:212
-#, fuzzy, kde-format
-msgid "Set here the brightness adjustment of the image."
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ sáng của ảnh."
-
-#: core/libs/dimg/filters/bcg/bcgsettings.cpp:96
-#: core/libs/dimg/filters/bw/bwsepiasettings.cpp:362
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:218
-#, fuzzy, kde-format
-msgid "Set here the contrast adjustment of the image."
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh độ tương phản của ảnh."
-
-#: core/libs/dimg/filters/bcg/bcgsettings.cpp:98
-#: core/libs/dimg/filters/wb/wbsettings.cpp:268
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:220
-#, kde-format
-msgid "Gamma:"
-msgstr "Gamma (γ):"
-
 #: core/libs/dimg/filters/bcg/bcgsettings.cpp:103
 #, fuzzy, kde-format
 msgid "Set here the gamma adjustment of the image."
@@ -23632,12 +23764,6 @@ msgid ""
 msgstr ""
 "<b>Đen trắng có sắc nâu</b>:<p>bộ lọc này là trung lập hơn bộ lọc Sắc Nâu Đỏ."
 "</p>"
-
-#: core/libs/dimg/filters/bw/bwsepiasettings.cpp:351
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:268
-#, fuzzy, kde-format
-msgid "This is the curve adjustment of the image luminosity"
-msgstr "<p>Đây là cách điều chỉnh độ trưng của ảnh"
 
 #: core/libs/dimg/filters/bw/bwsepiasettings.cpp:377
 #, kde-format
@@ -29889,50 +30015,50 @@ msgstr "Tìm kiếm nhanh"
 msgid "Delete Selected from List"
 msgstr "Xoá các điều chọn"
 
-#: core/libs/tags/manager/taglist.cpp:73
+#: core/libs/tags/manager/taglist.cpp:74
 #, fuzzy, kde-format
 msgid "Add to List"
 msgstr "Thêm vào Bảng ánh sáng"
 
-#: core/libs/tags/manager/taglist.cpp:74
+#: core/libs/tags/manager/taglist.cpp:75
 #, kde-format
 msgid "Add selected tags to Quick Access List"
 msgstr ""
 
 #: core/libs/tags/manager/tagmngrtreeview.cpp:148
-#: core/libs/tags/manager/tagsmanager.cpp:710
+#: core/libs/tags/manager/tagsmanager.cpp:708
 #, fuzzy, kde-format
 msgid "Edit Tag Title"
 msgstr "Tập tin ảnh"
 
 #: core/libs/tags/manager/tagmngrtreeview.cpp:152
-#: core/libs/tags/manager/tagsmanager.cpp:714
+#: core/libs/tags/manager/tagsmanager.cpp:712
 #: core/libs/tags/widgets/tagfolderview.cpp:79
 #, kde-format
 msgid "Reset Tag Icon"
 msgstr "Đặt lại biểu tượng thẻ"
 
 #: core/libs/tags/manager/tagmngrtreeview.cpp:158
-#: core/libs/tags/manager/tagsmanager.cpp:723
+#: core/libs/tags/manager/tagsmanager.cpp:721
 #, kde-format
 msgid "Expand Tag Tree"
 msgstr ""
 
 #: core/libs/tags/manager/tagmngrtreeview.cpp:161
-#: core/libs/tags/manager/tagsmanager.cpp:726
+#: core/libs/tags/manager/tagsmanager.cpp:724
 #: core/libs/tags/widgets/tagfolderview.cpp:124
 #, fuzzy, kde-format
 msgid "Expand Selected Nodes"
 msgstr "Chọn Không gì"
 
 #: core/libs/tags/manager/tagmngrtreeview.cpp:164
-#: core/libs/tags/manager/tagsmanager.cpp:728
+#: core/libs/tags/manager/tagsmanager.cpp:726
 #, fuzzy, kde-format
 msgid "Remove Tag from Images"
 msgstr "Đọc siêu dữ liệu từ tập tin vào cơ sở dữ liệu"
 
 #: core/libs/tags/manager/tagpropwidget.cpp:102
-#: core/libs/tags/manager/tagsmanager.cpp:839
+#: core/libs/tags/manager/tagsmanager.cpp:837
 #, fuzzy, kde-format
 msgid "Tag Properties"
 msgstr "Thuộc tính"
@@ -29947,15 +30073,6 @@ msgstr "Hãy nhập vào tên tập ảnh mới:"
 #, kde-format
 msgid "&Icon:"
 msgstr "B&iểu tượng"
-
-#: core/libs/tags/manager/tagpropwidget.cpp:138
-#: core/libs/tags/widgets/tageditdlg.cpp:195
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:270
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:322
-#: core/utilities/searchwindow/searchview.cpp:504
-#, kde-format
-msgid "Reset"
-msgstr "Đặt lại"
 
 #: core/libs/tags/manager/tagpropwidget.cpp:149
 #: core/libs/tags/widgets/tageditdlg.cpp:211
@@ -29991,7 +30108,7 @@ msgstr ""
 msgid "Tags Manager"
 msgstr "Quản lý màu"
 
-#: core/libs/tags/manager/tagsmanager.cpp:373
+#: core/libs/tags/manager/tagsmanager.cpp:371
 #, fuzzy, kde-format
 msgctxt "%2 is a comma separated list of tags to be deleted."
 msgid ""
@@ -30004,7 +30121,7 @@ msgstr[0] ""
 "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
 "muốn tiếp tục không?"
 
-#: core/libs/tags/manager/tagsmanager.cpp:396
+#: core/libs/tags/manager/tagsmanager.cpp:394
 #, fuzzy, kde-format
 msgctxt "%2 is a comma separated list of tags to be deleted."
 msgid "Tag %2 is assigned to one or more items. Do you want to delete it?"
@@ -30014,20 +30131,20 @@ msgstr[0] ""
 "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
 "muốn tiếp tục không?"
 
-#: core/libs/tags/manager/tagsmanager.cpp:406
+#: core/libs/tags/manager/tagsmanager.cpp:404
 #, fuzzy, kde-format
 msgctxt "%2 is a comma separated list of tags to be deleted."
 msgid "Delete tag %2?"
 msgid_plural "Delete tags %2?"
 msgstr[0] "Xoá thẻ"
 
-#: core/libs/tags/manager/tagsmanager.cpp:412
+#: core/libs/tags/manager/tagsmanager.cpp:410
 #, fuzzy, kde-format
 msgid "Delete tag"
 msgid_plural "Delete tags"
 msgstr[0] "Xoá thẻ"
 
-#: core/libs/tags/manager/tagsmanager.cpp:538
+#: core/libs/tags/manager/tagsmanager.cpp:536
 #, kde-format
 msgid ""
 "<qt>digiKam will clean up tag metadata before setting tags from database.<br/"
@@ -30035,8 +30152,8 @@ msgid ""
 "Tags from Image).<br/> Do you want to continue?</qt>"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:550
-#: core/libs/tags/manager/tagsmanager.cpp:569
+#: core/libs/tags/manager/tagsmanager.cpp:548
+#: core/libs/tags/manager/tagsmanager.cpp:567
 #, fuzzy, kde-format
 msgid ""
 "This operation can take long time depending on collection size.\n"
@@ -30045,7 +30162,7 @@ msgstr ""
 "Thực hiện thao tác này thì giảm chất lượng màu của ảnh. Bạn có muốn tiếp tục "
 "không?"
 
-#: core/libs/tags/manager/tagsmanager.cpp:589
+#: core/libs/tags/manager/tagsmanager.cpp:587
 #, kde-format
 msgid ""
 "This operation will wipe all tags from database only.\n"
@@ -30053,113 +30170,113 @@ msgid ""
 "Do you want to continue?"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:649
+#: core/libs/tags/manager/tagsmanager.cpp:647
 #, kde-format
 msgid "Do you really want to remove the selected tag from all images?"
 msgid_plural "Do you really want to remove the selected tags from all images?"
 msgstr[0] ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:706
+#: core/libs/tags/manager/tagsmanager.cpp:704
 #, kde-format
 msgctxt "@title:menu"
 msgid "Organize"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:717
+#: core/libs/tags/manager/tagsmanager.cpp:715
 #, fuzzy, kde-format
 msgid "Create Tag from Address Book"
 msgstr "Tạo thẻ từ Sổ địa chỉ"
 
-#: core/libs/tags/manager/tagsmanager.cpp:731
+#: core/libs/tags/manager/tagsmanager.cpp:729
 #, fuzzy, kde-format
 msgid "Delete Unassigned Tags"
 msgstr "Không có thẻ vừa được gán"
 
-#: core/libs/tags/manager/tagsmanager.cpp:734
+#: core/libs/tags/manager/tagsmanager.cpp:732
 #, kde-format
 msgid "Add new tag to current tag. Current tag is last clicked tag."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:737
+#: core/libs/tags/manager/tagsmanager.cpp:735
 #, kde-format
 msgid ""
 "Delete selected items. Also work with multiple items, but will not delete "
 "the root tag."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:741
+#: core/libs/tags/manager/tagsmanager.cpp:739
 #, fuzzy, kde-format
 msgid "Edit title from selected tag."
 msgstr "Đặt lại biểu tượng thẻ"
 
-#: core/libs/tags/manager/tagsmanager.cpp:743
+#: core/libs/tags/manager/tagsmanager.cpp:741
 #, kde-format
 msgid "Reset icon to selected tags. Works with multiple selection."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:746
+#: core/libs/tags/manager/tagsmanager.cpp:744
 #, kde-format
 msgid "Invert selection. Only visible items will be selected"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:749
+#: core/libs/tags/manager/tagsmanager.cpp:747
 #, kde-format
 msgid "Expand tag tree by one level"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:751
+#: core/libs/tags/manager/tagsmanager.cpp:749
 #, kde-format
 msgid "Selected items will be expanded"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:753
+#: core/libs/tags/manager/tagsmanager.cpp:751
 #, kde-format
 msgid "Delete selected tag(s) from images. Works with multiple selection."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:756
+#: core/libs/tags/manager/tagsmanager.cpp:754
 #, kde-format
 msgid "Delete all tags that are not assigned to images. Use with caution."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:793
+#: core/libs/tags/manager/tagsmanager.cpp:791
 #, fuzzy, kde-format
 msgid "Sync &Export"
 msgstr "&Xuất"
 
-#: core/libs/tags/manager/tagsmanager.cpp:797
+#: core/libs/tags/manager/tagsmanager.cpp:795
 #, fuzzy, kde-format
 msgid "Write Tags from Database to Image"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: core/libs/tags/manager/tagsmanager.cpp:801
+#: core/libs/tags/manager/tagsmanager.cpp:799
 #, fuzzy, kde-format
 msgid "Read Tags from Image"
 msgstr "Đọc siêu dữ liệu từ tập tin vào cơ sở dữ liệu"
 
-#: core/libs/tags/manager/tagsmanager.cpp:804
+#: core/libs/tags/manager/tagsmanager.cpp:802
 #, fuzzy, kde-format
 msgid "Wipe all tags from Database only"
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: core/libs/tags/manager/tagsmanager.cpp:806
+#: core/libs/tags/manager/tagsmanager.cpp:804
 #, fuzzy, kde-format
 msgid "Write Tags Metadata to Image."
 msgstr "Ghi siêu dữ liệu vào mỗi tập tin"
 
-#: core/libs/tags/manager/tagsmanager.cpp:808
+#: core/libs/tags/manager/tagsmanager.cpp:806
 #, kde-format
 msgid "Read tags from Images into Database. Existing tags will not be affected"
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:811
+#: core/libs/tags/manager/tagsmanager.cpp:809
 #, kde-format
 msgid ""
 "Delete all tags from database only. Will not sync with files. Proceed with "
 "caution."
 msgstr ""
 
-#: core/libs/tags/manager/tagsmanager.cpp:893
+#: core/libs/tags/manager/tagsmanager.cpp:891
 #, fuzzy, kde-format
 msgid ""
 "This option will remove all tags which\n"
@@ -30169,7 +30286,7 @@ msgstr ""
 "Thực hiện thao tác này thì giảm chất lượng màu của ảnh. Bạn có muốn tiếp tục "
 "không?"
 
-#: core/libs/tags/manager/tagsmanager.cpp:1008
+#: core/libs/tags/manager/tagsmanager.cpp:1006
 #, fuzzy, kde-format
 msgid "%1 unused tag were removed."
 msgid_plural "%1 unused tags were removed."
@@ -39442,116 +39559,6 @@ msgstr "Bỏ thẻ"
 msgid "Assign Labels"
 msgstr "Gán hồ sơ"
 
-#: core/utilities/imageeditor/rawimport/rawimport.cpp:73
-#, fuzzy, kde-format
-msgid "Raw Import"
-msgstr "Nhập"
-
-#: core/utilities/imageeditor/rawimport/rawimport.cpp:75
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:317
-#, fuzzy, kde-format
-msgid "Post Processing"
-msgstr "Thuộc tính"
-
-#: core/utilities/imageeditor/rawimport/rawimport.cpp:180
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:316
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:241
-#, fuzzy, kde-format
-msgid "Raw Decoding"
-msgstr "Giải mã RAW"
-
-#: core/utilities/imageeditor/rawimport/rawpreview.cpp:179
-#, fuzzy, kde-format
-msgid ""
-"Cannot decode RAW image\n"
-"\"%1\""
-msgstr ""
-"Không thể hiển thị ảnh\n"
-"« %1 »"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:180
-#, kde-format
-msgid "Abort"
-msgstr "Hủy bỏ"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:183
-#, fuzzy, kde-format
-msgid "Abort the current Raw image preview."
-msgstr "<p>Hủy bỏ vẽ ảnh hiện thời."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:186
-#, fuzzy, kde-format
-msgid "Update"
-msgstr "Ngày:"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:189
-#, fuzzy, kde-format
-msgid "Generate a Raw image preview using current settings."
-msgstr ""
-"<p>Ở đây bạn có thể xem lại những ảnh được tìm bằng thiết lập tìm kiếm hiện "
-"có."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:225
-#, fuzzy, kde-format
-msgid "Set here the gamma adjustment of the image"
-msgstr "<p>Ở đây hãy đặt cách điều chỉnh gamma của ảnh."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:232
-#, fuzzy, kde-format
-msgid "Set here the color saturation correction."
-msgstr "<p>Ở đây hãy đặt giá trị độ bão hoà."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:234
-#, fuzzy, kde-format
-msgid "Exposure (E.V):"
-msgstr "Tự động phơi nắng"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:239
-#, fuzzy, kde-format
-msgid ""
-"This value in E.V will be used to perform an exposure compensation of the "
-"image."
-msgstr ""
-"<p>Giá trị này (theo E.V.) sẽ được thêm vào giá trị bù về phơi nắng chính để "
-"đặt độ điều chỉnh phơi nắng kiểu ít."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:272
-#, kde-format
-msgid "Reset curve to linear"
-msgstr ""
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:294
-#, fuzzy, kde-format
-msgid "Luminosity Curve"
-msgstr "Độ trưng"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:318
-#, fuzzy, kde-format
-msgid "Info"
-msgstr "Thông tin..."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:324
-#, fuzzy, kde-format
-msgid "Reset all settings to default values."
-msgstr "<p>Đặt lại mọi tham số lọc thành giá trị mặc định."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:328
-#, fuzzy, kde-format
-msgid "Import image to editor using current settings."
-msgstr ""
-"<p>Ở đây bạn có thể xem lại những ảnh được tìm bằng thiết lập tìm kiếm hiện "
-"có."
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:330
-#, fuzzy, kde-format
-msgid "Use Default"
-msgstr "Mặc định"
-
-#: core/utilities/imageeditor/rawimport/rawsettingsbox.cpp:332
-#, kde-format
-msgid "Use general Raw decoding settings to load this image in editor."
-msgstr ""
-
 #: core/utilities/imageeditor/widgets/canvas.cpp:176
 #, fuzzy, kde-format
 msgid ""
@@ -46377,6 +46384,14 @@ msgstr "Thoát khỏi chế độ toàn màn hình"
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "Lục:"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Nhóm Việt hoá KDE"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde-l10n-vi@kde.org"
 
 #, fuzzy
 #~| msgid "Image Settings"

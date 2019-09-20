@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-19 02:30+0200\n"
+"POT-Creation-Date: 2019-09-20 02:35+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -16,16 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.6.4a6\n"
-
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Nhóm Việt hoá KDE"
-
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde-l10n-vi@kde.org"
 
 #: core/app/date/ddateedit.cpp:481
 #, kde-format
@@ -20691,7 +20681,7 @@ msgstr ""
 "Thẻ « %1 » có một thẻ phụ. Xoá thẻ này thì cũng xoá thẻ phụ đó. Bạn có chắc "
 "muốn tiếp tục không?"
 
-#: core/dplugins/rawimport/darktable/rawimportdarktableplugin.cpp:219
+#: core/dplugins/rawimport/darktable/rawimportdarktableplugin.cpp:246
 #, kde-format
 msgid ""
 "Error to import RAW image with DarkTable\n"
@@ -20727,11 +20717,13 @@ msgid "A tool to import Raw images using Libraw engine"
 msgstr "Hiện kiểu ảnh"
 
 #: core/dplugins/rawimport/native/rawimportnativeplugin.cpp:76
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "<p>This Image Editor tool import Raw images using Libraw engine as decoder.</"
-"p>"
-msgstr "Đây là danh sách các mục sắp bị xoá."
+"p><p>This is the <b>native</b> Raw Import tool included in core application. "
+"It do not require any external engine to work.</p><p>See Libraw web site for "
+"details: <a href='https://www.libraw.org/'>https://www.libraw.org/</a></p>"
+msgstr ""
 
 #: core/dplugins/rawimport/native/rawpreview.cpp:178
 #, fuzzy, kde-format
@@ -20866,14 +20858,14 @@ msgstr "Mặc định"
 msgid "Use general Raw decoding settings to load this image in editor."
 msgstr ""
 
-#: core/dplugins/rawimport/rawtherapee/rawimportrawtherapeeplugin.cpp:167
+#: core/dplugins/rawimport/rawtherapee/rawimportrawtherapeeplugin.cpp:190
 #, kde-format
 msgid ""
 "Error to import RAW image with RawTherapee\n"
 "Close this dialog to load RAW image with native import tool"
 msgstr ""
 
-#: core/dplugins/rawimport/ufraw/rawimportufrawplugin.cpp:169
+#: core/dplugins/rawimport/ufraw/rawimportufrawplugin.cpp:191
 #, kde-format
 msgid ""
 "Error to import RAW image with UFRaw\n"
@@ -44052,7 +44044,7 @@ msgstr ""
 "<ul><li>Chọn: khả năng quản lý màu đã được bật</li><li>Không chọn: khả năng "
 "quản lý màu đã bị tắt</li></ul>"
 
-#: core/utilities/setup/editor/setupraw.cpp:104
+#: core/utilities/setup/editor/setupraw.cpp:108
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -44061,44 +44053,49 @@ msgid ""
 "interpretation and processing.</p>"
 msgstr ""
 
-#: core/utilities/setup/editor/setupraw.cpp:122
+#: core/utilities/setup/editor/setupraw.cpp:126
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Open raw files in the image editor"
 msgstr "Mở mục đã chọn trong bộ sửa ảnh."
 
-#: core/utilities/setup/editor/setupraw.cpp:125
+#: core/utilities/setup/editor/setupraw.cpp:129
 #, kde-format
 msgctxt "@option:radio Open raw files..."
 msgid "Fast and simple, as 8 bit image"
 msgstr ""
 
-#: core/utilities/setup/editor/setupraw.cpp:127
+#: core/utilities/setup/editor/setupraw.cpp:131
 #, fuzzy, kde-format
 msgctxt "@option:radio Open raw files..."
 msgid "Using the default settings, in 16 bit"
 msgstr "Hoàn nguyên về thiết lập mặc định"
 
-#: core/utilities/setup/editor/setupraw.cpp:129
+#: core/utilities/setup/editor/setupraw.cpp:133
 #, kde-format
 msgctxt "@option:radio Open raw files..."
 msgid "Always open the Raw Import Tool to customize settings"
 msgstr ""
 
-#: core/utilities/setup/editor/setupraw.cpp:144
+#: core/utilities/setup/editor/setupraw.cpp:148
 #, fuzzy, kde-format
 #| msgid "Default"
 msgid " (default)"
 msgstr "Mặc định"
 
-#: core/utilities/setup/editor/setupraw.cpp:180
+#: core/utilities/setup/editor/setupraw.cpp:157
+#, kde-format
+msgid "About this Raw Import tool..."
+msgstr ""
+
+#: core/utilities/setup/editor/setupraw.cpp:191
 #, fuzzy, kde-format
 #| msgid "Behavior"
 msgctxt "@title:tab"
 msgid "RAW Behavior"
 msgstr "Ứng xử"
 
-#: core/utilities/setup/editor/setupraw.cpp:181
+#: core/utilities/setup/editor/setupraw.cpp:192
 #, fuzzy, kde-format
 msgctxt "@title:tab"
 msgid "RAW Default Settings"
@@ -46417,6 +46414,20 @@ msgstr "Thoát khỏi chế độ toàn màn hình"
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "Lục:"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Nhóm Việt hoá KDE"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "kde-l10n-vi@kde.org"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>This Image Editor tool import Raw images using Libraw engine as "
+#~ "decoder.</p>"
+#~ msgstr "Đây là danh sách các mục sắp bị xoá."
 
 #, fuzzy
 #~| msgid "Image Settings"

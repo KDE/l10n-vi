@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-21 02:26+0200\n"
+"POT-Creation-Date: 2019-10-28 02:27+0100\n"
 "PO-Revision-Date: 2013-08-23 10:30+0800\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -2153,7 +2153,7 @@ msgstr ""
 "Kích thước của biểu tượng trong thanh vị trí (-1 nghĩa là \"sử dụng kích "
 "thước nhỏ theo sắc thái\")"
 
-#: panels/places/placesitemmodel.cpp:201
+#: panels/places/placesitemmodel.cpp:203
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Eject '%1'"
@@ -2161,7 +2161,7 @@ msgctxt "@item"
 msgid "Eject"
 msgstr "Đẩy '%1' ra"
 
-#: panels/places/placesitemmodel.cpp:236
+#: panels/places/placesitemmodel.cpp:238
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Release '%1'"
@@ -2169,7 +2169,7 @@ msgctxt "@item"
 msgid "Release"
 msgstr "Thả '%1'"
 
-#: panels/places/placesitemmodel.cpp:238
+#: panels/places/placesitemmodel.cpp:240
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Safely Remove '%1'"
@@ -2177,7 +2177,7 @@ msgctxt "@item"
 msgid "Safely Remove"
 msgstr "Gỡ bỏ '%1' an toàn"
 
-#: panels/places/placesitemmodel.cpp:241
+#: panels/places/placesitemmodel.cpp:243
 #, fuzzy, kde-format
 #| msgctxt "@item"
 #| msgid "Unmount '%1'"
@@ -2185,19 +2185,40 @@ msgctxt "@item"
 msgid "Unmount"
 msgstr "Bỏ gắn '%1'"
 
-#: panels/places/placesitemmodel.cpp:263
+#: panels/places/placesitemmodel.cpp:265
 #, kde-format
 msgctxt "@info"
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr "Thiết bị '%1' không phải là đĩa nên không thể được đẩy ra."
 
-#: panels/places/placesitemmodel.cpp:498
+#: panels/places/placesitemmodel.cpp:485
+#, kde-format
+msgid "One or more files on this device are open within an application."
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:492
+#, kde-kuit-format
+msgid ""
+"One or more files on this device are opened in application <application>"
+"\"%2\"</application>."
+msgid_plural ""
+"One or more files on this device are opened in following applications: "
+"<application>%2</application>."
+msgstr[0] ""
+
+#: panels/places/placesitemmodel.cpp:494
+#, kde-format
+msgctxt "separator in list of apps blocking device unmount"
+msgid ", "
+msgstr ""
+
+#: panels/places/placesitemmodel.cpp:522
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Lỗi xảy ra khi đang truy cập '%1', phản hồi từ hệ thống: %2"
 
-#: panels/places/placesitemmodel.cpp:502
+#: panels/places/placesitemmodel.cpp:526
 #, kde-format
 msgctxt "@info"
 msgid "An error occurred while accessing '%1'"
@@ -2325,113 +2346,145 @@ msgstr "Tìm gì"
 msgid "Show facets widget"
 msgstr "Hiện thư mục trước"
 
-#: search/dolphinfacetswidget.cpp:52
-#, kde-format
-msgctxt "@option:check"
-msgid "Any"
-msgstr ""
+#: search/dolphinfacetswidget.cpp:38
+#, fuzzy, kde-format
+#| msgid "By Type"
+msgctxt "@item:inlistbox"
+msgid "Any Type"
+msgstr "Theo kiểu"
 
-#: search/dolphinfacetswidget.cpp:53
+#: search/dolphinfacetswidget.cpp:39
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Folders"
-msgctxt "@option:check"
+msgctxt "@item:inlistbox"
 msgid "Folders"
 msgstr "Thư mục"
 
-#: search/dolphinfacetswidget.cpp:54
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:40
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Documents"
+msgctxt "@item:inlistbox"
 msgid "Documents"
 msgstr "Tài liệu"
 
-#: search/dolphinfacetswidget.cpp:55
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:41
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Images"
+msgctxt "@item:inlistbox"
 msgid "Images"
 msgstr "Ảnh"
 
-#: search/dolphinfacetswidget.cpp:56
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:42
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Audio Files"
+msgctxt "@item:inlistbox"
 msgid "Audio Files"
 msgstr "Tập tin âm thanh"
 
-#: search/dolphinfacetswidget.cpp:57
-#, kde-format
-msgctxt "@option:check"
+#: search/dolphinfacetswidget.cpp:43
+#, fuzzy, kde-format
+#| msgctxt "@option:check"
+#| msgid "Videos"
+msgctxt "@item:inlistbox"
 msgid "Videos"
 msgstr "Phim"
 
-#: search/dolphinfacetswidget.cpp:70
-#, kde-format
-msgctxt "@option:option"
-msgid "Anytime"
-msgstr "Bất kỳ lúc nào"
+#: search/dolphinfacetswidget.cpp:49
+#, fuzzy, kde-format
+#| msgid "By Date"
+msgctxt "@item:inlistbox"
+msgid "Any Date"
+msgstr "Theo ngày"
 
-#: search/dolphinfacetswidget.cpp:71
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:50
+#, fuzzy, kde-format
+#| msgctxt "@title:group Date"
+#| msgid "Today"
+msgctxt "@item:inlistbox"
 msgid "Today"
 msgstr "Hôm nay"
 
-#: search/dolphinfacetswidget.cpp:72
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:51
+#, fuzzy, kde-format
+#| msgctxt "@title:group Date"
+#| msgid "Yesterday"
+msgctxt "@item:inlistbox"
 msgid "Yesterday"
 msgstr "Hôm qua"
 
-#: search/dolphinfacetswidget.cpp:73
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:52
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Week"
+msgctxt "@item:inlistbox"
 msgid "This Week"
 msgstr "Tuần này"
 
-#: search/dolphinfacetswidget.cpp:74
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:53
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Month"
+msgctxt "@item:inlistbox"
 msgid "This Month"
 msgstr "Tháng này"
 
-#: search/dolphinfacetswidget.cpp:75
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:54
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "This Year"
+msgctxt "@item:inlistbox"
 msgid "This Year"
 msgstr "Năm này"
 
-#: search/dolphinfacetswidget.cpp:88
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:58
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "Any Rating"
+msgctxt "@item:inlistbox"
 msgid "Any Rating"
 msgstr "Mọi đánh giá"
 
-#: search/dolphinfacetswidget.cpp:89
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:59
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "1 or more"
+msgctxt "@item:inlistbox"
 msgid "1 or more"
 msgstr "bằng hoặc hơn 1"
 
-#: search/dolphinfacetswidget.cpp:90
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:60
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "2 or more"
+msgctxt "@item:inlistbox"
 msgid "2 or more"
 msgstr "bằng hoặc hơn 2"
 
-#: search/dolphinfacetswidget.cpp:91
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:61
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "3 or more"
+msgctxt "@item:inlistbox"
 msgid "3 or more"
 msgstr "bằng hoặc hơn 3"
 
-#: search/dolphinfacetswidget.cpp:92
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:62
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "4 or more"
+msgctxt "@item:inlistbox"
 msgid "4 or more"
 msgstr "bằng hoặc hơn 4"
 
-#: search/dolphinfacetswidget.cpp:93
-#, kde-format
-msgctxt "@option:option"
+#: search/dolphinfacetswidget.cpp:63
+#, fuzzy, kde-format
+#| msgctxt "@option:option"
+#| msgid "Highest Rating"
+msgctxt "@item:inlistbox"
 msgid "Highest Rating"
 msgstr "Đánh giá cao nhất"
 
@@ -4332,6 +4385,25 @@ msgctxt "@info:status"
 msgid "Updating version information..."
 msgstr "Đang cập nhật thông tin phiên bản..."
 
+#, fuzzy
+#~| msgctxt "@title:window"
+#~| msgid "Folders"
+#~ msgctxt "@option:check"
+#~ msgid "Folders"
+#~ msgstr "Thư mục"
+
+#~ msgctxt "@option:option"
+#~ msgid "Anytime"
+#~ msgstr "Bất kỳ lúc nào"
+
+#~ msgctxt "@option:option"
+#~ msgid "Today"
+#~ msgstr "Hôm nay"
+
+#~ msgctxt "@option:option"
+#~ msgid "Yesterday"
+#~ msgstr "Hôm qua"
+
 #~ msgctxt "@action:inmenu"
 #~ msgid "Location Bar"
 #~ msgstr "Thanh vị trí"
@@ -4852,12 +4924,6 @@ msgstr "Đang cập nhật thông tin phiên bản..."
 #~ msgstr "Theo cỡ"
 
 #, fuzzy
-#~| msgid "By Date"
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Date"
-#~ msgstr "Theo ngày"
-
-#, fuzzy
 #~| msgid "By Permissions"
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Permissions"
@@ -4874,12 +4940,6 @@ msgstr "Đang cập nhật thông tin phiên bản..."
 #~ msgctxt "@item:inlistbox Sort"
 #~ msgid "By Group"
 #~ msgstr "Theo nhóm"
-
-#, fuzzy
-#~| msgid "By Type"
-#~ msgctxt "@item:inlistbox Sort"
-#~ msgid "By Type"
-#~ msgstr "Theo kiểu"
 
 #, fuzzy
 #~| msgid "Documentation"

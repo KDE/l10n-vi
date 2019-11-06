@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: drkonqi\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-24 03:33+0200\n"
+"POT-Creation-Date: 2019-11-06 03:32+0100\n"
 "PO-Revision-Date: 2012-01-16 16:50+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -590,7 +590,15 @@ msgctxt "@info:tooltip"
 msgid "Use this button to install the missing debug symbols packages."
 msgstr "Sử dụng nút này để cài đặt các gói biểu tượng gỡ lỗi cần thiết."
 
-#: backtracewidget.cpp:81
+#: backtracewidget.cpp:82
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Symbol installation is unavailable because the application was updated or "
+"uninstalled after it had been started."
+msgstr ""
+
+#: backtracewidget.cpp:87
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -598,7 +606,7 @@ msgid ""
 msgstr ""
 "Sử dụng nút này để sao chép thông tin lỗi (backtrace) vào bảng nhớ tạm."
 
-#: backtracewidget.cpp:88
+#: backtracewidget.cpp:94
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -608,7 +616,7 @@ msgstr ""
 "Sử dụng nút này để lưu thông tin lỗi (backtrace) vào một tập tin. Điều này "
 "có ích nếu bạn muốn xem lại hay báo cáo lỗi sau."
 
-#: backtracewidget.cpp:109
+#: backtracewidget.cpp:115
 #, kde-format
 msgid ""
 "<h2>What is a \"backtrace\" ?</h2><p>A backtrace basically describes what "
@@ -624,20 +632,20 @@ msgstr ""
 "backtrace thường được dùng trong các quá trình gỡ lỗi tương tác và sau khi "
 "gặp lỗi.</p>"
 
-#: backtracewidget.cpp:129
+#: backtracewidget.cpp:135
 #: bugzillaintegration/reportassistantpages_bugzilla_duplicates.cpp:648
 #, kde-format
 msgctxt "@info:status"
 msgid "Loading..."
 msgstr "Đang tải..."
 
-#: backtracewidget.cpp:133
+#: backtracewidget.cpp:139
 #, kde-format
 msgctxt "@info:status"
 msgid "Generating backtrace... (this may take some time)"
 msgstr "Đang tạo backtrace... (điều này cần chút thời gian)"
 
-#: backtracewidget.cpp:183
+#: backtracewidget.cpp:189
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -647,13 +655,13 @@ msgstr ""
 "Một trình gỡ lỗi khác hiện đang gỡ lỗi ứng dụng này. Không thể lấy được "
 "thông tin lỗi."
 
-#: backtracewidget.cpp:187
+#: backtracewidget.cpp:193
 #, kde-format
 msgctxt "@info:status"
 msgid "The crash information could not be fetched."
 msgstr "Không thể lấy được thông tin lỗi."
 
-#: backtracewidget.cpp:189
+#: backtracewidget.cpp:195
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -665,31 +673,31 @@ msgstr ""
 "DrKonqi không thể lấy backtrace. Hãy đóng trình gỡ lỗi khác và nhấn "
 "<interface>Tải lại</interface>."
 
-#: backtracewidget.cpp:229
+#: backtracewidget.cpp:235
 #, kde-format
 msgctxt "@info"
 msgid "The generated crash information is useful"
 msgstr "Thông tin lỗi đã tạo có hữu ích"
 
-#: backtracewidget.cpp:232
+#: backtracewidget.cpp:238
 #, kde-format
 msgctxt "@info"
 msgid "The generated crash information may be useful"
 msgstr "Thông tin lỗi đã tạo có thể hữu ích"
 
-#: backtracewidget.cpp:235
+#: backtracewidget.cpp:241
 #, kde-format
 msgctxt "@info"
 msgid "The generated crash information is probably not useful"
 msgstr "Thông tin lỗi đã tạo có thể không hữu ích"
 
-#: backtracewidget.cpp:238
+#: backtracewidget.cpp:244
 #, kde-format
 msgctxt "@info"
 msgid "The generated crash information is not useful"
 msgstr "Thông tin lỗi đã tạo không hữu ích"
 
-#: backtracewidget.cpp:242
+#: backtracewidget.cpp:248
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -698,7 +706,7 @@ msgid ""
 msgstr ""
 "Đánh giá thông tin lỗi này không hợp lệ. Đây là một lỗi của bản thân DrKonqi."
 
-#: backtracewidget.cpp:253
+#: backtracewidget.cpp:259
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -716,7 +724,7 @@ msgstr ""
 "url='%2'>danh sách của tập tin</link>) và nhấn <interface>Tải lại</"
 "interface>."
 
-#: backtracewidget.cpp:270
+#: backtracewidget.cpp:276
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -730,19 +738,19 @@ msgstr ""
 "url='%2'>danh sách của tập tin</link>) và nhấn <interface>Tải lại</"
 "interface>."
 
-#: backtracewidget.cpp:286
+#: backtracewidget.cpp:292
 #, kde-format
 msgctxt "@info:status"
 msgid "The debugger has quit unexpectedly."
 msgstr "Trình gỡ lỗi đã thoát bất ngờ."
 
-#: backtracewidget.cpp:289 backtracewidget.cpp:304
+#: backtracewidget.cpp:295 backtracewidget.cpp:310
 #, kde-format
 msgctxt "@info:status"
 msgid "The crash information could not be generated."
 msgstr "Không thể tạo thông tin lỗi."
 
-#: backtracewidget.cpp:292
+#: backtracewidget.cpp:298
 #, kde-kuit-format
 msgctxt "@info/rich"
 msgid ""
@@ -752,7 +760,7 @@ msgstr ""
 "Bạn có thể thử tạo lại backtrace bằng cách nhấn <interface>Tải lại</"
 "interface>."
 
-#: backtracewidget.cpp:300
+#: backtracewidget.cpp:306
 #, fuzzy, kde-format
 #| msgctxt "@info:status"
 #| msgid "The debugger application is missing or could not be launched."
@@ -762,7 +770,7 @@ msgid ""
 "strong>"
 msgstr "Ứng dụng gỡ lỗi còn thiếu hoặc không thể chạy được."
 
-#: backtracewidget.cpp:306
+#: backtracewidget.cpp:312
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info/rich"
 #| msgid ""
@@ -775,13 +783,13 @@ msgid ""
 msgstr ""
 "Bạn cần phải cài đặt gói gỡ lỗi (%1) và nhấn <interface>Tải lại</interface>."
 
-#: backtracewidget.cpp:365
+#: backtracewidget.cpp:371
 #, kde-format
 msgctxt "@title:window"
 msgid "Error during the installation of debug symbols"
 msgstr "Lỗi khi đang cài đặt biểu tượng gỡ lỗi"
 
-#: backtracewidget.cpp:397
+#: backtracewidget.cpp:403
 #, kde-format
 msgid ""
 "The packages containing debug information for the following application and "
@@ -789,7 +797,7 @@ msgid ""
 msgstr ""
 "Các gói chứa thông tin gỡ lỗi còn thiếu cho các ứng dụng và thư viện sau:"
 
-#: backtracewidget.cpp:406
+#: backtracewidget.cpp:412
 #, kde-format
 msgctxt "messagebox title"
 msgid "Missing debug information packages"
@@ -2620,6 +2628,18 @@ msgstr ""
 "backtrace từ thẻ Thông tin nhà phát triển.)</para>"
 
 #: drkonqidialog.cpp:132
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>The reporting assistant is disabled because the crashed application "
+"appears to have been updated or uninstalled since it had been started. This "
+"prevents accurate crash reporting and can also be the cause of this crash.</"
+"para><para>After updating it is always a good idea to log out and back in to "
+"make sure the update is fully applied and will not cause any side effects.</"
+"para>"
+msgstr ""
+
+#: drkonqidialog.cpp:140
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2637,7 +2657,7 @@ msgstr ""
 "link></para><para><note> Nếu bạn không muốn báo cáo lỗi này, bạn có thể đóng "
 "hộp thoại lại.</note></para>"
 
-#: drkonqidialog.cpp:138
+#: drkonqidialog.cpp:146
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2651,13 +2671,13 @@ msgstr ""
 "<para>Bạn không thể báo cáo lỗi này, bởi vì ứng dụng không cung cấp một địa "
 "chỉ báo cáo lỗi.</para>"
 
-#: drkonqidialog.cpp:147
+#: drkonqidialog.cpp:155
 #, kde-format
 msgctxt "@label"
 msgid "Details:"
 msgstr "Chi tiết:"
 
-#: drkonqidialog.cpp:150
+#: drkonqidialog.cpp:158
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2671,7 +2691,7 @@ msgstr ""
 "<para>Tập tin thực thi: <application>%1</application> PID: <numid>%2</numid> "
 "Tín hiệu: %3 (%4)</para>"
 
-#: drkonqidialog.cpp:180
+#: drkonqidialog.cpp:188
 #, fuzzy, kde-format
 #| msgctxt ""
 #| "@action:button this is the debug menu button label which contains the "
@@ -2683,13 +2703,13 @@ msgctxt ""
 msgid "&Debug"
 msgstr "Gỡ lỗi"
 
-#: drkonqidialog.cpp:182
+#: drkonqidialog.cpp:190
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Starts a program to debug the crashed application."
 msgstr "Bắt đầu chương trình gỡ lỗi cho ứng dụng lỗi."
 
-#: drkonqidialog.cpp:204
+#: drkonqidialog.cpp:212
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Report Bug"
@@ -2697,13 +2717,13 @@ msgctxt "@action:button"
 msgid "Report &Bug"
 msgstr "Báo cáo lỗi"
 
-#: drkonqidialog.cpp:206
+#: drkonqidialog.cpp:214
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Starts the bug report assistant."
 msgstr "Bắt đầu trợ tá báo cáo lỗi."
 
-#: drkonqidialog.cpp:216
+#: drkonqidialog.cpp:224
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Restart Application"
@@ -2711,19 +2731,19 @@ msgctxt "@action:button"
 msgid "&Restart Application"
 msgstr "Khởi động lại ứng dụng"
 
-#: drkonqidialog.cpp:218
+#: drkonqidialog.cpp:226
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Use this button to restart the crashed application."
 msgstr "Dùng nút này để khởi động lại ứng dụng lỗi."
 
-#: drkonqidialog.cpp:230
+#: drkonqidialog.cpp:238
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Close this dialog (you will lose the crash information.)"
 msgstr "Đóng hộp thoại này (bạn sẽ mất thông tin lỗi.)"
 
-#: drkonqidialog.cpp:240
+#: drkonqidialog.cpp:248
 #, kde-format
 msgctxt "@action:inmenu 1 is the debugger name"
 msgid "Debug in %1"

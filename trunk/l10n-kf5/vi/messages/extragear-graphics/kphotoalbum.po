@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-01-05 02:44+0100\n"
+"POT-Creation-Date: 2020-01-09 02:37+0100\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -4226,7 +4226,7 @@ msgctxt "'Name' of the image directory"
 msgid "Image/Video root directory"
 msgstr "Thư mục ảnh (động) gốc: "
 
-#: Plugins/Interface.cpp:106 XMLDB/FileReader.cpp:482
+#: Plugins/Interface.cpp:106 XMLDB/FileReader.cpp:506
 #, kde-format
 msgid "Places"
 msgstr "Nơi"
@@ -4308,7 +4308,7 @@ msgid ""
 "when viewing the images."
 msgstr ""
 
-#: Settings/BirthdayPage.cpp:146 XMLDB/FileReader.cpp:481
+#: Settings/BirthdayPage.cpp:146 XMLDB/FileReader.cpp:505
 #, kde-format
 msgid "People"
 msgstr "Người"
@@ -5009,12 +5009,12 @@ msgstr ""
 msgid "Trust Time Stamps?"
 msgstr "Theo nhãn thời gian ?"
 
-#: Settings/SettingsData.cpp:367 XMLDB/FileReader.cpp:483
+#: Settings/SettingsData.cpp:367 XMLDB/FileReader.cpp:507
 #, kde-format
 msgid "Events"
 msgstr ""
 
-#: Settings/SettingsData.cpp:368 XMLDB/FileReader.cpp:484
+#: Settings/SettingsData.cpp:368 XMLDB/FileReader.cpp:508
 #, fuzzy, kde-format
 #| msgid "New Images"
 msgid "untagged"
@@ -6034,7 +6034,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "Không thể sao chép « %1 » vào « %2 »."
 
 #: Utilities/DemoUtil.cpp:47 Utilities/DemoUtil.cpp:64
-#: Utilities/DemoUtil.cpp:98 XMLDB/FileReader.cpp:494
+#: Utilities/DemoUtil.cpp:98 XMLDB/FileReader.cpp:518
 #, kde-format
 msgid "Error Running Demo"
 msgstr "Gặp lỗi khi chạy chứng minh"
@@ -6890,7 +6890,48 @@ msgstr ""
 msgid "Not All Images Have Size Information"
 msgstr "Không phải tất cả các ảnh có thông tin kích cỡ"
 
-#: XMLDB/FileReader.cpp:466
+#: XMLDB/FileReader.cpp:443
+#, kde-format
+msgctxt "repair merged tags"
+msgid ""
+"<p>Inconsistencies were found and repaired in your database.Some categories "
+"now contain tags that were merged during the repair.</p><p>The following "
+"tags require manual inspection:<ul>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:454
+#, kde-format
+msgctxt "repair merged tags"
+msgid "<li>%1:<br/>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:456
+#, kde-format
+msgctxt "repair merged tags"
+msgid "%1<br/>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:459
+#, kde-format
+msgctxt "repair merged tags"
+msgid "</li>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:464
+#, kde-format
+msgctxt "repair merged tags"
+msgid ""
+"</ul></p><p>All affected images have also been marked with a tag "
+"<em>KPhotoAlbum - manual repair needed</em>.</p>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:468
+#, fuzzy, kde-format
+#| msgid "Database driver:"
+msgid "Database repair required"
+msgstr "Trình điều khiển co sở dữ liệu :"
+
+#: XMLDB/FileReader.cpp:490
 #, fuzzy, kde-format
 #| msgid ""
 #| "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
@@ -6923,33 +6964,33 @@ msgstr ""
 "phụ thêm chuỗi như khi đặt biến môi trường đường dẫn mặc định <b>PATH</b>.</"
 "p>"
 
-#: XMLDB/FileReader.cpp:474
+#: XMLDB/FileReader.cpp:498
 #, kde-format
 msgid "No default setup file found"
 msgstr "Không tìm thấy tập tin thiết lập mặc định nào"
 
-#: XMLDB/FileReader.cpp:494
+#: XMLDB/FileReader.cpp:518
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "Không thể mở « %1 » để đọc"
 
-#: XMLDB/FileReader.cpp:507
+#: XMLDB/FileReader.cpp:531
 #, fuzzy, kde-format
 #| msgid "Error on line %1 column %2 in file %3: %4"
 msgid "line %1 column %2 in file %3: %4"
 msgstr "Gặp lỗi trên dòng %1, cột %2, trong tập tin %3: %4"
 
-#: XMLDB/FileReader.cpp:509
+#: XMLDB/FileReader.cpp:533
 #, kde-format
 msgid "Failed to recover the backup: %1"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:520
+#: XMLDB/FileReader.cpp:544
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "Gặp lỗi trong tập tin %1: không tìm thấy yếu tố nào"
 
-#: XMLDB/FileReader.cpp:526
+#: XMLDB/FileReader.cpp:550
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr ""
@@ -7637,9 +7678,6 @@ msgstr "Đang chuyển đổi co sở dữ liệu"
 #, fuzzy
 #~| msgid "Database driver:"
 #~ msgid "Database driver not found: %1"
-#~ msgstr "Trình điều khiển co sở dữ liệu :"
-
-#~ msgid "Database driver:"
 #~ msgstr "Trình điều khiển co sở dữ liệu :"
 
 #~ msgid "Server port:"

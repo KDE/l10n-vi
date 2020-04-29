@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-28 03:04+0200\n"
+"POT-Creation-Date: 2020-04-29 03:07+0200\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -2315,7 +2315,7 @@ msgstr ""
 msgid "Undocumented Error"
 msgstr "Lỗi không được diễn tả"
 
-#: core/kcoredirlister.cpp:396 widgets/krun.cpp:754 widgets/paste.cpp:275
+#: core/kcoredirlister.cpp:396 widgets/krun.cpp:475 widgets/paste.cpp:275
 #: widgets/renamedialog.cpp:460
 #, kde-format
 msgid ""
@@ -2578,7 +2578,7 @@ msgstr "Không thể mở chứng nhận. Thử mật khẩu mới không?"
 msgid "The procedure to set the client certificate for the session failed."
 msgstr "Thủ tục để đặt chứng nhận ứng dụng khách cho phiên chạy bị lỗi."
 
-#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:382
+#: core/tcpslavebase.cpp:698 widgets/jobuidelegate.cpp:391
 #, kde-format
 msgid "SSL"
 msgstr "SSL"
@@ -2686,9 +2686,9 @@ msgstr "Nạp lại"
 msgid "New Folder..."
 msgstr "Thư mục mới..."
 
-#: filewidgets/kdiroperator.cpp:1982 widgets/jobuidelegate.cpp:273
-#: widgets/jobuidelegate.cpp:274 widgets/jobuidelegate.cpp:282
-#: widgets/jobuidelegate.cpp:283
+#: filewidgets/kdiroperator.cpp:1982 widgets/jobuidelegate.cpp:282
+#: widgets/jobuidelegate.cpp:283 widgets/jobuidelegate.cpp:291
+#: widgets/jobuidelegate.cpp:292
 #, kde-format
 msgid "Move to Trash"
 msgstr "Chuyển vào Rác"
@@ -3873,6 +3873,18 @@ msgstr "Nhấn để duyệt tới địa điểm"
 msgid "Click to Edit Location"
 msgstr "Nhấn để sửa địa điểm"
 
+#: gui/applicationlauncherjob.cpp:103 gui/kprocessrunner.cpp:183
+#, kde-format
+msgid "You are not authorized to execute this file."
+msgstr "Bạn không có quyền thực hiện tập tin này."
+
+#: gui/applicationlauncherjob.cpp:143
+#, kde-format
+msgid ""
+"Unable to make the service %1 executable, aborting execution.\n"
+"%2."
+msgstr ""
+
 #: gui/faviconrequestjob.cpp:119
 #, fuzzy, kde-format
 #| msgid "No media in device for %1"
@@ -3918,11 +3930,6 @@ msgstr ""
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr ""
-
-#: gui/kprocessrunner.cpp:183
-#, kde-format
-msgid "You are not authorized to execute this file."
-msgstr "Bạn không có quyền thực hiện tập tin này."
 
 #: gui/kprocessrunner.cpp:207
 #, kde-format
@@ -7628,7 +7635,7 @@ msgstr ""
 msgid "Undo File Copy Confirmation"
 msgstr "Đang cập nhật cấu hình hệ thống"
 
-#: widgets/jobuidelegate.cpp:241
+#: widgets/jobuidelegate.cpp:250
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7637,14 +7644,14 @@ msgid ""
 "emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:242 widgets/jobuidelegate.cpp:251
-#: widgets/jobuidelegate.cpp:261
+#: widgets/jobuidelegate.cpp:251 widgets/jobuidelegate.cpp:260
+#: widgets/jobuidelegate.cpp:270
 #, fuzzy, kde-format
 #| msgid "Delete Entry"
 msgid "Delete Permanently"
 msgstr "Xoá mục"
 
-#: widgets/jobuidelegate.cpp:249
+#: widgets/jobuidelegate.cpp:258
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7655,7 +7662,7 @@ msgid_plural ""
 "strong='true'>This action cannot be undone.</emphasis>"
 msgstr[0] ""
 
-#: widgets/jobuidelegate.cpp:260
+#: widgets/jobuidelegate.cpp:269
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7663,13 +7670,13 @@ msgid ""
 "><emphasis strong='true'>This action cannot be undone.</emphasis>"
 msgstr ""
 
-#: widgets/jobuidelegate.cpp:262
+#: widgets/jobuidelegate.cpp:271
 #, kde-format
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "Đổ rác"
 
-#: widgets/jobuidelegate.cpp:272
+#: widgets/jobuidelegate.cpp:281
 #, fuzzy, kde-kuit-format
 #| msgid "Do you really want to delete this item?"
 #| msgid_plural "Do you really want to delete these %1 items?"
@@ -7679,7 +7686,7 @@ msgid ""
 "filename>"
 msgstr "Bạn thật sự muốn xoá %1 mục này không?"
 
-#: widgets/jobuidelegate.cpp:280
+#: widgets/jobuidelegate.cpp:289
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this item?"
 #| msgid_plural "Do you really want to delete these %1 items?"
@@ -7687,7 +7694,7 @@ msgid "Do you really want to move this item to the Trash?"
 msgid_plural "Do you really want to move these %1 items to the Trash?"
 msgstr[0] "Bạn thật sự muốn xoá %1 mục này không?"
 
-#: widgets/jobuidelegate.cpp:381
+#: widgets/jobuidelegate.cpp:390
 #, fuzzy, kde-format
 #| msgid "The peer SSL certificate appears to be corrupt."
 msgid "The peer SSL certificate chain appears to be corrupt."
@@ -9204,24 +9211,7 @@ msgstr "Hỗ trợ chỉ tập tin thực hiện được trên hệ thống c�
 msgid "Advanced Options for %1"
 msgstr "Tùy chọn cấp cao cho %1"
 
-#: widgets/krun.cpp:252
-#, kde-format
-msgctxt "Warning about executing unknown program"
-msgid "Warning"
-msgstr ""
-
-#: widgets/krun.cpp:269
-#, kde-format
-msgctxt "program name follows in a line edit below"
-msgid "This will start the program:"
-msgstr ""
-
-#: widgets/krun.cpp:279
-#, kde-format
-msgid "If you do not trust this program, click Cancel"
-msgstr ""
-
-#: widgets/krun.cpp:347
+#: widgets/krun.cpp:190
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -9230,7 +9220,7 @@ msgstr ""
 "<qt>Không thể vào <b>%1</b>.\n"
 "Bạn không có quyền truy cập địa điểm này.</qt>"
 
-#: widgets/krun.cpp:378
+#: widgets/krun.cpp:221
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Unable to run the command specified. The file or folder <b>%1</b> "
@@ -9242,7 +9232,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: widgets/krun.cpp:409
+#: widgets/krun.cpp:253
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -9251,29 +9241,17 @@ msgstr ""
 "<qt>Tập tin <b>%1</b> là một chương trình có khả năng thực hiện. Vì lý do an "
 "toàn nó sẽ không được khởi chạy.</qt>"
 
-#: widgets/krun.cpp:415
+#: widgets/krun.cpp:259
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>Bạn không có quyền chạy <b>%1</b>.</qt>"
 
-#: widgets/krun.cpp:445
+#: widgets/krun.cpp:289
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
 msgstr "Bạn không có quyền chọn ứng dụng nên mở tập tin này."
 
-#: widgets/krun.cpp:581
-#, kde-format
-msgid "You are not authorized to execute this service."
-msgstr "Bạn không đủ quyền thực hiện dịch vụ này."
-
-#: widgets/krun.cpp:611
-#, kde-format
-msgid ""
-"Unable to make the service %1 executable, aborting execution.\n"
-"%2."
-msgstr ""
-
-#: widgets/krun.cpp:789
+#: widgets/krun.cpp:510
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -9282,7 +9260,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh đã ghi rõ, vì không có tập tin hay thư mục <b>%1</b>."
 "</qt>"
 
-#: widgets/krun.cpp:857
+#: widgets/krun.cpp:578
 #, fuzzy, kde-format
 #| msgid "Could not change permissions for %1."
 msgid "Could not find any application or handler for %1"
@@ -9789,6 +9767,26 @@ msgid ""
 "The remote host did not send any SSL certificates.\n"
 "Aborting because the identity of the host cannot be established."
 msgstr ""
+
+#: widgets/widgetsuntrustedprogramhandler.cpp:110
+#, kde-format
+msgctxt "Warning about executing unknown program"
+msgid "Warning"
+msgstr ""
+
+#: widgets/widgetsuntrustedprogramhandler.cpp:128
+#, kde-format
+msgctxt "program name follows in a line edit below"
+msgid "This will start the program:"
+msgstr ""
+
+#: widgets/widgetsuntrustedprogramhandler.cpp:138
+#, kde-format
+msgid "If you do not trust this program, click Cancel"
+msgstr ""
+
+#~ msgid "You are not authorized to execute this service."
+#~ msgstr "Bạn không đủ quyền thực hiện dịch vụ này."
 
 #, fuzzy
 #~| msgid "The certificate is invalid."

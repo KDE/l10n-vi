@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmsmserver\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-05-20 09:38+0200\n"
+"POT-Creation-Date: 2020-01-04 03:50+0100\n"
 "PO-Revision-Date: 2006-04-15 22:12+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.10\n"
 
-#: kcmsmserver.cpp:50
+#: kcmsmserver.cpp:67
 #, kde-format
 msgid ""
 "<h1>Session Manager</h1> You can configure the session manager here. This "
@@ -32,13 +32,46 @@ msgstr ""
 "phục hồi lại phiên chạy khi đăng nhập lại hay không cũng như theo mặc định "
 "máy tính có tự động tắt hay không sau khi thoát phiên chạy."
 
+#: kcmsmserver.cpp:87
+#, fuzzy, kde-format
+#| msgid "&Restart computer"
+msgid "Restart Now"
+msgstr "&Khởi động lại"
+
+#: kcmsmserver.cpp:128
+#, kde-format
+msgid "Failed to request restart to firmware setup: %1"
+msgstr ""
+
+#: kcmsmserver.cpp:140
+#, kde-format
+msgid ""
+"Next time the computer is restarted, it will enter the UEFI setup screen."
+msgstr ""
+
+#: kcmsmserver.cpp:142
+#, kde-format
+msgid ""
+"Next time the computer is restarted, it will enter the firmware setup screen."
+msgstr ""
+
+#: kcmsmserver.cpp:154
+#, kde-format
+msgid "UEFI Setup"
+msgstr ""
+
+#: kcmsmserver.cpp:155
+#, kde-format
+msgid "Enter UEFI setup on next restart"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, topBox)
 #: smserverconfigdlg.ui:17
 #, kde-format
 msgid "General"
 msgstr "Chung"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, confirmLogoutCheck)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_confirmLogout)
 #: smserverconfigdlg.ui:23
 #, kde-format
 msgid ""
@@ -48,20 +81,20 @@ msgstr ""
 "Dùng tuỳ chọn này nếu bạn muốn trình quản lí phiên chạy hiển thị hộp thoại "
 "hỏi lại trước khi thoát ra."
 
-#. i18n: ectx: property (text), widget (QCheckBox, confirmLogoutCheck)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_confirmLogout)
 #: smserverconfigdlg.ui:26
 #, kde-format
 msgid "Conf&irm logout"
 msgstr "&Xác nhận khi thoát"
 
-#. i18n: ectx: property (text), widget (QCheckBox, offerShutdownCheck)
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_offerShutdown)
 #: smserverconfigdlg.ui:33
 #, kde-format
 msgid "O&ffer shutdown options"
 msgstr "Đề n&ghị tùy chọn tắt máy"
 
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, sdGroup)
-#: smserverconfigdlg.ui:43
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_shutdownType)
+#: smserverconfigdlg.ui:46
 #, kde-format
 msgid ""
 "Here you can choose what should happen by default when you log out. This "
@@ -70,33 +103,33 @@ msgstr ""
 "Ở đây bạn có thể chọn những gì sẽ xảy ra theo mặc định khi thoát ra. Điều "
 "này chỉ có ý nghĩa nếu bạn đăng nhập qua KDM."
 
-#. i18n: ectx: property (title), widget (QGroupBox, sdGroup)
-#: smserverconfigdlg.ui:46
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_shutdownType)
+#: smserverconfigdlg.ui:49
 #, fuzzy, kde-format
 #| msgid "Default Shutdown Option"
 msgid "Default Leave Option"
 msgstr "Tùy chọn tắt máy mặc định"
 
 #. i18n: ectx: property (text), widget (QRadioButton, logoutRadio)
-#: smserverconfigdlg.ui:52
+#: smserverconfigdlg.ui:55
 #, kde-format
 msgid "&End current session"
 msgstr "&Kết thúc phiên chạy hiện thời"
 
-#. i18n: ectx: property (text), widget (QRadioButton, haltRadio)
-#: smserverconfigdlg.ui:59
-#, kde-format
-msgid "&Turn off computer"
-msgstr "&Tắt máy"
-
 #. i18n: ectx: property (text), widget (QRadioButton, rebootRadio)
-#: smserverconfigdlg.ui:66
+#: smserverconfigdlg.ui:62
 #, kde-format
 msgid "&Restart computer"
 msgstr "&Khởi động lại"
 
-#. i18n: ectx: property (whatsThis), widget (QGroupBox, loginGroup)
-#: smserverconfigdlg.ui:80
+#. i18n: ectx: property (text), widget (QRadioButton, haltRadio)
+#: smserverconfigdlg.ui:69
+#, kde-format
+msgid "&Turn off computer"
+msgstr "&Tắt máy"
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_loginMode)
+#: smserverconfigdlg.ui:83
 #, kde-format
 msgid ""
 "<ul>\n"
@@ -119,38 +152,38 @@ msgstr ""
 "màn hình rỗng.</li>\n"
 "</ul>"
 
-#. i18n: ectx: property (title), widget (QGroupBox, loginGroup)
-#: smserverconfigdlg.ui:83
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_loginMode)
+#: smserverconfigdlg.ui:86
 #, kde-format
 msgid "On Login"
 msgstr "Khi đăng nhập"
 
 #. i18n: ectx: property (text), widget (QRadioButton, previousSessionRadio)
-#: smserverconfigdlg.ui:89
+#: smserverconfigdlg.ui:92
 #, kde-format
 msgid "Restore &previous session"
 msgstr "Phục hồi &phiên chạy trước"
 
 #. i18n: ectx: property (text), widget (QRadioButton, savedSessionRadio)
-#: smserverconfigdlg.ui:96
+#: smserverconfigdlg.ui:99
 #, kde-format
 msgid "Restore &manually saved session"
 msgstr "Phục hồi phiên chạy tự &ghi"
 
 #. i18n: ectx: property (text), widget (QRadioButton, emptySessionRadio)
-#: smserverconfigdlg.ui:103
+#: smserverconfigdlg.ui:106
 #, kde-format
 msgid "Start with an empty &session"
 msgstr "Chạy phiên chạy &mới"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: smserverconfigdlg.ui:110
+#: smserverconfigdlg.ui:113
 #, kde-format
 msgid "Applications to be e&xcluded from sessions:"
 msgstr "Những ứng dụng sẽ loại &bỏ khỏi phiên chạy:"
 
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, excludeLineedit)
-#: smserverconfigdlg.ui:123
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_excludeApps)
+#: smserverconfigdlg.ui:126
 #, fuzzy, kde-format
 #| msgid ""
 #| "Here you can enter a comma-separated list of applications that should not "
@@ -164,6 +197,26 @@ msgstr ""
 "Đây là danh sách những ứng dụng sẽ không nhớ vào các phiên chạy, và do đó sẽ "
 "không chạy khi phục hồi phiên chạy này. Chúng được liệt kê cách nhau bởi dấu "
 "phẩy. Ví dụ 'xterm,xconsole'."
+
+#. i18n: ectx: property (title), widget (QGroupBox, firmwareSetupBox)
+#: smserverconfigdlg.ui:136
+#, kde-format
+msgid "Firmware Setup"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, firmwareSetupCheck)
+#: smserverconfigdlg.ui:149
+#, kde-format
+msgid ""
+"When the computer is restarted the next time, enter firmware setup screen (e."
+"g. UEFI or BIOS setup)"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, firmwareSetupCheck)
+#: smserverconfigdlg.ui:152
+#, kde-format
+msgid "Enter firmware setup on next restart"
+msgstr ""
 
 #~ msgid "Session Manager"
 #~ msgstr "Trình quản lí phiên chạy"

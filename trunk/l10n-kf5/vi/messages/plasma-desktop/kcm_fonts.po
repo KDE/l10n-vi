@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmfonts\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-04 02:14+0200\n"
+"POT-Creation-Date: 2020-07-31 02:21+0200\n"
 "PO-Revision-Date: 2007-06-23 17:29+0930\n"
 "Last-Translator: Phan Vĩnh Thịnh <teppi82@gmail.com>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -161,6 +161,12 @@ msgctxt "full hinting"
 msgid "Full"
 msgstr "Đầy đủ"
 
+#: package/contents/ui/ContextualHelpButton.qml:58
+#, kde-format
+msgctxt "@action:button"
+msgid "Show Contextual Help"
+msgstr ""
+
 #: package/contents/ui/FontWidget.qml:65
 #, kde-format
 msgid "Select %1 Font..."
@@ -243,55 +249,128 @@ msgstr "Thực đơn"
 msgid "Window title:"
 msgstr "Tiêu đề cửa sổ"
 
-#: package/contents/ui/main.qml:155
+#: package/contents/ui/main.qml:152
 #, fuzzy, kde-format
 #| msgid "Use a&nti-aliasing:"
 msgid "Anti-Aliasing:"
 msgstr "Làm trơ&n phông:"
 
-#: package/contents/ui/main.qml:156
+#: package/contents/ui/main.qml:157
 #, fuzzy, kde-format
 #| msgid "Enabled"
 msgid "Enable"
 msgstr "Bật"
 
-#: package/contents/ui/main.qml:164
+#: package/contents/ui/main.qml:161
+#, kde-kuit-format
+msgctxt "@info:tooltip Anti-Aliasing"
+msgid ""
+"Pixels on displays are generally aligned in a grid. Therefore shapes of "
+"fonts that do not align with this grid will look blocky and wrong unless "
+"<emphasis>anti-aliasing</emphasis> techniques are used to reduce this "
+"effect. You generally want to keep this option enabled unless it causes "
+"problems."
+msgstr ""
+
+#: package/contents/ui/main.qml:169
 #, kde-format
 msgid "Exclude range from anti-aliasing"
 msgstr ""
 
-#: package/contents/ui/main.qml:177 package/contents/ui/main.qml:195
+#: package/contents/ui/main.qml:182 package/contents/ui/main.qml:200
 #, kde-format
 msgid "%1 pt"
 msgstr ""
 
-#: package/contents/ui/main.qml:187
+#: package/contents/ui/main.qml:192
 #, fuzzy, kde-format
 #| msgid " to "
 msgid "to"
 msgstr " tới "
 
-#: package/contents/ui/main.qml:211
+#: package/contents/ui/main.qml:214
 #, fuzzy, kde-format
 #| msgid "&Use sub-pixel rendering:"
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Sub-pixel rendering:"
 msgstr "&Vẽ điểm ảnh phụ :"
 
-#: package/contents/ui/main.qml:248
+#: package/contents/ui/main.qml:251
+#, kde-kuit-format
+msgctxt "@info:tooltip Sub-pixel rendering"
+msgid ""
+"<para>On TFT or LCD screens every single pixel is actually composed of three "
+"or four smaller monochrome lights. These <emphasis>sub-pixels</emphasis> can "
+"be changed independently to further improve the quality of displayed fonts.</"
+"para> <para>The rendering quality is only improved if the selection matches "
+"the manner in which the sub-pixels of your display are aligned. Most "
+"displays have a linear ordering of <emphasis>RGB</emphasis> sub-pixels, some "
+"have <emphasis>BGR</emphasis> and some exotic orderings are not supported by "
+"this feature.</para>This does not work with CRT monitors."
+msgstr ""
+
+#: package/contents/ui/main.qml:256
 #, fuzzy, kde-format
 #| msgid "Hinting style: "
 msgctxt "Used as a noun, and precedes a combobox full of options"
 msgid "Hinting:"
 msgstr "Kiểu vết: "
 
-#: package/contents/ui/main.qml:286
+#: package/contents/ui/main.qml:293
+#, kde-kuit-format
+msgctxt "@info:tooltip Hinting"
+msgid ""
+"Hinting is a technique in which hints embedded in a font are used to enhance "
+"the rendering quality especially at small sizes. Stronger hinting generally "
+"leads to sharper edges but the small letters will less closely resemble "
+"their shape at big sizes."
+msgstr ""
+
+#: package/contents/ui/main.qml:301
 #, fuzzy, kde-format
 #| msgid "Force fonts DPI:"
 msgid "Force font DPI:"
 msgstr "Buộc chấm/insơ phông:"
 
-#: package/contents/ui/main.qml:306
+#: package/contents/ui/main.qml:318
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "<p>This option forces a specific DPI value for fonts. It may be useful "
+#| "when the real DPI of the hardware is not detected properly and it is also "
+#| "often misused when poor quality fonts are used that do not look well with "
+#| "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
+#| "generally discouraged. For selecting proper DPI value a better option is "
+#| "explicitly configuring it for the whole X server if possible (e.g. "
+#| "DisplaySize in xorg.conf or adding <i>-dpi value</i> to ServerLocalArgs= "
+#| "in $KDEDIR/share/config/kdm/kdmrc). When fonts do not render properly "
+#| "with real DPI value better fonts should be used or configuration of font "
+#| "hinting should be checked.</p>"
+msgctxt "@info:tooltip Force fonts DPI"
+msgid ""
+"<para>This option forces a specific DPI value for fonts. It may be useful "
+"when the real DPI of the hardware is not detected properly and it is also "
+"often misused when poor quality fonts are used that do not look well with "
+"DPI values other than 96 or 120 DPI.</para><para>The use of this option is "
+"generally discouraged.</para><para>If you are using the <emphasis>X Window "
+"System</emphasis>, for selecting the proper DPI value a better option is "
+"explicitly configuring it for the whole X server if possible (e.g. "
+"DisplaySize in xorg.conf). When fonts do not render properly with the real "
+"DPI value better fonts should be used or configuration of font hinting "
+"should be checked.</para>"
+msgstr ""
+"<p>Tùy chọn này ép buộc một giá trị chấm trên mỗi insơ (DPI) riêng cho phông "
+"chữ. Có thể hữu ích khi không phát hiện được giá trị DPI đúng của phần cứng, "
+"hoặc không sử dụng đúng với phông chữ chất lượng thấp không hiển thị đẹp ở "
+"giá trị khác với 96 hay 120 DPI.</p><p>Thường khuyên bạn không bật tùy chọn "
+"này. Để chọn giá trị DPI đúng, tốt hơn cấu hình nó cho toàn môi trường X, "
+"nếu có thể (v.d. đặt kích cỡ hiển thị DisplaySize trong tập tin cấu hình « "
+"xorg.conf », hoặc thêm giá trị DPI <i>dpi value</i> vào phần đối số cục bộ "
+"trình phục vụ « ServerLocalArgs= » trong tài nguyên « $KDEDIR/share/config/"
+"kdm/kdmrc »). Khi phông chữ không vẽ đúng ở giá trị DPI thật, bạn nên sử "
+"dụng phông chữ tốt hơn, hoặc kiểm tra lại cấu hình khả năng tạo mẹo phông.</"
+"p>"
+
+#: package/contents/ui/main.qml:324
 #, kde-format
 msgid "Select Font"
 msgstr ""
@@ -402,41 +481,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Nếu tuỳ chọn này được chọn, KDE sẽ làm mịn cạnh của đường cong trong "
 #~ "phông chữ."
-
-#, fuzzy
-#~| msgid ""
-#~| "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~| "when the real DPI of the hardware is not detected properly and it is "
-#~| "also often misused when poor quality fonts are used that do not look "
-#~| "well with DPI values other than 96 or 120 DPI.</p><p>The use of this "
-#~| "option is generally discouraged. For selecting proper DPI value a better "
-#~| "option is explicitly configuring it for the whole X server if possible "
-#~| "(e.g. DisplaySize in xorg.conf or adding <i>-dpi value</i> to "
-#~| "ServerLocalArgs= in $KDEDIR/share/config/kdm/kdmrc). When fonts do not "
-#~| "render properly with real DPI value better fonts should be used or "
-#~| "configuration of font hinting should be checked.</p>"
-#~ msgid ""
-#~ "<p>This option forces a specific DPI value for fonts. It may be useful "
-#~ "when the real DPI of the hardware is not detected properly and it is also "
-#~ "often misused when poor quality fonts are used that do not look well with "
-#~ "DPI values other than 96 or 120 DPI.</p><p>The use of this option is "
-#~ "generally discouraged. For selecting proper DPI value a better option is "
-#~ "explicitly configuring it for the whole X server if possible (e.g. "
-#~ "DisplaySize in xorg.conf). When fonts do not render properly with real "
-#~ "DPI value better fonts should be used or configuration of font hinting "
-#~ "should be checked.</p>"
-#~ msgstr ""
-#~ "<p>Tùy chọn này ép buộc một giá trị chấm trên mỗi insơ (DPI) riêng cho "
-#~ "phông chữ. Có thể hữu ích khi không phát hiện được giá trị DPI đúng của "
-#~ "phần cứng, hoặc không sử dụng đúng với phông chữ chất lượng thấp không "
-#~ "hiển thị đẹp ở giá trị khác với 96 hay 120 DPI.</p><p>Thường khuyên bạn "
-#~ "không bật tùy chọn này. Để chọn giá trị DPI đúng, tốt hơn cấu hình nó cho "
-#~ "toàn môi trường X, nếu có thể (v.d. đặt kích cỡ hiển thị DisplaySize "
-#~ "trong tập tin cấu hình « xorg.conf », hoặc thêm giá trị DPI <i>dpi value</"
-#~ "i> vào phần đối số cục bộ trình phục vụ « ServerLocalArgs= » trong tài "
-#~ "nguyên « $KDEDIR/share/config/kdm/kdmrc »). Khi phông chữ không vẽ đúng ở "
-#~ "giá trị DPI thật, bạn nên sử dụng phông chữ tốt hơn, hoặc kiểm tra lại "
-#~ "cấu hình khả năng tạo mẹo phông.</p>"
 
 #, fuzzy
 #~| msgid "Taskbar"

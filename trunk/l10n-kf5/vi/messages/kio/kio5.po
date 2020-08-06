@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-04 02:08+0200\n"
+"POT-Creation-Date: 2020-08-06 02:08+0200\n"
 "PO-Revision-Date: 2012-01-09 21:54+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -2987,7 +2987,7 @@ msgctxt "@title:menu"
 msgid "Move Here"
 msgstr ""
 
-#: filewidgets/kfilefiltercombo.cpp:37 filewidgets/kfilewidget.cpp:1892
+#: filewidgets/kfilefiltercombo.cpp:37 filewidgets/kfilewidget.cpp:1863
 #, kde-format
 msgid "*|All Files"
 msgstr "*|Mọi tập tin"
@@ -3156,112 +3156,114 @@ msgstr ""
 msgid "All tags"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:282
+#. i18nc call is made later, with this context, so the two must match.
+#. createSystemBookmark actually does nothing with its second argument, the context,
+#: filewidgets/kfileplacesmodel.cpp:302
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Home"
 msgstr "Thư mục chính"
 
-#: filewidgets/kfileplacesmodel.cpp:290
+#: filewidgets/kfileplacesmodel.cpp:309
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Desktop"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:296 filewidgets/kfileplacesmodel.cpp:369
+#: filewidgets/kfileplacesmodel.cpp:314 filewidgets/kfileplacesmodel.cpp:387
 #, fuzzy, kde-format
 #| msgid "FIXME: Document this"
 msgctxt "KFile System Bookmarks"
 msgid "Documents"
 msgstr "SỬA ĐI : tạo tài liệu về điều này"
 
-#: filewidgets/kfileplacesmodel.cpp:302
+#: filewidgets/kfileplacesmodel.cpp:319
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Downloads"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:307
+#: filewidgets/kfileplacesmodel.cpp:323
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Network"
 msgstr "Mạng"
 
-#: filewidgets/kfileplacesmodel.cpp:311
+#: filewidgets/kfileplacesmodel.cpp:326
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Trash"
 msgstr "Thùng rác"
 
-#: filewidgets/kfileplacesmodel.cpp:333
+#: filewidgets/kfileplacesmodel.cpp:351
 #, fuzzy, kde-format
 #| msgid "Delete Files"
 msgctxt "KFile System Bookmarks"
 msgid "Recent Files"
 msgstr "Xoá tập tin"
 
-#: filewidgets/kfileplacesmodel.cpp:337
+#: filewidgets/kfileplacesmodel.cpp:355
 #, fuzzy, kde-format
 #| msgid "Location:"
 msgctxt "KFile System Bookmarks"
 msgid "Recent Locations"
 msgstr "Địa điểm:"
 
-#: filewidgets/kfileplacesmodel.cpp:361
+#: filewidgets/kfileplacesmodel.cpp:379
 #, fuzzy, kde-format
 #| msgid "Modified:"
 msgctxt "KFile System Bookmarks"
 msgid "Modified Today"
 msgstr "Sửa đổi :"
 
-#: filewidgets/kfileplacesmodel.cpp:364
+#: filewidgets/kfileplacesmodel.cpp:382
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Modified Yesterday"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:372
+#: filewidgets/kfileplacesmodel.cpp:390
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Images"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:375
+#: filewidgets/kfileplacesmodel.cpp:393
 #, fuzzy, kde-format
 #| msgid "All Files"
 msgctxt "KFile System Bookmarks"
 msgid "Audio"
 msgstr "Mọi tập tin"
 
-#: filewidgets/kfileplacesmodel.cpp:378
+#: filewidgets/kfileplacesmodel.cpp:396
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Videos"
 msgstr ""
 
-#: filewidgets/kfileplacesmodel.cpp:1270
+#: filewidgets/kfileplacesmodel.cpp:1288
 #, kde-format
 msgid "&Release '%1'"
 msgstr "&Tháo '%1'"
 
-#: filewidgets/kfileplacesmodel.cpp:1272
+#: filewidgets/kfileplacesmodel.cpp:1290
 #, kde-format
 msgid "&Safely Remove '%1'"
 msgstr "&Gỡ an toàn '%1'"
 
 # msgid "Unmount"
-#: filewidgets/kfileplacesmodel.cpp:1275
+#: filewidgets/kfileplacesmodel.cpp:1293
 #, kde-format
 msgid "&Unmount '%1'"
 msgstr "&Gỡ gắn kết '%1'"
 
 # msgid "Eject"
-#: filewidgets/kfileplacesmodel.cpp:1296
+#: filewidgets/kfileplacesmodel.cpp:1314
 #, kde-format
 msgid "&Eject '%1'"
 msgstr "Đẩy '%1' &ra"
 
-#: filewidgets/kfileplacesmodel.cpp:1330
+#: filewidgets/kfileplacesmodel.cpp:1348
 #, kde-format
 msgid "The device '%1' is not a disk and cannot be ejected."
 msgstr "Thiết bị '%1' không phải là đĩa và không thể được đẩy ra."
@@ -3269,13 +3271,13 @@ msgstr "Thiết bị '%1' không phải là đĩa và không thể được đ�
 # msgid ""
 # An error occurred while attempting to %1, %2. A summary of the reasons is
 # below.<ul>
-#: filewidgets/kfileplacesmodel.cpp:1366
+#: filewidgets/kfileplacesmodel.cpp:1384
 #, kde-format
 msgid "An error occurred while accessing '%1', the system responded: %2"
 msgstr "Gặp lỗi khi truy cập '%1', phản hồi từ hệ thống: %2"
 
 # msgid "An unexpected error (%1) occurred while attempting to %2."
-#: filewidgets/kfileplacesmodel.cpp:1370
+#: filewidgets/kfileplacesmodel.cpp:1388
 #, kde-format
 msgid "An error occurred while accessing '%1'"
 msgstr "Gặp lỗi khi truy cập '%1'."
@@ -3346,12 +3348,7 @@ msgstr ""
 "điều khiển tính năng này bằng cách nhắp cái nút phải trên chuột rồi chọn chế "
 "độ ưa thích trong trình đơn <b>Gõ xong từ</b>."
 
-#: filewidgets/kfilewidget.cpp:404
-#, kde-format
-msgid "Drive: %1"
-msgstr "Ổ: %1"
-
-#: filewidgets/kfilewidget.cpp:456
+#: filewidgets/kfilewidget.cpp:426
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>Click this button to enter the parent folder.<p>For instance, if the "
@@ -3366,44 +3363,44 @@ msgstr ""
 "có là &lt;file:/home/%1&gt;, nhắp vào nút này sẽ hiển thị &lt;file:/home&gt;."
 "</qt>"
 
-#: filewidgets/kfilewidget.cpp:460
+#: filewidgets/kfilewidget.cpp:430
 #, kde-format
 msgid "Click this button to move backwards one step in the browsing history."
 msgstr "Nhấn nút này để lùi một bước trong lịch sử duyệt."
 
-#: filewidgets/kfilewidget.cpp:461
+#: filewidgets/kfilewidget.cpp:431
 #, kde-format
 msgid "Click this button to move forward one step in the browsing history."
 msgstr "Nhấn nút này để đi tiếp một bước trong lịch sử duyệt."
 
-#: filewidgets/kfilewidget.cpp:463
+#: filewidgets/kfilewidget.cpp:433
 #, kde-format
 msgid "Click this button to reload the contents of the current location."
 msgstr "Nhấn nút này để tải lại nội dung của vị trí hiện tại."
 
-#: filewidgets/kfilewidget.cpp:465
+#: filewidgets/kfilewidget.cpp:435
 #, kde-format
 msgid "Click this button to create a new folder."
 msgstr "Nhấn nút này để tạo một thư mục mới."
 
-#: filewidgets/kfilewidget.cpp:471
+#: filewidgets/kfilewidget.cpp:441
 #, fuzzy, kde-format
 #| msgid "Show Places Navigation Panel"
 msgid "Show Places Panel"
 msgstr "Hiện thanh duyệt vị trí"
 
-#: filewidgets/kfilewidget.cpp:478
+#: filewidgets/kfilewidget.cpp:448
 #, fuzzy, kde-format
 #| msgid "Show Bookmarks"
 msgid "Show Bookmarks Button"
 msgstr "Hiện đánh dấu"
 
-#: filewidgets/kfilewidget.cpp:484
+#: filewidgets/kfilewidget.cpp:454
 #, kde-format
 msgid "Options"
 msgstr "Tuỳ chọn"
 
-#: filewidgets/kfilewidget.cpp:486
+#: filewidgets/kfilewidget.cpp:456
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>This is the configuration menu for the file dialog. Various options "
@@ -3424,43 +3421,43 @@ msgstr ""
 "li><li>hiển thị các tập tin bị ẩn</li><li>bảng duyệt Truy cập Nhanh</"
 "li><li>khung xem tập tin</li><li>phân cách thư mục ra tập tin</li></ul></qt>"
 
-#: filewidgets/kfilewidget.cpp:525
+#: filewidgets/kfilewidget.cpp:495
 #, kde-format
 msgid "Zoom out"
 msgstr "Thu nhỏ"
 
-#: filewidgets/kfilewidget.cpp:527
+#: filewidgets/kfilewidget.cpp:497
 #, kde-format
 msgid "Zoom in"
 msgstr "Phóng to"
 
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: filewidgets/kfilewidget.cpp:565 widgets/kpropertiesdesktopbase.ui:17
+#: filewidgets/kfilewidget.cpp:536 widgets/kpropertiesdesktopbase.ui:17
 #, kde-format
 msgid "&Name:"
 msgstr "Tê&n:"
 
-#: filewidgets/kfilewidget.cpp:843
+#: filewidgets/kfilewidget.cpp:814
 #, kde-format
 msgid "You can only select one file"
 msgstr "Bạn chỉ có thể chọn một tập tin"
 
-#: filewidgets/kfilewidget.cpp:844
+#: filewidgets/kfilewidget.cpp:815
 #, kde-format
 msgid "More than one file provided"
 msgstr "Đã chọn nhiều hơn một tập tin"
 
-#: filewidgets/kfilewidget.cpp:1011
+#: filewidgets/kfilewidget.cpp:982
 #, kde-format
 msgid "You can only select local files"
 msgstr "Bạn chỉ có thể chọn tập tin trong máy"
 
-#: filewidgets/kfilewidget.cpp:1012
+#: filewidgets/kfilewidget.cpp:983
 #, kde-format
 msgid "Remote files not accepted"
 msgstr "Các tập tin qua mạng không được chấp nhận"
 
-#: filewidgets/kfilewidget.cpp:1019
+#: filewidgets/kfilewidget.cpp:990
 #, kde-format
 msgid ""
 "The selected URL uses an unsupported scheme. Please use the following "
@@ -3470,12 +3467,12 @@ msgid_plural ""
 "schemes: %2"
 msgstr[0] ""
 
-#: filewidgets/kfilewidget.cpp:1025
+#: filewidgets/kfilewidget.cpp:996
 #, kde-format
 msgid "Unsupported URL scheme"
 msgstr ""
 
-#: filewidgets/kfilewidget.cpp:1040
+#: filewidgets/kfilewidget.cpp:1011
 #, kde-format
 msgid ""
 "More than one folder has been selected and this dialog does not accept "
@@ -3483,12 +3480,12 @@ msgid ""
 "only one folder to list it."
 msgstr ""
 
-#: filewidgets/kfilewidget.cpp:1040
+#: filewidgets/kfilewidget.cpp:1011
 #, kde-format
 msgid "More than one folder provided"
 msgstr "Đã chọn nhiều hơn một thư mục"
 
-#: filewidgets/kfilewidget.cpp:1048
+#: filewidgets/kfilewidget.cpp:1019
 #, kde-format
 msgid ""
 "At least one folder and one file has been selected. Selected files will be "
@@ -3497,27 +3494,27 @@ msgstr ""
 "Ít nhất một thư mục và một tập tin đã được chọn. Những tập tin đã chọn sẽ bị "
 "bỏ qua và thư mục được chọn sẽ được mở ra."
 
-#: filewidgets/kfilewidget.cpp:1048
+#: filewidgets/kfilewidget.cpp:1019
 #, kde-format
 msgid "Files and folders selected"
 msgstr "Thư mục và tập tin đã chọn"
 
-#: filewidgets/kfilewidget.cpp:1066
+#: filewidgets/kfilewidget.cpp:1037
 #, kde-format
 msgid "The file \"%1\" could not be found"
 msgstr "Không thể tìm thấy tập tin \"%1\""
 
-#: filewidgets/kfilewidget.cpp:1066
+#: filewidgets/kfilewidget.cpp:1037
 #, kde-format
 msgid "Cannot open file"
 msgstr "Không thể mở tập tin"
 
-#: filewidgets/kfilewidget.cpp:1350
+#: filewidgets/kfilewidget.cpp:1321
 #, kde-format
 msgid "This is the name to save the file as."
 msgstr "Đây là tên mới để lưu của tập tin."
 
-#: filewidgets/kfilewidget.cpp:1353
+#: filewidgets/kfilewidget.cpp:1324
 #, kde-format
 msgid ""
 "This is the list of files to open. More than one file can be specified by "
@@ -3526,79 +3523,79 @@ msgstr ""
 "Đây là danh sách những tập tin cần mở. Có thể ghi rõ nhiều tập tin, phân "
 "cách bằng dấu cách."
 
-#: filewidgets/kfilewidget.cpp:1358
+#: filewidgets/kfilewidget.cpp:1329
 #, kde-format
 msgid "This is the name of the file to open."
 msgstr "Đây là tên của tập tin cần mở."
 
-#: filewidgets/kfilewidget.cpp:1372
+#: filewidgets/kfilewidget.cpp:1343
 #, kde-format
 msgctxt "@title:window"
 msgid "Places"
 msgstr "Vị trí"
 
-#: filewidgets/kfilewidget.cpp:1584
+#: filewidgets/kfilewidget.cpp:1555
 #, kde-format
 msgid "The file \"%1\" already exists. Do you wish to overwrite it?"
 msgstr "Tập tin \"%1\" đã tồn tại. Bạn có muốn ghi đè lên nó?"
 
-#: filewidgets/kfilewidget.cpp:1585
+#: filewidgets/kfilewidget.cpp:1556
 #, kde-format
 msgid "Overwrite File?"
 msgstr "Ghi đè tập tin?"
 
-#: filewidgets/kfilewidget.cpp:1779
+#: filewidgets/kfilewidget.cpp:1750
 #, kde-format
 msgid "You can only select local files."
 msgstr "Bạn chỉ có thể chọn những tập tin cục bộ."
 
-#: filewidgets/kfilewidget.cpp:1780
+#: filewidgets/kfilewidget.cpp:1751
 #, kde-format
 msgid "Remote Files Not Accepted"
 msgstr "Không chấp nhận tập tin từ xa"
 
-#: filewidgets/kfilewidget.cpp:1890
+#: filewidgets/kfilewidget.cpp:1861
 #, kde-format
 msgid "*|All Folders"
 msgstr "*|Mọi thư mục"
 
-#: filewidgets/kfilewidget.cpp:2054 widgets/executablefileopendialog.cpp:42
+#: filewidgets/kfilewidget.cpp:2025 widgets/executablefileopendialog.cpp:42
 #: widgets/kfileitemactions.cpp:641
 #, kde-format
 msgid "&Open"
 msgstr "&Mở"
 
-#: filewidgets/kfilewidget.cpp:2149
+#: filewidgets/kfilewidget.cpp:2120
 #, kde-format
 msgid "Icon size: %1 pixels (standard size)"
 msgstr ""
 
-#: filewidgets/kfilewidget.cpp:2152
+#: filewidgets/kfilewidget.cpp:2123
 #, kde-format
 msgid "Icon size: %1 pixels"
 msgstr ""
 
-#: filewidgets/kfilewidget.cpp:2312
+#: filewidgets/kfilewidget.cpp:2283
 #, kde-format
 msgid "Automatically select filename e&xtension (%1)"
 msgstr "Chọn tự động phần mở &rộng tên tập tin (%1)"
 
-#: filewidgets/kfilewidget.cpp:2313
+#: filewidgets/kfilewidget.cpp:2284
 #, kde-format
 msgid "the extension <b>%1</b>"
 msgstr "phần mở rộng <b>%1</b>"
 
-#: filewidgets/kfilewidget.cpp:2319
+#: filewidgets/kfilewidget.cpp:2290
 #, kde-format
 msgid "Automatically select filename e&xtension"
 msgstr "Chọn tự động phần mở &rộng tên tập tin"
 
-#: filewidgets/kfilewidget.cpp:2320
+#: filewidgets/kfilewidget.cpp:2291
 #, kde-format
 msgid "a suitable extension"
 msgstr "là một phần mở rộng thích hợp"
 
-#: filewidgets/kfilewidget.cpp:2329
+#: filewidgets/kfilewidget.cpp:2300
 #, fuzzy, kde-format
 #| msgid ""
 #| "This option enables some convenient features for saving files with "
@@ -3636,12 +3633,12 @@ msgstr ""
 "của tên tập tin (dấu chấm này sẽ được gỡ bỏ tự động).</li></ol>Nếu chưa "
 "chắc, hãy cứ bật tùy chọn này, vì nó làm cho các tập tin dễ hơn quản lý."
 
-#: filewidgets/kfilewidget.cpp:2660
+#: filewidgets/kfilewidget.cpp:2631
 #, kde-format
 msgid "Bookmarks"
 msgstr "Liên kết lưu"
 
-#: filewidgets/kfilewidget.cpp:2664
+#: filewidgets/kfilewidget.cpp:2635
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>This button allows you to bookmark specific locations. Click on this "
@@ -3659,25 +3656,25 @@ msgstr ""
 "<p>Những đánh dấu này đặc trưng cho hộp thoại tập tin, nhưng về mặt khác có "
 "cùng hoạt động với các đánh dấu khác trong KDE.</qt>"
 
-#: filewidgets/kfilewidget.cpp:2807
+#: filewidgets/kfilewidget.cpp:2778
 #, fuzzy, kde-format
 #| msgid "&Filter:"
 msgid "&File type:"
 msgstr "&Lọc:"
 
-#: filewidgets/kfilewidget.cpp:2808
+#: filewidgets/kfilewidget.cpp:2779
 #, kde-format
 msgid ""
 "<qt>This is the file type selector. It is used to select the format that the "
 "file will be saved as.</qt>"
 msgstr ""
 
-#: filewidgets/kfilewidget.cpp:2810
+#: filewidgets/kfilewidget.cpp:2781
 #, kde-format
 msgid "&Filter:"
 msgstr "&Lọc:"
 
-#: filewidgets/kfilewidget.cpp:2811
+#: filewidgets/kfilewidget.cpp:2782
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>This is the filter to apply to the file list. File names that do not "
@@ -3938,7 +3935,7 @@ msgstr "Nhấn để duyệt tới địa điểm"
 msgid "Click to Edit Location"
 msgstr "Nhấn để sửa địa điểm"
 
-#: gui/applicationlauncherjob.cpp:121 gui/kprocessrunner.cpp:140
+#: gui/applicationlauncherjob.cpp:121 gui/kprocessrunner.cpp:161
 #, kde-format
 msgid "You are not authorized to execute this file."
 msgstr "Bạn không có quyền thực hiện tập tin này."
@@ -3957,7 +3954,7 @@ msgid ""
 "%2."
 msgstr ""
 
-#: gui/applicationlauncherjob.cpp:262 gui/openurljob.cpp:744
+#: gui/applicationlauncherjob.cpp:264 gui/openurljob.cpp:744
 #: widgets/krun.cpp:210
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
@@ -3979,7 +3976,7 @@ msgstr ""
 msgid "Icon file too big, download aborted"
 msgstr ""
 
-#: gui/kprocessrunner.cpp:57
+#: gui/kprocessrunner.cpp:71
 #, fuzzy, kde-format
 #| msgid ""
 #| "The desktop entry of type\n"
@@ -3993,7 +3990,7 @@ msgstr ""
 "Không biết mục nhập môi trường của kiểu\n"
 "%1."
 
-#: gui/kprocessrunner.cpp:164
+#: gui/kprocessrunner.cpp:185
 #, kde-format
 msgid "Launching %1"
 msgstr "Đang khởi chạy %1..."
@@ -9901,6 +9898,9 @@ msgstr ""
 #, kde-format
 msgid "If you do not trust this program, click Cancel"
 msgstr ""
+
+#~ msgid "Drive: %1"
+#~ msgstr "Ổ: %1"
 
 #, fuzzy
 #~| msgid "The new file name is empty."

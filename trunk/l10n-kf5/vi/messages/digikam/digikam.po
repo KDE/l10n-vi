@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-13 02:12+0200\n"
+"POT-Creation-Date: 2020-08-14 02:11+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -950,7 +950,6 @@ msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
 #: core/app/items/utils/tooltipfiller.cpp:105
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:94
 #: core/dplugins/editor/filters/blurfx/blurfxtool.cpp:116
 #: core/dplugins/editor/filters/distortionfx/distortionfxtool.cpp:119
 #: core/dplugins/generic/metadata/metadataedit/iptc/iptcproperties.cpp:235
@@ -958,7 +957,8 @@ msgstr "%1 (%2)"
 #: core/dplugins/generic/tools/videoslideshow/wizard/vidslidevideopage.cpp:204
 #: core/dplugins/generic/tools/videoslideshow/wizard/vidslidevideopage.cpp:240
 #: core/libs/database/utils/widgets/dbsettingswidget.cpp:57
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:131
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:130
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:87
 #: core/libs/dimg/filters/fx/colorfxsettings.cpp:125
 #: core/showfoto/thumbbar/showfototooltipfiller.cpp:92
 #: core/utilities/import/items/importtooltipfiller.cpp:90
@@ -4327,8 +4327,8 @@ msgid ""
 msgstr ""
 
 #: core/dplugins/bqm/decorate/border/borderplugin.cpp:54
-#: core/dplugins/editor/decorate/border/bordertool.cpp:76
-#: core/dplugins/editor/decorate/border/bordertool.cpp:172
+#: core/dplugins/editor/decorate/border/bordertool.cpp:75
+#: core/dplugins/editor/decorate/border/bordertool.cpp:171
 #: core/dplugins/editor/decorate/border/bordertoolplugin.cpp:52
 #, kde-format
 msgid "Add Border"
@@ -4344,6 +4344,25 @@ msgstr "Một phần bổ sung ảnh digiKam để thêm một viền chung quan
 msgid ""
 "<p>This Batch Queue Manager tool can add decorative border around images.</p>"
 msgstr ""
+
+#: core/dplugins/bqm/decorate/texture/textureplugin.cpp:54
+#, fuzzy, kde-format
+#| msgid "Texture"
+msgid "Add Texture"
+msgstr "Họa tiết"
+
+#: core/dplugins/bqm/decorate/texture/textureplugin.cpp:69
+#, fuzzy, kde-format
+#| msgid "A digiKam image plugin to apply a decorative texture to an image."
+msgid "A tool to apply a texture over images"
+msgstr "Phần bổ sung ảnh digiKam để áp dụng họa tiết để trang trí cho ảnh."
+
+#: core/dplugins/bqm/decorate/texture/textureplugin.cpp:74
+#, fuzzy, kde-format
+#| msgid "Color Space"
+msgid ""
+"<p>This Batch Queue Manager tool can can apply a texture over images.</p>"
+msgstr "Miền màu"
 
 #: core/dplugins/bqm/decorate/watermark/watermark.cpp:184
 #, kde-format
@@ -6284,103 +6303,7 @@ msgctxt "@action"
 msgid "Insert Text..."
 msgstr "Chèn đoạn..."
 
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:96
-#, kde-format
-msgid "Paper"
-msgstr "Giấy"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:97
-#, kde-format
-msgid "Paper 2"
-msgstr "Giấy 2"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:98
-#, kde-format
-msgid "Fabric"
-msgstr "Vải"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:99
-#, kde-format
-msgid "Burlap"
-msgstr "Vải gai"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:100
-#, kde-format
-msgid "Bricks"
-msgstr "Gạch"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:101
-#, kde-format
-msgid "Bricks 2"
-msgstr "Gạch 2"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:102
-#, kde-format
-msgid "Canvas"
-msgstr "Vải bạt"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:103
-#, kde-format
-msgid "Marble"
-msgstr "Đá hoa"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:104
-#, kde-format
-msgid "Marble 2"
-msgstr "Đá hoa 2"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:105
-#, kde-format
-msgid "Blue Jean"
-msgstr "Vải chéo go xanh"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:106
-#, kde-format
-msgid "Cell Wood"
-msgstr "Gỗ ô"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:107
-#, kde-format
-msgid "Metal Wire"
-msgstr "Dây kim"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:108
-#, kde-format
-msgid "Modern"
-msgstr "Hiện đại"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:109
-#, kde-format
-msgid "Wall"
-msgstr "Tưởng"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:110
-#, kde-format
-msgid "Moss"
-msgstr "Rêu"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:111
-#, kde-format
-msgid "Stone"
-msgstr "Đá"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:113
-#, fuzzy, kde-format
-msgid "Set here the texture type to apply to image."
-msgstr "<p>Ở đây hãy đặt kiểu họa tiết cần áp dụng cho ảnh."
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:117
-#, kde-format
-msgid "Relief:"
-msgstr "Nổi bật:"
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:121
-#, fuzzy, kde-format
-msgid "Set here the relief gain used to merge texture and image."
-msgstr ""
-"<p>Ở đây hãy đặt khuếch đại nổi bật được dùng để hợp nhất họa tiết với ảnh."
-
-#: core/dplugins/editor/decorate/texture/texturetool.cpp:221
+#: core/dplugins/editor/decorate/texture/texturetool.cpp:147
 #: core/dplugins/editor/decorate/texture/texturetoolplugin.cpp:52
 #, kde-format
 msgid "Texture"
@@ -7663,7 +7586,7 @@ msgstr "<p>Ở đây hãy đặt độ rộng mới của ảnh theo điểm ả
 
 #: core/dplugins/editor/transform/contentawareresize/contentawareresizetool.cpp:218
 #: core/dplugins/editor/transform/resize/resizetool.cpp:380
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:167
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:166
 #, kde-format
 msgid "Width (%):"
 msgstr "Rộng (%):"
@@ -24977,109 +24900,109 @@ msgstr ""
 msgid "Border Tool"
 msgstr "Màu nét dẫn:"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:133
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:132
 #, fuzzy, kde-format
 msgctxt "solid border type"
 msgid "Solid"
 msgstr "Đặc"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:136
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:135
 #, fuzzy, kde-format
 msgctxt "beveled border type"
 msgid "Beveled"
 msgstr "Xiên góc"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:137
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:136
 #, kde-format
 msgid "Decorative Pine"
 msgstr "Gỗ thông để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:138
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:137
 #, kde-format
 msgid "Decorative Wood"
 msgstr "Gỗ để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:139
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:138
 #, kde-format
 msgid "Decorative Paper"
 msgstr "Giấy để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:140
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:139
 #, kde-format
 msgid "Decorative Parquet"
 msgstr "Lát sàn gỗ để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:141
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:140
 #, kde-format
 msgid "Decorative Ice"
 msgstr "Nước đá để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:142
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:141
 #, kde-format
 msgid "Decorative Leaf"
 msgstr "Lá cây để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:143
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:142
 #, kde-format
 msgid "Decorative Marble"
 msgstr "Đá hoa để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:144
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:143
 #, kde-format
 msgid "Decorative Rain"
 msgstr "Mưa để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:145
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:144
 #, kde-format
 msgid "Decorative Craters"
 msgstr "Miệng núi lửa để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:146
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:145
 #, kde-format
 msgid "Decorative Dried"
 msgstr "Phơi khô để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:147
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:146
 #, kde-format
 msgid "Decorative Pink"
 msgstr "Màu hồng để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:148
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:147
 #, kde-format
 msgid "Decorative Stone"
 msgstr "Đá để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:149
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:148
 #, kde-format
 msgid "Decorative Chalk"
 msgstr "Đá phấn để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:150
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:149
 #, kde-format
 msgid "Decorative Granite"
 msgstr "Đá granit để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:151
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:150
 #, kde-format
 msgid "Decorative Rock"
 msgstr "Đá nhám để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:152
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:151
 #, kde-format
 msgid "Decorative Wall"
 msgstr "Tưởng để trang trí"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:154
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:153
 #, fuzzy, kde-format
 msgid "Select the border type to add around the image here."
 msgstr "<p>Ở đây hãy chọn kiểu viền cần thêm chung quanh ảnh."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:161
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:160
 #, kde-format
 msgid "Preserve Aspect Ratio"
 msgstr "Giữ tỷ lệ hình thể"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:162
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:161
 #, fuzzy, kde-format
 msgid ""
 "Enable this option if you want to preserve the aspect ratio of image. If "
@@ -25090,70 +25013,70 @@ msgstr ""
 "rộng của viền được đặt theo phần trăm kích cỡ ảnh, không thì nó theo điểm "
 "ảnh."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:171
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:170
 #, fuzzy, kde-format
 msgid "Set here the border width as a percentage of the image size."
 msgstr "<p>Ở đây hãy đặt độ rộng của viền theo phần trăm kích cỡ ảnh."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:173
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:172
 #, kde-format
 msgid "Width (pixels):"
 msgstr "Rộng (điểm ảnh):"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:177
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:176
 #, fuzzy, kde-format
 msgid "Set here the border width in pixels to add around the image."
 msgstr ""
 "<p>Ở đây hãy đặt độ rộng của viền (theo điểm ảnh) cần thêm chung quanh ảnh."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:407
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:406
 #, fuzzy, kde-format
 msgctxt "first color for border effect"
 msgid "First:"
 msgstr "Thứ nhất:"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:408
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:407
 #, fuzzy, kde-format
 msgctxt "second color for border effect"
 msgid "Second:"
 msgstr "Thứ hai:"
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:409
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:408
 #, fuzzy, kde-format
 msgid "Set here the foreground color of the border."
 msgstr "<p>Ở đây hãy đặt màu cảnh gần của viền."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:410
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:409
 #, fuzzy, kde-format
 msgid "Set here the Background color of the border."
 msgstr "<p>Ở đây hãy đặt màu nền của viền."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:426
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:425
 #, fuzzy, kde-format
 msgid "Set here the color of the main border."
 msgstr "<p>Ở đây hãy đặt màu của viền chính."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:427
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:426
 #, fuzzy, kde-format
 msgid "Set here the color of the line."
 msgstr "<p>Ở đây hãy đặt màu của đường."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:433
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:432
 #, fuzzy, kde-format
 msgid "Set here the color of the upper left area."
 msgstr "<p>Ở đây hãy đặt màu của vùng bên trái trên."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:434
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:433
 #, fuzzy, kde-format
 msgid "Set here the color of the lower right area."
 msgstr "<p>Ở đây hãy đặt màu của vùng bên phải dưới."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:455
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:454
 #, fuzzy, kde-format
 msgid "Set here the color of the first line."
 msgstr "<p>Ở đây hãy đặt màu của đường thứ nhất."
 
-#: core/libs/dimg/filters/decorate/bordersettings.cpp:456
+#: core/libs/dimg/filters/decorate/bordersettings.cpp:455
 #, fuzzy, kde-format
 msgid "Set here the color of the second line."
 msgstr "<p>Ở đây hãy đặt màu của đường thứ hai."
@@ -25162,6 +25085,102 @@ msgstr "<p>Ở đây hãy đặt màu của đường thứ hai."
 #, fuzzy, kde-format
 msgid "Texture Filter"
 msgstr "Lọc đỏ"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:89
+#, kde-format
+msgid "Paper"
+msgstr "Giấy"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:90
+#, kde-format
+msgid "Paper 2"
+msgstr "Giấy 2"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:91
+#, kde-format
+msgid "Fabric"
+msgstr "Vải"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:92
+#, kde-format
+msgid "Burlap"
+msgstr "Vải gai"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:93
+#, kde-format
+msgid "Bricks"
+msgstr "Gạch"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:94
+#, kde-format
+msgid "Bricks 2"
+msgstr "Gạch 2"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:95
+#, kde-format
+msgid "Canvas"
+msgstr "Vải bạt"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:96
+#, kde-format
+msgid "Marble"
+msgstr "Đá hoa"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:97
+#, kde-format
+msgid "Marble 2"
+msgstr "Đá hoa 2"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:98
+#, kde-format
+msgid "Blue Jean"
+msgstr "Vải chéo go xanh"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:99
+#, kde-format
+msgid "Cell Wood"
+msgstr "Gỗ ô"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:100
+#, kde-format
+msgid "Metal Wire"
+msgstr "Dây kim"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:101
+#, kde-format
+msgid "Modern"
+msgstr "Hiện đại"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:102
+#, kde-format
+msgid "Wall"
+msgstr "Tưởng"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:103
+#, kde-format
+msgid "Moss"
+msgstr "Rêu"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:104
+#, kde-format
+msgid "Stone"
+msgstr "Đá"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:106
+#, fuzzy, kde-format
+msgid "Set here the texture type to apply to image."
+msgstr "<p>Ở đây hãy đặt kiểu họa tiết cần áp dụng cho ảnh."
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:110
+#, kde-format
+msgid "Relief:"
+msgstr "Nổi bật:"
+
+#: core/libs/dimg/filters/decorate/texturesettings.cpp:114
+#, fuzzy, kde-format
+msgid "Set here the relief gain used to merge texture and image."
+msgstr ""
+"<p>Ở đây hãy đặt khuếch đại nổi bật được dùng để hợp nhất họa tiết với ảnh."
 
 #: core/libs/dimg/filters/dimgbuiltinfilter.cpp:338
 #: core/utilities/imageeditor/editor/editorwindow.cpp:489

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-20 02:10+0200\n"
+"POT-Creation-Date: 2020-08-21 02:11+0200\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1013,6 +1013,7 @@ msgid "Photograph Properties"
 msgstr "Thuộc tính ảnh chụp"
 
 #: core/app/items/utils/tooltipfiller.cpp:167
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:170
 #: core/showfoto/thumbbar/showfototooltipfiller.cpp:142
 #: core/utilities/import/items/importtooltipfiller.cpp:140
 #, kde-format
@@ -3333,7 +3334,7 @@ msgstr "Đường dẫn"
 
 #: core/app/views/tableview/tableview_column_file.cpp:65
 #: core/app/views/tableview/tableview_column_file.cpp:98
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:58
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:60
 #: core/libs/widgets/fonts/dfontproperties.cpp:332
 #, kde-format
 msgid "Size"
@@ -12933,7 +12934,7 @@ msgstr "Lỗi tạo thư mục"
 
 #. i18n: ectx: property (title), widget (QGroupBox, previewGroupBox)
 #: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:26
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:57
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:59
 #, kde-format
 msgid "Preview"
 msgstr "Xem thử"
@@ -25712,7 +25713,7 @@ msgstr "Ước lượng nhanh"
 msgid "Enable fast approximation when rendering images."
 msgstr "<p>Bật khả năng ước lượng nhanh để vẽ ảnh."
 
-#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:60
+#: core/libs/dimg/filters/hotpixels/blackframelistview.cpp:62
 #, fuzzy, kde-format
 msgctxt ""
 "This is a column which will contain the amount of HotPixels found in the "
@@ -25720,27 +25721,37 @@ msgctxt ""
 msgid "Hot Pixels"
 msgstr "Điểm ảnh nóng..."
 
-#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:77
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:85
 #, fuzzy, kde-format
 #| msgid "Loading: "
 msgid "Loading Frame"
 msgstr "Đang tải: "
 
-#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:145
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:151
 #, fuzzy, kde-format
-#| msgid "File name: %1 (%2)"
-msgid "<p>File Name: %1</p>"
-msgstr "Tên tập tin: %1 (%2)"
+#| msgid "Black Frame..."
+msgid "Black Frame"
+msgstr "Khung khối..."
 
-#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:146
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:163
 #, fuzzy, kde-format
-#| msgid "Make/Model:"
-msgid "<p>Make/Model: %1/%2</p>"
-msgstr "Hãng/Mô hình:"
+msgid "File Name:"
+msgstr "Tên tập tin ảnh mới"
 
-#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:156
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:173
 #, fuzzy, kde-format
-msgid "<p>Hot Pixels: %1</p>"
+msgid "Created:"
+msgstr "Tạo :"
+
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:176
+#, fuzzy, kde-format
+#| msgid "Number:"
+msgid "Serial Number:"
+msgstr "Số :"
+
+#: core/libs/dimg/filters/hotpixels/blackframelistviewitem.cpp:187
+#, fuzzy, kde-format
+msgid "Hot Pixels:"
 msgstr "Điểm ảnh nóng..."
 
 #: core/libs/dimg/filters/hotpixels/hotpixelfixer.cpp:87
@@ -47490,6 +47501,20 @@ msgid ""
 "<b>Note: All changes to these settings only take effect after the restart. "
 "Some settings are hardware dependent and may have no effect.</b>"
 msgstr ""
+
+#, fuzzy
+#~| msgid "File name: %1 (%2)"
+#~ msgid "<p>File Name: %1</p>"
+#~ msgstr "Tên tập tin: %1 (%2)"
+
+#, fuzzy
+#~| msgid "Make/Model:"
+#~ msgid "<p>Make/Model: %1/%2</p>"
+#~ msgstr "Hãng/Mô hình:"
+
+#, fuzzy
+#~ msgid "<p>Hot Pixels: %1</p>"
+#~ msgstr "Điểm ảnh nóng..."
 
 #~ msgid "All"
 #~ msgstr "Tất cả"

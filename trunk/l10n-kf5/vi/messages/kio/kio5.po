@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-09-21 02:16+0200\n"
-"PO-Revision-Date: 2020-09-21 17:26+0200\n"
+"PO-Revision-Date: 2020-09-21 22:50+0200\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
 "Language: vi\n"
@@ -1536,16 +1536,20 @@ msgid ""
 "capable of such an action. This is a rare event, and is likely to indicate a "
 "programming error."
 msgstr ""
+"KDE có thể liên lạc qua một giao thức bên trong một giao thức. Yêu cầu này "
+"chỉ định một giao thức để dùng như thế, tuy nhiên giao thức này không có "
+"khả năng thực hiện một hành động như vậy. Đây là một sự kiện hiếm gặp, và "
+"có thể cho thấy một lỗi lập trình."
 
 #: core/job_error.cpp:660
 #, kde-format
 msgid "Unable to Initialize Input/Output Device"
-msgstr ""
+msgstr "Không thể khởi tạo thiết bị nhập/xuất"
 
 #: core/job_error.cpp:661
 #, kde-format
 msgid "Could Not Mount Device"
-msgstr ""
+msgstr "Không thể gắn kết thiết bị"
 
 #: core/job_error.cpp:662
 #, kde-format
@@ -1553,6 +1557,8 @@ msgid ""
 "The requested device could not be initialized (\"mounted\"). The reported "
 "error was: <strong>%1</strong>"
 msgstr ""
+"Không thể khởi tạo (\"gắn kết\") thiết bị được yêu cầu. Lỗi được báo là: <"
+"strong>%1</strong>"
 
 #: core/job_error.cpp:665
 #, kde-format
@@ -1561,6 +1567,10 @@ msgid ""
 "removable media device (i.e. no CD-ROM in a CD drive), or in the case of a "
 "peripheral/portable device, the device may not be correctly connected."
 msgstr ""
+"Thiết bị có thể chưa sẵn sàng, ví dụ có thể đang không có phương tiện nào ở"
+" trong một thiết bị phương tiện gắn ngoài (ví dụ không có đĩa CD-ROM nào"
+" trong một ổ CD), hoặc trong trường hợp của một thiết bị ngoại vi/di động,"
+" thiết bị đó có thể không được kết nối đúng."
 
 #: core/job_error.cpp:669
 #, kde-format
@@ -1569,6 +1579,9 @@ msgid ""
 "systems, often system administrator privileges are required to initialize a "
 "device."
 msgstr ""
+"Bạn có thể không có quyền truy cập để khởi tạo (\"gắn kết\") thiết bị này."
+" Trên các hệ thống UNIX, thường cần có đặc quyền quản trị viên hệ thống để"
+" khởi tạo một thiết bị."
 
 #: core/job_error.cpp:673
 #, kde-format
@@ -1576,16 +1589,18 @@ msgid ""
 "Check that the device is ready; removable drives must contain media, and "
 "portable devices must be connected and powered on.; and try again."
 msgstr ""
+"Kiểm tra rằng thiết bị đã sẵn sàng; các ổ gắn ngoài phải chứa phương tiện, và"
+" các thiết bị di động phải được kết nối và đã bật; rồi thử lại."
 
 #: core/job_error.cpp:679
 #, kde-format
 msgid "Unable to Uninitialize Input/Output Device"
-msgstr ""
+msgstr "Không thể bỏ khởi tạo thiết bị nhập/xuất"
 
 #: core/job_error.cpp:680
 #, kde-format
 msgid "Could Not Unmount Device"
-msgstr ""
+msgstr "Không thể bỏ gắn kết thiết bị"
 
 #: core/job_error.cpp:681
 #, kde-format
@@ -1593,6 +1608,8 @@ msgid ""
 "The requested device could not be uninitialized (\"unmounted\"). The "
 "reported error was: <strong>%1</strong>"
 msgstr ""
+"Không thể bỏ khởi tạo (\"bỏ gắn kết\") thiết bị được yêu cầu. Lỗi được báo"
+" là: <strong>%1</strong>"
 
 #: core/job_error.cpp:684
 #, kde-format
@@ -1601,6 +1618,9 @@ msgid ""
 "user. Even such things as having an open browser window on a location on "
 "this device may cause the device to remain in use."
 msgstr ""
+"Thiết bị có thể đang bận, tức là vẫn đang được sử dụng bởi một ứng dụng hoặc"
+" người dùng khác. Ngay cả những việc như có một cửa sổ trình duyệt đang mở ở"
+" một địa điểm trên thiết bị này cũng có thể khiến thiết bị vẫn được sử dụng."
 
 #: core/job_error.cpp:688
 #, kde-format
@@ -1609,16 +1629,19 @@ msgid ""
 "UNIX systems, system administrator privileges are often required to "
 "uninitialize a device."
 msgstr ""
+"Bạn có thể không có quyền truy cập để bỏ khởi tạo (\"bỏ gắn kết\") thiết bị"
+" này. Trên các hệ thống UNIX, thường cần có đặc quyền quản trị viên hệ thống"
+" để bỏ khởi tạo một thiết bị."
 
 #: core/job_error.cpp:692
 #, kde-format
 msgid "Check that no applications are accessing the device, and try again."
-msgstr ""
+msgstr "Kiểm tra rằng không ứng dụng nào đang truy cập thiết bị, và thử lại."
 
 #: core/job_error.cpp:697
 #, kde-format
 msgid "Cannot Read From Resource"
-msgstr ""
+msgstr "Không thể đọc từ tài nguyên"
 
 #: core/job_error.cpp:698
 #, kde-format
@@ -1626,16 +1649,18 @@ msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
 "opened, an error occurred while reading the contents of the resource."
 msgstr ""
+"Điều này nghĩa là mặc dù tài nguyên đó, <strong>%1</strong>, đã mở được, một"
+" lỗi xảy ra khi đọc nội dung của tài nguyên."
 
 #: core/job_error.cpp:701
 #, kde-format
 msgid "You may not have permissions to read from the resource."
-msgstr ""
+msgstr "Bạn có thể không có quyền đọc từ tài nguyên đó."
 
 #: core/job_error.cpp:714
 #, kde-format
 msgid "Cannot Write to Resource"
-msgstr ""
+msgstr "Không thể ghi vào tài nguyên"
 
 #: core/job_error.cpp:715
 #, kde-format
@@ -1643,16 +1668,18 @@ msgid ""
 "This means that although the resource, <strong>%1</strong>, was able to be "
 "opened, an error occurred while writing to the resource."
 msgstr ""
+"Điều này nghĩa là mặc dù tài nguyên đó, <strong>%1</strong>, đã mở được, một"
+" lỗi xảy ra khi ghi vào tài nguyên."
 
 #: core/job_error.cpp:718
 #, kde-format
 msgid "You may not have permissions to write to the resource."
-msgstr ""
+msgstr "Bạn có thể không có quyền ghi vào tài nguyên đó."
 
 #: core/job_error.cpp:731 core/job_error.cpp:742
 #, kde-format
 msgid "Could Not Listen for Network Connections"
-msgstr ""
+msgstr "Không thể nghe chờ các kết nối mạng"
 
 #: core/job_error.cpp:732
 #, kde-format
@@ -2172,6 +2199,9 @@ msgid ""
 "klauncher could not find or start the plugin which provides the protocol."
 "This means you may have an outdated version of the plugin."
 msgstr ""
+"klauncher không thể tìm thấy hay khởi động phần cài cắm, cái mà cung cấp giao"
+" thức đó. Điều này nghĩa là bạn có thể đang có một phiên bản lỗi thời của"
+" phần cài cắm này."
 
 #: core/job_error.cpp:1072
 #, kde-kuit-format
@@ -2391,6 +2421,10 @@ msgid ""
 "encrypted.\n"
 "This means that a third party could observe your data in transit."
 msgstr ""
+"Bạn sắp rời khỏi chế độ an toàn. Nội dung truyền vận sẽ không còn được mã hoá"
+" nữa.\n"
+"Điều này nghĩa là một bên thứ ba có thể theo dõi dữ liệu của bạn trên đường "
+"truyền."
 
 #: core/tcpslavebase.cpp:304 core/tcpslavebase.cpp:507
 #, kde-format
@@ -2416,6 +2450,10 @@ msgid ""
 "This means that no third party will be able to easily observe your data in "
 "transit."
 msgstr ""
+"Bạn sắp đi vào chế độ an toàn. Tất cả nội dung truyền vận sẽ được mã hoá trừ"
+" khi được ghi chú khác đi.\n"
+"Điều này nghĩa là không một bên thứ ba nào có thể dễ dàng theo dõi dữ liệu"
+" của bạn trên đường truyền."
 
 #: core/tcpslavebase.cpp:508
 #, kde-format
@@ -4771,6 +4809,21 @@ msgid ""
 "you trust, you might want to set the policy to accept, then you can access "
 "the web sites without being prompted every time a cookie is received.</p>"
 msgstr ""
+"<h1>Cookie</h1><p>Cookie chứa thông tin mà các ứng dụng KDE dùng giao thức"
+" HTTP (như Konqueror) lưu trên máy tính của bạn, được bắt đầu bởi một máy chủ"
+" Internet ở xa. Điều này nghĩa là một máy chủ web có thể lưu thông tin về bạn"
+" và hoạt động duyệt của bạn trên máy bạn để dùng về sau. Bạn có thể coi đây"
+" là một việc xâm phạm sự riêng tư.</p><p>Tuy nhiên, cookie cũng có tác dụng"
+" trong những tình huống nhất định. Ví dụ, chúng hay được các cửa hàng trên"
+" Internet dùng, để bạn có thể 'đưa các thứ vào một giỏ hàng'. Vài trang yêu"
+" cầu bạn có một trình duyệt hỗ trợ cookie.</p><p>Vì hầu hết mọi người muốn"
+" một sự dung hoà giữa tính riêng tư và các lợi ích mà cookie đem lại, chương"
+" trình kioslave HTTP mang đến cho bạn khả năng tuỳ biến cách mà nó xử lí"
+" cookie. Bạn có thể muốn đặt chế độ mặc định là hỏi bạn bất cứ khi nào một"
+" máy chủ muốn đặt một cookie, cho phép bạn quyết định. Với các trang web mua"
+" sắm ưa thích mà bạn tin tưởng, bạn có thể muốn đặt chế độ chấp nhận, và bạn"
+" có thể truy cập các trang web mà không bị nhắc mỗi khi nhận được một"
+" cookie.</p>"
 
 #: kcms/kio/kcookiesmanagement.cpp:130 kcms/kio/kcookiesmanagement.cpp:146
 #, kde-format
@@ -4931,6 +4984,25 @@ msgid ""
 "receive cookies from trusted web sites without being asked every time KDE "
 "receives a cookie.</p>"
 msgstr ""
+"<h1>Cookie</h1><p>Cookie chứa thông tin mà các ứng dụng KDE dùng giao thức"
+" HTTP (như Konqueror) lưu trên máy tính của bạn, được bắt đầu bởi một máy chủ"
+" Internet ở xa. Điều này nghĩa là một máy chủ web có thể lưu thông tin về bạn"
+" và hoạt động duyệt của bạn trên máy bạn để dùng về sau. Bạn có thể coi đây"
+" là một việc xâm phạm sự riêng tư.</p><p>Tuy nhiên, cookie cũng có tác dụng"
+" trong những tình huống nhất định. Ví dụ, chúng hay được các cửa hàng trên"
+" Internet dùng, để bạn có thể 'đưa các thứ vào một giỏ hàng'. Vài trang yêu"
+" cầu bạn có một trình duyệt hỗ trợ cookie.</p><p>Vì hầu hết mọi người muốn"
+" một sự dung hoà giữa tính riêng tư và các lợi ích mà cookie đem lại, KDE"
+" mang đến cho bạn khả năng tuỳ biến cách mà nó xử lí cookie. Bạn có thể, ví"
+" dụ, muốn đặt chế độ mặc định của KDE là hỏi bạn bất cứ khi nào một máy chủ"
+" muốn đặt một cookie hoặc đơn giản là từ chối hay chấp nhận mọi thứ. Ví dụ,"
+" bạn có thể chọn chấp nhận tất cả cookie từ trang web mua sắm ưa thích của"
+" mình. Để được như vậy, tất cả những gì bạn cần làm là duyệt đến trang đó và"
+" khi hộp thoại cookie được hiển thị, bấm vào <i> Miền này </i> ở thẻ 'áp dụng"
+" với' và chọn chấp nhận, hoặc đơn giản là chỉ ra tên của trang đó trong thẻ <"
+"i> Chế độ riêng theo miền </i> và đặt nó thành chấp nhận. Việc này cho phép"
+" bạn nhận cookie từ các trang web được tin tưởng mà không bị hỏi mỗi khi KDE"
+" nhận được một cookie.</p>"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, cbEnableCookies)
 #: kcms/kio/kcookiespolicies.ui:20
@@ -6005,7 +6077,7 @@ msgstr ""
 #: kioexec/kioexecd.cpp:87 kioexec/main.cpp:238
 #, kde-format
 msgid "Upload"
-msgstr ""
+msgstr "Tải lên"
 
 #: kioexec/kioexecd.cpp:87 kioexec/main.cpp:238
 #, kde-format
@@ -6403,6 +6475,10 @@ msgid ""
 "This means that the same page is always going to be visited, regardless of "
 "the text typed in with the shortcut."
 msgstr ""
+"URL của lối tắt không chứa một phần giữ chỗ \\{...} cho truy vấn của người"
+" dùng.\n"
+"Điều này nghĩa là cùng một trang sẽ luôn được mở ra, bất kể chữ được gõ vào"
+" với lối tắt này là gì."
 
 #: urifilters/ikws/searchproviderdlg.cpp:143
 #, kde-format
@@ -6604,6 +6680,8 @@ msgid ""
 "Copy and paste a checksum in the field below.<br/>A checksum is usually "
 "provided by the website you downloaded this file from."
 msgstr ""
+"Chép và dán một giá trị tổng kiểm vào trường bên dưới.<br/>Một giá trị tổng "
+"kiểm thường được cung cấp bởi trang web mà từ đó bạn đã tải tệp này về."
 
 #. i18n: MD5, SHA1, SHA256 and SHA512 are hashing algorithms
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, lineEdit)
@@ -6616,7 +6694,7 @@ msgstr ""
 #: widgets/checksumswidget.ui:36
 #, kde-format
 msgid "Click to paste the checksum from the clipboard to the input field."
-msgstr ""
+msgstr "Bấm để dán giá trị tổng kiểm từ bảng nháp vào trường nhập."
 
 #. i18n: MD5 is the hashing algorithm
 #. i18n: ectx: property (text), widget (QLabel, md5Label)
@@ -8315,54 +8393,56 @@ msgid ""
 "The clipboard has changed since you used 'paste': the chosen data format is "
 "no longer applicable. Please copy again what you wanted to paste."
 msgstr ""
+"Bảng nháp đã thay đổi từ lúc bạn dùng 'dán': định dạng dữ liệu được chọn "
+"không còn dùng được nữa. Vui lòng chép lại thứ mà bạn muốn dán."
 
 #: widgets/paste.cpp:296
 #, kde-format
 msgid "&Paste File"
 msgid_plural "&Paste %1 Files"
-msgstr[0] ""
+msgstr[0] "&Dán %1 tệp"
 
 #: widgets/paste.cpp:298
 #, kde-format
 msgid "&Paste URL"
 msgid_plural "&Paste %1 URLs"
-msgstr[0] ""
+msgstr[0] "&Dán %1 URL"
 
 #: widgets/paste.cpp:301
 #, kde-format
 msgid "&Paste Clipboard Contents"
-msgstr ""
+msgstr "&Dán nội dung bảng nháp"
 
 #: widgets/paste.cpp:336
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste One Folder"
-msgstr ""
+msgstr "Dán một thư mục"
 
 #: widgets/paste.cpp:337
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste One File"
-msgstr ""
+msgstr "Dán một tệp"
 
 #: widgets/paste.cpp:339
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste One Item"
 msgid_plural "Paste %1 Items"
-msgstr[0] ""
+msgstr[0] "Dán %1 thứ"
 
 #: widgets/paste.cpp:341
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste Clipboard Contents..."
-msgstr ""
+msgstr "Dán nội dung bảng nháp..."
 
 #: widgets/paste.cpp:345
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Paste"
-msgstr ""
+msgstr "Dán"
 
 #: widgets/pastedialog.cpp:46
 #, kde-format

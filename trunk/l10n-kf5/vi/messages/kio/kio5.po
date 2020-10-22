@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-10-22 02:13+0200\n"
-"PO-Revision-Date: 2020-10-21 23:02+0200\n"
+"PO-Revision-Date: 2020-10-22 22:22+0200\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
 "Language: vi\n"
@@ -2636,7 +2636,7 @@ msgstr "Bạn chưa chọn tệp nào để đổ rác."
 #: filewidgets/kdiroperator.cpp:811
 #, kde-format
 msgid "Nothing to Trash"
-msgstr "Không có gì để đổ rác"
+msgstr "Không có gì để vứt"
 
 #: filewidgets/kdiroperator.cpp:1046 filewidgets/kdiroperator.cpp:1190
 #, kde-format
@@ -5270,13 +5270,13 @@ msgid ""
 "</qt>"
 msgstr ""
 "<qt>\n"
-"Từ chối các miếng bánh quy được gọi là \"của bên thứ ba\". Đây là những "
-"miếng bánh quy khởi nguồn từ một địa điểm khác với địa điểm mà bạn hiện đang "
-"duyệt. Ví dụ, nếu bạn mở <b>www.foobar.com</b> khi lựa chọn này đang bật, "
-"thì chỉ những miếng bánh quy khởi nguồn từ www.foobar.com mới được xử lí "
-"theo các thiết lập của bạn. Bánh quy từ bất kì địa điểm nào khác đều sẽ bị "
-"từ chối. Việc này làm giảm khả năng các nhà vận hành địa điểm có thể tập hợp "
-"được một hồ sơ về các thói quen duyệt hàng ngày của bạn.\n"
+"Từ chối các miếng bánh quy được gọi là \"của bên thứ ba\". Đây là những miếng "
+"bánh quy khởi nguồn từ một địa điểm khác với địa điểm mà bạn hiện đang duyệt. "
+"Ví dụ, nếu bạn mở <b>www.foobar.com</b> khi lựa chọn này đang bật, thì chỉ "
+"những miếng bánh quy khởi nguồn từ www.foobar.com mới được xử lí theo các "
+"thiết lập của bạn. Bánh quy từ bất kì địa điểm nào khác đều sẽ bị từ chối. "
+"Việc này làm giảm khả năng các nhà vận hành địa điểm có thể tập hợp được một "
+"hồ sơ về các thói quen duyệt hàng ngày của bạn.\n"
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRejectCrossDomainCookies)
@@ -5297,12 +5297,19 @@ msgid ""
 "this option overrides your default as well as site specific cookie policies "
 "for session cookies.</p>"
 msgstr ""
+"<p>\n"
+"Tự động chấp nhận các miếng bánh quy tạm, sẽ hết hạn vào cuối phiên hiện tại. "
+"Những miếng bánh quy như vậy sẽ không được lưu ở ổ cứng hay thiết bị lưu trữ "
+"trên máy tính của bạn, mà sẽ bị xoá khi bạn đóng tất cả các ứng dụng (vd. "
+"trình duyệt) sử dụng chúng.</p><p><u>LƯU Ý</u> Việc chọn lựa chọn này sẽ làm "
+"mất hiệu lực lựa chọn mặc định của bạn cũng như các chính sách bánh quy riêng "
+"theo địa điểm đối với bánh quy của phiên.</p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAutoAcceptSessionCookies)
 #: kcms/kio/kcookiespolicies.ui:49
 #, kde-format
 msgid "Automaticall&y accept session cookies"
-msgstr ""
+msgstr "Tự độn&g chấp nhận bánh quy của phiên"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, bgDefault)
 #: kcms/kio/kcookiespolicies.ui:68
@@ -5324,36 +5331,51 @@ msgid ""
 "precedence over the default policy.</p>\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Xác định cách xử lí bánh quy nhận được từ một máy ở xa: \n"
+"<ul>\n"
+"<li><b>Hỏi</b> sẽ khiến KDE yêu cầu bạn xác nhận mỗi khi một máy chủ muốn để "
+"lại một miếng bánh quy.</li>\n"
+"<li><b>Chấp nhận</b> sẽ khiến bánh quy được chấp nhận mà không cần hỏi bạn.</"
+"li>\n"
+"<li><b>Chấp nhận cho đến hết phiên</b> sẽ khiến bánh quy được chấp nhận nhưng "
+"chúng sẽ hết hạn khi hết phiên.</li>\n"
+"<li><b>Từ chối</b> sẽ khiến hũ bánh quy từ chối tất cả bánh quy mà nó nhận "
+"được.</li>\n"
+"</ul><p>\n"
+"<u>LƯU Ý:</u> Các chính sách riêng theo miền, có thể được đặt ra ở bên dưới, "
+"luôn được ưu tiên hơn chính sách mặc định.</p>\n"
+"</qt>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, bgDefault)
 #: kcms/kio/kcookiespolicies.ui:71
 #, kde-format
 msgid "Default Policy"
-msgstr ""
+msgstr "Chính sách mặc định"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rbPolicyAccept)
 #: kcms/kio/kcookiespolicies.ui:77
 #, kde-format
 msgid "Accep&t all cookies"
-msgstr ""
+msgstr "Chấp nhận &tất cả bánh quy"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rbPolicyAcceptForSession)
 #: kcms/kio/kcookiespolicies.ui:84
 #, kde-format
 msgid "Accept &until end of session"
-msgstr ""
+msgstr "Chấp nhận cho đến hết &phiên"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rbPolicyAsk)
 #: kcms/kio/kcookiespolicies.ui:91
 #, kde-format
 msgid "Ask &for confirmation"
-msgstr ""
+msgstr "Yêu cầu &xác nhận"
 
 #. i18n: ectx: property (text), widget (QRadioButton, rbPolicyReject)
 #: kcms/kio/kcookiespolicies.ui:98
 #, kde-format
 msgid "Re&ject all cookies"
-msgstr ""
+msgstr "Từ c&hối tất cả bánh quy"
 
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbDomainSpecific)
 #: kcms/kio/kcookiespolicies.ui:123
@@ -5373,19 +5395,19 @@ msgstr ""
 #: kcms/kio/kcookiespolicies.ui:126
 #, kde-format
 msgid "Site Policy"
-msgstr ""
+msgstr "Chính sách theo địa điểm"
 
 #. i18n: ectx: property (toolTip), widget (KTreeWidgetSearchLine, kListViewSearchLine)
 #: kcms/kio/kcookiespolicies.ui:135
 #, kde-format
 msgid "Search interactively for domains"
-msgstr ""
+msgstr "Tìm kiếm một cách tương tác các miền"
 
 #. i18n: ectx: property (placeholderText), widget (KTreeWidgetSearchLine, kListViewSearchLine)
 #: kcms/kio/kcookiespolicies.ui:138
 #, kde-format
 msgid "Search..."
-msgstr ""
+msgstr "Tìm kiếm..."
 
 #. i18n: ectx: property (whatsThis), widget (QTreeWidget, policyTreeWidget)
 #: kcms/kio/kcookiespolicies.ui:147
@@ -5401,7 +5423,7 @@ msgstr ""
 #: kcms/kio/kcookiespolicies.ui:163
 #, kde-format
 msgid "Domain"
-msgstr ""
+msgstr "Miền"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbNew)
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
@@ -5409,7 +5431,7 @@ msgstr ""
 #: urifilters/ikws/ikwsopts_ui.ui:74
 #, kde-format
 msgid "&New..."
-msgstr ""
+msgstr "&Tạo..."
 
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
 #. i18n: ectx: property (text), widget (QPushButton, changeButton)
@@ -5417,33 +5439,33 @@ msgstr ""
 #: urifilters/ikws/ikwsopts_ui.ui:87
 #, kde-format
 msgid "Chan&ge..."
-msgstr ""
+msgstr "Đổ&i..."
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cbPolicy)
 #: kcms/kio/kcookiespolicyselectiondlg.h:24
 #: kcms/kio/kcookiespolicyselectiondlg.ui:81
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Chấp nhận"
 
 #: kcms/kio/kcookiespolicyselectiondlg.h:26
 #, kde-format
 msgid "Accept For Session"
-msgstr ""
+msgstr "Chấp nhận cho phiên"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cbPolicy)
 #: kcms/kio/kcookiespolicyselectiondlg.h:28
 #: kcms/kio/kcookiespolicyselectiondlg.ui:91
 #, kde-format
 msgid "Reject"
-msgstr ""
+msgstr "Từ chối"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cbPolicy)
 #: kcms/kio/kcookiespolicyselectiondlg.h:30
 #: kcms/kio/kcookiespolicyselectiondlg.ui:96
 #, kde-format
 msgid "Ask"
-msgstr ""
+msgstr "Hỏi"
 
 #: kcms/kio/kcookiespolicyselectiondlg.h:32
 #, kde-format
@@ -5464,13 +5486,14 @@ msgstr ""
 #: kcms/kio/kcookiespolicyselectiondlg.ui:25
 #, kde-format
 msgid "Site name:"
-msgstr ""
+msgstr "Tên địa điểm:"
 
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, leDomain)
 #: kcms/kio/kcookiespolicyselectiondlg.ui:38
 #, kde-format
 msgid "Enter the host or domain name, e.g. .kde.org, this policy applies to."
 msgstr ""
+"Nhập tên máy hoặc miền, vd. .kde.org, mà chính sách này sẽ áp dụng cho."
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbPolicy)
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cbPolicy)
@@ -5494,13 +5517,13 @@ msgstr ""
 #: kcms/kio/kcookiespolicyselectiondlg.ui:56
 #, kde-format
 msgid "Policy:"
-msgstr ""
+msgstr "Chính sách:"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, cbPolicy)
 #: kcms/kio/kcookiespolicyselectiondlg.ui:86
 #, kde-format
 msgid "Accept until end of session"
-msgstr ""
+msgstr "Chấp nhận cho đến hết phiên"
 
 #. i18n: ectx: label, entry (DisablePassiveMode), group (DesktopIcons)
 #: kcms/kio/kio_ftprc.kcfg:10
@@ -5671,7 +5694,7 @@ msgstr ""
 #: kcms/kio/kproxydlg.ui:161 kcms/kio/kproxydlg.ui:383
 #, kde-format
 msgid "HTTP Proxy:"
-msgstr ""
+msgstr "Đại diện HTTP:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, systemProxyHttpsLabel)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, systemProxyHttpsEdit)
@@ -5691,7 +5714,7 @@ msgstr ""
 #: kcms/kio/kproxydlg.ui:196 kcms/kio/kproxydlg.ui:449
 #, kde-format
 msgid "SSL Proxy:"
-msgstr ""
+msgstr "Đại diện SSL:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, systemProxyFtpLabel)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, systemProxyFtpEdit)
@@ -5711,7 +5734,7 @@ msgstr ""
 #: kcms/kio/kproxydlg.ui:231 kcms/kio/kproxydlg.ui:499
 #, kde-format
 msgid "FTP Proxy:"
-msgstr ""
+msgstr "Đại diện FTP:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, systemProxySocksLabel)
 #: kcms/kio/kproxydlg.ui:263
@@ -5730,7 +5753,7 @@ msgstr ""
 #: kcms/kio/kproxydlg.ui:266 kcms/kio/kproxydlg.ui:552
 #, kde-format
 msgid "SOCKS Proxy:"
-msgstr ""
+msgstr "Đại diện SOCKS:"
 
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, systemProxySocksEdit)
 #: kcms/kio/kproxydlg.ui:285
@@ -5896,7 +5919,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Update Failed"
-msgstr ""
+msgstr "Cập nhật thất bại"
 
 #: kcms/kio/ksaveioconfig.cpp:226
 #, kde-format
@@ -6928,7 +6951,7 @@ msgstr ""
 #: widgets/certificateparty.ui:118
 #, kde-format
 msgid "Quebec"
-msgstr ""
+msgstr "Quebec"
 
 #. i18n: ectx: property (text), widget (QLabel, cityTag)
 #: widgets/certificateparty.ui:128
@@ -7083,47 +7106,47 @@ msgstr ""
 #: widgets/fileundomanager.cpp:332
 #, kde-format
 msgid "Und&o: Copy"
-msgstr ""
+msgstr "Đả&o ngược: Chép"
 
 #: widgets/fileundomanager.cpp:334
 #, kde-format
 msgid "Und&o: Link"
-msgstr ""
+msgstr "Đả&o ngược: Liên kết"
 
 #: widgets/fileundomanager.cpp:336
 #, kde-format
 msgid "Und&o: Move"
-msgstr ""
+msgstr "Đả&o ngược: Chuyển"
 
 #: widgets/fileundomanager.cpp:338
 #, kde-format
 msgid "Und&o: Rename"
-msgstr ""
+msgstr "Đả&o ngược: Đổi tên"
 
 #: widgets/fileundomanager.cpp:340
 #, kde-format
 msgid "Und&o: Trash"
-msgstr ""
+msgstr "Đả&o ngược: Vứt"
 
 #: widgets/fileundomanager.cpp:342
 #, kde-format
 msgid "Und&o: Create Folder"
-msgstr ""
+msgstr "Đả&o ngược: Tạo thư mục"
 
 #: widgets/fileundomanager.cpp:344
 #, kde-format
 msgid "Und&o: Create Folder(s)"
-msgstr ""
+msgstr "Đả&o ngược: Tạo (các) thư mục"
 
 #: widgets/fileundomanager.cpp:346
 #, kde-format
 msgid "Und&o: Create File"
-msgstr ""
+msgstr "Đả&o ngược: Tạo tệp"
 
 #: widgets/fileundomanager.cpp:348
 #, kde-format
 msgid "Und&o: Batch Rename"
-msgstr ""
+msgstr "Đả&o ngược: Đổi tên một loạt"
 
 #: widgets/fileundomanager.cpp:749
 #, kde-format
@@ -7183,7 +7206,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Empty Trash"
-msgstr ""
+msgstr "Đổ rác"
 
 #: widgets/jobuidelegate.cpp:277
 #, kde-kuit-format
@@ -7218,13 +7241,13 @@ msgstr ""
 #, kde-format
 msgctxt "Unix permissions"
 msgid "Owner"
-msgstr ""
+msgstr "Chủ sở hữu"
 
 #: widgets/kacleditwidget.cpp:265
 #, kde-format
 msgctxt "UNIX permissions"
 msgid "Owning Group"
-msgstr ""
+msgstr "Nhóm sở hữu"
 
 #: widgets/kacleditwidget.cpp:269 widgets/kacleditwidget.cpp:281
 #, kde-format
@@ -7267,12 +7290,12 @@ msgstr ""
 #: widgets/kacleditwidget.cpp:428
 #, kde-format
 msgid "Owner"
-msgstr ""
+msgstr "Chủ sở hữu"
 
 #: widgets/kacleditwidget.cpp:433
 #, kde-format
 msgid "Owning Group"
-msgstr ""
+msgstr "Nhóm sở hữu"
 
 #: widgets/kacleditwidget.cpp:438 widgets/kpropertiesdialog.cpp:2157
 #, kde-format
@@ -7297,40 +7320,40 @@ msgstr ""
 #: widgets/kacleditwidget.cpp:473
 #, kde-format
 msgid "User: "
-msgstr ""
+msgstr "Người dùng: "
 
 #: widgets/kacleditwidget.cpp:488
 #, kde-format
 msgid "Group: "
-msgstr ""
+msgstr "Nhóm: "
 
 #: widgets/kacleditwidget.cpp:625
 #, kde-format
 msgid "Type"
-msgstr ""
+msgstr "Kiểu"
 
 #: widgets/kacleditwidget.cpp:626
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: widgets/kacleditwidget.cpp:627
 #, kde-format
 msgctxt "read permission"
 msgid "r"
-msgstr ""
+msgstr "r"
 
 #: widgets/kacleditwidget.cpp:628
 #, kde-format
 msgctxt "write permission"
 msgid "w"
-msgstr ""
+msgstr "w"
 
 #: widgets/kacleditwidget.cpp:629
 #, kde-format
 msgctxt "execute permission"
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #: widgets/kacleditwidget.cpp:630
 #, kde-format
@@ -8793,7 +8816,7 @@ msgstr ""
 #: widgets/renamedialog.cpp:248
 #, kde-format
 msgid "&Skip"
-msgstr ""
+msgstr "Bỏ &qua"
 
 #: widgets/renamedialog.cpp:249
 #, kde-format
@@ -8835,7 +8858,7 @@ msgstr ""
 #: widgets/renamedialog.cpp:281
 #, kde-format
 msgid "C&ontinue"
-msgstr ""
+msgstr "&Tiếp tục"
 
 #: widgets/renamedialog.cpp:341
 #, kde-format
@@ -8985,67 +9008,67 @@ msgstr ""
 #, kde-format
 msgctxt "Web page address"
 msgid "Address:"
-msgstr ""
+msgstr "Địa chỉ:"
 
 #. i18n: ectx: property (text), widget (QLabel, ipTag)
 #: widgets/sslinfo.ui:54
 #, kde-format
 msgid "IP address:"
-msgstr ""
+msgstr "Địa chỉ IP:"
 
 #. i18n: ectx: property (text), widget (QLabel, encryptionTag)
 #: widgets/sslinfo.ui:74
 #, kde-format
 msgid "Encryption:"
-msgstr ""
+msgstr "Mật mã hoá:"
 
 #. i18n: ectx: property (text), widget (QLabel, detailsTag)
 #: widgets/sslinfo.ui:94
 #, kde-format
 msgid "Details:"
-msgstr ""
+msgstr "Chi tiết:"
 
 #. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
 #: widgets/sslinfo.ui:114
 #, kde-format
 msgid "SSL version:"
-msgstr ""
+msgstr "Phiên bản SSL:"
 
 #. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
 #: widgets/sslinfo.ui:134
 #, kde-format
 msgid "Certificate chain:"
-msgstr ""
+msgstr "Chuỗi chứng chỉ:"
 
 #. i18n: ectx: property (text), widget (QLabel, trustedTag)
 #: widgets/sslinfo.ui:163
 #, kde-format
 msgid "Trusted:"
-msgstr ""
+msgstr "Tin cậy:"
 
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
 #: widgets/sslinfo.ui:183
 #, kde-format
 msgid "Validity period:"
-msgstr ""
+msgstr "Kì hạn có hiệu lực:"
 
 #. i18n: ectx: property (text), widget (QLabel, serialTag)
 #: widgets/sslinfo.ui:203
 #, kde-format
 msgid "Serial number:"
-msgstr ""
+msgstr "Số loạt:"
 
 #. i18n: ectx: property (text), widget (QLabel, digestTag)
 #: widgets/sslinfo.ui:223
 #, kde-format
 msgid "MD5 digest:"
-msgstr ""
+msgstr "Tóm tắt dạng MD5:"
 
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
 #: widgets/sslinfo.ui:243
 #, kde-format
 msgid "SHA1 digest:"
-msgstr ""
+msgstr "Tóm tắt dạng SHA1:"
 
 #: widgets/sslui.cpp:38
 #, kde-format
@@ -9060,15 +9083,15 @@ msgstr ""
 #, kde-format
 msgctxt "Warning about executing unknown program"
 msgid "Warning"
-msgstr ""
+msgstr "Cảnh báo"
 
 #: widgets/widgetsuntrustedprogramhandler.cpp:115
 #, kde-format
 msgctxt "program name follows in a line edit below"
 msgid "This will start the program:"
-msgstr ""
+msgstr "Việc này sẽ khởi động chương trình đó:"
 
 #: widgets/widgetsuntrustedprogramhandler.cpp:125
 #, kde-format
 msgid "If you do not trust this program, click Cancel"
-msgstr ""
+msgstr "Nếu bạn không tin tưởng chương trình này, hãy nhấn Huỷ"

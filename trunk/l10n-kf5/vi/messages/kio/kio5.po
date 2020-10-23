@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-10-23 02:13+0200\n"
-"PO-Revision-Date: 2020-10-22 22:22+0200\n"
+"PO-Revision-Date: 2020-10-23 18:29+0200\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
 "Language: vi\n"
@@ -3104,13 +3104,13 @@ msgstr "Thùng rác"
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Music"
-msgstr ""
+msgstr "Nhạc"
 
 #: filewidgets/kfileplacesmodel.cpp:380
 #, kde-format
 msgctxt "KFile System Bookmarks"
 msgid "Pictures"
-msgstr ""
+msgstr "Ảnh"
 
 #: filewidgets/kfileplacesmodel.cpp:387 filewidgets/kfileplacesmodel.cpp:459
 #, kde-format
@@ -4157,13 +4157,13 @@ msgstr ""
 #: ioslaves/http/http.cpp:5397
 #, kde-format
 msgid "Proxy:"
-msgstr "Máy đại diện:"
+msgstr "Đại diện:"
 
 #: ioslaves/ftp/ftp.cpp:2613 ioslaves/http/http.cpp:5268
 #: ioslaves/http/http.cpp:5414
 #, kde-format
 msgid "Proxy Authentication Failed."
-msgstr "Xác thực máy đại diện thất bại."
+msgstr "Xác thực đại diện thất bại."
 
 #: ioslaves/help/kio_help.cpp:111
 #, kde-format
@@ -5314,8 +5314,8 @@ msgstr ""
 "tại. Những miếng bánh quy như vậy sẽ không được lưu ở ổ cứng hay thiết bị "
 "lưu trữ trên máy tính của bạn, mà sẽ bị xoá khi bạn đóng tất cả các ứng dụng "
 "(vd. trình duyệt) sử dụng chúng.</p><p><u>LƯU Ý</u> Việc chọn lựa chọn này "
-"sẽ làm mất hiệu lực lựa chọn mặc định của bạn cũng như các chính sách bánh "
-"quy riêng theo địa điểm đối với bánh quy của phiên.</p>"
+"sẽ làm mất hiệu lực của lựa chọn mặc định cũng như các chính sách bánh quy "
+"riêng theo địa điểm của bạn dành cho bánh quy của phiên.</p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbAutoAcceptSessionCookies)
 #: kcms/kio/kcookiespolicies.ui:49
@@ -5402,6 +5402,14 @@ msgid ""
 "All</b> will remove all the site specific policies.\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Để thêm một chính sách mới, chỉ cần bấm vào nút <b>Thêm...</b> và cung cấp "
+"thông tin cần thiết. Để thay đổi một chính sách đã có, dùng nút <b>Đổi...</"
+"b> và chọn chính sách mới trong hộp thoại chính sách. Nút <b>Xoá</b> dùng để "
+"xoá chính sách đang được chọn, khiến thiết lập chính sách mặc định sẽ được "
+"dùng cho miền đó, còn nút <b>Xoá tất cả</b> sẽ xoá tất cả các chính sách "
+"riêng theo địa điểm.\n"
+"</qt>"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbDomainSpecific)
 #: kcms/kio/kcookiespolicies.ui:126
@@ -5430,6 +5438,11 @@ msgid ""
 "policies override the default policy setting for these sites.\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Danh sách các địa điểm mà bạn đã đặt chính sách bánh quy riêng. Các chính "
+"sách riêng sẽ làm mất hiệu lực của thiết lập chính sách mặc định dành cho các "
+"địa điểm này.\n"
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, policyTreeWidget)
 #: kcms/kio/kcookiespolicies.ui:163
@@ -5482,7 +5495,7 @@ msgstr "Hỏi"
 #: kcms/kio/kcookiespolicyselectiondlg.h:32
 #, kde-format
 msgid "Do Not Know"
-msgstr ""
+msgstr "Không biết"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbDomain)
 #: kcms/kio/kcookiespolicyselectiondlg.ui:22
@@ -5493,6 +5506,10 @@ msgid ""
 "b> or <b>.kde.org</b>.\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Nhập máy hoặc miền mà chính sách này áp dụng cho, vd. <b>www.kde.org</b> hoặc "
+"<b>.kde.org</b>.\n"
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, lbDomain)
 #: kcms/kio/kcookiespolicyselectiondlg.ui:25
@@ -5524,6 +5541,16 @@ msgid ""
 "</ul>\n"
 "</qt>"
 msgstr ""
+"<qt>\n"
+"Chọn chính sách mong muốn:\n"
+"<ul>\n"
+"<li><b>Chấp nhận</b> - Cho phép địa điểm này để lại bánh quy</li>\n"
+"<li><b>Chấp nhận cho đến hết phiên</b> - Cho phép địa điểm này để lại bánh "
+"quy nhưng chúng sẽ hết hạn khi hết phiên.</li>\n"
+"<li><b>Từ chối</b> - Từ chối tất cả bánh quy gửi từ địa điểm này</li>\n"
+"<li><b>Hỏi</b> - Hỏi khi nhận được bánh quy từ địa điểm này</li>\n"
+"</ul>\n"
+"</qt>"
 
 #. i18n: ectx: property (text), widget (QLabel, lbPolicy)
 #: kcms/kio/kcookiespolicyselectiondlg.ui:56
@@ -5541,7 +5568,7 @@ msgstr "Chấp nhận cho đến hết phiên"
 #: kcms/kio/kio_ftprc.kcfg:10
 #, kde-format
 msgid "Disable Passive FTP"
-msgstr ""
+msgstr "Tắt FTP thụ động"
 
 #. i18n: ectx: whatsthis, entry (DisablePassiveMode), group (DesktopIcons)
 #: kcms/kio/kio_ftprc.kcfg:11
@@ -5551,13 +5578,16 @@ msgid ""
 "of the other way round, so firewalls do not block the connection; old FTP "
 "servers may not support Passive FTP though."
 msgstr ""
+"Khi các kết nối FTP ở dạng thụ động, trình khách kết nối đến máy chủ, thay vì "
+"chiều ngược lại, nên tường lửa sẽ không chặn kết nối đó; tuy vậy các máy chủ "
+"FTP cũ có thể không hỗ trợ FTP thụ động."
 
 #. i18n: ectx: label, entry (MarkPartial), group (Global Options)
 #. i18n: ectx: label, entry (MarkPartial), group (DesktopIcons)
 #: kcms/kio/kio_ftprc.kcfg:16 kcms/kio/kioslave.kcfg:34
 #, kde-format
 msgid "Mark partially uploaded files"
-msgstr ""
+msgstr "Đánh dấu các tệp được tải lên một phần"
 
 #. i18n: ectx: whatsthis, entry (MarkPartial), group (Global Options)
 #. i18n: ectx: whatsthis, entry (MarkPartial), group (DesktopIcons)
@@ -5567,6 +5597,9 @@ msgid ""
 "While a file is being uploaded its extension is \".part\". When fully "
 "uploaded it is renamed to its real name."
 msgstr ""
+"Khi một tệp đang được tải lên, phần mở rộng của nó là \".part\". Khi đã tải"
+" lên "
+"toàn bộ, nó được đổi tên thành tên thật."
 
 #: kcms/kio/kproxydlg.cpp:521
 #, kde-format
@@ -5579,6 +5612,13 @@ msgid ""
 "to block out requests for ads, spam, or anything else you want to block.</"
 "p><p><u>Note:</u> Some proxy servers provide both services.</p>"
 msgstr ""
+"<h1>Đại diện</h1><p>Một máy chủ đại diện là một chương trình trung gian đứng "
+"giữa máy của bạn và Liên Mạng, và cung cấp các dịch vụ như lưu đệm và/hoặc "
+"lọc các trang web.</p><p>Máy chủ đại diện lưu đệm cho phép bạn truy cập nhanh "
+"hơn đến các địa điểm mà bạn đã từng mở bằng cách lưu cục bộ hoặc lưu đệm nội "
+"dung các trang đó; máy chủ đại diện lọc, mặt khác, cung cấp khả năng chặn các "
+"yêu cầu đến quảng cáo, thư rác, hoặc bất kì thứ gì khác mà bạn muốn chặn.</p>"
+"<p><u>Lưu ý:</u> Một số máy chủ đại diện cung cấp cả hai dịch vụ.</p>"
 
 #. i18n: ectx: property (whatsThis), widget (QWidget, ProxyDialogUI)
 #: kcms/kio/kproxydlg.ui:20
@@ -6003,24 +6043,24 @@ msgstr ""
 #, kde-format
 msgid " byte"
 msgid_plural " bytes"
-msgstr[0] ""
+msgstr[0] " byte"
 
 #: kcms/kio/netpref.cpp:95
 #, kde-format
 msgctxt "@label:spinbox"
 msgid ""
 "If cancelled, automatically delete partially uploaded files smaller than:"
-msgstr ""
+msgstr "Nếu bị huỷ, tự động xoá các tệp được tải lên một phần mà nhỏ hơn:"
 
 #: kcms/kio/netpref.cpp:98
 #, kde-format
 msgid "FTP Options"
-msgstr ""
+msgstr "Các lựa chọn FTP"
 
 #: kcms/kio/netpref.cpp:102
 #, kde-format
 msgid "Enable passive &mode (PASV)"
-msgstr ""
+msgstr "Bật &chế độ thụ động (PASV)"
 
 #: kcms/kio/netpref.cpp:103
 #, kde-format
@@ -6028,6 +6068,8 @@ msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
 "behind firewalls."
 msgstr ""
+"Bật chế độ \"thụ động\" của FTP. Việc này là cần thiết để cho phép FTP hoạt "
+"động đằng sau tường lửa."
 
 #: kcms/kio/netpref.cpp:111
 #, kde-format
@@ -6237,7 +6279,7 @@ msgstr ""
 #: kcms/kio/useragentdlg.ui:156
 #, kde-format
 msgid "Site Name"
-msgstr ""
+msgstr "Tên địa điểm"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, sitePolicyTreeWidget)
 #: kcms/kio/useragentdlg.ui:161
@@ -6334,7 +6376,7 @@ msgstr ""
 #: kcms/webshortcuts/main.cpp:28
 #, kde-format
 msgid "Web Search Keywords"
-msgstr ""
+msgstr "Từ khoá tìm kiếm web"
 
 #: kcms/webshortcuts/main.cpp:29
 #, kde-format
@@ -6359,11 +6401,13 @@ msgid ""
 "The file %1\n"
 "has been modified. Do you want to upload the changes?"
 msgstr ""
+"Tệp %1\n"
+"đã bị chỉnh sửa. Bạn có muốn tải các thay đổi lên?"
 
 #: kioexec/kioexecd.cpp:87 kioexec/main.cpp:233 kioexec/main.cpp:238
 #, kde-format
 msgid "File Changed"
-msgstr ""
+msgstr "Tệp đã thay đổi"
 
 #: kioexec/kioexecd.cpp:87 kioexec/main.cpp:238
 #, kde-format
@@ -6378,17 +6422,17 @@ msgstr "Đừng tải lên"
 #: kioexec/main.cpp:41
 #, kde-format
 msgid "KIO Exec - Opens remote files, watches modifications, asks for upload"
-msgstr ""
+msgstr "KIO Exec - Mở tệp ở xa, theo dõi các chỉnh sửa, hỏi về việc tải lên"
 
 #: kioexec/main.cpp:58
 #, kde-format
 msgid "Invalid URL: %1"
-msgstr ""
+msgstr "URL không hợp lệ: %1"
 
 #: kioexec/main.cpp:64
 #, kde-format
 msgid "File not found: %1"
-msgstr ""
+msgstr "Không tìm thấy tệp: %1"
 
 #: kioexec/main.cpp:81
 #, kde-format
@@ -6405,6 +6449,8 @@ msgid ""
 "Remote URL %1\n"
 "not allowed with --tempfiles switch"
 msgstr ""
+"URL ở xa %1\n"
+"không được cho phép với lựa chọn --tempfiles"
 
 #: kioexec/main.cpp:232
 #, kde-format
@@ -6414,6 +6460,10 @@ msgid ""
 "has been modified.\n"
 "Do you still want to delete it?"
 msgstr ""
+"Tệp được cho là tạm\n"
+"%1\n"
+"đã bị chỉnh sửa.\n"
+"Bạn vẫn muốn xoá nó?"
 
 #: kioexec/main.cpp:233
 #, kde-format
@@ -6471,22 +6521,22 @@ msgstr "Oswald Buddenhagen"
 #: kioexec/main.cpp:285
 #, kde-format
 msgid "Treat URLs as local files and delete them afterwards"
-msgstr ""
+msgstr "Coi URL như tệp cục bộ và sau đó xoá chúng"
 
 #: kioexec/main.cpp:286
 #, kde-format
 msgid "Suggested file name for the downloaded file"
-msgstr ""
+msgstr "Tên gợi ý cho tệp được tải về"
 
 #: kioexec/main.cpp:287
 #, kde-format
 msgid "Command to execute"
-msgstr ""
+msgstr "Lệnh để thực thi"
 
 #: kioexec/main.cpp:288
 #, kde-format
 msgid "URL(s) or local file(s) used for 'command'"
-msgstr ""
+msgstr "(Các) URL hoặc tệp cục bộ dùng cho 'command'"
 
 #: kpac/discovery.cpp:99
 #, kde-format
@@ -6513,6 +6563,8 @@ msgid ""
 "The proxy configuration script is invalid:\n"
 "%1"
 msgstr ""
+"Kịch bản cấu hình đại diện không hợp lệ:\n"
+"%1"
 
 #: kpac/proxyscout.cpp:344
 #, kde-format
@@ -6520,6 +6572,8 @@ msgid ""
 "The proxy configuration script returned an error:\n"
 "%1"
 msgstr ""
+"Kịch bản cấu hình đại diện trả về một lỗi:\n"
+"%1"
 
 #: kpac/script.cpp:672
 #, kde-format
@@ -6529,40 +6583,40 @@ msgstr "Không tìm được 'FindProxyForURL' hay là 'FindProxyForURLEx'"
 #: kpac/script.cpp:690
 #, kde-format
 msgid "Got an invalid reply when calling %1 -> %2"
-msgstr ""
+msgstr "Nhận được một hồi đáp không hợp lệ khi gọi %1 -> %2"
 
 #: kpasswdserver/kpasswdserver.cpp:527
 #, kde-format
 msgid "Do you want to retry?"
-msgstr ""
+msgstr "Bạn có muốn thử lại không?"
 
 #: kpasswdserver/kpasswdserver.cpp:532
 #, kde-format
 msgid "Retry Authentication"
-msgstr ""
+msgstr "Thử xác thực lại"
 
 #: kpasswdserver/kpasswdserver.cpp:536
 #, kde-format
 msgctxt "@action:button filter-continue"
 msgid "Retry"
-msgstr ""
+msgstr "Thử lại"
 
 #: kpasswdserver/kpasswdserver.cpp:797
 #, kde-format
 msgid "Authentication Dialog"
-msgstr ""
+msgstr "Hộp thoại xác thực"
 
 #: urifilters/ikws/ikwsopts.cpp:38
 #, kde-format
 msgctxt "@title:column Name label from web search keyword column"
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #: urifilters/ikws/ikwsopts.cpp:40
 #, kde-format
 msgctxt "@title:column"
 msgid "Keywords"
-msgstr ""
+msgstr "Từ khoá"
 
 #: urifilters/ikws/ikwsopts.cpp:42
 #, kde-format
@@ -6652,7 +6706,7 @@ msgstr ""
 #: urifilters/ikws/ikwsopts_ui.ui:100
 #, kde-format
 msgid "De&lete"
-msgstr ""
+msgstr "&Xoá"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbDefaultEngine)
 #: urifilters/ikws/ikwsopts_ui.ui:138
@@ -6669,7 +6723,7 @@ msgstr ""
 #: urifilters/ikws/ikwsopts_ui.ui:141
 #, kde-format
 msgid "Default Web &search keyword:"
-msgstr ""
+msgstr "Từ khoá tìm &kiếm web mặc định:"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDefaultEngine)
 #: urifilters/ikws/ikwsopts_ui.ui:166
@@ -6740,7 +6794,7 @@ msgstr ""
 #, kde-format
 msgctxt "@item:inlistbox The default character set"
 msgid "Default"
-msgstr ""
+msgstr "Mặc định"
 
 #: urifilters/ikws/searchproviderdlg.cpp:49
 #, kde-format
@@ -6763,7 +6817,7 @@ msgstr ""
 #, kde-format
 msgctxt "- web short cut (e.g. gg): what it refers to (e.g. Google)"
 msgid "- %1: \"%2\""
-msgstr ""
+msgstr "- %1: \"%2\""
 
 #: urifilters/ikws/searchproviderdlg.cpp:127
 #, kde-format
@@ -6915,13 +6969,13 @@ msgstr ""
 #: widgets/certificateparty.ui:38
 #, kde-format
 msgid "Acme Co."
-msgstr ""
+msgstr "Acme Co."
 
 #. i18n: ectx: property (text), widget (QLabel, organizationTag)
 #: widgets/certificateparty.ui:48
 #, kde-format
 msgid "Organization:"
-msgstr ""
+msgstr "Tổ chức:"
 
 #. i18n: ectx: property (text), widget (QLabel, organization)
 #: widgets/certificateparty.ui:58

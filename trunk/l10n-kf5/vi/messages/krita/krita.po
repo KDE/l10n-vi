@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 02:19+0100\n"
+"POT-Creation-Date: 2020-10-28 02:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -8792,8 +8792,9 @@ msgid "Onion Skins"
 msgstr "&Bó buộc tỉ lệ"
 
 #: libs/image/kis_layer_properties_icons.cpp:39
-#: libs/resources/KisStorageModel.cpp:234
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:87
+#: libs/resources/KisResourceModel.cpp:137
+#: libs/resources/KisStorageModel.cpp:287
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:85
 #, fuzzy, kde-format
 msgid "Active"
 msgstr "Lớp đang dùng"
@@ -8891,8 +8892,8 @@ msgid "Processing"
 msgstr "Hậu xử lí"
 
 #: libs/image/kis_psd_layer_style.cpp:100
-#: libs/ui/KisApplicationArguments.cpp:349 libs/ui/KisMainWindow.cpp:1347
-#: libs/ui/KisMainWindow.cpp:1615 libs/ui/KisMainWindow.cpp:1634
+#: libs/ui/KisApplicationArguments.cpp:349 libs/ui/KisMainWindow.cpp:1346
+#: libs/ui/KisMainWindow.cpp:1614 libs/ui/KisMainWindow.cpp:1633
 #: plugins/impex/libkra/kis_kra_saver.cpp:93
 #, kde-format
 msgid "Unnamed"
@@ -9113,7 +9114,7 @@ msgstr "Lớp &lặp lại"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: libs/impex/KisExportCheckRegistry.cpp:103 libs/ui/kis_layer_manager.cc:635
 #: libs/ui/kis_node_manager.cpp:1538 libs/ui/KisPaletteEditor.cpp:421
-#: libs/widgets/kis_palette_view.cpp:126
+#: libs/widgets/kis_palette_view.cpp:125
 #: plugins/dockers/arrangedocker/arrange_docker_widget.ui:226
 #, fuzzy, kde-format
 #| msgid "Group:"
@@ -10468,7 +10469,7 @@ msgstr "XYZ (số nguyên 16-bit mỗi kênh)"
 #: libs/ui/forms/wdgstrokeselectionproperties.ui:228
 #: libs/ui/KisPaletteEditor.cpp:374 libs/ui/KisPaletteEditor.cpp:424
 #: libs/ui/layerstyles/WdgColorOverlay.ui:23
-#: libs/ui/layerstyles/WdgStroke.ui:134 libs/widgets/kis_palette_view.cpp:129
+#: libs/ui/layerstyles/WdgStroke.ui:134 libs/widgets/kis_palette_view.cpp:128
 #: plugins/extensions/layersplit/layersplit.cpp:211
 #: plugins/generators/solid/colorgenerator.h:53
 #, kde-format
@@ -11431,93 +11432,155 @@ msgstr "không tên-1"
 msgid "SVG Gradient"
 msgstr "Đổ dốc màu"
 
-#: libs/resources/KisFolderStorage.cpp:234
+#: libs/resources/KisFolderStorage.cpp:240
 #, fuzzy, kde-format
 msgid "Local Resources"
 msgstr "Gỡ bỏ Layer"
 
-#: libs/resources/KisResourceLocator.cpp:99
+#: libs/resources/KisResourceCacheDb.cpp:149
+#: libs/ui/animation/KisAnimationRender.cpp:60
+#: libs/ui/animation/KisAnimationRender.cpp:112
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:471
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:475
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:483
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:487
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:493
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:496
+#: libs/ui/animation/KisDlgAnimationRenderer.cpp:503
+#: libs/ui/dialogs/kis_dlg_preferences.cc:535
+#: libs/ui/input/kis_tablet_debugger.cpp:104 libs/ui/kis_filter_manager.cc:243
+#: libs/ui/kis_filter_manager.cc:252 libs/ui/kis_layer_manager.cc:317
+#: libs/ui/kis_layer_manager.cc:1001 libs/ui/kis_node_manager.cpp:1226
+#: libs/ui/kis_node_manager.cpp:1289 libs/ui/KisApplication.cpp:931
+#: libs/ui/KisApplication.cpp:934 libs/ui/KisApplication.cpp:959
+#: libs/ui/KisApplication.cpp:991 libs/ui/KisApplication.cpp:1005
+#: libs/ui/KisApplication.cpp:1033 libs/ui/KisDocument.cpp:800
+#: libs/ui/KisDocument.cpp:1553 libs/ui/KisDocument.cpp:1595
+#: libs/ui/KisDocument.cpp:1603 libs/ui/KisMainWindow.cpp:847
+#: libs/ui/KisMainWindow.cpp:1001 libs/ui/KisMainWindow.cpp:1126
+#: libs/ui/KisMainWindow.cpp:1139 libs/ui/KisMainWindow.cpp:1234
+#: libs/ui/KisMainWindow.cpp:1896 libs/ui/KisPart.cpp:549
+#: libs/ui/KisPart.cpp:552 libs/ui/KisReferenceImage.cpp:191
+#: libs/ui/KisRemoteFileFetcher.cpp:54 libs/ui/KisTemplateCreateDia.cpp:297
+#: libs/ui/KisTemplateCreateDia.cpp:403 libs/ui/KisView.cpp:716
+#: libs/ui/KisWelcomePageWidget.cpp:576
+#: libs/ui/opengl/kis_opengl_canvas2.cpp:422
+#: libs/ui/widgets/kis_custom_image_widget.cc:277
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:898
+#: plugins/assistants/Assistants/kis_assistant_tool.cc:901
+#: plugins/dockers/gamutmask/gamutmask_dock.cpp:301
+#: plugins/extensions/imagesplit/imagesplit.cpp:86
+#: plugins/extensions/imagesplit/imagesplit.cpp:88
+#: plugins/extensions/qmic/QMic.cpp:126 plugins/extensions/qmic/QMic.cpp:298
+#: plugins/extensions/qmic/QMic.cpp:327
+#: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:297
+#: plugins/extensions/resourcemanager/resourcemanager.cpp:229
+#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:405
+#: plugins/tools/basictools/kis_tool_colorpicker.cc:157
+#: plugins/tools/basictools/kis_tool_colorpicker.cc:162
+#: plugins/tools/basictools/kis_tool_colorpicker.cc:210
+#: plugins/tools/defaulttool/referenceimagestool/KisReferenceImageCollection.cpp:107
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:134
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:169
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:191
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:218
+#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:227
+#: plugins/tools/svgtexttool/SvgTextEditor.cpp:1114
+#: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:358
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Krita"
+msgstr "Krita"
+
+#: libs/resources/KisResourceCacheDb.cpp:149
+#, kde-format
+msgid ""
+"The resource database scheme is changed. Krita will backup your database and "
+"create a new database. Your local tags will be lost."
+msgstr ""
+
+#: libs/resources/KisResourceLocator.cpp:101
 #, fuzzy, kde-format
 #| msgid "Could not create the file for saving"
 msgid "1. Could not create the resource location at %1."
 msgstr "Không thể tạo tệp để lưu"
 
-#: libs/resources/KisResourceLocator.cpp:106
+#: libs/resources/KisResourceLocator.cpp:108
 #, kde-format
 msgid "2. The resource location at %1 is not writable."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:453
+#: libs/resources/KisResourceLocator.cpp:426
 #, fuzzy, kde-format
 msgid "Could not add %1 to the database"
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: libs/resources/KisResourceLocator.cpp:471
+#: libs/resources/KisResourceLocator.cpp:443
 #, fuzzy, kde-format
 msgid "Could not remove storage %1 from the database"
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: libs/resources/KisResourceLocator.cpp:487
+#: libs/resources/KisResourceLocator.cpp:458
 #, kde-format
 msgid ""
 "Krita is running for the first time. Initialization will take some time."
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:494
+#: libs/resources/KisResourceLocator.cpp:465
 #, fuzzy, kde-format
 #| msgid "Could not create the file for saving"
 msgid "3. Could not create the resource location at %1."
 msgstr "Không thể tạo tệp để lưu"
 
-#: libs/resources/KisResourceLocator.cpp:507
-#: libs/resources/KisResourceLocator.cpp:523
+#: libs/resources/KisResourceLocator.cpp:478
+#: libs/resources/KisResourceLocator.cpp:494
 #, fuzzy, kde-format
 msgid "Could not copy resource %1 to %2"
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: libs/resources/KisResourceLocator.cpp:519
+#: libs/resources/KisResourceLocator.cpp:490
 #, fuzzy, kde-format
 msgid "Installing the resources from bundle %1."
 msgstr "Cấu hình mới %1"
 
-#: libs/resources/KisResourceLocator.cpp:541
+#: libs/resources/KisResourceLocator.cpp:512
 #, fuzzy, kde-format
 msgid "Initializing the resources."
 msgstr "&Tài nguyên"
 
-#: libs/resources/KisResourceLocator.cpp:551
+#: libs/resources/KisResourceLocator.cpp:522
 #, kde-format
 msgid "Could not add storage %1 to the cache database"
 msgstr ""
 
-#: libs/resources/KisResourceLocator.cpp:571
+#: libs/resources/KisResourceLocator.cpp:542
 #, fuzzy, kde-format
 msgid "Temporary Resources"
 msgstr "Nhập Tài liệu"
 
-#: libs/resources/KisResourceLocator.cpp:683
+#: libs/resources/KisResourceLocator.cpp:654
 #, fuzzy, kde-format
 #| msgid "Could not add layer to image."
 msgid "Could not synchronize %1 with the database"
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: libs/resources/KisResourceModel.cpp:246
-#: libs/resources/KisStorageModel.cpp:219
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:81
+#: libs/resources/KisResourceModel.cpp:119
+#: libs/resources/KisStorageModel.cpp:277
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:79
 #, kde-format
 msgid "Id"
 msgstr ""
 
-#: libs/resources/KisResourceModel.cpp:249
+#: libs/resources/KisResourceModel.cpp:121
 #, kde-format
 msgid "Storage ID"
 msgstr ""
 
-#: libs/resources/KisResourceModel.cpp:252
-#: libs/resources/KisStorageModel.cpp:240
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:85
+#: libs/resources/KisResourceModel.cpp:123
+#: libs/resources/KisStorageModel.cpp:291
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:83
 #: libs/ui/KisPaletteEditor.cpp:218 libs/ui/KisPaletteEditor.cpp:423
-#: libs/widgets/kis_palette_view.cpp:128
+#: libs/widgets/kis_palette_view.cpp:127
 #: plugins/python/filtermanager/components/filtermanagertreemodel.py:30
 #: plugins/python/scripter/ui_scripter/tabwidgets/debuggerwidget/debuggertable.py:28
 #, fuzzy, kde-format
@@ -11525,20 +11588,20 @@ msgstr ""
 msgid "Name"
 msgstr "Tên:"
 
-#: libs/resources/KisResourceModel.cpp:255
+#: libs/resources/KisResourceModel.cpp:125
 #, fuzzy, kde-format
 #| msgid "Filename"
 msgid "File Name"
 msgstr "Tên tệp"
 
-#: libs/resources/KisResourceModel.cpp:258
+#: libs/resources/KisResourceModel.cpp:127
 #, fuzzy, kde-format
 msgid "Tooltip"
 msgstr "&Công cụ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#: libs/resources/KisResourceModel.cpp:261
+#: libs/resources/KisResourceModel.cpp:129
 #: plugins/extensions/imagesize/imagesize.xmlgui:4
 #: plugins/extensions/imagesplit/imagesplit.xmlgui:4
 #: plugins/extensions/separate_channels/imageseparate.xmlgui:4
@@ -11549,24 +11612,30 @@ msgstr "&Công cụ"
 msgid "Image"
 msgstr "Ảnh"
 
-#: libs/resources/KisResourceModel.cpp:264
+#: libs/resources/KisResourceModel.cpp:131
 #, fuzzy, kde-format
 msgid "Status"
 msgstr "Hiện lớp gốc"
 
-#: libs/resources/KisResourceModel.cpp:267
-#: libs/resources/KisStorageModel.cpp:225
+#: libs/resources/KisResourceModel.cpp:133
+#: libs/resources/KisStorageModel.cpp:281
 #, fuzzy, kde-format
 #| msgid "Rotation"
 msgid "Location"
 msgstr "Xoay"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: libs/resources/KisResourceModel.cpp:270
+#: libs/resources/KisResourceModel.cpp:135
 #: libs/resourcewidgets/dbexplorer/WdgDbExplorer.ui:45
 #, fuzzy, kde-format
 msgid "Resource Type"
 msgstr "&Tài nguyên"
+
+#: libs/resources/KisResourceModel.cpp:139
+#, fuzzy, kde-format
+#| msgid "For images"
+msgid "Storage Active"
+msgstr "Cho ảnh"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_hsx)
 #. i18n: ectx: property (text), widget (QLabel, lblCurrentRenderer)
@@ -11622,8 +11691,8 @@ msgstr "Nhập các điểm"
 msgid "Invalid"
 msgstr "Chiều rộng điểm ảnh"
 
-#: libs/resources/KisStorageModel.cpp:222
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:82
+#: libs/resources/KisStorageModel.cpp:279
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:80
 #: libs/widgets/KoConfigAuthorPage.cpp:102
 #: plugins/extensions/metadataeditor/kis_meta_data_model.cpp:109
 #: plugins/python/filtermanager/components/filtermanagertreemodel.py:30
@@ -11633,19 +11702,19 @@ msgid "Type"
 msgstr "&Loại"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: libs/resources/KisStorageModel.cpp:228
+#: libs/resources/KisStorageModel.cpp:283
 #: libs/resourcewidgets/dbexplorer/WdgDbExplorer.ui:143
 #, fuzzy, kde-format
 msgid "Creation Date"
 msgstr "Tạo"
 
-#: libs/resources/KisStorageModel.cpp:231
+#: libs/resources/KisStorageModel.cpp:285
 #, fuzzy, kde-format
 msgid "Preinstalled"
 msgstr "Biến số"
 
-#: libs/resources/KisStorageModel.cpp:237
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:88
+#: libs/resources/KisStorageModel.cpp:289
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:86
 #: plugins/python/filtermanager/components/filtermanagertreemodel.py:30
 #, fuzzy, kde-format
 #| msgid "Import Image"
@@ -11654,20 +11723,29 @@ msgstr "Nhập ảnh"
 
 #. i18n: ectx: property (text), widget (QPushButton, deleteAllAssistantsButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnDelete)
-#: libs/resources/KisTagModel.cpp:111 libs/resources/KisTagModel.cpp:212
-#: libs/resources/KisTagModel.cpp:214
-#: libs/ui/widgets/kis_paintop_presets_popup.cpp:624
+#: libs/resources/KisTagModel.cpp:105 libs/resources/KisTagModel.cpp:256
+#: libs/ui/widgets/kis_paintop_presets_popup.cpp:627
 #: plugins/assistants/Assistants/AssistantsToolOptions.ui:221
 #: plugins/tools/defaulttool/referenceimagestool/WdgToolOptions.ui:203
 #, kde-format
 msgid "All"
 msgstr ""
 
-#: libs/resources/KisTagModel.cpp:138 libs/resources/KisTagModel.cpp:220
-#: libs/resources/KisTagModel.cpp:222
+#: libs/resources/KisTagModel.cpp:132 libs/resources/KisTagModel.cpp:264
 #, fuzzy, kde-format
-msgid "All untagged"
+msgid "All Untagged"
 msgstr "Ảnh GLSL"
+
+#: libs/resources/KisTagModel.cpp:258
+#, fuzzy, kde-format
+#| msgid "&Resources"
+msgid "All Resources"
+msgstr "&Tài nguyên"
+
+#: libs/resources/KisTagModel.cpp:266
+#, fuzzy, kde-format
+msgid "All Untagged Resources"
+msgstr "&Tài nguyên"
 
 #. i18n: context: Actions (DbExplorer), ActionCollection (DbExplorer)
 #: libs/resourcewidgets/dbexplorer/dbexplorer.action:4
@@ -11690,26 +11768,26 @@ msgctxt "action"
 msgid "Resources Cache Database"
 msgstr ""
 
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:44
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:42
 #, kde-format
 msgid "Resources Cache Database Explorer"
 msgstr ""
 
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:84
-#: libs/resourcewidgets/KisTagChooserWidget.cpp:66
-#: libs/resourcewidgets/KisTagToolButton.cpp:59
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:82
+#: libs/resourcewidgets/KisTagChooserWidget.cpp:59
+#: libs/resourcewidgets/KisTagToolButton.cpp:67
 #, fuzzy, kde-format
 msgid "Tag"
 msgstr "Nhập các điểm"
 
 #. i18n: ectx: property (text), widget (QLabel, colorComment_2)
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:86
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:84
 #: plugins/tools/svgtexttool/WdgSvgTextSettings.ui:192
 #, fuzzy, kde-format
 msgid "Comment"
 msgstr "Lời bình:"
 
-#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:89
+#: libs/resourcewidgets/dbexplorer/DlgDbExplorer.cpp:87
 #, fuzzy, kde-format
 #| msgid "Display"
 msgid "Display Name"
@@ -11746,7 +11824,7 @@ msgstr "Phiên bản"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tabTags)
 #: libs/resourcewidgets/dbexplorer/WdgDbExplorer.ui:88
-#: libs/resourcewidgets/KisIconToolTip.cpp:95
+#: libs/resourcewidgets/KisIconToolTip.cpp:96
 #, kde-format
 msgid "Tags"
 msgstr ""
@@ -11807,47 +11885,41 @@ msgstr "&Tài nguyên"
 msgid "Tag:"
 msgstr ""
 
-#: libs/resourcewidgets/KisResourceItemChooser.cpp:184
+#: libs/resourcewidgets/KisResourceItemChooser.cpp:177
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Import resource"
 msgstr "Nhập Tài liệu"
 
-#: libs/resourcewidgets/KisResourceItemChooser.cpp:190
+#: libs/resourcewidgets/KisResourceItemChooser.cpp:183
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
 msgid "Delete resource"
 msgstr "Xoá"
 
-#: libs/resourcewidgets/KisResourceItemChooser.cpp:238
+#: libs/resourcewidgets/KisResourceItemChooser.cpp:232
 #: libs/ui/KisMainWindow.cpp:2291
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Choose File to Add"
 msgstr "Chọn bộ lọc"
 
-#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:148
-#: libs/resourcewidgets/KisTagToolButton.cpp:68
-#, fuzzy, kde-format
-msgid "New tag"
-msgstr "Lớp Mới"
-
-#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:239
+#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:98
 #, fuzzy, kde-format
 msgid "Assign to tag"
 msgstr "Xuống dưới cùng"
 
-#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:267
+#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:117
 #, fuzzy, kde-format
 msgid "Remove from this tag"
 msgstr "Xoá điểm"
 
-#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:276
+#: libs/resourcewidgets/KisResourceItemChooserContextMenu.cpp:126
 #, fuzzy, kde-format
 msgid "Remove from other tag"
 msgstr "  Lời bình "
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:65
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:61
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -11859,7 +11931,7 @@ msgid ""
 "<br/><tt>\"ExactMatch\"</tt> or <tt>!\"ExactMatch\"</tt></p>"
 msgstr ""
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:75
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:71
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -11869,7 +11941,7 @@ msgid ""
 "resources into named sets.</p>"
 msgstr ""
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:81
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:77
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -11877,36 +11949,43 @@ msgid ""
 "changes.</p>"
 msgstr ""
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:88
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:84
 #, fuzzy, kde-format
 msgid "Search"
 msgstr "Các hình Chổi"
 
-#: libs/resourcewidgets/KisTagFilterWidget.cpp:103
+#: libs/resourcewidgets/KisTagFilterWidget.cpp:99
 #, fuzzy, kde-format
 msgctxt ""
 "It appears in the checkbox next to the filter box in resources dockers; must "
 "be short."
-msgid "filter by tag"
+msgid "Filter in Tag"
 msgstr "Tạo layer mới"
 
-#: libs/resourcewidgets/KisTagToolButton.cpp:61
+#: libs/resourcewidgets/KisTagToolButton.cpp:69
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "<qt>Show the tag box options.</qt>"
 msgstr ""
 
-#: libs/resourcewidgets/KisTagToolButton.cpp:77
+#: libs/resourcewidgets/KisTagToolButton.cpp:76
+#: libs/resourcewidgets/TagActions.cpp:150
+#: libs/resourcewidgets/TagActions.cpp:169
+#, fuzzy, kde-format
+msgid "New tag"
+msgstr "Lớp Mới"
+
+#: libs/resourcewidgets/KisTagToolButton.cpp:84
 #, fuzzy, kde-format
 msgid "Rename tag"
 msgstr "Di chuyển trang"
 
-#: libs/resourcewidgets/KisTagToolButton.cpp:88
+#: libs/resourcewidgets/KisTagToolButton.cpp:94
 #, fuzzy, kde-format
 msgid "Delete this tag"
 msgstr "Xoá Trang"
 
-#: libs/resourcewidgets/KisTagToolButton.cpp:131
+#: libs/resourcewidgets/KisTagToolButton.cpp:134
 #, fuzzy, kde-format
 msgid "Undelete"
 msgstr "Xoá"
@@ -12021,60 +12100,6 @@ msgid ""
 "%1 requires width and height to be even numbers.  Please resize or crop the "
 "image before exporting."
 msgstr ""
-
-#: libs/ui/animation/KisAnimationRender.cpp:60
-#: libs/ui/animation/KisAnimationRender.cpp:112
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:471
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:475
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:483
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:487
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:493
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:496
-#: libs/ui/animation/KisDlgAnimationRenderer.cpp:503
-#: libs/ui/dialogs/kis_dlg_preferences.cc:535
-#: libs/ui/input/kis_tablet_debugger.cpp:104 libs/ui/kis_filter_manager.cc:243
-#: libs/ui/kis_filter_manager.cc:252 libs/ui/kis_layer_manager.cc:317
-#: libs/ui/kis_layer_manager.cc:1001 libs/ui/kis_node_manager.cpp:1226
-#: libs/ui/kis_node_manager.cpp:1289 libs/ui/KisApplication.cpp:931
-#: libs/ui/KisApplication.cpp:934 libs/ui/KisApplication.cpp:959
-#: libs/ui/KisApplication.cpp:991 libs/ui/KisApplication.cpp:1005
-#: libs/ui/KisApplication.cpp:1033 libs/ui/KisDocument.cpp:800
-#: libs/ui/KisDocument.cpp:1553 libs/ui/KisDocument.cpp:1595
-#: libs/ui/KisDocument.cpp:1603 libs/ui/KisMainWindow.cpp:848
-#: libs/ui/KisMainWindow.cpp:1002 libs/ui/KisMainWindow.cpp:1127
-#: libs/ui/KisMainWindow.cpp:1140 libs/ui/KisMainWindow.cpp:1235
-#: libs/ui/KisMainWindow.cpp:1896 libs/ui/KisPart.cpp:549
-#: libs/ui/KisPart.cpp:552 libs/ui/KisReferenceImage.cpp:191
-#: libs/ui/KisRemoteFileFetcher.cpp:54 libs/ui/KisTemplateCreateDia.cpp:297
-#: libs/ui/KisTemplateCreateDia.cpp:403 libs/ui/KisView.cpp:716
-#: libs/ui/KisWelcomePageWidget.cpp:576
-#: libs/ui/opengl/kis_opengl_canvas2.cpp:422
-#: libs/ui/widgets/kis_custom_image_widget.cc:277
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:898
-#: plugins/assistants/Assistants/kis_assistant_tool.cc:901
-#: plugins/dockers/gamutmask/gamutmask_dock.cpp:301
-#: plugins/extensions/imagesplit/imagesplit.cpp:86
-#: plugins/extensions/imagesplit/imagesplit.cpp:88
-#: plugins/extensions/qmic/QMic.cpp:126 plugins/extensions/qmic/QMic.cpp:298
-#: plugins/extensions/qmic/QMic.cpp:327
-#: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:297
-#: plugins/extensions/resourcemanager/resourcemanager.cpp:229
-#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:405
-#: plugins/tools/basictools/kis_tool_colorpicker.cc:157
-#: plugins/tools/basictools/kis_tool_colorpicker.cc:162
-#: plugins/tools/basictools/kis_tool_colorpicker.cc:209
-#: plugins/tools/defaulttool/referenceimagestool/KisReferenceImageCollection.cpp:107
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:134
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:169
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:191
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:218
-#: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:227
-#: plugins/tools/svgtexttool/SvgTextEditor.cpp:1114
-#: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:358
-#, fuzzy, kde-format
-msgctxt "@title:window"
-msgid "Krita"
-msgstr "Krita"
 
 #: libs/ui/animation/KisAnimationRender.cpp:60
 #: libs/ui/animation/KisAnimationRender.cpp:112
@@ -13293,7 +13318,7 @@ msgid "Numerical"
 msgstr "Dọc"
 
 #: libs/ui/dialogs/kis_dlg_import_image_sequence.cpp:136
-#: libs/ui/KisMainWindow.cpp:1104
+#: libs/ui/KisMainWindow.cpp:1103
 #, fuzzy, kde-format
 msgid "Import Images"
 msgstr "Nhập ảnh"
@@ -13358,7 +13383,7 @@ msgstr "Tính chất Lớp"
 #: plugins/paintops/spray/kis_sprayop_option.cpp:60
 #: plugins/paintops/tangentnormal/kis_tangent_tilt_option.cpp:52
 #: plugins/paintops/tangentnormal/kis_tangent_tilt_option.cpp:56
-#: plugins/tools/basictools/kis_tool_colorpicker.cc:280
+#: plugins/tools/basictools/kis_tool_colorpicker.cc:282
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:1397
 #, no-c-format, kde-format
 msgid "%"
@@ -16601,11 +16626,11 @@ msgstr "sửa định sẵn"
 #. i18n: ectx: property (text), widget (QPushButton, savePresetButton)
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSaveMask)
 #: libs/ui/forms/wdgpaintopsettings.ui:184
-#: libs/ui/forms/wdgsavebrushpreset.ui:215 libs/ui/KisMainWindow.cpp:984
+#: libs/ui/forms/wdgsavebrushpreset.ui:215 libs/ui/KisMainWindow.cpp:983
 #: libs/ui/widgets/kis_workspace_chooser.cpp:121
 #: plugins/dockers/gamutmask/forms/wdgGamutMaskChooser.ui:210
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:62
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:57
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:58
 #: plugins/generators/seexpr/wdgseexpr.ui:168
 #: plugins/paintops/libpaintop/kis_clipboard_brush_widget.cpp:164
 #: plugins/paintops/libpaintop/kis_custom_brush_widget.cpp:148
@@ -18355,7 +18380,7 @@ msgstr "Công cụ &vẽ"
 #: libs/ui/kis_control_frame.cpp:189 libs/ui/KisApplication.cpp:364
 #: plugins/dockers/patterndocker/patterndocker_dock.cpp:32
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:186
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:76
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:77
 #, fuzzy, kde-format
 msgid "Patterns"
 msgstr "Các bảng màu"
@@ -18368,7 +18393,7 @@ msgstr "Đổ dốc màu tự chọn"
 #: libs/ui/kis_control_frame.cpp:236 libs/ui/KisApplication.cpp:341
 #: libs/ui/KisApplication.cpp:342
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:181
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:74
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:75
 #, fuzzy, kde-format
 msgid "Gradients"
 msgstr "Các đổ dốc màu"
@@ -18866,17 +18891,17 @@ msgctxt "option category"
 msgid "Masked Brush"
 msgstr "Vẽ bằng các đường cong"
 
-#: libs/ui/kis_popup_palette.cpp:221
+#: libs/ui/kis_popup_palette.cpp:225
 #, fuzzy, kde-format
 msgid "Mirror Canvas"
 msgstr "Cắt ảnh"
 
-#: libs/ui/kis_popup_palette.cpp:227
+#: libs/ui/kis_popup_palette.cpp:231
 #, fuzzy, kde-format
 msgid "Canvas Only"
 msgstr "Màu giấy:"
 
-#: libs/ui/kis_popup_palette.cpp:231
+#: libs/ui/kis_popup_palette.cpp:235
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:58
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:59
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:72
@@ -18914,23 +18939,23 @@ msgstr "Màu giấy:"
 msgid "100%"
 msgstr ""
 
-#: libs/ui/kis_popup_palette.cpp:234
+#: libs/ui/kis_popup_palette.cpp:238
 #, fuzzy, kde-format
 msgid "Zoom to 100%"
 msgstr "Chọn"
 
-#: libs/ui/kis_popup_palette.cpp:255
+#: libs/ui/kis_popup_palette.cpp:259
 #, fuzzy, kde-format
 msgctxt "verb, to clear"
 msgid "Clear colors"
 msgstr "Màu giấy:"
 
-#: libs/ui/kis_popup_palette.cpp:256
+#: libs/ui/kis_popup_palette.cpp:260
 #, fuzzy, kde-format
 msgid "Clear the colors of the popup palette"
 msgstr "Màu Nền"
 
-#: libs/ui/kis_popup_palette.cpp:828
+#: libs/ui/kis_popup_palette.cpp:834
 #, kde-format
 msgid ""
 "There are no tags available to show in this popup. To add presets, you need "
@@ -19154,14 +19179,14 @@ msgstr "Cỡ chổi"
 
 #: libs/ui/KisApplication.cpp:344
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:187
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:77
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:78
 #, kde-format
 msgid "Palettes"
 msgstr "Các bảng màu"
 
 #: libs/ui/KisApplication.cpp:365 libs/ui/widgets/kis_workspace_chooser.cpp:88
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:188
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:78
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:79
 #, fuzzy, kde-format
 msgid "Workspaces"
 msgstr "Không gian màu"
@@ -19900,81 +19925,81 @@ msgstr "Khoảng cách:"
 msgid "Also save your image as a Krita file."
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:189
+#: libs/ui/KisMainWindow.cpp:188
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Styles"
 msgstr "Các kiểu"
 
-#: libs/ui/KisMainWindow.cpp:190
+#: libs/ui/KisMainWindow.cpp:189
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Dockers"
 msgstr "Đá"
 
-#: libs/ui/KisMainWindow.cpp:191
+#: libs/ui/KisMainWindow.cpp:190
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "&Window"
 msgstr "Layer"
 
-#: libs/ui/KisMainWindow.cpp:192
+#: libs/ui/KisMainWindow.cpp:191
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "New &View"
 msgstr "Cỡ Ảnh "
 
-#: libs/ui/KisMainWindow.cpp:193
+#: libs/ui/KisMainWindow.cpp:192
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Wor&kspace"
 msgstr "Không gian màu"
 
-#: libs/ui/KisMainWindow.cpp:552
+#: libs/ui/KisMainWindow.cpp:551
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:315
 #, fuzzy, kde-format
 msgid "Show %1 Toolbar"
 msgstr "Hiện lớp gốc"
 
-#: libs/ui/KisMainWindow.cpp:554
+#: libs/ui/KisMainWindow.cpp:553
 #: plugins/tools/svgtexttool/SvgTextEditor.cpp:317
 #, fuzzy, kde-format
 msgid "Hide %1 Toolbar"
 msgstr "&Công cụ"
 
-#: libs/ui/KisMainWindow.cpp:848
+#: libs/ui/KisMainWindow.cpp:847
 #, kde-format
 msgid "The chosen file's location could not be found. Does it exist?"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:953
+#: libs/ui/KisMainWindow.cpp:952
 #, fuzzy, kde-format
 #| msgid "(write protected)"
 msgid "Write Protected"
 msgstr "(bảo vệ khỏi ghi)"
 
-#: libs/ui/KisMainWindow.cpp:957
+#: libs/ui/KisMainWindow.cpp:956
 #, fuzzy, kde-format
 #| msgid "Average"
 msgid "Recovered"
 msgstr "Trung bình"
 
-#: libs/ui/KisMainWindow.cpp:981
+#: libs/ui/KisMainWindow.cpp:980
 #, fuzzy, kde-format
 msgid "Save as %1"
 msgstr "Phóng Lớp"
 
-#: libs/ui/KisMainWindow.cpp:1002
+#: libs/ui/KisMainWindow.cpp:1001
 #, kde-format
 msgid "The file %1 does not exist."
 msgstr "Tệp %1 không tồn tại."
 
-#: libs/ui/KisMainWindow.cpp:1104
+#: libs/ui/KisMainWindow.cpp:1103
 #, fuzzy, kde-format
 msgid "Open Images"
 msgstr "Ảnh"
 
-#: libs/ui/KisMainWindow.cpp:1236
+#: libs/ui/KisMainWindow.cpp:1235
 #, kde-format
 msgid ""
 "You are saving a file while the image is still rendering. The saved file may "
@@ -19983,28 +20008,28 @@ msgid ""
 "Please select a location where the original file will not be overridden!"
 msgstr ""
 
-#: libs/ui/KisMainWindow.cpp:1292
+#: libs/ui/KisMainWindow.cpp:1291
 #, fuzzy, kde-format
 msgid "Exporting"
 msgstr "Xuất"
 
-#: libs/ui/KisMainWindow.cpp:1292
+#: libs/ui/KisMainWindow.cpp:1291
 #, fuzzy, kde-format
 msgid "Saving As"
 msgstr "Định dạng trang"
 
-#: libs/ui/KisMainWindow.cpp:1594
+#: libs/ui/KisMainWindow.cpp:1593
 #: libs/widgetutils/config/kstandardaction_p.h:41
 #, fuzzy, kde-format
 msgid "Create new document"
 msgstr "Bắt đầu với tài liệu &rỗng"
 
-#: libs/ui/KisMainWindow.cpp:1618
+#: libs/ui/KisMainWindow.cpp:1617
 #, fuzzy, kde-format
 msgid "Custom Document"
 msgstr "Đổ dốc màu tự chọn"
 
-#: libs/ui/KisMainWindow.cpp:1636
+#: libs/ui/KisMainWindow.cpp:1635
 #, fuzzy, kde-format
 msgid "Create from Clipboard"
 msgstr "Lớp đầu tiên trong bảng nháp"
@@ -20113,13 +20138,13 @@ msgstr "Mở bảng màu"
 msgid "Do you want to store this palette in your current image?"
 msgstr "Bạn có muốn ghi đè mẫu '%1' đã tồn tại?"
 
-#: libs/ui/KisPaletteEditor.cpp:246 libs/widgets/kis_palette_view.cpp:179
+#: libs/ui/KisPaletteEditor.cpp:246 libs/widgets/kis_palette_view.cpp:178
 #, fuzzy, kde-format
 msgctxt "@title:dialog"
 msgid "Removing Group"
 msgstr "Xoá Lớp"
 
-#: libs/ui/KisPaletteEditor.cpp:250 libs/widgets/kis_palette_view.cpp:182
+#: libs/ui/KisPaletteEditor.cpp:250 libs/widgets/kis_palette_view.cpp:181
 #, fuzzy, kde-format
 msgctxt "Shows up when deleting a swatch group"
 msgid "Keep the Colors"
@@ -20145,7 +20170,7 @@ msgid "Add a Color"
 msgstr "Thêm Màu Mới..."
 
 #: libs/ui/KisPaletteEditor.cpp:368 libs/ui/KisPaletteEditor.cpp:419
-#: libs/widgets/kis_palette_view.cpp:125
+#: libs/widgets/kis_palette_view.cpp:124
 #, kde-format
 msgctxt "@info:tooltip"
 msgid ""
@@ -20154,7 +20179,7 @@ msgid ""
 msgstr ""
 
 #: libs/ui/KisPaletteEditor.cpp:372 libs/ui/KisPaletteEditor.cpp:422
-#: libs/widgets/kis_palette_view.cpp:127
+#: libs/widgets/kis_palette_view.cpp:126
 #, kde-format
 msgid "ID"
 msgstr ""
@@ -20170,19 +20195,19 @@ msgstr "Không gian màu:"
 msgid "Spot color"
 msgstr "Các màu"
 
-#: libs/ui/KisPaletteEditor.cpp:400 libs/widgets/kis_palette_view.cpp:114
+#: libs/ui/KisPaletteEditor.cpp:400 libs/widgets/kis_palette_view.cpp:113
 #, fuzzy, kde-format
 msgctxt "@title:dialog"
 msgid "Add a new Colorset Entry"
 msgstr "Khoảng màu"
 
-#: libs/ui/KisPaletteEditor.cpp:425 libs/widgets/kis_palette_view.cpp:130
+#: libs/ui/KisPaletteEditor.cpp:425 libs/widgets/kis_palette_view.cpp:129
 #, fuzzy, kde-format
 msgctxt "Spot color"
 msgid "Spot"
 msgstr "Điểm"
 
-#: libs/ui/KisPaletteEditor.cpp:519 libs/ui/KisPaletteEditor.cpp:522
+#: libs/ui/KisPaletteEditor.cpp:518 libs/ui/KisPaletteEditor.cpp:521
 #, fuzzy, kde-format
 #| msgid "Normal"
 msgctxt "Default new group name"
@@ -22381,7 +22406,7 @@ msgstr "Hiển thị"
 
 #: libs/ui/widgets/kis_paintop_presets_chooser_popup.cpp:55
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:139
-#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:160
+#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:166
 #, fuzzy, kde-format
 #| msgid "Display"
 msgctxt "@title Which elements to display (e.g., thumbnails or details)"
@@ -22390,7 +22415,7 @@ msgstr "Hiển thị"
 
 #: libs/ui/widgets/kis_paintop_presets_chooser_popup.cpp:61
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:145
-#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:168
+#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:174
 #, fuzzy, kde-format
 #| msgid "Import Image"
 msgid "Thumbnails"
@@ -22398,7 +22423,7 @@ msgstr "Nhập ảnh"
 
 #: libs/ui/widgets/kis_paintop_presets_chooser_popup.cpp:66
 #: libs/ui/widgets/kis_paintop_presets_popup.cpp:150
-#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:174
+#: plugins/dockers/gamutmask/KisGamutMaskChooser.cpp:180
 #, fuzzy, kde-format
 msgid "Details"
 msgstr "&Mặc định"
@@ -22971,34 +22996,34 @@ msgstr "Chọn Tất cả"
 msgid "Select a directory to load..."
 msgstr "Chọn Tất cả"
 
-#: libs/widgets/kis_palette_view.cpp:118
+#: libs/widgets/kis_palette_view.cpp:117
 #, fuzzy, kde-format
 #| msgid "Default"
 msgctxt "Name for default group"
 msgid "Default"
 msgstr "Măc định"
 
-#: libs/widgets/kis_palette_view.cpp:132
+#: libs/widgets/kis_palette_view.cpp:131
 #, fuzzy, kde-format
 #| msgid "Color"
 msgctxt "Part of a default name for a color"
 msgid "Color"
 msgstr "Màu"
 
-#: libs/widgets/kis_palette_view.cpp:158
+#: libs/widgets/kis_palette_view.cpp:157
 #, fuzzy, kde-format
 #| msgid "Add Group"
 msgctxt "@title:dialog"
 msgid "Add a new group"
 msgstr "Thêm Nhóm"
 
-#: libs/widgets/kis_palette_view.cpp:161
+#: libs/widgets/kis_palette_view.cpp:160
 #, fuzzy, kde-format
 msgctxt "Part of default name for a new group"
 msgid "Color Group"
 msgstr "&Màu:"
 
-#: libs/widgets/kis_palette_view.cpp:162
+#: libs/widgets/kis_palette_view.cpp:161
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgctxt "Name for a group"
@@ -23061,7 +23086,7 @@ msgstr "Khoảng màu"
 msgid "Export current palette to file"
 msgstr "Xuất Lớp"
 
-#: libs/widgets/KisPaletteModel.cpp:429
+#: libs/widgets/KisPaletteModel.cpp:428
 #, kde-format
 msgid "Empty slot"
 msgstr ""
@@ -23100,7 +23125,7 @@ msgid "Recent:"
 msgstr "Gần đây:"
 
 #: libs/widgets/KoColorSetWidget.cpp:107
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:128
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:129
 #, fuzzy, kde-format
 msgid "Choose palette"
 msgstr "Chọn Bảng màu"
@@ -23268,7 +23293,7 @@ msgstr "Không thể ghi vào tệp bảng màu %1. Có thể nó chỉ được
 
 #. i18n: ectx: property (text), widget (QLabel, paletteLabel)
 #: libs/widgets/KoEditColorSetDialog.cpp:215
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:66
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:67
 #: plugins/filters/palettize/palettize.ui:35
 #, kde-format
 msgid "Palette"
@@ -26485,7 +26510,7 @@ msgstr "Sửa lưới"
 
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:68
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:182
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:75
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:76
 #, fuzzy, kde-format
 msgid "Gamut Masks"
 msgstr "Xoay ảnh"
@@ -26805,17 +26830,17 @@ msgctxt "(qtundo-format)"
 msgid "Cancel Quick Selection Mask"
 msgstr "Không có phần chọn"
 
-#: plugins/dockers/layerdocker/NodeDelegate.cpp:1193
+#: plugins/dockers/layerdocker/NodeDelegate.cpp:1198
 #, fuzzy, kde-format
 msgid "%1 %"
 msgstr "%1%"
 
-#: plugins/dockers/layerdocker/NodeToolTip.cpp:52
+#: plugins/dockers/layerdocker/NodeToolTip.cpp:54
 #, fuzzy, kde-format
 msgid "No"
 msgstr "Không"
 
-#: plugins/dockers/layerdocker/NodeToolTip.cpp:52
+#: plugins/dockers/layerdocker/NodeToolTip.cpp:54
 #, fuzzy, kde-format
 msgid "Yes"
 msgstr "Các màu vàng"
@@ -27162,24 +27187,24 @@ msgstr ""
 msgid "Overview"
 msgstr "Toàn cảnh"
 
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:75
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:76
 #, fuzzy, kde-format
 msgid "Add a color"
 msgstr "Thêm Màu Mới..."
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, bnRemove)
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:76
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:77
 #: plugins/dockers/palettedocker/wdgpalettedock.ui:57
 #, fuzzy, kde-format
 msgid "Delete color"
 msgstr "Xoá"
 
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:77
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:78
 #, fuzzy, kde-format
 msgid "Modify this spot"
 msgstr "Nhiều điểm"
 
-#: plugins/dockers/palettedocker/palettedocker_dock.cpp:78
+#: plugins/dockers/palettedocker/palettedocker_dock.cpp:79
 #, fuzzy, kde-format
 #| msgid "Add to palette:"
 msgid "Edit this palette"
@@ -27193,7 +27218,7 @@ msgstr "Màu Mặt"
 
 #: plugins/dockers/presetdocker/presetdocker_dock.cpp:38
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:180
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:73
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:74
 #, fuzzy, kde-format
 msgid "Brush Presets"
 msgstr "Định sẵn:"
@@ -29750,7 +29775,7 @@ msgid "Create Resource Bundle"
 msgstr "Gỡ bỏ Layer"
 
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:179
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:72
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:73
 #, fuzzy, kde-format
 msgid "Brushes"
 msgstr "Chổi"
@@ -33336,22 +33361,22 @@ msgstr "Cấu hình mới %1"
 msgid "Could not load metadata for layer %1."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:747
-#, fuzzy, kde-format
-msgid "Could not load raster selection %1."
-msgstr "Không thể thêm lớp vào ảnh."
-
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:765
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:768
 #, fuzzy, kde-format
 msgid "Could not load vector selection %1."
 msgstr "Chọn véctơ"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:792
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:784
+#, fuzzy, kde-format
+msgid "Could not load raster selection %1."
+msgstr "Không thể thêm lớp vào ảnh."
+
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:814
 #, fuzzy, kde-format
 msgid "Could not load keyframes from %1."
 msgstr "Không thể thêm lớp vào ảnh."
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:806
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:828
 #, fuzzy, kde-format
 #| msgid ""
 #| "Parsing error in %1 at line %2, column %3\n"
@@ -33363,7 +33388,7 @@ msgstr ""
 "Lỗi đọc trong %1 trên dòng %2, cột %3\n"
 "Thông báo lỗi: %4"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:819
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:841
 #, fuzzy, kde-format
 msgid "unknown keyframe channel type: %1 in %2"
 msgstr "Không thể thêm lớp vào ảnh."
@@ -37709,7 +37734,7 @@ msgid "Percentage:"
 msgstr "Hiện màu theo phần trăm"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:220
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:272
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:276
 #, fuzzy
 msgid "Export Settings"
 msgstr "Thiết lập Màu"
@@ -38474,192 +38499,192 @@ msgstr ""
 msgid "Publisher"
 msgstr "Người xuất bản:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:119
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:123
 #, fuzzy
 #| msgid "Keywords:"
 msgid "No keywords"
 msgstr "Từ khoá:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:133
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:137
 msgid "No last edit timestamp"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:153
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:157
 #, fuzzy
 msgid "No description"
 msgstr ""
 "\n"
 " Định hướng:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:198
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:202
 #, fuzzy
 #| msgid "&Resources"
 msgid "Comics Manager"
 msgstr "&Tài nguyên"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:254
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:258
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "New Project"
 msgstr "Chổi nhoè"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:256
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:260
 #, fuzzy
 #| msgid "Smeary Brush"
 msgid "Open Project"
 msgstr "Chổi nhoè"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:268
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:272
 #, fuzzy
 msgid "Project Settings"
 msgstr "Thiết lập Màu"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:270
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:274
 #: plugins/python/comics_project_management_tools/comics_project_setup_wizard.py:133
 #, fuzzy
 msgid "Meta Data"
 msgstr "&Sửa siêu dữ liệu..."
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:288
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:292
 #, fuzzy
 msgid "Add Page"
 msgstr "Palettes"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:290
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:294
 #, fuzzy
 msgid "Add Page from Template"
 msgstr "Tên lớp:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:292
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:296
 #, fuzzy
 msgid "Add Existing Pages"
 msgstr "Layer"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:294
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:298
 #, fuzzy
 msgid "Remove Page"
 msgstr "Xoá Lớp"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:296
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:300
 #, fuzzy
 msgid "Batch Resize"
 msgstr "Đổi cỡ"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:299
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:303
 #, fuzzy
 msgid "View Page In Window"
 msgstr "Layer"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:301
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:305
 #, fuzzy
 #| msgid "Author"
 msgid "Scrape Author Info"
 msgstr "Tác giả "
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:302
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:306
 msgid ""
 "Search for author information in documents and add it to the author list. "
 "This does not check for duplicates."
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:304
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:308
 msgid "Scrape Text for Translation"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:325
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:329
 #, fuzzy
 msgid "Export Comic"
 msgstr "Chế độ Tổng hợp"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:330
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:334
 #, fuzzy
 #| msgid "Rotation"
 msgid "Copy Location"
 msgstr "Xoay"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:331
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:335
 msgid ""
 "Copies the path of the project to the clipboard. Useful for quickly copying "
 "to a file manager or the like."
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:348
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:352
 msgid "Please select the JSON comic config file."
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:348
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:352
 #, fuzzy
 msgid "JSON files"
 msgstr "Các tệp nguồn:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:351
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:355
 msgid "Config cannot be used"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:351
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:355
 msgid ""
 "Krita doesn't have write access to this folder, so new files cannot be made. "
 "Please configure the folder access or move the project to a folder that can "
 "be written to."
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:385
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:389
 #, fuzzy
 msgid "Loading Pages..."
 msgstr "Palettes"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:535
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:655
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:542
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:662
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:129
 #, fuzzy
 msgid "Krita files"
 msgstr "sửa định sẵn"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:535
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:542
 msgid "Which existing pages to add?"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:595
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:614
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:602
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:621
 #, fuzzy
 msgid "Where are the templates located?"
 msgstr "Tạo"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:638
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:645
 #: plugins/python/comics_project_management_tools/comics_project_settings_dialog.py:124
 #, fuzzy
 msgid "Where should the pages go?"
 msgstr "Tạo"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:655
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:662
 msgid "Which image should be the basis the new page?"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:810
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:817
 #, fuzzy
 msgid "Export success"
 msgstr "Chế độ lộ sáng:"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:810
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:817
 msgid "The files have been written to the export folder."
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:887
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:894
 #, fuzzy
 msgid "Resize all Pages"
 msgstr "Sắp xếp lại các đường"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:898
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:905
 #, fuzzy
 msgid "Resizing pages..."
 msgstr "Tải lại Canvas"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:899
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:906
 #, fuzzy
 msgid "Resizing Pages"
 msgstr "Vừa Trang"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:913
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:920
 #, python-brace-format
 msgid ""
 "{pages} of {pagesTotal} done. \n"
@@ -38667,13 +38692,13 @@ msgid ""
 " Estimated:{estimated}"
 msgstr ""
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:961
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:968
 #, fuzzy
 #| msgid "Source"
 msgid "Scraping success"
 msgstr "Nguồn"
 
-#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:961
+#: plugins/python/comics_project_management_tools/comics_project_manager_docker.py:968
 #, python-brace-format
 msgid "POT file has been written to: {file}"
 msgstr ""
@@ -40249,12 +40274,12 @@ msgstr "Không thể nhặt màu vì không có lớp nào đang dùng."
 msgid "Cannot pick a color as the active layer is not visible."
 msgstr "Không thể nhặt màu vì lớp đang dùng không được nhìn thấy."
 
-#: plugins/tools/basictools/kis_tool_colorpicker.cc:209
+#: plugins/tools/basictools/kis_tool_colorpicker.cc:210
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr "Không thể ghi tệp bảng màu %1. Có thể nó chỉ được đọc."
 
-#: plugins/tools/basictools/kis_tool_colorpicker.h:126
+#: plugins/tools/basictools/kis_tool_colorpicker.h:125
 #, fuzzy, kde-format
 msgid "Color Selector Tool"
 msgstr "Trình chọn màu nhỏ"
@@ -43162,6 +43187,13 @@ msgstr ""
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt ""
+#~ "It appears in the checkbox next to the filter box in resources dockers; "
+#~ "must be short."
+#~ msgid "filter by tag"
+#~ msgstr "Tạo layer mới"
 
 #, fuzzy
 #~ msgctxt "@info:tooltip"

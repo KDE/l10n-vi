@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-09 02:37+0100\n"
+"POT-Creation-Date: 2021-01-10 02:35+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1470,6 +1470,7 @@ msgstr "Tới"
 
 #: core/app/main/digikamapp_setup.cpp:169
 #: core/libs/album/treeview/albumselectiontreeview.cpp:222
+#: core/libs/dialogs/solidhardwaredlg.cpp:106
 #, kde-format
 msgid "Refresh"
 msgstr "Cập nhật"
@@ -1525,6 +1526,7 @@ msgstr "Thay tên..."
 #: core/app/main/digikamapp_setup.cpp:277
 #: core/dplugins/generic/metadata/metadataedit/iptc/iptceditwidget.cpp:152
 #: core/dplugins/generic/metadata/metadataedit/xmp/xmpeditwidget.cpp:152
+#: core/libs/dialogs/solidhardwaredlg.cpp:241
 #: core/libs/dplugins/setup/dpluginaboutdlg.cpp:148
 #: core/libs/properties/import/importitempropertiessidebar.cpp:101
 #: core/libs/properties/itempropertiessidebar.cpp:91
@@ -23987,18 +23989,18 @@ msgstr "Chọ&n mục mới"
 msgid "Select Items"
 msgstr "Chọ&n mục mới"
 
-#: core/libs/dialogs/infodlg.cpp:75 core/libs/dialogs/libsinfodlg.cpp:111
+#: core/libs/dialogs/infodlg.cpp:77 core/libs/dialogs/libsinfodlg.cpp:111
 #, fuzzy, kde-format
 msgid "Shared Libraries and Components Information"
 msgstr "Hiệu chỉnh thuộc tính tập ảnh và thông tin tập hợp."
 
-#: core/libs/dialogs/infodlg.cpp:79
+#: core/libs/dialogs/infodlg.cpp:83
 #: core/libs/progressmanager/dhistoryview.cpp:143
 #, fuzzy, kde-format
 msgid "Copy to Clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: core/libs/dialogs/infodlg.cpp:101
+#: core/libs/dialogs/infodlg.cpp:105
 #: core/utilities/facemanagement/widgets/facemanagementhelpdlg.cpp:69
 #, kde-format
 msgid ""
@@ -24046,15 +24048,71 @@ msgid "Using LibRaw version %2<br/>1 model on the list (found: %3)"
 msgid_plural "Using LibRaw version %2<br/>%1 models on the list (found: %3)"
 msgstr[0] ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:237
+#: core/libs/dialogs/solidhardwaredlg.cpp:84
 #, kde-format
 msgid "List of detected hardware"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:269
+#: core/libs/dialogs/solidhardwaredlg.cpp:87
 #, kde-format
-msgid "Using Solid version %1"
+msgid ""
+"%1 use Solid framework version %2\n"
+"to detect and manage devices from your computer.\n"
+"Press \"Refresh\" to update list if you plug a removable device."
 msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:221
+#, kde-format
+msgid "Udi"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:221
+#: core/libs/dialogs/solidhardwaredlg.cpp:227
+#: core/libs/dialogs/solidhardwaredlg.cpp:230
+#: core/libs/dialogs/solidhardwaredlg.cpp:233
+#, kde-format
+msgid "empty"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:224
+#, fuzzy, kde-format
+#| msgid "Parents"
+msgid "Parent Udi"
+msgstr "Cha"
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:224
+#: core/libs/dialogs/solidhardwaredlg.cpp:236
+#, fuzzy, kde-format
+msgid "none"
+msgstr "Không có"
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:227
+#, kde-format
+msgid "Vendor"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:230
+#, kde-format
+msgid "Product"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:233
+#: core/libs/dplugins/setup/dpluginaboutdlg.cpp:163
+#: core/libs/dplugins/setup/dpluginconfview.cpp:145
+#: core/libs/properties/captions/itemdescedittab.cpp:268
+#: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:135
+#: core/libs/widgets/metadata/metadataselector.cpp:102
+#: core/utilities/advancedrename/parser/options/database/dbkeyselector.cpp:102
+#: core/utilities/advancedrename/parser/options/database/keys/positionkeys.cpp:71
+#: core/utilities/queuemanager/views/workflowlist.cpp:100
+#, kde-format
+msgid "Description"
+msgstr "Mô tả"
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:236
+#, fuzzy, kde-format
+msgid "States"
+msgstr "Thống kê"
 
 #: core/libs/dialogs/webbrowserdlg.cpp:123
 #, kde-format
@@ -27776,18 +27834,6 @@ msgstr "Cỡ gạch lát:"
 #, fuzzy, kde-format
 msgid "File Date"
 msgstr "Tên tệp ảnh mới"
-
-#: core/libs/dplugins/setup/dpluginaboutdlg.cpp:163
-#: core/libs/dplugins/setup/dpluginconfview.cpp:145
-#: core/libs/properties/captions/itemdescedittab.cpp:268
-#: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:135
-#: core/libs/widgets/metadata/metadataselector.cpp:102
-#: core/utilities/advancedrename/parser/options/database/dbkeyselector.cpp:102
-#: core/utilities/advancedrename/parser/options/database/keys/positionkeys.cpp:71
-#: core/utilities/queuemanager/views/workflowlist.cpp:100
-#, kde-format
-msgid "Description"
-msgstr "Mô tả"
 
 #: core/libs/dplugins/setup/dpluginaboutdlg.cpp:163
 #, fuzzy, kde-format

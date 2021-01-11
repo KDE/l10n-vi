@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-10 02:35+0100\n"
+"POT-Creation-Date: 2021-01-11 02:33+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1470,7 +1470,7 @@ msgstr "Tới"
 
 #: core/app/main/digikamapp_setup.cpp:169
 #: core/libs/album/treeview/albumselectiontreeview.cpp:222
-#: core/libs/dialogs/solidhardwaredlg.cpp:106
+#: core/libs/dialogs/solidhardwaredlg.cpp:135
 #, kde-format
 msgid "Refresh"
 msgstr "Cập nhật"
@@ -1526,7 +1526,7 @@ msgstr "Thay tên..."
 #: core/app/main/digikamapp_setup.cpp:277
 #: core/dplugins/generic/metadata/metadataedit/iptc/iptceditwidget.cpp:152
 #: core/dplugins/generic/metadata/metadataedit/xmp/xmpeditwidget.cpp:152
-#: core/libs/dialogs/solidhardwaredlg.cpp:241
+#: core/libs/dialogs/solidhardwaredlg.cpp:297
 #: core/libs/dplugins/setup/dpluginaboutdlg.cpp:148
 #: core/libs/properties/import/importitempropertiessidebar.cpp:101
 #: core/libs/properties/itempropertiessidebar.cpp:91
@@ -2532,7 +2532,7 @@ msgstr "Lưu ảnh"
 msgid "All supported files (%1)"
 msgstr "Đã bỏ qua tệp %1"
 
-#: core/app/utils/digikam_version.cpp:61
+#: core/app/utils/digikam_version.cpp:75
 #, kde-format
 msgid ""
 "IRC: irc.freenode.net - #digikam\n"
@@ -2541,7 +2541,7 @@ msgid ""
 "Build date: %1 (target: %2)"
 msgstr ""
 
-#: core/app/utils/digikam_version.cpp:69
+#: core/app/utils/digikam_version.cpp:83
 #, kde-format
 msgid ""
 "IRC: irc.freenode.net - #digikam\n"
@@ -24007,6 +24007,11 @@ msgid ""
 "<font size=\"5\">%1</font><br/><b>Version %2</b><p>%3</p><p><i>%4</i></p>"
 msgstr ""
 
+#: core/libs/dialogs/infodlg.cpp:126
+#, fuzzy, kde-format
+msgid "Items List"
+msgstr "Bộ sửa ảnh"
+
 #: core/libs/dialogs/libsinfodlg.cpp:117
 #, fuzzy, kde-format
 msgctxt "component is supported/available"
@@ -24048,55 +24053,76 @@ msgid "Using LibRaw version %2<br/>1 model on the list (found: %3)"
 msgid_plural "Using LibRaw version %2<br/>%1 models on the list (found: %3)"
 msgstr[0] ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:84
+#: core/libs/dialogs/solidhardwaredlg.cpp:88
 #, kde-format
 msgid "List of detected hardware"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:87
+#: core/libs/dialogs/solidhardwaredlg.cpp:91
 #, kde-format
 msgid ""
-"%1 use Solid framework version %2\n"
+"%1 uses Solid framework version %2\n"
 "to detect and manage devices from your computer.\n"
 "Press \"Refresh\" to update list if you plug a removable device."
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:221
+#: core/libs/dialogs/solidhardwaredlg.cpp:121
+#, kde-format
+msgid "Hotplug Device Events"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:122
+#, fuzzy, kde-format
+msgid "Devices List"
+msgstr "Hạng thiết bị"
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:277
+#: core/libs/dialogs/solidhardwaredlg.cpp:393
+#: core/libs/dialogs/solidhardwaredlg.cpp:421
 #, kde-format
 msgid "Udi"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:221
-#: core/libs/dialogs/solidhardwaredlg.cpp:227
-#: core/libs/dialogs/solidhardwaredlg.cpp:230
-#: core/libs/dialogs/solidhardwaredlg.cpp:233
+#: core/libs/dialogs/solidhardwaredlg.cpp:277
+#: core/libs/dialogs/solidhardwaredlg.cpp:283
+#: core/libs/dialogs/solidhardwaredlg.cpp:286
+#: core/libs/dialogs/solidhardwaredlg.cpp:289
+#: core/libs/dialogs/solidhardwaredlg.cpp:399
+#: core/libs/dialogs/solidhardwaredlg.cpp:402
+#: core/libs/dialogs/solidhardwaredlg.cpp:405
 #, kde-format
 msgid "empty"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:224
+#: core/libs/dialogs/solidhardwaredlg.cpp:280
+#: core/libs/dialogs/solidhardwaredlg.cpp:396
 #, fuzzy, kde-format
 #| msgid "Parents"
 msgid "Parent Udi"
 msgstr "Cha"
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:224
-#: core/libs/dialogs/solidhardwaredlg.cpp:236
+#: core/libs/dialogs/solidhardwaredlg.cpp:280
+#: core/libs/dialogs/solidhardwaredlg.cpp:292
+#: core/libs/dialogs/solidhardwaredlg.cpp:396
+#: core/libs/dialogs/solidhardwaredlg.cpp:408
 #, fuzzy, kde-format
 msgid "none"
 msgstr "Không có"
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:227
+#: core/libs/dialogs/solidhardwaredlg.cpp:283
+#: core/libs/dialogs/solidhardwaredlg.cpp:399
 #, kde-format
 msgid "Vendor"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:230
+#: core/libs/dialogs/solidhardwaredlg.cpp:286
+#: core/libs/dialogs/solidhardwaredlg.cpp:402
 #, kde-format
 msgid "Product"
 msgstr ""
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:233
+#: core/libs/dialogs/solidhardwaredlg.cpp:289
+#: core/libs/dialogs/solidhardwaredlg.cpp:405
 #: core/libs/dplugins/setup/dpluginaboutdlg.cpp:163
 #: core/libs/dplugins/setup/dpluginconfview.cpp:145
 #: core/libs/properties/captions/itemdescedittab.cpp:268
@@ -24109,10 +24135,26 @@ msgstr ""
 msgid "Description"
 msgstr "Mô tả"
 
-#: core/libs/dialogs/solidhardwaredlg.cpp:236
+#: core/libs/dialogs/solidhardwaredlg.cpp:292
+#: core/libs/dialogs/solidhardwaredlg.cpp:408
 #, fuzzy, kde-format
 msgid "States"
 msgstr "Thống kê"
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:297
+#, kde-format
+msgid "Non-portable info"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:386
+#, kde-format
+msgid "New Device Added"
+msgstr ""
+
+#: core/libs/dialogs/solidhardwaredlg.cpp:418
+#, fuzzy, kde-format
+msgid "Device Removed"
+msgstr "Hạng thiết bị"
 
 #: core/libs/dialogs/webbrowserdlg.cpp:123
 #, kde-format
@@ -26480,22 +26522,22 @@ msgstr "Độ mở/Tiêu :"
 msgid "Subject Distance (m):"
 msgstr "Khoảng cách:"
 
-#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:410
+#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:424
 #, fuzzy, kde-format
 msgid "(no metadata available)"
 msgstr "Không có sẵn tuỳ chọn"
 
-#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:415
+#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:429
 #, fuzzy, kde-format
 msgid "(no match found)"
 msgstr "Không tìm thấy thiết bị ảnh/nhạc"
 
-#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:420
+#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:434
 #, fuzzy, kde-format
 msgid "(partial match found)"
 msgstr "Không tìm thấy thiết bị ảnh/nhạc"
 
-#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:425
+#: core/libs/dimg/filters/lens/lensfuncameraselector.cpp:439
 #, fuzzy, kde-format
 msgid "(exact match found)"
 msgstr "Không tìm thấy thiết bị ảnh/nhạc"

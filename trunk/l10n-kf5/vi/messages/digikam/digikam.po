@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-01-21 02:34+0100\n"
+"POT-Creation-Date: 2021-01-22 02:33+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -7042,6 +7042,7 @@ msgid "Frost Glass"
 msgstr "Kính phủ sương giá"
 
 #: core/dplugins/editor/filters/blurfx/blurfxtool.cpp:127
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:95
 #, kde-format
 msgid "Mosaic"
 msgstr "Khảm"
@@ -13596,7 +13597,7 @@ msgstr ""
 #: core/dplugins/generic/tools/panorama/panoramaplugin.cpp:96
 #: core/dplugins/generic/tools/sendbymail/sendbymailplugin.cpp:88
 #: core/dplugins/generic/tools/videoslideshow/videoslideshowplugin.cpp:85
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:82
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:87
 #, fuzzy, kde-format
 #| msgid "Author and maintainer"
 msgid "Author and Maintainer"
@@ -16344,17 +16345,17 @@ msgstr "Thiết lập chiếu ảnh"
 msgid "Generating Video Slideshow"
 msgstr "Gán thẻ"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:48
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:53
 #, fuzzy, kde-format
 msgid "Export as wallpaper"
 msgstr "Xuất"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:63
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:68
 #, fuzzy, kde-format
 msgid "A tool to set image as wallpaper"
 msgstr "Miền màu"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:68
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:73
 #, kde-format
 msgid ""
 "<p>This tool changes background wallpaper to selected image for all desktops."
@@ -16362,14 +16363,14 @@ msgid ""
 "image is selected, the first one from current album will be used.</p>"
 msgstr ""
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:89
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin.cpp:94
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Set as wallpaper"
 msgstr "Xuất"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_dbus.cpp:73
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_macos.cpp:65
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_dbus.cpp:100
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_macos.cpp:72
 #: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:74
 #: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:99
 #, fuzzy, kde-format
@@ -16377,16 +16378,16 @@ msgctxt "@title:window"
 msgid "Error while to set image as wallpaper"
 msgstr "Miền màu"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_dbus.cpp:74
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_dbus.cpp:101
 #, kde-format
 msgid ""
-"Cannot change wallpaper image from current desktop\n"
+"Cannot change wallpaper image from current desktop with\n"
 "%1\n"
 "\n"
-"%2"
+"Error: %2"
 msgstr ""
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_macos.cpp:66
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_macos.cpp:73
 #, kde-format
 msgid ""
 "Cannot change wallpaper image from current desktop with\n"
@@ -16418,25 +16419,56 @@ msgid ""
 "The file path is too long."
 msgstr ""
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:120
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:118
 #, fuzzy, kde-format
 msgid "Cannot create desktop context."
 msgstr "Lỗi thay đổi tên của tập ảnh"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:154
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:152
 #, fuzzy, kde-format
 msgid "Cannot set wall paper image path."
 msgstr "Gặp lỗi khi lưu tệp"
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:164
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:162
 #, kde-format
 msgid "Cannot set wallpaper properties."
 msgstr ""
 
-#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:174
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugin_windows.cpp:172
 #, kde-format
 msgid "Cannot apply changes to desktop wallpaper."
 msgstr ""
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:67
+#, fuzzy, kde-format
+msgid "WallPaper Settings"
+msgstr "Thiết lập ảnh"
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:84
+#, kde-format
+msgid "Wallpaper Layout:"
+msgstr ""
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:86
+#, fuzzy, kde-format
+msgid "Adjusted"
+msgstr "Điều chỉnh:"
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:90
+#, fuzzy, kde-format
+msgid "Adjusted with Aspect ratio"
+msgstr "Vẽ biếm hoạ"
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:91
+#, fuzzy, kde-format
+#| msgid "Adjustment:"
+msgid "Adjusted and cropped"
+msgstr "Điều chỉnh:"
+
+#: core/dplugins/generic/tools/wallpaper/wallpaperplugindlg.cpp:96
+#, fuzzy, kde-format
+msgid "Centered"
+msgstr "Giữa"
 
 #: core/dplugins/generic/view/glviewer/glviewerhelpdlg.cpp:43
 #, kde-format
@@ -29806,7 +29838,7 @@ msgid "Open setup dialog page to configure updates."
 msgstr ""
 
 #: core/libs/onlineversion/onlineversiondlg.cpp:214
-#: core/utilities/setup/downloader/filesdownloader.cpp:161
+#: core/utilities/setup/downloader/filesdownloader.cpp:171
 #, fuzzy, kde-format
 msgid "Download"
 msgstr "Tải về"
@@ -46100,30 +46132,31 @@ msgstr "Chọ&n mục mới"
 msgid "Your collection will use this category:"
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:151
+#: core/utilities/setup/downloader/filesdownloader.cpp:161
 #, fuzzy, kde-format
 #| msgid "Downloading file %1..."
 msgid "Download required files"
 msgstr "Đang tải về tệp %1..."
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:167
+#: core/utilities/setup/downloader/filesdownloader.cpp:186
 #, kde-format
+msgctxt "%1: folder path, %2: disk size with unit"
 msgid ""
 "<p>For the face engine and red eye removal tool, digiKam needs some large "
 "binary files. Some of these files were not found and are now being "
 "downloaded. You can cancel this process, the next time digiKam is started "
 "this dialog will appear again. Face detection will not work without these "
 "files.</p><p>The files will be downloaded to %1. Make sure there are around "
-"300 MiB available. After the successful download you have to restart digiKam."
-"</p>"
+"%2 available. <b>After the successful download you have to restart digiKam.</"
+"b></p>"
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:219
+#: core/utilities/setup/downloader/filesdownloader.cpp:238
 #, kde-format
 msgid "All files were downloaded successfully."
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:226
+#: core/utilities/setup/downloader/filesdownloader.cpp:245
 #, kde-format
 msgid ""
 "An error occurred during the download.\n"
@@ -46135,22 +46168,22 @@ msgid ""
 "The download will continue at the next start."
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:335
+#: core/utilities/setup/downloader/filesdownloader.cpp:354
 #, kde-format
 msgid "Checksum is incorrect."
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:360
+#: core/utilities/setup/downloader/filesdownloader.cpp:379
 #, kde-format
 msgid "File write error."
 msgstr ""
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:367
+#: core/utilities/setup/downloader/filesdownloader.cpp:386
 #, fuzzy, kde-format
 msgid "File open error."
 msgstr "Xuất"
 
-#: core/utilities/setup/downloader/filesdownloader.cpp:382
+#: core/utilities/setup/downloader/filesdownloader.cpp:401
 #, fuzzy, kde-format
 msgid "File on the server is too large."
 msgstr "Lỗi in tệp: « %1 »"

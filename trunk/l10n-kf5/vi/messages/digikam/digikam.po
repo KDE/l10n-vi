@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-01 02:36+0100\n"
+"POT-Creation-Date: 2021-03-02 02:43+0100\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1993,7 +1993,6 @@ msgid "Fit to &Window"
 msgstr "Vừa khít cửa &sổ"
 
 #: core/app/main/digikamapp_setup.cpp:718
-#: core/utilities/import/main/importui.cpp:586
 #: core/utilities/lighttable/lighttablewindow_setup.cpp:186
 #, fuzzy, kde-format
 msgid "Color-Managed View"
@@ -7960,7 +7959,6 @@ msgstr "Điều chỉnh:"
 #: core/dplugins/editor/transform/freerotation/freerotationtool.cpp:222
 #: core/dplugins/generic/tools/calendar/ui/caltemplate.ui:43
 #: core/libs/widgets/metadata/metadatawidget.cpp:150
-#: core/utilities/import/main/importui.cpp:273
 #, kde-format
 msgid "Settings"
 msgstr "Thiết lập"
@@ -17673,7 +17671,6 @@ msgstr ""
 #: core/dplugins/generic/webservices/pinterest/pwindow.cpp:260
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:678
 #: core/dplugins/generic/webservices/twitter/twitterwindow.cpp:264
-#: core/utilities/import/main/importui.cpp:1985
 #: core/utilities/setup/metadata/advancedmetadatatab.cpp:138
 #, kde-format
 msgid "Warning"
@@ -19599,7 +19596,6 @@ msgstr ""
 #: core/libs/properties/captions/itemdescedittab.cpp:350
 #: core/libs/widgets/iccprofiles/iccprofilewidget.cpp:136
 #: core/utilities/advancedrename/common/tooltipdialog.cpp:62
-#: core/utilities/import/main/importui.cpp:1967
 #, kde-format
 msgid "Information"
 msgstr "Thông tin"
@@ -37980,7 +37976,6 @@ msgid ""
 msgstr ""
 
 #: core/utilities/advancedrename/advancedrenamewidget.cpp:355
-#: core/utilities/import/widgets/albumcustomizer.cpp:128
 #: core/utilities/import/widgets/scriptingsettings.cpp:93
 #, kde-format
 msgid "Show a list of all available options"
@@ -41499,6 +41494,7 @@ msgstr ""
 "đỡ bạn tránh phơi ảnh quá lâu."
 
 #: core/utilities/imageeditor/editor/editorwindow.cpp:443
+#: core/utilities/import/main/importui.cpp:586
 #, fuzzy, kde-format
 msgctxt "@action"
 msgid "Color-Managed View"
@@ -41957,7 +41953,6 @@ msgid "Remove Tag"
 msgstr "Bỏ thẻ"
 
 #: core/utilities/imageeditor/main/imagewindow_setup.cpp:280
-#: core/utilities/import/widgets/importcontextmenu.cpp:394
 #, fuzzy, kde-format
 msgid "Assign Labels"
 msgstr "Gán hồ sơ"
@@ -42537,33 +42532,49 @@ msgstr ""
 
 #: core/utilities/import/main/importui.cpp:244
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid "Set how digiKam will rename files as they are downloaded."
 msgstr "<p>Đặt phương pháp digiKam thay đổi tên của tệp một khi tải về"
 
 #: core/utilities/import/main/importui.cpp:245
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "File Renaming Options"
+msgctxt "@item"
 msgid "File Renaming Options"
 msgstr "Tuỳ chọn thay tên tệp"
 
 #: core/utilities/import/main/importui.cpp:251
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Auto-creation of Albums"
+msgctxt "@item"
 msgid "Auto-creation of Albums"
 msgstr "Tự động tạo tập ảnh"
 
 #: core/utilities/import/main/importui.cpp:257
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "On the Fly Operations (JPEG only)"
+msgctxt "@item"
 msgid "On the Fly Operations (JPEG only)"
 msgstr "Thao tác khi yêu cầu (chỉ JPEG)"
 
 #: core/utilities/import/main/importui.cpp:263
 #, fuzzy, kde-format
+msgctxt "@item"
 msgid "DNG Convert Options"
 msgstr "Tuy chọn giao diện"
 
 #: core/utilities/import/main/importui.cpp:269
 #, fuzzy, kde-format
+msgctxt "@item"
 msgid "Scripting"
 msgstr "Làm mịn:"
+
+#: core/utilities/import/main/importui.cpp:273
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@title"
+msgid "Settings"
+msgstr "Thiết lập"
 
 #: core/utilities/import/main/importui.cpp:288
 #, fuzzy, kde-format
@@ -42681,19 +42692,19 @@ msgstr "Xoá"
 
 #: core/utilities/import/main/importui.cpp:434
 #, fuzzy, kde-format
-msgctxt "@action"
+msgctxt "@action:inmenu delete item"
 msgid "Delete Selected"
 msgstr "Xoá các điều chọn"
 
 #: core/utilities/import/main/importui.cpp:442
 #, fuzzy, kde-format
-msgctxt "@action"
+msgctxt "@action:inmenu delete item"
 msgid "Delete All"
 msgstr "Xoá tất cả"
 
 #: core/utilities/import/main/importui.cpp:448
 #, fuzzy, kde-format
-msgctxt "@action"
+msgctxt "@action:inmenu delete item"
 msgid "Delete New"
 msgstr "Xoá tệp"
 
@@ -42723,43 +42734,47 @@ msgstr ""
 
 #: core/utilities/import/main/importui.cpp:492
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+#| msgid "By Name"
+msgctxt "@item:inmenu Sort by"
 msgid "By Name"
 msgstr "Theo tên"
 
 #: core/utilities/import/main/importui.cpp:493
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+#| msgid "By Path"
+msgctxt "@item:inmenu Sort by"
 msgid "By Path"
 msgstr "Theo đường dẫn"
 
 #: core/utilities/import/main/importui.cpp:494
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+#| msgid "By Date"
+msgctxt "@item:inmenu Sort by"
 msgid "By Date"
 msgstr "Theo ngày"
 
 #: core/utilities/import/main/importui.cpp:495
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+msgctxt "@item:inmenu Sort by"
 msgid "By Size"
 msgstr "Theo kích cỡ tệp"
 
 #: core/utilities/import/main/importui.cpp:496
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+#| msgid "By Rating"
+msgctxt "@item:inmenu Sort by"
 msgid "By Rating"
 msgstr "Theo đánh giá"
 
 #: core/utilities/import/main/importui.cpp:497
 #, fuzzy, kde-format
-msgctxt "item:inmenu Sort by"
+msgctxt "@item:inmenu Sort by"
 msgid "By Download State"
 msgstr "Tải về các điều chọn"
 
 #: core/utilities/import/main/importui.cpp:521
 #, fuzzy, kde-format
-msgctxt "@title:inmenu"
+msgctxt "@action"
 msgid "Item Sorting &Order"
 msgstr "Thiết lập ảnh"
 
@@ -42878,31 +42893,31 @@ msgctxt "@info:status"
 msgid "Canceling current operation, please wait..."
 msgstr "Đang thôi thao tác hiện thời, xin hãy đợi..."
 
-#: core/utilities/import/main/importui.cpp:1009
+#: core/utilities/import/main/importui.cpp:1011
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Do you want to close the dialog and cancel the current operation?"
 msgstr "Bạn có muốn đóng hộp thoại này và thôi thao tác đang chạy không?"
 
-#: core/utilities/import/main/importui.cpp:1019
+#: core/utilities/import/main/importui.cpp:1021
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Disconnecting from camera, please wait..."
 msgstr "Đang ngắt kết nối tới máy ảnh, hãy đợi..."
 
-#: core/utilities/import/main/importui.cpp:1061
+#: core/utilities/import/main/importui.cpp:1065
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "Scanning for new files, please wait..."
 msgstr "Đang quét tìm tệp mới. Hãy đời..."
 
-#: core/utilities/import/main/importui.cpp:1100
+#: core/utilities/import/main/importui.cpp:1105
 #, fuzzy, kde-format
-msgctxt "@info:status"
+msgctxt "@info:status busy state"
 msgid "Ready"
 msgstr "Sẵn sàng"
 
-#: core/utilities/import/main/importui.cpp:1156
+#: core/utilities/import/main/importui.cpp:1162
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -42912,13 +42927,13 @@ msgstr ""
 "Lỗi kết nối tới máy ảnh. Hãy kiểm tra xem nó đã được kết nối và bật. Bạn có "
 "muốn thử lại không?"
 
-#: core/utilities/import/main/importui.cpp:1246
+#: core/utilities/import/main/importui.cpp:1256
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Select Image to Upload"
 msgstr "Chọn ảnh cần tải lên"
 
-#: core/utilities/import/main/importui.cpp:1280
+#: core/utilities/import/main/importui.cpp:1291
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -42928,24 +42943,23 @@ msgid ""
 "Available free space: %2"
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:1334
+#: core/utilities/import/main/importui.cpp:1346
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
-"<qt>Camera Folder <resource>%1</resource> already contains the item "
-"<resource>%2</resource>.<br/>Please enter a new filename (without extension):"
-"</qt>"
+"Camera Folder \"%1\" already contains the item \"%2\".\n"
+"Please enter a new filename (without extension):"
 msgstr ""
 "Thư mục máy ảnh <b>%1</b> đã chứa mục <b>%2</b><br>Hãy nhập vào tên tệp mới "
 "(không có phần mở rộng):"
 
-#: core/utilities/import/main/importui.cpp:1338
+#: core/utilities/import/main/importui.cpp:1350
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "File already exists"
 msgstr "Tệp đã có"
 
-#: core/utilities/import/main/importui.cpp:1404
+#: core/utilities/import/main/importui.cpp:1416
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -42953,7 +42967,7 @@ msgid ""
 "settings..."
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:1444
+#: core/utilities/import/main/importui.cpp:1457
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -42962,7 +42976,7 @@ msgid ""
 "configuration dialog."
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:1453
+#: core/utilities/import/main/importui.cpp:1466
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -42970,17 +42984,17 @@ msgid ""
 "available. Please select another one from camera configuration dialog."
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:1478
+#: core/utilities/import/main/importui.cpp:1491
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
-"<p>Please select the destination album from the digiKam library to import "
-"the camera pictures into.</p>"
+"Please select the destination album from the digiKam library to import the "
+"camera pictures into."
 msgstr ""
 "<p>Hãy chọn trong thư viện digiKam tập ảnh đích vào đó cần nhập khẩu các ảnh "
 "của máy ảnh.</p>"
 
-#: core/utilities/import/main/importui.cpp:1570
+#: core/utilities/import/main/importui.cpp:1587
 #, kde-format
 msgctxt "@info Popup notification"
 msgid ""
@@ -42988,13 +43002,13 @@ msgid ""
 "are auto-rotated"
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:1578
+#: core/utilities/import/main/importui.cpp:1595
 #, fuzzy, kde-format
 msgctxt "@info Popup notification"
 msgid "Images download finished"
 msgstr "Tải về"
 
-#: core/utilities/import/main/importui.cpp:1964
+#: core/utilities/import/main/importui.cpp:1991
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -43006,25 +43020,41 @@ msgstr ""
 "này sẽ không bị xoá. Nếu bạn thực sự muốn xoá những mục này, hãy bỏ khoá "
 "chúng rồi thử lại."
 
-#: core/utilities/import/main/importui.cpp:1975
+#: core/utilities/import/main/importui.cpp:1994
+#, fuzzy, kde-format
+#| msgid "Information"
+msgctxt "@title"
+msgid "Information"
+msgstr "Thông tin"
+
+#: core/utilities/import/main/importui.cpp:2002
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
-"About to delete this image. <b>Deleted file is unrecoverable.</b> Are you "
-"sure?"
+"About to delete this image.\n"
+"Deleted file is unrecoverable.\n"
+"Are you sure?"
 msgid_plural ""
-"About to delete these %1 images. <b>Deleted files are unrecoverable.</b> Are "
-"you sure?"
+"About to delete these %1 images.\n"
+"Deleted files are unrecoverable.\n"
+"Are you sure?"
 msgstr[0] ""
 "Sắp xoá ảnh này. Tệp bị xoá không thể được phục hồi. Bạn có chắc chưa?"
 
-#: core/utilities/import/main/importui.cpp:2026
+#: core/utilities/import/main/importui.cpp:2012
+#, fuzzy, kde-format
+#| msgid "Warning"
+msgctxt "@title: confirm delete items dialog"
+msgid "Warning"
+msgstr "Cảnh báo"
+
+#: core/utilities/import/main/importui.cpp:2056
 #, kde-format
 msgctxt "@title:window"
 msgid "Insufficient Disk Space"
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:2027
+#: core/utilities/import/main/importui.cpp:2057
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -43037,39 +43067,37 @@ msgid ""
 "Try Anyway?"
 msgstr ""
 
-#: core/utilities/import/main/importui.cpp:2345
-#: core/utilities/import/main/importui.cpp:2371
+#: core/utilities/import/main/importui.cpp:2385
+#: core/utilities/import/main/importui.cpp:2413
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "No item selected (%1 item)"
 msgid_plural "No item selected (%1 items)"
 msgstr[0] "Chưa chọn mục"
 
-#: core/utilities/import/main/importui.cpp:2363
+#: core/utilities/import/main/importui.cpp:2405
 #, fuzzy, kde-format
 msgctxt "@info:status Filename of first selected item of number of items"
-msgid "<b>%1</b> (%2 of %3)"
+msgid "\"%1\" (%2 of %3)"
 msgstr " (%2 trên %3)"
 
-#: core/utilities/import/main/importui.cpp:2381
+#: core/utilities/import/main/importui.cpp:2424
 #, fuzzy, kde-format
 msgctxt "@info:status"
 msgid "%2/%1 item selected"
 msgid_plural "%2/%1 items selected"
 msgstr[0] "%1 mục đã chọn"
 
-#: core/utilities/import/main/importui.cpp:2450
+#: core/utilities/import/main/importui.cpp:2495
 #, fuzzy, kde-format
 msgctxt "@info"
-msgid ""
-"A file with the same name (<b>%1</b>) already exists in folder <resource>%2</"
-"resource>."
+msgid "A file with the same name (\"%1\") already exists in folder \"%2\"."
 msgstr "Một tệp cùng tên (%1) đã có trong thư mục %2"
 
-#: core/utilities/import/main/importui.cpp:2462
+#: core/utilities/import/main/importui.cpp:2508
 #, fuzzy, kde-format
 msgctxt "@info"
-msgid "Failed to find Album for path <b>%1</b>."
+msgid "Failed to find Album for path \"%1\"."
 msgstr "Không tìm thấy tập ảnh qua đường dẫn « %1 »"
 
 #. i18n: ectx: Menu (Device)
@@ -43139,12 +43167,15 @@ msgid "Convert to lossless file format"
 msgstr "Chuyển đổi sang định dạng tệp không mất gì"
 
 #: core/utilities/import/widgets/advancedsettings.cpp:96
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "New image format:"
+msgctxt "@label"
 msgid "New image format:"
 msgstr "Định dạng ảnh mới:"
 
 #: core/utilities/import/widgets/advancedsettings.cpp:125
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Set here all options to fix/transform JPEG files automatically as they are "
 "downloaded."
@@ -43154,6 +43185,7 @@ msgstr ""
 
 #: core/utilities/import/widgets/advancedsettings.cpp:127
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option if you want images automatically rotated or flipped using "
 "Exif information provided by the camera."
@@ -43163,11 +43195,13 @@ msgstr ""
 
 #: core/utilities/import/widgets/advancedsettings.cpp:129
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid "Select here which metadata template you want to apply to images."
 msgstr "<p>Ở đây hãy đặt kiểu hoạ tiết cần áp dụng cho ảnh."
 
 #: core/utilities/import/widgets/advancedsettings.cpp:131
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option to write the document name to the Exif metadata. The "
 "document name is the original file name of the imported file."
@@ -43175,6 +43209,7 @@ msgstr ""
 
 #: core/utilities/import/widgets/advancedsettings.cpp:133
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option to set date and time metadata tags to the right values if "
 "your camera does not set these tags correctly when pictures are taken. The "
@@ -43188,10 +43223,10 @@ msgstr ""
 
 #: core/utilities/import/widgets/advancedsettings.cpp:137
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option to automatically convert all JPEG files to a lossless "
-"image format. <b>Note:</b> Image conversion can take a while on a slow "
-"computer."
+"image format. Note: Image conversion can take a while on a slow computer."
 msgstr ""
 "<p>Bật tuỳ chọn này để tự động chuyển đổi mọi tệp JPEG sang định dạng ảnh "
 "không mất gì.<b>Ghi chú :</b> tiến trình chuyển đổi có thể kéo dài một lát "
@@ -43199,83 +43234,94 @@ msgstr ""
 
 #: core/utilities/import/widgets/advancedsettings.cpp:140
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
-"Select your preferred lossless image file format to convert to. <b>Note:</b> "
-"All metadata will be preserved during the conversion."
+"Select your preferred lossless image file format to convert to. Note: All "
+"metadata will be preserved during the conversion."
 msgstr ""
 "<p>Hãy chọn định dạng tệp ảnh không mất gì sang đó cần chuyển đổi. <b>Ghi "
 "chú :</b> mọi siêu dữ liệu vẫn còn được bảo tồn trong khi chuyển đổi."
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:93
+#: core/utilities/import/widgets/albumcustomizer.cpp:94
 #, kde-format
+msgctxt "@info"
 msgid ""
-"<p>These expressions may be used to customize date format:</p><p><b>d</b>: "
-"The day as a number without a leading zero (1 to 31)</p><p><b>dd</b>: The "
-"day as a number with a leading zero (01 to 31)</p><p><b>ddd</b>: The "
-"abbreviated localized day name (e.g. 'Mon' to 'Sun')</p><p><b>dddd</b>: The "
-"long localized day name (e.g. 'Monday' to 'Sunday').</p><p><b>M</b>: The "
-"month as a number without a leading zero (1 to 12)</p><p><b>MM</b>: The "
-"month as a number with a leading zero (01 to 12)</p><p><b>MMM</b>: The "
-"abbreviated localized month name (e.g. 'Jan' to 'Dec')</p><p><b>MMMM</b>: "
-"The long localized month name (e.g. 'January' to 'December')</p><p><b>yy</"
-"b>: The year as two digit number (eg. 00 to 99)</p><p><b>yyyy</b>: The year "
-"as four digit number (eg. 2012)</p><p>All other input characters will be "
-"treated as text. Any sequence of characters that are enclosed in "
-"singlequotes will be treated as text and not be used as an expression. "
-"Examples, if date is 20 July 1969:</p><p><b>dd.MM.yyyy</b> : 20.07.1969</"
-"p><p><b>ddd MMMM d yy</b> : Sun July 20 69</p><p><b>'Photo shot on ' dddd</"
-"b> : Photo shot on Sunday</p>"
+"These expressions may be used to customize date format:\n"
+"\"d\": The day as a number without a leading zero (1 to 31)\n"
+"\"dd\": The day as a number with a leading zero (01 to 31)\n"
+"\"ddd\": The abbreviated localized day name (e.g. 'Mon' to 'Sun')\n"
+"\"dddd\": The long localized day name (e.g. 'Monday' to 'Sunday').\n"
+"\"M\": The month as a number without a leading zero (1 to 12)\n"
+"\"MM\": The month as a number with a leading zero (01 to 12)\n"
+"\"MMM\": The abbreviated localized month name (e.g. 'Jan' to 'Dec')\n"
+"\"MMMM\": The long localized month name (e.g. 'January' to 'December')\n"
+"\"yy\": The year as two digit number (eg. 00 to 99)\n"
+"\"yyyy\": The year as four digit number (eg. 2012)\n"
+"All other input characters will be treated as text. Any sequence of "
+"characters that are enclosed in singlequotes will be treated as text and not "
+"be used as an expression. Examples, if date is 20 July 1969:\n"
+"\"dd.MM.yyyy\" : 20.07.1969\n"
+"\"ddd MMMM d yy\" : Sun July 20 69\n"
+"\"'Photo shot on ' dddd\" : Photo shot on Sunday\n"
 msgstr ""
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:114
+#: core/utilities/import/widgets/albumcustomizer.cpp:115
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Extension-based sub-albums"
 msgstr "Tập ảnh phụ dựa vào phần mở rộng"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:115
+#: core/utilities/import/widgets/albumcustomizer.cpp:116
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Date-based sub-albums"
 msgstr "Tập ảnh phụ dựa vào ngày tháng"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:117
+#: core/utilities/import/widgets/albumcustomizer.cpp:118
 #, fuzzy, kde-format
 msgctxt "@label:listbox"
 msgid "Date format:"
 msgstr "Định dạng ngày:"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:119
+#: core/utilities/import/widgets/albumcustomizer.cpp:120
 #, fuzzy, kde-format
-msgctxt "@item:inlistbox"
+msgctxt "@item:inlistbox folder date format"
 msgid "ISO"
 msgstr "ISO"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:120
+#: core/utilities/import/widgets/albumcustomizer.cpp:121
 #, fuzzy, kde-format
-msgctxt "@item:inlistbox"
+msgctxt "@item:inlistbox folder date format"
 msgid "Full Text"
 msgstr "Văn bản đầy đủ"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:121
+#: core/utilities/import/widgets/albumcustomizer.cpp:122
 #, fuzzy, kde-format
-msgctxt "@item:inlistbox"
+msgctxt "@item:inlistbox folder date format"
 msgid "Local Settings"
 msgstr "Thiết lập cục bộ"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:122
+#: core/utilities/import/widgets/albumcustomizer.cpp:123
 #, fuzzy, kde-format
-msgctxt "@item:inlistbox"
+msgctxt "@item:inlistbox folder date format"
 msgid "Custom"
 msgstr "Tự chọn"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:141
-#, fuzzy, kde-format
-msgid "Set how digiKam creates albums automatically when downloading."
-msgstr "<p>Đặt phương pháp digiKam tự động tạo tập ảnh khi tải về."
+#: core/utilities/import/widgets/albumcustomizer.cpp:129
+#, kde-format
+msgctxt "@info"
+msgid "Show a list of all available options"
+msgstr ""
 
 #: core/utilities/import/widgets/albumcustomizer.cpp:142
 #, fuzzy, kde-format
+msgctxt "@info"
+msgid "Set how digiKam creates albums automatically when downloading."
+msgstr "<p>Đặt phương pháp digiKam tự động tạo tập ảnh khi tải về."
+
+#: core/utilities/import/widgets/albumcustomizer.cpp:143
+#, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option if you want to download your pictures into automatically "
 "created file extension-based sub-albums of the destination album. This way, "
@@ -43285,8 +43331,9 @@ msgstr ""
 "rộng tệp của tập ảnh đích, được tạo tự động. Bằng cách này, bạn có thể phân "
 "cách các tệp kiểu JPEG và RAW một khi tải xuống máy ảnh."
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:145
+#: core/utilities/import/widgets/albumcustomizer.cpp:146
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option if you want to download your pictures into automatically "
 "created file date-based sub-albums of the destination album."
@@ -43294,15 +43341,19 @@ msgstr ""
 "<p>Bật tuỳ chọn này nếu bạn muốn tải các ảnh về tập ảnh phụ dựa vào ngày "
 "tháng tệp của tập ảnh đích, được tạo tự động."
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:148
+#: core/utilities/import/widgets/albumcustomizer.cpp:149
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
-"<p>Select your preferred date format used to create new albums. The options "
-"available are:</p><p><b>ISO</b>: the date format is in accordance with ISO "
-"8601 (YYYY-MM-DD). E.g.: <i>2006-08-24</i></p><p><b>Full Text</b>: the date "
-"format is in a user-readable string. E.g.: <i>Thu Aug 24 2006</i></"
-"p><p><b>Local Settings</b>: the date format depending on KDE control panel "
-"settings.</p><p><b>Custom</b>: use a customized format for date.</p>"
+"Select your preferred date format used to\n"
+"create new albums. The options available are:\n"
+"\"ISO\": the date format is in accordance with ISO 8601\n"
+"(YYYY-MM-DD). E.g.: 2006-08-24\n"
+"\"Full Text\": the date format is in a user-readable string.\n"
+"E.g.: Thu Aug 24 2006\n"
+"\"Local Settings\": the date format depending on KDE control panel "
+"settings.\n"
+"\"Custom\": use a customized format for date."
 msgstr ""
 "<p>Ở đây hãy chọn định dạng ngày tháng đã muốn, được dùng để tạo tập ảnh "
 "mới. Các tuỳ chọn có thể:<p><b>ISO</b>: định dạng ngày tháng tuỳ theo ISO "
@@ -43311,21 +43362,22 @@ msgstr ""
 "i><p><b>Thiết lập cục bộ </b>: định dạng ngày tháng phụ thuộc vào thiết lập "
 "trên bảng điều khiển KDE.<p>"
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:156
+#: core/utilities/import/widgets/albumcustomizer.cpp:157
 #, kde-format
+msgctxt "@info"
 msgid ""
 "Show the result of converted date 1968-12-26 using your customized format."
 msgstr ""
 
-#: core/utilities/import/widgets/albumcustomizer.cpp:255
-#, kde-format
-msgctxt "Example of custom date format for album naming"
-msgid "Ex.: %1"
-msgstr ""
-
-#: core/utilities/import/widgets/albumcustomizer.cpp:259
+#: core/utilities/import/widgets/albumcustomizer.cpp:256
 #, fuzzy, kde-format
-msgctxt "Custom date format"
+msgctxt "@info Example of custom date format for album naming"
+msgid "Ex.: %1"
+msgstr "Cỡ : %1"
+
+#: core/utilities/import/widgets/albumcustomizer.cpp:260
+#, fuzzy, kde-format
+msgctxt "@info Custom date format"
 msgid "Format is not valid..."
 msgstr "URL đích %1 không hợp lệ"
 
@@ -43344,6 +43396,7 @@ msgstr "Đang chuyển đổi %1 sang định dạng tệp không mất gì..."
 
 #: core/utilities/import/widgets/dngconvertsettings.cpp:76
 #, fuzzy, kde-format
+msgctxt "@label"
 msgid ""
 "<p><a href='https://en.wikipedia.org/wiki/"
 "Digital_Negative_(file_format)'>DNG container</a></p>"
@@ -43353,6 +43406,7 @@ msgstr ""
 
 #: core/utilities/import/widgets/dngconvertsettings.cpp:93
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Set here all options to convert RAW images to DNG container automatically as "
 "they are downloaded."
@@ -43362,17 +43416,20 @@ msgstr ""
 
 #: core/utilities/import/widgets/dngconvertsettings.cpp:95
 #, fuzzy, kde-format
+msgctxt "@info"
 msgid ""
 "Enable this option to convert RAW images to DNG container automatically."
 msgstr "Đang chuyển đổi %1 sang định dạng tệp không mất gì..."
 
 #: core/utilities/import/widgets/freespacewidget.cpp:339
 #, fuzzy, kde-format
+msgctxt "@title"
 msgid "Camera Media"
 msgstr "Sổ tay máy ảnh"
 
 #: core/utilities/import/widgets/freespacewidget.cpp:343
 #, fuzzy, kde-format
+msgctxt "@title"
 msgid "Album Library"
 msgstr "Đường dẫn thư viện tập ảnh"
 
@@ -43398,13 +43455,14 @@ msgstr "Nổi bật:"
 
 #: core/utilities/import/widgets/importcontextmenu.cpp:229
 #, fuzzy, kde-format
-msgctxt "@title:menu"
+#| msgid "Open With"
+msgctxt "@title:menu open with desktop application"
 msgid "Open With"
 msgstr "Mở bằng"
 
 #: core/utilities/import/widgets/importcontextmenu.cpp:243
 #, fuzzy, kde-format
-msgctxt "@item:inmenu"
+msgctxt "@item:inmenu open with other application"
 msgid "Other..."
 msgstr "Kéo cắt..."
 
@@ -43413,6 +43471,12 @@ msgstr "Kéo cắt..."
 msgctxt "@title:menu"
 msgid "Open With..."
 msgstr "Mở bằng"
+
+#: core/utilities/import/widgets/importcontextmenu.cpp:394
+#, fuzzy, kde-format
+msgctxt "@title:menu"
+msgid "Assign Labels"
+msgstr "Gán hồ sơ"
 
 #: core/utilities/import/widgets/importfiltercombobox.cpp:120
 #, fuzzy, kde-format
@@ -49059,6 +49123,51 @@ msgid ""
 "<b>Note: All changes to these settings only take effect after the restart. "
 "Some settings are hardware dependent and may have no effect.</b>"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "item:inmenu Sort by"
+#~ msgid "By Name"
+#~ msgstr "Theo tên"
+
+#, fuzzy
+#~ msgctxt "item:inmenu Sort by"
+#~ msgid "By Path"
+#~ msgstr "Theo đường dẫn"
+
+#, fuzzy
+#~ msgctxt "item:inmenu Sort by"
+#~ msgid "By Date"
+#~ msgstr "Theo ngày"
+
+#, fuzzy
+#~ msgctxt "item:inmenu Sort by"
+#~ msgid "By Rating"
+#~ msgstr "Theo đánh giá"
+
+#, fuzzy
+#~ msgctxt "@info:status Filename of first selected item of number of items"
+#~ msgid "<b>%1</b> (%2 of %3)"
+#~ msgstr " (%2 trên %3)"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "ISO"
+#~ msgstr "ISO"
+
+#, fuzzy
+#~ msgctxt "@item:inlistbox"
+#~ msgid "Custom"
+#~ msgstr "Tự chọn"
+
+#, fuzzy
+#~ msgctxt "@title:menu"
+#~ msgid "Open With"
+#~ msgstr "Mở bằng"
+
+#, fuzzy
+#~ msgctxt "@item:inmenu"
+#~ msgid "Other..."
+#~ msgstr "Kéo cắt..."
 
 #, fuzzy
 #~ msgctxt "Get date information from the image"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-04-06 00:15+0000\n"
+"POT-Creation-Date: 2021-04-07 00:16+0000\n"
 "PO-Revision-Date: 2021-02-28 17:22+0100\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -2318,7 +2318,7 @@ msgstr "(%1, liên kết đến %2)"
 msgid " (Points to %1)"
 msgstr " (Trỏ đến %1)"
 
-#: core/mimetypefinderjob.cpp:57 gui/openurljob.cpp:145 widgets/krun.cpp:402
+#: core/mimetypefinderjob.cpp:57 gui/openurljob.cpp:145 widgets/krun.cpp:403
 #: widgets/paste.cpp:262 widgets/renamedialog.cpp:599
 #, kde-format
 msgid ""
@@ -3475,7 +3475,7 @@ msgid "*|All Files"
 msgstr "*|Tất cả các tệp"
 
 #: filewidgets/kfilewidget.cpp:2073 widgets/executablefileopendialog.cpp:30
-#: widgets/kfileitemactions.cpp:360
+#: widgets/kfileitemactions.cpp:361
 #, kde-format
 msgid "&Open"
 msgstr "&Mở"
@@ -3823,7 +3823,7 @@ msgstr ""
 "%2."
 
 #: gui/applicationlauncherjob.cpp:249 gui/openurljob.cpp:605
-#: widgets/krun.cpp:199
+#: widgets/krun.cpp:200
 #, kde-format
 msgid "You are not authorized to select an application to open this file."
 msgstr "Bạn không có quyền chọn ứng dụng để mở tệp này."
@@ -3950,7 +3950,7 @@ msgid "No Media inserted or Media not recognized."
 msgstr ""
 "Không có phương tiện nào được đưa vào hoặc phương tiện không được nhận diện."
 
-#: ioslaves/file/file.cpp:821 ioslaves/file/file.cpp:1013
+#: ioslaves/file/file.cpp:821 ioslaves/file/file.cpp:1011
 #, kde-format
 msgid "\"vold\" is not running."
 msgstr "\"vold\" đang không chạy."
@@ -3960,17 +3960,18 @@ msgstr "\"vold\" đang không chạy."
 msgid "Could not find program \"mount\""
 msgstr "Không tìm được chương trình \"mount\""
 
-#: ioslaves/file/file.cpp:921
-#, kde-format
-msgid "mounting is not supported by wince."
+#: ioslaves/file/file.cpp:920
+#, fuzzy, kde-format
+#| msgid "mounting is not supported by wince."
+msgid "mounting is not supported by Windows CE."
 msgstr "Việc gắn kết không được wince hỗ trợ."
 
-#: ioslaves/file/file.cpp:1024
+#: ioslaves/file/file.cpp:1022
 #, kde-format
 msgid "Could not find program \"umount\""
 msgstr "Không tìm được chương trình \"unmount\""
 
-#: ioslaves/file/file.cpp:1039
+#: ioslaves/file/file.cpp:1037
 #, kde-format
 msgid "unmounting is not supported by wince."
 msgstr "Việc bỏ gắn kết không được wince hỗ trợ."
@@ -4501,9 +4502,7 @@ msgid " [Cross Domain]"
 msgstr " [Xuyên miền]"
 
 #. i18n: ectx: property (title), widget (QGroupBox, detailsGroupBox)
-#: ioslaves/http/kcookiejar/kcookiewin.cpp:90
-#: ioslaves/http/kcookiejar/kcookiewin.cpp:357
-#: kcms/kio/kcookiesmanagement.ui:97
+#: ioslaves/http/kcookiejar/kcookiewin.cpp:90 kcms/kio/kcookiesmanagement.ui:97
 #, kde-format
 msgid "Details"
 msgstr "Chi tiết"
@@ -4632,7 +4631,11 @@ msgid "Domain:"
 msgstr "Miền:"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:281
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Exposure:"
+msgctxt ""
+"@label a description string of how 'accessible' the cookie is (e.g. see "
+"exposure string in this file)"
 msgid "Exposure:"
 msgstr "Độ mở:"
 
@@ -4648,36 +4651,61 @@ msgid "Show details of the next cookie"
 msgstr "Hiện chi tiết của miếng bánh quy tiếp theo"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:322
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Not specified"
+msgctxt "@label cookie has no explicit 'Domain' value specified"
 msgid "Not specified"
 msgstr "Không xác định"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:331
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "End of Session"
+msgctxt "@label the cookie expires when the browser session ends"
 msgid "End of Session"
 msgstr "Hết phiên"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:336
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Secure servers only"
+msgctxt "@label exposure string - the cookie may only be used by https servers"
 msgid "Secure servers only"
 msgstr "Chỉ máy chủ an toàn"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:338
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Secure servers, page scripts"
+msgctxt ""
+"@label exposure string - the cookie may be used by https servers AND client-"
+"side javascripts"
 msgid "Secure servers, page scripts"
 msgstr "Máy chủ an toàn, kịch bản trang"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:342
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Servers"
+msgctxt "@label exposure string - the cookie may only be used by http servers"
 msgid "Servers"
 msgstr "Máy chủ"
 
 #: ioslaves/http/kcookiejar/kcookiewin.cpp:344
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Servers, page scripts"
+msgctxt ""
+"@label exposure string - the cookie may be used by http servers AND client-"
+"side javascripts"
 msgid "Servers, page scripts"
 msgstr "Máy chủ, kịch bản trang"
 
-#: ioslaves/remote/remoteimpl.cpp:97
+#: ioslaves/http/kcookiejar/kcookiewin.cpp:359
+#, fuzzy, kde-format
+#| msgid "Details"
+msgctxt ""
+"@action:button show details about a cookie that needs approval. This string "
+"gets >> and << appended, to visualize if the dialog expands or compacts!"
+msgid "Details"
+msgstr "Chi tiết"
+
+#: ioslaves/remote/remoteimpl.cpp:96
 #, kde-format
 msgid "Network"
 msgstr "Mạng"
@@ -6811,7 +6839,12 @@ msgctxt "@item:inlistbox No default web search keyword"
 msgid "None"
 msgstr "Không"
 
-#: urifilters/ikws/ikwsopts.cpp:255
+#: urifilters/ikws/ikwsopts.cpp:230 urifilters/ikws/kurisearchfilter.cpp:83
+#, kde-format
+msgid "Search F&ilters"
+msgstr "Bộ &lọc tìm kiếm"
+
+#: urifilters/ikws/ikwsopts.cpp:258
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -6976,11 +7009,6 @@ msgstr "Không tìm thấy nhà cung cấp dịch vụ tìm kiếm được ưu 
 #, kde-format
 msgid "No search providers were found."
 msgstr "Không tìm thấy nhà cung cấp dịch vụ tìm kiếm nào."
-
-#: urifilters/ikws/kurisearchfilter.cpp:81
-#, kde-format
-msgid "Search F&ilters"
-msgstr "Bộ &lọc tìm kiếm"
 
 #: urifilters/ikws/searchproviderdlg.cpp:46
 #, kde-format
@@ -7742,41 +7770,41 @@ msgctxt "@title:column"
 msgid "Type"
 msgstr "Kiểu"
 
-#: widgets/kfileitemactions.cpp:349
+#: widgets/kfileitemactions.cpp:350
 #, kde-format
 msgid "&Open with %1"
 msgstr "&Mở bằng %1"
 
-#: widgets/kfileitemactions.cpp:371
+#: widgets/kfileitemactions.cpp:372
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Open With..."
 msgstr "&Mở bằng..."
 
-#: widgets/kfileitemactions.cpp:384
+#: widgets/kfileitemactions.cpp:385
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Open With"
 msgstr "&Mở bằng"
 
-#: widgets/kfileitemactions.cpp:395
+#: widgets/kfileitemactions.cpp:396
 #, kde-format
 msgctxt "@action:inmenu Open With"
 msgid "&Other Application..."
 msgstr "Ứ&ng dụng khác..."
 
-#: widgets/kfileitemactions.cpp:513
+#: widgets/kfileitemactions.cpp:514
 #, kde-format
 msgid "Open &with %1"
 msgstr "Mở &bằng %1"
 
-#: widgets/kfileitemactions.cpp:515
+#: widgets/kfileitemactions.cpp:516
 #, kde-format
 msgctxt "@item:inmenu Open With, %1 is application name"
 msgid "%1"
 msgstr "%1"
 
-#: widgets/kfileitemactions.cpp:706
+#: widgets/kfileitemactions.cpp:707
 #, kde-format
 msgctxt "@title:menu"
 msgid "&Actions"
@@ -7795,17 +7823,17 @@ msgctxt "@info mimetype"
 msgid "Unknown"
 msgstr "Không rõ"
 
-#: widgets/kopenwithdialog.cpp:296
+#: widgets/kopenwithdialog.cpp:297
 #, kde-format
 msgid "Known Applications"
 msgstr "Ứng dụng đã biết"
 
-#: widgets/kopenwithdialog.cpp:555
+#: widgets/kopenwithdialog.cpp:556
 #, kde-format
 msgid "Open With"
 msgstr "Mở bằng"
 
-#: widgets/kopenwithdialog.cpp:560
+#: widgets/kopenwithdialog.cpp:561
 #, kde-format
 msgid ""
 "<qt>Select the program that should be used to open <b>%1</b>. If the program "
@@ -7814,34 +7842,34 @@ msgstr ""
 "<qt>Chọn chương trình dùng để mở <b>%1</b>. Nếu chương trình đó không được "
 "liệt kê, hãy nhập tên hoặc bấm nút duyệt.</qt>"
 
-#: widgets/kopenwithdialog.cpp:567
+#: widgets/kopenwithdialog.cpp:568
 #, kde-format
 msgid "Choose the name of the program with which to open the selected files."
 msgstr "Chọn tên của chương trình dùng để mở các tệp đã chọn."
 
-#: widgets/kopenwithdialog.cpp:588
+#: widgets/kopenwithdialog.cpp:589
 #, kde-format
 msgid "<qt>Select the program you want to use to open the file<br/>%1</qt>"
 msgstr "<qt>Chọn chương trình bạn muốn dùng để mở tệp<br/>%1</qt>"
 
-#: widgets/kopenwithdialog.cpp:590
+#: widgets/kopenwithdialog.cpp:591
 #, kde-format
 msgid "<qt>Select the program you want to use to open the file.</qt>"
 msgid_plural ""
 "<qt>Select the program you want to use to open the %1 files.</qt>"
 msgstr[0] "<qt>Chọn chương trình bạn muốn dùng để mở %1 tệp đó.</qt>"
 
-#: widgets/kopenwithdialog.cpp:595 widgets/kopenwithdialog.cpp:626
+#: widgets/kopenwithdialog.cpp:596 widgets/kopenwithdialog.cpp:627
 #, kde-format
 msgid "Choose Application"
 msgstr "Chọn ứng dụng"
 
-#: widgets/kopenwithdialog.cpp:610
+#: widgets/kopenwithdialog.cpp:611
 #, kde-format
 msgid "Choose Application for %1"
 msgstr "Chọn ứng dụng cho %1"
 
-#: widgets/kopenwithdialog.cpp:612
+#: widgets/kopenwithdialog.cpp:613
 #, kde-format
 msgid ""
 "<qt>Select the program for the file type: <b>%1</b>. If the program is not "
@@ -7850,7 +7878,7 @@ msgstr ""
 "<qt>Chọn chương trình cho kiểu tệp: <b>%1</b>. Nếu chương trình đó không "
 "được liệt kê, hãy nhập tên hoặc bấm nút duyệt.</qt>"
 
-#: widgets/kopenwithdialog.cpp:628
+#: widgets/kopenwithdialog.cpp:629
 #, kde-format
 msgid ""
 "<qt>Select a program. If the program is not listed, enter the name or click "
@@ -7859,7 +7887,7 @@ msgstr ""
 "<qt>Chọn một chương trình. Nếu chương trình đó không được liệt kê, hãy nhập "
 "tên hoặc bấm nút duyệt.</qt>"
 
-#: widgets/kopenwithdialog.cpp:674
+#: widgets/kopenwithdialog.cpp:675
 #, kde-format
 msgid ""
 "Type to filter the applications below, or specify the name of a command.\n"
@@ -7868,7 +7896,7 @@ msgstr ""
 "Gõ để lọc các ứng dụng bên dưới, hoặc chỉ ra tên của một lệnh.\n"
 "Ấn mũi tên xuống để di chuyển giữa các kết quả."
 
-#: widgets/kopenwithdialog.cpp:697
+#: widgets/kopenwithdialog.cpp:698
 #, kde-format
 msgid ""
 "Following the command, you can have several place holders which will be "
@@ -7897,7 +7925,7 @@ msgstr ""
 "%m - biểu tượng nhỏ\n"
 "%c - chú thích"
 
-#: widgets/kopenwithdialog.cpp:740
+#: widgets/kopenwithdialog.cpp:741
 #, kde-format
 msgid ""
 "&Remember application association for all files of type\n"
@@ -7906,22 +7934,22 @@ msgstr ""
 "&Ghi nhớ liên kết với ứng dụng cho tất cả các tệp thuộc kiểu\n"
 "\"%1\" (%2)"
 
-#: widgets/kopenwithdialog.cpp:749
+#: widgets/kopenwithdialog.cpp:750
 #, kde-format
 msgid "Terminal options"
 msgstr "Các lựa chọn dòng lệnh"
 
-#: widgets/kopenwithdialog.cpp:754
+#: widgets/kopenwithdialog.cpp:755
 #, kde-format
 msgid "Run in &terminal"
 msgstr "Chạy trong &dòng lệnh"
 
-#: widgets/kopenwithdialog.cpp:772
+#: widgets/kopenwithdialog.cpp:773
 #, kde-format
 msgid "&Do not close when command exits"
 msgstr "Đừ&ng đóng khi lệnh kết thúc"
 
-#: widgets/kopenwithdialog.cpp:958
+#: widgets/kopenwithdialog.cpp:959
 #, kde-format
 msgid ""
 "Could not extract executable name from '%1', please type a valid program "
@@ -7930,7 +7958,7 @@ msgstr ""
 "Không trích xuất được tên tệp thực thi từ '%1', vui lòng gõ một tên chương "
 "trình hợp lệ."
 
-#: widgets/kopenwithdialog.cpp:1008
+#: widgets/kopenwithdialog.cpp:1009
 #, kde-format
 msgid "'%1' not found, please type a valid program name."
 msgstr "Không tìm thấy '%1', vui lòng gõ một tên chương trình hợp lệ."
@@ -8973,7 +9001,7 @@ msgstr "Chỉ tệp thực thi trên các hệ thống tệp cục bộ mới đ
 msgid "Advanced Options for %1"
 msgstr "Các lựa chọn nâng cao cho %1"
 
-#: widgets/krun.cpp:436
+#: widgets/krun.cpp:437
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -8982,7 +9010,7 @@ msgstr ""
 "<qt>Không thể chạy lệnh được chỉ định. Tệp hoặc thư mục <b>%1</b> không tồn "
 "tại.</qt>"
 
-#: widgets/krun.cpp:495
+#: widgets/krun.cpp:496
 #, kde-format
 msgid "Could not find any application or handler for %1"
 msgstr "Không tìm được bất kì ứng dụng hay trình xử lí nào cho %1"

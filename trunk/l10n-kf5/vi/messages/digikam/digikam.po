@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-28 00:16+0000\n"
+"POT-Creation-Date: 2021-07-04 00:15+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -38948,7 +38948,7 @@ msgctxt "@action: button"
 msgid "Open Setup Dialog..."
 msgstr "Đang mở hộp thoại tải về..."
 
-#: core/libs/widgets/metadata/exiftool/exiftoollistview.cpp:308
+#: core/libs/widgets/metadata/exiftool/exiftoollistview.cpp:258
 #: core/libs/widgets/metadata/exiv2/metadatalistview.cpp:145
 #, fuzzy, kde-format
 msgid ""
@@ -39480,48 +39480,97 @@ msgstr ""
 msgid "ZIP Archive Information"
 msgstr "Thông tin ảnh"
 
+#: core/libs/widgets/metadata/exiftool/exiftoollistviewitem.cpp:101
+#: core/libs/widgets/metadata/exiv2/metadatalistviewitem.cpp:76
+#, fuzzy, kde-format
+msgid "Unavailable"
+msgstr "không sẵn sàng"
+
 #: core/libs/widgets/metadata/exiftool/exiftoolloadingview.cpp:82
 #, fuzzy, kde-format
 msgctxt "info"
 msgid "Loading in progress"
 msgstr "Hiện ngày tạo ảnh"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:124
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:133
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:133
+#, fuzzy, kde-format
+msgctxt "@info: metadata view"
+msgid "Tags filter options"
+msgstr "Lọc cam"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:136
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:136
+#, fuzzy, kde-format
+msgctxt "@info: metadata view"
+msgid "Apply tags filter over metadata."
+msgstr "Siêu dữ liệu"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:141
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:141
+#, fuzzy, kde-format
+msgctxt "@action: metadata view"
+msgid "No filter"
+msgstr "Lọc nhiễu :"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:144
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:144
+#, fuzzy, kde-format
+msgctxt "@action: metadata view"
+msgid "Photograph"
+msgstr "Nháp ảnh chụp"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:147
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:147
+#, fuzzy, kde-format
+msgctxt "@action: metadata view"
+msgid "Custom"
+msgstr "Tự chọn"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:151
+#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:151
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@action: metadata view"
+msgid "Settings"
+msgstr "Thiết lập"
+
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:164
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:160
 #, fuzzy, kde-format
 msgctxt "@info: metadata view"
 msgid "Tools"
 msgstr "&Công cụ"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:127
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:167
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:163
 #, fuzzy, kde-format
 msgctxt "@info: metadata view"
 msgid "Run tool over metadata tags."
 msgstr "Miền màu"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:130
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:170
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:166
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Save in file"
 msgstr "Tệp phim"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:131
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:171
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:167
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Print"
 msgstr "In ảnh..."
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:132
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:172
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:168
 #, fuzzy, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy to Clipboard"
 msgstr "Sao chép siêu dữ liệu vào bảng nháp"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:195
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:236
 #, kde-format
 msgctxt "@info: error message"
 msgid ""
@@ -39532,14 +39581,14 @@ msgid ""
 "%2"
 msgstr ""
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:244
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:288
 #, fuzzy, kde-format
 #| msgid "File name: %1 (%2)"
 msgctxt "@info: metadata to text"
 msgid "File name: %1 (%2)"
 msgstr "Tên tệp: %1 (%2)"
 
-#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:320
+#: core/libs/widgets/metadata/exiftool/exiftoolwidget.cpp:378
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Save ExifTool Information"
@@ -39769,48 +39818,6 @@ msgstr "Ảnh được tìm trong %1"
 #, fuzzy, kde-format
 msgid "Image Magick Properties"
 msgstr "Thuộc tính"
-
-#: core/libs/widgets/metadata/exiv2/metadatalistviewitem.cpp:76
-#, fuzzy, kde-format
-msgid "Unavailable"
-msgstr "không sẵn sàng"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:133
-#, fuzzy, kde-format
-msgctxt "@info: metadata view"
-msgid "Tags filter options"
-msgstr "Lọc cam"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:136
-#, fuzzy, kde-format
-msgctxt "@info: metadata view"
-msgid "Apply tags filter over metadata."
-msgstr "Siêu dữ liệu"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:141
-#, fuzzy, kde-format
-msgctxt "@action: metadata view"
-msgid "No filter"
-msgstr "Lọc nhiễu :"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:144
-#, fuzzy, kde-format
-msgctxt "@action: metadata view"
-msgid "Photograph"
-msgstr "Nháp ảnh chụp"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:147
-#, fuzzy, kde-format
-msgctxt "@action: metadata view"
-msgid "Custom"
-msgstr "Tự chọn"
-
-#: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:151
-#, fuzzy, kde-format
-#| msgid "Settings"
-msgctxt "@action: metadata view"
-msgid "Settings"
-msgstr "Thiết lập"
 
 #: core/libs/widgets/metadata/exiv2/metadatawidget.cpp:342
 #, fuzzy, kde-format
@@ -47912,7 +47919,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: core/utilities/import/backend/gpcamera.cpp:1553
+#: core/utilities/import/backend/gpcamera.cpp:1550
 #, fuzzy, kde-format
 msgctxt "@info List of supported device operations"
 msgid ""
@@ -47937,24 +47944,24 @@ msgstr ""
 " • xoá thư mục: %9\n"
 "\n"
 
+#: core/utilities/import/backend/gpcamera.cpp:1556
+#: core/utilities/import/backend/gpcamera.cpp:1557
+#: core/utilities/import/backend/gpcamera.cpp:1558
 #: core/utilities/import/backend/gpcamera.cpp:1559
 #: core/utilities/import/backend/gpcamera.cpp:1560
 #: core/utilities/import/backend/gpcamera.cpp:1561
-#: core/utilities/import/backend/gpcamera.cpp:1562
-#: core/utilities/import/backend/gpcamera.cpp:1563
-#: core/utilities/import/backend/gpcamera.cpp:1564
 #, fuzzy, kde-format
 #| msgid "yes"
 msgctxt "@info: gphoto backend feature"
 msgid "yes"
 msgstr "có"
 
+#: core/utilities/import/backend/gpcamera.cpp:1556
+#: core/utilities/import/backend/gpcamera.cpp:1557
+#: core/utilities/import/backend/gpcamera.cpp:1558
 #: core/utilities/import/backend/gpcamera.cpp:1559
 #: core/utilities/import/backend/gpcamera.cpp:1560
 #: core/utilities/import/backend/gpcamera.cpp:1561
-#: core/utilities/import/backend/gpcamera.cpp:1562
-#: core/utilities/import/backend/gpcamera.cpp:1563
-#: core/utilities/import/backend/gpcamera.cpp:1564
 #, fuzzy, kde-format
 #| msgid "no"
 msgctxt "@info: gphoto backend feature"
@@ -47984,7 +47991,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: core/utilities/import/backend/umscamera.cpp:599
+#: core/utilities/import/backend/umscamera.cpp:595
 #, fuzzy, kde-format
 msgctxt "@info List of supported device operations"
 msgid ""
@@ -48009,31 +48016,31 @@ msgstr ""
 " • xoá thư mục: %9\n"
 "\n"
 
+#: core/utilities/import/backend/umscamera.cpp:601
+#: core/utilities/import/backend/umscamera.cpp:602
+#: core/utilities/import/backend/umscamera.cpp:603
+#: core/utilities/import/backend/umscamera.cpp:604
 #: core/utilities/import/backend/umscamera.cpp:605
 #: core/utilities/import/backend/umscamera.cpp:606
-#: core/utilities/import/backend/umscamera.cpp:607
-#: core/utilities/import/backend/umscamera.cpp:608
-#: core/utilities/import/backend/umscamera.cpp:609
-#: core/utilities/import/backend/umscamera.cpp:610
 #, fuzzy, kde-format
 #| msgid "yes"
 msgctxt "@info: ums backend feature"
 msgid "yes"
 msgstr "có"
 
+#: core/utilities/import/backend/umscamera.cpp:601
+#: core/utilities/import/backend/umscamera.cpp:602
+#: core/utilities/import/backend/umscamera.cpp:603
+#: core/utilities/import/backend/umscamera.cpp:604
 #: core/utilities/import/backend/umscamera.cpp:605
 #: core/utilities/import/backend/umscamera.cpp:606
-#: core/utilities/import/backend/umscamera.cpp:607
-#: core/utilities/import/backend/umscamera.cpp:608
-#: core/utilities/import/backend/umscamera.cpp:609
-#: core/utilities/import/backend/umscamera.cpp:610
 #, fuzzy, kde-format
 #| msgid "no"
 msgctxt "@info: ums backend feature"
 msgid "no"
 msgstr "không"
 
-#: core/utilities/import/backend/umscamera.cpp:616
+#: core/utilities/import/backend/umscamera.cpp:612
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -48044,7 +48051,7 @@ msgstr ""
 "digiKam, phần <b>Supported Digital Still Cameras</b> (các máy ảnh tĩnh số đã "
 "hỗ trợ)."
 
-#: core/utilities/import/backend/umscamera.cpp:624
+#: core/utilities/import/backend/umscamera.cpp:620
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid ""
@@ -48082,19 +48089,19 @@ msgctxt "@title:window"
 msgid "Device Information"
 msgstr "Thông tin ảnh"
 
-#: core/utilities/import/dialogs/camerainfodialog.cpp:66
+#: core/utilities/import/dialogs/camerainfodialog.cpp:67
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Device Summary"
 msgstr "Tóm tắt"
 
-#: core/utilities/import/dialogs/camerainfodialog.cpp:73
+#: core/utilities/import/dialogs/camerainfodialog.cpp:75
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Device Manual"
 msgstr "Hạng thiết bị"
 
-#: core/utilities/import/dialogs/camerainfodialog.cpp:80
+#: core/utilities/import/dialogs/camerainfodialog.cpp:83
 #, fuzzy, kde-format
 #| msgid "About Driver"
 msgctxt "@title"

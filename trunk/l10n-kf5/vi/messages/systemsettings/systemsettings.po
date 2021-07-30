@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-07-28 00:19+0000\n"
+"POT-Creation-Date: 2021-07-30 00:18+0000\n"
 "PO-Revision-Date: 2021-05-26 20:42+0200\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -40,7 +40,7 @@ msgstr "Kiểu cách xem"
 msgid "Show detailed tooltips"
 msgstr "Hiện chú giải chi tiết"
 
-#: app/main.cpp:82 app/SettingsBase.cpp:64
+#: app/main.cpp:82 app/SettingsBase.cpp:63
 #, kde-format
 msgid "Info Center"
 msgstr "Trung tâm thông tin"
@@ -55,7 +55,7 @@ msgstr "Phần tổng quan tập trung và tiện lợi về thông tin hệ th�
 msgid "(c) 2009, Ben Cooksley"
 msgstr "(c) 2009, Ben Cooksley"
 
-#: app/main.cpp:93 app/SettingsBase.cpp:67
+#: app/main.cpp:93 app/SettingsBase.cpp:66 runner/systemsettingsrunner.cpp:215
 #: sidebar/package/contents/ui/introPage.qml:63
 #, kde-format
 msgid "System Settings"
@@ -121,34 +121,29 @@ msgstr "Hiện có các khối sau:"
 msgid "No description available"
 msgstr "Không có mô tả"
 
-#: app/SettingsBase.cpp:56
+#: app/SettingsBase.cpp:55
 #, kde-format
 msgctxt "Search through a list of control modules"
 msgid "Search"
 msgstr "Tìm kiếm"
 
-#: app/SettingsBase.cpp:165
+#: app/SettingsBase.cpp:164
 #, kde-format
 msgid "Configure…"
 msgstr "Cấu hình…"
 
-#: app/SettingsBase.cpp:196
+#: app/SettingsBase.cpp:195
 #, kde-format
 msgid "Help"
 msgstr "Trợ giúp"
 
-#: app/SettingsBase.cpp:201 app/SettingsBase.cpp:459
-#, kde-format
-msgid "About Active Module"
-msgstr "Về khối đang dùng"
-
-#: app/SettingsBase.cpp:215
+#: app/SettingsBase.cpp:212
 #, kde-format
 msgctxt "General config for System Settings"
 msgid "General"
 msgstr "Chung"
 
-#: app/SettingsBase.cpp:342
+#: app/SettingsBase.cpp:339
 #, kde-format
 msgid ""
 "System Settings was unable to find any views, and hence nothing is available "
@@ -157,12 +152,12 @@ msgstr ""
 "Thiết lập hệ thống không thể tìm thấy bất kì khung xem nào, và thế nên không "
 "có gì để cấu hình cả."
 
-#: app/SettingsBase.cpp:342 app/SettingsBase.cpp:405
+#: app/SettingsBase.cpp:339 app/SettingsBase.cpp:400
 #, kde-format
 msgid "No views found"
 msgstr "Không tìm thấy khung xem nào."
 
-#: app/SettingsBase.cpp:405
+#: app/SettingsBase.cpp:400
 #, kde-format
 msgid ""
 "System Settings was unable to find any views, and hence has nothing to "
@@ -171,12 +166,12 @@ msgstr ""
 "Thiết lập hệ thống không thể tìm thấy bất kì khung xem nào, và thế nên không "
 "có gì để hiển thị cả."
 
-#: app/SettingsBase.cpp:439
+#: app/SettingsBase.cpp:434
 #, kde-format
 msgid "About Active View"
 msgstr "Về kiểu xem đang dùng"
 
-#: app/SettingsBase.cpp:509
+#: app/SettingsBase.cpp:503
 #, kde-format
 msgid "About %1"
 msgstr "Về %1"
@@ -194,7 +189,7 @@ msgid "Internal name for the view used"
 msgstr "Tên nội bộ cho kiểu xem được dùng"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: app/systemsettingsui.rc:16
+#: app/systemsettingsui.rc:15
 #, kde-format
 msgid "About System Settings"
 msgstr "Về Thiết lập hệ thống"
@@ -226,7 +221,7 @@ msgstr "Hộp thoại"
 msgid "Reset all current changes to previous values"
 msgstr "Đặt lại tất cả các thay đổi hiện tại về giá trị trước"
 
-#: core/ModuleView.cpp:335
+#: core/ModuleView.cpp:325
 #, kde-format
 msgid ""
 "The settings of the current module have changed.\n"
@@ -235,7 +230,7 @@ msgstr ""
 "Thiết lập cho khối hiện tại đã thay đổi.\n"
 "Bạn muốn áp dụng hay loại bỏ các thay đổi?"
 
-#: core/ModuleView.cpp:337
+#: core/ModuleView.cpp:327
 #, kde-format
 msgid "Apply Settings"
 msgstr "Áp dụng thiết lập"
@@ -266,6 +261,17 @@ msgstr "Tất cả các thiết lập"
 #, kde-format
 msgid "Keyboard Shortcut: %1"
 msgstr "Phím tắt: %1"
+
+#: runner/systemsettingsrunner.cpp:213
+#, fuzzy, kde-format
+#| msgid "System Settings"
+msgid "System Information"
+msgstr "Thiết lập hệ thống"
+
+#: runner/systemsettingsrunner.cpp:241
+#, kde-format
+msgid "Finds system settings modules whose names or descriptions match :q:"
+msgstr ""
 
 #: sidebar/package/contents/ui/CategoriesPage.qml:54
 #, kde-format
@@ -352,3 +358,6 @@ msgstr "Dùng nhiều nhất"
 msgid "<i>Contains 1 item</i>"
 msgid_plural "<i>Contains %1 items</i>"
 msgstr[0] "<i>Chứa %1 mục</i>"
+
+#~ msgid "About Active Module"
+#~ msgstr "Về khối đang dùng"

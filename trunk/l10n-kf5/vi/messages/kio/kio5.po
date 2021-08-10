@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-08 00:14+0000\n"
+"POT-Creation-Date: 2021-08-10 00:14+0000\n"
 "PO-Revision-Date: 2021-08-03 10:01+0200\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -48,26 +48,46 @@ msgstr ""
 msgid "Unable to create io-slave: %1"
 msgstr "Không thể tạo io-slave: %1"
 
-#: core/copyjob.cpp:1291 core/job_error.cpp:556
+#: core/copyjob.cpp:1323 core/job_error.cpp:556
 #, kde-format
 msgid "Folder Already Exists"
 msgstr "Thư mục đã tồn tại"
 
-#: core/copyjob.cpp:1536 core/copyjob.cpp:2117 core/filecopyjob.cpp:373
+#: core/copyjob.cpp:1365
+#, kde-format
+msgid ""
+"Could not create \"%1\".\n"
+"The destination filesystem (%2) disallows the following characters in folder "
+"names: %3\n"
+"Selecting Replace will replace any invalid characters (in the destination "
+"folder name) with an underscore \"_\"."
+msgstr ""
+
+#: core/copyjob.cpp:1656 core/copyjob.cpp:2322 core/filecopyjob.cpp:373
 #: core/job_error.cpp:545 widgets/paste.cpp:80
 #, kde-format
 msgid "File Already Exists"
 msgstr "Tệp đã tồn tại"
 
-#: core/copyjob.cpp:1536 core/copyjob.cpp:2117
+#: core/copyjob.cpp:1656 core/copyjob.cpp:2322
 #, kde-format
 msgid "Already Exists as Folder"
 msgstr "Đã tồn tại, là thư mục"
 
-#: core/copyjob.cpp:1697 ioslaves/trash/kio_trash.cpp:285
+#: core/copyjob.cpp:1817 ioslaves/trash/kio_trash.cpp:285
 #, kde-format
 msgid "Trash"
 msgstr "Thùng rác"
+
+#: core/copyjob.cpp:1888
+#, kde-format
+msgid ""
+"Could not create \"%1\".\n"
+"The destination filesystem (%2) disallows the following characters in file "
+"names: %3\n"
+"Selecting Replace will replace any invalid characters (in the destination "
+"file name) with an underscore \"_\"."
+msgstr ""
 
 #: core/desktopexecparser.cpp:320
 #, kde-format
@@ -5092,7 +5112,7 @@ msgctxt "@title:window"
 msgid "Duplicate Policy"
 msgstr "Chính sách trùng lặp"
 
-#: kcms/cookies/kcookiespolicies.cpp:208
+#: kcms/cookies/kcookiespolicies.cpp:208 widgets/skipdialog.cpp:41
 #, kde-format
 msgid "Replace"
 msgstr "Thay thế"
@@ -9020,17 +9040,23 @@ msgstr "# sẽ được thay thế bằng các số tăng dần bắt đầu t�
 msgid "Information"
 msgstr "Thông tin"
 
-#: widgets/skipdialog.cpp:38
+#: widgets/skipdialog.cpp:47
 #, kde-format
 msgid "Retry"
 msgstr "Thử lại"
 
-#: widgets/skipdialog.cpp:43
+#: widgets/skipdialog.cpp:54
+#, fuzzy, kde-format
+#| msgid "Replace"
+msgid "Replace All"
+msgstr "Thay thế"
+
+#: widgets/skipdialog.cpp:61
 #, kde-format
 msgid "Skip"
 msgstr "Bỏ qua"
 
-#: widgets/skipdialog.cpp:47
+#: widgets/skipdialog.cpp:65
 #, kde-format
 msgid "Skip All"
 msgstr "Bỏ qua tất cả"

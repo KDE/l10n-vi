@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-26 00:15+0000\n"
+"POT-Creation-Date: 2021-08-29 00:16+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -287,7 +287,7 @@ msgstr "Đổi chữ sang:"
 
 #: core/app/dragdrop/itemdragdrop.cpp:606
 #: core/app/dragdrop/itemdragdrop.cpp:651
-#: core/app/views/preview/itempreviewview.cpp:577
+#: core/app/views/preview/itempreviewview.cpp:613
 #, kde-format
 msgid "&Cancel"
 msgstr "T&hôi"
@@ -298,7 +298,7 @@ msgid "Assign Tags to &Selected Items"
 msgstr "&Gán thẻ cho các mục đã chọn"
 
 #: core/app/dragdrop/itemdragdrop.cpp:644
-#: core/app/views/preview/itempreviewview.cpp:575
+#: core/app/views/preview/itempreviewview.cpp:611
 #, kde-format
 msgid "Assign Tags to &This Item"
 msgstr "Gán thẻ cho mục nà&y"
@@ -497,7 +497,7 @@ msgid "Show Fullscreen"
 msgstr "Thoát khỏi chế độ toàn màn hình"
 
 #: core/app/items/overlays/itemrotationoverlay.cpp:68
-#: core/app/views/preview/itempreviewview.cpp:162
+#: core/app/views/preview/itempreviewview.cpp:172
 #: core/utilities/import/items/importoverlays.cpp:444
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
@@ -505,7 +505,7 @@ msgid "Rotate Left"
 msgstr "Xoay trái"
 
 #: core/app/items/overlays/itemrotationoverlay.cpp:72
-#: core/app/views/preview/itempreviewview.cpp:163
+#: core/app/views/preview/itempreviewview.cpp:173
 #: core/utilities/import/items/importoverlays.cpp:448
 #, fuzzy, kde-format
 msgctxt "@info:tooltip"
@@ -862,6 +862,13 @@ msgctxt "@action:inmenu Pluralized"
 msgid "Move to Trash"
 msgid_plural "Move %1 Files to Trash"
 msgstr[0] "Chuyển vào Rác"
+
+#: core/app/items/utils/contextmenuhelper.cpp:1265
+#, fuzzy, kde-format
+msgctxt "@action:inmenu Pluralized"
+msgid "Image Quality Sort"
+msgid_plural "Image Quality Sort"
+msgstr[0] "Bộ sửa ảnh"
 
 #: core/app/items/utils/itemcategorydrawer.cpp:268
 #: core/app/items/utils/itemcategorydrawer.cpp:276
@@ -2713,36 +2720,46 @@ msgid ""
 "Rev.: %3"
 msgstr ""
 
-#: core/app/views/preview/itempreviewview.cpp:160
+#: core/app/views/preview/itempreviewview.cpp:170
 #: core/libs/video/player/mediaplayerview.cpp:220
 #, fuzzy, kde-format
 msgctxt "go to previous image"
 msgid "Back"
 msgstr "Lùi"
 
-#: core/app/views/preview/itempreviewview.cpp:161
+#: core/app/views/preview/itempreviewview.cpp:171
 #: core/libs/video/player/mediaplayerview.cpp:222
 #, fuzzy, kde-format
 msgctxt "go to next image"
 msgid "Forward"
 msgstr "Tới"
 
-#: core/app/views/preview/itempreviewview.cpp:165
+#: core/app/views/preview/itempreviewview.cpp:175
 #, fuzzy, kde-format
 msgid "Add a Face Tag"
 msgstr "Thêm thẻ mới..."
 
-#: core/app/views/preview/itempreviewview.cpp:166
+#: core/app/views/preview/itempreviewview.cpp:177
 #, fuzzy, kde-format
 msgid "Clear all faces on this image"
 msgstr "Áp dụng mọi thay đổi cho các ảnh"
 
-#: core/app/views/preview/itempreviewview.cpp:167
+#: core/app/views/preview/itempreviewview.cpp:178
 #, fuzzy, kde-format
 msgid "Show Face Tags"
 msgstr "Hiện kiểu ảnh"
 
-#: core/app/views/preview/itempreviewview.cpp:170
+#: core/app/views/preview/itempreviewview.cpp:180
+#, kde-format
+msgid "Add a focus point"
+msgstr ""
+
+#: core/app/views/preview/itempreviewview.cpp:181
+#, fuzzy, kde-format
+msgid "Show focus points"
+msgstr "Hiện trên bảng trái"
+
+#: core/app/views/preview/itempreviewview.cpp:186
 #, fuzzy, kde-format
 msgid "Show Fullscreen"
 msgstr "Thoát khỏi chế độ toàn màn hình"
@@ -26592,7 +26609,7 @@ msgstr ""
 "vị trí khác.<p><b>%1</b></p></qt>"
 
 #: core/libs/database/utils/widgets/dbstatdlg.cpp:54
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:304
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:303
 #, fuzzy, kde-format
 msgid "Database Statistics"
 msgstr "Thống kê"
@@ -39207,83 +39224,83 @@ msgstr "Ralf Holzer"
 msgid "Developer (2004)"
 msgstr "Nhà phát triển"
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:263
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:262
 #, fuzzy, kde-format
 msgid "Components Information"
 msgstr "Ghi chú :"
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:269
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:268
 #, fuzzy, kde-format
 msgid "Supported RAW Cameras"
 msgstr "Máy ảnh được lắp"
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:273
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:272
 #, kde-format
 msgid "List of Detected Hardware"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:277
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:276
 #, fuzzy, kde-format
 msgid "Donate..."
 msgstr "Tăng tiền..."
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:281
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:280
 #, kde-format
 msgid "Recipes Book..."
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:285
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:284
 #, kde-format
 msgid "Contribute..."
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:289
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:288
 #, fuzzy, kde-format
 msgid "Check for New Version..."
 msgstr "&Lưu dạng..."
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:293
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:292
 #, fuzzy, kde-format
 #| msgid "Kipi Plugins Handbook"
 msgid "Online Handbook..."
 msgstr "Sổ tay phần bổ sung Kipi"
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:332
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:331
 #, kde-format
 msgid "Toggle Left Side-bar"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:337
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:336
 #, kde-format
 msgid "Toggle Right Side-bar"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:342
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:341
 #, kde-format
 msgid "Previous Left Side-bar Tab"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:347
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:346
 #, kde-format
 msgid "Next Left Side-bar Tab"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:352
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:351
 #, kde-format
 msgid "Previous Right Side-bar Tab"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:357
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:356
 #, kde-format
 msgid "Next Right Side-bar Tab"
 msgstr ""
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:381
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:380
 #, fuzzy, kde-format
 msgid "Show Statusbar"
 msgstr "Hiện các ảnh mẫu"
 
-#: core/libs/widgets/mainview/dxmlguiwindow.cpp:435
+#: core/libs/widgets/mainview/dxmlguiwindow.cpp:434
 #, fuzzy, kde-format
 msgctxt "general keyboard shortcuts"
 msgid "General"

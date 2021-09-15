@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-14 01:47+0000\n"
+"POT-Creation-Date: 2021-09-15 01:47+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Hieu Duc Hoang <hieu.d.hoang@gmail.com>\n"
 "Language-Team: vietnamese <vi@i18n.kde.org>\n"
@@ -8752,9 +8752,10 @@ msgstr ""
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
 #. i18n: context: Actions (Filters), ActionCollection (Krita)
-#: krita/krita.action:791 plugins/filters/threshold/threshold.action:4
+#: krita/krita.action:791 plugins/dockers/logdocker/LogDockerDock.cpp:142
+#: plugins/filters/threshold/threshold.action:4
 #, fuzzy, kde-format
-msgctxt "action"
+msgctxt "Filter as an effect"
 msgid "Filters"
 msgstr "Các bộ lọc:"
 
@@ -18602,8 +18603,8 @@ msgid ""
 msgstr ""
 
 #: libs/ui/animation/KisDlgImportVideoAnimation.cpp:124
-#: plugins/assistants/Assistants/SplineAssistant.cc:222
 #, fuzzy, kde-format
+msgctxt "An interpolation method"
 msgid "Spline"
 msgstr "Hình sin"
 
@@ -19782,13 +19783,13 @@ msgstr "Nhập Tài liệu"
 #. i18n: ectx: property (text), widget (QLabel, lblFilter)
 #. i18n: ectx: property (text), widget (QLabel, videoScaleFilterLabel)
 #. i18n: ectx: property (text), widget (QLabel, scaleFilterLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #: libs/ui/animation/VideoImportDialog.ui:528
 #: libs/ui/animation/wdg_animationrenderer.ui:206
 #: libs/ui/imagesize/wdg_layersize.ui:119
-#: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:28
 #: plugins/python/documenttools/tools/scaletool/scaletool.py:43
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgctxt "Resize intepolation method list label"
 msgid "Filter:"
 msgstr "Bộ lọc:"
 
@@ -24976,7 +24977,7 @@ msgstr "Cỡ Ảnh "
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, constrainProportionsCkb)
 #: libs/ui/imagesize/wdg_canvassize.ui:132
-#: libs/ui/imagesize/wdg_imagesize.ui:336
+#: libs/ui/imagesize/wdg_imagesize.ui:339
 #: libs/ui/imagesize/wdg_layersize.ui:139
 #: plugins/impex/webp/dlg_webp_import.ui:232
 #, fuzzy, kde-format
@@ -24986,7 +24987,7 @@ msgstr "&Bó buộc tỉ lệ"
 #. i18n: ectx: property (text), widget (QCheckBox, constrainProportionsCkb)
 #. i18n: ectx: property (toolTip), widget (QPushButton, buttonLockRatio)
 #: libs/ui/imagesize/wdg_canvassize.ui:135
-#: libs/ui/imagesize/wdg_imagesize.ui:339
+#: libs/ui/imagesize/wdg_imagesize.ui:342
 #: libs/ui/imagesize/wdg_layersize.ui:142
 #: plugins/dockers/recorder/recorder_export.ui:459
 #: plugins/impex/webp/dlg_webp_import.ui:235
@@ -25057,11 +25058,10 @@ msgid "Pixel Dimensions"
 msgstr "&Kích thước bằng điểm ảnh"
 
 #. i18n: ectx: property (text), widget (QLabel, lblPixelFilter)
-#. i18n: ectx: property (text), widget (QLabel, label_10)
 #: libs/ui/imagesize/wdg_imagesize.ui:81
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:322
 #, fuzzy, kde-format
 #| msgid "Filter:"
+msgctxt "Resize intepolation method list label"
 msgid "&Filter:"
 msgstr "Bộ lọc:"
 
@@ -25085,7 +25085,7 @@ msgid "Wid&th:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, adjustPrintSizeSeparatelyCkb)
-#: libs/ui/imagesize/wdg_imagesize.ui:349
+#: libs/ui/imagesize/wdg_imagesize.ui:352
 #, kde-format
 msgid "Adjust print size separately"
 msgstr ""
@@ -29314,7 +29314,7 @@ msgstr "Cỡ chổi"
 
 #: libs/ui/tool/strokes/kis_filter_stroke_strategy.cpp:139
 #, fuzzy, kde-format
-msgctxt "(qtundo-format)"
+msgctxt "(qtundo-format) Filter as an effect"
 msgid "Filter \"%1\""
 msgstr "&Trắng"
 
@@ -30303,7 +30303,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QToolButton, btnLock)
 #: libs/ui/widgets/kis_categorized_list_view.cpp:154
 #: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:57
-#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:66
 #, fuzzy, kde-format
 msgid "Lock"
 msgstr "kết nối"
@@ -32446,8 +32445,8 @@ msgid "A&vailable actions:"
 msgstr "Tính chất Lớp"
 
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:1026
-#: libs/widgetutils/xmlgui/kedittoolbar.cpp:1045
 #, fuzzy, kde-format
+msgctxt "Filter as in showing only matching items"
 msgid "Filter"
 msgstr "Chọn bộ lọc"
 
@@ -32455,6 +32454,11 @@ msgstr "Chọn bộ lọc"
 #, fuzzy, kde-format
 msgid "Curr&ent actions:"
 msgstr "Định &hướng"
+
+#: libs/widgetutils/xmlgui/kedittoolbar.cpp:1045
+#, fuzzy, kde-format
+msgid "Filter"
+msgstr "Chọn bộ lọc"
 
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:1186
 #, fuzzy, kde-format
@@ -33248,6 +33252,12 @@ msgstr "Thông thường"
 msgid "Spline assistant"
 msgstr "Khoảng cách:"
 
+#: plugins/assistants/Assistants/SplineAssistant.cc:222
+#, fuzzy, kde-format
+msgctxt "A type of drawing assistants"
+msgid "Spline"
+msgstr "Hình sin"
+
 #: plugins/assistants/Assistants/TwoPointAssistant.cc:27
 #, fuzzy, kde-format
 msgid "Two point assistant"
@@ -33979,9 +33989,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1360
-#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:33
-#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:204
 #, fuzzy, kde-format
+msgctxt "Brightness in HSI color model"
 msgid "Intensity"
 msgstr "Mô tả:"
 
@@ -35216,11 +35225,6 @@ msgstr ""
 msgid "Tile Engine"
 msgstr "Khoảng màu"
 
-#: plugins/dockers/logdocker/LogDockerDock.cpp:142
-#, fuzzy, kde-format
-msgid "Filters"
-msgstr "Các bộ lọc:"
-
 #: plugins/dockers/logdocker/LogDockerDock.cpp:146
 #, fuzzy, kde-format
 #| msgid "Color Management"
@@ -35538,8 +35542,8 @@ msgid "Add foreground color"
 msgstr "Màu Mặt"
 
 #: plugins/dockers/presetdocker/presetdocker_dock.cpp:26
-#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:62
 #, fuzzy, kde-format
+msgctxt "@title:window Brush presets chooser docker"
 msgid "Brush Presets"
 msgstr "Định sẵn:"
 
@@ -35775,6 +35779,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, labelFpsInput)
 #: plugins/dockers/recorder/recorder_export.ui:490
 #, fuzzy, kde-format
+msgctxt "Input FPS of recorded timelapses."
 msgid "Input FPS:"
 msgstr "Đầu ra"
 
@@ -38779,6 +38784,11 @@ msgstr "Chọn một khu vực hình chữ nhật"
 msgid "Brushes"
 msgstr "Chổi"
 
+#: plugins/extensions/resourcemanager/dlg_embed_tags.cpp:62
+#, fuzzy, kde-format
+msgid "Brush Presets"
+msgstr "Định sẵn:"
+
 #: plugins/extensions/resourcemanager/DlgResourceManager.cpp:36
 #, fuzzy, kde-format
 msgid "Manage Resources"
@@ -39249,7 +39259,6 @@ msgstr "Mô hình màu hiện tại:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpSource)
 #: plugins/extensions/separate_channels/wdg_separations.ui:62
-#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:67
 #, kde-format
 msgid "Source"
 msgstr "Nguồn"
@@ -40419,6 +40428,13 @@ msgstr "Nghịch đảo"
 #, fuzzy, kde-format
 msgid "Foreground:"
 msgstr "Màu Mặt"
+
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:33
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:204
+#, fuzzy, kde-format
+msgctxt "Brightness in Halftone Widget"
+msgid "Intensity"
+msgstr "Mô tả:"
 
 #: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:34
 #, fuzzy, kde-format
@@ -44691,6 +44707,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterStrength)
 #: plugins/impex/webp/dlg_webp_export.ui:330
 #, fuzzy, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Strength"
 msgstr "Thiết lập Màu"
 
@@ -44705,6 +44722,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterSharpness)
 #: plugins/impex/webp/dlg_webp_export.ui:353
 #, fuzzy, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Sharpness"
 msgstr "Thiết lập Màu"
 
@@ -44721,6 +44739,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, lblFilterType)
 #: plugins/impex/webp/dlg_webp_export.ui:376
 #, fuzzy, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Filter Type"
 msgstr "Một phần"
 
@@ -44804,6 +44823,7 @@ msgstr "Tính chất:"
 #. i18n: ectx: property (text), widget (QLabel, lblPreprocessing)
 #: plugins/impex/webp/dlg_webp_export.ui:546
 #, fuzzy, kde-format
+msgctxt "Filter options specifically for WebP"
 msgid "Preprocessing Filter"
 msgstr "Hậu xử lí"
 
@@ -45206,7 +45226,6 @@ msgstr ""
 msgid "180°"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QRadioButton, optionRotation)
 #. i18n: ectx: property (title), widget (QGroupBox, rotationGroup)
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:63
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:61
@@ -45218,7 +45237,6 @@ msgstr ""
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:37
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:40
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:52
-#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:253
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:700
 #, kde-format
 msgid "Rotation"
@@ -45455,6 +45473,13 @@ msgstr "Độ sắc:"
 msgid "Lightness Strength"
 msgstr "Chỉ làm sáng"
 
+#: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:67
+#, fuzzy, kde-format
+#| msgid "Source"
+msgctxt "Color source"
+msgid "Source"
+msgstr "Nguồn"
+
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:68
 #, kde-format
 msgid "Darken"
@@ -45467,6 +45492,7 @@ msgstr "Màu Mặt"
 
 #: plugins/paintops/defaultpaintops/brush/kis_brushop_settings_widget.cpp:69
 #, fuzzy, kde-format
+msgctxt "Mixing of colors"
 msgid "Mix"
 msgstr "Trình Trộn"
 
@@ -45601,19 +45627,20 @@ msgid "Deform Mode"
 msgstr "Mức độ:"
 
 #. i18n: ectx: property (text), widget (QRadioButton, growBtn)
-#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:134
 #: plugins/paintops/deform/wdgdeformoptions.ui:48
-#: plugins/tools/tool_crop/kis_tool_crop.cc:119
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:155
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Grow"
+msgctxt "Grow as in deform brush engine"
 msgid "Grow"
 msgstr "Làm to lên"
 
 #. i18n: ectx: property (text), widget (QRadioButton, shrinkBtn)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:135
 #: plugins/paintops/deform/wdgdeformoptions.ui:55
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Shrink"
+msgctxt "Shrink as in deform brush engine"
 msgid "Shrink"
 msgstr "Làm nhỏ lại"
 
@@ -45654,6 +45681,7 @@ msgstr "Ống kính"
 
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:141
 #, fuzzy, kde-format
+msgctxt "Rearrange the positions of the pixels under the cursor"
 msgid "Color Deformation"
 msgstr "Thông tin về công cụ"
 
@@ -45665,6 +45693,7 @@ msgstr "Tuỳ chọn Hình học"
 #. i18n: ectx: property (text), widget (QRadioButton, colorBtn)
 #: plugins/paintops/deform/wdgdeformoptions.ui:86
 #, fuzzy, kde-format
+msgctxt "Rearrange the pixels positions under the cursor"
 msgid "Color deformation"
 msgstr "Thông tin về công cụ"
 
@@ -46556,9 +46585,18 @@ msgstr "Khoảng:"
 msgid "Preserve alpha channel"
 msgstr "Từ màu sang độ trong suốt"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:28
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgctxt "Filter as an effect"
+msgid "Filter:"
+msgstr "Bộ lọc:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpFilterOptions)
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:62
 #, fuzzy, kde-format
+msgctxt "Filter as an effect"
 msgid "Filter Settings"
 msgstr "Thiết lập Màu"
 
@@ -46637,6 +46675,7 @@ msgstr "Các chổi có sẵn"
 #. i18n: ectx: property (title), widget (QGroupBox, grpBrushMode)
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:226
 #, fuzzy, kde-format
+msgctxt "Predefined Brush tip mode"
 msgid "Brush mode"
 msgstr "Chổi"
 
@@ -46698,7 +46737,8 @@ msgstr "Chế độ đo khoảng cách:"
 #. i18n: ectx: property (text), widget (QLabel, lblSpacing_2)
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:179
 #, fuzzy, kde-format
-msgid "Cutoff"
+msgctxt "Texture lightness range cutoff range slider"
+msgid "Cutoff:"
 msgstr "Cà phê"
 
 #. i18n: ectx: property (text), widget (QLabel, lblNeutralPoint)
@@ -47481,8 +47521,15 @@ msgstr ""
 msgid "Blending Mode:"
 msgstr "Chế độ chân dung"
 
+#: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:66
+#, fuzzy, kde-format
+msgctxt "Lock Drawing angle at start of each stroke"
+msgid "Lock"
+msgstr "kết nối"
+
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:72
 #, fuzzy, kde-format
+msgctxt "Smoothing Drawing angle when a stroke is making a sharp turn"
 msgid "Fan Corners"
 msgstr "Góc tròn"
 
@@ -47525,6 +47572,7 @@ msgstr "Đá"
 #: plugins/paintops/mypaint/MyPaintBrushOption.h:35
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:243
 #, fuzzy, kde-format
+msgctxt "Drawing Angle"
 msgid "Direction"
 msgstr "Trình chọn &màu"
 
@@ -48197,6 +48245,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, optionTilt)
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:230
 #, fuzzy, kde-format
+msgctxt "Tilt elevation"
 msgid "Tilt"
 msgstr "Nghiêng X"
 
@@ -48216,6 +48265,14 @@ msgid ""
 "determine the X and Y-axes, while tilt-elevation is used for the Z-axis.</"
 "p></body></html>"
 msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, optionRotation)
+#: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:253
+#, fuzzy, kde-format
+#| msgid "Rotation"
+msgctxt "Pen Rotation"
+msgid "Rotation"
+msgstr "Xoay"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, optionMix)
 #: plugins/paintops/tangentnormal/wdgtangenttiltoption.ui:260
@@ -50164,6 +50221,7 @@ msgstr "Hiện lớp gốc"
 
 #: plugins/python/highpass/highpass.py:52
 #, fuzzy
+msgctxt "Filter radius in Highpass filter settings"
 msgid "Filter radius:"
 msgstr "Trình chọn &màu"
 
@@ -52348,6 +52406,7 @@ msgstr "&Chọn Ảnh"
 
 #: plugins/tools/selectiontools/KisToolSelectMagnetic.cc:659
 #, fuzzy, kde-format
+msgctxt "Filter radius in Magnetic Select Tool settings"
 msgid "Filter Radius: "
 msgstr "Trình chọn &màu"
 
@@ -53028,6 +53087,15 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Center"
 msgstr "Tâm:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, boolGrow)
+#: plugins/tools/tool_crop/kis_tool_crop.cc:119
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:155
+#, fuzzy, kde-format
+#| msgid "Grow"
+msgctxt "Grow as in crop tool"
+msgid "Grow"
+msgstr "Làm to lên"
 
 #: plugins/tools/tool_crop/kis_tool_crop.cc:122
 #, fuzzy, kde-format
@@ -53716,6 +53784,13 @@ msgstr ""
 msgid "Mesh"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:322
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgid "&Filter:"
+msgstr "Bộ lọc:"
+
 #. i18n: ectx: property (toolTip), widget (QToolButton, btnTransformAroundPivotPoint)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:341
 #, kde-format
@@ -54197,6 +54272,11 @@ msgstr "Công cụ &Zoom"
 msgctxt "action"
 msgid "Reference Images Tool"
 msgstr "Ảnh tham chiếu:"
+
+#, fuzzy
+#~ msgctxt "action"
+#~ msgid "Filters"
+#~ msgstr "Các bộ lọc:"
 
 #, fuzzy
 #~| msgid "Auto"

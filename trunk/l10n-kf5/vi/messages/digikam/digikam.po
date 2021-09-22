@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-21 00:14+0000\n"
+"POT-Creation-Date: 2021-09-22 00:16+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -545,6 +545,7 @@ msgid "Open..."
 msgstr "Mở bằng"
 
 #: core/app/items/utils/contextmenuhelper.cpp:282
+#: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:124
 #: core/showfoto/folderview/showfotofolderviewlist.cpp:129
 #, fuzzy, kde-format
 #| msgid "Open folder"
@@ -43448,13 +43449,20 @@ msgstr "Đường dẫn"
 msgid "Enter bookmark path here..."
 msgstr "Hãy nhập đoạn vào đây !"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:85
+#: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:97
 #, kde-format
 msgctxt "@info"
 msgid "You can add or remove bookmarked places here."
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:135
+#: core/showfoto/folderview/showfotofolderviewbookmarklist.cpp:117
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:405
+#, fuzzy, kde-format
+msgctxt "@title"
+msgid "Bookmarks"
+msgstr "Thêm máy ảnh.."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:136
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Places"
@@ -43462,30 +43470,48 @@ msgstr "Tương đối"
 
 #: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:145
 #, fuzzy, kde-format
+msgctxt "action"
+msgid "Add Bookmark"
+msgstr "Thêm máy ảnh.."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:146
+#, fuzzy, kde-format
 msgctxt "@info"
 msgid "Add new bookmark to the list"
 msgstr "Thêm mục mới vào tập ảnh hiện thời."
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:147
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:162
+#, fuzzy, kde-format
+msgctxt "action"
+msgid "Del Bookmark"
+msgstr "Thêm máy ảnh.."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:163
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Remove selected bookmark from the list"
 msgstr "Canh lề đoạn bên phải"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:149
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:180
+#, fuzzy, kde-format
+msgctxt "action"
+msgid "Edit Bookmark"
+msgstr "Thêm máy ảnh.."
+
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:181
 #, fuzzy, kde-format
 msgctxt "@info"
 msgid "Edit current bookmark from the list"
 msgstr "Xoá các điều chọn"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:237
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:290
 #, fuzzy, kde-format
 msgctxt "@title: window"
 msgid "Add New Bookmark"
 msgstr "Thêm máy ảnh.."
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:238
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:293
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:291
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:344
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -43494,74 +43520,68 @@ msgid ""
 "already exists in the list with name \"%2\"."
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:251
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:304
 #, fuzzy, kde-format
 msgctxt "@title: window"
 msgid "Confirm Bookmark Deletion"
 msgstr "Độ tương quan:"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:252
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:305
 #, kde-format
 msgctxt "@info"
 msgid "Are you sure you want to remove the bookmark \"%1\"?"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:292
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:343
 #, fuzzy, kde-format
 msgctxt "@title: window"
 msgid "Edit Bookmark"
 msgstr "Thêm máy ảnh.."
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:355
-#, fuzzy, kde-format
-msgctxt "@title"
-msgid "Bookmarks"
-msgstr "Thêm máy ảnh.."
-
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:386
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:436
 #, kde-format
 msgctxt "@title"
 msgid "Usual"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:390
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:440
 #, kde-format
 msgctxt "@item"
 msgid "Home"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:395
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:445
 #, fuzzy, kde-format
 msgctxt "@item"
 msgid "Pictures"
 msgstr "Vẽ biếm hoạ"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:400
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:450
 #, fuzzy, kde-format
 msgctxt "@item"
 msgid "Documents"
 msgstr "Tài liệu cần mở."
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:405
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:455
 #, fuzzy, kde-format
 msgctxt "@item"
 msgid "Downloads"
 msgstr "Tải về"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:410
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:460
 #, fuzzy, kde-format
 #| msgid "Open folder"
 msgctxt "@item"
 msgid "Desktop"
 msgstr "Mở thư mục"
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:415
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:465
 #, kde-format
 msgctxt "@item"
 msgid "Music"
 msgstr ""
 
-#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:420
+#: core/showfoto/folderview/showfotofolderviewbookmarks.cpp:470
 #, fuzzy, kde-format
 msgctxt "@item"
 msgid "Videos"

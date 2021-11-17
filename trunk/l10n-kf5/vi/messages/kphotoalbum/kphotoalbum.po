@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-15 00:26+0000\n"
+"POT-Creation-Date: 2021-11-17 00:25+0000\n"
 "PO-Revision-Date: 2012-01-16 16:58+0700\n"
 "Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
 "Language-Team: Vietnamese <kde-i18n-vi@kde.org>\n"
@@ -1338,24 +1338,122 @@ msgstr ""
 msgid "Following files could not be read:"
 msgstr ""
 
-#: Exif/InfoDialog.cpp:30
+#: Exif/InfoDialog.cpp:32
 #, fuzzy, kde-format
 #| msgid "EXIF Information"
 msgctxt "@title:window"
-msgid "Exif Information"
+msgid "Exif Information and file metadata"
 msgstr "Thông tin EXIF"
 
-#: Exif/InfoDialog.cpp:65
+#: Exif/InfoDialog.cpp:72
 #, kde-format
 msgctxt ""
 "@label:textbox The search box allows the user to filter by exif label names"
 msgid "Filter labels ..."
 msgstr ""
 
-#: Exif/InfoDialog.cpp:69
+#: Exif/InfoDialog.cpp:76
 #, kde-format
 msgid "IPTC character set:"
 msgstr ""
+
+#: Exif/InfoDialog.cpp:94
+#, fuzzy, kde-format
+#| msgid "Exif Info"
+msgid "Exif info"
+msgstr "Thông tin EXIF"
+
+#: Exif/InfoDialog.cpp:95
+#, fuzzy, kde-format
+#| msgid "AVI video support"
+msgid "File metadata"
+msgstr "Hỗ trợ ảnh động AVI"
+
+#: Exif/MetaDataDisplay.cpp:35
+#, kde-format
+msgid "Absolute path:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:40
+#, kde-format
+msgid "MIME type:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:44 Settings/ViewerSizeConfig.cpp:26
+#, kde-format
+msgid "Size:"
+msgstr "Cỡ :"
+
+#: Exif/MetaDataDisplay.cpp:48
+#, kde-format
+msgid "Created:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:52
+#, kde-format
+msgid "Changed:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:56
+#, kde-format
+msgid "Owner:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:60
+#, fuzzy, kde-format
+#| msgid "Group name:"
+msgid "Group:"
+msgstr "Tên nhóm:"
+
+#: Exif/MetaDataDisplay.cpp:64
+#, kde-format
+msgid "Permissions:"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:99
+#, kde-format
+msgid "Open directory with a file manager"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:106
+#, fuzzy, kde-format
+#| msgid "%1 (by %2)"
+msgctxt ""
+"File size composed of a pre-formatted (already localized) human-readable "
+"file size (%1) and the number of bytes (%2)"
+msgid "%1 (%2 B)"
+msgstr "%1 (của %2)"
+
+#: Exif/MetaDataDisplay.cpp:120 Exif/MetaDataDisplay.cpp:126
+#: Exif/MetaDataDisplay.cpp:132
+#, fuzzy, kde-format
+#| msgid "or"
+msgctxt "File permission shortcut for \"reading allowed\""
+msgid "r"
+msgstr "hoặc"
+
+#: Exif/MetaDataDisplay.cpp:122 Exif/MetaDataDisplay.cpp:128
+#: Exif/MetaDataDisplay.cpp:134
+#, kde-format
+msgctxt "File permission shortcut for \"writing allowed\""
+msgid "w"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:124 Exif/MetaDataDisplay.cpp:130
+#: Exif/MetaDataDisplay.cpp:136
+#, kde-format
+msgctxt "File permission shortcut for \"executing allowed\""
+msgid "x"
+msgstr ""
+
+#: Exif/MetaDataDisplay.cpp:153
+#, fuzzy, kde-format
+#| msgid "%1 (by %2)"
+msgctxt ""
+"File permissions string compiled from a parsed variant (e.g. \"rw-rw-r--\", "
+"%1) and it's octal representation (e.g. \"0644\")"
+msgid "%1 (%2)"
+msgstr "%1 (của %2)"
 
 #: Exif/ReReadDialog.cpp:28
 #, fuzzy, kde-format
@@ -4002,8 +4100,9 @@ msgid "Show Demo Videos"
 msgstr "Hiện ảnh động"
 
 #: MainWindow/Window.cpp:988 Viewer/ViewerWidget.cpp:173
-#, kde-format
-msgid "Show Exif Info"
+#, fuzzy, kde-format
+#| msgid "Show Exif Info"
+msgid "Show Exif Info and file metadata"
 msgstr "Hiện thông tin EXIF"
 
 #: MainWindow/Window.cpp:991
@@ -5655,11 +5754,6 @@ msgstr "Hậu phương co sở dữ liệu"
 #, kde-format
 msgid "Launch in full screen"
 msgstr "Khởi chạy trên toàn màn hình"
-
-#: Settings/ViewerSizeConfig.cpp:26
-#, kde-format
-msgid "Size:"
-msgstr "Cỡ :"
 
 #: ThumbnailView/Delegate.cpp:237
 #, fuzzy, kde-format

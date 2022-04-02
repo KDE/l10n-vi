@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-04-01 00:46+0000\n"
+"POT-Creation-Date: 2022-04-02 00:41+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -4636,7 +4636,7 @@ msgid ""
 "Progressive_Graphics_File'>this page</a>.</p>"
 msgstr ""
 
-#: core/dplugins/bqm/convert/converttopng/converttopng.cpp:67
+#: core/dplugins/bqm/convert/converttopng/converttopng.cpp:68
 #, kde-format
 msgid ""
 "<b>If conversion to PNG fails, this may be due to the color profile check. "
@@ -5775,36 +5775,70 @@ msgstr "Miền màu"
 msgid "<p>This Batch Queue Manager tool can rotate images.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:58
+#: core/dplugins/dimg/heif/dimgheifexportsettings.cpp:77
+#, fuzzy, kde-format
+msgid "Lossless HEIF files"
+msgstr "Tệp JPEG 2000 không mất gì"
+
+#: core/dplugins/dimg/heif/dimgheifexportsettings.cpp:79
+#, fuzzy, kde-format
+msgid ""
+"<p>Toggle lossless compression for HEIF images.</p><p>If this option is "
+"enabled, a lossless method will be used to compress HEIF pictures.</p>"
+msgstr ""
+"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
+"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
+
+#: core/dplugins/dimg/heif/dimgheifexportsettings.cpp:86
+#, fuzzy, kde-format
+msgid "HEIF quality:"
+msgstr "Chất lượng JPEG:"
+
+#: core/dplugins/dimg/heif/dimgheifexportsettings.cpp:88
+#, fuzzy, kde-format
+msgid ""
+"<p>The quality value for HEIF images:</p><p><b>1</b>: low quality (high "
+"compression and small file size)<br/><b>50</b>: medium quality<br/><b>75</"
+"b>: good quality (default)<br/><b>100</b>: high quality (no compression and "
+"large file size)</p><p><b>Note: HEIF is not a lossless image compression "
+"format when you use this setting.</b></p>"
+msgstr ""
+"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
+"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
+"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
+"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
+"dạng nén ảnh không mất gì.</b>"
+
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:59
 #, fuzzy, kde-format
 msgid "HEIF loader"
 msgstr "Nén tệp TIFF"
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:73
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libheif codec"
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:78
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:79
 #, kde-format
 msgid "This library is not present on your system."
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:86
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:87
 #, kde-format
 msgid ""
 "This library is available on your system with a maximum color depth support "
 "of %1 bits."
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:91
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:92
 #, kde-format
 msgid ""
 "This library is available on your system but is not able to encode image "
 "with a suitable color depth."
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:97
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:98
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libheif codec.</"
@@ -5820,39 +5854,15 @@ msgid ""
 "File Format</a> for details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:127
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:137
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:128
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:138
 #, kde-format
 msgid "High efficiency image coding"
 msgstr ""
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:128
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:138
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:129
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:139
 #: core/dplugins/dimg/imagemagick/dimgimagemagickplugin.cpp:166
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:119
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:124
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:129
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:106
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:110
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:114
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:118
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:122
-#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:107
-#: core/dplugins/dimg/png/dimgpngplugin.cpp:115
-#: core/dplugins/dimg/raw/dimgrawplugin.cpp:113
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:120
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:124
-#: core/libs/dplugins/core/dplugindimg.cpp:67
-#: core/libs/dplugins/core/dplugindimg.cpp:79
-#, fuzzy, kde-format
-#| msgid "yes"
-msgctxt "@info: can read file format"
-msgid "yes"
-msgstr "có"
-
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:130
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:140
-#: core/dplugins/dimg/imagemagick/dimgimagemagickplugin.cpp:169
 #: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:120
 #: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:125
 #: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:130
@@ -5863,8 +5873,32 @@ msgstr "có"
 #: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:123
 #: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:108
 #: core/dplugins/dimg/png/dimgpngplugin.cpp:116
+#: core/dplugins/dimg/raw/dimgrawplugin.cpp:113
 #: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:121
 #: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:125
+#: core/libs/dplugins/core/dplugindimg.cpp:67
+#: core/libs/dplugins/core/dplugindimg.cpp:79
+#, fuzzy, kde-format
+#| msgid "yes"
+msgctxt "@info: can read file format"
+msgid "yes"
+msgstr "có"
+
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:131
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:141
+#: core/dplugins/dimg/imagemagick/dimgimagemagickplugin.cpp:169
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:121
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:126
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:131
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:108
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:112
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:116
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:120
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:124
+#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:109
+#: core/dplugins/dimg/png/dimgpngplugin.cpp:117
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:122
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:126
 #: core/libs/dplugins/core/dplugindimg.cpp:70
 #: core/libs/dplugins/core/dplugindimg.cpp:82
 #, fuzzy, kde-format
@@ -5873,8 +5907,8 @@ msgctxt "@info: can write file format"
 msgid "yes"
 msgstr "có"
 
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:132
-#: core/dplugins/dimg/heif/dimgheifplugin.cpp:142
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:133
+#: core/dplugins/dimg/heif/dimgheifplugin.cpp:143
 #: core/dplugins/dimg/imagemagick/dimgimagemagickplugin.cpp:170
 #: core/libs/dplugins/core/dplugindimg.cpp:71
 #: core/libs/dplugins/core/dplugindimg.cpp:83
@@ -5913,17 +5947,85 @@ msgctxt "@info: cannot read file format"
 msgid "no"
 msgstr "không"
 
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:58
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:85
+#: core/dplugins/generic/webservices/smugmug/smugwidget.cpp:183
+#, kde-format
+msgid "JPEG quality:"
+msgstr "Chất lượng JPEG:"
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:87
+#, fuzzy, kde-format
+msgid ""
+"<p>The JPEG quality:</p><p><b>1</b>: low quality (high compression and small "
+"file size)<br/><b>50</b>: medium quality<br/><b>75</b>: good quality "
+"(default)<br/><b>100</b>: high quality (no compression and large file size)</"
+"p><p><b>Note: JPEG always uses lossy compression.</b></p>"
+msgstr ""
+"<p>Giá trị chất lương cho ảnh JPEG:<p><b>1</b>: chất lượng thấp (cấp nén cao "
+"thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất lượng tốt "
+"(mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ tệp "
+"lớn)<p><b>Ghi chú : JPEG sử dụng một thuật toán nén ảnh mất gì.</b>"
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:96
+#, fuzzy, kde-format
+msgid ""
+"<font color='red'><i>Warning: <a href='https://en.wikipedia.org/wiki/"
+"JPEG'>JPEG</a> is a lossy image compression format.</i></font>"
+msgstr ""
+"<qt><font size=-1 color=\"red\"><i>Cảnh báo : <a href='http://en.wikipedia."
+"org/wiki/JPEG'>JPEG</a> là một định dạng ảnh <br>nén mất gì.</p></i></qt>"
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:106
+#, kde-format
+msgid "Chroma subsampling:"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:109
+#, kde-format
+msgid "4:4:4 (best quality)"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:110
+#, kde-format
+msgid "4:2:2 (good quality)"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:111
+#, kde-format
+msgid "4:2:0 (low quality)"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:112
+#, kde-format
+msgid "4:1:1 (low quality)"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegexportsettings.cpp:113
+#, kde-format
+msgid ""
+"<p>Chroma subsampling reduces file size by taking advantage of the eye's "
+"lesser sensitivity to color resolution. How perceptible the difference is "
+"depends on the image - large photos will generally show no difference, while "
+"sharp, down-scaled pixel graphics may lose fine color detail.</"
+"p><p><b>4:4:4</b> - No chroma subsampling, highest quality but lowest "
+"compression.</p><p><b>4:2:2</b> - Chroma halved horizontally, average "
+"compression, average quality.</p><p><b>4:2:0</b> - Chroma quartered in 2x2 "
+"blocks, high compression but low quality.</p><p><b>4:1:1</b> - Chroma "
+"quartered in 4x1 blocks, high compression but low quality.</p><p><b>Note: "
+"JPEG always uses lossy compression.</b></p>"
+msgstr ""
+
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:59
 #, fuzzy, kde-format
 msgid "JPEG loader"
 msgstr "Tệp RAW"
 
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:73
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libjpeg codec"
 msgstr ""
 
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:78
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:79
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libjpeg codec.</"
@@ -5935,26 +6037,60 @@ msgid ""
 "documentation</a> for details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:118
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:123
-#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:128
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:119
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:124
+#: core/dplugins/dimg/jpeg/dimgjpegplugin.cpp:129
 #, fuzzy, kde-format
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG image"
 msgstr "Chất lượng JPEG 2000:"
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:58
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000exportsettings.cpp:77
+#, fuzzy, kde-format
+msgid "Lossless JPEG 2000 files"
+msgstr "Tệp JPEG 2000 không mất gì"
+
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000exportsettings.cpp:79
+#, fuzzy, kde-format
+msgid ""
+"<p>Toggle lossless compression for JPEG 2000 images.</p><p>If this option is "
+"enabled, a lossless method will be used to compress JPEG 2000 pictures.</p>"
+msgstr ""
+"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
+"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
+
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000exportsettings.cpp:86
+#, kde-format
+msgid "JPEG 2000 quality:"
+msgstr "Chất lượng JPEG 2000:"
+
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000exportsettings.cpp:88
+#, fuzzy, kde-format
+msgid ""
+"<p>The quality value for JPEG 2000 images:</p><p><b>1</b>: low quality (high "
+"compression and small file size)<br/><b>50</b>: medium quality<br/><b>75</"
+"b>: good quality (default)<br/><b>100</b>: high quality (no compression and "
+"large file size)</p><p><b>Note: JPEG 2000 is not a lossless image "
+"compression format when you use this setting.</b></p>"
+msgstr ""
+"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
+"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
+"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
+"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
+"dạng nén ảnh không mất gì.</b>"
+
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:59
 #, fuzzy, kde-format
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG-2000 loader"
 msgstr "Chất lượng JPEG 2000:"
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:73
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libjasper codec"
 msgstr ""
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:78
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:79
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libjasper codec</"
@@ -5967,36 +6103,70 @@ msgid ""
 "details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:105
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:109
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:106
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:110
 #, fuzzy, kde-format
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG-2000 image"
 msgstr "Chất lượng JPEG 2000:"
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:113
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:117
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:114
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:118
 #, fuzzy, kde-format
 #| msgid "JPEG 2000 quality:"
 msgid "JPEG-2000 stream"
 msgstr "Chất lượng JPEG 2000:"
 
-#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:121
+#: core/dplugins/dimg/jpeg2000/dimgjpeg2000plugin.cpp:122
 #, kde-format
 msgid "JPEG-2000 verification model"
 msgstr ""
 
-#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:58
+#: core/dplugins/dimg/pgf/dimgpgfexportsettings.cpp:77
+#, fuzzy, kde-format
+msgid "Lossless PGF files"
+msgstr "Tệp JPEG 2000 không mất gì"
+
+#: core/dplugins/dimg/pgf/dimgpgfexportsettings.cpp:79
+#, fuzzy, kde-format
+msgid ""
+"<p>Toggle lossless compression for PGF images.</p><p>If this option is "
+"enabled, a lossless method will be used to compress PGF pictures.</p>"
+msgstr ""
+"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
+"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
+
+#: core/dplugins/dimg/pgf/dimgpgfexportsettings.cpp:86
+#, fuzzy, kde-format
+msgid "PGF quality:"
+msgstr "Chất lượng JPEG:"
+
+#: core/dplugins/dimg/pgf/dimgpgfexportsettings.cpp:88
+#, fuzzy, kde-format
+msgid ""
+"<p>The quality value for PGF images:</p><p><b>1</b>: high quality (no "
+"compression and large file size)<br/><b>3</b>: good quality (default)<br/"
+"><b>6</b>: medium quality<br/><b>9</b>: low quality (high compression and "
+"small file size)</p><p><b>Note: PGF is not a lossless image compression "
+"format when you use this setting.</b></p>"
+msgstr ""
+"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
+"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
+"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
+"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
+"dạng nén ảnh không mất gì.</b>"
+
+#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:59
 #, kde-format
 msgid "PGF loader"
 msgstr ""
 
-#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:73
+#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libpgf codec"
 msgstr ""
 
-#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:78
+#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:79
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libpgf codec.</"
@@ -6009,22 +6179,41 @@ msgid ""
 "details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:106
+#: core/dplugins/dimg/pgf/dimgpgfplugin.cpp:107
 #, kde-format
 msgid "Progressive Graphics File"
 msgstr ""
 
-#: core/dplugins/dimg/png/dimgpngplugin.cpp:58
+#: core/dplugins/dimg/png/dimgpngexportsettings.cpp:76
+#, kde-format
+msgid "PNG compression:"
+msgstr "Nén PNG:"
+
+#: core/dplugins/dimg/png/dimgpngexportsettings.cpp:78
+#, fuzzy, kde-format
+msgid ""
+"<p>The compression value for PNG images:</p><p><b>1</b>: low compression "
+"(large file size but short compression duration - default)<br/><b>5</b>: "
+"medium compression<br/><b>9</b>: high compression (small file size but long "
+"compression duration)</p><p><b>Note: PNG is always a lossless image "
+"compression format.</b></p>"
+msgstr ""
+"<p>Giá trị nén cho ảnh PNG:<p><b>1</b>: cấp nén thấp (kích cỡ lớn còn tiến "
+"trình nén ngắn: mặc định)<p><b>5</b>: cấp nén vừa<p><b>9</b>: cấp nén cao "
+"(kích cỡ tệp nhỏ còn tiến trình nén dài)<p><b>Ghi chú : PNG luôn luôn là "
+"định dạng nén ảnh không mất gì.</b>"
+
+#: core/dplugins/dimg/png/dimgpngplugin.cpp:59
 #, fuzzy, kde-format
 msgid "PNG loader"
 msgstr "Tệp RAW"
 
-#: core/dplugins/dimg/png/dimgpngplugin.cpp:73
+#: core/dplugins/dimg/png/dimgpngplugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libpng codec"
 msgstr ""
 
-#: core/dplugins/dimg/png/dimgpngplugin.cpp:78
+#: core/dplugins/dimg/png/dimgpngplugin.cpp:79
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libpng codec.</"
@@ -6035,7 +6224,7 @@ msgid ""
 "Network Graphics documentation</a> for details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/png/dimgpngplugin.cpp:114
+#: core/dplugins/dimg/png/dimgpngplugin.cpp:115
 #, fuzzy, kde-format
 msgid "Portable Network Graphic"
 msgstr "Tệp ảnh"
@@ -6095,17 +6284,33 @@ msgctxt "@info: can write file format"
 msgid "no"
 msgstr "không"
 
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:58
+#: core/dplugins/dimg/tiff/dimgtiffexportsettings.cpp:67
+#, kde-format
+msgid "Compress TIFF files"
+msgstr "Nén tệp TIFF"
+
+#: core/dplugins/dimg/tiff/dimgtiffexportsettings.cpp:69
+#, fuzzy, kde-format
+msgid ""
+"<p>Toggle compression for TIFF images.</p><p>If this option is enabled, the "
+"final size of the TIFF image is reduced.</p><p>A lossless compression format "
+"(Deflate) is used to save the file.</p>"
+msgstr ""
+"<p>Bật/tắt khả năng nén ảnh TIFF.<p>Nếu bạn bật tuỳ chọn này, bạn có khả "
+"năng giảm kích cỡ tệp cuối cùng của ảnh TIFF.</p><p>Một định dạng nén không "
+"mất gì (Deflate) được dùng để lưu tệp đó.<p>"
+
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:59
 #, fuzzy, kde-format
 msgid "TIFF loader"
 msgstr "Nén tệp TIFF"
 
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:73
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:74
 #, kde-format
 msgid "An image loader based on Libtiff codec"
 msgstr ""
 
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:78
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:79
 #, kde-format
 msgid ""
 "<p>This plugin allows users to load and save image using Libtiff codec.</"
@@ -6118,8 +6323,8 @@ msgid ""
 "documentation</a> for details.</p>"
 msgstr ""
 
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:119
-#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:123
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:120
+#: core/dplugins/dimg/tiff/dimgtiffplugin.cpp:124
 #, fuzzy, kde-format
 msgid "Tagged Image Format"
 msgstr "Ngày ảnh"
@@ -23543,12 +23748,6 @@ msgstr ""
 msgid "Maximum dimension:"
 msgstr "Hiện các chiếu ảnh"
 
-#: core/dplugins/generic/webservices/smugmug/smugwidget.cpp:183
-#: core/libs/dimg/loaders/jpegsettings.cpp:85
-#, kde-format
-msgid "JPEG quality:"
-msgstr "Chất lượng JPEG:"
-
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:129
 #, kde-format
 msgid "Import from SmugMug Web Service"
@@ -24469,7 +24668,7 @@ msgstr "Thuộc tính"
 
 #: core/dplugins/rawimport/native/rawimport.cpp:184
 #: core/dplugins/rawimport/native/rawsettingsbox.cpp:317
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:273
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:262
 #, fuzzy, kde-format
 msgid "Raw Decoding"
 msgstr "Giải mã RAW"
@@ -31454,205 +31653,6 @@ msgctxt "@info"
 msgid "Cannot save settings to the White Color Balance text file."
 msgstr "Không thể lưu thiết lập vào tệp văn bản cán cân màu trắng."
 
-#: core/libs/dimg/loaders/heifsettings.cpp:77
-#, fuzzy, kde-format
-msgid "Lossless HEIF files"
-msgstr "Tệp JPEG 2000 không mất gì"
-
-#: core/libs/dimg/loaders/heifsettings.cpp:79
-#, fuzzy, kde-format
-msgid ""
-"<p>Toggle lossless compression for HEIF images.</p><p>If this option is "
-"enabled, a lossless method will be used to compress HEIF pictures.</p>"
-msgstr ""
-"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
-"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
-
-#: core/libs/dimg/loaders/heifsettings.cpp:86
-#, fuzzy, kde-format
-msgid "HEIF quality:"
-msgstr "Chất lượng JPEG:"
-
-#: core/libs/dimg/loaders/heifsettings.cpp:88
-#, fuzzy, kde-format
-msgid ""
-"<p>The quality value for HEIF images:</p><p><b>1</b>: low quality (high "
-"compression and small file size)<br/><b>50</b>: medium quality<br/><b>75</"
-"b>: good quality (default)<br/><b>100</b>: high quality (no compression and "
-"large file size)</p><p><b>Note: HEIF is not a lossless image compression "
-"format when you use this setting.</b></p>"
-msgstr ""
-"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
-"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
-"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
-"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
-"dạng nén ảnh không mất gì.</b>"
-
-#: core/libs/dimg/loaders/jp2ksettings.cpp:77
-#, fuzzy, kde-format
-msgid "Lossless JPEG 2000 files"
-msgstr "Tệp JPEG 2000 không mất gì"
-
-#: core/libs/dimg/loaders/jp2ksettings.cpp:79
-#, fuzzy, kde-format
-msgid ""
-"<p>Toggle lossless compression for JPEG 2000 images.</p><p>If this option is "
-"enabled, a lossless method will be used to compress JPEG 2000 pictures.</p>"
-msgstr ""
-"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
-"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
-
-#: core/libs/dimg/loaders/jp2ksettings.cpp:86
-#, kde-format
-msgid "JPEG 2000 quality:"
-msgstr "Chất lượng JPEG 2000:"
-
-#: core/libs/dimg/loaders/jp2ksettings.cpp:88
-#, fuzzy, kde-format
-msgid ""
-"<p>The quality value for JPEG 2000 images:</p><p><b>1</b>: low quality (high "
-"compression and small file size)<br/><b>50</b>: medium quality<br/><b>75</"
-"b>: good quality (default)<br/><b>100</b>: high quality (no compression and "
-"large file size)</p><p><b>Note: JPEG 2000 is not a lossless image "
-"compression format when you use this setting.</b></p>"
-msgstr ""
-"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
-"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
-"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
-"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
-"dạng nén ảnh không mất gì.</b>"
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:87
-#, fuzzy, kde-format
-msgid ""
-"<p>The JPEG quality:</p><p><b>1</b>: low quality (high compression and small "
-"file size)<br/><b>50</b>: medium quality<br/><b>75</b>: good quality "
-"(default)<br/><b>100</b>: high quality (no compression and large file size)</"
-"p><p><b>Note: JPEG always uses lossy compression.</b></p>"
-msgstr ""
-"<p>Giá trị chất lương cho ảnh JPEG:<p><b>1</b>: chất lượng thấp (cấp nén cao "
-"thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất lượng tốt "
-"(mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ tệp "
-"lớn)<p><b>Ghi chú : JPEG sử dụng một thuật toán nén ảnh mất gì.</b>"
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:96
-#, fuzzy, kde-format
-msgid ""
-"<font color='red'><i>Warning: <a href='https://en.wikipedia.org/wiki/"
-"JPEG'>JPEG</a> is a lossy image compression format.</i></font>"
-msgstr ""
-"<qt><font size=-1 color=\"red\"><i>Cảnh báo : <a href='http://en.wikipedia."
-"org/wiki/JPEG'>JPEG</a> là một định dạng ảnh <br>nén mất gì.</p></i></qt>"
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:106
-#, kde-format
-msgid "Chroma subsampling:"
-msgstr ""
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:109
-#, kde-format
-msgid "4:4:4 (best quality)"
-msgstr ""
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:110
-#, kde-format
-msgid "4:2:2 (good quality)"
-msgstr ""
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:111
-#, kde-format
-msgid "4:2:0 (low quality)"
-msgstr ""
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:112
-#, kde-format
-msgid "4:1:1 (low quality)"
-msgstr ""
-
-#: core/libs/dimg/loaders/jpegsettings.cpp:113
-#, kde-format
-msgid ""
-"<p>Chroma subsampling reduces file size by taking advantage of the eye's "
-"lesser sensitivity to color resolution. How perceptible the difference is "
-"depends on the image - large photos will generally show no difference, while "
-"sharp, down-scaled pixel graphics may lose fine color detail.</"
-"p><p><b>4:4:4</b> - No chroma subsampling, highest quality but lowest "
-"compression.</p><p><b>4:2:2</b> - Chroma halved horizontally, average "
-"compression, average quality.</p><p><b>4:2:0</b> - Chroma quartered in 2x2 "
-"blocks, high compression but low quality.</p><p><b>4:1:1</b> - Chroma "
-"quartered in 4x1 blocks, high compression but low quality.</p><p><b>Note: "
-"JPEG always uses lossy compression.</b></p>"
-msgstr ""
-
-#: core/libs/dimg/loaders/pgfsettings.cpp:77
-#, fuzzy, kde-format
-msgid "Lossless PGF files"
-msgstr "Tệp JPEG 2000 không mất gì"
-
-#: core/libs/dimg/loaders/pgfsettings.cpp:79
-#, fuzzy, kde-format
-msgid ""
-"<p>Toggle lossless compression for PGF images.</p><p>If this option is "
-"enabled, a lossless method will be used to compress PGF pictures.</p>"
-msgstr ""
-"<p>Bật/tắt khả năng nén ảnh JPEG 2000 không mất gì<p>Bật tuỳ chọn này thì "
-"bạn sẽ nén ảnh JPEG 2000 theo phương pháp không mất dữ liệu.</p>"
-
-#: core/libs/dimg/loaders/pgfsettings.cpp:86
-#, fuzzy, kde-format
-msgid "PGF quality:"
-msgstr "Chất lượng JPEG:"
-
-#: core/libs/dimg/loaders/pgfsettings.cpp:88
-#, fuzzy, kde-format
-msgid ""
-"<p>The quality value for PGF images:</p><p><b>1</b>: high quality (no "
-"compression and large file size)<br/><b>3</b>: good quality (default)<br/"
-"><b>6</b>: medium quality<br/><b>9</b>: low quality (high compression and "
-"small file size)</p><p><b>Note: PGF is not a lossless image compression "
-"format when you use this setting.</b></p>"
-msgstr ""
-"<p>Giá trị chất lương cho ảnh JPEG 2000:<p><b>1</b>: chất lượng thấp (cấp "
-"nén cao thì kích cỡ tệp nhỏ)<p><b>50</b>: chất lượng vừa<p><b>75</b>: chất "
-"lượng tốt (mặc định)<p><b>100</b>: chất lượng cao (không có nén thì kích cỡ "
-"tệp lớn)<p><b>Ghi chú : dùng thiết lập này thì JPEG 2000 không phải là định "
-"dạng nén ảnh không mất gì.</b>"
-
-#: core/libs/dimg/loaders/pngsettings.cpp:76
-#, kde-format
-msgid "PNG compression:"
-msgstr "Nén PNG:"
-
-#: core/libs/dimg/loaders/pngsettings.cpp:78
-#, fuzzy, kde-format
-msgid ""
-"<p>The compression value for PNG images:</p><p><b>1</b>: low compression "
-"(large file size but short compression duration - default)<br/><b>5</b>: "
-"medium compression<br/><b>9</b>: high compression (small file size but long "
-"compression duration)</p><p><b>Note: PNG is always a lossless image "
-"compression format.</b></p>"
-msgstr ""
-"<p>Giá trị nén cho ảnh PNG:<p><b>1</b>: cấp nén thấp (kích cỡ lớn còn tiến "
-"trình nén ngắn: mặc định)<p><b>5</b>: cấp nén vừa<p><b>9</b>: cấp nén cao "
-"(kích cỡ tệp nhỏ còn tiến trình nén dài)<p><b>Ghi chú : PNG luôn luôn là "
-"định dạng nén ảnh không mất gì.</b>"
-
-#: core/libs/dimg/loaders/tiffsettings.cpp:67
-#, kde-format
-msgid "Compress TIFF files"
-msgstr "Nén tệp TIFF"
-
-#: core/libs/dimg/loaders/tiffsettings.cpp:69
-#, fuzzy, kde-format
-msgid ""
-"<p>Toggle compression for TIFF images.</p><p>If this option is enabled, the "
-"final size of the TIFF image is reduced.</p><p>A lossless compression format "
-"(Deflate) is used to save the file.</p>"
-msgstr ""
-"<p>Bật/tắt khả năng nén ảnh TIFF.<p>Nếu bạn bật tuỳ chọn này, bạn có khả "
-"năng giảm kích cỡ tệp cuối cùng của ảnh TIFF.</p><p>Một định dạng nén không "
-"mất gì (Deflate) được dùng để lưu tệp đó.<p>"
-
 #: core/libs/dngwriter/dngsettings.cpp:88
 #, fuzzy, kde-format
 msgid "Embed Original File"
@@ -38512,7 +38512,7 @@ msgstr "Tệp ảnh"
 msgid "Store as a different name"
 msgstr ""
 
-#: core/libs/widgets/files/filesaveoptionsbox.cpp:130
+#: core/libs/widgets/files/filesaveoptionsbox.cpp:119
 #, fuzzy, kde-format
 msgid "No options available"
 msgstr "Không có sẵn tuỳ chọn"
@@ -46836,7 +46836,7 @@ msgid "Face detection with YOLO v3 data model. Better results but slower."
 msgstr ""
 
 #: core/utilities/facemanagement/widgets/facescanwidget.cpp:293
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:250
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:239
 #, kde-format
 msgctxt "@option:check"
 msgid "Work on all processor cores"
@@ -52112,70 +52112,70 @@ msgstr "Tiến trình liệt kê các thư mục đã chạy xong."
 msgid "&Queues"
 msgstr "Quique"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:194
+#: core/utilities/queuemanager/manager/batchtool.cpp:193
 #, kde-format
 msgctxt "@title: tool group"
 msgid "Base"
 msgstr ""
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:197
+#: core/utilities/queuemanager/manager/batchtool.cpp:196
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Custom"
 msgstr "Tự chọn"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:200
+#: core/utilities/queuemanager/manager/batchtool.cpp:199
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgctxt "@title: tool group"
 msgid "Colors"
 msgstr "Màu sắc"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:203
+#: core/utilities/queuemanager/manager/batchtool.cpp:202
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Enhance"
 msgstr "&Tăng cường"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:206
+#: core/utilities/queuemanager/manager/batchtool.cpp:205
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Transform"
 msgstr "Chuyể&n dạng"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:209
+#: core/utilities/queuemanager/manager/batchtool.cpp:208
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Decorate"
 msgstr "T&rang trí"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:212
+#: core/utilities/queuemanager/manager/batchtool.cpp:211
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Filters"
 msgstr "Bộ &lọc"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:215
+#: core/utilities/queuemanager/manager/batchtool.cpp:214
 #, fuzzy, kde-format
 msgctxt "@title: tool group"
 msgid "Convert"
 msgstr "Chuyển đổi"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:218
+#: core/utilities/queuemanager/manager/batchtool.cpp:217
 #, fuzzy, kde-format
 #| msgid "Metadata"
 msgctxt "@title: tool group"
 msgid "Metadata"
 msgstr "Siêu dữ liệu"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:224
+#: core/utilities/queuemanager/manager/batchtool.cpp:223
 #, fuzzy, kde-format
 #| msgid "Invalid Profile"
 msgctxt "@title: tool group"
 msgid "Invalid"
 msgstr "Hồ sơ không hợp lệ"
 
-#: core/utilities/queuemanager/manager/batchtool.cpp:632
+#: core/utilities/queuemanager/manager/batchtool.cpp:631
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "No setting available"
@@ -52272,59 +52272,59 @@ msgid ""
 "tools."
 msgstr ""
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:182
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:171
 #, fuzzy, kde-format
 msgid "Use original Album"
 msgstr "Tên tệp máy ảnh"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:184
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:173
 #, kde-format
 msgid "Target"
 msgstr "Đích"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:194
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:183
 #, fuzzy, kde-format
 msgid "Use original filenames"
 msgstr "Tên tệp máy ảnh"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:195
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:184
 #, fuzzy, kde-format
 msgid "Turn on this option to use original filenames without modifications."
 msgstr ""
 "<p>Bật tuỳ chọn này để dùng các tên tệp do máy ảnh cung cấp, không sửa đổi."
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:198
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:187
 #, fuzzy, kde-format
 msgid "Customize filenames:"
 msgstr "Tên tệp máy ảnh"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:214
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:203
 #, fuzzy, kde-format
 msgid "File Renaming"
 msgstr "Tuỳ chọn thay tên tệp"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:226
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:215
 #, fuzzy, kde-format
 msgid "Raw Files Loading:"
 msgstr "Tệp RAW"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:230
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:219
 #, kde-format
 msgid "Perform RAW demosaicing"
 msgstr ""
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:231
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:220
 #, fuzzy, kde-format
 msgid "Extract embedded preview (faster)"
 msgstr "Hiển thị ô xem thử nhúng"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:246
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:235
 #, fuzzy, kde-format
 msgctxt "@option:check"
 msgid "Save image as a newly created branch"
 msgstr "Chuyển vào Sọt Rác, không cần xác nhận"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:247
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:236
 #, fuzzy, kde-format
 msgid ""
 "Turn on this option to save the current modifications to a new version of "
@@ -52332,20 +52332,20 @@ msgid ""
 msgstr ""
 "<p>Bật tuỳ chọn này để lưu ngày tháng và giờ của ảnh vào thẻ EXIF và IPTC."
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:251
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:240
 #, kde-format
 msgid ""
 "Turn on this option to use all CPU core from your computer to process more "
 "than one item from a queue at the same time."
 msgstr ""
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:264
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:253
 #: core/utilities/setup/camera/setupcamera.cpp:403
 #, kde-format
 msgid "Behavior"
 msgstr "Ứng xử"
 
-#: core/utilities/queuemanager/views/queuesettingsview.cpp:337
+#: core/utilities/queuemanager/views/queuesettingsview.cpp:333
 #, fuzzy, kde-format
 msgid "Saving Images"
 msgstr "Lưu ảnh"
@@ -54921,12 +54921,12 @@ msgid ""
 "the last session. Otherwise, the default settings will be used."
 msgstr ""
 
-#: core/utilities/setup/editor/setupiofiles.cpp:172
+#: core/utilities/setup/editor/setupiofiles.cpp:169
 #, fuzzy, kde-format
 msgid "Show Settings Dialog when Saving Image Files"
 msgstr "Thiết lập tệp ảnh lưu trong bộ sửa ảnh"
 
-#: core/utilities/setup/editor/setupiofiles.cpp:173
+#: core/utilities/setup/editor/setupiofiles.cpp:170
 #, fuzzy, kde-format
 msgid ""
 "<ul><li>Checked: A dialog where settings can be changed when saving image "

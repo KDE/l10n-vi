@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_part\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-03-27 00:41+0000\n"
+"POT-Creation-Date: 2022-04-03 00:43+0000\n"
 "PO-Revision-Date: 2022-02-11 22:46+0100\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -655,7 +655,7 @@ msgid "Delete the current file type."
 msgstr "Xoá kiểu tệp hiện tại."
 
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: dialogs/filetypeconfigwidget.ui:44 syntax/katethemeconfig.cpp:1014
+#: dialogs/filetypeconfigwidget.ui:44 syntax/katethemeconfig.cpp:1102
 #, kde-format
 msgid "&Delete"
 msgstr "&Xoá"
@@ -2189,8 +2189,8 @@ msgstr ""
 "được thay đổi. Một phần dữ liệu có thể bị mất."
 
 #: document/katedocument.cpp:2524 document/katedocument.cpp:2540
-#: document/katedocument.cpp:2832 syntax/katethemeconfig.cpp:1110
-#: syntax/katethemeconfig.cpp:1258
+#: document/katedocument.cpp:2832 syntax/katethemeconfig.cpp:1186
+#: syntax/katethemeconfig.cpp:1336
 #, kde-format
 msgid "Possible Data Loss"
 msgstr "Có thể mất dữ liệu"
@@ -4264,183 +4264,183 @@ msgstr ""
 msgid "Kate Styles"
 msgstr "Kiểu dáng Kate"
 
-#: syntax/katethemeconfig.cpp:45
+#: syntax/katethemeconfig.cpp:46
 #, fuzzy, kde-format
 #| msgid "Normal"
 msgctxt "@item:intable Text context"
 msgid "Normal"
 msgstr "Chuẩn"
 
-#: syntax/katethemeconfig.cpp:46
+#: syntax/katethemeconfig.cpp:47
 #, fuzzy, kde-format
 #| msgid "Keyword"
 msgctxt "@item:intable Text context"
 msgid "Keyword"
 msgstr "Từ khoá"
 
-#: syntax/katethemeconfig.cpp:47
+#: syntax/katethemeconfig.cpp:48
 #, fuzzy, kde-format
 #| msgid "Function"
 msgctxt "@item:intable Text context"
 msgid "Function"
 msgstr "Hàm"
 
-#: syntax/katethemeconfig.cpp:48
+#: syntax/katethemeconfig.cpp:49
 #, fuzzy, kde-format
 #| msgid "Variable"
 msgctxt "@item:intable Text context"
 msgid "Variable"
 msgstr "Biến"
 
-#: syntax/katethemeconfig.cpp:49
+#: syntax/katethemeconfig.cpp:50
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Control Flow"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:50
+#: syntax/katethemeconfig.cpp:51
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Operator"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:51
+#: syntax/katethemeconfig.cpp:52
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Built-in"
 msgstr ""
 
 # msgid "File e&xtensions:"
-#: syntax/katethemeconfig.cpp:52
+#: syntax/katethemeconfig.cpp:53
 #, fuzzy, kde-format
 #| msgid "Extensions"
 msgctxt "@item:intable Text context"
 msgid "Extension"
 msgstr "Phần mở rộng"
 
-#: syntax/katethemeconfig.cpp:53
+#: syntax/katethemeconfig.cpp:54
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Preprocessor"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:54
+#: syntax/katethemeconfig.cpp:55
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Attribute"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:56
+#: syntax/katethemeconfig.cpp:57
 #, fuzzy, kde-format
 #| msgid "Character"
 msgctxt "@item:intable Text context"
 msgid "Character"
 msgstr "Kí tự"
 
-#: syntax/katethemeconfig.cpp:57
+#: syntax/katethemeconfig.cpp:58
 #, fuzzy, kde-format
 #| msgid "Character"
 msgctxt "@item:intable Text context"
 msgid "Special Character"
 msgstr "Kí tự"
 
-#: syntax/katethemeconfig.cpp:58
+#: syntax/katethemeconfig.cpp:59
 #, fuzzy, kde-format
 #| msgid "String"
 msgctxt "@item:intable Text context"
 msgid "String"
 msgstr "Chuỗi"
 
-#: syntax/katethemeconfig.cpp:59
+#: syntax/katethemeconfig.cpp:60
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Verbatim String"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:60
+#: syntax/katethemeconfig.cpp:61
 #, fuzzy, kde-format
 #| msgid "Filter: None"
 msgctxt "@item:intable Text context"
 msgid "Special String"
 msgstr "Lọc: không có"
 
-#: syntax/katethemeconfig.cpp:61
+#: syntax/katethemeconfig.cpp:62
 #, kde-format
 msgctxt "@item:intable Text context"
 msgid "Imports, Modules, Includes"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:63
+#: syntax/katethemeconfig.cpp:64
 #, fuzzy, kde-format
 #| msgid "Data Type"
 msgctxt "@item:intable Text context"
 msgid "Data Type"
 msgstr "Kiểu dữ liệu"
 
-#: syntax/katethemeconfig.cpp:64
+#: syntax/katethemeconfig.cpp:65
 #, fuzzy, kde-format
 #| msgid "Decimal/Value"
 msgctxt "@item:intable Text context"
 msgid "Decimal/Value"
 msgstr "Thập phân/Giá trị"
 
-#: syntax/katethemeconfig.cpp:65
+#: syntax/katethemeconfig.cpp:66
 #, fuzzy, kde-format
 #| msgid "Base-N Integer"
 msgctxt "@item:intable Text context"
 msgid "Base-N Integer"
 msgstr "Số nguyên cơ số N"
 
-#: syntax/katethemeconfig.cpp:66
+#: syntax/katethemeconfig.cpp:67
 #, fuzzy, kde-format
 #| msgid "Floating Point"
 msgctxt "@item:intable Text context"
 msgid "Floating Point"
 msgstr "Điểm phù động"
 
-#: syntax/katethemeconfig.cpp:67
+#: syntax/katethemeconfig.cpp:68
 #, fuzzy, kde-format
 #| msgid "Constant"
 msgctxt "@item:intable Text context"
 msgid "Constant"
 msgstr "Hằng"
 
-#: syntax/katethemeconfig.cpp:69
+#: syntax/katethemeconfig.cpp:70
 #, fuzzy, kde-format
 #| msgid "Comment"
 msgctxt "@item:intable Text context"
 msgid "Comment"
 msgstr "Ghi chú"
 
-#: syntax/katethemeconfig.cpp:70
+#: syntax/katethemeconfig.cpp:71
 #, fuzzy, kde-format
 #| msgid "&Indentation"
 msgctxt "@item:intable Text context"
 msgid "Documentation"
 msgstr "Th&ụt lề"
 
-#: syntax/katethemeconfig.cpp:71
+#: syntax/katethemeconfig.cpp:72
 #, fuzzy, kde-format
 #| msgid "Indentation"
 msgctxt "@item:intable Text context"
 msgid "Annotation"
 msgstr "Canh lề"
 
-#: syntax/katethemeconfig.cpp:72
+#: syntax/katethemeconfig.cpp:73
 #, fuzzy, kde-format
 #| msgid "Variable"
 msgctxt "@item:intable Text context"
 msgid "Comment Variable"
 msgstr "Biến"
 
-#: syntax/katethemeconfig.cpp:74
+#: syntax/katethemeconfig.cpp:75
 #, fuzzy, kde-format
 #| msgid "Region Marker"
 msgctxt "@item:intable Text context"
 msgid "Region Marker"
 msgstr "Dấu hiệu miền"
 
-#: syntax/katethemeconfig.cpp:75
+#: syntax/katethemeconfig.cpp:76
 #, fuzzy, kde-format
 #| msgctxt "Language"
 #| msgid "Inform"
@@ -4448,64 +4448,64 @@ msgctxt "@item:intable Text context"
 msgid "Information"
 msgstr "Inform"
 
-#: syntax/katethemeconfig.cpp:76
+#: syntax/katethemeconfig.cpp:77
 #, fuzzy, kde-format
 #| msgid "Warning"
 msgctxt "@item:intable Text context"
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: syntax/katethemeconfig.cpp:77
+#: syntax/katethemeconfig.cpp:78
 #, fuzzy, kde-format
 #| msgid "Alert"
 msgctxt "@item:intable Text context"
 msgid "Alert"
 msgstr "Báo động"
 
-#: syntax/katethemeconfig.cpp:79
+#: syntax/katethemeconfig.cpp:80
 #, fuzzy, kde-format
 #| msgid "Others"
 msgctxt "@item:intable Text context"
 msgid "Others"
 msgstr "Khác"
 
-#: syntax/katethemeconfig.cpp:81
+#: syntax/katethemeconfig.cpp:82
 #, fuzzy, kde-format
 #| msgid "Error"
 msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "Lỗi"
 
-#: syntax/katethemeconfig.cpp:142
+#: syntax/katethemeconfig.cpp:143
 #, fuzzy, kde-format
 #| msgid "Use Default Style"
 msgid "Use Default Colors"
 msgstr "Dùng kiểu dáng mặc định"
 
-#: syntax/katethemeconfig.cpp:162
+#: syntax/katethemeconfig.cpp:163
 #, fuzzy, kde-format
 #| msgid "Unset Background Color"
 msgid "Editor Background Colors"
 msgstr "Bỏ chọn màu nền"
 
-#: syntax/katethemeconfig.cpp:164
+#: syntax/katethemeconfig.cpp:165
 #, fuzzy, kde-format
 #| msgid "Template Background"
 msgid "Text Area"
 msgstr "Nền mẫu"
 
-#: syntax/katethemeconfig.cpp:166
+#: syntax/katethemeconfig.cpp:167
 #, kde-format
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:171
+#: syntax/katethemeconfig.cpp:172
 #, fuzzy, kde-format
 #| msgid "Selected"
 msgid "Selected Text"
 msgstr "Đã chọn"
 
-#: syntax/katethemeconfig.cpp:174
+#: syntax/katethemeconfig.cpp:175
 #, kde-format
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
@@ -4513,13 +4513,13 @@ msgid ""
 "</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:180
+#: syntax/katethemeconfig.cpp:181
 #, fuzzy, kde-format
 #| msgid "Current Word Only"
 msgid "Current Line"
 msgstr "Chỉ từ hiện có"
 
-#: syntax/katethemeconfig.cpp:182
+#: syntax/katethemeconfig.cpp:183
 #, kde-format
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
@@ -4527,74 +4527,74 @@ msgid ""
 msgstr ""
 
 # msgid "Highlighting"
-#: syntax/katethemeconfig.cpp:187
+#: syntax/katethemeconfig.cpp:188
 #, fuzzy, kde-format
 #| msgid "&Highlighting"
 msgid "Search Highlight"
 msgstr "Tô &sáng"
 
-#: syntax/katethemeconfig.cpp:189
+#: syntax/katethemeconfig.cpp:190
 #, kde-format
 msgid "<p>Sets the background color of search results.</p>"
 msgstr ""
 
 # msgid "Highlighting"
-#: syntax/katethemeconfig.cpp:194
+#: syntax/katethemeconfig.cpp:195
 #, fuzzy, kde-format
 #| msgid "&Highlighting"
 msgid "Replace Highlight"
 msgstr "Tô &sáng"
 
-#: syntax/katethemeconfig.cpp:196
+#: syntax/katethemeconfig.cpp:197
 #, kde-format
 msgid "<p>Sets the background color of replaced text.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:203
+#: syntax/katethemeconfig.cpp:204
 #, kde-format
 msgid "Icon Border"
 msgstr "Viền biểu tượng"
 
-#: syntax/katethemeconfig.cpp:206
+#: syntax/katethemeconfig.cpp:207
 #, fuzzy, kde-format
 #| msgid "Background"
 msgid "Background Area"
 msgstr "Nền"
 
-#: syntax/katethemeconfig.cpp:208
+#: syntax/katethemeconfig.cpp:209
 #, kde-format
 msgid "<p>Sets the background color of the icon border.</p>"
 msgstr "<p>Đặt màu nền của viền biểu tượng.</p>"
 
-#: syntax/katethemeconfig.cpp:213
+#: syntax/katethemeconfig.cpp:214
 #, kde-format
 msgid "Line Numbers"
 msgstr "Số thứ tự dòng"
 
-#: syntax/katethemeconfig.cpp:215
+#: syntax/katethemeconfig.cpp:216
 #, kde-format
 msgid "<p>This color will be used to draw the line numbers (if enabled).</p>"
 msgstr "<p>Màu này sẽ được dùng cho số thứ tự dòng (nếu bật).</p>"
 
-#: syntax/katethemeconfig.cpp:220
+#: syntax/katethemeconfig.cpp:221
 #, fuzzy, kde-format
 #| msgid "Current Word Only"
 msgid "Current Line Number"
 msgstr "Chỉ từ hiện có"
 
-#: syntax/katethemeconfig.cpp:222
+#: syntax/katethemeconfig.cpp:223
 #, kde-format
 msgid ""
 "<p>This color will be used to draw the number of the current line (if "
 "enabled).</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:227
+#: syntax/katethemeconfig.cpp:228
 #, kde-format
 msgid "Separator"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:229
+#: syntax/katethemeconfig.cpp:230
 #, kde-format
 msgid ""
 "<p>This color will be used to draw the line between line numbers and the "
@@ -4603,13 +4603,13 @@ msgstr ""
 "<p>Màu này sẽ được dùng cho đường thẳng ở giữa số thứ tự dòng và viền biểu "
 "tượng, nếu cả hai được bật.</p>"
 
-#: syntax/katethemeconfig.cpp:234
+#: syntax/katethemeconfig.cpp:235
 #, fuzzy, kde-format
 #| msgid "Show Static &Word Wrap Marker"
 msgid "Word Wrap Marker"
 msgstr "Hiện dấu hiệu &Ngắt từ tĩnh"
 
-#: syntax/katethemeconfig.cpp:237
+#: syntax/katethemeconfig.cpp:238
 #, kde-format
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
@@ -4618,85 +4618,85 @@ msgid ""
 "visually-wrapped lines</dd></dl>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:244
+#: syntax/katethemeconfig.cpp:245
 #, fuzzy, kde-format
 #| msgid "&Code Folding"
 msgid "Code Folding"
 msgstr "&Gấp lại mã"
 
-#: syntax/katethemeconfig.cpp:246
+#: syntax/katethemeconfig.cpp:247
 #, kde-format
 msgid "<p>Sets the color of the code folding bar.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:251
+#: syntax/katethemeconfig.cpp:252
 #, fuzzy, kde-format
 #| msgid "Scroll Line Up"
 msgid "Modified Lines"
 msgstr "Cuộn lên một dòng"
 
-#: syntax/katethemeconfig.cpp:253
+#: syntax/katethemeconfig.cpp:254
 #, kde-format
 msgid ""
 "<p>Sets the color of the line modification marker for modified lines.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:258
+#: syntax/katethemeconfig.cpp:259
 #, fuzzy, kde-format
 #| msgid "Save File"
 msgid "Saved Lines"
 msgstr "Lưu tệp"
 
-#: syntax/katethemeconfig.cpp:260
+#: syntax/katethemeconfig.cpp:261
 #, kde-format
 msgid "<p>Sets the color of the line modification marker for saved lines.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:267
+#: syntax/katethemeconfig.cpp:268
 #, fuzzy, kde-format
 #| msgid "Bl&ock Selection Mode"
 msgid "Text Decorations"
 msgstr "Chế độ chọn &khối"
 
-#: syntax/katethemeconfig.cpp:270
+#: syntax/katethemeconfig.cpp:271
 #, kde-format
 msgid "Spelling Mistake Line"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:272
+#: syntax/katethemeconfig.cpp:273
 #, kde-format
 msgid ""
 "<p>Sets the color of the line that is used to indicate spelling mistakes.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:277
+#: syntax/katethemeconfig.cpp:278
 #, kde-format
 msgid "Tab and Space Markers"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:279
+#: syntax/katethemeconfig.cpp:280
 #, kde-format
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:284
+#: syntax/katethemeconfig.cpp:285
 #, fuzzy, kde-format
 #| msgid "Indentation"
 msgid "Indentation Line"
 msgstr "Canh lề"
 
-#: syntax/katethemeconfig.cpp:286
+#: syntax/katethemeconfig.cpp:287
 #, kde-format
 msgid "<p>Sets the color of the vertical indentation lines.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:291
+#: syntax/katethemeconfig.cpp:292
 #, fuzzy, kde-format
 #| msgid "H&ighlight:"
 msgid "Bracket Highlight"
 msgstr "T&ô sáng:"
 
-#: syntax/katethemeconfig.cpp:294
+#: syntax/katethemeconfig.cpp:295
 #, kde-format
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
@@ -4705,84 +4705,84 @@ msgstr ""
 "<p>Đặt màu cho dấu ngoặc cùng cặp. Cụ thể là, nếu bạn để con trỏ vd. ở một "
 "dấu <b>(</b>, thì dấu <b>)</b> cùng cặp sẽ được tô sáng bằng màu này.</p>"
 
-#: syntax/katethemeconfig.cpp:302
+#: syntax/katethemeconfig.cpp:303
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgid "Marker Colors"
 msgstr "Màu sắc"
 
-#: syntax/katethemeconfig.cpp:304 view/kateviewhelpers.cpp:1474
+#: syntax/katethemeconfig.cpp:305 view/kateviewhelpers.cpp:1474
 #, kde-format
 msgid "Bookmark"
 msgstr "Đánh dấu"
 
-#: syntax/katethemeconfig.cpp:305
+#: syntax/katethemeconfig.cpp:306
 #, kde-format
 msgid "Active Breakpoint"
 msgstr "Điểm ngắt hoạt động"
 
-#: syntax/katethemeconfig.cpp:306
+#: syntax/katethemeconfig.cpp:307
 #, kde-format
 msgid "Reached Breakpoint"
 msgstr "Điểm ngắt đã tới"
 
-#: syntax/katethemeconfig.cpp:307
+#: syntax/katethemeconfig.cpp:308
 #, kde-format
 msgid "Disabled Breakpoint"
 msgstr "Điểm ngắt bị tắt"
 
-#: syntax/katethemeconfig.cpp:308
+#: syntax/katethemeconfig.cpp:309
 #, kde-format
 msgid "Execution"
 msgstr "Thực hiện"
 
-#: syntax/katethemeconfig.cpp:309
+#: syntax/katethemeconfig.cpp:310
 #, kde-format
 msgid "Warning"
 msgstr "Cảnh báo"
 
-#: syntax/katethemeconfig.cpp:310
+#: syntax/katethemeconfig.cpp:311
 #, kde-format
 msgid "Error"
 msgstr "Lỗi"
 
-#: syntax/katethemeconfig.cpp:312
+#: syntax/katethemeconfig.cpp:313
 #, kde-format
 msgid ""
 "<p>Sets the background color of mark type.</p><p><b>Note</b>: The marker "
 "color is displayed lightly because of transparency.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:324
+#: syntax/katethemeconfig.cpp:325
 #, kde-format
 msgid "Text Templates & Snippets"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:329
+#: syntax/katethemeconfig.cpp:330
 #, fuzzy, kde-format
 #| msgid "Background"
 msgid "Background"
 msgstr "Nền"
 
-#: syntax/katethemeconfig.cpp:335
+#: syntax/katethemeconfig.cpp:336
 #, fuzzy, kde-format
 #| msgid "Template Editable Placeholder"
 msgid "Editable Placeholder"
 msgstr "Bộ giữ chỗ sửa được mẫu"
 
-#: syntax/katethemeconfig.cpp:341
+#: syntax/katethemeconfig.cpp:342
 #, fuzzy, kde-format
 #| msgid "Template Focused Editable Placeholder"
 msgid "Focused Editable Placeholder"
 msgstr "Bộ giữ chỗ sửa được dựa vào mẫu"
 
-#: syntax/katethemeconfig.cpp:347
+#: syntax/katethemeconfig.cpp:348
 #, fuzzy, kde-format
 #| msgid "Template Not Editable Placeholder"
 msgid "Not Editable Placeholder"
 msgstr "Bộ giữ chỗ không sửa được mẫu"
 
-#: syntax/katethemeconfig.cpp:481
+#: syntax/katethemeconfig.cpp:482
 #, fuzzy, kde-format
 #| msgid ""
 #| "This list displays the default styles for the current schema and offers "
@@ -4803,45 +4803,45 @@ msgstr ""
 "bật lên.<p>Bạn có thể bỏ đặt màu Nền và Nền đã chọn, từ trình đơn bật lên, "
 "khi thích hợp."
 
-#: syntax/katethemeconfig.cpp:547
+#: syntax/katethemeconfig.cpp:548
 #, fuzzy, kde-format
 #| msgid "Normal Text"
 msgctxt "@item:intable"
 msgid "Normal Text & Source Code"
 msgstr "Văn bản chuẩn"
 
-#: syntax/katethemeconfig.cpp:554
+#: syntax/katethemeconfig.cpp:555
 #, kde-format
 msgctxt "@item:intable"
 msgid "Numbers, Types & Constants"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:561
+#: syntax/katethemeconfig.cpp:562
 #, fuzzy, kde-format
 #| msgid "Character"
 msgctxt "@item:intable"
 msgid "Strings & Characters"
 msgstr "Kí tự"
 
-#: syntax/katethemeconfig.cpp:568
+#: syntax/katethemeconfig.cpp:569
 #, fuzzy, kde-format
 #| msgid "&Indentation"
 msgctxt "@item:intable"
 msgid "Comments & Documentation"
 msgstr "Th&ụt lề"
 
-#: syntax/katethemeconfig.cpp:575
+#: syntax/katethemeconfig.cpp:576
 #, kde-format
 msgctxt "@item:intable"
 msgid "Miscellaneous"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:682
+#: syntax/katethemeconfig.cpp:683
 #, kde-format
 msgid "H&ighlight:"
 msgstr "T&ô sáng:"
 
-#: syntax/katethemeconfig.cpp:724
+#: syntax/katethemeconfig.cpp:725
 #, kde-format
 msgid ""
 "<p>This list displays the contexts of the current syntax highlight mode and "
@@ -4860,131 +4860,146 @@ msgstr ""
 "p><p>Bạn có thể bỏ đặt màu Nền và Nền đã chọn, từ trình đơn bật lên, khi "
 "thích hợp.</p>"
 
-#: syntax/katethemeconfig.cpp:1001
+#: syntax/katethemeconfig.cpp:1003
+#, fuzzy, kde-format
+#| msgid "Normal Text Styles"
+msgid "Default Theme"
+msgstr "Kiểu đáng chữ chuẩn"
+
+#: syntax/katethemeconfig.cpp:1004
+#, kde-format
+msgid "Theme Editor"
+msgstr ""
+
+#: syntax/katethemeconfig.cpp:1018
+#, fuzzy, kde-format
+#| msgid "Selected"
+msgid "Select theme:"
+msgstr "Đã chọn"
+
+#: syntax/katethemeconfig.cpp:1065
+#, kde-format
+msgid "Preview:"
+msgstr ""
+
+#: syntax/katethemeconfig.cpp:1089
 #, fuzzy, kde-format
 #| msgctxt "Language"
 #| msgid "Scheme"
 msgid "&Theme:"
 msgstr "Scheme"
 
-#: syntax/katethemeconfig.cpp:1010
+#: syntax/katethemeconfig.cpp:1098
 #, fuzzy, kde-format
 #| msgid "&Save File As..."
 msgid "&Copy..."
 msgstr "&Lưu tệp dạng..."
 
-#: syntax/katethemeconfig.cpp:1018
+#: syntax/katethemeconfig.cpp:1106
 #, fuzzy, kde-format
 #| msgid "E&xport as HTML..."
 msgid "Export..."
 msgstr "&Xuất dạng HTML..."
 
-#: syntax/katethemeconfig.cpp:1022
+#: syntax/katethemeconfig.cpp:1110
 #, fuzzy, kde-format
 #| msgid "Normal &Color..."
 msgid "Import..."
 msgstr "Màu &chuẩn..."
 
-#: syntax/katethemeconfig.cpp:1029
+#: syntax/katethemeconfig.cpp:1117
 #, kde-format
 msgid "Bundled read-only theme. To modify the theme, please copy it."
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:1040
+#: syntax/katethemeconfig.cpp:1128
 #, kde-format
 msgid "Colors"
 msgstr "Màu"
 
-#: syntax/katethemeconfig.cpp:1044
+#: syntax/katethemeconfig.cpp:1132
 #, fuzzy, kde-format
 #| msgid "Normal Text Styles"
 msgid "Default Text Styles"
 msgstr "Kiểu đáng chữ chuẩn"
 
-#: syntax/katethemeconfig.cpp:1048
+#: syntax/katethemeconfig.cpp:1136
 #, kde-format
 msgid "Highlighting Text Styles"
 msgstr "Kiểu dáng chữ tô sáng"
 
-#: syntax/katethemeconfig.cpp:1054
-#, fuzzy, kde-format
-#| msgid "&Default schema for %1:"
-msgid "&Default theme for %1:"
-msgstr "Giản đồ &mặc định cho %1:"
-
-#: syntax/katethemeconfig.cpp:1072
+#: syntax/katethemeconfig.cpp:1148
 #, fuzzy, kde-format
 #| msgid "Font & Color Schemas"
 msgid "Exporting color theme: %1"
 msgstr "Giản đồ Phông chữ và Màu sắc"
 
-#: syntax/katethemeconfig.cpp:1074 syntax/katethemeconfig.cpp:1095
+#: syntax/katethemeconfig.cpp:1150 syntax/katethemeconfig.cpp:1171
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgid "Color theme"
 msgstr "Màu sắc"
 
-#: syntax/katethemeconfig.cpp:1095
+#: syntax/katethemeconfig.cpp:1171
 #, fuzzy, kde-format
 #| msgid "Font & Color Schemas"
 msgid "Importing Color Theme"
 msgstr "Giản đồ Phông chữ và Màu sắc"
 
-#: syntax/katethemeconfig.cpp:1109
+#: syntax/katethemeconfig.cpp:1185
 #, kde-format
 msgid ""
 "Importing will overwrite the existing theme file \"%1\". This can not be "
 "undone."
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:1111
+#: syntax/katethemeconfig.cpp:1187
 #, fuzzy, kde-format
 #| msgid "Close Nevertheless"
 msgid "Import Nevertheless"
 msgstr "Vẫn đóng"
 
-#: syntax/katethemeconfig.cpp:1193
-#, fuzzy, kde-format
-#| msgid "Word Completion Plugin"
-msgid "Automatic Selection"
-msgstr "Bổ sung hoàn chỉnh từ"
+#: syntax/katethemeconfig.cpp:1269
+#, kde-format
+msgid "Follow System Color Scheme"
+msgstr ""
 
-#: syntax/katethemeconfig.cpp:1257
+#: syntax/katethemeconfig.cpp:1335
 #, kde-format
 msgid "Do you really want to delete the theme \"%1\"? This can not be undone."
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:1259
+#: syntax/katethemeconfig.cpp:1337
 #, fuzzy, kde-format
 #| msgid "Close Nevertheless"
 msgid "Delete Nevertheless"
 msgstr "Vẫn đóng"
 
-#: syntax/katethemeconfig.cpp:1301
+#: syntax/katethemeconfig.cpp:1379
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgid "Copy theme"
 msgstr "Màu sắc"
 
-#: syntax/katethemeconfig.cpp:1302
+#: syntax/katethemeconfig.cpp:1380
 #, kde-format
 msgid "Name for copy of color theme \"%1\":"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:1313
+#: syntax/katethemeconfig.cpp:1391
 #, kde-format
 msgid ""
 "<p>The theme \"%1\" already exists.</p><p>Please choose a different theme "
 "name.</p>"
 msgstr ""
 
-#: syntax/katethemeconfig.cpp:1314
+#: syntax/katethemeconfig.cpp:1392
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgid "Copy Theme"
 msgstr "Màu sắc"
 
-#: syntax/katethemeconfig.cpp:1367 syntax/katethemeconfig.cpp:1372
+#: syntax/katethemeconfig.cpp:1445 syntax/katethemeconfig.cpp:1450
 #, fuzzy, kde-format
 #| msgid "Colors"
 msgid "Color Themes"
@@ -7983,6 +7998,16 @@ msgstr ""
 #| msgid "Mark Type %1"
 msgid "Mark not set: %1"
 msgstr "Kiểu dấu %1"
+
+#, fuzzy
+#~| msgid "&Default schema for %1:"
+#~ msgid "&Default theme for %1:"
+#~ msgstr "Giản đồ &mặc định cho %1:"
+
+#, fuzzy
+#~| msgid "Word Completion Plugin"
+#~ msgid "Automatic Selection"
+#~ msgstr "Bổ sung hoàn chỉnh từ"
 
 #, fuzzy
 #~| msgid "The file '%1' was modified by another program."

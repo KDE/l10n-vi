@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam KDE4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-24 00:42+0000\n"
+"POT-Creation-Date: 2022-09-25 00:42+0000\n"
 "PO-Revision-Date: 2007-07-06 22:27+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -958,9 +958,9 @@ msgstr ""
 "của máy ảnh.</p>"
 
 #: core/app/items/utils/itemviewutilities.cpp:364
-#: core/utilities/imageeditor/main/imagewindow.cpp:1123
-#: core/utilities/imageeditor/main/imagewindow.cpp:1148
-#: core/utilities/imageeditor/main/imagewindow.cpp:1180
+#: core/utilities/imageeditor/main/imagewindow.cpp:1092
+#: core/utilities/imageeditor/main/imagewindow.cpp:1117
+#: core/utilities/imageeditor/main/imagewindow.cpp:1149
 #, kde-format
 msgid "Album \"%1\""
 msgstr "Tập « %1 »"
@@ -6511,6 +6511,45 @@ msgstr "Thêm hạt mảng thuốc"
 msgctxt "@info"
 msgid ""
 "<para>This Batch Queue Manager tool can add film grain over images.</para>"
+msgstr "Miền màu"
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabels.cpp:97
+#: core/libs/properties/captions/itemdescedittab.cpp:206
+#, fuzzy, kde-format
+msgid "Pick Label:"
+msgstr "Điểm ảnh:"
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabels.cpp:102
+#: core/libs/properties/captions/itemdescedittab.cpp:211
+#, fuzzy, kde-format
+msgid "Color Label:"
+msgstr "Độ sâu màu :"
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabels.cpp:107
+#: core/libs/properties/captions/itemdescedittab.cpp:216
+#, fuzzy, kde-format
+msgid "Rating:"
+msgstr "Đánh giá:"
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabelsplugin.cpp:46
+#, fuzzy, kde-format
+msgctxt "@title"
+msgid "Assign Labels"
+msgstr "Gán hồ sơ"
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabelsplugin.cpp:61
+#, fuzzy, kde-format
+msgctxt "@info"
+msgid "A tool to assign labels metadata to images"
+msgstr "<p>Bật tuỳ chọn này để tự động đặt hướng."
+
+#: core/dplugins/bqm/metadata/assignlabels/assignlabelsplugin.cpp:66
+#, fuzzy, kde-kuit-format
+#| msgid "Color Space"
+msgctxt "@info"
+msgid ""
+"<para>This Batch Queue Manager tool will assign rating, or color, or pick "
+"label metadata values to images.</para>"
 msgstr "Miền màu"
 
 #: core/dplugins/bqm/metadata/assigntemplate/assigntemplateplugin.cpp:46
@@ -26799,21 +26838,21 @@ msgid "No Pick"
 msgstr "Gạch"
 
 #: core/libs/album/treeview/albumlabelssearchhandler.cpp:379
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:307
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:316
 #, fuzzy, kde-format
 msgctxt "@info: pick label name"
 msgid "Rejected"
 msgstr "Đặt lại"
 
 #: core/libs/album/treeview/albumlabelssearchhandler.cpp:383
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:311
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:322
 #, fuzzy, kde-format
 msgctxt "@info: pick label name"
 msgid "Pending"
 msgstr "Giải mã RAW"
 
 #: core/libs/album/treeview/albumlabelssearchhandler.cpp:387
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:315
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:328
 #, fuzzy, kde-format
 msgctxt "@info: pick label name"
 msgid "Accepted"
@@ -35996,21 +36035,6 @@ msgctxt "@title: comment title string"
 msgid "Title:"
 msgstr "&Tựa:"
 
-#: core/libs/properties/captions/itemdescedittab.cpp:206
-#, fuzzy, kde-format
-msgid "Pick Label:"
-msgstr "Điểm ảnh:"
-
-#: core/libs/properties/captions/itemdescedittab.cpp:211
-#, fuzzy, kde-format
-msgid "Color Label:"
-msgstr "Độ sâu màu :"
-
-#: core/libs/properties/captions/itemdescedittab.cpp:216
-#, fuzzy, kde-format
-msgid "Rating:"
-msgstr "Đánh giá:"
-
 #: core/libs/properties/captions/itemdescedittab.cpp:228
 #, fuzzy, kde-format
 msgid "Apply all changes to images"
@@ -43250,20 +43274,20 @@ msgctxt "@title: color label menu"
 msgid "Color"
 msgstr "Màu sắc"
 
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:319
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:334
 #, fuzzy, kde-format
 #| msgid "None"
 msgctxt "@info: pick label name"
 msgid "None"
 msgstr "Không có"
 
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:390
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:406
 #, fuzzy, kde-format
 msgctxt "@info: pick lablel selector"
 msgid "Pick Label: %1"
 msgstr "Điểm ảnh:"
 
-#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:401
+#: core/libs/widgets/metadata/labels/picklabelwidget.cpp:417
 #, fuzzy, kde-format
 msgctxt "@title: pick label menu"
 msgid "Pick"
@@ -54084,12 +54108,12 @@ msgstr "Không rõ"
 msgid "%1x%2 (%3Mpx)"
 msgstr "%1x%2 (%3Mpx)"
 
-#: core/utilities/imageeditor/main/imagewindow.cpp:953
+#: core/utilities/imageeditor/main/imagewindow.cpp:922
 #, kde-format
 msgid "No Image in Current Album"
 msgstr "Không có ảnh trong tập ảnh hiện có"
 
-#: core/utilities/imageeditor/main/imagewindow.cpp:954
+#: core/utilities/imageeditor/main/imagewindow.cpp:923
 #, kde-format
 msgid ""
 "There is no image to show in the current album.\n"
@@ -54098,13 +54122,13 @@ msgstr ""
 "Không có ảnh cần hiển thị trong tập ảnh hiện có.\n"
 "Như thế thì bộ sửa ảnh sẽ đóng."
 
-#: core/utilities/imageeditor/main/imagewindow.cpp:1225
+#: core/utilities/imageeditor/main/imagewindow.cpp:1194
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "File Not Available"
 msgstr "Không có sẵn hồ sơ..."
 
-#: core/utilities/imageeditor/main/imagewindow.cpp:1226
+#: core/utilities/imageeditor/main/imagewindow.cpp:1195
 #, kde-format
 msgctxt "@info"
 msgid "<qt>The original file (<b>%1</b>) is currently not available</qt>"
@@ -56665,38 +56689,38 @@ msgctxt "@label"
 msgid "No setting available"
 msgstr "Không có sẵn tuỳ chọn"
 
-#: core/utilities/queuemanager/manager/task.cpp:159
+#: core/utilities/queuemanager/manager/task.cpp:161
 #, fuzzy, kde-format
 msgid "Failed to find tool..."
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: core/utilities/queuemanager/manager/task.cpp:259
+#: core/utilities/queuemanager/manager/task.cpp:263
 #, fuzzy, kde-format
 msgid "(overwritten)"
 msgstr "Ghi đè"
 
-#: core/utilities/queuemanager/manager/task.cpp:264
+#: core/utilities/queuemanager/manager/task.cpp:268
 #, fuzzy, kde-format
 msgid "(renamed to %1)"
 msgstr "Thay tên mục (%1)"
 
-#: core/utilities/queuemanager/manager/task.cpp:269
+#: core/utilities/queuemanager/manager/task.cpp:273
 #, kde-format
 msgid "Item exists and was skipped"
 msgstr ""
 
-#: core/utilities/queuemanager/manager/task.cpp:294
+#: core/utilities/queuemanager/manager/task.cpp:298
 #, fuzzy, kde-format
 msgid "Failed to create sidecar file..."
 msgstr "Lỗi nạp ảnh « %1 »"
 
-#: core/utilities/queuemanager/manager/task.cpp:303
+#: core/utilities/queuemanager/manager/task.cpp:307
 #, fuzzy, kde-format
 msgid "Item processed successfully %1"
 msgstr "Đang tải về tệp %1..."
 
-#: core/utilities/queuemanager/manager/task.cpp:308
-#: core/utilities/queuemanager/manager/task.cpp:313
+#: core/utilities/queuemanager/manager/task.cpp:312
+#: core/utilities/queuemanager/manager/task.cpp:317
 #, fuzzy, kde-format
 msgid "Failed to create file..."
 msgstr "Lỗi nạp ảnh « %1 »"

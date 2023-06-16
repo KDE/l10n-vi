@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: json files\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-04-06 00:30+0000\n"
+"POT-Creation-Date: 2023-06-16 02:08+0000\n"
 "PO-Revision-Date: 2022-05-16 08:14+0200\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -19,25 +19,20 @@ msgctxt "Name"
 msgid "Activity Templates"
 msgstr "Bản mẫu Hoạt động"
 
-#: src/service/plugins/eventspy/kactivitymanagerd-plugin-eventspy.json
-msgctxt "Name"
-msgid "Event Spy"
-msgstr "Theo dõi sự kiện"
-
 #: src/service/plugins/globalshortcuts/kactivitymanagerd-plugin-globalshortcuts.json
 msgctxt "Name"
 msgid "Global Shortcuts"
 msgstr "Phím tắt toàn cục"
 
-#: src/service/plugins/gtk-eventspy/kactivitymanagerd-plugin-gtk-eventspy.json
-msgctxt "Name"
-msgid "Gtk Event Spy"
-msgstr "Theo dõi sự kiện GTK"
-
 #: src/service/plugins/krunner/kactivitymanagerd-plugin-activityrunner.json
 msgctxt "Name"
 msgid "Activity Runner"
 msgstr "Trình chạy Hoạt động"
+
+#: src/service/plugins/recentlyused-eventspy/kactivitymanagerd-plugin-recentlyused-eventspy.json
+msgctxt "Name"
+msgid "Gtk Event Spy"
+msgstr "Theo dõi sự kiện GTK"
 
 #: src/service/plugins/runapplication/kactivitymanagerd-plugin-runapplication.json
 msgctxt "Name"
@@ -64,32 +59,32 @@ msgctxt "Description"
 msgid "Support for creating templated activities"
 msgstr "Hỗ trợ tạo Hoạt động theo bản mẫu"
 
-#: src/service/plugins/eventspy/kactivitymanagerd-plugin-eventspy.json
-msgctxt "Description"
-msgid ""
-"Collects events from applications that support recent documents specification"
-msgstr "Thu thập sự kiện từ các ứng dụng hỗ trợ đặc tả \"tài liệu gần đây\""
-
 #: src/service/plugins/globalshortcuts/kactivitymanagerd-plugin-globalshortcuts.json
 msgctxt "Description"
 msgid "Adds global keyboard shortcuts for activity switching"
 msgstr "Thêm các phím tắt toàn cục cho việc chuyển Hoạt động"
 
-#: src/service/plugins/gtk-eventspy/kactivitymanagerd-plugin-gtk-eventspy.json
-msgctxt "Description"
-msgid ""
-"Collects events from applications that use GtkFileChooser and "
-"GtkRecentManager as specified by https://www.freedesktop.org/wiki/"
-"Specifications/desktop-bookmark-spec/"
-msgstr ""
-"Thu thập sự kiện từ các ứng dụng dùng GtkFileChooser và GtkRecentManager "
-"theo đặc tả ở https://www.freedesktop.org/wiki/Specifications/desktop-"
-"bookmark-spec/"
-
 #: src/service/plugins/krunner/kactivitymanagerd-plugin-activityrunner.json
 msgctxt "Description"
 msgid "KRunner plugin to list and switch activities"
 msgstr "Phần cài cắm KRunner để liệt kê và chuyển Hoạt động"
+
+#: src/service/plugins/recentlyused-eventspy/kactivitymanagerd-plugin-recentlyused-eventspy.json
+#, fuzzy
+#| msgctxt "Description"
+#| msgid ""
+#| "Collects events from applications that use GtkFileChooser and "
+#| "GtkRecentManager as specified by https://www.freedesktop.org/wiki/"
+#| "Specifications/desktop-bookmark-spec/"
+msgctxt "Description"
+msgid ""
+"Collects events from applications that use KRecentDocument, GtkFileChooser "
+"GtkRecentManager or directly file recently-used.xbel specified by https://"
+"www.freedesktop.org/wiki/Specifications/desktop-bookmark-spec/"
+msgstr ""
+"Thu thập sự kiện từ các ứng dụng dùng GtkFileChooser và GtkRecentManager "
+"theo đặc tả ở https://www.freedesktop.org/wiki/Specifications/desktop-"
+"bookmark-spec/"
 
 #: src/service/plugins/runapplication/kactivitymanagerd-plugin-runapplication.json
 msgctxt "Description"
@@ -120,7 +115,6 @@ msgstr ""
 "Hoạt động đó"
 
 #: src/service/plugins/activitytemplates/kactivitymanagerd-plugin-activitytemplates.json
-#: src/service/plugins/eventspy/kactivitymanagerd-plugin-eventspy.json
 msgctxt "Authors Name"
 msgid "Ivan Čukić"
 msgstr "Ivan Čukić"
@@ -130,15 +124,15 @@ msgctxt "Authors Name"
 msgid "Makis Marimpis"
 msgstr "Makis Marimpis"
 
-#: src/service/plugins/gtk-eventspy/kactivitymanagerd-plugin-gtk-eventspy.json
-msgctxt "Authors Name"
-msgid "Méven Car"
-msgstr "Méven Car"
-
 #: src/service/plugins/krunner/kactivitymanagerd-plugin-activityrunner.json
 msgctxt "Authors Name"
 msgid "Alexander Lohnau"
 msgstr "Alexander Lohnau"
+
+#: src/service/plugins/recentlyused-eventspy/kactivitymanagerd-plugin-recentlyused-eventspy.json
+msgctxt "Authors Name"
+msgid "Méven Car"
+msgstr "Méven Car"
 
 #: src/service/plugins/runapplication/kactivitymanagerd-plugin-runapplication.json
 #: src/service/plugins/slc/kactivitymanagerd-plugin-slc.json
@@ -147,3 +141,13 @@ msgstr "Alexander Lohnau"
 msgctxt "Authors Name"
 msgid "Ivan Cukic"
 msgstr "Ivan Cukic"
+
+#~ msgctxt "Name"
+#~ msgid "Event Spy"
+#~ msgstr "Theo dõi sự kiện"
+
+#~ msgctxt "Description"
+#~ msgid ""
+#~ "Collects events from applications that support recent documents "
+#~ "specification"
+#~ msgstr "Thu thập sự kiện từ các ứng dụng hỗ trợ đặc tả \"tài liệu gần đây\""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-30 00:44+0000\n"
+"POT-Creation-Date: 2025-08-12 00:45+0000\n"
 "PO-Revision-Date: 2023-01-08 16:15+0100\n"
 "Last-Translator: Phu Hung Nguyen <phu.nguyen@kdemail.net>\n"
 "Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
@@ -530,16 +530,17 @@ msgstr "Đưa nó đến bàn làm việc ảo hiện tại"
 #: package/contents/ui/ConfigBehavior.qml:205
 #, fuzzy, kde-format
 #| msgid "Show only tasks:"
-msgctxt "@label:listbox completes sentence like: … does nothing"
-msgid "Scrolling on a task:"
+msgctxt ""
+"@label:listbox Part of a sentence: 'Scrolling behavior does nothing/cycles "
+"through tasks/cycles through the selected task's windows'"
+msgid "Scrolling behavior:"
 msgstr "Chỉ hiện các tác vụ:"
 
 #: package/contents/ui/ConfigBehavior.qml:209
 #, fuzzy, kde-format
 #| msgctxt "Part of a sentence: 'Middle-clicking any task does nothing'"
 #| msgid "Does nothing"
-msgctxt ""
-"@item:inlistbox Part of a sentence: 'Scrolling on any task does nothing'"
+msgctxt "@item:inlistbox Part of a sentence: 'Scrolling behavior does nothing'"
 msgid "Does nothing"
 msgstr "Không làm gì"
 
@@ -549,8 +550,8 @@ msgstr "Không làm gì"
 #| "Completes the sentence 'Clicking grouped task cycles through tasks' "
 #| msgid "Cycles through tasks"
 msgctxt ""
-"@item:inlistbox Part of a sentence: 'Scrolling on any task cycles through "
-"all tasks'"
+"@item:inlistbox Part of a sentence: 'Scrolling behavior cycles through all "
+"tasks'"
 msgid "Cycles through all tasks"
 msgstr "Xoay vòng qua các tác vụ"
 
@@ -560,9 +561,9 @@ msgstr "Xoay vòng qua các tác vụ"
 #| "Completes the sentence 'Clicking grouped task cycles through tasks' "
 #| msgid "Cycles through tasks"
 msgctxt ""
-"@item:inlistbox Part of a sentence: 'Scrolling on any task cycles through "
-"that task's windows only'"
-msgid "Cycles through that task's windows"
+"@item:inlistbox Part of a sentence: 'Scrolling behavior cycles through the "
+"hovered task's windows'"
+msgid "Cycles through the hovered task’s windows"
 msgstr "Xoay vòng qua các tác vụ"
 
 #: package/contents/ui/ConfigBehavior.qml:219
@@ -582,24 +583,24 @@ msgstr "Chỉ hiện các tác vụ:"
 
 #: package/contents/ui/ConfigBehavior.qml:230
 #, fuzzy, kde-format
-#| msgid "From current screen"
+#| msgid "From current desktop"
 msgctxt "@option:check completes sentence: show only tasks"
-msgid "From current screen"
-msgstr "Ở màn hình hiện tại"
+msgid "From the current desktop"
+msgstr "Ở bàn làm việc hiện tại"
 
 #: package/contents/ui/ConfigBehavior.qml:235
 #, fuzzy, kde-format
-#| msgid "From current desktop"
+#| msgid "From current activity"
 msgctxt "@option:check completes sentence: show only tasks"
-msgid "From current desktop"
-msgstr "Ở bàn làm việc hiện tại"
+msgid "From the current activity"
+msgstr "Ở Hoạt động hiện tại"
 
 #: package/contents/ui/ConfigBehavior.qml:240
 #, fuzzy, kde-format
-#| msgid "From current activity"
+#| msgid "From current screen"
 msgctxt "@option:check completes sentence: show only tasks"
-msgid "From current activity"
-msgstr "Ở Hoạt động hiện tại"
+msgid "From the current screen"
+msgstr "Ở màn hình hiện tại"
 
 #: package/contents/ui/ConfigBehavior.qml:245
 #, fuzzy, kde-format
@@ -670,7 +671,7 @@ msgstr "Địa điểm"
 msgid "Recent Files"
 msgstr "Tệp gần đây"
 
-#: package/contents/ui/ContextMenu.qml:115
+#: package/contents/ui/ContextMenu.qml:118
 #, kde-format
 msgid "Actions"
 msgstr "Hành động"
@@ -892,65 +893,82 @@ msgstr "Mở danh sách dạng chữ của các cửa sổ cho %1"
 msgid "Activate %1"
 msgstr "Kích hoạt %1"
 
-#: package/contents/ui/ToolTipInstance.qml:435
+#: package/contents/ui/ToolTipInstance.qml:188
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "Part of a sentence: 'Middle-clicking any task closes window or group'"
+#| msgid "Closes window or group"
+msgctxt "@info:tooltip Close this window"
+msgid "Close window"
+msgstr "Đóng cửa sổ hoặc nhóm"
+
+#: package/contents/ui/ToolTipInstance.qml:438
 #, kde-format
 msgctxt "button to unmute app"
 msgid "Unmute %1"
 msgstr "Bỏ tắt tiếng %1"
 
-#: package/contents/ui/ToolTipInstance.qml:436
+#: package/contents/ui/ToolTipInstance.qml:439
 #, kde-format
 msgctxt "button to mute app"
 msgid "Mute %1"
 msgstr "Tắt tiếng %1"
 
-#: package/contents/ui/ToolTipInstance.qml:454
+#: package/contents/ui/ToolTipInstance.qml:457
 #, kde-format
 msgctxt "Accessibility data on volume slider"
 msgid "Adjust volume for %1"
 msgstr "Điều chỉnh âm lượng của %1"
 
-#: package/contents/ui/ToolTipInstance.qml:470
+#: package/contents/ui/ToolTipInstance.qml:473
 #, kde-format
 msgctxt "volume percentage"
 msgid "%1%"
 msgstr "%1%"
 
-#: package/contents/ui/ToolTipInstance.qml:474
+#: package/contents/ui/ToolTipInstance.qml:477
 #, kde-format
 msgctxt "only used for sizing, should be widest possible string"
 msgid "100%"
 msgstr "100%"
 
-#: package/contents/ui/ToolTipInstance.qml:490
+#: package/contents/ui/ToolTipInstance.qml:493
 #, kde-format
 msgctxt "Comma-separated list of desktops"
 msgid "On %1"
 msgstr "Ở %1"
 
-#: package/contents/ui/ToolTipInstance.qml:493
+#: package/contents/ui/ToolTipInstance.qml:496
 #, kde-format
 msgctxt "Comma-separated list of desktops"
 msgid "Pinned to all desktops"
 msgstr "Ghim vào tất cả các bàn làm việc"
 
-#: package/contents/ui/ToolTipInstance.qml:499
+#: package/contents/ui/ToolTipInstance.qml:502
 #, kde-format
 msgctxt "Which virtual desktop a window is currently on"
 msgid "Available on all activities"
 msgstr "Hiện có ở tất cả các Hoạt động"
 
-#: package/contents/ui/ToolTipInstance.qml:509
+#: package/contents/ui/ToolTipInstance.qml:512
 #, kde-format
 msgctxt "Activities a window is currently on (apart from the current one)"
 msgid "Also available on %1"
 msgstr "Còn hiện có ở %1"
 
-#: package/contents/ui/ToolTipInstance.qml:513
+#: package/contents/ui/ToolTipInstance.qml:516
 #, kde-format
 msgctxt "Which activities a window is currently on"
 msgid "Available on %1"
 msgstr "Hiện có ở %1"
+
+#, fuzzy
+#~| msgctxt "Part of a sentence: 'Middle-clicking any task does nothing'"
+#~| msgid "Does nothing"
+#~ msgctxt ""
+#~ "@item:inlistbox Part of a sentence: 'Scrolling on any task does nothing'"
+#~ msgid "Does nothing"
+#~ msgstr "Không làm gì"
 
 #, fuzzy
 #~| msgctxt "Part of a sentence: 'Mouse wheel cycles through tasks'"
